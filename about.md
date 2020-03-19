@@ -12,6 +12,20 @@ users. To avoid overload, this site therefore is quite deliberately limited in
 scope, covering essential ideas using core LaTeX packages and classes, and
 leaving further help to other places.
 
+## License
+
+The content of the site is available under the
+[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+license. That means you can use the material as long as you say where it came
+from and let others do the same.
+
+The code examples are licensed as
+[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/). This is
+a legal text that is (essentially) the same as Public Domain, at least in
+countries where that concept exists. The key point is that _you can use the
+examples without any issues_. You _do not_ need to reference them, you _do not_
+need to share them when you modify them: you can just use them.
+
 ## Source Code
 
 The source code is on [GitHub](https://github.com/learnlatex/learnlatex.github.io/),
