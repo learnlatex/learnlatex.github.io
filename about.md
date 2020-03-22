@@ -28,8 +28,10 @@ need to share them when you modify them: you can just use them.
 
 ## Source Code
 
-The source code is on [GitHub](https://github.com/learnlatex/learnlatex.github.io/),
-please see [CONTRIBUTING](CONTRIBUTING) and [LICENSE](LICENSE) for details. You can also [email us](texfaq@texfaq.org) us with suggestions.
+The source code is on
+[GitHub](https://github.com/learnlatex/learnlatex.github.io/), please see
+[CONTRIBUTING](CONTRIBUTING) and [LICENSE](LICENSE) for details. You can also
+[email us](texfaq@texfaq.org) with suggestions.
 
 Recent Changes are listed in the [Change Log](CHANGELOG).
 
