@@ -10,18 +10,12 @@ should be aligned. This is done in a mandatory argument &ndash; often referred
 to as table preamble &ndash; to the `tabular` environment, in which you specify
 the columns by using single letter names. The available column types are:
 
-`l`
-: left aligned column
-
-`c`
-: centred column
-
-`r`
-: right aligned column
-
-`p{<width>}`
-: a column with fixed width `<width>`, the text will be automatically line
-wrapped and fully justified
+type | description
+----|----
+`l` | left aligned column
+`c` | centred column
+`r` | right aligned column
+`p{<width>}` | a column with fixed width `<width>`, the text will be automatically line wrapped and fully justified
 
 The columns `l`, `c`, and `r` will have the natural width of the widest cell.
 Each column has to be declared, so if you want three centred columns, you'd use
