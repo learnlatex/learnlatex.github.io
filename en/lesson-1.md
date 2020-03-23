@@ -1,5 +1,5 @@
 ---
-What is LaTeX and how does it work?
+title: What is LaTeX and how does it work?
 ---
 
 The word "LaTeX" actually consists of two components, "La" and "TeX". In the following we will briefly describe where they come from.
