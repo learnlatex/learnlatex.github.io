@@ -56,10 +56,10 @@ We got everything we need for our first little table. In the following code the
 A word of advice prior to introducing lines: Lines should be used really
 sparsely in tables, especially vertical ones often look unprofessional. In fact,
 for professional tables you shouldn't use any of the standard lines, instead you
-should skip this and read about [`booktabs`](#booktabs).
+should skip this section and read about [`booktabs`](#booktabs).
 
-Nevertheless LaTeX got you covered if you need lines. Those are part of the
-column specification and hence should go into the preamble. To add a line
+Nevertheless LaTeX got you covered if you need lines. Vertical lines are part of
+the column specification and hence should go into the preamble. To add a line
 between two columns just add `|` between their specification. Please note that
 vertical lines are only inserted if the cell to their left exists (except for a
 vertical line left of the first column). Note how in the following example the
@@ -138,7 +138,7 @@ things as well
 type | description
 ---  | :--
 `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns.
-`>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, *e.g.*, to set a different font for this preamble)
+`>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, *e.g.*, to set a different font for this column)
 `<{decl}` | this will put `decl` after the contents of each cell in the previous column
 
 The following example uses an italic font for the first column. Remember our
