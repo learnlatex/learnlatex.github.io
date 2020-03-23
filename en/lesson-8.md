@@ -6,8 +6,8 @@ title: Tables
 
 Tables in LaTeX are set using the `tabular` environment. In order to typeset a
 `tabular` we have to tell LaTeX how many columns will be needed and how they
-should be aligned. This is done in a mandatory argument &mdash; often referred
-to as table preamble &mdash; to the `tabular` environment, in which you specify
+should be aligned. This is done in a mandatory argument &ndash; often referred
+to as table preamble &ndash; to the `tabular` environment, in which you specify
 the columns by using single letter names. The available column types are:
 
 `l`
@@ -35,10 +35,10 @@ We got everything we need for our first little table. In the following code the
 
 ```tex
 \begin{tabular}{lll}
-Animal & Food  & Size   \\
-dog    & meat  & medium \\
-horse  & hay   & large  \\
-frog   & flies & small  \\
+  Animal & Food  & Size   \\
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
 \end{tabular}
 ```
 
@@ -46,7 +46,7 @@ frog   & flies & small  \\
 ## Adding Lines
 
 A word of advice prior to introducing lines: Lines should be used really
-sparsely in tables, especially vertical ones often look unprofessionally.
+sparsely in tables, especially vertical ones often look unprofessional.
 
 Nevertheless LaTeX got you covered if you need vertical lines. Those are part of
 the column specification and hence should go into the preamble. To add a line
@@ -57,11 +57,11 @@ right most line will not appear in the last row.
 
 ```tex
 \begin{tabular}{|l|ll|}
-Animal  & Food  & Size   \\
-dog     & meat  & medium \\
-horse   & hay   & large  \\
-frog    & flies & small  \\
-microbe & ???
+  Animal  & Food  & Size   \\
+  dog     & meat  & medium \\
+  horse   & hay   & large  \\
+  frog    & flies & small  \\
+  microbe & ???
 \end{tabular}
 ```
 
@@ -78,17 +78,17 @@ following `\\` or another `\hline` or `\cline`).
 
 ```tex
 \begin{tabular}{lll}
-\hline
-\hline
-Animal & Food  & Size   \\
-\hline
-dog    & meat  & medium \\
-\cline{1-2}
-horse  & hay   & large  \\
-\cline{1-1}\cline{3-3}
-frog   & flies & small  \\
-\hline
-\hline
+  \hline
+  \hline
+  Animal & Food  & Size   \\
+  \hline
+  dog    & meat  & medium \\
+  \cline{1-2}
+  horse  & hay   & large  \\
+  \cline{1-1}\cline{3-3}
+  frog   & flies & small  \\
+  \hline
+  \hline
 \end{tabular}
 ```
 
@@ -103,16 +103,16 @@ columns to something arbitrary. This can be done with `@{<decl>}` which puts
 
 In case you're wondering now, by default each column has a horizontal space of
 the length `\tabcolsep` padded on both sides, resulting in a total of
-`2\tabcolsep` between columns &mdash; one from each column &mdash; and a single
+`2\tabcolsep` between columns &ndash; one from each column &ndash; and a single
 `\tabcolsep` on both outer ends. If we want to change the space to say `1cm` we
 could do so by using
 
 ```tex
 \begin{tabular}{l@{\hspace{1cm}}ll}
-Animal & Food  & Size   \\
-dog    & meat  & medium \\
-horse  & hay   & large  \\
-frog   & flies & small  \\
+  Animal & Food  & Size   \\
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
 \end{tabular}
 ```
 
@@ -126,10 +126,10 @@ like `*{3}{c|l@{\hspace{3cm}}}` which would then be the same as
 
 ```tex
 \begin{tabular}{*{3}{l}}
-Animal & Food  & Size   \\
-dog    & meat  & medium \\
-horse  & hay   & large  \\
-frog   & flies & small  \\
+  Animal & Food  & Size   \\
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
 \end{tabular}
 ```
 
@@ -143,11 +143,11 @@ be anything legal in the preamble but _only a single column type_.
 
 ```tex
 \begin{tabular}{*{3}{l}}
-Animal  & Food  & Size   \\
-dog     & meat  & medium \\
-horse   & hay   & large  \\
-frog    & flies & small  \\
-microbe & \multicolumn{2}{c}{???} \\
+  Animal  & Food  & Size   \\
+  dog     & meat  & medium \\
+  horse   & hay   & large  \\
+  frog    & flies & small  \\
+  microbe & \multicolumn{2}{c}{???} \\
 \end{tabular}
 ```
 
