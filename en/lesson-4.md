@@ -17,7 +17,7 @@ the document.
 
 Edit the file to say this, then save.
 (Or, you can simply copy and paste it.)
-```tex
+```latex
 \documentclass{article}
 
 \begin{document}
