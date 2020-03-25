@@ -24,10 +24,11 @@ you'd write, and they are available so you can try them out on-line.
 <b>
 {% assign sz = page.path | size %}
 {%- if 14 = sz %}
-&#160;{{page.path | replace: '.md','' | replace: 'en/lesson-0',''}}</b>
+&#160;{{page.path | replace: '.md','' | replace: 'en/lesson-0',''}}
 {%- else -%}
-{{page.path | replace: '.md','' | replace: 'en/lesson-',''}}</b>
+{{page.path | replace: '.md','' | replace: 'en/lesson-',''}}
 {%- endif -%}
+</b>
 &mdash; {{page.title}}</a></li>
 {%- endif -%}
 {%- endfor -%}
