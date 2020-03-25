@@ -2,9 +2,6 @@
 title: Logical structure
 ---
 
-
-## Logical structure; sectioning
-
 LaTeX focuses on the logical structure of your document,
 more than on visual detail.
 

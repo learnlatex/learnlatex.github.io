@@ -2,15 +2,13 @@
 title: Extending LaTeX using packages
 ---
 
-## Extending LaTeX using packages
-
 After having declared a class, in the preamble
-you can modify the document in relatively small ways by using 
+you can modify the document in relatively small ways by using
 *packages*.
 
 For example, we can change the margins with a new second line.
 
-```tex
+```latex
 \documentclass{book}
 \usepackage[margin=1in]{geometry}
 

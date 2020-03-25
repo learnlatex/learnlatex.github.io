@@ -2,14 +2,11 @@
 title: Cross-referencing
 ---
 
-
-## Cross-references
-
 To have LaTeX remember a spot in your document you label it,
 and then in other places you refer to it.
 
 Change the document to this.
-```tex
+```latex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
@@ -53,7 +50,7 @@ is about.)
 
 You may see references that show in an output PDF
 as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work, 
+The explanation is that because of this auxiliary file work,
 the first time that you compile a document the label has not
 yet been saved.
 Run LaTeX once more time and you'll be all set.

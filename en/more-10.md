@@ -1,5 +1,5 @@
 ---
-title: Math(s)
+title: More on: Math(s)
 ---
 
 You may be interested in LaTeX because it is the standard for

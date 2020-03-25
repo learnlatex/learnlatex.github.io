@@ -1,9 +1,11 @@
-# Your first LaTeX document
+---
+title: Your first LaTeX document
+---
 
-In your editor open a new file `first.tex`. 
-Enter the text as it is written below, or you can 
+In your editor open a new file `first.tex`.
+Enter the text as it is written below, or you can
 copy and paste from here.
-```tex
+```latex
 \documentclass{article}
 
 \begin{document}
@@ -44,7 +46,7 @@ of people have seen this error before and you'll find the answer there.
 ## What you've got
 
 The first document shows the basics.
-LaTeX documents are  a mixture of text and commands. 
+LaTeX documents are  a mixture of text and commands.
 The commands start with a backslash
 and sometimes have arguments in curly braces
 (or sometimes optional arguments in square brackets).
@@ -85,9 +87,9 @@ LaTeX twice to resolve the information.
 
 ## Citations
 
-Finally, edit the file to say this. 
+Finally, edit the file to say this.
 
-```tex
+```latex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
@@ -138,15 +140,15 @@ In Section~\ref{sec:labelone} is equation~\ref{eq:labeltwo}.
 
 \begin{thebibliography}{9}
 \bib item{ConcreteMath}
-Ronald L. Graham, Donald E. Knuth, and Oren Patashnik, 
-\textit{Concrete Mathematics}, 
+Ronald L. Graham, Donald E. Knuth, and Oren Patashnik,
+\textit{Concrete Mathematics},
 Addison-Wesley, Reading, MA, 1995.
 \end{thebibliography}
 \end{document}
 ```
 
-As earlier, you may need to compile the document 
+As earlier, you may need to compile the document
 twice to resolve cross-references.
-(In the `\begin{thebibliography}{9}` line, 
+(In the `\begin{thebibliography}{9}` line,
 the `9` tells LaTeX that
 no reference is wider than the digit 9.)  
