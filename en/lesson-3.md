@@ -5,7 +5,6 @@ Enter the text as it is written below, or you can
 copy and paste from here.
 ```tex
 \documentclass{article}
-\usepackage{amsmath,amssymb,amsthm}
 
 \begin{document}
 Hey world!
@@ -42,8 +41,6 @@ of people have seen this error before and you'll find the answer there.
 
 
 
-
-
 ## What you've got
 
 The first document shows the basics.
@@ -68,190 +65,9 @@ You must also nest them, so that if you have
 `\begin{x}  ... \begin{y}` then you must have
 `\end{y}  ... \end{x}`.
 
-One thing that may not be clear is the `article`.
-This is a document *class*.
-It sets the document up with margins, fonts, etc.
-For instance, LaTeX articles have no chapters, and so the top-level
-unit is `\section{..}`.
-To get chapters you would instead declare `\documentclass{book}`.
-
-After having declared a class, in the preamble
-we can modify the document in small ways by bringing in some
-*packages*, such as `amsmath`.
-For a taste of that,
-we can change the margins with a new third line.
-
-```tex
-\documentclass{article}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage[margin=1in]{geometry}
-
-\begin{document}
-Hey world!
-
-This is a first document.
-\end{document}
-```
 
 
-
-
-
-## Get math
-
-People interested in LaTeX often want to include mathematics.
-The `amsmath` package provides lots of commands developed
-by the American Mathematical Society.
-
-Edit the document to say this.
-```tex
-\documentclass{article}
-\usepackage{amsmath,amssymb,amsthm}
-
-\begin{document}
-Hey world!
-
-This is a first document, \( a^2+b^2 = f_0^2 \).
-\end{document}
-```
-
-Write mathematics in the middle of text by putting it inside `\( ... \)`
-(you can also put it inside `$...$`).
-Make superscripts as in `a^2`, and make subscripts as in `f_0`.
-You must put any mathematical material at all inside
-the markers, so you would write `The number \( m \) is odd`.
-
-For a mathematics showcase, edit the document to say this.
-
-```tex
-\documentclass{article}
-\usepackage{amsmath,amssymb,amsthm}
-
-\begin{document}
-Hey world!
-
-This is a first document, \( a^2+b^2 = f_0^2 \).
-
-Solve the following recurrence for \( n,k\geq 0 \):
-\begin{align*}
-  Q_{n,0} &= 1
-  \quad Q_{0,k} = [k=0];  \\
-  Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for \( n,k>0 \).}
-\end{align*}
-
-Elementary calculus suffices to evaluate \( C \) if we are clever enough
-to look at the double integral
-\begin{equation*}
-  C^2
-  =\int_{-\infty}^{+\infty} e^{-x^2} \mathrm{d}x
-   \int_{-\infty}^{+\infty} e^{-y^2} \mathrm{d}y\;.
-\end{equation*}
-
-Therefore
-\begin{equation}
-a\equiv b\pmod{m}
-\qquad\Longleftrightarrow\qquad
-a\equiv b \pmod{p^{m_p}}\quad\text{for all \( p \)}  
-\end{equation}
-if the prime factorization of \( m \) is $\prod_p p^{m_p}$.
-\end{document}
-```
-
-There is a lot to see here.
-Some are: the command `\binom{n}{k}` produces a binomial coefficient.
-The `\int` gives an integral, `\quad` produces some space,
-and `\pmod{p}` produces the modulus notation using parentheses.
-
-This also shows environments for mathematics.
-The `align*` environment that makes the equations line up on the
-ampersands, the `&` symbols.
-Both the `equation` and `equation*` environments give displayed equations,
-but the former will have a numbering tag while the
-latter will not.
-
-The `amssymb` package gives you access to the AMS's symbols. 
-For instance, get a blackboard boldface Z for the integers
-with `$\mathbb{Z}$`.
-(The `amsthm` package gives you access to theorem environments,
-but those go beyond the scope of this document.)
-
-
-
-
-
-
-## Sections
-
-LaTeX is very different than a word processor, which 
-moves the text around as you type it.  
-Here you describe what you want and 
-later, separately, LaTeX does the placement.
-
-We will next tell LaTeX to make a section.
-We don't tell it to start with text in boldface and a larger size, we just ask
-for a section.
-The system handles the font changes, vertical space, etc.
-
-Edit the file to say this.
-```tex
-\documentclass{article}
-\usepackage{amsmath,amssymb,amsthm}
-
-\begin{document}
-Hey world!
-
-This is a first document, \( a^2+b^2 = f_0^2 \).
-
-% ================
-\section{Title of the first section}
-
-Solve the following recurrence for \( n,k\geq 0 \):
-\begin{align*}
-  Q_{n,0} &= 1
-  \quad Q_{0,k} = [k=0];  \\
-  Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for \( n,k>0 \).}
-\end{align*}
-
-\subsection{Subsection of the first section}
-
-Elementary calculus suffices to evaluate \( C \) if we are clever enough
-to look at the double integral
-\begin{equation*}
-  C^2
-  =\int_{-\infty}^{+\infty} e^{-x^2} \mathrm{d}x
-   \int_{-\infty}^{+\infty} e^{-y^2} \mathrm{d}y\;.
-\end{equation*}
-
-% ================
-\section{Second section}
-
-Therefore
-\begin{equation}
-a\equiv b\pmod{m}
-\qquad\Longleftrightarrow\qquad
-a\equiv b \pmod{p^{m_p}}\quad\text{for all \( p \)}  
-\end{equation}
-if the prime factorization of \( m \) is $\prod_p p^{m_p}$.
-\end{document}
-```
-
-LaTeX numbers the sections and subsections and includes the
-titles in boldface.
-How to modify their look is beyond this this document but the point is that
-the system does a lot of the work for you.
-
-Notice the line before the sections starting with
-a percent sign, `%`.
-The percent sign marks the rest of the line as a comment
-so that LaTeX ignores the equal signs.
-(It is only here as an example,
-but you might put that to help find the sections
-while you are editing.)
-
-
-
-
-## Cross references and contents
+## (Material below here will be folded into other lessons later) Cross references and contents
 
 We'll add structure to the document.
 Change it to this.
