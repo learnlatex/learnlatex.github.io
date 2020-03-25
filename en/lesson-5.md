@@ -13,7 +13,7 @@ unit is `\section{..}`.
 
 To get chapters, instead declare `\documentclass{book}`.
 
-```tex
+```latex
 \documentclass{book}
 
 \begin{document}

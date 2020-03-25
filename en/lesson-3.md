@@ -5,7 +5,7 @@ title: Your first LaTeX document
 In your editor open a new file `first.tex`.
 Enter the text as it is written below, or you can
 copy and paste from here.
-```tex
+```latex
 \documentclass{article}
 
 \begin{document}
@@ -89,7 +89,7 @@ LaTeX twice to resolve the information.
 
 Finally, edit the file to say this.
 
-```tex
+```latex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 

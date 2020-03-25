@@ -8,7 +8,7 @@ We will use the `amsmath` package, developed
 by the American Mathematical Society.
 
 Edit the document to say this.
-```tex
+```latex
 \documentclass{book}
 \usepackage{amsmath,amssymb,amsthm}
 

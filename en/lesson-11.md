@@ -6,7 +6,7 @@ To have LaTeX remember a spot in your document you label it,
 and then in other places you refer to it.
 
 Change the document to this.
-```tex
+```latex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
