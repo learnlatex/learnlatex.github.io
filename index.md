@@ -19,25 +19,17 @@ you'd write, and they are available so you can try them out on-line.
 
 <ul>
 {%- for page in site.pages | sort: 'path' -%}
-{% assign sz = page.path | size %}
-{%- if 14 == sz %}
 {%- if page.path  contains "en/lesson" %}
 <li><a href="{{page.path | replace: '.md',''}}">
-<b>&#160;{{page.path | replace: '.md','' | replace: 'en/lesson-',''}}</b>
-&mdash; {{page.title}}</a></li>
-{%- endif -%}
-{%- endif -%}
-{%- endfor -%}
-{%- for page in site.pages | sort: 'path' -%}
+<b>
 {% assign sz = page.path | size %}
-{%- if 14 != sz %}
-{%- if page.path  contains "en/lesson" %}
-<li><a href="{{page.path | replace: '.md',''}}">
-<b>{{page.path | replace: '.md','' | replace: 'en/lesson-',''}}</b>
+{%- if 14 = sz %}&#160;{%- endif -%}{{page.path | replace: '.md','' | replace: 'en/lesson-',''}}</b>
 &mdash; {{page.title}}</a></li>
-{%- endif -%}
 {%- endif -%}
 {%- endfor -%}
 </ul>
 
-## Getting help and going further 
+## Getting help and going further
+
+
+
