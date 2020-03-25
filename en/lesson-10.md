@@ -2,8 +2,6 @@
 title: Math(s)
 ---
 
-## Mathematics
-
 You may be interested in LaTeX because it is the standard for
 writing mathematics.
 We will use the `amsmath` package, developed
@@ -74,7 +72,7 @@ but the former has a numbering tag while the
 latter does not.
 
 Back to the file's second line.
-The `amssymb` package gives you access to the AMS's symbols. 
+The `amssymb` package gives you access to the AMS's symbols.
 For instance, get a blackboard boldface Z for the integers
 with `$\mathbb{Z}$`.
 The `amsthm` package gives you theorem environments,
