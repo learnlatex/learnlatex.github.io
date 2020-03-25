@@ -22,12 +22,11 @@ you'd write, and they are available so you can try them out on-line.
 {%- if page.path  contains "en/lesson" %}
 <li><a href="{{page.path | replace: '.md',''}}">
 <b>
-{% assign sz = page.path | size %}
-{%- if 14 = sz %}
+{% if page.path contains "en/lesson-0" %}
 &#160;{{page.path | replace: '.md','' | replace: 'en/lesson-0',''}}
-{%- else -%}
+{% else %}
 {{page.path | replace: '.md','' | replace: 'en/lesson-',''}}
-{%- endif -%}
+{% endif %}
 </b>
 &mdash; {{page.title}}</a></li>
 {%- endif -%}
