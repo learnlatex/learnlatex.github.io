@@ -3,7 +3,7 @@
 In your editor open a new file `first.tex`. 
 Enter the text as it is written below, or you can 
 copy and paste from here.
-```
+```tex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
@@ -81,7 +81,7 @@ we can modify the document in small ways by bringing in some
 For a taste of that,
 we can change the margins with a new third line.
 
-```
+```tex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[margin=1in]{geometry}
@@ -104,7 +104,7 @@ The `amsmath` package provides lots of commands developed
 by the American Mathematical Society.
 
 Edit the document to say this.
-```
+```tex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
@@ -123,7 +123,7 @@ the markers, so you would write `The number \( m \) is odd`.
 
 For a mathematics showcase, edit the document to say this.
 
-```
+```tex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
@@ -193,7 +193,7 @@ for a section.
 The system handles the font changes, vertical space, etc.
 
 Edit the file to say this.
-```
+```tex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
@@ -255,7 +255,7 @@ while you are editing.)
 
 We'll add structure to the document.
 Change it to this.
-```
+```tex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
@@ -347,7 +347,7 @@ LaTeX twice to resolve the information.
 
 Finally, edit the file to say this. 
 
-```
+```tex
 \documentclass{article}
 \usepackage{amsmath,amssymb,amsthm}
 
