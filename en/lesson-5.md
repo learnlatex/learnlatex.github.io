@@ -2,8 +2,6 @@
 title: Using document classes to influence design
 ---
 
-## Document classes
-
 One thing that may not be clear after
 the prior lesson is the first line's
 `article`.
@@ -49,4 +47,4 @@ Text of the second section.
 
 LaTeX has hundreds of document classes available.
 Many journals offer one for download that suits their requirements,
-and similarly many universities have one for dissertations. 
+and similarly many universities have one for dissertations.
