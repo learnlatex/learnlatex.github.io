@@ -8,6 +8,7 @@ This is the skeleton of a book.
 It includes front and back covers, preface, table of contents,
 chapters, and appendix, a bibliography, and an index.
 
+<!-- {% raw %} -->
 ```latex
 \documentclass[titlepage]{book}
 \usepackage{makeidx}\makeindex
@@ -48,6 +49,8 @@ chapters, and appendix, a bibliography, and an index.
 \input{backcover}
 \end{document}
 ```
+<!-- {% end raw %} -->
+
 
 LaTeX lets you split a large document into several files.
 This simplifies editing, speeds processing, and lets multiple authors work
