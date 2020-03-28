@@ -2,6 +2,7 @@
 title: Tables
 ---
 
+
 # Basic Tables
 
 Tables in LaTeX are set using the `tabular` environment. This lesson will assume
@@ -92,6 +93,8 @@ column number. You can specify multiple `\cline`s in the same row. Both a
 `\hline` and a `\cline` have to be the first content of a new row (so directly
 following `\\` or another `\hline` or `\cline`).
 
+
+<!-- {% raw %} -->
 ```tex
 \begin{tabular}{lll}
   \hline
@@ -107,6 +110,7 @@ following `\\` or another `\hline` or `\cline`).
   \hline
 \end{tabular}
 ```
+<!-- {% endraw %} -->
 
 
 ## Short Cuts and other Preamble Content

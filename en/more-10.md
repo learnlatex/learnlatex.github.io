@@ -1,5 +1,5 @@
 ---
-title: Math(s)
+title: More on: Math(s)
 ---
 
 You may be interested in LaTeX because it is the standard for
@@ -16,19 +16,19 @@ Edit the document to say this.
 Hey world!
 
 This is displacement,
-$ d(t) = v_0\cdot t\sin\theta - gt^2/2 $.
+\( d(t) = v_0\cdot t\sin\theta - gt^2/2 \).
 
 
 \chapter{Mathematical showcase}
 
-Solve the following recurrence for $ n,k\geq 0 $:
+Solve the following recurrence for \( n,k\geq 0 \):
 \begin{align*}
   Q_{n,0} &= 1
   \quad Q_{0,k} = [k=0];  \\
-  Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $ n,k>0 $.}
+  Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for \( n,k>0 \).}
 \end{align*}
 
-Elementary calculus suffices to evaluate $ C $ if we are clever enough
+Elementary calculus suffices to evaluate \( C \) if we are clever enough
 to look at the double integral
 \begin{equation*}
   C^2
@@ -40,18 +40,18 @@ Therefore
 \begin{equation}
 a\equiv b\pmod{m}
 \qquad\Longleftrightarrow\qquad
-a\equiv b \pmod{p^{m_p}}\quad\text{for all $ p $}  
+a\equiv b \pmod{p^{m_p}}\quad\text{for all \( p \)}  
 \end{equation}
-if the prime factorization of $ m $ is $\prod_p p^{m_p}$.
+if the prime factorization of \( m \) is $\prod_p p^{m_p}$.
 
 \end{document}
 ```
 
 Look first at the part before the chapter.
-Write mathematics in the middle of text by putting it inside `$ ... $`
-(you can also put it inside `\(... \)`).
+Write mathematics in the middle of text by putting it inside `\( ... \)`
+(you can also put it inside `$ ... $`).
 You must put any mathematical material at all inside
-those markers, so for instance you would write `The number $ m $ is odd`.
+those markers, so for instance you would write `The number \( m \) is odd`.
 Make subscripts as in `v_0` and make subscripts as in `t^2`.
 
 Inside the chapter we are showing off so there is a lot to see.

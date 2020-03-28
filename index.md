@@ -17,4 +17,23 @@ you'd write, and they are available so you can try them out on-line.
 
 ## The lessons
 
-## Getting help and going further 
+<ul>
+{%- for page in site.pages | sort: 'path' -%}
+{%- if page.path  contains "en/lesson" %}
+<li><a href="{{page.path | replace: '.md',''}}">
+<b>
+{% if page.path contains "en/lesson-0" %}
+&#160;{{page.path | replace: '.md','' | replace: 'en/lesson-0',''}}
+{% else %}
+{{page.path | replace: '.md','' | replace: 'en/lesson-',''}}
+{% endif %}
+</b>
+&mdash; {{page.title}}</a></li>
+{%- endif -%}
+{%- endfor -%}
+</ul>
+
+## Getting help and going further
+
+
+
