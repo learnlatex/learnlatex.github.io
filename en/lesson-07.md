@@ -16,7 +16,7 @@ package
 \begin{document}
 This picture
 \begin{center}
-  \includegraphics[height=2cm]{example−image}
+  \includegraphics[height=2cm]{example-image}
 \end{center}
 is an imported PDF.
 \end{document}

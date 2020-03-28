@@ -62,7 +62,7 @@ One way is by using [MetaPost](https://www.ctan.org/pkg/metapost),
 a derivative of the program that Knuth used to draw fonts.
 An alternative that in addition extends those drawing techniques to three
 dimensions is [Asymptote](https://www.ctan.org/pkg/asymptote).
-These two output graphics into files that you include in your document.
+These two put output into files that you include in your document.
 
 You can draw graphics directly inside your document, which is convenient
 although at the cost of more complex documents with larger
@@ -70,7 +70,7 @@ requirements, by using
 [Ti*k*Z](https://www.ctan.org/pkg/pgf).
 An alternative is [PSTricks](https://www.ctan.org/pkg/pstricks-base).
 
-You can make mouse-created graphics that include
+You can also make mouse-created graphics that include
 LaTeX snippets with [Inkscape](https://inkscape.org/).
 
 
