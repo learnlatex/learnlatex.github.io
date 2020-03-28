@@ -11,7 +11,7 @@ which is only not built into the LaTeX kernel for historic reasons. So put the
 following in your preamble and we're good to go:
 
 <!-- {% raw %} -->
-```tex
+```latex
 \usepackage{array}
 ```
 <!-- {% endraw %} -->
@@ -45,7 +45,7 @@ We got everything we need for our first little table. In the following code the
 `&` and `\\` are aligned, this isn't necessary in LaTeX.
 
 <!-- {% raw %} -->
-```tex
+```latex
 \begin{tabular}{lll}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
@@ -71,7 +71,7 @@ vertical line left of the first column). Note how in the following example the
 right most line will not appear in the last row.
 
 <!-- {% raw %} -->
-```tex
+```latex
 \begin{tabular}{|l|ll|}
   Animal  & Food  & Size   \\
   dog     & meat  & medium \\
@@ -95,7 +95,7 @@ following `\\` or another `\hline` or `\cline`).
 
 
 <!-- {% raw %} -->
-```tex
+```latex
 \begin{tabular}{lll}
   \hline
   \hline
@@ -133,7 +133,7 @@ two columns and change the space between the latter two to `1cm` we could do so
 by using
 
 <!-- {% raw %} -->
-```tex
+```latex
 \begin{tabular}{l !{:} l @{\hspace{1cm}} l}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
@@ -158,7 +158,7 @@ example with putting a colon in between the first two columns? How about we also
 append that colon to the first column, so that things don't look as clunky.
 
 <!-- {% raw %} -->
-```tex
+```latex
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
@@ -181,7 +181,7 @@ many columns should be merged, the second argument is the cell type, which can
 be anything legal in the preamble but _only a single column type_.
 
 <!-- {% raw %} -->
-```tex
+```latex
 \begin{tabular}{*{3}{l}}
   Animal  & Food  & Size   \\
   dog     & meat  & medium \\
