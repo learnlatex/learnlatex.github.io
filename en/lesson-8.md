@@ -9,9 +9,11 @@ you load the `array` package, which adds more functionality to LaTeX tables, and
 which is only not built into the LaTeX kernel for historic reasons. So put the
 following in your preamble and we're good to go:
 
+<!-- {% raw %} -->
 ```tex
 \usepackage{array}
 ```
+<!-- {% endraw %} -->
 
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
@@ -41,6 +43,7 @@ started using `\\`.
 We got everything we need for our first little table. In the following code the
 `&` and `\\` are aligned, this isn't necessary in LaTeX.
 
+<!-- {% raw %} -->
 ```tex
 \begin{tabular}{lll}
   Animal & Food  & Size   \\
@@ -49,6 +52,7 @@ We got everything we need for our first little table. In the following code the
   frog   & flies & small  \\
 \end{tabular}
 ```
+<!-- {% endraw %} -->
 
 
 ## Adding Lines
@@ -65,6 +69,7 @@ vertical lines are only inserted if the cell to their left exists (except for a
 vertical line left of the first column). Note how in the following example the
 right most line will not appear in the last row.
 
+<!-- {% raw %} -->
 ```tex
 \begin{tabular}{|l|ll|}
   Animal  & Food  & Size   \\
@@ -74,6 +79,7 @@ right most line will not appear in the last row.
   microbe & ???
 \end{tabular}
 ```
+<!-- {% endraw %} -->
 
 Horizontal lines belong to a `tabular`'s body. In LaTeX there are two different
 macros to add them, the first is `\hline` adding a line across the full width of
@@ -122,6 +128,7 @@ the length `\tabcolsep` padded on both sides, resulting in a total of
 two columns and change the space between the latter two to `1cm` we could do so
 by using
 
+<!-- {% raw %} -->
 ```tex
 \begin{tabular}{l !{:} l @{\hspace{1cm}} l}
   Animal & Food  & Size   \\
@@ -130,6 +137,7 @@ by using
   frog   & flies & small  \\
 \end{tabular}
 ```
+<!-- {% endraw %} -->
 
 In addition to all the aforementioned preamble content, we can use a few other
 things as well
@@ -145,6 +153,7 @@ The following example uses an italic font for the first column. Remember our
 example with putting a colon in between the first two columns? How about we also
 append that colon to the first column, so that things don't look as clunky.
 
+<!-- {% raw %} -->
 ```tex
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   Animal & Food  & Size   \\
@@ -153,6 +162,7 @@ append that colon to the first column, so that things don't look as clunky.
   frog   & flies & small  \\
 \end{tabular}
 ```
+<!-- {% endraw %} -->
 
 Note that each cell is a local group, so `\itshape` doesn't affect the other
 columns and the above will be in principle the same as `{\itshape Animal:}` for
@@ -166,6 +176,7 @@ In LaTeX you can merge cells horizontally pretty easily. This is done by using
 many columns should be merged, the second argument is the cell type, which can
 be anything legal in the preamble but _only a single column type_.
 
+<!-- {% raw %} -->
 ```tex
 \begin{tabular}{*{3}{l}}
   Animal  & Food  & Size   \\
@@ -175,6 +186,7 @@ be anything legal in the preamble but _only a single column type_.
   microbe & \multicolumn{2}{c}{???} \\
 \end{tabular}
 ```
+<!-- {% endraw %} -->
 
 Note that you have to specify vertical rules you want to apply to the right of
 the `\multicolumn` in the `align` argument, _e.g._, `\multicolumn{2}{c|}{stuff}`
