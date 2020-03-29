@@ -2,7 +2,6 @@
 title: Accessing documentation and getting help
 ---
 
-# Documentation
 
 There are several ways to access the documentation of a package or class.
 
