@@ -83,7 +83,7 @@ The `float` package will do that.
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{mwe}   % gives example-average.pdf
+\usepackage{mwe}   % gives example-image.pdf
 \usepackage{lipsum}  % dummy text for filler
 \usepackage{float}  
 
@@ -107,7 +107,7 @@ You can get the same effect with the
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{mwe}   % gives example-average.pdf
+\usepackage{mwe}   % gives example-image.pdf
 \usepackage{lipsum}  % dummy text for filler
 \usepackage{caption}  
 
