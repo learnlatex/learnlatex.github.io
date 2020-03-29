@@ -8,6 +8,6 @@ layout: default
 
 {% if page.path contains "lesson-" %}
   <p><small>
-    <a href = "more{{page.path | remove_first: "lesson"}}">See more on this topic</a>
+    <a href = "{{page.path | replace: "lesson", "more"}}">See more on this topic</a>
   </small></p>
 {% endif %}
