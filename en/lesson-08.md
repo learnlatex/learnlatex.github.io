@@ -3,7 +3,7 @@ title: Tables
 ---
 
 
-# Basic Tables
+## Basic Tables
 
 Tables in LaTeX are set using the `tabular` environment. This lesson will assume
 you load the `array` package, which adds more functionality to LaTeX tables, and
