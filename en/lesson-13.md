@@ -9,7 +9,9 @@ chapters, and appendix, a bibliography, and an index.
 <!-- {% raw %} -->
 ```latex
 \documentclass[titlepage]{book}
-\usepackage{makeidx}\makeindex
+\usepackage{makeidx}\makeindex % index
+\usepackage{biblatex}          % bibliography
+\addbibresource{document.bib} 
 
 \title{Life at Sea}
 \author{John Aubrey and Stephen Maturin}
@@ -39,16 +41,14 @@ chapters, and appendix, a bibliography, and an index.
 
 % ========================
 \backmatter
-\bibliographystyle{apalike}
 \addcontentsline{toc}{chapter}{Bibliography}
-\bibliography{document}
+\printbibliography
 \addcontentsline{toc}{chapter}{Index}
 \printindex
 \input{backcover}
 \end{document}
 ```
 <!-- {% endraw %} -->
-
 
 LaTeX lets you split a large document into several files.
 This simplifies editing, speeds processing, and lets multiple authors work
@@ -89,3 +89,5 @@ The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
 affect the formatting.
 For instance, `\frontmatter` changes the page numbering to
 Roman numbers.
+The `appendix` command changes the numbering to `A`, `B`, etc.,
+so for instance in the first chapter after it the header says `Appendix A`. 
