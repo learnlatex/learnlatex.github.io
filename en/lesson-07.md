@@ -58,8 +58,3 @@ because there isn't room for it on the bottom of the first page.
 The `ht` influences where LaTeX can place the float; these two
 letters mean that it can go where it is in the source (next to
 `Test location`) or to the top of a page.
-
-
-### More
-
-You can read [more](more-07.html) on graphics and floats.
