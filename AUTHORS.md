@@ -8,3 +8,4 @@ The following people have made contributions to learnlatex.org:
 - Jim Hefferon
 - Joseph Wright
 - Uwe Ziegenhagen
+- Jonathan P. Spratte
