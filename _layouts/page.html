@@ -6,3 +6,10 @@ layout: default
 
 {{content}}
 
+{% for static_file in site.static_files %}
+    {% if static_file.path == "more{{page.path | remove_first: "lesson"}}" %}
+        <p><small>
+          <a href = "more{{page.path | remove_first: "lesson"}}">See more on this topic</a>
+        </small></p>
+    {% endif %}
+{% endfor %}
