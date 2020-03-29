@@ -57,7 +57,7 @@ away from the `Test location` text to the top of the second page,
 because there isn't room for it on the bottom of the first page.
 The `ht` influences where LaTeX can place the float; these two
 letters mean that it can go where it is in the source (next to
-``Test location`) or to the top of a page.
+`Test location`) or to the top of a page.
 
 
 ### More
