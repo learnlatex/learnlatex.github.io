@@ -23,17 +23,18 @@ environment, in which you specify the columns by using single letter names. The
 available column types are:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
-type       | description
----        |:--
-`l`        | left aligned column
-`c`        | centred column
-`r`        | right aligned column
-`p{width}` | a column with fixed width `width`, the text will be automatically line wrapped and fully justified
-`m{width}` | like `p`, but vertically centred compared to the rest of the row
-`b{width}` | like `p`, but bottom aligned
-`w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`.
-`W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide.
 
+| type       | description |
+| ---        |:-- |
+| `l`        | left aligned column |
+| `c`        | centred column |
+| `r`        | right aligned column |
+| `p{width}` | a column with fixed width `width`, the text will be automatically line wrapped and fully justified |
+| `m{width}` | like `p`, but vertically centred compared to the rest of the row |
+| `b{width}` | like `p`, but bottom aligned |
+| `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
+| `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
+ 
 The columns `l`, `c`, and `r` will have the natural width of the widest cell.
 Each column has to be declared, so if you want three centred columns, you'd use
 `ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
