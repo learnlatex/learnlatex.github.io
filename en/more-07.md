@@ -2,8 +2,6 @@
 title: More on: Including graphics and making things 'float'
 ---
 
-## More on graphics and floats
-
 ### Graphics
 
 The most commonly-used options for `\includegraphics` are
@@ -17,11 +15,11 @@ The command `\includegraphics[scale=0.50]{...}` makes it half as large
 as its nominal size.
 A complete list of options, including ones to rotate or reflect
 and to give a subpart of the image, is at
-[the reference](https://latexref.xyz/_005cincludegraphics.html#g_t_005cincludegraphics). 
+[the reference](https://latexref.xyz/_005cincludegraphics.html#g_t_005cincludegraphics).
 
 LaTeX works on many computer platforms so
 file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces. 
+Safest is to name your graphics simply, in particular without spaces.
 For example, if you want to organize your files by keeping all
 graphics in a subdirectory, then something like
 `\includegraphics[width=30pt]{pix/mom.png}`
@@ -128,5 +126,4 @@ you a great deal of flexibility with captions.
 
 For more see the reference's sections on
 [figure](https://latexref.xyz/figure.html#figure) and
-[floats](https://latexref.xyz/Floats.html#Floats). 
-
+[floats](https://latexref.xyz/Floats.html#Floats).

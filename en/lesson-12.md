@@ -2,10 +2,8 @@
 title: Citations and references
 ---
 
-## Citations and references
-
 For bibliographic citations, while
-you can include reference sources directly in your document, 
+you can include reference sources directly in your document,
 usually you will get that information from one or more external files.
 Such a file is a database of references,
 containing the information in a processing-friendly format.
@@ -63,4 +61,3 @@ and then compile with LaTeX twice more.
 The result has the `\cite{...}` replaced with a reference, and
 a list of references placed where the document source says
 `\printbibliography`.
-

@@ -2,8 +2,6 @@
 title: Including graphics and making things 'float'
 ---
 
-## Graphics and floats
-
 To bring in graphics from outside LaTeX, use the `graphicx`
 package
 

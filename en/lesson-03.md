@@ -2,8 +2,6 @@
 title: Your first LaTeX document
 ---
 
-## Your first LaTeX document
-
 In your editor open a new file `first.tex`.
 Enter the text as it is written below, or you can
 copy and paste from here.
