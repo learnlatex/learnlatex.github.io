@@ -196,3 +196,90 @@ be anything legal in the preamble but _only a single column type_.
 Note that you have to specify vertical rules you want to apply to the right of
 the `\multicolumn` in the `align` argument, _e.g._, `\multicolumn{2}{c|}{stuff}`
 &ndash; but remember, don't use vertical rules.
+
+
+## Tables in Printing Quality with the `booktabs` Package
+
+In this section we will briefly introduce the `booktabs` package, which aids 
+the author in the creation of beautifully typeset tables. "Beautiful" means
+in this context that the table is well-readable.
+
+Let us start with a simple table:
+
+
+<!-- {% raw %} -->
+```latex
+\begin{tabular}{clr}
+AAA & BBB & CCC \\
+1 & 2 & 3\\
+11 & 22 & 33 
+\end{tabular}
+```
+<!-- {% endraw %} -->
+
+Using the `\toprule`, `\midrule` and `\bottomrule` commands we can add some 
+horizontal lines.
+
+<!-- {% raw %} -->
+```latex
+\begin{tabular}{clr} \toprule
+AAA & BBB & CCC \\ \midrule
+1 & 2 & 3\\
+11 & 22 & 33 \\ \bottomrule
+\end{tabular} 
+```
+<!-- {% endraw %} -->
+
+By default `\toprule` and `\bottomrule` are slightly thicker than the 
+`\midrule`. The thickness of the lines can be adjusted via the optional 
+parameter of these commands:
+
+<!-- {% raw %} -->
+```latex
+\begin{tabular}{lrc} 
+\toprule[2pt]
+AAA & BBB & CCC \\ 
+\cmidrule[1pt]
+1 & 2 & 3 \\
+11 & 22 & 33 \\
+\bottomrule[2pt]
+\end{tabular}
+```
+<!-- {% endraw %} -->
+
+Even more, one can set a left and right indent for the `\midrule`, so 
+that this line is a little bit shorter as the `\toprule` and 
+`\bottomrule` of the table.
+
+<!-- {% raw %} -->
+```latex
+\begin{tabular}{lrc} 
+\toprule[2pt]
+AAA & BBB & CCC \\ 
+\cmidrule[1pt](rl){1-3}
+1 & 2 & 3 \\
+11 & 22 & 33 \\
+\bottomrule[2pt]
+\end{tabular}
+```
+<!-- {% endraw %} -->
+
+The package also provides commands to increase or decrease the height
+of a row, in the following example we increase the height of the 
+last row by half of the width of the capital 'M' in the current font.
+
+<!-- {% raw %} -->
+```latex
+\begin{tabular}{lrc} 
+\toprule[2pt]
+a & b & c \\ 
+\cmidrule[1pt](rl){1-3}
+d & e & f \\ 
+j & k & l \\ 
+\addlinespace[0.5em]
+g & h & i \\ 
+\bottomrule[2pt] 
+\end{tabular}
+```
+<!-- {% endraw %} -->
+
