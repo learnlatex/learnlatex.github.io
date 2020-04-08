@@ -66,6 +66,8 @@ function copytoclipboard(nd){
 function allowedit(nd){
     var p = document.getElementById(nd);
     p.contentEditable="true";
+    p.setAttribute("spellcheck","false");
+    p.innerHTML=p.innerText;
     p.style.border="solid thin green";
 }
 
