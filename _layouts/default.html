@@ -7,6 +7,9 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    {% if page.path contains "-" %}
+    <script src="../scripts/runlatex.js"></script>
+    {% endif %}
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
