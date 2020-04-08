@@ -15,6 +15,10 @@ function llexamples() {
 	o.innerText="Open in OverLeaf";
 	o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
 	p[i].parentNode.insertBefore(o, p[i].nextSibling);
+	var f=document.createElement("span");
+	f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs" method="post">
+       <input id=\"encoded_snip-pre" + i + "\" name=\"encoded_snip\" value=\"\" /></form>";
+	p[i].parentNode.insertBefore(f, p[i].nextSibling);
     }
     }
 }
@@ -35,7 +39,10 @@ function latexonlinecc(nd) {
 
 // based on code from texnique.fr
 function openinoverleaf(nd) {
-    alert("OverLeaf link not yet operational");
+  var p = document.getElementById(nd);
+  document.getElementById('encoded_snip-' + nd ).value =encodeURIComponent(p.innerText);
+  document.getElementById('form-' + nd).submit();
 }
+
 
 window.addEventListener('load', llexamples, false);
