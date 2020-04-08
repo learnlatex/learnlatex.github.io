@@ -17,6 +17,7 @@ function llexamples() {
 	var r = document.createElement("button");
 	r.innerText="LaTeX online";
 	r.setAttribute("onclick",'latexonlinecc("pre' + i + '")');
+	r.setAttribute("id","lo-pre" + i);
 	p[i].parentNode.insertBefore(r, p[i].nextSibling);
 	// overleaf
 	var o = document.createElement("button");
@@ -32,13 +33,19 @@ function llexamples() {
 
 function latexonlinecc(nd) {
     var p = document.getElementById(nd);
+    var b = document.getElementById('lo-' + nd);
     var ifr= document.getElementById(nd + "ifr");
     if(ifr == null) {
 	ifr=document.createElement("iframe");
 	ifr.setAttribute("width","100%");
 	ifr.setAttribute("height","500em");
 	ifr.setAttribute("id",nd + "ifr");
-	p.parentNode.insertBefore(ifr, p.nextSibling);
+	p.parentNode.insertBefore(ifr, b.nextSibling);
+	d=document.createElement("button");
+	d.innerText="Delete Output";
+	d.setAttribute("id","del-" + nd);
+	d.setAttribute("onclick",'deleteoutput("' + nd + '")');
+	p.parentNode.insertBefore(d, b.nextSibling);
     }
     ifr.setAttribute("src","https://latexonline.cc/compile?text=" + encodeURIComponent(p.innerText));
 }
@@ -71,5 +78,11 @@ function allowedit(nd){
     p.style.border="solid thin green";
 }
 
+function deleteoutput(nd){
+    var b = document.getElementById('del-' + nd);
+    var ifr = document.getElementById(nd + 'ifr');
+    b.parentNode.removeChild(b);
+    ifr.parentNode.removeChild(ifr);
+}
 
 window.addEventListener('load', llexamples, false);
