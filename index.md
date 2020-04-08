@@ -24,7 +24,7 @@ way if you do not.
 ## How the examples work
 
 To support your learning, the site includes lots of examples. In
-[Lesson 2](en/lesson-2) we will talk about how you use LaTeX both on-line and with
+[Lesson 2](en/lesson-02) we will talk about how you use LaTeX both on-line and with
 a local installation on your own PC. To get you started, we have set up
 our examples so you can edit and run them _in the page_ they are on. We
 have also linked them to [Overleaf](https://www.overleaf.com), one of the
