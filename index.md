@@ -21,6 +21,15 @@ including a 'going further' page for each lesson. This extra information is
 there to support you when you need the detail, but should not get in your
 way if you do not.
 
+## How the examples work
+
+To support your learning, the site includes lots of examples. In
+[en/lesson-2] we will talk about how you use LaTeX both on-line and with
+a local installation on your own PC. To get you started, we have set up
+our examples so you can edit and run them _in the page_ they are on. We
+have also linked them to [Overleaf](https://www.overleaf.com), one of the
+most popular on-line LaTeX editing sites. But don't worry, you can also
+use the examples on your own machine.
 
 ## The lessons
 
