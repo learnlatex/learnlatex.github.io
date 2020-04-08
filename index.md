@@ -15,6 +15,13 @@ know, and made them into short 'lessons'. Each lesson is very focussed, so they
 should not take too long to cover. In each lesson, we've given examples of what
 you'd write, and they are available so you can try them out on-line.
 
+We know that people will want to know more than we can cover in 15 short
+lessons. To help guide you when you need more information, we have therefore
+including a 'going further' page for each lesson. This extra information is
+there to support you when you need the detail, but should not get in your
+way if you do not.
+
+
 ## The lessons
 
 <ul>
