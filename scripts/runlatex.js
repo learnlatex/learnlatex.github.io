@@ -24,7 +24,7 @@ function llexamples() {
 	o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
 	p[i].parentNode.insertBefore(o, p[i].nextSibling);
 	var f=document.createElement("span");
-	f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\"" target=\"_blank\"><input id=\"encoded_snip-pre" + i + "\" name=\"encoded_snip\" value=\"\" /></form>";
+	f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"><input id=\"encoded_snip-pre" + i + "\" name=\"encoded_snip\" value=\"\" /></form>";
 	p[i].parentNode.insertBefore(f, p[i].nextSibling);
     }
     }
