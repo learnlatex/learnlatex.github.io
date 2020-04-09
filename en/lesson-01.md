@@ -11,12 +11,28 @@ does.
 Take for example a `<h2>` headline indicating a new section in an HTML-document.
 LaTeX also has a command for this, here one would use the `\section` command.
 
-## From here on
+## The LaTeX workflow
 
-For more information on the history of TeX and LaTeX see:
+Because LaTeX files are not the document itself but rather instructions
+on how the document should look, you don't normally give other people
+your LaTeX file itself. Instead, after writing your LaTeX _source_, you
+run LaTeX on the file (normally using a progam called `pdflatex`) to
+create a PDF file. This PDF is then what you send to others.
 
-*
+Different people use different ways to describe this process. As using LaTeX
+is a bit like programming, it's often called 'compiling' your document, although
+'typesetting' is more accurate.
 
- The text with the commands is then processed by one of the LaTeX commands, e.g.
- by pdflatex or lualatex. In case there are no errors the processor creates a
- PDF file.
+## Multiple LaTeX runs
+
+For simple files, you only need to typeset your file once to get the completed
+PDF. But once you start adding more complicated things, like cross references,
+citations, figures and tables of content, you might need to run LaTeX more
+than once. We'll tell you when that's the case.
+
+## LaTeX or pdfLaTeX or ...
+
+In the [next lesson](lesson-02), we are going to see that LaTeX is not a
+single program. To keep things simple, we are going to focus on one particular
+LaTeX program, pdfLaTeX, for creating your PDFs. We will look some other
+programs, and why you might want to use them, later in the course. 
