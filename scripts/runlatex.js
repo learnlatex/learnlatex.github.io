@@ -1,7 +1,9 @@
+
+var preincludes={};
+
 function llexamples() {
     var p = document.getElementsByTagName("pre");
     for(var i=0;i<p.length;i++) {
-    if(p[i].textContent.indexOf("\\documentclass") !== -1) {
 	p[i].setAttribute("id","pre" + i);
 	// edit
 	var b = document.createElement("button");
@@ -13,26 +15,43 @@ function llexamples() {
 	c.innerText="copy";
 	c.setAttribute("onclick",'copytoclipboard("pre' + i + '")');
 	p[i].parentNode.insertBefore(c, p[i]);
-	// latexonline
-	var r = document.createElement("button");
-	r.innerText="LaTeX online";
-	r.setAttribute("onclick",'latexonlinecc("pre' + i + '")');
-	r.setAttribute("id","lo-pre" + i);
-	p[i].parentNode.insertBefore(r, p[i].nextSibling);
-	// overleaf
-	var o = document.createElement("button");
-	o.innerText="Open in OverLeaf";
-	o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
-	p[i].parentNode.insertBefore(o, p[i].nextSibling);
-	var f=document.createElement("span");
-	f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"><input id=\"encoded_snip-pre" + i + "\" name=\"encoded_snip\" value=\"\" /></form>";
-	p[i].parentNode.insertBefore(f, p[i].nextSibling);
-    }
+	if(p[i].textContent.indexOf("\\documentclass") !== -1) {
+	    // latexonline
+	    var r = document.createElement("button");
+	    r.innerText="LaTeX online";
+	    r.setAttribute("onclick",'latexonlinecc("pre' + i + '")');
+	    r.setAttribute("id","lo-pre" + i);
+	    p[i].parentNode.insertBefore(r, p[i].nextSibling);
+	    // overleaf
+	    var o = document.createElement("button");
+	    o.innerText="Open in OverLeaf";
+	    o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
+	    p[i].parentNode.insertBefore(o, p[i].nextSibling);
+	    var f=document.createElement("span");
+	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"><input id=\"encoded_snip-pre" + i + "\" name=\"encoded_snip[]\" value=\"\" /></form>";
+	    p[i].parentNode.insertBefore(f, p[i].nextSibling);
+	}
     }
 }
 
 function latexonlinecc(nd) {
+    var fconts="";
+    if(typeof(preincludes) == "object") {
+      if(typeof(preincludes[nd]) == "object") {
+	  var incl=preincludes[nd];
+	  for(const prop in incl) {
+	      fconts=fconts+"\n\\begin{filecontents}{" +
+		  incl[prop] +
+		  "}\n" +
+		  document.getElementById(prop).innerText +
+		  "\n\\end{filecontents}\n";
+	  }
+      }
+  }
     var p = document.getElementById(nd);
+    if(p.innerText.indexOf("biblatex") !== -1) {
+	fconts=fconts + "\n\\RequirePackage[backend=bibtex]{biblatex}\n";
+    }
     var b = document.getElementById('lo-' + nd);
     var ifr= document.getElementById(nd + "ifr");
     if(ifr == null) {
@@ -47,14 +66,30 @@ function latexonlinecc(nd) {
 	d.setAttribute("onclick",'deleteoutput("' + nd + '")');
 	p.parentNode.insertBefore(d, b.nextSibling);
     }
-    ifr.setAttribute("src","https://latexonline.cc/compile?text=" + encodeURIComponent(p.innerText));
+    // that looks to have all lines but still need to zap comments for some reason..
+    // alert(encodeURIComponent(fconts));
+    ifr.setAttribute("src","https://latexonline.cc/compile?text=" + encodeURIComponent(fconts.replace(commentregex,'') + p.innerText));
 }
 
+const commentregex = / %.*/;
 
-// based on code from texnique.fr
+// https://www.overleaf.com/devs
 function openinoverleaf(nd) {
+    var fconts="";
+    if(typeof(preincludes) == "object") {
+      if(typeof(preincludes[nd]) == "object") {
+	  var incl=preincludes[nd];
+	  for(const prop in incl) {
+	      fconts=fconts+"\n\\begin{filecontents}{" +
+		  incl[prop] +
+		  "}\n" +
+		  document.getElementById(prop).innerText +
+		  "\n\\end{filecontents}\n";
+	  }
+      }
+  }
   var p = document.getElementById(nd);
-  document.getElementById('encoded_snip-' + nd ).value =encodeURIComponent(p.innerText);
+  document.getElementById('encoded_snip-' + nd ).value =encodeURIComponent(fconts + p.innerText);
   document.getElementById('form-' + nd).submit();
 }
 
@@ -84,5 +119,6 @@ function deleteoutput(nd){
     b.parentNode.removeChild(b);
     ifr.parentNode.removeChild(ifr);
 }
+
 
 window.addEventListener('load', llexamples, false);
