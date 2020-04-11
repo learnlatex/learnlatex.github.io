@@ -37,17 +37,19 @@ function llexamples() {
 function latexonlinecc(nd) {
     var fconts="";
     if(typeof(preincludes) == "object") {
-      if(typeof(preincludes[nd]) == "object") {
-	  var incl=preincludes[nd];
-	  for(const prop in incl) {
-	      fconts=fconts+"\n\\begin{filecontents}{" +
-		  incl[prop] +
-		  "}\n" +
-		  document.getElementById(prop).innerText +
-		  "\n\\end{filecontents}\n";
-	  }
-      }
-  }
+	if(typeof(preincludes[nd]) == "object") {
+	    fconts= "\n\\makeatletter\\def\\input@path{{latex.out/}}\\makeatother\n";
+	    var incl=preincludes[nd];
+	    for(const prop in incl) {
+		fconts=fconts+"\n\\begin{filecontents}{" +
+		    incl[prop] +
+		    "}\n" +
+		    document.getElementById(prop).innerText +
+		    "\n\\end{filecontents}\n";
+	    }
+	}
+    }
+    "\\makeatletter\\def\\input@path{{latex.out/}}\\makeatother\n"
     var p = document.getElementById(nd);
     if(p.innerText.indexOf("biblatex") !== -1) {
 	fconts=fconts + "\n\\RequirePackage[backend=bibtex]{biblatex}\n";

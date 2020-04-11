@@ -2,11 +2,26 @@
 title: Structuring longer documents
 ---
 
+<script>
+preincludes = {
+ "pre0": {
+    "pre1": "pref.tex",
+    "pre2": "chap1.tex",
+    "pre3": "chap2.tex",
+    "pre4": "append.tex",
+    "pre5": "frontcover.tex",
+    "pre6": "dedication.tex",
+    "pre7": "copyright.tex",
+    "pre8": "backcover.tex",
+   }
+}
+</script>
+
 This is the skeleton of a book.
 It includes front and back covers, preface, table of contents,
 chapters, and appendix, a bibliography, and an index.
 
-<!-- {% raw %} -->
+<!-- pre0 {% raw %} -->
 ```latex
 \documentclass[titlepage]{book}
 \usepackage{makeidx}\makeindex % index
@@ -91,3 +106,80 @@ For instance, `\frontmatter` changes the page numbering to
 Roman numbers.
 The `appendix` command changes the numbering to `A`, `B`, etc.,
 so for instance in the first chapter after it the header says `Appendix A`. 
+
+
+EDIT
+
+----
+
+#### pref.tex
+<!-- pre1 {% raw %} -->
+```latex
+\chapter*{Preface}
+The preface text.
+```
+<!-- {% endraw %} -->
+
+#### chap1.tex
+<!-- pre2 {% raw %} -->
+```latex
+\chapter{Introduction}
+The first chapter text.
+```
+<!-- {% endraw %} -->
+
+#### chap2.tex
+<!-- pre3 {% raw %} -->
+```latex
+\chapter{Something}
+The second chapter text.
+```
+<!-- {% endraw %} -->
+
+####  append.tex
+<!-- pre4 {% raw %} -->
+```latex
+\chapter*{Appendix}
+The first appendix text.
+```
+<!-- {% endraw %} -->
+
+#### frontcover.tex
+<!-- pre5 {% raw %} -->
+```latex
+\begin{center}
+The front cover
+\end{center}
+```
+<!-- {% endraw %} -->
+
+#### dedication.tex
+<!-- pre6 {% raw %} -->
+```latex
+\begin{center}
+\large
+For \ldots
+\end{center}
+```
+<!-- {% endraw %} -->
+
+#### copyright.tex
+<!-- pre7 {% raw %} -->
+```latex
+\begin{center}
+Copyright 2020 learnlatex.
+\end{center}
+```
+<!-- {% endraw %} -->
+
+#### backcover.tex
+<!-- pre8 {% raw %} -->
+```latex
+\begin{center}
+The back cover
+\end{center}
+```
+<!-- {% endraw %} -->
+
+----
+
