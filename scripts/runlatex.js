@@ -28,7 +28,7 @@ function llexamples() {
 	    o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
 	    p[i].parentNode.insertBefore(o, p[i].nextSibling);
 	    var f=document.createElement("span");
-	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"><input id=\"encoded_snip-pre" + i + "\" name=\"encoded_snip[]\" value=\"\" /></form>";
+	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"><input id=\"encoded_snip-pre" + i + "\" name=\"encoded_snip\" value=\"\" /><input id=\"engine-pre" + i + "\" name=\"engine\" value=\"pdflatex\" /></form>";
 	    p[i].parentNode.insertBefore(f, p[i].nextSibling);
 	}
     }
@@ -70,7 +70,7 @@ function latexonlinecc(nd) {
     }
     // that looks to have all lines but still need to zap comments for some reason..
     // alert(encodeURIComponent(fconts));
-    ifr.setAttribute("src","https://latexonline.cc/compile?text=" + encodeURIComponent(fconts.replace(commentregex,'') + p.innerText));
+    ifr.setAttribute("src","https://latexonline.cc/compile?text=" + encodeURIComponent(fconts.replace(commentregex,'') + p.innerText) + ((p.innerText.indexOf("fontspec") !== -1) ? "&command=xelatex" : ""));
 }
 
 const commentregex = / %.*/;
@@ -91,7 +91,10 @@ function openinoverleaf(nd) {
       }
   }
   var p = document.getElementById(nd);
-  document.getElementById('encoded_snip-' + nd ).value =encodeURIComponent(fconts + p.innerText);
+    document.getElementById('encoded_snip-' + nd ).value =encodeURIComponent(fconts + p.innerText);
+    if(p.innerText.indexOf("fontspec") !== -1) {
+	document.getElementById('engine-' + nd ).value ="xelatex";
+    }
   document.getElementById('form-' + nd).submit();
 }
 
