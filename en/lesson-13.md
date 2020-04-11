@@ -108,7 +108,6 @@ The `appendix` command changes the numbering to `A`, `B`, etc.,
 so for instance in the first chapter after it the header says `Appendix A`. 
 
 
-EDIT
 
 ----
 
