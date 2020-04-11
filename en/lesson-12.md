@@ -1,6 +1,13 @@
 ---
 title: Citations and references
 ---
+<script>
+preincludes = {
+ "pre1": {
+    "pre0": "document.bib"
+   }
+}
+</script>
 
 For bibliographic citations, while
 you can include reference sources directly in your document,
