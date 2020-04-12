@@ -15,9 +15,9 @@ therefore decided to implement his own typesetting system based.
 In May 1977 the development of TeX started.
 
 The original TeX was rather complicated to use, even Donald Knuth used various
-macros to edit his books. Leslie Lamport, who works for Microsoft nowadays also
+macros to edit his books. Leslie Lamport, who works for Microsoft nowadays, also
 developed a set of macros which simplify the use of TeX and called this macro
-set "LaTeX" (Lamport TeX)
+set "LaTeX".
 
 Today LaTeX is the most common way to interact with TeX. Another alternative is
-for example ConTeXt.
+[ConTeXt](https://www.contextgarden.net/).
