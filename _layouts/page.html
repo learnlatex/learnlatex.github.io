@@ -9,10 +9,14 @@ layout: default
 {% if page.path contains "lesson-" %}
   <p><small>
     <a href = "{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}">See more on this topic</a>
-  {% unless page.path contains "lesson-15" %}
-    <br>
-    <a href = "lesson-{{page.name | remove_first: "lesson-",| remove_first: ".md" | plus: 1}}">Next lesson</a>
-  {% endunless %}
+    {% unless page.path contains "lesson-15" %}
+     <br>
+     {% if page.name contains "lesson-1" or  page.name contains "lesson-09" %}
+     <a href = "lesson-{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">Next lesson</a>
+     {% else %}
+      <a href = "lesson-0{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">Next lesson</a>
+    {% endif %}
+    {% endunless %}
   </small></p>
 {% endif %}
 
