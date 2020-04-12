@@ -3,10 +3,10 @@ title: What is LaTeX and how does it work?
 ---
 
 Unlike common word processors such as Microsoft Word or LibreOffice, LaTeX
-usually does not provide WYSIWYG. With LaTeX one takes a good text editor,
-writes the text and enriches the text with markup. This markup tells LaTeX about
-the logical meaning of certain elements of the text, similar to the way HTML
-does.
+usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
+one takes text and enriches the text with mark--up. This markup tells LaTeX
+about the logical meaning of certain elements of the text, similar to the way
+HTML does.
 
 Take for example a `<h2>` headline indicating a new section in an HTML-document.
 LaTeX also has a command for this, here one would use the `\section` command.
@@ -35,4 +35,4 @@ than once. We'll tell you when that's the case.
 In the [next lesson](lesson-02), we are going to see that LaTeX is not a
 single program. To keep things simple, we are going to focus on one particular
 LaTeX program, pdfLaTeX, for creating your PDFs. We will look some other
-programs, and why you might want to use them, later in the course. 
+programs, and why you might want to use them, later in the course.
