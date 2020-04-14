@@ -95,6 +95,9 @@ particularly useful when we start creating cross-references later in the course.
 
 ## Exercise
 
+Experiment with the on-line editing and typesetting system; click the
+button to typeset the content, then edit it in the webpage and re-typeset it.
+
 Try adding text to your first document, typesetting and seeing the changes in
 your PDF. Make some different paragraphs and add variable spaces. Explore how
 your editor works: click on your source and find how to go to the same line  in
