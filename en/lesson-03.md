@@ -7,7 +7,7 @@ how a document looks and how to typeset it successfully. It is also your
 first chance to see how to use the examples here on `learnlatex.org`.
 
 If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy&endash;paste the text below or type it in.
+called `first.tex`, and either copy–paste the text below or type it in.
 If you are using the on-line systems, you can just click on the buttons in the
 example to try it out! We suggest you try out the on-line options even  if you
 have set up LaTeX locally: this is a good chance to see how the different
