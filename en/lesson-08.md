@@ -210,11 +210,17 @@ Let us start with a simple table:
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+\usepackage{booktabs}
+
+\begin{document}
 \begin{tabular}{clr}
 AAA & BBB & CCC \\
 1 & 2 & 3\\
 11 & 22 & 33 
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
