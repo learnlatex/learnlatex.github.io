@@ -89,9 +89,13 @@ This is a new paragraph.
 You can see above that we've got two paragraphs: notice the use of a blank  line
 to do that. Also notice that multiple spaces are treated as a single space.
 
+You might also sometimes want a 'hard' space that does not break over lines: in
+LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
+particularly useful when we start creating cross-references later in the course.
+
 ## Exercise
 
 Try adding text to your first document, typesetting and seeing the changes in
 your PDF. Make some different paragraphs and add variable spaces. Explore how
 your editor works: click on your source and find how to go to the same line  in
-your PDF.
+your PDF. Try adding some hard spaces and see how they influence line-breaking.
