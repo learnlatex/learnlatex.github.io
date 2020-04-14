@@ -2,9 +2,16 @@
 title: Your first LaTeX document
 ---
 
-In your editor open a new file `first.tex`.
-Enter the text as it is written below, or you can
-copy and paste from here.
+Our first LaTeX document is going to be very simple: the idea is to show you
+how a document looks and how to typeset it successfully. It is also your
+first chance to see how to use the examples here on `learnlatex.org`.
+
+If you are using a local LaTeX installation, in your editor create a new file
+called `first.tex`, and either copy&endash;paste the text below or type it in.
+If you are using the on-line systems, you can just click on the buttons in the
+example to try it out! We suggest you try out the on-line options even  if you
+have set up LaTeX locally: this is a good chance to see how the different
+options work.
 ```latex
 \documentclass{article}
 
@@ -14,14 +21,14 @@ Hey world!
 This is a first document.
 \end{document}
 ```
-Save the file.
-Compile it, that is, turn it into a PDF document.
-(If you have errors, see the subsection below.)
+Save the file and typeset it to a PDF document: if you are using a local LaTeX
+installation, the exact button to press will depend on the editor you have
+picked. You should get a PDF file that contains the text above _plus_ a page
+number: LaTeX adds that automatically.
+
 View the output `first.pdf` with
 whatever program you prefer for PDF viewing.
 Looks great; congratulations!
-
-
 
 ## Handling errors
 
