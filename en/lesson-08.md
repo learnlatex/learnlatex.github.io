@@ -211,7 +211,6 @@ Let us start with a simple table:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{clr}
@@ -224,16 +223,22 @@ AAA & BBB & CCC \\
 ```
 <!-- {% endraw %} -->
 
-Using the `\toprule`, `\midrule` and `\bottomrule` commands we can add some 
+Using the `\toprule`, `\midrule` and `\bottomrule` commands from the `booktabs` package we can add some 
 horizontal lines.
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+\usepackage{booktabs}
+
+\begin{document}
 \begin{tabular}{clr} \toprule
 AAA & BBB & CCC \\ \midrule
 1 & 2 & 3\\
 11 & 22 & 33 \\ \bottomrule
-\end{tabular} 
+\end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
@@ -243,6 +248,10 @@ parameter of these commands:
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+\usepackage{booktabs}
+
+\begin{document}
 \begin{tabular}{lrc} 
 \toprule[2pt]
 AAA & BBB & CCC \\ 
@@ -251,6 +260,8 @@ AAA & BBB & CCC \\
 11 & 22 & 33 \\
 \bottomrule[2pt]
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
@@ -260,6 +271,10 @@ that this line is a little bit shorter as the `\toprule` and
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+\usepackage{booktabs}
+
+\begin{document}
 \begin{tabular}{lrc} 
 \toprule[2pt]
 AAA & BBB & CCC \\ 
@@ -268,6 +283,8 @@ AAA & BBB & CCC \\
 11 & 22 & 33 \\
 \bottomrule[2pt]
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
@@ -277,6 +294,10 @@ last row by half of the width of the capital 'M' in the current font.
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+\usepackage{booktabs}
+
+\begin{document}
 \begin{tabular}{lrc} 
 \toprule[2pt]
 a & b & c \\ 
@@ -287,6 +308,8 @@ j & k & l \\
 g & h & i \\ 
 \bottomrule[2pt] 
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
