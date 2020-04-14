@@ -47,12 +47,17 @@ We got everything we need for our first little table. In the following code the
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+
+\begin{document}
 \begin{tabular}{lll}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
   horse  & hay   & large  \\
   frog   & flies & small  \\
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
@@ -73,6 +78,9 @@ right most line will not appear in the last row.
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+
+\begin{document}
 \begin{tabular}{|l|ll|}
   Animal  & Food  & Size   \\
   dog     & meat  & medium \\
@@ -80,6 +88,8 @@ right most line will not appear in the last row.
   frog    & flies & small  \\
   microbe & ???
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
@@ -97,6 +107,10 @@ following `\\` or another `\hline` or `\cline`).
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+
+\begin{document}
+
 \begin{tabular}{lll}
   \hline
   \hline
@@ -110,6 +124,8 @@ following `\\` or another `\hline` or `\cline`).
   \hline
   \hline
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
@@ -135,12 +151,18 @@ by using
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+
+\begin{document}
+
 \begin{tabular}{l !{:} l @{\hspace{1cm}} l}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
   horse  & hay   & large  \\
   frog   & flies & small  \\
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
@@ -161,12 +183,18 @@ append that colon to the first column, so that things don't look as clunky.
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+
+\begin{document}
+
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
   horse  & hay   & large  \\
   frog   & flies & small  \\
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
@@ -184,6 +212,10 @@ be anything legal in the preamble but _only a single column type_.
 
 <!-- {% raw %} -->
 ```latex
+\documentclass{article}
+
+\begin{document}
+
 \begin{tabular}{*{3}{l}}
   Animal  & Food  & Size   \\
   dog     & meat  & medium \\
@@ -191,6 +223,8 @@ be anything legal in the preamble but _only a single column type_.
   frog    & flies & small  \\
   microbe & \multicolumn{2}{c}{???} \\
 \end{tabular}
+
+\end{document}
 ```
 <!-- {% endraw %} -->
 
