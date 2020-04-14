@@ -255,7 +255,7 @@ parameter of these commands:
 \begin{tabular}{lrc} 
 \toprule[2pt]
 AAA & BBB & CCC \\ 
-\cmidrule[1pt]
+\midrule[1pt]
 1 & 2 & 3 \\
 11 & 22 & 33 \\
 \bottomrule[2pt]
