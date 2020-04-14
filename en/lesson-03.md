@@ -72,3 +72,26 @@ You must match them, so that for every `\begin{x}` there is an `\end{x}`.
 You must also nest them, so that if you have
 `\begin{x}  ... \begin{y}` then you must have
 `\end{y}  ... \end{x}`.
+
+We can add comments to a LaTeX file by starting them with `%`: lets use
+that to show the structure:
+```latex
+\documentclass[a4paper,12pt]{article} % The document class with options
+% A comment in the preamble
+\begin{document}
+% This is a comment
+This is   a simple
+document\footnote{with a footnote}.
+
+This is a new paragraph.
+\end{document}
+```
+You can see above that we've got two paragraphs: notice the use of a blank  line
+to do that. Also notice that multiple spaces are treated as a single space.
+
+## Exercise
+
+Try adding text to your first document, typesetting and seeing the changes in
+your PDF. Make some different paragraphs and add variable spaces. Explore how
+your editor works: click on your source and find how to go to the same line  in
+your PDF.
