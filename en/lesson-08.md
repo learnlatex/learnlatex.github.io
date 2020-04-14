@@ -148,6 +148,7 @@ In addition to all the aforementioned preamble content, we can use a few other
 things as well
 
 <!-- don't line wrap this table, markdown seems to not support this -->
+
 type | description
 ---  | :--
 `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns.
