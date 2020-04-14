@@ -42,13 +42,12 @@ lines above.
 If your invocation of LaTeX ends with a question mark then you can get out by
 typing `x` and `Enter`.
 
-LaTeX's error messages can be hard to understand.
-If you know someone with some experience, of course that's great.
-If not, try putting the error message into a search engine; lots
-of people have seen this error before and you'll find the answer there.
-
-
-
+LaTeX's error messages try to be helpful, but they are not the same as messages
+in word processors. Some editors also make it hard to see the 'full' text of an
+error, which can hide key details. LaTeX always creates a log of what it is
+doing: this is a text file ending in `.log`. You can always see the full  error
+messages there, and if you have a problem, expert LaTeX users might ask  for a
+copy of your log file.
 
 ## What you've got
 
