@@ -247,10 +247,11 @@ Let us start with a simple table:
 \documentclass{article}
 
 \begin{document}
-\begin{tabular}{clr}
-AAA & BBB & CCC \\
-1 & 2 & 3\\
-11 & 22 & 33 
+\begin{tabular}{lll}
+  Animal & Food  & Size   \\
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
 \end{tabular}
 
 \end{document}
@@ -266,10 +267,12 @@ horizontal lines.
 \usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{clr} \toprule
-AAA & BBB & CCC \\ \midrule
-1 & 2 & 3\\
-11 & 22 & 33 \\ \bottomrule
+
+\begin{tabular}{lll} \toprule
+  Animal & Food  & Size   \\ \midrule
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\ \bottomrule
 \end{tabular}
 
 \end{document}
@@ -286,13 +289,12 @@ parameter of these commands:
 \usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{lrc} 
-\toprule[2pt]
-AAA & BBB & CCC \\ 
-\midrule[1pt]
-1 & 2 & 3 \\
-11 & 22 & 33 \\
-\bottomrule[2pt]
+
+\begin{tabular}{lll} \toprule[2pt]
+  Animal & Food  & Size   \\ \midrule[1pt]
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\ \bottomrule[2pt]
 \end{tabular}
 
 \end{document}
@@ -309,13 +311,12 @@ that this line is a little bit shorter as the `\toprule` and
 \usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{lrc} 
-\toprule[2pt]
-AAA & BBB & CCC \\ 
-\cmidrule[1pt](rl){1-3}
-1 & 2 & 3 \\
-11 & 22 & 33 \\
-\bottomrule[2pt]
+
+\begin{tabular}{lll} \toprule[2pt]
+  Animal & Food  & Size   \\ \cmidrule[1pt](rl){1-3}
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\ \bottomrule[2pt]
 \end{tabular}
 
 \end{document}
@@ -323,8 +324,9 @@ AAA & BBB & CCC \\
 <!-- {% endraw %} -->
 
 The package also provides commands to increase or decrease the height
-of a row, in the following example we increase the height of the 
-last row by half of the width of the capital 'M' in the current font.
+of a row. In the following example we increase the height of the 
+last row by 0.5 em, which is half of the width of the capital 'M' 
+in the currently used font.
 
 <!-- {% raw %} -->
 ```latex
@@ -332,15 +334,12 @@ last row by half of the width of the capital 'M' in the current font.
 \usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{lrc} 
-\toprule[2pt]
-a & b & c \\ 
-\cmidrule[1pt](rl){1-3}
-d & e & f \\ 
-j & k & l \\ 
-\addlinespace[0.5em]
-g & h & i \\ 
-\bottomrule[2pt] 
+
+\begin{tabular}{lll} \toprule[2pt]
+  Animal & Food  & Size   \\ \cmidrule[1pt](rl){1-3}
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\ \addlinespace[0.5em]
+  frog   & flies & small  \\ \bottomrule[2pt]
 \end{tabular}
 
 \end{document}
