@@ -247,7 +247,7 @@ Let us start with a simple table:
 \documentclass{article}
 
 \begin{document}
-\begin{tabular}{lll}
+\begin{tabular}{@{} lll @{}}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
   horse  & hay   & large  \\
@@ -268,7 +268,7 @@ horizontal lines.
 
 \begin{document}
 
-\begin{tabular}{lll} \toprule
+\begin{tabular}{@{} lll @{}} \toprule
   Animal & Food  & Size   \\ \midrule
   dog    & meat  & medium \\
   horse  & hay   & large  \\
@@ -290,7 +290,7 @@ parameter of these commands:
 
 \begin{document}
 
-\begin{tabular}{lll} \toprule[2pt]
+\begin{tabular}{@{} lll @{}} \toprule[2pt]
   Animal & Food  & Size   \\ \midrule[1pt]
   dog    & meat  & medium \\
   horse  & hay   & large  \\
@@ -312,7 +312,7 @@ that this line is a little bit shorter as the `\toprule` and
 
 \begin{document}
 
-\begin{tabular}{lll} \toprule[2pt]
+\begin{tabular}{@{} lll@{}} \toprule[2pt]
   Animal & Food  & Size   \\ \cmidrule[1pt](rl){1-3}
   dog    & meat  & medium \\
   horse  & hay   & large  \\
@@ -335,7 +335,7 @@ in the currently used font.
 
 \begin{document}
 
-\begin{tabular}{lll} \toprule[2pt]
+\begin{tabular}{@{} lll @{}} \toprule[2pt]
   Animal & Food  & Size   \\ \cmidrule[1pt](rl){1-3}
   dog    & meat  & medium \\
   horse  & hay   & large  \\ \addlinespace[0.5em]
