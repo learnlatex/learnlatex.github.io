@@ -31,6 +31,10 @@ have also linked them to [Overleaf](https://www.overleaf.com), one of the
 most popular on-line LaTeX editing sites. But don't worry, you can also
 use the examples on your own machine.
 
+Our examples are based around using an up-to-date LaTeX installation. They
+all work with both of our online demonstration systems, so if you get strange
+errors, you might want to check if your LaTeX system is up-to-date.
+
 ## The lessons
 
 <ul>
@@ -50,6 +54,3 @@ use the examples on your own machine.
 </ul>
 
 ## Getting help and going further
-
-
-
