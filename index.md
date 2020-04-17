@@ -13,7 +13,7 @@ you _everything_ in one go.
 To do that, we have taken around 15 of the most important things you'll need to
 know, and made them into short 'lessons'. Each lesson is very focussed, so they
 should not take too long to cover. In each lesson, we've given examples of what
-you'd write, and they are available so you can try them out on-line.
+you'd write, and they are available so you can try them out online.
 
 We know that people will want to know more than we can cover in 15 short
 lessons. To help guide you when you need more information, we have therefore
@@ -24,11 +24,11 @@ way if you do not.
 ## How the examples work
 
 To support your learning, the site includes lots of examples. In
-[Lesson 2](en/lesson-02) we will talk about how you use LaTeX both on-line and with
+[Lesson 2](en/lesson-02) we will talk about how you use LaTeX both online and with
 a local installation on your own PC. To get you started, we have set up
 our examples so you can edit and run them _in the page_ they are on. We
 have also linked them to [Overleaf](https://www.overleaf.com), one of the
-most popular on-line LaTeX editing sites. But don't worry, you can also
+most popular online LaTeX editing sites. But don't worry, you can also
 use the examples on your own machine.
 
 Our examples are based around using an up-to-date LaTeX installation. They
