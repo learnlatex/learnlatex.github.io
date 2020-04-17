@@ -34,7 +34,7 @@ available column types are:
 | `b{width}` | like `p`, but bottom aligned |
 | `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
 | `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
- 
+
 The columns `l`, `c`, and `r` will have the natural width of the widest cell.
 Each column has to be declared, so if you want three centred columns, you'd use
 `ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
@@ -154,7 +154,7 @@ by using
 \documentclass{article}
 
 \begin{document}
-
+\usepackage{array}
 \begin{tabular}{l !{:} l @{\hspace{1cm}} l}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
@@ -184,7 +184,7 @@ append that colon to the first column, so that things don't look as clunky.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
+\usepackage{array}
 \begin{document}
 
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
@@ -213,7 +213,7 @@ be anything legal in the preamble but _only a single column type_.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
+\usepackage{array}
 \begin{document}
 
 \begin{tabular}{*{3}{l}}
@@ -235,7 +235,7 @@ the `\multicolumn` in the `align` argument, _e.g._, `\multicolumn{2}{c|}{stuff}`
 
 ## Tables in Printing Quality with the `booktabs` Package
 
-In this section we will briefly introduce the `booktabs` package, which aids 
+In this section we will briefly introduce the `booktabs` package, which aids
 the author in the creation of beautifully typeset tables. "Beautiful" means
 in this context that the table is well-readable.
 
@@ -258,7 +258,7 @@ Let us start with a simple table:
 ```
 <!-- {% endraw %} -->
 
-Using the `\toprule`, `\midrule` and `\bottomrule` commands from the `booktabs` package we can add some 
+Using the `\toprule`, `\midrule` and `\bottomrule` commands from the `booktabs` package we can add some
 horizontal lines.
 
 <!-- {% raw %} -->
@@ -279,8 +279,8 @@ horizontal lines.
 ```
 <!-- {% endraw %} -->
 
-By default `\toprule` and `\bottomrule` are slightly thicker than the 
-`\midrule`. The thickness of the lines can be adjusted via the optional 
+By default `\toprule` and `\bottomrule` are slightly thicker than the
+`\midrule`. The thickness of the lines can be adjusted via the optional
 parameter of these commands:
 
 <!-- {% raw %} -->
@@ -301,8 +301,8 @@ parameter of these commands:
 ```
 <!-- {% endraw %} -->
 
-Even more, one can set a left and right indent for the `\midrule`, so 
-that this line is a little bit shorter as the `\toprule` and 
+Even more, one can set a left and right indent for the `\midrule`, so
+that this line is a little bit shorter as the `\toprule` and
 `\bottomrule` of the table.
 
 <!-- {% raw %} -->
@@ -324,8 +324,8 @@ that this line is a little bit shorter as the `\toprule` and
 <!-- {% endraw %} -->
 
 The package also provides commands to increase or decrease the height
-of a row. In the following example we increase the height of the 
-last row by 0.5 em, which is half of the width of the capital 'M' 
+of a row. In the following example we increase the height of the
+last row by 0.5 em, which is half of the width of the capital 'M'
 in the currently used font.
 
 <!-- {% raw %} -->
@@ -345,4 +345,3 @@ in the currently used font.
 \end{document}
 ```
 <!-- {% endraw %} -->
-
