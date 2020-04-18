@@ -297,7 +297,7 @@ parameter of these commands:
 <!-- {% endraw %} -->
 
 Even more, one can set a left and right indent for the `\midrule`, so
-that this line is a little bit shorter as the `\toprule` and
+that this line is a little bit shorter than the `\toprule` and
 `\bottomrule` of the table.
 
 <!-- {% raw %} -->
