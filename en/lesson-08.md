@@ -67,7 +67,8 @@ We got everything we need for our first little table. In the following code the
 A word of advice prior to introducing lines: Lines should be used really
 sparsely in tables, especially vertical ones often look unprofessional. In fact,
 for professional tables you shouldn't use any of the standard lines, instead you
-should skip this section and read about [`booktabs`](#booktabs).
+should skip this section and read about
+[`booktabs`](#tables-in-printing-quality-with-the-booktabs-package).
 
 Nevertheless LaTeX got you covered if you need lines. Vertical lines are part of
 the column specification and hence should go into the preamble. To add a line
