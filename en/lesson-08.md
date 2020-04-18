@@ -48,7 +48,6 @@ We got everything we need for our first little table. In the following code the
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 
 \begin{document}
@@ -80,7 +79,6 @@ right most line will not appear in the last row.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 
 \begin{document}
@@ -110,7 +108,6 @@ following `\\` or another `\hline` or `\cline`).
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 
 \begin{document}
@@ -154,7 +151,6 @@ by using
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 
 \begin{document}
@@ -186,7 +182,6 @@ append that colon to the first column, so that things don't look as clunky.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 
 \begin{document}
@@ -215,7 +210,6 @@ be anything legal in the preamble but _only a single column type_.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 
 \begin{document}
@@ -247,7 +241,6 @@ Let us start with a simple table:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 
 \begin{document}
@@ -267,7 +260,6 @@ horizontal lines.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -289,7 +281,6 @@ parameter of these commands:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -311,7 +302,6 @@ that this line is a little bit shorter as the `\toprule` and
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -334,7 +324,6 @@ in the currently used font.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-
 \usepackage{array}
 \usepackage{booktabs}
 
