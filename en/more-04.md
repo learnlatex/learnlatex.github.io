@@ -26,7 +26,7 @@ The design provided by `\maketitle` depends on the document class (see [lesson
 5](lesson-05)). There is a `titlepage` environment for when you want to do
 custom design, but this is really out of the scope of this introduction.
 
-## Excersie
+## Exercise
 
 Try setting up different `\author`, `\title` and `\date` information to test
 out `\maketitle`. Which of them do you _have_ to give? Do they have to have  an
