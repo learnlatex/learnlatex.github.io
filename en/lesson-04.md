@@ -77,6 +77,10 @@ We can go further: the next one 'down' is `\paragraph`, but almost always that's
 too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
 way to start a new paragraph!)
 
+You might wonder about the title of a document. There are some special
+commands for that, but not all documents use them, so we've
+[covered that in the parallel extra lesson](more-04).
+
 ## Lists
 
 The other very common place you'll want logical mark-up is writing lists.
