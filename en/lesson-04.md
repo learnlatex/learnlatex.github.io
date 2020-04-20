@@ -80,7 +80,7 @@ way to start a new paragraph!)
 ## Lists
 
 The other very common place you'll want logical mark-up is writing lists.
-There are two common types of list built-in to LaTeX
+There are two common types of list built-in to LaTeX.
 
 ```latex
 \document{article}
@@ -103,7 +103,8 @@ Unordered
 \end{document}
 ```
 
-Notice that we use `\item` to start each
+Notice that we use `\item` to start each entry, and that the marker used  for
+each type of list is added automatically.
 
 ## Exercises
 
