@@ -25,6 +25,9 @@ system](https://tex.stackexchange.com/questions/20036), and you might want to
 look at [some more advice from the LaTeX
 Project](https://www.latex-project.org/get/).
 
+As TeX Live is available on all common platforms, and as it has some performance
+advantages, we recommend that if you are unsure which system to install, you
+choose TeX Live.
 
 ## Editors
 
