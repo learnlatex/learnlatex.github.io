@@ -129,7 +129,9 @@ bundle and `memoir` affects the appearance of
 \section{Introduction}
 
 This is a sample document with some dummy
-text\footnote{and a footnote}.
+text\footnote{and a footnote}. This paragraph is quite
+long as we might want to see the effect of making the
+document have two columns.
 
 \end{document}
 ```
