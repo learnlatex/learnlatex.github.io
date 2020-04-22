@@ -1,3 +1,3 @@
 ---
-title: More on: Controlling spacing
+title: More on: Spacing and formatting text
 ---
