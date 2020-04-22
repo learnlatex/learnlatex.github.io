@@ -92,7 +92,7 @@ that have been developed to do just that, and that are widely used:
 give you an example of how it works:
 
 ```latex
-\document{beamer}
+\documentclass{beamer}
 \begin{document}
 
 \begin{frame}{A first frame}
