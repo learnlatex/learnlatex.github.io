@@ -80,7 +80,9 @@ standard ones: `scrartcl`, `scrreprt` and `scrbook`, while there is a single
 `memoir` class that is most like an extension of `book`.
 
 These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise.
+bit in an exercise. You might wonder how we can know about the hooks they
+provide: we will cover that [in the last lesson](lesson-15), but you can always
+jump ahead!
 
 ## Exercises
 
