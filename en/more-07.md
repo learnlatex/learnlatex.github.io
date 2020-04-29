@@ -80,3 +80,31 @@ The `float` package will do that.
 <!-- {% endraw %} -->
 
 Note the `H` option, which puts the figure 'absolutely Here'.
+
+## Other types of float
+
+We will [see soon](lesson-08) that we can put tables in floats: they will go
+into a `table` environment. However, we don't _have_ to put graphics in the
+`figure` environment or tables in the `table` environment: this is just
+convention.
+
+You might want to have other types of floating environment: each type is
+inserted independently. You can do that using the
+[`trivfloat`](https://ctan.org/pkg/trivloat) package. This provides a single
+command, `\trivfloat`, to make new types of float.
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{lipsum}  % dummy text for filler
+\usepackage{trivfloat}
+\trivfloat{image}
+
+\begin{document}
+\begin{image}
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{An example image}
+\end{image}
+\end{document}
+```
