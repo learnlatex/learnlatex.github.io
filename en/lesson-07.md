@@ -43,9 +43,13 @@ ratio stays correct.
 \usepackage{graphicx}
 
 \begin{document}
+\begin{center}
   \includegraphics[height = 0.5\textheight]{example-image}
-
+\end{center}
+Some text
+\begin{center}
   \includegraphics[width = 0.5\textwidth]{example-image}
+\end{center}
 \end{document}
 ```
 
@@ -57,7 +61,9 @@ might want to do is to `clip` and `trim` an image.
 \usepackage{graphicx}
 
 \begin{document}
+\begin{center}
   \includegraphics[clip, trim = 0 0 50 50]{example-image}
+\end{center}
 \end{document}
 ```
 
