@@ -2,8 +2,10 @@
 title: Including graphics and making things 'float'
 ---
 
+## Including graphics
+
 To bring in graphics from outside LaTeX, use the `graphicx`
-package
+package, which adds the command `\includegraphics` to LaTeX.
 
 <!-- {% raw %} -->
 ```latex
@@ -20,24 +22,28 @@ is an imported PDF.
 ```
 <!-- {% endraw %} -->
 
-You can include PNG, JPG, and PDF files.
+You can include EPS, PNG, JPG, and PDF files.
 If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`.
-The `\includegraphics` command has [many options](more-07.html).
+for instance, `example-image.png`. (The `graphcicx` package will try to
+guess the extention if you do not give one.)
+The `\includegraphics` command has [many options](more-07.html) to control
+the size and shape of included images, and to trim down material.
+
+## Making images float
 
 Traditionally in typesetting, particularly with technical documents,
 graphics may move to another spot in the document.
-This is called a *float*.
+This is called a *float*. Images are normally included as floats so they do
+not leave large gaps in the page.
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{mwe}  % gives example images
 \usepackage{lipsum}  % produce dummmy text as filler
 
 \begin{document}
-\lipsum[1-4]
+\lipsum[1-4] % Just a few filler paragraphs
 
 Test location.
 \begin{figure}[ht]
@@ -46,7 +52,7 @@ Test location.
   \caption{Test image}\label{fig:example}
 \end{figure}
 
-\lipsum[6-10]
+\lipsum[6-10] % Just a few filler paragraphs
 \end{document}
 ```
 <!-- {% endraw %} -->
