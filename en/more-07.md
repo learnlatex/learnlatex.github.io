@@ -26,9 +26,13 @@ If you have a lot of graphics, you might want to set up the subdirectory
 in advance. That can be done using `\graphicspath`, which needs braced entry
 for each subdirectory. For example, to include both `figs` and `pics`
 subdirectories, we would have
+
+<!-- {% raw %} -->
 ```latex
 \graphicspath{{figs/}{pics/}}
 ```
+<!-- {% endraw %} -->
+
 Notice in particular the trailing `/` in these.
 
 ## Producing graphics
