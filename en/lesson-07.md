@@ -29,7 +29,7 @@ guess the extention if you do not give one.)
 
 ## Altering graphic appearance
 
-The `\includegraphics` command has many options] to control
+The `\includegraphics` command has many options to control
 the size and shape of included images, and to trim down material. Some of
 these are used a lot, so are worth being aware of.
 
