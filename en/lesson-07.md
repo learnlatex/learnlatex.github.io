@@ -87,6 +87,7 @@ Test location.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image-a.png}
+  \caption{An example image}
 \end{figure}
 
 \lipsum[6-10] % Just a few filler paragraphs

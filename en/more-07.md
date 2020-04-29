@@ -72,6 +72,7 @@ The `float` package will do that.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{An example image}
 \end{figure}
 \lipsum[8-15]
 \end{document}
