@@ -16,6 +16,10 @@ Spaces in file names are traditionally somewhat problematic, but are now
 generally supported. However, if you have spaces in the name, and you have
 issues, you may wish to try removing the spaces as the first step.
 
+Accented character support is somewhat variable: there are issues with some
+systems, particularly on Windows. If you find issues with accented characters
+in file names, try using only ASCII characters for a test.
+
 ## Storing graphics in a subdirectory
 
 A common way to lay out source files is to put all graphics into a subdirectory.
