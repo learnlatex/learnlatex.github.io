@@ -1,3 +1,3 @@
 ---
-title: More on: Spacing and formatting text
+title: More on: Cross-referencing
 ---
