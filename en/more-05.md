@@ -45,3 +45,17 @@ This is powerful but more complicated than we can cover here: take a look  at
 [this blog
 entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
 more.
+
+## A class for images
+
+There are occasions when you need to make an image (which might be text-heavy)
+using LaTeX. Often, you do not want anything other than the content itself on
+the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
+class. It automatically sets the size of the page to surround the printed content.
+
+```latex
+\documentclass{standalone}
+\begin{document}
+A simple document: this will be a very small box!
+\end{document}
+```
