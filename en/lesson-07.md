@@ -25,7 +25,7 @@ is an imported PDF.
 You can include EPS, PNG, JPG, and PDF files.
 If you have more than one version of a graphic then you can write,
 for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extention if you do not give one.)
+guess the extension if you do not give one.)
 
 ## Altering graphic appearance
 
