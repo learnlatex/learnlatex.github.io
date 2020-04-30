@@ -29,6 +29,9 @@ the same as italic, for example in presentations color is usually a better
 option. With logical mark-up, we don't have to worry about that detail in the
 body of the document.
 
+We will look at [manual formatting later](lesson-11), but for the moment we'll
+add `\textbf` to commands we know: it makes text bold.
+
 ## Sectioning commands
 
 You probably have used a word processor, where  to start a section most people
