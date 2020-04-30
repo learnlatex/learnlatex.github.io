@@ -64,7 +64,6 @@ The most common request is to have the figure placed
 in the output exactly where it lies in the input.
 The `float` package will do that.
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
@@ -81,7 +80,6 @@ The `float` package will do that.
 \lipsum[8-15]
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 Note the `H` option, which puts the figure 'absolutely Here'.
 

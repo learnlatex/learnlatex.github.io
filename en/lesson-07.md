@@ -7,7 +7,6 @@ title: Including graphics and making things 'float'
 To bring in graphics from outside LaTeX, use the `graphicx`
 package, which adds the command `\includegraphics` to LaTeX.
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
@@ -20,7 +19,6 @@ This picture
 is an imported PDF.
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 You can include EPS, PNG, JPG, and PDF files.
 If you have more than one version of a graphic then you can write,
@@ -78,7 +76,6 @@ graphics may move to another spot in the document.
 This is called a *float*. Images are normally included as floats so they do
 not leave large gaps in the page.
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
@@ -97,7 +94,6 @@ Test location.
 \lipsum[6-10] % Just a few filler paragraphs
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 Here LaTeX moves the graphic and the caption
 away from the `Test location` text to the top of the second page,

@@ -10,11 +10,9 @@ you load the `array` package, which adds more functionality to LaTeX tables, and
 which is only not built into the LaTeX kernel for historic reasons. So put the
 following in your preamble and we're good to go:
 
-<!-- {% raw %} -->
 ```latex
 \usepackage{array}
 ```
-<!-- {% endraw %} -->
 
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
@@ -45,7 +43,6 @@ started using `\\`.
 We got everything we need for our first little table. In the following code the
 `&` and `\\` are aligned, this isn't necessary in LaTeX.
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{array}
@@ -59,7 +56,6 @@ We got everything we need for our first little table. In the following code the
 \end{tabular}
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 
 ## Adding Lines
@@ -77,7 +73,6 @@ vertical lines are only inserted if the cell to their left exists (except for a
 vertical line left of the first column). Note how in the following example the
 right most line will not appear in the last row.
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{array}
@@ -92,7 +87,6 @@ right most line will not appear in the last row.
 \end{tabular}
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 Horizontal lines belong to a `tabular`'s body. In LaTeX there are two different
 macros to add them, the first is `\hline` adding a line across the full width of
@@ -106,7 +100,6 @@ column number. You can specify multiple `\cline`s in the same row. Both a
 following `\\` or another `\hline` or `\cline`).
 
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{array}
@@ -127,7 +120,6 @@ following `\\` or another `\hline` or `\cline`).
 \end{tabular}
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 
 ## Short Cuts and other Preamble Content

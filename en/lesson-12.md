@@ -44,7 +44,6 @@ but the principles are the same.
 In addition to putting the above material in a file `document.bib`,
 create this LaTeX file.
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{biblatex}
@@ -56,7 +55,6 @@ The mathematics showcase is from \cite{ConcreteMath}.
 \printbibliography
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 When you compile this with LaTeX,
 your editor may automatically detect that it has
