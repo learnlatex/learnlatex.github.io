@@ -39,7 +39,7 @@ The width of a `tabular` environment is automatically determined based
 on the contents of the table. There are two commonly used mechanisms
 to specify the total width.
 
-Note that it is almost always prefereable to format the table to a
+Note that it is almost always preferable to format the table to a
 specified width as below (perhaps using a font size such as `\small` if
 necessary) rather than scaling a table with `\resizebox` and similar
 commands which will produce inconsistent font sizes and rule widths.
@@ -48,8 +48,8 @@ commands which will produce inconsistent font sizes and rule widths.
 
 The `tabular*` environment takes an additional _width_ argument that
 specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command, this space is added
-between all columns from that point in the preamble, It is almost
+to the table using the `\extracolsep` command; this space is added
+between all columns from that point in the preamble. It is almost
 always used with `\fill` a special space that stretches to be as large
 as necessary.
 
@@ -133,17 +133,17 @@ C & D D D D D D D\\
 
 Unlike the other forms discussed in these lessons, `tabularx` needs to
 typeset the table several times with trial widths to determine the
-final setting, this means that there are several restrictions on the
-use of the environment, see the
+final setting. This means that there are several restrictions on the
+use of the environment; see the
 [package documentation](https://texdoc.net/pkg/tabularx).
 
 ## Multi-page tables
 
-A `tabular` forms an unbreakable box so it can not be split over more
-than one page, and is often placed in a floating `table` environment.
+A `tabular` forms an unbreakable box so it must be small enough to fit
+on one page, and is often placed in a floating `table` environment.
 
 Several packages provide variants with similar syntax that do allow
-page breaking. Here we show use of the longtable package.
+page breaking. Here we show use of the `longtable` package.
 
 ```
 \documentclass{article}
@@ -179,17 +179,17 @@ A Wider Entry & b\\
 \end{document}
 ```
 
-`longtable` is notable in that it that it preserves the column widths
-over all the pages of the table, however in order to achieve this it
+`longtable` is notable in that it preserves the column widths
+over all pages of the table; however in order to achieve this it
 may take several runs of LaTeX so that wide entries encountered later
-in the table  can affect the column widths in earlier pages.
+in the table can affect the column widths in earlier pages.
 
 ## Table notes
 
 It is quite common to need footnote-like marks in a table refering to
 notes under the table. The `threeparttable` package simplifies the
 markup for such tables, arranging that the notes are set in a
-blockh the same width as the table. Refer to the
+block the same width as the table. Refer to the
 [package documentation](https://texdoc.net/pkg/threeparttable)
 for full details, but we show a simple example here.
 ```latex
