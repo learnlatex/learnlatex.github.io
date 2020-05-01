@@ -41,7 +41,8 @@ In a table body columns are separated using an ampersand `&` and a new row is
 started using `\\`.
 
 We got everything we need for our first little table. In the following code the
-`&` and `\\` are aligned, this isn't necessary in LaTeX.
+`&` and `\\` are aligned: this isn't necessary in LaTeX, but helps reading the
+source.
 
 ```latex
 \documentclass{article}
@@ -60,13 +61,13 @@ We got everything we need for our first little table. In the following code the
 
 ## Adding lines
 
-A word of advice prior to introducing lines: Lines should be used really
-sparsely in tables, especially vertical ones often look unprofessional. In fact,
+A word of advice prior to introducing lines: lines should be used really
+sparsely in tables, and normally vertical ones often look unprofessional. In fact,
 for professional tables you shouldn't use any of the standard lines, instead you
 should skip this section and read about
 [`booktabs`](#tables-in-printing-quality-with-the-booktabs-package).
 
-Nevertheless LaTeX got you covered if you need lines. Vertical lines are part of
+Nevertheless, LaTeX has got you covered if you need lines. Vertical lines are part of
 the column specification and hence should go into the preamble. To add a line
 between two columns just add `|` between their specification. Please note that
 vertical lines are only inserted if the cell to their left exists (except for a
@@ -165,7 +166,7 @@ things as well
 type | description
 ---  | :--
 `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns.
-`>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, *e.g.*, to set a different font for this column)
+`>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column)
 `<{decl}` | this will put `decl` after the contents of each cell in the previous column
 
 The following example uses an italic font for the first column. Remember our
@@ -218,7 +219,7 @@ be anything legal in the preamble but _only a single column type_.
 <!-- {% endraw %} -->
 
 Note that you have to specify vertical rules you want to apply to the right of
-the `\multicolumn` in the `align` argument, _e.g._, `\multicolumn{2}{c|}{stuff}`
+the `\multicolumn` in the `align` argument, e.g., `\multicolumn{2}{c|}{stuff}`
 &ndash; but remember, don't use vertical rules.
 
 
