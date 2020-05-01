@@ -124,7 +124,49 @@ use of the environment, see the [package documentation](https://texdoc.net/pkg/t
 
 ## Multi-page tables
 
-`longtable`
+A `tabular` forms an unbreakable box so it can not be split over more
+than one page, and is often placed in a floating `table` environment.
+
+Several packages provide variants with similar syntax that do allow
+page breaking. Here we show use of the longtable package.
+
+```
+\documentclass[a5paper,landscape]{article}
+\usepackage{array,longtable,graphics}
+\begin{document}
+\begin{longtable}{cc}
+\multicolumn{2}{c}{A Long Table}\\
+Left Side & Right Side\\
+\hline
+\endhead
+\hline
+\endfoot
+aa&bb\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&bbb\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&b\\  
+a&b\\  
+aaaa&b\\  
+\end{longtable}
+
+\end{document}
+```
+
+`longtable` is notable in that it that it preserves the column widths
+over all the pages of the table, however in order to achieve this it
+may take several runs of LaTeX so that wide entries ecountered later
+in the table  can affect the column widths in earlier pages.
 
 ## Table notes
 
