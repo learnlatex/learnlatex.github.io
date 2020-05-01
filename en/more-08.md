@@ -47,8 +47,8 @@ The `tabular*` environment takes an additional _width_ argument that specifies t
 \begin{center}
 \begin{tabular}{cc}
 \hline
-A&B\\
-C&D\\
+A & B\\
+C & D\\
 \hline
 \end{tabular}
 \end{center}
@@ -56,8 +56,8 @@ C&D\\
 \begin{center}  
 \begin{tabular*}{.5\textwidth}{@{\extracolsep{\fill}}cc@{}}
 \hline
-A&B\\
-C&D\\
+A & B\\
+C & D\\
 \hline
 \end{tabular*}
 \end{center}
@@ -65,8 +65,8 @@ C&D\\
 \begin{center}  
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cc@{}}
 \hline
-A&B\\
-C&D\\
+A & B\\
+C & D\\
 \hline
 \end{tabular*}
 \end{center}
@@ -90,8 +90,8 @@ specification of `p{...}` for an automatically determined width.
 \begin{center}
 \begin{tabular}{lp{2cm}}
 \hline
-A&B B B B B B B B B B B B B B B B B B B B B B B B\\
-C&D D D D D D D\\
+A & B B B B B B B B B B B B B B B B B B B B B B B B\\
+C & D D D D D D D\\
 \hline
 \end{tabular}
 \end{center}
@@ -99,8 +99,8 @@ C&D D D D D D D\\
 \begin{center}  
 \begin{tabularx}{.5\textwidth}{lX}
 \hline
-A&B B B B B B B B B B B B B B B B B B B B B B B B\\
-C&D D D D D D D\\
+A & B B B B B B B B B B B B B B B B B B B B B B B B\\
+C & D D D D D D D\\
 \hline
 \end{tabularx}
 \end{center}
@@ -108,8 +108,8 @@ C&D D D D D D D\\
 \begin{center}  
 \begin{tabularx}{\textwidth}{lX}
 \hline
-A&B B B B B B B B B B B B B B B B B B B B B B B B\\
-C&D D D D D D D\\
+A & B B B B B B B B B B B B B B B B B B B B B B B B\\
+C & D D D D D D D\\
 \hline
 \end{tabularx}
 \end{center}
@@ -142,23 +142,23 @@ Left Side & Right Side\\
 \endhead
 \hline
 \endfoot
-aa&bb\\  
-Entry&b\\  
-a&b\\  
-a&b\\  
-a&b\\  
-a&b\\  
-a&bbb\\  
-a&b\\  
-a&b\\  
-a&b\\  
-a&b\\  
-a&b\\  
-a&b\\  
-a&b b b b b b\\  
-a&b b b b b\\  
-a&b b\\  
-A Wider Entry&b\\  
+aa & bb\\  
+Entry & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & bbb\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b b b b b b\\  
+a & b b b b b\\  
+a & b b\\  
+A Wider Entry & b\\  
 \end{longtable}
 
 \end{document}
