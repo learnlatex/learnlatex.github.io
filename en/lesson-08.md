@@ -314,8 +314,7 @@ that this line is a little bit shorter than the `\toprule` and
 
 The package also provides commands to increase or decrease the height
 of a row. In the following example we increase the height of the
-last row by 0.5 em, which is half of the width of the capital 'M'
-in the currently used font.
+last row by 0.5em, where `em` is a unit that depends  on the current font.
 
 <!-- {% raw %} -->
 ```latex
