@@ -42,7 +42,7 @@ to specify the total width.
 Note that it is almost always prefereable to format the table to a
 specified width as below (perhaps using a font size such as `\small` if
 necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths).
+commands which will produce inconsistent font sizes and rule widths.
 
 ### `tabular*`
 
@@ -188,7 +188,7 @@ in the table  can affect the column widths in earlier pages.
 
 It is quite common to need footnote-like marks in a table refering to
 notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that teh notes are set in a
+markup for such tables, arranging that the notes are set in a
 blockh the same width as the table. Refer to the
 [package documentation](https://texdoc.net/pkg/threeparttable)
 for full details, but we show a simple example here.
