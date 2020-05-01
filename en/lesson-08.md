@@ -3,7 +3,7 @@ title: Tables
 ---
 
 
-## Basic Tables
+## Basic tables
 
 Tables in LaTeX are set using the `tabular` environment. This lesson will assume
 you load the `array` package, which adds more functionality to LaTeX tables, and
@@ -58,7 +58,7 @@ We got everything we need for our first little table. In the following code the
 ```
 
 
-## Adding Lines
+## Adding lines
 
 A word of advice prior to introducing lines: Lines should be used really
 sparsely in tables, especially vertical ones often look unprofessional. In fact,
@@ -122,7 +122,7 @@ following `\\` or another `\hline` or `\cline`).
 ```
 
 
-## Short Cuts and other Preamble Content
+## Shortcuts and other preamble content
 
 The list of possible types in the preamble above only showed the column
 alignments available, but LaTeX has more things to offer in the preamble. What
@@ -193,7 +193,7 @@ columns and the above will be in principle the same as `{\itshape Animal:}` for
 the first cell.
 
 
-## Merging Cells
+## Merging cells
 
 In LaTeX you can merge cells horizontally pretty easily. This is done by using
 `\multicolumn{num}{align}{content}`. The first argument tells LaTeX how
@@ -222,7 +222,7 @@ the `\multicolumn` in the `align` argument, _e.g._, `\multicolumn{2}{c|}{stuff}`
 &ndash; but remember, don't use vertical rules.
 
 
-## Tables in Printing Quality with the `booktabs` Package
+## Formal tables with the `booktabs` package
 
 In this section we will briefly introduce the `booktabs` package, which aids
 the author in the creation of beautifully typeset tables. "Beautiful" means
