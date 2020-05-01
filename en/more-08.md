@@ -29,7 +29,7 @@ A simple example with two aligned numeric columns would be:
 ```
 
 The package provides many possibilities for formatting the numbers in
-different ways, see the [package
+different ways; see the [package
 documentation](https://texdoc.net/pkg/siunitx).
 
 
