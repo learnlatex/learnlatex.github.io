@@ -186,11 +186,11 @@ in the table  can affect the column widths in earlier pages.
 
 ## Table notes
 
-It is quite common to need footnote like marks in a table refering to
+It is quite common to need footnote-like marks in a table refering to
 notes under the table. The `threeparttable` package simplifies the
 markup for such tables, arranging that teh notes are set in a
 blockh the same width as the table. Refer to the
-[package documentation](https://texdoc.net/pkg/threeparttable).
+[package documentation](https://texdoc.net/pkg/threeparttable)
 for full details, but we show a simple example here.
 ```latex
 \documentclass{article}
