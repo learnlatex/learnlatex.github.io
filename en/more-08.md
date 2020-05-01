@@ -131,8 +131,9 @@ Several packages provide variants with similar syntax that do allow
 page breaking. Here we show use of the longtable package.
 
 ```
-\documentclass[a5paper,landscape]{article}
-\usepackage{array,longtable,graphics}
+\documentclass{article}
+\usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
+\usepackage{array,longtable}
 \begin{document}
 \begin{longtable}{cc}
 \multicolumn{2}{c}{A Long Table}\\
@@ -157,7 +158,7 @@ a&b\\
 a&b b b b b b\\  
 a&b b b b b\\  
 a&b b\\  
-Wide Entry&b\\  
+A Wider Entry&b\\  
 \end{longtable}
 
 \end{document}
