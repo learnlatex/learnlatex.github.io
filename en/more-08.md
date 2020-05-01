@@ -1,5 +1,5 @@
 ---
-title: More on: Tables
+title: "More on: Tables"
 ---
 
 ## Numeric Alignment of Columns
