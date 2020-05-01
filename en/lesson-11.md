@@ -1,3 +1,3 @@
 ---
-title: Spacing and formatting text
+title: "Spacing and formatting text"
 ---

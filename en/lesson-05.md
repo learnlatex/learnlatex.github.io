@@ -1,5 +1,5 @@
 ---
-title: Using document classes to influence design
+title: "Using document classes to influence design"
 ---
 
 ## What a document class does

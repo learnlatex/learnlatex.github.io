@@ -1,5 +1,5 @@
 ---
-title: Including graphics and making things 'float'
+title: "Including graphics and making things 'float'"
 ---
 
 ## Including graphics

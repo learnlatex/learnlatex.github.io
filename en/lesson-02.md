@@ -1,5 +1,5 @@
 ---
-title: Working with LaTeX
+title: "Working with LaTeX"
 ---
 
 Unlike many computer programs, LaTeX is not a single application containing

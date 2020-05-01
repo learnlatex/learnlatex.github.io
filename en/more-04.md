@@ -1,5 +1,5 @@
 ---
-title: More on: Logical structure
+title: "More on: Logical structure"
 ---
 
 ## Document titles

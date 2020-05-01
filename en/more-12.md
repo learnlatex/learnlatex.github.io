@@ -1,3 +1,3 @@
 ---
-title: More on: Citations and references
+title: "More on: Citations and references"
 ---
