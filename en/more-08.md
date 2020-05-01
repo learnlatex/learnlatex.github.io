@@ -142,7 +142,7 @@ Left Side & Right Side\\
 \hline
 \endfoot
 aa&bb\\  
-a&b\\  
+Entry&b\\  
 a&b\\  
 a&b\\  
 a&b\\  
@@ -154,10 +154,10 @@ a&b\\
 a&b\\  
 a&b\\  
 a&b\\  
-a&b\\  
-a&b\\  
-a&b\\  
-aaaa&b\\  
+a&b b b b b b\\  
+a&b b b b b\\  
+a&b b\\  
+Wide Entry&b\\  
 \end{longtable}
 
 \end{document}
@@ -165,7 +165,7 @@ aaaa&b\\
 
 `longtable` is notable in that it that it preserves the column widths
 over all the pages of the table, however in order to achieve this it
-may take several runs of LaTeX so that wide entries ecountered later
+may take several runs of LaTeX so that wide entries encountered later
 in the table  can affect the column widths in earlier pages.
 
 ## Table notes
