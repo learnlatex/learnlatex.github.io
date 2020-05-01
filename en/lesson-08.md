@@ -158,6 +158,9 @@ by using
 ```
 <!-- {% endraw %} -->
 
+(We'll see `\hspace` [again shortly](lesson-11): you might guess that it adds a
+horizontal space.)
+
 In addition to all the aforementioned preamble content, we can use a few other
 things as well
 
