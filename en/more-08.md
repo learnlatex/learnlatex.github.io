@@ -2,7 +2,7 @@
 title: "More on: Tables"
 ---
 
-## Numeric Alignment of Columns
+## Numeric alignment of columns
 
 The alignment of numbers in tables can be handled by the column type `S` 
 that is provided by the `siunitx` package.
@@ -28,16 +28,30 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
-The package provides many possibilities for formatting the numbers in different ways, see the [package documentation](https://texdoc.net/pkg/siunitx).
+The package provides many possibilities for formatting the numbers in
+different ways, see the [package
+documentation](https://texdoc.net/pkg/siunitx).
 
 
 ## Specifying the total table width
 
-The width of a `tabular` environment is automatically determined based on the contents of the table. There are two commonly used mechanisms to specify the total width.
+The width of a `tabular` environment is automatically determined based
+on the contents of the table. There are two commonly used mechanisms
+to specify the total width.
+
+Note that it is almost always prefereable to format the table to a
+specified width as below (perhaps using a font size such as `\small` if
+necessary) rather than scaling a table with `\resizebox` and similar
+commands which will produce inconsistent font sizes and rule widths).
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that specifies the total width of the table. Stretchy space must be added to the table using the `\extracolsep` command, this space is added between all columns from that point in the preamble, It is almost always used with `\fill` a special space that stretches to be as large as necessary.
+The `tabular*` environment takes an additional _width_ argument that
+specifies the total width of the table. Stretchy space must be added
+to the table using the `\extracolsep` command, this space is added
+between all columns from that point in the preamble, It is almost
+always used with `\fill` a special space that stretches to be as large
+as necessary.
 
 ```latex
 \documentclass{article}
@@ -120,7 +134,8 @@ C & D D D D D D D\\
 Unlike the other forms discussed in these lessons, `tabularx` needs to
 typeset the table several times with trial widths to determine the
 final setting, this means that there are several restrictions on the
-use of the environment, see the [package documentation](https://texdoc.net/pkg/tabularx).
+use of the environment, see the
+[package documentation](https://texdoc.net/pkg/tabularx).
 
 ## Multi-page tables
 
@@ -171,10 +186,45 @@ in the table  can affect the column widths in earlier pages.
 
 ## Table notes
 
-threeparttable
+It is quite common to need footnote like marks in a table refering to
+notes under the table. The `threeparttable` package simplifies the
+markup for such tables, arranging that teh notes are set in a
+blockh the same width as the table. Refer to the
+[package documentation](https://texdoc.net/pkg/threeparttable).
+for full details, but we show a simple example here.
+```latex
+\documentclass{article}
+\usepackage{array,threeparttable}
+\begin{document}
+
+\begin{table}
+\begin{threeparttable}
+   \caption{An Example}
+   \begin{tabular}{ll}
+    An entry & 42\tnote{1}\\
+    Another entry & 24\tnote{2}\\
+   \end{tabular}
+   \begin{tablenotes}
+   \item [1] the first note.
+   \item [2] the second note.
+   \end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\end{document}
+```
 
 
 
 ## Defining new column types
 
-`\newcolumntype`
+As demonstrated in the main lesson, the array package allows
+constructs such as `>{\bfseries}c`  to denote a bold centered column.
+It is often convenient to define a new column type to encapsulate such
+use, for example
+
+```latex
+\newcolumntype{B}{>{\bfseries}c}
+```
+would allow the use of `B` in array preambles to specify a bold
+centered column.
