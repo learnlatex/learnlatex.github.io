@@ -333,3 +333,10 @@ in the currently used font.
 \end{document}
 ```
 <!-- {% endraw %} -->
+
+## Excercises
+
+Use the simple table example to start experimenting with tables. Try out
+different alignments using the `l`, `c` and `r` column types. What happens if
+you have too few items in a table row? How about too many? Experiment with the
+`\multicolumn` command to span across columns.
