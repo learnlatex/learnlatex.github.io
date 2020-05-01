@@ -226,5 +226,5 @@ use, for example
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in array preambles to specify a bold
+would allow the use of `B` in tabular preambles to specify a bold
 centered column.
