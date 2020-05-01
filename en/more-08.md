@@ -33,9 +33,9 @@ The package provides many possibilities for formatting the numbers in different 
 
 ## Specifying the total table width
 
-The width of a `tabular` environment is automatically determined based on the contents of the table. There are two commonly used mechisms to specify the total width.
+The width of a `tabular` environment is automatically determined based on the contents of the table. There are two commonly used mechanisms to specify the total width.
 
-###`tabular*`
+### `tabular*`
 
 The `tabular*` environment takes an additional _width_ argument that specifies the total width of the table. Stretchy space must be added to the table using the `\extracolsep` command, this space is added between all columns from that point in the preamble, It is almost always used with `\fill` a special space that stretches to be as large as necessary.
 
