@@ -334,7 +334,7 @@ in the currently used font.
 ```
 <!-- {% endraw %} -->
 
-## Excercises
+## Exercises
 
 Use the simple table example to start experimenting with tables. Try out
 different alignments using the `l`, `c` and `r` column types. What happens if
