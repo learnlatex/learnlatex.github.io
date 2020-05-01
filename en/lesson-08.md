@@ -192,10 +192,9 @@ append that colon to the first column, so that things don't look as clunky.
 ```
 <!-- {% endraw %} -->
 
-Note that each cell is a local group, so `\itshape` doesn't affect the other
-columns and the above will be in principle the same as `{\itshape Animal:}` for
-the first cell.
-
+`\itshape` makes all the following text italic, but it's effect is 'contained'
+by the table cell. We will look at manual font formatting [in a few lessons
+time](lesson-11).
 
 ## Merging cells
 
