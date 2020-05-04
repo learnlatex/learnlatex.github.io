@@ -64,3 +64,19 @@ Notice the ties (`~`) characters before the references.
 You don't want a line break between `subsection` and its number, or
 between `equation` and its number.
 Putting in a tie means LaTeX won't break the line there.
+
+## Where to put `\label`
+
+The `\label` command always refers to the previous numbered entity:
+a section, an equation, a float, etc. That means that `\label` always has to
+come _after_ the thing you want to refer to. In particular, when you create
+floats, the `\label` has to come _after_ the `\caption` command.
+
+## Exercises
+
+Try adding new numbered parts (sections, subsections, enumerated lists) to
+the test document and finding out how many runs are needed to make `\label`
+commands work.
+
+Add some floats and see what happens when you put `\label` _before_ the
+`\caption` instead of after; can you predict the result?
