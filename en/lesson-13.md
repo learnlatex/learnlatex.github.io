@@ -45,7 +45,7 @@ chapters, and appendix, a bibliography, and an index.
 \input{dedication}
 \input{copyright}
 \tableofcontents
-\include{preface}
+\include{pref}
 
 % =========================
 \mainmatter
