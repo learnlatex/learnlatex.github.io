@@ -26,9 +26,7 @@ LuaLaTeX example
 
 \begin{document}
 
-$\pi \approx \directlua{
-tex.print{math.pi}
-}$
+$ \pi \approx \directlua{ tex.print(math.pi) } $
 
 \end{document}
 ```
