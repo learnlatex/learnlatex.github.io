@@ -27,7 +27,6 @@ LuaLaTeX example
 \begin{document}
 
 $\pi \approx \directlua{
-print('##: ' .. math.pi)
 tex.print{math.pi}
 }$
 
