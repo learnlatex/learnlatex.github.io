@@ -55,7 +55,7 @@ For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
 ```latex
 \documentclass{article}
 \begin{document}
-Let's have some font fun: \textbf{bold}, \tetit{italic}, \textrm{roman},
+Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \textsf{sanserif}, \texttt{monospaced} and \textsc{small caps}.
 \end{document}
 ```
