@@ -10,7 +10,7 @@ indent. If you want to suppress that for a single case, use `\noident.`
 
 One style that is common is to have no indents for paragraphs, but instead
 to have a 'blank line' between them. We can acheive that using the `parskip`
-packages
+package.
 
 ```latex
 \documentclass{article}
@@ -45,7 +45,7 @@ Even more text.
 ## Explicit text formatting
 
 We saw [a while ago](lesson-03) that most of the time logical structure is
-preferable. But sometime you want to make text bold, or italic, or monospaced,
+preferable. But sometimes you want to make text bold, or italic, or monospaced,
 etc. There are two types of command for this: ones for short pieces of text,
 and ones for 'running' material.
 
