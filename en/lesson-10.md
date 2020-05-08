@@ -43,7 +43,7 @@ Superscripts $a^{b}$ and subscripts $a_{b}$.
 braces, but that is not the official syntax and can go wrong: always use
 braces.)
 
-There a a _lot_ of specialist math mode symbol commands. Some of them are quite
+There are a _lot_ of specialist math mode symbol commands. Some of them are quite
 easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
 Greek letter.
 
