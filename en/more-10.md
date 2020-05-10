@@ -58,8 +58,8 @@ $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
 ```
 
 If you want to access bold symbols (as would be used by `\boldmath`)
-within an otherwise normal weith expression, then you can use the
-commadn `\bm` from the `bm` package.
+within an otherwise normal weight expression, then you can use the
+command `\bm` from the `bm` package.
 
 ```latex
 \documentclass[a4paper]{article}
