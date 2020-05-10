@@ -129,7 +129,7 @@ here:
 - `\mathsf`: sanserif
 - `\mathtt`: monospaced (typewriter)
 
-Each of these takes characters as an argument, so for examlple we might write
+Each of these takes characters as an argument, so for example we might write
 a matrix as
 
 ```latex
