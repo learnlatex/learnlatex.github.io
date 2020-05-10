@@ -8,7 +8,7 @@ title: "More on: Mathematics"
 In addition to the `align*` enviornment shown in the main lesson,
 `amsmath` has several other display math constructs, notable `gather`
 for multi-line displays that do not need alignment,and `multline` for
-spiltting a larger single excpression over multiple lines, aligning the
+splitting a larger single excpression over multiple lines, aligning the
 first line to the left, and the last to the right.
 
 ```latex
