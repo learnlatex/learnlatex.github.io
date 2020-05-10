@@ -107,8 +107,8 @@ however we give a small example here.
 % !TEX xelatex
 \documentclass[a4paper]{article}
 \usepackage{unicode-math}
-\setmainfont{texgyretermes-regular.otf}
-\setmathfont{XITSMath-Regular.otf}
+\setmainfont{TeX Gyre Pagella}
+\setmathfont{TeX Gyre Pagella Math}
 
 \begin{document}
 
