@@ -4,7 +4,7 @@ title: "Mathematics"
 
 ## Math mode
 
-You can mark up mathematics in LaTeX in a logic way in what is known as
+You can mark up mathematics in LaTeX in a logical way in what is known as
 'math mode'. In math mode, spaces are ignored and the correct spacing between
 characters is (almost always) applied. There are two forms of math mode: inline
 and display.
