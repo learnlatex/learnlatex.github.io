@@ -115,7 +115,7 @@ Solve the following recurrence for $ n,k\geq 0 $:
 ```
 
 The `align*` environment makes the equations line up on the ampersands, the `&`
-symbols., just like a table. Notice how we've used `\quad` to insert a bit of
+symbols, just like a table. Notice how we've used `\quad` to insert a bit of
 space, and `\text` to put some normal text inside math mode. We've also used
 another math mode command, `\binom`, for a binomial.
 
@@ -126,13 +126,14 @@ They are therefore often written explicitly. There are a set of commands you nee
 here:
 
 - `\mathrm`: roman (upright)
-- `\mathit`: forced-italic
+- `\mathit`: italic spaced as 'text'
 - `\mathbf`: boldface
 - `\mathsf`: sanserif
 - `\mathtt`: monospaced (typewriter)
+- `\mathbb`: double-stuck ('blackboard bold')
 
-Each of these takes characters as an argument, so for example we might write
-a matrix as
+Each of these takes Latin letters as an argument, so for example we might
+write a matrix as
 
 ```latex
 \documentclass{article}
@@ -140,6 +141,8 @@ a matrix as
 The matrix $\mathbf{M}$.
 \end{document}
 ```
+
+If you need to make other symbols bold, [see the extra details](more-10).
 
 ## Exercises
 
