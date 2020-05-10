@@ -1,20 +1,18 @@
 ---
-title: Tables
+title: "Tables"
 ---
 
 
-## Basic Tables
+## Basic tables
 
 Tables in LaTeX are set using the `tabular` environment. This lesson will assume
 you load the `array` package, which adds more functionality to LaTeX tables, and
 which is only not built into the LaTeX kernel for historic reasons. So put the
 following in your preamble and we're good to go:
 
-<!-- {% raw %} -->
 ```latex
 \usepackage{array}
 ```
-<!-- {% endraw %} -->
 
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
@@ -43,9 +41,9 @@ In a table body columns are separated using an ampersand `&` and a new row is
 started using `\\`.
 
 We got everything we need for our first little table. In the following code the
-`&` and `\\` are aligned, this isn't necessary in LaTeX.
+`&` and `\\` are aligned: this isn't necessary in LaTeX, but helps reading the
+source.
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{array}
@@ -59,25 +57,23 @@ We got everything we need for our first little table. In the following code the
 \end{tabular}
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 
-## Adding Lines
+## Adding lines
 
-A word of advice prior to introducing lines: Lines should be used really
-sparsely in tables, especially vertical ones often look unprofessional. In fact,
+A word of advice prior to introducing lines: lines should be used really
+sparsely in tables, and normally vertical ones often look unprofessional. In fact,
 for professional tables you shouldn't use any of the standard lines, instead you
 should skip this section and read about
 [`booktabs`](#tables-in-printing-quality-with-the-booktabs-package).
 
-Nevertheless LaTeX got you covered if you need lines. Vertical lines are part of
+Nevertheless, LaTeX has got you covered if you need lines. Vertical lines are part of
 the column specification and hence should go into the preamble. To add a line
 between two columns just add `|` between their specification. Please note that
 vertical lines are only inserted if the cell to their left exists (except for a
 vertical line left of the first column). Note how in the following example the
 right most line will not appear in the last row.
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{array}
@@ -92,7 +88,6 @@ right most line will not appear in the last row.
 \end{tabular}
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 Horizontal lines belong to a `tabular`'s body. In LaTeX there are two different
 macros to add them, the first is `\hline` adding a line across the full width of
@@ -106,7 +101,6 @@ column number. You can specify multiple `\cline`s in the same row. Both a
 following `\\` or another `\hline` or `\cline`).
 
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{array}
@@ -127,10 +121,9 @@ following `\\` or another `\hline` or `\cline`).
 \end{tabular}
 \end{document}
 ```
-<!-- {% endraw %} -->
 
 
-## Short Cuts and other Preamble Content
+## Shortcuts and other preamble content
 
 The list of possible types in the preamble above only showed the column
 alignments available, but LaTeX has more things to offer in the preamble. What
@@ -165,6 +158,9 @@ by using
 ```
 <!-- {% endraw %} -->
 
+(We'll see `\hspace` [again shortly](lesson-11): you might guess that it adds a
+horizontal space.)
+
 In addition to all the aforementioned preamble content, we can use a few other
 things as well
 
@@ -173,7 +169,7 @@ things as well
 type | description
 ---  | :--
 `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns.
-`>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, *e.g.*, to set a different font for this column)
+`>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column)
 `<{decl}` | this will put `decl` after the contents of each cell in the previous column
 
 The following example uses an italic font for the first column. Remember our
@@ -196,12 +192,11 @@ append that colon to the first column, so that things don't look as clunky.
 ```
 <!-- {% endraw %} -->
 
-Note that each cell is a local group, so `\itshape` doesn't affect the other
-columns and the above will be in principle the same as `{\itshape Animal:}` for
-the first cell.
+`\itshape` makes all the following text italic, but it's effect is 'contained'
+by the table cell. We will look at manual font formatting [in a few lessons
+time](lesson-11).
 
-
-## Merging Cells
+## Merging cells
 
 In LaTeX you can merge cells horizontally pretty easily. This is done by using
 `\multicolumn{num}{align}{content}`. The first argument tells LaTeX how
@@ -226,11 +221,11 @@ be anything legal in the preamble but _only a single column type_.
 <!-- {% endraw %} -->
 
 Note that you have to specify vertical rules you want to apply to the right of
-the `\multicolumn` in the `align` argument, _e.g._, `\multicolumn{2}{c|}{stuff}`
+the `\multicolumn` in the `align` argument, e.g., `\multicolumn{2}{c|}{stuff}`
 &ndash; but remember, don't use vertical rules.
 
 
-## Tables in Printing Quality with the `booktabs` Package
+## Formal tables with the `booktabs` package
 
 In this section we will briefly introduce the `booktabs` package, which aids
 the author in the creation of beautifully typeset tables. "Beautiful" means
@@ -319,8 +314,7 @@ that this line is a little bit shorter than the `\toprule` and
 
 The package also provides commands to increase or decrease the height
 of a row. In the following example we increase the height of the
-last row by 0.5 em, which is half of the width of the capital 'M'
-in the currently used font.
+last row by 0.5em, where `em` is a unit that depends  on the current font.
 
 <!-- {% raw %} -->
 ```latex
@@ -338,3 +332,10 @@ in the currently used font.
 \end{document}
 ```
 <!-- {% endraw %} -->
+
+## Exercises
+
+Use the simple table example to start experimenting with tables. Try out
+different alignments using the `l`, `c` and `r` column types. What happens if
+you have too few items in a table row? How about too many? Experiment with the
+`\multicolumn` command to span across columns.

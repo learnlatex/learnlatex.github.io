@@ -34,6 +34,9 @@ function llexamples() {
     }
 }
 
+const commentregex = / %.*/;
+const engineregex = /% *!TEX.*((pdf|xe|lua)latex)/i;
+
 function latexonlinecc(nd) {
     var fconts="";
     if(typeof(preincludes) == "object") {
@@ -70,10 +73,19 @@ function latexonlinecc(nd) {
     }
     // that looks to have all lines but still need to zap comments for some reason..
     // alert(encodeURIComponent(fconts));
-    ifr.setAttribute("src","https://latexonline.cc/compile?text=" + encodeURIComponent(fconts.replace(commentregex,'') + p.innerText) + ((p.innerText.indexOf("fontspec") !== -1) ? "&command=xelatex" : ""));
+    var p = document.getElementById(nd);
+    var t = p.innerText;
+    var cmd="";
+    var eng=t.match(engineregex);
+    if(eng != null) {
+	cmd="&command=" + eng[1].toLowerCase();
+    } else if(t.indexOf("fontspec") !== -1) {
+	cmd="&command=xelatex";
+    }
+    ifr.setAttribute("src","https://latexonline.cc/compile?text=" + encodeURIComponent(fconts.replace(commentregex,'') + t.replace(engineregex,'')) + cmd);
 }
 
-const commentregex = / %.*/;
+
 
 // https://www.overleaf.com/devs
 function openinoverleaf(nd) {
@@ -90,12 +102,16 @@ function openinoverleaf(nd) {
 	  }
       }
   }
-  var p = document.getElementById(nd);
-    document.getElementById('encoded_snip-' + nd ).value =encodeURIComponent(fconts + p.innerText);
-    if(p.innerText.indexOf("fontspec") !== -1) {
+    var p = document.getElementById(nd);
+    var t = p.innerText;
+    document.getElementById('encoded_snip-' + nd ).value =encodeURIComponent(fconts + t);
+    var eng=t.match(engineregex);
+    if(eng != null) {
+	document.getElementById('engine-' + nd ).value = eng[1].toLowerCase();
+    } else if(t.indexOf("fontspec") !== -1) {
 	document.getElementById('engine-' + nd ).value ="xelatex";
     }
-  document.getElementById('form-' + nd).submit();
+     document.getElementById('form-' + nd).submit();
 }
 
 

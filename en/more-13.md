@@ -1,3 +1,3 @@
 ---
-title: More on: Structuring longer documents
+title: "More on: Structuring longer documents"
 ---

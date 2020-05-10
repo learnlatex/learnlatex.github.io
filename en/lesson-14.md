@@ -1,5 +1,5 @@
 ---
-title: Selecting fonts and using Unicode engines
+title: "Selecting fonts and using Unicode engines"
 ---
 
 When TeX and LaTeX first started being widely used they largely only handled European languages out of the box, although there was some capability for using other alphabets such as Greek and Russian.
@@ -42,7 +42,22 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
+
 When switching between languages it is usually important to also change things like hyphenation patterns and so on, and the `babel` and `polyglossia` packages both provide robust features to do this.
 
 
+
+
+LuaLaTeX example
+
+```latex
+%!TEX lualatex
+\documentclass{article}
+
+\begin{document}
+
+$ \pi \approx \directlua{ tex.print(math.pi) } $
+
+\end{document}
+```
 

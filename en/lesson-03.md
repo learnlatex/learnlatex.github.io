@@ -1,5 +1,5 @@
 ---
-title: Your first LaTeX document
+title: "Your first LaTeX document"
 ---
 
 Our first LaTeX document is going to be very simple: the idea is to show you
@@ -92,6 +92,19 @@ to do that. Also notice that multiple spaces are treated as a single space.
 You might also sometimes want a 'hard' space that does not break over lines: in
 LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
 particularly useful when we start creating cross-references later in the course.
+
+## Special characters
+
+You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
+A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
+ `{` and `}` are used to show _mandatory arguments_: information that commands
+ require.
+
+There are some other characters with special meaning: we've just seen that `~`
+is a 'hard' space, for example. Almost all of these characters  are _very_
+uncommon in normal text, which is why they were chosen for special meanings.
+If you do need to show one of these special characters, we've put some
+[information in the further details page](more-03).
 
 ## Exercise
 

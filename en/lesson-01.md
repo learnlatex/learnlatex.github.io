@@ -1,5 +1,5 @@
 ---
-title: What is LaTeX and how does it work?
+title: "What is LaTeX and how does it work?"
 ---
 
 Unlike common word processors such as Microsoft Word or LibreOffice, LaTeX

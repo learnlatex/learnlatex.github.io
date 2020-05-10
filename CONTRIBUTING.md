@@ -56,3 +56,11 @@ the site useful. There are a few things to watch out for
   to typographical quotes: `"abc" 'abc' abc's` produces abc abc abcs.
 
 - Please wrap source lines to keep them below 80 characters long
+
+## Language
+
+At present, we have content only in English, but the longer-term plan is
+to add additional languages: notice that the content is within a `/en/` tree.
+
+For the avoidance of doubt, we are using US English spelling (and idiom)
+on the site, as this is the most widely-understood approach.

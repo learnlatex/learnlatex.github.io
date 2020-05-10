@@ -1,5 +1,5 @@
 ---
-title: Working with LaTeX
+title: "Working with LaTeX"
 ---
 
 Unlike many computer programs, LaTeX is not a single application containing
@@ -25,6 +25,9 @@ system](https://tex.stackexchange.com/questions/20036), and you might want to
 look at [some more advice from the LaTeX
 Project](https://www.latex-project.org/get/).
 
+As TeX Live is available on all common platforms, and as it has some performance
+advantages, we recommend that if you are unsure which system to install, you
+choose TeX Live.
 
 ## Editors
 
@@ -64,3 +67,15 @@ work but also helps the sites not get overloaded. We have set up links so you
 can edit our examples using [Overleaf](https://www.overleaf.com), one of the
 major websites for LaTeX online. There are of course others:
 [Papeeria](https://papeeria.com/) is an example.
+
+## Exercise
+
+Get yourself set up with a local LaTeX installation _or_ an account with
+an online LaTeX service. If you are using a local installation, you'll need
+to pick an editor too: we recommend starting with either TeXworks or TeX Shop
+(see above), then looking at other editors later once you know what how _you_
+work best with LaTeX.
+
+You'll be able to run all of our other exercises in your browser, but we want
+to help you get working with real documents, so now is a great time to get
+yourself ready.
