@@ -9,7 +9,7 @@ We can divide those up into two things you actually need:
 - A _TeX system_
 - A LaTeX-specific editor
 
-## TeX systems
+## {{ site.tex }} systems
 
 The core of working with LaTeX is having a TeX system available. A TeX system is a set
 of 'behind the scenes' programs and files that are needed to make LaTeX work, but
