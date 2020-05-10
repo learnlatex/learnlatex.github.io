@@ -6,3 +6,7 @@ title: learnlatex.org
 description: Learn LaTeX on-line
 
 logo: learnlatex-logo.png
+
+latex: "<span>L<span style='font-variant: small-caps; vertical-align:.35ex;margin-left:-.15em;margin-right:-.05em;'>a</span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
+tex: "<span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
+
