@@ -55,7 +55,9 @@ Some symbols: $y = 2 \sin \theta^{2}$.
 ```
 
 We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set.
+many online resources listing the standard set. You can look up math mode
+symbols using the great
+[Detexify](https://personaljournal.ca/paulsutton/detexify) tool.
 
 ## Display mathematics
 
