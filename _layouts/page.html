@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>{{ page.title | markdownify | remove: "<p>" | remove: "</p>"}}</h1>
+<h1>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" | replace: "LaTeX", site.latex }}</h1>
 
 {{content}}
 
