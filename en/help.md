@@ -25,18 +25,18 @@ Example text.
 The example is complete however you may wish to edit it to make small
 changes, perhaps as part of an Exercise set at the end of the lesson.
 
-The <button>Edit</button> button enables editing within the page, this is
+The <button style="padding:0 1px;font-size:90%">Edit</button> button enables editing within the page, this is
 marked by the removal of the LaTeX syntax highlighting and a green
 border added around the code block. Note that this is just a basic edit facility provided by your browser
 there is no TeX specific editing help as found in typical editing systems that you would use with TeX.
 
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
 
-1. Use the **LaTeX Online** service. The <button>LaTeX online</button>
+1. Use the **LaTeX Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX online</button> button
    will submit the code to the `latexonline.cc` service.
 
    The resulting PDF document (or section of the error log) will be
-   shown inline immediately below the example. A <button>Delete
+   shown inline immediately below the example. A <button style="padding:0 1px;font-size:90%">Delete
    Output</button> button will be provided so that you may remove this output
    (or you may leave it in place and continue the rest of the lesson
    below).
@@ -47,7 +47,7 @@ Whether or not the code block has been edited, there are three basic ways that y
    document. Any changes that you make to the example are lost if you
    move off the page.
 
-2. Use the **Overleaf** Service. The <button>Open in Overleaf</button>
+2. Use the **Overleaf** Service. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
    button will submit the code to **Overleaf**.
 
    If you do not have an account, or the account details are not
@@ -68,7 +68,7 @@ Whether or not the code block has been edited, there are three basic ways that y
 
 3. If you have a TeX system installed locally, then you may copy the example code
    off the page, either explicitly selecting it, or by using
-   the <button>Copy</button> button. This will place the code in your
+   the <button style="padding:0 1px;font-size:90%">Copy</button> button. This will place the code in your
    operating system clipboard so you can start a blank document using
    your local editor, and paste in the text.
 
