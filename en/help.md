@@ -66,10 +66,10 @@ Whether or not the code block has been edited, there are three basic ways that y
    site, and you may save your project in your overleaf account and
    return to it later.
 
-3. If you have a TeX system installed locally you may copy the code
-   example off the page, either explicitly selecting it, or by using
-   the <button>Copy</button>. This wil place the code in your
-   Operating System Clipboard so you can start a blank document using
+3. If you have a TeX system installed locally, then you may copy the example code
+   off the page, either explicitly selecting it, or by using
+   the <button>Copy</button> button. This will place the code in your
+   operating system clipboard so you can start a blank document using
    your local editor, and paste in the text.
 
 
