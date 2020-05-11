@@ -3,7 +3,7 @@ title: "Selecting fonts and using Unicode engines"
 ---
 
 When TeX and LaTeX first started being widely used they largely only handled European languages out of the box, although there was some capability for using other alphabets such as Greek and Russian.
-Originally, accents and accented letters were typed using control sequences or macros such as `\c` for ‘ç’ and `\'e` for ‘é’. While some people continue to use these input methods because they can be easier to type, others wanted to be able to use the keys on their keyboards to input such symbols directly.
+Originally, accents and accented letters were typed using control sequences or macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to use these input methods because they can be easier to type, others wanted to be able to use the keys on their keyboards to input such symbols directly.
 Before Unicode, LaTeX provided support for many types of *file encoding* that allowed text to be written in various languages natively — for example, using the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would internally translate the accented letters into TeX commands to produce the correct output.
 
 This approach is still in use in modern LaTeX when using the `pdflatex` engine. By default all files are assumed to be Unicode-encoded unless otherwise specified. Although this engine is limited to 8-bit fonts, most European languages can be supported.
@@ -19,7 +19,7 @@ More information about the fonts that are available in a default `pdflatex` inst
 ## The Unicode era
 
 As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot natively use modern OpenType fonts and easily switch between multiple languages that use different alphabets (or scripts, to use the technical term).
-There are two replacements for TeX that natively Unicode input and modern fonts: XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using the engines `xelatex` and `lualatex` respectively.
+There are two replacements for TeX that natively use Unicode input and modern fonts: XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using the engines `xelatex` and `lualatex` respectively.
 
 In these engines, font selection is performed by the `fontspec` package, and for simple documents can look as easy as:
 ```latex

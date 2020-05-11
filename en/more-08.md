@@ -48,7 +48,7 @@ commands which will produce inconsistent font sizes and rule widths.
 
 The `tabular*` environment takes an additional _width_ argument that
 specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command; this space is added
+to the table using the `\extracolsep` command. This space is added
 between all columns from that point in the preamble. It is almost
 always used with `\fill` a special space that stretches to be as large
 as necessary.

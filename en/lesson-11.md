@@ -6,7 +6,7 @@ title: "Spacing and formatting text"
 
 We have already seen that a blank line in your input will generate a new
 paragraph in LaTeX. This shows up as the paragraph will start with an
-indent. If you want to suppress that for a single case, use `\noident.`
+indent. If you want to suppress that for a single case, use `\noindent`.
 
 One style that is common is to have no indents for paragraphs, but instead
 to have a 'blank line' between them. We can acheive that using the `parskip`
@@ -56,7 +56,7 @@ For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
 \documentclass{article}
 \begin{document}
 Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
-\textsf{sanserif}, \texttt{monospaced} and \textsc{small caps}.
+\textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
 \end{document}
 ```
 
