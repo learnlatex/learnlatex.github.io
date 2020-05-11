@@ -5,11 +5,12 @@ title: "More on: Mathematics"
 
 ## Further amsmath alignments
 
-In addition to the `align*` enviornment shown in the main lesson,
-`amsmath` has several other display math constructs, notable `gather`
+In addition to the `align*` environment shown in the main lesson,
+`amsmath` has several other display math constructs, notably `gather`
 for multi-line displays that do not need alignment,and `multline` for
-splitting a larger single excpression over multiple lines, aligning the
-first line to the left, and the last to the right.
+splitting a larger single expression over multiple lines, aligning the
+first line to the left, and the last to the right. In all cases the `*`
+form  omits the equation numbers by default.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -33,8 +34,8 @@ Multline
 \end{document}
 ```
 
-In addition there are variants of the alignments environments ending
-in `ed` that make a subterm of a larger display for example `aligned` and
+In addition there are variants of the alignment environments ending
+in `ed` that make a subterm of a larger display for example, `aligned` and
 `gathered`.
 
 # Bold Math
@@ -59,7 +60,8 @@ $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
 
 If you want to access bold symbols (as would be used by `\boldmath`)
 within an otherwise normal weight expression, then you can use the
-command `\bm` from the `bm` package.
+command `\bm` from the `bm` package. Note that `\bm` also works with
+symbols such as = and Greek letters.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -69,12 +71,15 @@ command `\bm` from the `bm` package.
 
 $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
 
-$(x+\bm{y})(x-\bm{y})=x^{2}-{\bm{y}}^{2}$
+$(x+\bm{y})(x-\bm{y}) \bm{=} x^{2}-{\bm{y}}^{2}$
+
+$\alpha + \bm{\alpha} < \beta + \bm{\beta}$
+
 \end{document}
 ```
 
 # Mathtools
-The package `mathtools` includes `amsmath` but adds several additional
+The package `mathtools` loads `amsmath` but adds several additional
 features, such as variants of the `amsmath` matrix environments that
 allow the column alignment to be specified.
 ```latex
@@ -100,8 +105,8 @@ engines that use OpenType fonts. By default these engines still use
 classic TeX math fonts but you may use the `unicode-math` package
 to use OpenType Math fonts. The details of this package are beyond
 this course and we refer you to the
-[package documentation](https://texdoc.net/pkg/unicode-math)
-however we give a small example here.
+[package documentation](https://texdoc.net/pkg/unicode-math).
+However we give a small example here.
 
 ```
 % !TEX xelatex
