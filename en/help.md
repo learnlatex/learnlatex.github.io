@@ -22,14 +22,15 @@ Example text.
 \end{document}
 ```
 
-The example is complete however you may wish to edit it to make small changes, perhaps as part of an Exercises set at the end of the lesson.
+The example is complete however you may wish to edit it to make small
+changes, perhaps as part of an Exercise set at the end of the lesson.
 
-The <button>Edit</button> enables editing wthin the page, this is
+The <button>Edit</button> button enables editing within the page, this is
 marked by the removal of the LaTeX syntax highlighting and a green
 border added around the code block. Note that this is just a basic edit facility provided by your browser
 there is no TeX specific editing help as found in typical editing systems that you would use with TeX.
 
-Whether or not the code block has been edited there are three basic ways that you can run the example.
+Whether or not the code block has been edited, there are three basic ways that you can run the example.
 
 1. Use the **LaTeX Online** service. The <button>LaTeX online</button>
    will submit the code to the `latexonline.cc` service.
