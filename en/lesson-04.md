@@ -16,7 +16,7 @@ that's usually how things are emphasised.)
 ```latex
 \document{article}
 \begin{document}
-Some text with \emph{empahsis and \emph{nested} content}.
+Some text with \emph{emphasis and \emph{nested} content}.
 
 Some text in \textit{italic and \textit{nested} content}.
 \end{document}

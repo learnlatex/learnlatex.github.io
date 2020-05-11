@@ -62,8 +62,8 @@ See how ``\\`` is used to separate lines of the address: we'll look at line
 breaking [a bit later](lesson-09). Also see how the `letter` class creates  a
 new environment for each letter and has specialised commands.
 
-The standard `article`, `report` and `book` classes take the options `9pt`,
-`10pt` and `11pt` to change font size, and `twocolumn` to make a two-column
+The standard `article`, `report` and `book` classes take the options `10pt`,
+`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
 document.
 
 ## Function-rich classes

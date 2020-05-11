@@ -9,7 +9,7 @@ paragraph in LaTeX. This shows up as the paragraph will start with an
 indent. If you want to suppress that for a single case, use `\noindent`.
 
 One style that is common is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can acheive that using the `parskip`
+to have a 'blank line' between them. We can achieve that using the `parskip`
 package.
 
 ```latex
