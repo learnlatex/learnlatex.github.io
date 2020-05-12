@@ -22,6 +22,13 @@ See how the paragraph continues after the display.
 \end{document}
 ```
 
+You may see 'LaTeX-like' mathematical input in other places, for example
+the MathJaX system for placing equations in web pages. These systems often
+accept slight variations on LaTeX's syntax as they do not actually use LaTeX
+'behind the scenes'. Our examples are all 'correct' LaTeX, so if you see
+something different in another context, it might be because the example is not
+really using LaTeX.
+
 ## Inline math mode and mathematical notation
 
 As you can see above, inline math mode is marked using a pair of dollar
