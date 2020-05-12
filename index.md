@@ -29,7 +29,8 @@ a local installation on your own PC. To get you started, we have set up
 our examples so you can edit and run them _in the page_ they are on. We
 have also linked them to [Overleaf](https://www.overleaf.com), one of the
 most popular online LaTeX editing sites. But don't worry, you can also
-use the examples on your own machine.
+use the examples on your own machine. You can read more about how to use the
+examples [in the site help](en/help).
 
 Our examples are based around using an up-to-date LaTeX installation. They
 all work with both of our online demonstration systems, so if you get strange

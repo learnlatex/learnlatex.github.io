@@ -4,7 +4,7 @@ title: "Your first LaTeX document"
 
 Our first LaTeX document is going to be very simple: the idea is to show you
 how a document looks and how to typeset it successfully. It is also your
-first chance to see how to use the examples here on `learnlatex.org`.
+first chance to [see how to use the examples here on `learnlatex.org`](help).
 
 If you are using a local LaTeX installation, in your editor create a new file
 called `first.tex`, and either copy–paste the text below or type it in.
