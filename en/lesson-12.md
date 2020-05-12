@@ -158,7 +158,7 @@ we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
 all quite easy-to-guess.
 
 In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authordate`, but there is a `numeric` style and many others are
+we've used `authoryear`, but there is a `numeric` style and many others are
 also available.
 
 ## Exercises
