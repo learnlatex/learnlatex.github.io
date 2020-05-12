@@ -43,7 +43,7 @@ function latexonlinecc(nd) {
 	if(typeof(preincludes[nd]) == "object") {
 	    fconts= "\n\\makeatletter\\def\\input@path{{latex.out/}}\\makeatother\n";
 	    var incl=preincludes[nd];
-	    for(const prop in incl) {
+	    for(prop in incl) {
 		fconts=fconts+"\n\\begin{filecontents}{" +
 		    incl[prop] +
 		    "}\n" +
@@ -94,7 +94,7 @@ function openinoverleaf(nd) {
     if(typeof(preincludes) == "object") {
       if(typeof(preincludes[nd]) == "object") {
 	  var incl=preincludes[nd];
-	  for(const prop in incl) {
+	  for(prop in incl) {
 	      fconts=fconts+"\n\\begin{filecontents}{" +
 		  incl[prop] +
 		  "}\n" +
