@@ -54,8 +54,11 @@ function latexonlinecc(nd) {
     }
     "\\makeatletter\\def\\input@path{{latex.out/}}\\makeatother\n"
     var p = document.getElementById(nd);
-    if(p.innerText.indexOf("biblatex") !== -1) {
-	fconts=fconts + "\n\\RequirePackage[backend=bibtex]{biblatex}\n";
+    var t = p.innerText;
+    if(t.indexOf("biblatex") !== -1) {
+	//	fconts=fconts + "\n\\RequirePackage[backend=bibtex]{biblatex}\n";
+	t=t.replace(/usepackage\{biblatex/,'usepackage[]\{biblatex');
+	t=t.replace(/\]\{biblatex/,',backend=bibtex]\{biblatex');
     }
     var b = document.getElementById('lo-' + nd);
     var ifr= document.getElementById(nd + "ifr");
@@ -73,8 +76,6 @@ function latexonlinecc(nd) {
     }
     // that looks to have all lines but still need to zap comments for some reason..
     // alert(encodeURIComponent(fconts));
-    var p = document.getElementById(nd);
-    var t = p.innerText;
     var cmd="";
     var eng=t.match(engineregex);
     if(eng != null) {
