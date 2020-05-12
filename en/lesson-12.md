@@ -5,6 +5,9 @@ title: "Citations and references"
 preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
+   },
+ "pre2": {
+    "pre0": "learnlatex.bib"
    }
 }
 </script>
