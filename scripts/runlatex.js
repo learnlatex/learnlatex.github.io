@@ -82,6 +82,8 @@ function latexonlinecc(nd) {
 	cmd="&command=" + eng[1].toLowerCase();
     } else if(t.indexOf("fontspec") !== -1) {
 	cmd="&command=xelatex";
+    } else {
+	t = "\\RequirePackage[utf8]{inputenc}\n" + t;
     }
     ifr.setAttribute("src","https://latexonline.cc/compile?text=" + encodeURIComponent(fconts.replace(commentregex,'') + t.replace(engineregex,'')) + cmd);
 }
