@@ -23,4 +23,4 @@ More text here.
 ```
 
 We have chosen to make the links the same color as the normal text: try removing
-`hidelinks` to see why!
+`hidelinks` to see why! 
