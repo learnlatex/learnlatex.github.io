@@ -62,7 +62,7 @@ Whether or not the code block has been edited, there are three basic ways that y
    Overleaf which will simultaneously run LaTeX on your code showing
    the resulting output or error log.
 
-   The editing fetaures in Overleaf are far more extensive than on this
+   The editing features in Overleaf are far more extensive than on this
    site, and you may save your project in your overleaf account and
    return to it later.
 
