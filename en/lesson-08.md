@@ -196,6 +196,22 @@ append that colon to the first column, so that things don't look as clunky.
 by the table cell. We will look at manual font formatting [in a few lessons
 time](lesson-11).
 
+A particularly important use of `>{...}` syntax is for 'paragraph' columns,
+which almost always need `\raggedright` as they otherwise look very
+awkward.
+
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\begin{document}
+\begin{tabular}{p{5cm} >{\raggedright}p{5cm} }
+  This is some text to show the effect of the spacing &
+  This is some text to show the effect of the spacing \\
+\end{tabular}
+\end{document}
+```
+
 ## Merging cells
 
 In LaTeX you can merge cells horizontally pretty easily. This is done by using
