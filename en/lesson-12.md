@@ -42,7 +42,7 @@ within each entry there are a series of fields. Let us look at an example.
   author =     {Ronald L. Graham and Donald E. Knuth and Oren Patashnik},
   title =      {Concrete Mathematics},
   publisher =  {Addison-Wesley},
-  date =       {1995}
+  year =       {1995}
 }
 ```
 <!-- {% endraw %} -->
