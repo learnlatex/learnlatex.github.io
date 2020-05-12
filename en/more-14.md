@@ -26,7 +26,7 @@ calculate 2π is shown here.
 
 \begin{document}
 
-$ \pi \approx \directlua{ tex.print(math.pi) } $
+$ \pi \approx \directlua{ tex.print(2 * math.pi) } $
 
 \end{document}
 ```
