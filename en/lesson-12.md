@@ -23,7 +23,7 @@ within each entry there are a series of fields. Let us look at an example.
 
 <!-- {% raw %} -->
 ```
-@Article{Darensbourg2008,
+@Article{Thomas2008,
   author =    {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
                and Darensbourg, Marcetta Y.},
   title =     {Series of Mixed Valent {Fe(II)Fe(I)} Complexes That Model the
@@ -38,7 +38,7 @@ within each entry there are a series of fields. Let us look at an example.
   doi =       {10.1021/ic800654a},
 }
 
-@Book{Patashnik1995,
+@Book{Graham1995,
   author =     {Ronald L. Graham and Donald E. Knuth and Oren Patashnik},
   title =      {Concrete Mathematics},
   publisher =  {Addison-Wesley},
@@ -108,10 +108,10 @@ The basic structure of our input is.
 \usepackage{natbib}
 
 \begin{document}
-The mathematics showcase is from \cite{Patashnik1995}, whereas
-there is some chemistry in \cite{Darensbourg2008}.
+The mathematics showcase is from \cite{Graham1995}, whereas
+there is some chemistry in \cite{Thomas2008}.
 
-Some more complex citations: \citep{Patashnik1995}, \citet{Darensbourg2008}.
+Some more complex citations: \citep{Graham1995}, \citet{Thomas2008}.
 
 \bibliographystyle{plainnat}
 \bibliography{learnlatex}
@@ -140,10 +140,10 @@ some new commans for this.
 \addbibresource{learnlatex.bib} % file of reference info
 
 \begin{document}
-The mathematics showcase is from \cite{Patashnik1995}.
+The mathematics showcase is from \cite{Graham1995}.
 
-Some more complex citations: \citeauthor{Darensbourg2008},
-\citetitle{Patashnik1995}, \parencite{Darensbourg2008}.
+Some more complex citations: \citeauthor{Thomas2008},
+\citetitle{Graham1995}, \parencite{Thomas2008}.
 
 \printbibliography
 \end{document}
