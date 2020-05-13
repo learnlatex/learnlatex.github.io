@@ -4,7 +4,7 @@ title: "More on: Logical structure"
 
 ## Document titles
 
-LaTeX offers some logical mark-up for the title of documents: three commands
+LaTeX offers some logical markup for the title of documents: three commands
 to set up 'meta-data' and one to use it.
 
 ```latex

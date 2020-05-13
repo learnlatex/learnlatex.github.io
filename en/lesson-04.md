@@ -9,7 +9,7 @@ appearance when you have to.
 
 ## A first example
 
-We'll start with an example contrasting one of the most common logical mark-up
+We'll start with an example contrasting one of the most common logical markup
 commands in LaTeX, `\emph`, with simply making something italic. (In print,
 that's usually how things are emphasised.)
 
@@ -26,7 +26,7 @@ You can probably guess that `\textit` is a command to make text italic, but it
 _always_ makes things italic, so it doesn't work for nested material. See how
 `\emph` _does_ know about nesting. There are also places where emphasis  isn't
 the same as italic, for example in presentations color is usually a better
-option. With logical mark-up, we don't have to worry about that detail in the
+option. With logical markup, we don't have to worry about that detail in the
 body of the document.
 
 We will look at [manual formatting later](lesson-11), but for the moment we'll
@@ -36,7 +36,7 @@ add `\textbf` to commands we know: it makes text bold.
 
 You probably have used a word processor, where  to start a section most people
 enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical mark-up is actually _easier_ than doing the
+new line. In LaTeX, using logical markup is actually _easier_ than doing the
 formatting by hand: we can use the `\section` command. This handles the font
 changes, vertical space, etc., and keeps the output uniform throughout the
 document.
@@ -86,7 +86,7 @@ commands for that, but not all documents use them, so we've
 
 ## Lists
 
-The other very common place you'll want logical mark-up is writing lists.
+The other very common place you'll want logical markup is writing lists.
 There are two common types of list built-in to LaTeX.
 
 ```latex

@@ -4,7 +4,7 @@ title: "What is LaTeX and how does it work?"
 
 Unlike common word processors such as Microsoft Word or LibreOffice, LaTeX
 usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes text and enriches the text with mark--up. This markup tells LaTeX
+one takes text and enriches the text with markup. This markup tells LaTeX
 about the logical meaning of certain elements of the text, similar to the way
 HTML does.
 
