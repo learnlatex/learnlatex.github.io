@@ -32,7 +32,7 @@ choose TeX Live.
 ## Editors
 
 LaTeX files are simple plain text, so they can be edited with any text editor.
-However, it's most convenient to have a editor that is designed to work with
+However, it's most convenient to have an editor that is designed to work with
 LaTeX, as they provide features like one-click compilation of your files,
 built-in PDF viewers and syntax highlighting. A really useful feature in all
 modern LaTeX editors is SyncTeX: the ability to click on your source and go
