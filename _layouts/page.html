@@ -23,7 +23,9 @@ layout: default
 {% if page.path contains "more-" %}
   <p><small>
     <a href = "{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}">Return to main lesson</a>
+    {% unless page.path contains "more-15" %}
     <br>
     <a href = "lesson-0{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">Next main lesson</a>
+    {% endunless %}
   </small></p>
 {% endif %}
