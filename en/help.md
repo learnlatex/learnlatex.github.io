@@ -90,7 +90,7 @@ is _any text_ between the first and last word.
 This allows the form `% !TEX program=pdflatex` used by some TeX editors
 but does not require the `program=` and is currently restricted to
 specifying just one of the three engines that are supported on both of
-the offline systems being used.
+the online systems being used.
 
 You can see an example of a comment being used to specify LuaLaTeX in
 [some of the examples on this site](more-14).
