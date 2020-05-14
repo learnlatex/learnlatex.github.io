@@ -33,7 +33,7 @@ there is no TeX specific editing help as found in typical editing systems that y
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
 
 1. Use the **LaTeX Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX online</button> button
-   will submit the code to the `latexonline.cc` service.
+   will submit the code to the [latexonline.cc](https://latexonline.cc/) service.
 
    The resulting PDF document (or section of the error log) will be
    shown inline immediately below the example. A <button style="padding:0 1px;font-size:90%">Delete
@@ -48,7 +48,7 @@ Whether or not the code block has been edited, there are three basic ways that y
    move off the page.
 
 2. Use the **Overleaf** Service. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
-   button will submit the code to **Overleaf**.
+   button will submit the code to [Overleaf](https://www.overleaf.com/about).
 
    If you do not have an account, or the account details are not
    already cached in your browser, then you will be redirected to a
@@ -66,11 +66,35 @@ Whether or not the code block has been edited, there are three basic ways that y
    site, and you may save your project in your overleaf account and
    return to it later.
 
-3. If you have a TeX system installed locally, then you may copy the example code
-   off the page, either explicitly selecting it, or by using
-   the <button style="padding:0 1px;font-size:90%">Copy</button> button. This will place the code in your
-   operating system clipboard so you can start a blank document using
-   your local editor, and paste in the text.
+3. If you have a TeX system installed locally, then you may copy the
+   example code off the page, either explicitly selecting it, or by
+   using the <button style="padding:0 1px;font-size:90%">Copy</button>
+   button.  This will place the code in your operating system
+   clipboard so you can start a blank document using your local
+   editor, and paste in the text.
+
+
+## Choosing the {{ site.tex }} engine
+
+When submitting projects to Overleaf or LaTeX Online, by default the
+`pdflatex` engine will be used unless the example uses the `fontspec`
+package in which case `xelatex` is used.
+
+You can force the choice of `pdflatex`, `xelatex` or `lualatex` by using a comment of the form:
+
+`% !TEX ` _any text_ `lualatex`
+
+where the white space at the start is optional and case is ignored as
+is _any text_ between the first and last word.
+
+This allows the form `% !TEX program=pdflatex` used by some TeX editors
+but does not require the `program=` and is currently restricted to
+specifying just one of the three engines that are supported on both of
+the offline systems being used.
+
+You can see an example of a comment being used to specify LuaLaTeX in
+[some of the examples on this site](more-14).
+
 
 
    
