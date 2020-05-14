@@ -12,7 +12,7 @@ the documentation when you installed it you can access the locally saved
 documentation using the `texdoc` command line tool. Using
 
 
-`texdoc <` _pkg_ `>`
+`texdoc` < _pkg_ >
 
 
 Will open the documentation of package `<pkg>`. The utility will search the
@@ -21,7 +21,7 @@ search term. You can list and choose from among all the viable results it finds
 using
 
 
-`texdoc -l <` _pkg_ `>`
+`texdoc -l` < _pkg_ >
 
 
 ## texdoc.net
