@@ -14,7 +14,7 @@ commands in LaTeX, `\emph`, with simply making something italic. (In print,
 that's usually how things are emphasised.)
 
 ```latex
-\document{article}
+\documentclass{article}
 \begin{document}
 Some text with \emph{emphasis and \emph{nested} content}.
 
@@ -90,7 +90,7 @@ The other very common place you'll want logical markup is writing lists.
 There are two common types of list built-in to LaTeX.
 
 ```latex
-\document{article}
+\documentclass{article}
 \begin{document}
 
 Ordered
