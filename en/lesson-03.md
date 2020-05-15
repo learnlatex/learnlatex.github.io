@@ -8,7 +8,8 @@ first chance to [see how to use the examples here on `learnlatex.org`](help).
 
 If you are using a local LaTeX installation, in your editor create a new file
 called `first.tex`, and either copy–paste the text below or type it in.
-If you are using the online system, you can just click on the buttons in the
+If you are using the online system, you can just click on the ‘LaTeX online’
+or ‘Open in Overleaf’ buttons in the
 example to try it out! We suggest you try out the online options even if you
 have set up LaTeX locally: this is a good chance to see how the different
 options work.
@@ -68,7 +69,7 @@ which has code to set up the document layout.
 
 LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
 called *environments*.
-You must match them, so that for every `\begin{x}` there is an `\end{x}`.
+You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
 You must also nest them, so that if you have
 `\begin{x} ... \begin{y}` then you must have
 `\end{y} ... \end{x}`.
