@@ -24,7 +24,7 @@ function llexamples() {
 	    p[i].parentNode.insertBefore(r, p[i].nextSibling);
 	    // overleaf
 	    var o = document.createElement("button");
-	    o.innerText="Open in OverLeaf";
+	    o.innerText="Open in Overleaf";
 	    o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
 	    p[i].parentNode.insertBefore(o, p[i].nextSibling);
 	    var f=document.createElement("span");
