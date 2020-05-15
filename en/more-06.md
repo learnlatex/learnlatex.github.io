@@ -6,9 +6,9 @@ title: "More on: Extending LaTeX using packages"
 
 The `\usepackage` command takes a comma-separated list of packages, so you can
 load several in one go: `\usepackage{color,graphicx}` for example. If you are
-passing options to a package, they will apply to all of the comma-separate list.
-It's also easier to comment out packages if they are loaded separately. So we
-will stick to loading each package on a separate line.
+passing options to a package, they will apply to all of the comma-separated
+list of packages. It's also easier to comment out packages if they are loaded
+separately.  So we will stick to loading each package on a separate line.
 
 ## The `babel` package
 
@@ -31,15 +31,15 @@ H"ohe
 ```
 
 Other language settings make design changes: for example, in traditional
-French typography, there is a space before `:`, and this is added if you
-load `babel` with the option `french`.
+French typography, there is a space before some punctuation signs, like `:`,
+and this is added automatically if you load `babel` with the option `french`.
 
 ## Global options
 
 Sometimes, you want an option to be available to all of the packages you've
 loaded. That is done by giving it on the `\documentclass` line: every package
 can 'see' this list. So to pass the language of a document to all packages,
-we might use
+we might use:
 
 ```latex
 \documentclass[ngerman]{article}
