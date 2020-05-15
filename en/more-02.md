@@ -27,5 +27,5 @@ pdfTeX can't do that.
 
 If you are in Japan, or writing lots of Japanese, you might also come across
 pTeX and upTeX. These are specialised engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX in particular is still the
-most popular system for Japanese.
+can also do a lot of this, but at the moment upTeX, in particular, is still
+the most popular system for Japanese.
