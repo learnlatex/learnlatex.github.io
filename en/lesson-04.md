@@ -4,7 +4,7 @@ title: "Logical structure"
 
 LaTeX provides ways on the logical structure of your document, as well as the
 ability to directly set the appearance. Most of the time, it's much better to
-methods that focus on structure, as that makes it easy to reuse or alter
+use methods that focus on structure, as that makes it easy to reuse or alter
 appearance when you have to.
 
 ## A first example
@@ -24,8 +24,8 @@ Some text in \textit{italic and \textit{nested} content}.
 
 You can probably guess that `\textit` is a command to make text italic, but it
 _always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where emphasis  isn't
-the same as italic, for example in presentations color is usually a better
+`\emph` _does_ know about nesting. There are also places where the emphasis
+isn't the same as italic, for example in presentations color is usually a better
 option. With logical markup, we don't have to worry about that detail in the
 body of the document.
 
@@ -71,7 +71,8 @@ the next lesson](lesson-05).
 
 LaTeX can divide up documents into quite a few levels
 
-- `\chapter` (but we need `\documentclass{report}` for this)
+- `\chapter` (but we need `\documentclass{book}` or
+  `\documentclass{report}` for this)
 - `\section`
 - `\subsection`
 - `\subsubsection`
@@ -118,8 +119,8 @@ each type of list is added automatically.
 Experiment with different sectioning levels. Try using `\documentclass{report}`
 instead of `\documentclass{article}` and adding `\chapter` commands. How
 do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-as standard they _don't_ add numbers.
+by default, they _don't_ add numbers.
 
 Make some lists, and nest one list inside another. How does the format of the
 numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nestings tends to be a bad sign anyway!
+but more than four nested lists tends to be a bad sign anyway!
