@@ -104,7 +104,7 @@ document have two columns.
 \end{document}
 ```
 
-Add the option `twocolumn` and see how the layout changes.
+Add the class option `twocolumn` and see how the layout changes.
 
 Change the `\section` above for `\chapter` and find out what effect the
 following class options have when using the `scrreprt` class.
