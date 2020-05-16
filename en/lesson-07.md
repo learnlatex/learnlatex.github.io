@@ -25,15 +25,15 @@ If you have more than one version of a graphic then you can write,
 for instance, `example-image.png`. (The `graphicx` package will try to
 guess the extension if you do not give one.)
 
-You'll notice we've used a new environment here, `center`, to put the image
-in the middle of the page. [A bit later](lesson-11), we'll talk more about
-spacing and positioning.
+You'll notice we've used a new environment here, `center`, to place the image
+horizontally centered on the page. [A bit later](lesson-11), we'll talk more
+about spacing and positioning.
 
 ## Altering graphic appearance
 
 The `\includegraphics` command has many options to control
-the size and shape of included images, and to trim down material. Some of
-these are used a lot, so are worth being aware of.
+the size and shape of the included images and to trim down material. Some of
+these are used a lot, so they are worth being aware of.
 
 The most obvious thing to set is the `width` or the `height` of an
 image, which are often given relative to the `\textwidth` and
@@ -114,7 +114,7 @@ to them from your text.
 You'll probably spot that we've centered the image here using `\centering`
 rather than the `center` environment. Inside a float, you should use
 `\centering` if you want to horizontally-center content: this avoids both
-the float and `center` environment adding space.
+the float and `center` environment adding extra vertical space.
 
 ## Exercise
 
@@ -124,5 +124,5 @@ used in the demonstration.
 Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
 
 Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different types of
-specifier interact?
+floats using the different position specifiers. How do different
+specifiers interact?
