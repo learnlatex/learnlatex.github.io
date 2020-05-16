@@ -9,16 +9,16 @@ There are several ways to access the documentation of a package or class.
 
 If you've installed a TeX distribution (_e.g._, TeXLive or MikTeX) and included
 the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using
+documentation using the `texdoc` command line tool. Using:
 
 
 `texdoc` < _pkg_ >
 
 
-Will open the documentation of package `<pkg>`. The utility will search the
+will open the documentation of package `<pkg>`. The utility will search the
 available documentation and open what it thinks is the closest match to your
 search term. You can list and choose from among all the viable results it finds
-using
+using:
 
 
 `texdoc -l` < _pkg_ >
@@ -26,7 +26,7 @@ using
 
 ## texdoc.net
 
-This is a [homepage](https://texdoc.net/) which works similar to the `texdoc` utility. You can search
+This is a [webepage](https://texdoc.net/) which works similar to the `texdoc` utility. You can search
 for documentation they have available just like you would do with `texdoc -l`
 and then choose from among the results.
 
@@ -62,6 +62,6 @@ and add lines one at a time until you show the issue. You can try to 'cut down'
 your real file, but that can be a long process.
 
 One thing you will want available is your log file: this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
+every time you run it, and has the same name as your input but ending with `.log`.
 Depending on your desktop interface, you might need to 'show extensions' to
-work otu which file it is.
+work out which file it is.
