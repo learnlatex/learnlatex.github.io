@@ -7,7 +7,7 @@ title: "Formatting: fonts and spacing"
 We have already seen that a blank line in your input will generate a new
 paragraph in LaTeX. This shows up as the paragraph will start with an
 indent.
-One style that is common is to have no indents for paragraphs, but instead
+One common style is to have no indents for paragraphs, but instead
 to have a 'blank line' between them. We can achieve that using the `parskip`
 package.
 
@@ -61,7 +61,7 @@ Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 
 For running text, we use commands that alter the font set up: the commands
 here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them applying to
+we need to place them in a _group_ if we want to prevent them from applying to
 the whole document. LaTeX environments are groups, as are table cells,
 or we can use `{...}` to make an explicit group.
 
@@ -84,7 +84,7 @@ We can set font size in a similar way: these commands all work on an ongoing
 basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
 `\small` and `\footnotesize` are common. It's important to finish a paragraph
 _before_ changing the font size back: see how we add an explicit `\par`
-(paragraph) here.
+(paragraph break) here:
 
 ```latex
 \documentclass{article}
@@ -105,3 +105,7 @@ Normal text
 Experiment with manual formatting: create a `titlepage` environment and
 try inserting different spaces and font changes. What happens when we
 combine font changes? How does this compare to math mode?
+
+What happens if you change the font size of a large paragraph (try with
+`\tiny` then with `\huge`) but don't issue a final `\par` before closing
+the group?
