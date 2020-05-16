@@ -82,6 +82,8 @@ The `float` package will do that.
 ```
 
 Note the `H` option, which puts the figure 'absolutely Here'.
+However it is often not recommended to use `H`, because it may
+create large portions of white space in your document.
 
 ## Other types of float
 
