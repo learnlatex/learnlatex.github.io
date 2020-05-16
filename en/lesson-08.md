@@ -16,18 +16,18 @@ following in your preamble and we're good to go:
 
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single letter names. The
+&mdash;often referred to as 'table preamble'&mdash; to the `tabular`
+environment, in which you specify the columns by using single letter-names. The
 available column types are:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
 | type       | description |
 | ---        |:-- |
-| `l`        | left aligned column |
+| `l`        | left-aligned column |
 | `c`        | centred column |
-| `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`, the text will be automatically line wrapped and fully justified |
+| `r`        | right-aligned column |
+| `p{width}` | a column with fixed-width `width`, the text will be automatically line wrapped and fully justified |
 | `m{width}` | like `p`, but vertically centred compared to the rest of the row |
 | `b{width}` | like `p`, but bottom aligned |
 | `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
@@ -40,7 +40,7 @@ Each column has to be declared, so if you want three centred columns, you'd use
 In a table body columns are separated using an ampersand `&` and a new row is
 started using `\\`.
 
-We got everything we need for our first little table. In the following code the
+We got everything we need for our first little table. In the following code, the
 `&` and `\\` are aligned: this isn't necessary in LaTeX, but helps reading the
 source.
 
@@ -72,7 +72,7 @@ the column specification and hence should go into the preamble. To add a line
 between two columns just add `|` between their specification. Please note that
 vertical lines are only inserted if the cell to their left exists (except for a
 vertical line left of the first column). Note how in the following example the
-right most line will not appear in the last row.
+rightmost line will not appear in the last row.
 
 ```latex
 \documentclass{article}
@@ -137,7 +137,7 @@ type        | description
 
 In case you're wondering now, by default each column has a horizontal space of
 the length `\tabcolsep` padded on both sides, resulting in a total of
-`2\tabcolsep` between columns &ndash; one from each column &ndash; and a single
+`2\tabcolsep` between columns &mdash;one from each column&mdash; and a single
 `\tabcolsep` on both outer ends. If we want to put a colon between the first
 two columns and change the space between the latter two to `1cm` we could do so
 by using
@@ -237,13 +237,13 @@ be anything legal in the preamble but _only a single column type_.
 <!-- {% endraw %} -->
 
 Note that you have to specify vertical rules you want to apply to the right of
-the `\multicolumn` in the `align` argument, e.g., `\multicolumn{2}{c|}{stuff}`
-&ndash; but remember, don't use vertical rules.
+the `\multicolumn` in the `align` argument, e.g.,
+`\multicolumn{2}{c|}{stuff}`&mdash;but remember, don't use vertical rules.
 
 
 ## Formal tables with the `booktabs` package
 
-In this section we will briefly introduce the `booktabs` package, which aids
+In this section, we will briefly introduce the `booktabs` package, which aids
 the author in the creation of beautifully typeset tables. "Beautiful" means
 in this context that the table is well-readable.
 
@@ -330,7 +330,8 @@ that this line is a little bit shorter than the `\toprule` and
 
 The package also provides commands to increase or decrease the height
 of a row. In the following example we increase the height of the
-last row by 0.5em, where `em` is a unit that depends  on the current font.
+last row by `0.5em`, where `em` is a unit that depends  on the current font,
+but it's roughly the width of the uppercase letter `M`.
 
 <!-- {% raw %} -->
 ```latex
