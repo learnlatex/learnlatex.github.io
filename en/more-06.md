@@ -33,22 +33,3 @@ H"ohe
 Other language settings make design changes: for example, in traditional
 French typography, there is a space before `:`, and this is added if you
 load `babel` with the option `french`.
-
-## Global options
-
-Sometimes, you want an option to be available to all of the packages you've
-loaded. That is done by giving it on the `\documentclass` line: every package
-can 'see' this list. So to pass the language of a document to all packages,
-we might use
-
-```latex
-\documentclass[ngerman]{article}
-
-\usepackage{babel} % Notice that the option name is 'ngerman'
-
-\begin{document}
-
-H"ohe
-
-\end{document}
-```
