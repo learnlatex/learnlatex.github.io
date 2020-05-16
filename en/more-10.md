@@ -79,7 +79,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 ```
 
 # Mathtools
-The package `mathtools` loads `amsmath` but adds several additional
+The package `mathtools` loads `amsmath` and adds several additional
 features, such as variants of the `amsmath` matrix environments that
 allow the column alignment to be specified.
 ```latex
@@ -100,13 +100,13 @@ allow the column alignment to be specified.
 
 # Unicode Math
 
-As will be seen in [Lesson 14](lesson-14) There are variant TeX
-engines that use OpenType fonts. By default these engines still use
+As will be seen in [Lesson 14](lesson-14) there are variant TeX
+engines that use OpenType fonts. By default, these engines still use
 classic TeX math fonts but you may use the `unicode-math` package
 to use OpenType Math fonts. The details of this package are beyond
 this course and we refer you to the
 [package documentation](https://texdoc.net/pkg/unicode-math).
-However we give a small example here.
+However, we give a small example here.
 
 ```
 % !TEX xelatex

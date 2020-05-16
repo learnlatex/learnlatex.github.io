@@ -23,7 +23,7 @@ See how the paragraph continues after the display.
 ```
 
 You may see 'LaTeX-like' mathematical input in other places, for example
-the MathJaX system for placing equations in web pages. These systems often
+the MathJax system for placing equations in web pages. These systems often
 accept slight variations on LaTeX's syntax as they do not actually use LaTeX
 'behind the scenes'. Our examples are all 'correct' LaTeX, so if you see
 something different in another context, it might be because the example is not
@@ -70,7 +70,8 @@ symbols using the great
 
 You can use exactly the same commands for display math mode as for inline
 work. Display math mode is set centered and is meant to be 'part of a paragraph'
-where the equation is larger. It's particularly useful for e.g. integrations
+where the equation is larger. It's particularly useful for integrations, for
+example:
 
 ```latex
 \documentclass{article}
