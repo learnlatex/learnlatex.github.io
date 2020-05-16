@@ -4,7 +4,8 @@ title: "Using the learnlatex.org site"
 
 ## Navigating the site
 
-The course consists of 15 core lessons reached from the table of contents on the [home page](/).
+The course consists of 15 core lessons that can be reached from the table
+of contents on the [home page](/).
 
 Each lesson has a link to one associated lesson on the same subject
 that goes in to greater depth. It should be possible to work through
@@ -22,7 +23,7 @@ Example text.
 \end{document}
 ```
 
-The example is complete however you may wish to edit it to make small
+The example is complete, however you may wish to edit it to make small
 changes, perhaps as part of an Exercise set at the end of the lesson.
 
 The <button style="padding:0 1px;font-size:90%">Edit</button> button enables editing within the page, this is
@@ -63,7 +64,7 @@ Whether or not the code block has been edited, there are three basic ways that y
    the resulting output or error log.
 
    The editing features in Overleaf are far more extensive than on this
-   site, and you may save your project in your overleaf account and
+   site, and you may save your project in your Overleaf account and
    return to it later.
 
 3. If you have a TeX system installed locally, then you may copy the
