@@ -19,7 +19,7 @@ preincludes = {
 
 ## Structuring your sources
 
-When you are writing a longer document, it's likely you'll want to split up
+When you are writing a longer document, you’ll likely want to split up
 the source into multiple files. For example, it's very common to have
 one 'main'/'root' file, then one source file per chapter (for a book or thesis),
 or per significant section (for a long article).
@@ -32,7 +32,7 @@ and makes some internal adjustments. But it as a big advantage: it allows us to
 be selective in which chapters to include, so you can work on part of your
 document rather than the whole thing.
 
-A longer document might therefore look something like the following
+A longer document might therefore look something like the following:
 
 <!-- pre0 {% raw %} -->
 ```latex
@@ -80,7 +80,7 @@ are at the end of this page.)
 ## Using `\input`
 
 The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
+chapters. In the example, we have used it to separate the front- and
 backcovers, keeping the the main file short and clear, and also meaning we could
 re-use the covers in another document. We've also used it for the 'non-chapter'
 sections at the start of our 'book': things like the preface. Again, this is

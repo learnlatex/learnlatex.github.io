@@ -26,6 +26,6 @@ Even more text\index{alpha@$\alpha$}.
 ```
 
 We've shown two features of indexing here: subdivision using `!`, and printing
-something differnt from the 'sort text' of an index entry using `@`. There
+something different from the 'sort text' of an index entry using `@`. There
 is a lot of customisation possible with an index: try out the example and see
 how it works.
