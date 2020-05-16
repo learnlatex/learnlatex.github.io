@@ -127,6 +127,10 @@ symbols, just like a table. Notice how we've used `\quad` to insert a bit of
 space, and `\text` to put some normal text inside math mode. We've also used
 another math mode command, `\binom`, for a binomial.
 
+Notice that here we used `align*`, and the equation didn't come out numbered.
+Most maths environments number the equations by default, and the starred variant
+(with a `*`) disables numbering.
+
 ## Fonts in math mode
 
 Unlike normal text, font changes in math mode often convey very specific meaning.
