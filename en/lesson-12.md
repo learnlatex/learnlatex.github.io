@@ -70,7 +70,12 @@ case-changing being applied.
 
 Editing `.bib` files by hand is rather tedious, so most people use a dedicated
 editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available. Here, we will use the short
+but there are several other interfaces available.
+If the reference contains a DOI (Digital Object Identifier), you may want to
+try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
+to check if the entry is correct!
+
+Here, we will use the short
 example database above for our demonstrations: we have 'saved' it as
 `learnlatex.bib`.
 
