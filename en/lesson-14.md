@@ -19,7 +19,7 @@ More information about the fonts that are available in a default `pdflatex` inst
 ## The Unicode era
 
 As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot natively use modern OpenType fonts and easily switch between multiple languages that use different alphabets (or scripts, to use the technical term).
-There are two replacements for TeX that natively use Unicode input and modern fonts: XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using the engines `xelatex` and `lualatex` respectively.
+There are two replacements for pdfTeX that natively use Unicode input and modern fonts: XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using the engines `xelatex` and `lualatex` respectively.
 
 In these engines, font selection is performed by the `fontspec` package, and for simple documents can look as easy as:
 ```latex
