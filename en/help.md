@@ -47,6 +47,15 @@ Whether or not the code block has been edited, there are three basic ways that y
    document. Any changes that you make to the example are lost if you
    move off the page.
 
+   **Warning:** Displaying the PDF result in the page requires that your
+     browser has a built-in PDF viewer that can work in an `iframe`.
+     In mobile browsers where this is often not the case, you may be offered a
+     dialog to download the result as `compile.pdf` which you can then
+     view in your PDF reading app, or it may not work at all.
+     The exact behaviour depending on the details of browser and mobile operating system
+     settings.  You may prefer to use the **Overleaf** link in some cases.
+     
+
 2. Use the **Overleaf** Service. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
    button will submit the code to [Overleaf](https://www.overleaf.com/about).
 
