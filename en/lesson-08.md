@@ -17,7 +17,7 @@ following in your preamble and we're good to go:
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
 &mdash;often referred to as 'table preamble'&mdash; to the `tabular`
-environment, in which you specify the columns by using single letter-names. The
+environment, in which you specify the columns by using single-letter names. The
 available column types are:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
