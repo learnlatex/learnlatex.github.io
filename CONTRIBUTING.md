@@ -10,8 +10,8 @@ ideas are all useful.
 ## ChangeLog, commit messages and authors
 
 Please note any significant change to the content of questions in
-[`CHANGELOG.md`](CHANGELOG.md), including which lesson is changed in the
-format `Q-<number>`.
+[`CHANGELOG.md`](CHANGELOG), including which lesson is changed in the
+format `L-<number>`.
 
 Commit messages where the content of a single lesson is changed should start
 with `L-<name>`. Changes to the _content_ of lessons should always be made in
@@ -19,7 +19,7 @@ separate commits: formatting, typos or other 'non-significant' changes can be
 made for multiple lessons in one go.
 
 If you are making a significant change to the content, please make sure you
-add yourself to the [contributors list](AUTHORS.md).
+add yourself to the [contributors list](AUTHORS).
 
 ## Formatting
 
@@ -53,7 +53,7 @@ the site useful. There are a few things to watch out for
   - `&nbsp;` Non-breaking space
 
 - quotes you can use ASCII double and single quotes, which will be changed
-  to typographical quotes: `"abc" 'abc' abc's` produces abc abc abcs.
+  to typographical quotes: `"abc" 'abc' abc's` produces "abc" 'abc' abc's.
 
 - Please wrap source lines to keep them below 80 characters long
 
