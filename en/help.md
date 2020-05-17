@@ -27,7 +27,7 @@ changes, perhaps as part of an Exercise set at the end of the lesson.
 
 The <button style="padding:0 1px;font-size:90%">Edit</button> button enables editing within the page, this is
 marked by the removal of the LaTeX syntax highlighting and a green
-border added around the code block. Note that this is just a basic edit facility provided by your browser
+border added around the code block. Note that this is just a basic edit facility provided by your browser;
 there is no TeX specific editing help as found in typical editing systems that you would use with TeX.
 
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
@@ -43,7 +43,7 @@ Whether or not the code block has been edited, there are three basic ways that y
 
    Note that  **LaTeX Online** requires no login or signup of any sort
    so it is very convenient for small examples, but neither this site
-   nor `latexonline.cc` site provide any mechanism to save your
+   nor the `latexonline.cc` site provide any mechanism to save your
    document. Any changes that you make to the example are lost if you
    move off the page.
 
@@ -52,7 +52,7 @@ Whether or not the code block has been edited, there are three basic ways that y
      In mobile browsers where this is often not the case, you may be offered a
      dialog to download the result as `compile.pdf` which you can then
      view in your PDF reading app, or it may not work at all.
-     The exact behaviour depending on the details of browser and mobile operating system
+     The exact behaviour depends on the details of browser and mobile operating system
      settings.  You may prefer to use the **Overleaf** link in some cases.
      
 
@@ -67,12 +67,12 @@ Whether or not the code block has been edited, there are three basic ways that y
 
    If your Overleaf account is already cached in your browser, then
    Overleaf will be opened in a new tab, with a new
-   project with the code and you may edit it in
+   project with the code. You may then edit it in
    Overleaf which will simultaneously run LaTeX on your code showing
    the resulting output or error log.
 
    The editing features in Overleaf are far more extensive than on this
-   site, and you may save your project in your overleaf account and
+   site, and you may save your project in your Overleaf account and
    return to it later.
 
 3. If you have a TeX system installed locally, then you may copy the
