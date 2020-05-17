@@ -16,18 +16,18 @@ Spaces in file names are traditionally somewhat problematic, but are now
 generally supported. However, if you have spaces in the name, and you have
 issues, you may wish to try removing the spaces as the first step.
 
-Accented character support is somewhat variable: there are issues with some
+Accented character support is somewhat variable; there are issues with some
 systems, particularly on Windows. If you find issues with accented characters
 in file names, try using only ASCII characters for a test.
 
 ## Storing graphics in a subdirectory
 
 A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above: notice that the
+You can then include the relative path, as is shown above; notice that the
 `/` character is used to separate out parts of the path _even on Windows_.
 
 If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs braced entry
+in advance. That can be done using `\graphicspath`, which needs a braced entry
 for each subdirectory. For example, to include both `figs` and `pics`
 subdirectories, we would have
 
@@ -85,12 +85,12 @@ Note the `H` option, which puts the figure 'absolutely Here'.
 
 ## Other types of float
 
-We will [see soon](lesson-08) that we can put tables in floats: they will go
+We will [see soon](lesson-08) that we can put tables in floats; they will go
 into a `table` environment. However, we don't _have_ to put graphics in the
-`figure` environment or tables in the `table` environment: this is just
+`figure` environment or tables in the `table` environment; this is just
 convention.
 
-You might want to have other types of floating environment: each type is
+You might want to have other types of floating environment; each type is
 inserted independently. You can do that using the
 [`trivfloat`](https://ctan.org/pkg/trivloat) package. This provides a single
 command, `\trivfloat`, to make new types of float.
