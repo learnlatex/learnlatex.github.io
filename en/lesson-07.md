@@ -26,7 +26,7 @@ for instance, `example-image.png`. (The `graphicx` package will try to
 guess the extension if you do not give one.)
 
 You'll notice we've used a new environment here, `center`, to put the image
-in the middle of the page. [A bit later](lesson-11), we'll talk more about
+in the middle horizontally of the page. [A bit later](lesson-11), we'll talk more about
 spacing and positioning.
 
 ## Altering graphic appearance
@@ -113,7 +113,7 @@ to them from your text.
 
 You'll probably spot that we've centered the image here using `\centering`
 rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally-center content: this avoids both
+`\centering` if you want to horizontally center content; this avoids both
 the float and `center` environment adding space.
 
 ## Exercise
