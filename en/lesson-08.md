@@ -7,7 +7,7 @@ title: "Tables"
 
 Tables in LaTeX are set using the `tabular` environment. This lesson will assume
 you load the `array` package, which adds more functionality to LaTeX tables, and
-which is only not built into the LaTeX kernel for historic reasons. So put the
+which is not built into the LaTeX kernel only for historic reasons. So put the
 following in your preamble and we're good to go:
 
 ```latex
@@ -16,7 +16,7 @@ following in your preamble and we're good to go:
 
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as table preamble &ndash; to the `tabular`
+&ndash; often referred to as the table preamble &ndash; to the `tabular`
 environment, in which you specify the columns by using single letter names. The
 available column types are:
 
@@ -61,18 +61,18 @@ source.
 
 ## Adding lines
 
-A word of advice prior to introducing lines: lines should be used really
+A word of advice prior to introducing lines; lines should be used really
 sparsely in tables, and normally vertical ones often look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines, instead you
+for professional tables you shouldn't use any of the standard lines; instead you
 should skip this section and read about
 [`booktabs`](#tables-in-printing-quality-with-the-booktabs-package).
 
 Nevertheless, LaTeX has got you covered if you need lines. Vertical lines are part of
-the column specification and hence should go into the preamble. To add a line
+the column specification and hence should go into the table preamble. To add a line
 between two columns just add `|` between their specification. Please note that
 vertical lines are only inserted if the cell to their left exists (except for a
 vertical line left of the first column). Note how in the following example the
-right most line will not appear in the last row.
+rightmost line will not appear in the last row.
 
 ```latex
 \documentclass{article}
@@ -96,7 +96,7 @@ only a specific range of columns.
 
 `\cline` takes a mandatory argument that specifies the columns affected. It has
 to be a range with a hyphen (`-`) as a separator between the first and the last
-column number. You can specify multiple `\cline`s in the same row. Both a
+column number. You can specify multiple `\cline`s in the same row. Both an
 `\hline` and a `\cline` have to be the first content of a new row (so directly
 following `\\` or another `\hline` or `\cline`).
 
@@ -125,7 +125,7 @@ following `\\` or another `\hline` or `\cline`).
 
 ## Shortcuts and other preamble content
 
-The list of possible types in the preamble above only showed the column
+The list of possible types in the table preamble above only showed the column
 alignments available, but LaTeX has more things to offer in the preamble. What
 is still missing is a way to change the horizontal space between two columns to
 something arbitrary. This can be done with
@@ -158,7 +158,7 @@ by using
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11): you might guess that it adds a
+(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
 horizontal space.)
 
 In addition to all the aforementioned preamble content, we can use a few other
@@ -192,7 +192,7 @@ append that colon to the first column, so that things don't look as clunky.
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but it's effect is 'contained'
+`\itshape` makes all the following text italic, but its effect is 'contained'
 by the table cell. We will look at manual font formatting [in a few lessons
 time](lesson-11).
 
@@ -245,7 +245,7 @@ the `\multicolumn` in the `align` argument, e.g., `\multicolumn{2}{c|}{stuff}`
 
 In this section we will briefly introduce the `booktabs` package, which aids
 the author in the creation of beautifully typeset tables. "Beautiful" means
-in this context that the table is well-readable.
+in this context that the table is well readable.
 
 Let us start with a simple table:
 
@@ -330,7 +330,7 @@ that this line is a little bit shorter than the `\toprule` and
 
 The package also provides commands to increase or decrease the height
 of a row. In the following example we increase the height of the
-last row by 0.5em, where `em` is a unit that depends  on the current font.
+last row by 0.5ex, where `ex` is a unit that depends  on the current font.
 
 <!-- {% raw %} -->
 ```latex
@@ -342,7 +342,7 @@ last row by 0.5em, where `em` is a unit that depends  on the current font.
 \begin{tabular}{@{} lll @{}} \toprule[2pt]
   Animal & Food  & Size   \\ \cmidrule[1pt](rl){1-3}
   dog    & meat  & medium \\
-  horse  & hay   & large  \\ \addlinespace[0.5em]
+  horse  & hay   & large  \\ \addlinespace[0.5ex]
   frog   & flies & small  \\ \bottomrule[2pt]
 \end{tabular}
 \end{document}
