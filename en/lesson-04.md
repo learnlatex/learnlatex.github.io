@@ -25,7 +25,7 @@ Some text in \textit{italic and \textit{nested} content}.
 You can probably guess that `\textit` is a command to make text italic, but it
 _always_ makes things italic, so it doesn't work for nested material. See how
 `\emph` _does_ know about nesting. There are also places where emphasis  isn't
-the same as italic, for example in presentations color is usually a better
+the same as italic; for example, in presentations color is usually a better
 option. With logical markup, we don't have to worry about that detail in the
 body of the document.
 
@@ -37,7 +37,7 @@ add `\textbf` to commands we know: it makes text bold.
 You probably have used a word processor, where  to start a section most people
 enter the title text then simply make it bigger and bold, and follow it with a
 new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand: we can use the `\section` command. This handles the font
+formatting by hand; we can use the `\section` command. This handles the font
 changes, vertical space, etc., and keeps the output uniform throughout the
 document.
 
@@ -65,13 +65,13 @@ Text of the second section.
 \end{document}
 ```
 
-Using the standard `article` set up, LaTeX numbers the sections and subsections
+Using the standard `article` setup, LaTeX numbers the sections and subsections
 and includes the titles in boldface. We'll think a bit about changing design [in
 the next lesson](lesson-05).
 
 LaTeX can divide up documents into quite a few levels
 
-- `\chapter` (but we need `\documentclass{report}` for this)
+- `\chapter` (but we need `\documentclass{report}` or `\documentclass{book}` for this)
 - `\section`
 - `\subsection`
 - `\subsubsection`
@@ -87,7 +87,7 @@ commands for that, but not all documents use them, so we've
 ## Lists
 
 The other very common place you'll want logical markup is writing lists.
-There are two common types of list built-in to LaTeX.
+There are two common types of list built in to LaTeX.
 
 ```latex
 \documentclass{article}
@@ -122,4 +122,4 @@ as standard they _don't_ add numbers.
 
 Make some lists, and nest one list inside another. How does the format of the
 numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nestings tends to be a bad sign anyway!
+but more than four levels of nestings tends to be a bad sign anyway!
