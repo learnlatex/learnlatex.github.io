@@ -122,4 +122,4 @@ as standard they _don't_ add numbers.
 
 Make some lists, and nest one list inside another. How does the format of the
 numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four levels of nestings tends to be a bad sign anyway!
+but more than four levels of nesting tends to be a bad sign anyway!
