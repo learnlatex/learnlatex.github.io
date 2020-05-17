@@ -45,7 +45,7 @@ involved: we've given [some more details](more-06) if you need them.
 
 It's useful to be able to adjust some aspects of design independent of the
 document class. The most obvious one are the page margins. We've just used
-the `geometry` package in the example above, but lets now have an example
+the `geometry` package in the example above, but let's now have an example
 specifically about margins.
 
 ```latex
