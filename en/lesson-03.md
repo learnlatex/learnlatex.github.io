@@ -10,7 +10,7 @@ If you are using a local LaTeX installation, in your editor create a new file
 called `first.tex`, and either copy–paste the text below or type it in.
 If you are using the online system, you can just click on the buttons in the
 example to try it out! We suggest you try out the online options even if you
-have set up LaTeX locally: this is a good chance to see how the different
+have set up LaTeX locally; this is a good chance to see how the different
 options work.
 ```latex
 \documentclass{article}
@@ -21,10 +21,10 @@ Hey world!
 This is a first document.
 \end{document}
 ```
-Save the file and typeset it to a PDF document: if you are using a local LaTeX
+Save the file and typeset it to a PDF document; if you are using a local LaTeX
 installation, the exact button to press will depend on the editor you have
 picked. You should get a PDF file that contains the text above _plus_ a page
-number: LaTeX adds that automatically.
+number; LaTeX adds that automatically.
 
 View the output `first.pdf` with
 whatever program you prefer for PDF viewing.
@@ -45,7 +45,7 @@ typing `x` and `<Enter>`.
 LaTeX's error messages try to be helpful, but they are not the same as messages
 in word processors. Some editors also make it hard to see the 'full' text of an
 error, which can hide key details. LaTeX always creates a log of what it is
-doing: this is a text file ending in `.log`. You can always see the full  error
+doing; this is a text file ending in `.log`. You can always see the full  error
 messages there, and if you have a problem, expert LaTeX users will often ask for a
 copy of your log file.
 
@@ -73,7 +73,7 @@ You must also nest them, so that if you have
 `\begin{x} ... \begin{y}` then you must have
 `\end{y} ... \end{x}`.
 
-We can add comments to a LaTeX file by starting them with `%`: let's use
+We can add comments to a LaTeX file by starting them with `%`; let's use
 that to show the structure:
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
@@ -100,7 +100,7 @@ A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
  `{` and `}` are used to show _mandatory arguments_: information that commands
  require.
 
-There are some other characters with special meaning: we've just seen that `~`
+There are some other characters with special meaning; we've just seen that `~`
 is a 'hard' space, for example. Almost all of these characters  are _very_
 uncommon in normal text, which is why they were chosen for special meanings.
 If you do need to show one of these special characters, we've put some
@@ -113,5 +113,5 @@ button to typeset the content, then edit it in the webpage and re-typeset it.
 
 Try adding text to your first document, typesetting and seeing the changes in
 your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works: click on your source and find how to go to the same line  in
+your editor works; click on your source and find how to go to the same line  in
 your PDF. Try adding some hard spaces and see how they influence line-breaking.
