@@ -56,7 +56,7 @@ work by letting you edit your files in the webpage, then they run LaTeX
 behind the scenes, and display the PDF that is produced.
 
 Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focussed on letting you see the LaTeX code and
+whereas others are more focused on letting you see the LaTeX code and
 so are closer to having a local installation.
 
 There are systems that let you run LaTeX without needing to be logged in, and we
