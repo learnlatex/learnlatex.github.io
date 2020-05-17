@@ -6,7 +6,7 @@ title: "More on: Extending LaTeX using packages"
 
 The `\usepackage` command takes a comma-separated list of packages, so you can
 load several in one go: `\usepackage{color,graphicx}` for example. If you are
-passing options to a package, they will apply to all of the comma-separate list.
+passing options to a package, they will apply to each of the packages in the list.
 It's also easier to comment out packages if they are loaded separately. So we
 will stick to loading each package on a separate line.
 
