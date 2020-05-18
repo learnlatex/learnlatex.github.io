@@ -7,7 +7,7 @@ title: "More on: Mathematics"
 
 In addition to the `align*` environment shown in the main lesson,
 `amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment,and `multline` for
+for multi-line displays that do not need alignment, and `multline` for
 splitting a larger single expression over multiple lines, aligning the
 first line to the left, and the last to the right. In all cases the `*`
 form  omits the equation numbers by default.
@@ -42,7 +42,7 @@ in `ed` that make a subterm of a larger display for example, `aligned` and
 Standard LaTeX has two methods to give bold symbols in math. To make
 an entire expression bold, use `\boldmath` before entering the
 expression. The command `\mathbf` is also available to set individual
-terms in upright bold roman.
+letters or words in upright bold roman.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -91,7 +91,8 @@ allow the column alignment to be specified.
 \[
 \begin{pmatrix*}[r]
   10&11\\
-   1&2
+   1&2\\
+  -5&-6
 \end{pmatrix*}
 \]
 
@@ -100,7 +101,7 @@ allow the column alignment to be specified.
 
 # Unicode Math
 
-As will be seen in [Lesson 14](lesson-14) There are variant TeX
+As will be seen in [Lesson 14](lesson-14), there are variant TeX
 engines that use OpenType fonts. By default these engines still use
 classic TeX math fonts but you may use the `unicode-math` package
 to use OpenType Math fonts. The details of this package are beyond
