@@ -2,7 +2,7 @@
 title: "More on: Citations and references"
 ---
 
-## Dealing wth non-English sorting
+## Dealing with non-English sorting
 
 The BibTeX program was written primarily to deal with references in English. It
 is very limited in handling accented characters, and even more limited with
