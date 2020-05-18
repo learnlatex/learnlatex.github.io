@@ -80,10 +80,10 @@ So it this: the effect is not limited to a paragraph.
 \end{document}
 ```
 
-We can set font size in a similar way: these commands all work on an ongoing
+We can set font size in a similar way; these commands all work on an ongoing
 basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
 `\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back: see how we add an explicit `\par`
+_before_ changing the font size back; see how we add an explicit `\par`
 (paragraph) here.
 
 ```latex
