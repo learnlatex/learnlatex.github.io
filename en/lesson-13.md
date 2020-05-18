@@ -27,7 +27,7 @@ or per significant section (for a long article).
 LaTeX allows us to split up sources in a controlled way. There are two important
 commands here, `\input` and `\include`. We can use `\input` to make a file work
 'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` commands works for chapters only: it starts a new page
+material. The `\include` command works for chapters only: it starts a new page
 and makes some internal adjustments. But it as a big advantage: it allows us to
 be selective in which chapters to include, so you can work on part of your
 document rather than the whole thing.
@@ -81,7 +81,7 @@ are at the end of this page.)
 
 The `\input` command is good for parts of a long file that are _not_ separate
 chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the the main file short and clear, and also meaning we could
+backcovers, keeping the main file short and clear, and also meaning we could
 re-use the covers in another document. We've also used it for the 'non-chapter'
 sections at the start of our 'book': things like the preface. Again, this is
 to help keep the main file clear.
@@ -89,21 +89,22 @@ to help keep the main file clear.
 ## Using `\include` and `\includeonly`
 
 The `\include` command is good for chapters, so we have used it for each full
-chapter: it always starts a new page. We have selected which chapters will
+chapter; it always starts a new page. We have selected which chapters will
 actually be typeset using `\includeonly`, which as you can see takes a
 comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proof-reading.
+how long your typesetting takes and produce a 'selective' PDF for proofreading.
 In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from other included files.
+the cross reference information from the `.aux` files of other included files.
 
 ## Creating a table of contents
 
-The `\tableofcontents` command uses the information from
-sectioning commands to populate the table of contents.
-It has its own auxiliary file, so you may need to run
-LaTeX twice to resolve the information. The table is generated automatically
-from the section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions.
+The `\tableofcontents` command uses the information from sectioning
+commands to populate the table of contents.  It has its own auxiliary
+file, with extension `.toc`, so you may need to run LaTeX twice to
+resolve the information. The table is generated automatically from the
+section titles. There are similar commands for `\listoffigures` and
+`\listoftables`, which work from the float environment captions, and
+use files with extension `.lof` and `.lot` respectively.
 
 ## Splitting the document into parts
 
