@@ -2,10 +2,10 @@
 title: "More on: Formatting: fonts and spacing"
 ---
 
-## Suppressing the indent for one paragraphs
+## Suppressing the indent for one paragraph
 
  If you want to suppress that for a single case, you can use `\noindent`.
- This should be _very_ rarely used: most of the time, you should let LaTeX
+ This should be _very_ rarely used; most of the time, you should let LaTeX
  handle this automatically.
 
  ```latex
