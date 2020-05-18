@@ -34,9 +34,9 @@ really using LaTeX.
 As you can see above, inline math mode is marked using a pair of dollar
 symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
 Simple text is entered without any special markup, and you'll see that it's
-spaced out nicely and has letters in italic: this is normal for mathematics.
+spaced out nicely and has letters in italic; this is normal for mathematics.
 
-We can easily add superscripts and subscripts: these are marked using `^` and
+We can easily add superscripts and subscripts; these are marked using `^` and
 `_`, respectively.
 
 ```latex
@@ -47,7 +47,7 @@ Superscripts $a^{b}$ and subscripts $a_{b}$.
 ```
 
 (You might see examples where simple super- and subscripts are entered without
-braces, but that is not the official syntax and can go wrong: always use
+braces, but that is not the official syntax and can go wrong; always use
 braces.)
 
 There are a _lot_ of specialist math mode symbol commands. Some of them are quite
@@ -137,7 +137,7 @@ here:
 - `\mathbf`: boldface
 - `\mathsf`: sanserif
 - `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-stuck ('blackboard bold')
+- `\mathbb`: double-struck ('blackboard bold')
 
 Each of these takes Latin letters as an argument, so for example we might
 write a matrix as
