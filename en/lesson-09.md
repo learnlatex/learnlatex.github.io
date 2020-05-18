@@ -4,7 +4,7 @@ title: "Cross-referencing"
 
 ## The `\label` and `\ref` mechanism
 
-When you are writing a document of any length, you'll want to refer to number
+When you are writing a document of any length, you'll want to refer to numbered
 items such as figures, tables or equations. Luckily, LaTeX can automatically add
 the right numbers; we just have to set things up. To have LaTeX remember a spot
 in your document you label it, and then in other places you refer to it.
@@ -60,7 +60,7 @@ Run LaTeX once more time and you'll be all set.
 (Usually while writing you will run LaTeX a number of times anyway,
 so in practice this is not a bother.)
 
-Notice the ties (`~`) characters before the references.
+Notice the tie (`~`) characters before the references.
 You don't want a line break between `subsection` and its number, or
 between `equation` and its number.
 Putting in a tie means LaTeX won't break the line there.
