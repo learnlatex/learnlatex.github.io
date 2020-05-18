@@ -22,7 +22,8 @@ re-use information and avoid manual formatting.
 
 Reference databases are normally refered to as 'BibTeX files' and have the
 extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+within each entry there are a series of fields. Let us look at an example
+.
 
 <!-- {% raw %} -->
 ```
@@ -50,45 +51,46 @@ within each entry there are a series of fields. Let us look at an example.
 ```
 <!-- {% endraw %} -->
 
-This is an entry for an article and a book: these are by far the most common
+This is an entry for an article and a book; these are by far the most common
 types. Each database entry type starts with `@`, as shown, and all of the
 information then sits within a brace pair.
 
 The various fields we need are given in key-value format, apart from what is
 known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's jsut a label, but above we've chosen to use the name of an author plus
+as it's just a label, but above we've chosen to use the name of an author plus
 the year: this is a common approach.
 
-Exactly which fields you need to give depend on the type of entry, but most of
+Exactly which fields you need to give depends on the type of entry, but most of
 these are quite obvious. You might notice that in the `author` field, each entry
 is separated by `and`. This is _essential_: the format of the _output_ needs to
 know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces: these are there to prevent any
+some entries are in an extra set of braces; these are there to prevent any
 case-changing being applied.
 
 Editing `.bib` files by hand is rather tedious, so most people use a dedicated
 editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
 but there are several other interfaces available. Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
+example database above for our demonstrations; we have 'saved' it as
 `learnlatex.bib`.
 
 ## Transferring information from the database
 
 To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which
-creates a file with a list of the references that your document cites.
-Second, run a program that takes information from the database of references,
-picks out the ones that you use, and puts them in order.
-Finally, compile your document again so that LaTeX can use that information
-to resolve your citations.
+First, use LaTeX to compile your document, which creates a file with a
+list of the references that your document cites.  Second, run a
+program that takes information from the database of references, picks
+out the ones that you use, and puts them in order.  Finally, compile
+your document again so that LaTeX can use that information to resolve
+your citations. Usually it will require at least two compilations to
+resolve all the references.
 
 For the second step there are two systems in wide use: BibTeX and
 Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
 BibTeX is used with either no packages at all or with `natbib`.
 
 Running a second tool as well as LaTeX is handled in different ways by different
-editors. For out online examples, there are some 'behind the scenes' scipts
-that do everything in one go: that's true for LaTeX-Online and Overleaf. Your
+editors. For our online examples, there are some 'behind the scenes' scripts
+that do everything in one go; that's true for LaTeX-Online and Overleaf. Your
 editor might have a single 'do stuff' button or you might have to choose to run
 BibTeX or Biber manually between LaTeX runs.
 
@@ -104,7 +106,7 @@ any packages loaded, this is rather limited. Instead, we will use the
 `natbib` package, which allows us to create differing types of citation and
 has a lot of styles available.
 
-The basic structure of our input is.
+The basic structure of our input is as shown in this example.
 
 ```latex
 \documentclass{article}
@@ -121,21 +123,21 @@ Some more complex citations: \citep{Graham1995}, \citet{Thomas2008}.
 \end{document}
 ```
 
-You can see that we can `\cite` different entries in the database by giing their
-key. The `natbib` package offers both textual and parenthetic citation styles,
+You can see that we can `\cite` different entries in the database by giving their
+key. The `natbib` package offers both textual and parenthetical citation styles,
 `\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line: here we've used the `plainnat` style. The
+`\bibliographystyle` line; here we've used the `plainnat` style. The
 bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use: this is a comma-separated list of names.
+the database(s) to use; this is a comma-separated list of names.
 
-The set up above uses author-year style, but we can make use of numeric
+The setup above uses author-year style, but we can make use of numeric
 citations. That is done by adding the `numbers` option to the `natbib` line.
 
 ## The `biblatex` workflow
 
 The `biblatex` package works slightly differently to `natbib`, as we select
 the databases in the preamble but print it in the document body. There are
-some new commans for this.
+some new commands for this.
 
 ```latex
 \documentclass{article}
@@ -154,8 +156,8 @@ Some more complex citations: \citeauthor{Thomas2008},
 
 Notice that `\addbibresource` _requires_ the full database filename, whereas
 we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for it's citation commands, but these are
-all quite easy-to-guess.
+`biblatex` uses rather longer names for its citation commands, but these are
+all quite easy to guess.
 
 In `biblatex`, the reference style is picked when we load the package. Here,
 we've used `authoryear`, but there is a `numeric` style and many others are
