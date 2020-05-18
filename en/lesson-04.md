@@ -2,9 +2,9 @@
 title: "Logical structure"
 ---
 
-LaTeX provides ways on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to
-use methods that focus on structure, as that makes it easy to reuse or alter
+LaTeX provides ways to concentrate on the logical structure of your document, as well as the
+ability to directly set the appearance. Most of the time, it's much better to use
+methods that focus on structure, as that makes it easy to reuse or alter
 appearance when you have to.
 
 ## A first example

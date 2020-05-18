@@ -40,7 +40,7 @@ effect. (The standard hyphenation rules are US English; use the `UKenglish`
 option to tell `babel` if you are in UK.)
 
 The `babel` package does a lot more than hyphenation, depending on the language
-involved: we've given [some more details](more-06) if you need them.
+involved; we've given [some more details](more-06) if you need them.
 
 ## Changing design
 

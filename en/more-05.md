@@ -11,7 +11,7 @@ available, it is normally provided directly by the editorial office,
 who should give appropriate detail on what features it has. Many of
 these are also available on CTAN and in standard TeX distributions.
 
-## Classes for resentations
+## Classes for presentations
 
 One area that needs a lot of special treatment is creating presentations. The `slides`
 class was written for making 'classical' printed slides, and it does not

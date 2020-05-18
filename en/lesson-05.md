@@ -76,7 +76,7 @@ later](lesson-09)).
 
 The American Mathematical Society provide variants of the standard
 classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in journal publication.
+that used in mathematics journal publications.
 
 The two largest and most popular 'extended' classes are the KOMA-script bundle
 and the memoir class. KOMA-Scipt offers a set of classes which 'parallel' the

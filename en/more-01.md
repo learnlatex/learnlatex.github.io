@@ -6,7 +6,7 @@ The word “LaTeX” actually consists of two components, “La” and “TeX”
 following we will briefly describe where they come from.
 
 TeX was originally invented by Stanford professor Donald Knuth. Knuth is
-well-known for a series of books called the “Art of Computer Programming”
+well known for a series of books called the “Art of Computer Programming”
 (known as "TAOCP"). In
 1973 a new edition of the books was to be made; this was the time when the
 typesetting industry switched from traditional typesetting with lead to
