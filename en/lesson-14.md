@@ -28,7 +28,7 @@ In these engines, font selection is performed by the `fontspec` package, and for
 ```
 This selects the TeX Gyre Termes font, as in the `pdflatex` example above. Notably, this approach works for *any* OpenType font.
 Having selected a font, input can now be typed directly in plain Unicode into a source document.
-Here is an example showing some Roman and Greek letters as well as some CJK ideographs:
+Here is an example showing some Latin and Greek letters as well as some CJK ideographs:
 
 ```latex
 \documentclass{article}
