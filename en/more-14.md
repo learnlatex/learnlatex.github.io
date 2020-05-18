@@ -11,7 +11,7 @@ The LuaTeX engine provides access to OpenType fonts in a similar way
 to XeTeX, and most uses of the `fontspec` package work equally well
 with either engine.
 
-LuaTeX also extends TeX in other ways; notably by embedding the Lua
+LuaTeX also extends TeX in other ways, notably by embedding the Lua
 scripting language. This may be used for programming in a style more
 familiar to people used to ‘mainstream’ programming languages. It also
 offers the possibility to access inner workings of the TeX system and
