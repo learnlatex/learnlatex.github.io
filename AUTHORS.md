@@ -9,3 +9,5 @@ The following people have made contributions to learnlatex.org:
 - Joseph Wright
 - Uwe Ziegenhagen
 - Jonathan P. Spratte
+- Barbara Beeton
+

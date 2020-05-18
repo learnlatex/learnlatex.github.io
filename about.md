@@ -31,7 +31,7 @@ need to share them when you modify them: you can just use them.
 The source code is on
 [GitHub](https://github.com/learnlatex/learnlatex.github.io/), please see
 [CONTRIBUTING](CONTRIBUTING) and [LICENSE](LICENSE) for details. You can also
-[email us](texfaq@texfaq.org) with suggestions.
+[email us](mailto:texfaq@texfaq.org) with suggestions.
 
 Recent Changes are listed in the [Change Log](CHANGELOG).
 

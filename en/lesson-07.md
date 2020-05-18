@@ -113,7 +113,7 @@ to them from your text.
 
 You'll probably spot that we've centered the image here using `\centering`
 rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally-center content: this avoids both
+`\centering` if you want to horizontally center content; this avoids both
 the float and `center` environment adding extra vertical space.
 
 ## Exercise

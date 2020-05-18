@@ -225,10 +225,10 @@ usually avoids this problem but may leave some lines ‘too ragged’. The
 which allows some raggedness in the line lengths, but will also
 hyphenate where necessary, as shown in the third table.
 
-Note the use of `\arraybackslash` here which resets the definition or
+Note the use of `\arraybackslash` here, which resets the definition of
 `\\` so that it ends the table row.
 
-An alternative technique, as shown in the fourth table is to use a
+An alternative technique, as shown in the fourth table, is to use a
 smaller font so that the columns are not so narrow relative to the
 text size.
 
@@ -277,10 +277,10 @@ would allow the use of `B` in tabular preambles to specify a bold
 centered column.
 
 
-## Line spacing in tables.
+## Line spacing in tables
 
 In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package which is useful for adding extra space between specific lines.
+package, which is useful for adding extra space between specific lines.
 
 There are two general parameters that control line spacing,
 `\arraystretch` and `\extrarowheight` (the latter from the `array`

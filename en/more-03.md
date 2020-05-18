@@ -9,19 +9,19 @@ this, try opening your first document in a simple text editor, for example
 on Windows using Notepad. You should see the same text as in a dedicated LaTeX
 editor, but without any highlight of keywords.
 
-You can also convert to PDF without your editor: this means using the Command
+You can also convert to PDF without your editor; this means using the Command
 Prompt/Terminal, so don't worry if you are not familiar with this. If you
 *are*, you can navigate to the directory containing your `.tex` source file and
 run
-```bash
-pdflatex first
-```
+
+`pdflatex first`
+
 or
-```bash
-pdflatex first.tex
-```
+
+`pdflatex first.tex`
+
 to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end `.tex` unless you specify otherwise.
+assume files end with`.tex` unless you specify otherwise.
 
 ## Special characters
 
@@ -34,5 +34,6 @@ use a backslash in front of it, so for example `\{` is used to print a literal
 | `}`    | `\}`              |
 | `$`    | `\$`              |
 | `%`    | `\%`              |
+| `&`    | `\&`              |
 | `~`    | `\textasciitilde` |
 | ``\``  | `\textbackslash`  |

@@ -4,15 +4,16 @@ title: "More on: Using document classes to influence design"
 
 ## Journal-specific classes
 
-Many academic journals provide LaTeX classes for submissions. These typically
-set up the layout to be similar to the final journal, although that does  depend
-on font usage, etc. If there is a class available, it is normally provided
-directly by the editorial office, who should give appropriate detail on what
-features it has.
+Many academic journals provide LaTeX classes for submissions. These
+typically set up the layout to be similar to the final journal,
+although that does depend on font usage, etc. If there is a class
+available, it is normally provided directly by the editorial office,
+who should give appropriate detail on what features it has. Many of
+these are also available on CTAN and in standard TeX distributions.
 
-## Presentations classes
+## Classes for resentations
 
-One area that needs a lot of specialism is creating presentations. The `slides`
+One area that needs a lot of special treatment is creating presentations. The `slides`
 class was written for making 'classical' printed slides, and it does not
 have any special support for on-screen presentations. Two classes
 have been developed to do just that, and that are widely used:

@@ -17,7 +17,7 @@ The document class sets up the general layout of the document, for example
 - whether chapters are available
 - if the title should be on a separate page
 
-Document classes can also add new commands more generally: that's particularly
+Document classes can also add new commands more generally; that's particularly
 true for specialist cases like creating presentation slides.
 
 The document class line can also set _global options_: things that apply to
@@ -58,7 +58,7 @@ The text goes Here
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address: we'll look at line
+See how ``\\`` is used to separate lines of the address; we'll look at line
 breaking [a bit later](lesson-09). Also see how the `letter` class creates  a
 new environment for each letter and has specialised commands.
 
@@ -74,6 +74,10 @@ number of more powerful classes have been written, that let you alter the design
 without having to do things manually (which we'll mention [a bit
 later](lesson-09)).
 
+The American Mathematical Society provide variants of the standard
+classes (`amsart`, `amsbook`) with a more traditional design closer to
+that used in journal publication.
+
 The two largest and most popular 'extended' classes are the KOMA-script bundle
 and the memoir class. KOMA-Scipt offers a set of classes which 'parallel' the
 standard ones: `scrartcl`, `scrreprt` and `scrbook`, while there is a single
@@ -81,13 +85,13 @@ standard ones: `scrartcl`, `scrreprt` and `scrbook`, while there is a single
 
 These extended classes have lots of customisation hooks, which we'll explore a
 bit in an exercise. You might wonder how we can know about the hooks they
-provide: we will cover that [in the last lesson](lesson-15), but you can always
+provide; we will cover that [in the last lesson](lesson-15), but you can always
 jump ahead!
 
 ## Exercises
 
 Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of
+bundle and `memoir` affects the appearance of the document.
 
 ```latex
 \documentclass{article} % Change the class here

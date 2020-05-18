@@ -14,7 +14,7 @@ commands in LaTeX, `\emph`, with simply making something italic. (In print,
 that's usually how things are emphasised.)
 
 ```latex
-\document{article}
+\documentclass{article}
 \begin{document}
 Some text with \emph{emphasis and \emph{nested} content}.
 
@@ -25,7 +25,7 @@ Some text in \textit{italic and \textit{nested} content}.
 You can probably guess that `\textit` is a command to make text italic, but it
 _always_ makes things italic, so it doesn't work for nested material. See how
 `\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic, for example in presentations color is usually a better
+isn't the same as italic; for example, in presentations color is usually a better
 option. With logical markup, we don't have to worry about that detail in the
 body of the document.
 
@@ -37,7 +37,7 @@ add `\textbf` to commands we know: it makes text bold.
 You probably have used a word processor, where  to start a section most people
 enter the title text then simply make it bigger and bold, and follow it with a
 new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand: we can use the `\section` command. This handles the font
+formatting by hand; we can use the `\section` command. This handles the font
 changes, vertical space, etc., and keeps the output uniform throughout the
 document.
 
@@ -65,7 +65,7 @@ Text of the second section.
 \end{document}
 ```
 
-Using the standard `article` set up, LaTeX numbers the sections and subsections
+Using the standard `article` setup, LaTeX numbers the sections and subsections
 and includes the titles in boldface. We'll think a bit about changing design [in
 the next lesson](lesson-05).
 
@@ -88,10 +88,10 @@ commands for that, but not all documents use them, so we've
 ## Lists
 
 The other very common place you'll want logical markup is writing lists.
-There are two common types of list built-in to LaTeX.
+There are two common types of list built in to LaTeX.
 
 ```latex
-\document{article}
+\documentclass{article}
 \begin{document}
 
 Ordered

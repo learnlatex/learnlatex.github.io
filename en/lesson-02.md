@@ -31,7 +31,7 @@ choose TeX Live.
 
 ## Editors
 
-LaTeX files are just plain text, so they can be edited with any text editor.
+LaTeX files are simply plain text, so they can be edited with any text editor.
 However, it's most convenient to have an editor that is designed to work with
 LaTeX, as they provide features like one-click compilation of your files,
 built-in PDF viewers, and syntax highlighting. A really useful feature in all
@@ -56,7 +56,7 @@ work by letting you edit your files in the webpage, then they run LaTeX
 behind the scenes, and display the PDF that is produced.
 
 Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focussed on letting you see the LaTeX code and
+whereas others are more focused on letting you see the LaTeX code and
 so are closer to having a local installation.
 
 There are systems that let you run LaTeX without needing to be logged in, and we
@@ -73,7 +73,7 @@ major websites for LaTeX online. There are of course others:
 Get yourself set up with a local LaTeX installation _or_ an account with
 an online LaTeX service. If you are using a local installation, you'll need
 to pick an editor too: we recommend starting with either TeXworks or TeX Shop
-(see above), then looking at other editors later once you know what how _you_
+(see above), then looking at other editors later once you know how _you_
 work best with LaTeX.
 
 You'll be able to [run all of our other exercises in your browser](help), but we want
