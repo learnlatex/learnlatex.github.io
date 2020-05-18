@@ -22,5 +22,5 @@ More text here.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text: try removing
+We have chosen to make the links the same color as the normal text; try removing
 `hidelinks` to see why! 
