@@ -2,6 +2,194 @@
 title: "More on: Tables"
 ---
 
+
+## The other preamble contents
+
+As the lesson didn't cover all the available preamble-tokens I'll go on and
+explain a few others here. You might want to revisit the tables at the start of
+the lesson to get an overview of the things available. I hope the short
+descriptions provided there suffice to understand what the different column
+types `m`, `b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If
+not you might want to experiment a bit with them. What's still missing are the
+handy other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+
+### Styling a column
+
+Since `>` and `<` can be used to put things before and after the cell contents
+of the respective column, you can use these to add macros which affect the looks
+of a column. For instance, if you want to italicise the first column and put a
+colon after it, you can do the following:
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\begin{document}
+\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
+  \toprule
+  Animal & Food  & Size   \\
+  \midrule
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+`\itshape` makes all the following text italic, but its effect is 'contained'
+by the table cell. We will look at manual font formatting [in a few lessons
+time](lesson-11).
+
+You might find this handy, but now you want the first cell not to be affected
+because it's the table head. Here `\multicolumn` comes in handy. Remember that
+it can be used to change a single cells alignment as well? In fact, if you use
+`\multicolumn` you ignore whatever has been defined for these columns in the
+preamble. So you can use
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\begin{document}
+\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
+  \toprule
+  \multicolumn{1}{l}{Animal} & Food  & Size   \\
+  \midrule
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+### Manipulating the space between columns
+
+Usually LaTeX pads each column by some space on both ends to give a balanced
+look and separate them. This space is defined with the length `\tabcolsep`. Due
+to the fact that each column is padded on both sides you get one `\tabcolsep` on
+either end of the table, and `2\tabcolsep` between two columns &ndash; one from
+each column. You can adjust this space to any length using `\setlength`:
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\setlength\tabcolsep{1cm}
+
+\begin{document}
+\begin{tabular}{lll}
+  Animal & Food  & Size   \\
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+You can change this space to something arbitrary using `@`. This will remove the
+padding between two columns or on either end, and instead put anything inbetween
+the columns you specify as an argument:
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\begin{document}
+\begin{tabular}{l@{ : }l@{\hspace{2cm}}l}
+  Animal & Food  & Size   \\
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
+horizontal space.)
+
+The `!` preamble token does something pretty similar. The difference is, that it
+_adds_ its argument to the space in the centre between two columns.
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\begin{document}
+\begin{tabular}{l!{:}ll}
+  Animal & Food  & Size   \\
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+
+### Vertical rules
+
+Though you _don't_ want to use vertical rules, sometimes you just have to. LaTeX
+still got you covered.
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\begin{document}
+\begin{tabular}{l|ll}
+  Animal & Food  & Size   \\
+  dog    & meat  & medium \\
+  horse  & hay   & large  \\
+  frog   & flies & small  \\
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+You might notice that the behaviour of `|` is pretty similar to `!{decl}`, it
+adds the vertical rule between two columns leaving the padding as it is. There
+is a huge downside of this though, vertical rules don't work with the pretty
+horizontal rules provided by `booktabs`. You can use the horizontal rules
+provided by LaTeX, those are `\hline` (equaling `\toprule`, `\midrule`, and
+`\bottomrule`) and `\cline` (which behaves like `\cmidrule`).
+
+## Customising `booktabs` rules
+
+All the `booktabs` rules and also `\addlinespace` support an optional argument
+in brackets with which you can specify the rule's thickness. In addition the
+trimming provided by `\cmidrule` can be customized by specifying a thickness in
+braces after `r` or `l`.
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+\usepackage{booktabs}
+
+\begin{document}
+\begin{tabular}{@{} lll@{}} \toprule[2pt]
+  Animal & Food  & Size   \\ \midrule[1pt]
+  dog    & meat  & medium \\
+  \cmidrule[0.5pt](r{1pt}l{1cm}){1-2}
+  horse  & hay   & large  \\
+  frog   & flies & small  \\ \bottomrule[2pt]
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
 ## Numeric alignment of columns
 
 The alignment of numbers in tables can be handled by the column type `S` 
@@ -28,10 +216,11 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
+Note that any non-numeric cell must be "protected" by enclosing it with braces.
+
 The package provides many possibilities for formatting the numbers in
 different ways; see the [package
 documentation](https://texdoc.net/pkg/siunitx).
-
 
 ## Specifying the total table width
 
