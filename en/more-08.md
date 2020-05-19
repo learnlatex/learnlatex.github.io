@@ -466,6 +466,56 @@ would allow the use of `B` in tabular preambles to specify a bold
 centered column.
 
 
+## Vertical tricks
+
+Oftentimes one might think it's a good idea to merge cells vertically to get
+some desired output, but instead one should have split a cell into several
+vertically. With this small trick one can get pretty neat things done. Splitting
+cells into many vertically can be done by nesting a `tabular` environment in a
+single cell:
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\begin{document}
+\begin{tabular}{lcc}
+  \toprule
+  Test & \begin{tabular}{@{}c@{}}A\\a\end{tabular} & \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
+  \midrule
+  Content & is & here \\
+  Content & is & here \\
+  Content & is & here \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+Note that you can control vertical alignment by an optional argument to the
+`tabular`, it supports the usage of `t`, `c`, or `b` for top, centred, and
+bottom aligned respectively and is used like this:
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+
+\begin{document}
+\begin{tabular}{lcc}
+  \toprule
+  Test & \begin{tabular}[b]{@{}c@{}}A\\a\end{tabular} & \begin{tabular}[t]{@{}c@{}}B\\b\end{tabular} \\
+  \midrule
+  Content & is & here \\
+  Content & is & here \\
+  Content & is & here \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
 ## Line spacing in tables
 
 In the main lesson we demonstrated `\addlinespace` from the `booktabs`
