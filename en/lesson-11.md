@@ -59,7 +59,7 @@ Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \end{document}
 ```
 
-For running text, we use commands that alter the font set up: the commands
+For running text, we use commands that alter the font setup; the commands
 here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
 we need to place them in a _group_ if we want to prevent them applying to
 the whole document. LaTeX environments are groups, as are table cells,
