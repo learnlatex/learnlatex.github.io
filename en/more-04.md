@@ -9,10 +9,10 @@ to set up 'meta-data' and one to use it.
 
 ```latex
 \documentclass{article}
+\begin{document}
 \author{A.~N.~Other \and D.~Nobacon}
 \title{Some things I did}
 \date{1st April 2020}
-\begin{document}
 \maketitle
 
 Some normal text.
@@ -21,6 +21,9 @@ Some normal text.
 
 As you can see, the commands `\author`, `\title` and `\date` save information,
 and `\maketitle` uses it. You can also separate multiple authors with `\and`.
+The commands `\author`, `\title` and `\date` need to come before `\maketitle`.
+Here, we've given them in the document body: they can also be used in the
+preamble, but if you use `babel` shortcuts they won't be active there.
 
 The design provided by `\maketitle` depends on the document class (see [lesson
 5](lesson-05)). There is a `titlepage` environment for when you want to do
