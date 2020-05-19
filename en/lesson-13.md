@@ -28,7 +28,7 @@ LaTeX allows us to split up sources in a controlled way. There are two important
 commands here, `\input` and `\include`. We can use `\input` to make a file work
 'as though it was typed in here', so it can be used for (essentially) any
 material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it as a big advantage: it allows us to
+and makes some internal adjustments. But it has a big advantage: it allows us to
 be selective in which chapters to include, so you can work on part of your
 document rather than the whole thing.
 
