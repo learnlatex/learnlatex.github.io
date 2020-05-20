@@ -50,7 +50,7 @@ The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
 largley written by members. The most notable are [Lamport's offical
 guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 and the comprehensive
-[companion](https://www.informit.com/store/latex-companion-9780201362992).
+[LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
 
 Other books aimed at learning LaTeX include
 
