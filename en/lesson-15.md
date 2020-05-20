@@ -26,16 +26,16 @@ using
 
 ## texdoc.net
 
-This is a [homepage](https://texdoc.net/) which works similarly to the `texdoc` utility. You can search
+This is a [website](https://texdoc.net/) which works similarly to the `texdoc` utility. You can search
 for documentation they have available just like you would do with `texdoc -l`
 and then choose from among the results.
 
 
 ## CTAN
 
-CTAN is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for the package you want to access the
-documentation of. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
+[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
+there. You can search the site for a package to access its
+documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
 and you can access the README and documentation of the packages stored on CTAN
 there.
 
