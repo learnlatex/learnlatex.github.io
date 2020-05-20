@@ -45,7 +45,7 @@ column but might be useful as well:
 | `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
 | `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
 | `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
-| `|`       | add a vertical rule |
+| <span>`|`</span>  | add a vertical rule |
 | `@{decl}` | replace the space between two columns with `decl` |
 | `!{decl}` | add `decl` in the center of the existing space |
 
