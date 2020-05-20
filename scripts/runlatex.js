@@ -30,7 +30,7 @@ function llexamples() {
 	    var f=document.createElement("span");
 	    // action=\"https://httpbin.org/post\"
 	    // action=\"https://www.overleaf.com/docs\"
-	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\"  action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"><input id=\"engine-pre" + i + "\" name=\"engine\" value=\"pdflatex\" /></form>";
+	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\"  action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"></form>";
 	    p[i].parentNode.insertBefore(f, p[i].nextSibling);
 	}
     }
@@ -95,12 +95,14 @@ function latexonlinecc(nd) {
 // https://www.overleaf.com/devs
 function openinoverleaf(nd) {
     var fm = document.getElementById('form-' + nd);
+    fm.innerHTML="";
     var p = document.getElementById(nd);
     var t = p.innerText;
     var inp=document.createElement("input");
     inp.setAttribute("type","text");
     inp.setAttribute("name","encoded_snip[]");
-    inp.value =encodeURIComponent(t);
+    // the lax engine comment syntax confuses overleaf
+    inp.value =encodeURIComponent(t.replace(engineregex,''));
     fm.appendChild(inp);
     var inp2=document.createElement("input");
     inp2.setAttribute("type","text");
@@ -125,12 +127,16 @@ function openinoverleaf(nd) {
 	  }
       }
     }
+	      var inp3=document.createElement("input");
+	      inp3.setAttribute("name","engine");
+	      inp3.setAttribute("value","pdflatex");
     var eng=t.match(engineregex);
     if(eng != null) {
-	document.getElementById('engine-' + nd ).value = eng[1].toLowerCase();
+	inp3.setAttribute("value",eng[1].toLowerCase());
     } else if(t.indexOf("fontspec") !== -1) {
-	document.getElementById('engine-' + nd ).value ="xelatex";
+	inp3.setAttribute("value","xelatex");
     }
+    	      fm.appendChild(inp3);
      fm.submit();
 }
 
