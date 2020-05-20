@@ -19,7 +19,7 @@ following in your preamble and we're good to go:
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
 &ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names, so
+environment, in which you specify the columns by using single-letter names,
 called preamble-tokens. The available column types are:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
@@ -27,15 +27,15 @@ called preamble-tokens. The available column types are:
 | type       | description |
 | ---        |:-- |
 | `l`        | left aligned column |
-| `c`        | centred column |
+| `c`        | centered column |
 | `r`        | right aligned column |
 | `p{width}` | a column with fixed width `width`, the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centred compared to the rest of the row |
+| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
 | `b{width}` | like `p`, but bottom aligned |
 | `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
 | `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
 
-In addition a few other preamble-tokens are available which don't define a
+In addition, a few other preamble-tokens are available which don't define a
 column but might be useful as well:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
@@ -47,16 +47,14 @@ column but might be useful as well:
 | `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
 | `|`       | add a vertical rule |
 | `@{decl}` | replace the space between two columns with `decl` |
-| `!{decl}` | add `decl` in the centre of the existing space |
+| `!{decl}` | add `decl` in the center of the existing space |
 
 These two tables list all the available column types from LaTeX and the `array`
-package. Note however that other packages can add other types as well. This
-lesson will not cover all of these but only the essentials. So if you want to
-have an idea about what the other types are useful for after reading this
-lesson, make sure to visit the more-info page.
+package. A few more useful column types, from different packages, are presented
+in the [further details page](en/more-08) for this lesson.
 
 The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centred columns, you'd use
+Each column has to be declared, so if you want three centered columns, you'd use
 `ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
 
 In a table body columns are separated using an ampersand `&` and a new row is
@@ -82,7 +80,7 @@ source.
 ```
 <!-- {% endraw %} -->
 
-If a table column should contain a lot of text you will have issues to get that
+If a table column contains a lot of text you will have issues to get that
 right with only `l`, `c`, and `r`. See what happens in the following example:
 
 <!-- {% raw %} -->
@@ -106,8 +104,8 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 <!-- {% endraw %} -->
 
 The issue is that the `l` type column typesets its contents in a single row at
-its natural width, meaning taking as much space as it takes, even if there is a
-page border in the way. To overcome this you can use the `p` column. This one
+its natural width, taking as much space as it takes, even if there is a page
+border in the way. To overcome this you can use the `p` column. This one
 typesets its contents as paragraphs with the width you specify as an argument
 and vertically aligns them at the top &ndash; which you'll want most of the
 time. Compare aboves outcome to the following:
@@ -132,11 +130,11 @@ time. Compare aboves outcome to the following:
 ```
 <!-- {% endraw %} -->
 
-If you want to declare many columns of the same type you'll think this is
-cumbersome to do for each. Luckily you can have an easier life in that case by
-using `*{num}{string}` in the preamble, which repeats the `string` for `num`
-times, so `*{6}{c}` results in `cccccc`. To show you that it works here is the
-first table of this lesson with the newly learned syntax:
+If your table has many columns of the same type it'll be cumbersome to put that
+many column definitions in the preamble.  Luckily you can have an easier life in
+that case by using `*{num}{string}`, which repeats the `string` for `num` times.
+So `*{6}{c}` results in `cccccc`. To show you that it works here is the first
+table of this lesson with the newly learned syntax:
 
 <!-- {% raw %} -->
 ```latex
@@ -156,12 +154,12 @@ first table of this lesson with the newly learned syntax:
 
 ## Adding rules
 
-A word of advice prior to introducing lines; lines should be used really
+A word of advice prior to introducing rules; lines should be used really
 sparsely in tables, and normally vertical ones look unprofessional. In fact,
 for professional tables you shouldn't use any of the standard lines; instead you
 should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first &ndash; for the sake of completeness I'll show you the
-standard lines later on in the more-info page.
+it is covered here first &ndash; for the sake of completeness the standard
+lines are shown in the more-info page.
 
 `booktabs` provides four different types of lines. Each of those macros has to
 be used as the first thing in a row or following another rule, else you'll get a
@@ -188,12 +186,11 @@ clear:
 ```
 <!-- {% endraw %} -->
 
-I promised four macros for the rules and here is the fourth: `\cmidrule` can be
-used to draw a rule that doesn't span the entire width of the table but only a
-specified column range. A column range is entered by a number followed by a
-hyphen and then another number. Even if you only want to draw the rule only for
-a single column you need to specify that as a range (but with both numbers
-matching).
+The fourth rule-macro provided by `booktabs` is `\cmidrule`. It can be used to
+draw a rule that doesn't span the entire width of the table but only a specified
+column range. A column range is entered by a number followed by a hyphen and
+then another number. Even if you only want to draw the rule only for a single
+column you need to specify that as a range (but with both numbers matching).
 
 <!-- {% raw %} -->
 ```latex
@@ -310,7 +307,7 @@ single column type_.
 
 You can also use `\multicolumn` on a single cell to prevent whatever you defined
 in the table preamble for the current column from applying. The following uses
-this to centre the table's head row:
+this to center the table's head row:
 
 <!-- {% raw %} -->
 ```latex

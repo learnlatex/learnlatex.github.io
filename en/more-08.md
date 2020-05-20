@@ -5,19 +5,19 @@ title: "More on: Tables"
 
 ## The other preamble contents
 
-As the lesson didn't cover all the available preamble-tokens I'll go on and
-explain a few others here. You might want to revisit the tables at the start of
-the lesson to get an overview of the things available. I hope the short
-descriptions provided there suffice to understand what the different column
-types `m`, `b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If
-not you might want to experiment a bit with them. What's still missing are the
-handy other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+As the lesson didn't cover all the available preamble-tokens, a few others are
+explained with examples here.  You might want to revisit the tables at the start
+of the lesson to get an overview of the things available. The short descriptions
+provided there should suffice to understand what the different column types `m`,
+`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
+might want to experiment a bit with them. What's still missing are the handy
+other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
 
 ### Styling a column
 
 Since `>` and `<` can be used to put things before and after the cell contents
 of the respective column, you can use these to add macros which affect the looks
-of a column. For instance, if you want to italicise the first column and put a
+of a column. For instance, if you want to italicize the first column and put a
 colon after it, you can do the following:
 
 <!-- {% raw %} -->
@@ -45,7 +45,7 @@ time](lesson-11).
 
 You might find this handy, but now you want the first cell not to be affected
 because it's the table head. Here `\multicolumn` comes in handy. Remember that
-it can be used to change a single cells alignment as well? In fact, if you use
+it can be used to change a single cell's alignment as well? In fact, if you use
 `\multicolumn` you ignore whatever has been defined for these columns in the
 preamble. So you can use
 
@@ -95,8 +95,8 @@ each column. You can adjust this space to any length using `\setlength`:
 <!-- {% endraw %} -->
 
 You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything inbetween
-the columns you specify as an argument:
+padding between two columns or on either end, and instead put anything in
+between the columns you specify as an argument:
 
 <!-- {% raw %} -->
 ```latex
@@ -118,7 +118,7 @@ the columns you specify as an argument:
 horizontal space.)
 
 The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument to the space in the centre between two columns.
+_adds_ its argument to the space in the center between two columns.
 
 <!-- {% raw %} -->
 ```latex
@@ -140,7 +140,7 @@ _adds_ its argument to the space in the centre between two columns.
 ### Vertical rules
 
 Though you _don't_ want to use vertical rules, sometimes you just have to. LaTeX
-still got you covered.
+has still got you covered.
 
 <!-- {% raw %} -->
 ```latex
@@ -158,14 +158,14 @@ still got you covered.
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behaviour of `|` is pretty similar to `!{decl}`, it
+You might notice that the behavior of `|` is pretty similar to `!{decl}`, it
 adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside of this though, vertical rules don't work with the pretty
+is a huge downside to this though, vertical rules don't work with the pretty
 horizontal rules provided by `booktabs`. You can use the horizontal rules
 provided by LaTeX, those are `\hline` (equaling `\toprule`, `\midrule`, and
 `\bottomrule`) and `\cline` (which behaves like `\cmidrule`).
 
-## Customising `booktabs` rules
+## Customizing `booktabs` rules
 
 All the `booktabs` rules and also `\addlinespace` support an optional argument
 in brackets with which you can specify the rule's thickness. In addition the
@@ -375,12 +375,13 @@ in the table can affect the column widths in earlier pages.
 
 ## Table notes
 
-It is quite common to need footnote-like marks in a table refering to
+It is quite common to need footnote-like marks in a table referring to
 notes under the table. The `threeparttable` package simplifies the
 markup for such tables, arranging that the notes are set in a
 block the same width as the table. Refer to the
 [package documentation](https://texdoc.net/pkg/threeparttable)
 for full details, but we show a simple example here.
+
 ```latex
 \documentclass{article}
 \usepackage{array,threeparttable}
@@ -468,11 +469,9 @@ centered column.
 
 ## Vertical tricks
 
-Oftentimes one might think it's a good idea to merge cells vertically to get
-some desired output, but instead one should have split a cell into several
-vertically. With this small trick one can get pretty neat things done. Splitting
-cells into many vertically can be done by nesting a `tabular` environment in a
-single cell:
+Often, rather than making a cell span multiple rows it is better to instead have
+a single row in which some cells are split vertically by the use of nested
+`tabular` environments.
 
 <!-- {% raw %} -->
 ```latex
@@ -494,7 +493,7 @@ single cell:
 <!-- {% endraw %} -->
 
 Note that you can control vertical alignment by an optional argument to the
-`tabular`, it supports the usage of `t`, `c`, or `b` for top, centred, and
+`tabular`, it supports the usage of `t`, `c`, or `b` for top, centered, and
 bottom aligned respectively and is used like this:
 
 <!-- {% raw %} -->
