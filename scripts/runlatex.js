@@ -28,7 +28,9 @@ function llexamples() {
 	    o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
 	    p[i].parentNode.insertBefore(o, p[i].nextSibling);
 	    var f=document.createElement("span");
-	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"><input id=\"encoded_snip-pre" + i + "\" name=\"encoded_snip\" value=\"\" /><input id=\"engine-pre" + i + "\" name=\"engine\" value=\"pdflatex\" /></form>";
+	    // action=\"https://httpbin.org/post\"
+	    // action=\"https://www.overleaf.com/docs\"
+	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\"  action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"><input id=\"engine-pre" + i + "\" name=\"engine\" value=\"pdflatex\" /></form>";
 	    p[i].parentNode.insertBefore(f, p[i].nextSibling);
 	}
     }
@@ -92,29 +94,44 @@ function latexonlinecc(nd) {
 
 // https://www.overleaf.com/devs
 function openinoverleaf(nd) {
-    var fconts="";
+    var fm = document.getElementById('form-' + nd);
+    var p = document.getElementById(nd);
+    var t = p.innerText;
+    var inp=document.createElement("input");
+    inp.setAttribute("type","text");
+    inp.setAttribute("name","encoded_snip[]");
+    inp.value =encodeURIComponent(t);
+    fm.appendChild(inp);
+    var inp2=document.createElement("input");
+    inp2.setAttribute("type","text");
+    inp2.setAttribute("name","snip_name[]");
+    inp2.value ="document.tex";
+    fm.appendChild(inp2);
     if(typeof(preincludes) == "object") {
       if(typeof(preincludes[nd]) == "object") {
 	  var incl=preincludes[nd];
 	  for(prop in incl) {
-	      fconts=fconts+"\n\\begin{filecontents}{" +
-		  incl[prop] +
-		  "}\n" +
-		  document.getElementById(prop).innerText +
-		  "\n\\end{filecontents}\n";
+	      var inp=document.createElement("input");
+	      inp.setAttribute("type","text");
+	      inp.setAttribute("name","encoded_snip[]");
+	      inp.value =encodeURIComponent(document.getElementById(prop).innerText);
+	      fm.appendChild(inp);
+	      var inp2=document.createElement("input");
+	      inp2.setAttribute("type","text");
+	      inp2.setAttribute("name","snip_name[]");
+	      inp2.value =encodeURIComponent(incl[prop]);
+	      fm.appendChild(inp2);
+	      
 	  }
       }
-  }
-    var p = document.getElementById(nd);
-    var t = p.innerText;
-    document.getElementById('encoded_snip-' + nd ).value =encodeURIComponent(fconts + t);
+    }
     var eng=t.match(engineregex);
     if(eng != null) {
 	document.getElementById('engine-' + nd ).value = eng[1].toLowerCase();
     } else if(t.indexOf("fontspec") !== -1) {
 	document.getElementById('engine-' + nd ).value ="xelatex";
     }
-     document.getElementById('form-' + nd).submit();
+     fm.submit();
 }
 
 
