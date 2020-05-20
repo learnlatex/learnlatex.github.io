@@ -10,31 +10,51 @@ you load the `array` package, which adds more functionality to LaTeX tables, and
 which is not built into the LaTeX kernel only for historic reasons. So put the
 following in your preamble and we're good to go:
 
+<!-- {% raw %} -->
 ```latex
 \usepackage{array}
 ```
+<!-- {% endraw %} -->
 
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
 &ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single letter names. The
-available column types are:
+environment, in which you specify the columns by using single-letter names,
+called preamble-tokens. The available column types are:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
 | type       | description |
 | ---        |:-- |
 | `l`        | left aligned column |
-| `c`        | centred column |
+| `c`        | centered column |
 | `r`        | right aligned column |
 | `p{width}` | a column with fixed width `width`, the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centred compared to the rest of the row |
+| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
 | `b{width}` | like `p`, but bottom aligned |
 | `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
 | `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
 
+In addition, a few other preamble-tokens are available which don't define a
+column but might be useful as well:
+
+<!-- don't line wrap this table, markdown seems to not support this -->
+
+| type | description |
+| ---  | :-- |
+| `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
+| `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
+| `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
+| <span>`|`</span>  | add a vertical rule |
+| `@{decl}` | replace the space between two columns with `decl` |
+| `!{decl}` | add `decl` in the center of the existing space |
+
+These two tables list all the available column types from LaTeX and the `array`
+package. A few more useful column types, from different packages, are presented
+in the [further details page](en/more-08) for this lesson.
+
 The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centred columns, you'd use
+Each column has to be declared, so if you want three centered columns, you'd use
 `ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
 
 In a table body columns are separated using an ampersand `&` and a new row is
@@ -44,6 +64,7 @@ We got everything we need for our first little table. In the following code the
 `&` and `\\` are aligned: this isn't necessary in LaTeX, but helps reading the
 source.
 
+<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{array}
@@ -57,90 +78,10 @@ source.
 \end{tabular}
 \end{document}
 ```
+<!-- {% endraw %} -->
 
-
-## Adding lines
-
-A word of advice prior to introducing lines; lines should be used really
-sparsely in tables, and normally vertical ones often look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should skip this section and read about
-[`booktabs`](#tables-in-printing-quality-with-the-booktabs-package).
-
-Nevertheless, LaTeX has got you covered if you need lines. Vertical lines are part of
-the column specification and hence should go into the table preamble. To add a line
-between two columns just add `|` between their specification. Please note that
-vertical lines are only inserted if the cell to their left exists (except for a
-vertical line left of the first column). Note how in the following example the
-rightmost line will not appear in the last row.
-
-```latex
-\documentclass{article}
-\usepackage{array}
-
-\begin{document}
-\begin{tabular}{|l|ll|}
-  Animal  & Food  & Size   \\
-  dog     & meat  & medium \\
-  horse   & hay   & large  \\
-  frog    & flies & small  \\
-  microbe & ???
-\end{tabular}
-\end{document}
-```
-
-Horizontal lines belong to a `tabular`'s body. In LaTeX there are two different
-macros to add them, the first is `\hline` adding a line across the full width of
-a `tabular`, the second is `\cline` which can be used to draw lines covering
-only a specific range of columns.
-
-`\cline` takes a mandatory argument that specifies the columns affected. It has
-to be a range with a hyphen (`-`) as a separator between the first and the last
-column number. You can specify multiple `\cline`s in the same row. Both an
-`\hline` and a `\cline` have to be the first content of a new row (so directly
-following `\\` or another `\hline` or `\cline`).
-
-
-```latex
-\documentclass{article}
-\usepackage{array}
-
-\begin{document}
-\begin{tabular}{lll}
-  \hline
-  \hline
-  Animal & Food  & Size   \\
-  \hline
-  dog    & meat  & medium \\
-  \cline{1-2}
-  horse  & hay   & large  \\
-  \cline{1-1}\cline{3-3}
-  frog   & flies & small  \\
-  \hline
-  \hline
-\end{tabular}
-\end{document}
-```
-
-
-## Shortcuts and other preamble content
-
-The list of possible types in the table preamble above only showed the column
-alignments available, but LaTeX has more things to offer in the preamble. What
-is still missing is a way to change the horizontal space between two columns to
-something arbitrary. This can be done with
-
-type        | description
----         | :--
-`@{decl}` | replace the space between two columns with `decl`
-`!{decl}` | add `decl` in the centre of the existing space
-
-In case you're wondering now, by default each column has a horizontal space of
-the length `\tabcolsep` padded on both sides, resulting in a total of
-`2\tabcolsep` between columns &ndash; one from each column &ndash; and a single
-`\tabcolsep` on both outer ends. If we want to put a colon between the first
-two columns and change the space between the latter two to `1cm` we could do so
-by using
+If a table column contains a lot of text you will have issues to get that
+right with only `l`, `c`, and `r`. See what happens in the following example:
 
 <!-- {% raw %} -->
 ```latex
@@ -148,33 +89,26 @@ by using
 \usepackage{array}
 
 \begin{document}
-\begin{tabular}{l !{:} l @{\hspace{1cm}} l}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+\begin{tabular}{cl}
+  Animal & Description \\
+  dog    & The dog is a member of the genus Canis, which forms part of the
+           wolf-like canids, and is the most widely abundant terrestrial
+           carnivore. \\
+  cat    & The cat is a domestic species of small carnivorous mammal. It is the
+           only domesticated species in the family Felidae and is often referred
+           to as the domestic cat to distinguish it from the wild members of the
+           family. \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
-
-In addition to all the aforementioned preamble content, we can use a few other
-things as well
-
-<!-- don't line wrap this table, markdown seems to not support this -->
-
-type | description
----  | :--
-`*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns.
-`>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column)
-`<{decl}` | this will put `decl` after the contents of each cell in the previous column
-
-The following example uses an italic font for the first column. Remember our
-example with putting a colon in between the first two columns? How about we also
-append that colon to the first column, so that things don't look as clunky.
+The issue is that the `l` type column typesets its contents in a single row at
+its natural width, taking as much space as it takes, even if there is a page
+border in the way. To overcome this you can use the `p` column. This one
+typesets its contents as paragraphs with the width you specify as an argument
+and vertically aligns them at the top &ndash; which you'll want most of the
+time. Compare aboves outcome to the following:
 
 <!-- {% raw %} -->
 ```latex
@@ -182,26 +116,25 @@ append that colon to the first column, so that things don't look as clunky.
 \usepackage{array}
 
 \begin{document}
-\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+\begin{tabular}{cp{9cm}}
+  Animal & Description \\
+  dog    & The dog is a member of the genus Canis, which forms part of the
+           wolf-like canids, and is the most widely abundant terrestrial
+           carnivore. \\
+  cat    & The cat is a domestic species of small carnivorous mammal. It is the
+           only domesticated species in the family Felidae and is often referred
+           to as the domestic cat to distinguish it from the wild members of the
+           family. \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
-
-## Merging cells
-
-In LaTeX you can merge cells horizontally pretty easily. This is done by using
-`\multicolumn{num}{align}{content}`. The first argument tells LaTeX how
-many columns should be merged, the second argument is the cell type, which can
-be anything legal in the preamble but _only a single column type_.
+If your table has many columns of the same type it'll be cumbersome to put that
+many column definitions in the preamble.  Luckily you can have an easier life in
+that case by using `*{num}{string}`, which repeats the `string` for `num` times.
+So `*{6}{c}` results in `cccccc`. To show you that it works here is the first
+table of this lesson with the newly learned syntax:
 
 <!-- {% raw %} -->
 ```latex
@@ -210,37 +143,6 @@ be anything legal in the preamble but _only a single column type_.
 
 \begin{document}
 \begin{tabular}{*{3}{l}}
-  Animal  & Food  & Size   \\
-  dog     & meat  & medium \\
-  horse   & hay   & large  \\
-  frog    & flies & small  \\
-  microbe & \multicolumn{2}{c}{???} \\
-\end{tabular}
-\end{document}
-```
-<!-- {% endraw %} -->
-
-Note that you have to specify vertical rules you want to apply to the right of
-the `\multicolumn` in the `align` argument, e.g., `\multicolumn{2}{c|}{stuff}`
-&ndash; but remember, don't use vertical rules.
-
-
-## Formal tables with the `booktabs` package
-
-In this section we will briefly introduce the `booktabs` package, which aids
-the author in the creation of beautifully typeset tables. "Beautiful" means
-in this context that the table is well readable.
-
-Let us start with a simple table:
-
-
-<!-- {% raw %} -->
-```latex
-\documentclass{article}
-\usepackage{array}
-
-\begin{document}
-\begin{tabular}{@{} lll @{}}
   Animal & Food  & Size   \\
   dog    & meat  & medium \\
   horse  & hay   & large  \\
@@ -250,88 +152,215 @@ Let us start with a simple table:
 ```
 <!-- {% endraw %} -->
 
-Using the `\toprule`, `\midrule` and `\bottomrule` commands from the `booktabs` package we can add some
-horizontal lines.
+## Adding rules
+
+A word of advice prior to introducing rules; lines should be used really
+sparsely in tables, and normally vertical ones look unprofessional. In fact,
+for professional tables you shouldn't use any of the standard lines; instead you
+should get familiar with the facilities of the `booktabs` package, which is why
+it is covered here first &ndash; for the sake of completeness the standard
+lines are shown in the more-info page.
+
+`booktabs` provides four different types of lines. Each of those macros has to
+be used as the first thing in a row or following another rule, else you'll get a
+nasty error. Three rule types and their macros are: `\toprule`, `\midrule`, and
+`\bottomrule`. From their names the intended place of use should be pretty
+clear:
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array}
-\usepackage{booktabs}
+\usepackage{array, booktabs}
 
 \begin{document}
-\begin{tabular}{@{} lll @{}} \toprule
-  Animal & Food  & Size   \\ \midrule
+\begin{tabular}{lll}
+  \toprule
+  Animal & Food  & Size   \\
+  \midrule
   dog    & meat  & medium \\
   horse  & hay   & large  \\
-  frog   & flies & small  \\ \bottomrule
+  frog   & flies & small  \\
+  \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-By default `\toprule` and `\bottomrule` are slightly thicker than the
-`\midrule`. The thickness of the lines can be adjusted via the optional
-parameter of these commands:
+The fourth rule-macro provided by `booktabs` is `\cmidrule`. It can be used to
+draw a rule that doesn't span the entire width of the table but only a specified
+column range. A column range is entered by a number followed by a hyphen and
+then another number. Even if you only want to draw the rule only for a single
+column you need to specify that as a range (but with both numbers matching).
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array, booktabs}
+
+\begin{document}
+\begin{tabular}{lll}
+  \toprule
+  Animal & Food  & Size   \\
+  \midrule
+  dog    & meat  & medium \\
+  \cmidrule{1-2}
+  horse  & hay   & large  \\
+  \cmidrule{1-1}
+  \cmidrule{3-3}
+  frog   & flies & small  \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+There is another handy feature of `\cmidrule`, you can shorten it on either end
+with an optional argument enclosed in parenthesis:
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array, booktabs}
+
+\begin{document}
+\begin{tabular}{lll}
+  \toprule
+  Animal & Food  & Size   \\
+  \midrule
+  dog    & meat  & medium \\
+  \cmidrule{1-2}
+  horse  & hay   & large  \\
+  \cmidrule(r){1-1}
+  \cmidrule(rl){2-2}
+  \cmidrule(l){3-3}
+  frog   & flies & small  \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+You may have guessed that `r` and `l` mean the rule is shortened on its *r*ight
+and *l*eft end, respectively.
+
+Sometimes a rule would be too much of a separation for two rows but to get
+across the meaning more clearly you want to separate them by some means. In this
+case you can use `\addlinespace` to insert a small skip.
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage{array}
-\usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{@{} lll @{}} \toprule[2pt]
-  Animal & Food  & Size   \\ \midrule[1pt]
+\begin{tabular}{cp{9cm}}
+  \toprule
+  Animal & Description \\
+  \midrule
+  dog    & The dog is a member of the genus Canis, which forms part of the
+           wolf-like canids, and is the most widely abundant terrestrial
+           carnivore. \\
+  \addlinespace
+  cat    & The cat is a domestic species of small carnivorous mammal. It is the
+           only domesticated species in the family Felidae and is often referred
+           to as the domestic cat to distinguish it from the wild members of the
+           family. \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+
+## Merging cells
+
+In LaTeX you can merge cells horizontally by using the `\multicolumn` macro. It
+has to be used as the first thing in a cell. `\multicolumn` takes three
+arguments:
+
+1. The number of cells which should be merged
+2. The alignment of the merged cell
+3. The contents of the merged cell
+
+The alignment can contain anything legal in a `tabular`'s preamble, but _only a
+single column type_.
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array, booktabs}
+
+\begin{document}
+\begin{tabular}{lll}
+  \toprule
+  Animal & Food  & Size   \\
+  \midrule
   dog    & meat  & medium \\
   horse  & hay   & large  \\
-  frog   & flies & small  \\ \bottomrule[2pt]
+  frog   & flies & small  \\
+  fuath  & \multicolumn{2}{c}{unknown} \\
+  \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Even more, one can set a left and right indent for the `\midrule`, so
-that this line is a little bit shorter than the `\toprule` and
-`\bottomrule` of the table.
+You can also use `\multicolumn` on a single cell to prevent whatever you defined
+in the table preamble for the current column from applying. The following uses
+this to center the table's head row:
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array}
-\usepackage{booktabs}
+\usepackage{array, booktabs}
 
 \begin{document}
-\begin{tabular}{@{} lll@{}} \toprule[2pt]
-  Animal & Food  & Size   \\ \cmidrule[1pt](rl){1-3}
+\begin{tabular}{lll}
+  \toprule
+  \multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Food} & \multicolumn{1}{c}{Size} \\
+  \midrule
   dog    & meat  & medium \\
   horse  & hay   & large  \\
-  frog   & flies & small  \\ \bottomrule[2pt]
+  frog   & flies & small  \\
+  fuath  & \multicolumn{2}{c}{unknown} \\
+  \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-The package also provides commands to increase or decrease the height
-of a row. In the following example we increase the height of the
-last row by 0.5ex, where `ex` is a unit that depends  on the current font.
+Merging cells vertically isn't supported by LaTeX as tables are build row after
+row. Luckily this limitation isn't preventing us from creating readable tables,
+as most of the time it suffices to just leave cells empty to give the reader the
+correct idea of what was meant.
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array}
-\usepackage{booktabs}
+\usepackage{array, booktabs}
 
 \begin{document}
-\begin{tabular}{@{} lll @{}} \toprule[2pt]
-  Animal & Food  & Size   \\ \cmidrule[1pt](rl){1-3}
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\ \addlinespace[0.5ex]
-  frog   & flies & small  \\ \bottomrule[2pt]
+\begin{tabular}{lll}
+  \toprule
+  Group     & Animal & Size   \\
+  \midrule
+  herbivore & horse  & large  \\
+            & deer   & medium \\
+            & rabbit & small  \\
+  \addlinespace
+  carnivore & dog    & medium \\
+            & cat    & small  \\
+            & lion   & large  \\
+  \addlinespace
+  omnivore  & crow   & small  \\
+            & bear   & large  \\
+            & pig    & medium \\
+  \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
+
 
 ## Exercises
 
