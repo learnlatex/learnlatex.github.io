@@ -39,6 +39,32 @@ documentation of. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
 and you can access the README and documentation of the packages stored on CTAN
 there.
 
+## Books on LaTeX
+
+There are several books available that can help you learn more about LaTeX.
+As a beginner, you will gain a lot from a structured beginners guide, as
+those can give a lot more detail than we've covered here. You might also
+want access to a reference with more detail and recommendations.
+
+The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
+largley written by members. The most notable are [Lamport's offical
+guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
+and the comprehensive
+[companion](https://www.informit.com/store/latex-companion-9780201362992).
+
+Other books aimed at learning LaTeX include
+
+- [_Guide to
+  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
+  Kopka and Patrick Daly: available as an e-book
+-[_Using LaTeX to write a PhD
+ thesis_](https://www.dickimaw-books.com/latex/thesis/thesis-screen.pdf) by
+ Nicola Talbot: available as a free e-book or low-cost printed edition
+- [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
+  by Stefan Kottwitz: available as an e-book and in print
+- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
+  Marc van Dongen: available as an e-book and in print
+
 ## Getting help
 
 There are various online forums for asking LaTeX questions; perhaps the most
@@ -46,7 +72,7 @@ popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
 Whenever you ask a question, it's best to first get your example clear: what is
 normally known as a 'minimal working example' (MWE). This doesn't mean the code
 works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means 
+your best to make it clear, self-contained and minimal. The latter means
 having only enough content to show the issue.
 
 How do you construct a MWE? Normally easiest is to start from
