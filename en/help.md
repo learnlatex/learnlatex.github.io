@@ -7,7 +7,7 @@ title: "Using the learnlatex.org site"
 The course consists of 15 core lessons reached from the table of contents on the [home page](/).
 
 Each lesson has a link to one associated lesson on the same subject
-that goes in to greater depth. It should be possible to work through
+that goes into greater depth. It should be possible to work through
 all 15 lessons _without_  reading the additional lessons.
 
 ## Running the examples
@@ -22,10 +22,10 @@ Example text.
 \end{document}
 ```
 
-The example is complete however you may wish to edit it to make small
+The example is complete. However you may wish to edit it to make small
 changes, perhaps as part of an Exercise set at the end of the lesson.
 
-The <button style="padding:0 1px;font-size:90%">Edit</button> button enables editing within the page, this is
+The <button style="padding:0 1px;font-size:90%">Edit</button> button enables editing within the page; this is
 marked by the removal of the LaTeX syntax highlighting and a green
 border added around the code block. Note that this is just a basic edit facility provided by your browser;
 there is no TeX specific editing help as found in typical editing systems that you would use with TeX.
