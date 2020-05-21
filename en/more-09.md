@@ -5,7 +5,8 @@ title: "More on: Cross-referencing"
 ## Making cross-references into links
 
 You can make your cross-references into hyperlinks using the `hyperref` package.
-This
+In most cases, `hyperref` should be loaded after any other packages specified
+in the document preamble.
 
 ```latex
 \documentclass{article}
