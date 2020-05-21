@@ -35,5 +35,8 @@ use a backslash in front of it, so for example `\{` is used to print a literal
 | `$`    | `\$`              |
 | `%`    | `\%`              |
 | `&`    | `\&`              |
+| `#`    | `\#`              |
+| `_`    | `\_`              |
+| `^`    | `\textasciicircum`|
 | `~`    | `\textasciitilde` |
 | ``\``  | `\textbackslash`  |
