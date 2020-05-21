@@ -43,11 +43,9 @@ colon after it, you can do the following:
 by the table cell. We will look at manual font formatting [in a few lessons
 time](lesson-11).
 
-You might find this handy, but now you want the first cell not to be affected
-because it's the table head. Here `\multicolumn` comes in handy. Remember that
-it can be used to change a single cell's alignment as well? In fact, if you use
-`\multicolumn` you ignore whatever has been defined for these columns in the
-preamble. So you can use
+You may want the first cell not to be affected
+because it is the table head. Here `\multicolumn` may be used. Remember that
+it can be used to change a single cell's alignment as shown below.
 
 <!-- {% raw %} -->
 ```latex
@@ -139,8 +137,7 @@ _adds_ its argument to the space in the center between two columns.
 
 ### Vertical rules
 
-Though you _don't_ want to use vertical rules, sometimes you just have to. LaTeX
-has still got you covered.
+Though you _don't_ want to use vertical rules; sometimes you just have to.
 
 <!-- {% raw %} -->
 ```latex
@@ -160,9 +157,9 @@ has still got you covered.
 
 You might notice that the behavior of `|` is pretty similar to `!{decl}`, it
 adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though, vertical rules don't work with the pretty
+is a huge downside to this though, vertical rules don't work with the
 horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX, those are `\hline` (equaling `\toprule`, `\midrule`, and
+provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
 `\bottomrule`) and `\cline` (which behaves like `\cmidrule`).
 
 ## Customizing `booktabs` rules
@@ -190,7 +187,7 @@ braces after `r` or `l`.
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment of columns
+## Numeric alignment in columns
 
 The alignment of numbers in tables can be handled by the column type `S` 
 that is provided by the `siunitx` package.
@@ -207,18 +204,18 @@ A simple example with two aligned numeric columns would be:
 \midrule
 1        &   2.3456 \\
 1.2      &   34.2345 \\
-2.3      &   90.473 \\
+-2.3      &   90.473 \\
 40       &   5642.5 \\
 5.3      &   1.2e3 \\
-0.2      &    e4 \\
+0.2      &    1e4 \\
 \bottomrule
 \end{tabular}
 \end{document}
 ```
 
-Note that any non-numeric cell must be "protected" by enclosing it with braces.
+Note that any non-numeric cell must be "protected" by enclosing it in braces.
 
-The package provides many possibilities for formatting the numbers in
+The `siunitx` package provides many possibilities for formatting the numbers in
 different ways; see the [package
 documentation](https://texdoc.net/pkg/siunitx).
 
@@ -226,7 +223,7 @@ documentation](https://texdoc.net/pkg/siunitx).
 
 The width of a `tabular` environment is automatically determined based
 on the contents of the table. There are two commonly used mechanisms
-to specify the total width.
+to specify a different total width.
 
 Note that it is almost always preferable to format the table to a
 specified width as below (perhaps using a font size such as `\small` if
@@ -239,7 +236,7 @@ The `tabular*` environment takes an additional _width_ argument that
 specifies the total width of the table. Stretchy space must be added
 to the table using the `\extracolsep` command. This space is added
 between all columns from that point in the preamble. It is almost
-always used with `\fill` a special space that stretches to be as large
+always used with `\fill`, a special space that stretches to be as large
 as necessary.
 
 ```latex
@@ -407,12 +404,12 @@ for full details, but we show a simple example here.
 ## Typesetting in narrow columns
 
 The default line breaking settings assume relatively long lines to
-give some flexibility in choosing linebreaks. The following example
+give some flexibility in choosing line breaks. The following example
 shows some possible approaches. The first table shows interword spacing
 stretched and TeX warning about Underfull lines. Using `\raggedright`
 usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise,
-which allows some raggedness in the line lengths, but will also
+`\RaggedRight` command from the `ragged2e` package is a compromise;
+it allows some raggedness in the line lengths, but will also
 hyphenate where necessary, as shown in the third table.
 
 Note the use of `\arraybackslash` here, which resets the definition of
@@ -431,21 +428,21 @@ text size.
 
 \begin{tabular}[t]{lp{3cm}}
 One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate woords.
+Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
 \end{tabular}%
 \begin{tabular}[t]{l>{\raggedright\arraybackslash}p{3cm}}
 One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate woords.
+Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
 \end{tabular}%
-\begin{tabular}[t]{l>{\RaggedRight\arraybackslash}p{3cm}}
+\begin{tabular}[t]{l>{\RaggedRight}p{3cm}}
 One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate woords.
+Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
 \end{tabular}
 
 \footnotesize
 \begin{tabular}[t]{lp{3cm}}
 One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate woords.
+Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
 \end{tabular}
 
 \end{table}
@@ -463,7 +460,7 @@ use, for example
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in tabular preambles to specify a bold
+would allow the use of `B` in table preambles to specify a bold
 centered column.
 
 
@@ -493,7 +490,7 @@ a single row in which some cells are split vertically by the use of nested
 <!-- {% endraw %} -->
 
 Note that you can control vertical alignment by an optional argument to the
-`tabular`, it supports the usage of `t`, `c`, or `b` for top, centered, and
+`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
 bottom aligned respectively and is used like this:
 
 <!-- {% raw %} -->
