@@ -137,7 +137,7 @@ _adds_ its argument to the space in the center between two columns.
 
 ### Vertical rules
 
-Though you _don't_ want to use vertical rules; sometimes you just have to.
+Sometimes you have to use vertical rules.
 
 <!-- {% raw %} -->
 ```latex
@@ -155,9 +155,9 @@ Though you _don't_ want to use vertical rules; sometimes you just have to.
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`, it
+You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
 adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though, vertical rules don't work with the
+is a huge downside to this though; vertical rules don't work with the
 horizontal rules provided by `booktabs`. You can use the horizontal rules
 provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
 `\bottomrule`) and `\cline` (which behaves like `\cmidrule`).
