@@ -187,7 +187,7 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 
 The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
 draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`<number>`-`<number>`}`.
+column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
 Even if you only want to draw the rule for a single
 column you need to specify that as a range (with both numbers matching).
 
