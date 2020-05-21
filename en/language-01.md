@@ -1,5 +1,5 @@
 ---
-title: "Language-specifcs for English"
+title: "Language-specifics for English"
 ---
 
 ## hyphenation
