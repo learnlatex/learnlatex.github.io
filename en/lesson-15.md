@@ -47,7 +47,7 @@ those can give a lot more detail than we've covered here. You might also
 want access to a reference with more detail and recommendations.
 
 The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largley written by members. The most notable are [Lamport's offical
+largely written by members. The most notable are [Lamport's offical
 guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 and the comprehensive
 [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
@@ -57,8 +57,10 @@ Other books aimed at learning LaTeX include
 - [_Guide to
   LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
   Kopka and Patrick Daly: available as an e-book
+- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
+  Nicola Talbot: available as a free e-book or low-cost printed edition
 - [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/thesis-screen.pdf) by
+  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
   Nicola Talbot: available as a free e-book or low-cost printed edition
 - [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
   by Stefan Kottwitz: available as an e-book and in print
