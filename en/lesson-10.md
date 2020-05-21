@@ -156,7 +156,7 @@ If you need to make other symbols bold, [see the extra details](more-10).
 Try out some basic math mode work: take the examples and switch between
 inline and display math modes. Can you see what effect this has.
 
-Try adding other Greek letters, both lower- and uppercase: you should be
+Try adding other Greek letters, both lower- and uppercase. You should be
 able to guess the names.
 
 Experiment with the font changing commands: what happens when you try to
