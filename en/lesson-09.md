@@ -56,7 +56,7 @@ as boldface double question marks, **??**.
 The explanation is that because of this auxiliary file work,
 the first time that you compile a document the label has not
 yet been saved.
-Run LaTeX once more time and you'll be all set.
+Run LaTeX one more time and you'll be all set.
 (Usually while writing you will run LaTeX a number of times anyway,
 so in practice this is not a bother.)
 
@@ -70,7 +70,8 @@ Putting in a tie means LaTeX won't break the line there.
 The `\label` command always refers to the previous numbered entity:
 a section, an equation, a float, etc. That means that `\label` always has to
 come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ the `\caption` command.
+floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
+but within the float enviornment.
 
 ## Exercises
 
