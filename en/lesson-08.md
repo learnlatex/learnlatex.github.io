@@ -29,7 +29,7 @@ called preamble-tokens. The available column types are:
 | `l`        | left aligned column |
 | `c`        | centered column |
 | `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`, the text will be automatically line wrapped and fully justified |
+| `p{width}` | a column with fixed width `width`; the text will be automatically line wrapped and fully justified |
 | `m{width}` | like `p`, but vertically centered compared to the rest of the row |
 | `b{width}` | like `p`, but bottom aligned |
 | `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
@@ -50,7 +50,7 @@ column but might be useful as well:
 | `!{decl}` | add `decl` in the center of the existing space |
 
 These two tables list all the available column types from LaTeX and the `array`
-package. A few more useful column types, from different packages, are presented
+package. A few additional column types, from different packages, are presented
 in the [further details page](en/more-08) for this lesson.
 
 The columns `l`, `c`, and `r` will have the natural width of the widest cell.
@@ -60,8 +60,8 @@ Each column has to be declared, so if you want three centered columns, you'd use
 In a table body columns are separated using an ampersand `&` and a new row is
 started using `\\`.
 
-We got everything we need for our first little table. In the following code the
-`&` and `\\` are aligned: this isn't necessary in LaTeX, but helps reading the
+We have everything we need for our first table. In the following code the
+`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
 source.
 
 <!-- {% raw %} -->
@@ -104,11 +104,11 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 <!-- {% endraw %} -->
 
 The issue is that the `l` type column typesets its contents in a single row at
-its natural width, taking as much space as it takes, even if there is a page
-border in the way. To overcome this you can use the `p` column. This one
+its natural width, even if there is a page
+border in the way. To overcome this you can use the `p` column. This
 typesets its contents as paragraphs with the width you specify as an argument
 and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare aboves outcome to the following:
+time. Compare the above outcome to the following:
 
 <!-- {% raw %} -->
 ```latex
@@ -130,10 +130,10 @@ time. Compare aboves outcome to the following:
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it'll be cumbersome to put that
-many column definitions in the preamble.  Luckily you can have an easier life in
-that case by using `*{num}{string}`, which repeats the `string` for `num` times.
-So `*{6}{c}` results in `cccccc`. To show you that it works here is the first
+If your table has many columns of the same type it is cumbersome to put that
+many column definitions in the preamble.  You can make things easier
+by using `*{num}{string}`, which repeats the `string`  `num` times.
+So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
 table of this lesson with the newly learned syntax:
 
 <!-- {% raw %} -->
@@ -152,20 +152,19 @@ table of this lesson with the newly learned syntax:
 ```
 <!-- {% endraw %} -->
 
-## Adding rules
+## Adding rules (lines)
 
 A word of advice prior to introducing rules; lines should be used really
 sparsely in tables, and normally vertical ones look unprofessional. In fact,
 for professional tables you shouldn't use any of the standard lines; instead you
 should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first &ndash; for the sake of completeness the standard
-lines are shown in the more-info page.
+it is covered here first. For the sake of completeness the standard
+lines are shown in the [more-info](more-08) page.
 
-`booktabs` provides four different types of lines. Each of those macros has to
-be used as the first thing in a row or following another rule, else you'll get a
-nasty error. Three rule types and their macros are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be pretty
-clear:
+`booktabs` provides four different types of lines. Each of those commands has to
+be used as the first thing in a row or following another rule.
+Three of the rule commands are: `\toprule`, `\midrule`, and
+`\bottomrule`. From their names the intended place of use should be clear:
 
 <!-- {% raw %} -->
 ```latex
@@ -186,11 +185,11 @@ clear:
 ```
 <!-- {% endraw %} -->
 
-The fourth rule-macro provided by `booktabs` is `\cmidrule`. It can be used to
+The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
 draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered by a number followed by a hyphen and
-then another number. Even if you only want to draw the rule only for a single
-column you need to specify that as a range (but with both numbers matching).
+column range. A column range is entered as a number span: `{`<number>`-`<number>`}`.
+Even if you only want to draw the rule for a single
+column you need to specify that as a range (with both numbers matching).
 
 <!-- {% raw %} -->
 ```latex
@@ -214,8 +213,8 @@ column you need to specify that as a range (but with both numbers matching).
 ```
 <!-- {% endraw %} -->
 
-There is another handy feature of `\cmidrule`, you can shorten it on either end
-with an optional argument enclosed in parenthesis:
+There is another useful feature of `\cmidrule`. You can shorten it on either end
+with an optional argument enclosed in parentheses:
 
 <!-- {% raw %} -->
 ```latex
@@ -240,8 +239,8 @@ with an optional argument enclosed in parenthesis:
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its *r*ight
-and *l*eft end, respectively.
+You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
+and **l**eft end, respectively.
 
 Sometimes a rule would be too much of a separation for two rows but to get
 across the meaning more clearly you want to separate them by some means. In this
@@ -274,7 +273,7 @@ case you can use `\addlinespace` to insert a small skip.
 
 ## Merging cells
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` macro. It
+In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
 has to be used as the first thing in a cell. `\multicolumn` takes three
 arguments:
 
@@ -305,9 +304,11 @@ single column type_.
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent whatever you defined
-in the table preamble for the current column from applying. The following uses
-this to center the table's head row:
+You can also use `\multicolumn` on a single cell to prevent the
+application of whatever you defined in the table preamble for the
+current column.  The following uses this method to center the
+table's head row:
+
 
 <!-- {% raw %} -->
 ```latex
@@ -329,10 +330,9 @@ this to center the table's head row:
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX as tables are build row after
-row. Luckily this limitation isn't preventing us from creating readable tables,
-as most of the time it suffices to just leave cells empty to give the reader the
-correct idea of what was meant.
+Merging cells vertically isn't supported by LaTeX.
+Usually it suffices to leave cells empty to give the reader the
+correct idea of what was meant without explicitly making cells span rows.
 
 <!-- {% raw %} -->
 ```latex
