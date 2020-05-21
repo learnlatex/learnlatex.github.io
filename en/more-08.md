@@ -525,7 +525,7 @@ package).
 \renewcommand\arraystretch{1.5}
 ```
 
-Will increase the baseline spacing by 50%.
+will increase the baseline spacing by 50%.
 
 
 Often, especially when using `\hline`, it is better just to increase
