@@ -84,8 +84,12 @@ Text
 \end{document}
 ```
 
-and add lines one at a time until you show the issue. You can try to 'cut down'
-your real file, but that can be a long process.
+and add lines one at a time until you show the issue. You can try to
+'cut down' your real file, but that can be a long process.
+
+If you need more text to show page breaking and other effects, then
+packages such as `lipsum` may be used to generate nonsense paragaraphs
+of text while keeping your test file small.
 
 One thing you will want available is your log file; this is created by LaTeX
 every time you run it, and has the same name as your input but ending `.log`.
