@@ -64,3 +64,19 @@ to add additional languages: notice that the content is within a `/en/` tree.
 
 For the avoidance of doubt, we are using US English spelling (and idiom)
 on the site, as this is the most widely-understood approach.
+
+If you do plan to contribute a translation then please contact the
+site maintainers by opening an
+[issue](https://github.com/learnlatex/learnlatex.github.io/issues).
+
+The lessons `lesson-`1&ndash;15 and extended lessons `more-`1&ndash;15
+should be translated fairly closely.  Additional lessons `language-`\*
+may be added that need not be translations of the English text, but
+have information specific to the language being used.
+
+The translation should be placed in a two-letter directory using the
+ISO 639-1 language code.  The yml `langs` array in `_config.yml` will
+need to be extended to include the language.
+
+A test site showing the language switching (but without real
+translated text) is [viewable](https://davidcarlisle.github.io/ll)
