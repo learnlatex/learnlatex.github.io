@@ -30,14 +30,14 @@ function llexamples() {
 	    var f=document.createElement("span");
 	    // action=\"https://httpbin.org/post\"
 	    // action=\"https://www.overleaf.com/docs\"
-	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\"  action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"></form>";
+	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"></form>";
 	    p[i].parentNode.insertBefore(f, p[i].nextSibling);
 	}
     }
 }
 
 const commentregex = / %.*/;
-const engineregex = /% *!TEX.*((pdf|xe|lua)latex)/i;
+const engineregex = /% *!TEX.*((pdf|xe|lua|u?p)latex)/i;
 
 function latexonlinecc(nd) {
     var fconts="";
@@ -93,51 +93,45 @@ function latexonlinecc(nd) {
 
 
 // https://www.overleaf.com/devs
+function addinput(f,n,v) {
+    var inp=document.createElement("input");
+    inp.setAttribute("type","text");
+    inp.setAttribute("name",n);
+    inp.value =encodeURIComponent(v);
+    f.appendChild(inp);
+}
+
 function openinoverleaf(nd) {
     var fm = document.getElementById('form-' + nd);
     fm.innerHTML="";
     var p = document.getElementById(nd);
     var t = p.innerText;
-    var inp=document.createElement("input");
-    inp.setAttribute("type","text");
-    inp.setAttribute("name","encoded_snip[]");
     // the lax engine comment syntax confuses overleaf
-    inp.value =encodeURIComponent(t.replace(engineregex,''));
-    fm.appendChild(inp);
-    var inp2=document.createElement("input");
-    inp2.setAttribute("type","text");
-    inp2.setAttribute("name","snip_name[]");
-    inp2.value ="document.tex";
-    fm.appendChild(inp2);
+    addinput(fm,"encoded_snip[]",t.replace(engineregex,''));
+    addinput(fm,"snip_name[]","document.tex");
     if(typeof(preincludes) == "object") {
-      if(typeof(preincludes[nd]) == "object") {
-	  var incl=preincludes[nd];
-	  for(prop in incl) {
-	      var inp=document.createElement("input");
-	      inp.setAttribute("type","text");
-	      inp.setAttribute("name","encoded_snip[]");
-	      inp.value =encodeURIComponent(document.getElementById(prop).innerText);
-	      fm.appendChild(inp);
-	      var inp2=document.createElement("input");
-	      inp2.setAttribute("type","text");
-	      inp2.setAttribute("name","snip_name[]");
-	      inp2.value =encodeURIComponent(incl[prop]);
-	      fm.appendChild(inp2);
-	      
-	  }
-      }
+	if(typeof(preincludes[nd]) == "object") {
+	    var incl=preincludes[nd];
+	    for(prop in incl) {
+		addinput(fm,"encoded_snip[]",document.getElementById(prop).innerText);
+		addinput(fm,"snip_name[]",incl[prop]);
+	    }
+	}
     }
-	      var inp3=document.createElement("input");
-	      inp3.setAttribute("name","engine");
-	      inp3.setAttribute("value","pdflatex");
+    var engv="pdflatex";
     var eng=t.match(engineregex);
     if(eng != null) {
-	inp3.setAttribute("value",eng[1].toLowerCase());
+	engv=eng[1].toLowerCase();
+	if(engv == "platex" || engv == "uplatex") {
+	    addinput(fm,"encoded_snip[]","$latex = '" + engv + "';\n$bibtex = 'pbibtex';\n$dvipdf = 'dvipdfmx %O -o %D %S';");
+	    addinput(fm,"snip_name[]","latexmkrc");
+	    engv="latex_dvipdf";
+	}
     } else if(t.indexOf("fontspec") !== -1) {
-	inp3.setAttribute("value","xelatex");
+	engv="xelatex";
     }
-    	      fm.appendChild(inp3);
-     fm.submit();
+    addinput(fm,"engine",engv);
+    fm.submit();
 }
 
 
