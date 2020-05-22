@@ -146,7 +146,7 @@ Sometimes you have to use vertical rules.
 
 \begin{document}
 \begin{tabular}{l|ll}
-  Animal & Food  & Size   \\
+  Animal & Food  & Size   \\[2pt]
   dog    & meat  & medium \\
   horse  & hay   & large  \\
   frog   & flies & small  \\
@@ -160,7 +160,8 @@ adds the vertical rule between two columns leaving the padding as it is. There
 is a huge downside to this though; vertical rules don't work with the
 horizontal rules provided by `booktabs`. You can use the horizontal rules
 provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`).
+`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
+will span any space specified in the optional argument to `\\`.
 
 ## Customizing `booktabs` rules
 
@@ -204,7 +205,7 @@ A simple example with two aligned numeric columns would be:
 \midrule
 1        &   2.3456 \\
 1.2      &   34.2345 \\
--2.3      &   90.473 \\
+-2.3     &   90.473 \\
 40       &   5642.5 \\
 5.3      &   1.2e3 \\
 0.2      &    1e4 \\
