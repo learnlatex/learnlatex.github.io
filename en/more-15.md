@@ -16,7 +16,7 @@ Current releases of LaTeX also have preloaded the LaTeX3 Programming Language co
 as the `expl3` package.  `texdoc` may be used to see the
 [expl3 interface description](http://texdoc.net/texmf-dist/doc/latex/l3kernel/interface3.pdf)
 or
-[Full expl3 source code](http://texdoc.net/texmf-dist/doc/latex/l3kernel/source3.pdf).
+[full expl3 source code](http://texdoc.net/texmf-dist/doc/latex/l3kernel/source3.pdf).
 
 
 
