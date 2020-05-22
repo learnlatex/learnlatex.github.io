@@ -1,0 +1,22 @@
+<ul>
+{% assign l = include.prefix | slice: 0, 3 %}
+{%- for page in site.pages | sort: 'path' -%}
+{%- if page.path  contains include.prefix %}
+{% if l == "en/" %}
+<li><a href="{{page.path | replace: '.md',''}}">
+{% else %}
+<li><a href="{{page.path | replace: '.md','' | remove_first: l }}">
+{% endif %}
+<b style="display:inline-block;width:1.5em;text-align:right;font-variant-numeric: tabular-nums;">
+{% if page.path contains "-0" %}
+{% assign pp = "-0" | prepend: include.prefix %}
+{% else %}
+{% assign pp = "-" | prepend: include.prefix %}
+{% endif %}
+{{page.path | replace: '.md','' | replace: pp ,''}}
+</b>
+&mdash; {{page.title}}</a></li>
+{%- endif -%}
+{%- endfor -%}
+</ul>
+
