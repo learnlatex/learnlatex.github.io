@@ -27,26 +27,25 @@ within each entry there are a series of fields. Let us look at an example
 
 <!-- {% raw %} -->
 ```
-@Article{Thomas2008,
-  author =    {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
-               and Darensbourg, Marcetta Y.},
-  title =     {Series of Mixed Valent {Fe(II)Fe(I)} Complexes That Model the
-              {H(OX)} State of [{FeFe}]Hydrogenase: Redox Properties,
-              Density-Functional Theory Investigation, and Reactivity with
-              Extrinsic {CO}},
-  journal =   {Inorg. Chem.},
-  year =      {2008},
-  volume =    {47},
-  number =    {15},
-  pages =     {7009--7024},
-  doi =       {10.1021/ic800654a},
+@article{Thomas2008,
+  author  = {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
+             and Darensbourg, Marcetta Y.},
+  title   = {Series of Mixed Valent {Fe(II)Fe(I)} Complexes That Model the
+             {H(OX)} State of [{FeFe}]Hydrogenase: Redox Properties,
+             Density-Functional Theory Investigation, and Reactivity with
+             Extrinsic {CO}},
+  journal = {Inorg. Chem.},
+  year    = {2008},
+  volume  = {47},
+  number  = {15},
+  pages   = {7009-7024},
+  doi     = {10.1021/ic800654a},
 }
-
-@Book{Graham1995,
-  author =     {Ronald L. Graham and Donald E. Knuth and Oren Patashnik},
-  title =      {Concrete Mathematics},
-  publisher =  {Addison-Wesley},
-  year =       {1995}
+@book{Graham1995,
+  author    = {Ronald L. Graham and Donald E. Knuth and Oren Patashnik},
+  title     = {Concrete Mathematics},
+  publisher = {Addison-Wesley},
+  year      = {1995},
 }
 ```
 <!-- {% endraw %} -->
@@ -113,22 +112,28 @@ The basic structure of our input is as shown in this example.
 \usepackage{natbib}
 
 \begin{document}
-The mathematics showcase is from \cite{Graham1995}, whereas
-there is some chemistry in \cite{Thomas2008}.
+The mathematics showcase is from \citet{Graham1995}, whereas
+there is some chemistry in \citet{Thomas2008}.
 
-Some more complex citations: \citep{Graham1995}, \citet{Thomas2008}.
+Some parenthetical citations: \citep{Graham1995}, \citep[p.~56]{Thomas2008}.
+
+\citep[See][pp.~45-48]{Graham1995}
 
 \bibliographystyle{plainnat}
 \bibliography{learnlatex}
 \end{document}
 ```
 
-You can see that we can `\cite` different entries in the database by giving their
+You can see that we can cite different entries in the database by giving their
 key. The `natbib` package offers both textual and parenthetical citation styles,
 `\citet` and `\citep`, respectively. The reference style is selected by the
 `\bibliographystyle` line; here we've used the `plainnat` style. The
 bibliography is actually inserted by the `\bibliography` line, which also picks
 the database(s) to use; this is a comma-separated list of names.
+
+Page references can be added to the citation with an optional argument.
+If two optional arguments are given, the first goes in front of the citation
+label for a short note and the second after the label for a page reference.
 
 The setup above uses author-year style, but we can make use of numeric
 citations. That is done by adding the `numbers` option to the `natbib` line.
@@ -145,10 +150,14 @@ some new commands for this.
 \addbibresource{learnlatex.bib} % file of reference info
 
 \begin{document}
-The mathematics showcase is from \cite{Graham1995}.
+The mathematics showcase is from \autocite{Graham1995}.
 
-Some more complex citations: \citeauthor{Thomas2008},
-\citetitle{Graham1995}, \parencite{Thomas2008}.
+Some more complex citations: \parencite{Graham1995},
+\textcite{Thomas2008}, \citetitle{Graham1995}.
+
+\autocite[56]{Thomas2008}
+
+\autocite[See][45-48]{Graham1995}
 
 \printbibliography
 \end{document}
@@ -158,6 +167,11 @@ Notice that `\addbibresource` _requires_ the full database filename, whereas
 we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
 `biblatex` uses rather longer names for its citation commands, but these are
 all quite easy to guess.
+
+Again, short text before and after the citation can be inserted with
+the optional arguments. Note that the page numbers need not be prefixed
+with `p.~` or `pp.~` here, `biblatex` can automatically add the approriate
+prefix.
 
 In `biblatex`, the reference style is picked when we load the package. Here,
 we've used `authoryear`, but there is a `numeric` style and many others are
