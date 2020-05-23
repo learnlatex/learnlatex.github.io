@@ -8,13 +8,13 @@ layout: default
 
 {% if page.path contains "lesson-" %}
   <p><small>
-    <a href = "{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}">See more on this topic</a>
+    <a href = "{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}">{% include_relative includes/more.html %}</a>
     {% unless page.path contains "lesson-15" %}
      <br>
      {% if page.name contains "lesson-1" or  page.name contains "lesson-09" %}
-     <a href = "lesson-{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">Next lesson</a>
+     <a href = "lesson-{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
      {% else %}
-      <a href = "lesson-0{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">Next lesson</a>
+      <a href = "lesson-0{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
     {% endif %}
     {% endunless %}
   </small></p>
@@ -22,13 +22,13 @@ layout: default
 
 {% if page.path contains "more-" %}
   <p><small>
-    <a href = "{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}">Return to main lesson</a>
+    <a href = "{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}">{% include_relative includes/return.html %}</a>
     {% unless page.path contains "more-15" %}
     <br>
     {% if page.name contains "more-1" or  page.name contains "more-09" %}
-    <a href = "lesson-{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">Next main lesson</a>
+    <a href = "lesson-{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
     {% else %}
-    <a href = "lesson-0{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">Next main lesson</a>
+    <a href = "lesson-0{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
     {% endif %}
     {% endunless %}
   </small></p>

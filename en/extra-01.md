@@ -20,7 +20,7 @@ The examples are taken from the package documentation unless otherwise noted.
 \documentclass{article}
 \usepackage{mhchem}
 \begin{document}
-\ce{Hg^2+ ->[I-] HgI2 -> [I-] [Hg^{II}I4]^2-}
+\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
 \end{document}
 ```
 
