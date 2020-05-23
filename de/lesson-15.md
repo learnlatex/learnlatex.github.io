@@ -1,4 +1,4 @@
 ---
-title: "Accessing documentation and getting help (German)"
+title: "Dokumentation und Hilfe finden"
 ---
 Translation to be added _after_ English text completed.

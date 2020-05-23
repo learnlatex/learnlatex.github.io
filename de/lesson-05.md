@@ -1,4 +1,4 @@
 ---
-title: "Using document classes to influence design (German)"
+title: "Design anpassen mit Klassen"
 ---
 Translation to be added _after_ English text completed.

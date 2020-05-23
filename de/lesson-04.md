@@ -1,4 +1,4 @@
 ---
-title: "Logical structure (German)"
+title: "Texte gliedern"
 ---
 Translation to be added _after_ English text completed.

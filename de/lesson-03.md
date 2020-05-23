@@ -1,4 +1,4 @@
 ---
-title: "Your first LaTeX document (German)"
+title: "Ihr erstes LaTeX Dokument"
 ---
 Translation to be added _after_ English text completed.
