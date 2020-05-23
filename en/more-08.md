@@ -16,7 +16,7 @@ other preamble-tokens `>`, `<`, `@`, `!`, and `|`.
 ### Styling a column
 
 Since `>` and `<` can be used to put things before and after the cell contents
-of the respective column, you can use these to add macros which affect the looks
+of a column, you can use these to add commands which affect the look
 of a column. For instance, if you want to italicize the first column and put a
 colon after it, you can do the following:
 
@@ -68,7 +68,7 @@ it can be used to change a single cell's alignment as shown below.
 
 ### Manipulating the space between columns
 
-Usually LaTeX pads each column by some space on both ends to give a balanced
+Usually LaTeX pads each column by some space on both sides to give a balanced
 look and separate them. This space is defined with the length `\tabcolsep`. Due
 to the fact that each column is padded on both sides you get one `\tabcolsep` on
 either end of the table, and `2\tabcolsep` between two columns &ndash; one from
@@ -116,7 +116,7 @@ between the columns you specify as an argument:
 horizontal space.)
 
 The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument to the space in the center between two columns.
+_adds_ its argument in center of the space between two columns.
 
 <!-- {% raw %} -->
 ```latex
@@ -167,7 +167,7 @@ will span any space specified in the optional argument to `\\`.
 
 All the `booktabs` rules and also `\addlinespace` support an optional argument
 in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a thickness in
+trimming provided by `\cmidrule` can be customized by specifying a length in
 braces after `r` or `l`.
 
 <!-- {% raw %} -->
