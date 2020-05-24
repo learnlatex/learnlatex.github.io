@@ -59,8 +59,9 @@ the site useful. There are a few things to watch out for
 
 ## Language
 
-At present, we have content only in English, but the longer-term plan is
+At present, we have full content only in English, but the longer-term plan is
 to add additional languages: notice that the content is within a `/en/` tree.
+There are sample translations unde `de`, `fr` and `pt` but only teh page titles are translated until the English version is more stable.
 
 For the avoidance of doubt, we are using US English spelling (and idiom)
 on the site, as this is the most widely-understood approach.
@@ -78,5 +79,3 @@ The translation should be placed in a two-letter directory using the
 ISO 639-1 language code.  The yml `langs` array in `_config.yml` will
 need to be extended to include the language.
 
-A test site showing the language switching (but without real
-translated text) is [viewable](https://davidcarlisle.github.io/ll)
