@@ -61,7 +61,7 @@ the site useful. There are a few things to watch out for
 
 At present, we have full content only in English, but the longer-term plan is
 to add additional languages: notice that the content is within a `/en/` tree.
-There are sample translations unde `de`, `fr` and `pt` but only teh page titles are translated until the English version is more stable.
+There are sample translations under `de`, `fr` and `pt` but only the page titles are translated until the English version is more stable.
 
 For the avoidance of doubt, we are using US English spelling (and idiom)
 on the site, as this is the most widely-understood approach.
