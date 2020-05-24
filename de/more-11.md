@@ -1,4 +1,4 @@
 ---
-title: "More on: Formatting: fonts and spacing (German)"
+title: "Mehr zu: Formatieren: Schriften und Abstände"
 ---
 Translation to be added _after_ English text completed.
