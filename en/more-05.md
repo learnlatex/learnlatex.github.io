@@ -15,8 +15,8 @@ these are also available on CTAN and in standard TeX distributions.
 
 One area that needs a lot of special treatment is creating presentations. The `slides`
 class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. There are two classes
-that have been developed to do just that, and that are widely used:
+have any special support for on-screen presentations. Two classes
+have been developed to do just that, and that are widely used:
 `beamer` and `powerdot`. As `beamer` is probably the more common one, we will
 give you an example of how it works:
 
@@ -39,7 +39,7 @@ give you an example of how it works:
 \end{document}
 ```
 
-This shows two important ideas:. First, `beamer` divides a document into frames,
+This shows two important ideas. First, `beamer` divides a document into frames,
 each of which can make more than one slide (page). Second, `beamer` adds to the
 normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
 This is powerful but more complicated than we can cover here: take a look  at

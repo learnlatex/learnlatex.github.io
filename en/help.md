@@ -4,7 +4,8 @@ title: "Using the learnlatex.org site"
 
 ## Navigating the site
 
-The course consists of 15 core lessons reached from the table of contents on the [home page](/).
+The course consists of 15 core lessons that can be reached from the table
+of contents on the [home page](/).
 
 Each lesson has a link to one associated lesson on the same subject
 that goes into greater depth. It should be possible to work through

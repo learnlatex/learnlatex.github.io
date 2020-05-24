@@ -20,10 +20,9 @@ files. Such a file is a database of references, containing the information in a
 processing-friendly format. Using one or more reference databases lets you
 re-use information and avoid manual formatting.
 
-Reference databases are normally refered to as 'BibTeX files' and have the
+Reference databases are normally referred to as 'BibTeX files' and have the
 extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example
-.
+within each entry there are a series of fields. Let us look at an example.
 
 <!-- {% raw %} -->
 ```
@@ -50,7 +49,8 @@ within each entry there are a series of fields. Let us look at an example
 ```
 <!-- {% endraw %} -->
 
-This is an entry for an article and a book; these are by far the most common
+
+This is an entry for an article and another for a book; these are by far the most common
 types. Each database entry type starts with `@`, as shown, and all of the
 information then sits within a brace pair.
 
@@ -68,8 +68,13 @@ case-changing being applied.
 
 Editing `.bib` files by hand is rather tedious, so most people use a dedicated
 editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available. Here, we will use the short
-example database above for our demonstrations; we have 'saved' it as
+but there are several other interfaces available.
+If the reference contains a DOI (Digital Object Identifier), you may want to
+try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
+to check if the entry is correct!
+
+Here, we will use the short
+example database above for our demonstrations: we have 'saved' it as
 `learnlatex.bib`.
 
 ## Transferring information from the database
@@ -83,13 +88,13 @@ your document again so that LaTeX can use that information to resolve
 your citations. Usually it will require at least two compilations to
 resolve all the references.
 
-For the second step there are two systems in wide use: BibTeX and
+For the second step, there are two systems in wide use: BibTeX and
 Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
 BibTeX is used with either no packages at all or with `natbib`.
 
 Running a second tool as well as LaTeX is handled in different ways by different
 editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go; that's true for LaTeX-Online and Overleaf. Your
+that do everything in one go; that's true for LaTeX Online and Overleaf. Your
 editor might have a single 'do stuff' button or you might have to choose to run
 BibTeX or Biber manually between LaTeX runs.
 
@@ -102,7 +107,7 @@ choose how citations appear.
 
 Whilst it is possible to insert citations into a LaTeX document without
 any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create differing types of citation and
+`natbib` package, which allows us to create different types of citation and
 has a lot of styles available.
 
 The basic structure of our input is as shown in this example.
@@ -178,6 +183,7 @@ the optional arguments. Note that the page numbers need not be prefixed
 with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
 prefix.
 
+
 In `biblatex`, the reference style is picked when we load the package. Here,
 we've used `authoryear`, but there is a `numeric` style and many others are
 also available.
@@ -186,7 +192,7 @@ also available.
 
 Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
 to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and LaTeX-Online
+Find out how to do that in your editor, or try the Overleaf and LaTeX.Online
 automation.
 
 See what happens when you create new database entries and new citations. Add
