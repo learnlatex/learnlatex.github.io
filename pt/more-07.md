@@ -1,4 +1,4 @@
 ---
-title: "More on: Including graphics and making things 'float' (Portuguese)"
+title: "Veja mais sobre: Incluindo gráficos e fazendo as coisas 'flutuarem'"
 ---
 Translation to be added _after_ English text completed.

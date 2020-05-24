@@ -1,4 +1,4 @@
 ---
-title: "Using the learnlatex.org site (Portuguese)"
+title: "Usando o website learnlatex.org"
 ---
 Translation to be added _after_ English text completed.
