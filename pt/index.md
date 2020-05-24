@@ -2,7 +2,7 @@
 title: learnlatex.org
 ---
 
-## Welcome to learnlatex.org!
+## Welcome to learnlatex.org (Portuguese)!
 
 This site aims to help you take the first steps with LaTeX, a document
 preparation system designed to produce high-quality typeset output. LaTeX can
@@ -40,7 +40,7 @@ errors, you might want to check if your LaTeX system is up-to-date.
 
 {% include toc.html  prefix="pt/lesson" %}
 
-### Additional lessons specific to learnlatex.org/en
+### Additional lessons specific to learnlatex.org/pt
 
 {% include toc.html  prefix="pt/language" %}
 
