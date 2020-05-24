@@ -19,7 +19,7 @@ preincludes = {
 
 ## Structuring your sources
 
-When you are writing a longer document, it's likely you'll want to split up
+When you are writing a longer document, you’ll likely want to split up
 the source into multiple files. For example, it's very common to have
 one 'main'/'root' file, then one source file per chapter (for a book or thesis),
 or per significant section (for a long article).
@@ -32,7 +32,7 @@ and makes some internal adjustments. But it has a big advantage: it allows us to
 be selective in which chapters to include, so you can work on part of your
 document rather than the whole thing.
 
-A longer document might therefore look something like the following
+A longer document might therefore look something like the following:
 
 <!-- pre0 {% raw %} -->
 ```latex

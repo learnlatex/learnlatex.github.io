@@ -3,7 +3,7 @@ title: "Working with LaTeX"
 ---
 
 Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs which work together.
+'everything' in one. Instead, there are separate programs that work together.
 We can divide those up into two things you actually need:
 
 - A _TeX system_
@@ -34,7 +34,7 @@ choose TeX Live.
 LaTeX files are simply plain text, so they can be edited with any text editor.
 However, it's most convenient to have an editor that is designed to work with
 LaTeX, as they provide features like one-click compilation of your files,
-built-in PDF viewers and syntax highlighting. A really useful feature in all
+built-in PDF viewers, and syntax highlighting. A really useful feature in all
 modern LaTeX editors is SyncTeX: the ability to click on your source and go
 straight to your PDF, or back the other way.
 

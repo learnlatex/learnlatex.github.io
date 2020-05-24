@@ -13,9 +13,10 @@ LaTeX by adding one or more *packages*. These can
 
 The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
 and so some add-on packages deal with very common ideas. The first is to
-change how LaTeX hyphenates material. Different languages have different rules,
-so it's important to tell LaTeX which one to use. This is handled by the `babel`
-package.
+change how LaTeX deals with language-specific typesetting (hyphenation,
+punctuation, quotations, localisation, etc.). Different languages have different
+rules, so it's important to tell LaTeX which one to use. This is handled by the
+`babel` package.
 
 ```latex
 \documentclass{article}
@@ -90,7 +91,7 @@ including ones for writing mathematical text, for hyperlinking, for
 sophisticated capabilities with color, etc. We will see some more common
 packages in later lessons.
 
-## Excercises
+## Exercises
 
 Try out writing some text in other European languages and see how `babel`
 affects hyphenation: you can probably find some text on the internet, and guess
@@ -101,4 +102,4 @@ Try altering the margins in the `geometry` example. You can set the individual
 list.
 
 Try loading the `lipsum` package and then add the command `\lipsum` to your
-document. Can you guess why this package is useful for examples?
+document. Can you guess why this package is useful for making examples?

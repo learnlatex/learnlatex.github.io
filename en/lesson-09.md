@@ -7,7 +7,7 @@ title: "Cross-referencing"
 When you are writing a document of any length, you'll want to refer to numbered
 items such as figures, tables or equations. Luckily, LaTeX can automatically add
 the right numbers; we just have to set things up. To have LaTeX remember a spot
-in your document you label it, and then in other places you refer to it.
+in your document you have to label it, and then in other places, you refer to it.
 
 ```latex
 \documentclass{article}
@@ -38,11 +38,11 @@ In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
 There are two `\label{...}` commands, one after the subsection
 and one inside the equation environment.
 They are associated with the last sentence's `\ref{...}` commands.
-When you run LaTeX, it saves information in the labels to an auxiliary file.
+When you run LaTeX, it saves information about the labels to an auxiliary file.
 For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
 so it saves the subsection's number.
 For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for the equation.
+of interest is an equation so it saves the information for that equation.
 When you ask for the reference, LaTeX gets it from the auxiliary file.
 
 The `subsec:` and `eq:` aren't used by LaTeX;
@@ -57,7 +57,7 @@ The explanation is that because of this auxiliary file work,
 the first time that you compile a document the label has not
 yet been saved.
 Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX a number of times anyway,
+(Usually while writing you will run LaTeX several times anyway,
 so in practice this is not a bother.)
 
 Notice the tie (`~`) characters before the references.
@@ -81,3 +81,5 @@ commands work.
 
 Add some floats and see what happens when you put `\label` _before_ the
 `\caption` instead of after; can you predict the result?
+
+What happens if you put a `\label` for an equation _after_ the `\end{equation}`?

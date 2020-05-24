@@ -2,7 +2,7 @@
 title: "More on: Including graphics and making things 'float'"
 ---
 
-## Naming graphic files
+## Naming graphics files
 
 LaTeX works on many computer platforms so
 file names deserve some thought.
@@ -24,12 +24,12 @@ in file names, try using only ASCII characters for a test.
 
 A common way to lay out source files is to put all graphics into a subdirectory.
 You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate out parts of the path _even on Windows_.
+`/` character is used to separate parts of the path _even on Windows_.
 
 If you have a lot of graphics, you might want to set up the subdirectory
 in advance. That can be done using `\graphicspath`, which needs a braced entry
 for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have
+subdirectories, we would have:
 
 <!-- {% raw %} -->
 ```latex
@@ -47,8 +47,8 @@ can, as this is a scalable format. If you do need to create a bitmap, aim for
 high resolution. You can make mouse-created graphics that include LaTeX snippets
 with [Inkscape](https://inkscape.org/). An alternative that in addition extends
 those drawing techniques to three dimensions is
-[Asymptote](https://www.ctan.org/pkg/asymptote). These two put output into files
-that you include in your document.
+[Asymptote](https://www.ctan.org/pkg/asymptote). These two produce their output
+as files that you include in your document.
 
 You can also create graphics such as drawings that are especially suited to
 LaTeX, with very high precision as well as equations and labels that match your
@@ -68,7 +68,7 @@ The `float` package will do that.
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{lipsum}  % dummy text for filler
-\usepackage{float}  
+\usepackage{float}
 
 \begin{document}
 \lipsum[1-7]
@@ -82,6 +82,8 @@ The `float` package will do that.
 ```
 
 Note the `H` option, which puts the figure 'absolutely Here'.
+However it is often not recommended to use `H`, because it may
+create large portions of white space in your document.
 
 ## Other types of float
 

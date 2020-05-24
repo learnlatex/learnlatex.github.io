@@ -330,7 +330,7 @@ A `tabular` forms an unbreakable box so it must be small enough to fit
 on one page, and is often placed in a floating `table` environment.
 
 Several packages provide variants with similar syntax that do allow
-page breaking. Here we show use of the `longtable` package.
+page breaking. Here we show the `longtable` package:
 
 ```
 \documentclass{article}
@@ -407,7 +407,7 @@ for full details, but we show a simple example here.
 The default line breaking settings assume relatively long lines to
 give some flexibility in choosing line breaks. The following example
 shows some possible approaches. The first table shows interword spacing
-stretched and TeX warning about Underfull lines. Using `\raggedright`
+stretched and TeX warns about Underfull lines. Using `\raggedright`
 usually avoids this problem but may leave some lines ‘too ragged’. The
 `\RaggedRight` command from the `ragged2e` package is a compromise;
 it allows some raggedness in the line lengths, but will also
