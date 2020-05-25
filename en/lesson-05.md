@@ -59,7 +59,7 @@ The text goes Here
 ```
 
 See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-09). Also see how the `letter` class creates  a
+breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
 new environment for each letter and has specialised commands.
 
 The standard `article`, `report` and `book` classes take the options `10pt`,
