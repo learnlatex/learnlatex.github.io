@@ -72,7 +72,7 @@ The core classes are very stable, but that means they are also quite
 conservative in both design and the range of commands available. Over time, a
 number of more powerful classes have been written, that let you alter the design
 without having to do things manually (which we'll mention [a bit
-later](lesson-09)).
+later](lesson-11)).
 
 The American Mathematical Society provide variants of the standard
 classes (`amsart`, `amsbook`) with a more traditional design closer to
