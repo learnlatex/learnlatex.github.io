@@ -51,7 +51,7 @@ column but might be useful as well:
 
 These two tables list all the available column types from LaTeX and the `array`
 package. A few additional column types, from different packages, are presented
-in the [further details page](en/more-08) for this lesson.
+in the [further details page](more-08) for this lesson.
 
 The columns `l`, `c`, and `r` will have the natural width of the widest cell.
 Each column has to be declared, so if you want three centered columns, you'd use
