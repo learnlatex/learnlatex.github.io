@@ -13,8 +13,10 @@ and display.
 \documentclass{article}
 \begin{document}
 A sentence with inline mathematics: $y = mx + c$.
+A second sentence with inline mathematics: $5^{2}=3^{2}+4^{2}$.
 
-A second paragraph containing display maths
+
+A second paragraph containing display math.
 \[
   y = mx + c
 \]
@@ -33,8 +35,22 @@ really using LaTeX.
 
 As you can see above, inline math mode is marked using a pair of dollar
 symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
-Simple text is entered without any special markup, and you'll see that it's
-spaced out nicely and has letters in italic; this is normal for mathematics.
+Simple expressions are entered without any special markup, and you'll see
+that the math is spaced out nicely and has letters in italic.
+
+Inline math mode restricts vertical size of the expression so that as
+far as possible the formula does not disturb the linespacing of the
+paragraph.
+
+Note that _all_ mathematics should be marked up as math, even if it is
+a single character  use `... $2$ ...`   not `... 2 ...` otherwise, for
+example, when you need a negative number and need math to get a minus
+sign the `... $-2$ ...` may use math digits which may not be the same
+font as the text digits (depending on the document class).
+Conversely
+beware of math mode constructs appearing in plain text copied from
+elsewhere such as  monetary values using `$` or filenames using` _` (which
+may be marked up as `\$` and `\_` respectively).
 
 We can easily add superscripts and subscripts; these are marked using `^` and
 `_`, respectively.
@@ -50,28 +66,39 @@ Superscripts $a^{b}$ and subscripts $a_{b}$.
 braces, but that is not the official syntax and can go wrong; always use
 braces.)
 
-There are a _lot_ of specialist math mode symbol commands. Some of them are quite
+There are a _lot_ of specialist math mode commands. Some of them are quite
 easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
 Greek letter.
 
 ```latex
 \documentclass{article}
 \begin{document}
-Some symbols: $y = 2 \sin \theta^{2}$.
+Some mathematics: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
 We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up math mode
-symbols using the great
-[Detexify](https://personaljournal.ca/paulsutton/detexify) tool.
+many online resources listing the standard set. You can look up commands for math math mode symbols using the
+[Detexify](https://detexify.kirelabs.org/classify.html) tool.
+
 
 ## Display mathematics
 
-You can use exactly the same commands for display math mode as for inline
-work. Display math mode is set centered and is meant to be 'part of a paragraph'
-where the equation is larger. It's particularly useful for integrations, for
-example:
+You can use exactly the same commands for display math mode as for
+inline work. Display math mode is set centered by default and is meant
+for larger equations that are 'part of a paragraph'. Note that
+display math environments do not allow a paragraph to end within the
+mathematics, so you may not have blank lines within the source of the
+display.
+
+The paragraph should always be started _before_ the display so do not
+leave a blank line before the display math environment. If you need
+several lines of mathematics, do not use consecutive display math
+environments (this produces inconsisitent spacing) use one of the
+multi-line display environments such as `align` from the `amsmath`
+package described later.
+
+It's particularly useful for integrations, for example:
 
 ```latex
 \documentclass{article}
@@ -86,6 +113,9 @@ A paragraph about a larger equation
 Notice here how sub-/superscript notation is used to set the limits on the
 integration.
 
+We've added one piece of manual spacing here: `\,` makes a thin space before the
+`dx`, which we need so it does not look like a product.
+
 You often want a numbered equation, which is created using the `equation`
 environment. Let's try the same example again:
 
@@ -99,14 +129,20 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`, which we need so it does not look like a product.
+The equation number is incremented automatically and may be a simple
+number as in this example or may be prefixed by section number, so
+(2.5) for the 5th equation in section 2. The details of the formatting
+are set up by the document class and not described here.
+
 
 ## The `amsmath` package
 
 Mathematical notation is very rich, and this means that the tools built
 into the LaTeX kernel can't cover everything. The `amsmath` package
 extends the core support to cover a lot more ideas.
+The [`amsmath` User Guide](http://texdoc.net/pkg/amsmath)
+contains many more examples than we can show in this lesson.
+
 
 ```latex
 \documentclass{article}
@@ -115,8 +151,7 @@ extends the core support to cover a lot more ideas.
 \begin{document}
 Solve the following recurrence for $ n,k\geq 0 $:
 \begin{align*}
-  Q_{n,0} &= 1
-  \quad Q_{0,k} = [k=0];  \\
+  Q_{n,0} &= 1   \quad Q_{0,k} = [k=0];  \\
   Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $n$, $k>0$.}
 \end{align*}
 \end{document}
@@ -128,8 +163,36 @@ space, and `\text` to put some normal text inside math mode. We've also used
 another math mode command, `\binom`, for a binomial.
 
 Notice that here we used `align*`, and the equation didn't come out numbered.
-Most maths environments number the equations by default, and the starred variant
+Most math environments number the equations by default, and the starred variant
 (with a `*`) disables numbering.
+
+The package also has several other convenient environments, for
+example for matrices.
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+AMS matrices.
+\[
+\begin{matrix}
+a & b & c \\
+d & e & f
+\end{matrix}
+\quad
+\begin{pmatrix}
+a & b & c \\
+d & e & f
+\end{pmatrix}
+\quad
+\begin{bmatrix}
+a & b & c \\
+d & e & f
+\end{bmatrix}
+\]
+\end{document}
+```
+
 
 ## Fonts in math mode
 
@@ -140,7 +203,7 @@ here:
 - `\mathrm`: roman (upright)
 - `\mathit`: italic spaced as 'text'
 - `\mathbf`: boldface
-- `\mathsf`: sanserif
+- `\mathsf`: sans serif
 - `\mathtt`: monospaced (typewriter)
 - `\mathbb`: double-struck ('blackboard bold')
 
@@ -154,7 +217,30 @@ The matrix $\mathbf{M}$.
 \end{document}
 ```
 
-If you need to make other symbols bold, [see the extra details](more-10).
+Note that the default math italic separates letters so that they may
+be used to denote a product of variables. Use `\mathit` to make a word italic.
+
+The `\math..` font commands use fonts specified for math
+use. Sometimes you need to embed a word that is part of the outer
+sentence structure and needs the current text font, for that you can
+use `\text{...}` (which is provided by the `amsmath` package) or
+specific font styles such as `\textrm{..}`.
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+$\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
+
+\textit{$\text{bad use } size \neq \mathit{size} \neq \mathrm{size} $}
+
+\end{document}
+```
+
+
+If you need to make other
+symbols bold, [see the extra details](more-10).
 
 ## Exercises
 
@@ -166,3 +252,9 @@ able to guess the names.
 
 Experiment with the font changing commands: what happens when you try to
 nest them?
+
+Displayed math is centered by default; try adding the `[fleqn]` (flush
+left equation) option to some of the above examples to see a different
+layout. Similarly equation numbers are usually on the
+right. Experiment with adding the `[leqno]` (left equation numbers)
+document class option.
