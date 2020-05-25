@@ -7,7 +7,7 @@ Unlike many computer programs, LaTeX is not a single application containing
 We can divide those up into two things you actually need:
 
 - A _TeX system_
-- A LaTeX-specific editor
+- A text editor (often a LaTeX-specific one)
 
 ## {{ site.tex }} systems
 
