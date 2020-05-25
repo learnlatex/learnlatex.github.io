@@ -18,7 +18,7 @@ function llexamples() {
 	if(p[i].textContent.indexOf("\\documentclass") !== -1) {
 	    // latexonline
 	    var r = document.createElement("button");
-	    r.innerText="LaTeX online";
+	    r.innerText="LaTeX.Online";
 	    r.setAttribute("onclick",'latexonlinecc("pre' + i + '")');
 	    r.setAttribute("id","lo-pre" + i);
 	    p[i].parentNode.insertBefore(r, p[i].nextSibling);
