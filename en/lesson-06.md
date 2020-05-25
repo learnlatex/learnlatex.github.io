@@ -36,8 +36,7 @@ material, and which will be able to give us at least one hyphenation point.
 ```
 
 Try un-commenting the (clearly misleading) line to load `babel` and see the
-effect. (The standard hyphenation rules are US English; use the `UKenglish`
-option to tell `babel` if you are in UK.)
+effect. (The standard hyphenation rules are US English.)
 
 The `babel` package does a lot more than hyphenation, depending on the language
 involved; we've given [some more details](more-06) if you need them.
