@@ -1,38 +1,41 @@
 ---
-title: "What is LaTeX and how does it work?"
+title: "LaTeX là gì và nó hoạt động như thế nào?"
 ---
 
-Unlike common word processors such as Microsoft Word or LibreOffice, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
+Không giống những trình soạn thảo văn bản thông dụng như Microsoft Word hay
+LibreOffice, LaTeX không phải là một trình soạn thảo WYSIWYG ('What You See Is
+What You Get'). Trong LaTeX, ta dùng văn bản thuần túy (plain text) và thêm các
+markup (dưới dạng các câu lệnh, v.v...) vào. Những markup này sẽ cho LaTeX biết
+ý nghĩa của từng phần trong văn bản, tương tự như HTML.
 
-Take for example the element  `<h2>`  indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+Ví dụ, `<h2>` bắt đầu một phần trong một văn bản HTML. LaTeX cũng có một câu
+lệnh cho việc này, đó là `\section`.
 
-## The {{ site.latex }} workflow
+## Quy trình làm việc với {{ site.latex }}
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+Vì các tệp LaTeX không phải là văn bản trực tiếp mà chỉ là phần code để các
+trình biên dịch tạo ra văn bản, nên thông thường bạn không cần phải đưa cho
+mọi người tệp LaTeX của mình. Thay vào đó, sau khi viết xong _mã nguồn_ LaTeX,
+bạn chạy LaTeX trên tệp này (thông thường bằng một chương trình máy tính có tên
+là `pdflatex`) để tạo ra một tệp PDF. Tệp PDF này chính là văn bản sau cùng để
+bạn gửi cho những người khác.
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+Mọi người sử dụng các cách khác nhau để gọi tên quá trình này. Vì LaTeX tương
+đối giống với lập trình, quy trình thường được gọi là 'biên dịch' văn bản, mặc
+dù 'typesetting' (sắp chữ) là cách gọi hợp lý hơn.
 
-## Multiple {{ site.latex }} runs
+## Chạy {{ site.latex }} nhiều lần
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+Đối với những tệp đơn giản, bạn chỉ cần biên dịch một lần để có được tệp PDF
+hoàn chỉnh. Nhưng một khi bạn thêm những thứ phức tạp hơn, ví dụ như các đường
+dẫn trong văn bản, trích dẫn tài liệu (citation), hình vẽ hay mục lục, bạn có
+thể phải chạy LaTeX nhiều hơn một lần. Chúng ta sẽ nói về việc khi nào chạy
+LaTeX nhiều hơn một lần là cần thiết.
 
-## {{ site.latex }} or pdf{{ site.latex }} or ...
+## {{ site.latex }} hay pdf{{ site.latex }} hay...
 
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+Trong [bài tiếp theo](lesson-02), chúng ta sẽ thấy rằng LaTeX chỉ bao gồm một
+chương trình máy tính duy nhất. Để đơn giản, ta sẽ quan tâm chủ yếu vào một
+chương trình cụ thể, pdfLaTeX, để xuất ra các tệp PDF của bạn. Chúng ta sẽ đi
+tới những chương trình khác, và những lợi ích và công dụng của nó, trong những
+bài sau của khóa này.
