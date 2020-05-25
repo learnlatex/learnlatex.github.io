@@ -20,6 +20,22 @@ package.
 \end{document}
 ```
 
+## Forcing a new line
+
+Most of the time, you should not force a new line in LaTeX: you almost
+certainly want a new paragraph or to use `parskip`, as we've just seen,
+to put a 'blank line' between paragraphs.
+
+There are a _few_ places where you use `\\` to start a new line without
+starting a new paragraph
+
+- At the end of table rows
+- Inside the `center` environment
+- In poetry (the `verse` environment)
+
+Almost always, if you are not in one of those special places, you should
+_not_ use `\\`.
+
 ## Adding explicit space
 
 We can insert a thin space (about half the normal thickness) using
