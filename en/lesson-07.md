@@ -108,7 +108,7 @@ specifiers
 - `b` Bottom of the page
 - `p` A dedicated page only for floats
 
-[Later](lesson-11), we will see how to cross-reference floats so you can point
+[Later](lesson-09), we will see how to cross-reference floats so you can point
 to them from your text.
 
 You'll probably spot that we've centered the image here using `\centering`
