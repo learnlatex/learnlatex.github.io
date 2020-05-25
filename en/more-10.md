@@ -55,7 +55,7 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 ```
 
 
-In addition there are variants of the alignment environments ending
+In addition there are variants of the display environments ending
 in `ed` that make a subterm of a larger display for example, `aligned` and
 `gathered`.
 
@@ -126,7 +126,7 @@ If you want to access bold symbols (as would be used by `\boldmath`)
 within an otherwise normal weight expression, then you can use the
 command `\bm` from the `bm` package. Note that `\bm` also works with
 symbols such as = and Greek letters. (Note that `\mathbf` has no effect
-on `\pi` in teh example above.)
+on `\pi` in the example above.)
 
 ```latex
 \documentclass[a4paper]{article}
