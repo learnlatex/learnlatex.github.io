@@ -25,7 +25,7 @@ Có ba trình biên dịch gốc được dùng phổ biến ngày nay:
 
 Ta sẽ xem xét [XeTeX và LuaTeX sau](lesson-14): điều chính ta cần biết đó là
 hai chương trình này có thể sử dụng các font chữ từ hệ điều hành, điều mà pdfTeX
-không thể thực hiện được/
+không thể thực hiện được.
 
 Nếu bạn ở Nhật Bản, hay đang viết một văn bản có nhiều thành phần tiếng Nhật,
 bạn có thể đã từng nghe nói đến pTeX và upTeX. Đây là những trình biên dịch gốc
