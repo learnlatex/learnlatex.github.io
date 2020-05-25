@@ -1,31 +1,34 @@
 ---
-title: "More on: Working with LaTeX"
+title: "Bổ sung: Làm việc với LaTeX"
 ---
 
-For most of our examples, we don't use a program called `latex` but instead
-one called `pdflatex`. This is one of a family of related programs, all
-of which are 'descendants' of `latex`. We have chosen `pdflatex` because
-it is perhaps the most widely-used system and directly produces PDF files.
+Đối với hầu hết các ví dụ, ta sẽ không dùng chương trình `latex` mà sẽ dùng một
+chương trình được gọi là `pdflatex`. Đây là thành viên của một hệ các chương
+trình tương tự, tất cả đều là "con cháu" của `latex`. Ta sẽ dùng `pdflatex` vì
+nó có lẽ là chương trình biên dịch phổ biến nhất và có thể xuất trực tiếp ra
+các tệp PDF.
 
-## Formats and engines
+## Định dạng TeX và trình biên dịch gốc
 
-As described [earlier](more-01), LaTeX is built on a system called TeX. We
-call LaTeX a 'format': a collection of macros (instructions and commands) that
-TeX understands. When you run `pdflatex`, you are _actually_ starting a
-program called 'pdfTeX' with a pre-loaded 'LaTeX format'. We normally call
-pdfTeX an _engine_: a program that understands TeX instructions.
+Như đã được mô tả [trước đó](more-01), LaTeX được phát triển trên một hệ gọi là
+TeX. Ta gọi LaTeX là một 'định dạng': một tập hợp các macros (câu lệnh, v.v...)
+mà TeX có thể hiểu được. Khi bạn chạy `pdflatex`, _thực ra_ bạn đang chạy một
+chương trình gọi là 'pdfTeX' đã dùng sẵn định dạng LaTeX. Ta thường gọi pdfTeX
+là một _trình biên dịch gốc_: một chương trình có thể hiểu được những gì TeX yêu 
+cầu thực hiện.
 
-There are three engines in common use today:
+Có ba trình biên dịch gốc được dùng phổ biến ngày nay:
 
 - pdfTeX
 - XeTeX
 - LuaTeX
 
-We will cover [XeTeX and LuaTeX later](lesson-14): the main thing we need to
-know now is that they are capable of loading operating system fonts, whereas
-pdfTeX can't do that.
+Ta sẽ xem xét [XeTeX và LuaTeX sau](lesson-14): điều chính ta cần biết đó là
+hai chương trình này có thể sử dụng các font chữ từ hệ điều hành, điều mà pdfTeX
+không thể thực hiện được/
 
-If you are in Japan, or writing lots of Japanese, you might also come across
-pTeX and upTeX. These are specialised engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX, in particular, is still
-the most popular system for Japanese.
+Nếu bạn ở Nhật Bản, hay đang viết một văn bản có nhiều thành phần tiếng Nhật,
+bạn có thể đã từng nghe nói đến pTeX và upTeX. Đây là những trình biên dịch gốc
+được viết cho việc sắp chữ theo chiều dọc. LuaTeX cũng có thể làm được điều này,
+nhưng hiện tại, upTeX vẫn là trình biên dịch gốc phổ biến nhất cho ngôn ngữ 
+tiếng Nhật.
