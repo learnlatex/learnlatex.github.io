@@ -88,6 +88,14 @@ bit in an exercise. You might wonder how we can know about the hooks they
 provide; we will cover that [in the last lesson](lesson-15), but you can always
 jump ahead!
 
+## Presentations
+
+The `slides` class was developed for making physical slides in the mid-1980s, so
+doesn't have any features for creating interactive PDF-based presentations.
+There are modern classes that do exactly that: they are somewhat specialist
+compared to general LaTeX documents, so we've [covered them in the additional
+information](more-05).
+
 ## Exercises
 
 Explore how changing the document class between the standard ones, the KOMA
