@@ -1,18 +1,21 @@
 ---
-title: "Your first LaTeX document"
+title: "Văn bản LaTeX đầu tiên của bạn"
 ---
 
-Our first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to [see how to use the examples here on `learnlatex.org`](help).
+Văn bản LaTeX đầu tiên sẽ rất đơn giản, ý tưởng là để cho bạn thấy bố cục của
+một văn bản và cách để biên dịch nó thành công. Đây cũng là cơ hội đầu tiên của
+bạn để [sử dụng các ví dụ ở đây trên `learnlatex.org`](help).
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
-If you are using the online system, you can just click on the ‘LaTeX.Online’
-or ‘Open in Overleaf’ buttons in the
-example to try it out! We suggest you try out the online options even if you
-have set up LaTeX locally; this is a good chance to see how the different
-options work.
+Nếu bạn đang sử dụng một hệ thống TeX được cài đặt lên máy tính của mình, trong
+trình soạn thảo mã nguồn hãy tạo một tệp mới đặt tên là `first.tex`, và sao chép
+đoạn mã sau vào tệp hoặc gõ lại nó. Nếu bạn đang sử dụng một dịch vụ trực tuyến,
+bạn có thể nhấn vào nút "LaTeX.Online" hoặc "Open in Overleaf" để thử nó! Chúng
+tôi khuyên bạn nên thử những lựa chọn trực tuyến ngay cả khi đã cài đặt một hệ
+thống TeX; đây là một cơ hội tốt để thấy được các lựa chọn khác nhau hoạt động
+như thế nào.
+
+Chú ý rằng ta sẽ dùng tiếng Anh cho các ví dụ ở đây. Cách dùng tiếng Việt trong
+LaTeX sẽ được nói tới trong [một bài khác](language-01).
 ```latex
 \documentclass{article}
 
@@ -22,97 +25,96 @@ Hey world!
 This is a first document.
 \end{document}
 ```
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+Lưu tệp lại và biên dịch thành một tệp PDF. Nếu bạn đang sử dụng một hệ thống
+LaTeX trên máy tính của mình, nút biên dịch sẽ tùy thuộc vào trình soạn mã nguồn
+mà bạn dùng. Bạn sẽ được một tệp PDF có dòng chữ phía trên _và_ số trang; LaTeX
+thêm số trang tự động.
 
-View the output `first.pdf` with
-whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+Xem tệp output `first.pdf` với một trình đọc PDF. Chúc mừng, bạn đã biên dịch
+thành công tệp LaTeX đầu tiên!
 
-## Handling errors
+## Xử lý lỗi
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+Nhiều khi quá trình biên dịch có thể sinh lỗi. Kiểm tra bạn đã gõ lại mỗi dòng
+trong tệp LaTeX giống hệt như đã viết ở trên. Đôi khi một thay đổi rất nhỏ trong
+mã LaTeX có thể dẫn đến những thay đổi lớn trong văn bản, đôi khi thậm chí làm
+cho trình dịch không thể xuất ra văn bản được. Nếu bạn cảm thấy bị mắc, xóa toàn
+bộ mã và sao chép lại đoạn mã trên từ đầu.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+Nếu quá trình biên dịch LaTeX kết thúc với một dấu hỏi chấm `?`, bạn có thể
+thoát ra bằng việc gõ `x` và nhấn `<Enter>`.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+LaTeX thường cố gắng để các đoạn lỗi có ích cho người dùng, nhưng chúng không
+giống các đoạn lỗi trong các trình soạn thảo văn bản. Một vài phần mềm sửa mã
+nguồn còn cắt đi một phần đoạn lỗi, và phần bị cắt có thể chứa những yếu tố
+quan trọng. LaTeX luôn viết lại những gì nó đang làm vào một tệp, đây là một tệp
+có định dạng `.log`. Bạn luôn luôn có thể xem toàn bộ đoạn lỗi ở đó, và khi bạn
+gặp một vấn đề nào đó, những người dùng LaTeX thành thạo thường đề nghị bạn cung
+cấp một bản sao của tệp log này.
 
-## What you've got
+## Những kiến thức ta đã có được
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+Văn bản ở trên cho thấy những điều cơ bản nhất. Các văn bản LaTeX là sự kết hợp
+giữa các đoạn văn bản và các câu lệnh. Các câu lệnh bắt đầu bằng một ký tự `\`,
+đôi khi có những đối số (argument) trong cặp ngoặc nhọn `{}` (và đôi khi có
+những đối số _không bắt buộc_ trong cặp ngoặc vuông `[]`). Sau đó bạn có được
+một output PDF bằng việc yêu cầu LaTeX biên dịch mã nguồn của mình.
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with a blank line).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
+Mọi văn bản LaTeX đều có một `\begin{document}` kết hợp với một
+`\end{document}`. Giữa hai cái này là phần *thân văn bản*, nơi mà bạn để nội
+dung văn bản của mình. Trong ví dụ trên, phần thân có hai đoạn văn (chú ý rằng
+trong LaTeX ta phân cách các đoạn văn _bằng các dòng trống_). Phần đi trước
+`\begin{document}` được gọi là phần *khai báo* (preamble), phần này chứa các
+đoạn mã để thiết lập những cài đặt và thiết kế cho văn bản.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-You must also nest them, so that if you have
-`\begin{x} ... \begin{y}` then you must have
-`\end{y} ... \end{x}`.
+Ngoài ra, LaTeX cũng có nhiều cặp `\begin{...}` và `\end{...}` nữa; những cặp
+này được gọi là các *môi trường*. Chúng không thể đứng một mình: đối với mỗi
+`\begin{x}` cần phải có một `\end{x}`. Bạn cũng có thể lồng các môi trường với
+nhau, nhưng đảm bảo rằng các môi trường phải "đi theo cặp", nói cách khác, nếu
+bạn có `\begin{x} ... \begin{y}` bạn phải có `\end{y} ... \end{x}`.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+Ta có thể thêm ghi chú vào mã nguồn bằng cách bắt đầu chúng bằng ký tự `%`. Hãy
+cùng thử nó xem:
 ```latex
-\documentclass[a4paper,12pt]{article} % The document class with options
-% A comment in the preamble
+\documentclass[a4paper,12pt]{article} % Lớp văn bản với một số tùy chọn
+% Một ghi chú ở phần khai báo
 \begin{document}
-% This is a comment
+% Đây là một ghi chú nữa
 This is   a simple
 document\footnote{with a footnote}.
 
 This is a new paragraph.
 \end{document}
 ```
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+Bạn có thể thấy ta có hai đoạn văn: chú ý một dòng trống đã được sử dụng cho
+việc đó. Bạn cũng có thể thấy nhiều ký tự trống liên tiếp nhau đã được LaTeX
+hiểu là một ký tự trống duy nhất.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+Đôi khi bạn có thể cần một ký tự trống mạnh hơn mà không bị phân thành các dòng;
+trong LaTeX ta có thể có được điều này bằng `~` &ndash; nó cho một ký tự trống
+nhưng 'buộc' hai từ bên cạnh lại với nhau làm cho chúng buộc phải hiện ra trên
+một dòng duy nhất. Điều này có thể rất hữu ích khi ta bắt đầu viết các đường dẫn
+trong văn bản ở phần sau của khóa học này.
 
-## Special characters
+## Các ký tự đặc biệt
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+Bạn đã có thể thấy rằng `\`, `{` và `}` có ý nghĩa đặc biệt trong LaTeX. Một `\`
+bắt đầu một câu lệnh, `{` và `}` được dùng cho các _đối số bắt buộc_: những
+thông tin mà một câu lệnh yêu cầu.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+Có một vài ký tự khác cũng có ý nghĩa đặc biệt, ví dụ như ký tự `~` mà ta vừa
+mới biết. Hầu như tất cả các ký tự đặc biệt như vậy đều _rất ít khi_ được dùng
+trong văn bản thông thường, đó là lý do tại sao chúng được chọn cho những việc
+như vậy. Nếu bạn cần phải viết những ký tự đặc biệt như thế này vào văn bản, bạn
+có thể đọc thêm trong [phần bổ sung của bài học này](more-03).
 
-## Exercise
+## Bài tập
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+Thử "thí nghiệm" với hệ thống sửa và viết mã tại đây, ấn vào nút để biên dịch
+văn bản, sau đó sửa mã ngay trong trang này rồi biên dịch lại.
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+Thử thêm một vài dòng nữa vào văn bản của bạn, biên dịch và xem những thay đổi
+trong tệp PDF. Tìm hiểu cách hoạt động của trình sửa mã nguồn của bạn và thử tìm
+cách để đi từ một vị trí trong mã nguồn tới vị trí tương ứng của nó trong PDF.
+Thử thêm một vài ký tự `~` và xem những ảnh hưởng của nó đến việc tách dòng
+trong đoạn văn trong LaTeX.

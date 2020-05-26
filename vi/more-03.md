@@ -1,35 +1,36 @@
 ---
-title: "More on: Your first LaTeX document"
+title: "Bổ sung: Văn bản LaTeX đầu tiên của bạn"
 ---
 
-## Running LaTeX
+## Chạy LaTeX
 
-As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
-this, try opening your first document in a simple text editor, for example
-on Windows using Notepad. You should see the same text as in a dedicated LaTeX
-editor, but without any highlight of keywords.
+Như đã được mô tả [ở bài trước](lesson-02), các văn bản LaTeX chỉ là những văn
+bản mã thuần túy. Để thấy điều này, bạn hãy thử mở tệp LaTeX trong một trình mã
+nguồn đơn giản, ví dụ như Notepad trên Windows. Bạn sẽ thấy nội dung tệp giống
+hệt như trên một trình sửa mã nguồn với nhiều tính năng hơn, chỉ là không có
+syntax highlighting, v.v...
 
-You can also convert to PDF without your editor; this means using the Command
-Prompt/Terminal, so don't worry if you are not familiar with this. If you
-*are*, you can navigate to the directory containing your `.tex` source file and
-run
+Bạn cũng có thể tạo ra PDF mà không cần trình mã nguồn phức tạp nào cả; điều này
+tương đương với việc sử dụng trình gõ lệnh (Command Prompt hay Terminal), nên
+nếu bạn không quen những điều này, không sao cả. Nếu bạn *có quen*, bạn có thể
+`cd` tới thư mục chứa tệp nguồn `.tex` và chạy
 
 `pdflatex first`
 
-or
+hay
 
 `pdflatex first.tex`
 
-to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with`.tex` unless you specify otherwise.
+để biên dịch ra tệp PDF. Chú ý rằng việc thêm đuôi tệp `.tex` là không bắt buộc
+&ndash; LaTeX sẽ hiểu đuôi tệp là `.tex` nếu bạn dùng một tệp không có đuôi.
 
-## Special characters
+## Các ký tự đặc biệt
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need a command instead
+Nếu bạn muốn viết một ký tự đặc biệt, thông thường bạn chỉ cần thêm một ký tự
+`\` ngay trước nó, ví dụ như `\{` được dùng để in ra một ký tự mở ngoặc nhọn.
+Tuy nhiên, cũng có một vài trường hợp mà bạn cần một câu lệnh hoàn chỉnh.
 
-| Symbol | Command           |
+| Ký tự  | Câu lệnh          |
 | `{`    | `\{`              |
 | `}`    | `\}`              |
 | `$`    | `\$`              |
