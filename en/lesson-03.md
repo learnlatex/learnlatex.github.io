@@ -70,9 +70,9 @@ which has code to set up the document layout.
 LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
 called *environments*.
 You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-You must also nest them, so that if you have
-`\begin{x} ... \begin{y}` then you must have
-`\end{y} ... \end{x}`.
+If you nest them, then you must have `\end{y} ... \end{x}` to match
+`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
+in order.
 
 We can add comments to a LaTeX file by starting them with `%`; let's use
 that to show the structure:
