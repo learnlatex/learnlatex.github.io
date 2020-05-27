@@ -63,7 +63,7 @@ Every LaTeX document has a `\begin{document}` and a matching
 `\end{document}`.
 Between these two is the *document body*, where your content goes.
 Here the body has two paragraphs (in LaTeX you separate paragraphs
-with a blank line).
+with one or more blank lines).
 Before `\begin{document}` is the *document preamble*,
 which has code to set up the document layout.
 
