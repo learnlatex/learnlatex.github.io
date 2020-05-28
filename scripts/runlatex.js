@@ -1,30 +1,40 @@
 
 var preincludes={};
 
+var buttons ={
+    "edit":             "edit",
+    "copy":             "copy",
+    "Open in Overleaf": "Open in Overleaf",
+    "Latex.Online":     "Latex.Online",
+    "Delete Output":    "Delete Output"
+}
+
+
+
 function llexamples() {
     var p = document.getElementsByTagName("pre");
     for(var i=0;i<p.length;i++) {
 	p[i].setAttribute("id","pre" + i);
 	// edit
 	var b = document.createElement("button");
-	b.innerText="edit";
+	b.innerText=buttons["edit"];
 	b.setAttribute("onclick",'allowedit("pre' + i + '")');
 	p[i].parentNode.insertBefore(b, p[i]);
 	// copy
 	var c = document.createElement("button");
-	c.innerText="copy";
+	c.innerText=buttons["copy"];
 	c.setAttribute("onclick",'copytoclipboard("pre' + i + '")');
 	p[i].parentNode.insertBefore(c, p[i]);
 	if(p[i].textContent.indexOf("\\documentclass") !== -1) {
 	    // latexonline
 	    var r = document.createElement("button");
-	    r.innerText="LaTeX.Online";
+	    r.innerText=buttons["LaTeX.Online"];
 	    r.setAttribute("onclick",'latexonlinecc("pre' + i + '")');
 	    r.setAttribute("id","lo-pre" + i);
 	    p[i].parentNode.insertBefore(r, p[i].nextSibling);
 	    // overleaf
 	    var o = document.createElement("button");
-	    o.innerText="Open in Overleaf";
+	    o.innerText=buttons["Open in Overleaf"];
 	    o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
 	    p[i].parentNode.insertBefore(o, p[i].nextSibling);
 	    var f=document.createElement("span");
@@ -71,7 +81,7 @@ function latexonlinecc(nd) {
 	ifr.setAttribute("id",nd + "ifr");
 	p.parentNode.insertBefore(ifr, b.nextSibling);
 	d=document.createElement("button");
-	d.innerText="Delete Output";
+	d.innerText=buttons["Delete Output"];
 	d.setAttribute("id","del-" + nd);
 	d.setAttribute("onclick",'deleteoutput("' + nd + '")');
 	p.parentNode.insertBefore(d, b.nextSibling);
