@@ -250,6 +250,7 @@ case you can use `\addlinespace` to insert a small skip.
 ```latex
 \documentclass{article}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
