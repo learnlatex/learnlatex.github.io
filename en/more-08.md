@@ -24,6 +24,7 @@ colon after it, you can do the following:
 ```latex
 \documentclass{article}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
@@ -51,6 +52,7 @@ it can be used to change a single cell's alignment as shown below.
 ```latex
 \documentclass{article}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
@@ -197,7 +199,8 @@ A simple example with two aligned numeric columns would be:
 
 ```latex
 \documentclass{article}
-\usepackage{booktabs,siunitx}
+\usepackage{booktabs}
+\usepackage{siunitx}
 \begin{document}
 \begin{tabular}{SS}
 \toprule
