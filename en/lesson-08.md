@@ -169,7 +169,9 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \begin{document}
 \begin{tabular}{lll}
@@ -194,7 +196,8 @@ column you need to specify that as a range (with both numbers matching).
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -219,7 +222,8 @@ with an optional argument enclosed in parentheses:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -288,7 +292,9 @@ single column type_.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \begin{document}
 \begin{tabular}{lll}
@@ -314,7 +320,9 @@ table's head row:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \begin{document}
 \begin{tabular}{lll}
@@ -338,7 +346,9 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \begin{document}
 \begin{tabular}{lll}

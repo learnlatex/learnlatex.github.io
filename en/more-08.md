@@ -335,7 +335,8 @@ page breaking. Here we show the `longtable` package:
 ```
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
-\usepackage{array,longtable}
+\usepackage{array}
+\usepackage{longtable}
 \begin{document}
 \begin{longtable}{cc}
 \multicolumn{2}{c}{A Long Table}\\
@@ -382,7 +383,8 @@ for full details, but we show a simple example here.
 
 ```latex
 \documentclass{article}
-\usepackage{array,threeparttable}
+\usepackage{array}
+\usepackage{threeparttable}
 \begin{document}
 
 \begin{table}
@@ -422,7 +424,8 @@ text size.
 
 ```latex
 \documentclass[a4paper]{article}
-\usepackage{array,ragged2e}
+\usepackage{array}
+\usepackage{ragged2e}
 \begin{document}
 
 \begin{table}
