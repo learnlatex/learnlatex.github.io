@@ -481,6 +481,7 @@ a single row in which some cells are split vertically by the use of nested
 ```latex
 \documentclass{article}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lcc}
@@ -504,6 +505,7 @@ bottom aligned respectively and is used like this:
 ```latex
 \documentclass{article}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lcc}
