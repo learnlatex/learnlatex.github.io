@@ -7,7 +7,7 @@ title: Translating learnlatex.org
 We encourage translations of the learnlatex.org course, the translations can be hosted in the main
 site.
 
-## Initial setup.
+## Initial setup
 
 If you are proposing to make a translation please open a
 [new issue](https://github.com/learnlatex/learnlatex.github.io/issues) at
@@ -54,12 +54,12 @@ use a separate URL to host the course.
 
 For the examples themselves there are two approaches possible.
 
-### English examples.
+### English examples
 
 You may wish to keep the example texts unchanged but just translate
 the descriptive texts.
 
-### Translating examples.
+### Translating examples
 
 For some communities it is more natural
 that the examples are also translated. One issue here is that making
@@ -78,7 +78,7 @@ to the current examples as possible even if they are set up to run
 with a different engine (which can be accomplished by adding a `! TEX`
 comment to the example.)
 
-## Language specific lessons.
+## Language specific lessons
 
 At least one language specific lesson should be added as `language-01` although you can add more as needed.
 This should _not_ be a translation of `en/language-01` but rather any specific details for the language
@@ -102,7 +102,7 @@ the main site.
 At this point you can close the initial issue raised that flagged your
 intention to provide a translation.
 
-## Making changes after the files have been merged.
+## Making changes after the files have been merged
 
 If you need to make changes later, either to improve the translation,
 or because the English text has been updated, then the same basic system
