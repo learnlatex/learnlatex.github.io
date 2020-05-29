@@ -16,7 +16,8 @@ title: "LaTeX engines for Japanese"
 \maketitle
 
 \begin{abstract}
-本稿では、文書組版システムp\LaTeX{}の使い方を解説します。p\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマンドと呼ばれる組版用の指示を混在させ\ldots
+本稿では、文書組版システムp\LaTeX{}の使い方を解説します。
+p\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマンドと呼ばれる組版用の指示を混在させ\ldots
 \end{abstract}
 
 \section{導入}
@@ -39,7 +40,8 @@ title: "LaTeX engines for Japanese"
 \maketitle
 
 \begin{abstract}
-本稿では、文書組版システムup\LaTeX{}の使い方を解説します。up\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマンドと呼ばれる組版用の指示を混在させ\ldots
+本稿では、文書組版システムup\LaTeX{}の使い方を解説します。
+up\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマンドと呼ばれる組版用の指示を混在させ\ldots
 \end{abstract}
 
 \section{導入}
@@ -64,7 +66,8 @@ title: "LaTeX engines for Japanese"
 \maketitle
 
 \begin{abstract}
-本稿では、文書組版システムLua\LaTeX{}の使い方を解説します。Lua\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマンドと呼ばれる組版用の指示を混在させ\ldots
+本稿では、文書組版システムLua\LaTeX{}の使い方を解説します。
+Lua\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマンドと呼ばれる組版用の指示を混在させ\ldots
 \end{abstract}
 
 \section{導入}
