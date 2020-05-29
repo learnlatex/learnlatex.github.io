@@ -27,7 +27,7 @@ Once the initial site is working, you can make add the new language files by tak
 ISO 639-1 two letter language code for your language, which we shall assume is `zz`
 
 1. Make a new directory `zz` as a copy of the english pages in `en`, including the subdirectory `en/includes`
-2. Copy top level `index.html` into the `zz` directort and change references to `en` to `zz`.
+2. Copy top level `index.html` into the `zz` directory and change references to `en` to `zz`.
    (See the examples for existing languages, such as `de`).
 3. Add the two level code `zz` to the `langs:` array in the `_config.yml` file.
 4. Translate the fixed strings in the files in `zz/includes` into your language.
