@@ -25,7 +25,7 @@ title: "Language-specifics for Japanese"
 \end{document}
 ```
 
-## pp{{site.latex}}
+## up{{site.latex}}
 
 ```latex
 % !TEX uplatex
