@@ -1,5 +1,6 @@
 ---
 title: "LaTeX engines for Japanese"
+next: "extra-01"
 ---
 
 ## p{{site.latex}}
