@@ -1,5 +1,5 @@
 ---
-title: "Language-specifics for Japanese"
+title: "LaTeX engines for Japanese"
 ---
 
 ## p{{site.latex}}
