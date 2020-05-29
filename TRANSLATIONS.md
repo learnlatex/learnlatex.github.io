@@ -35,7 +35,7 @@ ISO 639-1 two letter language code for your language, which we shall assume is `
    for the buttons used in examples such as "edit".
 
 
-At this point your language should appear im the drop down menu to
+At this point your language should appear in the drop down menu to
 select languages, and the navigation between pages. Obviously the main
 text is still English!
 
@@ -100,7 +100,7 @@ pull request using the GitHub site to request the files are added to
 the main site.
 
 At this point you can close the initial issue raised that flagged your
-intentionto provide a translation.
+intention to provide a translation.
 
 ## Making changes after the files have been merged.
 
