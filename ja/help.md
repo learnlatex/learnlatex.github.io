@@ -23,6 +23,8 @@ Japanese examples (only work in Overleaf currently) look like:
 \end{document}
 ```
 
+See also the examples in [The Japanese specific section of the site](language-01)
+
 ## English
 
 English example:
