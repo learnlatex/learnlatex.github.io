@@ -1,39 +1,37 @@
 ---
-title: "More on: Logical structure"
+title: "Bổ sung: Cấu trúc logic"
 ---
 
-## Document titles
+## Tiêu đề văn bản
 
-LaTeX offers some logical markup for the title of documents: three commands
-to set up 'meta-data' and one to use it.
+LaTeX cho ta một số markup cho tiêu đề và thông tin văn bản: ba câu lệnh để
+thiết lập các thông tin văn bản và một câu lệnh để sử dụng chúng.
 
 ```latex
 \documentclass{article}
 \begin{document}
-\author{A.~N.~Other \and D.~Nobacon}
-\title{Some things I did}
-\date{1st April 2020}
+\author{A.~N.~Other \and D.~Nobacon} % Tác giả
+\title{Some things I did}            % Tiêu đề văn bản
+\date{1st April 2020}                % Ngày viết văn bản
 \maketitle
 
 Some normal text.
 \end{document}
 ```
 
-As you can see, the commands `\author`, `\title` and `\date` save information,
-and `\maketitle` uses it. You can also separate multiple authors with `\and`.
-The commands `\author`, `\title` and `\date` need to come before `\maketitle`.
-Here, we've given them in the document body: they can also be used in the
-preamble, but if you use `babel` shortcuts they won't be active there.
+Như ta thấy, các câu lệnh `\author`, `\title` và `\date` lưu trữ một số thông
+tin, và `\maketitle` in ra các thông tin này. Ta cũng có thể phân chia các tác
+giả với `\and`. Chú ý rằng `\author`, `\title` và `\date` cần phải ở trước
+`\maketitle`. Ở đây, ta dùng chúng trong thân văn bản, nhưng chúng cũng có thể
+được dùng ở phần khai báo.
 
-The design provided by `\maketitle` depends on the document class (see [lesson
-5](lesson-05)). There is a `titlepage` environment for when you want to do
-custom design, but this is out of the scope of this introduction.  If you want
-to do your own document designs you can either use a customisable class, such
-as `memoir`, or start with one of LaTeX's base classes, like `book` and use it
-as a starting point.
+Cách `\maketitle` hoạt động phụ thuộc vào lớp văn bản (xem [bài 5](lesson-05)).
+Có môi trường `titlepage` để bạn có thể đưa ra các thiết kế tiêu đề tùy ý mình,
+nhưng môi trường này hơi nâng cao và không nằm trong phạm vi khóa này.
 
-## Exercise
+## Bài tập
 
-Try setting up different `\author`, `\title` and `\date` information to test
-out `\maketitle`. Which of them do you _have_ to give? Do the commands have to
-have an author, a title and a date in them?
+Thử đưa ra những thông tin khác nhau cho `\author`, `\title` và `\date` để kiểm
+tra cách hoạt động của `\maketitle`. Những câu lệnh nào trong số ba câu lệnh này
+là *bắt buộc* để `\maketitle` hoạt động? Liệu các câu lệnh có bắt buộc phải có
+nội dung bên trong nó không?
