@@ -59,6 +59,8 @@ up\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマ�
 \documentclass{article}
 
 \usepackage{luatexja}
+\usepackage[japanese]{babel}
+
 \title{Lua\LaTeX\ 実験}
 \author{林蓮枝}
 
