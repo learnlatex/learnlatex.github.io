@@ -1,24 +1,23 @@
 ---
-title: "More on: Using document classes to influence design"
+title: "Bổ sung: Sử dụng các lớp văn bản"
 ---
 
-## Journal-specific classes
+## Các lớp văn bản đặc biệt cho các tạp chí, báo...
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on CTAN and in standard TeX distributions.
+Nhiều tạp chí khoa học cung cấp các lớp văn bản cho cộng tác viên. Các lớp này
+thường thiết lập các định dạng cho giống với định dạng của tạp chí, mặc dù điều
+này có thể phụ thuộc vào font, kiểu chữ, v.v... Nếu có một lớp văn bản như vậy,
+thông thường nó được cung cấp trực tiếp bởi tòa soạn tạp chí, tuy nhiên cũng có
+một số lớp văn bản như vậy ở CTAN và các hệ thống TeX.
 
-## Classes for presentations
+## Các lớp văn bản cho trình chiếu
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+Một vùng cần khá nhiều sự quan tâm đặc biệt đó là việc viết các trình chiếu.
+Lớp `slides` được viết để làm các trình chiếu "cổ điển", và nó không có hỗ trợ
+đặc biệt gì cho các trình chiếu trên màn hình. Hai lớp văn bản khác đã được phát
+triển để cung cấp nhiều tính năng hơn, và được dùng khá phổ biến: `beamer` và
+`powerdot`. Vì `beamer` có lẽ là lớp thông dụng hơn, ta sẽ xét một vì dụ cách
+hoạt động của nó:
 
 ```latex
 \documentclass{beamer}
@@ -39,20 +38,21 @@ give you an example of how it works:
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+Ví dụ này cho ta hai ý tưởng quan trọng. Đầu tiên, `beamer` chia một văn bản
+thành các "frame", mỗi frame có thể tương ứng với nhiều hơn một slide. Thêm nữa,
+`beamer` còn thêm vào các cú pháp LaTeX bình thường một số thành phần để cho
+phép một phần của văn bản có thể hiện ra theo thứ tự. Đây là một tính năng rất
+mạnh nhưng nó khá phức tạp nên ta sẽ không xét nó ở đây. Bạn có thể xem
+[bài viết này](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/)
+để đọc thêm.
 
-## A class for images
+## Lớp văn bản cho hình ảnh
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+Đôi khi bạn cần phải tạo ra một hình ảnh (có thể có nhiều chữ trên đó) bằng
+LaTeX. Bạn không muốn có bất cứ thứ gì ngoài chính phần văn bản ở trên "trang"
+của output. Cách đơn giản nhất để làm việc này là sử dụng
+[lớp `standalone`](https://ctan.org/pkg/standalone). Nó tự thay đổi kích thước
+trang giấy theo nội dung văn bản.
 
 ```latex
 \documentclass{standalone}
