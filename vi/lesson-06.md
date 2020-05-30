@@ -1,29 +1,29 @@
 ---
-title: "Extending LaTeX using packages"
+title: "Mở rộng LaTeX bằng các gói lệnh"
 ---
 
-After having declared a class, in the preamble you can modify functionality in
-LaTeX by adding one or more *packages*. These can
+Sau khi khai báo lớp văn bản, trong phần khai báo bạn có thể thay đổi các chức
+năng trong LaTeX bằng việc thêm một hoặc nhiều *gói lệnh*. Những gói lệnh này
+có thể
 
-- Change how some parts of LaTeX work
-- Add new commands to LaTeX
-- Change document design
+- Thay đổi cách hoạt động của một số phần của LaTeX
+- Thêm các câu lệnh mới vào văn bản
+- Thay đổi thiết kế văn bản
 
-## Changing how LaTeX works
+## Thay đổi cách hoạt động của LaTeX
 
-The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
-and so some add-on packages deal with very common ideas. The first is to
-change how LaTeX deals with language-specific typesetting (hyphenation,
-punctuation, quotations, localisation, etc.). Different languages have different
-rules, so it's important to tell LaTeX which one to use. This is handled by the
-`babel` package.
+Khi nói về khả năng tùy chỉnh từ người dùng thì phần lõi của LaTeX khá bị giới
+hạn. Do đó, một số gói lệnh tăng cường được viết để xử lý những vấn đề này. Đầu
+tiên là thay đổi cách LaTeX hoạt động đối với một ngôn ngữ cụ thể nào đó. Các
+ngôn ngữ khác nhau có các quy tắc khác nhau, do đó ta cần phải cho LaTeX biết
+cần dùng ngôn ngữ nào. Điều này được xử lý bởi gói `babel`.
 
 ```latex
 \documentclass{article}
 
 %\usepackage[french]{babel}
 
-\usepackage[width = 6cm]{geometry} % To force hyphenation here
+\usepackage[width = 6cm]{geometry} % Để có được hyphenation
 
 \begin{document}
 
@@ -35,19 +35,19 @@ material, and which will be able to give us at least one hyphenation point.
 \end{document}
 ```
 
-Try un-commenting the (clearly misleading) line to load `babel` and see the
-effect. (The standard hyphenation rules are US English; use the `UKenglish`
-option to tell `babel` if you are in UK.)
+Thử bỏ dấu chú thích ở dòng khai báo `babel` và xem sự thay đổi trong output.
+(Mặc định LaTeX hiểu là cần phải dùng các quy tắc của tiếng Anh -- Mỹ. Dùng
+lựa chọn `vietnamese` nếu bạn muốn dùng tiếng Việt.)
 
-The `babel` package does a lot more than hyphenation, depending on the language
-involved; we've given [some more details](more-06) if you need them.
+Ngoài hyphenation (gạch nối các âm tiết trong từ), `babel` còn có thể làm được
+nhiều thứ khác. Ta sẽ xét chúng trong [bài bổ sung](more-06).
 
-## Changing design
+## Thay đổi thiết kế văn bản
 
-It's useful to be able to adjust some aspects of design independent of the
-document class. The most obvious one are the page margins. We've just used
-the `geometry` package in the example above, but let's now have an example
-specifically about margins.
+Việc thay đổi một vài định dạng của văn bản mà không phụ thuộc vào lớp văn bản
+là tương đối có ích. Một trong những định dạng cần thay đổi nhất đó là lề trang
+giấy. Ta đã dùng gói `geometry` trong ví dụ trên, nhưng bây giờ ta hãy cùng xem
+một ví dụ dành riêng cho việc thay đổi kích thước lề.
 
 ```latex
 \documentclass{book}
@@ -82,24 +82,25 @@ Text of the second section.
 \end{document}
 ```
 
-You should see the effect here compared to not loading `geometry`.
+Thử bỏ dòng khai báo `geometry` đi và xem sự thay đổi trong output.
 
-## Adding commands
+## Thêm các câu lệnh
 
-One of LaTeX's strengths is that you can choose from thousands of packages,
-including ones for writing mathematical text, for hyperlinking, for
-sophisticated capabilities with color, etc. We will see some more common
-packages in later lessons.
+Một trong những điểm mạnh của LaTeX đó là bạn có thể chọn từ hàng ngàn gói lệnh,
+trong đó có nhiều gói lệnh để viết các công thức toán học, để nhập các đường
+dẫn trong văn bản, để xử lý các vấn đề với màu, v.v... Ta sẽ đi qua một vài gói
+lệnh thông dụng nhất trong các bài sau.
 
-## Exercises
+## Bài tập
 
-Try out writing some text in other European languages and see how `babel`
-affects hyphenation: you can probably find some text on the internet, and guess
-the right options.
+Thử viết một vài đoạn văn theo một ngôn ngữ khác tiếng Anh và xem cách `babel`
+thay đổi các quy tắc.
 
-Try altering the margins in the `geometry` example. You can set the individual
-`top`, `bottom`, `left` and `right` margins separately using a comma-separated
-list.
+Thử thay đổi kích thước lề trong ví dụ `geometry`. Bạn có thể thiết lập các kích
+thước lề trên, dưới, trái, phải một cách riêng biệt bằng các tùy biến `top`,
+`bottom`, `left` và `right` theo thứ tự ấy. Chú ý rằng khi bạn cho nhiều tùy
+biến vào một gói lệnh hoặc một lớp văn bản, bạn phân tách các tùy biến bằng dấu
+phẩy.
 
-Try loading the `lipsum` package and then add the command `\lipsum` to your
-document. Can you guess why this package is useful for making examples?
+Thử khai báo gói lệnh `lipsum` và thêm lệnh `\lipsum` vào văn bản. Bạn sẽ thấy
+tại sao gói lệnh này rất hữu ích trong việc viết các mã ví dụ trong LaTeX.
