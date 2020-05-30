@@ -32,9 +32,13 @@ appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
 \usepackage{tgtermes}
 ```
 
-More information about the fonts that are available in a default `pdflatex`
-installation is available HERE.
-
+For `pdflatex`, most fonts are accessible through packages.  You can have a look
+at [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) or the
+[CTAN page on the ‘Font’ topic](https://www.ctan.org/topic/font) to see some
+options.  You can also search on the Internet for the font you want, and look
+for a `pdflatex`-compatible package version.  If you want to use a proprietary
+font, you can search for a suitable clone, which for most applications is
+similar enough to the original.
 
 ## The Unicode era
 
@@ -52,7 +56,16 @@ simple documents can look as easy as:
 \setmainfont{texgyretermes-regular.otf}
 ```
 This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
-Notably, this approach works for *any* OpenType font. Having selected a font,
+Notably, this approach works for *any* OpenType font.  Some fonts available for
+`pdflatex` are also available to `xelatex` and `lualatex` throught the
+respective packages as well, or by loading any font you have installed on your
+computer by using `fontspec` as showed above.
+[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
+with OpenType formats available, so you can use that as a resource for looking
+up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
+earlier.
+
+Having selected a font,
 input can now be typed directly in plain Unicode into a source document. Here is
 an example showing some Latin and Greek letters as well as some CJK ideographs:
 
