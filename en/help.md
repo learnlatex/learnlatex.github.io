@@ -90,12 +90,12 @@ When submitting projects to Overleaf or LaTeX.Online, by default the
 `pdflatex` engine will be used unless the example uses the `fontspec`
 package in which case `xelatex` is used.
 
-You can force the choice of `pdflatex`, `xelatex` or `lualatex` by using a comment of the form:
+You can force the choice of `pdflatex`, `xelatex`, `lualatex`, `platex` or `uplatex` by using a comment of the form:
 
 `% !TEX ` _any text_ `lualatex`
 
 where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
+is _any text_ between the first and last word. (_Currently platex and uplatex are only available on Overleaf, not on LaTeX.Online._)
 
 This allows the form `% !TEX program=pdflatex` used by some TeX editors
 but does not require the `program=` and is currently restricted to
