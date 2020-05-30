@@ -99,7 +99,7 @@ is _any text_ between the first and last word. (_Currently platex and uplatex ar
 
 This allows the form `% !TEX program=pdflatex` used by some TeX editors
 but does not require the `program=` and is currently restricted to
-specifying just one of the three engines that are supported on both of
+specifying just one of the five engines that are supported on
 the online systems being used.
 
 You can see an example of a comment being used to specify LuaLaTeX in
