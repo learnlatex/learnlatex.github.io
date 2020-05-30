@@ -11,6 +11,10 @@ Each lesson has a link to one associated lesson on the same subject
 that goes into greater depth. It should be possible to work through
 all 15 lessons _without_  reading the additional lessons.
 
+At the end of the course there are one or more lessons specific to the
+language being used for the lessons, and finally a gallery of examples
+of packages demonstrating LaTeX use not covered by this course.
+
 ## Running the examples
 
 Each example consists of a complete small LaTeX document shown within
