@@ -5,7 +5,7 @@ var buttons ={
     "edit":             "edit",
     "copy":             "copy",
     "Open in Overleaf": "Open in Overleaf",
-    "Latex.Online":     "Latex.Online",
+    "LaTeX.Online":     "LaTeX.Online",
     "Delete Output":    "Delete Output"
 }
 
@@ -64,11 +64,10 @@ function latexonlinecc(nd) {
 	    }
 	}
     }
-    "\\makeatletter\\def\\input@path{{latex.out/}}\\makeatother\n"
     var p = document.getElementById(nd);
     var t = p.innerText;
+    // no biber support currently
     if(t.indexOf("biblatex") !== -1) {
-	//	fconts=fconts + "\n\\RequirePackage[backend=bibtex]{biblatex}\n";
 	t=t.replace(/usepackage\{biblatex/,'usepackage[]\{biblatex');
 	t=t.replace(/\]\{biblatex/,',backend=bibtex]\{biblatex');
     }
@@ -94,6 +93,14 @@ function latexonlinecc(nd) {
 	cmd="&command=" + eng[1].toLowerCase();
     } else if(t.indexOf("fontspec") !== -1) {
 	cmd="&command=xelatex";
+    }
+    // no platex support currently
+    // this substitutes luatex possibly enough for very simple examples
+    // might be better to leave the default "unknown command" but this lets
+    // initial hello world documents be processed in page
+    if(cmd=="&command=platex" || cmd=="&command=uplatex"){
+	cmd="&command=lualatex";
+	t=t.replace(/\{jsarticle\}/,"{article}\\usepackage{luatexja}\\usepackage[japanese]{babel}");
     }
     ifr.setAttribute("src","https://texlive2020.latexonline.cc/compile?text=" + encodeURIComponent(fconts.replace(commentregex,'') + t.replace(engineregex,'')) + cmd);
 }
