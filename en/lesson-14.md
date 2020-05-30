@@ -57,9 +57,9 @@ simple documents can look as easy as:
 ```
 This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
 Notably, this approach works for *any* OpenType font.  Some fonts available for
-`pdflatex` are also available to `xelatex` and `lualatex` throught the
+`pdflatex` are also available to `xelatex` and `lualatex` through their
 respective packages as well, or by loading any font you have installed on your
-computer by using `fontspec` as showed above.
+computer by using `fontspec` as shown above.
 [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
 with OpenType formats available, so you can use that as a resource for looking
 up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
