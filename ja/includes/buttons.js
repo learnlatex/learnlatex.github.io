@@ -1,7 +1,7 @@
 var buttons ={
-    "edit":             "edit",
-    "copy":             "copy",
-    "Open in Overleaf": "Open in Overleaf",
-    "LaTeX.Online":     "LaTeX.Online",
-    "Delete Output":    "Delete Output"
+"edit": "編集",
+"copy": "コピー",
+"Open in Overleaf": "Overleaf で開く",
+"LaTeX.Online": "Latex.Online",
+"Delete Output": "出力を削除"
 }
