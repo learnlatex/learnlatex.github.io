@@ -1,17 +1,18 @@
 ---
-title: "Logical structure"
+title: "Cấu trúc logic"
 ---
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
+LaTeX cho ta nhiều cách để ta quan tâm đến cấu trúc logic trong văn bản, cũng
+như khả năng trực tiếp điều chỉnh thiết kế văn bản. Trong hầu hết các trường
+hợp, ta nên dùng những phương pháp để quan tâm tới cấu trúc trong văn bản, vì
+nó giúp ta có thể chỉnh sửa thiết kế văn bản khi cần một cách dễ dàng.
 
-## A first example
+## Ví dụ đầu tiên
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasised.)
+Ta sẽ bắt đầu với một ví dụ cho thấy sự khác biệt giữa một trong những câu lệnh
+markup hay dùng nhất trong LaTeX, `\emph`, với việc chỉ đơn thuần làm chữ
+nghiêng. (Làm nghiêng chữ là một cách thông dụng để nhấn mạnh một phần của văn
+bản.)
 
 ```latex
 \documentclass{article}
@@ -22,24 +23,27 @@ Some text in \textit{italic and \textit{nested} content}.
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+Bạn có thể đoán được là `\textit` là một câu lệnh để làm cho chữ nghiêng, tuy
+nhiên nó _luôn_ làm cho chữ nghiêng, vì thế nó hoạt động không tốt khi bạn lồng
+các câu lệnh này với nhau. Hãy xem cách `\emph` hoạt động khi được lồng vào
+nhau. Cũng có một số chỗ mà việc nhấn mạnh không có nghĩa là làm chữ nghiêng; ví
+dụ, trong những văn bản trình chiếu (presentation), ta thường dùng màu sắc để
+nhấn mạnh một phần văn bản. Với các markup logic này, ta không phải lo về những
+vấn đề như vậy trong phần thân văn bản.
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+Ta sẽ có một hướng dẫn chi tiết hơn vào [phần sau](lesson-11), nhưng bây giờ ta
+sẽ thêm `\textbf` vào những câu lệnh ta biết: câu lệnh này **tô đậm** chữ trong
+văn bản.
 
-## Sectioning commands
+## Các câu lệnh liên quan đến các phần của văn bản
 
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
+Có lẽ bạn đã từng sử dụng một trình soạn thảo văn bản, và bạn thường bắt đầu một
+phần mới bằng việc gõ đề mục và làm cho cái đề mục này có cỡ chữ to hơn và có
+kiểu chữ đậm, v.v..., rồi tách nó với các dòng khác bằng những dòng trống. Trong
+LaTeX, việc dùng những markup logic thường _dễ hơn_ việc tự căn chỉnh format
+"bằng tay": ta chỉ cần dùng câu lệnh `\section`. Tất cả những thứ liên quan đến
+thiết kế, ví dụ như font, cỡ chữ, các khoảng cách với các phần xung quanh, 
+v.v... đều được LaTeX lo.
 
 ```latex
 \documentclass{article}
@@ -65,43 +69,44 @@ Text of the second section.
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+Sử dụng thiết lập mặc định với lớp văn bản `article`, LaTeX đánh số các tên đề
+mục và các "đề mục con", cũng như in các đề mục với kiểu chữ đậm. Ta sẽ nói về
+việc thay đổi thiết kế [trong bài sau](lesson-05).
 
-LaTeX can divide up documents into quite a few levels
+LaTeX có thể chia một văn bản thành những cấp độ phần khác nhau
 
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
-- `\section`
-- `\subsection`
-- `\subsubsection`
+- `\chapter` (chương) (nhưng ta cần `\documentclass{book}` hoặc
+  `\documentclass{report}` cho câu lệnh này)
+- `\section` (phần)
+- `\subsection` (phần con)
+- `\subsubsection` (phần "cháu")
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+Ta có thể đi sâu thêm nữa, câu lệnh tiếp theo trong dãy là `\paragraph`, nhưng
+thường thì như vậy là hơi quá nhiều cấp độ trong các phần văn bản. (Chú ý rằng
+`\paragraph`, mặc dù dịch từ tiếng Anh là "đoạn", *không* phải là một cách để
+bắt đầu một đoạn văn mới!)
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+Bạn có thể nghĩ tới việc đặt tên văn bản. Có những câu lệnh đặc biệt cho việc
+này, nhưng vì không phải văn bản nào cũng dùng nó, nên ta sẽ nói về nó trong
+[bài bổ sung](more-04).
 
-## Lists
+## Danh sách
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+Một chỗ nữa mà bạn cần đến các markup logic là khi bạn viết các danh sách. Có
+hai loại danh sách chính có sẵn trong LaTeX:
 
 ```latex
 \documentclass{article}
 \begin{document}
 
-Ordered
+Ordered % Có đánh số
 \begin{enumerate}
   \item An entry
   \item Another One
   \item Wow! Three entries
 \end{enumerate}
 
-Unordered
+Unordered % Không đánh số
 \begin{itemize}
   \item An entry
   \item Another One
@@ -111,16 +116,18 @@ Unordered
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+Chú ý rằng ta dùng `\item` để bắt đầu mỗi thành phần trong danh sách.
 
-## Exercises
+## Bài tập
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+Thử một vài cấp độ câu lệnh cho đề mục trong văn bản. Thử dùng 
+`\documentclass{report}` thay vì `\documentclass{article}` và thêm các câu lệnh
+`\chapter`. Chúng cho kết quả ra sao? Thử dùng `\paragraph` và thậm chí cả
+`\subparagraph` để xem chúng trông như thế nào; mặc định chúng *không* được đánh
+số.
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+Thử làm một vài danh sách, lồng các danh sách. Khi lồng thì bạn thấy các ký tự
+đánh dấu các thành phần của danh sách (số đếm nếu là danh sách đánh số và
+chấm/gạch đầu dòng nếu là danh sách không đánh số) thay đổi như thế nào? Chú ý
+rằng bạn chỉ có thể lồng danh sách tới tối đa là 4 cấp độ trong LaTeX; dù sao
+việc lồng quá nhiều cấp độ cũng không phải là điều tốt.
