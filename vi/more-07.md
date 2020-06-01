@@ -1,35 +1,36 @@
 ---
-title: "More on: Including graphics and making things 'float'"
+title: "Bổ sung: Thêm hình ảnh và làm cho các hình linh động"
 ---
 
-## Naming graphics files
+## Đặt tên tệp ảnh
 
-LaTeX works on many computer platforms so
-file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces.
-For example, if you want to organize your files by keeping all
-graphics in a subdirectory, then something like
-`\includegraphics[width=30pt]{pix/mom.png}`
-is portable and future-proof.
+LaTeX hoạt động trên nhiều hệ điều hành nên các tên tệp nên được chú ý. Cách làm
+an toàn nhất là đặt tên các tệp đơn giản thôi: chỉ gồm các ký tự trong bảng chữ
+cái tiếng Anh, đồng thời không có khoảng trống (dấu cách). Ví dụ, nếu bạn muốn
+cho các ảnh vào một thư mục con, một thứ kiểu như
+`\includegraphics[width=30pt]{pix/mom.png}` là một cách làm an toàn.
 
-Spaces in file names are traditionally somewhat problematic, but are now
-generally supported. However, if you have spaces in the name, and you have
-issues, you may wish to try removing the spaces as the first step.
+Các ký tự trống trong tên tệp thường gây nhiều khó khăn cho máy tính, nhưng hiện
+tại nó cũng đã được hỗ trợ tương đối đầy đủ. Tuy nhiên, nếu bạn có dấu cách
+trong tên tệp và bạn gặp phải một số vấn đề, đầu tiên bạn nên bỏ các ký tự trống
+đó đi.
 
-Accented character support is somewhat variable; there are issues with some
-systems, particularly on Windows. If you find issues with accented characters
-in file names, try using only ASCII characters for a test.
+Việc dùng các ký tự có dấu (như á, ồ, v.v...) không thật sự được hỗ trợ nhiều,
+có nhiều vấn đề với một số hệ điều hành, đặc biệt là Windows. Nếu bạn có vấn đề
+với các ký tự có dấu, thử thay bằng các ký tự ASCII để thử.
 
-## Storing graphics in a subdirectory
+## Lưu trữ các ảnh trong một thư mục con
 
-A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate parts of the path _even on Windows_.
+Một cách thông dụng để sắp xếp các tệp đó là đưa toàn bộ hình ảnh vào một thư
+mục con. Sau đó bạn có thể dùng đường dẫn đến thư mục đó như ví dụ ở trên, chú ý
+rằng ký tự `/` được dùng để phân biệt các phần của đường dẫn
+_kể cả trên Windows_.
 
-If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs a braced entry
-for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have:
+Nếu bạn có nhiều hình vẽ, bạn có thể cần phải thiết lập thư mục con ngay từ đầu.
+Điều này có thể được thực hiện bằng `\graphicspath`. Các thư mục con sẽ được đưa
+vào trong cặp ngoặc và được viết như một "mảng" trong đối số của
+`\graphicspath`. Ví dụ, để thêm các thư mục con `figs` và `pics`, ta làm như
+sau:
 
 <!-- {% raw %} -->
 ```latex
@@ -37,37 +38,36 @@ subdirectories, we would have:
 ```
 <!-- {% endraw %} -->
 
-Notice in particular the trailing `/` in these.
+Chú ý ký tự `/` ở đuôi mỗi thư mục con!
 
-## Producing graphics
+## Vẽ hình
 
-As discussed, LaTeX easily uses graphics from most sources, including plots from
-scientific software. When you do that, you probably want to save as a PDF if you
-can, as this is a scalable format. If you do need to create a bitmap, aim for
-high resolution. You can make mouse-created graphics that include LaTeX snippets
-with [Inkscape](https://inkscape.org/). An alternative that in addition extends
-those drawing techniques to three dimensions is
-[Asymptote](https://www.ctan.org/pkg/asymptote). These two produce their output
-as files that you include in your document.
+Như đã thảo luận ở trên, LaTeX dễ dàng sử dụng hình ảnh từ hầu hết các nguồn, kể
+cả các đồ thị từ những phần mềm khoa học. Khi bạn thêm các hình như vậy, bạn nên
+lưu các đồ thị dưới định dạng PDF nếu có thể, vì đây là một định dạng vector
+(không bị "vỡ ảnh" khi phóng to &ndash; khác với định dạng bitmap của JPG hay
+PNG sẽ làm vỡ ảnh khi phóng to). Nếu bạn cần tạo ra tệp theo định dạng bitmap,
+hãy làm cho độ phân giải ảnh cao nhất có thể. Bạn có thể tạo ra các hình mà có
+cả một số tính năng của TeX với [Inkscape](https://inkscape.org). Nếu bạn cần vẽ
+hình trên không gian ba chiều, bạn có thể dùng
+[Asymptote](https://ctan.org/pkg/asymptote). Hai công cụ này có thể xuất ra
+các tệp mà bạn có thể thêm vào văn bản của mình.
 
-You can also create graphics such as drawings that are especially suited to
-LaTeX, with very high precision as well as equations and labels that match your
-document. You can draw graphics directly inside your document, which is
-convenient although at the cost of more complex documents with larger
-requirements, by using [Ti*k*Z](https://ctan.org/pkg/pgf). An alternative is
+Bạn cũng có thể tạo ra những hình vẽ trực tiếp trong LaTeX với độ chính xác cao.
+Điều này tương đối tiện lợi dù văn bản sẽ trở nên phức tạp hơn một chút, bằng
+việc sử dụng [Ti*k*Z](https://ctan.org/pkg/pgf) hay
 [PSTricks](https://ctan.org/pkg/pstricks-base).
 
-## Placing floats
+## Đặt vị trí cho các phần linh động
 
-LaTeX's float placement is complex.
-The most common request is to have the figure placed
-in the output exactly where it lies in the input.
-The `float` package will do that.
+Việc đặt vị trí cho các phần linh động trong LaTeX tương đối phức tạp. Nhiều
+người có thể muốn đặt hình vẽ ngay tại vị trí mà nó được đặt trong mã nguồn.
+Gói `float` có thể được dùng để làm việc đó.
 
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}
 \usepackage{float}
 
 \begin{document}
@@ -81,26 +81,26 @@ The `float` package will do that.
 \end{document}
 ```
 
-Note the `H` option, which puts the figure 'absolutely Here'.
-However it is often not recommended to use `H`, because it may
-create large portions of white space in your document.
+Chú ý lựa chọn `H` (*absolutely* **H**ere &ndash; _bắt buộc_ tại vị trí hiện
+tại). Tuy nhiên thông thường ta không nên dùng `H`, vì nó có thể gây ra nhiều
+khoảng trống thừa trong văn bản.
 
-## Other types of float
+## Những loại thành phần linh động khác
 
-We will [see soon](lesson-08) that we can put tables in floats; they will go
-into a `table` environment. However, we don't _have_ to put graphics in the
-`figure` environment or tables in the `table` environment; this is just
-convention.
+Trong [bài sau](lesson-08), ta sẽ thấy rằng ta không thể cho bảng vào môi trường
+`figure` được, chúng cần được đưa vào môi trường `table`. Tuy nhiên, ta không
+_bắt buộc_ phải đưa hình ảnh vào `figure` hay đưa bảng vào `table` &ndash; ta
+chỉ nên làm vậy thôi.
 
-You might want to have other types of floating environment; each type is
-inserted independently. You can do that using the
-[`trivfloat`](https://ctan.org/pkg/trivloat) package. This provides a single
-command, `\trivfloat`, to make new types of float.
+Ta cũng có thể cần nhiều loại môi trường linh động khác, mỗi loại được thêm vào
+một cách độc lập. Ta có thể làm vậy bằng việc sử dụng gói
+[`trivfloat`](https://ctan.org/pkg/trivloat). Gói này cung cấp lệnh `\trivfloat`
+để ta định nghĩa những kiểu môi trường linh động mới.
 
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}
 \usepackage{trivfloat}
 \trivfloat{image}
 
