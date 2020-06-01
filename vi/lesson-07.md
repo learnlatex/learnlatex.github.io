@@ -1,11 +1,11 @@
 ---
-title: "Including graphics and making things 'float'"
+title: "Thêm hình ảnh và làm cho các hình linh động"
 ---
 
-## Including graphics
+## Thêm các hình ảnh
 
-To bring in graphics from outside LaTeX, use the `graphicx`
-package, which adds the command `\includegraphics` to LaTeX.
+Để thêm hình ảnh từ bên ngoài LaTeX, ta dùng gói `graphicx`. Gói này thêm câu
+lệnh `\includegraphics` vào LaTeX.
 
 ```latex
 \documentclass{article}
@@ -20,25 +20,26 @@ is an imported PDF.
 \end{document}
 ```
 
-You can include EPS, PNG, JPG, and PDF files.
-If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extension if you do not give one.)
+Ta có thể thêm các tệp có định dạng EPS, PNG, JPG và PDF theo cách này. Nếu bạn
+có nhiều tệp cùng tên nhưng khác định dạng, bạn nên thêm đuôi tệp vào câu lệnh,
+ví dụ `\includegraphics{example-image.png}`. (Gói `graphicx` sẽ đoán đuôi tệp
+nếu bạn không cung cấp nó.)
 
-You'll notice we've used a new environment here, `center`, to place the image
-horizontally centered on the page. [A bit later](lesson-11), we'll talk more
-about spacing and positioning.
+Bạn có thể thấy ta đã dùng một môi trường mới ở đây, `center`, để căn giữa hình
+ảnh. [Trong một bài ở phần sau](lesson-11), ta sẽ nói nhiều hơn về các khoảng
+cách và việc chỉnh vị trí của các thành phần văn bản.
 
-## Altering graphic appearance
+## Thay đổi một số thông số của hình ảnh
 
-The `\includegraphics` command has many options to control
-the size and shape of the included images and to trim down material. Some of
-these are used a lot, so they are worth being aware of.
+Câu lệnh `\includegraphics` có nhiều tùy biến để kiểm soát kích thước vầ hình
+dạng của hình ảnh được thêm vào. Một vài tùy biến như vậy được dùng rất thường
+xuyên, do đó ta nên biết chúng.
 
-The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` and
-`\textheight`. LaTeX will automatically scale the image so that the aspect
-ratio stays correct.
+Thứ cần thiết nhất có lẽ là khả năng thay đổi chiều rộng (`width`) và chiều cao
+(`height`) của một hình ảnh. Các tùy biến này thường nhận giá trị được biểu diễn
+theo `\textwidth` (độ rộng của phần chữ trong trang giấy) hay `\textheight`
+(độ cao của phần chữ trong trang giấy). LaTeX sẽ tự động thu nhỏ hoặc phóng to
+ảnh để tỉ lệ chiều rộng/chiều dài ảnh vẫn được giữ nguyên.
 
 ```latex
 \documentclass{article}
@@ -55,8 +56,8 @@ Some text
 \end{document}
 ```
 
-You can also `scale` images, or rotate them by an `angle`. The other thing you
-might want to do is to `clip` and `trim` an image.
+Bạn cũng có thể phóng to/thu nhỏ (`scale`) ảnh, hay xoay (`angle`) nó. Một vài
+thứ khác bạn có thể muốn làm đó là cắt hình ảnh bằng `clip` hay `trim`.
 
 ```latex
 \documentclass{article}
@@ -69,20 +70,20 @@ might want to do is to `clip` and `trim` an image.
 \end{document}
 ```
 
-## Making images float
+## Làm hình ảnh trở nên linh động
 
-Traditionally in typesetting, particularly with technical documents,
-graphics may move to another spot in the document.
-This is called a *float*. Images are normally included as floats so they do
-not leave large gaps in the page.
+Thông thường trong ngành sắp chữ, đặc biệt với những văn bản kỹ thuật, các hình
+ảnh thường được chuyển sang một vị trí khác trong văn bản. Những hình ảnh như
+vậy được gọi là các thành phần *linh động*. Các ảnh thường được thêm vào như các
+phần linh động để chúng không tạo ra khoảng trắng quá lớn trong trang giấy.
 
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummmy text as filler
+\usepackage{lipsum}
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
+\lipsum[1-4] % Một vài đoạn văn mẫu
 
 Test location.
 \begin{figure}[ht]
@@ -91,38 +92,35 @@ Test location.
   \caption{An example image}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % Thêm một vài đoạn văn mẫu nữa
 \end{document}
 ```
 
-Here LaTeX moves the graphic and the caption
-away from the `Test location` text to the top of the second page,
-because there isn't room for it on the bottom of the first page.
-The `ht` influences where LaTeX can place the float; these two
-letters mean that it can go where it is in the source (next to
-`Test location`) or to the top of a page. You can use up to four position
-specifiers
+Ở đây, LaTeX chuyển vị trí của hình ảnh và tiêu đề ảnh ra khỏi vị trí
+`Test location` tới phía trên cùng của trang sau đó, vì trong trang đầu tiên
+không còn đủ chỗ cho nó. Tùy biến `ht` ảnh hưởng cách LaTeX đặt vị trí một phần
+linh động; hai chữ này có nghĩa là hình ảnh có thể được giữ nguyên vị trí như
+trong mã nguồn (cạnh `Test location`), hay được chuyển sang phần trên của trang
+tiếp theo. Bạn có thể dùng tới bốn chữ cái như vậy:
 
-- `h` 'Here' (if possible)
-- `t` Top of the page
-- `b` Bottom of the page
-- `p` A dedicated page only for floats
+- `h` (**h**ere) tại vị trí hiện tại nếu có thể
+- `t` (**t**op) phía trên cùng của trang giấy
+- `b` (**b**ottom) phía dưới cùng của trang giấy
+- `p` (**p**age) đưa đến một trang được dành riêng cho các phần linh động
 
-[Later](lesson-09), we will see how to cross-reference floats so you can point
-to them from your text.
+Ở [một bài sau](lesson-09), ta sẽ xem làm cách nào để tạo ra các đường dẫn đến
+các hình linh động trong văn bản của bạn.
 
-You'll probably spot that we've centered the image here using `\centering`
-rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally center content; this avoids both
-the float and `center` environment adding extra vertical space.
+Ta có thể thấy là ta đã căn giữa hình ảnh bằng `\centering` thay vì dùng môi
+trường `center`. Trong một hình linh động, ta nên dùng `\centering` để căn giữa
+vì nếu dùng `center` sẽ có quá nhiều khoảng trống theo chiều dọc trang giấy.
 
-## Exercise
+## Bài tập
 
-Try including an image you have created, replacing the 'standard' ones we have
-used in the demonstration.
+Thử thêm một hình ảnh bạn có, thay vào hình ảnh "mẫu" mà ta có ở ví dụ trên.
 
-Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+Thử xem bạn có thể làm được gì với `height`, `width`, `angle` và `scale`.
 
-Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different
-specifiers interact?
+Dùng `lipsum` để tạo ra một đoạn văn bản mẫu đủ dài, sau đó thử thêm các phần
+linh động với các tùy biến khác nhau. Các tùy biến khác nhau hoạt động với nhau
+như thế nào?

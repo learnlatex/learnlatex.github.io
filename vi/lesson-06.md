@@ -37,7 +37,8 @@ material, and which will be able to give us at least one hyphenation point.
 
 Thử bỏ dấu chú thích ở dòng khai báo `babel` và xem sự thay đổi trong output.
 (Mặc định LaTeX hiểu là cần phải dùng các quy tắc của tiếng Anh -- Mỹ. Dùng
-lựa chọn `vietnamese` nếu bạn muốn dùng tiếng Việt.)
+lựa chọn `vietnamese` nếu bạn muốn dùng tiếng Việt, xem thêm ở
+[bài đặc biệt](language-01).)
 
 Ngoài hyphenation (gạch nối các âm tiết trong từ), `babel` còn có thể làm được
 nhiều thứ khác. Ta sẽ xét chúng trong [bài bổ sung](more-06).
