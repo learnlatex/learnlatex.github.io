@@ -42,6 +42,6 @@ use a backslash in front of it, so for example `\{` is used to print a literal
 | `~`    |               | `\textasciitilde` |
 
 For the last three symbols there are no short commands available,
-because `\\` is used to indicate a linebreak and `\~` and `\^`are used
+because `\\` is used to indicate a linebreak and `\~` and `\^` are used
 to produce tilde and circumflex accents when using only ASCII
 characters as input.
