@@ -167,7 +167,8 @@ bảng).
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -192,7 +193,8 @@ vẽ đường kẻ ngang cho một cột duy nhất bạn vẫn phải viết t
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -217,7 +219,8 @@ vẽ đường kẻ ngang cho một cột duy nhất bạn vẫn phải viết t
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -246,7 +249,8 @@ giữa hai hàng. Ta có thể dùng `\addlinespace` cho việc đó.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
@@ -282,7 +286,8 @@ _một_ ký tự kiểu cột duy nhất.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -306,7 +311,8 @@ riêng ô đó. Ví dụ sau dùng cách này để căn giữa hàng trên cùn
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -330,7 +336,8 @@ thật sự gộp các ô trong cột.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
