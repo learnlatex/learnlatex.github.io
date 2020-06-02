@@ -151,17 +151,18 @@ này. Theo bảng trên, `*{6}{c}` tương đương với `cccccc`. Để cho th
 
 ## Thêm các đường kẻ trong bảng
 
-A word of advice prior to introducing rules; lines should be used really
-sparsely in tables, and normally vertical ones look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first. For the sake of completeness the standard
-lines are shown in the [more-info](more-08) page.
+Một lời khuyên trước khi ta đến với các đường kẻ: trong các bảng ta nên hạn chế
+tối đa các đường kẻ, và thông thường ta không nên vẽ các đường kẻ dọc. Trên thực
+tế, ta không nên dùng bất cứ câu lệnh hay công cụ có sẵn nào để vẽ đường kẻ cả.
+Thay vào đó, ta nên làm quen với các câu lệnh của gói `booktabs`, đó là lý do
+chúng sẽ được nói đến trước. Nếu bạn đọc muốn tìm hiểu về những công cụ có sẵn
+được cung cấp bởi lõi LaTeX, bạn có thể xem [bài bổ sung](more-08).
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
+`booktabs` cung cấp bốn câu lệnh đường kẻ ngang khác nhau (chú ý ta nên bỏ *mọi*
+đường kẻ dọc). Mỗi câu lệnh có thể được dùng ở ngay đầu hàng hay ngay sau một
+câu lệnh cùng nhóm. Ba câu lệnh trong số đó là `\toprule` (đường trên cùng của
+bảng), `\midrule` (đường ở giữa bảng) và `\bottomrule` (đường dưới cùng của
+bảng).
 
 <!-- {% raw %} -->
 ```latex
@@ -182,11 +183,11 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 ```
 <!-- {% endraw %} -->
 
-The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
-draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
-Even if you only want to draw the rule for a single
-column you need to specify that as a range (with both numbers matching).
+Câu lệnh còn lại trong nhóm là `\cmidrule`. Nó có thể được dùng để vẽ một đường
+kẻ ngang không đi qua toàn bộ chiều ngang của bảng mà chỉ nối trong một số cột
+nhất định. Vùng cột này được viết dưới dạng `{số-số}`. Ngay cả khi bạn chỉ muốn
+vẽ đường kẻ ngang cho một cột duy nhất bạn vẫn phải viết theo dạng trên (với hai
+`số` bằng nhau).
 
 <!-- {% raw %} -->
 ```latex
@@ -210,8 +211,8 @@ column you need to specify that as a range (with both numbers matching).
 ```
 <!-- {% endraw %} -->
 
-There is another useful feature of `\cmidrule`. You can shorten it on either end
-with an optional argument enclosed in parentheses:
+`\cmidrule` còn cho phép bạn làm ngắn ở hai đầu với một tùy biến không bắt buộc
+đặt trong cặp ngoặc tròn:
 
 <!-- {% raw %} -->
 ```latex
@@ -236,17 +237,16 @@ with an optional argument enclosed in parentheses:
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
-and **l**eft end, respectively.
+Bạn có thể đã đoán được rằng `r` và `l` làm đường kẻ bị làm ngắn lần lượt ở bên
+phải (**r**ight) và bên trái (**l**eft).
 
-Sometimes a rule would be too much of a separation for two rows but to get
-across the meaning more clearly you want to separate them by some means. In this
-case you can use `\addlinespace` to insert a small skip.
+Đôi khi một đường kẻ ngang là hơi quá nhiều; ta chỉ cần một khoảng trống nhỏ
+giữa hai hàng. Ta có thể dùng `\addlinespace` cho việc đó.
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array}
+\usepackage{array, booktabs}
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
@@ -267,19 +267,17 @@ case you can use `\addlinespace` to insert a small skip.
 ```
 <!-- {% endraw %} -->
 
+## Gộp các ô với nhau
 
-## Merging cells
+Trong LaTeX, ta có thể gộp các ô cùng hàng bằng lệnh `\multicolumn`. Nếu được sử
+dụng, nó phải là phần đầu tiên trong ô. `\multicolumn` nhận ba đối số:
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
-has to be used as the first thing in a cell. `\multicolumn` takes three
-arguments:
+1. Số lượng ô sẽ được gộp
+2. Căn lề của ô đã được gộp
+3. Nội dung của ô gộp
 
-1. The number of cells which should be merged
-2. The alignment of the merged cell
-3. The contents of the merged cell
-
-The alignment can contain anything legal in a `tabular`'s preamble, but _only a
-single column type_.
+Đối số căn lề giống như phần khai báo bảng của `tabular`, nhưng chỉ được có đúng
+_một_ ký tự kiểu cột duy nhất.
 
 <!-- {% raw %} -->
 ```latex
@@ -301,10 +299,8 @@ single column type_.
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent the
-application of whatever you defined in the table preamble for the
-current column.  The following uses this method to center the
-table's head row:
+Ta cũng có thể dùng `\multicolumn` trong một ô duy nhất để thay đổi kiểu cột cho
+riêng ô đó. Ví dụ sau dùng cách này để căn giữa hàng trên cùng của bảng:
 
 
 <!-- {% raw %} -->
@@ -327,9 +323,9 @@ table's head row:
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX.
-Usually it suffices to leave cells empty to give the reader the
-correct idea of what was meant without explicitly making cells span rows.
+Gộp các ô theo chiều dọc không được hỗ trợ bởi phần LaTeX gốc. Thông thường, ta
+chỉ cần để các ô ở phía dưới trống là đủ để người đọc hiểu, mà không cần phải
+thật sự gộp các ô trong cột.
 
 <!-- {% raw %} -->
 ```latex
@@ -358,10 +354,9 @@ correct idea of what was meant without explicitly making cells span rows.
 ```
 <!-- {% endraw %} -->
 
+## Bài tập
 
-## Exercises
-
-Use the simple table example to start experimenting with tables. Try out
-different alignments using the `l`, `c` and `r` column types. What happens if
-you have too few items in a table row? How about too many? Experiment with the
-`\multicolumn` command to span across columns.
+Thử thực hiện một số thao tác với bảng. Thử các loại căn lề khác nhau với kiểu
+cột `l`, `c` và `r`. Điều gì sẽ xảy ra nếu bạn để một hàng có quá ít ô (không đủ
+cho các cột)? Nếu có quá nhiều ô (có quá nhiều để điền vào các cột)? Thử thao
+tác với `\multicolumn` để gộp các ô trên các cột với nhau.
