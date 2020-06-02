@@ -1,14 +1,13 @@
 ---
-title: "Tables"
+title: "Bảng"
 ---
 
+## Bảng cơ bản
 
-## Basic tables
-
-Tables in LaTeX are set using the `tabular` environment. This lesson will assume
-you load the `array` package, which adds more functionality to LaTeX tables, and
-which is not built into the LaTeX kernel only for historic reasons. So put the
-following in your preamble and we're good to go:
+Các bảng trong LaTeX được tạo ra bằng môi trường `tabular`. Bài này sẽ coi như
+bạn đã khai báo gói `array` &ndash; gói này gia tăng nhiều tính năng cho các
+bảng trong LaTeX và không được thêm vào LaTeX mặc định chỉ vì nhiều lý do bất
+đắc dĩ. Do đó, hãy thêm dòng sau vào phần khai báo và ta có thể đi tiếp.
 
 <!-- {% raw %} -->
 ```latex
@@ -16,53 +15,52 @@ following in your preamble and we're good to go:
 ```
 <!-- {% endraw %} -->
 
-In order to typeset a `tabular` we have to tell LaTeX how many columns will be
-needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names,
-called preamble-tokens. The available column types are:
+Để tạo ra một bảng `tabular`, ta cần nói cho TeX biết rằng có bao nhiều cột và
+các cột được căn ra sao. Điều này được thực hiện trong một đối số bắt buộc,
+thường được gọi là phần khai báo bảng, cho môi trường `tabular`. Ta dùng các ký
+tự để ký hiệu các cột &ndash; các ký tự này được gọi là các ký tự khai báo hay
+các "kiểu cột". Những kiểu cột được định nghĩa sẵn là:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type       | description |
-| ---        |:-- |
-| `l`        | left aligned column |
-| `c`        | centered column |
-| `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`; the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
-| `b{width}` | like `p`, but bottom aligned |
-| `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
-| `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
+| kiểu cột | ý nghĩa |
+| --- |:-- |
+| `l` | cột căn lề trái |
+| `c` | cột căn giữa |
+| `r` | cột căn lề phải |
+| `p{độ rộng}` | cột có độ rộng xác định trước; chữ sẽ được căn cả hai lề và được tách dòng tự động |
+| `m{độ rộng}` | giống `p` nhưng được căn giữa theo chiều dọc của hàng |
+| `b{độ rộng}` | giống `p` nhưng được căn dưới theo chiều dọc của hàng |
+| `w{căn lề}{độ rộng}` | cột có độ rộng xác định trước, nếu phần chữ quá rộng sẽ được viết tràn mà không có thông báo gì. Bạn có thể chọn căn lề theo chiều ngang bằng `l`, `c` hay `r`. |
+| `W{căn lề}{độ rộng}` | giống `w` nhưng sẽ có một cảnh báo `Overfull \hbox` nếu phần chữ quá rộng và phải viết tràn. |
 
-In addition, a few other preamble-tokens are available which don't define a
-column but might be useful as well:
+Một vài ký tự khai báo khác không ký hiệu một cột nhưng cũng có thể khá hữu ích:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type | description |
+| ký tự khai báo | ý nghĩa |
 | ---  | :-- |
-| `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
-| `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
-| `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
-| <span>`|`</span>  | add a vertical rule |
-| `@{decl}` | replace the space between two columns with `decl` |
-| `!{decl}` | add `decl` in the center of the existing space |
+| `*{n}{xâu}` | tương đương với việc viết `xâu` n lần trong phần khai báo cột. Ký tự này có thể có ích khi bạn cần phải làm nhiều cột có kiểu giống hệt nhau. |
+| `>{mã}` | thêm `mã` trước phần mã của mọi ô trong cột tiếp theo (bạn có thể dùng cách này để thay đổi kiểu chữ trong cả một cột) |
+| `<{mã}` | thêm `mã` sau phần mã của mọi ô trong cột trước |
+| <span>`|`</span>  | thêm một đường kẻ dọc |
+| `@{mã}` | thay khoảng trống giữa hai cột bằng `mã` |
+| `!{mã}` | thêm `mã` vào phần giữa của khoảng trống có sẵn |
 
-These two tables list all the available column types from LaTeX and the `array`
-package. A few additional column types, from different packages, are presented
-in the [further details page](en/more-08) for this lesson.
+Hai bảng trên có tất cả những kiểu cột được định nghĩa bởi lõi LaTeX và gói
+`array`. Một số kiểu cột bổ sung, có được ở một số gói khác nhau, được nêu trong
+[bài bổ sung](more-08) của bài này.
 
-The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centered columns, you'd use
-`ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
+Các cột loại `l`, `c`, `r` sẽ có độ rộng là độ rộng của ô rộng nhất. Mỗi cột cần
+được định nghĩa trước, do đó nếu bạn muốn ba cột căn giữa, bạn cần dùng `ccc`.
+Các khoảng trống được bỏ qua, do đó `c c c` cũng không khác biệt.
 
-In a table body columns are separated using an ampersand `&` and a new row is
-started using `\\`.
+Trong phần thân bảng, các cột được phân tách bằng ký tự `&` và một dòng mới được
+bắt đầu bằng `\\`.
 
-We have everything we need for our first table. In the following code the
-`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
-source.
+Ta đã có tất cả những gì mình cần cho bảng đầu tiên của ta. Trong đoạn mã ví dụ
+dưới đây, `&` và `\\` được làm cho thẳng hàng với nhau. Điều này không bắt buộc
+trong LaTeX, nhưng nó giúp việc đọc mã nguồn dễ dàng hơn.
 
 <!-- {% raw %} -->
 ```latex
@@ -80,8 +78,8 @@ source.
 ```
 <!-- {% endraw %} -->
 
-If a table column contains a lot of text you will have issues to get that
-right with only `l`, `c`, and `r`. See what happens in the following example:
+Nếu một cột có nội dung dài bạn sẽ gặp một số vấn đề nếu chỉ dùng `l`, `c` hay
+`r`. Xem điều gì xảy ra trong ví dụ sau:
 
 <!-- {% raw %} -->
 ```latex
@@ -103,12 +101,11 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 ```
 <!-- {% endraw %} -->
 
-The issue is that the `l` type column typesets its contents in a single row at
-its natural width, even if there is a page
-border in the way. To overcome this you can use the `p` column. This
-typesets its contents as paragraphs with the width you specify as an argument
-and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare the above outcome to the following:
+Vấn đề đó là kiểu cột `l` đưa nội dung của ô vào cột với chiều rộng tự nhiên của
+nó, kể cả khi chiều rộng này là quá rộng. Để xử lý việc này ta cần kiểu `p`.
+Kiểu này in nội dung của cột theo các đoạn văn có chiều rộng được cho trước và
+căn trên theo chiều dọc &ndash; điều bạn sẽ cần trong hầu hết trường hợp. So
+sánh ví dụ trên với ví dụ dưới đây:
 
 <!-- {% raw %} -->
 ```latex
@@ -130,11 +127,11 @@ time. Compare the above outcome to the following:
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it is cumbersome to put that
-many column definitions in the preamble.  You can make things easier
-by using `*{num}{string}`, which repeats the `string`  `num` times.
-So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
-table of this lesson with the newly learned syntax:
+Nếu bảng của bạn có nhiều cột có cùng loại, ta thường cần một loại vòng lặp để
+việc khai báo cột được nhanh hơn. Ta có thể dùng ký tự khai báo `*` cho việc
+này. Theo bảng trên, `*{6}{c}` tương đương với `cccccc`. Để cho thấy điều đó,
+đây là bảng trong ví dụ đầu tiên của bài này nhưng với cú pháp mới ta vừa học
+được:
 
 <!-- {% raw %} -->
 ```latex
@@ -152,7 +149,7 @@ table of this lesson with the newly learned syntax:
 ```
 <!-- {% endraw %} -->
 
-## Adding rules (lines)
+## Thêm các đường kẻ trong bảng
 
 A word of advice prior to introducing rules; lines should be used really
 sparsely in tables, and normally vertical ones look unprofessional. In fact,
