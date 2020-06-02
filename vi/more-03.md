@@ -28,16 +28,19 @@ hay
 
 Nếu bạn muốn viết một ký tự đặc biệt, thông thường bạn chỉ cần thêm một ký tự
 `\` ngay trước nó, ví dụ như `\{` được dùng để in ra một ký tự mở ngoặc nhọn.
-Tuy nhiên, cũng có một vài trường hợp mà bạn cần một câu lệnh hoàn chỉnh.
+Tuy nhiên, cũng có một vài trường hợp mà bạn cần những câu lệnh dài hơn.
 
-| Ký tự  | Câu lệnh          |
-| `{`    | `\{`              |
-| `}`    | `\}`              |
-| `$`    | `\$`              |
-| `%`    | `\%`              |
-| `&`    | `\&`              |
-| `#`    | `\#`              |
-| `_`    | `\_`              |
-| `^`    | `\textasciicircum`|
-| `~`    | `\textasciitilde` |
-| ``\``  | `\textbackslash`  |
+| Ký tự  | Câu lệnh ngắn (cả math mode và text mode) | Câu lệnh dài (chỉ cho text mode) |
+| `{`    | `\{`          | `\textbraceleft`  |
+| `}`    | `\}`          | `\textbraceright` |
+| `$`    | `\$`          | `\textdollar`     |
+| `%`    | `\%`          |                   |
+| `&`    | `\&`          |                   |
+| `#`    | `\#`          |                   |
+| `_`    | `\_`          | `\textunderscore` |
+| ``\``  |               | `\textbackslash`  |
+| `^`    |               | `\textasciicircum`|
+| `~`    |               | `\textasciitilde` |
+
+Ba ký tự cuối không có một câu lệnh ngắn nào cả, vì `\\` được dùng trong một số
+trường hợp để xuống dòng, `\~` và `\^` để thêm dấu vào các chữ cái.
