@@ -1,13 +1,14 @@
 ---
-title: "Cross-referencing"
+title: "Tham chiếu chéo"
 ---
 
-## The `\label` and `\ref` mechanism
+## Cách hoạt động của `\label` và `\ref`
 
-When you are writing a document of any length, you'll want to refer to numbered
-items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. To have LaTeX remember a spot
-in your document you have to label it, and then in other places, you refer to it.
+Khi ta viết một văn bản dài, ta có thể cần phải thêm các tham chiếu chéo tới các
+thành phần được đánh số như hình, bảng hay công thức toán học. LaTeX có khả năng
+cho ta con số chính xác khi tham chiếu, ta chỉ cần đưa ra đoạn mã hợp lý. Để bảo
+LaTeX "nhớ" một vị trí trong văn bản, ta cần phải đánh dấu nó, và trong các vị
+trí khác, ta tạo tham chiếu đén vị trí đánh dấu này.
 
 ```latex
 \documentclass{article}
@@ -35,51 +36,45 @@ In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
 \end{document}
 ```
 
-There are two `\label{...}` commands, one after the subsection
-and one inside the equation environment.
-They are associated with the last sentence's `\ref{...}` commands.
-When you run LaTeX, it saves information about the labels to an auxiliary file.
-For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
-so it saves the subsection's number.
-For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for that equation.
-When you ask for the reference, LaTeX gets it from the auxiliary file.
+Có hai câu lệnh `\label{...}`, một cái đi sau lệnh chỉ mục và một cái nằm trong
+môi trường `equation`. Chúng được tham chiếu chéo với các câu lệnh `\ref` trong
+câu cuối cùng. Khi bạn chạy LaTeX, trình biên dịch sẽ lưu trữ các thông tin về
+các chỗ đánh dấu vào một tệp aux. Đối với `\label{subsec:labelone}`, LaTeX hiểu
+đó là một phần con (subsection) và nó sẽ lưu trữ số thứ tự của phần con này. Đối
+với `\label{eq:labeltwo}`, LaTeX hiểu rằng môi trường đang được sử dụng gần nhất
+là một công thức toán, do đó nó sẽ lưu trữ số thứ tự của công thức toán đấy. Khi
+bạn cần thêm một tham chiếu, LaTeX sẽ lấy thông tin từ tệp aux này.
 
-The `subsec:` and `eq:` aren't used by LaTeX;
-rather, it just keeps track of what it has most
-recently processed.
-But when you are writing these help you remember what the label
-is about.
+Tiền tố `subsec:` và `eq:` không được sử dụng bởi LaTeX, thay vì thế nó chỉ lưu
+trữ thông tin về thứ vừa được xử lý. Tuy nhiên, khi bạn viết, những nhãn đánh
+dấu kiểu này giúp bạn nhớ được nhãn dán này có ý nghĩa là gì.
 
-You may see references that show in an output PDF
-as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work,
-the first time that you compile a document the label has not
-yet been saved.
-Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX several times anyway,
-so in practice this is not a bother.)
+Bạn có thể thấy các tham chiếu trong tệp PDF dưới dạng hai dấu hỏi chấm in đậm
+**??**. Điều này là do cách tệp aux hoạt động. Lần đầu tiên biên dịch, các chỗ
+đánh dấu chưa được lưu lại thông tin, do đó LaTeX không biết phải cho số nào vào
+và nó dùng **??** thay vì thế. Bạn chỉ cần chạy LaTeX thêm một lần nữa là được.
+(Thông thường khi viết bạn vẫn phải chạy LaTeX nhiều lần, do đó trên thực tế đây
+không phải là một vấn đề quá lớn.)
 
-Notice the tie (`~`) characters before the references.
-You don't want a line break between `subsection` and its number, or
-between `equation` and its number.
-Putting in a tie means LaTeX won't break the line there.
+Chú ý việc sử dụng của `~` ở trước các tham chiếu. Ta không muốn "subsection" và
+số tham chiếu nằm ở hai dòng khác nhau, do đó ta cần đặt `~` để bảo LaTeX không
+được xuống dòng tại điểm này.
 
-## Where to put `\label`
+## Đặt `\label` ở chỗ nào?
 
-The `\label` command always refers to the previous numbered entity:
-a section, an equation, a float, etc. That means that `\label` always has to
-come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float enviornment.
+Lệnh `\label` luôn lưu trữ thông tin về thành phần được đánh số trước đó. Do đó
+`\label` cần phải đi *sau* thành phần mà bạn muốn đánh dấu. Ví dụ, khi bạn tạo
+các thành phần linh động thì `\label` phải đi _sau_ hoặc nằm trong lệnh
+`\caption`, nhưng phải nằm trong môi trường linh động.
 
-## Exercises
+## Bài tập
 
-Try adding new numbered parts (sections, subsections, enumerated lists) to
-the test document and finding out how many runs are needed to make `\label`
-commands work.
+Thử thêm một vài phần được đánh dấu (các đề mục, các danh sách được đánh số,...)
+vào một văn bản test và tìm hiểu xem cần bao nhiêu lần chạy LaTeX để làm cho
+lệnh `\label` hoạt động tốt.
 
-Add some floats and see what happens when you put `\label` _before_ the
-`\caption` instead of after; can you predict the result?
+Thử thêm một vài thành phần linh động và xem điều gì sẽ xảy ra nếu bạn dùng
+`\label` _trước_ `\caption`; bạn có thể đoán kết quả không?
 
-What happens if you put a `\label` for an equation _after_ the `\end{equation}`?
+Điều gì sẽ xảy ra nếu bạn đặt lệnh `\label` để đánh dấu một công thức toán ở
+*sau* `\end{equation}`?
