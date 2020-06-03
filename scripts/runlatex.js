@@ -121,6 +121,14 @@ function addinput(f,n,v) {
     f.appendChild(inp);
 }
 
+function addinputnoenc(f,n,v) {
+    var inp=document.createElement("input");
+    inp.setAttribute("type","text");
+    inp.setAttribute("name",n);
+    inp.value =v;
+    f.appendChild(inp);
+}
+
 function openinoverleaf(nd) {
     var fm = document.getElementById('form-' + nd);
     fm.innerHTML="";
