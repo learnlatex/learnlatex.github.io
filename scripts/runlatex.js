@@ -5,7 +5,7 @@ var buttons ={
     "edit":             "edit",
     "copy":             "copy",
     "Open in Overleaf": "Open in Overleaf",
-    "LaTeX.Online":     "LaTeX.Online",
+    "LaTeX Online":     "LaTeX Online",
     "Delete Output":    "Delete Output"
 }
 
@@ -28,7 +28,7 @@ function llexamples() {
 	if(p[i].textContent.indexOf("\\documentclass") !== -1) {
 	    // latexonline
 	    var r = document.createElement("button");
-	    r.innerText=buttons["LaTeX.Online"];
+	    r.innerText=buttons["LaTeX Online"];
 	    r.setAttribute("onclick",'latexonlinecc("pre' + i + '")');
 	    r.setAttribute("id","lo-pre" + i);
 	    p[i].parentNode.insertBefore(r, p[i].nextSibling);

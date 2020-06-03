@@ -37,8 +37,10 @@ there is no TeX specific editing help as found in typical editing systems that y
 
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
 
-1. Use the **LaTeX.Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX.Online</button> button
-   will submit the code to the [LaTeX.Online](https://latexonline.cc/) service.
+1. Use a  **LaTeX Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX Online</button> button
+   will submit the code to one of the services
+   [LaTeX.Online](https://latexonline.cc/) or
+   [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http).
 
    The resulting PDF document (or section of the error log) will be
    shown inline immediately below the example. A <button style="padding:0 1px;font-size:90%">Delete
@@ -46,9 +48,9 @@ Whether or not the code block has been edited, there are three basic ways that y
    (or you may leave it in place and continue the rest of the lesson
    below).
 
-   Note that  **LaTeX.Online** requires no login or signup of any sort
+   Note that  **LaTeX Online** requires no login or signup of any sort
    so it is very convenient for small examples, but neither this site
-   nor the `latexonline.cc` site provide any mechanism to save your
+   nor the `latexonline.cc` or `latex-on-http` sites provide any mechanism to save your
    document. Any changes that you make to the example are lost if you
    move off the page.
 
@@ -99,7 +101,7 @@ You can force the choice of `pdflatex`, `xelatex`, `lualatex`, `platex` or `upla
 `% !TEX ` _any text_ `lualatex`
 
 where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word. (_Currently platex and uplatex are only available on Overleaf, not on LaTeX.Online._)
+is _any text_ between the first and last word.
 
 This allows the form `% !TEX program=pdflatex` used by some TeX editors
 but does not require the `program=` and is currently restricted to
