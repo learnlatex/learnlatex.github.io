@@ -1,12 +1,12 @@
 ---
-title: "More on: Cross-referencing"
+title: "Bổ sung: Tham chiếu chéo"
 ---
 
-## Making cross-references into links
+## Chuyển các tham chiếu chéo thành các đường dẫn
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+Bạn có thể chuyển các tham chiếu chéo thành các đường dẫn trong văn bản với gói
+`hyperref`. Trong hầu hết các trường hợp, `hyperref` nên là gói lệnh được khai
+báo *sau cùng*.
 
 ```latex
 \documentclass{article}
@@ -23,5 +23,5 @@ More text here.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+Ta đã làm cho các đường dẫn có cùng màu với phần chữ xung quanh, thử bỏ
+`hidelinks` để biết tại sao!
