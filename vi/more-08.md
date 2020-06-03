@@ -1,24 +1,23 @@
 ---
-title: "More on: Tables"
+title: "Bổ sung: Bảng"
 ---
 
+## Những thứ khác có thể được dùng trong phần khai báo bảng
 
-## The other preamble contents
+Vì bài chính không đi qua tất cả những ký tự có thể được dùng trong phần khai
+báo bảng, một vài ký tự được giải thích với các ví dụ ở đây. Bạn có thể cần xem
+lại các bảng ở phần đầu của [bài chính](lesson-08) để có được cái nhìn tổng quan
+về những thứ ta có thể dùng. Ý nghĩa ngắn gọn được cung cấp trong bảng sẽ đủ để
+hiểu một số kiểu cột như `m`, `b`, `w` và `W` nếu bạn đã hiểu `l`, `c`, `r` và
+`p` (nếu bạn chưa chắc chắn, cứ việc thử chúng). Tuy nhiên ta vẫn cần có một cái
+nhìn kỹ hơn về các ký tự khác như `>`, `<`, `@`, `!` hay `|`.
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+### Thay đổi kiểu chữ trong một cột
 
-### Styling a column
-
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
+Vì `>` và `<` có thể được dùng để đưa mã vào trước hay sau phần nội dung của các
+ô trong một cột, ta có thể dùng chúng để thay đổi kiểu chữ trong một cột nào đó.
+Ví dụ, nếu bạn muốn in nghiêng cột đầu tiên và thêm một dấu phẩy vào sau cột đó,
+ta có thể dùng:
 
 <!-- {% raw %} -->
 ```latex
@@ -39,13 +38,13 @@ colon after it, you can do the following:
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
+`\itshape` làm cho các phần chữ sau đó được in nghiêng, nhưng phạm vi ảnh hưởng
+của nó chỉ gói gọn bên trong ô của bảng thôi. Ta sẽ có những cái nhìn sâu hơn về
+thay đổi kiểu chữ trong [một vài bài sau](lesson-11).
 
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+Bạn có thể muốn ô đầu tiên không bị ảnh hưởng vì nó là header của bảng. Trong
+trường hợp như vậy, `\multicolumn` có thể được dùng. Nhớ rằng lệnh này có thể
+được dùng để thay đổi kiểu cột trong một ô duy nhất. Xem ví dụ sau.
 
 <!-- {% raw %} -->
 ```latex
@@ -66,13 +65,12 @@ it can be used to change a single cell's alignment as shown below.
 ```
 <!-- {% endraw %} -->
 
-### Manipulating the space between columns
+### Thay đổi khoảng cách giữa các cột
 
-Usually LaTeX pads each column by some space on both sides to give a balanced
-look and separate them. This space is defined with the length `\tabcolsep`. Due
-to the fact that each column is padded on both sides you get one `\tabcolsep` on
-either end of the table, and `2\tabcolsep` between two columns &ndash; one from
-each column. You can adjust this space to any length using `\setlength`:
+Thông thường LaTeX thêm một khoảng trống nhỏ vào trước và sau mỗi cột để các cột
+được cách đều nhau. Khoảng trống này được định nghĩa là độ dài `\tabcolsep` ở
+hai bên của bảng và `2\tabcolsep` ở giữa hai cột bất kỳ trong bảng. Ta có thể
+thay đổi độ dài này thành một số bất kỳ bằng lệnh `\setlength`:
 
 <!-- {% raw %} -->
 ```latex
@@ -92,9 +90,9 @@ each column. You can adjust this space to any length using `\setlength`:
 ```
 <!-- {% endraw %} -->
 
-You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything in
-between the columns you specify as an argument:
+Ta có thể thay đổi khoảng cách này thành một đoạn mã bất kỳ (không nhất thiết là
+một khoảng trống) bằng `@`. Ký tự khai báo bảng này sẽ bỏ khoảng trống giữa hai
+cột hoặc ở hai bên bảng, và đặt đoạn mã vào vị trí đó.
 
 <!-- {% raw %} -->
 ```latex
@@ -112,11 +110,11 @@ between the columns you specify as an argument:
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
+(Ta sẽ xem xét `\hspace` [trong một bài sau](lesson-11), nhưng bạn có thể đã
+đoán được là nó thêm một khoảng trống ngang có độ rộng cho trước.
 
-The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument in center of the space between two columns.
+Ký tự khai báo bảng `!` hoạt động khá giống `@`, chỉ khác là nó không bỏ phần
+khoảng trống giữa các cột mà thêm đoạn mã vào giữa khoảng trống đó.
 
 <!-- {% raw %} -->
 ```latex
@@ -135,9 +133,9 @@ _adds_ its argument in center of the space between two columns.
 <!-- {% endraw %} -->
 
 
-### Vertical rules
+### Đường kẻ dọc
 
-Sometimes you have to use vertical rules.
+Đôi khi ta cần đến các đường kẻ dọc.
 
 <!-- {% raw %} -->
 ```latex
@@ -155,20 +153,19 @@ Sometimes you have to use vertical rules.
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
-adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though; vertical rules don't work with the
-horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
-will span any space specified in the optional argument to `\\`.
+Bạn có thể thấy `|` hoạt động khá giống `!`: nó thêm một đường kẻ dọc vào giữa
+hai cột và giữ nguyên các khoảng trống có sẵn. Tuy nhiên `|` có một nhược điểm:
+nó không hoạt động tốt với các câu lệnh được cung cấp bởi `booktabs`. Thay vào
+đó, ta có thể dùng các đường kẻ ngang mặc định được cung cấp bởi LaTeX: lệnh
+`\hline` hoạt động giống `\toprule`, `\midrule` và `\bottomrule`, hay `\cline`
+hoạt động giống `\cmidrule`.
 
-## Customizing `booktabs` rules
+## Tùy biến các đường kẻ của `booktabs`
 
-All the `booktabs` rules and also `\addlinespace` support an optional argument
-in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a length in
-braces after `r` or `l`.
+Tất cả các đường kẻ của `booktabs` và `\addlinespace` hỗ trợ một đối số không
+bắt buộc trong dấu ngoặc vuông, đó là độ rộng của đường kẻ. Đối số này đi trước
+các đối số khác, kể cả đối số không bắt buộc đặt trong dấu ngoặc tròn của
+`\cmidrule`.
 
 <!-- {% raw %} -->
 ```latex
@@ -188,12 +185,11 @@ braces after `r` or `l`.
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment in columns
+## Căn chỉnh các số trong các cột
 
-The alignment of numbers in tables can be handled by the column type `S` 
-that is provided by the `siunitx` package.
-
-A simple example with two aligned numeric columns would be:
+Bạn có thể căn chỉnh các số trong một cột bằng kiểu cột `S` được cung cấp bởi
+gói `siunitx`. Một ví dụ đơn giản với hai cột số được căn thẳng hàng tại dấu
+thập phân:
 
 ```latex
 \documentclass{article}
@@ -214,31 +210,29 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
-Note that any non-numeric cell must be "protected" by enclosing it in braces.
+Chú ý rằng tất cả các ô không phải số cần phải được "bảo vệ" bằng cách đưa chúng
+vào trong cặp ngoặc nhọn.
 
-The `siunitx` package provides many possibilities for formatting the numbers in
-different ways; see the [package
-documentation](https://texdoc.net/pkg/siunitx).
+Gói `siunitx` cung cấp nhiều cách để tùy biến các số trong nhiều cách khác nhau,
+xem [hướng dẫn sử dụng của gói](https://texdoc.net/pkg/siunitx) để có thêm thông
+tin.
 
-## Specifying the total table width
+## Đưa ra độ rộng của cả bảng
 
-The width of a `tabular` environment is automatically determined based
-on the contents of the table. There are two commonly used mechanisms
-to specify a different total width.
+Độ rộng của một môi trường `tabular` được xác định tự động dựa trên nội dung của
+các ô trong bảng. Có hai cách thông dụng để đưa ra một độ rộng khác cho bảng.
 
-Note that it is almost always preferable to format the table to a
-specified width as below (perhaps using a font size such as `\small` if
-necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths.
+Chú ý rằng ta luôn nên thay đổi kích thước của bảng bằng một trong những cách
+dưới (có thể dùng những câu lệnh cỡ chữ như `\small` nếu cần thiết) thay vì thu
+nhỏ cả bảng với `\resizebox` và những câu lệnh tương tự.
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that
-specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command. This space is added
-between all columns from that point in the preamble. It is almost
-always used with `\fill`, a special space that stretches to be as large
-as necessary.
+Môi trường `tabular*` nhận thêm một đối số là độ rộng của bảng. Khoảng trống cần
+được thêm vào bảng bằng lệnh `\extracolsep`. Khoảng trống này được thêm vào
+khoảng giữa các cột từ thời điểm dùng lệnh trở đi. Trong hầu hết trường hợp nó
+được sử dụng với `\fill`, một khoảng trống đặc biệt mà tự động kéo ra dài nhất
+có thể.
 
 ```latex
 \documentclass{article}
@@ -277,11 +271,10 @@ C & D\\
 
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+Môi trường `tabularx`, được cung cấp bởi một gói lệnh cùng tên, có cú pháp tương
+tự như `tabular*`, nhưng thay vì thay đổi khoảng cách giữa các cột, nó thay đổi
+độ rộng của các cột bằng một kiểu cột mới, `X`. Kiểu cột này tương đương với
+`p{...}` với một độ rộng được xác định tự động.
 
 ```latex
 \documentclass{article}
@@ -318,19 +311,19 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.net/pkg/tabularx).
+Không giống các loại bảng khác được mô tả trong bài này, `tabularx` cần phải tự
+viết bảng nhiều lần để thử các độ rộng phù hợp nhất cho các cột. Do đó, việc sử
+dụng môi trường này có một số nhược điểm, xem
+[hướng dẫn sử dụng gói](https://texdoc.net/pkg/tabularx) để biết thêm thông tin.
 
-## Multi-page tables
+## Bảng trên nhiều trang
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+Một `tabular` tạo ra một "hộp" không thể được chia nhỏ bao quanh bảng, do đó
+bảng phải đủ nhỏ để có thể để vừa trong một trang, và thường được đặt trong môi
+trường linh động `table`.
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+Nhiều gói cung cấp các phiên bản bảng khác với cú pháp tương tự mà có cho phép
+chia bảng trên nhiều trang. Ví dụ sau sử dụng gói `longtable`:
 
 ```
 \documentclass{article}
@@ -366,19 +359,16 @@ A Wider Entry & b\\
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+`longtable` có thể giữ được độ rộng của cột trên tất cả các trang, tuy nhiên để
+làm được điều này nó có thể cần nhiều lần chạy LaTeX.
 
-## Table notes
+## Ghi chú trong bảng
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.net/pkg/threeparttable)
-for full details, but we show a simple example here.
+Thông thường ta có thể cần một khu vực để ghi chú ở phía dưới các bảng. Gói
+`threeparttable` đơn giản hóa các markup cho những bảng như vậy, và thêm phần
+ghi chú vào một hàng "đặc biệt" có cùng chiều rộng với bảng. Bạn có thể đọc thêm
+về gói tại [hướng dẫn sử dụng của nó](https://texdoc.net/pkg/threeparttable),
+ở đây ta sẽ chỉ xét một ví dụ.
 
 ```latex
 \documentclass{article}
@@ -402,23 +392,22 @@ for full details, but we show a simple example here.
 \end{document}
 ```
 
-## Typesetting in narrow columns
+## Sắp chữ trong các cột hẹp
 
-The default line breaking settings assume relatively long lines to
-give some flexibility in choosing line breaks. The following example
-shows some possible approaches. The first table shows interword spacing
-stretched and TeX warns about Underfull lines. Using `\raggedright`
-usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise;
-it allows some raggedness in the line lengths, but will also
-hyphenate where necessary, as shown in the third table.
+Những thiết lập tách dòng mặc định hiểu rằng cột của bạn đủ rộng để có nhiều lựa
+chọn trong việc tách dòng. Ví dụ sau cho thấy một vài cách giải quyết khi cột
+của bạn tương đối nhỏ. Cách đầu tiên thay đổi khoảng cách giữa các từ và TeX sẽ
+xuất ra một cảnh báo về "Underfull lines". Sử dụng `\raggedright` thường xử lý
+được cảnh báo này nhưng nó có thể làm một số dòng nhìn không được đều. Lệnh
+`\RaggedRight` từ gói `ragged2e` có thể giải quyết việc này: nó cho phép sự biến
+thiên trong độ dài của các dòng, nhưng nó cũng tách các âm tiết (hyphenate) khi
+cần thiết, như ta thấy trong bảng thứ ba.
 
-Note the use of `\arraybackslash` here, which resets the definition of
-`\\` so that it ends the table row.
+Chú ý việc sử dụng `\arraybackslash` ở đây: nó thay đổi định nghĩa của `\\` để
+câu lệnh này kết thúc hàng hiện tại của bảng.
 
-An alternative technique, as shown in the fourth table, is to use a
-smaller font so that the columns are not so narrow relative to the
-text size.
+Một kỹ thuật khác, như trong bảng thứ tư, là việc sử dụng một cỡ chữ nhỏ hơn để
+các cột không quá hẹp so với kích thước chữ.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -451,25 +440,21 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 \end{document}
 ```
 
-## Defining new column types
+## Định nghĩa kiểu cột mới
 
-As demonstrated in the main lesson, the array package allows
-constructs such as `>{\bfseries}c`  to denote a bold centered column.
-It is often convenient to define a new column type to encapsulate such
-use, for example
+Như đã lấy ví dụ trong bài chính, gói `array` cho phép những sự khai báo như
+`>{\bfseries}c` để làm một cột trở nên đậm. Để cho tiện lợi, ta có thể định
+nghĩa kiểu cột mới cho những sự khai báo như vậy. Ví dụ:
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in table preambles to specify a bold
-centered column.
 
+sẽ cho phép việc sử dụng `B` trong bảng để khai báo một cột in đậm và căn giữa.
 
-## Vertical tricks
+## Một vài trick cho sự căn chỉnh theo chiều dọc
 
-Often, rather than making a cell span multiple rows it is better to instead have
-a single row in which some cells are split vertically by the use of nested
-`tabular` environments.
+Ta có thể lồng các `tabular`:
 
 <!-- {% raw %} -->
 ```latex
@@ -490,9 +475,10 @@ a single row in which some cells are split vertically by the use of nested
 ```
 <!-- {% endraw %} -->
 
-Note that you can control vertical alignment by an optional argument to the
-`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
-bottom aligned respectively and is used like this:
+Chú ý rằng ta có thể thay đổi vị trí tương đối theo chiều dọc của môi trường
+`tabular` với đoạn mã xung quanh bằng một đối số không bắt buộc cho môi trường
+này: ta có thể dùng `t` (**t**op &ndash; phía trên), `c` (**center** &ndash;
+ở giữa) hay `b` (**b**ottom &ndash; phía dưới). Một ví dụ:
 
 <!-- {% raw %} -->
 ```latex
@@ -513,25 +499,23 @@ bottom aligned respectively and is used like this:
 ```
 <!-- {% endraw %} -->
 
-## Line spacing in tables
+## Khoảng cách giữa các hàng trong bảng
 
-In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package, which is useful for adding extra space between specific lines.
+Trong bài chính ta đã nói về `\addlinespace` từ gói `booktabs` mà có thể được
+dùng để thêm khoảng trống giữa hai cặp hàng bất kỳ.
 
-There are two general parameters that control line spacing,
-`\arraystretch` and `\extrarowheight` (the latter from the `array`
-package).
+Ta có thể thay đổi khoảng trống giữa tất cả các cặp hàng bằng việc thay đổi các
+tham số ảnh hưởng đến sự phân cách các hàng, đó là `\arraystretch` và
+`\extrarowheight` (câu lệnh sau được định nghĩa trong gói `array`). Ví dụ,
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
 
-will increase the baseline spacing by 50%.
+sẽ gia tăng khoảng cách giữa các hàng 50%.
 
-
-Often, especially when using `\hline`, it is better just to increase
-the height of rows, without increasing their depth below the baseline.
-The following example demonstrates the `\extrarowheight` parameter.
+Thông thường, khi dùng `\hline`, ta nên gia tăng độ cao của các hàng mà không
+gia tăng "độ sâu" của chúng. Ta có thể dùng `\extrarowheight` cho việc này.
 
 ```latex
 \documentclass[a4paper]{article}
