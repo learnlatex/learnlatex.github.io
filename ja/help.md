@@ -13,7 +13,7 @@ the page like this:
 
 ## Japanese
 
-Japanese examples (only work in Overleaf currently) look like:
+Japanese examples look like:
 
 ```latex
 % !TEX platex
