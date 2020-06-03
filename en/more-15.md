@@ -9,7 +9,7 @@ The `texdoc` command described earlier is not restricted to package sources. If 
 go beyond the areas covered by this course and study the LaTeX inplementation in detail then
 the following links may help.
 
-The source of LaTeX itself is available as a LaTeX-typeset document `source2e.pdf`, avalable at
+The source of LaTeX itself is available as a LaTeX-typeset document `source2e.pdf`, available at
 [texdoc.net](https://texdoc.net/texmf-dist/doc/latex/base/source2e.pdf)
 
 Current releases of LaTeX also have preloaded the LaTeX3 Programming Language code, previously available
