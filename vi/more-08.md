@@ -193,7 +193,8 @@ thập phân:
 
 ```latex
 \documentclass{article}
-\usepackage{booktabs,siunitx}
+\usepackage{booktabs}
+\usepackage{siunitx}
 \begin{document}
 \begin{tabular}{SS}
 \toprule
@@ -328,7 +329,8 @@ chia bảng trên nhiều trang. Ví dụ sau sử dụng gói `longtable`:
 ```
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
-\usepackage{array,longtable}
+\usepackage{array}
+\usepackage{longtable}
 \begin{document}
 \begin{longtable}{cc}
 \multicolumn{2}{c}{A Long Table}\\
@@ -372,7 +374,8 @@ về gói tại [hướng dẫn sử dụng của nó](https://texdoc.net/pkg/th
 
 ```latex
 \documentclass{article}
-\usepackage{array,threeparttable}
+\usepackage{array}
+\usepackage{threeparttable}
 \begin{document}
 
 \begin{table}
@@ -411,7 +414,8 @@ các cột không quá hẹp so với kích thước chữ.
 
 ```latex
 \documentclass[a4paper]{article}
-\usepackage{array,ragged2e}
+\usepackage{array}
+\usepackage{ragged2e}
 \begin{document}
 
 \begin{table}
