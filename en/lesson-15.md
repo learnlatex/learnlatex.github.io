@@ -47,7 +47,7 @@ those can give a lot more detail than we've covered here. You might also
 want access to a reference with more detail and recommendations.
 
 The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's offical
+largely written by members. The most notable are [Lamport's official
 guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 and the comprehensive
 [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
