@@ -46,9 +46,9 @@ layout: default
     <a href = "{{page.next}}">{% include_relative includes/next.html %}</a>
     {% else %}
     {% if page.name contains "language-1" or  page.name contains "language-09" %}
-    <a href = "lesson-{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+    <a href = "language-{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
     {% else %}
-    <a href = "lesson-0{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+    <a href = "language-0{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
     {% endif %}
     {% endif %}
   </small></p>
