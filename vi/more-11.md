@@ -1,14 +1,12 @@
 ---
-title: "More on: Formatting: fonts and spacing"
+title: "Bổ sung: Định dạng font chữ và các khoảng cách"
 ---
 
-## Suppressing the indent for one paragraph
+## Hủy việc lùi đầu dòng đối với một đoạn văn bất kỳ
 
-
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+Nếu bạn muốn tắt chức năng lùi đầu dòng đối với một đoạn văn nào đó, bạn có thể
+dùng `\noindent`. Chú ý rằng lệnh này không nên được sử dụng trong _hầu hết_
+các trường hợp &ndash; bạn nên để LaTeX xử lý chúng một cách tự động.
 
 ```latex
 \documentclass{article}
