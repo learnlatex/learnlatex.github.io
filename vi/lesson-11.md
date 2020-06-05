@@ -1,50 +1,47 @@
 ---
-title: "Formatting: fonts and spacing"
+title: "Định dạng font chữ và các khoảng cách"
 ---
 
-## Paragraph spacing
+## Khoảng cách giữa các đoạn văn
 
-We have already seen that a blank line in your input will generate a new
-paragraph in LaTeX. This shows up as the paragraph will start with an
-indent.
-One common style is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can achieve that using the `parskip`
-package.
+Ta đã biết rằng một dòng trống có công dụng ngắt đoạn trong LaTeX. Dòng đầu tiên
+của đoạn văn mới sẽ được lùi đầu dòng một chút. Tuy nhiên, nhiều người không
+muốn lùi đầu dòng mà muốn có một khoảng trống nhỏ giữa các đoạn. Ta có thể làm
+được điều đó bằng gói `parskip`.
 
 ```latex
 \documentclass{article}
 \usepackage[parfill]{parskip}
-\usepackage{lipsum} % Just for some filler text
+\usepackage{lipsum}
 \begin{document}
 \lipsum
 \end{document}
 ```
 
-## Forcing a new line
+## Buộc xuống dòng
 
-Most of the time, you should not force a new line in LaTeX: you almost
-certainly want a new paragraph or to use `parskip`, as we've just seen,
-to put a 'blank line' between paragraphs.
+Trong hầu hết các trường hợp, ta không nên buộc LaTeX phải ngắt dòng giữa đoạn
+văn; thay vào đó ta nên dùng một dòng trống để sang một đoạn văn mới.
 
-There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph
+Tuy nhiên có một số trường hợp ta dùng `\\` để ngắt dòng mới mà không cần phải
+bắt đầu một đoạn văn mới:
 
-- At the end of table rows
-- Inside the `center` environment
-- In poetry (the `verse` environment)
+- Tại điểm cuối của một hàng trong bảng
+- Trong môi trường `center`
+- Ngắt dòng khi viết thơ (với môi trường `verse`)
 
-Almost always, if you are not in one of those special places, you should
-_not_ use `\\`.
+Hầu như trong mọi trường hợp, nếu bạn không ở trong những tình huống trên, bạn
+_không nên_ dùng `\\`.
 
-## Adding explicit space
+## Thêm một khoảng trống có kích thước cụ thể
 
-We can insert a thin space (about half the normal thickness) using
-`\,`. In math mode, there are also other commands: `\.`, `\:` and `\;`,
-and one for a negative space: `\!`.
+Ta có thể thêm một khoảng trống nhỏ (bằng khoảng nửa một ký tự trống thông
+thường) bằng `\,`. Trong chế độ toán, ta còn có các lệnh khác như `\.`, `\:` hay
+`\;`, hay thậm chí `\!` sẽ tạo ra một khoảng trống có "độ rộng âm".
 
-Very rarely, for example when creating a title page, you might need to
-add explicit horizontal or vertical space. We can use `\hspace` and `\vspace`
-for that.
+Trong số ít trường hợp, ví dụ khi ta tạo trang bìa, ta cần phải thêm những
+khoảng trống có kích thước cụ thể. Ta có thể dùng `\hspace` (khoảng trống theo
+chiều ngang) và `\vspace` (khoảng trống theo chiều dọc).
 
 ```latex
 \documentclass{article}
@@ -57,15 +54,17 @@ Even more text.
 \end{document}
 ```
 
-## Explicit text formatting
+## Định dạng các chữ một cách cụ thể
 
-We saw [a while ago](lesson-03) that most of the time logical structure is
-preferable. But sometimes you want to make text bold, or italic, or monospaced,
-etc. There are two types of command for this: ones for short pieces of text,
-and ones for 'running' material.
+Trong [một bài trước](lesson-03), ta thấy rằng trong hầu hết trường hợp các
+markup logic nên được sử dụng. Tuy nhiên đôi khi ta muốn làm cho chữ đậm,
+nghiêng hay đổi font chữ thành monospace, v.v... Có hai loại câu lệnh khác nhau
+để thực hiện điều này: một loại được dùng cho các đoạn chữ ngắn, loại kia được
+dùng cho các đoạn chữ dài hơn.
 
-For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
-`\texttt` and `\textsc`.
+Cho các đoạn chữ ngắn, ta dùng `\textbf` (chữ đậm), `\textit` (chữ nghiêng),
+`\textrm` (chữ thẳng), `\textsf` (chữ theo font sans), `\texttt` (chữ theo font
+monospace) và `\textsc` (chữ theo font small-caps).
 
 ```latex
 \documentclass{article}
@@ -75,11 +74,11 @@ Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \end{document}
 ```
 
-For running text, we use commands that alter the font setup; the commands
-here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them from applying to
-the whole document. LaTeX environments are groups, as are table cells,
-or we can use `{...}` to make an explicit group.
+Cho các đoạn dài hơn, ta dùng một lệnh thay đổi setup của font. `\bfseries` hay
+`\itshape` là các ví dụ. Ta cần đưa đoạn chữ vào trong một _nhóm_ để ngăn việc
+thay đổi setup này ảnh hưởng đến phần sau của văn bản. Các môi trường trong
+LaTeX đều là các nhóm khác nhau; mỗi ô bảng cũng là một nhóm; hay ta có thể dùng
+`{...}` để tạo ra một nhóm cụ thể.
 
 ```latex
 \documentclass{article}
@@ -96,11 +95,14 @@ So it this: the effect is not limited to a paragraph.
 \end{document}
 ```
 
-We can set font size in a similar way; these commands all work on an ongoing
-basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
-`\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back; see how we add an explicit `\par`
-(paragraph break) here.
+Ta có thể thay đổi cỡ chữ theo cách tương tự. Các câu lệnh thường gặp là
+`\huge` (chữ rất to), `\large` (chữ to), `\normalsize` (cỡ chữ mặc định),
+`\small` (chữ nhỏ) và `\footnotesize` (chữ nhỏ hơn). Chúng sẽ thay đổi cỡ chữ
+một cách tương đối theo cỡ chữ mặc định của văn bản; nói cách khác `\small` khi
+bạn dùng tùy biến `12pt` cho lớp văn bản sẽ lớn hơn `\small` khi bạn dùng tùy
+biến `10pt`. Chú ý rằng ta cần phải kết thúc một đoạn văn _trước_ khi chuyển
+cỡ chữ lại như bình thường &ndash; bạn có thể xem lệnh `\par` dùng để kết thúc
+đoạn (khá tương đương với một dòng trống) được dùng ở ví dụ sau.
 
 ```latex
 \documentclass{article}
@@ -116,12 +118,12 @@ Normal text
 \end{document}
 ```
 
-## Exercises
+## Bài tập
 
-Experiment with manual formatting: create a `titlepage` environment and
-try inserting different spaces and font changes. What happens when we
-combine font changes? How does this compare to math mode?
+Thử thao tác với việc định dạng chữ. Thêm môi trường `titlepage` và thử thêm
+các khoảng trống có kích thước khác nhau và thay đổi kiểu chữ. Điều gì xảy ra
+khi ta lồng các lệnh đổi kiểu chữ với nhau? Điều này khác trong chế độ toán ra
+sao?
 
-What happens if you change the font size of a large paragraph (try with
-`\tiny` then with `\huge`) but don't issue a final `\par` before closing
-the group?
+Điều gì xảy ra nếu bạn thay đổi cỡ chữ một đoạn văn dài (thử với `\tiny` (rất
+nhỏ) rồi thử với `\huge`) nhưng không dùng `\par` khi kết thúc nhóm?
