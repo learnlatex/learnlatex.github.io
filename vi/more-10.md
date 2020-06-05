@@ -31,9 +31,68 @@ Multline
 \end{document}
 ```
 
+### Các cột trong sự căn lề của các môi trường toán
+
+Các môi trường `amsmath` được thiết kế để thực hiện các "cặp cột" với cột đầu
+tiên của cặp được căn phải và cột sau được căn trái. Điều này giúp nhiều công
+thức được hiển thị trên một dòng, như trong ví dụ sau:
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+Aligned equations
+\begin{align*}
+a &= b+1   &  c &= d+2  &  e &= f+3   \\
+r &= s^{2} &  t &=u^{3} &  v &= w^{4}
+\end{align*}
+\end{document}
+```
+
 Thêm vào đó ta còn có các môi trường "con" với đuôi `ed` cho các môi trường nói
 trên, ví dụ `aligned` hay `gathered`, để đưa việc căn dòng vào trong một phần
 nhỏ trong một công thức nào đó (hãy thử chúng để hiểu cách hoạt động!).
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+Aligned:
+\[
+\left.\begin{aligned}
+a&=b\\
+c&=d
+\end{aligned}\right\}
+\Longrightarrow
+\left\{\begin{aligned}
+b&=a\\
+d&=c
+\end{aligned}\right.
+\]
+\end{document}
+```
+
+`aligned` còn nhận một đối số không bắt buộc như `tabular`. Ta có thể dùng nó để
+căn chỉnh cả môi trường theo chiều dọc so với các thành phần xung quanh:
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\begin{itemize}
+\item 
+$\begin{aligned}[t]
+a&=b\\
+c&=d
+\end{aligned}$
+\item 
+$\begin{aligned}
+a&=b\\
+c&=d
+\end{aligned}$
+\end{itemize}
+\end{document}
+```
 
 # In đậm các công thức toán học
 
@@ -48,11 +107,15 @@ thẳng).
 \begin{document}
 $(x+y)(x-y)=x^{2}-y^{2}$
 
-{\boldmath $(x+y)(x-y)=x^{2}-y^{2}$}
+{\boldmath $(x+y)(x-y)=x^{2}-y^{2}$ $\pi r^2$}
 
 $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
+
+$\mathbf{\pi} r^2$ % việc sử dụng không hợp lý của \mathbf
 \end{document}
 ```
+
+(Chú ý rằng `\mathbf` không có ảnh hưởng gì đến `\pi` trong ví dụ trên.)
 
 Nếu bạn muốn dùng các ký hiệu đậm như được sử dụng bởi `\boldmath` chỉ trong một
 phần của một công thức nào đó, ta có thể dùng lệnh `\bm` từ gói `bm`. Chú ý rằng
@@ -104,7 +167,7 @@ bạn có thể đọc thêm trong
 [hướng dẫn sử dụng gói](https://texdoc.net/pkg/unicode-math).
 
 ```
-% !TEX xelatex
+% !TEX lualatex
 \documentclass[a4paper]{article}
 \usepackage{unicode-math}
 \setmainfont{TeX Gyre Pagella}
@@ -116,6 +179,9 @@ One two three
 \[
 \log \alpha + \log \beta = \log(\alpha\beta)
 \]
+
+Unicode Math Alphanumerics
+\[A + \symfrak{A}+\symbf{A}+ \symcal{A} + \symscr{A}+ \symbb{A}\]
 
 \end{document}
 ```
