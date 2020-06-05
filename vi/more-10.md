@@ -1,24 +1,21 @@
 ---
-title: "More on: Mathematics"
+title: "Bổ sung: Các công thức toán học"
 ---
 
+## Các kiểu căn chỉnh nâng cao của `amsmath`
 
-## Further amsmath alignments
-
-In addition to the `align*` environment shown in the main lesson,
-`amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment, and `multline` for
-splitting a larger single expression over multiple lines, aligning the
-first line to the left, and the last to the right. In all cases the `*`
-form  omits the equation numbers by default.
+Ngoài môi trường `align*` được nhắc tới trong bài chính, `amsmath` còn nhiều môi
+trường toán tương tự khác, trong đó đáng chú ý là `gather` dành cho việc hiển
+thị các công thức toán trên nhiều dòng mà không cần căn chỉnh vị trí, hay
+`multline` để chia một công thức dài trên nhiều dòng khác nhau, căn lề trái cho
+dòng đầu tiên và lề phải cho dòng cuối cùng. Trong mọi trường hợp, thêm `*` vào
+tên môi trường sẽ tắt chức năng đánh số các dòng.
 
 ```latex
 \documentclass[a4paper]{article}
-
 \usepackage{amsmath}
 
 \begin{document}
-
 Gather
 \begin{gather}
   P(x)=ax^{5}+bx^{4}+cx^{3}+dx^{2}+ex +f\\
@@ -34,22 +31,21 @@ Multline
 \end{document}
 ```
 
-In addition there are variants of the alignment environments ending
-in `ed` that make a subterm of a larger display for example, `aligned` and
-`gathered`.
+Thêm vào đó ta còn có các môi trường "con" với đuôi `ed` cho các môi trường nói
+trên, ví dụ `aligned` hay `gathered`, để đưa việc căn dòng vào trong một phần
+nhỏ trong một công thức nào đó (hãy thử chúng để hiểu cách hoạt động!).
 
-# Bold Math
-Standard LaTeX has two methods to give bold symbols in math. To make
-an entire expression bold, use `\boldmath` before entering the
-expression. The command `\mathbf` is also available to set individual
-letters or words in upright bold roman.
+# In đậm các công thức toán học
+
+LaTeX có hai cách để làm đậm các công thức toán. Để làm một công thức được in
+đậm hoàn toàn, dùng `\boldmath` trước công thức đó. Lệnh `\mathbf` cũng có thể
+được dùng để làm đậm các chữ cái (câu lệnh này cũng làm các chữ cái được viết
+thẳng).
 
 ```latex
 \documentclass[a4paper]{article}
 
 \begin{document}
-
-
 $(x+y)(x-y)=x^{2}-y^{2}$
 
 {\boldmath $(x+y)(x-y)=x^{2}-y^{2}$}
@@ -58,36 +54,34 @@ $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
 \end{document}
 ```
 
-If you want to access bold symbols (as would be used by `\boldmath`)
-within an otherwise normal weight expression, then you can use the
-command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as = and Greek letters.
+Nếu bạn muốn dùng các ký hiệu đậm như được sử dụng bởi `\boldmath` chỉ trong một
+phần của một công thức nào đó, ta có thể dùng lệnh `\bm` từ gói `bm`. Chú ý rằng
+`\bm` cũng hoạt động tốt với các ký hiệu như dấu bằng hay các chữ cái Hy Lạp.
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage{bm}
 
 \begin{document}
-
 $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
 
 $(x+\bm{y})(x-\bm{y}) \bm{=} x^{2}-{\bm{y}}^{2}$
 
 $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
-
 \end{document}
 ```
 
-# Mathtools
-The package `mathtools` loads `amsmath` and adds several additional
-features, such as variants of the `amsmath` matrix environments that
-allow the column alignment to be specified.
+# Gói `mathtools`
+
+Gói `mathtools` dùng `amsmath` và thêm nhiều chức năng tăng cường khác như tăng
+các hỗ trợ cho việc viết ma trận. Dùng `mathtools` ta có thể dùng các ký tự khai
+báo bảng để căn lề các ô trong ma trận.
+
 ```latex
 \documentclass[a4paper]{article}
 \usepackage{mathtools}
 
 \begin{document}
-
 \[
 \begin{pmatrix*}[r]
   10&11\\
@@ -95,19 +89,19 @@ allow the column alignment to be specified.
   -5&-6
 \end{pmatrix*}
 \]
-
 \end{document}
 ```
 
-# Unicode Math
+# Các công thức toán học và Unicode
 
-As will be seen in [Lesson 14](lesson-14), there are variant TeX
-engines that use OpenType fonts. By default, these engines still use
-classic TeX math fonts but you may use the `unicode-math` package
-to use OpenType Math fonts. The details of this package are beyond
-this course and we refer you to the
-[package documentation](https://texdoc.net/pkg/unicode-math).
-However, we give a small example here.
+
+Như ta sẽ biết trong [một bài sau](lesson-14), có nhiều trình biên dịch TeX khác
+nhau có thể dùng font OpenType. Các trình biên dịch này vẫn sử dụng font toán
+mặc định của TeX nhưng ta có thể dùng gói `unicode-math` để sử dụng font
+OpenType cho các công thức toán. Nội dung của gói này nằm ngoài tầm của khóa
+này nên ta sẽ không đi sâu vào nó mà chỉ đưa ra một ví dụ đơn giản. Tuy nhiên
+bạn có thể đọc thêm trong
+[hướng dẫn sử dụng gói](https://texdoc.net/pkg/unicode-math).
 
 ```
 % !TEX xelatex
