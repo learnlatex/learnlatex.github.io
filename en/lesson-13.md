@@ -116,16 +116,19 @@ The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
 affect the formatting.
 For instance, `\frontmatter` changes the page numbering to
 Roman numbers.
-The `appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after it the header says `Appendix A`.
+The `\appendix` command changes the numbering to `A`, `B`, etc.,
+so for instance in the first chapter after `\appendix`,
+the header says `Appendix A`.
 
 ## Exercises
 
 Experiment with the basic structure of the demonstration document,
 try adding and removing entries for `\includeonly` and see the effect.
 
-Add some floats and produce a list of figures and tables; do you see
-how many LaTeX runs are required?
+Add some floats and produce a list of figures and tables.
+If using a locally installed LaTeX, do you see
+how many LaTeX runs are required? (The online systems re-run LaTeX
+"behind the scenes" so the additional required runs are not so obvious.)
 
 ----
 
