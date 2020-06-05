@@ -44,7 +44,7 @@ A longer document might therefore look something like the following:
 \title{A Sample Book}
 \author{John Doe \and Joe Bloggs}
 
-\IFFileExists{\jobname.aux}
+\IfFileExists{\jobname.aux}
 {
 \includeonly{
 %  front,
@@ -144,7 +144,7 @@ how many LaTeX runs are required?
 <!-- pre2 {% raw %} -->
 ```latex
 \chapter{Preface}
-The preface text. See \citet{doody}.
+The preface text. See \cite{doody}.
 ```
 <!-- {% endraw %} -->
 
