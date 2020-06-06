@@ -17,3 +17,4 @@ The following people have made contributions to learnlatex.org:
 - Moritz Wemheuer
 - Joseph Wright
 - Uwe Ziegenhagen
+- Vu Van Dung
