@@ -1,20 +1,20 @@
 ---
-title: "More on: Citations and references"
+title: "Bổ sung: Phần tài liệu tham khảo"
 ---
 
-## Dealing with non-English sorting
+## Sắp xếp các mục tài liệu đối với các tài liệu không có tên tiếng Anh
 
-The BibTeX program was written primarily to deal with references in English. It
-is very limited in handling accented characters, and even more limited with
-non-Latin letters. In contrast, the Biber program was written from the start to
-handle a mix of scripts properly.
+BibTeX được viết để chủ yếu xử lý các thông tin được viết bằng tiếng Anh. Nó
+không tốt trong việc xử lý các chữ cái có dấu, và gần như không hỗ trợ các chữ
+cái không phải chữ cái Latin. Ngược lại, Biber được viết sao cho nó có thể xử lý
+các ngôn ngữ khác nhau tốt.
 
-This means that if you are sorting your bibliography, and you need to sort in
-anything other than English order, you really should be using `biblatex` and
-Biber, rather than `natbib` and BibTeX.
+Điều này nghĩa là nếu bạn đang sắp xếp các tài liệu và bạn muốn sắp xếp theo bất
+kỳ thứ tự gì ngoài thứ tự các bảng chữ cái tiếng Anh không dấu, bạn thật sự cần
+đến `biblatex` và Biber thay vì `natbib` và BibTeX.
 
-## Hyperlinks
+## Đường dẫn
 
-If you load the `hyperref` package (as covered [earlier](more-09)), it will
-automatically make some content in your bibliography into links. This is
-particularly useful for URLs and DOIs.
+Nếu bạn khai báo gói `hyperref` (như đã nói trong [bài trước](more-09)), gói này
+sẽ tự động chuyển các thông tin cần thiết trong mục tài liệu tham khảo thành các
+đường dẫn. Điều này có thể rất hữu ích, đặc biệt là đối với các URL và DOI.
