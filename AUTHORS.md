@@ -16,4 +16,5 @@ The following people have made contributions to learnlatex.org:
 - Jonathan P. Spratte
 - Moritz Wemheuer
 - Joseph Wright
+- Dung Vu
 - Uwe Ziegenhagen
