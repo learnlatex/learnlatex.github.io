@@ -1,18 +1,13 @@
 ---
-title: "Language-specifics for English"
+title: "Gõ tiếng Việt trong LaTeX"
 ---
 
-## hyphenation
-
-LaTeX was written for use with English, and so there are very few
-langauge-specific issues facing authors in English. The main one
-is hyphenation: UK and US traditions are different. LaTeX starts out
-using US English patterns, but you can switch to UK ones using `babel`.
+Sẽ bổ sung nội dung sau.
 
 ```latex
 \documentclass{article}
-\usepackage[UKenglish]{babel}
+\usepackage[vietnamese]{babel}
 \begin{document}
-Some text
+Xin chào Việt Nam!
 \end{document}
 ```
