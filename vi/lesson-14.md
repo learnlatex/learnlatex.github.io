@@ -1,34 +1,75 @@
 ---
-title: "Selecting fonts and using Unicode engines"
+title: "Chọn fonts và sử dụng các trình biên dịch Unicode"
 ---
 
-When TeX and LaTeX first started being widely used they largely only handled European languages out of the box, although there was some capability for using other alphabets such as Greek and Russian.
-Originally, accents and accented letters were typed using control sequences or macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to use these input methods because they can be easier to type, others wanted to be able to use the keys on their keyboards to input such symbols directly.
-Before Unicode, LaTeX provided support for many types of *file encoding* that allowed text to be written in various languages natively — for example, using the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would internally translate the accented letters into TeX commands to produce the correct output.
+Khi TeX và LaTeX bắt đầu được sử dụng rộng rãi, nó chỉ có hỗ trợ cho một số ngôn
+ngữ châu Âu, cùng với một vài tính năng cho các bảng chữ cái khác như tiếng Hy
+Lạp hay tiếng Nga.
 
-This approach is still in use in modern LaTeX when using the `pdflatex` engine. By default all files are assumed to be Unicode-encoded unless otherwise specified. Although this engine is limited to 8-bit fonts, most European languages can be supported.
+Ban đầu, các chữ cái có dấu được nhập bằng những lệnh như `\c{c}` tạo ra "ç" hay
+`\'e` tạo ra `é`. Trong khi một số người vẫn tiếp tục sử dụng cách này, hầu hết
+mọi người muốn nhập trực tiếp các chữ cái có dấu từ bàn phím của họ.
 
-Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For example, the TeX Gyre fonts are a suite of high-quality fonts based on common fonts that most people are familiar with such as Times, Helvetica, Palatino, and others. To load these fonts, it is as simple as loading a package with the appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
+Trước Unicode, LaTeX có hỗ trợ cho nhiều loại *mã hóa tệp* (file encoding) cho
+phép các chữ cái ngoài bộ chữ cái tiếng Anh được nhập trực tiếp &ndash; ví dụ,
+sử dụng hệ mã hóa `latin1` thì những người viết tiếng Pháp có thể viết trực tiếp
+là `déjà vu` và LaTeX sẽ tự động chuyển các ký tự đặc biệt về những lệnh TeX để
+tạo ra output chính xác.
+
+Kiểu hỗ trợ này vẫn được sử dụng ở ngày nay trong trình dịch `pdflatex`. Các tệp
+được hiểu là được mã hóa theo Unicode một cách mặc định. Mặc dù trình dịch này
+bị giới hạn và chỉ hỗ trợ các font 8-bit, hầu hết các ngôn ngữ châu Âu được hỗ
+trợ. (Tiếng Việt cũng được hỗ trợ, xem [bài đặc biệt](language-01).)
+
+`pdflatex` chọn font bằng hệ thống chọn font của LaTeX, và ngày nay có nhiều
+font có sẵn trong một hệ thống TeX đầy đủ. Ví dụ, font TeX Gyre là một hệ thống
+font có chất lượng khá cao dựa trên những font mà mọi người đã trở nên quen
+thuộc với nó như Times, Helvetica hay Palatino. Để dùng những font này ta chỉ
+cần khai báo những gói lệnh với tên gói hợp lý. Ví dụ, để có một font giống
+Times, ta dùng font Termes (`tgtermes`).
+
 ```latex
 \usepackage{tgtermes}
 ```
 
-More information about the fonts that are available in a default `pdflatex` installation is available HERE.
+Đối với `pdflatex`, hầu hết các font có thể được dùng qua việc khai báo gói
+lệnh. Bạn có thể xem
+[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) hay
+[trang CTAN về chủ đề "Font"](https://www.ctan.org/topic/font) để tìm hiểu về
+những font có sẵn. Bạn cũng có thể tìm kiếm trên mạng về font mà bạn cần, sau đó
+tìm kiếm bản mà `pdflatex` có thể dùng được. Nếu bạn muốn dùng một font có bản
+quyền (proprietary font), bạn cũng có thể tìm một bản clone hợp lý; đối với hầu
+hết phần mềm thì bản clone này có chất lượng gần tương đương với bản gốc.
 
+## Thời của Unicode
 
-## The Unicode era
+Vì `pdflatex` bị giới hạn về các hệ mã hóa tệp 8-bit cũng như các font 8-bit, nó
+không thể dùng những font OpenType hiện đại hay thay đổi ngôn ngữ sử dụng những
+bảng chữ cái khác nhau một cách tự nhiên được. Có hai sự thay thế cho pdfTeX mà
+có thể xử lý các vấn đề này, đó là XeTeX và LuaTeX. Đối với LaTeX, những trình
+biên dịch này có thể được dùng bằng các lệnh `xelatex` và `lualatex` tương ứng.
 
-As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot natively use modern OpenType fonts and easily switch between multiple languages that use different alphabets (or scripts, to use the technical term).
-There are two replacements for pdfTeX that natively use Unicode input and modern fonts: XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using the engines `xelatex` and `lualatex` respectively.
+Trong những trình dịch này, việc chọn font được thực hiện bởi gói `fontspec`, và
+đối với những văn bản đơn giản nó có thể trông ngắn gọn như thế này:
 
-In these engines, font selection is performed by the `fontspec` package, and for simple documents can look as easy as:
 ```latex
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
-This selects the TeX Gyre Termes font, as in the `pdflatex` example above. Notably, this approach works for *any* OpenType font.
-Having selected a font, input can now be typed directly in plain Unicode into a source document.
-Here is an example showing some Latin and Greek letters as well as some CJK ideographs:
+
+Các lệnh này chọn font TeX Gyre Termes. Đáng chú ý, cách này có thể hoạt động
+với *bất kỳ* font OpenType nào. Những font dùng được ở `pdflatex` cũng có thể
+dùng được trong `xelatex` và `lualatex` qua các gói lệnh tương ứng. Bạn cũng có
+thể dùng bất kỳ font nào đã được cài đặt vào máy tính của bạn bằng việc sử dụng
+`fontspec` như mô tả ở trên.
+[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) có cho ta biết
+những font nào có định dạng OpenType đi kèm, nên ta có thể dùng nó làm nguồn để
+tìm kiếm một font vừa ý. Điều tương tự với
+[trang CTAN](https://www.ctan.org/topic/font) được mô tả ở trên.
+
+Sau khi đã chọn một font, input có thể được viết trực tiếp bằng Unicode thuần
+túy vào mã nguồn. Đây là một ví dụ sử dụng một số chữ cái Latin, một số chữ cái
+Hy Lạp, một số ký hiệu cùng một vài chữ cái tượng hình CJK.
 
 ```latex
 \documentclass{article}
@@ -42,9 +83,6 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
-
-When switching between languages it is usually important to also
-change things like hyphenation patterns and so on, and the `babel` and
-`polyglossia` packages both provide robust features to do this.
-
-
+Khi ta thay đổi ngôn ngữ, việc thay đổi quy tắc hyphenation và những thứ tương
+tự có thể cần thiết. Các gói `babel` hay `polyglossia` đều cung cấp những công
+cụ mạnh để thực hiện việc này.
