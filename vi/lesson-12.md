@@ -1,5 +1,5 @@
 ---
-title: "Citations and references"
+title: "Phần tài liệu tham khảo"
 ---
 <script>
 preincludes = {
@@ -12,17 +12,19 @@ preincludes = {
 }
 </script>
 
-## Reference databases
+## Lưu trữ thông tin các tài liệu
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+Trong khi ta có thể đưa thông tin về tài liệu tham khảo trực tiếp vào mã nguồn,
+ta thường lấy thông tin đó từ một hoặc nhiều tệp bên ngoài. Mỗi tệp trong đó lưu
+trữ các thông tin quan trọng về các tài liệu được trích dẫn, v.v...; các thông
+tin được lưu trữ sao cho trình dịch có thể hiểu được. Việc sử dụng một hay nhiều
+tệp ngoài lưu trữ thông tin giúp bạn dễ dàngtái sử dụng thông tin và tránh việc
+phải thực hiện định dạng kiểu chữ "bằng tay".
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+Những tệp lưu trữ như vậy thường được gọi là các "tệp BibTeX" và có đuôi tệp là
+`.bib`. Chúng thường bao gồm một hay nhiều mục, mỗi mục cho thông tin về một tài
+liệu tham khảo &ndash; đó là một chuỗi các miền thông tin. Hãy cùng cem một ví
+dụ:
 
 <!-- {% raw %} -->
 ```
@@ -50,67 +52,70 @@ within each entry there are a series of fields. Let us look at an example.
 <!-- {% endraw %} -->
 
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+Mục đầu tiên lưu trữ thông tin về một bài báo còn mục còn lại lưu trữ thông tin
+về một cuốn sách &ndash; bài báo (`article`) và sách (`book`) chính là hai loại
+mục phổ biến nhất. Mỗi mục bắt đầu bằng `@` như ta thấy ở trên, và tất cả các
+thông tin được lưu trong một cặp ngoặc nhọn.
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
+Các vùng thông tin được cho dưới dạng "tùy biến = giá trị" (key=value), trừ
+thông tin đầu tiên mà ta gọi là "tên" của mục này. Ta có thể dùng bất kỳ tên nào
+đặt cho cái tên này; nó chỉ là một cái nhãn để ta tạo đường dẫn trong văn bản,
+nhưng trong ví dụ trên ta dùng tên tác giả và năm xuất bản &ndash; đây là cách
+làm phổ biến nhất.
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
+Hầu hết các vùng thông tin đều có ý nghĩa khá rõ ràng, ví dụ `author` là vùng
+dành cho tên tác giả hay `title` là vùng dành cho tiêu đề tài liệu. Ta có thể để
+ý rằng trong `author`, các tên tác giả được phân tách bởi `and`. Điều này rất
+_quan trọng_: Formatting của output cần phải biết được tên của từng tác giả một.
+Ta cũng có thể thấy trong `title` của mục `article`, một số chữ cái được đưa vào
+cặp ngoặc nhọn; điều này để tránh việc thay đổi cách viết chữ hoa/chữ thường
+trong output.
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
+Sửa một tệp `.bib` bằng tay không dễ dàng, nên hầu hết mọi người dùng một trình
+mã nguồn dành riêng cho việc này. [JabRef](https://www.jabref.org) được dùng phổ
+biến và nó hỗ trợ nhiều hệ điều hành, nhưng cũng còn nhiều chương trình khác
+nữa. Nếu phần tài liệu tham khảo có bao gồm DOI (Digital Object Identifier), bạn
+có thể cần đến [doi2bib](https://doi2bib.org) để dễ dàng có được mục BibTeX.
+Đương nhiên, nhớ kiểm tra lại xem mục BibTeX có chính xác không!
 
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
-`learnlatex.bib`.
+Trong các phần tiếp theo ta sẽ dùng tệp BibTeX ví dụ ở trên. Ta đã "lưu" nó dưới
+tên `learnlatex.bib`.
 
-## Transferring information from the database
+## Dùng thông tin từ các tệp BibTeX
 
-To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which creates a file with a
-list of the references that your document cites.  Second, run a
-program that takes information from the database of references, picks
-out the ones that you use, and puts them in order.  Finally, compile
-your document again so that LaTeX can use that information to resolve
-your citations. Usually it will require at least two compilations to
-resolve all the references.
+Để lấy thông tin từ các tệp BibTeX vào văn bản, bạn cần thực hiện ba bước. Đầu
+tiên, chạy LaTeX để biên dịch văn bản; nó sẽ tạo ra một tệp với danh sách các
+tham chiếu tới các tài liệu tham khảo trong văn bản. Sau đó, chạy một chương
+trình nhận tệp BibTeX, chọn những mục mà bạn dùng và sắp xếp chúng theo thứ tự.
+Cuối cùng, biên dịch văn bản của bạn thêm một lần nữa để LaTeX có thể tập hợp
+các thông tin từ hai lần chạy trước. Tuy nhiên thông thường ta cần chạy LaTeX
+biên dịch thêm ít nhất hai lần nữa để giải quyết mọi vấn đề liên quan đến tham
+chiếu trong văn bản.
 
-For the second step, there are two systems in wide use: BibTeX and
-Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
-BibTeX is used with either no packages at all or with `natbib`.
+Để thực hiện bước thứ hai, có hai hệ thống chương trình được dùng phổ biến:
+BibTeX và Biber. Biber chỉ được dùng với một gói LaTeX gọi là `biblatex`, trong
+khi BibTeX có thể được sử dụng không cần gói nào hoặc với gói `natbib`.
 
-Running a second tool as well as LaTeX is handled in different ways by different
-editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go; that's true for LaTeX.Online and Overleaf. Your
-editor might have a single 'do stuff' button or you might have to choose to run
-BibTeX or Biber manually between LaTeX runs.
+Chạy một công cụ thứ hai cùng với LaTeX được hỗ trợ bởi hầu hết trình mã nguồn
+khác nhau. Đối với các ví dụ ở đây, có một số đoạn mã được chạy trong quá trình
+biên dịch. Trình mã nguồn của bạn có thể có một nút "tổng biên dịch" mà làm mọi
+thứ cần thiết, hoặc bạn có thể phải chọn chạy BibTeX hay Biber "bằng tay" giữa
+các lần chạy LaTeX.
 
-The format of citations and references is independent of your BibTeX database,
-and is set by what is known as a 'style'. We will see that these work slightly
-differently in `natbib` and `biblatex`, but the general idea remains: we can
-choose how citations appear.
+Cấu trúc và định dạng của các mục trong phần tài liệu tham khảo không phụ thuộc
+vào các thông tin trong tệp BibTeX; thay vào đó nó được định nghĩa bởi một thứ
+gọi là "kiểu bibliography". Ta sẽ thấy rằng các kiểu này hoạt động có hơi khác
+nhau một chút giữa `natbib` và `biblatex`, nhưng ý tưởng chính vẫn giữ nguyên:
+ta có thể chọn cách các mục tài liệu tham khảo được in ra trong văn bản của mình.
 
-## The `natbib` workflow
+## Quy trình làm việc với `natbib`
 
-Whilst it is possible to insert citations into a LaTeX document without
-any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create different types of citation and
-has a lot of styles available.
+Mặc dù ta có thể thêm các mục tài liệu vào một văn bản LaTeX mà không cần thêm
+gói nào, điều này có nhiều hạn chế. Thay vào đó, ta sẽ dùng gói `natbib` &ndash;
+gói này cho phép ta có nhiều kiểu mục tài liệu khác nhau cũng như có nhiều kiểu
+bibliography có sẵn.
 
-The basic structure of our input is as shown in this example.
+Cấu trúc cơ bản của mã LaTeX được viết trong ví dụ sau:
 
 ```latex
 \documentclass{article}
@@ -132,25 +137,27 @@ Together \citep{Graham1995,Thomas2008}
 \end{document}
 ```
 
-You can see that we can cite different entries in the database by giving their
-key. The `natbib` package offers both textual and parenthetical citation styles,
-`\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line; here we've used the `plainnat` style. The
-bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use; this is a comma-separated list of names.
+Bạn có thể thấy rằng ta có thể thêm tham chiếu đến các mục tài liệu khác nhau
+bằng việc sử dụng tên của mục đó. Gói `natbib` cung cấp `\citet` và `\citep` mà
+ta có thể dùng để tạo các tham chiếu với formatting khác nhau. Kiểu biblography
+được chọn bằng lệnh `\bibliographystyle`; ở đây ta đang sử dụng kiểu `plainnat`.
+Phần tài liệu tham khảo được thêm bằng lệnh `\bibliography` &ndash; đối số của
+lệnh này là một danh sách được phân cách bởi dấu phẩy của tên các tệp BibTeX mà
+ta sử dụng.
 
-Page references can be added to the citation with an optional argument.
-If two optional arguments are given, the first goes in front of the citation
-label for a short note and the second after the label for a page reference.
+Ta có thể thêm số trang vào tham chiếu bằng một đối số không bắt buộc cho các
+lệnh `\cite`. Nếu có hai đối số không bắt buộc được cho, đối số đầu tiên được
+đưa vào phía trước phần tham chiếu và đối số thứ hai được đưa vào phía sau.
 
-The setup above uses author-year style, but we can make use of numeric
-citations. That is done by adding the `numbers` option to the `natbib` line.
+Setup ở phía trên dùng kiểu (tác giả &ndash; năm xuất bản). Ta có thể dùng các
+kiểu khác. Ví dụ để đánh số các mục tài liệu ta thêm tùy biến `numbers` vào dòng
+khai báo `natbib`.
 
-## The `biblatex` workflow
+## Quy trình làm việc với `biblatex`
 
-The `biblatex` package works slightly differently to `natbib`, as we select
-the databases in the preamble but print it in the document body. There are
-some new commands for this.
+Gói `biblatex` hoạt động hơi khác `natbib` một chút: ta chọn tệp BibTeX ở phần
+khai báo và in nó bằng một câu lệnh khác trong thân văn bản. Để ý sự thay đổi
+tên câu lệnh.
 
 ```latex
 \documentclass{article}
@@ -173,28 +180,26 @@ Together \autocite{Thomas2008,Graham1995}
 \end{document}
 ```
 
-Notice that `\addbibresource` _requires_ the full database filename, whereas
-we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for its citation commands, but these are
-all quite easy to guess.
+Chú ý rằng `\addbibresource` cần toàn bộ tên của tệp BibTeX, _tính cả_ đuôi tệp
+`.bib` (ta bỏ qua `.bib` trong `natbib`). Ta cũng thấy rằng `biblatex` dùng các
+lệnh có tên dài hơn, nhưng chúng thường khá dễ đoán.
 
-Again, short text before and after the citation can be inserted with
-the optional arguments. Note that the page numbers need not be prefixed
-with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
-prefix.
+Tương tự như ở `natbib`, các đoạn chữ ở trước và sau tham chiếu có thể được thêm
+bằng các đối số không bắt buộc. Chú ý rằng số trang không cần phải thêm `p.~`
+hay `pp.~`, vì `biblatex` tự động thêm tiền tố phù hợp cho số trang.
 
+Trong `biblatex`, kiểu tham chiếu được chọn khi ta khai báo gói. Ở đây ta đã
+dùng `authoryear`, nhưng ta cũng có `numeric` và nhiều kiểu khác nữa.
 
-In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authoryear`, but there is a `numeric` style and many others are
-also available.
+## Bài tập
 
-## Exercises
+Thử thao tác với cả `natbib` và `biblatex`. Đối với `natbib`, bạn cần phải chạy
+(theo thứ tự) LaTeX, BibTeX, LaTeX và LaTeX; còn đối với `biblatex` thì bạn cần
+chạy LaTeX, Biber, LaTeX. Hãy tìm hiểu cách để chạy theo trình tự này trong
+trình mã nguồn (nếu bạn dùng Overleaf hay LaTeX Online thì quá trình này được
+thực hiện tự động).
 
-Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
-to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and LaTeX.Online
-automation.
-
-See what happens when you create new database entries and new citations. Add
-a citation that's not in the database and see how it appears. Experiment
-with the `numeric` option to both packages.
+Xem điều gì sẽ xảy ra khi bạn thêm những mục thông tin mới và những tham chiếu
+mới. Thêm một tham chiếu đến một tài liệu tham khảo không được khai báo thông
+tin trong tệp BibTeX để xem nó hoạt động ra sao. Thử dùng tùy biến `numeric` cho
+cả hai gói `natbib` và `biblatex`.
