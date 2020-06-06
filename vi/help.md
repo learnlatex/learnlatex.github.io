@@ -1,20 +1,19 @@
 ---
-title: "Using the learnlatex.org site"
+title: "Sử dụng trang learnlatex.org"
 ---
 
-## Navigating the site
+## Định hướng trong trang
 
-The course consists of 15 core lessons that can be reached from the table
-of contents on the [home page](/).
+Khóa này bao gồm 15 bài học cơ bản. Bạn có thể xem danh sách của chúng trong
+[trang chủ](vi).
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 15 lessons _without_  reading the additional lessons.
+Mỗi bài có một đường dẫn đến một bài bổ sung về cùng chủ đề nhưng có phần chuyên
+sâu hơn. Tuy nhiên, bạn vẫn có thể đi qua tất cả 15 bài mà _không_ cần học thêm
+những bài bổ sung này.
 
-## Running the examples
+## Chạy các ví dụ
 
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+Mỗi ví dụ bao gồm một tệp LaTeX nhỏ được hiển thị như sau:
 
 ```latex
 \documentclass{article}
@@ -23,84 +22,83 @@ Example text.
 \end{document}
 ```
 
-The example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
+Đây là một ví dụ đầy đủ. Tuy nhiên bạn có thể phải sửa nó để thực hiện những
+thay đổi nhỏ, ví dụ như để thực hiện các bài tập ở phần cuối mỗi bài học.
 
-The <button style="padding:0 1px;font-size:90%">Edit</button> button enables editing within the page; this is
-marked by the removal of the LaTeX syntax highlighting and a green
-border added around the code block. Note that this is just a basic edit facility provided by your browser;
-there is no TeX specific editing help as found in typical editing systems that you would use with TeX.
+Nút <button style="padding:0 1px;font-size:90%">sửa</button> có thể được dùng để
+sửa đoạn mã trong ví dụ ngay trong trang. Chú ý rằng đây chỉ là một chức năng
+sửa đơn giản được cung cấp bởi trình duyệt của bạn, nó không hề có những chức
+năng hỗ trợ LaTeX như bạn có thể thấy ở hầu hết các trình sửa mã nguồn.
 
-Whether or not the code block has been edited, there are three basic ways that you can run the example.
+Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau khi sửa:
 
-1. Use the **LaTeX.Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX.Online</button> button
-   will submit the code to the [LaTeX.Online](https://latexonline.cc/) service.
+1. Dùng hệ thống **LaTeX Online**. Nút
+   <button style="padding:0 1px;font-size:90%">Chạy với LaTeX Online</button> sẽ
+   chuyển đoạn mã tới dịch vụ [LaTeX Online](https://latexonline.cc).
 
-   The resulting PDF document (or section of the error log) will be
-   shown inline immediately below the example. A <button style="padding:0 1px;font-size:90%">Delete
-   Output</button> button will be provided so that you may remove this output
-   (or you may leave it in place and continue the rest of the lesson
-   below).
+   Tệp PDF output (hoặc một phần của các thông báo lỗi nếu quá trình biên dịch
+   gặp vấn đề) sẽ được hiện ra ngay phía dưới ví dụ. Nút
+   <button style="padding:0 1px;font-size:90%">Xóa output</button> có thể được
+   dùng để bỏ phần output này đi nếu bạn thấy nó không còn cần thiết.
 
-   Note that  **LaTeX.Online** requires no login or signup of any sort
-   so it is very convenient for small examples, but neither this site
-   nor the `latexonline.cc` site provide any mechanism to save your
-   document. Any changes that you make to the example are lost if you
-   move off the page.
+   Chú ý rằng **LaTeX Online** không cần bạn phải lập tài khoản nên nó rất thuận
+   tiện cho những ví dụ nhỏ. Tuy nhiên, cả trang này lẫn `latexonline.cc` đều
+   không hỗ trợ khả năng lưu văn bản của bạn. Tất cả những thay đổi bạn đã thực
+   hiện sẽ bị mất sau khi bạn rời khỏi trang.
 
-   **Warning:** Displaying the PDF result in the page requires that your
-     browser has a built-in PDF viewer that can work in an `iframe`.
-     In mobile browsers where this is often not the case, you may be offered a
-     dialog to download the result as `compile.pdf` which you can then
-     view in your PDF reading app, or it may not work at all.
-     The exact behaviour depends on the details of browser and mobile operating system
-     settings.  You may prefer to use the **Overleaf** link in some cases.
-
-
-2. Use the **Overleaf** Service. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
-   button will submit the code to [Overleaf](https://www.overleaf.com/about).
-
-   If you do not have an account, or the account details are not
-   already cached in your browser, then you will be redirected to a
-   login page where you may login or register with Overleaf. This is a
-   free service but does require you to give some details and agree to
-   terms and conditions.
-
-   If your Overleaf account is already cached in your browser, then
-   Overleaf will be opened in a new tab, with a new
-   project with the code. You may then edit it in
-   Overleaf which will simultaneously run LaTeX on your code showing
-   the resulting output or error log.
-
-   The editing features in Overleaf are far more extensive than on this
-   site, and you may save your project in your Overleaf account and
-   return to it later.
-
-3. If you have a TeX system installed locally, then you may copy the
-   example code off the page, either explicitly selecting it, or by
-   using the <button style="padding:0 1px;font-size:90%">Copy</button>
-   button.  This will place the code in your operating system
-   clipboard so you can start a blank document using your local
-   editor, and paste in the text.
+   **Cảnh báo:** Việc hiện tệp PDF output trong trang yêu cầu trình duyệt của
+   bạn phải có một trình đọc PDF mà có thể hoạt động được trong một `iframe`.
+   Nếu bạn dùng điện thoại, điều này thường không xảy ra; khi đó một thông báo
+   có thể hiện ra hỏi liệu bạn muốn tải về tệp PDF để đọc trong máy, nhưng nó có
+   thể không có thông báo nào hết. Cách mà nút này thực hiện phụ thuộc vào trình
+   duyệt của bạn. Bạn có thể cần dùng đến đường link **Overleaf** trong một số
+   trường hợp.
 
 
-## Choosing the {{ site.tex }} engine
+2. Dùng **Overleaf**. Nút
+   <button style="padding:0 1px;font-size:90%">Mở trong Overleaf</button> sẽ đưa
+   phần mã nguồn lên [Overleaf](https://www.overleaf.com/about).
 
-When submitting projects to Overleaf or LaTeX.Online, by default the
-`pdflatex` engine will be used unless the example uses the `fontspec`
-package in which case `xelatex` is used.
+   Nếu bạn không có một tài khoản Overleaf, hoặc những thông tin về tài khoản
+   của bạn không được lưu trữ sẵn trong trình duyệt, bạn sẽ được đưa tới một
+   trang để đăng nhập hoặc đăng ký tài khoản Overleaf. Đây là một dịch vụ miễn
+   phí nhưng có yêu cầu bạn phải cung cấp một số thông tin và đồng ý với những
+   điều khoản sử dụng.
 
-You can force the choice of `pdflatex`, `xelatex` or `lualatex` by using a comment of the form:
+   Nếu bạn đã có một tài khoản, Overleaf sẽ được mở ra ở một tab mới với một
+   project mới có chứa đoạn mã này. Bạn có thể sửa mã trên Overleaf và biên dịch
+   ngay trên đó.
 
-`% !TEX ` _any text_ `lualatex`
+   Các chức năng sửa mã trên Overleaf tốt hơn chức năng sửa mã ở đây nhiều. Bạn
+   cũng có thể lưu project vào tài khoản Overleaf của mình và thao tác với nó
+   sau.
 
-where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
+3. Nếu bạn đã có một hệ thống TeX được cài đặt trong máy, bạn có thể sao chép
+   đoạn mã bằng nút <button style="padding:0 1px;font-size:90%">sao chép</button>.
+   Nút này sẽ lưu đoạn mã vào clipboard và bạn có thể mở trình soạn mã của mình,
+   dán đoạn mã vào và thực hiện các thao tác ở đó.
 
-This allows the form `% !TEX program=pdflatex` used by some TeX editors
-but does not require the `program=` and is currently restricted to
-specifying just one of the three engines that are supported on both of
-the online systems being used.
 
-You can see an example of a comment being used to specify LuaLaTeX in
-[some of the examples on this site](more-14).
+## Chọn trình biên dịch {{ site.tex }}
+
+Khi một đoạn mã được đưa lên Overleaf hoặc LaTeX Online, trình dịch `pdflatex`
+sẽ được sử dụng một cách mặc định trừ khi ví dụ có dùng gói `fontspec` (khi đó
+`xelatex` sẽ được sử dụng).
+
+Bạn có thể thay đổi trình dịch bằng cách dùng một ghi chú dưới dạng
+
+```
+% !TEX <bất cứ đoạn chữ nào> lualatex
+```
+
+trong đó khoảng trống ở bắt đầu là không bắt buộc; viết hoa hay viết thường đều
+được hiểu như nhau và phần `<bất cứ đoạn chữ nào>` được bỏ qua.
+
+Điều này cho phép một ghi chú kiểu như `% !TEX program=pdflatex` được sử dụng
+bởi một số trình sửa mã TeX, nhưng ở đây `program=` là không bắt buộc. Chú ý
+rằng thay vì `lualatex`, ta chỉ có hai sự thay thế là `pdflatex` và `xelatex`,
+vì các dịch vụ LaTeX trên mạng mà ta dùng chỉ hỗ trợ ba trình biên dịch này
+thôi.
+
+Bạn có thể xem một số ví dụ có ghi chú dùng để cho biết ví dụ sẽ được chạy bằng 
+LuaLaTeX trong [bài bổ sung của bài 14](more-14).
