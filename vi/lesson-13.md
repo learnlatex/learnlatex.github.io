@@ -1,63 +1,66 @@
 ---
-title: "Structuring longer documents"
+title: "Cấu trúc cho các văn bản dài"
 ---
 
 <script>
 preincludes = {
  "pre0": {
-    "pre1": "pref.tex",
-    "pre2": "chap1.tex",
-    "pre3": "chap2.tex",
-    "pre4": "append.tex",
-    "pre5": "frontcover.tex",
-    "pre6": "dedication.tex",
-    "pre7": "copyright.tex",
-    "pre8": "backcover.tex",
+    "pre1": "front.tex",
+    "pre2": "pref.tex",
+    "pre3": "chap1.tex",
+    "pre4": "chap2.tex",
+    "pre5": "append.tex",
+    "pre6": "frontcover.tex",
+    "pre7": "dedication.tex",
+    "pre8": "copyright.tex",
+    "pre9": "backcover.tex",
    }
 }
 </script>
 
-## Structuring your sources
+## Thiết lập cấu trúc cho các tệp mã nguồn
 
-When you are writing a longer document, you’ll likely want to split up
-the source into multiple files. For example, it's very common to have
-one 'main'/'root' file, then one source file per chapter (for a book or thesis),
-or per significant section (for a long article).
+Khi bạn viết một văn bản dài, bạn có thể muốn chia mã của bạn thành nhiều tệp
+khác nhau. Một cách thường thấy là có một tệp chính ("tệp gốc"), và một tệp cho
+mỗi chương (cho một cuốn sách hoặc một luận án) hoặc mỗi tệp cho một phần dài
+(cho một bài báo dài).
 
-LaTeX allows us to split up sources in a controlled way. There are two important
-commands here, `\input` and `\include`. We can use `\input` to make a file work
-'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it has a big advantage: it allows us to
-be selective in which chapters to include, so you can work on part of your
-document rather than the whole thing.
+LaTeX cho phép ta chia nhỏ mã và kiểm soát chúng. Có hai lệnh quan trọng ở đây:
+`\input` và `\include`. Ta có thể dùng `\input` để LaTeX hiểu là "coi như tệp
+kia vừa được gõ lại ở đây", vì thế nó gần như có thể được dùng trong mọi trường
+hợp. Lệnh `\include` chỉ chạy tốt đối với các chương, vì nó sang trang mới và
+thực hiện một vài thay đổi nội bộ. Tuy nhiên nó lại có điểm mạnh lớn: nó cho
+phép ta chọn chương nào để thêm vào, do đó ta có thể làm việc với một phần văn
+bản thay vì lúc nào cũng phải biên dịch tất cả mọi thứ.
 
-A longer document might therefore look something like the following:
+Do đó, một văn bản dài có thể trông như thế này:
 
 <!-- pre0 {% raw %} -->
 ```latex
 \documentclass{book}
 \usepackage{biblatex}
-\addbibresource{document.bib}
+\addbibresource{biblatex-examples.bib}
 
-\title{Life at Sea}
-\author{John Aubrey and Stephen Maturin}
+\title{A Sample Book}
+\author{John Doe \and Joe Bloggs}
 
-\includeonly{% comment out lines to reduce output
-  pref,
-  chap1,
+\IfFileExists{\jobname.aux}
+{
+\includeonly{
+%  front,
+%  chap1,
   chap2,
-  append
+%  append
   }
+}
+{
+% Ban đầu, hãy thêm tất cả các tệp con và chạy LaTeX
+% để có được những tệp aux cần thiết.
+}
 
 \begin{document}
 \frontmatter
-\input{frontcover}
-\maketitle
-\input{dedication}
-\input{copyright}
-\tableofcontents
-\include{pref}
+\include{front}
 
 % =========================
 \mainmatter
@@ -69,72 +72,89 @@ A longer document might therefore look something like the following:
 % ========================
 \backmatter
 \printbibliography
+\newpage
 \input{backcover}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-We'll look at the various aspects of this file below. (The various support files
-are at the end of this page.)
+Ta sẽ nhìn vào những đặc điểm của tệp ví dụ này ở dưới. (Các tệp cần thiết để
+biên dịch, ví dụ `front.tex` hay `chap2.tex` được thêm ở dưới cùng của trang
+này.)
 
-## Using `\input`
+## Dùng `\input`
 
-The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the main file short and clear, and also meaning we could
-re-use the covers in another document. We've also used it for the 'non-chapter'
-sections at the start of our 'book': things like the preface. Again, this is
-to help keep the main file clear.
+Lệnh `\input` khá tốt cho những phần của một tệp dài mà _không_ phải những
+chương khác nhau. Ví dụ, ta đã dùng nó để tách trang đầu và trang cuối. Điều này
+làm cho tệp gốc ngắn gọn và rõ ràng hơn, hơn nữa ta có thể dùng lại những trang
+này trong một văn bản khác. Ta còn dùng lệnh này cho những phần không phải
+chương ở phần đầu của "cuốn sách" như phần lời nói đầu chẳng hạn. Việc này làm
+cho tệp chính gọn và dễ đọc hơn rất nhiều.
 
-## Using `\include` and `\includeonly`
+## Dùng `\include` và `\includeonly`
 
-The `\include` command is good for chapters, so we have used it for each full
-chapter; it always starts a new page. We have selected which chapters will
-actually be typeset using `\includeonly`, which as you can see takes a
-comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proofreading.
-In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from the `.aux` files of other included files.
+Lệnh `\include` hoạt động tốt đối với các chương, nên ta đã dùng chúng cho mỗi
+chương của văn bản. Ta đã chọn những chương nào sẽ được dùng bằng `\includeonly`
+&ndash; bạn có thể thấy đối số của lệnh này là một danh sách các tên tệp phân
+tách bởi dấu phẩy. Khi bạn dùng `\includeonly`, bạn có thể giảm thời lượng biên
+dịch bằng việc chỉ biên dịch những phần ta đang chỉnh sửa. Thêm nữa, một trong
+những điểm quan trọng của `\includeonly` đó là LaTeX sẽ dùng tất cả những thông
+tin về đánh dấu nhãn cũng như tham chiếu từ tệp aux của những tệp khác cũng được
+`\include`.
 
-## Creating a table of contents
+## Thêm mục lục vào văn bản
 
-The `\tableofcontents` command uses the information from sectioning
-commands to populate the table of contents.  It has its own auxiliary
-file, with extension `.toc`, so you may need to run LaTeX twice to
-resolve the information. The table is generated automatically from the
-section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions, and
-use files with extension `.lof` and `.lot` respectively.
+Lệnh `\tableofcontents` dùng tất cả những thông tin có được từ các lệnh tiêu đề
+mục trong văn bản để tạo một mục lục. Nó có một tệp aux của riêng nó với đuôi
+`.toc`, nên bạn có thể phải chạy LaTeX hai lần liền để `\tableofcontents` có
+được đầy đủ thông tin. Có những lệnh tương tự như `\listoffigures` (in ra danh
+sách các hình vẽ) và `\listoftables` (in ra danh sách các bảng) hoạt động với
+các lệnh `\caption` trong các môi trường linh động. Hai lệnh này cũng có tệp aux
+riêng, với đuôi tệp lần lượt là `.lof` và `.lot`.
 
-## Splitting the document into parts
+## Chia văn bản thành các phần
 
-The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
-affect the formatting.
-For instance, `\frontmatter` changes the page numbering to
-Roman numbers.
-The `appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after it the header says `Appendix A`.
+Các lệnh `\frontmatter`, `\mainmatter` và `\backmatter` được dùng để thay đổi
+các định dạng trong trang. Ví dụ, `\frontmatter` thay đổi kiểu của số trang
+thành các chữ số La Mã.
 
-## Exercises
+Lệnh `\appendix` thay đổi việc đánh số phần thành `A`, `B`, v.v..., vì thế
+chương đầu tiên sau `\appendix` sẽ được in ra với tên là "Phụ lục A".
 
-Experiment with the basic structure of the demonstration document,
-try adding and removing entries for `\includeonly` and see the effect.
+## Bài tập
 
-Add some floats and produce a list of figures and tables; do you see
-how many LaTeX runs are required?
+Thử thao tác với cấu trúc cơ bản của văn bản ví dụ, thử thêm và lược bỏ các tên
+tệp trong `\includeonly` để xem sự thay đổi.
+
+Thêm một vài thành phần linh động và tạo ra một danh sách các hình và các bảng.
+Nếu bạn dùng một hệ thống LaTeX được cài trong máy của mình, bạn cần bao nhiêu
+lần chạy LaTeX để có được một mục lục và những danh sách này đầy đủ? (Những hệ
+thống LaTeX online chạy LaTeX theo một cách "bí mật" nên những thông tin về số
+lần chạy không thật sự rõ ràng.)
 
 ----
 
-#### pref.tex
+### front.tex
 <!-- pre1 {% raw %} -->
 ```latex
-\chapter*{Preface}
-The preface text.
+\input{frontcover}
+\maketitle
+\input{dedication}
+\input{copyright}
+\tableofcontents
+\input{pref}
+```
+
+#### pref.tex
+<!-- pre2 {% raw %} -->
+```latex
+\chapter{Preface}
+The preface text. See \cite{doody}.
 ```
 <!-- {% endraw %} -->
 
 #### chap1.tex
-<!-- pre2 {% raw %} -->
+<!-- pre3 {% raw %} -->
 ```latex
 \chapter{Introduction}
 The first chapter text.
@@ -142,7 +162,7 @@ The first chapter text.
 <!-- {% endraw %} -->
 
 #### chap2.tex
-<!-- pre3 {% raw %} -->
+<!-- pre4 {% raw %} -->
 ```latex
 \chapter{Something}
 The second chapter text.
@@ -150,7 +170,7 @@ The second chapter text.
 <!-- {% endraw %} -->
 
 ####  append.tex
-<!-- pre4 {% raw %} -->
+<!-- pre5 {% raw %} -->
 ```latex
 \chapter*{Appendix}
 The first appendix text.
@@ -158,7 +178,7 @@ The first appendix text.
 <!-- {% endraw %} -->
 
 #### frontcover.tex
-<!-- pre5 {% raw %} -->
+<!-- pre6 {% raw %} -->
 ```latex
 \begin{center}
 The front cover
@@ -167,7 +187,7 @@ The front cover
 <!-- {% endraw %} -->
 
 #### dedication.tex
-<!-- pre6 {% raw %} -->
+<!-- pre7 {% raw %} -->
 ```latex
 \begin{center}
 \large
@@ -177,7 +197,7 @@ For \ldots
 <!-- {% endraw %} -->
 
 #### copyright.tex
-<!-- pre7 {% raw %} -->
+<!-- pre8 {% raw %} -->
 ```latex
 \begin{center}
 Copyright 2020 learnlatex.
@@ -186,7 +206,7 @@ Copyright 2020 learnlatex.
 <!-- {% endraw %} -->
 
 #### backcover.tex
-<!-- pre8 {% raw %} -->
+<!-- pre9 {% raw %} -->
 ```latex
 \begin{center}
 The back cover
