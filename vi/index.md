@@ -38,11 +38,11 @@ errors, you might want to check if your LaTeX system is up-to-date.
 
 ## The lessons
 
-{% include toc.html  prefix="ja/lesson" %}
+{% include toc.html  prefix="vi/lesson" %}
 
 ### Additional lessons specific to learnlatex.org/ja
 
-{% include toc.html  prefix="ja/language" %}
+{% include toc.html  prefix="vi/language" %}
 
 
 ## Going further
@@ -58,4 +58,4 @@ Finally we offer a gallery of small examples showing
 a range of different subject areas not covered in this introduction,
 and different LaTeX packages in those areas.
     
-{% include toc.html prefix="ja/extra" %}
+{% include toc.html prefix="vi/extra" %}
