@@ -1,17 +1,17 @@
 ---
-title: "More on: Structuring longer documents"
+title: "Bổ sung: Cấu trúc cho các văn bản dài"
 ---
 
-## Making an index
+## Tạo chỉ mục
 
-Depending on the type of document you are writing, you might want to include
-an index. This is a bit like making a bibliography, as it uses auxiliary files.
-Luckily, this is all automated by the `imakeidx` package. We need three
-instructions to LaTeX:
+Phụ thuộc vào loại văn bản bạn đang viét, bạn có thể cần thêm một chỉ mục. Điều
+này khá giống với việc tạo một danh sách các tài liệu tham khảo, vì nó dùng tới
+các tệp aux. Tuy nhiên, mọi thứ có thể được tự động hóa bằng gói `imakeidx`. Ta
+cần thực hiện ba lệnh:
 
-- The `\makeindex` command, which enables creation of an index
-- The `\index` command, which marks up index entries
-- The `\printindex` command, which prints the index
+- Lệnh `\makeindex` bật chức năng tạo chỉ mục
+- Lệnh `\index` để đánh dấu các vị trí để lưu thông tin cho chỉ mục
+- Lệnh `\printindex` để in ra chỉ mục
 
 ```latex
 \documentclass{article}
@@ -25,7 +25,8 @@ Even more text\index{alpha@$\alpha$}.
 \end{document}
 ```
 
-We've shown two features of indexing here: subdivision using `!`, and printing
-something different from the 'sort text' of an index entry using `@`. There
-is a lot of customisation possible with an index; try out the example and see
-how it works.
+Ta có thể thấy hai chức năng đã được hiển thị ở đây: chia nhỏ các chỉ mục theo
+"chỉ mục con &ndash; chỉ mục cha" theo `!` và in ra một đoạn mã khác với đoạn
+mã được nhập bằng `@` (đoạn mã được nhập sẽ luôn được dùng để sắp xếp các chỉ
+mục). Có nhiều cách căn chỉnh định dạng của chỉ mục, hãy thử các ví dụ này và
+xem cách chúng hoạt động ra sao.
