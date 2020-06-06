@@ -18,7 +18,7 @@ internally translate the accented letters into TeX commands to produce the
 correct output.
 
 This approach is still in use in modern LaTeX when using the `pdflatex` engine.
-By default all files are assumed to be Unicode-encoded unless otherwise
+By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
 specified. Although this engine is limited to 8-bit fonts, most European
 languages can be supported.
 
