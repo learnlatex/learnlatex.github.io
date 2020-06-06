@@ -2,60 +2,66 @@
 title: learnlatex.org
 ---
 
-## Welcome to learnlatex.org (Vietnamese)!
+## Chào mừng đến với learnlatex.org!
 
-This site aims to help you take the first steps with LaTeX, a document
-preparation system designed to produce high-quality typeset output. LaTeX can
-be scary for new users as it is _not_ a word processor, and because it is not a
-single program. Our aim here is to help you get started without trying to show
-you _everything_ in one go.
+Trang này được tạo ra với mục đích giúp bạn có được những kiến thức cơ bản nhất
+về LaTeX, một hệ thống sắp chữ được thiết kế để tạo ra những văn bản có chất
+lượng. LaTeX có thể đáng sợ đối với những người mới học vì nó _không_ phải là
+một trình soạn thảo văn bản như Word, và vì nó không phải chỉ là một chương
+trình duy nhất. Mục đích của chúng tôi ở đây là giúp bạn bắt đầu mà không cần cố
+cho bạn thấy _tất cả_ chỉ trong một lần.
 
-To do that, we have taken around 15 of the most important things you'll need to
-know, and made them into short 'lessons'. Each lesson is very focused, so they
-should not take too long to cover. In each lesson, we've given examples of what
-you'd write, and they are available so you can try them out online.
+Để làm được điều đó, chúng tôi đã chọn ra 15 trong số những chủ đề quan trọng
+nhất bạn cần phải biết để dùng LaTeX, và đưa mỗi chủ đề thành một "bài học"
+ngắn. Mỗi bài sẽ chỉ chú trọng vào chủ đề đó thôi, nên chúng sẽ tương đối súc
+tích. Trong mỗi bài, ta sẽ có những ví dụ, và bạn sẽ có thể thử những ví dụ này
+online chỉ bằng một lần nhấp chuột.
 
-We know that people will want to know more than we can cover in 15 short
-lessons. To help guide you when you need more information, we have therefore
-included a 'going further' page for each lesson. This extra information is
-there to support you when you need the detail, but should not get in your
-way if you do not.
+Chúng tôi hiểu rằng nhiều người muốn biết nhiều hơn những gì được ghi trong 15
+bài ngắn này. Do đó, để giúp bạn khi bạn cần thêm thông tin, chúng tôi đã thêm
+một bài bổ sung cho mỗi bài. Phần thông tin bổ sung này có thể được dùng nếu bạn
+cần đến chúng, nhưng không nên bỏ quá nhiều thời gian vào chúng nếu bạn chưa
+thực sự cần.
 
-## How the examples work
+## Các ví dụ hoạt động như thế nào?
 
-To support your learning, the site includes lots of examples. In
-[Lesson 2](lesson-02) we will talk about how you use LaTeX both online and with
-a local installation on your own PC. To get you started, we have set up
-our examples so you can edit and run them _in the page_ they are on. We
-have also linked them to [Overleaf](https://www.overleaf.com), one of the
-most popular online LaTeX editing sites. But don't worry, you can also
-use the examples on your own machine. You can read more about how to use the
-examples [in the site help](help).
+Để hỗ trợ bạn trong việc hiểu các bài ở đây, chúng tôi cung cấp nhiều ví dụ.
+Trong [bài 2](lesson-02) ta sẽ nói về cách bạn dùng LaTeX cả trên mạng cũng như
+với một hệ thống TeX được cài đặt trên máy của bạn. Để bắt đầu, chúng tôi đã
+thiết lập các ví dụ sao cho bạn có thể sửa chúng và chạy chúng
+_ngay trong trang_. Chúng tôi cũng đã cung cấp đường dẫn đến
+[Overleaf](https://www.overleaf.com), một trong những trang web LaTeX online
+thông dụng nhất. Nhưng đừng lo, bạn vẫn có thể dùng các ví dụ này ngay trong máy
+của bạn với một hệ thống TeX. Bạn có thể đọc thêm về cách sử dụng các ví dụ
+trong trang này trong [bài trợ giúp của trang](help).
 
-Our examples are based around using an up-to-date LaTeX installation. They
-all work with both of our online demonstration systems, so if you get strange
-errors, you might want to check if your LaTeX system is up-to-date.
+Những ví dụ ở đây được dựa trên một hệ thống TeX với các gói lệnh đã được update
+lên phiên bản mới nhất. Những ví dụ này cũng hoạt động tốt với các hệ thống
+online được nêu ở đây, do đó nếu bạn gặp những lỗi lạ, hãy thử xem liệu hệ thống
+TeX của máy bạn đã được update lên bản mới nhất chưa. (Sau này bạn sẽ thấy việc
+update LaTeX rất quan trọng.)
 
-## The lessons
+## Các bài học
 
 {% include toc.html  prefix="vi/lesson" %}
 
-### Additional lessons specific to learnlatex.org/ja
+### Các bài học dành riêng cho tiếng Việt
 
 {% include toc.html  prefix="vi/language" %}
 
 
-## Going further
+## Đi xa hơn
 
-The focused lessons here are not meant to cover everything you'll ever need to
-know about LaTeX; we want to give you enough to get started and to _understand_
-examples and advice elsewhere. We cover getting more information in [the last
-lesson](lesson-15), but it's worth saying now that getting access to a book
-about LaTeX is still the  best way to learn the detail. We've given some
-recommendations in the last lesson.
+Những bài học ở đây sẽ không bao gồm tất cả những gì bạn sẽ cần để dùng LaTeX.
+Chúng chỉ đủ để bạn có được một sự khởi đầu và ít nhất bạn có thể _hiểu_ được
+những ví dụ ở chỗ khác. Ta sẽ nói về việc lấy thêm thông tin về các gói lệnh
+trong [bài cuối](lesson-15), nhưng ta nên nói ngay bây giờ rằng việc đọc một
+cuốn sách viết về LaTeX vẫn là cách tốt nhất để biết chi tiết về ngôn ngữ sắp
+chữ này. Chúng tôi cũng giới thiệu một vài cuốn sách tiêu biểu nhất trong bài
+cuối này.
 
-Finally we offer a gallery of small examples showing
-a range of different subject areas not covered in this introduction,
-and different LaTeX packages in those areas.
+Cuối cùng, chúng tôi cung cấp một tập hợp những ví dụ ngắn cho thấy những chức
+năng khác nhau của từng gói lệnh trong những lĩnh vực khác nhau không được nói
+tới trong khóa này.
     
 {% include toc.html prefix="vi/extra" %}

@@ -4,7 +4,7 @@ title: "Những ví dụ chuyên sâu hơn"
 
 Khóa này cung cấp một cái nhìn tổng quan về những tính năng của LaTeX. Ngoài
 những tính năng này, LaTeX còn có một hệ thống gói lệnh rất phong phú cho rất
-nhiều mục đích khác nhau. Ở đây là một vài ví dụ; ta sẽ không có giải thích cho
+nhiều lĩnh vực khác nhau. Ở đây là một vài ví dụ; ta sẽ không có giải thích cho
 mã ở đây nhưng sẽ có đường dẫn tới các hướng dẫn sử dụng gói mà bạn có thể đọc
 để hiểu thêm về những ví dụ này. Những ví dụ này được lấy từ chính hướng dẫn sử
 dụng gói, trừ khi được ghi rõ là không.
