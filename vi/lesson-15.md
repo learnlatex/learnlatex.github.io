@@ -1,83 +1,82 @@
 ---
-title: "Accessing documentation and getting help"
+title: "Tiếp cận các hướng dẫn sử dụng gói và tìm kiếm sự trợ giúp"
 ---
 
 
-There are several ways to access the documentation of a package or class.
+Có nhiều cách để đọc hướng dẫn sử dụng của một gói hay lớp văn bản nào đó.
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeXLive or MikTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+Nếu bạn đã cài một hệ thống TeX (ví dụ: TeX Live hay MiKTeX) với đầy đủ các
+hướng dẫn sử dụng, bạn có thể đọc được những văn bản này bằng lệnh `texdoc`.
+Trong cửa sổ lệnh bạn gõ lệnh
 
+```
+texdoc <gói>
+```
 
-`texdoc` < _pkg_ >
+Khi đó lệnh sẽ mở hướng dẫn sử dụng của `<gói>`. Lệnh này sẽ tìm kiếm trong tất
+cả các hướng dẫn sử dụng có sẵn và mở văn bản mà nó thấy là phù hợp nhất trong
+các kết quả tìm kiếm có được. Bạn có thể in ra danh sách những văn bản tìm thấy
+được bằng việc dùng tùy chọn `-l`:
 
-
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
-
-
-`texdoc -l` < _pkg_ >
-
+```
+texdoc -l <gói>
+```
 
 ## texdoc.net
 
-This is a [website](https://texdoc.net/) which works similarly to the `texdoc` utility. You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
-
+Đây là một [trang web](https://texdoc.net) hoạt động tương tự lệnh `texdoc`. Bạn
+có thể tìm kiếm giống như khi bạn dùng `texdoc -l` và chọn từ những kết quả tìm
+được.
 
 ## CTAN
 
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
+[CTAN](https://ctan.org), viết tắt của Comprehensive TeX Archive Network, là hệ
+thống lưu trữ hầu hết các công cụ trong LaTeX. Bạn có thể tìm kiếm gói lệnh
+trong trang này để đọc hướng dẫn sử dụng của nó. Thông thường gói lệnh sẽ được
+lưu dưới URL `https://ctan.org/pkg/<tên gói>`, và bạn có thể đọc tệp README hoặc
+hướng dẫn sử dụng ở đường dẫn này.
 
-## Books on LaTeX
+## Sách về LaTeX
 
-There are several books available that can help you learn more about LaTeX.
-As a beginner, you will gain a lot from a structured beginners guide, as
-those can give a lot more detail than we've covered here. You might also
-want access to a reference with more detail and recommendations.
+Có nhiều cuốn sách có sẵn mà bạn có thể đọc để học thêm về LaTeX. Là người mới
+học LaTeX thì việc đọc những hướng dẫn cơ bản sẽ có ích rất nhiều, vì những sách
+như vậy thường cung cấp nhiều thông tin hơn những gì ta nói tới ở đây.
 
-The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's offical
-guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
-and the comprehensive
-[LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+Đội ngũ phát triển lõi LaTeX có một
+[danh sách](https://www.latex-project.org/help/books) các cuốn sách được viết
+bởi các thành viên. Hai cuốn đáng chú ý nhất là [Hướng dẫn sử dụng LaTeX của
+Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
+(ta còn nhớ trong [bài này](more-01) rằng Lamport chính là cha đẻ của LaTeX),
+hay [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
 
-Other books aimed at learning LaTeX include
+Một vài cuốn sách khác có nội dung tương tự:
 
 - [_Guide to
-  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
-  Kopka and Patrick Daly: available as an e-book
-- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
+  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) bởi Helmut
+  Kopka và Patrick Daly: có sẵn dưới dạng sách điện tử
+- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) bởi
+  Nicola Talbot: có sẵn dưới dạng sách điện tử miễn phí hoặc sách in có giá thấp
 - [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
+  thesis_](https://www.dickimaw-books.com/latex/thesis/) bởi
+  Nicola Talbot: có sẵn dưới dạng sách điện tử miễn phí hoặc sách in có giá thấp
 - [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
-  by Stefan Kottwitz: available as an e-book and in print
-- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
-  Marc van Dongen: available as an e-book and in print
+  bởi Stefan Kottwitz: có sẵn dưới dạng sách điện tử và sách in
+- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) bởi
+  Marc van Dongen: có sẵn dưới dạng sách điện tử và sách in
 
-## Getting help
+## Tìm kiếm sự trợ giúp trong LaTeX
 
-There are various online forums for asking LaTeX questions; perhaps the most
-popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
-Whenever you ask a question, it's best to first get your example clear: what is
-normally known as a 'minimal working example' (MWE). This doesn't mean the code
-works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means
-having only enough content to show the issue.
+Có nhiều diễn đàn trên mạng để bạn có thể hỏi các câu hỏi LaTeX; có lẽ diễn đàn
+có nhiều người truy cập nhất là
+[TeX &ndash; LaTeX StackExchange](https://tex.stackexchange.com). Mỗi khi bạn
+hỏi một câu hỏi ở bất kỳ diễn đàn nào, tốt nhất bạn nên chuẩn bị một đoạn mã ví
+dụ &ndash; thường được gọi là "minimal working example" (MWE). Đoạn mã này nên
+được tối giản hóa sao cho vấn đề của bạn vẫn xuất hiện trên đó nhưng những thứ
+không liên quan được gạch bỏ đi, để hỗ trợ mọi người trả lời bạn tốt hơn.
 
-How do you construct a MWE? Normally easiest is to start from
+Làm cách nào để tạo ra một MWE? Thông thường cách dễ nhất là bắt đầu từ
 
 ```latex
 \documentclass{article}
@@ -86,15 +85,17 @@ Text
 \end{document}
 ```
 
-and add lines one at a time until you show the issue. You can try to
-'cut down' your real file, but that can be a long process.
+và thêm những dòng mã có liên quan vào cho đến khi vấn đề của bạn xuất hiện. Bạn
+cũng có thể bỏ đi những phần không cần thiết trong tệp LaTeX thực tế của bạn,
+nhưng quá trình đó phức tạp hơn một chút.
 
-If you need more text to show page breaking and other effects, then
-packages such as `lipsum` may be used to generate nonsense paragaraphs
-of text while keeping your test file small.
+Nếu bạn cần một lượng chữ lớn để xuất hiện trên nhiều trang, bạn có thể dùng
+những gói như `lipsum`. Như ta đã biết, gói này tạo ra những đoạn văn không có ý
+nghĩa với chiều dài tùy ý để test trong khi vẫn làm kích thước tệp của bạn đủ
+nhỏ.
 
-
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
-Depending on your desktop interface, you might need to 'show extensions' to
-work out which file it is.
+Một trong những thứ mà mọi người có thể yêu cầu bạn cung cấp đó là tệp log, tệp
+này được tạo ra bởi LaTeX mỗi khi bạn chạy nó, và có đuôi tệp là `.log`. Tệp này
+bao gồm tất cả những thông tin trong quá trình chạy, đặc biệt là những thông tin
+quan trọng như phiên bản gói lệnh, các thông báo lỗi hay các cảnh báo từ LaTeX,
+v.v...
