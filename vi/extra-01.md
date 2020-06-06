@@ -1,18 +1,19 @@
 ---
-title: "Examples for further study"
+title: "Những ví dụ chuyên sâu hơn"
 ---
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.net](https://texdoc.net).
-The examples are taken from the package documentation unless otherwise noted.
+Khóa này cung cấp một cái nhìn tổng quan về những tính năng của LaTeX. Ngoài
+những tính năng này, LaTeX còn có một hệ thống gói lệnh rất phong phú cho rất
+nhiều mục đích khác nhau. Ở đây là một vài ví dụ; ta sẽ không có giải thích cho
+mã ở đây nhưng sẽ có đường dẫn tới các hướng dẫn sử dụng gói mà bạn có thể đọc
+để hiểu thêm về những ví dụ này. Những ví dụ này được lấy từ chính hướng dẫn sử
+dụng gói, trừ khi được ghi rõ là không.
 
-**Note** that inclusion here is not intended as an endorsement of the
-  package over other similar packages, we just aim for a small sample
-  showing a range of areas not otherwise covered in this course.
+Chú ý rằng việc sử dụng một gói ở đây không có nghĩa là chúng tôi khuyên dùng
+gói đấy hơn những gói khác có chức năng tương tự. Mục đích ở đây chỉ là một vài
+ví dụ cho thấy những công dụng phong phú mà LaTeX có thể cung cấp.
 
-## Chemistry
+## Hóa học
 
 ### [`mhchem`](https://texdoc.net/pkg/mhchem)
 
@@ -24,7 +25,7 @@ The examples are taken from the package documentation unless otherwise noted.
 \end{document}
 ```
 
-## Linguistics
+## Ngôn ngữ học
 ### [`forest`](https://texdoc.net/pkg/forest)
 ```latex
 \documentclass{article}
@@ -43,7 +44,7 @@ The examples are taken from the package documentation unless otherwise noted.
 \end{document}
 ```
 
-## Chess
+## Cờ
 
 <!-- not 2017 -->
 ### [`xskak`](https://texdoc.net/pkg/xskak)
@@ -61,7 +62,7 @@ Position after 2.\,\xskakget{lan}
 ```
 
 
-## Poetry
+## Thơ
 
 ### [`memoir`](https://texdoc.net/pkg/memoir)
 
@@ -96,7 +97,7 @@ Today will I depart. \\*
 \end{document}
 ```
 
-## Drawing
+## Vẽ hình
 <!-- not 2017 -->
 ### [`tikz`](https://texdoc.net/pkg/tikz)
 
@@ -135,7 +136,7 @@ x
 ```
 <!-- {% endraw %} -->
 
-## Function plotting
+## Vẽ đồ thị hàm số
 ### [`pgfplots`](https://texdoc.net/pkg/plots)
 
 
@@ -163,7 +164,7 @@ x
 ```
 <!-- {% endraw %} -->
 
-## Music
+## Âm nhạc
 
 
 ### [`musixtex`](https://texdoc.net/pkg/musixtex)
