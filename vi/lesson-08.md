@@ -1,5 +1,5 @@
 ---
-title: "Bảng"
+title: "Bảng trong LaTeX"
 ---
 
 ## Bảng cơ bản

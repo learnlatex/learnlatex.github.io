@@ -1,5 +1,5 @@
 ---
-title: "Bổ sung: Bảng"
+title: "Bổ sung: Bảng trong LaTeX"
 ---
 
 ## Những thứ khác có thể được dùng trong phần khai báo bảng
