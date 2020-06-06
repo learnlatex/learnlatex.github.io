@@ -1,24 +1,18 @@
 ---
-title: "More on: Accessing documentation and getting help"
+title: "Bổ sung: Tiếp cận các hướng dẫn sử dụng gói và tìm kiếm sự trợ giúp"
 ---
 
+## Mã của lõi {{site.latex}}
 
-## Documented sources of {{site.latex}}
+Lệnh `texdoc` được mô tả trong bài chính không chỉ có thể cho ta hướng dẫn dùng
+các gói lệnh. Nếu bạn muốn đi sâu hơn khóa này và muốn biết mã của lõi LaTeX
+được viết như thế nào, bạn có thể xem một vài đường dẫn sau:
 
-The `texdoc` command described earlier is not restricted to package sources. If you wish to
-go beyond the areas covered by this course and study the LaTeX inplementation in detail then
-the following links may help.
-
-The source of LaTeX itself is available as a LaTeX-typeset document `source2e.pdf`, avalable at
-[texdoc.net](https://texdoc.net/texmf-dist/doc/latex/base/source2e.pdf)
-
-Current releases of LaTeX also have preloaded the LaTeX3 Programming Language code, previously available
-as the `expl3` package.  `texdoc` may be used to see the
-[expl3 interface description](http://texdoc.net/texmf-dist/doc/latex/l3kernel/interface3.pdf)
-or
-[full expl3 source code](http://texdoc.net/texmf-dist/doc/latex/l3kernel/source3.pdf).
-
-
-
-
-
+* Mã nguồn của lõi của LaTeX có thể được đọc trong văn bản `source2e.pdf`. Bạn
+có thể đọc bằng `texdoc source2e` hoặc ở
+[texdoc.net](https://texdoc.net/pkg/source2e).
+* Các phiên bản LaTeX hiện tại còn bao gồm ngôn ngữ lập trình LaTeX3 &ndash; đây
+chính là LaTeX trong tương lai. LaTeX3 được cung cấp qua gói lệnh `expl3`. Bạn
+có thể dùng `texdoc expl3` hoặc [texdoc.net](http://texdoc.net/pkg/interface3)
+để đọc hướng dẫn sử dụng ngôn ngữ này, hoặc dùng `texdoc source3` hoặc
+[texdoc.net](http://texdoc.net/pkg/source3) để xem toàn bộ mã của gói.
