@@ -3,7 +3,7 @@ exclude: ['README.md']
 theme: jekyll-theme-primer
 
 title: learnlatex.org
-description: Learn LaTeX on-line
+description: Learn LaTeX online
 
 logo: learnlatex.png
 
@@ -19,4 +19,4 @@ langs:
    - fr
    - pt
    - vi
-
+   - ja

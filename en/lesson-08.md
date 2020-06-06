@@ -51,7 +51,7 @@ column but might be useful as well:
 
 These two tables list all the available column types from LaTeX and the `array`
 package. A few additional column types, from different packages, are presented
-in the [further details page](en/more-08) for this lesson.
+in the [further details page](more-08) for this lesson.
 
 The columns `l`, `c`, and `r` will have the natural width of the widest cell.
 Each column has to be declared, so if you want three centered columns, you'd use
@@ -169,7 +169,9 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \begin{document}
 \begin{tabular}{lll}
@@ -194,7 +196,8 @@ column you need to specify that as a range (with both numbers matching).
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -219,7 +222,8 @@ with an optional argument enclosed in parentheses:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
@@ -250,6 +254,7 @@ case you can use `\addlinespace` to insert a small skip.
 ```latex
 \documentclass{article}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
@@ -287,7 +292,9 @@ single column type_.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \begin{document}
 \begin{tabular}{lll}
@@ -313,7 +320,9 @@ table's head row:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \begin{document}
 \begin{tabular}{lll}
@@ -337,7 +346,9 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
-\usepackage{array, booktabs}
+\usepackage{array}
+\usepackage{booktabs}
+
 
 \begin{document}
 \begin{tabular}{lll}

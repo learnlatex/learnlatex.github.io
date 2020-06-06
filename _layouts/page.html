@@ -9,27 +9,47 @@ layout: default
 {% if page.path contains "lesson-" %}
   <p><small>
     <a href = "{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}">{% include_relative includes/more.html %}</a>
-    {% unless page.path contains "lesson-15" %}
      <br>
+     {% if page.path contains "lesson-15" %}
+     <a href = "language-01">{% include_relative includes/next.html %}</a>
+     {% else %}
      {% if page.name contains "lesson-1" or  page.name contains "lesson-09" %}
      <a href = "lesson-{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
      {% else %}
       <a href = "lesson-0{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
     {% endif %}
-    {% endunless %}
+    {% endif %}
   </small></p>
 {% endif %}
+
 
 {% if page.path contains "more-" %}
   <p><small>
     <a href = "{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}">{% include_relative includes/return.html %}</a>
-    {% unless page.path contains "more-15" %}
     <br>
+    {% if page.path contains "more-15" %}
+    <a href = "language-01">{% include_relative includes/nextmain.html %}</a>
+    {% else %}
     {% if page.name contains "more-1" or  page.name contains "more-09" %}
     <a href = "lesson-{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
     {% else %}
     <a href = "lesson-0{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
     {% endif %}
-    {% endunless %}
+    {% endif %}
+  </small></p>
+{% endif %}
+
+  
+{% if page.path contains "language-" %}
+  <p><small>
+    {% if page.next  %}
+    <a href = "{{page.next}}">{% include_relative includes/next.html %}</a>
+    {% else %}
+    {% if page.name contains "language-1" or  page.name contains "language-09" %}
+    <a href = "language-{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+    {% else %}
+    <a href = "language-0{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+    {% endif %}
+    {% endif %}
   </small></p>
 {% endif %}

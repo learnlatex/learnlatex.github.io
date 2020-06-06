@@ -71,7 +71,7 @@ The `\label` command always refers to the previous numbered entity:
 a section, an equation, a float, etc. That means that `\label` always has to
 come _after_ the thing you want to refer to. In particular, when you create
 floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float enviornment.
+but within the float environment.
 
 ## Exercises
 

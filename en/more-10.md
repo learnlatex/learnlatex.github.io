@@ -34,9 +34,72 @@ Multline
 \end{document}
 ```
 
-In addition there are variants of the alignment environments ending
+### Columns in math alignments
+
+The `amsmath` alignment environments are designed to take pairs of
+columns with the first column of each pair aligned to the right and
+the second aligned to the left. This allows multiple equations to be
+shown, each aligned towards its relation symbol.
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+Aligned equations
+\begin{align*}
+a &= b+1   &  c &= d+2  &  e &= f+3   \\
+r &= s^{2} &  t &=u^{3} &  v &= w^{4}
+\end{align*}
+
+\end{document}
+```
+
+
+In addition there are variants of the display environments ending
 in `ed` that make a subterm of a larger display for example, `aligned` and
 `gathered`.
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+Aligned:
+\[
+\left.\begin{aligned}
+a&=b\\
+c&=d
+\end{aligned}\right\}
+\Longrightarrow
+\left\{\begin{aligned}
+b&=a\\
+d&=c
+\end{aligned}\right.
+\]
+\end{document}
+```
+
+`aligned` takes a positional optional argument similar to `tabular`.
+This is often useful to align an inline math formula on its top row;
+compare the items in the list in the following example.
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\begin{itemize}
+\item 
+$\begin{aligned}[t]
+a&=b\\
+c&=d
+\end{aligned}$
+\item 
+$\begin{aligned}
+a&=b\\
+c&=d
+\end{aligned}$
+\end{itemize}
+\end{document}
+```
 
 # Bold Math
 Standard LaTeX has two methods to give bold symbols in math. To make
@@ -52,16 +115,18 @@ letters or words in upright bold roman.
 
 $(x+y)(x-y)=x^{2}-y^{2}$
 
-{\boldmath $(x+y)(x-y)=x^{2}-y^{2}$}
+{\boldmath $(x+y)(x-y)=x^{2}-y^{2}$ $\pi r^2$}
 
 $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
+$\mathbf{\pi} r^2$ % bad use of \mathbf
 \end{document}
 ```
 
 If you want to access bold symbols (as would be used by `\boldmath`)
 within an otherwise normal weight expression, then you can use the
 command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as = and Greek letters.
+symbols such as = and Greek letters. (Note that `\mathbf` has no effect
+on `\pi` in the example above.)
 
 ```latex
 \documentclass[a4paper]{article}
@@ -110,7 +175,7 @@ this course and we refer you to the
 However, we give a small example here.
 
 ```
-% !TEX xelatex
+% !TEX lualatex
 \documentclass[a4paper]{article}
 \usepackage{unicode-math}
 \setmainfont{TeX Gyre Pagella}
@@ -122,6 +187,9 @@ One two three
 \[
 \log \alpha + \log \beta = \log(\alpha\beta)
 \]
+
+Unicode Math Alphanumerics
+\[A + \symfrak{A}+\symbf{A}+ \symcal{A} + \symscr{A}+ \symbb{A}\]
 
 \end{document}
 ```

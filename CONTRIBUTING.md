@@ -79,3 +79,4 @@ The translation should be placed in a two-letter directory using the
 ISO 639-1 language code.  The yml `langs` array in `_config.yml` will
 need to be extended to include the language.
 
+See also the [specific guidelines for translators](TRANSLATIONS).

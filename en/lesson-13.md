@@ -5,14 +5,15 @@ title: "Structuring longer documents"
 <script>
 preincludes = {
  "pre0": {
-    "pre1": "pref.tex",
-    "pre2": "chap1.tex",
-    "pre3": "chap2.tex",
-    "pre4": "append.tex",
-    "pre5": "frontcover.tex",
-    "pre6": "dedication.tex",
-    "pre7": "copyright.tex",
-    "pre8": "backcover.tex",
+    "pre1": "front.tex",
+    "pre2": "pref.tex",
+    "pre3": "chap1.tex",
+    "pre4": "chap2.tex",
+    "pre5": "append.tex",
+    "pre6": "frontcover.tex",
+    "pre7": "dedication.tex",
+    "pre8": "copyright.tex",
+    "pre9": "backcover.tex",
    }
 }
 </script>
@@ -38,26 +39,28 @@ A longer document might therefore look something like the following:
 ```latex
 \documentclass{book}
 \usepackage{biblatex}
-\addbibresource{document.bib}
+\addbibresource{biblatex-examples.bib}
 
-\title{Life at Sea}
-\author{John Aubrey and Stephen Maturin}
+\title{A Sample Book}
+\author{John Doe \and Joe Bloggs}
 
-\includeonly{% comment out lines to reduce output
-  pref,
-  chap1,
+\IfFileExists{\jobname.aux}
+{
+\includeonly{
+%  front,
+%  chap1,
   chap2,
-  append
+%  append
   }
+}
+{
+% Do a full document initially to generate
+% all the aux files
+}
 
 \begin{document}
 \frontmatter
-\input{frontcover}
-\maketitle
-\input{dedication}
-\input{copyright}
-\tableofcontents
-\include{pref}
+\include{front}
 
 % =========================
 \mainmatter
@@ -69,6 +72,7 @@ A longer document might therefore look something like the following:
 % ========================
 \backmatter
 \printbibliography
+\newpage
 \input{backcover}
 \end{document}
 ```
@@ -112,29 +116,43 @@ The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
 affect the formatting.
 For instance, `\frontmatter` changes the page numbering to
 Roman numbers.
-The `appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after it the header says `Appendix A`.
+The `\appendix` command changes the numbering to `A`, `B`, etc.,
+so for instance in the first chapter after `\appendix`,
+the header says `Appendix A`.
 
 ## Exercises
 
 Experiment with the basic structure of the demonstration document,
 try adding and removing entries for `\includeonly` and see the effect.
 
-Add some floats and produce a list of figures and tables; do you see
-how many LaTeX runs are required?
+Add some floats and produce a list of figures and tables.
+If using a locally installed LaTeX, do you see
+how many LaTeX runs are required? (The online systems re-run LaTeX
+"behind the scenes" so the additional required runs are not so obvious.)
 
 ----
 
-#### pref.tex
+### front.tex
 <!-- pre1 {% raw %} -->
 ```latex
-\chapter*{Preface}
-The preface text.
+\input{frontcover}
+\maketitle
+\input{dedication}
+\input{copyright}
+\tableofcontents
+\input{pref}
+```
+
+#### pref.tex
+<!-- pre2 {% raw %} -->
+```latex
+\chapter{Preface}
+The preface text. See \cite{doody}.
 ```
 <!-- {% endraw %} -->
 
 #### chap1.tex
-<!-- pre2 {% raw %} -->
+<!-- pre3 {% raw %} -->
 ```latex
 \chapter{Introduction}
 The first chapter text.
@@ -142,7 +160,7 @@ The first chapter text.
 <!-- {% endraw %} -->
 
 #### chap2.tex
-<!-- pre3 {% raw %} -->
+<!-- pre4 {% raw %} -->
 ```latex
 \chapter{Something}
 The second chapter text.
@@ -150,7 +168,7 @@ The second chapter text.
 <!-- {% endraw %} -->
 
 ####  append.tex
-<!-- pre4 {% raw %} -->
+<!-- pre5 {% raw %} -->
 ```latex
 \chapter*{Appendix}
 The first appendix text.
@@ -158,7 +176,7 @@ The first appendix text.
 <!-- {% endraw %} -->
 
 #### frontcover.tex
-<!-- pre5 {% raw %} -->
+<!-- pre6 {% raw %} -->
 ```latex
 \begin{center}
 The front cover
@@ -167,7 +185,7 @@ The front cover
 <!-- {% endraw %} -->
 
 #### dedication.tex
-<!-- pre6 {% raw %} -->
+<!-- pre7 {% raw %} -->
 ```latex
 \begin{center}
 \large
@@ -177,7 +195,7 @@ For \ldots
 <!-- {% endraw %} -->
 
 #### copyright.tex
-<!-- pre7 {% raw %} -->
+<!-- pre8 {% raw %} -->
 ```latex
 \begin{center}
 Copyright 2020 learnlatex.
@@ -186,7 +204,7 @@ Copyright 2020 learnlatex.
 <!-- {% endraw %} -->
 
 #### backcover.tex
-<!-- pre8 {% raw %} -->
+<!-- pre9 {% raw %} -->
 ```latex
 \begin{center}
 The back cover
