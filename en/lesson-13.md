@@ -44,7 +44,7 @@ A longer document might therefore look something like the following:
 \title{A Sample Book}
 \author{John Doe \and Joe Bloggs}
 
-\IfFileExists{\jobname.aux}
+\IfFileExists{append.aux}
 {
 \includeonly{
 %  front,
