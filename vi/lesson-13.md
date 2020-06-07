@@ -44,7 +44,7 @@ Do đó, một văn bản dài có thể trông như thế này:
 \title{A Sample Book}
 \author{John Doe \and Joe Bloggs}
 
-\IfFileExists{\jobname.aux}
+\IfFileExists{append.aux}
 {
 \includeonly{
 %  front,
