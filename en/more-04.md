@@ -32,8 +32,30 @@ to do your own document designs you can either use a customisable class, such
 as `memoir`, or start with one of LaTeX's base classes, like `book` and use it
 as a starting point.
 
-## Exercise
+## Descriptive lists
+In addition to the "ordered" and "unordered" types of lists, LaTeX provides
+another one, less common: the "descriptive lists".
+
+```latex
+\documentclass{article}
+\begin{document}
+
+\begin{description}
+\item[Dog:] member of the genus Canis, which forms part of the wolf-like canids,
+  and is the most widely abundant terrestrial carnivore.
+\item[Cat:] domestic species of small carnivorous mammal. It is the only
+  domesticated species in the family Felidae and is often referred to as the
+  domestic cat to distinguish it from the wild members of the family.
+\end{description}
+
+\end{document}
+```
+
+## Exercises
 
 Try setting up different `\author`, `\title` and `\date` information to test
 out `\maketitle`. Which of them do you _have_ to give? Do the commands have to
 have an author, a title and a date in them?
+
+Make some descriptive lists, and nest some of them inside another ones (ordered,
+unordered or descriptive).
