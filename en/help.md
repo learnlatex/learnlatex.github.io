@@ -38,9 +38,18 @@ there is no TeX specific editing help as found in typical editing systems that y
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
 
 1. Use a  **LaTeX Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX Online</button> button
-   will submit the code to one of the services
-   [LaTeX.Online](https://latexonline.cc/) or
-   [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http).
+   will submit the code to one of the
+   [LaTeX CGI](https://latexcgi.xyz/) service.
+
+   Note that during development of the site we have also used 
+   [LaTeX.Online](https://latexonline.cc/) and
+   [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
+   and we thank the developers of those services for making updates to enable
+   the examples on this site to be available at an early stage.
+
+   The LaTeX CGI service was developed specifically to support this site, and
+   in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
+   to enable display of PDF on mobile and other browsers without built in PDF readers.
 
    The resulting PDF document (or section of the error log) will be
    shown inline immediately below the example. A <button style="padding:0 1px;font-size:90%">Delete
@@ -48,19 +57,11 @@ Whether or not the code block has been edited, there are three basic ways that y
    (or you may leave it in place and continue the rest of the lesson
    below).
 
-   Note that  **LaTeX Online** requires no login or signup of any sort
+   Note that **LaTeX Online** requires no login or signup of any sort
    so it is very convenient for small examples, but neither this site
-   nor the `latexonline.cc` or `latex-on-http` sites provide any mechanism to save your
-   document. Any changes that you make to the example are lost if you
-   move off the page.
-
-   **Warning:** Displaying the PDF result in the page requires that your
-     browser has a built-in PDF viewer that can work in an `iframe`.
-     In mobile browsers where this is often not the case, you may be offered a
-     dialog to download the result as `compile.pdf` which you can then
-     view in your PDF reading app, or it may not work at all.
-     The exact behaviour depends on the details of browser and mobile operating system
-     settings.  You may prefer to use the **Overleaf** link in some cases.
+   nor the `latexcgi`, `latexonline.cc` or `latex-on-http` sites
+   provide any mechanism to save your document. Any changes that you
+   make to the example are lost if you move off the page.
 
 
 2. Use the **Overleaf** Service. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
