@@ -21,6 +21,12 @@ cần thực hiện ba lệnh:
 Some text about Foo\index{foo}.
 More text\index{baz!bar}.
 Even more text\index{alpha@$\alpha$}.
+More text about a different part of baz\index{baz!wibble}.
+
+\clearpage
+Some text about Foo\index{foo} again, on a different page.
+Even more text\index{beta@$\beta$}.
+Even more text\index{gamma@$\gamma$}.
 \printindex
 \end{document}
 ```
