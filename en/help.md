@@ -88,11 +88,12 @@ Whether or not the code block has been edited, there are three basic ways that y
 
 ## Choosing the {{ site.tex }} engine
 
-When submitting projects to Overleaf or LaTeX.Online, by default the
+When submitting example documents, by default the
 `pdflatex` engine will be used unless the example uses the `fontspec`
 package in which case `xelatex` is used.
 
-You can force the choice of `pdflatex`, `xelatex`, `lualatex`, `platex` or `uplatex` by using a comment of the form:
+You can force the choice of `pdflatex`, `xelatex`, `lualatex`,
+`platex` or `uplatex` by using a comment of the form:
 
 `% !TEX ` _any text_ `lualatex`
 
@@ -106,6 +107,11 @@ the online systems being used.
 
 You can see an example of a comment being used to specify LuaLaTeX in
 [some of the examples on this site](more-14).
+
+If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
+also used to produce the PDF result from the DVI file that these variants generate.
+
+
 
 ---
 
