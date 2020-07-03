@@ -34,7 +34,17 @@ Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau k
 
 1. Dùng hệ thống **LaTeX Online**. Nút
    <button style="padding:0 1px;font-size:90%">Chạy với LaTeX Online</button> sẽ
-   chuyển đoạn mã tới dịch vụ [LaTeX Online](https://latexonline.cc).
+   chuyển đoạn mã tới [LaTeX CGI](https://latexcgi.xyz).
+   
+   Trong quá trình phát triển ban đầu của trang này,
+   [LaTeX.Online](https://latexonline.cc/) và
+   [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) cũng đã được sử
+   dụng, và chúng tôi muốn gửi lời cảm ơn tới những nhà phát triển của các dịch
+   vụ này.
+   
+   LaTeX CGI được phát triển đặc biệt dành cho trang này, và nó sử dụng
+   [PDF.js](https://mozilla.github.io/pdf.js) để hiển thị các tệp PDF trên
+   điện thoại cũng như các trình duyệt không có trình đọc PDF mặc định.
 
    Tệp PDF output (hoặc một phần của các thông báo lỗi nếu quá trình biên dịch
    gặp vấn đề) sẽ được hiện ra ngay phía dưới ví dụ. Nút
@@ -42,18 +52,10 @@ Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau k
    dùng để bỏ phần output này đi nếu bạn thấy nó không còn cần thiết.
 
    Chú ý rằng **LaTeX Online** không cần bạn phải lập tài khoản nên nó rất thuận
-   tiện cho những ví dụ nhỏ. Tuy nhiên, cả trang này lẫn `latexonline.cc` đều
-   không hỗ trợ khả năng lưu văn bản của bạn. Tất cả những thay đổi bạn đã thực
-   hiện sẽ bị mất sau khi bạn rời khỏi trang.
-
-   **Cảnh báo:** Việc hiện tệp PDF output trong trang yêu cầu trình duyệt của
-   bạn phải có một trình đọc PDF mà có thể hoạt động được trong một `iframe`.
-   Nếu bạn dùng điện thoại, điều này thường không xảy ra; khi đó một thông báo
-   có thể hiện ra hỏi liệu bạn muốn tải về tệp PDF để đọc trong máy, nhưng nó có
-   thể không có thông báo nào hết. Cách mà nút này thực hiện phụ thuộc vào trình
-   duyệt của bạn. Bạn có thể cần dùng đến đường link **Overleaf** trong một số
-   trường hợp.
-
+   tiện cho những ví dụ nhỏ. Tuy nhiên, cả trang này lẫn `latexcgi`,
+   `latexonline.cc` hay `latex-on-http` đều không hỗ trợ khả năng lưu văn bản của
+   bạn. Tất cả những thay đổi bạn đã thực hiện sẽ bị mất sau khi bạn rời khỏi
+   trang.
 
 2. Dùng **Overleaf**. Nút
    <button style="padding:0 1px;font-size:90%">Mở trong Overleaf</button> sẽ đưa
