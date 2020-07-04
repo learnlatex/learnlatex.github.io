@@ -77,11 +77,12 @@ Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau k
 
 ## Chọn trình biên dịch {{ site.tex }}
 
-Khi một đoạn mã được đưa lên Overleaf hoặc LaTeX Online, trình dịch `pdflatex`
+Khi một đoạn mã được đưa lên, trình dịch `pdflatex`
 sẽ được sử dụng một cách mặc định trừ khi ví dụ có dùng gói `fontspec` (khi đó
 `xelatex` sẽ được sử dụng).
 
-Bạn có thể thay đổi trình dịch bằng cách dùng một ghi chú dưới dạng
+Bạn có thể thay đổi trình dịch trong số các trình dịch `pdflatex`, `xelatex`,
+`lualatex`, `platex` hay `uplatex` bằng cách dùng một ghi chú tương tự như sau:
 
 ```
 % !TEX <bất cứ đoạn chữ nào> lualatex
@@ -98,6 +99,9 @@ thôi.
 
 Bạn có thể xem một số ví dụ có ghi chú dùng để cho biết ví dụ sẽ được chạy bằng 
 LuaLaTeX trong [bài bổ sung của bài 14](more-14).
+
+Nếu `platex` hay `uplatex` được sử dụng, chương trình `dvipdfmx` cũng được sử dụng
+để tạo ra tệp PDF từ các tệp DVI mà các trình dịch này xuất ra.
 
 ---
 
