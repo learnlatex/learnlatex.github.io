@@ -34,13 +34,7 @@ Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau k
 
 1. Dùng hệ thống **LaTeX Online**. Nút
    <button style="padding:0 1px;font-size:90%">Chạy với LaTeX Online</button> sẽ
-   chuyển đoạn mã tới [LaTeX CGI](https://latexcgi.xyz).
-   
-   Trong quá trình phát triển ban đầu của trang này,
-   [LaTeX.Online](https://latexonline.cc/) và
-   [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) cũng đã được sử
-   dụng, và chúng tôi muốn gửi lời cảm ơn tới những nhà phát triển của các dịch
-   vụ này.
+   chuyển đoạn mã tới [LaTeX CGI](https://latexcgi.xyz).[^1]
    
    LaTeX CGI được phát triển đặc biệt dành cho trang này, và nó sử dụng
    [PDF.js](https://mozilla.github.io/pdf.js) để hiển thị các tệp PDF trên
@@ -104,3 +98,11 @@ thôi.
 
 Bạn có thể xem một số ví dụ có ghi chú dùng để cho biết ví dụ sẽ được chạy bằng 
 LuaLaTeX trong [bài bổ sung của bài 14](more-14).
+
+---
+
+[^1]: Trong quá trình phát triển ban đầu của trang này,
+      [LaTeX.Online](https://latexonline.cc/) và
+      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) cũng đã được sử
+      dụng, và chúng tôi muốn gửi lời cảm ơn tới những nhà phát triển của các dịch
+      vụ này.
