@@ -40,6 +40,7 @@ Although the real error is on line 9 as shown by the context lines:
 ```
 ! Undefined control sequence.
 <argument> ...ha &= \frac {1}{2}\\ \beta &= \frak 
+                                                  {2}{3}\\ \gamma &= \frac {...
 ```
 {: .noedit :}
 
