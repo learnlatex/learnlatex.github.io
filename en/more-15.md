@@ -9,6 +9,7 @@ Scan the whole envionment body before processing the content. This means that
 any error within the environment is reported on the last line. However as seen in the
 main lesson, TeX's display of the error context should still pinpoint the error location.
 
+<div class="highlight">
 <pre>
 \documentclass{article}
 
@@ -24,6 +25,7 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 
 \end{document}
 </pre>
+</div>
 
 Here the error will be reported on line 11
 
@@ -54,6 +56,7 @@ So do not be too concerned about the _number_ of errors reported and
 always concentrate on fixing the first reported error.
 
 
+<div class="highlight">
 <pre>
 \documentclass{article}
 
@@ -63,6 +66,7 @@ Text<span style="color:red">_</span>word  $\alpha + \beta$.
 More text.
 \end{document}
 </pre>
+</div>
 
 The error here is the underscore `_` which should be entered as `\_`.
 
