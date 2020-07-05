@@ -3,5 +3,6 @@ var buttons ={
     "copy":             "Kopieren",
     "Open in Overleaf": "In Overleaf öffnen",
     "LaTeX Online":     "LaTeX Online",
-    "Delete Output":    "Fenster schließen"
+    "Delete Output":    "Fenster schließen",
+    "Compiling PDF":    "Compiling PDF"
 }

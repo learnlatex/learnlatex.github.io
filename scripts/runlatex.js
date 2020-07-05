@@ -6,7 +6,8 @@ var buttons ={
     "copy":             "copy",
     "Open in Overleaf": "Open in Overleaf",
     "LaTeX Online":     "LaTeX Online",
-    "Delete Output":    "Delete Output"
+    "Delete Output":    "Delete Output",
+    "Compiling PDF":    "Compiling PDF"
 }
 
 
@@ -182,7 +183,7 @@ function latexcgi(nd) {
     }
     var  loading=document.createElement("div");
     loading.id=nd+"load";
-    loading.textContent="Loading . . .";
+    loading.textContent=buttons["Compiling PDF"] + " . . .";
     p.parentNode.insertBefore(loading, ifr);
     // scroll only if really close to the bottom
     var rect = b.getBoundingClientRect();
