@@ -45,6 +45,7 @@ such a TeXworks or TeXShop but without installing a TeX system such as
 TeX Live or MikTeX.
 
 ## Anatomy of a TeX error message
+<div class="highlight">
 <pre>
 \documentclass{article}
 
@@ -56,7 +57,7 @@ My command is used here \mycommand.
 
 \end{document}
 </pre>
-
+</div>
 
 This produces a multi-line message in the log file.
 
@@ -103,6 +104,7 @@ as it makes it appear that `\mycommand` is not defined.
 
 ## Mismatched braces
 
+<div class="highlight">
 <pre>
 \documentclass{article}
 
@@ -112,6 +114,7 @@ as it makes it appear that `\mycommand` is not defined.
 
 \end{document}
 </pre>
+</div>
 
 In this example the size change was mistakenly ended with `)` rather
 than `}` This is not detected until the end of the file when TeX
@@ -128,6 +131,7 @@ error as the `)` is seen as "normal text".
 
 
 
+<div class="highlight">
 <pre>
 \documentclass{article}
 
@@ -137,6 +141,7 @@ error as the `)` is seen as "normal text".
 
 \end{document}
 </pre>
+</div>
 
 Here the error is a similar mismatch, `}` is used to end the optional
 argument. Here though the closing brace causes LaTeX's option parsing
@@ -159,6 +164,7 @@ l.3 \usepackage[leqno}
 
 ## Missing files
 
+<div class="highlight">
 <pre>
 \documentclass{article}
 
@@ -168,6 +174,7 @@ l.3 \usepackage[leqno}
 
 \end{document}
 </pre>
+</div>
 
 This produces the error
 
@@ -183,6 +190,7 @@ current system.
 
 ## Blank lines in display math
 
+<div class="highlight">
 <pre>
 \documentclass{article}
 
@@ -197,6 +205,7 @@ Some text
 
 \end{document}
 </pre>
+</div>
 
 Produces the slightly mysterious error
 
