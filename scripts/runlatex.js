@@ -165,25 +165,30 @@ function latexcgi(nd) {
 	engv="xelatex";
     }
     addinput(fm,"engine",engv);
-    	var b = document.getElementById('lo-' + nd);
-	var ifr= document.getElementById(nd + "ifr");
-	if(ifr == null) {
-	    ifr=document.createElement("iframe");
-	    ifr.setAttribute("width","100%");
-	    ifr.setAttribute("height","500em");
-	    ifr.setAttribute("id",nd + "ifr");
-	    ifr.setAttribute("name",nd + "ifr");
-	    p.parentNode.insertBefore(ifr, b.nextSibling);
-	    d=document.createElement("button");
-	    d.innerText=buttons["Delete Output"];
-	    d.setAttribute("id","del-" + nd);
-	    d.setAttribute("onclick",'deleteoutput("' + nd + '")');
-	    p.parentNode.insertBefore(d, b.nextSibling);
-	}
+    var b = document.getElementById('lo-' + nd);
+    var ifr= document.getElementById(nd + "ifr");
+    if(ifr == null) {
+	ifr=document.createElement("iframe");
+	ifr.setAttribute("width","100%");
+	ifr.setAttribute("height","500em");
+	ifr.setAttribute("id",nd + "ifr");
+	ifr.setAttribute("name",nd + "ifr");
+	p.parentNode.insertBefore(ifr, b.nextSibling);
+	d=document.createElement("button");
+	d.innerText=buttons["Delete Output"];
+	d.setAttribute("id","del-" + nd);
+	d.setAttribute("onclick",'deleteoutput("' + nd + '")');
+	p.parentNode.insertBefore(d, b.nextSibling);
+    }
     var  loading=document.createElement("div");
     loading.id=nd+"load";
     loading.textContent="Loading . . .";
     p.parentNode.insertBefore(loading, ifr);
+    // scroll only if really close to the bottom
+    var rect = b.getBoundingClientRect();
+    if(document.documentElement.clientHeight - rect.bottom < 50){
+	window.scrollBy(0,50);
+    }
     setTimeout(function () {
 	p.parentNode.removeChild(document.getElementById(nd+"load"));
     }, 1000);
