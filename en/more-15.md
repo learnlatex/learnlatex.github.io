@@ -58,7 +58,7 @@ always concentrate on fixing the first reported error.
 \documentclass{article}
 
 \begin{document}
-Text<span style="color:red">\_</span>word  $\alpha + \beta$.
+Text<span style="color:red">_</span>word  $\alpha + \beta$.
 
 More text.
 \end{document}
