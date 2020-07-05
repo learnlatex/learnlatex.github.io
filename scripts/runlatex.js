@@ -187,7 +187,7 @@ function latexcgi(nd) {
     // scroll only if really close to the bottom
     var rect = b.getBoundingClientRect();
     if(document.documentElement.clientHeight - rect.bottom < 50){
-	window.scrollBy(0,50);
+	window.scrollBy(0,150);
     }
     setTimeout(function () {
 	p.parentNode.removeChild(document.getElementById(nd+"load"));
