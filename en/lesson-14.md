@@ -28,9 +28,11 @@ example, the TeX Gyre fonts are a suite of high-quality fonts based on common
 fonts that most people are familiar with such as Times, Helvetica, Palatino, and
 others. To load these fonts, it is as simple as loading a package with the
 appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
+
 ```latex
 \usepackage{tgtermes}
 ```
+{: .noedit :}
 
 For `pdflatex`, most fonts are accessible through packages.  You can have a look
 at [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) or the
@@ -55,6 +57,8 @@ simple documents can look as easy as:
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
+{: .noedit :}
+
 This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
 Notably, this approach works for *any* OpenType font.  Some fonts available for
 `pdflatex` are also available to `xelatex` and `lualatex` through their
