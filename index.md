@@ -10,12 +10,12 @@ be scary for new users as it is _not_ a word processor, and because it is not a
 single program. Our aim here is to help you get started without trying to show
 you _everything_ in one go.
 
-To do that, we have taken around 15 of the most important things you'll need to
+To do that, we have taken around 16 of the most important things you'll need to
 know, and made them into short 'lessons'. Each lesson is very focused, so they
 should not take too long to cover. In each lesson, we've given examples of what
 you'd write, and they are available so you can try them out online.
 
-We know that people will want to know more than we can cover in 15 short
+We know that people will want to know more than we can cover in 16 short
 lessons. To help guide you when you need more information, we have therefore
 included a 'going further' page for each lesson. This extra information is
 there to support you when you need the detail, but should not get in your
@@ -51,7 +51,7 @@ system is up-to-date.
 The focused lessons here are not meant to cover everything you'll ever need to
 know about LaTeX; we want to give you enough to get started and to _understand_
 examples and advice elsewhere. We cover getting more information in [the last
-lesson](en/lesson-15), but it's worth saying now that getting access to a book
+lesson](en/lesson-16), but it's worth saying now that getting access to a book
 about LaTeX is still the  best way to learn the details. We've given some
 recommendations in the last lesson.
 
