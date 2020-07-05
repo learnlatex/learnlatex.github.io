@@ -1,4 +1,4 @@
 ---
-title: "Mehr zu: Dokumentation und Hilfe finden"
+title: "More on: Dealing with errors (de)"
 ---
 Translation to be added _after_ English text completed.

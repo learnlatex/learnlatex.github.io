@@ -10,7 +10,7 @@ layout: default
   <p><small>
     <a href = "{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}">{% include_relative includes/more.html %}</a>
      <br>
-     {% if page.path contains "lesson-15" %}
+     {% if page.path contains "lesson-16" %}
      <a href = "language-01">{% include_relative includes/next.html %}</a>
      {% else %}
      {% if page.name contains "lesson-1" or  page.name contains "lesson-09" %}
@@ -27,7 +27,7 @@ layout: default
   <p><small>
     <a href = "{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}">{% include_relative includes/return.html %}</a>
     <br>
-    {% if page.path contains "more-15" %}
+    {% if page.path contains "more-16" %}
     <a href = "language-01">{% include_relative includes/nextmain.html %}</a>
     {% else %}
     {% if page.name contains "more-1" or  page.name contains "more-09" %}
