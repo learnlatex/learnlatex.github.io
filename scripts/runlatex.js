@@ -15,6 +15,8 @@ function llexamples() {
     var p = document.getElementsByTagName("pre");
     for(var i=0;i<p.length;i++) {
 	p[i].setAttribute("id","pre" + i);
+	// class=noedit on pre or {: .class :} after closing ``` in markdown
+	if(!(p[i].classList.contains('noedit') || p[i].parentNode.parentNode.classList.contains('noedit'))) {
 	// edit
 	var b = document.createElement("button");
 	b.innerText=buttons["edit"];
@@ -45,6 +47,7 @@ function llexamples() {
 	    var f2=document.createElement("span");
 	    f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i + "\" name=\"form2-pre" + i +"\" enctype=\"multipart/form-data\" action=\"https://latexcgi.xyz/cgi-bin/p2\" method=\"post\" target=\"pre" + i + "ifr\"></form>";
 	    p[i].parentNode.insertBefore(f2, p[i].nextSibling);
+	}
 	}
     }
 }
