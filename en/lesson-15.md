@@ -1,100 +1,224 @@
 ---
-title: "Accessing documentation and getting help"
+title: "Dealing with errors"
 ---
 
-
-There are several ways to access the documentation of a package or class.
-
-## `texdoc`
-
-If you've installed a TeX distribution (_e.g._, TeXLive or MikTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+**FIRST DRAFT: Do not translate yet**
 
 
-`texdoc` < _pkg_ >
+Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
+closer to working with programming language compilers, and as in programming
+users may make errors in their input and so need to deal with error messages
+reported by the system.
 
+This page gives examples of several common errors.
 
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
+Each error example has some discussion about the form of the error
+message.
 
+It may be instructive to try the examples but also use the
+edit features to try to fix the documents and test that you can
+resolve the errors.
 
-`texdoc -l` < _pkg_ >
+## pdflatex not found
 
+A common first error that people see when starting is:
 
-## texdoc.net
-
-This is a [website](https://texdoc.net/) which works similarly to the `texdoc` utility. You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
-
-
-## CTAN
-
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
-
-## Books on LaTeX
-
-There are several books available that can help you learn more about LaTeX.
-As a beginner, you will gain a lot from a structured beginners guide, as
-those can give a lot more detail than we've covered here. You might also
-want access to a reference with more detail and recommendations.
-
-The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's official
-guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
-and the comprehensive
-[LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
-
-Other books aimed at learning LaTeX include
-
-- [_Guide to
-  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
-  Kopka and Patrick Daly: available as an e-book
-- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
-- [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
-- [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
-  by Stefan Kottwitz: available as an e-book and in print
-- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
-  Marc van Dongen: available as an e-book and in print
-
-## Getting help
-
-There are various online forums for asking LaTeX questions; perhaps the most
-popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
-Whenever you ask a question, it's best to first get your example clear: what is
-normally known as a 'minimal working example' (MWE). This doesn't mean the code
-works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means
-having only enough content to show the issue.
-
-How do you construct a MWE? Normally easiest is to start from
-
-```latex
-\documentclass{article}
-\begin{document}
-Text
-\end{document}
 ```
+'pdflatex' is not recognized as an internal or external command,
+operable program or batch file.
+```
+{: .noedit :}
 
-and add lines one at a time until you show the issue. You can try to
-'cut down' your real file, but that can be a long process.
+on windows or
 
-If you need more text to show page breaking and other effects, then
-packages such as `lipsum` may be used to generate nonsense paragaraphs
-of text while keeping your test file small.
+```
+bash: pdflatex: command not found
+```
+{: .noedit :}
+
+on linux.
+
+This is
+not a TeX error but an operating system error saying that TeX is not
+installed or not found.  A common mistake is to install an _editor_
+such a TeXworks or TeXShop but without installing a TeX system such as
+TeX Live or MikTeX.
+
+## Anatomy of a TeX error message
+<div class="highlight">
+<pre>
+\documentclass{article}
+
+\newcommand\mycommand<span style="color:red">\textbold</span>{hmmm}
+
+\begin{document}
+
+My command is used here \mycommand.
+
+\end{document}
+</pre>
+</div>
+
+This produces a multi-line message in the log file.
+
+```
+! Undefined control sequence.
+\mycommand ->\textbold 
+                       {hmmm}
+l.7 My command is used here \mycommand
+                                      .
+? 
+```
+{: .noedit :}
+
+* The first line, marked with `!` gives the general nature of the error (undefined command in this case).
+* The second pair of lines show the line that TeX was processing, with a line break marking the point
+  that TeX had reached. The undefined command is the last token read so the last word before the line break
+  `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
+  an argument but have not yet been executed by TeX.
+* There may in general be some additional lines at this point, showing more context of the error message,
+* The final line starts with `l.` followed by a line number, and then the line in the source file where the
+  error is detected.
+
+* The final line is a `?`.  If using TeX interactively it is possible to
+  enter instructions to TeX at this point, but most editors and online
+  systems run TeX in a mode that does not stop at errors but will
+  scroll past this and try to process the rest of the document. Typing
+  `s` to the prompt will instruct TeX to carry on in this mode if you
+  are working interactively.
 
 
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
-Depending on your desktop interface, you might need to 'show extensions' to
-work out which file it is.
+Note here that TeX does not see the error at the point that
+the definition is made; and in fact if `\mycommand` is defined but not
+used, no error would be raised. So although the error is reported on
+line 7, the "real" error is in the definition on line 3, so it is
+important to see the whole error message.
+
+Beware that some editors show one line "summaries" of the error log.
+This can be particularly misleading if shown as
+
+`line 7: undefined command: ...\mycommand`
+
+as it makes it appear that `\mycommand` is not defined.
+
+
+## Mismatched braces
+
+<div class="highlight">
+<pre>
+\documentclass{article}
+
+\begin{document}
+
+ Text {\large some large text<span style="color:red">)</span>  normal size?
+
+\end{document}
+</pre>
+</div>
+
+In this example the size change was mistakenly ended with `)` rather
+than `}` This is not detected until the end of the file when TeX
+detects that there is still an unclosed group. It reports here the
+line at which the group was opened `{` It can not detect the actual
+error as the `)` is seen as "normal text".
+
+```
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 5 ({)
+```
+{: .noedit :}
+
+
+
+<div class="highlight">
+<pre>
+\documentclass{article}
+
+\usepackage[leqno<span style="color:red">}</span>{amsmath}
+
+\begin{document}
+
+\end{document}
+</pre>
+</div>
+
+Here the error is a similar mismatch, `}` is used to end the optional
+argument. Here though the closing brace causes LaTeX's option parsing
+to fail and you get an internal and not that helpful error  
+
+```
+! Argument of \@fileswith@ptions has an extra }.
+```
+{: .noedit :}
+
+although while the error description is unhelpful the following two
+lines do accurately display the location of the error by the use of
+the linebreak showing how far TeX had read:
+```
+l.3 \usepackage[leqno}
+                      {amsmath}
+```
+{: .noedit :}
+
+
+## Missing files
+
+<div class="highlight">
+<pre>
+\documentclass{article}
+
+\usepackage{<span style="color:red">amsmathz</span>}
+
+\begin{document}
+
+\end{document}
+</pre>
+</div>
+
+This produces the error
+
+```
+! LaTeX Error: File `amsmathz.sty' not found.
+```
+{: .noedit :}
+
+Note the same error may be caused by two different causes; a simple
+typo as here, which may be corrected by fixing the package name, or
+that the file really is missing and needs to be installed on the
+current system.
+
+## Blank lines in display math
+
+<div class="highlight">
+<pre>
+\documentclass{article}
+
+\begin{document}
+
+Some text
+\begin{equation}
+<span style="background-color:red">      </span>
+  1=2
+<span style="background-color:red">      </span>
+\end{equation}
+
+\end{document}
+</pre>
+</div>
+
+Produces the slightly mysterious error
+
+```
+! Missing $ inserted.
+```
+{: .noedit :}
+
+But the fix is simple, blank lines are not allowed in math
+environments and should be deleted.
+
+## Exercise
+
+Attempt to fix the errors in the supplied examples.
+
+Produce small documents with different errors and note the form of the error messages.

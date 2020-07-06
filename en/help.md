@@ -38,14 +38,9 @@ there is no TeX specific editing help as found in typical editing systems that y
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
 
 1. Use a  **LaTeX Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX Online</button> button
-   will submit the code to one of the
-   [LaTeX CGI](https://latexcgi.xyz/) service.
+   will submit the code to the
+   [LaTeX CGI](https://latexcgi.xyz/) service[^1].
 
-   Note that during development of the site we have also used 
-   [LaTeX.Online](https://latexonline.cc/) and
-   [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-   and we thank the developers of those services for making updates to enable
-   the examples on this site to be available at an early stage.
 
    The LaTeX CGI service was developed specifically to support this site, and
    in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
@@ -93,11 +88,12 @@ Whether or not the code block has been edited, there are three basic ways that y
 
 ## Choosing the {{ site.tex }} engine
 
-When submitting projects to Overleaf or LaTeX.Online, by default the
+When submitting example documents, by default the
 `pdflatex` engine will be used unless the example uses the `fontspec`
 package in which case `xelatex` is used.
 
-You can force the choice of `pdflatex`, `xelatex`, `lualatex`, `platex` or `uplatex` by using a comment of the form:
+You can force the choice of `pdflatex`, `xelatex`, `lualatex`,
+`platex` or `uplatex` by using a comment of the form:
 
 `% !TEX ` _any text_ `lualatex`
 
@@ -111,3 +107,16 @@ the online systems being used.
 
 You can see an example of a comment being used to specify LuaLaTeX in
 [some of the examples on this site](more-14).
+
+If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
+also used to produce the PDF result from the DVI file that these variants generate.
+
+
+
+---
+
+[^1]: Note that during development of the site we have also used 
+      [LaTeX.Online](https://latexonline.cc/) and
+      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
+      and we thank the developers of those services for making updates to enable
+      the examples on this site to be available at an early stage.

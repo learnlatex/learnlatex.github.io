@@ -1,4 +1,4 @@
 ---
-title: "Accessing documentation and getting help (French)"
+title: "Dealing with errors (French)"
 ---
 Translation to be added _after_ English text completed.

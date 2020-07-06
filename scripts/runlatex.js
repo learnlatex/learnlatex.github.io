@@ -6,7 +6,8 @@ var buttons ={
     "copy":             "copy",
     "Open in Overleaf": "Open in Overleaf",
     "LaTeX Online":     "LaTeX Online",
-    "Delete Output":    "Delete Output"
+    "Delete Output":    "Delete Output",
+    "Compiling PDF":    "Compiling PDF"
 }
 
 
@@ -15,6 +16,8 @@ function llexamples() {
     var p = document.getElementsByTagName("pre");
     for(var i=0;i<p.length;i++) {
 	p[i].setAttribute("id","pre" + i);
+	// class=noedit on pre or {: .class :} after closing ``` in markdown
+	if(!(p[i].classList.contains('noedit') || p[i].parentNode.parentNode.classList.contains('noedit'))) {
 	// edit
 	var b = document.createElement("button");
 	b.innerText=buttons["edit"];
@@ -45,6 +48,7 @@ function llexamples() {
 	    var f2=document.createElement("span");
 	    f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i + "\" name=\"form2-pre" + i +"\" enctype=\"multipart/form-data\" action=\"https://latexcgi.xyz/cgi-bin/p2\" method=\"post\" target=\"pre" + i + "ifr\"></form>";
 	    p[i].parentNode.insertBefore(f2, p[i].nextSibling);
+	}
 	}
     }
 }
@@ -162,25 +166,30 @@ function latexcgi(nd) {
 	engv="xelatex";
     }
     addinput(fm,"engine",engv);
-    	var b = document.getElementById('lo-' + nd);
-	var ifr= document.getElementById(nd + "ifr");
-	if(ifr == null) {
-	    ifr=document.createElement("iframe");
-	    ifr.setAttribute("width","100%");
-	    ifr.setAttribute("height","500em");
-	    ifr.setAttribute("id",nd + "ifr");
-	    ifr.setAttribute("name",nd + "ifr");
-	    p.parentNode.insertBefore(ifr, b.nextSibling);
-	    d=document.createElement("button");
-	    d.innerText=buttons["Delete Output"];
-	    d.setAttribute("id","del-" + nd);
-	    d.setAttribute("onclick",'deleteoutput("' + nd + '")');
-	    p.parentNode.insertBefore(d, b.nextSibling);
-	}
+    var b = document.getElementById('lo-' + nd);
+    var ifr= document.getElementById(nd + "ifr");
+    if(ifr == null) {
+	ifr=document.createElement("iframe");
+	ifr.setAttribute("width","100%");
+	ifr.setAttribute("height","500em");
+	ifr.setAttribute("id",nd + "ifr");
+	ifr.setAttribute("name",nd + "ifr");
+	p.parentNode.insertBefore(ifr, b.nextSibling);
+	d=document.createElement("button");
+	d.innerText=buttons["Delete Output"];
+	d.setAttribute("id","del-" + nd);
+	d.setAttribute("onclick",'deleteoutput("' + nd + '")');
+	p.parentNode.insertBefore(d, b.nextSibling);
+    }
     var  loading=document.createElement("div");
     loading.id=nd+"load";
-    loading.textContent="Loading . . .";
+    loading.textContent=buttons["Compiling PDF"] + " . . .";
     p.parentNode.insertBefore(loading, ifr);
+    // scroll only if really close to the bottom
+    var rect = b.getBoundingClientRect();
+    if(document.documentElement.clientHeight - rect.bottom < 50){
+	window.scrollBy(0,150);
+    }
     setTimeout(function () {
 	p.parentNode.removeChild(document.getElementById(nd+"load"));
     }, 1000);

@@ -10,11 +10,11 @@ you load the `array` package, which adds more functionality to LaTeX tables, and
 which is not built into the LaTeX kernel only for historic reasons. So put the
 following in your preamble and we're good to go:
 
-<!-- {% raw %} -->
+
 ```latex
 \usepackage{array}
 ```
-<!-- {% endraw %} -->
+{: .noedit :}
 
 In order to typeset a `tabular` we have to tell LaTeX how many columns will be
 needed and how they should be aligned. This is done in a mandatory argument
