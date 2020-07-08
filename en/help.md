@@ -117,7 +117,7 @@ also used to produce the PDF result from the DVI file that these variants genera
 If you use the LaTeX online system, then the PDF
 output from running an example is shown using
 [PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behaviour over the widest range of browswers.
+consistent behavior over the widest range of browsers.
 
 If you would prefer to use your browser's default PDF reader (either
 its built in one, or an external application that you have configured)
@@ -125,7 +125,7 @@ then add a comment of the form:
 
 `% !TEX ` _any text_ `pdf`
 
-The default behaviour can be explicitly specified by using `pdfjs` as
+The default behavior can be explicitly specified by using `pdfjs` as
 the final token. For debugging you may sometimes want the log file
 returned, even if the document produces a PDF with
 no errors. This can be specified by using `log` as the final token in
