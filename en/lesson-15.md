@@ -49,7 +49,7 @@ TeX Live or MikTeX.
 <pre>
 \documentclass{article}
 
-\newcommand\mycommand<span style="color:red">\textbold</span>{hmmm}
+\newcommand\mycommand{<span style="color:red">\textbold</span>{hmmm}}
 
 \begin{document}
 

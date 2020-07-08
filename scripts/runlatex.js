@@ -54,7 +54,8 @@ function llexamples() {
 }
 
 const commentregex = / %.*/;
-const engineregex = /% *!TEX.*[^a-zA-Z]((pdf|xe|lua|u?p)latex)/i;
+const engineregex = /% *!TEX.*[^a-zA-Z]((pdf|xe|lua|u?p)latex) *\n/i;
+const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
 
 
 // https://www.overleaf.com/devs
@@ -166,6 +167,12 @@ function latexcgi(nd) {
 	engv="xelatex";
     }
     addinput(fm,"engine",engv);
+    var rtn = t.match(returnregex);
+    var rtnv = "";
+    if(rtn!= null) {
+	rtnv=rtn[1].toLowerCase();
+	addinput(fm,"return",rtnv);
+    }    
     var b = document.getElementById('lo-' + nd);
     var ifr= document.getElementById(nd + "ifr");
     if(ifr == null) {
