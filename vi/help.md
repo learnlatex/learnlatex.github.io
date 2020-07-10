@@ -103,6 +103,24 @@ LuaLaTeX trong [bài bổ sung của bài 14](more-14).
 Nếu `platex` hay `uplatex` được sử dụng, chương trình `dvipdfmx` cũng được sử dụng
 để tạo ra tệp PDF từ các tệp DVI mà các trình dịch này xuất ra.
 
+## Chọn cách tệp PDF được hiển thị trong trình duyệt
+
+Nếu bạn sử dụng hệ thống LaTeX Online, mặc định các tệp PDF được hiển thị với sự
+trợ giúp của [PDF.js](https://mozilla.github.io/pdf.js), bởi vì thư viện này có
+thể hoạt động ổn định trên rất nhiều trình duyệt khác nhau.
+
+Nếu bạn muốn sử dụng trình đọc PDF mặc định của trình duyệt, bạn có thể dùng một
+ghi chú dưới dạng
+
+```
+% !TEX <bất cứ đoạn chữ nào> pdf
+```
+
+Bạn có thể sử dụng `pdfjs` thay cho `pdf` ở ghi chú trên; khi đó PDF.js sẽ được
+sử dụng để hiển thị PDF. Để debugging thuận lợi, bạn có thể cần đến tệp log ngay
+cả khi quá trình biên dịch không có lỗi; bạn có thể dùng `log` thay cho `pdf`
+trong ghi chú để làm việc này.
+
 ---
 
 [^1]: Trong quá trình phát triển ban đầu của trang này,
