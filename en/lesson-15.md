@@ -117,7 +117,7 @@ as it makes it appear that `\mycommand` is not defined.
 </pre>
 </div>
 
-Here the error is a mismatched, `}` is used to end the optional
+Here the error is a mismatched `}` used to end the optional
 argument. The closing brace causes LaTeX's option parsing
 to fail and you get an internal and not that helpful error: 
 
