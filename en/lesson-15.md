@@ -44,7 +44,7 @@ installed or not found.  A common mistake is to install an _editor_
 such a TeXworks or TeXShop but without installing a TeX system such as
 TeX Live or MikTeX.
 
-## Anatomy of a TeX error message
+## Anatomy of a {{ site.tex }} error message
 <div class="highlight">
 <pre>
 \documentclass{article}
@@ -104,32 +104,6 @@ as it makes it appear that `\mycommand` is not defined.
 
 ## Mismatched braces
 
-<div class="highlight">
-<pre>
-\documentclass{article}
-
-\begin{document}
-
- Text {\large some large text<span style="color:red">)</span>  normal size?
-
-\end{document}
-</pre>
-</div>
-
-In this example the size change was mistakenly ended with `)` rather
-than `}` This is not detected until the end of the file when TeX
-detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{` It can not detect the actual
-error as the `)` is seen as "normal text".
-
-```
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 5 ({)
-```
-{: .noedit :}
-
-
 
 <div class="highlight">
 <pre>
@@ -143,18 +117,19 @@ error as the `)` is seen as "normal text".
 </pre>
 </div>
 
-Here the error is a similar mismatch, `}` is used to end the optional
-argument. Here though the closing brace causes LaTeX's option parsing
-to fail and you get an internal and not that helpful error  
+Here the error is a mismatched, `}` is used to end the optional
+argument. The closing brace causes LaTeX's option parsing
+to fail and you get an internal and not that helpful error: 
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.
 ```
 {: .noedit :}
 
-although while the error description is unhelpful the following two
+While the error description is unhelpful; the following two
 lines do accurately display the location of the error by the use of
 the linebreak showing how far TeX had read:
+
 ```
 l.3 \usepackage[leqno}
                       {amsmath}

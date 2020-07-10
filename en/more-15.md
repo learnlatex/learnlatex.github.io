@@ -98,3 +98,37 @@ l.4 Text_word  $\alpha
 ```
 {: .noedit :}
 
+
+## Errors that do not trigger an error prompt
+
+Some errors, especially errors that are not detected until the end of the file,
+do not generate an error prompt but just give a warning in the log.
+
+If you try this example using the LaTeX CGI server it will return a PDF by default,
+to see the error message in the log add `%!TeX log`.
+
+<div class="highlight">
+<pre>
+\documentclass{article}
+
+\begin{document}
+
+ Text {\large some large text<span style="color:red">)</span>  normal size?
+
+\end{document}
+</pre>
+</div>
+
+In this example the size change was mistakenly ended with `)` rather
+than `}` This is not detected until the end of the file when TeX
+detects that there is still an unclosed group. It reports here the
+line at which the group was opened `{` It can not detect the actual
+error as the `)` is seen as "normal text".
+
+```
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 5 ({)
+```
+{: .noedit :}
+
