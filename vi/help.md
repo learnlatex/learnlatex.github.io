@@ -4,11 +4,11 @@ title: "Sử dụng trang learnlatex.org"
 
 ## Định hướng trong trang
 
-Khóa này bao gồm 15 bài học cơ bản. Bạn có thể xem danh sách của chúng trong
+Khóa này bao gồm 16 bài học cơ bản. Bạn có thể xem danh sách của chúng trong
 [trang chủ](.).
 
 Mỗi bài có một đường dẫn đến một bài bổ sung về cùng chủ đề nhưng có phần chuyên
-sâu hơn. Tuy nhiên, bạn vẫn có thể đi qua tất cả 15 bài mà _không_ cần học thêm
+sâu hơn. Tuy nhiên, bạn vẫn có thể đi qua tất cả 16 bài mà _không_ cần học thêm
 những bài bổ sung này.
 
 ## Chạy các ví dụ
