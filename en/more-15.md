@@ -48,7 +48,7 @@ Although the real error is on line 9 as shown by the context lines:
 ## Spurious errors due to earlier errors.
 
 When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edite the document
+to stop the processing at the  first error with `x`, edit the document
 and re-run. However if you scroll past the error or use an editor or
 online system that does this for you then TeX will try to recover,
 however this may lead to several more errors being reported.
