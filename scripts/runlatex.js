@@ -176,7 +176,6 @@ function latexcgi(nd) {
     }
     var mki = makeindexregex.exec(t);
     while (mki != null) {
-	alert(mki[1]);
 	addinputnoenc(fm,"makeindex[]",mki[1]);
 	mki = makeindexregex.exec(t);
     }
