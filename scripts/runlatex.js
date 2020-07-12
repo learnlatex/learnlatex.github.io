@@ -56,6 +56,7 @@ function llexamples() {
 const commentregex = / %.*/;
 const engineregex = /% *!TEX.*[^a-zA-Z]((pdf|xe|lua|u?p)latex) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
+const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
 
 // https://www.overleaf.com/devs
@@ -172,7 +173,13 @@ function latexcgi(nd) {
     if(rtn!= null) {
 	rtnv=rtn[1].toLowerCase();
 	addinput(fm,"return",rtnv);
-    }    
+    }
+    var mki = makeindexregex.exec(t);
+    while (mki != null) {
+	alert(mki[1]);
+	addinputnoenc(fm,"makeindex[]",mki[1]);
+	mki = makeindexregex.exec(t);
+    }
     var b = document.getElementById('lo-' + nd);
     var ifr= document.getElementById(nd + "ifr");
     if(ifr == null) {
