@@ -31,6 +31,7 @@ Times, ta dùng font Termes (`tgtermes`).
 ```latex
 \usepackage{tgtermes}
 ```
+{: .noedit :}
 
 Đối với `pdflatex`, hầu hết các font có thể được dùng qua việc khai báo gói
 lệnh. Bạn có thể xem
@@ -56,6 +57,7 @@ Trong những trình dịch này, việc chọn font được thực hiện bở
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
+{: .noedit :}
 
 Các lệnh này chọn font TeX Gyre Termes. Đáng chú ý, cách này có thể hoạt động
 với *bất kỳ* font OpenType nào. Những font dùng được ở `pdflatex` cũng có thể

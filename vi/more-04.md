@@ -29,9 +29,31 @@ Cách `\maketitle` hoạt động phụ thuộc vào lớp văn bản (xem [bài
 Có môi trường `titlepage` để bạn có thể đưa ra các thiết kế tiêu đề tùy ý mình,
 nhưng môi trường này hơi nâng cao và không nằm trong phạm vi khóa này.
 
+## Danh sách liệt kê mục
+
+Ngoài các kiểu danh sách "đánh số" và "không đánh số", LaTeX cũng cung cấp một
+kiểu danh sách nữa, ít dùng hơn, đó là "danh sách liệt kê các mục" (chạy ví dụ
+sau để hiểu hơn về kiểu danh sách này).
+
+```latex
+\documentclass{article}
+\begin{document}
+\begin{description}
+\item[Dog:] member of the genus Canis, which forms part of the wolf-like canids,
+  and is the most widely abundant terrestrial carnivore.
+\item[Cat:] domestic species of small carnivorous mammal. It is the only
+  domesticated species in the family Felidae and is often referred to as the
+  domestic cat to distinguish it from the wild members of the family.
+\end{description}
+\end{document}
+```
+
 ## Bài tập
 
 Thử đưa ra những thông tin khác nhau cho `\author`, `\title` và `\date` để kiểm
 tra cách hoạt động của `\maketitle`. Những câu lệnh nào trong số ba câu lệnh này
 là *bắt buộc* để `\maketitle` hoạt động? Liệu các câu lệnh có bắt buộc phải có
 nội dung bên trong nó không?
+
+Tạo một vài danh sách liệt kê mục, và thử lồng ba loại danh sách vào với nhau
+xem sao.

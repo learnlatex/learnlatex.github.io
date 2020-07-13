@@ -9,11 +9,11 @@ bạn đã khai báo gói `array` &ndash; gói này gia tăng nhiều tính năn
 bảng trong LaTeX và không được thêm vào LaTeX mặc định chỉ vì nhiều lý do bất
 đắc dĩ. Do đó, hãy thêm dòng sau vào phần khai báo và ta có thể đi tiếp.
 
-<!-- {% raw %} -->
+
 ```latex
 \usepackage{array}
 ```
-<!-- {% endraw %} -->
+{: .noedit :}
 
 Để tạo ra một bảng `tabular`, ta cần nói cho TeX biết rằng có bao nhiều cột và
 các cột được căn ra sao. Điều này được thực hiện trong một đối số bắt buộc,

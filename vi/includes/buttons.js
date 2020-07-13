@@ -4,5 +4,5 @@ var buttons ={
     "Open in Overleaf": "Mở trong Overleaf",
     "LaTeX Online":     "Chạy với LaTeX Online",
     "Delete Output":    "Xóa output",
-    "Compiling PDF":    "Compiling PDF"
+    "Compiling PDF":    "Đang biên dịch PDF"
 }
