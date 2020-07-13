@@ -39,7 +39,7 @@ on linux.
 This is
 not a TeX error but an operating system error saying that TeX is not
 installed or not found.  A common mistake is to install an _editor_
-such a TeXworks or TeXShop but without installing a TeX system such as
+such as TeXworks or TeXShop but without installing a TeX system such as
 TeX Live or MikTeX.
 
 ## Anatomy of a {{ site.tex }} error message
@@ -69,9 +69,9 @@ l.7 My command is used here \mycommand
 ```
 {: .noedit :}
 
-* The first line, marked with `!` gives the general nature of the error (undefined command in this case).
+* The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
 * The second pair of lines show the line that TeX was processing, with a line break marking the point
-  that TeX had reached. The undefined command is the last token read so the last word before the line break
+  that TeX had reached. The undefined command is the last token read so the last word before the line break,
   `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
   an argument but have not yet been executed by TeX.
 * There may in general be some additional lines at this point, showing more context of the error message,
@@ -156,7 +156,7 @@ This produces the error
 ```
 {: .noedit :}
 
-Note the same error may be caused by two different causes; a simple
+Note: the same error may be caused by two different causes; a simple
 typo as here, which may be corrected by fixing the package name, or
 that the file really is missing and needs to be installed on the
 current system.

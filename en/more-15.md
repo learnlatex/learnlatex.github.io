@@ -2,7 +2,7 @@
 title: "More on: Dealing with errors"
 ---
 
-## Errors reported at ends of environments.
+## Errors reported at ends of environments
 
 Some environments (notably `amsmath` alignments and `tabularx` tables)
 scan the whole envionment body before processing the content. This means that
@@ -45,12 +45,12 @@ Although the real error is on line 9 as shown by the context lines:
 {: .noedit :}
 
 
-## Spurious errors due to earlier errors.
+## Spurious errors due to earlier errors
 
 When calling LaTeX interactively from the command line it is possible
 to stop the processing at the  first error with `x`, edit the document
 and re-run. However if you scroll past the error or use an editor or
-online system that does this for you then TeX will try to recover,
+online system that does this for you then TeX will try to recover;
 however this may lead to several more errors being reported.
 
 So do not be too concerned about the _number_ of errors reported and
@@ -104,7 +104,7 @@ l.4 Text_word  $\alpha
 Some errors, especially errors that are not detected until the end of the file,
 do not generate an error prompt but just give a warning in the log.
 
-If you try this example using the LaTeX CGI server it will return a PDF by default,
+If you try this example using the LaTeX CGI server it will return a PDF by default;
 to see the error message in the log add `%!TeX log`.
 
 <div class="highlight">
@@ -120,7 +120,7 @@ to see the error message in the log add `%!TeX log`.
 </div>
 
 In this example the size change was mistakenly ended with `)` rather
-than `}` This is not detected until the end of the file when TeX
+than `}`. This is not detected until the end of the file when TeX
 detects that there is still an unclosed group. It reports here the
 line at which the group was opened `{` It can not detect the actual
 error as the `)` is seen as "normal text".
