@@ -46,7 +46,7 @@ function llexamples() {
 	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"></form>";
 	    p[i].parentNode.insertBefore(f, p[i].nextSibling);
 	    var f2=document.createElement("span");
-	    f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i + "\" name=\"form2-pre" + i +"\" enctype=\"multipart/form-data\" action=\"https://latexcgi.xyz/cgi-bin/p2\" method=\"post\" target=\"pre" + i + "ifr\"></form>";
+	    f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i + "\" name=\"form2-pre" + i +"\" enctype=\"multipart/form-data\" action=\"https://latexcgi.xyz/cgi-bin/latexcgi\" method=\"post\" target=\"pre" + i + "ifr\"></form>";
 	    p[i].parentNode.insertBefore(f2, p[i].nextSibling);
 	}
 	}
@@ -56,6 +56,7 @@ function llexamples() {
 const commentregex = / %.*/;
 const engineregex = /% *!TEX.*[^a-zA-Z]((pdf|xe|lua|u?p)latex) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
+const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
 
 // https://www.overleaf.com/devs
@@ -172,7 +173,12 @@ function latexcgi(nd) {
     if(rtn!= null) {
 	rtnv=rtn[1].toLowerCase();
 	addinput(fm,"return",rtnv);
-    }    
+    }
+    var mki = makeindexregex.exec(t);
+    while (mki != null) {
+	addinputnoenc(fm,"makeindex[]",mki[1]);
+	mki = makeindexregex.exec(t);
+    }
     var b = document.getElementById('lo-' + nd);
     var ifr= document.getElementById(nd + "ifr");
     if(ifr == null) {

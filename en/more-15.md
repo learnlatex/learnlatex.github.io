@@ -5,8 +5,8 @@ title: "More on: Dealing with errors"
 ## Errors reported at ends of environments.
 
 Some environments (notably `amsmath` alignments and `tabularx` tables)
-Scan the whole envionment body before processing the content. This means that
-any error within the environment is reported on the last line. However as seen in the
+scan the whole envionment body before processing the content. This means that
+any error within the environment is reported on the last line. However, as seen in the
 main lesson, TeX's display of the error context should still pinpoint the error location.
 
 <div class="highlight">
@@ -48,7 +48,7 @@ Although the real error is on line 9 as shown by the context lines:
 ## Spurious errors due to earlier errors.
 
 When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edite the document
+to stop the processing at the  first error with `x`, edit the document
 and re-run. However if you scroll past the error or use an editor or
 online system that does this for you then TeX will try to recover,
 however this may lead to several more errors being reported.
@@ -95,6 +95,40 @@ then continues until the `$` which ends math, so the following
 l.4 Text_word  $\alpha
                        + \beta$.
 ? 
+```
+{: .noedit :}
+
+
+## Errors that do not trigger an error prompt
+
+Some errors, especially errors that are not detected until the end of the file,
+do not generate an error prompt but just give a warning in the log.
+
+If you try this example using the LaTeX CGI server it will return a PDF by default,
+to see the error message in the log add `%!TeX log`.
+
+<div class="highlight">
+<pre>
+\documentclass{article}
+
+\begin{document}
+
+ Text {\large some large text<span style="color:red">)</span>  normal size?
+
+\end{document}
+</pre>
+</div>
+
+In this example the size change was mistakenly ended with `)` rather
+than `}` This is not detected until the end of the file when TeX
+detects that there is still an unclosed group. It reports here the
+line at which the group was opened `{` It can not detect the actual
+error as the `)` is seen as "normal text".
+
+```
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 5 ({)
 ```
 {: .noedit :}
 
