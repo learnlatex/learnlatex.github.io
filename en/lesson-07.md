@@ -79,7 +79,7 @@ not leave large gaps in the page.
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummmy text as filler
+\usepackage{lipsum}  % produce dummy text as filler
 
 \begin{document}
 \lipsum[1-4] % Just a few filler paragraphs
