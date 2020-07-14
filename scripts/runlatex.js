@@ -10,25 +10,20 @@ var buttons ={
     "Compiling PDF":    "Compiling PDF"
 }
 
-
+var editors=[];
 
 function llexamples() {
     var p = document.getElementsByTagName("pre");
+    var editor;
     for(var i=0;i<p.length;i++) {
 	p[i].setAttribute("id","pre" + i);
 	// class=noedit on pre or {: .class :} after closing ``` in markdown
 	if(!(p[i].classList.contains('noedit') || p[i].parentNode.parentNode.classList.contains('noedit'))) {
-	// edit
-	var b = document.createElement("button");
-	b.innerText=buttons["edit"];
-	b.setAttribute("onclick",'allowedit("pre' + i + '")');
-	p[i].parentNode.insertBefore(b, p[i]);
-	// copy
-	var c = document.createElement("button");
-	c.innerText=buttons["copy"];
-	c.setAttribute("onclick",'copytoclipboard("pre' + i + '")');
-	p[i].parentNode.insertBefore(c, p[i]);
 	if(p[i].textContent.indexOf("\\documentclass") !== -1) {
+	    // space
+	    var s = document.createElement("div");
+	    s.setAttribute("class",'spacer');
+	    p[i].parentNode.insertBefore(s, p[i].nextSibling);
 	    // latexonline
 	    var r = document.createElement("button");
 	    r.innerText=buttons["LaTeX Online"];
@@ -50,6 +45,14 @@ function llexamples() {
 	    p[i].parentNode.insertBefore(f2, p[i].nextSibling);
 	}
 	}
+	editor = ace.edit(p[i]);
+	ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
+	editor.setTheme("ace/theme/textmate");
+	editor.getSession().setMode("ace/mode/latex");
+	editor.setOption("minLines",5);
+	editor.setOption("maxLines",100);
+	editor.resize();
+	editors["pre" + i]=editor;
     }
 }
 
@@ -57,7 +60,6 @@ const commentregex = / %.*/;
 const engineregex = /% *!TEX.*[^a-zA-Z]((pdf|xe|lua|u?p)latex) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
-
 
 // https://www.overleaf.com/devs
 function addinput(f,n,v) {
@@ -88,15 +90,14 @@ function openinoverleaf(nd) {
     var fm = document.getElementById('form-' + nd);
     fm.innerHTML="";
     var p = document.getElementById(nd);
-    var t = p.innerText;
-    // the lax engine comment syntax confuses overleaf
+    var t = editors[nd].getValue();
     addinput(fm,"encoded_snip[]",t.replace(engineregex,''));
     addinput(fm,"snip_name[]","document.tex");
     if(typeof(preincludes) == "object") {
 	if(typeof(preincludes[nd]) == "object") {
 	    var incl=preincludes[nd];
 	    for(prop in incl) {
-		addinput(fm,"encoded_snip[]",document.getElementById(prop).innerText);
+		addinput(fm,"encoded_snip[]",editors[prop].getValue());
 		addinput(fm,"snip_name[]",incl[prop]);
 	    }
 	}
@@ -148,14 +149,14 @@ function latexcgi(nd) {
     var fm = document.getElementById('form2-' + nd);
     fm.innerHTML="";
     var p = document.getElementById(nd);
-    var t = p.innerText;
+    var t = editors[nd].getValue();
     addtextarea(fm,"filecontents[]",t);
     addinputnoenc(fm,"filename[]","document.tex");
     if(typeof(preincludes) == "object") {
 	if(typeof(preincludes[nd]) == "object") {
 	    var incl=preincludes[nd];
 	    for(prop in incl) {
-		addtextarea(fm,"filecontents[]",document.getElementById(prop).innerText);
+		addtextarea(fm,"filecontents[]",editors[prop].getValue());
 		addinputnoenc(fm,"filename[]",incl[prop]);
 	    }
 	}
