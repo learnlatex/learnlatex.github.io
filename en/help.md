@@ -29,11 +29,7 @@ Example text.
 
 The example is complete. However you may wish to edit it to make small
 changes, perhaps as part of an Exercise set at the end of the lesson.
-
-The <button style="padding:0 1px;font-size:90%">Edit</button> button enables editing within the page; this is
-marked by the removal of the LaTeX syntax highlighting and a green
-border added around the code block. Note that this is just a basic edit facility provided by your browser;
-there is no TeX specific editing help as found in typical editing systems that you would use with TeX.
+The editor being used is [ACE](https://ace.c9.io/).
 
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
 
@@ -80,8 +76,8 @@ Whether or not the code block has been edited, there are three basic ways that y
 
 3. If you have a TeX system installed locally, then you may copy the
    example code off the page, either explicitly selecting it, or by
-   using the <button style="padding:0 1px;font-size:90%">Copy</button>
-   button.  This will place the code in your operating system
+   using select all keyboard shortcuts in the editor (ctrl-A Ctrl-C
+   in windows for exammple). This will place the code in your operating system
    clipboard so you can start a blank document using your local
    editor, and paste in the text.
 
