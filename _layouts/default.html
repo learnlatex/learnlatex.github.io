@@ -9,6 +9,17 @@
     <link rel=icon href=/learnlatex-favicon.png>
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% if page.path contains "-" or page.path contains "help" %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
+    <style type="text/css" media="screen">
+      .ace_editor {
+	  border: 1px solid lightgray;
+	  margin-bottom: 1px !important;
+	  width: 100%;
+      }
+      div.spacer {
+	  margin-top:16px;
+      }
+    </style>
     <script src="../scripts/runlatex.js"></script>
     <script src="includes/buttons.js"></script>
     <style> td code {white-space: nowrap}</style>
