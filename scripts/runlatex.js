@@ -44,15 +44,15 @@ function llexamples() {
 	    f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i + "\" name=\"form2-pre" + i +"\" enctype=\"multipart/form-data\" action=\"https://latexcgi.xyz/cgi-bin/latexcgi\" method=\"post\" target=\"pre" + i + "ifr\"></form>";
 	    p[i].parentNode.insertBefore(f2, p[i].nextSibling);
 	}
+	    editor = ace.edit(p[i]);
+	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
+	    editor.setTheme("ace/theme/textmate");
+	    editor.getSession().setMode("ace/mode/latex");
+	    editor.setOption("minLines",2);
+	    editor.setOption("maxLines",100);
+	    editor.resize();
+	    editors["pre" + i]=editor;
 	}
-	editor = ace.edit(p[i]);
-	ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
-	editor.setTheme("ace/theme/textmate");
-	editor.getSession().setMode("ace/mode/latex");
-	editor.setOption("minLines",2);
-	editor.setOption("maxLines",100);
-	editor.resize();
-	editors["pre" + i]=editor;
     }
 }
 
