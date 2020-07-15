@@ -43,19 +43,18 @@ such as TeXworks or TeXShop but without installing a TeX system such as
 TeX Live or MikTeX.
 
 ## Anatomy of a {{ site.tex }} error message
-<div class="highlight">
-<pre>
+
+```latex
 \documentclass{article}
 
-\newcommand\mycommand{<span style="color:red">\textbold</span>{hmmm}}
+\newcommand\mycommand{\textbold{hmmm}}
 
 \begin{document}
 
 My command is used here \mycommand.
 
 \end{document}
-</pre>
-</div>
+```
 
 This produces a multi-line message in the log file.
 
@@ -103,17 +102,15 @@ as it makes it appear that `\mycommand` is not defined.
 ## Mismatched braces
 
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
-\usepackage[leqno<span style="color:red">}</span>{amsmath}
+\usepackage[leqno}{amsmath}
 
 \begin{document}
 
 \end{document}
-</pre>
-</div>
+```
 
 Here the error is a mismatched `}` used to end the optional
 argument. The closing brace causes LaTeX's option parsing
@@ -137,17 +134,15 @@ l.3 \usepackage[leqno}
 
 ## Missing files
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
-\usepackage{<span style="color:red">amsmathz</span>}
+\usepackage{amsmathz}
 
 \begin{document}
 
 \end{document}
-</pre>
-</div>
+```
 
 This produces the error
 
@@ -163,22 +158,20 @@ current system.
 
 ## Blank lines in display math
 
-<div class="highlight">
-<pre>
+```
 \documentclass{article}
 
 \begin{document}
 
 Some text
 \begin{equation}
-<span style="background-color:red">      </span>
+
   1=2
-<span style="background-color:red">      </span>
+
 \end{equation}
 
 \end{document}
-</pre>
-</div>
+```
 
 Produces the slightly mysterious error
 
@@ -195,3 +188,12 @@ environments and should be deleted.
 Attempt to fix the errors in the supplied examples.
 
 Produce small documents with different errors and note the form of the error messages.
+
+<script>
+  window.addEventListener('load', function(){
+      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(2, 31, false);
+      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(2, 18, false);
+      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(2, 20, false);
+      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(6, 0, false);
+  }, false);
+</script>

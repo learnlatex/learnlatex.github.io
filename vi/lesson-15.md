@@ -38,19 +38,17 @@ như TeX Live hay MiKTeX.
 
 ## Cấu trúc của một thông báo lỗi {{ site.tex }}
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
-\newcommand\mycommand{<span style="color:red">\textbold</span>{hmmm}}
+\newcommand\mycommand{\textbold{hmmm}}
 
 \begin{document}
 
 My command is used here \mycommand.
 
 \end{document}
-</pre>
-</div>
+```
 
 Tệp này tạo ra một thông báo lỗi như sau trong tệp log:
 
@@ -98,17 +96,15 @@ vì nó làm cho ta tưởng rằng `\mycommand` không được định nghĩa.
 
 ## Ngoặc nhọn không khớp
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
-\usepackage[leqno<span style="color:red">}</span>{amsmath}
+\usepackage[leqno}{amsmath}
 
 \begin{document}
 
 \end{document}
-</pre>
-</div>
+```
 
 Ở đây, lỗi là một dấu đóng ngoặc nhọn `}` được dùng để kết thúc một đối số không
 bắt buộc. Ngoặc nhọn này không khớp với bất kỳ ký tự mở ngoặc nhọn `{` nào, do
@@ -132,17 +128,15 @@ l.3 \usepackage[leqno}
 
 ## Không tìm thấy tệp
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
-\usepackage{<span style="color:red">amsmathz</span>}
+\usepackage{amsmathz}
 
 \begin{document}
 
 \end{document}
-</pre>
-</div>
+```
 
 Tệp này sinh ra lỗi sau
 
@@ -157,22 +151,20 @@ tìm đang thật sự bị thiếu và cần phải được cài đặt đúng
 
 ## Dòng trống trong các môi trường toán
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
 \begin{document}
 
 Some text
 \begin{equation}
-<span style="background-color:red">      </span>
+
   1=2
-<span style="background-color:red">      </span>
+
 \end{equation}
 
 \end{document}
-</pre>
-</div>
+```
 
 cho ta một lỗi khá tối nghĩa:
 
@@ -190,3 +182,12 @@ Thử sửa các lỗi trong các ví dụ trên.
 
 Tạo ra một văn bản nhỏ với những lỗi khác nhau và ghi nhớ cấu trúc những thông
 báo lỗi bạn nhận được.
+
+<script>
+  window.addEventListener('load', function(){
+      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(2, 31, false);
+      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(2, 18, false);
+      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(2, 20, false);
+      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(6, 0, false);
+  }, false);
+</script>
