@@ -77,7 +77,7 @@ Whether or not the code block has been edited, there are three basic ways that y
 3. If you have a TeX system installed locally, then you may copy the
    example code off the page, either explicitly selecting it, or by
    using select all keyboard shortcuts in the editor (ctrl-A Ctrl-C
-   in windows for exammple). This will place the code in your operating system
+   in windows for example). This will place the code in your operating system
    clipboard so you can start a blank document using your local
    editor, and paste in the text.
 
