@@ -208,7 +208,7 @@ function latexcgi(nd) {
 	window.scrollBy(0,150);
     }
     setTimeout(function () {
-	p.parentNode.removeChild(document.getElementById(nd+"load"));0
+	p.parentNode.removeChild(document.getElementById(nd+"load"));
     }, 1000);
     fm.submit();
 }
