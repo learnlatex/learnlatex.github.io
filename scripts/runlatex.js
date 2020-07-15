@@ -50,6 +50,7 @@ function llexamples() {
 	    editor.getSession().setMode("ace/mode/latex");
 	    editor.setOption("minLines",2);
 	    editor.setOption("maxLines",100);
+	    editor.setShowPrintMargin(false);
 	    editor.resize();
 	    editors["pre" + i]=editor;
 	}
@@ -207,7 +208,7 @@ function latexcgi(nd) {
 	window.scrollBy(0,150);
     }
     setTimeout(function () {
-	p.parentNode.removeChild(document.getElementById(nd+"load"));
+	p.parentNode.removeChild(document.getElementById(nd+"load"));0
     }, 1000);
     fm.submit();
 }
