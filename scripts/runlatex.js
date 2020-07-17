@@ -92,7 +92,7 @@ function openinoverleaf(nd) {
     fm.innerHTML="";
     var p = document.getElementById(nd);
     var t = editors[nd].getValue();
-    addinput(fm,"encoded_snip[]",t.replace(engineregex,''));
+    addinput(fm,"encoded_snip[]","\n" + t);
     addinput(fm,"snip_name[]","document.tex");
     if(typeof(preincludes) == "object") {
 	if(typeof(preincludes[nd]) == "object") {
