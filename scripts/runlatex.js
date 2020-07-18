@@ -98,7 +98,11 @@ function openinoverleaf(nd) {
 	if(typeof(preincludes[nd]) == "object") {
 	    var incl=preincludes[nd];
 	    for(prop in incl) {
-		addinput(fm,"encoded_snip[]",editors[prop].getValue());
+		if(editors[prop]==null) {
+		    addinput(fm,"encoded_snip[]",document.getElementById(prop).textContent);
+		} else {
+		    addinput(fm,"encoded_snip[]",editors[prop].getValue());
+		}
 		addinput(fm,"snip_name[]",incl[prop]);
 	    }
 	}
@@ -156,7 +160,11 @@ function latexcgi(nd) {
 	if(typeof(preincludes[nd]) == "object") {
 	    var incl=preincludes[nd];
 	    for(prop in incl) {
-		addtextarea(fm,"filecontents[]",editors[prop].getValue());
+		if(editors[prop]==null) {
+		    addtextarea(fm,"filecontents[]",document.getElementById(prop).textContent);
+		} else {
+		    addtextarea(fm,"filecontents[]",editors[prop].getValue());
+		}
 		addinputnoenc(fm,"filename[]",incl[prop]);
 	    }
 	}
