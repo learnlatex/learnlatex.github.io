@@ -94,8 +94,7 @@ BibTeX is used with either no packages at all or with `natbib`.
 
 Running a second tool as well as LaTeX is handled in different ways by different
 editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go; that's true for
-LaTeX.Online, LaTeX-on-HTTP and Overleaf.
+that do everything in one go.
 Your editor might have a single 'do stuff' button or you might have to
 choose to run BibTeX or Biber manually between LaTeX runs.
 
