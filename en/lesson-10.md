@@ -94,7 +94,7 @@ display.
 The paragraph should always be started _before_ the display so do not
 leave a blank line before the display math environment. If you need
 several lines of mathematics, do not use consecutive display math
-environments (this produces inconsisitent spacing); use one of the
+environments (this produces inconsistent spacing); use one of the
 multi-line display environments such as `align` from the `amsmath`
 package described later.
 
@@ -205,7 +205,7 @@ here:
 - `\mathbf`: boldface
 - `\mathsf`: sans serif
 - `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck ('blackboard bold')
+- `\mathbb`: double-struck ('blackboard bold'), (Provided by the `amsfonts` package.)
 
 Each of these takes Latin letters as an argument, so for example we might
 write a matrix as
