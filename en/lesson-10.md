@@ -205,7 +205,7 @@ here:
 - `\mathbf`: boldface
 - `\mathsf`: sans serif
 - `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck ('blackboard bold'), (Provided by the `amsfonts` package.)
+- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
 
 Each of these takes Latin letters as an argument, so for example we might
 write a matrix as
