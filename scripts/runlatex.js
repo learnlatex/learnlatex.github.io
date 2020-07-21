@@ -58,7 +58,7 @@ function llexamples() {
 }
 
 const commentregex = / %.*/;
-const engineregex = /% *!TEX.*[^a-zA-Z]((pdf|xe|lua|u?p)latex) *\n/i;
+const engineregex = /% *!TEX.*[^a-zA-Z]((pdf|xe|lua|u?p)latex(-dev)?) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
@@ -111,7 +111,7 @@ function openinoverleaf(nd) {
     var eng=t.match(engineregex);
     if(eng != null) {
 	engv=eng[1].toLowerCase();
-	if(engv == "platex" || engv == "uplatex") {
+	if(engv.indexOf("platex") != -1) {
 	    addinput(fm,"encoded_snip[]","$latex = '" + engv + "';\n$bibtex = 'pbibtex';\n$dvipdf = 'dvipdfmx %O -o %D %S';");
 	    addinput(fm,"snip_name[]","latexmkrc");
 	    engv="latex_dvipdf";
