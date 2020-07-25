@@ -3,7 +3,7 @@ title: "LaTeX là gì và nó hoạt động như thế nào?"
 ---
 
 Không giống những trình soạn thảo văn bản thông dụng như Microsoft Word hay
-LibreOffice, LaTeX không phải là một trình soạn thảo WYSIWYG ('What You See Is
+LibreOffice Writer, LaTeX không phải là một trình soạn thảo WYSIWYG ('What You See Is
 What You Get'). Trong LaTeX, ta dùng văn bản thuần túy (plain text) và thêm các
 markup (dưới dạng các câu lệnh, v.v...) vào. Những markup này sẽ cho LaTeX biết
 ý nghĩa của từng phần trong văn bản, tương tự như HTML.
