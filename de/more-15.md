@@ -1,4 +1,4 @@
 ---
-title: "More on: Dealing with errors (de)"
+title: "Mehr zu: Mit Fehlern umgehen"
 ---
 Translation to be added _after_ English text completed.
