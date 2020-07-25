@@ -27,20 +27,20 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-on windows or
+no Windows or
 
 ```
 bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-on linux.
+on Linux.
 
 This is
 not a TeX error but an operating system error saying that TeX is not
 installed or not found.  A common mistake is to install an _editor_
 such as TeXworks or TeXShop but without installing a TeX system such as
-TeX Live or MikTeX.
+TeX Live or MiKTeX.
 
 ## Anatomy of a {{ site.tex }} error message
 

@@ -49,7 +49,7 @@ sign the `... $-2$ ...` may use math digits which may not be the same
 font as the text digits (depending on the document class).
 Conversely
 beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using` _` (which
+elsewhere such as  monetary values using `$` or filenames using `_` (which
 may be marked up as `\$` and `\_` respectively).
 
 We can easily add superscripts and subscripts; these are marked using `^` and
@@ -253,7 +253,8 @@ able to guess the names.
 Experiment with the font changing commands: what happens when you try to
 nest them?
 
-Displayed math is centered by default; try adding the `[fleqn]` (flush
+Displayed math is centered by default; try adding the document class
+option `[fleqn]` (flush
 left equation) option to some of the above examples to see a different
 layout. Similarly equation numbers are usually on the
 right. Experiment with adding the `[leqno]` (left equation numbers)

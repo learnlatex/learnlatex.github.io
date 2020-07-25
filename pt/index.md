@@ -2,60 +2,59 @@
 title: learnlatex.org
 ---
 
-## Welcome to learnlatex.org (Portuguese)!
+## Bem-vindo ao learnlatex.org!
 
-This site aims to help you take the first steps with LaTeX, a document
-preparation system designed to produce high-quality typeset output. LaTeX can
-be scary for new users as it is _not_ a word processor, and because it is not a
-single program. Our aim here is to help you get started without trying to show
-you _everything_ in one go.
+O objetivo deste site é ajudar você nos seus primeiros passos com o LaTeX, um
+sistema de preparação de documentos projetado para produzir impressões
+tipográficas de alta qualidade.  O LaTeX pode ser assutador para novos usuários,
+pois _não é_ um processador de texto, e porque não é um único programa.  Nosso
+objetivo aqui é te ajudar a iniciar sem tentar mostrar _tudo_ de uma vez só.
 
-To do that, we have taken around 15 of the most important things you'll need to
-know, and made them into short 'lessons'. Each lesson is very focused, so they
-should not take too long to cover. In each lesson, we've given examples of what
-you'd write, and they are available so you can try them out online.
+Para isso, nós selecionamos 16 tópicos mais importantes que você precisa saber,
+e transformamo-os em curtas 'lições'.  Cada lição é focada, então não deve levar
+muito tempo para completá-la.  Em cada lição, nós demos exemplos do que você
+escreveria, que estão disponíveis para você experimentar online.
 
-We know that people will want to know more than we can cover in 15 short
-lessons. To help guide you when you need more information, we have therefore
-included a 'going further' page for each lesson. This extra information is
-there to support you when you need the detail, but should not get in your
-way if you do not.
+Sabemos que as pessoas precisam mais do que podemos cobrir em 16 lições curtas.
+Para ajudar a guiar você quando precisar mais informação, nós incluímos uma
+página 'indo além' para cada lição.  Essas informações extra estão lá para
+ajudar quando você precisar de detalhes, mas não são necessárias caso contrário.
 
-## How the examples work
+## Como os exemplos funcionam
 
-To support your learning, the site includes lots of examples. In
-[Lesson 2](lesson-02) we will talk about how you use LaTeX both online and with
-a local installation on your own PC. To get you started, we have set up
-our examples so you can edit and run them _in the page_ they are on. We
-have also linked them to [Overleaf](https://www.overleaf.com), one of the
-most popular online LaTeX editing sites. But don't worry, you can also
-use the examples on your own machine. You can read more about how to use the
-examples [in the site help](help).
+Para ajudar no seu aprendizado, o site inclui muitos exemplos.  Na
+[Lição 2](pt/lesson-02) nós vamos falar de como você pode usar o LaTeX tanto
+online quanto com uma instalação local no seu computador.  Para iniciantes, nós
+configuramos nossos exemplos para que você possa editá-los e executá-los neste
+website.  Nós também os vinculamos ao [Overleaf](https://www.overleaf.com), um
+dos serviços mais populares de edição online de LaTeX.  Mas não se preocupe,
+você também pode usar os exemplos no seu computador.  Você pode ler mais sobre
+como usar os exemplos na [página de ajuda](pt/help).
 
-Our examples are based around using an up-to-date LaTeX installation. They
-all work with both of our online demonstration systems, so if you get strange
-errors, you might want to check if your LaTeX system is up-to-date.
+Nossos exemplos são baseados em uma instalação atualizada de LaTeX.  Todos
+funcionam com ambos os nossos sistemas online, então se você receber erros com
+os exemplos que nós fornecemos, você pode primeiro verificar se a sua instalação
+de LaTeX está atualizada.
 
-## The lessons
+## As lições
 
 {% include toc.html  prefix="pt/lesson" %}
 
-### Additional lessons specific to learnlatex.org/pt
+### Lições adicionais específicas para learnlatex.org/pt
 
 {% include toc.html  prefix="pt/language" %}
 
+## Indo além
 
-## Going further
+O propósito das lições aqui não é abordar tudo o que você precisará saber sobre
+o LaTeX; nós queremos te dar o suficiente para você começar, e para _entender_
+exemplos e ajuda de outras fontes.  Nós abordamos formas de obter mais
+informação na [última lição](pt/lesson-16), mas vale ressaltar que ter acesso a
+um livro sobre LaTeX ainda é a melhor forma de aprender os detalhes.  Nós damos
+algumas recomendações na última lição.
 
-The focused lessons here are not meant to cover everything you'll ever need to
-know about LaTeX; we want to give you enough to get started and to _understand_
-examples and advice elsewhere. We cover getting more information in [the last
-lesson](lesson-15), but it's worth saying now that getting access to a book
-about LaTeX is still the  best way to learn the detail. We've given some
-recommendations in the last lesson.
+Finalmente, nós oferecemos uma galeria de pequenos exemplos mostrando uma gama
+de áreas diferentes que não são abordadas nessa introdução, e os diferentes
+pacotes nessas áreas.
 
-Finally we offer a gallery of small examples showing
-a range of different subject areas not covered in this introduction,
-and different LaTeX packages in those areas.
-    
 {% include toc.html prefix="pt/extra" %}

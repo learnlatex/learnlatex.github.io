@@ -42,9 +42,9 @@ can 'see' this list. So to pass the language of a document to all packages,
 we might use:
 
 ```latex
-\documentclass[ngerman]{article}
+\documentclass[ngerman]{article} % Notice that the option name is 'ngerman'
 
-\usepackage{babel} % Notice that the option name is 'ngerman'
+\usepackage{babel}
 
 \begin{document}
 

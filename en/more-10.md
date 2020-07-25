@@ -3,7 +3,7 @@ title: "More on: Mathematics"
 ---
 
 
-## Further amsmath alignments
+## Further `amsmath` alignments
 
 In addition to the `align*` environment shown in the main lesson,
 `amsmath` has several other display math constructs, notably `gather`
@@ -101,7 +101,7 @@ c&=d
 \end{document}
 ```
 
-# Bold Math
+## Bold Math
 Standard LaTeX has two methods to give bold symbols in math. To make
 an entire expression bold, use `\boldmath` before entering the
 expression. The command `\mathbf` is also available to set individual
@@ -125,7 +125,7 @@ $\mathbf{\pi} r^2$ % bad use of \mathbf
 If you want to access bold symbols (as would be used by `\boldmath`)
 within an otherwise normal weight expression, then you can use the
 command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as = and Greek letters. (Note that `\mathbf` has no effect
+symbols such as `=` and Greek letters. (Note that `\mathbf` has no effect
 on `\pi` in the example above.)
 
 ```latex
@@ -143,7 +143,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 \end{document}
 ```
 
-# Mathtools
+## Mathtools
 The package `mathtools` loads `amsmath` and adds several additional
 features, such as variants of the `amsmath` matrix environments that
 allow the column alignment to be specified.
@@ -164,7 +164,7 @@ allow the column alignment to be specified.
 \end{document}
 ```
 
-# Unicode Math
+## Unicode Math
 
 As will be seen in [Lesson 14](lesson-14), there are variant TeX
 engines that use OpenType fonts. By default, these engines still use
