@@ -1,19 +1,28 @@
 ---
-title: "Language-specifics for English"
+title: "Lição específica para a língua Portuguesa"
 next: "extra-01"
 ---
 
-## hyphenation
+Como a língua Portuguesa usa o alfabeto Latino, assim como a língua Inglesa, o
+LaTeX funciona quase corretamente com a língua Portuguesa por padrão; há poucos
+ajustes a fazer.  As únicas coisas que devem ser mudadas para escrever em
+Português no LaTeX são os padrões de hifenização e os textos localizados (por
+exemplo a palavra 'Capítulo', que por padrão aparece 'Chapter').
 
-LaTeX was written for use with English, and so there are very few
-language-specific issues facing authors in English. The main one
-is hyphenation: UK and US traditions are different. LaTeX starts out
-using US English patterns, but you can switch to UK ones using `babel`.
+O pacote `babel` fornece duas variantes da língua Portuguesa: Português Europeu
+e Brasileiro, que podem ser carregados com as opções `portuguese` e `brazilian`,
+respectivamente:
 
 ```latex
-\documentclass{article}
-\usepackage[UKenglish]{babel}
+\documentclass{book}
+\usepackage[brazilian]{babel}
 \begin{document}
-Some text
+\chapter{Viu? :)}
 \end{document}
 ```
+
+Ambas as opções carregam os padrões de hifenização da língua Portuguesa, e
+modificam os textos localizados de acordo (há pequenas diferenças nesses textos
+entre as duas versões do idioma: por exemplo com `brazilian` o comando
+`\tableofcontents` cria um "Sumário", enquanto que com `portuguese` o título
+do caopitulo fica "Conteúdo").
