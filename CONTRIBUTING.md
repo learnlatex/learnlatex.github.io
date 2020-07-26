@@ -21,6 +21,18 @@ made for multiple lessons in one go.
 If you are making a significant change to the content, please make sure you
 add yourself to the [contributors list](AUTHORS).
 
+## Running Locally
+
+The site is written to work with `gh-pages` and as such uses `ruby` and
+`jekyll`. It should suffice to run the following:
+
+```{bash}
+bundle
+bundle exec jekyll serve
+```
+
+To get a local server running to test changes.
+
 ## Formatting
 
 The site is written in [GitHub-flavoured
@@ -47,6 +59,7 @@ the site useful. There are a few things to watch out for
   output and similar
 
 - We use the following HTML entities for special characters:
+
   - `&hellip;` Ellipsis
   - `&mdash;` Em-dash
   - `&ndash;` En-dash
@@ -71,12 +84,12 @@ site maintainers by opening an
 [issue](https://github.com/learnlatex/learnlatex.github.io/issues).
 
 The lessons `lesson-`1&ndash;15 and extended lessons `more-`1&ndash;15
-should be translated fairly closely.  Additional lessons `language-`\*
+should be translated fairly closely. Additional lessons `language-`\*
 may be added that need not be translations of the English text, but
 have information specific to the language being used.
 
 The translation should be placed in a two-letter directory using the
-ISO 639-1 language code.  The yml `langs` array in `_config.yml` will
+ISO 639-1 language code. The yml `langs` array in `_config.yml` will
 need to be extended to include the language.
 
 See also the [specific guidelines for translators](TRANSLATIONS).
