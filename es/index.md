@@ -21,8 +21,8 @@ una sección 'ir más allá' en cada lección.
 
 ## Cómo funcionan los ejemplos
 
-Para ayudarle a aprender, el sitio web incluye muchos ejemplos. En 
-[Lección 2](es/lesson-02) hablaremos sobre cómo usar LaTeX, en línea y con
+Para ayudarle a aprender, el sitio web incluye muchos ejemplos. En la 
+[lección 2](es/lesson-02) hablaremos sobre cómo usar LaTeX, en línea y con
 una instalación local en su PC. Para ayudarle en sus comienzos, hemos preparado
 ejemplos que puede editar y ejecutar dede el sitio web. También hemos añadido
 un enlace a [Overleaf](https://www.overleaf.com), uno de los servicios más
