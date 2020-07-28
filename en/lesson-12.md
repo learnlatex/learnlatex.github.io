@@ -100,10 +100,10 @@ choose to run BibTeX or Biber manually between LaTeX runs.
 
 The format of citations and references is independent of your BibTeX database,
 and is set by what is known as a 'style'. We will see that these work slightly
-differently in `natbib` and `biblatex`, but the general idea remains: we can
-choose how citations appear.
+differently in the BibTeX workflow and `biblatex`, but the general idea remains:
+we can choose how citations appear.
 
-## The `natbib` workflow
+## The BibTeX workflow with `natbib`
 
 Whilst it is possible to insert citations into a LaTeX document without
 any packages loaded, this is rather limited. Instead, we will use the
@@ -188,6 +188,53 @@ In `biblatex`, the reference style is picked when we load the package. Here,
 we've used `authoryear`, but there is a `numeric` style and many others are
 also available.
 
+## Choosing between the BibTeX workflow and `biblatex`
+
+Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
+files and can produce structurally similar output in the document, they use
+completely different ways to produce this result. That means that there are
+some differences between the two approaches that may help you choose which
+one works best for you.
+
+In the BibTeX workflow the bibliography style is ultimately decided
+by a `.bst` file, whose name you give with `\bibliographystyle` command.
+`biblatex` does not use `.bst` files and uses a different system.
+If you are using a template that comes with a `.bst` file or are given a `.bst`
+file for your project, you must use the BibTeX workflow and cannot use
+`biblatex`.
+
+The different approach `biblatex` takes implies that you can modify the output
+of the bibliography and citation commands directly from your document preamble
+using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
+hand usually require working with these external files and need knowledge of
+the BibTeX programming language. Generally speaking, `biblatex` is said to be
+easier to customise than the BibTeX workflow.
+
+In `biblatex` it is generally easier to implement more elaborate citation
+styles with a wider array of different citation commands. It also offers more
+context-dependent features. Roughly speaking this is less interesting for
+the styles common in many STEM subjects, but becomes relevant for some more
+complex styles in some areas of the humanities.
+
+BibTeX can only sort US-ASCII characters correctly and relies on workarounds
+to provide US-ASCII-based sorting for non-US-ASCII characters.
+With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
+is usually a better choice if you want to sort your bibliography in a
+non-ASCII/English order.
+
+Having been around for much longer than `biblatex`, the BibTeX workflow is
+more established than `biblatex`, meaning that many publishers and journals
+expect bibliographies generated via the BibTeX workflow. Those publishers
+cannot or generally do not accept submmissions using `biblatex`.
+
+The bottom line is: Check the author/submission guidelines if you are
+submitting to a journal or publisher. If you are given a `.bst` file, you must
+use the BibTeX workflow. If you want a relatively simple bibliography and
+citation style and only need English US-ASCII-based sorting, the BibTeX workflow
+should suffice. If you need a more complex citation style, non-English sorting
+or want easier access to citation and bibliography style customisation features,
+you will want to look into using `biblatex`.
+
 ## Exercises
 
 Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
@@ -197,4 +244,4 @@ automation.
 
 See what happens when you create new database entries and new citations. Add
 a citation that's not in the database and see how it appears. Experiment
-with the `numeric` option to both packages.
+with `natbib`'s `numeric` and `biblatex`'s `style=numeric` option.
