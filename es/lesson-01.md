@@ -2,37 +2,37 @@
 title: "¿Qué es LaTeX y cómo funciona?"
 ---
 
-Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
+A diferencia de los procesadores de texto de uso común como Microsoft Word o LibreOffice
+Writer, LaTeX no es WYSIWYG (siglas inglesas de 'lo que ves es lo que obtienes'). Con
+LaTeX se tiene texto sin formato y con marcadores o etiquetas. Estas etiquetas
+dan información a LaTeX sobre el significado lógico de los elementos del texto,
+tal y como ocurre en HTML.
 
-Take for example the element  `<h2>`  indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+Pongamos como ejemplo el elemento "<h2>" que inica una nueva sección en un documento
+HTML. LaTeX tiene también también un comando para ello; podría usarse el comando "\section". 
 
-## The {{ site.latex }} workflow
+## El proceso de trabajo de {{ site.latex }}
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+Como los ficheros de LaTeX no son el propio documento final, sino más bien las
+instrucciones sobre lo que parte debe ser, no se suele enviar a los demás el 
+fichero LaTeX en sí mismo. En su lugar, después de escribir el fichero _fuente_ 
+en LaTeX, se debe ejecutar LaTeX sobre el fichero (normalmente usando un programa
+llamado "pdflatex") para generar el fichero PDF. Será este PDF el que enviará.
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+La gente utiliza diferentes formas de describir este proceso. Como usar LaTeX es casi
+como programar, a este proceso se le llama a menudo 'compilar' el documento, aunque 
+el término "composición tipográfica" es más preciso.
 
-## Multiple {{ site.latex }} runs
+## Múltiples ejecuciones de {{ site.latex }}
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+Para los documentos simples, sólo necesitará componer tipográficamente su fichero
+una vez para obtener el PDF. Pero, una vez que comience a añadir cosas más complicadas,
+como referencias cruzadas, citas, figuras, índices, deberá ejecutar LaTeX más
+de una vez. Se lo comentaremos cuando tenga que hacerlo.
 
-## {{ site.latex }} or pdf{{ site.latex }} or ...
+## {{ site.latex }} o pdf{{ site.latex }} o ...
 
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+En la [próxima lección](lesson-02), vamos a ver que LaTeX no es un simple
+programa. Para no complicar las cosas, vamos a centrarnos en un programa particular
+de LaTeX, pdfLaTeX, que permite generar ficheros PDF. Más adelante en el curso, veremos 
+otros programas, y el por qué a usted le pude interesar usarlos.  
