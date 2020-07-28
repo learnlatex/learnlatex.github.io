@@ -28,7 +28,7 @@ ejemplos que puede editar y ejecutar dede el sitio web. También hemos añadido
 un enlace a [Overleaf](https://www.overleaf.com), uno de los servicios más
 populares de edición de LaTeX en línea. Pero no se preocupe, también podrá
 usar los ejemplos en su ordenador. Puede leer más, sobre cómo usar los ejemplos
-en [la página de ayuda](es/help).  
+en [la página de ayuda](help).  
 
 Nuestros ejemplos están pensados para una instalación de LaTeX actualizada.
 Funcionan bien con nuestros dos sistemas de demostración en línea, con lo que
