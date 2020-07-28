@@ -78,7 +78,8 @@ Some mathematics: $y = 2 \sin \theta^{2}$.
 ```
 
 We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for math math mode symbols using the
+many online resources listing the standard set. You can look up commands for
+math mode symbols using the
 [Detexify](https://detexify.kirelabs.org/classify.html) tool.
 
 
