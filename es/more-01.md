@@ -2,23 +2,22 @@
 title: "Más sobre: ¿Qué es LaTeX y cómo funciona?"
 ---
 
-The word “LaTeX” actually consists of two components, “La” and “TeX”. In the
-following we will briefly describe where they come from.
+La palabra "LaTeX" está en realidad compuesta de dos partes, "La" y "TeX". En
+este apartado vamos a describir brevemente su origen.
 
-TeX was originally invented by Stanford professor Donald Knuth. Knuth is
-well known for a series of books called the “Art of Computer Programming”
-(known as "TAOCP"). In
-1973 a new edition of the books was to be made; this was the time when the
-typesetting industry switched from traditional typesetting with lead to
-photo-based typesetting. Donald Knuth did not like the quality of the print and
-therefore decided to implement his own typesetting system.
+TeX fue inventado por Donald Knuth, un profesor de Stanford. Knuth era célebre
+por una serie de libros titulados "El arte de programar ordenadores" (conocidos 
+como "TAOCP"). En 1973, estos libros fueron reeditados; en ese mismo momento
+la industria de la imprenta cambiaba de la composition tipográfica tradicional con 
+plomo a una composición basada en la luz. A Donald Knuth no le gustó la calidad 
+de la impresión y decidió implementar su propio sistema de composición tipográfica.  
 
-In May 1977 the development of TeX started.
+En mayo de 1977 comenzaba el desarrollo de TeX.
 
-The original TeX was rather complicated to use, even Donald Knuth used various
-macros to edit his books. Leslie Lamport, who works for Microsoft nowadays, also
-developed a set of macros that simplify the use of TeX and called this macro
-set “LaTeX”.
+El TeX de origen era bastante complicado de usar, incluso Donald Knuth usó varias
+macros para editar sus libros. Leslie Lamport, que trabajaba entonces en Microsoft,
+también desarrolló una serie de macros para simplificar el uso de TeX y llamó "LaTeX"
+a este conjunto de macros.
 
-Today LaTeX is the most common way to interact with TeX. Another alternative is
-[ConTeXt](https://www.contextgarden.net/).
+Hoy en día LaTeX es la forma más común de interactuar con TeX. Otra alternativa es
+[ConTeXt](https://wiki.contextgarden.net).
