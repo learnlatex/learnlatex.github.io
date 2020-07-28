@@ -1,5 +1,5 @@
 ---
-title: "More on: What is LaTeX and how does it work?"
+title: "Más sobre: ¿Qué es LaTeX y cómo funciona?"
 ---
 
 The word “LaTeX” actually consists of two components, “La” and “TeX”. In the

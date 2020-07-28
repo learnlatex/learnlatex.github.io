@@ -1,5 +1,5 @@
 ---
-title: "More on: Using document classes to influence design"
+title: "Más sobre: Usando los tipos de documento para cambiar el diseño"
 ---
 
 ## Journal-specific classes

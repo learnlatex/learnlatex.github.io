@@ -1,5 +1,5 @@
 ---
-title: "Formatting: fonts and spacing"
+title: "Formateando el texto: fuentes y espaciado"
 ---
 
 ## Paragraph spacing

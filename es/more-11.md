@@ -1,5 +1,5 @@
 ---
-title: "More on: Formatting: fonts and spacing"
+title: "Más sobre: Formateando el texto: fuentes y espaciado"
 ---
 
 ## Suppressing the indent for one paragraph

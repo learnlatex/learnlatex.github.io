@@ -1,5 +1,5 @@
 ---
-title: "Accessing documentation and getting help"
+title: "Accediendo a la documentación y buscando ayuda"
 ---
 
 

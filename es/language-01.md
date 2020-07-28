@@ -1,5 +1,5 @@
 ---
-title: "Language-specifics for English"
+title: "Especificaciones de idioma para el español"
 next: "extra-01"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Mathematics"
+title: "Matemáticas"
 ---
 
 ## Math mode

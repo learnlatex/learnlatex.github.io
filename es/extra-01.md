@@ -1,5 +1,5 @@
 ---
-title: "Examples for further study"
+title: "Ejemplos para ir más lejos"
 ---
 
 This course has given an overview of the core features of LaTeX.

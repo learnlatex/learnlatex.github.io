@@ -1,5 +1,5 @@
 ---
-title: "More on: Dealing with errors"
+title: "Más sobre: Analizando los errores"
 ---
 
 ## Errors reported at ends of environments

@@ -1,5 +1,5 @@
 ---
-title: "More on: Your first LaTeX document"
+title: "Más sobre: Su primer documento en LaTeX"
 ---
 
 ## Running LaTeX

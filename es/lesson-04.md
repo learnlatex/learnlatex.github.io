@@ -1,5 +1,5 @@
 ---
-title: "Logical structure"
+title: "Estructura lógica de un documento"
 ---
 
 LaTeX provides ways to concentrate on the logical structure of your document, as well as the

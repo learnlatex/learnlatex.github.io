@@ -1,5 +1,5 @@
 ---
-title: "Using document classes to influence design"
+title: "Usando los tipos de documento para cambiar el diseño"
 ---
 
 ## What a document class does

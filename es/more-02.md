@@ -1,5 +1,5 @@
 ---
-title: "More on: Working with LaTeX"
+title: "Más sobre: Trabajando con LaTeX"
 ---
 
 For most of our examples, we don't use a program called `latex` but instead

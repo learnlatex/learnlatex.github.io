@@ -1,5 +1,5 @@
 ---
-title: "More on: Mathematics"
+title: "Más sobre: Matemáticas"
 ---
 
 

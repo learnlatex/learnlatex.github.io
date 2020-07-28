@@ -1,5 +1,5 @@
 ---
-title: "Your first LaTeX document"
+title: "Su primer documento en LaTeX"
 ---
 
 Our first LaTeX document is going to be very simple: the idea is to show you

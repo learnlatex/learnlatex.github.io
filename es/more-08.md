@@ -1,5 +1,5 @@
 ---
-title: "More on: Tables"
+title: "Más sobre: Tablas"
 ---
 
 

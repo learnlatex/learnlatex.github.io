@@ -1,5 +1,5 @@
 ---
-title: "Dealing with errors"
+title: "Analizando los errores"
 ---
 
 

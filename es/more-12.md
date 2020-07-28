@@ -1,5 +1,5 @@
 ---
-title: "More on: Citations and references"
+title: "Más sobre: Citaciones y referencias"
 ---
 
 ## Dealing with non-English sorting

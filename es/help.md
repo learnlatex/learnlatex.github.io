@@ -1,5 +1,5 @@
 ---
-title: "Using the learnlatex.org site"
+title: "Usando el sitio web learnlatex.org"
 ---
 
 ## Navigating the site

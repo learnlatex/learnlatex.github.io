@@ -1,5 +1,5 @@
 ---
-title: "Cross-referencing"
+title: "Referencias cruzadas"
 ---
 
 ## The `\label` and `\ref` mechanism

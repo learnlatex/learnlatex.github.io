@@ -1,5 +1,5 @@
 ---
-title: "More on: Accessing documentation and getting help"
+title: "Más sobre: Accediendo a la documentación y buscando ayuda"
 ---
 
 

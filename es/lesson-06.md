@@ -1,5 +1,5 @@
 ---
-title: "Extending LaTeX using packages"
+title: "Extendendiendo LaTeX usando paquetes"
 ---
 
 After having declared a class, in the preamble you can modify functionality in

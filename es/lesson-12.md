@@ -1,5 +1,5 @@
 ---
-title: "Citations and references"
+title: "Citaciones y referencias"
 ---
 <script>
 preincludes = {
