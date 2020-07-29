@@ -2,30 +2,30 @@
 title: "Más sobre: Trabajando con LaTeX"
 ---
 
-For most of our examples, we don't use a program called `latex` but instead
-one called `pdflatex`. This is one of a family of related programs, all
-of which are 'descendants' of `latex`. We have chosen `pdflatex` because
-it is perhaps the most widely-used system and directly produces PDF files.
+Para la mayoría de nuestros ejemplos, no usaremos el programa llamado `latex` sino
+otro llamado `pdflatex`. Éste forma parte de una familia de programas, que `derivan`
+directamente de `latex`. Hemos elegido `pdflatex` porque es quizás el más ampliamente 
+utilizado y produce directamente los ficheros PDF.
 
-## Formats and engines
+## Formatos y motores
 
-As described [earlier](more-01), LaTeX is built on a system called TeX. We
-call LaTeX a 'format': a collection of macros (instructions and commands) that
-TeX understands. When you run `pdflatex`, you are _actually_ starting a
-program called 'pdfTeX' with a pre-loaded 'LaTeX format'. We normally call
-pdfTeX an _engine_: a program that understands TeX instructions.
+Como comentamos [precedentemente](more-01), LaTeX está construido a partir de un sistema
+llamado TeX. A LaTeX le llamamos `formato`: conjunto de macros (instrucciones y comandos)
+que TeX es capaz de comprender. Cuando ejecute `pdflatex`, estará _en realidad_ iniciando un
+programa llamado `pdfTeX` con un `formato LaTeX` cargado previamente. A pdfTeX le
+llamamos normalmente _motor_: un programa que entiende las instrucciones de TeX.
 
-There are three engines in common use today:
+Hay tres motores de TeX que tienen un uso común hoy en día:
 
 - pdfTeX
 - XeTeX
 - LuaTeX
 
-We will cover [XeTeX and LuaTeX later](lesson-14): the main thing we need to
-know now is that they are capable of loading operating system fonts, whereas
-pdfTeX can't do that.
+Abordaremos [XeTeX y LuaTex más adelante](lesson-14): lo más importante que necesitamos
+saber por ahora, es que son capaces de cargar sistemas de fuentes, cosa que pdfTex 
+no puede hacer.
 
-If you are in Japan, or writing lots of Japanese, you might also come across
-pTeX and upTeX. These are specialised engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX, in particular, is still
-the most popular system for Japanese.
+Si se encuentra en Japón, o necesita escribir en japonés, también puede utilizar
+pTeX y upTeX. Son motores especializados en la composición tipográfica vertical. LuaTeX 
+puede también hacer muchas de estas cosas, pero de momento upTeX, en especial, sigue
+siendo el sistema más popular entre los japoneses.
