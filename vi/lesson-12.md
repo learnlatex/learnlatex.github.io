@@ -23,7 +23,7 @@ phải thực hiện định dạng kiểu chữ "bằng tay".
 
 Những tệp lưu trữ như vậy thường được gọi là các "tệp BibTeX" và có đuôi tệp là
 `.bib`. Chúng thường bao gồm một hay nhiều mục, mỗi mục cho thông tin về một tài
-liệu tham khảo &ndash; đó là một chuỗi các miền thông tin. Hãy cùng cem một ví
+liệu tham khảo &ndash; đó là một chuỗi các miền thông tin. Hãy cùng xem một ví
 dụ:
 
 <!-- {% raw %} -->
