@@ -28,7 +28,7 @@ and `biblatex`, but also between different BibTeX styles. A large 'core set' of
 entry types and fields is the same for almost all styles, but there are
 differences in some fields.
 
-A common examples is the URL. Some older BibTeX `.bst` styles (most notably
+A common example is the URL. Some older BibTeX `.bst` styles (most notably
 the 'standard BibTeX styles', e.g. `plain.bst`, `unsrt.bst`, ...) predate
 the invention of the URL and have no dedicated field for the URL of an online
 resource. Many newer styles _do_ have a dedicated `url` field. The workaround
