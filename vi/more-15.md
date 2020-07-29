@@ -10,8 +10,7 @@ phần nội dung này. Điều này nghĩa là bất kỳ lỗi nào trong nộ
 được "phát hiện" tại dòng cuối của môi trường này. Tuy nhiên, như ta thấy trong
 bài chính, TeX vẫn đánh dấu vị trí lỗi chính xác.
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
 \usepackage{amsmath}
@@ -20,13 +19,12 @@ bài chính, TeX vẫn đánh dấu vị trí lỗi chính xác.
 
 \begin{align}
 \alpha &= \frac{1}{2}\\
-\beta  &= <span style="color:red">\frak</span>{2}{3}\\
+\beta  &= \frak{2}{3}\\
 \gamma &= \frac{3}{4} 
 \end{align}
 
 \end{document}
-</pre>
-</div>
+```
 
 Lỗi sẽ được thông báo tại dòng 11:
 
@@ -56,17 +54,15 @@ nhiên quá trình tự sửa lỗi này đôi khi lại vô tình tự gây ra 
 Vì vậy, đừng bận tâm nhiều vào _số_ lỗi được phát hiện. Luôn chú ý vào việc sửa
 lỗi đầu tiên.
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
 \begin{document}
-Text<span style="color:red">_</span>word  $\alpha + \beta$.
+Text_word  $\alpha + \beta$.
 
 More text.
 \end{document}
-</pre>
-</div>
+```
 
 Lỗi ở đây là ký tự `_`; nó cần được nhập như sau: `\_`.
 
@@ -107,17 +103,15 @@ chỉ là một cảnh báo (warning) trong tệp log.
 Nếu bạn thử ví dụ sau bằng LaTeX CGI, nó sẽ vẫn cho ta PDF. Để xem cảnh báo
 trong tệp log, hãy thêm `% !TEX log` vào đầu đoạn mã.
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
 \begin{document}
 
- Text {\large some large text<span style="color:red">)</span>  normal size?
+ Text {\large some large text)  normal size?
 
 \end{document}
-</pre>
-</div>
+```
 
 Trong ví dụ này, lệnh đổi cỡ chữ được kết thúc bằng `)` thay vì `}`. Điều này
 không được phát hiện cho tới điểm cuối của tệp &ndash; tại đây TeX phát hiện ra
@@ -132,3 +126,10 @@ như "phần văn bản bình thường".
 ```
 {: .noedit :}
 
+<script>
+  window.addEventListener('load', function(){
+      if(editors['pre0'] != null) editors['pre0'].moveCursorTo(8, 15, false);
+      if(editors['pre3'] != null) editors['pre3'].moveCursorTo(3, 5, false);
+      if(editors['pre6'] != null) editors['pre6'].moveCursorTo(4, 30, false);
+  }, false);
+</script>

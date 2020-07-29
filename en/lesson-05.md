@@ -78,14 +78,14 @@ The American Mathematical Society provide variants of the standard
 classes (`amsart`, `amsbook`) with a more traditional design closer to
 that used in mathematics journal publications.
 
-The two largest and most popular 'extended' classes are the KOMA-script bundle
-and the memoir class. KOMA-Scipt offers a set of classes which 'parallel' the
+The two largest and most popular 'extended' classes are the KOMA-Script bundle
+and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
 standard ones: `scrartcl`, `scrreprt` and `scrbook`, while there is a single
 `memoir` class that is most like an extension of `book`.
 
 These extended classes have lots of customisation hooks, which we'll explore a
 bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in the last lesson](lesson-15), but you can always
+provide; we will cover that [in a later lesson](lesson-15), but you can always
 jump ahead!
 
 ## Presentations

@@ -459,7 +459,7 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 
 ## Defining new column types
 
-As demonstrated in the main lesson, the array package allows
+As demonstrated in the [main lesson](lesson-08), the `array` package allows
 constructs such as `>{\bfseries}c`  to denote a bold centered column.
 It is often convenient to define a new column type to encapsulate such
 use, for example

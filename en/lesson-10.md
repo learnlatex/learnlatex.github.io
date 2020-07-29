@@ -49,7 +49,7 @@ sign the `... $-2$ ...` may use math digits which may not be the same
 font as the text digits (depending on the document class).
 Conversely
 beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using` _` (which
+elsewhere such as  monetary values using `$` or filenames using `_` (which
 may be marked up as `\$` and `\_` respectively).
 
 We can easily add superscripts and subscripts; these are marked using `^` and
@@ -78,7 +78,8 @@ Some mathematics: $y = 2 \sin \theta^{2}$.
 ```
 
 We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for math math mode symbols using the
+many online resources listing the standard set. You can look up commands for
+math mode symbols using the
 [Detexify](https://detexify.kirelabs.org/classify.html) tool.
 
 
@@ -94,7 +95,7 @@ display.
 The paragraph should always be started _before_ the display so do not
 leave a blank line before the display math environment. If you need
 several lines of mathematics, do not use consecutive display math
-environments (this produces inconsisitent spacing); use one of the
+environments (this produces inconsistent spacing); use one of the
 multi-line display environments such as `align` from the `amsmath`
 package described later.
 
@@ -205,7 +206,7 @@ here:
 - `\mathbf`: boldface
 - `\mathsf`: sans serif
 - `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck ('blackboard bold')
+- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
 
 Each of these takes Latin letters as an argument, so for example we might
 write a matrix as
@@ -253,7 +254,8 @@ able to guess the names.
 Experiment with the font changing commands: what happens when you try to
 nest them?
 
-Displayed math is centered by default; try adding the `[fleqn]` (flush
+Displayed math is centered by default; try adding the document class
+option `[fleqn]` (flush
 left equation) option to some of the above examples to see a different
 layout. Similarly equation numbers are usually on the
 right. Experiment with adding the `[leqno]` (left equation numbers)

@@ -15,7 +15,7 @@ GitHub stating the intention and tracking progress, that way other people
 contemplating working on the same language will be alerted and so duplication of effort
 will be avoided.
 
-The easiest way to develop and test your issue is to fork the
+The easiest way to develop and test your translation is to fork the
 [github repository](https://github.com/learnlatex/learnlatex.github.io/)
 and enable github-pages on your fork (You will need to remove the CNAME file from
 the top level of the repository as your fork will not be running at learnlatex.org).
@@ -27,12 +27,14 @@ Once the initial site is working, you can make add the new language files by tak
 ISO 639-1 two letter language code for your language, which we shall assume is `zz`
 
 1. Make a new directory `zz` as a copy of the english pages in `en`, including the subdirectory `en/includes`
-2. Copy top level `index.html` into the `zz` directory and change references to `en` to `zz`.
+2. Copy top level `index.md` into the `zz` directory and change references to `en` to `zz`.
+   **Delete** the `zz/index.html` which would force a redirect to the English home page.
    (See the examples for existing languages, such as `de`).
-3. Add the two level code `zz` to the `langs:` array in the `_config.yml` file.
+
+3. Add the two letter code `zz` to the `langs:` array in the `_config.yml` file.
 4. Translate the fixed strings in the files in `zz/includes` into your language.
    This is for site navigation such as "next lesson" and
-   for the buttons used in examples such as "edit".
+   for the buttons used in examples such as "Open in Overleaf".
 
 
 At this point your language should appear in the drop down menu to
@@ -70,8 +72,8 @@ pdfLaTeX.
 If this is the case we ask that the help file has an English and translated example
 See for example the [Japanese help text](https://www.learnlatex.org/ja/help) and that file
 and lesson-03 with the first document have forward references to the
-[language setup lessons](en/more-06) and also any
-[language specific lessons](en/language-01) that you add.
+[language setup lessons](https://www.learnlatex.org/en/more-06) and also any
+[language specific lessons](https://www.learnlatex.org/en/language-01) that you add.
 
 Apart from these forward references the examples should stay as close
 to the current examples as possible even if they are set up to run

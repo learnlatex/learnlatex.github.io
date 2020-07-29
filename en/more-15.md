@@ -5,12 +5,11 @@ title: "More on: Dealing with errors"
 ## Errors reported at ends of environments
 
 Some environments (notably `amsmath` alignments and `tabularx` tables)
-scan the whole envionment body before processing the content. This means that
+scan the whole environment body before processing the content. This means that
 any error within the environment is reported on the last line. However, as seen in the
 main lesson, TeX's display of the error context should still pinpoint the error location.
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
 \usepackage{amsmath}
@@ -19,13 +18,12 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 
 \begin{align}
 \alpha &= \frac{1}{2}\\
-\beta  &= <span style="color:red">\frak</span>{2}{3}\\
+\beta  &= \frak{2}{3}\\
 \gamma &= \frac{3}{4} 
 \end{align}
 
 \end{document}
-</pre>
-</div>
+```
 
 Here the error will be reported on line 11
 
@@ -57,17 +55,15 @@ So do not be too concerned about the _number_ of errors reported and
 always concentrate on fixing the first reported error.
 
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
 \begin{document}
-Text<span style="color:red">_</span>word  $\alpha + \beta$.
+Text_word  $\alpha + \beta$.
 
 More text.
 \end{document}
-</pre>
-</div>
+```
 
 The error here is the underscore `_` which should be entered as `\_`.
 
@@ -107,17 +103,15 @@ do not generate an error prompt but just give a warning in the log.
 If you try this example using the LaTeX CGI server it will return a PDF by default;
 to see the error message in the log add `%!TeX log`.
 
-<div class="highlight">
-<pre>
+```latex
 \documentclass{article}
 
 \begin{document}
 
- Text {\large some large text<span style="color:red">)</span>  normal size?
+ Text {\large some large text) normal size?
 
 \end{document}
-</pre>
-</div>
+```
 
 In this example the size change was mistakenly ended with `)` rather
 than `}`. This is not detected until the end of the file when TeX
@@ -132,3 +126,11 @@ error as the `)` is seen as "normal text".
 ```
 {: .noedit :}
 
+
+<script>
+  window.addEventListener('load', function(){
+      if(editors['pre0'] != null) editors['pre0'].moveCursorTo(8, 15, false);
+      if(editors['pre3'] != null) editors['pre3'].moveCursorTo(3, 5, false);
+      if(editors['pre6'] != null) editors['pre6'].moveCursorTo(4, 30, false);
+  }, false);
+</script>

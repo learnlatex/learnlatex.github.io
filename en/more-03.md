@@ -21,7 +21,7 @@ or
 `pdflatex first.tex`
 
 to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with`.tex` unless you specify otherwise.
+assume files end with `.tex` unless you specify otherwise.
 
 ## Special characters
 
