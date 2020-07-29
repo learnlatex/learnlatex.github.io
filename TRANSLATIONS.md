@@ -28,7 +28,9 @@ ISO 639-1 two letter language code for your language, which we shall assume is `
 
 1. Make a new directory `zz` as a copy of the english pages in `en`, including the subdirectory `en/includes`
 2. Copy top level `index.md` into the `zz` directory and change references to `en` to `zz`.
+   **Delete** the `zz/index.html` which would force a redirect to the English home page.
    (See the examples for existing languages, such as `de`).
+
 3. Add the two letter code `zz` to the `langs:` array in the `_config.yml` file.
 4. Translate the fixed strings in the files in `zz/includes` into your language.
    This is for site navigation such as "next lesson" and
