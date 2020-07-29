@@ -197,7 +197,7 @@ some differences between the two approaches that may help you choose which
 one works best for you.
 
 In the BibTeX workflow the bibliography style is ultimately decided
-by a `.bst` file, whose name you give with `\bibliographystyle` command.
+by a `.bst` file which you select with the `\bibliographystyle` command.
 `biblatex` does not use `.bst` files and uses a different system.
 If you are using a template that comes with a `.bst` file or are given a `.bst`
 file for your project, you must use the BibTeX workflow and cannot use
@@ -220,12 +220,12 @@ BibTeX can only sort US-ASCII characters correctly and relies on workarounds
 to provide US-ASCII-based sorting for non-US-ASCII characters.
 With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
 is usually a better choice if you want to sort your bibliography in a
-non-ASCII/English order.
+non-ASCII/non-English order.
 
 Having been around for much longer than `biblatex`, the BibTeX workflow is
 more established than `biblatex`, meaning that many publishers and journals
 expect bibliographies generated via the BibTeX workflow. Those publishers
-cannot or generally do not accept submmissions using `biblatex`.
+cannot or generally do not accept submissions using `biblatex`.
 
 The bottom line is: Check the author/submission guidelines if you are
 submitting to a journal or publisher. If you are given a `.bst` file, you must
