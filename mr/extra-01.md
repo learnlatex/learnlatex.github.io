@@ -67,6 +67,7 @@ Position after 2.\,\xskakget{lan}
 
 
 ```latex
+%!TeX xelatex
 \documentclass{memoir}
 \usepackage{marathi}
 
@@ -97,6 +98,7 @@ Position after 2.\,\xskakget{lan}
 
 <!-- {% raw %} -->
 ```latex
+%!TeX xelatex
 \documentclass{article}
 \usepackage{marathi}
 \usepackage{tikz}
