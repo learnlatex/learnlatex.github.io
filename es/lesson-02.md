@@ -35,7 +35,7 @@ editados con cualquier editor de texto. Sin embargo, es más conveniente utiliza
 un editor de texto concebido para trabajar con LaTeX, ya que le dispondrá de funcionalidades
 útiles como compilar sus ficheros, visualizador de PDF, y resaltado de sintaxis. Una
 funcionalidad verdaderamente útil en los editores de textos modernos es SyncTex: poder
-hacer clic en su código e ir directamente a su PDF, o volver al código.   
+hacer clic en su código e ir a la posición correspondiente en el PDF y viceversa.   
 
 Existen muchos editores de LaTeX que podemos esperar encontrar en esta lista: 
 [lista exhaustiva en StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
@@ -48,33 +48,14 @@ sistema TeX, de forma que el editor "localice" el sistema TeX y lo configure aut
 
 ## Trabajando en línea
 
-There are several powerful online sites nowadays that allow you to avoid
-the need to install a TeX system and LaTeX editor at all. These websites
-work by letting you edit your files in the webpage, then they run LaTeX
-behind the scenes, and display the PDF that is produced.
-
 Hoy en día existen potentes sitios web que le permiten evitar la
 instalación de un sistema TeX y de un editor de LaTeX. Estos sitios web
 funcionan permitiéndole editar el fichero directamente en la página web, y 
 ejecutan LaTeX en segundo plano, para el mostrándole el resultado en PDF.
 
-Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focused on letting you see the LaTeX code and
-so are closer to having a local installation.
-
 Algunos de estos sitios web combinan LaTeX con otras funcionalidades similares a las
 de un procesador de textos, mientras que otros se focalizan en la visualización del 
 código LaTeX y se asemejan a tener una instalación local de LaTeX. 
-
-There are systems that let you run LaTeX without needing to be logged in, and we
-are using one of those,
-[LaTeX CGI](https://latexcgi.xyz), to let you
-edit and test the examples we give. For more complete work, the best online
-systems require that you register before you use them. That lets you save your
-work but also helps the sites not get overloaded. We have set up links so you
-can edit our examples using [Overleaf](https://www.overleaf.com), one of the
-major websites for LaTeX online. There are of course others:
-[Papeeria](https://papeeria.com/) is an example.
 
 Hay sistemas que le permiten ejecutar LaTeX sin necesidad de registrarse, y nosotros
 vamos a usar uno de ellos, 
