@@ -8,8 +8,8 @@ LaTeX se tiene texto sin formato y con marcadores o etiquetas. Estas etiquetas
 dan información a LaTeX sobre el significado lógico de los elementos del texto,
 tal y como ocurre en HTML.
 
-Pongamos como ejemplo el elemento "<h2>" que inica una nueva sección en un documento
-HTML. LaTeX tiene también también un comando para ello; podría usarse el comando "\section". 
+Pongamos como ejemplo el elemento `<h2>` que inica una nueva sección en un documento
+HTML. LaTeX tiene también también un comando para ello; podría usarse el comando `\section`. 
 
 ## El proceso de trabajo de {{ site.latex }}
 
@@ -17,7 +17,7 @@ Como los ficheros de LaTeX no son el propio documento final, sino más bien las
 instrucciones sobre lo que parte debe ser, no se suele enviar a los demás el 
 fichero LaTeX en sí mismo. En su lugar, después de escribir el fichero _fuente_ 
 en LaTeX, se debe ejecutar LaTeX sobre el fichero (normalmente usando un programa
-llamado "pdflatex") para generar el fichero PDF. Será este PDF el que enviará.
+llamado `pdflatex`) para generar el fichero PDF. Será este PDF el que enviará.
 
 La gente utiliza diferentes formas de describir este proceso. Como usar LaTeX es casi
 como programar, a este proceso se le llama a menudo 'compilar' el documento, aunque 
