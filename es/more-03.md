@@ -2,46 +2,45 @@
 title: "Más sobre: Su primer documento en LaTeX"
 ---
 
-## Running LaTeX
+## Ejecutando LaTeX
 
-As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
-this, try opening your first document in a simple text editor, for example
-on Windows using Notepad. You should see the same text as in a dedicated LaTeX
-editor, but without any highlight of keywords.
+Como [comentamos anteriormente](lesson-02), Los documentos de LaTeX contienen texto 
+sin formato. Para verlo, intente abrir su primer documento en un simple editor de texto, 
+por ejemplo usando Notepad en Windows. Debería ver el mismo texto que ve en un editor
+de LaTeX, pero sin el color y el resalte de las palabras.
 
-You can also convert to PDF without your editor; this means using the Command
-Prompt/Terminal, so don't worry if you are not familiar with this. If you
-*are*, you can navigate to the directory containing your `.tex` source file and
-run
+Puede también convertilo en PDF con su editor; para ello debe usar la Línea/Terminal
+de Comandos, lo sentimos si no está familiarizado con ella. Cuando usted *se encuentre* 
+en ella, vaya hasta el directorio que contenga su fichero fuente `.tex` y ejecute    
 
 `pdflatex first`
 
-or
+o
 
 `pdflatex first.tex`
 
-to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with `.tex` unless you specify otherwise.
+para obtener su PDF. Note que la extension `.tex` es opcional: LaTeX asumirá que los
+ficheros terminan con `.tex` a menos que especifique otra extensión.
+ 
+## Caracteres especiales
 
-## Special characters
+Si necesita escribir un carácter especial, la mayor parte del tiempo podrá hacerlo
+utilizando simplemente una barra inversa delante de él. Así, por ejemplo `\{` se usa
+para obtener un `{`. Hay unos pocos casos en los que tendrá que utilizar, en su lugar, un comando más largo.
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need to use a longer command instead:
+| Símbolo | Comado corto (matemáticas y texto) | Comando largo (sólo para texto) |
+| `{`     | `\{`          | `\textbraceleft`  |
+| `}`     | `\}`          | `\textbraceright` |
+| `$`     | `\$`          | `\textdollar`     |
+| `%`     | `\%`          |                   |
+| `&`     | `\&`          |                   |
+| `#`     | `\#`          |                   |
+| `_`     | `\_`          | `\textunderscore` |
+| ``\``   |               | `\textbackslash`  |
+| `^`     |               | `\textasciicircum`|
+| `~`     |               | `\textasciitilde` |
 
-| Symbol | Short Command (math and text) | Long Command (for text only) |
-| `{`    | `\{`          | `\textbraceleft`  |
-| `}`    | `\}`          | `\textbraceright` |
-| `$`    | `\$`          | `\textdollar`     |
-| `%`    | `\%`          |                   |
-| `&`    | `\&`          |                   |
-| `#`    | `\#`          |                   |
-| `_`    | `\_`          | `\textunderscore` |
-| ``\``  |               | `\textbackslash`  |
-| `^`    |               | `\textasciicircum`|
-| `~`    |               | `\textasciitilde` |
-
-For the last three symbols there are no short commands available,
-because `\\` is used to indicate a linebreak and `\~` and `\^` are used
-to produce tilde and circumflex accents when using only ASCII
-characters as input.
+Para los tres últimos símbolos no existe ningún comando corto disponible,
+ya que `\\` se usa como un indicador de un retorno de línea y `\~` y `\^` se usan
+para obtener la tilde de la eñe o el acento circunflejo cuando se usan sólo los caracteres
+de código ASCII como entrada.
