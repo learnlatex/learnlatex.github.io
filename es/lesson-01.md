@@ -2,7 +2,7 @@
 title: "¿Qué es LaTeX y cómo funciona?"
 ---
 
-A diferencia de los procesadores de texto de uso común como Microsoft Word o LibreOffice Writer, LaTeX no es WYSIWYG (siglas inglesas de 'Lo Que Ves Es Lo Que Obtienes'). Con
+A diferencia de los procesadores de texto de uso común como Microsoft Word o LibreOffice Writer, LaTeX no es WYSIWYG (siglas inglesas de "Lo Que Ves Es Lo Que Obtienes"). Con
 LaTeX se tiene texto sin formato y con marcadores o etiquetas. Estas etiquetas dan información a LaTeX sobre el significado lógico de los elementos del texto, similar a HTML.
 
 Pongamos como ejemplo el elemento `<h2>` que indica una nueva sección en un documento HTML. LaTeX tiene también un comando para ello: `\section`. 
@@ -11,7 +11,7 @@ Pongamos como ejemplo el elemento `<h2>` que indica una nueva sección en un doc
 
 Como los archivos de LaTeX no son el documento final sino más bien instrucciones sobre qué debe ser cada parte del documento, no se suele enviar a los demás el código LaTeX. En su lugar, después de escribir el _código fuente_ en LaTeX, se debe ejecutar LaTeX sobre el fichero (normalmente usando un programa llamado `pdflatex`) para generar el archivo PDF. Este PDF será el que enviará al resto.
 
-La gente utiliza diferentes formas de describir este proceso. Como usar LaTeX es casi como programar, a este proceso se le llama 'compilar' el documento, aunque el término "composición tipográfica" es más preciso.
+La gente utiliza diferentes formas de describir este proceso. Como usar LaTeX es casi como programar, a este proceso se le llama "compilar" el documento, aunque el término "composición tipográfica" es más preciso.
 
 ## Múltiples ejecuciones de {{ site.latex }}
 
