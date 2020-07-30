@@ -31,7 +31,7 @@
   }
       {% else %}
   function switchlang(e) {
-      window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l])\//,'/'+e.value+'/').replace(/\/language-.*/,'');
+      window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l](-[a-zA-Z]+)?)\//,'/'+e.value+'/').replace(/\/language-.*/,'');
   }
       {% endif %}
       
