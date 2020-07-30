@@ -11,13 +11,13 @@ de textos, y al no serlo no es solo un programa. Nuestro odjetivo es ayudarle a
 dar sus primeros pasos sin intentar mostrarle _todo_ de una sola vez.  
 
 Para ello, hemos seleccionado 16 de los temas más importantes que necesitará 
-conocer, y los hemos convertido en pequeñas 'lecciones'. Cada lección es muy 
+conocer, y los hemos convertido en pequeñas "lecciones". Cada lección es muy 
 específica, con lo que no debería llevarle mucho tiempo. En cada lección, damos 
 ejemplos de lo que podría escribir, y estos ejemplos puede probarlos en línea.
 
 Sabemos que la gente querrá aprender más de lo que abarcan las 16 leccionnes
 cortas. Para guiarle cuando necesite más información, hemos añadido
-una sección 'ir más allá' en cada lección. 
+una sección "ir más allá" en cada lección. 
 
 ## Cómo funcionan los ejemplos
 
