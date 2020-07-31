@@ -2,37 +2,37 @@
 title: "Estructura lógica de un documento"
 ---
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
+LaTex proporciona herramientas para concentrarse en la estructura lógica de su documento, y también
+la capacidad de configurar directamente la apariencia del mismo. La mayor parte del tiempo, es mejor usar
+métodos que se centren en la estructura, esto hace más fácil la reutilización o la modificación 
+de la apariencia del documento cuando lo necesite.
 
-## A first example
+## Un primer ejemplo
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasised.)
+Empezaremos con un ejemplo que compara uno de los comandos de marcado lógico 
+más comunes en LaTeX, `\emph`, con simplemente poner algo en cursiva. (En la impresión,
+ésta es la forma más usual de resaltar un texto.)  
 
 ```latex
 \documentclass{article}
 \begin{document}
-Some text with \emph{emphasis and \emph{nested} content}.
+Texto con \emph{énfasis y contenido \emph{anidado}}.
 
-Some text in \textit{italic and \textit{nested} content}.
+Texto en \textit{cursiva y contenido \textit{anidado}}.
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+Probablemente haya adivinado que `\textit` es un comando que pone un texto en cursiva, pero
+_siempre_ pondrá el texto en cursiva, con lo que no funcionará con un texto anidado. Vea como
+`\emph` _se comporta_ cuando está anidado. Hay también lugares en los que poner en énfasis
+no es lo mismo que poner en cursiva el texto; por ejemplo, en las presentaciones, el uso del color es
+normalmente una mejor opción. Con el marcador lógico, no deberá preocuparse de este detalle en el 
+cuerpo del documeto.
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+Abordaremos [la edición manual del estilo del texto más adelante](lesson-11), pero de momento
+añadamos `\textbf` a los comandos que conocemos: este comando pone el texto en negrita.
 
-## Sectioning commands
+## Seleccionado comandos
 
 You probably have used a word processor, where  to start a section most people
 enter the title text then simply make it bigger and bold, and follow it with a
@@ -41,86 +41,95 @@ formatting by hand; we can use the `\section` command. This handles the font
 changes, vertical space, etc., and keeps the output uniform throughout the
 document.
 
+Probablemente usted ya haya usado un procesador de texto, en el que para comenzar 
+una sección la mayor parte de la gente escribe el título de la sección, luego simplemente 
+aumenta el tamaño del texto y lo pone en negrita, para a continuación añadir una nueva
+línea. En LaTeX, el uso de marcadores lógicos es en realidad _más fácil_ que editar el
+estilo del texto manualmente; podemos usar el comando `\section`. Este comando se encarga de 
+los cambios de fuente, del espaciado vertical, etc., y mantiene la apariencia uniforme a lo 
+largo del documento. 
+
 ```latex
 \documentclass{article}
 \begin{document}
-Hey world!
+¡Hey mundo!
 
-This is a first document.
+Éste es un primer documento.
 
-\section{Title of the first section}
+\section{Título de la primera sección}
 
-Text of material in the first section
+Texto del contenido de la primera sección
 
-Second paragraph.
+Segundo párrafo.
 
-\subsection{Subsection of the first section}
+\subsection{Subsección de la primera sección}
 
-Text of material in the subsection.
+Texto del contenido de la subsección.
 
 \section{Second section}
 
-Text of the second section.
+Texto de la segunda sección.
 
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+Al usar el tipo de documento estándar `article`, LaTeX numerará las secciones y subsecciones
+y pondrá los títulos en negrita. Veremos algunas pistas sobre cómo cambiar este diseño [en la
+siguiente lección](lesson-05).
 
-LaTeX can divide up documents into quite a few levels
+LaTeX puede estructurar el documento en bastantes niveles:
 
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
+- `\chapter` (pero para poder utilizarlo debemos tener `\documentclass{book}` o
+ `documentclass{report}`)
 - `\section`
 - `\subsection`
 - `\subsubsection`
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+Podemos ir más lejos: el siguiente es `\paragraph`, pero casi siempre esto será ir
+demasiado "lejos" en una sección. (Sí, `\paragraph` es un comando de sección, ¡_no_
+una forma de comenzar un nuevo párrafo!)
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+Puede que se pregunte sobre el título del documento. Hay varios comandos especiales
+para ello, pero no todos los documentos los usan, así que 
+[lo abordaremos en la lección extra](more-04).
 
-## Lists
+## Listas
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+La otra situación muy común en la que querrá utilizar marcadores lógicos es en la escritura 
+de una lista. 
 
 ```latex
 \documentclass{article}
 \begin{document}
 
-Ordered
+Numerada
 \begin{enumerate}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item Una entrada
+  \item Otra
+  \item ¡Guau! Tres entradas 
 \end{enumerate}
 
-Unordered
+No enumerada
 \begin{itemize}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item Una entrada
+  \item Otra
+  \item ¡Guau! Tres entradas
 \end{itemize}
 
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+Remarque el uso de `\item` para iniciar cada entrada de la lista, y el hecho de que
+el símbolo o número utilizado por cada lista se añada automáticamente.
 
-## Exercises
+## Ejercicios
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+Experimente usando las diferentes secciones. Intente usar '\documentclass{report}`
+en lugar de `\documentclass{article}` y añada el comando `\chapter`. ¿Cómo se
+presenta el documento? Intente usar el comando `\paragraph` e (incluso) el commando 
+`\subparagraph` para ver cómo funcionan, estos comandos _no_ añaden ninguna numeración.
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+Cree algunas listas, y anide una lista en el interior de otra. ¿Cómo afecta esto al
+formato de los números o símbolos? Sólo podrá llegar hasta cuatro niveles de anidamiento
+con LaTeX standard, pero necesitar más de cuatro listas anidadas ¡tiende a ser una mala
+señal, de todas formas! 
