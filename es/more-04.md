@@ -4,9 +4,6 @@ title: "Más sobre: Estructura lógica de un documento"
 
 ## Título de un documento
 
-LaTeX offers some logical markup for the title of documents: three commands
-to set up 'meta-data' and one to use it.
-
 LaTeX ofrece varios marcadores lógicos para definir los títulos de los documentos: 
 hay tres comandos para definir los "metadatos" y uno para usarlos.
 
