@@ -1,3 +1,7 @@
+---
+title: CHANGELOG
+permalink: /CHANGELOG
+---
 # Changelog
 
 All notable changes to learnlatex.org will be documented in this

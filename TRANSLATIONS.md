@@ -1,5 +1,6 @@
 ---
 title: Translating learnlatex.org
+permalink: /TRANSLATIONS
 ---
 
 ## Translating learnlatex.org

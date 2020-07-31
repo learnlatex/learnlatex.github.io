@@ -1,5 +1,6 @@
 ---
 title: CONTRIBUTING
+permalink: /CONTRIBUTING
 ---
 
 # Contributing to learnlatex.org
@@ -10,7 +11,7 @@ ideas are all useful.
 ## ChangeLog, commit messages and authors
 
 Please note any significant change to the content of questions in
-[`CHANGELOG.md`](CHANGELOG), including which lesson is changed in the
+[`CHANGELOG.md`](CHANGELOG.md), including which lesson is changed in the
 format `L-<number>`.
 
 Commit messages where the content of a single lesson is changed should start
@@ -19,7 +20,7 @@ separate commits: formatting, typos or other 'non-significant' changes can be
 made for multiple lessons in one go.
 
 If you are making a significant change to the content, please make sure you
-add yourself to the [contributors list](AUTHORS).
+add yourself to the [contributors list](AUTHORS.md).
 
 ## Formatting
 
@@ -79,4 +80,4 @@ The translation should be placed in a two-letter directory using the
 ISO 639-1 language code.  The yml `langs` array in `_config.yml` will
 need to be extended to include the language.
 
-See also the [specific guidelines for translators](TRANSLATIONS).
+See also the [specific guidelines for translators](TRANSLATIONS.md).
