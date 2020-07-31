@@ -2,60 +2,65 @@
 title: "Más sobre: Estructura lógica de un documento"
 ---
 
-## Document titles
+## Título de un documento
 
 LaTeX offers some logical markup for the title of documents: three commands
 to set up 'meta-data' and one to use it.
 
+LaTeX ofrece varios marcadores lógicos para definir los títulos de los documentos: 
+hay tres comandos para definir los "metadatos" y uno para usarlos.
+
 ```latex
 \documentclass{article}
 \begin{document}
-\author{A.~N.~Other \and D.~Nobacon}
-\title{Some things I did}
-\date{1st April 2020}
+\author{A.~N.~Otro \and D.~Nobacon}
+\title{Algunas cosas que hice}
+\date{1 de abril de 2020}
 \maketitle
 
-Some normal text.
+Un poco de texto.
 \end{document}
 ```
 
-As you can see, the commands `\author`, `\title` and `\date` save information,
-and `\maketitle` uses it. You can also separate multiple authors with `\and`.
-The commands `\author`, `\title` and `\date` need to come before `\maketitle`.
-Here, we've given them in the document body: they can also be used in the
-preamble, but if you use `babel` shortcuts they won't be active there.
+Como puede ver, los comandos `\author`, `\title` y `\date' guardan información, 
+y `\maketitle` la usa. También puede separar varios autores con `\and`.
+Los comandos `\author`, `\title` y `\date` deber preceder a `\maketitle`.
+Aquí, los hemos puesto en el cuerpo del documento: pueden ser usados también en el
+preámbulo, pero si utiliza accesos rápidos de "babel" estos comados no estarán 
+activos en esta zona. 
 
-The design provided by `\maketitle` depends on the document class (see [lesson
-5](lesson-05)). There is a `titlepage` environment for when you want to do
-custom design, but this is out of the scope of this introduction.  If you want
-to do your own document designs you can either use a customisable class, such
-as `memoir`, or start with one of LaTeX's base classes, like `book` and use it
-as a starting point.
+El diseño propuesto por `\maketitle` dependerá del tipo de documento (ver [lección
+5](lesson-05)). Existe un entorno `titlepage` para cuando quiera personalizar su diseño, 
+pero esto está fuera de los objetivos de esta introducción. Si desea realizar diseños personales
+para su documento puede usar también un tipo de documento personalizable, como 
+`memoir`, o comenzar con uno de los tipos de documento de base en LaTeX, como `book`
+y usarlo como punto de partida.
 
-## Descriptive lists
-In addition to the "ordered" and "unordered" types of lists, LaTeX provides
-another one, less common: the "descriptive lists".
+## Listas descriptivas
+
+Además de las listas "numeradas" y "no numeradas", LaTeX proporciona otro tipo, 
+menos común: las "listas descriptivas"
 
 ```latex
 \documentclass{article}
 \begin{document}
 
 \begin{description}
-\item[Dog:] member of the genus Canis, which forms part of the wolf-like canids,
-  and is the most widely abundant terrestrial carnivore.
-\item[Cat:] domestic species of small carnivorous mammal. It is the only
-  domesticated species in the family Felidae and is often referred to as the
-  domestic cat to distinguish it from the wild members of the family.
+\item[Perro:] miembro del género Canis, el cual forma parte de los cánidos derivados del lobo
+ y es uno de los carnívoros terrestres más abundantes.
+\item[Gato:] especie doméstica de pequeños mamíferos carnívoros. Es la única especie
+domesticada de la familia de los félidos y es a menudo llamado gato doméstico, para diferenciarlo
+de los miembros salvajes de la familia.
 \end{description}
 
 \end{document}
 ```
 
-## Exercises
+## Ejercicios
 
-Try setting up different `\author`, `\title` and `\date` information to test
-out `\maketitle`. Which of them do you _have_ to give? Do the commands have to
-have an author, a title and a date in them?
+Pruebe a definir diferentes autores, títulos y fechas con `\author`, `\title` y `\date` 
+con el fin de probar el comando `\maketitle`. ¿Cuáles _tiene_ usted que definir? ¿Estos
+comandos tienen que tener un autor, un título o una fecha como parámetros?
 
-Make some descriptive lists, and nest some of them inside another ones (ordered,
-unordered or descriptive).
+Cree algunas listas descriptivas y anide algunas de ellas en el interior
+de otras (numerada, no numerada o descriptiva).
