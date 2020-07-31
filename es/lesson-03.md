@@ -16,7 +16,7 @@ LaTeX local; es una buena idea ver como funcionan las diferentes opciones.
 \documentclass{article}
 
 \begin{document}
-¡Hola mundo!
+¡Hey mundo!
 
 Éste es mi primer documento.
 \end{document}
