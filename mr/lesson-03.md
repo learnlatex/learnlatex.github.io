@@ -1,7 +1,9 @@
 ---
-title: "Your first LaTeX document"
+title: "पहिला लाटेक् दस्तऐवज"
 ---
 
+आपली पहिली लाटेक् धारिका अतिशय सोपी असणार आहे. हिच्यामागे कल्पना अशी आहे
+की लाटेक् 
 Our first LaTeX document is going to be very simple: the idea is to show you
 how a document looks and how to typeset it successfully. It is also your
 first chance to [see how to use the examples here on `learnlatex.org`](help).
