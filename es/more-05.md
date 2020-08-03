@@ -2,61 +2,60 @@
 title: "Más sobre: Usando los tipos de documento para cambiar el diseño"
 ---
 
-## Journal-specific classes
+## Tipos de documento específicos para revistas
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on CTAN and in standard TeX distributions.
+Muchas revistas académicas proporcionan tipos de documentos de LaTeX
+para los envíos. Éstos configuran el diseño para se asemeje al de la 
+revista final, aunque esto depende del tipo de letra usado, etc. Si hay
+un tipo de documento disponible, éste será proporcionado por la oficina
+editorial, que le dará todos los detalles de las funciones disponibles.
+Muchos de ellos están también disponibles en CTAN y en las distribuciones
+estándar de TeX.
 
-## Classes for presentations
+## Tipos de documento para presentaciones de diapositivas
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+Un tema que necesita un tratamiento especial es el de la creación de diapositivas. El tipo de
+documento `slides` fue desarrollado par crear las "clásicas" diapositivas a imprimir, y no tiene 
+ningún soporte especial para las presentaciones digitales. Se han desarrollado dos clases sólo para ello
+y son ampliamente utilizadas: `beamer` y `powershot`. Como `beamer`es probablemente lás más
+común, le mostramos un ejemplo de cómo funciona:
 
 ```latex
 \documentclass{beamer}
 \begin{document}
 
-\begin{frame}{A first frame}
-  Some text
+\begin{frame}{Una primer marco}
+  Un poco de texto
 \end{frame}
 
-\begin{frame}{A second frame}
-  Different text
+\begin{frame}{Una segundo marco}
+  Un texto diferente
   \begin{itemize}
-    \item<1-> First item
-    \item<2-> Second item
+    \item<1-> Un primer elemento de la lista
+    \item<2-> Un segundo elemento
   \end{itemize}
 \end{frame}
 
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+Este ejemplo muestra dos ideas importantes. En primer lugar,`beamer` divide el documento
+en marcos, cada uno de las cuales puede disponer de más de una diapositiva (página). En segundo
+lugar, `beamer` añade al LaTex de base una sintáxis, que permite que diferentes partes del texto 
+aparezca "de forma progresiva". Esto es potente pero también más complicado de lo que podemos 
+explicar aquí: échele un vistazo al [artículo de este blog](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) para
+más información.
 
-## A class for images
+## Un tipo de documento para imágenes
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+Hay ocasiones en la que necesitará crear una imagen (que puede contener un texto denso)
+usando LaTeX. A menudo, es el único contenido que desea tener una la "página". Hacer esto
+es sencillísimo haciendo uso del tipo de documento [`standalone`](https://ctan.org/pkg/standalone).
+Configura automáticamente el tamaño de la página para enmarcar el contenido a imprimir.
 
 ```latex
 \documentclass{standalone}
 \begin{document}
-A simple document: this will be a very small box!
+Un simple documento: ¡esto será un marco muy pequeño!
 \end{document}
 ```
