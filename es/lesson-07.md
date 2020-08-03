@@ -1,44 +1,44 @@
 ---
-title: "Incluyendo gráficos y haciendo que las cosas 'floten'"
+title: "Incluyendo imágenes y haciendo que las cosas 'floten'"
 ---
 
-## Including graphics
+## Incluyendo imágenes
 
-To bring in graphics from outside LaTeX, use the `graphicx`
-package, which adds the command `\includegraphics` to LaTeX.
+Para importar imágenes en LaTeX, use el paquete `graphicx`, 
+que añade el comando `\includegraphics` a LaTeX.
 
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
 
 \begin{document}
-This picture
+Esta imagen
 \begin{center}
   \includegraphics[height=2cm]{example-image}
 \end{center}
-is an imported PDF.
+es un PDF importado.
 \end{document}
 ```
 
-You can include EPS, PNG, JPG, and PDF files.
-If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extension if you do not give one.)
+Puede insertar ficheros EPS, PNG, JPG y PDF.
+Si dispone de varias versiones de una misma imagen entonces puede escribir,
+por ejemplo, `exemple-image.png`. (El paquete `graphicx` tratará de adivinar 
+la extensión si usted no la da.)
 
-You'll notice we've used a new environment here, `center`, to place the image
-horizontally centered on the page. [A bit later](lesson-11), we'll talk more
-about spacing and positioning.
+Se habrá dado cuenta de que hemos usado aquí un nuevo entorno, `center` que centra
+la imagen horizontalmente en la página. [Un poco más adelante](lesson-11), hablaremos más 
+spbre el espaciado y el posicionamiento.
 
-## Altering graphic appearance
+## Cambiando la apariencia de la imagen
 
-The `\includegraphics` command has many options to control
-the size and shape of the included images and to trim down material. Some of
-these are used a lot, so they are worth being aware of.
+El comando `\includegraphics` dispone de muchas opciones para controlar
+el tamaño y la forma de las imágenes incluidas, pudiendo incluso recortarlas.
+Algunas de estas opciones son muy usadas, así que vamos a ocuparnos de ellas.
 
-The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` and
-`\textheight`. LaTeX will automatically scale the image so that the aspect
-ratio stays correct.
+La opción más obvia es la de definir la anchura `width` y la altura `height` de una
+imagen, las cuales se dan de forma relativa con respecto al ancho `\textwidth` y al 
+alto `\textheight` de la zona de texto. LaTeX ajustará la escala de la imagen automáticamente
+para la proporción de las dimensiones de la imagen sea la correcta.
 
 ```latex
 \documentclass{article}
@@ -48,15 +48,15 @@ ratio stays correct.
 \begin{center}
   \includegraphics[height = 0.5\textheight]{example-image}
 \end{center}
-Some text
+Un poco de texto.
 \begin{center}
   \includegraphics[width = 0.5\textwidth]{example-image}
 \end{center}
 \end{document}
 ```
 
-You can also `scale` images, or rotate them by an `angle`. The other thing you
-might want to do is to `clip` and `trim` an image.
+Puede también cambiar la escala `scale` de las imágenes o hacerlas rotar de un ángulo dado con `angle`.
+La otra cosa que querrá hacer es recortar una imagen con `clip` y `trim`.
 
 ```latex
 \documentclass{article}
@@ -69,60 +69,59 @@ might want to do is to `clip` and `trim` an image.
 \end{document}
 ```
 
-## Making images float
+## Haciendo que las imágenes floten
 
-Traditionally in typesetting, particularly with technical documents,
-graphics may move to another spot in the document.
-This is called a *float*. Images are normally included as floats so they do
-not leave large gaps in the page.
+En la composición tipográfica tradicional, y en particular en los documentos técnicos,
+las imágenes pueden moverse a otro lugar en el documento.
+A esto se le llama un *objeto flotante*. La imágenes se incluyen normalmente como objetos
+flotantes para evitar grandes espacios blancos en una página.
 
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummy text as filler
+\usepackage{lipsum}  % Produce un texto de relleno
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
+\lipsum[1-4] % Unos párrafos de relleno
 
-Test location.
+Localización de test.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image-a.png}
-  \caption{An example image}
+  \caption{Un ejemplo de imagen}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % Unos párrafos de relleno
 \end{document}
 ```
 
-Here LaTeX moves the graphic and the caption
-away from the `Test location` text to the top of the second page,
-because there isn't room for it on the bottom of the first page.
-The `ht` influences where LaTeX can place the float; these two
-letters mean that it can go where it is in the source (next to
-`Test location`) or to the top of a page. You can use up to four position
-specifiers
+En este ejemplo, LaTeX mueve la imagen y la leyenda de la imagen, desde la `Localización
+test` hasta la parte alta del segundo párrafo, ya que no hay espacio para ella al final de
+la página. La opción `ht` afecta a dónde LaTeX puede situar esta imagen flotante; estas
+dos letras significan que puede ir cerca de su posición inicial (cerca de `Localización test`)
+o en la parte alta de la página. Puede usar hasta cuatro especificadores de posición:
 
-- `h` 'Here' (if possible)
-- `t` Top of the page
-- `b` Bottom of the page
-- `p` A dedicated page only for floats
+- `h` "Aquí" (si es posible)
+- `t` En la parte alta de la página
+- `b` En la parte baja de la página
+- `p` En una página dedicada exclusivamente a objetos flotantes
 
-[Later](lesson-09), we will see how to cross-reference floats so you can point
-to them from your text.
+[Más adelante](lesson-09), veremos como hacer referencias cruzadas a estos objetos flotantes
+de forma a poder citarlos en el texto.
 
-You'll probably spot that we've centered the image here using `\centering`
-rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally center content; this avoids both
-the float and `center` environment adding extra vertical space.
+Habrá notado que hemos centrado la imagen usando el comando `\centering` en lugar del
+entorno `center`. En el interior de un objeto flotante, debe usar `\centering` si quiere
+centrar horizontalmente el contenido; esto impide que tanto el objeto flotante como el 
+entorno `center` añadan un espacio vertical extra.
 
-## Exercises
+## Ejercicios
 
-Try including an image you have created, replacing the 'standard' ones we have
-used in the demonstration.
+Trate de insertar una imagen que usted haya creado, reemplace las imágenes "estándar"
+que hemos empleado en el ejemplo.
 
-Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+Explore lo que puede hacer usando como opción las palabras clave `height`, `width`, 
+`angle` y `scale`.
 
-Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different
-specifiers interact?
+Use el paquete `lipsum` para realizar un documento suficientemente largo, luego intente
+situar imágenes flotantes usando los diferentes especificadores de posición. ¿Cómo inteactúan
+los diferentes especificadores? 
