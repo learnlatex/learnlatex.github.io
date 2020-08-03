@@ -2,124 +2,125 @@
 title: "Usando los tipos de documento para cambiar el diseño"
 ---
 
-## What a document class does
+## Qué es un tipo de documento
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
+Puede que ya haya notado que todos los documentos de LaTeX que hemos creado
+han comenzado con la línea `\documentclass`, y que `\documentclass{article}`
+ha sido la elección más común. (Hemos necesitado usar `\documentclass{report}` en
+la [sección precedente](lesson-04) para utilizar el comando `\chapter`.) Esta línea
+debe estar presente en todo documento de LateX y es (casi) siempre, el primer comando
+que debe aparecer.
 
-The document class sets up the general layout of the document, for example
+El tipo de documento elegido configura la disposición y el diseño del documento, por ejemplo
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
+- configura: márgenes, fuentes, espaciado, etc.
+- si la sección capítulo está disponible,
+- si el título debe estar en una página aparte.
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+Los tipos de documento pueden también venir acompañados de nuevos comandos; esto es especialmente
+cierto en los tipos de documento específicos como el que permite la creación de transparencias
+de una presentación.
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+El comando de tipo de documento puede también configurar _opciones globales_: opciones
+que se aplican a todo el documento. Estas opciones se escriben entre corchetes:
+`\documentclss[<options>]{<name>}`. Esta sintáxis, con información opcional escrita
+entre corchetes, es usada en muchos comandos de LaTeX.
 
-## The base classes
+## Los tipos de documentos básicos 
 
-LaTeX is supplied with a set of standard classes, all of which look similar
-but with some variations:
+LaTeX dispone de una serie de tipos estandar, los cuales se asemejan pero
+presentan algunas variaciones:
 
-- `article`: short documents without chapters
-- `report`: longer documents with chapters, single-sided printing
-- `book`: longer documents with chapters, double-sided printing, with
-  front- and back-matter (for example an index)
-- `letter`: correspondence with no sections
-- `slides`: for presentations (but see below)
+- `article`: documentos cortos sin capítulos
+- `report`: documentos largos con capítulos, impresos a una sola cara.
+- `book`: documentos largos con capítulo, impresos a dos caras, con material
+inicial y final (como por ejemplo un índice de materias)
+- `letter`: cartas sin secciones
+- `slides`: para presentaciones (ver más abajo)  
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+Los tipos de documento `article`, `report` y `book` disponen de comandos muy similares,
+como ya hemos visto. Cuando escribimos una carta con `letter`, los comandos disponibles
+difieren un poco.
 
 ```latex
 \documentclass{letter}
 \begin{document}
 
-\begin{letter}{Some Address\\Some Street\\Some City}
+\begin{letter}{Una Dirección\\Una Calle\\Una Ciudad}
 
-\opening{Dear Sir or Madam,}
+\opening{Estimado(a) señor(a):}
 
-The text goes Here
+El contenido de la carta viene aquí
 
-\closing{Yours,}
+\closing{Atentamente,}
 
 \end{letter}
 
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialised commands.
+Vea como ``\\`` es usado para separar las lines de una dirección; abordaremos el
+salto de línea [un poco más tarde](lesson-11). Vea igualmente que el tipo de documento
+`letter` crea un nuevo entorno para cada carta y dispone comandos específicos.
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+Los tipos de documento estandar `article`, `report` y `book` aceptan las opciones `10pt`,
+`11pt` y `12pt` para cambiar el tamaño de la letra, y `twocolumn` para crear
+un documento con dos columnas. 
 
-## Function-rich classes
+## Tipos de documento enriquecidos
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
+Los tipos de documentos de base son muy estables, pero esto significa también que
+son bastante inmuables en cuanto a diseño y conjunto de comandos disponibles. A lo largo
+del tiempo, se han creado otros tipos de documento más potentes, que permiten cambiar
+el diseño del documento sin tener que hacer las cosas manualmente (cosa que abordaremos
+[un poco más tarde](lesson-11)).
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+La American Mathematical Society aporta variantes de los tipos de documento estándar
+(`amsart`, `amsbook`) con un diseño más tradicional similar al usado en las
+publicaciones de revistas de matemáticas.
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt` and `scrbook`, while there is a single
-`memoir` class that is most like an extension of `book`.
+Los dos tipos de documento más importantes y "extendidos" popularmente sont el 
+paquete KOMA-Script y el tipo memoir. KOMA-Script ofrece una serie de tipos de documento 
+con cierto paralelo a los estándar: `scrartcl`, `scrreprt` y `scrbook`, mientras que `memoir`
+es más bien una extensión de `book`. 
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-15), but you can always
-jump ahead!
+Estos tipos de documento extendidos disponen de una gran cantidad de herramientas de personalización,
+que exploraremos un poco en un ejercicio. Puede preguntarse cómo podemos saber cuáles son las
+herramientas de que disponen, abordaremos este tema [en una lección posterior](lesson-15), ¡pero
+usted siempre podrá adelantarse!
 
-## Presentations
+## Presentaciones
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+El tipo de documento `slides` fue desarrollado para hacer diapositivas físicas 
+a mediados de los 80, con lo que no dispone de funciones para crear presentaciones interactivas
+en PDF. Existen otros tipos de documento más modernos que pueden hacelo: son de alguna manera
+especialistas si los comparamos a los documentos generales de LaTeX, así que [los abordaremos en el
+apartado de más información](more-05).
 
-## Exercises
+## Ejercicios
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+Explore como el uso de los tipos de documento estándar, del paquete KOMA o del 
+tipo `memoir` afecta a la presentación del documento.
 
 ```latex
-\documentclass{article} % Change the class here
+\documentclass{article} % Cambie aquí el tipo de documento
 
 \begin{document}
 
 \section{Introduction}
 
-This is a sample document with some dummy
-text\footnote{and a footnote}. This paragraph is quite
-long as we might want to see the effect of making the
-document have two columns.
+Este es un documento de ejemplo con un texto 
+de prueba\footnote{y una nota a pie de página}. Este párrafo
+es un bastante largo ya que quizá queremos ver el efecto al pasar
+a un documento de dos columnas.
 
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
+Añada la opción `twocolumn` y vea como cambia la presentación del documento.
 
-Change the `\section` above for `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+Cambie el comando `\section` por `\chapter` y vea el resultado que producen las
+siguientes opciones al usar el tipo de documento `scrreprt`.
 
 - `chapterprefix`
 - `headings=small`
