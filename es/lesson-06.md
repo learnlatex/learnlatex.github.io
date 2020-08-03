@@ -2,103 +2,103 @@
 title: "Extendendiendo LaTeX usando paquetes"
 ---
 
-After having declared a class, in the preamble you can modify functionality in
-LaTeX by adding one or more *packages*. These can
+Después de haber definido el tipo de documento, en el preámbulo usted podrá modificar 
+las funcionalidades disponibles en LaTeX añadiendo uno o más *paquetes*. Éstos pueden:
 
-- Change how some parts of LaTeX work
-- Add new commands to LaTeX
-- Change document design
+- Cambiar el comportamiento de algunas partes de LaTeX
+- Añadir nuevos comandos en LaTeX
+- Cambiar el diseño de un documento
 
-## Changing how LaTeX works
+## Cambiando el comportamiento de LaTeX
 
-The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
-and so some add-on packages deal with very common ideas. The first is to
-change how LaTeX deals with language-specific typesetting (hyphenation,
-punctuation, quotations, localisation, etc.). Different languages have different
-rules, so it's important to tell LaTeX which one to use. This is handled by the
-`babel` package.
+El "kernel" de LaTeX (el núcleo de LaTeX) es bastante limitado en cuanto a personalización
+por parte del usuario y algunos paquetes adicionales tratan con ideas muy comunes. La primera
+es cambiar el como LaTeX trata la composición tipográfica específica de cada idioma (separación
+silábica, puntuación, símbolos, localización, etc.) Todos los idiomas tienen reglas diferentes, con lo
+que es importante decir a LaTeX cuál es el que debe usar. De este tema se encarga
+el paquete `babel`.
 
 ```latex
 \documentclass{article}
 
-%\usepackage[french]{babel}
+%\usepackage[spanish]{babel}
 
-\usepackage[width = 6cm]{geometry} % To force hyphenation here
+\usepackage[width = 6cm]{geometry} %Para forzar la separación silábica
 
 \begin{document}
 
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
+Esto es un texto de relleno para demostrar cómo LaTeX separa las sílabas de 
+las palabras, y para que sea capaz de darnos al menos una separación silábica.
+Esto es un texto de relleno para demostrar cómo LaTeX separa las sílabas de 
+las palabras, y para que sea capaz de darnos al menos una separación silábica.
 
 \end{document}
 ```
 
-Try un-commenting the (clearly misleading) line to load `babel` and see the
-effect. (The standard hyphenation rules are US English.)
+Pruebe de no comentar la (claramente engañosa) línea que carga el paquete `babel` y
+vea cuál se si efecto. (Las reglas de separación silábica estandar sont del inglés US.)
 
-The `babel` package does a lot more than hyphenation, depending on the language
-involved; we've given [some more details](more-06) if you need them.
+El paquete `babel` hace mucho más que separar sílabas, en función del idioma seleccionado;
+damos [más detalles aquí](more-06) si los necesita.
 
-## Changing design
+## Cambiando el diseño
 
-It's useful to be able to adjust some aspects of design independent of the
-document class. The most obvious one are the page margins. We've just used
-the `geometry` package in the example above, but let's now have an example
-specifically about margins.
+Es útil ser capaz de ajustar algunos aspectos del diseño independientemente del
+tipo de documento. El más obvio es la definición de los márgenes. Ya hemos 
+usado el paquete `geometry` en un ejemplo anterior, pero veamos un ejemplo
+específico sobre los márgenes.
 
 ```latex
 \documentclass{book}
 \usepackage[margin=1in]{geometry}
 
 \begin{document}
-Hey world!
+¡Hey mundo!
 
-This is a first document.
-
-
-% ================
-\chapter{Chapter One}
-Introduction to the first chapter.
-
-
-\section{Title of the first section}
-Text of material in the first section
-
-Second paragraph.
-
-\subsection{Subsection of the first section}
-
-Text of material in the subsection.
+Éste es un primer documento.
 
 
 % ================
-\section{Second section}
+\chapter{Capítulo Uno}
+Introducción al priñer capítulo.
 
-Text of the second section.
+
+\section{Título de la primera sección}
+Texto del tema de la primera sección
+
+Segundo párrafo.
+
+\subsection{Subsección de la primera sección}
+
+Texto del tema de la subsección.
+
+
+% ================
+\section{Segunda sección}
+
+Texto de la segunda sección.
 
 \end{document}
 ```
 
-You should see the effect here compared to not loading `geometry`.
+Debería fijarse aquí en el efecto que da el no cargar el paquete `geometry`.
 
-## Adding commands
+## Añadiendo comandos
 
-One of LaTeX's strengths is that you can choose from thousands of packages,
-including ones for writing mathematical text, for hyperlinking, for
-sophisticated capabilities with color, etc. We will see some more common
-packages in later lessons.
+Una de los puntos fuertes de LaTeX es que puede elegir entre miles de paquetes,
+incluyendo aquellos que permiten escribir texto matemático, hipervínculos, hacer uso de
+sofisticadas funciones relacionadas con el color, etc. Veremos algunos de las
+paquetes más comunes en las siguientes lecciones. 
 
-## Exercises
+## Ejercicios
 
-Try out writing some text in other European languages and see how `babel`
-affects hyphenation: you can probably find some text on the internet, and guess
-the right options.
+Pruebe a escribir un texto en otras lenguas europeas y veo como `babel` trata la
+separación silábica: podrá seguramente encontrar un texto en internet, y adivinar
+las opciones correctas.
 
-Try altering the margins in the `geometry` example. You can set the individual
-`top`, `bottom`, `left` and `right` margins separately using a comma-separated
-list.
+Pruebe a cambiar los márgenes del ejemplo del paquete `geometry`. Puede definir
+de forma separada los márgenes `top`, `bottom`, `left` y `right` usando una lista
+separada por comas.
 
-Try loading the `lipsum` package and then add the command `\lipsum` to your
-document. Can you guess why this package is useful for making examples?
+Pruebe a cargar el paquete `lipsum` y añada el comando `\lipsum` a su documento.
+¿Puede adivinar por qué razón este paquete resulta útil para los ejemplos?
