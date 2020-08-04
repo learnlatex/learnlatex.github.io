@@ -49,32 +49,31 @@ sistema TeX, de forma que el editor "localice" el sistema TeX y lo configure aut
 ## Trabajando en línea
 
 Hoy en día existen potentes sitios web que le permiten evitar la
-instalación de un sistema TeX y de un editor de LaTeX. Estos sitios web
-funcionan permitiéndole editar el fichero directamente en la página web, y 
-ejecutan LaTeX en segundo plano, para el mostrándole el resultado en PDF.
+instalación de un sistema TeX y de un editor de LaTeX. Estos sitios 
+funcionan permitiéndole editar el archivo directamente en la página web, luego 
+ejecutan LaTeX en segundo plano, y finalmente le muestran el resultado en PDF.
 
-Algunos de estos sitios web combinan LaTeX con otras funcionalidades similares a las
+Algunos de estos sitios combinan LaTeX con otras funcionalidades similares a las 
 de un procesador de textos, mientras que otros se focalizan en la visualización del 
 código LaTeX y se asemejan a tener una instalación local de LaTeX. 
 
 Hay sistemas que le permiten ejecutar LaTeX sin necesidad de registrarse, y nosotros
-vamos a usar uno de ellos, 
+vamos a usar uno de ellos: 
 [LaTeX CGI](https://latexcgi.xyz), que le permitirá
-editar y probar los ejemplos que le daremos. Para trabajos más complejos, los mejores
+editar y probar los ejemplos que le daremos. Para actividades más complejas, los mejores
 sistema en línea requieren que se registre antes de usarlos. Esto permite conservar
-su trabajo y también permite a los sition web de evitar estar sobrecargados. Hemos configurado
-unos enlaces que le permiten editar los ejemplos usando [Overleaf](https://www.overleaf.com), 
+su trabajo y también permite a los sitios web evitar estar sobrecargados. Hemos configurado
+algunos enlaces que le permiten editar los ejemplos usando [Overleaf](https://www.overleaf.com), 
 uno de los mejores sitios en línea de LaTeX. Hay otros, por supuesto:  
 [Papeeria](https://papeeria.com/) es uno de ellos.
 
 ## Ejercicio
 
 Realice la instalación local de LaTeX _o_ cree una cuenta en un servicio de 
-LaTeX en línea. Si utiliza una instación local, necesitará instalar también
-un editor: le recomendamos comenzar con TeXworks o TeX Shop (ver la lista 
-más arriba), y luego probar otros editores hasta que sepa con cual _usted_
+LaTeX en línea. Si utiliza una instación local, necesitará instalar 
+un editor; le recomendamos comenzar con TeXworks o TeX Shop (ver la lista 
+más arriba), y luego probar otros editores hasta que _usted_ sepa con cuál 
 trabaja mejor en LaTeX.
 
-Será posible [realizar todos nuestros ejercicios en su explorador](help), pero queremos 
-ayudarle a trabajar con documentos reales, con lo que ahora es el momento ideal
-para dejarlo todo preparado.
+Será posible [compilar todos nuestros ejercicios en su explorador](help), pero queremos 
+ayudarle a trabajar con documentos reales, por lo que ahora es un buen momento para que se prepare.
