@@ -4,7 +4,7 @@ title: "Trabajando con LaTeX"
 
 A diferencia de muchos programas, LaTeX no es una simple aplicación que contiene
 "todo" en uno. En lugar de ello, tiene programas independientes que funcionan juntos.
-A estos programas, podemos dividirlos en dos cosas que usted necesitará:
+A estos programas podemos dividirlos en dos cosas que usted necesitará:
 
 - Un _systema TeX_
 - Un editor de texto (a menudo específico para LaTeX)
@@ -12,8 +12,8 @@ A estos programas, podemos dividirlos en dos cosas que usted necesitará:
 ## Distribuciones del sistema {{ site.tex }}
 
 Lo esencial para trabajar con LaTeX es disponer de un sistema TeX. Un sistema TeX es
-un conjunto de programas y ficheros "en segundo plano" necesarios al funcionamiento 
-de LaTeX, pero la mayor parte del tiempo no necesitará "ejecutarlos" directamente.   
+un conjunto de programas y archivos "en segundo plano" necesarios para que LaTeX
+funcione, pero la mayor parte del tiempo no necesitará "ejecutarlos" directamente.   
 
 Hay dos principales distribuciones del sistema TeX disponibles hoy en día,
 [MiKTeX](https://www.miktex.org) y [TeX Live](https://tug.org/texlive). Ambas
@@ -21,27 +21,27 @@ disponibles para Windows, macOs y Linux.
 MikTeX tiene un gran arraigo en Windows;
 en macOS, TeX Live está incluida en una colección más amplia llamada [MacTeX](http://www.tug.org/mactex/).
 [Cada distribución tiene sus ventajas](https://tex.stackexchange.com/questions/20036), y puede
-que quiera echar vistazo al [sitio web de LaTeX Project 
+que quiera echar un vistazo al [sitio web de LaTeX Project 
 para obtener más información](https://www.latex-project.org/get/).
 
-Al estar TeX Live disponible en todas las plataformas habituales, y presentar algunas
+Como TeX Live está disponible en todas las plataformas habituales, y presenta algunas
 ventajas en cuanto a rendimiento, le recomendamos que si no sabe qué distribución instalar,
 elija TeX Live.
 
 ## Editores
 
-Los ficheros de LaTeX son simplemente ficheros de texto sin formato, con lo que pueden ser 
-editados con cualquier editor de texto. Sin embargo, es más conveniente utilizar
+Los archivos de LaTeX son simplemente archivos de texto sin formato, con lo cual pueden ser 
+editados por cualquier editor de texto. Sin embargo, es más conveniente utilizar
 un editor de texto concebido para trabajar con LaTeX, ya que le dispondrá de funcionalidades
-útiles como compilar sus ficheros, visualizador de PDF, y resaltado de sintaxis. Una
-funcionalidad verdaderamente útil en los editores de textos modernos es SyncTex: poder
-hacer clic en su código e ir a la posición correspondiente en el PDF y viceversa.   
+útiles como compilar sus archivos, visualizar los PDF y resaltar la sintaxis. Una
+funcionalidad verdaderamente útil en los editores modernos de LaTeX es SyncTex: pulsar 
+en su código e ir a la posición correspondiente en el PDF y viceversa.   
 
-Existen muchos editores de LaTeX que podemos esperar encontrar en esta lista: 
-[lista exhaustiva en StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
+Existen muchos editores de LaTeX que podemos esperar encontrar aquí: 
+[hay una lista completa en StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
 Un editor básico, [TeXworks](https://tug.org/texworks), está incluido en las distribuciones
-TeX Live y MikTeX para Windows y Linux; y en macOS [TeXShop](https://pages.uoregon.edu/koch/texshop/)
-viene incluido en MacTeX.  
+TeX Live y MikTeX para Windows y Linux; y [TeXShop](https://pages.uoregon.edu/koch/texshop/)
+forma parte de MacTeX.  
 
 Sea cual sea el editor que elija, le recomentamos instalarlo _después_ de instalar el 
 sistema TeX, de forma que el editor "localice" el sistema TeX y lo configure automáticamente. 
