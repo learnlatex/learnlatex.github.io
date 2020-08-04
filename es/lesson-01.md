@@ -19,4 +19,4 @@ Para los documentos simples, sólo se necesitará compilar el código una vez pa
 
 ## {{ site.latex }} o pdf{{ site.latex }} o...
 
-En la [próxima lección](lesson-02), veremos que LaTeX no es un simple programa. Para no complicar las cosas, vamos a centrarnos en un programa particular de LaTeX, pdfLaTeX, que permite generar ficheros PDF. Más adelante en el curso veremos otros programas, y el por qué a usted le pude interesar usarlos.
+En la [próxima lección](lesson-02), veremos que LaTeX no es un simple programa. Para no complicar las cosas, vamos a centrarnos en un programa particular de LaTeX, pdfLaTeX, que permite generar ficheros PDF. Más adelante en el curso veremos otros programas, y el por qué a usted le puede interesar usarlos.
