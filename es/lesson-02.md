@@ -70,7 +70,7 @@ uno de los mejores sitios en línea de LaTeX. Hay otros, por supuesto:
 ## Ejercicio
 
 Realice la instalación local de LaTeX _o_ cree una cuenta en un servicio de 
-LaTeX en línea. Si utiliza una instación local, necesitará instalar 
+LaTeX en línea. Si utiliza una instalación local, necesitará instalar 
 un editor; le recomendamos comenzar con TeXworks o TeX Shop (ver la lista 
 más arriba), y luego probar otros editores hasta que _usted_ sepa con cuál 
 trabaja mejor en LaTeX.
