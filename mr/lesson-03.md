@@ -3,18 +3,16 @@ title: "पहिला लाटेक् दस्तऐवज"
 ---
 
 आपली पहिली लाटेक् धारिका अतिशय सोपी असणार आहे. हिच्यामागे कल्पना अशी आहे
-की लाटेक् 
-Our first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to [see how to use the examples here on `learnlatex.org`](help).
+की लाटेक् धारिका कशी असते व कशी कशी चालवली जाते ह्याचे प्रात्यक्षिक तुम्हाला दाखवावे.
+ह्या संकेतस्थळावरील उदाहरणे कशी चालवावीत हे जाणण्यासाठी [मदतीच्या पानाला](help)
+जरूर भेट द्या.
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
-If you are using the online system, you can just click on the ‘LaTeX Online’
-or ‘Open in Overleaf’ buttons in the
-example to try it out! We suggest you try out the online options even if you
-have set up LaTeX locally; this is a good chance to see how the different
-options work.
+जर संगणकावरील टेक्-वितरण वापरत असाल, तर तुमच्या संपादकामध्ये नवी धारिका उघडा,
+`.tex` ह्या प्रत्ययासह धारिकेस कोणतेही नाव द्या. तात्पुरते `xyz.tex` हे नाव आपण वापरू.
+त्यानंतर खालील मजकुराची नक्कल जशीच्या तशी तिथे टाका अथवा स्वतः हा मजकूर टंकलिखित
+करा. महाजालावरच लाटेक् वापरायचे असेल, तर 'लाटेक् ऑनलाईन' अथवा 'ओव्हरलीफमध्ये उघडा'
+ह्यांपैकी एक कळ दाबा.
+
 ```latex
 \documentclass{article}
 
@@ -24,33 +22,31 @@ Hey world!
 This is a first document.
 \end{document}
 ```
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+ही धारिका जतन करून एखाद्या चालकासह चालवा, त्यामुळे एक पीडीएफ् फलित तयार
+होईल. तुमच्या संगणकावरील टेक्-वितरणासह धारिका चालवत असाल, तर त्याकरिता
+असणारी कळ संपादकाप्रमाणे बदलत जाईल. फलित धारिकेत आपण वर लिहिलेला मजकूर
+**आणि** पृष्ठक्रमांक आपोआप येईल. लाटेक् हा क्रमांक आपोआप देते.
 
-View the output `first.pdf` with
-whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+तयार झालेले पीडीएफ् फलित तुमच्या पसंतीच्या पीडीएफ् दर्शकासह उघडून पाहा. अभिनंदन!
+तुमची पहिली लाटेक् धारिका यशस्वीरित्या चालली आहे.
 
-## Handling errors
+## अडचणी कशा सोडवाव्यात?
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+लाटेक् चालवताना अडचणी येण्याची शक्यता असते.
+तुमच्या बीजधारिकेतील मजकूर वर दिल्याप्रमाणेच लिहिला गेला आहे ह्याची खात्री करून घ्या.
+कधी कधी अतिशय लहानसहान चुकांमुळे फलितामध्ये खूप मोठे बदल घडून येतात. काही वेळा
+ह्या चुकांमुळे धारिका चालू न शकण्यापर्यंत गंभीर परिणाम होऊ शकतात. जर धारिका चालत
+नसेल, तर संपूर्ण आज्ञावली खोडून पुन्हा एकदा वर दिलेला मजकूर तिथे जसाच्या तसा प्रविष्ट
+करा व धारिका चालवून पाहा.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+जर लाटेक् चालवताना प्रश्नचिन्ह उपस्थित झाले, तर `x` व `<Enter>` ही कळ दाबल्यास तुम्ही
+प्रक्रियेतून बाहेर पडाल.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+लाटेक् अडचण दाखवताना काही संदेश देते. ते अनेकदा माहितीपूर्ण असतात, परंतु ते इतर मजकूर
+संपादकांप्रमाणे कार्य करत नाहीत. अनेकदा संपादकांमार्फत अडचणींमधील संपूर्ण निरोप लपवले जातात.
+लाटेक्-मार्फत धारिका चालवली गेल्यानंतर एका `.log` धारिकेची निर्मिती होते. `.log` प्रत्ययाची धारिका
+ही साधी मजकूररूपी धारिका असते. ह्या धारिकेत अडचणींचा संपूर्ण निरोप वाचता येतो. अनेकदा अडचण
+सोडवताना सहलाटेक्-वापरकर्त्यांकडून `.log` धारिकेची मागणी केली जाते.
 
 ## What you've got
 
