@@ -6,7 +6,7 @@ A diferencia de muchos programas, LaTeX no es una simple aplicación que contien
 "todo" en uno. En lugar de ello, tiene programas independientes que funcionan juntos.
 A estos programas podemos dividirlos en dos cosas que usted necesitará:
 
-- Un _systema TeX_
+- Un _sistema TeX_
 - Un editor de texto (a menudo específico para LaTeX)
 
 ## Distribuciones del sistema {{ site.tex }}
