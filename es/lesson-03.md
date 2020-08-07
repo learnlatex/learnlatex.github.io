@@ -55,68 +55,69 @@ expertos de LaTeX le pedirán a menudo este archivo de registro.
 
 El primer documento muestra lo básico.
 Los documentos LaTeX son una combinación de texto y comandos.
-Los comandos comienzan con una barra invertida y a veces tiene argumentos
+Los comandos comienzan con una barra invertida y a veces tienen argumentos
 entre llaves
 (o a veces tienen argumentos opcionales que se sitúan entre corchetes).
-Obtiene como salida el PDF diciendo a LaTeX que compile tu archivo.
+Obtiene como salida el PDF diciendo a LaTeX que compile su archivo.
 
 En todo documento LaTeX hay un `\begin{document}` y su correspondiente 
 `\end{document}`.
-Entre estos dos comandos se encuentra el _cuerpo del documento_, donde irá su contenido.
+Entre estos dos comandos se encuentra el _cuerpo del documento_ en donde irá su contenido.
 En el ejemplo, el cuerpo del documento contiene dos párrafos (en LaTeX se puede separar
 párrafos con una o más líneas en blanco).
 Antes de `\begin{document}` se encuentra el _preámbulo del documento_,
-que dispone del código para configurar el diseño de la página.
+que dispone del código para configurar el diseño del documento.
 
 En LaTeX hay otros bloques `\begin{...}` y `\end{...}`; a éstos se les llaman
 _entornos_.
 Siempre dbe verificar que cada `\begin{x}` tenga su correspondiente `\end{x}`.
-Si introduce uno en el interior de otro, debe tener un `\end{y} ... \end{x}` que
+Si los combina, debe tener un `\end{y} ... \end{x}` que
 corresponda a un `\begin{x} ... \begin{y}`, es decir cada `\begin` debe tener su `\end` 
 correspondiente, respetando el orden.
 
-Podemos añadir comentarios en el fichero LaTeX comenzándolos con `%`; usémoslo
-para mostrar la estructura del documento.
+Podemos añadir comentarios en el archivo LaTeX comenzándolos con `%`; usémoslo
+para mostrar la estructura del documento:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % El tipo de documento con las opciones
 % Un comentario en el preámbulo
 \begin{document}
 % Esto es un comentario
-Éste es un   un simple
-documento\footnote{con una nota a pie de página}.
+Éste es   un simple
+documento\footnote{con una nota al pie de página}.
 
 Esto es un nuevo párrafo.
 \end{document}
 ```
 
-Puede ver más arriba que hemos obtenido dos párrafos: dése cuenta del uso de una
-línea en blanco para conseguirlo. Note igualmente que los espacios múltiples se comportan
+Puede ver más arriba que hemos obtenido dos párrafos: observe el uso de una
+línea en blanco para conseguirlo. Además revise que los espacios múltiples se comportan
 como un espacio simple.
 
 Puede que algunas veces quiera un espacio "fuerte" que impida el retorno de línea: 
-en LaTeX podemos obtenerlo usando `~`, esto "mantiene" dos partes del texto juntas. Esto
+en LaTeX podemos obtenerlo usando `~`, que "mantiene" dos partes del texto juntas. Esto
 es particularmente útil cuando empecemos a crear referencias cruzadas más adelante en este curso. 
 
 ## Caracteres especiales
 
-Seguramente ya ha notado que ``\``, `{` y `}` tienen un significado especial para LaTeX.
-El signo ``\`` comienza una instrucción de LaTeX: un "comando". Los corchetes
+Seguramente ya ha notado que `\`, `{` y `}` tienen un significado especial para LaTeX.
+El signo `\` comienza una instrucción de LaTeX: un "comando". Los corchetes
 `{` y `}` se usan para mostrar _argumentos obligatorios_: información necesaria para
 los comandos. 
 
 Hay otros caracteres con significado especial; acabamos de ver, por ejemplo, que 
-`~` es un espacio "fuerte". Todos estos caracteres son _poco_ comunes en un texto
-normal, razón por la cual han sido elegidos como caracteres especiales, damos más
-[detalles en la página de más información de esta lección](more-03). 
+`~` es un espacio "fuerte". Todos estos caracteres son _muy_ poco comunes en un texto
+normal, razón por la cual han sido elegidos como caracteres especiales.
+Si necesita mostrar uno de estos caracteres especiales, 
+hemos incluido [información en la página de más detalles](more-03).
 
 ## Ejercicio
 
-Haga pruebas con el editor y el compilador en línea; haga clic en el 
-botón para compilar el contenido, y edítelo en la página web para volver a 
+Haga pruebas con el editor y el compilador en línea; pulse el 
+botón para compilar el código y edítelo en la página web para volver a 
 compilarlo.
 
 Intente añadir más texto a su primer documento, compílelo y vea los cambios en su
 PDF. Escriba diferentes párrafos y añada diferentes espaciados. Explore el funcionamiento
-de su editor; haga clic en el fichero fuente y busque cómo ir a la misma línea en 
-su PDF. Intente añadir espacios fuertes y vea como influyen en el retorno de línea.
+de su editor; haga clic en el archivo fuente y busque cómo ir a la misma línea en 
+su PDF. Intente añadir espacios fuertes y vea cómo influyen en el salto de línea.
