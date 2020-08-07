@@ -27,7 +27,7 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-no Windows or
+on Windows or
 
 ```
 bash: pdflatex: command not found
