@@ -1,35 +1,35 @@
 ---
-title: "Más sobre: Incluyendo gráficos y haciendo que las cosas 'floten'"
+title: "Más sobre: Incluyendo imágenes y haciendo que las cosas 'floten'"
 ---
 
-## Naming graphics files
+## Nombrando los ficheros de imágenes
 
-LaTeX works on many computer platforms so
-file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces.
-For example, if you want to organize your files by keeping all
-graphics in a subdirectory, then something like
-`\includegraphics[width=30pt]{pix/mom.png}`
-is portable and future-proof.
+LaTeX funciona en muchas plataformas así que merece 
+la pena habrar sobre los nombres de los ficheros.
+Lo más seguro es nombrar sus imágenes de la manera más simple, sin usar espacios.
+Por ejemplo, si desea organizar sus ficheros guardando todas sus
+imágenes en un subdirectorio, entonces algo del tipo 
+`\includegraphics[width=30pt]{pix/mom.png}` 
+es portable y a prueba de futuros cambios.  
 
-Spaces in file names are traditionally somewhat problematic, but are now
-generally supported. However, if you have spaces in the name, and you have
-issues, you may wish to try removing the spaces as the first step.
+Los espacios en los nombres de ficheros ha sido algo tradicionalmente problemático, pero 
+actualmente es en general posible. Sin embargo, si hay espacios en un nombre, y tiene
+problemas, usted debería intentar en primer lugar quitar los espacios.
 
-Accented character support is somewhat variable; there are issues with some
-systems, particularly on Windows. If you find issues with accented characters
-in file names, try using only ASCII characters for a test.
+La aceptación de caracteres acentuados es algo variable; existen problemas con
+algunos sistemas, en particular con Windows. Si encuentra problemas con nombres que
+tienen caracteres acentuados, pruebe a usar únicamente caracteres ASCII.
 
-## Storing graphics in a subdirectory
+## Guardando imágenes en un subdirectorio
 
-A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate parts of the path _even on Windows_.
+Una forma común de preparar ficheros fuente es la de poner todas las imágenes en un subdirectorio.
+Puede incluir entonces la dirección relativa de esas imágenes, como se ha mostrado más arriba; note que
+el carácter `/` se usa para separar las partes de una dirección _incluso en Windows_.
 
-If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs a braced entry
-for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have:
+Si tiene un gran número de imágenes, puede que quiera configurar de entrada 
+el subdirectorio. Esto puede hacerse usando `\graphicspath`, comando que necesita un
+argumento entre corchetes por cada subdirectorio. Por ejemplo, para incluir los subdirectorios
+`figs` y `pics`, debe escribir:
 
 <!-- {% raw %} -->
 ```latex
@@ -37,37 +37,36 @@ subdirectories, we would have:
 ```
 <!-- {% endraw %} -->
 
-Notice in particular the trailing `/` in these.
+Note en particular el uso de `/` para finalizar cada subdirectorio.
 
-## Producing graphics
+## Realizando imágenes
 
-As discussed, LaTeX easily uses graphics from most sources, including plots from
-scientific software. When you do that, you probably want to save as a PDF if you
-can, as this is a scalable format. If you do need to create a bitmap, aim for
-high resolution. You can make mouse-created graphics that include LaTeX snippets
-with [Inkscape](https://inkscape.org/). An alternative that in addition extends
-those drawing techniques to three dimensions is
-[Asymptote](https://www.ctan.org/pkg/asymptote). These two produce their output
-as files that you include in your document.
+Como hemos comentado, LaTeX usa fácilmente imágenes de muchas fuentes, inclyendo los
+gráficos de software científico. Cuando hace esto, usted problablemente gardarlas como un fichero PDF, 
+ya que es un formato escalable. Si necesita crear un fichero bitmap, para 
+obtener una alta resolución, puede realizar imágenes que incluyan fragmentos de LaTeX utilizando su ratón
+con el programa [Inkscape](https://inkscape.org). Una alternativa que permite además extender
+las técnicas de dibujo a imagénes en tres dimensiones es
+[Asymptote](https://www.ctan.org/pkg/asymptote). Estas dos opciones producen su propio
+fichero de salida que podrá incluir a posteriori en su documento. 
 
-You can also create graphics such as drawings that are especially suited to
-LaTeX, with very high precision as well as equations and labels that match your
-document. You can draw graphics directly inside your document, which is
-convenient although at the cost of more complex documents with larger
-requirements, by using [Ti*k*Z](https://ctan.org/pkg/pgf). An alternative is
+También puede crear imágenes como dibujos especialmente adaptados para
+LaTeX, con una muy precisión muy alta al igual que las ecuaciones y las etiquetas que se
+ajustan a su documento. Puede dibujar imágenes directamente en su documento, lo que
+es conveniente a pesar del coste de tener documentos más complejos que necesitan más recursos,
+usando [Ti*k*Z](https://ctan.org/pkg/pgf). Una alterativa es 
 [PSTricks](https://ctan.org/pkg/pstricks-base).
 
-## Placing floats
+## Situando objetos flotantes
 
-LaTeX's float placement is complex.
-The most common request is to have the figure placed
-in the output exactly where it lies in the input.
-The `float` package will do that.
+El posicionamiento de objetos flotantes en LaTeX es complejo.
+La demanda más común es la de colocar una figura en el fichero de
+salida justo en el mismo sitio en el que se encuentra en el fichero de entrada.
 
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}  % Texto de relleno
 \usepackage{float}
 
 \begin{document}
@@ -75,32 +74,31 @@ The `float` package will do that.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image}
-  \caption{An example image}
+  \caption{Una ejemplo de imagen}
 \end{figure}
 \lipsum[8-15]
 \end{document}
 ```
 
-Note the `H` option, which puts the figure 'absolutely Here'.
-However it is often not recommended to use `H`, because it may
-create large portions of white space in your document.
+Note el uso de la opción `H`, que coloca la figura "estrictamente Aquí" (Aquí, Here en inglés). 
+Sin embargo, a menudo no se desaconseja el uso de `H`, ya que puede dejar
+grandes espacios en blanco en su documento.
 
-## Other types of float
+## Otros tipos de objetos flotantes
 
-We will [see soon](lesson-08) that we can put tables in floats; they will go
-into a `table` environment. However, we don't _have_ to put graphics in the
-`figure` environment or tables in the `table` environment; this is just
-convention.
+[Veremos pronto](lección-08) que podemos poner tablas en objetos flotantes; irán 
+en el interior de un entorno `table`. Sin embargo, no _estamos_ obligados poner las imágenes 
+en el entorno `figure` o las tablas en el entorno `table`; esto es sólo una convención.
 
-You might want to have other types of floating environment; each type is
-inserted independently. You can do that using the
-[`trivfloat`](https://ctan.org/pkg/trivloat) package. This provides a single
-command, `\trivfloat`, to make new types of float.
+Puede que quiera disponer de otros entornos flotantes; cada tipo es incluido de forma
+independiente. Puede hacer esto usando el paquete
+[`trivfloat`](https://ctan.org/pkg/trivfloat). Este paquete dispone de un único 
+comando, `trivfloat`, que permite crear nuevos tipos de objetos flotantes.
 
 ```latex
 \documentclass{article}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}  % Texto de relleno
 \usepackage{trivfloat}
 \trivfloat{image}
 
@@ -108,7 +106,7 @@ command, `\trivfloat`, to make new types of float.
 \begin{image}
   \centering
   \includegraphics[width=0.5\textwidth]{example-image}
-  \caption{An example image}
+  \caption{Una imagen de ejemplo}
 \end{image}
 \end{document}
 ```
