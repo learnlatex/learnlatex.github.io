@@ -11,6 +11,7 @@ do modo matemático: linear (_inline_) e em exibição (_display_).
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Uma frase com matemática linear: $y = mx + c$.
 Uma segunda frase com matemática linear: $5^{2}=3^{2}+4^{2}$.
@@ -58,6 +59,7 @@ Podemos facilmente adicionar superscritos e subscritos; eles são marcados usand
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Superscritos $a^{b}$ e subscritos $a_{b}$.
 \end{document}
@@ -73,6 +75,7 @@ letra Grega:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Matemática: $y = 2 \sin \theta^{2}$.
 \end{document}
@@ -102,6 +105,7 @@ exemplo:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Um parágrafo sobre uma equação maior
 \[
@@ -125,6 +129,7 @@ environment. Let's try the same example again:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Um parágrafo sobre uma equação maior
 \begin{equation}
@@ -148,6 +153,7 @@ contém muito mais exemplos do que podemos mostrar nessa lição.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 
 \begin{document}
@@ -173,6 +179,7 @@ matrizes:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Matrizes AMS.
@@ -213,6 +220,7 @@ podemos escrever uma matriz como:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A matriz $\mathbf{M}$.
 \end{document}
@@ -230,6 +238,7 @@ definido no pacote `amsmath`) ou estilos específicos de fonte, como
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 

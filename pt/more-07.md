@@ -68,6 +68,7 @@ a figura colocada no PDF exatamente onde ela está no código fonte.  O pacote
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % texto de enchimento
 \usepackage{float}
@@ -101,6 +102,7 @@ inserido independentemente.  Você pode fazer isso usando o pacote
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % texto de enchimento
 \usepackage{trivfloat}

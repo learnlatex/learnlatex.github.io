@@ -12,6 +12,7 @@ trí khác, ta tạo tham chiếu đén vị trí đánh dấu này.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Hey world!

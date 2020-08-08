@@ -40,6 +40,7 @@ như TeX Live hay MiKTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \newcommand\mycommand{\textbold{hmmm}}
 
@@ -56,7 +57,7 @@ Tệp này tạo ra một thông báo lỗi như sau trong tệp log:
 ! Undefined control sequence.
 \mycommand ->\textbold 
                        {hmmm}
-l.7 My command is used here \mycommand
+l.8 My command is used here \mycommand
                                       .
 ? 
 ```
@@ -98,6 +99,7 @@ vì nó làm cho ta tưởng rằng `\mycommand` không được định nghĩa.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage[leqno}{amsmath}
 
@@ -120,7 +122,7 @@ Mặc dù thông báo lỗi không giúp ích được nhiều, hai dòng kế t
 vị trí của lỗi bằng việc sử dụng ký tự xuống dòng tại điểm lỗi:
 
 ```
-l.3 \usepackage[leqno}
+l.4 \usepackage[leqno}
                       {amsmath}
 ```
 {: .noedit :}
@@ -130,6 +132,7 @@ l.3 \usepackage[leqno}
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmathz}
 
@@ -153,6 +156,7 @@ tìm đang thật sự bị thiếu và cần phải được cài đặt đúng
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

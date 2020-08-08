@@ -10,6 +10,7 @@ các trường hợp &ndash; bạn nên để LaTeX xử lý chúng một cách 
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 One small paragraph, which we have filled out a little to make sure you can
 see the effect here!

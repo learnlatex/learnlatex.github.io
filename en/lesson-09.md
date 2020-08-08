@@ -11,6 +11,7 @@ in your document you have to label it, and then in other places, you refer to it
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Hey world!

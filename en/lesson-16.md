@@ -81,6 +81,7 @@ How do you construct a MWE? Normally easiest is to start from
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Text
 \end{document}

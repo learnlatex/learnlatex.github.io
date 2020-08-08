@@ -79,6 +79,7 @@ Como construir um MWE?  Normalmente o mais fácil é começar de:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Text
 \end{document}

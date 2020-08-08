@@ -43,6 +43,7 @@ thấy. Khi viết bằng `letter`, các câu lệnh có hơi khác một chút
 
 ```latex
 \documentclass{letter}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{letter}{Some Address\\Some Street\\Some City}
@@ -103,6 +104,7 @@ KOMA-script và `memoir` ảnh hưởng đến output như thế nào.
 
 ```latex
 \documentclass{article} % Thay đổi lớp văn bản ở đây
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

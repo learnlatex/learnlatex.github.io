@@ -66,6 +66,7 @@ Gói `float` có thể được dùng để làm việc đó.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage{float}
@@ -99,6 +100,7 @@ một cách độc lập. Ta có thể làm vậy bằng việc sử dụng gói
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage{trivfloat}

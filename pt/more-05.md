@@ -22,6 +22,7 @@ funciona:
 
 ```latex
 \documentclass{beamer}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{frame}{O primeiro quadro}
@@ -57,6 +58,7 @@ o tamanho da página para conter o conteúdo impresso:
 
 ```latex
 \documentclass{standalone}
+\usepackage[T1]{fontenc}
 \begin{document}
 Um documento simples:  esta será uma caixa bem pequena!
 \end{document}

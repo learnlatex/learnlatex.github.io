@@ -39,6 +39,7 @@ Um documento longo pode, então, ter essa aparência:
 <!-- pre0 {% raw %} -->
 ```latex
 \documentclass{book}
+\usepackage[T1]{fontenc}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
