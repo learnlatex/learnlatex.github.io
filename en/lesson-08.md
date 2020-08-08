@@ -67,6 +67,7 @@ source.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -86,6 +87,7 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -113,6 +115,7 @@ time. Compare the above outcome to the following:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -139,6 +142,7 @@ table of this lesson with the newly learned syntax:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -169,6 +173,7 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -196,6 +201,7 @@ column you need to specify that as a range (with both numbers matching).
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -222,6 +228,7 @@ with an optional argument enclosed in parentheses:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -253,6 +260,7 @@ case you can use `\addlinespace` to insert a small skip.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -292,6 +300,7 @@ single column type_.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -320,6 +329,7 @@ table's head row:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -346,6 +356,7 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 

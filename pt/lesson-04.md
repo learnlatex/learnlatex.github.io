@@ -15,6 +15,7 @@ texto em itálico (em impressões, geralmente é como texto é enfatizado).
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto com \emph{ênfase e com \emph{ênfase} aninhada}.
 
@@ -44,6 +45,7 @@ vertical, etc., e mantém o resultado uniforme ao longo do documento.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Olá mundo!
 
@@ -93,6 +95,7 @@ Há dois tipos comuns de listas por padrão no LaTeX:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 Ordenada:

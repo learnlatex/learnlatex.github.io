@@ -12,6 +12,7 @@ bài chính, TeX vẫn đánh dấu vị trí lỗi chính xác.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}
 
@@ -29,7 +30,7 @@ bài chính, TeX vẫn đánh dấu vị trí lỗi chính xác.
 Lỗi sẽ được thông báo tại dòng 11:
 
 ```
-l.11 \end{align}
+l.12 \end{align}
 ```
 {: .noedit :}
 
@@ -56,6 +57,7 @@ lỗi đầu tiên.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Text_word  $\alpha + \beta$.
@@ -72,7 +74,7 @@ TeX có phát hiện lỗi này một cách chính xác với thông báo lỗi 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.4 Text_
+l.5 Text_
          word  $\alpha + \beta$.
 ?
 ```
@@ -87,7 +89,7 @@ này cho ta thêm một lỗi nữa.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.4 Text_word  $\alpha
+l.5 Text_word  $\alpha
                        + \beta$.
 ? 
 ```
@@ -105,6 +107,7 @@ trong tệp log, hãy thêm `% !TEX log` vào đầu đoạn mã.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

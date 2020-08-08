@@ -20,6 +20,7 @@ cần dùng ngôn ngữ nào. Điều này được xử lý bởi gói `babel`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 %\usepackage[french]{babel}
 
@@ -52,6 +53,7 @@ một ví dụ dành riêng cho việc thay đổi kích thước lề.
 
 ```latex
 \documentclass{book}
+\usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
 
 \begin{document}

@@ -10,6 +10,7 @@ in the document preamble.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
 \begin{document}
 

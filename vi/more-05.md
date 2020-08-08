@@ -21,6 +21,7 @@ hoạt động của nó:
 
 ```latex
 \documentclass{beamer}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{frame}{A first frame}
@@ -56,6 +57,7 @@ trang giấy theo nội dung văn bản.
 
 ```latex
 \documentclass{standalone}
+\usepackage[T1]{fontenc}
 \begin{document}
 A simple document: this will be a very small box!
 \end{document}

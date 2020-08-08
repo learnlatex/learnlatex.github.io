@@ -65,6 +65,7 @@ trong LaTeX, nhưng nó giúp việc đọc mã nguồn dễ dàng hơn.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -84,6 +85,7 @@ Nếu một cột có nội dung dài bạn sẽ gặp một số vấn đề n�
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -110,6 +112,7 @@ sánh ví dụ trên với ví dụ dưới đây:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -136,6 +139,7 @@ này. Theo bảng trên, `*{6}{c}` tương đương với `cccccc`. Để cho th
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -167,6 +171,7 @@ bảng).
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -193,6 +198,7 @@ vẽ đường kẻ ngang cho một cột duy nhất bạn vẫn phải viết t
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -219,6 +225,7 @@ vẽ đường kẻ ngang cho một cột duy nhất bạn vẫn phải viết t
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -249,6 +256,7 @@ giữa hai hàng. Ta có thể dùng `\addlinespace` cho việc đó.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -286,6 +294,7 @@ _một_ ký tự kiểu cột duy nhất.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -311,6 +320,7 @@ riêng ô đó. Ví dụ sau dùng cách này để căn giữa hàng trên cùn
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -336,6 +346,7 @@ thật sự gộp các ô trong cột.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 

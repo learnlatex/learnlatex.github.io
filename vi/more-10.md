@@ -13,6 +13,7 @@ tên môi trường sẽ tắt chức năng đánh số các dòng.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 
 \begin{document}
@@ -39,6 +40,7 @@ thức được hiển thị trên một dòng, như trong ví dụ sau:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Aligned equations
@@ -55,6 +57,7 @@ nhỏ trong một công thức nào đó (hãy thử chúng để hiểu cách h
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Aligned:
@@ -77,6 +80,7 @@ căn chỉnh cả môi trường theo chiều dọc so với các thành phần 
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 \begin{itemize}
@@ -103,6 +107,7 @@ thẳng).
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 $(x+y)(x-y)=x^{2}-y^{2}$
@@ -123,6 +128,7 @@ phần của một công thức nào đó, ta có thể dùng lệnh `\bm` từ 
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{bm}
 
 \begin{document}
@@ -142,6 +148,7 @@ báo bảng để căn lề các ô trong ma trận.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{mathtools}
 
 \begin{document}

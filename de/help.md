@@ -8,6 +8,7 @@ das in einer Seite wie dieser gezeigt wird:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Example text.
 \end{document}

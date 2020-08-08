@@ -44,6 +44,7 @@ os comandos disponíveis são um pouco diferentes:
 
 ```latex
 \documentclass{letter}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{letter}{Um endereço\\Em uma rua\\de Alguma Cidade}
@@ -104,6 +105,7 @@ KOMA-Script, e `memoir` afeta a aparência do documento.
 
 ```latex
 \documentclass{article} % Mude a classe aqui
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

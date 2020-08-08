@@ -75,6 +75,7 @@ Hy Lạp, một số ký hiệu cùng một vài chữ cái tượng hình CJK.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 \newfontfamily\cjkfont{FandolSong-Regular.otf}

@@ -21,6 +21,7 @@ Cada exemplo consiste de um documento LaTeX completo mostrado na página assim:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto de exemplo.
 \end{document}

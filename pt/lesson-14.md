@@ -76,6 +76,7 @@ letras do alfabeto Latino e Grego, assim como alguns ideogramas chineses:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 \newfontfamily\cjkfont{FandolSong-Regular.otf}
