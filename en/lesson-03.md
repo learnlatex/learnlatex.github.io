@@ -67,6 +67,8 @@ Here the body has two paragraphs (in LaTeX you separate paragraphs
 with one or more blank lines).
 Before `\begin{document}` is the *document preamble*,
 which has code to set up the document layout.
+The `\usepackage` command is described in a [later lesson](lesson-06)
+it is used in most examples on this site to set up the font encoding.
 
 LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
 called *environments*.
