@@ -10,6 +10,7 @@ deve deixar o LaTeX cuidar disso automaticamente.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Um pequeno parágrafo, que nós alongamos para ter certeza que você
 consiga ver o efeito aqui!

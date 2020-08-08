@@ -80,6 +80,7 @@ Làm cách nào để tạo ra một MWE? Thông thường cách dễ nhất là
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Text
 \end{document}

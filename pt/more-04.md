@@ -9,6 +9,7 @@ configurar os 'meta dados', e um para usá-los:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 \author{U.~M.~Autor \and O.~Outro}
 \title{Algumas coisas que fiz}
@@ -39,6 +40,7 @@ outro tipo, menos comum: as "listas descritivas".
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{description}

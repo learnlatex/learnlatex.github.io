@@ -9,6 +9,7 @@ package, which adds the command `\includegraphics` to LaTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -42,6 +43,7 @@ ratio stays correct.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -60,6 +62,7 @@ might want to do is to `clip` and `trim` an image.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -78,6 +81,7 @@ not leave large gaps in the page.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % produce dummy text as filler
 

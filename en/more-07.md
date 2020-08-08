@@ -66,6 +66,7 @@ The `float` package will do that.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % dummy text for filler
 \usepackage{float}
@@ -99,6 +100,7 @@ command, `\trivfloat`, to make new types of float.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % dummy text for filler
 \usepackage{trivfloat}

@@ -18,6 +18,7 @@ Chú ý rằng ta sẽ dùng tiếng Anh cho các ví dụ ở đây. Cách dùn
 LaTeX sẽ được nói tới trong [một bài khác](language-01).
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Hey world!
@@ -77,6 +78,7 @@ Ta có thể thêm ghi chú vào mã nguồn bằng cách bắt đầu chúng b�
 cùng thử nó xem:
 ```latex
 \documentclass[a4paper,12pt]{article} % Lớp văn bản với một số tùy chọn
+\usepackage[T1]{fontenc}
 % Một ghi chú ở phần khai báo
 \begin{document}
 % Đây là một ghi chú nữa

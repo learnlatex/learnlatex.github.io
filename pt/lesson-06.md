@@ -20,6 +20,7 @@ Isso é configurado pelo pacote `babel`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 %\usepackage[brazilian]{babel}
 
@@ -50,6 +51,7 @@ sobre margens.
 
 ```latex
 \documentclass{book}
+\usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
 
 \begin{document}

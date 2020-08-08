@@ -13,6 +13,7 @@ você pode referenciar esse rótulo.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Olá mundo!

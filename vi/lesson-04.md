@@ -16,6 +16,7 @@ bản.)
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some text with \emph{emphasis and \emph{nested} content}.
 
@@ -47,6 +48,7 @@ v.v... đều được LaTeX lo.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Hey world!
 
@@ -97,6 +99,7 @@ hai loại danh sách chính có sẵn trong LaTeX:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 Ordered % Có đánh số

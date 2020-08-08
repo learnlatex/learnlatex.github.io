@@ -11,6 +11,7 @@ Um estilo comum é não ter indentação para parágrafos, mas ter uma
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
 \usepackage{lipsum} % Para texto de enchimento
 \begin{document}
@@ -46,6 +47,7 @@ para isso:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Algum texto \hspace{1cm} mais texto.
 
@@ -67,6 +69,7 @@ Para trechos curtos, usamos `\textbf`, `\textit`, `\textrm`, `\textsf`,
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Vamos nos divertir com fontes: \textbf{negrito}, \textit{itálico}, \textrm{romano},
 \textsf{sans serif}, \texttt{monoespaçado} and \textsc{versalete}.
@@ -81,6 +84,7 @@ células de tabelas, ou podemos usar `{...}` para criar um grupo explícito:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto normal.
 
@@ -102,6 +106,7 @@ adicionamos um `\par` (equivalente a uma linha em branco) aqui:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto normal
 
