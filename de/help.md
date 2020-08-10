@@ -1,5 +1,6 @@
 ---
 title: "Learnlatex.org verwenden"
+permalink: /de/help
 ---
 Translation to be added _after_ English text completed.
 
