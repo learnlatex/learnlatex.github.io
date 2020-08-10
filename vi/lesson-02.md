@@ -76,6 +76,6 @@ trình sửa mã nguồn nữa; chúng tôi khuyên nên bắt đầu bằng TeX
 (xem ở trên), rồi sau đó đến với những trình sửa mã nguồn khác một khi bạn đã đủ
 tự tin để làm việc với LaTeX.
 
-Bạn sẽ có thể [chạy tất cả các bài tập khác trong trình duyệt của bạn](help),
+Bạn sẽ có thể [chạy tất cả các bài tập khác trong trình duyệt của bạn](help.md),
 nhưng bạn nên bắt đầu làm việc với những văn bản thật, vì thế bây giờ là thời
 điểm rất phù hợp để chuẩn bị.

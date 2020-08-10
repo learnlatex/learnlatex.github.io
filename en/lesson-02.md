@@ -77,6 +77,6 @@ to pick an editor too: we recommend starting with either TeXworks or TeX Shop
 (see above), then looking at other editors later once you know how _you_
 work best with LaTeX.
 
-You'll be able to [run all of our other exercises in your browser](help), but we want
+You'll be able to [run all of our other exercises in your browser](help.md), but we want
 to help you get working with real documents, so now is a great time to get
 yourself ready.

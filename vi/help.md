@@ -1,5 +1,6 @@
 ---
 title: "Sử dụng trang learnlatex.org"
+permalink: /vi/help
 ---
 
 ## Định hướng trong trang

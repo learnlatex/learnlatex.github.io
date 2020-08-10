@@ -1,5 +1,6 @@
 ---
 title: "Usando o learnlatex.org"
+permalink: /pt/help
 ---
 
 ## Navegando no site
