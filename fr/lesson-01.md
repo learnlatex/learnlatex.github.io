@@ -2,7 +2,6 @@
 title: "Qu'est-ce que LaTeX, et comment ça marche?"
 ---
 
-
 Contrairement aux traitements de texte courants tels que Microsoft Word ou LibreOffice Writer, LaTeX ne fournit pas lui-même de WYSIWYG ("What You See Is What You Get", c'est-à-dire « ce que vous voyez est ce que vous obtenez » ou « tel écran, tel écrit »). Avec LaTeX, on prend du texte simple et on l'enrichit avec des balises. Ce balisage indique à LaTeX la signification logique de certains éléments du texte, comme en HTML.
 
 Par exemple dans un document HTML, l'élément `<h2>` indique une nouvelle section. En LaTeX, pour avoir le même résultat, on utiliserait la commande `\section`.
