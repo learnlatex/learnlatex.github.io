@@ -2,11 +2,11 @@
 title: "Más sobre: Referencias cruzadas"
 ---
 
-## Making cross-references into links
+## Convirtiendo referencias cruzadas en enlaces
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+Usted puede convertir sus referencias cruzadas en hiperenlaces usando el paquete `hyperref`.
+En la mayoría de los casos, `hyperref` debe ser cargado después de los otros paquetes especificados
+en el preámbulo del documento.
 
 ```latex
 \documentclass{article}
@@ -14,14 +14,14 @@ in the document preamble.
 \begin{document}
 
 \section{Introduction}
-Some exciting text with a reference~\ref{sec:next}.
+Un texto interesante con una referencia~\ref{sec:next}.
 
-\section{Next thing}
+\section{El elemento siguiente}
 \label{sec:next}
 
-More text here.
+Más texto aquí.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+Hemos elegido que los enlaces tengan el mismo color que el texto normal; pruebe a quitar
+`hidelinks`y vea ¡cómo lo hemos hecho!
