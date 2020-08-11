@@ -66,7 +66,7 @@ Segundo párrafo.
 
 Texto del contenido de la subsección.
 
-\section{Second section}
+\section{Segunda sección}
 
 Texto de la segunda sección.
 
