@@ -3,50 +3,22 @@ title: "Más sobre: Tablas"
 ---
 
 
-## The other preamble contents
+## Los otros contenidos del preámbulo
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+Como en la lección principal no hemos abordado todos los identificadores disponibles, unos pocos
+serán explicados con ejemplos aquí. Puede que quiera volver al principio de la lección sobre 
+las tablas para obtener un visión general de los elementos disponibles. Las breves descripciones
+dadas en la lección principal deberían ser suficientes para que comprendra el significado de los tipos
+de columna `m`, `b`, `w` y `W`, si usted ha entendido los tipos `l`, `c`, `r` y `p`. Si no es así,
+quizá quiera experimentar con ellos antes de empezar. Lo que queda por profundizar son los otros
+indicadores de preámbulo `>`, `<`, `@`, `!` y `|`.
 
-### Styling a column
+### Dando estilo a una columna
 
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
-
-<!-- {% raw %} -->
-```latex
-\documentclass{article}
-\usepackage{array}
-\usepackage{booktabs}
-
-\begin{document}
-\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
-  \toprule
-  Animal & Food  & Size   \\
-  \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
-  \bottomrule
-\end{tabular}
-\end{document}
-```
-<!-- {% endraw %} -->
-
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
-
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+Como `>` y `<` se pueden usar para colocar elementos antes y después del contenido de una
+celda en un columna, usted puede usarlos para añadir comandos que afecten a la apariencia
+de esa columna. Por ejemplo, si quiere poner en cursiva la primera columna y situar dos puntos
+después del contenido de cada celda de esa columna, puede hacer lo siguiente:
 
 <!-- {% raw %} -->
 ```latex
@@ -57,24 +29,52 @@ it can be used to change a single cell's alignment as shown below.
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   \toprule
-  \multicolumn{1}{l}{Animal} & Food  & Size   \\
+  Animal  & Comida & Tamaño  \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-### Manipulating the space between columns
+`itshape` pone en cursiva el texto que le precede, pero su efecto esta "limitado"
+a la celda en cuestión. Abordaremos el cambio manual del tipo letra [en una de las
+próximas lecciones](lesson-11).
 
-Usually LaTeX pads each column by some space on both sides to give a balanced
-look and separate them. This space is defined with the length `\tabcolsep`. Due
-to the fact that each column is padded on both sides you get one `\tabcolsep` on
-either end of the table, and `2\tabcolsep` between two columns &ndash; one from
-each column. You can adjust this space to any length using `\setlength`:
+Puede que quiera que la primera celda no se vea afectada ya que es parte de la
+cabecera de la tabla. Podemos usar en este caso el comando `\multicolumn`. Recuerde que
+puede ser usado para cambiar la alineación de una única celda como se muestra en el siguiente ejemplo.
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage{array}
+\usepackage{booktabs}
+
+\begin{document}
+\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
+  \toprule
+  \multicolumn{1}{l}{Animal} & Comida  & Tamaño   \\
+  \midrule
+  perro   & carne  & mediano \\
+  caballo & heno   & grqnde  \\
+  rana    & moscas & pequeño \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+### Manipulando el espacio entre columnas
+
+Normalmente LaTeX completa cada columna con un espacio a ambos lados para darles un 
+aspecto equilibrado y separarlas. Este espacio es definido con el ancho `tabcolsep`. Debido
+a que cada columna es completada a ambos lados, se tiene una separación de un ancho `tabcolsep`
+en cada lateral de la tabla y una separación de un ancho de `2\tabcolsep` entre dos columnas &ndash; 
+uno por cada columna. Puede ajustar este espacio a cualquier ancho usando `\setlenght`:
 
 <!-- {% raw %} -->
 ```latex
@@ -85,18 +85,18 @@ each column. You can adjust this space to any length using `\setlength`:
 
 \begin{document}
 \begin{tabular}{lll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal  & Comida & Tamaño  \\
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything in
-between the columns you specify as an argument:
+Puede cambiar este espacio por cualquier cosa arbitraria usando `@`. Esto reemplaza
+el espacio de relleno entre dos columnas o el espacio lateral y pone en su lugar lo 
+que usted especifique como argumento:
 
 <!-- {% raw %} -->
 ```latex
@@ -105,20 +105,20 @@ between the columns you specify as an argument:
 
 \begin{document}
 \begin{tabular}{l@{ : }l@{\hspace{2cm}}l}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal  & Comida & Tamaño  \\
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
+(Veremos `\hspace` [de nuevo próximamente](lesson-11); quizás adivine que este comando
+añade un espacio horizontal.
 
-The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument in center of the space between two columns.
+El indicador de preámbulo `!` hace algo similar. La diferencia es que este último 
+_añade_ el argumento en el centro del espacio entre dos columnas.
 
 <!-- {% raw %} -->
 ```latex
@@ -127,19 +127,18 @@ _adds_ its argument in center of the space between two columns.
 
 \begin{document}
 \begin{tabular}{l!{:}ll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal  & Comida & Tamaño  \\
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
+### Líneas verticales
 
-### Vertical rules
-
-Sometimes you have to use vertical rules.
+En algunas ocasiones tendrá que utilizar líneas verticales.
 
 <!-- {% raw %} -->
 ```latex
@@ -148,29 +147,29 @@ Sometimes you have to use vertical rules.
 
 \begin{document}
 \begin{tabular}{l|ll}
-  Animal & Food  & Size   \\[2pt]
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal  & Comida & Tamaño  \\[2pt]
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
-adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though; vertical rules don't work with the
-horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
-will span any space specified in the optional argument to `\\`.
+Quizá haya notado que el comportamiento de `|` se asemeja bastante al de `!{decl}`; añade
+una línea vertical entre dos columnas dejando el espacio de relleno entre ellas. Pero su uso 
+tiene un gran inconveniente; las líneas verticales no funcionaran si usted utiliza las líneas 
+horizontales del paquete `booktabs`. En lugar de éstas, podrá utilizar las líneas horizontales
+proporcionadas por LaTeX; éstas son `\hline` (que corresponde a `\toprule`, `\midrule` y 
+`\bottomrule`) y `\cline` (que tiene el mismo uso que `\cmidrule`). Como mostramos precedentemente, 
+las líneas verticales se añadirán a cualquier espacio especificado en los argumentos opcionales a `\\`. 
 
-## Customizing `booktabs` rules
+## Personalizando las líneas del paquete `booktabs`
 
-All the `booktabs` rules and also `\addlinespace` support an optional argument
-in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a length in
-braces after `r` or `l`.
+Todas las líneas del paquete `booktabs` y el comando `\addlinespace` aceptan un argumento
+adicional entre corchetes con el que puede especificar el grosor de la línea o espacio horizontal. Además, 
+el recorte de línea proporcionado por `\cmidrule` puede personalizarse especificando
+el ancho entre corchetes después de las opciones `r` o `l`.
 
 <!-- {% raw %} -->
 ```latex
@@ -180,22 +179,25 @@ braces after `r` or `l`.
 
 \begin{document}
 \begin{tabular}{@{} lll@{}} \toprule[2pt]
-  Animal & Food  & Size   \\ \midrule[1pt]
-  dog    & meat  & medium \\
+  Animal  & Comida & Tamaño  \\ \midrule[1pt]
+  perro   & carne  & mediano \\
   \cmidrule[0.5pt](r{1pt}l{1cm}){1-2}
-  horse  & hay   & large  \\
-  frog   & flies & small  \\ \bottomrule[2pt]
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\ \bottomrule[2pt]
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment in columns
+## Alineación de números en columnas
 
 The alignment of numbers in tables can be handled by the column type `S` 
 that is provided by the `siunitx` package.
 
-A simple example with two aligned numeric columns would be:
+La alineación de los números en las tablas puede ser gestionada por el tipo de columna `S`
+que proporciona el paquete `siunitx`.
+
+Un ejemplo simple de dos columnas numéricas alineadas:
 
 ```latex
 \documentclass{article}
@@ -204,7 +206,7 @@ A simple example with two aligned numeric columns would be:
 \begin{document}
 \begin{tabular}{SS}
 \toprule
-{Values} &  {More Values} \\
+{Valores} &  {Otros valores} \\
 \midrule
 1        &   2.3456 \\
 1.2      &   34.2345 \\
@@ -217,31 +219,32 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
-Note that any non-numeric cell must be "protected" by enclosing it in braces.
+Note que cualquier celda no numérica debe ser "protegida" escribiendo su contenido entre llaves. 
 
-The `siunitx` package provides many possibilities for formatting the numbers in
-different ways; see the [package
-documentation](https://texdoc.net/pkg/siunitx).
+El paquete `siunitx` proporciona muchas funcionalidades para cambiar el formato de los números
+de formas diferentes; vea la [documentación de este 
+paquete](https://texdoc.net/pkg/siunitx).
 
-## Specifying the total table width
+## Especificando el ancho total de la tabla
 
-The width of a `tabular` environment is automatically determined based
-on the contents of the table. There are two commonly used mechanisms
-to specify a different total width.
+El ancho del entorno `tabular` es determinado automáticamente a partir
+del contenido de la tabla. Existen dos mecanismos usados frecuentemente
+para especificar un ancho total diferente al automático.
 
-Note that it is almost always preferable to format the table to a
-specified width as below (perhaps using a font size such as `\small` if
-necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths.
+Note que es casi siempre preferible el cambiar el ancho de la tabla
+como lo hacemos más abajo (quizás usando un tamaño de letra como `small` si es
+necesario) más que cambiar la escala de la tabla con `\resizebox` y otros
+comandos similares que darán lugar a incongruencias en el tamaño de la letra y el grosor
+de las líneas.
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that
-specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command. This space is added
-between all columns from that point in the preamble. It is almost
-always used with `\fill`, a special space that stretches to be as large
-as necessary.
+El entorno `tabular*` toma un argumento adicional de _ancho_ que especifica
+el ancho total de la tabla. Un espacio ajustable puede ser añadido a la tabla
+usando el comando `\extracolsep`. Este espacio se añade entre todas las columnas
+presentes en el preámbulo desde este punto. Este comando se usa casi siempre
+junto con `\fill`, un espacio especial que se ajusta de manera a ser lo más largo 
+posible.
 
 ```latex
 \documentclass{article}
@@ -280,11 +283,11 @@ C & D\\
 
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+El entorno `tabularx`, proporcionado por el paquete del mismo
+nombre, posee una sintaxis similar a la de `tabular*` pero en lugar
+de ajustar el espacio entre columnas, ajusta el ancho de las columnas
+definidas con un nuevo tipo, `X`. Este tipo de columna es equivalente al
+especificado con `p{...}` pero con un ancho determinado automáticamente.
 
 ```latex
 \documentclass{article}
@@ -321,19 +324,19 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.net/pkg/tabularx).
+A diferencia de otras formas discutidas en estas lecciones, `tabularx` necesita
+construir la tabla varias veces probando diferentes anchos para determinar la
+configuración final. Esto implica que hay una serie de restricciones en el uso
+de este entorno; vea la [documentación de este paquete](https://texdoc.net/pkg/tabularx).
 
-## Multi-page tables
+## Tablas multipágina
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+Un entorno `tabular`crea un bloque indivisible, con lo que debe ser lo suficientemente
+pequeño como para ajustarse a una página y es a menudo situado en un entorno flotante
+`table`.
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+Varios paquetes disponen de variantes con sintaxis similar que permiten
+dividir la tabla en un cambio de página. Mostramos aquí el uso del paquete `longtable`:
 
 ```
 \documentclass{article}
@@ -342,14 +345,14 @@ page breaking. Here we show the `longtable` package:
 \usepackage{longtable}
 \begin{document}
 \begin{longtable}{cc}
-\multicolumn{2}{c}{A Long Table}\\
-Left Side & Right Side\\
+\multicolumn{2}{c}{Una tabla larga}\\
+Lado izquierdo & Lado derecho\\
 \hline
 \endhead
 \hline
 \endfoot
 aa & bb\\  
-Entry & b\\  
+Entrada & b\\  
 a & b\\  
 a & b\\  
 a & b\\  
@@ -364,25 +367,25 @@ a & b\\
 a & b b b b b b\\  
 a & b b b b b\\  
 a & b b\\  
-A Wider Entry & b\\  
+Una entrada más larga & b\\  
 \end{longtable}
 
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+`longtable` es remarcable ya que conserva el ancho de las columnas de la tabla
+en todas las páginas; sin enbargo para conseguir esto puede que tenga que
+ejecutar LaTeX en varias ocasiones para hacer que las entradas más anchas que se
+ecuentren más adelante en la tabla, puedan tener un efecto en el ancho de las columnas
+de las primeras páginas.
 
-## Table notes
+## Notas al pie de tabla
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.net/pkg/threeparttable)
-for full details, but we show a simple example here.
+Es bastante común el necesitar símbolos en una tabla para hacer referencia a
+notas al pie de tabla. El paquete `threeparttable` simplifica las anotaciones en 
+este tipo de tablas, haciendo que las notas al pie se situén en el mismo bloque
+que la propia tabla. Le invitamos a ver la [documentación de este paquete](https://texdoc.net/pkg/threepqrttable) para
+más detalles, pero veamos aquí un ejemplo simple.
 
 ```latex
 \documentclass{article}
@@ -394,12 +397,12 @@ for full details, but we show a simple example here.
 \begin{threeparttable}
    \caption{An Example}
    \begin{tabular}{ll}
-    An entry & 42\tnote{1}\\
-    Another entry & 24\tnote{2}\\
+    Una entrada & 42\tnote{1}\\
+    Otra entrada & 24\tnote{2}\\
    \end{tabular}
    \begin{tablenotes}
-   \item [1] the first note.
-   \item [2] the second note.
+   \item [1] la primera nota al pie.
+   \item [2] la segunda nota al pie.
    \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -407,23 +410,24 @@ for full details, but we show a simple example here.
 \end{document}
 ```
 
-## Typesetting in narrow columns
+## Composición tipográfica en columnas estrechas
 
-The default line breaking settings assume relatively long lines to
-give some flexibility in choosing line breaks. The following example
-shows some possible approaches. The first table shows interword spacing
-stretched and TeX warns about Underfull lines. Using `\raggedright`
-usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise;
-it allows some raggedness in the line lengths, but will also
-hyphenate where necessary, as shown in the third table.
+La configuración por defecto del salto de página asume que las líneas relativamente
+largas disponen de cierta flexibilidad para elegir el salto de línea. El siguiente
+ejemplo muestran algunas de las aproximaciones posibles. La primera tabla muestra
+el ajuste del espacio entre palabras y TeX le dará un mensaje de aviso de tipo "Underfull lines"
+(líneas que dejan espacios en blanco). El uso de `\raggedright` normalmente impide
+este problema pero puede dar lugar a alguna líneas "muy irregulares". El comando
+`\RaggedRight` des paquete `ragged2e` es un compromiso; permite cierta irregularidad entre
+el ancho de las líneas, pero también divide una palabra con un guión cuando es necesario, tal y 
+como se muestra en la tercera tabla.
 
-Note the use of `\arraybackslash` here, which resets the definition of
-`\\` so that it ends the table row.
+Note el uso de `\arraybackslash` aquí, esto resetea la definición de `\\`
+que que determina el fin de una fila de la tabla.
 
-An alternative technique, as shown in the fourth table, is to use a
-smaller font so that the columns are not so narrow relative to the
-text size.
+Una técnica alternativa que se muestra en la cuarta tabla, es el uso
+de un tamaño de letra más pequeño de forma que las columnas sean tan estrechas
+con respecto al tamaño del texto.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -434,22 +438,22 @@ text size.
 \begin{table}
 
 \begin{tabular}[t]{lp{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+Uno & Un texto largo en un párrafo estrecho, con un poco más de texto.\\
+Dos & Otro texto largo diferente en un párrafo estrecho, con algunas palabras más para que sean divididas con guión.
 \end{tabular}%
 \begin{tabular}[t]{l>{\raggedright\arraybackslash}p{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+Uno & Un texto largo en un párrafo estrecho, con un poco más de texto.\\
+Dos & Otro texto largo diferente en un párrafo estrecho, con algunas palabras más para que sean divididas con guión.
 \end{tabular}%
 \begin{tabular}[t]{l>{\RaggedRight}p{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+Uno & Un texto largo en un párrafo estrecho, con un poco más de texto.\\
+Dos & Otro texto largo diferente en un párrafo estrecho, con algunas palabras más para que sean divididas con guión.
 \end{tabular}
 
 \footnotesize
 \begin{tabular}[t]{lp{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+Uno & Un texto largo en un párrafo estrecho, con un poco más de texto.\\
+Dos & Otro texto largo diferente en un párrafo estrecho, con algunas palabras más para que sean divididas con guión.
 \end{tabular}
 
 \end{table}
@@ -457,25 +461,25 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 \end{document}
 ```
 
-## Defining new column types
+## Definiendo nuevos tipos de columna
 
-As demonstrated in the [main lesson](lesson-08), the `array` package allows
-constructs such as `>{\bfseries}c`  to denote a bold centered column.
-It is often convenient to define a new column type to encapsulate such
-use, for example
+Como hemos demostrado en la [lección principal](lesson-08), el paquete `array`permite
+asociaciones del tipo `>{\bfseries}c` para definir columnas centradas y en negrita.
+A menudo es conveniente definir un nuevo tipo de columnas para simplificar este
+tipo de uso, por ejemplo la siguiente definición: 
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in table preambles to specify a bold
-centered column.
 
+permitiría el uso de `B` en el preámbulo de una tabla para especificar
+una columna centrada y en negrita.
 
-## Vertical tricks
+## Trucos verticales
 
-Often, rather than making a cell span multiple rows it is better to instead have
-a single row in which some cells are split vertically by the use of nested
-`tabular` environments.
+A menudo, en lugar de extender una celda en múltiples filas es mejor tener una
+única fila que se dvida verticalmente en varias celdas mediante el uso de entornos 
+`tabular` anidados.
 
 <!-- {% raw %} -->
 ```latex
@@ -488,18 +492,18 @@ a single row in which some cells are split vertically by the use of nested
   \toprule
   Test & \begin{tabular}{@{}c@{}}A\\a\end{tabular} & \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
   \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
+  El contenido & está & aquí \\
+  El contenido & está & aquí \\
+  El contenido & está & aquí \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Note that you can control vertical alignment by an optional argument to the
-`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
-bottom aligned respectively and is used like this:
+Note aue puede controlar el alineamiento vertical mediante un argumento opcional
+del entorno `tabular`; puede usar `t`, `c` o `b` para alinear su texto a la parte alta,
+para centralo o para alinearlo a la parte baja, respectivamente:
 
 <!-- {% raw %} -->
 ```latex
@@ -512,34 +516,33 @@ bottom aligned respectively and is used like this:
   \toprule
   Test & \begin{tabular}[b]{@{}c@{}}A\\a\end{tabular} & \begin{tabular}[t]{@{}c@{}}B\\b\end{tabular} \\
   \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
+  El contenido & está & aquí \\
+  El contenido & está & aquí \\
+  El contenido & está & aquí \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-## Line spacing in tables
+## Espacio entre líneas de una tabla
 
-In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package, which is useful for adding extra space between specific lines.
+En la lección principal mostramos el uso de `\addlinespace` del paquete `booktabs`,
+que es útil para añadir un espacio extra entre líneas específicas.
 
-There are two general parameters that control line spacing,
-`\arraystretch` and `\extrarowheight` (the latter from the `array`
-package).
+Hay dos parámetros generales para controlar el espacio entre líneas:
+`\arraystretch` y `\extrarowheight` (este último del paquete `array`).
+Así, por ejemplo la línea:
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
 
-will increase the baseline spacing by 50%.
+aumentará el espaciado de la línea de base en un 50%.
 
-
-Often, especially when using `\hline`, it is better just to increase
-the height of rows, without increasing their depth below the baseline.
-The following example demonstrates the `\extrarowheight` parameter.
+A menudo, especialmente al usar `\hline` es mejor aumentar únicamente
+la altura de las columnas, son incrementar el ancho bajo la línea de base.
+El siguiente ejemplo muestra el uso del parámetro `\extrarowheight`. 
 
 ```latex
 \documentclass[a4paper]{article}
@@ -550,9 +553,9 @@ The following example demonstrates the `\extrarowheight` parameter.
 \begin{center}
 \begin{tabular}{cc}
 \hline
-Square& $x^2$\\
+Al cuadrado& $x^2$\\
 \hline
-Cube& $x^3$\\
+Al cubo& $x^3$\\
 \hline
 \end{tabular}
 \end{center}
@@ -562,9 +565,9 @@ Cube& $x^3$\\
 \setlength\extrarowheight{2pt}
 \begin{tabular}{cc}
 \hline
-Square& $x^2$\\
+Al cuadrado& $x^2$\\
 \hline
-Cube& $x^3$\\
+Al cubo& $x^3$\\
 \hline
 \end{tabular}
 \end{center}
