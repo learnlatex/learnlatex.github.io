@@ -3,66 +3,65 @@ title: "Tablas"
 ---
 
 
-## Basic tables
+## Tablas básicas
 
-Tables in LaTeX are set using the `tabular` environment. This lesson will assume
-you load the `array` package, which adds more functionality to LaTeX tables, and
-which is not built into the LaTeX kernel only for historic reasons. So put the
-following in your preamble and we're good to go:
-
+Las tablas se configuran en LaTeX usando el entorno `tabular`. En esta lección asumimos
+que usted carga el paquete `array`, que añade más funcionalidades a las tablas de LaTeX 
+y que no forma parte del núcleo de LaTeX únicamente por razones históricas. Así que ponga
+la siguiente línea en su preámbulo y estaremos listos para empezar:
 
 ```latex
 \usepackage{array}
 ```
 {: .noedit :}
 
-In order to typeset a `tabular` we have to tell LaTeX how many columns will be
-needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names,
-called preamble-tokens. The available column types are:
+Para dar un formato al entorno `tabular` tenemos que decir a LaTeX cuántas columnas necesitaremos
+y cómo deben ser alineadas. Esto se hace con un argumento obligatorio 
+&ndash; a menudo llamado preámbulo de la tabla  &ndash; del entorno `tabular`
+en el que se especifican las columnas usando nombres de un sólo carácter, llamados
+identificadores de preámbulo. Los tipos de columna disponibles son:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type       | description |
+| tipo       | descripción |
 | ---        |:-- |
-| `l`        | left aligned column |
-| `c`        | centered column |
-| `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`; the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
-| `b{width}` | like `p`, but bottom aligned |
-| `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
-| `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
+| `l`        | columna justificada a la izquierda |
+| `c`        | columna centrada |
+| `r`        | columna justificada a la derecha |
+| `p{width}` | columna con un ancho `width` fijo; el texto sera automáticamente ajustado a la línea y justificado |
+| `m{width}` | como `p`, pero centrado verticalmente con respecto al resto del texto en la fila |
+| `b{width}` | como `p`, pero ajustado verticalmente a la parte baja de la celda |
+| `w{align}{width}` | imprime el contenido con un ancho `width` fijo, sobreimprimiendo si el texto es muy largo. Puede elegir el justificado horizontal `align` usando `l`, `c`, or `r`. |
+| `W{align}{width}` | como `w`, pero dando lugar a un mensaje de alerta "overfull box warning" si el texto es demasiado grande. |
 
-In addition, a few other preamble-tokens are available which don't define a
-column but might be useful as well:
+Además, otros identificadores de preámbulo adicionales están disponibles, estos no son para
+definir columnas pero pueden serle de gran utilidad igualmente: 
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type | description |
+| tipo | descripción |
 | ---  | :-- |
-| `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
-| `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
-| `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
-| <span>`|`</span>  | add a vertical rule |
-| `@{decl}` | replace the space between two columns with `decl` |
-| `!{decl}` | add `decl` in the center of the existing space |
+| `*{num}{string}` | repite `string` un número `num` de veces en el preámbulo. De esta forma puede definir múltiples columnas idénticas. |
+| `>{decl}` | coloca `decl` antes del contenido de cada celda de la columna que sigue al identificador (útil, por ejemplo, para una fuente de letra diferente en esta columna) |
+| `<{decl}` | coloca `decl` después del contenido de cada celda de la columna previa a la declaración |
+| <span>`|`</span>  | añade una línea vertical |
+| `@{decl}` | reemplaza el espacio existente entre dos columnas por `decl` |
+| `!{decl}` | añade `decl` en el centro del espacio existente |
 
-These two tables list all the available column types from LaTeX and the `array`
-package. A few additional column types, from different packages, are presented
-in the [further details page](more-08) for this lesson.
+Estas dos tablas contienen todos los tipos de columna disponibles en LaTeX y en 
+el paquete `array`. Otros tipos de columna, disponibles en otros paquetes, son
+presentados en la [sección de más sobre este tema](more-08) de esta lección.
 
-The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centered columns, you'd use
-`ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
+Las columnas `l`, `c` y `r` tendrán la anchura de la celda más ancha.
+Cada columna debe ser declarada, con lo que si quiere tres columnas centradas, tendrá que
+usar `ccc` en el preámbulo de la tabla. Los espacios son ignorados, con lo que `c c c` tiene el mismo efecto.
 
-In a table body columns are separated using an ampersand `&` and a new row is
-started using `\\`.
+En el cuerpo de la tabla, las columnas se separan usando el símbolo `&` y una nueva fila
+comienza con los símbolos `\\`.
 
-We have everything we need for our first table. In the following code the
-`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
-source.
+Tenemos todo lo que necesitamos para construir nuestra primera tabla. En el siguiente código 
+hemos alineado `&` y `\\`. Esto no es necesario en LaTeX, pero ayuda a la lectura
+del código fuente.
 
 <!-- {% raw %} -->
 ```latex
@@ -71,17 +70,17 @@ source.
 
 \begin{document}
 \begin{tabular}{lll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal  & Comida & Tamaño  \\
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-If a table column contains a lot of text you will have issues to get that
-right with only `l`, `c`, and `r`. See what happens in the following example:
+Si la columna de una tabla contine mucho texto, tendrá problemas para fijarlo
+únicamente con `l`, `c` y `r`. Vea lo que ocurre en el siguiente ejemplo:
 
 <!-- {% raw %} -->
 ```latex
@@ -90,25 +89,25 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 
 \begin{document}
 \begin{tabular}{cl}
-  Animal & Description \\
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  Animal & Descripción \\
+  perro  & El perro es un miembro del género Canis, el cual forma parte 
+           de los cánidos derivados del lobo y es uno de los carnívoros terrestres 
+		   más abundantes. \\
+  gato   & El gato es una especie doméstica de pequeños mamíferos carnívoros. Es la 
+           única especie domesticada de la familia de los félidos y es a menudo llamado 
+		   gato doméstico, para diferenciarlo de los miembros salvajes de la 
+		   familia. \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-The issue is that the `l` type column typesets its contents in a single row at
-its natural width, even if there is a page
-border in the way. To overcome this you can use the `p` column. This
-typesets its contents as paragraphs with the width you specify as an argument
-and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare the above outcome to the following:
+El problema es que el tipo de columna `l` escribe el contenido de la celda en una única fila
+con el ancho que le corresponde, aunque haya un borde 
+de página de por medio. Para evitar este problema, puede usar la columna `p`. Este tipo de columna
+escribe el contenido de la celda como un párrafo con el ancho especificado como argumento
+y alinea verticalemente el texto a la parte alta de la celda &ndash; lo que usted querrá hacer
+la mayoría de las veces. Compare el resultado del ejemplo anterior con siguiente:
 
 <!-- {% raw %} -->
 ```latex
@@ -117,24 +116,24 @@ time. Compare the above outcome to the following:
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
-  Animal & Description \\
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  Animal & Descripción \\
+  perro  & El perro es un miembro del género Canis, el cual forma parte 
+           de los cánidos derivados del lobo y es uno de los carnívoros terrestres 
+		   más abundantes. \\
+  gato   & El gato es una especie doméstica de pequeños mamíferos carnívoros. Es la 
+           única especie domesticada de la familia de los félidos y es a menudo llamado 
+		   gato doméstico, para diferenciarlo de los miembros salvajes de la 
+		   familia. \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it is cumbersome to put that
-many column definitions in the preamble.  You can make things easier
-by using `*{num}{string}`, which repeats the `string`  `num` times.
-So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
-table of this lesson with the newly learned syntax:
+Si su tabla tiene muchas columnas del mismo tipo puede ser engorroso el escribir las
+definiciones de esas columnas en el preámbulo. Puede simplificar las cosas
+usando `*{num}{string}`, que repite `string` un número `num` de veces.
+De esta forma `*{6}{c}` es equivalente a `cccccc`. Para mostrale que estos funciona, aquí tiene
+el primero ejemplo de tabla en esta lección usando esta nueva sintáxis que acaba de aprender:
 
 <!-- {% raw %} -->
 ```latex
@@ -143,28 +142,29 @@ table of this lesson with the newly learned syntax:
 
 \begin{document}
 \begin{tabular}{*{3}{l}}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal  & Comida & Tamaño  \\
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-## Adding rules (lines)
+## Añadiendo líneas
 
-A word of advice prior to introducing rules; lines should be used really
-sparsely in tables, and normally vertical ones look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first. For the sake of completeness the standard
-lines are shown in the [more-info](more-08) page.
+Un pequeño consejo antes de introducir las líneas; en las tablas las líneas deben ser usadas
+con parcimonia y normalmente las líneas verticales no parecen ser de un uso muy profesional. 
+De hecho, para las tablas profesionales no debe usar ninguna de las líneas estándar; en su lugar
+usted debe familiarizarse con las que le facilita el paquete `booktabs`, por esta razón las abordaremos
+aquí en primer lugar. Para que completar esta lección, las líneas estándar serán
+abordadas en la sección de [más información](more-08).
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
+`booktabs` proporciona cuatro tipos diferentes de líneas. Cada uno de estos comandos
+debe ser usado como el primer elemento de una fila o detrás de otra línea.
+Tres de estos comandos son: `\toprule`, `\midrule` y 
+`bottomrule` que son usados para situar una línea
+en la parte alta, en las filas intermedias o en la parte baja de la tabla, respectivamente:
 
 <!-- {% raw %} -->
 ```latex
@@ -176,22 +176,22 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animal  & Comida & Tamaño  \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
-draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
-Even if you only want to draw the rule for a single
-column you need to specify that as a range (with both numbers matching).
+El cuarto comando proporcionado por `booktabs` es `\cmidrule`. Puede ser usado para
+dibujar una línea que no se extiendo a toda la fila de una tabla sino a un intervalo específico
+de columnas de esa fila. Debe especificarse un intervalo de columas de la forma: `{`_number_`-`_number`}`.
+Incluso si usted sólo desea dibujar una línea para una única columna
+deberá especificarlo como un intervalo (siendo los extremos del intervalo el mismo número).
 
 <!-- {% raw %} -->
 ```latex
@@ -202,22 +202,22 @@ column you need to specify that as a range (with both numbers matching).
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animal  & Comida & Tamano  \\
   \midrule
-  dog    & meat  & medium \\
+  perro   & carne  & mediano \\
   \cmidrule{1-2}
-  horse  & hay   & large  \\
+  caballo & heno   & grande  \\
   \cmidrule{1-1}
   \cmidrule{3-3}
-  frog   & flies & small  \\
+  rana    & moscas & pequeño \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-There is another useful feature of `\cmidrule`. You can shorten it on either end
-with an optional argument enclosed in parentheses:
+Existe otro uso útil de `\cmidrule`. Puede acortar la línea o incluso terminarlo con
+un argumento opcional entre paréntesis:
 
 <!-- {% raw %} -->
 ```latex
@@ -228,27 +228,27 @@ with an optional argument enclosed in parentheses:
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animal  & Comida & Tamaño  \\
   \midrule
-  dog    & meat  & medium \\
+  perro   & carne  & mediano \\
   \cmidrule{1-2}
-  horse  & hay   & large  \\
+  caballo & heno   & grande  \\
   \cmidrule(r){1-1}
   \cmidrule(rl){2-2}
   \cmidrule(l){3-3}
-  frog   & flies & small  \\
+  rana    & moscas & pequeño \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
-and **l**eft end, respectively.
+Quizá haya adivinado que `r` y `l` significan que la línea se acorta a la derecha **r**ight o 
+a la izquierda **l**eft, respectivamente.
 
-Sometimes a rule would be too much of a separation for two rows but to get
-across the meaning more clearly you want to separate them by some means. In this
-case you can use `\addlinespace` to insert a small skip.
+Algunas veces una línea puede implicar una fuerte separación entre dos líneas pero para
+que la tabla sea clara usted quiere separar esas líneaa de alguna manera. En este caso
+peude usar `\addlinespace` que añadirá un pequeño espacio vertical entre ambas.
 
 <!-- {% raw %} -->
 ```latex
@@ -261,14 +261,14 @@ case you can use `\addlinespace` to insert a small skip.
   \toprule
   Animal & Description \\
   \midrule
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
+  perro  & El perro es un miembro del género Canis, el cual forma parte 
+           de los cánidos derivados del lobo y es uno de los carnívoros terrestres 
+		   más abundantes. \\
   \addlinespace
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  gato   & El gato es una especie doméstica de pequeños mamíferos carnívoros. Es la 
+           única especie domesticada de la familia de los félidos y es a menudo llamado 
+		   gato doméstico, para diferenciarlo de los miembros salvajes de la 
+		   familia. \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -276,18 +276,18 @@ case you can use `\addlinespace` to insert a small skip.
 <!-- {% endraw %} -->
 
 
-## Merging cells
+## Fusionando celdas
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
-has to be used as the first thing in a cell. `\multicolumn` takes three
-arguments:
+En LaTeX puede fusionar celdas horizontalmente usando el comando `\multicolumn`. Debe
+ser usado como el primer elemento de la celda. `\multicolumn` toma tres 
+argumentos:
 
-1. The number of cells which should be merged
-2. The alignment of the merged cell
-3. The contents of the merged cell
+1. El número de celdas que deben ser fusionadas
+2. La alineación de la celda fusionada
+3. El contenido de la celda fusionada.
 
-The alignment can contain anything legal in a `tabular`'s preamble, but _only a
-single column type_.
+La alineación puede contener cualquier argumento válido de un preámbulo `tabular`, pero _sólo un único
+tipo de columna_. 
 
 <!-- {% raw %} -->
 ```latex
@@ -299,23 +299,22 @@ single column type_.
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animal & Comida  & Tamaño   \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
-  fuath  & \multicolumn{2}{c}{unknown} \\
+  perro    & carne  & mediano \\
+  caballo  & heno   & grande  \\
+  rana   & moscas & pequeño  \\
+  fuath  & \multicolumn{2}{c}{desconocido} \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent the
-application of whatever you defined in the table preamble for the
-current column.  The following uses this method to center the
-table's head row:
-
+Puede igualmente utilizar `\multicolumn`en una única celda para evitar que
+se aplique lo que haya definido en el preámbulo para esa columna. 
+El siguiente ejemplo usa este mñetodo para centrar la fila de la 
+cabecera de la tabla:
 
 <!-- {% raw %} -->
 ```latex
@@ -327,21 +326,21 @@ table's head row:
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  \multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Food} & \multicolumn{1}{c}{Size} \\
+  \multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Comida} & \multicolumn{1}{c}{Tamaño} \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
-  fuath  & \multicolumn{2}{c}{unknown} \\
+  perro   & carne  & mediano \\
+  caballo & heno   & grande  \\
+  rana    & moscas & pequeño \\
+  fuath   & \multicolumn{2}{c}{desconocido} \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX.
-Usually it suffices to leave cells empty to give the reader the
-correct idea of what was meant without explicitly making cells span rows.
+Fusionar celdas verticalmente no está implementado en LaTeX.
+Normalmente basta con dejar celdas vacías para dar una idea al lector
+del significado deseado sin extender las celdas verticalmente.
 
 <!-- {% raw %} -->
 ```latex
@@ -353,19 +352,19 @@ correct idea of what was meant without explicitly making cells span rows.
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Group     & Animal & Size   \\
+  Groupo    & Animal  & Tamaño  \\
   \midrule
-  herbivore & horse  & large  \\
-            & deer   & medium \\
-            & rabbit & small  \\
+  herbívoro & caballo & grande  \\
+            & ciervo  & mediano \\
+            & conejo  & pequeño \\
   \addlinespace
-  carnivore & dog    & medium \\
-            & cat    & small  \\
-            & lion   & large  \\
+  carnívoro & perro   & mediano \\
+            & gato    & pequeño \\
+            & león    & grande  \\
   \addlinespace
-  omnivore  & crow   & small  \\
-            & bear   & large  \\
-            & pig    & medium \\
+  omnívoro  & cuervo  & pequeño \\
+            & oso     & grande  \\
+            & cerdo   & mediano \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -373,9 +372,9 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% endraw %} -->
 
 
-## Exercises
+## Ejercicios
 
-Use the simple table example to start experimenting with tables. Try out
-different alignments using the `l`, `c` and `r` column types. What happens if
-you have too few items in a table row? How about too many? Experiment with the
-`\multicolumn` command to span across columns.
+Use el primer ejemplo de esta lección para empezar a experimentar con las tablas. Pruebe
+diferentes tipos de alineamiento usando los tipos de columna `l`, `c` y `r`. ¿Qué ocurre si
+tiene pocos elementos en una fila de la tabla? ¿Y si tiene demasiados? Experimente el iso 
+del comando `\multicolumn` para fusionar celdas de una columna.
