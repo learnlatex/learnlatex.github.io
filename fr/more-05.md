@@ -1,64 +1,48 @@
 ---
-title: "More on: Using document classes to influence design"
+title: "Utiliser les classes de documents pour changer l'apparence: pour aller plus loin"
 ---
 
-## Journal-specific classes
+## Classes spécifiques d'un journal
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on CTAN and in standard TeX distributions.
+De nombreuses journaux scientifiques proposent leur classe LaTeX pour les soumissions d'articles. Celle-ci donne généralement une mise en page proche de celle du journal final, bien que cela dépende de l'utilisation des polices de caractères, etc. ; parfois, la mise en forme reste générique, mais l'utilisation de la classe du journal facilite l'import de votre article dans leur chaîne de traitement. Si une classe est disponible, elle est normalement mise à disposition directement par l'éditeur du journal (sur son site web), qui doit donner les détails nécessaires à son utilisation. Nombre d'entre elles sont également disponibles sur CTAN et dans des distributions TeX standards.
 
-## Classes for presentations
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+## Classes pour les diaporamas
+
+Un domaine très particulier est la création de diaporamas (présentations type Microsoft Powerpoint). La classe `slides` avait été conçue pour la production de diapositives 24x36mm et n'est pas vraiment faite pour les présentations destinées à un vidéo-projecteur. Deux classes ont été développées à cet effet et sont largement utilisées : `beamer` et `powerdot`. Actuellement, `beamer` est le plus largement utilisé, voici donc un exemple de son fonctionnement :
 
 ```latex
 \documentclass{beamer}
 \usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{frame}{A first frame}
-  Some text
+\begin{frame}{Première diapositive}
+  Un peu de texte
 \end{frame}
 
-\begin{frame}{A second frame}
-  Different text
+\begin{frame}{Deuxième diapositive}
+  Autre texte
   \begin{itemize}
-    \item<1-> First item
-    \item<2-> Second item
+    \item<1-> Premier item,
+    \item<2-> Second item.
   \end{itemize}
 \end{frame}
 
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+Cela montre deux choses importantes. Premièrement, `beamer` divise un document en `frames` (« cadres »), chacun d'eux pouvant donner plus d'une diapositive. Deuxièmement, `beamer` ajoute des possibilités à la syntaxe LaTeX normale pour permettre à certaines parties du document d'apparaître petit à petit, formant des animations. C'est un outil puissant, mais plus compliqué que ce que nous pouvons couvrir ici : [consultez cet article de blog](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) pour en savoir plus.
 
-## A class for images
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+## Classe pour produire des images
+
+Parfois vous devez composer une image (qui peut avoir un code-source très long) avec LaTeX. Dans ce cas, souvent, vous ne voulez rien d'autre que l'image dans le PDF final, sans le reste de la page. Le plus simple est d'utiliser la classe [`standalone`](https://ctan.org/pkg/standalone). Elle définit automatiquement la taille de la page pour qu'elle entoure le contenu imprimé.
+
 
 ```latex
 \documentclass{standalone}
 \usepackage[T1]{fontenc}
 \begin{document}
-A simple document: this will be a very small box!
+Un document très simple: il va tenir dans une toute petite boîte!
 \end{document}
 ```
