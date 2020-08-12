@@ -1,24 +1,15 @@
 ---
-title: "More on: Tables"
+title: "Les tables: pour aller plus loin"
 ---
 
+## D'autres options dans le préambule des tableaux
 
-## The other preamble contents
+La leçon n'ayant pas couvert tous les options disponibles pour les en-têtes de tableaux, quelques autres sont expliqués ici avec des exemples.  N'hésitez pas à revoir le début de la leçon pour avoir en tête toutes les possibilités existantes. Les courtes descriptions fournies devraient suffire à comprendre ce que font les différents types de colonnes `m`, `b`, `w`, et `W` après que vous ayez compris `l`, `c`, `r`, et `p`. Si ce n'est pas le cas, utilisez les exemples pour expérimenter un peu. Il restera ensuite à voir les autres « _preamble-tokens_ » disponibles, bien pratiques : `>`, `<`, `@`, `!` et `|`.
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
 
-### Styling a column
+### Mettre en forme une colonne
 
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
+`>` et `<` peuvent être utilisées pour insérer des éléments avant et après le contenu de chaque cellule d'une colonne. Vous pouvez donc les utiliser pour _ajouter des commandes_ qui changent la mise en forme de la colonne. Par exemple, ceci mettra en italique la première colonne et insérera un deux-points après :
 
 <!-- {% raw %} -->
 ```latex
@@ -41,13 +32,9 @@ colon after it, you can do the following:
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
+`\itshape` met tout le texte qui suit en italique, mais son effet est limité à la cellule du tableau. Nous examinerons le formatage manuel des polices [dans quelques leçons](lesson-11).
 
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+Souvent la première ligne d'un tableau est considérée comme un en-tête, et mise en forme différemment du reste. Pour obtenir ce résultat, on peut utiliser `\multicolumn`. Pensez aussi que cette commande peut être utilisée pour modifier l'alignement d'une seule cellule ici:
 
 <!-- {% raw %} -->
 ```latex
@@ -70,13 +57,10 @@ it can be used to change a single cell's alignment as shown below.
 ```
 <!-- {% endraw %} -->
 
-### Manipulating the space between columns
 
-Usually LaTeX pads each column by some space on both sides to give a balanced
-look and separate them. This space is defined with the length `\tabcolsep`. Due
-to the fact that each column is padded on both sides you get one `\tabcolsep` on
-either end of the table, and `2\tabcolsep` between two columns &ndash; one from
-each column. You can adjust this space to any length using `\setlength`:
+### Modifier l'espacement des colonnes
+
+Par défaut, LaTeX flanque chaque colonne d'un peu d'espace de chaque côté pour la séparer des autres et rendre le tableau esthétique. Cet espace est défini par la longueur `\tabcolsep`. Comme chaque colonne a cet espace de chaque côté, il y a un `\tabcolsep` à chaque extrémité du tableau, et deux `\tabcolsep` entre les différentes colonnes (un venant de chaque colonne). La largeur de cet espace peut être changé avec `\setlength` :
 
 <!-- {% raw %} -->
 ```latex
@@ -97,9 +81,7 @@ each column. You can adjust this space to any length using `\setlength`:
 ```
 <!-- {% endraw %} -->
 
-You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything in
-between the columns you specify as an argument:
+Cet espace peut être remplacé par n'importe quoi, avec `@`. Cela supprimera l'espace des deux colonnes voisines (ou celui à chaque extrémité du tableau), et mettra à la place ce qui lui est passé en argument :
 
 <!-- {% raw %} -->
 ```latex
@@ -118,11 +100,9 @@ between the columns you specify as an argument:
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
+(Nous verrons `\hspace` [très bientôt](lesson-11) ; vous devinez qu'il ajoute un espacement horizontal).
 
-The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument in center of the space between two columns.
+Dans le préambule du tableau, `!` fait quelque chose d'assez similaire. La différence est qu'il _ajoute_ son argument au centre de l'espace entre deux colonnes, au lieu de le remplacer.
 
 <!-- {% raw %} -->
 ```latex
@@ -142,9 +122,11 @@ _adds_ its argument in center of the space between two columns.
 <!-- {% endraw %} -->
 
 
-### Vertical rules
+### Traits verticaux
 
-Sometimes you have to use vertical rules.
+L'utilisation de traits verticaux dans les tableaux est plutôt découragée
+par les règles typographiques usuelles. Mais il peut arriver qu'on en ait
+besoin:
 
 <!-- {% raw %} -->
 ```latex
@@ -163,20 +145,12 @@ Sometimes you have to use vertical rules.
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
-adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though; vertical rules don't work with the
-horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
-will span any space specified in the optional argument to `\\`.
+Le comportement de `|` est assez similaire à celui de `!{arg}`: il ajoute un trait vertical entre deux colonnes en laissant intact l'espacement initial. Il a cependant un inconvénient : ces traits verticaux ne fonctionnent pas avec les traits horizontaux de `booktabs`. Vous pouvez cependant l'utiliser avec les traits horizontaux fournis par LaTeX, par les commandes `\hline` (correspondant to `\toprule`, `\midrule` et `\bottomrule`) et `\cline` (qui se comporte comme `\cmidline`). Comme on le voit, les traits verticaux couvrent bien tout espace ajouté par l'argument optionnel de `\\`.
 
-## Customizing `booktabs` rules
 
-All the `booktabs` rules and also `\addlinespace` support an optional argument
-in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a length in
-braces after `r` or `l`.
+## Personnaliser les traits de `booktabs`
+
+Tous les traits fournis par le package `booktabs`, ainsi que `\addlinespace`, acceptent un argument optionnel entre crochets pour spécifier l'épaisseur du trait. En outre, le petit retrait de `\cmidrule` peut être personnalisé en spécifiant une longueur entre accolades après `r` ou `l`.
 
 <!-- {% raw %} -->
 ```latex
@@ -197,12 +171,12 @@ braces after `r` or `l`.
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment in columns
 
-The alignment of numbers in tables can be handled by the column type `S` 
-that is provided by the `siunitx` package.
+## Alignement des nombres dans les colonnes
 
-A simple example with two aligned numeric columns would be:
+L'alignement des nombres dans les tableaux peut être géré par le type de colonne `S`, fourni par le package `siunitx`.
+
+Voici un exemple simple avec deux colonnes numériques alignées:
 
 ```latex
 \documentclass{article}
@@ -225,31 +199,22 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
-Note that any non-numeric cell must be "protected" by enclosing it in braces.
+Notez que toute cellule non numérique doit être « protégée » en la mettant entre accolades.
 
-The `siunitx` package provides many possibilities for formatting the numbers in
-different ways; see the [package
-documentation](https://texdoc.net/pkg/siunitx).
+Le paquet `siunitx` offre de nombreuses possibilités de formatage des nombres de différentes manières ;  [voir sa documentation](https://texdoc.net/pkg/siunitx).
 
-## Specifying the total table width
 
-The width of a `tabular` environment is automatically determined based
-on the contents of the table. There are two commonly used mechanisms
-to specify a different total width.
+## Fixer la largeur totale d'un tableau
 
-Note that it is almost always preferable to format the table to a
-specified width as below (perhaps using a font size such as `\small` if
-necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths.
+La largeur d'un environnement `tabular` est automatiquement déterminée en fonction du contenu du tableau. Il existe deux mécanismes principaux pour spécifier une largeur totale différente de cette largeur naturelle.
+
+Notez qu'il vaut toujours mieux de formater le tableau à une largeur fixée comme ci-dessous (en utilisant une taille de police telle que `\small` si nécessaire) plutôt que de mettre à l'échelle un tableau avec `\resizebox` ou commandes similaires, qui produiront des tailles de police et des épaisseurs de traits incohérentes.
+
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that
-specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command. This space is added
-between all columns from that point in the preamble. It is almost
-always used with `\fill`, a special space that stretches to be as large
-as necessary.
+L'environnement `tabular*` prend un argument supplémentaire (_width_) qui fixe la largeur totale du tableau. Pour donner de l'élasticité à l'ensemble, un espace extensible doit être ajouté à la table en utilisant la commande `\extracolsep`. Cet espace est ajouté entre toutes les colonnes à partir de ce point dans le préambule. Il est presque toujours utilisé avec `\fill`, un espace spécial qui s'étire pour être aussi large que nécessaire.
+
 
 ```latex
 \documentclass{article}
@@ -289,11 +254,7 @@ C & D\\
 
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+L'environnement `tabularx`, fourni par le paquet du même nom, a une syntaxe similaire à `tabular*` mais au lieu d'ajuster l'espace inter-colonne, il ajuste la largeur des colonnes spécifiées par un nouveau type de colonne, `X`. C'est équivalent à une spécification `p{...}` mais sa largeur est déterminée automatiquement.
 
 ```latex
 \documentclass{article}
@@ -331,19 +292,14 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.net/pkg/tabularx).
+À la différence des autres packages abordés dans cette leçon, `tabularx` doit compiler le tableau plusieurs fois, en essayant différentes largeurs, pour déterminer le réglage final. Ça implique plusieurs restrictions sur l'utilisation de l'environnement ; [voir sa documentation](https://texdoc.net/pkg/tabularx).
 
-## Multi-page tables
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+## Les tableaux sur plusieurs pages
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+Un environnement `tabular` forme une boîte incassable, il doit donc être suffisamment petit pour tenir sur une page, et est souvent placé dans un environnement `table` pour en faire un flottant.
+
+Plusieurs packages fournissent des variantes avec une syntaxe similaire, mais permettant des sauts de page. Nous présentons ici le package `longtable` :
 
 ```
 \documentclass{article}
@@ -380,19 +336,13 @@ A Wider Entry & b\\
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+Le package `longtable` est remarquable parce qu'il préserve la largeur des colonnes sur toutes les pages du tableau ; cependant, pour y parvenir, il faut parfois plusieurs exécutions de LaTeX, pour que les éventiuelles grandes cellules rencontrées tardivement dans le tableau puissent affecter la largeur des colonnes depuis la première page.
 
-## Table notes
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.net/pkg/threeparttable)
-for full details, but we show a simple example here.
+## Notes de bas de tableau
+
+Il est assez courant d'avoir besoin de notes de bas de tableau, avec des appels de note dans le tableau. Le package `threeparttable` simplifie la composition de ce genre de tableaux, en faisant en sorte que les notes soient placées dans un bloc de la même largeur que le tableau lui-même. Reportez-vous [à sa documentation](https://texdoc.net/pkg/threeparttable) pour plus de détails, mais voici un exemple simple:
+
 
 ```latex
 \documentclass{article}
@@ -418,23 +368,13 @@ for full details, but we show a simple example here.
 \end{document}
 ```
 
-## Typesetting in narrow columns
+## Composer dans des colonnes étroites
 
-The default line breaking settings assume relatively long lines to
-give some flexibility in choosing line breaks. The following example
-shows some possible approaches. The first table shows interword spacing
-stretched and TeX warns about Underfull lines. Using `\raggedright`
-usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise;
-it allows some raggedness in the line lengths, but will also
-hyphenate where necessary, as shown in the third table.
+Les paramètres par défaut pour les sauts de ligne supposent des colonnes relativement larges pour avoir une certaine souplesse dans le choix des sauts de ligne. L'exemple suivant montre quelques approches possibles. Le premier tableau montre l'étirement des espaces entre les mots et TeX avertit de l'existence de lignes mal remplies. L'utilisation de `\raggedright` évite généralement ce problème mais peut donne des longueurs de lignes très irrégulières, et une apparence déchiquetée au paragraphe. La commande `\RaggedRight` du paquet `ragged2e` est un compromis ; elle permet une certaine irrégularité dans la longueur des lignes, mais elle insérera aussi une coupure de mot si nécessaire, comme le montre le troisième tableau.
 
-Note the use of `\arraybackslash` here, which resets the definition of
-`\\` so that it ends the table row.
+Notez l'utilisation de `\arraybackslash` ici, qui réinitialise la définition de `\\` pour terminer la ligne du tableau.
 
-An alternative technique, as shown in the fourth table, is to use a
-smaller font so that the columns are not so narrow relative to the
-text size.
+Une autre technique, comme le montre le quatrième tableau, consiste à utiliser une police plus petite afin que les colonnes ne soient pas aussi étroites par rapport à la taille du texte.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -469,25 +409,19 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 \end{document}
 ```
 
-## Defining new column types
+## Définir de nouveaux types de colonnes
 
-As demonstrated in the [main lesson](lesson-08), the `array` package allows
-constructs such as `>{\bfseries}c`  to denote a bold centered column.
-It is often convenient to define a new column type to encapsulate such
-use, for example
+Comme l'a montré [la leçon principale](lesson-08), le package`\array` permet des constructions comme `>{\bfseries}c` pour formater une colonne centrée en gras. On peut définir un nouveau type de colonne, avec `\newcolumntype` pour encapsuler cette définition :
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in table preambles to specify a bold
-centered column.
+qui permettra l'utilisation de `B` dans les préambules de tableaux pour spécifier une colonne centrée en gras.
 
 
-## Vertical tricks
+## Astuces pour diviser une cellule dans sa hauteur
 
-Often, rather than making a cell span multiple rows it is better to instead have
-a single row in which some cells are split vertically by the use of nested
-`tabular` environments.
+Souvent, plutôt que de faire en sorte qu'une cellule s'étende sur plusieurs lignes, il est préférable d'utiliser une seule ligne dans laquelle certaines cellules sont divisées verticalement par l'utilisation d'environnements `\tabular` imbriqués:
 
 <!-- {% raw %} -->
 ```latex
@@ -510,9 +444,7 @@ a single row in which some cells are split vertically by the use of nested
 ```
 <!-- {% endraw %} -->
 
-Note that you can control vertical alignment by an optional argument to the
-`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
-bottom aligned respectively and is used like this:
+L'alignement vertical peut être contrôlé par un argument optionnel de l'environnement `\tabular` ; cet argument peut valoir `t`, `c`, ou `b` pour avoir un alignement supérieur (_**t**op_), centré (_**c**entered_) ou inférieur (_**b**ottom_) respectivement et s'utilise de cette façon :
 
 <!-- {% raw %} -->
 ```latex
@@ -535,32 +467,25 @@ bottom aligned respectively and is used like this:
 ```
 <!-- {% endraw %} -->
 
-## Line spacing in tables
 
-In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package, which is useful for adding extra space between specific lines.
+## Espacement des lignes dans les tableaux
 
-There are two general parameters that control line spacing,
-`\arraystretch` and `\extrarowheight` (the latter from the `array`
-package).
+Dans la leçon principale, nous avons présenté  `\addlinespace` du package `booktabs`, qui sert à ajouter de l'espace entre des lignes spécifiques.
+
+Il y a aussi deux paramètres généraux qui contrôlent l'espacement des lignes: `\arraystretch` et `\extrarowheight` (ce dernier du paquet `array`).
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
+augmentera de 50% l'espace entre les lignes.
 
-will increase the baseline spacing by 50%.
-
-
-Often, especially when using `\hline`, it is better just to increase
-the height of rows, without increasing their depth below the baseline.
-The following example demonstrates the `\extrarowheight` parameter.
+Souvent, surtout quand on utilise `\hline`, il est préférable de simplement augmenter la hauteur des lignes, sans augmenter leur profondeur en dessous de la ligne de base. Cet exemple illustre le paramètre `\extrarowheight`:
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
-
 
 \begin{center}
 \begin{tabular}{cc}
@@ -571,7 +496,6 @@ Cube& $x^3$\\
 \hline
 \end{tabular}
 \end{center}
-
 
 \begin{center}
 \setlength\extrarowheight{2pt}

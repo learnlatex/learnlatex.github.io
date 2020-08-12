@@ -1,16 +1,10 @@
 ---
-title: "More on: Mathematics"
+title: "Écrire les mathématiques: pour aller plus loin"
 ---
 
+## Plus d'alignements avec `amsmath`
 
-## Further `amsmath` alignments
-
-In addition to the `align*` environment shown in the main lesson,
-`amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment, and `multline` for
-splitting a larger single expression over multiple lines, aligning the
-first line to the left, and the last to the right. In all cases the `*`
-form  omits the equation numbers by default.
+En plus de l'environnement `align*` présenté dans la leçon principale, `amsmath` propose plusieurs autres constructions pour les mathématiques « en exergue », notamment `gather` pour les affichages multi-lignes qui ne nécessitent pas d'alignement, et `multline` pour fractionner une grosse expression sur plusieurs lignes, en alignant la première ligne à gauche, et la dernière à droite. Dans tous les cas, la forme étoilée (avec `*`) supprime la numérotation des équations.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -19,7 +13,6 @@ form  omits the equation numbers by default.
 \usepackage{amsmath}
 
 \begin{document}
-
 Gather
 \begin{gather}
   P(x)=ax^{5}+bx^{4}+cx^{3}+dx^{2}+ex +f\\
@@ -35,12 +28,10 @@ Multline
 \end{document}
 ```
 
-### Columns in math alignments
 
-The `amsmath` alignment environments are designed to take pairs of
-columns with the first column of each pair aligned to the right and
-the second aligned to the left. This allows multiple equations to be
-shown, each aligned towards its relation symbol.
+### Les colonnes dans les alignements mathématiques
+
+Les environnements d'alignement `amsmath` sont conçus pour prendre des paires de colonnes, la première colonne de chaque paire étant alignée à droite et la seconde à gauche. Cela permet d'afficher plusieurs équations, chacune étant alignée sur son symbole de relation.
 
 ```latex
 \documentclass{article}
@@ -60,6 +51,8 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 In addition there are variants of the display environments ending
 in `ed` that make a subterm of a larger display for example, `aligned` and
 `gathered`.
+
+En outre, il existe des variantes des environnements mathématiques « en exergue » se terminant par `ed` qui font un sous-terme d'un affichage plus grand, par exemple, `aligned` et `gathered`. (_traduction en->fr à revoir_)
 
 ```latex
 \documentclass{article}
@@ -81,9 +74,7 @@ d&=c
 \end{document}
 ```
 
-`aligned` takes a positional optional argument similar to `tabular`.
-This is often useful to align an inline math formula on its top row;
-compare the items in the list in the following example.
+L'environnement `aligned` prend un argument optionnel similaire à `tabular`, utile pour aligner une formule mathématique sur sa ligne supérieure. Comparez par exemple les différents éléments de la liste :
 
 ```latex
 \documentclass{article}
@@ -105,11 +96,9 @@ c&=d
 \end{document}
 ```
 
-## Bold Math
-Standard LaTeX has two methods to give bold symbols in math. To make
-an entire expression bold, use `\boldmath` before entering the
-expression. The command `\mathbf` is also available to set individual
-letters or words in upright bold roman.
+## La gras en mode mathématique
+
+En LaTeX standard, il y a deux façons de mettre en gras des symboles mathématiques. Pour mettre une expression entière en gras, utilisez `\boldmath` avant l'expression. La commande `\mathbf`, elle, est faite pour mettre des lettres individuelles ou des mots en romain gras.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -127,11 +116,8 @@ $\mathbf{\pi} r^2$ % bad use of \mathbf
 \end{document}
 ```
 
-If you want to access bold symbols (as would be used by `\boldmath`)
-within an otherwise normal weight expression, then you can use the
-command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as `=` and Greek letters. (Note that `\mathbf` has no effect
-on `\pi` in the example above.)
+Si vous souhaitez accéder à des symboles en gras (comme le ferait `\boldmath`) dans une expression non-grasse, vous pouvez utiliser la commande `\bm` du paquet `bm`. La commande `\bm` fonctionne également avec des symboles tels que `=` et les lettres grecques (alors que `\mathbf` n'avait aucun effet sur `\pi` dans l'exemple ci-dessus).
+
 
 ```latex
 \documentclass[a4paper]{article}
@@ -149,10 +135,14 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 \end{document}
 ```
 
-## Mathtools
+## Le package `mathtools`
+
 The package `mathtools` loads `amsmath` and adds several additional
 features, such as variants of the `amsmath` matrix environments that
 allow the column alignment to be specified.
+
+Le paquet `mathtools` charge `amsmath` et ajoute des fonctionnalités supplémentaires, telles que des environnements pour les matrices, un peu comme ceux de `amsmath`, qui permettent de spécifier l'alignement des colonnes.
+
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
@@ -171,15 +161,9 @@ allow the column alignment to be specified.
 \end{document}
 ```
 
-## Unicode Math
+## Mathématiques et Unicode
 
-As will be seen in [Lesson 14](lesson-14), there are variant TeX
-engines that use OpenType fonts. By default, these engines still use
-classic TeX math fonts but you may use the `unicode-math` package
-to use OpenType Math fonts. The details of this package are beyond
-this course and we refer you to the
-[package documentation](https://texdoc.net/pkg/unicode-math).
-However, we give a small example here.
+Comme nous le verrons dans [la leçon 14](lesson-14), il existe des variantes de moteurs TeX qui utilisent des polices OpenType. Par défaut, ces moteurs utilisent toujours les polices mathématiques TeX classiques, mais vous pouvez utiliser le package `unicode-math` pour utiliser des polices mathématiques OpenType. Les détails de ce paquet ne sont pas couverts par ce cours et nous vous renvoyons [à sa documentation](https://texdoc.net/pkg/unicode-math). Cependant, voici un petit exemple:
 
 ```
 % !TEX lualatex
