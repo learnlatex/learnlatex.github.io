@@ -1,17 +1,14 @@
 ---
-title: "More on: Structuring longer documents"
+title: "S'organiser pour écrire un document long: pour aller plus loin"
 ---
 
-## Making an index
+## Ajouter un index
 
-Depending on the type of document you are writing, you might want to include
-an index. This is a bit like making a bibliography, as it uses auxiliary files.
-Luckily, this is all automated by the `imakeidx` package. We need three
-instructions to LaTeX:
+Selon le type de document que vous rédigez, vous pouvez vouloir un index. Sa construction est automatisée par le package `imakeidx`, et ça fonctionne en interne un peu comme une bibliographie: LaTeX écrit puis relit des fichiers auxiliaires. Vous aurez besoin de trois instructions :
 
-- The `\makeindex` command, which enables creation of an index
-- The `\index` command, which marks up index entries
-- The `\printindex` command, which prints the index
+- La commande `\makeindex`, qui initialise la création d'un index,
+- La commande `\index`, qui permet de définir les entrées de l'index au fil du texte,
+- La commande `\printindex`, qui insère l'index dans le document.
 
 ```latex
 \documentclass{article}
@@ -32,7 +29,4 @@ Even more text\index{gamma@$\gamma$}.
 \end{document}
 ```
 
-We've shown two features of indexing here: subdivision using `!`, and printing
-something different from the 'sort text' of an index entry using `@`. There
-is a lot of customisation possible with an index; try out the example and see
-how it works.
+Nous avons illustré ici deux fonctionnalités de la création d'un index : la subdivision en utilisant `!`, et l'affichage de quelque chose de différent du « texte de tri » d'une entrée d'index en utilisant `@`. On peut personnaliser beaucoup de choses dans un index ; testez l'exemple et regardez comment ça fonctionne.

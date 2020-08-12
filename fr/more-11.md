@@ -1,26 +1,23 @@
 ---
-title: "More on: Formatting: fonts and spacing"
+title: "Mise en forme du texte: fontes et espacements -- Pour aller plus loin"
 ---
 
-## Suppressing the indent for one paragraph
+## Supprimer l'indentation d'un paragraphe particulier
 
-
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+Si vous voulez supprimer l'indentation d'un seul paragraphe, vous pouvez le précéder de `\noindent`. C'est à réserver pour les cas exceptionnels; en général, LaTeX sait s'en occuper automatiquement.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Un bref paragraphe, que nous avons un peu rempli pour que vous puissiez
+en voir l'effet ici !
 
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Un bref paragraphe, que nous avons un peu rempli pour que vous puissiez
+en voir l'effet ici !
 
-\noindent  One small paragraph, which we have filled out a little to make sure
-you can see the effect here!
+\noindent  Un bref paragraphe, que nous avons un peu rempli pour que
+vous puissiez en voir l'effet ici !
 \end{document}
 ```

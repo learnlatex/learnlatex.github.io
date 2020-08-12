@@ -1,12 +1,10 @@
 ---
-title: "More on: Cross-referencing"
+title: "Références croisées: pour aller plus loin"
 ---
 
-## Making cross-references into links
+## Transformer les références croisées en hyperliens
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+Vous pouvez transformer vos références croisées en hyperliens cliquables en utilisant le package `hyperref`. Dans la plupart des cas, `hyperref` doit être chargé après tout autre package du préambule de votre document.
 
 ```latex
 \documentclass{article}
@@ -24,5 +22,4 @@ More text here.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+Nous avons choisi de faire les liens de la même couleur que le texte normal ; enlevez l'option `hidelinks` pour comprendre pourquoi !     :)
