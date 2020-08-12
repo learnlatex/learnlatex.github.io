@@ -17,3 +17,22 @@ Pour vous aider à apprendre, le site comprend de nombreux exemples. Dans le but
 
 Nos exemples supposent l'utilisation d'une installation LaTeX à jour. Tous fonctionnent avec nos deux systèmes de démonstration en ligne, donc si vous obtenez des erreurs avec les exemples que nous fournissons, vérifiez d'abord que votre système LaTeX est à jour.
 
+
+## Les leçons principales
+
+{% include toc.html  prefix="fr/lesson" %}
+
+
+### Leçons spécifiques au français
+
+{% include toc.html  prefix="fr/language" %}
+
+
+## Et ensuite?
+
+Nos présentes leçons, très ciblées, ne sont pas censées couvrir tout ce dont vous aurez besoin sur LaTeX ; nous voulons vous en donner suffisamment pour vous permettre de démarrer et de _comprendre_ des exemples et des conseils que vous pourrez trouver ailleurs. La question de la recherche de documentation supplémentaire est abordée [dans la dernière leçon] (lesson-16), mais la lecture d'un livre sur LaTeX reste sans doute le meilleur moyen d'en apprendre les détails. Nous vous donnons quelques recommandations dans la dernière leçon.
+
+Enfin, nous proposons une galerie de petits exemples montrant différents domaines, non couverts dans cette introduction, et différents packages LaTeX pour ces domaines.
+
+    
+{% include toc.html prefix="fr/extra" %}
