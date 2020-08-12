@@ -68,6 +68,7 @@ En el ejemplo, el cuerpo del documento contiene dos párrafos (en LaTeX se puede
 párrafos con una o más líneas en blanco).
 Antes de `\begin{document}` se encuentra el _preámbulo del documento_,
 que dispone del código para configurar el diseño del documento.
+El comando `\usepackage` que será descrito en una [próxima lección](lesson-06) es usado en la mayoría de los ejemplos de este sitio para configurar la codificación de la fuente.
 
 En LaTeX hay otros bloques `\begin{...}` y `\end{...}`; a éstos se les llaman
 _entornos_.
