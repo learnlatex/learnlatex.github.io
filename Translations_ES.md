@@ -23,6 +23,7 @@ Files being translated :
 - lesson-09.md
 - more-09.md
 - lesson-10.md
+- more-10.md
 
 Note: A mark "(OK_x)" will be placed by translators for each item when the translations have been checked,
 x being the first letter of the translator's name. 
