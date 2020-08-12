@@ -2,154 +2,151 @@
 title: "Matemáticas"
 ---
 
-## Math mode
+## El modo matemático
 
-You can mark up mathematics in LaTeX in a logical way in what is known as
-'math mode'. In math mode, spaces are ignored and the correct spacing between
-characters is (almost always) applied. There are two forms of math mode: inline
-and display.
+Puede escribir fórmulas matemáticas en LaTeX de una forma lógica en lo que se
+conoce como "modo matemático". En el modo matemático, los espacios se ignoran y se
+aplica (casi siempre) el espaciado correcto entre los caracteres. Existen dos formas
+del modo matemático: inline (en línea) y display (en una línea aparte).
 
 ```latex
 \documentclass{article}
 \begin{document}
-A sentence with inline mathematics: $y = mx + c$.
-A second sentence with inline mathematics: $5^{2}=3^{2}+4^{2}$.
+Una frase con una fórmula matemática en línea (inline): $y = mx + c$.
+Una segunda frase con una fórmula matemática en línea (inline): $5^{2}=3^{2}+4^{2}$.
 
 
-A second paragraph containing display math.
+Un segundo párrafo con una formula matemática en una línea aparte (display).
 \[
   y = mx + c
 \]
-See how the paragraph continues after the display.
+Vea como el párrafo continua después de la ecuación escrita en una línea aparte (display)
 \end{document}
 ```
 
-You may see 'LaTeX-like' mathematical input in other places, for example
-the MathJax system for placing equations in web pages. These systems often
-accept slight variations on LaTeX's syntax as they do not actually use LaTeX
-'behind the scenes'. Our examples are all 'correct' LaTeX, so if you see
-something different in another context, it might be because the example is not
-really using LaTeX.
+Puede que haya visto fórmulas matemáticas de "estilo LaTeX" en otros sitios, por ejemplo
+el sistema MathJax permite escribir ecuaciones en páginas web. Estos sistemas aceptan a menudo
+ligeras variaciones en la sintaxis de LaTeX, ya que de hecho no usan LaTeX "en segundo plano".
+Nuestros ejemplos son todos de un LaTeX de sintaxis "correcta", así que si ve algo diferente
+en otro contexto, puede que sea porque ese ejemplo no utiliza
+realmente LaTeX.
 
-## Inline math mode and mathematical notation
+## Modo matemático inline y notación matemática
 
-As you can see above, inline math mode is marked using a pair of dollar
-symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
-Simple expressions are entered without any special markup, and you'll see
-that the math is spaced out nicely and has letters in italic.
+Como pudo ver en el ejemplo anterior, el modo matemático inline está delimitado por dos
+simbolos de dolar (`$...$`). También es posible usar la siguiente notación `\( ... \)`.
+Las expresiones simples son introducidas sin marcadores especiales y el texto matemático
+será espaciado correctamente y escrito en cursiva.
 
-Inline math mode restricts vertical size of the expression so that as
-far as possible the formula does not disturb the linespacing of the
-paragraph.
+El modo matemático inline restrinje el tamaño vertical de la expresión 
+matemática de manera que la fórmula no afecte al espaciado de línea del 
+párrafo. 
 
-Note that _all_ mathematics should be marked up as math, even if it is
-a single character  use `... $2$ ...`   not `... 2 ...` otherwise, for
-example, when you need a negative number and need math to get a minus
-sign the `... $-2$ ...` may use math digits which may not be the same
-font as the text digits (depending on the document class).
-Conversely
-beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using `_` (which
-may be marked up as `\$` and `\_` respectively).
+Note que _todo_ texto matemático debe ser delimitado como tal, incluso si sólo
+utiliza un único carácter use `... $2$ ...` en lugar de `... 2 ...`, por ejemplo, 
+cuando necesite escribir un número negativo y necesite obtener un signo menos, el escribir `... $-2$ ...`
+puede que use dígitos que no tienen el mismo estilo de letra que los dígitos 
+de texto (según el tipo de documento).
+Por otro lado, tenga cuidado con los símbolos que aparecen en un texto sin formato, copiado
+de otro lugar, como por ejemplo los valores monetarios que usan el símbolo `$`, o los nombres de fichero
+que usan el símbolo `_` (los cuales deben ser escritos como `\$` y `\_`, respectivamente).
 
-We can easily add superscripts and subscripts; these are marked using `^` and
-`_`, respectively.
+Podemos fácilmente añadir superíndices y subíndices; estos se escriben usando `^` y
+`_`, respectivamente
+
 
 ```latex
 \documentclass{article}
 \begin{document}
-Superscripts $a^{b}$ and subscripts $a_{b}$.
+Superíndices $a^{b}$ y subíndices $a_{b}$.
 \end{document}
 ```
 
-(You might see examples where simple super- and subscripts are entered without
-braces, but that is not the official syntax and can go wrong; always use
-braces.)
+(Puede que vea ejemplos de superíndices y subíndices simples sin llaves, pero no
+corresponden a la sintaxis oficial y pueden dar lugar a error; use siempre 
+llaves.)
 
-There are a _lot_ of specialist math mode commands. Some of them are quite
-easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
-Greek letter.
+Hay _muchos_ comandos especiales en el modo matemático. Algunos de ellos son bastante
+sencillos, por ejemplo `\sin` y `\log` para las funciones seno y logaritmo, o `\theta` para
+escribir la letra griega correspondiente.
 
 ```latex
 \documentclass{article}
 \begin{document}
-Some mathematics: $y = 2 \sin \theta^{2}$.
+Un poco de matemáticas: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
-We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for math math mode symbols using the
-[Detexify](https://detexify.kirelabs.org/classify.html) tool.
+No podemos abordar aquí todos los comandos de LaTeX del modo matemático, pero
+hay muchos recursos en línea que hacen una lista de los recursos standard. Puede buscar los comandos para escribir
+símbolos en modo matemático usando la herramienta [Detexify](https://detexify.kirelabs.org/classify.html)
 
+## Matemáticas en modo display (en una línea aparte)
 
-## Display mathematics
-
-You can use exactly the same commands for display math mode as for
-inline work. Display math mode is set centered by default and is meant
-for larger equations that are 'part of a paragraph'. Note that
-display math environments do not allow a paragraph to end within the
-mathematics, so you may not have blank lines within the source of the
+En el modo matemático display, puede usar exactamente los mismos comandos 
+del modo inline. El modo matemático display es centrado por defecto y es adecuado
+para ecuaciones largas que forman "parte de un párrafo". Note que
+los entornos matemáticos display no permiten que un párrafo termine con texto 
+matemático, con lo que no dispondrá de líneas en blanco dentro del modo 
 display.
 
-The paragraph should always be started _before_ the display so do not
-leave a blank line before the display math environment. If you need
-several lines of mathematics, do not use consecutive display math
-environments (this produces inconsistent spacing); use one of the
-multi-line display environments such as `align` from the `amsmath`
-package described later.
+El párrafo debe comenzar siempre _antes_ que el entorno display, así que
+no deje una línea en blanco previa al entorno matemático display. Si necesita
+varias líneas de fórmulas matemáticas, no use entornos display consecutivos
+(esto dará lugar a un espaciado incongruente); use un entorno display multilínea
+como `align` del paquete `amsmath`descrito más adelante.
 
-It's particularly useful for integrations, for example:
+Esto es particualmente útil en el caso de integrales, por ejemplo:
 
 ```latex
 \documentclass{article}
 \begin{document}
-A paragraph about a larger equation
+Un párrafo antes de una fórmula larga
 \[
 \int_{-\infty}^{+\infty} e^{-x^2} \, dx
 \]
 \end{document}
 ```
 
-Notice here how sub-/superscript notation is used to set the limits on the
-integration.
+Note aquí como la notación de superíndice et subíndice es usada para fijar los límites
+de la integral.
 
-We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`, which we need so it does not look like a product.
+Hemos añadido también aquí un espaciado manual: `\,` añade un pequeño espacio antes de 
+`dx`, lo que necesitamos para que no parezca un producto.
 
-You often want a numbered equation, which is created using the `equation`
-environment. Let's try the same example again:
+A menudo querrá tener una ecuación enumerada, estó puede hacerlo usando el
+entorno `equation`. Probemos a utilizarlo en el ejemplo anterior:
 
 ```latex
 \documentclass{article}
 \begin{document}
-A paragraph about a larger equation
+Un párrafo previo a una fórmula larga
 \begin{equation}
 \int_{-\infty}^{+\infty} e^{-x^2} \, dx
 \end{equation}
 \end{document}
 ```
 
-The equation number is incremented automatically and may be a simple
-number as in this example or may be prefixed by section number, so
-(2.5) for the 5th equation in section 2. The details of the formatting
-are set up by the document class and not described here.
+El número de la ecuación se incrementará automáticamente y puede ser un número
+simple como en este ejemplo o tener como prefijo el número de la sección, 
+así por ejemplo (2.5) será el número de la quinta ecuación de la sección número 2. 
+Los detalles de este formato son configurados por el tipo de documento y no serán
+descritos aquí.
 
+## El paquete `amsmath`
 
-## The `amsmath` package
-
-Mathematical notation is very rich, and this means that the tools built
-into the LaTeX kernel can't cover everything. The `amsmath` package
-extends the core support to cover a lot more ideas.
-The [`amsmath` User Guide](http://texdoc.net/pkg/amsmath)
-contains many more examples than we can show in this lesson.
-
+La notación matemática es muy variada y esto significa que las herramientas
+del núcleo de LaTeX no pueden cubrirlo todo. El paquete `amsmath`
+extiende las posibilidades del núcleo para cubrir muchas más funciones.
+La [Guía del Usuario `amsmath`](http://texdoc.net/pkg/amsmath)
+dispone de muchos más ejemplos de los que podemos mostrarle en esta lección.
 
 ```latex
 \documentclass{article}
 \usepackage{amsmath}
 
 \begin{document}
-Solve the following recurrence for $ n,k\geq 0 $:
+Resulva la siguiente relación de recurrencia para $ n,k\geq 0 $:
 \begin{align*}
   Q_{n,0} &= 1   \quad Q_{0,k} = [k=0];  \\
   Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $n$, $k>0$.}
@@ -157,23 +154,23 @@ Solve the following recurrence for $ n,k\geq 0 $:
 \end{document}
 ```
 
-The `align*` environment makes the equations line up on the ampersands, the `&`
-symbols, just like a table. Notice how we've used `\quad` to insert a bit of
-space, and `\text` to put some normal text inside math mode. We've also used
-another math mode command, `\binom`, for a binomial.
+El entorno `align*` hace que las ecuaciones se alineen al nivel de los símbolos `&`, 
+al igual que en una tabla. Note como hemos usado `\quad`, para añadir un poco de
+espacio, y `\text` para incluir un texto normal en el interior del modo matemático. Hemos
+usado igualmente otro comando del modo matemático, `\binom` para un binomio.
 
-Notice that here we used `align*`, and the equation didn't come out numbered.
-Most math environments number the equations by default, and the starred variant
-(with a `*`) disables numbering.
+Note que aquí hemos usado `align*` y que la ecuación no ha sido enumerada.
+La mayoría de los entornos matemáticos enumeran por defecto las ecuaciones pero sus variantes
+con un `*` hacen que no se enumeren.
 
-The package also has several other convenient environments, for
-example for matrices.
+El paquete tiene tambien otros entornos interesantes, por ejemplo
+para matrices.
 
 ```latex
 \documentclass{article}
 \usepackage{amsmath}
 \begin{document}
-AMS matrices.
+Matrices AMS.
 \[
 \begin{matrix}
 a & b & c \\
@@ -194,21 +191,21 @@ d & e & f
 ```
 
 
-## Fonts in math mode
+## Tipos de letra en modo matemático
 
-Unlike normal text, font changes in math mode often convey very specific meaning.
-They are therefore often written explicitly. There are a set of commands you need
-here:
+A diferencia del texto normal, el cambio de tipo de letra en el modo matemático a menudo lleva consigo un significado 
+muy específico. A menudo es escrito de forma explícita. Una serie de comandos que necesitará
+conocer:
 
 - `\mathrm`: roman (upright)
-- `\mathit`: italic spaced as 'text'
-- `\mathbf`: boldface
+- `\mathit`: en cursiva y espaciado como un "texto"
+- `\mathbf`: en negrita
 - `\mathsf`: sans serif
-- `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
+- `\mathtt`: mono espaciado (tipo máquina de escribir)
+- `\mathbb`: double-struck o impresión doble (blackboard bold) (disponible en el paquete `amsfonts`)
 
-Each of these takes Latin letters as an argument, so for example we might
-write a matrix as
+Cada uno de estos comandos toma como argumentos letras latinas, así por ejemplo podemos
+escribir una matriz de la siguiente forma:
 
 ```latex
 \documentclass{article}
@@ -217,45 +214,43 @@ The matrix $\mathbf{M}$.
 \end{document}
 ```
 
-Note that the default math italic separates letters so that they may
-be used to denote a product of variables. Use `\mathit` to make a word italic.
+Note que el modo cursivo matemático por defecto separa las letras con lo que
+puede usarse para ecribir un producto de variables. Use `\mathit` para poner en cursiva una palabra.
 
-The `\math..` font commands use fonts specified for math
-use. Sometimes you need to embed a word that is part of the outer
-sentence structure and needs the current text font, for that you can
-use `\text{...}` (which is provided by the `amsmath` package) or
-specific font styles such as `\textrm{..}`.
+Los comandos de tipo de letra `\math..` utilizan un tipo de letra de uso específico
+para matemáticas. Algunas veces necesitamos añadir una palabra que forma parte
+de una frase y necesitamos usar el tipo de fuente de un texto normal, para ello
+podemos usar `\text{...}` (disponible en el paquete `amsmath`) o tipos de letra
+específicos como `\textrm{..}`.
 
 ```latex
 \documentclass{article}
 \usepackage{amsmath}
 \begin{document}
 
-$\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
+$\text{mal uso } tamaño  \neq \mathit{tamaño} \neq \mathrm{tamaño} $
 
-\textit{$\text{bad use } size \neq \mathit{size} \neq \mathrm{size} $}
+\textit{$\text{mal uso } tamaño \neq \mathit{tamaño} \neq \mathrm{tamaño} $}
 
 \end{document}
 ```
 
+Si necesita poner en negrita otros símbolos, 
+[vea la sección más sobre este tema](more-10).
 
-If you need to make other
-symbols bold, [see the extra details](more-10).
+## Ejercicios
 
-## Exercises
+Pruebe a utilizar algunos modos matemáticos de base: reutilice los ejemplos y cambie
+entre los modos inline y display. Puede ver como afectan estos cambios al resultado.
 
-Try out some basic math mode work: take the examples and switch between
-inline and display math modes. Can you see what effect this has.
+Intente añadir otras letras griegas, en minúsculas y en mayúsculas. Debería
+ser capaz de adivinar sus nombres.
 
-Try adding other Greek letters, both lower- and uppercase. You should be
-able to guess the names.
+Pruebe a utilizar los comandos para cambiar el tipo de letra: ¿qué ocurre
+cuando intenta anidarlos?
 
-Experiment with the font changing commands: what happens when you try to
-nest them?
-
-Displayed math is centered by default; try adding the document class
-option `[fleqn]` (flush
-left equation) option to some of the above examples to see a different
-layout. Similarly equation numbers are usually on the
-right. Experiment with adding the `[leqno]` (left equation numbers)
-document class option.
+El modo matemático display es centrado por defecto; intente añadir la opción `[fleqn]` (justifica las
+ecuaciones a la izquierda) en la definición del tipo de documento de los ejemplos
+anteriores para ver que efectos tiene en resultado final. Del mismo modo las ecuaciones
+spn enumeradas normalmente a la derecha. Pruebe a añadir la opción `[leqno]` (enumeración de ecuaciones
+a la izquierda) en la definción del tipo de documento.
