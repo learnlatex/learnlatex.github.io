@@ -20,6 +20,7 @@ el paquete `babel`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 %\usepackage[spanish]{babel}
 
@@ -50,6 +51,7 @@ específico sobre los márgenes.
 
 ```latex
 \documentclass{book}
+\usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
 
 \begin{document}

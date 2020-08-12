@@ -11,6 +11,7 @@ del modo matemático: inline (en línea) y display (en una línea aparte).
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Una frase con una fórmula matemática en línea (inline): $y = mx + c$.
 Una segunda frase con una fórmula matemática en línea (inline): $5^{2}=3^{2}+4^{2}$.
@@ -57,6 +58,7 @@ Podemos fácilmente añadir superíndices y subíndices; estos se escriben usand
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Superíndices $a^{b}$ y subíndices $a_{b}$.
 \end{document}
@@ -72,6 +74,7 @@ escribir la letra griega correspondiente.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Un poco de matemáticas: $y = 2 \sin \theta^{2}$.
 \end{document}
@@ -100,6 +103,7 @@ Esto es particualmente útil en el caso de integrales, por ejemplo:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Un párrafo antes de una fórmula larga
 \[
@@ -119,6 +123,7 @@ entorno `equation`. Probemos a utilizarlo en el ejemplo anterior:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Un párrafo previo a una fórmula larga
 \begin{equation}
@@ -143,6 +148,7 @@ dispone de muchos más ejemplos de los que podemos mostrarle en esta lección.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 
 \begin{document}
@@ -168,6 +174,7 @@ para matrices.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Matrices AMS.
@@ -209,6 +216,7 @@ escribir una matriz de la siguiente forma:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 The matrix $\mathbf{M}$.
 \end{document}
@@ -225,6 +233,7 @@ específicos como `\textrm{..}`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 

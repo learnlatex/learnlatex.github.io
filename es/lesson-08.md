@@ -66,6 +66,7 @@ del código fuente.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -85,6 +86,7 @@ Si la columna de una tabla contine mucho texto, tendrá problemas para fijarlo
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -112,6 +114,7 @@ la mayoría de las veces. Compare el resultado del ejemplo anterior con siguient
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -138,6 +141,7 @@ el primero ejemplo de tabla en esta lección usando esta nueva sintáxis que aca
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -169,6 +173,7 @@ en la parte alta, en las filas intermedias o en la parte baja de la tabla, respe
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -196,6 +201,7 @@ deberá especificarlo como un intervalo (siendo los extremos del intervalo el mi
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -222,6 +228,7 @@ un argumento opcional entre paréntesis:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -253,6 +260,7 @@ peude usar `\addlinespace` que añadirá un pequeño espacio vertical entre amba
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -292,6 +300,7 @@ tipo de columna_.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -319,6 +328,7 @@ cabecera de la tabla:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -345,6 +355,7 @@ del significado deseado sin extender las celdas verticalmente.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 

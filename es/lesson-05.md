@@ -44,6 +44,7 @@ difieren un poco.
 
 ```latex
 \documentclass{letter}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{letter}{Una Dirección\\Una Calle\\Una Ciudad}
@@ -104,6 +105,7 @@ tipo `memoir` afecta a la presentación del documento.
 
 ```latex
 \documentclass{article} % Cambie aquí el tipo de documento
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

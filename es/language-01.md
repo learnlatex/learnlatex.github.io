@@ -12,6 +12,7 @@ using US English patterns, but you can switch to UK ones using `babel`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[UKenglish]{babel}
 \begin{document}
 Some text

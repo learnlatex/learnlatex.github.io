@@ -46,6 +46,7 @@ TeX Live or MiKTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \newcommand\mycommand{\textbold{hmmm}}
 
@@ -62,7 +63,7 @@ This produces a multi-line message in the log file.
 ! Undefined control sequence.
 \mycommand ->\textbold 
                        {hmmm}
-l.7 My command is used here \mycommand
+l.8 My command is used here \mycommand
                                       .
 ? 
 ```
@@ -104,6 +105,7 @@ as it makes it appear that `\mycommand` is not defined.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage[leqno}{amsmath}
 
@@ -126,7 +128,7 @@ lines do accurately display the location of the error by the use of
 the linebreak showing how far TeX had read:
 
 ```
-l.3 \usepackage[leqno}
+l.4 \usepackage[leqno}
                       {amsmath}
 ```
 {: .noedit :}
@@ -136,6 +138,7 @@ l.3 \usepackage[leqno}
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmathz}
 
@@ -160,6 +163,7 @@ current system.
 
 ```
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

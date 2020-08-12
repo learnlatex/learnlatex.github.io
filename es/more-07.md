@@ -65,6 +65,7 @@ salida justo en el mismo sitio en el que se encuentra en el fichero de entrada.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % Texto de relleno
 \usepackage{float}
@@ -97,6 +98,7 @@ comando, `trivfloat`, que permite crear nuevos tipos de objetos flotantes.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % Texto de relleno
 \usepackage{trivfloat}

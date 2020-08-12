@@ -20,6 +20,7 @@ necesidad de usar un teclado alemán.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage[ngerman]{babel} % Note que la nombre de la opción es 'ngerman'
 
@@ -48,6 +49,7 @@ el idioma de un documento a todos los paquetes del mismo, debemos usar:
 
 ```latex
 \documentclass[ngerman]{article} % Note que el nombre de la opción es 'ngerman'
+\usepackage[T1]{fontenc}
 
 \usepackage{babel}
 

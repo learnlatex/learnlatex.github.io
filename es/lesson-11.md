@@ -13,6 +13,7 @@ package.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
 \usepackage{lipsum} % Just for some filler text
 \begin{document}
@@ -48,6 +49,7 @@ for that.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some text \hspace{1cm} more text.
 
@@ -69,6 +71,7 @@ For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
@@ -83,6 +86,7 @@ or we can use `{...}` to make an explicit group.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Normal text.
 
@@ -104,6 +108,7 @@ _before_ changing the font size back; see how we add an explicit `\par`
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Normal text.
 

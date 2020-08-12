@@ -14,6 +14,7 @@ de `*` evita la enumación de la ecuación.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}
 
@@ -43,6 +44,7 @@ cada una justificada con respecto al símbolo de relación entre los miembros de
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Aligned equations
@@ -60,6 +62,7 @@ crear una subparte de un display más largo, por ejemplo, `aligned` y
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Aligned:
@@ -83,6 +86,7 @@ compare los elementos de la lista del siguiente ejemplo:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 \begin{itemize}
@@ -109,6 +113,7 @@ letras o palabras escritas con el tipo de letra roman recto.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
@@ -130,6 +135,7 @@ ningún efecto sobre `\pi`.)
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{bm}
 
 \begin{document}
@@ -151,6 +157,7 @@ que permiten indicar la justificación de las columnas.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{mathtools}
 
 \begin{document}

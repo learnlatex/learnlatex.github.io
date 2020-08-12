@@ -9,6 +9,7 @@ hay tres comandos para definir los "metadatos" y uno para usarlos.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 \author{A.~N.~Otro \and D.~Nobacon}
 \title{Algunas cosas que hice}
@@ -40,6 +41,7 @@ menos común: las "listas descriptivas"
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{description}

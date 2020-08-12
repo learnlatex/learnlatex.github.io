@@ -15,6 +15,7 @@ más comunes en LaTeX, `\emph`, con simplemente poner algo en cursiva. (En la im
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto con \emph{énfasis y contenido \emph{anidado}}.
 
@@ -51,6 +52,7 @@ largo del documento.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 ¡Hey mundo!
 
@@ -100,6 +102,7 @@ de una lista.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 Numerada

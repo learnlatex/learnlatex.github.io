@@ -23,6 +23,7 @@ después del contenido de cada celda de esa columna, puede hacer lo siguiente:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -51,6 +52,7 @@ puede ser usado para cambiar la alineación de una única celda como se muestra 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -79,6 +81,7 @@ uno por cada columna. Puede ajustar este espacio a cualquier ancho usando `\setl
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \setlength\tabcolsep{1cm}
@@ -101,6 +104,7 @@ que usted especifique como argumento:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -123,6 +127,7 @@ _añade_ el argumento en el centro del espacio entre dos columnas.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -143,6 +148,7 @@ En algunas ocasiones tendrá que utilizar líneas verticales.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -174,6 +180,7 @@ el ancho entre corchetes después de las opciones `r` o `l`.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -201,6 +208,7 @@ Un ejemplo simple de dos columnas numéricas alineadas:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{booktabs}
 \usepackage{siunitx}
 \begin{document}
@@ -248,6 +256,7 @@ posible.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
 
@@ -291,6 +300,7 @@ especificado con `p{...}` pero con un ancho determinado automáticamente.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \begin{document}
 
@@ -340,6 +350,7 @@ dividir la tabla en un cambio de página. Mostramos aquí el uso del paquete `lo
 
 ```
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}
 \usepackage{longtable}
@@ -389,6 +400,7 @@ más detalles, pero veamos aquí un ejemplo simple.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{threeparttable}
 \begin{document}
@@ -431,6 +443,7 @@ con respecto al tamaño del texto.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{ragged2e}
 \begin{document}
@@ -484,6 +497,7 @@ A menudo, en lugar de extender una celda en múltiples filas es mejor tener una
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -508,6 +522,7 @@ para centralo o para alinearlo a la parte baja, respectivamente:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -546,6 +561,7 @@ El siguiente ejemplo muestra el uso del parámetro `\extrarowheight`.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
 

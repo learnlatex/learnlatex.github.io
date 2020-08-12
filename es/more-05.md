@@ -22,6 +22,7 @@ común, le mostramos un ejemplo de cómo funciona:
 
 ```latex
 \documentclass{beamer}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{frame}{Una primer marco}
@@ -55,6 +56,7 @@ Configura automáticamente el tamaño de la página para enmarcar el contenido a
 
 ```latex
 \documentclass{standalone}
+\usepackage[T1]{fontenc}
 \begin{document}
 Un simple documento: ¡esto será un marco muy pequeño!
 \end{document}

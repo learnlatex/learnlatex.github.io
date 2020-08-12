@@ -114,6 +114,7 @@ The basic structure of our input is as shown in this example.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{natbib}
 
 \begin{document}
@@ -154,6 +155,7 @@ some new commands for this.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[style=authoryear]{biblatex}
 \addbibresource{learnlatex.bib} % file of reference info
 

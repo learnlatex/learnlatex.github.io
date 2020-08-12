@@ -12,6 +12,7 @@ en otro lugar.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 ¡Hey mundo!

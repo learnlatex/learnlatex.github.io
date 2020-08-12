@@ -9,6 +9,7 @@ que añade el comando `\includegraphics` a LaTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -42,6 +43,7 @@ para la proporción de las dimensiones de la imagen sea la correcta.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -60,6 +62,7 @@ La otra cosa que querrá hacer es recortar una imagen con `clip` y `trim`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -78,6 +81,7 @@ flotantes para evitar grandes espacios blancos en una página.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % Produce un texto de relleno
 

@@ -15,6 +15,7 @@ LaTeX local; es una buena idea ver cómo funcionan las diferentes opciones.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 ¡Hey mundo!
@@ -80,6 +81,7 @@ para mostrar la estructura del documento:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % El tipo de documento con las opciones
+\usepackage[T1]{fontenc}
 % Un comentario en el preámbulo
 \begin{document}
 % Esto es un comentario
