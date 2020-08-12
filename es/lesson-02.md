@@ -75,5 +75,5 @@ un editor; le recomendamos comenzar con TeXworks o TeX Shop (ver la lista
 más arriba), y luego probar otros editores hasta que _usted_ sepa con cuál 
 trabaja mejor en LaTeX.
 
-Será posible [compilar todos nuestros ejercicios en su explorador](help), pero queremos 
+Será posible [compilar todos nuestros ejercicios en su explorador](help.md), pero queremos 
 ayudarle a trabajar con documentos reales, por lo que ahora es un buen momento para que se prepare.
