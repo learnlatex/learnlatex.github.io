@@ -1,6 +1,6 @@
 ---
 title: "Using the learnlatex.org site"
-permalink: /en/help
+permalink: /fr/help
 ---
 
 ## Navigating the site
@@ -16,6 +16,7 @@ At the end of the course there are one or more lessons specific to the
 language being used for the lessons, and finally a gallery of examples
 of packages demonstrating LaTeX use not covered by this course.
 
+
 ## Running the examples
 
 Each example consists of a complete small LaTeX document shown within
@@ -24,6 +25,7 @@ the page like this:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
 Example text.
 \end{document}

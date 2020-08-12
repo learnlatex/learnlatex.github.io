@@ -3,7 +3,7 @@ title: "Language-specifics for English"
 next: "extra-01"
 ---
 
-## hyphenation
+## Hyphenation
 
 LaTeX was written for use with English, and so there are very few
 language-specific issues facing authors in English. The main one
