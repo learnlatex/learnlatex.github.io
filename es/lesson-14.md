@@ -75,7 +75,6 @@ an example showing some Latin and Greek letters as well as some CJK ideographs:
 
 ```latex
 \documentclass{article}
-\usepackage[T1]{fontenc}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 \newfontfamily\cjkfont{FandolSong-Regular.otf}
