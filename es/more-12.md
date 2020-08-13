@@ -1,20 +1,20 @@
 ---
-title: "Más sobre: Citaciones y referencias"
+title: "Más sobre: Citas y referencias"
 ---
 
-## Dealing with non-English sorting
+## Tratando con referencias en lengua no inglesa
 
-The BibTeX program was written primarily to deal with references in English. It
-is very limited in handling accented characters, and even more limited with
-non-Latin letters. In contrast, the Biber program was written from the start to
-handle a mix of scripts properly.
+El programa BibTeX ha sido escrito inicialmente para tratar con referencias en inglés.
+Está muy limitado en el uso de caracteres acentuados y aún más con el uso de caracteres
+no latinos. Al contrario, el programa Biber ha sido escrito desde sus inicios para
+tratar con diferentes tipos de scripts correctamente.
 
-This means that if you are sorting your bibliography, and you need to sort in
-anything other than English order, you really should be using `biblatex` and
-Biber, rather than `natbib` and BibTeX.
+Esto significa que si está ordenando su bibliografía y necesita hacerlo en un idioma
+diferente del inglés, deberá hacer uso de `biblatex` y Biber, más que de `natbib` y 
+BibTeX.
 
-## Hyperlinks
+## Hipervínculos
 
-If you load the `hyperref` package (as covered [earlier](more-09)), it will
-automatically make some content in your bibliography into links. This is
-particularly useful for URLs and DOIs.
+Si carga el paquete `hyperref` (que hemos abordado [con anterioridad](more-09)), éste
+convierte automáticamente sus citas en enlaces a la bibliografía. Esto es
+particularmente útil para las URLs y DOIs (enlaces creados directamente a partir de las DOIs).
