@@ -2,7 +2,7 @@
 title: "Más sobre: Formateando el texto: fuentes y espaciado"
 ---
 
-## Suppressing the indent for one paragraph
+## Suprimiendo la identación de un único párrafo
 
 
 If you want to suppress indentation for a single paragraph, you can use
@@ -10,17 +10,21 @@ If you want to suppress indentation for a single paragraph, you can use
 This should be _very_ rarely used; most of the time, you should let LaTeX
 handle this automatically.
 
+Si quiere suprimir la identación de un único párrafo, puede usar el comado
+`\noindent`.
+Éste debe ser usado en _muy_ raras ocasiones; la mayor parte del tiempo. debe dejar que LaTeX se encargue automáticamente de ello. 
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Un pequeño párrafo, en el que hemos puesto un poco de texto de relleno para
+asegurarnos de que pueda ver el ¡efecto buscado!
 
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Un pequeño párrafo, en el que hemos puesto un poco de texto de relleno para
+asegurarnos de que pueda ver el ¡efecto buscado!
 
-\noindent  One small paragraph, which we have filled out a little to make sure
-you can see the effect here!
+\noindent  Un pequeño párrafo, en el que hemos puesto un poco de texto de relleno para
+asegurarnos de que pueda ver el ¡efecto buscado!
 \end{document}
 ```
