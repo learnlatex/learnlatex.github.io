@@ -2,109 +2,111 @@
 title: "Formateando el texto: fuentes y espaciado"
 ---
 
-## Paragraph spacing
+## Espaciado entre párrafos
 
-We have already seen that a blank line in your input will generate a new
-paragraph in LaTeX. This shows up as the paragraph will start with an
-indent.
-One common style is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can achieve that using the `parskip`
-package.
+Ya hemos visto que una línea en blanco en su documento genera un nuevo párrafo 
+en LaTeX. Esto se evidencia al comenzar el párrafo con una identación.
+Una elección común es la de no identar los párrafos, sino en su lugar añadir 
+una "línea en blanco" entre ellos. Esto lo podemos conseguir usando el paquete 
+`parskip`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
-\usepackage{lipsum} % Just for some filler text
+\usepackage{lipsum} % Un poco de texto de relleno
 \begin{document}
 \lipsum
 \end{document}
 ```
 
-## Forcing a new line
+## Forzando un salto de línea
 
-Most of the time, you should not force a new line in LaTeX: you almost
-certainly want a new paragraph or to use `parskip`, as we've just seen,
-to put a 'blank line' between paragraphs.
+En la mayoría de las situaciones, no debe forzar un salto de línea en LaTeX: casi 
+seguro que lo quiere es un nuevo párrafo o usar `parskip`, como acabamos de ver, 
+para añadir una "línea en blanco" entre párrafos.
 
-There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph
+Habrá _pocos_ lugares en los que use `\\` para comenzar una nueva línea sin 
+que esto signifique comenzar un nuevo párrafo:
 
-- At the end of table rows
-- Inside the `center` environment
-- In poetry (the `verse` environment)
+- Al terminar la fila de una tabla
+- En el interior de un entorno `center`
+- Al escribir una poesía (en el entorno `verse`)
 
-Almost always, if you are not in one of those special places, you should
-_not_ use `\\`.
+Casi siempre, si no se encuentra en uno de esos casos, _no_ debe usar 
+`\\`.
 
-## Adding explicit space
+## Añadiendo un espacio explicitamente
 
-We can insert a thin space (about half the normal thickness) using
-`\,`. In math mode, there are also other commands: `\.`, `\:` and `\;`,
-and one for a negative space: `\!`.
+Podemos añadir un pequeño espacio (de aproximadamente la mitad del ancho du un 
+espacio normal) usando `\,`. En el modo matemático, existen también otros comandos: `\.`,
+`\:` y `\;`, incluso uno para un espacio hacia atrás: `\!`.
 
-Very rarely, for example when creating a title page, you might need to
-add explicit horizontal or vertical space. We can use `\hspace` and `\vspace`
-for that.
+En raras ocasiones, como por ejemplo al crear una página de título, necesitará 
+añadir explicitamente un espacio horizontan o vertical. Puede usar en esos casos 
+los comandos `\hspace` y `\vspace`, para crear un espacio horizontal y vertical, 
+respectivamente.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some text \hspace{1cm} more text.
+Un poco de texto \hspace{1cm} más texto.
 
 \vspace{10cm}
 
-Even more text.
+Aún un poco más texto.
 \end{document}
 ```
 
-## Explicit text formatting
+## Indicando explicitamente el formato del texto
 
-We saw [a while ago](lesson-03) that most of the time logical structure is
-preferable. But sometimes you want to make text bold, or italic, or monospaced,
-etc. There are two types of command for this: ones for short pieces of text,
-and ones for 'running' material.
+Vimos [ya hace un tiempo](lesson-03) que en la mayoría de las casos el formato 
+dado por la estructura lógica es el más conveniente. Pero en ocasiones, usted querrá 
+poner un texto en negrita, en cursiva, con letras de espaciado fijo, etc. Hay dos 
+tipos de comando para hacer esto: unos para pequeñas porciones de texto y otros 
+para contenidos "más consecuentes" del cuerpo de un documento (frases, párrafos, etc.)
 
-For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
-`\texttt` and `\textsc`.
+Para las pequeñas porciones de texto, usaremos `\textbf`, `\textit`, `\textrm`
+, `\texttt` y `\textsc`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
-\textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
+Divirtámonos un poco con el estilo de letra: \textbf{bold}, \textit{italic}, \textrm{roman},
+\textsf{sans serif}, \texttt{monospaced - letras de espaciado fijo} and \textsc{small caps - pequeñas mayúsculas}.
 \end{document}
 ```
 
-For running text, we use commands that alter the font setup; the commands
-here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them from applying to
-the whole document. LaTeX environments are groups, as are table cells,
-or we can use `{...}` to make an explicit group.
+Para partes del texto del cuerpo de un documento, usaremos comandos que cambian 
+el estilo del tipo de letra usado. Debido a ello, necesitaremos situar el comando
+y el texto en un mismo _grupo_ ya que en caso contrario, el estilo se aplicará 
+a todo el documento. Los entornos de LaTeX son grupos, al igual las celdas de una 
+tabla, fuera de estos casos particulares, pondremos nuestro contenido entre llaves 
+`{...}` para explicitar la creación de un grupo. 
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Normal text.
+Texto normal.
 
 {\itshape
 
-This text is italic.
+Este texto está en cursiva.
 
-So it this: the effect is not limited to a paragraph.
+Así es como es: el efecto del cambio de estilo no se limita al párrafo.
 
 }
 \end{document}
 ```
 
-We can set font size in a similar way; these commands all work on an ongoing
-basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
-`\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back; see how we add an explicit `\par`
-(paragraph break) here.
+Podemos fijar el tamaño de letra de una forma similar; estos comandos se aplican 
+al contenido de un grupo, como los anteriores. Los tamaños que podemos fijar son 
+relativos: `\huge`, `\large`, `\normalsize`, `\small` y `footnotesize` son los 
+más comunes. Es importante terminar un párrafo _antes_ de volver a cambiar el tamaño
+de letra; vea como añadimos aquí de forma explícita un `\par` (salto de párrafo).
 
 ```latex
 \documentclass{article}
@@ -113,20 +115,21 @@ _before_ changing the font size back; see how we add an explicit `\par`
 Normal text.
 
 \begin{center}
-{\itshape\large Some text\par}
-Normal text
-{\bfseries\small Much smaller text\par}
+{\itshape\large Un poco de texto\par}
+Texto normal
+{\bfseries\small Texto mucho más pequeño\par}
 \end{center}
 
 \end{document}
 ```
 
-## Exercises
+## Ejercicios
 
-Experiment with manual formatting: create a `titlepage` environment and
-try inserting different spaces and font changes. What happens when we
-combine font changes? How does this compare to math mode?
+Haga pruebas para cambiar manualmente el formato del texto: cree un entorno `titlepage` 
+e intente añadir diferentes tipos de espaciado y cambiar el estilo y tamaño del texto. 
+¿Qué ocurre cuando combina cambios en el estilo y tamaño del texto? ¿Hay diferencias
+con respecto al modo matemático?
 
-What happens if you change the font size of a large paragraph (try with
-`\tiny` then with `\huge`) but don't issue a final `\par` before closing
-the group?
+¿Qué ocurre si cambia el tamaño de letra en el interior de un párrafo largo 
+(utilice primero `\tiny` y luego `\huge`) pero sin usar `\par` antes de cerrar 
+el grupo?
