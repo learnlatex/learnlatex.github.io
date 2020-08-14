@@ -2,16 +2,16 @@
 title: "Más sobre: Estructurando documentos largos"
 ---
 
-## Making an index
+## Realizando un índice de materias
 
-Depending on the type of document you are writing, you might want to include
-an index. This is a bit like making a bibliography, as it uses auxiliary files.
-Luckily, this is all automated by the `imakeidx` package. We need three
-instructions to LaTeX:
+En función del tipo de documento que esté escribiendo, puede que quiera incluir
+un índice de materias. Hacerlo es casi como hacer una bibliografía, ya se usan
+archivos auxiliares. Afortunadamente, todo esto está automatizado en el paquete
+`\imakeidx`. Necesitaremos hacer uso de tres instrucciones de LaTeX
 
-- The `\makeindex` command, which enables creation of an index
-- The `\index` command, which marks up index entries
-- The `\printindex` command, which prints the index
+- El comando `\makeindex` que permite la creación de un índice de materias
+- El comando `\index` que etiqueta cada una de las entradas del índice de materias
+- El comando `\printindex` que hace que se imprima el índice de materias
 
 ```latex
 \documentclass{article}
@@ -19,20 +19,20 @@ instructions to LaTeX:
 \usepackage{imakeidx}
 \makeindex
 \begin{document}
-Some text about Foo\index{foo}.
-More text\index{baz!bar}.
-Even more text\index{alpha@$\alpha$}.
-More text about a different part of baz\index{baz!wibble}.
+Algo de texto sobre Foo\index{foo}.
+Más texto\index{baz!bar}.
+Aún más texto\index{alpha@$\alpha$}.
+Más texto sobre una parte diferente de baz\index{baz!wibble}.
 
 \clearpage
-Some text about Foo\index{foo} again, on a different page.
-Even more text\index{beta@$\beta$}.
-Even more text\index{gamma@$\gamma$}.
+Algo de texto sobre Foo\index{foo} de nuevo, en una página diferente.
+Aún más texto\index{beta@$\beta$}.
+Aún más texto\index{gamma@$\gamma$}.
 \printindex
 \end{document}
 ```
 
-We've shown two features of indexing here: subdivision using `!`, and printing
-something different from the 'sort text' of an index entry using `@`. There
-is a lot of customisation possible with an index; try out the example and see
-how it works.
+Hemos mostrado, en este ejemplo, dos tipos de indexación: la subdivisión usando `!` y
+el poder indicar algo diferente del "texto de la etiqueta" en la entrada del índice usando `@`.
+Existe una gran posibilidad de personalización del índice de materias; experimente
+con el ejemplo para ver cómo funciona.
