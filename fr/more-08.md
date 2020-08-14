@@ -201,7 +201,7 @@ Voici un exemple simple avec deux colonnes numériques alignées :
 
 Notez que toute cellule non numérique doit être « protégée » en la mettant entre accolades.
 
-Le paquet `siunitx` offre de nombreuses possibilités de formatage des nombres de différentes manières ;  [voir sa documentation](https://texdoc.net/pkg/siunitx).
+Le package `siunitx` offre de nombreuses possibilités de formatage des nombres de différentes manières ;  [voir sa documentation](https://texdoc.net/pkg/siunitx).
 
 
 ## Fixer la largeur totale d'un tableau
@@ -254,7 +254,7 @@ C & D\\
 
 ### `tabularx`
 
-L'environnement `tabularx`, fourni par le paquet du même nom, a une syntaxe similaire à `tabular*` mais au lieu d'ajuster l'espace inter-colonne, il ajuste la largeur des colonnes spécifiées par un nouveau type de colonne, `X`. C'est équivalent à une spécification `p{...}` mais sa largeur est déterminée automatiquement.
+L'environnement `tabularx`, fourni par le package du même nom, a une syntaxe similaire à `tabular*` mais au lieu d'ajuster l'espace inter-colonne, il ajuste la largeur des colonnes spécifiées par un nouveau type de colonne, `X`. C'est équivalent à une spécification `p{...}` mais sa largeur est déterminée automatiquement.
 
 ```latex
 \documentclass{article}
@@ -370,7 +370,7 @@ Il est assez courant d'avoir besoin de notes de bas de tableau, avec des appels 
 
 ## Composer dans des colonnes étroites
 
-Les paramètres par défaut pour les sauts de ligne supposent des colonnes relativement larges pour avoir une certaine souplesse dans le choix des sauts de ligne. L'exemple suivant montre quelques approches possibles. Le premier tableau montre l'étirement des espaces entre les mots et TeX avertit de l'existence de lignes mal remplies. L'utilisation de `\raggedright` évite généralement ce problème mais peut donne des longueurs de lignes très irrégulières, et une apparence déchiquetée au paragraphe. La commande `\RaggedRight` du paquet `ragged2e` est un compromis ; elle permet une certaine irrégularité dans la longueur des lignes, mais elle insérera aussi une coupure de mot si nécessaire, comme le montre le troisième tableau.
+Les paramètres par défaut pour les sauts de ligne supposent des colonnes relativement larges pour avoir une certaine souplesse dans le choix des sauts de ligne. L'exemple suivant montre quelques approches possibles. Le premier tableau montre l'étirement des espaces entre les mots et TeX avertit de l'existence de lignes mal remplies. L'utilisation de `\raggedright` évite généralement ce problème mais peut donne des longueurs de lignes très irrégulières, et une apparence déchiquetée au paragraphe. La commande `\RaggedRight` du package `ragged2e` est un compromis ; elle permet une certaine irrégularité dans la longueur des lignes, mais elle insérera aussi une coupure de mot si nécessaire, comme le montre le troisième tableau.
 
 Notez l'utilisation de `\arraybackslash` ici, qui réinitialise la définition de `\\` pour terminer la ligne du tableau.
 
@@ -472,7 +472,7 @@ L'alignement vertical peut être contrôlé par un argument optionnel de l'envir
 
 Dans la leçon principale, nous avons présenté  `\addlinespace` du package `booktabs`, qui sert à ajouter de l'espace entre des lignes spécifiques.
 
-Il y a aussi deux paramètres généraux qui contrôlent l'espacement des lignes : `\arraystretch` et `\extrarowheight` (ce dernier du paquet `array`).
+Il y a aussi deux paramètres généraux qui contrôlent l'espacement des lignes : `\arraystretch` et `\extrarowheight` (ce dernier du package `array`).
 
 ```latex
 \renewcommand\arraystretch{1.5}

@@ -40,7 +40,7 @@ En outre, il existe quelques autres _preamble-tokens_ qui ne définissent pas un
 | `@{decl}` | remplace l'espace entre deux colonne par la chaîne `decl`. |
 | `!{decl}` | ajout la chaîne `decl` au centre de l'espace entre deux colonnes. |
 
-Ces deux tableaux répertorient tous les types de colonnes disponibles avec LaTeX et le package `array`. Quelques types de colonnes supplémentaires, provenant d'autres paquets, sont présentés [en approfondissement](more-08) de cette leçon.
+Ces deux tableaux répertorient tous les types de colonnes disponibles avec LaTeX et le package `array`. Quelques types de colonnes supplémentaires, provenant d'autres packages, sont présentés [en approfondissement](more-08) de cette leçon.
 
 Les colonnes `l`, `c` et `r` auront la largeur naturelle de la cellule la plus large. Chaque colonne doit être déclarée, donc si vous voulez trois colonnes centrées, vous utiliserez `ccc` dans le préambule du tableau. Les espaces sont ignorées, donc `c c c` donne la même chose.
 

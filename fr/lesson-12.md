@@ -61,7 +61,7 @@ Pour nos démonstrations, nous utiliserons la courte base de données d'exemple 
 
 Pour insérer les informations bibliographiques dans votre document LaTeX, il y a trois étapes. Tout d'abord, utilisez LaTeX pour compiler votre document, ce qui crée un fichier avec la liste des références que votre document cite.  Ensuite, lancez un programme qui extrait de la base de données bibliographique les entrées que vous utilisez et les met en ordre.  Enfin, recompilez votre document afin que LaTeX puisse utiliser ces informations pour insérer les références et les mettre en forme. En général, il faut au moins deux compilations pour résoudre toutes les références.
 
-Pour la deuxième étape, deux systèmes sont largement utilisés : BibTeX et Biber. Biber n'est utilisé qu'avec un package LaTeX appelé `biblatex`, alors que BibTeX est utilisé soit sans aucun paquet particulier, soit avec `natbib`.
+Pour la deuxième étape, deux systèmes sont largement utilisés : BibTeX et Biber. Biber n'est utilisé qu'avec un package LaTeX appelé `biblatex`, alors que BibTeX est utilisé soit sans aucun package particulier, soit avec `natbib`.
 
 Le lancement d'un second outil en plus de de LaTeX est géré de différentes façons par les différents éditeurs. Pour les exemples sur _learnlatex.org_, nous avons écrit des scripts qui s'occupent de tout « en coulisses ». Votre éditeur préféré peut avoir un seul bouton « faire ce qu'il faut », ou bien vous pouvez choisir de lancer BibTeX ou Biber manuellement entre les exécutions de LaTeX.
 
@@ -70,7 +70,7 @@ Le format des citations et des références est indépendant de votre base de do
 
 ## La chaîne de traitement BibTeX avec `natbib`
 
-S'il est possible d'insérer des citations dans un document LaTeX sans qu'aucun paquet ne soit chargé, les possibilités sont assez limitées. Nous utiliserons plutôt le package `natbib`, qui nous permet de créer différents types de citations et qui propose de nombreux styles.
+S'il est possible d'insérer des citations dans un document LaTeX sans qu'aucun package ne soit chargé, les possibilités sont assez limitées. Nous utiliserons plutôt le package `natbib`, qui nous permet de créer différents types de citations et qui propose de nombreux styles.
 
 Voici la structure de base de notre exemple :
 
@@ -95,7 +95,7 @@ Together \citep{Graham1995,Thomas2008}
 \end{document}
 ```
 
-Comme vous voyez, on peut citer les entrées de la base de données en donnant simplement leur clef. Le paquet `natbib` offre des styles de citation textuelle ou parenthésée, `\citet` ou `\citep`, respectivement. Le style de référence est sélectionné par la ligne `\bibliographystyle` ; ici nous avons utilisé le style `plainnat`. La bibliographie est finalement insérée par la ligne `\bibliography`, qui choisit également la ou les bases de données à utiliser ; il s'agit d'une liste de noms de fichiers séparés par des virgules.
+Comme vous voyez, on peut citer les entrées de la base de données en donnant simplement leur clef. Le package `natbib` offre des styles de citation textuelle ou parenthésée, `\citet` ou `\citep`, respectivement. Le style de référence est sélectionné par la ligne `\bibliographystyle` ; ici nous avons utilisé le style `plainnat`. La bibliographie est finalement insérée par la ligne `\bibliography`, qui choisit également la ou les bases de données à utiliser ; il s'agit d'une liste de noms de fichiers séparés par des virgules.
 
 Les numéros de pages peuvent être ajoutés à la citation avec un argument optionnel. Si deux arguments facultatifs sont donnés, le premier est placé devant l'étiquette de la citation pour une courte note et le second après l'étiquette, pour une référence de page.
 

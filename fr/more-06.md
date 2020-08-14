@@ -9,7 +9,7 @@ La commande `\usepackage` prend une liste de packages séparés par des virgules
 
 ## Le package `babel`
 
-Nous avons présenté le paquet `babel` [dans la leçon principale](lesson-06) comme un moyen de choisir différents motifs de césure. Il fait beaucoup plus que cela, selon la ou les langues utilisées. Par exemple, en allemand, il fournit des raccourcis pour créer des traits d'union conditionnels, et aussi un moyen de taper rapidement des _umlauts_ (trémas) sans avoir besoin d'un clavier allemand.
+Nous avons présenté le package `babel` [dans la leçon principale](lesson-06) comme un moyen de choisir différents motifs de césure. Il fait beaucoup plus que cela, selon la ou les langues utilisées. Par exemple, en allemand, il fournit des raccourcis pour créer des traits d'union conditionnels, et aussi un moyen de taper rapidement des _umlauts_ (trémas) sans avoir besoin d'un clavier allemand.
 
 ```latex
 \documentclass{article}
@@ -29,7 +29,7 @@ D'autres paramètres linguistiques apportent des modifications à la mise en for
 
 ## Options globales
 
-Parfois, vous souhaitez qu'une option soit disponible pour tous les packages que vous avez chargés. Pour ce faire, il suffit de le signaler sur la ligne `\documentclass` : ainsi, chaque package peut « voir » cette liste. Donc, pour passer la langue d'un document à tous les paquets, on peut utiliser :
+Parfois, vous souhaitez qu'une option soit disponible pour tous les packages que vous avez chargés. Pour ce faire, il suffit de le signaler sur la ligne `\documentclass` : ainsi, chaque package peut « voir » cette liste. Donc, pour passer la langue d'un document à tous les packages, on peut utiliser :
 
 ```latex
 \documentclass[ngerman]{article} % 'ngerman' est l'option pour tous les packages

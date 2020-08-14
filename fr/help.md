@@ -27,7 +27,7 @@ dans la page sous cette forme :
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Example text.
+Texte d'exemple.
 \end{document}
 ```
 
@@ -53,7 +53,7 @@ de l'exécuter :
    apparaîtra pour que vous puissiez effacer cette sortie (ou la laisser
    en place et suivre le reste de la leçon).
 
-   Notez que **LaTeX Online** ne nécessite aucune connexion ou inscription
+   Notez que **LaTeX Online** ne nécessite ni connexion ou ni inscription
    d'aucune sorte, ce qui est très pratique pour les petits exemples, mais
    ni ce site ni les sites `latexcgi`, `latexonline.cc` ou `latex-on-http`
    ne proposent de mécanisme pour enregistrer votre document. Toute modification
@@ -92,7 +92,7 @@ de l'exécuter :
 ## Choisir le moteur {{ site.tex }}
 
 Quand vous compilerez les exemples, le moteur `pdflatex` sera utilisé par
-défaut, sauf si l'exemple utilise le paquet `fontspec`, auquel cas `xelatex`
+défaut, sauf si l'exemple utilise le package `fontspec`, auquel cas `xelatex`
 sera utilisé.
 
 Vous pouvez forcer le choix de `pdflatex`, `xelatex`, `lualatex`, `platex` ou

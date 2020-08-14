@@ -11,7 +11,7 @@ Donc si vous voulez triez votre bibliographie dans un ordre autre que l'ordre an
 
 ## Des hyperliens dans les bibliographies
 
-Si vous chargez le paquet `hyperref`, [comme on l'a vu plus tôt](more-09), il transformera automatiquement certaines parties de votre bibliographie en liens hypertextes. C'est notamment utile pour les URL et les DOI.
+Si vous chargez le package `hyperref`, [comme on l'a vu plus tôt](more-09), il transformera automatiquement certaines parties de votre bibliographie en liens hypertextes. C'est notamment utile pour les URL et les DOI.
 
 
 ## Les bonnes pratiques avec BibTeX peuvent dépendre des styles

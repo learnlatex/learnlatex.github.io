@@ -66,7 +66,7 @@ Nous ne pouvons pas couvrir ici toutes les commandes standards du mode mathémat
 
 Vous pouvez utiliser exactement les mêmes commandes pour le mode mathématique « en exergue » que pour le mode « en ligne ». Les mathématiques « en exergue » sont sur leur propre ligne, centrées par défaut et destinées aux grandes équations qui font quand même « partie d'un paragraphe ». Notez que les environnements mathématiques en exergue ne permettent pas à un paragraphe de se terminer à l'intérieur des mathématiques, donc il ne doit pas y avoir de lignes blanches dans le code-source de ces environnements.
 
-Le paragraphe doit toujours avoir commencé _avant_ les mathématiques en exergue, donc ne laissez pas de ligne blanche avant l'environnement mathématique d'affichage. Si vous avez besoin de plusieurs lignes de mathématiques, n'utilisez pas plusieurs environnements mathématiques consécutifs (cela produit un espacement incohérent) ; utilisez un des environnements mathématiques multi-lignes tels que `align` du paquet `amsmath` décrit plus loin.
+Le paragraphe doit toujours avoir commencé _avant_ les mathématiques en exergue, donc ne laissez pas de ligne blanche avant l'environnement mathématique d'affichage. Si vous avez besoin de plusieurs lignes de mathématiques, n'utilisez pas plusieurs environnements mathématiques consécutifs (cela produit un espacement incohérent) ; utilisez un des environnements mathématiques multi-lignes tels que `align` du package `amsmath` décrit plus loin.
 
 Ce mode est notamment utile pour les intégrales :
 
@@ -105,7 +105,7 @@ Le numéro de la formule est incrémenté automatiquement et peut être un simpl
 
 ## Le package `amsmath`
 
-L'écriture mathématique est très riche, ce qui signifie que les outils intégrés au noyau LaTeX ne peuvent pas tout couvrir. Le paquet `amsmath` étend le support du noyau pour couvrir beaucoup plus de notations. Le [Guide de l'utilisateur d'`amsmath'](http://texdoc.net/pkg/amsmath) contient beaucoup plus d'exemples que nous ne pouvons en montrer dans cette leçon.
+L'écriture mathématique est très riche, ce qui signifie que les outils intégrés au noyau LaTeX ne peuvent pas tout couvrir. Le package `amsmath` étend le support du noyau pour couvrir beaucoup plus de notations. Le [Guide de l'utilisateur d'`amsmath'](http://texdoc.net/pkg/amsmath) contient beaucoup plus d'exemples que nous ne pouvons en montrer dans cette leçon.
 
 ```latex
 \documentclass{article}
