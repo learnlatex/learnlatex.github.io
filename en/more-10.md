@@ -58,8 +58,8 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 
 
 In addition there are variants of the display environments ending
-in `ed` that make a subterm of a larger display for example, `aligned` and
-`gathered`.
+in `ed` that make a subterm inside a larger display.
+For example, `aligned` and `gathered` are variants of `align` and `gather` respectively.
 
 ```latex
 \documentclass{article}
