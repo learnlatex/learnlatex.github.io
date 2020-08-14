@@ -1,5 +1,5 @@
 ---
-title: "Choisir des polices de caractères et utiliser Unicode: pour aller plus loin"
+title: "Choisir des polices de caractères et utiliser Unicode : pour aller plus loin"
 ---
 
 ## Lua

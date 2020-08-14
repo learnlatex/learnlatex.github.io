@@ -48,7 +48,7 @@ My command is used here \mycommand.
 
 This produces a multi-line message in the log file.
 
-produit un message de plusieurs lignes dans le fichier de log:
+produit un message de plusieurs lignes dans le fichier de log :
 
 ```
 ! Undefined control sequence.
@@ -121,7 +121,7 @@ l.4 \usepackage[leqno}
 \end{document}
 ```
 
-produit le message d'erreur:
+produit le message d'erreur :
 
 ```
 ! LaTeX Error: File `amsmathz.sty' not found.
@@ -149,7 +149,7 @@ Some text
 \end{document}
 ```
 
-produit l'erreur plutôt mystérieuse:
+produit l'erreur plutôt ésotérique :
 
 ```
 ! Missing $ inserted.
@@ -159,7 +159,7 @@ produit l'erreur plutôt mystérieuse:
 But the fix is simple, blank lines are not allowed in math
 environments and should be deleted.
 
-Mais la correction est simple:  les lignes vides sont sont pas autorisées dans un environnement mathématique. Il suffit de les supprimer (ou de les mettre en commentaire).
+Mais la correction est simple : les lignes vides sont sont pas autorisées dans un environnement mathématique. Il suffit de les supprimer (ou de les mettre en commentaire).
 
 
 ## Travaux pratiques

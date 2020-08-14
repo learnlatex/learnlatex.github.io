@@ -16,7 +16,7 @@ preincludes = {
 
 Les références bibliographiques pourraient être incluses directement dans votre document, mais en général vous les stockez dans un ou plusieurs fichiers externes. Un tel fichier est appelé une _base de données bibliographique_, contenant les informations dans un format facile à traiter. L'utilisation d'une ou plusieurs bases de données bibliographiques vous permet de réutiliser les informations dans plusieurs documents sans avoir à les ressaisir, et d'éviter le formatage manuel des références.
 
-Les bases de données bibliographiques pour LaTeX sont appelées « fichiers BibTeX » et portent l'extension `.bib`. Elles contiennent une ou plusieurs entrées, une pour chaque référence, et à l'intérieur de chaque entrée, il y a une série de champs. Voyons un exemple:
+Les bases de données bibliographiques pour LaTeX sont appelées « fichiers BibTeX » et portent l'extension `.bib`. Elles contiennent une ou plusieurs entrées, une pour chaque référence, et à l'intérieur de chaque entrée, il y a une série de champs. Voyons un exemple :
 
 <!-- {% raw %} -->
 ```
@@ -54,7 +54,7 @@ Les champs à remplir dépendent du type d'entrée, mais la plupart d'entre eux 
 
 L'édition manuelle des fichiers `.bib` est assez fastidieuse, c'est pourquoi la plupart des gens utilisent un éditeur dédié. [JabRef](https://www.jabref.org/) est largement utilisé et multiplateforme, mais il existe plusieurs autres interfaces disponibles. Si la référence contient un DOI (_Digital Object Identifier_), vous pouvez essayer [doi2bib](https://doi2bib.org/) pour obtenir facilement l'entrée au format BibTeX. Mais n'oubliez pas de vérifier que l'entrée est correcte et contient toutes les informations que vous souhaitez avoir dans votre base de données!
 
-Pour nos démonstrations, nous utiliserons la courte base de données d'exemple affichée ci-dessus : nous l'avons enregistrée sous le nom de `learnnlatex.bib`.
+Pour nos démonstrations, nous utiliserons la courte base de données d'exemple montrée ci-dessus : nous l'avons enregistrée sous le nom de `learnnlatex.bib`.
 
 
 ## Extraire les données de la base bibligraphique
@@ -104,7 +104,7 @@ L'exemple ci-dessus utilise le style auteur-année, mais on peut des citations n
 
 ## La chaîne de traitement avec `biblatex`
 
-Le package `biblatex` fonctionne légèrement différemment de `natbib`, car on doit sélectionner les bases de données dans le préambule, puis insérer la bibliographie dans le corps du document. Il y a quelques nouvelles commandes pour cela:
+Le package `biblatex` fonctionne légèrement différemment de `natbib`, car on doit sélectionner les bases de données dans le préambule, puis insérer la bibliographie dans le corps du document. Il y a quelques nouvelles commandes pour cela :
 
 ```latex
 \documentclass{article}

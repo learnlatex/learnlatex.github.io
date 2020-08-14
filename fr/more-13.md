@@ -1,10 +1,10 @@
 ---
-title: "S'organiser pour écrire un document long: pour aller plus loin"
+title: "S'organiser pour écrire un document long : pour aller plus loin"
 ---
 
 ## Ajouter un index
 
-Selon le type de document que vous rédigez, vous pouvez vouloir un index. Sa construction est automatisée par le package `imakeidx`, et ça fonctionne en interne un peu comme une bibliographie: LaTeX écrit puis relit des fichiers auxiliaires. Vous aurez besoin de trois instructions :
+Selon le type de document que vous rédigez, vous pouvez vouloir un index. Sa construction est automatisée par le package `imakeidx`, et ça fonctionne en interne un peu comme une bibliographie : LaTeX écrit puis relit des fichiers auxiliaires. Vous aurez besoin de trois instructions :
 
 - La commande `\makeindex`, qui initialise la création d'un index,
 - La commande `\index`, qui permet de définir les entrées de l'index au fil du texte,

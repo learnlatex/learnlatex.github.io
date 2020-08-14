@@ -1,5 +1,5 @@
 ---
-title: "Structure logique de votre document: pour aller plus loin"
+title: "Structure logique de votre document : pour aller plus loin"
 ---
 
 ## Titre du document

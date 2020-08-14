@@ -34,7 +34,7 @@ Presque toujours, si vous n'êtes pas dans un de ces cas particuliers, **vous ne
 
 On peut insérer une espace fine (d'environ la moitié de la largeur normale) en utilisant `\,`. En mode mathématique, il y a aussi d'autres commandes : `\.`, `\:` et `\;`, et une pour l'espace négative : `\!`.
 
-Très rarement, par exemple lors de la création d'une page de titre, on a avoir besoin d'ajouter un espace horizontal ou vertical explicite. Les commandes `\hspace` and `\vspace` sont faite pour ça:
+Très rarement, par exemple lors de la création d'une page de titre, on a avoir besoin d'ajouter un espace horizontal ou vertical explicite. Les commandes `\hspace` and `\vspace` sont faite pour ça :
 
 ```latex
 \documentclass{article}
@@ -86,7 +86,7 @@ Vous voyez: l'effet n'est pas limité à un paragraphe.
 \end{document}
 ```
 
-On peut régler la taille des caractères de la même manière, avec des commandes qui s'appliquent « à partir d'ici ». Elles définissent des tailles relatives par rapport à la taille de base: les plus courantes sont `\huge`, `\large`, `\normalsize`, `\small` et `\footnotesize`. Il est important de terminer le paragraphe _avant_ de modifier la taille de la police de caractères à nouveau ; regardez comment nous ajoutons un `\par` explicite (coupure de paragraphe) ici:
+On peut régler la taille des caractères de la même manière, avec des commandes qui s'appliquent « à partir d'ici ». Elles définissent des tailles relatives par rapport à la taille de base : les plus courantes sont `\huge`, `\large`, `\normalsize`, `\small` et `\footnotesize`. Il est important de terminer le paragraphe _avant_ de modifier la taille de la police de caractères à nouveau ; regardez comment nous ajoutons un `\par` explicite (coupure de paragraphe) ici :
 
 ```latex
 \documentclass{article}

@@ -7,13 +7,8 @@ LaTeX vous permet de se concentrer sur la structure logique de votre document, e
 
 ## Premier exemple
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasised.)
-
-Nous allons commencer par un exemple qui compare deux façons de mettre du texte en évidence:
-l'une par le balisage logique, avec `\emph`, l'autre par la simple mise en italique, puisqu'en édition,
-c'est généralement par l'italique que le texte est mis en évidence.
+Nous allons commencer par un exemple qui compare deux façons de mettre du texte en évidence :
+l'une par le balisage logique, avec `\emph`, l'autre par la simple mise en italique, puisqu'en édition, c'est généralement par l'italique que le texte est mis en évidence.
 
 
 ```latex
@@ -34,7 +29,7 @@ Nous parlerons [du formatage manuel plus tard](lesson 11), mais pour l'instant n
 
 ## Commandes de sectionnement
 
-Vous avez probablement déjà utilisé un traitement de texte. Avec ces logiciels, pour commencer une section, la plupart des gens entrent le texte du titre, puis le rendent simplement plus grand et plus gras, et le font suivre d'une nouvelle ligne. En LaTeX, l'utilisation du balisage logique est beaucoup plus facile que ce formatage manuel: il suffit d'utiliser la commande `\section`. Celle-ci gère les changements de police, les espaces verticaux, etc., et permet de garder une sortie uniforme dans tout le document. Elle permet également de produire automatiquement une table des matières.
+Vous avez probablement déjà utilisé un traitement de texte. Avec ces logiciels, pour commencer une section, la plupart des gens entrent le texte du titre, puis le rendent simplement plus grand et plus gras, et le font suivre d'une nouvelle ligne. En LaTeX, l'utilisation du balisage logique est beaucoup plus facile que ce formatage manuel : il suffit d'utiliser la commande `\section`. Celle-ci gère les changements de police, les espaces verticaux, etc., et permet de garder une sortie uniforme dans tout le document. Elle permet également de produire automatiquement une table des matières.
 
 ```latex
 \documentclass{article}
@@ -108,8 +103,4 @@ On utilise `\item` pour commencer chaque entrée, et le numéro ou la puce est a
 
 Expérimentez avec différents niveaux de sectionnement. Essayez d'utiliser `\documentclass{report}` au lieu de `\documentclass{article}` et ajoutez des chapitres avec la commande `\chapter`. De quoi ont-ils l'air ? Essayez les commandes `\paragraph` et même `\subparagraph` pour voir si elles fonctionnent : par défaut, elles n'ajoutent ni numérotation, ni saut de ligne.
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
-
-Faites des listes, et emboîtez les unes dans les autres. Comment le format des chiffres ou des marqueurs change-t-il ? Vous ne pouvez utiliser que quatre niveaux d'imbrication avec le LaTeX standard, mais si vous devez aller plus loin, c'est soit que vous avez un besoin particulier et que les listes ne sont pas le bon outil, soit que vous devriez repenser la structure de ces listest.
+Faites des listes, et emboîtez les unes dans les autres. Comment le format des chiffres ou des marqueurs change-t-il ? On ne peut utiliser que quatre niveaux d'imbrication avec le LaTeX standard, mais si vous devez aller plus loin, c'est soit que vous avez un besoin particulier et que les listes ne sont pas le bon outil, soit que vous devriez repenser la structure de ces listes.

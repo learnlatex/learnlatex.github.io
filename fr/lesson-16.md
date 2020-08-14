@@ -7,7 +7,7 @@ Il y a différentes façons d'accéder à la documentation d'un package ou d'une
 
 ## `texdoc`
 
-Si vous avez installé une distribution TeX (par exemple, TeXLive ou MikTeX) et que vous avez choisi à l'installation d'avoir la documentation enregistrée localement, alors vous pouvez y accéder en utilisant l'outil en ligne de commande `texdoc`. Il suffit de taper la commande:
+Si vous avez installé une distribution TeX (par exemple, TeXLive ou MikTeX) et que vous avez choisi à l'installation d'avoir la documentation enregistrée localement, alors vous pouvez y accéder en utilisant l'outil en ligne de commande `texdoc`. Il suffit de taper la commande :
 
 `texdoc` < _pkg_ >
 
@@ -33,7 +33,7 @@ Il existe beaucoup de livres qui peuvent vous aider à en savoir plus sur LaTeX.
 
 ### Livres en français
 
-Quelques manuels d'initiation:
+Quelques manuels d'initiation :
 
 - [_Initiation à LaTeX_](https://ctan.org/pkg/guide-latex-fr), par Adrien Bouzigues, disponible sur CTAN. Ouvrage d'initiation à LaTeX. L'auteur s'adresse à des débutants complets. Il utilise la distribution MikTeX et l'éditeur Texmaker. Il donne des indications pour des utilisateurs de MS Windows ou de Apple.
 - [_LaTeX pour les linguistes_](https://hal.archives-ouvertes.fr/cel-02145840/document), par Thomas Pellard. 120 pages, juin 2019.
@@ -60,9 +60,9 @@ pour que la communauté bénéficie de votre expérience au fil de vos expérime
 
 ## Getting help
 
-Il existe divers forums en ligne pour poser des questions sur LaTeX ; le plus populaire aujourd'hui est peut-être [TeX - LaTeX StackExchange](https://tex.stackexchange.com). Chaque fois que vous posez une question, il est préférable de commencer par donner un exemple clair : ce que l'on appelle généralement un « exemple complet minimal » (ECM; en anglais _minimal working example_, MWE). Cela ne signifie pas que le code fonctionne (sinon vous ne poseriez pas de questions!), mais plutôt que vous avez fait de votre mieux pour le rendre clair, autonome et minimal. Ce dernier qualificatif signifie que vous avez juste assez de contenu pour reproduire votre problème.
+Il existe divers forums en ligne pour poser des questions sur LaTeX ; le plus populaire aujourd'hui est peut-être [TeX - LaTeX StackExchange](https://tex.stackexchange.com). Chaque fois que vous posez une question, il est préférable de commencer par donner un exemple clair : ce que l'on appelle généralement un « exemple complet minimal » (ECM ; en anglais _minimal working example_, MWE). Cela ne signifie pas que le code fonctionne (sinon vous ne poseriez pas de questions!), mais plutôt que vous avez fait de votre mieux pour le rendre clair, autonome et minimal. Ce dernier qualificatif signifie que vous avez juste assez de contenu pour reproduire votre problème.
 
-Comment construire un ECM ? Généralement, le plus simple est de partir de:
+Comment construire un ECM ? Généralement, le plus simple est de partir de :
 
 ```latex
 \documentclass{article}

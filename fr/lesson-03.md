@@ -53,11 +53,7 @@ This is a new paragraph.
 ```
 Vous pouvez voir ci-dessus que nous avons deux paragraphes : remarquez à nouveau l'utilisation d'une ligne blanche pour cela. Remarquez également que les espaces multiples sont traités comme une seule espace.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
-
-Vous pouvez aussi parfois vouloir une espace « dure » qui ne se coupe pas entre deux lignes (appelée _espace insécable_) : en LaTeX, ce type d'espace est représenté par `~`, « liant » deux morceaux de texte ensemble. Nous nous en servirons plus tard dans le cours pour insérer des références croisées.
+Vous pouvez aussi parfois vouloir une espace « dure » qui n'est jamais coupée entre deux lignes (appelée pour ça _espace insécable_) : en LaTeX, ce type d'espace est représenté par `~`, qui « lie » deux morceaux de texte ensemble. Nous nous en servirons plus tard dans le cours pour insérer des références croisées.
 
 
 ## Catactères spéciaux

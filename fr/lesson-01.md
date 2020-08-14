@@ -11,7 +11,7 @@ Par exemple dans un document HTML, l'élément `<h2>` indique une nouvelle secti
 
 Comme les fichiers LaTeX ne sont pas le document lui-même mais plutôt des instructions disant ce que doit être chaque partie du document, vous ne donnez normalement pas à vos lecteurs votre fichier LaTeX lui-même. Au lieu de cela, après avoir écrit votre _source_ LaTeX, vous lancez LaTeX sur le fichier (en utilisant par exemple un programme appelé `pdflatex`) pour produire un fichier PDF. C'est ce PDF que vous aller fournir à vos lecteurs.
 
-Ce processus porte différents noms: comme l'utilisation de LaTeX est un peu comme la programmation, on appelle souvent cela « compiler » votre document, le terme de « composition » serait sans doute plus exact.
+Ce processus porte différents noms : comme l'utilisation de LaTeX est un peu comme la programmation, on appelle souvent cela « compiler » votre document, le terme de « composition » serait sans doute plus exact.
 
 
 ## Compilations multiples avec {{ site.latex }}

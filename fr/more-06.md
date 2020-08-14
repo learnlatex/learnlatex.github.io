@@ -1,5 +1,5 @@
 ---
-title: "Étendre les possibilités de LaTeX avec des packages: pour aller plus loin"
+title: "Étendre les possibilités de LaTeX avec des packages : pour aller plus loin"
 ---
 
 ## Charger plusieurs packages à la fois

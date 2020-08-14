@@ -11,7 +11,7 @@ Après avoir déclaré une classe, dans le préambule, vous pouvez modifier les 
 
 ## Modifier le fonctionnement de LaTeX
 
-Le « noyau » de LaTeX (le cœur de LaTeX) est assez limité quant à la personnalisation par l'utilisateur, mais LaTeX est modulaire par nature, et des packages complémentaires résolvent les problèmes courants. Le premier problème est de s'adapter aux différentes langues humaines, pour prendre en compte les spécificités de la coupure des mots en fin de ligne, de la ponctuation, des citations, de la localisation, etc.). Les différentes langues ont des règles différentes, et il est important de dire à LaTeX lesquelles utiliser. C'est le package `babel` qui s'occupe de tout ça, avec des options pour chaque langue:
+Le « noyau » de LaTeX (le cœur de LaTeX) est assez limité quant à la personnalisation par l'utilisateur, mais LaTeX est modulaire par nature, et des packages complémentaires résolvent les problèmes courants. Le premier problème est de s'adapter aux différentes langues humaines, pour prendre en compte les spécificités de la coupure des mots en fin de ligne, de la ponctuation, des citations, de la localisation, etc.). Les différentes langues ont des règles différentes, et il est important de dire à LaTeX lesquelles utiliser. C'est le package `babel` qui s'occupe de tout ça, avec des options pour chaque langue :
 
 ```latex
 \documentclass{article}
@@ -38,7 +38,7 @@ Le paquet `babel` fait bien plus que de la césure, selon la langue concernée ;
 
 ## Changer l'apparence du document
 
-Il est utile de pouvoir ajuster certains aspects de l'apparence indépendamment de la classe du document. Le plus évident est celui des marges des pages. Nous avons déjà utilisé le paquet `geometry` dans l'exemple ci-dessus, mais testons maintenant un exemple dédié aux marges:
+Il est utile de pouvoir ajuster certains aspects de l'apparence indépendamment de la classe du document. Le plus évident est celui des marges des pages. Nous avons déjà utilisé le paquet `geometry` dans l'exemple ci-dessus, mais testons maintenant un exemple dédié aux marges :
 
 ```latex
 \documentclass{book}

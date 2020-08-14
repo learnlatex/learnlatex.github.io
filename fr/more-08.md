@@ -1,5 +1,5 @@
 ---
-title: "Les tables: pour aller plus loin"
+title: "Les tables : pour aller plus loin"
 ---
 
 ## D'autres options dans le préambule des tableaux
@@ -34,7 +34,7 @@ La leçon n'ayant pas couvert tous les options disponibles pour les en-têtes de
 
 `\itshape` met tout le texte qui suit en italique, mais son effet est limité à la cellule du tableau. Nous examinerons le formatage manuel des polices [dans quelques leçons](lesson-11).
 
-Souvent la première ligne d'un tableau est considérée comme un en-tête, et mise en forme différemment du reste. Pour obtenir ce résultat, on peut utiliser `\multicolumn`. Pensez aussi que cette commande peut être utilisée pour modifier l'alignement d'une seule cellule ici:
+Souvent la première ligne d'un tableau est considérée comme un en-tête, et mise en forme différemment du reste. Pour obtenir ce résultat, on peut utiliser `\multicolumn`. Pensez aussi que cette commande peut être utilisée pour modifier l'alignement d'une seule cellule ici :
 
 <!-- {% raw %} -->
 ```latex
@@ -126,7 +126,7 @@ Dans le préambule du tableau, `!` fait quelque chose d'assez similaire. La diff
 
 L'utilisation de traits verticaux dans les tableaux est plutôt découragée
 par les règles typographiques usuelles. Mais il peut arriver qu'on en ait
-besoin:
+besoin :
 
 <!-- {% raw %} -->
 ```latex
@@ -145,7 +145,7 @@ besoin:
 ```
 <!-- {% endraw %} -->
 
-Le comportement de `|` est assez similaire à celui de `!{arg}`: il ajoute un trait vertical entre deux colonnes en laissant intact l'espacement initial. Il a cependant un inconvénient : ces traits verticaux ne fonctionnent pas avec les traits horizontaux de `booktabs`. Vous pouvez cependant l'utiliser avec les traits horizontaux fournis par LaTeX, par les commandes `\hline` (correspondant to `\toprule`, `\midrule` et `\bottomrule`) et `\cline` (qui se comporte comme `\cmidline`). Comme on le voit, les traits verticaux couvrent bien tout espace ajouté par l'argument optionnel de `\\`.
+Le comportement de `|` est assez similaire à celui de `!{arg}` : il ajoute un trait vertical entre deux colonnes en laissant intact l'espacement initial. Il a cependant un inconvénient : ces traits verticaux ne fonctionnent pas avec les traits horizontaux de `booktabs`. Vous pouvez cependant l'utiliser avec les traits horizontaux fournis par LaTeX, par les commandes `\hline` (correspondant to `\toprule`, `\midrule` et `\bottomrule`) et `\cline` (qui se comporte comme `\cmidline`). Comme on le voit, les traits verticaux couvrent bien tout espace ajouté par l'argument optionnel de `\\`.
 
 
 ## Personnaliser les traits de `booktabs`
@@ -176,7 +176,7 @@ Tous les traits fournis par le package `booktabs`, ainsi que `\addlinespace`, ac
 
 L'alignement des nombres dans les tableaux peut être géré par le type de colonne `S`, fourni par le package `siunitx`.
 
-Voici un exemple simple avec deux colonnes numériques alignées:
+Voici un exemple simple avec deux colonnes numériques alignées :
 
 ```latex
 \documentclass{article}
@@ -341,7 +341,7 @@ Le package `longtable` est remarquable parce qu'il préserve la largeur des colo
 
 ## Notes de bas de tableau
 
-Il est assez courant d'avoir besoin de notes de bas de tableau, avec des appels de note dans le tableau. Le package `threeparttable` simplifie la composition de ce genre de tableaux, en faisant en sorte que les notes soient placées dans un bloc de la même largeur que le tableau lui-même. Reportez-vous [à sa documentation](https://texdoc.net/pkg/threeparttable) pour plus de détails, mais voici un exemple simple:
+Il est assez courant d'avoir besoin de notes de bas de tableau, avec des appels de note dans le tableau. Le package `threeparttable` simplifie la composition de ce genre de tableaux, en faisant en sorte que les notes soient placées dans un bloc de la même largeur que le tableau lui-même. Reportez-vous [à sa documentation](https://texdoc.net/pkg/threeparttable) pour plus de détails, mais voici un exemple simple :
 
 
 ```latex
@@ -421,7 +421,7 @@ qui permettra l'utilisation de `B` dans les préambules de tableaux pour spécif
 
 ## Astuces pour diviser une cellule dans sa hauteur
 
-Souvent, plutôt que de faire en sorte qu'une cellule s'étende sur plusieurs lignes, il est préférable d'utiliser une seule ligne dans laquelle certaines cellules sont divisées verticalement par l'utilisation d'environnements `\tabular` imbriqués:
+Souvent, plutôt que de faire en sorte qu'une cellule s'étende sur plusieurs lignes, il est préférable d'utiliser une seule ligne dans laquelle certaines cellules sont divisées verticalement par l'utilisation d'environnements `\tabular` imbriqués :
 
 <!-- {% raw %} -->
 ```latex
@@ -472,14 +472,14 @@ L'alignement vertical peut être contrôlé par un argument optionnel de l'envir
 
 Dans la leçon principale, nous avons présenté  `\addlinespace` du package `booktabs`, qui sert à ajouter de l'espace entre des lignes spécifiques.
 
-Il y a aussi deux paramètres généraux qui contrôlent l'espacement des lignes: `\arraystretch` et `\extrarowheight` (ce dernier du paquet `array`).
+Il y a aussi deux paramètres généraux qui contrôlent l'espacement des lignes : `\arraystretch` et `\extrarowheight` (ce dernier du paquet `array`).
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
 augmentera de 50% l'espace entre les lignes.
 
-Souvent, surtout quand on utilise `\hline`, il est préférable de simplement augmenter la hauteur des lignes, sans augmenter leur profondeur en dessous de la ligne de base. Cet exemple illustre le paramètre `\extrarowheight`:
+Souvent, surtout quand on utilise `\hline`, il est préférable de simplement augmenter la hauteur des lignes, sans augmenter leur profondeur en dessous de la ligne de base. Cet exemple illustre le paramètre `\extrarowheight` :
 
 ```latex
 \documentclass[a4paper]{article}

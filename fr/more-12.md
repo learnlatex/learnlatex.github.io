@@ -1,5 +1,5 @@
 ---
-title: "Bibliographies et références biblio: pour aller plus loin"
+title: "Bibliographies et références biblio : pour aller plus loin"
 ---
 
 ## Le tri pour d'autres langues que l'anglais
@@ -18,6 +18,6 @@ Si vous chargez le paquet `hyperref`, [comme on l'a vu plus tôt](more-09), il t
 
 La syntaxe globale des fichiers BibTeX est la même, que vous utilisiez la chaîne BibTeX ou `biblatex`, mais les champs pris en charge (utilisés par le style) et leur signification exacte peuvent non seulement varier entre BibTeX et `biblatex`, mais aussi entre les différents styles BibTeX. Beaucoup de types d'entrées et de champs sont communs à presque tous les styles, mais pas tous.
 
-Par exemple l'URL: certains anciens styles BibTeX `.bst` (notamment les « styles BibTeX standards », comme `plain.bst`, `unsrt.bst`...) sont antérieurs à l'invention de l'URL et ne comportent pas de champ dédié à l'URL d'une ressource en ligne. De nombreux styles plus récents possèdent, eux, un champ `url` dédié. Une solution simple pour afficher l'URL avec les anciens styles est d'utiliser le champ `howpublished`, mais avec les nouveaux styles, il vaut bien sûr mieux utiliser le champ `url`, fait pour ça.
+Par exemple l'URL : certains anciens styles BibTeX `.bst` (notamment les « styles BibTeX standards », comme `plain.bst`, `unsrt.bst`...) sont antérieurs à l'invention de l'URL et ne comportent pas de champ dédié à l'URL d'une ressource en ligne. De nombreux styles plus récents possèdent, eux, un champ `url` dédié. Une solution simple pour afficher l'URL avec les anciens styles est d'utiliser le champ `howpublished`, mais avec les nouveaux styles, il vaut bien sûr mieux utiliser le champ `url`, fait pour ça.
 
 Pour mettre à profit tout le potentiel du style que vous aurez choisi, il vous faudra découvrir l'ensemble des champs qu'il supporte et leur sémantique.

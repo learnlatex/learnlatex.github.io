@@ -19,11 +19,7 @@ pour compiler votre PDF. Notez que l'extension `.tex` est optionnelle : LaTeX su
 
 ## Caractères spéciaux
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need to use a longer command instead:
-
-Si vous avez besoin de taper un caractère spécial, la plupart du temps vous pouvez simplement utiliser une barre oblique inversée devant ce caractère, par exemple `\{` est utilisé pour imprimer un '{' littéral. Dans certains cas, vous devrez utiliser une commande plus longue :
+Si vous avez besoin de taper un caractère spécial, la plupart du temps vous pouvez simplement utiliser une barre oblique inversée devant ce caractère, par exemple `\{` est utilisé pour obtenir un '{' littéral. Dans certains cas, vous devrez utiliser une commande plus longue :
 
 | Symbole | Commande courte (maths et texte) | Commande longue (texte seulement) |
 | `{`     | `\{`            | `\textbraceleft`   |

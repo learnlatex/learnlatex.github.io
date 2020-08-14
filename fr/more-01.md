@@ -8,6 +8,6 @@ TeX a été inventé à l'origine par le professeur Donald Knuth de l'universit�
 
 En mai 1977, le développement de TeX commença.
 
-Le TeX original était plutôt compliqué à utiliser, même Donald Knuth utilisait diverses macros pour éditer ses livres. Leslie Lamport, qui travaille aujourd'hui pour Microsoft, a également développé un ensemble de macros qui simplifient l'utilisation de TeX et a appelé cet ensemble de macros « LaTeX ».
+Le TeX original était plutôt compliqué à utiliser, même Donald Knuth utilisait diverses macros pour éditer ses livres. Leslie Lamport, qui travaille aujourd'hui pour Microsoft, a également développé un ensemble de macros qui simplifient l'utilisation de TeX et a appelé cet ensemble de macros « LaTeX » (comme _**La**mport_).
 
 Aujourd'hui, LaTeX est le moyen le plus courant d'interagir avec TeX. Une autre alternative est [ConTeXt](https://www.contextgarden.net/).

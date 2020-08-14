@@ -1,5 +1,5 @@
 ---
-title: "Références croisées: pour aller plus loin"
+title: "Références croisées : pour aller plus loin"
 ---
 
 ## Transformer les références croisées en liens hypertextes
@@ -22,4 +22,4 @@ More text here.
 \end{document}
 ```
 
-Nous avons choisi de faire les liens de la même couleur que le texte normal ; enlevez l'option `hidelinks` pour comprendre pourquoi !  \U0001f601
+Nous avons choisi de faire les liens de la même couleur que le texte normal ; enlevez l'option `hidelinks` pour comprendre pourquoi !  &#128578;

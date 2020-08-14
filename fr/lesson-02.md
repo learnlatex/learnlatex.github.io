@@ -2,11 +2,7 @@
 title: "Travailler avec LaTeX"
 ---
 
-Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs that work together.
-We can divide those up into two things you actually need:
-
-Contrairement à de nombreux programmes informatiques, LaTeX n'est pas une application unique. Au contraire, il existe des programmes distincts qui fonctionnent ensemble. Nous pouvons les diviser en deux catégories dont vous avez réellement besoin :
+Contrairement à de nombreux programmes informatiques, LaTeX n'est pas une application unique. Au contraire, il existe des programmes distincts qui fonctionnent ensemble. Il y a deux catégories indispensables :
 
 - Un _système TeX_,
 - Un éditeur de txte (plutôt un qui soit adapté à LaTeX).

@@ -1,5 +1,5 @@
 ---
-title: "Comprendre les erreurs: pour aller plus loin"
+title: "Comprendre les erreurs : pour aller plus loin"
 ---
 
 ## Les erreurs à la fermeture des environnements
@@ -23,7 +23,7 @@ Certains environnements (notamment les alignements `amsmath` et les tableaux `ta
 \end{document}
 ```
 
-Ici, l'erreur sera signalée à la ligne 12:
+Ici, l'erreur sera signalée à la ligne 12 :
 
 ```
 l.12 \end{align}
@@ -59,7 +59,7 @@ More text.
 
 L'erreur ici est le caractère underscore `_` qui doit être saisi comme `\_`.
 
-TeX le signale correctement avec le _premier_ message d'erreur:
+TeX le signale correctement avec le _premier_ message d'erreur :
 
 ```
 ! Missing $ inserted.

@@ -6,7 +6,7 @@ title: "Utiliser les classes de documents pour changer l'apparence"
 
 Vous avez peut-être remarqué que tous les documents LaTeX que nous avons créés jusqu'à présent ont commencé par une ligne `\documentclass`, et que `\documentclass{article}` a été le choix le plus courant (nous avons eu besoin de `\documentclass{report}` dans [la leçon précédente](lesson-04) pour tester la commande `\chapter`). Cette ligne est requise dans tous les documents LaTeX, et est presque toujours la première commande à avoir.
 
-La « classe de document » définit la présentation générale du document, notamment:
+La « classe de document » définit la présentation générale du document, notamment :
 - l'apparence : marges, polices de caractères, espacements, etc.
 - s'il y a des chapitres ou non,
 - si le titre doit figurer sur une page séparée...
@@ -58,7 +58,7 @@ Les classes standards `article`, `report` et `book` acceptent les options `10pt`
 
 Les classes de base sont très stables, mais cela implique qu'elles sont assez conservatrices tant dans leur conception que dans la gamme des commandes disponibles. Au fil du temps, un certain nombre de classes plus puissantes ont été écrites, qui permettent de modifier l'apparence des documents sans devoir faire les choses manuellement (ce que nous mentionnerons [un peu plus tard](lesson-11)).
 
-L'American Mathematical Society (AMS) fournit des variantes des classes standards (`amsart`, `amsbook`) avec une conception plus traditionnelle, plus proche de celle utilisée dans les publications des journaux de mathématiques.
+L'_American Mathematical Society_ (AMS) fournit des variantes des classes standards (`amsart`, `amsbook`) avec une conception plus traditionnelle, plus proche de celle utilisée dans les publications des journaux de mathématiques.
 
 Les deux classes « étendues » les plus polyvalentes et populaires sont le package KOMA-Script et la classe `memoir`. KOMA-Script offre un ensemble de classes parallèles aux classes standards : `scrartcl`, `scrreprt` et `scrbook`, tandis que la classe `memoir`, unique, ressemble davantage à une extension de la classe `book`.
 
@@ -90,9 +90,11 @@ ce document quand il est composé sur deux colonnes.
 \end{document}
 ```
 
-Ajoutez l'option de classe `twocolumn` et regardez comment elle change la mise en page.
+Ajoutez l'option de classe `twocolumn` et regardez comment elle change la mise
+en page.
 
-Changez la commande `\section` ci-dessus en `\chapitre` et observez l'effet des options de classe suivantes sur l'utilisation de la classe `scrreprt`.
+Changez la commande `\section` ci-dessus en `\chapitre` et observez l'effet des
+options de classe suivantes sur l'utilisation de la classe `scrreprt` :
 
 - `chapterprefix`,
 - `headings=small`,

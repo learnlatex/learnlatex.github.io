@@ -1,5 +1,5 @@
 ---
-title: "Inclure des images et les faire « flotter »: pour aller plus loin"
+title: "Inclure des images et les faire « flotter » : pour aller plus loin"
 ---
 
 ## Nommer les fichiers d'images

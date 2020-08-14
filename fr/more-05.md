@@ -1,5 +1,5 @@
 ---
-title: "Utiliser les classes de documents pour changer l'apparence: pour aller plus loin"
+title: "Utiliser les classes de documents pour changer l'apparence : pour aller plus loin"
 ---
 
 ## Classes spécifiques d'un journal

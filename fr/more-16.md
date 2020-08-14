@@ -1,5 +1,5 @@
 ---
-title: "Trouver de la documentation et demander de l'aide: pour aller plus loin"
+title: "Trouver de la documentation et demander de l'aide : pour aller plus loin"
 ---
 
 ## Le code-source documenté de {{site.latex}}

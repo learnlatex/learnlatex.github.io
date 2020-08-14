@@ -20,7 +20,7 @@ Pour composer un tableau dans un environnement `tabular`, nous devons indiquer �
 | `l`        | colonne alignée à gauche (_**l**eft_). |
 | `c`        | colonne centrée (_**c**entered_). |
 | `r`        | colonne alignée à droite (_**r**ight_). |
-| `p{width}` | colonne de largeur fixée, égale à `width`; le texte sera automatiquement justifié, avec des saurs de lignes si nécessaire. |
+| `p{width}` | colonne de largeur fixée, égale à `width` ; le texte sera automatiquement justifié, avec des saurs de lignes si nécessaire. |
 | `m{width}` | comme `p`, mais centré verticalement par rapport au reste de la ligne. |
 | `b{width}` | comme `p`, mais positionné en bas par rapport au reste de la ligne. |
 | `w{align}{width}` | fixe la largeur de la colonne à `width`, mais le contenu peut déborder s'il est trop grand. L'alignement horizontal `align` peut être `l`, `c`, or `r`, comme décrit ci-dessus. |
@@ -135,11 +135,6 @@ Si votre tableau comporte de nombreuses colonnes du même type, vous pouvez vous
 
 Un conseil avant de parler des traits : ceux-ci doivent être utilisés parcimonieusement dans les tableaux, et de façon générale, les traits verticaux donnent un rendu peu professionnel. En fait, pour obtenir des  tableaux au look professionnel, il vaut mieux se passer des traits fournis en standard par LaTeX, et utiliser à la place le package `booktabs`. C'est pourquoi nous en parlons en premier lieu. Par souci d'exhaustivité, les lignes standards sont [présentées en approfondissement](more-08).
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
-
 Le package `booktabs` propose quatre types de traits différents. Chacune de ces commandes doit être utilisée au début d'une ligne, ou juste après un autre trait. Les trois principales commandes sont : `\toprule` (pour le haut du tableau), `\midrule` (pour le corps du tableau) et `\bottomrule` (pour le bas du tableau) :
 
 <!-- {% raw %} -->
@@ -163,7 +158,7 @@ Le package `booktabs` propose quatre types de traits différents. Chacune de ces
 ```
 <!-- {% endraw %} -->
 
-La quatrième commande fournie par `booktabs` pour tracer des traits est `\cmidrule`. Elle peut être utilisée pour tirer un trait qui ne couvre pas toute la largeur du tableau mais seulement une plage de colonnes spécifiée. La plage de colonnes est entrée comme une plage de numéros de colonnes : `{`_numéro_`-`_numéro_`}`. Même si vous ne voulez dessiner le trait que pour une seule colonne, vous devez la spécifier comme une plage (avec deux numéros identiques: `{2-2}`).
+La quatrième commande fournie par `booktabs` pour tracer des traits est `\cmidrule`. Elle peut être utilisée pour tirer un trait qui ne couvre pas toute la largeur du tableau mais seulement une plage de colonnes spécifiée. La plage de colonnes est entrée comme une plage de numéros de colonnes : `{`_numéro_`-`_numéro_`}`. Même si vous ne voulez dessiner le trait que pour une seule colonne, vous devez la spécifier comme une plage (avec deux numéros identiques : `{2-2}`).
 
 <!-- {% raw %} -->
 ```latex

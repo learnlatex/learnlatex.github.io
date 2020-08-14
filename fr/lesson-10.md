@@ -32,10 +32,10 @@ Comme vous pouvez le voir ci-dessus, le mode mathématique en ligne est encadré
 
 Le mode mathématique en ligne restreint la taille verticale de l'expression afin que, dans la mesure du possible, la formule ne perturbe pas l'interligne du paragraphe.
 
-Notez que _tous_ les mathématiques doivent être marquées comme des mathématiques, même si c'est un seul caractère, utilisez `... $2$ ...` et non `... 2 ...`, dans votre texte, sinon, par exemple, quand vous avez besoin d'un nombre négatif et que vous avez besoin de mathématiques pour obtenir un signe moins, le `... $-2$ ...` utilisera des chiffres mathématiques qui peuvent ne pas être la même police que les chiffres du texte (selon la classe du document). Inversement, prenez garde aux symboles spécifiques du mode mathématique qui apparaîtraient dans du texte brut (par exemple si vous copiez du texte venant d'ailleurs): si votre texte contient des valeurs monétaires avec des `$` ou des noms de fichiers avec des `_`, vous aurez des erreurs. Il faudra le corriger en utilisant `\$` et `\_`, respectivement.
+Notez que _tous_ les mathématiques doivent être marquées comme des mathématiques, même si c'est un seul caractère, utilisez `... $2$ ...` et non `... 2 ...`, dans votre texte, sinon, par exemple, quand vous avez besoin d'un nombre négatif et que vous avez besoin de mathématiques pour obtenir un signe moins, le `... $-2$ ...` utilisera des chiffres mathématiques qui peuvent ne pas être la même police que les chiffres du texte (selon la classe du document). Inversement, prenez garde aux symboles spécifiques du mode mathématique qui apparaîtraient dans du texte brut (par exemple si vous copiez du texte venant d'ailleurs) : si votre texte contient des valeurs monétaires avec des `$` ou des noms de fichiers avec des `_`, vous aurez des erreurs. Il faudra le corriger en utilisant `\$` et `\_`, respectivement.
 
 
-On peut facilement ajouter des indices et des exposants ; ceux-ci sont notés en utilisant `_` et `^`, respectivement:
+On peut facilement ajouter des indices et des exposants ; ceux-ci sont notés en utilisant `_` et `^`, respectivement :
 
 ```latex
 \documentclass{article}
@@ -68,7 +68,7 @@ Vous pouvez utiliser exactement les mêmes commandes pour le mode mathématique 
 
 Le paragraphe doit toujours avoir commencé _avant_ les mathématiques en exergue, donc ne laissez pas de ligne blanche avant l'environnement mathématique d'affichage. Si vous avez besoin de plusieurs lignes de mathématiques, n'utilisez pas plusieurs environnements mathématiques consécutifs (cela produit un espacement incohérent) ; utilisez un des environnements mathématiques multi-lignes tels que `align` du paquet `amsmath` décrit plus loin.
 
-Ce mode est notamment utile pour les intégrales:
+Ce mode est notamment utile pour les intégrales :
 
 ```latex
 \documentclass{article}
@@ -125,7 +125,7 @@ L'environnement `\align*` fait que les équations s'alignent sur les esperluette
 
 Nous avons utilisé ici `align*` (avec une étoile), ce qui fait que l'équation n'est pas numérotée. La plupart des environnements mathématiques numérotent les équations par défaut, et la variante étoilée (avec un `*`) désactive cette numérotation.
 
-Le package propose également plusieurs autres environnements bien pratiques, par exemple pour les matrices:
+Le package propose également plusieurs autres environnements bien pratiques, par exemple pour les matrices :
 
 ```latex
 \documentclass{article}
@@ -158,12 +158,12 @@ d & e & f
 
 Contrairement au texte normal, les changements de police en mode mathématique véhiculent souvent une signification très particulière. Elles sont donc la plupart du temps écrites explicitement. Vous aurez besoin d'un petit ensemble de commandes :
 
-- `\mathrm`: romain (droit),
-- `\mathit`: italique, espacé comme du texte,
-- `\mathbf`: gras,
-- `\mathsf`: sans empattements,
-- `\mathtt`: chasse fixe (type machine à écrire),
-- `\mathbb`: « gras de tableau noir », avec des doubles traits (fourni pas le package `amsfonts`).
+- `\mathrm` : romain (droit),
+- `\mathit` : italique, espacé comme du texte,
+- `\mathbf` : gras,
+- `\mathsf` : sans empattements,
+- `\mathtt` : chasse fixe (type machine à écrire),
+- `\mathbb` : « gras de tableau noir », avec des doubles traits (fourni pas le package `amsfonts`).
 
 Chacune d'entre elles prend les lettres latines comme argument, ainsi nous pourrions écrire une matrice de cette façon :
 
