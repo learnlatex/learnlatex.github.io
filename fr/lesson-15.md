@@ -37,7 +37,7 @@ bash: pdflatex: command not found
 sous Linux.
 
 Il ne s'agit pas d'une erreur de TeX mais d'une erreur du système d'exploitation,
-indiquant que TeX n'est pas installé ou n'est pas trouvé.  Une erreur courante
+indiquant que TeX n'est pas installé ou n'est pas trouvé. Une erreur courante
 est d'installer un _éditeur_ tel que TeXworks ou TeXShop mais sans installer un
 système TeX tel que TeX Live ou MiKTeX.
 

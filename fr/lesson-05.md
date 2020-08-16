@@ -14,7 +14,7 @@ est presque toujours la première commande à avoir.
 La « classe de document » définit la présentation générale du document, notamment :
 - l'apparence : marges, polices de caractères, espacements, etc.
 - s'il y a des chapitres ou non,
-- si le titre doit figurer sur une page séparée...
+- si le titre doit figurer sur une page séparée&hellip;
 
 De façon plus général, les classes de documents peuvent également ajouter de
 nouvelles commandes ; c'est particulièrement vrai pour les classes très

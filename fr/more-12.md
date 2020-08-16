@@ -31,12 +31,12 @@ mais aussi entre les différents styles BibTeX. Beaucoup de types d'entrées et 
 champs sont communs à presque tous les styles, mais pas tous.
 
 Par exemple l'URL : certains anciens styles BibTeX `.bst` (notamment les
-« styles BibTeX standards », comme `plain.bst`, `unsrt.bst`...) sont antérieurs
-à l'invention de l'URL et ne comportent pas de champ dédié à l'URL d'une
-ressource en ligne. De nombreux styles plus récents possèdent, eux, un champ
-`url` dédié. Une solution simple pour afficher l'URL avec les anciens styles est
-d'utiliser le champ `howpublished`, mais avec les nouveaux styles, il vaut bien
-sûr mieux utiliser le champ `url`, fait pour ça.
+« styles BibTeX standards », comme `plain.bst`, `unsrt.bst`&hellip;) sont
+antérieurs à l'invention de l'URL et ne comportent pas de champ dédié à l'URL
+d'une ressource en ligne. De nombreux styles plus récents possèdent, eux, un
+champ `url` dédié. Une solution simple pour afficher l'URL avec les anciens
+styles est d'utiliser le champ `howpublished`, mais avec les nouveaux styles,
+il vaut bien sûr mieux utiliser le champ `url`, fait pour ça.
 
 Pour mettre à profit tout le potentiel du style que vous aurez choisi, il vous
 faudra découvrir l'ensemble des champs qu'il supporte et leur sémantique.

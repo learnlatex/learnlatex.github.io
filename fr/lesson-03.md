@@ -78,7 +78,7 @@ site et sert à configurer l'encodage des polices.
 LaTeX a d'autres paires `\begin{...}` et `\end{...}` ; celles-ci sont appelées
 _environnements_. Vous devez les faire correspondre pour que pour chaque
 `\begin{xx}` il y ait un `\end{xx}`. Si vous les emboîtez, alors vous devez
-avoir `\end{yy} ... \end{xx}` pour correspondre à `\begin{xx}` ... \begin{yy}`,
+avoir `\end{yy}` &hellip; `\end{xx}` pour correspondre à `\begin{xx}` &hellip; `\begin{yy}`,
 c'est-à-dire que les ouvertures et fermetures doivent se correspondre dans
 l'ordre.
 

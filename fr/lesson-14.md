@@ -72,7 +72,7 @@ Avec ces moteurs, la sélection de la police est effectuée au moyen du package
 
 Cela permet de sélectionner la police TeX Gyre Termes, comme dans l'exemple
 `pdflatex` ci-dessus. Mais cette approche fonctionne pour **toutes** les polices
-OpenType.  De plus, les polices disponibles pour `pdflatex` restent disponibles
+OpenType. De plus, les polices disponibles pour `pdflatex` restent disponibles
 pour `xelatex` et `lualatex` grâce à leurs packages respectifs (ou en chargeant
 la police avec `fontspec`, si vous l'avez installée sur votre ordinateur). Le
 [Catalogue des polices LaTeX](https://www.tug.org/FontCatalogue/) donne la liste

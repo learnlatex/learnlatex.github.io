@@ -2,17 +2,20 @@
 title: "Examples for further study"
 ---
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.net](https://texdoc.net).
-The examples are taken from the package documentation unless otherwise noted.
+Ce cours a donné un aperçu des principales fonctionnalités de LaTeX.
+Mais LaTeX dispose d'une vaste panoplie d'extensions et est utilisé
+dans d'innombrables domaines. Nous présentons ici quelques exemples
+supplémentaires, sans explications, mais avec des liens vers la documentation
+des packages utilisés sur [texdoc.net](https://texdoc.net). Les exemples
+sont tirés des documentations en question, sauf indication contraire.
 
-**Note** that inclusion here is not intended as an endorsement of the
-  package over other similar packages, we just aim for a small sample
-  showing a range of areas not otherwise covered in this course.
+_Nota bene:_ Ce n'est pas parce que nous illustrons un package ici que
+nous souhaitons spécialement le conseiller par rapport à d'autres packages
+similaires. Il s'agit simplement d'un petit échantillon un peu arbitraire,
+pour vous donner envie de poursuivre vos expérimentations avec LaTeX.
 
-## Chemistry
+
+## Chimie
 
 ### [`mhchem`](https://texdoc.net/pkg/mhchem)
 
@@ -25,8 +28,11 @@ The examples are taken from the package documentation unless otherwise noted.
 \end{document}
 ```
 
-## Linguistics
+
+## Linguistique
+
 ### [`forest`](https://texdoc.net/pkg/forest)
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -45,7 +51,7 @@ The examples are taken from the package documentation unless otherwise noted.
 \end{document}
 ```
 
-## Chess
+## Échecs
 
 <!-- not 2017 -->
 ### [`xskak`](https://texdoc.net/pkg/xskak)
@@ -64,10 +70,9 @@ Position after 2.\,\xskakget{lan}
 ```
 
 
-## Poetry
+## Poésie
 
 ### [`memoir`](https://texdoc.net/pkg/memoir)
-
 
 ```latex
 \documentclass{memoir}
@@ -100,10 +105,11 @@ Today will I depart. \\*
 \end{document}
 ```
 
-## Drawing
+
+## Dessin
+
 <!-- not 2017 -->
 ### [`tikz`](https://texdoc.net/pkg/tikz)
-
 
 <!-- {% raw %} -->
 ```latex
@@ -140,9 +146,10 @@ x
 ```
 <!-- {% endraw %} -->
 
-## Function plotting
-### [`pgfplots`](https://texdoc.net/pkg/plots)
 
+## Tracé de fonction mathématique
+
+### [`pgfplots`](https://texdoc.net/pkg/plots)
 
 <!-- {% raw %} -->
 ```latex
@@ -169,11 +176,10 @@ x
 ```
 <!-- {% endraw %} -->
 
-## Music
 
+## Musique
 
 ### [`musixtex`](https://texdoc.net/pkg/musixtex)
-
 
 <!-- {% raw %} -->
 ```latex

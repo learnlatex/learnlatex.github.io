@@ -18,4 +18,4 @@ programmation LaTeX3, précédemment disponible sous la forme du package `expl3`
 Tapez `texdoc interface3` pour consulter la
 [description de l'interface expl3](http://texdoc.net/pkg/interface3), ou
 `texdoc source3` pour voir le
-[code source  complet d'`expl3`](http://texdoc.net/pkg/source3).
+[code source complet d'`expl3`](http://texdoc.net/pkg/source3).

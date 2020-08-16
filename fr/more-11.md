@@ -19,7 +19,7 @@ en voir l'effet ici !
 Un bref paragraphe, que nous avons un peu rempli pour que vous puissiez
 en voir l'effet ici !
 
-\noindent  Un bref paragraphe, que nous avons un peu rempli pour que
+\noindent Un bref paragraphe, que nous avons un peu rempli pour que
 vous puissiez en voir l'effet ici !
 \end{document}
 ```

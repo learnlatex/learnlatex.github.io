@@ -9,7 +9,7 @@ ce qui permet d'en charger plusieurs en une seule fois :
 `\usepackage{color,graphicx}` par exemple. Dans ce cas, si vous passez des
 options à `\usepackage`, elles s'appliqueront à tous les package de la liste,
 ce qui n'est pas forcément ce que vous voulez. De plus, il est sans doute plus
-facile de commenter les packages s'ils sont chargés séparément.  Nous nous en
+facile de commenter les packages s'ils sont chargés séparément. Nous nous en
 tiendrons donc ici à charger chaque package sur une ligne séparée.
 
 

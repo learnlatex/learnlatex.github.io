@@ -38,7 +38,7 @@ faire tourner LaTeX plusieurs fois sur votre document. Nous vous dirons quand
 ce sera le cas.
 
 
-## {{ site.latex }} ou pdf{{ site.latex }} ou ...
+## {{ site.latex }} ou pdf{{ site.latex }} ou&hellip;
 
 [Dans la prochaine leçon](lesson-02), nous allons voir que LaTeX n'est pas un
 programme unique. Pour simplifier les choses, nous allons nous concentrer sur un

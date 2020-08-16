@@ -25,4 +25,4 @@ More text here.
 ```
 
 Nous avons choisi de faire les liens de la même couleur que le texte normal ;
-enlevez l'option `hidelinks` pour comprendre pourquoi !  &#128578;
+enlevez l'option `hidelinks` pour comprendre pourquoi ! &#128521;

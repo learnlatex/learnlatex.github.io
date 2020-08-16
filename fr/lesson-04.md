@@ -30,7 +30,7 @@ Voici un peu de texte \textit{mis en italique et \textit{imbriqué} dans le rest
 ```
 
 Vous avez deviné que `\textit` est une commande pour mettre le texte en italique,
-mais elle  met _toujours_ son contenu en italique, donc elle ne fonctionne pas
+mais elle met _toujours_ son contenu en italique, donc elle ne fonctionne pas
 pour des textes imbriqués. Voyez comment `\emph` gère l'imbrication. Il y a
 aussi des cas où on veut autre chose que de l'italique pour mettre du texte en
 évidence ; par exemple, dans les présentations, la couleur ou le gras sont de
