@@ -19,9 +19,9 @@ section. En LaTeX, pour avoir le même résultat, on utiliserait la commande
 Comme les fichiers LaTeX ne sont pas le document lui-même mais plutôt des
 instructions disant ce que doit être chaque partie du document, vous ne donnez
 normalement pas à vos lecteurs votre fichier LaTeX lui-même. Au lieu de cela,
-après avoir écrit votre _source_ LaTeX, vous lancez LaTeX sur le fichier (en
+après avoir écrit votre _fichier source_ LaTeX, vous lancez LaTeX sur le fichier (en
 utilisant par exemple un programme appelé `pdflatex`) pour produire un fichier
-PDF. C'est ce PDF que vous aller fournir à vos lecteurs.
+PDF. C'est ce PDF que vous allez fournir à vos lecteurs.
 
 Ce processus porte différents noms : comme l'utilisation de LaTeX est un peu
 comme la programmation, on appelle souvent cela « compiler » votre document,

@@ -2,8 +2,8 @@
 title: "Qu'est-ce que LaTeX, et comment ça marche? Pour aller plus loin"
 ---
 
-Le mot « LaTeX » se compose en fait de deux éléments, _La_ et _TeX_. Dans ce qui
-suit, nous allons décrire brièvement leur origine.
+Le mot « LaTeX » se compose de deux parties, _La_ et _TeX_. Voici brièvement
+d'où elles viennent.
 
 TeX a été inventé à l'origine par le professeur Donald Knuth de l'université de
 Stanford (Californie). Knuth est bien connu pour une série de livres,

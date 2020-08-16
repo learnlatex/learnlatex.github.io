@@ -12,9 +12,9 @@ Chaque leçon a un lien avec vers une leçon d'approfondissement sur le même
 sujet. Il est possible de suivre les 16 leçons _sans lire les leçons
 d'approfondissement_.
 
-À la fin du cours, il y a un ou quelques leçons spécifiques à la langue choisie
-pour les cours (ici le français), et enfin une galerie d'exemples de packages
-illustrant des utilisations de LaTeX non couvertes par ce cours.
+À la fin du cours, il y a une leçon spécifique au français, et enfin une
+galerie d'exemples de packages illustrant des utilisations de LaTeX
+non couvertes par ce cours.
 
 
 ## Exécuter les exemples
@@ -57,7 +57,7 @@ de l'exécuter :
    d'aucune sorte, ce qui est très pratique pour les petits exemples, mais
    ni ce site ni les sites `latexcgi`, `latexonline.cc` ou `latex-on-http`
    ne proposent de mécanisme pour enregistrer votre document. Toute modification
-   que vous avez apporté à l'exemple est perdue quand vous quittez la page.
+   que vous auriez apportée à l'exemple est perdue quand vous quittez la page.
 
 
 2. Utiliser le service **Overleaf**. Le bouton
@@ -77,9 +77,9 @@ de l'exécuter :
    Overleaf, qui lancera automatiquement LaTeX sur votre code en affichant le
    résultat ou le journal des erreurs.
 
-   Overleaf a des fonctionnalités beaucoup plus développées que notre site web
+   Overleaf a des fonctionnalités beaucoup plus évoluées que notre site web
    pour l'édition des documents, et vous pouvez enregistrer vos projets dans
-   votre compte Overleaf et y revenir plus tard.
+   votre compte Overleaf pour y revenir plus tard.
 
 
 3. Si vous avez un système TeX installé localement, vous pouvez copier le code
@@ -91,28 +91,28 @@ de l'exécuter :
 
 ## Choisir le moteur {{ site.tex }}
 
-Quand vous compilerez les exemples, le moteur `pdflatex` sera utilisé par
-défaut, sauf si l'exemple utilise le package `fontspec`, auquel cas `xelatex`
-sera utilisé.
+Quand vous compilerez les exemples par _LaTeX Online_, c'est le moteur `pdflatex`
+qui sera utilisé par défaut, sauf si l'exemple charge le package `fontspec`,
+auquel cas `xelatex` sera utilisé.
 
 Vous pouvez forcer le choix de `pdflatex`, `xelatex`, `lualatex`, `platex` ou
 `uplatex` en ajoutant dans le document un commentaire de la forme :
 
 `% !TEX ` _any text_ `lualatex`
 
-où l'espace blanc au début est facultatif et la casse est sans importance.
+où l'espace blanc au début est facultatif et la casse sans importance.
 _Tout texte_ entre le premier et le dernier mot est également ignoré. Cela
 permet d'écrire `% !TEX program=pdflatex`, comme demandé par certains éditeurs
 TeX, mais ne nécessite pas la chaîne `programme=`. Cette syntaxe est
-actuellement limitée à la spécification d'un seul des cinq moteurs listés
+actuellement limitée à la seule spécification d'un des cinq moteurs listés
 ci-dessus.
 
 Par exemple dans les exemples [de cette leçon](more-14), vous pouvez voir un tel
 commentaire utilisé pour spécifier LuaLaTeX.
 
-Si `platex` ou `uplatex` est demandé, alors le programme `dvipdfmx` est utilisé
-ensuite pour produire le résultat en PDF à partir du fichier DVI généré par ces
-variantes.
+Si `platex` ou `uplatex` est demandé, alors le programme `dvipdfmx` sera
+automatiquement lancé ensuite pour produire le résultat en PDF à partir
+du fichier DVI généré par ces variantes.
 
 
 ## Choisir comment afficher le résultat
@@ -123,7 +123,7 @@ un comportement cohérent sur le plus grand nombre de navigateurs.
 
 Si vous préférez utiliser le lecteur PDF de votre navigateur (qu'il soit intégré
 ou qu'il s'agisse d'une application externe que vous avez configurée), ajoutez
-un commentaire au formulaire :
+un commentaire de cette forme :
 
 `% !TEX ` _any text_ `pdf`
 
@@ -135,9 +135,9 @@ commentaire.
 
 ---
 
-[^1] : Pendant le développement de ce site web, nous avons également utilisé
-       [LaTeX.Online](https://latexonline.cc/) et
-       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) et nous
-       remercions chaleureusement les développeurs de ces services de les avoir
-       adaptés à nos besoins pour permettre à nos exemples de fonctionner dès
-       les premières phases de développement de _learnlatex.org_.
+[^1]: Pendant le développement de ce site web, nous avons également utilisé
+      [LaTeX.Online](https://latexonline.cc/) et
+      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) et nous
+      remercions chaleureusement les développeurs de ces services de les avoir
+      adaptés à nos besoins pour permettre à nos exemples de fonctionner dès
+      les premières phases de développement de _learnlatex.org_.

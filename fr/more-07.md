@@ -13,13 +13,13 @@ alors quelque chose comme `\includegraphics[width=30pt]{pics/mom.png}` est
 portable et devrait le rester dans le temps.
 
 Les espaces dans les noms de fichiers sont souvent problématiques, même s'ils
-sont mieux pris en charge maintenant. De façon générale, si vous rencontrez des
+sont de mieux en mieux pris en charge. De façon générale, si vous rencontrez des
 problèmes et que vous avez des espaces dans un nom de fichier, commencez par
 supprimer ces espaces avant toute autre chose.
 
-La prise en charge des caractères accentués est quelque peu variable ; certains
-systèmes, en particulier sous Windows, posent des problèmes. Si vous rencontrez
-des problèmes avec des noms de fichiers contenant des caractères accentués,
+La prise en charge des caractères accentués est variable ; certains systèmes,
+en particulier sous Windows, posent des problèmes. Si vous utilisez des noms de
+fichiers contenant des caractères accentués et que vous rencontrez des problèmes,
 faites un test en utilisant uniquement des caractères ASCII.
 
 
@@ -32,7 +32,7 @@ des parties du chemin _même sous Windows_.
 
 Si vous avez beaucoup d'images, vous souhaiterez peut-être définir à l'avance le
 sous-répertoire les contenant. Cela se fait en utilisant `\graphicspath`, qui
-nécessite une entrée (entre accolades `{...}`) pour chaque sous-répertoire. Par
+nécessite une entrée pour chaque sous-répertoire, entre accolades `{...}`. Par
 exemple, pour inclure les sous-répertoires `figs` et `pics`, on aurait :
 
 <!-- {% raw %} -->
@@ -52,15 +52,15 @@ scientifiques. Dans ce cas, enregistrez-les plutôt au format PDF si vous le
 pouvez, car il s'agit d'un format pérenne et facile à manipuler (notamment, on
 peut le mettre à l'échelle sans perte de qualité). Si vous passez par des bitmaps,
 conservez une haute résolution. Vous pouvez dessiner des images à la souris qui
-incluent des snippets LaTeX avec [Inkscape](https://inkscape.org/). Une
+incluent des bouts de code LaTeX avec [Inkscape](https://inkscape.org/). Une
 alternative qui étend ces techniques de dessin à trois dimensions est
 [Asymptote](https://www.ctan.org/pkg/asymptote). Ces deux logiciels produisent
 des fichiers que vous pourrez inclure dans votre document.
 
 Vous pouvez également créer des dessins et graphiques parfaitement adaptés à
 votre document LaTeX, utilisant la même police de caractères, éventuellement
-avec des formules mathématiques et des `\labels` auxquels avec vous pourrez vous
-référer en utilisant des packages LaTeX. Pour cela, vous pouvez dessiner
+avec des formules mathématiques et des `\labels` auxquels avec vous pourrez faire
+référence en utilisant des packages LaTeX. Pour cela, vous pouvez dessiner
 directement à l'intérieur de votre document, avec [Ti*k*Z](https://ctan.org/pkg/pgf)
 ou son alternative, [PSTricks](https://ctan.org/pkg/pstricks-base). Attention,
 c'est pratique et puissant, mais rend rapidement le code-source de vos documents
@@ -91,7 +91,7 @@ le fichier d'entrée. C'est ce que fait le package `float`.
 \end{document}
 ```
 
-Notez l'option `H`, qui met l'image « absolument ici » (_**h**ere_). Cependant,
+L'option `H` met l'image « absolument ici » (_**h**ere_). Cependant,
 en règle générale, il est déconseillé d'utiliser `H`, car ça a tendance à
 laisser de grands espaces vides dans votre document.
 

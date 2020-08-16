@@ -40,8 +40,8 @@ beaucoup mais avec quelques variations :
 - `letter` (lettre) : correspondance sans section,
 - `slides` (diapositives) : pour les diaporamas (mais voir ci-dessous).
 
-Les classes `article`, `rapport` et `livre` proposent des commandes très similaires,
-comme nous l'avons déjà vu. Pour l'écriture d'un document de classe `lettre`,
+Les classes `article`, `report` et `book` proposent des commandes très similaires,
+comme nous l'avons déjà vu. Pour l'écriture d'un document de classe `letter`,
 les commandes disponibles sont un peu différentes :
 
 ```latex

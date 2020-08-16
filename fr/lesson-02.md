@@ -3,11 +3,11 @@ title: "Travailler avec LaTeX"
 ---
 
 Contrairement à de nombreux programmes informatiques, LaTeX n'est pas une
-application unique. Au contraire, il existe des programmes distincts qui
-fonctionnent ensemble. Il y a deux catégories indispensables :
+application unique. Au contraire, il est composé de plusieurs programmes
+distincts qui fonctionnent ensemble. Il y a deux catégories indispensables :
 
 - Un _système TeX_,
-- Un éditeur de txte (plutôt un qui soit adapté à LaTeX).
+- Un éditeur de texte (plutôt un qui soit adapté à LaTeX).
 
 
 ## Les systèmes {{ site.tex }}
@@ -19,16 +19,16 @@ nécessaires pour faire fonctionner LaTeX.
 
 Il existe aujourd'hui deux grands systèmes TeX, [MiKTeX](https://www.miktex.org)
 et [TeX Live](https://tug.org/texlive). Tous deux sont disponibles pour Windows,
-macOS et Linux. MiKTeX est tout de même plutôt orienté vers Windows ; pour
-MacOS, TeX Live est regroupé dans une collection plus vaste appelée
+MacOS et Linux. MiKTeX est tout de même plutôt orienté vers Windows ; pour
+MacOS, TeX Live est inclus dans une collection plus vaste appelée
 [MacTeX](http://www.tug.org/mactex/). Chaque système a
-[des avantages](https://tex.stackexchange.com/questions/20036), et vous pouvez
-consulter [quelques conseils supplémentaires du projet
-LaTeX](https://www.latex-project.org/get/).
+[ses avantages](https://tex.stackexchange.com/questions/20036), et vous pouvez
+consulter quelques conseils supplémentaires
+[sur le site du projet LaTeX](https://www.latex-project.org/get/).
 
 Comme **TeX Live** est disponible sur toutes les plateformes courantes et qu'il
 présente certains avantages en termes de performances, nous vous recommandons
-de le choisir si vous n'êtes pas sûr du système à installer.
+de le choisir si vous ne savez pas trop quel système installer.
 
 
 ## Les éditeurs de texte
@@ -43,8 +43,8 @@ la possibilité de cliquer sur votre code source pour aller au point corresponda
 dans le fichier PDF, ou l'inverse.
 
 Il y a beaucoup plus d'éditeurs LaTeX que ce que nous pouvons espérer énumérer ici :
-il existe une [liste complète sur
-StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
+une liste quasiment exhaustive a été dressée
+[sur StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
 Un éditeur de base, [TeXworks](https://tug.org/texworks), est inclus dans
 TeX Live et MiKTeX sous Windows et Linux, et
 [TeXShop](https://pages.uoregon.edu/koch/texshop/) est inclus dans MacTeX.
@@ -82,9 +82,9 @@ exemple [Papeeria](https://papeeria.com/).
 Mettez en place une installation LaTeX locale _ou_ un compte avec un service
 LaTeX en ligne. Si vous utilisez une installation locale, vous devrez également
 choisir un éditeur : nous vous recommandons de commencer par TeXworks ou
-TeX Shop (voir ci-dessus), puis de vous tourner vers d'autres éditeurs plus
+TeXShop (voir ci-dessus), puis de vous tourner vers d'autres éditeurs plus
 tard, lorsque vous saurez comment _vous_ travaillez le mieux avec LaTeX.
 
-Vous pourrez [réaliser tous nos exercices dans votre navigateur](help.md), mais
-nous voulons vous aider à travailler sur de vrais documents, c'est donc le
-moment idéal pour vous préparer.
+Vous pourrez faire [tous nos exercices dans votre navigateur](help.md), mais
+nous voulons vous préparer à travailler sur de vrais documents, c'est donc le
+moment idéal pour tout mettre en place.

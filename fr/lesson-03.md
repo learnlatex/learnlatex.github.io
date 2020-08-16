@@ -5,12 +5,12 @@ title: "Votre premier document avec LaTeX"
 Notre premier document LaTeX va être très simple : l'idée est de vous montrer
 à quoi ressemble un document et comment le compiler avec succès. C'est aussi
 votre première chance de [voir comment utiliser les exemples de
-`learnlatex.org`](aide).
+`learnlatex.org`](help).
 
 Si vous utilisez une installation LaTeX locale, créez dans votre éditeur un
 nouveau fichier appelé `first.tex`, et copiez-collez le texte ci-dessous ou
 tapez-le. Si vous utilisez le système en ligne, vous pouvez simplement cliquer
-sur les boutons LaTeX Online ou Open in Overleaf dans l'exemple pour l'essayer !
+sur les boutons _LaTeX Online_ ou _Open in Overleaf_ dans l'exemple pour l'essayer !
 Nous vous suggérons d'essayer les options en ligne même si vous avez configuré
 LaTeX localement ; c'est une bonne occasion de voir comment fonctionnent les
 différentes possibilités.
@@ -27,13 +27,13 @@ C'est mon premier document LaTeX.
 ```
 
 Enregistrez le fichier et compilez-le pour obtenir document PDF ; si vous
-utilisez une installation LaTeX locale, le bouton exact à appuyer dépendra de
+utilisez une installation LaTeX locale, le bouton exact à presser dépendra de
 l'éditeur que vous avez choisi. Vous devriez obtenir un fichier PDF qui
 contient le texte ci-dessus _plus_ un numéro de page ; LaTeX l'ajoute
 automatiquement.
 
 Visualisez la sortie `first.pdf` avec le programme que vous préférez pour la
-visualisation des PDF. Ça a l'air pas mal ; félicitations !
+visualisation des PDF. Ça a l'air pas mal, félicitations !
 
 
 ## En cas d'erreur
@@ -42,7 +42,8 @@ Les erreurs, ça arrive. Vérifiez que vous avez saisi chaque ligne du fichier
 texte exactement comme indiqué ci-dessus. Parfois, des modifications apparemment
 mineures dans la saisie entraînent des modifications importantes dans le
 résultat, jusqu'à empêcher le document de compiler. Si vous êtes bloqué, essayez
-d'effacer le document et de le copier à nouveau à partir des lignes ci-dessus.
+d'effacer complètement le document et de le copier à nouveau à partir des lignes
+ci-dessus.
 
 Si LaTeX arrête de compiler votre document et affiche un message se terminant
 par un point d'interrogation, vous pouvez sortir en tapant `x` et `<Enter>`.
@@ -52,7 +53,7 @@ même genre que les messages des traitements de texte. Certains éditeurs renden
 également difficile l'accès aux messages d'erreur complets, ce qui peut masquer
 des détails importants. LaTeX crée toujours un journal de ce qu'il fait (un
 fichier de _log_) ; il s'agit d'un fichier texte dont le nom se termine par
-`.log`. Vous pouvez toujours y lir le texte complet des messages d'erreur et,
+`.log`. Vous pouvez toujours y lire le texte complet des messages d'erreur et,
 en cas de problème, les utilisateurs experts de LaTeX vous demanderont souvent
 une copie de ce fichier journal.
 
@@ -61,9 +62,9 @@ une copie de ce fichier journal.
 
 Le premier document montre les bases. Les documents LaTeX sont un mélange de
 texte et de commandes. Les commandes commencent par une barre oblique inversée
-(``\``) et ont parfois des arguments entre accolades (ou parfois des arguments
-optionnels entre crochets). Ensuite, vous obtenez un PDF de sortie en demandant
-à LaTeX de compiler votre fichier.
+(``\``) et ont parfois des arguments entre accolades `{...}` (ou parfois des
+arguments optionnels entre crochets `[...]`). Après avoir demandé à LaTeX
+de compiler votre fichier, vous obtenez en sortie un fichier PDF.
 
 Chaque document LaTeX comporte un `\begin{document}` (son début) et un
 `\end{document}` (sa fin). Entre ces deux, il y a le _corps du document_, qui
@@ -77,7 +78,7 @@ site et sert à configurer l'encodage des polices.
 
 LaTeX a d'autres paires `\begin{...}` et `\end{...}` ; celles-ci sont appelées
 _environnements_. Vous devez les faire correspondre pour que pour chaque
-`\begin{xx}` il y ait un `\end{xx}`. Si vous les emboîtez, alors vous devez
+`\begin{xx}`, il y ait un `\end{xx}`. Si vous les emboîtez, alors vous devez
 avoir `\end{yy}` &hellip; `\end{xx}` pour correspondre à `\begin{xx}` &hellip; `\begin{yy}`,
 c'est-à-dire que les ouvertures et fermetures doivent se correspondre dans
 l'ordre.
@@ -92,12 +93,13 @@ On peut ajouter des commentaires à un fichier LaTeX en les faisant commencer pa
 
 \begin{document}
 % Ceci est un commentaire
-Voici   un document très
-simple\footnote{Avec une note de bas de page}.
+Voici    un document très
+simple\footnote{Avec une note de bas de page.}.
 
-Et là, un nouveau pargraphe.
+Et là, un nouveau paragraphe.
 \end{document}
 ```
+
 Vous pouvez voir ci-dessus que nous avons deux paragraphes : remarquez à nouveau
 l'utilisation d'une ligne blanche pour cela. Remarquez également que les espaces
 multiples sont traités comme une seule espace.
@@ -119,8 +121,8 @@ commandes.
 
 D'autres caractères ont une signification particulière ; nous venons de voir
 que `~` est une espace insécable, par exemple. Presque tous ces caractères sont
-_très rares_ dans un texte normal, c'est pourquoi ils ont été choisis pour des
-significations spéciales. Si vous avez besoin de faire apparaître un de ces
+_très rares_ dans un texte normal, c'est pourquoi ils ont été choisis pour avoir
+des significations spéciales. Si vous avez besoin de faire apparaître un de ces
 caractères spéciaux dans votre document, nous avons mis quelques informations
 [dans la leçon d'approfondissement](more-03).
 
@@ -131,9 +133,9 @@ Expérimentez le système d'édition et de compilation en ligne ; cliquez sur le
 bouton pour commpiler le contenu, puis éditez-le dans la page web et
 compilez-le à nouveau.
 
-Essayez d'ajouter du texte à votre premier document, de le composer et de voir
+Essayez d'ajouter du texte à votre premier document, de le compiler et de voir
 les changements dans votre PDF. Faites des paragraphes différents et ajoutez des
 espaces variables. Explorez le fonctionnement de votre éditeur ; cliquez sur
-votre source et trouvez comment aller à la même ligne dans votre PDF. Essayez
-d'ajouter des espaces insécables et voyez comment ils modifient les sauts de
-lignes.
+votre fichier source et trouvez comment aller à la ligne correspondante dans
+votre PDF. Essayez d'ajouter des espaces insécables et voyez comment ils
+modifient la position des sauts de lignes.

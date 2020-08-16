@@ -10,10 +10,13 @@ pour définir les « méta-données » et une pour les utiliser.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
+
 \author{U.~N.~Tel \and M.~Illevache}
 \title{Ma vie}
-\date{1st April 2020}
+\date{1er avril 2020}
+
 \maketitle
 
 Du texte banal.
@@ -44,6 +47,7 @@ une autre, moins courante : les « listes descriptives ».
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
 
 \begin{description}
@@ -61,9 +65,9 @@ une autre, moins courante : les « listes descriptives ».
 
 ## Travaux pratiques
 
-Essayez de changer les informations passées à`\author`, `\title` and `\date` et
+Essayez de changer les informations passées à `\author`, `\title` and `\date` et
 observez la sortie de `\maketitle`. Quels champs sont obligatoires? Toutes ces
-commandes doivent-elles comporter un auteur, un titre et une date dans leur
+commandes doivent-elles comporter un auteur, un titre ou une date dans leur
 argument ?
 
 Dressez des listes descriptives, et imbriquez certaines d'entre elles dans

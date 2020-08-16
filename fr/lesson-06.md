@@ -13,10 +13,10 @@ Ceux-ci peuvent :
 
 ## Modifier le fonctionnement de LaTeX
 
-Le « noyau » de LaTeX (le cœur de LaTeX) est assez limité quant à la
-personnalisation par l'utilisateur, mais LaTeX est modulaire par nature, et des
-packages complémentaires résolvent les problèmes courants. Le premier problème
-est de s'adapter aux différentes langues humaines, pour prendre en compte les
+Le « noyau » de LaTeX (son cœur) est assez limité quant à la personnalisation
+par l'utilisateur, mais LaTeX est modulaire par nature, et des packages
+complémentaires résolvent les problèmes courants. Le premier problème est de
+s'adapter aux différentes langues humaines, pour prendre en compte les
 spécificités de la coupure des mots en fin de ligne, de la ponctuation, des
 citations, de la localisation, etc.). Les différentes langues ont des règles
 différentes, et il est important de dire à LaTeX lesquelles utiliser. C'est le
@@ -44,7 +44,7 @@ Décommentez la ligne pour charger `babel` en mode français et observez les
 conséquences. Les règles de césure par défaut sont en anglais américain.
 
 Le package `babel` fait bien plus que de la césure, selon la langue concernée ;
-nous [approfondissons ici](more-06) si vous en avez besoin.
+nous [approfondissons ici](more-06), si vous en avez besoin.
 
 
 ## Changer l'apparence du document
@@ -52,7 +52,8 @@ nous [approfondissons ici](more-06) si vous en avez besoin.
 Il est utile de pouvoir ajuster certains aspects de l'apparence indépendamment
 de la classe du document. Le plus évident est celui des marges des pages. Nous
 avons déjà utilisé le package `geometry` dans l'exemple ci-dessus, mais testons
-maintenant un exemple dédié aux marges :
+maintenant un exemple dédié aux marges (attention, le fichier PDF contiendra
+plusieurs pages) :
 
 ```latex
 \documentclass{book}
@@ -88,7 +89,7 @@ Texte de la seconde section.
 \end{document}
 ```
 
-Regardez le rendu avec et sans le package `geometry`.
+Observez le rendu avec et sans le package `geometry`.
 
 
 ## Ajouter des commandes

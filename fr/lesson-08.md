@@ -6,10 +6,10 @@ title: "Les tableaux"
 
 En LaTeX, un tableau se construit dans un environnement `tabular`. Cette leçon
 suppose que vous chargez le package `array`, qui ajoute des fonctionnalités aux
-tableaux LaTeX. Il n'est pas intégré dans le noyau LaTeX, mais c'est uniquement
-pour des raisons historiques et vous avez intérêt à le charger dès que vous
-utilisez des tableaux. Mettez donc ce qui suit dans votre préambule et nous
-sommes prêts à commencer :
+tableaux de base de LaTeX. Il n'est pas intégré dans le noyau LaTeX, mais c'est
+uniquement pour des raisons historiques et vous avez intérêt à le charger dès
+que vous utilisez des tableaux. Mettez donc ce qui suit dans votre préambule et
+nous serons prêts à commencer :
 
 ```latex
 \usepackage{array}
@@ -30,11 +30,11 @@ de colonnes disponibles sont les suivants :
 | `l`        | colonne alignée à gauche (_**l**eft_). |
 | `c`        | colonne centrée (_**c**entered_). |
 | `r`        | colonne alignée à droite (_**r**ight_). |
-| `p{width}` | colonne de largeur fixée, égale à `width` ; le texte sera automatiquement justifié, avec des saurs de lignes si nécessaire. |
-| `m{width}` | comme `p`, mais centré verticalement par rapport au reste de la ligne. |
-| `b{width}` | comme `p`, mais positionné en bas par rapport au reste de la ligne. |
+| `p{width}` | colonne de largeur fixée, égale à `width` ; le texte sera automatiquement justifié, avec des sauts de lignes si nécessaire. |
+| `m{width}` | comme `p`, mais centré verticalement par rapport au reste de la ligne (_**m**iddle_). |
+| `b{width}` | comme `p`, mais positionné en bas par rapport au reste de la ligne (_**b**ottom_). |
 | `w{align}{width}` | fixe la largeur de la colonne à `width`, mais le contenu peut déborder s'il est trop grand. L'alignement horizontal `align` peut être `l`, `c`, or `r`, comme décrit ci-dessus. |
-| `W{align}{width}` | comme `w`, mais vous aurez un avertissement en ca de débordement. |
+| `W{align}{width}` | comme `w`, mais vous aurez un avertissement en cas de débordement. |
 
 
 En outre, il existe quelques autres _preamble-tokens_ qui ne définissent pas une
@@ -64,9 +64,10 @@ Dans le corps du tableau, les colonnes sont séparées par une esperluette `&` e
 une nouvelle ligne est commencée avec `\\`. Il n'y a pas besoin de déclarer à
 l'avance le nombre de lignes du tableau.
 
-Nous avons maintenant tout ce qu'il faut pour construire notre première table.
+Nous avons maintenant tout ce qu'il faut pour construire notre premier tableau.
 Dans le code suivant, les `&` et `\\` sont alignés. Ce n'est pas nécessaire en
-LaTeX, mais ça aide à lire le code source et à trouver les erreurs éventuelles.
+LaTeX, mais ça aide à lire le code source et à débusquer les erreurs
+éventuelles.
 
 <!-- {% raw %} -->
 ```latex
@@ -86,7 +87,7 @@ LaTeX, mais ça aide à lire le code source et à trouver les erreurs éventuell
 <!-- {% endraw %} -->
 
 Si une colonne de tableau contient beaucoup de texte, vous aurez du mal à avoir
-un beau résultat avec seulement `l`, `c` et `r`. Regardez l'exemple suivant :
+un joli résultat avec seulement `l`, `c` et `r`. Regardez l'exemple suivant :
 
 <!-- {% raw %} -->
 ```latex
@@ -112,8 +113,8 @@ un beau résultat avec seulement `l`, `c` et `r`. Regardez l'exemple suivant :
 Le problème est qu'une colonne de type `l` déroule son contenu sur une seule
 ligne, et prend sa largeur naturelle, même si la page n'est pas assez large.
 Pour résoudre ce problème, vous pouvez utiliser une colonne de type `p`.
-Celle-ci met son contenu sous forme de paragraphes avec la largeur que vous
-spécifiez, et aligne ces paragraphe verticalement en haut et en bas. Comparez
+Celle-ci met son contenu sous forme d'un paragraphe avec la largeur que vous
+spécifiez, et aligne ce paragraphe verticalement en haut et en bas. Comparez
 le résultat de ce nouvel exemple avec le précédent :
 
 <!-- {% raw %} -->
@@ -163,16 +164,16 @@ syntaxe :
 
 ## Tirer des traits entre les lignes
 
-Un conseil avant de parler des traits : ceux-ci doivent être utilisés
-parcimonieusement dans les tableaux, et de façon générale, les traits verticaux
-donnent un rendu peu professionnel. En fait, pour obtenir des tableaux au look
-professionnel, il vaut mieux se passer des traits fournis en standard par LaTeX,
-et utiliser à la place le package `booktabs`. C'est pourquoi nous en parlons en
-premier lieu. Par souci d'exhaustivité, les lignes standards sont
+Un conseil avant de parler des traits (ou _filets_) : ceux-ci doivent être
+utilisés parcimonieusement dans les tableaux, et de façon générale, les filets
+verticaux donnent un rendu peu professionnel. En fait, pour obtenir des tableaux
+au look professionnel, il vaut mieux se passer des filets fournis en standard
+par LaTeX, et utiliser à la place le package `booktabs`. C'est pourquoi nous en
+parlons en premier lieu. Dans un souci d'exhaustivité, les filets standards sont
 [présentées en approfondissement](more-08).
 
-Le package `booktabs` propose quatre types de traits différents. Chacune de ces
-commandes doit être utilisée au début d'une ligne, ou juste après un autre trait.
+Le package `booktabs` propose quatre types de filets différents. Chacune de ces
+commandes doit être utilisée au début d'une ligne, ou juste après un autre filet.
 Les trois principales commandes sont : `\toprule` (pour le haut du tableau),
 `\midrule` (pour le corps du tableau) et `\bottomrule` (pour le bas du tableau) :
 
@@ -197,12 +198,12 @@ Les trois principales commandes sont : `\toprule` (pour le haut du tableau),
 ```
 <!-- {% endraw %} -->
 
-La quatrième commande fournie par `booktabs` pour tracer des traits est
-`\cmidrule`. Elle peut être utilisée pour tirer un trait qui ne couvre pas toute
-la largeur du tableau mais seulement une plage de colonnes spécifiée. La plage
-de colonnes est entrée comme une plage de numéros de colonnes :
-`{`_numéro_`-`_numéro_`}`. Même si vous ne voulez dessiner le trait que pour une
-seule colonne, vous devez la spécifier comme une plage (avec deux numéros
+La quatrième commande fournie par `booktabs` pour tracer des filets est
+`\cmidrule`. Elle peut être utilisée pour tracer un filet qui ne couvre pas
+toute la largeur du tableau mais seulement une plage de colonnes spécifiée.
+La plage de colonnes est entrée comme une plage de numéros de colonnes :
+`{`_numéro_`-`_numéro_`}`. Même si vous ne voulez dessiner le filet que pour
+une seule colonne, vous devez la spécifier comme une plage (avec deux numéros
 identiques : `{2-2}`).
 
 <!-- {% raw %} -->
@@ -231,7 +232,7 @@ identiques : `{2-2}`).
 
 
 Il existe une autre fonctionnalité de `\cmidrule` qui contribue à un rendu de
-qualité: on peut raccourcir le trait à chaque extrémité avec un argument
+qualité: on peut raccourcir le filet à chaque extrémité avec un argument
 optionnel entre parenthèses :
 
 <!-- {% raw %} -->
@@ -259,7 +260,7 @@ optionnel entre parenthèses :
 ```
 <!-- {% endraw %} -->
 
-Vous avez sans doute deviné que `r` et `l` signifient que le trait est raccourci
+Vous avez sans doute deviné que `r` et `l` signifient que le filet est raccourci
 à son extrémité droite (_**r**ight_) et  gauche (_**l**eft_), respectivement.
 
 Parfois, un trait serait une séparation trop forte entre deux lignes, mais vous

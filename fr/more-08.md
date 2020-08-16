@@ -147,9 +147,9 @@ colonnes, au lieu de le remplacer.
 <!-- {% endraw %} -->
 
 
-### Traits verticaux
+### Filets verticaux
 
-L'utilisation de traits verticaux dans les tableaux est plutôt découragée
+L'utilisation de filets verticaux dans les tableaux est plutôt découragée
 par les règles typographiques usuelles. Mais il peut arriver qu'on en ait
 besoin :
 
@@ -171,18 +171,18 @@ besoin :
 <!-- {% endraw %} -->
 
 Le comportement de `|` est assez similaire à celui de `!{arg}` : il ajoute un
-trait vertical entre deux colonnes en laissant intact l'espacement initial.
-Il a cependant un inconvénient : ces traits verticaux ne fonctionnent pas avec
-les traits horizontaux de `booktabs`. Vous pouvez cependant l'utiliser avec
-les traits horizontaux fournis par LaTeX, par les commandes `\hline`
+filet vertical entre deux colonnes en laissant intact l'espacement initial.
+Il a cependant un inconvénient : ces filets verticaux ne fonctionnent pas avec
+les filets horizontaux de `booktabs`. Vous pouvez cependant l'utiliser avec
+les filets horizontaux fournis par LaTeX, par les commandes `\hline`
 (correspondant to `\toprule`, `\midrule` et `\bottomrule`) et `\cline` (qui se
-comporte comme `\cmidline`). Comme on le voit, les traits verticaux couvrent
+comporte comme `\cmidline`). Comme on le voit, les filets verticaux couvrent
 bien tout espace ajouté par l'argument optionnel de `\\`.
 
 
-## Personnaliser les traits de `booktabs`
+## Personnaliser les filets de `booktabs`
 
-Tous les traits fournis par le package `booktabs`, ainsi que `\addlinespace`,
+Tous les filets fournis par le package `booktabs`, ainsi que `\addlinespace`,
 acceptent un argument optionnel entre crochets pour spécifier l'épaisseur du
 trait. En outre, le petit retrait de `\cmidrule` peut être personnalisé en
 spécifiant une longueur entre accolades après `r` ou `l`.
