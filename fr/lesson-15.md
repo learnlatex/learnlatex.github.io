@@ -57,8 +57,6 @@ My command is used here \mycommand.
 \end{document}
 ```
 
-This produces a multi-line message in the log file.
-
 produit un message de plusieurs lignes dans le fichier de log :
 
 ```
@@ -190,9 +188,6 @@ produit l'erreur plutôt ésotérique :
 ! Missing $ inserted.
 ```
 {: .noedit :}
-
-But the fix is simple, blank lines are not allowed in math
-environments and should be deleted.
 
 Mais la correction est simple : les lignes vides sont sont pas autorisées dans
 un environnement mathématique. Il suffit de les supprimer (ou de les mettre en

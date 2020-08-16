@@ -5,7 +5,7 @@ title: "Trouver de la documentation et demander de l'aide : pour aller plus loin
 ## Le code-source documenté de {{site.latex}}
 
 La commande `texdoc` vue précédemment n'est pas limitée à la documentation des
-packages. Si vous voulez en apprendre beaucoup plus que les 16 leçons de ce
+packages. Si vous voulez en apprendre beaucoup plus que les 16&nbsp;leçons de ce
 cours, vous pouvez étudier l'implémentation de LaTeX en détail, en suivant ces
 liens :
 

@@ -1,5 +1,5 @@
 ---
-title: "Examples for further study"
+title: "Exemples avancés, comme sources d'inspiration"
 ---
 
 Ce cours a donné un aperçu des principales fonctionnalités de LaTeX.
@@ -161,14 +161,13 @@ x
 \begin{document}
 
 \begin{tikzpicture}
-\begin{axis}[]
-      % density of Normal distribution:
-      \addplot [
-            red,
-            domain=-3e-3:3e-3,
-            samples=201,
-      ]
-            {exp(-x^2 / (2e-3^2)) / (1e-3 * sqrt(2*pi))};
+\begin{axis}
+    % density of Normal distribution:
+    \addplot [red,
+              domain=-3e-3:3e-3,
+              samples=201,
+             ]
+       {exp(-x^2 / (2e-3^2)) / (1e-3 * sqrt(2*pi))} ;
 \end{axis}
 \end{tikzpicture}
 

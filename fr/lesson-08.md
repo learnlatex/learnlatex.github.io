@@ -58,7 +58,7 @@ d'autres packages, sont présentés [en approfondissement](more-08) de cette le�
 Les colonnes `l`, `c` et `r` auront la largeur naturelle de la cellule la plus
 large. Chaque colonne doit être déclarée, donc si vous voulez trois colonnes
 centrées, vous utiliserez `ccc` dans le préambule du tableau. Les espaces sont
-ignorées, donc `c c c` donne la même chose.
+ignorées, et `c c c` donne la même chose.
 
 Dans le corps du tableau, les colonnes sont séparées par une esperluette `&` et
 une nouvelle ligne est commencée avec `\\`. Il n'y a pas besoin de déclarer à
@@ -139,7 +139,7 @@ le résultat de ce nouvel exemple avec le précédent :
 <!-- {% endraw %} -->
 
 Si votre tableau comporte de nombreuses colonnes du même type, vous pouvez vous
-faciliter la viee en utilisant `*{nombre}{chaîne}`, qui répète `nombre` de fois
+faciliter la vie en utilisant `*{nombre}{chaîne}`, qui répète `nombre` de fois
 la `chaîne`. Ainsi, `*{6}{c}` est équivalent à `cccccc`. Pour vous montrer que
 cela fonctionne, voici le premier tableau de cette leçon avec cette nouvelle
 syntaxe :
@@ -201,7 +201,7 @@ Les trois principales commandes sont : `\toprule` (pour le haut du tableau),
 La quatrième commande fournie par `booktabs` pour tracer des filets est
 `\cmidrule`. Elle peut être utilisée pour tracer un filet qui ne couvre pas
 toute la largeur du tableau mais seulement une plage de colonnes spécifiée.
-La plage de colonnes est entrée comme une plage de numéros de colonnes :
+La plage de colonnes est entrée avec les numéros des colonnes :
 `{`_numéro_`-`_numéro_`}`. Même si vous ne voulez dessiner le filet que pour
 une seule colonne, vous devez la spécifier comme une plage (avec deux numéros
 identiques : `{2-2}`).

@@ -4,12 +4,12 @@ title: "Références croisées"
 
 ## Étiquettes et références : comment fonctionnent `\label` et `\ref`?
 
-Quand on rédigez un document, quelle que soit sa longueur, on fait souvent
+Quand on rédige un document, quelle que soit sa longueur, on fait souvent
 référence à des éléments tels que des figures, des tableaux ou des équations.
-Heureusement, LaTeX peut ajouter automatiquement les bonnes référénces ;
+Heureusement, LaTeX peut ajouter automatiquement les bonnes références ;
 il suffit de quelques commande simples. Pour que LaTeX se souvienne d'un endroit
-dans votre document, on doit l'« étiqueter », puis à d'autres endroits, on y
-fait référence.
+dans votre document, vous devez l'« étiqueter », puis à d'autres endroits,
+vous y ferez référence:
 
 ```latex
 \documentclass{article}
@@ -40,8 +40,8 @@ Dans la sous-section~\ref{subsec:etiquette1}, nous avons l'équation~\ref{eq:eti
 
 Il y a deux commandes `\label{...}` : l'une après la sous-section et l'autre
 dans l'environnement de l'équation. Les commandes `\ref{...}` de la dernière
-phrase y sont associées par les noms des étiquettes. Lorsqu'on l'exécute, LaTeX
-enregistre les informations sur les étiquettes dans un fichier auxiliaire.
+phrase utilisent les noms des étiquettes ainsi définies. Lorsqu'on l'exécute,
+LaTeX enregistre les informations sur les étiquettes dans un fichier auxiliaire.
 Pour `\label{subsec:labelone}`, LaTeX sait qu'il est maintenant dans une
 sous-section et il enregistre donc le numéro de la sous-section.
 Pour `\label{eq:labeltwo}`, LaTeX sait que l'environnement d'intérêt le plus

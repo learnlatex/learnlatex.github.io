@@ -99,9 +99,9 @@ résoudre toutes les références.
 
 Pour la deuxième étape, deux systèmes sont largement utilisés : BibTeX et Biber.
 Biber n'est utilisé qu'avec un package LaTeX appelé `biblatex`, alors que BibTeX
-est utilisé soit sans aucun package particulier, soit avec `natbib`.
+est utilisé soit sans package particulier, soit avec `natbib`.
 
-Le lancement d'un second outil en plus de de LaTeX est géré de différentes
+Le lancement d'un second outil en plus de LaTeX est géré de différentes
 façons par les différents éditeurs. Pour les exemples sur _learnlatex.org_,
 nous avons écrit des scripts qui s'occupent de tout « en coulisses ».
 Votre éditeur préféré peut avoir un seul bouton « faire ce qu'il faut »,
@@ -110,8 +110,8 @@ exécutions de LaTeX.
 
 Le format des citations et des références est indépendant de votre base de
 données BibTeX, et il est défini par ce que l'on appelle un « style ». Nous
-verrons qu'ils fonctionnent de façon légèrement différente dans le flux de
-travail BibTeX et dans `biblatex`, mais l'idée générale reste la même :
+verrons qu'ils fonctionnent de façon légèrement différente dans la chaîne de
+traitement BibTeX et dans `biblatex`, mais l'idée générale reste la même :
 on peut choisir la façon dont les citations sont mises en forme.
 
 
@@ -158,9 +158,9 @@ optionnel. Si deux arguments facultatifs sont donnés, le premier est placé
 devant l'étiquette de la citation pour une courte note et le second après
 l'étiquette, pour une référence de page.
 
-L'exemple ci-dessus utilise le style auteur-année, mais on peut des citations
-numériques. Cela se fait en ajoutant l'option `numbers` à la ligne chargeant
-le package `natbib`.
+L'exemple ci-dessus utilise le style auteur-année, mais on peut demander des
+citations numériques. Cela se fait en ajoutant l'option `numbers` à la ligne
+chargeant le package `natbib`.
 
 
 ## La chaîne de traitement avec `biblatex`
@@ -232,9 +232,9 @@ D'une manière générale, on dit que `biblatex` est plus facile à personnalise
 Dans `biblatex`, il est généralement plus facile d'implémenter des styles de
 citation élaborés, avec un plus grand nombre de commandes de citation
 différentes. Il offre également des fonctionnalités davantage liées au contexte.
-En gros, cela est moins intéressant pour les styles courants dans les
-disciplines des sciences dures, mais devient pertinent pour les styles plus
-complexes utilisés dans certains domaines des sciences humaines.
+En gros, cela est moins intéressant pour les styles courants dans les sciences
+dures, mais devient pertinent pour les styles plus complexes utilisés dans
+certains domaines des sciences humaines.
 
 BibTeX ne peut trier correctement que des caractères US-ASCII et s'appuie sur
 des solutions de contournement pour trier les caractères non US-ASCII. Avec
@@ -262,7 +262,7 @@ bibliographie, vous envisagerez plutôt d'utiliser `biblatex`.
 Essayez les exemples `natbib` et `biblatex`. Pour `natbib`, vous devrez exécuter
 LaTeX, BibTeX, LaTeX, LaTeX ; pour `biblatex`, c'est LaTeX, Biber, LaTeX.
 Découvrez comment faire cela dans votre éditeur, ou essayez les automatismes
-de Overleaf et LaTeX Online.
+d'Overleaf et LaTeX Online.
 
 Regardez ce qui se passe lorsque vous créez de nouvelles entrées dans la base
 de données et de nouvelles citations. Ajoutez une citation qui n'est pas dans

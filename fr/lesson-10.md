@@ -27,13 +27,13 @@ Regardez comment le paragraphe se poursuit après la formule mathématique.
 \end{document}
 ```
 
-Vous pouvez voir ailleurs des formules mathématiques de similaires à celles de
-LaTeX, par exemple le système MathJax, qui sert à écrire des formules dans des
-pages web. La syntaxe de ces systèmes peut être légèrement différente de la
-syntaxe utilisée par LaTeX car ils n'utilisent pas LaTeX pour la compilation.
-Nos exemples sont tous en code LaTeX correct, donc si vous voyez quelque chose
-de différent dans un autre contexte, c'est peut-être parce que ça n'utilise pas
-vraiment LaTeX.
+Vous pouvez voir ailleurs des formules mathématiques similaires à celles de
+LaTeX, par exemple avec le système MathJax, qui sert à écrire des formules
+dans des pages web. La syntaxe de ces systèmes peut être légèrement différente
+de la syntaxe utilisée par LaTeX car ils n'utilisent pas LaTeX pour la
+compilation. Nos exemples sont tous en code LaTeX correct, donc si vous voyez
+quelque chose de différent dans un autre contexte, c'est peut-être parce que
+ça n'utilise pas vraiment LaTeX.
 
 
 ## Mode mathématique « en ligne » et notations
@@ -41,7 +41,7 @@ vraiment LaTeX.
 Comme vous pouvez le voir ci-dessus, le mode mathématique en ligne est encadré
 par des symboles dollar simples (`$ ... $`). Il est également possible d'utiliser
 la notation `\( ... \)`. Des expressions simples sont saisies sans aucune balise
-spéciale, et vous verrez que le calcul est correctement espacé et que les
+spéciale, et vous verrez que la formule est correctement espacée et que les
 variables sont notées en italique.
 
 Le mode mathématique en ligne restreint la taille verticale de l'expression afin
@@ -75,7 +75,7 @@ Indice $a_{b}$ et exposant $a^{b}$.
 
 (Vous trouverez des exemples où les indices et exposants sont notés sans
 accolades, mais ce n'est pas la syntaxe officielle et peut avoir des effets
-secondaires ; utilisez donc toujours des accolades).
+secondaires ; utilisez donc toujours des accolades.)
 
 Il existe de très nombreuses de commandes spécialisées en mode mathématique.
 Certaines d'entre elles sont assez faciles à deviner, par exemple `\sin` et
@@ -94,7 +94,7 @@ Un peu de maths: $y = 2 \sin \theta^{2}$.
 Nous ne pouvons pas couvrir ici toutes les commandes standards du mode
 mathématique LaTeX, mais il existe de nombreuses ressources sur internet les
 répertoriant. Vous pouvez rechercher visuellement des commandes pour les
-symboles de mode mathématique en utilisant
+symboles du mode mathématique en utilisant
 [l'outil graphique Detexify](https://detexify.kirelabs.org/classify.html).
 
 
@@ -162,7 +162,7 @@ ne sont pas décrits ici.
 L'écriture mathématique est très riche, ce qui signifie que les outils intégrés
 au noyau LaTeX ne peuvent pas tout couvrir. Le package `amsmath` étend le
 support du noyau pour couvrir beaucoup plus de notations. Le
-[Guide de l'utilisateur d'`amsmath'](http://texdoc.net/pkg/amsmath) contient
+[Guide de l'utilisateur d'`amsmath`](http://texdoc.net/pkg/amsmath) contient
 beaucoup plus d'exemples que nous ne pouvons en montrer dans cette leçon.
 
 ```latex
@@ -181,9 +181,9 @@ Résoudre la récurrence suivante pour $ n,k\geq 0 $:
 
 L'environnement `\align*` fait que les équations s'alignent sur les esperluettes
 (les symboles `&`), comme dans un tableau. Remarquez comment nous avons utilisé
-`\quad` pour insérer un peu d'espace, et `\text` pour mettre du texte normal
+`\quad` pour insérer une grande espace, et `\text` pour mettre du texte normal
 dans le mode mathématique. Nous avons également utilisé une autre commande en
-mode mathématique, `\binom`, pour une binomiale.
+mode mathématique: `\binom`, pour une binomiale.
 
 Nous avons utilisé ici `align*` (avec une étoile), ce qui fait que l'équation
 n'est pas numérotée. La plupart des environnements mathématiques numérotent
@@ -223,7 +223,7 @@ d & e & f
 ## Les fontes en mode mathématique
 
 Contrairement au texte normal, les changements de police en mode mathématique
-véhiculent souvent une signification très particulière. Elles sont donc la
+véhiculent généralement une signification très particulière. Elles sont donc la
 plupart du temps écrites explicitement. Vous aurez besoin d'un petit ensemble
 de commandes :
 
@@ -234,7 +234,7 @@ de commandes :
 - `\mathtt` : chasse fixe (type machine à écrire),
 - `\mathbb` : « gras de tableau noir », avec des doubles traits (fourni pas le package `amsfonts`).
 
-Chacune d'entre elles prend les lettres latines comme argument, ainsi nous
+Chacune d'entre elles prend des lettres latines comme argument, ainsi nous
 pourrions écrire une matrice de cette façon :
 
 ```latex

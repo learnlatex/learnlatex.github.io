@@ -10,7 +10,7 @@ encore plus limité avec les lettres non-latines. En revanche, le programme Bibe
 a été écrit dès le départ pour gérer correctement toutes les langues, y compris
 quand elles sont mélangées.
 
-Donc si vous voulez triez votre bibliographie dans un ordre autre que l'ordre
+Donc si vous voulez trier votre bibliographie dans un ordre autre que l'ordre
 anglais, vous avez vraiment intérêt à utiliser `biblatex` et Biber, plutôt que
 `natbib` et BibTeX.
 

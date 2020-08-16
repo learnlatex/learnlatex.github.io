@@ -69,7 +69,7 @@ More text.
 \end{document}
 ```
 
-L'erreur ici est le caractère underscore `_` qui doit être saisi comme `\_`.
+L'erreur ici est le caractère _underscore_ `_` qui doit être saisi comme `\_`.
 
 TeX le signale correctement avec le _premier_ message d'erreur :
 
@@ -83,7 +83,7 @@ l.5 Text_
 ```
 {: .noedit :}
 
-Cependant, si vous à l'invite `?`, vous tapez <entrée>, TeX corrige en ajoutant
+Cependant, si à l'invite `?`, vous tapez <entrée>, TeX corrige en ajoutant
 un `$` de sorte que le `_` est vu en mode mathématique comme un indice. Le mode
 mathématique continue, puis se termine au `$` suivant, donc l'`\alpha` qui vient
 après est vu en mode texte, générant une autre erreur :
@@ -121,7 +121,6 @@ parenthèse `)` au lieu d'une accolade `}`. Mais l'erreur n'est pas détectée
 avant la fin du fichier, au moment TeX s'aperçoit qu'il y a encore un groupe
 non fermé. Il rapporte ici la ligne à laquelle le groupe a été ouvert `{`. Il
 ne peut pas détecter l'erreur réelle car la parenthèse `)` est considérée
-
 comme du « texte normal », parfaitement valide.
 
 ```

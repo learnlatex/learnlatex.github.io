@@ -37,10 +37,10 @@ Multline
 
 ### Les colonnes dans les alignements mathématiques
 
-Les environnements d'alignement `amsmath` sont conçus pour prendre des paires de
-colonnes, la première colonne de chaque paire étant alignée à droite et la
-seconde à gauche. Cela permet d'afficher plusieurs équations, chacune étant
-alignée sur son symbole de relation.
+Les environnements d'alignement `amsmath` sont conçus pour considérer les
+colonnes par paires, la première colonne de chaque paire étant alignée à droite
+et la seconde à gauche. Cela permet d'afficher plusieurs équations, chacune
+étant alignée sur son symbole de relation.
 
 ```latex
 \documentclass{article}
@@ -153,13 +153,9 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 
 ## Le package `mathtools`
 
-The package `mathtools` loads `amsmath` and adds several additional features,
- such as variants of the `amsmath` matrix environments that allow the column
-alignment to be specified.
-
 Le package `mathtools` charge `amsmath` et ajoute des fonctionnalités
-supplémentaires, telles que des environnements pour les matrices, un peu comme
-ceux de `amsmath`, qui permettent de spécifier l'alignement des colonnes.
+supplémentaires, telles que des environnements pour les matrices comme
+ceux de `amsmath`, mais permettant de spécifier l'alignement des colonnes.
 
 ```latex
 \documentclass[a4paper]{article}

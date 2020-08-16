@@ -4,7 +4,7 @@ title: "Mise en forme du texte: fontes et espacements"
 
 ## Espacement des paragraphes
 
-Nous avons déjà vu qu'une ligne blanche dans votre saisie générera un nouveau
+Nous avons déjà vu qu'une ligne blanche dans votre saisie génèrera un nouveau
 paragraphe en LaTeX. Conformément aux usages typographiques, ce nouveau
 paragraphe commence par une indentation (ou retrait de paragraphe). Un autre
 style possible est de ne pas avoir d'indentations pour les paragraphes, mais

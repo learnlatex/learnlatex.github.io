@@ -4,19 +4,19 @@ title: "Les tables : pour aller plus loin"
 
 ## D'autres options dans le préambule des tableaux
 
-La leçon n'ayant pas couvert tous les options disponibles pour les en-têtes de
-tableaux, quelques autres sont expliqués ici avec des exemples. N'hésitez pas
-à revoir le début de la leçon pour avoir en tête toutes les possibilités
-existantes. Les courtes descriptions fournies devraient suffire à comprendre ce
-que font les différents types de colonnes `m`, `b`, `w`, et `W` après que vous
-ayez compris `l`, `c`, `r`, et `p`. Si ce n'est pas le cas, utilisez les
-exemples pour expérimenter un peu. Il restera ensuite à voir les autres
-« _preamble-tokens_ » disponibles, bien pratiques : `>`, `<`, `@`, `!` et `|`.
+La leçon principale n'ayant pas couvert tous les options disponibles pour les
+en-têtes de tableaux, quelques autres sont expliquées ici avec des exemples.
+N'hésitez pas à revoir le début de la leçon pour avoir en tête toutes les
+possibilités existantes. Les courtes descriptions fournies devraient suffire
+à comprendre ce que font les différents types de colonnes `m`, `b`, `w`, et
+`W` après que vous ayez compris `l`, `c`, `r`, et `p`. Si ce n'est pas le cas,
+utilisez les exemples pour expérimenter un peu. Il restera ensuite à voir les
+autres « _preamble-tokens_ » disponibles, bien pratiques : `>`, `<`, `@`, `!` et `|`.
 
 
 ### Mettre en forme une colonne
 
-`>` et `<` peuvent être utilisées pour insérer des éléments avant et après le
+`>` et `<` peuvent être utilisés pour insérer des éléments avant et après le
 contenu de chaque cellule d'une colonne. Vous pouvez donc les utiliser pour
 _ajouter des commandes_ qui changent la mise en forme de la colonne. Par exemple,
 ceci mettra en italique la première colonne et insérera un deux-points après :
@@ -31,11 +31,11 @@ ceci mettra en italique la première colonne et insérera un deux-points après 
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   \toprule
-  Animal & Food  & Size   \\
+  Animal     & Nourriture & Taille \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  chien      & viande     & moyen  \\
+  cheval     & foin       & gros   \\
+  grenouille & mouches    & petit  \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -61,11 +61,11 @@ l'alignement d'une seule cellule ici :
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   \toprule
-  \multicolumn{1}{l}{Animal} & Food & Size \\
+  \multicolumn{1}{l}{Animal} & Nourriture & Taille \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  chien      & viande     & moyen  \\
+  cheval     & foin       & gros   \\
+  grenouille & mouches    & petit  \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -80,7 +80,7 @@ la séparer des autres et rendre le tableau esthétique. Cet espace est défini 
 la longueur `\tabcolsep`. Comme chaque colonne a cet espace de chaque côté, il y
 a un `\tabcolsep` à chaque extrémité du tableau, et deux `\tabcolsep` entre les
 différentes colonnes (un venant de chaque colonne). La largeur de cet espace
-peut être changé avec `\setlength` :
+peut être changée avec `\setlength` :
 
 <!-- {% raw %} -->
 ```latex
@@ -92,10 +92,10 @@ peut être changé avec `\setlength` :
 
 \begin{document}
 \begin{tabular}{lll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal     & Nourriture & Taille \\
+  chien      & viande     & moyen  \\
+  cheval     & foin       & gros   \\
+  grenouille & mouches    & petit  \\
 \end{tabular}
 \end{document}
 ```
@@ -113,10 +113,10 @@ et mettra à la place ce qui lui est passé en argument :
 
 \begin{document}
 \begin{tabular}{l@{ : }l@{\hspace{2cm}}l}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal     & Nourriture & Taille \\
+  chien      & viande     & moyen  \\
+  cheval     & foin       & gros   \\
+  grenouille & mouches    & petit  \\
 \end{tabular}
 \end{document}
 ```
@@ -137,10 +137,10 @@ colonnes, au lieu de le remplacer.
 
 \begin{document}
 \begin{tabular}{l!{:}ll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal     & Nourriture & Taille \\
+  chien      & viande     & moyen  \\
+  cheval     & foin       & gros   \\
+  grenouille & mouches    & petit  \\
 \end{tabular}
 \end{document}
 ```
@@ -161,10 +161,10 @@ besoin :
 
 \begin{document}
 \begin{tabular}{l|ll}
-  Animal & Food  & Size   \\[2pt]
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal     & Nourriture & Taille \\[2pt]
+  chien      & viande     & moyen  \\
+  cheval     & foin       & gros   \\
+  grenouille & mouches    & petit  \\
 \end{tabular}
 \end{document}
 ```
@@ -196,11 +196,11 @@ spécifiant une longueur entre accolades après `r` ou `l`.
 
 \begin{document}
 \begin{tabular}{@{} lll@{}} \toprule[2pt]
-  Animal & Food  & Size   \\ \midrule[1pt]
-  dog    & meat  & medium \\
+  Animal     & Nourriture & Taille \\ \midrule[1pt]
+  chien      & viande     & moyen  \\
   \cmidrule[0.5pt](r{1pt}l{1cm}){1-2}
-  horse  & hay   & large  \\
-  frog   & flies & small  \\ \bottomrule[2pt]
+  cheval     & foin       & gros   \\
+  grenouille & mouches    & petit  \\ \bottomrule[2pt]
 \end{tabular}
 \end{document}
 ```
@@ -219,10 +219,12 @@ Voici un exemple simple avec deux colonnes numériques alignées :
 \usepackage[T1]{fontenc}
 \usepackage{booktabs}
 \usepackage{siunitx}
+
 \begin{document}
+
 \begin{tabular}{SS}
 \toprule
-{Values} &  {More Values} \\
+{Quelques valeurs} & {D'autres valeurs} \\
 \midrule
 1        &   2.3456 \\
 1.2      &   34.2345 \\
@@ -232,6 +234,7 @@ Voici un exemple simple avec deux colonnes numériques alignées :
 0.2      &    1e4 \\
 \bottomrule
 \end{tabular}
+
 \end{document}
 ```
 
@@ -399,7 +402,7 @@ A Wider Entry & b\\
 
 Le package `longtable` est remarquable parce qu'il préserve la largeur des
 colonnes sur toutes les pages du tableau ; cependant, pour y parvenir, il faut
-parfois plusieurs exécutions de LaTeX, pour que les éventiuelles grandes
+parfois plusieurs exécutions de LaTeX, pour que les éventuelles grandes
 cellules rencontrées tardivement dans le tableau puissent affecter la largeur
 des colonnes depuis la première page.
 
@@ -423,14 +426,14 @@ mais voici un exemple simple :
 
 \begin{table}
 \begin{threeparttable}
-   \caption{An Example}
+   \caption{Un exemple}
    \begin{tabular}{ll}
-    An entry & 42\tnote{1}\\
-    Another entry & 24\tnote{2}\\
+    Voyelles          & A noir\tnote{1}\\
+    Mon rêve familier & Je fais souvent ce rêve\tnote{2}\\
    \end{tabular}
    \begin{tablenotes}
-   \item [1] the first note.
-   \item [2] the second note.
+   \item [1] Arthur Rimbaud.
+   \item [2] Paul Verlaine.
    \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -535,7 +538,7 @@ cellules sont divisées verticalement par l'utilisation d'environnements
 
 L'alignement vertical peut être contrôlé par un argument optionnel de
 l'environnement `\tabular` ; cet argument peut valoir `t`, `c`, ou `b` pour
-avoir un alignement supérieur (_**t**op_), centré (_**c**entered_) ou inférieur
+avoir un alignement eu haut (_**t**op_), au milieu (_**c**entered_) ou en bas
 (_**b**ottom_) respectivement et s'utilise de cette façon :
 
 <!-- {% raw %} -->
@@ -573,7 +576,7 @@ Il y a aussi deux paramètres généraux qui contrôlent l'espacement des lignes
 ```
 augmentera de 50% l'espace entre les lignes.
 
-Souvent, surtout quand on utilise `\hline`, il est préférable de simplement augmenter la hauteur des lignes, sans augmenter leur profondeur en dessous de la ligne de base. Cet exemple illustre le paramètre `\extrarowheight` :
+Souvent, surtout quand on utilise `\hline`, il est préférable de simplement augmenter la hauteur des lignes, sans augmenter leur profondeur en-dessous de la ligne de base. Cet exemple illustre le paramètre `\extrarowheight` :
 
 ```latex
 \documentclass[a4paper]{article}
@@ -584,9 +587,9 @@ Souvent, surtout quand on utilise `\hline`, il est préférable de simplement au
 \begin{center}
 \begin{tabular}{cc}
 \hline
-Square& $x^2$\\
+Carré & $x^2$ \\
 \hline
-Cube& $x^3$\\
+Cube  & $x^3$ \\
 \hline
 \end{tabular}
 \end{center}
@@ -595,9 +598,9 @@ Cube& $x^3$\\
 \setlength\extrarowheight{2pt}
 \begin{tabular}{cc}
 \hline
-Square& $x^2$\\
+Carré & $x^2$ \\
 \hline
-Cube& $x^3$\\
+Cube  & $x^3$ \\
 \hline
 \end{tabular}
 \end{center}

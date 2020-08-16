@@ -18,7 +18,7 @@ leçon, nous avons préparé des exemples interactifs de ce que vous écririez,
 que vous pouvez tester et modifier en ligne.
 
 Nous savons que les gens voudront en savoir plus que le contenu de ces
-16 courtes leçons. Afin de vous guider lorsque vous avez besoin de plus
+16&nbsp;courtes leçons. Afin de vous guider lorsque vous avez besoin de plus
 d'informations, nous avons donc inclus une page « pour aller plus loin »
 à la fin de chaque leçon. Ces informations supplémentaires sont là pour
 vous aider lorsque vous avez besoin de détails, mais ne doivent pas vous

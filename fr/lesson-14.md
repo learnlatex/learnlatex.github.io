@@ -7,12 +7,12 @@ en général que les langues européennes, même s'il était déjà possible d'u
 d'autres alphabets par exemple pour le grec et le russe.
 
 
-À l'origine, les accents et les lettres accentuées étaient tapés en utilisant
+À l'origine, les accents et les lettres accentuées étaient saisis en utilisant
 des séquences de contrôle ou des macros telles que `\c{c}` pour « ç » et `\'e`
 pour « é ». Certaines personnes continuent à utiliser ces méthodes de saisie,
-par habitude ou parce qu'elles sont plus faciles à taper sur certains claviers,
-d'autres voulaient pouvoir utiliser les touches de leur clavier pour saisir
-directement de tels symboles.
+par habitude ou parce qu'elles sont plus commodes sur certains claviers,
+mais ce n'est généralement plus utile, et on peut actuellement taper ces
+symboles directement avec les touches de son clavier.
 
 Avant Unicode, LaTeX fournissait déjà le support de nombreux types d'*encodage
 de fichiers* qui permettaient d'écrire du texte dans différentes langues en
@@ -22,8 +22,8 @@ les lettres accentuées en commandes TeX pour produire la sortie correcte sans
 la gymnastique précédente (`d\'ej\`a{} vu`), depuis longtemps inutile.
 
 Cette approche est toujours utilisée en LaTeX moderne quand on utilise le moteur
-`pdflatex`. Par défaut, tous les fichiers sont supposés être Unicode (encodés en
-UTF-8), sauf indication contraire. Bien que ce moteur soit limité aux polices
+`pdflatex`. Par défaut, tous les fichiers sont supposés être en Unicode (encodés
+en UTF-8), sauf indication contraire. Bien que ce moteur soit limité aux polices
 8&nbsp;bits, la plupart des langues européennes sont supportées.
 
 La sélection des polices avec `pdflatex` utilise un mécanisme robuste, et de nos
@@ -44,7 +44,7 @@ avec TeX Gyre, pour avoir une police similaire à Times, il faut appeler
 Avec `pdflatex`, la plupart des polices sont accessibles par des packages. Vous
 pouvez consulter le [Catalogue des polices LaTeX](https://www.tug.org/FontCatalogue/)
 ou la [page CTAN sur le thème des polices](https://www.ctan.org/topic/font)
-(en anglais) pour voir quelques options disponible. Vous pouvez également
+(en anglais) pour voir quelques options disponibles. Vous pouvez également
 rechercher sur internet la police que vous souhaitez, et chercher ensuite une
 version de package compatible avec `pdflatex`. Pour certaines polices
 propriétaires, il existe un clone approprié, qui pour la plupart des applications

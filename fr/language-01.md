@@ -49,7 +49,8 @@ avec les bons espacements autour d'eux :
 \begin{document}
 Cyrano répond au Vicomte :
 \og{}Vous\dots{} vous avez un nez\dots{} heu\dots{} un nez\dots{} très grand.\fg{}
-\end{document} 
+\end{document}
+```
 
 
 Notez au passage la bonne façon de composer les points de suspension, avec `\dots`.

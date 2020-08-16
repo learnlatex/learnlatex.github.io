@@ -9,7 +9,7 @@ d'une classe.
 ## `texdoc`
 
 Si vous avez installé une distribution TeX (par exemple, TeXLive ou MikTeX) et
-que vous avez choisi à l'installation d'avoir la documentation enregistrée
+que vous avez choisi à l'installation d'avoir la documentation stockée
 localement, alors vous pouvez y accéder en utilisant l'outil en ligne de
 commande `texdoc`. Il suffit de taper la commande :
 
@@ -100,13 +100,16 @@ expérimentations avec LaTeX.
 
 Il existe divers forums en ligne pour poser des questions sur LaTeX ; le plus
 populaire aujourd'hui est peut-être
-[TeX - LaTeX StackExchange](https://tex.stackexchange.com). Chaque fois que vous
-posez une question, il est préférable de commencer par donner un exemple clair :
-ce que l'on appelle généralement un « exemple complet minimal » (ECM ; en anglais
-_minimal working example_, MWE). Cela ne signifie pas que le code fonctionne
-(sinon vous ne poseriez pas de questions!), mais plutôt que vous avez fait de
-votre mieux pour le rendre clair, autonome et minimal. Ce dernier qualificatif
-signifie que vous avez juste assez de contenu pour reproduire votre problème.
+[TeX - LaTeX StackExchange](https://tex.stackexchange.com) (en anglais).
+En français, vous pouvez vous inscrire [à la liste GUT](https://www.gutenberg.eu.org/listes).
+
+Chaque fois que vous posez une question, il est préférable de commencer par
+donner un exemple clair : ce que l'on appelle communément un « exemple complet minimal »
+(ECM ; en anglais _minimal working example_, MWE). Cela ne signifie pas que le
+code fonctionne (sinon vous ne poseriez pas de question!), mais plutôt que vous
+avez fait de votre mieux pour le rendre clair, autonome et minimal.
+Ce dernier qualificatif signifie que vous avez juste assez de contenu pour
+reproduire votre problème.
 
 Comment construire un ECM ? Généralement, le plus simple est de partir de :
 
@@ -118,13 +121,13 @@ Texte
 \end{document}
 ```
 
-puis d'ajoutez des lignes une par une jusqu'à ce que vous ayez le problème ciblé.
-Vous pouvez également partir de votre fichier réel puis de le réduire
-progressivement, mais si votre document est déjà bien avancé, ça peut être une
-démarche assez longue.
+puis d'ajouter des lignes une par une jusqu'à ce que vous ayez reproduit
+le problème ciblé. Vous pouvez également partir de votre fichier réel
+puis de le réduire progressivement, mais si votre document est déjà bien
+avancé, la démarche peut être assez longue.
 
 Si vous avez besoin de plus de texte pour inclure des sauts de pages ou autres
-effets, alors des packages tels que `\lipum` peuvent être utilisés pour produire
+effets, alors des packages tels que `\lipsum` peuvent être utilisés pour produire
 plusieurs paragraphes de texte dépourvu de sens, tout en gardant votre fichier
 de test très court.
 

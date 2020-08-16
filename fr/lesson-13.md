@@ -81,7 +81,7 @@ Un document un peu long pourrait donc ressembler à ceci :
 ```
 <!-- {% endraw %} -->
 
-Voici les différentes caractéristiques de ce fichier. (Les différents fichiers
+Voici les différentes caractéristiques de ce fichier (tous les fichiers
 utilisés se trouvent à la fin de cette page).
 
 
@@ -105,8 +105,8 @@ commande `\includeonly`, qui, comme vous pouvez le voir, prend une liste de noms
 de fichiers séparés par des virgules. Lorsque vous utilisez `\includeonly`, vous
 pouvez réduire le temps nécessaire à la compilation et produire un PDF
 « sélectif » pour la relecture. De plus, l'avantage principal de `\includeonly`
-est que LaTeX utilisera toutes les informations de référence croisée des
-fichiers `.aux` des autres fichiers inclus.
+est que LaTeX utilisera toutes les informations des références croisées contenues
+dans les fichiers `.aux` des autres fichiers inclus.
 
 
 ## Ajouter une table des matières
@@ -128,8 +128,8 @@ l'environnements de flottants, et utilisent des fichiers avec l'extension
 Les commandes `\frontmatter`, `\mainmatter`, et `\backmatter` modifient la mise
 en page. Par exemple, `\frontmatter` change la numérotation des pages en
 chiffres romains pour la préface et la table des matières. La commande `\appendix`
-change la numérotation en `A`, `B`, etc., pour les annexes; donc par exemple 
-dans le premier chapitre après `\appendix`, le titre sera `Appendix A`.
+change la numérotation en `A`, `B`, etc., pour les annexes ; donc par exemple 
+dans le premier chapitre après `\appendix`, le titre sera _Appendix A_.
 
 Si vous utilisez `\frontmatter` pour la préface, il vous faudra utiliser
 `\mainmatter` pour commencer le corps de votre document à proprement parler.
@@ -142,9 +142,9 @@ supprimer des entrées pour `\includeonly` et regardez quel effet ça produit.
 
 Ajoutez quelques flottants et demandez à LaTeX des listes des figures et des
 tableaux. Si vous utilisez une instance de LaTeX installée localement, comptez
-d'exécutions de LaTeX sont nécessaires (les systèmes en ligne relancent LaTeX
-automatiquement, sans forcément le dire, de sorte que les exécutions successives
-requises ne se voient pas).
+combien d'exécutions de LaTeX sont nécessaires (les systèmes en ligne relancent
+LaTeX automatiquement, sans forcément le dire, de sorte que les exécutions
+successives requises ne se voient pas).
 
 
 ----

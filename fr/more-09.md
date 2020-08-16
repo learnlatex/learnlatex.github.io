@@ -12,15 +12,16 @@ chargé après tout autre package du préambule de votre document.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
+
 \begin{document}
 
 \section{Introduction}
-Some exciting text with a reference~\ref{sec:next}.
+Du texte passionnant avec une référence à la suite~\ref{sec:next}.
 
-\section{Next thing}
+\section{La suite}
 \label{sec:next}
 
-More text here.
+Avec des détails.
 \end{document}
 ```
 
