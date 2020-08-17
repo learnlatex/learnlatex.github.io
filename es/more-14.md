@@ -2,23 +2,20 @@
 title: "Más sobre: Seleccionando fuentes y usando los motores Unicode"
 ---
 
-
-
-
 ## Lua
 
-The LuaTeX engine provides access to OpenType fonts in a similar way
-to XeTeX, and most uses of the `fontspec` package work equally well
-with either engine.
+El motor LuaTeX permite el uso de las fuentes OpenType de forma similar
+a XeTeX y la mayoría del paquete `fontspec` funciona igualmente con
+ambos paquetes.
 
-LuaTeX also extends TeX in other ways, notably by embedding the Lua
-scripting language. This may be used for programming in a style more
-familiar to people used to ‘mainstream’ programming languages. It also
-offers the possibility to access inner workings of the TeX system and
-modify the behaviour by substituting new code written in Lua.
+LuaTeX amplia las posibilidades de LaTeX de otros modos, en especial integrando
+el leguaje de programación Lua. Éste puede ser usado para programar en un
+estilo más familiar como el usado por los lenguages de programación más comunes.
+Ofrece igualmente la posibilidad de acceder a los procesos internos del sistema
+TeX y modificar su comportamiento, sustituyéndos por nuevo código escrito en Lua.
 
-Lua programming is not covered by this course but a simple example to
-calculate 2π is shown here.
+La prgramación en Lua no será abordada en este curso, sólo mostramos a continuación
+un ejemplo para calcular 2π.
 
 ```latex
 %!TEX lualatex
