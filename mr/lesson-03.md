@@ -50,67 +50,63 @@ This is a first document.
 
 ## What you've got
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+तुमची ही पहिली लाटेक् धारिका पायाभूत आहे.
+लाटेक् धारिकांमध्ये मजकूर व आज्ञावली ह्यांचे मिश्रण असते.
+प्रत्येक आज्ञेची सुरुवात ``\`` ह्या चिन्हाने होते.
+काही वेळा आज्ञांना कार्यघटक असतात जे महिरपी कंसात लिहिले जातात.
+काही वेळा वैकल्पिक कार्यघटक चौकटी कंसात लिहिले जातात.
+अशा बीजधारिकेस चालवल्यानंतर तुम्हाला पीडीएफ् फलित मिळते.
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
+प्रत्येक लाटेक् बीजधारिकेत एक `\begin{document}` ही आज्ञा असते,
+तिची जोडी `\end{document}`ह्या आज्ञेशी लावली जाते.
+ह्या दोन आज्ञांमध्ये दस्तऐवजातील मुख्य मजकूर लिहिला जातो.
+ह्या दस्तऐवजात दोन परिच्छेद आहेत. लाटेक्-मध्ये परिच्छेद एका रिकाम्या
+ओळीने तयार केला जातो. `\begin{document}` च्या पूर्वी *आज्ञापीठ*
+असते. आज्ञापीठात फलित धारिकेची रचना कशी असावी ह्याची माहिती दिली जाते.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+लाटेक्-मधील `\begin{...}` व `\end{...}` ह्यांच्या जोड्यांना `क्षेत्र` म्हटले जाते.
+प्रत्येक `\begin{अआइ}` करिता `\end{अआइ}` असायलाच हवे. जर एका क्षेत्राच्या पोटात
+आणखी एक क्षेत्र असले, तर `\begin{अआइ}` ... `\begin{कखग}` ... `\end{कखग}` ...
+`\end{अआइ}` असा क्रम असायला हवा. पोटातील क्षेत्र संपल्याशिवाय मुख्य क्षेत्र संपवता
+येणार नाही.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+लाटेक् बीजधारिकांमध्ये % ह्या चिन्हानंतर टिप्पण्या लिहिता येतात. ह्याचे एक उदाहरण पाहूयात.
 ```latex
-\documentclass[a4paper,12pt]{article} % The document class with options
-% A comment in the preamble
+\documentclass[a4paper,12pt]{article} % प्राचलांसह वापरला गेलेला लाटेक्-वर्ग
+% आज्ञापीठात एक टिप्पणी
+
 \begin{document}
-% This is a comment
+% ही एक टिप्पणी आहे.
 This is   a simple
 document\footnote{with a footnote}.
 
 This is a new paragraph.
 \end{document}
 ```
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+वरील उदाहरणातील टिप्पण्या फलितधारिकेत दिसत नाहीत. बीजधारिकेत एकाहून अधिक
+मोकळ्या जागा असल्या तरी फलितात एकच मोकळी जागा सुटते. परिच्छेदनिर्मितीसाठी एक
+रिकामी ओळ सोडण्यात आली आहे.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+काही वेळा अशा मोकळ्या जागा द्याव्या लागतात ज्या ओळ संपल्यावर तुटत नाहीत. त्या कायम
+एकाच ओळीत दिसाव्या लागतात. (उदा. आद्याक्षरांसह नावे लिहिताना.) लाटेक्-मध्ये ही मोकळी
+जागा `~` ह्या चिन्हासह मिळवली जाते. मजकूरातील संदर्भ देताना ह्याचा विशेष वापर होतो.
 
-## Special characters
+## विशेष चिन्हे
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+कदाचित तुम्हाला लक्षात आलेच असेल की ``\``, `{` ह्या चिन्हांना लाटेक्-मध्ये विशेष कार्य आहे.
+``\`` ह्या चिन्हाने लाटेक् आज्ञा सुरू होतात. महिरपी कंसांत (`{`, `}`) अनिवार्य कार्यघटक लिहिले जातात.
+अनिवार्य कार्यघटक म्हणजे अशी माहिती जी दिल्याशिवाय आज्ञांचे कार्य होऊच शकत नाही.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+अशी काही चिन्हे आहेत ज्यांना विशेष कार्याकरिता निवडले गेले आहे. ही चिन्हे मजकूरात फार कमी
+आढळतात. वर पाहिल्याप्रमाणे `~` ह्या चिन्हाला सक्तीची मोकळी जागा शोधण्याचं कार्य आहे.
+जर ही चिन्हे वापरण्याची गरज असेल, तर [अधिक माहिती](more-03) ह्या पानावरील सूचना वाचा.
 
-## Exercise
+## स्वाध्याय
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+लाटेक् ऑनलाईन आज्ञावली अधिकाधिक वापरून पाहा. एकदा चालवलेल्या धारिकेत किमान बदल
+करून धारिका पुन्हा चालवून पाहा.
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+तुमच्या पहिल्या दस्तऐवजात मजकूराची भर घालून पाहा. ती धारिका चालवून पीडीएफ् फलित योग्य
+दिसते का ते पाहा. वेगळे परिच्छेद व मोकळ्या जागा सोडून पाहा. तुमचा लाटेक् संपादक कसे काम
+करतो ते शिकून घ्या. बीजधारिकेतील एखाद्या मजकूरावरून फलितातील त्याच ओळीकडे कसे जावे हे
+शोधून पाहा. काही सक्तीच्या मोकळ्या जागांचा वापर करून, ओळतोडीवर त्याचा काय परिणाम होतो हे पाहा.
