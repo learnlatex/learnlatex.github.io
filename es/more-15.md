@@ -2,12 +2,13 @@
 title: "Más sobre: Analizando los errores"
 ---
 
-## Errors reported at ends of environments
+## Errores que ocurren al final de los entornos
 
-Some environments (notably `amsmath` alignments and `tabularx` tables)
-scan the whole environment body before processing the content. This means that
-any error within the environment is reported on the last line. However, as seen in the
-main lesson, TeX's display of the error context should still pinpoint the error location.
+Algunos entornos (en especial los alineamientos `amsmath` y las tablas `tabularx`)
+escanean el cuerpo completo del entorno antes de procesar el contenido. Esto significa que
+ningún error en el interior del entorno será indicado en la última línea del mismo. Sin embargo,
+como vimos en la lección principal, la información contenida en el mensaje de error debería facilitarnos
+la localización exacta del error.
 
 ```latex
 \documentclass{article}
@@ -26,15 +27,15 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 \end{document}
 ```
 
-Here the error will be reported on line 11
+En este ejemplo, se indica un error en la línea 12:
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Although the real error is on line 9 as shown by the context lines:
-
+Aunque el verdadero error está en la línea 10, como se muestra en las líneas
+de información del error:
 
 ```
 ! Undefined control sequence.
@@ -44,17 +45,16 @@ Although the real error is on line 9 as shown by the context lines:
 {: .noedit :}
 
 
-## Spurious errors due to earlier errors
+## Errores ficticios debidos a errores cometidos con anterioridad
 
-When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edit the document
-and re-run. However if you scroll past the error or use an editor or
-online system that does this for you then TeX will try to recover;
-however this may lead to several more errors being reported.
+Cuando se utiliza LaTeX de forma interactiva, desde la línea de comando
+es posible: parar el proceso al presentarse el primer error con `x`, editar
+documento y volver a ejecutar LaTeX. Sin embargo si se obvian los errores o
+si utiliza un editor o un sistema en línea, entonces TeX intentará seguir; esto
+sin embargo puede llevar consigo la aparición de nuevos errores.
 
-So do not be too concerned about the _number_ of errors reported and
-always concentrate on fixing the first reported error.
-
+Así que no se preocupe demasiado del _número_de errores y concéntrese siempre
+en resolver el primer error indicado en la lista.
 
 ```latex
 \documentclass{article}
@@ -67,9 +67,9 @@ More text.
 \end{document}
 ```
 
-The error here is the underscore `_` which should be entered as `\_`.
+El error en este ejemplo es el guion bajo `_` que debe ser escrito como `\_`.
 
-TeX does report this correctly with the _first_ error message
+TeX se lo indica correctamente en el _primer_ mensaje de error
 
 ```
 ! Missing $ inserted.
@@ -81,10 +81,11 @@ l.5 Text_
 ```
 {: .noedit :}
 
-However if you scroll past the `?` prompt then TeX recovers by adding
-a `$` so the `_` is seen in math mode as a subscript. The math mode
-then continues until the `$` which ends math, so the following
-`\alpha` is seen in text mode generating another error
+Sin embargo al obviar este error y continuar, TeX sigue ejecutándose y 
+añadira `$`en ese punto, de forma que `_` será interpretado, en modo matemático, como
+un subíndice. El modo matemático continúa vigente hasta el siguiente símbolo `$` que indica
+su final, con lo que el comando `\alpha` es interpretado en modo texto generando un nuevo 
+mensaje de error.
 
 ```
 ! Missing $ inserted.
@@ -97,13 +98,13 @@ l.5 Text_word  $\alpha
 {: .noedit :}
 
 
-## Errors that do not trigger an error prompt
+## Errores que no dan lugar a mensajes de error en la línea de comandos
 
-Some errors, especially errors that are not detected until the end of the file,
-do not generate an error prompt but just give a warning in the log.
+Algunos errores, especialmente los errores que no se detectan hasta que se llega al final
+del archivo no darán lugar a mensajes de error sino a mensajes de alerta.
 
-If you try this example using the LaTeX CGI server it will return a PDF by default;
-to see the error message in the log add `%!TeX log`.
+Si intenta el siguiente ejemplo usando el servidor CGI de LaTeX, éste le dará un PDF por defecto;
+para ver el mensaje de error en la lista de errores añada `%!TeX log`.
 
 ```latex
 \documentclass{article}
@@ -111,17 +112,16 @@ to see the error message in the log add `%!TeX log`.
 
 \begin{document}
 
- Text {\large some large text) normal size?
+ Texto {\large un poco de texto más grande) texto de tamaño normal?
 
 \end{document}
 ```
 
-In this example the size change was mistakenly ended with `)` rather
-than `}`. This is not detected until the end of the file when TeX
-detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{` It can not detect the actual
-error as the `)` is seen as "normal text".
-
+En este ejemplo, el grupo correspondiente al cambio de tamaño de letra ha sido cerrado
+con un paréntesis `)`. Este error sólo es detectado al llegar al final del archivo
+cuando TeX se da cuenta de que hay un grupo que no ha sido cerrado. Se indica entonces
+la línea en la que el grupo se ha abierto `{`. No se indica el verdadero error, ya que
+el paréntesis `)` es interpretado como un "texto normal".
 ```
 (\end occurred inside a group at level 1)
 
