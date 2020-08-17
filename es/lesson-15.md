@@ -2,24 +2,23 @@
 title: "Analizando los errores"
 ---
 
+A diferencia de un típico procesador de textos, LaTeX dispone de un ciclo
+Editar/Ejecutar/Ver similar al de los compiladores de los lenguages de programación; 
+al igual que en programación, el usuario puede cometer errores al escribir su documento
+y por consiguiente, necesitará tratar con los mensajes de error dados por el sistema. 
 
-Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
-closer to working with programming language compilers, and as in programming
-users may make errors in their input and so need to deal with error messages
-reported by the system.
+Esta página da ejemplos de algunos de los errores más comunes.
 
-This page gives examples of several common errors.
+Cada ejemplo viene acompañado de una explicación sobre la forma del
+mesaje de error.
 
-Each error example has some discussion about the form of the error
-message.
-
-It may be instructive to try the examples but also use the
-edit features to try to fix the documents and test that you can
-resolve the errors.
+Puede ser instructivo el probar los ejemplos, pero también el editarlos
+para intentar solucionar los errores presentes en el documento y verificar
+si es capaz de resolverlos.
 
 ## pdflatex not found
 
-A common first error that people see when starting is:
+Un primer error muy común con el que se encuentra mucha gente al comenzar es:
 
 ```
 'pdflatex' is not recognized as an internal or external command,
@@ -27,22 +26,21 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-no Windows or
+en Windows o
 
 ```
 bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-on Linux.
+en Linux.
 
-This is
-not a TeX error but an operating system error saying that TeX is not
-installed or not found.  A common mistake is to install an _editor_
-such as TeXworks or TeXShop but without installing a TeX system such as
-TeX Live or MiKTeX.
+No se trata de un error de TeX sino de un error del sistema operativo que indica que
+TeX no está instalado o no ha sido encontrado. Un error común es el de instalar
+un _editor_ de TeX como TeXworks o TeXShop pero sin instalar un sistema TeX
+como TeX Live o MiKTeX
 
-## Anatomy of a {{ site.tex }} error message
+## Anatomía de un mensaje de error de {{ site.tex }}
 
 ```latex
 \documentclass{article}
@@ -52,12 +50,12 @@ TeX Live or MiKTeX.
 
 \begin{document}
 
-My command is used here \mycommand.
+Mi comando es usado aquí \mycommand.
 
 \end{document}
 ```
 
-This produces a multi-line message in the log file.
+El ejemplo anterior da lugar a un mesaje de varias líneas en el archivo log.
 
 ```
 ! Undefined control sequence.
@@ -70,37 +68,34 @@ l.8 My command is used here \mycommand
 {: .noedit :}
 
 * The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
-* The second pair of lines show the line that TeX was processing, with a line break marking the point
-  that TeX had reached. The undefined command is the last token read so the last word before the line break,
-  `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
-  an argument but have not yet been executed by TeX.
-* There may in general be some additional lines at this point, showing more context of the error message,
-* The final line starts with `l.` followed by a line number, and then the line in the source file where the
-  error is detected.
+* La primera línea, etiquetada con el símbolo `!` indica el tipo general de error (comando no definido en este caso).
+* El segundo par de líneas muestra la línea que TeX estaba procesando, con un salto de página que marca el lugar
+  que TeX ha alcanzado antes de encontrarse con el error. El comado no definido es la útima parte de código leída, así que la
+  última palabra antes del salto de página es `textbold`. Tras el salto de línea aparce el código `{hmmm}`que ha sido probablemente
+  leído como un argumento, pero que no ha sido aún ejecutado por TeX.
+* A partir de este punto, puede haber, en general, algunas líneas adionales que añaden más información sobre mensaje de error.
+* The última línea comienza con `l.` seguida de un número de línea y de la línea de código en la que el error ha
+  sido detectado.
+* La última línea es un `?`. Si usa TeX de forma interactiva, es posible introducir
+  instrucciones de TeX en este punto, pero la mayoría de los editores y sistemas en línea
+  ejecutan TeX en un modo que no se para al encontrar errores, sino que los pone de
+  lado e intenta procesar el resto del documento. Escribir `s` en la línea de comandos indicará 
+  a TeX que debe continuar en este modo, si se encuentra en el modo interactivo.
 
-* The final line is a `?`.  If using TeX interactively it is possible to
-  enter instructions to TeX at this point, but most editors and online
-  systems run TeX in a mode that does not stop at errors but will
-  scroll past this and try to process the rest of the document. Typing
-  `s` to the prompt will instruct TeX to carry on in this mode if you
-  are working interactively.
+Note que TeX no ve el error en la parte en la que se realiza la definición; 
+de hecho si el comado \mycommand hubiese sido definido, pero no usado, no habríamos
+obtenido ningún error. Así que aunque se indique que el error es en la línea
+7, el "verdadero" error se encuentra en la definición de la línea 3, por consiguiente
+es importante leer el mensaje de error completo.
 
+Tenga en cuenta que algunos editores muestran "resumenes" de una línea de cada error
+encontrado. Esto puede ser particularmente engañoso si el error se muestra como:
 
-Note here that TeX does not see the error at the point that
-the definition is made; and in fact if `\mycommand` is defined but not
-used, no error would be raised. So although the error is reported on
-line 7, the "real" error is in the definition on line 3, so it is
-important to see the whole error message.
+`line 8: undefined command: ...\mycommand`
 
-Beware that some editors show one line "summaries" of the error log.
-This can be particularly misleading if shown as
+ya que lleva a pensar que el comando `\mycommand` no está definido.
 
-`line 7: undefined command: ...\mycommand`
-
-as it makes it appear that `\mycommand` is not defined.
-
-
-## Mismatched braces
+## Error en el uso de llaves {}
 
 
 ```latex
@@ -114,19 +109,18 @@ as it makes it appear that `\mycommand` is not defined.
 \end{document}
 ```
 
-Here the error is a mismatched `}` used to end the optional
-argument. The closing brace causes LaTeX's option parsing
-to fail and you get an internal and not that helpful error: 
-
+En este ejemplo el error es debido al uso de `}` para cerrar
+los argumentos opcionales. La llave de cierre hace que LaTeX
+no pueda pasar los argumentos y usted obtiene un error interno
+no muy útil:
 ```
 ! Argument of \@fileswith@ptions has an extra }.
 ```
 {: .noedit :}
 
-While the error description is unhelpful; the following two
-lines do accurately display the location of the error by the use of
-the linebreak showing how far TeX had read:
-
+Aunque la descripción del error no sea muy útil, las dos siguientes
+líneas indican de forma más precisa la localización del error al utilizar
+el salto de línea para indicar hasta que punto TeX ha llegado:
 ```
 l.4 \usepackage[leqno}
                       {amsmath}
@@ -134,7 +128,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-## Missing files
+## Archivos no encontrados
 
 ```latex
 \documentclass{article}
@@ -147,19 +141,19 @@ l.4 \usepackage[leqno}
 \end{document}
 ```
 
-This produces the error
+En este ejemplo se produce el error:
 
 ```
 ! LaTeX Error: File `amsmathz.sty' not found.
 ```
 {: .noedit :}
 
-Note: the same error may be caused by two different causes; a simple
-typo as here, which may be corrected by fixing the package name, or
-that the file really is missing and needs to be installed on the
-current system.
+Nota: el mismo error puede ser debido a dos causas diferentes: un simple
+error tipográfico (como en este ejemplo) que puede ser corregido escribiendo
+correctamente el nombre del paquete; o un archivo que no se encuentra y necesita
+ser instalado en el sistema.
 
-## Blank lines in display math
+## Líneas en blanco en el módo matemático display
 
 ```
 \documentclass{article}
@@ -177,21 +171,20 @@ Some text
 \end{document}
 ```
 
-Produces the slightly mysterious error
-
+Produce el ligeramente misterioso error
 ```
 ! Missing $ inserted.
 ```
 {: .noedit :}
 
-But the fix is simple, blank lines are not allowed in math
-environments and should be deleted.
+Pero resolverlo es muy simple, las líneas en blanco no están
+permitidas en los entornos matemáticos por lo que deben ser
+eliminadas.
 
-## Exercise
-
-Attempt to fix the errors in the supplied examples.
+## Ejercicios
 
 Produce small documents with different errors and note the form of the error messages.
+Escriba pequeños documentos con diferentes errores y fíjese en la forma de los mensajes de error.
 
 <script>
   window.addEventListener('load', function(){
