@@ -32,6 +32,7 @@ Files being translated :
 - more-13.md
 - lesson-14.md
 - more-14.md
+- lesson-15.md
 
 Note: A mark "(OK_x)" will be placed by translators for each item when the translations have been checked,
 x being the first letter of the translator's name. 
