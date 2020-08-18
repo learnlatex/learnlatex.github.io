@@ -49,11 +49,11 @@ de información del error:
 
 Cuando se utiliza LaTeX de forma interactiva, desde la línea de comando
 es posible: parar el proceso al presentarse el primer error con `x`, editar
-documento y volver a ejecutar LaTeX. Sin embargo si se obvian los errores o
+documento y volver a ejecutar LaTeX. Sin embargo, si se obvian los errores o
 si utiliza un editor o un sistema en línea, entonces TeX intentará seguir; esto
 sin embargo puede llevar consigo la aparición de nuevos errores.
 
-Así que no se preocupe demasiado del _número_de errores y concéntrese siempre
+Así que no se preocupe demasiado del _número_ de errores y concéntrese siempre
 en resolver el primer error indicado en la lista.
 
 ```latex
@@ -84,7 +84,7 @@ l.5 Text_
 Sin embargo al obviar este error y continuar, TeX sigue ejecutándose y 
 añadira `$`en ese punto, de forma que `_` será interpretado, en modo matemático, como
 un subíndice. El modo matemático continúa vigente hasta el siguiente símbolo `$` que indica
-su final, con lo que el comando `\alpha` es interpretado en modo texto generando un nuevo 
+su final, con lo que el comando `\alpha` es interpretado en modo texto, generando un nuevo 
 mensaje de error.
 
 ```
@@ -101,9 +101,9 @@ l.5 Text_word  $\alpha
 ## Errores que no dan lugar a mensajes de error en la línea de comandos
 
 Algunos errores, especialmente los errores que no se detectan hasta que se llega al final
-del archivo no darán lugar a mensajes de error sino a mensajes de alerta.
+del archivo no darán lugar a mensajes de error, sino a mensajes de alerta.
 
-Si intenta el siguiente ejemplo usando el servidor CGI de LaTeX, éste le dará un PDF por defecto;
+Si intenta el siguiente ejemplo, usando el servidor CGI de LaTeX, éste le dará un PDF por defecto;
 para ver el mensaje de error en la lista de errores añada `%!TeX log`.
 
 ```latex
@@ -118,7 +118,7 @@ para ver el mensaje de error en la lista de errores añada `%!TeX log`.
 ```
 
 En este ejemplo, el grupo correspondiente al cambio de tamaño de letra ha sido cerrado
-con un paréntesis `)`. Este error sólo es detectado al llegar al final del archivo
+con un paréntesis `)`. Este error sólo es detectado al llegar al final del archivo,
 cuando TeX se da cuenta de que hay un grupo que no ha sido cerrado. Se indica entonces
 la línea en la que el grupo se ha abierto `{`. No se indica el verdadero error, ya que
 el paréntesis `)` es interpretado como un "texto normal".

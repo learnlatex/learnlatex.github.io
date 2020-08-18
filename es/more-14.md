@@ -10,12 +10,12 @@ ambos paquetes.
 
 LuaTeX amplia las posibilidades de LaTeX de otros modos, en especial integrando
 el leguaje de programación Lua. Éste puede ser usado para programar en un
-estilo más familiar como el usado por los lenguages de programación más comunes.
+estilo más familiar, como el usado por los lenguages de programación más comunes.
 Ofrece igualmente la posibilidad de acceder a los procesos internos del sistema
 TeX y modificar su comportamiento, sustituyéndos por nuevo código escrito en Lua.
 
-La prgramación en Lua no será abordada en este curso, sólo mostramos a continuación
-un ejemplo para calcular 2π.
+La programación en Lua no será abordada en este curso, sólo mostramos a continuación
+un ejemplo para calcular 2π:
 
 ```latex
 %!TEX lualatex

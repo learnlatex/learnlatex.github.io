@@ -4,7 +4,7 @@ title: "Matemáticas"
 
 ## El modo matemático
 
-Puede escribir fórmulas matemáticas en LaTeX de una forma lógica en lo que se
+Puede escribir fórmulas matemáticas en LaTeX, de una forma lógica, en lo que se
 conoce como "modo matemático". En el modo matemático, los espacios se ignoran y se
 aplica (casi siempre) el espaciado correcto entre los caracteres. Existen dos formas
 del modo matemático: inline (en línea) y display (en una línea aparte).
@@ -25,7 +25,7 @@ Vea como el párrafo continua después de la ecuación escrita en una línea apa
 \end{document}
 ```
 
-Puede que haya visto fórmulas matemáticas de "estilo LaTeX" en otros sitios, por ejemplo
+Puede que haya visto fórmulas matemáticas de "estilo LaTeX" en otros sitios, por ejemplo,
 el sistema MathJax permite escribir ecuaciones en páginas web. Estos sistemas aceptan a menudo
 ligeras variaciones en la sintaxis de LaTeX, ya que de hecho no usan LaTeX "en segundo plano".
 Nuestros ejemplos son todos de un LaTeX de sintaxis "correcta", así que si ve algo diferente
@@ -40,7 +40,7 @@ Las expresiones simples son introducidas sin marcadores especiales y el texto ma
 será espaciado correctamente y escrito en cursiva.
 
 El modo matemático inline restrinje el tamaño vertical de la expresión 
-matemática de manera que la fórmula no afecte al espaciado de línea del 
+matemática, de manera que la fórmula no afecte al espaciado de línea del 
 párrafo. 
 
 Note que _todo_ texto matemático debe ser delimitado como tal, incluso si sólo
@@ -48,7 +48,7 @@ utiliza un único carácter use `... $2$ ...` en lugar de `... 2 ...`, por ejemp
 cuando necesite escribir un número negativo y necesite obtener un signo menos, el escribir `... $-2$ ...`
 puede que use dígitos que no tienen el mismo estilo de letra que los dígitos 
 de texto (según el tipo de documento).
-Por otro lado, tenga cuidado con los símbolos que aparecen en un texto sin formato, copiado
+Por otro lado, tenga cuidado con los símbolos que aparecen en un texto sin formato copiado
 de otro lugar, como por ejemplo los valores monetarios que usan el símbolo `$`, o los nombres de fichero
 que usan el símbolo `_` (los cuales deben ser escritos como `\$` y `\_`, respectivamente).
 
@@ -64,9 +64,9 @@ Superíndices $a^{b}$ y subíndices $a_{b}$.
 \end{document}
 ```
 
-(Puede que vea ejemplos de superíndices y subíndices simples sin llaves, pero no
+Puede que vea ejemplos de superíndices y subíndices simples sin llaves, pero no
 corresponden a la sintaxis oficial y pueden dar lugar a error; use siempre 
-llaves.)
+llaves.
 
 Hay _muchos_ comandos especiales en el modo matemático. Algunos de ellos son bastante
 sencillos, por ejemplo `\sin` y `\log` para las funciones seno y logaritmo, o `\theta` para
@@ -81,8 +81,8 @@ Un poco de matemáticas: $y = 2 \sin \theta^{2}$.
 ```
 
 No podemos abordar aquí todos los comandos de LaTeX del modo matemático, pero
-hay muchos recursos en línea que hacen una lista de los recursos standard. Puede buscar los comandos para escribir
-símbolos en modo matemático usando la herramienta [Detexify](https://detexify.kirelabs.org/classify.html)
+hay muchos recursos en línea que dan una lista de los recursos estandard. Puede buscar los comandos para escribir
+símbolos en modo matemático, usando la herramienta [Detexify](https://detexify.kirelabs.org/classify.html)
 
 ## Matemáticas en modo display (en una línea aparte)
 
@@ -112,13 +112,13 @@ Un párrafo antes de una fórmula larga
 \end{document}
 ```
 
-Note aquí como la notación de superíndice et subíndice es usada para fijar los límites
+Note aquí, como la notación de superíndice et subíndice es usada para fijar los límites
 de la integral.
 
 Hemos añadido también aquí un espaciado manual: `\,` añade un pequeño espacio antes de 
-`dx`, lo que necesitamos para que no parezca un producto.
+`dx`, justo lo que necesitamos para que no parezca un producto.
 
-A menudo querrá tener una ecuación enumerada, estó puede hacerlo usando el
+A menudo querrá tener una ecuación enumerada, esto puede hacerlo usando el
 entorno `equation`. Probemos a utilizarlo en el ejemplo anterior:
 
 ```latex
@@ -133,7 +133,7 @@ Un párrafo previo a una fórmula larga
 ```
 
 El número de la ecuación se incrementará automáticamente y puede ser un número
-simple como en este ejemplo o tener como prefijo el número de la sección, 
+simple, como en este ejemplo, o tener como prefijo el número de la sección, 
 así por ejemplo (2.5) será el número de la quinta ecuación de la sección número 2. 
 Los detalles de este formato son configurados por el tipo de documento y no serán
 descritos aquí.
@@ -166,11 +166,11 @@ espacio, y `\text` para incluir un texto normal en el interior del modo matemát
 usado igualmente otro comando del modo matemático, `\binom` para un binomio.
 
 Note que aquí hemos usado `align*` y que la ecuación no ha sido enumerada.
-La mayoría de los entornos matemáticos enumeran por defecto las ecuaciones pero sus variantes
-con un `*` hacen que no se enumeren.
+La mayoría de los entornos matemáticos enumeran por defecto las ecuaciones, pero sus variantes
+con asterisco `*` hacen que no se enumeren.
 
 El paquete tiene tambien otros entornos interesantes, por ejemplo
-para matrices.
+para matrices:
 
 ```latex
 \documentclass{article}
@@ -218,16 +218,16 @@ escribir una matriz de la siguiente forma:
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-The matrix $\mathbf{M}$.
+La matriz $\mathbf{M}$.
 \end{document}
 ```
 
-Note que el modo cursivo matemático por defecto separa las letras con lo que
-puede usarse para ecribir un producto de variables. Use `\mathit` para poner en cursiva una palabra.
+Note, que el modo en cursiva matemático por defecto separa las letras, con lo que
+puede usarse para escribir un producto de variables. Use `\mathit` para poner en cursiva una palabra.
 
-Los comandos de tipo de letra `\math..` utilizan un tipo de letra de uso específico
+Los comandos de tipo de letra `\math..`, utilizan un tipo de letra de uso específico
 para matemáticas. Algunas veces necesitamos añadir una palabra que forma parte
-de una frase y necesitamos usar el tipo de fuente de un texto normal, para ello
+de una frase y necesitamos usar el tipo de fuente de un texto normal, para ello,
 podemos usar `\text{...}` (disponible en el paquete `amsmath`) o tipos de letra
 específicos como `\textrm{..}`.
 
@@ -250,7 +250,7 @@ Si necesita poner en negrita otros símbolos,
 ## Ejercicios
 
 Pruebe a utilizar algunos modos matemáticos de base: reutilice los ejemplos y cambie
-entre los modos inline y display. Puede ver como afectan estos cambios al resultado.
+entre los modos inline y display. Puede ver cómo afectan estos cambios al resultado.
 
 Intente añadir otras letras griegas, en minúsculas y en mayúsculas. Debería
 ser capaz de adivinar sus nombres.
@@ -260,6 +260,6 @@ cuando intenta anidarlos?
 
 El modo matemático display es centrado por defecto; intente añadir la opción `[fleqn]` (justifica las
 ecuaciones a la izquierda) en la definición del tipo de documento de los ejemplos
-anteriores para ver que efectos tiene en resultado final. Del mismo modo las ecuaciones
-spn enumeradas normalmente a la derecha. Pruebe a añadir la opción `[leqno]` (enumeración de ecuaciones
+anteriores, para ver qué efectos tiene en el resultado final. Del mismo modo, las ecuaciones
+son enumeradas normalmente a la derecha. Pruebe a añadir la opción `[leqno]` (enumeración de ecuaciones
 a la izquierda) en la definción del tipo de documento.

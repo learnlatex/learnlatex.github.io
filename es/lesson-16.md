@@ -40,8 +40,8 @@ utiliando esta dirección.
 ## Libros sobre LaTeX
 
 Existen varios libros disponibles que pueden ayudarle a aprendar más sobre LaTeX.
-Como principiando, le será muy útil un manual pensado para principintes, ya que
-le le dará muchós más detalles de los aspectos abordados aquí. Querrá igualmente
+En principio, le será muy útil un manual pensado para principintes, ya que
+le dará muchós más detalles de los aspectos abordados aquí. Querrá igualmente
 tener acceso a un manual de referencia más detallado y a más recomendaciones.
 
 El equipo de LaTeX dispone de [una lista de libros](https://www.latex-project.org/help/books/)
@@ -92,7 +92,7 @@ Si necesita texto para mostrar saltos de página y otros efectos, use
 paquetes como `lipsum` con el fin de generar párrafos de texto de relleno, 
 esto le permitirá mostrar un documento pequeño.
 
-Una de las cosas que debe estar presentar es el archivo log; éste es creado por
+Una de las cosas que debe estar presente es el archivo log; éste es creado por
 LaTeX cada vez que se ejecuta. Tiene el mismo nombre que su documento pero con
 la extensión `.log`. En función del sistema que utilice, quizás tenga que "mostrar
 las extensiones" de los archivos para encontrarlo.

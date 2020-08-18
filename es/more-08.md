@@ -7,10 +7,10 @@ title: "Más sobre: Tablas"
 
 Como en la lección principal no hemos abordado todos los identificadores disponibles, unos pocos
 serán explicados con ejemplos aquí. Puede que quiera volver al principio de la lección sobre 
-las tablas para obtener un visión general de los elementos disponibles. Las breves descripciones
-dadas en la lección principal deberían ser suficientes para que comprendra el significado de los tipos
-de columna `m`, `b`, `w` y `W`, si usted ha entendido los tipos `l`, `c`, `r` y `p`. Si no es así,
-quizá quiera experimentar con ellos antes de empezar. Lo que queda por profundizar son los otros
+las tablas, para obtener un visión general de los elementos disponibles. Las breves descripciones
+dadas en la lección principal, deberían ser suficientes para que comprendra el significado de los 
+tipos de columna `m`, `b`, `w` y `W` si usted ha entendido los tipos `l`, `c`, `r` y `p`. Si no es 
+así, quizá quiera experimentar con ellos antes de empezar. Lo que queda por profundizar son los otros
 indicadores de preámbulo `>`, `<`, `@`, `!` y `|`.
 
 ### Dando estilo a una columna
@@ -45,9 +45,9 @@ después del contenido de cada celda de esa columna, puede hacer lo siguiente:
 a la celda en cuestión. Abordaremos el cambio manual del tipo letra [en una de las
 próximas lecciones](lesson-11).
 
-Puede que quiera que la primera celda no se vea afectada ya que es parte de la
+Puede que quiera que la primera celda no se vea afectada, ya que es parte de la
 cabecera de la tabla. Podemos usar en este caso el comando `\multicolumn`. Recuerde que
-puede ser usado para cambiar la alineación de una única celda como se muestra en el siguiente ejemplo.
+puede ser usado para cambiar la alineación de una única celda, como se muestra en el siguiente ejemplo:
 
 <!-- {% raw %} -->
 ```latex
@@ -72,11 +72,11 @@ puede ser usado para cambiar la alineación de una única celda como se muestra 
 
 ### Manipulando el espacio entre columnas
 
-Normalmente LaTeX completa cada columna con un espacio a ambos lados para darles un 
-aspecto equilibrado y separarlas. Este espacio es definido con el ancho `tabcolsep`. Debido
+Normalmente LaTeX completa cada columna con un espacio a ambos lados, para dar a las columnas un 
+aspecto equilibrado y separarlas convenientemente. Este espacio es definido con el ancho `tabcolsep`. Debido
 a que cada columna es completada a ambos lados, se tiene una separación de un ancho `tabcolsep`
-en cada lateral de la tabla y una separación de un ancho de `2\tabcolsep` entre dos columnas &ndash; 
-uno por cada columna. Puede ajustar este espacio a cualquier ancho usando `\setlenght`:
+en cada lateral de la tabla y una separación de un ancho de `2\tabcolsep` entre dos columnas &ndash;, 
+uno por cada columna. Puede ajustar este espacio al ancho que desee usando `\setlenght`:
 
 <!-- {% raw %} -->
 ```latex
@@ -167,7 +167,7 @@ una línea vertical entre dos columnas dejando el espacio de relleno entre ellas
 tiene un gran inconveniente; las líneas verticales no funcionaran si usted utiliza las líneas 
 horizontales del paquete `booktabs`. En lugar de éstas, podrá utilizar las líneas horizontales
 proporcionadas por LaTeX; éstas son `\hline` (que corresponde a `\toprule`, `\midrule` y 
-`\bottomrule`) y `\cline` (que tiene el mismo uso que `\cmidrule`). Como mostramos precedentemente, 
+`\bottomrule`) y `\cline` (que tiene el mismo uso que `\cmidrule`). Como mostramos anteriormente, 
 las líneas verticales se añadirán a cualquier espacio especificado en los argumentos opcionales a `\\`. 
 
 ## Personalizando las líneas del paquete `booktabs`
@@ -197,9 +197,6 @@ el ancho entre corchetes después de las opciones `r` o `l`.
 <!-- {% endraw %} -->
 
 ## Alineación de números en columnas
-
-The alignment of numbers in tables can be handled by the column type `S` 
-that is provided by the `siunitx` package.
 
 La alineación de los números en las tablas puede ser gestionada por el tipo de columna `S`
 que proporciona el paquete `siunitx`.
@@ -237,20 +234,20 @@ paquete](https://texdoc.net/pkg/siunitx).
 
 El ancho del entorno `tabular` es determinado automáticamente a partir
 del contenido de la tabla. Existen dos mecanismos usados frecuentemente
-para especificar un ancho total diferente al automático.
+para especificar un ancho total diferente del automático.
 
-Note que es casi siempre preferible el cambiar el ancho de la tabla
+Note que es casi siempre preferible cambiar el ancho de la tabla,
 como lo hacemos más abajo (quizás usando un tamaño de letra como `small` si es
-necesario) más que cambiar la escala de la tabla con `\resizebox` y otros
-comandos similares que darán lugar a incongruencias en el tamaño de la letra y el grosor
+necesario), que cambiar la escala de la tabla con `\resizebox` y otros
+comandos similares, que darán lugar a incongruencias en el tamaño de la letra y el grosor
 de las líneas.
 
 ### `tabular*`
 
 El entorno `tabular*` toma un argumento adicional de _ancho_ que especifica
 el ancho total de la tabla. Un espacio ajustable puede ser añadido a la tabla
-usando el comando `\extracolsep`. Este espacio se añade entre todas las columnas
-presentes en el preámbulo desde este punto. Este comando se usa casi siempre
+usando el comando `\extracolsep`. Este espacio, se añade entre todas las columnas
+presentes en el preámbulo a partir de ese punto. Este comando se usa casi siempre
 junto con `\fill`, un espacio especial que se ajusta de manera a ser lo más largo 
 posible.
 
@@ -335,20 +332,20 @@ C & D D D D D D D\\
 ```
 
 A diferencia de otras formas discutidas en estas lecciones, `tabularx` necesita
-construir la tabla varias veces probando diferentes anchos para determinar la
+construir la tabla varias veces, probando diferentes anchos para determinar la
 configuración final. Esto implica que hay una serie de restricciones en el uso
 de este entorno; vea la [documentación de este paquete](https://texdoc.net/pkg/tabularx).
 
 ## Tablas multipágina
 
-Un entorno `tabular`crea un bloque indivisible, con lo que debe ser lo suficientemente
+Un entorno `tabular` crea un bloque indivisible, con lo que debe ser lo suficientemente
 pequeño como para ajustarse a una página y es a menudo situado en un entorno flotante
 `table`.
 
-Varios paquetes disponen de variantes con sintaxis similar que permiten
+Varios paquetes disponen de variantes con sintaxis similar, que permiten
 dividir la tabla en un cambio de página. Mostramos aquí el uso del paquete `longtable`:
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
@@ -384,9 +381,9 @@ Una entrada más larga & b\\
 \end{document}
 ```
 
-`longtable` es remarcable ya que conserva el ancho de las columnas de la tabla
-en todas las páginas; sin enbargo para conseguir esto puede que tenga que
-ejecutar LaTeX en varias ocasiones para hacer que las entradas más anchas que se
+`longtable` es remarcable, ya que conserva el ancho de las columnas de la tabla
+en todas las páginas; sin enbargo, para conseguir esto puede que tenga que
+ejecutar LaTeX en varias ocasiones, para hacer que las entradas más anchas que se
 ecuentren más adelante en la tabla, puedan tener un efecto en el ancho de las columnas
 de las primeras páginas.
 
@@ -396,7 +393,7 @@ Es bastante común el necesitar símbolos en una tabla para hacer referencia a
 notas al pie de tabla. El paquete `threeparttable` simplifica las anotaciones en 
 este tipo de tablas, haciendo que las notas al pie se situén en el mismo bloque
 que la propia tabla. Le invitamos a ver la [documentación de este paquete](https://texdoc.net/pkg/threepqrttable) para
-más detalles, pero veamos aquí un ejemplo simple.
+más detalles, pero veamos aquí un ejemplo simple:
 
 ```latex
 \documentclass{article}
@@ -424,21 +421,21 @@ más detalles, pero veamos aquí un ejemplo simple.
 
 ## Composición tipográfica en columnas estrechas
 
-La configuración por defecto del salto de página asume que las líneas relativamente
+La configuración por defecto del salto de página, asume que las líneas relativamente
 largas disponen de cierta flexibilidad para elegir el salto de línea. El siguiente
-ejemplo muestran algunas de las aproximaciones posibles. La primera tabla muestra
+ejemplo se muestran algunas de las aproximaciones posibles. La primera tabla muestra
 el ajuste del espacio entre palabras y TeX le dará un mensaje de aviso de tipo "Underfull lines"
 (líneas que dejan espacios en blanco). El uso de `\raggedright` normalmente impide
-este problema pero puede dar lugar a alguna líneas "muy irregulares". El comando
-`\RaggedRight` des paquete `ragged2e` es un compromiso; permite cierta irregularidad entre
+este problema, pero puede dar lugar a líneas "muy irregulares". El comando
+`\RaggedRight` del paquete `ragged2e` es un compromiso; permite cierta irregularidad entre
 el ancho de las líneas, pero también divide una palabra con un guión cuando es necesario, tal y 
 como se muestra en la tercera tabla.
 
 Note el uso de `\arraybackslash` aquí, esto resetea la definición de `\\`
-que que determina el fin de una fila de la tabla.
+que determina el fin de una fila de la tabla.
 
-Una técnica alternativa que se muestra en la cuarta tabla, es el uso
-de un tamaño de letra más pequeño de forma que las columnas sean tan estrechas
+Una técnica alternativa, que se muestra en la cuarta tabla, es el uso
+de un tamaño de letra más pequeño, de forma que las columnas no sean tan estrechas
 con respecto al tamaño del texto.
 
 ```latex
@@ -476,9 +473,9 @@ Dos & Otro texto largo diferente en un párrafo estrecho, con algunas palabras m
 
 ## Definiendo nuevos tipos de columna
 
-Como hemos demostrado en la [lección principal](lesson-08), el paquete `array`permite
+Como hemos demostrado en la [lección principal](lesson-08), el paquete `array` permite
 asociaciones del tipo `>{\bfseries}c` para definir columnas centradas y en negrita.
-A menudo es conveniente definir un nuevo tipo de columnas para simplificar este
+A menudo, es conveniente definir un nuevo tipo de columnas para simplificar este
 tipo de uso, por ejemplo la siguiente definición: 
 
 ```latex
@@ -490,8 +487,8 @@ una columna centrada y en negrita.
 
 ## Trucos verticales
 
-A menudo, en lugar de extender una celda en múltiples filas es mejor tener una
-única fila que se dvida verticalmente en varias celdas mediante el uso de entornos 
+A menudo, en lugar de extender una celda en múltiples filas, es mejor tener una
+única fila que se dvida verticalmente en varias celdas, mediante el uso de entornos 
 `tabular` anidados.
 
 <!-- {% raw %} -->
@@ -515,7 +512,7 @@ A menudo, en lugar de extender una celda en múltiples filas es mejor tener una
 ```
 <!-- {% endraw %} -->
 
-Note aue puede controlar el alineamiento vertical mediante un argumento opcional
+Note que puede controlar el alineamiento vertical mediante un argumento opcional
 del entorno `tabular`; puede usar `t`, `c` o `b` para alinear su texto a la parte alta,
 para centralo o para alinearlo a la parte baja, respectivamente:
 
@@ -556,7 +553,7 @@ Así, por ejemplo la línea:
 aumentará el espaciado de la línea de base en un 50%.
 
 A menudo, especialmente al usar `\hline` es mejor aumentar únicamente
-la altura de las columnas, son incrementar el ancho bajo la línea de base.
+la altura de las columnas, sin incrementar la profundidad de la línea de base.
 El siguiente ejemplo muestra el uso del parámetro `\extrarowheight`. 
 
 ```latex

@@ -4,7 +4,7 @@ title: "Más sobre: Referencias cruzadas"
 
 ## Convirtiendo referencias cruzadas en enlaces
 
-Usted puede convertir sus referencias cruzadas en hiperenlaces usando el paquete `hyperref`.
+Usted puede convertir sus referencias cruzadas en hiperenlaces, usando el paquete `hyperref`.
 En la mayoría de los casos, `hyperref` debe ser cargado después de los otros paquetes especificados
 en el preámbulo del documento.
 
@@ -25,4 +25,4 @@ Más texto aquí.
 ```
 
 Hemos elegido que los enlaces tengan el mismo color que el texto normal; pruebe a quitar
-`hidelinks`y vea ¡cómo lo hemos hecho!
+`hidelinks`y vea ¡por qué lo hemos hecho!

@@ -29,9 +29,9 @@ para añadir una "línea en blanco" entre párrafos.
 Habrá _pocos_ lugares en los que use `\\` para comenzar una nueva línea sin 
 que esto signifique comenzar un nuevo párrafo:
 
-- Al terminar la fila de una tabla
-- En el interior de un entorno `center`
-- Al escribir una poesía (en el entorno `verse`)
+- Al terminar la fila de una tabla.
+- En el interior de un entorno `center`.
+- Al escribir una poesía (en el entorno `verse`).
 
 Casi siempre, si no se encuentra en uno de esos casos, _no_ debe usar 
 `\\`.
@@ -61,7 +61,7 @@ Aún un poco más texto.
 
 ## Indicando explicitamente el formato del texto
 
-Vimos [ya hace un tiempo](lesson-03) que en la mayoría de las casos el formato 
+Vimos [ya hace un tiempo](lesson-03) que en la mayoría de las casos, el formato 
 dado por la estructura lógica es el más conveniente. Pero en ocasiones, usted querrá 
 poner un texto en negrita, en cursiva, con letras de espaciado fijo, etc. Hay dos 
 tipos de comando para hacer esto: unos para pequeñas porciones de texto y otros 
@@ -82,7 +82,7 @@ Divirtámonos un poco con el estilo de letra: \textbf{bold}, \textit{italic}, \t
 Para partes del texto del cuerpo de un documento, usaremos comandos que cambian 
 el estilo del tipo de letra usado. Debido a ello, necesitaremos situar el comando
 y el texto en un mismo _grupo_ ya que en caso contrario, el estilo se aplicará 
-a todo el documento. Los entornos de LaTeX son grupos, al igual las celdas de una 
+a todo el documento. Los entornos de LaTeX son grupos, al igual que las celdas de una 
 tabla, fuera de estos casos particulares, pondremos nuestro contenido entre llaves 
 `{...}` para explicitar la creación de un grupo. 
 

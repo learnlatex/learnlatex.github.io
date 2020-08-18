@@ -5,7 +5,7 @@ title: "Más sobre: Citas y referencias"
 ## Tratando con referencias en lengua no inglesa
 
 El programa BibTeX ha sido escrito inicialmente para tratar con referencias en inglés.
-Está muy limitado en el uso de caracteres acentuados y aún más con el uso de caracteres
+Está muy limitado en el uso de caracteres acentuados y aún más en el uso de caracteres
 no latinos. Al contrario, el programa Biber ha sido escrito desde sus inicios para
 tratar con diferentes tipos de scripts correctamente.
 

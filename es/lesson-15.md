@@ -36,9 +36,9 @@ bash: pdflatex: command not found
 en Linux.
 
 No se trata de un error de TeX sino de un error del sistema operativo que indica que
-TeX no está instalado o no ha sido encontrado. Un error común es el de instalar
+TeX no está instalado, o que no ha sido encontrado. Un error común es el de instalar
 un _editor_ de TeX como TeXworks o TeXShop pero sin instalar un sistema TeX
-como TeX Live o MiKTeX
+como TeX Live o MiKTeX.
 
 ## Anatomía de un mensaje de error de {{ site.tex }}
 
@@ -67,14 +67,13 @@ l.8 My command is used here \mycommand
 ```
 {: .noedit :}
 
-* The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
 * La primera línea, etiquetada con el símbolo `!` indica el tipo general de error (comando no definido en este caso).
 * El segundo par de líneas muestra la línea que TeX estaba procesando, con un salto de página que marca el lugar
-  que TeX ha alcanzado antes de encontrarse con el error. El comado no definido es la útima parte de código leída, así que la
-  última palabra antes del salto de página es `textbold`. Tras el salto de línea aparce el código `{hmmm}`que ha sido probablemente
+  que TeX ha alcanzado antes de encontrarse con el error. El comando no definido es la útima parte de código leída, así que la
+  última palabra antes del salto de página es `textbold`. Tras el salto de línea aparece el código `{hmmm}`que ha sido probablemente
   leído como un argumento, pero que no ha sido aún ejecutado por TeX.
 * A partir de este punto, puede haber, en general, algunas líneas adionales que añaden más información sobre mensaje de error.
-* The última línea comienza con `l.` seguida de un número de línea y de la línea de código en la que el error ha
+* La última línea de esta parte comienza con `l.`, seguida de un número de línea y de la línea de código en la que el error ha
   sido detectado.
 * La última línea es un `?`. Si usa TeX de forma interactiva, es posible introducir
   instrucciones de TeX en este punto, pero la mayoría de los editores y sistemas en línea
@@ -85,7 +84,7 @@ l.8 My command is used here \mycommand
 Note que TeX no ve el error en la parte en la que se realiza la definición; 
 de hecho si el comado \mycommand hubiese sido definido, pero no usado, no habríamos
 obtenido ningún error. Así que aunque se indique que el error es en la línea
-7, el "verdadero" error se encuentra en la definición de la línea 3, por consiguiente
+8, el "verdadero" error se encuentra en la definición de la línea 4, por consiguiente
 es importante leer el mensaje de error completo.
 
 Tenga en cuenta que algunos editores muestran "resumenes" de una línea de cada error
@@ -119,7 +118,7 @@ no muy útil:
 {: .noedit :}
 
 Aunque la descripción del error no sea muy útil, las dos siguientes
-líneas indican de forma más precisa la localización del error al utilizar
+líneas indican de forma más precisa la localización del error, al utilizar
 el salto de línea para indicar hasta que punto TeX ha llegado:
 ```
 l.4 \usepackage[leqno}
@@ -183,7 +182,6 @@ eliminadas.
 
 ## Ejercicios
 
-Produce small documents with different errors and note the form of the error messages.
 Escriba pequeños documentos con diferentes errores y fíjese en la forma de los mensajes de error.
 
 <script>

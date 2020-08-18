@@ -26,7 +26,7 @@ un archivo principal "main"/"root" y otros archivos secundarios: uno por cada ca
 (en un libro o una tesis) o por cada sección (en un artículo largo).
 
 LaTeX le permite separar su contenido de forma controlada. Hay dos comandos importantes
-para hacer esto: `\input` y `\include`. Podemos usar `\input` para hacer que el contenido
+para hacer esto: `\input` e `\include`. Podemos usar `\input` para hacer que el contenido
 de un archivo funcione "como si estuviese escrito en ese punto", con lo que puede ser 
 usado (esencialmente) para insertar cualquier tipo de contenido. El comado `\include` 
 se usa únicamente para capítulos: comienza una nueva página y realiza algunos ajustes
@@ -34,7 +34,7 @@ internos. Pero presenta una gran ventaja: nos permite seleccionar los capítulos
 queremos incluir, con lo que podemos trabajar en una parte del documento más que con
 el documento completo.
 
-Un documento largo tendrá un apariencia similar al siguiente ejemplo:
+Un documento largo tendrá una apariencia similar al siguiente ejemplo:
 
 <!-- pre0 {% raw %} -->
 ```latex
@@ -80,12 +80,12 @@ Un documento largo tendrá un apariencia similar al siguiente ejemplo:
 ```
 <!-- {% endraw %} -->
 
-Veamos algunos de los aspectos del ejemplo precedente. (Los diferentes archivos de 
-soporte utilizados se encuentran al final de esta página)
+Veamos algunos de los aspectos del ejemplo precedente. Los diferentes archivos de 
+soporte utilizados se encuentran al final de esta página.
 
 ## Usando `\input`
 
-El comado `\input`es apropiado para partes de un documento largo que _no_ sean capítulos
+El comado `\input` es apropiado para partes de un documento largo que _no_ sean capítulos
 independientes. En el ejemplo, lo hemos usado para separar la portada y la cubierta 
 posterior, haciendo que el archivo principal sea más corto y conciso; y pudiendo
 reutilizar la portada y la contraportada en otro documento. Lo hemos utilizado también
@@ -93,9 +93,9 @@ con las secciones que "no son capítulos" de por sí y que se encuentran al prin
 nuestro "libro": como el prefacio. De nuevo, esto permite simplificar el archivo 
 principal.
 
-## Usando `\include` y `\includeonly`
+## Usando `\include` e `\includeonly`
 
-El comando `\include` es apropiado para los capítulos, con lo que lo hemos utilizado aquí
+El comando `\include` es apropiado para los capítulos, razón por la que lo hemos utilizado aquí
 para incluir cada capítulo; comienza siempre con una nueva página. Hemos seleccionado los
 capítulos que van a ser compilados con el comando `\includeonly`, que como ha visto
 toma como argumento una lista de nombres de archivo separados por comas. Al usar
