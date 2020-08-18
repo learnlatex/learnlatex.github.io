@@ -3,23 +3,23 @@ title: "Usando el sitio web learnlatex.org"
 permalink: /es/help
 ---
 
-## Navigating the site
+## Navegando por el sitio web
 
-The course consists of 16 core lessons that can be reached from the table
-of contents on the [home page](/).
+El curso consiste en 16 lecciones principales a las que se puede acceder
+desde el índice de la [página inicial](/).
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 16 lessons _without_  reading the additional lessons.
+Cada lección dispone de un enlace a otra lección que permite profudizar 
+sobre el mismo tema. Es posible abordar las 16 lecciones principales
+_sin_ leer estas lecciones adicionales.
 
-At the end of the course there are one or more lessons specific to the
-language being used for the lessons, and finally a gallery of examples
-of packages demonstrating LaTeX use not covered by this course.
+Al final del curso hay una o más lecciones específicas del idioma usado
+y una galería con ejemplos de algunos paquetes de LaTeX que no han sido
+abordados en este curso.
 
-## Running the examples
+## Ejecutando los ejemplos
 
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+Cada ejemplo contiene un pequeño documento de LaTeX completo, que se mostra 
+en la página de la siguiente forma:
 
 ```latex
 \documentclass{article}
@@ -29,110 +29,107 @@ Example text.
 \end{document}
 ```
 
-The example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
-The editor being used is [ACE](https://ace.c9.io/).
+El ejemplo es íntegro. Sin embargo, puede que quiera editarlo para hacer
+pequeños cambios, quizá como parte de los Ejercicios propuestos al final de
+cada lección.
+El editor usado es [ACE](https://ace.c9.io/).
 
-Whether or not the code block has been edited, there are three basic ways that you can run the example.
-
-1. Use a  **LaTeX Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX Online</button> button
-   will submit the code to the
-   [LaTeX CGI](https://latexcgi.xyz/) service[^1].
+Haga lo que haga, editar o no el texto del ejemplo, hay tres maneras básicas de ejecutarlo.
 
 
-   The LaTeX CGI service was developed specifically to support this site, and
-   in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
-   to enable display of PDF on mobile and other browsers without built in PDF readers.
+1. Usar un servicio de **LaTeX en línea**. El botón <button style="padding:0 1px;font-size:90%">LaTeX Online</button> 
+   enviará el código al servicio
+   [LaTeX CGI](https://latexcgi.xyz/) [^1].
+   
+   El servicio LaTeX CGI fue desarrolado especifícamente para ser compatible con este sitio y
+   en particular hace uso de [PDF.js](https://mozilla.github.io/pdf.js/)
+   para permitir mostrar documentos PDF en dispositivos móviles y otros sistemas que no dispongan
+   de lectores de archivos PDF.
+   
+   El documento PDF resultante (o la sección del registro de errores) será
+   mostrado en línea inmediatamente después del ejemplo. Un botón <button style="padding:0 1px;font-size:90%">Borrar 
+   Salida</button> estará a su disposición para eliminar el resultado obtenido 
+   (o también puede dejarlo y continuar con el resto de la lección).
+   
+   Note que **LaTeX Online** no le pedirá ni iniciar sesión ni registrarse, por
+   lo que es muy apropiado para los pequeños ejemplos, pero ni este sitio ni los
+   sitios de `latexcgi`, `latexonline.cc` o `latex-on-http` disponen de herramientas
+   para guardar si documento. Cualquier cambio que haga en el ejemplo
+   se perderá al cambiar de página.
 
-   The resulting PDF document (or section of the error log) will be
-   shown inline immediately below the example. A <button style="padding:0 1px;font-size:90%">Delete
-   Output</button> button will be provided so that you may remove this output
-   (or you may leave it in place and continue the rest of the lesson
-   below).
+2. Usar el servicio **Overleaf**. El botón <button style="padding:0 1px;font-size:90%">Abrir en Overleaf</button>
+   enviará el código a [Overleaf](https://www.overleaf.com/about).
+   
+   Si no tiene una cuenta, o si los datos de su cuenta no están guardados
+   en su explorador, usted será redirigido a una págino de inicio de
+   sesión para acceder a su cuenta o para registrarse en Overleaf. Este servicio
+   es gratuiro pero le pedirá algunos detalles y aceptar los términos
+   y condiciones del servicio.
+   
+   Si su cuenta de Overleaf ha sido guardada en su explorador, Overleaf
+   abrirá una nueva pestaña de nuevo proyecto con el código del ejemplo.
+   A partir de ese momento podrá editarlo en Overleaf que ejecutará automáticamente
+   LaTeX mostrándole el resultado de su documento o el registro de errores.
+   
+   Las funcionalidades de edición en Overleaf son mucho más avanzadas que las
+   de este sitio web y podrá guardar su proyecto en su cuenta Overleaf, teniendo
+   la posibilidad de volver más tarde a su código.
 
-   Note that **LaTeX Online** requires no login or signup of any sort
-   so it is very convenient for small examples, but neither this site
-   nor the `latexcgi`, `latexonline.cc` or `latex-on-http` sites
-   provide any mechanism to save your document. Any changes that you
-   make to the example are lost if you move off the page.
+3. Si tiene un sistema TeX instalado localmente en su ordenador, puede copiar
+   el texto del ejemplo, bien seleccionándolo o usando las teclas de acceso rápido
+   en el editor (Ctrl-A Ctrl-C en Windows por ejemplo). Esto pondrá el código en el
+   potapapeles de su sistema operativo. Usted podrá abrir un archivo en blanco en 
+   su editor de LaTeX local y pegar el contenido del partapapeles.
 
+## Eligiento el motor o compilador de {{ site.tex }}
 
-2. Use the **Overleaf** Service. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
-   button will submit the code to [Overleaf](https://www.overleaf.com/about).
+Cuando se compilan los documentos de los ejemplos, el motor
+o compilador por defecto es `pdflatex` a menos que use el paquete `fontspec`
+en cuyo caso se usará `xelatex`.
 
-   If you do not have an account, or the account details are not
-   already cached in your browser, then you will be redirected to a
-   login page where you may login or register with Overleaf. This is a
-   free service but does require you to give some details and agree to
-   terms and conditions.
+Puede forzar en uso de `pdflatex`, `xelatex`, `lualatex`, 
+`platex` o `uplatex` uñadiendo un comentario de la forma siguiente:
 
-   If your Overleaf account is already cached in your browser, then
-   Overleaf will be opened in a new tab, with a new
-   project with the code. You may then edit it in
-   Overleaf which will simultaneously run LaTeX on your code showing
-   the resulting output or error log.
+`% !TEX ` _culquier texto_ `lualatex`
 
-   The editing features in Overleaf are far more extensive than on this
-   site, and you may save your project in your Overleaf account and
-   return to it later.
+el espacio inicial es opcional y la diferencia entre mayúsculas y minúsculas
+se ignora al igual que la parte _cualquier texto_ situada entre la primera y 
+la última palabra.
 
-3. If you have a TeX system installed locally, then you may copy the
-   example code off the page, either explicitly selecting it, or by
-   using select all keyboard shortcuts in the editor (ctrl-A Ctrl-C
-   in windows for example). This will place the code in your operating system
-   clipboard so you can start a blank document using your local
-   editor, and paste in the text.
+Esto permire el uso de `% !TEX program=pdflatex` utilizado en algunos editores de TeX
+aunque el uso de `program=` no sea necesario y está actualmente restringido
+a especificar uno de los cinco motores disponibles en los
+sistemas en línea que son usados.
 
+Puede ver un ejemplo de un comentario usado para especificar el uso de LuaLaTex en
+[uno de los ejemplos de este sitio](more-14).
 
-## Choosing the {{ site.tex }} engine
+Si se elige `platex` o `uplatex` se usará el programa `dvipdfmx` para
+producir el archivo PDF a partir del archivo DVI que estas variantes dan generan.
 
-When submitting example documents, by default the
-`pdflatex` engine will be used unless the example uses the `fontspec`
-package in which case `xelatex` is used.
+## Eligiendo cómo mostrar la salida
 
-You can force the choice of `pdflatex`, `xelatex`, `lualatex`,
-`platex` or `uplatex` by using a comment of the form:
+Si usa un sistema de LaTeX en línea, el PDF resultante
+de la ejecución del ejemplo se mostrará por defecto usando
+[PDF.js](https://mozilla.github.io/pdf.js/). Esto permite disponer
+de un comportamiento consistente en la mayor parte de los exploradores.
 
-`% !TEX ` _any text_ `lualatex`
+Si prefiere utilizar el lector PDF por defecto de su explorador (ya sea
+uno propio de su explorador o un aplicación externa que haya configurado),
+añada un comentario de la forma:
 
-where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
+`% !TEX ` _cualquier texto_ `pdf`
 
-This allows the form `% !TEX program=pdflatex` used by some TeX editors
-but does not require the `program=` and is currently restricted to
-specifying just one of the five engines that are supported on
-the online systems being used.
-
-You can see an example of a comment being used to specify LuaLaTeX in
-[some of the examples on this site](more-14).
-
-If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
-also used to produce the PDF result from the DVI file that these variants generate.
-
-
-## Choosing how to display the output
-
-If you use the LaTeX online system, then the PDF
-output from running an example is shown using
-[PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behavior over the widest range of browsers.
-
-If you would prefer to use your browser's default PDF reader (either
-its built in one, or an external application that you have configured)
-then add a comment of the form:
-
-`% !TEX ` _any text_ `pdf`
-
-The default behavior can be explicitly specified by using `pdfjs` as
-the final token. For debugging you may sometimes want the log file
-returned, even if the document produces a PDF with
-no errors. This can be specified by using `log` as the final token in
-the comment.
+El comportamiento por defecto puede ser cambiado explicitamente usando `pdfjs`
+como argumento final. Para analizar los posibles problemas, en algunas ocasiones querrá
+ver el archivo log, aunque el documento genere un PDF sin
+errores. Este puede ser especificado usando `log` como argumento final en
+el comentario anterior.
 
 ---
 
-[^1]: Note that during development of the site we have also used 
-      [LaTeX.Online](https://latexonline.cc/) and
+[^1]: Note que durante el desarrollo del sitio web hemos usado también 
+      [LaTeX.Online](https://latexonline.cc/) y
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.
+      y agradecemos a los desarrolladores de estos servicios por realizar las actualizaciones necesarias que 
+	  han permitido que los ejemplos de esta web estén disponibles desde el principio.
