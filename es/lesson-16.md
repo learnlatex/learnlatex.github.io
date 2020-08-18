@@ -2,82 +2,80 @@
 title: "Accediendo a la documentación y buscando ayuda"
 ---
 
-
-There are several ways to access the documentation of a package or class.
+Existen varias formas de acceder a la documentación de los paquetes y tipos de documento.
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeXLive or MikTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+
+Si ha instalado una distribution de TeX (_por ejemplo_ TeXLive o MikTeX) y ha incluido
+la documentación durante la instalación, podrá acceder a la documentación guardada en 
+su ordenador usando el comando `texdoc` en la línea de comandos. Por ejemplo:
 
 
 `texdoc` < _pkg_ >
 
 
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
-
+le permitirá acceder a la documentación del paquete `<pkg>`. Esta herramienta buscará
+la documentación disponible y le mostrará la información de lo que más se aproxima a
+su búsqueda. Puede obtener la lista y elegir entre el conjunto de resultados posibles 
+utilizando el comando de la siguiente forma:
 
 `texdoc -l` < _pkg_ >
 
 
 ## texdoc.net
 
-This is a [website](https://texdoc.net/) which works similarly to the `texdoc` utility. You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
+Éste es un [sitio web](https://textdoc.net/) que funciona de forma similar al comando `textdoc`. Puede
+buscar la documentación disponible tal y como lo haría usando el comando `texdoc -l` 
+y elegir entre los resultados obtenidos.
 
+## CTAN (Comprehensive TeX Archive Network)
 
-## CTAN
+[CTAN](https://www.ctan.org) es una Red Integral de Achivos de TeX. La mayoría de paquetes de LaTeX se publican
+en este sitio web. Puede buscar un paquete y acceder a su documentación.
+Normalmente los paquetes se guardan en la dirección `ctan.org/pkg/<pkg-name>`
+y puede acceder al archivo README y a la documentación de los paquetes guardados en CTAN
+utiliando esta dirección.
 
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
+## Libros sobre LaTeX
 
-## Books on LaTeX
+Existen varios libros disponibles que pueden ayudarle a aprendar más sobre LaTeX.
+Como principiando, le será muy útil un manual pensado para principintes, ya que
+le le dará muchós más detalles de los aspectos abordados aquí. Querrá igualmente
+tener acceso a un manual de referencia más detallado y a más recomendaciones.
 
-There are several books available that can help you learn more about LaTeX.
-As a beginner, you will gain a lot from a structured beginners guide, as
-those can give a lot more detail than we've covered here. You might also
-want access to a reference with more detail and recommendations.
-
-The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's official
+El equipo de LaTeX dispone de [una lista de libros](https://www.latex-project.org/help/books/)
+escritos fundamentalmente por los miembros del equipo. Los más destacados son [Lamport's official
 guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
-and the comprehensive
+y el detallado
 [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
 
-Other books aimed at learning LaTeX include
+Otros libros dedicados al aprendizaje de LaTeX:
 
 - [_Guide to
-  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
-  Kopka and Patrick Daly: available as an e-book
-- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
+  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) de Helmut
+  Kopka y Patrick Daly: disponible en ebook
+- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) de
+  Nicola Talbot: disponible de forma gratuita en ebook o en versión impresa de bajo coste.
 - [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
+  thesis_](https://www.dickimaw-books.com/latex/thesis/) de
+  Nicola Talbot: disponible de forma gratuita en ebook o en versión impresa de bajo coste.
 - [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
-  by Stefan Kottwitz: available as an e-book and in print
-- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
-  Marc van Dongen: available as an e-book and in print
+  by Stefan Kottwitz: disponible en ebook y en versión impresa
+- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) de
+  Marc van Dongen: disponible en ebook y en versión impresa
 
-## Getting help
+## Obteniendo ayuda
 
-There are various online forums for asking LaTeX questions; perhaps the most
-popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
-Whenever you ask a question, it's best to first get your example clear: what is
-normally known as a 'minimal working example' (MWE). This doesn't mean the code
-works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means
-having only enough content to show the issue.
+Existen varios forums en línea en los que hacer preguntas sobre LaTeX; quizá el
+más popular actualmente es [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
+Siempre que haga una pregunta, es mejor que primero clarifique su ejemplo: a esto
+se le conoce como un "mímimo ejemplo funcional" (MWE, "minimal working exemple"). Esto
+no significa que el código funcione (¡si así fuese, usted no haría la pregunta!), sino más
+bien que usted ha hecho lo posible por clarificarlo, debe ser completo y conciso. Este último
+termino significa mostrar unicamente el contenido necesario para entender el problema.
 
-How do you construct a MWE? Normally easiest is to start from
+¿Como hacer un MWE? Normalmente, lo más fácil es empezar por:
 
 ```latex
 \documentclass{article}
@@ -87,15 +85,14 @@ Text
 \end{document}
 ```
 
-and add lines one at a time until you show the issue. You can try to
-'cut down' your real file, but that can be a long process.
+y añadir línea a línea hasta que muestre el problema encontrado. Puede
+intentar "recortar" o "reducir" su documento, pero esto puede ser un proceso largo. 
 
-If you need more text to show page breaking and other effects, then
-packages such as `lipsum` may be used to generate nonsense paragaraphs
-of text while keeping your test file small.
+Si necesita texto para mostrar saltos de página y otros efectos, use
+paquetes como `lipsum` con el fin de generar párrafos de texto de relleno, 
+esto le permitirá mostrar un documento pequeño.
 
-
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
-Depending on your desktop interface, you might need to 'show extensions' to
-work out which file it is.
+Una de las cosas que debe estar presentar es el archivo log; éste es creado por
+LaTeX cada vez que se ejecuta. Tiene el mismo nombre que su documento pero con
+la extensión `.log`. En función del sistema que utilice, quizás tenga que "mostrar
+las extensiones" de los archivos para encontrarlo.
