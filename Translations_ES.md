@@ -18,26 +18,26 @@ Files being translated :
 - more-06.md    (OK_f)
 - lesson-07.md  (OK_f)
 - more-07.md    (OK_f)
-- lesson-08.md
-- more-08.md
-- lesson-09.md
-- more-09.md
-- lesson-10.md
-- more-10.md
-- lesson-11.md
-- more-11.md
-- lesson-12.md
-- more-12.md
-- lesson-13.md
-- more-13.md
-- lesson-14.md
-- more-14.md
-- lesson-15.md
-- more-15.md
-- lesson-16.md
-- more-16.md
-- help.md
-- language.md
+- lesson-08.md  (OK_f)
+- more-08.md    (OK_f)
+- lesson-09.md  (OK_f)
+- more-09.md    (OK_f)
+- lesson-10.md  (OK_f)
+- more-10.md    (OK_f)
+- lesson-11.md  (OK_f)
+- more-11.md    (OK_f)
+- lesson-12.md  (OK_f)
+- more-12.md    (OK_f)
+- lesson-13.md  (OK_f)
+- more-13.md    (OK_f)
+- lesson-14.md  (OK_f)
+- more-14.md    (OK_f)
+- lesson-15.md  (OK_f)
+- more-15.md    (OK_f)
+- lesson-16.md  (OK_f)
+- more-16.md    (OK_f)
+- help.md       (OK_f)
+- language.md   (OK_f)
 
 Note: A mark "(OK_x)" will be placed by translators for each item when the translations have been checked,
 x being the first letter of the translator's name. 
