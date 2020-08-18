@@ -1,20 +1,40 @@
 ---
-title: "Especificaciones de idioma para el español"
+title: "Especificaciones de idioma en español"
 next: "extra-01"
 ---
 
-## hyphenation
+## Adaptaciones básicas para escribir un texto en español
 
-LaTeX was written for use with English, and so there are very few
-language-specific issues facing authors in English. The main one
-is hyphenation: UK and US traditions are different. LaTeX starts out
-using US English patterns, but you can switch to UK ones using `babel`.
+LaTeX fue diseñado inicialmente para su uso en inglés. Por ello será
+necesario añadir algunos cambios para que LaTeX tenga en cuenta la composición
+tipográfica (separación silábica, espacios necesarios después de ciertos
+símbolos) y la estructura del documento (por ejemplo utilizar el término "Capítulo"
+en lugar de "Chapter" al utilizar el comando `\chapter`; o el término "Índice" en lugar
+de "Table of contents" al utilizar el comando `\tableofcontents`).
+Todo ello puede solucionarse fácilmente utilizando el paquete babel:
+
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[UKenglish]{babel}
+\usepackage[spanish]{babel}
 \begin{document}
 Some text
 \end{document}
 ```
+
+Puede igualmente utilizarlo de la forma siguiente:
+
+```latex
+\documentclass[babel]{article}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\begin{document}
+Some text
+\end{document}
+```
+
+De esta forma la opción de idioma español se aplicará no sólo al paquete `babel`,
+sino también al conjunto de paquetes que haya cargado y que pueden disponer
+de un opción específica para el idioma español. 
+
