@@ -3,23 +3,18 @@ title: "Más sobre: Accediendo a la documentación y buscando ayuda"
 ---
 
 
-## Documented sources of {{site.latex}}
+## Código fuente documentado de {{site.latex}}
 
-The `texdoc` command described earlier is not restricted to package documentation. If you wish to
-go beyond the areas covered by this course and study the LaTeX inplementation in detail then
-the following links may help.
+El comando `texdoc` descrito anteriormente no se limita únicamente a la documentación de los paquetes.
+Si quiere ir más allá de las partes abordadas en este curso y estudir la implementación de LaTeX en detalle,
+los siguientes enlaces le serán de mucha ayuda.
 
-The source of LaTeX itself is available as a LaTeX-typeset document `source2e.pdf`, available
-from `texdoc source2e` or at
+El código fuente de LaTeX está disponible en un documento escrito en LaTeX `source2e.pdf` que puede
+consultar utilizando el comando `texdoc source2e` o a través del siguiente enlace
 [texdoc.net](https://texdoc.net/pkg/source2e)
 
-Current releases of LaTeX also have preloaded the LaTeX3 Programming Language code, previously available
-as the `expl3` package.  `texdoc` may be used to see the
-[expl3 interface description](http://texdoc.net/pkg/interface3) (`texdoc interface3`)
-or
-[full expl3 source code](http://texdoc.net/pkg/source3) (`texdoc source3`).
-
-
-
-
-
+Las versións actuales de LaTeX cargan el código del lenguaje de programación de LaTeX3, disponible anteriormente
+en el paquete `expl3`. Puede usar `texdoc` para ver la
+[descripción de la interface de expl3](http://texdoc.net/pkg/interface3) (`texdoc interface3`)
+o
+[el código fuente completo de expl3](http://texdoc.net/pkg/source3) (`texdoc source3`).
