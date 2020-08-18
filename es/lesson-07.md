@@ -1,5 +1,5 @@
 ---
-title: "Incluyendo imágenes y haciendo que las cosas 'floten'"
+title: "Incluyendo imágenes y haciendo que las cosas \"floten\""
 ---
 
 ## Incluyendo imágenes
@@ -24,11 +24,11 @@ es un PDF importado.
 Puede insertar ficheros EPS, PNG, JPG y PDF.
 Si dispone de varias versiones de una misma imagen entonces puede escribir,
 por ejemplo, `exemple-image.png`. (El paquete `graphicx` tratará de adivinar 
-la extensión si usted no la da.)
+la extensión si usted no se la da.)
 
 Se habrá dado cuenta de que hemos usado aquí un nuevo entorno, `center` que centra
 la imagen horizontalmente en la página. [Un poco más adelante](lesson-11), hablaremos más 
-spbre el espaciado y el posicionamiento.
+sobre el espaciado y el posicionamiento.
 
 ## Cambiando la apariencia de la imagen
 
@@ -39,7 +39,7 @@ Algunas de estas opciones son muy usadas, así que vamos a ocuparnos de ellas.
 La opción más obvia es la de definir la anchura `width` y la altura `height` de una
 imagen, las cuales se dan de forma relativa con respecto al ancho `\textwidth` y al 
 alto `\textheight` de la zona de texto. LaTeX ajustará la escala de la imagen automáticamente
-para la proporción de las dimensiones de la imagen sea la correcta.
+para que la proporción de las dimensiones de la imagen sea la correcta.
 
 ```latex
 \documentclass{article}
@@ -58,7 +58,7 @@ Un poco de texto.
 ```
 
 Puede también cambiar la escala `scale` de las imágenes o hacerlas rotar de un ángulo dado con `angle`.
-La otra cosa que querrá hacer es recortar una imagen con `clip` y `trim`.
+La otra cosa que podrá hacer es recortar una imagen con `clip` y `trim`.
 
 ```latex
 \documentclass{article}
@@ -77,7 +77,7 @@ La otra cosa que querrá hacer es recortar una imagen con `clip` y `trim`.
 En la composición tipográfica tradicional, y en particular en los documentos técnicos,
 las imágenes pueden moverse a otro lugar en el documento.
 A esto se le llama un *objeto flotante*. La imágenes se incluyen normalmente como objetos
-flotantes para evitar grandes espacios blancos en una página.
+flotantes para evitar grandes espacios en blanco en una página.
 
 ```latex
 \documentclass{article}
@@ -101,14 +101,14 @@ Localización de test.
 
 En este ejemplo, LaTeX mueve la imagen y la leyenda de la imagen, desde la `Localización
 test` hasta la parte alta del segundo párrafo, ya que no hay espacio para ella al final de
-la página. La opción `ht` afecta a dónde LaTeX puede situar esta imagen flotante; estas
+la página. La opción `ht` tiene un efecto sobre en qué lugar LaTeX puede situar esta imagen flotante; estas
 dos letras significan que puede ir cerca de su posición inicial (cerca de `Localización test`)
 o en la parte alta de la página. Puede usar hasta cuatro especificadores de posición:
 
-- `h` "Aquí" (si es posible)
-- `t` En la parte alta de la página
-- `b` En la parte baja de la página
-- `p` En una página dedicada exclusivamente a objetos flotantes
+- `h` "Aquí" (si es posible).
+- `t` En la parte alta de la página.
+- `b` En la parte baja de la página.
+- `p` En una página dedicada exclusivamente a objetos flotantes.
 
 [Más adelante](lesson-09), veremos como hacer referencias cruzadas a estos objetos flotantes
 de forma a poder citarlos en el texto.

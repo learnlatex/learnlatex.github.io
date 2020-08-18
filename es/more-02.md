@@ -3,9 +3,9 @@ title: "Más sobre: Trabajando con LaTeX"
 ---
 
 Para la mayoría de nuestros ejemplos, no usaremos el programa llamado `latex` sino
-otro llamado `pdflatex`. Éste forma parte de una familia de programas, que `derivan`
+otro llamado `pdflatex`. Éste forma parte de una familia de programas que `derivan`
 directamente de `latex`. Hemos elegido `pdflatex` porque es quizás el más ampliamente 
-utilizado y produce directamente los ficheros PDF.
+utilizado y produce directamente los ficheros en PDF.
 
 ## Formatos y motores
 

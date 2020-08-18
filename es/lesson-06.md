@@ -2,19 +2,19 @@
 title: "Extendendiendo LaTeX usando paquetes"
 ---
 
-Después de haber definido el tipo de documento, en el preámbulo usted podrá modificar 
+Después de haber definido el tipo de documento, en el preámbulo, usted podrá modificar 
 las funcionalidades disponibles en LaTeX añadiendo uno o más *paquetes*. Éstos pueden:
 
-- Cambiar el comportamiento de algunas partes de LaTeX
-- Añadir nuevos comandos en LaTeX
-- Cambiar el diseño de un documento
+- Cambiar el comportamiento de algunas partes de LaTeX.
+- Añadir nuevos comandos en LaTeX.
+- Cambiar el diseño de un documento.
 
 ## Cambiando el comportamiento de LaTeX
 
 El "kernel" de LaTeX (el núcleo de LaTeX) es bastante limitado en cuanto a personalización
 por parte del usuario y algunos paquetes adicionales tratan con ideas muy comunes. La primera
 es cambiar el como LaTeX trata la composición tipográfica específica de cada idioma (separación
-silábica, puntuación, símbolos, localización, etc.) Todos los idiomas tienen reglas diferentes, con lo
+silábica, puntuación, símbolos, localización, etc.). Todos los idiomas tienen reglas diferentes, con lo
 que es importante decir a LaTeX cuál es el que debe usar. De este tema se encarga
 el paquete `babel`.
 
@@ -36,15 +36,15 @@ las palabras, y para que sea capaz de darnos al menos una separación silábica.
 \end{document}
 ```
 
-Pruebe de no comentar la (claramente engañosa) línea que carga el paquete `babel` y
-vea cuál se si efecto. (Las reglas de separación silábica estandar sont del inglés US.)
+Pruebe a no comentar la (claramente engañosa) línea que carga el paquete `babel` y
+vea cuál es su efecto (las reglas de separación silábica estandar son las del inglés US).
 
 El paquete `babel` hace mucho más que separar sílabas, en función del idioma seleccionado;
 damos [más detalles aquí](more-06) si los necesita.
 
 ## Cambiando el diseño
 
-Es útil ser capaz de ajustar algunos aspectos del diseño independientemente del
+Es útil ser capaz de ajustar algunos aspectos del diseño, independientemente del
 tipo de documento. El más obvio es la definición de los márgenes. Ya hemos 
 usado el paquete `geometry` en un ejemplo anterior, pero veamos un ejemplo
 específico sobre los márgenes.
@@ -83,18 +83,18 @@ Texto de la segunda sección.
 \end{document}
 ```
 
-Debería fijarse aquí en el efecto que da el no cargar el paquete `geometry`.
+Debería fijarse aquí en el efecto que tiene el no cargar el paquete `geometry`.
 
 ## Añadiendo comandos
 
 Una de los puntos fuertes de LaTeX es que puede elegir entre miles de paquetes,
-incluyendo aquellos que permiten escribir texto matemático, hipervínculos, hacer uso de
+incluyendo aquellos que permiten escribir: texto matemático, hipervínculos, hacer uso de
 sofisticadas funciones relacionadas con el color, etc. Veremos algunos de las
 paquetes más comunes en las siguientes lecciones. 
 
 ## Ejercicios
 
-Pruebe a escribir un texto en otras lenguas europeas y veo como `babel` trata la
+Pruebe a escribir un texto en otras lenguas europeas y vea como `babel` gestiona la
 separación silábica: podrá seguramente encontrar un texto en internet, y adivinar
 las opciones correctas.
 

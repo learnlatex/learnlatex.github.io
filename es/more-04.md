@@ -20,11 +20,11 @@ Un poco de texto.
 \end{document}
 ```
 
-Como puede ver, los comandos `\author`, `\title` y `\date' guardan información, 
+Como puede ver, los comandos `\author`, `\title` y `\date` guardan información, 
 y `\maketitle` la usa. También puede separar varios autores con `\and`.
 Los comandos `\author`, `\title` y `\date` deber preceder a `\maketitle`.
 Aquí, los hemos puesto en el cuerpo del documento: pueden ser usados también en el
-preámbulo, pero si utiliza accesos rápidos de "babel" estos comados no estarán 
+preámbulo, pero si utiliza los accesos rápidos de "babel" estos comados no estarán 
 activos en esta zona. 
 
 El diseño propuesto por `\maketitle` dependerá del tipo de documento (ver [lección

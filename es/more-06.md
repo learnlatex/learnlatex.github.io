@@ -12,8 +12,8 @@ acostumbrémonos a cargar un solo paquete por línea.
 
 ## El paquete `babel`
 
-Mostramos el uso paquete `babel` [en la sección principal de la lección](lesson-06) como 
-manera de elegir diferentes patrones de separación silábica. Pero este paquete hace mucho más
+Ya mostramos el uso del paquete `babel` [en la sección principal de la lección](lesson-06) con el
+fin de elegir diferentes patrones de separación silábica. Pero este paquete hace mucho más
 que eso, en función del idioma usado. Por ejemplo, en alemán, proporciona algunas abreviaturas
 para la creación de guiones "suaves" y también una forma rápida de escribir diéresis sin
 necesidad de usar un teclado alemán.
@@ -30,10 +30,6 @@ H"ohe
 
 \end{document}
 ```
-
-Other language settings make design changes: for example, in traditional
-French typography, there is a space before some punctuation signs, like `:`,
-and this is added automatically if you load `babel` with the option `french`.
 
 Otros ajustes asociados al idioma hacen que el diseño cambie: por ejemplo, en la
 tipografía francesa tradicional, se deja un espacio antes de algunos signos de puntuación

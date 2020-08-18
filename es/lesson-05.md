@@ -23,20 +23,20 @@ de una presentación.
 
 El comando de tipo de documento puede también configurar _opciones globales_: opciones
 que se aplican a todo el documento. Estas opciones se escriben entre corchetes:
-`\documentclss[<options>]{<name>}`. Esta sintáxis, con información opcional escrita
+`\documentclss[<options>]{<name>}`. Esta sintaxis, con información opcional escrita
 entre corchetes, es usada en muchos comandos de LaTeX.
 
 ## Los tipos de documentos básicos 
 
-LaTeX dispone de una serie de tipos estandar, los cuales se asemejan pero
+LaTeX dispone de una serie de tipos estandar, los cuales se asemejan entre sí, pero
 presentan algunas variaciones:
 
-- `article`: documentos cortos sin capítulos
+- `article`: documentos cortos sin capítulos.
 - `report`: documentos largos con capítulos, impresos a una sola cara.
 - `book`: documentos largos con capítulo, impresos a dos caras, con material
-inicial y final (como por ejemplo un índice de materias)
-- `letter`: cartas sin secciones
-- `slides`: para presentaciones (ver más abajo)  
+inicial y final (como por ejemplo un índice de materias).
+- `letter`: cartas sin secciones.
+- `slides`: para presentaciones (ver más abajo).  
 
 Los tipos de documento `article`, `report` y `book` disponen de comandos muy similares,
 como ya hemos visto. Cuando escribimos una carta con `letter`, los comandos disponibles
@@ -60,9 +60,9 @@ El contenido de la carta viene aquí
 \end{document}
 ```
 
-Vea como ``\\`` es usado para separar las lines de una dirección; abordaremos el
+Vea como ``\\`` es usado para separar las líneas de una dirección; abordaremos el
 salto de línea [un poco más tarde](lesson-11). Vea igualmente que el tipo de documento
-`letter` crea un nuevo entorno para cada carta y dispone comandos específicos.
+`letter` crea un nuevo entorno que permite escribir una carta y dispone de comandos específicos.
 
 Los tipos de documento estandar `article`, `report` y `book` aceptan las opciones `10pt`,
 `11pt` y `12pt` para cambiar el tamaño de la letra, y `twocolumn` para crear
@@ -77,7 +77,7 @@ el diseño del documento sin tener que hacer las cosas manualmente (cosa que abo
 [un poco más tarde](lesson-11)).
 
 La American Mathematical Society aporta variantes de los tipos de documento estándar
-(`amsart`, `amsbook`) con un diseño más tradicional similar al usado en las
+(`amsart`, `amsbook`) con un diseño más tradicional, similar al usado en las
 publicaciones de revistas de matemáticas.
 
 Los dos tipos de documento más importantes y "extendidos" popularmente sont el 
@@ -88,19 +88,19 @@ es más bien una extensión de `book`.
 Estos tipos de documento extendidos disponen de una gran cantidad de herramientas de personalización,
 que exploraremos un poco en un ejercicio. Puede preguntarse cómo podemos saber cuáles son las
 herramientas de que disponen, abordaremos este tema [en una lección posterior](lesson-15), ¡pero
-usted siempre podrá adelantarse!
+usted siempre puede adelantarse!
 
 ## Presentaciones
 
 El tipo de documento `slides` fue desarrollado para hacer diapositivas físicas 
 a mediados de los 80, con lo que no dispone de funciones para crear presentaciones interactivas
-en PDF. Existen otros tipos de documento más modernos que pueden hacelo: son de alguna manera
-especialistas si los comparamos a los documentos generales de LaTeX, así que [los abordaremos en el
-apartado de más información](more-05).
+en PDF. Existen otros tipos de documento más modernos que pueden hacelo: están de alguna manera
+especializados si los comparamos con los documentos generales de LaTeX, así que [los abordaremos en el
+apartado de más detalles](more-05).
 
 ## Ejercicios
 
-Explore como el uso de los tipos de documento estándar, del paquete KOMA o del 
+Explore cómo el uso de los tipos de documento estándar, del paquete KOMA o del 
 tipo `memoir` afecta a la presentación del documento.
 
 ```latex

@@ -4,7 +4,7 @@ title: "Más sobre: Su primer documento en LaTeX"
 
 ## Ejecutando LaTeX
 
-Como [comentamos anteriormente](lesson-02), Los documentos de LaTeX contienen texto 
+Como [comentamos anteriormente](lesson-02), los documentos de LaTeX contienen texto 
 sin formato. Para verlo, intente abrir su primer documento en un simple editor de texto, 
 por ejemplo usando Notepad en Windows. Debería ver el mismo texto que ve en un editor
 de LaTeX, pero sin el color y el resalte de las palabras.
@@ -41,6 +41,6 @@ para obtener un `{`. Hay unos pocos casos en los que tendrá que utilizar, en su
 | `~`     |               | `\textasciitilde` |
 
 Para los tres últimos símbolos no existe ningún comando corto disponible,
-ya que `\\` se usa como un indicador de un retorno de línea y `\~` y `\^` se usan
-para obtener la tilde de la eñe o el acento circunflejo cuando se usan sólo los caracteres
+ya que `\\` se usa como un indicador de salto de línea y `\~` y `\^` se usan
+para obtener la tilde de la eñe o el acento circunflejo, cuando se usan sólo los caracteres
 de código ASCII como entrada.

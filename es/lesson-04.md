@@ -10,8 +10,8 @@ de la apariencia del documento cuando lo necesite.
 ## Un primer ejemplo
 
 Empezaremos con un ejemplo que compara uno de los comandos de marcado lógico 
-más comunes en LaTeX, `\emph`, con simplemente poner algo en cursiva. (En la impresión,
-ésta es la forma más usual de resaltar un texto.)  
+más comunes en LaTeX, `\emph`, con simplemente poner algo en cursiva (en la impresión,
+ésta es la forma más usual de resaltar un texto).  
 
 ```latex
 \documentclass{article}
@@ -35,15 +35,8 @@ añadamos `\textbf` a los comandos que conocemos: este comando pone el texto en 
 
 ## Seleccionado comandos
 
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
-
 Probablemente usted ya haya usado un procesador de texto, en el que para comenzar 
-una sección la mayor parte de la gente escribe el título de la sección, luego simplemente 
+una sección, la mayor parte de la gente escribe el título de la sección, luego simplemente 
 aumenta el tamaño del texto y lo pone en negrita, para a continuación añadir una nueva
 línea. En LaTeX, el uso de marcadores lógicos es en realidad _más fácil_ que editar el
 estilo del texto manualmente; podemos usar el comando `\section`. Este comando se encarga de 
@@ -81,23 +74,23 @@ siguiente lección](lesson-05).
 
 LaTeX puede estructurar el documento en bastantes niveles:
 
-- `\chapter` (pero para poder utilizarlo debemos tener `\documentclass{book}` o
+- `\chapter` (pero para poder utilizarlo debemos utilizar `\documentclass{book}` o
  `documentclass{report}`)
 - `\section`
 - `\subsection`
 - `\subsubsection`
 
 Podemos ir más lejos: el siguiente es `\paragraph`, pero casi siempre esto será ir
-demasiado "lejos" en una sección. (Sí, `\paragraph` es un comando de sección, ¡_no_
-una forma de comenzar un nuevo párrafo!)
+demasiado "lejos" en una sección (sí, `\paragraph` es un comando de sección, ¡_no_
+una forma de comenzar un nuevo párrafo!).
 
 Puede que se pregunte sobre el título del documento. Hay varios comandos especiales
 para ello, pero no todos los documentos los usan, así que 
-[lo abordaremos en la lección extra](more-04).
+[lo abordaremos en la parte de más detalles sobre este tema](more-04).
 
 ## Listas
 
-La otra situación muy común en la que querrá utilizar marcadores lógicos es en la escritura 
+La otra situación muy común en la que utilizará marcadores lógicos es en la escritura 
 de una lista. 
 
 ```latex
@@ -122,8 +115,8 @@ No enumerada
 \end{document}
 ```
 
-Remarque el uso de `\item` para iniciar cada entrada de la lista, y el hecho de que
-el símbolo o número utilizado por cada lista se añada automáticamente.
+Remarque `\item` sirve para iniciar cada entrada de la lista y añade automáticamente
+el símbolo o número de lista a cada una de ellas.
 
 ## Ejercicios
 
@@ -134,5 +127,5 @@ presenta el documento? Intente usar el comando `\paragraph` e (incluso) el comma
 
 Cree algunas listas, y anide una lista en el interior de otra. ¿Cómo afecta esto al
 formato de los números o símbolos? Sólo podrá llegar hasta cuatro niveles de anidamiento
-con LaTeX standard, pero necesitar más de cuatro listas anidadas ¡tiende a ser una mala
+con LaTeX standard. Necesitar más de cuatro listas anidadas ¡tiende a ser una mala
 señal, de todas formas! 

@@ -4,7 +4,7 @@ title: "Trabajando con LaTeX"
 
 A diferencia de muchos programas, LaTeX no es una simple aplicación que contiene
 "todo" en uno. En lugar de ello, tiene programas independientes que funcionan juntos.
-A estos programas podemos dividirlos en dos cosas que usted necesitará:
+Podemos clasificar estos programas en dos cosas que usted necesitará:
 
 - Un _sistema TeX_
 - Un editor de texto (a menudo específico para LaTeX)
@@ -12,7 +12,7 @@ A estos programas podemos dividirlos en dos cosas que usted necesitará:
 ## Distribuciones del sistema {{ site.tex }}
 
 Lo esencial para trabajar con LaTeX es disponer de un sistema TeX. Un sistema TeX es
-un conjunto de programas y archivos "en segundo plano" necesarios para que LaTeX
+un conjunto de programas y archivos "en segundo plano", necesarios para que LaTeX
 funcione, pero la mayor parte del tiempo no necesitará "ejecutarlos" directamente.   
 
 Hay dos principales distribuciones del sistema TeX disponibles hoy en día,
@@ -24,7 +24,7 @@ en macOS, TeX Live está incluida en una colección más amplia llamada [MacTeX]
 que quiera echar un vistazo al [sitio web de LaTeX Project 
 para obtener más información](https://www.latex-project.org/get/).
 
-Como TeX Live está disponible en todas las plataformas habituales, y presenta algunas
+Como TeX Live está disponible en todas las plataformas habituales y presenta algunas
 ventajas en cuanto a rendimiento, le recomendamos que si no sabe qué distribución instalar,
 elija TeX Live.
 
@@ -32,10 +32,10 @@ elija TeX Live.
 
 Los archivos de LaTeX son simplemente archivos de texto sin formato, con lo cual pueden ser 
 editados por cualquier editor de texto. Sin embargo, es más conveniente utilizar
-un editor de texto concebido para trabajar con LaTeX, ya que le dispondrá de funcionalidades
-útiles como compilar sus archivos, visualizar los PDF y resaltar la sintaxis. Una
-funcionalidad verdaderamente útil en los editores modernos de LaTeX es SyncTex: pulsar 
-en su código e ir a la posición correspondiente en el PDF y viceversa.   
+un editor de texto concebido para trabajar con LaTeX, ya que le ofrecerá funcionalidades
+útiles como: compilar archivos, visualizar los PDF resultantes y resaltar la sintaxis. Una
+funcionalidad verdaderamente útil en los editores modernos de LaTeX es SyncTex: el poder pulsar 
+en su código fuente e ir a la posición correspondiente en el PDF resultante y viceversa.   
 
 Existen muchos editores de LaTeX que podemos esperar encontrar aquí: 
 [hay una lista completa en StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
@@ -57,12 +57,12 @@ Algunos de estos sitios combinan LaTeX con otras funcionalidades similares a las
 de un procesador de textos, mientras que otros se focalizan en la visualización del 
 código LaTeX y se asemejan a tener una instalación local de LaTeX. 
 
-Hay sistemas que le permiten ejecutar LaTeX sin necesidad de registrarse, y nosotros
+Hay sistemas que le permiten ejecutar LaTeX sin necesidad de registrarse. Nosotros
 vamos a usar uno de ellos: 
 [LaTeX CGI](https://latexcgi.xyz), que le permitirá
 editar y probar los ejemplos que le daremos. Para actividades más complejas, los mejores
-sistema en línea requieren que se registre antes de usarlos. Esto permite conservar
-su trabajo y también permite a los sitios web evitar estar sobrecargados. Hemos configurado
+sistemas en línea requieren que se registre antes de usarlos. Esto le permitira a usted guardar
+su trabajo y a los sitios web el evitar estar sobrecargados. Hemos configurado
 algunos enlaces que le permiten editar los ejemplos usando [Overleaf](https://www.overleaf.com), 
 uno de los mejores sitios en línea de LaTeX. Hay otros, por supuesto:  
 [Papeeria](https://papeeria.com/) es uno de ellos.

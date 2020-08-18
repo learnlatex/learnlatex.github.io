@@ -35,8 +35,8 @@ El resultado es estupendo; ¡felicitaciones!
 
 ## Tratando con errores
 
-Los errores ocurren.
-Verifique que ha tecleado cada línea del archivo de texto exactamente como está escrito
+Es posible cometer errores.
+Verifique que ha tecleado cada línea del archivo de texto, exactamente como está escrito
 en el ejemplo anterior. Algunas veces, pequeños cambios en el archivo de entrada pueden 
 dar lugar a grandes cambios en el resultado, o incluso impedir la aparición del documento final. 
 Si está bloqueado, intente borrar el documento y corte y pegue las líneas del
@@ -47,19 +47,19 @@ tecleando `x` y `<Enter>`.
 
 Los mensajes de error de LaTeX intentan ser útiles, pero no son del mismo estilo que los
 mensajes de los procesadores de texto. Además, algunos editores hacen que no sea fácil el 
-poder ver el texto "completo" de un error, el cual puede dar detalles clave. LaTeX siempre 
+poder ver el texto "completo" de un error, el cual puede ser clave para entenderlo. LaTeX siempre 
 crea un registro con todo lo que hace; es un archivo de texto de extensión `.log`. Aquí
 siempre podrá ver los mensajes de error completos, y si tiene algún problema, los usuarios 
 expertos de LaTeX le pedirán a menudo este archivo de registro.
 
-## Lo que has obtenido
+## Lo que ha obtenido
 
 El primer documento muestra lo básico.
 Los documentos LaTeX son una combinación de texto y comandos.
 Los comandos comienzan con una barra invertida y a veces tienen argumentos
 entre llaves
 (o a veces tienen argumentos opcionales que se sitúan entre corchetes).
-Obtiene como salida el PDF diciendo a LaTeX que compile su archivo.
+Obtiene como el PDF de salida al indicar a LaTeX que compile su archivo.
 
 En todo documento LaTeX hay un `\begin{document}` y su correspondiente 
 `\end{document}`.
@@ -68,11 +68,12 @@ En el ejemplo, el cuerpo del documento contiene dos párrafos (en LaTeX se puede
 párrafos con una o más líneas en blanco).
 Antes de `\begin{document}` se encuentra el _preámbulo del documento_,
 que dispone del código para configurar el diseño del documento.
-El comando `\usepackage` que será descrito en una [próxima lección](lesson-06) es usado en la mayoría de los ejemplos de este sitio para configurar la codificación de la fuente.
+El comando `\usepackage` que será descrito en una [próxima lección](lesson-06) es usado en la mayoría 
+de los ejemplos de este sitio para configurar la codificación de la fuente.
 
 En LaTeX hay otros bloques `\begin{...}` y `\end{...}`; a éstos se les llaman
 _entornos_.
-Siempre dbe verificar que cada `\begin{x}` tenga su correspondiente `\end{x}`.
+Siempre debe verificar que cada `\begin{x}` tenga su correspondiente `\end{x}`.
 Si los combina, debe tener un `\end{y} ... \end{x}` que
 corresponda a un `\begin{x} ... \begin{y}`, es decir cada `\begin` debe tener su `\end` 
 correspondiente, respetando el orden.
@@ -94,17 +95,17 @@ Esto es un nuevo párrafo.
 ```
 
 Puede ver más arriba que hemos obtenido dos párrafos: observe el uso de una
-línea en blanco para conseguirlo. Además revise que los espacios múltiples se comportan
+línea en blanco para conseguirlo. Además, fijése en que los espacios múltiples se comportan
 como un espacio simple.
 
 Puede que algunas veces quiera un espacio "fuerte" que impida el retorno de línea: 
 en LaTeX podemos obtenerlo usando `~`, que "mantiene" dos partes del texto juntas. Esto
-es particularmente útil cuando empecemos a crear referencias cruzadas más adelante en este curso. 
+es particularmente útil cuando, más adelante en este curso, empecemos a crear referencias cruzadas. 
 
 ## Caracteres especiales
 
 Seguramente ya ha notado que `\`, `{` y `}` tienen un significado especial para LaTeX.
-El signo `\` comienza una instrucción de LaTeX: un "comando". Los corchetes
+El signo `\` comienza una instrucción de LaTeX: un "comando". Las llaves
 `{` y `}` se usan para mostrar _argumentos obligatorios_: información necesaria para
 los comandos. 
 

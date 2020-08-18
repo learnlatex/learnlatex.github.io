@@ -10,7 +10,7 @@ por una serie de libros titulados "El arte de programar ordenadores" (conocidos
 como "TAOCP"). En 1973, estos libros fueron reeditados; en ese mismo momento
 la industria de la imprenta cambiaba de la composition tipográfica tradicional con 
 plomo a una composición basada en la luz. A Donald Knuth no le gustó la calidad 
-de la impresión y decidió implementar su propio sistema de composición tipográfica.  
+de la impresión de la época y decidió implementar su propio sistema de composición tipográfica.  
 
 En mayo de 1977 comenzaba el desarrollo de TeX.
 
