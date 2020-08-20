@@ -73,35 +73,21 @@
         {% include website-header.html %}
         <!-- End Website Header -->
 
-      {% if site.title and site.title != page.title %}
-      <h1>	{% if lang =="en" %}
-	<a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
-	{%- else -%}
-	<a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }}</a>
-	{% endif %}
-      </h1>
-      {% endif %}
+        <!-- Start title -->
+        {% if site.title and site.title != page.title %}
+          <h1>
+            {% if lang =="en" %}
+              <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+            {%- else -%}
+              <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }}</a>
+            {% endif %}
+          </h1>
+        {% endif %}
+        <!-- End title -->
 
-      {{ content }}
+        {{ content }}
 
-      {% if site.github.private != true and site.github.license %}
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        <a href="{{ "/" | absolute_url }}about">This site</a> is under construction <a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Git Source</a>.
-      </div>
-      {% endif %}
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
+        {% include website-footer.html %}
 
     </div>
   </body>
