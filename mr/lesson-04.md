@@ -1,7 +1,8 @@
 ---
-title: "Logical structure"
+title: "रचना"
 ---
 
+तुमच्या आज्ञावलीच्या रचनेवर लक्ष केंद्रित करण्यासाठी लाटेक्-मध्ये अनेक मार्ग उपलब्ध आहेत.
 LaTeX provides ways to concentrate on the logical structure of your document, as well as the
 ability to directly set the appearance. Most of the time, it's much better to use
 methods that focus on structure, as that makes it easy to reuse or alter
