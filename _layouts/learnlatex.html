@@ -51,6 +51,8 @@
     <div class="wrapper">
 
       <div class="container-lg px-3 my-5 markdown-body">
+
+        <!-- Start Language Selection -->
         <div style="float:right;">
           <select id = "myList" onchange="switchlang(this);">
             {% assign lang = "en" %}
@@ -65,12 +67,11 @@
             {%- endfor -%}
           </select>
         </div>
+        <!-- End Language Selection -->
 
-      <img 
-        src="/assets/images/logo.svg" 
-        alt="Learn LaTeX logo" 
-        height="50" 
-        width="278">
+        <!-- Start Website Header -->
+        {% include website-header.html %}
+        <!-- End Website Header -->
 
       {% if site.title and site.title != page.title %}
       <h1>	{% if lang =="en" %}
