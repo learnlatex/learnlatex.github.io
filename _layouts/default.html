@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel=icon href=/learnlatex-favicon.png>
+    <link rel="icon" href="/learnlatex-favicon.png">
+    
     {% if site.title and site.title == page.title %}
-    <title>{{ page.title }}</title>
+      <title>{{ page.title }}</title>
     {% else %}
-    <title>{{ page.title }} | {{site.title}}</title>
+      <title>{{ page.title }} | {{site.title}}</title>
     {% endif %}
+    
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
     {% if page.path contains "-" or page.path contains "help" %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
     <style type="text/css" media="screen">
@@ -59,12 +61,11 @@
       </select>
     </div>
 
-    <img 
+      <img 
         src="/assets/images/learnlatex-logo.svg" 
-        alt="Learn LaTeX logo"
-        height="50"
+        alt="Learn LaTeX logo" 
+        height="50" 
         width="278">
-    </a>
 
       {% if site.title and site.title != page.title %}
       <h1>	{% if lang =="en" %}
