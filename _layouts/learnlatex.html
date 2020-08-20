@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
     <link rel="icon" href="/learnlatex-favicon.png">
     
     {% if site.title and site.title == page.title %}
@@ -14,6 +15,8 @@
     
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 
+    <link rel="canonical" href="https://www.learnlatex.org/">
+    
     {% if page.path contains "-" or page.path contains "help" %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
     <style type="text/css" media="screen">
