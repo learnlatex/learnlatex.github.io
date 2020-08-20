@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "learnlatex"
 title: learnlatex.org
 permalink: /
 ---
