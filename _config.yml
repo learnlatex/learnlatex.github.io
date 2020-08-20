@@ -1,7 +1,5 @@
 exclude: ['README.md']
 
-theme: jekyll-theme-primer
-
 title: learnlatex.org
 description: Learn LaTeX online
 
