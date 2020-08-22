@@ -46,7 +46,58 @@ html {
 .wrapper {
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 0.5em;
+  padding: 0 0.5rem;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  HEADINGS                                                                  */
+/*----------------------------------------------------------------------------*/
+h1,
+.first-heading {
+    font-family: var(--font_default-light);
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0 0 0.6em;
+}
+
+h2,
+.second-heading {
+    font-family: var(--font_default-light);
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 1.3em 0 0.5em;
+}
+
+h3,
+.third-heading {
+    font-family: var(--font_default-regular);
+    font-size: 1.6em;
+    margin: 1.4em 0 0.5em;
+}
+
+h4,
+.fourth-heading {
+    font-family: var(--font_default-regular);
+    font-size: 1.4em;
+    margin: 1.5em 0 0.6em;
+}
+
+h5,
+.fifth-heading {
+    font-family: var(--font_default-regular);
+    font-size: 1.3em;
+    margin: 1.6em 0 0.7em;
+}
+
+h6,
+.sixth-heading {
+    font-family: var(--font_default-regular);
+    font-size: 1.2em;
+    margin: 1.7em 0 0.8em;
 }
 
 
@@ -58,8 +109,8 @@ html {
 /*----------------------------------------------------------------------------*/
 p {
     font-family: sans-serif;
-    font-size: 2em;
-    margin: 0 0 .8em;
+    font-size: 1rem;
+    margin: 0 0 .8rem;
 }
 
 p b,
@@ -75,7 +126,7 @@ p em {
 }
 
 p small {
-    font-size: .8em;
+    font-size: .8rem;
 }
 
 abbr {
@@ -84,15 +135,89 @@ abbr {
     text-decoration: none;
 }
 
-main a:link, main a:visited {
+main a:link,
+main a:visited {
     color: var(--color_blue-1);
     text-decoration: none;
     border: none;
     overflow-wrap: break-word;
 }
 
-main a:hover, main a:active, main a:focus {
+main a:hover,
+main a:active,
+main a:focus {
     text-decoration: underline;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  #HEADER                                                                   */
+/*----------------------------------------------------------------------------*/
+.website-header {
+    background: var(--color_grey-7);
+    padding: 1.1rem 0 1rem;
+}
+
+.website-header--logo:link,
+.website-header--logo:visited, 
+.website-header--logo:hover {
+    border: none;
+    color: var(--color_black-0);
+    display: block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.website-header--tagline {
+    font-size: .8rem;
+    line-height: 0;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  #TABLES                                                                   */
+/*----------------------------------------------------------------------------*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+}
+
+caption {
+  font-size: 1rem;
+  margin: 0 0 1.25rem;
+  text-align: left;
+}
+
+tr {
+  margin: 2rem 0 1rem 0;
+  padding: 1rem .2rem;
+}
+
+th {
+  border-bottom: 1px solid var(--color_black-0);
+  padding: 0 .5rem .8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table tr:nth-child(even) {
+  background: var(--color_grey-0);
+}
+
+table td {
+  padding: .3rem .5rem;
+  vertical-align: top;
+}
+
+table td code {
+  white-space: nowrap;
 }
 
 
