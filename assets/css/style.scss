@@ -1,7 +1,99 @@
 ---
 ---
-
 @import "reset";
+
+/*----------------------------------------------------------------------------*/
+/*  #VARIABLES: COLORS                                                        */
+/*----------------------------------------------------------------------------*/
+
+:root {
+  --color_white-0: rgba(255, 255, 255, 1);
+  --color_black-0: rgba(0, 0, 0, 1);
+  --color_black-1: rgba(34, 34, 34, 1);
+  --color_blue-0: rgba(48, 72, 96, 1);
+  --color_blue-1: rgba(37, 3, 82, 1);
+  --color_blue-2: rgba(44, 59, 99, 1);
+  --color_blue-3: rgba(2, 119, 158, 1); 
+  --color_blue-4: rgba(72, 120, 168, 1);
+  --color_grey-0: rgba(242, 242, 242, 1);
+  --color_grey-1: rgba(227, 227, 229, 1);
+  --color_grey-2: rgba(204, 204, 204, 1);
+  --color_grey-3: rgba(88, 88, 88, 1);
+  --color_grey-4: rgba(68, 68, 68, 1);
+  --color_grey-5: rgba(168, 168, 168, 1);
+  --color_grey-6: rgba(234, 234, 234, 1);
+  --color_grey-7: rgba(237, 237, 237, 1);
+  --color_grey-8: rgba(246, 246, 246, 1);
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  #DEFAULTS                                                                 */
+/*----------------------------------------------------------------------------*/
+html {
+  color: var(--color_black-0);
+}
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  #WRAPPER                                                                  */
+/*----------------------------------------------------------------------------*/
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 0.5em;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  #TEXT-LEVEL                                                               */
+/*----------------------------------------------------------------------------*/
+p {
+    font-family: sans-serif;
+    font-size: 2em;
+    margin: 0 0 .8em;
+}
+
+p b,
+p strong {
+    color: var(--color_grey-4);
+    font-weight: normal;
+}
+
+p i,
+p em {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+p small {
+    font-size: .8em;
+}
+
+abbr {
+    border-bottom: 1px dotted;
+    cursor: help;
+    text-decoration: none;
+}
+
+main a:link, main a:visited {
+    color: var(--color_blue-1);
+    text-decoration: none;
+    border: none;
+    overflow-wrap: break-word;
+}
+
+main a:hover, main a:active, main a:focus {
+    text-decoration: underline;
+}
 
 
 
@@ -33,7 +125,7 @@
   width: auto;
 }
 
-/* Allow the Skip link to be focusable when navigated to via the keyboard */
+/* Allow the Skip link to be focusable when navigated to via keyboard */
 .skip-link.visually-hidden.focusable:focus {
   padding: .2rem 0;
 }
