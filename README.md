@@ -19,3 +19,13 @@ Project](https://www.latex-project.org) taking the lead. We are very happy to
 take contributions, provided they fall within the 'beginners' scope. We know
 there are _lots_ of things we do not cover, but we've tried to agree a core
 curriculum that delivers for everyone.
+
+---
+
+## Design
+
+@jonasjacek is currently working on design (visual preasentation) and webmaster 
+tasks. What you see now is by far not the final result.He regularly merges the 
+`design` branch with `master` to develop as close as possible to the community 
+work while breaking things to change things. Feel free to send in [suggestions 
+and issues](https://github.com/learnlatex/learnlatex.github.io/issues).
