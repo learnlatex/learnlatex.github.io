@@ -1,17 +1,13 @@
 <footer class="website-footer">
   
-  <div class="wrapper">
-    <div class="website-footer__flex">
-
-      {% if site.github.private != true and site.github.license %}
-        <a href="{{ "/" | absolute_url }}about">This site</a> is under construction <a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Git Source</a>.
-      {% endif %}
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-
+  <div class="website-footer-copyright">
+    <div class="wrapper">
+      <span class="copyright">
+        {% if site.github.private != true and site.github.license %}
+          <a href="{{ "/" | absolute_url }}about">This site</a> is under construction <a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Git Source</a>.
+        {% endif %}
+      </span>
     </div>
   </div>
-
 
 </footer>

@@ -47,11 +47,10 @@
 </script>
   </head>
   <body>
-    <div class="wrapper">
 
       <div class="container-lg px-3 my-5 markdown-body">
 
-        <!-- Start Language Selection -->
+        <!-- Start language selection -->
         <div style="float:right;">
           <select id = "myList" onchange="switchlang(this);">
             {% assign lang = "en" %}
@@ -66,11 +65,11 @@
             {%- endfor -%}
           </select>
         </div>
-        <!-- End Language Selection -->
+        <!-- End language selection -->
 
-        <!-- Start Website Header -->
+        <!-- Start website header -->
         {% include website-header.html %}
-        <!-- End Website Header -->
+        <!-- End website header -->
 
         <!-- Start title -->
         {% if site.title and site.title != page.title %}
@@ -84,12 +83,16 @@
         {% endif %}
         <!-- End title -->
         
+        <!-- Start main content -->
         <main>
-        {{ content }}
+          <div class="wrapper">
+          {{ content }}
+          </div>
         </main>
-
+        <!-- End main content -->
+        
+        <!-- Start website footer -->
         {% include website-footer.html %}
-
-    </div>
+        <!-- End website footer -->
   </body>
 </html>
