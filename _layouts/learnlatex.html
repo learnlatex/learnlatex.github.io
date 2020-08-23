@@ -77,15 +77,17 @@
     <!-- End website header -->
 
     <!-- Start title -->
-    {% if site.title and site.title != page.title %}
-      <h1>
-        {% if lang =="en" %}
-          <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
-        {%- else -%}
-          <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }}</a>
-        {% endif %}
-      </h1>
-    {% endif %}
+    <div class="wrapper">
+      {% if site.title and site.title != page.title %}
+        <span class="breadcrumb">
+          {% if lang =="en" %}
+            <a href="{{ "/" | absolute_url }}">Home</a>
+          {%- else -%}
+          <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }} ({{ lang }})</a>
+          {% endif %}
+        </span>
+      {% endif %}
+    </div>
     <!-- End title -->
 
     <!-- Start main content -->
