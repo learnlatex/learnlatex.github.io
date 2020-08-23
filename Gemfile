@@ -10,10 +10,15 @@ source "https://rubygems.org"
 # Happy Jekylling!
 #gem 'jekyll'
 
+# THEME
+# This is the default theme for new Jekyll sites. 
+# You may change this to anything you like.
+gem "minima"
+
 # GITHUB PAGES
 # remove the "gem "jekyll"" above and uncomment the line below.
 # To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+gem 'github-pages', group: :jekyll_plugins
 
 # PLUGINS
 # GitHub Pages uses the following dependencies and versions:
@@ -22,10 +27,14 @@ group :jekyll_plugins do
 
 # Feed
 # https://rubygems.org/gems/jekyll-feed
-  gem "jekyll-feed"
+  gem 'jekyll-feed'
 
 # Sitemap
 # https://github.com/jekyll/jekyll-sitemap
-  gem "jekyll-sitemap"
+  gem 'jekyll-sitemap'
+
+# SASS support
+# https://rubygems.org/gems/sass
+  gem 'sass'
 
 end
