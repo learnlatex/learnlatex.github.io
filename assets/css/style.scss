@@ -5,21 +5,21 @@
 /*----------------------------------------------------------------------------*/
 /*  #VARIABLES: COLORS                                                        */
 /*----------------------------------------------------------------------------*/
-
 :root {
   --color_white-0: rgba(255, 255, 255, 1);
   --color_black-0: rgba(0, 0, 0, 1);        /* ci black */
-  --color_black-1: rgba(34, 34, 34, 1);
+  --color_black-1: rgba(34, 34, 34, 1);     /* typo black */
+  --color_black-2: rgba(68, 68, 68, 1);     /* typo black */
   --color_blue-0: rgba(0, 73, 128, 1);      /* ci blue */
   --color_blue-1: rgba(37, 3, 82, 1);
   --color_blue-2: rgba(44, 59, 99, 1);
   --color_blue-3: rgba(2, 119, 158, 1); 
   --color_blue-4: rgba(72, 120, 168, 1);
+  --color_blue-5: rgba(31, 87, 164, 1);     /* typo blue */
   --color_grey-0: rgba(242, 242, 242, 1);
   --color_grey-1: rgba(227, 227, 229, 1);
   --color_grey-2: rgba(204, 204, 204, 1);
   --color_grey-3: rgba(88, 88, 88, 1);
-  --color_grey-4: rgba(68, 68, 68, 1);
   --color_grey-5: rgba(168, 168, 168, 1);
   --color_grey-6: rgba(234, 234, 234, 1);
   --color_grey-7: rgba(237, 237, 237, 1);   /* ci grey */
@@ -31,10 +31,44 @@
 
 
 /*----------------------------------------------------------------------------*/
+/*  #VARIABLES: FONTS                                                         */
+/*----------------------------------------------------------------------------*/
+:root {
+  --font_default-regular: "roboto_regular";
+}
+@font-face {
+  font-family: 'roboto_regular';
+  font-display: fallback;
+  src: url('/assets/fonts/roboto_regular.woff2') format('woff2');
+}
+
+:root {
+  --font_default-light: "roboto_light";
+}
+@font-face {
+  font-family: 'roboto_light';
+  font-display: fallback;
+  src: url('/assets/fonts/roboto_light.woff2') format('woff2');
+}
+
+:root {
+  --font_default-light-italic: "roboto_light_italic";
+}
+@font-face {
+  font-family: 'roboto_light_italic';
+  font-display: fallback;
+  src: url('/assets/fonts/roboto_light_italic.woff2') format('woff2');
+}
+
+
+
+
+/*----------------------------------------------------------------------------*/
 /*  #DEFAULTS                                                                 */
 /*----------------------------------------------------------------------------*/
 html {
   color: var(--color_black-0);
+  font-family: var(--font_default-light);
 }
 
 
@@ -108,46 +142,51 @@ h6,
 /*  #TEXT-LEVEL                                                               */
 /*----------------------------------------------------------------------------*/
 p {
-    color: var(--color_black-1);
-    font-family: sans-serif;
-    font-size: 1rem;
-    margin: 0 0 .8rem;
+  color: var(--color_black-1);
+  font-family: var(--font_default-light);
+  font-size: 1rem;
+  margin: 0 0 .8rem;
 }
 
 p b,
 p strong {
-    color: var(--color_grey-4);
-    font-weight: normal;
+  font-family: var(--font_default-regular);
+  color: var(--color_black-2);
+  font-weight: normal;
 }
 
 p i,
 p em {
-    font-family: sans-serif;
-    font-style: italic;
+  font-family: var(--font_default-light-italic);
+  font-style: italic;
 }
 
 p small {
-    font-size: .8rem;
+  font-size: .8rem;
 }
 
 abbr {
-    border-bottom: 1px dotted;
-    cursor: help;
-    text-decoration: none;
+  border-bottom: 1px dotted;
+  cursor: help;
+  text-decoration: none;
 }
 
 main a:link,
-main a:visited {
-    color: var(--color_blue-1);
-    text-decoration: none;
-    border: none;
-    overflow-wrap: break-word;
+main a:visited,
+footer a:link,
+footer a:visited {
+  color: var(--color_blue-0);
+  text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 main a:hover,
 main a:active,
-main a:focus {
-    text-decoration: underline;
+main a:focus,
+footer a:hover,
+footer a:active,
+footer a:focus {
+  text-decoration: underline;
 }
 
 
@@ -158,18 +197,19 @@ main a:focus {
 /*  #HEADER                                                                   */
 /*----------------------------------------------------------------------------*/
 .website-header {
-    background: var(--color_blue-0);
-    padding: 1.1rem 0 1rem;
+  background: var(--color_blue-0);
+  padding: 1.1rem 0 1rem;
 }
 
+.website-header a,
 .website-header--logo:link,
 .website-header--logo:visited, 
 .website-header--logo:hover {
-    border: none;
-    color: var(--color_black-0);
-    display: block;
-    line-height: 0;
-    text-decoration: none;
+  border: none;
+  color: var(--color_white-0);
+  display: block;
+  line-height: 0;
+  text-decoration: none;
 }
 
 
@@ -241,8 +281,7 @@ table td code {
   padding: .9rem 0 .8rem;
 }
 
-.website-footer-copyright .copyright,
-.website-footer-copyright a {
+.website-footer-copyright .copyright {
   color: var(--color_black-0);
   text-decoration: none;
 }
