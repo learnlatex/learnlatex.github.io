@@ -16,7 +16,15 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 
     <link rel="canonical" href="https://www.learnlatex.org/">
-    
+
+    <!-- Start script to run LaTeX -->
+    <script src="{{ "/assets/scripts/runlatex.js" | relative_url}}"></script>
+    <!-- End script to run LaTeX -->
+
+    <!-- Start adding anchors to headings 1/2 --> 
+    <script src="{{ "/assets/scripts/anchor.min.js" | relative_url }}"></script>
+    <!-- End adding anchors to headings 1/2 --> 
+
     {% if page.path contains "-" or page.path contains "help" %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
     <style type="text/css" media="screen">
@@ -30,7 +38,6 @@
 	  margin-top:16px;
       }
     </style>
-    <script src="{{ "/assets/scripts/runlatex.js" | relative_url}}"></script>
     <script src="includes/buttons.js"></script>
     {% endif %}
     <script>
@@ -48,51 +55,53 @@
   </head>
   <body>
 
-      <div class="container-lg px-3 my-5 markdown-body">
-
-        <!-- Start language selection -->
-        <div style="float:right;">
-          <select id = "myList" onchange="switchlang(this);">
-            {% assign lang = "en" %}
-            {%- for l in site.langs -%}
-              {% assign lx = "/" | prepend: l %}
-              {%- if page.path contains lx -%}
-                {% assign lang = l %}
-                <option selected value = "{{l}}">{{l}}</option>
-                {%- else -%}
-                <option value = "{{l}}">{{l}}</option>
-              {%- endif -%}
-            {%- endfor -%}
-          </select>
-        </div>
-        <!-- End language selection -->
-
-        <!-- Start website header -->
-        {% include website-header.html %}
-        <!-- End website header -->
-
-        <!-- Start title -->
-        {% if site.title and site.title != page.title %}
-          <h1>
-            {% if lang =="en" %}
-              <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+    <!-- Start language selection -->
+    <div style="float:right;">
+      <select id = "myList" onchange="switchlang(this);">
+        {% assign lang = "en" %}
+        {%- for l in site.langs -%}
+          {% assign lx = "/" | prepend: l %}
+          {%- if page.path contains lx -%}
+            {% assign lang = l %}
+            <option selected value = "{{l}}">{{l}}</option>
             {%- else -%}
-              <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }}</a>
-            {% endif %}
-          </h1>
+            <option value = "{{l}}">{{l}}</option>
+          {%- endif -%}
+        {%- endfor -%}
+      </select>
+    </div>
+    <!-- End language selection -->
+
+    <!-- Start website header -->
+    {% include website-header.html %}
+    <!-- End website header -->
+
+    <!-- Start title -->
+    {% if site.title and site.title != page.title %}
+      <h1>
+        {% if lang =="en" %}
+          <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+        {%- else -%}
+          <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }}</a>
         {% endif %}
-        <!-- End title -->
-        
-        <!-- Start main content -->
-        <main>
-          <div class="wrapper">
-          {{ content }}
-          </div>
-        </main>
-        <!-- End main content -->
-        
-        <!-- Start website footer -->
-        {% include website-footer.html %}
-        <!-- End website footer -->
+      </h1>
+    {% endif %}
+    <!-- End title -->
+
+    <!-- Start main content -->
+    <main>
+      <div class="wrapper">
+      {{ content }}
+      </div>
+    </main>
+    <!-- End main content -->
+
+    <!-- Start website footer -->
+    {% include website-footer.html %}
+    <!-- End website footer -->
+
+    <!-- Start adding anchors to headings 2/2 --> 
+    <script>anchors.add();</script>
+    <!-- End adding anchors to headings 2/2 -->
   </body>
 </html>
