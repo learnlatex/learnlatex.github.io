@@ -1,7 +1,7 @@
-exclude: ['README.md']
-
 title: learnlatex.org
 description: Learn LaTeX online
+
+repository: learnlatex/learnlatex.github.io
 
 plugins:
   - jekyll-sitemap
@@ -26,12 +26,12 @@ langs:
    - es
    - zh-Hans
 
-# Exclude from processing.
-
+# Exclude from processing (in alphabetical order)
 exclude:
   - .ruby-version
   - example.json
   - example.yaml
   - Gemfile
   - Gemfile.lock
+  - README.md
   - vendor
