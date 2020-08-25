@@ -33,8 +33,4 @@ group :jekyll_plugins do
 # https://github.com/jekyll/jekyll-sitemap
   gem 'jekyll-sitemap'
 
-# SASS support
-# https://rubygems.org/gems/sass
-  gem 'sass'
-
 end
