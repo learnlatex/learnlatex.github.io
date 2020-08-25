@@ -24,12 +24,12 @@ curriculum that delivers for everyone.
 
 ## Design
 
-@jonasjacek is currently working on design (visual preasentation) and webmaster
-tasks. What you see now is by far not the final result. He regularly merges the
-`design` branch with `master` to develop as close as possible to the community 
-work while breaking things to change things. Feel free to send in [suggestions 
-and issues](https://github.com/learnlatex/learnlatex.github.io/issues).
+[@jonasjacek](https://github.com/jonasjacek) is currently working on design (visual preasentation) and webmaster tasks.
 
-The design branch is currently [published on Netlify](https://learnlatex.netlify.app/).
+Jonas regularly merges the `master` branch into the `design` branch to develop as close as possible to the content community work.
+
+The `design` branch is currently [published on Netlify](https://learnlatex.netlify.app/).
+
+What you see there is not the final result. It is a work status that can change radically at any time. Feel free to send in [suggestions and issues](https://github.com/learnlatex/learnlatex.github.io/issues).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ee8c4bea-0305-46b2-bcee-bdb923e3a0cf/deploy-status)](https://app.netlify.com/sites/learnlatex/deploys)
