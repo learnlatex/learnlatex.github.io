@@ -200,7 +200,7 @@ chúng sử dụng những cách khác hẳn nhau để tạo ra output này. Do
 hợp nhất cho mình.
 
 Trong quy trình của BibTeX, kiểu bibliography được xác định bởi một tệp `.bst`
-và có tên được định nghĩa bời lệnh `\bibliographystyle`. `biblatex` không sử
+(các tệp này được chọn bằng lệnh `\bibliographystyle`). `biblatex` không sử
 dụng các tệp `.bst`; nó sử dụng một cách khác. Nếu bạn đang dùng một template có
 bao gồm một tệp `.bst`, hay được cung cấp một tệp `.bst` cho văn bản của mình,
 bạn không thể dùng `biblatex` mà buộc phải dùng quy trình trực tiếp của BibTeX.
