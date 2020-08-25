@@ -30,5 +30,6 @@ tasks. What you see now is by far not the final result. He regularly merges the
 work while breaking things to change things. Feel free to send in [suggestions 
 and issues](https://github.com/learnlatex/learnlatex.github.io/issues).
 
-The design branch is currently [published on Netlify](https://infallible-kepler-83ae99.netlify.app/).
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ee8c4bea-0305-46b2-bcee-bdb923e3a0cf/deploy-status)](https://app.netlify.com/sites/infallible-kepler-83ae99/deploys)
+The design branch is currently [published on Netlify](https://learnlatex.netlify.app/).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee8c4bea-0305-46b2-bcee-bdb923e3a0cf/deploy-status)](https://app.netlify.com/sites/learnlatex/deploys)
