@@ -43,6 +43,7 @@ a bit different
 
 ```latex
 \documentclass{letter}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{letter}{Some Address\\Some Street\\Some City}
@@ -103,6 +104,7 @@ bundle and `memoir` affects the appearance of the document.
 
 ```latex
 \documentclass{article} % Change the class here
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

@@ -1,5 +1,6 @@
 ---
 title: Translating learnlatex.org
+permalink: /TRANSLATIONS
 ---
 
 ## Translating learnlatex.org
@@ -77,7 +78,7 @@ and lesson-03 with the first document have forward references to the
 
 Apart from these forward references the examples should stay as close
 to the current examples as possible even if they are set up to run
-with a different engine (which can be accomplished by adding a `! TEX`
+with a different engine (which can be accomplished by adding a `!TEX`
 comment to the example.)
 
 ## Language specific lessons

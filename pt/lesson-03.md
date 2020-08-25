@@ -15,6 +15,7 @@ chance de ver como as diferentes opções funcionam.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Olá mundo!
@@ -77,6 +78,7 @@ Podemos também adicionar comentários em um arquivo LaTeX prefixando-o com um
 `%`; vamos usar isso para mostrar a estrutura do documento:
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
+\usepackage[T1]{fontenc}
 % Um comentário no preâmbulo
 \begin{document}
 % Isto é um comentário

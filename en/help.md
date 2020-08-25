@@ -1,5 +1,6 @@
 ---
 title: "Using the learnlatex.org site"
+permalink: /en/help
 ---
 
 ## Navigating the site
@@ -22,6 +23,7 @@ the page like this:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Example text.
 \end{document}

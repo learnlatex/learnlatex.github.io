@@ -15,6 +15,7 @@ have set up LaTeX locally; this is a good chance to see how the different
 options work.
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Hey world!
@@ -66,6 +67,8 @@ Here the body has two paragraphs (in LaTeX you separate paragraphs
 with one or more blank lines).
 Before `\begin{document}` is the *document preamble*,
 which has code to set up the document layout.
+The `\usepackage` command is described in a [later lesson](lesson-06)
+it is used in most examples on this site to set up the font encoding.
 
 LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
 called *environments*.
@@ -78,6 +81,7 @@ We can add comments to a LaTeX file by starting them with `%`; let's use
 that to show the structure:
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
+\usepackage[T1]{fontenc}
 % A comment in the preamble
 \begin{document}
 % This is a comment

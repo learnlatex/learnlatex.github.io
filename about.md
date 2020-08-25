@@ -1,5 +1,6 @@
 ---
 title: About
+permalink: /about
 ---
 
 The learnlatex.org site is aimed at providing a basic introduction to LaTeX. To

@@ -15,6 +15,7 @@ respectivamente:
 
 ```latex
 \documentclass{book}
+\usepackage[T1]{fontenc}
 \usepackage[brazilian]{babel}
 \begin{document}
 \chapter{Viu? :)}

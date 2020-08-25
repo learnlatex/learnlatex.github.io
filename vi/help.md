@@ -1,5 +1,6 @@
 ---
 title: "Sử dụng trang learnlatex.org"
+permalink: /vi/help
 ---
 
 ## Định hướng trong trang
@@ -17,6 +18,7 @@ Mỗi ví dụ bao gồm một tệp LaTeX nhỏ được hiển thị như sau:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Example text.
 \end{document}

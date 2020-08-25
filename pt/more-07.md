@@ -68,6 +68,7 @@ a figura colocada no PDF exatamente onde ela está no código fonte.  O pacote
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % texto de enchimento
 \usepackage{float}
@@ -96,11 +97,12 @@ convenção.
 
 Você pode querer outros tipos de ambientes flutuantes (_floats_);  cada tipo é
 inserido independentemente.  Você pode fazer isso usando o pacote
-[`trivfloat`](https://ctan.org/pkg/trivloat).  Ele fornece um único comando,
-`\trivloat`, para fazer novos tipos de _floats_.
+[`trivfloat`](https://ctan.org/pkg/trivfloat).  Ele fornece um único comando,
+`\trivfloat`, para fazer novos tipos de _floats_.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % texto de enchimento
 \usepackage{trivfloat}

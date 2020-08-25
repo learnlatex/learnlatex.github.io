@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel=icon href=/learnlatex-favicon.png>
+    {% if site.title and site.title == page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
+    <title>{{ page.title }} | {{site.title}}</title>
+    {% endif %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% if page.path contains "-" or page.path contains "help" %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
@@ -31,7 +36,7 @@
   }
       {% else %}
   function switchlang(e) {
-      window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l])\//,'/'+e.value+'/').replace(/\/language-.*/,'');
+      window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l](-[a-zA-Z]+)?)\//,'/'+e.value+'/').replace(/\/language-.*/,'');
   }
       {% endif %}
       

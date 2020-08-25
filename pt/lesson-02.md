@@ -80,6 +80,6 @@ editor: nós recomendamos começar com o TeXworks ou TeX Shop (ver acima), e
 depois procure outros editores quando souber como _você_ trabalha melhor com
 o LaTeX.
 
-Você poderá [executar todos os outros exercícios no seu navegador](pt/help),
+Você poderá [executar todos os outros exercícios no seu navegador](help.md),
 mas nós queremos ajudar você a trabalhar com documentos reais, então agora é
 uma ótima oportunidade para se preparar.

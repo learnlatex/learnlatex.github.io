@@ -20,6 +20,7 @@ contrário.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{mhchem}
 \begin{document}
 \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
@@ -30,6 +31,7 @@ contrário.
 ### [`forest`](https://texdoc.net/pkg/forest)
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{forest}
 \begin{document}
 \begin{forest}
@@ -51,6 +53,7 @@ contrário.
 ### [`xskak`](https://texdoc.net/pkg/xskak)
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{xskak}
 \begin{document}
 \newchessgame
@@ -70,6 +73,7 @@ Position after 2.\,\xskakget{lan}
 
 ```latex
 \documentclass{memoir}
+\usepackage[T1]{fontenc}
 \begin{document}
 \settowidth{\versewidth}{Nay, nay, I leave thee not,
                                        thou goest too}
@@ -106,6 +110,7 @@ Today will I depart. \\*
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{tikz}
 \usetikzlibrary {perspective}
 
@@ -144,6 +149,7 @@ x
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{pgfplots}
 \pgfplotsset{width=7cm,compat=1.17}
 
@@ -174,6 +180,7 @@ x
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{musixtex}
 
 \begin{document}

@@ -9,6 +9,7 @@ thiết lập các thông tin văn bản và một câu lệnh để sử dụng
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 \author{A.~N.~Other \and D.~Nobacon} % Tác giả
 \title{Some things I did}            % Tiêu đề văn bản
@@ -37,6 +38,7 @@ sau để hiểu hơn về kiểu danh sách này).
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 \begin{description}
 \item[Dog:] member of the genus Canis, which forms part of the wolf-like canids,

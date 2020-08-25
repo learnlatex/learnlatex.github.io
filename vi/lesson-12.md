@@ -119,6 +119,7 @@ Cấu trúc cơ bản của mã LaTeX được viết trong ví dụ sau:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{natbib}
 
 \begin{document}
@@ -161,6 +162,7 @@ tên câu lệnh.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[style=authoryear]{biblatex}
 \addbibresource{learnlatex.bib} % file of reference info
 

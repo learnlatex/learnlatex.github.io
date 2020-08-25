@@ -111,6 +111,7 @@ A estrutura básica do nosso documento é mostrada no exemplo:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{natbib}
 
 \begin{document}
@@ -152,6 +153,7 @@ no corpo do documento.  Há alguns comandos novos para isso:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[style=authoryear]{biblatex}
 \addbibresource{learnlatex.bib} % file of reference info
 
