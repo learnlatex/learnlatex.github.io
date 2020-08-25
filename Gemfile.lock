@@ -256,7 +256,6 @@ DEPENDENCIES
   jekyll-feed
   jekyll-sitemap
   minima
-  sass
 
 BUNDLED WITH
    2.1.4
