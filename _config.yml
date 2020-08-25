@@ -26,3 +26,12 @@ langs:
    - es
    - zh-Hans
 
+# Exclude from processing.
+
+exclude:
+  - .ruby-version
+  - example.json
+  - example.yaml
+  - Gemfile
+  - Gemfile.lock
+  - vendor
