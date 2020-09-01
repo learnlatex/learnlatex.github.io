@@ -83,7 +83,7 @@
           {% if lang =="en" %}
             <a href="{{ "/" | absolute_url }}">Home</a>
           {%- else -%}
-          <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }} ({{ lang }})</a>
+            <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }} ({{ lang }})</a>
           {% endif %}
         </span>
       {% endif %}
