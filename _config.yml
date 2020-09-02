@@ -16,15 +16,66 @@ sass:
 latex: "<span>L<span style='font-variant: small-caps; vertical-align:.35ex;margin-left:-.15em;margin-right:-.05em;'>a</span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
 tex: "<span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
 
+
+
+
+
+# LANGUAGES 
+# Settings for multilingual set up (in alphabetical order)
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "en"
+      layout: learnlatex
+  - 
+    scope:
+      path: "es"
+    values:
+      lang: "es" 
+      layout: "learnlatex"
+  -
+    scope:
+      path: "fr"
+    values:
+      lang: "fr"
+      layout: "learnlatex"
+  -
+    scope:
+      path: "de"
+    values:
+      lang: "de"
+      layout: "learnlatex"
+  -
+    scope:
+      path: "pt"
+    values:
+      lang: "pt"
+      layout: "learnlatex"
+  -
+    scope:
+      path: "vi"
+    values:
+      lang: "vi"
+      layout: "learnlatex"
+
+# Languages selectable in front-end language selection drop down
 langs:
    - en
+   - es
    - fr
    - pt
    - vi
-   - es
 
 
-# Exclude from processing (in alphabetical order)
+
+
+
+# EXCLUSIONS
+# Exclude from Jekyll processing (in alphabetical order)
+# https://jekyllrb.com/docs/configuration/options/
 exclude:
   - .ruby-version
   - example.json

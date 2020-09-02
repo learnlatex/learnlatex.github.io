@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="referrer" content="no-referrer">
     {% if site.title and site.title == page.title %}
       <title>{{ page.title }}</title>
-    {% else %}
+      {% else %}
       <title>{{ page.title }} | {{site.title}}</title>
     {% endif %}
     
