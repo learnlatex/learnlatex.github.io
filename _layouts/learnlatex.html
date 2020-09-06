@@ -17,13 +17,13 @@
 
     <link rel="canonical" href="https://www.learnlatex.org/">
 
-    <!-- Start script to run LaTeX -->
+    <!-- script to run latex start -->
     <script src="{{ "/assets/scripts/runlatex.js" | relative_url}}"></script>
-    <!-- End script to run LaTeX -->
+    <!-- script to run latex end -->
 
-    <!-- Start adding anchors to headings 1/2 --> 
+    <!-- adding anchors to headings start 1/2 --> 
     <script src="{{ "/assets/scripts/anchor.min.js" | relative_url }}"></script>
-    <!-- End adding anchors to headings 1/2 --> 
+    <!-- adding anchors to headings end 1/2 --> 
 
     {% if page.path contains "-" or page.path contains "help" %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
@@ -40,43 +40,27 @@
     </style>
     <script src="includes/buttons.js"></script>
     {% endif %}
+
     <script>
- {% if site.title and site.title == page.title %}
-  function switchlang(e) {
-      window.location.href="{{ "/" | absolute_url }}" + e.value;
-  }
+      {% if site.title and site.title == page.title %}
+        function switchlang(e) {
+          window.location.href="{{ "/" | absolute_url }}" + e.value;
+        }
       {% else %}
-  function switchlang(e) {
-      window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l](-[a-zA-Z]+)?)\//,'/'+e.value+'/').replace(/\/language-.*/,'');
-  }
+        function switchlang(e) {
+          window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l](-[a-zA-Z]+)?)\//,'/'+e.value+'/').replace(/\/language-.*/,'');
+        }
       {% endif %}
-      
-</script>
+    </script>
+
   </head>
   <body>
 
-    <!-- Start language selection -->
-    <div style="float:right;">
-      <select id = "myList" onchange="switchlang(this);">
-        {% assign lang = "en" %}
-        {%- for l in site.langs -%}
-          {% assign lx = "/" | prepend: l %}
-          {%- if page.path contains lx -%}
-            {% assign lang = l %}
-            <option selected value = "{{l}}">{{l}}</option>
-            {%- else -%}
-            <option value = "{{l}}">{{l}}</option>
-          {%- endif -%}
-        {%- endfor -%}
-      </select>
-    </div>
-    <!-- End language selection -->
-
-    <!-- Start website header -->
+    <!-- website header start -->
     {% include website-header.html %}
-    <!-- End website header -->
+    <!-- website header end -->
 
-    <!-- Start title -->
+    <!-- title start -->
     <div class="wrapper">
       {% if site.title and site.title != page.title %}
         <span class="breadcrumb">
@@ -88,22 +72,23 @@
         </span>
       {% endif %}
     </div>
-    <!-- End title -->
+    <!-- title end -->
 
-    <!-- Start main content -->
+    <!-- main content start -->
     <main>
       <div class="wrapper">
       {{ content }}
       </div>
     </main>
-    <!-- End main content -->
+    <!-- main content end -->
 
-    <!-- Start website footer -->
+    <!-- website footer start -->
     {% include website-footer.html %}
-    <!-- End website footer -->
+    <!-- website footer end -->
 
-    <!-- Start adding anchors to headings 2/2 --> 
+    <!-- adding anchors to headings start 2/2 --> 
     <script>anchors.add();</script>
-    <!-- End adding anchors to headings 2/2 -->
+    <!-- adding anchors to headings end 2/2 -->
+
   </body>
 </html>
