@@ -1,11 +1,14 @@
-<script>
-  {% if site.title and site.title == page.title %}
-    function switchlang(e) {
-      window.location.href="{{ "/" | absolute_url }}" + e.value;
-    }
-  {% else %}
-    function switchlang(e) {
-      window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l](-[a-zA-Z]+)?)\//,'/'+e.value+'/').replace(/\/language-.*/,'');
-    }
-  {% endif %}
-</script>
+<div style="float:right;">
+  <select id = "myList" onchange="switchlang(this);">
+    {% assign lang = "en" %}
+    {%- for l in site.langs -%}
+      {% assign lx = "/" | prepend: l %}
+      {%- if page.path contains lx -%}
+        {% assign lang = l %}
+        <option selected value = "{{l}}">{{l}}</option>
+        {%- else -%}
+        <option value = "{{l}}">{{l}}</option>
+      {%- endif -%}
+    {%- endfor -%}
+  </select>
+</div>
