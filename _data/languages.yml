@@ -1,0 +1,16 @@
+# LANGUAGES
+# Translates the languages
+# (in alphabetical order)
+
+de:
+  label: Deutsch
+en:
+  label: English
+es:
+  label: Español
+fr:
+  label: Français
+pt:
+  label: Português
+vi:
+  label: Tiếng Việt

@@ -1,7 +1,9 @@
 # URI MAPPING
-# Maps URIs to their corresponding equivalent in other languages
+# Maps URIs to their corresponding equivalent in other languages 
+# (in alphabetical order)
 
 -
+  de: de/index.md
   en: index.md
   es: es/index.md
   fr: fr/index.md
