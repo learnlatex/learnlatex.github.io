@@ -1,13 +1,29 @@
 <footer class="website-footer">
+
+  <!-- change language start -->
+  <nav
+    class="website-footer-language-switch">
+    <div 
+      class="wrapper">
+      <p>{{ site.data.translations['change-language'][page.lang] }}:</p>
+      {% include change-language.html %}
+    </div>
+  </nav>
+  <!-- change language stop -->
   
-  <div class="website-footer-copyright">
-    <div class="wrapper">
-      <span class="copyright">
+  <!-- copyright start -->
+  <div 
+    class="website-footer-copyright">
+    <div 
+      class="wrapper">
+      <span 
+        class="copyright">
         {% if site.github.private != true and site.github.license %}
           <a href="{{ "/" | absolute_url }}about">This site</a> is under construction <a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Git Source</a>.
         {% endif %}
       </span>
     </div>
   </div>
+  <!-- copyright stop -->
 
 </footer>
