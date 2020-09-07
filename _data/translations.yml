@@ -1,3 +1,9 @@
+# TRANSLATIONS
+# Generic, site wide translations
+#
+# Usage:
+# {{ site.data.translations['ITEM'][page.lang] }}
+
 skip-link:
   de: "Zum Hauptinhalt springen"
   en: "Skip to main content"
