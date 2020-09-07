@@ -3,14 +3,9 @@
 #
 # Usage:
 # {{ site.data.translations['ITEM'][page.lang] }}
+#
+# (in alphabetical order)
 
-skip-link:
-  de: "Zum Hauptinhalt springen"
-  en: "Skip to main content"
-  es: "Saltar al contenido principal"
-  fr: "Passer au contenu principal"
-  pt: "Saltar para o conteúdo principal"
-  vi: "Chuyển đến nội dung chính"
 change-language:
   de: "Lesen Sie diese Seite in einer anderen Sprache"
   en: "Read this page in a different language"
@@ -18,3 +13,10 @@ change-language:
   fr: "Lisez cette page dans une autre langue"
   pt: "Leia esta página em um idioma diferente"
   vi: "Đọc trang này bằng một ngôn ngữ khác"
+skip-link:
+  de: "Zum Hauptinhalt springen"
+  en: "Skip to main content"
+  es: "Saltar al contenido principal"
+  fr: "Passer au contenu principal"
+  pt: "Saltar para o conteúdo principal"
+  vi: "Chuyển đến nội dung chính"
