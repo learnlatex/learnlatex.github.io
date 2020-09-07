@@ -62,12 +62,12 @@ defaults:
       layout: "learnlatex"
 
 # Languages selectable in front-end language selection drop down
-langs:
-   - en
-   - es
-   - fr
-   - pt
-   - vi
+languages:
+  - en
+  - es
+  - fr
+  - pt
+  - vi
 
 
 
