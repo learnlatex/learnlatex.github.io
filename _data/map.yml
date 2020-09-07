@@ -1,3 +1,6 @@
+# URI MAPPING
+# Maps URIs to their corresponding equivalent in other languages
+
 -
   en: index.md
   es: es/index.md
