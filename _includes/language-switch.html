@@ -12,12 +12,18 @@
         <option 
           selected
           value="{{language.language-code}}">
-            {{ language.label-international }} ({{language.label-english}})
+            {{ language.label-international }}
+            {% if language.language-code != "en" %}
+              ({{language.label-english}})
+            {% endif %}
         </option>
         {%- else -%}
         <option 
           value="{{language.language-code}}">
-            {{ language.label-international }} ({{language.label-english}})
+            {{ language.label-international }}
+            {% if language.language-code != "en" %}
+              ({{language.label-english}})
+            {% endif %}
         </option>
       {%- endif -%}
     {%- endfor -%}
