@@ -222,7 +222,9 @@ main a:focus {
   padding: .4rem;
 }
 .language-switch_icon {
-  margin: 0 .4rem 0 0;
+  height: 1rem;
+  margin: 0 .4rem -.2rem 0;
+  width: 1rem;
 }
 .language-switch_select {
   border-radius: .4rem;
