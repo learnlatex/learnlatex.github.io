@@ -3,15 +3,22 @@
 #
 # (in alphabetical order)
 
-de:
-  label: Deutsch
-en:
-  label: English
-es:
-  label: Español
-fr:
-  label: Français
-pt:
-  label: Português
-vi:
-  label: Tiếng Việt
+- language-code: en
+  label-international: English
+  label-english: English
+
+- language-code: es
+  label-international: Español
+  label-english: Spanish
+
+- language-code: fr
+  label-international: Français
+  label-english: French
+
+- language-code: pt
+  label-international: Português
+  label-english: Portuguese
+
+- language-code: vi
+  label-international: Tiếng Việt
+  label-english: Vietnamese

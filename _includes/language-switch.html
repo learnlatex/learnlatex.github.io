@@ -2,18 +2,23 @@
   <img 
     class="language-switch_icon"
     src="{{ "/assets/images/language-icon.svg" | relative_url }}" 
-    alt="Language icon"
-    height="20"
-    width="17.2">
+    alt="Language icon">
   <select class="language-switch_select" id="myList" onchange="switchlang(this);">
     {% assign lang="en" %}
-    {%- for l in site.languages -%}
-      {% assign lx="/" | prepend: l %}
+    {%- for language in site.data.languages -%}
+      {% assign lx="/" | prepend: language.language-code %}
       {%- if page.path contains lx -%}
-        {% assign lang = l %}
-        <option selected value="{{l}}">{{l}}</option>
+        {% assign lang = language.language-code %}
+        <option 
+          selected
+          value="{{language.language-code}}">
+            {{ language.label-international }} ({{language.label-english}})
+        </option>
         {%- else -%}
-        <option value="{{l}}">{{l}}</option>
+        <option 
+          value="{{language.language-code}}">
+            {{ language.label-international }} ({{language.label-english}})
+        </option>
       {%- endif -%}
     {%- endfor -%}
   </select>

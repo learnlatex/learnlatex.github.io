@@ -29,38 +29,45 @@ defaults:
       path: ""
     values:
       lang: "en"
-      layout: learnlatex
+      label: "English"
+      layout: "learnlatex"
   - 
     scope:
       path: "es"
     values:
-      lang: "es" 
+      lang: "es"
+      label: "Español"
       layout: "learnlatex"
   -
     scope:
       path: "fr"
     values:
       lang: "fr"
+      label: "Français"
       layout: "learnlatex"
   -
     scope:
       path: "de"
     values:
       lang: "de"
+      label: "German"
       layout: "learnlatex"
   -
     scope:
       path: "pt"
     values:
       lang: "pt"
+      label: "Português"
       layout: "learnlatex"
   -
     scope:
       path: "vi"
     values:
       lang: "vi"
+      label: "Tiếng Việt"
       layout: "learnlatex"
 
+# FIXME: May not be needed anymore, succeeded by _data/languages.yml
 # Languages selectable in front-end language selection drop down
 languages:
   - en
