@@ -4,23 +4,30 @@
     src="{{ "/assets/images/language-icon.svg" | relative_url }}" 
     alt="Language icon">
   <select class="language-switch_select" id="myList" onchange="switchlang(this);">
+    <!-- Assigns default language -->
     {% assign lang="en" %}
+    <!-- Loop over languages in _data/languages.yml -->
     {%- for language in site.data.languages -%}
+      <!-- Assigns language code to currently selected language -->
       {% assign lx="/" | prepend: language.language-code %}
+      <!-- Checks URL path for currently selected language to mark it as 'selected' -->
       {%- if page.path contains lx -%}
         {% assign lang = language.language-code %}
         <option 
           selected
           value="{{language.language-code}}">
             {{ language.label-international }}
+            <!-- Ensures the translation of English is not displayed -->
             {% if language.language-code != "en" %}
               ({{language.label-english}})
             {% endif %}
         </option>
+        <!-- Languages not found in URL path, will not be marked as 'selected' -->
         {%- else -%}
         <option 
           value="{{language.language-code}}">
             {{ language.label-international }}
+            <!-- Ensures the translation of English is not displayed -->
             {% if language.language-code != "en" %}
               ({{language.label-english}})
             {% endif %}
