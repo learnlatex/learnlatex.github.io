@@ -4,21 +4,21 @@
 # (in alphabetical order)
 
 - language-code: en
-  label-international: English
+  label-regional: English
   label-english: English
 
 - language-code: es
-  label-international: Español
+  label-regional: Español
   label-english: Spanish
 
 - language-code: fr
-  label-international: Français
+  label-regional: Français
   label-english: French
 
 - language-code: pt
-  label-international: Português
+  label-regional: Português
   label-english: Portuguese
 
 - language-code: vi
-  label-international: Tiếng Việt
+  label-regional: Tiếng Việt
   label-english: Vietnamese

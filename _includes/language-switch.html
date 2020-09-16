@@ -16,7 +16,7 @@
         <option 
           selected
           value="{{language.language-code}}">
-            {{ language.label-international }}
+            {{ language.label-regional }}
             <!-- Ensures the translation of English is not displayed -->
             {% if language.language-code != "en" %}
               ({{language.label-english}})
@@ -26,7 +26,7 @@
         {%- else -%}
         <option 
           value="{{language.language-code}}">
-            {{ language.label-international }}
+            {{ language.label-regional }}
             <!-- Ensures the translation of English is not displayed -->
             {% if language.language-code != "en" %}
               ({{language.label-english}})
