@@ -1,7 +1,7 @@
 # LANGUAGES
 # Translates the languages
 #
-# (in alphabetical order)
+# (in preferred order)
 
 - language-code: en
   label-regional: English
@@ -19,6 +19,18 @@
   label-regional: Português
   label-english: Portuguese
 
+- language-code: de
+  label-regional: Deutsch
+  label-english: German
+
 - language-code: vi
   label-regional: Tiếng Việt
   label-english: Vietnamese
+
+- language-code: ja
+  label-regional: 日本語
+  label-english: Japanese
+
+- language-code: zh
+  label-regional: 中文
+  label-english: Chinese

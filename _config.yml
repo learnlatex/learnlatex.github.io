@@ -66,6 +66,13 @@ defaults:
       lang: "vi"
       label: "Tiếng Việt"
       layout: "learnlatex"
+  -
+    scope:
+      path: "ja"
+    values:
+      lang: "ja"
+      label: "日本人"
+      layout: "learnlatex"
 
 # FIXME: May not be needed anymore, succeeded by _data/languages.yml
 # Languages selectable in front-end language selection drop down
