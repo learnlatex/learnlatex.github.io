@@ -62,6 +62,18 @@ layout: compress
   </head>
   <body>
 
+    <!-- skip link start -->
+    <a 
+      href="#main" 
+      class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <!-- skip link end -->
+
+    <!-- language navigation start -->
+    {% include alternative-languages.html %}
+    <!-- language navigation stop -->
+
     <!-- website header start -->
     {% include website-header.html %}
     <!-- website header end -->
@@ -81,7 +93,8 @@ layout: compress
     <!-- title end -->
 
     <!-- main content start -->
-    <main>
+    <main
+      id="main">
       <div class="wrapper">
       {{ content }}
       </div>
@@ -91,6 +104,10 @@ layout: compress
     <!-- website footer start -->
     {% include website-footer.html %}
     <!-- website footer end -->
+
+    <!-- language navigation start -->
+    {% include alternative-languages.html %}
+    <!-- language navigation stop -->
 
     <!-- adding anchors to headings start 2/2 --> 
     <script>anchors.add();</script>
