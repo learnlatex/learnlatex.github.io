@@ -193,7 +193,8 @@ main a:focus {
 /*----------------------------------------------------------------------------*/
 .website-header {
   background: var(--color_blue-0);
-  padding: 1.4rem 0 1rem;
+  margin: .04rem 0 0 0;
+  padding: 1.6rem 0 1.1rem;
 }
 
 .website-header a,
@@ -307,6 +308,7 @@ table td code {
 /*  #FOOTER                                                                   */
 /*----------------------------------------------------------------------------*/
 .website-footer {
+  border-bottom: .04rem solid var(--color_white-0);
   margin: 2.5rem 0 0;
   clear: both;
 }
