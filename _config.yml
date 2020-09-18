@@ -71,7 +71,7 @@ defaults:
       path: "ja"
     values:
       lang: "ja"
-      label: "日本人"
+      label: "日本語"
       layout: "learnlatex"
 
 # FIXME: May not be needed anymore, succeeded by _data/languages.yml
