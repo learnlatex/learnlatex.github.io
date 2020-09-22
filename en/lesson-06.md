@@ -1,5 +1,5 @@
 ---
-title: "Extending LaTeX using packages"
+title: "Extending LaTeX using packages and definitions"
 ---
 
 After having declared a class, in the preamble you can modify functionality in
@@ -85,12 +85,63 @@ Text of the second section.
 
 You should see the effect here compared to not loading `geometry`.
 
-## Adding commands
+## Adding new functionality
 
 One of LaTeX's strengths is that you can choose from thousands of packages,
 including ones for writing mathematical text, for hyperlinking, for
 sophisticated capabilities with color, etc. We will see some more common
 packages in later lessons.
+
+
+## Defining commands
+
+Sometimes you need a command specific to your document, either some
+functionality not found in the available packages or simply a command
+to enter a common expression that is used multiple times.
+
+The following example shows a command to produce keywords with a
+specific style applied.
+
+```
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\newcommand\kw[1]{\textbf{\itshape #1}}
+
+\begin{document}
+
+Something about \kw{apples} and \kw{oranges}.
+
+\end{document}
+```
+
+In the definition `#1` denotes the first argument that is supplied
+(`apples` or `oranges` in this example. You may have up to nine
+arguments, but often it is sufficient to have no arguments or just one.
+
+Defining commands does not just reduce the typing required to produce
+a document. It helps to separate out the styling information. If it is
+decided to use a different style for keywords, rather than having to
+edit the entire document, you simply need to use a different
+definition. Here we load the `xcolor` package to provide colors, and
+use blue in place of bold in the formatting.
+
+```
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+
+\newcommand\kw[1]{\textcolor{blue}{\itshape #1}}
+
+\begin{document}
+
+Something about \kw{apples} and \kw{oranges}.
+
+\end{document}
+```
+
+
 
 ## Exercises
 
