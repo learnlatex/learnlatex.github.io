@@ -135,5 +135,4 @@ argument command would be specified by `{mm}` rather than `[2]`. This
 is slightly more verbose but allows many more forms of commands to be
 defined. Here we just give this simple example where the first
 argument is optional, defaulting to blue (`O{blue}`) and the second
-argument is mandatory (`m`).  Unlike `\newcommand`, the optional
-argument does not have to be first, and there may be more than one.
+argument is mandatory (`m`).
