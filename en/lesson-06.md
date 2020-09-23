@@ -116,8 +116,9 @@ Something about \kw{apples} and \kw{oranges}.
 ```
 
 In the definition `#1` denotes the first argument that is supplied
-(`apples` or `oranges` in this example. You may have up to nine
-arguments, but often it is sufficient to have no arguments or just one.
+(`apples` or `oranges` in this example). You may have up to nine
+arguments, but it is usually best to have just one argument, or
+sometimes none at all.
 
 Defining commands does not just reduce the typing required to produce
 a document. It helps to separate out the styling information. If it is
@@ -141,7 +142,10 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-
+Beware that defining too many commands or defining commands with
+multiple arguments may make the document source harder  to understand
+as it is using an unfamilar syntax. The ability to define
+document-specific commands should be used with care.
 
 ## Exercises
 
@@ -155,3 +159,5 @@ list.
 
 Try loading the `lipsum` package and then add the command `\lipsum` to your
 document. Can you guess why this package is useful for making examples?
+
+Try altering the definition of `\kw` to achieve a different style.
