@@ -123,6 +123,17 @@ Something about \kw{apples} and \kw[red]{oranges}.
 \end{document}
 ```
 
-`\NewDocumentCommand`  allows many more forms of commands to be defined, but here we just give this simple example
-where the first argument is optional, defaulting to blue (`O{blue}`) and the second argument is mandatory (`m`).
-Unlike `\newcommand` the optional argument does not have to be first, and there may be more than one.
+Just as with `\newcommand`, `\NewDocumentCommand` takes the command
+being defined (`\kw` here) and the definition body, using `#1` to `#9`
+for the arguments, however the difference is in how the arguments are
+specified.
+
+Unlike `\newcommand` where just the number of arguments is given,
+optionally supplying a default for the first, with
+`\NewDocumentCommand` each argument is specified by a letter so a two
+argument command would be specified by `{mm}` rather than `[2]`. This
+is slightly more verbose but allows many more forms of commands to be
+defined. Here we just give this simple example where the first
+argument is optional, defaulting to blue (`O{blue}`) and the second
+argument is mandatory (`m`).  Unlike `\newcommand`, the optional
+argument does not have to be first, and there may be more than one.
