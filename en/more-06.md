@@ -103,7 +103,7 @@ value specified in the definition is used.
 
 From the October 2020 LaTeX release, an extended definition system is available.
 In older LaTeX releases this was available via the `xparse` package which we use
-here for compatiblility.
+here for compatibility.
 
 We can repeat the above example but using `\NewDocumentCommand`
 
