@@ -111,7 +111,7 @@ We can repeat the above example but using `\NewDocumentCommand`
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage{xparse}
+\usepackage{xparse} % Only needed for older LaTeX releases
 \usepackage{xcolor}
 
 \NewDocumentCommand\kw{O{blue} m}{\textcolor{#1}{\itshape #2}}
