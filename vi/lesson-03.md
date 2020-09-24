@@ -68,6 +68,11 @@ trong LaTeX ta phân cách các đoạn văn _bằng các dòng trống_). Phầ
 `\begin{document}` được gọi là phần *khai báo* (preamble), phần này chứa các
 đoạn mã để thiết lập những cài đặt và thiết kế cho văn bản.
 
+Lệnh `\usepackage` sẽ được giới thiệu trong [một bài sau](lesson-06). Dòng
+`\usepackage[T1]{fontenc}` được thêm vào hầu hết các ví dụ trong khóa là để
+thiết lập mã hóa font (font encoding) cho các ví dụ này; chúng ta chưa cần phải
+quan tâm quá nhiều đến nó.
+
 Ngoài ra, LaTeX cũng có nhiều cặp `\begin{...}` và `\end{...}` nữa; những cặp
 này được gọi là các *môi trường*. Chúng không thể đứng một mình: đối với mỗi
 `\begin{x}` cần phải có một `\end{x}`. Bạn cũng có thể lồng các môi trường với
