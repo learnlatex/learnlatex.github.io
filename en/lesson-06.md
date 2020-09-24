@@ -144,7 +144,7 @@ Something about \kw{apples} and \kw{oranges}.
 
 Beware that defining too many commands or defining commands with
 multiple arguments may make the document source harder  to understand
-as it is using an unfamilar syntax. The ability to define
+as it is using an unfamiliar syntax. The ability to define
 document-specific commands should be used with care.
 
 ## Exercises

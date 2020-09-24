@@ -1,5 +1,5 @@
 ---
-title: "Étendre les possibilités de LaTeX avec des packages : pour aller plus loin"
+title: "Étendre les possibilités de LaTeX avec des packages et des définitions : pour aller plus loin"
 ---
 
 ## Charger plusieurs packages à la fois
@@ -20,7 +20,10 @@ comme un moyen de choisir différents motifs de césure. Il fait beaucoup plus
 que cela, selon la ou les langues utilisées. Par exemple, en allemand, il
 fournit des raccourcis pour créer des traits d'union conditionnels, et aussi
 un moyen de taper rapidement des _umlauts_ (trémas) sans avoir besoin d'un
-clavier allemand.
+clavier allemand. Observez aussi que le titre de la table des matières,
+généré par la commande `\tableofcontents`, est changé en sa version allemande
+_Inhaltsverzeichnis_.
+
 
 ```latex
 \documentclass{article}
@@ -30,7 +33,16 @@ clavier allemand.
 
 \begin{document}
 
-H"ohe
+\tableofcontents
+
+\section{"Uber "Apfel und Birnen}
+
+\subsection{Äpfel}
+Äpfel sind rot.
+
+\subsection{Birnen}
+Birnen sind gelb.
+
 
 \end{document}
 ```
@@ -56,7 +68,80 @@ passer la langue d'un document à tous les packages, on peut utiliser :
 
 \begin{document}
 
-H"ohe
+\tableofcontents
+
+\section{"Uber "Apfel und Birnen}
+
+\subsection{Äpfel}
+Äpfel sind rot.
+
+\subsection{Birnen}
+Birnen sind gelb.
 
 \end{document}
 ```
+
+## Davantage de définitions
+
+`\newcommand` permet de définir des commandes ayant un maximum de neuf arguments,
+le premier pouvant être optionnel.
+
+En reprenant l'exemple de la leçon principale, on pourrait rendre la couleur
+optionnelle, en utilisant du bleu par défaut:
+
+```
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+
+\newcommand\kw[2][blue]{\textcolor{#1}{\itshape #2}}
+
+\begin{document}
+
+Tout sur les \kw{pommes} et les \kw[red]{oranges}.
+
+\end{document}
+```
+
+Les arguments optionnels sont délimités par `[]` et s'ils sont omis, la valeur
+par défaut spécifiée dans la définition est utilisée.
+
+
+## `\NewDocumentCommand`
+
+À partir de la version de LaTeX d'octobre 2020, un nouveau système de définition
+de commandes est intégré. Dans les versions précédentes, ce système était
+disponible via le package `xparse`, que nous utilisons ici pour la compatibilité.
+
+Voici l'exemple ci-dessus, réécrit en utilisant `\NewDocumentCommand` :
+
+```
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\usepackage{xparse} % Only needed for older LaTeX releases
+\usepackage{xcolor}
+
+\NewDocumentCommand\kw{O{blue} m}{\textcolor{#1}{\itshape #2}}
+
+\begin{document}
+
+Tout sur les \kw{pommes} et les \kw[red]{oranges}.
+
+\end{document}
+```
+
+Tout comme `\newcommand`, `\NewDocumentCommand` prend le nom de la commande à
+définir (ici `\kw`) puis la définition à proprement parler, en utilisant `#1` à
+`#9` pour les arguments, mais la différence réside dans la façon dont les
+arguments sont spécifiés.
+
+Contrairement à `\newcommand` où seul le nombre d'arguments était précisé, en
+fournissant éventuellement une valeur par défaut pour le premier, avec
+`\NewDocumentCommand`, chaque argument est spécifié par une lettre. Ainsi, une
+commande à deux arguments serait décrite par `{mm}` plutôt que par `[2]`. Cela
+peut paraître plus verbeux mais permet de définir beaucoup plus de types de
+commandes. Dans l'exemple ci-dessus, le premier argument est optionnel, par
+défaut bleu (`O{blue}`), et le second argument est obligatoire (`m`, comme
+_mandatory_).
