@@ -9,6 +9,7 @@ comando `\includegraphics` ao LaTeX:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -42,6 +43,7 @@ automaticamente para que proporção fique correta.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -61,6 +63,7 @@ girá-las usando `angle`.  Outra coisa que você pode querer fazer é cortar (co
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -79,6 +82,7 @@ para que elas não deixem grandes espaços em branco na página.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % produzir texto de preenchimento
 

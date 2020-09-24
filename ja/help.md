@@ -1,5 +1,6 @@
 ---
 title: "Using the learnlatex.org site (Japanese)"
+permalink: /ja/help
 ---
 Translation to be added _after_ English text completed.
 
@@ -31,6 +32,7 @@ English example:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Example text.
 \end{document}

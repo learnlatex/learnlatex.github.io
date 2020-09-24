@@ -66,6 +66,7 @@ The `float` package will do that.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % dummy text for filler
 \usepackage{float}
@@ -94,11 +95,12 @@ convention.
 
 You might want to have other types of floating environment; each type is
 inserted independently. You can do that using the
-[`trivfloat`](https://ctan.org/pkg/trivloat) package. This provides a single
+[`trivfloat`](https://ctan.org/pkg/trivfloat) package. This provides a single
 command, `\trivfloat`, to make new types of float.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % dummy text for filler
 \usepackage{trivfloat}

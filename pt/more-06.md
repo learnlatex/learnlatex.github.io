@@ -21,6 +21,7 @@ de digitar tremas sem ter uma tecla especial no teclado:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage[ngerman]{babel} % Note que o nome da opção é 'ngerman'
 
@@ -45,6 +46,7 @@ documento para todos os pacotes podemos usar:
 
 ```latex
 \documentclass[ngerman]{article} % Note que o nome da opção é 'ngerman'
+\usepackage[T1]{fontenc}
 
 \usepackage{babel}
 

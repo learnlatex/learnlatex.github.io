@@ -1,85 +1,83 @@
 ---
-title: "Cross-referencing"
+title: "Referências cruzadas"
 ---
 
-## The `\label` and `\ref` mechanism
+## O mecanismo de `\label` e `\ref`
 
-When you are writing a document of any length, you'll want to refer to numbered
-items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. To have LaTeX remember a spot
-in your document you have to label it, and then in other places, you refer to it.
+Quando você está escrevendo um documento de qualquer comprimento, você vai
+querer mencionar itens numerados, como figuras, tabelas, ou equações.
+Felizmente, o LaTeX consegue numerar automaticamente;  apenas precisamos
+configurar tudo corretamente.  Para que o LaTeX lembre de um ponto no seu
+documento você deve colocar um rótulo (_label_) nesse local, e em outros locais
+você pode referenciar esse rótulo.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
-Hey world!
+Olá mundo!
 
-This is a first document.
+Este é o meu primeiro documento.
 
-\section{Title of the first section}
+\section{Título da primeira seção}
 
-Text of material for the first section.
+Texto do material da primeira seção.
 
 
-\subsection{Subsection of the first section}
+\subsection{Subseção da primeira seção}
 \label{subsec:labelone}
 
-Text of material for the first subsection.
+Texto do material da primeira subseção.
 \begin{equation}
   e^{i\pi}+1 = 0
 \label{eq:labeltwo}
 \end{equation}
 
-In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
+Na subseção~\ref{subsec:labelone} está a equação~\ref{eq:labeltwo}.
 \end{document}
 ```
 
-There are two `\label{...}` commands, one after the subsection
-and one inside the equation environment.
-They are associated with the last sentence's `\ref{...}` commands.
-When you run LaTeX, it saves information about the labels to an auxiliary file.
-For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
-so it saves the subsection's number.
-For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for that equation.
-When you ask for the reference, LaTeX gets it from the auxiliary file.
+Há dois comandos `\label{...}`, um após a subseção e outro dentro do ambiente
+`equation`.  Eles são associados com os comandos `\ref{...}` na última frase.
+Quando você executa o LaTeX ele salva as informações sobre rótulos em um arquivo
+auxiliar.  Para `\label{subsec:labelone}`, o LaTeX sabe que ele está em uma
+subseção e então salva o seu número.  Em `\label{eq:labeltwo}`, o LaTeX sabe que
+está em uma equação, então ele salva as informações daquela equação.  Quando
+você pedir por essa informação, o LaTeX vai buscá-la do arquivo auxiliar.
 
-The `subsec:` and `eq:` aren't used by LaTeX;
-rather, it just keeps track of what it has most
-recently processed.
-But when you are writing these help you remember what the label
-is about.
+O `subsec:` e `eq:` não são tratados diferentemente pelo LaTeX;  eles só servem
+para você se organizar sobre o que se trata aquele rótulo.
 
-You may see references that show in an output PDF
-as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work,
-the first time that you compile a document the label has not
-yet been saved.
-Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX several times anyway,
-so in practice this is not a bother.)
+Você pode ver referências que aparecem no PDF como pontos de interrogação em
+negrito, **??**.  A explicação é que devido à esse armazenamento de informação
+no arquivo auxiliar, a primeira vez que você compila o documento, o rótulo ainda
+não foi salvo.  Execute o LaTeX mais uma vez e tudo estará correto. (Geralmente
+enquanto estiver escrevendo um documento você vai executar o LaTeX várias vezes
+de qualquer forma, então isso não é um problema.)  Se mesmo depois de compilar
+de novo a referência continuar como **??**, verifique que você escreveu o rótulo
+corretamente.
 
-Notice the tie (`~`) characters before the references.
-You don't want a line break between `subsection` and its number, or
-between `equation` and its number.
-Putting in a tie means LaTeX won't break the line there.
+Note os tils (`~`) antes das referências.  VOcê não quer uma quebra de linha
+entre `subseção` e o número, ou entre `equação` e o número.  Colocar um til
+impede que o LaTeX quebre a linha naquele ponto.
 
-## Where to put `\label`
+## Onde colocar a `\label`
 
-The `\label` command always refers to the previous numbered entity:
-a section, an equation, a float, etc. That means that `\label` always has to
-come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float environment.
+O comando `\label` sempre se refere à _ultima_ entidade numerada:  uma seção,
+uma equação, um _float_, etc.  Isso significa que `\label` sempre deve vir
+_depois_ do objeto ao qual você quer se referir.  Em particular, quando você
+cria _floats_, o comando `\label` deve vir _depois_ (ou melhor, dentro) do
+comando `\caption`, mas dentro do ambiente _float_.
 
-## Exercises
+## Exercícios
 
-Try adding new numbered parts (sections, subsections, enumerated lists) to
-the test document and finding out how many runs are needed to make `\label`
-commands work.
+Tente adicionar novas partes numeradas (seções, subseções, listas numeradas)
+para testar o documento e descobrir quantas execuções do LaTeX são necessárias
+para resolver todos os comandos `\label` e `\ref`.
 
-Add some floats and see what happens when you put `\label` _before_ the
-`\caption` instead of after; can you predict the result?
+Adicione alguns _floats_ e veja o que acontece quando você coloca `\label`
+_antes_ do `\caption` ao invés de depois;  você consegue prever o resultado?
 
-What happens if you put a `\label` for an equation _after_ the `\end{equation}`?
+O que acontece se você colocar uma `\label` para uma equação _depois_ do
+`\end{equation}`?

@@ -1,5 +1,6 @@
 ---
 title: Contributors
+permalink: /AUTHORS
 ---
 
 The following people have made contributions to learnlatex.org:
@@ -9,6 +10,7 @@ The following people have made contributions to learnlatex.org:
 - Paulo Roberto Massa Cereda
 - Ulrike Fischer
 - Jim Hefferon
+- Jérémy Just
 - Marcel Fabian Krüger
 - Frank Mittelbach
 - Phelype Oleinik

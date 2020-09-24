@@ -66,6 +66,7 @@ Gói `float` có thể được dùng để làm việc đó.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage{float}
@@ -94,11 +95,12 @@ chỉ nên làm vậy thôi.
 
 Ta cũng có thể cần nhiều loại môi trường linh động khác, mỗi loại được thêm vào
 một cách độc lập. Ta có thể làm vậy bằng việc sử dụng gói
-[`trivfloat`](https://ctan.org/pkg/trivloat). Gói này cung cấp lệnh `\trivfloat`
+[`trivfloat`](https://ctan.org/pkg/trivfloat). Gói này cung cấp lệnh `\trivfloat`
 để ta định nghĩa những kiểu môi trường linh động mới.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage{trivfloat}

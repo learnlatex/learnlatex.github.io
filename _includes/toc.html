@@ -1,11 +1,12 @@
 <ul>
-{% assign l = include.prefix | slice: 0, 3 %}
+{% assign splitprefix = include.prefix | split: "/" %}
+{% assign l = splitprefix[0] %}
 {%- for page in site.pages | sort: 'path' -%}
 {%- if page.path  contains include.prefix %}
-{% if l == "en/" %}
+{% if l == "en" %}
 <li><a href="{{page.path | replace: '.md',''}}">
 {% else %}
-<li><a href="{{page.path | replace: '.md','' | remove_first: l }}">
+<li><a href="{{page.path | replace: '.md','' | remove_first: l | remove_first: "/"}}">
 {% endif %}
 <b style="display:inline-block;width:1.5em;text-align:right;font-variant-numeric: tabular-nums;">
 {% if page.path contains "-0" %}

@@ -2,7 +2,7 @@
 title: learnlatex.org
 ---
 
-## Herzlich willkommen bei learnlatex.org (German)!
+## Herzlich willkommen bei learnlatex.org!
 
 Diese Seite möchte Sie bei den ersten Schritten mit LaTeX unterstützen. LaTeX ist ein Textsatzsystem für die Erstellung hochwertiger Druckausgaben und kann gerade für Anfänger abschreckend sein, da es _kein_ Textverarbeitungsprogramm ist und zudem nicht als ein einzelnes Programm installiert wird. Unser Ziel ist es, Sie beim Start zu unterstützen ohne gleich _alles_ zeigen zu wollen, was LaTeX kann.
 

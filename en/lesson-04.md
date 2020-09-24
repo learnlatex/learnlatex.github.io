@@ -15,6 +15,7 @@ that's usually how things are emphasised.)
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some text with \emph{emphasis and \emph{nested} content}.
 
@@ -43,6 +44,7 @@ document.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Hey world!
 
@@ -92,6 +94,7 @@ There are two common types of list built in to LaTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 Ordered

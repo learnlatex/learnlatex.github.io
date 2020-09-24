@@ -9,6 +9,7 @@ lệnh `\includegraphics` vào LaTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -43,6 +44,7 @@ theo `\textwidth` (độ rộng của phần chữ trong trang giấy) hay `\tex
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -61,6 +63,7 @@ thứ khác bạn có thể muốn làm đó là cắt hình ảnh bằng `clip`
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -79,6 +82,7 @@ phần linh động để chúng không tạo ra khoảng trắng quá lớn tro
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}
 

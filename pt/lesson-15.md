@@ -42,6 +42,7 @@ TeXworks ou TeXShop mas não instalar um sistema TeX, como TeX Live ou MiKTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \newcommand\mycommand{\textbold{hmmm}}
 
@@ -58,7 +59,7 @@ Esse documento produz uma mensagem de erro de várias linhas no log:
 ! Undefined control sequence.
 \mycommand ->\textbold 
                        {hmmm}
-l.7 My command is used here \mycommand
+l.8 My command is used here \mycommand
                                       .
 ? 
 ```
@@ -100,6 +101,7 @@ pois faz parecer que o comando `\mycommand` não está definido.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage[leqno}{amsmath}
 
@@ -122,7 +124,7 @@ precisamente o local do erro por usar uma quebra de linha mostrando até onde o
 TeX leu:
 
 ```
-l.3 \usepackage[leqno}
+l.4 \usepackage[leqno}
                       {amsmath}
 ```
 {: .noedit :}
@@ -131,6 +133,7 @@ l.3 \usepackage[leqno}
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmathz}
 
@@ -155,6 +158,7 @@ sistema.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
@@ -187,9 +191,9 @@ erro.
 
 <script>
   window.addEventListener('load', function(){
-      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(2, 31, false);
-      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(2, 18, false);
-      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(2, 20, false);
-      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(6, 0, false);
+      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(3, 31, false);
+      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(3, 18, false);
+      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(3, 20, false);
+      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(7, 0, false);
   }, false);
 </script>

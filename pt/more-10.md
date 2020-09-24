@@ -20,6 +20,7 @@ form  omits the equation numbers by default.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}
 
@@ -49,6 +50,7 @@ alinhada em direção ao seu símbolo de relação
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Equações alinhadas
@@ -65,6 +67,7 @@ formam um sub termo de uma equação maior, por exemplo `aligned` e `gathered`:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Aligned:
@@ -88,6 +91,7 @@ linha;  compare os itens na lista no exemplo a seguir:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 \begin{itemize}
@@ -114,6 +118,7 @@ individuais ou palavras em fonte romana em negrito.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
@@ -134,6 +139,7 @@ dentro de uma expressão normal, então você pode usar o comando `\bm` do pacot
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{bm}
 
 \begin{document}
@@ -155,6 +161,7 @@ que permitem escolher o alinhamento das colunas:
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{mathtools}
 
 \begin{document}

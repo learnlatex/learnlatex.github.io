@@ -12,6 +12,7 @@ mostrado pelo TeX ainda deve mostrar a localização exata do erro.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}
 
@@ -29,7 +30,7 @@ mostrado pelo TeX ainda deve mostrar a localização exata do erro.
 Aqui o erro será relatado na linha 11:
 
 ```
-l.11 \end{align}
+l.12 \end{align}
 ```
 {: .noedit :}
 
@@ -57,6 +58,7 @@ em corrigir o _primeiro_ erro.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Text_word  $\alpha + \beta$.
@@ -73,7 +75,7 @@ O TeX relata esse corretamente com a _primeira_ mensagem de erro:
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.4 Text_
+l.5 Text_
          word  $\alpha + \beta$.
 ?
 ```
@@ -88,7 +90,7 @@ o encerre, então o `\alpha` é visto em modo de texto causando outro erro:
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.4 Text_word  $\alpha
+l.5 Text_word  $\alpha
                        + \beta$.
 ? 
 ```
@@ -106,6 +108,7 @@ mensagem de erro;  para ver a mensagem no log adicione `%!TeX log` no exemplo:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

@@ -24,6 +24,7 @@ seguinte:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -52,6 +53,7 @@ ser usado para mudar o alinhamento de uma única célula, como mostrado abaixo:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -81,6 +83,7 @@ ajustar esse espaço usando `\setlength`:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \setlength\tabcolsep{1cm}
@@ -102,6 +105,7 @@ vai remover o espaçamento entre duas colunas, e inserir o argumento entre elas:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -124,6 +128,7 @@ argumento no centro do espaço entre as colunas:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -144,6 +149,7 @@ argumento no centro do espaço entre as colunas:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -176,6 +182,7 @@ especificando um comprimento entre chaves depois de `r` ou `l`:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -200,6 +207,7 @@ Um exemplo simples, com duas colunas numéricas alinhadas é:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{booktabs}
 \usepackage{siunitx}
 \begin{document}
@@ -247,6 +255,7 @@ partir daquele ponto no preâmbulo.  `\extracolsep` é quase sempre usado com
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
 
@@ -289,6 +298,7 @@ um valor automaticamente determinado para a largura.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \begin{document}
 
@@ -389,6 +399,7 @@ aqui:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{threeparttable}
 \begin{document}
@@ -430,6 +441,7 @@ para que as colunas não sejam tão estreitas em relação ao tamanho da fonte.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{ragged2e}
 \begin{document}
@@ -481,6 +493,7 @@ ambientes `tabular` dentro dessa célula:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -505,6 +518,7 @@ ao centro, ou ao fundo, respectivamente, e é usado assim:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -541,6 +555,7 @@ O exemplo a seguir demonstra o parâmetro `\extrarowheight`:
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
 

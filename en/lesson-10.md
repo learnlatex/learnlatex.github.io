@@ -11,6 +11,7 @@ and display.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A sentence with inline mathematics: $y = mx + c$.
 A second sentence with inline mathematics: $5^{2}=3^{2}+4^{2}$.
@@ -57,6 +58,7 @@ We can easily add superscripts and subscripts; these are marked using `^` and
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Superscripts $a^{b}$ and subscripts $a_{b}$.
 \end{document}
@@ -72,13 +74,15 @@ Greek letter.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some mathematics: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
 We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for math math mode symbols using the
+many online resources listing the standard set. You can look up commands for
+math mode symbols using the
 [Detexify](https://detexify.kirelabs.org/classify.html) tool.
 
 
@@ -102,6 +106,7 @@ It's particularly useful for integrations, for example:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A paragraph about a larger equation
 \[
@@ -121,6 +126,7 @@ environment. Let's try the same example again:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A paragraph about a larger equation
 \begin{equation}
@@ -146,6 +152,7 @@ contains many more examples than we can show in this lesson.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 
 \begin{document}
@@ -171,6 +178,7 @@ example for matrices.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 AMS matrices.
@@ -212,6 +220,7 @@ write a matrix as
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 The matrix $\mathbf{M}$.
 \end{document}
@@ -228,6 +237,7 @@ specific font styles such as `\textrm{..}`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 

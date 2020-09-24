@@ -1,5 +1,4 @@
 ---
-title: "More language-specifics for French"
-next: "extra-01"
+title: "More on: Citations and references (Chinese)"
 ---
 Translation to be added _after_ English text completed.
