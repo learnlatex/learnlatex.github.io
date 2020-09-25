@@ -13,7 +13,7 @@ carregar cada pacote em uma linha separada.
 
 ## O pacote `babel`
 
-Nós mostramos o pacote `babel` na [lição principal](pt/lesson-06) como uma forma
+Nós mostramos o pacote `babel` na [lição principal](lesson-06) como uma forma
 de escolher diferentes padrões de hifenização.  Mas `babel` faz muito mais do
 que isso, dependendo dos idiomas sendo utilizados.  Por exemplo, em Alemão,
 `babel` fornece atalhos para criar hífens 'flexíveis', e também uma forma rápida

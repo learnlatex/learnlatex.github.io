@@ -4,14 +4,14 @@ title: "Veja mais sobre: Tabelas"
 
 ## Outros símbolos de preâmbulo para tabelas
 
-A [lição principal](pt/lesson-08) não abordou todos os símbolos de preâmbulo
+A [lição principal](lesson-08) não abordou todos os símbolos de preâmbulo
 disponíveis, portanto alguns serão explicados aqui, com exempls.  Você pode
 querer revisitar as tabelas no início da lição para ter uma visão geral dos
 símbolos disponíveis.  As descrições dadas lá devem ser suficientes para
 entender o que os tipos diferentes de colunas `m`, `b`, `w`, e `W` fazem, depois
 que você endender `l`, `c`, `r`, e `p`.  Se não, você pode experimentar um pouco
 com eles.  O que ainda falta são os outros símbolos listados na
-[lição principal](pt/lesson-08):  `>`, `<`, `@`, `!`, e `|`.
+[lição principal](lesson-08):  `>`, `<`, `@`, `!`, e `|`.
 
 ### Aplicando estilos a uma coluna
 
@@ -119,7 +119,7 @@ vai remover o espaçamento entre duas colunas, e inserir o argumento entre elas:
 ```
 <!-- {% endraw %} -->
 
-(Vamos abordar `\hspace` [em breve](pt/lesson-11);  você pode adivinhar que ele
+(Vamos abordar `\hspace` [em breve](lesson-11);  você pode adivinhar que ele
 adiciona um espaço horizontal.)
 
 O símbolo `!` faz algo bem similar a `@`.  A diferença é que `!` _adiciona_ o
@@ -474,7 +474,7 @@ Dois & Um texto longo diferente em um parágrafo estreito, com mais palávras di
 
 ## Definindo novos tipos de coluna
 
-Como demonstrado na [lição principal](pt/lesson-08), o pacote `array` permite
+Como demonstrado na [lição principal](lesson-08), o pacote `array` permite
 construções como `>{\bfseries}c` para denotar uma coluna centralizada com texto
 em negrito.  Geralmente é conveniente definir um novo tipo de coluna para
 encapsular tal uso. Por exemplo:
@@ -538,7 +538,7 @@ ao centro, ou ao fundo, respectivamente, e é usado assim:
 
 ## Espaçamento entre linhas em tabelas
 
-Na [lição principal](pt/lesson-08) demonstramos `\addlinespace` do pacote
+Na [lição principal](lesson-08) demonstramos `\addlinespace` do pacote
 `booktabs`, que é útil para adicionar espaço extra entre linhas específicas.
 
 Há dois parâmetros gerais que controlam o espaçamento entre linhas,

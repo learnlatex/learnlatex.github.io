@@ -40,7 +40,7 @@ Tente descomentar o a linha que carrega o pacote `babel` e veja o efeito. (As
 regras de hifenização padrão são Inglês Americano.)
 
 O pacote `babel` faz muito mais que hifenização, dependendo do idioma em
-questão; nós damos [alguns detalhas extra](pt/more-06) se você precisar.
+questão; nós damos [alguns detalhas extra](more-06) se você precisar.
 
 ## Mudando o design
 

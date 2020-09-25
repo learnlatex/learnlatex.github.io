@@ -15,6 +15,6 @@ vai precisar usar o `biblatex` e o Biber, ao invés do `natbib` e BibTeX.
 
 ## Hiperlinks
 
-Se você carregar o pacote `hyperref` (como visto [anteriormente](pt/more-09)),
+Se você carregar o pacote `hyperref` (como visto [anteriormente](more-09)),
 ele vai automaticamente transformar alguns campos da sua bibliografia em links.
 Isso é particularmente útil em URLs e DOIs.
