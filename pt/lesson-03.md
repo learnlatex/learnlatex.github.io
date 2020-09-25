@@ -4,7 +4,7 @@ title: "Seu primeiro documento LaTeX"
 
 Nosso primeiro documento LaTeX será muito simples: a ideia é lhe mostrar como um
 documento se parece e como processá-lo com sucesso.  Também é a sua primeira
-chance de ver [como usar os exemplos aqui no `learnlatex.org`](pt/help).
+chance de ver [como usar os exemplos aqui no `learnlatex.org`](help).
 
 Se você está usando uma instalação local de LaTeX, no seu editor crie um arquivo
 chamado `first.tex`, e copie-e-cole o texto abaixo, ou digite-o.  Se você está
@@ -67,6 +67,8 @@ No exemplo acima o corpo do documento tem dois parágrafos (no LaTeX você separ
 parágrafos com uma ou mais linhas em branco).
 Antes do `\begin{document}` fica o _preâmbulo do documento_, que contém comandos
 para configurar a aparência do seu documento.
+O comando `\usepackage` é descrito em uma [lição futura](lesson-06), e é usado
+na maioria dos exemplos neste site para configurar a codificação das fontes.
 
 O LaTeX tem outros pares `\begin{...}` e `\end{...}`; estes são chamados
 _ambientes_.  Você deve combiná-los de forma que para cada `\begin{x}`, haja um
@@ -110,7 +112,7 @@ espaço rígido, por exemplo.  Quase todos esses caracteres são _muito_ incomun
 em texto normal, por isso eles foram escolhidos para ter significados especiais.
 Se você precisar mostrar um desses caracteres especiais no texto, colcamos mais
 informações sobre isso na
-[página de detalhes adicionais desta lição](pt/more-03).
+[página de detalhes adicionais desta lição](more-03).
 
 ## Exercise
 

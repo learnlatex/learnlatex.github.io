@@ -336,7 +336,7 @@ trường linh động `table`.
 Nhiều gói cung cấp các phiên bản bảng khác với cú pháp tương tự mà có cho phép
 chia bảng trên nhiều trang. Ví dụ sau sử dụng gói `longtable`:
 
-```
+```latex
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}

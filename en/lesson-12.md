@@ -25,7 +25,7 @@ extension `.bib`. They contain one or more entries, one for each reference, and
 within each entry there are a series of fields. Let us look at an example.
 
 <!-- {% raw %} -->
-```
+```bibtex
 @article{Thomas2008,
   author  = {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
              and Darensbourg, Marcetta Y.},

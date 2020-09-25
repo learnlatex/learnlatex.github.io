@@ -89,7 +89,7 @@ le premier pouvant être optionnel.
 En reprenant l'exemple de la leçon principale, on pourrait rendre la couleur
 optionnelle, en utilisant du bleu par défaut:
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
@@ -116,7 +116,7 @@ disponible via le package `xparse`, que nous utilisons ici pour la compatibilit�
 
 Voici l'exemple ci-dessus, réécrit en utilisant `\NewDocumentCommand` :
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
