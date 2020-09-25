@@ -63,7 +63,8 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 ```
 
 Adicionalmente, há variantes dos ambientes com nome terminando em `ed`, que
-formam um sub termo de uma equação maior, por exemplo `aligned` e `gathered`:
+formam um sub termo dentro de uma equação maior.  Por exemplo, `aligned` e
+`gathered` são variantes de `align` e `gather` respectivamente.
 
 ```latex
 \documentclass{article}
