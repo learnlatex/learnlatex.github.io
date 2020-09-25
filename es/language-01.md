@@ -26,7 +26,7 @@ Some text
 Puede igualmente utilizarlo de la forma siguiente:
 
 ```latex
-\documentclass[babel]{article}
+\documentclass[spanish]{article}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 \begin{document}
