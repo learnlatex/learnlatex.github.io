@@ -97,10 +97,10 @@ do LaTeX.
 
 O formato das citações e referências é independente do seu banco de referências
 BibTeX, e é configurado por um 'estilo'.  Veremos que esses estilos funcionam
-diferentemente no `natbib` e no `biblatex`, mas a ideia geral permanece:  nós
-podemos escolher como citações aparecem.
+diferentemente no fluxo de trabalho com o BibTeX e no `biblatex`, mas a ideia
+geral permanece:  nós podemos escolher como citações aparecem.
 
-## O fluxo de trabalho com `natbib`
+## O fluxo de trabalho do BibTeX com `natbib`
 
 Enquanto é possível inserir citações em um documento LaTeX sem carregar qualquer
 pacote, as funcionalidades são limitadas.  Ao invés disso, vamos usar o pacote
@@ -186,6 +186,54 @@ No `biblatex`, o estilo das referências é escolhido quando carregamos o pacote
 Aqui, usamos `authoryear`, mas também há um estilo `numeric`, além de muitos
 outros.
 
+## Escolhendo entre o trabalho com o BibTeX ou com o `biblatex`
+
+Embora bibliografias tanto o BibTeX quanto com o `biblatex` leem o banco de
+referências no formato BibTeX e produzem resultado estruturalmente similar no
+documento, eles usam formas completamente diferentes para produzir esse
+resultado.  Isso significa que há algumas diferenças entre as duas abordagens
+que podem lhe ajudar a escolher qual funciona melhor para você.
+
+No fluxo de trabalho com o BibTeX o estilo da bibliografia é decidido por um
+arquivo `.bst` que você escolhe com o comando `\bibliographystyle`.
+O `biblatex` não usa arquivos `.bst` e usa um sistema diferentes.  Se você está
+usando um template que vem com um arquivo `.bst` ou receber um arquivo desse
+para usar no seu projeto, então você deverá usar o BibTeX e não pode usar o
+`biblatex`.
+
+A abordagem com o `biblatex` implica que você pode mudar a aparência da lista
+de referências e das citações diretamente no preâmbulo do documento usando
+comandos no LaTeX.  Modificações em arquivos `.bst`, por outro lado, exigem
+trabalhar com esses arquivos externos e conhecimento da linguagem de programação
+do BibTeX.  De forma geral, o `biblatex` é mais fácil de personalizar do que os
+estilos no fluxo de trabalho do BibTeX.
+
+No `biblatex` geralmente é mais fácil implementar estilos de citação mais
+elaborados com uma gama maior de comandos de citação.  O `biblatex` também
+oferece mais funcionalidades dependentes do contexto.  De forma geral isso é
+menos interessante para estilos comuns nas áreas de exatas, mas se torna mais
+relevante para alguns estilos complexos nas áreas de humanas.
+
+O BibTeX só pode ordenar caracteres ASCII corretamente e depende de soluções
+alternativas para fornecer ordenação baseada em ASCII para caracteres não-ASCII.
+Com o Biber, o `biblatex` tem capacidade Unicode completa para ordenar
+caracteres.  Portanto, o `biblatex` geralmente é uma escolha melhor se você quer
+organizar sua bibliografia em ordem diferente do Inglês/ASCII.
+
+Tendo existido por muito mais tempo que o `biblatex`, o fluxo de trabalho com o
+BibTeX é mais bem estabelecido, o que significa que muitas editoras e revistas
+esperam bibliografias geradas pelo BibTeX.  Essas revistas não podem, ou em
+geral não aceitam submissões usando o `biblatex`.
+
+Em conclusão: verifique as diretrizes ao autor/submissão se você está enviando
+seu trabalho para uma revista ou editora.  Se você for dado um arquivo `.bst`,
+você deve usar o fluxo de trabalho com o BibTeX.  Se você quer uma bibliografia
+e estilo relativamente simples e só precisa ordenação compatível com
+Inglês/ASCII, o fluxo de trabalho com o BibTeX deve ser suficiente.  Se você
+precisa de um estilo mais complexo, usando alfabeto não-Inglês, ou quer acesso
+mais fácil à personalização do estilo de citação e bibliografia, você vai
+preferir usar o `biblatex`.
+
 ## Exercícios
 
 Tente ambos os exemplos com `natbib` e `biblatex`.  Com o `natbib` você vai
@@ -195,5 +243,5 @@ como fazer isso no seu editor de escolha, ou tente no Overleaf ou neste site.
 
 Veja o que acontece quando você cria novos registros no banco de referências e
 adiciona novas citações.  Adicione citações que não existem no banco de
-referências e veja como elas aparecem.  Experimente com a opção `numeric` em
-ambos os pacotes.
+referências e veja como elas aparecem.  Experimente com a opção `numeric` no
+`natbib` e com a opção equivalente `style=numeric` no `biblatex`.
