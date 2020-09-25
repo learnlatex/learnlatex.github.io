@@ -67,6 +67,8 @@ No exemplo acima o corpo do documento tem dois parágrafos (no LaTeX você separ
 parágrafos com uma ou mais linhas em branco).
 Antes do `\begin{document}` fica o _preâmbulo do documento_, que contém comandos
 para configurar a aparência do seu documento.
+O comando `\usepackage` é descrito em uma [lição futura](lesson-06), e é usado
+na maioria dos exemplos neste site para configurar a codificação das fontes.
 
 O LaTeX tem outros pares `\begin{...}` e `\end{...}`; estes são chamados
 _ambientes_.  Você deve combiná-los de forma que para cada `\begin{x}`, haja um
