@@ -111,7 +111,7 @@ L'exemple suivant montre l'ajout de la commande `\kw`, pour formatter des
 mots-clefs (_**k**ey**w**ord_) avec un style spécifique (en l'occurrence du gras
 italique):
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
@@ -137,7 +137,7 @@ changer la définition. Ici, nous chargeons le paquet `xcolor` pour mettre le
 texte en couleur, et utilisons le bleu à la place du gras dans le style des
 mots-clefs:
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 

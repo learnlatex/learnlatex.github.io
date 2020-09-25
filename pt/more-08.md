@@ -347,7 +347,7 @@ _float_ `table`.
 Vários pacotes têm variações com sintaxe similar que permitem quebra de página
 na tabela.  Aqui mostramos o pacote `longtable`:
 
-```
+```latex
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}

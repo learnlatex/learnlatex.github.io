@@ -103,7 +103,7 @@ ta cần một chức năng không có sẵn trong các gói lệnh, hay bạn c
 Ví dụ sau là một cách định nghĩa một lệnh để chèn keyword dưới một kiểu chữ nhất
 định nào đó.
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \newcommand\kw[1]{\textbf{\itshape #1}}
@@ -122,7 +122,7 @@ Nếu bạn muốn thay đổi kiểu chữ cho các keyword, thay vì phải s�
 chỉ cần sửa định nghĩa của lệnh. Ở ví dụ sau, ta đã sử dụng gói `xcolor` để thêm
 màu chữ, và thay kiểu chữ đậm bằng chữ màu xanh:
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}

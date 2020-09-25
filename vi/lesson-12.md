@@ -27,7 +27,7 @@ liệu tham khảo &ndash; đó là một chuỗi các miền thông tin. Hãy c
 dụ:
 
 <!-- {% raw %} -->
-```
+```bibtex
 @article{Thomas2008,
   author  = {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
              and Darensbourg, Marcetta Y.},

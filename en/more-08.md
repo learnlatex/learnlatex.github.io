@@ -345,7 +345,7 @@ on one page, and is often placed in a floating `table` environment.
 Several packages provide variants with similar syntax that do allow
 page breaking. Here we show the `longtable` package:
 
-```
+```latex
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}

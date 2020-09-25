@@ -187,7 +187,7 @@ deste curso, então sugerimos consultar a
 [documentação do pacote](https://texdoc.net/pkg/unicode-math).
 Ainda assim, aqui vai um pequeno exemplo:
 
-```
+```latex
 % !TEX lualatex
 \documentclass[a4paper]{article}
 \usepackage{unicode-math}

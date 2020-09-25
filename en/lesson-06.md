@@ -102,7 +102,7 @@ to enter a common expression that is used multiple times.
 The following example shows a command to produce keywords with a
 specific style applied.
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
@@ -127,7 +127,7 @@ edit the entire document, you simply need to use a different
 definition. Here we load the `xcolor` package to provide colors, and
 use blue in place of bold in the formatting.
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
