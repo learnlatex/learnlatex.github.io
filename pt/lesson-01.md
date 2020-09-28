@@ -34,7 +34,7 @@ executar o LaTeX mais de uma vez.  Vamos lhe dizer quando for o caso.
 
 ## {{ site.latex }} ou pdf{{ site.latex }} ou ...
 
-Na [próxima lição](pt/lesson-02), nós vamos ver que o LaTeX não é um único
+Na [próxima lição](lesson-02), nós vamos ver que o LaTeX não é um único
 programa.  Para simplificar as coisas, nós vamos focar em uma versão em
 particular, o pdfLaTeX, para criar os seus PDFs.  Nós também vamos ver outros
 programas, e porque você usaria eles, mais adiante no curso.

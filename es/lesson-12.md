@@ -25,7 +25,7 @@ BibTeX" y tienen la extensión `.bib`. Contienen uno a más registros, uno por c
 y en cada registro hay una serie de campos. Veamos un ejemplo.
 
 <!-- {% raw %} -->
-```
+```bibtex
 @article{Thomas2008,
   author  = {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
              and Darensbourg, Marcetta Y.},
