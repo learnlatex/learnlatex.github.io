@@ -250,7 +250,7 @@ $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 ```
 
 Se você precisa deixa outros símbolos em negrito, veja
-[os detalhes adicionais](pt/more-10)
+[os detalhes adicionais](more-10)
 
 ## Exercícios
 
