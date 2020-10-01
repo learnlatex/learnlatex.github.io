@@ -80,7 +80,7 @@ có thể là đối số tùy chọn (không bắt buộc).
 Nếu ta sử dụng ví dụ từ bài chính, ta có thể tạo một đối số tùy chọn cho màu,
 nhận giá trị mặc định là màu xanh.
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
@@ -103,7 +103,7 @@ này được cung cấp bởi gói `xparse`, và để đảm bảo các ví d�
 
 Ví dụ sau là cách định nghĩa lệnh `\kw` bằng `\NewDocumentCommand`:
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{xparse} % Chỉ cần thiết cho các bản LaTeX cũ

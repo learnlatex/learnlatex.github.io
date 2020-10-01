@@ -365,7 +365,7 @@ environnement `table` pour en faire un flottant.
 Plusieurs packages fournissent des variantes avec une syntaxe similaire, mais
 permettant des sauts de page. Nous présentons ici le package `longtable` :
 
-```
+```latex
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}

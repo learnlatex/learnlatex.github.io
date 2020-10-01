@@ -98,7 +98,7 @@ funcione, mas não exige o `program=`, e atualmente é restrito a apenas um dos
 cinco interpretadores suportados nos sistemas online usados.
 
 Você pode ver um exemplo de um comentário sendo usado para especificar o
-LuaLaTeX em um [exemplo neste site](pt/more-14).
+LuaLaTeX em um [exemplo neste site](more-14).
 
 Se o `platex` ou `uplatex` for especificado, então o programa `dvipdfmx` também
 é usado para produzir o PDF final do arquivo DVI que estes interpretadores

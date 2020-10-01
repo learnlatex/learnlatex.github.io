@@ -102,7 +102,7 @@ to enter a common expression that is used multiple times.
 The following example shows a command to produce keywords with a
 specific style applied.
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
@@ -115,7 +115,8 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-In the definition `#1` denotes the first argument that is supplied
+In the definition `[1]` denotes the number of arguments (here one)
+and `#1` denotes the first argument that is supplied
 (`apples` or `oranges` in this example). You may have up to nine
 arguments, but it is usually best to have just one argument, or
 sometimes none at all.
@@ -127,7 +128,7 @@ edit the entire document, you simply need to use a different
 definition. Here we load the `xcolor` package to provide colors, and
 use blue in place of bold in the formatting.
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 

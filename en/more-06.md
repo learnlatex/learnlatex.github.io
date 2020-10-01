@@ -81,7 +81,7 @@ Birnen sind gelb.
 If we take the example from the main lesson, we could make the color
 optional, defaulting to blue.
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
@@ -107,7 +107,7 @@ here for compatibility.
 
 We can repeat the above example but using `\NewDocumentCommand`
 
-```
+```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
