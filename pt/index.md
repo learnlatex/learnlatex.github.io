@@ -23,13 +23,13 @@ ajudar quando você precisar de detalhes, mas não são necessárias caso contr�
 ## Como os exemplos funcionam
 
 Para ajudar no seu aprendizado, o site inclui muitos exemplos.  Na
-[Lição 2](pt/lesson-02) nós vamos falar de como você pode usar o LaTeX tanto
+[Lição 2](lesson-02) nós vamos falar de como você pode usar o LaTeX tanto
 online quanto com uma instalação local no seu computador.  Para iniciantes, nós
 configuramos nossos exemplos para que você possa editá-los e executá-los neste
 website.  Nós também os vinculamos ao [Overleaf](https://www.overleaf.com), um
 dos serviços mais populares de edição online de LaTeX.  Mas não se preocupe,
 você também pode usar os exemplos no seu computador.  Você pode ler mais sobre
-como usar os exemplos na [página de ajuda](pt/help).
+como usar os exemplos na [página de ajuda](help).
 
 Nossos exemplos são baseados em uma instalação atualizada de LaTeX.  Todos
 funcionam com ambos os nossos sistemas online, então se você receber erros com
@@ -49,7 +49,7 @@ de LaTeX está atualizada.
 O propósito das lições aqui não é abordar tudo o que você precisará saber sobre
 o LaTeX; nós queremos te dar o suficiente para você começar, e para _entender_
 exemplos e ajuda de outras fontes.  Nós abordamos formas de obter mais
-informação na [última lição](pt/lesson-16), mas vale ressaltar que ter acesso a
+informação na [última lição](lesson-16), mas vale ressaltar que ter acesso a
 um livro sobre LaTeX ainda é a melhor forma de aprender os detalhes.  Nós damos
 algumas recomendações na última lição.
 

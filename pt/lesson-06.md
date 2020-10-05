@@ -1,5 +1,5 @@
 ---
-title: "Extendendo o LaTeX usando pacotes"
+title: "Extendendo o LaTeX usando pacotes e definições"
 ---
 
 Depois de declarar uma classe, no preâmbulo você pode modificar funcionalidades
@@ -40,7 +40,7 @@ Tente descomentar o a linha que carrega o pacote `babel` e veja o efeito. (As
 regras de hifenização padrão são Inglês Americano.)
 
 O pacote `babel` faz muito mais que hifenização, dependendo do idioma em
-questão; nós damos [alguns detalhas extra](pt/more-06) se você precisar.
+questão; nós damos [alguns detalhas extra](more-06) se você precisar.
 
 ## Mudando o design
 
@@ -85,12 +85,66 @@ Texto da segunda seção.
 
 Você deve ver claramente o efeito quando o pacote `geometry` é carregado ou não.
 
-## Adicionando comandos
+## Adicionando novas funcionalidades
 
 Um dos pontos fortes do LaTeX é que você pode escolher entre milhares de
 pacotes, incluindo alguns para escrever textos matemáticos, fazer links, para
 recursos de cores sofisticados, etc.  Vamos ver alguns dos pacotes mais comuns
 em lições posteriores.
+
+## Definindo comandos
+
+Às vezes você precisa de um comando específico para o seu documento, ou uma
+função não disponíveis em pacotes existentes, ou simplesmente um comando para
+escrever uma expressão comum que é usada múltiplas vezes.
+
+O exemplo a seguir mostra um comando para produzir palavras-chave com um estilo
+específico aplicado.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\newcommand\kw[1]{\textbf{\itshape #1}}
+
+\begin{document}
+
+Algo sobre \kw{maçãs} e \kw{laranjas}.
+
+\end{document}
+```
+
+Na definição, `[1]` é o número de argumentos (nesse caso um), e `#1` simboliza
+o primeiro argumento que é fornecido ao comando
+(`maçãs` ou `laranjas`, nesse exemplo).  Você pode usar até nove argumentos, mas
+geralmente é melhor usar poucos argumentos; um ou até nenhum.
+
+Definir comandos não só reduz a quantidade de coisas que você tem que digitar
+para produzir um documento.  Comandos também ajudam a separar a formatação de
+informações.  Se, por exemplo, for decidido usar um estilo diferente para
+palavras-chave, ao invés de editar o documento inteiro, você simplesmente
+modifica a definição do comando.  Aqui carregamos o pacote `xcolor` para
+utilizar cores, e usamos cor azul ao invés de negrito na formatação.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+
+\newcommand\kw[1]{\textcolor{blue}{\itshape #1}}
+
+\begin{document}
+
+Algo sobre \kw{maçãs} e \kw{laranjas}.
+
+\end{document}
+```
+
+Cuidado que ao definir muitos comandos com múltiplos argumentos pode tornar o
+código do documento difícil de entender por estar usando uma sintaxe própria.
+A habilidade de definir comandos específicos ao documento deve ser usada com
+cautela.
 
 ## Exercícios
 

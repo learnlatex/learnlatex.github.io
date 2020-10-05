@@ -28,7 +28,7 @@ plusieurs entrées, une pour chaque référence, et à l'intérieur de chaque en
 il y a une série de champs. Voyons un exemple :
 
 <!-- {% raw %} -->
-```
+```bibtex
 @article{Thomas2008,
   author  = {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
              and Darensbourg, Marcetta Y.},

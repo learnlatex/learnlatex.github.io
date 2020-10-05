@@ -59,7 +59,7 @@ Ainda mais texto.
 
 ## Formatação explícita do texto
 
-Nós vimos [mais no início do curso](pt/lesson-03) que na maioria das vezes a
+Nós vimos [mais no início do curso](lesson-03) que na maioria das vezes a
 estrutura lógica é preferível.  Mas às vezes você quer fazer texto negrito ou
 itálico ou monoespaçado, etc.  Há dois tipos de comando para isso:  para trechos
 curtos de texto, e para material potencialmente longo.

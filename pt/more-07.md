@@ -90,7 +90,7 @@ documento.
 
 ## Outros tipos de _float_
 
-[Em breve veremos](pt/lesson-08) que podemos colocar tabelas em _floats_;  elas
+[Em breve veremos](lesson-08) que podemos colocar tabelas em _floats_;  elas
 vão em um ambiente `table`.  No entanto não temos que _necessariamente_ colocar
 figuras no ambiente `figure` nem tabelas no ambiente `table`;  isto é apenas
 convenção.

@@ -23,11 +23,11 @@ phải thực hiện định dạng kiểu chữ "bằng tay".
 
 Những tệp lưu trữ như vậy thường được gọi là các "tệp BibTeX" và có đuôi tệp là
 `.bib`. Chúng thường bao gồm một hay nhiều mục, mỗi mục cho thông tin về một tài
-liệu tham khảo &ndash; đó là một chuỗi các miền thông tin. Hãy cùng cem một ví
+liệu tham khảo &ndash; đó là một chuỗi các miền thông tin. Hãy cùng xem một ví
 dụ:
 
 <!-- {% raw %} -->
-```
+```bibtex
 @article{Thomas2008,
   author  = {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
              and Darensbourg, Marcetta Y.},
@@ -108,7 +108,7 @@ gọi là "kiểu bibliography". Ta sẽ thấy rằng các kiểu này hoạt �
 nhau một chút giữa `natbib` và `biblatex`, nhưng ý tưởng chính vẫn giữ nguyên:
 ta có thể chọn cách các mục tài liệu tham khảo được in ra trong văn bản của mình.
 
-## Quy trình làm việc với `natbib`
+## Quy trình làm việc trực tiếp với BibTeX bằng gói `natbib`
 
 Mặc dù ta có thể thêm các mục tài liệu vào một văn bản LaTeX mà không cần thêm
 gói nào, điều này có nhiều hạn chế. Thay vào đó, ta sẽ dùng gói `natbib` &ndash;
@@ -193,6 +193,48 @@ hay `pp.~`, vì `biblatex` tự động thêm tiền tố phù hợp cho số tr
 Trong `biblatex`, kiểu tham chiếu được chọn khi ta khai báo gói. Ở đây ta đã
 dùng `authoryear`, nhưng ta cũng có `numeric` và nhiều kiểu khác nữa.
 
+## Chọn giữa `biblatex` hay quy trình làm việc trực tiếp với BibTeX
+
+Mặc dù cả `biblatex` cũng như quy trình trực tiếp của BibTeX đều nhận input từ
+các tệp BibTeX và có thể tạo ra output có cấu trúc tương tự nhau trong văn bản,
+chúng sử dụng những cách khác hẳn nhau để tạo ra output này. Do đó, sẽ có nhiều
+điểm khác biệt giữa hai lựa chọn mà bạn có thể xem xét để chọn phương pháp phù
+hợp nhất cho mình.
+
+Trong quy trình của BibTeX, kiểu bibliography được xác định bởi một tệp `.bst`
+(các tệp này được chọn bằng lệnh `\bibliographystyle`). `biblatex` không sử
+dụng các tệp `.bst`; nó sử dụng một cách khác. Nếu bạn đang dùng một template có
+bao gồm một tệp `.bst`, hay được cung cấp một tệp `.bst` cho văn bản của mình,
+bạn không thể dùng `biblatex` mà buộc phải dùng quy trình trực tiếp của BibTeX.
+
+Cách hoạt động của `biblatex` cho bạn khả năng thay đổi output của các lệnh dẫn
+nguồn cũng như các lệnh tham chiếu ngay tại phần khai báo của văn bản với những
+lệnh LaTeX thường. Trong khi đó, việc chỉnh sửa một tệp `.bst` yêu cầu bạn phải
+có kiến thức của ngôn ngữ lập trình BibTeX. Nói chung, `biblatex` được coi là có
+thể tùy biến dễ dàng hơn nhiều so với BibTeX.
+
+Trong `biblatex`, việc viết một kiểu tham chiếu mới đơn giản hơn và các lệnh
+tham chiếu cũng đa dạng hơn. Nó cũng có nhiều chức năng phụ thuộc vào ngữ cảnh
+(context-dependent). Nói chung, điều này không quá quan trọng trong các lĩnh vực
+liên quan đến STEM, nhưng nó khá có ích đối với những kiểu tham chiếu phức tạp
+trong một số lĩnh vực như nhân văn học.
+
+BibTeX chỉ có thể sắp xếp chính xác các ký tự trong bảng chữ cái tiếng Anh, và
+dựa vào các workaround để sắp xếp các ký tự khác dựa trên cách sắp xếp gốc này.
+Trong khi đó, `biblatex` có thể sắp xếp chính xác với tất cả các ký tự Unicode.
+Do đó `biblatex` thường là lựa chọn tốt hơn nếu các tiêu mục trong phần tài liệu
+tham khảo có chứa các ký tự không phải ký tự tiếng Anh.
+
+Vì được sinh ra trước, quy trình gốc BibTeX được khá nhiều người sử dụng. Do đó,
+có nhiều nhà xuất bản hay tòa soạn có thể sẽ yêu cầu bạn phải dùng BibTeX. Những
+nhà xuất bản này thông thường không chấp nhận `biblatex`.
+
+Tóm lại, hãy kiểm tra các tiêu chuẩn mà văn bản của bạn cần có. Nếu bạn nhận
+được một tệp `.bst`, bạn cần dùng quy trình BibTeX gốc. Nếu bạn không cần một
+phần tài liệu tham khảo quá phức tạp và chỉ cần sắp xếp tiêu đề theo bảng chữ
+cái tiếng Anh, BibTeX là đủ. Tuy nhiên để có các kiểu tham chiếu phức tạp hơn
+cũng như một hệ thống sắp xếp đầy đủ hơn, bạn có thể cần đến `biblatex`.
+
 ## Bài tập
 
 Thử thao tác với cả `natbib` và `biblatex`. Đối với `natbib`, bạn cần phải chạy
@@ -204,4 +246,4 @@ thực hiện tự động).
 Xem điều gì sẽ xảy ra khi bạn thêm những mục thông tin mới và những tham chiếu
 mới. Thêm một tham chiếu đến một tài liệu tham khảo không được khai báo thông
 tin trong tệp BibTeX để xem nó hoạt động ra sao. Thử dùng tùy biến `numeric` cho
-cả hai gói `natbib` và `biblatex`.
+gói `natbib` hoặc `style=numeric` cho gói `biblatex`.

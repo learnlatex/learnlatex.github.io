@@ -185,7 +185,7 @@ OpenType. Les détails de ce package ne sont pas couverts par ce cours et nous
 vous renvoyons [à sa documentation](https://texdoc.net/pkg/unicode-math).
 Cependant, voici un petit exemple :
 
-```
+```latex
 % !TEX lualatex
 \documentclass[a4paper]{article}
 \usepackage{unicode-math}
