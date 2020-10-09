@@ -73,10 +73,7 @@ major websites for LaTeX online. There are of course others:
 
 If you are planning to send your LaTeX sources to destinations which process
 them, such as publishers, conference organisers or pre-print servers
-(e.g. arXiv), you should check what restrictions they impose. In particular,
-the availability of Unicode engines and/or engines that call external tools
-(such as for working on bibliographies) and up-to-date packages may not be
-guaranteed. It's best to check first and write later!
+(e.g. arXiv), you should check what restrictions they impose.
 
 ## Exercise
 
