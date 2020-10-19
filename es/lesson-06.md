@@ -1,4 +1,5 @@
 ---
+lang: "es"
 title: "Extendendiendo LaTeX usando paquetes"
 ---
 

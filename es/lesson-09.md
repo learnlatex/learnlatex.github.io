@@ -1,4 +1,5 @@
 ---
+lang: "es"
 title: "Referencias cruzadas"
 ---
 

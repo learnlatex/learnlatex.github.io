@@ -1,4 +1,5 @@
 ---
+lang: "es"
 title: "Estructura lógica de un documento"
 ---
 

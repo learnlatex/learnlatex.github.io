@@ -1,4 +1,5 @@
 ---
+lang: "es"
 title: "¿Qué es LaTeX y cómo funciona?"
 ---
 

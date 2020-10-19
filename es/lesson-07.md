@@ -1,4 +1,5 @@
 ---
+lang: "es"
 title: "Incluyendo imágenes y haciendo que las cosas \"floten\""
 ---
 

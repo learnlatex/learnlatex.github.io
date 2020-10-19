@@ -1,4 +1,5 @@
 ---
+lang: "es"
 title: "Formateando el texto: fuentes y espaciado"
 ---
 

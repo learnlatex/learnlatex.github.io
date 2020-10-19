@@ -1,4 +1,5 @@
 ---
+lang: "es"
 title: "Más sobre: Usando los tipos de documento para cambiar el diseño"
 ---
 
