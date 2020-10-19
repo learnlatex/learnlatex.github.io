@@ -1,5 +1,7 @@
 ---
+lang: "de"
 title: learnlatex.org
+lang: de
 ---
 
 ## Herzlich willkommen bei learnlatex.org!
