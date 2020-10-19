@@ -1,4 +1,5 @@
 ---
+lang: "en"
 title: "Your first LaTeX document"
 ---
 

@@ -1,4 +1,5 @@
 ---
+lang: "en"
 title: "Logical structure"
 ---
 

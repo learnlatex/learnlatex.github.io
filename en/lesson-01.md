@@ -1,5 +1,7 @@
 ---
+lang: "en"
 title: "What is LaTeX and how does it work?"
+description: ""
 ---
 
 Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX

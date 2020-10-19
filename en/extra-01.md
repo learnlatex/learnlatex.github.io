@@ -1,4 +1,5 @@
 ---
+lang: "en"
 title: "Examples for further study"
 ---
 

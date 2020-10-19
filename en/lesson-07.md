@@ -1,4 +1,5 @@
 ---
+lang: "en"
 title: "Including graphics and making things 'float'"
 ---
 

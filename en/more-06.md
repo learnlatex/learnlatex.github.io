@@ -1,4 +1,5 @@
 ---
+lang: "en"
 title: "More on: Extending LaTeX using packages and definitions"
 ---
 

@@ -1,4 +1,5 @@
 ---
+lang: "en"
 title: "Accessing documentation and getting help"
 ---
 

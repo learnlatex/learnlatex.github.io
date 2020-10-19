@@ -1,4 +1,5 @@
 ---
+lang: "en"
 title: "Using document classes to influence design"
 ---
 
