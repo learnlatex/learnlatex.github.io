@@ -116,7 +116,8 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-In the definition `#1` denotes the first argument that is supplied
+In the definition `[1]` denotes the number of arguments (here one)
+and `#1` denotes the first argument that is supplied
 (`apples` or `oranges` in this example). You may have up to nine
 arguments, but it is usually best to have just one argument, or
 sometimes none at all.

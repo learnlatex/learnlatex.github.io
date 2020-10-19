@@ -113,7 +113,8 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-Trong phần định nghĩa lệnh, `#1` ký hiệu đối số đầu tiên của lệnh (`apples` hay
+Trong phần định nghĩa lệnh, `[1]` khai báo số đối số của lệnh (1 đối số trong ví
+dụ này), còn `#1` ký hiệu đối số đầu tiên của lệnh (`apples` hay
 `oranges` trong ví dụ này). Bạn có thể dùng tới 9 đối số cho lệnh của mình,
 nhưng thông thường một lệnh chỉ nên có nhiều nhất một đối số mà thôi.
 

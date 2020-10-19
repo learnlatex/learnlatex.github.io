@@ -125,10 +125,10 @@ Tout sur les \kw{pommes} et les \kw{oranges}.
 \end{document}
 ```
 
-Dans la définition de la commande, `#1` désigne le premier argument passé (dans
-cet exemple, `pommes` ou `oranges`). Il peut y avoir jusqu'à neuf arguments,
-mais il est généralement préférable de n'en avoir qu'un seul, voire parfois
-aucun.
+Dans la définition de la commande, `[1]` indique le nombre d'arguments (ici un)
+et `#1` représente le premier argument fourni (dans cet exemple, `pommes` ou
+`oranges`). Il peut y avoir jusqu'à neuf arguments, mais il est généralement
+préférable de n'en avoir qu'un seul, voire parfois aucun.
 
 La définition des commandes ne réduit pas seulement la quantité de code
 nécessaire pour produire un document. Elle permet de séparer la mise en forme et
