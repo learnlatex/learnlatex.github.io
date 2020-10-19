@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Văn bản LaTeX đầu tiên của bạn"
 ---
 

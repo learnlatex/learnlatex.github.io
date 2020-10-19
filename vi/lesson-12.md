@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Phần tài liệu tham khảo"
 ---
 <script>

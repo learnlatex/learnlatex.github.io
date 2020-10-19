@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Chọn fonts và sử dụng các trình biên dịch Unicode"
 ---
 

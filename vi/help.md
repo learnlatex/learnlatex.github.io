@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Sử dụng trang learnlatex.org"
 permalink: /vi/help
 ---

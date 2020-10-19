@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Thêm hình ảnh và làm cho các hình linh động"
 ---
 

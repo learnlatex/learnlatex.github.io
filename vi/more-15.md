@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Bổ sung: Xử lý lỗi"
 ---
 

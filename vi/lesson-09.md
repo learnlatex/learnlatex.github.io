@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Tham chiếu chéo"
 ---
 

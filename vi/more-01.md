@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Bổ sung: LaTeX là gì và nó hoạt động như thế nào?"
 ---
 

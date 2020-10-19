@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Gõ tiếng Việt trong LaTeX"
 next: "extra-01"
 ---

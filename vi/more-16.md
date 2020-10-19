@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Bổ sung: Tiếp cận các hướng dẫn sử dụng gói và tìm kiếm sự trợ giúp"
 ---
 

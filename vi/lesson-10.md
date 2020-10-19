@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Các công thức toán học"
 ---
 

@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Làm việc với LaTeX"
 ---
 

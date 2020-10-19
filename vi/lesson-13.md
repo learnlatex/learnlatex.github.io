@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Cấu trúc cho các văn bản dài"
 ---
 

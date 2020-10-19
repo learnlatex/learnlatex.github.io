@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Những ví dụ chuyên sâu hơn"
 ---
 

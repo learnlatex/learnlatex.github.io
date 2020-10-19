@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Bổ sung: Sử dụng các lớp văn bản"
 ---
 

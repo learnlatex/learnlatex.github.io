@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Mở rộng LaTeX bằng các gói lệnh và định nghĩa các lệnh mới"
 ---
 

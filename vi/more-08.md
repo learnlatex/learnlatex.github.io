@@ -1,4 +1,5 @@
 ---
+lang: "vi"
 title: "Bổ sung: Bảng trong LaTeX"
 ---
 
