@@ -114,7 +114,8 @@ Algo sobre \kw{maçãs} e \kw{laranjas}.
 \end{document}
 ```
 
-Na definição, `#1` simboliza o primeiro argumento que é fornecido ao comando
+Na definição, `[1]` é o número de argumentos (nesse caso um), e `#1` simboliza
+o primeiro argumento que é fornecido ao comando
 (`maçãs` ou `laranjas`, nesse exemplo).  Você pode usar até nove argumentos, mas
 geralmente é melhor usar poucos argumentos; um ou até nenhum.
 
