@@ -1,4 +1,5 @@
 ---
+lang: "pt"
 title: "Acessando documentação e obtendo ajuda"
 ---
 

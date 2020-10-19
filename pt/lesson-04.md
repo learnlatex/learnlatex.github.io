@@ -1,4 +1,5 @@
 ---
+lang: "pt"
 title: "Estrutura Lógica"
 ---
 

@@ -1,4 +1,5 @@
 ---
+lang: "pt"
 title: "Veja mais sobre: Formatação: fontes e espaçamento"
 ---
 

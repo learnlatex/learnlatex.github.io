@@ -1,4 +1,5 @@
 ---
+lang: "pt"
 title: "Lição específica para a língua Portuguesa"
 next: "extra-01"
 ---

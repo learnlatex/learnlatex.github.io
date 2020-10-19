@@ -1,4 +1,5 @@
 ---
+lang: "pt"
 title: "Usando classes de documentos para influenciar o design"
 ---
 

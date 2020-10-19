@@ -1,4 +1,5 @@
 ---
+lang: "pt"
 title: "Veja mais sobre: Extendendo o LaTeX usando pacotes e definições"
 ---
 

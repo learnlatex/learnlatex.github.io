@@ -1,4 +1,5 @@
 ---
+lang: "pt"
 title: "Citações e referências"
 ---
 <script>
