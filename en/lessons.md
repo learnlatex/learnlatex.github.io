@@ -1,0 +1,5 @@
+---
+title: Lessons
+permalink: /lessons
+---
+

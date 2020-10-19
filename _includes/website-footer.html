@@ -28,19 +28,31 @@
       <nav class="website-footer-navigation">
 
         <section class="website-footer-navigation__flex-items">
-          <h2 class="sixth-heading website-footer-navigation__heading">Navigation</h2>
+          <h2 class="sixth-heading website-footer-navigation__heading">{{ site.data.translations['navigation-elements_navigation'][page.lang] }}</h2>
           <ul class="website-footer-navigation__list">
-            <li class="website-footer-navigation__list-item">
-              <a class="website-footer-navigation__anchor" href="{{ "/" | absolute_url }}">Home</a>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url }}">{{ site.data.translations['navigation-elements_home'][page.lang] }}</a>
             </li>
-            <li class="website-footer-navigation__list-item">
-              <a class="website-footer-navigation__anchor" href="#">Lessons</a>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url }}lessons">{{ site.data.translations['navigation-elements_lessons'][page.lang] }}</a>
             </li>
-            <li class="website-footer-navigation__list-item">
-              <a class="website-footer-navigation__anchor" href="{{ "/" | absolute_url }}about">About</a>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url }}mission">{{ site.data.translations['navigation-elements_mission'][page.lang] }}</a>
             </li>
-            <li class="website-footer-navigation__list-item">
-              <a class="website-footer-navigation__anchor" href="{{ "/" | absolute_url }}contact">Contact</a>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url }}contact">{{ site.data.translations['navigation-elements_contact'][page.lang] }}</a>
             </li>
           </ul>
         </section>
@@ -71,8 +83,24 @@
       {% if site.github.private != true and site.github.license %}
         <ul
         class="license">
-          <li><a href="{{ "/" | absolute_url }}licenses">Licenses</a></li>
-          <li><a href="{{ site.github.repository_url }}/issues">Open an issue</a></li>
+          <li>
+            <a 
+              href="{{ "/" | absolute_url }}licenses"
+              hreflang="en"
+              >{{ site.data.translations['navigation-elements_licenses'][page.lang] }}</a>
+          </li>
+          <li>
+            <a 
+              href="{{ site.github.repository_url }}/issues" 
+              hreflang="en"
+              >{{ site.data.translations['navigation-elements_open-an-issue'][page.lang] }}</a>
+          </li>
+          <li>
+            <a 
+              href="{{ site.github.repository_url }}/tree/master/{{ page.path }}"
+              hreflang="en"
+              >{{ site.data.translations['navigation-elements_page-source'][page.lang] }}</a>
+          </li>
         </ul>
       {% endif %}
     </div>
