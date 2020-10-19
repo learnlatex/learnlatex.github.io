@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Trouver de la documentation et demander de l'aide : pour aller plus loin"
 ---
 

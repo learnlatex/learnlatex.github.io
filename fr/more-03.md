@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Votre premier document avec LaTeX: pour aller plus loin"
 ---
 

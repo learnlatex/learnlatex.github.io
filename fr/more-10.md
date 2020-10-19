@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Écrire les mathématiques : pour aller plus loin"
 ---
 

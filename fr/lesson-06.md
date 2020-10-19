@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Étendre les possibilités de LaTeX avec des packages et des définitions"
 ---
 

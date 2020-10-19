@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Utiliser les classes de documents pour changer l'apparence : pour aller plus loin"
 ---
 

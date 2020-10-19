@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "S'organiser pour écrire un document long"
 ---
 <script>

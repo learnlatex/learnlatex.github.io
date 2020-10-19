@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Exemples avancés, comme sources d'inspiration"
 ---
 

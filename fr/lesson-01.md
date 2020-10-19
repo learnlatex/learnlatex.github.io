@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Qu'est-ce que LaTeX, et comment ça marche?"
 ---
 

@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Références croisées : pour aller plus loin"
 ---
 

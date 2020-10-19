@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Les tableaux"
 ---
 

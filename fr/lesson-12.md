@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Bibliographies et références biblio"
 ---
 <script>

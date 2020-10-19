@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Mise en forme du texte: fontes et espacements"
 ---
 

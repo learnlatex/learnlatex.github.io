@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Inclure des images et les faire « flotter »"
 ---
 

@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Travailler avec LaTeX"
 ---
 

@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Structure logique de votre document : pour aller plus loin"
 ---
 

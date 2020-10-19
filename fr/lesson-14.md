@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Choisir des polices de caractères et utiliser Unicode"
 ---
 

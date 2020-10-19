@@ -1,4 +1,5 @@
 ---
+lang: "fr"
 title: "Quelques particularités pour le français"
 next: "extra-01"
 ---
