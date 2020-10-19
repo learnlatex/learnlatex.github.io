@@ -7,11 +7,11 @@
       <section class="mission-statement">
 
         <h2 
-          class="visually-hidden mission-statement__heading">
-          Mission statement
-        </h2>
-        
-        <a class="mission-statement__logo" href="/">
+          class="visually-hidden mission-statement__heading">{{ site.data.translations['mission-statement_heading'][page.lang] }}</h2>
+
+        <a 
+          class="mission-statement__logo" 
+          href="/">
           <img 
             src="/assets/images/logo-plain.svg" 
             alt="Learn LaTeX logo"
@@ -19,7 +19,7 @@
         </a>
         
         <p 
-          class="mission-statement__paragraph">Learn typesetting with LaTeX in 16 small, beginner friendly lessons.</p>
+          class="mission-statement__paragraph">{{ site.data.translations['mission-statement_text'][page.lang] }}</p>
 
       </section>
       <!-- mission statement end -->
