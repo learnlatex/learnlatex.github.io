@@ -7,7 +7,7 @@
       <section class="mission-statement">
 
         <h2 
-          class="visually-hidden mission-statement__heading">{{ site.data.translations['mission-statement_heading'][page.lang] }}</h2>
+          class="visually-hidden mission-statement__heading">{{ site.data.translations['heading_mission-statement'][page.lang] }}</h2>
 
         <a 
           class="mission-statement__logo" 
@@ -19,7 +19,7 @@
         </a>
         
         <p 
-          class="mission-statement__paragraph">{{ site.data.translations['mission-statement_text'][page.lang] }}</p>
+          class="mission-statement__paragraph">{{ site.data.translations['mission-statement'][page.lang] }}</p>
 
       </section>
       <!-- mission statement end -->
@@ -27,44 +27,66 @@
       <!-- footer navigation start -->
       <nav class="website-footer-navigation">
 
-        <section class="website-footer-navigation__flex-items">
-          <h2 class="sixth-heading website-footer-navigation__heading">{{ site.data.translations['navigation-elements_navigation'][page.lang] }}</h2>
-          <ul class="website-footer-navigation__list">
+        <section 
+          class="website-footer-navigation__flex-items">
+          <h2 
+            class="sixth-heading website-footer-navigation__heading"
+            >{{ site.data.translations['heading_navigation'][page.lang] }}</h2>
+          <ul 
+            class="website-footer-navigation__list">
             <li 
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url }}">{{ site.data.translations['navigation-elements_home'][page.lang] }}</a>
+                href="{{ "/" | absolute_url }}"
+                >{{ site.data.translations['navigation-elements_home'][page.lang] }}</a>
             </li>
             <li 
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url }}lessons">{{ site.data.translations['navigation-elements_lessons'][page.lang] }}</a>
+                href="{{ "/" | absolute_url }}lessons"
+                >{{ site.data.translations['navigation-elements_lessons'][page.lang] }}</a>
             </li>
             <li 
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url }}mission">{{ site.data.translations['navigation-elements_mission'][page.lang] }}</a>
+                href="{{ "/" | absolute_url }}mission"
+                >{{ site.data.translations['navigation-elements_mission'][page.lang] }}</a>
             </li>
             <li 
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url }}contact">{{ site.data.translations['navigation-elements_contact'][page.lang] }}</a>
+                href="{{ "/" | absolute_url }}contact"
+                >{{ site.data.translations['navigation-elements_contact'][page.lang] }}</a>
             </li>
           </ul>
         </section>
 
-        <section class="website-footer-navigation__flex-items">
-          <h2 class="sixth-heading website-footer-navigation__heading">Planet</h2>
-          <ul class="website-footer-navigation__list">
-            <li class="website-footer-navigation__list-item">
-              <a class="website-footer-navigation__anchor" href="https://www.latex-project.org/">The LaTeX Project</a>
+        <section 
+          class="website-footer-navigation__flex-items">
+          <h2 
+            class="sixth-heading website-footer-navigation__heading"
+            >{{ site.data.translations['heading_planet'][page.lang] }}</h2>
+          <ul 
+            class="website-footer-navigation__list">
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="https://www.latex-project.org/"
+                hreflang="en"
+                >The LaTeX Project</a>
             </li>
-            <li class="website-footer-navigation__list-item">
-              <a class="website-footer-navigation__anchor" href="https://tug.org/">Tex User Group</a>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="https://tug.org/"
+                hreflang="en"
+                >Tex User Group</a>
             </li>
           </ul>
         </section>
