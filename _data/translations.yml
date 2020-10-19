@@ -20,3 +20,17 @@ skip-link:
   fr: "Passer au contenu principal"
   pt: "Ir para o conteúdo principal"
   vi: "Chuyển đến nội dung chính"
+mission-statement_heading:
+  de: "Leitbild"
+  en: "Mission statement"
+  es: ""
+  fr: ""
+  pt: ""
+  vi: ""
+mission-statement_text:
+  de: "Lernen Sie Schriftsetzen mit LaTeX in 16 kleinen, anfängerfreundlichen Lektionen."
+  en: "Learn typesetting with LaTeX in 16 small, beginner friendly lessons."
+  es: ""
+  fr: ""
+  pt: ""
+  vi: ""
