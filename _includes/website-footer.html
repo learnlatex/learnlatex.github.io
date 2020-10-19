@@ -36,17 +36,19 @@
             class="website-footer-navigation__list">
             <li 
               class="website-footer-navigation__list-item">
-              <a 
-                class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url }}"
-                >{{ site.data.translations['navigation-elements_home'][page.lang] }}</a>
-            </li>
-            <li 
-              class="website-footer-navigation__list-item">
-              <a 
-                class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url }}lessons"
-                >{{ site.data.translations['navigation-elements_lessons'][page.lang] }}</a>
+              <!-- Link to actual home page, if language is English -->
+              {%- if page.lang == "en" -%}
+                <a 
+                  class="website-footer-navigation__anchor" 
+                  href="{{ "/" | absolute_url }}"
+                  >{{ site.data.translations['navigation-elements_home'][page.lang] }}</a>
+                <!-- For languages other than English anchor will point to translated home pages -->
+                {%- else -%}
+                <a 
+                  class="website-footer-navigation__anchor" 
+                  href="{{ "/" | absolute_url | append: page.lang | append: "/" }}"
+                  >{{ site.data.translations['navigation-elements_home'][page.lang] }}</a>
+              {%- endif -%}
             </li>
             <li 
               class="website-footer-navigation__list-item">

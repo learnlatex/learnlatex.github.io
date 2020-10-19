@@ -1,4 +1,5 @@
 ---
+lang: "en"
 title: learnlatex.org
 permalink: /
 ---
