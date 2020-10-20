@@ -1,4 +1,5 @@
 ---
+lang: "ja"
 title: "Using the learnlatex.org site (Japanese)"
 permalink: /ja/help
 ---

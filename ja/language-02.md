@@ -1,4 +1,5 @@
 ---
+lang: "ja"
 title: "縦書き"
 next: "extra-01"
 ---

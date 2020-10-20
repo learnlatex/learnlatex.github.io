@@ -1,4 +1,5 @@
 ---
+lang: "ja"
 title: "LaTeX engines for Japanese"
 ---
 
