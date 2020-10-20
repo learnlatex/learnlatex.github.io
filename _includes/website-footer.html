@@ -41,13 +41,13 @@
                 <a 
                   class="website-footer-navigation__anchor" 
                   href="{{ "/" | absolute_url }}"
-                  >{{ site.data.translations['navigation-elements_home'][page.lang] }}</a>
+                  >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
                 <!-- For languages other than English anchor will point to translated home pages -->
                 {%- else -%}
                 <a 
                   class="website-footer-navigation__anchor" 
                   href="{{ "/" | absolute_url | append: page.lang | append: "/" }}"
-                  >{{ site.data.translations['navigation-elements_home'][page.lang] }}</a>
+                  >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
               {%- endif -%}
             </li>
             <li 
@@ -55,14 +55,14 @@
               <a 
                 class="website-footer-navigation__anchor" 
                 href="{{ "/" | absolute_url }}mission"
-                >{{ site.data.translations['navigation-elements_mission'][page.lang] }}</a>
+                >{{ site.data.translations['navigational-elements_mission'][page.lang] }}</a>
             </li>
             <li 
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
                 href="{{ "/" | absolute_url }}contact"
-                >{{ site.data.translations['navigation-elements_contact'][page.lang] }}</a>
+                >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
             </li>
           </ul>
         </section>
@@ -111,19 +111,19 @@
             <a 
               href="{{ "/" | absolute_url }}licenses"
               hreflang="en"
-              >{{ site.data.translations['navigation-elements_licenses'][page.lang] }}</a>
+              >{{ site.data.translations['navigational-elements_licenses'][page.lang] }}</a>
           </li>
           <li>
             <a 
               href="{{ site.github.repository_url }}/issues" 
               hreflang="en"
-              >{{ site.data.translations['navigation-elements_open-an-issue'][page.lang] }}</a>
+              >{{ site.data.translations['navigational-elements_open-an-issue'][page.lang] }}</a>
           </li>
           <li>
             <a 
               href="{{ site.github.repository_url }}/tree/master/{{ page.path }}"
               hreflang="en"
-              >{{ site.data.translations['navigation-elements_page-source'][page.lang] }}</a>
+              >{{ site.data.translations['navigational-elements_page-source'][page.lang] }}</a>
           </li>
         </ul>
       {% endif %}
