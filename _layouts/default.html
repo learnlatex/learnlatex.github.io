@@ -102,49 +102,71 @@ layout: compress
 
       <!-- inter-lesson links start -->
       {% if page.path contains "lesson-" %}
-        <p><small>
-          <a href = "{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}">{% include_relative includes/more.html %}</a>
-           <br>
-           {% if page.path contains "lesson-16" %}
-           <a href = "language-01">{% include_relative includes/next.html %}</a>
-           {% else %}
-           {% if page.name contains "lesson-1" or  page.name contains "lesson-09" %}
-           <a href = "lesson-{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
-           {% else %}
-            <a href = "lesson-0{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+        <nav>
+          <a 
+            href="{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}"
+            >{{ site.data.translations['navigational-elements_more'][page.lang] }}</a>
+          <br>
+          {% if page.path contains "lesson-16" %}
+            <a 
+              href="language-01"
+              >{{ site.data.translations['navigational-elements_next'][page.lang] }}</a>
+          {% else %}
+              {% if page.name contains "lesson-1" or page.name contains "lesson-09" %}
+                <a 
+                  href="lesson-{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}"
+                  >{{ site.data.translations['navigational-elements_next'][page.lang] }}</a>
+              {% else %}
+                <a 
+                  href="lesson-0{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}"
+                  >{{ site.data.translations['navigational-elements_next'][page.lang] }}</a>
+              {% endif %}
           {% endif %}
-          {% endif %}
-        </small></p>
+        </nav>
       {% endif %}
 
       {% if page.path contains "more-" %}
-        <p><small>
-          <a href = "{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}">{% include_relative includes/return.html %}</a>
+        <nav>
+          <a 
+            href="{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}"
+            >{{ site.data.translations['navigational-elements_return'][page.lang] }}</a>
           <br>
           {% if page.path contains "more-16" %}
-          <a href = "language-01">{% include_relative includes/nextmain.html %}</a>
+            <a 
+              href="language-01"
+              >{{ site.data.translations['navigational-elements_nextmain'][page.lang] }}</a>
           {% else %}
-          {% if page.name contains "more-1" or  page.name contains "more-09" %}
-          <a href = "lesson-{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
-          {% else %}
-          <a href = "lesson-0{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
+            {% if page.name contains "more-1" or  page.name contains "more-09" %}
+              <a 
+                href="lesson-{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}"
+                >{{ site.data.translations['navigational-elements_nextmain'][page.lang] }}</a>
+            {% else %}
+              <a 
+                href="lesson-0{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}"
+                >{{ site.data.translations['navigational-elements_nextmain'][page.lang] }}</a>
+            {% endif %}
           {% endif %}
-          {% endif %}
-        </small></p>
+        </nav>
       {% endif %}
 
       {% if page.path contains "language-" %}
-        <p><small>
+        <nav>
           {% if page.next  %}
-          <a href = "{{page.next}}">{% include_relative includes/next.html %}</a>
+            <a 
+              href="{{page.next}}"
+              >{{ site.data.translations['navigational-elements_next'][page.lang] }}</a>
           {% else %}
-          {% if page.name contains "language-1" or  page.name contains "language-09" %}
-          <a href = "language-{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
-          {% else %}
-          <a href = "language-0{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+            {% if page.name contains "language-1" or  page.name contains "language-09" %}
+              <a 
+                href="language-{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}"
+                >{{ site.data.translations['navigational-elements_next'][page.lang] }}</a>
+            {% else %}
+              <a 
+                href="language-0{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}"
+                >{{ site.data.translations['navigational-elements_next'][page.lang] }}</a>
+            {% endif %}
           {% endif %}
-          {% endif %}
-        </small></p>
+        </nav>
       {% endif %}
       <!-- inter-lesson links end -->
 
