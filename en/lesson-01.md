@@ -1,7 +1,7 @@
 ---
 lang: "en"
-title: "What is LaTeX and how does it work?"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+title: "LaTeX Basics"
+description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
 ---
 
 Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
