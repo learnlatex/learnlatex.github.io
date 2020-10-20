@@ -11,6 +11,7 @@ change-language:
   en: "Read this page in a different language"
   es: "Lea esta página en un idioma diferente"
   fr: "Lisez cette page dans une autre langue"
+  ja: "このページを別の言語で読む"
   pt: "Leia esta página em um idioma diferente"
   vi: "Đọc trang này bằng một ngôn ngữ khác"
 skip-link:
@@ -18,6 +19,7 @@ skip-link:
   en: "Skip to main content"
   es: "Saltar al contenido principal"
   fr: "Passer au contenu principal"
+  ja: "メインコンテンツにスキップ"
   pt: "Ir para o conteúdo principal"
   vi: "Chuyển đến nội dung chính"
 heading_mission-statement:
@@ -25,6 +27,7 @@ heading_mission-statement:
   en: "Mission statement"
   es: "Estado de la misión"
   fr: "Énoncé de mission"
+  ja: "ミッションステートメント"
   pt: "Declaração de missão"
   vi: "Tuyên bố sứ mệnh"
 mission-statement:
@@ -32,6 +35,7 @@ mission-statement:
   en: "Learn typesetting with LaTeX in 16 small, beginner friendly lessons."
   es: "Aprenda a escribir con LaTeX en 16 lecciones pequeñas para principiantes."
   fr: "Apprenez la composition avec LaTeX dans 16 petites leçons adaptées aux débutants."
+  ja: "LaTeXを使用したタイプ設定について、初心者向けの16の小さなレッスンで学びます。"
   pt: "Aprenda composição com LaTeX em 16 pequenas lições para iniciantes."
   vi: "Học cách sắp chữ với LaTeX trong 16 bài học nhỏ, thân thiện với người mới bắt đầu."
 heading_planet:
@@ -39,6 +43,7 @@ heading_planet:
   en: "Planet"
   es: "Planeta"
   fr: "Planète"
+  ja: "惑星"
   pt: "Planeta"
   vi: "Hành tinh"
 heading_navigation:
@@ -46,6 +51,7 @@ heading_navigation:
   en: "Navigation"
   es: "Navegación"
   fr: "Navigation"
+  ja: "ナビゲーション"
   pt: "Navegação"
   vi: "Dẫn đường"
 navigational-elements_home:
@@ -53,6 +59,7 @@ navigational-elements_home:
   en: "Home"
   es: "Página de inicio"
   fr: "Page d'accueil"
+  ja: "ホームページ"
   pt: "Pagina inicial"
   vi: "Trang chủ"
 navigational-elements_mission:
@@ -60,6 +67,7 @@ navigational-elements_mission:
   en: "Mission"
   es: "Misión"
   fr: "Mission"
+  ja: "ミッション"
   pt: "Missão"
   vi: "Sứ mệnh"
 navigational-elements_contact:
@@ -67,6 +75,7 @@ navigational-elements_contact:
   en: "Contact"
   es: "Contacto"
   fr: "Contact"
+  ja: "連絡先"
   pt: "Contato"
   vi: "Tiếp xúc"
 navigational-elements_licenses:
@@ -74,6 +83,7 @@ navigational-elements_licenses:
   en: "Licenses"
   es: "Licencias"
   fr: "Licences"
+  ja: "ライセンス"
   pt: "Licenças"
   vi: "Giấy phép"
 navigational-elements_open-an-issue:
@@ -81,6 +91,7 @@ navigational-elements_open-an-issue:
   en: "Open an issue"
   es: "Abrir un problema"
   fr: "Ouvrez un problème"
+  ja: "問題を開く"
   pt: "Abra um problema"
   vi: "Mở một vấn đề"
 navigational-elements_page-source:
@@ -88,6 +99,7 @@ navigational-elements_page-source:
   en: "Page source"
   es: "Fuente de la página"
   fr: "Source de la page"
+  ja: "ページソース"
   pt: "Fonte da página"
   vi: "Nguồn trang"
 navigational-elements_more:
@@ -95,6 +107,7 @@ navigational-elements_more:
   en: "See more on this topic"
   es: "Ver más sobre este tema"
   fr: "Pour aller plus loin…"
+  ja: "このトピックの詳細を見る"
   pt: "Veja mais sobre este tópico"
   vi: "Xem bài bổ sung của bài này"
 navigational-elements_next:
@@ -102,6 +115,7 @@ navigational-elements_next:
   en: "Next lesson"
   es: "Siguiente lección"
   fr: "Leçon suivante…"
+  ja: "次のレッスン"
   pt: "Próxima lição"
   vi: "Bài tiếp theo"
 navigational-elements_nextmain:
@@ -109,6 +123,7 @@ navigational-elements_nextmain:
   en: "Next main lesson"
   es: "Siguiente lección principal"
   fr: "Leçon principale suivante…"
+  ja: "次のメインレッスン"
   pt: "Próxima lição principal"
   vi: "Bài chính tiếp theo"
 navigational-elements_return:
@@ -116,5 +131,6 @@ navigational-elements_return:
   en: "Return to main lesson"
   es: "Volver a la lección principal"
   fr: "Retour à la leçon principale."
+  ja: "メインレッスンに戻る"
   pt: "Retornar à lição principal"
   vi: "Quay trở lại bài chính"
