@@ -1,18 +1,35 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/learnlatex-favicon.png">
-    
+    <meta name="referrer" content="no-referrer">
     {% if site.title and site.title == page.title %}
       <title>{{ page.title }}</title>
-    {% else %}
+      {% else %}
       <title>{{ page.title }} | {{site.title}}</title>
     {% endif %}
+
+    <!-- alternate links start -->
+    {% include alternate-links.html %}
+    <!-- alternate links end -->
+
+    <link rel="icon" href="{{ "/assets/images/favicon.svg" | relative_url }}" type="image/svg+xml" sizes="any">
     
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+    <link rel="canonical" href="https://www.learnlatex.org/">
+
+    <!-- script to run latex start -->
+    <script src="{{ "/assets/scripts/runlatex.js" | relative_url}}"></script>
+    <!-- script to run latex end -->
+
+    <!-- adding anchors to headings start 1/2 --> 
+    <script src="{{ "/assets/scripts/anchor.min.js" | relative_url }}"></script>
+    <!-- adding anchors to headings end 1/2 --> 
 
     {% if page.path contains "-" or page.path contains "help" %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
@@ -27,74 +44,127 @@
 	  margin-top:16px;
       }
     </style>
-    <script src="../scripts/runlatex.js"></script>
     <script src="includes/buttons.js"></script>
-    <style> td code {white-space: nowrap}</style>
     {% endif %}
+
     <script>
- {% if site.title and site.title == page.title %}
-  function switchlang(e) {
-      window.location.href="{{ "/" | absolute_url }}" + e.value;
-  }
+      {% if site.title and site.title == page.title %}
+        function switchlang(e) {
+          window.location.href="{{ "/" | absolute_url }}" + e.value;
+        }
       {% else %}
-  function switchlang(e) {
-      window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l](-[a-zA-Z]+)?)\//,'/'+e.value+'/').replace(/\/language-.*/,'');
-  }
+        function switchlang(e) {
+          window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l](-[a-zA-Z]+)?)\//,'/'+e.value+'/').replace(/\/language-.*/,'');
+        }
       {% endif %}
-      
-</script>
+    </script>
+
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-    <div style="float:right;">
-      <select id = "myList" onchange="switchlang(this);">
-	{% assign lang = "en" %}
-	{%- for l in site.langs -%}
-	{% assign lx = "/" | prepend: l %}
-	{%- if page.path contains lx -%}
-	{% assign lang = l %}
-               <option selected value = "{{l}}">{{l}}</option>
-	{%- else -%}
-               <option value = "{{l}}">{{l}}</option>
-	{%- endif -%}
-	      {%- endfor -%}
-      </select>
-    </div>
 
-      <img 
-        src="/assets/images/learnlatex-logo.svg" 
-        alt="Learn LaTeX logo" 
-        height="50" 
-        width="278">
+    <!-- skip link start -->
+    <a 
+      href="#main" 
+      class="visually-hidden focusable skip-link"
+      >{{ site.data.translations['skip-link'][page.lang] }}
+    </a>
+    <!-- skip link end -->
 
+    <!-- language navigation start -->
+    {% include alternative-languages.html %}
+    <!-- language navigation stop -->
+
+    <!-- website header start -->
+    {% include website-header.html %}
+    <!-- website header end -->
+
+    <!-- title start -->
+    <div class="wrapper">
       {% if site.title and site.title != page.title %}
-      <h1>	{% if lang =="en" %}
-	<a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
-	{%- else -%}
-	<a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }}</a>
-	{% endif %}
-      </h1>
+        <span class="breadcrumb">
+          {% if lang =="en" %}
+            <a href="{{ "/" | absolute_url }}">Home</a>
+          {%- else -%}
+            <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }} ({{ lang }})</a>
+          {% endif %}
+        </span>
       {% endif %}
+    </div>
+    <!-- title end -->
 
+    <!-- main content start -->
+    <main
+      id="main">
+
+      <!-- wrapper start -->
+      <div class="wrapper">
       {{ content }}
 
-      {% if site.github.private != true and site.github.license %}
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        <a href="{{ "/" | absolute_url }}about">This site</a> is under construction <a href="{{ site.github.repository_url }}/tree/master/{{ page.path }}">Git Source</a>.
-      </div>
+      <!-- inter-lesson links start -->
+      {% if page.path contains "lesson-" %}
+        <p><small>
+          <a href = "{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}">{% include_relative includes/more.html %}</a>
+           <br>
+           {% if page.path contains "lesson-16" %}
+           <a href = "language-01">{% include_relative includes/next.html %}</a>
+           {% else %}
+           {% if page.name contains "lesson-1" or  page.name contains "lesson-09" %}
+           <a href = "lesson-{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+           {% else %}
+            <a href = "lesson-0{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+          {% endif %}
+          {% endif %}
+        </small></p>
       {% endif %}
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+
+      {% if page.path contains "more-" %}
+        <p><small>
+          <a href = "{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}">{% include_relative includes/return.html %}</a>
+          <br>
+          {% if page.path contains "more-16" %}
+          <a href = "language-01">{% include_relative includes/nextmain.html %}</a>
+          {% else %}
+          {% if page.name contains "more-1" or  page.name contains "more-09" %}
+          <a href = "lesson-{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
+          {% else %}
+          <a href = "lesson-0{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
+          {% endif %}
+          {% endif %}
+        </small></p>
+      {% endif %}
+
+      {% if page.path contains "language-" %}
+        <p><small>
+          {% if page.next  %}
+          <a href = "{{page.next}}">{% include_relative includes/next.html %}</a>
+          {% else %}
+          {% if page.name contains "language-1" or  page.name contains "language-09" %}
+          <a href = "language-{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+          {% else %}
+          <a href = "language-0{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+          {% endif %}
+          {% endif %}
+        </small></p>
+      {% endif %}
+      <!-- inter-lesson links end -->
+
+      </div>
+      <!-- wrapper end -->
+
+    </main>
+    <!-- main content end -->
+
+    <!-- website footer start -->
+    {% include website-footer.html %}
+    <!-- website footer end -->
+
+    <!-- language navigation start -->
+    {% include alternative-languages.html %}
+    <!-- language navigation stop -->
+
+    <!-- adding anchors to headings start 2/2 --> 
     <script>anchors.add();</script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
+    <!-- adding anchors to headings end 2/2 -->
+
   </body>
 </html>
