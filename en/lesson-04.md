@@ -1,6 +1,7 @@
 ---
 lang: "en"
 title: "Logical structure"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 ---
 
 LaTeX provides ways to concentrate on the logical structure of your document, as well as the

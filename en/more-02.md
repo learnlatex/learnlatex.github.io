@@ -1,6 +1,7 @@
 ---
 lang: "en"
 title: "More on: Working with LaTeX"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 ---
 
 For most of our examples, we don't use a program called `latex` but instead

@@ -1,6 +1,7 @@
 ---
 lang: "en"
 title: "More on: Dealing with errors"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 ---
 
 ## Errors reported at ends of environments

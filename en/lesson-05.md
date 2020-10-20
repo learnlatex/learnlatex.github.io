@@ -1,6 +1,7 @@
 ---
 lang: "en"
 title: "Using document classes to influence design"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 ---
 
 ## What a document class does

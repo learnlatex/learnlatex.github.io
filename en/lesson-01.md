@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "What is LaTeX and how does it work?"
-description: ""
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 ---
 
 Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX

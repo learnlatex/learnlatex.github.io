@@ -1,6 +1,7 @@
 ---
 lang: "en"
 title: "Working with LaTeX"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 ---
 
 Unlike many computer programs, LaTeX is not a single application containing

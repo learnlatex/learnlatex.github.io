@@ -1,6 +1,7 @@
 ---
 lang: "en"
 title: "More on: What is LaTeX and how does it work?"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 ---
 
 The word “LaTeX” actually consists of two components, “La” and “TeX”. In the
