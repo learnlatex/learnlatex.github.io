@@ -48,45 +48,73 @@ heading_navigation:
   fr: "Navigation"
   pt: "Navegação"
   vi: "Dẫn đường"
-navigation-elements_home:
+navigational-elements_home:
   de: "Startseite"
   en: "Home"
   es: "Página de inicio"
   fr: "Page d'accueil"
   pt: "Pagina inicial"
   vi: "Trang chủ"
-navigation-elements_mission:
+navigational-elements_mission:
   de: "Mission"
   en: "Mission"
   es: "Misión"
   fr: "Mission"
   pt: "Missão"
   vi: "Sứ mệnh"
-navigation-elements_contact:
+navigational-elements_contact:
   de: "Kontakt"
   en: "Contact"
   es: "Contacto"
   fr: "Contact"
   pt: "Contato"
   vi: "Tiếp xúc"
-navigation-elements_licenses:
+navigational-elements_licenses:
   de: "Lizenzen"
   en: "Licenses"
   es: "Licencias"
   fr: "Licences"
   pt: "Licenças"
   vi: "Giấy phép"
-navigation-elements_open-an-issue:
+navigational-elements_open-an-issue:
   de: "Problem melden"
   en: "Open an issue"
   es: "Abrir un problema"
   fr: "Ouvrez un problème"
   pt: "Abra um problema"
   vi: "Mở một vấn đề"
-navigation-elements_page-source:
+navigational-elements_page-source:
   de: "Seitenquelltext"
   en: "Page source"
   es: "Fuente de la página"
   fr: "Source de la page"
   pt: "Fonte da página"
   vi: "Nguồn trang"
+navigational-elements_more:
+  de: "Mehr zu diesem Thema"
+  en: "See more on this topic"
+  es: "Ver más sobre este tema"
+  fr: "Pour aller plus loin…"
+  pt: "Veja mais sobre este tópico"
+  vi: "Xem bài bổ sung của bài này"
+navigational-elements_next:
+  de: "Nächste Lektion"
+  en: "Next lesson"
+  es: "Siguiente lección"
+  fr: "Leçon suivante…"
+  pt: "Próxima lição"
+  vi: "Bài tiếp theo"
+navigational-elements_nextmain:
+  de: "Nächste Hauptlektion"
+  en: "Next main lesson"
+  es: "Siguiente lección principal"
+  fr: "Leçon principale suivante…"
+  pt: "Próxima lição principal"
+  vi: "Bài chính tiếp theo"
+navigational-elements_return:
+  de: "Zurück zur Hauptlektion"
+  en: "Return to main lesson"
+  es: "Volver a la lección principal"
+  fr: "Retour à la leçon principale."
+  pt: "Retornar à lição principal"
+  vi: "Quay trở lại bài chính"
