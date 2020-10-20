@@ -73,28 +73,3 @@ defaults:
       lang: "ja"
       label: "日本語"
       layout: "default"
-
-# FIXME: May not be needed anymore, succeeded by _data/languages.yml
-# Languages selectable in front-end language selection drop down
-languages:
-  - en
-  - es
-  - fr
-  - pt
-  - vi
-
-
-
-
-
-# EXCLUSIONS
-# Exclude from Jekyll processing (in alphabetical order)
-# https://jekyllrb.com/docs/configuration/options/
-exclude:
-  - .ruby-version
-  - example.json
-  - example.yaml
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - vendor
