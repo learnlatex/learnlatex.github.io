@@ -2,6 +2,8 @@
 lang: "en"
 title: "Using document classes to influence design"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Document classes"
+toc-description: "Setting the general document layout."
 ---
 
 ## What a document class does

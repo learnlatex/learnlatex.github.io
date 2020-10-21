@@ -308,11 +308,12 @@ table td code {
 /*  #LESSONS TOC                                                              */
 /*----------------------------------------------------------------------------*/
 .lessons-toc {
+  columns: 2;
   list-style: none;
   margin: 0;
 
   &__list-item {
-    margin: 0 0 .5rem;
+    margin: 0 0 .6rem;
   }
   &__anchor {
   }

@@ -2,6 +2,8 @@
 lang: "en"
 title: "Structuring longer documents"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Structuring sources"
+toc-description: "Spliting up sources in a controlled way."
 ---
 
 <script>

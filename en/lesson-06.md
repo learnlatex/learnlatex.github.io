@@ -2,6 +2,8 @@
 lang: "en"
 title: "Extending LaTeX using packages and definitions"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Extending LaTeX"
+toc-description: "Using packages and definitions."
 ---
 
 After having declared a class, in the preamble you can modify functionality in

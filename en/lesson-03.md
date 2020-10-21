@@ -2,6 +2,8 @@
 lang: "en"
 title: "Your first LaTeX document"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "LaTeX documents"
+toc-description: "The mixture of text and commands."
 ---
 
 Our first LaTeX document is going to be very simple: the idea is to show you

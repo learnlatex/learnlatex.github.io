@@ -2,6 +2,8 @@
 lang: "en"
 title: "Mathematics"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Mathematics"
+toc-description: "Math mode and mathematical notation."
 ---
 
 ## Math mode

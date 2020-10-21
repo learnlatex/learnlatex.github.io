@@ -2,6 +2,8 @@
 lang: "en"
 title: "Including graphics and making things 'float'"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Using graphics"
+toc-description: "Appearance, spacing and positioning."
 ---
 
 ## Including graphics

@@ -41,7 +41,7 @@ system is up-to-date.
 
 ## The lessons
 
-{% include toc.html  prefix="en/lesson" %}
+{% include toc-lessons.html  prefix="en/lesson" %}
 
 ### Additional lessons specific to learnlatex.org/en
 

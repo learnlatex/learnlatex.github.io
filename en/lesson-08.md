@@ -2,6 +2,8 @@
 lang: "en"
 title: "Tables"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "LaTeX tables"
+toc-description: "Fundamentals of working with tables."
 ---
 
 

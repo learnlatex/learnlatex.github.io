@@ -2,6 +2,8 @@
 lang: "en"
 title: "Citations and references"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Citations & references"
+toc-description: "Working with reference databases."
 ---
 <script>
 preincludes = {

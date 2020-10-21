@@ -2,6 +2,8 @@
 lang: "en"
 title: "Dealing with errors"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Error handling"
+toc-description: "Dealing with unexpected behaviors."
 ---
 
 

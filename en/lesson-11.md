@@ -2,6 +2,8 @@
 lang: "en"
 title: "Formatting: fonts and spacing"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Fonts & spacing"
+toc-description: "Text formatting for visual presentation."
 ---
 
 ## Paragraph spacing

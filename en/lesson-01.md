@@ -1,7 +1,9 @@
 ---
 lang: "en"
-title: "LaTeX Basics"
+title: "What is LaTeX and how does it work?"
 description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
+toc-anchor-text: "LaTeX basics"
+toc-description: "What LaTeX is and how it works."
 ---
 
 Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX

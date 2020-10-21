@@ -2,6 +2,8 @@
 lang: "en"
 title: "Selecting fonts and using Unicode engines"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Fonts & Unicode engines"
+toc-description: "Selecting fonts and file encoding."
 ---
 
 When TeX and LaTeX first started being widely used they largely only handled
