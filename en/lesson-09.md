@@ -3,7 +3,7 @@ lang: "en"
 title: "Cross-referencing"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 toc-anchor-text: "Cross-referencing"
-toc-description: "Refering to figures, tables and equations."
+toc-description: "Refering to figures, tables, etc."
 ---
 
 ## The `\label` and `\ref` mechanism

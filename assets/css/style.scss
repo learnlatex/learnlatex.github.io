@@ -309,28 +309,47 @@ table td code {
 /*----------------------------------------------------------------------------*/
 .lessons-toc {
   columns: 2;
+  column-gap: 3rem;
   list-style: none;
-  margin: 0;
+  margin: 2.2rem 0;
+
+  @media (max-width: 50rem) {
+    column-gap: 1rem;
+  }
+  @media (max-width: 37rem) {
+    columns: 1;
+  }
 
   &__list-item {
-    margin: 0 0 .6rem;
+    margin: 0 0 1.8rem;
   }
   &__anchor {
+    &:hover {
+      text-decoration: none;
+    }
   }
   &__numbering {
+    border-right: 1px solid var(--color_white-0);
+    color: var(--color_black-2);
     display: inline-block;
-    font-weight: bold;
     font-variant-numeric: tabular-nums;
+    margin: 0 .4rem 0 0;
+    padding: 0 .5rem 0 0;
     text-align: right;
-    width: 1.5em;
+    width: 1.6rem;
   }
   &__link-text {
+    background: var(--color_grey-0);
+    font-size: 1rem;
+    margin: 0 0 .3rem 0;
+    padding: .1rem 0;
   }
   &__description-text {
     color: var(--color_black-0);
     display: block;
-    font-size: .9rem;
+    font-size: .8rem;
     line-height: 1.2rem;
+    margin: 0 0 0 2.85rem;
   }
 }
 
