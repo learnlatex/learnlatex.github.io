@@ -557,3 +557,44 @@ table td code {
 .skip-link.visually-hidden.focusable:focus {
   padding: .2rem 0;
 }
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  #HOME PAGE                                                                */
+/*----------------------------------------------------------------------------*/
+.home {
+  background: var(--color_blue-0);
+  text-align: center;
+
+  .language-navigation {
+    background: none;
+  }
+
+  .language-navigation__list {
+    list-style-type: none;
+    margin: 0;
+    padding: .15rem 0 .25rem;
+  }
+
+  .language-navigation__list-item {
+    display: inline;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+    padding: 0 1rem;
+  }
+
+  .language-navigation__anchor {
+    color: var(--color_grey-2);
+    text-decoration: none;
+    overflow-wrap: break-word;
+  }
+
+  .language-navigation__anchor:hover {
+    color: var(--color_white-0);
+    text-decoration: underline;
+  }
+
+}

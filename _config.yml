@@ -29,6 +29,12 @@ defaults:
       path: ""
     values:
       lang: "en"
+      layout: "home"
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
       label: "English"
       layout: "default"
   - 

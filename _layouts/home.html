@@ -1,0 +1,82 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    {% if site.title and site.title == page.title %}
+      <title>{{ page.title }}</title>
+      {% else %}
+      <title>{{ page.title }} | {{site.title}}</title>
+    {% endif %}
+
+    <link rel="icon" href="{{ "/assets/images/favicon.svg" | relative_url }}" type="image/svg+xml" sizes="any">
+    
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+    <link rel="canonical" href="https://www.learnlatex.org/">
+
+  </head>
+  <body class="home">
+
+    <!-- skip link start -->
+    <a 
+      href="#main" 
+      class="visually-hidden focusable skip-link"
+      >{{ site.data.translations['skip-link'][page.lang] }}
+    </a>
+    <!-- skip link end -->
+
+    <!-- main content start -->
+    <main
+      id="main">
+
+      <!-- wrapper start -->
+      <div class="wrapper">
+
+        <!-- website logo start -->
+        <a 
+          class="website-header--logo" 
+          href="/">
+          <img 
+            src="{{ "/assets/images/logo.svg" | relative_url }}" 
+            alt="Learn LaTeX logo"
+            height="50"
+            width="230">
+        </a>
+        <!-- website logo end -->
+
+        <!-- language selection start -->
+        <nav
+          class="language-navigation">
+            <ul
+              class="language-navigation__list">
+                <!-- Loop over languages in _data/languages.yml -->
+                {%- for language in site.data.languages -%}
+                    <li
+                      class="language-navigation__list-item">
+                      <a 
+                        class="language-navigation__anchor"
+                        href="/{{language.language-code}}/"
+                        hreflang="{{ language.language-code }}"
+                        lang="{{language.language-code}}"
+                        title="{{language.label-english}}">{{ language.label-regional }}</a>
+                    </li>
+                {%- endfor -%}
+            </ul>
+        </nav>
+        <!-- language selection end -->
+
+        {{ content }}
+
+      </div>
+      <!-- wrapper end -->
+
+    </main>
+    <!-- main content end -->
+
+  </body>
+</html>
