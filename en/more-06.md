@@ -2,6 +2,7 @@
 lang: "en"
 title: "More on: Extending LaTeX using packages and definitions"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "More on: Extending LaTeX using packages and definitions"
 ---
 
 ## Loading multiple packages

@@ -3,6 +3,7 @@ lang: "en"
 title: "Language-specifics for English"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 next: "extra-01"
+toc-anchor-text: "Language-specifics for English"
 ---
 
 ## hyphenation

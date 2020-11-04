@@ -2,6 +2,7 @@
 lang: "en"
 title: "More on: Formatting: fonts and spacing"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "More on: Formatting: fonts and spacing"
 ---
 
 ## Suppressing the indent for one paragraph

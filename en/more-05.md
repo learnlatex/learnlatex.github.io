@@ -2,6 +2,7 @@
 lang: "en"
 title: "More on: Using document classes to influence design"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "More on: Using document classes to influence design"
 ---
 
 ## Journal-specific classes
