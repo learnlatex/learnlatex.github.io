@@ -44,8 +44,8 @@ layout: compress
           <img 
             src="{{ "/assets/images/logo-1.svg" | relative_url }}" 
             alt="Learn LaTeX logo"
-            height="50"
-            width="267">
+            height="56"
+            width="300">
           <span
             class="visually-hidden">Learn LaTeX</span>
         </a>
@@ -78,7 +78,11 @@ layout: compress
                         href="/{{language.language-code}}/"
                         hreflang="{{ language.language-code }}"
                         lang="{{language.language-code}}"
-                        title="{{language.label-english}}">{{ language.label-regional }}</a>
+                        title="{{language.label-english}}">
+                        <span class="language-navigation__label-regional">{{ language.label-regional }}</span>
+                        <br>
+                        <span class="language-navigation__label-english">({{ language.label-english }})</span>
+                      </a>
                     </li>
                 {%- endfor -%}
             </ul>

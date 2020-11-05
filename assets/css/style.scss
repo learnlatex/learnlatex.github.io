@@ -572,7 +572,7 @@ table td code {
   .website-header {
     background: var(--color_blue-0);
     margin: 0 0 2.5rem;
-    padding: 2.5rem 0 2rem;
+    padding: 4.6rem 0 4rem;
   }
 
   .website-header a,
@@ -588,30 +588,38 @@ table td code {
 
   .language-navigation {
     background: none;
-  }
 
-  .language-navigation__list {
-    list-style-type: none;
-    margin: 0;
-    padding: .15rem 0 .25rem;
-  }
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: .15rem 0 .25rem;
+    }
 
-  .language-navigation__list-item {
-    display: inline;
-    font-size: 1.2rem;
-    line-height: 2.6rem;
-    padding: 0 1rem;
-  }
+    &__list-item {
+      display: inline-block;
+      line-height: 1rem;
+      margin: 1rem 1.2rem;
+      padding: 0;
+    }
 
-  .language-navigation__anchor {
-    color: var(--color_grey-2);
-    text-decoration: none;
-    overflow-wrap: break-word;
-  }
+    &__anchor {
+      text-decoration: none;
+      line-height: 1.2rem;
+      overflow-wrap: break-word;
 
-  .language-navigation__anchor:hover {
-    color: var(--color_white-0);
-    text-decoration: underline;
-  }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
+    &__label-regional {
+      color: var(--color_blue-0);
+      font-size: 1.2rem;
+    }
+
+    &__label-english {
+      color: var(--color_grey-3);
+      font-size: .8rem;
+    }
+  }
 }
