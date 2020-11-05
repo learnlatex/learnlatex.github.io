@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Logical structure"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
 toc-anchor-text: "Logical structure"
 toc-description: "Structure and visual presentation."
 ---

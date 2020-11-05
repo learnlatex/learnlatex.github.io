@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Dealing with errors"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
 toc-anchor-text: "Error handling"
 toc-description: "Dealing with unexpected behaviors."
 ---

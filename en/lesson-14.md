@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Selecting fonts and using Unicode engines"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use, and how that changes in modern engines with Unicode and OpenType fonts support."
 toc-anchor-text: "Fonts & Unicode engines"
 toc-description: "Selecting fonts and file encoding."
 ---

@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Your first LaTeX document"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
 toc-anchor-text: "LaTeX documents"
 toc-description: "The mixture of text and commands."
 ---

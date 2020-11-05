@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Using document classes to influence design"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
 toc-anchor-text: "Document classes"
 toc-description: "Setting the general document layout."
 ---

@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Examples for further study"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows assorted examples of other popular packages that were not covered in the main lessons."
 toc-anchor-text: "Examples for further study"
 ---
 

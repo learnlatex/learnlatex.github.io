@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "More on: Tables"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows more ways to customize a table by styling a column, changing spacing and rules, and further packages that provide different extensions to tables."
 toc-anchor-text: "More on: Tables"
 ---
 
