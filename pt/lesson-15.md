@@ -1,6 +1,6 @@
 ---
 lang: "pt"
-title: "Lidando com erros"
+title: "Resolvendo erros"
 description: "Esta lição mostra alguns erros comuns em documentos, o que eles significam, e como resolvê-los."
 toc-anchor-text: "Resolvendo erros"
 toc-description: "Trabalhando com comportamento inesperado."
