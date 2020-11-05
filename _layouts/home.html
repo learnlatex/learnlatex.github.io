@@ -86,11 +86,16 @@ layout: compress
                       class="language-navigation__anchor"
                       href="/{{language.language-code}}/"
                       hreflang="{{ language.language-code }}"
-                      lang="{{language.language-code}}"
                       title="{{language.label-english}}">
-                      <span class="language-navigation__label-regional">{{ language.label-regional }}</span>
+                      <span 
+                        class="language-navigation__label-regional"
+                        lang="{{language.language-code}}"
+                        >{{ language.label-regional }}</span>
                       <br>
-                      <span class="language-navigation__label-english">({{ language.label-english }})</span>
+                      <span 
+                        class="language-navigation__label-english"
+                        lang="en"
+                        >({{ language.label-english }})</span>
                     </a>
                   </li>
                 {%- endfor -%}
