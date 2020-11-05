@@ -51,6 +51,9 @@ layout: compress
         </a>
         <!-- website logo end -->
 
+        <span
+          class="tagline">Learn typesetting with LaTeX in 16 beginner friendly lessons.</span>
+
       </div>
       <!-- wrapper end -->
 
@@ -80,19 +83,19 @@ layout: compress
               class="language-navigation__list">
                 <!-- Loop over languages in _data/languages.yml -->
                 {%- for language in site.data.languages -%}
-                    <li
-                      class="language-navigation__list-item">
-                      <a 
-                        class="language-navigation__anchor"
-                        href="/{{language.language-code}}/"
-                        hreflang="{{ language.language-code }}"
-                        lang="{{language.language-code}}"
-                        title="{{language.label-english}}">
-                        <span class="language-navigation__label-regional">{{ language.label-regional }}</span>
-                        <br>
-                        <span class="language-navigation__label-english">({{ language.label-english }})</span>
-                      </a>
-                    </li>
+                  <li
+                    class="language-navigation__list-item">
+                    <a 
+                      class="language-navigation__anchor"
+                      href="/{{language.language-code}}/"
+                      hreflang="{{ language.language-code }}"
+                      lang="{{language.language-code}}"
+                      title="{{language.label-english}}">
+                      <span class="language-navigation__label-regional">{{ language.label-regional }}</span>
+                      <br>
+                      <span class="language-navigation__label-english">({{ language.label-english }})</span>
+                    </a>
+                  </li>
                 {%- endfor -%}
             </ul>
         </nav>
