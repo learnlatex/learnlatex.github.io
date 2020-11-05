@@ -566,8 +566,25 @@ table td code {
 /*  #HOME PAGE                                                                */
 /*----------------------------------------------------------------------------*/
 .home {
-  background: var(--color_blue-0);
+  background: var(--color_white-0);
   text-align: center;
+
+  .website-header {
+    background: var(--color_blue-0);
+    margin: 0 0 2.5rem;
+    padding: 2.5rem 0 2rem;
+  }
+
+  .website-header a,
+  .website-header--logo:link,
+  .website-header--logo:visited, 
+  .website-header--logo:hover {
+    border: none;
+    color: var(--color_white-0);
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+  }
 
   .language-navigation {
     background: none;
