@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Incluindo gráficos e fazendo coisas 'flutuarem'"
+toc-anchor-text: "Veja mais sobre: Incluindo gráficos e fazendo coisas 'flutuarem'"
 ---
 
 ## Nomeando arquivos de gráficos

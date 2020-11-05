@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Estrutura Lógica"
+toc-anchor-text: "Estrutura Lógica"
+toc-description: "Estrutura e representação visual."
 ---
 
 O LaTeX possui meios de você focar na estrutura lógica do seu documento, assim

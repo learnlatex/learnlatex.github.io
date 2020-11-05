@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Tabelas"
+toc-anchor-text: "Tabelas no LaTeX"
+toc-description: "Princípios básicos de tabelas."
 ---
 
 ## Tabelas básicas

@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Citações e referências"
+toc-anchor-text: "Veja mais sobre: Citações e referências"
 ---
 
 ## Organização alfabética em outros idiomas

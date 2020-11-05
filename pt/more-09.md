@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Referências cruzadas"
+toc-anchor-text: "Veja mais sobre: Referências cruzadas"
 ---
 
 ## Transformando referências em links

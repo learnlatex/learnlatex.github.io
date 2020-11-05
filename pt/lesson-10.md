@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Matemática"
+toc-anchor-text: "Matemática"
+toc-description: "Modo e notação matemática."
 ---
 
 ## Modo matemático

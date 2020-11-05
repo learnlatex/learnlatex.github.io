@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Trabalhando com LaTeX"
+toc-anchor-text: "Veja mais sobre: Trabalhando com LaTeX"
 ---
 
 Para a maioria dos nossos exemplos, não usamos um programa chamado `latex`, ao

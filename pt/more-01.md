@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: O que é LaTeX e como funciona?"
+toc-anchor-text: "Veja mais sobre: O que é LaTeX e como funciona?"
 ---
 
 O nome "LaTeX" é formado por dois componentes, "La" e "TeX".  A seguir vamos

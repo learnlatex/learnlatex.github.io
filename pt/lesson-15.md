@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Lidando com erros"
+toc-anchor-text: "Resolvendo erros"
+toc-description: "Trabalhando com comportamento inesperado."
 ---
 
 Diferente de um sistema típico de processamento de texto, o LaTeX tem um ciclo

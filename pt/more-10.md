@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Matemática"
+toc-anchor-text: "Veja mais sobre: Matemática"
 ---
 
 ## Mais ambientes de alinhamento do `amsmath`

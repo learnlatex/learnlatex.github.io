@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Tabelas"
+toc-anchor-text: "Veja mais sobre: Tabelas"
 ---
 
 ## Outros símbolos de preâmbulo para tabelas

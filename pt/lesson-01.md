@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "O que é LaTeX e como funciona?"
+toc-anchor-text: "O Básico de LaTeX"
+toc-description: "O que é LaTeX e como funciona?"
 ---
 
 Diferente de processadores de texto comuns, como o _Microsoft Word_ ou o

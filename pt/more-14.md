@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Trocando fontes e usando interpretadores Unicode"
+toc-anchor-text: "Veja mais sobre: Trocando fontes e usando interpretadores Unicode"
 ---
 
 ## Lua

@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Extendendo o LaTeX usando pacotes e definições"
+toc-anchor-text: "Extendendo o LaTeX"
+toc-description: "Usando pacotes e definições."
 ---
 
 Depois de declarar uma classe, no preâmbulo você pode modificar funcionalidades

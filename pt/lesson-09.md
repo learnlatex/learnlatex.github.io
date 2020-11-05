@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Referências cruzadas"
+toc-anchor-text: "Referências cruzadas"
+toc-description: "Mencionando figuras, tabelas, etc."
 ---
 
 ## O mecanismo de `\label` e `\ref`

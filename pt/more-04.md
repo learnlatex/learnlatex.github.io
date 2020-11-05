@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Estrutura Lógica"
+toc-anchor-text: "Veja mais sobre: Estrutura Lógica"
 ---
 
 ## Título do documento

@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Trocando fontes e usando interpretadores Unicode"
+toc-anchor-text: "Fontes & interpretadores Unicode"
+toc-description: "Selecionando fontes e codificação."
 ---
 
 Quando o TeX e o LaTeX começaram a ser amplamente utilizados eles funcionavam

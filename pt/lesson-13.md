@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Estruturando documentos longos"
+toc-anchor-text: "Structuring o código"
+toc-description: "Dividindo o código de forma organizada."
 ---
 
 <script>

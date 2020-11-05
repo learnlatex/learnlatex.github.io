@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Acessando documentação e obtendo ajuda"
+toc-anchor-text: "Ajuda & documentação"
+toc-description: "Acessando ajuda e documentação."
 ---
 
 Há várias formas de acessar a documentação de um pacote ou classe.

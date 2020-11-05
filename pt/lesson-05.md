@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Usando classes de documentos para influenciar o design"
+toc-anchor-text: "Classes de Documento"
+toc-description: "Configurando a aparência geral do documento."
 ---
 
 ## O que uma classe de documento faz

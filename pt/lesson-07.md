@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Incluindo gráficos e fazendo coisas 'flutuarem'"
+toc-anchor-text: "Usando gráficos"
+toc-description: "Aparência, espaçamento e posicionamento."
 ---
 
 ## Incluindo gráficos

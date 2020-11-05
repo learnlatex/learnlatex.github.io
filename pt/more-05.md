@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Usando classes de documentos para influenciar o design"
+toc-anchor-text: "Veja mais sobre: Usando classes de documentos para influenciar o design"
 ---
 
 ## Classes específicas de revistas

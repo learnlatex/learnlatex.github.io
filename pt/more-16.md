@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Acessando documentação e obtendo ajuda"
+toc-anchor-text: "Veja mais sobre: Acessando documentação e obtendo ajuda"
 ---
 
 ## Código documentado do {{site.latex}}

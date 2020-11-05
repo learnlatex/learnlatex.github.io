@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Trabalhando com LaTeX"
+toc-anchor-text: "Trabalhando com LaTeX"
+toc-description: "Sistemas TeX e editores de texto."
 ---
 
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação

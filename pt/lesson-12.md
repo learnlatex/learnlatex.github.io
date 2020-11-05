@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Citações e referências"
+toc-anchor-text: "Citações & referências"
+toc-description: "Trabalhando com bancos de referências."
 ---
 <script>
 preincludes = {

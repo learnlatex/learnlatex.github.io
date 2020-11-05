@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Formatação: fontes e espaçamento"
+toc-anchor-text: "Fontes & espaçamento"
+toc-description: "Formatação do texto para apresentação visual."
 ---
 
 ## Espaçamento entre parágrafos

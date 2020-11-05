@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Lidando com erros"
+toc-anchor-text: "Veja mais sobre: Lidando com erros"
 ---
 
 ## Erros reportados no final de ambientes
