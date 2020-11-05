@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Usando classes de documentos para influenciar o design"
+description: "Esta lição dá mais informações sobre classes de documento de aplicação especializada para o LaTeX."
 toc-anchor-text: "Veja mais sobre: Usando classes de documentos para influenciar o design"
 ---
 

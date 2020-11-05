@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Trabalhando com LaTeX"
+description: "Esta lição dá mais detalhes sobre o que é o LaTeX e os interpretadores sobre os quais ele funciona."
 toc-anchor-text: "Veja mais sobre: Trabalhando com LaTeX"
 ---
 

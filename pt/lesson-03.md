@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Seu primeiro documento LaTeX"
+description: "Esta lição mostra a estrutura básica de um documento LaTeX, e como produzir um PDF com ele, assim como os principais caracteres especiais usados para controlar o LaTeX."
 toc-anchor-text: "Documentos LaTeX"
 toc-description: "A estrutura básica de um documento."
 ---

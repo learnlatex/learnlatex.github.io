@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Estrutura Lógica"
+description: "Esta lição mostra alguns comandos básicos de formatação, e compara-os com formatação semântica usando comandos de secionamento e listas."
 toc-anchor-text: "Estrutura Lógica"
 toc-description: "Estrutura e representação visual."
 ---

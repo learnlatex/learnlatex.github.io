@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Tabelas"
+description: "Esta lição mostra formas de personalizar uma tabela aplicando estilos a uma coluna, modificando espaçamento e linhas, e outros pacotes que fornecem diferentes extensões para tabelas."
 toc-anchor-text: "Veja mais sobre: Tabelas"
 ---
 

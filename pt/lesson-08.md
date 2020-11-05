@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Tabelas"
+description: "Esta lição mostra como você pode construir tabelas no LaTeX, influenciar o alinhamento das células, adicionar linhas à tabela, e unir células."
 toc-anchor-text: "Tabelas no LaTeX"
 toc-description: "Princípios básicos de tabelas."
 ---
