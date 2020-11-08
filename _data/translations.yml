@@ -13,7 +13,7 @@ change-language:
   fr: "Lisez cette page dans une autre langue"
   ja: "このページを別の言語で読む"
   pt: "Leia esta página em um idioma diferente"
-  vi: "Đọc trang này bằng một ngôn ngữ khác"
+  vi: "Đọc trang này trong một ngôn ngữ khác"
 skip-link:
   de: "Zum Hauptinhalt springen"
   en: "Skip to main content"
@@ -29,7 +29,7 @@ heading_mission-statement:
   fr: "Énoncé de mission"
   ja: "ミッションステートメント"
   pt: "Declaração de missão"
-  vi: "Tuyên bố sứ mệnh"
+  vi: "Sứ mệnh của chúng tôi"
 mission-statement:
   de: "Lernen Sie Schriftsetzen mit LaTeX in 16 kleinen, anfängerfreundlichen Lektionen."
   en: "Learn typesetting with LaTeX in 16 small, beginner friendly lessons."
@@ -37,7 +37,7 @@ mission-statement:
   fr: "Apprenez la composition avec LaTeX dans 16 petites leçons adaptées aux débutants."
   ja: "LaTeXを使用したタイプ設定について、初心者向けの16の小さなレッスンで学びます。"
   pt: "Aprenda composição com LaTeX em 16 pequenas lições para iniciantes."
-  vi: "Học cách sắp chữ với LaTeX trong 16 bài học nhỏ, thân thiện với người mới bắt đầu."
+  vi: "Học cách tạo văn bản với LaTeX trong 16 bài học nhỏ cho người mới bắt đầu."
 heading_planet:
   de: "Planet"
   en: "Planet"
@@ -45,7 +45,7 @@ heading_planet:
   fr: "Planète"
   ja: "惑星"
   pt: "Planeta"
-  vi: "Hành tinh"
+  vi: "Liên kết ngoài"
 heading_navigation:
   de: "Navigation"
   en: "Navigation"
@@ -53,7 +53,7 @@ heading_navigation:
   fr: "Navigation"
   ja: "ナビゲーション"
   pt: "Navegação"
-  vi: "Dẫn đường"
+  vi: "Điều hướng"
 navigational-elements_home:
   de: "Startseite"
   en: "Home"
@@ -77,7 +77,7 @@ navigational-elements_contact:
   fr: "Contact"
   ja: "連絡先"
   pt: "Contato"
-  vi: "Tiếp xúc"
+  vi: "Liên hệ"
 navigational-elements_licenses:
   de: "Lizenzen"
   en: "Licenses"
@@ -93,7 +93,7 @@ navigational-elements_open-an-issue:
   fr: "Ouvrez un problème"
   ja: "問題を開く"
   pt: "Abra um problema"
-  vi: "Mở một vấn đề"
+  vi: "Báo lỗi"
 navigational-elements_page-source:
   de: "Seitenquelltext"
   en: "Page source"
