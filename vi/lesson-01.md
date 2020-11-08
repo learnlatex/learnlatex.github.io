@@ -1,7 +1,7 @@
 ---
 lang: "vi"
 title: "LaTeX là gì và nó hoạt động như thế nào?"
-description: "Bài này sẽ giải thích LaTeX là gì, cũng như sự khác nhau trong
+description: "Bài này giải thích LaTeX là gì, cũng như sự khác nhau trong
 cách hoạt động giữa LaTeX và các trình soạn thảo thường gặp như Microsoft Word
 hay LibreOffice Writer."
 toc-anchor-text: "Khái quát về LaTeX"
