@@ -1,6 +1,10 @@
 ---
 lang: "vi"
 title: "Bảng trong LaTeX"
+description: "Bài này giải thích các cách thêm bảng biểu vào văn bản, cũng như
+một vài cách tùy biến bảng đơn giản."
+toc-anchor-text: "Bảng"
+toc-description: "Những điều cơ bản khi làm việc với bảng"
 ---
 
 ## Bảng cơ bản
