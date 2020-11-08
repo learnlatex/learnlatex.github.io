@@ -1,6 +1,10 @@
 ---
 lang: "vi"
-title: "Định dạng font chữ và các khoảng cách"
+title: "Định dạng font và các khoảng cách"
+description: "Bài này sẽ giới thiệu các cách điều chỉnh định dạng chữ cơ bản,
+cũng như một số câu lệnh để tùy biến các khoảng trống trong văn bản."
+toc-anchor-text: "Định dạng và khoảng cách"
+toc-description: "Định dạng font và các khoảng trống"
 ---
 
 ## Khoảng cách giữa các đoạn văn

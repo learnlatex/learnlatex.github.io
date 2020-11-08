@@ -1,6 +1,10 @@
 ---
 lang: "vi"
 title: "Xử lý lỗi"
+description: "Bài này sẽ giới thiệu các lỗi biên dịch thường gặp nhất khi sử
+dụng LaTeX, cũng như cách giải quyết chúng."
+toc-anchor-text: "Lỗi"
+toc-description: "Giải quyết các lỗi"
 ---
 
 Không giống như các hệ thống xử lý văn bản thường gặp khác, LaTeX có một chu
