@@ -1,6 +1,8 @@
 ---
 lang: "vi"
 title: "Bổ sung: Thêm hình ảnh và làm cho các hình linh động"
+description: "Vài nét về cách bố trí các tệp ảnh để sử dụng trong văn bản, cũng như một vài thông tin bổ sung về các gói lệnh vẽ hình và các thành phần linh động khác trong văn bản."
+toc-anchor-text: "Bổ sung: Hình vẽ"
 ---
 
 ## Đặt tên tệp ảnh

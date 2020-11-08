@@ -1,6 +1,8 @@
 ---
 lang: "vi"
 title: "Bổ sung: Bảng trong LaTeX"
+description: "Một vài thiết lập nâng cao cho bảng, và đôi nét về một số loại bảng phức tạp hơn."
+toc-anchor-text: "Bổ sung: Bảng"
 ---
 
 ## Những thứ khác có thể được dùng trong phần khai báo bảng

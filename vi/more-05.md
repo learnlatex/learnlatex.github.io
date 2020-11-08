@@ -1,6 +1,8 @@
 ---
 lang: "vi"
 title: "Bổ sung: Sử dụng các lớp văn bản"
+description: "Vài nét về một số lớp văn bản nâng cao hơn."
+toc-anchor-text: "Bổ sung: Lớp văn bản"
 ---
 
 ## Các lớp văn bản đặc biệt cho các tạp chí, báo...
