@@ -1,6 +1,8 @@
 ---
 lang: "vi"
 title: "Bổ sung: Cấu trúc cho các văn bản dài"
+description: "Thêm phần chỉ mục vào văn bản."
+toc-anchor-text: "Bổ sung: Chia nhỏ văn bản"
 ---
 
 ## Tạo chỉ mục
