@@ -1,8 +1,7 @@
 ---
 lang: "vi"
 title: "Sử dụng các lớp văn bản"
-description: "Bài này giải thích cách sử dụng và tùy biến một số lớp văn bản
-thông dụng trong việc thiết kế văn bản."
+description: "Bài này giải thích cách sử dụng và tùy biến một số lớp văn bản thông dụng trong việc thiết kế văn bản."
 toc-anchor-text: "Lớp văn bản"
 toc-description: "Các thiết lập cơ bản của toàn văn bản"
 ---

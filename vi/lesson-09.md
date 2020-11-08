@@ -1,8 +1,7 @@
 ---
 lang: "vi"
 title: "Tham chiếu chéo"
-description: "Bài này giải thích cách thực hiện tham chiếu chéo giữa các thành
-phần khác nhau trong văn bản."
+description: "Bài này giải thích cách thực hiện tham chiếu chéo giữa các thành phần khác nhau trong văn bản."
 toc-anchor-text: "Tham chiếu chéo"
 toc-description: "Tham chiếu các thành phần văn bản"
 ---

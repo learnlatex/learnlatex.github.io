@@ -1,8 +1,7 @@
 ---
 lang: "vi"
 title: "Làm việc với LaTeX"
-description: "Bài này nói về các hệ thống TeX thường gặp, cũng như các trình
-soạn thảo mã LaTeX thông dụng."
+description: "Bài này nói về các hệ thống TeX thường gặp, cũng như các trình soạn thảo mã LaTeX thông dụng."
 toc-anchor-text: "Làm việc với LaTeX"
 toc-description: "Hệ thống TeX và trình soạn thảo mã LaTeX"
 ---

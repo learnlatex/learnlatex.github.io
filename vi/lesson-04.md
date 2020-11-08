@@ -1,8 +1,7 @@
 ---
 lang: "vi"
 title: "Cấu trúc logic"
-description: "Bài này giới thiệu cú pháp một số câu lệnh và môi trường thông
-dụng để thêm một số thành phần logic cơ bản của một văn bản LaTeX."
+description: "Bài này giới thiệu cú pháp một số câu lệnh và môi trường thông dụng để thêm một số thành phần logic cơ bản của một văn bản LaTeX."
 toc-anchor-text: "Cấu trúc logic"
 toc-description: "Một vài thành phần cơ bản của văn bản"
 ---

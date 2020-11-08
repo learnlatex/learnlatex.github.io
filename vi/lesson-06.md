@@ -1,8 +1,7 @@
 ---
 lang: "vi"
 title: "Mở rộng LaTeX bằng các gói lệnh và định nghĩa các lệnh mới"
-description: "Bài này giải thích cách tăng cường chức năng cho LaTeX bằng việc
-sử dụng các gói lệnh cũng như tự định nghĩa các câu lệnh mới."
+description: "Bài này giải thích cách tăng cường chức năng cho LaTeX bằng việc sử dụng các gói lệnh cũng như tự định nghĩa các câu lệnh mới."
 toc-anchor-text: "Mở rộng LaTeX"
 toc-description: "Gói lệnh và định nghĩa lệnh mới"
 ---
