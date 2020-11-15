@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Comprendre les erreurs"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Gestion des erreurs"
+toc-description: "Comprendre les comportements inattendus."
 ---
 
 Contrairement à un système de traitement de texte typique, LaTeX a un cycle

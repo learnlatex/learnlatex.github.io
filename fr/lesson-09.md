@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Références croisées"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Références croisées"
+toc-description: "Faire référence à des figures, tableaux, etc."
 ---
 
 ## Étiquettes et références : comment fonctionnent `\label` et `\ref`?
