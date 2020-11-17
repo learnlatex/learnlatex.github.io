@@ -195,17 +195,24 @@ main a:focus {
   background: var(--color_blue-0);
   margin: .04rem 0 0 0;
   padding: 1.8rem 0 1.3rem;
-}
 
-.website-header a,
-.website-header--logo:link,
-.website-header--logo:visited, 
-.website-header--logo:hover {
-  border: none;
-  color: var(--color_white-0);
-  display: inline-block;
-  line-height: 0;
-  text-decoration: none;
+  a,
+  &--logo:link,
+  &--logo:visited, 
+  &--logo:hover {
+    border: none;
+    color: var(--color_white-0);
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+  }
+  iframe {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 300px;
+  }
 }
 
 
