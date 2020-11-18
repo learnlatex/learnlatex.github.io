@@ -1,13 +1,29 @@
-<!-- 
-  DuckDuck search box start
+<!-- DuckDuck search box start
   About: https://duckduckgo.com/search_box
   Styling: https://web.archive.org/web/20160623174219/http://hardik.org/blog/stylising-duckduckgo-site-search/
   Parameters: https://duckduckgo.com/params
+
+    Learnlatex.org uses the following URL parameters for search result pages:
+
+    k1=-1             - Advertisements off
+    k8=%23000000      - Text color (#000000, (%23 is an encoded # char))
+    kae=%23FFFFFF     - Body background color (#FFFFFF, (%23 is an encoded # char))
+    kaf=1             - Display full URLs
+    kh=1              - Use HTTPS
+    kj=%23004980      - Header color (#004980, (%23 is an encoded # char)) - bad contrasts
+    kl=uk-en          - Country/region-language (not ISO conformant)
+    kn=1              - Open in new tab/window
+    kp=1              - Safe search on
+    ks=l              - Font size larger
+    kx=%23004980      - URL color (#004980, (%23 is an encoded # char))
 -->
+
+<!-- FIXME: Site to search is still set to latex-project.org (as learnlatex.org is blocked by robots.txt -->
+
 <iframe 
   frameborder="0"
-  src="https://duckduckgo.com/search.html?site=latex-project.org&kn=1&prefill=Search&bgcolor=000000"
-  style="height="40px" width="300px">
+  src="https://duckduckgo.com/search.html?site=latex-project.org&k1=-1&k8=%23000000&kae=c&kaf=1&kh=1&kj=%23004980&kl=uk-en&kn=1&ks=l&kp=1&kx=%23004980&prefill=Search&bgcolor=000000"
+  style="height: 40px, width: 300px">
 </iframe>
 
 <!-- DuckDuck search box end -->
