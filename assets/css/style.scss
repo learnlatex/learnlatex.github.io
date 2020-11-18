@@ -461,27 +461,53 @@ table td code {
   }
 }
 
-.website-footer-license {
-  background: var(--color_blue-0);
-  font-size: .8rem;
-  margin: 0;
-  padding: .9rem 0 .8rem;
-}
+.website-footer-languages {
+  background: var(--color_white-0);
+  border-top: 2rem solid var(--color_blue-0);
+  padding: 1rem 0 1.4rem;
+  text-align: center;
 
-.website-footer-license .license,
-.website-footer-license a {
-  color: var(--color_white-0);
-  text-decoration: none;
-}
-.license {
-  list-style: none;
-  margin: 0;
-  li {
-    display: inline;
-    padding: 0 1rem 0 0;
+  .language-icon {
+    margin: -1.87rem 0 1.2rem;
+  }
+
+  .language-navigation {
+    background: none;
+
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 0 .25rem;
+    }
+
+    &__list-item {
+      display: inline-block;
+      line-height: 1rem;
+      margin: 0 1.2rem 1.2rem;
+      padding: 0;
+    }
+
+    &__anchor {
+      text-decoration: none;
+      line-height: .8rem;
+      overflow-wrap: break-word;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    &__label-regional {
+      color: var(--color_blue-0);
+      font-size: 1rem;
+    }
+
+    &__label-english {
+      color: var(--color_grey-3);
+      font-size: .7rem;
+    }
   }
 }
-
 
 
 

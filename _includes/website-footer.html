@@ -17,7 +17,7 @@
             alt="Learn LaTeX logo"
             width="210">
         </a>
-        
+
         <p 
           class="mission-statement__paragraph">{{ site.data.translations['mission-statement'][page.lang] }}</p>
 
@@ -64,6 +64,32 @@
                 href="{{ "/" | absolute_url }}contact"
                 >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
             </li>
+            {% if site.github.private != true and site.github.license %}
+              <li
+                class="website-footer-navigation__list-item">
+                <a 
+                  class="website-footer-navigation__anchor" 
+                  href="{{ "/" | absolute_url }}licenses"
+                  hreflang="en"
+                  >{{ site.data.translations['navigational-elements_licenses'][page.lang] }}</a>
+              </li>
+              <li
+                class="website-footer-navigation__list-item">
+                <a 
+                  class="website-footer-navigation__anchor" 
+                  href="{{ site.github.repository_url }}/issues" 
+                  hreflang="en"
+                  >{{ site.data.translations['navigational-elements_open-an-issue'][page.lang] }}</a>
+              </li>
+              <li
+                class="website-footer-navigation__list-item">
+                <a 
+                  class="website-footer-navigation__anchor" 
+                  href="{{ site.github.repository_url }}/tree/master/{{ page.path }}"
+                  hreflang="en"
+                  >{{ site.data.translations['navigational-elements_page-source'][page.lang] }}</a>
+              </li>
+            {% endif %}
           </ul>
         </section>
 
@@ -106,37 +132,28 @@
 
     </div>
   </div>
-  
-  <!-- copyright start -->
-  <div 
-    class="website-footer-license">
-    <div 
+
+  <!-- languages start -->
+  <section 
+    class="website-footer-languages">
+    <div
       class="wrapper">
-      {% if site.github.private != true and site.github.license %}
-        <ul
-        class="license">
-          <li>
-            <a 
-              href="{{ "/" | absolute_url }}licenses"
-              hreflang="en"
-              >{{ site.data.translations['navigational-elements_licenses'][page.lang] }}</a>
-          </li>
-          <li>
-            <a 
-              href="{{ site.github.repository_url }}/issues" 
-              hreflang="en"
-              >{{ site.data.translations['navigational-elements_open-an-issue'][page.lang] }}</a>
-          </li>
-          <li>
-            <a 
-              href="{{ site.github.repository_url }}/tree/master/{{ page.path }}"
-              hreflang="en"
-              >{{ site.data.translations['navigational-elements_page-source'][page.lang] }}</a>
-          </li>
-        </ul>
-      {% endif %}
+
+      <img 
+        alt="Language selection icon"
+        class="language-icon"
+        src="{{ "/assets/images/language-icon.svg" | relative_url }}"
+        height="50"
+        width="43.1">
+
+      <nav
+        class="language-navigation">
+          <h2 class="visually-hidden">Language selection</h2>
+          {% include languages.html %}
+      </nav>
+
     </div>
-  </div>
-  <!-- copyright stop -->
+  </section>
+  <!-- languages stop -->
 
 </footer>
