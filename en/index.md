@@ -6,6 +6,8 @@ permalink: /en/
 
 ## Welcome to learnlatex.org!
 
+**{{ site.data.translations['mission-statement'][page.lang] }}**
+
 This site aims to help you take the first steps with LaTeX, a document
 preparation system designed to produce high-quality typeset output. LaTeX can
 be scary for new users as it is _not_ a word processor, and because it is not a

@@ -389,34 +389,6 @@ table td code {
   }
 }
 
-.mission-statement {
-  border-right: 0.01rem solid var(--color_black-0);
-  flex-grow: 1;
-  flex-basis: 30%;
-  min-width: 190px;
-  margin: 0;
-  padding: 0 2.4rem 0.5rem 0;
-
-  @media (max-width: 30rem) {
-    border-right: none;
-    min-width: 100%;
-    margin: 0 0 1rem;
-    padding: 0;
-  }
-
-  &__logo {
-    color: var(--color_black-0);
-    display: block;
-    margin: 0.8rem 0 0.5rem;
-  }
-
-  &__paragraph {
-    color: var(--color_black-0);
-    font-size: 0.9rem;
-    margin: 0;
-  }
-}
-
 .website-footer-navigation {
   flex-grow: 2;
   flex-shrink: 1;
@@ -429,15 +401,26 @@ table td code {
   justify-content: space-between;
   min-width: 120px;
   margin: 0;
-  padding: 0.5rem 0 0.5rem 2.4rem;
+  padding: 0.5rem 0;
 
   &__flex-items {
     flex-grow: 1;
     min-width: 100px;
+    padding: 0 1rem;
+    text-align: center;
+
+    &:first-of-type {
+      padding: 0 1rem 0 0;
+    }
+    &:last-of-type {
+      padding: 0 0 0 1rem;
+    }
   }
 
   &__heading {
-    margin: 0 0 0.8rem;
+    border-bottom: 0.01rem solid var(--color_grey-2);
+    margin: 0 0 .8rem;
+    padding: 0 0 .8rem;
   }
 
   &__list {

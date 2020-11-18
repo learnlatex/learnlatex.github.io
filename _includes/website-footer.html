@@ -3,27 +3,6 @@
   <div class="wrapper">
     <div class="website-footer__flex">
 
-      <!-- mission statement start -->
-      <section class="mission-statement">
-
-        <h2 
-          class="visually-hidden mission-statement__heading">{{ site.data.translations['heading_mission-statement'][page.lang] }}</h2>
-
-        <a 
-          class="mission-statement__logo" 
-          href="/">
-          <img 
-            src="/assets/images/logo-plain.svg" 
-            alt="Learn LaTeX logo"
-            width="210">
-        </a>
-
-        <p 
-          class="mission-statement__paragraph">{{ site.data.translations['mission-statement'][page.lang] }}</p>
-
-      </section>
-      <!-- mission statement end -->
-
       <!-- footer navigation start -->
       <nav class="website-footer-navigation">
 
@@ -36,19 +15,10 @@
             class="website-footer-navigation__list">
             <li 
               class="website-footer-navigation__list-item">
-              <!-- Link to actual home page, if language is English -->
-              {%- if page.lang == "en" -%}
-                <a 
-                  class="website-footer-navigation__anchor" 
-                  href="{{ "/" | absolute_url }}"
-                  >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
-                <!-- For languages other than English anchor will point to translated home pages -->
-                {%- else -%}
-                <a 
-                  class="website-footer-navigation__anchor" 
-                  href="{{ "/" | absolute_url | append: page.lang | append: "/" }}"
-                  >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
-              {%- endif -%}
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}"
+                >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
             </li>
             <li 
               class="website-footer-navigation__list-item">
@@ -64,6 +34,16 @@
                 href="{{ "/" | absolute_url }}contact"
                 >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
             </li>
+          </ul>
+        </section>
+
+        <section 
+          class="website-footer-navigation__flex-items">
+          <h2 
+            class="sixth-heading website-footer-navigation__heading"
+            >{{ site.data.translations['heading_meta'][page.lang] }}</h2>
+          <ul 
+            class="website-footer-navigation__list">
             {% if site.github.private != true and site.github.license %}
               <li
                 class="website-footer-navigation__list-item">
@@ -128,7 +108,7 @@
         </section>
 
       </nav>
-      <!-- footer navigation stop -->
+      <!-- footer navigation end -->
 
     </div>
   </div>
@@ -148,12 +128,13 @@
 
       <nav
         class="language-navigation">
-          <h2 class="visually-hidden">Language selection</h2>
+          <h2 
+            class="visually-hidden">Language selection</h2>
           {% include languages.html %}
       </nav>
 
     </div>
   </section>
-  <!-- languages stop -->
+  <!-- languages end -->
 
 </footer>
