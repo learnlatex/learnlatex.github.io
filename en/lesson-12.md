@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Citations and references"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson show the basics of reference databases and how to build your own, how to use this databases in your documents using the two major workflows available, and how to choose between them."
 toc-anchor-text: "Citations & references"
 toc-description: "Working with reference databases."
 ---

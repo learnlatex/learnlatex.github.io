@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "More on: Cross-referencing"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
 toc-anchor-text: "More on: Cross-referencing"
 ---
 

@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Tables"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
 toc-anchor-text: "LaTeX tables"
 toc-description: "Fundamentals of working with tables."
 ---

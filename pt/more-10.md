@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Matemática"
+description: "Esta lição mostra mais ambientes de alinhamento do amsmath, como fazer símbolos matemáticos em negrito, o pacote de extensão de matemática mathtools, e usando entrada Unicode para equações."
+toc-anchor-text: "Veja mais sobre: Matemática"
 ---
 
 ## Mais ambientes de alinhamento do `amsmath`

@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Accessing documentation and getting help"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
 toc-anchor-text: "Help & documentation"
 toc-description: "Accessing help and documentation."
 ---

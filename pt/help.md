@@ -1,6 +1,7 @@
 ---
 lang: "pt"
 title: "Usando o learnlatex.org"
+description: "Esta página explica o próprio site learnlatex.org e como fazer o melhor uso dele."
 permalink: /pt/help
 ---
 

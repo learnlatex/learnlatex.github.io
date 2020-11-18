@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Using the learnlatex.org site"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This page explains the learnlatex.org website itself and how to best make use of it."
 permalink: /en/help
 ---
 

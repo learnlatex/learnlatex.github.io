@@ -1,6 +1,9 @@
 ---
 lang: "pt"
 title: "Referências cruzadas"
+description: "Essa lição mostra como mencionar elementos numerados em um documento, como figuras, tabelas, e seções."
+toc-anchor-text: "Referências cruzadas"
+toc-description: "Mencionando figuras, tabelas, etc."
 ---
 
 ## O mecanismo de `\label` e `\ref`

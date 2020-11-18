@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "More on: Including graphics and making things 'float'"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson gives details on how better name and store graphics files to be used with LaTeX, and how you can make your own graphics from within LaTeX."
 toc-anchor-text: "More on: Including graphics and making things 'float'"
 ---
 

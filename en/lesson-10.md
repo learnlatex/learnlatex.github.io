@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Mathematics"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
 toc-anchor-text: "Mathematics"
 toc-description: "Math mode and mathematical notation."
 ---

@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Seu primeiro documento LaTeX"
+description: "Esta lição dá mais detalhes sobre como executar o LaTeX, e sobre os caracteres especiais utilizados e como inseri-los no PDF."
+toc-anchor-text: "Veja mais sobre: Seu primeiro documento LaTeX"
 ---
 
 ## Executando o LaTeX

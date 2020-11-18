@@ -1,6 +1,9 @@
 ---
 lang: "pt"
 title: "Incluindo gráficos e fazendo coisas 'flutuarem'"
+description: "Esta lição mostra como você pode incluir externos no seu documento, como mudar a sua aparência, e como fazê-los flutuar para a posição apropriada no PDF."
+toc-anchor-text: "Usando gráficos"
+toc-description: "Aparência, espaçamento e posicionamento."
 ---
 
 ## Incluindo gráficos

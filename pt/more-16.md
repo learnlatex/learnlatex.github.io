@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Veja mais sobre: Acessando documentação e obtendo ajuda"
+description: "Esta lição mostra onde você pode encontrar o código do próprio LaTeX."
+toc-anchor-text: "Veja mais sobre: Acessando documentação e obtendo ajuda"
 ---
 
 ## Código documentado do {{site.latex}}

@@ -1,6 +1,8 @@
 ---
 lang: "pt"
 title: "Exemplos para estudo adicional"
+description: "Esta lição mostra exemplos diversos de outros pacotes populares que não foram apresentados nas lições principais."
+toc-anchor-text: "Exemplos para estudo adicional"
 ---
 
 Este curso deu uma visão geral das funcionalidades básicas do LaTeX e alguns

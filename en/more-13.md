@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "More on: Structuring longer documents"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows how to make an index, and how to use the imakeidx package to automate the process."
 toc-anchor-text: "More on: Structuring longer documents"
 ---
 

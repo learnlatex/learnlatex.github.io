@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "More on: What is LaTeX and how does it work?"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson gives more context on the history of LaTeX and other formats available."
 toc-anchor-text: "More on: What is LaTeX and how does it work?"
 ---
 

@@ -1,6 +1,9 @@
 ---
 lang: "pt"
 title: "Trabalhando com LaTeX"
+description: "Esta lição explica o que é um sistema TeX e quais os mais comuns, lista alguns dos editores de texto comumente utilizados para LaTeX, e os sistemas online que contam também com editores integrados."
+toc-anchor-text: "Trabalhando com LaTeX"
+toc-description: "Sistemas TeX e editores de texto."
 ---
 
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação

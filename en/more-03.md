@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "More on: Your first LaTeX document"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
 toc-anchor-text: "More on: Your first LaTeX document"
 ---
 
