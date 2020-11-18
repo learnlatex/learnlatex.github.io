@@ -1,6 +1,8 @@
 ---
 lang: "fr"
 title: "Votre premier document avec LaTeX: pour aller plus loin"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Votre premier document avec LaTeX: pour aller plus loin"
 ---
 
 ## Exécuter LaTeX

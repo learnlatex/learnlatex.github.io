@@ -1,6 +1,8 @@
 ---
 lang: "fr"
 title: "Inclure des images et les faire « flotter » : pour aller plus loin"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Inclure des images et les faire « flotter » : pour aller plus loin"
 ---
 
 ## Nommer les fichiers d'images

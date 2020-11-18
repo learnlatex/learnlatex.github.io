@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Qu'est-ce que LaTeX, et comment ça marche?"
+description: "Cette leçon explique les bases de ce qu'est LaTeX et comment il fonctionne par rapport aux traitements de texte courants tels que Microsoft Word ou LibreOffice Writer."
+toc-anchor-text: "Les bases de LaTeX"
+toc-description: "Qu'est-ce que LaTeX et comment ça marche."
 ---
 
 Contrairement aux traitements de texte courants tels que Microsoft Word ou

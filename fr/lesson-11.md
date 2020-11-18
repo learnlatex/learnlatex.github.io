@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Mise en forme du texte: fontes et espacements"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Fontes & espacements"
+toc-description: "Mise en forme du texte."
 ---
 
 ## Espacement des paragraphes

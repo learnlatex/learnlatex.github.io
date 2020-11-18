@@ -1,6 +1,8 @@
 ---
 lang: "fr"
 title: "Écrire les mathématiques : pour aller plus loin"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Écrire les mathématiques : pour aller plus loin"
 ---
 
 ## Plus d'alignements avec `amsmath`

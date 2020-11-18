@@ -1,6 +1,8 @@
 ---
 lang: "fr"
 title: "Bibliographies et références biblio : pour aller plus loin"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Bibliographies et références biblio : pour aller plus loin"
 ---
 
 ## Le tri pour d'autres langues que l'anglais
