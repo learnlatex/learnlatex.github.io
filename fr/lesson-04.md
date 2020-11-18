@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Structure logique de votre document"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Structure logique de votre document"
+toc-description: "Structure et apparence visuelle."
 ---
 
 LaTeX vous permet de vous concentrer sur la structure logique de votre document,

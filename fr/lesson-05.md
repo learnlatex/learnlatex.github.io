@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Utiliser les classes de documents pour changer l'apparence"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Classes de documents"
+toc-description: "Choisir la présentation générale du document."
 ---
 
 ## Qu'est-ce qu'une classe de document?

@@ -1,6 +1,8 @@
 ---
 lang: "fr"
 title: "Qu'est-ce que LaTeX, et comment ça marche? Pour aller plus loin"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Qu'est-ce que LaTeX, et comment ça marche? Pour aller plus loin"
 ---
 
 Le mot « LaTeX » se compose de deux parties, _La_ et _TeX_. Voici brièvement

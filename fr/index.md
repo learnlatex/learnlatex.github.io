@@ -1,6 +1,7 @@
 ---
 lang: "fr"
 title: learnlatex.org
+permalink: /fr/
 ---
 
 ## Bienvenue sur learnlatex.org (version française)!

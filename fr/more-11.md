@@ -1,6 +1,8 @@
 ---
 lang: "fr"
 title: "Mise en forme du texte : fontes et espacements -- Pour aller plus loin"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Mise en forme du texte : fontes et espacements -- Pour aller plus loin"
 ---
 
 ## Supprimer l'indentation d'un paragraphe particulier

@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Trouver de la documentation et demander de l'aide"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Aide & documentation"
+toc-description: "Trouver aide et documentation."
 ---
 
 Il y a différentes façons d'accéder à la documentation d'un package ou

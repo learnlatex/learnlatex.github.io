@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Les tableaux"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Les tableaux en LaTeX"
+toc-description: "Principes de base pour travailler avec des tableaux."
 ---
 
 ## Tableaux simples

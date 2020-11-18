@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Travailler avec LaTeX"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Travailler avec LaTeX"
+toc-description: "Les systèmes TeX et les éditeurs de texte pour LaTeX."
 ---
 
 Contrairement à de nombreux programmes informatiques, LaTeX n'est pas une

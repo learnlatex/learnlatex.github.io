@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Écrire les mathématiques"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Écrire les mathématiques"
+toc-description: "Mode mathématique et notation mathématique."
 ---
 
 ## Le mode mathématique

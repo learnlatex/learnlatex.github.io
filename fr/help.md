@@ -1,6 +1,7 @@
 ---
 lang: "fr"
 title: "Utiliser le site learnlatex.org"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 permalink: /fr/help
 ---
 

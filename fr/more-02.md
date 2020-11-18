@@ -1,6 +1,8 @@
 ---
 lang: "fr"
 title: "Travailler avec LaTeX : pour aller plus loin"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Travailler avec LaTeX : pour aller plus loin"
 ---
 
 Pour la plupart de nos exemples, nous n'utilisons pas le programme `latex`

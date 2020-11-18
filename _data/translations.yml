@@ -54,6 +54,14 @@ heading_navigation:
   ja: "ナビゲーション"
   pt: "Navegação"
   vi: "Điều hướng"
+heading_meta:
+  de: "Meta"
+  en: "Meta"
+  es: "Meta"
+  fr: "Meta"
+  ja: "メタ"
+  pt: "Meta"
+  vi: "Meta"
 navigational-elements_home:
   de: "Startseite"
   en: "Home"

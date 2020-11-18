@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Étendre les possibilités de LaTeX avec des packages et des définitions"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Étendre les possibilités de LaTeX"
+toc-description: "Utiliser packages et définitions."
 ---
 
 Après avoir déclaré une classe, dans le préambule, vous pouvez modifier les

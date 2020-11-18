@@ -1,6 +1,9 @@
 ---
 lang: "fr"
 title: "Choisir des polices de caractères et utiliser Unicode"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Fontes & moteurs Unicode"
+toc-description: "Choisir les polices de caractères et l'encodage."
 ---
 
 Lorsque TeX et LaTeX ont commencé à être largement utilisés, ils ne traitaient
