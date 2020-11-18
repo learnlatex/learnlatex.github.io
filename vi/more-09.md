@@ -1,6 +1,8 @@
 ---
 lang: "vi"
 title: "Bổ sung: Tham chiếu chéo"
+description: "Cách chuyển các tham chiếu chéo thành các đường dẫn nội văn bản."
+toc-anchor-text: "Bổ sung: Tham chiếu chéo"
 ---
 
 ## Chuyển các tham chiếu chéo thành các đường dẫn

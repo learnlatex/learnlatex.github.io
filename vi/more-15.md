@@ -1,6 +1,8 @@
 ---
 lang: "vi"
 title: "Bổ sung: Xử lý lỗi"
+description: "Một vài lỗi phức tạp và nâng cao hơn."
+toc-anchor-text: "Bổ sung: Lỗi"
 ---
 
 ## Các lỗi được phát hiện khi kết thúc các môi trường

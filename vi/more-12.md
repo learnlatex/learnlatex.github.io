@@ -1,6 +1,8 @@
 ---
 lang: "vi"
 title: "Bổ sung: Phần tài liệu tham khảo"
+description: "Vài nét nâng cao: cách sắp xếp các mục tài liệu, tạo đường dẫn cho các tài liệu và so sánh giữa các kiểu bibliography khác nhau."
+toc-anchor-text: "Bổ sung: Phần tài liệu tham khảo"
 ---
 
 ## Sắp xếp các mục tài liệu đối với các tài liệu không có tên tiếng Anh

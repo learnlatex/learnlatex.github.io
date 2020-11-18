@@ -1,6 +1,9 @@
 ---
 lang: "vi"
 title: "Văn bản LaTeX đầu tiên của bạn"
+description: "Bài này giải thích bố cục cơ bản của các văn bản LaTeX, và một số câu lệnh cơ bản và hay dùng nhất của ngôn ngữ soạn thảo này."
+toc-anchor-text: "Văn bản LaTeX đầu tiên"
+toc-description: "Bố cục cơ bản của một văn bản LaTeX"
 ---
 
 Văn bản LaTeX đầu tiên sẽ rất đơn giản, ý tưởng là để cho bạn thấy bố cục của
