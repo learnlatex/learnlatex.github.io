@@ -22,6 +22,7 @@ skip-link:
   ja: "メインコンテンツにスキップ"
   pt: "Ir para o conteúdo principal"
   vi: "Chuyển đến nội dung chính"
+# FIXME: May be removed
 heading_mission-statement:
   de: "Leitbild"
   en: "Mission statement"
@@ -30,14 +31,15 @@ heading_mission-statement:
   ja: "ミッションステートメント"
   pt: "Declaração de missão"
   vi: "Sứ mệnh của chúng tôi"
+# FIXME: May be removed
 mission-statement:
-  de: "Lernen Sie Schriftsetzen mit LaTeX in 16 kleinen, anfängerfreundlichen Lektionen."
-  en: "Learn typesetting with LaTeX in 16 small, beginner friendly lessons."
-  es: "Aprenda a escribir con LaTeX en 16 lecciones pequeñas para principiantes."
-  fr: "Apprenez la composition avec LaTeX dans 16 petites leçons adaptées aux débutants."
-  ja: "LaTeXを使用したタイプ設定について、初心者向けの16の小さなレッスンで学びます。"
-  pt: "Aprenda composição com LaTeX em 16 pequenas lições para iniciantes."
-  vi: "Học cách tạo văn bản với LaTeX trong 16 bài học nhỏ cho người mới bắt đầu."
+  de: "LaTeX lerne in 16 anfängerfreundlichen Lektionen"
+  en: "Learn LaTeX in 16 beginner friendly lessons"
+  es: "Learn LaTeX in 16 beginner friendly lessons"
+  fr: "Learn LaTeX in 16 beginner friendly lessons"
+  ja: "Learn LaTeX in 16 beginner friendly lessons"
+  pt: "Learn LaTeX in 16 beginner friendly lessons"
+  vi: "Learn LaTeX in 16 beginner friendly lessons"
 heading_planet:
   de: "Planet"
   en: "Planet"
