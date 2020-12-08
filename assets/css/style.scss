@@ -108,7 +108,7 @@ h2,
 
 h3,
 .third-heading {
-    font-family: var(--font_default-regular);
+    font-family: var(--font_default-light);
     font-size: 1.6em;
     margin: 1.4em 0 0.5em;
 }
@@ -195,6 +195,7 @@ main a:focus {
   background: var(--color_blue-0);
   margin: .04rem 0 0 0;
   padding: 1.8rem 0 1.3rem;
+  text-align: center;
 
   a,
   &--logo:link,
@@ -202,7 +203,7 @@ main a:focus {
   &--logo:hover {
     border: none;
     color: var(--color_white-0);
-    display: inline-block;
+    display: block;
     line-height: 0;
     text-decoration: none;
   }
@@ -263,6 +264,40 @@ main a:focus {
 .breadcrumb a:focus {
   text-decoration: underline;
 }
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  #INTRODUCTION                                                             */
+/*----------------------------------------------------------------------------*/
+.introduction {
+  align-content: flex-start;
+  align-items: flex-stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0;
+  section {
+    align-self: flex-start;
+    flex-grow: 1;
+    &:first-of-type {
+      margin: 0 1.5rem 0 0;
+    }
+    &:last-of-type {
+      margin: 0 0 0 1.5rem;
+    }
+  }
+  &__heading {
+    border-bottom: 0.01rem solid var(--color_grey-2);
+    font-size: 1.4rem;
+    margin: 2.5rem 0 1.2rem;
+    padding: 0 0 .8rem;
+  }
+}
+
 
 
 
@@ -376,18 +411,6 @@ table td code {
     clear: both;
     content: " ";
   }
-
-  clear: both;
-
-  &__flex {
-    align-items: flex-start;
-    align-content: flex-start;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 0 2.5rem;
-  }
 }
 
 .website-footer-navigation {
@@ -400,7 +423,7 @@ table td code {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  padding: 0 0 2.5rem;
 
   &__flex-items {
     flex-grow: 1;
@@ -601,17 +624,17 @@ table td code {
     color: var(--color_white-0);
     margin: 0 0 2.5rem;
     padding: 4.2rem 0 4.8rem;
-  }
 
-  .website-header a,
-  .website-header--logo:link,
-  .website-header--logo:visited, 
-  .website-header--logo:hover {
-    border: none;
-    color: var(--color_white-0);
-    display: inline-block;
-    line-height: 0;
-    text-decoration: none;
+    a,
+    &--logo:link,
+    &--logo:visited, 
+    &--logo:hover {
+      border: none;
+      color: var(--color_white-0);
+      display: inline-block;
+      line-height: 0;
+      text-decoration: none;
+    }
   }
 
   .language-icon {

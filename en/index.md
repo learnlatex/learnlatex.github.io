@@ -4,34 +4,33 @@ title: learnlatex.org
 permalink: /en/
 ---
 
-## Welcome to learnlatex.org!
+## Learn LaTeX
 
-**{{ site.data.translations['mission-statement'][page.lang] }}**
+**Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.**
 
-This site aims to help you take the first steps with LaTeX, a document
-preparation system designed to produce high-quality typeset output. LaTeX can
-be scary for new users as it is _not_ a word processor, and because it is not a
-single program. Our aim here is to help you get started without trying to show
-you _everything_ in one go.
-
-To do that, we have taken around 16 of the most important things you'll need to
-know, and made them into short 'lessons'. Each lesson is very focused, so they
-should not take too long to cover. In each lesson, we've given examples of what
-you'd write, and they are available so you can try them out online.
-
-We know that people will want to know more than we can cover in 16 short
-lessons. To help guide you when you need more information, we have therefore
-included a 'going further' page for each lesson. This extra information is
-there to support you when you need the detail, but should not get in your
-way if you do not.
+<div
+  class="introduction">
+  <section>
+    <h3 
+      class="introduction__heading">Why this website?</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
+    and because it is not a single program. Our aim here is to help you get 
+    started with LaTeX from the basics, installation, to writing code, without 
+    trying to show you <em>everything</em> in one go.</p>
+  </section>
+  <section>
+    <h3
+      class="introduction__heading">How it works!</h3>
+    We have taken around 16 of the most important things you will need to know, 
+    and made them into short <em>lessons</em> which should not take long to cover. 
+    In each lesson, we give lots of examples of what you would write. You can edit 
+    and run them in this website.
+  </section>
+</div>
 
 ## How the examples work
 
-To support your learning, the site includes lots of examples. In
-[Lesson 2](./lesson-02) we will talk about how you use LaTeX both online and
-with a local installation on your PC. To get you started, we have set up
-our examples so you can edit and run them in this website. We
-have also linked them to [Overleaf](https://www.overleaf.com/), one of the
+We have also linked them to [Overleaf](https://www.overleaf.com/), one of the
 most popular online LaTeX editing services. But don't worry, you can also
 use the examples on your machine. You can read more about how to use the
 examples in [the help page](./help).
@@ -49,6 +48,12 @@ system is up-to-date.
 
 {% include toc.html  prefix="en/language" %}
 
+<h3>How it works</h3>
+We know that people will want to know more than we can cover in 16 short
+lessons. To help guide you when you need more information, we have therefore
+included a 'going further' page for each lesson. This extra information is
+there to support you when you need the detail, but should not get in your
+way if you do not.
 
 ## Going further
 
