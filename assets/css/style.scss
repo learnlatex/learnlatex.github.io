@@ -272,7 +272,7 @@ main a:focus {
 /*----------------------------------------------------------------------------*/
 /*  #INTRODUCTION                                                             */
 /*----------------------------------------------------------------------------*/
-.introduction {
+.text-columns {
   align-content: flex-start;
   align-items: flex-stretch;
   display: flex;
@@ -282,6 +282,7 @@ main a:focus {
   margin: 0;
   section {
     align-self: flex-start;
+    flex-basis: 0;
     flex-grow: 1;
     &:first-of-type {
       margin: 0 1.5rem 0 0;
