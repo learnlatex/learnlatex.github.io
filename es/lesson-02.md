@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Trabajando con LaTeX"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 A diferencia de muchos programas, LaTeX no es una simple aplicación que contiene

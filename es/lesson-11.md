@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Formateando el texto: fuentes y espaciado"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 ## Espaciado entre párrafos

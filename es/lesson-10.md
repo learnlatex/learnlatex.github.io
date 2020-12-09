@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Matemáticas"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 ## El modo matemático

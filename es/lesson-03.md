@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Su primer documento en LaTeX"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 Nuestro primer documento va a ser muy sencillo: la idea es mostrarle

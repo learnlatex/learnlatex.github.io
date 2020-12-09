@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Accediendo a la documentación y buscando ayuda"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 Existen varias formas de acceder a la documentación de los paquetes y tipos de documento.

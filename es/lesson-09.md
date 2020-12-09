@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Referencias cruzadas"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 ## El funcionamiento de `\label` y `\ref`

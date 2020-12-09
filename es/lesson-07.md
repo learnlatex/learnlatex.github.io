@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Incluyendo imágenes y haciendo que las cosas \"floten\""
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 ## Incluyendo imágenes

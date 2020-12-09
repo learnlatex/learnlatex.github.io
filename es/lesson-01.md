@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "¿Qué es LaTeX y cómo funciona?"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 A diferencia de los procesadores de texto de uso común, como Microsoft Word o LibreOffice Writer, LaTeX no es WYSIWYG (siglas inglesas de "Lo Que Ves Es Lo Que Obtienes"). Con

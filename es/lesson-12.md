@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Citas y referencias bibliográficas"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 <script>
 preincludes = {

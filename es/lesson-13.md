@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Estructurando documentos largos"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 <script>

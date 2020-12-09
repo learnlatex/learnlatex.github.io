@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Tablas"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 

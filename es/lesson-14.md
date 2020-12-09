@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Seleccionando fuentes y usando los motores Unicode"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 Cuando TeX y LaTeX comenzaron a ser ampliamente utilizados, sólo eran capaces de tratar

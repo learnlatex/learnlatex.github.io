@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Extendendiendo LaTeX usando paquetes"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 Después de haber definido el tipo de documento, en el preámbulo, usted podrá modificar 

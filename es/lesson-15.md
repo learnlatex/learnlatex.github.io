@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Analizando los errores"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 A diferencia de un típico procesador de textos, LaTeX dispone de un ciclo

@@ -1,6 +1,8 @@
 ---
 lang: "es"
 title: "Estructura lógica de un documento"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 LaTex proporciona herramientas para concentrarse en la estructura lógica de su documento, y también
