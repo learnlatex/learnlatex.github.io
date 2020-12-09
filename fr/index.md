@@ -48,7 +48,7 @@ d'abord que votre système LaTeX est à jour.
 
 ## Les leçons principales
 
-{% include toc.html  prefix="fr/lesson" %}
+{% include toc-lessons.html  prefix="fr/lesson" %}
 
 
 ### Leçons spécifiques au français

@@ -40,7 +40,7 @@ system is up-to-date.
 
 ## The lessons
 
-{% include toc.html  prefix="ja/lesson" %}
+{% include toc-lessons.html  prefix="ja/lesson" %}
 
 ### Additional lessons specific to learnlatex.org/ja
 

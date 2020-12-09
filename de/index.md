@@ -20,7 +20,7 @@ Alle Beispiele basieren auf einer aktuellen LaTeX-Installation. Sie funktioniere
 
 ## Die Lektionen
 
-{% include toc.html  prefix="de/lesson" %}
+{% include toc-lessons.html  prefix="de/lesson" %}
 
 ### Zusätzliche Lektionen speziell für learnlatex.org/de
 

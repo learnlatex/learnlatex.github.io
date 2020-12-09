@@ -9,7 +9,7 @@ Este sitio web tiene como objetivo ayudarle en sus primeros pasos en LaTeX,
 un sistema de elaboración de documentos que permite obtener una alta calidad 
 tipográfica. LaTeX puede dar miedo a los nuevos usuarios, ya que no es un procesador 
 de textos y al no serlo no es sólo un programa. Nuestro objetivo es ayudarle a 
-dar sus primeros pasos sin intentar mostrarle _todo_ de una sola vez.  
+dar sus primeros pasos sin intentar mostrarle _todo_ de una sola vez.
 
 Para ello, hemos seleccionado 16 de los temas más importantes que necesitará 
 conocer y los hemos convertido en pequeñas "lecciones". Cada lección es muy 
@@ -38,7 +38,7 @@ de LaTeX está correctamente actualizado.
 
 ## Lecciones
 
-{% include toc.html  prefix="es/lesson" %}
+{% include toc-lessons.html  prefix="es/lesson" %}
 
 ### Lecciones adicionales específicas a learnlatex.org/es
 

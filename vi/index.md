@@ -44,7 +44,7 @@ update LaTeX rất quan trọng.)
 
 ## Các bài học
 
-{% include toc.html  prefix="vi/lesson" %}
+{% include toc-lessons.html  prefix="vi/lesson" %}
 
 ### Các bài học dành riêng cho tiếng Việt
 

@@ -39,7 +39,7 @@ de LaTeX está atualizada.
 
 ## As lições
 
-{% include toc.html  prefix="pt/lesson" %}
+{% include toc-lessons.html  prefix="pt/lesson" %}
 
 ### Lições adicionais específicas para learnlatex.org/pt
 
