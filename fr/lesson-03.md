@@ -6,6 +6,8 @@ toc-anchor-text: "Les documents LaTeX"
 toc-description: "Un mélange de texte de commandes."
 ---
 
+# Votre premier document avec LaTeX
+
 Notre premier document LaTeX va être très simple : l'idée est de vous montrer
 à quoi ressemble un document et comment le compiler avec succès. C'est aussi
 votre première chance de [voir comment utiliser les exemples de

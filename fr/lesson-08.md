@@ -6,6 +6,8 @@ toc-anchor-text: "Les tableaux en LaTeX"
 toc-description: "Principes de base pour travailler avec des tableaux."
 ---
 
+# Les tableaux
+
 ## Tableaux simples
 
 En LaTeX, un tableau se construit dans un environnement `tabular`. Cette leçon

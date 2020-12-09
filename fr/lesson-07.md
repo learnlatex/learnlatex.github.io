@@ -6,6 +6,8 @@ toc-anchor-text: "Les images"
 toc-description: "Apparance, espacement et positionnement."
 ---
 
+# Inclure des images et les faire « flotter »
+
 ## Inclure des images
 
 Pour insérer des images provenant d'autres logiciels que LaTeX, utilisez le

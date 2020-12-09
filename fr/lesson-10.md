@@ -6,6 +6,8 @@ toc-anchor-text: "Écrire les mathématiques"
 toc-description: "Mode mathématique et notation mathématique."
 ---
 
+# Écrire les mathématiques
+
 ## Le mode mathématique
 
 Vous pouvez écrire les formules mathématiques en LaTeX de manière logique et

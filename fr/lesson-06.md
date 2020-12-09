@@ -6,6 +6,8 @@ toc-anchor-text: "Étendre les possibilités de LaTeX"
 toc-description: "Utiliser packages et définitions."
 ---
 
+# Étendre les possibilités de LaTeX avec des packages et des définitions
+
 Après avoir déclaré une classe, dans le préambule, vous pouvez modifier les
 fonctionnalités de LaTeX en ajoutant un ou plusieurs _packages_ (ou « paquets »).
 Ceux-ci peuvent :

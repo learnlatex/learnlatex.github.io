@@ -5,6 +5,9 @@ description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentes
 toc-anchor-text: "Bibliographies et références biblio"
 toc-description: "Travailler avec des bases de données bibliographiques."
 ---
+
+# Bibliographies et références biblio
+
 <script>
 preincludes = {
  "pre1": {

@@ -6,6 +6,8 @@ toc-anchor-text: "Fontes & espacements"
 toc-description: "Mise en forme du texte."
 ---
 
+# Mise en forme du texte: fontes et espacements
+
 ## Espacement des paragraphes
 
 Nous avons déjà vu qu'une ligne blanche dans votre saisie génèrera un nouveau

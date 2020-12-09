@@ -6,6 +6,8 @@ toc-anchor-text: "Références croisées"
 toc-description: "Faire référence à des figures, tableaux, etc."
 ---
 
+# Références croisées
+
 ## Étiquettes et références : comment fonctionnent `\label` et `\ref`?
 
 Quand on rédige un document, quelle que soit sa longueur, on fait souvent

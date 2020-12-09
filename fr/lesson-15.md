@@ -6,6 +6,8 @@ toc-anchor-text: "Gestion des erreurs"
 toc-description: "Comprendre les comportements inattendus."
 ---
 
+# Comprendre les erreurs
+
 Contrairement à un système de traitement de texte typique, LaTeX a un cycle
 d'édition/exécution/visualisation plus proche de ce qu'on fait avec un
 compilateur destiné à un langage de programmation ; comme en programmation,

@@ -6,6 +6,8 @@ toc-anchor-text: "Classes de documents"
 toc-description: "Choisir la présentation générale du document."
 ---
 
+# Utiliser les classes de documents pour changer l'apparence
+
 ## Qu'est-ce qu'une classe de document?
 
 Vous avez peut-être remarqué que tous les documents LaTeX que nous avons écrits

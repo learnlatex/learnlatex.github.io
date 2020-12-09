@@ -6,6 +6,8 @@ toc-anchor-text: "Structure logique de votre document"
 toc-description: "Structure et apparence visuelle."
 ---
 
+# Structure logique de votre document
+
 LaTeX vous permet de vous concentrer sur la structure logique de votre document,
 et vous laisse en même temps la possibilité de choisir son apparence. La plupart
 du temps, il est préférable maintenir une certaine séparation du fond (le

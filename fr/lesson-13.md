@@ -6,6 +6,8 @@ toc-anchor-text: "Structurer son code source"
 toc-description: "Découper ses fichiers de façon logique."
 ---
 
+# S'organiser pour écrire un document long
+
 <script>
 preincludes = {
  "pre0": {

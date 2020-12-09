@@ -6,6 +6,8 @@ toc-anchor-text: "Travailler avec LaTeX"
 toc-description: "Les systèmes TeX et les éditeurs de texte pour LaTeX."
 ---
 
+# Travailler avec LaTeX
+
 Contrairement à de nombreux programmes informatiques, LaTeX n'est pas une
 application unique. Au contraire, il est composé de plusieurs programmes
 distincts qui fonctionnent ensemble. Il y a deux catégories indispensables :
