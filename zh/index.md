@@ -39,7 +39,7 @@ system is up-to-date.
 
 ## The lessons
 
-{% include toc.html  prefix="zh-Hans/lesson" %}
+{% include toc-lessons.html  prefix="zh-Hans/lesson" %}
 
 ### Additional lessons specific to learnlatex.org/zh-Hans
 

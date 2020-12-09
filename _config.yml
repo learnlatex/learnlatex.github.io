@@ -79,3 +79,10 @@ defaults:
       lang: "ja"
       label: "日本語"
       layout: "default"
+  -
+    scope:
+      path: "zh"
+    values:
+      lang: "zh"
+      label: "中文"
+      layout: "default"
