@@ -481,6 +481,30 @@ table td code {
 
 
 
+
+/*----------------------------------------------------------------------------*/
+/*  #ACE EDITOR - FIXME                                                       */
+/*----------------------------------------------------------------------------*/
+.ace_editor {
+  border: 1px solid lightgray;
+  margin-bottom: 1px !important;
+  width: 100%;
+  font-family: var(--font_default-mono-regular);
+  font-size: .8rem;
+  line-height: 1.2rem;
+}
+
+.ace_constant {
+  color:blue !important;}
+
+div.spacer {
+  margin-top:16px;
+}
+
+
+
+
+
 /*----------------------------------------------------------------------------*/
 /*  #FOOTER                                                                   */
 /*----------------------------------------------------------------------------*/
