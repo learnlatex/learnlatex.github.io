@@ -475,6 +475,9 @@ table td code {
     font-size: .8rem;
     line-height: 1.2rem;
     margin: 0 0 0 2.85rem;
+    @media (max-width: 38.125rem) {
+      font-family: var(--font_default-light);
+    }
   }
 }
 
