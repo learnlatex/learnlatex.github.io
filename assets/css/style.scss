@@ -34,32 +34,112 @@
 /*  #VARIABLES: FONTS                                                         */
 /*----------------------------------------------------------------------------*/
 :root {
-  --font_default-regular: "roboto_regular";
+  --font_default-medium: 'NotoSans-Medium';
 }
 @font-face {
-  font-family: 'roboto_regular';
+  font-family: 'NotoSans-Medium';
   font-display: fallback;
-  src: url('/assets/fonts/roboto_regular.woff2') format('woff2');
+  src: url('/assets/fonts/NotoSans-Medium.woff2') format('woff2');
 }
 
 :root {
-  --font_default-light: "roboto_light";
+  --font_default-medium-italic: 'NotoSans-MediumItalic';
 }
 @font-face {
-  font-family: 'roboto_light';
+  font-family: 'NotoSans-MediumItalic';
   font-display: fallback;
-  src: url('/assets/fonts/roboto_light.woff2') format('woff2');
+  src: url('/assets/fonts/NotoSans-MediumItalic.woff2') format('woff2');
 }
 
 :root {
-  --font_default-light-italic: "roboto_light_italic";
+  --font_default-medium-semicondensed: 'NotoSans-SemiCondensedMedium';
 }
 @font-face {
-  font-family: 'roboto_light_italic';
+  font-family: 'NotoSans-SemiCondensedMedium';
   font-display: fallback;
-  src: url('/assets/fonts/roboto_light_italic.woff2') format('woff2');
+  src: url('/assets/fonts/NotoSans-SemiCondensedMedium.woff2') format('woff2');
 }
 
+:root {
+  --font_default-regular: 'NotoSans-Regular';
+}
+@font-face {
+  font-family: 'NotoSans-Regular';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-Regular.woff2') format('woff2');
+}
+
+:root {
+  --font_default-regular-semicondensed: 'NotoSans-SemiCondensedRegular';
+}
+@font-face {
+  font-family: 'NotoSans-SemiCondensedRegular';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-SemiCondensedRegular.woff2') format('woff2');
+}
+
+:root {
+  --font_default-light: 'NotoSans-Light';
+}
+@font-face {
+  font-family: 'NotoSans-Light';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-Light.woff2') format('woff2');
+}
+
+:root {
+  --font_default-light-italic: 'NotoSans-LightItalic';
+}
+@font-face {
+  font-family: 'NotoSans-LightItalic';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-LightItalic.woff2') format('woff2');
+}
+
+:root {
+  --font_default-light-semicondensed: 'NotoSans-SemiCondensedLight';
+}
+@font-face {
+  font-family: 'NotoSans-SemiCondensedLight';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-SemiCondensedLight.woff2') format('woff2');
+}
+
+:root {
+  --font_default-light-condensed: 'NotoSans-CondensedLight';
+}
+@font-face {
+  font-family: 'NotoSans-CondensedLight';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-CondensedLight.woff2') format('woff2');
+}
+
+:root {
+  --font_default-thin: 'NotoSans-Thin';
+}
+@font-face {
+  font-family: 'NotoSans-Thin';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-Thin.woff2') format('woff2');
+}
+
+:root {
+  --font_default-thin-italic: 'NotoSans-ThinItalic';
+}
+@font-face {
+  font-family: 'NotoSans-ThinItalic';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-ThinItalic.woff2') format('woff2');
+}
+
+:root {
+  --font_default-mono-regular: 'NotoMono-Regular';
+}
+@font-face {
+  font-family: 'NotoMono-Regular';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoMono-Regular.woff2') format('woff2');
+}
 
 
 
@@ -100,7 +180,7 @@ h1,
 
 h2,
 .second-heading {
-    font-family: var(--font_default-light);
+    font-family: var(--font_default-regular-semicondensed);
     font-size: 1.8em;
     font-weight: normal;
     margin: 1.3em 0 0.5em;
@@ -270,7 +350,7 @@ main a:focus {
 
 
 /*----------------------------------------------------------------------------*/
-/*  #INTRODUCTION                                                             */
+/*  #TEXT-COLUMNS                                                             */
 /*----------------------------------------------------------------------------*/
 .text-columns {
   align-content: flex-start;
@@ -383,6 +463,7 @@ table td code {
   }
   &__link-text {
     background: var(--color_grey-0);
+    font-family: var(--font_default-regular-semicondensed);
     font-size: 1rem;
     margin: 0 0 .3rem 0;
     padding: .1rem 0;
@@ -390,6 +471,7 @@ table td code {
   &__description-text {
     color: var(--color_black-0);
     display: block;
+    font-family: var(--font_default-light-semicondensed);
     font-size: .8rem;
     line-height: 1.2rem;
     margin: 0 0 0 2.85rem;
