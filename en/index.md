@@ -21,10 +21,7 @@ permalink: /en/
   <section>
     <h3
       class="text-columns__heading">How it works</h3>
-    We have taken around 16 of the most important things you will need to know, 
-    and made them into short <em>lessons</em> which should not take long to cover. 
-    In each lesson, we give lots of examples of what you would write. You can edit 
-    and run them in this website.
+      <p>We have taken around 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website.</p>
   </section>
 </div>
 
