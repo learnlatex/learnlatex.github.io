@@ -6,6 +6,8 @@ toc-anchor-text: "Hình vẽ"
 toc-description: "Kích thước, khoảng cách và vị trí hình"
 ---
 
+# Thêm hình ảnh và làm cho các hình linh động
+
 ## Thêm các hình ảnh
 
 Để thêm hình ảnh từ bên ngoài LaTeX, ta dùng gói `graphicx`. Gói này thêm câu

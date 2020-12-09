@@ -6,6 +6,8 @@ toc-anchor-text: "Khái quát về LaTeX"
 toc-description: "LaTeX là gì? Nó hoạt động thế nào?"
 ---
 
+# LaTeX là gì và nó hoạt động như thế nào?
+
 Không giống những trình soạn thảo văn bản thông dụng như Microsoft Word hay
 LibreOffice Writer, LaTeX không phải là một trình soạn thảo WYSIWYG ('What You See Is
 What You Get'). Trong LaTeX, ta dùng văn bản thuần túy (plain text) và thêm các

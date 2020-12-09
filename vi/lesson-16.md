@@ -6,6 +6,7 @@ toc-anchor-text: "Tài liệu và các sự trợ giúp"
 toc-description: "Đọc tài liệu về LaTeX và tìm kiếm sự trợ giúp"
 ---
 
+# Tiếp cận các hướng dẫn sử dụng gói và tìm kiếm sự trợ giúp
 
 Có nhiều cách để đọc hướng dẫn sử dụng của một gói hay lớp văn bản nào đó.
 

@@ -6,6 +6,8 @@ toc-anchor-text: "Font và Unicode"
 toc-description: "Font chữ. Hệ mã hóa văn bản. Unicode"
 ---
 
+# Chọn fonts và sử dụng các trình biên dịch Unicode
+
 Khi TeX và LaTeX bắt đầu được sử dụng rộng rãi, nó chỉ có hỗ trợ cho một số ngôn
 ngữ châu Âu, cùng với một vài tính năng cho các bảng chữ cái khác như tiếng Hy
 Lạp hay tiếng Nga.

@@ -6,6 +6,8 @@ toc-anchor-text: "Cấu trúc logic"
 toc-description: "Một vài thành phần cơ bản của văn bản"
 ---
 
+# Cấu trúc logic
+
 LaTeX cho ta nhiều cách để ta quan tâm đến cấu trúc logic trong văn bản, cũng
 như khả năng trực tiếp điều chỉnh thiết kế văn bản. Trong hầu hết các trường
 hợp, ta nên dùng những phương pháp để quan tâm tới cấu trúc trong văn bản, vì

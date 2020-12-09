@@ -6,6 +6,8 @@ toc-anchor-text: "Lớp văn bản"
 toc-description: "Các thiết lập cơ bản của toàn văn bản"
 ---
 
+# Sử dụng các lớp văn bản
+
 ## Lớp văn bản làm gì?
 
 Bạn có thể để ý rằng tất cả các ví dụ ta đã xét đều bắt đầu với một dòng

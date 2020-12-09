@@ -6,6 +6,8 @@ toc-anchor-text: "Tham chiếu chéo"
 toc-description: "Tham chiếu các thành phần văn bản"
 ---
 
+# Tham chiếu chéo
+
 ## Cách hoạt động của `\label` và `\ref`
 
 Khi ta viết một văn bản dài, ta có thể cần phải thêm các tham chiếu chéo tới các

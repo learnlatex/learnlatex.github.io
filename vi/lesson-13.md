@@ -6,6 +6,8 @@ toc-anchor-text: "Chia nhỏ văn bản"
 toc-description: "Chia nhỏ và hệ thống hóa văn bản dài"
 ---
 
+# Cấu trúc cho các văn bản dài
+
 <script>
 preincludes = {
  "pre0": {

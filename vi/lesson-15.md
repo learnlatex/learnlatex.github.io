@@ -6,6 +6,8 @@ toc-anchor-text: "Lỗi"
 toc-description: "Giải quyết các lỗi"
 ---
 
+# Xử lý lỗi
+
 Không giống như các hệ thống xử lý văn bản thường gặp khác, LaTeX có một chu
 trình "Sửa/Biên dịch/Xem kết quả" giống như nhiều ngôn ngữ lập trình, và như
 trong lập trình thì quá trình biên dịch có thể xảy ra lỗi và người dùng phải xử

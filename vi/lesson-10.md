@@ -6,6 +6,8 @@ toc-anchor-text: "Công thức toán học"
 toc-description: "Chế độ toán trong LaTeX"
 ---
 
+# Các công thức toán học
+
 ## Chế độ toán (math mode)
 
 Bạn có thể thêm các công thức toán dưới một chế độ được gọi là *chế độ toán*

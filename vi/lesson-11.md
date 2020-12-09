@@ -6,6 +6,8 @@ toc-anchor-text: "Định dạng và khoảng cách"
 toc-description: "Định dạng font và các khoảng trống"
 ---
 
+# Định dạng font và các khoảng cách
+
 ## Khoảng cách giữa các đoạn văn
 
 Ta đã biết rằng một dòng trống có công dụng ngắt đoạn trong LaTeX. Dòng đầu tiên

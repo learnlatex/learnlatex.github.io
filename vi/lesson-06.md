@@ -6,6 +6,8 @@ toc-anchor-text: "Mở rộng LaTeX"
 toc-description: "Gói lệnh và định nghĩa lệnh mới"
 ---
 
+# Mở rộng LaTeX bằng các gói lệnh và định nghĩa các lệnh mới
+
 Sau khi khai báo lớp văn bản, trong phần khai báo bạn có thể thay đổi các chức
 năng trong LaTeX bằng việc thêm một hoặc nhiều *gói lệnh*. Những gói lệnh này
 có thể

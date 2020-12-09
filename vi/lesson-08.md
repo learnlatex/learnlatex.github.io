@@ -6,6 +6,8 @@ toc-anchor-text: "Bảng"
 toc-description: "Những điều cơ bản khi làm việc với bảng"
 ---
 
+# Bảng trong LaTeX
+
 ## Bảng cơ bản
 
 Các bảng trong LaTeX được tạo ra bằng môi trường `tabular`. Bài này sẽ coi như
