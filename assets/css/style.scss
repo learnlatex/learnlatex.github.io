@@ -467,6 +467,9 @@ table td code {
     font-size: 1rem;
     margin: 0 0 .3rem 0;
     padding: .1rem 0;
+    @media (max-width: 37rem) {
+      font-family: var(--font_default-regular);
+    }
   }
   &__description-text {
     color: var(--color_black-0);
@@ -475,7 +478,7 @@ table td code {
     font-size: .8rem;
     line-height: 1.2rem;
     margin: 0 0 0 2.85rem;
-    @media (max-width: 38.125rem) {
+    @media (max-width: 37rem) {
       font-family: var(--font_default-light);
     }
   }
