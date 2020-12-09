@@ -6,6 +6,8 @@ toc-anchor-text: "Ajuda & documentação"
 toc-description: "Acessando ajuda e documentação."
 ---
 
+# Acessando documentação e obtendo ajuda
+
 Há várias formas de acessar a documentação de um pacote ou classe.
 
 ## `texdoc`

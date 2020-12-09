@@ -6,6 +6,8 @@ toc-anchor-text: "Tabelas no LaTeX"
 toc-description: "Princípios básicos de tabelas."
 ---
 
+# Tabelas
+
 ## Tabelas básicas
 
 Tabelas no LaTeX são feitas usando o ambiente `tabular`.  Essa lição vai assumir

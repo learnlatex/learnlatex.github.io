@@ -6,6 +6,8 @@ toc-anchor-text: "Trabalhando com LaTeX"
 toc-description: "Sistemas TeX e editores de texto."
 ---
 
+# Trabalhando com LaTeX
+
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação
 que contém 'tudo em um'.  Ao invés disso, há diversos programas que trabalham
 juntos.  Podemos dividi-los em duas coisas que você realmente precisa:

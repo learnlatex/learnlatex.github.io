@@ -6,6 +6,8 @@ toc-anchor-text: "Classes de Documento"
 toc-description: "Configurando a aparência geral do documento."
 ---
 
+# Usando classes de documentos para influenciar o design
+
 ## O que uma classe de documento faz
 
 Você deve ter percebido que todos os documentos LaTeX que criamos até agora

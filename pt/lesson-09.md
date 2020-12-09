@@ -6,6 +6,8 @@ toc-anchor-text: "Referências cruzadas"
 toc-description: "Mencionando figuras, tabelas, etc."
 ---
 
+# Referências cruzadas
+
 ## O mecanismo de `\label` e `\ref`
 
 Quando você está escrevendo um documento de qualquer comprimento, você vai

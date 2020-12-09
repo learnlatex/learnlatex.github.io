@@ -6,6 +6,8 @@ toc-anchor-text: "O Básico de LaTeX"
 toc-description: "O que é LaTeX e como funciona?"
 ---
 
+# O que é LaTeX e como funciona?
+
 Diferente de processadores de texto comuns, como o _Microsoft Word_ ou o
 _LibreOffice Writer_, o LaTeX geralmente não tem interface WYSIWYG ('What You
 See Is What You Get'&mdash;'O que você vê é o que você obtém').  Com o LaTeX,

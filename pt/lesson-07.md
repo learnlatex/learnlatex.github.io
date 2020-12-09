@@ -6,6 +6,8 @@ toc-anchor-text: "Usando gráficos"
 toc-description: "Aparência, espaçamento e posicionamento."
 ---
 
+# Incluindo gráficos e fazendo coisas 'flutuarem'
+
 ## Incluindo gráficos
 
 Para trazer gráficos de fora do LaTeX, use o pacote `graphicx`, que adiciona o

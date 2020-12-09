@@ -6,6 +6,8 @@ toc-anchor-text: "Documentos LaTeX"
 toc-description: "A estrutura básica de um documento."
 ---
 
+# Seu primeiro documento LaTeX
+
 Nosso primeiro documento LaTeX será muito simples: a ideia é lhe mostrar como um
 documento se parece e como processá-lo com sucesso.  Também é a sua primeira
 chance de ver [como usar os exemplos aqui no `learnlatex.org`](help).

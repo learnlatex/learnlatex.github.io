@@ -6,6 +6,8 @@ toc-anchor-text: "Estrutura Lógica"
 toc-description: "Estrutura e representação visual."
 ---
 
+# Estrutura Lógica
+
 O LaTeX possui meios de você focar na estrutura lógica do seu documento, assim
 como lhe permite modificar a aparência diretamente.  A maioria das vezes, é
 muito melhor usar métodos que focam na estrutura, pois torna mais fácil

@@ -6,6 +6,8 @@ toc-anchor-text: "Matemática"
 toc-description: "Modo e notação matemática."
 ---
 
+# Matemática
+
 ## Modo matemático
 
 Você pode escrever equações no LaTeX usando uma forma lógica, conhecida como

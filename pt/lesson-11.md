@@ -6,6 +6,8 @@ toc-anchor-text: "Fontes & espaçamento"
 toc-description: "Formatação do texto para apresentação visual."
 ---
 
+# Formatação: fontes e espaçamento
+
 ## Espaçamento entre parágrafos
 
 Nós já vimos que uma linha em branco no seu código criará um novo parágrafo no

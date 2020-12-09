@@ -6,6 +6,8 @@ toc-anchor-text: "Extendendo o LaTeX"
 toc-description: "Usando pacotes e definições."
 ---
 
+# Extendendo o LaTeX usando pacotes e definições
+
 Depois de declarar uma classe, no preâmbulo você pode modificar funcionalidades
 do LaTeX adicionando um ou mais _pacotes_. Estes podem:
 
