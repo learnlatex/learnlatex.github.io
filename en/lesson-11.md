@@ -6,6 +6,8 @@ toc-anchor-text: "Fonts & spacing"
 toc-description: "Text formatting for visual presentation."
 ---
 
+# Formatting: fonts and spacing
+
 ## Paragraph spacing
 
 We have already seen that a blank line in your input will generate a new

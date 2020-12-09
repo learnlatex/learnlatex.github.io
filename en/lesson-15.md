@@ -6,6 +6,7 @@ toc-anchor-text: "Error handling"
 toc-description: "Dealing with unexpected behaviors."
 ---
 
+# Dealing with errors
 
 Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
 closer to working with programming language compilers, and as in programming

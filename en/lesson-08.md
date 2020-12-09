@@ -6,6 +6,7 @@ toc-anchor-text: "LaTeX tables"
 toc-description: "Fundamentals of working with tables."
 ---
 
+# Tables
 
 ## Basic tables
 

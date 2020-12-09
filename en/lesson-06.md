@@ -6,6 +6,8 @@ toc-anchor-text: "Extending LaTeX"
 toc-description: "Using packages and definitions."
 ---
 
+# Extending LaTeX using packages and definitions
+
 After having declared a class, in the preamble you can modify functionality in
 LaTeX by adding one or more *packages*. These can
 

@@ -6,6 +6,8 @@ toc-anchor-text: "Mathematics"
 toc-description: "Math mode and mathematical notation."
 ---
 
+# Mathematics
+
 ## Math mode
 
 You can mark up mathematics in LaTeX in a logical way in what is known as

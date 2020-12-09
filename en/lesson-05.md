@@ -6,6 +6,8 @@ toc-anchor-text: "Document classes"
 toc-description: "Setting the general document layout."
 ---
 
+# Using document classes to influence design
+
 ## What a document class does
 
 You might have noticed that all of the LaTeX documents we have created

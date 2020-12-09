@@ -6,6 +6,8 @@ toc-anchor-text: "Working with LaTeX"
 toc-description: "TeX systems and LaTeX text editors."
 ---
 
+# Working with LaTeX
+
 Unlike many computer programs, LaTeX is not a single application containing
 'everything' in one. Instead, there are separate programs that work together.
 We can divide those up into two things you actually need:

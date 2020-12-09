@@ -6,6 +6,8 @@ toc-anchor-text: "Structuring sources"
 toc-description: "Spliting up sources in a controlled way."
 ---
 
+# Structuring longer documents
+
 <script>
 preincludes = {
  "pre0": {

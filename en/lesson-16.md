@@ -6,6 +6,7 @@ toc-anchor-text: "Help & documentation"
 toc-description: "Accessing help and documentation."
 ---
 
+# Accessing documentation and getting help
 
 There are several ways to access the documentation of a package or class.
 

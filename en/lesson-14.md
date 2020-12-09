@@ -6,6 +6,8 @@ toc-anchor-text: "Fonts & Unicode engines"
 toc-description: "Selecting fonts and file encoding."
 ---
 
+# Selecting fonts and using Unicode engines
+
 When TeX and LaTeX first started being widely used they largely only handled
 European languages out of the box, although there was some capability for using
 other alphabets such as Greek and Russian.

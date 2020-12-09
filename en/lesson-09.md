@@ -6,6 +6,8 @@ toc-anchor-text: "Cross-referencing"
 toc-description: "Refering to figures, tables, etc."
 ---
 
+# Cross-referencing
+
 ## The `\label` and `\ref` mechanism
 
 When you are writing a document of any length, you'll want to refer to numbered

@@ -1,10 +1,12 @@
 ---
 lang: "en"
-title: "What is LaTeX and how does it work?"
+title: "What LaTeX is and how it works"
 description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
 toc-anchor-text: "LaTeX basics"
 toc-description: "What LaTeX is and how it works."
 ---
+
+# What is LaTeX and how does it work?
 
 Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
 usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX

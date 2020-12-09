@@ -5,6 +5,9 @@ description: "This lesson show the basics of reference databases and how to buil
 toc-anchor-text: "Citations & references"
 toc-description: "Working with reference databases."
 ---
+
+# Citations and references
+
 <script>
 preincludes = {
  "pre1": {

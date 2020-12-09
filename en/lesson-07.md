@@ -6,6 +6,8 @@ toc-anchor-text: "Using graphics"
 toc-description: "Appearance, spacing and positioning."
 ---
 
+# Including graphics and making things 'float'
+
 ## Including graphics
 
 To bring in graphics from outside LaTeX, use the `graphicx`
