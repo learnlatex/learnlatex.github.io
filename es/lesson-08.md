@@ -5,6 +5,7 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Tablas
 
 ## Tablas básicas
 

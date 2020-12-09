@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Usando los tipos de documento para cambiar el diseño
+
 ## Qué es un tipo de documento
 
 Puede que ya haya notado que todos los documentos de LaTeX que hemos creado

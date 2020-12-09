@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# ¿Qué es LaTeX y cómo funciona?
+
 A diferencia de los procesadores de texto de uso común, como Microsoft Word o LibreOffice Writer, LaTeX no es WYSIWYG (siglas inglesas de "Lo Que Ves Es Lo Que Obtienes"). Con
 LaTeX se tiene texto sin formato y con marcadores o etiquetas. Estas etiquetas dan información a LaTeX sobre el significado lógico de los elementos del texto, de forma similar a HTML.
 

@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Analizando los errores
+
 A diferencia de un típico procesador de textos, LaTeX dispone de un ciclo
 Editar/Ejecutar/Ver similar al de los compiladores de los lenguages de programación; 
 al igual que en programación, el usuario puede cometer errores al escribir su documento

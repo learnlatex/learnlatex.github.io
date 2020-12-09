@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Su primer documento en LaTeX
+
 Nuestro primer documento va a ser muy sencillo: la idea es mostrarle
 a qué se asemeja un documento y cómo componerlo correctamente. También será su
 primera oportunidad para [ver cómo hacer uso de los ejemplos en `learnlatex.org`](help).

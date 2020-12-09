@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Matemáticas
+
 ## El modo matemático
 
 Puede escribir fórmulas matemáticas en LaTeX, de una forma lógica, en lo que se

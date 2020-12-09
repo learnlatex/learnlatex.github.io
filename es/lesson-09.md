@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Referencias cruzadas
+
 ## El funcionamiento de `\label` y `\ref`
 
 Cuando esté escribiendo un documento, poco importa el tamaño del mimso, usted querrá hacer referencias

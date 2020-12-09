@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Estructura lógica de un documento
+
 LaTex proporciona herramientas para concentrarse en la estructura lógica de su documento, y también
 la capacidad de configurar directamente la apariencia del mismo. La mayor parte del tiempo, es mejor usar
 métodos que se centren en la estructura, esto hace más fácil la reutilización o la modificación 

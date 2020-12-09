@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Incluyendo imágenes y haciendo que las cosas \"floten\"
+
 ## Incluyendo imágenes
 
 Para importar imágenes en LaTeX, use el paquete `graphicx`, 

@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Formateando el texto: fuentes y espaciado
+
 ## Espaciado entre párrafos
 
 Ya hemos visto que una línea en blanco en su documento genera un nuevo párrafo 

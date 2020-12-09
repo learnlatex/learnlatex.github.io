@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Accediendo a la documentación y buscando ayuda
+
 Existen varias formas de acceder a la documentación de los paquetes y tipos de documento.
 
 ## `texdoc`

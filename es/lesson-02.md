@@ -5,6 +5,8 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
+# Trabajando con LaTeX
+
 A diferencia de muchos programas, LaTeX no es una simple aplicación que contiene
 "todo" en uno. En lugar de ello, tiene programas independientes que funcionan juntos.
 Podemos clasificar estos programas en dos cosas que usted necesitará:
