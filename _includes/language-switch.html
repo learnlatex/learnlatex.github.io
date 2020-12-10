@@ -1,9 +1,5 @@
 <div class="language-switch">
-  <img 
-    class="language-switch_icon"
-    src="{{ "/assets/images/language-icon.svg" | relative_url }}" 
-    alt="Language icon">
-  <select class="language-switch_select" id="myList" onchange="switchlang(this);">
+  <select class="language-switch__select" id="myList" onchange="switchlang(this);">
     <!-- Assigns default language -->
     {% assign lang="en" %}
     <!-- Loop over languages in _data/languages.yml -->
