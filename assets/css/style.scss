@@ -18,22 +18,22 @@
 /*----------------------------------------------------------------------------*/
 :root {
   --color_white-0: rgba(255, 255, 255, 1);
-  --color_black-0: rgba(0, 0, 0, 1);        /* ci black */
-  --color_black-1: rgba(34, 34, 34, 1);     /* typo black */
-  --color_black-2: rgba(68, 68, 68, 1);     /* typo black */
-  --color_blue-0: rgba(0, 73, 128, 1);      /* ci blue */
-  --color_blue-1: rgba(37, 3, 82, 1);
+  --color_black-0: rgba(0, 0, 0, 1);        /* ci black                       */
+  --color_black-1: rgba(34, 34, 34, 1);     /* typo black                     */
+  --color_black-2: rgba(68, 68, 68, 1);     /* typo black                     */
+  --color_blue-0: rgba(0, 73, 128, 1);      /* ci blue                        */
+  --color_blue-1: rgba(0, 52, 92, 1);       /* offset blue                    */
   --color_blue-2: rgba(44, 59, 99, 1);
   --color_blue-3: rgba(2, 119, 158, 1); 
   --color_blue-4: rgba(72, 120, 168, 1);
-  --color_blue-5: rgba(31, 87, 164, 1);     /* typo blue */
+  --color_blue-5: rgba(31, 87, 164, 1);     /* typo blue                      */
   --color_grey-0: rgba(242, 242, 242, 1);
   --color_grey-1: rgba(227, 227, 229, 1);
   --color_grey-2: rgba(204, 204, 204, 1);
   --color_grey-3: rgba(88, 88, 88, 1);
   --color_grey-5: rgba(168, 168, 168, 1);
   --color_grey-6: rgba(234, 234, 234, 1);
-  --color_grey-7: rgba(237, 237, 237, 1);   /* ci grey */
+  --color_grey-7: rgba(237, 237, 237, 1);   /* ci grey                        */
   --color_grey-8: rgba(246, 246, 246, 1);
 }
 
@@ -286,7 +286,7 @@ main a:focus {
 /*  # UNIVERSAL NAVIGATION                                                    */
 /*----------------------------------------------------------------------------*/
 .universal-navigation {
-  background: var(--color_black-2);
+  background: var(--color_blue-1);
 }
 
 
@@ -297,18 +297,37 @@ main a:focus {
 /*  # LANGUAGE SWITCH                                                         */
 /*----------------------------------------------------------------------------*/
 .language-switch {
+  display: inline;
   margin: 0;
   padding: .4rem .4rem .4rem 0;
-  display: inline;
   &__select {
+    background: var(--color_grey-7);
     border: 0.01rem solid var(--color_black-1);
-    border-radius: .4rem;
+    border-radius: .2rem;
     box-shadow: inset 0px 2px 2px 0px rgba(50, 50, 50, 0.5);
-    font-size: .9rem;
-    padding: .1rem .15rem;
+    font-size: .8rem;
+    padding: .15rem .15rem .1rem;
   }
 }
 
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  # SEARCH                                                                  */
+/*----------------------------------------------------------------------------*/
+.search {
+  padding: .4rem .4rem .4rem 0;
+  input {
+    background: var(--color_grey-7);
+    border: 0.01rem solid var(--color_black-1);
+    border-radius: .2rem;
+    box-shadow: inset 0px 2px 2px 0px rgba(50, 50, 50, 0.5);
+    font-size: .8rem;
+    padding: .25rem .43rem .1rem;
+  }
+}
 
 
 

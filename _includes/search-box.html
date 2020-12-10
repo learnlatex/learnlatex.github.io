@@ -19,11 +19,41 @@
 -->
 
 <!-- FIXME: Site to lookup for results is set to latex-project.org while learnlatex.org is under construction and blocked by robots.txt -->
-
+<!--
 <iframe 
   frameborder="0"
   src="https://duckduckgo.com/search.html?site=latex-project.org&k1=-1&k8=%23000000&kae=c&kaf=1&kh=1&kj=%23004980&kl=uk-en&kn=1&ks=l&kp=1&kx=%23004980&prefill=Search&bgcolor=000000"
   style="height: 40px; width: 300px;">
 </iframe>
 
-<!-- DuckDuck search box end -->
+DuckDuck search box end -->
+
+<!-- FIXME: Ship corresponding language search result pages (SERPS) for each language)-->
+
+<form 
+  action="https://duckduckgo.com/"
+  class="search"
+  method="get"
+  target="_blank">
+  <input type="hidden" name="sites" value="www.learnlatex.org">
+  <input type="hidden" name="k1"    value="-1">
+  <input type="hidden" name="k8"    value="#000000">
+  <input type="hidden" name="kae"   value="#FFFFFF">
+  <input type="hidden" name="kaf"   value="1">
+  <input type="hidden" name="kh"    value="1">
+  <input type="hidden" name="kj"    value="#004980">
+  <input type="hidden" name="kl"    value="uk-en">
+  <input type="hidden" name="kn"    value="1">
+  <input type="hidden" name="kp"    value="1">
+  <input type="hidden" name="ks"    value="l">
+  <input type="hidden" name="kx"    value="#004980">
+  <input 
+    type="text"
+    name="q" 
+    maxlength="255" 
+    placeholder="Search&hellip;">
+  <input
+    class="visually-hidden"
+    type="submit" 
+    value="DuckDuckGo Search">
+</form>
