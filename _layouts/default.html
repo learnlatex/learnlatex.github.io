@@ -63,18 +63,6 @@ layout: compress
     {% include website-header.html %}
     <!-- website header end -->
 
-    <!-- title start -->
-    <div class="wrapper">
-      {% if site.title and site.title != page.title %}
-        <span class="breadcrumb">
-          {% if lang =="en" %}
-            <a href="{{ "/" | absolute_url }}">Home</a>
-          {%- else -%}
-            <a href="{{ "/" | absolute_url }}{{ lang }}">{{ site.title }} ({{ lang }})</a>
-          {% endif %}
-        </span>
-      {% endif %}
-    </div>
     <!-- title end -->
 
     <!-- main content start -->
