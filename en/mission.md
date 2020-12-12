@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: Mission
-permalink: /mission
+permalink: /en/mission
 ---
 
 The [learnlatex.org]() site is aimed at providing a basic introduction to LaTeX. To

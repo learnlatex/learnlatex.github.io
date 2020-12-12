@@ -1,6 +1,7 @@
 ---
+lang: "en"
 title: Contact
-permalink: /contact
+permalink: /en/contact
 ---
 
 # Contact
