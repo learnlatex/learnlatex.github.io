@@ -37,7 +37,7 @@ funcionam com ambos os nossos sistemas online, então se você receber erros com
 os exemplos que nós fornecemos, você pode primeiro verificar se a sua instalação
 de LaTeX está atualizada.
 
-## As lições
+<h2 id="toc">As lições</h2>
 
 {% include toc-lessons.html  prefix="pt/lesson" %}
 

@@ -15,5 +15,3 @@ To do that, we have taken around 16 of the most important things you’ll need t
 We know that people will want to know more than we can cover in 16 short lessons. To help guide you when you need more information, we have therefore included a ‘going further’ page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you do not.
 
 We cover getting more information in [the last lesson](./lesson-16), but it is worth saying now that getting access to a book about LaTeX is still the best way to learn the details. We give some recommendations in the last lesson.
-
-Finally we offer a gallery of small examples showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.

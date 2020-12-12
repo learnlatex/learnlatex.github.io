@@ -38,7 +38,7 @@ all work with both of our online demonstration systems, so if you get
 errors with the examples we provide, you might want to check if your LaTeX
 system is up-to-date.
 
-## The lessons
+<h2 id="toc">The lessons</h2>
 
 {% include toc-lessons.html  prefix="ja/lesson" %}
 

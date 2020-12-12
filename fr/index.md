@@ -46,7 +46,7 @@ vous obtenez des erreurs avec les exemples que nous fournissons, vérifiez
 d'abord que votre système LaTeX est à jour.
 
 
-## Les leçons principales
+<h2 id="toc">Les leçons principales</h2>
 
 {% include toc-lessons.html  prefix="fr/lesson" %}
 

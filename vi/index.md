@@ -42,7 +42,7 @@ online được nêu ở đây, do đó nếu bạn gặp những lỗi lạ, h�
 TeX của máy bạn đã được update lên bản mới nhất chưa. (Sau này bạn sẽ thấy việc
 update LaTeX rất quan trọng.)
 
-## Các bài học
+<h2 id="toc">Các bài học</h2>
 
 {% include toc-lessons.html  prefix="vi/lesson" %}
 

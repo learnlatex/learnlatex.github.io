@@ -26,7 +26,7 @@ permalink: /en/
 </div>
 
 
-## The lessons
+<h2 id="toc">The lessons</h2>
 
 {% include toc-lessons.html  prefix="en/lesson" %}
 
@@ -36,5 +36,7 @@ permalink: /en/
 {% include toc.html  prefix="en/language" %}
 
 ### Going further
-    
+
+Finally we offer a gallery of small examples showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.
+
 {% include toc.html prefix="en/extra" %}

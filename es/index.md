@@ -36,7 +36,7 @@ Funcionan bien con nuestros dos sistemas de demostración en línea, con lo que
 si obtiene errores con los ejemplos disponibles, quizá deba verificar si su sistema
 de LaTeX está correctamente actualizado.
 
-## Lecciones
+<h2 id="toc">Lecciones</h2>
 
 {% include toc-lessons.html  prefix="es/lesson" %}
 

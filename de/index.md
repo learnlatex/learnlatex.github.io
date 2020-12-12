@@ -18,7 +18,7 @@ Um Sie beim Lernen von LaTeX zu unterstützen, enthält diese Seite viele Beispi
 
 Alle Beispiele basieren auf einer aktuellen LaTeX-Installation. Sie funktionieren mit beiden verfügbaren Online-Angeboten. Wenn Sie seltsame Fehlermeldungen erhalten, prüfen Sie bitte, ob Ihre LaTeX-Installation aktuell ist.
 
-## Die Lektionen
+<h2 id="toc">Die Lektionen</h2>
 
 {% include toc-lessons.html  prefix="de/lesson" %}
 

@@ -65,3 +65,7 @@
     {% endif %}
   </nav>
 {% endif %}
+
+<a 
+  href="{{ "/" | absolute_url | append: page.lang | append: "/" }}#toc"
+  >{{ site.data.translations['navigational-elements_toc'][page.lang] }}</a>
