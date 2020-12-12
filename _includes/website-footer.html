@@ -33,6 +33,14 @@
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url }}examples"
+                hreflang="{{ page.lang }}"
+                >{{ site.data.translations['navigational-elements_examples'][page.lang] }}</a>
+            </li>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
                 href="{{ "/" | absolute_url }}contact"
                 hreflang="{{ page.lang }}"
                 >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>

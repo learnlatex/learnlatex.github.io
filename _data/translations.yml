@@ -4,7 +4,7 @@
 # Usage:
 # {{ site.data.translations['ITEM'][page.lang] }}
 #
-# (in alphabetical order)
+# (in alphabetical order, can be changed for different order in front-end)
 
 change-language:
   de: "Lesen Sie diese Seite in einer anderen Sprache"
@@ -14,6 +14,7 @@ change-language:
   ja: "このページを別の言語で読む"
   pt: "Leia esta página em um idioma diferente"
   vi: "Đọc trang này trong một ngôn ngữ khác"
+  zh: "Missing"
 skip-link:
   de: "Zum Hauptinhalt springen"
   en: "Skip to main content"
@@ -22,6 +23,7 @@ skip-link:
   ja: "メインコンテンツにスキップ"
   pt: "Ir para o conteúdo principal"
   vi: "Chuyển đến nội dung chính"
+  zh: "Missing"
 # FIXME: May be removed
 heading_mission-statement:
   de: "Leitbild"
@@ -48,6 +50,7 @@ heading_planet:
   ja: "惑星"
   pt: "Planeta"
   vi: "Liên kết ngoài"
+  zh: "Missing"
 heading_navigation:
   de: "Navigation"
   en: "Navigation"
@@ -56,6 +59,7 @@ heading_navigation:
   ja: "ナビゲーション"
   pt: "Navegação"
   vi: "Điều hướng"
+  zh: "Missing"
 heading_meta:
   de: "Meta"
   en: "Meta"
@@ -64,6 +68,7 @@ heading_meta:
   ja: "メタ"
   pt: "Meta"
   vi: "Meta"
+  zh: "Missing"
 navigational-elements_home:
   de: "Startseite"
   en: "Home"
@@ -72,6 +77,7 @@ navigational-elements_home:
   ja: "ホームページ"
   pt: "Pagina inicial"
   vi: "Trang chủ"
+  zh: "Missing"
 navigational-elements_mission:
   de: "Mission"
   en: "Mission"
@@ -80,6 +86,16 @@ navigational-elements_mission:
   ja: "ミッション"
   pt: "Missão"
   vi: "Sứ mệnh"
+  zh: "Missing"
+navigational-elements_examples:
+  de: "Beispiele"
+  en: "Examples"
+  es: "Ejemplos"
+  fr: "Exemples"
+  ja: "例"
+  pt: "Exemplos"
+  vi: "Ví dụ"
+  zh: "例子"
 navigational-elements_contact:
   de: "Kontakt"
   en: "Contact"
@@ -88,6 +104,7 @@ navigational-elements_contact:
   ja: "連絡先"
   pt: "Contato"
   vi: "Liên hệ"
+  zh: "Missing"
 navigational-elements_licenses:
   de: "Lizenzen"
   en: "Licenses"
@@ -96,6 +113,7 @@ navigational-elements_licenses:
   ja: "ライセンス"
   pt: "Licenças"
   vi: "Giấy phép"
+  zh: "執照"
 navigational-elements_open-an-issue:
   de: "Problem melden"
   en: "Open an issue"
@@ -104,6 +122,7 @@ navigational-elements_open-an-issue:
   ja: "問題を開く"
   pt: "Abra um problema"
   vi: "Báo lỗi"
+  zh: "Missing"
 navigational-elements_page-source:
   de: "Seitenquelltext"
   en: "Page source"
@@ -112,6 +131,7 @@ navigational-elements_page-source:
   ja: "ページソース"
   pt: "Fonte da página"
   vi: "Nguồn trang"
+  zh: "Missing"
 navigational-elements_more:
   de: "Mehr zu diesem Thema"
   en: "See more on this topic"
@@ -120,6 +140,7 @@ navigational-elements_more:
   ja: "このトピックの詳細を見る"
   pt: "Veja mais sobre este tópico"
   vi: "Xem bài bổ sung của bài này"
+  zh: "Missing"
 navigational-elements_next:
   de: "Nächste Lektion"
   en: "Next lesson"
@@ -128,6 +149,7 @@ navigational-elements_next:
   ja: "次のレッスン"
   pt: "Próxima lição"
   vi: "Bài tiếp theo"
+  zh: "Missing"
 navigational-elements_nextmain:
   de: "Nächste Hauptlektion"
   en: "Next main lesson"
@@ -136,6 +158,7 @@ navigational-elements_nextmain:
   ja: "次のメインレッスン"
   pt: "Próxima lição principal"
   vi: "Bài chính tiếp theo"
+  zh: "Missing"
 navigational-elements_return:
   de: "Zurück zur Hauptlektion"
   en: "Return to main lesson"
@@ -144,3 +167,4 @@ navigational-elements_return:
   ja: "メインレッスンに戻る"
   pt: "Retornar à lição principal"
   vi: "Quay trở lại bài chính"
+  zh: "Missing"
