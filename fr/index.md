@@ -4,7 +4,7 @@ title: learnlatex.org
 permalink: /fr/
 ---
 
-## Bienvenue sur learnlatex.org (version française)!
+# Bienvenue sur learnlatex.org (version française)!
 
 Ce site web a pour but de vous aider à faire vos premiers pas avec LaTeX,
 un système de composition de documents conçu pour produire des documents

@@ -1,9 +1,10 @@
 ---
 lang: "pt"
 title: learnlatex.org
+permalink: /pt/
 ---
 
-## Bem-vindo ao learnlatex.org!
+# Bem-vindo ao learnlatex.org!
 
 O objetivo deste site é ajudar você nos seus primeiros passos com o LaTeX, um
 sistema de preparação de documentos projetado para produzir impressões

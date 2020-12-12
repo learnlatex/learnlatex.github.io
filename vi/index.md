@@ -1,9 +1,10 @@
 ---
 lang: "vi"
 title: learnlatex.org
+permalink: /vi/
 ---
 
-## Chào mừng đến với learnlatex.org!
+# Chào mừng đến với learnlatex.org!
 
 Trang này được tạo ra với mục đích giúp bạn có được những kiến thức cơ bản nhất
 về LaTeX, một hệ thống sắp chữ được thiết kế để tạo ra những văn bản có chất

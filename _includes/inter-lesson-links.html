@@ -1,5 +1,13 @@
 {% if page.path contains "lesson-" %}
   <nav>
+    
+    <!-- Table of contents link start -->
+    <a 
+      href="{{ "/" | absolute_url | append: page.lang | append: "/" }}#toc"
+      >{{ site.data.translations['navigational-elements_toc'][page.lang] }}</a>
+    <br>
+    <!-- Table of contents link end -->
+    
     <a 
       href="{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}"
       >{{ site.data.translations['navigational-elements_more'][page.lang] }}</a>
@@ -65,7 +73,3 @@
     {% endif %}
   </nav>
 {% endif %}
-
-<a 
-  href="{{ "/" | absolute_url | append: page.lang | append: "/" }}#toc"
-  >{{ site.data.translations['navigational-elements_toc'][page.lang] }}</a>

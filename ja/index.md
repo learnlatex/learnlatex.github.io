@@ -1,9 +1,10 @@
 ---
 lang: "ja"
 title: learnlatex.org
+permalink: /ja/
 ---
 
-## Welcome to learnlatex.org (Japanese)!
+# Welcome to learnlatex.org (Japanese)!
 
 This site aims to help you take the first steps with LaTeX, a document
 preparation system designed to produce high-quality typeset output. LaTeX can

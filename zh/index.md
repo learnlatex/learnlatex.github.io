@@ -1,8 +1,10 @@
 ---
+lang: "zh"
 title: learnlatex.org
+permalink: /zh/
 ---
 
-## Welcome to learnlatex.org (Chinese)!
+# Welcome to learnlatex.org (Chinese)!
 
 This site aims to help you take the first steps with LaTeX, a document
 preparation system designed to produce high-quality typeset output. LaTeX can

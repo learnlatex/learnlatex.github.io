@@ -4,9 +4,9 @@ title: learnlatex.org
 permalink: /en/
 ---
 
-## Learn LaTeX
+# Learn LaTeX
 
-**Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.**
+<h2>Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
 
 <div
   class="text-columns">
