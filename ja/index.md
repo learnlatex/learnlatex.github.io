@@ -2,48 +2,31 @@
 title: learnlatex.org
 ---
 
-## Welcome to learnlatex.org (Japanese)!
+## 日本語版 learnlatex.org へようこそ！
 
-This site aims to help you take the first steps with LaTeX, a document
-preparation system designed to produce high-quality typeset output. LaTeX can
-be scary for new users as it is _not_ a word processor, and because it is not a
-single program. Our aim here is to help you get started without trying to show
-you _everything_ in one go.
+このサイトは，高品質の組版出力が可能なドキュメント制作システム LaTeX の初歩を学ぶ手助けをします．初心者の中には，LaTeX はとても敷居が高いと感じられるシステムかもしれません．なぜなら **LaTeX はワードプロセッサではなく**，また単一のプログラムでもないからです．本サイトでは，LaTeX の**すべて**を一度に見せて圧倒してしまわないように注意を払っています．
 
-To do that, we have taken around 15 of the most important things you'll need to
-know, and made them into short 'lessons'. Each lesson is very focused, so they
-should not take too long to cover. In each lesson, we've given examples of what
-you'd write, and they are available so you can try them out online.
+そのために，LaTeX に入門する上でとても重要な15の項目を選び出し，それぞれを短い「レッスン」にまとめました．これらのレッスンは要点を絞って書かれているので，1つ1つを理解するのにそれほど多くの時間はかからないでしょう．各レッスンには実際の LaTeX のコード例が盛り込まれ，さらに読者の皆さんがオンラインで実際に LaTeX での処理を試してみることができるようになっています．
 
-We know that people will want to know more than we can cover in 15 short
-lessons. To help guide you when you need more information, we have therefore
-included a 'going further' page for each lesson. This extra information is
-there to support you when you need the detail, but should not get in your
-way if you do not.
+もちろん，このサイトの15のレッスンで扱う内容では足りないという方もいることでしょう．より多くの情報を求める方への手引として，各レッスンにはさらに「追加レッスン」が付いています．これらの追加レッスンはより詳細な情報を求める人のためのものですが，詳しいことはスキップしたい方の邪魔にならないようになっています．
 
-## How the examples work
+## コード例の試し方
 
-To support your learning, the site includes lots of examples. In
-[Lesson 2](lesson-02) we will talk about how you use LaTeX both online and with
-a local installation on your own PC. To get you started, we have set up
-our examples so you can edit and run them _in the page_ they are on. We
-have also linked them to [Overleaf](https://www.overleaf.com), one of the
-most popular online LaTeX editing sites. But don't worry, you can also
-use the examples on your own machine. You can read more about how to use the
-examples [in the site help](help).
+読者の学習を助けるため，このサイトには多くのコード例が掲載されています．[レッスン2](lesson-02)では，オンラインおよびローカル（読者自身のコンピュータ）で LaTeX を使う方法について解説します．まずはとにかく簡単に試すことができるように，各コード例は**各ページ内**でそのまま編集し，LaTeX で処理してみることが可能です．さらに人気のオンライン LaTeX サービスである [Overleaf](https://www.overleaf.com) とも連携し，ボタン1つで各コード例を Overleaf 上で開くこともできるようになっています．そしてもちろん，コード例はお手許のコンピュータで試すことも可能です．本サイトの[ヘルプページ](help)ではコード例の活用方法についてさらに詳しく説明しています．
 
-Our examples are based around using an up-to-date LaTeX installation. They
-all work with both of our online demonstration systems, so if you get strange
-errors, you might want to check if your LaTeX system is up-to-date.
+本サイトのコード例はすべて最新の LaTeX 環境を前提にしています．このサイトでサポートしている2つのオンラインデモンストレーションではすべて間違いなく動作します．もし各コード例が手許の PC では妙なエラーを引き起こすという場合は，まず LaTeX 環境が最新のものになっているかどうか確認してください．
 
-## The lessons
+## レッスン
 
 {% include toc.html  prefix="ja/lesson" %}
 
-### Additional lessons specific to learnlatex.org/ja
+### 日本語版のオリジナルレッスン
 
 {% include toc.html  prefix="ja/language" %}
 
+<!--
+
+TODO: extra レッスンの翻訳
 
 ## Going further
 
@@ -59,3 +42,5 @@ a range of different subject areas not covered in this introduction,
 and different LaTeX packages in those areas.
     
 {% include toc.html prefix="ja/extra" %}
+
+-->
