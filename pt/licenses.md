@@ -1,9 +1,10 @@
 ---
+lang: "pt"
 title: Licenses
-permalink: /licenses
+permalink: /pt/licenses
 ---
+# Licenses (Português)
 
-# Licenses
 
 [This website]({{ "/" | absolute_url }}) uses 2 types of licenses:
 
