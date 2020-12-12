@@ -8,7 +8,7 @@ permalink: /en/help
 ## Navigating the site
 
 The course consists of 16 core lessons that can be reached from the table
-of contents on the [home page](/).
+of contents on the [home page]({{ "/" | absolute_url | append: page.lang | append: "/" }}).
 
 Each lesson has a link to one associated lesson on the same subject
 that goes into greater depth. It should be possible to work through
@@ -18,7 +18,9 @@ At the end of the course there are one or more lessons specific to the
 language being used for the lessons, and finally a gallery of examples
 of packages demonstrating LaTeX use not covered by this course.
 
-## Running the examples
+## Examples 
+
+### Running the examples
 
 Each example consists of a complete small LaTeX document shown within
 the page like this:
@@ -59,7 +61,7 @@ Whether or not the code block has been edited, there are three basic ways that y
    make to the example are lost if you move off the page.
 
 
-2. Use the **Overleaf** Service. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
+2. Use the **Overleaf** Service, one of the most popular online LaTeX editing services. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
    button will submit the code to [Overleaf](https://www.overleaf.com/about).
 
    If you do not have an account, or the account details are not
@@ -84,6 +86,10 @@ Whether or not the code block has been edited, there are three basic ways that y
    in windows for example). This will place the code in your operating system
    clipboard so you can start a blank document using your local
    editor, and paste in the text.
+   
+### Troubleshooting
+
+Our examples are based around using an up-to-date LaTeX installation. They all work with both of our online demonstration systems, so if you get errors with the examples we provide, you might want to check if your LaTeX system is up-to-date.
 
 
 ## Choosing the {{ site.tex }} engine

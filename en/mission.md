@@ -4,12 +4,16 @@ title: Mission
 permalink: /en/mission
 ---
 
-The [learnlatex.org]() site is aimed at providing a basic introduction to LaTeX. To
-make the material accessible, it is broken down into a series of small lessons.
-The demonstration files provided are also hosted on-line to let new users get
-started straight away.
+# Learn LaTeX Mission
 
-The LaTeX ecosystem is rich and complex, and this can be intimidating to new
-users. To avoid overload, this site therefore is quite deliberately limited in
-scope, covering essential ideas using core LaTeX packages and classes, and
-leaving further help to other places.
+This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
+
+To do that, we have taken around 16 of the most important things you’ll need to know, and made them into short ‘lessons’. Each lesson is very focused, so they should not take too long to cover. In each lesson, we’ve given examples of what you’d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.
+
+## Going further
+
+We know that people will want to know more than we can cover in 16 short lessons. To help guide you when you need more information, we have therefore included a ‘going further’ page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you do not.
+
+We cover getting more information in [the last lesson](./lesson-16), but it is worth saying now that getting access to a book about LaTeX is still the best way to learn the details. We give some recommendations in the last lesson.
+
+Finally we offer a gallery of small examples showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.
