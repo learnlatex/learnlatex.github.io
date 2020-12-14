@@ -172,7 +172,7 @@ html {
 /*  # WRAPPER                                                                 */
 /*----------------------------------------------------------------------------*/
 .wrapper {
-  max-width: 600px;
+  max-width: 660px;
   margin: 0 auto;
   padding: 0 0.5rem;
 }
@@ -854,18 +854,25 @@ div.spacer {
 /*  # START PAGE                                                              */
 /*----------------------------------------------------------------------------*/
 .start {
-  h1,
-  h2 {
+  main h1 {
     font-family: var(--font_default-light);
     font-size: 2em;
     font-weight: normal;
     margin: 0 0 0.6em;
   }
 
-  h2.introduction {
+  main h2.heading__introduction {
     font-family: var(--font_default-regular-semicondensed);
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: normal;
     margin: 1.3em 0 0.5em;
+  }
+  main h2.heading__toc {
+    border-bottom: 0.01rem solid var(--color_grey-2);
+    font-family: var(--font_default-regular);
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 2.5rem 0 1.2rem;
+    padding: 0 0 .8rem;
   }
 }

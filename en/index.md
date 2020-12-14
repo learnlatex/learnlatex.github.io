@@ -6,7 +6,7 @@ permalink: /en/
 
 # Learn LaTeX
 
-<h2 class="introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
 
 <div
   class="text-columns">
@@ -26,7 +26,10 @@ permalink: /en/
 </div>
 
 
-<h2 id="toc">The lessons</h2>
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >The lessons</h2>
 
 {% include toc-lessons.html  prefix="en/lesson" %}
 
