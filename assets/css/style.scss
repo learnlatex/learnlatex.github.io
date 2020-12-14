@@ -798,7 +798,7 @@ div.spacer {
     background: var(--color_blue-0);
     color: var(--color_white-0);
     margin: 0 0 2.5rem;
-    padding: 4.2rem 0 4.8rem;
+    padding: 3.7rem 0 4.25rem;
 
     a,
     &--logo:link,
@@ -813,7 +813,7 @@ div.spacer {
   }
 
   .language-icon {
-    margin: -3.87rem 0 1.6rem;
+    margin: -3.74rem 0 1.4rem;
   }
 
   .language-navigation {
@@ -827,29 +827,28 @@ div.spacer {
 
     &__list-item {
       display: inline-block;
-      line-height: 1rem;
+      line-height: .9rem;
       margin: 1rem 1.2rem;
       padding: 0;
     }
 
     &__anchor {
       text-decoration: none;
-      line-height: 1.2rem;
-      overflow-wrap: break-word;
+      line-height: 1.1rem; overflow-wrap: break-word;
 
       &:hover {
-        text-decoration: underline;
+        color: var(--color_blue-0);
       }
     }
 
     &__label-regional {
       color: var(--color_blue-0);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     &__label-english {
       color: var(--color_grey-3);
-      font-size: .8rem;
+      font-size: .7rem;
     }
   }
 }
@@ -875,6 +874,10 @@ div.spacer {
     font-size: 1.4rem;
     font-weight: normal;
     margin: 1.3em 0 0.5em;
+    .anchorjs-link {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   main h2.heading__toc {
