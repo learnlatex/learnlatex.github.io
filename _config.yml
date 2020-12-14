@@ -1,6 +1,8 @@
+# CONFIGURATION
+# https://jekyllrb.com/docs/configuration/options/
+
 title: learnlatex.org
 description: Learn LaTeX online
-
 repository: learnlatex/learnlatex.github.io
 
 plugins:
@@ -13,15 +15,16 @@ kramdown:
 sass:
     style: compressed
 
+limit_posts: 0
+
 latex: "<span>L<span style='font-variant: small-caps; vertical-align:.35ex;margin-left:-.15em;margin-right:-.05em;'>a</span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
 tex: "<span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
 
 
-
-
-
-# LANGUAGES 
-# Settings for multilingual set up (in alphabetical order)
+# LANGUAGES, LABELS, LAYOUTS
+# Settings for multilingual set up: 
+# In alphabetical order by language code.
+# In ascending order by path specifity.
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   -
@@ -35,54 +38,151 @@ defaults:
       path: "en"
     values:
       lang: "en"
-      label: "English"
       layout: "default"
-  - 
+  -
+    scope:
+      path: "en/index.md"
+    values:
+      lang: "en"
+      label: "English"
+      layout: "start"
+  -
+    scope:
+      path: "en/lesson*"
+    values:
+      lang: "en"
+      layout: "lesson"
+  -
     scope:
       path: "es"
     values:
       lang: "es"
+      layout: "default"
+  - 
+    scope:
+      path: "es/index.md"
+    values:
+      lang: "es"
       label: "Español"
       layout: "default"
+  - 
+    scope:
+      path: "es/lesson*"
+    values:
+      lang: "es"
+      layout: "lesson"
   -
     scope:
       path: "fr"
     values:
       lang: "fr"
-      label: "Français"
       layout: "default"
+  -
+    scope:
+      path: "fr/index.md"
+    values:
+      lang: "fr"
+      label: "Français"
+      layout: "start"
+  -
+    scope:
+      path: "fr/lesson*"
+    values:
+      lang: "fr"
+      layout: "lesson"
   -
     scope:
       path: "de"
     values:
       lang: "de"
-      label: "German"
       layout: "default"
+  -
+    scope:
+      path: "de/index.md"
+    values:
+      lang: "de"
+      label: "German"
+      layout: "start"
+  -
+    scope:
+      path: "de/lesson*"
+    values:
+      lang: "de"
+      layout: "lesson"
   -
     scope:
       path: "pt"
     values:
       lang: "pt"
-      label: "Português"
       layout: "default"
+  -
+    scope:
+      path: "pt"
+    values:
+      lang: "pt/index.md"
+      label: "Português"
+      layout: "start"
+  -
+    scope:
+      path: "pt"
+    values:
+      lang: "pt/lesson*"
+      layout: "start"
   -
     scope:
       path: "vi"
     values:
       lang: "vi"
-      label: "Tiếng Việt"
       layout: "default"
+  -
+    scope:
+      path: "vi/index.html"
+    values:
+      lang: "vi"
+      label: "Tiếng Việt"
+      layout: "start"
+  -
+    scope:
+      path: "vi/lesson*"
+    values:
+      lang: "vi"
+      label: "Tiếng Việt"
+      layout: "lesson"
   -
     scope:
       path: "ja"
     values:
       lang: "ja"
-      label: "日本語"
       layout: "default"
+  -
+    scope:
+      path: "ja/index.md"
+    values:
+      lang: "ja"
+      label: "日本語"
+      layout: "start"
+  -
+    scope:
+      path: "ja/lesson"
+    values:
+      lang: "ja"
+      layout: "lesson"
   -
     scope:
       path: "zh"
     values:
       lang: "zh"
-      label: "中文"
       layout: "default"
+  -
+    scope:
+      path: "zh/index.md"
+    values:
+      lang: "zh"
+      label: "中文"
+      layout: "start"
+  -
+    scope:
+      path: "zh/lesson"
+    values:
+      lang: "zh"
+      layout: "lesson"

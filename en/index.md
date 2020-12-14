@@ -6,7 +6,7 @@ permalink: /en/
 
 # Learn LaTeX
 
-<h2>Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
 
 <div
   class="text-columns">
@@ -31,7 +31,7 @@ permalink: /en/
 {% include toc-lessons.html  prefix="en/lesson" %}
 
 
-### Additional lessons specific to learnlatex.org/en
+### Additional lessons specific to English
 
 {% include toc.html  prefix="en/language" %}
 
