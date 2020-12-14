@@ -593,22 +593,26 @@ div.spacer {
   padding: 0 0 2.5rem;
 
   &__flex-items {
+    flex-basis: 10rem;
     flex-grow: 1;
-    min-width: 10rem;
     padding: 0 1rem;
     text-align: center;
+    
     &:first-of-type {
       padding: 0 1rem 0 0;
+    
       @media (max-width: 35rem) {
         padding: 0 1rem;
       }
     }
+    
     &:last-of-type {
       padding: 0 0 0 1rem;
       @media (max-width: 35rem) {
         padding: 0 1rem;
       }
     }
+
     @media (max-width: 35rem) {
       padding: 0 1rem;
     }
@@ -620,7 +624,8 @@ div.spacer {
     padding: 0 0 .6rem;
 
     .anchorjs-link {
-      color: var(--color_blue-0);
+      display: none;
+      visibility: hidden;
     }
   }
 
@@ -631,7 +636,7 @@ div.spacer {
 
   &__list-item {
     margin: 0;
-    padding: 0 1em 0 0;
+    padding: 0;
   }
 
   &__anchor {
@@ -647,12 +652,12 @@ div.spacer {
 
 .website-footer-languages {
   background: var(--color_white-0);
-  border-top: 2rem solid var(--color_blue-0);
+  border-top: 2.5rem solid var(--color_blue-0);
   padding: 1rem 0 1.4rem;
   text-align: center;
 
   .language-icon {
-    margin: -1.87rem 0 1.2rem;
+    margin: -2.1rem 0 1.4rem;
   }
 
   .language-navigation {
@@ -669,6 +674,9 @@ div.spacer {
       line-height: 1rem;
       margin: 0 1.2rem 1.2rem;
       padding: 0;
+      &:first-child {
+        padding: 0;
+      }
     }
 
     &__anchor {
@@ -854,6 +862,7 @@ div.spacer {
 /*  # START PAGE                                                              */
 /*----------------------------------------------------------------------------*/
 .start {
+  
   main h1 {
     font-family: var(--font_default-light);
     font-size: 2em;
@@ -867,6 +876,7 @@ div.spacer {
     font-weight: normal;
     margin: 1.3em 0 0.5em;
   }
+
   main h2.heading__toc {
     border-bottom: 0.01rem solid var(--color_grey-2);
     font-family: var(--font_default-regular);
