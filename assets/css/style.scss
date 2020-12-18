@@ -554,6 +554,8 @@ table td code {
 /*----------------------------------------------------------------------------*/
 .lesson {
   .inter-lesson-navigation {
+    border-bottom: 0.004rem solid var(--color_grey-2);
+    border-top: 0.004rem solid var(--color_grey-2);
     align-content: flex-start;
     align-items: flex-start;
     display: flex;
@@ -563,11 +565,16 @@ table td code {
     flex-shrink: 1;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1.5rem 0;
+    margin: 1.5rem 0;
+    padding: .8rem .2rem;
     &__anchor {
       flex-basis: 10rem;
       flex-grow: 1;
       font-size: .8rem;
+      &:hover {
+        color: var(--color_black-0);
+        text-decoration: none;
+      }
       &--next,
       &--nextmain {
         text-align: right;
@@ -575,9 +582,6 @@ table td code {
           content: "\f0a9";
           font-family: "FontAwesome";
           padding: 0 0 0 .5rem;
-          &:hover {
-            text-decoration: none;
-          }
         }
       }
       &--more {
@@ -586,9 +590,6 @@ table td code {
           content: "\f055";
           font-family: "FontAwesome";
           padding: 0 .5rem 0 0;
-          &:hover {
-            text-decoration: none;
-          }
         }
       }
       &--return {
@@ -596,9 +597,6 @@ table td code {
           content: "\f0aa";
           font-family: "FontAwesome";
           padding: 0 .5rem 0 0;
-          &:hover {
-            text-decoration: none;
-          }
         }
       }
       &--toc {
