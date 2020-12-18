@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "fr"
 title: "Exemples avancés, comme sources d'inspiration"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."

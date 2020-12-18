@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "fr"
 title: "Votre premier document avec LaTeX"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
