@@ -24,24 +24,6 @@ skip-link:
   pt: "Ir para o conteúdo principal"
   vi: "Chuyển đến nội dung chính"
   zh: "Missing"
-# FIXME: May be removed
-heading_mission-statement:
-  de: "Leitbild"
-  en: "Mission statement"
-  es: "Estado de la misión"
-  fr: "Énoncé de mission"
-  ja: "ミッションステートメント"
-  pt: "Declaração de missão"
-  vi: "Sứ mệnh của chúng tôi"
-# FIXME: May be removed
-mission-statement:
-  de: "LaTeX lerne in 16 anfängerfreundlichen Lektionen"
-  en: "Learn LaTeX in 16 beginner friendly lessons"
-  es: "Learn LaTeX in 16 beginner friendly lessons"
-  fr: "Learn LaTeX in 16 beginner friendly lessons"
-  ja: "Learn LaTeX in 16 beginner friendly lessons"
-  pt: "Learn LaTeX in 16 beginner friendly lessons"
-  vi: "Learn LaTeX in 16 beginner friendly lessons"
 heading_planet:
   de: "Planet"
   en: "Planet"
