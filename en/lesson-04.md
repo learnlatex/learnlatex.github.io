@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Logical structure"
 description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."

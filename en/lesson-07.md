@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Including graphics and making things 'float'"
 description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."

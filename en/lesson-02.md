@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Working with LaTeX"
 description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."

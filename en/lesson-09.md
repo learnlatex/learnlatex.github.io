@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Cross-referencing"
 description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Accessing documentation and getting help"
 description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."

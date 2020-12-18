@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Mathematics"
 description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."

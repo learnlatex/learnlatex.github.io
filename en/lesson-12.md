@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Citations and references"
 description: "This lesson show the basics of reference databases and how to build your own, how to use this databases in your documents using the two major workflows available, and how to choose between them."

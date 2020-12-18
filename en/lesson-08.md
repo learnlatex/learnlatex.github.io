@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Tables"
 description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
