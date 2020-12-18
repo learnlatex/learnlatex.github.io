@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Extendendiendo LaTeX usando paquetes"
 toc-anchor-text: "Anchor"

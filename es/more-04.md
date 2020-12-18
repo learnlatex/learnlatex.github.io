@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Más sobre: Estructura lógica de un documento"
 ---

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Usando los tipos de documento para cambiar el diseño"
 toc-anchor-text: "Anchor"

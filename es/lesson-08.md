@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Tablas"
 toc-anchor-text: "Anchor"

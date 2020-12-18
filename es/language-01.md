@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Especificaciones de idioma en español"
 next: "extra-01"

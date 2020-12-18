@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Ejemplos para ir más lejos"
 ---

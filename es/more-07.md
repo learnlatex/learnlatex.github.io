@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Más sobre: Incluyendo imágenes y haciendo que las cosas \"floten\""
 ---

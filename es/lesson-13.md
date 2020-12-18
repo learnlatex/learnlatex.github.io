@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Estructurando documentos largos"
 toc-anchor-text: "Anchor"

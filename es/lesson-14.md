@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Seleccionando fuentes y usando los motores Unicode"
 toc-anchor-text: "Anchor"

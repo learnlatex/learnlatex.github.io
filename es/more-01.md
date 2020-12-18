@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Más sobre: ¿Qué es LaTeX y cómo funciona?"
 ---

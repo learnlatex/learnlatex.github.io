@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Estructura lógica de un documento"
 toc-anchor-text: "Anchor"

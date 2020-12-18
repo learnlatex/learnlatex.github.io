@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Citas y referencias bibliográficas"
 toc-anchor-text: "Anchor"

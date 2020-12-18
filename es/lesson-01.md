@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "¿Qué es LaTeX y cómo funciona?"
 toc-anchor-text: "Anchor"

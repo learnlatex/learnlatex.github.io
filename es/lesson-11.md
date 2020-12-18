@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Formateando el texto: fuentes y espaciado"
 toc-anchor-text: "Anchor"

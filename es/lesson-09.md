@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Referencias cruzadas"
 toc-anchor-text: "Anchor"

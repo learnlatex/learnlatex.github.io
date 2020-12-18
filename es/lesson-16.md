@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Accediendo a la documentación y buscando ayuda"
 toc-anchor-text: "Anchor"

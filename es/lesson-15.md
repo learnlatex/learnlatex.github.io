@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "es"
 title: "Analizando los errores"
 toc-anchor-text: "Anchor"
