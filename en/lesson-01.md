@@ -6,7 +6,7 @@ toc-anchor-text: "LaTeX basics"
 toc-description: "What LaTeX is and how it works."
 ---
 
-# What is LaTeX and how does it work?
+# What LaTeX is and how it works
 
 Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
 usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
