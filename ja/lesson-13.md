@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Structuring longer documents (Japanese)"
 toc-anchor-text: "Anchor"

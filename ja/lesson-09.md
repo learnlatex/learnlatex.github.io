@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Cross-referencing (Japanese)"
 toc-anchor-text: "Anchor"

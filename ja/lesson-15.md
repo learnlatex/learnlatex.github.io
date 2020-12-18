@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Dealing with errors (ja)"
 toc-anchor-text: "Anchor"

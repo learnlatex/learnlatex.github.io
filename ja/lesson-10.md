@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Mathematics (Japanese)"
 toc-anchor-text: "Anchor"

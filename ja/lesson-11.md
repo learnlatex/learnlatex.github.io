@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Formatting: fonts and spacing (Japanese)"
 toc-anchor-text: "Anchor"

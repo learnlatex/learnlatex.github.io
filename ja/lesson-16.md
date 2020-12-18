@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Accessing documentation and getting help (Japanese)"
 toc-anchor-text: "Anchor"

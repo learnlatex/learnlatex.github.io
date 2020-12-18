@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Selecting fonts and using Unicode engines (Japanese)"
 toc-anchor-text: "Anchor"

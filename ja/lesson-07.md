@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Including graphics and making things 'float' (Japanese)"
 toc-anchor-text: "Anchor"

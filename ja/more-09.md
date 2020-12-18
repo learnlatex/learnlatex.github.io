@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "More on: Cross-referencing (Japanese)"
 ---

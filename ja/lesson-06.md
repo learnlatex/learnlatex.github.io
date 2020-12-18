@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Extending LaTeX using packages (Japanese)"
 toc-anchor-text: "Anchor"

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "More on: Formatting: fonts and spacing (Japanese)"
 ---

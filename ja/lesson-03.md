@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Your first LaTeX document (Japanese)"
 toc-anchor-text: "Anchor"

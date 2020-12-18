@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Using document classes to influence design (Japanese)"
 toc-anchor-text: "Anchor"

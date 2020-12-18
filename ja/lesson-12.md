@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Citations and references (Japanese)"
 toc-anchor-text: "Anchor"

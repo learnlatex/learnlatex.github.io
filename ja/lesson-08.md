@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "Tables (Japanese)"
 toc-anchor-text: "Anchor"

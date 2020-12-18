@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "ja"
 title: "More on: Extending LaTeX using packages (Japanese)"
 ---
