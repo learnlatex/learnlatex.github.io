@@ -35,154 +35,57 @@ defaults:
       layout: "home"
   -
     scope:
-      path: "en"
-    values:
-      lang: "en"
-      layout: "default"
-  -
-    scope:
-      path: "en/index.md"
+      path: "en/"
     values:
       lang: "en"
       label: "English"
-      layout: "start"
-  -
-    scope:
-      path: "en/lesson*"
-    values:
-      lang: "en"
-      layout: "lesson"
-  -
-    scope:
-      path: "es"
-    values:
-      lang: "es"
       layout: "default"
-  - 
+  -
     scope:
-      path: "es/index.md"
+      path: "es/"
     values:
       lang: "es"
       label: "Español"
       layout: "default"
-  - 
-    scope:
-      path: "es/lesson*"
-    values:
-      lang: "es"
-      layout: "lesson"
   -
     scope:
-      path: "fr"
-    values:
-      lang: "fr"
-      layout: "default"
-  -
-    scope:
-      path: "fr/index.md"
+      path: "fr/"
     values:
       lang: "fr"
       label: "Français"
-      layout: "start"
-  -
-    scope:
-      path: "fr/lesson*"
-    values:
-      lang: "fr"
-      layout: "lesson"
-  -
-    scope:
-      path: "de"
-    values:
-      lang: "de"
       layout: "default"
   -
     scope:
-      path: "de/index.md"
+      path: "de/"
     values:
       lang: "de"
       label: "German"
-      layout: "start"
-  -
-    scope:
-      path: "de/lesson*"
-    values:
-      lang: "de"
-      layout: "lesson"
+      layout: "default"
   -
     scope:
       path: "pt"
     values:
       lang: "pt"
-      layout: "default"
-  -
-    scope:
-      path: "pt"
-    values:
-      lang: "pt/index.md"
       label: "Português"
-      layout: "start"
-  -
-    scope:
-      path: "pt"
-    values:
-      lang: "pt/lesson*"
-      layout: "start"
+      layout: "default"
   -
     scope:
       path: "vi"
     values:
       lang: "vi"
+      label: "Tiếng Việt"
       layout: "default"
-  -
-    scope:
-      path: "vi/index.html"
-    values:
-      lang: "vi"
-      label: "Tiếng Việt"
-      layout: "start"
-  -
-    scope:
-      path: "vi/lesson*"
-    values:
-      lang: "vi"
-      label: "Tiếng Việt"
-      layout: "lesson"
   -
     scope:
       path: "ja"
     values:
       lang: "ja"
-      layout: "default"
-  -
-    scope:
-      path: "ja/index.md"
-    values:
-      lang: "ja"
       label: "日本語"
-      layout: "start"
-  -
-    scope:
-      path: "ja/lesson"
-    values:
-      lang: "ja"
-      layout: "lesson"
+      layout: "default"
   -
     scope:
       path: "zh"
     values:
       lang: "zh"
-      layout: "default"
-  -
-    scope:
-      path: "zh/index.md"
-    values:
-      lang: "zh"
       label: "中文"
-      layout: "start"
-  -
-    scope:
-      path: "zh/lesson"
-    values:
-      lang: "zh"
-      layout: "lesson"
+      layout: "default"
