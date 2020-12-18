@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Using document classes to influence design (Chinese)"
 toc-anchor-text: "Anchor"

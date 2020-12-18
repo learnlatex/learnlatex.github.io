@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Accessing documentation and getting help (Chinese)"
 toc-anchor-text: "Anchor"

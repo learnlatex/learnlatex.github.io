@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Dealing with errors (Chinese)"
 toc-anchor-text: "Anchor"

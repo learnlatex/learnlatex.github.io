@@ -1,4 +1,6 @@
 ---
+layout: "lesson"
+lang: "zh"
 title: "More language-specifics for Chinese"
 next: "extra-01"
 ---

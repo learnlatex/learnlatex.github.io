@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Extending LaTeX using packages (Chinese)"
 toc-anchor-text: "Anchor"

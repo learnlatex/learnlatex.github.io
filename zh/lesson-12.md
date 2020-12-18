@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Citations and references (Chinese)"
 toc-anchor-text: "Anchor"

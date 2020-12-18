@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Logical structure (Chinese)"
 toc-anchor-text: "Anchor"

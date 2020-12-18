@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Formatting: fonts and spacing (Chinese)"
 toc-anchor-text: "Anchor"

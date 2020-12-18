@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Tables (Chinese)"
 toc-anchor-text: "Anchor"

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Structuring longer documents (Chinese)"
 toc-anchor-text: "Anchor"

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Cross-referencing (Chinese)"
 toc-anchor-text: "Anchor"

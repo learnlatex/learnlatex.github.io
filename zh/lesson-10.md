@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "Mathematics (Chinese)"
 toc-anchor-text: "Anchor"

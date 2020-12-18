@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "zh"
 title: "What is LaTeX and how does it work? (Chinese)"
 toc-anchor-text: "Anchor"
