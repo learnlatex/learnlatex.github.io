@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "More on: Logical structure"
 description: "This lesson shows how to set the document title, and how to make description lists."

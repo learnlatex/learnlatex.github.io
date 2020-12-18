@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "More on: Using document classes to influence design"
 description: "This lesson gives information on more specialized document classes for LaTeX."

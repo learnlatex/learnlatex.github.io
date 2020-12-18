@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "More on: Working with LaTeX"
 description: "This lesson gives more detail on what LaTeX is and the engines it runs on."

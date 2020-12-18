@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "More on: What is LaTeX and how does it work?"
 description: "This lesson gives more context on the history of LaTeX and other formats available."

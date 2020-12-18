@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "More on: Accessing documentation and getting help"
 description: "This lesson show you where you can find the sources of LaTeX itself."

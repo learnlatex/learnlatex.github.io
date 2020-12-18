@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "More on: Formatting: fonts and spacing"
 description: "This lesson shows how to suppress the paragraph intentation for a single paragraph."
