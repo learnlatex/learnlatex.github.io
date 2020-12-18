@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Gõ tiếng Việt trong LaTeX"
 description: "Bài này sẽ hướng dẫn cách sử dụng LaTeX để gõ các văn bản bằng tiếng Việt, và giới thiệu các gói lệnh liên quan."

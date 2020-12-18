@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Xử lý lỗi"
 description: "Bài này sẽ giới thiệu các lỗi biên dịch thường gặp nhất khi sử dụng LaTeX, cũng như cách giải quyết chúng."

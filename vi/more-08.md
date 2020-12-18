@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Bảng trong LaTeX"
 description: "Một vài thiết lập nâng cao cho bảng, và đôi nét về một số loại bảng phức tạp hơn."

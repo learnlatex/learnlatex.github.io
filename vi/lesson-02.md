@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Làm việc với LaTeX"
 description: "Bài này nói về các hệ thống TeX thường gặp, cũng như các trình soạn thảo mã LaTeX thông dụng."

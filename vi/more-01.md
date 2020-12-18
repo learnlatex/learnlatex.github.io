@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: LaTeX là gì và nó hoạt động như thế nào?"
 description: "Vài nét về tên gọi và lịch sử của LaTeX."

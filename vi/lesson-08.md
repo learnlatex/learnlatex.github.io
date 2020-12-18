@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bảng trong LaTeX"
 description: "Bài này giải thích các cách thêm bảng biểu vào văn bản, cũng như một vài cách tùy biến bảng đơn giản."

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Xử lý lỗi"
 description: "Một vài lỗi phức tạp và nâng cao hơn."

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Sử dụng các lớp văn bản"
 description: "Vài nét về một số lớp văn bản nâng cao hơn."

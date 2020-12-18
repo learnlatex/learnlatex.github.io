@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Định dạng font chữ và các khoảng cách"
 description: "Cách bỏ việc lùi đầu dòng đoạn văn trong văn bản."

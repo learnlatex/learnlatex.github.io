@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Chọn fonts và sử dụng các trình biên dịch Unicode"
 description: "Bài này sẽ giải thích các cách chọn font chữ khác nhau, cũng như giúp bạn làm quen với các hệ mã hóa văn bản khác nhau và cách sử dụng Unicode trong LaTeX"

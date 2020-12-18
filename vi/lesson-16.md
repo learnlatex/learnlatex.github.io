@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Tiếp cận các hướng dẫn sử dụng gói và tìm kiếm sự trợ giúp"
 description: "Bài này sẽ hướng dẫn bạn cách tiếp cận các tài liệu liên quan đến LaTeX, cũng như cách bạn có thể tìm kiếm sự trợ giúp qua các diễn đàn LaTeX trên Internet."

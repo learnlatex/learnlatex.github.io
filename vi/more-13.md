@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Cấu trúc cho các văn bản dài"
 description: "Thêm phần chỉ mục vào văn bản."

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Văn bản LaTeX đầu tiên của bạn"
 description: "Bài này giải thích bố cục cơ bản của các văn bản LaTeX, và một số câu lệnh cơ bản và hay dùng nhất của ngôn ngữ soạn thảo này."

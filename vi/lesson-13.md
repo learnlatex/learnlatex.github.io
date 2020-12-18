@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Cấu trúc cho các văn bản dài"
 description: "Bài này sẽ hướng dẫn cách làm việc với những văn bản dài: cách chia mã văn bản thành nhiều phần, làm việc trên từng phần và gộp các phần lại với nhau."

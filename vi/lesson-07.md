@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Thêm hình ảnh và làm cho các hình linh động"
 description: "Bài này giải thích cách thêm hình vẽ/hình ảnh vào LaTeX, cũng như làm thế nào để thay đổi các thông số cơ bản cũng như vị trí của hình."

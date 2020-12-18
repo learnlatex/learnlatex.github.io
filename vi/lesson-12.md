@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Phần tài liệu tham khảo"
 description: "Bài này sẽ giới thiệu các thao tác cơ bản với các dữ liệu về các tài liệu được trích dẫn/tham khảo, cũng như cách sử dụng chúng trong văn bản."

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Làm việc với LaTeX"
 description: "Vài nét về định dạng TeX và các chương trình biên dịch gốc."

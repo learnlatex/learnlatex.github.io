@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Cấu trúc logic"
 description: "Vài nét về một số thành phần logic nâng cao hơn trong văn bản."

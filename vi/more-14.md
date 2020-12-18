@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Chọn fonts và sử dụng các trình biên dịch Unicode"
 description: "Tích hợp ngôn ngữ lập trình Lua trong LaTeX."

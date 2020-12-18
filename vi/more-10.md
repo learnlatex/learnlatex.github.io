@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "vi"
 title: "Bổ sung: Các công thức toán học"
 description: "Các thao tác nâng cao với chế độ toán trong LaTeX."
