@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Abbildungen einbinden und Dinge 'gleiten' lassen"
 toc-anchor-text: "Anchor"

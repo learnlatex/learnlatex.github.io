@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Mathematik"
 toc-anchor-text: "Anchor"

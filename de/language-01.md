@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Besonderheiten für die deutsche Sprache"
 next: "extra-01"

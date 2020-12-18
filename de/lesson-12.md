@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Literaturverzeichnis und Verweise"
 toc-anchor-text: "Anchor"

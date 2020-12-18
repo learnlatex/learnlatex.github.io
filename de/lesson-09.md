@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Querverweise"
 toc-anchor-text: "Anchor"

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Mit LaTeX arbeiten"
 toc-anchor-text: "Anchor"

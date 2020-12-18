@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Dokumentation und Hilfe finden"
 toc-anchor-text: "Anchor"

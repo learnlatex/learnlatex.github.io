@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Ihr erstes LaTeX-Dokument"
 toc-anchor-text: "Anchor"

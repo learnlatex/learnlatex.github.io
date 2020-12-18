@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Schriften auswählen und Unicodeprogramme verwenden"
 toc-anchor-text: "Anchor"

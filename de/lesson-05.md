@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Design anpassen mit Klassen"
 toc-anchor-text: "Anchor"

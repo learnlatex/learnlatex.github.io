@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Mit Fehlern umgehen"
 toc-anchor-text: "Anchor"

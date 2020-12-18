@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Texte gliedern"
 toc-anchor-text: "Anchor"

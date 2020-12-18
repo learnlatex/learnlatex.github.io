@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Weitere Beispiele"
 ---

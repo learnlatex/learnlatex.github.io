@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "de"
 title: "Formatierung: Schriften und Abstände"
 toc-anchor-text: "Anchor"
