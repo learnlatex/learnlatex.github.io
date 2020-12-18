@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Examples for further study"
 description: "This lesson shows assorted examples of other popular packages that were not covered in the main lessons."

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "en"
 title: "Language-specifics for English"
 description: "This lesson shows language-specific details for typesetting text in English."
