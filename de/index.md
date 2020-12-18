@@ -1,4 +1,5 @@
 ---
+layout: "start"
 lang: "de"
 title: learnlatex.org
 permalink: /de/

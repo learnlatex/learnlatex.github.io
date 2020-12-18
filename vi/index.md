@@ -1,4 +1,5 @@
 ---
+layout: "start"
 lang: "vi"
 title: learnlatex.org
 permalink: /vi/
