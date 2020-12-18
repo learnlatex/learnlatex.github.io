@@ -152,6 +152,14 @@
   src: url('/assets/fonts/NotoMono-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  font-display: fallback;
+  font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/fa-solid-900.woff2') format('woff2');
+}
+
 
 
 
@@ -538,6 +546,74 @@ table td code {
 }
 
 
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  # LESSONS                                                                 */
+/*----------------------------------------------------------------------------*/
+.lesson {
+  .inter-lesson-navigation {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    &__anchor {
+      flex-basis: 10rem;
+      flex-grow: 1;
+      font-size: .8rem;
+      &--next,
+      &--nextmain {
+        text-align: right;
+        &:after {
+          content: "\f0a9";
+          font-family: "FontAwesome";
+          padding: 0 0 0 .5rem;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      &--more {
+        text-align: center;
+        &:before {
+          content: "\f055";
+          font-family: "FontAwesome";
+          padding: 0 .5rem 0 0;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      &--return {
+        &:before {
+          content: "\f0aa";
+          font-family: "FontAwesome";
+          padding: 0 .5rem 0 0;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      &--toc {
+        &:before {
+          content: "\f03a";
+          font-family: "FontAwesome";
+          padding: 0 .5rem 0 0;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  } 
+}
 
 
 
