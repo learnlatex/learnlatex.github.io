@@ -13,6 +13,7 @@ change-language:
   fr: "Lisez cette page dans une autre langue"
   ja: "このページを別の言語で読む"
   pt: "Leia esta página em um idioma diferente"
+  tr: "Read this page in a different language"
   vi: "Đọc trang này trong một ngôn ngữ khác"
   zh: "Missing"
 skip-link:
@@ -22,6 +23,7 @@ skip-link:
   fr: "Passer au contenu principal"
   ja: "メインコンテンツにスキップ"
   pt: "Ir para o conteúdo principal"
+  tr: "Skip to main content"
   vi: "Chuyển đến nội dung chính"
   zh: "Missing"
 heading_meta:
@@ -31,6 +33,7 @@ heading_meta:
   fr: "Meta"
   ja: "メタ"
   pt: "Meta"
+  tr: "Meta"
   vi: "Meta"
   zh: "Missing"
 heading_navigation:
@@ -40,6 +43,7 @@ heading_navigation:
   fr: "Navigation"
   ja: "ナビゲーション"
   pt: "Navegação"
+  tr: "Navigation"
   vi: "Điều hướng"
   zh: "Missing"
 heading_planet:
@@ -49,6 +53,7 @@ heading_planet:
   fr: "Planète"
   ja: "惑星"
   pt: "Planeta"
+  tr: "Planet"
   vi: "Liên kết ngoài"
   zh: "Missing"
 navigational-elements_home:
@@ -58,6 +63,7 @@ navigational-elements_home:
   fr: "Page d'accueil"
   ja: "ホームページ"
   pt: "Pagina inicial"
+  tr: "Home"
   vi: "Trang chủ"
   zh: "Missing"
 navigational-elements_mission:
@@ -67,6 +73,7 @@ navigational-elements_mission:
   fr: "Mission"
   ja: "ミッション"
   pt: "Missão"
+  tr: "Mission"
   vi: "Sứ mệnh"
   zh: "Missing"
 navigational-elements_help:
@@ -76,6 +83,7 @@ navigational-elements_help:
   fr: "Aide"
   ja: "ヘルプ"
   pt: "Ajuda"
+  en: "Help"
   vi: "Cứu giúp"
   zh: "救命"
 navigational-elements_contact:
@@ -85,6 +93,7 @@ navigational-elements_contact:
   fr: "Contact"
   ja: "連絡先"
   pt: "Contato"
+  tr: "Contact"
   vi: "Liên hệ"
   zh: "Missing"
 navigational-elements_licenses:
@@ -94,6 +103,7 @@ navigational-elements_licenses:
   fr: "Licences"
   ja: "ライセンス"
   pt: "Licenças"
+  tr: "Licenses"
   vi: "Giấy phép"
   zh: "執照"
 navigational-elements_open-an-issue:
@@ -103,6 +113,7 @@ navigational-elements_open-an-issue:
   fr: "Ouvrez un problème"
   ja: "問題を開く"
   pt: "Abra um problema"
+  tr: "Open an issue"
   vi: "Báo lỗi"
   zh: "Missing"
 navigational-elements_page-source:
@@ -112,6 +123,7 @@ navigational-elements_page-source:
   fr: "Source de la page"
   ja: "ページソース"
   pt: "Fonte da página"
+  tr: "Page source"
   vi: "Nguồn trang"
   zh: "Missing"
 navigational-elements_more:
@@ -121,6 +133,7 @@ navigational-elements_more:
   fr: "Pour aller plus loin…"
   ja: "このトピックの詳細を見る"
   pt: "Mais sobre este tópico"
+  tr: "More on this topic"
   vi: "Xem bài bổ sung của bài này"
   zh: "有關此主題的更多信息"
 navigational-elements_next:
@@ -130,6 +143,7 @@ navigational-elements_next:
   fr: "Leçon suivante…"
   ja: "次のレッスン"
   pt: "Próxima lição"
+  tr: "Next lesson"
   vi: "Bài tiếp theo"
   zh: "Missing"
 navigational-elements_nextmain:
@@ -139,6 +153,7 @@ navigational-elements_nextmain:
   fr: "Leçon principale suivante…"
   ja: "次のメインレッスン"
   pt: "Próxima lição principal"
+  tr: "Next main lesson"
   vi: "Bài chính tiếp theo"
   zh: "Missing"
 navigational-elements_return:
@@ -148,6 +163,7 @@ navigational-elements_return:
   fr: "Retour à la leçon principale."
   ja: "メインレッスンに戻る"
   pt: "Retornar à lição principal"
+  tr: "Return to main lesson"
   vi: "Quay trở lại bài chính"
   zh: "Missing"
 navigational-elements_toc:
@@ -157,5 +173,6 @@ navigational-elements_toc:
   fr: "Table des matières"
   ja: "目次"
   pt: "Índice"
+  tr: "Table of Contents"
   vi: "Mục lục"
   zh: "目錄"
