@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Referências cruzadas"
 description: "Esta lição mostra como você pode transformar referências cruzadas em links carregando o pacote hyperref."

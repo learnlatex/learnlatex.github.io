@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Exemplos para estudo adicional"
 description: "Esta lição mostra exemplos diversos de outros pacotes populares que não foram apresentados nas lições principais."

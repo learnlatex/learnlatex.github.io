@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Formatação: fontes e espaçamento"
 description: "Esta lição mostra como omitir a indentação de parágrafo para um único parágrafo."

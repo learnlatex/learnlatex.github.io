@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Resolvendo erros"
 description: "Esta lição mostra alguns erros comuns em documentos, o que eles significam, e como resolvê-los."

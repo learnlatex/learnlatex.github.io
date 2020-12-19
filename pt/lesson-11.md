@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Formatação: fontes e espaçamento"
 description: "Esta lição mostra como mudar os elementos de espaçamento em um documento e como inserir instruções de formatação explícitas no código fonte."

@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Referências cruzadas"
 description: "Essa lição mostra como mencionar elementos numerados em um documento, como figuras, tabelas, e seções."

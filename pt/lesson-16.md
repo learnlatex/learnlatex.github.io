@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Acessando documentação e obtendo ajuda"
 description: "Esta lição mostra as principais fontes de documentação para pacotes e software relacionado ao LaTeX, e como você pode buscar ajuda quando estiver com problemas."

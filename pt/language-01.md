@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Lição específica para a língua Portuguesa"
 description: "Esta lição mostra detalhes específicos de linguagem para escrever textos em Português."

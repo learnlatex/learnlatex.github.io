@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Lidando com erros"
 description: "Esta lição mostra mais alguns erros comuns no LaTeX e explica sobre cadeias de erros e erros silenciosos."

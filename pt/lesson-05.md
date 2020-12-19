@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Usando classes de documentos para influenciar o design"
 description: "Esta lição explica o que é uma classe de documento e como ela pode influenciar a aparência de um documento, e lista as principais classes que você vai encontrar em uma distribuição de TeX."

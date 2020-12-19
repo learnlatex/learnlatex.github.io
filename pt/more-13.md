@@ -1,4 +1,5 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Estruturando documentos longos"
 description: "Esta lição mostra como fazer um índice remissivo, e como usar o pacote imakeidx para automatizar o procsso."

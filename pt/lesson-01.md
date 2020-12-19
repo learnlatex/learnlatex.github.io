@@ -1,10 +1,12 @@
 ---
+layout: "lesson"
 lang: "pt"
 title: "O que é LaTeX e como funciona?"
 description: "Esta lição explica o básico de o que é o LaTeX e como ele funciona em contraste a processadores de texto comuns como o Microsoft Word ou o LibreOffice Writer."
 toc-anchor-text: "O Básico de LaTeX"
 toc-description: "O que é LaTeX e como funciona?"
 ---
+
 
 # O que é LaTeX e como funciona?
 
