@@ -35,28 +35,28 @@ defaults:
       layout: "home"
   -
     scope:
-      path: "en/"
+      path: "en"
     values:
       lang: "en"
       label: "English"
       layout: "default"
   -
     scope:
-      path: "es/"
+      path: "es"
     values:
       lang: "es"
       label: "Español"
       layout: "default"
   -
     scope:
-      path: "fr/"
+      path: "fr"
     values:
       lang: "fr"
       label: "Français"
       layout: "default"
   -
     scope:
-      path: "de/"
+      path: "de"
     values:
       lang: "de"
       label: "German"
