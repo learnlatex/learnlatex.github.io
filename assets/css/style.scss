@@ -566,6 +566,24 @@ table td code {
 /*  # LESSONS                                                                 */
 /*----------------------------------------------------------------------------*/
 .lesson {
+  h1 {
+    font-family: var(--font_default-light);
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0 0 1.6rem;
+  }
+  h2 {
+    font-family: var(--font_default-regular-semicondensed);
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 1.2rem 0 1.5rem;
+  }
+  h3 {
+    font-family: var(--font_default-regular);
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 1.4em 0 0.8em;
+  }
   .inter-lesson-navigation {
     border-bottom: 0.004rem solid var(--color_grey-2);
     border-top: 0.004rem solid var(--color_grey-2);
