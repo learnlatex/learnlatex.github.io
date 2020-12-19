@@ -614,9 +614,12 @@ table td code {
       flex-direction: column;
       flex-wrap: nowrap;
       margin: 1.5rem 0;
-      padding: .2rem .2rem;
+      padding: .4rem .2rem;
       &__anchor {
         flex-basis: 1.7rem;
+        &:last-of-type {
+          flex-basis: 1rem;
+        }
         &--next,
         &--nextmain {
           text-align: left;
