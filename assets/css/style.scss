@@ -593,6 +593,7 @@ table td code {
         }
       }
       &--return {
+        text-align: center;
         &:before {
           content: "\f0aa";
           font-family: "FontAwesome";
