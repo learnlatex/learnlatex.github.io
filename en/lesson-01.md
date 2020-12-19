@@ -3,8 +3,8 @@ layout: "lesson"
 lang: "en"
 title: "What LaTeX is and how it works"
 description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
-toc-anchor-text: "{{ site.latex }} basics"
-toc-description: "What {{ site.latex }} is and how it works."
+toc-anchor-text: "LaTeX basics"
+toc-description: "What LaTeX is and how it works."
 ---
 
 # {{ site.latex }} basics
