@@ -1,7 +1,8 @@
 ---
 layout: "start"
 lang: "fr"
-title: learnlatex.org
+title: Learn LaTeX online for fee in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
 permalink: /fr/
 ---
 
@@ -69,8 +70,10 @@ Tous fonctionnent avec nos deux systèmes de démonstration en ligne, donc si
 vous obtenez des erreurs avec les exemples que nous fournissons, vérifiez
 d'abord que votre système LaTeX est à jour.
 
-
-<h2 id="toc">Les leçons principales</h2>
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >Leçons</h2>
 
 {% include toc-lessons.html  prefix="fr/lesson" %}
 

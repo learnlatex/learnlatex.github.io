@@ -1,7 +1,8 @@
 ---
 layout: "start"
 lang: "en"
-title: learnlatex.org
+title: Learn LaTeX online for fee in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
 permalink: /en/
 ---
 
@@ -28,11 +29,10 @@ permalink: /en/
   </section>
 </div>
 
-
 <h2 
   class="heading__toc" 
   id="toc"
-  >The lessons</h2>
+  >Lessons</h2>
 
 {% include toc-lessons.html  prefix="en/lesson" %}
 

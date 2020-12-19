@@ -1,7 +1,8 @@
 ---
 layout: "start"
 lang: "vi"
-title: learnlatex.org
+title: Learn LaTeX online for fee in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
 permalink: /vi/
 ---
 
@@ -67,7 +68,10 @@ online được nêu ở đây, do đó nếu bạn gặp những lỗi lạ, h�
 TeX của máy bạn đã được update lên bản mới nhất chưa. (Sau này bạn sẽ thấy việc
 update LaTeX rất quan trọng.)
 
-<h2 id="toc">Các bài học</h2>
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >Các bài học</h2>
 
 {% include toc-lessons.html  prefix="vi/lesson" %}
 
