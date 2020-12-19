@@ -411,32 +411,45 @@ main a:focus {
 
 
 /*----------------------------------------------------------------------------*/
-/*  #TEXT-COLUMNS                                                             */
+/*  # START PAGE                                                              */
 /*----------------------------------------------------------------------------*/
-.text-columns {
-  align-content: flex-start;
-  align-items: flex-stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 0;
-  section {
-    align-self: flex-start;
-    flex-basis: 0;
-    flex-grow: 1;
-    &:first-of-type {
-      margin: 0 1.5rem 0 0;
+.start {
+  .text-columns {
+    align-content: flex-start;
+    align-items: flex-stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 0 2.5rem;
+    section {
+      align-self: flex-start;
+      flex-basis: 0;
+      flex-grow: 1;
+      &:first-of-type {
+        margin: 0 1.5rem 0 0;
+      }
+      &:last-of-type {
+        margin: 0 0 0 1.5rem;
+      }
     }
-    &:last-of-type {
-      margin: 0 0 0 1.5rem;
+    &__heading {
+      border-bottom: 0.01rem solid var(--color_grey-2);
+      font-family: var(--font_default-regular-semicondensed);
+      font-size: 1.3rem;
+      margin: 2.5rem 0 1.2rem;
+      padding: 0 0 .8rem;
     }
-  }
-  &__heading {
-    border-bottom: 0.01rem solid var(--color_grey-2);
-    font-size: 1.4rem;
-    margin: 2.5rem 0 1.2rem;
-    padding: 0 0 .8rem;
+    @media (max-width: 650px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      section {
+        &:first-of-type,
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+    }
   }
 }
 
