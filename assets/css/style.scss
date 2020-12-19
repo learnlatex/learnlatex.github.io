@@ -568,7 +568,7 @@ table td code {
     margin: 1.5rem 0;
     padding: .8rem .2rem;
     &__anchor {
-      flex-basis: 10rem;
+      flex-basis: 5rem;
       flex-grow: 1;
       font-size: .8rem;
       &:hover {
@@ -606,6 +606,27 @@ table td code {
           padding: 0 .5rem 0 0;
           &:hover {
             text-decoration: none;
+          }
+        }
+      }
+    }
+    @media (max-width: 500px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: 1.5rem 0;
+      padding: .2rem .2rem;
+      &__anchor {
+        flex-basis: 1.7rem;
+        &--next,
+        &--nextmain {
+          text-align: left;
+          &:before {
+            content: "\f0a9";
+            font-family: "FontAwesome";
+            padding: 0 .5rem 0 0;
+          }
+          &:after {
+            content: "";
           }
         }
       }
