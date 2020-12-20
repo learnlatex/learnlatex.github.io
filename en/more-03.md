@@ -33,7 +33,8 @@ If you need to type in a special character, most of the time you can simply
 use a backslash in front of it, so for example `\{` is used to print a literal
 `{`. There are a few cases where you need to use a longer command instead:
 
-| Symbol | Short Command (math and text) | Long Command (for text only) |
+| Symbol | Short Command <br><small>(math and text)</small> | Long Command <br><small>(for text only)</small> |
+| --- | --- | --- |
 | `{`    | `\{`          | `\textbraceleft`  |
 | `}`    | `\}`          | `\textbraceright` |
 | `$`    | `\$`          | `\textdollar`     |

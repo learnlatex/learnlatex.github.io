@@ -419,50 +419,6 @@ main a:focus {
 
 
 /*----------------------------------------------------------------------------*/
-/*  #TABLES                                                                   */
-/*----------------------------------------------------------------------------*/
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin: 1.5rem 0;
-}
-
-caption {
-  font-size: 1rem;
-  margin: 0 0 1.25rem;
-  text-align: left;
-}
-
-tr {
-  margin: 2rem 0 1rem 0;
-  padding: 1rem .2rem;
-}
-
-th {
-  border-bottom: 1px solid var(--color_black-0);
-  padding: 0 .5rem .8rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-table tr:nth-child(even) {
-  background: var(--color_grey-0);
-}
-
-table td {
-  padding: .3rem .5rem;
-  vertical-align: top;
-}
-
-table td code {
-  white-space: nowrap;
-}
-
-
-
-
-
-/*----------------------------------------------------------------------------*/
 /*  #LESSONS TOC                                                              */
 /*----------------------------------------------------------------------------*/
 .lessons-toc {
@@ -527,94 +483,94 @@ table td code {
 /*  # LESSONS                                                                 */
 /*----------------------------------------------------------------------------*/
 .lesson {
-  .meta {
-    background: var(--color_grey-0);
-    color: var(--color_black-2);
-    font-family: var(--font_default-regular);
-    font-size: .6rem;
-    margin: 0 0 1.5rem;
-    padding: .1rem .2rem;
-  }
-  h1 {
-    font-family: var(--font_default-light);
-    font-size: 2rem;
-    font-weight: normal;
-    margin: 0 0 1.6rem;
-  }
-  h2 {
-    font-family: var(--font_default-regular);
-    font-size: 1.4rem;
-    font-weight: normal;
-    margin: 1.7rem 0 0.7rem;
-  }
-  h3 {
-    font-family: var(--font_default-regular);
-    font-size: 1.3em;
-    font-weight: normal;
-    margin: 1.6rem 0 0.7rem;
-  }
-  h4 {
-    font-family: var(--font_default-regular);
-    font-size: 1.2rem;
-    margin: 1.5rem 0 0.7rem;
-  }
-  h5 {
-    font-family: var(--font_default-regular);
-    font-size: 1.1rem;
-    margin: 1.6rem 0 0.7rem;
-  }
-  h6 {
-    font-family: var(--font_default-regular);
-    font-size: 1rem;
-    margin: 1.7rem 0 0.8rem;
-  }
-  .summary {
-    display: block;
-    font-family: var(--font_default-regular-semicondensed);
-    font-size: 1.3rem;
-    font-weight: normal;
-    line-height: 1.6rem;
-    margin: 1.5rem 0 2.4rem;
-    code {
-      font-family: var(--font_default-mono-regular);
-      font-size: calc(100% - .05rem);
-    }
-  }
-  p {
-    color: var(--color_black-1);
-    font-family: var(--font_default-light);
-    font-size: 1rem;
-    margin: 0 0 1.2rem;
-    &:last-of-type {
-      margin: 0 0 2.5rem; 
-    }
-    code {
-      color: var(--color_black-2);
-      font-family: var(--font_default-mono-regular);
-      font-size: calc(100% - .05rem);
-    }
-    &.hint {
+  main {
+    .meta {
+      background: var(--color_grey-0);
       color: var(--color_black-2);
       font-family: var(--font_default-regular);
-      font-size: .9rem;
-      margin: 2.4rem .5rem 2.4rem .5rem;
-      padding: 0 0 0 2.4rem;
-      i {
-        font-family: var(--font_default-regular-italic);
-      }
-      &:before {
-        content: "\f05a";
-        display: block;
-        float: left;
-        font-family: "FontAwesome";
-        font-size: calc(100% + .1rem);
-        margin: 0 0 0 -2rem;
-        padding: 0;
-        width: 2rem;
+      font-size: .6rem;
+      margin: 0 0 1.5rem;
+      padding: .1rem .2rem;
+    }
+    h1 {
+      font-family: var(--font_default-light);
+      font-size: 2rem;
+      font-weight: normal;
+      margin: 0 0 1.6rem;
+    }
+    h2 {
+      font-family: var(--font_default-regular);
+      font-size: 1.4rem;
+      font-weight: normal;
+      margin: 1.7rem 0 0.7rem;
+    }
+    h3 {
+      font-family: var(--font_default-regular);
+      font-size: 1.3em;
+      font-weight: normal;
+      margin: 1.6rem 0 0.7rem;
+    }
+    h4 {
+      font-family: var(--font_default-regular);
+      font-size: 1.2rem;
+      margin: 1.5rem 0 0.7rem;
+    }
+    h5 {
+      font-family: var(--font_default-regular);
+      font-size: 1.1rem;
+      margin: 1.6rem 0 0.7rem;
+    }
+    h6 {
+      font-family: var(--font_default-regular);
+      font-size: 1rem;
+      margin: 1.7rem 0 0.8rem;
+    }
+    .summary {
+      display: block;
+      font-family: var(--font_default-regular-semicondensed);
+      font-size: 1.3rem;
+      font-weight: normal;
+      line-height: 1.6rem;
+      margin: 1.5rem 0 2.4rem;
+      code {
+        font-family: var(--font_default-mono-regular);
+        font-size: calc(100% - .05rem);
       }
     }
-  }
-  main {
+    p {
+      color: var(--color_black-1);
+      font-family: var(--font_default-light);
+      font-size: 1rem;
+      margin: 0 0 1.2rem;
+      &:last-of-type {
+        margin: 0 0 2.5rem; 
+      }
+      code {
+        color: var(--color_black-2);
+        font-family: var(--font_default-mono-regular);
+        font-size: calc(100% - .05rem);
+      }
+      &.hint {
+        color: var(--color_black-2);
+        font-family: var(--font_default-regular);
+        font-size: .9rem;
+        margin: 2.4rem .5rem 2.4rem .5rem;
+        padding: 0 0 0 2.4rem;
+        i {
+          font-family: var(--font_default-regular-italic);
+        }
+        &:before {
+          content: "\f05a";
+          display: block;
+          float: left;
+          font-family: "FontAwesome";
+          font-size: calc(100% + .1rem);
+          margin: 0 0 0 -2rem;
+          padding: 0;
+          width: 2rem;
+        }
+      }
+    }
     ul {
       list-style: outside;
       margin: 1.5rem 0 2rem 1.4rem;
@@ -628,6 +584,43 @@ table td code {
           color: var(--color_black-2);
           font-family: var(--font_default-mono-regular);
           font-size: calc(100% - .05rem);
+        }
+      }
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin: 1.8rem 0 2.5rem;
+      width: 100%;
+      th {
+        border-bottom: 0.1rem solid var(--color_grey-2);
+        font-family: var(--font_default-regular-semicondensed);
+        font-weight: normal;
+        padding: .5rem;
+        text-align: left;
+        vertical-align: top;
+        small {
+          font-family: var(--font_default-light);
+          font-size: .8rem;
+        }
+      }
+      tr {
+        border-bottom: 0.004rem solid var(--color_grey-2);
+        margin: 0;
+        padding: 0;
+        &:nth-child(even) {
+          background: var(--color_grey-0);
+        }
+      }
+      td {
+        font-size: calc(100% - .1rem);
+        padding: .4rem .5rem;
+        vertical-align: top;
+        code {
+          color: var(--color_black-2);
+          font-family: var(--font_default-mono-regular);
+          font-size: calc(100% - .05rem);
+          white-space: nowrap;
         }
       }
     }
