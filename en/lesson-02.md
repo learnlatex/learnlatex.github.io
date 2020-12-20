@@ -13,8 +13,6 @@ toc-description: "TeX systems and LaTeX text editors."
   class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
 
 
-## LaTeX applications
-
 Unlike many computer programs, LaTeX is not a single application containing
 'everything' in one. Instead, there are separate programs that work together.
 We can divide those up into two things you actually need:

@@ -9,12 +9,15 @@ toc-description: "Structure and visual presentation."
 
 # Logical structure
 
+<span
+  class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
+
 LaTeX provides ways to concentrate on the logical structure of your document, as well as the
 ability to directly set the appearance. Most of the time, it's much better to use
 methods that focus on structure, as that makes it easy to reuse or alter
 appearance when you have to.
 
-## A first example
+## Structure and visual presentation
 
 We'll start with an example contrasting one of the most common logical markup
 commands in LaTeX, `\emph`, with simply making something italic. (In print,

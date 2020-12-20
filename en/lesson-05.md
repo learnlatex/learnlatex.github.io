@@ -7,9 +7,10 @@ toc-anchor-text: "Document classes"
 toc-description: "Setting the general document layout."
 ---
 
-# Using document classes to influence design
+# Document classes
 
-## What a document class does
+<span
+  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
 
 You might have noticed that all of the LaTeX documents we have created
 so far have started with a `\documentclass` line, and that
@@ -17,6 +18,8 @@ so far have started with a `\documentclass` line, and that
 `\documentclass{report}` in [the previous lesson](lesson-04) to try out the
 `\chapter` command.) This line is required in all LaTeX documents, and is
 (almost) always the first command you should have.
+
+## What a document class does
 
 The document class sets up the general layout of the document, for example
 

@@ -11,8 +11,6 @@ toc-description: "The basic structure of a document."
 
 <span
   class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
-  
-# Your first LaTeX document
 
 Our first LaTeX document is going to be very simple: the idea is to show you
 how a document looks and how to typeset it successfully. It is also your
@@ -25,6 +23,7 @@ or ‘Open in Overleaf’ buttons in the
 example to try it out! We suggest you try out the online options even if you
 have set up LaTeX locally; this is a good chance to see how the different
 options work.
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -35,6 +34,7 @@ Hey world!
 This is a first document.
 \end{document}
 ```
+
 Save the file and typeset it to a PDF document; if you are using a local LaTeX
 installation, the exact button to press will depend on the editor you have
 picked. You should get a PDF file that contains the text above _plus_ a page
