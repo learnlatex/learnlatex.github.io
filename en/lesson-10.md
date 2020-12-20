@@ -47,7 +47,7 @@ accept slight variations on LaTeX's syntax as they do not actually use LaTeX
 'behind the scenes'.
 
 <p 
-  class="hint">Our examples are all 'correct' LaTeX, so if you see something different in 
+  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in 
 another context, it might be because the example is not really using LaTeX.</p>
 
 ### Inline math mode and mathematical notation

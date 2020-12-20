@@ -81,6 +81,15 @@
 }
 
 :root {
+  --font_default-regular-italic: 'NotoSans-Italic';
+}
+@font-face {
+  font-family: 'NotoSans-Italic';
+  font-display: fallback;
+  src: url('/assets/fonts/NotoSans-Italic.woff2') format('woff2');
+}
+
+:root {
   --font_default-regular-semicondensed: 'NotoSans-SemiCondensedRegular';
 }
 @font-face {
@@ -622,6 +631,9 @@ table td code {
     font-size: .9rem;
     margin: 2.4rem .5rem 2.4rem .5rem;
     padding: 0 0 0 2.4rem;
+    i {
+      font-family: var(--font_default-regular-italic);
+    }
     &:before {
       content: "\f05a";
       display: block;
