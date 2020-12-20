@@ -161,6 +161,9 @@
   src: url('/assets/fonts/NotoMono-Regular.woff2') format('woff2');
 }
 
+:root {
+  --font_icons: 'FontAwesome'
+}
 @font-face {
   font-family: 'FontAwesome';
   font-display: fallback;
@@ -624,25 +627,29 @@ table td code {
     &:last-of-type {
       margin: 0 0 2.5rem; 
     }
-  }
-  .hint {
-    color: var(--color_black-2);
-    font-family: var(--font_default-regular);
-    font-size: .9rem;
-    margin: 2.4rem .5rem 2.4rem .5rem;
-    padding: 0 0 0 2.4rem;
-    i {
-      font-family: var(--font_default-regular-italic);
+    code {
+      font-family: var(--font_default-mono-regular);
+      font-size: .95rem;
     }
-    &:before {
-      content: "\f05a";
-      display: block;
-      float: left;
-      font-family: "FontAwesome";
-      font-size: calc(100% + .1rem);
-      margin: 0 0 0 -2rem;
-      padding: 0;
-      width: 2rem;
+    &.hint {
+      color: var(--color_black-2);
+      font-family: var(--font_default-regular);
+      font-size: .9rem;
+      margin: 2.4rem .5rem 2.4rem .5rem;
+      padding: 0 0 0 2.4rem;
+      i {
+        font-family: var(--font_default-regular-italic);
+      }
+      &:before {
+        content: "\f05a";
+        display: block;
+        float: left;
+        font-family: "FontAwesome";
+        font-size: calc(100% + .1rem);
+        margin: 0 0 0 -2rem;
+        padding: 0;
+        width: 2rem;
+      }
     }
   }
   .inter-lesson-navigation {
