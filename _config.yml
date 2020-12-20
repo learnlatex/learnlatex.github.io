@@ -5,9 +5,6 @@ title: learnlatex.org
 description: Learn LaTeX online
 repository: learnlatex/learnlatex.github.io
 
-
-# PLUGINS
-# https://jekyllrb.com/docs/plugins/
 plugins:
   - jekyll-sitemap
 
@@ -18,11 +15,10 @@ kramdown:
 sass:
     style: compressed
 
-
-# POST LIMIT
-# Limit the number of posts to parse and publish.
-# https://jekyllrb.com/docs/configuration/options/
 limit_posts: 0
+
+latex: "<span>L<span style='font-variant: small-caps; vertical-align:.35ex;margin-left:-.15em;margin-right:-.05em;'>a</span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
+tex: "<span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
 
 
 # LANGUAGES, LABELS, LAYOUTS
@@ -43,53 +39,53 @@ defaults:
     values:
       lang: "en"
       label: "English"
-      layout: "default"
+      layout: "page"
   -
     scope:
       path: "es"
     values:
       lang: "es"
       label: "Español"
-      layout: "default"
+      layout: "page"
   -
     scope:
       path: "fr"
     values:
       lang: "fr"
       label: "Français"
-      layout: "default"
+      layout: "page"
   -
     scope:
       path: "de"
     values:
       lang: "de"
       label: "German"
-      layout: "default"
+      layout: "page"
   -
     scope:
       path: "pt"
     values:
       lang: "pt"
       label: "Português"
-      layout: "default"
+      layout: "page"
   -
     scope:
       path: "vi"
     values:
       lang: "vi"
       label: "Tiếng Việt"
-      layout: "default"
+      layout: "page"
   -
     scope:
       path: "ja"
     values:
       lang: "ja"
       label: "日本語"
-      layout: "default"
+      layout: "page"
   -
     scope:
       path: "zh"
     values:
       lang: "zh"
       label: "中文"
-      layout: "default"
+      layout: "page"

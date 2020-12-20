@@ -224,8 +224,10 @@ p em {
   font-style: italic;
 }
 
-p small {
-  font-size: .8rem;
+.footnote,
+.footnotes,
+.footnotes ol li p {
+  font-size: calc(100% - .1rem);
 }
 
 abbr {
@@ -247,6 +249,12 @@ main a:focus {
   text-decoration: underline;
 }
 
+hr {
+  background: none;
+  border: none;
+  border-bottom: 0.004rem solid var(--color_grey-2);
+  margin: 2.5rem 0;
+}
 
 
 
@@ -480,7 +488,179 @@ main a:focus {
 
 
 /*----------------------------------------------------------------------------*/
-/*  # LESSONS                                                                 */
+/*  # HOME PAGE                                                               */
+/*----------------------------------------------------------------------------*/
+.home {
+  background: var(--color_white-0);
+  text-align: center;
+  .website-header {
+    background: var(--color_blue-0);
+    color: var(--color_white-0);
+    margin: 0 0 2.5rem;
+    padding: 3.7rem 0 4.25rem;
+    a,
+    &--logo:link,
+    &--logo:visited, 
+    &--logo:hover {
+      border: none;
+      color: var(--color_white-0);
+      display: inline-block;
+      line-height: 0;
+      text-decoration: none;
+    }
+  }
+  .language-icon {
+    margin: -3.74rem 0 1.4rem;
+  }
+  .language-navigation {
+    background: none;
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: .15rem 0 .25rem;
+    }
+    &__list-item {
+      display: inline-block;
+      line-height: .9rem;
+      margin: 1rem 1.2rem;
+      padding: 0;
+    }
+    &__anchor {
+      text-decoration: none;
+      line-height: 1.1rem; overflow-wrap: break-word;
+      &:hover {
+        color: var(--color_blue-0);
+      }
+    }
+    &__label-regional {
+      color: var(--color_blue-0);
+      font-size: 1.1rem;
+    }
+    &__label-english {
+      color: var(--color_grey-3);
+      font-size: .7rem;
+    }
+  }
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  # START PAGE                                                              */
+/*----------------------------------------------------------------------------*/
+.start {
+  main {
+    h1 {
+      font-family: var(--font_default-light);
+      font-size: 2em;
+      font-weight: normal;
+      margin: 0 0 0.6em;
+    }
+   h2.heading__introduction {
+      font-family: var(--font_default-regular-semicondensed);
+      font-size: 1.4rem;
+      font-weight: normal;
+      margin: 1.3em 0 0.5em;
+      .anchorjs-link {
+        display: none;
+        visibility: hidden;
+      }
+    }
+   h2.heading__toc {
+      border-bottom: 0.01rem solid var(--color_grey-2);
+      font-family: var(--font_default-regular);
+      font-size: 1.4rem;
+      font-weight: normal;
+      margin: 2.5rem 0 1.2rem;
+      padding: 0 0 .8rem;
+    }
+  }
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  # REGULAR PAGES                                                           */
+/*----------------------------------------------------------------------------*/
+.page {
+  main {
+    h1 {
+      font-family: var(--font_default-light);
+      font-size: 2rem;
+      font-weight: normal;
+      margin: 0 0 1.6rem;
+    }
+    h2 {
+      font-family: var(--font_default-regular);
+      font-size: 1.4rem;
+      font-weight: normal;
+      margin: 1.7rem 0 0.7rem;
+    }
+    h3 {
+      font-family: var(--font_default-regular);
+      font-size: 1.3em;
+      font-weight: normal;
+      margin: 1.6rem 0 0.7rem;
+    }
+    h4 {
+      font-family: var(--font_default-regular);
+      font-size: 1.2rem;
+      margin: 1.5rem 0 0.7rem;
+    }
+    h5 {
+      font-family: var(--font_default-regular);
+      font-size: 1.1rem;
+      margin: 1.6rem 0 0.7rem;
+    }
+    h6 {
+      font-family: var(--font_default-regular);
+      font-size: 1rem;
+      margin: 1.7rem 0 0.8rem;
+    }
+    p {
+      color: var(--color_black-1);
+      font-family: var(--font_default-light);
+      font-size: 1rem;
+      margin: 0 0 1.2rem;
+      &:last-of-type {
+        margin: 0 0 2.5rem; 
+      }
+      code {
+        color: var(--color_black-2);
+        font-family: var(--font_default-mono-regular);
+        font-size: calc(100% - .05rem);
+      }
+    }
+    ul,
+    ol {
+      list-style: outside;
+      margin: 1.5rem 0 2rem 1.4rem;
+      li {
+        line-height: 1.4rem;
+        margin: 0 0 .4rem;
+        &:last-of-type {
+          margin: 0;
+        }
+        code {
+          color: var(--color_black-2);
+          font-family: var(--font_default-mono-regular);
+          font-size: calc(100% - .05rem);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*  # LESSON PAGES                                                            */
 /*----------------------------------------------------------------------------*/
 .lesson {
   main {
@@ -571,7 +751,8 @@ main a:focus {
         }
       }
     }
-    ul {
+    ul,
+    ol {
       list-style: outside;
       margin: 1.5rem 0 2rem 1.4rem;
       li {
@@ -979,111 +1160,4 @@ iframe {
 /* Allow the Skip link to be focusable when navigated to via keyboard */
 .skip-link.visually-hidden.focusable:focus {
   padding: .2rem 0;
-}
-
-
-
-
-
-/*----------------------------------------------------------------------------*/
-/*  # HOME PAGE                                                               */
-/*----------------------------------------------------------------------------*/
-.home {
-  background: var(--color_white-0);
-  text-align: center;
-
-  .website-header {
-    background: var(--color_blue-0);
-    color: var(--color_white-0);
-    margin: 0 0 2.5rem;
-    padding: 3.7rem 0 4.25rem;
-
-    a,
-    &--logo:link,
-    &--logo:visited, 
-    &--logo:hover {
-      border: none;
-      color: var(--color_white-0);
-      display: inline-block;
-      line-height: 0;
-      text-decoration: none;
-    }
-  }
-
-  .language-icon {
-    margin: -3.74rem 0 1.4rem;
-  }
-
-  .language-navigation {
-    background: none;
-
-    &__list {
-      list-style-type: none;
-      margin: 0;
-      padding: .15rem 0 .25rem;
-    }
-
-    &__list-item {
-      display: inline-block;
-      line-height: .9rem;
-      margin: 1rem 1.2rem;
-      padding: 0;
-    }
-
-    &__anchor {
-      text-decoration: none;
-      line-height: 1.1rem; overflow-wrap: break-word;
-
-      &:hover {
-        color: var(--color_blue-0);
-      }
-    }
-
-    &__label-regional {
-      color: var(--color_blue-0);
-      font-size: 1.1rem;
-    }
-
-    &__label-english {
-      color: var(--color_grey-3);
-      font-size: .7rem;
-    }
-  }
-}
-
-
-
-
-
-/*----------------------------------------------------------------------------*/
-/*  # START PAGE                                                              */
-/*----------------------------------------------------------------------------*/
-.start {
-  
-  main h1 {
-    font-family: var(--font_default-light);
-    font-size: 2em;
-    font-weight: normal;
-    margin: 0 0 0.6em;
-  }
-
-  main h2.heading__introduction {
-    font-family: var(--font_default-regular-semicondensed);
-    font-size: 1.4rem;
-    font-weight: normal;
-    margin: 1.3em 0 0.5em;
-    .anchorjs-link {
-      display: none;
-      visibility: hidden;
-    }
-  }
-
-  main h2.heading__toc {
-    border-bottom: 0.01rem solid var(--color_grey-2);
-    font-family: var(--font_default-regular);
-    font-size: 1.4rem;
-    font-weight: normal;
-    margin: 2.5rem 0 1.2rem;
-    padding: 0 0 .8rem;
-  }
 }

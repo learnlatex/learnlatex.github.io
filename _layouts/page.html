@@ -48,7 +48,8 @@ layout: compress
     </script>
 
   </head>
-  <body>
+  <body
+    class="page">
 
     <!-- skip link start -->
     <a 
@@ -71,16 +72,7 @@ layout: compress
       <!-- wrapper start -->
       <div class="wrapper">
 
-      <!-- inter-lesson links start -->
-      <!-- FIXME: Links on top should only include inter lesson links, not "more on this topic" links -->
-      {% include inter-lesson-links.html %}
-      <!-- inter-lesson links end -->
-
       {{ content }}
-
-      <!-- inter-lesson links start -->
-      {% include inter-lesson-links.html %}
-      <!-- inter-lesson links end -->
 
       </div>
       <!-- wrapper end -->
