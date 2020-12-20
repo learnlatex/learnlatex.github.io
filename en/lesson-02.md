@@ -56,12 +56,12 @@ A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
 and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
 is included in MacTeX.
 
-Whichever editor you pick, we recommend you install it _after_ your TeX system,
-so that the editor can 'find' the TeX system and set itself up correctly.
+<p 
+  class="hint">Whichever editor you pick, we recommend you install it _after_ your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
 
 ## Working online
 
-There are several powerful online sites nowadays that allow you to avoid
+There are several powerful online sites that allow you to avoid
 the need to install a TeX system and LaTeX editor at all. These websites
 work by letting you edit your files in the webpage, then they run LaTeX
 behind the scenes, and display the PDF that is produced.

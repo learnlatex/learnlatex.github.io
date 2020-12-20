@@ -104,5 +104,13 @@ and add lines one at a time until you show the issue. You can try to
 
 One thing you will want available is your log file; this is created by LaTeX
 every time you run it, and has the same name as your input but ending `.log`.
-Depending on your desktop interface, you might need to 'show extensions' to
-work out which file it is.
+
+<p 
+  class="hint">Depending on your desktop interface, you might need to 'show extensions' to work out which file it is.</p>
+
+In the log file, you can always see the full error messages. LaTeX's error messages try to be helpful, but they are not the same as messages in word processors.
+
+<p 
+  class="hint">Some editors also make it hard to see the 'full' text of an error, which can hide key details.</p>
+
+If you have a problem, expert LaTeX users will often ask for a copy of your log file.
