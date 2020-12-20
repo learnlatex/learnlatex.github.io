@@ -202,57 +202,6 @@ html {
 
 
 /*----------------------------------------------------------------------------*/
-/*  # HEADINGS                                                                */
-/*----------------------------------------------------------------------------*/
-h1,
-.first-heading {
-    font-family: var(--font_default-light);
-    font-size: 2em;
-    font-weight: normal;
-    margin: 0 0 0.6em;
-}
-
-h2,
-.second-heading {
-    font-family: var(--font_default-regular-semicondensed);
-    font-size: 1.8em;
-    font-weight: normal;
-    margin: 1.3em 0 0.5em;
-}
-
-h3,
-.third-heading {
-    font-family: var(--font_default-light);
-    font-size: 1.6em;
-    margin: 1.4em 0 0.5em;
-}
-
-h4,
-.fourth-heading {
-    font-family: var(--font_default-regular);
-    font-size: 1.4em;
-    margin: 1.5em 0 0.6em;
-}
-
-h5,
-.fifth-heading {
-    font-family: var(--font_default-regular);
-    font-size: 1.3em;
-    margin: 1.6em 0 0.7em;
-}
-
-h6,
-.sixth-heading {
-    font-family: var(--font_default-regular);
-    font-size: 1.2em;
-    margin: 1.7em 0 0.8em;
-}
-
-
-
-
-
-/*----------------------------------------------------------------------------*/
 /*  # TEXT-LEVEL                                                              */
 /*----------------------------------------------------------------------------*/
 p {
@@ -665,6 +614,24 @@ table td code {
       }
     }
   }
+  main {
+    ul {
+      list-style: outside;
+      margin: 1.5rem 0 2rem 1.4rem;
+      li {
+        line-height: 1.4rem;
+        margin: 0 0 .4rem;
+        &:last-of-type {
+          margin: 0;
+        }
+        code {
+          color: var(--color_black-2);
+          font-family: var(--font_default-mono-regular);
+          font-size: calc(100% - .05rem);
+        }
+      }
+    }
+  }
   .inter-lesson-navigation {
     border-bottom: 0.004rem solid var(--color_grey-2);
     border-top: 0.004rem solid var(--color_grey-2);
@@ -755,7 +722,7 @@ table td code {
 
 
 /*----------------------------------------------------------------------------*/
-/*  # ACE EDITOR - FIXME                                                      */
+/*  # ACE EDITOR                                                              */
 /*----------------------------------------------------------------------------*/
 .ace_editor {
   border: 0.004rem solid var(--color_grey-2);
@@ -831,15 +798,15 @@ iframe {
     flex-grow: 1;
     padding: 0 1rem;
     text-align: center;
-    
+
     &:first-of-type {
       padding: 0 1rem 0 0;
-    
+
       @media (max-width: 35rem) {
         padding: 0 1rem;
       }
     }
-    
+
     &:last-of-type {
       padding: 0 0 0 1rem;
       @media (max-width: 35rem) {
@@ -854,8 +821,11 @@ iframe {
 
   &__heading {
     border-bottom: 0.01rem solid var(--color_grey-2);
+    font-family: var(--font_default-regular);
+    font-size: 1.2em;
     margin: 2.5rem 0 .8rem;
     padding: 0 0 .6rem;
+
 
     .anchorjs-link {
       display: none;
@@ -863,6 +833,7 @@ iframe {
     }
   }
 
+  ul,
   &__list {
     list-style: none;
     margin: 0;
