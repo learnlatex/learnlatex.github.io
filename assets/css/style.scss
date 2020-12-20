@@ -578,6 +578,14 @@ table td code {
 /*  # LESSONS                                                                 */
 /*----------------------------------------------------------------------------*/
 .lesson {
+  .meta {
+    background: var(--color_grey-0);
+    color: var(--color_black-2);
+    font-family: var(--font_default-regular);
+    font-size: .6rem;
+    margin: 0 0 1.5rem;
+    padding: .1rem .2rem;
+  }
   h1 {
     font-family: var(--font_default-light);
     font-size: 2rem;
@@ -669,7 +677,7 @@ table td code {
     flex-shrink: 1;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 1.5rem 0;
+    margin: -.2rem 0 1.5rem 0;
     padding: .8rem .2rem;
     &__anchor {
       flex-basis: 5rem;
@@ -718,7 +726,7 @@ table td code {
     @media (max-width: 500px) {
       flex-direction: column;
       flex-wrap: nowrap;
-      margin: 1.5rem 0;
+      margin: -.2rem 0 1.5rem 0;
       padding: .4rem .2rem;
       &__anchor {
         flex-basis: 1.7rem;

@@ -56,6 +56,16 @@ heading_planet:
   tr: "Planet"
   vi: "Liên kết ngoài"
   zh: "Missing"
+informational-elements_lesson:
+  de: "Lektion"
+  en: "Lesson"
+  es: "Lección"
+  fr: "Leçon"
+  ja: "レッスン"
+  pt: "Lição"
+  tr: "Ders"
+  vi: "Bài học"
+  zh: "課"
 navigational-elements_home:
   de: "Startseite"
   en: "Home"

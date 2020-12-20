@@ -72,16 +72,24 @@ layout: compress
       <div 
         class="wrapper">
 
-      <!-- inter-lesson links start -->
-      <!-- FIXME: Links on top should only include inter lesson links, not "more on this topic" links -->
-      {% include inter-lesson-links.html %}
-      <!-- inter-lesson links end -->
+        <!-- meta lesson information start -->
+        {% assign language = page.lang %}
+        <span
+          class="meta"
+          >{{ site.data.translations['informational-elements_lesson'][page.lang] }} {{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | round: 2 }}</span>
+        <!-- meta lesson information end -->
 
-      {{ content }}
+        <!-- inter-lesson links start -->
+        <!-- FIXME: Links on top should only include inter lesson links, not "more on this topic" links -->
+        {% include inter-lesson-links.html %}
+        <!-- inter-lesson links end -->
 
-      <!-- inter-lesson links start -->
-      {% include inter-lesson-links.html %}
-      <!-- inter-lesson links end -->
+
+        {{ content }}
+
+        <!-- inter-lesson links start -->
+        {% include inter-lesson-links.html %}
+        <!-- inter-lesson links end -->
 
       </div>
       <!-- wrapper end -->
