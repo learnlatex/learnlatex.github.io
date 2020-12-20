@@ -1,10 +1,9 @@
 <ul 
   class="lessons-toc">
-  <!-- Liquid to handle multilingual URI paths, with en/ behaving differently from other language paths. -->
   {% assign splitprefix = include.prefix | split: "/" %}
   {% assign l = splitprefix[0] %}
-  {%- for page in site.pages | sort: 'path' -%}
-    {%- if page.path contains include.prefix %}
+  {% for page in site.pages | sort: 'path' %}
+    {% if page.path contains include.prefix %}
       <li
         class="lessons-toc__list-item">
         <a 
@@ -27,6 +26,6 @@
             >{{ page.toc-description }}</span>
         </a>
       </li>
-    {%- endif -%}
-  {%- endfor -%}
+    {% endif %}
+  {% endfor %}
 </ul>
