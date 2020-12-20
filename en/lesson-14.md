@@ -2,16 +2,21 @@
 layout: "lesson"
 lang: "en"
 title: "Selecting fonts and using Unicode engines"
-description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use, and how that changes in modern engines with Unicode and OpenType fonts support."
+description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
 toc-anchor-text: "Fonts & Unicode engines"
 toc-description: "Selecting fonts and file encoding."
 ---
 
-# Selecting fonts and using Unicode engines
+# Fonts and Unicode engines
+
+<span
+  class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
 
 When TeX and LaTeX first started being widely used they largely only handled
 European languages out of the box, although there was some capability for using
 other alphabets such as Greek and Russian.
+
+## Accents and accented letters
 
 Originally, accents and accented letters were typed using control sequences or
 macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
@@ -28,6 +33,8 @@ This approach is still in use in modern LaTeX when using the `pdflatex` engine.
 By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
 specified. Although this engine is limited to 8-bit fonts, most European
 languages can be supported.
+
+## Font selection
 
 Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
 nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
@@ -71,14 +78,15 @@ Notably, this approach works for *any* OpenType font.  Some fonts available for
 `pdflatex` are also available to `xelatex` and `lualatex` through their
 respective packages as well, or by loading any font you have installed on your
 computer by using `fontspec` as shown above.
+
 [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
 with OpenType formats available, so you can use that as a resource for looking
 up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
 earlier.
 
-Having selected a font,
-input can now be typed directly in plain Unicode into a source document. Here is
-an example showing some Latin and Greek letters as well as some CJK ideographs:
+Having selected a font, input can now be typed directly in plain Unicode into a 
+source document. Here is an example showing some Latin and Greek letters as 
+well as some CJK ideographs:
 
 ```latex
 \documentclass{article}
@@ -92,8 +100,5 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
-When switching between languages it is usually important to also
-change things like hyphenation patterns and so on, and the `babel` and
-`polyglossia` packages both provide robust features to do this.
-
-
+<p 
+  class="hint">When switching between languages it is usually important to also change things like hyphenation patterns and so on, and the <code>babel</code> and <code>polyglossia</code> packages both provide robust features to do this.</p>

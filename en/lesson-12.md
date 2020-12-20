@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "en"
 title: "Citations and references"
-description: "This lesson show the basics of reference databases and how to build your own, how to use this databases in your documents using the two major workflows available, and how to choose between them."
+description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
 toc-anchor-text: "Citations & references"
 toc-description: "Working with reference databases."
 ---
@@ -20,13 +20,16 @@ preincludes = {
 }
 </script>
 
-## Reference databases
+<span
+  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
 
 For bibliographic citations, while you can include reference sources directly in
 your document, usually you will get that information from one or more external
 files. Such a file is a database of references, containing the information in a
 processing-friendly format. Using one or more reference databases lets you
 re-use information and avoid manual formatting.
+
+## Reference databases
 
 Reference databases are normally referred to as 'BibTeX files' and have the
 extension `.bib`. They contain one or more entries, one for each reference, and

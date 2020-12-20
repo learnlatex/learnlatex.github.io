@@ -9,21 +9,24 @@ toc-description: "Dealing with unexpected behaviors."
 
 # Dealing with errors
 
+<span
+  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
+
 Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
 closer to working with programming language compilers, and as in programming
 users may make errors in their input and so need to deal with error messages
 reported by the system.
 
-This page gives examples of several common errors.
+## Common errors
 
-Each error example has some discussion about the form of the error
+This page gives examples of several common errors. Each error example has some discussion about the form of the error
 message.
 
 It may be instructive to try the examples but also use the
 edit features to try to fix the documents and test that you can
 resolve the errors.
 
-## pdflatex not found
+### pdflatex not found
 
 A common first error that people see when starting is:
 
@@ -48,7 +51,7 @@ installed or not found.  A common mistake is to install an _editor_
 such as TeXworks or TeXShop but without installing a TeX system such as
 TeX Live or MiKTeX.
 
-## Anatomy of a {{ site.tex }} error message
+### Anatomy of a {{ site.tex }} error message
 
 ```latex
 \documentclass{article}
@@ -106,7 +109,7 @@ This can be particularly misleading if shown as
 as it makes it appear that `\mycommand` is not defined.
 
 
-## Mismatched braces
+### Mismatched braces
 
 
 ```latex
@@ -140,7 +143,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-## Missing files
+### Missing files
 
 ```latex
 \documentclass{article}
@@ -165,7 +168,7 @@ typo as here, which may be corrected by fixing the package name, or
 that the file really is missing and needs to be installed on the
 current system.
 
-## Blank lines in display math
+### Blank lines in display math
 
 ```latex
 \documentclass{article}
