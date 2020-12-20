@@ -573,22 +573,48 @@ table td code {
     margin: 0 0 1.6rem;
   }
   h2 {
-    font-family: var(--font_default-regular-semicondensed);
-    font-size: 1.4em;
+    font-family: var(--font_default-regular);
+    font-size: 1.4rem;
     font-weight: normal;
-    margin: 1.2rem 0 1.5rem;
+    margin: 1.7rem 0 0.7rem;
   }
   h3 {
     font-family: var(--font_default-regular);
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: normal;
-    margin: 1.4em 0 0.8em;
+    margin: 1.6rem 0 0.7rem;
+  }
+  h4 {
+    font-family: var(--font_default-regular);
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.7rem;
+  }
+  h5 {
+    font-family: var(--font_default-regular);
+    font-size: 1.1rem;
+    margin: 1.6rem 0 0.7rem;
+  }
+  h6 {
+    font-family: var(--font_default-regular);
+    font-size: 1rem;
+    margin: 1.7rem 0 0.8rem;
+  }
+  .summary {
+    display: block;
+    font-family: var(--font_default-regular-semicondensed);
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.6rem;
+    margin: 1.5rem 0 2.4rem;
   }
   p {
     color: var(--color_black-1);
     font-family: var(--font_default-light);
     font-size: 1rem;
     margin: 0 0 1.2rem;
+    &:last-of-type {
+      margin: 0 0 2.5rem; 
+    }
   }
   .inter-lesson-navigation {
     border-bottom: 0.004rem solid var(--color_grey-2);
