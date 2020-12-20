@@ -618,6 +618,10 @@ table td code {
     font-weight: normal;
     line-height: 1.6rem;
     margin: 1.5rem 0 2.4rem;
+    code {
+      font-family: var(--font_default-mono-regular);
+      font-size: calc(100% - .05rem);
+    }
   }
   p {
     color: var(--color_black-1);
@@ -630,7 +634,7 @@ table td code {
     code {
       color: var(--color_black-2);
       font-family: var(--font_default-mono-regular);
-      font-size: .95rem;
+      font-size: calc(100% - .05rem);
     }
     &.hint {
       color: var(--color_black-2);
