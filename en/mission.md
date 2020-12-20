@@ -1,4 +1,5 @@
 ---
+layout: "page"
 lang: "en"
 title: Mission
 permalink: /en/mission

@@ -1,4 +1,5 @@
 ---
+layout: "page"
 lang: "en"
 title: Licenses
 permalink: /en/licenses

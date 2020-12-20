@@ -1,4 +1,5 @@
 ---
+layout: "page"
 lang: "en"
 title: Contact
 permalink: /en/contact
