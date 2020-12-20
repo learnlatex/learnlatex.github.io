@@ -683,7 +683,8 @@ table td code {
       flex-basis: 5rem;
       flex-grow: 1;
       font-size: .8rem;
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(--color_black-0);
         text-decoration: none;
       }
@@ -757,19 +758,41 @@ table td code {
 /*  # ACE EDITOR - FIXME                                                      */
 /*----------------------------------------------------------------------------*/
 .ace_editor {
-  border: 1px solid lightgray;
-  margin-bottom: 1px !important;
+  border: 0.004rem solid var(--color_grey-2);
+  border-radius: .15rem;
   width: 100%;
   font-family: var(--font_default-mono-regular);
   font-size: .8rem;
   line-height: 1.2rem;
+  margin: 1.8rem 0 0;
 }
 
 .ace_constant {
   color:blue !important;}
 
-div.spacer {
-  margin-top:16px;
+div.ace-spacer {
+  margin: 0 0 2rem;
+}
+
+button {
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(237,237,237,1) 96%,rgba(204,204,204,1) 100%);
+  border: 0.004rem solid var(--color_grey-2);
+  border-radius: .15rem;
+  color: var(--color_blue-0);
+  cursor: pointer;
+  font-family: var(--font_default-regular);
+  font-size: .7rem;
+  margin: .3rem .3rem .3rem 0;
+  padding: .2rem .3rem;
+  &:hover {
+    background: linear-gradient(to bottom, rgba(204,204,204,1) 0%,rgba(237,237,237,1) 4%,rgba(255,255,255,1) 100%);
+    color: var(--color_black-0);
+  }
+}
+
+iframe {
+  border: 0.004rem solid var(--color_grey-2);
+  border-radius: .15rem;
 }
 
 

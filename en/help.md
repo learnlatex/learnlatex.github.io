@@ -39,7 +39,7 @@ The editor being used is [ACE](https://ace.c9.io/).
 
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
 
-1. Use a  **LaTeX Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX Online</button> button
+1. Use a  **LaTeX Online** service. The <button>LaTeX Online</button> button
    will submit the code to the
    [LaTeX CGI](https://latexcgi.xyz/) service[^1].
 
@@ -49,7 +49,7 @@ Whether or not the code block has been edited, there are three basic ways that y
    to enable display of PDF on mobile and other browsers without built in PDF readers.
 
    The resulting PDF document (or section of the error log) will be
-   shown inline immediately below the example. A <button style="padding:0 1px;font-size:90%">Delete
+   shown inline immediately below the example. A <button>Delete
    Output</button> button will be provided so that you may remove this output
    (or you may leave it in place and continue the rest of the lesson
    below).
@@ -61,7 +61,7 @@ Whether or not the code block has been edited, there are three basic ways that y
    make to the example are lost if you move off the page.
 
 
-2. Use the **Overleaf** Service, one of the most popular online LaTeX editing services. The <button style="padding:0 1px;font-size:90%">Open in Overleaf</button>
+2. Use the **Overleaf** Service, one of the most popular online LaTeX editing services. The <button>Open in Overleaf</button>
    button will submit the code to [Overleaf](https://www.overleaf.com/about).
 
    If you do not have an account, or the account details are not

@@ -22,7 +22,7 @@ function llexamples() {
 	if(p[i].textContent.indexOf("\\documentclass") !== -1) {
 	    // space
 	    var s = document.createElement("div");
-	    s.setAttribute("class",'spacer');
+	    s.setAttribute("class",'ace-spacer');
 	    p[i].parentNode.insertBefore(s, p[i].nextSibling);
 	    // latexonline
 	    var r = document.createElement("button");
