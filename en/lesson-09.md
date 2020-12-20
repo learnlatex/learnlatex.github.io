@@ -9,12 +9,17 @@ toc-description: "Refering to figures, tables, etc."
 
 # Cross-referencing
 
-## The `\label` and `\ref` mechanism
+<span
+  class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>
 
 When you are writing a document of any length, you'll want to refer to numbered
 items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. To have LaTeX remember a spot
-in your document you have to label it, and then in other places, you refer to it.
+the right numbers; we just have to set things up. 
+
+## The `\label` and `\ref` mechanism
+
+To have LaTeX remember a spot in your document you have to label it, and then 
+in other places, you refer to it.
 
 ```latex
 \documentclass{article}
