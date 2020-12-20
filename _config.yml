@@ -5,6 +5,9 @@ title: learnlatex.org
 description: Learn LaTeX online
 repository: learnlatex/learnlatex.github.io
 
+
+# PLUGINS
+# https://jekyllrb.com/docs/plugins/
 plugins:
   - jekyll-sitemap
 
@@ -15,10 +18,11 @@ kramdown:
 sass:
     style: compressed
 
-limit_posts: 0
 
-latex: "<span class='tex' style='line-height:85%'><span>L<span style='font-variant: small-caps; vertical-align:.35ex;margin-left:-.15em;margin-right:-.05em;'>a</span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span></span>"
-tex: "<span class='tex'>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
+# POST LIMIT
+# Limit the number of posts to parse and publish.
+# https://jekyllrb.com/docs/configuration/options/
+limit_posts: 0
 
 
 # LANGUAGES, LABELS, LAYOUTS
