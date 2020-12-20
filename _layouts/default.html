@@ -31,10 +31,9 @@ layout: compress
     <script src="{{ "/assets/scripts/anchor.min.js" | relative_url }}"></script>
     <!-- adding anchors to headings end 1/2 --> 
 
-    {% if page.path contains "-" or page.path contains "help" %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js"></script>
-    <script src="includes/buttons.js"></script>
-    {% endif %}
+    <!-- ace editor and buttons start -->
+    {% include ace-editor.html %}
+    <!-- ace editor and buttons end -->
 
     <script>
       {% if site.title and site.title == page.title %}
