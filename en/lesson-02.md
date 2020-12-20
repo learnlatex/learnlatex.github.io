@@ -9,6 +9,12 @@ toc-description: "TeX systems and LaTeX text editors."
 
 # Working with LaTeX
 
+<span
+  class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
+
+
+## LaTeX applications
+
 Unlike many computer programs, LaTeX is not a single application containing
 'everything' in one. Instead, there are separate programs that work together.
 We can divide those up into two things you actually need:
@@ -16,7 +22,7 @@ We can divide those up into two things you actually need:
 - A _TeX system_
 - A text editor (often a LaTeX-specific one)
 
-## {{ site.tex }} systems
+## LaTeX systems
 
 The core of working with LaTeX is having a TeX system available. A TeX system is a set
 of 'behind the scenes' programs and files that are needed to make LaTeX work, but

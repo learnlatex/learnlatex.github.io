@@ -1,17 +1,22 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "Your first LaTeX document"
+title: "Basic LaTeX document structure"
 description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "LaTeX documents"
+toc-anchor-text: "Document structure"
 toc-description: "The basic structure of a document."
 ---
 
+# LaTeX document structure
+
+<span
+  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+  
 # Your first LaTeX document
 
 Our first LaTeX document is going to be very simple: the idea is to show you
 how a document looks and how to typeset it successfully. It is also your
-first chance to [see how to use the examples here on `learnlatex.org`](help).
+first chance to see [how to use the examples](help) here on `learnlatex.org`.
 
 If you are using a local LaTeX installation, in your editor create a new file
 called `first.tex`, and either copy–paste the text below or type it in.
@@ -86,6 +91,7 @@ in order.
 
 We can add comments to a LaTeX file by starting them with `%`; let's use
 that to show the structure:
+
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
 \usepackage[T1]{fontenc}
@@ -98,6 +104,7 @@ document\footnote{with a footnote}.
 This is a new paragraph.
 \end{document}
 ```
+
 You can see above that we've got two paragraphs: notice the use of a blank  line
 to do that. Also notice that multiple spaces are treated as a single space.
 
