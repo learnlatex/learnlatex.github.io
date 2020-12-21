@@ -605,7 +605,8 @@ hr {
       font-weight: normal;
       margin: 0 0 0.6em;
     }
-   h2.heading__introduction {
+    h2.heading__introduction {
+      border: none;
       font-family: var(--font_default-regular-semicondensed);
       font-size: 1.4rem;
       font-weight: normal;
