@@ -280,7 +280,9 @@ hr {
     }
     .language-switch {
       display: inline;
+      select,
       &__select {
+        appearance: none;
         background: var(--color_blue-1);
         border: none;
         color: var(--color_grey-2);
@@ -288,6 +290,7 @@ hr {
         font-family: var(--font_default-light);
         font-size: .7rem;
         margin: 0 0 0 -.2rem;
+        outline: none;
         padding: .15rem .15rem .1rem 0;
         &:active,
         &:focus,
@@ -314,7 +317,7 @@ hr {
         @media (max-width: 450px) {
           width: 7rem;
         }
-        @media (max-width: 370px) {
+        @media (max-width: 369px) {
           width: 5rem;
         }
       }
