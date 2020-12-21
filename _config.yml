@@ -32,60 +32,51 @@ defaults:
       path: ""
     values:
       lang: "en"
-      layout: "home"
   -
     scope:
       path: "en"
     values:
       lang: "en"
       label: "English"
-      layout: "page"
   -
     scope:
       path: "es"
     values:
       lang: "es"
       label: "Español"
-      layout: "page"
   -
     scope:
       path: "fr"
     values:
       lang: "fr"
       label: "Français"
-      layout: "page"
   -
     scope:
       path: "de"
     values:
       lang: "de"
       label: "German"
-      layout: "page"
   -
     scope:
       path: "pt"
     values:
       lang: "pt"
       label: "Português"
-      layout: "page"
   -
     scope:
       path: "vi"
     values:
       lang: "vi"
       label: "Tiếng Việt"
-      layout: "page"
   -
     scope:
       path: "ja"
     values:
       lang: "ja"
       label: "日本語"
-      layout: "page"
   -
     scope:
       path: "zh"
     values:
       lang: "zh"
       label: "中文"
-      layout: "page"
