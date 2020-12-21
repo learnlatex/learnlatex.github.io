@@ -285,17 +285,18 @@ hr {
         appearance: none;
         background: var(--color_blue-1);
         border: none;
+        border-left: 0.004rem solid var(--color_blue-4);
         color: var(--color_grey-2);
         display: inline;
         font-family: var(--font_default-light);
         font-size: .7rem;
+        line-height: 1.4;
         margin: 0;
         outline: none;
-        padding: .15rem;
+        padding: .1rem .3rem;
         &:active,
         &:focus,
         &:hover {
-          border: none;
           color: var(--color_white-0);
         }
       }
@@ -306,15 +307,23 @@ hr {
         display: inline;
       }
       &__box {
-        background: var(--color_grey-7);
+        appearance: none;
+        background: var(--color_grey-2);
         border: 0.01rem solid var(--color_black-1);
         border-radius: .2rem;
         box-shadow: inset 0px 2px 2px 0px rgba(50, 50, 50, 0.5);
+        color: var(--color_grey-3);
         font-family: var(--font_default-light);
         font-size: .7rem;
-        margin: 0;
+        outline: none;
         padding: .15rem .43rem .1rem;
         width: 9rem;
+        &:active,
+        &:focus,
+        &:hover {
+          background: var(--color_grey-1);
+          color: var(--color_black-0);
+        }
         @media (max-width: 450px) {
           width: 7rem;
         }
@@ -329,6 +338,7 @@ hr {
         cursor: pointer;
         font-family: var(--font_icons);
         font-size: .7rem;
+        margin: 0;
         padding: .25rem .25rem .19rem;
         &:before {
           content: "\f002";

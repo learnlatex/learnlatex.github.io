@@ -66,6 +66,16 @@ informational-elements_lesson:
   tr: "Ders"
   vi: "Bài học"
   zh: "課"
+informational-elements_search:
+  de: "Suche"
+  en: "Search"
+  es: "Buscar"
+  fr: "Chercher"
+  ja: "探す"
+  pt: "Pesquisa"
+  tr: "Arama"
+  vi: "Tìm kiếm"
+  zh: "搜索"
 navigational-elements_home:
   de: "Startseite"
   en: "Home"
