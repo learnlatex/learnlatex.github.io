@@ -114,3 +114,7 @@ In the log file, you can always see the full error messages. LaTeX's error messa
   class="hint">Some editors also make it hard to see the 'full' text of an error, which can hide key details.</p>
 
 If you have a problem, expert LaTeX users will often ask for a copy of your log file.
+
+### Going further
+
+Finally we offer a [gallery of small examples](./extra-01) showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.

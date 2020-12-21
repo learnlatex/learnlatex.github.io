@@ -615,7 +615,8 @@ hr {
         visibility: hidden;
       }
     }
-   h2.heading__toc {
+    h2,
+    h2.heading__toc {
       border-bottom: 0.01rem solid var(--color_grey-2);
       font-family: var(--font_default-regular);
       font-size: 1.4rem;
@@ -776,6 +777,9 @@ hr {
         color: var(--color_black-2);
         font-family: var(--font_default-mono-regular);
         font-size: calc(100% - .05rem);
+      }
+      a code {
+        color: var(--color_blue-0);
       }
       &.hint {
         color: var(--color_black-2);

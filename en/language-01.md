@@ -2,12 +2,17 @@
 layout: "lesson"
 lang: "en"
 title: "Language-specifics for English"
-description: "This lesson shows language-specific details for typesetting text in English."
+description: "This lesson shows language-specific details for typesetting with LaTeX in English. The focus is on hyphenation, where UK and US traditions are different."
 next: "extra-01"
 toc-anchor-text: "Language-specifics for English"
 ---
 
-## hyphenation
+# Language-specifics for English
+
+<span
+  class="summary">This lesson shows language-specific details for typesetting with LaTeX in English with a focus on hyphenation, where UK and US traditions are different.</span>
+
+## Hyphenation
 
 LaTeX was written for use with English, and so there are very few
 language-specific issues facing authors in English. The main one
