@@ -1,4 +1,6 @@
 ---
+layout: "page"
+lang: "en"
 title: Translating learnlatex.org
 permalink: /TRANSLATIONS
 ---
