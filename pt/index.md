@@ -32,7 +32,22 @@ permalink: /pt/
 <h2 
   class="heading__toc" 
   id="toc"
-  >The lessons</h2>
+  >Lições</h2>
+
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+
+{% include toc-lessons.html prefix="pt/lesson" %}
+
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="pt/language" %}
+  {% include toc-additional-lessons.html prefix="pt/extra" %}
+</ul>
 
 # Bem-vindo ao learnlatex.org!
 
@@ -68,16 +83,6 @@ funcionam com ambos os nossos sistemas online, então se você receber erros com
 os exemplos que nós fornecemos, você pode primeiro verificar se a sua instalação
 de LaTeX está atualizada.
 
-<h2 
-  class="heading__toc" 
-  id="toc"
-  >Lições</h2>
-
-{% include toc-lessons.html  prefix="pt/lesson" %}
-
-### Lições adicionais específicas para learnlatex.org/pt
-
-{% include toc.html  prefix="pt/language" %}
 
 ## Indo além
 
@@ -91,5 +96,3 @@ algumas recomendações na última lição.
 Finalmente, nós oferecemos uma galeria de pequenos exemplos mostrando uma gama
 de áreas diferentes que não são abordadas nessa introdução, e os diferentes
 pacotes nessas áreas.
-
-{% include toc.html prefix="pt/extra" %}

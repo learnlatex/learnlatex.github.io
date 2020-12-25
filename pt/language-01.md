@@ -4,7 +4,8 @@ lang: "pt"
 title: "Lição específica para a língua Portuguesa"
 description: "Esta lição mostra detalhes específicos de linguagem para escrever textos em Português."
 next: "extra-01"
-toc-anchor-text: "Lição específica para a língua Portuguesa"
+toc-anchor-text: "LaTeX em português"
+toc-description: "Lição específica para a língua Portuguesa"
 ---
 
 Como a língua Portuguesa usa o alfabeto Latino, assim como a língua Inglesa, o
