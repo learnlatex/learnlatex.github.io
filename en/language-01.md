@@ -4,7 +4,8 @@ lang: "en"
 title: "Language-specifics for English"
 description: "This lesson shows language-specific details for typesetting with LaTeX in English. The focus is on hyphenation, where UK and US traditions are different."
 next: "extra-01"
-toc-anchor-text: "Language-specifics for English"
+toc-anchor-text: "English Language-specifics"
+toc-description: "Typesetting with LaTeX in English."
 ---
 
 # Language-specifics for English

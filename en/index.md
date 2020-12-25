@@ -30,20 +30,28 @@ permalink: /en/
 </div>
 
 <h2 
-  class="heading__toc" 
+  class="heading__toc"
   id="toc"
   >Lessons</h2>
 
-{% include toc-lessons.html  prefix="en/lesson" %}
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
+{% include toc-lessons.html prefix="en/lesson" %}
+
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="en/language" %}
+  {% include toc-additional-lessons.html prefix="en/extra" %}
+</ul>
 
 ## Going further
-
-We know that people will want to know more than we can cover in 16 short lessons. To help guide you when you need more information, we have therefore included a ‘More on this topic’ page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you do not.
 
 We cover getting more information in [the last lesson](./lesson-16), but it is worth saying now that getting access to a book about LaTeX is still the best way to learn the details. We give some recommendations in the last lesson.
 
 
-### Additional lessons specific to English
 
-{% include toc.html  prefix="en/language" %}

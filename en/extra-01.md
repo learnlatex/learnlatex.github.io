@@ -1,15 +1,16 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "Examples for further study"
-description: "This lesson shows assorted examples of other popular packages that were not covered in the main lessons."
-toc-anchor-text: "Examples for further study"
+title: "LaTeX Showcase - Examples for further study"
+description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
+toc-anchor-text: "LaTeX Showcase"
+toc-description: "Examples for further study."
 ---
 
 # Showcase
 
 <span
-  class="summary">This lesson shows assorted examples of other popular packages that were not covered in the main lessons.</span>
+  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
 
 This course has given an overview of the core features of LaTeX.
 LaTeX has vast array of extension packages and is used in many subject
