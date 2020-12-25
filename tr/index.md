@@ -33,15 +33,21 @@ permalink: /tr/
   id="toc"
   >Dersler</h2>
 
-{% include toc-lessons.html  prefix="en/lesson" %}
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
+{% include toc-lessons.html prefix="tr/lesson" %}
 
-### Additional lessons specific to English
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="tr/language" %}
+  {% include toc-additional-lessons.html prefix="tr/extra" %}
+</ul>
 
-{% include toc.html  prefix="en/language" %}
+## Going further
 
-### Going further
-
-Finally we offer a gallery of small examples showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.
-
-{% include toc.html prefix="en/extra" %}
+We cover getting more information in [the last lesson](./lesson-16), but it is worth saying now that getting access to a book about LaTeX is still the best way to learn the details. We give some recommendations in the last lesson.
