@@ -75,7 +75,7 @@ de LaTeX está correctamente actualizado.
 
 <h2
   class="heading__toc"
-  >Additional lessons</h2>
+  >Lecciones adicionales</h2>
 <ul 
   class="lessons-toc">
   {% include toc-additional-lessons.html prefix="es/language" %}
