@@ -74,13 +74,20 @@ d'abord que votre système LaTeX est à jour.
   class="heading__toc" 
   id="toc"
   >Leçons</h2>
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
-{% include toc-lessons.html  prefix="fr/lesson" %}
+{% include toc-lessons.html prefix="fr/lesson" %}
 
-
-### Leçons spécifiques au français
-
-{% include toc.html  prefix="fr/language" %}
+<h2
+  class="heading__toc"
+  >Cours supplémentaires</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="fr/language" %}
+  {% include toc-additional-lessons.html prefix="fr/extra" %}
+</ul>
 
 
 ## Et ensuite?
@@ -97,6 +104,3 @@ détails. Nous vous donnons quelques recommandations dans la dernière leçon
 Enfin, nous proposons une galerie de petits exemples montrant différents
 domaines, non couverts dans cette introduction, et différents packages LaTeX
 pour ces domaines.
-
-    
-{% include toc.html prefix="fr/extra" %}

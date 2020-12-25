@@ -4,7 +4,8 @@ lang: "fr"
 title: "Quelques particularités pour le français"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
 next: "extra-01"
-toc-anchor-text: "Quelques particularités pour le français"
+toc-anchor-text: "LaTeX en français"
+toc-description: "Quelques particularités pour le français"
 ---
 
 Les leçons précédentes vous ont déjà inculqué les notions essentielles,
