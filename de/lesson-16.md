@@ -2,6 +2,7 @@
 layout: "lesson"
 lang: "de"
 title: "Dokumentation und Hilfe finden"
+description: ""
 toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
