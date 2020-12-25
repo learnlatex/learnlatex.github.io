@@ -51,4 +51,4 @@ permalink: /en/
 
 ## Going further
 
-We cover getting more information in [the last lesson](./lesson-16), but it is worth saying now that getting access to a book about LaTeX is still the best way to learn the details. We give some recommendations in the last lesson.
+Getting a book about LaTeX is the best way to learn the details. We cover getting more information, along with book recommendations, in the [last lesson](./lesson-16).
