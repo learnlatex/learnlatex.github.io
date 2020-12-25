@@ -34,24 +34,22 @@ permalink: /ja/
   id="toc"
   >レッスン</h2>
 
-{% include toc-lessons.html  prefix="ja/lesson" %}
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
-### Additional lessons specific to learnlatex.org/ja
+{% include toc-lessons.html prefix="ja/lesson" %}
 
-{% include toc.html  prefix="ja/language" %}
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="ja/language" %}
+  {% include toc-additional-lessons.html prefix="ja/extra" %}
+</ul>
 
 
 ## Going further
 
-The focused lessons here are not meant to cover everything you'll ever need to
-know about LaTeX; we want to give you enough to get started and to _understand_
-examples and advice elsewhere. We cover getting more information in [the last
-lesson](lesson-16), but it's worth saying now that getting access to a book
-about LaTeX is still the  best way to learn the details. We've given some
-recommendations in the last lesson.
-
-Finally we offer a gallery of small examples showing
-a range of different subject areas not covered in this introduction,
-and different LaTeX packages in those areas.
-    
-{% include toc.html prefix="ja/extra" %}
+We cover getting more information in [the last lesson](./lesson-16), but it is worth saying now that getting access to a book about LaTeX is still the best way to learn the details. We give some recommendations in the last lesson.
