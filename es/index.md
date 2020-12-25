@@ -67,11 +67,20 @@ de LaTeX está correctamente actualizado.
   id="toc"
   >Lecciones</h2>
 
-{% include toc-lessons.html  prefix="es/lesson" %}
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
-### Lecciones adicionales específicas a learnlatex.org/es
+{% include toc-lessons.html prefix="es/lesson" %}
 
-{% include toc.html  prefix="es/language" %}
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="es/language" %}
+  {% include toc-additional-lessons.html prefix="es/extra" %}
+</ul>
 
 ## Para profundizar
 
@@ -85,5 +94,3 @@ recomendaremos algunos en la última lección.
 Por último, le ofrecemos una collección de pequeños ejemplos que muestran
 un abanico de diferentes áreas, que no se abordan en esta introducción,
 así como los diferentes paquetes de LaTeX asociados a estas áreas.
-    
-{% include toc.html prefix="es/extra" %}

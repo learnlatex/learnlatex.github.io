@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Ejemplos para ir más lejos"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 This course has given an overview of the core features of LaTeX.
