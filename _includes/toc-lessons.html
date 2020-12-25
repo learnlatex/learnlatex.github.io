@@ -19,7 +19,9 @@
                 {% assign pp = "-" | prepend: include.prefix %}
               {% endif %}
               {{ page.path | replace: '.md','' | replace: pp ,'' }}</span>
-              {{ page.toc-anchor-text }}
+            <span
+              class="lessons-toc__heading">
+              {{ page.toc-anchor-text }}</span>
           </h3>
           <span
             class="lessons-toc__description-text"
