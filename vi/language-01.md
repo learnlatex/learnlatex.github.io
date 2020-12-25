@@ -4,7 +4,8 @@ lang: "vi"
 title: "Gõ tiếng Việt trong LaTeX"
 description: "Bài này sẽ hướng dẫn cách sử dụng LaTeX để gõ các văn bản bằng tiếng Việt, và giới thiệu các gói lệnh liên quan."
 next: "extra-01"
-toc-anchor-text: "Gõ tiếng Việt trong LaTeX"
+toc-anchor-text: "Anchor"
+toc-description: "Gõ tiếng Việt trong LaTeX"
 ---
 
 ## Gõ tiếng Việt với pdf{{ site.latex }}

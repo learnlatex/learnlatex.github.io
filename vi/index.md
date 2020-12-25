@@ -29,6 +29,26 @@ permalink: /vi/
   </section>
 </div>
 
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >Các bài học</h2>
+
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+
+{% include toc-lessons.html prefix="vi/lesson" %}
+
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="vi/language" %}
+  {% include toc-additional-lessons.html prefix="vi/extra" %}
+</ul>
+
 # Chào mừng đến với learnlatex.org!
 
 Trang này được tạo ra với mục đích giúp bạn có được những kiến thức cơ bản nhất
@@ -68,17 +88,6 @@ online được nêu ở đây, do đó nếu bạn gặp những lỗi lạ, h�
 TeX của máy bạn đã được update lên bản mới nhất chưa. (Sau này bạn sẽ thấy việc
 update LaTeX rất quan trọng.)
 
-<h2 
-  class="heading__toc" 
-  id="toc"
-  >Các bài học</h2>
-
-{% include toc-lessons.html  prefix="vi/lesson" %}
-
-### Các bài học dành riêng cho tiếng Việt
-
-{% include toc.html  prefix="vi/language" %}
-
 
 ## Đi xa hơn
 
@@ -93,5 +102,3 @@ cuối này.
 Cuối cùng, chúng tôi cung cấp một tập hợp những ví dụ ngắn cho thấy những chức
 năng khác nhau của từng gói lệnh trong những lĩnh vực khác nhau không được nói
 tới trong khóa này.
-    
-{% include toc.html prefix="vi/extra" %}
