@@ -48,16 +48,21 @@ Alle Beispiele basieren auf einer aktuellen LaTeX-Installation. Sie funktioniere
   id="toc"
   >Lektionen</h2>
 
-{% include toc-lessons.html  prefix="de/lesson" %}
+<p
+  class="paragraph__toc"
+  >Wir haben für jede Lektion eine Seite mit <b>mehr Informationen zu diesem Thema</b> hinzugefügt. Diese zusätzlichen Informationen unterstützen Sie, wenn Sie Details benötigen, sollten Ihnen jedoch nicht im Weg stehen, wenn Sie dies nicht tun.</p>
 
-### Zusätzliche Lektionen speziell für learnlatex.org/de
+{% include toc-lessons.html prefix="de/lesson" %}
 
-{% include toc.html  prefix="de/language" %}
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="de/language" %}
+  {% include toc-additional-lessons.html prefix="de/extra" %}
+</ul>
 
 ## So geht es weiter
 
-Die gezielten Einheiten hier erheben nicht den Anspruch, alles abzudecken, was Sie jemals über LaTeX wissen müssen. Wir wollen Ihnen aber genügend Informationen geben, um starten zu können und die Beispiele und Hinweise andernorts zu _verstehen_. Einige Hinweise finden Sie in [der letzten Lektion](lesson-16), aber es sollte an dieser Stelle auch gesagt werden, das ein Buch über LaTeX immer noch der beste Weg ist, mehr zu einzelnen Details zu erfahren. Einige Buchempfehlungen finden Sie ebenfalls in der letzten Lektion.
-
-Schließlich bieten wir auch noch eine Galerie mit kleinen Beispielen aus vielen anderen Bereichen an, die in dieser Einführung nicht behandeln werden können, ergänzt durch verschiedenen LaTeX-Pakete aus diesen Bereichen.
-
-{% include toc.html prefix="de/extra" %}
+Die gezielten Einheiten hier erheben nicht den Anspruch, alles abzudecken, was Sie jemals über LaTeX wissen müssen. Wir wollen Ihnen aber genügend Informationen geben, um starten zu können und die Beispiele und Hinweise andernorts zu _verstehen_. Einige Hinweise finden Sie in [der letzten Lektion](./lesson-16), aber es sollte an dieser Stelle auch gesagt werden, das ein Buch über LaTeX immer noch der beste Weg ist, mehr zu einzelnen Details zu erfahren. Einige Buchempfehlungen finden Sie ebenfalls in der letzten Lektion.
