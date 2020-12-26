@@ -1,0 +1,80 @@
+<nav 
+  class="primary-navigation">
+
+  <div 
+    class="wrapper">
+
+    <ul 
+      class="primary-navigation__list">
+
+      <li 
+        class="primary-navigation__list-item">
+        
+        {% assign lx="/" | prepend: page.lang | prepend: "/" %}
+        {% if page.url == lx %}
+          <a 
+            class="primary-navigation__anchor primary-navigation__anchor--active" 
+            href="/{{ page.lang }}/"
+            >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
+        {% else %}
+          <a 
+            class="primary-navigation__anchor" 
+            href="/{{ page.lang }}/"
+            >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
+        {% endif %}
+      </li>
+
+      <li 
+        class="primary-navigation__list-item">
+        
+        {% if page.url contains '/mission' %}
+          <a 
+            class="primary-navigation__anchor primary-navigation__anchor--active" 
+            href="./mission"
+            >{{ site.data.translations['navigational-elements_mission'][page.lang] }}</a>
+
+        {% else %}
+          <a 
+            class="primary-navigation__anchor" 
+            href="./mission"
+            >{{ site.data.translations['navigational-elements_mission'][page.lang] }}</a>
+        {% endif %}
+      </li>
+      
+      <li 
+        class="primary-navigation__list-item">
+        
+        {% if page.url contains '/help' %}
+          <a 
+            class="primary-navigation__anchor primary-navigation__anchor--active" 
+            href="./help"
+            >{{ site.data.translations['navigational-elements_help'][page.lang] }}</a>
+        {% else %}
+          <a 
+            class="primary-navigation__anchor" 
+            href="./help"
+            >{{ site.data.translations['navigational-elements_help'][page.lang] }}</a>
+        {% endif %}
+      </li>
+      
+      <li 
+        class="primary-navigation__list-item">
+        
+        {% if page.url contains '/contact' %}
+          <a 
+            class="primary-navigation__anchor primary-navigation__anchor--active" 
+            href="./contact"
+            >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
+        {% else %}
+          <a 
+            class="primary-navigation__anchor" 
+            href="./contact"
+            >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
+        {% endif %}
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>

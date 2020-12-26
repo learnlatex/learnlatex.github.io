@@ -282,6 +282,8 @@ hr {
       display: inline;
       select,
       &__select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
         appearance: none;
         background: var(--color_blue-1);
         border: none;
@@ -361,21 +363,12 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
 /*----------------------------------------------------------------------------*/
 /*  # HEADER                                                                  */
 /*----------------------------------------------------------------------------*/
 .website-header {
   background: var(--color_blue-0);
-  margin: 0 0 2.5rem 0;
+  margin: 0;
   padding: 1.8rem 0 1.3rem;
 
   a,
@@ -402,25 +395,60 @@ hr {
 
 
 /*----------------------------------------------------------------------------*/
-/*  # BREADCRUMB                                                              */
+/*  # PRIMARY NAVIGATION                                                      */
 /*----------------------------------------------------------------------------*/
-.breadcrumb {
-  display: block;
-  margin: 1.2rem 0;
+.primary-navigation {
+  background: var(--color_grey-0);
+  padding: .6rem 0 .7rem;
+  margin: 0 0 2.5rem;
+  @media (max-width: 390px) {
+    padding: .5rem 0 .7rem;
+  }
+  @media (max-width: 340px) {
+    padding: .4rem 0 .7rem;
+  }
+  &__list {
+    list-style: none;
+    line-height: .8em;
+    margin: 0;
+  }
+  &__list-item {
+    display: inline;
+    padding: 0 .5rem 0 0;
+    &:last-child {
+      padding: 0;
+    }
+  }
+  &__anchor {
+    color: var(--color_blue-0);
+    font-size: 1rem;
+    padding: .5rem 0 .2rem;
+    text-decoration: none;
+    @media (max-width: 390px) {
+      font-size: .9rem;
+      padding: .4rem 0 .2rem;
+    }
+    @media (max-width: 340px) {
+      font-size: .8rem;
+      padding: .3rem 0 .2rem;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      color: var(--color_black-0);
+    }
+    &--active {
+      color: var(--color_black-0);
+      border-bottom: .1rem solid var(--color_blue-4);
+      &:focus,
+      &:hover {
+        color: var(--color_black-0);
+        border-bottom: .1rem solid var(--color_blue-4);
+      }
+    }
+  }
 }
 
-.breadcrumb a:link,
-.breadcrumb a:visited {
-  color: var(--color_blue-0);
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.breadcrumb a:hover,
-.breadcrumb a:active,
-.breadcrumb a:focus {
-  text-decoration: underline;
-}
 
 
 
