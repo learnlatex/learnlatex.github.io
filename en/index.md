@@ -18,14 +18,14 @@ permalink: /en/
       >Introduction</h3>
     <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
     and because it is not a single program. Our aim is to help you get 
-    started with LaTeX from the basics, installation, to writing code, without 
+    started with LaTeX: the basics, installation, writing code, without 
     trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
   </section>
   <section>
     <h3
       class="text-columns__heading"
       >How it works</h3>
-      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+      <p>We have taken the most important things you will need to know, and made them into short <em>16 short lessons</em>. which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run the examples in this website. <a href="./help#examples">More on examples &hellip;</a></p>
   </section>
 </div>
 

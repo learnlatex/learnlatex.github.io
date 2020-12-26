@@ -8,7 +8,6 @@ permalink: /en/help
 
 # Help
 
----
 
 ## Navigating the site
 
@@ -98,7 +97,7 @@ make to the example are lost if you move off the page.
 
 If you have a TeX system installed locally, then you may copy the
 example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor (ctrl-A Ctrl-C
+using select all keyboard shortcuts in the editor (Ctrl-A Ctrl-C
 in windows for example). This will place the code in your operating system
 clipboard so you can start a blank document using your local
 editor, and paste in the text.
