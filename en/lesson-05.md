@@ -40,12 +40,17 @@ given first in square brackets, is used in many LaTeX commands.
 LaTeX is supplied with a set of standard classes, all of which look similar
 but with some variations:
 
-- `article`: short documents without chapters
-- `report`: longer documents with chapters, single-sided printing
-- `book`: longer documents with chapters, double-sided printing, with
-  front- and back-matter (for example an index)
-- `letter`: correspondence with no sections
-- `slides`: for presentations (but see below)
+- `article`  
+  short documents without chapters
+- `report`  
+  longer documents with chapters, single-sided printing
+- `book`  
+  longer documents with chapters, double-sided printing, with front- and 
+  back-matter (for example an index)
+- `letter`  
+  correspondence with no sections
+- `slides`  
+  for presentations (but see below)
 
 The `article`, `report` and `book` classes have very similar commands available,
 as we've already seen. When writing a `letter`, the commands available are
