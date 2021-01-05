@@ -2,10 +2,6 @@
 ---
 @import "reset";
 
-/*----------------------------------------------------------------------------*/
-/*  # ROOT ELEMENT: DEFAULT FONT SIZE                                         */
-/*----------------------------------------------------------------------------*/
-
 
 
 
@@ -20,9 +16,7 @@
   --color_black-2: rgba(68, 68, 68, 1);     /* typo black                     */
   --color_blue-0: rgba(0, 73, 128, 1);      /* ci blue                        */
   --color_blue-1: rgba(0, 52, 92, 1);       /* offset blue                    */
-  --color_blue-2: rgba(44, 59, 99, 1);
-  --color_blue-3: rgba(2, 119, 158, 1); 
-  --color_blue-4: rgba(72, 120, 168, 1);
+  --color_blue-2: rgba(72, 120, 168, 1);    /* offset blue                    */
   --color_blue-5: rgba(31, 87, 164, 1);     /* typo blue                      */
   --color_grey-0: rgba(242, 242, 242, 1);
   --color_grey-1: rgba(227, 227, 229, 1);
@@ -189,7 +183,7 @@ html {
 /*  # WRAPPER                                                                 */
 /*----------------------------------------------------------------------------*/
 .wrapper {
-  max-width: 95%;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 0 0.5rem;
 }
@@ -284,7 +278,7 @@ hr {
         appearance: none;
         background: var(--color_blue-1);
         border: none;
-        border-left: 0.004rem solid var(--color_blue-4);
+        border-left: 0.004rem solid var(--color_blue-2);
         color: var(--color_grey-2);
         display: inline;
         font-family: var(--font_default-light);
@@ -436,11 +430,11 @@ hr {
     }
     &--active {
       color: var(--color_black-0);
-      border-bottom: .1rem solid var(--color_blue-4);
+      border-bottom: .1rem solid var(--color_blue-2);
       &:focus,
       &:hover {
         color: var(--color_black-0);
-        border-bottom: .1rem solid var(--color_blue-4);
+        border-bottom: .1rem solid var(--color_blue-2);
       }
     }
   }
@@ -654,6 +648,10 @@ hr {
       font-size: .9rem;
       b {
         font-size: var(--font_default-regular-semicondensed);
+      }
+      @media (min-width: 840px) {
+        font-family: var(--font_default-light);
+        font-size: 1rem;
       }
     }
   }
