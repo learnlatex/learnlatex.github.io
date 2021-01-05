@@ -1,0 +1,30 @@
+<ul 
+  class="lessons-toc">
+  {% assign splitprefix = include.prefix | split: "/" %}
+  {% assign l = splitprefix[0] %}
+  {%- for page in site.pages | sort: 'path' -%}
+    {%- if page.path contains include.prefix %}
+      <li
+        class="lessons-toc__list-item">
+        <a 
+          class="lessons-toc__anchor"
+          href="{{page.path | replace: '.md','' | remove_first: l | remove_first: "/"}}">
+        <span
+          class="lessons-toc__numbering">
+          {% if page.path contains "-0" %}
+            {% assign pp = "-0" | prepend: include.prefix %}
+          {% else %}
+            {% assign pp = "-" | prepend: include.prefix %}
+          {% endif %}
+          {{ page.path | replace: '.md','' | replace: pp ,'' }}
+        </span> &mdash; <span
+          class="lessons-toc__link-text"
+          >{{ page.toc-anchor-text }}</span>
+        <span
+          class="lessons-toc__description-text"
+          >{{ page.toc-description }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>
