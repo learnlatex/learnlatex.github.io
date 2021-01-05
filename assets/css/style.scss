@@ -530,7 +530,7 @@ hr {
     }
   }
   .language-icon {
-    margin: -3.74rem 0 1.4rem;
+    margin: -3.9rem 0 1.4rem;
   }
   .language-navigation {
     background: none;
@@ -1113,7 +1113,7 @@ iframe {
   padding: 1rem 0 1.4rem;
   text-align: center;
   .language-icon {
-    margin: -2.1rem 0 1.4rem;
+    margin: -2.25rem 0 1.4rem;
   }
   .language-navigation {
     background: none;
@@ -1174,16 +1174,18 @@ iframe {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
-
-.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+  .focusable {
+    &:active,
+    &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      white-space: inherit;
+      width: auto;
+    }
+  }
 }
 
 /* Allow the Skip link to be focusable when navigated to via keyboard */
