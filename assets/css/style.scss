@@ -10,7 +10,7 @@
 /*  # ROOT ELEMENT: VARIABLES - COLORS                                        */
 /*----------------------------------------------------------------------------*/
 :root {
-  --color_white-0: rgba(255, 255, 255, 1);
+  --color_white-0: rgba(255, 255, 255, 1);  /* ci white                       */
   --color_black-0: rgba(0, 0, 0, 1);        /* ci black                       */
   --color_black-1: rgba(34, 34, 34, 1);     /* typo black                     */
   --color_black-2: rgba(68, 68, 68, 1);     /* typo black                     */
@@ -18,14 +18,11 @@
   --color_blue-1: rgba(0, 52, 92, 1);       /* offset blue                    */
   --color_blue-2: rgba(72, 120, 168, 1);    /* offset blue                    */
   --color_blue-5: rgba(31, 87, 164, 1);     /* typo blue                      */
-  --color_grey-0: rgba(242, 242, 242, 1);
-  --color_grey-1: rgba(227, 227, 229, 1);
-  --color_grey-2: rgba(204, 204, 204, 1);
-  --color_grey-3: rgba(88, 88, 88, 1);
-  --color_grey-5: rgba(168, 168, 168, 1);
-  --color_grey-6: rgba(234, 234, 234, 1);
-  --color_grey-7: rgba(237, 237, 237, 1);   /* ci grey                        */
-  --color_grey-8: rgba(246, 246, 246, 1);
+  --color_grey-0: rgba(242, 242, 242, 1);   /* ci grey                        */
+  --color_grey-1: rgba(227, 227, 229, 1);   /* offset grey                    */
+  --color_grey-2: rgba(204, 204, 204, 1);   /* offset grey                    */
+  --color_grey-3: rgba(88, 88, 88, 1);      /* typo grey                      */
+  --color_grey-4: rgba(237, 237, 237, 1);   /* offset grey                    */
 }
 
 
@@ -1025,7 +1022,7 @@ iframe {
 /*  # FOOTER                                                                  */
 /*----------------------------------------------------------------------------*/
 .website-footer {
-  background: var(--color_grey-7);
+  background: var(--color_grey-4);
   font-size: 0.9rem;
   margin: 3.5rem 0 0;
   padding: 0;
