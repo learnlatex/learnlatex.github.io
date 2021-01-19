@@ -22,7 +22,7 @@ un conjunto de programas y archivos "en segundo plano", necesarios para que LaTe
 funcione, pero la mayor parte del tiempo no necesitará "ejecutarlos" directamente.   
 
 Hay dos principales distribuciones del sistema TeX disponibles hoy en día,
-[MiKTeX](https://www.miktex.org) y [TeX Live](https://tug.org/texlive). Ambas
+[MiKTeX](https://miktex.org/) y [TeX Live](https://tug.org/texlive). Ambas
 disponibles para Windows, macOs y Linux.
 MikTeX tiene un gran arraigo en Windows;
 en macOS, TeX Live está incluida en una colección más amplia llamada [MacTeX](http://www.tug.org/mactex/).

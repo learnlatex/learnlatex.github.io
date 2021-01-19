@@ -23,7 +23,7 @@ of 'behind the scenes' programs and files that are needed to make LaTeX work, bu
 most of the time you don't directly 'run' this.
 
 There are two major TeX systems available today,
-[MiKTeX](https://www.miktex.org) and [TeX Live](https://tug.org/texlive). Both
+[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
 are available for Windows, macOS and Linux.
 MiKTeX has a strong background on Windows;
 on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).

@@ -24,7 +24,7 @@ necessários para fazer o LaTeX funcionar, mas na maioria das vezes você não
 precisa executá-los diretamente.
 
 Existem dois grandes sistemas TeX disponíveis atualmente,
-[MiKTeX](https://www.miktex.org) e [TeX Live](https://tug.org/texlive).  Ambos
+[MiKTeX](https://miktex.org/) e [TeX Live](https://tug.org/texlive).  Ambos
 disponíveis para Windows, macOS e Linux.  O MiKTeX é mais utilizado no Windows;
 no macOS, o TeX Live é distribuído em uma coleção maior chamada
 [MacTeX](http://www.tug.org/mactex/).

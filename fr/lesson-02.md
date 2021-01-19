@@ -24,7 +24,7 @@ système TeX est un ensemble de programmes et de fichiers qui vont rester
 « en coulisses » (vous n'aurez pas à les appeler directement), mais qui sont
 nécessaires pour faire fonctionner LaTeX.
 
-Il existe aujourd'hui deux grands systèmes TeX, [MiKTeX](https://www.miktex.org)
+Il existe aujourd'hui deux grands systèmes TeX, [MiKTeX](https://miktex.org/)
 et [TeX Live](https://tug.org/texlive). Tous deux sont disponibles pour Windows,
 MacOS et Linux. MiKTeX est tout de même plutôt orienté vers Windows ; pour
 MacOS, TeX Live est inclus dans une collection plus vaste appelée

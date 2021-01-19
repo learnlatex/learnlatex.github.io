@@ -23,7 +23,7 @@ Phần cốt lõi của làm việc với LaTeX là có một hệ thống TeX. 
 tập hợp của những chương trình và tệp cần thiết để LaTeX có thể chạy được dù
 thông thường bạn không trực tiếp 'chạy' những chương trình này.
 
-Ngày nay có hai hệ thống TeX chính, đó là [MiKTeX](https://www.miktex.org) và
+Ngày nay có hai hệ thống TeX chính, đó là [MiKTeX](https://miktex.org/) và
 [TeX Live](https://tug.org/texlive). Cả hai đều dùng được trên cả Windows, macOS
 và Linux. MiKTeX rất phù hợp cho Windows; trên macOS thì TeX Live được phân phối
 trong một hệ thống lớn hơn được gọi là [MacTeX](https://www.tug.org/mactex/).
