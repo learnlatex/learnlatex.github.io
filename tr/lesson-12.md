@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "Citations and references"
 description: "This lesson show the basics of reference databases and how to build your own, how to use this databases in your documents using the two major workflows available, and how to choose between them."
 toc-anchor-text: "Citations & references"

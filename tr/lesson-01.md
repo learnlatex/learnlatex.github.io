@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "What LaTeX is and how it works"
 description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
 toc-anchor-text: "LaTeX basics"

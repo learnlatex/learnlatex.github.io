@@ -1,5 +1,5 @@
 ---
-lang: "en"
+lang: "tr"
 title: Mission
 permalink: /tr/mission
 ---

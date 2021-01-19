@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "More on: Working with LaTeX"
 description: "This lesson gives more detail on what LaTeX is and the engines it runs on."
 toc-anchor-text: "More on: Working with LaTeX"

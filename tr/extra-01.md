@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "Examples for further study"
 description: "This lesson shows assorted examples of other popular packages that were not covered in the main lessons."
 toc-anchor-text: "Anchor"

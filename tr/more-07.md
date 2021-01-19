@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "More on: Including graphics and making things 'float'"
 description: "This lesson gives details on how better name and store graphics files to be used with LaTeX, and how you can make your own graphics from within LaTeX."
 toc-anchor-text: "More on: Including graphics and making things 'float'"

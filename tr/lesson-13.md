@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "Structuring longer documents"
 description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
 toc-anchor-text: "Structuring sources"

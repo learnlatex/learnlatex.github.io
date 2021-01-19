@@ -1,5 +1,5 @@
 ---
-lang: "en"
+lang: "tr"
 title: "Using the learnlatex.org site"
 description: "This page explains the learnlatex.org website itself and how to best make use of it."
 permalink: /tr/help

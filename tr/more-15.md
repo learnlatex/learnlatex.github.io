@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "More on: Dealing with errors"
 description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
 toc-anchor-text: "More on: Dealing with errors"

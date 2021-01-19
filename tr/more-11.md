@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "More on: Formatting: fonts and spacing"
 description: "This lesson shows how to suppress the paragraph intentation for a single paragraph."
 toc-anchor-text: "More on: Formatting: fonts and spacing"

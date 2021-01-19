@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "Language-specifics for English"
 description: "This lesson shows language-specific details for typesetting text in English."
 next: "extra-01"

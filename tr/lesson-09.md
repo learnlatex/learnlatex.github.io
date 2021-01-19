@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "Cross-referencing"
 description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
 toc-anchor-text: "Cross-referencing"

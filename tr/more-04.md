@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "More on: Logical structure"
 description: "This lesson shows how to set the document title, and how to make description lists."
 toc-anchor-text: "More on: Logical structure"

@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "tr"
 title: "More on: Using document classes to influence design"
 description: "This lesson gives information on more specialized document classes for LaTeX."
 toc-anchor-text: "More on: Using document classes to influence design"
