@@ -12,7 +12,7 @@ Lo más seguro es nombrar sus imágenes de la manera más simple, sin usar espac
 Por ejemplo, si desea organizar sus archivos guardando todas sus
 imágenes en un subdirectorio, entonces le recomendamos algo del tipo 
 `\includegraphics[width=30pt]{pix/mom.png}` 
-será portable y a prueba de cambios en el futuro.  
+será portable y a prueba de cambios en el futuro.
 
 La presencia de espacios en los nombres de archivo ha sido algo tradicionalmente problemático, pero 
 actualmente es en general posible. Sin embargo, si hay espacios en un nombre, y tiene
@@ -89,7 +89,7 @@ grandes espacios en blanco en su documento.
 
 ## Otros tipos de objetos flotantes
 
-[Veremos pronto](lección-08) que podemos poner tablas en objetos flotantes; irán 
+[Veremos pronto](lesson-08) que podemos poner tablas en objetos flotantes; irán 
 en el interior de un entorno `table`. Sin embargo, no _estamos_ obligados a poner las imágenes 
 en el entorno `figure` o las tablas en el entorno `table`; esto es sólo una convención.
 
