@@ -16,7 +16,7 @@ source "https://rubygems.org"
 gem "minima"
 
 # GITHUB PAGES
-# remove the "gem "jekyll"" above and uncomment the line below.
+# remove the "gem "jekyll" above and uncomment the line below.
 # To upgrade, run `bundle update github-pages`.
 gem 'github-pages', group: :jekyll_plugins
 
