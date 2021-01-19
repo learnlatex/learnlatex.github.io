@@ -16,7 +16,7 @@ The content of this website is available under the
 license. That means you can use the material as long as you say where it came
 from and let others do the same.
 
-See [LICENSE](LICENSE) for details.
+See [LICENSE](../LICENSE) for details.
 
 ## Code Examples
 

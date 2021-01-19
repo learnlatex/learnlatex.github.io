@@ -37,7 +37,7 @@ Também há ocasiões em que ênfase não é o mesmo que itálico;  por exemplo,
 apresentações, cores são geralmente uma opção melhor.  Com marcação lógica, não
 temos que nos preocupar com os detalhes no corpo do documento.
 
-Vamos ver sobre [formatação manual mais adiante](lession-11), mas para o
+Vamos ver sobre [formatação manual mais adiante](lesson-11), mas para o
 momento vamos adicionar `\textbf` aos comandos que conhecemos:  ele deixa texto
 negrito.
 

@@ -1,5 +1,6 @@
 ---
-lang: "en"
+layout: "page"
+lang: "tr"
 title: Licenses
 permalink: /tr/licenses
 ---
@@ -15,12 +16,11 @@ The content of this website is available under the
 license. That means you can use the material as long as you say where it came
 from and let others do the same.
 
-See [LICENSE](LICENSE) for details.
+See [LICENSE](../LICENSE) for details.
 
 ## Code Examples
 
-The [code examples]({{ "/" | absolute_url | append: page.lang | append: "/" }}examples) 
-are licensed as
+The code examples are licensed as
 [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
 (No Rights Reserved). This is a legal text that is (essentially) the same as 
 Public Domain, at least in countries where that concept exists. The key point 
