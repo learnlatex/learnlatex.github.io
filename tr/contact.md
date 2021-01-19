@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: Contact
-permalink: /en/contact
+permalink: /tr/contact
 ---
 
 # Contact

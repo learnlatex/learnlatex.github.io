@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: Licenses
-permalink: /en/licenses
+permalink: /tr/licenses
 ---
 
 # Licenses

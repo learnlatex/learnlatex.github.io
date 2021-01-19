@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: Mission
-permalink: /en/mission
+permalink: /tr/mission
 ---
 
 # Learn LaTeX Mission
