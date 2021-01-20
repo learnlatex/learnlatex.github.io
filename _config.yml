@@ -64,12 +64,6 @@ defaults:
       label: "Français"
   -
     scope:
-      path: "de"
-    values:
-      lang: "de"
-      label: "German"
-  -
-    scope:
       path: "pt"
     values:
       lang: "pt"
@@ -80,15 +74,3 @@ defaults:
     values:
       lang: "vi"
       label: "Tiếng Việt"
-  -
-    scope:
-      path: "ja"
-    values:
-      lang: "ja"
-      label: "日本語"
-  -
-    scope:
-      path: "zh"
-    values:
-      lang: "zh"
-      label: "中文"
