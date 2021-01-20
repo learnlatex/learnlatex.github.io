@@ -1,7 +1,7 @@
 ---
 layout: "start"
 lang: "de"
-title: Learn LaTeX online for fee in beginner friendly lessons
+title: Learn LaTeX online for free in beginner friendly lessons
 description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
 permalink: /de/
 ---
@@ -13,12 +13,12 @@ permalink: /de/
 <div
   class="text-columns">
   <section>
-    <h3 
+    <h3
       class="text-columns__heading"
       >Introduction</h3>
-    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
-    and because it is not a single program. Our aim is to help you get 
-    started with LaTeX from the basics, installation, to writing code, without 
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor,
+    and because it is not a single program. Our aim is to help you get
+    started with LaTeX from the basics, installation, to writing code, without
     trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
   </section>
   <section>
@@ -43,8 +43,8 @@ Um Sie beim Lernen von LaTeX zu unterstützen, enthält diese Seite viele Beispi
 
 Alle Beispiele basieren auf einer aktuellen LaTeX-Installation. Sie funktionieren mit beiden verfügbaren Online-Angeboten. Wenn Sie seltsame Fehlermeldungen erhalten, prüfen Sie bitte, ob Ihre LaTeX-Installation aktuell ist.
 
-<h2 
-  class="heading__toc" 
+<h2
+  class="heading__toc"
   id="toc"
   >Lektionen</h2>
 
@@ -57,7 +57,7 @@ Alle Beispiele basieren auf einer aktuellen LaTeX-Installation. Sie funktioniere
 <h2
   class="heading__toc"
   >Additional lessons</h2>
-<ul 
+<ul
   class="lessons-toc">
   {% include toc-additional-lessons.html prefix="de/language" %}
   {% include toc-additional-lessons.html prefix="de/extra" %}

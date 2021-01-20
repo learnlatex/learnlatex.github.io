@@ -1,7 +1,7 @@
 ---
 layout: "start"
 lang: "vi"
-title: Learn LaTeX online for fee in beginner friendly lessons
+title: Learn LaTeX online for free in beginner friendly lessons
 description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
 permalink: /vi/
 ---
