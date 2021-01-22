@@ -57,7 +57,7 @@ and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/te
 is included in MacTeX.
 
 <p 
-  class="hint">Whichever editor you pick, we recommend you install it _after_ your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
+  class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
 
 ## Working online
 
