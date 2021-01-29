@@ -5,26 +5,22 @@ title: Licenses
 permalink: /fr/licenses
 ---
 
-# Licenses
+# Licences
 
-The [LearnLateX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+Le site web [LearnLateX]({{ "/" | absolute_url }}) utilise deux types de licences:
 
-## Content
 
-The content of this website is available under the
+## Contenu
+
+Le contenu de ce site web est disponible sous la licence
 [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license. That means you can use the material as long as you say where it came
-from and let others do the same.
+([résumé en français de cette licence](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)).
+Cela signifie que vous pouvez réutiliser son contenu à condition d'indiquer sa
+provenance et de laisser les autres faire de même.
 
-See [LICENSE](LICENSE) for details.
+Voir [LICENCE](LICENSE) pour plus de détails.
 
-## Code Examples
 
-The [code examples]({{ "/" | absolute_url | append: page.lang | append: "/" }}examples) 
-are licensed as
-[Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
-(No Rights Reserved). This is a legal text that is (essentially) the same as 
-Public Domain, at least in countries where that concept exists. The key point 
-is that _you can use the examples without any issues_. You _do not_ need to 
-reference them, you _do not_ need to share them when you modify them: you can 
-just use them.
+## Exemples de code
+
+Les exemples de code sont sous licence [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) (aucun droit réservé). Il s'agit d'un texte juridique qui est décrit (grosso modo) le régime du « domaine public », du moins dans les pays où ce concept existe. L'idée essentielle est que vous pouvez utiliser les exemples _sans aucune limitation_. Vous n'avez _pas besoin de citer leur source_, vous n'avez _pas besoin de les partager_ lorsque vous les modifiez : vous pouvez simplement les utiliser.

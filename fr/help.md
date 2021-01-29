@@ -51,14 +51,14 @@ de l'exécuter :
 
 * Utiliser le service Overleaf,
 * Utiliser un service LaTeX Online,
-* Utiliser votre installation locale de LaTeX.
+* Utiliser votre installation locale de TeX.
 
 
-##### Use the Overleaf service
+##### Utiliser le service Overleaf
 
-Utiliser le service **Overleaf**. Le bouton
-<button style="padding:0 1px;font-size:90%">Ouvrir dans Overleaf</button>
-soumettra le code à [Overleaf](https://www.overleaf.com/about).
+Overleaf is one of the most popular online LaTeX editing services. The 
+<button>Open in Overleaf</button> button, below the example, will submit the 
+code to [Overleaf](https://www.overleaf.com/about).
 
 Si vous n'avez pas encore de compte, ou si les détails de votre compte n'ont
 pas déjà été enregistrés dans votre navigateur, vous serez redirigé vers une
@@ -77,10 +77,9 @@ Overleaf a des fonctionnalités beaucoup plus évoluées que notre site web
 pour l'édition des documents, et vous pouvez enregistrer vos projets dans
 votre compte Overleaf pour y revenir plus tard.
 
-##### Use a LaTeX online service
+##### Utiliser un service LaTeX Online
 
-Utiliser le service **LaTeX Online**. Le bouton
-<button style="padding:0 1px;font-size:90%">LaTeX Online</button>
+Le bouton <button style="padding:0 1px;font-size:90%">LaTeX Online</button>
 soumettra le code au service [LaTeX CGI](https://latexcgi.xyz/)[^1].
 
 Le serveur _LaTeX CGI_ a été mis en place spécialement pour supporter ce
@@ -100,7 +99,7 @@ ni ce site ni les sites `latexcgi`, `latexonline.cc` ou `latex-on-http`
 ne proposent de mécanisme pour enregistrer votre document. Toute modification
 que vous auriez apportée à l'exemple est perdue quand vous quittez la page.
 
-##### Locally installed TeX system
+##### Utiliser une installation locale de TeX
 
 Si vous avez un système TeX installé localement, vous pouvez copier le code
 de l'exemple à partir de la page, soit en le sélectionnant explicitement,

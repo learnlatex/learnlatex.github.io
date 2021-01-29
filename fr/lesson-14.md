@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Choisir des polices de caractères et utiliser Unicode"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
 toc-anchor-text: "Fontes & moteurs Unicode"
 toc-description: "Choisir les polices de caractères et l'encodage."
 ---

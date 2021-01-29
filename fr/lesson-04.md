@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Structure logique de votre document"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre quelques commandes de mise en forme simple et les compare au balisage logique, avec les commandes de sectionnement et les listes."
 toc-anchor-text: "Structure logique"
 toc-description: "Structure et apparence visuelle."
 ---

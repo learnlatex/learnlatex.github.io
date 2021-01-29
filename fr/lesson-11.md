@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Mise en forme du texte: fontes et espacements"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
 toc-anchor-text: "Fontes & espacements"
 toc-description: "Mise en forme du texte."
 ---

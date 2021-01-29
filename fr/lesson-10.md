@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Écrire les mathématiques"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon présente le mode mathématique de LaTeX et comment mettre en forme des formules soit dans le texte, soit en-dehors, les extensions fournies par le package amsmath, et comment changer de police de caractères en mode mathématique."
 toc-anchor-text: "Écrire les mathématiques"
 toc-description: "Mode mathématique et notation mathématique."
 ---

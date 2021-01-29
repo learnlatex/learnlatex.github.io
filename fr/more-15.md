@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Comprendre les erreurs : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
 toc-anchor-text: "Comprendre les erreurs : pour aller plus loin"
 ---
 

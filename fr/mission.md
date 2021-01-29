@@ -1,12 +1,13 @@
 ---
 layout: "page"
 lang: "fr"
-title: Mission
+title: Objectifs de LearnLaTeX
 permalink: /fr/mission
 ---
 
-# Learn LaTeX Mission
+# Les objectifs de Learn LaTeX
 
-This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
 
-To do that, we have taken around 16 of the most important things you-F¢ll need to know, and made them into short ¡lessons¢. Each lesson is very focused, so they should not take too long to cover. In each lesson, we¢ve given examples of what you¢d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.-A
+Ce site web a pour but de vous aider à faire vos premiers pas avec LaTeX, un système de composition de documents conçu pour produire des documents de grande qualité. LaTeX peut faire un peu peur aux nouveaux utilisateurs car il ne ressemble pas à traitement de texte, et parce qu'il n'est pas constitué d'un programme unique. Notre objectif est de vous aider à démarrer, sans forcément tout vous montrer d'un seul coup.
+
+Pour ce faire, nous avons pris 16 des concepts les plus importants dont vous aurez besoin, et nous les avons transformés en 16 courtes leçons. Chaque leçon est très ciblée, et ne devrait donc pas prendre trop de temps à suivre. Dans chaque leçon, nous avons donné des exemples de ce que vous pourriez avoir à écrire, et vous pourrez tester ces exemples directement en ligne. Pour en savoir plus sur [le fonctionnement des exemple, consultez l'aide](./help#examples).

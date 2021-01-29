@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Utiliser les classes de documents pour changer l'apparence : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon décrit des classes de documents LaTeX plus spécialisées."
 toc-anchor-text: "Utiliser les classes de documents pour changer l'apparence : pour aller plus loin"
 ---
 

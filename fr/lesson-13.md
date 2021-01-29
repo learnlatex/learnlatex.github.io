@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "S'organiser pour écrire un document long"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
 toc-anchor-text: "Structurer son code source"
 toc-description: "Découper ses fichiers de façon logique."
 ---

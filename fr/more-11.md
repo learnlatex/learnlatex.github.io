@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Mise en forme du texte : fontes et espacements -- Pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows how to suppress the paragraph intentation for a single paragraph."
 toc-anchor-text: "Mise en forme du texte : fontes et espacements -- Pour aller plus loin"
 ---
 

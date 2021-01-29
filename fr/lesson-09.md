@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Références croisées"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre comment faire référence à des éléments numérotés dans un document, comme les figures, les tableaux et les sections."
 toc-anchor-text: "Références croisées"
 toc-description: "Faire référence à des figures, tableaux, etc."
 ---

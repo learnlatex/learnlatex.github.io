@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Inclure des images et les faire « flotter »"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre comment inclure des fichiers graphiques externes dans votre document, comment modifier leur apparence et comment les faire flotter automatiquement à l'endroit approprié du PDF."
 toc-anchor-text: "Les images"
 toc-description: "Apparance, espacement et positionnement."
 ---

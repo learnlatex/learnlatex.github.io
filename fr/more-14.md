@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Choisir des polices de caractères et utiliser Unicode : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows a basic example in Lua for users who want to write Lua code in their document."
 toc-anchor-text: "Choisir des polices de caractères et utiliser Unicode : pour aller plus loin"
 ---
 

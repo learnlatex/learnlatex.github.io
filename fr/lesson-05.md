@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Utiliser les classes de documents pour changer l'apparence"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon explique ce qu'est une classe de document et comment elle peut définit la présentation générale d'un document, et énumère les principales classes fournies par les distributions TeX."
 toc-anchor-text: "Classes de documents"
 toc-description: "Choisir la présentation générale du document."
 ---

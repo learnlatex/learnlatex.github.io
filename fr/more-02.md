@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Travailler avec LaTeX : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon donne plus de détails sur les moteurs sur lesquels LaTeX fonctionne."
 toc-anchor-text: "Travailler avec LaTeX : pour aller plus loin"
 ---
 

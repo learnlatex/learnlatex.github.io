@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Bibliographies et références biblio : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson gives details on non-English bibliographies, how to make references into hyperlinks, and highlights the main differences between BibTeX styles."
 toc-anchor-text: "Bibliographies et références biblio : pour aller plus loin"
 ---
 

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Travailler avec LaTeX"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon explique ce qu'est un système TeX et quels sont les plus courants, elle évoque les éditeurs de texte courament utilisés avec LaTeX, et les systèmes en ligne qui ont des éditeurs intégrés."
 toc-anchor-text: "Travailler avec LaTeX"
 toc-description: "Les systèmes TeX et les éditeurs de texte pour LaTeX."
 ---

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Écrire les mathématiques : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson show more amsmath alignment environments, how to make math bold, the math extension package mathtools, and using Unicode input for maths."
 toc-anchor-text: "Écrire les mathématiques : pour aller plus loin"
 ---
 

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Les tableaux"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre comment construire des tableaux en LaTeX, modifier l'alignement des cellules, tirer des traits pour séparer les cellules d'un tableau et fusionner des cellules."
 toc-anchor-text: "Les tableaux en LaTeX"
 toc-description: "Principes de base pour travailler avec des tableaux."
 ---

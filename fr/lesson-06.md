@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Étendre les possibilités de LaTeX avec des packages et des définitions"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre comment vous pouvez étendre LaTeX en fonction de vos besoins et modifier l'apparence de vos documents en utilisant différents packages, et explique comment définir vos propres commandes."
 toc-anchor-text: "Étendre LaTeX"
 toc-description: "Utiliser packages et définitions."
 ---

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Comprendre les erreurs"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
 toc-anchor-text: "Gestion des erreurs"
 toc-description: "Comprendre les comportements inattendus."
 ---
