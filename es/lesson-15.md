@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Analizando los errores"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Analizando los errores
 
 A diferencia de un típico procesador de textos, LaTeX dispone de un ciclo
 Editar/Ejecutar/Ver similar al de los compiladores de los lenguages de programación; 

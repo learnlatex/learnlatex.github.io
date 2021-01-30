@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Citas y referencias bibliográficas"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Citas y referencias bibliográficas
+
 <script>
 preincludes = {
  "pre1": {

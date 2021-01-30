@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Votre premier document avec LaTeX"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Les documents LaTeX"
+toc-description: "Un mélange de texte de commandes."
 ---
+
+# Votre premier document avec LaTeX
 
 Notre premier document LaTeX va être très simple : l'idée est de vous montrer
 à quoi ressemble un document et comment le compiler avec succès. C'est aussi

@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Étendre les possibilités de LaTeX avec des packages et des définitions : pour aller plus loin"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Étendre les possibilités de LaTeX avec des packages et des définitions : pour aller plus loin"
 ---
 
 ## Charger plusieurs packages à la fois

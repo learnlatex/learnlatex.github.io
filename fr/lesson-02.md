@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Travailler avec LaTeX"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Travailler avec LaTeX"
+toc-description: "Les systèmes TeX et les éditeurs de texte pour LaTeX."
 ---
+
+# Travailler avec LaTeX
 
 Contrairement à de nombreux programmes informatiques, LaTeX n'est pas une
 application unique. Au contraire, il est composé de plusieurs programmes
@@ -17,7 +24,7 @@ système TeX est un ensemble de programmes et de fichiers qui vont rester
 « en coulisses » (vous n'aurez pas à les appeler directement), mais qui sont
 nécessaires pour faire fonctionner LaTeX.
 
-Il existe aujourd'hui deux grands systèmes TeX, [MiKTeX](https://www.miktex.org)
+Il existe aujourd'hui deux grands systèmes TeX, [MiKTeX](https://miktex.org/)
 et [TeX Live](https://tug.org/texlive). Tous deux sont disponibles pour Windows,
 MacOS et Linux. MiKTeX est tout de même plutôt orienté vers Windows ; pour
 MacOS, TeX Live est inclus dans une collection plus vaste appelée

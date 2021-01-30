@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Inclure des images et les faire « flotter »"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Les images"
+toc-description: "Apparance, espacement et positionnement."
 ---
+
+# Inclure des images et les faire « flotter »
 
 ## Inclure des images
 

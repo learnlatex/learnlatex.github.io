@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Utiliser les classes de documents pour changer l'apparence"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Classes de documents"
+toc-description: "Choisir la présentation générale du document."
 ---
+
+# Utiliser les classes de documents pour changer l'apparence
 
 ## Qu'est-ce qu'une classe de document?
 
@@ -64,7 +71,7 @@ The text goes Here
 ```
 
 Regardez comment ``\\`` est utilisé pour séparer les lignes de l'adresse ; nous
-verrons plus tard [comment se fait la séparation des lignes](lesson 11).
+verrons plus tard [comment se fait la séparation des lignes](lesson-11).
 La classe `lettre` demande qu'on crée un nouvel environnement `letter` pour
 chaque lettre et propose des commandes spécialisées.
 

@@ -1,62 +1,55 @@
 ---
-title: learnlatex.org
+layout: "start"
+lang: "ja"
+title: Learn LaTeX online for free in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+permalink: /ja/
 ---
 
-## Welcome to learnlatex.org (Japanese)!
+# Learn LaTeX
 
-This site aims to help you take the first steps with LaTeX, a document
-preparation system designed to produce high-quality typeset output. LaTeX can
-be scary for new users as it is _not_ a word processor, and because it is not a
-single program. Our aim here is to help you get started without trying to show
-you _everything_ in one go.
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
 
-To do that, we have taken around 16 of the most important things you'll need to
-know, and made them into short 'lessons'. Each lesson is very focused, so they
-should not take too long to cover. In each lesson, we've given examples of what
-you'd write, and they are available so you can try them out online.
+<div
+  class="text-columns">
+  <section>
+    <h3 
+      class="text-columns__heading"
+      >Introduction</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
+    and because it is not a single program. Our aim is to help you get 
+    started with LaTeX from the basics, installation, to writing code, without 
+    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+  </section>
+  <section>
+    <h3
+      class="text-columns__heading"
+      >How it works</h3>
+      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+  </section>
+</div>
 
-We know that people will want to know more than we can cover in 16 short
-lessons. To help guide you when you need more information, we have therefore
-included a 'going further' page for each lesson. This extra information is
-there to support you when you need the detail, but should not get in your
-way if you do not.
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >レッスン</h2>
 
-## How the examples work
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
-To support your learning, the site includes lots of examples. In
-[Lesson 2](lesson-02) we will talk about how you use LaTeX both online and
-with a local installation on your PC. To get you started, we have set up
-our examples so you can edit and run them in this website. We
-have also linked them to [Overleaf](https://www.overleaf.com), one of the
-most popular online LaTeX editing services. But don't worry, you can also
-use the examples on your machine. You can read more about how to use the
-examples in [the help page](help).
+{% include toc-lessons.html prefix="ja/lesson" %}
 
-Our examples are based around using an up-to-date LaTeX installation. They
-all work with both of our online demonstration systems, so if you get
-errors with the examples we provide, you might want to check if your LaTeX
-system is up-to-date.
-
-## The lessons
-
-{% include toc.html  prefix="ja/lesson" %}
-
-### Additional lessons specific to learnlatex.org/ja
-
-{% include toc.html  prefix="ja/language" %}
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="ja/language" %}
+  {% include toc-additional-lessons.html prefix="ja/extra" %}
+</ul>
 
 
 ## Going further
 
-The focused lessons here are not meant to cover everything you'll ever need to
-know about LaTeX; we want to give you enough to get started and to _understand_
-examples and advice elsewhere. We cover getting more information in [the last
-lesson](lesson-16), but it's worth saying now that getting access to a book
-about LaTeX is still the  best way to learn the details. We've given some
-recommendations in the last lesson.
-
-Finally we offer a gallery of small examples showing
-a range of different subject areas not covered in this introduction,
-and different LaTeX packages in those areas.
-    
-{% include toc.html prefix="ja/extra" %}
+We cover getting more information in [the last lesson](./lesson-16), but it is worth saying now that getting access to a book about LaTeX is still the best way to learn the details. We give some recommendations in the last lesson.

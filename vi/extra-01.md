@@ -1,5 +1,11 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Những ví dụ chuyên sâu hơn"
+description: "Một vài ví dụ cho các gói lệnh LaTeX nâng cao, được dùng cho các
+ngành và các mục đích chuyên sâu hơn."
+toc-anchor-text: "Anchor"
+toc-description: "Những ví dụ chuyên sâu hơn"
 ---
 
 Khóa này cung cấp một cái nhìn tổng quan về những tính năng của LaTeX. Ngoài

@@ -1,6 +1,14 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Citações e referências"
+description: "Esta lição mostra o básico sobre bancos de referências e como construir o seu próprio, como usar esse banco de referências no seu documento usando os dois principais métodos disponíveis, e como escolher entre eles."
+toc-anchor-text: "Citações & referências"
+toc-description: "Trabalhando com bancos de referências."
 ---
+
+# Citações e referências
+
 <script>
 preincludes = {
  "pre1": {

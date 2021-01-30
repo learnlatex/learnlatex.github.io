@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Comprendre les erreurs"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Gestion des erreurs"
+toc-description: "Comprendre les comportements inattendus."
 ---
+
+# Comprendre les erreurs
 
 Contrairement à un système de traitement de texte typique, LaTeX a un cycle
 d'édition/exécution/visualisation plus proche de ce qu'on fait avec un

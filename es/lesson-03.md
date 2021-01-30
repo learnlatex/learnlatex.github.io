@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Su primer documento en LaTeX"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Su primer documento en LaTeX
 
 Nuestro primer documento va a ser muy sencillo: la idea es mostrarle
 a qué se asemeja un documento y cómo componerlo correctamente. También será su

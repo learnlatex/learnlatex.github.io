@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Citações e referências"
+description: "Esta lição dá mais detalhes sobre bibliografia em outros idiomas, como transformar referências em link, e apresenta as principais diferenças entre estilos do BibTeX."
+toc-anchor-text: "Veja mais sobre: Citações e referências"
 ---
 
 ## Organização alfabética em outros idiomas

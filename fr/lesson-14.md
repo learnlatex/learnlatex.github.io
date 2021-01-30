@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Choisir des polices de caractères et utiliser Unicode"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Fontes & moteurs Unicode"
+toc-description: "Choisir les polices de caractères et l'encodage."
 ---
+
+# Choisir des polices de caractères et utiliser Unicode
 
 Lorsque TeX et LaTeX ont commencé à être largement utilisés, ils ne traitaient
 en général que les langues européennes, même s'il était déjà possible d'utiliser

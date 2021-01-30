@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Mở rộng LaTeX bằng các gói lệnh và định nghĩa các lệnh mới"
+description: "Những kiến thức bổ sung về các gói lệnh và các cách định nghĩa lệnh mới."
+toc-anchor-text: "Bổ sung: Mở rộng LaTeX"
 ---
 
 ## Khai báo nhiều gói lệnh khác nhau

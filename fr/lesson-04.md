@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Structure logique de votre document"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Structure logique"
+toc-description: "Structure et apparence visuelle."
 ---
+
+# Structure logique de votre document
 
 LaTeX vous permet de vous concentrer sur la structure logique de votre document,
 et vous laisse en même temps la possibilité de choisir son apparence. La plupart
@@ -38,7 +45,7 @@ meilleurs choix. Avec le balisage logique, nous n'avons pas à nous soucier de c
 détail dans le corps du document, ce sera géré automatiquement, ou bien nous
 pourrons décider de ça plus tard, en modifiant un seul paramètre.
 
-Nous parlerons [du formatage manuel plus tard](lesson 11), mais pour l'instant
+Nous parlerons [du formatage manuel plus tard](lesson-11), mais pour l'instant
 nous ajoutons `\textbf` aux commandes que nous connaissons : il met le texte
 en gras.
 

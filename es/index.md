@@ -1,14 +1,41 @@
 ---
-title: learnlatex.org
+layout: "start"
+lang: "es"
+title: Learn LaTeX online for free in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+permalink: /es/
 ---
 
-## ¡Bienvenido a learnlatex.org!
+# Learn LaTeX
+
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+
+<div
+  class="text-columns">
+  <section>
+    <h3 
+      class="text-columns__heading"
+      >Introduction</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
+    and because it is not a single program. Our aim is to help you get 
+    started with LaTeX from the basics, installation, to writing code, without 
+    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+  </section>
+  <section>
+    <h3
+      class="text-columns__heading"
+      >How it works</h3>
+      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+  </section>
+</div>
+
+# ¡Bienvenido a learnlatex.org!
 
 Este sitio web tiene como objetivo ayudarle en sus primeros pasos en LaTeX,
 un sistema de elaboración de documentos que permite obtener una alta calidad 
 tipográfica. LaTeX puede dar miedo a los nuevos usuarios, ya que no es un procesador 
 de textos y al no serlo no es sólo un programa. Nuestro objetivo es ayudarle a 
-dar sus primeros pasos sin intentar mostrarle _todo_ de una sola vez.  
+dar sus primeros pasos sin intentar mostrarle _todo_ de una sola vez.
 
 Para ello, hemos seleccionado 16 de los temas más importantes que necesitará 
 conocer y los hemos convertido en pequeñas "lecciones". Cada lección es muy 
@@ -28,20 +55,32 @@ ejemplos que puede editar y ejecutar dede el sitio web. También hemos añadido
 un enlace a [Overleaf](https://www.overleaf.com), uno de los servicios más
 populares de edición de LaTeX en línea. Pero no se preocupe, también podrá
 usar los ejemplos en su ordenador. Puede leer más, sobre cómo usar los ejemplos
-en [la página de ayuda](help).  
+en [la página de ayuda](help).
 
 Nuestros ejemplos están pensados para una instalación de LaTeX actualizada.
 Funcionan bien con nuestros dos sistemas de demostración en línea, con lo que
 si obtiene errores con los ejemplos disponibles, quizá deba verificar si su sistema
 de LaTeX está correctamente actualizado.
 
-## Lecciones
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >Lecciones</h2>
 
-{% include toc.html  prefix="es/lesson" %}
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
-### Lecciones adicionales específicas a learnlatex.org/es
+{% include toc-lessons.html prefix="es/lesson" %}
 
-{% include toc.html  prefix="es/language" %}
+<h2
+  class="heading__toc"
+  >Lecciones adicionales</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="es/language" %}
+  {% include toc-additional-lessons.html prefix="es/extra" %}
+</ul>
 
 ## Para profundizar
 
@@ -55,5 +94,3 @@ recomendaremos algunos en la última lección.
 Por último, le ofrecemos una collección de pequeños ejemplos que muestran
 un abanico de diferentes áreas, que no se abordan en esta introducción,
 así como los diferentes paquetes de LaTeX asociados a estas áreas.
-    
-{% include toc.html prefix="es/extra" %}

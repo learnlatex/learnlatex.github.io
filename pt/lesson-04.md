@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Estrutura Lógica"
+description: "Esta lição mostra alguns comandos básicos de formatação, e compara-os com formatação semântica usando comandos de secionamento e listas."
+toc-anchor-text: "Estrutura Lógica"
+toc-description: "Estrutura e representação visual."
 ---
+
+# Estrutura Lógica
 
 O LaTeX possui meios de você focar na estrutura lógica do seu documento, assim
 como lhe permite modificar a aparência diretamente.  A maioria das vezes, é
@@ -30,7 +37,7 @@ Também há ocasiões em que ênfase não é o mesmo que itálico;  por exemplo,
 apresentações, cores são geralmente uma opção melhor.  Com marcação lógica, não
 temos que nos preocupar com os detalhes no corpo do documento.
 
-Vamos ver sobre [formatação manual mais adiante](lession-11), mas para o
+Vamos ver sobre [formatação manual mais adiante](lesson-11), mas para o
 momento vamos adicionar `\textbf` aos comandos que conhecemos:  ele deixa texto
 negrito.
 

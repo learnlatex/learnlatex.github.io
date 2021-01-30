@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Làm việc với LaTeX"
+description: "Vài nét về định dạng TeX và các chương trình biên dịch gốc."
+toc-anchor-text: "Bổ sung: Làm việc với LaTeX"
 ---
 
 Đối với hầu hết các ví dụ, ta sẽ không dùng chương trình `latex` mà sẽ dùng một

@@ -1,0 +1,24 @@
+{% assign splitprefix = include.prefix | split: "/" %}
+{% assign l = splitprefix[0] %}
+{% for page in site.pages | sort: 'path' %}
+  {% if page.path contains include.prefix %}
+    <li
+      class="lessons-toc__list-item">
+      <a 
+        class="lessons-toc__anchor"
+        href="{{page.path | replace: '.md','' | remove_first: l | remove_first: "/"}}">
+        <h3
+          class="lessons-toc__link-text">
+          <span
+            class="lessons-toc__numbering">+</span>
+          <span
+            class="lessons-toc__heading">
+            {{ page.toc-anchor-text }}</span>
+        </h3>
+        <span
+          class="lessons-toc__description-text"
+          >{{ page.toc-description }}</span>
+      </a>
+    </li>
+  {% endif %}
+{% endfor %}

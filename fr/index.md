@@ -1,8 +1,35 @@
 ---
-title: learnlatex.org
+layout: "start"
+lang: "fr"
+title: Learn LaTeX online for free in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+permalink: /fr/
 ---
 
-## Bienvenue sur learnlatex.org (version française)!
+# Learn LaTeX
+
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+
+<div
+  class="text-columns">
+  <section>
+    <h3 
+      class="text-columns__heading"
+      >Introduction</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
+    and because it is not a single program. Our aim is to help you get 
+    started with LaTeX from the basics, installation, to writing code, without 
+    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+  </section>
+  <section>
+    <h3
+      class="text-columns__heading"
+      >Comment ça marche</h3>
+      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+  </section>
+</div>
+
+# Bienvenue sur learnlatex.org (version française)!
 
 Ce site web a pour but de vous aider à faire vos premiers pas avec LaTeX,
 un système de composition de documents conçu pour produire des documents
@@ -43,15 +70,24 @@ Tous fonctionnent avec nos deux systèmes de démonstration en ligne, donc si
 vous obtenez des erreurs avec les exemples que nous fournissons, vérifiez
 d'abord que votre système LaTeX est à jour.
 
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >Leçons</h2>
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
-## Les leçons principales
+{% include toc-lessons.html prefix="fr/lesson" %}
 
-{% include toc.html  prefix="fr/lesson" %}
-
-
-### Leçons spécifiques au français
-
-{% include toc.html  prefix="fr/language" %}
+<h2
+  class="heading__toc"
+  >Cours supplémentaires</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="fr/language" %}
+  {% include toc-additional-lessons.html prefix="fr/extra" %}
+</ul>
 
 
 ## Et ensuite?
@@ -68,6 +104,3 @@ détails. Nous vous donnons quelques recommandations dans la dernière leçon
 Enfin, nous proposons une galerie de petits exemples montrant différents
 domaines, non couverts dans cette introduction, et différents packages LaTeX
 pour ces domaines.
-
-    
-{% include toc.html prefix="fr/extra" %}

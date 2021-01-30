@@ -1,7 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Tiếp cận các hướng dẫn sử dụng gói và tìm kiếm sự trợ giúp"
+description: "Bài này sẽ hướng dẫn bạn cách tiếp cận các tài liệu liên quan đến LaTeX, cũng như cách bạn có thể tìm kiếm sự trợ giúp qua các diễn đàn LaTeX trên Internet."
+toc-anchor-text: "Tài liệu và các sự trợ giúp"
+toc-description: "Đọc tài liệu về LaTeX và tìm kiếm sự trợ giúp"
 ---
 
+# Tiếp cận các hướng dẫn sử dụng gói và tìm kiếm sự trợ giúp
 
 Có nhiều cách để đọc hướng dẫn sử dụng của một gói hay lớp văn bản nào đó.
 

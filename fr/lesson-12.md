@@ -1,6 +1,14 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Bibliographies et références biblio"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Bibliographies et références biblio"
+toc-description: "Travailler avec des bases de données bibliographiques."
 ---
+
+# Bibliographies et références biblio
+
 <script>
 preincludes = {
  "pre1": {

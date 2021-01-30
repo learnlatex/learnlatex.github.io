@@ -1,0 +1,39 @@
+<nav
+  class="language-navigation">
+  <div 
+    class="wrapper">
+    <!--<p>{{ site.data.translations['change-language'][page.lang] }}:</p>-->
+    <ul
+      class="language-navigation__list">
+        <!-- Loop over languages in _data/languages.yml -->
+        {%- for language in site.data.languages -%}
+          <!-- Assigns language code to currently selected language -->
+          {% assign lx="/" | prepend: language.language-code %}
+          <!-- Checks URL path for currently selected language to mark it as 'selected' -->
+          {%- if page.path contains lx -%}
+            {% assign lang = language.language-code %}
+            <li
+              class="language-navigation__list-item">
+              <a 
+                class="language-navigation__anchor--active"
+                href="/{{language.language-code}}/"
+                hreflang="{{ language.language-code }}"
+                lang="{{language.language-code}}"
+                title="{{language.label-english}}">{{language.label-regional}}</a>
+            </li>
+            <!-- Languages not found in URL path, will not be marked as 'selected' -->
+            {%- else -%}
+            <li
+              class="language-navigation__list-item">
+              <a 
+                class="language-navigation__anchor"
+                href="/{{language.language-code}}/"
+                hreflang="{{ language.language-code }}"
+                lang="{{language.language-code}}"
+                title="{{language.label-english}}">{{ language.label-regional }}</a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+    </ul>
+  </div>
+</nav>

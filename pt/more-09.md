@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Referências cruzadas"
+description: "Esta lição mostra como você pode transformar referências cruzadas em links carregando o pacote hyperref."
+toc-anchor-text: "Veja mais sobre: Referências cruzadas"
 ---
 
 ## Transformando referências em links

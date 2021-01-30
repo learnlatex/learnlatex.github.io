@@ -1,8 +1,55 @@
 ---
-title: learnlatex.org
+layout: "start"
+lang: "vi"
+title: Learn LaTeX online for free in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+permalink: /vi/
 ---
 
-## Chào mừng đến với learnlatex.org!
+# Learn LaTeX
+
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+
+<div
+  class="text-columns">
+  <section>
+    <h3 
+      class="text-columns__heading"
+      >Giới thiệu</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
+    and because it is not a single program. Our aim is to help you get 
+    started with LaTeX from the basics, installation, to writing code, without 
+    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+  </section>
+  <section>
+    <h3
+      class="text-columns__heading"
+      >Làm thế nào nó hoạt động</h3>
+      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+  </section>
+</div>
+
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >Các bài học</h2>
+
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+
+{% include toc-lessons.html prefix="vi/lesson" %}
+
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="vi/language" %}
+  {% include toc-additional-lessons.html prefix="vi/extra" %}
+</ul>
+
+# Chào mừng đến với learnlatex.org!
 
 Trang này được tạo ra với mục đích giúp bạn có được những kiến thức cơ bản nhất
 về LaTeX, một hệ thống sắp chữ được thiết kế để tạo ra những văn bản có chất
@@ -41,14 +88,6 @@ online được nêu ở đây, do đó nếu bạn gặp những lỗi lạ, h�
 TeX của máy bạn đã được update lên bản mới nhất chưa. (Sau này bạn sẽ thấy việc
 update LaTeX rất quan trọng.)
 
-## Các bài học
-
-{% include toc.html  prefix="vi/lesson" %}
-
-### Các bài học dành riêng cho tiếng Việt
-
-{% include toc.html  prefix="vi/language" %}
-
 
 ## Đi xa hơn
 
@@ -63,5 +102,3 @@ cuối này.
 Cuối cùng, chúng tôi cung cấp một tập hợp những ví dụ ngắn cho thấy những chức
 năng khác nhau của từng gói lệnh trong những lĩnh vực khác nhau không được nói
 tới trong khóa này.
-    
-{% include toc.html prefix="vi/extra" %}

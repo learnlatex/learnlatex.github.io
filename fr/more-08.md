@@ -1,5 +1,8 @@
 ---
-title: "Les tables : pour aller plus loin"
+layout: "lesson"
+lang: "fr"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "More on: Tables"
 ---
 
 ## D'autres options dans le préambule des tableaux

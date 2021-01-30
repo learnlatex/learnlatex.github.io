@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Các công thức toán học"
+description: "Các thao tác nâng cao với chế độ toán trong LaTeX."
+toc-anchor-text: "Bổ sung: Công thức toán học"
 ---
 
 ## Các kiểu căn chỉnh nâng cao của `amsmath`

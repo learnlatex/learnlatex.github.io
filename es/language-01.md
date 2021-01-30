@@ -1,6 +1,10 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Especificaciones de idioma en español"
 next: "extra-01"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 ## Adaptaciones básicas para escribir un texto en español

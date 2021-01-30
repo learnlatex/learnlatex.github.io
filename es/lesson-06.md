@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Extendendiendo LaTeX usando paquetes"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Extendendiendo LaTeX usando paquetes
 
 Después de haber definido el tipo de documento, en el preámbulo, usted podrá modificar 
 las funcionalidades disponibles en LaTeX añadiendo uno o más *paquetes*. Éstos pueden:

@@ -1,6 +1,14 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "S'organiser pour écrire un document long"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+toc-anchor-text: "Structurer son code source"
+toc-description: "Découper ses fichiers de façon logique."
 ---
+
+# S'organiser pour écrire un document long
+
 <script>
 preincludes = {
  "pre0": {

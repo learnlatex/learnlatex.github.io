@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Tiếp cận các hướng dẫn sử dụng gói và tìm kiếm sự trợ giúp"
+description: "Tài liệu về mã nguồn cốt lõi của hệ thống LaTeX."
+toc-anchor-text: "Bổ sung: Tài liệu và các sự trợ giúp"
 ---
 
 ## Mã của lõi {{site.latex}}
