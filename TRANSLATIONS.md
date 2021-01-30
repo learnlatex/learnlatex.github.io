@@ -56,19 +56,22 @@ pages.
 6. Update each section of `_data/languages.yml` with the an entry for
    each of the fixed strings in the site. So for example the entry for "Next Lesson"
    should be ammended to have a `zz:` entry:
+
    ```
-navigational-elements_next:
-  de: "Nächste Lektion"
-  en: "Next lesson"
-  es: "Siguiente lección"
-  fr: "Leçon suivante…"
-  ja: "次のレッスン"
-  pt: "Próxima lição"
-  tr: "Next lesson"
-  vi: "Bài tiếp theo"
-  zh: "Missing"
-  zz: "YOUR TRANSLATION HERE"
+   navigational-elements_next:
+     de: "Nächste Lektion"
+     en: "Next lesson"
+     es: "Siguiente lección"
+     fr: "Leçon suivante…"
+     ja: "次のレッスン"
+     pt: "Próxima lição"
+     tr: "Next lesson"
+     vi: "Bài tiếp theo"
+     zh: "Missing"
+     zz: "YOUR TRANSLATION HERE"
    ```
+   
+7. Update  `_data/map.yml` with a `zz:` entry for each page.
 
 At this point your language should appear in the drop down menu to
 select languages, and the navigation between pages. Obviously the main
