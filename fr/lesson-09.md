@@ -9,14 +9,18 @@ toc-description: "Faire référence à des figures, tableaux, etc."
 
 # Références croisées
 
-## Étiquettes et références : comment fonctionnent `\label` et `\ref`?
+<span class="summary">Cette leçon montre comment faire référence à des éléments numérotés dans un document, comme les figures, les tableaux et les sections.</span>
 
 Quand on rédige un document, quelle que soit sa longueur, on fait souvent
 référence à des éléments tels que des figures, des tableaux ou des équations.
 Heureusement, LaTeX peut ajouter automatiquement les bonnes références ;
-il suffit de quelques commande simples. Pour que LaTeX se souvienne d'un endroit
-dans votre document, vous devez l'« étiqueter », puis à d'autres endroits,
-vous y ferez référence:
+il suffit de quelques commande simples.
+
+
+## Étiquettes et références : comment fonctionnent `\label` et `\ref`?
+
+Pour que LaTeX se souvienne d'un endroit dans votre document, vous devez
+l'« étiqueter », puis à d'autres endroits, vous y ferez référence:
 
 ```latex
 \documentclass{article}

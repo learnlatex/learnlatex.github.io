@@ -2,20 +2,23 @@
 layout: "lesson"
 lang: "fr"
 title: "Mise en forme du texte: fontes et espacements"
-description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
+description: "Cette leçon montre comment modifier les différents espacements dans un document et comment ajouter des instructions de formatage explicites dans le code source."
 toc-anchor-text: "Fontes & espacements"
 toc-description: "Mise en forme du texte."
 ---
 
 # Mise en forme du texte: fontes et espacements
 
-## Espacement des paragraphes
+<span class="summary">Cette leçon montre comment modifier les différents espacements dans un document et comment ajouter des instructions de formatage explicites dans le code source.</span>
 
 Nous avons déjà vu qu'une ligne blanche dans votre saisie génèrera un nouveau
 paragraphe en LaTeX. Conformément aux usages typographiques, ce nouveau
-paragraphe commence par une indentation (ou retrait de paragraphe). Un autre
-style possible est de ne pas avoir d'indentations pour les paragraphes, mais
-plutôt d'avoir une « ligne blanche » entre eux. On peut obtenir ce résultat
+paragraphe commence par une indentation (ou retrait de paragraphe).
+
+## Espacement des paragraphes
+
+Un autre style possible est de ne pas avoir d'indentations pour les paragraphes,
+mais plutôt d'avoir une « ligne blanche » entre eux. On peut obtenir ce résultat
 en utilisant le package `parskip`.
 
 ```latex

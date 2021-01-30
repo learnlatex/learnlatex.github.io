@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Comprendre les erreurs : pour aller plus loin"
-description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
+description: "Cette leçon montre quelques autres erreurs courantes en LaTeX et explique comment les erreurs peuvent s'enchaîner ou rester silencieuses."
 toc-anchor-text: "Comprendre les erreurs : pour aller plus loin"
 ---
 

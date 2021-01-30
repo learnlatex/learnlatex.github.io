@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "S'organiser pour écrire un document long : pour aller plus loin"
-description: "This lesson shows how to make an index, and how to use the imakeidx package to automate the process."
+description: "Cette leçon montre comment construire un index, et comment automatiser le processus avec le package imakeidx."
 toc-anchor-text: "S'organiser pour écrire un document long : pour aller plus loin"
 ---
 

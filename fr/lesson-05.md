@@ -9,6 +9,8 @@ toc-description: "Choisir la présentation générale du document."
 
 # Utiliser les classes de documents pour changer l'apparence
 
+<span class="summary">Cette leçon explique ce qu'est une classe de document et comment elle peut définit la présentation générale d'un document, et énumère les principales classes fournies par les distributions TeX.</span>
+
 ## Qu'est-ce qu'une classe de document?
 
 Vous avez peut-être remarqué que tous les documents LaTeX que nous avons écrits

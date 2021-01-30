@@ -50,15 +50,15 @@ Que le code-source de l'exemple ait été modifié ou non, il existe trois mani�
 de l'exécuter :
 
 * Utiliser le service Overleaf,
-* Utiliser un service LaTeX Online,
+* Utiliser un service LaTeX en ligne,
 * Utiliser votre installation locale de TeX.
 
 
 ##### Utiliser le service Overleaf
 
-Overleaf is one of the most popular online LaTeX editing services. The 
-<button>Open in Overleaf</button> button, below the example, will submit the 
-code to [Overleaf](https://www.overleaf.com/about).
+Overleaf est un des services les plus apprécié pour travailler par le web avec
+LaTeX. The bouton <button>Ouvrir dans Overleaf</button>, présent sous l'exemple,
+soumet le code à [Overleaf](https://www.overleaf.com/about).
 
 Si vous n'avez pas encore de compte, ou si les détails de votre compte n'ont
 pas déjà été enregistrés dans votre navigateur, vous serez redirigé vers une
@@ -77,10 +77,10 @@ Overleaf a des fonctionnalités beaucoup plus évoluées que notre site web
 pour l'édition des documents, et vous pouvez enregistrer vos projets dans
 votre compte Overleaf pour y revenir plus tard.
 
-##### Utiliser un service LaTeX Online
+##### Utiliser un service LaTeX en ligne
 
-Le bouton <button style="padding:0 1px;font-size:90%">LaTeX Online</button>
-soumettra le code au service [LaTeX CGI](https://latexcgi.xyz/)[^1].
+Le bouton <button>LaTeX Online</button>, présent sous l'exemple,
+soumet le code au service [LaTeX CGI](https://latexcgi.xyz/)[^1].
 
 Le serveur _LaTeX CGI_ a été mis en place spécialement pour supporter ce
 site, et utilise notamment [PDF.js](https://mozilla.github.io/pdf.js/) pour
@@ -89,11 +89,10 @@ lecteur PDF intégré.
 
 Le document PDF résultant (ou une partie du journal des erreurs)
 sera affiché dans la page, immédiatement sous l'exemple. Un bouton
-<button style="padding:0 1px;font-size:90%">Fermer l'affichage</button>
-apparaîtra pour que vous puissiez effacer cette sortie (ou la laisser
-en place et suivre le reste de la leçon).
+<button>Fermer l'affichage</button> apparaîtra pour que vous puissiez effacer
+cette sortie (ou la laisser en place et suivre le reste de la leçon).
 
-Notez que **LaTeX Online** ne nécessite ni connexion ou ni inscription
+Notez que **LaTeX CGI** ne nécessite ni connexion ou ni inscription
 d'aucune sorte, ce qui est très pratique pour les petits exemples, mais
 ni ce site ni les sites `latexcgi`, `latexonline.cc` ou `latex-on-http`
 ne proposent de mécanisme pour enregistrer votre document. Toute modification
@@ -108,7 +107,7 @@ Windows par exemple). Lancez alors votre éditeur local, et collez le code
 de l'exemple dans un document vierge.
 
 
-### En cas de problème...
+### En cas de problème&hellip;
 
 Our examples are based around using an up-to-date LaTeX installation. They all 
 work with both of our online demonstration systems, so if you get errors with 

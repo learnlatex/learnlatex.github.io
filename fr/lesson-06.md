@@ -9,6 +9,8 @@ toc-description: "Utiliser packages et définitions."
 
 # Étendre les possibilités de LaTeX avec des packages et des définitions
 
+<span class="summary">Cette leçon montre comment vous pouvez étendre LaTeX en fonction de vos besoins et modifier l'apparence de vos documents en utilisant différents packages, et explique comment définir vos propres commandes.</span>
+
 Après avoir déclaré une classe, dans le préambule, vous pouvez modifier les
 fonctionnalités de LaTeX en ajoutant un ou plusieurs _packages_ (ou « paquets »).
 Ceux-ci peuvent :

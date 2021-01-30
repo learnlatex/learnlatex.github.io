@@ -9,13 +9,18 @@ toc-description: "Mode mathématique et notation mathématique."
 
 # Écrire les mathématiques
 
+<span class="summary">Cette leçon présente le mode mathématique de LaTeX et comment mettre en forme des formules soit dans le texte, soit en-dehors, les extensions fournies par le package amsmath, et comment changer de police de caractères en mode mathématique.</span>
+
+Savoir mettre en forme des équations, quelle que soit leur complexité, c'est une
+des forces de LaTeX. Vous pouvez écrire les formules mathématiques en LaTeX de
+manière logique et relativement simple dans ce que l'on appelle le
+« mode mathématique ». 
+
 ## Le mode mathématique
 
-Vous pouvez écrire les formules mathématiques en LaTeX de manière logique et
-relativement simple dans ce que l'on appelle le « mode mathématique ». En mode
-mathématique, les espaces sont ignorées et l'espacement automatique des
-caractères est (quasiment toujours) correct. Il existe deux formes de mode
-mathématique : « en ligne » et « en exergue ».
+En mode mathématique, les espaces sont ignorées et l'espacement automatique
+des caractères est (quasiment toujours) correct. Il existe deux formes de
+mode mathématique : « en ligne » et « en exergue ».
 
 ```latex
 \documentclass{article}
@@ -38,9 +43,11 @@ Vous pouvez voir ailleurs des formules mathématiques similaires à celles de
 LaTeX, par exemple avec le système MathJax, qui sert à écrire des formules
 dans des pages web. La syntaxe de ces systèmes peut être légèrement différente
 de la syntaxe utilisée par LaTeX car ils n'utilisent pas LaTeX pour la
-compilation. Nos exemples sont tous en code LaTeX correct, donc si vous voyez
+compilation.
+
+<p class="hint">Nos exemples sont tous en code LaTeX correct, donc si vous voyez
 quelque chose de différent dans un autre contexte, c'est peut-être parce que
-ça n'utilise pas vraiment LaTeX.
+ça n'utilise pas vraiment LaTeX.</p>
 
 
 ## Mode mathématique « en ligne » et notations

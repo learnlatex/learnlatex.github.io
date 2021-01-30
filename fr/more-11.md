@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Mise en forme du texte : fontes et espacements -- Pour aller plus loin"
-description: "This lesson shows how to suppress the paragraph intentation for a single paragraph."
+description: "Cette leçon montre comment supprimer l'indentation pour un seul paragraphe."
 toc-anchor-text: "Mise en forme du texte : fontes et espacements -- Pour aller plus loin"
 ---
 
