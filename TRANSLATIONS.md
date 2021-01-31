@@ -37,14 +37,10 @@ pages.
 
 
 1. Make a new directory `zz` as a copy of the english pages in `en`, including the subdirectory `en/includes`
-2. Copy top level `index.md` into the `zz` directory and change references to `en` to `zz`.
-   **Delete** the `zz/index.html` which would force a redirect to the English home page.
-   (See the examples for existing languages, such as `de`).
-
-3. Add the two letter code `zz` to the `langs:` array in the `_config.yml` file.
-4. Translate the fixed strings in `zz/includes/buttons.js` into your language.
+2. Add the two letter code `zz` to the `langs:` array in the `_config.yml` file.
+3. Translate the fixed strings in `zz/includes/buttons.js` into your language.
    This is for the buttons used in examples such as "Open in Overleaf".
-5. Add a new enty in `_data/languages.yml` This should specify the
+4. Add a new enty in `_data/languages.yml` This should specify the
    code, the name of your language in the language and in English, for example
    the French entry is
 
@@ -53,7 +49,7 @@ pages.
      label-regional: Français
      label-english: French
    ```
-6. Update each section of `_data/languages.yml` with the an entry for
+5. Update each section of `_data/languages.yml` with the an entry for
    each of the fixed strings in the site. So for example the entry for "Next Lesson"
    should be ammended to have a `zz:` entry:
 
@@ -71,7 +67,7 @@ pages.
      zz: "YOUR TRANSLATION HERE"
    ```
    
-7. Update  `_data/map.yml` with a `zz:` entry for each page.
+6. Update  `_data/map.yml` with a `zz:` entry for each page.
 
 At this point your language should appear in the drop down menu to
 select languages, and the navigation between pages. Obviously the main
