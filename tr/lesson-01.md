@@ -1,45 +1,28 @@
 ---
 layout: "lesson"
 lang: "tr"
-title: "What LaTeX is and how it works"
-description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
-toc-anchor-text: "LaTeX basics"
-toc-description: "What LaTeX is and how it works."
+title: "LaTeX nedir ve nasıl çalışır"
+description: "Bu ders LaTeX'in temellerini ve alışılagelmiş kelime işlemcilerden Microsoft Word veya LibreOffice'e kıyasla nasıl çalıştığını açıklar."
+toc-anchor-text: "LaTeX' Temelleri"
+toc-description: "LaTeX nedir ve nasıl çalışır"
 ---
 
-# What LaTeX is and how it works
+# LaTeX nedir ve nasıl çalışır
 
-Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
+Microsoft Word veya LibreOffice Writer gibi alışılagelmiş kelime işlemcilerinin aksine LaTeX WYSIWYG ('What You See Is What You Get') [tr: "Ne görüyorsan onu alırsın"] mantığı ile çalışmaz. Kullanıcı, düz bir metni biçimleyerek zenginleştirir. HTML benzeri bir şekilde, yapılan bu biçimlendirme LaTeX'e metnin belirli kısımlarının karakteri hakkında bilgi verir.
 
-Take for example the element  `<h2>`  indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+Örneğin, HTML'de yeni bir bölüm (section) oluşturan `<h2>` tagini ele alalım. Bu işlev için LaTeX'de `\section` komutu kullanılmaktadır.
 
-## The {{ site.latex }} workflow
+## {{ site.latex }} iş akışı
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+LaTeX dosyaları dökümanın kendisinden ziyade dökümanı oluşturan komutları içerdiğinden dolayı, başkalarıyla paylaşılmak istenildiği zaman genellikle dosyanın kendisi gönderilmez. Bunun yerine, LaTeX kaynağı yazıldıktan sonra PDF çıktısı elde etmek için dosya üzerinde LaTeX programı çalıştırılır (genellilke `pdflatex`). Başkalarına göndermek istediğiniz dosya elde ettiğiniz PDF olacaktır.
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+İnsanlar bu sürece farklı isimler verebiliyor. LaTeX kullanmak programlama yapmaya benzediği için bazıları 'derlemek' (compiling) kelimesini kullansa da 'karakter dizmek' (typesetting) daha doğru olur.
 
-## Multiple {{ site.latex }} runs
+## Çoklu dizgilemek
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+Basit dökümanlarda dosyanızı bir kere dizgilemek (typeset) PDF oluşturmak için yeterlidir. Ancak dökümana  referanslar, alıntılar, içindekiler vs. eklerseniz LaTeX'i ardışık birden fazla kez çalıştırmak durumunda kalabilirsiniz. Bu durum söz konusu olduğunda bildireceğiz.
 
-## {{ site.latex }} or pdf{{ site.latex }} or ...
+## {{ site.latex }} mi, pdf{{ site.latex }} mi ...?
 
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+[Bir sonraki derste](lesson-02) LaTeX'in aslında tek bir programdan ibaret olmadığını göreceğiz. İşleri karıştırmamak adına, şimdilik PDF çıktıları elde edebileceğiniz tek bir LaTeX programına odaklanıyoruz, `pdfLaTeX`. Dersin ilerleyen kısımlarında diğer LaTeX programlarına ve bunları neden kullanmak isteyebileceğinize de değineceğiz.

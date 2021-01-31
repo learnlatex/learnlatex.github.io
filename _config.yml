@@ -74,3 +74,9 @@ defaults:
     values:
       lang: "vi"
       label: "Tiếng Việt"
+  -
+    scope:
+      path: "tr"
+    values:
+      lang: "tr"
+      label: "Türkçe"
