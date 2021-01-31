@@ -33,6 +33,7 @@ the page like this:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
 Example text.
 \end{document}

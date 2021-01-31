@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Écrire les mathématiques : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre d'autres environnements d'alignement fournis par amsmath, comment écrire les mathématiques en gras, le package mathtools, et l'utilisation d'Unicode pour les mathématiques."
 toc-anchor-text: "Écrire les mathématiques : pour aller plus loin"
 ---
 

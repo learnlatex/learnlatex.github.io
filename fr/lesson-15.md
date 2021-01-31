@@ -2,12 +2,14 @@
 layout: "lesson"
 lang: "fr"
 title: "Comprendre les erreurs"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre certaines erreurs courantes dans les documents LaTeX, ce qu'elles signifient et comment les résoudre."
 toc-anchor-text: "Gestion des erreurs"
 toc-description: "Comprendre les comportements inattendus."
 ---
 
 # Comprendre les erreurs
+
+<span class="summary">Cette leçon montre certaines erreurs courantes dans les documents LaTeX, ce qu'elles signifient et comment les résoudre.</span>
 
 Contrairement à un système de traitement de texte typique, LaTeX a un cycle
 d'édition/exécution/visualisation plus proche de ce qu'on fait avec un
@@ -15,6 +17,8 @@ compilateur destiné à un langage de programmation ; comme en programmation,
 l'utilisateur peut faire des erreurs pendant la saisie et doit donc lire et
 comprendre les messages d'erreur renvoyés par le système pour corriger
 rapidement les problèmes.
+
+## Erreurs courantes
 
 Cette page donne des exemples de quelques erreurs courantes. Chaque exemple
 d'erreur comporte une explication sur la forme de son message.
@@ -24,7 +28,7 @@ si vous utilisez les fonctions d'édition de ce site web pour corriger les
 documents et résoudre les problèmes.
 
 
-## pdflatex not found
+### pdflatex not found
 
 Une première erreur, fréquente quand on commence, est :
 
@@ -49,7 +53,7 @@ est d'installer un _éditeur_ tel que TeXworks ou TeXShop mais sans installer un
 système TeX tel que TeX Live ou MiKTeX.
 
 
-## Anatomie d'un message d'erreur de {{ site.tex }}
+### Anatomie d'un message d'erreur de {{ site.tex }}
 
 ```latex
 \documentclass{article}
@@ -112,7 +116,7 @@ erreurs. Cela peut être spécialement trompeur quand on se retrouve avec :
 car cela donne l'impression que `\mycommand` n'est pas définie.
 
 
-## Accolades manquantes (ou en trop)
+### Accolades manquantes (ou en trop)
 
 ```latex
 \documentclass{article}
@@ -146,7 +150,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-## Fichiers manquants
+### Fichiers manquants
 
 ```latex
 \documentclass{article}
@@ -171,7 +175,7 @@ frappe comme ici peut être corrigée en rectifiant le nom du package ; si le
 fichier est vraiment manquant, il doit être installé sur le système.
 
 
-## Lignes vides en mode mathématique
+### Lignes vides en mode mathématique
 
 ```latex
 \documentclass{article}

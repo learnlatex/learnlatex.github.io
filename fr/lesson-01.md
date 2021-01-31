@@ -9,6 +9,8 @@ toc-description: "Qu'est-ce que LaTeX et comment ça marche."
 
 # Qu'est-ce que LaTeX, et comment ça marche?
 
+<span class="summary">Cette leçon explique les bases de ce qu'est LaTeX et comment il fonctionne par rapport aux traitements de texte courants tels que Microsoft Word ou LibreOffice Writer.</span>
+
 Contrairement aux traitements de texte courants tels que Microsoft Word ou
 LibreOffice Writer, LaTeX ne fournit pas lui-même de WYSIWYG (« _What You See
 Is What You Get_ », c'est-à-dire « ce que vous voyez est ce que vous obtenez »

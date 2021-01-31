@@ -1,7 +1,7 @@
 ---
 layout: "lesson"
 lang: "fr"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre d'autres façons de personnaliser un tableau en mettant en forme une colonne, en modifiant l'espacement et les filets, et d'autres packages étendant les fonctionnalités des tableaux."
 toc-anchor-text: "More on: Tables"
 ---
 

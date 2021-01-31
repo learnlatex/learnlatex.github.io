@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Quelques particularités pour le français"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre les spécificités pour composer avec LaTeX en français. Cela concerne surtout les motifs de césure et les caractères accentués."
 next: "extra-01"
 toc-anchor-text: "LaTeX en français"
 toc-description: "Quelques particularités pour le français"

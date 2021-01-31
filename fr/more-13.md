@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "S'organiser pour écrire un document long : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre comment construire un index, et comment automatiser le processus avec le package imakeidx."
 toc-anchor-text: "S'organiser pour écrire un document long : pour aller plus loin"
 ---
 

@@ -2,12 +2,14 @@
 layout: "lesson"
 lang: "fr"
 title: "Votre premier document avec LaTeX"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre la structure de base d'un document LaTeX, et comment en faire un fichier PDF, ainsi que les principaux caractères spéciaux utilisés pour contrôler LaTeX."
 toc-anchor-text: "Les documents LaTeX"
-toc-description: "Un mélange de texte de commandes."
+toc-description: "Un mélange de texte et de commandes."
 ---
 
 # Votre premier document avec LaTeX
+
+<span class="summary">Cette leçon montre la structure de base d'un document LaTeX, et comment en faire un fichier PDF, ainsi que les principaux caractères spéciaux utilisés pour contrôler LaTeX.</span>
 
 Notre premier document LaTeX va être très simple : l'idée est de vous montrer
 à quoi ressemble un document et comment le compiler avec succès. C'est aussi
@@ -16,11 +18,15 @@ votre première chance de [voir comment utiliser les exemples de
 
 Si vous utilisez une installation LaTeX locale, créez dans votre éditeur un
 nouveau fichier appelé `first.tex`, et copiez-collez le texte ci-dessous ou
-tapez-le. Si vous utilisez le système en ligne, vous pouvez simplement cliquer
-sur les boutons _LaTeX Online_ ou _Open in Overleaf_ dans l'exemple pour l'essayer !
-Nous vous suggérons d'essayer les options en ligne même si vous avez configuré
+tapez-le.
+
+Si vous utilisez le système en ligne, vous pouvez simplement cliquer
+sur les boutons ‘_LaTeX Online_’ ou ‘_Ouvrir dans Overleaf_’ dans l'exemple
+pour l'essayer !
+
+<p class="hint">Nous vous suggérons d'essayer les options en ligne même si vous avez configuré
 LaTeX localement ; c'est une bonne occasion de voir comment fonctionnent les
-différentes possibilités.
+différentes possibilités.</p>
 
 ```latex
 \documentclass{article}
@@ -64,6 +70,8 @@ fichier de _log_) ; il s'agit d'un fichier texte dont le nom se termine par
 en cas de problème, les utilisateurs experts de LaTeX vous demanderont souvent
 une copie de ce fichier journal.
 
+<p class="hint">On parle davantage des erreurs dans
+<a href="./lesson-15">la leçon 15</a>.</p>
 
 ## Ce qui s'est passé
 
@@ -86,9 +94,9 @@ site et sert à configurer l'encodage des polices.
 LaTeX a d'autres paires `\begin{...}` et `\end{...}` ; celles-ci sont appelées
 _environnements_. Vous devez les faire correspondre pour que pour chaque
 `\begin{xx}`, il y ait un `\end{xx}`. Si vous les emboîtez, alors vous devez
-avoir `\end{yy}` &hellip; `\end{xx}` pour correspondre à `\begin{xx}` &hellip; `\begin{yy}`,
-c'est-à-dire que les ouvertures et fermetures doivent se correspondre dans
-l'ordre.
+avoir `\end{yy}` &hellip; `\end{xx}` pour correspondre à `\begin{xx}` &hellip;
+`\begin{yy}`, c'est-à-dire que les ouvertures et fermetures doivent se
+correspondre dans l'ordre.
 
 On peut ajouter des commentaires à un fichier LaTeX en les faisant commencer par
 `%` ; utilisons cela pour montrer la structure :

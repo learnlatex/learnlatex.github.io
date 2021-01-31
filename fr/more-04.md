@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "fr"
 title: "Structure logique de votre document : pour aller plus loin"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis orci, faucibus eget sollicitudin vel, varius eget ipsum. Duis sed sodales leo."
+description: "Cette leçon montre comment définir le titre du document et comment saisir des listes descriptives."
 toc-anchor-text: "Structure logique de votre document : pour aller plus loin"
 ---
 
