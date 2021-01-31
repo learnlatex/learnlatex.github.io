@@ -38,9 +38,10 @@ pages.
 
 1. Make a new directory `zz` as a copy of the english pages in `en`, including the subdirectory `en/includes`
 2. Add the two letter code `zz` to the `langs:` array in the `_config.yml` file.
-3. Translate the fixed strings in `zz/includes/buttons.js` into your language.
+3. Change all instances of `en/` in `zz/index.md` to `zz/`
+4. Translate the fixed strings in `zz/includes/buttons.js` into your language.
    This is for the buttons used in examples such as "Open in Overleaf".
-4. Add a new enty in `_data/languages.yml` This should specify the
+5. Add a new enty in `_data/languages.yml` This should specify the
    code, the name of your language in the language and in English, for example
    the French entry is
 
@@ -49,7 +50,7 @@ pages.
      label-regional: Français
      label-english: French
    ```
-5. Update each section of `_data/languages.yml` with the an entry for
+6. Update each section of `_data/languages.yml` with the an entry for
    each of the fixed strings in the site. So for example the entry for "Next Lesson"
    should be ammended to have a `zz:` entry:
 
@@ -67,7 +68,7 @@ pages.
      zz: "YOUR TRANSLATION HERE"
    ```
    
-6. Update  `_data/map.yml` with a `zz:` entry for each page.
+7. Update  `_data/map.yml` with a `zz:` entry for each page.
 
 At this point your language should appear in the drop down menu to
 select languages, and the navigation between pages. Obviously the main
@@ -75,6 +76,11 @@ text is still English!
 
 
 ## Translating the pages
+
+## File Encoding
+Please ensure that all pages are in UTF-8 not a legacy encoding such
+as ISO-8859-1. The Jekyll template system will fail to update the
+entire site if any page is not valid UTF-8.
 
 ## Page metadata
 At the top of each page is a yaml block (between `---` lines) with five variables ste for example
