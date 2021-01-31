@@ -1,4 +1,6 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Más sobre: Seleccionando fuentes y usando los motores Unicode"
 ---
 

@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Estrutura Lógica"
+description: "Esta lição mostra alguns comandos básicos de formatação, e compara-os com formatação semântica usando comandos de secionamento e listas."
+toc-anchor-text: "Estrutura Lógica"
+toc-description: "Estrutura e representação visual."
 ---
+
+# Estrutura Lógica
 
 O LaTeX possui meios de você focar na estrutura lógica do seu documento, assim
 como lhe permite modificar a aparência diretamente.  A maioria das vezes, é
@@ -15,6 +22,7 @@ texto em itálico (em impressões, geralmente é como texto é enfatizado).
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto com \emph{ênfase e com \emph{ênfase} aninhada}.
 
@@ -29,7 +37,7 @@ Também há ocasiões em que ênfase não é o mesmo que itálico;  por exemplo,
 apresentações, cores são geralmente uma opção melhor.  Com marcação lógica, não
 temos que nos preocupar com os detalhes no corpo do documento.
 
-Vamos ver sobre [formatação manual mais adiante](pt/lession-11), mas para o
+Vamos ver sobre [formatação manual mais adiante](lesson-11), mas para o
 momento vamos adicionar `\textbf` aos comandos que conhecemos:  ele deixa texto
 negrito.
 
@@ -44,6 +52,7 @@ vertical, etc., e mantém o resultado uniforme ao longo do documento.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Olá mundo!
 
@@ -68,7 +77,7 @@ Texto da segunda seção.
 
 Usando a configuração pardrão da classe `article`, o LaTeX numera as seções e
 subseções e inclui títulos em negrito.  Vamos ver como mudar a aparência na
-[próxima lição](pt/lesson-05).
+[próxima lição](lesson-05).
 
 O LaTeX pode dividir documentos em alguns níveis por padrão:
 
@@ -84,7 +93,7 @@ _não_ uma forma de iniciar um novo parágrafo!)
 
 Você pode se pergutar sobre o título de um documento.  Há vários comandos
 especiais para isso, mas nem todos os documentos os usam, então abordamos isso
-na [lição extra paralela a esta](pt/more-04).
+na [lição extra paralela a esta](more-04).
 
 ## Listas
 
@@ -93,6 +102,7 @@ Há dois tipos comuns de listas por padrão no LaTeX:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 Ordenada:

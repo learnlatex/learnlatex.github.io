@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Referencias cruzadas"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Referencias cruzadas
 
 ## El funcionamiento de `\label` y `\ref`
 

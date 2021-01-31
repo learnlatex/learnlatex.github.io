@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: Cross-referencing"
+description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
+toc-anchor-text: "More on: Cross-referencing"
 ---
 
 ## Making cross-references into links
@@ -10,6 +14,7 @@ in the document preamble.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
 \begin{document}
 

@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Tabelas"
+description: "Esta lição mostra como você pode construir tabelas no LaTeX, influenciar o alinhamento das células, adicionar linhas à tabela, e unir células."
+toc-anchor-text: "Tabelas no LaTeX"
+toc-description: "Princípios básicos de tabelas."
 ---
+
+# Tabelas
 
 ## Tabelas básicas
 
@@ -49,7 +56,7 @@ coluna, mas também são úteis:
 
 Essas duas tabelas listam todos os tipos de colunas disponíveis no LaTeX e no
 pacote `array`.  Alguns tipos adicionais de colunas, de pacotes diferentes, são
-apresentados na [página de detalhes adicionais](pt/more-08) dessa lição.
+apresentados na [página de detalhes adicionais](more-08) dessa lição.
 
 As colunas `l`, `c`, e `r` terão a largura natural da célula mais larga daquela
 coluna.  Cada coluna deve ser declarada, então se você quer três colunas
@@ -66,6 +73,7 @@ entender o código da tabela.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -85,6 +93,7 @@ tabela apenas com `l`, `c`, e `r`.  Veja o que acontece no exemplo a seguir:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -111,6 +120,7 @@ Compare a tabela acima com a seguinte:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -136,6 +146,7 @@ a primeira tabela dessa lição, mas com a nova sintaxe:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -156,7 +167,7 @@ moderação em tabelas, e normalmente linhas verticais devem ser completamente
 evitadas.  De fato, tabelas 'profissionais' não devem usar nenhuma das linhas
 padrão fornecidas pelo LaTeX;  ao invés disso você deve se familiarizar com os
 recursos do pacote `booktabs`, que é porque ele é mostrado aqui.  Para constar,
-as linhas padrão são mostradas na página de [mais informações](pt/more-08).
+as linhas padrão são mostradas na página de [mais informações](more-08).
 
 O pacote `booktabs` fornece quatro tipos diferentes de linhas.  Cada um desses
 comandos deve ser a primeira coisa em uma linha ou deve seguir outra linha.
@@ -166,6 +177,7 @@ usados no topo, meio, e final da tabela, respectivamente:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -194,6 +206,7 @@ nesse caso específico):
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -220,6 +233,7 @@ um dos lados com um argumento opcional entre parênteses:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -252,6 +266,7 @@ vertical:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -290,6 +305,7 @@ mas apenas _um único tipo de coluna_:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -317,6 +333,7 @@ tabela:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -343,6 +360,7 @@ explicitamente juntar as linhas:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 

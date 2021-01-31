@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Lidando com erros"
+description: "Esta lição mostra mais alguns erros comuns no LaTeX e explica sobre cadeias de erros e erros silenciosos."
+toc-anchor-text: "Veja mais sobre: Lidando com erros"
 ---
 
 ## Erros reportados no final de ambientes
@@ -7,11 +11,12 @@ title: "Veja mais sobre: Lidando com erros"
 Alguns ambientes (notavelmente alinhamentos do `amsmath` e tabelas do
 `tabularx`) leem todo o corpo do ambiente antes de processar o conteúdo.  Isso
 significa que qualquer erro dentro do ambiente será relatado na última linha.
-No entanto, como visto na [lição principal](pt/lesson-15), o contexto do erro
+No entanto, como visto na [lição principal](lesson-15), o contexto do erro
 mostrado pelo TeX ainda deve mostrar a localização exata do erro.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}
 
@@ -29,7 +34,7 @@ mostrado pelo TeX ainda deve mostrar a localização exata do erro.
 Aqui o erro será relatado na linha 11:
 
 ```
-l.11 \end{align}
+l.12 \end{align}
 ```
 {: .noedit :}
 
@@ -57,6 +62,7 @@ em corrigir o _primeiro_ erro.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Text_word  $\alpha + \beta$.
@@ -73,7 +79,7 @@ O TeX relata esse corretamente com a _primeira_ mensagem de erro:
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.4 Text_
+l.5 Text_
          word  $\alpha + \beta$.
 ?
 ```
@@ -88,7 +94,7 @@ o encerre, então o `\alpha` é visto em modo de texto causando outro erro:
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.4 Text_word  $\alpha
+l.5 Text_word  $\alpha
                        + \beta$.
 ? 
 ```
@@ -106,6 +112,7 @@ mensagem de erro;  para ver a mensagem no log adicione `%!TeX log` no exemplo:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

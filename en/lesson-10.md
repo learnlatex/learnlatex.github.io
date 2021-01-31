@@ -1,16 +1,33 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Mathematics"
+description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
+toc-anchor-text: "Mathematics"
+toc-description: "Math mode and mathematical notation."
 ---
+
+# Mathematics
+
+<span
+  class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
+
+Typesetting complex mathematics is one of the greatest strengths of LaTeX. You 
+can mark up mathematics in a logical way in what is known as 'math mode'.
 
 ## Math mode
 
-You can mark up mathematics in LaTeX in a logical way in what is known as
-'math mode'. In math mode, spaces are ignored and the correct spacing between
-characters is (almost always) applied. There are two forms of math mode: inline
-and display.
+In math mode, spaces are ignored and the correct spacing between characters is 
+(almost always) applied. 
+
+There are two forms of math mode: 
+
+* inline
+* display
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A sentence with inline mathematics: $y = mx + c$.
 A second sentence with inline mathematics: $5^{2}=3^{2}+4^{2}$.
@@ -27,11 +44,13 @@ See how the paragraph continues after the display.
 You may see 'LaTeX-like' mathematical input in other places, for example
 the MathJax system for placing equations in web pages. These systems often
 accept slight variations on LaTeX's syntax as they do not actually use LaTeX
-'behind the scenes'. Our examples are all 'correct' LaTeX, so if you see
-something different in another context, it might be because the example is not
-really using LaTeX.
+'behind the scenes'.
 
-## Inline math mode and mathematical notation
+<p 
+  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in 
+another context, it might be because the example is not really using LaTeX.</p>
+
+### Inline math mode and mathematical notation
 
 As you can see above, inline math mode is marked using a pair of dollar
 symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
@@ -57,6 +76,7 @@ We can easily add superscripts and subscripts; these are marked using `^` and
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Superscripts $a^{b}$ and subscripts $a_{b}$.
 \end{document}
@@ -72,17 +92,19 @@ Greek letter.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some mathematics: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
 We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for math math mode symbols using the
+many online resources listing the standard set. You can look up commands for
+math mode symbols using the
 [Detexify](https://detexify.kirelabs.org/classify.html) tool.
 
 
-## Display mathematics
+### Display mathematics
 
 You can use exactly the same commands for display math mode as for
 inline work. Display math mode is set centered by default and is meant
@@ -102,6 +124,7 @@ It's particularly useful for integrations, for example:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A paragraph about a larger equation
 \[
@@ -121,6 +144,7 @@ environment. Let's try the same example again:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A paragraph about a larger equation
 \begin{equation}
@@ -143,9 +167,9 @@ extends the core support to cover a lot more ideas.
 The [`amsmath` User Guide](http://texdoc.net/pkg/amsmath)
 contains many more examples than we can show in this lesson.
 
-
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 
 \begin{document}
@@ -171,6 +195,7 @@ example for matrices.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 AMS matrices.
@@ -193,7 +218,6 @@ d & e & f
 \end{document}
 ```
 
-
 ## Fonts in math mode
 
 Unlike normal text, font changes in math mode often convey very specific meaning.
@@ -212,6 +236,7 @@ write a matrix as
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 The matrix $\mathbf{M}$.
 \end{document}
@@ -228,6 +253,7 @@ specific font styles such as `\textrm{..}`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 

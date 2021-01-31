@@ -1,0 +1,39 @@
+<!-- Universal navigation start -->
+<div
+  class="universal-navigation">
+  <div
+    class="wrapper">
+      <div
+        class="universal-navigation__flex">
+          {% include language-switch.html %}
+          {% include search-box.html %}
+      </div>
+  </div>
+</div>
+<!-- Universal navigation end -->
+
+<header 
+  class="website-header">
+
+  <!-- wrapper start -->
+  <div 
+    class="wrapper">
+
+    <!-- website logo start -->
+    <a 
+      class="website-header--logo" 
+      href="/{{ page.lang }}/">
+      <img 
+        src="{{ "/assets/images/logo-1.svg" | relative_url }}" 
+        alt="Learn LaTeX logo"
+        height="43"
+        width="230">
+        <span
+          class="visually-hidden">Learn LaTeX</span>
+    </a>
+    <!-- website logo end -->
+
+  </div>
+  <!-- wrapper end -->
+
+</header>

@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Thêm hình ảnh và làm cho các hình linh động"
+description: "Bài này giải thích cách thêm hình vẽ/hình ảnh vào LaTeX, cũng như làm thế nào để thay đổi các thông số cơ bản cũng như vị trí của hình."
+toc-anchor-text: "Hình vẽ"
+toc-description: "Kích thước, khoảng cách và vị trí hình"
 ---
+
+# Thêm hình ảnh và làm cho các hình linh động
 
 ## Thêm các hình ảnh
 
@@ -9,6 +16,7 @@ lệnh `\includegraphics` vào LaTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -43,6 +51,7 @@ theo `\textwidth` (độ rộng của phần chữ trong trang giấy) hay `\tex
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -61,6 +70,7 @@ thứ khác bạn có thể muốn làm đó là cắt hình ảnh bằng `clip`
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -79,6 +89,7 @@ phần linh động để chúng không tạo ra khoảng trắng quá lớn tro
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}
 

@@ -1,7 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Tablas"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
+# Tablas
 
 ## Tablas básicas
 

@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: Mathematics"
+description: "This lesson show more amsmath alignment environments, how to make math bold, the math extension package mathtools, and using Unicode input for maths."
+toc-anchor-text: "More on: Mathematics"
 ---
 
 
@@ -14,6 +18,7 @@ form  omits the equation numbers by default.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}
 
@@ -43,6 +48,7 @@ shown, each aligned towards its relation symbol.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Aligned equations
@@ -56,11 +62,12 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 
 
 In addition there are variants of the display environments ending
-in `ed` that make a subterm of a larger display for example, `aligned` and
-`gathered`.
+in `ed` that make a subterm inside a larger display.
+For example, `aligned` and `gathered` are variants of `align` and `gather` respectively.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Aligned:
@@ -84,6 +91,7 @@ compare the items in the list in the following example.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 \begin{itemize}
@@ -109,6 +117,7 @@ letters or words in upright bold roman.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
@@ -130,6 +139,7 @@ on `\pi` in the example above.)
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{bm}
 
 \begin{document}
@@ -149,6 +159,7 @@ features, such as variants of the `amsmath` matrix environments that
 allow the column alignment to be specified.
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{mathtools}
 
 \begin{document}
@@ -174,7 +185,7 @@ this course and we refer you to the
 [package documentation](https://texdoc.net/pkg/unicode-math).
 However, we give a small example here.
 
-```
+```latex
 % !TEX lualatex
 \documentclass[a4paper]{article}
 \usepackage{unicode-math}

@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Làm việc với LaTeX"
+description: "Bài này nói về các hệ thống TeX thường gặp, cũng như các trình soạn thảo mã LaTeX thông dụng."
+toc-anchor-text: "Làm việc với LaTeX"
+toc-description: "Hệ thống TeX và trình soạn thảo mã LaTeX"
 ---
+
+# Làm việc với LaTeX
 
 Không giống nhiều chương trình máy tính khác, LaTeX không phải là một chương
 trình bao gồm 'tất cả mọi thứ'. Thay vào đó, có nhiều chương trình khác nhau
@@ -16,7 +23,7 @@ Phần cốt lõi của làm việc với LaTeX là có một hệ thống TeX. 
 tập hợp của những chương trình và tệp cần thiết để LaTeX có thể chạy được dù
 thông thường bạn không trực tiếp 'chạy' những chương trình này.
 
-Ngày nay có hai hệ thống TeX chính, đó là [MiKTeX](https://www.miktex.org) và
+Ngày nay có hai hệ thống TeX chính, đó là [MiKTeX](https://miktex.org/) và
 [TeX Live](https://tug.org/texlive). Cả hai đều dùng được trên cả Windows, macOS
 và Linux. MiKTeX rất phù hợp cho Windows; trên macOS thì TeX Live được phân phối
 trong một hệ thống lớn hơn được gọi là [MacTeX](https://www.tug.org/mactex/).
@@ -76,6 +83,6 @@ trình sửa mã nguồn nữa; chúng tôi khuyên nên bắt đầu bằng TeX
 (xem ở trên), rồi sau đó đến với những trình sửa mã nguồn khác một khi bạn đã đủ
 tự tin để làm việc với LaTeX.
 
-Bạn sẽ có thể [chạy tất cả các bài tập khác trong trình duyệt của bạn](help),
+Bạn sẽ có thể [chạy tất cả các bài tập khác trong trình duyệt của bạn](help.md),
 nhưng bạn nên bắt đầu làm việc với những văn bản thật, vì thế bây giờ là thời
 điểm rất phù hợp để chuẩn bị.

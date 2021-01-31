@@ -1,4 +1,6 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Más sobre: Matemáticas"
 ---
 
@@ -183,7 +185,7 @@ Los detalles de este paquete van más allá de los objetivos de este curso por l
 le recomendamos leer la [documentación de este paquete](https://texdoc.net/pkg/unicode-math).
 A pesar de ello, vamos a darle aquí un pequeño ejemplo de su uso:
 
-```
+```latex
 % !TEX lualatex
 \documentclass[a4paper]{article}
 \usepackage{unicode-math}

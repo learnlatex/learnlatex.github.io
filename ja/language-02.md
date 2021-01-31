@@ -1,6 +1,11 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "縦書き"
+description: ""
 next: "extra-01"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 ## p{{site.latex}}

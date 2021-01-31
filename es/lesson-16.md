@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Accediendo a la documentación y buscando ayuda"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Accediendo a la documentación y buscando ayuda
 
 Existen varias formas de acceder a la documentación de los paquetes y tipos de documento.
 
@@ -25,7 +31,7 @@ utilizando el comando de la siguiente forma:
 
 ## texdoc.net
 
-Éste es un [sitio web](https://textdoc.net/) que funciona de forma similar al comando `textdoc`. Puede
+Éste es un [sitio web](https://texdoc.net/) que funciona de forma similar al comando `textdoc`. Puede
 buscar la documentación disponible tal y como lo haría usando el comando `texdoc -l` 
 y elegir entre los resultados obtenidos.
 

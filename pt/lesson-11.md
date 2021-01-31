@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Formatação: fontes e espaçamento"
+description: "Esta lição mostra como mudar os elementos de espaçamento em um documento e como inserir instruções de formatação explícitas no código fonte."
+toc-anchor-text: "Fontes & espaçamento"
+toc-description: "Formatação do texto para apresentação visual."
 ---
+
+# Formatação: fontes e espaçamento
 
 ## Espaçamento entre parágrafos
 
@@ -11,6 +18,7 @@ Um estilo comum é não ter indentação para parágrafos, mas ter uma
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
 \usepackage{lipsum} % Para texto de enchimento
 \begin{document}
@@ -46,6 +54,7 @@ para isso:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Algum texto \hspace{1cm} mais texto.
 
@@ -57,7 +66,7 @@ Ainda mais texto.
 
 ## Formatação explícita do texto
 
-Nós vimos [mais no início do curso](pt/lesson-03) que na maioria das vezes a
+Nós vimos [mais no início do curso](lesson-03) que na maioria das vezes a
 estrutura lógica é preferível.  Mas às vezes você quer fazer texto negrito ou
 itálico ou monoespaçado, etc.  Há dois tipos de comando para isso:  para trechos
 curtos de texto, e para material potencialmente longo.
@@ -67,6 +76,7 @@ Para trechos curtos, usamos `\textbf`, `\textit`, `\textrm`, `\textsf`,
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Vamos nos divertir com fontes: \textbf{negrito}, \textit{itálico}, \textrm{romano},
 \textsf{sans serif}, \texttt{monoespaçado} and \textsc{versalete}.
@@ -81,6 +91,7 @@ células de tabelas, ou podemos usar `{...}` para criar um grupo explícito:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto normal.
 
@@ -102,6 +113,7 @@ adicionamos um `\par` (equivalente a uma linha em branco) aqui:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto normal
 

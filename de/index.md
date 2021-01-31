@@ -1,8 +1,35 @@
 ---
-title: learnlatex.org
+layout: "start"
+lang: "de"
+title: Learn LaTeX online for free in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+permalink: /de/
 ---
 
-## Herzlich willkommen bei learnlatex.org (German)!
+# Learn LaTeX
+
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+
+<div
+  class="text-columns">
+  <section>
+    <h3
+      class="text-columns__heading"
+      >Introduction</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor,
+    and because it is not a single program. Our aim is to help you get
+    started with LaTeX from the basics, installation, to writing code, without
+    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+  </section>
+  <section>
+    <h3
+      class="text-columns__heading"
+      >How it works</h3>
+      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+  </section>
+</div>
+
+# Herzlich willkommen bei learnlatex.org!
 
 Diese Seite möchte Sie bei den ersten Schritten mit LaTeX unterstützen. LaTeX ist ein Textsatzsystem für die Erstellung hochwertiger Druckausgaben und kann gerade für Anfänger abschreckend sein, da es _kein_ Textverarbeitungsprogramm ist und zudem nicht als ein einzelnes Programm installiert wird. Unser Ziel ist es, Sie beim Start zu unterstützen ohne gleich _alles_ zeigen zu wollen, was LaTeX kann.
 
@@ -16,18 +43,26 @@ Um Sie beim Lernen von LaTeX zu unterstützen, enthält diese Seite viele Beispi
 
 Alle Beispiele basieren auf einer aktuellen LaTeX-Installation. Sie funktionieren mit beiden verfügbaren Online-Angeboten. Wenn Sie seltsame Fehlermeldungen erhalten, prüfen Sie bitte, ob Ihre LaTeX-Installation aktuell ist.
 
-## Die Lektionen
+<h2
+  class="heading__toc"
+  id="toc"
+  >Lektionen</h2>
 
-{% include toc.html  prefix="de/lesson" %}
+<p
+  class="paragraph__toc"
+  >Wir haben für jede Lektion eine Seite mit <b>mehr Informationen zu diesem Thema</b> hinzugefügt. Diese zusätzlichen Informationen unterstützen Sie, wenn Sie Details benötigen, sollten Ihnen jedoch nicht im Weg stehen, wenn Sie dies nicht tun.</p>
 
-### Zusätzliche Lektionen speziell für learnlatex.org/de
+{% include toc-lessons.html prefix="de/lesson" %}
 
-{% include toc.html  prefix="de/language" %}
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="de/language" %}
+  {% include toc-additional-lessons.html prefix="de/extra" %}
+</ul>
 
 ## So geht es weiter
 
-Die gezielten Einheiten hier erheben nicht den Anspruch, alles abzudecken, was Sie jemals über LaTeX wissen müssen. Wir wollen Ihnen aber genügend Informationen geben, um starten zu können und die Beispiele und Hinweise andernorts zu _verstehen_. Einige Hinweise finden Sie in [der letzten Lektion](lesson-16), aber es sollte an dieser Stelle auch gesagt werden, das ein Buch über LaTeX immer noch der beste Weg ist, mehr zu einzelnen Details zu erfahren. Einige Buchempfehlungen finden Sie ebenfalls in der letzten Lektion.
-
-Schließlich bieten wir auch noch eine Galerie mit kleinen Beispielen aus vielen anderen Bereichen an, die in dieser Einführung nicht behandeln werden können, ergänzt durch verschiedenen LaTeX-Pakete aus diesen Bereichen.
-
-{% include toc.html prefix="de/extra" %}
+Die gezielten Einheiten hier erheben nicht den Anspruch, alles abzudecken, was Sie jemals über LaTeX wissen müssen. Wir wollen Ihnen aber genügend Informationen geben, um starten zu können und die Beispiele und Hinweise andernorts zu _verstehen_. Einige Hinweise finden Sie in [der letzten Lektion](./lesson-16), aber es sollte an dieser Stelle auch gesagt werden, das ein Buch über LaTeX immer noch der beste Weg ist, mehr zu einzelnen Details zu erfahren. Einige Buchempfehlungen finden Sie ebenfalls in der letzten Lektion.

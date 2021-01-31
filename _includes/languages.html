@@ -1,0 +1,24 @@
+<ul
+  class="language-navigation__list">
+  <!-- Loop over languages in _data/languages.yml -->
+  {%- for language in site.data.languages -%}
+    <li
+      class="language-navigation__list-item">
+      <a 
+        class="language-navigation__anchor"
+        href="/{{language.language-code}}/"
+        hreflang="{{ language.language-code }}"
+        title="{{language.label-english}}">
+        <span 
+          class="language-navigation__label-regional"
+          lang="{{language.language-code}}"
+          >{{ language.label-regional }}</span>
+        <br>
+        <span 
+          class="language-navigation__label-english"
+          lang="en"
+          >({{ language.label-english }})</span>
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>

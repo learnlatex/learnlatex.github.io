@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Sử dụng các lớp văn bản"
+description: "Bài này giải thích cách sử dụng và tùy biến một số lớp văn bản thông dụng trong việc thiết kế văn bản."
+toc-anchor-text: "Lớp văn bản"
+toc-description: "Các thiết lập cơ bản của toàn văn bản"
 ---
+
+# Sử dụng các lớp văn bản
 
 ## Lớp văn bản làm gì?
 
@@ -43,6 +50,7 @@ thấy. Khi viết bằng `letter`, các câu lệnh có hơi khác một chút
 
 ```latex
 \documentclass{letter}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{letter}{Some Address\\Some Street\\Some City}
@@ -103,6 +111,7 @@ KOMA-script và `memoir` ảnh hưởng đến output như thế nào.
 
 ```latex
 \documentclass{article} % Thay đổi lớp văn bản ở đây
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

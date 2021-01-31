@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Referências cruzadas"
+description: "Essa lição mostra como mencionar elementos numerados em um documento, como figuras, tabelas, e seções."
+toc-anchor-text: "Referências cruzadas"
+toc-description: "Mencionando figuras, tabelas, etc."
 ---
+
+# Referências cruzadas
 
 ## O mecanismo de `\label` e `\ref`
 
@@ -13,6 +20,7 @@ você pode referenciar esse rótulo.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Olá mundo!

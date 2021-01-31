@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Matemáticas"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Matemáticas
 
 ## El modo matemático
 

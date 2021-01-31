@@ -1,17 +1,21 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Tabelas"
+description: "Esta lição mostra formas de personalizar uma tabela aplicando estilos a uma coluna, modificando espaçamento e linhas, e outros pacotes que fornecem diferentes extensões para tabelas."
+toc-anchor-text: "Veja mais sobre: Tabelas"
 ---
 
 ## Outros símbolos de preâmbulo para tabelas
 
-A [lição principal](pt/lesson-08) não abordou todos os símbolos de preâmbulo
+A [lição principal](lesson-08) não abordou todos os símbolos de preâmbulo
 disponíveis, portanto alguns serão explicados aqui, com exempls.  Você pode
 querer revisitar as tabelas no início da lição para ter uma visão geral dos
 símbolos disponíveis.  As descrições dadas lá devem ser suficientes para
 entender o que os tipos diferentes de colunas `m`, `b`, `w`, e `W` fazem, depois
 que você endender `l`, `c`, `r`, e `p`.  Se não, você pode experimentar um pouco
 com eles.  O que ainda falta são os outros símbolos listados na
-[lição principal](pt/lesson-08):  `>`, `<`, `@`, `!`, e `|`.
+[lição principal](lesson-08):  `>`, `<`, `@`, `!`, e `|`.
 
 ### Aplicando estilos a uma coluna
 
@@ -24,6 +28,7 @@ seguinte:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -52,6 +57,7 @@ ser usado para mudar o alinhamento de uma única célula, como mostrado abaixo:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -81,6 +87,7 @@ ajustar esse espaço usando `\setlength`:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \setlength\tabcolsep{1cm}
@@ -102,6 +109,7 @@ vai remover o espaçamento entre duas colunas, e inserir o argumento entre elas:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -115,7 +123,7 @@ vai remover o espaçamento entre duas colunas, e inserir o argumento entre elas:
 ```
 <!-- {% endraw %} -->
 
-(Vamos abordar `\hspace` [em breve](pt/lesson-11);  você pode adivinhar que ele
+(Vamos abordar `\hspace` [em breve](lesson-11);  você pode adivinhar que ele
 adiciona um espaço horizontal.)
 
 O símbolo `!` faz algo bem similar a `@`.  A diferença é que `!` _adiciona_ o
@@ -124,6 +132,7 @@ argumento no centro do espaço entre as colunas:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -144,6 +153,7 @@ argumento no centro do espaço entre as colunas:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -176,6 +186,7 @@ especificando um comprimento entre chaves depois de `r` ou `l`:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -200,6 +211,7 @@ Um exemplo simples, com duas colunas numéricas alinhadas é:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{booktabs}
 \usepackage{siunitx}
 \begin{document}
@@ -247,6 +259,7 @@ partir daquele ponto no preâmbulo.  `\extracolsep` é quase sempre usado com
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
 
@@ -289,6 +302,7 @@ um valor automaticamente determinado para a largura.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \begin{document}
 
@@ -337,7 +351,7 @@ _float_ `table`.
 Vários pacotes têm variações com sintaxe similar que permitem quebra de página
 na tabela.  Aqui mostramos o pacote `longtable`:
 
-```
+```latex
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}
@@ -389,6 +403,7 @@ aqui:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{threeparttable}
 \begin{document}
@@ -430,6 +445,7 @@ para que as colunas não sejam tão estreitas em relação ao tamanho da fonte.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{ragged2e}
 \begin{document}
@@ -462,7 +478,7 @@ Dois & Um texto longo diferente em um parágrafo estreito, com mais palávras di
 
 ## Definindo novos tipos de coluna
 
-Como demonstrado na [lição principal](pt/lesson-08), o pacote `array` permite
+Como demonstrado na [lição principal](lesson-08), o pacote `array` permite
 construções como `>{\bfseries}c` para denotar uma coluna centralizada com texto
 em negrito.  Geralmente é conveniente definir um novo tipo de coluna para
 encapsular tal uso. Por exemplo:
@@ -481,6 +497,7 @@ ambientes `tabular` dentro dessa célula:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -505,6 +522,7 @@ ao centro, ou ao fundo, respectivamente, e é usado assim:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -524,7 +542,7 @@ ao centro, ou ao fundo, respectivamente, e é usado assim:
 
 ## Espaçamento entre linhas em tabelas
 
-Na [lição principal](pt/lesson-08) demonstramos `\addlinespace` do pacote
+Na [lição principal](lesson-08) demonstramos `\addlinespace` do pacote
 `booktabs`, que é útil para adicionar espaço extra entre linhas específicas.
 
 Há dois parâmetros gerais que controlam o espaçamento entre linhas,
@@ -541,6 +559,7 @@ O exemplo a seguir demonstra o parâmetro `\extrarowheight`:
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
 

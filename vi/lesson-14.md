@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Chọn fonts và sử dụng các trình biên dịch Unicode"
+description: "Bài này sẽ giải thích các cách chọn font chữ khác nhau, cũng như giúp bạn làm quen với các hệ mã hóa văn bản khác nhau và cách sử dụng Unicode trong LaTeX"
+toc-anchor-text: "Font và Unicode"
+toc-description: "Font chữ. Hệ mã hóa văn bản. Unicode"
 ---
+
+# Chọn fonts và sử dụng các trình biên dịch Unicode
 
 Khi TeX và LaTeX bắt đầu được sử dụng rộng rãi, nó chỉ có hỗ trợ cho một số ngôn
 ngữ châu Âu, cùng với một vài tính năng cho các bảng chữ cái khác như tiếng Hy
