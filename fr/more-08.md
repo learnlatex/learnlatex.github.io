@@ -10,11 +10,12 @@ toc-anchor-text: "More on: Tables"
 La leçon principale n'ayant pas couvert tous les options disponibles pour les
 en-têtes de tableaux, quelques autres sont expliquées ici avec des exemples.
 N'hésitez pas à revoir le début de la leçon pour avoir en tête toutes les
-possibilités existantes. Les courtes descriptions fournies devraient suffire
+possibilités disponibles. Les courtes descriptions fournies devraient suffire
 à comprendre ce que font les différents types de colonnes `m`, `b`, `w`, et
 `W` après que vous ayez compris `l`, `c`, `r`, et `p`. Si ce n'est pas le cas,
 utilisez les exemples pour expérimenter un peu. Il restera ensuite à voir les
-autres « _preamble-tokens_ » disponibles, bien pratiques : `>`, `<`, `@`, `!` et `|`.
+autres « _preamble-tokens_ » existants, bien pratiques : `>`, `<`, `@`, `!`
+et `|`.
 
 
 ### Mettre en forme une colonne
@@ -51,8 +52,8 @@ la cellule du tableau. Nous examinerons le formatage manuel des polices
 
 Souvent la première ligne d'un tableau est considérée comme un en-tête, et mise
 en forme différemment du reste. Pour obtenir ce résultat, on peut utiliser
-`\multicolumn`. Pensez aussi que cette commande peut être utilisée pour modifier
-l'alignement d'une seule cellule ici :
+`\multicolumn`. Cette commande peut aussi être utilisée pour modifier
+l'alignement d'une seule cellule, comme ici :
 
 <!-- {% raw %} -->
 ```latex

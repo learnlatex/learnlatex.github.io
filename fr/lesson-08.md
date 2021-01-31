@@ -14,7 +14,7 @@ toc-description: "Principes de base pour travailler avec des tableaux."
 ## Tableaux simples
 
 En LaTeX, un tableau se construit dans un environnement `tabular`. Cette leçon
-suppose que vous chargez le package `array`, qui ajoute des fonctionnalités aux
+suppose que vous chargiez le package `array`, qui ajoute des fonctionnalités aux
 tableaux de base de LaTeX. Il n'est pas intégré dans le noyau LaTeX, mais c'est
 uniquement pour des raisons historiques et vous avez intérêt à le charger dès
 que vous utilisez des tableaux. Mettez donc ce qui suit dans votre préambule et

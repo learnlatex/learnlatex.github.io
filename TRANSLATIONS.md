@@ -164,9 +164,3 @@ or because the English text has been updated, then the same basic system
 should be used. Make the edits in the forked copy then make a pull request to
 have the changes made in the main site.
 
-
-
-
-
-
-

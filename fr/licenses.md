@@ -23,4 +23,4 @@ Voir [LICENCE](LICENSE) pour plus de détails.
 
 ## Exemples de code
 
-Les exemples de code sont sous licence [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) (aucun droit réservé). Il s'agit d'un texte juridique qui est décrit (grosso modo) le régime du « domaine public », du moins dans les pays où ce concept existe. L'idée essentielle est que vous pouvez utiliser les exemples _sans aucune limitation_. Vous n'avez _pas besoin de citer leur source_, vous n'avez _pas besoin de les partager_ lorsque vous les modifiez : vous pouvez simplement les utiliser.
+Les exemples de code sont sous licence [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) (aucun droit réservé). Il s'agit d'un texte juridique qui décrit (grosso modo) le régime du « domaine public », du moins dans les pays où ce concept existe. L'idée essentielle est que vous pouvez utiliser les exemples _sans aucune limitation_. Vous n'avez _pas besoin de citer leur source_, vous n'avez _pas besoin de les partager_ lorsque vous les modifiez : vous pouvez simplement les utiliser.
