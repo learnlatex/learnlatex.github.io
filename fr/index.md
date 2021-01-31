@@ -1,7 +1,7 @@
 ---
 layout: "start"
 lang: "fr"
-title: Apprenez LaTeX en ligne: cours gratuit pour débutant
+title: "Apprenez LaTeX en ligne : cours gratuit pour débutant"
 description: "Apprenez LaTeX en 16 leçons pour débutants. Faites vos premiers pas avec LaTeX, un système de préparation de documents conçu pour produire des documents de grande qualité."
 permalink: /fr/
 ---
