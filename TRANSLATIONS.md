@@ -52,7 +52,7 @@ pages.
    ```
 6. Update each section of `_data/languages.yml` with the an entry for
    each of the fixed strings in the site. So for example the entry for "Next Lesson"
-   should be ammended to have a `zz:` entry:
+   should be amended to have a `zz:` entry:
 
    ```
    navigational-elements_next:
