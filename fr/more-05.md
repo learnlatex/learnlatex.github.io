@@ -8,7 +8,7 @@ toc-anchor-text: "Utiliser les classes de documents pour changer l'apparence : p
 
 ## Classes spécifiques d'un journal
 
-De nombreuses journaux scientifiques proposent leur classe LaTeX pour les
+De nombreux journaux scientifiques proposent leur classe LaTeX pour les
 soumissions d'articles. Celle-ci donne généralement une mise en page proche de
 celle du journal publié, bien que cela dépende de l'utilisation des polices de
 caractères, etc. ; parfois, la mise en forme reste générique, mais l'utilisation
@@ -16,7 +16,8 @@ de la classe du journal facilite l'import de votre article dans leur chaîne de
 traitement. Si une classe est disponible, elle est normalement mise à disposition
 directement par l'éditeur du journal (sur son site web), qui doit donner les
 détails nécessaires à son utilisation. Nombre d'entre elles sont également
-disponibles sur CTAN et dans les distributions TeX standards.
+disponibles sur [le CTAN](https://www.ctan.org/) et dans les distributions TeX
+standards.
 
 
 ## Classes pour les diaporamas
@@ -26,7 +27,7 @@ Microsoft Powerpoint). La classe `slides` avait été conçue pour la production
 de diapositives 24x36mm et n'est pas vraiment faite pour les présentations
 destinées à un vidéo-projecteur. Deux classes ont été développées à cet effet
 et sont largement utilisées : `beamer` et `powerdot`. Actuellement, `beamer`
-est la plus largement utilisée, voici donc un exemple de son fonctionnement :
+est la plus largement utilisée, voici donc un exemple avec elle :
 
 ```latex
 \documentclass{beamer}

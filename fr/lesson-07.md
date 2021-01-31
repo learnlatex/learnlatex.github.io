@@ -115,12 +115,12 @@ Emplacement initial
 ```
 
 Si l'on n'utilisait pas le mécanisme des flottants, l'image apparaîtrait juste
-sous le texte `Emplacement initial`. Mais quand on permet à l'image de flotter,
+sous le texte `Emplacement initial`. Mais quand on lui permet de flotter,
 elle est positionnée en haut de la deuxième page, car il n'y a pas de place pour
 elle au bas de la première page. L'option `ht` influence l'endroit où LaTeX peut
-placer le flottant ; ces deux lettres signifient qu'il peut aller là où il se
-trouve dans la source (donc à côté de `Emplacement initial`) ou en haut d'une
-page. Vous pouvez utiliser jusqu'à quatre spécificateurs de position :
+placer le flottant ; ces deux lettres signifient qu'il peut aller soit là où il
+se trouve dans le code source (donc à côté de `Emplacement initial`), soit en haut
+d'une page. Vous pouvez utiliser jusqu'à quatre spécificateurs de position :
 
 - `h` : ici, si possible (_**h**ere_),
 - `t` : en haut d'une page (_**t**op of a page_),
