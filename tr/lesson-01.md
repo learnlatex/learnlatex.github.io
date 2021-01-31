@@ -3,13 +3,13 @@ layout: "lesson"
 lang: "tr"
 title: "LaTeX nedir ve nasıl çalışır"
 description: "Bu ders LaTeX'in temellerini ve alışılagelmiş kelime işlemcilerden Microsoft Word veya LibreOffice'e kıyasla nasıl çalıştığını açıklar."
-toc-anchor-text: "LaTeX' Temelleri"
+toc-anchor-text: "LaTeX'e giriş"
 toc-description: "LaTeX nedir ve nasıl çalışır"
 ---
 
 # LaTeX nedir ve nasıl çalışır
 
-Microsoft Word veya LibreOffice Writer gibi alışılagelmiş kelime işlemcilerinin aksine LaTeX WYSIWYG ('What You See Is What You Get') [tr: "Ne görüyorsan onu alırsın"] mantığı ile çalışmaz. Kullanıcı, düz bir metni biçimleyerek zenginleştirir. HTML benzeri bir şekilde, yapılan bu biçimlendirme LaTeX'e metnin belirli kısımlarının karakteri hakkında bilgi verir.
+Microsoft Word veya LibreOffice Writer gibi alışılagelmiş kelime işlemcilerinin aksine LaTeX WYSIWYG ('What You See Is What You Get') [tr: "Ne görüyorsan onu alırsın"] mantığı ile çalışmaz. Kullanıcı, düz bir metni biçimleyerek zenginleştirir. HTML benzeri bir şekilde yapılan bu biçimlendirme LaTeX'e metnin belirli kısımlarının karakteri hakkında bilgi verir.
 
 Örneğin, HTML'de yeni bir bölüm (section) oluşturan `<h2>` tagini ele alalım. Bu işlev için LaTeX'de `\section` komutu kullanılmaktadır.
 
