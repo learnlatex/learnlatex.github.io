@@ -32,7 +32,6 @@ compress_html:
   profile: false
   startings: [html, head, body]
 
-<<<<<<< HEAD
 langs:
    - en
    - de
@@ -41,7 +40,6 @@ langs:
    - ja
    - vi
    - mr
-=======
 
 # LANGUAGES, LABELS, LAYOUTS
 # Settings for multilingual set up: 
@@ -90,4 +88,3 @@ defaults:
     values:
       lang: "tr"
       label: "Türkçe"
->>>>>>> upstream/master
