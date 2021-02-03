@@ -1,48 +1,40 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "What LaTeX is and how it works"
-description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
-toc-anchor-text: "LaTeX basics"
-toc-description: "What LaTeX is and how it works."
+lang: "mr"
+title: "लाटेक् काय आहे व ते कार्य कसे करते?"
+description: "ह्या प्रकरणात लाटेक् आज्ञावलीची तोंडओळख आपण करून घेणार आहोत. त्याकरिता मायक्रोसॉफ्ट वर्ड, लिब्रेऑफिस ह्यांसारख्या मजकूर-संपादकांत व लाटेक्-मध्ये काय भेद आहे हे आपण ह्या प्रकरणात पाहू."
+toc-anchor-text: "लाटेक्-ची तोंडओळख"
+toc-description: "लाटेक् काय आहे व ते कार्य कसे करते?"
 ---
 
-# LaTeX basics
+# लाटेक्-ची तोंडओळख
 
 <span
-  class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>
+  class="summary">ह्या प्रकरणात लाटेक् आज्ञावलीची तोंडओळख आपण करून घेणार आहोत. त्याकरिता मायक्रोसॉफ्ट वर्ड, लिब्रेऑफिस ह्यांसारख्या मजकूर-संपादकांत व लाटेक्-मध्ये काय भेद आहे हे आपण ह्या प्रकरणात पाहू.</span>
 
-Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
-
-Take for example the element `<h2>` indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+मायक्रोसॉफ्ट वर्ड, लिब्रेऑफिस ह्यांसारख्या लोकप्रिय मजकूर-संपादकांपेक्षा लाटेक् वेगळे आहे. लाटेक्-सह
+"जे दिसेल ते मिळेल" ह्या स्वरूपाचे संपादन करता येत नाही. लाटेक्-च्या बीजधारिकेत साध्या मजकुराच्या
+आजूबाजूला अक्षरजुळणीच्या आज्ञा लिहिल्या जातात. ह्या आज्ञांचे अर्थ लाटेक् ह्या आज्ञावलीस परिचित
+असतात. त्यानुसार फलित धारिका तयार केली जाते. उदा. लेखातील विभाग तयार करण्यासाठी
+ज्याप्रमाणे एचटीएमएल आज्ञावलीत `<h2>` हा घटक असतो, त्याप्रमाणे लाटेक्-मध्ये `\section` ही
+आज्ञा असते.
 
 ## The LaTeX workflow
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+लाटेक् धारिकांमधील मजकूर वापरकर्त्यास अभिप्रेत असलेले दृश्यरूप दाखवत नाही. ह्या धारिकांमध्ये केवळ
+काही आज्ञावलिरूपी सूचना असतात. अशा _बीजधारिकांवर_ लाटेक् ही आज्ञावली चालवली जाते
+(सर्वसाधारणतः लुआलाटेक्, झीलाटेक्, पीडीएफ्-लाटेक् अशा आज्ञांसह). त्यातून फलित म्हणून प्राप्त
+झालेली पीडीएफ् धारिका आपल्याला अभिप्रेत असलेले दृश्यरूप दाखवते.
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+## बीजधारिका किती वेळा चालवावी?
 
-## Multiple LaTeX runs
+साध्या लाटेक् बीजधारिकांना केवळ एकदा चालवणेही पुरे असते. त्यातून पूर्ण फलित तयार होते, परंतु
+जसजशी लाटेक्-ची अधिक प्रगत वैशिष्ट्ये तुम्ही वापरू लागता, तसतशा धारिका एकाहून अधिक वेळा
+चालवाव्या लागू शकतात. जेव्हा असे करण्याची आवश्यकता असेल, तेव्हा आम्ही तसे सूचित करू.
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+## लाटेक्, पीडीएफ्-लाटेक् की ...
 
-## LaTeX or pdfLaTeX or ...
-
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX Program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+[पुढील प्रकरणात](lesson-02) आपण हे पाहणार आहोत की लाटेक् ही एकल आज्ञावली नाही.
+तिच्यात निरनिराळ्या _चालकांचा_ समावेश आहे. केवळ इंग्रजी मजकुराकरिता पीडीएफ्-लाटेक् नावाचा
+चालक पुरेसा आहे, परंतु वेगवेगळ्या कार्यांसाठी वेगवेगळे लाटेक् चालक वापरावे लागू शकतात. आपण
+त्यांबद्दल ह्या अभ्यासक्रमात करणार आहोत.
