@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Thêm hình ảnh và làm cho các hình linh động"
+description: "Vài nét về cách bố trí các tệp ảnh để sử dụng trong văn bản, cũng như một vài thông tin bổ sung về các gói lệnh vẽ hình và các thành phần linh động khác trong văn bản."
+toc-anchor-text: "Bổ sung: Hình vẽ"
 ---
 
 ## Đặt tên tệp ảnh
@@ -66,6 +70,7 @@ Gói `float` có thể được dùng để làm việc đó.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage{float}
@@ -94,11 +99,12 @@ chỉ nên làm vậy thôi.
 
 Ta cũng có thể cần nhiều loại môi trường linh động khác, mỗi loại được thêm vào
 một cách độc lập. Ta có thể làm vậy bằng việc sử dụng gói
-[`trivfloat`](https://ctan.org/pkg/trivloat). Gói này cung cấp lệnh `\trivfloat`
+[`trivfloat`](https://ctan.org/pkg/trivfloat). Gói này cung cấp lệnh `\trivfloat`
 để ta định nghĩa những kiểu môi trường linh động mới.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage{trivfloat}

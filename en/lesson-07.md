@@ -1,14 +1,23 @@
 ---
-title: "Including graphics and making things 'float'"
+layout: "lesson"
+lang: "en"
+title: "Including graphics and positioning"
+description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
+toc-anchor-text: "Using graphics"
+toc-description: "Appearance, spacing and positioning."
 ---
 
-## Including graphics
+## Graphics and positioning
+
+<span
+  class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
 
 To bring in graphics from outside LaTeX, use the `graphicx`
 package, which adds the command `\includegraphics` to LaTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -42,6 +51,7 @@ ratio stays correct.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -60,6 +70,7 @@ might want to do is to `clip` and `trim` an image.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -78,6 +89,7 @@ not leave large gaps in the page.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % produce dummy text as filler
 

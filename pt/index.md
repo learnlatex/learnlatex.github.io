@@ -1,8 +1,55 @@
 ---
-title: learnlatex.org
+layout: "start"
+lang: "pt"
+title: Learn LaTeX online for free in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+permalink: /pt/
 ---
 
-## Bem-vindo ao learnlatex.org!
+# Learn LaTeX
+
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+
+<div
+  class="text-columns">
+  <section>
+    <h3 
+      class="text-columns__heading"
+      >Introduction</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
+    and because it is not a single program. Our aim is to help you get 
+    started with LaTeX from the basics, installation, to writing code, without 
+    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+  </section>
+  <section>
+    <h3
+      class="text-columns__heading"
+      >How it works</h3>
+      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+  </section>
+</div>
+
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >Lições</h2>
+
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+
+{% include toc-lessons.html prefix="pt/lesson" %}
+
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="pt/language" %}
+  {% include toc-additional-lessons.html prefix="pt/extra" %}
+</ul>
+
+# Bem-vindo ao learnlatex.org!
 
 O objetivo deste site é ajudar você nos seus primeiros passos com o LaTeX, um
 sistema de preparação de documentos projetado para produzir impressões
@@ -23,38 +70,29 @@ ajudar quando você precisar de detalhes, mas não são necessárias caso contr�
 ## Como os exemplos funcionam
 
 Para ajudar no seu aprendizado, o site inclui muitos exemplos.  Na
-[Lição 2](pt/lesson-02) nós vamos falar de como você pode usar o LaTeX tanto
+[Lição 2](lesson-02) nós vamos falar de como você pode usar o LaTeX tanto
 online quanto com uma instalação local no seu computador.  Para iniciantes, nós
 configuramos nossos exemplos para que você possa editá-los e executá-los neste
 website.  Nós também os vinculamos ao [Overleaf](https://www.overleaf.com), um
 dos serviços mais populares de edição online de LaTeX.  Mas não se preocupe,
 você também pode usar os exemplos no seu computador.  Você pode ler mais sobre
-como usar os exemplos na [página de ajuda](pt/help).
+como usar os exemplos na [página de ajuda](help).
 
 Nossos exemplos são baseados em uma instalação atualizada de LaTeX.  Todos
 funcionam com ambos os nossos sistemas online, então se você receber erros com
 os exemplos que nós fornecemos, você pode primeiro verificar se a sua instalação
 de LaTeX está atualizada.
 
-## As lições
-
-{% include toc.html  prefix="pt/lesson" %}
-
-### Lições adicionais específicas para learnlatex.org/pt
-
-{% include toc.html  prefix="pt/language" %}
 
 ## Indo além
 
 O propósito das lições aqui não é abordar tudo o que você precisará saber sobre
 o LaTeX; nós queremos te dar o suficiente para você começar, e para _entender_
 exemplos e ajuda de outras fontes.  Nós abordamos formas de obter mais
-informação na [última lição](pt/lesson-16), mas vale ressaltar que ter acesso a
+informação na [última lição](lesson-16), mas vale ressaltar que ter acesso a
 um livro sobre LaTeX ainda é a melhor forma de aprender os detalhes.  Nós damos
 algumas recomendações na última lição.
 
 Finalmente, nós oferecemos uma galeria de pequenos exemplos mostrando uma gama
 de áreas diferentes que não são abordadas nessa introdução, e os diferentes
 pacotes nessas áreas.
-
-{% include toc.html prefix="pt/extra" %}

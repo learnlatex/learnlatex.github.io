@@ -1,8 +1,8 @@
 var buttons ={
-    "edit":             "editar",
-    "copy":             "copiar",
-    "Open in Overlaf":  "Aberto em Overleaf",
+    "edit":             "éditer",
+    "copy":             "copier",
+    "Open in Overleaf": "Ouvrir dans Overleaf",
     "LaTeX Online":     "LaTeX Online",
-    "Delete Output":    "Excluir saída",
-    "Compiling PDF":    "Compiling PDF"
+    "Delete Output":    "Fermer l'affichage",
+    "Compiling PDF":    "Compilation du PDF"
 }

@@ -1,55 +1,94 @@
 ---
-layout: default
+layout: compress
 ---
-
-<h1>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" | replace: "LaTeX", site.latex }}</h1>
-
-{{content}}
-
-{% if page.path contains "lesson-" %}
-  <p><small>
-    <a href = "{{page.name | replace: "lesson-", "more-" | remove_first: ".md"}}">{% include_relative includes/more.html %}</a>
-     <br>
-     {% if page.path contains "lesson-16" %}
-     <a href = "language-01">{% include_relative includes/next.html %}</a>
-     {% else %}
-     {% if page.name contains "lesson-1" or  page.name contains "lesson-09" %}
-     <a href = "lesson-{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
-     {% else %}
-      <a href = "lesson-0{{page.name | remove_first: "lesson-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    {% if site.title and site.title == page.title %}
+      <title>{{ page.title }}</title>
+      {% else %}
+      <title>{{ page.title }} | {{site.title}}</title>
     {% endif %}
-    {% endif %}
-  </small></p>
-{% endif %}
 
+    <!-- alternate links start -->
+    {% include alternate-links.html %}
+    <!-- alternate links end -->
 
-{% if page.path contains "more-" %}
-  <p><small>
-    <a href = "{{page.name | replace: "more-", "lesson-" | remove_first: ".md"}}">{% include_relative includes/return.html %}</a>
-    <br>
-    {% if page.path contains "more-16" %}
-    <a href = "language-01">{% include_relative includes/nextmain.html %}</a>
-    {% else %}
-    {% if page.name contains "more-1" or  page.name contains "more-09" %}
-    <a href = "lesson-{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
-    {% else %}
-    <a href = "lesson-0{{page.name | remove_first: "more-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/nextmain.html %}</a>
-    {% endif %}
-    {% endif %}
-  </small></p>
-{% endif %}
+    <link rel="icon" href="{{ "/assets/images/favicon.svg" | relative_url }}" type="image/svg+xml" sizes="any">
+    
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 
-  
-{% if page.path contains "language-" %}
-  <p><small>
-    {% if page.next  %}
-    <a href = "{{page.next}}">{% include_relative includes/next.html %}</a>
-    {% else %}
-    {% if page.name contains "language-1" or  page.name contains "language-09" %}
-    <a href = "language-{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
-    {% else %}
-    <a href = "language-0{{page.name | remove_first: "language-" | remove_first: ".md" | plus: 1}}">{% include_relative includes/next.html %}</a>
-    {% endif %}
-    {% endif %}
-  </small></p>
-{% endif %}
+    <link rel="canonical" href="https://www.learnlatex.org/">
+
+    <!-- script to run latex start -->
+    <script src="{{ "/assets/scripts/runlatex.js" | relative_url}}"></script>
+    <!-- script to run latex end -->
+
+    <!-- adding anchors to headings start 1/2 --> 
+    <script src="{{ "/assets/scripts/anchor.min.js" | relative_url }}"></script>
+    <!-- adding anchors to headings end 1/2 --> 
+
+    <!-- ace editor and buttons start -->
+    {% include ace-editor.html %}
+    <!-- ace editor and buttons end -->
+
+    <script>
+      {% if site.title and site.title == page.title %}
+        function switchlang(e) {
+          window.location.href="{{ "/" | absolute_url }}" + e.value;
+        }
+      {% else %}
+        function switchlang(e) {
+          window.location.href=window.location.href.replace(/\/([^l][a-z]|[a-z][^l](-[a-zA-Z]+)?)\//,'/'+e.value+'/').replace(/\/language-.*/,'');
+        }
+      {% endif %}
+    </script>
+
+  </head>
+  <body
+    class="page">
+
+    <!-- skip link start -->
+    <a 
+      href="#main" 
+      class="visually-hidden focusable skip-link"
+      >{{ site.data.translations['skip-link'][page.lang] }}
+    </a>
+    <!-- skip link end -->
+
+    <!-- website header start -->
+    {% include website-header.html %}
+    <!-- website header end -->
+
+    <!-- primary navigation start -->
+    {% include primary-navigation.html %}
+    <!-- primary navigation end -->
+
+    <!-- main content start -->
+    <main
+      id="main">
+
+      <!-- wrapper start -->
+      <div class="wrapper">
+
+      {{ content }}
+
+      </div>
+      <!-- wrapper end -->
+
+    </main>
+    <!-- main content end -->
+
+    <!-- website footer start -->
+    {% include website-footer.html %}
+    <!-- website footer end -->
+
+    <!-- adding anchors to headings start 2/2 --> 
+    <script>anchors.add();</script>
+    <!-- adding anchors to headings end 2/2 -->
+
+  </body>
+</html>

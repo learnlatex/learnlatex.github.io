@@ -1,10 +1,14 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Matemática"
+description: "Esta lição mostra mais ambientes de alinhamento do amsmath, como fazer símbolos matemáticos em negrito, o pacote de extensão de matemática mathtools, e usando entrada Unicode para equações."
+toc-anchor-text: "Veja mais sobre: Matemática"
 ---
 
 ## Mais ambientes de alinhamento do `amsmath`
 
-Além do ambiente `align*` apresentado na [lição principal](pt/lesson-10), o
+Além do ambiente `align*` apresentado na [lição principal](lesson-10), o
 `amsmath` tem diversos outras estruturas de equações em exibição, notavelmente
 `gather` para equações de várias linhas que não precisam alinhamento, e
 `multline` para dividir uma única expressão em várias linhas, alinhando a
@@ -20,6 +24,7 @@ form  omits the equation numbers by default.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}
 
@@ -49,6 +54,7 @@ alinhada em direção ao seu símbolo de relação
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Equações alinhadas
@@ -61,10 +67,12 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 ```
 
 Adicionalmente, há variantes dos ambientes com nome terminando em `ed`, que
-formam um sub termo de uma equação maior, por exemplo `aligned` e `gathered`:
+formam um sub termo dentro de uma equação maior.  Por exemplo, `aligned` e
+`gathered` são variantes de `align` e `gather` respectivamente.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 Aligned:
@@ -88,6 +96,7 @@ linha;  compare os itens na lista no exemplo a seguir:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 \begin{itemize}
@@ -114,6 +123,7 @@ individuais ou palavras em fonte romana em negrito.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
@@ -134,6 +144,7 @@ dentro de uma expressão normal, então você pode usar o comando `\bm` do pacot
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{bm}
 
 \begin{document}
@@ -155,6 +166,7 @@ que permitem escolher o alinhamento das colunas:
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{mathtools}
 
 \begin{document}
@@ -172,7 +184,7 @@ que permitem escolher o alinhamento das colunas:
 
 ## Unicode Math
 
-Como será visto na [lição 14](pt/lesson-14), há outros interpretadores TeX que
+Como será visto na [lição 14](lesson-14), há outros interpretadores TeX que
 usam fontes _OpenType_.  Por padrão, esses interpretadores ainda vão usar as
 fontes matemáticas clássicas do TeX, mas você pode usar o pacote `unicode-math`
 para usar fontes matemáticas _OpenType_.  Os detalhes desse pacote vão além
@@ -180,7 +192,7 @@ deste curso, então sugerimos consultar a
 [documentação do pacote](https://texdoc.net/pkg/unicode-math).
 Ainda assim, aqui vai um pequeno exemplo:
 
-```
+```latex
 % !TEX lualatex
 \documentclass[a4paper]{article}
 \usepackage{unicode-math}

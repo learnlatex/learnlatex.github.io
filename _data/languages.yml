@@ -1,0 +1,28 @@
+# LANGUAGES
+# Translates the languages
+#
+# (in preferred order)
+
+- language-code: en
+  label-regional: English
+  label-english: English
+
+- language-code: es
+  label-regional: Español
+  label-english: Spanish
+
+- language-code: fr
+  label-regional: Français
+  label-english: French
+
+- language-code: pt
+  label-regional: Português
+  label-english: Portuguese
+
+- language-code: vi
+  label-regional: Tiếng&nbsp;Việt
+  label-english: Vietnamese
+
+- language-code: tr
+  label-regional: Türkçe
+  label-english: Turkish

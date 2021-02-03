@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Cấu trúc cho các văn bản dài"
+description: "Bài này sẽ hướng dẫn cách làm việc với những văn bản dài: cách chia mã văn bản thành nhiều phần, làm việc trên từng phần và gộp các phần lại với nhau."
+toc-anchor-text: "Chia nhỏ văn bản"
+toc-description: "Chia nhỏ và hệ thống hóa văn bản dài"
 ---
+
+# Cấu trúc cho các văn bản dài
 
 <script>
 preincludes = {
@@ -38,6 +45,7 @@ Do đó, một văn bản dài có thể trông như thế này:
 <!-- pre0 {% raw %} -->
 ```latex
 \documentclass{book}
+\usepackage[T1]{fontenc}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 

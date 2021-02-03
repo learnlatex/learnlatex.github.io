@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Văn bản LaTeX đầu tiên của bạn"
+description: "Vài nét về cách biên dịch LaTeX và cách chèn một số ký tự đặc biệt vào văn bản."
+toc-anchor-text: "Bổ sung: Văn bản LaTeX đầu tiên"
 ---
 
 ## Chạy LaTeX

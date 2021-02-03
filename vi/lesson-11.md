@@ -1,6 +1,13 @@
 ---
-title: "Định dạng font chữ và các khoảng cách"
+layout: "lesson"
+lang: "vi"
+title: "Định dạng font và các khoảng cách"
+description: "Bài này sẽ giới thiệu các cách điều chỉnh định dạng chữ cơ bản, cũng như một số câu lệnh để tùy biến các khoảng trống trong văn bản."
+toc-anchor-text: "Định dạng và khoảng cách"
+toc-description: "Định dạng font và các khoảng trống"
 ---
+
+# Định dạng font và các khoảng cách
 
 ## Khoảng cách giữa các đoạn văn
 
@@ -11,6 +18,7 @@ muốn lùi đầu dòng mà muốn có một khoảng trống nhỏ giữa các
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
 \usepackage{lipsum}
 \begin{document}
@@ -45,6 +53,7 @@ chiều ngang) và `\vspace` (khoảng trống theo chiều dọc).
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some text \hspace{1cm} more text.
 
@@ -68,6 +77,7 @@ monospace) và `\textsc` (chữ theo font small-caps).
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
@@ -82,6 +92,7 @@ LaTeX đều là các nhóm khác nhau; mỗi ô bảng cũng là một nhóm; h
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Normal text.
 
@@ -106,6 +117,7 @@ cỡ chữ lại như bình thường &ndash; bạn có thể xem lệnh `\par` 
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Normal text.
 

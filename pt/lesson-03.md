@@ -1,10 +1,17 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Seu primeiro documento LaTeX"
+description: "Esta lição mostra a estrutura básica de um documento LaTeX, e como produzir um PDF com ele, assim como os principais caracteres especiais usados para controlar o LaTeX."
+toc-anchor-text: "Documentos LaTeX"
+toc-description: "A estrutura básica de um documento."
 ---
+
+# Seu primeiro documento LaTeX
 
 Nosso primeiro documento LaTeX será muito simples: a ideia é lhe mostrar como um
 documento se parece e como processá-lo com sucesso.  Também é a sua primeira
-chance de ver [como usar os exemplos aqui no `learnlatex.org`](pt/help).
+chance de ver [como usar os exemplos aqui no `learnlatex.org`](help).
 
 Se você está usando uma instalação local de LaTeX, no seu editor crie um arquivo
 chamado `first.tex`, e copie-e-cole o texto abaixo, ou digite-o.  Se você está
@@ -15,6 +22,7 @@ chance de ver como as diferentes opções funcionam.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Olá mundo!
@@ -66,6 +74,8 @@ No exemplo acima o corpo do documento tem dois parágrafos (no LaTeX você separ
 parágrafos com uma ou mais linhas em branco).
 Antes do `\begin{document}` fica o _preâmbulo do documento_, que contém comandos
 para configurar a aparência do seu documento.
+O comando `\usepackage` é descrito em uma [lição futura](lesson-06), e é usado
+na maioria dos exemplos neste site para configurar a codificação das fontes.
 
 O LaTeX tem outros pares `\begin{...}` e `\end{...}`; estes são chamados
 _ambientes_.  Você deve combiná-los de forma que para cada `\begin{x}`, haja um
@@ -77,6 +87,7 @@ Podemos também adicionar comentários em um arquivo LaTeX prefixando-o com um
 `%`; vamos usar isso para mostrar a estrutura do documento:
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
+\usepackage[T1]{fontenc}
 % Um comentário no preâmbulo
 \begin{document}
 % Isto é um comentário
@@ -108,7 +119,7 @@ espaço rígido, por exemplo.  Quase todos esses caracteres são _muito_ incomun
 em texto normal, por isso eles foram escolhidos para ter significados especiais.
 Se você precisar mostrar um desses caracteres especiais no texto, colcamos mais
 informações sobre isso na
-[página de detalhes adicionais desta lição](pt/more-03).
+[página de detalhes adicionais desta lição](more-03).
 
 ## Exercise
 

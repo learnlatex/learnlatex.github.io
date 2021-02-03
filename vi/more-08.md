@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Bảng trong LaTeX"
+description: "Một vài thiết lập nâng cao cho bảng, và đôi nét về một số loại bảng phức tạp hơn."
+toc-anchor-text: "Bổ sung: Bảng"
 ---
 
 ## Những thứ khác có thể được dùng trong phần khai báo bảng
@@ -22,6 +26,7 @@ ta có thể dùng:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -49,6 +54,7 @@ trường hợp như vậy, `\multicolumn` có thể được dùng. Nhớ rằn
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -75,6 +81,7 @@ thay đổi độ dài này thành một số bất kỳ bằng lệnh `\setleng
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \setlength\tabcolsep{1cm}
@@ -97,6 +104,7 @@ cột hoặc ở hai bên bảng, và đặt đoạn mã vào vị trí đó.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -119,6 +127,7 @@ khoảng trống giữa các cột mà thêm đoạn mã vào giữa khoảng tr
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -140,6 +149,7 @@ khoảng trống giữa các cột mà thêm đoạn mã vào giữa khoảng tr
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -170,6 +180,7 @@ các đối số khác, kể cả đối số không bắt buộc đặt trong d
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -193,6 +204,7 @@ thập phân:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{booktabs}
 \usepackage{siunitx}
 \begin{document}
@@ -237,6 +249,7 @@ có thể.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
 
@@ -279,6 +292,7 @@ tự như `tabular*`, nhưng thay vì thay đổi khoảng cách giữa các c�
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \begin{document}
 
@@ -326,7 +340,7 @@ trường linh động `table`.
 Nhiều gói cung cấp các phiên bản bảng khác với cú pháp tương tự mà có cho phép
 chia bảng trên nhiều trang. Ví dụ sau sử dụng gói `longtable`:
 
-```
+```latex
 \documentclass{article}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}
@@ -374,6 +388,7 @@ về gói tại [hướng dẫn sử dụng của nó](https://texdoc.net/pkg/th
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{threeparttable}
 \begin{document}
@@ -414,6 +429,7 @@ các cột không quá hẹp so với kích thước chữ.
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{ragged2e}
 \begin{document}
@@ -463,6 +479,7 @@ Ta có thể lồng các `tabular`:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -487,6 +504,7 @@ này: ta có thể dùng `t` (**t**op &ndash; phía trên), `c` (**center** &nda
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -523,6 +541,7 @@ gia tăng "độ sâu" của chúng. Ta có thể dùng `\extrarowheight` cho vi
 
 ```latex
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \begin{document}
 

@@ -2,14 +2,14 @@
 #                                                                              #
 # Alphabetically ordered whitelisting of legitimate web robots, which obey the #
 # Robots Exclusion Standard (robots.txt). Each bot is shortly described in a   #
-# comment above the (list of) user-agent(s). Uncomment or delete bots you do   #
-# not wish to allow on your website / which do not need to visit your website. #
+# comment above the (list of) user-agent(s). Comment out or delete lines which #
+# contain User-agents you do not wish to allow on your website.                #
 # Important: Blank lines are not allowed in the final robots.txt file!         #
 # Updates can be retrieved from: https://github.com/jonasjacek/robots.txt      #
 #                                                                              #
 # This document is licensed with a CC BY-NC-SA 4.0 license.                    #
 #                                                                              #
-# Last update: 2020-02-20                                                      #
+# Last update: 2020-12-17                                                      #
 #                                                                              #
 ################################################################################
 # so.com chinese search engine

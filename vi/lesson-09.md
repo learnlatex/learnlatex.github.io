@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Tham chiếu chéo"
+description: "Bài này giải thích cách thực hiện tham chiếu chéo giữa các thành phần khác nhau trong văn bản."
+toc-anchor-text: "Tham chiếu chéo"
+toc-description: "Tham chiếu các thành phần văn bản"
 ---
+
+# Tham chiếu chéo
 
 ## Cách hoạt động của `\label` và `\ref`
 
@@ -12,6 +19,7 @@ trí khác, ta tạo tham chiếu đén vị trí đánh dấu này.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Hey world!

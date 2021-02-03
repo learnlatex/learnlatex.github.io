@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Incluindo gráficos e fazendo coisas 'flutuarem'"
+description: "Esta lição dá mais detalhes sobre boas práticas para dar nome e armazenar gráficos para usar com o LaTeX, e como você pode fazer seus próprios gráficos de dentro do LaTeX."
+toc-anchor-text: "Veja mais sobre: Incluindo gráficos e fazendo coisas 'flutuarem'"
 ---
 
 ## Nomeando arquivos de gráficos
@@ -68,6 +72,7 @@ a figura colocada no PDF exatamente onde ela está no código fonte.  O pacote
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % texto de enchimento
 \usepackage{float}
@@ -89,18 +94,19 @@ documento.
 
 ## Outros tipos de _float_
 
-[Em breve veremos](pt/lesson-08) que podemos colocar tabelas em _floats_;  elas
+[Em breve veremos](lesson-08) que podemos colocar tabelas em _floats_;  elas
 vão em um ambiente `table`.  No entanto não temos que _necessariamente_ colocar
 figuras no ambiente `figure` nem tabelas no ambiente `table`;  isto é apenas
 convenção.
 
 Você pode querer outros tipos de ambientes flutuantes (_floats_);  cada tipo é
 inserido independentemente.  Você pode fazer isso usando o pacote
-[`trivfloat`](https://ctan.org/pkg/trivloat).  Ele fornece um único comando,
-`\trivloat`, para fazer novos tipos de _floats_.
+[`trivfloat`](https://ctan.org/pkg/trivfloat).  Ele fornece um único comando,
+`\trivfloat`, para fazer novos tipos de _floats_.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % texto de enchimento
 \usepackage{trivfloat}

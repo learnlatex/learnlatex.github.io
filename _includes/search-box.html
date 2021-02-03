@@ -1,0 +1,51 @@
+<!-- DuckDuck search box start
+  About: https://duckduckgo.com/search_box
+  Parameters: https://duckduckgo.com/params
+
+  Learnlatex.org uses the following URL parameters for search result pages:
+
+  k1=-1             - Advertisements off
+  k8=%23000000      - Text color (#000000, (%23 is an encoded # char))
+  kae=%23FFFFFF     - Body background color (#FFFFFF, (%23 is an encoded # char))
+  kaf=1             - Display full URLs
+  kh=1              - Use HTTPS
+  kj=%23004980      - Header color (#004980, (%23 is an encoded # char)) - bad contrasts
+  kl=uk-en          - Country/region-language (not ISO conformant)
+  kn=1              - Open in new tab/window
+  kp=1              - Safe search on
+  ks=l              - Font size larger
+  kx=%23004980      - URL color (#004980, (%23 is an encoded # char))
+-->
+
+<!-- FIXME: Ship corresponding language search result pages (SERPS) for each language) -->
+<div
+  class="search">
+  <form
+    action="https://duckduckgo.com/"
+    class="search"
+    method="get"
+    target="_blank">
+    <input type="hidden" name="sites" value="www.learnlatex.org">
+    <input type="hidden" name="k1"    value="-1">
+    <input type="hidden" name="k8"    value="#000000">
+    <input type="hidden" name="kae"   value="#FFFFFF">
+    <input type="hidden" name="kaf"   value="1">
+    <input type="hidden" name="kh"    value="1">
+    <input type="hidden" name="kj"    value="#004980">
+    <input type="hidden" name="kl"    value="uk-en">
+    <input type="hidden" name="kn"    value="1">
+    <input type="hidden" name="kp"    value="1">
+    <input type="hidden" name="ks"    value="l">
+    <input type="hidden" name="kx"    value="#004980">
+    <input 
+      class="search__box"
+      type="text"
+      name="q" 
+      maxlength="255" 
+      placeholder="{{ site.data.translations['informational-elements_search'][page.lang] }} &hellip;">
+    <button
+      class="search__button"
+      type="submit">
+    </button>
+  </form>
+</div>

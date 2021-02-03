@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Các công thức toán học"
+description: "Bài này giải thích các cách khác nhau để thêm các công thức toán học vào văn bản, cũng như một vài lệnh công thức toán cơ bản trong LaTeX."
+toc-anchor-text: "Công thức toán học"
+toc-description: "Chế độ toán trong LaTeX"
 ---
+
+# Các công thức toán học
 
 ## Chế độ toán (math mode)
 
@@ -12,6 +19,7 @@ có một dòng riêng cho nó.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A sentence with inline mathematics: $y = mx + c$. % Inline
 
@@ -50,6 +58,7 @@ này được đánh dấu bằng `^` và `_` tương ứng.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Superscripts $a^{b}$ and subscripts $a_{b}$.
 \end{document}
@@ -64,6 +73,7 @@ Có *rất nhiều* các câu lệnh toán học. Một vài lệnh khá đơn g
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some mathematics: $y = 2 \sin \theta^{2}$.
 \end{document}
@@ -91,6 +101,7 @@ gói `amsmath` (sẽ được nói tới sau).
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A paragraph about a larger equation
 \[
@@ -108,6 +119,7 @@ môi trường `equation`.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 A paragraph about a larger equation
 \begin{equation}
@@ -133,6 +145,7 @@ trong khóa này.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 
 \begin{document}
@@ -157,6 +170,7 @@ Ngoài ra gói còn cung cấp các môi trường để hỗ trợ việc viế
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 AMS matrices.
@@ -198,6 +212,7 @@ một ma trận theo cách sau:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 The matrix $\mathbf{M}$.
 \end{document}
@@ -213,6 +228,7 @@ khi ta muốn thêm một vài từ theo font bình thường, khi đó ta có t
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
 $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $

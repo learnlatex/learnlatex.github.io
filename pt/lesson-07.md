@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Incluindo gráficos e fazendo coisas 'flutuarem'"
+description: "Esta lição mostra como você pode incluir externos no seu documento, como mudar a sua aparência, e como fazê-los flutuar para a posição apropriada no PDF."
+toc-anchor-text: "Usando gráficos"
+toc-description: "Aparência, espaçamento e posicionamento."
 ---
+
+# Incluindo gráficos e fazendo coisas 'flutuarem'
 
 ## Incluindo gráficos
 
@@ -9,6 +16,7 @@ comando `\includegraphics` ao LaTeX:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -26,7 +34,7 @@ você pode escrever, por exemplo, `example-image.png`. (O pacote `graphicx` vai
 tentar adivinhar a extensão se você não der uma.)
 
 Você vai perceber que usamos um novo ambiente aqui, `center`, para colocar a
-imagem centralizada horizontalmente na página.  [Mais adiante](pt/lesson-11),
+imagem centralizada horizontalmente na página.  [Mais adiante](lesson-11),
 vamos falar mais sobre espaçamento e posicionamento.
 
 ## Alterando a aparência de imagens
@@ -42,6 +50,7 @@ automaticamente para que proporção fique correta.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -61,6 +70,7 @@ girá-las usando `angle`.  Outra coisa que você pode querer fazer é cortar (co
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 
 \begin{document}
@@ -79,6 +89,7 @@ para que elas não deixem grandes espaços em branco na página.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{lipsum}  % produzir texto de preenchimento
 
@@ -108,7 +119,7 @@ especificadores diferentes:
 - `b` final da página (`bottom`)
 - `p` uma página dedicada para _floats_ (float `page`)
 
-[Mais adiante](pt/lesson-09) vamos ver como fazer referências cruzadas a
+[Mais adiante](lesson-09) vamos ver como fazer referências cruzadas a
 _floats_ para que você possa indicá-los do texto.
 
 Você provavelmente percebeu que centralizamos a imagem usando `\centering` ao

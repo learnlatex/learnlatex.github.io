@@ -1,5 +1,10 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "LaTeX engines for Japanese"
+description: ""
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
 
 ## p{{site.latex}}

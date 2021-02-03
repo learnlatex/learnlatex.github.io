@@ -1,13 +1,20 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Usando classes de documentos para influenciar o design"
+description: "Esta lição explica o que é uma classe de documento e como ela pode influenciar a aparência de um documento, e lista as principais classes que você vai encontrar em uma distribuição de TeX."
+toc-anchor-text: "Classes de Documento"
+toc-description: "Configurando a aparência geral do documento."
 ---
+
+# Usando classes de documentos para influenciar o design
 
 ## O que uma classe de documento faz
 
 Você deve ter percebido que todos os documentos LaTeX que criamos até agora
 começam com uma linha com `\documentclass`, e que `\documentclass{article}` foi
 a escolha mais comum.  (Nós usamos `\documentclass{report}` na
-[lição anterior](pt/lesson-04) para testar o comando `\chapter`.) Essa linha é
+[lição anterior](lesson-04) para testar o comando `\chapter`.) Essa linha é
 necessária em todos os documentos em LaTeX, e é (quase) sempre o primeiro
 comando que você deve usar.
 
@@ -44,6 +51,7 @@ os comandos disponíveis são um pouco diferentes:
 
 ```latex
 \documentclass{letter}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{letter}{Um endereço\\Em uma rua\\de Alguma Cidade}
@@ -60,7 +68,7 @@ O texto vai aqui
 ```
 
 Veja como ``\\`` é usado para separar linhas do endereço;  vamos abordar quebra
-de linhas [adiante](pt/lesson-11).  Também veja como a classe `letter` cria um
+de linhas [adiante](lesson-11).  Também veja como a classe `letter` cria um
 novo ambiente para cada carta, e tem comandos especializados.
 
 As classes padrão `article`, `report` e `book` têm opções `10pt`, `11pt` e
@@ -73,7 +81,7 @@ As classes padrão são muito estáveis, mas isso significa que também são bem
 conservativas quanto à aparência e à gama de comandos disponíveis.  Ao longo do
 tempo, algumas classes poderosas foram escritas, que lhe permitem alterar o
 design tem ter que fazer coisas manualmente (que nós abordaremos
-[adiante](pt/lesson-11)).
+[adiante](lesson-11)).
 
 A _American Mathematical Society_ fornece variantes das classes padrão (`amsart`
 e `amsbook`) com um design mais tradicional, mais próximo do que é usado em
@@ -87,7 +95,7 @@ apenas uma classe `memoir` que é como uma extensão de `book`.
 Essas classes extendidas têm muitos pontos de personalização, que vamos explorar
 um pouco em um exercício.  Você pode se perguntar como sabemos quais são esses
 pontos de personalização;  vamos abordar isso
-[em uma lição adiante](pt/lesson-15), mas você pode pular se quiser!
+[em uma lição adiante](lesson-15), mas você pode pular se quiser!
 
 ## Apresentações
 
@@ -95,7 +103,7 @@ A classe `slides` foi desenvolvida para fazer slides físicos na década de 1980
 então não possui recursos para criar apresentações interativas em PDF.  Há
 classes modernas que fazem exatamente isso:  elas são bem especializadas
 comparadas a documentos gerais no LaTeX, então as abordamos na lição de
-[informações adicionais](pt/more-05).
+[informações adicionais](more-05).
 
 ## Exercícios
 
@@ -104,6 +112,7 @@ KOMA-Script, e `memoir` afeta a aparência do documento.
 
 ```latex
 \documentclass{article} % Mude a classe aqui
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

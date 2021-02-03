@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Acessando documentação e obtendo ajuda"
+description: "Esta lição mostra as principais fontes de documentação para pacotes e software relacionado ao LaTeX, e como você pode buscar ajuda quando estiver com problemas."
+toc-anchor-text: "Ajuda & documentação"
+toc-description: "Acessando ajuda e documentação."
 ---
+
+# Acessando documentação e obtendo ajuda
 
 Há várias formas de acessar a documentação de um pacote ou classe.
 
@@ -79,6 +86,7 @@ Como construir um MWE?  Normalmente o mais fácil é começar de:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Text
 \end{document}
