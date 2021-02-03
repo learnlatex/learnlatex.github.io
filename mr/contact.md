@@ -1,28 +1,41 @@
 ---
 layout: "page"
-lang: "en"
-title: Contact
-permalink: /en/contact
+lang: "mr"
+title: "संपर्क"
+permalink: /mr/contact
 ---
 
-# Contact
+# संपर्क
 
-## Individual Support
+## वैयक्तिक मदत
 
-Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
+ह्या संकेतस्थळावर आम्ही वैयक्तिक मदत पुरवत नाही व त्यामुळे मदतीकरिता आलेल्या पत्रांना आम्ही
+दुर्दैवाने उत्तर देऊ शकणार नाही. कृपया [लाटेक् प्रकल्पाच्या मदत-पृष्ठावरीलThe LaTeX Project's
+help page](https://www.latex-project.org/help/) मार्गांचा अवलंब करून मदत मिळवण्याचा
+प्रयत्न करा. तसेच मराठीतून लाटेक्-संबंधी प्रश्न विचारायचे असल्यास
+[टॉपआन्सर्स (टेक्-मराठी)](https://topanswers.xyz/tex-mar-deva) ह्या
+संकेतस्थळाचा उपयोग करा.
 
-## Website Team
+## संकेतस्थळ
 
-The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details. Recent Changes are listed in the [Change Log](../CHANGELOG).
+ह्या संकेतस्थळाची [बीज आज्ञावली](https://github.com/learnlatex/learnlatex.github.io/)
+गिटहबवर आहे. अधिक तपशिलांकरिता कृपया [योगदान-पृष्ठावरील सूचना](../CONTRIBUTING) व
+[परवानाविषयक](../LICENSE) माहिती पाहा. नवीन बातम्या [बदलांच्या
+पृष्ठावर](../CHANGELOG) पाहता येतील.
 
-You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+वाचकांना [गिट-संग्राहिकेवर
+तक्रार](https://github.com/learnlatex/learnlatex.github.io/issues) नोंदवता येऊ शकते
+अथवा सूचनांविषयीचे [इ-पत्र](mailto:texfaq@texfaq.org) पाठवता येऊ शकते.
 
-## Impressum
+## हक्क
 
-<p>Joseph Wright<br>
-2, Dowthorpe End<br>
-Earls Barton<br>
-Northampton<br>
-NN6 0NH<br>
-United Kingdom<br>
-<br>joseph.wright@morningstar2.co.uk</p>
+<p>
+  जोसेफ राईट<br>
+  २, डॉथोर्पे एन्ड<br>
+  अर्ल्स बार्टन<br>
+  नॉर्थॅंप्टन<br>
+  एनएन६ ०एनएएच<br>
+  युनायटेड किंगडम<br>
+  <br>
+  joseph.wright@morningstar2.co.uk
+</p>
