@@ -22,7 +22,7 @@ permalink: /fr/
        <a href="./mission">En savoir plus sur notre mission &hellip;</a></p>
   </section>
   <section>
-    <h3 class="text-columns__heading">Comment ça Marche</h3>
+    <h3 class="text-columns__heading">Comment ça marche</h3>
       <p>Nous avons pris les concepts les plus importants dont vous aurez besoin,
          et nous en avons fait <em>16 courtes leçons</em>, qui ne vous demanderont
          pas beaucoup de temps pour le suivre. Dans chaque leçon, nous proposons
