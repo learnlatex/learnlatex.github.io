@@ -1,23 +1,32 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Dealing with errors"
+description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
+toc-anchor-text: "Error handling"
+toc-description: "Dealing with unexpected behaviors."
 ---
 
+# Dealing with errors
+
+<span
+  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
 
 Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
 closer to working with programming language compilers, and as in programming
 users may make errors in their input and so need to deal with error messages
 reported by the system.
 
-This page gives examples of several common errors.
+## Common errors
 
-Each error example has some discussion about the form of the error
+This page gives examples of several common errors. Each error example has some discussion about the form of the error
 message.
 
 It may be instructive to try the examples but also use the
 edit features to try to fix the documents and test that you can
 resolve the errors.
 
-## pdflatex not found
+### pdflatex not found
 
 A common first error that people see when starting is:
 
@@ -27,7 +36,7 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-no Windows or
+on Windows or
 
 ```
 bash: pdflatex: command not found
@@ -42,10 +51,11 @@ installed or not found.  A common mistake is to install an _editor_
 such as TeXworks or TeXShop but without installing a TeX system such as
 TeX Live or MiKTeX.
 
-## Anatomy of a {{ site.tex }} error message
+### Anatomy of a {{ site.tex }} error message
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \newcommand\mycommand{\textbold{hmmm}}
 
@@ -62,7 +72,7 @@ This produces a multi-line message in the log file.
 ! Undefined control sequence.
 \mycommand ->\textbold 
                        {hmmm}
-l.7 My command is used here \mycommand
+l.8 My command is used here \mycommand
                                       .
 ? 
 ```
@@ -99,11 +109,12 @@ This can be particularly misleading if shown as
 as it makes it appear that `\mycommand` is not defined.
 
 
-## Mismatched braces
+### Mismatched braces
 
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage[leqno}{amsmath}
 
@@ -126,16 +137,17 @@ lines do accurately display the location of the error by the use of
 the linebreak showing how far TeX had read:
 
 ```
-l.3 \usepackage[leqno}
+l.4 \usepackage[leqno}
                       {amsmath}
 ```
 {: .noedit :}
 
 
-## Missing files
+### Missing files
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmathz}
 
@@ -156,10 +168,11 @@ typo as here, which may be corrected by fixing the package name, or
 that the file really is missing and needs to be installed on the
 current system.
 
-## Blank lines in display math
+### Blank lines in display math
 
-```
+```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
@@ -191,9 +204,9 @@ Produce small documents with different errors and note the form of the error mes
 
 <script>
   window.addEventListener('load', function(){
-      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(2, 31, false);
-      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(2, 18, false);
-      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(2, 20, false);
-      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(6, 0, false);
+      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(3, 31, false);
+      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(3, 18, false);
+      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(3  , 20, false);
+      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(7, 0, false);
   }, false);
 </script>

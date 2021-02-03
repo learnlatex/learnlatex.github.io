@@ -1,33 +1,46 @@
 ---
-title: "पुढील अभ्यासाकरिता"
+layout: "lesson"
+lang: "en"
+title: "LaTeX Showcase - Examples for further study"
+description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
+toc-anchor-text: "LaTeX Showcase"
+toc-description: "Examples for further study."
 ---
 
-ह्या अभ्यासक्रमात लाटेक्-च्या अतिशय महत्त्वाच्या आज्ञांची ओळख करून देण्यात आली आहे,
-परंतु लाटेक् आणखी अनेक क्षेत्रांमध्ये वापरले जाते. त्याकरिता विविध आज्ञासंच तयार केले गेले
-आहेत. आम्ही येथे कोणत्याही स्पष्टीकरणाशिवाय काही उदाहरणे जोडत आहोत. सोबत त्या आज्ञासंचांच्या
-दस्तऐवजांचे [टेक्-डॉक](https://texdoc.net) ह्या संकेतस्थळावरील दुवे आहेत.
-ही उदाहरणे (विशेष नोंद नसल्यास) त्या दस्तऐवजांमधूनच घेतली आहेत.
+# Showcase
 
-**टीप** येथे नोंदवले गेलेले आज्ञासंच इतरांपेक्षा चांगले आहेत म्हणून इथे नोंदवले गेले
-  आहेत असे मुळीच नाही. आम्हाला केवळ लाटेक्-च्या निरनिराळ्या क्षेत्रातील वापराची
-  काही उदाहरणे दाखवायची होती जी ह्या अभ्यासक्रमात इतरत्र दाखवता येणे शक्य नव्हते.
+<span
+  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
 
-## रसायनशास्त्र
+This course has given an overview of the core features of LaTeX.
+LaTeX has vast array of extension packages and is used in many subject
+areas.  We give here some examples, with no explanation here but links
+to the package documentation at [texdoc.net](https://texdoc.net).
+The examples are taken from the package documentation unless otherwise noted.
 
-### [`mhchem`](https://texdoc.net/pkg/mhchem)
+<p 
+  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
+
+## Chemistry
+
+Package: [`mhchem`](https://texdoc.net/pkg/mhchem)
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{mhchem}
 \begin{document}
 \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
 \end{document}
 ```
 
-## भाषाविज्ञान
-### [`forest`](https://texdoc.net/pkg/forest)
+## Linguistics
+
+Package: [`forest`](https://texdoc.net/pkg/forest)
+
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{forest}
 \begin{document}
 \begin{forest}
@@ -43,12 +56,14 @@ title: "पुढील अभ्यासाकरिता"
 \end{document}
 ```
 
-## बुद्धिबळ
+## Chess
 
 <!-- not 2017 -->
-### [`xskak`](https://texdoc.net/pkg/xskak)
+Package: [`xskak`](https://texdoc.net/pkg/xskak)
+
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{xskak}
 \begin{document}
 \newchessgame
@@ -61,88 +76,89 @@ Position after 2.\,\xskakget{lan}
 ```
 
 
-## काव्य
+## Poetry
 
-### [`memoir`](https://texdoc.net/pkg/memoir)
+Package: [`memoir`](https://texdoc.net/pkg/memoir)
 
-मेमॉयर लाटेक्-वर्गाचे उदाहरण देण्याकरिता एका मराठी कवितेची अक्षरजुळणी करून दाखवत आहोत.
-**हे उदाहरण मेमॉयरच्या दस्तऐवजातील नाही आहे.**
 
 ```latex
-%!TeX xelatex
 \documentclass{memoir}
-\usepackage{marathi}
-
+\usepackage[T1]{fontenc}
 \begin{document}
-\poemtitle*{औदुंबर}
-\settowidth{\versewidth}{शेतमळ्यांची दाट लागली हिरवी गरदी पुढे.}
+\settowidth{\versewidth}{Nay, nay, I leave thee not,
+                                       thou goest too}
 \begin{verse}[\versewidth]
-    ऐल तटावर पैल तटावर हिरवाळी घेउन\\
-    निळासांवळा झरा वाहतो बेटाबेटातुन.
-    
-    चार घरांचे गांव चिमुकले पैल टेकडीकडे\\
-    शेतमळ्यांची दाट लागली हिरवी गरदी पुढे.
-    
-    पायवाट पांढरी तयांतुन अडवी तिडवी पडे\\
-    हिरव्या कुरणांमधुनि चालली काळ्या डोहाकडे.
-    
-    झांकळुनी जळ गोड काळिमा पसरी लाटांवर\\
-    पाय टाकुनी जळांत बसला असला औदुंबर.
+\ldots \\*
+His judgement rendered, he dissolved the Thing. \\*
+\flagverse{Ingeborg} And your decision? \\*
+\flagverse{Fridthjof} \vinphantom{And your decision?}
+
+                                   Have I ought to choose? \\*
+Is not mine honour bound by his decree? \\*
+And that I will redeem through Angantyr \\*
+His paltry gold doth hide in Nastrand’s flood. \\*
+Today will I depart. \\*
+\flagverse{Ingeborg} \vinphantom{Today will I depart.}
+
+                                 And Ingeborg leave? \\*
+\flagverse{Fridthjof} Nay, nay, I leave thee not,
+
+                                   thou goest too. \\*
+\flagverse{Ingeborg} Impossible! \\*
+\flagverse{Fridthjof} \vinphantom{Impossible!}
+
+                                   O! hear me, ere thou answerest.
 \end{verse}
 \end{document}
 ```
-सौजन्य - [लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर](https://ctan.org/pkg/latex-mr?lang=en)
 
-## आकृत्या
+## Drawing
 <!-- not 2017 -->
-### [`tikz`](https://texdoc.net/pkg/tikz)
-
-हे उदाहरण आज्ञासंचाच्या दस्तऐवजातील आहे, परंतु त्यामधील नावे मराठी करण्यासाठी मराठी हा आज्ञासंच वापरून
-मराठी अक्षरे वापरण्यात आली आहेत.
+Package: [`tikz`](https://texdoc.net/pkg/tikz)
 
 <!-- {% raw %} -->
 ```latex
-%!TeX xelatex
 \documentclass{article}
-\usepackage{marathi}
+\usepackage[T1]{fontenc}
 \usepackage{tikz}
 \usetikzlibrary {perspective}
 
 \begin{document}
-    
-    \newcommand\simplecuboid[3]{%
-        \fill[gray!80!white] (tpp cs:x=0,y=0,z=#3)
-        -- (tpp cs:x=0,y=#2,z=#3)
-        -- (tpp cs:x=#1,y=#2,z=#3)
-        -- (tpp cs:x=#1,y=0,z=#3) -- cycle;
-        x
-        \fill[gray] (tpp cs:x=0,y=0,z=0)
-        -- (tpp cs:x=0,y=0,z=#3)
-        -- (tpp cs:x=0,y=#2,z=#3)
-        -- (tpp cs:x=0,y=#2,z=0) -- cycle;
-        \fill[gray!50!white] (tpp cs:x=0,y=0,z=0)
-        -- (tpp cs:x=0,y=0,z=#3)
-        -- (tpp cs:x=#1,y=0,z=#3)
-        -- (tpp cs:x=#1,y=0,z=0) -- cycle;}
-    \newcommand{\simpleaxes}[3]{%
-        \draw[->] (-0.5,0,0) -- (#1,0,0) node[pos=1.1]{क};
-        \draw[->] (0,-0.5,0) -- (0,#2,0) node[pos=1.2]{ख};
-        \draw[->] (0,0,-0.5) -- (0,0,#3) node[pos=1.1]{ग};}
-    \begin{tikzpicture}[3d view]
-    \simplecuboid{2}{2}{2}
-    \simpleaxes{2}{2}{2}
-    \end{tikzpicture}
+
+\newcommand\simplecuboid[3]{%
+\fill[gray!80!white] (tpp cs:x=0,y=0,z=#3)
+-- (tpp cs:x=0,y=#2,z=#3)
+-- (tpp cs:x=#1,y=#2,z=#3)
+-- (tpp cs:x=#1,y=0,z=#3) -- cycle;
+x
+\fill[gray] (tpp cs:x=0,y=0,z=0)
+-- (tpp cs:x=0,y=0,z=#3)
+-- (tpp cs:x=0,y=#2,z=#3)
+-- (tpp cs:x=0,y=#2,z=0) -- cycle;
+\fill[gray!50!white] (tpp cs:x=0,y=0,z=0)
+-- (tpp cs:x=0,y=0,z=#3)
+-- (tpp cs:x=#1,y=0,z=#3)
+-- (tpp cs:x=#1,y=0,z=0) -- cycle;}
+\newcommand{\simpleaxes}[3]{%
+\draw[->] (-0.5,0,0) -- (#1,0,0) node[pos=1.1]{x};
+\draw[->] (0,-0.5,0) -- (0,#2,0) node[pos=1.1]{y};
+\draw[->] (0,0,-0.5) -- (0,0,#3) node[pos=1.1]{z};}
+\begin{tikzpicture}[3d view]
+   \simplecuboid{2}{2}{2}
+   \simpleaxes{2}{2}{2}
+\end{tikzpicture}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
 ## Function plotting
-### [`pgfplots`](https://texdoc.net/pkg/plots)
 
+Package: [`pgfplots`](https://texdoc.net/pkg/plots)
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{pgfplots}
 \pgfplotsset{width=7cm,compat=1.17}
 
@@ -164,15 +180,15 @@ Position after 2.\,\xskakget{lan}
 ```
 <!-- {% endraw %} -->
 
-## संगीत
+## Music
 
-
-### [`musixtex`](https://texdoc.net/pkg/musixtex)
+Package: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{musixtex}
 
 \begin{document}

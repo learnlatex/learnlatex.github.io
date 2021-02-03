@@ -1,36 +1,30 @@
 ---
-title: "लाटेक्-सह मराठी"
+layout: "lesson"
+lang: "en"
+title: "Language-specifics for English"
+description: "This lesson shows language-specific details for typesetting with LaTeX in English. The focus is on hyphenation, where UK and US traditions are different."
 next: "extra-01"
+toc-anchor-text: "English Language-specifics"
+toc-description: "Typesetting with LaTeX in English."
 ---
 
-## देवनागरी लिपी
+# Language-specifics for English
 
-लाटेक् इंग्लिश वापरकर्त्यांचा विचार करून घडवण्यात आले, त्यामुळे मराठीचा वापर
-सुलभ नाही. सर्वात महत्त्वाची अडचण देवनागरी लिपीचा वापर. ASCII अक्षरांचा वापर
-करणाऱ्या भाषा लाटेक्-सह सहज वापरता येतात, परंतु ASCII अक्षरांमध्ये देवनागरी लिपीचा
-समावेश नाही. देवनागरीकरिता युनिकोड प्रणाली वापरावी लागते. लाटेक्-मध्ये झी-लाटेक् व
-लुआ-लाटेक् ह्या चालकांसह युनिकोड अक्षरे वापरता येतात. टेक्-वितरणासह शोभिका हा 
-युनिकोड-आधारित टंक येतो. शिवाय [एकटाईप-टंक](https://ctan.org/pkg/ektype-tanka)
-ह्या नावाचा एक आज्ञासंच आणखी काही युनिकोड-आधारित टंक पुरवतो. लाटेक्-मध्ये मराठी
-लिहायचे सर्वात कमी कष्टात ते पुढील प्रकारे ते साधता येऊ शकते. पुढील उदाहरण झी-लाटेक्
-अथवा लुआ-लाटेक् ह्यांपैकी कोणत्याही चालकासह चालवता येऊ शकते.
+<span
+  class="summary">This lesson shows language-specific details for typesetting with LaTeX in English with a focus on hyphenation, where UK and US traditions are different.</span>
 
-```latex
-%!TeX xelatex
-\documentclass{article}
-\usepackage{marathi}
+## Hyphenation
 
-\begin{document}
-    नमस्कार!
-\end{document}
-```
-
-केवळ इंग्रजी मजकूर लिहायचा असेल तर पुढील उदाहरणदेखील पुरेसे आहे.
+LaTeX was written for use with English, and so there are very few
+language-specific issues facing authors in English. The main one
+is hyphenation: UK and US traditions are different. LaTeX starts out
+using US English patterns, but you can switch to UK ones using `babel`.
 
 ```latex
 \documentclass{article}
-
+\usepackage[T1]{fontenc}
+\usepackage[UKenglish]{babel}
 \begin{document}
-    Hello world!
+Some text
 \end{document}
 ```

@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: Using document classes to influence design"
+description: "This lesson gives information on more specialized document classes for LaTeX."
+toc-anchor-text: "More on: Using document classes to influence design"
 ---
 
 ## Journal-specific classes
@@ -22,6 +26,7 @@ give you an example of how it works:
 
 ```latex
 \documentclass{beamer}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{frame}{A first frame}
@@ -56,6 +61,7 @@ class. It automatically sets the size of the page to surround the printed conten
 
 ```latex
 \documentclass{standalone}
+\usepackage[T1]{fontenc}
 \begin{document}
 A simple document: this will be a very small box!
 \end{document}

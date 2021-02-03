@@ -1,18 +1,30 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Formatting: fonts and spacing"
+description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
+toc-anchor-text: "Fonts & spacing"
+toc-description: "Text formatting for visual presentation."
 ---
 
-## Paragraph spacing
+# Formatting: fonts and spacing
+
+<span
+  class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>
 
 We have already seen that a blank line in your input will generate a new
 paragraph in LaTeX. This shows up as the paragraph will start with an
 indent.
+
+## Paragraph spacing
+
 One common style is to have no indents for paragraphs, but instead
 to have a 'blank line' between them. We can achieve that using the `parskip`
 package.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
 \usepackage{lipsum} % Just for some filler text
 \begin{document}
@@ -27,7 +39,7 @@ certainly want a new paragraph or to use `parskip`, as we've just seen,
 to put a 'blank line' between paragraphs.
 
 There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph
+starting a new paragraph:
 
 - At the end of table rows
 - Inside the `center` environment
@@ -48,6 +60,7 @@ for that.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some text \hspace{1cm} more text.
 
@@ -59,7 +72,7 @@ Even more text.
 
 ## Explicit text formatting
 
-We saw [a while ago](lesson-03) that most of the time logical structure is
+We wrote [in lesson 3](lesson-03) that most of the time logical structure is
 preferable. But sometimes you want to make text bold, or italic, or monospaced,
 etc. There are two types of command for this: ones for short pieces of text,
 and ones for 'running' material.
@@ -69,6 +82,7 @@ For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
@@ -83,6 +97,7 @@ or we can use `{...}` to make an explicit group.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Normal text.
 
@@ -104,6 +119,7 @@ _before_ changing the font size back; see how we add an explicit `\par`
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Normal text.
 

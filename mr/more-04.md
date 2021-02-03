@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: Logical structure"
+description: "This lesson shows how to set the document title, and how to make description lists."
+toc-anchor-text: "More on: Logical structure"
 ---
 
 ## Document titles
@@ -9,6 +13,7 @@ to set up 'meta-data' and one to use it.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 \author{A.~N.~Other \and D.~Nobacon}
 \title{Some things I did}
@@ -38,6 +43,7 @@ another one, less common: the "descriptive lists".
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{description}

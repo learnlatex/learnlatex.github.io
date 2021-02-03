@@ -1,14 +1,23 @@
 ---
-title: "रचना"
+layout: "lesson"
+lang: "en"
+title: "Logical structure"
+description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
+toc-anchor-text: "Logical structure"
+toc-description: "Structure and visual presentation."
 ---
 
-तुमच्या आज्ञावलीच्या रचनेवर लक्ष केंद्रित करण्यासाठी लाटेक्-मध्ये अनेक मार्ग उपलब्ध आहेत.
+# Logical structure
+
+<span
+  class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
+
 LaTeX provides ways to concentrate on the logical structure of your document, as well as the
 ability to directly set the appearance. Most of the time, it's much better to use
 methods that focus on structure, as that makes it easy to reuse or alter
 appearance when you have to.
 
-## A first example
+## Structure and visual presentation
 
 We'll start with an example contrasting one of the most common logical markup
 commands in LaTeX, `\emph`, with simply making something italic. (In print,
@@ -16,6 +25,7 @@ that's usually how things are emphasised.)
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some text with \emph{emphasis and \emph{nested} content}.
 
@@ -44,6 +54,7 @@ document.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Hey world!
 
@@ -93,6 +104,7 @@ There are two common types of list built in to LaTeX.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 Ordered

@@ -1,76 +1,99 @@
 ---
-title: "लाटेक्-सह दस्तऐवज कसे बनवाल?"
+layout: "lesson"
+lang: "en"
+title: "Working with LaTeX"
+description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
+toc-anchor-text: "Working with LaTeX"
+toc-description: "TeX systems and LaTeX text editors."
 ---
 
-संगणकावरील काही इतर आज्ञावल्यांप्रमाणे, लाटेक् ही आज्ञावली एकाच स्तरावर काम 
-करणारी नाही. लाटेक् दोन स्वतंत्र स्तरांवर काम करणारी आज्ञावली आहे. त्यांचे विभाजन
-आपण पुढीलप्रमाणे करू :
+# Working with LaTeX
 
-- टेक्-वितरण
-- लाटेक्-संपादक
+<span
+  class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
 
-## टेक्-वितरणे
 
-लाटेक्-सह काम करताना टेक्-वितरण सर्वात महत्त्वाचे असते. टेक्-वितरण म्हणजे काही पडद्यामागील
-आज्ञावल्या व धारिका असतात, ज्यांमुळे लाटेक् कार्य करू शकते, परंतु बहुतांश वेळा वापरकर्ते ह्या
-धारिकांचा प्रत्यक्ष वापर करत नाहीत.
+Unlike many computer programs, LaTeX is not a single application containing
+'everything' in one. Instead, there are separate programs that work together.
+We can divide those up into two things you actually need:
 
-सद्यस्थितीत दोन महत्त्वाची टेक्-वितरणे उपलब्ध आहेत,
-[मिक-टेक्](https://www.miktex.org) व [टेक्-लाईव्ह](https://tug.org/texlive). दोन्ही वितरणे
-लिनक्स, विंडोज् व मॅक ह्या प्रणाल्यांवर उपलब्ध आहेत. मिक-टेक् विंडोज् वापरकर्त्यांकरिता अधिक 
-उपयुक्त आहे; मॅक वापरकर्त्यांकरिता टेक्-लाईव्हचे [मॅक-टेक्](http://www.tug.org/mactex/) हे 
-उपवितरण उपलब्ध आहे. प्रत्येक टेक्-वितरणाचे [काही फायदे](https://tex.stackexchange.com/questions/20036)
-आहेत. लाटेक् प्रकल्पाकडून देण्यात येणारे [काही सल्लेदेखील](https://www.latex-project.org/get/) पाहा.
+- A _TeX system_
+- A text editor (often a LaTeX-specific one)
 
-टेक्-लाईव्ह हे सर्व प्रणाल्यांवर चालणारे व कार्यक्षमतेच्या दृष्टीने अधिक प्रगत असल्याने आम्ही असे
-सुचवू की खात्री नसल्यास टेक्-लाईव्ह हे वितरण निवडावे. हे वितरण टेक्-यूजर्स-ग्रुप (टीयूजी) ह्या
-विश्वसनीय संस्थेद्वारे विकसित केले गेले आहे.
+## LaTeX systems
 
-## संपादक
+The core of working with LaTeX is having a TeX system available. A TeX system is a set
+of 'behind the scenes' programs and files that are needed to make LaTeX work, but
+most of the time you don't directly 'run' this.
 
-लाटेक्-धारिका ह्या केवळ मजकूररूपी असतात व त्यामुळे कोणत्याही संपादकासह त्यांत बदल करता येतात,
-परंतु लाटेक्-केंद्री संपादकांचा वापर काही वेळा उपयोगी ठरतो, कारण एका टिचकीसह धारिका चालवणे, अंतर्भूत
-असणारा पीडीएफ्-वाचक, धारिकेतील आज्ञांना ठळकपणे वेगळे दाखवण्याची व्यवस्था असे काही फायदे
-लाटेक्-संपादकांसह वापरता येतात. शिवाय बहुतांश संपादकांसह सिंक-टेक् ह्या आधुनिक आज्ञावलीचा 
-वापर करून बीजधारिकेतून फलितधारिकेत (तसेच ह्याउलट) थेट पोहोचण्याची सुविधा वापरता येते.
+There are two major TeX systems available today,
+[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
+are available for Windows, macOS and Linux.
+MiKTeX has a strong background on Windows;
+on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).
+There are [advantages to each
+system](https://tex.stackexchange.com/questions/20036), and you might want to
+look at [some more advice from the LaTeX
+Project](https://www.latex-project.org/get/).
 
-पुष्कळ लाटेक् संपादक आज उपलब्ध आहेत. त्यांची एक [समावेशक यादी](https://tex.stackexchange.com/questions/339/latex-editors-ides) स्टॅक-एक्सचेन्जवर उपलब्ध आहे.
-[टेक्-वर्क्स](https://tug.org/texworks) हा साधा लाटेक् संपादक टेक्-लाईव्ह व मिक-टेक् ह्या वितरणांसह
-विंडोज व लिनक्स प्रणाल्यांवर उपलब्ध आहे, तसेच [टेक्-शॉप](https://pages.uoregon.edu/koch/texshop/)
-मॅक-टेक् ह्या वितरणासह उपलब्ध आहे.
+As TeX Live is available on all common platforms, and as it has some performance
+advantages, we recommend that if you are unsure which system to install, you
+choose TeX Live.
 
-तुम्ही जो लाटेक् संपादक निवडाल तो तुमच्या संगणकावर टेक्-वितरण बसवल्यानंतरच स्थापित करा. त्यामुळे
-त्याला टेक्-वितरणातील पत्ते आपसुक मिळतात.
+## Editors
 
-## महाजालावर लाटेक्
+LaTeX files are simply plain text, so they can be edited with any text editor.
+However, it's most convenient to have an editor that is designed to work with
+LaTeX, as they provide features like one-click compilation of your files,
+built-in PDF viewers, and syntax highlighting. A really useful feature in all
+modern LaTeX editors is SyncTeX: the ability to click on your source and go
+straight to your PDF, or back the other way.
 
-आज महाजालावर अनेक संकेतस्थळे आहेत जी टेक्-वितरण व टेक्-संपादक नसतानाही
-लाटेक् आज्ञावल्या चालवून फलित धारिका देऊ शकतात. ह्या संकेतस्थळांवर तुमच्या
-बीजधारिका संपादित करता येतात. त्यावर पडद्यामागे लाटेक् आज्ञावली चालवली जाते
-व पीडीएफ् फलितधारिका दाखवली जाते.
+There are many more LaTeX editors than we can hope to list here: there is a
+[comprehensive list on
+StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
+A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
+and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
+is included in MacTeX.
 
-काही संकेतस्थळांवर खात्याशिवाय लाटेक् वापरता येते. आम्हीदेखील असेच एक संकेतस्थळ
-वापरत आहोत ज्याचे नाव [लाटेक् सीजीआय](https://latexcgi.xyz) आहे. ह्या संकेतस्थळासह
-लाटेक् आज्ञावलीचे संपादन करता येते व संपादित धारिका चालवताही येतात.
-आणखी पद्धतशीरपणे काम पूर्ण करण्याकरिता काही संकेतस्थळांवर खाते तयार करता येते व
-लाटेक् धारिका चालवता येतात. खाते तयार केल्यामुळे संकेतस्थळास तुमचे काम जतन करता
-येते व संकेतस्थळावर येणारा बोजा कमी करता येतो. इथले काही दुवे वापरून तुम्ही [ओव्हरलीफ](https://www.overleaf.com),
-ह्या प्रसिद्ध महाजालावरील संपादकावर धारिका चालवू शकता. 
-ह्याव्यतिरिक्त काही संकेतस्थळे आहेत. उदा. [पापीरिया](https://papeeria.com/).
+<p 
+  class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
 
-टीप - लाटेक्-सह मराठी वापरायचे असेल, तर टेक्-वितरण संगणकावर बसवून घेणे कधीही सोयीस्कर ठरेल.
-लाटेक्-ची प्राथमिक भाषा इंग्रजी आहे व त्यामुळे इतर लिप्या दर्शवण्यासाठी त्याला अनेक आज्ञासंचांची गरज पडते.
-ते सर्व आज्ञासंच पूर्वीपासूनच बसवले असले, तर मराठी मजकूर असणाऱ्या धारिका सहज वापरता येतात.
-शिवाय त्यामुळे आपल्याला हवे असलेले टंक लाटेक्-सह- वापरता येतात. केवळ इंग्रजी मजकूर वापरण्याकरिता
-महाजालावरील संपादक चालू शकतात.
+## Working online
 
-## सराव
+There are several powerful online sites that allow you to avoid
+the need to install a TeX system and LaTeX editor at all. These websites
+work by letting you edit your files in the webpage, then they run LaTeX
+behind the scenes, and display the PDF that is produced.
 
-तुमच्या संगणकावर टेक्-वितरण बसवून घ्या **अन्यथा** महाजालावरील संपादकावर आपले खाते उघडा.
-संगणकावर टेक्-वितरण बसवत असाल, तर एक संपादकदेखील बसवून घ्यावा लागेल. टेक्-वर्क्स, टेक्-स्टुडिओ
-(वर पाहा) ह्यांसारख्या संपादकांपासून सुरुवात करा, त्यानंतर तुमच्या पसंतीचे इतर संपादकदेखील वापरून पाहा.
-ज्यांना लाटेक्-सह मराठी मजकुरावर काम करायचे आहे, त्यांनी टेक्-वितरण व संपादक आपल्या संगणकावर बसवून घेणेच
-सोयीस्कर ठरेल.
+Some of these sites combine LaTeX with features similar to a word processor,
+whereas others are more focused on letting you see the LaTeX code and
+so are closer to having a local installation.
 
-तुम्हाला येथे महाजालावरच सर्व उदाहरणे [चालवून बघता येतील](help), पण संगणकावर धारिका तयार करून
-वापरण्याची सवय करून घेणे कधीही चांगले, म्हणून आपण त्याची तयारी करून घ्या.
+There are systems that let you run LaTeX without needing to be logged in, and we
+are using one of those,
+[LaTeX CGI](https://latexcgi.xyz), to let you
+edit and test the examples we give. For more complete work, the best online
+systems require that you register before you use them. That lets you save your
+work but also helps the sites not get overloaded. We have set up links so you
+can edit our examples using [Overleaf](https://www.overleaf.com), one of the
+major websites for LaTeX online. There are of course others:
+[Papeeria](https://papeeria.com/) is an example.
+
+## Working with others
+
+If you are planning to send your LaTeX sources to destinations which process
+them, such as publishers, conference organisers or pre-print servers
+(e.g. arXiv), you should check what restrictions they impose.
+
+## Exercise
+
+Get yourself set up with a local LaTeX installation _or_ an account with
+an online LaTeX service. If you are using a local installation, you'll need
+to pick an editor too: we recommend starting with either TeXworks or TeX Shop
+(see above), then looking at other editors later once you know how _you_
+work best with LaTeX.
+
+You'll be able to [run all of our other exercises in your browser](help.md), but we want
+to help you get working with real documents, so now is a great time to get
+yourself ready.

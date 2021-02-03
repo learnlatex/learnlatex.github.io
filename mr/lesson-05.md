@@ -1,8 +1,16 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Using document classes to influence design"
+description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
+toc-anchor-text: "Document classes"
+toc-description: "Setting the general document layout."
 ---
 
-## What a document class does
+# Document classes
+
+<span
+  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
 
 You might have noticed that all of the LaTeX documents we have created
 so far have started with a `\documentclass` line, and that
@@ -10,6 +18,8 @@ so far have started with a `\documentclass` line, and that
 `\documentclass{report}` in [the previous lesson](lesson-04) to try out the
 `\chapter` command.) This line is required in all LaTeX documents, and is
 (almost) always the first command you should have.
+
+## What a document class does
 
 The document class sets up the general layout of the document, for example
 
@@ -30,12 +40,17 @@ given first in square brackets, is used in many LaTeX commands.
 LaTeX is supplied with a set of standard classes, all of which look similar
 but with some variations:
 
-- `article`: short documents without chapters
-- `report`: longer documents with chapters, single-sided printing
-- `book`: longer documents with chapters, double-sided printing, with
-  front- and back-matter (for example an index)
-- `letter`: correspondence with no sections
-- `slides`: for presentations (but see below)
+- `article`  
+  short documents without chapters
+- `report`  
+  longer documents with chapters, single-sided printing
+- `book`  
+  longer documents with chapters, double-sided printing, with front- and 
+  back-matter (for example an index)
+- `letter`  
+  correspondence with no sections
+- `slides`  
+  for presentations (but see below)
 
 The `article`, `report` and `book` classes have very similar commands available,
 as we've already seen. When writing a `letter`, the commands available are
@@ -43,6 +58,7 @@ a bit different
 
 ```latex
 \documentclass{letter}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{letter}{Some Address\\Some Street\\Some City}
@@ -103,6 +119,7 @@ bundle and `memoir` affects the appearance of the document.
 
 ```latex
 \documentclass{article} % Change the class here
+\usepackage[T1]{fontenc}
 
 \begin{document}
 

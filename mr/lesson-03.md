@@ -1,20 +1,33 @@
 ---
-title: "पहिला लाटेक् दस्तऐवज"
+layout: "lesson"
+lang: "en"
+title: "Basic LaTeX document structure"
+description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
+toc-anchor-text: "Document structure"
+toc-description: "The basic structure of a document."
 ---
 
-आपली पहिली लाटेक् धारिका अतिशय सोपी असणार आहे. हिच्यामागे कल्पना अशी आहे
-की लाटेक् धारिका कशी असते व कशी कशी चालवली जाते ह्याचे प्रात्यक्षिक तुम्हाला दाखवावे.
-ह्या संकेतस्थळावरील उदाहरणे कशी चालवावीत हे जाणण्यासाठी [मदतीच्या पानाला](help)
-जरूर भेट द्या.
+# LaTeX document structure
 
-जर संगणकावरील टेक्-वितरण वापरत असाल, तर तुमच्या संपादकामध्ये नवी धारिका उघडा,
-`.tex` ह्या प्रत्ययासह धारिकेस कोणतेही नाव द्या. तात्पुरते `xyz.tex` हे नाव आपण वापरू.
-त्यानंतर खालील मजकुराची नक्कल जशीच्या तशी तिथे टाका अथवा स्वतः हा मजकूर टंकलिखित
-करा. महाजालावरच लाटेक् वापरायचे असेल, तर 'लाटेक् ऑनलाईन' अथवा 'ओव्हरलीफमध्ये उघडा'
-ह्यांपैकी एक कळ दाबा.
+<span
+  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+
+Your first LaTeX document is going to be very simple: the idea is to show you
+how a document looks and how to typeset it successfully. It is also your
+first chance to see [how to use the examples](help) here on `learnlatex.org`.
+
+If you are using a local LaTeX installation, in your editor create a new file
+called `first.tex`, and either copy–paste the text below or type it in.
+
+If you are using the online system, you can just click on the ‘LaTeX Online’
+or ‘Open in Overleaf’ buttons in the example to try it out! 
+
+<p 
+  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Hey world!
@@ -22,91 +35,105 @@ Hey world!
 This is a first document.
 \end{document}
 ```
-ही धारिका जतन करून एखाद्या चालकासह चालवा, त्यामुळे एक पीडीएफ् फलित तयार
-होईल. तुमच्या संगणकावरील टेक्-वितरणासह धारिका चालवत असाल, तर त्याकरिता
-असणारी कळ संपादकाप्रमाणे बदलत जाईल. फलित धारिकेत आपण वर लिहिलेला मजकूर
-**आणि** पृष्ठक्रमांक आपोआप येईल. लाटेक् हा क्रमांक आपोआप देते.
 
-तयार झालेले पीडीएफ् फलित तुमच्या पसंतीच्या पीडीएफ् दर्शकासह उघडून पाहा. अभिनंदन!
-तुमची पहिली लाटेक् धारिका यशस्वीरित्या चालली आहे.
+Save the file and typeset it to a PDF document; if you are using a local LaTeX
+installation, the exact button to press will depend on the editor you have
+picked. You should get a PDF file that contains the text above _plus_ a page
+number; LaTeX adds that automatically.
 
-## अडचणी कशा सोडवाव्यात?
+View the output `first.pdf` with whatever program you prefer for PDF viewing.
+Looks great; congratulations!
 
-लाटेक् चालवताना अडचणी येण्याची शक्यता असते.
-तुमच्या बीजधारिकेतील मजकूर वर दिल्याप्रमाणेच लिहिला गेला आहे ह्याची खात्री करून घ्या.
-कधी कधी अतिशय लहानसहान चुकांमुळे फलितामध्ये खूप मोठे बदल घडून येतात. काही वेळा
-ह्या चुकांमुळे धारिका चालू न शकण्यापर्यंत गंभीर परिणाम होऊ शकतात. जर धारिका चालत
-नसेल, तर संपूर्ण आज्ञावली खोडून पुन्हा एकदा वर दिलेला मजकूर तिथे जसाच्या तसा प्रविष्ट
-करा व धारिका चालवून पाहा.
+## Handling errors
 
-जर लाटेक् चालवताना प्रश्नचिन्ह उपस्थित झाले, तर `x` व `<Enter>` ही कळ दाबल्यास तुम्ही
-प्रक्रियेतून बाहेर पडाल.
+Errors happen.
+Check that you have entered each line in the text file exactly as written above.
+Sometimes seemingly small input changes give large changes in the
+result, including causing a document to not work.
+If you are stuck, try erasing the document and copying it fresh from the
+lines above.
 
-लाटेक् अडचण दाखवताना काही संदेश देते. ते अनेकदा माहितीपूर्ण असतात, परंतु ते इतर मजकूर
-संपादकांप्रमाणे कार्य करत नाहीत. अनेकदा संपादकांमार्फत अडचणींमधील संपूर्ण निरोप लपवले जातात.
-लाटेक्-मार्फत धारिका चालवली गेल्यानंतर एका `.log` धारिकेची निर्मिती होते. `.log` प्रत्ययाची धारिका
-ही साधी मजकूररूपी धारिका असते. ह्या धारिकेत अडचणींचा संपूर्ण निरोप वाचता येतो. अनेकदा अडचण
-सोडवताना सहलाटेक्-वापरकर्त्यांकडून `.log` धारिकेची मागणी केली जाते.
+If your LaTeX typesetting run ends with a question mark then you can get out by
+typing `x` and `<Enter>`.
+
+LaTeX's error messages try to be helpful, but they are not the same as messages
+in word processors. Some editors also make it hard to see the 'full' text of an
+error, which can hide key details. LaTeX always creates a log of what it is
+doing; this is a text file ending in `.log`. You can always see the full  error
+messages there, and if you have a problem, expert LaTeX users will often ask for a
+copy of your log file.
+
+<p 
+  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
 
 ## What you've got
 
-तुमची ही पहिली लाटेक् धारिका पायाभूत आहे.
-लाटेक् धारिकांमध्ये मजकूर व आज्ञावली ह्यांचे मिश्रण असते.
-प्रत्येक आज्ञेची सुरुवात ``\`` ह्या चिन्हाने होते.
-काही वेळा आज्ञांना कार्यघटक असतात जे महिरपी कंसात लिहिले जातात.
-काही वेळा वैकल्पिक कार्यघटक चौकटी कंसात लिहिले जातात.
-अशा बीजधारिकेस चालवल्यानंतर तुम्हाला पीडीएफ् फलित मिळते.
+The first document shows the basics.
+LaTeX documents are a mixture of text and commands.
+The commands start with a backslash
+and sometimes have arguments in curly braces
+(or sometimes optional arguments in square brackets).
+Then you get an output PDF by telling LaTeX to typeset your file.
 
-प्रत्येक लाटेक् बीजधारिकेत एक `\begin{document}` ही आज्ञा असते,
-तिची जोडी `\end{document}`ह्या आज्ञेशी लावली जाते.
-ह्या दोन आज्ञांमध्ये दस्तऐवजातील मुख्य मजकूर लिहिला जातो.
-ह्या दस्तऐवजात दोन परिच्छेद आहेत. लाटेक्-मध्ये परिच्छेद एका रिकाम्या
-ओळीने तयार केला जातो. `\begin{document}` च्या पूर्वी *आज्ञापीठ*
-असते. आज्ञापीठात फलित धारिकेची रचना कशी असावी ह्याची माहिती दिली जाते.
+Every LaTeX document has a `\begin{document}` and a matching
+`\end{document}`.
+Between these two is the *document body*, where your content goes.
+Here the body has two paragraphs (in LaTeX you separate paragraphs
+with one or more blank lines).
+Before `\begin{document}` is the *document preamble*,
+which has code to set up the document layout.
+The `\usepackage` command is described in a [later lesson](lesson-06)
+it is used in most examples on this site to set up the font encoding.
 
-लाटेक्-मधील `\begin{...}` व `\end{...}` ह्यांच्या जोड्यांना `क्षेत्र` म्हटले जाते.
-प्रत्येक `\begin{अआइ}` करिता `\end{अआइ}` असायलाच हवे. जर एका क्षेत्राच्या पोटात
-आणखी एक क्षेत्र असले, तर `\begin{अआइ}` ... `\begin{कखग}` ... `\end{कखग}` ...
-`\end{अआइ}` असा क्रम असायला हवा. पोटातील क्षेत्र संपल्याशिवाय मुख्य क्षेत्र संपवता
-येणार नाही.
+LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
+called *environments*.
+You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
+If you nest them, then you must have `\end{y} ... \end{x}` to match
+`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
+in order.
 
-लाटेक् बीजधारिकांमध्ये % ह्या चिन्हानंतर टिप्पण्या लिहिता येतात. ह्याचे एक उदाहरण पाहूयात.
+We can add comments to a LaTeX file by starting them with `%`; let's use
+that to show the structure:
+
 ```latex
-\documentclass[a4paper,12pt]{article} % प्राचलांसह वापरला गेलेला लाटेक्-वर्ग
-% आज्ञापीठात एक टिप्पणी
-
+\documentclass[a4paper,12pt]{article} % The document class with options
+\usepackage[T1]{fontenc}
+% A comment in the preamble
 \begin{document}
-% ही एक टिप्पणी आहे.
+% This is a comment
 This is   a simple
 document\footnote{with a footnote}.
 
 This is a new paragraph.
 \end{document}
 ```
-वरील उदाहरणातील टिप्पण्या फलितधारिकेत दिसत नाहीत. बीजधारिकेत एकाहून अधिक
-मोकळ्या जागा असल्या तरी फलितात एकच मोकळी जागा सुटते. परिच्छेदनिर्मितीसाठी एक
-रिकामी ओळ सोडण्यात आली आहे.
 
-काही वेळा अशा मोकळ्या जागा द्याव्या लागतात ज्या ओळ संपल्यावर तुटत नाहीत. त्या कायम
-एकाच ओळीत दिसाव्या लागतात. (उदा. आद्याक्षरांसह नावे लिहिताना.) लाटेक्-मध्ये ही मोकळी
-जागा `~` ह्या चिन्हासह मिळवली जाते. मजकूरातील संदर्भ देताना ह्याचा विशेष वापर होतो.
+You can see above that we've got two paragraphs: notice the use of a blank  line
+to do that. Also notice that multiple spaces are treated as a single space.
 
-## विशेष चिन्हे
+You might also sometimes want a 'hard' space that does not break over lines: in
+LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
+particularly useful when we start creating cross-references later in the course.
 
-कदाचित तुम्हाला लक्षात आलेच असेल की ``\``, `{` ह्या चिन्हांना लाटेक्-मध्ये विशेष कार्य आहे.
-``\`` ह्या चिन्हाने लाटेक् आज्ञा सुरू होतात. महिरपी कंसांत (`{`, `}`) अनिवार्य कार्यघटक लिहिले जातात.
-अनिवार्य कार्यघटक म्हणजे अशी माहिती जी दिल्याशिवाय आज्ञांचे कार्य होऊच शकत नाही.
+## Special characters
 
-अशी काही चिन्हे आहेत ज्यांना विशेष कार्याकरिता निवडले गेले आहे. ही चिन्हे मजकूरात फार कमी
-आढळतात. वर पाहिल्याप्रमाणे `~` ह्या चिन्हाला सक्तीची मोकळी जागा शोधण्याचं कार्य आहे.
-जर ही चिन्हे वापरण्याची गरज असेल, तर [अधिक माहिती](more-03) ह्या पानावरील सूचना वाचा.
+You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
+A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
+ `{` and `}` are used to show _mandatory arguments_: information that commands
+ require.
 
-## स्वाध्याय
+There are some other characters with special meaning; we've just seen that `~`
+is a 'hard' space, for example. Almost all of these characters  are _very_
+uncommon in normal text, which is why they were chosen for special meanings.
+If you do need to show one of these special characters, we've put some
+[information in the further details page](more-03).
 
-लाटेक् ऑनलाईन आज्ञावली अधिकाधिक वापरून पाहा. एकदा चालवलेल्या धारिकेत किमान बदल
-करून धारिका पुन्हा चालवून पाहा.
+## Exercise
 
-तुमच्या पहिल्या दस्तऐवजात मजकूराची भर घालून पाहा. ती धारिका चालवून पीडीएफ् फलित योग्य
-दिसते का ते पाहा. वेगळे परिच्छेद व मोकळ्या जागा सोडून पाहा. तुमचा लाटेक् संपादक कसे काम
-करतो ते शिकून घ्या. बीजधारिकेतील एखाद्या मजकूरावरून फलितातील त्याच ओळीकडे कसे जावे हे
-शोधून पाहा. काही सक्तीच्या मोकळ्या जागांचा वापर करून, ओळतोडीवर त्याचा काय परिणाम होतो हे पाहा.
+Experiment with the online editing and typesetting system; click the
+button to typeset the content, then edit it in the webpage and re-typeset it.
+
+Try adding text to your first document, typesetting and seeing the changes in
+your PDF. Make some different paragraphs and add variable spaces. Explore how
+your editor works; click on your source and find how to go to the same line  in
+your PDF. Try adding some hard spaces and see how they influence line-breaking.
