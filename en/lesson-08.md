@@ -1,9 +1,16 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Tables"
+description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
+toc-anchor-text: "LaTeX tables"
+toc-description: "Fundamentals of working with tables."
 ---
 
+# Tables
 
-## Basic tables
+<span
+  class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>
 
 Tables in LaTeX are set using the `tabular` environment. This lesson will assume
 you load the `array` package, which adds more functionality to LaTeX tables, and
@@ -79,12 +86,14 @@ source.
 \end{tabular}
 \end{document}
 ```
+
 <!-- {% endraw %} -->
 
 If a table column contains a lot of text you will have issues to get that
 right with only `l`, `c`, and `r`. See what happens in the following example:
 
 <!-- {% raw %} -->
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}

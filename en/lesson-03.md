@@ -1,18 +1,30 @@
 ---
-title: "Your first LaTeX document"
+layout: "lesson"
+lang: "en"
+title: "Basic LaTeX document structure"
+description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
+toc-anchor-text: "Document structure"
+toc-description: "The basic structure of a document."
 ---
 
-Our first LaTeX document is going to be very simple: the idea is to show you
+# LaTeX document structure
+
+<span
+  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+
+Your first LaTeX document is going to be very simple: the idea is to show you
 how a document looks and how to typeset it successfully. It is also your
-first chance to [see how to use the examples here on `learnlatex.org`](help).
+first chance to see [how to use the examples](help) here on `learnlatex.org`.
 
 If you are using a local LaTeX installation, in your editor create a new file
 called `first.tex`, and either copy–paste the text below or type it in.
+
 If you are using the online system, you can just click on the ‘LaTeX Online’
-or ‘Open in Overleaf’ buttons in the
-example to try it out! We suggest you try out the online options even if you
-have set up LaTeX locally; this is a good chance to see how the different
-options work.
+or ‘Open in Overleaf’ buttons in the example to try it out! 
+
+<p 
+  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -23,13 +35,13 @@ Hey world!
 This is a first document.
 \end{document}
 ```
+
 Save the file and typeset it to a PDF document; if you are using a local LaTeX
 installation, the exact button to press will depend on the editor you have
 picked. You should get a PDF file that contains the text above _plus_ a page
 number; LaTeX adds that automatically.
 
-View the output `first.pdf` with
-whatever program you prefer for PDF viewing.
+View the output `first.pdf` with whatever program you prefer for PDF viewing.
 Looks great; congratulations!
 
 ## Handling errors
@@ -50,6 +62,9 @@ error, which can hide key details. LaTeX always creates a log of what it is
 doing; this is a text file ending in `.log`. You can always see the full  error
 messages there, and if you have a problem, expert LaTeX users will often ask for a
 copy of your log file.
+
+<p 
+  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
 
 ## What you've got
 
@@ -79,6 +94,7 @@ in order.
 
 We can add comments to a LaTeX file by starting them with `%`; let's use
 that to show the structure:
+
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
 \usepackage[T1]{fontenc}
@@ -91,6 +107,7 @@ document\footnote{with a footnote}.
 This is a new paragraph.
 \end{document}
 ```
+
 You can see above that we've got two paragraphs: notice the use of a blank  line
 to do that. Also notice that multiple spaces are treated as a single space.
 

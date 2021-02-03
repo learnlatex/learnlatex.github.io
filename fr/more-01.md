@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Qu'est-ce que LaTeX, et comment ça marche? Pour aller plus loin"
+description: "Cette leçon donne plus de contexte sur l'histoire de LaTeX et des autres formats disponibles."
+toc-anchor-text: "Qu'est-ce que LaTeX, et comment ça marche? Pour aller plus loin"
 ---
 
 Le mot « LaTeX » se compose de deux parties, _La_ et _TeX_. Voici brièvement
@@ -9,7 +13,7 @@ TeX a été inventé à l'origine par le professeur Donald Knuth de l'universit�
 Stanford (Californie). Knuth est bien connu pour une série de livres,
 _The Art of Computer Programming_ (« L'Art de la programmation », surnommés
 « _TAOCP_ »). En 1973, une nouvelle édition de ces livres devait être publiée ;
-à cette époque, le monde de l'édition est passé de l'impression traditionnelle
+mais à cette époque, le monde de l'édition passait de l'impression traditionnelle
 utilisant des caractères en plomb à la photocomposition. Donald Knuth fut déçu
 par la qualité typographique du résultat et décida donc de développer son propre
 système de composition.

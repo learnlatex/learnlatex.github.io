@@ -1,6 +1,15 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Trouver de la documentation et demander de l'aide"
+description: "Cette leçon présente les principales sources de documentation des logiciels et packages liés à LaTeX, et comment demander de l'aide lorsque vous êtes en difficulté."
+toc-anchor-text: "Aide & documentation"
+toc-description: "Trouver aide et documentation."
 ---
+
+# Trouver de la documentation et demander de l'aide
+
+<span class="summary">Cette leçon présente les principales sources de documentation des logiciels et packages liés à LaTeX, et comment demander de l'aide lorsque vous êtes en difficulté.</span>
 
 Il y a différentes façons d'accéder à la documentation d'un package ou
 d'une classe.
@@ -96,7 +105,7 @@ contribuer pour que la communauté bénéficie de votre expérience au fil de vo
 expérimentations avec LaTeX.
 
 
-## Getting help
+## Demander de l'aide aux autres utilisateurs
 
 Il existe divers forums en ligne pour poser des questions sur LaTeX ; le plus
 populaire aujourd'hui est peut-être
@@ -110,6 +119,8 @@ code fonctionne (sinon vous ne poseriez pas de question!), mais plutôt que vous
 avez fait de votre mieux pour le rendre clair, autonome et minimal.
 Ce dernier qualificatif signifie que vous avez juste assez de contenu pour
 reproduire votre problème.
+
+### Comment fournir un exemple complet minimal (ECM)?
 
 Comment construire un ECM ? Généralement, le plus simple est de partir de :
 
@@ -126,12 +137,27 @@ le problème ciblé. Vous pouvez également partir de votre fichier réel
 puis de le réduire progressivement, mais si votre document est déjà bien
 avancé, la démarche peut être assez longue.
 
-Si vous avez besoin de plus de texte pour inclure des sauts de pages ou autres
-effets, alors des packages tels que `\lipsum` peuvent être utilisés pour produire
-plusieurs paragraphes de texte dépourvu de sens, tout en gardant votre fichier
-de test très court.
+<p class="hint">Si vous avez besoin de plus de texte pour inclure des sauts de pages ou autres effets, alors des packages tels que <code>lipsum</code> peuvent être utilisés pour produire plusieurs paragraphes de texte dépourvu de sens, tout en gardant votre fichier de test très court.</p>
+
+
+### Fichier journal (_aka_ `log`)
 
 Vous devez garder sous la main votre fichier journal ; celui-ci est généré par
 LaTeX à chaque exécution, et porte le même nom que votre fichier d'entrée mais
-se termine par `.log`. Selon l'interface de votre bureau, vous devrez peut-être
-« afficher les extensions » pour savoir de quel fichier il s'agit.
+se termine par `.log`.
+
+<p class="hint">Selon l'interface de votre bureau, vous devrez peut-être « afficher les extensions » pour savoir de quel fichier il s'agit.</p>
+
+Dans ce fichier, vous aurez toujours la totalité des messages d'erreur. Les messages d'erreur de LaTeX s'efforcent d'être informatifs, mais il ne sont pas du même genre que ceux des traitements de textes.
+
+<p class="hint">Certains éditeurs ne vous facilitent pas la vie, car ils cachent les messages d'erreur complets. Leur version résumée peut ne pas contenir tous les détails.</p>
+
+Lorsque vous demandez de l'aide, les experts de LaTeX vous réclameront souvent
+une copie de votre fichier de log.
+
+
+### Et maintenant?
+
+Pour finir, nous vous offrons une [gallerie de petits exemples en LaTeX](./extra-01),
+qui illustrent des possibilités dans une vaste gamme de domaines non couverts
+par cette introduction, et différents packages développés pour ces domaines.

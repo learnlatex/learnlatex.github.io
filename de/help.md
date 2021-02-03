@@ -1,4 +1,5 @@
 ---
+lang: "de"
 title: "Learnlatex.org verwenden"
 permalink: /de/help
 ---

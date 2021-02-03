@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" version="1.1" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect width="106" height="106" rx="52.9" fill="#004980" stroke-width="31.3" style="paint-order:stroke markers fill"/>
+  <text transform="scale(.998 1)" x="-15.829502" y="55.754635" fill="#000000" font-family="sans-serif" font-size="380px" letter-spacing="0px" stroke-width="1.98" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-15.829502" y="55.754635" stroke-width="1.98"/></text>
+  <g aria-label="L">
+   <path d="m25.5 84.1v-4.26h9.81v-53.8h-9.81v-4.26q3.46 0.266 16.6 0.266 14.4 0 18.3-0.266v4.26h-12.3v53.8h9.37q3.37 0 6.13-0.843 2.8-0.888 4.53-2.09 1.78-1.24 3.24-3.28 1.46-2.09 2.17-3.6 0.755-1.55 1.33-3.99 0.577-2.49 0.71-3.64 0.133-1.2 0.444-3.2h4.26l-2.84 24.9z" fill="#fff" stroke-width=".341"/>
+  </g>
+ </g>
+</svg>

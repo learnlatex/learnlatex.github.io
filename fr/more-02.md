@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Travailler avec LaTeX : pour aller plus loin"
+description: "Cette leçon donne plus de détails sur les moteurs sur lesquels LaTeX fonctionne."
+toc-anchor-text: "Travailler avec LaTeX : pour aller plus loin"
 ---
 
 Pour la plupart de nos exemples, nous n'utilisons pas le programme `latex`

@@ -1,6 +1,15 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Étendre les possibilités de LaTeX avec des packages et des définitions"
+description: "Cette leçon montre comment vous pouvez étendre LaTeX en fonction de vos besoins et modifier l'apparence de vos documents en utilisant différents packages, et explique comment définir vos propres commandes."
+toc-anchor-text: "Étendre LaTeX"
+toc-description: "Utiliser packages et définitions."
 ---
+
+# Étendre les possibilités de LaTeX avec des packages et des définitions
+
+<span class="summary">Cette leçon montre comment vous pouvez étendre LaTeX en fonction de vos besoins et modifier l'apparence de vos documents en utilisant différents packages, et explique comment définir vos propres commandes.</span>
 
 Après avoir déclaré une classe, dans le préambule, vous pouvez modifier les
 fonctionnalités de LaTeX en ajoutant un ou plusieurs _packages_ (ou « paquets »).
@@ -18,7 +27,7 @@ par l'utilisateur, mais LaTeX est modulaire par nature, et des packages
 complémentaires résolvent les problèmes courants. Le premier problème est de
 s'adapter aux différentes langues humaines, pour prendre en compte les
 spécificités de la coupure des mots en fin de ligne, de la ponctuation, des
-citations, de la localisation, etc.). Les différentes langues ont des règles
+citations, de la localisation, etc. Les différentes langues ont des règles
 différentes, et il est important de dire à LaTeX lesquelles utiliser. C'est le
 package `babel` qui s'occupe de tout ça, avec des options pour chaque langue :
 
@@ -41,7 +50,7 @@ coupures de mots en fin de ligne; pour ça, il nous faut au moins un point de c�
 ```
 
 Décommentez la ligne pour charger `babel` en mode français et observez les
-conséquences. Les règles de césure par défaut sont en anglais américain.
+conséquences. Les règles de césure par défaut sont en anglais des États-Unis.
 
 Le package `babel` fait bien plus que de la césure, selon la langue concernée ;
 nous [approfondissons ici](more-06), si vous en avez besoin.
@@ -94,13 +103,13 @@ Observez le rendu avec et sans le package `geometry`.
 
 ## Ajouter de nouvelles fonctionnalités
 
-L'un des points forts de LaTeX est que vous avez des milliers de packages à
-votre disposition, notamment pour la rédaction de textes mathématiques, pour
+L'un des points forts de LaTeX est de mettre des milliers de packages à votre
+disposition, notamment pour la rédaction de textes mathématiques, pour
 les hyperliens, pour l'utilisation avancée de la couleur, etc. Nous verrons
 quelques packages courants dans les prochaines leçons.
 
 
-## Definir des commandes
+## Définir des commandes
 
 Parfois, on a besoin d'une commande spécifique à son document, que ce soit une
 fonctionnalité qui n'existerait pas dans les packages disponibles, ou simplement

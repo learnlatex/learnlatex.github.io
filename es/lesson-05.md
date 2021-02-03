@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Usando los tipos de documento para cambiar el diseño"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Usando los tipos de documento para cambiar el diseño
 
 ## Qué es un tipo de documento
 

@@ -1,5 +1,7 @@
 ---
+lang: "vi"
 title: "Sử dụng trang learnlatex.org"
+description: "Một vài nét khái quát về cách sử dụng và điều hướng trong hệ thống các bài trong trang learnlatex.org."
 permalink: /vi/help
 ---
 

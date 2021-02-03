@@ -1,6 +1,14 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Bibliographies et références biblio"
+description: "Cette leçon montre les principes des bases de données bibliographiques. Apprenez à construire vos propres bases de données et à les utiliser dans vos documents en utilisant les deux principales chaînes de traitement disponibles."
+toc-anchor-text: "Bibliographies et références biblio"
+toc-description: "Travailler avec des bases de données bibliographiques."
 ---
+
+# Bibliographies et références biblio
+
 <script>
 preincludes = {
  "pre1": {
@@ -12,7 +20,7 @@ preincludes = {
 }
 </script>
 
-## Bases de données bibliographiques
+<span class="summary">Cette leçon montre les principes des bases de données bibliographiques. Apprenez à construire vos propres bases de données et à les utiliser dans vos documents en utilisant les deux principales chaînes de traitement disponibles.</span>
 
 Les références bibliographiques pourraient être incluses directement dans votre
 document, mais en général vous les stockez dans un ou plusieurs fichiers
@@ -21,6 +29,8 @@ contenant les informations dans un format facile à traiter. L'utilisation d'une
 ou plusieurs bases de données bibliographiques vous permet de réutiliser les
 informations dans plusieurs documents sans avoir à les ressaisir, et d'éviter
 le formatage manuel des références.
+
+## Bases de données bibliographiques
 
 Les bases de données bibliographiques pour LaTeX sont appelées
 « fichiers BibTeX » et portent l'extension `.bib`. Elles contiennent une ou

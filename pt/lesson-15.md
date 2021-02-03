@@ -1,6 +1,13 @@
 ---
-title: "Lidando com erros"
+layout: "lesson"
+lang: "pt"
+title: "Resolvendo erros"
+description: "Esta lição mostra alguns erros comuns em documentos, o que eles significam, e como resolvê-los."
+toc-anchor-text: "Resolvendo erros"
+toc-description: "Trabalhando com comportamento inesperado."
 ---
+
+# Resolvendo erros
 
 Diferente de um sistema típico de processamento de texto, o LaTeX tem um ciclo
 de Editar/Executar/Visualizar mais próximo a uma linguagem de programação, e

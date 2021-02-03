@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: Extending LaTeX using packages and definitions"
+description: "This lesson gives more details on package loading, shows the babel package for language selection, and gives more details on custom commands."
+toc-anchor-text: "More on: Extending LaTeX using packages and definitions"
 ---
 
 ## Loading multiple packages

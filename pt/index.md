@@ -1,8 +1,55 @@
 ---
-title: learnlatex.org
+layout: "start"
+lang: "pt"
+title: Learn LaTeX online for free in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+permalink: /pt/
 ---
 
-## Bem-vindo ao learnlatex.org!
+# Learn LaTeX
+
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+
+<div
+  class="text-columns">
+  <section>
+    <h3 
+      class="text-columns__heading"
+      >Introduction</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
+    and because it is not a single program. Our aim is to help you get 
+    started with LaTeX from the basics, installation, to writing code, without 
+    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+  </section>
+  <section>
+    <h3
+      class="text-columns__heading"
+      >How it works</h3>
+      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+  </section>
+</div>
+
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >Lições</h2>
+
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+
+{% include toc-lessons.html prefix="pt/lesson" %}
+
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="pt/language" %}
+  {% include toc-additional-lessons.html prefix="pt/extra" %}
+</ul>
+
+# Bem-vindo ao learnlatex.org!
 
 O objetivo deste site é ajudar você nos seus primeiros passos com o LaTeX, um
 sistema de preparação de documentos projetado para produzir impressões
@@ -36,13 +83,6 @@ funcionam com ambos os nossos sistemas online, então se você receber erros com
 os exemplos que nós fornecemos, você pode primeiro verificar se a sua instalação
 de LaTeX está atualizada.
 
-## As lições
-
-{% include toc.html  prefix="pt/lesson" %}
-
-### Lições adicionais específicas para learnlatex.org/pt
-
-{% include toc.html  prefix="pt/language" %}
 
 ## Indo além
 
@@ -56,5 +96,3 @@ algumas recomendações na última lição.
 Finalmente, nós oferecemos uma galeria de pequenos exemplos mostrando uma gama
 de áreas diferentes que não são abordadas nessa introdução, e os diferentes
 pacotes nessas áreas.
-
-{% include toc.html prefix="pt/extra" %}

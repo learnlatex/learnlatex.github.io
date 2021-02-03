@@ -1,6 +1,15 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Exemples avancés, comme sources d'inspiration"
+description: "Cette leçon montre divers exemples d'autres extensions LaTeX très appréciées qui n'ont pas été présentées dans les leçons principales."
+toc-anchor-text: "Exemples LaTeX"
+toc-description: "Exemples avancés, comme sources d'inspiration"
 ---
+
+# Exemples LaTeX
+
+<span class="summary">Cette leçon montre divers exemples d'autres extensions LaTeX très appréciées qui n'ont pas été présentées dans les leçons principales.</span>
 
 Ce cours a donné un aperçu des principales fonctionnalités de LaTeX.
 Mais LaTeX dispose d'une vaste panoplie d'extensions et est utilisé
@@ -9,15 +18,15 @@ supplémentaires, sans explications, mais avec des liens vers la documentation
 des packages utilisés sur [texdoc.net](https://texdoc.net). Les exemples
 sont tirés des documentations en question, sauf indication contraire.
 
-_Nota bene:_ Ce n'est pas parce que nous illustrons un package ici que
+
+<p class="hint">_Nota bene:_ Ce n'est pas parce que nous illustrons un package ici que
 nous souhaitons spécialement le conseiller par rapport à d'autres packages
 similaires. Il s'agit simplement d'un petit échantillon un peu arbitraire,
-pour vous donner envie de poursuivre vos expérimentations avec LaTeX.
-
+pour vous donner envie de poursuivre vos expérimentations avec LaTeX.</p>
 
 ## Chimie
 
-### [`mhchem`](https://texdoc.net/pkg/mhchem)
+Extension [`mhchem`](https://texdoc.net/pkg/mhchem)
 
 ```latex
 \documentclass{article}
@@ -31,7 +40,7 @@ pour vous donner envie de poursuivre vos expérimentations avec LaTeX.
 
 ## Linguistique
 
-### [`forest`](https://texdoc.net/pkg/forest)
+Extension [`forest`](https://texdoc.net/pkg/forest)
 
 ```latex
 \documentclass{article}
@@ -54,7 +63,7 @@ pour vous donner envie de poursuivre vos expérimentations avec LaTeX.
 ## Échecs
 
 <!-- not 2017 -->
-### [`xskak`](https://texdoc.net/pkg/xskak)
+Extension [`xskak`](https://texdoc.net/pkg/xskak)
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -72,7 +81,7 @@ Position after 2.\,\xskakget{lan}
 
 ## Poésie
 
-### [`memoir`](https://texdoc.net/pkg/memoir)
+Extension [`memoir`](https://texdoc.net/pkg/memoir)
 
 ```latex
 \documentclass{memoir}
@@ -109,7 +118,7 @@ Today will I depart. \\*
 ## Dessin
 
 <!-- not 2017 -->
-### [`tikz`](https://texdoc.net/pkg/tikz)
+Extension [`tikz`](https://texdoc.net/pkg/tikz)
 
 <!-- {% raw %} -->
 ```latex
@@ -149,7 +158,7 @@ x
 
 ## Tracé de fonction mathématique
 
-### [`pgfplots`](https://texdoc.net/pkg/plots)
+Extension [`pgfplots`](https://texdoc.net/pkg/plots)
 
 <!-- {% raw %} -->
 ```latex
@@ -178,7 +187,7 @@ x
 
 ## Musique
 
-### [`musixtex`](https://texdoc.net/pkg/musixtex)
+Extension [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 <!-- {% raw %} -->
 ```latex

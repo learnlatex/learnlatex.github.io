@@ -1,6 +1,15 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Travailler avec LaTeX"
+description: "Cette leçon explique ce qu'est un système TeX et quels sont les plus courants, elle évoque les éditeurs de texte courament utilisés avec LaTeX, et les systèmes en ligne qui ont des éditeurs intégrés."
+toc-anchor-text: "Travailler avec LaTeX"
+toc-description: "Les systèmes TeX et les éditeurs de texte pour LaTeX."
 ---
+
+# Travailler avec LaTeX
+
+<span class="summary">Cette leçon explique ce qu'est un système TeX et quels sont les plus courants, elle évoque les éditeurs de texte courament utilisés avec LaTeX, et les systèmes en ligne qui ont des éditeurs intégrés.</span>
 
 Contrairement à de nombreux programmes informatiques, LaTeX n'est pas une
 application unique. Au contraire, il est composé de plusieurs programmes
@@ -17,7 +26,7 @@ système TeX est un ensemble de programmes et de fichiers qui vont rester
 « en coulisses » (vous n'aurez pas à les appeler directement), mais qui sont
 nécessaires pour faire fonctionner LaTeX.
 
-Il existe aujourd'hui deux grands systèmes TeX, [MiKTeX](https://www.miktex.org)
+Il existe aujourd'hui deux grands systèmes TeX, [MiKTeX](https://miktex.org/)
 et [TeX Live](https://tug.org/texlive). Tous deux sont disponibles pour Windows,
 MacOS et Linux. MiKTeX est tout de même plutôt orienté vers Windows ; pour
 MacOS, TeX Live est inclus dans une collection plus vaste appelée
@@ -49,9 +58,11 @@ Un éditeur de base, [TeXworks](https://tug.org/texworks), est inclus dans
 TeX Live et MiKTeX sous Windows et Linux, et
 [TeXShop](https://pages.uoregon.edu/koch/texshop/) est inclus dans MacTeX.
 
-Quel que soit l'éditeur que vous choisissez, nous vous recommandons de
+
+<p class="hint">Quel que soit l'éditeur que vous choisissez, nous vous recommandons de
 l'installer _après_ votre système TeX, afin que l'éditeur puisse « trouver » le
-système TeX et se configurer correctement tout seul.
+système TeX et se configurer correctement tout seul.</p>
+
 
 
 ## Travailler par internet

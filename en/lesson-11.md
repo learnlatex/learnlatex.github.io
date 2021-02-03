@@ -1,12 +1,23 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Formatting: fonts and spacing"
+description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
+toc-anchor-text: "Fonts & spacing"
+toc-description: "Text formatting for visual presentation."
 ---
 
-## Paragraph spacing
+# Formatting: fonts and spacing
+
+<span
+  class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>
 
 We have already seen that a blank line in your input will generate a new
 paragraph in LaTeX. This shows up as the paragraph will start with an
 indent.
+
+## Paragraph spacing
+
 One common style is to have no indents for paragraphs, but instead
 to have a 'blank line' between them. We can achieve that using the `parskip`
 package.
@@ -28,7 +39,7 @@ certainly want a new paragraph or to use `parskip`, as we've just seen,
 to put a 'blank line' between paragraphs.
 
 There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph
+starting a new paragraph:
 
 - At the end of table rows
 - Inside the `center` environment
@@ -61,7 +72,7 @@ Even more text.
 
 ## Explicit text formatting
 
-We saw [a while ago](lesson-03) that most of the time logical structure is
+We wrote [in lesson 3](lesson-03) that most of the time logical structure is
 preferable. But sometimes you want to make text bold, or italic, or monospaced,
 etc. There are two types of command for this: ones for short pieces of text,
 and ones for 'running' material.

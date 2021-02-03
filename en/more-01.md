@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: What is LaTeX and how does it work?"
+description: "This lesson gives more context on the history of LaTeX and other formats available."
+toc-anchor-text: "More on: What is LaTeX and how does it work?"
 ---
 
 The word “LaTeX” actually consists of two components, “La” and “TeX”. In the

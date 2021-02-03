@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Trocando fontes e usando interpretadores Unicode"
+description: "Esta lição dá contexto sobre como o LaTeX interpreta entrada de texto com Unicode e como isso afeta o que você digita e as fontes que você usa, e como isso muda em interpretadores modernos com suporte a Unicode e fontes OpenType."
+toc-anchor-text: "Fontes & interpretadores Unicode"
+toc-description: "Selecionando fontes e codificação."
 ---
+
+# Trocando fontes e usando interpretadores Unicode
 
 Quando o TeX e o LaTeX começaram a ser amplamente utilizados eles funcionavam
 apenas com idiomas Europeus, embora houvesse alguma capacidade para usar outros

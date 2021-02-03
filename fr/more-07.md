@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Inclure des images et les faire « flotter » : pour aller plus loin"
+description: "Cette leçon explique comment mieux nommer et stocker les fichiers graphiques à utiliser avec LaTeX, et comment vous pouvez créer vos propres illustrations à partir de LaTeX."
+toc-anchor-text: "Inclure des images et les faire « flotter » : pour aller plus loin"
 ---
 
 ## Nommer les fichiers d'images

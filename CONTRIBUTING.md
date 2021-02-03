@@ -1,4 +1,6 @@
 ---
+layout: "page"
+lang: "en"
 title: CONTRIBUTING
 permalink: /CONTRIBUTING
 ---

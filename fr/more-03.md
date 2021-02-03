@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Votre premier document avec LaTeX: pour aller plus loin"
+description: "Cette leçon donne plus de détails sur le fonctionnement de LaTeX, ses caractères spéciaux et comment les utiliser dans le PDF de sortie."
+toc-anchor-text: "Votre premier document avec LaTeX: pour aller plus loin"
 ---
 
 ## Exécuter LaTeX

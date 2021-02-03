@@ -1,6 +1,15 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Utiliser les classes de documents pour changer l'apparence"
+description: "Cette leçon explique ce qu'est une classe de document et comment elle peut définit la présentation générale d'un document, et énumère les principales classes fournies par les distributions TeX."
+toc-anchor-text: "Classes de documents"
+toc-description: "Choisir la présentation générale du document."
 ---
+
+# Utiliser les classes de documents pour changer l'apparence
+
+<span class="summary">Cette leçon explique ce qu'est une classe de document et comment elle peut définit la présentation générale d'un document, et énumère les principales classes fournies par les distributions TeX.</span>
 
 ## Qu'est-ce qu'une classe de document?
 
@@ -64,7 +73,7 @@ The text goes Here
 ```
 
 Regardez comment ``\\`` est utilisé pour séparer les lignes de l'adresse ; nous
-verrons plus tard [comment se fait la séparation des lignes](lesson 11).
+verrons plus tard [comment se fait la séparation des lignes](lesson-11).
 La classe `lettre` demande qu'on crée un nouvel environnement `letter` pour
 chaque lettre et propose des commandes spécialisées.
 

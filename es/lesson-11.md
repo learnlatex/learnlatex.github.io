@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "es"
 title: "Formateando el texto: fuentes y espaciado"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# Formateando el texto: fuentes y espaciado
 
 ## Espaciado entre párrafos
 

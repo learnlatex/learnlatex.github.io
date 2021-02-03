@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Các công thức toán học"
+description: "Bài này giải thích các cách khác nhau để thêm các công thức toán học vào văn bản, cũng như một vài lệnh công thức toán cơ bản trong LaTeX."
+toc-anchor-text: "Công thức toán học"
+toc-description: "Chế độ toán trong LaTeX"
 ---
+
+# Các công thức toán học
 
 ## Chế độ toán (math mode)
 

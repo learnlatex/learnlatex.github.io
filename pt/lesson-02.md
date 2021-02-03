@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Trabalhando com LaTeX"
+description: "Esta lição explica o que é um sistema TeX e quais os mais comuns, lista alguns dos editores de texto comumente utilizados para LaTeX, e os sistemas online que contam também com editores integrados."
+toc-anchor-text: "Trabalhando com LaTeX"
+toc-description: "Sistemas TeX e editores de texto."
 ---
+
+# Trabalhando com LaTeX
 
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação
 que contém 'tudo em um'.  Ao invés disso, há diversos programas que trabalham
@@ -17,7 +24,7 @@ necessários para fazer o LaTeX funcionar, mas na maioria das vezes você não
 precisa executá-los diretamente.
 
 Existem dois grandes sistemas TeX disponíveis atualmente,
-[MiKTeX](https://www.miktex.org) e [TeX Live](https://tug.org/texlive).  Ambos
+[MiKTeX](https://miktex.org/) e [TeX Live](https://tug.org/texlive).  Ambos
 disponíveis para Windows, macOS e Linux.  O MiKTeX é mais utilizado no Windows;
 no macOS, o TeX Live é distribuído em uma coleção maior chamada
 [MacTeX](http://www.tug.org/mactex/).

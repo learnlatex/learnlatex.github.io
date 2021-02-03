@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Références croisées : pour aller plus loin"
+description: "Cette leçon montre comment faire des références croisées avec le package hyperref."
+toc-anchor-text: "Références croisées : pour aller plus loin"
 ---
 
 ## Transformer les références croisées en liens hypertextes

@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Bibliographies et références biblio : pour aller plus loin"
+description: "Cette leçon donne des détails sur les bibliographies non anglophones, sur la façon de transformer les références en hyperliens et illustre les différences entre les styles BibTeX."
+toc-anchor-text: "Bibliographies et références biblio : pour aller plus loin"
 ---
 
 ## Le tri pour d'autres langues que l'anglais

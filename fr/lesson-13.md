@@ -1,6 +1,14 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "S'organiser pour écrire un document long"
+description: "Cette leçon montre comment diviser vos sources LaTeX en fichiers plus petits et plus simples à gérer, et comment cela peut rendre la construction d'un long document plus facile et plus rapide."
+toc-anchor-text: "Structurer son code source"
+toc-description: "Découper ses fichiers de façon logique."
 ---
+
+# S'organiser pour écrire un document long
+
 <script>
 preincludes = {
  "pre0": {
@@ -17,13 +25,16 @@ preincludes = {
 }
 </script>
 
-## Structurer son code source
+<span class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
 
 Si vous rédigez un long document, vous aurez peut-être envie de diviser le
 code-source en plusieurs fichiers, plus faciles à gérer. Par exemple, il est
 très courant d'avoir un fichier principal (ou « racine »), puis un fichier
 source par chapitre (pour un livre ou une thèse), ou par section significative
 (pour un long article).
+
+
+## Structurer son code source
 
 LaTeX permet de répartir le contenu d'un document dans plusieurs fichiers comme
 on le souhaite. Il y a deux commandes importantes ici, `\input` et `\include`.

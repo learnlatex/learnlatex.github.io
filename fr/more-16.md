@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Trouver de la documentation et demander de l'aide : pour aller plus loin"
+description: "Cette leçon montre où trouver les sources de LaTeX lui-même."
+toc-anchor-text: "Trouver de la documentation et demander de l'aide : pour aller plus loin"
 ---
 
 ## Le code-source documenté de {{site.latex}}

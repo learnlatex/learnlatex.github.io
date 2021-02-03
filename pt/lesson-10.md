@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Matemática"
+description: "Esta lição apresenta o modo matemático do LaTeX e como você pode escrever equações lineares e em exibição, as extensões do pacote amsmath, e como mudar a fonte em equações."
+toc-anchor-text: "Matemática"
+toc-description: "Modo e notação matemática."
 ---
+
+# Matemática
 
 ## Modo matemático
 

@@ -1,6 +1,16 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Extending LaTeX using packages and definitions"
+description: "This lesson shows how you can extend LaTeX to your needs and change its layout further by using different packages, and shows how you can define your own commands."
+toc-anchor-text: "Extending LaTeX"
+toc-description: "Using packages and definitions."
 ---
+
+# Extending LaTeX
+
+<span
+  class="summary">This lesson shows how you can extend LaTeX to your needs and change its layout further by using packages and definitions. It also shows how you can define your own commands.</span>
 
 After having declared a class, in the preamble you can modify functionality in
 LaTeX by adding one or more *packages*. These can
@@ -91,7 +101,6 @@ One of LaTeX's strengths is that you can choose from thousands of packages,
 including ones for writing mathematical text, for hyperlinking, for
 sophisticated capabilities with color, etc. We will see some more common
 packages in later lessons.
-
 
 ## Defining commands
 

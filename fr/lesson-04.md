@@ -1,6 +1,15 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Structure logique de votre document"
+description: "Cette leçon montre quelques commandes de mise en forme simple et les compare au balisage logique, avec les commandes de sectionnement et les listes."
+toc-anchor-text: "Structure logique"
+toc-description: "Structure et apparence visuelle."
 ---
+
+# Structure logique de votre document
+
+<span class="summary">Cette leçon montre quelques commandes de mise en forme simple et les compare au balisage logique, avec les commandes de sectionnement et les listes.</span>
 
 LaTeX vous permet de vous concentrer sur la structure logique de votre document,
 et vous laisse en même temps la possibilité de choisir son apparence. La plupart
@@ -38,7 +47,7 @@ meilleurs choix. Avec le balisage logique, nous n'avons pas à nous soucier de c
 détail dans le corps du document, ce sera géré automatiquement, ou bien nous
 pourrons décider de ça plus tard, en modifiant un seul paramètre.
 
-Nous parlerons [du formatage manuel plus tard](lesson 11), mais pour l'instant
+Nous parlerons [du formatage manuel plus tard](lesson-11), mais pour l'instant
 nous ajoutons `\textbf` aux commandes que nous connaissons : il met le texte
 en gras.
 

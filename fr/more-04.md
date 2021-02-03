@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Structure logique de votre document : pour aller plus loin"
+description: "Cette leçon montre comment définir le titre du document et comment saisir des listes descriptives."
+toc-anchor-text: "Structure logique de votre document : pour aller plus loin"
 ---
 
 ## Titre du document

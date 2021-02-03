@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Étendre les possibilités de LaTeX avec des packages et des définitions : pour aller plus loin"
+description: "Cette leçon donne plus de détails sur le chargement des packages, présente le package Babel pour la configuration de la langue, et donne des précisions sur les commandes personnalisées."
+toc-anchor-text: "Étendre les possibilités de LaTeX avec des packages et des définitions : pour aller plus loin"
 ---
 
 ## Charger plusieurs packages à la fois

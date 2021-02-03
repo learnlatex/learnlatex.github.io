@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Écrire les mathématiques : pour aller plus loin"
+description: "Cette leçon montre d'autres environnements d'alignement fournis par amsmath, comment écrire les mathématiques en gras, le package mathtools, et l'utilisation d'Unicode pour les mathématiques."
+toc-anchor-text: "Écrire les mathématiques : pour aller plus loin"
 ---
 
 ## Plus d'alignements avec `amsmath`

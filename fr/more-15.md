@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "fr"
 title: "Comprendre les erreurs : pour aller plus loin"
+description: "Cette leçon montre quelques autres erreurs courantes en LaTeX et explique comment les erreurs peuvent s'enchaîner ou rester silencieuses."
+toc-anchor-text: "Comprendre les erreurs : pour aller plus loin"
 ---
 
 ## Les erreurs à la fermeture des environnements

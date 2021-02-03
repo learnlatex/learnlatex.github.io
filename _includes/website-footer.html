@@ -1,0 +1,151 @@
+<footer class="website-footer">
+
+  <div class="wrapper">
+    <div class="website-footer__flex">
+
+      <!-- footer navigation start -->
+      <nav class="website-footer-navigation">
+
+        <section 
+          class="website-footer-navigation__flex-items">
+          <h3 
+            class="sixth-heading website-footer-navigation__heading"
+            >{{ site.data.translations['heading_navigation'][page.lang] }}</h3>
+          <ul 
+            class="website-footer-navigation__list">
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}"
+                hreflang="{{ page.lang }}"
+                >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
+            </li>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}mission"
+                hreflang="{{ page.lang }}"
+                >{{ site.data.translations['navigational-elements_mission'][page.lang] }}</a>
+            </li>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}help"
+                hreflang="{{ page.lang }}"
+                >{{ site.data.translations['navigational-elements_help'][page.lang] }}</a>
+            </li>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}contact"
+                hreflang="{{ page.lang }}"
+                >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
+            </li>
+          </ul>
+        </section>
+
+        <section 
+          class="website-footer-navigation__flex-items">
+          <h3 
+            class="sixth-heading website-footer-navigation__heading"
+            >{{ site.data.translations['heading_meta'][page.lang] }}</h3>
+          <ul 
+            class="website-footer-navigation__list">
+            {% if site.github.private != true and site.github.license %}
+              <li
+                class="website-footer-navigation__list-item">
+                <a 
+                  class="website-footer-navigation__anchor" 
+                  href="{{ "/" | absolute_url | append: page.lang | append: "/" }}licenses"
+                  hreflang="{{ page.lang }}"
+                  >{{ site.data.translations['navigational-elements_licenses'][page.lang] }}</a>
+              </li>
+              <li
+                class="website-footer-navigation__list-item">
+                <a 
+                  class="website-footer-navigation__anchor" 
+                  href="{{ site.github.repository_url }}/issues" 
+                  hreflang="en"
+                  >{{ site.data.translations['navigational-elements_open-an-issue'][page.lang] }}</a>
+              </li>
+              <li
+                class="website-footer-navigation__list-item">
+                <a 
+                  class="website-footer-navigation__anchor" 
+                  href="{{ site.github.repository_url }}/tree/master/{{ page.path }}"
+                  hreflang="en"
+                  >{{ site.data.translations['navigational-elements_page-source'][page.lang] }}</a>
+              </li>
+            {% endif %}
+          </ul>
+        </section>
+
+        <section 
+          class="website-footer-navigation__flex-items">
+          <h3 
+            class="sixth-heading website-footer-navigation__heading"
+            >{{ site.data.translations['heading_planet'][page.lang] }}</h3>
+          <ul 
+            class="website-footer-navigation__list">
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="https://www.latex-project.org/"
+                hreflang="en"
+                >The LaTeX Project</a>
+            </li>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="https://tug.org/"
+                hreflang="en"
+                >TeX User Group</a>
+            </li>
+            <li 
+              class="website-footer-navigation__list-item">
+              <a 
+                class="website-footer-navigation__anchor" 
+                href="https://www.ctan.org/"
+                hreflang="en"
+                ><abbr title="Comprehensive TeX Archive Network">CTAN</abbr></a>
+            </li>
+          </ul>
+        </section>
+
+      </nav>
+      <!-- footer navigation end -->
+
+    </div>
+  </div>
+
+  <!-- languages start -->
+  <div 
+    class="website-footer-languages">
+    <div
+      class="wrapper">
+
+      <img 
+        alt="Language selection icon"
+        class="language-icon"
+        src="{{ "/assets/images/language-icon.svg" | relative_url }}"
+        height="70"
+        width="60">
+
+      <nav
+        class="language-navigation">
+          <h2 
+            class="visually-hidden">Language selection</h2>
+          {% include languages.html %}
+      </nav>
+
+    </div>
+  </div>
+  <!-- languages end -->
+
+</footer>

@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Định dạng font chữ và các khoảng cách"
+description: "Cách bỏ việc lùi đầu dòng đoạn văn trong văn bản."
+toc-anchor-text: "Bổ sung: Định dạng và khoảng cách"
 ---
 
 ## Hủy việc lùi đầu dòng đối với một đoạn văn bất kỳ
