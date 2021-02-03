@@ -50,7 +50,7 @@ pages.
      label-regional: Français
      label-english: French
    ```
-6. Update each section of `_data/languages.yml` with the an entry for
+6. Update each section of `_data/translations.yml` with the an entry for
    each of the fixed strings in the site. So for example the entry for "Next Lesson"
    should be amended to have a `zz:` entry:
 
