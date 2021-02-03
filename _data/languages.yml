@@ -26,3 +26,8 @@
 - language-code: tr
   label-regional: Türkçe
   label-english: Turkish
+
+- language-code: de
+  label-regional: Deutsch
+  label-english: German
+  
