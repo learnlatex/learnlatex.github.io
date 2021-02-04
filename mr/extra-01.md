@@ -32,6 +32,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{mhchem}
 \begin{document}
 \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
@@ -44,6 +45,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{forest}
 \begin{document}
 \begin{forest}
@@ -61,10 +63,12 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ## बुद्धिबळ
 
+<!-- not 2017 -->
 ### आज्ञासंच: [`xskak`](https://texdoc.net/pkg/xskak)
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{xskak}
 \begin{document}
 \newchessgame
@@ -116,8 +120,10 @@ Position after 2.\,\xskakget{lan}
 
 ## आकृत्या
 
+<!-- not 2017 -->
 आज्ञासंच: [`tikz`](https://texdoc.net/pkg/tikz)
 
+<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -150,11 +156,13 @@ x
 \end{tikzpicture}
 \end{document}
 ```
+<!-- {% endraw %} -->
 
 ## आलेख
 
 आज्ञासंच: [`pgfplots`](https://texdoc.net/pkg/plots)
 
+<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -177,11 +185,13 @@ x
 
 \end{document}
 ```
+<!-- {% endraw %} -->
 
-## संगीत
+## पाश्चात्त्य शास्त्रीय संगीत
 
 आज्ञासंच: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
+<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -213,3 +223,4 @@ x
 
 \end{document}
 ```
+<!-- {% endraw %} -->
