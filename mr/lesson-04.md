@@ -2,17 +2,16 @@
 layout: "lesson"
 lang: "mr"
 title: "तार्किक मांडणी"
-description: "ह्या प्रकरणात मांडणीसाठीच्या काही आज्ञा शिकवण्यात येणार आहेत. त्यांची तुलना
-अर्थलक्ष्यी अक्षरजुळणी semantic formatting with sectioning commands and lists."
+description: "ह्या प्रकरणात मांडणीसाठीच्या काही आज्ञा शिकवण्यात येणार आहेत. त्यांची तुलना अर्थलक्ष्यी अक्षरजुळणी semantic formatting with sectioning commands and lists."
 toc-anchor-text: "तार्किक मांडणी"
 toc-description: "रचना व दृश्यमांडणी"
 ---
 
-# Logical structure
+# तार्किक मांडणी
 
 <span class="summary">
-This lesson shows some basic formatting commands, and compares them with
-semantic formatting with sectioning commands and lists.
+ह्या प्रकरणात मांडणीसाठीच्या काही आज्ञा शिकवण्यात येणार आहेत. त्यांची तुलना अर्थलक्ष्यी
+अक्षरजुळणी semantic formatting with sectioning commands and lists.
 </span>
 
 लाटेक् ह्या आज्ञावलीत बीजाच्या तार्किक मांडणीकडे लक्ष देणे शक्य आहे तसेच दृश्यरूपात थेट बदल करणेही
@@ -137,7 +136,7 @@ Unordered
 मुद्द्याच्या दर्शकांची निवड लाटेक्-तर्फे आपोआप केली जाते. उदा. बिंदुक्रमित यादीकरिता बिंदू व
 अनुक्रमित यादीकरिता आकडे.
 
-## Exercises
+## स्वाध्याय
 
 विभागांच्या निरनिराळ्या स्तरांचा वापर करून पाहा. `\documentclass{article}`ऐवजी
 `\documentclass{report}` वापरून पाहा. ह्या लाटेक्-वर्गात `\chapter` स्तरावरील विभाग
