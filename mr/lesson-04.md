@@ -1,27 +1,30 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Logical structure"
-description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
-toc-anchor-text: "Logical structure"
-toc-description: "Structure and visual presentation."
+lang: "mr"
+title: "तार्किक मांडणी"
+description: "ह्या प्रकरणात मांडणीसाठीच्या काही आज्ञा शिकवण्यात येणार आहेत. त्यांची तुलना
+अर्थलक्ष्यी अक्षरजुळणी semantic formatting with sectioning commands and lists."
+toc-anchor-text: "तार्किक मांडणी"
+toc-description: "रचना व दृश्यमांडणी"
 ---
 
 # Logical structure
 
-<span
-  class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
+<span class="summary">
+This lesson shows some basic formatting commands, and compares them with
+semantic formatting with sectioning commands and lists.
+</span>
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
+लाटेक् ह्या आज्ञावलीत बीजाच्या तार्किक मांडणीकडे लक्ष देणे शक्य आहे तसेच दृश्यरूपात थेट बदल करणेही
+शक्य आहे, परंतु आज्ञावलीच्या रचनेकडे लक्ष देऊन दस्तऐवज बनवणे अनेकदा उपयुक्त ठरते, कारण त्यामुळे
+आज्ञावलीतील घटकांचा यथेच्छ पुनर्वापर करणे शक्य होते. त्या घटकांचा अर्थ बदलून हव्या त्या प्रकारे
+नवी मांडणी करणे शक्य होते.
 
-## Structure and visual presentation
+## रचना व तार्किक मांडणी
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasised.)
+लाटेक्-मध्ये सारख्या वापरल्या जाणाऱ्या `\emph` ह्या आज्ञेपासून आपण सुरुवात करूया. इंग्रजी भाषेच्या
+मुद्रणात इटालीय अक्षरांसह महत्त्वपूर्ण मजकूर लिहिला जातो. त्यामुळे `\emph` ह्या आज्ञेने मुख्यत्वे
+अक्षरे इटालीय होतात.
 
 ```latex
 \documentclass{article}
@@ -33,24 +36,27 @@ Some text in \textit{italic and \textit{nested} content}.
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+कदाचित तुम्हाला लक्षात आले असेलच की `\textit` ही आज्ञा मजकूर इटालीय करण्याकरिता वापरली
+जाते. ह्या आज्ञेसह कायम मजकुरास इटालीय वळण प्राप्त होते, त्यामुळे ह्या आज्ञेच्या पोटात पुन्हा हीच
+आज्ञा वापरली तरी अक्षरे इटालीय राहतात. (वरील आज्ञावलीचे फलित पाहा.) परंतु `\emph` आज्ञेचे
+तसे नाही. ह्या आज्ञेच्या पोटात पुन्हा हीच आज्ञा वापरली, तर तिच्या फलितात फरक पडतो. प्रत्येक
+वेळी इटालीय अक्षरांनीच महत्त्वपूर्ण मजकूर लिहिला जातो असेही नाही, उदा. सादरीकरणांमध्ये रंगबदल
+हा महत्त्वपूर्ण मजकुरासाठी अधिक परिणामकारक मार्ग ठरू शकतो. `\emph` ह्या आज्ञेच्या तार्किक
+मांडणीमुळे आपल्याला त्या तपशिलाकडे लक्ष देण्याची आवश्यकता नाही. महत्त्वपूर्ण मजकूर दाखवणे हे
+कार्य निरनिराळ्या जागा व त्यांच्या गरजा पाहून लाटेक्-द्वारे आपसूक सापेक्षतेने केले जाते.
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+अक्षरजुळणीच्या आज्ञा आपण [प्रकरण ११](lesson-11)मध्ये शिकणार आहोत, परंतु तोवर आपण परिचित
+आज्ञांमध्ये `\textbf` ह्या आणखी एका आज्ञेची भर घालूया. ही आज्ञा कार्यघटकातील मजकुरास ठळक
+करते.
 
-## Sectioning commands
+## विभाग पाडणे
 
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
+आत्तापर्यंत तुम्ही कदाचित एखादा मजकूर-संपादक वापरला असेल, ज्यात दस्तऐवज लिहिताना विभाग
+तयार करण्याकरिता मजकुराचा आकार वाढवणे, त्याला ठळक करणे व त्यानंतर एक मोकळी ओळ सोडणे ह्या
+गोष्टी क्रमवार कराव्या लागतात. लाटेक्-मध्ये ही अक्षरजुळणी आणखी सुलभ आहे, कारण `\section`
+ह्या आज्ञेसह विभाग कसा दिसावा ह्यासाठीच्या सर्व सोयी लाटेक्-मध्ये आपोआप पुरवल्या
+जातात. विभाग कसा दिसावा ह्याचा विचार करण्याची वापरकर्त्या/वापरकर्तीला गरज नाही,
+किंबहुना विभाग कसा हवा ह्याचे ज्ञान आज्ञावलीला असणे आवश्यक आहे.
 
 ```latex
 \documentclass{article}
@@ -77,30 +83,33 @@ Text of the second section.
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+`आर्टिकल` हा लाटेक्-वर्ग वापरला असता, विभाग व उपविभागांना लाटेक्-तर्फे आपोआप आकडे दिले
+जातात. तसेच त्यांना ठळक अक्षरांतदेखील लिहिले जाते. हे दृश्यरूप बदलायचे कसे ह्याबाबत आपण [प्रकरण
+५](lesson-5) मध्ये पाहूया.
 
-LaTeX can divide up documents into quite a few levels
+लाटेक्-दस्तऐवजांमध्ये पुढील स्तरांवरचे विभाग वापरता येणे शक्य आहे.
 
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
-- `\section`
-- `\subsection`
-- `\subsubsection`
+- `\part` (भाग/खंड. ह्या स्तराकरिता `\documentclass{book}`,
+  `\documentclass{memoir}` अथवा `\documentclass{report}` हे लाटेक्-वर्ग वापरणे
+  आवश्यक.)
+- `\chapter` (प्रकरण. ह्या स्तराकरितादेखील `book`, `report` अथवा `memoir` हे लाटेक्-वर्ग
+  वापरणे आवश्यक.)
+- `\section` (विभाग)
+- `\subsection` (उपविभाग)
+- `\subsubsection` (उपउपविभाग)
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+ह्याहून अधिक विभागणीदेखील शक्य आहे. ह्यापुढील स्तर परिच्छेदाचा आहे. तो `\paragraph` ह्या
+आज्ञेसह मिळवता येतो. नवा परिच्छेद तयार करण्याची ही आज्ञा नाही. विभागांतर्गत सशीर्ष परिच्छेद
+तयार करणे हे ह्या आज्ञेचे मुख्य कार्य आहे.
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+एव्हाना एखाद्या दस्तऐवजाला शीर्षक कसे द्यायचे हे जाणून घेण्याची उत्सुकता तुमच्यात निर्माण झाली
+असेल. त्याकरिता काही विशेष आज्ञा आहेत, परंतु सर्वच लाटेक्-वर्ग त्या आज्ञा वापरत नाहीत, म्हणून
+आम्ही त्यांची नोंद [एका वेगळ्या प्रकरणात](more-04) घेत आहोत.
 
-## Lists
+## याद्या
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+याद्या लिहितानादेखील तार्किक मांडणीचा अतिशय उपयोग होऊ शकतो. लाटेक्-सह दोन प्रकारच्या
+याद्या सामान्यपणे तयार केल्या जातात. पुढील उदाहरण पाहा.
 
 ```latex
 \documentclass{article}
@@ -124,16 +133,17 @@ Unordered
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+यादीतील प्रत्येक मुद्दा `\item` ह्या आज्ञेने सुरू होत आहे ह्याची नोंद घ्या. फलितामध्ये दिसणाऱ्या
+मुद्द्याच्या दर्शकांची निवड लाटेक्-तर्फे आपोआप केली जाते. उदा. बिंदुक्रमित यादीकरिता बिंदू व
+अनुक्रमित यादीकरिता आकडे.
 
 ## Exercises
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+विभागांच्या निरनिराळ्या स्तरांचा वापर करून पाहा. `\documentclass{article}`ऐवजी
+`\documentclass{report}` वापरून पाहा. ह्या लाटेक्-वर्गात `\chapter` स्तरावरील विभाग
+तयार करता येतात. ते कसे दिसतात ते पाहा. `\paragraph` व `\subparagraph` ह्या आज्ञांचा
+वापर करून पाहा. ह्या आज्ञांतर्फे आकडे घातले जात नाहीत ह्याची नोंद घ्या.
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+काही याद्या तयार करून पाहा. याद्यांच्या पोटात याद्या तयार करून पाहा. लाटेक्-सह चारच याद्या
+एकमेकींच्या पोटात राहू शकतात. ह्याहून अधिक याद्या एकमेकींच्या पोटात ठेवणे बहुतांश वेळा वाईट
+मांडणीकडे झुकते.
