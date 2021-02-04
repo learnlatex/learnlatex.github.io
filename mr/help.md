@@ -40,7 +40,7 @@ permalink: /mr/help
 ही उदाहरणे परिपूर्ण आहेत, परंतु तुम्ही त्यांच्यात बदलदेखील करू शकता.  येथे वापरला जाणारा
 लाटेक्-संपादक [एस](https://ace.c9.io/) हा आहे.
 
-#### Three ways to run the example
+#### लाटेक् आज्ञावली चालवण्याच्या तीन पद्धती
 
 * Use the Overleaf service
 * Use a LaTeX Online service
