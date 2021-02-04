@@ -23,7 +23,7 @@ section. En LaTeX, pour avoir le même résultat, on utiliserait la commande
 `\section`.
 
 
-## La chaîne de traitement {{ site.latex }}
+## La chaîne de traitement LaTeX
 
 Comme les fichiers LaTeX ne sont pas le document lui-même mais plutôt des
 instructions disant ce que doit être chaque partie du document, vous ne donnez
@@ -37,7 +37,7 @@ comme la programmation, on appelle souvent cela « compiler » votre document,
 le terme de « composition » serait sans doute plus exact.
 
 
-## Compilations multiples avec {{ site.latex }}
+## Compilations multiples avec LaTeX
 
 Pour les documents simples, on n'a besoin de compiler le fichier qu'une seule
 fois pour obtenir le PDF complet. Mais une fois que vous aurez commencé à
@@ -47,7 +47,7 @@ faire tourner LaTeX plusieurs fois sur votre document. Nous vous dirons quand
 ce sera le cas.
 
 
-## {{ site.latex }} ou pdf{{ site.latex }} ou&hellip;
+## LaTeX ou pdfLaTeX ou&hellip;
 
 [Dans la prochaine leçon](lesson-02), nous allons voir que LaTeX n'est pas un
 programme unique. Pour simplifier les choses, nous allons nous concentrer sur un

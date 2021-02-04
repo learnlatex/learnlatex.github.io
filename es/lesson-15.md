@@ -46,7 +46,7 @@ TeX no está instalado, o que no ha sido encontrado. Un error común es el de in
 un _editor_ de TeX como TeXworks o TeXShop pero sin instalar un sistema TeX
 como TeX Live o MiKTeX.
 
-## Anatomía de un mensaje de error de {{ site.tex }}
+## Anatomía de un mensaje de error de TeX
 
 ```latex
 \documentclass{article}

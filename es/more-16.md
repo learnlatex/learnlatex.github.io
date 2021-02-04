@@ -5,7 +5,7 @@ title: "Más sobre: Accediendo a la documentación y buscando ayuda"
 ---
 
 
-## Código fuente documentado de {{site.latex}}
+## Código fuente documentado de LaTeX
 
 El comando `texdoc` descrito anteriormente no se limita únicamente a la documentación de los paquetes.
 Si quiere ir más allá de las partes abordadas en este curso y estudiar la implementación de LaTeX en detalle,

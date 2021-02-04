@@ -14,7 +14,7 @@ Birçok bilgisayar programının aksine LaTeX her şeyi bir arada içermez. Bunu
 - Bir TeX sistemi
 - Bir metin düzenleyici (genellikle LaTeX için tasarlanır)
 
-## {{ site.tex }} sistemleri
+## TeX sistemleri
 
 LaTeX ile çalışmak için bir adet TeX sistemine ihtiyaç vardır. TeX sistemi, LaTeX'in çalışması için arkaplanda gerekli olan program ve dosyaların tümüne denir, ancak çoğu zaman bunları direkt olarak çalıştırmazsınız.
 

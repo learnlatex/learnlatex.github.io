@@ -53,7 +53,7 @@ est d'installer un _éditeur_ tel que TeXworks ou TeXShop mais sans installer un
 système TeX tel que TeX Live ou MiKTeX.
 
 
-### Anatomie d'un message d'erreur de {{ site.tex }}
+### Anatomie d'un message d'erreur de TeX
 
 ```latex
 \documentclass{article}

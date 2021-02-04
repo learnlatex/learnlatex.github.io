@@ -17,7 +17,7 @@ hoạt động cùng nhau. Ta có thể chia chúng thành hai thứ mà bạn c
 - Một trình soạn thảo mã nguồn (thường là một trình soạn thảo dành riêng cho
 LaTeX)
 
-## Hệ thống {{ site.tex }}
+## Hệ thống TeX
 
 Phần cốt lõi của làm việc với LaTeX là có một hệ thống TeX. Một hệ thống TeX là
 tập hợp của những chương trình và tệp cần thiết để LaTeX có thể chạy được dù
