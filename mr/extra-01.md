@@ -39,7 +39,9 @@ toc-description: "पुढील अभ्यासासाठीची उद
 ```
 
 ## भाषाविज्ञान
+
 ### आज्ञासंच: [`forest`](https://texdoc.net/pkg/forest)
+
 ```latex
 \documentclass{article}
 \usepackage{forest}
@@ -60,6 +62,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 ## बुद्धिबळ
 
 ### आज्ञासंच: [`xskak`](https://texdoc.net/pkg/xskak)
+
 ```latex
 \documentclass{article}
 \usepackage{xskak}
@@ -112,6 +115,7 @@ Position after 2.\,\xskakget{lan}
 </p>
 
 ## आकृत्या
+
 आज्ञासंच: [`tikz`](https://texdoc.net/pkg/tikz)
 
 ```latex
