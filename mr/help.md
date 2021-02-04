@@ -1,48 +1,44 @@
 ---
 layout: "page"
-lang: "en"
-title: "Using the learnlatex.org site"
-description: "This page explains the learnlatex.org website itself and how to best make use of it."
-permalink: /en/help
+lang: "mr"
+title: "हे संकेतस्थळ कसे वापरावे?"
+description: "ह्या पृष्ठावर learnlatex.org हे संकेतस्थळ कसेे वापरावे ह्याविषयी माहिती देण्यात आली आहे."
+permalink: /mr/help
 ---
 
-# Help
+# मदत
 
+## संकेतस्थळ पाहणे
 
-## Navigating the site
+हा अभ्यासक्रम १६ प्रकरणांचा बनला आहे. त्यांची यादी [मुखपृष्ठावरील](./) [अनुक्रमणिकेत]({{ "/"
+| absolute_url | append: page.lang | append: "/#toc" }}) पाहता येईल. 
 
-The course consists of 16 core lessons that can be reached from the [table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+प्रत्येक प्रकरणात आणखी एका संबंधित प्रकरणाचा दुवा आहे. त्या प्रकरणात संबंधित विषयाचा आणखी
+सखोल आढावा घेण्यात आला असेल. इतर कोणतेही वाचन न करता ह्या १६ प्रकरणांतील सामग्रीवर काम
+करता येणे शक्य आहे.
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 16 lessons _without_ reading the additional lessons.
-
-At the end of the course there are one or more lessons specific to the
-language being used for the lessons, and finally a gallery of examples
-of packages demonstrating LaTeX use not covered by this course.
+शेवटी अभ्यासक्रमासाठी वापरल्या गेलेल्या भाषेचा वापर लाटेक्-सह कसा करावा ह्याच्या शिकवण्या
+आहेत. शेवटी लाटेक्-च्या विविध क्षेत्रांतील वापराची उदाहरणे देणारा संग्रहदेखील आहे.
 
 ---
 
-## Examples 
+## उदाहरणे चालवणे
 
-### Running the examples
-
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+प्रत्येक उदाहरण एक लाटेक्-धारिकाच आहे. त्यातील आज्ञावली टेक् प्रत्ययांसह जतन करून विविध
+चालकांसह चालवता येते. पुढील उदाहरण पाहा.
 
 ```latex
+%!TeX lualatex
 \documentclass{article}
-\usepackage[T1]{fontenc}
+\usepackage{marathi}
 
 \begin{document}
-Example text.
+नमस्कार.
 \end{document}
 ```
 
-Each example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
-
-The editor being used is [ACE](https://ace.c9.io/).
+ही उदाहरणे परिपूर्ण आहेत, परंतु तुम्ही त्यांच्यात बदलदेखील करू शकता.  येथे वापरला जाणारा
+लाटेक्-संपादक [एस](https://ace.c9.io/) हा आहे.
 
 #### Three ways to run the example
 

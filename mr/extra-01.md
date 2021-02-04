@@ -1,46 +1,47 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "LaTeX Showcase - Examples for further study"
-description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
-toc-anchor-text: "LaTeX Showcase"
-toc-description: "Examples for further study."
+lang: "mr"
+title: "लाटेक्-आज्ञावल्यांचे प्रदर्शन - पुढील अभ्यासासाठी उदाहरणे"
+description: "ह्या प्रकरणात लाटेक्-मधील काही अन्य निवडक आज्ञासंचांची उदाहरणे आहेत. ह्यांबाबत उर्वरित अभ्यासक्रमात पुरेशी माहिती आली नव्हती."
+toc-anchor-text: "लाटेक्-आज्ञावल्यांचे प्रदर्शन"
+toc-description: "पुढील अभ्यासासाठीची उदाहरणे."
 ---
 
-# Showcase
+# प्रदर्शन
 
-<span
-  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
+<span class="summary">
+ह्या प्रकरणात लाटेक्-मधील काही अन्य निवडक आज्ञासंचांची उदाहरणे आहेत. ह्यांबाबत उर्वरित
+अभ्यासक्रमात पुरेशी माहिती आली नव्हती.
+</span>
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.net](https://texdoc.net).
-The examples are taken from the package documentation unless otherwise noted.
+ह्या अभ्यासक्रमात लाटेक्-च्या अतिशय महत्त्वाच्या आज्ञांची ओळख करून देण्यात आली आहे, परंतु लाटेक्
+आणखी अनेक क्षेत्रांमध्ये वापरले जाते. त्याकरिता विविध आज्ञासंच तयार केले गेले आहेत. आम्ही येथे
+कोणत्याही स्पष्टीकरणाशिवाय काही उदाहरणे जोडत आहोत. सोबत त्या आज्ञासंचांच्या दस्तऐवजांचे
+[टेक्-डॉक](https://texdoc.net) ह्या संकेतस्थळावरील दुवे आहेत. ही उदाहरणे (विशेष नोंद नसल्यास)
+त्या दस्तऐवजांमधूनच घेतली आहेत.
 
-<p 
-  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
+<p class="hint">
+इथे नोंदवल्या गेलेल्या आज्ञासंचांचे त्यांच्यासारख्या इतर आज्ञासंचांपेक्षा उदात्तीकरण करणे हा ह्या
+यादीचा उद्देश नाही. इथे केवळ विविध क्षेत्रात लाटेक् कसे वापरले जाते ह्याची एक झलक दाखवणे हा
+उद्देश आहे.
+</p>
 
-## Chemistry
+## रसायनशास्त्र
 
-Package: [`mhchem`](https://texdoc.net/pkg/mhchem)
+### आज्ञासंच: [`mhchem`](https://texdoc.net/pkg/mhchem)
 
 ```latex
 \documentclass{article}
-\usepackage[T1]{fontenc}
 \usepackage{mhchem}
 \begin{document}
 \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
 \end{document}
 ```
 
-## Linguistics
-
-Package: [`forest`](https://texdoc.net/pkg/forest)
-
+## भाषाविज्ञान
+### आज्ञासंच: [`forest`](https://texdoc.net/pkg/forest)
 ```latex
 \documentclass{article}
-\usepackage[T1]{fontenc}
 \usepackage{forest}
 \begin{document}
 \begin{forest}
@@ -56,14 +57,12 @@ Package: [`forest`](https://texdoc.net/pkg/forest)
 \end{document}
 ```
 
-## Chess
+## बुद्धिबळ
 
-<!-- not 2017 -->
-Package: [`xskak`](https://texdoc.net/pkg/xskak)
-
+<!-- Not 2017 -->
+### आज्ञासंच: [`xskak`](https://texdoc.net/pkg/xskak)
 ```latex
 \documentclass{article}
-\usepackage[T1]{fontenc}
 \usepackage{xskak}
 \begin{document}
 \newchessgame
@@ -75,48 +74,47 @@ Position after 2.\,\xskakget{lan}
 \end{document}
 ```
 
+## काव्य
 
-## Poetry
+### लाटेक्-वर्ग: [`memoir`](https://texdoc.net/pkg/memoir)
 
-Package: [`memoir`](https://texdoc.net/pkg/memoir)
+मेमॉयर लाटेक्-वर्गाचे उदाहरण देण्याकरिता एका मराठी कवितेची अक्षरजुळणी करून दाखवत आहोत.
 
+<p class="hint">
+हे उदाहरण मेमॉयरच्या दस्तऐवजातील नाही आहे.
+</p>
 
 ```latex
+%!TeX lualatex
 \documentclass{memoir}
-\usepackage[T1]{fontenc}
+\usepackage{marathi}
+
 \begin{document}
-\settowidth{\versewidth}{Nay, nay, I leave thee not,
-                                       thou goest too}
+\poemtitle*{औदुंबर}
+\settowidth{\versewidth}{शेतमळ्यांची दाट लागली हिरवी गरदी पुढे.}
 \begin{verse}[\versewidth]
-\ldots \\*
-His judgement rendered, he dissolved the Thing. \\*
-\flagverse{Ingeborg} And your decision? \\*
-\flagverse{Fridthjof} \vinphantom{And your decision?}
-
-                                   Have I ought to choose? \\*
-Is not mine honour bound by his decree? \\*
-And that I will redeem through Angantyr \\*
-His paltry gold doth hide in Nastrand’s flood. \\*
-Today will I depart. \\*
-\flagverse{Ingeborg} \vinphantom{Today will I depart.}
-
-                                 And Ingeborg leave? \\*
-\flagverse{Fridthjof} Nay, nay, I leave thee not,
-
-                                   thou goest too. \\*
-\flagverse{Ingeborg} Impossible! \\*
-\flagverse{Fridthjof} \vinphantom{Impossible!}
-
-                                   O! hear me, ere thou answerest.
+  ऐल तटावर पैल तटावर हिरवाळी घेऊन\\
+  निळासांवळा झरा वाहतो बेटाबेटातून.
+  
+  चार घरांचे गांव चिमुकले पैल टेकडीकडे\\
+  शेतमळ्यांची दाट लागली हिरवी गरदी पुढे.
+  
+  पायवाट पांढरी तयांतुन अडवी तिडवी पडे\\
+  हिरव्या कुरणांमधुनि चालली काळ्या डोहाकडे.
+  
+  झांकळुनी जळ गोड काळिमा पसरी लाटांवर\\
+  पाय टाकुनी जळांत बसला असला औदुंबर.
 \end{verse}
 \end{document}
 ```
 
-## Drawing
-<!-- not 2017 -->
-Package: [`tikz`](https://texdoc.net/pkg/tikz)
+<p class="hint">
+सौजन्य - [लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर](https://ctan.org/pkg/latex-mr)
+</p>
 
-<!-- {% raw %} -->
+## आकृत्या
+आज्ञासंच: [`tikz`](https://texdoc.net/pkg/tikz)
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -149,13 +147,11 @@ x
 \end{tikzpicture}
 \end{document}
 ```
-<!-- {% endraw %} -->
 
-## Function plotting
+## आलेख
 
-Package: [`pgfplots`](https://texdoc.net/pkg/plots)
+आज्ञासंच: [`pgfplots`](https://texdoc.net/pkg/plots)
 
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -178,14 +174,11 @@ Package: [`pgfplots`](https://texdoc.net/pkg/plots)
 
 \end{document}
 ```
-<!-- {% endraw %} -->
 
-## Music
+## संगीत
 
-Package: [`musixtex`](https://texdoc.net/pkg/musixtex)
+आज्ञासंच: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
-
-<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -217,4 +210,3 @@ Package: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 \end{document}
 ```
-<!-- {% endraw %} -->
