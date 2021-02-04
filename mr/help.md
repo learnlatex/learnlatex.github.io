@@ -42,122 +42,98 @@ permalink: /mr/help
 
 #### लाटेक् आज्ञावली चालवण्याच्या तीन पद्धती
 
-* Use the Overleaf service
-* Use a LaTeX Online service
-* Use a locally installed TeX system
+* ओव्हरलीफ सेवा वापरा.
+* लाटेक् ऑनलाईन सेवा.
+* संगणकावरील टेक्-वितरणासह धारिका चालवणे.
 
-##### Use the Overleaf service
+##### ओव्हरलीफ वापरणे
 
-Overleaf is one of the most popular online LaTeX editing services. The 
-<button>Open in Overleaf</button> button, below the example, will submit the 
-code to [Overleaf](https://www.overleaf.com/about).
+ओव्हरलीफ ही लाटेक् आज्ञावली चालवण्यासाठीची सर्वात लोकप्रिय सेवा आहे. उदाहरणांखाली आढळणारी
+<button>ओव्हरलीफमध्ये उघडा</button> ही कळ आज्ञावली ओव्हरलीफ संकेतस्थळास सादर करते.
 
-If you do not have an account, or the account details are not
-already cached in your browser, then you will be redirected to a
-login page where you may login or register with Overleaf. This is a
-free service but does require you to give some details and agree to
-terms and conditions.
+ओव्हरलीफवर जर आपले खाते नसेल अथवा आपण खात्यात प्रवेश केला नसेल, तर आपल्याला एका पानावर
+पाठवले जाईल जेथे आपण खात्यात प्रवेश घेऊ शकता अथवा खाते नोंदवू शकता. ही विनामूल्य सुविधा आहे,
+परंतु तुम्हाला काही वैयक्तिक तपशील द्यावे लागतात व काही अटींना मंजूरी द्यावी लागते.
 
-If your Overleaf account is already cached in your browser, then
-Overleaf will be opened in a new tab, with a new
-project with the code. You may then edit it in
-Overleaf which will simultaneously run LaTeX on your code showing
-the resulting output or error log.
+जर तुम्ही खात्यात प्रवेश केला असेल, तर येथील दुव्यासह ओव्हरलीफवर नवा प्रकल्प तयार होईल व त्यात
+लाटेक् आज्ञावली आपोआप भरली जाईल. तिथे तुम्हाला आज्ञावलीचे संपादनदेखील करता येईल. तिथे
+आज्ञावली चालवून फलित दाखवले जाईल, तसेच आज्ञावलीतील अडचणीदेखील दाखवल्या जातील.
 
-The editing features in Overleaf are far more extensive than on this
-site, and you may save your project in your Overleaf account and
-return to it later.
+ओव्हरलीफवरील संपादक ह्या संकेतस्थळावरील संपादकाहून खूप प्रगत आहे, शिवाय तिथे धारिका जतन करून
+ठेवण्याची सुविधादेखील आहेच. तुम्ही कोणत्याही संगणकावरून ओव्हरलीफ खात्यात प्रवेश केलात, तरी
+तुम्हाला तुमचे लाटेक् प्रकल्प तिथे पाहता येतात.
 
-##### Use a LaTeX online service
+##### लाटेक् ऑनलाईन
 
-The <button>LaTeX Online</button> button, below the example, will submit the code to the 
-[LaTeX CGI](https://latexcgi.xyz/) service[^1].
+<button>लाटेक् ऑनलाईन</button> कळेचा वापर करून ह्याच संकेतस्थळावरील लाटेक् सेवेचा वापर करता
+येतो.[^1]
 
-The LaTeX CGI service was developed specifically to support this site, and
-in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
-to enable display of PDF on mobile and other browsers without built in PDF 
-readers.
+लाटेक् सीजीआय ही सेवा ह्या संकेतस्थळास पूरक ठरावी म्हणूनच विकसित करण्यात आली. ती
+[PDF.js](https://mozilla.github.io/pdf.js/) ह्या आज्ञावलीचा वापर करून पीडीएफ्-फलित
+प्रदर्शित करते. ह्याकरिता त्या यंत्रणेत पीडीएफ्-प्रदर्शक असण्याचीही पूर्वअट नाही.
 
-The resulting PDF document (or section of the error log) will be
-shown inline immediately below the example. A <button>Delete
-Output</button> button will be provided so that you may remove this output
-(or you may leave it in place and continue the rest of the lesson
-below).
+ह्या सेवेचा वापर केल्यास पीडीएफ्-फलित आज्ञावलीखाली लगेच दाखवले जाते. <button>फलित काढून
+टाका</button> ह्या कळेद्वारे तयार झालेले फलित काढून टाकले जाईल अथवा फलित तसेच ठेवून उर्वरित
+प्रकरण वाचता येऊ शकेल.
 
-Note that **LaTeX Online** requires no login or signup of any sort
-so it is very convenient for small examples, but neither this site
-nor the `latexcgi`, `latexonline.cc` or `latex-on-http` sites
-provide any mechanism to save your document. Any changes that you
-make to the example are lost if you move off the page.
+हा अभ्यासक्रम करण्याकरिता तसेच लाटेक् ऑनलाईन सेवा वापरण्याकरिता कोणत्याही खात्याची गरज
+नाही. ह्यामुळे उदाहरणे चालवून पाहणे खूप सोपे होते, परंतु हे संकेतस्थळ तसेच लाटेक्-सीजीआय,
+लाटेक्-ऑनलाईन अथवा लाटेक्-ऑन-एचटीटीपी ही संकेतस्थळे तुम्ही तयार केलेली धारिका जतन करून
+ठेवण्यासाठीची सोय पुरवत नाहीत. त्यामुळे संकेतस्थळावरून दूर गेल्यास तुम्ही केलेले सर्व बदल नष्ट
+होतात.
 
-##### Locally installed TeX system
+##### संगणकावरील टेक्-वितरण वापरणे
 
-If you have a TeX system installed locally, then you may copy the
-example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor (Ctrl-A Ctrl-C
-in windows for example). This will place the code in your operating system
-clipboard so you can start a blank document using your local
-editor, and paste in the text.
+जर तुमच्या संगणकावर टेक्-वितरण बसवले असेल, तर तुम्ही येथील आज्ञावलीची नक्कल करू शकता. ती
+तुमच्या पसंतीच्या लाटेक्-संपादकासह संपादित करून, जतन करू शकता व लाटेक्-सह चालवू शकता.
    
-### Troubleshooting
+### अडचणी
 
-Our examples are based around using an up-to-date LaTeX installation. They all 
-work with both of our online demonstration systems, so if you get errors with 
-the examples we provide, you might want to check if your LaTeX system is 
-up-to-date.
-
----
-
-## Choosing the TeX engine
-
-When submitting example documents, by default the
-`pdflatex` engine will be used unless the example uses the `fontspec`
-package in which case `xelatex` is used.
-
-You can force the choice of `pdflatex`, `xelatex`, `lualatex`,
-`platex` or `uplatex` by using a comment of the form:
-
-`% !TEX ` _any text_ `lualatex`
-
-where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
-
-This allows the form `% !TEX program=pdflatex` used by some TeX editors
-but does not require the `program=` and is currently restricted to
-specifying just one of the five engines that are supported on
-the online systems being used.
-
-You can see an example of a comment being used to specify LuaLaTeX in
-[some of the examples on this site](more-14).
-
-If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
-also used to produce the PDF result from the DVI file that these variants generate.
+ह्या संकेतस्थळावर पुरवलेली उदाहरणे अद्ययावत् टेक्-वितरणांसोबत वापरून पाहिली आहेत. ती सर्व योग्य
+फलित निर्माण करतात. ही आज्ञावली जर तुमच्या संगणकावर अडचणी निर्माण करत असेल, तर तुम्ही तुमचे
+टेक्-वितरण अद्ययावत् आहे की नाही हे तपासून पाहणे उचित ठरेल.
 
 ---
 
-## Choosing how to display the output
+## टेक्-चालकाची निवड
 
-If you use the LaTeX online system, then the PDF
-output from running an example is shown using
-[PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behavior over the widest range of browsers.
+ह्या संकेतस्थळावर मूलभूत चालक म्हणून पीडीएफ्-लाटेक् ह्या चालकाची निवड करण्यात आली आहे.  परंतु
+आज्ञावलीत `fontspec` हा आज्ञासंच असेल, तर झीलाटेक् हा चालक वापरला जाईल.
 
-If you would prefer to use your browser's default PDF reader (either
-its built in one, or an external application that you have configured)
-then add a comment of the form:
+पुढील ओळ जर आज्ञावलीच्या सुरुवातीला टाकलीत तर तुम्हाला हवा तो चालक आज्ञावलीद्वारे निवडता
+येतो.
 
-`% !TEX ` _any text_ `pdf`
+`% !TEX ` **मजकूर** `lualatex`
 
-The default behavior can be explicitly specified by using `pdfjs` as
-the final token. For debugging you may sometimes want the log file
-returned, even if the document produces a PDF with
-no errors. This can be specified by using `log` as the final token in
-the comment.
+% व ! ह्या चिन्हांतील मोकळी जागा व **मजकूर** आज्ञावलीद्वारे दुर्लक्षिले जातात.
+
+`% !TEX program=pdflatex` ह्या आज्ञेप्रमाणेच वरील आज्ञेचे काम आहे. परंतु `program=` ह्या
+शब्दाची गरज नाही. तूर्तास केवळ ५ चालक ह्या संकेतस्थळावर उपलब्ध आहेत.
+
+ह्या अभ्यासक्रमात ही आज्ञा वापरलेली [काही उदाहरणांमध्ये](more-14). पाहता येऊ शकते.
+
+जर `पीलाटेक्` अथवा `अपलाटेक्` हे चालक निवडले गेले, तर `डीव्हीआयपीडीएफ्-एमएक्स` ही
+आज्ञावलीदेखील आपोआप वापरली जाते.
 
 ---
 
-[^1]: Note that during development of the site we have also used 
-      [LaTeX.Online](https://latexonline.cc/) and
-      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.
+## फलित कसे पाहावे?
+
+जर लाटेक् ऑनलाईन सेवेचा वापर करून आपण आज्ञावली चालवली, तर पीडीएफ्-फलित
+[PDF.js](https://mozilla.github.io/pdf.js/) सुविधेसह दाखवले जाते. ह्या सेवेद्वारे बहुतांश
+शोधप्रणाल्यांमध्ये फलित नीट दाखवले जाते.
+
+जर तुम्हाला शोधइंजिनातील पीडीएफ्-प्रदर्शक अथवा तुमच्या संगणकावरील पीडीएफ्-प्रदर्शक वापरायचा
+असेल, तर पुढील आज्ञेचा समावेश बीजधारिकेत करावा.
+
+`% !TEX ` **मजकूर** `pdf`
+
+`pdfjs` असा कार्यघटक देऊन ह्याचे फलित निश्चित करता येते. अडचणी सोडवण्याकरिता तुम्हाला लॉग
+धारिका पाहण्याची गरज पडू शकते. `log` हे प्राचल वरील आज्ञेत वापरून हे साधता येऊ शकते.
+
+---
+
+[^1]: ह्या प्रकल्पाच्या निर्मितीच्या वेळी आम्ही [LaTeX.Online](https://latexonline.cc/)
+      व [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) ह्या दोन
+      संकेतस्थळांचा वापर केला. ह्या सेवांच्या निर्मात्यांचे आम्ही मनःपूर्वक आभारी आहोत. त्यांच्या
+      योगदानामुळे ह्या संकेतस्थळावरील उदाहरणे त्यांच्या पूर्वावस्थेत वापरण्यायोग्य झाली.
