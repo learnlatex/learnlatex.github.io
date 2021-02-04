@@ -59,7 +59,6 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ## बुद्धिबळ
 
-<!-- Not 2017 -->
 ### आज्ञासंच: [`xskak`](https://texdoc.net/pkg/xskak)
 ```latex
 \documentclass{article}
