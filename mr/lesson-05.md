@@ -1,60 +1,61 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Using document classes to influence design"
-description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
-toc-anchor-text: "Document classes"
-toc-description: "Setting the general document layout."
+lang: "mr"
+title: "वैविध्यपूर्ण अक्षरजुळणीकरिता लाटेक्-वर्गांचा वापर"
+description: "ह्या प्रकरणात लाटेक्-वर्ग म्हणजे काय हे स्पष्ट केले आहे, तसेच लाटेक्-वर्गांमुळे दस्तऐवजाच्या मूलभूत साच्यावर कसा परिणाम होतो हे दाखवले जाते. शिवाय टेक्-वितरणात आढळणाऱ्या विभिन्न लाटेक्-वर्गांची यादीदेखील ह्या प्रकरणात उपलब्ध आहे."
+toc-anchor-text: "लाटेक्-वर्ग"
+toc-description: "दस्तऐवजाकरिता ढोबळ साचा निवडणे."
 ---
 
-# Document classes
+# लाटेक्-वर्ग
 
-<span
-  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
+<span class="summary">
+ह्या प्रकरणात लाटेक्-वर्ग म्हणजे काय हे स्पष्ट केले आहे, तसेच लाटेक्-वर्गांमुळे दस्तऐवजाच्या मूलभूत
+साच्यावर कसा परिणाम होतो हे दाखवले जाते. शिवाय टेक्-वितरणात आढळणाऱ्या विभिन्न
+लाटेक्-वर्गांची यादीदेखील ह्या प्रकरणात उपलब्ध आहे.
+</span>
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
+तुम्हाला हे जाणवले असेलच की आत्तापर्यंत आपण तयार केलेल्या सर्व लाटेक्-धारिकांची सुरुवात
+`\documentclass` ह्या ओळीने झाली. `\documentclass{article}` ही आत्तापर्यंत बहुतांश वेळा
+वापरली गेलेली आज्ञा आहे. ([मागील प्रकरणात](lesson-04) `\chapter` आज्ञेचे प्रात्यक्षिक
+पाहण्यासाठी आपल्याला `\documentclass{report}` वापरण्याची गरजदेखील पडली.) ही ओळ
+जवळपास प्रत्येक लाटेक्-बीजधारिकेत असावीच लागते व बहुतांश वेळा ती पहिलीच आज्ञा असते.
 
-## What a document class does
+## लाटेक्-वर्ग निवडल्याने नेमके काय होते?
 
-The document class sets up the general layout of the document, for example
+लाटेक्-वर्गाद्वारे दस्तऐवजाचा सर्वसाधारण साचा निवडला जातो, ज्यात -
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
+- अभिकल्प: समास, टंक, मोकळ्या जागांचे अंतर इ.
+- प्रकरणांचा अंतर्भाव आहे की नाही
+- शीर्षक सुट्या पानावर हवे की नाही
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+ह्या प्रकारच्या बारकाव्यांचा समावेश असतो. वेगवेगळ्या लाटेक्-वर्गांच्या निवडीमुळे काही विशिष्ट
+आज्ञा वापरता येऊ शकतात ज्या अन्य लाटेक्-वर्गांसोबत चालत नाहीत. उदा. सादरीकरणाकरिता
+लागणाऱ्या आज्ञा लेख लिहिताना आवश्यक नसतात.
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+लाटेक्-वर्ग निवडण्याच्या ओळीत काही सार्वत्रिक प्राचलांची निवड करता येऊ शकते. सार्वत्रिक प्राचले
+हे असे काही घटक असतात ज्यांमुळे संपूर्ण आज्ञावलीवर काही प्रमाणात परिणाम होतो. ह्या प्राचलांची
+निवड पुढीलप्रकारे चौकटी कंसांत लिहून करता येते. `\documentclass[<options>]{<name>}`.
+ह्याप्रकारे वैकल्पिक माहिती चौकटी कंसांत भरण्याची रीत अनेक लाटेक् आज्ञांमध्ये पाहावयास मिळते.
 
-## The base classes
+## पायाभूत लाटेक्-वर्ग
 
-LaTeX is supplied with a set of standard classes, all of which look similar
-but with some variations:
+लाटेक् ही आज्ञावली काही पायाभूत लाटेक्-वर्गांसह वितरित केली जाते. त्यांची फलिते दृश्यरूपात बहुतांश
+प्रमाणात तशीच असतात, परंतु त्यांमध्ये काही बारीकसारीक बदल घडले असतात.
 
-- `article`  
-  short documents without chapters
-- `report`  
-  longer documents with chapters, single-sided printing
-- `book`  
-  longer documents with chapters, double-sided printing, with front- and 
-  back-matter (for example an index)
-- `letter`  
-  correspondence with no sections
-- `slides`  
-  for presentations (but see below)
+- `article` (लेख)
+  लहान दस्तऐवज. ह्यात प्रकरणे नसतात.
+- `report` (अहवाल)
+  मोठे दस्तऐवज. प्रकरणांसह. एकाच बाजूला मुद्रण.
+- `book` (पुस्तके)
+  मोठे दस्तऐवज. प्रकरणांसह. दोन्ही बाजूला मुद्रण. प्रारंभिक मजकूर व अंतिम मजकुरासह
+- `letter` (पत्रे)
+  कोणतेही विभाग नाहीत.
+- `slides` (सादरीकरणे)
+  सादरीकरणांकरिता, (परंतु खाली पाहा)
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+पहिल्या तीन लाटेक्-वर्गांमध्ये बहुतांश आज्ञा सारख्याच आहेत, परंतु letter लाटेक्-वर्गात उपलब्ध
+असणाऱ्या आज्ञा मात्र वेगळ्या आहेत.
 
 ```latex
 \documentclass{letter}
@@ -74,51 +75,48 @@ The text goes Here
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialised commands.
+ओळतोडीसाठी वापरल्या गेलेल्या ``\\`` ह्या आज्ञेकडे लक्ष द्या. आपण ओळतोडीच्या आज्ञांकडे
+[लवकरच](lesson-11) स्वतंत्रपणे पाहणार आहोत. तसेच हेदेखील पाहा की `letter` लाटेक्-वर्ग
+वापरल्यामुळे `letter` नावाचे नवे क्षेत्र वापराकरिता उपलब्ध झाले. त्या क्षेत्रांतर्गत काही विशिष्ट
+आज्ञादेखील उपलब्ध झाल्या.
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+`article`, `report` व `book` हे लाटेक्-वर्ग `10pt`, `11pt` व `12pt` ही प्राचले
+स्वीकारतात. ह्यांद्वारे टंकाचा आकार सार्वत्रिकरीत्या ठरवला जातो. `twocolumn` ह्या
+प्राचलाद्वारे द्विस्तंभीय दस्तऐवज बनवला जातो.
 
 ## Function-rich classes
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
+हे सर्व लाटेक्-वर्ग प्रचंड स्थिर आहेत, परंतु ह्याचाच अर्थ असाही होतो की त्यांच्यात फार मोठे बदल
+शक्य नाहीत. त्यांच्यात आता नव्या आज्ञांची भर पडणेदेखील कठीण आहे. कालानुरूप नवे लाटेक्-वर्गदेखील
+घडवण्यात आले आहेत ज्यांच्यात नव्या व आवश्यक आज्ञांची भर घालण्यात आली आहे. आपण त्यांच्याकडे
+[लवकरच](lesson-11) पाहूया.
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+अमेरिकन मॅथेमॅटिकल सोसायटी ह्या संस्थेकडून `amsart` व `amsbook` नावाचे दोन लाटेक्-वर्ग पुरवले
+जातात. हे गणिती नियतकालिकांमध्ये आढळणाऱ्या साच्याची नक्कल करणारे लाटेक्-वर्ग आहेत.
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt` and `scrbook`, while there is a single
-`memoir` class that is most like an extension of `book`.
+आणखी दोन लोकप्रिय व प्रगत लाटेक्-वर्ग म्हणजे `KOMA-Script bundle` व
+`memoir`. KOMA-Script ह्या आज्ञावलीतर्फे काही समांतर लाटेक्-वर्ग पुरवले जातात. क्रमशः
+`scrartcl`, `scrreprt` and `scrbook`. `memoir` हा मात्र `book` ह्या लाटेक्-वर्गाचा
+प्रगत आविष्कार आहे.
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-15), but you can always
-jump ahead!
+ह्या प्रगत लाटेक्-वर्गांसह वैयक्तिकीकरणाचे नवे उपाय उपलब्ध झाले आहेत. आपण स्वाध्यायांमध्ये ते
+शिकणार आहोत. त्याविषयीची सविस्तर चर्चा [प्रकरण १५](lesson-15)मध्ये करण्यात आली आहे.
 
-## Presentations
+## सादरीकरणे
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+`slides` हा लाटेक्-वर्ग भौतिक चौकटी बनवण्यासाठी ८०च्या दशकात तयार करण्यात आला
+होता. त्यामुळे त्यात पीडीएफ्-स्वरूपातील सुसंवादी सादरीकरणे बनवण्याची व्यवस्था नाही. त्यांसाठी
+काही विशेष लाटेक्-वर्ग घडवण्यात आले आहेत. ते सर्वसाधारण लाटेक्-प्रमाणे कार्य करत नाहीत,
+त्यांच्यात विशेष आज्ञांचा वापर केला जातो. त्यामुळे आम्ही त्यांचा समावेश [अधिक माहितीच्या
+प्रकरणात](more-05) केला आहे.
 
-## Exercises
+## स्वाध्याय
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+लाटेक्-चे प्रमाण वर्ग, `memoir` तसेच `KOMA bundle`मधील लाटेक्-वर्गांची आपापसात अदलाबदल करून
+फलिताच्या दृश्यरूपात काय फरक पडतो ते पाहा.
 
 ```latex
-\documentclass{article} % Change the class here
+\documentclass{article} % लाटेक्-वर्ग इथे बदला.
 \usepackage[T1]{fontenc}
 
 \begin{document}
@@ -133,10 +131,10 @@ document have two columns.
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
+`twocolumn` हे प्राचल वापरा व दृश्यरूपात होणारा बदल पाहा.
 
-Change the `\section` above for `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+`scrreprt` हा लाटेक्-वर्ग निवडा. वरील उदाहरणात `\section`ऐवजी `\chapter` वापरा व
+पुढील सार्वत्रिक लाटेक्-वर्ग-प्राचले वापरल्यामुळे काय फरक पडतो ते पाहा.
 
 - `chapterprefix`
 - `headings=small`
