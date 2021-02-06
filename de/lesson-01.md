@@ -36,7 +36,7 @@ an andere Personen.
 
 Dieser Prozess wird unterschiedlich bezeichnet, je nachdem, wen man fragt. Da 
 die Anwendung von LaTeX ein wenig wie Programmieren ist, nennt man den Ablauf oft
-'Kompilierung' eines Dokuments. obwohl 'Textsatz' der passendere Begriff ist.
+'Kompilierung' eines Dokuments. Obwohl 'Textsatz' der passendere Begriff ist.
 
 ## Mehrfache LaTeX-Läufe
 
@@ -53,4 +53,3 @@ LaTeX-Programm gibt. Um die Sache zu vereinfachen, werden uns auf das
 LaTeX-Programm `pdflatex` konzentrieren, um PDF-Dateien zu erzeugen. Wir werden 
 uns zudem im weiteren Verlauf des Kureses andere Programme und ihre Einsatzzwecke 
 ansehen.
-
