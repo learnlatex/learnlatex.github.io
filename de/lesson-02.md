@@ -88,11 +88,11 @@ sollte man prüfen, welche Restriktionen diese vorgeben.
 
 ## Übung
 
-Mach dich bereit, entweder mit einer lokalen LaTeX-Installation _oder_ einem
-Konto bei einem Online-LaTeX-Anbieter. Wenn eine lokale Installation gewählt
-wird, benötigt man auch einen Editor: wir empfehlen zunächst mit TeXworks oder
-TeX Shop zu starten (siehe oben) und später andere Editoren zu erwägen, nachdem
-_du_ weißt, wie du am besten mit LaTeX arbeitest.
+Machen Sie sich bereit, entweder mit einer lokalen LaTeX-Installation _oder_
+einem Konto bei einem Online-LaTeX-Anbieter. Wenn eine lokale Installation
+gewählt wird, benötigt man auch einen Editor: wir empfehlen zunächst mit
+TeXworks oder TeX Shop zu starten (siehe oben) und später andere Editoren zu
+erwägen, nachdem _Sie_ wissen, wie Sie am besten mit LaTeX arbeiten.
 
 Man kann [alle Übungen im Browser bearbeiten](help.md), aber wir möchten dir
 helfen, echte Dokumente zu bearbeiten, deshalb ist jetzt ein guter Zeitpunkt,
