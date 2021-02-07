@@ -30,12 +30,12 @@ verbreitetere der beiden ist, hier ein Beispiel in `beamer`:
 \begin{document}
 
 \begin{frame}
-  \frametitle{Ein erster Frame}
+  \frametitle{Eine erste Folie}
   Etwas Text
 \end{frame}
 
 \begin{frame}
-  \frametitle{Ein zweiter Frame}
+  \frametitle{Eine zweite Folie}
   Anderer Text
   \begin{itemize}
     \item<1-> Erstes Element
@@ -47,10 +47,12 @@ verbreitetere der beiden ist, hier ein Beispiel in `beamer`:
 ```
 
 Das Beispiel zeigt zwei wichtige Ideen. Erstens unterteilt `beamer` das Dokument
-in Frames, die weiter in Folien (Seiten) unterteilt werden. Zweitens fügt
-`beamer` der normalen LaTeX-Syntax eine Spezifikation hinzu, die Teile eines
-Frames Stück für Stück zeigen. Extrem nützlich, aber zu kompliziert an dieser
-Stelle: [Dieser Blog](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) geht gut hierauf ein.
+in Folien (im Englischen _frames_), die weiter in Overlays (im Englischen oft
+_slides_, im PDF Seiten) unterteilt werden. Zweitens fügt `beamer` der normalen
+LaTeX-Syntax eine Spezifikation hinzu, die Teile eines Frames Stück für Stück
+zeigen. Extrem nützlich, aber zu kompliziert an dieser Stelle: [Dieser
+Blog](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) geht
+gut hierauf ein.
 
 ## Eine Klasse für Bilder
 
