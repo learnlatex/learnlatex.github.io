@@ -81,7 +81,7 @@ lassen.
 
 Jedes LaTeX-Dokument beinhaltet den Aufruf `\begin{document}` und das zugehörige
 `\end{document}`.
-Zwischen diesen befindet sich der _Hauptteil_ mit dem Inhalt des Dokuments.
+Zwischen diesen befindet sich der _Textteil_ mit dem Inhalt des Dokuments.
 Im Beispiel finden sich hier zwei Absätze (in LaTeX werden Absätze durch eine
 oder mehrere leere Zeilen voneinander getrennt).
 Vor `\begin{document}` steht die _Dokumentpräambel_

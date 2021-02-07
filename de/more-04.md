@@ -27,7 +27,7 @@ Etwas normaler Text.
 Wie man sehen kann, speichern die Befehle `\author`, `\title` und `\date`
 Informationen und `\maketitle` nutzt diese. Mehrere Autoren können mit `\and`
 getrennt werden. Die Befehle `\author`, `\title` und `\date` müssen vor
-`\maketitle` verwendet werden. Im Beispiel haben wir sie im Hauptteil verwendet,
+`\maketitle` verwendet werden. Im Beispiel haben wir sie im Textteil verwendet,
 sie können aber auch in der Präambel genutzt werden, allerdings sind bei der
 Verwendung von `babel` dessen Kurzbefehle in der Präambel noch nicht aktiv.
 

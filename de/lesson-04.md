@@ -40,7 +40,7 @@ funktioniert also nicht bei geschachtelter Verwendung. Man beachte, dass `\emph`
 Verschachtelungen erkennt. Es gibt außerdem Stellen, in denen eine Hervorhebung
 keiner kursiven Schrift entspricht; in Präsentationen ist bspw. Farbe eine
 wesentlich geeignetere Option. Mit logischer Auszeichnung muss man sich
-innerhalb des Hauptteils keine Gedanken zu derlei Feinheiten machen.
+innerhalb des Textteils keine Gedanken zu derlei Feinheiten machen.
 
 Einen Blick auf [manuelle Formatierung gibt es später](lesson-11), für den
 Moment fügen wir aber `\textbf` noch der Liste bekannter Befehle hinzu: Es setzt
