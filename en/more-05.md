@@ -30,11 +30,13 @@ give you an example of how it works:
 \usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{frame}{A first frame}
+\begin{frame}
+  \frametitle{A first frame}
   Some text
 \end{frame}
 
-\begin{frame}{A second frame}
+\begin{frame}
+  \frametitle{A second frame}
   Different text
   \begin{itemize}
     \item<1-> First item
