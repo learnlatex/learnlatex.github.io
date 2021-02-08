@@ -89,8 +89,8 @@ quan đến toán học.
 
 Hai lớp văn bản lớn nhất và thông dụng nhất là hệ thống KOMA-script và lớp văn
 bản `memoir`. KOMA-script cho một hệ thống lớp văn bản mới "song song" với các
-lớp văn bản gốc: `scrartcl`, `scrreprt` và `scrbook`, trong khi `memoir` giống
-như một sự phát triển của `book`.
+lớp văn bản gốc: `scrartcl`, `scrreprt`, `scrbook` và `scrlttr2`, trong khi
+`memoir` giống như một sự phát triển của `book`.
 
 Những lớp văn bản này có nhiều công cụ giúp bạn thiết kế, ta sẽ khám phá một vài
 trong số đó trong một bài tập. Bạn có thể hỏi tại sao ta có thể biết đến những
