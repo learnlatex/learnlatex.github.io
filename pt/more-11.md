@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Formatação: fontes e espaçamento"
+description: "Esta lição mostra como omitir a indentação de parágrafo para um único parágrafo."
+toc-anchor-text: "Veja mais sobre: Formatação: fontes e espaçamento"
 ---
 
 ## Suprimindo a indentação de um parágrafo
@@ -10,6 +14,7 @@ deve deixar o LaTeX cuidar disso automaticamente.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Um pequeno parágrafo, que nós alongamos para ter certeza que você
 consiga ver o efeito aqui!

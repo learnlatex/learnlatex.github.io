@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "相互参照"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# 相互参照
 
 ## `\label` と `\ref`
 

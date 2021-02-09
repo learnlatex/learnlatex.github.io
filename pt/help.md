@@ -1,5 +1,8 @@
 ---
+lang: "pt"
 title: "Usando o learnlatex.org"
+description: "Esta página explica o próprio site learnlatex.org e como fazer o melhor uso dele."
+permalink: /pt/help
 ---
 
 ## Navegando no site
@@ -21,6 +24,7 @@ Cada exemplo consiste de um documento LaTeX completo mostrado na página assim:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Texto de exemplo.
 \end{document}
@@ -76,7 +80,7 @@ Há três formasde você executar o exemplo:
    transferência do seu sistema operacional, então você pode começar um
    documento em branco no seu editor e colar o texto (Ctrl-V).
 
-## Escolhendo o interpretador {{ site.tex }}
+## Escolhendo o interpretador TeX
 
 Quando estiver executando os documentos de exemplo deste site, por padrão o
 `pdflatex` será usado, a menos que o exemplo use o pacote `fontspec`, então o
@@ -96,7 +100,7 @@ funcione, mas não exige o `program=`, e atualmente é restrito a apenas um dos
 cinco interpretadores suportados nos sistemas online usados.
 
 Você pode ver um exemplo de um comentário sendo usado para especificar o
-LuaLaTeX em um [exemplo neste site](pt/more-14).
+LuaLaTeX em um [exemplo neste site](more-14).
 
 Se o `platex` ou `uplatex` for especificado, então o programa `dvipdfmx` também
 é usado para produzir o PDF final do arquivo DVI que estes interpretadores

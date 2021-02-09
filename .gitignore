@@ -1,3 +1,26 @@
-.jekyll-cache/
+# GENERAL 
+# files types
+.~*
+*.*~
+*.bak
+*.gho
+*.log
+*.ods
+*.ori
+*.swp
+*.swo
+*.tmp
+*.vim
+
+# directories
+_workfiles
+vendor
+
+# SPECIFIC
+# excludes
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_site
+package.json
 .ruby-version
-_site/

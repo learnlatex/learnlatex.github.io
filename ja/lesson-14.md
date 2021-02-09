@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "フォントの選択と Unicode エンジンの利用"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# フォントの選択と Unicode エンジンの利用
 
 TeX と LaTeX が広く使われるようになった頃は，いくらかギリシャ文字やロシア文字も扱うことができたとはい，基本的にそのままでは欧州言語しか扱うことができませんでした．
 

@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "フォーマットの変更：フォントとスペーシング"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# フォーマットの変更：フォントとスペーシング
 
 ## 段落スペーシング
 

@@ -1,46 +1,55 @@
 ---
-title: learnlatex.org
+layout: "start"
+lang: "ja"
+title: Learn LaTeX online for free in beginner friendly lessons
+description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+permalink: /ja/
 ---
 
-## 日本語版 learnlatex.org へようこそ！
+# Learn LaTeX
 
-このサイトは，高品質の組版出力が可能なドキュメント制作システム LaTeX の初歩を学ぶ手助けをします．初心者の中には，LaTeX はとても敷居が高いと感じられるシステムかもしれません．なぜなら **LaTeX はワードプロセッサではなく**，また単一のプログラムでもないからです．本サイトでは，LaTeX の**すべて**を一度に見せて圧倒してしまわないように注意を払っています．
+<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
 
-そのために，LaTeX に入門する上でとても重要な15の項目を選び出し，それぞれを短い「レッスン」にまとめました．これらのレッスンは要点を絞って書かれているので，1つ1つを理解するのにそれほど多くの時間はかからないでしょう．各レッスンには実際の LaTeX のコード例が盛り込まれ，さらに読者の皆さんがオンラインで実際に LaTeX での処理を試してみることができるようになっています．
+<div
+  class="text-columns">
+  <section>
+    <h3 
+      class="text-columns__heading"
+      >Introduction</h3>
+    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
+    and because it is not a single program. Our aim is to help you get 
+    started with LaTeX from the basics, installation, to writing code, without 
+    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+  </section>
+  <section>
+    <h3
+      class="text-columns__heading"
+      >How it works</h3>
+      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+  </section>
+</div>
 
-もちろん，このサイトの15のレッスンで扱う内容では足りないという方もいることでしょう．より多くの情報を求める方への手引として，各レッスンにはさらに「追加レッスン」が付いています．これらの追加レッスンはより詳細な情報を求める人のためのものですが，詳しいことはスキップしたい方の邪魔にならないようになっています．
+<h2 
+  class="heading__toc" 
+  id="toc"
+  >レッスン</h2>
 
-## コード例の試し方
+<p
+  class="paragraph__toc"
+  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
-読者の学習を助けるため，このサイトには多くのコード例が掲載されています．[レッスン2](lesson-02)では，オンラインおよびローカル（読者自身のコンピュータ）で LaTeX を使う方法について解説します．まずはとにかく簡単に試すことができるように，各コード例は**各ページ内**でそのまま編集し，LaTeX で処理してみることが可能です．さらに人気のオンライン LaTeX サービスである [Overleaf](https://www.overleaf.com) とも連携し，ボタン1つで各コード例を Overleaf 上で開くこともできるようになっています．そしてもちろん，コード例はお手許のコンピュータで試すことも可能です．本サイトの[ヘルプページ](help)ではコード例の活用方法についてさらに詳しく説明しています．
+{% include toc-lessons.html prefix="ja/lesson" %}
 
-本サイトのコード例はすべて最新の LaTeX 環境を前提にしています．このサイトでサポートしている2つのオンラインデモンストレーションではすべて間違いなく動作します．もし各コード例が手許の PC では妙なエラーを引き起こすという場合は，まず LaTeX 環境が最新のものになっているかどうか確認してください．
+<h2
+  class="heading__toc"
+  >Additional lessons</h2>
+<ul 
+  class="lessons-toc">
+  {% include toc-additional-lessons.html prefix="ja/language" %}
+  {% include toc-additional-lessons.html prefix="ja/extra" %}
+</ul>
 
-## レッスン
-
-{% include toc.html  prefix="ja/lesson" %}
-
-### 日本語版のオリジナルレッスン
-
-{% include toc.html  prefix="ja/language" %}
-
-<!--
-
-TODO: extra レッスンの翻訳
 
 ## Going further
 
-The focused lessons here are not meant to cover everything you'll ever need to
-know about LaTeX; we want to give you enough to get started and to _understand_
-examples and advice elsewhere. We cover getting more information in [the last
-lesson](lesson-15), but it's worth saying now that getting access to a book
-about LaTeX is still the  best way to learn the detail. We've given some
-recommendations in the last lesson.
-
-Finally we offer a gallery of small examples showing
-a range of different subject areas not covered in this introduction,
-and different LaTeX packages in those areas.
-    
-{% include toc.html prefix="ja/extra" %}
-
--->
+We cover getting more information in [the last lesson](./lesson-16), but it is worth saying now that getting access to a book about LaTeX is still the best way to learn the details. We give some recommendations in the last lesson.

@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Referências cruzadas"
+description: "Esta lição mostra como você pode transformar referências cruzadas em links carregando o pacote hyperref."
+toc-anchor-text: "Veja mais sobre: Referências cruzadas"
 ---
 
 ## Transformando referências em links
@@ -10,6 +14,7 @@ pacotes especificados no preâmbulo do documento.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
 \begin{document}
 

@@ -1,9 +1,16 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Tables"
+description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
+toc-anchor-text: "LaTeX tables"
+toc-description: "Fundamentals of working with tables."
 ---
 
+# Tables
 
-## Basic tables
+<span
+  class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>
 
 Tables in LaTeX are set using the `tabular` environment. This lesson will assume
 you load the `array` package, which adds more functionality to LaTeX tables, and
@@ -67,6 +74,7 @@ source.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -78,14 +86,17 @@ source.
 \end{tabular}
 \end{document}
 ```
+
 <!-- {% endraw %} -->
 
 If a table column contains a lot of text you will have issues to get that
 right with only `l`, `c`, and `r`. See what happens in the following example:
 
 <!-- {% raw %} -->
+
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -113,6 +124,7 @@ time. Compare the above outcome to the following:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -139,6 +151,7 @@ table of this lesson with the newly learned syntax:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
 \begin{document}
@@ -169,6 +182,7 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -196,6 +210,7 @@ column you need to specify that as a range (with both numbers matching).
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -222,6 +237,7 @@ with an optional argument enclosed in parentheses:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -253,6 +269,7 @@ case you can use `\addlinespace` to insert a small skip.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -292,6 +309,7 @@ single column type_.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -320,6 +338,7 @@ table's head row:
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -346,6 +365,7 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
 

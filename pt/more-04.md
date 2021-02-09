@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Estrutura Lógica"
+description: "Esta lição mostra como definir o título de um documento, e como fazer listas desritivas."
+toc-anchor-text: "Veja mais sobre: Estrutura Lógica"
 ---
 
 ## Título do documento
@@ -9,6 +13,7 @@ configurar os 'meta dados', e um para usá-los:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 \author{U.~M.~Autor \and O.~Outro}
 \title{Algumas coisas que fiz}
@@ -27,7 +32,7 @@ ser usados no preâmbulo (exceto `\maketitle`), mas se você usar atalhos do
 pacote `babel` eles não estarão ativos lá.
 
 A aparência fornecida pelo comando `\maketitle` depende da classe de documento
-(ver [lição 5](pt/lesson-05)).  Há um ambiente `titlepage` para quando você
+(ver [lição 5](lesson-05)).  Há um ambiente `titlepage` para quando você
 quiser um design próprio, mas isso está fora do escopo dessa introdução.  Se
 você quer fazer seus próprios designs de documento você pode usar uma classe
 personalizável, como `memoir`, ou começar com uma das classes base do LaTeX,
@@ -39,6 +44,7 @@ outro tipo, menos comum: as "listas descritivas".
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{description}

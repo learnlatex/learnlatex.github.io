@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "より大きな文書を作る"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# より大きな文書を作る
 
 <script>
 preincludes = {
@@ -174,5 +180,3 @@ Copyright 2020 learnlatex.
 \end{center}
 ```
 <!-- {% endraw %} -->
-
-----

@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "LaTeX を使用する"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# LaTeX を使用する
 
 多くのコンピュータ・プログラムと異なり，LaTeX は「あらゆるもの」を含んだ単一のアプリケーションではありません．そうではなく，協調して働く独立した複数のプログラムから成り立っています．そうした一連のプログラムのうち，ユーザが実際に必要とするものは次の2つです：
 

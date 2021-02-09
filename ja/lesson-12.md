@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "参考文献の引用"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# 参考文献の引用
 
 <script>
 preincludes = {

@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "LaTeX とは何か？ LaTeX はどう動くか？"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# LaTeX とは何か？ LaTeX はどう動くか？
 
 Microsoft Word や LibreOffice Writer などの一般的なワープロソフトと異なり，LaTeX は基本的には WYSIWYG (‘What You See Is What You Get’) ではありません．LaTeX においては，ユーザはプレーンテキストを扱い，マークアップによってさまざまな情報付加を行います．こうしたマークアップによって LaTeX にテキストの各パートの論理的な意味を伝えるという点は，HTML と似ています．
 

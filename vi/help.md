@@ -1,5 +1,8 @@
 ---
+lang: "vi"
 title: "Sử dụng trang learnlatex.org"
+description: "Một vài nét khái quát về cách sử dụng và điều hướng trong hệ thống các bài trong trang learnlatex.org."
+permalink: /vi/help
 ---
 
 ## Định hướng trong trang
@@ -17,6 +20,7 @@ Mỗi ví dụ bao gồm một tệp LaTeX nhỏ được hiển thị như sau:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Example text.
 \end{document}
@@ -25,10 +29,8 @@ Example text.
 Đây là một ví dụ đầy đủ. Tuy nhiên bạn có thể phải sửa nó để thực hiện những
 thay đổi nhỏ, ví dụ như để thực hiện các bài tập ở phần cuối mỗi bài học.
 
-Nút <button style="padding:0 1px;font-size:90%">sửa</button> có thể được dùng để
-sửa đoạn mã trong ví dụ ngay trong trang. Chú ý rằng đây chỉ là một chức năng
-sửa đơn giản được cung cấp bởi trình duyệt của bạn, nó không hề có những chức
-năng hỗ trợ LaTeX như bạn có thể thấy ở hầu hết các trình sửa mã nguồn.
+Trang web này sử dụng [ACE](https://ace.c9.io) để hiển thị cũng như thực hiện
+các thao tác với các đoạn mã ví dụ.
 
 Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau khi sửa:
 
@@ -70,12 +72,10 @@ Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau k
    sau.
 
 3. Nếu bạn đã có một hệ thống TeX được cài đặt trong máy, bạn có thể sao chép
-   đoạn mã bằng nút <button style="padding:0 1px;font-size:90%">sao chép</button>.
-   Nút này sẽ lưu đoạn mã vào clipboard và bạn có thể mở trình soạn mã của mình,
-   dán đoạn mã vào và thực hiện các thao tác ở đó.
+   đoạn mã vào trình soạn mã của mình và thực hiện các thao tác ở đó.
 
 
-## Chọn trình biên dịch {{ site.tex }}
+## Chọn trình biên dịch TeX
 
 Khi một đoạn mã được đưa lên, trình dịch `pdflatex`
 sẽ được sử dụng một cách mặc định trừ khi ví dụ có dùng gói `fontspec` (khi đó

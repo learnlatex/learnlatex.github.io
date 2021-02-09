@@ -1,6 +1,14 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "O que é LaTeX e como funciona?"
+description: "Esta lição explica o básico de o que é o LaTeX e como ele funciona em contraste a processadores de texto comuns como o Microsoft Word ou o LibreOffice Writer."
+toc-anchor-text: "O Básico de LaTeX"
+toc-description: "O que é LaTeX e como funciona?"
 ---
+
+
+# O que é LaTeX e como funciona?
 
 Diferente de processadores de texto comuns, como o _Microsoft Word_ ou o
 _LibreOffice Writer_, o LaTeX geralmente não tem interface WYSIWYG ('What You
@@ -12,7 +20,7 @@ elementos do texto, similar ao HTML.
 Por exemplo, o elemento `<h2>` indica uma nova seção em um documento HTML.
 O LaTeX também tem um comando para isso; aqui você usaria o comando `\section`.
 
-## O fluxo de trabalho com {{ site.latex }}
+## O fluxo de trabalho com LaTeX
 
 Porque os arquivos LaTeX não são o documento em si, mas instruções sobre o que
 cada parte do documento deve ser, você normalmente não dá a outras pessoas os
@@ -25,16 +33,16 @@ Pessoas usam nomes diferentes para descrever esse processo.  Como usar o LaTeX
 é um pouco ligado à programação, esse processo é geralmente chamado de
 'compilar' o seu documento, embora 'composição tipográfica' seja mais correto.
 
-## Múltiplas execuções do {{ site.latex }}
+## Múltiplas execuções do LaTeX
 
 Para arquivos simples, você só precisa executar o LaTeX uma vez no seu arquivo
 para ter o PDF completo.  Mas conforme você adicionar coisas mais complicadas,
 como referências cruzadas, citações, figuras, e sumários, você precisará
 executar o LaTeX mais de uma vez.  Vamos lhe dizer quando for o caso.
 
-## {{ site.latex }} ou pdf{{ site.latex }} ou ...
+## LaTeX ou pdfLaTeX ou ...
 
-Na [próxima lição](pt/lesson-02), nós vamos ver que o LaTeX não é um único
+Na [próxima lição](lesson-02), nós vamos ver que o LaTeX não é um único
 programa.  Para simplificar as coisas, nós vamos focar em uma versão em
 particular, o pdfLaTeX, para criar os seus PDFs.  Nós também vamos ver outros
 programas, e porque você usaria eles, mais adiante no curso.

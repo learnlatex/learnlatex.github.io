@@ -1,0 +1,31 @@
+a, body, dd, div, dl, dt, figure, footer, h1, h2, h3, h4, h5, h6, html, i, img, li, ol, p, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  line-height: 1.4em;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: outside disc;
+  margin: 0 0 0 1em;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}

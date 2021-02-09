@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "表組み"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# 表組み
 
 ## シンプルな表組み
 

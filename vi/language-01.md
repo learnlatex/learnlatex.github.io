@@ -1,9 +1,14 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Gõ tiếng Việt trong LaTeX"
+description: "Bài này sẽ hướng dẫn cách sử dụng LaTeX để gõ các văn bản bằng tiếng Việt, và giới thiệu các gói lệnh liên quan."
 next: "extra-01"
+toc-anchor-text: "Tiếng Việt với LaTeX"
+toc-description: "Gõ tiếng Việt trong LaTeX"
 ---
 
-## Gõ tiếng Việt với pdf{{ site.latex }}
+## Gõ tiếng Việt với pdfLaTeX
 
 pdfLaTeX mặc định _không_ hỗ trợ tiếng Việt. Để có thể dùng tiếng Việt, bạn cần
 phải sử dụng thêm các gói lệnh khác. Có hai gói lệnh thường dùng để hỗ trợ ta
@@ -48,7 +53,7 @@ Một dòng chữ tiếng Việt.
 \end{document}
 ```
 
-## Sử dụng tiếng Việt với Xe{{ site.latex }} và Lua{{ site.latex }}
+## Sử dụng tiếng Việt với XeLaTeX và LuaLaTeX
 
 XeTeX và LuaTeX hỗ trợ các chữ cái tiếng Việt ngay từ đầu, do đó ta không cần
 gói lệnh gì cả.

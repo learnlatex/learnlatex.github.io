@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Bổ sung: Sử dụng các lớp văn bản"
+description: "Vài nét về một số lớp văn bản nâng cao hơn."
+toc-anchor-text: "Bổ sung: Lớp văn bản"
 ---
 
 ## Các lớp văn bản đặc biệt cho các tạp chí, báo...
@@ -21,6 +25,7 @@ hoạt động của nó:
 
 ```latex
 \documentclass{beamer}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 \begin{frame}{A first frame}
@@ -56,6 +61,7 @@ trang giấy theo nội dung văn bản.
 
 ```latex
 \documentclass{standalone}
+\usepackage[T1]{fontenc}
 \begin{document}
 A simple document: this will be a very small box!
 \end{document}

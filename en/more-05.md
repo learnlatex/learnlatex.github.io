@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: Using document classes to influence design"
+description: "This lesson gives information on more specialized document classes for LaTeX."
+toc-anchor-text: "More on: Using document classes to influence design"
 ---
 
 ## Journal-specific classes
@@ -9,7 +13,8 @@ typically set up the layout to be similar to the final journal,
 although that does depend on font usage, etc. If there is a class
 available, it is normally provided directly by the editorial office,
 who should give appropriate detail on what features it has. Many of
-these are also available on CTAN and in standard TeX distributions.
+these are also available on [CTAN](https://ctan.org) and in standard TeX
+distributions.
 
 ## Classes for presentations
 
@@ -22,13 +27,16 @@ give you an example of how it works:
 
 ```latex
 \documentclass{beamer}
+\usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{frame}{A first frame}
+\begin{frame}
+  \frametitle{A first frame}
   Some text
 \end{frame}
 
-\begin{frame}{A second frame}
+\begin{frame}
+  \frametitle{A second frame}
   Different text
   \begin{itemize}
     \item<1-> First item
@@ -56,6 +64,7 @@ class. It automatically sets the size of the page to surround the printed conten
 
 ```latex
 \documentclass{standalone}
+\usepackage[T1]{fontenc}
 \begin{document}
 A simple document: this will be a very small box!
 \end{document}

@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Cấu trúc logic"
+description: "Bài này giới thiệu cú pháp một số câu lệnh và môi trường thông dụng để thêm một số thành phần logic cơ bản của một văn bản LaTeX."
+toc-anchor-text: "Cấu trúc logic"
+toc-description: "Một vài thành phần cơ bản của văn bản"
 ---
+
+# Cấu trúc logic
 
 LaTeX cho ta nhiều cách để ta quan tâm đến cấu trúc logic trong văn bản, cũng
 như khả năng trực tiếp điều chỉnh thiết kế văn bản. Trong hầu hết các trường
@@ -16,6 +23,7 @@ bản.)
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Some text with \emph{emphasis and \emph{nested} content}.
 
@@ -47,6 +55,7 @@ v.v... đều được LaTeX lo.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 Hey world!
 
@@ -97,6 +106,7 @@ hai loại danh sách chính có sẵn trong LaTeX:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 
 Ordered % Có đánh số

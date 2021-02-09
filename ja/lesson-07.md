@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "グラフィックスの挿入と「フロート」"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# グラフィックスの挿入と「フロート」
 
 ## グラフィックスを含める
 

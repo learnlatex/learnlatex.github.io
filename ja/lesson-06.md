@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "パッケージとコマンド定義"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# パッケージとコマンド定義
 
 使用する文書クラスを宣言した後，プリアンブルでは好きな数のパッケージを読み込んで LaTeX の機能を拡張することができます．パッケージを用いると，例えば次のようなことができます：
 

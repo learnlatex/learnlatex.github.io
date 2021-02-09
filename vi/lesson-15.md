@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Xử lý lỗi"
+description: "Bài này sẽ giới thiệu các lỗi biên dịch thường gặp nhất khi sử dụng LaTeX, cũng như cách giải quyết chúng."
+toc-anchor-text: "Lỗi"
+toc-description: "Giải quyết các lỗi"
 ---
+
+# Xử lý lỗi
 
 Không giống như các hệ thống xử lý văn bản thường gặp khác, LaTeX có một chu
 trình "Sửa/Biên dịch/Xem kết quả" giống như nhiều ngôn ngữ lập trình, và như
@@ -36,10 +43,11 @@ trên Linux.
 thảo mã nguồn_ như TeXworks hay TeXShop nhưng không cài đặt một _hệ thống TeX_
 như TeX Live hay MiKTeX.
 
-## Cấu trúc của một thông báo lỗi {{ site.tex }}
+## Cấu trúc của một thông báo lỗi TeX
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \newcommand\mycommand{\textbold{hmmm}}
 
@@ -56,7 +64,7 @@ Tệp này tạo ra một thông báo lỗi như sau trong tệp log:
 ! Undefined control sequence.
 \mycommand ->\textbold 
                        {hmmm}
-l.7 My command is used here \mycommand
+l.8 My command is used here \mycommand
                                       .
 ? 
 ```
@@ -98,6 +106,7 @@ vì nó làm cho ta tưởng rằng `\mycommand` không được định nghĩa.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage[leqno}{amsmath}
 
@@ -120,7 +129,7 @@ Mặc dù thông báo lỗi không giúp ích được nhiều, hai dòng kế t
 vị trí của lỗi bằng việc sử dụng ký tự xuống dòng tại điểm lỗi:
 
 ```
-l.3 \usepackage[leqno}
+l.4 \usepackage[leqno}
                       {amsmath}
 ```
 {: .noedit :}
@@ -130,6 +139,7 @@ l.3 \usepackage[leqno}
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmathz}
 
@@ -153,6 +163,7 @@ tìm đang thật sự bị thiếu và cần phải được cài đặt đúng
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 
@@ -185,9 +196,9 @@ báo lỗi bạn nhận được.
 
 <script>
   window.addEventListener('load', function(){
-      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(2, 31, false);
-      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(2, 18, false);
-      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(2, 20, false);
-      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(6, 0, false);
+      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(3, 31, false);
+      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(3, 18, false);
+      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(3, 20, false);
+      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(7, 0, false);
   }, false);
 </script>

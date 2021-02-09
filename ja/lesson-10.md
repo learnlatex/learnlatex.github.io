@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "数式"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# 数式
 
 ## 数式モード
 

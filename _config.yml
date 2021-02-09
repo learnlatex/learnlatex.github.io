@@ -1,11 +1,9 @@
-exclude: ['README.md']
-
-theme: jekyll-theme-primer
+# CONFIGURATION
+# https://jekyllrb.com/docs/configuration/options/
 
 title: learnlatex.org
 description: Learn LaTeX online
-
-logo: learnlatex.png
+repository: learnlatex/learnlatex.github.io
 
 plugins:
   - jekyll-sitemap
@@ -14,14 +12,71 @@ kramdown:
     syntax_highlighter_opts:
       disable: true
 
-latex: "<span>L<span style='font-variant: small-caps; vertical-align:.35ex;margin-left:-.15em;margin-right:-.05em;'>a</span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
-tex: "<span>T<span style='text-transform:uppercase; vertical-align:-.4ex;margin-left:-.1em;'>e</span>X</span>"
+sass:
+    style: compressed
 
-langs:
-   - en
-   - de
-   - fr
-   - pt
-   - ja
-   - vi
+limit_posts: 0
 
+
+# HTML COMPRESSION
+# Compress HTML with http://jch.penibelst.de/
+# The compression file is _layout/compress.html
+# https://jch.penibelst.de/#configuration
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+
+# LANGUAGES, LABELS, LAYOUTS
+# Settings for multilingual set up: 
+# In alphabetical order by language code.
+# In ascending order by path specifity.
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
+      label: "English"
+  -
+    scope:
+      path: "es"
+    values:
+      lang: "es"
+      label: "Español"
+  -
+    scope:
+      path: "fr"
+    values:
+      lang: "fr"
+      label: "Français"
+  -
+    scope:
+      path: "pt"
+    values:
+      lang: "pt"
+      label: "Português"
+  -
+    scope:
+      path: "vi"
+    values:
+      lang: "vi"
+      label: "Tiếng Việt"
+  -
+    scope:
+      path: "tr"
+    values:
+      lang: "tr"
+      label: "Türkçe"

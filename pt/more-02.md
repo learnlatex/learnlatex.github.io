@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Trabalhando com LaTeX"
+description: "Esta lição dá mais detalhes sobre o que é o LaTeX e os interpretadores sobre os quais ele funciona."
+toc-anchor-text: "Veja mais sobre: Trabalhando com LaTeX"
 ---
 
 Para a maioria dos nossos exemplos, não usamos um programa chamado `latex`, ao
@@ -10,7 +14,7 @@ diretamente.
 
 ## Formatos e interpretadores
 
-Como mencionado [anteriormente](pt/more-01), o LaTeX é construído sobre um
+Como mencionado [anteriormente](more-01), o LaTeX é construído sobre um
 programa chamado TeX.  Nos referimos ao LaTeX como um 'formato':  uma coleção
 de macros (instruções e comandos) que o TeX entende.  Quando você executa o
 `pdflatex`, na verdade você esta executando um programa chamado 'pdfTeX' com o
@@ -24,7 +28,7 @@ Há três interpretadores amplamente utilizados atualmente:
 - XeTeX
 - LuaTeX
 
-Nós vamos abordar o [XeTeX e LuaTeX mais tarde](pt/lesson-14):  o mais
+Nós vamos abordar o [XeTeX e LuaTeX mais tarde](lesson-14):  o mais
 importante que você precisa saber agora é que eles são capazes de carregar
 fontes do computador, enquanto que o pdfTeX não pode.
 

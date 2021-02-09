@@ -1,9 +1,13 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: Accessing documentation and getting help"
+description: "This lesson show you where you can find the sources of LaTeX itself."
+toc-anchor-text: "More on: Accessing documentation and getting help"
 ---
 
 
-## Documented sources of {{site.latex}}
+## Documented sources of LaTeX
 
 The `texdoc` command described earlier is not restricted to package documentation. If you wish to
 go beyond the areas covered by this course and study the LaTeX inplementation in detail then

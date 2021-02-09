@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "文書クラスを利用したデザインの変更"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# 文書クラスを利用したデザインの変更
 
 ## ドキュメントクラスの役割
 

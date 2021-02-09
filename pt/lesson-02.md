@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Trabalhando com LaTeX"
+description: "Esta lição explica o que é um sistema TeX e quais os mais comuns, lista alguns dos editores de texto comumente utilizados para LaTeX, e os sistemas online que contam também com editores integrados."
+toc-anchor-text: "Trabalhando com LaTeX"
+toc-description: "Sistemas TeX e editores de texto."
 ---
+
+# Trabalhando com LaTeX
 
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação
 que contém 'tudo em um'.  Ao invés disso, há diversos programas que trabalham
@@ -9,7 +16,7 @@ juntos.  Podemos dividi-los em duas coisas que você realmente precisa:
 - Um _sistema TeX_
 - Um editor de texto (geralmente um específico para LaTeX)
 
-## Sistemas {{ site.tex }}
+## Sistemas TeX
 
 O principal para trabalhar com o LaTeX é ter um sistema TeX disponível.  Um
 sistema TeX é um conjunto de programas 'nos bastidores' e arquivos que são
@@ -17,7 +24,7 @@ necessários para fazer o LaTeX funcionar, mas na maioria das vezes você não
 precisa executá-los diretamente.
 
 Existem dois grandes sistemas TeX disponíveis atualmente,
-[MiKTeX](https://www.miktex.org) e [TeX Live](https://tug.org/texlive).  Ambos
+[MiKTeX](https://miktex.org/) e [TeX Live](https://tug.org/texlive).  Ambos
 disponíveis para Windows, macOS e Linux.  O MiKTeX é mais utilizado no Windows;
 no macOS, o TeX Live é distribuído em uma coleção maior chamada
 [MacTeX](http://www.tug.org/mactex/).
@@ -80,6 +87,6 @@ editor: nós recomendamos começar com o TeXworks ou TeX Shop (ver acima), e
 depois procure outros editores quando souber como _você_ trabalha melhor com
 o LaTeX.
 
-Você poderá [executar todos os outros exercícios no seu navegador](pt/help),
+Você poderá [executar todos os outros exercícios no seu navegador](help.md),
 mas nós queremos ajudar você a trabalhar com documentos reais, então agora é
 uma ótima oportunidade para se preparar.

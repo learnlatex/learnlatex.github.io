@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "Structuring longer documents"
+description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
+toc-anchor-text: "Structuring sources"
+toc-description: "Spliting up sources in a controlled way."
 ---
+
+# Structuring longer documents
 
 <script>
 preincludes = {
@@ -18,12 +25,15 @@ preincludes = {
 }
 </script>
 
-## Structuring your sources
+<span
+  class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
 
 When you are writing a longer document, you’ll likely want to split up
 the source into multiple files. For example, it's very common to have
 one 'main'/'root' file, then one source file per chapter (for a book or thesis),
 or per significant section (for a long article).
+
+## Structuring your sources
 
 LaTeX allows us to split up sources in a controlled way. There are two important
 commands here, `\input` and `\include`. We can use `\input` to make a file work
@@ -38,6 +48,7 @@ A longer document might therefore look something like the following:
 <!-- pre0 {% raw %} -->
 ```latex
 \documentclass{book}
+\usepackage[T1]{fontenc}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 

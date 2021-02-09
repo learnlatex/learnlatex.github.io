@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "Văn bản LaTeX đầu tiên của bạn"
+description: "Bài này giải thích bố cục cơ bản của các văn bản LaTeX, và một số câu lệnh cơ bản và hay dùng nhất của ngôn ngữ soạn thảo này."
+toc-anchor-text: "Văn bản LaTeX đầu tiên"
+toc-description: "Bố cục cơ bản của một văn bản LaTeX"
 ---
+
+# Văn bản LaTeX đầu tiên của bạn
 
 Văn bản LaTeX đầu tiên sẽ rất đơn giản, ý tưởng là để cho bạn thấy bố cục của
 một văn bản và cách để biên dịch nó thành công. Đây cũng là cơ hội đầu tiên của
@@ -18,6 +25,7 @@ Chú ý rằng ta sẽ dùng tiếng Anh cho các ví dụ ở đây. Cách dùn
 LaTeX sẽ được nói tới trong [một bài khác](language-01).
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 
 \begin{document}
 Hey world!
@@ -67,6 +75,11 @@ trong LaTeX ta phân cách các đoạn văn _bằng các dòng trống_). Phầ
 `\begin{document}` được gọi là phần *khai báo* (preamble), phần này chứa các
 đoạn mã để thiết lập những cài đặt và thiết kế cho văn bản.
 
+Lệnh `\usepackage` sẽ được giới thiệu trong [một bài sau](lesson-06). Dòng
+`\usepackage[T1]{fontenc}` được thêm vào hầu hết các ví dụ trong khóa là để
+thiết lập mã hóa font (font encoding) cho các ví dụ này; chúng ta chưa cần phải
+quan tâm quá nhiều đến nó.
+
 Ngoài ra, LaTeX cũng có nhiều cặp `\begin{...}` và `\end{...}` nữa; những cặp
 này được gọi là các *môi trường*. Chúng không thể đứng một mình: đối với mỗi
 `\begin{x}` cần phải có một `\end{x}`. Bạn cũng có thể lồng các môi trường với
@@ -77,6 +90,7 @@ Ta có thể thêm ghi chú vào mã nguồn bằng cách bắt đầu chúng b�
 cùng thử nó xem:
 ```latex
 \documentclass[a4paper,12pt]{article} % Lớp văn bản với một số tùy chọn
+\usepackage[T1]{fontenc}
 % Một ghi chú ở phần khai báo
 \begin{document}
 % Đây là một ghi chú nữa

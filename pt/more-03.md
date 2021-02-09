@@ -1,10 +1,14 @@
 ---
+layout: "lesson"
+lang: "pt"
 title: "Veja mais sobre: Seu primeiro documento LaTeX"
+description: "Esta lição dá mais detalhes sobre como executar o LaTeX, e sobre os caracteres especiais utilizados e como inseri-los no PDF."
+toc-anchor-text: "Veja mais sobre: Seu primeiro documento LaTeX"
 ---
 
 ## Executando o LaTeX
 
-Como [detalhado antes](pt/lesson-02), documentos LaTeX são compostos de texto
+Como [detalhado antes](lesson-02), documentos LaTeX são compostos de texto
 simples.  Para ver isso, tente abrir o seu primeiro docmento em um editor de
 texto comum, por exemplo no Windows usando o Bloco de Notas.  Você deve ver o
 mesmo que viu no seu editor dedicado para LaTeX, mas sem o realce de sintaxe

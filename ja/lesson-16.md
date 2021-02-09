@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "ドキュメントへのアクセス方法とヘルプの求め方"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# ドキュメントへのアクセス方法とヘルプの求め方
 
 パッケージや文書クラスのドキュメントにアクセスする方法はいくつかあります．
 

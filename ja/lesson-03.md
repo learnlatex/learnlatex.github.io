@@ -1,6 +1,12 @@
 ---
+layout: "lesson"
+lang: "ja"
 title: "はじめての LaTeX 文書"
+toc-anchor-text: "Anchor"
+toc-description: "Description"
 ---
+
+# はじめての LaTeX 文書
 
 ここで紹介する「はじめての LaTeX 文書」にはとてもシンプルなものを選びました．この例を通じて，LaTeX ドキュメントがどのような見た目をしていて，どのようにタイプセットを行うのかを見てもらおうと思います．同時に，[この `learnlatex.org` チュートリアルで登場するコード例をどのように使用することができるのか](help)についても確認しておいてもらいたいと思います．
 

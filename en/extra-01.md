@@ -1,6 +1,16 @@
 ---
-title: "Examples for further study"
+layout: "lesson"
+lang: "en"
+title: "LaTeX Showcase - Examples for further study"
+description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
+toc-anchor-text: "LaTeX Showcase"
+toc-description: "Examples for further study."
 ---
+
+# Showcase
+
+<span
+  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
 
 This course has given an overview of the core features of LaTeX.
 LaTeX has vast array of extension packages and is used in many subject
@@ -8,16 +18,16 @@ areas.  We give here some examples, with no explanation here but links
 to the package documentation at [texdoc.net](https://texdoc.net).
 The examples are taken from the package documentation unless otherwise noted.
 
-**Note** that inclusion here is not intended as an endorsement of the
-  package over other similar packages, we just aim for a small sample
-  showing a range of areas not otherwise covered in this course.
+<p 
+  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
 
 ## Chemistry
 
-### [`mhchem`](https://texdoc.net/pkg/mhchem)
+Package: [`mhchem`](https://texdoc.net/pkg/mhchem)
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{mhchem}
 \begin{document}
 \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
@@ -25,9 +35,12 @@ The examples are taken from the package documentation unless otherwise noted.
 ```
 
 ## Linguistics
-### [`forest`](https://texdoc.net/pkg/forest)
+
+Package: [`forest`](https://texdoc.net/pkg/forest)
+
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{forest}
 \begin{document}
 \begin{forest}
@@ -46,9 +59,11 @@ The examples are taken from the package documentation unless otherwise noted.
 ## Chess
 
 <!-- not 2017 -->
-### [`xskak`](https://texdoc.net/pkg/xskak)
+Package: [`xskak`](https://texdoc.net/pkg/xskak)
+
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{xskak}
 \begin{document}
 \newchessgame
@@ -63,11 +78,12 @@ Position after 2.\,\xskakget{lan}
 
 ## Poetry
 
-### [`memoir`](https://texdoc.net/pkg/memoir)
+Package: [`memoir`](https://texdoc.net/pkg/memoir)
 
 
 ```latex
 \documentclass{memoir}
+\usepackage[T1]{fontenc}
 \begin{document}
 \settowidth{\versewidth}{Nay, nay, I leave thee not,
                                        thou goest too}
@@ -98,12 +114,12 @@ Today will I depart. \\*
 
 ## Drawing
 <!-- not 2017 -->
-### [`tikz`](https://texdoc.net/pkg/tikz)
-
+Package: [`tikz`](https://texdoc.net/pkg/tikz)
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{tikz}
 \usetikzlibrary {perspective}
 
@@ -136,12 +152,13 @@ x
 <!-- {% endraw %} -->
 
 ## Function plotting
-### [`pgfplots`](https://texdoc.net/pkg/plots)
 
+Package: [`pgfplots`](https://texdoc.net/pkg/plots)
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{pgfplots}
 \pgfplotsset{width=7cm,compat=1.17}
 
@@ -165,13 +182,13 @@ x
 
 ## Music
 
-
-### [`musixtex`](https://texdoc.net/pkg/musixtex)
+Package: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \usepackage{musixtex}
 
 \begin{document}

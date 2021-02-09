@@ -1,5 +1,9 @@
 ---
+layout: "lesson"
+lang: "en"
 title: "More on: Formatting: fonts and spacing"
+description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
+toc-anchor-text: "More on: Formatting: fonts and spacing"
 ---
 
 ## Suppressing the indent for one paragraph
@@ -12,6 +16,7 @@ handle this automatically.
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
 \begin{document}
 One small paragraph, which we have filled out a little to make sure you can
 see the effect here!

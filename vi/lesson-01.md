@@ -1,6 +1,13 @@
 ---
+layout: "lesson"
+lang: "vi"
 title: "LaTeX là gì và nó hoạt động như thế nào?"
+description: "Bài này giải thích LaTeX là gì, cũng như sự khác nhau trong cách hoạt động giữa LaTeX và các trình soạn thảo thường gặp như Microsoft Word hay LibreOffice Writer."
+toc-anchor-text: "Khái quát về LaTeX"
+toc-description: "LaTeX là gì? Nó hoạt động thế nào?"
 ---
+
+# LaTeX là gì và nó hoạt động như thế nào?
 
 Không giống những trình soạn thảo văn bản thông dụng như Microsoft Word hay
 LibreOffice Writer, LaTeX không phải là một trình soạn thảo WYSIWYG ('What You See Is
@@ -11,7 +18,7 @@ markup (dưới dạng các câu lệnh, v.v...) vào. Những markup này sẽ 
 Ví dụ, `<h2>` bắt đầu một phần trong một văn bản HTML. LaTeX cũng có một câu
 lệnh cho việc này, đó là `\section`.
 
-## Quy trình làm việc với {{ site.latex }}
+## Quy trình làm việc với LaTeX
 
 Vì các tệp LaTeX không phải là văn bản trực tiếp mà chỉ là phần code để các
 trình biên dịch tạo ra văn bản, nên thông thường bạn không cần phải đưa cho
@@ -24,7 +31,7 @@ Mọi người sử dụng các cách khác nhau để gọi tên quá trình n�
 đối giống với lập trình, quy trình thường được gọi là 'biên dịch' văn bản, mặc
 dù 'typesetting' (sắp chữ) là cách gọi hợp lý hơn.
 
-## Chạy {{ site.latex }} nhiều lần
+## Chạy LaTeX nhiều lần
 
 Đối với những tệp đơn giản, bạn chỉ cần biên dịch một lần để có được tệp PDF
 hoàn chỉnh. Nhưng một khi bạn thêm những thứ phức tạp hơn, ví dụ như các đường
@@ -32,7 +39,7 @@ dẫn trong văn bản, trích dẫn tài liệu (citation), hình vẽ hay mụ
 thể phải chạy LaTeX nhiều hơn một lần. Chúng ta sẽ nói về việc khi nào chạy
 LaTeX nhiều hơn một lần là cần thiết.
 
-## {{ site.latex }} hay pdf{{ site.latex }} hay...
+## LaTeX hay pdfLaTeX hay...
 
 Trong [bài tiếp theo](lesson-02), chúng ta sẽ thấy rằng LaTeX chỉ bao gồm một
 chương trình máy tính duy nhất. Để đơn giản, ta sẽ quan tâm chủ yếu vào một
