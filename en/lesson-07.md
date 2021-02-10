@@ -45,8 +45,12 @@ the size and shape of the included images and to trim down material. Some of
 these are used a lot, so they are worth being aware of.
 
 The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` and
-`\textheight`. LaTeX will automatically scale the image so that the aspect
+image, which are often given relative to the `\textwidth` or `\linewidth` and
+`\textheight`. The difference between `\textwidth` and `\linewidth` is subtle
+and often the result is the same. `\textwidth` is the width of the text block on
+the physical page, whereas `\linewidth` is the _current_ width, which might
+locally be different (the difference is most obvious with the class option
+`twocolumn`). LaTeX will automatically scale the image so that the aspect
 ratio stays correct.
 
 ```latex
