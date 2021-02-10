@@ -139,6 +139,10 @@ used in the demonstration.
 
 Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
 
+Use the `width` key to set the size of a graphic relative to `\textwidth` and
+another graphic relative to `\linewidth`. Try out how they behave with or
+without the `twocolumn` option.
+
 Use `lipsum` to make a reasonably long demonstration, then try out placing
 floats using the different position specifiers. How do different
 specifiers interact?
