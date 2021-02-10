@@ -1,32 +1,33 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "Extending LaTeX using packages and definitions"
-description: "This lesson shows how you can extend LaTeX to your needs and change its layout further by using different packages, and shows how you can define your own commands."
-toc-anchor-text: "Extending LaTeX"
-toc-description: "Using packages and definitions."
+title: "आज्ञासंच व व्याख्यांसह लाटेक्-चा विस्तारित वापर"
+description: "ह्या प्रकरणात लाटेक्-सह नव्या आज्ञा कशा रचाव्यात व विस्तारित वापरासाठी विविध आज्ञासंचांचा वापर कसा करावा हे आपण पाहणार आहोत."
+toc-anchor-text: "लाटेक्-चा विस्तारित वापर"
+toc-description: "आज्ञासंचांचा वापर व नवीन आज्ञांची घडण."
 ---
 
-# Extending LaTeX
+# लाटेक्-चा विस्तारित वापर
 
-<span
-  class="summary">This lesson shows how you can extend LaTeX to your needs and change its layout further by using packages and definitions. It also shows how you can define your own commands.</span>
+<span class="summary">
+ह्या प्रकरणात लाटेक्-सह नव्या आज्ञा कशा रचाव्यात व विस्तारित वापरासाठी विविध आज्ञासंचांचा
+वापर कसा करावा हे आपण पाहणार आहोत.
+</span>
 
-After having declared a class, in the preamble you can modify functionality in
-LaTeX by adding one or more *packages*. These can
+लाटेक्-वर्ग निवडल्यानंतर विशिष्ट कार्य साधण्यासाठी एका अथवा अनेक आज्ञासंचांचा वापर केला जाऊ
+शकतो. ह्या आज्ञासंचांमार्फत -
 
-- Change how some parts of LaTeX work
-- Add new commands to LaTeX
-- Change document design
+- लाटेक् अक्षरजुळणीची मूलभूत पद्धत बदलता येऊ शकते.
+- लाटेक्-मध्ये नवीन आज्ञांची भर पडते.
+- दस्तऐवजाचे रूप बदलता येते.
 
-## Changing how LaTeX works
+## लाटेक् अक्षरजुळणीची पद्धत बदलणे
 
-The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
-and so some add-on packages deal with very common ideas. The first is to
-change how LaTeX deals with language-specific typesetting (hyphenation,
-punctuation, quotations, localisation, etc.). Different languages have different
-rules, so it's important to tell LaTeX which one to use. This is handled by the
-`babel` package.
+मूळ लाटेक् आज्ञावली मर्यादित आहे व म्हणूनच निरनिराळे आज्ञासंच त्या आज्ञावलीत भर घालण्यासाठी व
+अधिकची कामे साधण्यासाठी वापरले जातात. भाषाविशिष्ट अक्षरजुळणी करणे (संयोगचिन्हांची मांडणी,
+विरामचिन्हे, स्थानिकीकरण इ.). निरनिराळ्या भाषांचे निरनिराळे नियम असतात. त्यामुळे लाटेक्-ला
+कोणत्या नियमांची निवड करावी हे सांगणे आवश्यक असते. `बेबल` ह्या आज्ञासंचातर्फे अशा भाषाविशिष्ट
+नियमांची जोडणी देता येते. उदाहरणार्थ -
 
 ```latex
 \documentclass{article}
@@ -46,18 +47,23 @@ material, and which will be able to give us at least one hyphenation point.
 \end{document}
 ```
 
-Try un-commenting the (clearly misleading) line to load `babel` and see the
-effect. (The standard hyphenation rules are US English.)
+ह्या आज्ञावलीतील चौथी ओळ टिप्पणी म्हणून न लिहिता आज्ञावली म्हणून लिहा. त्यामुळे तिचा परिणाम
+पाहता येईल व मूळ फलितात ह्या आज्ञासंचाच्या वापरामुळे पडणारा फरक पाहता येईल. संयोगचिन्हांच्या
+मांडणीचे लाटेक्-मधील मांडणीचे मूलभूत नियम अमेरिकी इंग्रजीचे आहेत.
 
-The `babel` package does a lot more than hyphenation, depending on the language
-involved; we've given [some more details](more-06) if you need them.
+<p class="hint">
+मराठीच्या संयोगचिन्हांच्या मांडणीचे नियम अजून बेबल आज्ञासंचाचा भाग नाहीत.^1 वापरकर्त्यांनी
+ह्या नियमांची यावच्छक्य भर घालण्याची नितांत आवश्यकता आहे.
+</p>
 
-## Changing design
+बेबल आज्ञासंच आणखी अनेक सुविधा पुरवतो. भाषाविशिष्ट अक्षरजुळणीकरिता आम्ही [प्रकरण
+०६](more-06)मध्ये काही तपशील पुरवले आहेत. कृपया ते पाहा.
 
-It's useful to be able to adjust some aspects of design independent of the
-document class. The most obvious one are the page margins. We've just used
-the `geometry` package in the example above, but let's now have an example
-specifically about margins.
+## दृश्यरूप बदलणे
+
+दृश्यरूपात काही बदल करता येणे उपयुक्त असते. समासांची मापे बदलणे हा एक प्रामुख्याने लागणारा बदल
+असू शकतो. वरील उदाहरणात आपण `जॉमेट्री` नावाचा आज्ञासंच वापरलाच आहे. आता विशेषतः समास
+बदलण्याचे उदाहरण आपण पाहू.
 
 ```latex
 \documentclass{book}
@@ -93,23 +99,21 @@ Text of the second section.
 \end{document}
 ```
 
-You should see the effect here compared to not loading `geometry`.
+`जॉमेट्री` आज्ञासंच वापरून व न वापरून आपल्याला फलितात होणारा फरक पाहता येेईल.
 
-## Adding new functionality
+## कार्यक्षमता विस्तारणे
 
-One of LaTeX's strengths is that you can choose from thousands of packages,
-including ones for writing mathematical text, for hyperlinking, for
-sophisticated capabilities with color, etc. We will see some more common
-packages in later lessons.
+लाटेक्-चे एक बलस्थान हे की विविध कार्यांकरिता उपलब्ध असणाऱ्या हजारो आज्ञासंचांपैकी कोणताही
+लाटेक्-धारिकांमध्ये वापरता येतो. उदा. गणिती मजकूर लिहिणे, दस्तऐवजांतर्गत संदर्भ देणे, रंग वापरणे
+ह्या सर्व सोयींकरिता विविध आज्ञासंच आहेत. पुढील प्रकरणांमध्ये आपण काही आज्ञासंच पाहू.
 
-## Defining commands
+## नवीन आज्ञा घडवणे
 
-Sometimes you need a command specific to your document, either some
-functionality not found in the available packages or simply a command
-to enter a common expression that is used multiple times.
+काही वेळा एखाद्या दस्तऐवजात नवीन आज्ञा घडवणे आवश्यक असू शकते. अशी आज्ञा जी लाटेक्-सह अथवा
+आज्ञासंचांसह पुरवलीच गेली नाही आहे अथवा अशी आज्ञा जी वारंवार वापरावी लागत आहे.
 
-The following example shows a command to produce keywords with a
-specific style applied.
+पुढील उदाहरणात विशिष्ट प्रकारची दृश्यमांडणी मिळवण्याकरिता घडवलेली नवी आज्ञा पाहता येऊ
+शकते.
 
 ```latex
 \documentclass{article}
@@ -124,18 +128,23 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-In the definition `[1]` denotes the number of arguments (here one)
-and `#1` denotes the first argument that is supplied
-(`apples` or `oranges` in this example). You may have up to nine
-arguments, but it is usually best to have just one argument, or
-sometimes none at all.
+नव्या आज्ञेच्या व्याख्येत `[1]` अशा प्रकारे चौकटी कंसात लिहिलेली संख्या कार्यघटकांची एकूण संख्या
+दर्शवते. (इथे एक) तसेच `#1` ह्या प्रकारे संख्या जिथे लिहिली जाते तिथे कार्यघटक म्हणून लिहिला
+गेलेला पाठ (पाठ्य मजकूर अथवा आज्ञा) जसाच्या तसा पुरवला जातो. वरील उदाहरणात नव्याने रचलेली
+`\kw` ही आज्ञा दोनदा वापरली गेली आहे. अनुक्रमे `apples` व `oranges` असे दोन कार्यघटक त्या
+आज्ञेस आपण दिले. आपल्या व्याख्येमुळे हे दोन्ही कार्यघटक अनुक्रमे `\textbf{\itshape apples}` व
+`\textbf{\itshape oranges}` म्हणून `#1`च्या जागी पुरवले गेले. लाटेक्-मध्ये कमाल ९ कार्यघटक
+असलेल्या आज्ञा घडवता येतात.
 
-Defining commands does not just reduce the typing required to produce
-a document. It helps to separate out the styling information. If it is
-decided to use a different style for keywords, rather than having to
-edit the entire document, you simply need to use a different
-definition. Here we load the `xcolor` package to provide colors, and
-use blue in place of bold in the formatting.
+<p class="hint">
+`\textbf` ह्या आज्ञेसह कार्यघटकास ठळक केले जाते. `\itshape` आज्ञेतर्फे इटालीय अक्षरे छापली जातात.
+</p>
+
+नव्या व्याख्या घडवणे केवळ कमी टंकलेखन करण्याकरिता उपयुक्त नसते. त्यामुळे अक्षरजुळणीविषयक गोष्टी
+मूळ आज्ञेपासून सुट्या होतात. संपूर्ण दस्तऐवज लिहून झाल्यावर समजा आपल्या आज्ञेचे फलित बदलावेसे
+वाटले, तर प्रत्येक ठिकाणी जाऊन ते बदल करण्यापेक्षा केवळ आज्ञेच्या व्याख्येत बदल केला की दस्तऐवजात
+सर्व ठिकाणी तो लागू होतो. आता आपण `xcolor` आज्ञासंचासह `\kw` आज्ञेचे फलित ठळक करण्याऐवजी
+रंगीत करूया.
 
 ```latex
 \documentclass{article}
@@ -152,22 +161,22 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-Beware that defining too many commands or defining commands with
-multiple arguments may make the document source harder  to understand
-as it is using an unfamiliar syntax. The ability to define
-document-specific commands should be used with care.
+अनेक नव्या आज्ञा घडवल्यामुळे अथवा भरपूर कार्यघटक असणाऱ्या आज्ञा घडवल्यामुळे बीजधारिका किचकट
+होऊ शकते, त्यामुळे नव्या आज्ञा घडवण्याची क्षमता सावधगिरीने वापरायला हवी.
 
-## Exercises
+## स्वाध्याय
 
-Try out writing some text in other European languages and see how `babel`
-affects hyphenation: you can probably find some text on the internet, and guess
-the right options.
+काही युरोपीय भाषांसह बेबल आज्ञासंच वापरून पाहा.^2 ह्या भाषांचा मजकूर महाजालावरून सहज
+मिळवता येईल. संयोगचिन्हाच्या मांडणीत काय फरक पडतो त्याकडे विशेषत्वाने लक्ष द्या.
 
-Try altering the margins in the `geometry` example. You can set the individual
-`top`, `bottom`, `left` and `right` margins separately using a comma-separated
-list.
+समासांची रुंदी जॉमेट्री आज्ञासंचासह बदलून पाहा. डावीकडचा समास, उजवीकडचा समास, खालचा समास
+व वरचा समास स्वतंत्रपणे बदलता येतो. त्याकरिता स्वल्पविरामांनी प्रत्येक प्राचले वेगळी लिहावीत.
 
-Try loading the `lipsum` package and then add the command `\lipsum` to your
-document. Can you guess why this package is useful for making examples?
+`lipsum` हा आज्ञासंच वापरून, डॉक्युमेन्ट ह्या क्षेत्रात `\lipsum` ही आज्ञा वापरा. ही आज्ञा
+उदाहरणे तयार करण्याकरिता अतिशय उपयुक्त आहे. कारणाबाबत विचार करा.
 
-Try altering the definition of `\kw` to achieve a different style.
+`\kw` ह्या आपल्या नव्याने तयार केलेल्या आज्ञेचे दृश्यरूप आणखी बदलण्याचा प्रयत्न करा.
+[^1]: रोजी पाहिले: १० फेब्रुवारी, २०२१
+[^2]: बेबल आज्ञासंचासह युरोपीय भाषांमध्ये भरपूर कामे आजवर झाली आहेत. युरोपाबाहेरील भाषांवर
+	  अजून बरीच कामे होणे शिल्लक आहे. त्यामुळे बेबलच्या क्षमता पाहण्याकरिता युरोपीय भाषांसह तो
+      वापरून पाहावा असे सुचवले गेले आहे.
