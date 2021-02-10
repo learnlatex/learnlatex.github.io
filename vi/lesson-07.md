@@ -43,11 +43,16 @@ Câu lệnh `\includegraphics` có nhiều tùy biến để kiểm soát kích 
 dạng của hình ảnh được thêm vào. Một vài tùy biến như vậy được dùng rất thường
 xuyên, do đó ta nên biết chúng.
 
-Thứ cần thiết nhất có lẽ là khả năng thay đổi chiều rộng (`width`) và chiều cao
-(`height`) của một hình ảnh. Các tùy biến này thường nhận giá trị được biểu diễn
-theo `\textwidth` (độ rộng của phần chữ trong trang giấy) hay `\textheight`
-(độ cao của phần chữ trong trang giấy). LaTeX sẽ tự động thu nhỏ hoặc phóng to
-ảnh để tỉ lệ chiều rộng/chiều dài ảnh vẫn được giữ nguyên.
+Cần thiết nhất có lẽ là các tùy biến cho phép ta thay đổi chiều rộng (`width`) và
+chiều cao (`height`) của một hình ảnh. Giá trị các tùy biến này thường được cho
+dưới dạng tỉ số tương đối so với `\textwidth`, `\linewidth` (độ rộng phần chữ
+trong trang giấy) hay `\textheight` (độ cao phần chữ trong trang giấy). Hai câu
+lệnh `\textwidth` và `\linewidth` khá tương tự nhau, và thường thì cho kết quả
+xuất ra giống nhau: `\textwidth` là độ rộng của phần chữ trên toàn trang giấy,
+trong khi `\linewidth` là độ rộng _hiện tại_ của dòng chữ &ndash; hai giá trị
+này đôi khi khác nhau (bạn có thể kiểm tra sự khác nhau giữa chúng bằng tùy biến
+lớp văn bản `twocolumn`). LaTeX sẽ tự động thu nhỏ hoặc phóng to ảnh để tỉ lệ
+chiều rộng/chiều dài ảnh vẫn được giữ nguyên.
 
 ```latex
 \documentclass{article}
@@ -131,6 +136,10 @@ vì nếu dùng `center` sẽ có quá nhiều khoảng trống theo chiều d�
 Thử thêm một hình ảnh bạn có, thay vào hình ảnh "mẫu" mà ta có ở ví dụ trên.
 
 Thử xem bạn có thể làm được gì với `height`, `width`, `angle` và `scale`.
+
+Dùng tùy biến `width` để thay đổi kích thước tương đối của một ảnh so với
+`\textwidth` và một ảnh khác so với `\linewidth`. Thử xem sự khác nhau về cách
+hoạt động của hai câu lệnh này bằng việc dùng tùy biến lớp `twocolumn`.
 
 Dùng `lipsum` để tạo ra một đoạn văn bản mẫu đủ dài, sau đó thử thêm các phần
 linh động với các tùy biến khác nhau. Các tùy biến khác nhau hoạt động với nhau
