@@ -93,7 +93,7 @@ es más bien una extensión de `book`.
 
 Estos tipos de documento extendidos disponen de una gran cantidad de herramientas de personalización,
 que exploraremos un poco en un ejercicio. Puede preguntarse cómo podemos saber cuáles son las
-herramientas de que disponen, abordaremos este tema [en una lección posterior](lesson-15), ¡pero
+herramientas de que disponen, abordaremos este tema [en una lección posterior](lesson-16), ¡pero
 usted siempre puede adelantarse!
 
 ## Presentaciones
