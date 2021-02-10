@@ -2,13 +2,14 @@
 layout: "lesson"
 lang: "ja"
 title: "表組み"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "このレッスンでは LaTeX で表組みを行う方法を説明します．セルのアライメントを変更したり，表に罫線を追加したり，セルを結合したりする方法も見ていきます．"
+toc-anchor-text: "LaTeX の表組み"
+toc-description: "表組みを扱う基本"
 ---
 
 # 表組み
 
-## シンプルな表組み
+<span class="summary">このレッスンでは LaTeX で表組みを行う方法を説明します．セルのアライメントを変更したり，表に罫線を追加したり，セルを結合したりする方法も見ていきます．</span>
 
 LaTeX で表組みを行うには `tabular` 環境を使用します．このレッスンでは LaTeX の表組み機能を拡張する `array` パッケージの使用を前提とします（このパッケージの機能が LaTeX 本体に実装されていないのは単に歴史的経緯によります）．したがって，とにもかくにも以下をプリアンブルに書いておきましょう：
 

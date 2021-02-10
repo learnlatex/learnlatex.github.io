@@ -2,22 +2,25 @@
 layout: "lesson"
 lang: "ja"
 title: "LaTeX を使用する"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "このレッスンでは TeX システムとは何か解説します．またしばしば LaTeX と共に用いられるテキストエディタやオンラインシステムについても紹介します．"
+toc-anchor-text: "LaTeX を使用する"
+toc-description: "TeX システムと LaTeX テキストエディタ"
 ---
 
 # LaTeX を使用する
+
+<span class="summary">このレッスンでは TeX システムとは何か解説します．またしばしば LaTeX と共に用いられるテキストエディタやオンラインシステムについても紹介します．</span>
 
 多くのコンピュータ・プログラムと異なり，LaTeX は「あらゆるもの」を含んだ単一のアプリケーションではありません．そうではなく，協調して働く独立した複数のプログラムから成り立っています．そうした一連のプログラムのうち，ユーザが実際に必要とするものは次の2つです：
 
 * **TeX システム**
 * テキストエディタ（しばしば LaTeX 専用のもの）
 
-## {{ site.tex }} システム
+## TeX システム
 
 LaTeX を使用するのにまず重要なことは，TeX システムを利用可能な状態にすることです．TeX システムはいわば「裏方」のプログラムやファイルの集まりで，LaTeX を動かすのに必要なものです．しかし，ほとんどの場合ユーザが直接これらを「実行」することはありません．
 
-今日利用可能な主要 TeX システムは [MiKTeX](https://www.miktex.org) と [TeX Live](https://tug.org/texlive) の2種類です．いずれも Windows, macOS, Linux で利用可能です．MiKTeX は歴史的に Windows と深く関わってきました．macOS では，TeX Live は [MacTeX](http://www.tug.org/mactex/) と呼ばれるより大きなコレクションに含まれています．[それぞれのシステムに特長がある](https://tex.stackexchange.com/questions/20036)ので，さらに踏み込んだ [LaTeX プロジェクトのアドバイス](https://www.latex-project.org/get/)を参考にするのもよいでしょう．
+今日利用可能な主要 TeX システムは [MiKTeX](https://miktex.org) と [TeX Live](https://tug.org/texlive) の2種類です．いずれも Windows, macOS, Linux で利用可能です．MiKTeX は歴史的に Windows と深く関わってきました．macOS では，TeX Live は [MacTeX](http://www.tug.org/mactex/) と呼ばれるより大きなコレクションに含まれています．[それぞれのシステムに特長がある](https://tex.stackexchange.com/questions/20036)ので，さらに踏み込んだ [LaTeX プロジェクトのアドバイス](https://www.latex-project.org/get/)を参考にするのもよいでしょう．
 
 すべての一般的なプラットフォームで利用可能であること，またパフォーマンス上いくつかのアドバンテージがあることから，どのシステムをインストールするか決めていない場合には，TeX Live を選択することをおすすめします．〔訳注：なお日本語文書の作成に重要なツールには，TeX Live にしか含まれていないものも多くあります．本チュートリアルで主として利用する pLaTeX も，MikTeX には含まれていません．そのため，**日本語文書を作成したい方に対しては TeX Live の利用を強く推奨します**．〕
 
@@ -27,7 +30,7 @@ LaTeX ファイルは単純なテキストファイルなので，どのよう�
 
 LaTeX エディタはここには書ききれないほどたくさんあります．[StackExchange に網羅的なリスト](https://tex.stackexchange.com/questions/339/latex-editors-ides)があるので，必要なら参照してください．基本的なエディタである [TeXworks](https://tug.org/texworks) は Windows および Linux において TeX Live/MiKTeX に含まれています．また MacTeX には [TeXShop](https://pages.uoregon.edu/koch/texshop/) というエディタが同梱されています．
 
-どのエディタを選ぶにせよ，TeX システムよりも**後に**インストールすることを推奨します．その順であれば，エディタはコンピュータ内の TeX システムを「見つける」ことができ，適切なセットアップを行うことができます．
+<p class="hint">どのエディタを選ぶにせよ，TeX システムよりも<strong>後に</strong>インストールすることを推奨します．その順であれば，エディタはコンピュータ内の TeX システムを「見つける」ことができ，適切なセットアップを行うことができます．</p>
 
 ## オンラインを活用する
 
@@ -36,6 +39,10 @@ LaTeX エディタはここには書ききれないほどたくさんありま�
 サイトによってはワードプロセッサのような機能と LaTeX を組み合わせたものもありますし，そうではなく LaTeX コードをありのまま見せることに注力しているものもあります．後者のタイプのサイトの使用感は，手許の PC に TeX システムをインストールしているときと似たようなものになるでしょう．
 
 また，中にはログイン不要で LaTeX を実行することのできるものもあります．このチュートリアルでは，そうしたサイトの1つである [LaTeX CGI](https://latexcgi.xyz) を活用して，実際にコード例を編集したりテストしたりできるようにしています．よりしっかりした文書を作成するのに適したオンラインサービスを利用するには，事前のユーザ登録が必要です．そうすることで，ユーザは自分の文書を保存することが可能になり，またサービスにとっては過剰な負荷を回避することができます．このチュートリアルでは，コード例を [Overleaf](https://www.overleaf.com) で編集できるようにするためのリンクも設置しています．Overleaf はオンライン LaTeX 環境として最もメジャーなものの1つです．もちろん，他にも [Papeeria](https://papeeria.com/) など類似のサービスがあります．また [Cloud LaTeX](https://cloudlatex.io/ja) というサービスは，日本企業により運営されており，特に日本語のサポートが手厚くなっています．
+
+## 第三者と協力する
+
+作成した LaTeX ソースを他の誰か（出版社や学会主催者，あるいは arXiv 等のプレプリントサーバ）に引き渡す予定がある場合は，送り先の指定をよく確認するようにしてください．
 
 ## 練習問題
 

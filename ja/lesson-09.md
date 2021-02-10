@@ -2,15 +2,20 @@
 layout: "lesson"
 lang: "ja"
 title: "相互参照"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "このレッスンでは図表やセクションなどの番号が付いた要素を参照する方法を紹介します．"
+toc-anchor-text: "相互参照"
+toc-description: "図表やセクションを参照する"
 ---
 
 # 相互参照
 
+<span class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>
+
+ある程度以上の長さの文書を作成する場合，番号の振られたコンテンツ（例えば図表や数式）への参照をしたいということがあります．そのようなとき，LaTeX は自動で正しい番号を挿入することができます．ただし，そのためには少しだけ準備をする必要があります．
+
 ## `\label` と `\ref`
 
-ある程度以上の長さの文書を作成する場合，番号の振られたコンテンツ（例えば図表や数式）への参照をしたいということがあります．そのようなとき，LaTeX は自動で正しい番号を挿入することができます．ただし，そのためには少しだけ準備をする必要があります．まず LaTeX に番号を覚えてもらうためにラベルを貼り，そしてそれとは別の場所でそのラベルを参照します．
+まず LaTeX に番号を覚えてもらうためにラベルを貼り，そしてそれとは別の場所でそのラベルを参照します．
 
 ```latex
 \RequirePackage{plautopatch}
