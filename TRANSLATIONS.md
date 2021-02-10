@@ -83,7 +83,7 @@ as ISO-8859-1. The Jekyll template system will fail to update the
 entire site if any page is not valid UTF-8.
 
 ## Page metadata
-At the top of each page is a yaml block (between `---` lines) with five variables ste for example
+At the top of each page is a yaml block (between `---` lines) with five variables set for example
 ```
 ---
 layout: "lesson"
