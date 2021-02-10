@@ -19,7 +19,7 @@ distincts qui fonctionnent ensemble. Il y a deux catégories indispensables :
 - Un éditeur de texte (plutôt un qui soit adapté à LaTeX).
 
 
-## Les systèmes {{ site.tex }}
+## Les systèmes TeX
 
 L'essentiel pour travailler avec LaTeX est de disposer d'un système TeX. Un
 système TeX est un ensemble de programmes et de fichiers qui vont rester

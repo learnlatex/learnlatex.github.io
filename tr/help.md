@@ -92,7 +92,7 @@ Whether or not the code block has been edited, there are three basic ways that y
 Our examples are based around using an up-to-date LaTeX installation. They all work with both of our online demonstration systems, so if you get errors with the examples we provide, you might want to check if your LaTeX system is up-to-date.
 
 
-## Choosing the {{ site.tex }} engine
+## Choosing the TeX engine
 
 When submitting example documents, by default the
 `pdflatex` engine will be used unless the example uses the `fontspec`

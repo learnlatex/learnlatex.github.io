@@ -80,7 +80,7 @@ Há três formasde você executar o exemplo:
    transferência do seu sistema operacional, então você pode começar um
    documento em branco no seu editor e colar o texto (Ctrl-V).
 
-## Escolhendo o interpretador {{ site.tex }}
+## Escolhendo o interpretador TeX
 
 Quando estiver executando os documentos de exemplo deste site, por padrão o
 `pdflatex` será usado, a menos que o exemplo use o pacote `fontspec`, então o

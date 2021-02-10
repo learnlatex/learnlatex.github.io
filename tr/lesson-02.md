@@ -1,89 +1,53 @@
 ---
 layout: "lesson"
 lang: "tr"
-title: "Working with LaTeX"
-description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
-toc-anchor-text: "Working with LaTeX"
-toc-description: "TeX systems and LaTeX text editors."
+title: "LaTeX ile çalışmak"
+description: "Bu ders TeX sistemlerinin ne olduğunu ve en yaygın sürümlerini açıklar, LaTeX ile birlikte kullanılan bazı metin düzenleyicilerden ve entegre düzenleyiciye sahip online sistemlerden bahseder."
+toc-anchor-text: "LaTeX ile çalışmak"
+toc-description: "TeX sistemleri ve LaTeX metin düzenleyicileri."
 ---
 
-# Working with LaTeX
+# LaTeX ile çalışmak
 
-Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs that work together.
-We can divide those up into two things you actually need:
+Birçok bilgisayar programının aksine LaTeX her şeyi bir arada içermez. Bunun yerine birlikte çalışan ayrı programlardan oluşur. Bu programları iki başlık altında gruplandırırsak:
 
-- A _TeX system_
-- A text editor (often a LaTeX-specific one)
+- Bir TeX sistemi
+- Bir metin düzenleyici (genellikle LaTeX için tasarlanır)
 
-## {{ site.tex }} systems
+## TeX sistemleri
 
-The core of working with LaTeX is having a TeX system available. A TeX system is a set
-of 'behind the scenes' programs and files that are needed to make LaTeX work, but
-most of the time you don't directly 'run' this.
+LaTeX ile çalışmak için bir adet TeX sistemine ihtiyaç vardır. TeX sistemi, LaTeX'in çalışması için arkaplanda gerekli olan program ve dosyaların tümüne denir, ancak çoğu zaman bunları direkt olarak çalıştırmazsınız.
 
-There are two major TeX systems available today,
-[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
-are available for Windows, macOS and Linux.
-MiKTeX has a strong background on Windows;
-on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).
-There are [advantages to each
-system](https://tex.stackexchange.com/questions/20036), and you might want to
-look at [some more advice from the LaTeX
-Project](https://www.latex-project.org/get/).
+Günümüzde revaçta olan iki adet TeX sistemi bulunmaktadır,
+[MiKTeX](https://miktex.org/) ve [TeX Live](https://tug.org/texlive). İkisi de Windows, macOS ve Linux platformlarında kullanılabilir.
+MiKTeX Windows üzerinde daha güçlü bir geçmişe sahip iken;
+macOS için TeX Live, [MacTeX](http://www.tug.org/mactex/) isimli bir dağıtıma dahil edilmiştir.
+Her iki sistemin de [kendilerine özgü avantajları](https://tex.stackexchange.com/questions/20036) bulunmaktadır. Bu konuda daha fazla bilgi ve tavsiyeye [LaTeX Project ](https://www.latex-project.org/get/)sayfasından erişilebilir. 
 
-As TeX Live is available on all common platforms, and as it has some performance
-advantages, we recommend that if you are unsure which system to install, you
-choose TeX Live.
+Eğer hangi sistemi kullanacağınız konusunda karasız iseniz; Bütün platformlarda kullanılabilir olması ve bazı performans getirilerinden dolayı TeX Live kullanmanızı öneriyoruz.
 
-## Editors
+## Metin Düzenleyicileri
 
-LaTeX files are simply plain text, so they can be edited with any text editor.
-However, it's most convenient to have an editor that is designed to work with
-LaTeX, as they provide features like one-click compilation of your files,
-built-in PDF viewers, and syntax highlighting. A really useful feature in all
-modern LaTeX editors is SyncTeX: the ability to click on your source and go
-straight to your PDF, or back the other way.
+LaTeX dosyaları düz metinlerden oluşmaktadır, bu nedenle herhangi bir metin düzenleyicisi ile düzenlenebilirler. Ancak, tek tıkla dizgileme (typesetting), entegre PDF görüntüleyicileri ve sözdizim vurgulama (syntax highlighting) gibi özellikler barındırmalarından dolayı LaTeX ile birlikte kullanılmak üzere tasarlanmış bir metin düzenleyicisi kullanmak en uygunu olacaktır. Bütün modern LaTeX düzenleyicilerde bulunan ve çok kullanışlı olan SyncTeX özelliği tek tıkla kaynak kodunuzudan PDF'e gitmenizi sağlar.
 
-There are many more LaTeX editors than we can hope to list here: there is a
-[comprehensive list on
-StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
-and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
-is included in MacTeX.
+Burada listeleyebileceğimizden çok daha fazla LaTeX düzenleyicisi bulunmaktadır, [StackExchange'de bulunan detaylı listeye](https://tex.stackexchange.com/questions/339/latex-editors-ides) göz atabilirsiniz.
 
-Whichever editor you pick, we recommend you install it _after_ your TeX system,
-so that the editor can 'find' the TeX system and set itself up correctly.
+Basit bir düzenleyici olan [TeXworks](https://tug.org/texworks), Windows ve Linux için TeX Live
+ve MiKTeX ile birlikte gelmektedir.[TeXShop](https://pages.uoregon.edu/koch/texshop/)
+ise MacTeX paketine dahil edilmiştir.
 
-## Working online
+Hangi düzenleyiciyi kullanırsanız kullanın, düzenleyicinin TeX sistemini tanıyabilmesi ve hatasız bir kurulum gerçekleştirebilmesi için TeX sisteminin _ardından_ kurulmasını tavsiye ediyoruz. 
 
-There are several powerful online sites nowadays that allow you to avoid
-the need to install a TeX system and LaTeX editor at all. These websites
-work by letting you edit your files in the webpage, then they run LaTeX
-behind the scenes, and display the PDF that is produced.
+## Online çalışmak
 
-Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focused on letting you see the LaTeX code and
-so are closer to having a local installation.
+Günümüzde bilgisayarınıza TeX sistemi ve LaTeX düzenleyici kurulumu yapmadan çalışmanıza olanak veren bazı etkili websiteleri bulunmaktadır. Bu websiteleri dosyalarınızı web arayüzünde düzenlemenize imkan verip, arkaplanda LaTeX'ı çalıştırarak üretilen PDF'i elde etmenizi sağlar.
 
-There are systems that let you run LaTeX without needing to be logged in, and we
-are using one of those,
-[LaTeX CGI](https://latexcgi.xyz), to let you
-edit and test the examples we give. For more complete work, the best online
-systems require that you register before you use them. That lets you save your
-work but also helps the sites not get overloaded. We have set up links so you
-can edit our examples using [Overleaf](https://www.overleaf.com), one of the
-major websites for LaTeX online. There are of course others:
-[Papeeria](https://papeeria.com/) is an example.
+Bu sitelerden bazıları LaTeX ile MS Word vb. kelime işlemcilerin özelliklerini birleştirirken bazıları da LaTeX kodlarınızı görmenize ve bilgisayarınızda elde edeceğiniz çalışma stiline yaklaşmanıza olanak verir.
 
-## Exercise
+Derslerde verilen örnekleri düzenlemeniz ve deneyebilmeniz için kullanıcı kaydı oluşturmadan da kullanabileceğiniz sistemlerden biri olan [LaTeX CGI](https://latexcgi.xyz) kullanmaktayız. En iyi online düzenleyiciler eksiksiz bir çalışma ortamı sunmak adına kullanmadan önce kayıt olmanızı şart koşarlar, bu sayede çalışmalarınızı kayıt altında tutabilirsiniz. Örneklerimizi en popüler online LaTeX sistemlerinden biri olan [Overleaf](https://www.overleaf.com) ile kullanabilmeniz için de gerekli bağlantıları sağladık. Tabi ki bu online LaTeX sistemleri için örnekler çoğaltılabilir, bunlardan bir diğeri de [Papeeria](https://papeeria.com/).
 
-Get yourself set up with a local LaTeX installation _or_ an account with
-an online LaTeX service. If you are using a local installation, you'll need
-to pick an editor too: we recommend starting with either TeXworks or TeX Shop
-(see above), then looking at other editors later once you know how _you_
-work best with LaTeX.
+## Alıştırma
 
-You'll be able to [run all of our other exercises in your browser](help.md), but we want
-to help you get working with real documents, so now is a great time to get
-yourself ready.
+Kendi bilgisayarınıza LaTeX kurulumu yaparak _veya_ online platformlardan birine kayıt olarak çalışmaya başlayabileceğiniz bir ortam edinin. Eğer bilgisayarınıza kurulum yapmayı planlıyorsanız bir metin düzenleyici de seçmeniz gerekecek: TeXworks veya TeX shop ile başlayıp, tecrübe kazandıkça diğer düzenliyicileri de değerlendirmenizi öneriyoruz.
+
+[Verilen bütün örnekleri tarayıcınız üzerinde çalıştırabiliyor olacaksınız](help.md), ancak gerçek dökümanlar üzerinde de çalışabilmenize yardımcı olmak istiyoruz, bu nedenle şu an kendi sisteminizi hazırlamanın tam sırası.

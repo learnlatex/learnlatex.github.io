@@ -82,7 +82,7 @@ Haga lo que haga, editar o no el texto del ejemplo, hay tres maneras básicas de
    potapapeles de su sistema operativo. Usted podrá abrir entonces un archivo en blanco, en 
    su editor de LaTeX local y pegar el contenido del partapapeles.
 
-## Eligiento el motor de {{ site.tex }}
+## Eligiento el motor de TeX
 
 Cuando se compilan los documentos de los ejemplos, el motor por 
 defecto es `pdflatex` a menos que use el paquete `fontspec`

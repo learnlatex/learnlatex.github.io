@@ -8,7 +8,7 @@ toc-anchor-text: "Anchor"
 toc-description: "Description"
 ---
 
-## p{{site.latex}}
+## pLaTeX
 
 ```latex
 % !TEX platex
@@ -32,7 +32,7 @@ p\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマ�
 \end{document}
 ```
 
-## up{{site.latex}}
+## upLaTeX
 
 ```latex
 % !TEX uplatex
@@ -57,7 +57,7 @@ up\LaTeX{}を利用するときには、あらかじめ文章中に\TeX{}コマ�
 ```
 
 
-## Lua{{site.latex}}
+## LuaLaTeX
 
 ```latex
 % !TEX lualatex

@@ -1,129 +1,114 @@
 ---
 layout: "lesson"
 lang: "tr"
-title: "Your first LaTeX document"
-description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "LaTeX documents"
-toc-description: "The basic structure of a document."
+title: "İlk LaTeX dökümanınız"
+description: "Bu ders bir LaTeX dökümanının temel yapısını, nasıl PDF elde edeceğinizi ve LaTeX'i kontrol etmek için kullanılan özel karakterleri gösterir."
+toc-anchor-text: "LaTeX dökümanları"
+toc-description: "Bir dökümanın temel yapısı"
 ---
 
-# Your first LaTeX document
+# İlk LaTeX dökümanınız
 
-Our first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to [see how to use the examples here on `learnlatex.org`](help).
+İlk LaTeX dosyamız çok basit olacak: amacımız size bir dökümanın nasıl göründüğü ve nasıl dizgilendiği göstermek. Ayrıca bu [`learnlatex.org` üzerindeki örnekleri nasıl kullanacağınızı](help) tecrübe etmek için ilk şansınız.
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
-If you are using the online system, you can just click on the ‘LaTeX Online’
-or ‘Open in Overleaf’ buttons in the
-example to try it out! We suggest you try out the online options even if you
-have set up LaTeX locally; this is a good chance to see how the different
-options work.
+Eğer yerel bir LaTeX kurulumunuz var ise (kendi bilgisayarınıza kurulum yaptıysanız), metin düzenleyicinizde `ilk.tex` isimli bir dosya oluşturun ve aşağıdaki metni ya kopyala-yapıştır ile ya da yazarak bu dosyanın içeriğine taşıyın. Eğer online bir sistem kullanıyorsanız 'LaTeX Online' veya 'Overleaf ile aç' butonlarına tıklayabilirsiniz. Yerel kurulum yapmış olsanız bile online sistemleri de denemenizi öneriyoruz; farklı sistemlerin nasıl çalıştığını tecrübe etmek yararınıza olacaktır.
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Hey world!
+Merhaba dünya!
 
-This is a first document.
+Bu benim ilk LaTeX dökümanım.
 \end{document}
 ```
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+Dosyayı kaydedin ve PDF dökümanı elde etmek için dizginleyin; eğer yerel kuruluma sahipseniz basmanız gereken buton kullandığınız metin editörüne göre değişecektir. Çıktı olarak yukarıdaki yazı ve sayfa numarasından oluşan bir PDF elde etmeniz gerekmekte; sayfa numaraları LaTeX tarafından otomatik olarak eklenir.
 
-View the output `first.pdf` with
-whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+`ilk.pdf` dosyasını dilediğiniz PDF görüntüleyicisi ile inceleyebilirsiniz. Bizce harika görünüyor, tebrikler!
 
-## Handling errors
+## Hatalarla başaçıkmak
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+Hatalar günlük hayatın bir parçası.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+Öncelikle yukarıda verilen her satırı tamamen aynı şekilde yazdığınızdan emin olun.
+Bazen küçük görünen farklılıklar çıktıda büyük değişikliklere, hatta dökümanın çalışmamasına sebep olabilmekte.
+Eğer problemi çözemiyorsanız yukarıdaki satırları yeniden kopyalayıp yapıştırmayı deneyin.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+Eğer dizgilemeniz soru işareti ile bitiyorsa sırasıyla `x` ve `<Enter>` tuşlarına basarak çıkabilirsiniz.
 
-## What you've got
+LaTeX'in verdiği hata mesajları yardımcı olabilmeleri için tasarlanmıştır ancak kelime işlemcilerdeki mesajlardan farklıdırlar. Bazı düzenleyiciler (text editor) hata mesajının tümünü görüntülemeyi zorlaştırır, bu nedenle önemli detayları kaçırabilirsiniz. LaTeX her zaman yaptığı işlerin kaydını tutar, bu kayıtlara `.log` uzantılı metin dosyasından ulaşılabilir. Bu dosyada karşılaştığınz hataların tümünü görebilirsiniz, bir sorun yaşadığınız zaman uzman LaTeX kullanıcıları sizden log dosyanızın bir kopyasını isteyecektir.
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+## Ne öğrendiniz?
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
-The `\usepackage` command is described in a [later lesson](lesson-06)
-it is used in most examples on this site to set up the font encoding.
+İlk döküman temel kavramları göstermekte.
+LaTeX dökümanları metin ve komutların birleşiminden oluşur.
+Komutlar ters eğik çizgi ile başlar
+ve bazen süslü parantezler içinde argümanlar içerirler
+(veya bazen köşeli parantez içinde opsiyonel argümanlar).
+Sonrasında ise LaTeX'e dosyanızı dizgilemesini söyleyerek PDF çıktısı elde edersiniz.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+Bütün LaTeX dosyaları `\begin{document}` ve tamamlayıcısı olan `\end{document}` komutlarını içerir.
+Bu iki komut arasında kalan alan ise içeriğinizin yer aldığı alandır ve *gövde (document body)* olarak adlandırılır.
+Bu örnekte gövde iki paragraftan oluşmaktadır (LaTeX'de paragraflar bir veya daha fazla
+satır boşluğu ile ayrılır).
+`\begin{document}` komutundan önce gelen alan ise  *giriş (preamble)* olarak adlandırılır,
+sayfa düzenine yön veren komutlar bu alanda yer alır.
+`\usepackage` komutu ise [bir sonraki derste](lesson-06) anlatılmış olup, bu sitedeki
+pek çok örnekte font kodlaması için kullanılmıştır.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+LaTeX'de farklı `\begin{...}` ve `\end{...}` çiftleri de bulunmaktadır; bunlara ise
+*ortam (environment)* ismi verilmiştir.
+Bu komutların birbiri ile eşleştirilmesi çok önemlidir, yani her bir `\begin{x}` komutu için `\end{x}` komutu bulunmak zorundadır.
+İç içe geçmeleri durumunda ise `\begin{x} ... \begin{y}` komutlarına karşılık sırasıyla `\end{y} ... \end{x}` komutları olmak zorundadır.
+
+LaTeX dosyalarına `%` işaretiyle başlayacak şekilde yorumlarımızı da ekleyebiliriz; haydi dökümanın yapısını göstermek için
+bu özelliği kullanalım:
+
 ```latex
-\documentclass[a4paper,12pt]{article} % The document class with options
+\documentclass[a4paper,12pt]{article} % Döküman tipi, verilen opsiyonel argümanlarla birlikte
 \usepackage[T1]{fontenc}
 % A comment in the preamble
 \begin{document}
-% This is a comment
-This is   a simple
-document\footnote{with a footnote}.
+% Bu bir   yorum   satırı 
+Bu da dipnot  içeren basit bir döküman\footnote{merhaba dünya!}.
 
-This is a new paragraph.
+Burası da yeni bir paragraf.
 \end{document}
 ```
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+Görebileceğiniz üzere yukarıda iki adet paragrafımız var. Bunu sağlamak için boş
+satırın nasıl kullanıldığına dikkat edin. Ayrıca, birden fazla yazılan boşluk
+karakterinin ise tekmişcesine algılandığını da gözden kaçırmayın.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+Bazı durumlarda satır kırılımı yaşamayacak istenen bir boşluk kullanmak isteyebilirsiniz.
+LaTeX ile `~` kullanarak bunu elde edebiliriz. Bu karakter arasinda yazıldığı iki metin
+arasında boşluk karakteri ekler. Bu özellik dersin ilerleyen kısımlarında çapraz başvuru
+(cross reference) kullanmaya başladığımız zaman çok daha kullanışlı olacak.
 
-## Special characters
+## Özel karakterler
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+Muhtemelen şimdiye kadar ``\``, `{` ve `}` karakterlerinin LaTeX için özel bir anlam ifade
+ettiğini anlamışsınızdır.
+``\`` karakteri LaTeX'e verilen bir komutun başında yer alır. Süslü parantezler `{` ve `}` 
+ise _zorunlu argümanların_ gösterimi için kullanılır.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+Bunlar dışında bazı özel karakterler daha bulunmaktadır, az önce gördüğümüz istenen boşluk
+`~` karakteri buna bir örnek. Bu karakterlerin neredeyse hepsinin normal metinlerde _çok_ az
+rastlanan karakterler olmalarından dolayı özel anlamlar onlara verilmiştir. Eğer bu karakterlerden
+bazılarını metinde kullanmanız gerekirse [detaylar kısmında](more-03) konuyla ilgili daha fazla
+bilgiye erişebilirsiniz. 
 
-## Exercise
+## Alıştırma
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+Online düzenleme ve dizgileme platformları ile tecrübe edinin; dizgilemek için
+gerekli butona tıklayın ve çıktıyı görüntüleyin, sonrasında dökümanda değişiklikler
+yapın ve tekrar dizgileyin.
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+İlk dökümanınıza metin eklemeyi deneyin, dökümanı dizgileyin ve PDF dosyanızda
+elde ettiğiniz değişiklikleri gözlemleyin. Farklı paragraflar yazın ve kelimeler
+arasında değişken sayıda boşluk bırakın. Düzenleyicinizin nasıl çalıştığını keşfedin;
+kaynak kodunuza tıklayın ve burada yer alan bir satırın PDF üzerindeki karşılığına
+nasıl gideceğinizi öğrenin. Biraz istenen boşluk (hard-space) ekleyip satır geçişlerine
+(line breaking) olan etkilerini gözlemleyin.
+
+
