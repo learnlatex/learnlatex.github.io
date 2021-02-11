@@ -1,17 +1,27 @@
 ---
 lang: "ja"
-title: "Using the learnlatex.org site (Japanese)"
+title: "このウェブサイトの使い方"
+description: "このページでは Learn LaTeX 自体の使い方を説明します．"
 permalink: /ja/help
 ---
-Translation to be added _after_ English text completed.
+
+# ヘルプ
+
+## ナビゲーション
+
+---
+
+## コード例
+
+## コード例を実行する
 
 
-----
+---
 
+<!-- TODO: 以下はそのうち消す -->
 
 Each example consists of a complete small LaTeX document shown within
 the page like this:
-
 
 ## Japanese
 
