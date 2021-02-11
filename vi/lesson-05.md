@@ -94,7 +94,7 @@ như một sự phát triển của `book`.
 
 Những lớp văn bản này có nhiều công cụ giúp bạn thiết kế, ta sẽ khám phá một vài
 trong số đó trong một bài tập. Bạn có thể hỏi tại sao ta có thể biết đến những
-công cụ này; ta sẽ nói đến điều đó trong [bài cuối](lesson-15), nhưng bạn vẫn
+công cụ này; ta sẽ nói đến điều đó trong [bài cuối](lesson-16), nhưng bạn vẫn
 luôn có thể "nhảy cóc"!
 
 ## Trình chiếu
