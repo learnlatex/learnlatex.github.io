@@ -43,7 +43,7 @@ trên Linux.
 thảo mã nguồn_ như TeXworks hay TeXShop nhưng không cài đặt một _hệ thống TeX_
 như TeX Live hay MiKTeX.
 
-## Cấu trúc của một thông báo lỗi {{ site.tex }}
+## Cấu trúc của một thông báo lỗi TeX
 
 ```latex
 \documentclass{article}

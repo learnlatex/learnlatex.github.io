@@ -6,7 +6,7 @@ description: "Cette leçon montre où trouver les sources de LaTeX lui-même."
 toc-anchor-text: "Trouver de la documentation et demander de l'aide : pour aller plus loin"
 ---
 
-## Le code-source documenté de {{site.latex}}
+## Le code-source documenté de LaTeX
 
 La commande `texdoc` vue précédemment n'est pas limitée à la documentation des
 packages. Si vous voulez en apprendre beaucoup plus que les 16&nbsp;leçons de ce

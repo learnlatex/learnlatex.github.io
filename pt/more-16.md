@@ -6,7 +6,7 @@ description: "Esta lição mostra onde você pode encontrar o código do própri
 toc-anchor-text: "Veja mais sobre: Acessando documentação e obtendo ajuda"
 ---
 
-## Código documentado do {{site.latex}}
+## Código documentado do LaTeX
 
 O comando `texdoc` descrito anteriormente não é restrito à documentação de
 pacotes.  Se você quiser ir além das áreas mostradas neste curso e estudar a

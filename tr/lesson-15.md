@@ -48,7 +48,7 @@ installed or not found.  A common mistake is to install an _editor_
 such as TeXworks or TeXShop but without installing a TeX system such as
 TeX Live or MiKTeX.
 
-## Anatomy of a {{ site.tex }} error message
+## Anatomy of a TeX error message
 
 ```latex
 \documentclass{article}

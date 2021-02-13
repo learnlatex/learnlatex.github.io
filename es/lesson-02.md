@@ -15,7 +15,7 @@ Podemos clasificar estos programas en dos cosas que usted necesitará:
 - Un _sistema TeX_
 - Un editor de texto (a menudo específico para LaTeX)
 
-## Distribuciones del sistema {{ site.tex }}
+## Distribuciones del sistema TeX
 
 Lo esencial para trabajar con LaTeX es disponer de un sistema TeX. Un sistema TeX es
 un conjunto de programas y archivos "en segundo plano", necesarios para que LaTeX

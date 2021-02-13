@@ -6,7 +6,7 @@ description: "Tài liệu về mã nguồn cốt lõi của hệ thống LaTeX."
 toc-anchor-text: "Bổ sung: Tài liệu và các sự trợ giúp"
 ---
 
-## Mã của lõi {{site.latex}}
+## Mã của lõi LaTeX
 
 Lệnh `texdoc` được mô tả trong bài chính không chỉ có thể cho ta hướng dẫn dùng
 các gói lệnh. Nếu bạn muốn đi sâu hơn khóa này và muốn biết mã của lõi LaTeX

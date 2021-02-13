@@ -75,7 +75,7 @@ Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau k
    đoạn mã vào trình soạn mã của mình và thực hiện các thao tác ở đó.
 
 
-## Chọn trình biên dịch {{ site.tex }}
+## Chọn trình biên dịch TeX
 
 Khi một đoạn mã được đưa lên, trình dịch `pdflatex`
 sẽ được sử dụng một cách mặc định trừ khi ví dụ có dùng gói `fontspec` (khi đó

@@ -104,7 +104,7 @@ la classe `book`.
 Ces classes étendues ont de nombreuses possibilités de personnalisation, que
 nous allons explorer un peu en travaux pratiques. Vous vous demandez peut-être
 comment connaître toutes ces possibilités ; nous en parlerons
-[dans une leçon ultérieure](lesson-15), mais vous pouvez toujours prendre de
+[dans une leçon ultérieure](lesson-16), mais vous pouvez toujours prendre de
 l'avance !
 
 

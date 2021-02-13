@@ -16,7 +16,7 @@ juntos.  Podemos dividi-los em duas coisas que você realmente precisa:
 - Um _sistema TeX_
 - Um editor de texto (geralmente um específico para LaTeX)
 
-## Sistemas {{ site.tex }}
+## Sistemas TeX
 
 O principal para trabalhar com o LaTeX é ter um sistema TeX disponível.  Um
 sistema TeX é um conjunto de programas 'nos bastidores' e arquivos que são
