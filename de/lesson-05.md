@@ -102,7 +102,7 @@ Die Klasse `memoir` entspricht am ehesten einer Erweiterung von `book`.
 Diese erweiterten Klassen haben ein Fülle an Anpassungsmöglichkeiten, die wir
 uns in der Übung ein wenig anschauen wollen. Woher man die
 Anpassungsmöglichkeiten kennen soll werden wir [in einer späteren
-Lektion](lesson-15) erklären, natürlich können Sie auch jetzt dort nachlesen.
+Lektion](lesson-16) erklären, natürlich können Sie auch jetzt dort nachlesen.
 
 ## Präsentationen
 
