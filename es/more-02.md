@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Trabajando con LaTeX"
+description: "Esta lección da más detalles sobre lo que es LaTeX y el motor en el que se ejecuta."
+toc-anchor-text: "Más sobre: Trabajando con LaTeX"
 ---
 
 Para la mayoría de nuestros ejemplos, no usaremos el programa llamado `latex` sino

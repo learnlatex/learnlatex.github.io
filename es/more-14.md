@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Seleccionando fuentes y usando los motores Unicode"
+description: "Esta lección muestra un ejemplo básico en Lua para usuarios que deseen escribir código Lua en sus documentos."
+toc-anchor-text: "Más sobre: Seleccionando fuentes y usando los motores Unicode"
 ---
 
 ## Lua

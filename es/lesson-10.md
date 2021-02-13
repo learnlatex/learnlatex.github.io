@@ -2,11 +2,15 @@
 layout: "lesson"
 lang: "es"
 title: "Matemáticas"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección presenta el modo matemático de LaTeX, la escritura de fórmulas en línea o en modo display, las extensiones del paquete amsmath y como cambiar la fuente de caractéres en modo matemático."
+toc-anchor-text: "Matemáticas"
+toc-description: "Modo y notación matemática"
 ---
 
 # Matemáticas
+
+<span
+  class="summary">Esta lección presenta el modo matemático de LaTeX, la escritura de fórmulas en línea o en modo display, las extensiones del paquete amsmath y como cambiar la fuente de caractéres en modo matemático.</span>
 
 ## El modo matemático
 

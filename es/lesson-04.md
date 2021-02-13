@@ -2,18 +2,22 @@
 layout: "lesson"
 lang: "es"
 title: "Estructura lógica de un documento"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra algunos comándos básicos para dar formato al texto y los compara con el formato semántico, los comandos de sección y las listas."
+toc-anchor-text: "Estructura lógica de un documento"
+toc-description: "Estructura y presentación visual"
 ---
 
 # Estructura lógica de un documento
+
+<span
+  class="summary">Esta lección muestra algunos comándos básicos para dar formato al texto y los compara con el formato semántico, los comandos de sección y las listas.</span>
 
 LaTex proporciona herramientas para concentrarse en la estructura lógica de su documento, y también
 la capacidad de configurar directamente la apariencia del mismo. La mayor parte del tiempo, es mejor usar
 métodos que se centren en la estructura, esto hace más fácil la reutilización o la modificación
 de la apariencia del documento cuando lo necesite.
 
-## Un primer ejemplo
+## Estructura y presentación visual
 
 Empezaremos con un ejemplo que compara uno de los comandos de marcado lógico
 más comunes en LaTeX, `\emph`, con simplemente poner algo en cursiva (en la impresión,
@@ -39,7 +43,7 @@ cuerpo del documeto.
 Abordaremos [la edición manual del estilo del texto más adelante](lesson-11), pero de momento
 añadamos `\textbf` a los comandos que conocemos: este comando pone el texto en negrita.
 
-## Seleccionado comandos
+## Comandos de sección
 
 Probablemente usted ya haya usado un procesador de texto, en el que para comenzar
 una sección, la mayor parte de la gente escribe el título de la sección, luego simplemente

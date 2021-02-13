@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Extendendiendo LaTeX usando paquetes"
+description: "Esta lección da más detalles sobre el uso de paquetes, muestra el uso del paquete babel para la selección del idioma y da más información sobre los comandos creados por el usuario."
+toc-anchor-text: "Más sobre: Extendendiendo LaTeX usando paquetes"
 ---
 
 ## Cargando varios paquetes

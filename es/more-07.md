@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Incluyendo imágenes y haciendo que las cosas \"floten\""
+description: "Esta lección da detalles sobre como dar nombres y guardar las imágenes que serán usadas en LaTeX y cómo puede realizar sus propias figuras con LaTeX."
+toc-anchor-text: "Más sobre: Incluyendo imágenes y haciendo que las cosas \"floten\""
 ---
 
 ## Nombrando los archivos de imágenes

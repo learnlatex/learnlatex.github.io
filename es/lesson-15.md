@@ -2,11 +2,15 @@
 layout: "lesson"
 lang: "es"
 title: "Analizando los errores"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra los errores comunes en los documentos LaTeX, lo que significan y como tratarlos."
+toc-anchor-text: "Tratamiento de errores"
+toc-description: "Trantando con comportamientos inesperados"
 ---
 
 # Analizando los errores
+
+<span
+  class="summary">Esta lección muestra los errores comunes en los documentos LaTeX, lo que significan y como tratarlos.</span>
 
 A diferencia de un típico procesador de textos, LaTeX dispone de un ciclo
 Editar/Ejecutar/Ver similar al de los compiladores de los lenguages de programación; 
