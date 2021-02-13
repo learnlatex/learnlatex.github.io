@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: ¿Qué es LaTeX y cómo funciona?"
+description: "Esta lección da mñas información sobre la historia de LateX y otros formatos disponibles."
+toc-anchor-tex: "Más sobre: ¿Qué es LaTeX y cómo funciona?"
 ---
 
 La palabra "LaTeX" está en realidad compuesta de dos partes, "La" y "TeX". En

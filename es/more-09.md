@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Referencias cruzadas"
+description: "Esta lección muestra cómo puede hacer enlaces a referencias cruzadas cargando el paquete hyperref."
+toc-anchor-text: "Más sobre: Referencias cruzadas"
 ---
 
 ## Convirtiendo referencias cruzadas en enlaces

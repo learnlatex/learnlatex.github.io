@@ -2,11 +2,15 @@
 layout: "lesson"
 lang: "es"
 title: "¿Qué es LaTeX y cómo funciona?"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección explica las bases de lo qué es LaTeX y cómo funciona en comparación con los procesadores de texto comunes como Microsoft Word o LibreOffice Writer." 
+toc-anchor-text: "Bases de LaTeX"
+toc-description: "¿Qué es LaTeX y cómo funciona?"
 ---
 
-# ¿Qué es LaTeX y cómo funciona?
+# Bases de LaTeX
+
+<span
+  class="summary">Esta lección explica las bases de lo qué es LaTeX y cómo funciona en comparación con los procesadores de texto comunes como Microsoft Word o LibreOffice Writer.</span>
 
 A diferencia de los procesadores de texto de uso común, como Microsoft Word o LibreOffice Writer, LaTeX no es WYSIWYG (siglas inglesas de "Lo Que Ves Es Lo Que Obtienes"). Con
 LaTeX se tiene texto sin formato y con marcadores o etiquetas. Estas etiquetas dan información a LaTeX sobre el significado lógico de los elementos del texto, de forma similar a HTML.
