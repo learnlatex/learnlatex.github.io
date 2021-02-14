@@ -31,8 +31,8 @@ referencias le permite reutilizar la información y le evita el tener que añadi
 
 ## Bases de datos de referencias bibliográficas
 
-A las bases de datos de referencias bibliográficas se les llama normalmente "archivos 
-BibTeX" y tienen la extensión `.bib`. Contienen uno a más registros, uno por cada referencia
+A las bases de datos de referencias bibliográficas se les llama normalmente «archivos 
+BibTeX» y tienen la extensión `.bib`. Contienen uno a más registros, uno por cada referencia
 y en cada registro hay una serie de campos. Veamos un ejemplo.
 
 <!-- {% raw %} -->
@@ -65,7 +65,7 @@ de registro más comunes. Cada registro de la base de datos comienza con el sím
 y todas las informaciones relacionadas con él van entre llaves.
 
 Los diferentes campos necesarios son dados utilizando un formato de palabras clave, salvo
-el primer campo, que corresponde a lo que se conoce como la "clave": el "nombre" del registro.
+el primer campo, que corresponde a lo que se conoce como la «clave»: el «nombre» del registro.
 Como clave de registro puede utilizar lo que quiera, ya que es sólo una clave, pero aquí
 hemos elegido usar el nombre de uno de los autores y el año: comúnmente se hace esta elección.
 
@@ -84,7 +84,7 @@ a usar [doi2bib](https://doi2bib.org) para obtener fácilmente el registro BibTe
 ¡asegúrese de disponer de la información correcta!
 
 Aquí, usaremos para los ejemplos que siguen la base de datos simple 
-que hemos definido más arriba: la hemos "guardado" con el nombre de 
+que hemos definido más arriba: la hemos «guardado» con el nombre de 
 `learnlatex.bib`.
 
 ## Transfiriendo información desde una base de datos
@@ -105,12 +105,12 @@ con el paquete `natbib`.
 
 Ejecutar una segunda herramienta, además de LaTeX, se lleva a cabo de diferentes maneras
 en función del editor utilizado. En el caso de nuestros ejemplos en línea, disponemos de
-una serie de scripts que se ejecutan "en segundo plano" y que lo hacen todo de una vez.
-Puede que su editor tenga una opción del tipo "herramientas de usuario", o puede elegir
+una serie de scripts que se ejecutan «en segundo plano» y que lo hacen todo de una vez.
+Puede que su editor tenga una opción del tipo «herramientas de usuario», o puede elegir
 ejecutar BibTex o Biber usted mismo entre dos compilaciones de LaTeX.
 
 El formato de las citas y referecias es independiente de su base de datos BibTeX y
-se configura con lo que se conoce como un "estilo". Veremos que esto funciona de forma
+se configura con lo que se conoce como un «estilo». Veremos que esto funciona de forma
 ligeramente diferente en `natbib` y en `biblatex`, pero básicamente la idea principal es 
 la misma: podemos elegir como se presentan las citas.
 

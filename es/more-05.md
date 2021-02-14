@@ -19,7 +19,7 @@ estándar de TeX.
 ## Tipos de documento para presentaciones de diapositivas
 
 Un tema que necesita un tratamiento especial, es el de la creación de diapositivas. El tipo de
-documento `slides` fue desarrollado par crear las "clásicas" diapositivas a imprimir, y no tiene 
+documento `slides` fue desarrollado par crear las «clásicas» diapositivas a imprimir, y no tiene 
 ningún soporte especial para las presentaciones digitales. Se han desarrollado dos tipos de documento, sólo para ello
 y ambos son ampliamente utilizados: `beamer` y `powershot`. Como `beamer`es probablemente el más
 común, le mostramos un ejemplo de cómo utilizarlo:
@@ -47,14 +47,14 @@ común, le mostramos un ejemplo de cómo utilizarlo:
 Este ejemplo muestra dos ideas importantes. En primer lugar,`beamer` divide el documento
 en marcos, cada uno de las cuales puede disponer de más de una diapositiva (página). En segundo
 lugar, `beamer` añade al LaTex de base una sintaxis, que permite que diferentes partes del texto 
-aparezcan "de forma progresiva". Esto es potente, pero también más complicado de lo que podemos 
+aparezcan «de forma progresiva». Esto es potente, pero también más complicado de lo que podemos 
 enseñarle aquí: échele un vistazo al [artículo de este blog](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) para
 más información.
 
 ## Un tipo de documento para imágenes
 
 Hay ocasiones en la que necesitará crear una imagen (que puede contener un texto denso)
-usando LaTeX. A menudo, es el único contenido que desea mostrar en la "página". Hacer esto
+usando LaTeX. A menudo, es el único contenido que desea mostrar en la «página». Hacer esto
 es sencillísimo haciendo uso del tipo de documento [`standalone`](https://ctan.org/pkg/standalone).
 Configura automáticamente el tamaño de la página para enmarcar el contenido a imprimir.
 

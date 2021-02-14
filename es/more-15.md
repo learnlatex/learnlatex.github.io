@@ -125,7 +125,7 @@ En este ejemplo, el grupo correspondiente al cambio de tamaño de letra ha sido 
 con un paréntesis `)`. Este error sólo es detectado al llegar al final del archivo,
 cuando TeX se da cuenta de que hay un grupo que no ha sido cerrado. Se indica entonces
 la línea en la que el grupo se ha abierto `{`. No se indica el verdadero error, ya que
-el paréntesis `)` es interpretado como un "texto normal".
+el paréntesis `)` es interpretado como un «texto normal».
 ```
 (\end occurred inside a group at level 1)
 

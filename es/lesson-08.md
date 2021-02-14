@@ -39,7 +39,7 @@ identificadores de preámbulo. Los tipos de columna disponibles son:
 | `m{width}` | como `p`, pero centrado verticalmente con respecto al resto del texto de la misma fila |
 | `b{width}` | como `p`, pero ajustado verticalmente a la parte baja de la celda |
 | `w{align}{width}` | imprime el contenido con un ancho `width` fijo, sobreimprimiendo si el texto es muy largo. Puede elegir el justificado horizontal `align` usando `l`, `c`, or `r`. |
-| `W{align}{width}` | como `w`, pero dando lugar a un mensaje de alerta "overfull box warning" si el texto es demasiado grande. |
+| `W{align}{width}` | como `w`, pero dando lugar a un mensaje de alerta «overfull box warning» si el texto es demasiado grande. |
 
 Además, otros identificadores de preámbulo adicionales están disponibles, estos no son para
 definir columnas pero pueden serle de gran utilidad igualmente: 

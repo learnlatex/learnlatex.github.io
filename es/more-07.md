@@ -85,7 +85,7 @@ salida, justo en el mismo sitio en el que se encuentra situada en el documento.
 \end{document}
 ```
 
-Note el uso de la opción `H`, que coloca la figura "estrictamente Aquí" (Aquí, Here en inglés). 
+Note el uso de la opción `H`, que coloca la figura «estrictamente Aquí» (Aquí, Here en inglés). 
 Sin embargo, a menudo se desaconseja el uso de `H`, ya que puede dejar
 grandes espacios en blanco en su documento.
 

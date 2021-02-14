@@ -45,7 +45,7 @@ después del contenido de cada celda de esa columna, puede hacer lo siguiente:
 ```
 <!-- {% endraw %} -->
 
-`itshape` pone en cursiva el texto que le precede, pero su efecto esta "limitado"
+`itshape` pone en cursiva el texto que le precede, pero su efecto esta «limitado»
 a la celda en cuestión. Abordaremos el cambio manual del tipo letra [en una de las
 próximas lecciones](lesson-11).
 
@@ -228,7 +228,7 @@ Un ejemplo simple de dos columnas numéricas alineadas:
 \end{document}
 ```
 
-Note que cualquier celda no numérica debe ser "protegida" escribiendo su contenido entre llaves. 
+Note que cualquier celda no numérica debe ser «protegida» escribiendo su contenido entre llaves. 
 
 El paquete `siunitx` proporciona muchas funcionalidades para cambiar el formato de los números
 de formas diferentes; vea la [documentación de este 
@@ -428,9 +428,9 @@ más detalles, pero veamos aquí un ejemplo simple:
 La configuración por defecto del salto de página, asume que las líneas relativamente
 largas disponen de cierta flexibilidad para elegir el salto de línea. El siguiente
 ejemplo se muestran algunas de las aproximaciones posibles. La primera tabla muestra
-el ajuste del espacio entre palabras y TeX le dará un mensaje de aviso de tipo "Underfull lines"
+el ajuste del espacio entre palabras y TeX le dará un mensaje de aviso de tipo «Underfull lines»
 (líneas que dejan espacios en blanco). El uso de `\raggedright` normalmente impide
-este problema, pero puede dar lugar a líneas "muy irregulares". El comando
+este problema, pero puede dar lugar a líneas «muy irregulares». El comando
 `\RaggedRight` del paquete `ragged2e` es un compromiso; permite cierta irregularidad entre
 el ancho de las líneas, pero también divide una palabra con un guión cuando es necesario, tal y 
 como se muestra en la tercera tabla.

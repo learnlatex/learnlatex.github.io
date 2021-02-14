@@ -14,7 +14,7 @@ toc-description: "Sistemas TeX y editores de LaTeX"
 
 
 A diferencia de muchos programas, LaTeX no es una simple aplicación que contiene
-"todo" en uno. En lugar de ello, tiene programas independientes que funcionan juntos.
+«todo en uno». En lugar de ello, tiene programas independientes que funcionan juntos.
 Podemos clasificar estos programas en dos cosas que usted necesitará:
 
 - Un _sistema TeX_
@@ -23,8 +23,8 @@ Podemos clasificar estos programas en dos cosas que usted necesitará:
 ## Distribuciones del sistema TeX
 
 Lo esencial para trabajar con LaTeX es disponer de un sistema TeX. Un sistema TeX es
-un conjunto de programas y archivos "en segundo plano", necesarios para que LaTeX
-funcione, pero la mayor parte del tiempo no necesitará "ejecutarlos" directamente.   
+un conjunto de programas y archivos «en segundo plano», necesarios para que LaTeX
+funcione, pero la mayor parte del tiempo no necesitará «ejecutarlos» directamente.   
 
 Hay dos principales distribuciones del sistema TeX disponibles hoy en día,
 [MiKTeX](https://miktex.org/) y [TeX Live](https://tug.org/texlive). Ambas
@@ -55,7 +55,7 @@ TeX Live y MikTeX para Windows y Linux; y [TeXShop](https://pages.uoregon.edu/ko
 forma parte de MacTeX.  
 
 Sea cual sea el editor que elija, le recomentamos instalarlo _después_ de instalar el 
-sistema TeX, de forma que el editor "localice" el sistema TeX y lo configure automáticamente. 
+sistema TeX, de forma que el editor «localice» el sistema TeX y lo configure automáticamente. 
 
 ## Trabajando en línea
 

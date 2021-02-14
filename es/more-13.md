@@ -37,6 +37,6 @@ Aún más texto\index{gamma@$\gamma$}.
 ```
 
 Hemos mostrado, en este ejemplo, dos tipos de indexación: la subdivisión, usando `!` y
-el poder indicar algo diferente del "texto de la etiqueta" en la entrada del índice, usando `@`.
+el poder indicar algo diferente del «texto de la etiqueta» en la entrada del índice, usando `@`.
 Existe una gran posibilidad de personalización del índice de materias; experimente
 con el ejemplo para ver cómo funciona.
