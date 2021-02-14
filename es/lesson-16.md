@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "es"
 title: "Accediendo a la documentación y buscando ayuda"
 description: "Esta lección muestra las principales fuentes de documentación relacionadas con el software y los paquetes de LaTeX, y cómo encontrar la solución a sus problemas."
-toc-anchor-teEsta lección muestra las principales fuentes de documentación relacionadas con el software y los paquetes de LaTeX, y cómo encontrar la solución a sus problemas.xt: "Ayuda y documentación"
+toc-anchor-text: "Esta lección muestra las principales fuentes de documentación relacionadas con el software y los paquetes de LaTeX, y cómo encontrar la solución a sus problemas.xt: "Ayuda y documentación"
 toc-description: "Accediendo a la ayuda y a la documentación"
 ---
 
