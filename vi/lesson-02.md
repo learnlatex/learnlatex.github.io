@@ -9,6 +9,9 @@ toc-description: "Hệ thống TeX và trình soạn thảo mã LaTeX"
 
 # Làm việc với LaTeX
 
+<span class="summary">Bài này nói về các hệ thống TeX thường gặp, cũng như các
+trình soạn thảo mã LaTeX thông dụng.</span>
+
 Không giống nhiều chương trình máy tính khác, LaTeX không phải là một chương
 trình bao gồm 'tất cả mọi thứ'. Thay vào đó, có nhiều chương trình khác nhau
 hoạt động cùng nhau. Ta có thể chia chúng thành hai thứ mà bạn cần:

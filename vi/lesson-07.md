@@ -7,7 +7,10 @@ toc-anchor-text: "Hình vẽ"
 toc-description: "Kích thước, khoảng cách và vị trí hình"
 ---
 
-# Thêm hình ảnh và làm cho các hình linh động
+# Hình vẽ
+
+<span class="summary">Bài này giải thích cách thêm hình vẽ/hình ảnh vào LaTeX,
+cũng như làm thế nào để thay đổi các thông số cơ bản cũng như vị trí của hình.</span>
 
 ## Thêm các hình ảnh
 

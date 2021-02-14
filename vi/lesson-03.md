@@ -7,7 +7,10 @@ toc-anchor-text: "Văn bản LaTeX đầu tiên"
 toc-description: "Bố cục cơ bản của một văn bản LaTeX"
 ---
 
-# Văn bản LaTeX đầu tiên của bạn
+# Văn bản LaTeX đầu tiên
+
+<span class="summary">Bài này giải thích bố cục cơ bản của các văn bản LaTeX, và
+một số câu lệnh cơ bản và hay dùng nhất của ngôn ngữ soạn thảo này.</span>
 
 Văn bản LaTeX đầu tiên sẽ rất đơn giản, ý tưởng là để cho bạn thấy bố cục của
 một văn bản và cách để biên dịch nó thành công. Đây cũng là cơ hội đầu tiên của

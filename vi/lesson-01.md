@@ -7,7 +7,11 @@ toc-anchor-text: "Khái quát về LaTeX"
 toc-description: "LaTeX là gì? Nó hoạt động thế nào?"
 ---
 
-# LaTeX là gì và nó hoạt động như thế nào?
+# Khái quát về LaTeX
+
+<span class="summary">Bài này giải thích LaTeX là gì, cũng như sự khác nhau
+trong cách hoạt động giữa LaTeX và các trình soạn thảo thường gặp như Microsoft
+Word hay LibreOffice Writer.</span>
 
 Không giống những trình soạn thảo văn bản thông dụng như Microsoft Word hay
 LibreOffice Writer, LaTeX không phải là một trình soạn thảo WYSIWYG ('What You See Is

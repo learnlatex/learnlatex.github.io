@@ -5,6 +5,8 @@ description: "Một vài nét khái quát về cách sử dụng và điều hư
 permalink: /vi/help
 ---
 
+# Sử dụng trang learnlatex.org
+
 ## Định hướng trong trang
 
 Khóa này bao gồm 16 bài học cơ bản. Bạn có thể xem danh sách của chúng trong

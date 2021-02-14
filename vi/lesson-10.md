@@ -7,7 +7,11 @@ toc-anchor-text: "Công thức toán học"
 toc-description: "Chế độ toán trong LaTeX"
 ---
 
-# Các công thức toán học
+# Công thức toán học
+
+<span class="summary">Bài này giải thích các cách khác nhau để thêm các công
+thức toán học vào văn bản, cũng như một vài lệnh công thức toán cơ bản trong
+LaTeX.</span>
 
 ## Chế độ toán (math mode)
 

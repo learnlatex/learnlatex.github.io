@@ -7,7 +7,10 @@ toc-anchor-text: "Lớp văn bản"
 toc-description: "Các thiết lập cơ bản của toàn văn bản"
 ---
 
-# Sử dụng các lớp văn bản
+# Lớp văn bản
+
+<span class="summary">Bài này giải thích cách sử dụng và tùy biến một số lớp văn
+bản thông dụng trong việc thiết kế văn bản.</span>
 
 ## Lớp văn bản làm gì?
 

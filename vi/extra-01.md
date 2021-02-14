@@ -7,7 +7,7 @@ toc-anchor-text: "Ví dụ bổ sung"
 toc-description: "Những ví dụ chuyên sâu hơn"
 ---
 
-# Những ví dụ chuyên sâu hơn
+# Ví dụ bổ sung
 
 <span class="summary">Một vài ví dụ cho các gói lệnh LaTeX nâng cao, được dùng
 cho các ngành và các mục đích chuyên sâu hơn.</span>

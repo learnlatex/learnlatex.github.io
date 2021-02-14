@@ -9,6 +9,9 @@ toc-description: "Một vài thành phần cơ bản của văn bản"
 
 # Cấu trúc logic
 
+<span class="summary">Bài này giới thiệu cú pháp một số câu lệnh và môi trường
+thông dụng để thêm một số thành phần logic cơ bản của một văn bản LaTeX.</span>
+
 LaTeX cho ta nhiều cách để ta quan tâm đến cấu trúc logic trong văn bản, cũng
 như khả năng trực tiếp điều chỉnh thiết kế văn bản. Trong hầu hết các trường
 hợp, ta nên dùng những phương pháp để quan tâm tới cấu trúc trong văn bản, vì
