@@ -19,7 +19,6 @@
               {% else %}
                 {% assign pp = "-" | prepend: include.prefix %}
               {% endif %}
-              {{ page.path | replace: '.md','' | replace: pp ,'' }}
               {% if page.lang == "mr" %}
                 {% assign pageno = page.path | replace: '.md','' | replace: pp ,'' | floor %}
                 {{ mrdigits[pageno] }}
