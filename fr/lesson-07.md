@@ -49,9 +49,16 @@ ces options sont très utilisées, il est donc important de les connaître.
 
 Les choses les plus évidentes à définir sont la largeur de l'image (`width`) et
 sa hauteur (`height`), qui sont souvent données par rapport à la largeur du
-texte (`\textwidth`) ou à sa hauteur (`\textheight`). LaTeX mettra
-automatiquement l'image à l'échelle pour que son rapport hauteur/largeur reste
-correct.
+texte (`\textwidth` ou `\linewidth`) ou à sa hauteur (`\textheight`).
+
+La différence entre `\textwidth` (« largeur de texte ») et `\linewidth`
+(« largeur de ligne ») est subtile et le résultat est souvent le même.
+`\textwidth` est la largeur du bloc de texte sur la page physique, alors que
+`\linewidth` est la largeur _courante_, qui peut être localement différente
+(la différence est plus évidente lorsque le document est composé en deux
+colonnes, avec l'option de classe `twocolumn`).
+LaTeX mettra automatiquement l'image à l'échelle pour que son rapport
+hauteur/largeur reste correct.
 
 ```latex
 \documentclass{article}
@@ -114,13 +121,14 @@ Emplacement initial
 \end{document}
 ```
 
-Si l'on n'utilisait pas le mécanisme des flottants, l'image apparaîtrait juste
-sous le texte `Emplacement initial`. Mais quand on lui permet de flotter,
-elle est positionnée en haut de la deuxième page, car il n'y a pas de place pour
-elle au bas de la première page. L'option `ht` influence l'endroit où LaTeX peut
-placer le flottant ; ces deux lettres signifient qu'il peut aller soit là où il
-se trouve dans le code source (donc à côté de `Emplacement initial`), soit en haut
-d'une page. Vous pouvez utiliser jusqu'à quatre spécificateurs de position :
+Si l'on n'utilisait pas le mécanisme des flottants, l'image et sa légende
+apparaîtraient juste sous le texte `Emplacement initial`. Mais quand on leur
+permet de flotter, elles sont positionnées en haut de la deuxième page,
+car il n'y a pas de place pour elles au bas de la première page.
+L'option `ht` influence l'endroit où LaTeX peut placer le flottant ; ces
+deux lettres signifient qu'il peut aller soit là où il se trouve dans le
+code source (donc à côté de `Emplacement initial`), soit en haut d'une page.
+Vous pouvez utiliser jusqu'à quatre spécificateurs de position :
 
 - `h` : ici, si possible (_**h**ere_),
 - `t` : en haut d'une page (_**t**op of a page_),
@@ -145,6 +153,10 @@ standards que nous avons utilisées dans la démonstration.
 
 Explorez ce que vous pouvez faire en utilisant les options `height`, `width`,
 `angle` et `scale`.
+
+Utilisez l'option `width` pour définir la taille d'une image par rapport à
+`\textwidth` et d'une autre par rapport à `\linewidth`. Essayez de voir comment
+ils se comportent avec ou sans l'option `twocolumn`.
 
 Utilisez le package `lipsum` pour constuire un exemple assez long, puis placez
 des flottants en utilisant les différents spécificateurs de position. Comment
