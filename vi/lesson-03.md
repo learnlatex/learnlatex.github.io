@@ -18,14 +18,18 @@ bạn để [sử dụng các ví dụ ở đây trên `learnlatex.org`](help).
 
 Nếu bạn đang sử dụng một hệ thống TeX được cài đặt lên máy tính của mình, trong
 trình soạn thảo mã nguồn hãy tạo một tệp mới đặt tên là `first.tex`, và sao chép
-đoạn mã sau vào tệp hoặc gõ lại nó. Nếu bạn đang sử dụng một dịch vụ trực tuyến,
-bạn có thể nhấn vào nút "LaTeX Online" hoặc "Open in Overleaf" để thử nó! Chúng
-tôi khuyên bạn nên thử những lựa chọn trực tuyến ngay cả khi đã cài đặt một hệ
-thống TeX; đây là một cơ hội tốt để thấy được các lựa chọn khác nhau hoạt động
-như thế nào.
+đoạn mã sau vào tệp hoặc gõ lại nó.
+
+Nếu bạn đang sử dụng một dịch vụ trực tuyến, bạn có thể nhấn vào nút "LaTeX
+Online" hoặc "Open in Overleaf" để thử nó!
+
+<p class="hint">Chúng tôi khuyên bạn nên thử những lựa chọn trực tuyến ngay cả
+khi đã cài đặt một hệ thống TeX, vì đây là một cơ hội tốt để thấy được các lựa
+chọn khác nhau hoạt động như thế nào.</p>
 
 Chú ý rằng ta sẽ dùng tiếng Anh cho các ví dụ ở đây. Cách dùng tiếng Việt trong
 LaTeX sẽ được nói tới trong [một bài khác](language-01).
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -62,6 +66,9 @@ quan trọng. LaTeX luôn viết lại những gì nó đang làm vào một t�
 có định dạng `.log`. Bạn luôn luôn có thể xem toàn bộ đoạn lỗi ở đó, và khi bạn
 gặp một vấn đề nào đó, những người dùng LaTeX thành thạo thường đề nghị bạn cung
 cấp một bản sao của tệp log này.
+
+<p class="hint">Ta sẽ nói thêm về các cách xử lý lỗi trong
+<a href="./lesson-15">bài 15</a>.</p>
 
 ## Những kiến thức ta đã có được
 

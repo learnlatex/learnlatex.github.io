@@ -38,9 +38,11 @@ See how the paragraph continues after the display.
 Ta có thể thấy các câu lệnh toán "giống LaTeX" xuất hiện ở nhiều chỗ khác, ví dụ
 như thư viện MathJax để hiện công thức toán học trên các trang web. Những thư
 viện như vậy thường thực hiện những thay đổi nhỏ đối với cú pháp của LaTeX vì
-nó không hề dùng LaTeX! Các ví dụ ở đây đều dùng LaTeX "chính xác", do đó nếu
-bạn thấy cú pháp hơi khác ở những chỗ khác, có thể những chỗ đó đang dùng một
-thứ không phải LaTeX.
+chúng, trên thực tế, thường không hề dùng LaTeX!
+
+<p class="hint">Các ví dụ ở đây đều dùng LaTeX <i>chính xác</i>, do đó nếu bạn
+thấy nó hơi khác ở những chỗ khác, có thể những chỗ đó đang dùng một thứ không
+phải LaTeX.</p>
 
 ## Chế độ toán inline và các ký hiệu toán học
 

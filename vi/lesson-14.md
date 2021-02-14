@@ -96,6 +96,6 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
-Khi ta thay đổi ngôn ngữ, việc thay đổi quy tắc hyphenation và những thứ tương
-tự có thể cần thiết. Các gói `babel` hay `polyglossia` đều cung cấp những công
-cụ mạnh để thực hiện việc này.
+<p class="hint">Khi ta thay đổi ngôn ngữ, việc thay đổi quy tắc hyphenation và
+những thứ tương tự có thể cần thiết. Các gói <code>babel</code> hay
+<code>polyglossia</code> đều cung cấp những công cụ mạnh để thực hiện việc này.</p>

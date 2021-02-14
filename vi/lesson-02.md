@@ -54,9 +54,9 @@ Một trình sửa mã nguồn cơ bản, [TeXworks](https://tug.org/texworks), 
 phối cùng với TeX Live và MikTeX trong Windows và Linux, và
 [TeXShop](https://pages.uoregon.edu/koch/texshop/) được phân phối trong MacTeX.
 
-Đối với bất kỳ trình sửa mã nguồn nào, chúng tôi khuyên bạn nên cài đặt nó
-_sau_ khi cài đặt hệ LaTeX, vì khi đó trình sửa mã nguồn có thể tự 'tìm' được
-hệ LaTeX và tự thiết lập các cài đặt đúng cách.
+<p class="hint">Đối với bất kỳ trình sửa mã nguồn nào, chúng tôi khuyên bạn nên
+cài đặt nó <i>sau</i> khi cài đặt hệ LaTeX, vì khi đó trình sửa mã nguồn có thể
+tự 'tìm' được hệ LaTeX và tự thiết lập các cài đặt đúng cách.</p>
 
 ## Làm việc trực tuyến
 

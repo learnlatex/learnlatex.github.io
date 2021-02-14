@@ -86,6 +86,8 @@ dụ &ndash; thường được gọi là "minimal working example" (MWE). Đo�
 được tối giản hóa sao cho vấn đề của bạn vẫn xuất hiện trên đó nhưng những thứ
 không liên quan được gạch bỏ đi, để hỗ trợ mọi người trả lời bạn tốt hơn.
 
+### Cách tạo một MWE
+
 Làm cách nào để tạo ra một MWE? Thông thường cách dễ nhất là bắt đầu từ
 
 ```latex
@@ -100,13 +102,30 @@ và thêm những dòng mã có liên quan vào cho đến khi vấn đề của
 cũng có thể bỏ đi những phần không cần thiết trong tệp LaTeX thực tế của bạn,
 nhưng quá trình đó phức tạp hơn một chút.
 
-Nếu bạn cần một lượng chữ lớn để xuất hiện trên nhiều trang, bạn có thể dùng
-những gói như `lipsum`. Như ta đã biết, gói này tạo ra những đoạn văn không có ý
-nghĩa với chiều dài tùy ý để test trong khi vẫn làm kích thước tệp của bạn đủ
-nhỏ.
+<p class="hint">Nếu bạn cần một lượng chữ lớn để xuất hiện trên nhiều trang, bạn
+có thể dùng những gói như <code>lipsum</code>. Như ta đã biết, gói này tạo ra
+những đoạn văn không có ý nghĩa với chiều dài tùy ý để test trong khi vẫn làm
+kích thước tệp của bạn đủ nhỏ.</p>
+
+### Tệp log
 
 Một trong những thứ mà mọi người có thể yêu cầu bạn cung cấp đó là tệp log, tệp
-này được tạo ra bởi LaTeX mỗi khi bạn chạy nó, và có đuôi tệp là `.log`. Tệp này
-bao gồm tất cả những thông tin trong quá trình chạy, đặc biệt là những thông tin
-quan trọng như phiên bản gói lệnh, các thông báo lỗi hay các cảnh báo từ LaTeX,
-v.v...
+này được tạo ra bởi LaTeX mỗi khi bạn chạy nó, và có đuôi tệp là `.log`.
+
+<p class="hint">Tùy thuộc vào các cài đặt của máy tính của bạn, bạn có thể cần
+phải chọn 'hiện đuôi tệp' ('show extensions') để thấy được tệp log là tệp nào.</p>
+
+Tệp này bao gồm tất cả những thông tin trong quá trình chạy, đặc biệt là những
+thông tin quan trọng như phiên bản gói lệnh, các thông báo lỗi hay các cảnh báo
+từ LaTeX, v.v...
+
+<p class="hint">Một vài trình soạn thảo, tùy thuộc vào cài đặt của bạn, có thể
+che đi một phần thông báo lỗi. Điều này có thể vô tình ẩn đi những thông tin
+quan trọng. Do đó, để hỗ trợ mọi người giải quyết vấn đề của bạn, bạn nên dùng
+tệp log thay vì thông báo lỗi hiện trên màn hình của trình soạn thảo.</p>
+
+## Đi xa hơn
+
+Cuối cùng, chúng tôi cung cấp [một vài ví dụ bổ sung](./extra-01), cho thấy các
+công dụng khác nhau của LaTeX trên nhiều lĩnh vực mà không được đưa vào trong
+nội dung khóa học này.
