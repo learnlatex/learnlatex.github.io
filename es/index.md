@@ -1,31 +1,31 @@
 ---
 layout: "start"
 lang: "es"
-title: Learn LaTeX online for free in beginner friendly lessons
-description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+title: Aprenda LaTeX en línea de forma gratuita con lecciones simples para principiantes
+description: "Aprenda LaTeX en 16 lecciones simples para principiantes. Dé sus primeros pasos en LaTeX, un sistema para la preparación de documentos diseñado para obtener una gran calidad tipográfica."
 permalink: /es/
 ---
 
 # Learn LaTeX
 
-<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="heading__introduction">Dé sus primeros pasos en LaTeX, un sistema para la preparación de documentos diseñado para obtener una gran calidad tipográfica.</h2>
 
 <div
   class="text-columns">
   <section>
     <h3 
       class="text-columns__heading"
-      >Introduction</h3>
-    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
-    and because it is not a single program. Our aim is to help you get 
-    started with LaTeX from the basics, installation, to writing code, without 
-    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+      >Introduccción</h3>
+    <p>LaTeX puede dar un poco de miedo a los nuevos usuarios ya que <em>no</em> es un procesador de textos, 
+    y porque no es un programa único. Nuestro objetivo es ayudarle a
+    dar sus primeros pasos en LaTeX partiendo de las nociones básicas, la instalación, la escritura del código, sin
+    intentar enseñarle <em>todo</em> de una sola vez. <a href="./mission">Más información sobre nuestra misión &hellip;</a></p>
   </section>
   <section>
     <h3
       class="text-columns__heading"
-      >How it works</h3>
-      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+      >¿Cómo funciona?</h3>
+      <p>Hemos seleccionado las 16 cosas más importantes que necesitará conocer y las hemos explicado en breves <em>lecciones</em> que no le debería llevar mucho tiempo a abordar. En cada lección damos muchos ejemplos. Podrá editarlos y ejecutarlos en este sitio Web. <a href="./help#examples">Más sobre los ejemplos &hellip;</a></p>
   </section>
 </div>
 

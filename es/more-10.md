@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Matemáticas"
+description: "Esta lección muestra más información sobre los entornos de alineación, como obtener texto matemático en negrita, el paquete de extensión matemática mathtools y el uso de Unicode en matemáticas." 
+toc-anchor-text: "Más sobre: Matemáticas"
 ---
 
 

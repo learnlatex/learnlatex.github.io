@@ -2,11 +2,15 @@
 layout: "lesson"
 lang: "es"
 title: "Accediendo a la documentación y buscando ayuda"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra las principales fuentes de documentación relacionadas con el software y los paquetes de LaTeX, y cómo encontrar la solución a sus problemas."
+toc-anchor-text: "Ayuda y documentación"
+toc-description: "Accediendo a la ayuda y a la documentación"
 ---
 
 # Accediendo a la documentación y buscando ayuda
+
+<span
+  class="summary">Esta lección muestra las principales fuentes de documentación relacionadas con el software y los paquetes de LaTeX, y cómo encontrar la solución a sus problemas.</span>
 
 Existen varias formas de acceder a la documentación de los paquetes y tipos de documento.
 

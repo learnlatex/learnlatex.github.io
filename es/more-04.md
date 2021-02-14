@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Estructura lógica de un documento"
+description: "Esta lección muestra como configurar el título de un documento y cómo hacer listas descriptivas."
+toc-anchor-text: "Más sobre: Estructura lógica de un documento"
 ---
 
 ## Título de un documento

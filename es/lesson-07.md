@@ -1,14 +1,16 @@
 ---
 layout: "lesson"
 lang: "es"
-title: "Incluyendo imágenes y haciendo que las cosas \"floten\""
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "Incluyendo y posicionando imágenes"
+toc-anchor-text: "Usando imágenes"
+description: "Está lección muestra como añadir imágenes a su documento, cómo cambiar su apariencia y cómo convertirlas en objetos flotantes para optimizar su ubicación en un PDF."
+toc-description: "Apariencia, espaciado y posicionamiento"
 ---
 
-# Incluyendo imágenes y haciendo que las cosas \"floten\"
+## Imágenes y ubicación
 
-## Incluyendo imágenes
+<span
+  class="summary">Está lección muestra como añadir imágenes a su documento, cómo cambiar su apariencia y cómo convertirlas en objetos flotantes para optimizar su ubicación en un PDF.</span>
 
 Para importar imágenes en LaTeX, use el paquete `graphicx`, 
 que añade el comando `\includegraphics` a LaTeX.

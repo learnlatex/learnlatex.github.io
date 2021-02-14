@@ -2,8 +2,9 @@
 layout: "lesson"
 lang: "es"
 title: "Citas y referencias bibliográficas"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra las bases del trabajo con bases de datos bibliográficas. Aprenda cómo construir sus propias bases de datos y usarlas en sus documentos usando los dos principales métodos disponibles."
+toc-anchor-text: "Citas y referencias"
+toc-description: "Trabajando con bases de datos bibliográficas"
 ---
 
 # Citas y referencias bibliográficas
@@ -19,13 +20,16 @@ preincludes = {
 }
 </script>
 
-## Bases de datos de referencias bibliográficas
+<span
+  class="summary">Esta lección muestra las bases del trabajo con bases de datos bibliográficas. Aprenda cómo construir sus propias bases de datos y usarlas en sus documentos usando los dos principales métodos disponibles.</span>
 
 En lo que respecta a las citas bibliográficas, aunque usted puede incluir las 
 referencias de sus fuentes directamente, normalmente tomará esta información de uno
 o más archivos externos. Esos archivos, son bases de datos de referencias que contienen
 información en un formato de fácil tratamiento. Usar una o más bases de datos de 
 referencias le permite reutilizar la información y le evita el tener que añadirla a mano.
+
+## Bases de datos de referencias bibliográficas
 
 A las bases de datos de referencias bibliográficas se les llama normalmente "archivos 
 BibTeX" y tienen la extensión `.bib`. Contienen uno a más registros, uno por cada referencia
