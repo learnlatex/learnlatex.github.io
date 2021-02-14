@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Citas y referencias"
+description: "Esta lección da más detalles sobre la bibliografía en otros idiomas que el inglés, cómo hacer hiperenlaces y explica la diferencia entre los diferentes estilos de BibTex."
+toc-anchor-text: "Más sobre: Citas y referencias"
 ---
 
 ## Tratando con referencias en lengua no inglesa

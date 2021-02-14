@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Usando los tipos de documento para cambiar el diseño"
+description: "Esta lección da más información sobre tipos de documentos más especializados de LaTeX."
+toc-anchor-text: "Más sobre: Usando los tipos de documento para cambiar el diseño"
 ---
 
 ## Tipos de documento específicos para revistas

@@ -1,7 +1,9 @@
 ---
 layout: "lesson"
 lang: "es"
-title: "Más sobre: Su primer documento en LaTeX"
+title: "Más sobre: Estructura básica de un documento en LaTeX"
+description: "Esta lección da más detalles sobre como ejecutar LaTeX y los caracteres epeciales que usa, y cómo éstos afectan al fichero PDF de salida."
+toc-anchor-text: "Más sobre: Estructura básica de un documento en LaTeX"
 ---
 
 ## Ejecutando LaTeX

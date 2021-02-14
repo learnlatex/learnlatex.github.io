@@ -2,18 +2,23 @@
 layout: "lesson"
 lang: "es"
 title: "Referencias cruzadas"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra como hacer referencia a los objetos enumerados de un documento, como las figuras, las tablas, las secciones."
+toc-anchor-text: "Referencias cruzadas"
+toc-description: "Referenciando figuras, tablasm etc."
 ---
 
 # Referencias cruzadas
 
-## El funcionamiento de `\label` y `\ref`
+<span
+  class="summary">Esta lección muestra como hacer referencia a los objetos enumerados de un documento, como las figuras, las tablas, las secciones.</span>
 
 Cuando esté escribiendo un documento, poco importa el tamaño del mimso, usted querrá hacer referencias
 a elementos enumerados tales como las figuras, las tablas o las ecuaciones. Afortunadamente, LaTeX
-puede añadir automáticamente los números correctos; sólo tenemos que ajustar algunas cosas. Para hacer que
-LaTeX recuerde un punto de su documento, usted tiene que etiquetarlo y haciéndolo, podrá mencionarlo
+puede añadir automáticamente los números correctos; sólo tenemos que ajustar algunas cosas.
+
+## El funcionamiento de `\label` y `\ref`
+
+Para hacer que LaTeX recuerde un punto de su documento, usted tiene que etiquetarlo y haciéndolo, podrá mencionarlo
 en otro lugar.
 
 ```latex

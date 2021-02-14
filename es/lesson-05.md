@@ -2,8 +2,9 @@
 layout: "lesson"
 lang: "es"
 title: "Usando los tipos de documento para cambiar el diseño"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección explica qué es un tipo de documento y cómo influye en la apariencia del mismo. Se citan igualmente los principales tipos de documentos disponibles en distribución de TeX,</span> 
+toc-anchor-text: "Tipos de documento"
+toc-description: "Configurando la apariencia general del documento"
 ---
 
 # Usando los tipos de documento para cambiar el diseño

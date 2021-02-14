@@ -2,11 +2,16 @@
 layout: "lesson"
 lang: "es"
 title: "Trabajando con LaTeX"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección explica lo qué es un sistema TeX y cuáles son los más frecuentes. Se citan algunos de los editores de LaTeX más comunmente usados, y los sistemas en línea que disponen de editores integrado."
+toc-anchor-text: "Trabajando con LaTeX"
+toc-description: "Sistemas TeX y editores de LaTeX"
 ---
 
 # Trabajando con LaTeX
+
+<span
+  class="summary">Esta lección explica lo qué es un sistema TeX y cuáles son los más frecuentes. Se cita algunos de los editores de LaTeX más comunmente usados, y los sistemas en línea que disponen de editores integrado.</span>
+
 
 A diferencia de muchos programas, LaTeX no es una simple aplicación que contiene
 "todo" en uno. En lugar de ello, tiene programas independientes que funcionan juntos.

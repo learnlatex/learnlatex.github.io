@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Estructurando documentos largos"
+description: "Esta lección muestra cómo hacer un índice de materias y cómo usar el paquete imakeidx para automatizar el proceso."
+toc-anchor-text: "Más sobre: Estructurando documentos largos"
 ---
 
 ## Realizando un índice de materias
