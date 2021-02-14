@@ -2,13 +2,13 @@
 layout: "start"
 lang: "es"
 title: Aprenda LaTeX en línea de forma gratuita con lecciones simples para principiantes
-description: "Aprenda LaTeX en 16 lecciones simples para principiantes. Realice sus primeros pasos en LaTeX, un sistema para la preparación de documentos diseñado para obtener una gran cañidad tipográfica"
+description: "Aprenda LaTeX en 16 lecciones simples para principiantes. Realice sus primeros pasos en LaTeX, un sistema para la preparación de documentos diseñado para obtener una gran calidad tipográfica."
 permalink: /es/
 ---
 
 # Learn LaTeX
 
-<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="heading__introduction">Realice sus primeros pasos en LaTeX Take your first steps with LaTeX, , un sistema para la preparación de documentos diseñado para obtener una gran calidad tipográfica.</h2>
 
 <div
   class="text-columns">
