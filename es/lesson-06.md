@@ -1,12 +1,16 @@
 ---
 layout: "lesson"
 lang: "es"
-title: "Extendendiendo LaTeX usando paquetes"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "Extendiendo LaTeX usando paquetes y definiciones"
+description: "Esta lección muestra como extender y adaptar LaTeX a sus necesidades y cambiar su apariencia usando los paquetes y definiciones. Se muestra igualmente cómo definir sus propios comandos."
+toc-anchor-text: "Extendiendo LaTeX"
+toc-description: "Usando paquetes y definiciones."
 ---
 
 # Extendendiendo LaTeX usando paquetes
+
+<span
+  class="summary">Esta lección muestra como extender y adaptar LaTeX a sus necesidades y cambiar su apariencia usando los paquetes y definiciones. Se muestra igualmente cómo definir sus propios comandos.</span>
 
 Después de haber definido el tipo de documento, en el preámbulo, usted podrá modificar 
 las funcionalidades disponibles en LaTeX añadiendo uno o más *paquetes*. Éstos pueden:
@@ -93,7 +97,7 @@ Debería fijarse aquí en el efecto que tiene el no cargar el paquete `geometry`
 
 ## Añadiendo comandos
 
-Una de los puntos fuertes de LaTeX es que puede elegir entre miles de paquetes,
+Uno de los puntos fuertes de LaTeX es que puede elegir entre miles de paquetes,
 incluyendo aquellos que permiten escribir: texto matemático, hipervínculos, hacer uso de
 sofisticadas funciones relacionadas con el color, etc. Veremos algunos de las
 paquetes más comunes en las siguientes lecciones. 

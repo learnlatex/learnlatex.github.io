@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Analizando los errores"
+description: "Esta lección muestra una serie de errores menos frecuentes en LaTeX y explica los errores encadenados y los errores silenciosos."
+toc-anchor-text: "Más sobre: Analizando los errores"
 ---
 
 ## Errores que ocurren al final de los entornos

@@ -40,3 +40,4 @@ permalink: /en/
 ## Going further
 
 Getting a book about LaTeX is the best way to learn the details. We cover getting more information, along with book recommendations, in the [last lesson](./lesson-16).
+

@@ -2,16 +2,21 @@
 layout: "lesson"
 lang: "es"
 title: "Formateando el texto: fuentes y espaciado"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra cómo cambiar el espaciado de un docunento y cómo añadir explicitamente instrucciones de formato en LaTeX."
+toc-anchor-text: "Fuentes y espaciado"
+toc-description: "Formateando el texto para mejorar la presentación visual"
 ---
 
 # Formateando el texto: fuentes y espaciado
 
-## Espaciado entre párrafos
+<span
+  class="summary">Esta lección muestra cómo cambiar el espaciado de un docunento y cómo añadir explicitamente instrucciones de formato en LaTeX.</span>
 
 Ya hemos visto que una línea en blanco en su documento genera un nuevo párrafo 
 en LaTeX. Esto se evidencia al comenzar el párrafo con una identación.
+
+## Espaciado entre párrafos
+
 Una elección común es la de no identar los párrafos, sino en su lugar añadir 
 una "línea en blanco" entre ellos. Esto lo podemos conseguir usando el paquete 
 `parskip`.

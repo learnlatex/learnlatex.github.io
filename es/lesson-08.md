@@ -2,13 +2,15 @@
 layout: "lesson"
 lang: "es"
 title: "Tablas"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra cómo realizar tablas en LaTeX, cambiar el alineamiento de las celdas, añadir líneas y fusionar celdas."
+toc-anchor-text: "Tablas en LaTeX"
+toc-description: "Bases del trabajo con tablas"
 ---
 
 # Tablas
 
-## Tablas básicas
+<span
+  class="summary">Esta lección muestra cómo realizar tablas en LaTeX, cambiar el alineamiento de las celdas, añadir líneas y fusionar celdas.</span>
 
 Las tablas se configuran en LaTeX usando el entorno `tabular`. En esta lección asumimos
 que ha cargado en el preámbulo el paquete `array`, que añade más funcionalidades a las 

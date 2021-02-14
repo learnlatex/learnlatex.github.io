@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Tablas"
+description: "Esta lección muestra más formas de personalizar una tabla: dando formato a las columnas, cambiando el espaciado y las líneas; y más paquetes que ofrecen diferentes extensiones para modificar las tablas."
+toc-anchor-text: "Más sobre: Tablas"
 ---
 
 

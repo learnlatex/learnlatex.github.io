@@ -2,8 +2,9 @@
 layout: "lesson"
 lang: "es"
 title: "Estructurando documentos largos"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra cómo LaTeX le permite dividir su código fuente en ficheros más pequeños y manejables con el fin de realizar documentos largos fácil y rápidamente."
+toc-anchor-text: "Estructurando su código fuente "
+toc-description: "Dividiendo su código fuente de forma estructurada."
 ---
 
 # Estructurando documentos largos
@@ -24,12 +25,15 @@ preincludes = {
 }
 </script>
 
-## Estructurando sus archivos fuente
+<span
+  class="summary">Esta lección muestra cómo LaTeX le permite dividir su código fuente en ficheros más pequeños y manejables con el fin de realizar documentos largos fácil y rápidamente.</span>
 
 Cuando escriba un documento largo, seguramente querrá separar el contenido del
 del documento en varios archivos. Por ejemplo, es muy común el tener
 un archivo principal "main"/"root" y otros archivos secundarios: uno por cada capítulo
 (en un libro o una tesis) o por cada sección (en un artículo largo).
+
+## Estructurando sus archivos fuente
 
 LaTeX le permite separar su contenido de forma controlada. Hay dos comandos importantes
 para hacer esto: `\input` e `\include`. Podemos usar `\input` para hacer que el contenido

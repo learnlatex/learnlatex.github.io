@@ -1,20 +1,25 @@
 ---
 layout: "lesson"
 lang: "es"
-title: "Ejemplos para ir más lejos"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "Muestra de LaTeX: Ejemplos para ir más lejos"
+description: "Esta lección muestra una selección de ejemplos de los paquetes más populares de LaTeX que no han sido abordados en las lecciones principales."
+toc-anchor-text: "Muestra de LaTeX"
+toc-description: "Ejemplos para ir más lejos"
 ---
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.net](https://texdoc.net).
-The examples are taken from the package documentation unless otherwise noted.
+# Ejemplos de muestra
 
-**Note** that inclusion here is not intended as an endorsement of the
-  package over other similar packages, we just aim for a small sample
-  showing a range of areas not otherwise covered in this course.
+<span
+  class="summary">"Esta lección muestra una selección de ejemplos de los paquetes más populares de LaTeX que no han sido abordados en las lecciones principales.</span>
+
+Este curso le ha abordado las principales funcionalidades de LaTeX.
+LaTeX dipone de una vasta variedad de paquetes que son usados en areas 
+muy diversas. Aquí le mostramos algunos ejemplos, sin explicación explícita pero
+con un enlace a la documentación del paquete disponible en [texdoc.net](https://texdoc.net).
+Estos ejemplos han sido sacados, en su mayoría, de la documentación del paquete en cuestión.
+
+<p 
+  class="hint">Note que el hecho de mencionar un paquete en esta sección no significa que sea el mejor en comparación con paquetes similares. Simplemente hemos querido mostrar ejemplos simples que cubran areas no abordadas en este curso.</p>
 
 ## Chemistry
 
