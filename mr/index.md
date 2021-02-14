@@ -46,7 +46,7 @@ permalink: /mr/
 वाचण्याची सोयदेखील उपलब्ध राहील.
 </p>
 
-{% include toc-lessons.html prefix="en/lesson" %}
+{% include toc-lessons.html prefix="mr/lesson" %}
 
 <h2 class="heading__toc">संकीर्ण प्रकरणे</h2>
 <ul class="lessons-toc">
