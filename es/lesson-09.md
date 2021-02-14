@@ -4,7 +4,7 @@ lang: "es"
 title: "Referencias cruzadas"
 description: "Esta lección muestra como hacer referencia a los objetos enumerados de un documento, como las figuras, las tablas, las secciones."
 toc-anchor-text: "Referencias cruzadas"
-toc-description: "Referenciando figuras, tablasm etc."
+toc-description: "Referenciando figuras, tablas, etc."
 ---
 
 # Referencias cruzadas

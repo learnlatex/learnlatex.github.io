@@ -91,7 +91,7 @@ LaTeX puede estructurar el documento en bastantes niveles:
 - `\subsubsection`
 
 Podemos ir más lejos: el siguiente es `\paragraph`, pero casi siempre esto será ir
-demasiado "lejos" en una sección (sí, `\paragraph` es un comando de sección, ¡_no_
+demasiado «lejos» en una sección (sí, `\paragraph` es un comando de sección, ¡_no_
 una forma de comenzar un nuevo párrafo!).
 
 Puede que se pregunte sobre el título del documento. Hay varios comandos especiales

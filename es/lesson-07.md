@@ -113,7 +113,7 @@ la página. La opción `ht` tiene un efecto sobre en qué lugar LaTeX puede situ
 dos letras significan que puede ir cerca de su posición inicial (cerca de `Localización test`)
 o en la parte alta de la página. Puede usar hasta cuatro especificadores de posición:
 
-- `h` "Aquí" (si es posible).
+- `h` «Aquí» (si es posible).
 - `t` En la parte alta de la página.
 - `b` En la parte baja de la página.
 - `p` En una página dedicada exclusivamente a objetos flotantes.
@@ -128,7 +128,7 @@ entorno `center` añadan un espacio vertical extra.
 
 ## Ejercicios
 
-Trate de insertar una imagen que usted haya creado, reemplace las imágenes "estándar"
+Trate de insertar una imagen que usted haya creado, reemplace las imágenes «estándar»
 que hemos empleado en el ejemplo.
 
 Explore lo que puede hacer usando como opción las palabras clave `height`, `width`, 
