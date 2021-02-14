@@ -81,7 +81,7 @@ layout: compress
           class="meta"
           >{{ site.data.translations['informational-elements_lesson'][page.lang] }}
               {% if page.lang == "mr" %}
-                {% assign pageno = page.path | replace: '.md','' | replace: pp ,'' | floor %}
+                {% assign pageno = page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | round: 2 %}
                 {{ mrdigits[pageno] }}
               {% else %}
 	  {{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | round: 2 }}
