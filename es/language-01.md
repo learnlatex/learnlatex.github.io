@@ -2,19 +2,23 @@
 layout: "lesson"
 lang: "es"
 title: "Especificaciones de idioma en español"
+description: "Esta lección muestra los detalles específicos que debe conocer para escribir textos en español con LaTeX." 
 next: "extra-01"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+toc-anchor-text: "Especificaciones de idioma en español"
+toc-description: "Escribir un texto en español con LaTeX"
 ---
 
 ## Adaptaciones básicas para escribir un texto en español
 
+<span
+  class="summary">Esta lección muestra los detalles específicos que debe conocer para escribir textos en español con LaTeX.</span>
+
 LaTeX fue diseñado inicialmente para su uso en inglés. Por ello será
 necesario añadir algunos cambios para que LaTeX tenga en cuenta el uso del
 español en la composición tipográfica (separación silábica, espacios necesarios después de ciertos
-símbolos) y en la estructura del documento (por ejemplo utilizar el término "Capítulo"
-en lugar de "Chapter" al utilizar el comando `\chapter`; o el término "Índice" en lugar
-de "Table of contents" al utilizar el comando `\tableofcontents`).
+símbolos) y en la estructura del documento (por ejemplo utilizar el término «Capítulo»
+en lugar de «Chapter» al utilizar el comando `\chapter`; o el término «Índice» en lugar
+de «Table of contents» al utilizar el comando `\tableofcontents`).
 Todo ello puede, solucionarse fácilmente utilizando el paquete babel:
 
 

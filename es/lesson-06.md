@@ -21,7 +21,7 @@ las funcionalidades disponibles en LaTeX añadiendo uno o más *paquetes*. Ésto
 
 ## Cambiando el comportamiento de LaTeX
 
-El "kernel" de LaTeX (el núcleo de LaTeX) es bastante limitado en cuanto a personalización
+El «kernel» de LaTeX (el núcleo de LaTeX) es bastante limitado en cuanto a personalización
 por parte del usuario y algunos paquetes adicionales tratan con ideas muy comunes. La primera
 es cambiar el como LaTeX trata la composición tipográfica específica de cada idioma (separación
 silábica, puntuación, símbolos, localización, etc.). Todos los idiomas tienen reglas diferentes, con lo
