@@ -113,7 +113,7 @@ Một trong những thứ mà mọi người có thể yêu cầu bạn cung c�
 này được tạo ra bởi LaTeX mỗi khi bạn chạy nó, và có đuôi tệp là `.log`.
 
 <p class="hint">Tùy thuộc vào các cài đặt của máy tính của bạn, bạn có thể cần
-phải chọn 'hiện đuôi tệp' ('show extensions') để thấy được tệp log là tệp nào.</p>
+phải chọn "hiện đuôi tệp" ("show extensions") để thấy được tệp log là tệp nào.</p>
 
 Tệp này bao gồm tất cả những thông tin trong quá trình chạy, đặc biệt là những
 thông tin quan trọng như phiên bản gói lệnh, các thông báo lỗi hay các cảnh báo

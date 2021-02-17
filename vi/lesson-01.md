@@ -14,8 +14,8 @@ trong cách hoạt động giữa LaTeX và các trình soạn thảo thường 
 Word hay LibreOffice Writer.</span>
 
 Không giống những trình soạn thảo văn bản thông dụng như Microsoft Word hay
-LibreOffice Writer, LaTeX không phải là một trình soạn thảo WYSIWYG ('What You See Is
-What You Get'). Trong LaTeX, ta dùng văn bản thuần túy (plain text) và thêm các
+LibreOffice Writer, LaTeX không phải là một trình soạn thảo WYSIWYG ("What You See Is
+What You Get"). Trong LaTeX, ta dùng văn bản thuần túy (plain text) và thêm các
 markup (dưới dạng các câu lệnh, v.v...) vào. Những markup này sẽ cho LaTeX biết
 ý nghĩa của từng phần trong văn bản, tương tự như HTML.
 
@@ -32,8 +32,8 @@ là `pdflatex`) để tạo ra một tệp PDF. Tệp PDF này chính là văn b
 bạn gửi cho những người khác.
 
 Mọi người sử dụng các cách khác nhau để gọi tên quá trình này. Vì LaTeX tương
-đối giống với lập trình, quy trình thường được gọi là 'biên dịch' văn bản, mặc
-dù 'typesetting' (sắp chữ) là cách gọi hợp lý hơn.
+đối giống với lập trình, quy trình thường được gọi là "biên dịch" văn bản, mặc
+dù "typesetting" (sắp chữ) là cách gọi hợp lý hơn.
 
 ## Chạy LaTeX nhiều lần
 

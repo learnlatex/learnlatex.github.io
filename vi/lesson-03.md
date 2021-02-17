@@ -116,7 +116,7 @@ hiểu là một ký tự trống duy nhất.
 
 Đôi khi bạn có thể cần một ký tự trống mạnh hơn mà không bị phân thành các dòng;
 trong LaTeX ta có thể có được điều này bằng `~` &ndash; nó cho một ký tự trống
-nhưng 'buộc' hai từ bên cạnh lại với nhau làm cho chúng buộc phải hiện ra trên
+nhưng "buộc" hai từ bên cạnh lại với nhau làm cho chúng buộc phải hiện ra trên
 một dòng duy nhất. Điều này có thể rất hữu ích khi ta bắt đầu viết các đường dẫn
 trong văn bản ở phần sau của khóa học này.
 
