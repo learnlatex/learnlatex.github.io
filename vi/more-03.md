@@ -34,7 +34,7 @@ Nếu bạn muốn viết một ký tự đặc biệt, thông thường bạn c
 `\` ngay trước nó, ví dụ như `\{` được dùng để in ra một ký tự mở ngoặc nhọn.
 Tuy nhiên, cũng có một vài trường hợp mà bạn cần những câu lệnh dài hơn.
 
-| Ký tự  | Câu lệnh ngắn (cả math mode và text mode) | Câu lệnh dài (chỉ cho text mode) |
+| Ký tự  | Câu lệnh ngắn <br><small>(cả math mode và text mode)</small> | Câu lệnh dài <br><small>(chỉ cho text mode)</small> |
 | `{`    | `\{`          | `\textbraceleft`  |
 | `}`    | `\}`          | `\textbraceright` |
 | `$`    | `\$`          | `\textdollar`     |
