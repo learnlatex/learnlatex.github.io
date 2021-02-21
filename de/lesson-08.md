@@ -201,7 +201,7 @@ Namen sollte die vorgesehene Position ersichtlich werden:
 ```
 <!-- {% endraw %} -->
 
-Der vierte `booktab` Linienbefehl ist `\cmidrule`. Hierdurch können Linien
+Der vierte `booktabs` Linienbefehl ist `\cmidrule`. Hierdurch können Linien
 gezogen werden, die nicht die gesamte Breite der Tabelle, sondern nur einen
 Spaltenbereich überspannen. Der Spaltenbereich wird als Zahlenspanne angegeben:
 `{`_Zahl_`-`_Zahl_`}`. Auch wenn die Linie nur für eine Spalte gezogen werden
