@@ -1,25 +1,28 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Cross-referencing"
-description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
-toc-anchor-text: "Cross-referencing"
-toc-description: "Refering to figures, tables, etc."
+lang: "mr"
+title: "अंतर्गत संदर्भ"
+description: "ह्या प्रकरणात लाटेक्-दस्तऐवजातील कोष्टक, आकृती, विभाग ह्यांसारख्या अनुक्रमित घटकांस अंतर्गत संदर्भ कसा पुरवावा हे आपण पाहणार आहोत."
+toc-anchor-text: "अंतर्गत संदर्भ"
+toc-description: "कोष्टक, विभाग व आकृतीसारख्या घटकांना अंतर्गत संदर्भ"
 ---
 
-# Cross-referencing
+# अंतर्गत संदर्भ
 
-<span
-  class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>
+<span class="summary">
+ह्या प्रकरणात लाटेक्-दस्तऐवजातील कोष्टक, आकृती, विभाग ह्यांसारख्या अनुक्रमित घटकांस अंतर्गत
+संदर्भ कसा पुरवावा हे आपण पाहणार आहोत.
+</span>
 
-When you are writing a document of any length, you'll want to refer to numbered
-items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. 
+जेव्हा एखाद्या दीर्घ दस्तऐवजाची अक्षरजुळणी केली जाते, तेव्हा त्यातील अनुक्रमित घटकांना संदर्भ
+देण्याची गरज पडू शकते. उदा. विभाग, आकृती, कोष्टक, मुद्दा. लाटेक्-मध्ये हे काम आपोआप करता येऊ
+शकते. त्याकरिता हाती आकडे लिहिण्याची गरज नाही. त्याकरिता काही गोष्टी कराव्या लागतात,
+त्या आता आपण पाहू.
 
-## The `\label` and `\ref` mechanism
+## `\label` व `\ref` ह्यांचे कार्य
 
-To have LaTeX remember a spot in your document you have to label it, and then 
-in other places, you refer to it.
+लाटेक् आज्ञावलीत एखादी जागा लक्षात ठेवायची असेल, तर तिला `\label` ह्या आज्ञेसह लक्षात ठेवावे
+लागते व इतरत्र संदर्भित करावे लागते. उदा.
 
 ```latex
 \documentclass{article}
@@ -48,51 +51,41 @@ In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
 \end{document}
 ```
 
-There are two `\label{...}` commands, one after the subsection
-and one inside the equation environment.
-They are associated with the last sentence's `\ref{...}` commands.
-When you run LaTeX, it saves information about the labels to an auxiliary file.
-For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
-so it saves the subsection's number.
-For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for that equation.
-When you ask for the reference, LaTeX gets it from the auxiliary file.
+ह्या उदाहरणात दोन `\label{...}` आज्ञा आहेत. एक उपविभागानंतर व दुसरी `equation` ह्या
+क्षेत्रात. ह्या दोन्ही जागा शेवटच्या वाक्यात `\ref{...}` आज्ञांनी संदर्भित केल्या गेल्या
+आहेत. जेव्हा लाटेक् चालवले जाते, तेव्हा अशा टप्प्यांबाबतची माहिती साहाय्यक धारिकेत साठवली
+जाते. `\label{subsec:labelone}` ही आज्ञा जिथे आली आहे त्या टप्प्यावर लाटेक् हे जाणतो की
+सध्या एक उपविभाग चालू आहे व त्यामुळे तो उपविभागाचा क्रमांक लक्षात ठेवतो.
 
-The `subsec:` and `eq:` aren't used by LaTeX;
-rather, it just keeps track of what it has most
-recently processed.
-But when you are writing these help you remember what the label
-is about.
+`\label{eq:labeltwo}` ही आज्ञा जिथे आली आहे त्या टप्प्यावर लाटेक् हे जाणतो की तिथे चालू व
+सयुक्तिक असे क्षेत्र equation हे आहे. त्यामुळे तो समीकरणाचा क्रमांक लक्षात ठेवतो. जेव्हा
+`\ref{...}` ही आज्ञा वापरली जाते, तेव्हा साहाय्यक धारिकेतून क्रमांक मिळवले जातात.
 
-You may see references that show in an output PDF
-as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work,
-the first time that you compile a document the label has not
-yet been saved.
-Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX several times anyway,
-so in practice this is not a bother.)
+`subsec:` व `eq:` ह्या भागाला लाटेक् आज्ञावलीत कोणताही अर्थ नाही, इथे काहीही लिहिले जाऊ
+शकते. (देवनागरीतसुद्धा लिहिता येऊ शकते!) परंतु अशा प्रकारे आज्ञावली पारदर्शक ठेवणे
+आज्ञावलिकारास उपयुक्त ठरू शकते. त्यामुळे आपण वापरलेली नावे सहज लक्षात राहू शकतात.
 
-Notice the tie (`~`) characters before the references.
-You don't want a line break between `subsection` and its number, or
-between `equation` and its number.
-Putting in a tie means LaTeX won't break the line there.
+फलितात काही वेळा संदर्भांऐवजी ठळक ठशातली दोन प्रश्नचिन्हे (**??**) दिसू शकतात. त्यांचे कारण
+असे की लाटेक् एकदाच चालवले गेले आहे व अजून संदर्भक्रमांक आज्ञावलीमार्फत लक्षात ठेवले गेले
+नाहीत. लाटेक् पुन्हा एकदा चालवले की ही अडचण सुटते. (बहुतांश वेळा निरनिराळ्या कारणांमुळे लाटेक्
+एकाहून अधिक वेळा चालवावेच लागते, त्यामुळे प्रत्यक्षात ही काही फार मोठी अडचण नाही.)
 
-## Where to put `\label`
+subsection व त्याचा क्रमांक ह्यांमध्ये एक `~` असे चिन्ह दिसू तुम्हाला दिसू शकते. हे चिन्ह ह्या
+दोन घटकांमध्ये ओळ तुटू नये म्हणून वापरले जाते.
 
-The `\label` command always refers to the previous numbered entity:
-a section, an equation, a float, etc. That means that `\label` always has to
-come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float environment.
+## `\label` ही आज्ञा कुठे वापरावी?
 
-## Exercises
+`\label` ही आज्ञा कायमच मागच्या अनुक्रमित घटकाचा क्रमांक लक्षात ठेवते. अनुक्रमित घटकांत
+विभाग, समीकरणे, मुद्दे, आकृत्या हे समाविष्ट आहेत. त्यामुळे ज्या घटकाचा अंतर्गत संदर्भ द्यायचा असतो
+त्याच्यानंतर ही आज्ञा लिहावी. त्यामुळे जेव्हा तुम्ही तरंगती दृश्यके वापरता तेव्हा त्यांच्या पोटातील
+`\caption` ह्या आज्ञेनंतर अथवा तिच्या पोटात लिहावी `\label` आज्ञा लिहावी.
 
-Try adding new numbered parts (sections, subsections, enumerated lists) to
-the test document and finding out how many runs are needed to make `\label`
-commands work.
+## स्वाध्याय
 
-Add some floats and see what happens when you put `\label` _before_ the
-`\caption` instead of after; can you predict the result?
+वरील चाचणी आज्ञावलीत नवीन अनुक्रमित घटक वाढवून पाहा. (उदा. विभाग, उपविभाग, अनुक्रमित
+याद्या इत्यादी) फलित योग्य दिसण्यासाठी लाटेक् किती वेळा चालवावे लागते हे पाहा.
 
-What happens if you put a `\label` for an equation _after_ the `\end{equation}`?
+काही तरंगती दृश्यके वापरून पाहा. `\label` ही आज्ञा `\caption` आज्ञेच्या नंतर न लिहिता आधी
+लिहिल्याने फलितात काय फरक पडतो ते पाहा.
+
+जर `\label` ही आज्ञा `\end{equation}`नंतर लिहिली गेली तर काय फरक पडतो ते पाहा.
