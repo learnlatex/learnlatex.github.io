@@ -1,75 +1,78 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Tables"
-description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
-toc-anchor-text: "LaTeX tables"
-toc-description: "Fundamentals of working with tables."
+lang: "mr"
+title: "कोष्टके"
+description: "ह्या प्रकरणात लाटेक् आज्ञावलीचा वापर करून कोष्टके कशी काढण्यात यावीत हे शिकवले गेले आहे. त्यासोबतच कोष्टकातील चौकटींची आडवी मांडणी, कोष्टकात रेषांचा वापर करणे व कोष्टकातील दोन चौकटी एकमेकांत जोडून घेणे हे सर्व कसे करावे ह्याचे प्रशिक्षणही देण्यात आले आहे."
+toc-anchor-text: "लाटेक्-मध्ये कोष्टके"
+toc-description: "लाटेक्-सह कोष्टके तयार करण्याचे प्रशिक्षण"
 ---
 
-# Tables
+# कोष्टके
 
-<span
-  class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>
+<span class="summary">
+ह्या प्रकरणात लाटेक् आज्ञावलीचा वापर करून कोष्टके कशी काढण्यात यावीत हे शिकवले गेले
+आहे. त्यासोबतच कोष्टकातील चौकटींची आडवी मांडणी, कोष्टकात रेषांचा वापर करणे व कोष्टकातील
+दोन चौकटी एकमेकांत जोडून घेणे हे सर्व कसे करावे ह्याचे प्रशिक्षणही देण्यात आले आहे.
+</span>
 
-Tables in LaTeX are set using the `tabular` environment. This lesson will assume
-you load the `array` package, which adds more functionality to LaTeX tables, and
-which is not built into the LaTeX kernel only for historic reasons. So put the
-following in your preamble and we're good to go:
-
+लाटेक्-सह कोष्टके तयार करण्याकरिता `tabular` हे क्षेत्र वापरले जाते. ह्या प्रकरणात असे गृहीत
+धरले जाईल की तुम्ही `array` आज्ञासंचाचा वापर करत आहात. हा आज्ञासंच लाटेक्-कोष्टकांना अधिक
+कार्यक्षम करतो, परंतु काही ऐतिहासिक कारणांमुळे ह्या आज्ञासंचाचा समावेश मूळ लाटेक्-आज्ञावलीत केला
+गेला नाही आहे. त्याकरिता पुढील आज्ञा तुमच्या बीजधारिकेच्या आज्ञापीठात लिहा.
 
 ```latex
 \usepackage{array}
 ```
 {: .noedit :}
 
-In order to typeset a `tabular` we have to tell LaTeX how many columns will be
-needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names,
-called preamble-tokens. The available column types are:
+कोष्टकाची निर्मिती करण्याकरिता त्या कोष्टकात किती स्तंभ लागणार आहेत व त्यांची आडवी मांडणी
+कशी असणार आहे हे लाटेक्-ला आज्ञावलीमार्फत सांगावे लागते. ह्यासाठी `tabular` ह्या क्षेत्रास एक
+अनिवार्य कार्यघटक द्यावा लागतो. ह्याकरिता एका अक्षराची काही प्राचले वापरता
+येतात. `tabular` क्षेत्रास पुढील अक्षरांच्या प्राचलांसह स्तंभसंख्या सांगणारा कार्यघटक पुरवता येतो.
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type       | description |
+| प्रकार       | वर्णन |
 | ---        |:-- |
-| `l`        | left aligned column |
-| `c`        | centered column |
-| `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`; the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
-| `b{width}` | like `p`, but bottom aligned |
-| `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
-| `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
+| `l`        | डावीकडे मजकुराची मांडणी असलेला स्तंभ |
+| `c`        | मध्यभागी मजकुराची मांडणी असलेला स्तंभ |
+| `r`        | उजवीकडे मजकुराची मांडणी असलेला स्तंभ |
+| `p{<रुंदी>}` | <रुंदी> ह्या किंमतीसह स्पष्ट केलेल्या रुंदीचा स्तंभ. ह्यातील मजकूर निर्दिष्ट रुंदीहून जास्त असेल, तर ओळ तुटून उर्वरित मजकूर आपोआप खाली लिहिले जाते. |
+| `m{<रुंदी>}` | `p` ह्या प्राचलाप्रमाणेच, परंतु उभी मांडणी मध्यभागी केली जाते. |
+| `b{<रुंदी>}` | `p` ह्या प्राचलाप्रमाणेच, परंतु उभी मांडणी ओळीच्या तळाशी केली जाते. |
+| `w{<मांडणी>}{<रुंदी>}` | निर्दिष्ट रुंदीइतका मजकूर छापते, जर मजकूर वाढू लागला, तर तो मुद्रित भागावर छापला जाण्याची शक्यता आहे. आडव्या मांडणीकरिता `l`, `c` व `r` ही प्राचले वापरली जाऊ शकतात. |
+| `W{<मांडणी>}{<रुंदी>}` | हे प्राचल `w`प्रमाणेच काम करते, परंतु मजकूर नेमून दिलेल्या जागेहून अधिक असल्यास ह्यासह overfull boxची एक सूचना मिळू शकते |
 
-In addition, a few other preamble-tokens are available which don't define a
-column but might be useful as well:
+ह्यांव्यतिरिक्त काही आणखी प्राचले आहेत, त्यांमुळे स्तंभनिश्चिती होईलच असे नाही, परंतु ती उपयुक्त असू
+शकतात. 
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type | description |
+| प्रकार | वर्णन |
 | ---  | :-- |
-| `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
-| `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
-| `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
-| <span>`|`</span>  | add a vertical rule |
-| `@{decl}` | replace the space between two columns with `decl` |
-| `!{decl}` | add `decl` in the center of the existing space |
+| `*{आकडा}{प्राचल}` | ह्या प्राचलाचा वापर केल्यास निर्दिष्ट केलेले `प्राचल` दिलेल्या `आकड्या`इतक्या वेळा `tabular` क्षेत्राच्या कार्यघटकात समाविष्ट केले जाते. ह्या प्रकारच्या आज्ञेसह एकाच प्रकारच्या स्तंभाची अनेक प्राचले लिहिणे सोयीचे जाते. उदा. ४ वेळा `c` हा स्तंभप्रकार लिहिण्याकरिता `*{4}{c}` |
+| `>{घोषणा}` | ह्या प्राचलाचा वापर केल्यास कार्यघटकात लिहिलेली `घोषणा` त्या विशिष्ट स्तंभातील प्रत्येक चौकटीच्या सामग्रीआधी घातली जाते. (एका विशिष्ट स्तंभातील सर्व अक्षरे ठळक करण्याकरिता, तिरकी करण्याकरिता अथवा अन्य काही मजकूरविशिष्ट आज्ञांसह छापण्याकरिता ही व्यवस्था उपयुक्त ठरते.) |
+| `<{घोषणा}` | ह्या प्राचलाचा वापर केल्यास कार्यघटकात लिहिलेली `घोषणा` त्या विशिष्ट स्तंभातील प्रत्येक चौकटीच्या सामग्रीनंदर घातली जाते. |
+| <span>`|`</span>  | दोन स्तंभांमध्ये उभी रेषा आखण्याकरिता |
+| `@{घोषणा}` | दोन स्तंभांमधील मोकळ्या जागेऐवजी कार्यघटकात लिहिलेली `घोषणा` ह्या कार्यघटकात लिहिलेल्या आज्ञा चालवणे. |
+| `!{घोषणा}` | दोन स्तंभांमधील मोकळ्या जागेच्या बरोब्बर मध्यावर `घोषणा` ह्या कार्यघटकात लिहिलेल्या आज्ञा चालवणे. |
 
-These two tables list all the available column types from LaTeX and the `array`
-package. A few additional column types, from different packages, are presented
-in the [further details page](more-08) for this lesson.
+वरील दोन कोष्टकांसह लाटेक्-कोष्टकांमधील व `array` ह्या आज्ञासंचासह पुरवल्या जाणाऱ्या सर्व
+स्तंभप्रकारांची नोंद घेण्यात आली आहे. ह्या प्रकरणाच्या [अधिक माहितीत](more-08) काही इतर
+आज्ञासंचांतर्फे पुरवले जाणारे स्तंभप्रकार नोंदवले आहेत.
 
-The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centered columns, you'd use
-`ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
+`l`, `c`, व `r` हे स्तंभप्रकार त्या स्तंभातील सर्वात रुंद चौकटीइतक्या लांबीचे रुंदीचे
+असतात. प्रत्येक स्तंभासाठी एखादा स्तंभप्रकार घोषित करावाच लागतो, त्यामुळे तीन आडवी मांडणी
+असणारे स्तंभ हवे असल्यास `tabular` क्षेत्राच्या कार्यघटकात `ccc` लिहिणे आवश्यक. मोकळ्या जागा
+दुर्लक्षित केल्या जातात, त्यामुळे `c c c` असे लिहिले, तरी तेदेखील तसेच कार्य करते.
 
-In a table body columns are separated using an ampersand `&` and a new row is
-started using `\\`.
+`tabular` क्षेत्राच्या आत स्तंभ संपवण्याकरिता `&` हे चिन्ह वापरले जाते व ओळ संपवण्याकरिता
+`\\` हे.
 
-We have everything we need for our first table. In the following code the
-`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
-source.
+लाटेक्-सह कोष्टक तयार करण्याकरिता आवश्यक अशी सर्व माहिती आपण पाहिली. पुढील आज्ञावली ह्याचे
+एक उदाहरण म्हणून पाहा. ह्या आज्ञावलीत `&` व `\\` हे एका स्तंभात असल्याप्रमाणेच सुटसुटीत
+लिहिले आहेत. लाटेक्-आज्ञावलीच्या दृष्टीने ह्यांची आवश्यकता नसते, परंतु असे लिहिल्यामुळे बीजआज्ञावलीचे
+वाचन सुलभ होते.
 
 <!-- {% raw %} -->
 ```latex
@@ -89,8 +92,8 @@ source.
 
 <!-- {% endraw %} -->
 
-If a table column contains a lot of text you will have issues to get that
-right with only `l`, `c`, and `r`. See what happens in the following example:
+एखाद्या कोष्टकात पुष्कळ मजकूर असेल, तर केवळ `l`, `c` व `r` ह्यांसह त्याची जुळणी करणे इष्ट
+नाही. त्याने अडचणी निर्माण होऊ शकतात. पुढील आज्ञावलीचे फलित पाहा.
 
 <!-- {% raw %} -->
 
@@ -114,12 +117,12 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 ```
 <!-- {% endraw %} -->
 
-The issue is that the `l` type column typesets its contents in a single row at
-its natural width, even if there is a page
-border in the way. To overcome this you can use the `p` column. This
-typesets its contents as paragraphs with the width you specify as an argument
-and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare the above outcome to the following:
+ह्या आज्ञावलीत अडचण अशी आहे की `l` ह्या प्राचलासह तयार करण्यात आलेल्या स्तंभातील सामग्री
+छापणे पृष्ठ संपले तरी थांबत नाही. त्या सामग्रीच्या नैसर्गिक रुंदीइतकी जागा हे प्राचल घेते. हे
+टाळण्याकरिता `p` ह्या प्राचलासह स्तंभ तयार करणे जास्त उचित. ह्या प्राचलासह कार्यघटकात
+निर्दिष्ट केलेल्या रुंदीइतका मजकूर परिच्छेदासारखा छापला जातो. बहुतांश वेळा अशा परिस्थितीत
+इष्टतम असते तशी चौकटीतील मजकुराची उभी मांडणी तिच्या शीर्षस्थानी असते. पुढील आज्ञावलीचे फलित
+पाहा.
 
 <!-- {% raw %} -->
 ```latex
@@ -142,11 +145,10 @@ time. Compare the above outcome to the following:
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it is cumbersome to put that
-many column definitions in the preamble.  You can make things easier
-by using `*{num}{string}`, which repeats the `string`  `num` times.
-So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
-table of this lesson with the newly learned syntax:
+कोष्टकात एकच स्तंभप्रकार अनेक वेळा येत असेल, तर त्याची व्याख्या अनेक वेळा लिहिणे कटकटीचे वाटू
+शकते. हे सोपे करण्यासाठी `*{आकडा}{प्राचल}` ही आज्ञावली वापरून निर्दिष्ट आकड्याइतक्या वेळा
+ठरावीक प्राचल पुनरावृत्त करू शकता. त्यामुळे `*{6}{c}`चा अर्थ `cccccc` असा होतो. हे कसे घडते
+हे पाहण्याकरिता पुढील उदाहरण पाहा.
 
 <!-- {% raw %} -->
 ```latex
@@ -165,19 +167,22 @@ table of this lesson with the newly learned syntax:
 ```
 <!-- {% endraw %} -->
 
-## Adding rules (lines)
+## रेषांचा वापर
 
-A word of advice prior to introducing rules; lines should be used really
-sparsely in tables, and normally vertical ones look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first. For the sake of completeness the standard
-lines are shown in the [more-info](more-08) page.
+कोष्टकांमध्ये रेषांचा वापर कसा करावा हे सांगण्यापूर्वी एक सल्ला. कोष्टकात रेषांचा वापर कमीत कमी
+असणे अधिक इष्ट मानले जाते. विशेषतः कोष्टकात वापरल्या जाणाऱ्या उभ्या रेघा ह्या सद्य
+सौंदर्यमूल्यांप्रमाणे फारशा चांगल्या दिसत नाहीत. तसेच उत्कृष्ट कोष्टकांसाठी लाटेक्-तर्फे मिळणाऱ्या
+रेषांचा वापर करूच नये. `booktabs` आज्ञासंचाद्वारे पुरवण्यात येणाऱ्या सुविधा शिकून घ्याव्यात. ह्या
+प्रकरणात त्यांची ओळख आपण करून घेत आहोत. लाटेक्-आज्ञावलीतील रेषांची माहिती ह्या प्रकरणाच्या
+[अधिक माहितीत](more-08) देण्यात आली आहे.
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
+`booktabs` ह्या आज्ञासंचातर्फे चार प्रकारच्या रेषा पुरवल्या जातात. त्यांपैकी प्रत्येक आज्ञा
+ओळीच्या सुरुवातीला वापरली जावी अथवा दुसऱ्या एखाद्या रेषेनंतर वापरावी. रेषांकरिता तीन आज्ञा
+उपलब्ध आहेत, त्या पुढीलप्रमाणे.
+
+* `\toprule` - शीर्षरेषा
+* `\midrule` - मध्यरेषा
+* `\bottomrule` - तलरेषा
 
 <!-- {% raw %} -->
 ```latex
@@ -201,11 +206,12 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 ```
 <!-- {% endraw %} -->
 
-The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
-draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
-Even if you only want to draw the rule for a single
-column you need to specify that as a range (with both numbers matching).
+`booktabs` आज्ञासंचातर्फे पुरवली जाणारी चौथी रेषेची आज्ञा `\cmidrule` ही आहे. ह्या
+आज्ञेमार्फत कोष्टकातील दोन ओळींमध्ये अशी रेेष आखता येेते जी सर्व स्तंभांच्या रुंदीची नाही. ह्या रेषेची
+रुंदी कार्यघटकात नमूद केलेल्या स्तंभांच्या रुंदीइतकी असते. हे स्तंभ संयोगचिन्हासह पुढीलप्रमाणे लिहिले
+जातात. `{`**स्तंभक्रमांक-क**`-`**स्तंभक्रमांक-ख**`}`. ह्यामुळे 'स्तंभक्रमांक क'पासून 'ख'पर्यंत रेषा
+आखली जाते. एकाच स्तंभापुरती रेष आखायची असेल, तरी संयोगचिन्हाच्या दोन्ही बाजूंना तेच आकडे टाकावे
+लागतात. (वरील उदाहरणात `**स्तंभक्रमांक-क**`-`**स्तंभक्रमांक-क**`)
 
 <!-- {% raw %} -->
 ```latex
@@ -231,8 +237,9 @@ column you need to specify that as a range (with both numbers matching).
 ```
 <!-- {% endraw %} -->
 
-There is another useful feature of `\cmidrule`. You can shorten it on either end
-with an optional argument enclosed in parentheses:
+ह्या आज्ञेसह एक अधिकचे वैशिष्ट्य पुरवले जाते. त्यात दोन्ही बाजूंनी रेषेची रुंदी कमी करता
+येते. ह्यासाठीची प्राचले वैकल्पिक कार्यघटक म्हणून चौकटी कंसात लिहावी लागतात. पुढील उदाहरण
+पाहा.
 
 <!-- {% raw %} -->
 ```latex
@@ -259,12 +266,11 @@ with an optional argument enclosed in parentheses:
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
-and **l**eft end, respectively.
+`r` हे प्राचल रेषेची रुंदी उजवीकडून कमी करण्यासाठी, `l` हे प्राचल रेषेची रुंदी डावीकडून कमी
+करण्यासाठी.
 
-Sometimes a rule would be too much of a separation for two rows but to get
-across the meaning more clearly you want to separate them by some means. In this
-case you can use `\addlinespace` to insert a small skip.
+काही वेळा रेषेने दोन ओळींना वेगळं करण्याची गरज नसते, परंतु दोन ओळींना वेगळं करण्याची किंचित गरज
+असते, अशा वेळी `\addlinespace` ह्या आज्ञेसह लहानशी मोकळी जागा सोडता येते.
 
 <!-- {% raw %} -->
 ```latex
@@ -292,19 +298,18 @@ case you can use `\addlinespace` to insert a small skip.
 ```
 <!-- {% endraw %} -->
 
+## चौकटींना एकमेकांत मिसळणे
 
-## Merging cells
+एका ओळीतील दोन चौकटींना एकमेकांत मिसळण्यासाठी `\multicolumn` ही आज्ञा वापरली जाते.
+चौकटीच्या सुरुवातीलाच ह्या आज्ञेचा प्रयोग करावा लागतो. ह्या आज्ञेस तीन अनिवार्य कार्यघटक
+आहेत.
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
-has to be used as the first thing in a cell. `\multicolumn` takes three
-arguments:
+1. एका ओळीतील जितक्या चौकटी एकमेकांत मिसळायच्या आहेत तो आकडा
+2. आडव्या मांडणीचे स्थान
+3. एकमेकांत मिसळलेल्या मोठ्या चौकटीतील सामग्री
 
-1. The number of cells which should be merged
-2. The alignment of the merged cell
-3. The contents of the merged cell
-
-The alignment can contain anything legal in a `tabular`'s preamble, but _only a
-single column type_.
+`tabular` क्षेत्राच्या कार्यघटकातील आडव्या मांडणीचे कोणतेही प्राचल ह्या आज्ञेच्या दुसऱ्या
+कार्यघटकात चालू शकते, परंतु ते एकटे वापरले जायला हवे.
 
 <!-- {% raw %} -->
 ```latex
@@ -329,11 +334,9 @@ single column type_.
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent the
-application of whatever you defined in the table preamble for the
-current column.  The following uses this method to center the
-table's head row:
-
+`\multicolumn` ह्या आज्ञेचा वापर एकाच चौकटीपुरता करून, स्तंभासाठी निवडलेल्या सोयींमध्ये त्या
+एका चौकटीपुरते बदल करता येतात. पुढील उदाहरणात कोष्टकाच्या शीर्षओळीतील आडवी मांडणी
+मध्यभागी करण्यासाठी ह्या आज्ञेचा उपयोग केला आहे.
 
 <!-- {% raw %} -->
 ```latex
@@ -358,9 +361,9 @@ table's head row:
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX.
-Usually it suffices to leave cells empty to give the reader the
-correct idea of what was meant without explicitly making cells span rows.
+स्तंभातील दोन चौकटींना एकमेकांत मिसळणे लाटेक्-च्या मूळ आज्ञावलीसह शक्य नाही. त्याकरिता अधिकचे
+आज्ञासंच वापरावे लागू शकतात. बहुतांश वेळा स्तंभातील चौकटी एकमेकांत मिसळून त्यांची एक ओळ
+बनवण्यापेक्षा स्तंभात मोकळ्या चौकटी सोडणे पुरेसे ठरते. पुढील उदाहरण पाहा.
 
 <!-- {% raw %} -->
 ```latex
@@ -393,9 +396,8 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% endraw %} -->
 
 
-## Exercises
+## स्वाध्याय
 
-Use the simple table example to start experimenting with tables. Try out
-different alignments using the `l`, `c` and `r` column types. What happens if
-you have too few items in a table row? How about too many? Experiment with the
-`\multicolumn` command to span across columns.
+ह्या प्रकरणातील कोष्टकांची साधी उदाहरणे बदलून पाहा व त्यांवर अधिकाधिक प्रयोग करा. आडव्या
+मांडणीत बदल करून पाहा. जर एखाद्या ओळीत फार कमी घटक असतील तर काय होते? ह्याउलट एखाद्या
+ओळीत खूप घटक असतील तर काय होते? `\multicolumn` आज्ञेचा वापर करून चौकटींना जोडून पाहा.
