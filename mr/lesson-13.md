@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Structuring longer documents"
-description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
-toc-anchor-text: "Structuring sources"
-toc-description: "Spliting up sources in a controlled way."
+lang: "mr"
+title: "दीर्घ दस्तऐवजांची रचना"
+description: "ह्या प्रकरणात आपण दीर्घ लाटेेक्-बीजाचे लहान तुकड्यांत विभाजन कसे करावे हे शिकणार आहोत. त्यामुळे दीर्घ दस्तऐवज लिहिणे सुकर होते."
+toc-anchor-text: "दस्तऐवजांची रचना"
+toc-description: "दस्तऐवजाचे लहान तुकड्यांत विभाजन करणे."
 ---
 
-# Structuring longer documents
+# दीर्घ दस्तऐवजांची रचना
 
 <script>
 preincludes = {
@@ -25,25 +25,32 @@ preincludes = {
 }
 </script>
 
-<span
-  class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
+<span class="summary">
+ह्या प्रकरणात आपण दीर्घ लाटेेक्-बीजाचे लहान तुकड्यांत विभाजन कसे करावे हे शिकणार आहोत. त्यामुळे
+दीर्घ दस्तऐवज लिहिणे सुकर होते.
+</span>
 
-When you are writing a longer document, you’ll likely want to split up
-the source into multiple files. For example, it's very common to have
-one 'main'/'root' file, then one source file per chapter (for a book or thesis),
-or per significant section (for a long article).
+जेव्हा प्रदीर्घ आज्ञावली असणाऱ्या बीजधारिका लिहिल्या जातात, तेव्हा कदाचित त्यांचे विभाजन
+लहान धारिकांमध्ये करावेसे लेखकास/लेखिकेस वाटू शकते. उदा. एक मुख्य/मूळ बीजधारिका असणे व
+प्रतिप्रकरण वेगवेगळ्या धारिका तयार करणे ही एक रूढ पद्धत आहे. लेखामध्ये विभाग वेगवेगळ्या
+धारिकांमध्ये लिहिणे हेदेखील रूढ आहे. अशा वेळी मुख्य धारिकेत काय लिहावे हे आता आपण पाहू.
 
-## Structuring your sources
+## बीजधारिकांची मांडणी करणे
 
-LaTeX allows us to split up sources in a controlled way. There are two important
-commands here, `\input` and `\include`. We can use `\input` to make a file work
-'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it has a big advantage: it allows us to
-be selective in which chapters to include, so you can work on part of your
-document rather than the whole thing.
+लाटेक्-मध्ये बीजाचे विभाजन करणे सहज शक्य आहे. ह्याकरिता दोन महत्त्वाच्या आज्ञा आहेत. त्या
+पुढीलप्रमाणे -
 
-A longer document might therefore look something like the following:
+* `\input`
+* `\include`
+
+`\input` ह्या आज्ञेसह समाविष्ट केल्या जाणाऱ्या धारिकेतील आज्ञा जणू काही दस्तऐवजात `\input`
+आज्ञेऐवजीच लिहिला जात आहे अशा प्रकारे चालवल्या जातात. त्यामुळे ह्या प्रकारच्या आज्ञा कोणत्याही
+सामग्रीकरिता वापरल्या जाऊ शकतात. `\include` ही आज्ञा मात्र केवळ प्रकरणांकरिता वापरली
+जाते. ह्या आज्ञेसह एक नवीन पृष्ठ तयार होते. काही अंतर्गत गोष्टींची जुळवाजुळव केली जाते. ह्या
+आज्ञेचा एक फायदा असा की कोणत्या प्रकरणांचा समावेश आपल्याला फलितात हवा आहे हे एका विशिष्ट
+आज्ञेसह निश्चित करता येऊ शकते.
+
+त्यामुळे दीर्घ बीजधारिकांची रचना पुढीलप्रमाणे करता येऊ शकते.
 
 <!-- pre0 {% raw %} -->
 ```latex
@@ -65,8 +72,7 @@ A longer document might therefore look something like the following:
   }
 }
 {
-% Do a full document initially to generate
-% all the aux files
+% पहिल्यांदा चालवताना सर्व साहाय्यक धारिका निर्माण होण्याकरिता सर्व धारिकांचा समावेश करणे.
 }
 
 \begin{document}
@@ -89,57 +95,61 @@ A longer document might therefore look something like the following:
 ```
 <!-- {% endraw %} -->
 
-We'll look at the various aspects of this file below. (The various support files
-are at the end of this page.)
+आता आपण ह्या आज्ञावलीचे विविध तपशील खाली पाहूयात. ह्या मूळ धारिकेत समाविष्ट केलेल्या
+धारिकांची आज्ञावली ह्या पृष्ठाच्या शेवटी देण्यात आली आहे.
 
-## Using `\input`
+## `\input` आज्ञा
 
-The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the main file short and clear, and also meaning we could
-re-use the covers in another document. We've also used it for the 'non-chapter'
-sections at the start of our 'book': things like the preface. Again, this is
-to help keep the main file clear.
+`\input` ही आज्ञा दस्तऐवजातील प्रकरणे नसलेल्या, परंतु ज्यांची आज्ञावली दीर्घ आहे अशा
+भागांकरिता उपयुक्त आहे. आपल्या उदाहरणात मुखपृष्ठ व मलपृष्ठ ह्यांना वेगळे करण्यासाठी आपण ही आज्ञा
+वापरली आहे व त्यामुळे मुख्य बीजआज्ञावली छोटी व सोपी वाटते. तसेच ह्यामुळे सुट्या मुख व मलपृष्ठाच्या
+आज्ञावल्या दुसऱ्या धारिकांसोबत वापरणेही शक्य होते. प्रकरणे नसलेले काही विभाग आपण ह्या आज्ञेसह
+समाविष्ट करून घेतले आहेत उदा. प्रास्ताविक.
 
-## Using `\include` and `\includeonly`
+## `\include` व `\includeonly` ह्यांचा वापर
 
-The `\include` command is good for chapters, so we have used it for each full
-chapter; it always starts a new page. We have selected which chapters will
-actually be typeset using `\includeonly`, which as you can see takes a
-comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proofreading.
-In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from the `.aux` files of other included files.
+`\include` आज्ञा प्रकरणांकरिता उपयुक्त आहे, म्हणून आपण प्रत्येक पूर्ण प्रकरणासाठी तिचा वापर
+केला आहे. अपेक्षेप्रमाणे तिने नवीन पानापासून प्रत्येक समाविष्ट धारिकेतील आज्ञावलीची सुरुवात केली
+आहे. `\includeonly` ह्या आज्ञेसह कोणत्या धारिका खरोखरीच चालवायच्या आहेत ह्याची माहिती
+आपण लाटेक्-ला पुरवली आहे. ह्या आज्ञेच्या कार्यघटकात स्वल्पविरामांनी वेगळी केलेली धारिकांची नावे
+लिहिली जातात. `\includeonly` आज्ञेसह मूळ आज्ञावलीतील निवडक घटकांचाच समावेश करून लहान
+फलिते तयार करता येऊ शकतात व त्यांना मुद्रितशोधन अथवा संपादनासारख्या कामांकरिता पाठवल्या
+जाणाऱ्या खर्ड्यांसाठी वापरता येते. `\includeonly` आज्ञेचा सर्वात महत्त्वाचा फायदा असा की
+साहाय्यक धारिकांमध्ये नमूद करण्यात आलेले सर्व धारिकांतर्गत संदर्भ योग्यरीत्या छापले जातील.
 
-## Creating a table of contents
+## अनुक्रमणिका तयार करणे
 
-The `\tableofcontents` command uses the information from sectioning
-commands to populate the table of contents.  It has its own auxiliary
-file, with extension `.toc`, so you may need to run LaTeX twice to
-resolve the information. The table is generated automatically from the
-section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions, and
-use files with extension `.lof` and `.lot` respectively.
+`\tableofcontents` ही आज्ञा विभागांसाठी वापरलेल्या आज्ञांद्वारे तयार झालेली माहिती वापरून
+अनुक्रमणिका तयार करते. `.toc` प्रत्ययासह ह्या आज्ञेची स्वतंत्र साहाय्यक धारिका तयार होते व
+त्यामुळे अनुक्रमणिका यशस्वीरीत्या दिसण्याकरिता लाटेक् दोनदा चालवणे आवश्यक
+ठरते. `\listoffigures` व `\listoftables` ह्या दोन आज्ञांसह अनुक्रमे आकृत्या व कोष्टकांच्या
+याद्या छापता येतात. ह्या आज्ञांच्या अनुक्रमे `.lof` व `.lot` नावाच्या साहाय्यक धारिका तयार
+होतात.
 
-## Splitting the document into parts
+## दस्तऐवजाचे तुकड्यांमध्ये विभाजन
 
-The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
-affect the formatting.
-For instance, `\frontmatter` changes the page numbering to
-Roman numbers.
-The `\appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after `\appendix`,
-the header says `Appendix A`.
+`\frontmatter`, `\mainmatter` व `\backmatter` ह्या आज्ञांमुळे दस्तऐवजाच्या रूपावर काही
+विशिष्ट परिणाम होतात. उदा. `\frontmatter` ह्या आज्ञेमुळे पृष्ठक्रमांकाच्या लेखनासाठी रोमी
+आकडे (i, ii, iii इत्यादी) वापरले जातात. `\appendix` ह्या आज्ञेमुळे प्रकरणांचे क्रमांक `A`,
+`B`, `C` इत्यादी वापरले जातात. उदा. `\appendix` आज्ञेनंतर आलेल्या पहिल्या प्रकरणातील
+शीर्षमजकूरात `Appendix A` असे म्हटले आहे. मराठी अक्षरजुळणीत मात्र ह्या गोष्टी चालू शकत
+नाहीत, त्यामुळे मराठी आज्ञासंचासह काही वेगळे नियम पुरवले जातात. आज्ञासंचाच्या बीजधारिकेतील
+ह्या विषयीच्या आज्ञा
+[इथे](https://gitlab.com/niranjanvikastambe/marathi/-/blob/master/marathi/marathi.dtx#L469-493)
+पाहता येतील. तसेच पॉलिग्लॉसिया आज्ञासंचातील ह्या विशिष्ट कार्याकरिता असणाऱ्या मराठीविशिष्ट
+आज्ञा `gloss-marathi.ldf` धारिकेतील
+[ह्या](https://github.com/reutenauer/polyglossia/blob/master/tex/gloss-marathi.ldf#L98-L134)
+भागात पाहता येतील.
 
-## Exercises
+## स्वाध्याय
 
-Experiment with the basic structure of the demonstration document,
-try adding and removing entries for `\includeonly` and see the effect.
+उदाहरणात दिलेल्या धारिकेच्या रचनेत बदल करून पाहा. `\includeonly` ह्या आज्ञेच्या
+कार्यघटकातील धारिकांची नावे बदलून पाहा व होणारा परिणाम पाहा.
 
-Add some floats and produce a list of figures and tables.
-If using a locally installed LaTeX, do you see
-how many LaTeX runs are required? (The online systems re-run LaTeX
-"behind the scenes" so the additional required runs are not so obvious.)
+काही तरंगती दृश्यके समाविष्ट करा व कोष्टकसूची तसेच आकृत्यांची सूची निर्माण करण्याचा प्रयत्न
+करा. जर संगणकावर बसवलेले लाटेक् वापरत असाल, तर किती वेळा धारिका चालवावी लागते हे
+पाहा. (महाजालीय सेवांतर्फे आवश्यक वेळा लाटेक् आपसूक चालवले जाते व हे कार्य पडद्यामागे साधले
+जाते. त्यामुळे ते संगणकावरील लाटेक्-इतके उघड नाही.)
 
 ----
 
