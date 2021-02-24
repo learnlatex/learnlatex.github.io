@@ -1,92 +1,99 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Selecting fonts and using Unicode engines"
-description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
-toc-anchor-text: "Fonts & Unicode engines"
-toc-description: "Selecting fonts and file encoding."
+lang: "mr"
+title: "टंक निवडणे व युनिकोड-चालक वापरणे"
+description: "ह्या प्रकरणात लाटेक् आज्ञावलीसह युनिकोड चिन्हे कशी हाताळली जातात व टंकांची हाताळणी कशी होते हे शिकवले जाते. ओपनटाईप टंकांचा वापर लाटेक्-सह कसा केला जातो हेही आपण पाहू."
+toc-anchor-text: "टंक व युनिकोड-चालक"
+toc-description: "टंक व अक्षरांचे स्वरूप ठरवणे."
 ---
 
-# Fonts and Unicode engines
+# टंक व युनिकोड-चालक
 
-<span
-  class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
+<span class="summary">
+ह्या प्रकरणात लाटेक् आज्ञावलीसह युनिकोड चिन्हे कशी हाताळली जातात व टंकांची हाताळणी कशी होते
+हे शिकवले जाते. ओपनटाईप टंकांचा वापर लाटेक्-सह कसा केला जातो हेही आपण पाहू.
+</span>
 
-When TeX and LaTeX first started being widely used they largely only handled
-European languages out of the box, although there was some capability for using
-other alphabets such as Greek and Russian.
+जेव्हा टेक् व लाटेक् सुरू झाले, तेव्हा ते मुख्यत्वे युरोपीय भाषांकरिताच वापरले जात असे. काही प्रमाणात
+ग्रीक व रशियन ह्या लिप्यांकरिताही टेक् व लाटेक् वापरता येत असे, परंतु ह्यांव्यतिरिक्त अन्य लिप्या
+मात्र हाताळण्याची क्षमता त्यात नव्हती.
 
-## Accents and accented letters
+## लॅटिन लिपीतील स्वराघाताची चिन्हे
 
-Originally, accents and accented letters were typed using control sequences or
-macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
-use these input methods because they can be easier to type, others wanted to be
-able to use the keys on their keyboards to input such symbols directly.
+लॅटिन लिपीतील स्वराघाताच्या चिन्हांकरिता लाटेक्-मध्ये पूर्वी आज्ञा असत. उदा. `\c{c}` ह्या
+आज्ञेमुळे लॅटिन लिपीतील ‘ç’ हे चिन्ह छापले जाईल, अथवा `\'e` ह्या आज्ञेसह ‘é’ हे. ज्यांना ह्या
+आज्ञा सवयीच्या झाल्या आहेत, ते अजूनही त्या वापरतात, परंतु कळपाटावरून थेट अशी चिन्हे टंकलिखित
+करणे शक्य झाल्यानंतर वापरकर्त्यांना तेदेखील वापरण्याची सोय लाटेक्-मध्ये असणे आवश्यक वाटले.
 
-Before Unicode, LaTeX provided support for many types of *file encoding* that
-allowed text to be written in various languages natively — for example, using
-the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would
-internally translate the accented letters into TeX commands to produce the
-correct output.
+युनिकोडापूर्वी लाटेक् अक्षरांची निरनिराळी स्वरूपे पुरवत असे. उदा. `latin1` ह्या स्वरूपासह
+वापरकर्ते ‘`déjà vu`’ लिहू शकत, लाटेक् अंतर्गत पातळीवर त्यांचा अनुवाद लाटेक्-आज्ञांमध्ये करत
+असे व त्यामुळे योग्य फलित मिळत असे.
 
-This approach is still in use in modern LaTeX when using the `pdflatex` engine.
-By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
-specified. Although this engine is limited to 8-bit fonts, most European
-languages can be supported.
+`pdflatex` ह्या चालकासह अजूनही ह्या सर्व रूढी चालू आहेत, परंतु आजच्या काळात सर्व धारिका
+युनिकोड-आधारितच (UTF-8 स्वरूपातच) आहेत असे गृहीत धरले आहे. तसे नसेल, तर वेगळ्या आज्ञांसह ते नमूद
+करावे लागते. हा चालक ८-बिट टंकांपुरताच मर्यादित आहे. त्यासह बहुतांश युरोपीय लिप्यांमध्ये लिहिता
+येते.
 
-## Font selection
+## टंकनिवड
 
-Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
-nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
-example, the TeX Gyre fonts are a suite of high-quality fonts based on common
-fonts that most people are familiar with such as Times, Helvetica, Palatino, and
-others. To load these fonts, it is as simple as loading a package with the
-appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
+`pdflatex` ह्या चालकासह लाटेक्-ची मूलभूत टंकनिवडीची आज्ञावली वापरता येते व आजकाल अनेक टंक
+सहज वापराकरिता टेक्-वितरणाचा भाग म्हणून वितरित केले जातात. उदा. टाइम्स, हेल्वेटिका व
+पॅलटिनोसारख्या टंकांवर आधारलेला टेक् गायर उच्च गुणवत्तेचा टंक. टेक्-वितरणात उपलब्ध असलेले टंक
+कोणत्याही टेक्-धारिकेत सहज निवडता व वापरता येतात. ह्या टंकांना निवडणे एका आज्ञासंचास
+निवडण्याइतकेच सोपे आहे. उदा. टाइम्स टंकासारखा दिसणारा लाटेक्-मधील टंक आहे टर्म्स्. तो
+वापरण्याकरिता पुढील उदाहरण पाहा.
 
 ```latex
 \usepackage{tgtermes}
 ```
 {: .noedit :}
 
-For `pdflatex`, most fonts are accessible through packages.  You can have a look
-at [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) or the
-[CTAN page on the ‘Font’ topic](https://www.ctan.org/topic/font) to see some
-options.  You can also search on the Internet for the font you want, and look
-for a `pdflatex`-compatible package version.  If you want to use a proprietary
-font, you can search for a suitable clone, which for most applications is
-similar enough to the original.
+`pdflatex` ह्या चालकासह बहुतांश टंक हे आज्ञासंचांमार्फत वापरता येतात. [द लाटेक् फॉन्ट
+कॅटलॉग](https://www.tug.org/FontCatalogue/) ह्या नावाने लाटेक्-मधील टंकांची एक यादी
+महाजालावर उपलब्ध आहे. तसेच टेक्-वितरणातील सर्व टंक सीटॅन ह्या संकेतस्थळावर
+[फॉन्ट](https://www.ctan.org/topic/font) ह्या विषयांतर्गत एकत्रित केले आहेत. एखाद्या
+टंकाचा पीडीएफ्-लाटेक् चालवू शकेल असा आज्ञासंच आहे का हे सीटॅनवर तपासून घेता येऊ शकते. अमुक्त
+टंकांच्या काही मुक्त प्रतिकृतीदेखील उपलब्ध असतात, त्यांचा वापर लाटेक्-सह सहज करता येतो.
 
-## The Unicode era
+## युनिकोड-पर्व
 
-As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot
-natively use modern OpenType fonts and easily switch between multiple languages
-that use different alphabets (or scripts, to use the technical term). There are
-two replacements for pdfTeX that natively use Unicode input and modern fonts:
-XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using
-the engines `xelatex` and `lualatex` respectively.
+`pdflatex` हा चालक ८-बिट स्वरूपातील टंक व अक्षरांपुरताच मर्यादित असल्यामुळे ह्या चालकासह
+ओपनटाईप ह्या प्रकारचे टंक वापरता येत नाहीत. तसेच ह्या चालकासह लॅटिनव्यतिरिक्त इतर लिप्या
+वापरणे सुकर नाही. युनिकोडआधारित मजकूर लाटेक्-सह वापरण्याकरिता दोन पर्यायी चालक लाटेक्-मध्ये
+उपलब्ध आहेत. त्यांची नावे झीटेक् व लुआटेक्. लाटेक्-साठी अनुक्रमे झीलाटेक् व लुआलाटेक् ही त्यांची नावे
+आहेत. `xelatex` व `lualatex` ह्या त्यांच्या आज्ञा टेक्-धारिकांवर चालवता येतात.
 
-In these engines, font selection is performed by the `fontspec` package, and for
-simple documents can look as easy as:
+ह्या चालकांसह टंकनिवड `fontspec` आज्ञासंचामार्फत होते सोप्या टंकनिवडीसाठी ह्याकरिताच्या
+आज्ञा पुढीलप्रमाणे दिसतात.
+
 ```latex
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
 {: .noedit :}
 
-This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
-Notably, this approach works for *any* OpenType font.  Some fonts available for
-`pdflatex` are also available to `xelatex` and `lualatex` through their
-respective packages as well, or by loading any font you have installed on your
-computer by using `fontspec` as shown above.
+ह्या आज्ञांमुळे टेक् गायर टर्म्स् ह्या टंकाची निवड केली जाते. ह्या पद्धतीने **कोणत्याही** ओपनटाईप
+टंकाची निवड करता येणे शक्य आहे. पीडीएफ्-लाटेक् ह्या चालकाकरिता उपलब्ध असलेले काही ८-बिट टंक
+त्यांच्या ओपनटाईप स्वरूपात झीलाटेक् व लुआलाटेक्-सोबतही उपलब्ध करून देण्यात आले आहेत. शिवाय
+संगणकावर प्रस्थापित केलेला कोणताही ओपनटाईप टंक ह्या आज्ञासंचासह निवडता येऊ शकतो. देवनागरी
+लिपीसाठी पुढील युनिकोडआधारित टंक टेक्-वितरणात समाविष्ट आहेत.
 
-[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
-with OpenType formats available, so you can use that as a resource for looking
-up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
-earlier.
+* शोभिका (https://ctan.org/pkg/shobhika)
+* एग्झार (https://ctan.org/pkg/eczar)
+* गोटू (https://ctan.org/pkg/EkType-Tanka)
+* जैनी
+* जैनी पूर्वा
+* मुक्त
+* बलू
+* मोदक
 
-Having selected a font, input can now be typed directly in plain Unicode into a 
-source document. Here is an example showing some Latin and Greek letters as 
-well as some CJK ideographs:
+[द लाटेक् फॉन्ट कॅटलॉग](https://www.tug.org/FontCatalogue/) ओपनटाईप स्वरूपातील
+टंकांचीदेखील नोंद घेतो. त्यामुळे एक संसाधन म्हणून त्या यादीचा वापर करता येऊ शकतो. अन्यथा
+[सीटॅनपृष्ठावर](https://www.ctan.org/topic/font) टंकांची नोंद आहेच.
+
+योग्य टंक निवडल्यानंतर युनिकोड स्वरूपातील मजकूर थेट बीजधारिकेत समाविष्ट करता येतो. ह्या
+उदाहरणात काही ग्रीक अक्षरे, काही लॅटिन अक्षरे व काही चीनी, जपानी व कोरियाई अक्षरेही
+आहेत.
 
 ```latex
 \documentclass{article}
@@ -100,5 +107,7 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
-<p 
-  class="hint">When switching between languages it is usually important to also change things like hyphenation patterns and so on, and the <code>babel</code> and <code>polyglossia</code> packages both provide robust features to do this.</p>
+<p class="hint">
+भाषाबदल करावयाचा असल्यास विविध कारणांसाठी <code>babel</code> तसेच
+<code>polyglossia</code>सारखे आज्ञासंच वापरणे अधिक श्रेयस्कर ठरते.
+</p>
