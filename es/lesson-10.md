@@ -15,7 +15,7 @@ toc-description: "Modo y notación matemática"
 ## El modo matemático
 
 Puede escribir fórmulas matemáticas en LaTeX, de una forma lógica, en lo que se
-conoce como "modo matemático". En el modo matemático, los espacios se ignoran y se
+conoce como «modo matemático». En el modo matemático, los espacios se ignoran y se
 aplica (casi siempre) el espaciado correcto entre los caracteres. Existen dos formas
 del modo matemático: inline (en línea) y display (en una línea aparte).
 
@@ -35,10 +35,10 @@ Vea como el párrafo continua después de la ecuación escrita en una línea apa
 \end{document}
 ```
 
-Puede que haya visto fórmulas matemáticas de "estilo LaTeX" en otros sitios, por ejemplo,
+Puede que haya visto fórmulas matemáticas de «estilo LaTeX» en otros sitios, por ejemplo,
 el sistema MathJax permite escribir ecuaciones en páginas web. Estos sistemas aceptan a menudo
-ligeras variaciones en la sintaxis de LaTeX, ya que de hecho no usan LaTeX "en segundo plano".
-Nuestros ejemplos son todos de un LaTeX de sintaxis "correcta", así que si ve algo diferente
+ligeras variaciones en la sintaxis de LaTeX, ya que de hecho no usan LaTeX «en segundo plano».
+Nuestros ejemplos son todos de un LaTeX de sintaxis «correcta», así que si ve algo diferente
 en otro contexto, puede que sea porque ese ejemplo no utiliza
 realmente LaTeX.
 
@@ -98,7 +98,7 @@ símbolos en modo matemático, usando la herramienta [Detexify](https://detexify
 
 En el modo matemático display, puede usar exactamente los mismos comandos 
 del modo inline. El modo matemático display es centrado por defecto y es adecuado
-para ecuaciones largas que forman "parte de un párrafo". Note que
+para ecuaciones largas que forman «parte de un párrafo». Note que
 los entornos matemáticos display no permiten que un párrafo termine con texto 
 matemático, con lo que no dispondrá de líneas en blanco dentro del modo 
 display.
@@ -215,7 +215,7 @@ muy específico. A menudo es escrito de forma explícita. Una serie de comandos 
 conocer:
 
 - `\mathrm`: roman (upright)
-- `\mathit`: en cursiva y espaciado como un "texto"
+- `\mathit`: en cursiva y espaciado como un «texto»
 - `\mathbf`: en negrita
 - `\mathsf`: sans serif
 - `\mathtt`: mono espaciado (tipo máquina de escribir)

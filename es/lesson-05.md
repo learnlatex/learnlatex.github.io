@@ -90,7 +90,7 @@ La American Mathematical Society aporta variantes de los tipos de documento est�
 (`amsart`, `amsbook`) con un diseño más tradicional, similar al usado en las
 publicaciones de revistas de matemáticas.
 
-Los dos tipos de documento más importantes y "extendidos" popularmente sont el 
+Los dos tipos de documento más importantes y «extendidos» popularmente sont el 
 paquete KOMA-Script y el tipo memoir. KOMA-Script ofrece una serie de tipos de documento 
 con cierto paralelo a los estándar: `scrartcl`, `scrreprt` y `scrbook`, mientras que `memoir`
 es más bien una extensión de `book`. 

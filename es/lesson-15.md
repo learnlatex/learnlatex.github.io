@@ -94,10 +94,10 @@ l.8 My command is used here \mycommand
 Note que TeX no ve el error en la parte en la que se realiza la definición; 
 de hecho si el comado \mycommand hubiese sido definido, pero no usado, no habríamos
 obtenido ningún error. Así que aunque se indique que el error es en la línea
-8, el "verdadero" error se encuentra en la definición de la línea 4, por consiguiente
+8, el «verdadero» error se encuentra en la definición de la línea 4, por consiguiente
 es importante leer el mensaje de error completo.
 
-Tenga en cuenta que algunos editores muestran "resumenes" de una línea de cada error
+Tenga en cuenta que algunos editores muestran «resúmenes» de una línea de cada error
 encontrado. Esto puede ser particularmente engañoso si el error se muestra como:
 
 `line 8: undefined command: ...\mycommand`
