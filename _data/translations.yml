@@ -16,6 +16,7 @@ change-language:
   tr: "Bu sayfayı farklı bir dilde görüntüle"
   vi: "Đọc trang này trong một ngôn ngữ khác"
   zh: "Missing"
+  mr: "हे पृष्ठ दुसऱ्या भाषेत वाचा"
 skip-link:
   de: "Zum Hauptinhalt springen"
   en: "Skip to main content"
@@ -26,6 +27,7 @@ skip-link:
   tr: "İçeriğe atla"
   vi: "Chuyển đến nội dung chính"
   zh: "Missing"
+  mr: "मुख्य विषयावर जा"
 heading_meta:
   de: "Meta"
   en: "Meta"
@@ -36,6 +38,7 @@ heading_meta:
   tr: "Meta"
   vi: "Meta"
   zh: "Missing"
+  mr: "अधिक"
 heading_navigation:
   de: "Navigation"
   en: "Navigation"
@@ -46,6 +49,7 @@ heading_navigation:
   tr: "Site Haritası"
   vi: "Điều hướng"
   zh: "Missing"
+  mr: "पृष्ठे"
 heading_planet:
   de: "Planet"
   en: "Planet"
@@ -56,6 +60,7 @@ heading_planet:
   tr: "Alakalı Sayfalar"
   vi: "Liên kết ngoài"
   zh: "Missing"
+  mr: "लाटेक्-विश्व"
 informational-elements_lesson:
   de: "Lektion"
   en: "Lesson"
@@ -66,6 +71,7 @@ informational-elements_lesson:
   tr: "Ders"
   vi: "Bài học"
   zh: "課"
+  mr: "प्रकरण"
 informational-elements_search:
   de: "Suche"
   en: "Search"
@@ -76,6 +82,7 @@ informational-elements_search:
   tr: "Arama"
   vi: "Tìm kiếm"
   zh: "搜索"
+  mr: "शोधपट्टी"
 navigational-elements_home:
   de: "Startseite"
   en: "Home"
@@ -86,6 +93,7 @@ navigational-elements_home:
   tr: "Ana Sayfa"
   vi: "Trang chủ"
   zh: "Missing"
+  mr: "मुखपृष्ठ"
 navigational-elements_mission:
   de: "Mission"
   en: "Mission"
@@ -96,6 +104,7 @@ navigational-elements_mission:
   tr: "Amaç"
   vi: "Sứ mệnh"
   zh: "Missing"
+  mr: "ध्येय"
 navigational-elements_help:
   de: "Hilfe"
   en: "Help"
@@ -106,6 +115,7 @@ navigational-elements_help:
   tr: "Yardım"
   vi: "Hỗ trợ"
   zh: "救命"
+  mr: "मदत"
 navigational-elements_contact:
   de: "Kontakt"
   en: "Contact"
@@ -116,6 +126,7 @@ navigational-elements_contact:
   tr: "İletişim"
   vi: "Liên hệ"
   zh: "Missing"
+  mr: "संपर्क"
 navigational-elements_licenses:
   de: "Lizenzen"
   en: "Licenses"
@@ -126,6 +137,7 @@ navigational-elements_licenses:
   tr: "Lisanslar"
   vi: "Giấy phép"
   zh: "執照"
+  mr: "परवाने"
 navigational-elements_open-an-issue:
   de: "Problem melden"
   en: "Open an issue"
@@ -136,6 +148,7 @@ navigational-elements_open-an-issue:
   tr: "Problem bildir"
   vi: "Báo lỗi"
   zh: "Missing"
+  mr: "सुधारणा/तक्रार नोंदवा"
 navigational-elements_page-source:
   de: "Seitenquelltext"
   en: "Page source"
@@ -146,6 +159,7 @@ navigational-elements_page-source:
   tr: "Sayfa kaynağı"
   vi: "Nguồn trang"
   zh: "Missing"
+  mr: "पृष्ठाचे आज्ञावलीय बीज"
 navigational-elements_more:
   de: "Mehr zu diesem Thema"
   en: "More on this topic"
@@ -156,6 +170,7 @@ navigational-elements_more:
   tr: "Daha fazla detay…"
   vi: "Xem bài bổ sung của bài này"
   zh: "有關此主題的更多信息"
+  mr: "ह्याबाबत अधिक माहिती"
 navigational-elements_next:
   de: "Nächste Lektion"
   en: "Next lesson"
@@ -166,6 +181,7 @@ navigational-elements_next:
   tr: "Sonraki ders"
   vi: "Bài tiếp theo"
   zh: "Missing"
+  mr: "पुढील प्रकरण"
 navigational-elements_nextmain:
   de: "Nächste Hauptlektion"
   en: "Next main lesson"
@@ -176,6 +192,7 @@ navigational-elements_nextmain:
   tr: "Bir sonraki ana ders"
   vi: "Bài chính tiếp theo"
   zh: "Missing"
+  mr: "पुढील मुख्य प्रकरण"
 navigational-elements_return:
   de: "Zurück zur Hauptlektion"
   en: "Return to main lesson"
@@ -186,6 +203,7 @@ navigational-elements_return:
   tr: "Derse dön"
   vi: "Quay trở lại bài chính"
   zh: "Missing"
+  mr: "मुख्य प्रकरणाकडे परत जा"
 navigational-elements_toc:
   de: "Inhaltsverzeichnis"
   en: "Table of Contents"
@@ -196,3 +214,4 @@ navigational-elements_toc:
   tr: "Konu Başlıkları"
   vi: "Mục lục"
   zh: "目錄"
+  mr: "अनुक्रमणिका"
