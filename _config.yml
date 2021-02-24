@@ -32,14 +32,6 @@ compress_html:
   profile: false
   startings: [html, head, body]
 
-langs:
-   - en
-   - de
-   - fr
-   - pt
-   - ja
-   - vi
-   - mr
 
 # LANGUAGES, LABELS, LAYOUTS
 # Settings for multilingual set up: 
