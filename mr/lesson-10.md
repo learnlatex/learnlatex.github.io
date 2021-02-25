@@ -274,6 +274,6 @@ $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 
 ---
 
-[^1]: https://shabdakosh.marathi.gov.in/node/70688
-[^2]: https://shabdakosh.marathi.gov.in/node/70644
-[^3]: https://shabdakosh.marathi.gov.in/node/69232
+[^1]: [https://shabdakosh.marathi.gov.in/node/70688](https://shabdakosh.marathi.gov.in/node/70688)
+[^2]: [https://shabdakosh.marathi.gov.in/node/70644](https://shabdakosh.marathi.gov.in/node/70644)
+[^3]: [https://shabdakosh.marathi.gov.in/node/69232](https://shabdakosh.marathi.gov.in/node/69232)
