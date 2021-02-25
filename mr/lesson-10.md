@@ -1,29 +1,33 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Mathematics"
-description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
-toc-anchor-text: "Mathematics"
-toc-description: "Math mode and mathematical notation."
+lang: "mr"
+title: "गणित"
+description: "ह्या प्रकरणात लाटेक्-चे गणितक्षेत्र व त्यासह चालू मजकुरात गणिती चिन्हे लिहिण्याकरिता वापरल्या जाणाऱ्या आज्ञा आपण पाहू, तसेच amsmath ह्या आज्ञासंचासह पुरवली जाणारी अधिकची चिन्हे व गणिताचा टंक कसा बदलता येतो हे सर्व ह्या प्रकरणात पाहू."
+toc-anchor-text: "गणित"
+toc-description: "गणितक्षेत्र व गणिती लेखन."
 ---
 
 # Mathematics
 
-<span
-  class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
+<span class="summary">
+ह्या प्रकरणात लाटेक्-चे गणितक्षेत्र व त्यासह चालू मजकुरात गणिती चिन्हे लिहिण्याकरिता वापरल्या
+जाणाऱ्या आज्ञा आपण पाहू, तसेच `amsmath` ह्या आज्ञासंचासह पुरवली जाणारी अधिकची चिन्हे व
+गणिताचा टंक कसा बदलता येतो हे सर्व ह्या प्रकरणात पाहू.
+</span>
 
-Typesetting complex mathematics is one of the greatest strengths of LaTeX. You 
-can mark up mathematics in a logical way in what is known as 'math mode'.
+गणिती चिन्हांची उत्कृष्ट हाताळणी ही लाटेक्-ची एक खूप मोठी ताकद आहे. गणिती चिन्हे
+छापण्याकरिता लाटेक्-मधील गणितक्षेत्रात विशिष्ट आज्ञांचा वापर करता येऊ शकतो. त्या क्षेत्राबाहेर
+ह्या आज्ञांचा वापर निषिद्ध असतो.
 
-## Math mode
+## गणितक्षेत्र
 
-In math mode, spaces are ignored and the correct spacing between characters is 
-(almost always) applied. 
+गणितक्षेत्रामध्ये लिहिलेल्या मजकुरातील मोकळ्या जागा आज्ञावलीत दुर्लक्षिल्या जातात व अक्षरांमधील
+जागा आपोआप नियंत्रित केली जाते.
 
-There are two forms of math mode: 
+गणितक्षेत्राचे दोन प्रकार आहेत -
 
-* inline
-* display
+* ओळीअंतर्गत
+* दर्शनी
 
 ```latex
 \documentclass{article}
@@ -41,38 +45,35 @@ See how the paragraph continues after the display.
 \end{document}
 ```
 
-You may see 'LaTeX-like' mathematical input in other places, for example
-the MathJax system for placing equations in web pages. These systems often
-accept slight variations on LaTeX's syntax as they do not actually use LaTeX
-'behind the scenes'.
+तुम्हाला लाटेक्-सदृश फलित इतर आज्ञावल्यांमार्फत मिळवल्याचे आढळू शकेल. उदा. मॅथजॅक्स ही गणिते वेबवर
+लिहिण्यासाठीची आज्ञावली. ह्या आज्ञावल्यांच्या ठेवणीमध्ये लाटेक्-पेक्षा निराळ्या रूढी आढळू शकतात,
+कारण त्या पडद्यामागे लाटेक् वापरत नाहीत.
 
-<p 
-  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in 
-another context, it might be because the example is not really using LaTeX.</p>
+<p class="hint">
+ह्या अभ्यासक्रमात आलेली सर्व लाटेक् उदाहरणे <i>अचूक</i> आहेत. जर तुम्हाला लाटेक्-सदृश काहीतरी
+अन्यत्र दिसले व त्यात दोष आढळले, तर त्याचे कारण लाटेक् आज्ञावलीचा वापर न होणे हे असू शकते.
+</p>
 
-### Inline math mode and mathematical notation
+### ओळीअंतर्गत गणित व गणिती चिन्हव्यवस्था
 
-As you can see above, inline math mode is marked using a pair of dollar
-symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
-Simple expressions are entered without any special markup, and you'll see
-that the math is spaced out nicely and has letters in italic.
+तुम्ही वरील उदाहरणात पाहिलेच असेल की ओळीअंतर्गत गणितक्षेत्राकरिता दोन डॉलरच्या चिन्हांमध्ये
+मजकूर लिहावा लागतो. (`$ ... $`) डॉलर्सऐवजी कंस वापरणेदेखील (`\( ... \)`) चालते. सामान्य
+मजकूर कोणत्याही विशेष बदलांशिवाय लिहिला जातो. गणिती चिन्हांमध्ये योग्य जागा सोडली जाते व
+सर्व मजकूर इटालीय वळणात छापला जातो.
 
-Inline math mode restricts vertical size of the expression so that as
-far as possible the formula does not disturb the linespacing of the
-paragraph.
+ओळीअंतर्गत गणितक्षेत्रातर्फे मजकुराची उंची नियंत्रित केली जाते, ज्यामुळे दोन ओळींमधील अंतर शक्य
+तितके विचलित होणार नाही.
 
-Note that _all_ mathematics should be marked up as math, even if it is
-a single character  use `... $2$ ...`   not `... 2 ...` otherwise, for
-example, when you need a negative number and need math to get a minus
-sign the `... $-2$ ...` may use math digits which may not be the same
-font as the text digits (depending on the document class).
-Conversely
-beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using `_` (which
-may be marked up as `\$` and `\_` respectively).
+**सर्व** गणिती लेखन हे गणितक्षेत्रातच व्हायला हवे. एखादे अक्षर/अंक जरी असेल तरीही `... $2$
+...` असे लिहावे व `... 2 ...` असे लिहू नये. ह्याचे कारण लाटेक्-वर्गानुसार सामान्य मजकुराचा टंक
+वेगळा असू शकतो, परंतु गणिती आकड्यांचा लाटेक्-टंक मात्र तोच राहतो. तसेच लाटेकेतर आज्ञावलीतून
+अथवा साध्या पाठ्य मजकुरातून थेट लाटेक्-बीजात मजकूर समाविष्ट करताना सावधपणे करा. कारण त्या
+मजकुरात `$` असू शकतो, `_` हे चिन्ह असू शकते. ह्या चिन्हांना लाटेक्-सह छापण्यासाठी अनुक्रमे `\$`
+व `\_` असे लिहावे लागते. ह्या चिन्हांशिवाय गणितक्षेत्राबाहेर ही चिन्हे वापरली गेल्यास लाटेक्
+अडचण दाखवू शकते.
 
-We can easily add superscripts and subscripts; these are marked using `^` and
-`_`, respectively.
+गणितक्षेत्रात अधिस्थ[^1] व अवस्थ[^2] मजकूर सहज लिहिता येतो. त्याकरिता अनुक्रमे `^` व `_` ही
+चिन्हे वापरता येतात.
 
 ```latex
 \documentclass{article}
@@ -82,13 +83,15 @@ Superscripts $a^{b}$ and subscripts $a_{b}$.
 \end{document}
 ```
 
-(You might see examples where simple super- and subscripts are entered without
-braces, but that is not the official syntax and can go wrong; always use
-braces.)
+<p class="hint">
+काही अशी उदाहरणे दिसू शकतात जिथे महिरपी कंसांशिवाय अधिस्थ व अवस्थ मजकूर लिहिला जातो,
+परंतु आज्ञावलीची मूळ ठेवण तशी नाही व त्यामुळे फलितात चुका होण्याची शक्यता आहे. त्यामुळे कायम
+महिरपी कंसांचा वापर करावा.
+</p>
 
-There are a _lot_ of specialist math mode commands. Some of them are quite
-easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
-Greek letter.
+लाटेक्-च्या गणितक्षेत्रात मुबलक गणिती लेखनाच्या आज्ञा आहेत. त्यांतील काही ह्या अतिशय सोप्या
+आहेत. उदा. `\sin` व `\log` साइन व लाग[^3] ह्यांकरिता अथवा थीटा हे चिन्ह मिळवण्याकरिता
+`\theta`.
 
 ```latex
 \documentclass{article}
@@ -98,29 +101,25 @@ Some mathematics: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
-We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for
-math mode symbols using the
-[Detexify](https://detexify.kirelabs.org/classify.html) tool.
+ह्या अभ्यासक्रमात गणिती लेखनाच्या सर्व आज्ञांचा समावेश करणे आम्हाला शक्य नाही, परंतु ह्याकरिता
+महाजालावर अनेक संसाधने उपलब्ध आहेत. तसेच चिन्हाचे चित्र काढून त्याची लाटेक् आज्ञा मिळवण्याकरिता
+[डिटेकिफाय्](https://detexify.kirelabs.org/classify.html) ह्या साधनाचाही वापर करणे
+शक्य आहे.
 
 
-### Display mathematics
+### दर्शनी गणितक्षेत्र
 
-You can use exactly the same commands for display math mode as for
-inline work. Display math mode is set centered by default and is meant
-for larger equations that are 'part of a paragraph'. Note that
-display math environments do not allow a paragraph to end within the
-mathematics, so you may not have blank lines within the source of the
-display.
+ओळीअंतर्गत गणितक्षेत्रातील आज्ञा जशाच्या तशा दर्शनी गणितक्षेत्रात वापरता येऊ शकतात. दर्शनी
+गणितक्षेत्र हे पृष्ठाच्या मध्यभागी (आडव्या) मजकूर छापते. हे क्षेत्र विशेषतः दीर्घ समीकरणांसाठी
+वापरले जाते. ह्या क्षेत्रात परिच्छेद पूर्ण करण्याची परवानगी नाही, त्यामुळे ह्यात रिकाम्या ओळी
+ठेवता येत नाहीत.
 
-The paragraph should always be started _before_ the display so do not
-leave a blank line before the display math environment. If you need
-several lines of mathematics, do not use consecutive display math
-environments (this produces inconsistent spacing); use one of the
-multi-line display environments such as `align` from the `amsmath`
-package described later.
+दर्शनी गणिताच्या आधी परिच्छेदाची सुरुवात होणे आवश्यक असते, त्यामुळे ह्या क्षेत्राच्या आधीदेखील
+मोकळी ओळ असणे उचित नाही. जर अनेक ओळींमधील गणिती लेखन करायचे असेल, तर दर्शनी गणितक्षेत्र न
+वापरता `amsmath` आज्ञासंचातील `align`सारखी क्षेत्रे वापरावीत. त्यामुळे मोकळ्या जागेचे नियंत्रण
+योग्य रीतिने केले जाते. ह्या आज्ञासंचाची चर्चा आपण लवकरच करणार आहोत.
 
-It's particularly useful for integrations, for example:
+संकलन लिहिण्यासाठी ह्या क्षेत्राचा खूप उपयोग आहे. उदा.
 
 ```latex
 \documentclass{article}
@@ -133,14 +132,14 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-Notice here how sub-/superscript notation is used to set the limits on the
-integration.
+इथे संकलनावर मर्यादा घालण्यासाठी अधिस्थ व अवस्थ मजकूर कसा लिहिला गेला आहे ह्याची विशेष नोंद
+घ्या.
 
-We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`, which we need so it does not look like a product.
+येथे `\,` ह्या आज्ञेचा वापर करून `dx`पूर्वी आपण एक लहानशी मोकळी जागा सोडली आहे, अन्यथा तो
+गुणाकारातला घटक वाटतो.
 
-You often want a numbered equation, which is created using the `equation`
-environment. Let's try the same example again:
+अनेकदा अनुक्रमित समीकरणे लिहिण्याची गरज पडते, त्याकरिता `equation` हे क्षेत्र लाटेक्-मध्ये
+उपलब्ध आहे. त्याच उदाहरणासह हे क्षेत्र वापरून पाहूया.
 
 ```latex
 \documentclass{article}
@@ -153,19 +152,17 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-The equation number is incremented automatically and may be a simple
-number as in this example or may be prefixed by section number, so
-(2.5) for the 5th equation in section 2. The details of the formatting
-are set up by the document class and not described here.
+समीकरणाचा क्रमांक आपोआप वाढवत नेला जातो. तो साधा क्रमां असू शकतो, अथवा विभागक्रमांकासोबत
+येणारा क्रमांक असू शकतो. उदा. दुसऱ्या विभागातल्या पाचव्या समीकरणासाठी (२.५) हा आकडा येऊ
+शकतो, परंतु हे फरक लाटेक्-वर्गानुसार निश्चित होतात, त्यामुळे त्यांची माहिती इथे देण्यात येत नाही
+आहे.
 
+## `amsmath` आज्ञासंच
 
-## The `amsmath` package
-
-Mathematical notation is very rich, and this means that the tools built
-into the LaTeX kernel can't cover everything. The `amsmath` package
-extends the core support to cover a lot more ideas.
-The [`amsmath` User Guide](http://texdoc.net/pkg/amsmath)
-contains many more examples than we can show in this lesson.
+गणिती लेखनपद्धती ही अत्यंत समृद्ध आहे. लाटेक्-मध्येे मूलतः उपलब्ध असलेल्या आज्ञांमध्ये ती सर्व पद्धती
+येईलच असे नाही. `amsmath` हा आज्ञासंच मूळ लाटेक्-च्या गणितक्षेत्रास विस्तारित करतो. ह्या
+आज्ञासंचाची [हस्तपुस्तिका](http://texdoc.net/pkg/amsmath) त्याच्या वापराची अनेक उदाहरणे
+दाखवते जी सर्व येथे दाखवणे शक्य नाही.
 
 ```latex
 \documentclass{article}
@@ -181,17 +178,15 @@ Solve the following recurrence for $ n,k\geq 0 $:
 \end{document}
 ```
 
-The `align*` environment makes the equations line up on the ampersands, the `&`
-symbols, just like a table. Notice how we've used `\quad` to insert a bit of
-space, and `\text` to put some normal text inside math mode. We've also used
-another math mode command, `\binom`, for a binomial.
+`align*` ह्या क्षेत्रामुळे `&` चिन्हाच्या भवती समीकरणांची रचना केली जाते. `\quad` ह्या आज्ञेसह
+सोडण्यात आलेल्या मोकळ्या जागेकडे विशेष लक्ष द्या. `\text` ह्या आज्ञेच्या कार्यघटकात सामान्य
+मजकूर लिहिला आहे, तसेच `\binom` ह्या आज्ञेसह द्विपदाची मांडणी केली आहे.
 
-Notice that here we used `align*`, and the equation didn't come out numbered.
-Most math environments number the equations by default, and the starred variant
-(with a `*`) disables numbering.
+`align*` ह्या क्षेत्राचा वापर केल्यामुळे समीकरणास आकडे आले नाहीत ह्याची नोंद घ्या. समीकरणांची
+क्षेत्रे सहसा अनुक्रमितच असतात, परंतु त्यांचे नाव एका तारकेसकट (*) लिहिल्यास अनुक्रमांकन बंद केले
+जाते.
 
-The package also has several other convenient environments, for
-example for matrices.
+ह्या आज्ञासंचात इतरही अनेक क्षेत्रे आहेत. उदा. सारण्या.
 
 ```latex
 \documentclass{article}
@@ -218,21 +213,20 @@ d & e & f
 \end{document}
 ```
 
-## Fonts in math mode
+## गणितक्षेत्रातील टंक
 
-Unlike normal text, font changes in math mode often convey very specific meaning.
-They are therefore often written explicitly. There are a set of commands you need
-here:
+सामान्य टंकांप्रमाणे गणितक्षेत्राचा टंक तोच राहत नाही. त्यामुळे विशिष्ट संकेताचे पालन केले
+जाते. ह्या टंकांच्या आज्ञा पुढीलप्रमाणे आहेत.
 
-- `\mathrm`: roman (upright)
-- `\mathit`: italic spaced as 'text'
-- `\mathbf`: boldface
-- `\mathsf`: sans serif
-- `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
+- `\mathrm`: रोमी (upright)
+- `\mathit`: इटालीय (मोकळ्या जागांची मापे सामान्य मजकुराप्रमाणे)
+- `\mathbf`: ठळक ठसा
+- `\mathsf`: पारंपरिक वळण
+- `\mathtt`: टाइपरायटर शैली
+- `\mathbb`: द्विस्तरीय ठळक ठसा (`amsfonts` आज्ञासंचातर्फे पुरवला जातो)
 
-Each of these takes Latin letters as an argument, so for example we might
-write a matrix as
+ह्यांपैकी प्रत्येक आज्ञा लॅटिन मजकूर कार्यघटक म्हणून स्वीकारते. त्यामुळे सारण्या आपण पुढीलप्रमाणे लिहू
+शकतो.
 
 ```latex
 \documentclass{article}
@@ -242,14 +236,14 @@ The matrix $\mathbf{M}$.
 \end{document}
 ```
 
-Note that the default math italic separates letters so that they may
-be used to denote a product of variables. Use `\mathit` to make a word italic.
+गणितक्षेत्रातील इटालीय अक्षरे हेतुतः सुटी लिहिली जातात. त्यांना एकमेकांचा गुणाकार म्हणून दाखवता
+यावे हा हेतू. जोडून लिहिली जाणारी विशेष अक्षरे गणितक्षेत्रातील इटालीय छाप्यात दिसत
+नाहीत. गणितक्षेत्रात तशी अक्षरे हवीच असतील, तर `\mathit` ही आज्ञा वापरावी.
 
-The `\math..` font commands use fonts specified for math
-use. Sometimes you need to embed a word that is part of the outer
-sentence structure and needs the current text font, for that you can
-use `\text{...}` (which is provided by the `amsmath` package) or
-specific font styles such as `\textrm{..}`.
+`\math..` ह्या उपसर्गाने सुरू होणाऱ्या टंकाच्या आज्ञा गणितक्षेत्रातील टंकांसाठीच वापरता
+येतात. काही वेळा मजकुरासाठी गणितक्षेत्राबाहेर चालू असलेला टंक वापरण्याची आवश्यकता असते. अशा
+वेळी `\text{...}` ह्या `amsmath` आज्ञासंचातील आज्ञेचा वापर करावा अथवा विशिष्ट आज्ञांचा
+वापर करावा. उदा. `\textrm{..}`.
 
 ```latex
 \documentclass{article}
@@ -264,24 +258,22 @@ $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 \end{document}
 ```
 
+जर तुम्हाला अन्य चिन्हे ठळक ठशात हवी असतील, तर ह्या प्रकणाच्या [अधिक माहिती](more-10)त पाहा.
 
-If you need to make other
-symbols bold, [see the extra details](more-10).
+## स्वाध्याय
 
-## Exercises
+गणितक्षेत्रातील पायाभूत आज्ञांचा वापर करून पाहा. काही उदाहरणांना ओळीअंतर्गत व दर्शनी गणितात
+आलटून पालटून वापरून पाहा. त्यांमुळे होणारा परिणाम नीट पाहा.
 
-Try out some basic math mode work: take the examples and switch between
-inline and display math modes. Can you see what effect this has.
+ग्रीक चिन्हांचा वापर करून पाहा. नावांवरून आज्ञांचा अंदाज लावून पाहा.
 
-Try adding other Greek letters, both lower- and uppercase. You should be
-able to guess the names.
+गणितक्षेत्रातील टंकनिवडीच्या आज्ञा वापरून पाहा. एकात एक अशा प्रकारे त्या वापरल्या तर काय होते?
 
-Experiment with the font changing commands: what happens when you try to
-nest them?
+दर्शनी गणित हे कायमच मध्यस्थानी असते. `[fleqn]` हे प्राचल लाटेक्-वर्गास देऊन पाहा. तसेच
+समीकरणांचे क्रमांक सामान्यतः उजवीकडे असतात. `[leqno]` हे प्राचल लाटेक्-वर्गास देऊन पाहा.
 
-Displayed math is centered by default; try adding the document class
-option `[fleqn]` (flush
-left equation) option to some of the above examples to see a different
-layout. Similarly equation numbers are usually on the
-right. Experiment with adding the `[leqno]` (left equation numbers)
-document class option.
+---
+
+[^1]: https://shabdakosh.marathi.gov.in/node/70688
+[^2]: https://shabdakosh.marathi.gov.in/node/70644
+[^3]: https://shabdakosh.marathi.gov.in/node/69232
