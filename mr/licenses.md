@@ -1,29 +1,29 @@
 ---
 layout: "page"
 lang: "mr"
-title: Licenses
+title: परवाने
 permalink: /mr/licenses
 ---
 
 # Licenses
 
-The [LearnLateX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+[LearnLaTeX हे संकेतस्थळ]({{ "/" | absolute_url }}) दोन मुक्त परवाने वापरते:
 
-## Content
+## सामग्री
 
-The content of this website is available under the
-[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license. That means you can use the material as long as you say where it came
-from and let others do the same.
+ह्या संकेतस्थळाची सर्व सामग्री [क्रिएटिव्ह कॉमन्स श्रेयनिर्देशन समवितरण आंतरराष्ट्रीय
+४.०](https://creativecommons.org/licenses/by-sa/4.0/) 
+परवान्यांतर्गत उपलब्ध करून देण्यात येत आहे. अर्थात ह्या सामग्रीचा वापर कोणीही कुठेही करू शकते,
+परंतु ह्या सामग्रीची निर्मिती ज्यांनी केली आहे त्यांचा श्रेयनिर्देश करणे आवश्यक आहे व त्याचे
+वितरणदेखील अशाच प्रकारे मुक्त ठेवणे आवश्यक आहे.
 
-See [LICENSE](../LICENSE) for details.
+अधिक माहितीसाठी [परवाना](../LICENSE) पाहा.
 
-## Code Examples
+## आज्ञावली
 
-The code examples are licensed as
-[Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
-(No Rights Reserved). This is a legal text that is (essentially) the same as 
-Public Domain, at least in countries where that concept exists. The key point 
-is that _you can use the examples without any issues_. You _do not_ need to 
-reference them, you _do not_ need to share them when you modify them: you can 
-just use them.
+लाटेक् आज्ञावलीची उदाहरणे [क्रिएटिव्ह कॉमन्स
+शून्य](https://creativecommons.org/share-your-work/public-domain/cc0/) (कोणतेही
+अधिकार राखून ठेवलेले नाहीत.) ह्या परवान्यासह मुक्त आहेत. हा कायदेशीर मसुदा सार्वत्रिक सामग्री
+(पब्लिक डोमेन) ह्या प्रकारच्या सामग्रीचेच वर्णन करतो. त्याचा मुख्य अर्थ असा की ह्याचा वापर
+कोणत्याही अटींशिवाय कोणीही करू शकते. त्यांचा श्रेयनिर्देश करण्याची सक्ती नाही, तसेच त्यांचे
+वितरण मुक्त ठेवण्याचीही अट नाही.
