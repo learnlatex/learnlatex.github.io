@@ -6,34 +6,34 @@ description: "This lesson gives details on how better name and store graphics fi
 toc-anchor-text: "More on: Including graphics and making things 'float'"
 ---
 
-## Naming graphics files
+## दृश्यकांना नावे देणे
 
-LaTeX works on many computer platforms so
-file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces.
-For example, if you want to organize your files by keeping all
-graphics in a subdirectory, then something like
-`\includegraphics[width=30pt]{pix/mom.png}`
-is portable and future-proof.
+लाटेक्-सह वापरण्याच्या धारिकांची नावे विचारपूर्वक ठेवलेली बरी. सर्वात महत्त्वाचा सल्ला असा की
+धारिकांच्या नावांमध्ये मोकळ्या जागा असू नयेत. उदा. जर सर्व दृश्यके एका उपपुडक्यात (सबफोल्डरमध्ये)
+साठवून ठेवली असतील, तर `\includegraphics[width=30pt]{pix/mom.png}` ही आज्ञा वापरता
+येऊ शकते, जिच्यात `pix` ह्या उपपुडक्याचा उल्लेख आहे व त्यातल्या `mom.png` ह्या दृश्यकाचा उल्लेख
+आहे.
 
-Spaces in file names are traditionally somewhat problematic, but are now
-generally supported. However, if you have spaces in the name, and you have
-issues, you may wish to try removing the spaces as the first step.
+धारिकांच्या नावात मोकळ्या जागा सोडणे हे थोडे अडचणीचे मानले जाते, परंतु आजकाल त्याकरिताही
+सोयी करण्यात येत आहेत. जर मोकळ्या जागा असलेल्या धारिकेसोबत अडचणी उद्भवत असल्या, तर त्यांतील
+मोकळ्या जागा काढून धारिका चालवण्याचा प्रयत्न करा.
 
-Accented character support is somewhat variable; there are issues with some
-systems, particularly on Windows. If you find issues with accented characters
-in file names, try using only ASCII characters for a test.
+स्वराघाताची चिन्हे नावात वापरलेल्या धारिकांबाबत लाटेक्-चे धोरण किंचित अस्थिर आहे. काही
+प्रणाल्यांमध्ये अशा धारिका चालण्यात अडचण येते. विशेषतः विंडोज़् प्रणालीवर. अशा नावांच्या
+धारिकांसह काही अडचणी उद्भवल्या, तर ASCII अक्षरे वापरून धारिकेचे नाव देण्याचा प्रयत्न करून
+पाहा.
 
-## Storing graphics in a subdirectory
+## दृश्यके उपपुडक्यांत साठवणे
 
-A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate parts of the path _even on Windows_.
+दृश्यकांचा समावेश आज्ञावल्यांमध्ये करते वेळी एक प्रचलित पद्धत अशी आहे की बीजधारिका ज्या पुडक्यात
+आहे, त्याच्या उपपुडक्यात सर्व दृश्यके साठवणे. त्यामुळे त्यांचा वापर पत्ता देऊन करता येतो. एक
+महत्त्वाची सूचना अशी की पत्त्यातील घटकांचे विभाजन करण्यासाठी `/` हे चिन्ह वापरायचे
+आहे. **विंडोज़् प्रणाली वापरत असाल तरीही!**
 
-If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs a braced entry
-for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have:
+अशा प्रकारे उपपुडक्यात जर तुम्ही अनेक दृश्यके साठवून ठेवत असाल, तर `\graphicspath` ह्या आज्ञेसह
+सर्व दृश्यकांचा पत्ता निश्चित करून देता येऊ शकतो. ह्या आज्ञेस प्रत्येक उपपुडक्याचा वेगळा कार्यघटक
+महिरपी कंसांमध्ये देता येऊ शकतो. उदा. `figs` व `pics` नावाची दोन उपपडकी पुढील प्रकारे
+समाविष्ट करून घेता येतील.
 
 <!-- {% raw %} -->
 ```latex
@@ -41,38 +41,34 @@ subdirectories, we would have:
 ```
 <!-- {% endraw %} -->
 
-Notice in particular the trailing `/` in these.
+पुडक्यांच्या नावाच्या शेवटी लिहिले जाणारे `/` हे चिन्ह विशेषत्वे पाहा.
 
-## Producing graphics
+## दृश्यके घडवणे
 
-As discussed, LaTeX easily uses graphics from most sources, including plots from
-scientific software. When you do that, you probably want to save as a PDF if you
-can, as this is a scalable format. If you do need to create a bitmap, aim for
-high resolution. You can make mouse-created graphics that include LaTeX snippets
-with [Inkscape](https://inkscape.org/). An alternative that in addition extends
-those drawing techniques to three dimensions is
-[Asymptote](https://www.ctan.org/pkg/asymptote). These two produce their output
-as files that you include in your document.
+आपण पाहिल्याप्रमाणे लाटेक् विविध स्वरूपातील दृश्यके सहज फलितात समाविष्ट करून घेऊ शकते. जेव्हा
+दृश्यकांच्या निर्मितीसाठी लाटेकेतर आज्ञावलीचा वापर केला जाईल तेव्हा शक्यतो पीडीएफ् हा पर्याय
+निवडावा कारण त्यात आकार गुणोत्तराने कमी जास्त करणे सर्वात अधिक क्षमतेने शक्य आहे. बिटमॅप
+स्वरूपातील दृश्यके अनिवार्य नसतील, तर शक्यतो उच्च गुणवत्तेची दृश्यकेच वापरावीत. संगणकावर तयार
+केलेल्या दृश्यकांमध्ये लाटेक् आज्ञावल्यांचा समावेश [इंकस्केप](https://inkscape.org/)सारख्या
+साधनांसह शक्य आहे. त्रिमितीय आकृत्यांकरिता
+[एसिम्टोट](https://www.ctan.org/pkg/asymptote) ही आज्ञावली वापरता येऊ शकते. ह्या
+दोहोंतर्फे फलित धारिका तयार होतात ज्यांचा समावेश लाटेक्-मध्ये करावा लागतो.
 
-You can also create graphics such as drawings that are especially suited to
-LaTeX, with very high precision as well as equations and labels that match your
-document. You can draw graphics directly inside your document, which is
-convenient although at the cost of more complex documents with larger
-requirements, by using [Ti*k*Z](https://ctan.org/pkg/pgf). An alternative is
-[PSTricks](https://ctan.org/pkg/pstricks-base).
+लाटेक् आज्ञावलीचा भाग असतील अशी दृश्यके लाटेक्-मध्ये घडवता येतात. त्याकरिता
+[Ti*k*Z](https://ctan.org/pkg/pgf) अथवा
+[PSTricks](https://ctan.org/pkg/pstricks-base) हे दोन आज्ञासंच उपलब्ध आहेत.
 
-## Placing floats
+## तरंगती दृश्यके
 
-LaTeX's float placement is complex.
-The most common request is to have the figure placed
-in the output exactly where it lies in the input.
-The `float` package will do that.
+लाटेक्-मध्ये तरंगत्या दृश्यकांचा समावेश करणे थोडे किचकट आहे. बहुतेक वेळा वापरकर्त्यांची अशी इच्छा
+असते की बीजधारिकेत जिथे एखादी आकृती अथवा एखादे दृश्यक समाविष्ट करण्यात आले आहे, तिथेच ते
+फलितातदेखील दिसावे. `float` आज्ञासंचासह हे शक्य आहे.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}  % नमूना मजकूर
 \usepackage{float}
 
 \begin{document}
@@ -86,27 +82,27 @@ The `float` package will do that.
 \end{document}
 ```
 
-Note the `H` option, which puts the figure 'absolutely Here'.
-However it is often not recommended to use `H`, because it may
-create large portions of white space in your document.
+`H` ह्या प्राचलामुळे आकृती जिथे आहे तिथेच छापली जाते ह्याची नोंद घ्या, परंतु हे प्राचल वापरणे
+टाळावे असे आम्ही सुचवू, कारण ह्यामुळे तुमच्या दस्तऐवजात मोकळा पांढरा भाग निर्माण होण्याची
+शक्यता असते.
 
-## Other types of float
+## तरंगत्या दृश्यकांचे इतर प्रकार
 
-We will [see soon](lesson-08) that we can put tables in floats; they will go
-into a `table` environment. However, we don't _have_ to put graphics in the
-`figure` environment or tables in the `table` environment; this is just
-convention.
+[लवकरच](lesson-08) आपण हे पाहू की कोष्टकांचा समावेश तरंगत्या दृश्यकांमध्ये करता येऊ
+शकतो. `table` ह्या क्षेत्रात त्यांची आज्ञावली समाविष्ट करावी लागते, परंतु इतर दृश्यकांसह हे
+करावेच लागेल असे नाही. त्यांसाठी `figure` हे क्षेत्र लाटेक्-मध्ये उपलब्ध आहे, परंतु ते वापरले गेलेच
+पाहिजे अशी सक्ती नाही. ती केवळ एक रूढी आहे.
 
-You might want to have other types of floating environment; each type is
-inserted independently. You can do that using the
-[`trivfloat`](https://ctan.org/pkg/trivfloat) package. This provides a single
-command, `\trivfloat`, to make new types of float.
+आणखी निराळ्या प्रकारची तरंगती दृश्यके प्रसंगी आवश्यक असू शकतात. अशा दृश्यकांचा प्रत्येक प्रकार
+स्वतंत्रपणे वापरला जातो. [`trivfloat`](https://ctan.org/pkg/trivfloat) आज्ञासंचासह हे
+शक्य आहे. ह्या आज्ञासंचातर्फे केवळ `\trivfloat` ही एकच आज्ञा पुरवली जाते जिच्यासह नवीन तरंगते
+दृश्यक तयार करता येते.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}  % नमूना मजकूर
 \usepackage{trivfloat}
 \trivfloat{image}
 
