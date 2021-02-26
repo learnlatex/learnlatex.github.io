@@ -1,18 +1,15 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Formatting: fonts and spacing"
-description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "More on: Formatting: fonts and spacing"
+lang: "mr"
+title: "अधिक माहिती: अक्षरजुळणी: टंकांचे ठसे व ओळींमधील जागा"
+description: "ह्या प्रकरणात एखाद्या परिच्छेदासाठी आरंभीची मोकळी जागा काढून टाकण्याची सोय आपण पाहू."
+toc-anchor-text: "अधिक माहिती: अक्षरजुळणी: टंकांचे ठसे व ओळींमधील जागा"
 ---
 
-## Suppressing the indent for one paragraph
+## एखाद्या परिच्छेदाकरिता आरंभीची मोकळी जागा काढून टाकणे
 
-
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+`\noindent` ह्या आज्ञेचा वापर करून परिच्छेदारंभीची मोकळी जागा काढून टाकता येते. ह्याचा वापर
+फार कमी केला जावा असे आम्ही सुचवू. लाटेक्-ला हे आपोआप हाताळू देणे कधीही अधिक इष्ट होय.
 
 ```latex
 \documentclass{article}
