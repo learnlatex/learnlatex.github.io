@@ -1,35 +1,33 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Working with LaTeX"
-description: "This lesson gives more detail on what LaTeX is and the engines it runs on."
-toc-anchor-text: "More on: Working with LaTeX"
+lang: "mr"
+title: "अधिक माहिती: लाटेक्-सह काम कसे करावे?"
+description: "ह्या प्रकरणात आपण लाटेक् काय आहे व त्याचे चालक कसे काम करतात ह्याविषयी अधिक माहिती घेणार आहोत."
+toc-anchor-text: "अधिक माहिती: लाटेक्-सह काम कसे करावे"
 ---
 
-For most of our examples, we don't use a program called `latex` but instead
-one called `pdflatex`. This is one of a family of related programs, all
-of which are 'descendants' of `latex`. We have chosen `pdflatex` because
-it is perhaps the most widely-used system and directly produces PDF files.
+ह्या अभ्यासक्रमातील बहुतांश उदाहरणांकरिता आपण लाटेक् ही आज्ञावली न वापरता पीडीएफ्-लाटेक् ही
+आज्ञावली वापरणार आहोत. लाटेक् आज्ञावल्यांचे एक कुटुंब आहे. त्यातील सर्व आज्ञा लाटेक् ह्या मूळ
+आज्ञावलीवर आधारित आहेत. ह्या संकेतस्थळावर आम्ही पीडीएफ्-लाटेक् हा चालक निवडला आहे, कारण
+सामान्यतः इंग्रजी मजकुराची अक्षरजुळणी करताना हा सर्वाधिक वापरला जाणारा चालक आहे.
 
-## Formats and engines
+## स्वरूपे व चालक
 
-As described [earlier](more-01), LaTeX is built on a system called TeX. We
-call LaTeX a 'format': a collection of macros (instructions and commands) that
-TeX understands. When you run `pdflatex`, you are _actually_ starting a
-program called 'pdfTeX' with a pre-loaded 'LaTeX format'. We normally call
-pdfTeX an _engine_: a program that understands TeX instructions.
+[ह्यापूर्वी](more-01) पाहिल्याप्रमाणे, लाटेक् ही आज्ञावली टेक् ह्या मूळ आज्ञावलीवर आधारलेली
+आहे. लाटेक् ही आज्ञावली टेक्-ला कळू शकेल अशा काही सुलभीकृत आज्ञांचा संच आहे. जेव्हा पीडीएफ्-लाटेक्
+ही आज्ञावली चालवली जाते, तेव्हा वास्तविक पीडीएफ्-टेक् ही आज्ञावली लाटेक्-विशिष्ट आज्ञांसकट
+चालवली जात असते. पीडीएफ्-टेक् हा एक चालक आहे, ज्यास टेक्-च्या आज्ञांचे अर्थ कळतात.
 
-There are three engines in common use today:
+आज तीन लाटेक्-चालक प्रचलित आहेत.
 
-- pdfTeX
-- XeTeX
-- LuaTeX
+- पीडीएफ्-टेक्
+- झीटेक्
+- लुआटेक्
 
-We will cover [XeTeX and LuaTeX later](lesson-14): the main thing we need to
-know now is that they are capable of loading operating system fonts, whereas
-pdfTeX can't do that.
+ह्या दोन चालकांचे मुख्य वैशिष्ट्य असे की संगणकावर बसवलेले टंक वापरण्याची क्षमता ह्यांमध्ये
+आहे. पीडीएफ्-टेक् हा चालक मात्र हे करू शकत नाही. लुआटेक् व झीटेक् ह्यांविषयीची सविस्तर माहिती
+आपण [पुढे](lesson-14) पाहणारच आहोत.
 
-If you are in Japan, or writing lots of Japanese, you might also come across
-pTeX and upTeX. These are specialised engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX, in particular, is still
-the most popular system for Japanese.
+तुम्हाला जपानी लिहिण्याची गरज पडत असेल, तुम्ही पीटेक् व अपटेक् ह्या दोन चालकांचा वापरही करू
+शकता. हे चालक उभ्या मांडणीसाठी विशेषतः तयार केले गेले आहेत. लुआटेक् ह्या चालकासदेखील बहुतांश
+गोष्टी हाताळता येतात, परंतु सध्या जपानीकरिता अपटेक् हाच सर्वात प्रसिद्ध चालक आहे.
