@@ -1,44 +1,37 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Citations and references"
-description: "This lesson gives details on non-English bibliographies, how to make references into hyperlinks, and highlights the main differences between BibTeX styles."
+lang: "mr"
+title: "अधिक माहिती: संदर्भ"
+description: "ह्या प्रकरणात इंग्रजीतर भाषांत संदर्भसूची कशी छापावी, संदर्भांना दुव्यांमध्ये कसे परिवर्तित करावे व बिबटेक् बिबलाटेक्-मधील मुख्य फरक आपण पाहूया."
 toc-anchor-text: "More on: Citations and references"
 ---
 
-## Dealing with non-English sorting
+## इंग्रजीतर भाषांतील संदर्भ
 
-The BibTeX program was written primarily to deal with references in English. It
-is very limited in handling accented characters, and even more limited with
-non-Latin letters. In contrast, the Biber program was written from the start to
-handle a mix of scripts properly.
+बिबटेक् आज्ञावली मुळात इंग्रजी संदर्भांकरिताच काम करू शकते. स्वराघाताच्या चिन्हांकरिता असणाऱ्या
+सोयीदेखील त्यात मर्यादित आहेत. लॅटिनेतर लिप्यांकरिता तर त्यातील सोयी आणखी कमी आहेत. ह्याउलट
+बिबर व बिबलाटेक् युनिकोडात लिहिलेले संदर्भ चालवण्यासाठीच बनवले गेले आहेत.
 
-This means that if you are sorting your bibliography, and you need to sort in
-anything other than English order, you really should be using `biblatex` and
-Biber, rather than `natbib` and BibTeX.
+ह्याचा अर्थ तुम्हाला इंग्रजीखेरीज इतर कोणत्याही लिपीसाठी संदर्भ वापरायचे असतील, तर बिबलाटेक्
+वापरणे भाग आहे.
 
-## Hyperlinks
+## दुवे
 
-If you load the `hyperref` package (as covered [earlier](more-09)), it will
-automatically make some content in your bibliography into links. This is
-particularly useful for URLs and DOIs.
+जर तुम्ही `hyperref` हा आज्ञासंच वापरला असेल ([पूर्वी पाहिल्याप्रमाणे](more-09)), तर तुमच्या
+फलितातील संदर्भ आपोआप दुव्यांमध्ये परिवर्तित होतील. महाजालीय दुवे व DOI ह्यांकरिता ही सुविधा
+उपयोगी ठरते.
 
 ## Differences in best practice for BibTeX input between styles
 
-While the overall syntax of the BibTeX files is the same whether you use the
-BibTeX workflow or `biblatex`, the set of fields that is supported (used by the
-style) and their exact meaning may not only vary between the BibTeX workflow
-and `biblatex`, but also between different BibTeX styles. A large 'core set' of
-entry types and fields is the same for almost all styles, but there are
-differences in some fields.
+बिबलाटेक् व बिबटेक् ह्यांच्या ओळीअंतर्गत संदर्भांसाठीच्या आज्ञा बहुतांश वेळा सारख्याच असल्या, तरी
+संदर्भसामग्रीतील उपनोंदींचे प्रकार बिबटेक् व बिबलाटेक्-मध्ये बरेच भिन्न आहेत. बहुतांश नोंदींमध्ये ह्यात
+फारसा फरक नाही, पण तरी काही बारकावे वेगळे असू शकतात.
 
-A common example is the URL. Some older BibTeX `.bst` styles (most notably
-the 'standard BibTeX styles', e.g. `plain.bst`, `unsrt.bst`, ...) predate
-the invention of the URL and have no dedicated field for the URL of an online
-resource. Many newer styles _do_ have a dedicated `url` field. The workaround
-to show the URL in the older styles is usually to use the `howpublished` field,
-but with the newer styles it is of course preferable to use the dedicated
-`url` field.
+ह्यांचे एक उदाहरण म्हणजे URL ही उपनोंद. काही जुन्या बिबटेक् `.bst` धारिका (मुख्यत्वे 'प्रमाण
+बिबटेक् धारिका', उदा. `plain.bst`, `unsrt.bst`, ...) महाजालीय दुव्यांच्या शोधापूर्वीच्या
+आहेत. त्यांमध्ये अशी कोणतीही उपनोंद आढळत नाही, परंतु अनेक नव्या शैलींमध्ये मात्र ही उपनोंद
+आढळते. जुन्या धारिकांसकट महाजालीय दुवे देण्यासाठीचा सर्वोत्तम तोडगा म्हणजे `howpublished` ही
+उपनोंद वापरणे, परंतु नव्या धारिकांसहित मात्र अर्थात `url` ही उपनोंद वापरणे श्रेयस्कर.
 
-In order to be able to make use of the full potential of your used style you
-will have to find out the set of fields it supports and their semantic.
+जर तुम्ही लिहीत असलेल्या नोंदीचा सर्व क्षमतेसह वापर करायचा असेल, तर त्यातील उपनोंदी व त्यांचे
+अर्थ समजून घेणे खूप उपयुक्त ठरेल.
