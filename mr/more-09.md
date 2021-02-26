@@ -1,16 +1,15 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Cross-referencing"
-description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
-toc-anchor-text: "More on: Cross-referencing"
+lang: "mr"
+title: "अधिक माहिती: अंतर्गत संदर्भ"
+description: "ह्या प्रकरणात hyperref आज्ञासंच वापरून दस्तऐवजात अंतर्गत दुवे कसे तयार करावेत हे पाहू."
+toc-anchor-text: "अधिक माहिती: अंतर्गत संदर्भ"
 ---
 
-## Making cross-references into links
+## अंतर्गत संदर्भांचे दुवे बनवणे
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+दस्तऐवजातील अंतर्गत संदर्भांना दुव्यांमध्ये रूपांतरित करण्याकरिता `hyperref` आज्ञासंच वापरता येऊ
+शकतो. बहुतेक वेळा हा आज्ञासंच शेवटी वापरणे श्रेयस्कर आहे.
 
 ```latex
 \documentclass{article}
@@ -28,5 +27,5 @@ More text here.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+ह्या उदाहरणात मजकुराचा रंग व दुव्याचा रंग समान ठेवला आहे. `hidelinks` हे प्राचल काढून कारण
+जाणून घ्या! 

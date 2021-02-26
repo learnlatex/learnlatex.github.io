@@ -1,11 +1,10 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Tables"
-description: "This lesson shows more ways to customize a table by styling a column, changing spacing and rules, and further packages that provide different extensions to tables."
-toc-anchor-text: "More on: Tables"
+lang: "mr"
+title: "अधिक माहिती: कोष्टके"
+description: "ह्या प्रकरणात कोष्टकांचे रूप अधिकाधिक इष्ट कसे करावे ह्यासाठीचे निरनिराळे मार्ग सांगितले आहेत. त्यांमध्ये स्तंभविषयक सोयी, मोकळ्या जागेचे नियंत्रण व काही आज्ञासंचांची ओळख हे समाविष्ट आहे."
+toc-anchor-text: "अधिक माहिती: कोष्टके"
 ---
-
 
 ## The other preamble contents
 
