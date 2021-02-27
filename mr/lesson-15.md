@@ -91,21 +91,20 @@ l.8 My command is used here \mycommand
   सोय केली असते, परंतु आज्ञापटलावरून टेक् चालवत असाल, तर मात्र टेक्-ला विविध आज्ञा सांगून
   प्रक्रियेची पुढील दिशा ठरवता येते.
 
-Note here that TeX does not see the error at the point that
-the definition is made; and in fact if `\mycommand` is defined but not
-used, no error would be raised. So although the error is reported on
-line 7, the "real" error is in the definition on line 3, so it is
-important to see the whole error message.
+ह्याकडे विशेष लक्ष द्या की नवीन आज्ञेची व्याख्या करताना जर चूक घडली, तर टेक्-ला ती दिसत
+नाही. अशी चुकीची व्याख्या जर वापरली गेली, तरच ही चूक टेक-ला कळते. वास्तविक जर ही चुकीची
+आज्ञा दस्तऐवजात वापरलीच गेली नाही, तर टेक्-ची प्रक्रिया कोणत्याही अडचणींशिवाय पार
+पडते. त्यामुळे जरी अडचण ओळक्रमांक ७वर दाखवली जात असली, तरी आज्ञावलीतील चूक ओळक्रमांक ३वर
+आहे.
 
-Beware that some editors show one line "summaries" of the error log.
-This can be particularly misleading if shown as
+काही संपादक एका ओळीत अडचणींचा गोषवारा देण्याचा प्रयत्न करतात. उदा.
 
 `line 7: undefined command: ...\mycommand`
 
-as it makes it appear that `\mycommand` is not defined.
+हा गोषवारा दिशाभूलकारक ठरू शकतो, कारण `\mycommand` ह्या आज्ञेची व्याख्या खरे तर झाली
+आहे. अडचण त्या व्याख्येत आहे व हे कळण्यासाठी अडचणीतील संपूर्ण निरोप वाचणे आवश्यक ठरते.
 
-
-### Mismatched braces
+### कंसांची चुकीची जोडी
 
 
 ```latex
@@ -119,18 +118,18 @@ as it makes it appear that `\mycommand` is not defined.
 \end{document}
 ```
 
-Here the error is a mismatched `}` used to end the optional
-argument. The closing brace causes LaTeX's option parsing
-to fail and you get an internal and not that helpful error: 
+इथे चूक एका चौकटी कंसाला महिरपी कंसाने संपवणे ही आहे. एक अधिकचा महिरपी कंस लाटेक्-चालन
+अयशस्वी ठरवतो. दुर्दैवाने ह्यामुळे दाखवली जाणारी अडचण पुरेशी स्पष्ट नाही. त्याने नेमकी चूक कळत
+नाही.
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.
 ```
 {: .noedit :}
 
-While the error description is unhelpful; the following two
-lines do accurately display the location of the error by the use of
-the linebreak showing how far TeX had read:
+अडचणीतील निरोप जरी पुरेसा स्पष्ट नसला, तरी ओळक्रमांक व नेमकी चुकीची जागा टेक् पुढील प्रकारे
+दाखवते व ते मात्र कारण समजून घेण्यास निश्चितच उपयुक्त ठरते. टेक्-ने कुठवर प्रक्रिया केली आहे व ते
+कुठे थांबले हे आपल्याला अशा प्रकारच्या अडचणींमुळे अचूक कळते.
 
 ```
 l.4 \usepackage[leqno}
@@ -139,7 +138,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-### Missing files
+### गहाळ धारिका
 
 ```latex
 \documentclass{article}
@@ -152,19 +151,19 @@ l.4 \usepackage[leqno}
 \end{document}
 ```
 
-This produces the error
+ह्या आज्ञावलीसह पुढील अडचण दाखवली जाते
 
 ```
 ! LaTeX Error: File `amsmathz.sty' not found.
 ```
 {: .noedit :}
 
-Note: the same error may be caused by two different causes; a simple
-typo as here, which may be corrected by fixing the package name, or
-that the file really is missing and needs to be installed on the
-current system.
+ही अडचण दोन कारणांमुळे दाखवली जाऊ शकते.
+- लेखनातली चूक. (इथे `amsmathz` ही चूक. मूळ नाव `amsmath`) ह्या प्रकारची चूक दुरुस्त केल्यास
+  अडचण जाऊ शकते.
+- खरोखरीच एखादा आज्ञासंच संगणकावर बसवलेला नसणे. त्याची धारिका गहाळ असणे.
 
-### Blank lines in display math
+### दर्शनी गणितात मोकळ्या ओळी
 
 ```latex
 \documentclass{article}
@@ -182,21 +181,22 @@ Some text
 \end{document}
 ```
 
-Produces the slightly mysterious error
+ह्यामुळे एक विचित्र अडचण दाखवली जाते.
 
 ```
 ! Missing $ inserted.
 ```
 {: .noedit :}
 
-But the fix is simple, blank lines are not allowed in math
-environments and should be deleted.
+परंतु हिला सोडवणे वास्तविक खूप सोपे आहे. मोकळ्या ओळी गणितक्षेत्रात चालत नाहीत व त्या काढून
+टाकल्या पाहिजेत.
 
-## Exercise
+## स्वाध्याय
 
-Attempt to fix the errors in the supplied examples.
+वरील उदाहरणांतील अडचणी सोडवण्याचा प्रयत्न करा.
 
-Produce small documents with different errors and note the form of the error messages.
+काही चुका असलेली लहानसहान उदाहरणे तयार करा. त्यांना चालवल्यावर टेक् दाखवणाऱ्या अडचणींचे
+स्वरूप नोंदवून घ्या.
 
 <script>
   window.addEventListener('load', function(){
