@@ -1,28 +1,25 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Tables"
-description: "This lesson shows more ways to customize a table by styling a column, changing spacing and rules, and further packages that provide different extensions to tables."
-toc-anchor-text: "More on: Tables"
+lang: "mr"
+title: "अधिक माहिती: कोष्टके"
+description: "ह्या प्रकरणात कोष्टकांचे रूप अधिकाधिक इष्ट कसे करावे ह्यासाठीचे निरनिराळे मार्ग सांगितले आहेत. त्यांमध्ये स्तंभविषयक सोयी, मोकळ्या जागेचे नियंत्रण व काही आज्ञासंचांची ओळख हे समाविष्ट आहे."
+toc-anchor-text: "अधिक माहिती: कोष्टके"
 ---
 
+## tabular क्षेत्राची अतिरिक्त प्राचले
 
-## The other preamble contents
+मुख्य प्रकरणात सर्व माहिती देणे शक्य नसल्यामुळे ह्या प्रकरणात आपण उर्वरित प्राचलांची माहिती
+सोदाहरण पाहूया. हे प्रकरण वाचण्यापूर्वी मुख्य प्रकरणातील कोष्टकाची उजळणी करणे उपयुक्त ठरू
+शकेल. स्थाननिश्चितीची `m`, `b`, `w` व `W` ही प्राचले तिथल्या माहितीवरून बऱ्यापैकी स्पष्ट
+आहेतच. नसल्यास उदाहरणांतील स्थाननिश्चितीची प्राचले बदलून त्यांवर प्रयोग करून हे शिकून घेता येऊ
+शकते. ज्यांना उदाहरणांची आवश्यकता आहे, ती प्राचले म्हणजे `>`, `<`, `@`, `!` व `|`.
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+### स्तंभाची शैली तयार करणे
 
-### Styling a column
-
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
+`>` व `<` ह्यांचा वापर चौकटींच्या पूर्वी व नंतर करावयाच्या अक्षरजुळणीविषयक आज्ञांसाठी उपयुक्त
+ठरतो. संपूर्ण स्तंभाचे रूप बदलणाऱ्या आज्ञांचा वापर ह्यांसह करता येतो. पहिला स्तंभ इटालीय अक्षरांत
+छापण्याकरिता व त्याच्या प्रत्येक नोंदीनंतर द्विबिंदू (:) टाकण्याकरिता पुढील प्रकारे आज्ञावली
+लिहिता येऊ शकते.
 
 <!-- {% raw %} -->
 ```latex
@@ -45,13 +42,13 @@ colon after it, you can do the following:
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
+`\itshape` आज्ञेसह तिच्यानंतर येणारा सर्व मजकूर इटालीय वळणात लिहिला जातो, परंतु ह्या आज्ञेचा
+प्रभाव केवळ त्या चौकटीपुरताच लागू आहे. ह्याबाबत अधिक तपशील आपण [लवकरच](lesson-11)
+पाहणार आहोत.
 
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+ह्याच स्तंभातील पहिल्या ओळीतील मजकुरावर हा प्रभाव असू नये असेही तुम्हाला वाटू शकते, कारण
+पहिली ओळ ही शीर्षकाची असते. अशा वेळी `\multicolumn` आज्ञेसह ठरावीक चौकटीची जुळणी बदलता
+येऊ शकते.
 
 <!-- {% raw %} -->
 ```latex
@@ -74,13 +71,12 @@ it can be used to change a single cell's alignment as shown below.
 ```
 <!-- {% endraw %} -->
 
-### Manipulating the space between columns
+### स्तंभांमधील मोकळ्या जागेचे नियंत्रण
 
-Usually LaTeX pads each column by some space on both sides to give a balanced
-look and separate them. This space is defined with the length `\tabcolsep`. Due
-to the fact that each column is padded on both sides you get one `\tabcolsep` on
-either end of the table, and `2\tabcolsep` between two columns &ndash; one from
-each column. You can adjust this space to any length using `\setlength`:
+लाटेक्-तर्फे प्रत्येक स्तंभाच्या आजूबाजूला मोकळी जागा सोडली जाते. ही जागा `\tabcolsep` ह्या
+आज्ञेसह ठरवली जाते. ही जागा स्तंभाच्या दोन्ही बाजूंना सोडली जात असल्यामुळे ह्या आज्ञेच्या
+कार्यघटकातील मापाच्या दुप्पट जागा दोन स्तंभांमध्ये सुटलेली दिसते. `\setlength` ह्या दोन
+कार्यघटक असलेल्या आज्ञेसह हे माप बदलता येऊ शकते.
 
 <!-- {% raw %} -->
 ```latex
@@ -101,9 +97,9 @@ each column. You can adjust this space to any length using `\setlength`:
 ```
 <!-- {% endraw %} -->
 
-You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything in
-between the columns you specify as an argument:
+ह्या मोकळ्या जागे ऐवजी काही वेगळे हवे असेल, तर तेदेखील टाकता येते. त्याकरिता `@` हे चिन्ह
+वापरून त्यापुढे विशिष्ट आज्ञावली लिहावी. त्यामुळे सोडल्या जाणाऱ्या मोकळ्या जागेऐवजी तुम्ही
+कार्यघटकात लिहिलेली आज्ञावली तिथे छापली जाते.
 
 <!-- {% raw %} -->
 ```latex
@@ -122,11 +118,11 @@ between the columns you specify as an argument:
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
+(`\hspace` म्हणजे काय हे आपण [लवकरच](lesson-11) पाहूया. तुम्हाला कदाचित ह्याचा अंदाज
+लागला असेलच की ही आज्ञा आडवी मोकळी जागा सोडते.)
 
-The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument in center of the space between two columns.
+`!` हे प्राचल काहीसे हेच कार्य करते, परंतु फरक असा आहे की ह्या प्राचलास दिलेल्या कार्यघटकातील
+सामग्री स्तंभांमधील जागेच्या मध्यस्थानी छापली जाते.
 
 <!-- {% raw %} -->
 ```latex
@@ -146,9 +142,9 @@ _adds_ its argument in center of the space between two columns.
 <!-- {% endraw %} -->
 
 
-### Vertical rules
+### उभ्या रेषा
 
-Sometimes you have to use vertical rules.
+काही वेळा कोष्टकात उभ्या रेषा असणे अनिवार्य असते.
 
 <!-- {% raw %} -->
 ```latex
@@ -167,20 +163,22 @@ Sometimes you have to use vertical rules.
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
-adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though; vertical rules don't work with the
-horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
-will span any space specified in the optional argument to `\\`.
+`|` ह्या प्राचलाचे कार्य काहीसे `!` ह्या प्राचलासारखेच आहे, फरक इतकाच की त्यामुळे येणारे फलित
+निश्चित आहे व ते म्हणजे उभी रेषा, परंतु ह्याचा एक दुष्परिणाम असा की ह्या उभ्या रेषा `booktabs`
+आज्ञासंचाच्या आडव्या रेषांसोबत चालू शकत नाहीत. लाटेक्-तर्फे पुरवल्या जाणाऱ्या आडव्या रेषांचा वापर
+मात्र करता येऊ शकतो.
 
-## Customizing `booktabs` rules
+- `\hline` (`\toprule`, `\midrule` व `\bottomrule` ह्यांकरिता पर्यायी)
+- `\cline` (`\cmidrule` हिच्याकरिता पर्यायी). 
 
-All the `booktabs` rules and also `\addlinespace` support an optional argument
-in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a length in
-braces after `r` or `l`.
+उभ्या रेषांची उंची एकूण स्तंभाच्या उंचीइतकीच असते.
+
+## `booktabs`मधील रेषा
+
+`booktabs` आज्ञासंचातील सर्व रेषा व `\addlinespace` ही आज्ञा एक वैकल्पिक कार्यघटक घेऊ शकते
+ज्यामध्ये त्या ओळीची जाडी लिहिता येऊ शकते. तसेच `\cmidrule` आज्ञेच्या फलित-रेषेला एका बाजूने
+कापण्यासाठी वापरल्या जाणाऱ्या `r` अथवा `l` ह्या प्राचलांसमोर महिरपी कंसांत किती कापले जावे
+ह्याची मापे लिहिता येऊ शकतात.
 
 <!-- {% raw %} -->
 ```latex
@@ -201,12 +199,11 @@ braces after `r` or `l`.
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment in columns
+## संख्यांची मांडणी
 
-The alignment of numbers in tables can be handled by the column type `S` 
-that is provided by the `siunitx` package.
+आकड्यांच्या मांडणीकरिता `S` हे `siunitx` ह्या आज्ञासंचातर्फे पुरवले जाणारे प्राचल उपयुक्त ठरते.
 
-A simple example with two aligned numeric columns would be:
+संख्यांच्या दोन स्तंभांची मांडणी पुढील उदाहरणात पाहा.
 
 ```latex
 \documentclass{article}
@@ -229,31 +226,28 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
-Note that any non-numeric cell must be "protected" by enclosing it in braces.
+लक्षात ठेवा अशा प्रकारच्या स्तंभांमध्ये जर संख्येतर घटक लिहायचे असतील, तर त्यांना महिरपी कंसांत
+"सुरक्षित" पद्धतीने लिहावे लागते.
 
-The `siunitx` package provides many possibilities for formatting the numbers in
-different ways; see the [package
-documentation](https://texdoc.net/pkg/siunitx).
+`siunitx` आज्ञासंचातर्फे आकड्यांची अक्षरजुळणी करण्याकरिता निरनिराळ्या पद्धती पुरवल्या
+जातात. त्या पाहण्याकरिता त्यांची [हस्तपुस्तिका](https://texdoc.net/pkg/siunitx) पाहा.
 
-## Specifying the total table width
+## कोष्टकांची एकूण रुंदी ठरवणे
 
-The width of a `tabular` environment is automatically determined based
-on the contents of the table. There are two commonly used mechanisms
-to specify a different total width.
+`tabular` क्षेत्राची रुंदी त्यातील सामग्रीच्या रुंदीनुसार आपोआप ठरवली जातेे. ह्या रुंदीत बदल
+करण्यासाठी वापरल्या जाणाऱ्या दोन पद्धती आहेत.
 
-Note that it is almost always preferable to format the table to a
-specified width as below (perhaps using a font size such as `\small` if
-necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths.
+कोष्टकाची रुंदी नियंत्रित करणे हे कायम श्रेयस्कर ठरते. संपूर्ण कोष्टकाची रुंदी `\resizebox`
+सारख्या आज्ञा वापरून बदलणे थोडे धोकादायक असते, कारण त्यामुळे टंक व रेषांची मापे अनियमित होऊ
+शकतात.
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that
-specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command. This space is added
-between all columns from that point in the preamble. It is almost
-always used with `\fill`, a special space that stretches to be as large
-as necessary.
+`tabular*` हे क्षेत्र रुंदीकरिता एक अधिकचा कार्यघटक स्वीकारते. त्या कार्यघटकात कोष्टकाची एकूण
+रुंदी भरणे आवश्यक आहे. ह्या क्षेत्रात अधिकची मोकळी जागा `\extracolsep` ह्या आज्ञेद्वारे घातली
+जाऊ शकते. ही मोकळी जागा त्या आज्ञेनंतर येणाऱ्या प्रत्येक स्तंभानंतर सोडली जाते. ह्या आज्ञेचा
+कार्यघटक `\fill` असणे खूप उपयुक्त. ही जागेची एक विशेष आज्ञा आहे. हिच्यातर्फे "आवश्यक" तेवढी
+जागा सोडली जाते.
 
 ```latex
 \documentclass{article}
@@ -270,7 +264,7 @@ C & D\\
 \end{tabular}
 \end{center}
 
-\begin{center}  
+\begin{center}
 \begin{tabular*}{.5\textwidth}{@{\extracolsep{\fill}}cc@{}}
 \hline
 A & B\\
@@ -279,7 +273,7 @@ C & D\\
 \end{tabular*}
 \end{center}
 
-\begin{center}  
+\begin{center}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cc@{}}
 \hline
 A & B\\
@@ -293,11 +287,9 @@ C & D\\
 
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+`tabularx` क्षेत्र ह्या नावाच्याच आज्ञासंचातर्फे पुरवले जाते. ह्याचे कार्य `tabular*`सारखेच आहे,
+परंतु स्तंभांमधील मोकळी जागा नियंत्रित करण्याऐवजी ह्या क्षेत्राद्वारे `X` नावाचा स्तंभप्रकार
+पुरवला जातो, परंतु त्याची रुंदी स्वयंनिश्चित होते.
 
 ```latex
 \documentclass{article}
@@ -314,7 +306,7 @@ C & D D D D D D D\\
 \end{tabular}
 \end{center}
 
-\begin{center}  
+\begin{center}
 \begin{tabularx}{.5\textwidth}{lX}
 \hline
 A & B B B B B B B B B B B B B B B B B B B B B B B B\\
@@ -323,7 +315,7 @@ C & D D D D D D D\\
 \end{tabularx}
 \end{center}
 
-\begin{center}  
+\begin{center}
 \begin{tabularx}{\textwidth}{lX}
 \hline
 A & B B B B B B B B B B B B B B B B B B B B B B B B\\
@@ -335,19 +327,17 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.net/pkg/tabularx).
+ह्या आज्ञासंचातर्फे तयार होणाऱ्या कोष्टकाच्या वापरावर काही मर्यादा आहेत, तसेच ते पूर्ण
+करण्याकरिता अनेक वेळा प्रयोग करून अंतिम रूप निश्चित करावे लागते. ह्याबाबत अधिक माहितीसाठी
+त्यांची [हस्तपुस्तिका](https://texdoc.net/pkg/tabularx) पाहा.
 
-## Multi-page tables
+## एकाहून अधिक पृष्ठांवर चालणारे कोष्टक
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+`tabular` क्षेत्राद्वारे तयार होणारे कोष्टक अविभाज्य असते व त्यामुळे ते एका पानावर राहील
+इतक्या उंचीचेच असावे लागते.
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+अनेक पानांवर चालणारे कोष्टक तयार करण्यासाठी निरनिराळे आज्ञासंच उपलब्ध आहेत. इथे आम्ही
+`longtable` आज्ञासंचाचे उदाहरण दाखवत आहोत.
 
 ```latex
 \documentclass{article}
@@ -384,19 +374,16 @@ A Wider Entry & b\\
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+`longtable` ह्या आज्ञासंचातर्फे कोष्टकांच्या स्तंभांची रुंदी टिकवली जाते. त्यामुळले कितीही पृष्ठ
+चालणारे कोष्टक असले, तरी त्यातील कोणत्याही स्तंभाची रुंदी त्या संपूर्ण स्तंभातील सर्वात रुंद
+मजकुराइतकी असते. हे साधण्याकरिता धारिकेस दोन वेळा चालवावे लागू शकते.
 
-## Table notes
+## कोष्टकांतील टिप्पण्या
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.net/pkg/threeparttable)
-for full details, but we show a simple example here.
+तळटिपांप्रमाणेच कोष्टकांतील सामग्रीविषयी टीपा देण्याची गरज पडू शकते. `threeparttable`
+आज्ञासंचातर्फे हे सोपे केले जाते. ह्या आज्ञासंचाच्या क्षमता जाणून घेण्याकरिता त्याची
+[हस्तपुस्तिका](https://texdoc.net/pkg/threeparttable) पाहा. आम्ही इथे एक सोपे उदाहरण
+दाखवतो आहोत.
 
 ```latex
 \documentclass{article}
@@ -422,23 +409,20 @@ for full details, but we show a simple example here.
 \end{document}
 ```
 
-## Typesetting in narrow columns
+## अरुंद स्तंभांमध्ये अक्षरजुळणी करणे
 
-The default line breaking settings assume relatively long lines to
-give some flexibility in choosing line breaks. The following example
-shows some possible approaches. The first table shows interword spacing
-stretched and TeX warns about Underfull lines. Using `\raggedright`
-usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise;
-it allows some raggedness in the line lengths, but will also
-hyphenate where necessary, as shown in the third table.
+ओळतोडीची मूळ यंत्रणा तुलनेने रुंद ओळींची अपेक्षा करते. अन्यथा मजकूर नीट छापला जात नाही, परंतु
+अशी परिस्थिती ओढवल्यास काय करावे ह्याचे काही मार्ग पुढील उदाहरणात दाखवले आहेत. पहिल्या
+कोष्टकात शब्दांमधील जागा वाढवली गेली आहे व त्यामुळे टेक्-तर्फे एक सूचना देण्यात आली आहे.
+`\raggedright` ही आज्ञा वापरून ह्या समस्येचा तोडगा काढता येऊ शकतो, परंतु ह्यामुळे काही ओळी
+अती उजवीकडे आहेत असे भासू शकते. `\RaggedRight` ही `ragged2e` आज्ञासंचातील आज्ञा एक तडजोड
+आहे. ह्या आज्ञेतर्फे संयोगचिन्हांचा वापर व शब्दांना उजवीकडे ढकलणे दोन्ही शक्य आहे. उदाहरणातील
+तिसरे कोष्टक पाहा.
 
-Note the use of `\arraybackslash` here, which resets the definition of
-`\\` so that it ends the table row.
+`\arraybackslash` आज्ञेचा प्रयोग पाहा. ह्या आज्ञेतर्फे `\\` ह्या आज्ञ़ेचा अर्थ ठरवला जातो.
 
-An alternative technique, as shown in the fourth table, is to use a
-smaller font so that the columns are not so narrow relative to the
-text size.
+आणखी एक मार्ग चौथ्या उदाहरणात दाखवण्यात आला आहे. तो म्हणजे टंकाचा आकार कमी
+करण्याचा. त्यामुळे कोष्टकाची रुंदी नियंत्रित राहते.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -473,25 +457,23 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 \end{document}
 ```
 
-## Defining new column types
+## नवीन स्तंभप्रकार घडवणे
 
-As demonstrated in the [main lesson](lesson-08), the `array` package allows
-constructs such as `>{\bfseries}c`  to denote a bold centered column.
-It is often convenient to define a new column type to encapsulate such
-use, for example
+[मुख्य प्रकरणात](lesson-08) पाहिल्याप्रमाणे `array` आज्ञासंचासह `>{\bfseries}c` ठळक
+अक्षरांसह मध्यभागी मांडला गेलेला स्तंभ तयार करता येऊ शकतो. अशा प्रकारचा स्तंभ वारंवार
+वापरायचा असेल, तर `tabular`च्या कार्यघटकात वापरता येईल असे विशेष प्राचल आपल्याला तयारही
+करता येते. उदा.
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in table preambles to specify a bold
-centered column.
 
+ह्यासह `B` नावाचे प्राचल कार्यघटकात लिहिता येेऊ शकेल.
 
-## Vertical tricks
+## काही कॢप्त्या
 
-Often, rather than making a cell span multiple rows it is better to instead have
-a single row in which some cells are split vertically by the use of nested
-`tabular` environments.
+दोन ओळींना एकमेकांत मिसळण्यापेक्षा कोष्टकामधील एका ओळीत आणखी छोटे कोष्टक समाविष्ट करणे ही
+कॢप्ती कधी कधी अपेक्षित परिणाम साधू शकते.
 
 <!-- {% raw %} -->
 ```latex
@@ -514,9 +496,9 @@ a single row in which some cells are split vertically by the use of nested
 ```
 <!-- {% endraw %} -->
 
-Note that you can control vertical alignment by an optional argument to the
-`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
-bottom aligned respectively and is used like this:
+
+लक्षात ठेवा की `tabular` क्षेत्राच्या वैकल्पिक कार्यघटकात `t`, `c` अथवा `b` ही स्थानविशिष्ट
+प्राचले शीर्ष, मध्य अथवा तलस्थानी कोष्टक छापण्यासाठी वापरता येऊ शकतात. उदा.
 
 <!-- {% raw %} -->
 ```latex
@@ -539,25 +521,23 @@ bottom aligned respectively and is used like this:
 ```
 <!-- {% endraw %} -->
 
-## Line spacing in tables
+## कोष्टकांतील ओळींमधील अंतर
 
-In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package, which is useful for adding extra space between specific lines.
+`\addlinespace` आज्ञेसकट सोडली जाणारी अधिकची जागा आपण मुख्य प्रकरणात पाहिलीच, परंतु
+सर्वच कोष्टकांमधील ओळींमधील अंतर एकत्र वाढवायचे असेल तर दोन मार्ग आहेत.
 
-There are two general parameters that control line spacing,
-`\arraystretch` and `\extrarowheight` (the latter from the `array`
-package).
+`\arraystretch` ही लाटेक्-मधील आज्ञा व `\extrarowheight` ही `array` आज्ञासंचातील
+आज्ञा.
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
 
-will increase the baseline spacing by 50%.
+ह्या आज्ञेमार्फत तलरेषेची उंची ५०% वाढवली जाते.
 
-
-Often, especially when using `\hline`, it is better just to increase
-the height of rows, without increasing their depth below the baseline.
-The following example demonstrates the `\extrarowheight` parameter.
+परंतु `\hline` वापरत असताना पूर्ण ओळीची उंची वाढवणे अधिक उचित ठरते. तलरेषेकडून वाढवण्याने
+काही वाईट परिणाम फलितात होऊ शकतात. पुढील उदाहरणातील `\extrarowheight` आज्ञेचा वापर
+पाहा.
 
 ```latex
 \documentclass[a4paper]{article}

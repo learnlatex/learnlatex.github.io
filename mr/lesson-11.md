@@ -1,26 +1,27 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Formatting: fonts and spacing"
-description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
-toc-anchor-text: "Fonts & spacing"
-toc-description: "Text formatting for visual presentation."
+lang: "mr"
+title: "अक्षरजुळणी: टंकांचे ठसे व ओळींमधील जागा"
+description: "ओळींमधली जागा नियंत्रित करणे व अक्षरजुळणीविषयक विशिष्ट आज्ञा बीजधारिकेत समाविष्ट करणे हे ह्या प्रकरणात आपण शिकू."
+toc-anchor-text: "टंकांचे ठसे आणि ओळींमधील जागा"
+toc-description: "मजकुराची अक्षरजुळणी."
 ---
 
-# Formatting: fonts and spacing
+# अक्षरजुळणी: टंकांचे ठसे व ओळींमधील जागा
 
-<span
-  class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>
+<span class="summary">
+ओळींमधली जागा नियंत्रित करणे व अक्षरजुळणीविषयक विशिष्ट आज्ञा बीजधारिकेत समाविष्ट करणे हे ह्या
+प्रकरणात आपण शिकू.
+</span>
 
 We have already seen that a blank line in your input will generate a new
 paragraph in LaTeX. This shows up as the paragraph will start with an
 indent.
 
-## Paragraph spacing
+## ओळींमधील मोकळी जागा
 
-One common style is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can achieve that using the `parskip`
-package.
+एक प्रचलित पद्धत अशी आहे की परिच्छेदांकरिता आडवी मोकळी जागा न सोडता एक संपूर्ण मोकळी ओळ
+सोडणे. हे करण्याकरिता `parskip` नावाचा आज्ञासंच वापरता येतो.
 
 ```latex
 \documentclass{article}
@@ -32,31 +33,29 @@ package.
 \end{document}
 ```
 
-## Forcing a new line
+## सक्तीची मोकळी ओळ सोडणे
 
-Most of the time, you should not force a new line in LaTeX: you almost
-certainly want a new paragraph or to use `parskip`, as we've just seen,
-to put a 'blank line' between paragraphs.
+बहुतांश वेळा लाटेक्-मध्ये सक्तीची मोकळी जागा सोडावी लागत नाही. बहुतेक वेळा परिच्छेद तयार करणे
+आवश्यक असते, त्याकरिता `parskip` ही आज्ञा पुरते.
 
-There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph:
+काही ठिकाणी सक्तीने नवी ओळ सुरू करणे आवश्यक असते व तिथे परिच्छेद सुरू होणे नको असते. अशा काही
+जागा म्हणजे -
 
-- At the end of table rows
-- Inside the `center` environment
-- In poetry (the `verse` environment)
+- कोष्टकातील ओळ संपवणे
+- `center` ह्या क्षेत्रात
+- काव्यलेखन (`verse` क्षेत्र)
 
-Almost always, if you are not in one of those special places, you should
-_not_ use `\\`.
+ह्या काही ठिकाणांव्यतिरिक्त अन्यत्र सक्तीने ओळ तोडण्यासाठी वापरण्यात येणारी `\\` ही आज्ञा
+वापरणे अतिशय चुकीचे आहे.
 
-## Adding explicit space
+## ठरावीक मापाची मोकळी जागा सोडणे.
 
-We can insert a thin space (about half the normal thickness) using
-`\,`. In math mode, there are also other commands: `\.`, `\:` and `\;`,
-and one for a negative space: `\!`.
+नियमित मोकळ्या जागेच्या अर्ध्या रुंदीची मोकळी जागा सोडण्यासाठी `\,` ही आज्ञा वापरता
+येते. गणितक्षेत्रात ह्याकरिता काही अतिरिक्त आज्ञादेखील आहेत. उदा. `\.`, `\:` व `\;`, तसेच
+ऋण मोकळ्या जागेसाठी `\!` ही आज्ञा वापरली जाते.
 
-Very rarely, for example when creating a title page, you might need to
-add explicit horizontal or vertical space. We can use `\hspace` and `\vspace`
-for that.
+काही वेळा उदाहरणार्थ मुखपृष्ठ वगैरे तयार करताना विशिष्ट मापाची आडवी अथवा उभी जागा
+सोडण्याची गरज पडू शकते. त्यावेळी `\hspace` व `\vspace` ह्या आज्ञा वापरता येतात.
 
 ```latex
 \documentclass{article}
@@ -70,15 +69,17 @@ Even more text.
 \end{document}
 ```
 
-## Explicit text formatting
+## टंकांचे ठसे व मांडणी
 
-We wrote [in lesson 3](lesson-03) that most of the time logical structure is
-preferable. But sometimes you want to make text bold, or italic, or monospaced,
-etc. There are two types of command for this: ones for short pieces of text,
-and ones for 'running' material.
+[प्रकरण ३](lesson-03)मध्ये आपण पाहिले की बहुतांश वेळा बीजधारिकेची तार्किक मांडणी करणे अधिक
+इष्ट असते, परंतु काही वेळा मजकुराला ठळक ठशात लिहिणे अथवा अक्षरे इटालीय वळणात लिहिणे अथवा
+तिरकी लिहिणे आवश्यक असू शकते. अशा मांडणीकरिता दोन प्रकारच्या आज्ञा लाटेक्-तर्फे पुरवल्या
+जातात. पहिली ठरावीक व लहान मजकुरासाठी व दुसरी बराच काळ चालणाऱ्या दीर्घ व धावत्या
+मजकुरासाठी.
 
-For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
-`\texttt` and `\textsc`.
+लहान मजकुरासाठी `\textbf`, `\textit`, `\textrm`, `\textsf`, `\texttt` व `\textsc`
+अशा कार्यघटकयुक्त आज्ञा वापरल्या जातात. ह्या आज्ञांच्या कार्यघटकातील मजकुराची मांडणी विशिष्ट
+प्रकारे केली जाते.
 
 ```latex
 \documentclass{article}
@@ -89,11 +90,13 @@ Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \end{document}
 ```
 
-For running text, we use commands that alter the font setup; the commands
-here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them from applying to
-the whole document. LaTeX environments are groups, as are table cells,
-or we can use `{...}` to make an explicit group.
+धावत्या मजकुराकरिता टंकाच्या ठशांच्या काही निराळ्या कार्यघटकहीन आज्ञा वापरता
+येतात. उदा. `\bfseries` अथवा `\itshape`. ह्या आज्ञा जोवर आपण त्यांना थांबवत नाही, तोवर
+थांबत नाहीत. त्यामुळे त्यांकरिता एक व्याप्ती तयार करणे आवश्यक असते. त्या व्याप्तीबाहेर त्यांचा
+ठसा वापरला जाऊ नये म्हणून. लाटेक्-मध्ये अशा काही व्याप्ती मूलतः असतातच. लाटेक् क्षेत्रे ही एक
+व्याप्ती आहे. कोष्टकांमधील चौकटीदेखील व्याप्ती आहेत. त्यांमध्ये वापरल्या गेलेल्या धावत्या
+मजकुरासाठीच्या आज्ञा त्यांच्याबाहेर लागू होत नाहीत. लाटेक्-मध्ये व्याप्ती तयार करणे फार सोपे
+आहे. त्याकरिता व्याप्तीमध्ये हवा असलेला मजकूर महिरपी कंसांत लिहावा लागतो. (`{...}`)
 
 ```latex
 \documentclass{article}
@@ -111,11 +114,15 @@ So it this: the effect is not limited to a paragraph.
 \end{document}
 ```
 
-We can set font size in a similar way; these commands all work on an ongoing
-basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
-`\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back; see how we add an explicit `\par`
-(paragraph break) here.
+अक्षरांचा आकारदेखील अशाच धावत्या आज्ञा वापरून ठरवता येेऊ शकतो. लाटेक्-मधील मूलभूत मजकुराच्या
+सापेक्ष असे काही आकार पुरवले जातात. लाटेक्-मधील मूलभूत अक्षरांच्या आकारास `\normalsize` ही
+आज्ञा आहे.
+
+त्याहून मोठ्या आकारासाठी चढत्या क्रमात `\large`, `\Large`, `\LARGE` व `\huge` हे आकार
+उपलब्ध आहेत.
+
+त्याहून लहान आकारासाठी उतरत्या क्रमात `\small`, `\footnotesize`, `\scriptsize`,
+`\tiny` हे आकार उपलब्ध आहेत. आकार बदलण्यापूर्वी चालू परिच्छेद संपवणे आवश्यक आहे.
 
 ```latex
 \documentclass{article}
@@ -132,12 +139,11 @@ Normal text
 \end{document}
 ```
 
-## Exercises
+## स्वाध्याय
 
-Experiment with manual formatting: create a `titlepage` environment and
-try inserting different spaces and font changes. What happens when we
-combine font changes? How does this compare to math mode?
+अक्षरजुळणीच्या ह्या आज्ञांचा वापर करून पाहा. `titlepage` ह्या क्षेत्रासह आडवी व उभी मोकळी
+जागा सोडून मुखपृष्ठ तयार करा. निरनिराळे टंकांचे ठसे एकत्र कसे वापरावेत? गणितक्षेत्रात हे कसे काम
+करते?
 
-What happens if you change the font size of a large paragraph (try with
-`\tiny` then with `\huge`) but don't issue a final `\par` before closing
-the group?
+एखाद्या मोठ्या परिच्छेदाचा आकार बदलला (उदा. `\tiny` अथवा `\huge`), परंतु त्याची व्याप्ती
+संपवण्यापूर्वी `\par` वापरून परिच्छेद संपवला नाही तर काय होते?

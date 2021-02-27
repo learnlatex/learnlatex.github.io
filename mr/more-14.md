@@ -1,28 +1,20 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Selecting fonts and using Unicode engines"
-description: "This lesson shows a basic example in Lua for users who want to write Lua code in their document."
-toc-anchor-text: "More on: Selecting fonts and using Unicode engines"
+lang: "mr"
+title: "अधिक माहिती: टंक व युनिकोड चालक"
+description: "ह्या प्रकरणात आपण लुआ ह्या आज्ञावलीचा लाटेक्-मध्ये वापर करण्याचे एक पायाभूत उदाहरण पाहूया."
+toc-anchor-text: "अधिक माहिती: टंक व युनिकोड चालक"
 ---
 
+## लुआ
 
+लुआटेक् चालक ओपनटाईप टंकांचा वापर करण्याची क्षमता झीटेक् ह्या चालकाप्रमाणे पुरवतोच, परंतु लुआटेक्
+ह्या चालकासह टेक्-च्या इतर क्षमतादेखील मोठ्या प्रमाणावर विस्तारतात. सर्वात महत्त्वाचा बदल
+म्हणजे लुआ आज्ञावलीचा लाटेक्-मध्ये समावेश. आज्ञावलीय जगतात जास्त प्रचलित असणाऱ्या पद्धतींसह काम
+करण्यासाठी हे खूप उपयुक्त ठरते. टेक्-च्या अंतर्गत कार्यप्रणालीत हस्तक्षेप करून तिथे लुआमार्फत बदल
+करण्याचे सामर्थ्यदेखील ह्या आज्ञावलीत आहे.
 
-
-## Lua
-
-The LuaTeX engine provides access to OpenType fonts in a similar way
-to XeTeX, and most uses of the `fontspec` package work equally well
-with either engine.
-
-LuaTeX also extends TeX in other ways, notably by embedding the Lua
-scripting language. This may be used for programming in a style more
-familiar to people used to ‘mainstream’ programming languages. It also
-offers the possibility to access inner workings of the TeX system and
-modify the behaviour by substituting new code written in Lua.
-
-Lua programming is not covered by this course but a simple example to
-calculate 2π is shown here.
+लुआ आज्ञावली ह्या अभ्यासक्रमाचा भाग नाही, परंतु 2π हे गणित करणारे लहानसे उदाहरण पुढे पाहा.
 
 ```latex
 %!TEX lualatex

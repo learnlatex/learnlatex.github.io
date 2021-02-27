@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Citations and references"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
-toc-anchor-text: "Citations & references"
-toc-description: "Working with reference databases."
+lang: "mr"
+title: "संदर्भ"
+description: "ह्या प्रकरणात संदर्भ देण्याविषयीची पायाभूत माहिती देण्यात आली आहे. स्वतःची संदर्भसामग्री घडवणे शिका व तिच्यातील संदर्भ लाटेक्-मध्ये वापरणे शिका."
+toc-anchor-text: "संदर्भ"
+toc-description: "संदर्भसामग्री घडवणे व लाटेक्-मध्ये वापरणे."
 ---
 
-# Citations and references
+# संदर्भ
 
 <script>
 preincludes = {
@@ -20,20 +20,20 @@ preincludes = {
 }
 </script>
 
-<span
-  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
+<span class="summary">
+ह्या प्रकरणात संदर्भ देण्याविषयीची पायाभूत माहिती देण्यात आली आहे. स्वतःची संदर्भसामग्री घडवणे
+शिका व तिच्यातील संदर्भ लाटेक्-मध्ये वापरणे शिका.
+</span>
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+पाठ्यसंदर्भांकरिता बीजआज्ञावलीत जरी संदर्भांचा उल्लेख केला जात असला, तरी त्यांविषयीची माहिती
+दुसऱ्या धारिकांमधून वापरली जाते. बहुतांश वेळा ह्या धारिका एक अथवा अनेक असू शकतात. एकाहून
+अधिक धारिका वापरल्यामुळे संदर्भ हाती लिहिण्याचे कष्ट वाचतात.
 
-## Reference databases
+## संदर्भसामग्री
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+संदर्भसामग्रीला बिबटेक्-धारिका म्हटले जाते. `.bib` हा तिचा प्रत्यय असतो. ह्या धारिकांमध्ये एक
+अथवा अनेक नोंदी असतात. (प्रत्येक संदर्भाकरिता एक ह्याप्रमाणे) व प्रत्येक नोंदीत वेगवेगळ्या उपनोंदी
+असतात. उदा.
 
 <!-- {% raw %} -->
 ```bibtex
@@ -60,68 +60,61 @@ within each entry there are a series of fields. Let us look at an example.
 ```
 <!-- {% endraw %} -->
 
+ही एका लेखाची व एका पुस्तकाची नोंद असलेली धारिका आहे. हे सर्वात प्रचलित नोंदींचे प्रकार
+आहेत. बिब्-धारिकेतील प्रत्येक नोंद `@` ह्या चिन्हाने सुरू होते व प्रत्येक उपनोंद महिरपी कंसांत
+लिहिली जाते.
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+वेगवेगळ्या उपनोंदी त्यांचे नाव व त्यांची किंमत ह्या स्वरूपात लिहिल्या जातात. प्रत्येक नोंदीची एक
+कळ असते. तिला मात्र वेगळ्याने किंमत द्यायला लागत नाही. ही कळ टेक्-धारिकेत लिहूनच संदर्भ प्राप्त
+केले जातात. ती कळ काहीही असू शकते. सामान्यतः वापरली जाणारी पद्धत ही आहे की लेखकाचे नाव व
+प्रकाशनवर्ष कळ म्हणून लिहावे, परंतु ते सक्तीचे नाही.
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
+कोणत्या उपनोंदी एखादी नोंद पूर्ण होण्याकरिता आवश्यक आहेत हे तुम्ही निवडलेल्या नोंदीच्या
+प्रकारावरून ठरते. तरी काही उपनोंदी ह्या बहुतांश प्रकारांमध्ये लागतातच. `author` ही उपनोंद
+त्यांपैकी एक. ह्या उपनोंदीतील प्रत्येक नाव `and` ह्या शब्दाने वेगळे केले जाते. बिब्-नोंद कुठल्याही
+भाषेतील असो, अनेक लेखकांची नावे लिहिताना `and` हा शब्दच वापरावा लागतो. हे अतिशय आवश्यक
+आहे. फलितात सर्व नावे व्यवस्थित छापली जाण्याकरिता लेखकांची नावे सुटी असणं आवश्यक आहे.
+उपनोंदींमधील काही शब्द पुन्हा महिरपी कंसांत लिहिल्याचे आढळतात. आज्ञावलीने त्यांच्या अक्षरांत
+(उदा. स्मॉल वि. कॅपिटल) कोणताही बदल करू नये ह्यासाठी त्यांना महिरपी कंसांत लिहावे लागते.
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
+`.bib` धारिका हाताने संपादित करणे अतिशय कठीण ठरू शकते. त्यामुळे बहुतेक वेळा बिब्-संपादक वापरणे
+उपयुक्त ठरते. [जॅबरेफ़्](https://www.jabref.org) हा असाच एक आंतरप्रणाली बिब्-संपादक
+आहे. अर्थात ह्याप्रमाणेच आणखी अनेक संपादक उपलब्ध आहेत. जर संदर्भात DOI (डिजिटल ऑब्जेक्ट
+आयडेन्टिफायर) असेल, तर [doi2bib](https://doi2bib.org) ही आज्ञावलीदेखील वापरून पाहता
+येईल. फक्त कोणतीही स्वयंचलित प्रणाली वापरून संदर्भ मिळवल्यावर, सगळे योग्य आहे ना ह्याची खात्री
+करून घेणे कधीही श्रेयस्कर.
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
+ह्या प्रकरणात आपण एक लहानशी संदर्भसामग्री तयार करूया व वापरूया. ह्या धारिकेचे नाव आम्ही
+`learnlatex.bib` असे ठेवले आहे.
 
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
-`learnlatex.bib`.
+## संदर्भसामग्रीतील माहितीचा वापर
 
-## Transferring information from the database
+संदर्भसामग्रीतील माहिती लाटेक्-आज्ञावलीत समाविष्ट करण्यासाठी तीन पायऱ्या आहेत. सर्वप्रथम
+तुमची लाटेक्-धारिका चालवणे. ह्या प्रक्रियेमुळे एक साहाय्यक धारिका तयार होते जिच्यात तुमच्या
+आज्ञावलीत किती वेळा व कोणते संदर्भ दिले गेले आहेत हे नोंदवले जाते. दुसरी पायरी एक आणखी आज्ञावली
+चालवण्याची जिच्यामुळे संदर्भसामग्रीतून दस्तऐवजात वापरल्या गेलेल्या संदर्भांची माहिती गोळा होईल व
+ती क्रमाने लावली जाईल. तिसरी पायरी पुन्हा एकदा लाटेक्-धारिका चालवण्याची. ह्या पायरीत
+क्रमाने लावलेली संदर्भसामग्रीतील माहिती फलितात योग्यरीत्या छापली जाईल.
 
-To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which creates a file with a
-list of the references that your document cites.  Second, run a
-program that takes information from the database of references, picks
-out the ones that you use, and puts them in order.  Finally, compile
-your document again so that LaTeX can use that information to resolve
-your citations. Usually it will require at least two compilations to
-resolve all the references.
+दुसऱ्या पायरीकरिता दोन प्रचलित आज्ञावल्या आहेत. बिबटेक् व बिबर. बिबर ही आज्ञावली प्रामुख्याने
+बिबलाटेक् आज्ञासंचासह काम करते. बिबटेक् मात्र कोणत्याही आज्ञासंचासह, कोणत्याही आज्ञासंचाशिवाय
+व `natbib` आज्ञासंचासह काम करते.
 
-For the second step, there are two systems in wide use: BibTeX and
-Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
-BibTeX is used with either no packages at all or with `natbib`.
+ह्या तीन पायऱ्या निरनिराळ्या संपादकांमध्ये निरनिराळ्या प्रकारे हाताळल्या जातात. आमच्या
+संकेतस्थळावर आम्ही पडद्यामागे अशी आज्ञावली लिहिली आहे जिच्यामुळे ह्या तिन्ही पायऱ्या एकाच वेळी
+पार पडतात.
 
-Running a second tool as well as LaTeX is handled in different ways by different
-editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go.
-Your editor might have a single 'do stuff' button or you might have to
-choose to run BibTeX or Biber manually between LaTeX runs.
+संदर्भांचे स्वरूप व संदर्भसामग्रीतील माहिती हे दोन्ही स्वतंत्र असतात. संदर्भसामग्रीतील माहितीतून
+वेगवेगळ्या स्वरूपातील संदर्भ छापता येऊ शकतात ते ह्या व्यवस्थेमुळेच. बिबलाटेक् व बिबटेक् ह्यांमधील फरक
+आपण पाहूच, परंतु संदर्भाचे स्वरूप काय असायला हवे हे आपण निश्चितच ठरवू शकतो.
 
-The format of citations and references is independent of your BibTeX database,
-and is set by what is known as a 'style'. We will see that these work slightly
-differently in the BibTeX workflow and `biblatex`, but the general idea remains:
-we can choose how citations appear.
+## `natbib` आज्ञासंचासह bibtex
 
-## The BibTeX workflow with `natbib`
+कोणत्याही आज्ञासंचाशिवाय संदर्भ वापरणे लाटेक्-मध्ये शक्य असले तरी त्यावर मर्यादा आहेत, त्यामुळे
+आपण `natbib` आज्ञासंच वापरणार आहोत. ह्या आज्ञासंचामुळे वापरकर्त्यांना निरनिराळ्या शैलीतील
+संदर्भ देता येणे शक्य होते.
 
-Whilst it is possible to insert citations into a LaTeX document without
-any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create different types of citation and
-has a lot of styles available.
-
-The basic structure of our input is as shown in this example.
+बीजधारिकेचे साधारण स्वरूप पुढीलप्रमाणे असते.
 
 ```latex
 \documentclass{article}
@@ -144,25 +137,22 @@ Together \citep{Graham1995,Thomas2008}
 \end{document}
 ```
 
-You can see that we can cite different entries in the database by giving their
-key. The `natbib` package offers both textual and parenthetical citation styles,
-`\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line; here we've used the `plainnat` style. The
-bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use; this is a comma-separated list of names.
+संदर्भसामग्रीतील नोंदीची कळ टाकून संदर्भ छापता येतो हे तुम्हाला पाहता येत असेल. ह्या आज्ञासंचासह
+साधे मजकूररूपी व कंसांतील संदर्भ छापता येतात. अनुक्रमे `\citet` व `\citep` ह्या आज्ञांसह.
+संदर्भांची शैली `\bibliographystyle` ह्या ओळीने निवडली जाते. ह्या उदाहरणात आपण
+`plainnat` ही शैली निवडली आहे. `\bibliography` ह्या आज्ञेने संदर्भसूची छापली जाते, ह्याच
+आज्ञेसह संदर्भसामग्रीच्या धारिकांचीही निवड केली जाते. ही यादी स्वल्पविरामांनी वेगळी केली जाते.
 
-Page references can be added to the citation with an optional argument.
-If two optional arguments are given, the first goes in front of the citation
-label for a short note and the second after the label for a page reference.
+पृष्ठक्रमांकाचे तपशील ओळीअंतर्गत संदर्भात वैकल्पिक कार्यघटकामार्फत दिले जातात. दोन कार्यघटक दिले
+असले तर त्यातील पहिला संदर्भापूर्वी येतो व दुसरा संदर्भानंतर.
 
-The setup above uses author-year style, but we can make use of numeric
-citations. That is done by adding the `numbers` option to the `natbib` line.
+वरील आज्ञावली लेखक-वर्ष ही संदर्भशैली वापरते. अनुक्रमित संदर्भदेखील वापरता येऊ
+शकतात. त्यांकरिता `natbib` आज्ञासंचास `numbers` हे प्राचल वापरावे लागते.
 
-## The `biblatex` workflow
+## `biblatex` आज्ञासंच
 
-The `biblatex` package works slightly differently to `natbib`, as we select
-the databases in the preamble but print it in the document body. There are
-some new commands for this.
+`biblatex` हा आज्ञासंच किंचित वेगळ्या प्रकारे काम करतो. ह्या आज्ञासंचासह संदर्भसामग्रीची
+धारिका आज्ञापीठातच निवडावी लागते. ह्या आज्ञासंचासह काही अधिकच्या आज्ञा शिकाव्या लागतील.
 
 ```latex
 \documentclass{article}
@@ -186,75 +176,55 @@ Together \autocite{Thomas2008,Graham1995}
 \end{document}
 ```
 
-Notice that `\addbibresource` _requires_ the full database filename, whereas
-we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for its citation commands, but these are
-all quite easy to guess.
+`\addbibresource` ह्या आज्ञेस संदर्भसामग्रीच्या धारिकेचे संपूर्ण नाव (प्रत्ययासहित)
+लागते. `natbib` आज्ञासंचासह मात्र `.bib` हा भाग आपण वगळला होता.
 
-Again, short text before and after the citation can be inserted with
-the optional arguments. Note that the page numbers need not be prefixed
-with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
-prefix.
+इथेही संदर्भांसकट लहानसा मजकूर वैकल्पिक कार्यघटकांसह जोडता येतो. बिबलाटेक्-सह `p.~` किंवा
+`pp.~` ही माहिती मात्र आपोआप भरली जाते.
 
+`biblatex` ह्या आज्ञासंचासह शैलीची निवड आज्ञासंच वापरतानाच केली जाते. इथे आपण लेखक-वर्ष ही
+शैली वापरली आहे. (`authoryear`) ह्या आज्ञासंचासहदेखील अनुक्रमित संदर्भ वापरता
+येतात. (`numeric`) तसेच आणखी अनेक शैली ह्या आज्ञासंचासह पुरवल्या जातात.
 
-In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authoryear`, but there is a `numeric` style and many others are
-also available.
+## BibTeX व `biblatex` ह्यांपैकी एकाची निवड
 
-## Choosing between the BibTeX workflow and `biblatex`
+ह्या दोन्ही आज्ञासंचांमार्फत संदर्भसामग्रीतील धारिकेतूनच माहिती गोळा केली जाते, परंतु त्यांची काम
+करण्याची पद्धत प्रचंड वेगळी आहे व त्याची ओळख करून घेतल्यास तुमच्या सोयीने एकाची निवड तुम्हाला
+करता येईल.
 
-Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
-files and can produce structurally similar output in the document, they use
-completely different ways to produce this result. That means that there are
-some differences between the two approaches that may help you choose which
-one works best for you.
+बिबटेक्-सह संदर्भांच्या शैलीची निवड `.bst` धारिकेमार्फत केली जाते व त्यासाठी
+`\bibliographystyle` ही आज्ञा बीजात वापरावी लागते. `biblatex` आज्ञासंच `.bst` धारिका
+वापरत नाही. जर संदर्भांची विशिष्ट शैली ठरवणारी `.bst` धारिका वापरण्याची आवश्यकता असेल,
+तर बिबलाटेक् वापरता येणार नाही.
 
-In the BibTeX workflow the bibliography style is ultimately decided
-by a `.bst` file which you select with the `\bibliographystyle` command.
-`biblatex` does not use `.bst` files and uses a different system.
-If you are using a template that comes with a `.bst` file or are given a `.bst`
-file for your project, you must use the BibTeX workflow and cannot use
-`biblatex`.
+बिबलाटेक्-च्या निराळ्या पद्धतीमुळे आज्ञापीठातच फलितामधील संदर्भांच्या रूपात अनेक बदल करता येणे
+शक्य आहे. बिबटेक् ह्या आज्ञावलीत अशा प्रकारे बदल करता येणे कठीण आहे. त्यासाठी तुम्हाला
+लाटेक्-बाह्य बिबटेक् ह्या आज्ञावलीची ओळख असावी लागते. ह्या कारणामुळे बिबलाटेक् अधिक लवचीक आहे
+असे मानले जाते.
 
-The different approach `biblatex` takes implies that you can modify the output
-of the bibliography and citation commands directly from your document preamble
-using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
-hand usually require working with these external files and need knowledge of
-the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customise than the BibTeX workflow.
+बिबलाटेक्-सह विस्तृत संदर्भांची हाताळणी उत्तम होते. हा आज्ञासंच अनेक स्वयंचलित सुविधाही
+पुरवतो. ह्या आज्ञासंचात संदर्भ छापण्याकरिता अनेक निरनिराळ्या आज्ञा आहेत. मानव्यविज्ञानांतील
+संदर्भांकरिता हा आज्ञासंच उपयुक्त ठरतो.
 
-In `biblatex` it is generally easier to implement more elaborate citation
-styles with a wider array of different citation commands. It also offers more
-context-dependent features. Roughly speaking this is less interesting for
-the styles common in many STEM subjects, but becomes relevant for some more
-complex styles in some areas of the humanities.
+बिबटेक् केवळ लॅटिन लिपी व इंग्रजी भाषेकरिताच काम करू शकते. बिबलाटेक्-सह युनिकोड आज्ञावली चालू
+शकते. त्यामुळे इंग्रजीतर भाषांकरिता बिबलाटेक् हीच जास्त चांगली निवड ठरते.
 
-BibTeX can only sort US-ASCII characters correctly and relies on workarounds
-to provide US-ASCII-based sorting for non-US-ASCII characters.
-With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
-is usually a better choice if you want to sort your bibliography in a
-non-ASCII/non-English order.
+बिबटेक् ही बिबलाटेक्-हून जुनी आज्ञावली असल्यामुळे तिच्यासह काम करणे हे खूप रूढ झाले आहे. अनेक
+प्रकाशक व नियतकालिके केवळ बिबटेक् वापरणाऱ्या आज्ञावल्याच स्वीकारतात व बिबलाटेक् वापरणे
+अडचणीचे ठरू शकते.
 
-Having been around for much longer than `biblatex`, the BibTeX workflow is
-more established than `biblatex`, meaning that many publishers and journals
-expect bibliographies generated via the BibTeX workflow. Those publishers
-cannot or generally do not accept submissions using `biblatex`.
+जर एखाद्या प्रकाशकास अथवा नियतकालिकास लेख पाठवू इच्छित असाल, तर त्यांच्या ह्याविषयीच्या
+विशिष्ट अपेक्षा आहेत का हे आधी तपासून घ्या. जर तुम्हाला `.bst` धारिका दिली गेली असेल, तर
+तुम्हाला बिबटेक् आज्ञावली वापरावीच लागेल. जर तुम्हाला तुलनेने सोपी आज्ञावली व केवळ इंग्रजी
+भाषेतील संदर्भ वापरायचे असतील तेव्हा बिबटेक् आज्ञावली पुरते. जर त्याहून अधिक गुंतागुंतीची संदर्भशैली
+व इंग्रजीतर भाषेत संदर्भ हवे असतील, तर बिबलाटेक् वापरणे इष्ट ठरेल.
 
-The bottom line is: Check the author/submission guidelines if you are
-submitting to a journal or publisher. If you are given a `.bst` file, you must
-use the BibTeX workflow. If you want a relatively simple bibliography and
-citation style and only need English US-ASCII-based sorting, the BibTeX workflow
-should suffice. If you need a more complex citation style, non-English sorting
-or want easier access to citation and bibliography style customisation features,
-you will want to look into using `biblatex`.
+## स्वाध्याय
 
-## Exercises
+`natbib` व `biblatex` ह्या दोघांची उदाहरणे चालवून पाहा. `natbib`करिता तुम्हाला लाटेक्,
+बिबटेक्, लाटेक्, लाटेक् हा क्रम चालवावा लागेल. बिबलाटेक्-करिता लाटेक्, बिबर, लाटेक् हा क्रम
+चालवावा लागेल. तुमच्या संपादकात हे कसे करायचे ते शिकून घ्या अथवा महाजालीय सेवा वापरा.
 
-Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
-to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and LaTeX Online
-automation.
-
-See what happens when you create new database entries and new citations. Add
-a citation that's not in the database and see how it appears. Experiment
-with `natbib`'s `numeric` and `biblatex`'s `style=numeric` option.
+जेव्हा संदर्भसामग्रीत बदल केला जातो व नवीन संदर्भांची भर घातली जाते, तेव्हा फलितात काय बदल
+होतो ते पाहा. `natbib` आज्ञासंचाच्या `numeric` प्राचलासह व `biblatex`च्या
+`style=numeric`सह फलित मिळवून पाहा.

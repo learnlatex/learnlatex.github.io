@@ -1,28 +1,25 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Using document classes to influence design"
-description: "This lesson gives information on more specialized document classes for LaTeX."
-toc-anchor-text: "More on: Using document classes to influence design"
+lang: "mr"
+title: "अधिक माहिती: दस्तऐवजाच्या ठेवणीत बदल करण्याकरिता लाटेक्-वर्ग वापरणे."
+description: "काही विशेष लाटेक्-वर्गांची माहिती ह्या प्रकरणात आपण घेऊ."
+toc-anchor-text: "अधिक माहिती: दस्तऐवजाच्या ठेवणीत बदल करण्याकरिता लाटेक्-वर्ग वापरणे."
 ---
 
-## Journal-specific classes
+## नियतकालिकांचे लाटेक्-वर्ग
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on CTAN and in standard TeX distributions.
+अनेक नियतकालिके त्यांचे स्वतःचे लाटेक्-वर्ग वापरतात. ह्यांचे फलित अंतिम दृश्यरूपाशी मिळतेजुळते
+असते. अर्थात हे टंकाच्या वापरावरही अवलंबून असते. जर अशा प्रकारे नियतकालिकाचा लाटेक्-वर्ग
+घडवला गेला असेल, तर तो बहुतांश वेळा संपादकीय कक्षातूनच पुरवला जातो, तसेच काही वेळा हे
+लाटेक्-वर्ग नियतकालिकांतर्फे सीटॅनवर प्रकाशित केले जातात.
 
-## Classes for presentations
+## सादरीकरणे
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+लाटेक्-सह सादरीकरणे तयार करता येतात. `slides` हा लाटेक्-वर्ग मुद्रित चौकटी तयार
+करण्याकरिता बनवला गेला होता, त्या लाटेक्-वर्गात पडद्यावरील सादरीकरणांसाठी कोणत्याही सोयी
+नाहीत. लाटेक्-मध्ये हे साधण्यासाठी दोन लाटेक्-वर्ग अस्तित्वात आहेत. ते अनुक्रमे `beamer` व
+`powerdot` हे होत. ह्यातील बीमर हा लाटेक्-वर्ग अधिक प्रचलित असल्याने आम्ही त्याची ओळख इथे
+करून देऊ.
 
 ```latex
 \documentclass{beamer}
@@ -44,20 +41,21 @@ give you an example of how it works:
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+ह्या उदाहरणातील ठळक मुद्दे असे की बीमरमार्फत फलित दस्तऐवजाचे विभाजन चौकटींमध्ये (frames)
+होते ज्यांमध्ये अनेक पोटचौकटी (slides) असू शकतात. ह्या लाटेक्-वर्गातर्फे नेहमीच्या
+लाटेक्-आज्ञावलीत किंचित भर पडते. पडद्यावरील दृश्य मजकूर अंशाअंशाने प्रकट करण्याची सोयदेखील ह्या
+लाटेक्-वर्गात आहे. सादरीकरणांकरिता हे खूप उपयुक्त आहे, परंतु ह्या प्रकरणाच्या उद्दिष्टात ते
+समाविष्ट नाही, त्यामुळे ह्या अभ्यासक्रमात आम्ही ते शिकवत नाही आहोत. [ह्या
+अनुदिनीवर](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/)
+बीमरमधील थांब्यांविषयी अधिक माहिती मिळवता येईल.
 
-## A class for images
+## दृश्यकांसाठीचा लाटेक्-वर्ग
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+काही वेळा लाटेक् वापरून दृश्यके बनवण्याची गरज वाटू शकते. प्रविष्ट मजकुराव्यतिरिक्त इतर कोणतीच
+गोष्ट फलितात दिसायला नको अशीही इच्छा असू शकते. ह्याकरिता
+[`standalone`](https://ctan.org/pkg/standalone) हा लाटेक्-वर्ग वापरणे उचित ठरेल.
+ह्या लाटेक्-वर्गातर्फे फलिताचा आकार आपोआप ठरवला जातो. तो मुख्यत्वे फलितातील मजकूर अथवा
+मुद्रणयोग्य सामग्रीच्या आकाराइतका असतो.
 
 ```latex
 \documentclass{standalone}

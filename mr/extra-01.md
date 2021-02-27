@@ -115,7 +115,7 @@ Position after 2.\,\xskakget{lan}
 ```
 
 <p class="hint">
-सौजन्य - [लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर](https://ctan.org/pkg/latex-mr)
+सौजन्य: लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर (https://ctan.org/pkg/latex-mr)
 </p>
 
 ## आकृत्या
