@@ -68,7 +68,7 @@ toc-anchor-text: "अधिक माहिती: दृश्यकांच�
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % नमूना मजकूर
+\usepackage{lipsum}  % नमुना मजकूर
 \usepackage{float}
 
 \begin{document}
@@ -102,7 +102,7 @@ toc-anchor-text: "अधिक माहिती: दृश्यकांच�
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % नमूना मजकूर
+\usepackage{lipsum}  % नमुना मजकूर
 \usepackage{trivfloat}
 \trivfloat{image}
 
