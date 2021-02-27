@@ -114,30 +114,31 @@ Text
 आज्ञासंचासह मराठीतून नमुना मजकूर लिहिण्याची सोयही उपलब्ध आहे.
 </p>
 
-### Log file
+### अहवाल
 
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
-
-<p class="hint">
-Depending on your desktop interface, you might need to 'show extensions' to work
-out which file it is.
-</p>
-
-In the log file, you can always see the full error messages. LaTeX's error
-messages try to be helpful, but they are not the same as messages in word
-processors.
+मदत मागताना एका गोष्टीची मागणी होऊ शकते, ती म्हणजे तुमच्या लाटेक्-चालनाचा अहवाल. हा
+`.log` नावाच्या धारिकेत लिहिला केला जातो. ह्यात लाटेक्-चालनात काय काय घडले, कोणते आज्ञासंच
+वापरले गेले, त्यांच्या कोणत्या आवृत्त्या वापरल्या गेल्या, हे कोणते टेक्-वितरण वापरले जात आहे, त्याची
+कोणती आवृत्ती वापरली जात आहे, वापरल्या जाणाऱ्या धारिका कुठल्या पत्त्यावर आहेत, अशा विविध
+प्रश्नांची उत्तरे आढळतात.
 
 <p class="hint">
-Some editors also make it hard to see the 'full' text of an error, which can
-hide key details.
+अहवालाची धारिका शोधण्याकरिता तुम्हाला धारिकांचे प्रत्यय दाखवणे सुरू करावे लागू शकते. हे
+कार्यप्रणालीवर अवलंबून आहे. लिनक्स प्रणालीवर बहुतांश वेळा प्रत्यय दाखवणे सुरूच असते.
 </p>
 
-If you have a problem, expert LaTeX users will often ask for a copy of your log
-file.
+अहवालाच्या धारिकेत कायमच तुम्हाला अडचणीचा संपूर्ण मजकूर पाहता येऊ शकतो. लाटेक्-मधील अडचणींचे
+निरोप बहुतांश वेळा अर्थपूर्ण असतात, परंतु ते इतर मजकूर-संपादकांप्रमाणे असतीलच असे नाही.
 
-### Going further
+<p class="hint">
+अनेक संपादकांकडून अडचणीचा संपूर्ण मजकूर दाखवणे टाळले जाते. हे धोकादायक आहे. त्यामुळे महत्त्वाचे
+तपशील सुटू शकतात.
+</p>
 
-Finally we offer a [gallery of small examples](./extra-01) showing a range of
-different subject areas not covered in this introduction, and different LaTeX
-packages in those areas.
+
+### पुढील अभ्यास
+
+अखेरीस आम्ही [लाटेक्-आज्ञावल्यांचे एक छोटेखानी प्रदर्शन](./extra-01) ह्या संकेतस्थळावर उपलब्ध केले
+आहे. त्यात लाटेक्-चा निरनिराळ्या क्षेत्रांतील वापर दिसतो. त्या सर्व उदाहरणांचा प्रत्यक्ष
+अभ्यासक्रमात समावेश करणे शक्य नसल्यामुळे हे प्रदर्शन तयार करण्यात आले आहे. त्यातील आज्ञासंचांच्या
+हस्तपुस्तिकांमधून अधिक माहिती मिळवता येईल.
