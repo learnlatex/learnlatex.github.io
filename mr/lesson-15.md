@@ -1,34 +1,33 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Dealing with errors"
-description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
-toc-anchor-text: "Error handling"
-toc-description: "Dealing with unexpected behaviors."
+lang: "mr"
+title: "अडचणी"
+description: "ह्या प्रकरणात लाटेक्-मध्ये येणाऱ्या अडचणी, त्यांचे अर्थ व त्या कशा सोडवाव्यात हे आपण पाहूया."
+toc-anchor-text: "अडचणी हाताळणे"
+toc-description: "अनपेक्षित गोष्टींचा सामना करणे."
 ---
 
-# Dealing with errors
+# अडचणी
 
-<span
-  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
+<span class="summary">
+ह्या प्रकरणात लाटेक्-मध्ये येणाऱ्या अडचणी, त्यांचे अर्थ व त्या कशा सोडवाव्यात हे आपण पाहूया.
+</span>
 
-Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
-closer to working with programming language compilers, and as in programming
-users may make errors in their input and so need to deal with error messages
-reported by the system.
+लाटेक् ही एक आज्ञावली आहे. तिच्या प्रक्रियेत वापरकर्त्यांकडून काही चुका होऊ शकतात व त्यांमुळे
+आज्ञावलीय विश्वात फार सहज आढळणाऱ्या अडचणींचा सामना लाटेक्-वापरकर्त्यांनाही करावा लागू
+शकतो.
 
-## Common errors
+## सर्वसामान्य अडचणी
 
-This page gives examples of several common errors. Each error example has some discussion about the form of the error
-message.
+ह्या पृष्ठावर आपण सर्वसामान्य अडचणींबाबत माहिती घेऊया. प्रत्येक अडचण तिचे कारण काय आहे
+ह्याबाबत थोडी माहिती देते.
 
-It may be instructive to try the examples but also use the
-edit features to try to fix the documents and test that you can
-resolve the errors.
+ह्यासाठी उदाहरणे चालवून पाहणे उपयुक्त ठरतेच, परंतु त्यांच्यातील अडचणी सोडवण्याचा प्रयत्न
+करणेदेखील तितकेच महत्त्वाचे.
 
 ### pdflatex not found
 
-A common first error that people see when starting is:
+अनेकदा सुरुवातीला वापरकर्त्यांना दिसणारी अडचण -
 
 ```
 'pdflatex' is not recognized as an internal or external command,
@@ -36,22 +35,21 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-on Windows or
+ही विंडोज़् प्रणालीवर व
 
 ```
 bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-on Linux.
+ही लिनक्स प्रणालीवर.
 
-This is
-not a TeX error but an operating system error saying that TeX is not
-installed or not found.  A common mistake is to install an _editor_
-such as TeXworks or TeXShop but without installing a TeX system such as
-TeX Live or MiKTeX.
+ही लाटेक्-ची अडचण नसून कार्यकारी प्रणालीची अडचण आहे. ह्या अडचणीत असे सांगितले आहे की टेक्
+संगणकावर बसवले नाही अथवा ते मला सापडले नाही. वापरकर्त्यांकडून एक सामान्य चूक होते ती अशी की
+ते केवळ लाटेक्-चा संपादक संगणकावर बसवतात व टेक्-वितरण बसवतच नाहीत. त्यामुळे ही अडचण येऊ
+शकते.
 
-### Anatomy of a {{ site.tex }} error message
+### टेक् अडचणीची चिकित्सा
 
 ```latex
 \documentclass{article}
@@ -78,22 +76,20 @@ l.8 My command is used here \mycommand
 ```
 {: .noedit :}
 
-* The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
-* The second pair of lines show the line that TeX was processing, with a line break marking the point
-  that TeX had reached. The undefined command is the last token read so the last word before the line break,
-  `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
-  an argument but have not yet been executed by TeX.
-* There may in general be some additional lines at this point, showing more context of the error message,
-* The final line starts with `l.` followed by a line number, and then the line in the source file where the
-  error is detected.
-
-* The final line is a `?`.  If using TeX interactively it is possible to
-  enter instructions to TeX at this point, but most editors and online
-  systems run TeX in a mode that does not stop at errors but will
-  scroll past this and try to process the rest of the document. Typing
-  `s` to the prompt will instruct TeX to carry on in this mode if you
-  are working interactively.
-
+* अडचणीची पहिली ओळ `!` ह्या चिन्हासह सुरू होते. हे त्या अडचणीचे सामान्य स्वरूप स्पष्ट करते. इथे
+  आज्ञेची व्याख्या झाली नाही अशी अडचण दाखवण्यात येत आहे.
+* ह्यानंतर दुसऱ्या ओळीवर टेक् ज्या ओळीवर प्रक्रिया करत होते ती ओळ दाखवण्यात येते. ही ओळ जिथे
+  संपते तिथे टेक् थांबले असा अर्थ होतो. व्याख्या न केली गेलेली आज्ञा हेच प्रक्रियेतील शेवटचे अक्षर
+  असते, त्यामुळे ओळीच्या शेवटी ते दिसत आहे. `\textbold` ही आज्ञा इथे व्याख्या न केली गेलेली
+  आहे. ओळतोडीनंतर जे शेष असते ते लिहिले जाते. टेक्-ने त्यावर अजून प्रक्रिया केली नसते. ह्या
+  उदाहरणात `{hmmm}` हा कार्यघटक अशा रीतीने टेक्-च्या प्रक्रियेतून राहिला आहे.
+* ह्यानंतर काही आणखी ओळी असू शकतात, ज्यांमुळे आज्ञेतील दोष स्पष्ट होईल.
+* शेवटची ओळ `l.` ह्या अक्षराने सुरू होते, त्यापुढे एक आकडा लिहिला असतो व शेवटी बीजधारिकेतील
+  ती ओळ लिहिली असते जिथे टेक्-ला अडचण जाणवते.
+* शेवटी `?` असते, जिथे टेक् पुढे काय करावे हा प्रश्न वापरकर्त्यास विचारते. जर तुम्ही एखादा मजकूर
+  संपादक वापरत असाल, तर बहुतांश वेळा त्यात अडचणी आल्यास न थांबता प्रक्रिया पूर्ण करण्याची
+  सोय केली असते, परंतु आज्ञापटलावरून टेक् चालवत असाल, तर मात्र टेक्-ला विविध आज्ञा सांगून
+  प्रक्रियेची पुढील दिशा ठरवता येते.
 
 Note here that TeX does not see the error at the point that
 the definition is made; and in fact if `\mycommand` is defined but not

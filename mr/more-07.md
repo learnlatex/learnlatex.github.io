@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Including graphics and making things 'float'"
-description: "This lesson gives details on how better name and store graphics files to be used with LaTeX, and how you can make your own graphics from within LaTeX."
-toc-anchor-text: "More on: Including graphics and making things 'float'"
+lang: "mr"
+title: "अधिक माहिती: दृश्यकांचा समावेश"
+description: "लाटेक्-मध्ये दृश्यके समाविष्ट करताना धारिकांची नावे काय ठेवावीत, पत्ते कसे लिहावेत अशा काही पायाभूत गोष्टींची माहिती आपण ह्या प्रकरणात घेऊया."
+toc-anchor-text: "अधिक माहिती: दृश्यकांचा समावेश"
 ---
 
 ## दृश्यकांना नावे देणे
