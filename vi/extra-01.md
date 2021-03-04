@@ -2,11 +2,15 @@
 layout: "lesson"
 lang: "vi"
 title: "Những ví dụ chuyên sâu hơn"
-description: "Một vài ví dụ cho các gói lệnh LaTeX nâng cao, được dùng cho các
-ngành và các mục đích chuyên sâu hơn."
+description: "Một vài ví dụ cho các gói lệnh LaTeX nâng cao, được dùng cho các ngành và các mục đích chuyên sâu hơn."
 toc-anchor-text: "Ví dụ bổ sung"
 toc-description: "Những ví dụ chuyên sâu hơn"
 ---
+
+# Ví dụ bổ sung
+
+<span class="summary">Một vài ví dụ cho các gói lệnh LaTeX nâng cao, được dùng
+cho các ngành và các mục đích chuyên sâu hơn.</span>
 
 Khóa này cung cấp một cái nhìn tổng quan về những tính năng của LaTeX. Ngoài
 những tính năng này, LaTeX còn có một hệ thống gói lệnh rất phong phú cho rất
@@ -15,13 +19,14 @@ mã ở đây nhưng sẽ có đường dẫn tới các hướng dẫn sử d�
 để hiểu thêm về những ví dụ này. Những ví dụ này được lấy từ chính hướng dẫn sử
 dụng gói, trừ khi được ghi rõ là không.
 
-Chú ý rằng việc sử dụng một gói ở đây không có nghĩa là chúng tôi khuyên dùng
-gói đấy hơn những gói khác có chức năng tương tự. Mục đích ở đây chỉ là một vài
-ví dụ cho thấy những công dụng phong phú mà LaTeX có thể cung cấp.
+<p class="hint">Chú ý rằng việc sử dụng một gói ở đây không có nghĩa là chúng
+tôi khuyên dùng gói đó hơn những gói khác có chức năng tương tự. Mục đích của
+bài này chỉ là đưa ra một vài ví dụ để cho thấy nhiều loại công dụng khác nhau mà
+LaTeX có thể cung cấp.</p>
 
 ## Hóa học
 
-### [`mhchem`](https://texdoc.net/pkg/mhchem)
+Gói: [`mhchem`](https://texdoc.net/pkg/mhchem)
 
 ```latex
 \documentclass{article}
@@ -33,7 +38,9 @@ ví dụ cho thấy những công dụng phong phú mà LaTeX có thể cung c�
 ```
 
 ## Ngôn ngữ học
-### [`forest`](https://texdoc.net/pkg/forest)
+
+Gói: [`forest`](https://texdoc.net/pkg/forest)
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -55,7 +62,8 @@ ví dụ cho thấy những công dụng phong phú mà LaTeX có thể cung c�
 ## Cờ
 
 <!-- not 2017 -->
-### [`xskak`](https://texdoc.net/pkg/xskak)
+Gói: [`xskak`](https://texdoc.net/pkg/xskak)
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -73,8 +81,7 @@ Position after 2.\,\xskakget{lan}
 
 ## Thơ
 
-### [`memoir`](https://texdoc.net/pkg/memoir)
-
+Gói: [`memoir`](https://texdoc.net/pkg/memoir)
 
 ```latex
 \documentclass{memoir}
@@ -108,9 +115,9 @@ Today will I depart. \\*
 ```
 
 ## Vẽ hình
-<!-- not 2017 -->
-### [`tikz`](https://texdoc.net/pkg/tikz)
 
+<!-- not 2017 -->
+Gói: [`tikz`](https://texdoc.net/pkg/tikz)
 
 <!-- {% raw %} -->
 ```latex
@@ -148,8 +155,8 @@ x
 <!-- {% endraw %} -->
 
 ## Vẽ đồ thị hàm số
-### [`pgfplots`](https://texdoc.net/pkg/plots)
 
+Gói: [`pgfplots`](https://texdoc.net/pkg/plots)
 
 <!-- {% raw %} -->
 ```latex
@@ -178,9 +185,7 @@ x
 
 ## Âm nhạc
 
-
-### [`musixtex`](https://texdoc.net/pkg/musixtex)
-
+Gói: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 <!-- {% raw %} -->
 ```latex

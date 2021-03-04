@@ -9,8 +9,11 @@ toc-description: "Hệ thống TeX và trình soạn thảo mã LaTeX"
 
 # Làm việc với LaTeX
 
+<span class="summary">Bài này nói về các hệ thống TeX thường gặp, cũng như các
+trình soạn thảo mã LaTeX thông dụng.</span>
+
 Không giống nhiều chương trình máy tính khác, LaTeX không phải là một chương
-trình bao gồm 'tất cả mọi thứ'. Thay vào đó, có nhiều chương trình khác nhau
+trình bao gồm "tất cả mọi thứ". Thay vào đó, có nhiều chương trình khác nhau
 hoạt động cùng nhau. Ta có thể chia chúng thành hai thứ mà bạn cần:
 
 - Một _hệ thống TeX_
@@ -21,7 +24,7 @@ LaTeX)
 
 Phần cốt lõi của làm việc với LaTeX là có một hệ thống TeX. Một hệ thống TeX là
 tập hợp của những chương trình và tệp cần thiết để LaTeX có thể chạy được dù
-thông thường bạn không trực tiếp 'chạy' những chương trình này.
+thông thường bạn không trực tiếp "chạy" những chương trình này.
 
 Ngày nay có hai hệ thống TeX chính, đó là [MiKTeX](https://miktex.org/) và
 [TeX Live](https://tug.org/texlive). Cả hai đều dùng được trên cả Windows, macOS
@@ -51,9 +54,9 @@ Một trình sửa mã nguồn cơ bản, [TeXworks](https://tug.org/texworks), 
 phối cùng với TeX Live và MikTeX trong Windows và Linux, và
 [TeXShop](https://pages.uoregon.edu/koch/texshop/) được phân phối trong MacTeX.
 
-Đối với bất kỳ trình sửa mã nguồn nào, chúng tôi khuyên bạn nên cài đặt nó
-_sau_ khi cài đặt hệ LaTeX, vì khi đó trình sửa mã nguồn có thể tự 'tìm' được
-hệ LaTeX và tự thiết lập các cài đặt đúng cách.
+<p class="hint">Đối với bất kỳ trình sửa mã nguồn nào, chúng tôi khuyên bạn nên
+cài đặt nó <i>sau</i> khi cài đặt hệ LaTeX, vì khi đó trình sửa mã nguồn có thể
+tự "tìm" được hệ LaTeX và tự thiết lập các cài đặt đúng cách.</p>
 
 ## Làm việc trực tuyến
 

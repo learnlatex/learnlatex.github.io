@@ -8,6 +8,11 @@ toc-anchor-text: "Tiếng Việt với LaTeX"
 toc-description: "Gõ tiếng Việt trong LaTeX"
 ---
 
+# Tiếng Việt với LaTeX
+
+<span class="summary">Bài này sẽ hướng dẫn cách sử dụng LaTeX để gõ các văn bản
+bằng tiếng Việt, và giới thiệu các gói lệnh liên quan.</span>
+
 ## Gõ tiếng Việt với pdfLaTeX
 
 pdfLaTeX mặc định _không_ hỗ trợ tiếng Việt. Để có thể dùng tiếng Việt, bạn cần

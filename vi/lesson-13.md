@@ -7,7 +7,11 @@ toc-anchor-text: "Chia nhỏ văn bản"
 toc-description: "Chia nhỏ và hệ thống hóa văn bản dài"
 ---
 
-# Cấu trúc cho các văn bản dài
+# Chia nhỏ văn bản
+
+<span class="summary">Bài này sẽ hướng dẫn cách làm việc với những văn bản dài:
+cách chia mã văn bản thành nhiều phần, làm việc trên từng phần và gộp các phần
+lại với nhau.</span>
 
 <script>
 preincludes = {
