@@ -120,6 +120,25 @@ Chú ý các ký tự `^` và `_` được dùng cho các cận của dấu tíc
 đã thêm một khoảng trống giữa `e^{-x^2}` với `dx` bằng `\,`; khoảng trống này để
 làm cho nó không giống một phép nhân của `e^{-x^2}` và `dx`.
 
+Tùy nơi mà cách viết ký hiệu vi phân khác nhau: một số nhà xuất bản sử dụng chữ
+"d" đứng thẳng (d*x*), trong khi số còn lại lại sử dụng "d" in nghiêng (*dx*).
+Để viết một văn bản mà có thể chuyển từ dạng này sang dạng kia tùy ý, ta có thể
+định nghĩa thêm một lệnh `\diff`, ví dụ như
+[ở đây](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf).
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\newcommand{\diff}{\mathop{}\!d}            % d in nghiêng
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % d in thẳng
+\begin{document}
+A paragraph about a larger equation
+\[
+\int_{-\infty}^{+\infty} e^{-x^2} \diff x
+\]
+\end{document}
+```
+
 Ta có thể cần đánh số công thức toán &ndash; điều này có thể được thực hiện với
 môi trường `equation`.
 
