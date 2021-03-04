@@ -80,3 +80,9 @@ defaults:
     values:
       lang: "tr"
       label: "Türkçe"
+  -
+    scope:
+      path: "mr"
+    values:
+      lang: "mr"
+      label: "मराठी"

@@ -1,5 +1,6 @@
 <ul 
   class="lessons-toc">
+  {% assign mrdigits="०,१,२,३,४,५,६,७,८,९,१०,११,१२,१३,१४,१५,१६,१७" | split: "," %}
   {% assign splitprefix = include.prefix | split: "/" %}
   {% assign l = splitprefix[0] %}
   {% for page in site.pages | sort: 'path' %}
@@ -18,7 +19,12 @@
               {% else %}
                 {% assign pp = "-" | prepend: include.prefix %}
               {% endif %}
-              {{ page.path | replace: '.md','' | replace: pp ,'' }}</span>
+              {% if l == "mr" %}
+                {% assign pageno = page.path | replace: '.md','' | replace: pp ,'' | floor %}
+                {{ mrdigits[pageno] }}
+              {% else %}
+                {{ page.path | replace: '.md','' | replace: pp ,'' }}
+              {% endif %}</span>
             <span
               class="lessons-toc__heading">
               {{ page.toc-anchor-text }}</span>
