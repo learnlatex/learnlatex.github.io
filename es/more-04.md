@@ -2,12 +2,14 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Estructura lógica de un documento"
+description: "Esta lección muestra como configurar el título de un documento y cómo hacer listas descriptivas."
+toc-anchor-text: "Más sobre: Estructura lógica de un documento"
 ---
 
 ## Título de un documento
 
 LaTeX ofrece varios marcadores lógicos para definir los títulos de los documentos: 
-hay tres comandos para definir los "metadatos" y uno para usarlos.
+hay tres comandos para definir los «metadatos» y uno para usarlos.
 
 ```latex
 \documentclass{article}
@@ -26,7 +28,7 @@ Como puede ver, los comandos `\author`, `\title` y `\date` guardan información,
 y `\maketitle` la usa. También puede separar varios autores con `\and`.
 Los comandos `\author`, `\title` y `\date` deber preceder a `\maketitle`.
 Aquí, los hemos puesto en el cuerpo del documento: pueden ser usados también en el
-preámbulo, pero si utiliza los accesos rápidos de "babel" estos comados no estarán 
+preámbulo, pero si utiliza los accesos rápidos de «babel» estos comados no estarán 
 activos en esta zona. 
 
 El diseño propuesto por `\maketitle` dependerá del tipo de documento (ver [lección
@@ -38,8 +40,8 @@ y usarlo como punto de partida.
 
 ## Listas descriptivas
 
-Además de las listas "numeradas" y "no numeradas", LaTeX proporciona otro tipo, 
-menos común: las "listas descriptivas"
+Además de las listas «numeradas» y «no numeradas», LaTeX proporciona otro tipo, 
+menos común: las «listas descriptivas»
 
 ```latex
 \documentclass{article}

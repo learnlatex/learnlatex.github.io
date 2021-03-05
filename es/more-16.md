@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Accediendo a la documentación y buscando ayuda"
+description: "Esta lección le muestra como buscar más ayuda sobre LaTeX usted mismo."
+toc-anchor-text: "Más sobre: Accediendo a la documentación y buscando ayuda"
 ---
 
 

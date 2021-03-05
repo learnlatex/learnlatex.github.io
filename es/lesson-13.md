@@ -2,8 +2,9 @@
 layout: "lesson"
 lang: "es"
 title: "Estructurando documentos largos"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra cómo LaTeX le permite dividir su código fuente en ficheros más pequeños y manejables con el fin de realizar documentos largos fácil y rápidamente."
+toc-anchor-text: "Estructurando su código fuente "
+toc-description: "Dividiendo su código fuente de forma estructurada."
 ---
 
 # Estructurando documentos largos
@@ -24,16 +25,19 @@ preincludes = {
 }
 </script>
 
-## Estructurando sus archivos fuente
+<span
+  class="summary">Esta lección muestra cómo LaTeX le permite dividir su código fuente en ficheros más pequeños y manejables con el fin de realizar documentos largos fácil y rápidamente.</span>
 
 Cuando escriba un documento largo, seguramente querrá separar el contenido del
 del documento en varios archivos. Por ejemplo, es muy común el tener
-un archivo principal "main"/"root" y otros archivos secundarios: uno por cada capítulo
+un archivo principal «main»/«root» y otros archivos secundarios: uno por cada capítulo
 (en un libro o una tesis) o por cada sección (en un artículo largo).
+
+## Estructurando sus archivos fuente
 
 LaTeX le permite separar su contenido de forma controlada. Hay dos comandos importantes
 para hacer esto: `\input` e `\include`. Podemos usar `\input` para hacer que el contenido
-de un archivo funcione "como si estuviese escrito en ese punto", con lo que puede ser 
+de un archivo funcione «como si estuviese escrito en ese punto», con lo que puede ser 
 usado (esencialmente) para insertar cualquier tipo de contenido. El comado `\include` 
 se usa únicamente para capítulos: comienza una nueva página y realiza algunos ajustes
 internos. Pero presenta una gran ventaja: nos permite seleccionar los capítulos que
@@ -95,8 +99,8 @@ El comado `\input` es apropiado para partes de un documento largo que _no_ sean 
 independientes. En el ejemplo, lo hemos usado para separar la portada y la cubierta 
 posterior, haciendo que el archivo principal sea más corto y conciso; y pudiendo
 reutilizar la portada y la contraportada en otro documento. Lo hemos utilizado también
-con las secciones que "no son capítulos" de por sí y que se encuentran al principio de 
-nuestro "libro": como el prefacio. De nuevo, esto permite simplificar el archivo 
+con las secciones que «no son capítulos» de por sí y que se encuentran al principio de 
+nuestro «libro»: como el prefacio. De nuevo, esto permite simplificar el archivo 
 principal.
 
 ## Usando `\include` e `\includeonly`
@@ -105,7 +109,7 @@ El comando `\include` es apropiado para los capítulos, razón por la que lo hem
 para incluir cada capítulo; comienza siempre con una nueva página. Hemos seleccionado los
 capítulos que van a ser compilados con el comando `\includeonly`, que como ha visto
 toma como argumento una lista de nombres de archivo separados por comas. Al usar
-`\includeonly` puede reducir el tiempo de compilación y producir un PDF "selectivo" para
+`\includeonly` puede reducir el tiempo de compilación y producir un PDF «selectivo» para
 revisiones. Además, la principal ventaja de `\includeonly` es que LaTeX utilizará toda
 la información de las referencias cruzadas de los archivos `.aux` correspondientes a los 
 otros archivos incluidos en el documento.
@@ -137,7 +141,7 @@ intente añadir y quitar partes en `\includeonly` para ver el efecto que tiene.
 
 Añada algunos objetos flotantes y cree un índice de tablas y figuras.
 Si usa una instalación local de LaTeX, vea ¿cuántas compilaciones son necesarias? (El
-sistema en línea compila varias veces LaTeX "en segundo plano" así que no notará
+sistema en línea compila varias veces LaTeX «en segundo plano» así que no notará
 las compilaciones sucesivas necesarias).
 
 ----

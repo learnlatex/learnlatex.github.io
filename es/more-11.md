@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Formateando el texto: fuentes y espaciado"
+description: "Esta lección muestra como eliminar la sangría de un párrafo."
+toc-anchor-text: "Más sobre: Formateando el texto: fuentes y espaciado"
 ---
 
 ## Suprimiendo la identación de un único párrafo

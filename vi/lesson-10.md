@@ -7,7 +7,11 @@ toc-anchor-text: "Công thức toán học"
 toc-description: "Chế độ toán trong LaTeX"
 ---
 
-# Các công thức toán học
+# Công thức toán học
+
+<span class="summary">Bài này giải thích các cách khác nhau để thêm các công
+thức toán học vào văn bản, cũng như một vài lệnh công thức toán cơ bản trong
+LaTeX.</span>
 
 ## Chế độ toán (math mode)
 
@@ -34,9 +38,11 @@ See how the paragraph continues after the display.
 Ta có thể thấy các câu lệnh toán "giống LaTeX" xuất hiện ở nhiều chỗ khác, ví dụ
 như thư viện MathJax để hiện công thức toán học trên các trang web. Những thư
 viện như vậy thường thực hiện những thay đổi nhỏ đối với cú pháp của LaTeX vì
-nó không hề dùng LaTeX! Các ví dụ ở đây đều dùng LaTeX "chính xác", do đó nếu
-bạn thấy cú pháp hơi khác ở những chỗ khác, có thể những chỗ đó đang dùng một
-thứ không phải LaTeX.
+chúng, trên thực tế, thường không hề dùng LaTeX!
+
+<p class="hint">Các ví dụ ở đây đều dùng LaTeX <i>chính xác</i>, do đó nếu bạn
+thấy nó hơi khác ở những chỗ khác, có thể những chỗ đó đang dùng một thứ không
+phải LaTeX.</p>
 
 ## Chế độ toán inline và các ký hiệu toán học
 
@@ -113,6 +119,25 @@ A paragraph about a larger equation
 Chú ý các ký tự `^` và `_` được dùng cho các cận của dấu tích phân. Ngoài ra, ta
 đã thêm một khoảng trống giữa `e^{-x^2}` với `dx` bằng `\,`; khoảng trống này để
 làm cho nó không giống một phép nhân của `e^{-x^2}` và `dx`.
+
+Tùy nơi mà cách viết ký hiệu vi phân khác nhau: một số nhà xuất bản sử dụng chữ
+"d" đứng thẳng (d*x*), trong khi số còn lại lại sử dụng "d" in nghiêng (*dx*).
+Để viết một văn bản mà có thể chuyển từ dạng này sang dạng kia tùy ý, ta có thể
+định nghĩa thêm một lệnh `\diff`, ví dụ như
+[ở đây](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf).
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\newcommand{\diff}{\mathop{}\!d}            % d in nghiêng
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % d in thẳng
+\begin{document}
+A paragraph about a larger equation
+\[
+\int_{-\infty}^{+\infty} e^{-x^2} \diff x
+\]
+\end{document}
+```
 
 Ta có thể cần đánh số công thức toán &ndash; điều này có thể được thực hiện với
 môi trường `equation`.

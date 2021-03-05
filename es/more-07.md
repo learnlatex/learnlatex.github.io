@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Incluyendo imágenes y haciendo que las cosas \"floten\""
+description: "Esta lección da detalles sobre como dar nombres y guardar las imágenes que serán usadas en LaTeX y cómo puede realizar sus propias figuras con LaTeX."
+toc-anchor-text: "Más sobre: Incluyendo imágenes y haciendo que las cosas \"floten\""
 ---
 
 ## Nombrando los archivos de imágenes
@@ -83,7 +85,7 @@ salida, justo en el mismo sitio en el que se encuentra situada en el documento.
 \end{document}
 ```
 
-Note el uso de la opción `H`, que coloca la figura "estrictamente Aquí" (Aquí, Here en inglés). 
+Note el uso de la opción `H`, que coloca la figura «estrictamente Aquí» (Aquí, Here en inglés). 
 Sin embargo, a menudo se desaconseja el uso de `H`, ya que puede dejar
 grandes espacios en blanco en su documento.
 

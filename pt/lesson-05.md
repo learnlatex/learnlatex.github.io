@@ -95,7 +95,7 @@ apenas uma classe `memoir` que é como uma extensão de `book`.
 Essas classes extendidas têm muitos pontos de personalização, que vamos explorar
 um pouco em um exercício.  Você pode se perguntar como sabemos quais são esses
 pontos de personalização;  vamos abordar isso
-[em uma lição adiante](lesson-15), mas você pode pular se quiser!
+[em uma lição adiante](lesson-16), mas você pode pular se quiser!
 
 ## Apresentações
 

@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Extendendiendo LaTeX usando paquetes"
+description: "Esta lección da más detalles sobre el uso de paquetes, muestra el uso del paquete babel para la selección del idioma y da más información sobre los comandos creados por el usuario."
+toc-anchor-text: "Más sobre: Extendendiendo LaTeX usando paquetes"
 ---
 
 ## Cargando varios paquetes
@@ -17,7 +19,7 @@ acostumbrémonos a cargar un solo paquete por línea.
 Ya mostramos el uso del paquete `babel` [en la sección principal de la lección](lesson-06) con el
 fin de elegir diferentes patrones de separación silábica. Pero este paquete hace mucho más
 que eso, en función del idioma usado. Por ejemplo, en alemán, proporciona algunas abreviaturas
-para la creación de guiones "suaves" y también una forma rápida de escribir diéresis sin
+para la creación de guiones «suaves» y también una forma rápida de escribir diéresis sin
 necesidad de usar un teclado alemán.
 
 ```latex
@@ -42,7 +44,7 @@ como `:`, y este espacio es añadido automáticamente si usted carga `babel` con
 
 Algunas veces, le puede interesar que una opción o parámetro se aplique a todos los paquetes
 que usted cargue. Esto es posible hacerlo, indicando esta opción en la línea `\documentclass`:
-cada paquete puede "ver" esta lista de opciones. Por consiguiente, para pasar como opción
+cada paquete puede «ver» esta lista de opciones. Por consiguiente, para pasar como opción
 el idioma de un documento a todos los paquetes del mismo, debemos usar:
 
 ```latex

@@ -15,9 +15,9 @@ các tệp PDF.
 ## Định dạng TeX và trình biên dịch gốc
 
 Như đã được mô tả [trước đó](more-01), LaTeX được phát triển trên một hệ gọi là
-TeX. Ta gọi LaTeX là một 'định dạng': một tập hợp các macros (câu lệnh, v.v...)
+TeX. Ta gọi LaTeX là một "định dạng": một tập hợp các macros (câu lệnh, v.v...)
 mà TeX có thể hiểu được. Khi bạn chạy `pdflatex`, _thực ra_ bạn đang chạy một
-chương trình gọi là 'pdfTeX' đã dùng sẵn định dạng LaTeX. Ta thường gọi pdfTeX
+chương trình gọi là "pdfTeX" đã dùng sẵn định dạng LaTeX. Ta thường gọi pdfTeX
 là một _trình biên dịch gốc_: một chương trình có thể hiểu được những gì TeX yêu 
 cầu thực hiện.
 
