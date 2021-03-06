@@ -145,7 +145,7 @@ Abstand vor `dx`. Die Formatierung des Differentialoperators variiert: Manche
 Herausgeber nutzen ein aufrechtes 'd', andere ein kursives '_d_'. Eine Lösung,
 um die Anforderungen an den Differentialoperator flexibel zu erfüllen, ist das
 Definieren und Verwenden eines Befehls `\diff`, der leicht angepasst werden
-kann, [z.B. so](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf):
+kann, [z.B. so](https://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf):
 
 ```latex
 \documentclass{article}
@@ -187,8 +187,8 @@ bestimmt und hier nicht weiter beschrieben.
 Mathematische Notation ist extrem vielseitig, woraus folgt, dass die in LaTeX
 eingebauten Werkzeuge nicht alles abdecken können. Das `amsmath` Paket erweitert
 den LaTeX-Kern und deckt so viele weitere Bereiche ab. Die
-[`amsmath` Anleitung](http://texdoc.net/pkg/amsmath) enthält viel mehr Beispiele
-als wir in dieser Lektion zeigen können.
+[`amsmath` Anleitung](https://texdoc.net/pkg/amsmath) enthält viel mehr
+Beispiele als wir in dieser Lektion zeigen können.
 
 ```latex
 \documentclass{article}
