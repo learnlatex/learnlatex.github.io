@@ -19,7 +19,7 @@ function llexamples() {
 	p[i].setAttribute("id","pre" + i);
 	// class=noedit on pre or {: .class :} after closing ``` in markdown
 	if(!(p[i].classList.contains('noedit') || p[i].parentNode.parentNode.classList.contains('noedit'))) {
-	if(p[i].textContent.indexOf("\\documentclass") !== -1) {
+	if(p[i].textContent.indexOf("\\documentclass") !== -1 || p[i].textContent.indexOf("\\starttext") !== -1) {
 	    // space
 	    var s = document.createElement("div");
 	    s.setAttribute("class",'ace-spacer');
