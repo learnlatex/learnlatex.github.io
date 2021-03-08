@@ -70,7 +70,7 @@ código LaTeX y se asemejan a tener una instalación local de LaTeX.
 
 Hay sistemas que le permiten ejecutar LaTeX sin necesidad de registrarse. Nosotros
 vamos a usar uno de ellos: 
-[LaTeX CGI](https://latexcgi.xyz), que le permitirá
+[TexLive.net](https://texlive.net), que le permitirá
 editar y probar los ejemplos que le daremos. Para actividades más complejas, los mejores
 sistemas en línea requieren que se registre antes de usarlos. Esto le permitira a usted guardar
 su trabajo y a los sitios web el evitar estar sobrecargados. Hemos configurado

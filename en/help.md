@@ -75,7 +75,7 @@ return to it later.
 ##### Use a LaTeX online service
 
 The <button>LaTeX Online</button> button, below the example, will submit the code to the 
-[LaTeX CGI](https://latexcgi.xyz/) service[^1].
+[TexLive.net](https://texlive.net) service[^1].
 
 The LaTeX CGI service was developed specifically to support this site, and
 in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
