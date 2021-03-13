@@ -1,3 +1,6 @@
+// runlatex.js for TeXLive.net and Overleaf
+// Copyright 2020 2021 David Carlisle
+// MIT Licence
 
 var preincludes={};
 
