@@ -18,7 +18,7 @@ areas.  We give here some examples, with no explanation here but links
 to the package documentation at [texdoc.net](https://texdoc.net).
 The examples are taken from the package documentation unless otherwise noted.
 
-<p 
+<p
   class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
 
 ## Chemistry
@@ -38,23 +38,7 @@ Package: [`mhchem`](https://texdoc.net/pkg/mhchem)
 
 Package: [`forest`](https://texdoc.net/pkg/forest)
 
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage[linguistics]{forest}
-\begin{document}
-\begin{forest}
-[VP
-  [DP[John]]
-  [V’
-    [V[sent]]
-    [DP[Mary]]
-    [DP[D[a]][NP[letter]]]
-  ]
-]
-\end{forest}
-\end{document}
-```
+{% include extra-01-example-forest.md %}
 
 ## Chess
 
