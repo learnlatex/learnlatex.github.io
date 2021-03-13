@@ -30,55 +30,20 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ### आज्ञासंच: [`mhchem`](https://texdoc.net/pkg/mhchem)
 
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{mhchem}
-\begin{document}
-\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
-\end{document}
-```
+{% include extra-01-example-mchem.md %}
 
 ## भाषाविज्ञान
 
 ### आज्ञासंच: [`forest`](https://texdoc.net/pkg/forest)
 
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage[linguistics]{forest}
-\begin{document}
-\begin{forest}
-[VP
-  [DP[John]]
-  [V’
-    [V[sent]]
-    [DP[Mary]]
-    [DP[D[a]][NP[letter]]]
-  ]
-]
-\end{forest}
-\end{document}
-```
+{% include extra-01-example-forest.md %}
 
 ## बुद्धिबळ
 
 <!-- not 2017 -->
 ### आज्ञासंच: [`xskak`](https://texdoc.net/pkg/xskak)
 
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{xskak}
-\begin{document}
-\newchessgame
-\mainline{1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6}
-
-\xskakset{moveid=2w}%
-\chessboard[setfen=\xskakget{nextfen}]\\[1ex]
-Position after 2.\,\xskakget{lan}
-\end{document}
-```
+{% include extra-01-example-xskak %}
 
 ## काव्य
 
@@ -89,6 +54,9 @@ Position after 2.\,\xskakget{lan}
 <p class="hint">
 हे उदाहरण मेमॉयरच्या दस्तऐवजातील नाही आहे.
 </p>
+
+<!-- This code example has been translated, so is not included like the others
+     It also requires lualatex which the others don't --->
 
 ```latex
 %!TeX lualatex
@@ -101,13 +69,13 @@ Position after 2.\,\xskakget{lan}
 \begin{verse}[\versewidth]
   ऐल तटावर पैल तटावर हिरवाळी घेऊन\\
   निळासांवळा झरा वाहतो बेटाबेटातून.
-  
+
   चार घरांचे गांव चिमुकले पैल टेकडीकडे\\
   शेतमळ्यांची दाट लागली हिरवी गरदी पुढे.
-  
+
   पायवाट पांढरी तयांतुन अडवी तिडवी पडे\\
   हिरव्या कुरणांमधुनि चालली काळ्या डोहाकडे.
-  
+
   झांकळुनी जळ गोड काळिमा पसरी लाटांवर\\
   पाय टाकुनी जळांत बसला असला औदुंबर.
 \end{verse}
@@ -124,38 +92,7 @@ Position after 2.\,\xskakget{lan}
 आज्ञासंच: [`tikz`](https://texdoc.net/pkg/tikz)
 
 <!-- {% raw %} -->
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{tikz}
-\usetikzlibrary {perspective}
-
-\begin{document}
-
-\newcommand\simplecuboid[3]{%
-\fill[gray!80!white] (tpp cs:x=0,y=0,z=#3)
--- (tpp cs:x=0,y=#2,z=#3)
--- (tpp cs:x=#1,y=#2,z=#3)
--- (tpp cs:x=#1,y=0,z=#3) -- cycle;
-x
-\fill[gray] (tpp cs:x=0,y=0,z=0)
--- (tpp cs:x=0,y=0,z=#3)
--- (tpp cs:x=0,y=#2,z=#3)
--- (tpp cs:x=0,y=#2,z=0) -- cycle;
-\fill[gray!50!white] (tpp cs:x=0,y=0,z=0)
--- (tpp cs:x=0,y=0,z=#3)
--- (tpp cs:x=#1,y=0,z=#3)
--- (tpp cs:x=#1,y=0,z=0) -- cycle;}
-\newcommand{\simpleaxes}[3]{%
-\draw[->] (-0.5,0,0) -- (#1,0,0) node[pos=1.1]{x};
-\draw[->] (0,-0.5,0) -- (0,#2,0) node[pos=1.1]{y};
-\draw[->] (0,0,-0.5) -- (0,0,#3) node[pos=1.1]{z};}
-\begin{tikzpicture}[3d view]
-   \simplecuboid{2}{2}{2}
-   \simpleaxes{2}{2}{2}
-\end{tikzpicture}
-\end{document}
-```
+{% include extra-01-example-tikz.md %}
 <!-- {% endraw %} -->
 
 ## आलेख
@@ -163,28 +100,7 @@ x
 आज्ञासंच: [`pgfplots`](https://texdoc.net/pkg/plots)
 
 <!-- {% raw %} -->
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{pgfplots}
-\pgfplotsset{width=7cm,compat=1.17}
-
-\begin{document}
-
-\begin{tikzpicture}
-\begin{axis}[]
-      % density of Normal distribution:
-      \addplot [
-            red,
-            domain=-3e-3:3e-3,
-            samples=201,
-      ]
-            {exp(-x^2 / (2e-3^2)) / (1e-3 * sqrt(2*pi))};
-\end{axis}
-\end{tikzpicture}
-
-\end{document}
-```
+{% include extra-01-example-pgfplots.md %}
 <!-- {% endraw %} -->
 
 ## पाश्चात्त्य शास्त्रीय संगीत
@@ -192,35 +108,5 @@ x
 आज्ञासंच: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 <!-- {% raw %} -->
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{musixtex}
-
-\begin{document}
-
-\begin{music}
-\parindent10mm
-\instrumentnumber{1}
-% a single instrument
-\setname1{Piano}
-% whose name is Piano
-\setstaffs1{2}
-% with two staffs
-\generalmeter{\meterfrac44}
-% 4/4 meter chosen
-\startextract
-% starting real score
-\Notes\ibu0f0\qb0{cge}\tbu0\qb0g|\hl j\en
-\Notes\ibu0f0\qb0{cge}\tbu0\qb0g|\ql l\sk\ql n\en
-\bar
-\Notes\ibu0f0\qb0{dgf}|\qlp i\en
-\notes\tbu0\qb0g|\ibbl1j3\qb1j\tbl1\qb1k\en
-\Notes\ibu0f0\qb0{cge}\tbu0\qb0g|\hl j\en
-\zendextract
-% terminate excerpt
-\end{music}
-
-\end{document}
-```
+{% include extra-01-example-musixtex.md %}
 <!-- {% endraw %} -->
