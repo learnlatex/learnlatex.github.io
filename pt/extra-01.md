@@ -37,7 +37,7 @@ contrário.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage{forest}
+\usepackage[linguistics]{forest}
 \begin{document}
 \begin{forest}
 [VP

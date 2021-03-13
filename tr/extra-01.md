@@ -35,7 +35,7 @@ The examples are taken from the package documentation unless otherwise noted.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage{forest}
+\usepackage[linguistics]{forest}
 \begin{document}
 \begin{forest}
 [VP
