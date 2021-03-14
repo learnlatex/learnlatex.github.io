@@ -38,7 +38,7 @@ Package: [`forest`](https://texdoc.net/pkg/forest)
 <!-- not 2017 -->
 Package: [`xskak`](https://texdoc.net/pkg/xskak)
 
-{% include extra-01-example-xskak %}
+{% include extra-01-example-xskak.md %}
 
 
 ## Poetry

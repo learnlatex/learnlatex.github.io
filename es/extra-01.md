@@ -38,7 +38,7 @@ Estos ejemplos han sido sacados, en su mayoría, de la documentación del paquet
 <!-- not 2017 -->
 ### [`xskak`](https://texdoc.net/pkg/xskak)
 
-{% include extra-01-example-xskak %}
+{% include extra-01-example-xskak.md %}
 
 
 ## Poetry

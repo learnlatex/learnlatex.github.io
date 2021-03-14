@@ -43,7 +43,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 <!-- not 2017 -->
 ### आज्ञासंच: [`xskak`](https://texdoc.net/pkg/xskak)
 
-{% include extra-01-example-xskak %}
+{% include extra-01-example-xskak.md %}
 
 ## काव्य
 
