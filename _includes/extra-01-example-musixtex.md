@@ -1,3 +1,4 @@
+<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -29,3 +30,4 @@
 
 \end{document}
 ```
+<!-- {% endraw %} -->

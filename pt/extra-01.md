@@ -50,17 +50,17 @@ contrário.
 ### [`tikz`](https://texdoc.net/pkg/tikz)
 
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-tikz.md %}
-<!-- {% endraw %} -->
+
 
 ## Plotagem de funções
 ### [`pgfplots`](https://texdoc.net/pkg/plots)
 
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-pgfplots.md %}
-<!-- {% endraw %} -->
+
 
 ## Música
 
@@ -68,6 +68,5 @@ contrário.
 ### [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-musixtex.md %}
-<!-- {% endraw %} -->

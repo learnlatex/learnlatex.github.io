@@ -1,3 +1,5 @@
+
+<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -6,3 +8,4 @@
 \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
 \end{document}
 ```
+<!-- {% endraw %} -->

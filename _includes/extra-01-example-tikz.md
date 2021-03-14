@@ -1,3 +1,4 @@
+<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -30,3 +31,4 @@ x
 \end{tikzpicture}
 \end{document}
 ```
+<!-- {% endraw %} -->

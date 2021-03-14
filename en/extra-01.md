@@ -52,23 +52,22 @@ Package: [`memoir`](https://texdoc.net/pkg/memoir)
 <!-- not 2017 -->
 Package: [`tikz`](https://texdoc.net/pkg/tikz)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-tikz.md %}
-<!-- {% endraw %} -->
+
 
 ## Function plotting
 
 Package: [`pgfplots`](https://texdoc.net/pkg/plots)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-pgfplots.md %}
-<!-- {% endraw %} -->
+
 
 ## Music
 
 Package: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-musixtex.md %}
-<!-- {% endraw %} -->

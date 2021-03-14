@@ -58,6 +58,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 <!-- This code example has been translated, so is not included like the others
      It also requires lualatex which the others don't --->
 
+<!-- {% raw %} -->
 ```latex
 %!TeX lualatex
 \documentclass{memoir}
@@ -81,32 +82,33 @@ toc-description: "पुढील अभ्यासासाठीची उद
 \end{verse}
 \end{document}
 ```
+<!-- {% endraw %} -->
 
 <p class="hint">
 सौजन्य: लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर (https://ctan.org/pkg/latex-mr)
 </p>
+
 
 ## आकृत्या
 
 <!-- not 2017 -->
 आज्ञासंच: [`tikz`](https://texdoc.net/pkg/tikz)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-tikz.md %}
-<!-- {% endraw %} -->
+
 
 ## आलेख
 
 आज्ञासंच: [`pgfplots`](https://texdoc.net/pkg/plots)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-pgfplots.md %}
-<!-- {% endraw %} -->
+
 
 ## पाश्चात्त्य शास्त्रीय संगीत
 
 आज्ञासंच: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-musixtex.md %}
-<!-- {% endraw %} -->

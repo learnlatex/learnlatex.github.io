@@ -56,24 +56,23 @@ Extension [`memoir`](https://texdoc.net/pkg/memoir)
 <!-- not 2017 -->
 Extension [`tikz`](https://texdoc.net/pkg/tikz)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-tikz.md %}
-<!-- {% endraw %} -->
+
 
 
 ## Tracé de fonction mathématique
 
 Extension [`pgfplots`](https://texdoc.net/pkg/plots)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-pgfplots.md %}
-<!-- {% endraw %} -->
+
 
 
 ## Musique
 
 Extension [`musixtex`](https://texdoc.net/pkg/musixtex)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-musixtex.md %}
-<!-- {% endraw %} -->

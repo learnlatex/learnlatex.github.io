@@ -48,17 +48,17 @@ The examples are taken from the package documentation unless otherwise noted.
 ### [`tikz`](https://texdoc.net/pkg/tikz)
 
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-tikz.md %}
-<!-- {% endraw %} -->
+
 
 ## Function plotting
 ### [`pgfplots`](https://texdoc.net/pkg/plots)
 
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-pgfplots.md %}
-<!-- {% endraw %} -->
+
 
 ## Music
 
@@ -66,6 +66,5 @@ The examples are taken from the package documentation unless otherwise noted.
 ### [`musixtex`](https://texdoc.net/pkg/musixtex)
 
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-musixtex.md %}
-<!-- {% endraw %} -->

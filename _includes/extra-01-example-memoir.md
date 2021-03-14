@@ -1,3 +1,4 @@
+<!-- {% raw %} -->
 ```latex
 \documentclass{memoir}
 \usepackage[T1]{fontenc}
@@ -28,3 +29,4 @@ Today will I depart. \\*
 \end{verse}
 \end{document}
 ```
+<!-- {% endraw %} -->

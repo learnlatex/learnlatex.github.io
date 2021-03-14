@@ -55,22 +55,21 @@ Gói: [`memoir`](https://texdoc.net/pkg/memoir)
 <!-- not 2017 -->
 Gói: [`tikz`](https://texdoc.net/pkg/tikz)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-tikz.md %}
-<!-- {% endraw %} -->
+
 
 ## Vẽ đồ thị hàm số
 
 Gói: [`pgfplots`](https://texdoc.net/pkg/plots)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-pgfplots.md %}
-<!-- {% endraw %} -->
+
 
 ## Âm nhạc
 
 Gói: [`musixtex`](https://texdoc.net/pkg/musixtex)
 
-<!-- {% raw %} -->
+
 {% include extra-01-example-musixtex.md %}
-<!-- {% endraw %} -->

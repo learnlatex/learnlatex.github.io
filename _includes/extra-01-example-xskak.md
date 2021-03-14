@@ -1,3 +1,4 @@
+<!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -11,3 +12,4 @@
 Position after 2.\,\xskakget{lan}
 \end{document}
 ```
+<!-- {% endraw %} -->
