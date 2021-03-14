@@ -35,7 +35,7 @@ contrário.
 <!-- not 2017 -->
 ### [`xskak`](https://texdoc.net/pkg/xskak)
 
-{% include extra-01-example-xskak %}
+{% include extra-01-example-xskak.md %}
 
 
 ## Poesia

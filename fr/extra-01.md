@@ -41,7 +41,7 @@ Extension [`forest`](https://texdoc.net/pkg/forest)
 <!-- not 2017 -->
 Extension [`xskak`](https://texdoc.net/pkg/xskak)
 
-{% include extra-01-example-xskak %}
+{% include extra-01-example-xskak.md %}
 
 
 ## Poésie

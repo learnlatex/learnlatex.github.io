@@ -41,7 +41,7 @@ Gói: [`forest`](https://texdoc.net/pkg/forest)
 <!-- not 2017 -->
 Gói: [`xskak`](https://texdoc.net/pkg/xskak)
 
-{% include extra-01-example-xskak %}
+{% include extra-01-example-xskak.md %}
 
 
 ## Thơ
