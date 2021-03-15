@@ -90,6 +90,7 @@ un ejemplo que muestra algunas letras latinas y griegas e igualmente algunos ide
 CJK:
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}

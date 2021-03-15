@@ -119,8 +119,6 @@ function openinoverleaf(nd) {
 	    addinput(fm,"snip_name[]","latexmkrc");
 	    engv="latex_dvipdf";
 	}
-    } else if(t.indexOf("fontspec") !== -1) {
-	engv="xelatex";
     }
     addinput(fm,"engine",engv);
     fm.submit();
@@ -176,8 +174,6 @@ function latexcgi(nd) {
     var eng=t.match(engineregex);
     if(eng != null) {
 	engv=eng[1].toLowerCase();
-    } else if(t.indexOf("fontspec") !== -1) {
-	engv="xelatex";
     }
     addinput(fm,"engine",engv);
     var rtn = t.match(returnregex);

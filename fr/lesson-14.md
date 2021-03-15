@@ -99,6 +99,7 @@ directement en Unicode dans le code source. Voici un exemple présentant des
 lettres latines et grecques ainsi que des idéogrammes CJK :
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}

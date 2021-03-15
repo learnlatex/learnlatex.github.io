@@ -115,10 +115,9 @@ up-to-date.
 ## Choosing the TeX engine
 
 When submitting example documents, by default the
-`pdflatex` engine will be used unless the example uses the `fontspec`
-package in which case `xelatex` is used.
+`pdflatex` engine will be used.
 
-You can force the choice of `pdflatex`, `xelatex`, `lualatex`,
+You can force the choice of `latex`, `pdflatex`, `xelatex`, `lualatex`,
 `platex` or `uplatex` by using a comment of the form:
 
 `% !TEX ` _any text_ `lualatex`
@@ -128,7 +127,7 @@ is _any text_ between the first and last word.
 
 This allows the form `% !TEX program=pdflatex` used by some TeX editors
 but does not require the `program=` and is currently restricted to
-specifying just one of the five engines that are supported on
+specifying just one of the engines that are supported on
 the online systems being used.
 
 You can see an example of a comment being used to specify LuaLaTeX in
@@ -136,6 +135,7 @@ You can see an example of a comment being used to specify LuaLaTeX in
 
 If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
 also used to produce the PDF result from the DVI file that these variants generate.
+Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
 
 ---
 
