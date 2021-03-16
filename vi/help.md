@@ -80,10 +80,9 @@ Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau k
 ## Chọn trình biên dịch TeX
 
 Khi một đoạn mã được đưa lên, trình dịch `pdflatex`
-sẽ được sử dụng một cách mặc định trừ khi ví dụ có dùng gói `fontspec` (khi đó
-`xelatex` sẽ được sử dụng).
+sẽ được sử dụng mặc định.
 
-Bạn có thể thay đổi trình dịch trong số các trình dịch `pdflatex`, `xelatex`,
+Bạn có thể thay đổi trình dịch thành `latex`, `pdflatex`, `xelatex`,
 `lualatex`, `platex` hay `uplatex` bằng cách dùng một ghi chú tương tự như sau:
 
 ```
@@ -94,16 +93,16 @@ trong đó khoảng trống ở bắt đầu là không bắt buộc; viết hoa
 được hiểu như nhau và phần `<bất cứ đoạn chữ nào>` được bỏ qua.
 
 Điều này cho phép một ghi chú kiểu như `% !TEX program=pdflatex` được sử dụng
-bởi một số trình sửa mã TeX, nhưng ở đây `program=` là không bắt buộc. Chú ý
-rằng thay vì `lualatex`, ta chỉ có hai sự thay thế là `pdflatex` và `xelatex`,
-vì các dịch vụ LaTeX trên mạng mà ta dùng chỉ hỗ trợ ba trình biên dịch này
-thôi.
+bởi một số trình sửa mã TeX, nhưng ở đây `program=` là không bắt buộc. Chú ý rằng,
+vào thời điểm hiện tại, ta chỉ có thể chọn một trong số các trình dịch nêu trên
+để biên dịch.
 
 Bạn có thể xem một số ví dụ có ghi chú dùng để cho biết ví dụ sẽ được chạy bằng 
 LuaLaTeX trong [bài bổ sung của bài 14](more-14).
 
 Nếu `platex` hay `uplatex` được sử dụng, chương trình `dvipdfmx` cũng được sử dụng
-để tạo ra tệp PDF từ các tệp DVI mà các trình dịch này xuất ra.
+để tạo ra tệp PDF từ các tệp DVI mà các trình dịch này xuất ra. Tương tự, nếu
+bạn dùng `latex`, các chương trình `dvips` and `ps2pdf` cũng sẽ được sử dụng.
 
 ## Chọn cách tệp PDF được hiển thị trong trình duyệt
 
