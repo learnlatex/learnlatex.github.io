@@ -13,44 +13,63 @@ var buttons ={
     "Compiling PDF":    "Compiling PDF"
 }
 
+var latexcgihost="https://texlive.net/cgi-bin/latexcgi";
+
 var editors=[];
+
+const commentregex = / %.*/;
+const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context) *\n/i;
+const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
+const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
 function llexamples() {
     var p = document.getElementsByTagName("pre");
     var editor;
+    var acemode;
     for(var i=0;i<p.length;i++) {
+	acemode="ace/mode/latex";
 	p[i].setAttribute("id","pre" + i);
+	var pretext=p[i].innerText;
 	// class=noedit on pre or {: .class :} after closing ``` in markdown
 	if(!(p[i].classList.contains('noedit') || p[i].parentNode.parentNode.classList.contains('noedit'))) {
-	if(p[i].textContent.indexOf("\\documentclass") !== -1 || p[i].textContent.indexOf("\\starttext") !== -1) {
-	    // space
-	    var s = document.createElement("div");
-	    s.setAttribute("class",'ace-spacer');
-	    p[i].parentNode.insertBefore(s, p[i].nextSibling);
-	    // latexonline
-	    var r = document.createElement("button");
-	    r.innerText=buttons["LaTeX Online"];
-	    r.setAttribute("onclick",'latexcgi("pre' + i + '")');
-	    r.setAttribute("id","lo-pre" + i);
-	    p[i].parentNode.insertBefore(r, p[i].nextSibling);
-	    // overleaf
-	    var o = document.createElement("button");
-	    o.innerText=buttons["Open in Overleaf"];
-	    o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
-	    p[i].parentNode.insertBefore(o, p[i].nextSibling);
-	    var f=document.createElement("span");
-	    // action=\"https://httpbin.org/post\"
-	    // action=\"https://www.overleaf.com/docs\"
-	    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +"\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"></form>";
-	    p[i].parentNode.insertBefore(f, p[i].nextSibling);
-	    var f2=document.createElement("span");
-	    f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i + "\" name=\"form2-pre" + i +"\" enctype=\"multipart/form-data\" action=\"https://texlive.net/cgi-bin/latexcgi\" method=\"post\" target=\"pre" + i + "ifr\"></form>";
-	    p[i].parentNode.insertBefore(f2, p[i].nextSibling);
-	}
+	    if(pretext.indexOf("\\documentclass") == -1 && pretext.indexOf("\\starttext") == -1) {
+		acemode="ace/mode/text";
+	    } else {
+		// space
+		var s = document.createElement("div");
+		s.setAttribute("class",'ace-spacer');
+		p[i].parentNode.insertBefore(s, p[i].nextSibling);
+		// latexonline
+		var r = document.createElement("button");
+		r.innerText=buttons["LaTeX Online"];
+		r.setAttribute("class","llbutton");
+		r.setAttribute("onclick",'latexcgi("pre' + i + '")');
+		r.setAttribute("id","lo-pre" + i);
+		p[i].parentNode.insertBefore(r, p[i].nextSibling);
+		// overleaf
+		var o = document.createElement("button");
+		o.innerText=buttons["Open in Overleaf"];
+		o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
+		p[i].parentNode.insertBefore(o, p[i].nextSibling);
+		var f=document.createElement("span");
+		// action=\"https://httpbin.org/post\"
+		// action=\"https://www.overleaf.com/docs\"
+		f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +
+		    "\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"></form>";
+		p[i].parentNode.insertBefore(f, p[i].nextSibling);
+		var f2=document.createElement("span");
+		f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i +
+		    "\" name=\"form2-pre" + i +
+		    "\" enctype=\"multipart/form-data\" action=\"" +
+		    latexcgihost +
+		    "\" method=\"post\" target=\"pre" + i +
+		    "ifr\"></form>";
+		p[i].parentNode.insertBefore(f2, p[i].nextSibling);
+	    }
 	    editor = ace.edit(p[i]);
 	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
 	    editor.setTheme("ace/theme/textmate");
-	    editor.getSession().setMode("ace/mode/latex");
+	    editor.getSession().setMode(acemode);
 	    editor.setOption("minLines",2);
 	    editor.setOption("maxLines",100);
 	    editor.setShowPrintMargin(false);
@@ -60,12 +79,7 @@ function llexamples() {
     }
 }
 
-const commentregex = / %.*/;
-const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context) *\n/i;
-const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
-const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
-// https://www.overleaf.com/devs
 function addinput(f,n,v) {
     var inp=document.createElement("input");
     inp.setAttribute("type","text");
@@ -201,6 +215,7 @@ function latexcgi(nd) {
 	p.parentNode.insertBefore(ifr, b.nextSibling);
 	d=document.createElement("button");
 	d.innerText=buttons["Delete Output"];
+        d.setAttribute("class","llbutton");
 	d.setAttribute("id","del-" + nd);
 	d.setAttribute("onclick",'deleteoutput("' + nd + '")');
 	p.parentNode.insertBefore(d, b.nextSibling);
