@@ -33,8 +33,10 @@ function llexamples() {
 	var pretext=p[i].innerText;
 	// class=noedit on pre or {: .class :} after closing ``` in markdown
 	if(!(p[i].classList.contains('noedit') || p[i].parentNode.parentNode.classList.contains('noedit'))) {
-	    if(pretext.match(norunregex)) {
-		acemode="ace/mode/text";
+	    if(p[i].textContent.indexOf("\\documentclass") == -1 && !pretext.match(engineregex)) {
+		if(pretext.match(norunregex)) {
+		    acemode="ace/mode/text";
+		}
 	    } else {
 		// space
 		var s = document.createElement("div");
