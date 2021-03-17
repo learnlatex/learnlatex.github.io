@@ -18,6 +18,7 @@ var latexcgihost="https://texlive.net/cgi-bin/latexcgi";
 var editors=[];
 
 const commentregex = / %.*/;
+const norunregex = /^\s*([/%#\*]+ *!TEX.*[^a-zA-Z]none *|[^% \t\\][^\\]*)(\n|$)/i;
 const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
@@ -32,7 +33,7 @@ function llexamples() {
 	var pretext=p[i].innerText;
 	// class=noedit on pre or {: .class :} after closing ``` in markdown
 	if(!(p[i].classList.contains('noedit') || p[i].parentNode.parentNode.classList.contains('noedit'))) {
-	    if(pretext.indexOf("\\documentclass") == -1 && pretext.indexOf("\\starttext") == -1) {
+	    if(pretext.match(norunregex)) {
 		acemode="ace/mode/text";
 	    } else {
 		// space
@@ -110,6 +111,16 @@ function openinoverleaf(nd) {
     fm.innerHTML="";
     var p = document.getElementById(nd);
     var t = editors[nd].getValue();
+
+    var engv="pdflatex";
+    var eng=t.match(engineregex);
+    if(eng != null) {
+	engv=eng[1].toLowerCase();
+    
+	if(engv == "pdftex" || engv == "luatex" || engv == "xetex" || engv == "ptex" || engv == "uptex") {
+	    t = "% Force main document for Overleaf\n\\let\\tmp\n\\documentclass\n" + t;
+	}
+    }
     addinput(fm,"encoded_snip[]","\n" + t);
     addinput(fm,"snip_name[]","document.tex");
     if(typeof(preincludes) == "object") {
@@ -125,15 +136,17 @@ function openinoverleaf(nd) {
 	    }
 	}
     }
-    var engv="pdflatex";
-    var eng=t.match(engineregex);
     if(eng != null) {
-	engv=eng[1].toLowerCase();
-	if(engv.indexOf("platex") != -1) {
+	if(engv.indexOf("platex") != -1 || engv.indexOf("ptex") != -1 || engv=="tex") {
 	    addinput(fm,"encoded_snip[]","$latex = '" + engv + "';\n$bibtex = 'pbibtex';\n$dvipdf = 'dvipdfmx %O -o %D %S';");
 	    addinput(fm,"snip_name[]","latexmkrc");
 	    engv="latex_dvipdf";
+	} else if(engv == "pdftex" || engv == "luatex" || engv == "xetex") {
+	    addinput(fm,"encoded_snip[]","$pdflatex = '" + engv + "';");
+	    addinput(fm,"snip_name[]","latexmkrc");
+	    engv="pdflatex";
 	}
+
     }
     addinput(fm,"engine",engv);
     fm.submit();
