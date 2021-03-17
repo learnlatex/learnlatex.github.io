@@ -18,7 +18,7 @@ var latexcgihost="https://texlive.net/cgi-bin/latexcgi";
 var editors=[];
 
 const commentregex = / %.*/;
-const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context) *\n/i;
+const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
@@ -66,11 +66,12 @@ function llexamples() {
 		    "ifr\"></form>";
 		p[i].parentNode.insertBefore(f2, p[i].nextSibling);
 	    }
+	    p[i].textContent=pretext.replace(/\s+$/,'');
 	    editor = ace.edit(p[i]);
 	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
 	    editor.setTheme("ace/theme/textmate");
 	    editor.getSession().setMode(acemode);
-	    editor.setOption("minLines",2);
+	    editor.setOption("minLines",1);
 	    editor.setOption("maxLines",100);
 	    editor.setShowPrintMargin(false);
 	    editor.resize();
