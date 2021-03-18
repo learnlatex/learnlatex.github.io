@@ -96,6 +96,7 @@ toc-description: "टंक व अक्षरांचे स्वरूप �
 आहेत.
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}

@@ -85,6 +85,7 @@ túy vào mã nguồn. Đây là một ví dụ sử dụng một số chữ cá
 Hy Lạp, một số ký hiệu cùng một vài chữ cái tượng hình CJK.
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}

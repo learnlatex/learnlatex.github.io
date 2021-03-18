@@ -56,10 +56,10 @@ Do đó, một văn bản dài có thể trông như thế này:
 \title{A Sample Book}
 \author{John Doe \and Joe Bloggs}
 
-\IfFileExists{append.aux}
+\IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-%  front,
+  front,
 %  chap1,
   chap2,
 %  append

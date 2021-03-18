@@ -69,7 +69,7 @@ Một số trang kết hợp LaTeX với những chức năng thường thấy �
 văn bản, trong khi các trang còn lại cho bạn sửa mã nguồn trực tiếp.
 
 Có những trang cho phép bạn chạy LaTeX mà không cần đăng nhập, và chúng tôi sẽ
-sử dụng một trong số đó, [LaTeX CGI](https://latexcgi.xyz), để cho bạn
+sử dụng một trong số đó, [TexLive.net](https://texlive.net), để cho bạn
 chính sửa và test các ví dụ ở đây. Để có một hệ thống đầy đủ hơn, bạn cần phải
 đăng ký tài khoản với những trang web như vậy &ndash; khi đó bạn có thể lưu lại
 tệp của mình và cũng tránh làm cho trang bị overload. Chúng tôi đã thêm các

@@ -72,7 +72,7 @@ so are closer to having a local installation.
 
 There are systems that let you run LaTeX without needing to be logged in, and we
 are using one of those,
-[LaTeX CGI](https://latexcgi.xyz), to let you
+[TexLive.net](https://texlive.net), to let you
 edit and test the examples we give. For more complete work, the best online
 systems require that you register before you use them. That lets you save your
 work but also helps the sites not get overloaded. We have set up links so you

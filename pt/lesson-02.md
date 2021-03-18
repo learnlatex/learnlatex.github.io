@@ -70,7 +70,7 @@ o arquivo LaTeX fonte, assim fornecem uma experiência mais parecida com ter um
 sistema TeX local.
 
 Há sistemas que permitem que você execute o LaTeX sem precisar registar, e nós
-usamos um desses, o [LaTeX CGI](https://latexcgi.xyz), que permite que você
+usamos um desses, o [TexLive.net](https://texlive.net), que permite que você
 edite e teste os exemplos que fornecemos.  Para trabalhos mais completos, os
 melhores sistemas online requerem que você registre-se antes de usá-los.  Isso
 lhe permite salvar seu trabalho, mas também ajuda que os sites não fiquem

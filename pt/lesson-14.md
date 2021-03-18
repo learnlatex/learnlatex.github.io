@@ -82,6 +82,7 @@ caracteres Unicode no seu documento.  Aqui está um exemplo que usa algumas
 letras do alfabeto Latino e Grego, assim como alguns ideogramas chineses:
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
