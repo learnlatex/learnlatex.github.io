@@ -26,7 +26,7 @@ Nutzeranpassungen stark eingeschränkt und so wurden Erweiterungspakete
 geschrieben, die häufig gestellte Anforderungen umsetzen. Eine dieser
 Anforderung ist sprachabhängiger Satz (Silbentrennung, Interpunktion,
 Zitierungen, Lokalisierung, usw.). Verschiedene Sprachen haben unterschiedliche
-Regeln, weshalb es wichtig ist LaTeX zu verraten, welche Sprache benutzt wird.
+Regeln, weshalb es wichtig ist, LaTeX zu verraten, welche Sprache benutzt wird.
 Das wird durch das Paket `babel` erledigt.
 
 ```latex

@@ -30,7 +30,7 @@ Heutzutage sind zwei große TeX-Systeme verbreitet,
 [MiKTeX](https://miktex.org/) und [TeX Live](https://tug.org/texlive). Beide
 unterstützen Windows, macOS und Linux.
 MiKTeX wurde ursprünglich für Windows konzipiert;
-auf macOS ist TeX Live in einer größeren Sammlung namens [MacTeX](http://www.tug.org/mactex/) enthalten.
+auf macOS ist TeX Live in einer größeren Sammlung namens [MacTeX](https://www.tug.org/mactex/) enthalten.
 Jedes System hat
 [individuelle Vorteile](https://tex.stackexchange.com/questions/20036) und
 [weitere Hinweise vom LaTeX Project](https://www.latex-project.org/get/) sind
