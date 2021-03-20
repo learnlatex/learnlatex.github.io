@@ -38,7 +38,7 @@ Há três formasde você executar o exemplo:
 
 1. Use um serviço de **LaTeX Online**. O botão <button style="padding:0 1px;font-size:90%">LaTeX Online</button>
    vai encaminhar o código para o serviço
-   [LaTeX CGI](https://latexcgi.xyz/)[^1].
+   [TexLive.net](https://texlive.net)[^1].
 
    O serviço LaTeX CGI foi desenvolvido especificamente para suportar este site,
    em particular ele usa o [PDF.js](https://mozilla.github.io/pdf.js/) para

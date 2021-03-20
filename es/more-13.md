@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Estructurando documentos largos"
+description: "Esta lección muestra cómo hacer un índice de materias y cómo usar el paquete imakeidx para automatizar el proceso."
+toc-anchor-text: "Más sobre: Estructurando documentos largos"
 ---
 
 ## Realizando un índice de materias
@@ -35,6 +37,6 @@ Aún más texto\index{gamma@$\gamma$}.
 ```
 
 Hemos mostrado, en este ejemplo, dos tipos de indexación: la subdivisión, usando `!` y
-el poder indicar algo diferente del "texto de la etiqueta" en la entrada del índice, usando `@`.
+el poder indicar algo diferente del «texto de la etiqueta» en la entrada del índice, usando `@`.
 Existe una gran posibilidad de personalización del índice de materias; experimente
 con el ejemplo para ver cómo funciona.

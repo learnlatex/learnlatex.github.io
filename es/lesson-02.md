@@ -2,14 +2,19 @@
 layout: "lesson"
 lang: "es"
 title: "Trabajando con LaTeX"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección explica lo qué es un sistema TeX y cuáles son los más frecuentes. Se citan algunos de los editores de LaTeX más comunmente usados, y los sistemas en línea que disponen de editores integrado."
+toc-anchor-text: "Trabajando con LaTeX"
+toc-description: "Sistemas TeX y editores de LaTeX"
 ---
 
 # Trabajando con LaTeX
 
+<span
+  class="summary">Esta lección explica lo qué es un sistema TeX y cuáles son los más frecuentes. Se cita algunos de los editores de LaTeX más comunmente usados, y los sistemas en línea que disponen de editores integrado.</span>
+
+
 A diferencia de muchos programas, LaTeX no es una simple aplicación que contiene
-"todo" en uno. En lugar de ello, tiene programas independientes que funcionan juntos.
+«todo en uno». En lugar de ello, tiene programas independientes que funcionan juntos.
 Podemos clasificar estos programas en dos cosas que usted necesitará:
 
 - Un _sistema TeX_
@@ -18,8 +23,8 @@ Podemos clasificar estos programas en dos cosas que usted necesitará:
 ## Distribuciones del sistema TeX
 
 Lo esencial para trabajar con LaTeX es disponer de un sistema TeX. Un sistema TeX es
-un conjunto de programas y archivos "en segundo plano", necesarios para que LaTeX
-funcione, pero la mayor parte del tiempo no necesitará "ejecutarlos" directamente.   
+un conjunto de programas y archivos «en segundo plano», necesarios para que LaTeX
+funcione, pero la mayor parte del tiempo no necesitará «ejecutarlos» directamente.   
 
 Hay dos principales distribuciones del sistema TeX disponibles hoy en día,
 [MiKTeX](https://miktex.org/) y [TeX Live](https://tug.org/texlive). Ambas
@@ -50,7 +55,7 @@ TeX Live y MikTeX para Windows y Linux; y [TeXShop](https://pages.uoregon.edu/ko
 forma parte de MacTeX.  
 
 Sea cual sea el editor que elija, le recomentamos instalarlo _después_ de instalar el 
-sistema TeX, de forma que el editor "localice" el sistema TeX y lo configure automáticamente. 
+sistema TeX, de forma que el editor «localice» el sistema TeX y lo configure automáticamente. 
 
 ## Trabajando en línea
 
@@ -65,7 +70,7 @@ código LaTeX y se asemejan a tener una instalación local de LaTeX.
 
 Hay sistemas que le permiten ejecutar LaTeX sin necesidad de registrarse. Nosotros
 vamos a usar uno de ellos: 
-[LaTeX CGI](https://latexcgi.xyz), que le permitirá
+[TexLive.net](https://texlive.net), que le permitirá
 editar y probar los ejemplos que le daremos. Para actividades más complejas, los mejores
 sistemas en línea requieren que se registre antes de usarlos. Esto le permitira a usted guardar
 su trabajo y a los sitios web el evitar estar sobrecargados. Hemos configurado

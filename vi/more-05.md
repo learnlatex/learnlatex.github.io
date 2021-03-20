@@ -12,7 +12,7 @@ Nhiều tạp chí khoa học cung cấp các lớp văn bản cho cộng tác v
 thường thiết lập các định dạng cho giống với định dạng của tạp chí, mặc dù điều
 này có thể phụ thuộc vào font, kiểu chữ, v.v... Nếu có một lớp văn bản như vậy,
 thông thường nó được cung cấp trực tiếp bởi tòa soạn tạp chí, tuy nhiên cũng có
-một số lớp văn bản như vậy ở CTAN và các hệ thống TeX.
+một số lớp văn bản như vậy ở [CTAN](https://ctan.org) và các hệ thống TeX.
 
 ## Các lớp văn bản cho trình chiếu
 
@@ -28,11 +28,13 @@ hoạt động của nó:
 \usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{frame}{A first frame}
+\begin{frame}
+  \frametitle{A first frame}
   Some text
 \end{frame}
 
-\begin{frame}{A second frame}
+\begin{frame}
+  \frametitle{A second frame}
   Different text
   \begin{itemize}
     \item<1-> First item

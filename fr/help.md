@@ -80,7 +80,7 @@ votre compte Overleaf pour y revenir plus tard.
 ##### Utiliser un service LaTeX en ligne
 
 Le bouton <button>LaTeX Online</button>, présent sous l'exemple,
-soumet le code au service [LaTeX CGI](https://latexcgi.xyz/)[^1].
+soumet le code au service [TexLive.net](https://texlive.net)[^1].
 
 Le serveur _LaTeX CGI_ a été mis en place spécialement pour supporter ce
 site, et utilise notamment [PDF.js](https://mozilla.github.io/pdf.js/) pour

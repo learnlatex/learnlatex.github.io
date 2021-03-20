@@ -2,11 +2,15 @@
 layout: "lesson"
 lang: "es"
 title: "Usando los tipos de documento para cambiar el diseño"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección explica qué es un tipo de documento y cómo influye en la apariencia del mismo. Se citan igualmente los principales tipos de documentos disponibles en distribución de TeX." 
+toc-anchor-text: "Tipos de documento"
+toc-description: "Configurando la apariencia general del documento"
 ---
 
 # Usando los tipos de documento para cambiar el diseño
+
+<span
+  class="summary">Esta lección explica qué es un tipo de documento y cómo influye en la apariencia del mismo. Se citan igualmente los principales tipos de documentos disponibles en distribución de TeX.</span>
 
 ## Qué es un tipo de documento
 
@@ -86,14 +90,14 @@ La American Mathematical Society aporta variantes de los tipos de documento est�
 (`amsart`, `amsbook`) con un diseño más tradicional, similar al usado en las
 publicaciones de revistas de matemáticas.
 
-Los dos tipos de documento más importantes y "extendidos" popularmente sont el 
+Los dos tipos de documento más importantes y «extendidos» popularmente sont el 
 paquete KOMA-Script y el tipo memoir. KOMA-Script ofrece una serie de tipos de documento 
 con cierto paralelo a los estándar: `scrartcl`, `scrreprt` y `scrbook`, mientras que `memoir`
 es más bien una extensión de `book`. 
 
 Estos tipos de documento extendidos disponen de una gran cantidad de herramientas de personalización,
 que exploraremos un poco en un ejercicio. Puede preguntarse cómo podemos saber cuáles son las
-herramientas de que disponen, abordaremos este tema [en una lección posterior](lesson-15), ¡pero
+herramientas de que disponen, abordaremos este tema [en una lección posterior](lesson-16), ¡pero
 usted siempre puede adelantarse!
 
 ## Presentaciones

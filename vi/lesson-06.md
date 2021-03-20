@@ -7,7 +7,10 @@ toc-anchor-text: "Mở rộng LaTeX"
 toc-description: "Gói lệnh và định nghĩa lệnh mới"
 ---
 
-# Mở rộng LaTeX bằng các gói lệnh và định nghĩa các lệnh mới
+# Mở rộng LaTeX
+
+<span class="summary">Bài này giải thích cách tăng cường chức năng cho LaTeX
+bằng việc sử dụng các gói lệnh cũng như tự định nghĩa các câu lệnh mới.</span>
 
 Sau khi khai báo lớp văn bản, trong phần khai báo bạn có thể thay đổi các chức
 năng trong LaTeX bằng việc thêm một hoặc nhiều *gói lệnh*. Những gói lệnh này

@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Analizando los errores"
+description: "Esta lección muestra una serie de errores menos frecuentes en LaTeX y explica los errores encadenados y los errores silenciosos."
+toc-anchor-text: "Más sobre: Analizando los errores"
 ---
 
 ## Errores que ocurren al final de los entornos
@@ -123,7 +125,7 @@ En este ejemplo, el grupo correspondiente al cambio de tamaño de letra ha sido 
 con un paréntesis `)`. Este error sólo es detectado al llegar al final del archivo,
 cuando TeX se da cuenta de que hay un grupo que no ha sido cerrado. Se indica entonces
 la línea en la que el grupo se ha abierto `{`. No se indica el verdadero error, ya que
-el paréntesis `)` es interpretado como un "texto normal".
+el paréntesis `)` es interpretado como un «texto normal».
 ```
 (\end occurred inside a group at level 1)
 

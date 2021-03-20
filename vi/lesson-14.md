@@ -7,7 +7,11 @@ toc-anchor-text: "Font và Unicode"
 toc-description: "Font chữ. Hệ mã hóa văn bản. Unicode"
 ---
 
-# Chọn fonts và sử dụng các trình biên dịch Unicode
+# Font và Unicode
+
+<span class="summary">Bài này sẽ giải thích các cách chọn font chữ khác nhau,
+cũng như giúp bạn làm quen với các hệ mã hóa văn bản khác nhau và cách sử dụng
+Unicode trong LaTeX</span>
 
 Khi TeX và LaTeX bắt đầu được sử dụng rộng rãi, nó chỉ có hỗ trợ cho một số ngôn
 ngữ châu Âu, cùng với một vài tính năng cho các bảng chữ cái khác như tiếng Hy
@@ -81,6 +85,7 @@ túy vào mã nguồn. Đây là một ví dụ sử dụng một số chữ cá
 Hy Lạp, một số ký hiệu cùng một vài chữ cái tượng hình CJK.
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
@@ -92,6 +97,6 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
-Khi ta thay đổi ngôn ngữ, việc thay đổi quy tắc hyphenation và những thứ tương
-tự có thể cần thiết. Các gói `babel` hay `polyglossia` đều cung cấp những công
-cụ mạnh để thực hiện việc này.
+<p class="hint">Khi ta thay đổi ngôn ngữ, việc thay đổi quy tắc hyphenation và
+những thứ tương tự có thể cần thiết. Các gói <code>babel</code> hay
+<code>polyglossia</code> đều cung cấp những công cụ mạnh để thực hiện việc này.</p>

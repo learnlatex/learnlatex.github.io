@@ -7,7 +7,10 @@ toc-anchor-text: "Định dạng và khoảng cách"
 toc-description: "Định dạng font và các khoảng trống"
 ---
 
-# Định dạng font và các khoảng cách
+# Định dạng và khoảng cách
+
+<span class="summary">Bài này sẽ giới thiệu các cách điều chỉnh định dạng chữ cơ
+bản, cũng như một số câu lệnh để tùy biến các khoảng trống trong văn bản.</span>
 
 ## Khoảng cách giữa các đoạn văn
 

@@ -7,7 +7,10 @@ toc-anchor-text: "Lỗi"
 toc-description: "Giải quyết các lỗi"
 ---
 
-# Xử lý lỗi
+# Lỗi
+
+<span class="summary">Bài này sẽ giới thiệu các lỗi biên dịch thường gặp nhất khi
+sử dụng LaTeX, cũng như cách giải quyết chúng.</span>
 
 Không giống như các hệ thống xử lý văn bản thường gặp khác, LaTeX có một chu
 trình "Sửa/Biên dịch/Xem kết quả" giống như nhiều ngôn ngữ lập trình, và như

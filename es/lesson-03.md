@@ -1,12 +1,16 @@
 ---
 layout: "lesson"
 lang: "es"
-title: "Su primer documento en LaTeX"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "Estructura básica de un documento LaTeX"
+description: "Esta lección muestra la estructura básica de un documento LaTeX, cómo convertirlo en un fichero PDF y los caracteres especiales usados para controlar LaTeX." 
+toc-anchor-text: "Estructura de un documento"
+toc-description: "La estructura básica de un documento"
 ---
 
-# Su primer documento en LaTeX
+# Estructura de un documento LaTeX
+
+<span
+  class="summary">Esta lección muestra la estructura básica de un documento LaTeX, cómo convertirlo en un fichero PDF y los caracteres especiales usados para controlar LaTeX.</span>
 
 Nuestro primer documento va a ser muy sencillo: la idea es mostrarle
 a qué se asemeja un documento y cómo componerlo correctamente. También será su
@@ -14,8 +18,8 @@ primera oportunidad para [ver cómo hacer uso de los ejemplos en `learnlatex.org
 
 Si usa una instalación local de LaTeX, genere en su editor un nuevo archivo llamado
 `first.tex` y luego, o bien corte y pegue el texto de aquí abajo, o escríbalo.
-Si usa el sistema en línea, ¡le bastará con pulsar el botón "LaTeX Online" 
-o "Abrir en Overleaf" que aparecen al final del código para probarlo!
+Si usa el sistema en línea, ¡le bastará con pulsar el botón «LaTeX Online» 
+o «Abrir en Overleaf» que aparecen al final del código para probarlo!
 Le sugerimos que pruebe las opciones en línea por más que disponga de una instalación de
 LaTeX local; es una buena idea ver cómo funcionan las diferentes opciones.
 
@@ -53,7 +57,7 @@ tecleando `x` y `<Enter>`.
 
 Los mensajes de error de LaTeX intentan ser útiles, pero no son del mismo estilo que los
 mensajes de los procesadores de texto. Además, algunos editores hacen que no sea fácil el 
-poder ver el texto "completo" de un error, el cual puede ser clave para entenderlo. LaTeX siempre 
+poder ver el texto «completo» de un error, el cual puede ser clave para entenderlo. LaTeX siempre 
 crea un registro con todo lo que hace; es un archivo de texto de extensión `.log`. Aquí
 siempre podrá ver los mensajes de error completos, y si tiene algún problema, los usuarios 
 expertos de LaTeX le pedirán a menudo este archivo de registro.
@@ -104,19 +108,19 @@ Puede ver más arriba que hemos obtenido dos párrafos: observe el uso de una
 línea en blanco para conseguirlo. Además, fijése en que los espacios múltiples se comportan
 como un espacio simple.
 
-Puede que algunas veces quiera un espacio "fuerte" que impida el retorno de línea: 
-en LaTeX podemos obtenerlo usando `~`, que "mantiene" dos partes del texto juntas. Esto
+Puede que algunas veces quiera un espacio «fuerte» que impida el retorno de línea: 
+en LaTeX podemos obtenerlo usando `~`, que «mantiene» dos partes del texto juntas. Esto
 es particularmente útil cuando, más adelante en este curso, empecemos a crear referencias cruzadas. 
 
 ## Caracteres especiales
 
 Seguramente ya ha notado que `\`, `{` y `}` tienen un significado especial para LaTeX.
-El signo `\` comienza una instrucción de LaTeX: un "comando". Las llaves
+El signo `\` comienza una instrucción de LaTeX: un «comando». Las llaves
 `{` y `}` se usan para mostrar _argumentos obligatorios_: información necesaria para
 los comandos. 
 
 Hay otros caracteres con significado especial; acabamos de ver, por ejemplo, que 
-`~` es un espacio "fuerte". Todos estos caracteres son _muy_ poco comunes en un texto
+`~` es un espacio «fuerte». Todos estos caracteres son _muy_ poco comunes en un texto
 normal, razón por la cual han sido elegidos como caracteres especiales.
 Si necesita mostrar uno de estos caracteres especiales, 
 hemos incluido [información en la página de más detalles](more-03).

@@ -9,6 +9,9 @@ toc-description: "Tham chiếu các thành phần văn bản"
 
 # Tham chiếu chéo
 
+<span class="summary">Bài này giải thích cách thực hiện tham chiếu chéo giữa các
+thành phần khác nhau trong văn bản.</span>
+
 ## Cách hoạt động của `\label` và `\ref`
 
 Khi ta viết một văn bản dài, ta có thể cần phải thêm các tham chiếu chéo tới các

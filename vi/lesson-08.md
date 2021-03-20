@@ -7,7 +7,10 @@ toc-anchor-text: "Bảng"
 toc-description: "Những điều cơ bản khi làm việc với bảng"
 ---
 
-# Bảng trong LaTeX
+# Bảng
+
+<span class="summary">Bài này giải thích các cách thêm bảng biểu vào văn bản,
+cũng như một vài cách tùy biến bảng đơn giản.</span>
 
 ## Bảng cơ bản
 

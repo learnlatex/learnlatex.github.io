@@ -9,6 +9,10 @@ toc-description: "Cơ sở dữ liệu về các tài liệu tham khảo"
 
 # Phần tài liệu tham khảo
 
+<span class="summary">Bài này sẽ giới thiệu các thao tác cơ bản với các dữ liệu
+về các tài liệu được trích dẫn/tham khảo, cũng như cách sử dụng chúng trong văn
+bản.</span>
+
 <script>
 preincludes = {
  "pre1": {

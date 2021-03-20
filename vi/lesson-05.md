@@ -7,7 +7,10 @@ toc-anchor-text: "Lớp văn bản"
 toc-description: "Các thiết lập cơ bản của toàn văn bản"
 ---
 
-# Sử dụng các lớp văn bản
+# Lớp văn bản
+
+<span class="summary">Bài này giải thích cách sử dụng và tùy biến một số lớp văn
+bản thông dụng trong việc thiết kế văn bản.</span>
 
 ## Lớp văn bản làm gì?
 
@@ -89,12 +92,12 @@ quan đến toán học.
 
 Hai lớp văn bản lớn nhất và thông dụng nhất là hệ thống KOMA-script và lớp văn
 bản `memoir`. KOMA-script cho một hệ thống lớp văn bản mới "song song" với các
-lớp văn bản gốc: `scrartcl`, `scrreprt` và `scrbook`, trong khi `memoir` giống
-như một sự phát triển của `book`.
+lớp văn bản gốc: `scrartcl`, `scrreprt`, `scrbook` và `scrlttr2`, trong khi
+`memoir` giống như một sự phát triển của `book`.
 
 Những lớp văn bản này có nhiều công cụ giúp bạn thiết kế, ta sẽ khám phá một vài
 trong số đó trong một bài tập. Bạn có thể hỏi tại sao ta có thể biết đến những
-công cụ này; ta sẽ nói đến điều đó trong [bài cuối](lesson-15), nhưng bạn vẫn
+công cụ này; ta sẽ nói đến điều đó trong [bài cuối](lesson-16), nhưng bạn vẫn
 luôn có thể "nhảy cóc"!
 
 ## Trình chiếu
