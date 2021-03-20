@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "de"
 title: "Mehr zu: LaTeX mit Paketen erweitern"
+description: "Diese Lektion zeigt mehr Details zum Laden von Paketen, präsentiert das babel Paket zur Sprachauswahl und mehr Details zu benutzerdefinierten Befehlen."
+toc-anchor-text: "Mehr zu: LaTeX mit Paketen und Definitionen erweitern"
 ---
 ## Mehrere Pakete laden
 
@@ -20,13 +22,13 @@ Menge mehr, abhängig von den verwendeten Sprachen. Für deutsche Texte stellt e
 beispielsweise Kürzel (shorthands) bereit, um bedingte Trennstriche ('soft' hyphens) 
 anzugeben oder auch Umlaute auf nicht-deutschen Tastaturen schneller eingeben zu können.
 Zusätzlich werden Begriffe wie _Table of Contents_, der automatisch durch 
-`\tableofcontents` is changed to the German _Inhaltsverzeichnis_.
+`\tableofcontents` genutzt wird, ins Deutsche zu _Inhaltsverzeichnis_ übersetzt.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Notice that the option name is 'ngerman'
+\usepackage[ngerman]{babel} % Beachte, dass die Option 'ngerman' heißt
 
 \begin{document}
 
@@ -51,13 +53,13 @@ man `babel` mit der Option `french` lädt.
 
 ## Globale Optionen
 
-Sometimes, you want an option to be available to all of the packages you've
-loaded. That is done by giving it on the `\documentclass` line: every package
-can 'see' this list. So to pass the language of a document to all packages,
-we might use:
+Manchmal möchte man Optionen für alle geladenen Pakete angeben. Dies wird
+erreicht, indem die Option in der `\documentclass`-Zeile gesetzt wird: jedes
+Paket kann diese Liste nutzen. Um also die Dokumentsprache allen Paketen
+mitzuteilen könnte man folgendes nutzen:
 
 ```latex
-\documentclass[ngerman]{article} % Notice that the option name is 'ngerman'
+\documentclass[ngerman]{article} % Beachte, dass die Option 'ngerman' heißt
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}
@@ -77,12 +79,13 @@ Birnen sind gelb.
 \end{document}
 ```
 
-## More definitions
+## Mehr Definitionen
 
-`\newcommand` allows commands with up to nine arguments, the first of which may be optional.
+`\newcommand` erlaubt Befehle mit bis zu neun Argumenten, das erste kann
+optional sein.
 
-If we take the example from the main lesson, we could make the color
-optional, defaulting to blue.
+Ausgehend vom Beispiel in der Hauptlektion können wir die Farbe optional machen,
+mit Blau als Standardwert.
 
 ```
 \documentclass{article}
@@ -94,48 +97,49 @@ optional, defaulting to blue.
 
 \begin{document}
 
-Something about \kw{apples} and \kw[red]{oranges}.
+Irgendwas über \kw{Äpfel} und \kw[red]{Orangen}.
 
 \end{document}
 ```
 
-Optional arguments are delimited with `[]` and if omitted, the default
-value specified in the definition is used.
+Optionale Argumente werden in `[]` gegeben und wenn sie ausgelassen werden, wird
+der Standardwert aus der Definition verwendet.
 
 ## `\NewDocumentCommand`
 
-From the October 2020 LaTeX release, an extended definition system is available.
-In older LaTeX releases this was available via the `xparse` package which we use
-here for compatibility.
+Seit der Oktober 2020 LaTeX-Veröffentlichung ist ein erweitertes
+Definitionssystem verfügbar. In älteren LaTeX-Versionen wurde dieses durch das
+`xparse` Paket definiert, welches wir hier für die Kompatibilität auch
+verwenden.
 
-We can repeat the above example but using `\NewDocumentCommand`
+Wiederholen wir obiges Beispiel allerdings mit `\NewDocumentCommand`.
 
 ```
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage{xparse} % Only needed for older LaTeX releases
+\usepackage{xparse} % Nur für ältere LaTeX-Versionen notwendig
 \usepackage{xcolor}
 
 \NewDocumentCommand\kw{O{blue} m}{\textcolor{#1}{\itshape #2}}
 
 \begin{document}
 
-Something about \kw{apples} and \kw[red]{oranges}.
+Irgendwas über \kw{Äpfel} und \kw[red]{Orangen}.
 
 \end{document}
 ```
 
-Just as with `\newcommand`, `\NewDocumentCommand` takes the command
-being defined (`\kw` here) and the definition body, using `#1` to `#9`
-for the arguments, however the difference is in how the arguments are
-specified.
+Genau wie `\newcommand` erwartet `\NewDocumentCommand` den zu definierenden
+Befehl (hier `\kw`) und die Definition unter Verwendung von `#1` bis `#9` für
+die Argumente. Es gibt aber Unterschiede darin, wie die Argumente spezifiziert
+werden.
 
-Unlike `\newcommand` where just the number of arguments is given,
-optionally supplying a default for the first, with
-`\NewDocumentCommand` each argument is specified by a letter so a two
-argument command would be specified by `{mm}` rather than `[2]`. This
-is slightly more verbose but allows many more forms of commands to be
-defined. Here we just give this simple example where the first
-argument is optional, defaulting to blue (`O{blue}`) and the second
-argument is mandatory (`m`).
+Anders als für `\newcommand`, für das nur die Anzahl der Argument und optional
+auch der Standardwert für das erste angegeben wird, wird für
+`\NewDocumentCommand` jedes Argument durch einen Buchstaben gekennzeichnet, ein
+Befehl der zwei Argumente erwartet wird also durch `{mm}` anstelle von `[2]`
+erzeugt. Dies ist etwas ausführlicher, erlaubt aber auch flexiblere
+Definitionen. An dieser Stelle soll aber obiges Beispiel mit einem optionalen
+Argument mit `blue` als Standardwert (`O{blue}`) und einem weiteren
+obligatorischen Argument (`m`, für 'mandatory') ausreichen.
