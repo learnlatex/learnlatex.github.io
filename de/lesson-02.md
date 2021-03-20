@@ -72,7 +72,7 @@ LaTeX-Code direkt anzuzeigen, und so einer lokalen TeX-Installation nahe kommen.
 
 Es gibt Systeme, die es erlauben, LaTeX auszuführen, ohne eine Anmeldung
 vorauszusetzen, wir verwenden einen solchen,
-[LaTeX CGI](https://latexcgi.xyz), damit die Beispiele auf dieser Seite
+[TexLive.net](https://texlive.net), damit die Beispiele auf dieser Seite
 ausprobiert werden können. Für vollständige Arbeiten verlangen die besten
 Onlinesysteme eine Registrierung. Dadurch kann man seine Arbeit speichern und
 verhindert eine Überbelastung der Seiten. Wir bieten Links, damit man die

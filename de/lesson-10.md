@@ -4,7 +4,7 @@ lang: "de"
 title: "Mathematik"
 description: "Diese Lektion präsentiert LaTeXs Mathematikmodus und zeigt, wie Formeln in einer Zeile und als alleinstehende Gleichung eingefügt werden können, die Erweiterungen des amsmath Pakets und wie die Schriftarten im Mathematikmodus gewechselt werden können."
 toc-anchor-text: "Mathematik"
-toc-description: "Description"
+toc-description: "Mathematikmodus und mathematische Notation"
 ---
 
 # Mathematik
@@ -150,8 +150,8 @@ kann, [z.B. so](https://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf):
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\newcommand{\diff}{\mathop{}\!d}            % For italic
-% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % For upright
+\newcommand{\diff}{\mathop{}\!d}            % für kursiv
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % für aufrecht
 \begin{document}
 Ein Absatz über eine größere Gleichung
 \[

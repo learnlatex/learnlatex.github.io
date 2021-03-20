@@ -56,10 +56,10 @@ Ein langes Dokument könnte also folgendermaßen aufgebaut sein:
 \title{Ein Beispielbuch}
 \author{Max Mustermann \and Erika Musterfrau}
 
-\IfFileExists{append.aux}
+\IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-%  front,
+  front,
 %  chap1,
   chap2,
 %  append

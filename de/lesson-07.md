@@ -3,8 +3,8 @@ layout: "lesson"
 lang: "de"
 title: "Abbildungen einbinden und positionieren"
 description: "Diese Lektion zeigt, wie externe Grafikdateien ins Dokument eingebunden werden, deren Erscheinung verändert wird und wie diese automatisch an die richtige Stelle im PDF gleiten."
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+toc-anchor-text: "Abbildungen verwenden"
+toc-description: "Aussehen, Abstände und Platzierungen."
 ---
 
 ## Abbildungen und Positionierung

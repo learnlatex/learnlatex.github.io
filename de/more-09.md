@@ -1,8 +1,9 @@
 ---
 layout: "lesson"
 lang: "de"
-description: "Diese Lektion zeigt, wie Querverweise zu Links werden, indem das hyperref Paket geladen wird"
 title: "Mehr zu: Querverweise"
+description: "Diese Lektion zeigt, wie Querverweise zu Links werden, indem das hyperref Paket geladen wird"
+toc-anchor-text: "Mehr zu: Querverweise"
 ---
 
 ## Querverweise zu Links machen
