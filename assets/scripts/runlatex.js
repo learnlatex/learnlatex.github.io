@@ -17,8 +17,9 @@ var latexcgihost="https://texlive.net/cgi-bin/latexcgi";
 
 var editors=[];
 
-const commentregex = / %.*/;
+const noeditregex = /^\s*[/%#\*]+ *!TEX.*[^a-zA-Z]noedit *(\n|$)/i;
 const norunregex = /^\s*([/%#\*]+ *!TEX.*[^a-zA-Z]none *|[^% \t\\][^\\]*)(\n|$)/i;
+const commentregex = / %.*/;
 const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
@@ -32,7 +33,7 @@ function llexamples() {
 	p[i].setAttribute("id","pre" + i);
 	var pretext=p[i].innerText;
 	// class=noedit on pre or {: .class :} after closing ``` in markdown
-	if(!(p[i].classList.contains('noedit') || p[i].parentNode.parentNode.classList.contains('noedit'))) {
+	if(!pretext.match(noeditregex) && !p[i].classList.contains('noedit')) {
 	    if(p[i].textContent.indexOf("\\documentclass") == -1 && !pretext.match(engineregex)) {
 		if(pretext.match(norunregex)) {
 		    acemode="ace/mode/text";
