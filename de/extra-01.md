@@ -19,7 +19,7 @@ verlinkter Paketdokumentation auf [texdoc.net](https://texdoc.net). Die
 Beispiele sind, sofern nicht anders vermerkt, aus den Dokumentationen entnommen.
 
 <p
-    class="hint">Die Aufnahme in diese Liste spiegelt keine Empfehlung der genannten Pakete gegenüber anderen ähnlichen Paketen; Zweck soll einzig die Abdeckung einiger sonst unbehandelter Bereiche sein.</p>
+    class="hint">Die Aufnahme in diese Liste spiegelt keine Empfehlung der genannten Pakete gegenüber anderen ähnlichen Paketen wider; Zweck soll einzig die Abdeckung einiger sonst unbehandelter Bereiche sein.</p>
 
 ## Chemie
 
