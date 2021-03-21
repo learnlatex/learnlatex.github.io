@@ -82,7 +82,7 @@ Có nhiều diễn đàn trên mạng để bạn có thể hỏi các câu hỏ
 có nhiều người truy cập nhất là
 [TeX &ndash; LaTeX StackExchange](https://tex.stackexchange.com). Mỗi khi bạn
 hỏi một câu hỏi ở bất kỳ diễn đàn nào, tốt nhất bạn nên chuẩn bị một đoạn mã ví
-dụ &ndash; thường được gọi là "minimal working example" (MWE). Đoạn mã này nên
+dụ &ndash; thường được gọi là 'minimal working example' (MWE). Đoạn mã này nên
 được tối giản hóa sao cho vấn đề của bạn vẫn xuất hiện trên đó nhưng những thứ
 không liên quan được gạch bỏ đi, để hỗ trợ mọi người trả lời bạn tốt hơn.
 
@@ -113,7 +113,7 @@ Một trong những thứ mà mọi người có thể yêu cầu bạn cung c�
 này được tạo ra bởi LaTeX mỗi khi bạn chạy nó, và có đuôi tệp là `.log`.
 
 <p class="hint">Tùy thuộc vào các cài đặt của máy tính của bạn, bạn có thể cần
-phải chọn "hiện đuôi tệp" ("show extensions") để thấy được tệp log là tệp nào.</p>
+phải chọn 'hiện đuôi tệp' ('show extensions') để thấy được tệp log là tệp nào.</p>
 
 Tệp này bao gồm tất cả những thông tin trong quá trình chạy, đặc biệt là những
 thông tin quan trọng như phiên bản gói lệnh, các thông báo lỗi hay các cảnh báo

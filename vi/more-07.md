@@ -32,7 +32,7 @@ _kể cả trên Windows_.
 
 Nếu bạn có nhiều hình vẽ, bạn có thể cần phải thiết lập thư mục con ngay từ đầu.
 Điều này có thể được thực hiện bằng `\graphicspath`. Các thư mục con sẽ được đưa
-vào trong cặp ngoặc và được viết như một "mảng" trong đối số của
+vào trong cặp ngoặc và được viết như một 'mảng' trong đối số của
 `\graphicspath`. Ví dụ, để thêm các thư mục con `figs` và `pics`, ta làm như
 sau:
 
@@ -49,7 +49,7 @@ Chú ý ký tự `/` ở đuôi mỗi thư mục con!
 Như đã thảo luận ở trên, LaTeX dễ dàng sử dụng hình ảnh từ hầu hết các nguồn, kể
 cả các đồ thị từ những phần mềm khoa học. Khi bạn thêm các hình như vậy, bạn nên
 lưu các đồ thị dưới định dạng PDF nếu có thể, vì đây là một định dạng vector
-(không bị "vỡ ảnh" khi phóng to &ndash; khác với định dạng bitmap của JPG hay
+(không bị 'vỡ ảnh' khi phóng to &ndash; khác với định dạng bitmap của JPG hay
 PNG sẽ làm vỡ ảnh khi phóng to). Nếu bạn cần tạo ra tệp theo định dạng bitmap,
 hãy làm cho độ phân giải ảnh cao nhất có thể. Bạn có thể tạo ra các hình mà có
 cả một số tính năng của TeX với [Inkscape](https://inkscape.org). Nếu bạn cần vẽ

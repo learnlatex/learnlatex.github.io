@@ -48,7 +48,7 @@ _không nên_ dùng `\\`.
 
 Ta có thể thêm một khoảng trống nhỏ (bằng khoảng nửa một ký tự trống thông
 thường) bằng `\,`. Trong chế độ toán, ta còn có các lệnh khác như `\.`, `\:` hay
-`\;`, hay thậm chí `\!` sẽ tạo ra một khoảng trống có "độ rộng âm".
+`\;`, hay thậm chí `\!` sẽ tạo ra một khoảng trống có 'độ rộng âm'.
 
 Trong số ít trường hợp, ví dụ khi ta tạo trang bìa, ta cần phải thêm những
 khoảng trống có kích thước cụ thể. Ta có thể dùng `\hspace` (khoảng trống theo

@@ -38,7 +38,7 @@ Multline
 
 ### Các cột trong sự căn lề của các môi trường toán
 
-Các môi trường `amsmath` được thiết kế để thực hiện các "cặp cột" với cột đầu
+Các môi trường `amsmath` được thiết kế để thực hiện các 'cặp cột' với cột đầu
 tiên của cặp được căn phải và cột sau được căn trái. Điều này giúp nhiều công
 thức được hiển thị trên một dòng, như trong ví dụ sau:
 
@@ -55,7 +55,7 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
-Thêm vào đó ta còn có các môi trường "con" với đuôi `ed` cho các môi trường nói
+Thêm vào đó ta còn có các môi trường 'con' với đuôi `ed` cho các môi trường nói
 trên, ví dụ `aligned` hay `gathered`, để đưa việc căn dòng vào trong một phần
 nhỏ trong một công thức nào đó (hãy thử chúng để hiểu cách hoạt động!).
 

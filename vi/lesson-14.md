@@ -17,8 +17,8 @@ Khi TeX và LaTeX bắt đầu được sử dụng rộng rãi, nó chỉ có h
 ngữ châu Âu, cùng với một vài tính năng cho các bảng chữ cái khác như tiếng Hy
 Lạp hay tiếng Nga.
 
-Ban đầu, các chữ cái có dấu được nhập bằng những lệnh như `\c{c}` tạo ra "ç" hay
-`\'e` tạo ra `é`. Trong khi một số người vẫn tiếp tục sử dụng cách này, hầu hết
+Ban đầu, các chữ cái có dấu được nhập bằng những lệnh như `\c{c}` tạo ra 'ç' hay
+`\'e` tạo ra 'é'. Trong khi một số người vẫn tiếp tục sử dụng cách này, hầu hết
 mọi người muốn nhập trực tiếp các chữ cái có dấu từ bàn phím của họ.
 
 Trước Unicode, LaTeX có hỗ trợ cho nhiều loại *mã hóa tệp* (file encoding) cho
@@ -47,7 +47,7 @@ Times, ta dùng font Termes (`tgtermes`).
 Đối với `pdflatex`, hầu hết các font có thể được dùng qua việc khai báo gói
 lệnh. Bạn có thể xem
 [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) hay
-[trang CTAN về chủ đề "Font"](https://www.ctan.org/topic/font) để tìm hiểu về
+[trang CTAN về chủ đề 'Font'](https://www.ctan.org/topic/font) để tìm hiểu về
 những font có sẵn. Bạn cũng có thể tìm kiếm trên mạng về font mà bạn cần, sau đó
 tìm kiếm bản mà `pdflatex` có thể dùng được. Nếu bạn muốn dùng một font có bản
 quyền (proprietary font), bạn cũng có thể tìm một bản clone hợp lý; đối với hầu

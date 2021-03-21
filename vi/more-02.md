@@ -8,16 +8,16 @@ toc-anchor-text: "Bổ sung: Làm việc với LaTeX"
 
 Đối với hầu hết các ví dụ, ta sẽ không dùng chương trình `latex` mà sẽ dùng một
 chương trình được gọi là `pdflatex`. Đây là thành viên của một hệ các chương
-trình tương tự, tất cả đều là "con cháu" của `latex`. Ta sẽ dùng `pdflatex` vì
+trình tương tự, tất cả đều là 'con cháu' của `latex`. Ta sẽ dùng `pdflatex` vì
 nó có lẽ là chương trình biên dịch phổ biến nhất và có thể xuất trực tiếp ra
 các tệp PDF.
 
 ## Định dạng TeX và trình biên dịch gốc
 
 Như đã được mô tả [trước đó](more-01), LaTeX được phát triển trên một hệ gọi là
-TeX. Ta gọi LaTeX là một "định dạng": một tập hợp các macros (câu lệnh, v.v...)
+TeX. Ta gọi LaTeX là một 'định dạng': một tập hợp các macros (câu lệnh, v.v...)
 mà TeX có thể hiểu được. Khi bạn chạy `pdflatex`, _thực ra_ bạn đang chạy một
-chương trình gọi là "pdfTeX" đã dùng sẵn định dạng LaTeX. Ta thường gọi pdfTeX
+chương trình gọi là 'pdfTeX' đã dùng sẵn định dạng LaTeX. Ta thường gọi pdfTeX
 là một _trình biên dịch gốc_: một chương trình có thể hiểu được những gì TeX yêu 
 cầu thực hiện.
 

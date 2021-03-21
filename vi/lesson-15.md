@@ -13,7 +13,7 @@ toc-description: "Giải quyết các lỗi"
 sử dụng LaTeX, cũng như cách giải quyết chúng.</span>
 
 Không giống như các hệ thống xử lý văn bản thường gặp khác, LaTeX có một chu
-trình "Sửa/Biên dịch/Xem kết quả" giống như nhiều ngôn ngữ lập trình, và như
+trình 'Sửa/Biên dịch/Xem kết quả' giống như nhiều ngôn ngữ lập trình, và như
 trong lập trình thì quá trình biên dịch có thể xảy ra lỗi và người dùng phải xử
 lý những lỗi này.
 
@@ -94,10 +94,10 @@ l.8 My command is used here \mycommand
 Chú ý rằng TeX không phát hiện lỗi tại điểm mà lệnh được định nghĩa, và trên
 thực tế, nếu `\mycommand` được định nghĩa nhưng không được sử dụng, quá trình
 biên dịch sẽ không có lỗi gì cả. Vì thế, mặc dù lỗi được phát hiện ở dòng 7, lỗi
-"thực" lại nằm ở việc định nghĩa `\mycommand` tại dòng 3. Do đó, việc đọc toàn
+'thực' lại nằm ở việc định nghĩa `\mycommand` tại dòng 3. Do đó, việc đọc toàn
 bộ thông báo lỗi là một việc quan trọng.
 
-Chú ý rằng một số trình sửa mã nguồn hiện những bản "tóm tắt" của thông báo lỗi.
+Chú ý rằng một số trình sửa mã nguồn hiện những bản 'tóm tắt' của thông báo lỗi.
 Những tóm tắt này có thể dễ gây hiểu nhầm, ví dụ như
 
 `line 7: undefined command: ...\mycommand`

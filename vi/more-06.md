@@ -18,15 +18,15 @@ biến này sẽ được áp dụng cho tất cả các gói lệnh trong danh 
 Ta đã xét gói `babel` trong [bài chính](lesson-06) như một cách để chọn những
 quy tắc hyphenation khác nhau. Tuy nhiên, gói này có thể làm nhiều hơn vậy, phụ
 thuộc vào ngôn ngữ được sử dụng. Ví dụ, trong tiếng Đức, gói này cung cấp những
-công cụ để tạo ra "soft" hyphen, cũng như khả năng gõ các umlauts mà không cần
+công cụ để tạo ra 'soft' hyphen, cũng như khả năng gõ các umlauts mà không cần
 có một bàn phím hỗ trợ tiếng Đức. Hơn nữa, để ý rằng tiêu đề mục lục
-"_Table of Contents_" đã được chuyển sang tiếng Đức, "_Inhaltsverzeichnis_".
+'_Table of Contents_' đã được chuyển sang tiếng Đức, '_Inhaltsverzeichnis_'.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Chú ý rằng tùy biến là "ngerman"
+\usepackage[ngerman]{babel} % Chú ý rằng tùy biến là 'ngerman'
 
 \begin{document}
 
@@ -56,7 +56,7 @@ dụng. Điều này có thể được thực hiện bằng cách đưa tùy bi
 `\documentclass`. Do đó ta có thể dùng
 
 ```latex
-\documentclass[ngerman]{article} % Chú ý rằng tùy biến là "ngerman"
+\documentclass[ngerman]{article} % Chú ý rằng tùy biến là 'ngerman'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

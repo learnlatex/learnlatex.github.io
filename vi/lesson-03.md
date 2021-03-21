@@ -20,8 +20,8 @@ Nếu bạn đang sử dụng một hệ thống TeX được cài đặt lên m
 trình soạn thảo mã nguồn hãy tạo một tệp mới đặt tên là `first.tex`, và sao chép
 đoạn mã sau vào tệp hoặc gõ lại nó.
 
-Nếu bạn đang sử dụng một dịch vụ trực tuyến, bạn có thể nhấn vào nút "LaTeX
-Online" hoặc "Open in Overleaf" để thử nó!
+Nếu bạn đang sử dụng một dịch vụ trực tuyến, bạn có thể nhấn vào nút 'LaTeX
+Online' hoặc 'Open in Overleaf' để thử nó!
 
 <p class="hint">Chúng tôi khuyên bạn nên thử những lựa chọn trực tuyến ngay cả
 khi đã cài đặt một hệ thống TeX, vì đây là một cơ hội tốt để thấy được các lựa
@@ -93,7 +93,7 @@ quan tâm quá nhiều đến nó.
 Ngoài ra, LaTeX cũng có nhiều cặp `\begin{...}` và `\end{...}` nữa; những cặp
 này được gọi là các *môi trường*. Chúng không thể đứng một mình: đối với mỗi
 `\begin{x}` cần phải có một `\end{x}`. Bạn cũng có thể lồng các môi trường với
-nhau, nhưng đảm bảo rằng các môi trường phải "đi theo cặp", nói cách khác, nếu
+nhau, nhưng đảm bảo rằng các môi trường phải 'đi theo cặp', nói cách khác, nếu
 bạn có `\begin{x} ... \begin{y}` bạn phải có `\end{y} ... \end{x}`.
 
 Ta có thể thêm ghi chú vào mã nguồn bằng cách bắt đầu chúng bằng ký tự `%`. Hãy
@@ -116,7 +116,7 @@ hiểu là một ký tự trống duy nhất.
 
 Đôi khi bạn có thể cần một ký tự trống mạnh hơn mà không bị phân thành các dòng;
 trong LaTeX ta có thể có được điều này bằng `~` &ndash; nó cho một ký tự trống
-nhưng "buộc" hai từ bên cạnh lại với nhau làm cho chúng buộc phải hiện ra trên
+nhưng 'buộc' hai từ bên cạnh lại với nhau làm cho chúng buộc phải hiện ra trên
 một dòng duy nhất. Điều này có thể rất hữu ích khi ta bắt đầu viết các đường dẫn
 trong văn bản ở phần sau của khóa học này.
 
@@ -134,7 +134,7 @@ có thể đọc thêm trong [phần bổ sung của bài học này](more-03).
 
 ## Bài tập
 
-Thử "thí nghiệm" với hệ thống sửa và viết mã tại đây, ấn vào nút để biên dịch
+Thử 'thí nghiệm' với hệ thống sửa và viết mã tại đây, ấn vào nút để biên dịch
 văn bản, sau đó sửa mã ngay trong trang này rồi biên dịch lại.
 
 Thử thêm một vài dòng nữa vào văn bản của bạn, biên dịch và xem những thay đổi
