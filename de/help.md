@@ -9,7 +9,7 @@ permalink: /de/help
 # Hilfe
 
 
-## Navigating the site
+## Auf der Seite navigieren
 
 Der Kurs besteht aus 16 Hauptlektionen, welche über das [Inhaltsverzeichnis]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) auf der [Startseite](./) erreichbar sind.
 
