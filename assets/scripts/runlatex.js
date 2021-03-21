@@ -147,6 +147,11 @@ function openinoverleaf(nd) {
 
     var engv="pdflatex";
     var eng=t.match(engineregex);
+    if(lladddefaultpreamble) {
+	if(t.indexOf("\\documentclass") == -1 && ( eng == null)) {
+	    t=generatepreamble(t,editors[nd]);
+	}
+    }
     if(eng != null) {
 	engv=eng[1].toLowerCase();
     
