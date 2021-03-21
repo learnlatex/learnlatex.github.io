@@ -98,13 +98,13 @@ l.8 My command is used here \mycommand
 Note here that TeX does not see the error at the point that
 the definition is made; and in fact if `\mycommand` is defined but not
 used, no error would be raised. So although the error is reported on
-line 7, the "real" error is in the definition on line 3, so it is
+line 8, the "real" error is in the definition on line 4, so it is
 important to see the whole error message.
 
 Beware that some editors show one line "summaries" of the error log.
 This can be particularly misleading if shown as
 
-`line 7: undefined command: ...\mycommand`
+`line 8: undefined command: ...\mycommand`
 
 as it makes it appear that `\mycommand` is not defined.
 
