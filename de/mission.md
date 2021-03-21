@@ -18,4 +18,4 @@ sollte, ausgewählt und in kurzen Lektionen verpackt. Jede Lektion ist
 zielgerichtet und sollte nicht zu viel Zeit für die Bearbeitung benötigen. In
 jeder Lektion zeigen wir einige Beispiele möglicher Eingaben. Die Beispiele
 können online getestet werden. Erfahre mehr darüber, [wie Beispiele
-funktionieren](./help#Beispiele) in unserer Hilfe.
+funktionieren](./help#beispiele) in unserer Hilfe.

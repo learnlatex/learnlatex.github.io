@@ -27,7 +27,7 @@ permalink: /de/
     Lektionen</em> verpackt, die nicht zu viel Zeit in Anspruch nehmen sollten.
     In jeder Lektion zeigen wir einige Beispiele, wie die Eingabe aussehen
     könnte. Die Beispiele können auf der Webseite bearbeitet und ausgeführt
-    werden. <a href="./help#Beispiele">Mehr zu Beispielen &hellip;</a></p>
+    werden. <a href="./help#beispiele">Mehr zu Beispielen &hellip;</a></p>
   </section>
 </div>
 
