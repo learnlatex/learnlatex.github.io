@@ -23,7 +23,7 @@ This document consolidates some of the writing style recommendations that have a
 
 ## Inline code
 
- - Use  code formatting for things like `pdlaftex`, `bibtex`, `biber` when referring to running the program itself. Use pdfLaTeX, BibTeX, Biber when referring to the program outside of such contexts.
+ - Use code formatting for things like `pdlaftex`, `bibtex`, `biber` when referring to running the program itself. Use pdfLaTeX, BibTeX, Biber when referring to the program outside of such contexts.
  - Similarly, use code formatting for package names, when referring to the package specifically. Packages or sets of package that have well-known names such as TikZ or psTricks can be formatted as such when talking about them generally.
 
 ## Spelling
