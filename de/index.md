@@ -1,68 +1,53 @@
 ---
 layout: "start"
 lang: "de"
-title: Learn LaTeX online for free in beginner friendly lessons
-description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+title: Lerne LaTeX kostenlos online in anfängerfreundlichen Lektionen
+description: "Lerne LaTeX in 16 anfängerfreundlichen Lektionen. Gehe die ersten Schritte mit LaTeX, einem Textsatzsystem zur Erstellung hochwertig gesetzter Ausgaben."
 permalink: /de/
 ---
 
 # Learn LaTeX
 
-<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="heading__introduction">Gehe die ersten Schritte mit LaTeX, einem Textsatzsystem zur Erstellung hochwertig gesetzter Ausgaben.</h2>
 
 <div
   class="text-columns">
   <section>
-    <h3
-      class="text-columns__heading"
-      >Introduction</h3>
-    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor,
-    and because it is not a single program. Our aim is to help you get
-    started with LaTeX from the basics, installation, to writing code, without
-    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+    <h3 class="text-columns__heading">Einführung</h3>
+    <p>LaTeX kann für neue Benutzer beängstigend sein, da es <em>kein</em>
+    Textverarbeitungsprogramm und auch kein einzelnes Programm ist. Unser Ziel
+    ist, Sie bei Ihrem Start mit LaTeX zu unterstützen: Wir erklären die
+    Grundlagen, Installation, das Schreiben von Code, ohne Sie gleich mit
+    <em>Allem</em> zu erschlagen. <a href="./mission">Mehr zu unserer Mission
+    &hellip;</a></p>
   </section>
   <section>
-    <h3
-      class="text-columns__heading"
-      >How it works</h3>
-      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#beispiele">More on examples &hellip;</a></p>
+    <h3 class="text-columns__heading">Wie es funktioniert</h3>
+    <p>Wir haben die wichtigsten Dinge, die man wissen sollte, in <em>16 kurzen
+    Lektionen</em> verpackt, die nicht zu viel Zeit in Anspruch nehmen sollten.
+    In jeder Lektion zeigen wir einige Beispiele, wie die Eingabe aussehen
+    könnte. Die Beispiele können auf der Webseite bearbeitet und ausgeführt
+    werden. <a href="./help#Beispiele">Mehr zu Beispielen &hellip;</a></p>
   </section>
 </div>
 
-# Herzlich willkommen bei learnlatex.org!
+<h2 class="heading__toc" id="toc">Lektionen</h2>
 
-Diese Seite möchte Sie bei den ersten Schritten mit LaTeX unterstützen. LaTeX ist ein Textsatzsystem für die Erstellung hochwertiger Druckausgaben und kann gerade für Anfänger abschreckend sein, da es _kein_ Textverarbeitungsprogramm ist und zudem nicht als ein einzelnes Programm installiert wird. Unser Ziel ist es, Sie beim Start zu unterstützen ohne gleich _alles_ zeigen zu wollen, was LaTeX kann.
-
-Um das zu erreichen, haben wir 16 der wichtigsten Dinge ausgewählt, die Sie kennen sollten, und sie in kleine „Lektionen“ verpackt. Jede Lektion ist zielgerichtet, so dass man sie recht schnell durcharbeiten kann. Jede Einheit enthält zudem Anwendungsbeispiele, die Sie direkt online ausprobieren können.
-
-Uns ist bewusst, dass Nutzer schnell mehr wissen wollen als wir in den 16 kurzen Lektionen abdecken können. Um Ihnen bei der weiteren Suche nach Informationen zu helfen, haben wir daher für jede Einheit einen Punkt „So geht es weiter“ ergänzt. Diese Zusatzinformationen können Ihnen dabei helfen, mehr zu einzelnen Details zu erfahren. Gleichzeitig stören sie aber nicht den Lesefluss.
-
-## So funktionieren die Beispiele
-
-Um Sie beim Lernen von LaTeX zu unterstützen, enthält diese Seite viele Beispiele. In [Lektion 2](lesson-02) wird gezeigt, wie man LaTeX online oder auch mit Hilfe einer lokalen Installation auf Ihrem eigenen Computer zuhause nutzen kann. Um den Einstieg zu erleichtern, wurden alle Beispiele so aufbereitet, dass sie _direkt auf der jeweiligen Seite_ bearbeitet und gestartet werden können. Zudem sind sie direkt über [Overleaf](https://www.overleaf.com) nutzbar, eine sehr beliebte LaTeX-Onlineplattformen. Aber keine Angst, alle Beispiele können auch lokal auf dem eigenen Computer genutzt werden. Mehr zur Nutzung der Beispiele finden Sie in der [Hilfe](help) der Seite.
-
-Alle Beispiele basieren auf einer aktuellen LaTeX-Installation. Sie funktionieren mit beiden verfügbaren Online-Angeboten. Wenn Sie seltsame Fehlermeldungen erhalten, prüfen Sie bitte, ob Ihre LaTeX-Installation aktuell ist.
-
-<h2
-  class="heading__toc"
-  id="toc"
-  >Lektionen</h2>
-
-<p
-  class="paragraph__toc"
-  >Wir haben für jede Lektion eine Seite mit <b>mehr Informationen zu diesem Thema</b> hinzugefügt. Diese zusätzlichen Informationen unterstützen Sie, wenn Sie Details benötigen, sollten Ihnen jedoch nicht im Weg stehen, wenn Sie dies nicht tun.</p>
+<p class="paragraph__toc">Für jede Lektion gibt es eine <b>Mehr zu diesem
+Thema</b> Seite. Diese Zusatzinformationen dienen der Unterstützung, sollten
+mehr Details erwünscht sein, müssen anderen Falls aber nicht bearbeitet
+werden.</p>
 
 {% include toc-lessons.html prefix="de/lesson" %}
 
-<h2
-  class="heading__toc"
-  >Additional lessons</h2>
-<ul
-  class="lessons-toc">
+<h2 class="heading__toc">Zusatzlektionen</h2>
+<ul class="lessons-toc">
   {% include toc-additional-lessons.html prefix="de/language" %}
   {% include toc-additional-lessons.html prefix="de/extra" %}
 </ul>
 
-## So geht es weiter
+## Nächste Schritte
 
-Die gezielten Einheiten hier erheben nicht den Anspruch, alles abzudecken, was Sie jemals über LaTeX wissen müssen. Wir wollen Ihnen aber genügend Informationen geben, um starten zu können und die Beispiele und Hinweise andernorts zu _verstehen_. Einige Hinweise finden Sie in [der letzten Lektion](./lesson-16), aber es sollte an dieser Stelle auch gesagt werden, das ein Buch über LaTeX immer noch der beste Weg ist, mehr zu einzelnen Details zu erfahren. Einige Buchempfehlungen finden Sie ebenfalls in der letzten Lektion.
+Sich ein gutes Buch über LaTeX zu besorgen, ist der beste Weg, die Details zu
+lernen. Wir zeigen, wie man weitere Informationen, einschließlich einiger
+Buchempfehlungen, bekommen kann, in der [letzten Lektion](./lesson-16).
