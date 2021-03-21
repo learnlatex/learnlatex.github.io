@@ -221,7 +221,7 @@ of the bibliography and citation commands directly from your document preamble
 using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
 hand usually require working with these external files and need knowledge of
 the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customise than the BibTeX workflow.
+easier to customize than the BibTeX workflow.
 
 In `biblatex` it is generally easier to implement more elaborate citation
 styles with a wider array of different citation commands. It also offers more

@@ -21,7 +21,7 @@ appearance when you have to.
 
 We'll start with an example contrasting one of the most common logical markup
 commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasised.)
+that's usually how things are emphasized.)
 
 ```latex
 \documentclass{article}
