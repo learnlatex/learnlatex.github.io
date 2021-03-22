@@ -45,7 +45,7 @@ but with some variations:
 - `report`  
   longer documents with chapters, single-sided printing
 - `book`  
-  longer documents with chapters, double-sided printing, with front- and 
+  longer documents with chapters, double-sided printing, with front- and
   back-matter (for example an index)
 - `letter`  
   correspondence with no sections
@@ -76,7 +76,7 @@ The text goes Here
 
 See how ``\\`` is used to separate lines of the address; we'll look at line
 breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialised commands.
+new environment for each letter and has specialized commands.
 
 The standard `article`, `report` and `book` classes take the options `10pt`,
 `11pt` and `12pt` to change font size, and `twocolumn` to make a two-column

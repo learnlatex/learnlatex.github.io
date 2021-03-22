@@ -5,15 +5,26 @@
 var preincludes={};
 
 var buttons ={
-    "edit":             "edit",
-    "copy":             "copy",
     "Open in Overleaf": "Open in Overleaf",
     "LaTeX Online":     "LaTeX Online",
     "Delete Output":    "Delete Output",
-    "Compiling PDF":    "Compiling PDF"
+    "Compiling PDF":    "Compiling PDF",
+// The following not used on learnlatex.org    
+    "edit":             "edit",
+    "copy":             "copy",
+    "Added Code":       "Added code",
+    "End Added Code":   "End Added code",
+    "Top Caption":      ""
 }
 
+var lleditorlines=100;
+var lladddefaultpreamble=false;
+var lladddefaultengine=false;
+
+// debug by using https://httpbin.org/post
+// set to null to omit from interface
 var latexcgihost="https://texlive.net/cgi-bin/latexcgi";
+var overleafhost="https://www.overleaf.com/docs";
 
 var editors=[];
 
@@ -23,6 +34,21 @@ const commentregex = / %.*/;
 const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex|make4ht) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
+
+var packageregex = [
+    [ /\\includegraphics/,                    "\\usepackage[demo]{graphicx}\n"],
+    [ /\\begin{equation|align|gather|flalign/,"\\usepackage{amsmath}\n"       ],
+    [ /tikz|pgf/,                             "\\usepackage{tikz}\n"          ],
+    [ /fancy/,                                "\\usepackage{fancyhdr}\n"      ],
+    [ /addplot|axis/,                         "\\usepackage{pgfplots}\n"      ],
+    [ /hyper|href|bookmark|\\url/,            "\\usepackage{hyperref}\n"      ],
+    [ /\\newcolumntype/,                      "\\usepackage{array}\n"         ],
+    [ /listing/,                              "\\usepackage{listings}\n"      ],
+    [ /\\blind/,                              "\\usepackage{blindtext}\n"     ],
+    [ /\\lipsum/,                             "\\usepackage{lipsum}\n"        ],
+    [ /color/,                                "\\usepackage{xcolor}\n"        ],
+    [ /pspicture/,                            "\\usepackage{pstricks}\n"      ]
+];
 
 function llexamples() {
     var p = document.getElementsByTagName("pre");
@@ -39,6 +65,13 @@ function llexamples() {
 		    acemode="ace/mode/text";
 		}
 	    } else {
+		// caption
+		if(buttons["Top Caption"]) {
+		    var cpt = document.createElement("div");
+		    cpt.setAttribute("class",'lltopcaption');
+		    cpt.innerHTML=buttons["Top Caption"];
+		    p[i].parentNode.insertBefore(cpt, p[i]);
+		}
 		// space
 		var s = document.createElement("div");
 		s.setAttribute("class",'ace-spacer');
@@ -50,18 +83,20 @@ function llexamples() {
 		r.setAttribute("onclick",'latexcgi("pre' + i + '")');
 		r.setAttribute("id","lo-pre" + i);
 		p[i].parentNode.insertBefore(r, p[i].nextSibling);
-		// overleaf
-		var o = document.createElement("button");
-		o.innerText=buttons["Open in Overleaf"];
-		o.setAttribute("class","llbutton");
-		o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
-		p[i].parentNode.insertBefore(o, p[i].nextSibling);
-		var f=document.createElement("span");
-		// action=\"https://httpbin.org/post\"
-		// action=\"https://www.overleaf.com/docs\"
-		f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +
-		    "\" action=\"https://www.overleaf.com/docs\" method=\"post\" target=\"_blank\"></form>";
-		p[i].parentNode.insertBefore(f, p[i].nextSibling);
+		if(overleafhost){
+		    // overleaf
+		    var o = document.createElement("button");
+		    o.innerText=buttons["Open in Overleaf"];
+		    o.setAttribute("class","llbutton");
+		    o.setAttribute("onclick",'openinoverleaf("pre' + i + '")');
+		    p[i].parentNode.insertBefore(o, p[i].nextSibling);
+		    var f=document.createElement("span");
+		    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +
+			"\" action=\"" +
+			overleafhost +
+			"\" method=\"post\" target=\"_blank\"></form>";
+		    p[i].parentNode.insertBefore(f, p[i].nextSibling);
+		}
 		var f2=document.createElement("span");
 		f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i +
 		    "\" name=\"form2-pre" + i +
@@ -77,7 +112,7 @@ function llexamples() {
 	    editor.setTheme("ace/theme/textmate");
 	    editor.getSession().setMode(acemode);
 	    editor.setOption("minLines",1);
-	    editor.setOption("maxLines",100);
+	    editor.setOption("maxLines",lleditorlines);
 	    editor.setShowPrintMargin(false);
 	    editor.resize();
 	    editors["pre" + i]=editor;
@@ -118,6 +153,11 @@ function openinoverleaf(nd) {
 
     var engv="pdflatex";
     var eng=t.match(engineregex);
+    if(lladddefaultpreamble) {
+	if(t.indexOf("\\documentclass") == -1 && ( eng == null)) {
+	    t=generatepreamble(t,editors[nd]);
+	}
+    }
     if(eng != null) {
 	engv=eng[1].toLowerCase();
     
@@ -182,11 +222,48 @@ function deleteoutput(nd){
     ifr.parentNode.removeChild(ifr);
 }
 
+function generatepreamble(t,e) {
+    e.navigateFileStart();
+    if(t.match(/koma|KOMA|addsec|\\scr|scrheadings/)){
+        e.insert("\n% " + buttons["Added Code"] + "\n\\documentclass{scrartcl}\n");
+    } else {
+	e.insert("\n% " + buttons["Added Code"] + "\n\\documentclass{article}\n");
+    }
+    for(var i=0;i<packageregex.length; i++){
+	if(t.match(packageregex[i][0])) e.insert(packageregex[i][1]);
+    }
+    e.insert("\n\\begin{document}\n% "  + buttons["End Added Code"] + "\n\n");
+    e.navigateFileEnd();
+    e.insert("\n\n% " +
+	     buttons["Added Code"] +
+	     "\n\\end{document}\n% "  +
+	     buttons["End Added Code"] +
+	     "\n");
+    return e.getValue();
+}
+
+function defaultengine(t) {
+	if ((t.indexOf("\\usepackage{lua") !== -1) || (t.indexOf("\\directlua") !== -1) ){
+	    return "lualatex";
+	} else if (t.indexOf("fontspec") !== -1) {
+	    return "xelatex";
+	} else if (t.indexOf("pstricks") !==-1) {
+	    return "latex";
+	}
+}
+
 function latexcgi(nd) {
     var fm = document.getElementById('form2-' + nd);
     fm.innerHTML="";
     var p = document.getElementById(nd);
     var t = editors[nd].getValue();
+    var engv="pdflatex";
+    var eng=t.match(engineregex);
+    if(lladddefaultpreamble) {
+	if(t.indexOf("\\documentclass") == -1 && ( eng == null)) {
+	    t=generatepreamble(t,editors[nd]);
+	}
+    }
     addtextarea(fm,"filecontents[]",t);
     addinputnoenc(fm,"filename[]","document.tex");
     if(typeof(preincludes) == "object") {
@@ -202,10 +279,10 @@ function latexcgi(nd) {
 	    }
 	}
     }
-    var engv="pdflatex";
-    var eng=t.match(engineregex);
     if(eng != null) {
 	engv=eng[1].toLowerCase();
+    } else if(lladddefaultengine) {
+	engv=defaultengine(t);
     }
     addinput(fm,"engine",engv);
     var rtn = t.match(returnregex);

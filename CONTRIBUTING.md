@@ -62,12 +62,16 @@ the site useful. There are a few things to watch out for
 
 ## Language
 
-At present, we have full content only in English, but the longer-term plan is
-to add additional languages: notice that the content is within a `/en/` tree.
-There are sample translations under `de`, `fr` and `pt` but only the page titles are translated until the English version is more stable.
+At present, we have full content only in English, but the longer-term plan is to
+add additional languages: notice that the content is within a `/en/` tree. There
+are sample translations under `de`, `fr` and `pt` but only the page titles are
+translated until the English version is more stable.
 
 For the avoidance of doubt, we are using US English spelling (and idiom)
 on the site, as this is the most widely-understood approach.
+
+See [STYLEGUIDE.md](STYLEGUIDE.md) for other points of style for the English
+version.
 
 If you do plan to contribute a translation then please contact the
 site maintainers by opening an
