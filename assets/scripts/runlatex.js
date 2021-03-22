@@ -17,12 +17,13 @@ var buttons ={
     "copy":             "copy",
     "Added Code":       "Added code",
     "End Added Code":   "End Added code",
-    "Top Caption":      ""
+    "Top Caption":      "Edit and run this example:"
 }
 
 var lleditorlines=100;
 var lladddefaultpreamble=false;
 var lladddefaultengine=false;
+var llusecaptions=false;
 
 // debug by using https://httpbin.org/post
 // set to null to omit from interface
@@ -63,13 +64,15 @@ function llexamples() {
 	var pretext=p[i].innerText;
 	// class=noedit on pre or {: .class :} after closing ``` in markdown
 	if(!pretext.match(noeditregex) && !p[i].classList.contains('noedit')) {
-	    if(p[i].textContent.indexOf("\\documentclass") == -1 && !pretext.match(engineregex)) {
+	    if((lladddefaultpreamble && pretext.match(norunregex)) ||
+	       (!lladddefaultpreamble &&  p[i].textContent.indexOf("\\documentclass") == -1 && !pretext.match(engineregex)) ||
+	       p[i].classList.contains('norun')) {
 		if(pretext.match(norunregex)) {
 		    acemode="ace/mode/text";
 		}
 	    } else {
 		// caption
-		if(buttons["Top Caption"]) {
+		if(llusecaptions && buttons["Top Caption"]) {
 		    var cpt = document.createElement("div");
 		    cpt.setAttribute("class",'lltopcaption');
 		    cpt.innerHTML=buttons["Top Caption"];
