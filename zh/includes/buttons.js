@@ -1,7 +1,7 @@
-var buttons ={
+runlatex.texts ={
     "edit":             "editar",
     "copy":             "copiar",
     "Open in Overlaf":  "Aberto em Overleaf",
-    "LaTeX Online":     "LaTeX Online",
+    "TeXLive.net":     "LaTeX Online",
     "Delete Output":    "Excluir saída"
 }

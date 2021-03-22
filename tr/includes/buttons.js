@@ -1,8 +1,8 @@
-var buttons ={
+runlatex.texts ={
     "edit":             "düzenle",
     "copy":             "kopyala",
     "Open in Overleaf": "Overleaf ile aç",
-    "LaTeX Online":     "LaTeX Online",
+    "TeXLive.net":      "LaTeX Online",
     "Delete Output":    "Çıktıyı Sil",
     "Compiling PDF":    "PDF Derleniyor"
 }
