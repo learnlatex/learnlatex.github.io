@@ -93,14 +93,14 @@ l.8 My command is used here \mycommand
 
 Chú ý rằng TeX không phát hiện lỗi tại điểm mà lệnh được định nghĩa, và trên
 thực tế, nếu `\mycommand` được định nghĩa nhưng không được sử dụng, quá trình
-biên dịch sẽ không có lỗi gì cả. Vì thế, mặc dù lỗi được phát hiện ở dòng 7, lỗi
-'thực' lại nằm ở việc định nghĩa `\mycommand` tại dòng 3. Do đó, việc đọc toàn
+biên dịch sẽ không có lỗi gì cả. Vì thế, mặc dù lỗi được phát hiện ở dòng 8, lỗi
+'thực' lại nằm ở việc định nghĩa `\mycommand` tại dòng 4. Do đó, việc đọc toàn
 bộ thông báo lỗi là một việc quan trọng.
 
 Chú ý rằng một số trình sửa mã nguồn hiện những bản 'tóm tắt' của thông báo lỗi.
 Những tóm tắt này có thể dễ gây hiểu nhầm, ví dụ như
 
-`line 7: undefined command: ...\mycommand`
+`line 8: undefined command: ...\mycommand`
 
 vì nó làm cho ta tưởng rằng `\mycommand` không được định nghĩa.
 

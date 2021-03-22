@@ -31,15 +31,15 @@ bài chính, TeX vẫn đánh dấu vị trí lỗi chính xác.
 \end{document}
 ```
 
-Lỗi sẽ được thông báo tại dòng 11:
+Lỗi sẽ được thông báo tại dòng 12:
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Tuy nhiên, trên thực tế lỗi lại nằm ở dòng 9, như được hiển thị bởi hai dòng kế
-tiếp của thông báo lỗi:
+Tuy nhiên, trên thực tế lỗi lại nằm ở dòng 10, như được hiển thị ở hai dòng tiếp
+theo của thông báo lỗi:
 
 ```
 ! Undefined control sequence.
