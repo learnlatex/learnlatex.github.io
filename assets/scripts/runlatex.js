@@ -2,14 +2,17 @@
 // Copyright 2020 2021 David Carlisle
 // MIT Licence
 
+// set here but local versions can be redefined after
+// loading this file
+
 var preincludes={};
 
 var buttons ={
     "Open in Overleaf": "Open in Overleaf",
-    "LaTeX Online":     "LaTeX Online",
+    "LaTeX Online":     "LaTeX Online", // or "run latex" or whatever
     "Delete Output":    "Delete Output",
     "Compiling PDF":    "Compiling PDF",
-// The following not used on learnlatex.org    
+    // The following not used on learnlatex.org
     "edit":             "edit",
     "copy":             "copy",
     "Added Code":       "Added code",
@@ -76,7 +79,7 @@ function llexamples() {
 		var s = document.createElement("div");
 		s.setAttribute("class",'ace-spacer');
 		p[i].parentNode.insertBefore(s, p[i].nextSibling);
-		// latexonline
+		// texlive.net
 		var r = document.createElement("button");
 		r.innerText=buttons["LaTeX Online"];
 		r.setAttribute("class","llbutton");
@@ -249,7 +252,7 @@ function defaultengine(t) {
 	    return "xelatex";
 	} else if (t.indexOf("pstricks") !==-1) {
 	    return "latex";
-	}
+	} else return "pdflatex";
 }
 
 function latexcgi(nd) {
