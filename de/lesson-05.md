@@ -59,6 +59,7 @@ sich die verfügbaren Befehle bereits
 ```latex
 \documentclass{letter}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \begin{document}
 
 \begin{letter}{Eine Adresse\\Einer Straße\\Jener Stadt}
@@ -120,6 +121,7 @@ der KOMA-Script Sammlung oder auf `memoir` verändert.
 ```latex
 \documentclass{article} % Hier die Dokumentklasse ändern
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 
 \begin{document}
 
