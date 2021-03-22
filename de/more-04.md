@@ -14,6 +14,7 @@ Befehle, die die 'Metadaten' definieren, und einer, um sie zu nutzen.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \begin{document}
 \author{E.~I.~N.~Anderer \and D.~Keinspeck}
 \title{Dinge, die ich tat}
@@ -46,6 +47,7 @@ eine weniger weit verbreitete zur Verfügung: beschreibende Listen.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \begin{document}
 
 \begin{description}

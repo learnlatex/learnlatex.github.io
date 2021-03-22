@@ -35,6 +35,19 @@ das auf der Seite so angezeigt wird:
 \usepackage[T1]{fontenc}
 
 \begin{document}
+Example text.
+\end{document}
+```
+
+bzw. ins Deutsche übersetzte Beispiele so (siehe auch [speziell fürs Deutsche
+geschriebene Lektion](language-01)):
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+\begin{document}
 Beispieltext.
 \end{document}
 ```

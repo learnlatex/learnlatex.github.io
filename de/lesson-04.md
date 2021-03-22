@@ -27,6 +27,7 @@ Betonung.)
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \begin{document}
 Ein wenig Text mit \emph{Hervorhebungen und \emph{geschachteltem} Inhalt}.
 
@@ -59,6 +60,7 @@ gleichbleibende Formatierung im gesamten Dokument.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \begin{document}
 Hallo Welt!
 
@@ -112,6 +114,7 @@ ist, sind Listen. Zwei verbreitete Listentypen sind in LaTeX enthalten.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \begin{document}
 
 Geordnet

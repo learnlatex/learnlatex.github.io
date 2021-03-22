@@ -66,6 +66,7 @@ Seitenrändern auseinandersetzt.
 \documentclass{book}
 \usepackage[T1]{fontenc}
 \usepackage[margin=2.54cm]{geometry}
+\usepackage[ngerman]{babel}
 
 \begin{document}
 Hallo Welt!
@@ -117,6 +118,7 @@ Formatierung ausgibt.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 
 \newcommand\kw[1]{\textbf{\itshape #1}}
 
@@ -142,6 +144,7 @@ Schlagworte in blau anstelle von fett.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 
 \usepackage{xcolor}
 
