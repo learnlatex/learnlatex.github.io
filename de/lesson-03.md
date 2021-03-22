@@ -29,6 +29,7 @@ Falls ein Onlinesystem genutzt werden soll, klicken Sie  bei den Beispielen auf
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 
 \begin{document}
 Hallo Welt!
@@ -36,6 +37,11 @@ Hallo Welt!
 Dies ist ein erstes Dokument.
 \end{document}
 ```
+
+Man beachte die Zeile, in der `\usepackage[ngerman]{babel}` genutzt wird. Diese
+ist erforderlich, um LaTeX für die deutsche Sprache anzupassen. Siehe hierzu die
+[eine spätere Lektion](more-06) oder die [speziell fürs Deutsche geschriebene
+Lektion](language-01).
 
 Speichern Sie die Datei und setzen Sie sie in ein PDF-Dokument; falls Sie eine
 lokale LaTeX-Installation verwenden, hängt der dafür benötigte Knopf von Ihrer
@@ -103,6 +109,7 @@ voranstellen; wir können damit die Struktur eines Dokuments verdeutlichen:
 ```
 \documentclass[a4paper,12pt]{article} % Die Dokumentenklasse mit Optionen
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 % Ein Kommentar in der Präambel
 \begin{document}
 % Dies ist ein Kommentar

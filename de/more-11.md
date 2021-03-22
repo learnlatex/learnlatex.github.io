@@ -15,6 +15,7 @@ sollte LaTeX die Einzüge automatisch regeln.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \begin{document}
 Ein kleiner Absatz, der ein wenig ausgeschmückt wird, damit die Auswirkungen
 auch wirklich gesehen werden können!
