@@ -181,9 +181,9 @@ function openinoverleaf(nd) {
     }
     addinput(fm,"encoded_snip[]","\n" + t);
     addinput(fm,"snip_name[]","document.tex");
-    if(typeof(preincludes) == "object") {
-	if(typeof(preincludes[nd]) == "object") {
-	    var incl=preincludes[nd];
+    if(typeof(runlatex.preincludes) == "object") {
+	if(typeof(runlatex.preincludes[nd]) == "object") {
+	    var incl=runlatex.preincludes[nd];
 	    for(prop in incl) {
 		if(editors[prop]==null) {
 		    addinput(fm,"encoded_snip[]",document.getElementById(prop).textContent);
@@ -280,9 +280,9 @@ function latexcgi(nd) {
     }
     addtextarea(fm,"filecontents[]",t);
     addinputnoenc(fm,"filename[]","document.tex");
-    if(typeof(preincludes) == "object") {
-	if(typeof(preincludes[nd]) == "object") {
-	    var incl=preincludes[nd];
+    if(typeof(runlatex.preincludes) == "object") {
+	if(typeof(runlatex.preincludes[nd]) == "object") {
+	    var incl=runlatex.preincludes[nd];
 	    for(prop in incl) {
 		if(editors[prop]==null) {
 		    addtextarea(fm,"filecontents[]",document.getElementById(prop).textContent);
