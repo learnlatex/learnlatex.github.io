@@ -10,7 +10,7 @@ toc-description: "Mit Literaturdatenbanken arbeiten."
 # Literaturverzeichnis und Verweise
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
    },
