@@ -14,7 +14,7 @@ cách chia mã văn bản thành nhiều phần, làm việc trên từng phần
 lại với nhau.</span>
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",

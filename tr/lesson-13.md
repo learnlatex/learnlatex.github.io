@@ -10,7 +10,7 @@ toc-description: "Spliting up sources in a controlled way."
 # Structuring longer documents
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",

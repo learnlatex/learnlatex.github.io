@@ -10,7 +10,7 @@ toc-description: "Trabalhando com bancos de referências."
 # Citações e referências
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
    },
