@@ -19,7 +19,7 @@
         {% else %}
           <a 
             class="primary-navigation__anchor" 
-            href="/{{ page.lang }}/"
+            href="{{"/" | | absolute_url}}{{ page.lang }}/"
             >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
         {% endif %}
       </li>
