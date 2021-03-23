@@ -157,7 +157,7 @@
   font-display: fallback;
   font-style: normal;
   font-weight: 900;
-  src: url('/assets/fonts/fa-solid-900.woff2') format('woff2');
+  src: url({{'/assets/fonts/fa-solid-900.woff2' | absolute_url}}) format('woff2');
 }
 
 
