@@ -28,8 +28,8 @@ runlatex.usecaptions=false;
 
 // debug by using https://httpbin.org/post
 // set to null to omit from interface
-runlatex.latexcgihost="https://texlive.net/cgi-bin/latexcgi";
-runlatex.overleafhost="https://www.overleaf.com/docs";
+runlatex.latexcgiURI="https://texlive.net/cgi-bin/latexcgi";
+runlatex.overleafURI="https://www.overleaf.com/docs";
 
 // per page setup
 runlatex.preincludes={};
@@ -88,7 +88,7 @@ function llexamples() {
 		var s = document.createElement("div");
 		s.setAttribute("class",'ace-spacer');
 		p[i].parentNode.insertBefore(s, p[i].nextSibling);
-		if(runlatex.latexcgihost){
+		if(runlatex.latexcgiURI){
 		    // texlive.net
 		    var r = document.createElement("button");
 		    r.innerText=runlatex.texts["TeXLive.net"];
@@ -100,12 +100,12 @@ function llexamples() {
 		    f2.innerHTML="<form style=\"display:none\" id=\"form2-pre" + i +
 			"\" name=\"form2-pre" + i +
 			"\" enctype=\"multipart/form-data\" action=\"" +
-			runlatex.latexcgihost +
+			runlatex.latexcgiURI +
 			"\" method=\"post\" target=\"pre" + i +
 			"ifr\"></form>";
 		    p[i].parentNode.insertBefore(f2, p[i].nextSibling);
 		}
-		if(runlatex.overleafhost){
+		if(runlatex.overleafURI){
 		    // overleaf
 		    var o = document.createElement("button");
 		    o.innerText=runlatex.texts["Open in Overleaf"];
@@ -115,7 +115,7 @@ function llexamples() {
 		    var f=document.createElement("span");
 		    f.innerHTML="<form style=\"display:none\" id=\"form-pre" + i +
 			"\" action=\"" +
-			runlatex.overleafhost +
+			runlatex.overleafURI +
 			"\" method=\"post\" target=\"_blank\"></form>";
 		    p[i].parentNode.insertBefore(f, p[i].nextSibling);
 		}
