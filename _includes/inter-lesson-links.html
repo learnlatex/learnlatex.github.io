@@ -87,4 +87,15 @@
       {% endif %}
     {% endif %}
   {% endif %}
+
+
+  {% if page.path contains "extra-" %}
+    <!-- Table of contents link start -->
+    <a
+      class="inter-lesson-navigation__anchor inter-lesson-navigation__anchor--toc"
+      href="{{ "/" | absolute_url | append: page.lang | append: "/" }}#toc"
+      >{{ site.data.translations['navigational-elements_toc'][page.lang] }}</a>
+    <!-- Table of contents link end -->
+  {% endif %}
+
 </nav>
