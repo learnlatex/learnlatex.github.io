@@ -14,12 +14,12 @@
         {% if page.url == lx %}
           <a 
             class="primary-navigation__anchor primary-navigation__anchor--active" 
-            href="/{{ page.lang }}/"
+            href="{{"/"| absolute_url}}{{ page.lang }}/"
             >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
         {% else %}
           <a 
             class="primary-navigation__anchor" 
-            href="/{{ page.lang }}/"
+            href="{{"/" | absolute_url}}{{ page.lang }}/"
             >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
         {% endif %}
       </li>
@@ -30,13 +30,13 @@
         {% if page.url contains '/mission' %}
           <a 
             class="primary-navigation__anchor primary-navigation__anchor--active" 
-            href="/{{ page.lang }}/mission"
+            href="{{"/" | absolute_url}}{{ page.lang }}/mission"
             >{{ site.data.translations['navigational-elements_mission'][page.lang] }}</a>
 
         {% else %}
           <a 
             class="primary-navigation__anchor" 
-            href="/{{ page.lang }}/mission"
+            href="{{"/" | absolute_url}}{{ page.lang }}/mission"
             >{{ site.data.translations['navigational-elements_mission'][page.lang] }}</a>
         {% endif %}
       </li>
@@ -47,12 +47,12 @@
         {% if page.url contains '/help' %}
           <a 
             class="primary-navigation__anchor primary-navigation__anchor--active" 
-            href="/{{ page.lang }}/help"
+            href="{{"/" | absolute_url}}{{ page.lang }}/help"
             >{{ site.data.translations['navigational-elements_help'][page.lang] }}</a>
         {% else %}
           <a 
             class="primary-navigation__anchor" 
-            href="/{{ page.lang }}/help"
+            href="{{"/" | absolute_url}}{{ page.lang }}/help"
             >{{ site.data.translations['navigational-elements_help'][page.lang] }}</a>
         {% endif %}
       </li>
@@ -63,12 +63,12 @@
         {% if page.url contains '/contact' %}
           <a 
             class="primary-navigation__anchor primary-navigation__anchor--active" 
-            href="/{{ page.lang }}/contact"
+            href="{{"/" | absolute_url}}{{ page.lang }}/contact"
             >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
         {% else %}
           <a 
             class="primary-navigation__anchor" 
-            href="/{{ page.lang }}/contact"
+            href="{{"/" | absolute_url}}{{ page.lang }}/contact"
             >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
         {% endif %}
       </li>

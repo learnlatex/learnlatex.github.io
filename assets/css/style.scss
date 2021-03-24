@@ -38,7 +38,7 @@
 @font-face {
   font-family: 'NotoSans-Medium';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-Medium.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-Medium.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -47,7 +47,7 @@
 @font-face {
   font-family: 'NotoSans-MediumItalic';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-MediumItalic.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-MediumItalic.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -56,7 +56,7 @@
 @font-face {
   font-family: 'NotoSans-SemiCondensedMedium';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-SemiCondensedMedium.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-SemiCondensedMedium.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -65,7 +65,7 @@
 @font-face {
   font-family: 'NotoSans-Regular';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-Regular.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-Regular.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -74,7 +74,7 @@
 @font-face {
   font-family: 'NotoSans-Italic';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-Italic.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-Italic.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -83,7 +83,7 @@
 @font-face {
   font-family: 'NotoSans-SemiCondensedRegular';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-SemiCondensedRegular.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-SemiCondensedRegular.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -92,7 +92,7 @@
 @font-face {
   font-family: 'NotoSans-Light';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-Light.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-Light.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -101,7 +101,7 @@
 @font-face {
   font-family: 'NotoSans-LightItalic';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-LightItalic.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-LightItalic.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -110,7 +110,7 @@
 @font-face {
   font-family: 'NotoSans-SemiCondensedLight';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-SemiCondensedLight.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-SemiCondensedLight.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -119,7 +119,7 @@
 @font-face {
   font-family: 'NotoSans-CondensedLight';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-CondensedLight.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-CondensedLight.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -128,7 +128,7 @@
 @font-face {
   font-family: 'NotoSans-Thin';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-Thin.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-Thin.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -137,7 +137,7 @@
 @font-face {
   font-family: 'NotoSans-ThinItalic';
   font-display: fallback;
-  src: url('/assets/fonts/NotoSans-ThinItalic.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoSans-ThinItalic.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -146,7 +146,7 @@
 @font-face {
   font-family: 'NotoMono-Regular';
   font-display: fallback;
-  src: url('/assets/fonts/NotoMono-Regular.woff2') format('woff2');
+  src: url('{{"/assets/fonts/NotoMono-Regular.woff2" | relative_url}}') format('woff2');
 }
 
 :root {
@@ -157,7 +157,7 @@
   font-display: fallback;
   font-style: normal;
   font-weight: 900;
-  src: url('/assets/fonts/fa-solid-900.woff2') format('woff2');
+  src: url('{{"/assets/fonts/fa-solid-900.woff2" | relative_url}}') format('woff2');
 }
 
 

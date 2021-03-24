@@ -17,7 +17,7 @@
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}"
+                href="{{ "/" | relative_url | append: page.lang | append: "/" }}"
                 hreflang="{{ page.lang }}"
                 >{{ site.data.translations['navigational-elements_home'][page.lang] }}</a>
             </li>
@@ -25,7 +25,7 @@
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}mission"
+                href="{{ "/" | relative_url | append: page.lang | append: "/" }}mission"
                 hreflang="{{ page.lang }}"
                 >{{ site.data.translations['navigational-elements_mission'][page.lang] }}</a>
             </li>
@@ -33,7 +33,7 @@
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}help"
+                href="{{ "/" | relative_url | append: page.lang | append: "/" }}help"
                 hreflang="{{ page.lang }}"
                 >{{ site.data.translations['navigational-elements_help'][page.lang] }}</a>
             </li>
@@ -41,7 +41,7 @@
               class="website-footer-navigation__list-item">
               <a 
                 class="website-footer-navigation__anchor" 
-                href="{{ "/" | absolute_url | append: page.lang | append: "/" }}contact"
+                href="{{ "/" | relative_url | append: page.lang | append: "/" }}contact"
                 hreflang="{{ page.lang }}"
                 >{{ site.data.translations['navigational-elements_contact'][page.lang] }}</a>
             </li>
@@ -60,7 +60,7 @@
                 class="website-footer-navigation__list-item">
                 <a 
                   class="website-footer-navigation__anchor" 
-                  href="{{ "/" | absolute_url | append: page.lang | append: "/" }}licenses"
+                  href="{{ "/" | relative_url | append: page.lang | append: "/" }}licenses"
                   hreflang="{{ page.lang }}"
                   >{{ site.data.translations['navigational-elements_licenses'][page.lang] }}</a>
               </li>
@@ -76,7 +76,7 @@
                 class="website-footer-navigation__list-item">
                 <a 
                   class="website-footer-navigation__anchor" 
-                  href="{{ site.github.repository_url }}/tree/master/{{ page.path }}"
+                  href="{{ site.github.repository_url }}/tree/main/{{ page.path }}"
                   hreflang="en"
                   >{{ site.data.translations['navigational-elements_page-source'][page.lang] }}</a>
               </li>
