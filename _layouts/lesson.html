@@ -84,7 +84,7 @@ layout: compress
                 {% assign pageno = page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | floor %}
                 {{ mrdigits[pageno] }}
               {% else %}
-	  {{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | replace 'language-', '' | replace 'extra-', '' | round: 2 }}
+	  A{{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | replace 'language-', '' | replace 'extra-', '' | round: 2 }}B
 	{% endif %}</span>
         <!-- meta lesson information end -->
 
