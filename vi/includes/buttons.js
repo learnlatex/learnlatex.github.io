@@ -6,7 +6,7 @@ runlatex.texts ={
     // The following not used on learnlatex.org
     "edit":             "sửa",
     "copy":             "sao chép",
-    "Added Code":       "Added code",
-    "End Added Code":   "End Added code",
-    "Top Caption":      "Edit and run this example:"
+    "Added Code":       "Đoạn mã được thêm tự động",
+    "End Added Code":   "Kết thúc đoạn mã được thêm tự động",
+    "Top Caption":      "Chỉnh sửa và biên dịch ví dụ này:"
 }
