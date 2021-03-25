@@ -81,10 +81,10 @@ layout: compress
           class="meta"
           >{{ site.data.translations['informational-elements_lesson'][page.lang] }}
               {% if page.lang == "mr" %}
-                {% assign pageno = page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | floor %}
+                {% assign pageno = page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | replace: 'language-', '' | replace: 'extra-', '' | floor %}
                 {{ mrdigits[pageno] }}
               {% else %}
-	  {{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | round: 2 }}
+	  {{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | replace: 'language-', '' | replace: 'extra-', '' | round: 2 }}
 	{% endif %}</span>
         <!-- meta lesson information end -->
 

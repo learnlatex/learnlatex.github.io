@@ -90,6 +90,7 @@ mit Blau als Standardwert.
 ```
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 
 \usepackage{xcolor}
 
@@ -117,6 +118,7 @@ Wiederholen wir obiges Beispiel allerdings mit `\NewDocumentCommand`.
 ```
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 
 \usepackage{xparse} % Nur für ältere LaTeX-Versionen notwendig
 \usepackage{xcolor}

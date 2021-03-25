@@ -29,6 +29,7 @@ das Folgende genutzt werden:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -59,6 +60,7 @@ Zelle zu verändern.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -89,6 +91,7 @@ beiden äußeren Rändern der Tabelle erhalten und zwischen zwei Spalten
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 
 \setlength\tabcolsep{1cm}
@@ -113,6 +116,7 @@ wird:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 
 \begin{document}
@@ -136,6 +140,7 @@ des Argument in der Mitte des Abstands zwischen Spalten _hinzugefügt_ wird.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 
 \begin{document}
@@ -158,6 +163,7 @@ Manchmal muss man senkrechte Linien verwenden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 
 \begin{document}
@@ -191,6 +197,7 @@ und `l` beeinflusst werden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -216,6 +223,7 @@ Ein einfaches Beispiel mit zwei ausgerichteten Spalten wäre:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{booktabs}
 \usepackage{siunitx}
 
@@ -263,6 +271,7 @@ wird.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 \begin{document}
 
@@ -306,6 +315,7 @@ entspricht der Verwendung von `p{...}` mit automatisch gewählter Breite.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{tabularx}
 \begin{document}
 
@@ -356,6 +366,8 @@ Seitenumbrüche erlauben. Wir zeigen hier das `longtable` Paket:
 
 ```latex
 \documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}
 \usepackage{longtable}
@@ -406,6 +418,7 @@ einfaches Beispiel sei allerdings hier gezeigt.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 \usepackage{threeparttable}
 
@@ -448,9 +461,9 @@ Schriftgrad weniger schmal sind.
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 \usepackage{ragged2e}
-\usepackage[ngerman]{babel}
 
 \begin{document}
 \begin{table}
@@ -503,6 +516,7 @@ Umgebungen in mehrere Zeilen aufgeteilt werden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -528,6 +542,7 @@ zentriert oder unten ausgerichtet, verwendet wird es wie folgt:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -566,6 +581,7 @@ Das folgende Beispiel zeigt die Verwendung von `\extrarowheight`.
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{array}
 
 \begin{document}

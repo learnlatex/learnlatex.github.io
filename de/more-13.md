@@ -20,6 +20,7 @@ verwendet auch eine Hilfsdatei. Glücklicherweise ist der Vorgang durch das
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{imakeidx}
 \makeindex
 \begin{document}

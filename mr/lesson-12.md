@@ -10,7 +10,7 @@ toc-description: "संदर्भसामग्री घडवणे व �
 # संदर्भ
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
    },

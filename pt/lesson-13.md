@@ -10,7 +10,7 @@ toc-description: "Dividindo o código de forma organizada."
 # Estruturando documentos longos
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",

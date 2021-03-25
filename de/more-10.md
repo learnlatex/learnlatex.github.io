@@ -49,6 +49,7 @@ Gleichungen mit der Ausrichtung am Relationssymbol.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \begin{document}
 Ausgerichtete Gleichungen
@@ -66,6 +67,7 @@ einen größeren Term in einer größeren Gleichung zu setzen. Beispielsweise si
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \begin{document}
 Aligned:
@@ -91,6 +93,7 @@ Zeile auszurichten; vergleiche folgende Elemente einer Liste.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \begin{document}
 \begin{itemize}
@@ -188,6 +191,7 @@ kleines Beispiel soll aber nicht vorenthalten werden.
 ```latex
 % !TEX lualatex
 \documentclass[a4paper]{article}
+\usepackage[ngerman]{babel}
 \usepackage{unicode-math}
 \setmainfont{TeX Gyre Pagella}
 \setmathfont{TeX Gyre Pagella Math}

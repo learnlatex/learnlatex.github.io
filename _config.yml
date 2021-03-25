@@ -86,3 +86,10 @@ defaults:
     values:
       lang: "mr"
       label: "मराठी"
+  -
+    scope:
+      path: "de"
+    values:
+      lang: "de"
+      label: "Deutsch"
+

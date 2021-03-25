@@ -62,11 +62,12 @@ zerbrechen und sich auf das Beheben des ersten Fehlers konzentrieren.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 
 \begin{document}
-Text_word  $\alpha + \beta$.
+Text_Wort  $\alpha + \beta$.
 
-More text.
+Mehr Text.
 \end{document}
 ```
 
@@ -112,10 +113,11 @@ erzeugt; um den Fehler zu sehen, muss `%!TeX log` hinzugefügt werden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 
 \begin{document}
 
- Text {\large eineg großer Text) normale Größe?
+ Text {\large etwas großer Text) normale Größe?
 
 \end{document}
 ```

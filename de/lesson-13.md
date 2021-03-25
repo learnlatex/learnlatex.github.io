@@ -10,7 +10,7 @@ toc-description: "Quellen auf kontrollierte Weise aufteilen"
 # Längere Dokumente strukturieren
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",
@@ -50,6 +50,7 @@ Ein langes Dokument könnte also folgendermaßen aufgebaut sein:
 ```latex
 \documentclass{book}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 

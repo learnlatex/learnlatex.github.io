@@ -15,6 +15,7 @@ geladen werden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
 \usepackage[hidelinks]{hyperref}
 
 \begin{document}

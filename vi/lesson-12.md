@@ -14,7 +14,7 @@ về các tài liệu được trích dẫn/tham khảo, cũng như cách sử d
 bản.</span>
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
    },

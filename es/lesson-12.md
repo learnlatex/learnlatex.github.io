@@ -10,7 +10,7 @@ toc-description: "Trabajando con bases de datos bibliográficas"
 # Citas y referencias bibliográficas
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
    },
