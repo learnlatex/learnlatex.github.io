@@ -144,7 +144,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 \end{document}
 ```
 
-# Gói `mathtools`
+## Gói `mathtools`
 
 Gói `mathtools` dùng `amsmath` và thêm nhiều chức năng tăng cường khác như tăng
 các hỗ trợ cho việc viết ma trận. Dùng `mathtools` ta có thể dùng các ký tự khai
@@ -166,7 +166,7 @@ báo bảng để căn lề các ô trong ma trận.
 \end{document}
 ```
 
-# Các công thức toán học và Unicode
+## Các công thức toán học và Unicode
 
 
 Như ta sẽ biết trong [một bài sau](lesson-14), có nhiều trình biên dịch TeX khác
