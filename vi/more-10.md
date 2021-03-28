@@ -102,7 +102,7 @@ c&=d
 \end{document}
 ```
 
-# In đậm các công thức toán học
+## In đậm các công thức toán học
 
 LaTeX có hai cách để làm đậm các công thức toán. Để làm một công thức được in
 đậm hoàn toàn, dùng `\boldmath` trước công thức đó. Lệnh `\mathbf` cũng có thể
