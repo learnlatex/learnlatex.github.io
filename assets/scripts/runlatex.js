@@ -176,10 +176,9 @@ function openinoverleaf(nd) {
     }
     if(eng != null) {
 	engv=eng[1].toLowerCase();
-    
 	if(engv == "pdftex" || engv == "luatex" || engv == "xetex" || engv == "ptex" || engv == "uptex") {
-	    t = "% Force main document for Overleaf\n\\let\\tmp\n\\documentclass\n" + t;
-	}
+	    addinput(fm,"main_document","document.tex");
+	}    
     }
     addinput(fm,"encoded_snip[]","\n" + t);
     addinput(fm,"snip_name[]","document.tex");
