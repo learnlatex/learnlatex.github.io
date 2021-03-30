@@ -53,7 +53,7 @@ The examples are taken from the package documentation unless otherwise noted.
 
 
 ## Function plotting
-### [`pgfplots`](https://texdoc.net/pkg/plots)
+### [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 
 

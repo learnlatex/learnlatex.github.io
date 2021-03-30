@@ -100,7 +100,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ## आलेख
 
-आज्ञासंच: [`pgfplots`](https://texdoc.net/pkg/plots)
+आज्ञासंच: [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}

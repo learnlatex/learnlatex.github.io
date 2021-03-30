@@ -58,7 +58,7 @@ Package: [`tikz`](https://texdoc.net/pkg/tikz)
 
 ## Function plotting
 
-Package: [`pgfplots`](https://texdoc.net/pkg/plots)
+Package: [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}

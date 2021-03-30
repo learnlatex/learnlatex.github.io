@@ -58,7 +58,7 @@ Estos ejemplos han sido sacados, en su mayoría, de la documentación del paquet
 
 
 ## Function plotting
-### [`pgfplots`](https://texdoc.net/pkg/plots)
+### [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 
 

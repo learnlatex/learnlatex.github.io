@@ -55,7 +55,7 @@ Paket: [`tikz`](https://texdoc.net/pkg/tikz)
 
 ## Funktionsplots
 
-Paket: [`pgfplots`](https://texdoc.net/pkg/plots)
+Paket: [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 {% include extra-01-example-pgfplots.md %}
 

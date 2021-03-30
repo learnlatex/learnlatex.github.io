@@ -63,7 +63,7 @@ Extension [`tikz`](https://texdoc.net/pkg/tikz)
 
 ## Tracé de fonction mathématique
 
-Extension [`pgfplots`](https://texdoc.net/pkg/plots)
+Extension [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}

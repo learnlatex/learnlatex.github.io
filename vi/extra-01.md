@@ -61,7 +61,7 @@ Gói: [`tikz`](https://texdoc.net/pkg/tikz)
 
 ## Vẽ đồ thị hàm số
 
-Gói: [`pgfplots`](https://texdoc.net/pkg/plots)
+Gói: [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}

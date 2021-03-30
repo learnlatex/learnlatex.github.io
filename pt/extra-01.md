@@ -55,7 +55,7 @@ contrário.
 
 
 ## Plotagem de funções
-### [`pgfplots`](https://texdoc.net/pkg/plots)
+### [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 
 
