@@ -179,7 +179,7 @@ by executing
 `make4ht  document.tex "2,mathjax"`
 {: .noedit :}
 
-When running locally other configurattions would be possible, see the [make4ht
+When running locally, other configurations would be possible. See the [make4ht
 manual](https://texdoc.org/pkg/make4ht).
 
 ---
