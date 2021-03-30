@@ -173,16 +173,14 @@ output into separate pages at section boundaries.
 
 To enable this output, add the comment:
 
-```
-% !TeX make4ht
-```
+
+`% !TeX make4ht`
+
 
 If using a locally installed TeX system, the same output may be obtained
 by executing
 
-```
-make4ht  document.tex "2,mathjax"
-```
+`make4ht  document.tex "2,mathjax"`
 
 
 
