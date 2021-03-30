@@ -163,13 +163,9 @@ the comment.
 
 ## HTML output (make4ht)
 
-If using the LaTeX online system, then an additional "TeX engine" may
-be used. `make4ht` may be specified, returning one or more HTML pages
-in the frame within the page. The command is configured to use
-`2,mathjax` configuration (see the [make4ht
-manual](https://texdoc.org/pkg/make4ht))
-so uses MathJax JavaScript to render any mathematics and splits up the
-output into separate pages at section boundaries.
+If using the LaTeX online system, then an additional "TeX engine",
+make4ht`, may be specified. This returns one or more HTML pages
+in the frame within the page.
 
 To enable this output, add the comment:
 
@@ -183,6 +179,8 @@ by executing
 `make4ht  document.tex "2,mathjax"`
 {: .noedit :}
 
+When running locally other configurattions would be possible, see the [make4ht
+manual](https://texdoc.org/pkg/make4ht).
 
 ---
 
