@@ -180,7 +180,7 @@ by executing
 {: .noedit :}
 
 When running locally other configurattions would be possible, see the [make4ht
-manual](https://texdoc.org/pkg/make4ht)).
+manual](https://texdoc.org/pkg/make4ht).
 
 ---
 
