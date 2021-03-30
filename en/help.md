@@ -181,6 +181,7 @@ by executing
 
 When running locally other configurattions would be possible, see the [make4ht
 manual](https://texdoc.org/pkg/make4ht)).
+
 ---
 
 [^1]: Note that during development of the site we have also used 
