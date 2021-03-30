@@ -47,7 +47,7 @@ The editor being used is [ACE](https://ace.c9.io/).
 #### Three ways to run the example
 
 * Use the Overleaf service
-* Use a LaTeX Online service
+* Use the TeXLive.net service
 * Use a locally installed TeX system
 
 ##### Use the Overleaf service
@@ -72,7 +72,7 @@ The editing features in Overleaf are far more extensive than on this
 site, and you may save your project in your Overleaf account and
 return to it later.
 
-##### Use a LaTeX online service
+##### Use the TeXLive.net service
 
 The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
 [TeXLive.net](https://texlive.net) service[^1].
@@ -141,7 +141,7 @@ Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
 
 ## Choosing how to display the output
 
-If you use the LaTeX online system, then the PDF
+If you use the TeXLive.net system, then the PDF
 output from running an example is shown using
 [PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
 consistent behavior over the widest range of browsers.
@@ -162,7 +162,7 @@ the comment.
 
 ## HTML output (make4ht)
 
-If using the LaTeX online system, then an additional "TeX engine",
+If using the TeXLive.net system, then an additional "TeX engine",
 make4ht`, may be specified. This returns one or more HTML pages
 in the frame within the page.
 

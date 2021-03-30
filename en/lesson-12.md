@@ -252,7 +252,7 @@ you will want to look into using `biblatex`.
 
 Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
 to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and LaTeX Online
+Find out how to do that in your editor, or try the Overleaf and TeXLive.net
 automation.
 
 See what happens when you create new database entries and new citations. Add
