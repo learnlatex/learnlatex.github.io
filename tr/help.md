@@ -41,7 +41,7 @@ Whether or not the code block has been edited, there are three basic ways that y
 
 1. Use a  **LaTeX Online** service. The <button style="padding:0 1px;font-size:90%">LaTeX Online</button> button
    will submit the code to the
-   [TexLive.net](https://texlive.net) service[^1].
+   [TeXLive.net](https://texlive.net) service[^1].
 
 
    The LaTeX CGI service was developed specifically to support this site, and

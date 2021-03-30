@@ -44,7 +44,7 @@ Günümüzde bilgisayarınıza TeX sistemi ve LaTeX düzenleyici kurulumu yapmad
 
 Bu sitelerden bazıları LaTeX ile MS Word vb. kelime işlemcilerin özelliklerini birleştirirken bazıları da LaTeX kodlarınızı görmenize ve bilgisayarınızda elde edeceğiniz çalışma stiline yaklaşmanıza olanak verir.
 
-Derslerde verilen örnekleri düzenlemeniz ve deneyebilmeniz için kullanıcı kaydı oluşturmadan da kullanabileceğiniz sistemlerden biri olan [TexLive.net](https://texlive.net) kullanmaktayız. En iyi online düzenleyiciler eksiksiz bir çalışma ortamı sunmak adına kullanmadan önce kayıt olmanızı şart koşarlar, bu sayede çalışmalarınızı kayıt altında tutabilirsiniz. Örneklerimizi en popüler online LaTeX sistemlerinden biri olan [Overleaf](https://www.overleaf.com) ile kullanabilmeniz için de gerekli bağlantıları sağladık. Tabi ki bu online LaTeX sistemleri için örnekler çoğaltılabilir, bunlardan bir diğeri de [Papeeria](https://papeeria.com/).
+Derslerde verilen örnekleri düzenlemeniz ve deneyebilmeniz için kullanıcı kaydı oluşturmadan da kullanabileceğiniz sistemlerden biri olan [TeXLive.net](https://texlive.net) kullanmaktayız. En iyi online düzenleyiciler eksiksiz bir çalışma ortamı sunmak adına kullanmadan önce kayıt olmanızı şart koşarlar, bu sayede çalışmalarınızı kayıt altında tutabilirsiniz. Örneklerimizi en popüler online LaTeX sistemlerinden biri olan [Overleaf](https://www.overleaf.com) ile kullanabilmeniz için de gerekli bağlantıları sağladık. Tabi ki bu online LaTeX sistemleri için örnekler çoğaltılabilir, bunlardan bir diğeri de [Papeeria](https://papeeria.com/).
 
 ## Alıştırma
 
