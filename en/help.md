@@ -164,7 +164,7 @@ the comment.
 ## HTML output (make4ht)
 
 If using the LaTeX online system, then an additional "TeX engine",
-make4ht`, may be specified. This returns one or more HTML pages
+`make4ht`, may be specified. This returns one or more HTML pages
 in the frame within the page.
 
 To enable this output, add the comment:
