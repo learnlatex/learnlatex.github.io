@@ -137,6 +137,7 @@ If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
 also used to produce the PDF result from the DVI file that these variants generate.
 Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
 
+
 ---
 
 ## Choosing how to display the output
@@ -160,8 +161,31 @@ the comment.
 
 ---
 
+## HTML output (make4ht)
+
+If using the LaTeX online system, then an additional "TeX engine",
+make4ht`, may be specified. This returns one or more HTML pages
+in the frame within the page.
+
+To enable this output, add the comment:
+
+
+`% !TeX make4ht`
+{: .noedit :}
+
+If using a locally installed TeX system, the same output may be obtained
+by executing
+
+`make4ht  document.tex "2,mathjax"`
+{: .noedit :}
+
+When running locally other configurattions would be possible, see the [make4ht
+manual](https://texdoc.org/pkg/make4ht)).
+---
+
 [^1]: Note that during development of the site we have also used 
       [LaTeX.Online](https://latexonline.cc/) and
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
       and we thank the developers of those services for making updates to enable
       the examples on this site to be available at an early stage.
+
