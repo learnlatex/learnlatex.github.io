@@ -175,13 +175,13 @@ To enable this output, add the comment:
 
 
 `% !TeX make4ht`
-
+{: .noedit :}
 
 If using a locally installed TeX system, the same output may be obtained
 by executing
 
 `make4ht  document.tex "2,mathjax"`
-
+{: .noedit :}
 
 
 ---
