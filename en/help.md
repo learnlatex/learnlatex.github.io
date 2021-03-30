@@ -74,7 +74,7 @@ return to it later.
 
 ##### Use a LaTeX online service
 
-The <button>LaTeX Online</button> button, below the example, will submit the code to the 
+The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
 [TeXLive.net](https://texlive.net) service[^1].
 
 The TeXLive.net service was developed specifically to support this site, and
@@ -88,10 +88,9 @@ Output</button> button will be provided so that you may remove this output
 (or you may leave it in place and continue the rest of the lesson
 below).
 
-Note that **LaTeX Online** requires no login or signup of any sort
-so it is very convenient for small examples, but neither this site
-nor the `latexcgi`, `latexonline.cc` or `latex-on-http` sites
-provide any mechanism to save your document. Any changes that you
+Note that **TeXLive.net** requires no login or signup of any sort
+so it is very convenient for small examples, but this site
+provides no  mechanism to save your document. Any changes that you
 make to the example are lost if you move off the page.
 
 ##### Locally installed TeX system
