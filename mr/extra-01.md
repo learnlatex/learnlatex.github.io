@@ -17,7 +17,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 ह्या अभ्यासक्रमात लाटेक्-च्या अतिशय महत्त्वाच्या आज्ञांची ओळख करून देण्यात आली आहे, परंतु लाटेक्
 आणखी अनेक क्षेत्रांमध्ये वापरले जाते. त्याकरिता विविध आज्ञासंच तयार केले गेले आहेत. आम्ही येथे
 कोणत्याही स्पष्टीकरणाशिवाय काही उदाहरणे जोडत आहोत. सोबत त्या आज्ञासंचांच्या दस्तऐवजांचे
-[टेक्-डॉक](https://texdoc.net) ह्या संकेतस्थळावरील दुवे आहेत. ही उदाहरणे (विशेष नोंद नसल्यास)
+[टेक्-डॉक](https://texdoc.org) ह्या संकेतस्थळावरील दुवे आहेत. ही उदाहरणे (विशेष नोंद नसल्यास)
 त्या दस्तऐवजांमधूनच घेतली आहेत.
 
 <p class="hint">
@@ -28,26 +28,26 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ## रसायनशास्त्र
 
-### आज्ञासंच: [`mhchem`](https://texdoc.net/pkg/mhchem)
+### आज्ञासंच: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
 ## भाषाविज्ञान
 
-### आज्ञासंच: [`forest`](https://texdoc.net/pkg/forest)
+### आज्ञासंच: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
 ## बुद्धिबळ
 
 <!-- not 2017 -->
-### आज्ञासंच: [`xskak`](https://texdoc.net/pkg/xskak)
+### आज्ञासंच: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 ## काव्य
 
-### लाटेक्-वर्ग: [`memoir`](https://texdoc.net/pkg/memoir)
+### लाटेक्-वर्ग: [`memoir`](https://texdoc.org/pkg/memoir)
 
 मेमॉयर लाटेक्-वर्गाचे उदाहरण देण्याकरिता एका मराठी कवितेची अक्षरजुळणी करून दाखवत आहोत.
 
@@ -92,7 +92,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 ## आकृत्या
 
 <!-- not 2017 -->
-आज्ञासंच: [`tikz`](https://texdoc.net/pkg/tikz)
+आज्ञासंच: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
@@ -100,7 +100,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ## आलेख
 
-आज्ञासंच: [`pgfplots`](https://texdoc.net/pkg/pgfplots)
+आज्ञासंच: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
@@ -108,7 +108,7 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 ## पाश्चात्त्य शास्त्रीय संगीत
 
-आज्ञासंच: [`musixtex`](https://texdoc.net/pkg/musixtex)
+आज्ञासंच: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 {% include extra-01-example-musixtex.md %}

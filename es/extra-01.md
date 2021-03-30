@@ -15,7 +15,7 @@ toc-description: "Ejemplos para ir más lejos"
 Este curso le ha abordado las principales funcionalidades de LaTeX.
 LaTeX dipone de una vasta variedad de paquetes que son usados en areas
 muy diversas. Aquí le mostramos algunos ejemplos, sin explicación explícita pero
-con un enlace a la documentación del paquete disponible en [texdoc.net](https://texdoc.net).
+con un enlace a la documentación del paquete disponible en [texdoc.org](https://texdoc.org).
 Estos ejemplos han sido sacados, en su mayoría, de la documentación del paquete en cuestión.
 
 <p
@@ -23,34 +23,34 @@ Estos ejemplos han sido sacados, en su mayoría, de la documentación del paquet
 
 ## Chemistry
 
-### [`mhchem`](https://texdoc.net/pkg/mhchem)
+### [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
 
 ## Linguistics
-### [`forest`](https://texdoc.net/pkg/forest)
+### [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
 ## Chess
 
 <!-- not 2017 -->
-### [`xskak`](https://texdoc.net/pkg/xskak)
+### [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
 ## Poetry
 
-### [`memoir`](https://texdoc.net/pkg/memoir)
+### [`memoir`](https://texdoc.org/pkg/memoir)
 
 
 {% include extra-01-example-memoir.md %}
 
 ## Drawing
 <!-- not 2017 -->
-### [`tikz`](https://texdoc.net/pkg/tikz)
+### [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 
@@ -58,7 +58,7 @@ Estos ejemplos han sido sacados, en su mayoría, de la documentación del paquet
 
 
 ## Function plotting
-### [`pgfplots`](https://texdoc.net/pkg/pgfplots)
+### [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 
@@ -68,7 +68,7 @@ Estos ejemplos han sido sacados, en su mayoría, de la documentación del paquet
 ## Music
 
 
-### [`musixtex`](https://texdoc.net/pkg/musixtex)
+### [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 

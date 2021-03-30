@@ -235,7 +235,7 @@ entre chaves.
 
 O pacote `siunitx` fornece muitas possibilidades de formatação de números de
 formas diferentes;  consulte a
-[documentação do pacote](https://texdoc.net/pkg/siunitx).
+[documentação do pacote](https://texdoc.org/pkg/siunitx).
 
 ## Especificando a largura total da tabela
 
@@ -340,7 +340,7 @@ Diferente de outros tipos de tabelas discutidos nessas lições, `tabularx`
 precisa escrever o conteúdo da tabela várias vezes, experimentando com o valor
 da largura para determinar o valor final.  Isso significa que há algumas
 restrições à utilização do ambiente; consulte a
-[documentação do pacote](https://texdoc.net/pkg/tabularx).
+[documentação do pacote](https://texdoc.org/pkg/tabularx).
 
 ## Tabelas multi-páginas
 
@@ -397,7 +397,7 @@ afetar a largura das colunas em páginas anteriores.
 às notas no final da tabela.  O pacote `threeparttable` simplifica a criação
 dessas tabelas, fazendo com que as notas sejam colocadas em um bloco da mesma
 largura da tabela.  Consulte a
-[documentação do pacote](https://texdoc.net/pkg/threeparttable)
+[documentação do pacote](https://texdoc.org/pkg/threeparttable)
 para detalhes completos sobre o processo, mas vamos mostrar um exemplo simples
 aqui:
 

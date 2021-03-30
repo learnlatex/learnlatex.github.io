@@ -182,7 +182,7 @@ engines that use OpenType fonts. By default, these engines still use
 classic TeX math fonts but you may use the `unicode-math` package
 to use OpenType Math fonts. The details of this package are beyond
 this course and we refer you to the
-[package documentation](https://texdoc.net/pkg/unicode-math).
+[package documentation](https://texdoc.org/pkg/unicode-math).
 However, we give a small example here.
 
 ```latex

@@ -153,7 +153,7 @@ descritos aquí.
 La notación matemática es muy variada y esto significa que las herramientas
 del núcleo de LaTeX no pueden cubrirlo todo. El paquete `amsmath`
 extiende las posibilidades del núcleo para cubrir muchas más funciones.
-La [Guía del Usuario `amsmath`](http://texdoc.net/pkg/amsmath)
+La [Guía del Usuario `amsmath`](http://texdoc.org/pkg/amsmath)
 dispone de muchos más ejemplos de los que podemos mostrarle en esta lección.
 
 ```latex

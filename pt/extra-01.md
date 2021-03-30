@@ -11,7 +11,7 @@ Este curso deu uma visão geral das funcionalidades básicas do LaTeX e alguns
 pacotes fundamentais.  O LaTeX conta com uma vasta biblioteca de pacotes de
 extensão e é usado em muitas áreas.  Aqui daremos alguns exemplos, sem qualquer
 explicação mas com links para a documentação dos respectivos pacotes no
-[texdoc.net](https://texdoc.net).
+[texdoc.org](https://texdoc.org).
 Os exemplos foram retirados da documentação dos pacotes exceto onde dito o
 contrário.
 
@@ -21,33 +21,33 @@ contrário.
 
 ## Química
 
-### [`mhchem`](https://texdoc.net/pkg/mhchem)
+### [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
 ## Linguística
-### [`forest`](https://texdoc.net/pkg/forest)
+### [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
 ## Xadrez
 
 <!-- not 2017 -->
-### [`xskak`](https://texdoc.net/pkg/xskak)
+### [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
 ## Poesia
 
-### [`memoir`](https://texdoc.net/pkg/memoir)
+### [`memoir`](https://texdoc.org/pkg/memoir)
 
 
 {% include extra-01-example-memoir.md %}
 
 ## Desenho
 <!-- not 2017 -->
-### [`tikz`](https://texdoc.net/pkg/tikz)
+### [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 
@@ -55,7 +55,7 @@ contrário.
 
 
 ## Plotagem de funções
-### [`pgfplots`](https://texdoc.net/pkg/pgfplots)
+### [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 
@@ -65,7 +65,7 @@ contrário.
 ## Música
 
 
-### [`musixtex`](https://texdoc.net/pkg/musixtex)
+### [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 

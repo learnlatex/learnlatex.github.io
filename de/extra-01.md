@@ -15,7 +15,7 @@ toc-description: "Beispiele beliebter LaTeX-Pakete."
 Dieser Kurs hat einen Überblick über die Hauptfunktionen LaTeXs gegeben. LaTeX
 bietet eine gewaltige Auswahl weiterer Pakete und wird in vielen Fachbereichen
 genutzt. Hier zeigen wir einige Beispiele ohne Erklärungen, dafür aber mit
-verlinkter Paketdokumentation auf [texdoc.net](https://texdoc.net). Die
+verlinkter Paketdokumentation auf [texdoc.org](https://texdoc.org). Die
 Beispiele sind, sofern nicht anders vermerkt, aus den Dokumentationen entnommen.
 
 <p
@@ -23,44 +23,44 @@ Beispiele sind, sofern nicht anders vermerkt, aus den Dokumentationen entnommen.
 
 ## Chemie
 
-Paket: [`mhchem`](https://texdoc.net/pkg/mhchem)
+Paket: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
 ## Linguistik
 
-Paket: [`forest`](https://texdoc.net/pkg/forest)
+Paket: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
 ## Chess
 
 <!-- not 2017 -->
-Paket: [`xskak`](https://texdoc.net/pkg/xskak)
+Paket: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 ## Poesie
 
-Paket: [`memoir`](https://texdoc.net/pkg/memoir)
+Paket: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 ## Zeichnungen
 
 <!-- not 2017 -->
-Paket: [`tikz`](https://texdoc.net/pkg/tikz)
+Paket: [`tikz`](https://texdoc.org/pkg/tikz)
 
 {% include extra-01-example-tikz.md %}
 
 ## Funktionsplots
 
-Paket: [`pgfplots`](https://texdoc.net/pkg/pgfplots)
+Paket: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 {% include extra-01-example-pgfplots.md %}
 
 ## Musik
 
-Paket: [`musixtex`](https://texdoc.net/pkg/musixtex)
+Paket: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 {% include extra-01-example-musixtex.md %}

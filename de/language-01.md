@@ -28,7 +28,7 @@ werden. In `xelatex` und `lualatex` ist das nicht erforderlich, vielmehr sollte
 das `fontspec`-Paket in diesen Engines nicht geladen werden.
 
 Für deutsche Anführungszeichen empfiehlt sich das sehr flexible Paket
-[`csquotes`](https://texdoc.net/pkg/csquotes), das sich ebenfalls an die
+[`csquotes`](https://texdoc.org/pkg/csquotes), das sich ebenfalls an die
 gewählte Dokumentsprache anpasst. Hierdurch werden mittels semantischer
 Auszeichnung Anführungszeichen in den Text eingefügt.
 
@@ -58,5 +58,5 @@ Probiere, was passiert, wenn die `fontenc` Zeile entfernt wird.
 
 Neben den Standardklassen (wie sie in den Beispielen auf dieser Seite verwendet
 werden) empfiehlt sich die Verwendung der Klassen aus KOMA-Script, die eine
-ausführliche deutschsprachige [Dokumentation](https://texdoc.net/pkg/scrguide)
+ausführliche deutschsprachige [Dokumentation](https://texdoc.org/pkg/scrguide)
 besitzen und die Regeln der deutschen Typografie gut umsetzen.

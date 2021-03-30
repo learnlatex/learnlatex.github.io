@@ -15,7 +15,7 @@ toc-description: "Examples for further study."
 This course has given an overview of the core features of LaTeX.
 LaTeX has vast array of extension packages and is used in many subject
 areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.net](https://texdoc.net).
+to the package documentation at [texdoc.org](https://texdoc.org).
 The examples are taken from the package documentation unless otherwise noted.
 
 <p
@@ -23,34 +23,34 @@ The examples are taken from the package documentation unless otherwise noted.
 
 ## Chemistry
 
-Package: [`mhchem`](https://texdoc.net/pkg/mhchem)
+Package: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
 ## Linguistics
 
-Package: [`forest`](https://texdoc.net/pkg/forest)
+Package: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
 ## Chess
 
 <!-- not 2017 -->
-Package: [`xskak`](https://texdoc.net/pkg/xskak)
+Package: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
 ## Poetry
 
-Package: [`memoir`](https://texdoc.net/pkg/memoir)
+Package: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 
 ## Drawing
 <!-- not 2017 -->
-Package: [`tikz`](https://texdoc.net/pkg/tikz)
+Package: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
@@ -58,7 +58,7 @@ Package: [`tikz`](https://texdoc.net/pkg/tikz)
 
 ## Function plotting
 
-Package: [`pgfplots`](https://texdoc.net/pkg/pgfplots)
+Package: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
@@ -66,7 +66,7 @@ Package: [`pgfplots`](https://texdoc.net/pkg/pgfplots)
 
 ## Music
 
-Package: [`musixtex`](https://texdoc.net/pkg/musixtex)
+Package: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 

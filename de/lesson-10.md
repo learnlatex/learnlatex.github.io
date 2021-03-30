@@ -193,7 +193,7 @@ bestimmt und hier nicht weiter beschrieben.
 Mathematische Notation ist extrem vielseitig, woraus folgt, dass die in LaTeX
 eingebauten Werkzeuge nicht alles abdecken können. Das `amsmath` Paket erweitert
 den LaTeX-Kern und deckt so viele weitere Bereiche ab. Die
-[`amsmath` Anleitung](https://texdoc.net/pkg/amsmath) enthält viel mehr
+[`amsmath` Anleitung](https://texdoc.org/pkg/amsmath) enthält viel mehr
 Beispiele als wir in dieser Lektion zeigen können.
 
 ```latex

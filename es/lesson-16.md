@@ -33,9 +33,9 @@ utilizando el comando de la siguiente forma:
 `texdoc -l` < _pkg_ >
 
 
-## texdoc.net
+## texdoc.org
 
-Éste es un [sitio web](https://texdoc.net/) que funciona de forma similar al comando `textdoc`. Puede
+Éste es un [sitio web](https://texdoc.org/) que funciona de forma similar al comando `textdoc`. Puede
 buscar la documentación disponible tal y como lo haría usando el comando `texdoc -l` 
 y elegir entre los resultados obtenidos.
 

@@ -30,9 +30,9 @@ durch:
 
 `texdoc -l` < _pkg_ >
 
-## texdoc.net
+## texdoc.org
 
-Dies ist eine [Webseite](https://texdoc.net/), die ähnlich zum `texdoc`
+Dies ist eine [Webseite](https://texdoc.org/), die ähnlich zum `texdoc`
 Hilfsprogramm funktioniert. Man kann nach Dokumentation, die dort verfügbar ist,
 genau wie mit `texdoc -l` suchen und aus den Ergebnissen wählen.
 

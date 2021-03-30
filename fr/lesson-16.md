@@ -32,9 +32,9 @@ valables qu'il trouve et choisir parmi eux en utilisant :
 `texdoc -l` < _pkg_ >
 
 
-## texdoc.net
+## texdoc.org
 
-Il s'agit d'[un site Web](https://texdoc.net/) qui fonctionne exactement comme
+Il s'agit d'[un site Web](https://texdoc.org/) qui fonctionne exactement comme
 l'utilitaire `texdoc`. Vous pouvez rechercher la documentation disponible comme
 vous le feriez avec `texdoc -l` et ensuite choisir parmi les résultats.
 
