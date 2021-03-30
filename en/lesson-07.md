@@ -4,10 +4,10 @@ lang: "en"
 title: "Including graphics and positioning"
 description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
 toc-anchor-text: "Using graphics"
-toc-description: "Appearance, spacing and positioning."
+toc-description: "Appearance and positioning of graphics."
 ---
 
-## Graphics and positioning
+# Including Graphics and positioning
 
 <span
   class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
