@@ -111,9 +111,8 @@ sẽ được sử dụng mặc định.
 Bạn có thể thay đổi trình dịch thành `latex`, `pdflatex`, `xelatex`,
 `lualatex`, `platex` hay `uplatex` bằng cách dùng một ghi chú tương tự như sau:
 
-```
-% !TEX <bất cứ đoạn chữ nào> lualatex
-```
+`% !TEX <bất cứ đoạn chữ nào> lualatex`
+{: .noedit :}
 
 trong đó khoảng trống ở bắt đầu là không bắt buộc; viết hoa hay viết thường đều
 được hiểu như nhau và phần `<bất cứ đoạn chữ nào>` được bỏ qua.
@@ -141,9 +140,8 @@ thể hoạt động ổn định trên rất nhiều trình duyệt khác nhau.
 Nếu bạn muốn sử dụng trình đọc PDF mặc định của trình duyệt, bạn có thể dùng một
 ghi chú dưới dạng
 
-```
-% !TEX <bất cứ đoạn chữ nào> pdf
-```
+`% !TEX <bất cứ đoạn chữ nào> pdf`
+{: .noedit :}
 
 Bạn có thể sử dụng `pdfjs` thay cho `pdf` ở ghi chú trên; khi đó PDF.js sẽ được
 sử dụng để hiển thị PDF. Để debugging thuận lợi, bạn có thể cần đến tệp log ngay
