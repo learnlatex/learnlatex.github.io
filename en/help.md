@@ -77,7 +77,7 @@ return to it later.
 The <button>LaTeX Online</button> button, below the example, will submit the code to the 
 [TeXLive.net](https://texlive.net) service[^1].
 
-The LaTeX CGI service was developed specifically to support this site, and
+The TeXLive.net service was developed specifically to support this site, and
 in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
 to enable display of PDF on mobile and other browsers without built in PDF 
 readers.

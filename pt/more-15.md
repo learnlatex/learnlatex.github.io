@@ -106,7 +106,7 @@ l.5 Text_word  $\alpha
 Alguns erros, especialmente erros que não são detectados antes do final do
 arquivo, não geram uma mensagem de erro, mas apenas mostram um aviso no log.
 
-Se você experimentar este exemplo usando o servidor do LaTeX CGI (no botão
+Se você experimentar este exemplo usando o servidor do TeXLive.net (no botão
 'LaTeX Online'), ele vai retornar um arquivo PDF por padrão, pois não há uma
 mensagem de erro;  para ver a mensagem no log adicione `%!TeX log` no exemplo:
 

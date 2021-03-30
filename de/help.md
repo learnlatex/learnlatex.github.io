@@ -87,7 +87,7 @@ und Sie können Ihr Projekt im Overleaf Account speichern und später weiter arb
 Die <button>LaTeX Online</button> Schaltfläche unter dem Beispiel,
 übermittelt den Code an [TeXLive.net](https://texlive.net)[^1].
 
-Der LaTeX CGI Dienst wurde speziell für diese Seite entwickelt und nutzt
+Der TeXLive.net Dienst wurde speziell für diese Seite entwickelt und nutzt
 [PDF.js](https://mozilla.github.io/pdf.js/), um PDF Dokumente in Browsern ohne
 eingebaute PDF-Unterstützung anzuzeigen.
 

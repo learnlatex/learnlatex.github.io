@@ -40,7 +40,7 @@ Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau k
    <button style="padding:0 1px;font-size:90%">Chạy với LaTeX Online</button> sẽ
    chuyển đoạn mã tới [TeXLive.net](https://texlive.net).[^1]
    
-   LaTeX CGI được phát triển đặc biệt dành cho trang này, và nó sử dụng
+   TeXLive.net được phát triển đặc biệt dành cho trang này, và nó sử dụng
    [PDF.js](https://mozilla.github.io/pdf.js) để hiển thị các tệp PDF trên
    điện thoại cũng như các trình duyệt không có trình đọc PDF mặc định.
 

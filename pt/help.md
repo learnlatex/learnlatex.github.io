@@ -40,7 +40,7 @@ Há três formasde você executar o exemplo:
    vai encaminhar o código para o serviço
    [TeXLive.net](https://texlive.net)[^1].
 
-   O serviço LaTeX CGI foi desenvolvido especificamente para suportar este site,
+   O serviço TeXLive.net foi desenvolvido especificamente para suportar este site,
    em particular ele usa o [PDF.js](https://mozilla.github.io/pdf.js/) para
    permitir a visualização do PDF no celular e outros navegadores sem
    visualizador de PDF embutido.

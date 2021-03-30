@@ -107,7 +107,7 @@ Manche Fehler, besonders solche, die erst am Ende einer Datei entdeckt werden,
 erzeugen keine Fehlermeldung mit `?` Aufforderung, sondern bewirken nur eine
 Warnung im Log.
 
-Wenn dieses Beispiel mit dem LaTeX CGI Server ausprobiert wird, wird eine PDF
+Wenn dieses Beispiel mit dem TeXLive.net Server ausprobiert wird, wird eine PDF
 erzeugt; um den Fehler zu sehen, muss `%!TeX log` hinzugefügt werden.
 
 ```latex
