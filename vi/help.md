@@ -83,11 +83,9 @@ gặp vấn đề) sẽ được hiện ra ngay phía dưới ví dụ. Nút
 <button style="padding:0 1px;font-size:90%">Xóa output</button> có thể được
 dùng để bỏ phần output này đi nếu bạn thấy nó không còn cần thiết.
 
-Chú ý rằng TeXLive.net không cần bạn phải lập tài khoản nên nó rất thuận
-tiện cho những ví dụ nhỏ. Tuy nhiên, cả trang này hay các dịch vụ như
-`latexonline.cc` hay `latex-on-http` đều không hỗ trợ khả năng lưu văn bản của
-bạn. Tất cả những thay đổi bạn đã thực hiện sẽ bị mất sau khi bạn rời khỏi
-trang.
+Chú ý rằng **TeXLive.net** không cần bạn phải lập tài khoản nên nó rất thuận
+tiện cho những ví dụ nhỏ. Tuy nhiên, nó không hỗ trợ lưu văn bản. Tất cả những
+thay đổi bạn đã thực hiện sẽ bị mất sau khi bạn rời khỏi trang.
 
 ##### Dùng hệ thống TeX được cài đặt sẵn trong máy
 
