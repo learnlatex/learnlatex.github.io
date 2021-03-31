@@ -42,8 +42,8 @@ var editors=[];
 const noeditregex = /^\s*[/%#\*]+ *!TEX.*[^a-zA-Z]noedit *(\n|$)/i;
 const norunregex = /^\s*([/%#\*]+ *!TEX.*[^a-zA-Z]none *|[^% \t\\][^\\]*)(\n|$)/i;
 const commentregex = / %.*/;
-const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex|make4ht) *\n/i;
-const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
+const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex) *\n/i;
+const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log|make4ht) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
 var packageregex = [
