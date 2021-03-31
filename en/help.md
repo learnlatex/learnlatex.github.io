@@ -162,9 +162,10 @@ the comment.
 
 ## HTML output (make4ht)
 
-If using the TeXLive.net system, then an additional "TeX engine",
+If using the TeXLive.net system, then an additional return option,
 `make4ht`, may be specified. This returns one or more HTML pages
-in the frame within the page.
+in the frame within the page. It may be specified at the same time
+as `xelatex` or `lualatex` as well as the default `latex` processing.
 
 To enable this output, add the comment:
 
@@ -177,6 +178,8 @@ by executing
 
 `make4ht  document.tex "2,mathjax"`
 {: .noedit :}
+
+with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
 
 When running locally, other configurations would be possible. See the [make4ht
 manual](https://texdoc.org/pkg/make4ht).
