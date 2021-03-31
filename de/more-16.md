@@ -14,12 +14,12 @@ LaTeX-Implementierung detailliert studieren möchten, können die folgenden Link
 hilfreich sein.
 
 Die LaTeX-Quellen sind als mit LaTeX gesetztes Dokument als `source2e.pdf` mit
-`texdoc source2e` oder auf [texdoc.net](https://texdoc.net/pkg/source2e)
+`texdoc source2e` oder auf [texdoc.org](https://texdoc.org/pkg/source2e)
 verfügbar.
 
 Aktuelle LaTeX-Veröffentlichungen laden auch die LaTeX3-Programmiersprache, der
 zuvor als `expl3` Paket geladen wurde. Auch hierzu liefert `texdoc` nützliche
 Informationen in Form der [Beschreibung der
-expl3-Oberfläche](https://texdoc.net/pkg/interface3) (`texdoc interface3`) und
-der [vollständigen expl3-Quellen](https://texdoc.net/pkg/source3) (`texdoc
+expl3-Oberfläche](https://texdoc.org/pkg/interface3) (`texdoc interface3`) und
+der [vollständigen expl3-Quellen](https://texdoc.org/pkg/source3) (`texdoc
 source3`).

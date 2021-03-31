@@ -47,7 +47,7 @@ The editor being used is [ACE](https://ace.c9.io/).
 #### Three ways to run the example
 
 * Use the Overleaf service
-* Use a LaTeX Online service
+* Use the TeXLive.net service
 * Use a locally installed TeX system
 
 ##### Use the Overleaf service
@@ -72,12 +72,12 @@ The editing features in Overleaf are far more extensive than on this
 site, and you may save your project in your Overleaf account and
 return to it later.
 
-##### Use a LaTeX online service
+##### Use the TeXLive.net service
 
-The <button>LaTeX Online</button> button, below the example, will submit the code to the 
-[TexLive.net](https://texlive.net) service[^1].
+The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
+[TeXLive.net](https://texlive.net) service[^1].
 
-The LaTeX CGI service was developed specifically to support this site, and
+The TeXLive.net service was developed specifically to support this site, and
 in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
 to enable display of PDF on mobile and other browsers without built in PDF 
 readers.
@@ -88,10 +88,9 @@ Output</button> button will be provided so that you may remove this output
 (or you may leave it in place and continue the rest of the lesson
 below).
 
-Note that **LaTeX Online** requires no login or signup of any sort
-so it is very convenient for small examples, but neither this site
-nor the `latexcgi`, `latexonline.cc` or `latex-on-http` sites
-provide any mechanism to save your document. Any changes that you
+Note that **TeXLive.net** requires no login or signup of any sort
+so it is very convenient for small examples, but this site
+provides no  mechanism to save your document. Any changes that you
 make to the example are lost if you move off the page.
 
 ##### Locally installed TeX system
@@ -142,7 +141,7 @@ Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
 
 ## Choosing how to display the output
 
-If you use the LaTeX online system, then the PDF
+If you use the TeXLive.net system, then the PDF
 output from running an example is shown using
 [PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
 consistent behavior over the widest range of browsers.
@@ -163,7 +162,7 @@ the comment.
 
 ## HTML output (make4ht)
 
-If using the LaTeX online system, then an additional "TeX engine",
+If using the TeXLive.net system, then an additional "TeX engine",
 make4ht`, may be specified. This returns one or more HTML pages
 in the frame within the page.
 

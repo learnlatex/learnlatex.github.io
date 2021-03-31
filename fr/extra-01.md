@@ -15,7 +15,7 @@ Ce cours a donné un aperçu des principales fonctionnalités de LaTeX.
 Mais LaTeX dispose d'une vaste panoplie d'extensions et est utilisé
 dans d'innombrables domaines. Nous présentons ici quelques exemples
 supplémentaires, sans explications, mais avec des liens vers la documentation
-des packages utilisés sur [texdoc.net](https://texdoc.net). Les exemples
+des packages utilisés sur [texdoc.org](https://texdoc.org). Les exemples
 sont tirés des documentations en question, sauf indication contraire.
 
 
@@ -26,27 +26,27 @@ pour vous donner envie de poursuivre vos expérimentations avec LaTeX.</p>
 
 ## Chimie
 
-Extension [`mhchem`](https://texdoc.net/pkg/mhchem)
+Extension [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
 ## Linguistique
 
-Extension [`forest`](https://texdoc.net/pkg/forest)
+Extension [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
 ## Échecs
 
 <!-- not 2017 -->
-Extension [`xskak`](https://texdoc.net/pkg/xskak)
+Extension [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
 ## Poésie
 
-Extension [`memoir`](https://texdoc.net/pkg/memoir)
+Extension [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
@@ -54,7 +54,7 @@ Extension [`memoir`](https://texdoc.net/pkg/memoir)
 ## Dessin
 
 <!-- not 2017 -->
-Extension [`tikz`](https://texdoc.net/pkg/tikz)
+Extension [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
@@ -63,7 +63,7 @@ Extension [`tikz`](https://texdoc.net/pkg/tikz)
 
 ## Tracé de fonction mathématique
 
-Extension [`pgfplots`](https://texdoc.net/pkg/plots)
+Extension [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
@@ -72,7 +72,7 @@ Extension [`pgfplots`](https://texdoc.net/pkg/plots)
 
 ## Musique
 
-Extension [`musixtex`](https://texdoc.net/pkg/musixtex)
+Extension [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 {% include extra-01-example-musixtex.md %}

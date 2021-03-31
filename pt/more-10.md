@@ -189,7 +189,7 @@ usam fontes _OpenType_.  Por padrão, esses interpretadores ainda vão usar as
 fontes matemáticas clássicas do TeX, mas você pode usar o pacote `unicode-math`
 para usar fontes matemáticas _OpenType_.  Os detalhes desse pacote vão além
 deste curso, então sugerimos consultar a
-[documentação do pacote](https://texdoc.net/pkg/unicode-math).
+[documentação do pacote](https://texdoc.org/pkg/unicode-math).
 Ainda assim, aqui vai um pequeno exemplo:
 
 ```latex

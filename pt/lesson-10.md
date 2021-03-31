@@ -155,7 +155,7 @@ pela classe de documento, então não são detalhados aqui.
 Notação matemática é muito rica, e isso significa que as ferramentas incluídas
 no núcleo do LaTeX não podem cobrir todos os casos necessários.  O pacote
 `amsmath` extende o suporte básico para cobrir muito mais ideias.
-O [Guia de Usuário do `amsmath`](http://texdoc.net/pkg/amsmath) (em inglês)
+O [Guia de Usuário do `amsmath`](http://texdoc.org/pkg/amsmath) (em inglês)
 contém muito mais exemplos do que podemos mostrar nessa lição.
 
 ```latex

@@ -185,7 +185,7 @@ die OpenType-Schriftarten verwenden. Standardmäßig nutzen diese Engines
 weiterhin die klassischen mathematischen TeX-Schriften, durch die Nutzung des
 `unicode-math` Pakets können aber auch OpenType-Mathematikschriften verwendet
 werden. Details zu diesem Paket gehen über diese Lektion hinaus, weshalb hier
-auf die [Dokumentation](https://texdoc.net/pkg/unicode-math) verwiesen wird. Ein
+auf die [Dokumentation](https://texdoc.org/pkg/unicode-math) verwiesen wird. Ein
 kleines Beispiel soll aber nicht vorenthalten werden.
 
 ```latex

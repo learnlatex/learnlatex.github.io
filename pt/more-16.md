@@ -14,10 +14,10 @@ implementação do LaTeX em detalhe, os seguintes links podem ajudar.
 
 O código fonte do próprio LaTeX está disponível como um PDF compilado pelo LaTeX
 chamado `source2e.pdf`, disponível com `texdoc source2e` ou em
-[texdoc.net](https://texdoc.net/pkg/source2e).
+[texdoc.org](https://texdoc.org/pkg/source2e).
 
 Versões atuais do LaTeX também vêm com a Linguagem de Programação LaTeX3
 carregada, antes disponível no pacote `expl3`.  O `texdoc` pode ser usado para
-ver a [descrição da interface expl3](http://texdoc.net/pkg/interface3)
+ver a [descrição da interface expl3](http://texdoc.org/pkg/interface3)
 (`texdoc interface3`) ou o
-[código fonte expl3 completo](http://texdoc.net/pkg/source3) (`texdoc source3`).
+[código fonte expl3 completo](http://texdoc.org/pkg/source3) (`texdoc source3`).

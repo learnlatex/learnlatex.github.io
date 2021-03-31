@@ -164,7 +164,7 @@ Các ký hiệu toán học rất phong phú, và các công cụ cung cấp b�
 LaTeX không thể hỗ trợ tất cả các ký hiệu trong số đó. Gói `amsmath` phát triển
 thêm để có thể hỗ trợ thêm nhiều ký hiệu khác, cũng như cung cấp thêm nhiều môi
 trường với các tính năng khác nhau cho các công thức toán học. Bạn nên đọc
-[hướng dẫn sử dụng `amsmath`](http://texdoc.net/pkg/amsmath) &ndash; tài liệu
+[hướng dẫn sử dụng `amsmath`](http://texdoc.org/pkg/amsmath) &ndash; tài liệu
 này chuyên sâu hơn về `amsmath` và có nhiều ví dụ hơn những gì ta có thể nói tới
 trong khóa này.
 

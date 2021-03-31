@@ -175,7 +175,7 @@ mặc định của TeX nhưng ta có thể dùng gói `unicode-math` để sử
 OpenType cho các công thức toán. Nội dung của gói này nằm ngoài tầm của khóa
 này nên ta sẽ không đi sâu vào nó mà chỉ đưa ra một ví dụ đơn giản. Tuy nhiên
 bạn có thể đọc thêm trong
-[hướng dẫn sử dụng gói](https://texdoc.net/pkg/unicode-math).
+[hướng dẫn sử dụng gói](https://texdoc.org/pkg/unicode-math).
 
 ```latex
 % !TEX lualatex

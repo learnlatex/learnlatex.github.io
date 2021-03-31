@@ -78,7 +78,7 @@ de voir le code LaTeX et sont donc plus proches d'une installation locale.
 
 Dans certains cas, ces systèmes vous permettent d'utiliser LaTeX sans avoir
 besoin de vous connecter, et nous utilisons l'un d'entre eux,
-[TexLive.net](https://texlive.net), pour vous permettre de modifier et tester les
+[TeXLive.net](https://texlive.net), pour vous permettre de modifier et tester les
 exemples du présent tutoriel. Mais pour travailler sur un projet complet, les
 meilleurs systèmes en ligne exigent que vous vous inscriviez avant de les
 utiliser. Cela vous permet d'enregistrer votre travail mais aussi de ne pas

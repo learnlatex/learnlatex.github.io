@@ -227,7 +227,7 @@ Chú ý rằng tất cả các ô không phải số cần phải được 'bả
 vào trong cặp ngoặc nhọn.
 
 Gói `siunitx` cung cấp nhiều cách để tùy biến các số trong nhiều cách khác nhau,
-xem [hướng dẫn sử dụng của gói](https://texdoc.net/pkg/siunitx) để có thêm thông
+xem [hướng dẫn sử dụng của gói](https://texdoc.org/pkg/siunitx) để có thêm thông
 tin.
 
 ## Đưa ra độ rộng của cả bảng
@@ -329,7 +329,7 @@ C & D D D D D D D\\
 Không giống các loại bảng khác được mô tả trong bài này, `tabularx` cần phải tự
 viết bảng nhiều lần để thử các độ rộng phù hợp nhất cho các cột. Do đó, việc sử
 dụng môi trường này có một số nhược điểm, xem
-[hướng dẫn sử dụng gói](https://texdoc.net/pkg/tabularx) để biết thêm thông tin.
+[hướng dẫn sử dụng gói](https://texdoc.org/pkg/tabularx) để biết thêm thông tin.
 
 ## Bảng trên nhiều trang
 
@@ -382,8 +382,8 @@ làm được điều này nó có thể cần nhiều lần chạy LaTeX.
 
 Thông thường ta có thể cần một khu vực để ghi chú ở phía dưới các bảng. Gói
 `threeparttable` đơn giản hóa các markup cho những bảng như vậy, và thêm phần
-ghi chú vào một hàng 'đặc biệt' có cùng chiều rộng với bảng. Bạn có thể đọc thêm
-về gói tại [hướng dẫn sử dụng của nó](https://texdoc.net/pkg/threeparttable),
+ghi chú vào một hàng "đặc biệt" có cùng chiều rộng với bảng. Bạn có thể đọc thêm
+về gói tại [hướng dẫn sử dụng của nó](https://texdoc.org/pkg/threeparttable),
 ở đây ta sẽ chỉ xét một ví dụ.
 
 ```latex

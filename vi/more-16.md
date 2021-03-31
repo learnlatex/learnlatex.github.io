@@ -14,9 +14,9 @@ các gói lệnh. Nếu bạn muốn đi sâu hơn khóa này và muốn biết 
 
 * Mã nguồn của lõi của LaTeX có thể được đọc trong văn bản `source2e.pdf`. Bạn
 có thể đọc bằng `texdoc source2e` hoặc ở
-[texdoc.net](https://texdoc.net/pkg/source2e).
+[texdoc.org](https://texdoc.org/pkg/source2e).
 * Các phiên bản LaTeX hiện tại còn bao gồm ngôn ngữ lập trình LaTeX3 &ndash; đây
 chính là LaTeX trong tương lai. LaTeX3 được cung cấp qua gói lệnh `expl3`. Bạn
-có thể dùng `texdoc expl3` hoặc [texdoc.net](https://texdoc.net/pkg/interface3)
+có thể dùng `texdoc expl3` hoặc [texdoc.org](http://texdoc.org/pkg/interface3)
 để đọc hướng dẫn sử dụng ngôn ngữ này, hoặc dùng `texdoc source3` hoặc
-[texdoc.net](https://texdoc.net/pkg/source3) để xem toàn bộ mã của gói.
+[texdoc.org](http://texdoc.org/pkg/source3) để xem toàn bộ mã của gói.

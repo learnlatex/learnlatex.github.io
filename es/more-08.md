@@ -232,7 +232,7 @@ Note que cualquier celda no numérica debe ser «protegida» escribiendo su cont
 
 El paquete `siunitx` proporciona muchas funcionalidades para cambiar el formato de los números
 de formas diferentes; vea la [documentación de este 
-paquete](https://texdoc.net/pkg/siunitx).
+paquete](https://texdoc.org/pkg/siunitx).
 
 ## Especificando el ancho total de la tabla
 
@@ -338,7 +338,7 @@ C & D D D D D D D\\
 A diferencia de otras formas discutidas en estas lecciones, `tabularx` necesita
 construir la tabla varias veces, probando diferentes anchos para determinar la
 configuración final. Esto implica que hay una serie de restricciones en el uso
-de este entorno; vea la [documentación de este paquete](https://texdoc.net/pkg/tabularx).
+de este entorno; vea la [documentación de este paquete](https://texdoc.org/pkg/tabularx).
 
 ## Tablas multipágina
 
@@ -396,7 +396,7 @@ de las primeras páginas.
 Es bastante común el necesitar símbolos en una tabla para hacer referencia a
 notas al pie de tabla. El paquete `threeparttable` simplifica las anotaciones en 
 este tipo de tablas, haciendo que las notas al pie se situén en el mismo bloque
-que la propia tabla. Le invitamos a ver la [documentación de este paquete](https://texdoc.net/pkg/threepqrttable) para
+que la propia tabla. Le invitamos a ver la [documentación de este paquete](https://texdoc.org/pkg/threepqrttable) para
 más detalles, pero veamos aquí un ejemplo simple:
 
 ```latex

@@ -34,9 +34,9 @@ các kết quả tìm kiếm có được. Bạn có thể in ra danh sách nh�
 texdoc -l <gói>
 ```
 
-## texdoc.net
+## texdoc.org
 
-Đây là một [trang web](https://texdoc.net) hoạt động tương tự lệnh `texdoc`. Bạn
+Đây là một [trang web](https://texdoc.org) hoạt động tương tự lệnh `texdoc`. Bạn
 có thể tìm kiếm giống như khi bạn dùng `texdoc -l` và chọn từ những kết quả tìm
 được.
 
