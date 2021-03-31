@@ -20,8 +20,8 @@ Nếu bạn đang sử dụng một hệ thống TeX được cài đặt lên m
 trình soạn thảo mã nguồn hãy tạo một tệp mới đặt tên là `first.tex`, và sao chép
 đoạn mã sau vào tệp hoặc gõ lại nó.
 
-Nếu bạn đang sử dụng một dịch vụ trực tuyến, bạn có thể nhấn vào nút 'LaTeX
-Online' hoặc 'Open in Overleaf' để thử nó!
+Nếu bạn đang sử dụng một dịch vụ trực tuyến, bạn có thể nhấn vào nút
+'Chạy với TeXLive.net' hoặc 'Mở trong Overleaf' để thử nó!
 
 <p class="hint">Chúng tôi khuyên bạn nên thử những lựa chọn trực tuyến ngay cả
 khi đã cài đặt một hệ thống TeX, vì đây là một cơ hội tốt để thấy được các lựa

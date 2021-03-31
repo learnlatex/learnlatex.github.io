@@ -140,9 +140,9 @@ tệp trong `\includeonly` để xem sự thay đổi.
 
 Thêm một vài thành phần linh động và tạo ra một danh sách các hình và các bảng.
 Nếu bạn dùng một hệ thống LaTeX được cài trong máy của mình, bạn cần bao nhiêu
-lần chạy LaTeX để có được một mục lục và những danh sách này đầy đủ? (Những hệ
-thống LaTeX online chạy LaTeX theo một cách 'bí mật' nên những thông tin về số
-lần chạy không thật sự rõ ràng.)
+lần chạy LaTeX để có được một mục lục và những danh sách này đầy đủ? (Các dịch
+vụ LaTeX như Overleaf hay TeXLive.net chạy LaTeX theo một cách 'bí mật' nên
+những thông tin về số lần chạy không thật sự rõ ràng.)
 
 ----
 

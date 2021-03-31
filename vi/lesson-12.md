@@ -252,7 +252,7 @@ cũng như một hệ thống sắp xếp đầy đủ hơn, bạn có thể c�
 Thử thao tác với cả `natbib` và `biblatex`. Đối với `natbib`, bạn cần phải chạy
 (theo thứ tự) LaTeX, BibTeX, LaTeX và LaTeX; còn đối với `biblatex` thì bạn cần
 chạy LaTeX, Biber, LaTeX. Hãy tìm hiểu cách để chạy theo trình tự này trong
-trình mã nguồn (nếu bạn dùng Overleaf hay LaTeX Online thì quá trình này được
+trình mã nguồn (nếu bạn dùng Overleaf hay TeXLive.net thì quá trình này được
 thực hiện tự động).
 
 Xem điều gì sẽ xảy ra khi bạn thêm những mục thông tin mới và những tham chiếu

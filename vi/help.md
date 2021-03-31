@@ -47,7 +47,7 @@ các thao tác với các đoạn mã ví dụ.
 Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau khi sửa:
 
 * Dùng dịch vụ Overleaf
-* Dùng một dịch vụ LaTeX online
+* Dùng dịch vụ TeXLive.net
 * Dùng hệ thống TeX được cài đặt sẵn trong máy
 
 ##### Dùng dịch vụ Overleaf
@@ -69,9 +69,9 @@ Các chức năng sửa mã trên Overleaf tốt hơn chức năng sửa mã ở
 cũng có thể lưu project vào tài khoản Overleaf của mình và thao tác với nó
 sau.
 
-##### Dùng một dịch vụ LaTeX online
+##### Dùng dịch vụ TeXLive.net
 
-Nút <button style="padding:0 1px;font-size:90%">Chạy với LaTeX Online</button>
+Nút <button style="padding:0 1px;font-size:90%">Chạy với TeXLive.net</button>
 sẽ chuyển đoạn mã tới [TeXLive.net](https://texlive.net).[^1]
 
 TeXLive.net được phát triển đặc biệt dành cho trang này, và nó sử dụng
@@ -95,9 +95,9 @@ Nếu bạn đã có một hệ thống TeX được cài đặt trong máy, b�
 ### Xử lý lỗi
 
 Các ví dụ trên trang đều được dựa trên một hệ thống TeX đã được cập nhật lên
-phiên bản mới nhất. Chúng đều biên dịch được với các dịch vụ LaTeX online mà ta
-đã liệt kê ở trên. Do vậy, nếu bạn nhận thông báo lỗi khi biên dịch, bạn nên kiểm
-tra lại xem hệ thống TeX của mình đã được cập nhật hay chưa.
+phiên bản mới nhất. Chúng đều biên dịch được với các dịch vụ ta đã liệt kê ở
+trên: Overleaf và TeXLive.net. Do vậy, nếu bạn nhận thông báo lỗi khi biên dịch,
+bạn nên kiểm tra lại xem hệ thống TeX của mình đã được cập nhật hay chưa.
 
 ---
 
@@ -131,7 +131,7 @@ bạn dùng `latex`, các chương trình `dvips` and `ps2pdf` cũng sẽ đư�
 
 ## Chọn cách tệp PDF được hiển thị trong trình duyệt
 
-Nếu bạn sử dụng hệ thống LaTeX Online, mặc định các tệp PDF được hiển thị với sự
+Nếu bạn sử dụng TeXLive.net, mặc định các tệp PDF được hiển thị với sự
 trợ giúp của [PDF.js](https://mozilla.github.io/pdf.js), bởi vì thư viện này có
 thể hoạt động ổn định trên rất nhiều trình duyệt khác nhau.
 
@@ -150,7 +150,7 @@ trong ghi chú để làm việc này.
 
 ## Xuất ra HTML (make4ht)
 
-Nếu bạn sử dụng một hệ thống LaTeX online, một 'chương trình biên dịch TeX' nữa,
+Nếu bạn sử dụng TeXLive.net, một 'chương trình biên dịch TeX' nữa,
 `make4ht`, cũng có thể được sử dụng. Nó sẽ cho output là các trang HTML của văn
 bản.
 
