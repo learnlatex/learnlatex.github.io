@@ -124,5 +124,4 @@ The theme used by the enbedded ACE editor.
       createCookie('runlatex-acethemenum',themesel.selectedIndex,100);
       createCookie('runlatex-acetheme',themesel.options[themesel.selectedIndex].value,100);
   });
-  var rlacetheme=themesel.options[themesel.selectedIndex].value;
 </script>
