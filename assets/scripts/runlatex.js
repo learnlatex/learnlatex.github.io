@@ -389,7 +389,7 @@ function rlSetEngine(n) {
 }
 
 var rldefaultengine=getCookie('runlatex-engine');
-if(rldefaultengine=="") enginez="pdflatex";
+if(rldefaultengine=="") rldefaultengine="pdflatex";
 
 
 
