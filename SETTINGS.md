@@ -70,8 +70,9 @@ The `engine` form parameter that TeXLive.net or Overleaf should use in the absen
 
 
 ## Editor Theme
-The theme used by the embedded ACE editor.
+The theme used by the embedded ACE editor.7
 
+<!-- {% raw %} -->
 <select id="ace-theme">
 <optgroup label="Bright">
 <option value="ace/theme/chrome">Chrome</option>
@@ -119,9 +120,10 @@ The theme used by the embedded ACE editor.
 
 <script>
   var themesel=document.getElementById('ace-theme');
-//  themesel.selectedIndex=parseInt(rlacethemenum);
-//  themesel.addEventListener('change', function() {
-//      createCookie('runlatex-acethemenum',themesel.selectedIndex,100);
-//      createCookie('runlatex-acetheme',themesel.options[themesel.selectedIndex].value,100);
-//  });
+  themesel.selectedIndex=parseInt(rlacethemenum);
+  themesel.addEventListener('change', function() {
+      createCookie('runlatex-acethemenum',themesel.selectedIndex,100);
+      createCookie('runlatex-acetheme',themesel.options[themesel.selectedIndex].value,100);
+  });
 </script>
+<!-- {% endraw %} -->
