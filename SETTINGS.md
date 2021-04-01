@@ -16,9 +16,6 @@ acceptance for cookies to be used on this site.
 ## Default Return
 
 
-## Default Return
-
-
 <span style="white-space:nowrap"><input name="ret" id="pdfjs" type="radio" onclick="rlSetReturn('pdfjs')"> <label for="pdfjs">PDF.js</label></span>
 
 
