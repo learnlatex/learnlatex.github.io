@@ -167,7 +167,7 @@ function openinoverleaf(nd) {
     var p = document.getElementById(nd);
     var t = editors[nd].getValue();
 
-    var engv="pdflatex";
+    var engv=rldefaultengine;
     var eng=t.match(engineregex);
     if(runlatex.adddefaultpreamble) {
 	if(t.indexOf("\\documentclass") == -1 && ( eng == null)) {
@@ -203,7 +203,7 @@ function openinoverleaf(nd) {
 	} else if(engv == "pdftex" || engv == "luatex" || engv == "xetex") {
 	    addinput(fm,"encoded_snip[]","$pdflatex = '" + engv + "';");
 	    addinput(fm,"snip_name[]","latexmkrc");
-	    engv="pdflatex";
+	    engv=rldefaultengine;
 	}
 
     }
@@ -264,7 +264,7 @@ function defaultengine(t) {
 	    return "xelatex";
 	} else if (t.indexOf("pstricks") !==-1) {
 	    return "latex";
-	} else return "pdflatex";
+	} else return rldefaultengine;
 }
 
 function latexcgi(nd) {
@@ -272,7 +272,7 @@ function latexcgi(nd) {
     fm.innerHTML="";
     var p = document.getElementById(nd);
     var t = editors[nd].getValue();
-    var engv="pdflatex";
+    var engv=rldefaultengine;
     var eng=t.match(engineregex);
     if(runlatex.adddefaultpreamble) {
 	if(t.indexOf("\\documentclass") == -1 && ( eng == null)) {
@@ -304,7 +304,11 @@ function latexcgi(nd) {
     var rtnv = "";
     if(rtn == null) {
 	// ES6 / IE
-	if (typeof Symbol == "undefined") addinput(fm,"return","pdf");
+	if (typeof Symbol == "undefined") {
+	    addinput(fm,"return","pdf");
+	} else {
+	    addinput(fm,"return",rldefaultreturn);
+	}
     } else {
 	rtnv=rtn[1].toLowerCase();
 	addinput(fm,"return",rtnv);
