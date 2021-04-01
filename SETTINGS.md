@@ -70,7 +70,7 @@ The `engine` form parameter that TeXLive.net or Overleaf should use in the absen
 
 
 ## Editor Theme
-The theme used by the enbedded ACE editor.
+The theme used by the embedded ACE editor.
 
 <select id="ace-theme">
 <optgroup label="Bright">
