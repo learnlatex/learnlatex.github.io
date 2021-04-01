@@ -396,7 +396,7 @@ var rldefaultengine=getCookie('runlatex-engine');
 if(rldefaultengine=="") rldefaultengine="pdflatex";
 
 
-var rlacetheme=getCookie('runlatex-acethemenum');
+var rlacethemenum=getCookie('runlatex-acethemenum');
 if(rlacethemenum=="") rlacethemenum="9";
 var rlacetheme=getCookie('runlatex-acetheme');
 if(rlacetheme=="") rlacetheme="ace/theme/textmate";
