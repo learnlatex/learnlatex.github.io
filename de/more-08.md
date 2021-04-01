@@ -247,7 +247,7 @@ Man beachte, dass nicht-numerische Zellen "geschützt" werden müssen, indem sie
 in geschweiften Klammern angegeben werden.
 
 Das `siunitx` Paket bietet viele Möglichkeiten, Zahlen auf verschiedene Weisen
-zu formatieren; siehe die [Paketdokumentation](https://texdoc.net/pkg/siunitx).
+zu formatieren; siehe die [Paketdokumentation](https://texdoc.org/pkg/siunitx).
 
 ## Die Gesamttabellenbreite angeben
 
@@ -352,7 +352,7 @@ C & D D D D D D D\\
 Anders als die bisher behandelten Umgebungen muss `tabularx` die Tabellen
 mehrfach setzen, um die richtigen Breiten festzustellen. Dies führt zu mehreren
 Einschränkungen der Umgebung, siehe die
-[Paketdokumentation](https://texdoc.net/pkg/tabularx).
+[Paketdokumentation](https://texdoc.org/pkg/tabularx).
 
 ## Mehrseitige Tabellen
 
@@ -412,7 +412,7 @@ Relativ häufig werden Fußnotenmarkierungen in Tabellen benötigt, um auf Notiz
 unter der Tabelle zu verweisen. Das `threeparttable` Paket vereinfacht das
 Markup solcher Tabellen und bewirkt, dass die Fußnoten in der gleichen Breite
 wie die Tabelle gesetzt werden. Für alle Details sei auf die
-[Paketdokumentation](https://texdoc.net/pkg/threeparttable) verwiesen, ein
+[Paketdokumentation](https://texdoc.org/pkg/threeparttable) verwiesen, ein
 einfaches Beispiel sei allerdings hier gezeigt.
 
 ```latex

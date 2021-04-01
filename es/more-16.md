@@ -15,10 +15,10 @@ los siguientes enlaces le serán de mucha ayuda.
 
 El código fuente de LaTeX está disponible en un documento escrito en LaTeX `source2e.pdf`, que puede
 consultar utilizando el comando `texdoc source2e`, o a través del siguiente enlace
-[texdoc.net](https://texdoc.net/pkg/source2e)
+[texdoc.org](https://texdoc.org/pkg/source2e)
 
 Las versiones actuales de LaTeX cargan el código del lenguaje de programación de LaTeX3, disponible anteriormente
 en el paquete `expl3`. Puede usar `texdoc` para ver la
-[descripción de la interface de expl3](http://texdoc.net/pkg/interface3) (`texdoc interface3`),
+[descripción de la interface de expl3](http://texdoc.org/pkg/interface3) (`texdoc interface3`),
 o
-[el código fuente completo de expl3](http://texdoc.net/pkg/source3) (`texdoc source3`).
+[el código fuente completo de expl3](http://texdoc.org/pkg/source3) (`texdoc source3`).

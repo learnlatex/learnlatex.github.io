@@ -106,7 +106,7 @@ Một vài lỗi hiểm hóc, đặc biệt là những lỗi không thể đư�
 TeX đã đọc hết tệp văn bản, sẽ không cho ta một thông báo lỗi nào, mà cùng lắm
 chỉ là một cảnh báo (warning) trong tệp log.
 
-Nếu bạn thử ví dụ sau bằng LaTeX CGI, nó sẽ vẫn cho ta PDF. Để xem cảnh báo
+Nếu bạn thử ví dụ sau bằng TeXLive.net, nó sẽ vẫn cho ta PDF. Để xem cảnh báo
 trong tệp log, hãy thêm `% !TEX log` vào đầu đoạn mã.
 
 ```latex

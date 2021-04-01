@@ -42,8 +42,8 @@ var editors=[];
 const noeditregex = /^\s*[/%#\*]+ *!TEX.*[^a-zA-Z]noedit *(\n|$)/i;
 const norunregex = /^\s*([/%#\*]+ *!TEX.*[^a-zA-Z]none *|[^% \t\\][^\\]*)(\n|$)/i;
 const commentregex = / %.*/;
-const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex|make4ht) *\n/i;
-const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log) *\n/i;
+const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex) *\n/i;
+const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log|make4ht) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
 var packageregex = [
@@ -176,10 +176,9 @@ function openinoverleaf(nd) {
     }
     if(eng != null) {
 	engv=eng[1].toLowerCase();
-    
 	if(engv == "pdftex" || engv == "luatex" || engv == "xetex" || engv == "ptex" || engv == "uptex") {
-	    t = "% Force main document for Overleaf\n\\let\\tmp\n\\documentclass\n" + t;
-	}
+	    addinput(fm,"main_document","document.tex");
+	}    
     }
     addinput(fm,"encoded_snip[]","\n" + t);
     addinput(fm,"snip_name[]","document.tex");

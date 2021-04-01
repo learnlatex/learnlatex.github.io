@@ -106,7 +106,7 @@ l.5 Text_word  $\alpha
 Some errors, especially errors that are not detected until the end of the file,
 do not generate an error prompt but just give a warning in the log.
 
-If you try this example using the LaTeX CGI server it will return a PDF by default;
+If you try this example using the TeXLive.net server it will return a PDF by default;
 to see the error message in the log add `%!TeX log`.
 
 ```latex

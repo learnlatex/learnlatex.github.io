@@ -26,34 +26,34 @@ LaTeX có thể cung cấp.</p>
 
 ## Hóa học
 
-Gói: [`mhchem`](https://texdoc.net/pkg/mhchem)
+Gói: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
 ## Ngôn ngữ học
 
-Gói: [`forest`](https://texdoc.net/pkg/forest)
+Gói: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
 ## Cờ
 
 <!-- not 2017 -->
-Gói: [`xskak`](https://texdoc.net/pkg/xskak)
+Gói: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
 ## Thơ
 
-Gói: [`memoir`](https://texdoc.net/pkg/memoir)
+Gói: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 ## Vẽ hình
 
 <!-- not 2017 -->
-Gói: [`tikz`](https://texdoc.net/pkg/tikz)
+Gói: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
@@ -61,7 +61,7 @@ Gói: [`tikz`](https://texdoc.net/pkg/tikz)
 
 ## Vẽ đồ thị hàm số
 
-Gói: [`pgfplots`](https://texdoc.net/pkg/plots)
+Gói: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
@@ -69,7 +69,7 @@ Gói: [`pgfplots`](https://texdoc.net/pkg/plots)
 
 ## Âm nhạc
 
-Gói: [`musixtex`](https://texdoc.net/pkg/musixtex)
+Gói: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 {% include extra-01-example-musixtex.md %}

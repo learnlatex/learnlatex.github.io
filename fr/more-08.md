@@ -247,7 +247,7 @@ accolades.
 
 Le package `siunitx` offre de nombreuses possibilités de formatage des nombres
 de différentes manières ;
-[voir sa documentation](https://texdoc.net/pkg/siunitx).
+[voir sa documentation](https://texdoc.org/pkg/siunitx).
 
 
 ## Fixer la largeur totale d'un tableau
@@ -357,7 +357,7 @@ C & D D D D D D D\\
 compiler le tableau plusieurs fois, en essayant différentes largeurs, pour
 déterminer le réglage final. Ça implique plusieurs restrictions sur
 l'utilisation de l'environnement ;
-[voir sa documentation](https://texdoc.net/pkg/tabularx).
+[voir sa documentation](https://texdoc.org/pkg/tabularx).
 
 
 ## Les tableaux sur plusieurs pages
@@ -417,7 +417,7 @@ Il est assez courant d'avoir besoin de notes de bas de tableau, avec des appels
 de note dans le tableau. Le package `threeparttable` simplifie la composition
 de ce genre de tableaux, en faisant en sorte que les notes soient placées dans
 un bloc de la même largeur que le tableau lui-même. Reportez-vous
-[à sa documentation](https://texdoc.net/pkg/threeparttable) pour plus de détails,
+[à sa documentation](https://texdoc.org/pkg/threeparttable) pour plus de détails,
 mais voici un exemple simple :
 
 

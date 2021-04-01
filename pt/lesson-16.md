@@ -26,9 +26,9 @@ ele encontrar usando:
 
 `texdoc -l` < _pct_ >
 
-## texdoc.net
+## texdoc.org
 
-[texdoc.net](https://texdoc.net/) é um website que funciona de forma similar ao
+[texdoc.org](https://texdoc.org/) é um website que funciona de forma similar ao
 `texdoc`.  Você pode buscar a documentação que o site tem disponível assim como
 você faria com `texdoc -l` e escolher dentre os resultados.
 

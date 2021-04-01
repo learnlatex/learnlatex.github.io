@@ -29,9 +29,9 @@ using:
 
 `texdoc -l` < _pkg_ >
 
-## texdoc.net
+## texdoc.org
 
-This is a [website](https://texdoc.net/) which works similarly to the `texdoc` utility. You can search
+This is a [website](https://texdoc.org/) which works similarly to the `texdoc` utility. You can search
 for documentation they have available just like you would do with `texdoc -l`
 and then choose from among the results.
 
