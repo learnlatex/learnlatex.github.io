@@ -119,9 +119,9 @@ The theme used by the embedded ACE editor.
 
 <script>
   var themesel=document.getElementById('ace-theme');
-  themesel.selectedIndex=parseInt(rlacethemenum);
-  themesel.addEventListener('change', function() {
-      createCookie('runlatex-acethemenum',themesel.selectedIndex,100);
-      createCookie('runlatex-acetheme',themesel.options[themesel.selectedIndex].value,100);
-  });
+//  themesel.selectedIndex=parseInt(rlacethemenum);
+//  themesel.addEventListener('change', function() {
+//      createCookie('runlatex-acethemenum',themesel.selectedIndex,100);
+//      createCookie('runlatex-acetheme',themesel.options[themesel.selectedIndex].value,100);
+//  });
 </script>
