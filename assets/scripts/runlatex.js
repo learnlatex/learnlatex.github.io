@@ -125,7 +125,7 @@ function llexamples() {
 	    p[i].textContent=pretext.replace(/\s+$/,'');
 	    editor = ace.edit(p[i]);
 	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
-	    editor.setTheme("ace/theme/textmate");
+	    editor.setTheme(rlacetheme);
 	    editor.getSession().setMode(acemode);
 	    editor.setOption("minLines",1);
 	    editor.setOption("maxLines",runlatex.editorlines);
@@ -396,6 +396,10 @@ var rldefaultengine=getCookie('runlatex-engine');
 if(rldefaultengine=="") rldefaultengine="pdflatex";
 
 
+var rlacetheme=getCookie('runlatex-acethemenum');
+if(rlacethemenum=="") rlacethemenum="9";
+var rlacetheme=getCookie('runlatex-acetheme');
+if(rlacetheme=="") rlacetheme="ace/theme/textmate";
 
 
 window.addEventListener('load', llexamples, false);
