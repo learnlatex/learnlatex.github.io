@@ -14,6 +14,7 @@ acceptance for cookies to be used on this site.
 
 
 ## Default Return
+The `return` paramater form that texlive.net should use in the absence of a setting via `% !TeX` comments in the example.
 
 
 <span style="white-space:nowrap"><input name="ret" id="pdfjs" type="radio" onclick="rlSetReturn('pdfjs')"> <label for="pdfjs">PDF.js</label></span>
@@ -34,6 +35,7 @@ acceptance for cookies to be used on this site.
 
 
 ## Default Engine
+The `engine` paramater form that texlive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
 
 
 <span style="white-space:nowrap"><input name="engine" id="pdflatex" type="radio" onclick="rlSetEngine('pdflatex')"> <label for="pdflatex">pdflatex</label></span>
