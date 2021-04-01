@@ -60,6 +60,22 @@
       <li 
         class="primary-navigation__list-item">
         
+        {% if page.url contains '/SETTINGS' %}
+          <a 
+            class="primary-navigation__anchor primary-navigation__anchor--active" 
+            href="{{"/" | absolute_url}}SETTINGS"
+            >Settings</a>
+        {% else %}
+          <a 
+            class="primary-navigation__anchor" 
+            href="{{"/" | absolute_url}}SETTINGS"
+            >Settings</a>
+        {% endif %}
+      </li>
+      
+      <li 
+        class="primary-navigation__list-item">
+        
         {% if page.url contains '/contact' %}
           <a 
             class="primary-navigation__anchor primary-navigation__anchor--active" 
