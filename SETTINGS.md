@@ -170,7 +170,7 @@ The theme used by the enbedded ACE editor.
 </select>
 
 <script>
-  var themesel=document.getElementById('ace-theme')
+  var themesel=document.getElementById('ace-theme');
   themesel.selectedIndex=parseInt(rlacethemenum);
   document.getElementById('ace-theme').addEventListener('change', function() {
       createCookie('runlatex-acethemenum',themesel.selectedIndex,100);
