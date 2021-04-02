@@ -20,7 +20,7 @@ By default the site does not use any cookies. As documented on the
 and store preferences. The cookies storing preferences (such as
 default TeX engine) are _not_ generated or transmitted to the
 LearnLatex.org site but are generated and stored by the JavaScript
-running within the users's browser.
+running within the user's browser.
 
 ## External Sites
 
