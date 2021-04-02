@@ -9,9 +9,16 @@ permalink: /SETTINGS
 ## Hic Sunt Dracones
 
 By default no cookies are used by this site, but any options set on
-this page are set in cookies, use of the menu items below indicates
-acceptance for cookies to be used on this site.
+this page are set in cookies, Accept cookies here to enable
+the use of cookies on this site and to enable the menu options below.
 
+
+  <input id="accept" type="button" value="Accept Cookies" onclick="rlAllowCookies()">
+  <input id="delete" type="button" value="ResetCookies" onclick="rlDeleteCookies()">
+  <script>
+    document.getElementById("delete").disabled=!rlallowcookies;
+  </script>
+  <p>
 
 ## Default Return
 The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
@@ -22,6 +29,7 @@ The `return` form parameter that TeXLive.net should use in the absence of a sett
 
 <script>
   var returnsel=document.getElementById('returnsel');
+  returnsel.disabled=!rlallowcookies;
 	var returns=[
 	["PDF",
 		["PDF.js", "PDF"]],
@@ -61,6 +69,7 @@ The `engine` form parameter that TeXLive.net or Overleaf should use in the absen
 
 <script>
   var enginesel=document.getElementById('engine');
+  enginesel.disabled=!rlallowcookies;
 	var engines=[
 	["LaTeX",
 		["pdfLaTeX", "pdfLaTeX-dev", "LaTeX", "LaTeX-dev",
@@ -99,6 +108,7 @@ The theme used by the embedded ACE editor.
 
 <script>
   var themesel=document.getElementById('ace-theme');
+  themesel.disabled=!rlallowcookies;
   var themes=[
       ["Bright",
        ['Chrome', 'Clouds', 'Crimson Editor', 'Dawn', 'Dreamweaver', 'Eclipse', 'GitHub', 'IPlastic', 

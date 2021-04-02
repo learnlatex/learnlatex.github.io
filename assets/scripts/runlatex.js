@@ -399,5 +399,19 @@ if(rldefaultengine=="") rldefaultengine="pdflatex";
 var rlacetheme=getCookie('runlatex-acetheme');
 if(rlacetheme=="") rlacetheme="ace/theme/textmate";
 
+function rlAllowCookies() {
+  createCookie('runlatex-cookies',"true",100);
+  window.location.reload(false);
+}
+
+function rlDeleteCookies() {
+ createCookie('runlatex-cookies',"",-999);
+ createCookie('runlatex-return',"",-999);
+ createCookie('runlatex-engine',"",-999);
+ createCookie('runlatex-acethem',"",-999);
+ window.location.reload(false);
+}
+
+var rlallowcookies=getCookie('runlatex-cookies')=="true";
 
 window.addEventListener('load', llexamples, false);
