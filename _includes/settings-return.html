@@ -27,7 +27,7 @@
   }
   returnsel.innerHTML=sel;
   returnsel.addEventListener('change', function() {
-      createCookie('runlatex-return',enginesel.options[returnsel.selectedIndex].value,100);
+      createCookie('runlatex-return',returnsel.options[returnsel.selectedIndex].value,100);
   });
 </script>
 <!-- {% endraw %} -->
