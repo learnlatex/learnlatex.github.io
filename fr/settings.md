@@ -29,10 +29,10 @@ Le `return` paramètre de formulaire que TeXLive.net doit utiliser en l'absence 
 
 Le `engine` paramètre de formulaire que TeXLive.net ou Overleaf doit utiliser en l'absence de paramètre via les % !TeXcommentaires dans l'exemple. (`-dev` et les `context` options ne doivent pas être utilisées à Overleaf.)
 
-
+{% include settings-engine.html %}
 
 
 ## Thème de l'éditeur
 Le thème utilisé par l'éditeur ACE intégré.
 
-
+{% include settings-acetheme.html %}

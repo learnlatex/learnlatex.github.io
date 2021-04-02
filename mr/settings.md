@@ -36,4 +36,4 @@ The `engine` form parameter that TeXLive.net or Overleaf should use in the absen
 ## Editor Theme
 The theme used by the embedded ACE editor.
 
-{% include setting-acetheme.html %}
+{% include settings-acetheme.html %}
