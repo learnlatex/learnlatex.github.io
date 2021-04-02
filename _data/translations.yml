@@ -116,6 +116,17 @@ navigational-elements_help:
   vi: "Hỗ trợ"
   zh: "救命"
   mr: "मदत"
+navigational-elements_settings:
+  de: "Settings"
+  en: "Settings"
+  es: "Settings"
+  fr: "Paramètres"
+  ja: "Settings"
+  pt: "Configurações"
+  tr: "Settings"
+  vi: "Settings"
+  zh: "Settings"
+  mr: "Settings"
 navigational-elements_contact:
   de: "Kontakt"
   en: "Contact"

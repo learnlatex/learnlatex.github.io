@@ -64,12 +64,12 @@
           <a 
             class="primary-navigation__anchor primary-navigation__anchor--active" 
             href="{{"/" | absolute_url}}{{ page.lang }}/settings"
-            >Settings</a>
+            >{{ site.data.translations['navigational-elements_settings'][page.lang] }}</a>
         {% else %}
           <a 
             class="primary-navigation__anchor" 
             href="{{"/" | absolute_url}}{{ page.lang }}/settings"
-            >Settings</a>
+            >{{ site.data.translations['navigational-elements_settings'][page.lang] }}</a>
         {% endif %}
       </li>
       
