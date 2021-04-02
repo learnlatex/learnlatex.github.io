@@ -408,7 +408,7 @@ function rlDeleteCookies() {
  createCookie('runlatex-cookies',"",-999);
  createCookie('runlatex-return',"",-999);
  createCookie('runlatex-engine',"",-999);
- createCookie('runlatex-acethem',"",-999);
+ createCookie('runlatex-acetheme',"",-999);
  window.location.reload(false);
 }
 
