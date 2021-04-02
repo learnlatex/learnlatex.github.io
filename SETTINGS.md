@@ -13,12 +13,12 @@ this page are set in cookies, Accept cookies here to enable
 the use of cookies on this site and to enable the menu options below.
 
 
-  <input id="accept" type="button" value="Accept Cookies" onclick="rlAllowCookies()">
-  <input id="delete" type="button" value="ResetCookies" onclick="rlDeleteCookies()">
-  <script>
-    document.getElementById("delete").disabled=!rlallowcookies;
-  </script>
-  <p>
+<input id="accept" type="button" value="Accept Cookies" onclick="rlAllowCookies()">
+<input id="delete" type="button" value="ResetCookies" onclick="rlDeleteCookies()">
+<script>
+  document.getElementById("delete").disabled=!rlallowcookies;
+</script>
+
 
 ## Default Return
 The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
