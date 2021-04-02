@@ -58,7 +58,7 @@ The `engine` form parameter that TeXLive.net or Overleaf should use in the absen
       sel=sel+"<optgroup label=\"" + engines[g][0] + "\">" ;
       var values=engines[g][1];
       for(let i = 0; i < values.length; i++) {
-	  var v="values[i].toLowerCase();
+	  var v=values[i].toLowerCase();
           sel=sel+"<option value=\"" + v + "\"" +
 	      (v==rldefaultengine ? " selected>" : ">") +
 	      values[i] + "</option>";
