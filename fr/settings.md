@@ -27,7 +27,7 @@ Le `return` paramètre de formulaire que TeXLive.net doit utiliser en l'absence 
 
 ## Moteur par défaut
 
-Le `engine` paramètre de formulaire que TeXLive.net ou Overleaf doit utiliser en l'absence de paramètre via les % !TeXcommentaires dans l'exemple. (`-dev` et les `context` options ne doivent pas être utilisées à Overleaf.)
+Le `engine` paramètre de formulaire que TeXLive.net ou Overleaf doit utiliser en l'absence de paramètre via les `% !TeX` commentaires dans l'exemple. (`-dev` et les `context` options ne doivent pas être utilisées à Overleaf.)
 
 {% include settings-engine.html %}
 
