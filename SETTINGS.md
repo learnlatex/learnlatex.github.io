@@ -6,12 +6,14 @@ permalink: /SETTINGS
 ---
 # Site Settings (User Preferences)
 
-## Hic Sunt Dracones
+## Accept or Delete Cookies
 
+Cookies are small pieces of data that are stored by your browswe.
 By default no cookies are used by this site, but any options set on
-this page are set in cookies.
+this page are stored in cookies.
 
-Accept cookies here to enable the use of cookies on this site and to enable the menu options below.
+Accept cookies here to enable the use of cookies on this site and to
+enable the menu options below.
 
 
 <input id="accept" type="button" value="Accept Cookies" onclick="rlAllowCookies()">
