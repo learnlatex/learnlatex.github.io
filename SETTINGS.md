@@ -14,7 +14,7 @@ the use of cookies on this site and to enable the menu options below.
 
 
 <input id="accept" type="button" value="Accept Cookies" onclick="rlAllowCookies()">
-<input id="delete" type="button" value="ResetCookies" onclick="rlDeleteCookies()">
+<input id="delete" type="button" value="Reset: Delete All Cookies" onclick="rlDeleteCookies()">
 <script>
   document.getElementById("delete").disabled=!rlallowcookies;
 </script>
