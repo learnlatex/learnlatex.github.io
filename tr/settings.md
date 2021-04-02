@@ -2,7 +2,7 @@
 layout: "page"
 lang: "mr"
 title: Site Settings
-permalink: /mr/settings
+permalink: /tr/settings
 ---
 # Site Settings (User Preferences) (MR)
 
