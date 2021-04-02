@@ -4,13 +4,13 @@ lang: "pt"
 title: Site Settings
 permalink: /pt/settings
 ---
-# Configurações do site (preferências do usuário) GOOGLE TRANSLATE
+# Configurações do site (preferências do usuário)
 
 ## Aceitar ou Excluir Cookies
 
 Cookies são pequenos pedaços de dados que são armazenados pelo seu navegador. Por padrão, nenhum cookie é usado por este site, mas todas as opções definidas nesta página são armazenadas nos cookies.
 
-Aceite cookies aqui para habilitar o uso de cookies neste site e para habilitar as opções de menu abaixo.
+Aceite cookies aqui para habilitar o uso de cookies neste site e para habilitar os menus de opções abaixo.
 
 {% include settings-accept.html 
    accept="Aceitar Cookies"
@@ -18,14 +18,17 @@ Aceite cookies aqui para habilitar o uso de cookies neste site e para habilitar 
 %}
 
 ## Retorno padrão 
-O parâmetro de formulário `return` que TeXLive.net deve usar na ausência de uma configuração via comentários `%! TeX` no exemplo.
+O parâmetro `return` que o TeXLive.net deve usar na ausência de uma
+configuração via comentários `%! TeX` nos exemplos.
 
 {% include settings-return.html %}
 
 
 ## Default Engine
 
-O `engine` parâmetro de formulário que TeXLive.net ou Overleaf deve usar na ausência de uma configuração por meio de `% !TeX` comentários no exemplo. ( -deve as contextopções não devem ser usadas no Overleaf.)
+O parâmetro `engine` que o TeXLive.net ou o Overleaf devem usar na
+ausência de uma configuração por meio de comentários `% !TeX` nos
+exemplos. (Opções `-dev` ou `context` não devem ser usadas no Overleaf.)
 
 {% include settings-engine.html %}
 
