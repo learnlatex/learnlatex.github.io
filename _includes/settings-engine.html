@@ -1,0 +1,35 @@
+
+<!-- {% raw %} -->
+<select id="engine"></select>
+
+<script>
+  var enginesel=document.getElementById('engine');
+  enginesel.disabled=!rlallowcookies;
+	var engines=[
+	["LaTeX",
+		["pdfLaTeX", "pdfLaTeX-dev", "LaTeX", "LaTeX-dev",
+		 "LuaLaTeX", "LuaLaTeX-dev", "XeLaTeX", "XeLaTeX-dev",
+         "pLaTeX", "pLaTeX-dev", "upLaTeX", "upLaTeX-dev"]],
+    ["Plain TeX",
+	 ["pdftex", "tex", "luatex", "xetex", "ptex", "uptex"]],
+    ["ConTeXt",
+      ["ConTeXt"]]
+   ];
+  var sel="";
+  for (let g=0;g<engines.length;g++) {
+      sel=sel+"<optgroup label=\"" + engines[g][0] + "\">" ;
+      var values=engines[g][1];
+      for(let i = 0; i < values.length; i++) {
+	  var v=values[i].toLowerCase();
+          sel=sel+"<option value=\"" + v + "\"" +
+	      (v==rldefaultengine ? " selected>" : ">") +
+	      values[i] + "</option>";
+      }
+      sel=sel+"</optgroup>";
+  }
+  enginesel.innerHTML=sel;
+  enginesel.addEventListener('change', function() {
+      createCookie('runlatex-engine',enginesel.options[enginesel.selectedIndex].value,100);
+  });
+</script>
+<!-- {% endraw %} -->
