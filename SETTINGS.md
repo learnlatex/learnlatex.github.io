@@ -8,7 +8,7 @@ permalink: /SETTINGS
 
 ## Accept or Delete Cookies
 
-Cookies are small pieces of data that are stored by your browswe.
+Cookies are small pieces of data that are stored by your browser.
 By default no cookies are used by this site, but any options set on
 this page are stored in cookies.
 
