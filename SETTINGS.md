@@ -17,20 +17,37 @@ acceptance for cookies to be used on this site.
 The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
 
 
-<span style="white-space:nowrap"><input name="ret" id="pdfjs" type="radio" onclick="rlSetReturn('pdfjs')"> <label for="pdfjs">PDF.js</label></span>
-
-
-<span style="white-space:nowrap"><input name="ret" id="pdf" type="radio" onclick="rlSetReturn('pdf')"> <label for="pdf">PDF</label></span>
-
-
-<span style="white-space:nowrap"><input name="ret" id="make4ht" type="radio" onclick="rlSetReturn('make4ht')"> <label for="make4ht">make4ht</label></span>
-
-
-<span style="white-space:nowrap"><input name="ret" id="log" type="radio" onclick="rlSetReturn('log')"> <label for="log">log</label></span>
+<!-- {% raw %} -->
+<select id="returnsel"></select>
 
 <script>
-  document.getElementById(rldefaultreturn).checked=true;
+  var returnsel=document.getElementById('returnsel');
+	var returns=[
+	["PDF",
+		["PDF.js", "PDF"]],
+    ["HTML",
+	 ["make4ht"]],
+    ["Text",
+      ["log"]]
+   ];
+  var sel="";
+  for (let g=0;g<returns.length;g++) {
+      sel=sel+"<optgroup label=\"" + returns[g][0] + "\">" ;
+      var values=returns[g][1];
+      for(let i = 0; i < values.length; i++) {
+	  var v=values[i].toLowerCase().replace(/[.]/g,'');
+          sel=sel+"<option value=\"" + v + "\"" +
+	      (v==rldefaultreturn ? " selected>" : ">") +
+	      values[i] + "</option>";
+      }
+      sel=sel+"</optgroup>";
+  }
+  returnsel.innerHTML=sel;
+  returnsel.addEventListener('change', function() {
+      createCookie('runlatex-return',enginesel.options[returnsel.selectedIndex].value,100);
+  });
 </script>
+<!-- {% endraw %} -->
 
 
 
@@ -46,7 +63,8 @@ The `engine` form parameter that TeXLive.net or Overleaf should use in the absen
   var enginesel=document.getElementById('engine');
 	var engines=[
 	["LaTeX",
-		["pdfLaTeX", "pdfLaTeX-dev", "LaTeX", "LaTeX-dev", "LuaLaTeX", "LuaLaTeX-dev", "XeLaTeX", "XeLaTeX-dev",
+		["pdfLaTeX", "pdfLaTeX-dev", "LaTeX", "LaTeX-dev",
+		 "LuaLaTeX", "LuaLaTeX-dev", "XeLaTeX", "XeLaTeX-dev",
          "pLaTeX", "pLaTeX-dev", "upLaTeX", "upLaTeX-dev"]],
     ["Plain TeX",
 	 ["pdftex", "tex", "luatex", "xetex", "ptex", "uptex"]],
