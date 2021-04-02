@@ -9,13 +9,15 @@ permalink: /SETTINGS
 ## Hic Sunt Dracones
 
 By default no cookies are used by this site, but any options set on
-this page are set in cookies, Accept cookies here to enable
-the use of cookies on this site and to enable the menu options below.
+this page are set in cookies.
+
+Accept cookies here to enable the use of cookies on this site and to enable the menu options below.
 
 
 <input id="accept" type="button" value="Accept Cookies" onclick="rlAllowCookies()">
 <input id="delete" type="button" value="Reset: Delete All Cookies" onclick="rlDeleteCookies()">
 <script>
+  document.getElementById("accept").disabled=rlallowcookies;
   document.getElementById("delete").disabled=!rlallowcookies;
 </script>
 
