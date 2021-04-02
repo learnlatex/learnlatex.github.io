@@ -38,35 +38,39 @@ The `return` form parameter that TeXLive.net should use in the absence of a sett
 The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
 
 
-<span style="white-space:nowrap"><input name="engine" id="pdflatex" type="radio" onclick="rlSetEngine('pdflatex')"> <label for="pdflatex">pdflatex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="pdflatex-dev" type="radio" onclick="rlSetEngine('pdflatex-dev')"> <label for="pdf">pdflatex-dev</label></span>
-<span style="white-space:nowrap"><input name="engine" id="latex" type="radio" onclick="rlSetEngine('latex')"> <label for="latex">latex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="latex-dev" type="radio" onclick="rlSetEngine('latex-dev')"> <label for="pdf">latex-dev</label></span>
-<span style="white-space:nowrap"><input name="engine" id="lualatex" type="radio" onclick="rlSetEngine('lualatex')"> <label for="lualatex">lualatex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="lualatex-dev" type="radio" onclick="rlSetEngine('lualatex-dev')"> <label for="pdf">lualatex-dev</label></span>
-<span style="white-space:nowrap"><input name="engine" id="xelatex" type="radio" onclick="rlSetEngine('xelatex')"> <label for="xelatex">xelatex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="xelatex-dev" type="radio" onclick="rlSetEngine('xelatex-dev')"> <label for="pdf">xelatex-dev</label></span>
-<span style="white-space:nowrap"><input name="engine" id="platex" type="radio" onclick="rlSetEngine('platex')"> <label for="platex">platex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="platex-dev" type="radio" onclick="rlSetEngine('platex-dev')"> <label for="pdf">platex-dev</label></span>
-<span style="white-space:nowrap"><input name="engine" id="uplatex" type="radio" onclick="rlSetEngine('uplatex')"> <label for="uplatex">uplatex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="uplatex-dev" type="radio" onclick="rlSetEngine('uplatex-dev')"> <label for="pdf">uplatex-dev</label></span>
 
-
-<span style="white-space:nowrap"><input name="engine" id="pdftex" type="radio" onclick="rlSetEngine('pdftex')"> <label for="pdftex">pdftex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="tex" type="radio" onclick="rlSetEngine('tex')"> <label for="tex">tex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="luatex" type="radio" onclick="rlSetEngine('luatex')"> <label for="luatex">luatex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="xetex" type="radio" onclick="rlSetEngine('xetex')"> <label for="xetex">xetex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="ptex" type="radio" onclick="rlSetEngine('ptex')"> <label for="ptex">ptex</label></span>
-<span style="white-space:nowrap"><input name="engine" id="uptex" type="radio" onclick="rlSetEngine('uptex')"> <label for="uptex">uptex</label></span>
-
-
-<span style="white-space:nowrap"><input name="engine" id="context" type="radio" onclick="rlSetEngine('context')"> <label for="contex">context</label></span>
-
-
+<!-- {% raw %} -->
+<select id="engine"></select>
 
 <script>
-  document.getElementById(rldefaultengine).checked=true;
+  var enginesel=document.getElementById('engine');
+	var engines=[
+	["LaTeX",
+		["pdfLaTeX", "pdfLaTeX-dev", "LaTeX", "LaTeX-dev", "LuaLaTeX", "LuaLaTeX-dev", "XeLaTeX", "XeLaTeX-dev",
+         "pLaTeX", "pLaTeX-dev", "upLaTeX", "upLaTeX-dev"]],
+    ["Plain TeX",
+	 ["pdftex", "tex", "luatex", "xetex", "ptex", "uptex"]],
+    ["ConTeXt",
+      ["ConTeXt"]]
+   ];
+  var sel="";
+  for (let g=0;g<engines.length;g++) {
+      sel=sel+"<optgroup label=\"" + engines[g][0] + "\">" ;
+      var values=engines[g][1];
+      for(let i = 0; i < values.length; i++) {
+	  var v="values[i].toLowerCase();
+          sel=sel+"<option value=\"" + v + "\"" +
+	      (v==rldefaultengine ? " selected>" : ">") +
+	      values[i] + "</option>";
+      }
+      sel=sel+"</optgroup>";
+  }
+  enginesel.innerHTML=sel;
+  enginesel.addEventListener('change', function() {
+      createCookie('runlatex-engine',enginesel.options[enginesel.selectedIndex].value,100);
+  });
 </script>
+<!-- {% endraw %} -->
 
 
 ## Editor Theme
