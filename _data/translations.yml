@@ -149,6 +149,17 @@ navigational-elements_licenses:
   vi: "Giấy phép"
   zh: "執照"
   mr: "परवाने"
+navigational-elements_privacy:
+  de: "Privacy"
+  en: "Privacy"
+  es: "Licencias"
+  fr: "Confidentialité"
+  ja: "Privacy"
+  pt: "Privacidade"
+  tr: "Privacy"
+  vi: "Privacy"
+  zh: "Privacy"
+  mr: "Privacy"
 navigational-elements_open-an-issue:
   de: "Problem melden"
   en: "Open an issue"
