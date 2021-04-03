@@ -35,6 +35,10 @@ runlatex.overleafURI="https://www.overleaf.com/docs";
 // per page setup
 runlatex.preincludes={};
 
+// Disable all use of cookies
+// No cookies are set by this file even when true.
+runlatex.usecookies=true;
+
 // end of configuration
 
 var editors=[];
@@ -125,7 +129,7 @@ function llexamples() {
 	    p[i].textContent=pretext.replace(/\s+$/,'');
 	    editor = ace.edit(p[i]);
 	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
-	    editor.setTheme("ace/theme/textmate");
+	    editor.setTheme(rlacetheme);
 	    editor.getSession().setMode(acemode);
 	    editor.setOption("minLines",1);
 	    editor.setOption("maxLines",runlatex.editorlines);
@@ -167,7 +171,7 @@ function openinoverleaf(nd) {
     var p = document.getElementById(nd);
     var t = editors[nd].getValue();
 
-    var engv="pdflatex";
+    var engv=rldefaultengine;
     var eng=t.match(engineregex);
     if(runlatex.adddefaultpreamble) {
 	if(t.indexOf("\\documentclass") == -1 && ( eng == null)) {
@@ -203,7 +207,7 @@ function openinoverleaf(nd) {
 	} else if(engv == "pdftex" || engv == "luatex" || engv == "xetex") {
 	    addinput(fm,"encoded_snip[]","$pdflatex = '" + engv + "';");
 	    addinput(fm,"snip_name[]","latexmkrc");
-	    engv="pdflatex";
+	    engv=rldefaultengine;
 	}
 
     }
@@ -264,7 +268,7 @@ function defaultengine(t) {
 	    return "xelatex";
 	} else if (t.indexOf("pstricks") !==-1) {
 	    return "latex";
-	} else return "pdflatex";
+	} else return rldefaultengine;
 }
 
 function latexcgi(nd) {
@@ -272,7 +276,7 @@ function latexcgi(nd) {
     fm.innerHTML="";
     var p = document.getElementById(nd);
     var t = editors[nd].getValue();
-    var engv="pdflatex";
+    var engv=rldefaultengine;
     var eng=t.match(engineregex);
     if(runlatex.adddefaultpreamble) {
 	if(t.indexOf("\\documentclass") == -1 && ( eng == null)) {
@@ -304,7 +308,11 @@ function latexcgi(nd) {
     var rtnv = "";
     if(rtn == null) {
 	// ES6 / IE
-	if (typeof Symbol == "undefined") addinput(fm,"return","pdf");
+	if (typeof Symbol == "undefined") {
+	    addinput(fm,"return","pdf");
+	} else {
+	    addinput(fm,"return",rldefaultreturn);
+	}
     } else {
 	rtnv=rtn[1].toLowerCase();
 	addinput(fm,"return",rtnv);
@@ -344,5 +352,72 @@ function latexcgi(nd) {
     }, 1000);
     fm.submit();
 }
+
+
+
+
+
+var createCookie = function(name, value, days) {
+    if(runlatex.usecookies){
+    var expires;
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+    }
+    else {
+        expires = "";
+    }
+    document.cookie = name + "=" + value + expires + "; path=/" + "; SameSite=Lax";
+    }
+}
+
+function getCookie(c_name) {
+    if (runlatex.usecookies && document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=");
+        if (c_start != -1) {
+            c_start = c_start + c_name.length + 1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) {
+                c_end = document.cookie.length;
+            }
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
+    }
+    return "";
+}
+
+function rlSetReturn(n) {
+    createCookie('runlatex-return',n,100);
+}
+
+var rldefaultreturn=getCookie('runlatex-return');
+if(rldefaultreturn=="") rldefaultreturn="pdfjs";
+
+function rlSetEngine(n) {
+    createCookie('runlatex-engine',n,100);
+}
+
+var rldefaultengine=getCookie('runlatex-engine');
+if(rldefaultengine=="") rldefaultengine="pdflatex";
+
+
+var rlacetheme=getCookie('runlatex-acetheme');
+if(rlacetheme=="") rlacetheme="ace/theme/textmate";
+
+function rlAllowCookies() {
+  createCookie('runlatex-cookies',"true",100);
+  window.location.reload(false);
+}
+
+function rlDeleteCookies() {
+ createCookie('runlatex-cookies',"",-999);
+ createCookie('runlatex-return',"",-999);
+ createCookie('runlatex-engine',"",-999);
+ createCookie('runlatex-acetheme',"",-999);
+ window.location.reload(false);
+}
+
+var rlallowcookies=getCookie('runlatex-cookies')=="true";
 
 window.addEventListener('load', llexamples, false);
