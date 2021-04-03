@@ -35,6 +35,10 @@ runlatex.overleafURI="https://www.overleaf.com/docs";
 // per page setup
 runlatex.preincludes={};
 
+// Disable all use of cookies
+// No cookies are set by this file even when true.
+runlatex.usecookies=true;
+
 // end of configuration
 
 var editors=[];
@@ -354,6 +358,7 @@ function latexcgi(nd) {
 
 
 var createCookie = function(name, value, days) {
+    if(runlatex.usecookies){
     var expires;
     if (days) {
         var date = new Date();
@@ -364,10 +369,11 @@ var createCookie = function(name, value, days) {
         expires = "";
     }
     document.cookie = name + "=" + value + expires + "; path=/" + "; SameSite=Lax";
+    }
 }
 
 function getCookie(c_name) {
-    if (document.cookie.length > 0) {
+    if (runlatex.usecookies && document.cookie.length > 0) {
         c_start = document.cookie.indexOf(c_name + "=");
         if (c_start != -1) {
             c_start = c_start + c_name.length + 1;
