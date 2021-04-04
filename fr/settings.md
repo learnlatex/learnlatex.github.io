@@ -4,7 +4,7 @@ lang: "fr"
 title: Paramètres du site
 permalink: /fr/settings
 ---
-# Paramètres du site (préférences de l'utilisateur) GOOGLE TRANSLATE
+# Paramètres du site (préférences de l'utilisateur)
 
 ## Accepter ou supprimer les cookies
 
