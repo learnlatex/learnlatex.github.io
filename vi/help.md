@@ -44,8 +44,9 @@ các thao tác với các đoạn mã ví dụ.
 
 Bạn có thể thay đổi giao diện của ACE (ví dụ chuyển sang chế độ tối) trong
 [Cài đặt trang](settings). Bạn cũng có thể thử các giao diện khác nhau bằng cách
-dùng `Ctrl` + `,` (`Cmd` + `,` trên Mac) khi đang ở bất cứ ví dụ nào trong trang
-&ndash; nó sẽ mở một bảng cài đặt cho phép ta thử mọi cài đặt của ACE.
+dùng <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> trên Mac) khi đang
+ở bất cứ ví dụ nào trong trang &ndash; nó sẽ mở một bảng cài đặt cho phép ta thử
+mọi cài đặt của ACE.
 
 Trang GitHub của ACE có một trang khá hữu ích về
 [danh sách các phím tắt](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
