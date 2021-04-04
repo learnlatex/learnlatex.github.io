@@ -8,8 +8,8 @@ permalink: /en/privacy
 
 ## User Data
 
-LearnLatex.org requires no user login and stores no user-specifc data.
-As the site is hosted at github pages, no information at all is available
+LearnLaTeX.org requires no user login and stores no user-specifc data.
+As the site is hosted at GitHub Pages, no information at all is available
 to the site maintainers on user activity. The site does not use any tracking
 service such as Google Analytics.
 
@@ -19,7 +19,7 @@ By default the site does not use any cookies. As documented on the
 [Site Settings](settings) page, users may optionally accept cookies
 and store preferences. The cookies storing preferences (such as
 default TeX engine) are _not_ generated or transmitted to the
-LearnLatex.org site but are generated and stored by the JavaScript
+LearnLaTeX.org site but are generated and stored by the JavaScript
 running within the user's browser.
 
 ## External Sites
