@@ -124,7 +124,7 @@ navigational-elements_settings:
   ja: "Settings"
   pt: "Configurações"
   tr: "Settings"
-  vi: "Settings"
+  vi: "Cài đặt trang"
   zh: "Settings"
   mr: "Settings"
 navigational-elements_contact:
@@ -157,7 +157,7 @@ navigational-elements_privacy:
   ja: "Privacy"
   pt: "Privacidade"
   tr: "Privacy"
-  vi: "Privacy"
+  vi: "Chính sách bảo mật"
   zh: "Privacy"
   mr: "Privacy"
 navigational-elements_open-an-issue:

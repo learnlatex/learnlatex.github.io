@@ -72,7 +72,7 @@ Một dòng chữ tiếng Việt.
 \end{document}
 ```
 
-Tuy nhiên, để ý rằng các từ "tự động" trong văn bản vẫn được viết bằng tiếng
+Tuy nhiên, để ý rằng các từ 'tự động' trong văn bản vẫn được viết bằng tiếng
 Anh. Trong ví dụ trên, ta thấy LaTeX vẫn viết là Chapter 1 thay vì Chương 1. Để
 hoàn toàn đưa văn bản của bạn thành một văn bản tiếng Việt, ta cần dùng `babel`,
 như đã hướng dẫn ở phần trước:

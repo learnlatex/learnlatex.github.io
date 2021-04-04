@@ -223,7 +223,7 @@ thập phân:
 \end{document}
 ```
 
-Chú ý rằng tất cả các ô không phải số cần phải được "bảo vệ" bằng cách đưa chúng
+Chú ý rằng tất cả các ô không phải số cần phải được 'bảo vệ' bằng cách đưa chúng
 vào trong cặp ngoặc nhọn.
 
 Gói `siunitx` cung cấp nhiều cách để tùy biến các số trong nhiều cách khác nhau,
@@ -333,7 +333,7 @@ dụng môi trường này có một số nhược điểm, xem
 
 ## Bảng trên nhiều trang
 
-Một `tabular` tạo ra một "hộp" không thể được chia nhỏ bao quanh bảng, do đó
+Một `tabular` tạo ra một 'hộp' không thể được chia nhỏ bao quanh bảng, do đó
 bảng phải đủ nhỏ để có thể để vừa trong một trang, và thường được đặt trong môi
 trường linh động `table`.
 
@@ -415,7 +415,7 @@ về gói tại [hướng dẫn sử dụng của nó](https://texdoc.org/pkg/th
 Những thiết lập tách dòng mặc định hiểu rằng cột của bạn đủ rộng để có nhiều lựa
 chọn trong việc tách dòng. Ví dụ sau cho thấy một vài cách giải quyết khi cột
 của bạn tương đối nhỏ. Cách đầu tiên thay đổi khoảng cách giữa các từ và TeX sẽ
-xuất ra một cảnh báo về "Underfull lines". Sử dụng `\raggedright` thường xử lý
+xuất ra một cảnh báo về 'Underfull lines'. Sử dụng `\raggedright` thường xử lý
 được cảnh báo này nhưng nó có thể làm một số dòng nhìn không được đều. Lệnh
 `\RaggedRight` từ gói `ragged2e` có thể giải quyết việc này: nó cho phép sự biến
 thiên trong độ dài của các dòng, nhưng nó cũng tách các âm tiết (hyphenate) khi
@@ -537,7 +537,7 @@ tham số ảnh hưởng đến sự phân cách các hàng, đó là `\arraystr
 sẽ gia tăng khoảng cách giữa các hàng 50%.
 
 Thông thường, khi dùng `\hline`, ta nên gia tăng độ cao của các hàng mà không
-gia tăng "độ sâu" của chúng. Ta có thể dùng `\extrarowheight` cho việc này.
+gia tăng 'độ sâu' của chúng. Ta có thể dùng `\extrarowheight` cho việc này.
 
 ```latex
 \documentclass[a4paper]{article}

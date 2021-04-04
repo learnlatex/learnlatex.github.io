@@ -37,7 +37,7 @@ Even more text\index{gamma@$\gamma$}.
 ```
 
 Ta có thể thấy hai chức năng đã được hiển thị ở đây: chia nhỏ các chỉ mục theo
-"chỉ mục con &ndash; chỉ mục cha" theo `!` và in ra một đoạn mã khác với đoạn
+'chỉ mục con &ndash; chỉ mục cha' theo `!` và in ra một đoạn mã khác với đoạn
 mã được nhập bằng `@` (đoạn mã được nhập sẽ luôn được dùng để sắp xếp các chỉ
 mục). Có nhiều cách căn chỉnh định dạng của chỉ mục, hãy thử các ví dụ này và
 xem cách chúng hoạt động ra sao.

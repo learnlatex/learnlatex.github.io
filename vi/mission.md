@@ -14,7 +14,7 @@ trình duy nhất. Mục đích của chúng tôi ở đây là giúp bạn bắ
 cho bạn thấy _tất cả_ chỉ trong một lần.
 
 Để làm được điều đó, chúng tôi đã chọn ra 16 trong số những chủ đề quan trọng
-nhất bạn cần phải biết để dùng LaTeX, và đưa mỗi chủ đề thành một "bài học"
+nhất bạn cần phải biết để dùng LaTeX, và đưa mỗi chủ đề thành một 'bài học'
 ngắn. Mỗi bài sẽ chỉ chú trọng vào chủ đề đó thôi, nên chúng sẽ tương đối súc
 tích. Trong mỗi bài, ta sẽ có những ví dụ, và bạn sẽ có thể thử những ví dụ này
 online chỉ bằng một lần nhấp chuột. Đọc thêm về cách những ví dụ này hoạt động

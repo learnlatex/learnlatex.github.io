@@ -136,7 +136,7 @@ vì nếu dùng `center` sẽ có quá nhiều khoảng trống theo chiều d�
 
 ## Bài tập
 
-Thử thêm một hình ảnh bạn có, thay vào hình ảnh "mẫu" mà ta có ở ví dụ trên.
+Thử thêm một hình ảnh bạn có, thay vào hình ảnh 'mẫu' mà ta có ở ví dụ trên.
 
 Thử xem bạn có thể làm được gì với `height`, `width`, `angle` và `scale`.
 

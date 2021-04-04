@@ -32,13 +32,13 @@ runlatex.preincludes = {
 ## Thiết lập cấu trúc cho các tệp mã nguồn
 
 Khi bạn viết một văn bản dài, bạn có thể muốn chia mã của bạn thành nhiều tệp
-khác nhau. Một cách thường thấy là có một tệp chính ("tệp gốc"), và một tệp cho
+khác nhau. Một cách thường thấy là có một tệp chính ('tệp gốc'), và một tệp cho
 mỗi chương (cho một cuốn sách hoặc một luận án) hoặc mỗi tệp cho một phần dài
 (cho một bài báo dài).
 
 LaTeX cho phép ta chia nhỏ mã và kiểm soát chúng. Có hai lệnh quan trọng ở đây:
-`\input` và `\include`. Ta có thể dùng `\input` để LaTeX hiểu là "coi như tệp
-kia vừa được gõ lại ở đây", vì thế nó gần như có thể được dùng trong mọi trường
+`\input` và `\include`. Ta có thể dùng `\input` để LaTeX hiểu là 'coi như tệp
+kia vừa được gõ lại ở đây', vì thế nó gần như có thể được dùng trong mọi trường
 hợp. Lệnh `\include` chỉ chạy tốt đối với các chương, vì nó sang trang mới và
 thực hiện một vài thay đổi nội bộ. Tuy nhiên nó lại có điểm mạnh lớn: nó cho
 phép ta chọn chương nào để thêm vào, do đó ta có thể làm việc với một phần văn
@@ -100,7 +100,7 @@ Lệnh `\input` khá tốt cho những phần của một tệp dài mà _không
 chương khác nhau. Ví dụ, ta đã dùng nó để tách trang đầu và trang cuối. Điều này
 làm cho tệp gốc ngắn gọn và rõ ràng hơn, hơn nữa ta có thể dùng lại những trang
 này trong một văn bản khác. Ta còn dùng lệnh này cho những phần không phải
-chương ở phần đầu của "cuốn sách" như phần lời nói đầu chẳng hạn. Việc này làm
+chương ở phần đầu của 'cuốn sách' như phần lời nói đầu chẳng hạn. Việc này làm
 cho tệp chính gọn và dễ đọc hơn rất nhiều.
 
 ## Dùng `\include` và `\includeonly`
@@ -131,7 +131,7 @@ các định dạng trong trang. Ví dụ, `\frontmatter` thay đổi kiểu c�
 thành các chữ số La Mã.
 
 Lệnh `\appendix` thay đổi việc đánh số phần thành `A`, `B`, v.v..., vì thế
-chương đầu tiên sau `\appendix` sẽ được in ra với tên là "Phụ lục A".
+chương đầu tiên sau `\appendix` sẽ được in ra với tên là 'Phụ lục A'.
 
 ## Bài tập
 
@@ -140,9 +140,9 @@ tệp trong `\includeonly` để xem sự thay đổi.
 
 Thêm một vài thành phần linh động và tạo ra một danh sách các hình và các bảng.
 Nếu bạn dùng một hệ thống LaTeX được cài trong máy của mình, bạn cần bao nhiêu
-lần chạy LaTeX để có được một mục lục và những danh sách này đầy đủ? (Những hệ
-thống LaTeX online chạy LaTeX theo một cách "bí mật" nên những thông tin về số
-lần chạy không thật sự rõ ràng.)
+lần chạy LaTeX để có được một mục lục và những danh sách này đầy đủ? (Các dịch
+vụ LaTeX như Overleaf hay TeXLive.net chạy LaTeX theo một cách 'bí mật' nên
+những thông tin về số lần chạy không thật sự rõ ràng.)
 
 ----
 

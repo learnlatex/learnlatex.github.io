@@ -52,7 +52,7 @@ Có lẽ bạn đã từng sử dụng một trình soạn thảo văn bản, v�
 phần mới bằng việc gõ đề mục và làm cho cái đề mục này có cỡ chữ to hơn và có
 kiểu chữ đậm, v.v..., rồi tách nó với các dòng khác bằng những dòng trống. Trong
 LaTeX, việc dùng những markup logic thường _dễ hơn_ việc tự căn chỉnh format
-"bằng tay": ta chỉ cần dùng câu lệnh `\section`. Tất cả những thứ liên quan đến
+'bằng tay': ta chỉ cần dùng câu lệnh `\section`. Tất cả những thứ liên quan đến
 thiết kế, ví dụ như font, cỡ chữ, các khoảng cách với các phần xung quanh, 
 v.v... đều được LaTeX lo.
 
@@ -82,7 +82,7 @@ Text of the second section.
 ```
 
 Sử dụng thiết lập mặc định với lớp văn bản `article`, LaTeX đánh số các tên đề
-mục và các "đề mục con", cũng như in các đề mục với kiểu chữ đậm. Ta sẽ nói về
+mục và các 'đề mục con', cũng như in các đề mục với kiểu chữ đậm. Ta sẽ nói về
 việc thay đổi thiết kế [trong bài sau](lesson-05).
 
 LaTeX có thể chia một văn bản thành những cấp độ phần khác nhau
@@ -91,11 +91,11 @@ LaTeX có thể chia một văn bản thành những cấp độ phần khác nh
   `\documentclass{report}` cho câu lệnh này)
 - `\section` (phần)
 - `\subsection` (phần con)
-- `\subsubsection` (phần "cháu")
+- `\subsubsection` (phần 'cháu')
 
 Ta có thể đi sâu thêm nữa, câu lệnh tiếp theo trong dãy là `\paragraph`, nhưng
 thường thì như vậy là hơi quá nhiều cấp độ trong các phần văn bản. (Chú ý rằng
-`\paragraph`, mặc dù dịch từ tiếng Anh là "đoạn", *không* phải là một cách để
+`\paragraph`, mặc dù dịch từ tiếng Anh là 'đoạn', *không* phải là một cách để
 bắt đầu một đoạn văn mới!)
 
 Bạn có thể nghĩ tới việc đặt tên văn bản. Có những câu lệnh đặc biệt cho việc
