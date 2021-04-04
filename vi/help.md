@@ -150,20 +150,26 @@ trong ghi chú để làm việc này.
 
 ## Xuất ra HTML (make4ht)
 
-Nếu bạn sử dụng TeXLive.net, một 'chương trình biên dịch TeX' nữa,
-`make4ht`, cũng có thể được sử dụng. Nó sẽ cho output là các trang HTML của văn
-bản.
+Nếu bạn sử dụng TeXLive.net, bạn cũng có thể yêu cầu xuất ra dạng HTML thay vì
+PDF. Điều đó được thực hiện bằng việc sử dụng lựa chọn xuất `make4ht` (bạn vẫn
+có thể dùng lựa chọn này cùng lúc với lựa chọn trình biên dịch như `xelatex` hay
+`pdflatex`).
 
 Để có được output như vậy, thêm dòng chú thích sau:
 
 `% !TeX make4ht`
 {: .noedit :}
 
+Ngoài cách này, bạn cũng có thể vào [Cài đặt trang](settings) để đặt `make4ht`
+làm cách thức xuất mặc định.
+
 Nếu bạn đang sử dụng một hệ thống TeX được cài đặt sẵn trong máy, bạn cũng có
 thể xuất ra HTML bằng câu lệnh terminal
 
 `make4ht  document.tex "2,mathjax"`
 {: .noedit :}
+
+với argument `-x` hoặc `-l` nếu bạn muốn dùng XeLaTeX hoặc LuaLaTeX tương ứng.
 
 Nếu bạn chạy `make4ht` bằng hệ thống TeX cài sẵn, bạn có thể thực hiện nhiều loại
 tùy biến khác nhau. Đọc thêm ở
