@@ -46,8 +46,8 @@ The editor being used is [ACE](https://ace.c9.io/).
 
 You may customise the theme used in the editor (for example using a
 dark theme with light text on a dark background) on the [Site Settings](settings) page.
-A convenient way to experiment with different themes is to to use `control ,` (`Command ,` on Mac)
-hile on any example in the site. This displays a panel which allows you to change all the ACE settings.
+A convenient way to experiment with different themes is to to use `Control-,` (`Command-,` on Mac)
+while on any example in the site. This displays a panel which allows you to change all the ACE settings.
 
 The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
@@ -145,7 +145,7 @@ also used to produce the PDF result from the DVI file that these variants genera
 Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
 
 If the engine is not specified in a `% !TeX` comment, then `pdflatex` will be used
-unless you have specified a default TeX engine on the [Site Settings](settings) page.
+unless you have specified a default TeX engine on the [Site Settings](settings) page.
 
 ---
 
@@ -169,7 +169,7 @@ no errors. This can be specified by using `log` as the final token in
 the comment.
 
 As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
+site default return parameter on the [Site Settings](settings)
 page. The Settings are specific to each browser, so for example you
 may choose to use the default `pdfjs` setting on your mobile device,
 but use `pdf` on your desktop browser to use its default PDF rendering.
@@ -192,7 +192,7 @@ To enable this output, add the comment:
 
 
 Alternatively you may specify `make4ht` as the default return option
-on the [Site Settings](settings) page.
+on the [Site Settings](settings) page.
 
 
 If using a locally installed TeX system, the same output may be obtained
