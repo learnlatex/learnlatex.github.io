@@ -44,6 +44,15 @@ changes, perhaps as part of an Exercise set at the end of the lesson.
 
 The editor being used is [ACE](https://ace.c9.io/).
 
+You may customise the theme used in the editor (for example using a
+dark theme with light text on a dark background) on the [Site Settings](settings) page.
+A convenient way to experiment with different themes is to to use `control ,` (`Command ,` on Mac)
+hile on any example in the site. This displays a panel which allows you to change all the ACE settings.
+
+The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+
+
+
 #### Three ways to run the example
 
 * Use the Overleaf service
@@ -113,8 +122,7 @@ up-to-date.
 
 ## Choosing the TeX engine
 
-When submitting example documents, by default the
-`pdflatex` engine will be used.
+When submitting example documents, by default the `pdflatex` engine will be used.
 
 You can force the choice of `latex`, `pdflatex`, `xelatex`, `lualatex`,
 `platex` or `uplatex` by using a comment of the form:
@@ -136,6 +144,8 @@ If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
 also used to produce the PDF result from the DVI file that these variants generate.
 Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
 
+If the engine is not specified in a `% !TeX` comment, then `pdflatex` will be used
+unless you have specified a default TeX engine on the [Site Settings](settings) page.
 
 ---
 
@@ -158,6 +168,13 @@ returned, even if the document produces a PDF with
 no errors. This can be specified by using `log` as the final token in
 the comment.
 
+As an alternative to using a `% !TeX` comment, you may specify the
+site default return parameter on the [Site Settings](settings)
+page. The Settings are specific to each browser, so for example you
+may choose to use the default `pdfjs` setting on your mobile device,
+but use `pdf` on your desktop browser to use its default PDF rendering.
+
+
 ---
 
 ## HTML output (make4ht)
@@ -172,6 +189,11 @@ To enable this output, add the comment:
 
 `% !TeX make4ht`
 {: .noedit :}
+
+
+Alternatively you may specify `make4ht` as the default return option
+on the [Site Settings](settings) page.
+
 
 If using a locally installed TeX system, the same output may be obtained
 by executing
