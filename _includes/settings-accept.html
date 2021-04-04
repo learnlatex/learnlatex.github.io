@@ -1,0 +1,7 @@
+
+<input id="accept" type="button" value="{{ include.accept }}" onclick="rlAllowCookies()">
+<input id="delete" type="button" value="{{ include.reset }}" onclick="rlDeleteCookies()">
+<script>
+  document.getElementById("accept").disabled=rlallowcookies;
+  document.getElementById("delete").disabled=!rlallowcookies;
+</script>

@@ -68,6 +68,14 @@
                 class="website-footer-navigation__list-item">
                 <a 
                   class="website-footer-navigation__anchor" 
+                  href="{{ "/" | relative_url | append: page.lang | append: "/" }}privacy"
+                  hreflang="{{ page.lang }}"
+                  >{{ site.data.translations['navigational-elements_privacy'][page.lang] }}</a>
+              </li>
+              <li
+                class="website-footer-navigation__list-item">
+                <a 
+                  class="website-footer-navigation__anchor" 
                   href="{{ site.github.repository_url }}/issues" 
                   hreflang="en"
                   >{{ site.data.translations['navigational-elements_open-an-issue'][page.lang] }}</a>

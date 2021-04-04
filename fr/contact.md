@@ -33,7 +33,7 @@ Vous pouvez également [ouvrir un ticket sur GitHub](https://github.com/learnlat
 
 Si vous avez des remarques concernant la traduction en français
 (coquilles, traduction incomplète&hellip;), n'hésitez pas à envoyer
-un mail à [Jérémy Just](mailto:jeremy@jejust.fr)
+un mail à [Jérémy Just](mailto:jeremy@jejust.fr) 
 ([association GUTenberg](https://www.gutenberg.eu.org/)).
 
 

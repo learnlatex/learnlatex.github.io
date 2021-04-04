@@ -60,6 +60,22 @@
       <li 
         class="primary-navigation__list-item">
         
+        {% if page.url contains '/settings' %}
+          <a 
+            class="primary-navigation__anchor primary-navigation__anchor--active" 
+            href="{{"/" | absolute_url}}{{ page.lang }}/settings"
+            >{{ site.data.translations['navigational-elements_settings'][page.lang] }}</a>
+        {% else %}
+          <a 
+            class="primary-navigation__anchor" 
+            href="{{"/" | absolute_url}}{{ page.lang }}/settings"
+            >{{ site.data.translations['navigational-elements_settings'][page.lang] }}</a>
+        {% endif %}
+      </li>
+      
+      <li 
+        class="primary-navigation__list-item">
+        
         {% if page.url contains '/contact' %}
           <a 
             class="primary-navigation__anchor primary-navigation__anchor--active" 
