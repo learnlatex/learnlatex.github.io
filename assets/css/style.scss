@@ -224,6 +224,12 @@ abbr {
   text-decoration: none;
 }
 
+a > abbr {
+  border-bottom: none;
+  cursor: help;
+  text-decoration: none;
+}
+
 main a:link,
 main a:visited {
   color: var(--color_blue-0);
