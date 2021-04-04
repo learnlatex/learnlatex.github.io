@@ -29,6 +29,5 @@ Nếu bạn lựa chọn biên dịch các ví dụ bằng một dịch vụ onl
 soạn mã sẽ được gửi đến dịch vụ được yêu cầu bằng phương thức https POST và
 tuân theo chính sách bảo mật của dịch vụ đó. Các đường dẫn sau dẫn đến chính sách
 bảo mật của các dịch vụ hiện đang được sử dụng:
-
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
