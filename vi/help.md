@@ -42,6 +42,14 @@ thay đổi nhỏ, ví dụ như để thực hiện các bài tập ở phần 
 Trang web này sử dụng [ACE](https://ace.c9.io) để hiển thị cũng như thực hiện
 các thao tác với các đoạn mã ví dụ.
 
+Bạn có thể thay đổi giao diện của ACE (ví dụ chuyển sang chế độ tối) trong
+[Cài đặt trang](settings). Bạn cũng có thể thử các giao diện khác nhau bằng cách
+dùng `Ctrl` + `,` (`Cmd` + `,` trên Mac) khi đang ở bất cứ ví dụ nào trong trang
+&ndash; nó sẽ mở một bảng cài đặt cho phép ta thử mọi cài đặt của ACE.
+
+Trang GitHub của ACE có một trang khá hữu ích về
+[danh sách các phím tắt](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+
 #### Ba cách biên dịch ví dụ
 
 Có ba cách bạn có thể dùng để chạy phần mã trước hoặc sau khi sửa:
@@ -127,6 +135,9 @@ Nếu `platex` hay `uplatex` được sử dụng, chương trình `dvipdfmx` c�
 để tạo ra tệp PDF từ các tệp DVI mà các trình dịch này xuất ra. Tương tự, nếu
 bạn dùng `latex`, các chương trình `dvips` and `ps2pdf` cũng sẽ được sử dụng.
 
+Nếu không có bất cứ ghi chú dạng `% !TeX` nào, `pdflatex` sẽ được sử dụng trừ
+khi bạn đã yêu cầu một trình biên dịch mặc định khác trong [Cài đặt trang](settings).
+
 ---
 
 ## Chọn cách tệp PDF được hiển thị trong trình duyệt
@@ -145,6 +156,11 @@ Bạn có thể sử dụng `pdfjs` thay cho `pdf` ở ghi chú trên; khi đó 
 sử dụng để hiển thị PDF. Để debugging thuận lợi, bạn có thể cần đến tệp log ngay
 cả khi quá trình biên dịch không có lỗi; bạn có thể dùng `log` thay cho `pdf`
 trong ghi chú để làm việc này.
+
+Thay vì dùng `% !TeX`, bạn cũng có thể dùng cách hiển thị mặc định trong
+[Cài đặt trang](settings). Các cài đặt được lưu riêng cho từng trình duyệt, nên
+bạn có thể chọn `pdfjs` cho trình duyệt trên thiết bị di động nhưng chọn `pdf`
+cho trình duyệt trên máy tính.
 
 ---
 
