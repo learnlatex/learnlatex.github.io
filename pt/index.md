@@ -8,24 +8,22 @@ permalink: /pt/
 
 # Learn LaTeX
 
-<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="heading__introduction">Dê seus primeiros passos com LaTeX, um sistema de preparação de documentos projetado para produzir impressões de alta qualidade.</h2>
 
 <div
   class="text-columns">
   <section>
     <h3 
       class="text-columns__heading"
-      >Introduction</h3>
-    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
-    and because it is not a single program. Our aim is to help you get 
-    started with LaTeX from the basics, installation, to writing code, without 
-    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+      >Introdução</h3>
+    <p>LaTeX pode ser assustador para novos usuários, considerando que <em>não</em> é um processador de texto e um único programa. Nosso objetivo é ajudá-lo a começar a usar LaTeX, desde o básico, partindo da instalação até a escrita de código propriamente dita, sem apresentar <em>tudo</em> de uma vez. <a href="./mission">Veja mais sobre nossa missão &hellip;</a></p>
+
   </section>
   <section>
     <h3
       class="text-columns__heading"
-      >How it works</h3>
-      <p>We have taken 16 of the most important things you will need to know, and made them into short <em>lessons</em> which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run them in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+      >Como funciona</h3>
+	  <p>Nós selecionamos 16 das coisas mais importantes que você precisa saber e as transformamos em <em>lições</em> curtas que não devem demorar muito para serem estudadas. Em cada lição, apresentamos vários exemplos do que você escreveria. Você pode editá-los e executá-los neste website. <a href="./help#examples">Mais sobre exemplos &hellip;</a></p>
   </section>
 </div>
 
@@ -36,7 +34,8 @@ permalink: /pt/
 
 <p
   class="paragraph__toc"
-  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+  >Para cada lição, nós incluímos uma página <b>Mais sobre este tópico</b>. Essas informações adicionais foram disponibilizadas para auxiliá-lo a obter mais detalhes sobre o tópico sendo estudado, mas não impedem o seu progresso caso você não queira aprofundar-se neste momento.</p>
+  
 
 {% include toc-lessons.html prefix="pt/lesson" %}
 
