@@ -41,7 +41,7 @@ permalink: /pt/
 
 <h2
   class="heading__toc"
-  >Additional lessons</h2>
+  >Lições adicionais</h2>
 <ul 
   class="lessons-toc">
   {% include toc-additional-lessons.html prefix="pt/language" %}
