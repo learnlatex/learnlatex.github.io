@@ -23,7 +23,7 @@ permalink: /pt/
     <h3
       class="text-columns__heading"
       >Como funciona</h3>
-	  <p>Nós selecionamos 16 das coisas mais importantes que você precisa saber e as transformamos em <em>lições</em> curtas que não devem demorar muito para serem estudadas. Em cada lição, apresentamos vários exemplos do que você escreveria. Você pode editá-los e executá-los neste website. <a href="./help#examples">Mais sobre exemplos &hellip;</a></p>
+	  <p>Nós selecionamos 16 das coisas mais importantes que você precisa saber e as transformamos em <em>lições</em> curtas que não devem demorar muito para serem estudadas. Em cada lição, apresentamos vários exemplos do que você escreveria. Você pode editá-los e executá-los neste website. <a href="./help#examples">Veja mais sobre exemplos &hellip;</a></p>
   </section>
 </div>
 

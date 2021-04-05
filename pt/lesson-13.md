@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "pt"
 title: "Estruturando documentos longos"
 description: "Esta lição mostra como o LaTeX permite dividir seu código em arquivos menores, mais fáceis de editar, e como isso pode tornar a produção de um documento longo mais fácil e rápido."
-toc-anchor-text: "Structuring o código"
+toc-anchor-text: "Estruturando o código"
 toc-description: "Dividindo o código de forma organizada."
 ---
 
