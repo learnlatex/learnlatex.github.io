@@ -92,3 +92,9 @@ defaults:
     values:
       lang: "mr"
       label: "मराठी"
+  -
+    scope:
+      path: "ca"
+    values:
+      lang: "ca"
+      label: "Català"
