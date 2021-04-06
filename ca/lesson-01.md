@@ -14,7 +14,7 @@ toc-description: "Què és LaTeX i com funciona."
 
 A diferència dels processadors de text habituals, com ara Microsoft Word o LibreOffice Writer, LaTeX no és WYSIWYG (acrònim de 'What You See Is What You Get', 'Allò Que Veus És Allò Que Obtens'). Amb LaTeX es té el text sense format i amb marcadors o etiquetes. Aquestes etiquetes donen informació a LaTeX sobre el significat lògic dels elements del text, de la mateixa manera que ho fa el HTML.
 
-Posem com a exemple l'element `<h2>` que indica una nova secció en un document HTML. De la mateixa manera, LaTeX té també una comanda per fer-ho: `\section`.
+Posem com a exemple l'element `<h2>` que indica una nova secció en un document HTML. De la mateixa manera, LaTeX també té una comanda per fer-ho: `\section`.
 
 ## El procés de treballar amb LaTeX
 
