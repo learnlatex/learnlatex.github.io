@@ -28,4 +28,4 @@ Per als documents simples, només s'haurà de compilar el codi una vegada per ta
 
 ## LaTeX o pdfLaTeX o ...
 
-En la [propera lliçó](lesson-02) veurem que LaTeX no és un simple programa. Per tal de no complicar les coses, ens centrarem en un programa particular de LaTeX, pdfLaTeX, que permet la generació de fitxers PDF. Més endavant, veurem d'altres programes i per a què pot ser interessant el seu ús.
+En la [propera lliçó](lesson-02) veurem que LaTeX no és un simple programa. Per tal de no complicar les coses, ens centrarem en un programa particular de LaTeX, `pdfLaTeX`, que permet la generació de fitxers PDF. Més endavant, veurem d'altres programes i per a què pot ser interessant el seu ús.
