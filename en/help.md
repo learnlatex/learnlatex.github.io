@@ -23,7 +23,7 @@ of packages demonstrating LaTeX use not covered by this course.
 
 ---
 
-## Examples 
+## Examples
 
 ### Running the examples
 
@@ -106,11 +106,12 @@ make to the example are lost if you move off the page.
 
 If you have a TeX system installed locally, then you may copy the
 example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor (Ctrl-A Ctrl-C
+using select all keyboard shortcuts in the editor
+(<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
 in windows for example). This will place the code in your operating system
 clipboard so you can start a blank document using your local
 editor, and paste in the text.
-   
+
 ### Troubleshooting
 
 Our examples are based around using an up-to-date LaTeX installation. They all 
@@ -182,7 +183,7 @@ but use `pdf` on your desktop browser to use its default PDF rendering.
 If using the TeXLive.net system, then an additional return option,
 `make4ht`, may be specified. This returns one or more HTML pages
 in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `latex` processing.
+as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
 
 To enable this output, add the comment:
 
