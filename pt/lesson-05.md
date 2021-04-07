@@ -87,12 +87,12 @@ A _American Mathematical Society_ fornece variantes das classes padrão (`amsart
 e `amsbook`) com um design mais tradicional, mais próximo do que é usado em
 artigos científicos de matemática.
 
-As duas maiores e mais populares classes 'extendidas' são a coleção KOMA-Script
+As duas maiores e mais populares classes 'estendidas' são a coleção KOMA-Script
 e a classe memoir.  KOMA-Script oferece um conjunto de classes que são
 'paralelos' às classes padrão:  `scrartcl`, `scrreprt`, e `scrbook`, enquanto há
 apenas uma classe `memoir` que é como uma extensão de `book`.
 
-Essas classes extendidas têm muitos pontos de personalização, que vamos explorar
+Essas classes estendidas têm muitos pontos de personalização, que vamos explorar
 um pouco em um exercício.  Você pode se perguntar como sabemos quais são esses
 pontos de personalização;  vamos abordar isso
 [em uma lição adiante](lesson-16), mas você pode pular se quiser!

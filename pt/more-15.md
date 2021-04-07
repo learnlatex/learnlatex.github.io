@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Veja mais sobre: Lidando com erros"
+title: "Veja mais sobre: Resolvendo erros"
 description: "Esta lição mostra mais alguns erros comuns no LaTeX e explica sobre cadeias de erros e erros silenciosos."
-toc-anchor-text: "Veja mais sobre: Lidando com erros"
+toc-anchor-text: "Veja mais sobre: Resolvendo erros"
 ---
 
 ## Erros reportados no final de ambientes

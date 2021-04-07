@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Extendendo o LaTeX usando pacotes e definições"
+title: "Estendendo o LaTeX usando pacotes e definições"
 description: "Esta lição mostra como você pode estender o LaTeX de acordo com a sua necessidade e mudar a aparência do document usando diferentes pacotes, e mostra como você pode definir seus próprios comandos."
-toc-anchor-text: "Extendendo o LaTeX"
+toc-anchor-text: "Estendendo o LaTeX"
 toc-description: "Usando pacotes e definições."
 ---
 

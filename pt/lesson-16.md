@@ -9,11 +9,16 @@ toc-description: "Acessando ajuda e documentação."
 
 # Acessando documentação e obtendo ajuda
 
+<span
+  class="summary">Esta lição mostra as principais fontes de documentação para
+  pacotes e software relacionado ao LaTeX, e como você pode buscar ajuda quando
+  estiver com problemas.</span>
+
 Há várias formas de acessar a documentação de um pacote ou classe.
 
 ## `texdoc`
 
-Se você instalou um sistema TeX (_e.g._, TeXLive ou MiKTeX) e incluiu a
+Se você instalou um sistema TeX (_e.g._, TeX Live ou MiKTeX) e incluiu a
 documentação quando instalou, você pode acessá-la localmente usando a ferramenta
 de linha de comando `texdoc`.  Usando:
 

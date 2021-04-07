@@ -29,8 +29,10 @@ padrão todos os arquivos são assumidos ser Unicode (codificação UTF-8) a men
 que seja especificado o contrário.  Embora o `pdflatex` seja limidado a fontes
 de 8 bits, a maioria dos idiomas europeus é suportado.
 
-Escolha de fontes com o `pdflatex` usa o sistema robusto de seleção de fontes do
-LaTeX, e atualmente há muitas fontes próprias para isso em uma distribuição
+## Seleção de fontes
+
+A seleção de fontes com o `pdflatex` usa o sistema robusto de seleção de fontes
+do LaTeX, e atualmente há muitas fontes próprias para isso em uma distribuição
 LaTeX padrão.  Por exemplo, as fontes _TeX Gyre_ são uma coleção de fontes de
 alta qualidade baseadas em fontes populares, como Times, Helvetica, Palatino, e
 outras.  Para carregar essas fontes, basta carregar o pacote apropriado.  Para
