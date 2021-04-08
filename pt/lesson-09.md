@@ -2,14 +2,13 @@
 layout: "lesson"
 lang: "pt"
 title: "Referências cruzadas"
-description: "Essa lição mostra como referenciar elementos numerados em um documento, como figuras, tabelas, e seções."
+description: "Esta lição mostra como referenciar elementos numerados em um documento, como figuras, tabelas, e seções."
 toc-anchor-text: "Referências cruzadas"
 toc-description: "Referenciando figuras, tabelas, etc."
 ---
 
 # Referências cruzadas
 
-## O mecanismo de `\label` e `\ref`
 <span
   class="summary">Esta lição mostra como referenciar elementos numerados em um
   documento, como figuras, tabelas, e seções.</span>
@@ -17,9 +16,12 @@ toc-description: "Referenciando figuras, tabelas, etc."
 Quando você está escrevendo um documento de qualquer comprimento, você vai
 querer referenciar itens numerados, como figuras, tabelas, ou equações.
 Felizmente, o LaTeX consegue numerar automaticamente;  apenas precisamos
-configurar tudo corretamente.  Para que o LaTeX lembre de um ponto no seu
-documento você deve colocar um rótulo (_label_) nesse local, e em outros locais
-você pode referenciar esse rótulo.
+configurar tudo corretamente.
+
+## O mecanismo de `\label` e `\ref`
+
+Para que o LaTeX lembre de um ponto no seu documento você deve colocar um rótulo
+(_label_) nesse local, e em outros locais você pode referenciar esse rótulo.
 
 ```latex
 \documentclass{article}
