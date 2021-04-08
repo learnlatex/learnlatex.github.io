@@ -43,7 +43,7 @@ Package: [`xskak`](https://texdoc.org/pkg/xskak)
 
 ## Poetry
 
-Package: [`memoir`](https://texdoc.org/pkg/memoir)
+Class: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 

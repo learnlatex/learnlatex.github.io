@@ -2,16 +2,23 @@
 layout: "lesson"
 lang: "pt"
 title: "Trocando fontes e usando interpretadores Unicode"
-description: "Esta lição dá contexto sobre como o LaTeX interpreta entrada de texto com Unicode e como isso afeta o que você digita e as fontes que você usa, e como isso muda em interpretadores modernos com suporte a Unicode e fontes OpenType."
+description: "Esta lição dá contexto sobre como o LaTeX interpreta entrada de texto com Unicode e como isso afeta o que você digita e as fontes que você usa.  Aprenda sobre suporte a Unicode e fontes OpenType."
 toc-anchor-text: "Fontes & interpretadores Unicode"
 toc-description: "Selecionando fontes e codificação."
 ---
 
-# Trocando fontes e usando interpretadores Unicode
+# Fontes e interpretadores Unicode
+
+<span
+  class="summary">Esta lição dá contexto sobre como o LaTeX interpreta entrada
+  de texto com Unicode e como isso afeta o que você digita e as fontes que você
+  usa.  Aprenda sobre suporte a Unicode e fontes OpenType.</span>
 
 Quando o TeX e o LaTeX começaram a ser amplamente utilizados eles funcionavam
 apenas com idiomas Europeus, embora houvesse alguma capacidade para usar outros
 alfabetos como o Grego e o Russo.
+
+## Acentos e letras acentuadas
 
 Originalmente, acentos e letras acentuadas eram escritas usando comandos como
 `\c{c}` para 'ç' e `\'e` para 'é'.  Enquanto ainda há pessoas que usam esses
@@ -29,8 +36,10 @@ padrão todos os arquivos são assumidos ser Unicode (codificação UTF-8) a men
 que seja especificado o contrário.  Embora o `pdflatex` seja limidado a fontes
 de 8 bits, a maioria dos idiomas europeus é suportado.
 
-Escolha de fontes com o `pdflatex` usa o sistema robusto de seleção de fontes do
-LaTeX, e atualmente há muitas fontes próprias para isso em uma distribuição
+## Seleção de fontes
+
+A seleção de fontes com o `pdflatex` usa o sistema robusto de seleção de fontes
+do LaTeX, e atualmente há muitas fontes próprias para isso em uma distribuição
 LaTeX padrão.  Por exemplo, as fontes _TeX Gyre_ são uma coleção de fontes de
 alta qualidade baseadas em fontes populares, como Times, Helvetica, Palatino, e
 outras.  Para carregar essas fontes, basta carregar o pacote apropriado.  Para
@@ -72,7 +81,9 @@ Notavelmente, esse método funciona para _qualquer_ fonte OpenType.  Algumas
 fontes disponíveis para o `pdflatex` também estão disponíveis para `xelatex` e
 `lualatex` pelos respectivos pacotes, mas também é possível carregar qualquer
 fonte que você tiver instalada no seu computador usando o `fontspec` como
-mostrado acima. O [LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/)
+mostrado acima.
+
+O [LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/)
 também mostra fontes com formato OpenType disponíveis, então você pode usar o
 catálogo para buscar fontes, assim como a
 [página da CTAN](https://www.ctan.org/topic/font) mencionada acima.
@@ -94,6 +105,8 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
-Quando trocar idiomas, também é importante trocar coisas como padrões de
-hifenização entre outras especificidades que os pacotes `babel` e `polyglossia`
-conseguem fazer de forma robusta.
+<p
+  class="hint">Quando trocar idiomas, também é importante trocar coisas como
+  padrões de hifenização entre outras especificidades que os pacotes
+  <code>babel</code> e <code>polyglossia</code> conseguem fazer de forma
+  robusta.</p>

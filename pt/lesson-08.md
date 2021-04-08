@@ -9,9 +9,12 @@ toc-description: "Princípios básicos de tabelas."
 
 # Tabelas
 
-## Tabelas básicas
+<span
+  class="summary">Esta lição mostra como você pode construir tabelas no LaTeX,
+  influenciar o alinhamento das células, adicionar linhas à tabela, e unir
+  células.</span>
 
-Tabelas no LaTeX são feitas usando o ambiente `tabular`.  Essa lição vai assumir
+Tabelas no LaTeX são feitas usando o ambiente `tabular`.  Esta lição vai assumir
 que você carregou o pacote `array`, que adiciona mais funcionalidades às tabelas
 do LaTeX, e que não é carregado por padrão no LaTeX por motivos históricos.
 Então adicione o seguinte no seu preâmbulo e você estará pronto para a lição:
