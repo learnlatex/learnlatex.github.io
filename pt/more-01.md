@@ -1,17 +1,17 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Veja mais sobre: O que é LaTeX e como funciona?"
+title: "Veja mais sobre: O que é LaTeX e como funciona"
 description: "Esta lição dá mais detalhes sobre a história do LaTeX e outros formatos disponíveis."
-toc-anchor-text: "Veja mais sobre: O que é LaTeX e como funciona?"
+toc-anchor-text: "Veja mais sobre: O Básico de LaTeX"
 ---
 
-O nome "LaTeX" é formado por dois componentes, "La" e "TeX".  A seguir vamos
+O nome 'LaTeX' é formado por dois componentes, 'La' e 'TeX'.  A seguir vamos
 descrever brevemente de onde eles vêm.
 
 O TeX foi inventado pelo professor Donald Knuth, da universidade de Stanford.
-Knuth é conhecido pela série de livros chamada "The Art of Computer Programming"
-(conhecida como "TAOCP").  Em 1973 uma nova edição dos livros era pra ser feita;
+Knuth é conhecido pela série de livros chamada *The Art of Computer Programming*
+(conhecida como TAOCP).  Em 1973 uma nova edição dos livros era pra ser feita;
 essa foi a época em que a indústria tipográfica passou da tipografia
 tradicional com chumbo, à tipografia baseada em fotos.  Donald Knuth não gostou
 da qualidade da impressão, e assim decidiu implementar seu próprio sistema
