@@ -19,7 +19,7 @@ como lhe permite modificar a aparência diretamente.  A maioria das vezes, é
 muito melhor usar métodos que focam na estrutura, pois torna mais fácil
 reutilizar ou alterar a aparência quando necessário.
 
-## Um primeiro exemplo
+## Estrutura e representação visual
 
 Vamos começar com um exemplo contrastando um dos comandos de marcação lógica
 mais comuns no LaTeX, `\emph` (do inglês _emphasize_), que simplesmente deixa
