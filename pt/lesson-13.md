@@ -26,6 +26,10 @@ runlatex.preincludes = {
 </script>
 
 ## Estruturando seu código fonte
+<span
+  class="summary">Esta lição mostra como o LaTeX permite dividir seu código em
+  arquivos menores, mais fáceis de editar, e como isso pode tornar a produção de
+  um documento longo mais fácil e rápido.</span>
 
 Quando você está escrevendo um documento longo, você provavelmente vai querer
 dividir o código fonte em múltiplos arquivos.  Por exemplo, é muito comum ter um

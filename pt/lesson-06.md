@@ -9,6 +9,11 @@ toc-description: "Usando pacotes e definições."
 
 # Extendendo o LaTeX usando pacotes e definições
 
+<span
+  class="summary">Esta lição mostra como você pode estender o LaTeX de acordo
+  com a sua necessidade e mudar a aparência do document usando diferentes
+  pacotes, e mostra como você pode definir seus próprios comandos.</span>
+
 Depois de declarar uma classe, no preâmbulo você pode modificar funcionalidades
 do LaTeX adicionando um ou mais _pacotes_. Estes podem:
 

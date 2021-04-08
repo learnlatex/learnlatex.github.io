@@ -9,6 +9,10 @@ toc-description: "Trabalhando com comportamento inesperado."
 
 # Resolvendo erros
 
+<span
+  class="summary">Esta lição mostra alguns erros comuns em documentos, o que
+  eles significam, e como resolvê-los.</span>
+
 Diferente de um sistema típico de processamento de texto, o LaTeX tem um ciclo
 de Editar/Executar/Visualizar mais próximo a uma linguagem de programação, e
 assim como na programação, usuários podem cometer erros no seu código e será

@@ -9,6 +9,11 @@ toc-description: "Modo e notação matemática."
 
 # Matemática
 
+<span
+  class="summary">Esta lição apresenta o modo matemático do LaTeX e como você
+  pode escrever equações lineares e em exibição, as extensões do pacote
+  `amsmath`, e como mudar a fonte em equações.</span>
+
 ## Modo matemático
 
 Você pode escrever equações no LaTeX usando uma forma lógica, conhecida como

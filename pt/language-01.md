@@ -8,6 +8,11 @@ toc-anchor-text: "LaTeX em português"
 toc-description: "Lição específica para a língua Portuguesa"
 ---
 
+<span
+  class="summary">Esta lição mostra detalhes específicos para escrever textos
+  em português usando o LaTeX, com foco nos padrões de hifenização e nos textos
+  localizados.</span>
+
 Como a língua Portuguesa usa o alfabeto Latino, assim como a língua Inglesa, o
 LaTeX funciona quase corretamente com a língua Portuguesa por padrão; há poucos
 ajustes a fazer.  As únicas coisas que devem ser mudadas para escrever em

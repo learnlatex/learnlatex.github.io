@@ -9,6 +9,11 @@ toc-description: "Estrutura e representação visual."
 
 # Estrutura Lógica
 
+<span
+  class="summary">Esta lição mostra alguns comandos básicos de formatação, e
+  compara-os com formatação semântica usando comandos de secionamento e
+  listas.</span>
+
 O LaTeX possui meios de você focar na estrutura lógica do seu documento, assim
 como lhe permite modificar a aparência diretamente.  A maioria das vezes, é
 muito melhor usar métodos que focam na estrutura, pois torna mais fácil

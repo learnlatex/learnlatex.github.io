@@ -9,6 +9,11 @@ toc-description: "Configurando a aparência geral do documento."
 
 # Usando classes de documentos para influenciar o design
 
+<span
+  class="summary">Esta lição explica o que é uma classe de documento e como ela
+  pode influenciar a aparência de um documento, e lista as principais classes
+  que você vai encontrar em uma distribuição de TeX.</span>
+
 ## O que uma classe de documento faz
 
 Você deve ter percebido que todos os documentos LaTeX que criamos até agora

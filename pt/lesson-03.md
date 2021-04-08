@@ -9,6 +9,11 @@ toc-description: "A estrutura básica de um documento."
 
 # Seu primeiro documento LaTeX
 
+<span
+  class="summary">Esta lição mostra a estrutura básica de um documento LaTeX,
+  e como produzir um PDF com ele, assim como os principais caracteres especiais
+  usados para controlar o LaTeX.</span>
+
 Nosso primeiro documento LaTeX será muito simples: a ideia é lhe mostrar como um
 documento se parece e como processá-lo com sucesso.  Também é a sua primeira
 chance de ver [como usar os exemplos aqui no `learnlatex.org`](help).

@@ -7,6 +7,10 @@ toc-anchor-text: "Exemplos de LaTeX"
 toc-description: "Exemplos para estudo adicional"
 ---
 
+<span
+  class="summary">Esta lição mostra exemplos diversos de outros pacotes
+  populares que não foram apresentados nas lições principais.</span>
+
 Este curso deu uma visão geral das funcionalidades básicas do LaTeX e alguns
 pacotes fundamentais.  O LaTeX conta com uma vasta biblioteca de pacotes de
 extensão e é usado em muitas áreas.  Aqui daremos alguns exemplos, sem qualquer

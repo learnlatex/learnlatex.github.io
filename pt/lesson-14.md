@@ -9,6 +9,11 @@ toc-description: "Selecionando fontes e codificação."
 
 # Trocando fontes e usando interpretadores Unicode
 
+<span
+  class="summary">Esta lição dá contexto sobre como o LaTeX interpreta entrada
+  de texto com Unicode e como isso afeta o que você digita e as fontes que você
+  usa.  Aprenda sobre suporte a Unicode e fontes OpenType.</span>
+
 Quando o TeX e o LaTeX começaram a ser amplamente utilizados eles funcionavam
 apenas com idiomas Europeus, embora houvesse alguma capacidade para usar outros
 alfabetos como o Grego e o Russo.

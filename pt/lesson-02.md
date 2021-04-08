@@ -9,6 +9,11 @@ toc-description: "Sistemas TeX e editores de texto."
 
 # Trabalhando com LaTeX
 
+<span
+  class="summary">Esta lição explica o que é um sistema TeX e quais os mais
+  comuns, lista alguns dos editores de texto comumente utilizados para LaTeX,
+  e os sistemas online que contam também com editores integrados.</span>
+
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação
 que contém 'tudo em um'.  Ao invés disso, há diversos programas que trabalham
 juntos.  Podemos dividi-los em duas coisas que você realmente precisa:

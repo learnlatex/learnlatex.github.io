@@ -10,6 +10,9 @@ toc-description: "Referenciando figuras, tabelas, etc."
 # Referências cruzadas
 
 ## O mecanismo de `\label` e `\ref`
+<span
+  class="summary">Esta lição mostra como referenciar elementos numerados em um
+  documento, como figuras, tabelas, e seções.</span>
 
 Quando você está escrevendo um documento de qualquer comprimento, você vai
 querer referenciar itens numerados, como figuras, tabelas, ou equações.

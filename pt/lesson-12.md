@@ -21,6 +21,11 @@ runlatex.preincludes = {
 </script>
 
 ## Bancos de referências
+<span
+  class="summary">Esta lição mostra o básico sobre bancos de referências e como
+  construir o seu próprio, como usar esse banco de referências no seu documento
+  usando os dois principais métodos disponíveis, e como escolher entre
+  eles.</span>
 
 Para citações bibliográficas, enquanto você pode incluí-las diretamente no seu
 texto, geralmente você vai obter essa informação de um ou mais arquivos
