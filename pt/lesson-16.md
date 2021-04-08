@@ -87,6 +87,8 @@ funcionar (você não estaria perguntando se estivesse), mas significa que você
 fez o seu melhor para deixar o exemplo claro e mínimo (que contém apenas o
 necessário para demonstrar o problema).
 
+### Como criar um _minimal working example_ (MWE)
+
 Como construir um MWE?  Normalmente o mais fácil é começar de:
 
 ```latex
@@ -101,11 +103,34 @@ e adicionar um trecho por vez até que o problema apareça.  Você pode tentar
 'desmembrando' seu arquivo, tirando partes não relacionadas ao problema, mas
 isso pode demorar.
 
-Se você precisar mais texto para mostrar quebras de página ou outros efeitos,
-pacotes como `lipsum` podem ser usados para gerar texto de enchimento enquanto
-o código fonte continua pequeno.
+<p
+  class="hint">Se você precisar mais texto para mostrar quebras de página ou
+  outros efeitos, pacotes como <code>lipsum</code> podem ser usados para gerar
+  texto de enchimento enquanto o código fonte continua pequeno.</p>
+
+### Arquivo log
 
 Uma coisa que é bom que você tenha disponível é o log;  esse arquivo é criado
 pelo LaTeX sempre que você o executa e tem o mesmo nome do seu arquivo principal
-mas com extensão `.log`.  Dependendo da interface do seu computador, você pode
-precisar ativar 'mostrar extensões' para descobrir qual arquivo é o log.
+mas com extensão `.log`.
+
+<p
+  class="hint">Dependendo da interface do seu computador, você pode
+  precisar ativar 'mostrar extensões' para descobrir qual arquivo é o log.</p>
+
+No arquivo log, você sempre pode ver as mensagens de erro completas.  As
+mensagens de erro do LaTeX tentam ser úteis, mas elas não são as mesmas
+mensagens que em processadores de texto.
+
+<p
+  class="hint">Alguns editores também tornam difícil ver o 'texto completo' de
+  um erro, o que pode esconder detalhes importantes.</p>
+
+Se você tiver um problema, usuários experientes de LaTeX frequentemente vão
+pedir uma cópia do seu log para lhe ajudar.
+
+### Indo além
+
+Finalmente, oferecemos uma [galeria de pequenos exemplos](extra-01) mostrando
+uma gama de áreas diferentes que não foram contempladas nessa introdução, e
+diferentes pacotes específicos para essas áreas.
