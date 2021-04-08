@@ -7,7 +7,7 @@ toc-anchor-text: "Estendendo o LaTeX"
 toc-description: "Usando pacotes e definições."
 ---
 
-# Extendendo o LaTeX usando pacotes e definições
+# Estendendo o LaTeX
 
 <span
   class="summary">Esta lição mostra como você pode estender o LaTeX de acordo
