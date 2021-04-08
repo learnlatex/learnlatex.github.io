@@ -4,9 +4,11 @@ lang: "pt"
 title: "Lição específica para a língua Portuguesa"
 description: "Esta lição mostra detalhes específicos de linguagem para escrever textos em Português. O foco é na hifenização e nos textos localizados."
 next: "extra-01"
-toc-anchor-text: "LaTeX em português"
-toc-description: "Lição específica para a língua Portuguesa"
+toc-anchor-text: "LaTeX na Língua Portuguesa"
+toc-description: "Lição específica para a língua Portuguesa."
 ---
+
+# Especificidades para usar o LaTeX em textos em Português
 
 <span
   class="summary">Esta lição mostra detalhes específicos para escrever textos
