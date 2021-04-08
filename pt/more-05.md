@@ -2,8 +2,8 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Usando classes de documentos para influenciar o design"
-description: "Esta lição dá mais informações sobre classes de documento de aplicação especializada para o LaTeX."
-toc-anchor-text: "Veja mais sobre: Usando classes de documentos para influenciar o design"
+description: "Esta lição explica o que é uma classe de documento e como ela pode influenciar a aparência de um documento, e lista as principais classes que você vai encontrar em uma distribuição de TeX."
+toc-anchor-text: "Veja mais sobre: Classes de Documento"
 ---
 
 ## Classes específicas de revistas
@@ -13,7 +13,7 @@ Estas geralmente configuram a aparência do documento para ser similar ao artigo
 publicado, embora isso dependa da fonte utilizada, etc.  Se há uma classe
 disponível, ela é normalmente fornecida diretamente pelo escritório editorial,
 que também deve fornecer detalhes sobre quais recursos a classe tem.  Muitas
-também estão disponíveis na CTAN e em distribuições TeX.
+também estão disponíveis na [CTAN](https://ctan.org) e em distribuições TeX.
 
 ## Classes para apresentações
 
@@ -29,11 +29,13 @@ funciona:
 \usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{frame}{O primeiro quadro}
+\begin{frame}
+  \frametitle{O primeiro quadro}
   Algum texto
 \end{frame}
 
-\begin{frame}{O segundo quadro}
+\begin{frame}
+  \frametitle{O segundo quadro}
   Mais texto
   \begin{itemize}
     \item<1-> Primeiro item
