@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Trocando fontes e usando interpretadores Unicode"
 description: "Esta lição mostra um exemplo básico em Lua para usuários que querem escrever código em Lua no seu documento."
-toc-anchor-text: "Veja mais sobre: Trocando fontes e usando interpretadores Unicode"
+toc-anchor-text: "Veja mais sobre: Fontes & interpretadores Unicode"
 ---
 
 ## Lua
