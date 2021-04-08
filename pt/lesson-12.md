@@ -20,7 +20,6 @@ runlatex.preincludes = {
 }
 </script>
 
-## Bancos de referências
 <span
   class="summary">Esta lição mostra o básico sobre bancos de referências e como
   construir o seu próprio, como usar esse banco de referências no seu documento
@@ -32,6 +31,8 @@ texto, geralmente você vai obter essa informação de um ou mais arquivos
 externos.  Tal arquivo é um banco de referências, contendo a informação em um
 formato fácil de ser processado.  Usar um ou mais bancos de referências lhe
 permite reutilizar informações e evitar formatação manual.
+
+## Bancos de referências
 
 Bancos de referências são normalmente chamados de 'arquivos BibTeX' e tem a
 extensão `.bib`.  Eles contém um ou mais registros, um para cada referência, e
@@ -252,7 +253,7 @@ preferir usar o `biblatex`.
 Tente ambos os exemplos com `natbib` e `biblatex`.  Com o `natbib` você vai
 precisar executar o LaTeX, o BibTeX, LaTeX, e LaTeX novamente;  com o
 `biblatex` você executa LaTeX, o Biber, e LaTeX.  Você vai precisar descobrir
-como fazer isso no seu editor de escolha, ou tente no Overleaf ou neste site.
+como fazer isso no seu editor de escolha, ou tente no Overleaf ou no TeXLive.net.
 
 Veja o que acontece quando você cria novos registros no banco de referências e
 adiciona novas citações.  Adicione citações que não existem no banco de
