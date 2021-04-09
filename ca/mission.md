@@ -2,7 +2,7 @@
 layout: "page"
 lang: "en"
 title: Mission
-permalink: /en/mission
+permalink: /ca/mission
 ---
 
 # Learn LaTeX Mission

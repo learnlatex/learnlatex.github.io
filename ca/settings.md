@@ -2,7 +2,7 @@
 layout: "page"
 lang: "en"
 title: Site Settings
-permalink: /en/settings
+permalink: /ca/settings
 ---
 # Site Settings (User Preferences)
 
