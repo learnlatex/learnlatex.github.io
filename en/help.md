@@ -181,7 +181,7 @@ but use `pdf` on your desktop browser to use its default PDF rendering.
 
 ## HTML output (make4ht or LaTeXML)
 
-If using the TeXLive.net system, then an additional return options,
+If using the TeXLive.net system, then additional return options,
 `make4ht`, or `LaTeXML` may be specified. These return one or more HTML pages
 in the frame within the page. It may be specified at the same time
 as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
@@ -206,7 +206,9 @@ on the [Site Settings](settings) page.
 If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
 by executing
 
-`make4ht  document.tex "learnlatex4ht,2,mathjax,svg"`
+```
+make4ht  document.tex "learnlatex4ht,2,mathjax,svg"
+```
 {: .noedit :}
 
 with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
