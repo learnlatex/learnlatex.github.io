@@ -194,6 +194,7 @@ To enable this output, add one of the the comments:
 
 
 or
+
 `% !TeX LaTeXML`
 {: .noedit :}
 
