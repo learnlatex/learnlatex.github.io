@@ -205,7 +205,7 @@ on the [Site Settings](settings) page.
 If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
 by executing
 
-`make4ht  document.tex "2,mathjax"`
+`make4ht  document.tex "learnlatex4ht,2,mathjax,svg"`
 {: .noedit :}
 
 with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
@@ -230,9 +230,9 @@ Many other LaTeXML configurations are possible,
 
 ---
 
-[^1]: <small>Note that during development of the site we have also used 
+[^1]: Note that during development of the site we have also used 
       [LaTeX.Online](https://latexonline.cc/) and
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
       and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.</small>
+      the examples on this site to be available at an early stage.
 
