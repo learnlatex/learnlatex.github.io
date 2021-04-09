@@ -11,7 +11,8 @@ permalink: /en/help
 
 ## Navigating the site
 
-The course consists of 16 core lessons that can be reached from the [table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+The course consists of 16 core lessons that can be reached from the
+[table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
 
 Each lesson has a link to one associated lesson on the same subject
 that goes into greater depth. It should be possible to work through
@@ -178,25 +179,30 @@ but use `pdf` on your desktop browser to use its default PDF rendering.
 
 ---
 
-## HTML output (make4ht)
+## HTML output (make4ht or LaTeXML)
 
-If using the TeXLive.net system, then an additional return option,
-`make4ht`, may be specified. This returns one or more HTML pages
+If using the TeXLive.net system, then an additional return options,
+`make4ht`, or `LaTeXML` may be specified. These return one or more HTML pages
 in the frame within the page. It may be specified at the same time
 as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
 
-To enable this output, add the comment:
+To enable this output, add one of the the comments:
 
 
 `% !TeX make4ht`
 {: .noedit :}
 
 
-Alternatively you may specify `make4ht` as the default return option
+or
+`% !TeX LaTeXML`
+{: .noedit :}
+
+
+Alternatively you may specify `make4ht` or `LaTeXML` as the default return option
 on the [Site Settings](settings) page.
 
 
-If using a locally installed TeX system, the same output may be obtained
+If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
 by executing
 
 `make4ht  document.tex "2,mathjax"`
@@ -207,11 +213,26 @@ with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
 When running locally, other configurations would be possible. See the [make4ht
 manual](https://texdoc.org/pkg/make4ht).
 
+
+For `LaTeXML` to run locally you would need to install LaTeXML (it is not part of TeXLive or MikTeX)
+and use
+
+```
+latexml document.tex > document.xml
+latexmlpost --format=html5 \
+   --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
+   --destination=document.html" document.tex
+```
+{: .noedit :}
+
+Many other LaTeXML configurations are possible,
+[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+
 ---
 
-[^1]: Note that during development of the site we have also used 
+[^1]: <small>Note that during development of the site we have also used 
       [LaTeX.Online](https://latexonline.cc/) and
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
       and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.
+      the examples on this site to be available at an early stage.</small>
 
