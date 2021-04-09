@@ -214,7 +214,7 @@ When running locally, other configurations would be possible. See the [make4ht
 manual](https://texdoc.org/pkg/make4ht).
 
 
-For `LaTeXML` to run locally you would need to install LaTeXML (it is not part of TeXLive or MikTeX)
+For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeXLive or MikTeX)
 and use
 
 ```
