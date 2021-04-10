@@ -186,7 +186,7 @@ If using the TeXLive.net system, then additional return options,
 in the frame within the page. It may be specified at the same time
 as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
 
-To enable this output, add one of the the comments:
+To enable this output, add a comment of the form:
 
 
 ```
@@ -233,6 +233,8 @@ Many other LaTeXML configurations are possible,
 
 
 The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
+The current version can be seen at the
+[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 
 ---
