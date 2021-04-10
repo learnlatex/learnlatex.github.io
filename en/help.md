@@ -179,27 +179,27 @@ but use `pdf` on your desktop browser to use its default PDF rendering.
 
 ---
 
-## HTML output (make4ht or LaTeXML)
+## HTML output (make4ht, LaTeXML, lwarp)
 
 If using the TeXLive.net system, then additional return options,
-`make4ht`, or `LaTeXML` may be specified. These return one or more HTML pages
+`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
 in the frame within the page. It may be specified at the same time
 as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
 
 To enable this output, add one of the the comments:
 
 
-`% !TeX make4ht`
+```
+% !TeX make4ht
+```
 {: .noedit :}
 
 
-or
-
-`% !TeX LaTeXML`
-{: .noedit :}
+Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
 
 
-Alternatively you may specify `make4ht` or `LaTeXML` as the default return option
+
+Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
 on the [Site Settings](settings) page.
 
 
@@ -207,7 +207,7 @@ If using a locally installed TeX system, the same output as the `make4ht` option
 by executing
 
 ```
-make4ht  document.tex "learnlatex4ht,2,mathjax,svg"
+make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
@@ -217,7 +217,7 @@ When running locally, other configurations would be possible. See the [make4ht
 manual](https://texdoc.org/pkg/make4ht).
 
 
-For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeXLive or MikTeX)
+For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
 and use
 
 ```
@@ -230,6 +230,10 @@ latexmlpost --format=html5 \
 
 Many other LaTeXML configurations are possible,
 [as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+
+
+The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
+
 
 ---
 
