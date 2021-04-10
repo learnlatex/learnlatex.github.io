@@ -20,9 +20,9 @@ If you are using a local LaTeX installation, in your editor create a new file
 called `first.tex`, and either copy–paste the text below or type it in.
 
 If you are using the online system, you can just click on the ‘Run at TeXLive.net’
-or ‘Open in Overleaf’ buttons in the example to try it out! 
+or ‘Open in Overleaf’ buttons in the example to try it out!
 
-<p 
+<p
   class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
 
 ```latex
@@ -44,6 +44,9 @@ number; LaTeX adds that automatically.
 View the output `first.pdf` with whatever program you prefer for PDF viewing.
 Looks great; congratulations!
 
+If you want to get HTML rather than PDF output, take a look at the
+[help](./help) for how you can do that.
+
 ## Handling errors
 
 Errors happen.
@@ -63,7 +66,7 @@ doing; this is a text file ending in `.log`. You can always see the full  error
 messages there, and if you have a problem, expert LaTeX users will often ask for a
 copy of your log file.
 
-<p 
+<p
   class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
 
 ## What you've got
