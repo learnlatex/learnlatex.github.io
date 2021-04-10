@@ -165,31 +165,31 @@ cho trình duyệt trên máy tính.
 
 ---
 
-## Xuất ra HTML (make4ht hoặc LaTeXML)
+## Xuất ra HTML (make4ht, LaTeXML, lwarp)
 
 Nếu bạn sử dụng TeXLive.net, bạn cũng có thể yêu cầu xuất ra dạng HTML thay vì
 PDF. Điều đó được thực hiện bằng việc sử dụng một trong các lựa chọn xuất
-`make4ht` hoặc `LaTeXML` (bạn vẫn có thể dùng lựa chọn này cùng lúc với lựa chọn
-trình biên dịch như `xelatex` hay `pdflatex`).
+`make4ht`, `LaTeXML` hoặc `lwarp` (bạn vẫn có thể dùng lựa chọn này cùng lúc với
+lựa chọn trình biên dịch như `xelatex` hay `pdflatex`).
 
-Để có được output như vậy, thêm một trong hai dòng chú thích sau:
+Để có được output như vậy, thêm dòng chú thích như sau vào đoạn mã:
 
-`% !TeX make4ht`
+```
+% !TeX <lựa chọn xuất>
+```
 {: .noedit :}
 
-hoặc
+Thay `<lựa chọn xuất>` bằng `make4ht`, `LaTeXML` hoặc `lwarp` để sử dụng lựa
+chọn xuất tương ứng.
 
-`% !TeX LaTeXML`
-{: .noedit :}
-
-Ngoài cách này, bạn cũng có thể vào [Cài đặt trang](settings) để đặt `make4ht`
-hoặc `LaTeXML` làm cách thức xuất mặc định.
+Ngoài cách này, bạn cũng có thể vào [Cài đặt trang](settings) để đặt `make4ht`,
+`LaTeXML` hoặc `lwarp` làm cách thức xuất mặc định.
 
 Nếu bạn đang sử dụng một hệ thống TeX được cài đặt sẵn trong máy, bạn cũng có
 thể xuất ra HTML với `make4ht` bằng câu lệnh terminal dưới đây
 
 ```
-make4ht  document.tex "learnlatex4ht,2,mathjax,svg"
+make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
@@ -213,6 +213,9 @@ latexmlpost --format=html5 \
 
 Các loại tùy biến LaTeXML cũng có thể được sử dụng, xem thêm tại
 [hướng dẫn sử dụng LaTeXML](https://dlmf.nist.gov/LaTeXML/manual/).
+
+Các tùy biến của `lwarp` không được nêu ở đây, vì nó vẫn đang trong giai đoạn
+thử nghiệm.
 
 ---
 
