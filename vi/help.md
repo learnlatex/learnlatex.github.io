@@ -165,25 +165,32 @@ cho trình duyệt trên máy tính.
 
 ---
 
-## Xuất ra HTML (make4ht)
+## Xuất ra HTML (make4ht hoặc LaTeXML)
 
 Nếu bạn sử dụng TeXLive.net, bạn cũng có thể yêu cầu xuất ra dạng HTML thay vì
-PDF. Điều đó được thực hiện bằng việc sử dụng lựa chọn xuất `make4ht` (bạn vẫn
-có thể dùng lựa chọn này cùng lúc với lựa chọn trình biên dịch như `xelatex` hay
-`pdflatex`).
+PDF. Điều đó được thực hiện bằng việc sử dụng một trong các lựa chọn xuất
+`make4ht` hoặc `LaTeXML` (bạn vẫn có thể dùng lựa chọn này cùng lúc với lựa chọn
+trình biên dịch như `xelatex` hay `pdflatex`).
 
-Để có được output như vậy, thêm dòng chú thích sau:
+Để có được output như vậy, thêm một trong hai dòng chú thích sau:
 
 `% !TeX make4ht`
 {: .noedit :}
 
+hoặc
+
+`% !TeX LaTeXML`
+{: .noedit :}
+
 Ngoài cách này, bạn cũng có thể vào [Cài đặt trang](settings) để đặt `make4ht`
-làm cách thức xuất mặc định.
+hoặc `LaTeXML` làm cách thức xuất mặc định.
 
 Nếu bạn đang sử dụng một hệ thống TeX được cài đặt sẵn trong máy, bạn cũng có
-thể xuất ra HTML bằng câu lệnh terminal
+thể xuất ra HTML với `make4ht` bằng câu lệnh terminal dưới đây
 
-`make4ht  document.tex "2,mathjax"`
+```
+make4ht  document.tex "learnlatex4ht,2,mathjax,svg"
+```
 {: .noedit :}
 
 với argument `-x` hoặc `-l` nếu bạn muốn dùng XeLaTeX hoặc LuaLaTeX tương ứng.
@@ -191,6 +198,21 @@ với argument `-x` hoặc `-l` nếu bạn muốn dùng XeLaTeX hoặc LuaLaTeX
 Nếu bạn chạy `make4ht` bằng hệ thống TeX cài sẵn, bạn có thể thực hiện nhiều loại
 tùy biến khác nhau. Đọc thêm ở
 [hướng dẫn sử dụng `make4ht`](https://texdoc.org/pkg/make4ht).
+
+Đối với `LaTeXML`, nếu bạn cần dùng nó bằng hệ thống TeX trên máy của mình, bạn
+cần cài đặt LaTeXML riêng (nó không đi cùng TeX Live hay MiKTeX). Sau đó dùng
+lệnh terminal sau:
+
+```
+latexml document.tex > document.xml
+latexmlpost --format=html5 \
+  --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
+  --destination=document.html" document.tex
+```
+{: .noedit :}
+
+Các loại tùy biến LaTeXML cũng có thể được sử dụng, xem thêm tại
+[hướng dẫn sử dụng LaTeXML](https://dlmf.nist.gov/LaTeXML/manual/).
 
 ---
 
