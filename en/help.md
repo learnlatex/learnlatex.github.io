@@ -182,24 +182,24 @@ but use `pdf` on your desktop browser to use its default PDF rendering.
 ## HTML output (make4ht, LaTeXML, lwarp)
 
 If using the TeXLive.net system, then additional return options,
-`make4ht`, or `LaTeXML` may be specified. These return one or more HTML pages
+`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
 in the frame within the page. It may be specified at the same time
 as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
 
 To enable this output, add one of the the comments:
 
 
-`% !TeX make4ht`
+```
+% !TeX make4ht
+```
 {: .noedit :}
 
 
-or
-
-`% !TeX LaTeXML`
-{: .noedit :}
+Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
 
 
-Alternatively you may specify `make4ht` or `LaTeXML` as the default return option
+
+Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
 on the [Site Settings](settings) page.
 
 
