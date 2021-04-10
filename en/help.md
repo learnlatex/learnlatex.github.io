@@ -207,7 +207,7 @@ If using a locally installed TeX system, the same output as the `make4ht` option
 by executing
 
 ```
-make4ht  document.tex "learnlatex4ht,2,mathjax,svg"
+make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
