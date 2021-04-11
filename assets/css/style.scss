@@ -987,9 +987,11 @@ pre {
   box-shadow: inset 0 0.125rem 0.125rem 0 rgba(50, 50, 50, 0.5);
   overflow: auto;
   padding: 0 .4rem;
-  font-family: var(--font_default-mono-regular);
-  font-size: .8rem;
   background-color: #F5F5F5;
+  code {
+    font-family: var(--font_default-mono-regular);
+    font-size: .8rem;
+  }
 }
 
 
