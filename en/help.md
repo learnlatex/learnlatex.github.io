@@ -78,9 +78,8 @@ project with the code. You may then edit it in
 Overleaf which will simultaneously run LaTeX on your code showing
 the resulting output or error log.
 
-The editing features in Overleaf are far more extensive than on this
-site, and you may save your project in your Overleaf account and
-return to it later.
+Unlike documents processed at TeXLive.net, you may save your project
+in your Overleaf account and return to it later.
 
 ##### Use the TeXLive.net service
 
