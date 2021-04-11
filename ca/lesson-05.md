@@ -1,60 +1,48 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Using document classes to influence design"
-description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
-toc-anchor-text: "Document classes"
-toc-description: "Setting the general document layout."
+lang: "ca"
+title: "Utilitzant els tipus de document per a canviar el disseny"
+description: "Aquesta lliçó explica què és un tipus de document (_class_ en anglès) y com influeix en la seva apariència. Es citen també els principals tipus de documents disponibles en la distribució de TeX."
+toc-anchor-text: "Tipus de document"
+toc-description: "Configurant l'aparença general del document"
 ---
 
-# Document classes
+# Utilitzant els tipus de document per a canviar el disseny
 
 <span
-  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
+  class="summary">Aquesta lliçó explica què és un tipus de document (_class_ en anglès) y com influeix en la seva apariència. Es citen també els principals tipus de documents disponibles en la distribució de TeX.</span>
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
+Segurament te n'hauràs adonat que tots els documents LaTeX que hem creat fins al moment començaven amb la línia `\documentclass`, i que de moment l'opció `\documentclass{article}` ha estat la més habitual. (En la [lliçó anterior](lesson-04) vam provar l'opció
+`\documentclass{report}` per fer proves amb la comanda `\chapter`). Aquesta línia és obligatòria en tots els documents LaTeX, i quasi sempre serà la primera línia que inclouràs.
 
-## What a document class does
+## Què és un tipus de document
 
-The document class sets up the general layout of the document, for example
+El tipus de document elegit configura la disposició i el disseny del document, per exemple
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
+- configura marges, fonts, espaiat, etc.
+- si la secció capítol està disponible,
+- si el títol ha d'estar en una pàgina a part.
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+Els tipus de document poden també afegir noves comandes de forma més general; això és important per a casos especials com ara crear les pàgines d'una presentació.
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+La línia de tipus de document pot utilitzar també _global options_: opcions que s'apliquen a tot el document. Aquestes opcions s'escriuen en claudàtors: `\documentclass[<options>]{<name>}`. Aquesta sintaxi, amb informació opcional que es proporciona en els claudàtors, s'utilitza en moltes comandes LaTeX.
 
-## The base classes
+## Els tipus de documents bàsics
 
-LaTeX is supplied with a set of standard classes, all of which look similar
-but with some variations:
+LaTeX proporciona un conjunt de tipus estàndard, i tots ells tenen una aparença similar amb algunes variacions:
 
 - `article`  
-  short documents without chapters
+  documents curts sense capítols
 - `report`  
-  longer documents with chapters, single-sided printing
+  documents més llargs amb capítols, per a ser impressos en una sola cara
 - `book`  
-  longer documents with chapters, double-sided printing, with front- and
-  back-matter (for example an index)
+  documents més llargs amb capítols, per a ser impressos a dues cares, amb materials inicial i final (com per exemple un index)
 - `letter`  
-  correspondence with no sections
+  cartes sense seccions
 - `slides`  
-  for presentations (but see below)
+  per fer presentacions (veure més avall)
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+Els tipus `article`, `report` i `book` tenen una disponibilitat de comandes molt similar, com em vist. Quan escrivim una `carta`, les comandes disponibles són una mica diferents.
 
 ```latex
 \documentclass{letter}
@@ -74,48 +62,27 @@ The text goes Here
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialized commands.
+Fixa't com s'utilitza ``\\`` per a separar les línies de l'adreça; Estudiarem el salt de línia [una mica més endavant](lesson-11). També fixa't com el tipus `letter` crea un nou entorn per a cada carta i té comandes especials.
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+Els tipus estàndard `article`, `report` i `book` prenen les opcions `10pt`, `11pt` i `12pt` per definir el tamany de la font, i `twocolumn` per fer un document a dues columnes.
 
-## Function-rich classes
+## Tipus de documents enriquits
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
+Els tipus principals són molt estables, però això vol dir també que són una mica conservadors tant en el disseny com en les comandes disponibles. Amb el temps, s'han anat escrivint un número considerable de tipus potents, que permeten canviar el disseny sense haver de fer-ho manualment (ho explicarem [una mica més endavant](lesson-11)).
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+La American Mathematical Society proporciona variants dels tipus estàndard (`amsart`, `amsbook`) amb un disseny similar al que utilitzen les publicacions i revistes matemàtiques.
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt`, `scrbook`, and `scrlttr2`, while there is
-a single `memoir` class that is most like an extension of `book`.
+Els tipus 'extesos' més populars i més importants són el conjunt KOMA-Script i el tipus 'memoir'. El KOMA-Script proporciona un conjunt de tipus amb cert paral·lelisme als estàndard: `scrartcl`, `scrreprt`, `scrbook`, i `scrlttr2`, mentre que el tipus `memoir` només proporciona un tipus que s'assembla a una extensió de `book`.
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-16), but you can always
-jump ahead!
+Aquests tipus extesos tenen moltes eines i possibilitats de personalització, que explorarem una mica en un exercici. Et pots preguntar com sabrem quin tipus d'eines i possibilitats proporcionen; en parlament [en una propera lliçó](lesson-16), però si vols ja hi pots anar!
 
-## Presentations
+## Presentacions
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+El tipus de document `slides` va ser desenvolupat per fer presentacions de transparències els anys 1980s, i així doncs no tenen possibilitat de crear presentacions basades en PDF. Hi ha altres tipus més moderns que sí que ho permeten fer: són una mica especialitzades en comparació als documents LaTeX més generals, així que en parlem [en la informació addicional de la lliçó](more-05).
 
-## Exercises
+## Exercicis
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+Explora com canvia l'aparença i disseny del document quan canvies el tipus de document entre els estàndars, el KOMA i el `memoir`.
 
 ```latex
 \documentclass{article} % Change the class here
@@ -133,10 +100,9 @@ document have two columns.
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
+Afegeix l'opció de tipus `twocolumn` i observa com canvia el disseny.
 
-Change the `\section` above for `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+Canvia la `\section` per `\chapter` i observa com afecta les següents opcions de tipus quan utilitzes el tipus `scrreprt`.
 
 - `chapterprefix`
 - `headings=small`

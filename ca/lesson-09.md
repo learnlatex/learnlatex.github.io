@@ -1,25 +1,22 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Cross-referencing"
-description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
-toc-anchor-text: "Cross-referencing"
-toc-description: "Refering to figures, tables, etc."
+lang: "ca"
+title: "Referències creuades"
+description: "Aquesta lliçó explica com fer referència a elements numerats dins d'un document, com ara figures, taules i seccions."
+toc-anchor-text: "Referències creuades"
+toc-description: "Fer referència a figures, taules, etc."
 ---
 
-# Cross-referencing
+# Referències creuades
 
 <span
-  class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>
+  class="summary">Aquesta lliçó explica com fer referència a elements numerats dins d'un document, com ara figures, taules i seccions.</span>
 
-When you are writing a document of any length, you'll want to refer to numbered
-items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. 
+Quan estàs escribint un document, no importa el tamany, pots necessitar de fer referència a elements numerats com ara fiquers, taules o equacions. Sortosament LaTeX ho fa automàticament. Només cal configurar-ho bé. 
 
-## The `\label` and `\ref` mechanism
+## El funcionament de `\label` i `\ref`
 
-To have LaTeX remember a spot in your document you have to label it, and then 
-in other places, you refer to it.
+Per fer que LaTeX recordi un punt del teu document has d'etiquetar-lo, i aleshores en podràs fer referència des d'altres posicions del document.
 
 ```latex
 \documentclass{article}
@@ -48,51 +45,23 @@ In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
 \end{document}
 ```
 
-There are two `\label{...}` commands, one after the subsection
-and one inside the equation environment.
-They are associated with the last sentence's `\ref{...}` commands.
-When you run LaTeX, it saves information about the labels to an auxiliary file.
-For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
-so it saves the subsection's number.
-For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for that equation.
-When you ask for the reference, LaTeX gets it from the auxiliary file.
+Hi ha dues comandes `\label{...}`, una després de la subsecció i una altra dins de l'entorn de l'equació. Estan associades amb la comanda `\ref{...}` de la última frase. Quan executes LaTeX es guarda informació sobre les etiquetes en un fitxer auxiliar. Amb la comanda `\label{subsec:labelone}`, LaTeX sap que es correspon amb una subsecció i per tant es guarda el número de subsecció. Amb `\label{eq:labeltwo}`, LaTeX sap que l'entorn d'interès més proper és una equació, i es guarda la informació d'aquesta equació. Quan es demana per la referència, LaTeX la sap extreure del fitxer auxiliar.
 
-The `subsec:` and `eq:` aren't used by LaTeX;
-rather, it just keeps track of what it has most
-recently processed.
-But when you are writing these help you remember what the label
-is about.
+Els elements `subsec:` i `eq:` no s'utilitzen a LaTeX; més aviat, LaTeX guarda una traça del que s'ha processat més recentment. Però quan estiguis escribint, això et pot ajudar a recordar a què fa referència cada etiqueta
 
-You may see references that show in an output PDF
-as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work,
-the first time that you compile a document the label has not
-yet been saved.
-Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX several times anyway,
-so in practice this is not a bother.)
+Pot ser que vegis referències que es mostren, en el PDF de sortida, com un doble signe d'interrogació i en negreta, **??**. L'explicació d'això s'ha de cercar en el funcionament del fitxer auxiliar, i és que la primera vegada que es compila el document l'etiqueta encara no s'ha guardat. Executa LaTeX una vegada més i veuràs que tot s'arregla (normalment executaràs LaTeX diverses vegades mentre estiguis editant el document, i així que això no serà cap problema).
 
-Notice the tie (`~`) characters before the references.
-You don't want a line break between `subsection` and its number, or
-between `equation` and its number.
-Putting in a tie means LaTeX won't break the line there.
+Fixa't en els caràcters (`~`) abans de les referències. Ningú vol un salt de línia entre la `subsecció` i el seu número, o entre l'`equació` i el seu número. Posar aquesta marca significa que LaTeX no farà un salt de línia.
 
-## Where to put `\label`
+## On posar un `\label`
 
-The `\label` command always refers to the previous numbered entity:
-a section, an equation, a float, etc. That means that `\label` always has to
-come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float environment.
+La comanda `\label` sempre fa referència a l'última entitat que li hem posat número: una secció, una equació, un objecte flotant, etc. Això significa que `\label` sempre ha d'anar _després_ de l'objecte al qual vols fer referència. En particular, quan crees objectes flotants, el `\label` ha d'anar _després_ (o millor, dins), la comanda `\caption`, però sempre dins de l'entorn de l'objecte flotant.
 
-## Exercises
+## Exercicis
 
-Try adding new numbered parts (sections, subsections, enumerated lists) to
-the test document and finding out how many runs are needed to make `\label`
-commands work.
+Prova d'afegir parts numerades (seccions, subseccions, llistes numerades) al document que estem editant i mira quantes vegades hem de compilar el document per tal de què la comanda `\label` funcioni..
 
-Add some floats and see what happens when you put `\label` _before_ the
-`\caption` instead of after; can you predict the result?
+Afegeix alguns objectes flotants i mira què passa quan poses el `\label` _abans_ del
+`\caption` en comptes de fer-ho després; pots predir el resultat?
 
-What happens if you put a `\label` for an equation _after_ the `\end{equation}`?
+Què passa si poses el `\label` d'una equació _després_ de `\end{equation}`?

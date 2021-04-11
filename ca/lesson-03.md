@@ -1,29 +1,25 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Basic LaTeX document structure"
-description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
+lang: "ca"
+title: "Estructura bàsica d'un document LaTeX"
+description: "En aquesta lliçó s'explica l'estructura bàsica d'un document LaTeX, i com generar el fitxer PDF resultant, així com els principals caràcters especials utilitzats per controlar LaTeX."
+toc-anchor-text: "Estructura del document"
+toc-description: "L'estructura bàsic a d'un document."
 ---
 
-# LaTeX document structure
+# Estructura d'un document LaTeX
 
 <span
-  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+  class="summary">Aquesta lliçó explica l'estructura bàsica d'un document LaTeX, i com generar el fitxer PDF resultant, així com els principals caràcters especials utilitzats per controlar LaTeX.</span>
 
-Your first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to see [how to use the examples](help) here on `learnlatex.org`.
+El teu primer document LaTeX el farem molt simple: la idea és ensenyar-te quina forma té un document font i com escriure'l correctament. També serà la teva primera oportunitat per [com utilitzar els exemples](help) aquí a `learnlatex.org`.
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
+Si estàs utilitzant una instal·lació local de LaTeX, amb el teu editor crea un nou fitxer anomenat `first.tex`, i fes un copy-paste del codi que se't proporciona a continuació, o bé pica'l.
 
-If you are using the online system, you can just click on the ‘Run at TeXLive.net’
-or ‘Open in Overleaf’ buttons in the example to try it out! 
+Si estàs utilitzant un sistema online, senzillament clica a ‘Obre a Overleaf’ per tal de provar-lo!
 
 <p 
-  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+  class="hint">Et suggerim de què provis les opcions online encara que hagis configurat LaTeX localment; aquesta és una bona oportunitat per veure com funcionen les diferents opcions.</p>
 
 ```latex
 \documentclass{article}
@@ -36,64 +32,34 @@ This is a first document.
 \end{document}
 ```
 
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+Guarda el fitxer i converteix-lo a un document PDF; si estàs utilitzant una instal·lació local de LaTeX, l'opció que hauràs de prémer dependrà de l'editor que hagis triat. Hauràs d'obtenir un fitxer PDF que conté el text anterior i també el número de pàgina; LaTeX l'ha afegit automàticament.
 
-View the output `first.pdf` with whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+Visualitza la sortida `first.pdf` amb el visor de PDFs que prefereixis. Sembla fantàstic! Per molts anys!
 
-## Handling errors
+## Gestionar els errors
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+Els errors sovintegen. Comprova que has entrat cada línia del text anterior tal com està escrit. A vegades petits canvis en l'entrada donen lloc a grans canvis en el resultat, i fins i tot el document no funcionarà, no compilarà. Si no te'n surts, esborra tot el document i torna-ho a provar des del principi.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+Si la teva compilació acaba amb un signe d'interrogació pots sortir teclejant `x` i `<Enter>`.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+Els missatges d'error de LaTeX intenten ser d'ajuda, però no són els mateixos missatges que pots trobar en un processador de textos. Altres editors fan que sigui difícil veure el missatge complet de l'error, i podrien amagar la informació rellevant de l'error. LaTeX sempre crea un log d'allò que està fent; aquest és un fitxer amb l'extensió `.log`. Allà hi podràs trobar els missatges d'error complets, i si tens un problema, usuaris experts de LaTeX et podrien demanar una còpia del teu fitxer de log.
 
-<p 
-  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
+<p class="hint">Donem més informació sobre el tractament d'errors a la <a href="./lesson-15">lliçó 15</a>.</p>
 
-## What you've got
+## Allò que has obtingut
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+El primer document mostra allò bàsic. Els documents de LaTeX són una barreja de documents i comandes. Les comandes comencen amb una `barra invertida` (`backslash`) i sovint tenen arguments entre claus {}, o a vegades arguments opcionals dins de claudàtors []. Aleshores obtenim el PDF dient-li a LaTeX que imprimeixi el fitxer.
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
-The `\usepackage` command is described in a [later lesson](lesson-06)
-it is used in most examples on this site to set up the font encoding.
+Tots els documents de LaTeX tenen un `\begin{document}` i el corresponent `\end{document}`.
+Enmig dels dos hi ha el *document body*, on anirà tot el contingut.
+Aquí el `cos`té dos paràgrafs (a LaTeX els paràgrafs es separen amb una o vàries línies de retorn de carro). Abans del `\begin{document}` hi ha el *document preamble*, que conté el codi per configurar la maquetació (el `layout`) del document. La comanda `\usepackage`, que es descriu en una [lliçó posterior](lesson-06), s'utilitza en la majoria d'exemples per configurar la codificació de la font.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+LaTeX té d'altres parelles `\begin{...}` i `\end{...}`; s'anomenen *environments*.
+Has d'aparellar-les de manera que per cada `\begin{x}` hi ha d'haver un `\end{x}`.
+Si les nies, ha de ser de la forma `\end{y} ... \end{x}` per aparellar
+`\begin{x} ... \begin{y}`, és a dir, les sentències `\begin` i `\end` s'han d'aparellar en ordre.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+Podem afegir comentaris a un fitxer de LaTeX començant amb el caràcter `%`; Anem a posar un exemple:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
@@ -108,32 +74,20 @@ This is a new paragraph.
 \end{document}
 ```
 
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+Pots veure que tenim dos paràgrafs: fixa't que hem fet servir un salt de línia per fer-ho. També, múltiples espais en blanc s'han tractat com si fos un sol espai.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+Pot ser que algunes vegades vulguis un espai 'fort' però que no hi hagi salt de línia: a LaTeX ho podem fer utilitzant `~`, que 'manté' dues parts del text juntes. Això és particularment útil quan, més endavant en aquest curs, comencem a crear referències creuades.
 
-## Special characters
+## Caràcters especials
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+Segurament ja has notat que els caràcters ``\``, `{` i `}` tenen un significat especial a LaTeX.
+Un ``\`` comença una instrucció: una 'comanda'. Les claus `{` i `}` s'utilitzen per mostrar _arguments obligatoris_: informació necessària per a les comandes.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+Hi ha d'altres caràcters amb significat especial; acabem de veure que `~`
+és un espai més gran, per exemple. Quasi bé tots aquests caràcters són molt poc comuns en un text normal, i és aquest el motiu pel qual es van escollir per tenir un significat especial. Si necessites mostrar algun d'aquests caràcters especials, hem inclòs la [informació en la pàgina de més detalls](more-03).
 
-## Exercise
+## Exercici
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+Fes proves amb el compilador i l'editor en línia; Pitja el botó per compilar el codi, i edita'l a la pàgina web per tornar-lo a compilar.
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+Prova d'afegir text al teu primer document, picant-lo i veient els canvis en el teu PDF. Fes diferents paràgrafs i afegeix espaiat variable. Explora com el teu editor funciona; clica en la teva font i esbrina com anar a la mateixa línia en el teu PDF. Prova d'afegir espaiats 'forts' (amb `~`) i mira com influencia en els salts de línia.
