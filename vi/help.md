@@ -219,7 +219,8 @@ Các loại tùy biến LaTeXML cũng có thể được sử dụng, xem thêm 
 [hướng dẫn sử dụng LaTeXML](https://dlmf.nist.gov/LaTeXML/manual/).
 
 Các tùy biến của `lwarp` không được nêu ở đây, vì nó vẫn đang trong giai đoạn
-thử nghiệm.
+thử nghiệm. Tùy biến đang được sử dụng cho TeXLive.net có thể được xem ở
+[đây](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 ---
 
