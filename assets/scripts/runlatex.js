@@ -26,6 +26,7 @@ runlatex.adddefaultpreamble=false;
 runlatex.adddefaultengine=false;
 runlatex.usecaptions=false;
 runlatex.minrunlines=0;
+runlatex.completionsURI="";
 
 // debug by using https://httpbin.org/post
 // set to null to omit from interface
@@ -65,7 +66,43 @@ var packageregex = [
     [ /pspicture/,                            "\\usepackage{pstricks}\n"      ]
 ];
 
+
+var latexcompetions="";
+    
+
+var customCompleter = {
+    getCompletions: function(editor, session, pos, prefix, callback) {
+	var startToken = session.getTokenAt(pos.row, pos.column).value;
+	if (startToken.startsWith("\\")){
+	    var cmplts=[];
+	    var s=0;
+	    for (let pkg in latexcompletions) {
+		var cs=latexcompletions[pkg];
+		s=s-1;
+		for(let i=0;i<cs.length;i++){
+		    if(cs[i].startsWith(prefix)){
+			cmplts.push({name: cs[i], value:cs[i],score: s, meta: pkg});
+		    }
+		}
+	    }
+	    callback(null, cmplts);
+	} else {
+	    callback(null, []);
+	    return 
+	}	    
+    }
+}
+
 function llexamples() {
+    if(runlatex.completionsURI != ""){
+	let request = new XMLHttpRequest();
+	request.open('GET', runlatex.completionsURI);
+	request.responseType = 'json';
+	request.onload = function() {
+	    latexcompletions = request.response;
+	}
+	request.send();
+    }
     var p = document.getElementsByTagName("pre");
     var editor;
     var acemode;
@@ -127,13 +164,21 @@ function llexamples() {
 		}
 	    }
 	    p[i].textContent=pretext.replace(/\s+$/,'');
-	    editor = ace.edit(p[i]);
 	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
+	    editor = ace.edit(p[i]);
 	    editor.setTheme(rlacetheme);
 	    editor.getSession().setMode(acemode);
-	    editor.setOption("minLines",1);
+	    editor.setOption("minLines",runlatex);
 	    editor.setOption("maxLines",runlatex.editorlines);
 	    editor.setShowPrintMargin(false);
+	    if(runlatex.completionsURI != ""){
+		langTools=ace.require("ace/ext/language_tools");
+		langTools.setCompleters([customCompleter]);
+		editor.setOptions({
+		    enableBasicAutocompletion: true,
+		    enableLiveAutocompletion: true
+		});
+	    }
 	    editor.resize();
 	    editors["pre" + i]=editor;
 	}
