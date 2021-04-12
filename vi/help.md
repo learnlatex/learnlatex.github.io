@@ -75,9 +75,8 @@ Nếu bạn đã có một tài khoản, Overleaf sẽ được mở ra ở mộ
 project mới có chứa đoạn mã này. Bạn có thể sửa mã trên Overleaf và biên dịch
 ngay trên đó.
 
-Các chức năng sửa mã trên Overleaf tốt hơn chức năng sửa mã ở đây nhiều. Bạn
-cũng có thể lưu project vào tài khoản Overleaf của mình và thao tác với nó
-sau.
+Không giống như trên TeXLive.net, bạn có thể lưu lại các đoạn mã trên Overleaf,
+và sử dụng chúng sau.
 
 ##### Dùng dịch vụ TeXLive.net
 
