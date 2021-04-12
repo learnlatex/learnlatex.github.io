@@ -1,30 +1,47 @@
     
 {
-    "latex":[
-	"documentclass",
+    "latex": [
+	"author",
         "begin",
 	"begin{document}",
 	"begin{enumerate}",
 	"begin{itemize}",
 	"begin{figure}",
 	"begin{table}",
+	"begin{tabular}",
 	"begin{equation}",
 	"begin{equation*}",
+	"documentclass",
         "end",
 	"end{document}",
 	"end{enumerate}",
 	"end{itemize}",
 	"end{figure}",
 	"end{table}",
+	"end{tabular}",
 	"end{equation}",
 	"end{equation*}",
 	"frac",
+	"input",
 	"item",
-	"usepackage",
+	"label",
+	"makeatletter",
+	"makeatother",
+	"newcommand",
+	"newenvironment",
+	"NewDocumentCommand",
+	"NewDocumentEnvironment",
+	"RenewDocumentCommand",
+	"RenewDocumentEnvironment",
+	"ref",
+	"renewcommand",
+	"renewenvironment",
 	"section",
-	"subsection"
+	"subsection",
+	"title",
+	"usepackage"
     ],
-    "book":[
+    "book": [
 	"chapter"
     ],
     "amsmath": [
@@ -32,13 +49,29 @@
 	"dfrac",
 	"begin{align}",
 	"begin{align*}",
+	"begin{aligned}",
+	"begin{cases}",
+	"begin{flalign}",
+	"begin{flalign*}",
 	"begin{gather}",
 	"begin{gather*}",
-	"begin{aligned}",
 	"end{align}",
 	"end{align*}",
+	"end{cases}",
+	"end{aligned}",
+	"end{flalign}",
+	"end{flalign*}",
 	"end{gather}",
-	"end{gather*}",
-	"end{aligned}"
-    ]
+	"end{gather*}"
+    ],
+    "graphicx": [
+	"includegraphics",
+	"rotatebox",
+	"scalebox"
+    ],
+    "xcolor": [
+	"color",
+	"colorbox",
+	"textcolor"
+	]
 }
