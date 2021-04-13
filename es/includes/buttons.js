@@ -6,7 +6,7 @@ runlatex.texts ={
     // The following not used on learnlatex.org
     "edit":             "editar",
     "copy":             "copiar",
-    "Added Code":       "Added code",
-    "End Added Code":   "End Added code",
-    "Top Caption":      "Edit and run this example:"
+    "Added Code":       "Código añadido",
+    "End Added Code":   "Fin del código añadido",
+    "Top Caption":      "Editar y ejecutar este ejemplo:"
 }
