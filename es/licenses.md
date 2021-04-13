@@ -2,7 +2,7 @@
 layout: "page"
 lang: "es"
 title: Licencias
-permalink: /en/licenses
+permalink: /es/licenses
 ---
 
 # Licencias
