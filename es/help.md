@@ -1,4 +1,5 @@
 ---
+layout: "page"
 lang: "es"
 title: "Usando el sitio web learnlatex.org"
 permalink: /es/help
