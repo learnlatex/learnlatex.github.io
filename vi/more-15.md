@@ -11,7 +11,7 @@ toc-anchor-text: "Bổ sung: Lỗi"
 Một số môi trường (đáng chú ý nhất là các môi trường của `amsmath` cũng như các
 bảng tạo bởi `tabularx`) thu nhận toàn bộ nội dung môi trường trước khi xử lý
 phần nội dung này. Điều này nghĩa là bất kỳ lỗi nào trong nội dung môi trường sẽ
-được "phát hiện" tại dòng cuối của môi trường này. Tuy nhiên, như ta thấy trong
+được 'phát hiện' tại dòng cuối của môi trường này. Tuy nhiên, như ta thấy trong
 bài chính, TeX vẫn đánh dấu vị trí lỗi chính xác.
 
 ```latex
@@ -31,15 +31,15 @@ bài chính, TeX vẫn đánh dấu vị trí lỗi chính xác.
 \end{document}
 ```
 
-Lỗi sẽ được thông báo tại dòng 11:
+Lỗi sẽ được thông báo tại dòng 12:
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Tuy nhiên, trên thực tế lỗi lại nằm ở dòng 9, như được hiển thị bởi hai dòng kế
-tiếp của thông báo lỗi:
+Tuy nhiên, trên thực tế lỗi lại nằm ở dòng 10, như được hiển thị ở hai dòng tiếp
+theo của thông báo lỗi:
 
 ```
 ! Undefined control sequence.
@@ -106,7 +106,7 @@ Một vài lỗi hiểm hóc, đặc biệt là những lỗi không thể đư�
 TeX đã đọc hết tệp văn bản, sẽ không cho ta một thông báo lỗi nào, mà cùng lắm
 chỉ là một cảnh báo (warning) trong tệp log.
 
-Nếu bạn thử ví dụ sau bằng LaTeX CGI, nó sẽ vẫn cho ta PDF. Để xem cảnh báo
+Nếu bạn thử ví dụ sau bằng TeXLive.net, nó sẽ vẫn cho ta PDF. Để xem cảnh báo
 trong tệp log, hãy thêm `% !TEX log` vào đầu đoạn mã.
 
 ```latex
@@ -124,7 +124,7 @@ Trong ví dụ này, lệnh đổi cỡ chữ được kết thúc bằng `)` th
 không được phát hiện cho tới điểm cuối của tệp &ndash; tại đây TeX phát hiện ra
 vẫn còn một nhóm chưa được đóng. Do đó, nó cho ta biết số dòng mà ở đó nhóm được
 bắt đầu (vị trí của `{`). Nó không thể phát hiện lỗi thực tế, do `)` được coi
-như "phần văn bản bình thường".
+như 'phần văn bản bình thường'.
 
 ```
 (\end occurred inside a group at level 1)

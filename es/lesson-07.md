@@ -7,7 +7,7 @@ description: "Está lección muestra como añadir imágenes a su documento, cóm
 toc-description: "Apariencia, espaciado y posicionamiento"
 ---
 
-## Imágenes y ubicación
+# Imágenes y ubicación
 
 <span
   class="summary">Está lección muestra como añadir imágenes a su documento, cómo cambiar su apariencia y cómo convertirlas en objetos flotantes para optimizar su ubicación en un PDF.</span>

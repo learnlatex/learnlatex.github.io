@@ -7,14 +7,18 @@ toc-anchor-text: "Font và Unicode"
 toc-description: "Font chữ. Hệ mã hóa văn bản. Unicode"
 ---
 
-# Chọn fonts và sử dụng các trình biên dịch Unicode
+# Font và Unicode
+
+<span class="summary">Bài này sẽ giải thích các cách chọn font chữ khác nhau,
+cũng như giúp bạn làm quen với các hệ mã hóa văn bản khác nhau và cách sử dụng
+Unicode trong LaTeX</span>
 
 Khi TeX và LaTeX bắt đầu được sử dụng rộng rãi, nó chỉ có hỗ trợ cho một số ngôn
 ngữ châu Âu, cùng với một vài tính năng cho các bảng chữ cái khác như tiếng Hy
 Lạp hay tiếng Nga.
 
-Ban đầu, các chữ cái có dấu được nhập bằng những lệnh như `\c{c}` tạo ra "ç" hay
-`\'e` tạo ra `é`. Trong khi một số người vẫn tiếp tục sử dụng cách này, hầu hết
+Ban đầu, các chữ cái có dấu được nhập bằng những lệnh như `\c{c}` tạo ra 'ç' hay
+`\'e` tạo ra 'é'. Trong khi một số người vẫn tiếp tục sử dụng cách này, hầu hết
 mọi người muốn nhập trực tiếp các chữ cái có dấu từ bàn phím của họ.
 
 Trước Unicode, LaTeX có hỗ trợ cho nhiều loại *mã hóa tệp* (file encoding) cho
@@ -43,7 +47,7 @@ Times, ta dùng font Termes (`tgtermes`).
 Đối với `pdflatex`, hầu hết các font có thể được dùng qua việc khai báo gói
 lệnh. Bạn có thể xem
 [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) hay
-[trang CTAN về chủ đề "Font"](https://www.ctan.org/topic/font) để tìm hiểu về
+[trang CTAN về chủ đề 'Font'](https://www.ctan.org/topic/font) để tìm hiểu về
 những font có sẵn. Bạn cũng có thể tìm kiếm trên mạng về font mà bạn cần, sau đó
 tìm kiếm bản mà `pdflatex` có thể dùng được. Nếu bạn muốn dùng một font có bản
 quyền (proprietary font), bạn cũng có thể tìm một bản clone hợp lý; đối với hầu
@@ -81,6 +85,7 @@ túy vào mã nguồn. Đây là một ví dụ sử dụng một số chữ cá
 Hy Lạp, một số ký hiệu cùng một vài chữ cái tượng hình CJK.
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
@@ -92,6 +97,6 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
-Khi ta thay đổi ngôn ngữ, việc thay đổi quy tắc hyphenation và những thứ tương
-tự có thể cần thiết. Các gói `babel` hay `polyglossia` đều cung cấp những công
-cụ mạnh để thực hiện việc này.
+<p class="hint">Khi ta thay đổi ngôn ngữ, việc thay đổi quy tắc hyphenation và
+những thứ tương tự có thể cần thiết. Các gói <code>babel</code> hay
+<code>polyglossia</code> đều cung cấp những công cụ mạnh để thực hiện việc này.</p>

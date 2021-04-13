@@ -34,11 +34,13 @@ est la plus largement utilisée, voici donc un exemple avec elle :
 \usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{frame}{Première diapositive}
+\begin{frame}
+  \frametitle{Première diapositive}
   Un peu de texte.
 \end{frame}
 
-\begin{frame}{Deuxième diapositive}
+\begin{frame}
+  \frametitle{Deuxième diapositive}
   Et maintenant une liste:
   \begin{itemize}
     \item<1-> Premier item,

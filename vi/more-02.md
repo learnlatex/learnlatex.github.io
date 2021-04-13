@@ -8,7 +8,7 @@ toc-anchor-text: "Bổ sung: Làm việc với LaTeX"
 
 Đối với hầu hết các ví dụ, ta sẽ không dùng chương trình `latex` mà sẽ dùng một
 chương trình được gọi là `pdflatex`. Đây là thành viên của một hệ các chương
-trình tương tự, tất cả đều là "con cháu" của `latex`. Ta sẽ dùng `pdflatex` vì
+trình tương tự, tất cả đều là 'con cháu' của `latex`. Ta sẽ dùng `pdflatex` vì
 nó có lẽ là chương trình biên dịch phổ biến nhất và có thể xuất trực tiếp ra
 các tệp PDF.
 

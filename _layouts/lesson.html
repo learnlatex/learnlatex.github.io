@@ -12,7 +12,7 @@ layout: compress
       {% else %}
       <title>{{ page.title }} | {{site.title}}</title>
     {% endif %}
-
+  {% assign mrdigits="०,१,२,३,४,५,६,७,८,९,१०,११,१२,१३,१४,१५,१६,१७" | split: "," %}
     <!-- alternate links start -->
     {% include alternate-links.html %}
     <!-- alternate links end -->
@@ -79,7 +79,13 @@ layout: compress
         {% assign language = page.lang %}
         <span
           class="meta"
-          >{{ site.data.translations['informational-elements_lesson'][page.lang] }} {{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | round: 2 }}</span>
+          >{{ site.data.translations['informational-elements_lesson'][page.lang] }}
+              {% if page.lang == "mr" %}
+                {% assign pageno = page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | replace: 'language-', '' | replace: 'extra-', '' | floor %}
+                {{ mrdigits[pageno] }}
+              {% else %}
+	  {{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | replace: 'language-', '' | replace: 'extra-', '' | round: 2 }}
+	{% endif %}</span>
         <!-- meta lesson information end -->
 
         <!-- inter-lesson links start -->

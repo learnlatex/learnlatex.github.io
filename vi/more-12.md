@@ -28,7 +28,7 @@ sẽ tự động chuyển các thông tin cần thiết trong mục tài liệu
 Dù cú pháp tổng thể của các tệp BibTeX đối với quy trình BibTeX hay `biblatex`
 giống nhau, các miền thông tin được sử dụng và ý nghĩa của các miền này có thể
 thay đổi, không chỉ giữa quy trình BibTeX với `biblatex`, mà thậm chí còn giữa
-các kiểu bibliography khác nhau. Có một tập hợp các miền "cốt lõi" có ý nghĩa
+các kiểu bibliography khác nhau. Có một tập hợp các miền 'cốt lõi' có ý nghĩa
 giống nhau giữa hầu hết các kiểu, nhưng có sự khác biệt ở một số miền khác.
 
 Một ví dụ thường gặp là URL. Một vài kiểu `.bst` cũ (đáng chú ý nhất là các kiểu

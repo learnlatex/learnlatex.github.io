@@ -7,12 +7,15 @@ toc-anchor-text: "Lớp văn bản"
 toc-description: "Các thiết lập cơ bản của toàn văn bản"
 ---
 
-# Sử dụng các lớp văn bản
+# Lớp văn bản
+
+<span class="summary">Bài này giải thích cách sử dụng và tùy biến một số lớp văn
+bản thông dụng trong việc thiết kế văn bản.</span>
 
 ## Lớp văn bản làm gì?
 
 Bạn có thể để ý rằng tất cả các ví dụ ta đã xét đều bắt đầu với một dòng
-`\documentclass` ("document class" nghĩa là lớp văn bản), và
+`\documentclass` ('document class' nghĩa là lớp văn bản), và
 `\documentclass{article}` là lựa chọn thường dùng nhất. (Ta cần
 `\documentclass{report}` trong [bài trước](lesson-04) để thử câu lệnh
 `\chapter`.) Dòng này là bắt buộc, và hầu như trong mọi trường hợp, đó nên là
@@ -80,7 +83,7 @@ này (đây là lỗi thường gặp của những người mới học LaTeX).
 Những lớp văn bản cơ bản tương đối đơn giản, nhưng điều này cũng có nghĩa là
 chúng tương đối bảo thủ về thiết kế và danh sách các câu lệnh được định nghĩa.
 Qua thời gian, một số lớp văn bản mạnh hơn đã được viết ra, mà cho phép bạn
-thay đổi thiết kế mà không cần phải làm mọi việc "bằng tay". Ta sẽ nói kỹ hơn
+thay đổi thiết kế mà không cần phải làm mọi việc 'bằng tay'. Ta sẽ nói kỹ hơn
 ở [bài sau](lesson-11).
 
 Hội Toán học Hoa Kỳ (AMS) viết ra một số biến thể của những lớp văn bản gốc, như
@@ -88,14 +91,14 @@ Hội Toán học Hoa Kỳ (AMS) viết ra một số biến thể của những
 quan đến toán học.
 
 Hai lớp văn bản lớn nhất và thông dụng nhất là hệ thống KOMA-script và lớp văn
-bản `memoir`. KOMA-script cho một hệ thống lớp văn bản mới "song song" với các
-lớp văn bản gốc: `scrartcl`, `scrreprt` và `scrbook`, trong khi `memoir` giống
-như một sự phát triển của `book`.
+bản `memoir`. KOMA-script cho một hệ thống lớp văn bản mới 'song song' với các
+lớp văn bản gốc: `scrartcl`, `scrreprt`, `scrbook` và `scrlttr2`, trong khi
+`memoir` giống như một sự phát triển của `book`.
 
 Những lớp văn bản này có nhiều công cụ giúp bạn thiết kế, ta sẽ khám phá một vài
 trong số đó trong một bài tập. Bạn có thể hỏi tại sao ta có thể biết đến những
 công cụ này; ta sẽ nói đến điều đó trong [bài cuối](lesson-16), nhưng bạn vẫn
-luôn có thể "nhảy cóc"!
+luôn có thể 'nhảy cóc'!
 
 ## Trình chiếu
 

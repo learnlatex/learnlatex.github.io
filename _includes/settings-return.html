@@ -1,0 +1,33 @@
+
+<!-- {% raw %} -->
+<select id="returnsel"></select>
+
+<script>
+  var returnsel=document.getElementById('returnsel');
+  returnsel.disabled=!rlallowcookies;
+	var returns=[
+	["PDF",
+		["PDF.js", "PDF"]],
+    ["HTML",
+     ["make4ht", "LaTeXML", "lwarp"]],
+    ["Text",
+      ["log"]]
+   ];
+  var sel="";
+  for (let g=0;g<returns.length;g++) {
+      sel=sel+"<optgroup label=\"" + returns[g][0] + "\">" ;
+      var values=returns[g][1];
+      for(let i = 0; i < values.length; i++) {
+	  var v=values[i].toLowerCase().replace(/[.]/g,'');
+          sel=sel+"<option value=\"" + v + "\"" +
+	      (v==rldefaultreturn ? " selected>" : ">") +
+	      values[i] + "</option>";
+      }
+      sel=sel+"</optgroup>";
+  }
+  returnsel.innerHTML=sel;
+  returnsel.addEventListener('change', function() {
+      createCookie('runlatex-return',returnsel.options[returnsel.selectedIndex].value,100);
+  });
+</script>
+<!-- {% endraw %} -->

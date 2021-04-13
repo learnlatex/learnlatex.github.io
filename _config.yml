@@ -34,7 +34,7 @@ compress_html:
 
 
 # LANGUAGES, LABELS, LAYOUTS
-# Settings for multilingual set up: 
+# Settings for multilingual set up:
 # In alphabetical order by language code.
 # In ascending order by path specifity.
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -44,6 +44,12 @@ defaults:
       path: ""
     values:
       lang: "en"
+  -
+    scope:
+      path: "de"
+    values:
+      lang: "de"
+      label: "Deutsch"
   -
     scope:
       path: "en"
@@ -80,3 +86,15 @@ defaults:
     values:
       lang: "tr"
       label: "Türkçe"
+  -
+    scope:
+      path: "mr"
+    values:
+      lang: "mr"
+      label: "मराठी"
+  -
+    scope:
+      path: "ca"
+    values:
+      lang: "ca"
+      label: "Català"

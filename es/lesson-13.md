@@ -10,7 +10,7 @@ toc-description: "Dividiendo su código fuente de forma estructurada."
 # Estructurando documentos largos
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",
@@ -56,10 +56,10 @@ Un documento largo tendrá una apariencia similar al siguiente ejemplo:
 \title{Un libro de ejemplo}
 \author{John Doe \and Joe Bloggs}
 
-\IfFileExists{append.aux}
+\IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-%  front,
+  front,
 %  chap1,
   chap2,
 %  append

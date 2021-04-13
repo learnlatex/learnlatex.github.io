@@ -184,7 +184,7 @@ que usa tipos de letra OpenType. Por defecto, estos motores utilizan aún
 los tipos de letra clásicos de TeX en modo matemático, pero usted puede usar el 
 paquete `unicode-math` para hacer uso de los tipos de letra de Matemáticas OpenType.
 Los detalles de este paquete van más allá de los objetivos de este curso por lo que
-le recomendamos leer la [documentación de este paquete](https://texdoc.net/pkg/unicode-math).
+le recomendamos leer la [documentación de este paquete](https://texdoc.org/pkg/unicode-math).
 A pesar de ello, vamos a darle aquí un pequeño ejemplo de su uso:
 
 ```latex

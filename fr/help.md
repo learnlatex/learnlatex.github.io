@@ -80,9 +80,9 @@ votre compte Overleaf pour y revenir plus tard.
 ##### Utiliser un service LaTeX en ligne
 
 Le bouton <button>LaTeX Online</button>, présent sous l'exemple,
-soumet le code au service [LaTeX CGI](https://latexcgi.xyz/)[^1].
+soumet le code au service [TeXLive.net](https://texlive.net)[^1].
 
-Le serveur _LaTeX CGI_ a été mis en place spécialement pour supporter ce
+Le serveur _TeXLive.net_ a été mis en place spécialement pour supporter ce
 site, et utilise notamment [PDF.js](https://mozilla.github.io/pdf.js/) pour
 afficher les fichiers PDF sur les navigateurs mobiles ou autres, dépourvus de
 lecteur PDF intégré.
@@ -92,7 +92,7 @@ sera affiché dans la page, immédiatement sous l'exemple. Un bouton
 <button>Fermer l'affichage</button> apparaîtra pour que vous puissiez effacer
 cette sortie (ou la laisser en place et suivre le reste de la leçon).
 
-Notez que **LaTeX CGI** ne nécessite ni connexion ou ni inscription
+Notez que **TeXLive.net** ne nécessite ni connexion ou ni inscription
 d'aucune sorte, ce qui est très pratique pour les petits exemples, mais
 ni ce site ni les sites `latexcgi`, `latexonline.cc` ou `latex-on-http`
 ne proposent de mécanisme pour enregistrer votre document. Toute modification

@@ -40,9 +40,9 @@ Haga lo que haga, editar o no el texto del ejemplo, hay tres maneras básicas de
 
 1. Usar un servicio de **LaTeX en línea**. El botón <button style="padding:0 1px;font-size:90%">LaTeX Online</button> 
    enviará el código al servicio
-   [LaTeX CGI](https://latexcgi.xyz/) [^1].
+   [TeXLive.net](https://texlive.net) [^1].
    
-   El servicio LaTeX CGI fue desarrolado especifícamente para ser compatible con este sitio y
+   El servicio TeXLive.net fue desarrolado especifícamente para ser compatible con este sitio y
    en particular hace uso de [PDF.js](https://mozilla.github.io/pdf.js/)
    para permitir mostrar documentos PDF en dispositivos móviles y otros sistemas que no dispongan
    de lectores de archivos PDF.

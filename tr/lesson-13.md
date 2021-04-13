@@ -10,7 +10,7 @@ toc-description: "Spliting up sources in a controlled way."
 # Structuring longer documents
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",
@@ -52,10 +52,10 @@ A longer document might therefore look something like the following:
 \title{A Sample Book}
 \author{John Doe \and Joe Bloggs}
 
-\IfFileExists{append.aux}
+\IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-%  front,
+  front,
 %  chap1,
   chap2,
 %  append

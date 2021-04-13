@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Veja mais sobre: Incluindo gráficos e fazendo coisas 'flutuarem'"
+title: "Veja mais sobre: Incluindo gráficos e posicionando-os"
 description: "Esta lição dá mais detalhes sobre boas práticas para dar nome e armazenar gráficos para usar com o LaTeX, e como você pode fazer seus próprios gráficos de dentro do LaTeX."
-toc-anchor-text: "Veja mais sobre: Incluindo gráficos e fazendo coisas 'flutuarem'"
+toc-anchor-text: "Veja mais sobre: Usando gráficos"
 ---
 
 ## Nomeando arquivos de gráficos
@@ -52,7 +52,7 @@ plotagens de programas científicos.  Quando o fizer, você provavelmente vai
 querer salvar como um PDF se possível, já que é um formato vetorial.  Se você
 precisar de uma imagem raster, opte por uma resolução alta.  Você pode fazer
 gráficos manuais que incluem partes de código LaTeX usando o
-[Inkscape](https://inkscape.org/).  Uma alternatica que extende as técnicas de
+[Inkscape](https://inkscape.org/).  Uma alternativa que estende as técnicas de
 desenho para três dimensões é o
 [Asymptote](https://www.ctan.org/pkg/asymptote).  Estes dois produzem arquivos
 que você pode incluir em seu documento.

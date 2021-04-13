@@ -1,8 +1,12 @@
-var buttons ={
+runlatex.texts ={
+    "Open in Overleaf": "Abrir no Overleaf",
+    "TeXLive.net":      "Executar no TeXLive.net",
+    "Delete Output":    "Excluir saída",
+    "Compiling PDF":    "Construindo PDF",
+    // The following not used on learnlatex.org
     "edit":             "editar",
     "copy":             "copiar",
-    "Open in Overleaf": "Abrir no Overleaf",
-    "LaTeX Online":     "LaTeX Online",
-    "Delete Output":    "Excluir saída",
-    "Compiling PDF":    "Construindo PDF"
+    "Added Code":       "Código adicionado",
+    "End Added Code":   "Fim do código adicionado",
+    "Top Caption":      "Editar e executar este exemplo:"
 }
