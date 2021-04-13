@@ -1,5 +1,6 @@
 ---
-lang: "es"
+layout: "page"
+lang: "en"
 title: Contacto
 permalink: /es/contact
 ---
