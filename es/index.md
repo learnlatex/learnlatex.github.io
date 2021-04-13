@@ -69,7 +69,7 @@ de LaTeX está correctamente actualizado.
 
 <p
   class="paragraph__toc"
-  >We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+  >Al final de cada lección hemos añadido un enlace a una sección titulada <b>Más sobre este tema</b>. Aquí encontrará información detallada cuando necesite profudizar sobre un tema en particular, pero no es imprescindible consultarla si no lo necesita.</b>  
 
 {% include toc-lessons.html prefix="es/lesson" %}
 
