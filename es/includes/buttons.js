@@ -1,6 +1,6 @@
 runlatex.texts ={
     "Open in Overleaf": "Abrir en Overleaf",
-    "TeXLive.net":      "LaTeX Online",
+    "TeXLive.net":      "Ejecutar en TeXLive.net",
     "Delete Output":    "Borrar Salida",
     "Compiling PDF":    "Compilando PDF",
     // The following not used on learnlatex.org
