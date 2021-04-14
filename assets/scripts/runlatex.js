@@ -164,6 +164,7 @@ function llexamples() {
 		}
 	    }
 	    p[i].textContent=pretext.replace(/\s+$/,'');
+	    p[i].style.height="1em"; // force redisplay in Opera zoom
 	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
 	    editor = ace.edit(p[i]);
 	    editor.setTheme(rlacetheme);
