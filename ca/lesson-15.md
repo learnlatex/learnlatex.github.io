@@ -1,34 +1,28 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Dealing with errors"
-description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
-toc-anchor-text: "Error handling"
-toc-description: "Dealing with unexpected behaviors."
+lang: "ca"
+title: "Analitzar els errors"
+description: "Aquesta lliçó ensenya alguns errors comuns en els documents de LaTeX, què signifiquen i com podem solucionar-los."
+toc-anchor-text: "Tractament d'errors"
+toc-description: "Tractar comportaments inesperats."
 ---
 
-# Dealing with errors
+# Analitzar els errors
 
 <span
-  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
+  class="summary">Aquesta lliçó ensenya alguns errors comuns en els documents de LaTeX, què signifiquen i com podem solucionar-los.</span>
 
-Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
-closer to working with programming language compilers, and as in programming
-users may make errors in their input and so need to deal with error messages
-reported by the system.
+A diferència d'un processador de text típic, LaTeX té un cicle d'Edició/Compilació/Vista més proper als compiladors de llenguatges de programació, i de la mateixa manera que els programadors cometen errors quan escriuen programes, també aquí haurem de tractar els missatges d'error que en reporta el sistema.
 
-## Common errors
+## Errors comuns
 
-This page gives examples of several common errors. Each error example has some discussion about the form of the error
-message.
+Aquesta pàgina dóna exemples d'alguns dels errors comuns. Per cada exemple d'error es discuteix sobre com es dóna el missatge d'error.
 
-It may be instructive to try the examples but also use the
-edit features to try to fix the documents and test that you can
-resolve the errors.
+És instructiu provar els exemples i veure els errors que provoquen, però també editar-los i mirar de corregir els errors fins a resoldre'ls.
 
 ### pdflatex not found
 
-A common first error that people see when starting is:
+Un primer error molt comú que els usuaris es troben quan comencen és:
 
 ```
 'pdflatex' is not recognized as an internal or external command,
@@ -36,22 +30,18 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-on Windows or
+a Windows o
 
 ```
 bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-on Linux.
+a Linux.
 
-This is
-not a TeX error but an operating system error saying that TeX is not
-installed or not found.  A common mistake is to install an _editor_
-such as TeXworks or TeXShop but without installing a TeX system such as
-TeX Live or MiKTeX.
+Això no és une error TeX sinó més aviat un error de sistema operatiu que ens diu que TeX no està instal·lat o no el troba. Un error comú és instal·lar un _editor_ com ara TeXworks o TeXShop però sense instal·lar un sistema TeX com TeX Live o MiKTeX.
 
-### Anatomy of a TeX error message
+### Anatomia d'un missatge d'error de TeX
 
 ```latex
 \documentclass{article}
@@ -66,7 +56,7 @@ My command is used here \mycommand.
 \end{document}
 ```
 
-This produces a multi-line message in the log file.
+Això provoca un missatge multilínia en el fitxer log.
 
 ```
 ! Undefined control sequence.
@@ -78,39 +68,22 @@ l.8 My command is used here \mycommand
 ```
 {: .noedit :}
 
-* The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
-* The second pair of lines show the line that TeX was processing, with a line break marking the point
-  that TeX had reached. The undefined command is the last token read so the last word before the line break,
-  `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
-  an argument but have not yet been executed by TeX.
-* There may in general be some additional lines at this point, showing more context of the error message,
-* The final line starts with `l.` followed by a line number, and then the line in the source file where the
-  error is detected.
+* La primera línia, marcada amb `!`, dóna una idea general de la naturalesa de l'error (en aquest cas comanda 'undefined').
+* El segon parell de línies mostra la línia que TeX estava processant, amb un salt de línia que marca el punt fins on TeX ha arribat. La comanda 'undefined' és l'últim punt llegit i per tant l'última paraula abans del salt de línia, en aquest cas `\textbold`. Després del salt de línia tenim el codi `{hmmm}` que possiblement s'haurà llegit com un argument però TeX encara no l'ha executat.
+* En aquest punt hi poden haver d'altres línies addicional, proporcionant més context dels missatges d'error.
+* La última línia comença amb `l.` seguit del número de línia, i finalment la línia del fitxer font on s'ha detectat l'error.
 
-* The final line is a `?`.  If using TeX interactively it is possible to
-  enter instructions to TeX at this point, but most editors and online
-  systems run TeX in a mode that does not stop at errors but will
-  scroll past this and try to process the rest of the document. Typing
-  `s` to the prompt will instruct TeX to carry on in this mode if you
-  are working interactively.
+* La línia final és un `?`.  Si utilitzem TeX de forma interactiva és possible entrar instruccions TeX en aquest punt, però la majoria dels editors i sistemes online compilen TeX en un mode que no s'atura en els errors i provarà de processar la resta del document. Escrivint `s` en el prompt li estem dient a TeX que volem treballar en mode interactiu.
 
+Fixa't que TeX no veu l'error en el punt on s'ha fet la definició; i de fet si definim `\mycommand` però no l'utilitzem, no saltarà cap error. Així doncs encara que es reporti un error a la línia 8, l'error "real" és en la línia 4, i és que és important llegir tot el missatge de l'error.
 
-Note here that TeX does not see the error at the point that
-the definition is made; and in fact if `\mycommand` is defined but not
-used, no error would be raised. So although the error is reported on
-line 8, the "real" error is in the definition on line 4, so it is
-important to see the whole error message.
-
-Beware that some editors show one line "summaries" of the error log.
-This can be particularly misleading if shown as
+Tingues present que alguns editors mostren un resum d'una línia de la informació del log de l'error. Això pot donar lloc a confusions, sobretot i es mostra de la forma
 
 `line 8: undefined command: ...\mycommand`
 
-as it makes it appear that `\mycommand` is not defined.
+doncs pot donar a entendre que `\mycommand` no està definit.
 
-
-### Mismatched braces
-
+### Error en l'ús de claus {}
 
 ```latex
 \documentclass{article}
@@ -123,18 +96,15 @@ as it makes it appear that `\mycommand` is not defined.
 \end{document}
 ```
 
-Here the error is a mismatched `}` used to end the optional
-argument. The closing brace causes LaTeX's option parsing
-to fail and you get an internal and not that helpful error: 
+Aquí l'error és una clau no aparellada `}` utilitzada al final d'un argument opcional
+argument, i que hauria de ser un claudàtor, causant un error de sintaxi, i obtenim un error intern: 
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.
 ```
 {: .noedit :}
 
-While the error description is unhelpful; the following two
-lines do accurately display the location of the error by the use of
-the linebreak showing how far TeX had read:
+Mentre que la descripció de l'error no ajuda massa, les dues línies següents mostren clarament la posició de l'error utilitzant un salt de línia i mostrant fins a quin punt TeX ha llegit:
 
 ```
 l.4 \usepackage[leqno}
@@ -143,7 +113,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-### Missing files
+### Fitxers no trobats
 
 ```latex
 \documentclass{article}
@@ -156,19 +126,16 @@ l.4 \usepackage[leqno}
 \end{document}
 ```
 
-This produces the error
+Produeix l'error
 
 ```
 ! LaTeX Error: File `amsmathz.sty' not found.
 ```
 {: .noedit :}
 
-Note: the same error may be caused by two different causes; a simple
-typo as here, which may be corrected by fixing the package name, or
-that the file really is missing and needs to be installed on the
-current system.
+Nota: aquest mateix error pot tenir dues causes diferents: un simple error tipogràfic com és aquest cas, que es pot corregir arreglant el nom del paquet; o que realment el fitxer no es troba i s'ha d'instal·lar en el sistema.
 
-### Blank lines in display math
+### Línies en blanc en el mode matemàtic display
 
 ```latex
 \documentclass{article}
@@ -186,21 +153,20 @@ Some text
 \end{document}
 ```
 
-Produces the slightly mysterious error
+Produeix un misteriós error
 
 ```
 ! Missing $ inserted.
 ```
 {: .noedit :}
 
-But the fix is simple, blank lines are not allowed in math
-environments and should be deleted.
+Però arreglar-lo és ben simple, les línies en blanc no estan permeses en l'entorn matemàtic i s'han d'esborrar.
 
-## Exercise
+## Exercici
 
-Attempt to fix the errors in the supplied examples.
+Prova de corregir els errors en els següents exercicis.
 
-Produce small documents with different errors and note the form of the error messages.
+Edita petits documents amb diferents errors i fixa't en els missatges d'error que provoquen.
 
 <script>
   window.addEventListener('load', function(){
