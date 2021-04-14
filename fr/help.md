@@ -1,4 +1,5 @@
 ---
+layout: "page"
 lang: "fr"
 title: "Utiliser le site learnlatex.org"
 description: "Cette page présente le site learnlatex.org lui-même et explique la meilleure façon de l'utiliser."
@@ -9,8 +10,9 @@ permalink: /fr/help
 
 ## Naviguer sur ce site web
 
-Ce cours se compose de 16 leçons principales, accessibles à partir de la table
-des matières de [la page d'accueil](/).
+Ce cours se compose de 16 leçons principales, accessibles à partir de la
+[table des matières]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }})
+de [la page d'accueil](./).
 
 Chaque leçon a un lien avec vers une leçon d'approfondissement sur le même
 sujet. Il est possible de suivre les 16 leçons _sans lire les leçons
@@ -43,6 +45,16 @@ tester des choses, éventuellement dans le cadre d'un exercice proposé en fin d
 leçon.
 
 L'éditeur utilisé est [ACE](https://ace.c9.io/).
+
+Vous pouvez personnaliser le thème utilisé dans cet éditeur (par exemple en
+utilisant un thème sombre, affichant le texte en clair sur un fond sombre) sur
+la page [Paramètres du site](settings). Un moyen pratique de tester différents
+thèmes est d'utiliser <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>?</kbd>+<kbd>,</kbd> sur Mac)
+lorsque vous êtes sur n'importe quel exemple du site. Cela affiche une fenêtre
+qui vous permet de modifier tous les paramètres de ACE.
+
+Le site web de ACE propose une [page très utile avec ses raccourcis claviers](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+
 
 #### Trois façons d'exécuter un exemple
 
@@ -122,8 +134,8 @@ Quand vous compilerez les exemples par _LaTeX Online_, c'est le moteur `pdflatex
 qui sera utilisé par défaut, sauf si l'exemple charge le package `fontspec`,
 auquel cas `xelatex` sera utilisé.
 
-Vous pouvez forcer le choix de `pdflatex`, `xelatex`, `lualatex`, `platex` ou
-`uplatex` en ajoutant dans le document un commentaire de la forme :
+Vous pouvez forcer le choix de `latex`, `pdflatex`, `xelatex`, `lualatex`,
+`platex` ou `uplatex` en ajoutant dans le document un commentaire de la forme :
 
 `% !TEX ` _any text_ `lualatex`
 
@@ -131,7 +143,7 @@ où l'espace blanc au début est facultatif et la casse sans importance.
 _Tout texte_ entre le premier et le dernier mot est également ignoré. Cela
 permet d'écrire `% !TEX program=pdflatex`, comme demandé par certains éditeurs
 TeX, mais ne nécessite pas la chaîne `programme=`. Cette syntaxe est
-actuellement limitée à la seule spécification d'un des cinq moteurs listés
+actuellement limitée à la seule spécification d'un des six moteurs listés
 ci-dessus.
 
 Par exemple dans les exemples [de cette leçon](more-14), vous pouvez voir un tel
@@ -140,6 +152,10 @@ commentaire utilisé pour spécifier LuaLaTeX.
 Si `platex` ou `uplatex` est demandé, alors le programme `dvipdfmx` sera
 automatiquement lancé ensuite pour produire le résultat en PDF à partir
 du fichier DVI généré par ces variantes.
+
+Si aucun moteur n'est spécifié par un commentaire `% !TeX`, alors c'est `pdflatex`
+qui sera utilisé, à moins que vous n'ayez choisi un autre moteur par défaut sur
+la [page de choix des paramètres](settings).
 
 ---
 
@@ -160,6 +176,74 @@ utilisant `pdfjs` dans le commentaire ci-dessus. Pour le débogage, vous pouvez
 parfois souhaiter que le fichier journal soit renvoyé, même si le document
 produit un PDF sans erreur. Cela peut être demandé en utilisant `log` dans ce
 commentaire.
+
+As an alternative to using a `% !TeX` comment, you may specify the
+site default return parameter on the [Site Settings](settings)
+page. The Settings are specific to each browser, so for example you
+may choose to use the default `pdfjs` setting on your mobile device,
+but use `pdf` on your desktop browser to use its default PDF rendering.
+
+Au lieu d'utiliser un commentaire `% !TeX`, vous pouvez choisir le comportement
+par défaut la [page de choix des paramètres](settings). Ces paramètres sont
+spécifiques à chaque navigateur. Par exemple, vous pouvez choisir d'utiliser
+le paramètre par défaut `pdfjs` sur votre tablette, mais utiliser `pdf` sur
+votre ordinateur de bureau pour utiliser son lecteur PDF par défaut.
+
+---
+
+## Sortie en HTML (make4ht, LaTeXML, lwarp)
+
+Si vous utilisez le service TeXLive.net, des options de retour en plus sont
+proposées: `make4ht`, `LaTeXML` et `lwarp`. Elles retournent une ou plusieurs
+pages HTML, affichées dans la page courante. Ces options peuvent être spécifiés
+en même temps que `xelatex` ou `lualatex`, ou encore le moteur par défaut
+`pdflatex`.
+
+Pour activer cette option de sortie, ajoutez un commentaire de la forme :
+
+```
+% !TeX make4ht
+```
+{: .noedit :}
+
+
+Remplacez `make4ht` par `LaTeXML` ou `lwarp` le cas échéant.
+
+Vous pouvez aussi spécifier `make4ht`, `LaTeXML` ou `lwarp` comme option par
+défaut sur la [page de choix des paramètres](settings).
+
+Si vous utilisez un système TeX installé localement, le même résultat que
+l'option `make4ht` peut être obtenu en exécutant
+
+```
+make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
+```
+{: .noedit :}
+
+Avec les options supplémentaires `-x` or `-l` si vous utilisez XeLaTeX ou
+LuaLaTeX, respectivement. D'autres options existent, n'hésitez pas à consulter
+le [manuel de make4ht](https://texdoc.org/pkg/make4ht).
+
+
+Pour exécuter localement `LaTeXML`, vous aurez d'abord besoin d'installer LaTeXML
+(qui ne fait partie ni de TeX Live ni de MiKTeX) et d'utiliser ces commandes:
+
+```
+latexml document.tex > document.xml
+latexmlpost --format=html5 \
+   --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
+   --destination=document.html" document.tex
+```
+{: .noedit :}
+
+Bien d'autres options sont possibles pour LaTeXML, vous les retrouverez
+[dans le manuel](https://dlmf.nist.gov/LaTeXML/manual/).
+
+
+La configuration de `lwarp` n'est pas décrite ici, car le projet est expérimental
+et encore sujet à des changements. La version actuelle peut être récupérée depuis
+son [dépôt Git](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+
 
 ---
 
