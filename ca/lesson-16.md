@@ -1,89 +1,59 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Accessing documentation and getting help"
-description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
+lang: "ca"
+title: "Accedir a la documentació i obtenir ajuda"
+description: "En aquesta lliçó s'explica les principals maneres de documentar-se per als paquets i aplicacions relacionats amb LaTeX, i com cercar ajuda quan tens un dubte."
 toc-anchor-text: "Help & documentation"
-toc-description: "Accessing help and documentation."
+toc-description: "Accedir a l'ajuda i a la documentació."
 ---
 
-# Documentation and getting help
+# Documentació i obtenir ajuda
 
 <span
-  class="summary">This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble.</span>
+  class="summary">En aquesta lliçó s'explica les principals maneres de documentar-se per als paquets i aplicacions relacionats amb LaTeX, i com cercar ajuda quan tens un dubte.</span>
 
-There are several ways to access the documentation of a package or class.
+Hi ha diferents maneres per accedir a la documentació d'un paquet o classe.
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeX Live or MiKTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+Si has instal·lat una distribució TeX (_per exemple_, TeX Live o MiKTeX) i has inclòs la documentació en el procés d'instal·lació, pots accedir-hi amb la l'eina de línia de comanda `texdoc`. Usant:
 
 `texdoc` < _pkg_ >
 
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
+se t'obrirà el paquet de documentació `<pkg>`. Aquesta utilitat cerca la documentació disponible i obre allò que creu que és la coincidència més bona al teu criteri de cerca. Podràs llistar i escollir entre tots els resultats possibles que s'han trobat utilitzant:
 
 `texdoc -l` < _pkg_ >
 
 ## texdoc.org
 
-This is a [website](https://texdoc.org/) which works similarly to the `texdoc` utility. You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
+Aquesta [pàgina web](https://texdoc.org/) funciona de manera similar a la utilitat `texdoc`. Pots cercar la documentació que tenen disponible igual que ho faries amb `texdoc -l` i escollir algun dels resultats.
 
 ## CTAN
 
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
+[CTAN](https://www.ctan.org) és l'arxiu de documentació 'Comprehensive TeX Archive Network'. La major part dels paquets LaTeX es publiquen aquí. Pots cercar en el lloc web per un paquet i accedir a la documentació. Habitualment els paquets es guarden a `ctan.org/pkg/<pkg-name>` i pots accedir al README i a la documentació dels paquets que es guarden a CTAN.
 
-## Books on LaTeX
+## Llibres sobre LaTeX
 
-There are several books available that can help you learn more about LaTeX.
-As a beginner, you will gain a lot from a structured beginners guide, as
-those can give a lot more detail than we've covered here. You might also
-want access to a reference with more detail and recommendations.
+Hi ha diversos llibres disponibles que et poden ajudar per aprendre LaTeX. Com a principiant, pots aprendre molt a partir d'una guia estructurada per a principiants, doncs pots trobar-hi molts més detalls dels que cobrim en aquest tutorial. També podràs accedir a un manual de referència amb molt més detall i recomanacions.
 
-The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's official
-guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
-and the comprehensive
-[LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+L'equip de LaTeX té una [llista de llibres](https://www.latex-project.org/help/books/) escrits pels seus membres. El més destacat és la [guia oficial de Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838) i el detallat [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
 
-Other books aimed at learning LaTeX include
+Altres llibres que et poden ajudar a aprendre LaTeX són
 
-- [_Guide to
-  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
-  Kopka and Patrick Daly: available as an e-book
-- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
-- [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
-- [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
-  by Stefan Kottwitz: available as an e-book and in print
-- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
-  Marc van Dongen: available as an e-book and in print
+- [_Guide to LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) per Helmut
+  Kopka i Patrick Daly: disponible com a e-book
+- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) per Nicola Talbot: disponible com a e-book gratuït i una edició impresa de baix cost
+- [_Using LaTeX to write a PhD thesis_](https://www.dickimaw-books.com/latex/thesis/) per Nicola Talbot: disponible com a e-book gratis i una edició impresa de baix cost
+- [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)   per Stefan Kottwitz: disponible com a e-book i edició impresa
+- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) per Marc van Dongen: disponible com a e-book gratis i una edició impresa de baix cost
 
-## Getting help
+## Obtenir ajuda
 
-There are various online forums for asking LaTeX questions; perhaps the most
-popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
-Whenever you ask a question, it's best to first get your example clear: what is
-normally known as a 'minimal working example' (MWE). This doesn't mean the code
-works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means
-having only enough content to show the issue.
+Hi ha diversos fòrums online per demanar ajuda sobre qüestions relacionades amb LaTeX; potser el més conegut és [TeX - LaTeX StackExchange](https://tex.stackexchange.com). Sempre que demanis una pregunta, primer de tot hauries de tenir el teu exemple ben clar: el que s'anomena 'minimal working example' (MWE). Això no vol dir que el codi funcioni (si no no faries la pregunta!) sinó que has fet tot el possible per fer que el dubte sigui clar, auto-contingut i mínim, que vol dir que només has de tenir les línies de codi necessàries per mostrar el problema.
 
-### How to provide a minimal working example (MWE)
+### Com proporcionar un 'minimal working example' (MWE)
 
-How do you construct a MWE? Normally easiest is to start from
+Com pots obtenir un MWE? Normalment el més fàcil és començar per
 
 ```latex
 \documentclass{article}
@@ -93,28 +63,21 @@ Text
 \end{document}
 ```
 
-and add lines one at a time until you show the issue. You can try to
-'cut down' your real file, but that can be a long process.
+i afegir línies una per una fins que sorgeix el problema. Pots provar també de partir del teu exemple real i anar reduint-lo, però aquest pot ser un procés llarg.
 
-<p 
-  class="hint">If you need more text to show page breaking and other effects, then packages such as <code>lipsum</code> may be used to generate nonsense paragaraphs of text while keeping your test file small.</p>
+<p class="hint">Si necessites més text per provocar un salt de línia i altres efectes, pots utilitzar paquets com <code>lipsum</code> per generar paràgrafs i text sense sentit i mantenir el teu fitxer ben curt.</p>
 
 
-### Log file
+### Fitxer de log
 
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
+Una opció que sempre tindràs disponible és accedir al fitxer log; el crea LaTeX cada vegada que compiles, i té el mateix nom que el teu document, però amb extensió `.log`.
 
-<p 
-  class="hint">Depending on your desktop interface, you might need to 'show extensions' to work out which file it is.</p>
+En el fitxer de log sempre podràs veure el llistat complet de tots els errors. Els missatges d'error de LaTeX intenten ser d'ajuda, però no són igual que els missatges que trobem en un processador de text.
 
-In the log file, you can always see the full error messages. LaTeX's error messages try to be helpful, but they are not the same as messages in word processors.
+<p class="hint">Alguns editors també fan difícil de veure el missatge complet d'un error, i poden amagar els detalls clau.</p>
 
-<p 
-  class="hint">Some editors also make it hard to see the 'full' text of an error, which can hide key details.</p>
+Si tens algun problema, els usuaris experts de LaTeX et podrien demanar una còpia del teu fitxer log.
 
-If you have a problem, expert LaTeX users will often ask for a copy of your log file.
+### Anar més enllà
 
-### Going further
-
-Finally we offer a [gallery of small examples](./extra-01) showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.
+Finalment oferim una [galeria de petits exemples](./extra-01) que mostren una ampla varietat de temes que no hem pogut cobrir en aquesta introducció, i els diferents paquets de LaTeX que utilitzen.

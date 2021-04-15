@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Cross-referencing"
+title: "Més sobre: Cross-referencing"
 description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
-toc-anchor-text: "More on: Cross-referencing"
+toc-anchor-text: "Més sobre: Cross-referencing"
 ---
 
 ## Making cross-references into links

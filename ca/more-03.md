@@ -1,21 +1,16 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Basic LaTeX document structure"
-description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
-toc-anchor-text: "More on: Basic LaTeX document structure"
+lang: "ca"
+title: "Més sobre: Estuctura bàsica d'un document LaTeX"
+description: "Aquesta lliçó proporciona més detalls de com executar LaTeX, dels caràcters especials que utilitza i de com inserir-los en el PDF de sortida."
+toc-anchor-text: "Més sobre: Estuctura bàsica d'un document LaTeX"
 ---
 
-## Running LaTeX
+## Executar LaTeX
 
-As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
-this, try opening your first document in a simple text editor, for example
-on Windows using Notepad. You should see the same text as in a dedicated LaTeX
-editor, but without any highlight of keywords.
+Com es comenta [prèviament](lesson-02), els documents de LaTeX són de text pla. Per veure-ho, prova d'obrir el teu primer document amb un editor de text senzill, per exemple a Windows tens el Notepad. Podràs veure el mateix text que en un editor pensat per a LaTeX, però sense ressaltar les paraules clau.
 
-You can also convert to PDF without your editor; this means using the Command
-Prompt/Terminal, so don't worry if you are not familiar with this. If you
-*are*, you can navigate to the directory containing your `.tex` source file and
+També pots convertir a PDF sense utilitzar un editor; això significa utilitzar el terminal de comandes, no et preocupis si no hi estàs familiaritzat. Però si estàs avesat a utilitzar el terminal, pots navegar al teu directori on tens el document font `.tex` i executa
 run
 
 `pdflatex first`
@@ -24,16 +19,13 @@ or
 
 `pdflatex first.tex`
 
-to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with `.tex` unless you specify otherwise.
+per tal de generar el PDF. Fixa't que l'extensió `.tex` és opcional: LaTeX assumeix que els fitxers acaben amb `.tex` a no ser que s'especifiqui el contrari.
 
-## Special characters
+## Caràcters especials
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need to use a longer command instead:
+Si has d'entrar un caràcter especial, en la majorai dels casos pots utilitzar la contrabarra davant del caràcter, per exemple amb `\{` imprimiràs el caràcter de la clau `{`. D'altra banda hi ha alguns casos en què hauràs de fer servir una comanda més llarga:
 
-| Symbol | Short Command <br><small>(math and text)</small> | Long Command <br><small>(for text only)</small> |
+| Símbol | Comanda Curta <br><small>(matemàtiques i text)</small> | Comanda llarga <br><small>(només per a text)</small> |
 | --- | --- | --- |
 | `{`    | `\{`          | `\textbraceleft`  |
 | `}`    | `\}`          | `\textbraceright` |
@@ -46,7 +38,4 @@ use a backslash in front of it, so for example `\{` is used to print a literal
 | `^`    |               | `\textasciicircum`|
 | `~`    |               | `\textasciitilde` |
 
-For the last three symbols there are no short commands available,
-because `\\` is used to indicate a linebreak and `\~` and `\^` are used
-to produce tilde and circumflex accents when using only ASCII
-characters as input.
+Per als tres últims símbols no hi ha cap comanda curta disponible, doncs `\\` s'utilitza per provocar un salt de línia i `\~` i `\^` s'utilitzen per obtenir la 'ñ' i l'accent circumflex quan només s'utilitza ASCII com a entrada.

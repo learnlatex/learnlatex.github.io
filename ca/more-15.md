@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Dealing with errors"
+title: "Més sobre: Dealing with errors"
 description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
-toc-anchor-text: "More on: Dealing with errors"
+toc-anchor-text: "Més sobre: Dealing with errors"
 ---
 
 ## Errors reported at ends of environments

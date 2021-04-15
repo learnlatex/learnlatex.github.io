@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Formatting: fonts and spacing"
+title: "Més sobre: Formatting: fonts and spacing"
 description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "More on: Formatting: fonts and spacing"
+toc-anchor-text: "Més sobre: Formatting: fonts and spacing"
 ---
 
 ## Suppressing the indent for one paragraph
