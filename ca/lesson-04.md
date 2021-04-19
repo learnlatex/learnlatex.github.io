@@ -22,9 +22,9 @@ Començarem amb un exemple que compara una de les comandes de marcat lògic més
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some text with \emph{emphasis and \emph{nested} content}.
+Una mica de text en \emph{negreta i \emph{nested} contingut}.
 
-Some text in \textit{italic and \textit{nested} content}.
+Una mica de text en \textit{cursiva i \textit{nested} contingut}.
 \end{document}
 ```
 
@@ -40,23 +40,23 @@ Segurament hauràs utilitzat un processador de text, on quan comences una secci�
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Hey world!
+Hola món!
 
-This is a first document.
+Aquest és un primer document.
 
-\section{Title of the first section}
+\section{Títol de la primera secció}
 
-Text of material in the first section
+Text del material de la primera secció
 
-Second paragraph.
+Segon paràgraf.
 
-\subsection{Subsection of the first section}
+\subsection{Subsecció de la primera secció}
 
-Text of material in the subsection.
+Text del material de la subsecció.
 
-\section{Second section}
+\section{Segona secció}
 
-Text of the second section.
+Text de la segona secció.
 
 \end{document}
 ```
@@ -84,18 +84,18 @@ Una altra situació molt comuna en què utilizaràs marcadors lògics és en l'e
 \usepackage[T1]{fontenc}
 \begin{document}
 
-Ordered
+Ordenat
 \begin{enumerate}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item Una entrada
+  \item Una altra entrada
+  \item Uau! Tres entrades
 \end{enumerate}
 
-Unordered
+Desordenat
 \begin{itemize}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item Una entrada
+  \item Una altra entrada
+  \item Uau! Tres entrades
 \end{itemize}
 
 \end{document}

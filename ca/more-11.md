@@ -1,30 +1,23 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Més sobre: Formatting: fonts and spacing"
-description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "Més sobre: Formatting: fonts and spacing"
+lang: "ca"
+title: "Més sobre: Formatar el text: fonts i espaiat"
+description: "Aquesta lliçó explica com suprimir la identació del paràgraf."
+toc-anchor-text: "Més sobre: Formatar el text: fonts i espaiat"
 ---
 
-## Suppressing the indent for one paragraph
+## Suprimir la identació d'un paràgraf
 
-
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+Si vols suprimir la identació d'un paràgraf, pots utilitzar `\noindent`. Això s'hauria d'utilitzar en _comptades_ ocasions; la majoria de les vegades serà LaTeX que ho gestionarà automàticament.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Un paràgraf senzill, que hem omplert una mica només per tenir la certesa que pots veure l'efecte del que estem estudiant!
 
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Un paràgraf senzill, que hem omplert una mica només per tenir la certesa que pots veure l'efecte del que estem estudiant!
 
-\noindent  One small paragraph, which we have filled out a little to make sure
-you can see the effect here!
+\noindent Un paràgraf senzill, que hem omplert una mica només per tenir la certesa que pots veure l'efecte del que estem estudiant!
 \end{document}
 ```

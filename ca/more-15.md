@@ -1,17 +1,14 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Més sobre: Dealing with errors"
-description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
-toc-anchor-text: "Més sobre: Dealing with errors"
+lang: "ca"
+title: "Més sobre: Tractament d'errors"
+description: "Aquesta lliçó explica alguns més errors comuns a LaTeX i explica sobre errors encadenats i errors silenciosos."
+toc-anchor-text: "Més sobre: Tractament d'errors"
 ---
 
-## Errors reported at ends of environments
+## Errors que ocorren a la fi dels entorns
 
-Some environments (notably `amsmath` alignments and `tabularx` tables)
-scan the whole environment body before processing the content. This means that
-any error within the environment is reported on the last line. However, as seen in the
-main lesson, TeX's display of the error context should still pinpoint the error location.
+Alguns entorns (principalment les alineacions `amsmath` i taules `tabularx`) escanegen el cos complet de l'entorn abans de processar el seu contingut. Això significa que qualsevol error dins de l'entorn es reportarà a la última línia. Tanmateix, com vam veure en la lliçó principal, la visualització del context de l'error hauria de mostrar la localització precisa on s'ha produït.
 
 ```latex
 \documentclass{article}
@@ -30,34 +27,28 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 \end{document}
 ```
 
-Here the error will be reported on line 12
+Aquí l'error es reportarà a la línia 12
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Although the real error is on line 10 as shown by the context lines:
-
+Encara que l'error real és a la línia 10 com es pot veure en les línies de context:
 
 ```
-! Undefined control sequence.
+! Control de seqüència indefinida.
 <argument> ...ha &= \frac {1}{2}\\ \beta &= \frak 
                                                   {2}{3}\\ \gamma &= \frac {...
 ```
 {: .noedit :}
 
 
-## Spurious errors due to earlier errors
+## Errors ficticis degut a errors comesos prèviament
 
-When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edit the document
-and re-run. However if you scroll past the error or use an editor or
-online system that does this for you then TeX will try to recover;
-however this may lead to several more errors being reported.
+Quan s'utilitza LaTeX de forma interactiva, des de la línia de comanda és possible: amb la tecla `x` podem aturar el procés quan tenim el primer error, editar el document i tornar a executar LaTeX. Tanmateix, si s'obvien els errors o s'utilitza un editor o un sistema en línia, aleshores TeX intentarà tirar endavant; això pot provocar però l'aparició de nous errors.
 
-So do not be too concerned about the _number_ of errors reported and
-always concentrate on fixing the first reported error.
+Així que no t'has de preocupar massa pel _número_ d'errors i t'has de concentrar sempre en resoldre el primer error que se t'indica.
 
 
 ```latex
@@ -67,28 +58,25 @@ always concentrate on fixing the first reported error.
 \begin{document}
 Text_word  $\alpha + \beta$.
 
-More text.
+Més text.
 \end{document}
 ```
 
-The error here is the underscore `_` which should be entered as `\_`.
+Aquí l'error és el caràcter de subratllat `_` que hauria de ser `\_`.
 
-TeX does report this correctly with the _first_ error message
+TeX ho indica correctament amb el _primer_ missatge d'error
 
 ```
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.5 Text_
-         word  $\alpha + \beta$.
+         paraula  $\alpha + \beta$.
 ?
 ```
 {: .noedit :}
 
-However if you scroll past the `?` prompt then TeX recovers by adding
-a `$` so the `_` is seen in math mode as a subscript. The math mode
-then continues until the `$` which ends math, so the following
-`\alpha` is seen in text mode generating another error
+Tanmateix en obviar aquest error i continuar, TeX segueix executant-se i afegirà el `$`en aquest punt, de manera que `_` serà interpretat, en mode matemàtico, com un subindex. El mode matemàtico continua vigent fins que el següent símbol `$` indiqui el final, i per tant la comanda `\alpha` s'interpreta en mode text, generant un nou missatge d'error.
 
 ```
 ! Missing $ inserted.
@@ -101,13 +89,11 @@ l.5 Text_word  $\alpha
 {: .noedit :}
 
 
-## Errors that do not trigger an error prompt
+## Errors que no disparen un missatge d'error
 
-Some errors, especially errors that are not detected until the end of the file,
-do not generate an error prompt but just give a warning in the log.
+Alguns errors, especialment errors que no són detectats fins al final del fitxer, no generen un missatge d'error i tant sols donen una alerta en el log.
 
-If you try this example using the TeXLive.net server it will return a PDF by default;
-to see the error message in the log add `%!TeX log`.
+Si proves aquest exemples utilitzant el servei TeXLive.net retornarà un PDF; per veure el missatge d'error en el log s'ha d'afegir `%!TeX log`.
 
 ```latex
 \documentclass{article}
@@ -115,16 +101,12 @@ to see the error message in the log add `%!TeX log`.
 
 \begin{document}
 
- Text {\large some large text) normal size?
+ Text {\large un text llarg) a tamany normal?
 
 \end{document}
 ```
 
-In this example the size change was mistakenly ended with `)` rather
-than `}`. This is not detected until the end of the file when TeX
-detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{`. It can not detect the actual
-error as the `)` is seen as "normal text".
+En aquest exemple el canvi de tamany té un error de sintaxi doncs l'hem acabat amb `)` en comtpes de `}`. Això no s'ha detectat fins que no hem arribat al final del fitxer quan TeX detecta que encara hi ha un grup sense tancar. Aleshores es reporta la línia en la qual el grup es va obrir amb `{`. No pot detectar l'error `)` doncs es veu com a "text normal".
 
 ```
 (\end occurred inside a group at level 1)

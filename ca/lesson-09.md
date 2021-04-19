@@ -23,25 +23,25 @@ Per fer que LaTeX recordi un punt del teu document has d'etiquetar-lo, i aleshor
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Hey world!
+Hola món!
 
-This is a first document.
+Aquest és un primer document.
 
-\section{Title of the first section}
+\section{Títol de la primera secció}
 
-Text of material for the first section.
+Text del material de la primera secció.
 
 
-\subsection{Subsection of the first section}
+\subsection{Subsecció de la primera secció}
 \label{subsec:labelone}
 
-Text of material for the first subsection.
+Text del material de la primera subsecció.
 \begin{equation}
   e^{i\pi}+1 = 0
 \label{eq:labeltwo}
 \end{equation}
 
-In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
+En la subsecció~\ref{subsec:labelone} tenim l'equació~\ref{eq:labeltwo}.
 \end{document}
 ```
 

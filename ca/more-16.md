@@ -1,29 +1,17 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "Més sobre: Accessing documentation and getting help"
-description: "This lesson show you where you can find the sources of LaTeX itself."
-toc-anchor-text: "Més sobre: Accessing documentation and getting help"
+title: "Més sobre: Accedint a la documentació i cercant ajuda"
+description: "En aquesta lliçó s'explica on pots trobar el codi font de LaTeX."
+toc-anchor-text: "Més sobre: Accedint a la documentació i cercant ajuda"
 ---
 
 
-## Documented sources of LaTeX
+## Codi font documentat de LaTeX
 
-The `texdoc` command described earlier is not restricted to package documentation. If you wish to
-go beyond the areas covered by this course and study the LaTeX inplementation in detail then
-the following links may help.
+La comanda `texdoc` que hem descrit anteriorment no es restringeix només a la documentació del paquet. Si vols aprofundir més enllà de les àrees que es cobreixen en aquest curs i estudiar la implementació de LaTeX en detall aleshores els següents enllaços et poden ajudar.
 
-The source of LaTeX itself is available as a LaTeX-typeset document `source2e.pdf`, available
-from `texdoc source2e` or at
-[texdoc.org](https://texdoc.org/pkg/source2e).
+El codi font de LaTeX està disponible en el document (generat amb LaTeX) `source2e.pdf`, disponible a `texdoc source2e` o a [texdoc.org](https://texdoc.org/pkg/source2e).
 
-Current releases of LaTeX also have preloaded the LaTeX3 Programming Language code, previously available
-as the `expl3` package.  `texdoc` may be used to see the
-[expl3 interface description](https://texdoc.org/pkg/interface3) (`texdoc interface3`)
-or
-[full expl3 source code](https://texdoc.org/pkg/source3) (`texdoc source3`).
-
-
-
-
-
+Les versions actuals de LaTeX també incorporen el codi del llenguatge de programació de LaTeX3, que abans estava disponible en el paquet `expl3`. `texdoc` es pot utilitzar per veure la [descripció de la interfície de expl3](https://texdoc.org/pkg/interface3) (`texdoc interface3`)
+o bé el [codi font complet de expl3](https://texdoc.org/pkg/source3) (`texdoc source3`).

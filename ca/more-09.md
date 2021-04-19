@@ -1,16 +1,14 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Més sobre: Cross-referencing"
-description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
-toc-anchor-text: "Més sobre: Cross-referencing"
+lang: "ca"
+title: "Més sobre: Referències creuades"
+description: "Aquesta lliçó explica com podem fer enllaços de referències creuades carregant el paquet hyperref."
+toc-anchor-text: "Més sobre: Referències creuades"
 ---
 
-## Making cross-references into links
+## Convertir referències creuades en enllaços
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+Pots convertir les teves referències creuades en enllaços utilitzant el paquet `hyperref`. En la majoria dels casos, `hyperref` s'ha de carregar després d'especificar qualsevol altre paquet en el preàmbul del document.
 
 ```latex
 \documentclass{article}
@@ -19,14 +17,13 @@ in the document preamble.
 \begin{document}
 
 \section{Introduction}
-Some exciting text with a reference~\ref{sec:next}.
+Algun text interessant amb una referència~\ref{sec:next}.
 
-\section{Next thing}
+\section{El següent element}
 \label{sec:next}
 
-More text here.
+Aquí hi ha més text.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+Hem triat de fer els enllaços amb el mateix color que el text normal; prova de treure `hidelinks` per veure per què! 

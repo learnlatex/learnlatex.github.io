@@ -49,13 +49,13 @@ Els tipus `article`, `report` i `book` tenen una disponibilitat de comandes molt
 \usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{letter}{Some Address\\Some Street\\Some City}
+\begin{letter}{Una direcció\\Un carrer\\Una ciutat}
 
-\opening{Dear Sir or Madam,}
+\opening{Benvolgut Sr o Sra,}
 
-The text goes Here
+El Text el posem aquí
 
-\closing{Yours,}
+\closing{Atentament,}
 
 \end{letter}
 
@@ -85,17 +85,17 @@ El tipus de document `slides` va ser desenvolupat per fer presentacions de trans
 Explora com canvia l'aparença i disseny del document quan canvies el tipus de document entre els estàndars, el KOMA i el `memoir`.
 
 ```latex
-\documentclass{article} % Change the class here
+\documentclass{article} % Canvia la classe aquí
 \usepackage[T1]{fontenc}
 
 \begin{document}
 
-\section{Introduction}
+\section{Introducció}
 
-This is a sample document with some dummy
-text\footnote{and a footnote}. This paragraph is quite
-long as we might want to see the effect of making the
-document have two columns.
+Aquest és un document d'exemple amb una mica de 
+text\footnote{i un peu de pàgina}. Aquest paràgraf és bastant llarg
+doncs volem veure l'efecte de definir que el nostre
+document tingui dues columnes.
 
 \end{document}
 ```

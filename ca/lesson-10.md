@@ -25,15 +25,14 @@ En el mode matemàtic s'ignoren els espais i s'aplica un correcte espaiat entre 
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-A sentence with inline mathematics: $y = mx + c$.
-A second sentence with inline mathematics: $5^{2}=3^{2}+4^{2}$.
+Una frase amb expressió matemàtica inline: $y = mx + c$.
+Una segona frase amb expressió matemàtica inline: $5^{2}=3^{2}+4^{2}$.
 
-
-A second paragraph containing display math.
+Un segon paràgraf que visulaitza una expressió matemàtica.
 \[
   y = mx + c
 \]
-See how the paragraph continues after the display.
+Fixa't com el paràgraf continua després de la visualització.
 \end{document}
 ```
 
@@ -55,7 +54,7 @@ Podem afegir fàcilment superindex i subindex; s'escriuen utilitzant `^` i `_`.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Superscripts $a^{b}$ and subscripts $a_{b}$.
+Superíndex $a^{b}$ i subíndex $a_{b}$.
 \end{document}
 ```
 
@@ -67,7 +66,7 @@ Hi ha _moltes_ comandes de mode matemàtic específiques. Algunes molt senzilles
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some mathematics: $y = 2 \sin \theta^{2}$.
+Una expressió matemàtica: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
@@ -87,7 +86,7 @@ El paràgraf ha d'haver començat _abans_ del display, per tant no deixis una l�
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-A paragraph about a larger equation
+Un paràgraf amb una equació llarga
 \[
 \int_{-\infty}^{+\infty} e^{-x^2} \, dx
 \]
@@ -104,7 +103,7 @@ Sovint voldràs una equación enumerada, això ho podràs aconseguir utilitzar l
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-A paragraph about a larger equation
+Un paràgraf amb una equació llarga
 \begin{equation}
 \int_{-\infty}^{+\infty} e^{-x^2} \, dx
 \end{equation}
@@ -123,7 +122,7 @@ La notació matemàtica pot ser molt rica, i això significa que les eines dispo
 \usepackage{amsmath}
 
 \begin{document}
-Solve the following recurrence for $ n,k\geq 0 $:
+Resol la següent expressió recursiva for $ n,k\geq 0 $:
 \begin{align*}
   Q_{n,0} &= 1   \quad Q_{0,k} = [k=0];  \\
   Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $n$, $k>0$.}
@@ -142,7 +141,7 @@ El paquet té també d'altres entorns interessants, per exemple per treballar am
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
-AMS matrices.
+Matrius AMS.
 \[
 \begin{matrix}
 a & b & c \\
@@ -179,7 +178,7 @@ Cadascuna de les comandes agafa com a arguments lletres llatines, així per exem
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-The matrix $\mathbf{M}$.
+La matriu $\mathbf{M}$.
 \end{document}
 ```
 

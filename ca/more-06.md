@@ -62,12 +62,11 @@ Birnen sind gelb.
 \end{document}
 ```
 
-## More definitions
+## Més definicions
 
-`\newcommand` allows commands with up to nine arguments, the first of which may be optional.
+`\newcommand` permet definir fins a nou arguments a les comandes, la primera de les quals pot ser opcional.
 
-If we take the example from the main lesson, we could make the color
-optional, defaulting to blue.
+Si agafem l'exemple de la lliçó principal, podem fer que el paràmetre color sigui opcional, i amb un valor per defecte de blau.
 
 ```latex
 \documentclass{article}
@@ -79,48 +78,35 @@ optional, defaulting to blue.
 
 \begin{document}
 
-Something about \kw{apples} and \kw[red]{oranges}.
+Alguna cosa sobre \kw{pomes} i \kw[red]{taronges}.
 
 \end{document}
 ```
 
-Optional arguments are delimited with `[]` and if omitted, the default
-value specified in the definition is used.
+Els valors opcionals venen delimitats per claudàtors `[]` i, si s'ometen, s'utilitza el valor per defecte que s'especifica en la definició.
 
 ## `\NewDocumentCommand`
 
-From the October 2020 LaTeX release, an extended definition system is available.
-In older LaTeX releases this was available via the `xparse` package which we use
-here for compatibility.
+A partir de la última versió d'octubre de 2020 LaTeX hi ha disponible un nou sistema de definicions més complet. En les antigues versions es podia fer servir el nou sistema a través del paquet `xparse`, però ara ja no cal.
 
-We can repeat the above example but using `\NewDocumentCommand`
+Repetim l'anterior exemple utilitzant `\NewDocumentCommand`
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage{xparse} % Only needed for older LaTeX releases
+\usepackage{xparse} % Només necessari en antigues versions
 \usepackage{xcolor}
 
 \NewDocumentCommand\kw{O{blue} m}{\textcolor{#1}{\itshape #2}}
 
 \begin{document}
 
-Something about \kw{apples} and \kw[red]{oranges}.
+Alguna cosa sobre \kw{pomes} i \kw[red]{taronges}.
 
 \end{document}
 ```
 
-Just as with `\newcommand`, `\NewDocumentCommand` takes the command
-being defined (`\kw` here) and the definition body, using `#1` to `#9`
-for the arguments, however the difference is in how the arguments are
-specified.
+Igual que féiem amb `\newcommand`, `\NewDocumentCommand` agafa la definició de la comanda (en aquest cas `\kw`) i el cos de la definició, utilitzant `#1` a `#9` per als arguments, però la diferència està en com s'especifiquen els arguments.
 
-Unlike `\newcommand` where just the number of arguments is given,
-optionally supplying a default for the first, with
-`\NewDocumentCommand` each argument is specified by a letter so a two
-argument command would be specified by `{mm}` rather than `[2]`. This
-is slightly more verbose but allows many more forms of commands to be
-defined. Here we just give this simple example where the first
-argument is optional, defaulting to blue (`O{blue}`) and the second
-argument is mandatory (`m`).
+A diferència de `\newcommand` on només es donen el número exacte d'arguments (amb la possibilitat de què el primer sigui un valor per defecte), amb `\NewDocumentCommand` cada argument s'especifica per una lletra de manera que una comanda amb dos arguments s'especifica amb `{mm}` en comptes de `[2]`. Aquesta sintaxi és una mica més carregada però permet més flexibilitat en la definició de les comandes. Aquí tan sols hem donat un senzill exemple on el primer argument és opcional, i té valor per defecte blau (`O{blue}`) i el segon argument és obligatori (`m`).

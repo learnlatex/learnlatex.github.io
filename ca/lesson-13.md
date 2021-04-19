@@ -43,8 +43,8 @@ Un document llarg podria per tant semblar-se a alguna cosa similar a:
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
-\title{A Sample Book}
-\author{John Doe \and Joe Bloggs}
+\title{Un llibre d'exemple}
+\author{John Doe \i Joe Bloggs}
 
 \IfFileExists{\jobname.run.xml}
 {
@@ -56,8 +56,8 @@ Un document llarg podria per tant semblar-se a alguna cosa similar a:
   }
 }
 {
-% Do a full document initially to generate
-% all the aux files
+% Fem un document sencer per tal de generar
+% tots els fitxers auxiliars
 }
 
 \begin{document}
@@ -120,24 +120,24 @@ Afegeix alguns objectes flotants i crea un index de taules i figures. Si utilitz
 #### pref.tex
 <!-- pre2 {% raw %} -->
 ```latex
-\chapter{Preface}
-The preface text. See \cite{doody}.
+\chapter{Prefaci}
+El text del prefaci. Veure \cite{doody}.
 ```
 <!-- {% endraw %} -->
 
 #### chap1.tex
 <!-- pre3 {% raw %} -->
 ```latex
-\chapter{Introduction}
-The first chapter text.
+\chapter{Introducció}
+El text del primer capítol.
 ```
 <!-- {% endraw %} -->
 
 #### chap2.tex
 <!-- pre4 {% raw %} -->
 ```latex
-\chapter{Something}
-The second chapter text.
+\chapter{Alguna cosa}
+El text del segon capítol.
 ```
 <!-- {% endraw %} -->
 
@@ -145,7 +145,7 @@ The second chapter text.
 <!-- pre5 {% raw %} -->
 ```latex
 \chapter*{Appendix}
-The first appendix text.
+El text del primer apèndix.
 ```
 <!-- {% endraw %} -->
 
@@ -163,7 +163,7 @@ The front cover
 ```latex
 \begin{center}
 \large
-For \ldots
+Per \ldots
 \end{center}
 ```
 <!-- {% endraw %} -->
@@ -181,7 +181,7 @@ Copyright 2020 learnlatex.
 <!-- pre9 {% raw %} -->
 ```latex
 \begin{center}
-The back cover
+La contraportada
 \end{center}
 ```
 <!-- {% endraw %} -->

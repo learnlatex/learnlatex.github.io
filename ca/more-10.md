@@ -1,20 +1,15 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Més sobre: Mathematics"
-description: "This lesson show more amsmath alignment environments, how to make math bold, the math extension package mathtools, and using Unicode input for maths."
-toc-anchor-text: "Més sobre: Mathematics"
+lang: "ca"
+title: "Més sobre: Matemàtiques"
+description: "En aquesta lliçó s'explica més sobre els entorns amsmath d'alineació, com fer text matemàtic en negreta, l'extensió matemàtica del paquet mathtools, i utilitzar entrada Unicode per a expressions matemàtiques."
+toc-anchor-text: "Més sobre: Matemàtiques"
 ---
 
 
-## Further `amsmath` alignments
+## Més alineacions amb `amsmath`
 
-In addition to the `align*` environment shown in the main lesson,
-`amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment, and `multline` for
-splitting a larger single expression over multiple lines, aligning the
-first line to the left, and the last to the right. In all cases the `*`
-form  omits the equation numbers by default.
+A més a més de l'entorn `align*` que hem ensenyat en la lliçó principal, `amsmath` disposa d'altres mètodes matemàtics de tipus display, entre d'altres destaquem `gather` per a displays multilínia que no necessiten alineació, i `multiline` per tallar i estendre una expressió molt llarga en diverses línies, justificant la primera línia a l'esquerra, i la última a la dreta. En tots els casos l'ús de `*` evita l'enumeració de l'equació.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -39,19 +34,16 @@ Multline
 \end{document}
 ```
 
-### Columns in math alignments
+### Columnes en alineacions matemàtiques
 
-The `amsmath` alignment environments are designed to take pairs of
-columns with the first column of each pair aligned to the right and
-the second aligned to the left. This allows multiple equations to be
-shown, each aligned towards its relation symbol.
+Els entorns d'alineació `amsmath` estan dissenyats per agafar parells de columnes amb la primera columna de cada parell justificat a la dreta i el segon justificat a l'esquerra. Això permet mostrar múltiples equacions cadascuna justificada respecte el símbol de relació entre els membres de les equacions.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
-Aligned equations
+Equacions alineades
 \begin{align*}
 a &= b+1   &  c &= d+2  &  e &= f+3   \\
 r &= s^{2} &  t &=u^{3} &  v &= w^{4}
@@ -60,10 +52,7 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
-
-In addition there are variants of the display environments ending
-in `ed` that make a subterm inside a larger display.
-For example, `aligned` and `gathered` are variants of `align` and `gather` respectively.
+A més a més, hi ha variants dels entorns display que finalitzen amb `ed` i que permeten crear una subpart d'un display més llarg, per exemple, `aligned` i `gathered`.
 
 ```latex
 \documentclass{article}
@@ -85,9 +74,7 @@ d&=c
 \end{document}
 ```
 
-`aligned` takes a positional optional argument similar to `tabular`.
-This is often useful to align an inline math formula on its top row;
-compare the items in the list in the following example.
+`aligned` pren un argument opcional de posició similar a `tabular`. Això sovint és últil quan volem alinear una fórmula matemàtica inline en la fila de dalt; compara els elemens de la llista en el següent exemple.
 
 ```latex
 \documentclass{article}
@@ -109,11 +96,8 @@ c&=d
 \end{document}
 ```
 
-## Bold Math
-Standard LaTeX has two methods to give bold symbols in math. To make
-an entire expression bold, use `\boldmath` before entering the
-expression. The command `\mathbf` is also available to set individual
-letters or words in upright bold roman.
+## Negreta en Matemàtiques
+El LaTeX estàndard té dos mètodes per tal de què els símbols matemàtics estiguin en negreta. Per fer que tota l'expressió estigui en negreta usarem `\boldmath` abans d'entrar l'expressió. La comanda `\mathbf` també està disponible per a posar negreta en caràcters o paraules de forma individual.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -127,15 +111,11 @@ $(x+y)(x-y)=x^{2}-y^{2}$
 {\boldmath $(x+y)(x-y)=x^{2}-y^{2}$ $\pi r^2$}
 
 $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
-$\mathbf{\pi} r^2$ % bad use of \mathbf
+$\mathbf{\pi} r^2$ % mal ús de \mathbf
 \end{document}
 ```
 
-If you want to access bold symbols (as would be used by `\boldmath`)
-within an otherwise normal weight expression, then you can use the
-command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as `=` and Greek letters. (Note that `\mathbf` has no effect
-on `\pi` in the example above.)
+Si vols accedir a símbols en negreta (tal com s'utilitzaria amb `\boldmath`) dins d'una expressió matemàtica que utilitza caràcters normals, podem utilitzar la comanda `\bm` del paquet `bm`. Fixa't que `\bm` també treballa amb símbols com ara `=` o les lletres gregues. (Fixa't que `\mathbf` no té cap efecte sobre `\pi` en l'exemple anterior.)
 
 ```latex
 \documentclass[a4paper]{article}
@@ -154,9 +134,8 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 ```
 
 ## Mathtools
-The package `mathtools` loads `amsmath` and adds several additional
-features, such as variants of the `amsmath` matrix environments that
-allow the column alignment to be specified.
+El paquet `mathtools` carrega `amsmath` i afegeix algunes opcions addicionals, com ara algunes variants dels entorns per a matrius de `amsmath` que permeten indicar la justificació de les columnes.
+
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
@@ -177,13 +156,7 @@ allow the column alignment to be specified.
 
 ## Unicode Math
 
-As will be seen in [Lesson 14](lesson-14), there are variant TeX
-engines that use OpenType fonts. By default, these engines still use
-classic TeX math fonts but you may use the `unicode-math` package
-to use OpenType Math fonts. The details of this package are beyond
-this course and we refer you to the
-[package documentation](https://texdoc.org/pkg/unicode-math).
-However, we give a small example here.
+Com veurem en la [Lliçó 14](lesson-14), hi ha variants del motor TeX que utilitzen fonts OpenType. Per defecte, aquests motors encara utilitzen les fonts clàssiques matemàtiques de TeX però hem d'utilitzar el paquet `unicode-math` si volem utilitzar les fonts OpenType. Els detalls d'aquest paquet sobrepassen el curs però aquí tens la [documentació](https://texdoc.org/pkg/unicode-math). Tanmateix, et donem un petit exemple.
 
 ```latex
 % !TEX lualatex
@@ -194,12 +167,12 @@ However, we give a small example here.
 
 \begin{document}
 
-One two three
+Un dos tres
 \[
 \log \alpha + \log \beta = \log(\alpha\beta)
 \]
 
-Unicode Math Alphanumerics
+Símbols matemàtics i alfanumèrics amb Unicode
 \[A + \symfrak{A}+\symbf{A}+ \symcal{A} + \symscr{A}+ \symbb{A}\]
 
 \end{document}

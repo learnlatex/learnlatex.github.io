@@ -26,9 +26,9 @@ Si estàs utilitzant un sistema online, senzillament clica a ‘Obre a Overleaf�
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Hey world!
+Hola món!
 
-This is a first document.
+Aquest és un primer document.
 \end{document}
 ```
 
@@ -64,13 +64,13 @@ Podem afegir comentaris a un fitxer de LaTeX començant amb el caràcter `%`; An
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
 \usepackage[T1]{fontenc}
-% A comment in the preamble
+% Un comentari en el preàmbul
 \begin{document}
-% This is a comment
-This is   a simple
-document\footnote{with a footnote}.
+% Això és un comentari
+Això és un document
+senzill\footnote{amb un peu de pàgina}.
 
-This is a new paragraph.
+Aquest és un paràgraf nou.
 \end{document}
 ```
 

@@ -28,14 +28,16 @@ El 'kernel' de LaTeX (el nucli LaTeX) és bastant limitat quant a les possibilit
 
 %\usepackage[catalan]{babel}
 
-\usepackage[width = 6cm]{geometry} % To force hyphenation here
+\usepackage[width = 6cm]{geometry} % Per forçar la separació sil·làbica
 
 \begin{document}
 
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
+Aquí tenim molt contingut de farciment doncs volem demostrar com LaTeX gestiona
+separació sil·làbica de les paraules, de manera que com a mínim tinguem alguna paraula
+amb un guionet de separació.
+Aquí tenim molt contingut de farciment doncs volem demostrar com LaTeX gestiona
+separació sil·làbica de les paraules, de manera que com a mínim tinguem alguna paraula
+amb un guionet de separació.
 
 \end{document}
 ```
@@ -54,30 +56,30 @@ El paquet `babel` fa molt més que la separació sil·làbica, depenent de quin 
 \usepackage[margin=1in]{geometry}
 
 \begin{document}
-Hey world!
+Hola món!
 
-This is a first document.
-
-
-% ================
-\chapter{Chapter One}
-Introduction to the first chapter.
-
-
-\section{Title of the first section}
-Text of material in the first section
-
-Second paragraph.
-
-\subsection{Subsection of the first section}
-
-Text of material in the subsection.
+Aquest és un primer document.
 
 
 % ================
-\section{Second section}
+\chapter{Capítol Primer}
+Introducció al primer capítol.
 
-Text of the second section.
+
+\section{Títol de la primera secció}
+Text del material de la primera secció.
+
+Segon paràgraf.
+
+\subsection{Subsecció de la primera secció}
+
+Text del material de la subsecció.
+
+
+% ================
+\section{Segona secció}
+
+Text de la segona secció.
 
 \end{document}
 ```
@@ -102,7 +104,7 @@ El següent exemple mostra una comanda que aplica un format i estil a les paraul
 
 \begin{document}
 
-Something about \kw{apples} and \kw{oranges}.
+Alguna cosa sobre \kw{pomes} i \kw{taronges}.
 
 \end{document}
 ```
@@ -121,7 +123,7 @@ Definir comandes no només serveix per reduir el número de tecles a picar, sin�
 
 \begin{document}
 
-Something about \kw{apples} and \kw{oranges}.
+Alguna cosa sobre \kw{pomes} i \kw{taronges}.
 
 \end{document}
 ```

@@ -51,7 +51,7 @@ Això no és une error TeX sinó més aviat un error de sistema operatiu que ens
 
 \begin{document}
 
-My command is used here \mycommand.
+La meva comanda s'utilitza aquí \mycommand.
 
 \end{document}
 ```
@@ -62,7 +62,7 @@ Això provoca un missatge multilínia en el fitxer log.
 ! Undefined control sequence.
 \mycommand ->\textbold 
                        {hmmm}
-l.8 My command is used here \mycommand
+l.8 La meva comanda s'utilitza aquí \mycommand
                                       .
 ? 
 ```

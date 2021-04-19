@@ -1,21 +1,18 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Més sobre: Structuring longer documents"
-description: "This lesson shows how to make an index, and how to use the imakeidx package to automate the process."
-toc-anchor-text: "Més sobre: Structuring longer documents"
+lang: "ca"
+title: "Més sobre: Estructurar documents llargs"
+description: "Aquesta lliçó explica com fer un index, i com utilitzar el paquet imakeidx per tal d'automatitzar aquest procés."
+toc-anchor-text: "Més sobre: Estructurar documents llargs"
 ---
 
-## Making an index
+## Fer un index
 
-Depending on the type of document you are writing, you might want to include
-an index. This is a bit like making a bibliography, as it uses auxiliary files.
-Luckily, this is all automated by the `imakeidx` package. We need three
-instructions to LaTeX:
+Depenent del tipus de document que estàs escrivint, voldràs incloure un index. És una mica similar a fer una bibliografia, doncs utilitza fitxers auxiliars. Sortosament, el procés està totalment automatitzat amb el paquet `imakeidx`. Per implementar-lo a LaTeX necessitem tres instruccions:
 
-- The `\makeindex` command, which enables creation of an index
-- The `\index` command, which marks up index entries
-- The `\printindex` command, which prints the index
+- La comanda `\makeindex`, que possibilita la creació de l'index
+- La comanda `\index`, que posa una marca en les entrades de l'index
+- La comanda `\printindex`, que imprimeix l'index
 
 ```latex
 \documentclass{article}
@@ -23,20 +20,17 @@ instructions to LaTeX:
 \usepackage{imakeidx}
 \makeindex
 \begin{document}
-Some text about Foo\index{foo}.
+Una mica de text sobre Foo\index{foo}.
 More text\index{baz!bar}.
-Even more text\index{alpha@$\alpha$}.
-More text about a different part of baz\index{baz!wibble}.
+Encara més text\index{alpha@$\alpha$}.
+Encara més text sobre una part diferent de baz\index{baz!wibble}.
 
 \clearpage
-Some text about Foo\index{foo} again, on a different page.
-Even more text\index{beta@$\beta$}.
-Even more text\index{gamma@$\gamma$}.
+Una mica de text sobre Foo\index{foo} altre cop, en una pàgina diferent.
+Encara més text\index{beta@$\beta$}.
+Encara més text\index{gamma@$\gamma$}.
 \printindex
 \end{document}
 ```
 
-We've shown two features of indexing here: subdivision using `!`, and printing
-something different from the 'sort text' of an index entry using `@`. There
-is a lot of customisation possible with an index; try out the example and see
-how it works.
+Acabem de veure dues possibilitats d'indexació: la subdivisió utilitzant `!`, i la impressió d'un index utilitzant `@`. Hi ha moltes possibilitats de personalització d'un index; prova l'exemple i mira com funciona.

@@ -1,216 +1,141 @@
 ---
 layout: "page"
-lang: "en"
-title: "Using the learnlatex.org site"
-description: "This page explains the learnlatex.org website itself and how to best make use of it."
-permalink: /en/help
+lang: "ca"
+title: "Utilitzant el lloc web de learnlatex.org"
+description: "Aquesta pàgina explica el site learnlatex.org i com aprofitar-lo al màxim."
+permalink: /es/help
 ---
 
-# Help
+# Ajuda
 
 
-## Navigating the site
+## Navegant pel lloc web
 
-The course consists of 16 core lessons that can be reached from the [table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+El curs consisteix en 16 lliçons principals presentades a la [taula de continguts]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) o a la [pàgina inicial](./).
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 16 lessons _without_ reading the additional lessons.
+Cada lliçó té un enllaç associat a una altra lliçó, que permet aprofundir sobre el tema. És possible estudiar les 16 lliçons principals _sense_ haver de llegir les lliçons addicionals.
 
-At the end of the course there are one or more lessons specific to the
-language being used for the lessons, and finally a gallery of examples
-of packages demonstrating LaTeX use not covered by this course.
+Al final del curs hi ha una o més lliçons específiques de l'idioma utilitzat i una galeria amb exemples d'alguns paquets de LaTeX que no s'han explicat durant el curs.
 
 ---
 
-## Examples 
+## Exemples 
 
-### Running the examples
+### Executar els exemples
 
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+Cada exemple consisteix en un document LaTeX petit i complet, que es mostra a la pàgina de la següent forma:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Example text.
+Text d'exemple.
 \end{document}
 ```
 
-Each example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
+Els exemples es poden editar i fer-ne canvis, potser com a part dels exercicis proposats que hi ha a la fi de cada lliçó.
 
-The editor being used is [ACE](https://ace.c9.io/).
+L'editor que hem utilitzat és [ACE](https://ace.c9.io/).
 
-You may customise the theme used in the editor (for example using a
-dark theme with light text on a dark background) on the [Site Settings](settings) page.
-A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
-while on any example in the site. This displays a panel which allows you to change all the ACE settings.
+Pots personalitzar el tema que s'ha utilitzat en l'editor (per exemple utilitzant un tema de fons fosc i text clar) en la pàgina de [configuració del lloc web](settings). Una forma convenient d'experimentar amb diferents temes és utilitzar <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> a Mac) en qualsevol dels exemples del lloc. Això ens mostrarà un penell que ens permetrà canviar els paràmetres de configuració d'ACE.
 
-The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+El repositori d'ACE té una útil llista de [dreceres de teclat de l'editor](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 
+#### Tres maneres d'executar un exemple
 
-#### Three ways to run the example
+* Utilitzar el servei de Overleaf
+* Utilitzar el servei de TeXLive.net
+* Instal·lar el sistema TeX localment
 
-* Use the Overleaf service
-* Use the TeXLive.net service
-* Use a locally installed TeX system
+##### Utilitzar el servei de Overleaf
 
-##### Use the Overleaf service
+Overleaf és potser el servei d'edició de LaTeX en línia més popular. El botó <button>Obre a Overleaf</button>, sota de l'exemple, enviarà el codi a [Overleaf](https://www.overleaf.com/about).
 
-Overleaf is one of the most popular online LaTeX editing services. The 
-<button>Open in Overleaf</button> button, below the example, will submit the 
-code to [Overleaf](https://www.overleaf.com/about).
+Si no disposes d'un compte seràs redirigit a la pàgina de login on podràs registrar-te en el servei de Overleaf. És un servei gratuït però serà necessari donar alguns detalls i acceptar els Termes i Condicions.
 
-If you do not have an account, or the account details are not
-already cached in your browser, then you will be redirected to a
-login page where you may login or register with Overleaf. This is a
-free service but does require you to give some details and agree to
-terms and conditions.
+Si el teu compte de Overleaf està emmagatzemat en el teu navegador, aleshores Overleaf s'obrirà en un nou tabulador, en un nou projecte amb el codi. Podràs aleshores editar-lo a Overleaf que de forma simultània que executarà LaTeX amb el teu codi mostrant la sortida resultant o el log d'errors.
 
-If your Overleaf account is already cached in your browser, then
-Overleaf will be opened in a new tab, with a new
-project with the code. You may then edit it in
-Overleaf which will simultaneously run LaTeX on your code showing
-the resulting output or error log.
+Les característiques d'edició d'Overleaf són molt extenses i aquí no tenim intenció de detallar-les, però només dir que podràs guardar el teu projecte al teu compte de Overleaf i retornar-hi més endavant.
 
-The editing features in Overleaf are far more extensive than on this
-site, and you may save your project in your Overleaf account and
-return to it later.
+##### Utilitzar el servei de TeXLive.net
 
-##### Use the TeXLive.net service
+El botó <button>Executa a TeXLive.net</button>, a sota en l'exemple, executarà el codi en el servei
+[TeXLive.net](https://texlive.net)[^1].
 
-The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
-[TeXLive.net](https://texlive.net) service[^1].
+El servei TeXLive.net es va desenvolupar específicament per donar suport a aquest lloc web, i en particular utilitza la llibreria [PDF.js](https://mozilla.github.io/pdf.js/) per habilitar la visualització de PDF en el navegador i en el mòbil sense haver de fer servir cap altre lector de PDFs.
 
-The TeXLive.net service was developed specifically to support this site, and
-in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
-to enable display of PDF on mobile and other browsers without built in PDF 
-readers.
+El document PDF resultant (o potser el log d'errors) es mostrarà a sota de l'exemple. Amb el botó <button>Esborrar sortida</button> podràs esborrar aquest PDF (però potser no cal que ho facis i el pots deixar visible).
 
-The resulting PDF document (or section of the error log) will be
-shown inline immediately below the example. A <button>Delete
-Output</button> button will be provided so that you may remove this output
-(or you may leave it in place and continue the rest of the lesson
-below).
+Fixa't que **TeXLive.net** no requereix que et donis d'alta ni facis login, per tant és molt pràctic per a petits exemples, però no proporciona cap mecanisme per guardar el teu document. Qualsevol canvi que facis en l'exemple es perdrà quan surtis de la pàgina.
 
-Note that **TeXLive.net** requires no login or signup of any sort
-so it is very convenient for small examples, but this site
-provides no  mechanism to save your document. Any changes that you
-make to the example are lost if you move off the page.
+##### Sistema TeX instal·lat localment
 
-##### Locally installed TeX system
-
-If you have a TeX system installed locally, then you may copy the
-example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor (Ctrl-A Ctrl-C
-in windows for example). This will place the code in your operating system
-clipboard so you can start a blank document using your local
-editor, and paste in the text.
+Si tens un sistema TeX instal·lat a la teva màquina, podràs copiar el codi de l'exemple fora de la pàgina, seleccionant-lo de forma explícita o utilitzant la drecera (per ex Ctrl-C). Tindràs el codi disponible en el porta-papers i podràs enganxar-lo en un document nou amb el teu editor preferit.
    
-### Troubleshooting
+### Resolent problemes
 
-Our examples are based around using an up-to-date LaTeX installation. They all 
-work with both of our online demonstration systems, so if you get errors with 
-the examples we provide, you might want to check if your LaTeX system is 
-up-to-date.
+Els nostres exemples estan provats amb una versió de LaTeX actualitzada. Tots funcionen amb les dues versions de serveis online que hem comentat, i per tant si en el teu sistema detectes algun error, potser la teva versió de LaTeX no està actualitzada.
 
 ---
 
 ## Choosing the TeX engine
 
-When submitting example documents, by default the `pdflatex` engine will be used.
+Quan executes els documents d'exemple, per defecte s'utilitza el motor de `pdflatex`.
 
-You can force the choice of `latex`, `pdflatex`, `xelatex`, `lualatex`,
-`platex` or `uplatex` by using a comment of the form:
+Pots escollir entre `latex`, `pdflatex`, `xelatex`, `lualatex`, `platex` o `uplatex` utilitzant el comentari:
 
-`% !TEX ` _any text_ `lualatex`
+`% !TEX ` _qualsevol text_ `lualatex`
 
-where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
+on l'espai en blanc a l'inici és opcinal i les majúscules s'ignoren així com _qualsevol text_ entre la primera i la última paraula.
 
-This allows the form `% !TEX program=pdflatex` used by some TeX editors
-but does not require the `program=` and is currently restricted to
-specifying just one of the engines that are supported on
-the online systems being used.
+Pots veure un exemple de com s'utilitza un comentari per especificar LuaLaTeX en [algun dels exemples en aquest lloc web](more-14).
 
-You can see an example of a comment being used to specify LuaLaTeX in
-[some of the examples on this site](more-14).
+Si s'especifica `platex` o `uplatex`, aleshores el programa que s'utilitza per generar el PDF és `dvipdfmx`, a partir del fitxer DVI que aquestes variants generen. De manera similar, si s'especifica `latex` s'utilitza `dvips` i `ps2pdf`.
 
-If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
-also used to produce the PDF result from the DVI file that these variants generate.
-Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
-
-If the engine is not specified in a `% !TeX` comment, then `pdflatex` will be used
-unless you have specified a default TeX engine on the [Site Settings](settings) page.
+Si no s'especifica `% !TeX` en el comentari, aleshores s'utilitzarà `pdflatex` a no ser que hagis especificat el motor TeX per defecte en la pàgina de [configuració](settings) page.
 
 ---
 
-## Choosing how to display the output
+## Escollir com visualitzar la sortida
 
-If you use the TeXLive.net system, then the PDF
-output from running an example is shown using
-[PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behavior over the widest range of browsers.
+Si utilitzes el sistema TeXLive.net, el PDF de sortida es genera amb la llibreria [PDF.js](https://mozilla.github.io/pdf.js/). Això té un comportament consistent independentment del navegador que utilitzis.
 
-If you would prefer to use your browser's default PDF reader (either
-its built in one, or an external application that you have configured)
-then add a comment of the form:
+Si vols utilitzar el lector de PDFs associat al teu navegador (ja sigui perquè ve incorporat o perquè has associat una aplicació externa) hauràs d'afegir un comentari de la forma:
 
 `% !TEX ` _any text_ `pdf`
 
-The default behavior can be explicitly specified by using `pdfjs` as
-the final token. For debugging you may sometimes want the log file
-returned, even if the document produces a PDF with
-no errors. This can be specified by using `log` as the final token in
-the comment.
+El comportament per defecte es pot especificar utilitzant `pdfjs` en la marca final. Quan facis proves és possible que necessitis el fitxer de log, fins i tot si el document produeix un PDF sense errors. Això serà possible si especifiques la marca `log` al final del comentari.
 
-As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
-page. The Settings are specific to each browser, so for example you
-may choose to use the default `pdfjs` setting on your mobile device,
-but use `pdf` on your desktop browser to use its default PDF rendering.
+Com a alternativa a utilitzar el comentari `% !TeX`, pots especificar el paràmetre de retorn del lloc en la [pàgina de configuració](settings). La configuració és específica de cada navegador, de manera que pots escollir el valor `pdfjs` per al teu dispositiu mòbil, però utilitzar `pdf` en el navegador de l'ordinador de sobretaula.
 
 
 ---
 
-## HTML output (make4ht)
+## Sortida HTML (make4ht)
 
-If using the TeXLive.net system, then an additional return option,
-`make4ht`, may be specified. This returns one or more HTML pages
-in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `latex` processing.
+Si utilitzes el sistema TeXLive.net, aleshores s'ha d'especificar l'opció de retorn `make4ht`, que retorna una o més pàgines HTML dins del marc de la pàgina. Es pot especificar al mateix temps que `xelatex` o `lualatex` o bé el valor per defecte `latex`.
 
-To enable this output, add the comment:
+Per habilitar aquesta sortida hem d'afegir el comentari:
 
 
 `% !TeX make4ht`
 {: .noedit :}
 
 
-Alternatively you may specify `make4ht` as the default return option
-on the [Site Settings](settings) page.
+Alternativament pots especificar l'opció de retorn `make4ht` en la [pàgina de configuració](settings).
 
 
-If using a locally installed TeX system, the same output may be obtained
-by executing
+Si utilitzes un sistema TeX instal·lat localment, pots obtenir el mateix resultat executant
 
 `make4ht  document.tex "2,mathjax"`
 {: .noedit :}
 
-with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
+afegint l'opció `-x` o `-l` si s'especifica XeLaTeX o LuaLaTeX.
 
-When running locally, other configurations would be possible. See the [make4ht
-manual](https://texdoc.org/pkg/make4ht).
+Quan executem localment també són possibles altres configuracions. Veure el [manual de make4ht](https://texdoc.org/pkg/make4ht).
 
 ---
 
-[^1]: Note that during development of the site we have also used 
-      [LaTeX.Online](https://latexonline.cc/) and
-      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.
-
+[^1]: S'ha de fer notar que durant el desenvolupament d'aquest lloc web també hem utilitzat [LaTeX.Online](https://latexonline.cc/) i [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) i volem donar les gràcies als programadors d'aquests serveis web per fer actualitzacions i habilitar els exemples del lloc web des del principi.

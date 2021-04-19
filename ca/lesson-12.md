@@ -89,15 +89,15 @@ L'estructura bàsica del nostre document es mostra en aquest exemple.
 \usepackage{natbib}
 
 \begin{document}
-The mathematics showcase is from \citet{Graham1995}, whereas
-there is some chemistry in \citet{Thomas2008}.
+L'exemple de matemàtiques està extret de \citet{Graham1995}, mentre que
+també hi ha un exemple de química \citet{Thomas2008}.
 
-Some parenthetical citations: \citep{Graham1995}
-and then \citep[p.~56]{Thomas2008}.
+Exemple de citacions entre parèntesi: \citep{Graham1995}
+i també \citep[p.~56]{Thomas2008}.
 
 \citep[See][pp.~45--48]{Graham1995}
 
-Together \citep{Graham1995,Thomas2008}
+Ho posem junt \citep{Graham1995,Thomas2008}
 
 \bibliographystyle{plainnat}
 \bibliography{learnlatex}
@@ -118,19 +118,19 @@ El paquet `biblatex` funciona una mica diferent que `natbib`, ja que encara que 
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[style=authoryear]{biblatex}
-\addbibresource{learnlatex.bib} % file of reference info
+\addbibresource{learnlatex.bib} % fitxer amb la informació de referència
 
 \begin{document}
-The mathematics showcase is from \autocite{Graham1995}.
+L'exemple de matemàtiques està extret de \autocite{Graham1995}.
 
-Some more complex citations: \parencite{Graham1995} or
-\textcite{Thomas2008} or possibly \citetitle{Graham1995}.
+Algunes citacions més complexes: \parencite{Graham1995} o
+\textcite{Thomas2008} o possiblement \citetitle{Graham1995}.
 
 \autocite[56]{Thomas2008}
 
 \autocite[See][45-48]{Graham1995}
 
-Together \autocite{Thomas2008,Graham1995}
+Ho posem junt \autocite{Thomas2008,Graham1995}
 
 \printbibliography
 \end{document}

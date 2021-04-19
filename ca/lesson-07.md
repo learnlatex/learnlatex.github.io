@@ -20,11 +20,11 @@ Per importar gràfics i imatges a LaTeX hauràs d'utilitzar el paquet `graphicx`
 \usepackage{graphicx}
 
 \begin{document}
-This picture
+Aquesta imatge
 \begin{center}
   \includegraphics[height=2cm]{example-image}
 \end{center}
-is an imported PDF.
+és un PDF importat.
 \end{document}
 ```
 
@@ -47,7 +47,7 @@ El més obvi que podem fer sobre una imatge és definir l'`amplada` i l'`altura`
 \begin{center}
   \includegraphics[height = 0.5\textheight]{example-image}
 \end{center}
-Some text
+Una mica de text
 \begin{center}
   \includegraphics[width = 0.5\textwidth]{example-image}
 \end{center}
@@ -77,19 +77,19 @@ les imatges es poden moure d'un lloc a un altre del document. En diem un *object
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummy text as filler
+\usepackage{lipsum}  % produeix un text de farciment automàtic
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
+\lipsum[1-4] % Uns pocs paràgrafs de farciment
 
-Test location.
+Test de posicionament.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image-a.png}
-  \caption{An example image}
+  \caption{Una imatge d'exemple}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % Uns pocs paràgrafs de farciment
 \end{document}
 ```
 

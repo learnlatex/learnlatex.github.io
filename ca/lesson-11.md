@@ -22,7 +22,7 @@ Una elecció habitual és no identar els paràgrafs, sinó més aviat posar un s
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
-\usepackage{lipsum} % Just for some filler text
+\usepackage{lipsum} % Text de farciment
 \begin{document}
 \lipsum
 \end{document}
@@ -53,7 +53,7 @@ respectivament.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some text \hspace{1cm} more text.
+Una mica de text \hspace{1cm} i més text.
 
 \vspace{10cm}
 
@@ -72,7 +72,7 @@ Per a trossos petits de text utilitzarem `\textbf`, `\textit`, `\textrm`, `\text
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
+Anem a practicar amb les fonts: \textbf{bold}, \textit{italic}, \textrm{roman},
 \textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
 \end{document}
 ```
@@ -87,9 +87,9 @@ Normal text.
 
 {\itshape
 
-This text is italic.
+Aquest text és en cursiva.
 
-So it this: the effect is not limited to a paragraph.
+El seu efecte no està limitat al paràgraf.
 
 }
 \end{document}
@@ -102,12 +102,12 @@ _abans_ de canviar una altra vegada al tamany original; fixa't com afegim de for
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Normal text.
+Text normal.
 
 \begin{center}
-{\itshape\large Some text\par}
-Normal text
-{\bfseries\small Much smaller text\par}
+{\itshape\large Més text\par}
+Text normal
+{\bfseries\small Text encara més petit\par}
 \end{center}
 
 \end{document}

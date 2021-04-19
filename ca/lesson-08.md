@@ -63,10 +63,10 @@ Ja tenim tot el que necessitem per a la primera taula. En el següent codi hem a
 
 \begin{document}
 \begin{tabular}{lll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal & Menjar  & Tamany   \\
+  gos    & carn  & mitjà \\
+  cavall  & ufals   & gros  \\
+  granota   & mosques & petit  \\
 \end{tabular}
 \end{document}
 ```
@@ -84,14 +84,14 @@ Si la columna d'una taula conté molt de text serà difícil aconseguir un bon d
 
 \begin{document}
 \begin{tabular}{cl}
-  Animal & Description \\
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  Animal & Descripció \\
+  gos    & El gos és un membre del gènere Canis, que forma part dels
+           cànids (igual que els llops), i és el carnívor terrestre
+           més abundant. \\
+  gat    & El gat és una espècie domèstica de mamífer carnívor petit. És la única
+           espècie domesticada de la família Felidae (felins), i sovint s'anomena com a
+           gat domèstic per distingir-lo dels membres salvatges de la
+           família. \\
 \end{tabular}
 \end{document}
 ```
@@ -107,14 +107,14 @@ El problema és que el tipus de columna `l` mostra el text en una sola fila amb 
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
-  Animal & Description \\
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  Animal & Descripció \\
+  gos    & El gos és un membre del gènere Canis, que forma part dels
+           cànids (igual que els llops), i és el carnívor terrestre
+           més abundant. \\
+  gat    & El gat és una espècie domèstica de mamífer carnívor petit. És la única
+           espècie domesticada de la família Felidae (felins), i sovint s'anomena com a
+           gat domèstic per distingir-lo dels membres salvatges de la
+           família. \\
 \end{tabular}
 \end{document}
 ```
@@ -130,10 +130,10 @@ Si la teva taula té moltes columnes del mateix tipus pot ser molest posar massa
 
 \begin{document}
 \begin{tabular}{*{3}{l}}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animal & Menjar  & Tamany   \\
+  gos    & carn  & mitjà \\
+  cavall  & ufals   & gros  \\
+  granota   & mosques & petit  \\
 \end{tabular}
 \end{document}
 ```
@@ -156,11 +156,11 @@ Un petit consell abans d'introduir-nos amb les línies; en les taules les línie
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animal & Menjar  & Tamany   \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  gos    & carn  & mitjà \\
+  cavall  & ufals   & gros  \\
+  granota   & mosques & petit  \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -179,14 +179,14 @@ La quarta regla que proporciona `booktabs` és `\cmidrule`. Es pot utilitzar per
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animal & Menjar  & Tamany   \\
   \midrule
-  dog    & meat  & medium \\
+  gos    & carn  & mitjà \\
   \cmidrule{1-2}
-  horse  & hay   & large  \\
+  cavall  & ufals   & gros  \\
   \cmidrule{1-1}
   \cmidrule{3-3}
-  frog   & flies & small  \\
+  granota   & mosques & petit  \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -205,15 +205,15 @@ Encara hi ha un altre ús útil de `\cmidrule`. Pots escurçar el principi o el 
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animal & Menjar  & Tamany   \\
   \midrule
-  dog    & meat  & medium \\
+  gos    & carn  & mitjà \\
   \cmidrule{1-2}
-  horse  & hay   & large  \\
+  cavall  & ufals   & gros  \\
   \cmidrule(r){1-1}
   \cmidrule(rl){2-2}
   \cmidrule(l){3-3}
-  frog   & flies & small  \\
+  granota   & mosques & petit  \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -234,16 +234,16 @@ A vegades una línia pot implicar una forta separació, no desitjada, entre dues
 \begin{document}
 \begin{tabular}{cp{9cm}}
   \toprule
-  Animal & Description \\
+  Animal & Descripció \\
   \midrule
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
+  gos    & El gos és un membre del gènere Canis, que forma part dels
+           cànids (igual que els llops), i és el carnívor terrestre
+           més abundant. \\
   \addlinespace
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  gat    & El gat és una espècie domèstica de mamífer carnívor petit. És la única
+           espècie domesticada de la família Felidae (felins), i sovint s'anomena com a
+           gat domèstic per distingir-lo dels membres salvatges de la
+           família. \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -268,15 +268,14 @@ La justificació pot tenir qualsevol opció vàlida del preàmbul de `tabular`, 
 \usepackage{array}
 \usepackage{booktabs}
 
-
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animal & Menjar  & Tamany   \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  gos    & carn  & mitjà \\
+  cavall  & ufals   & gros  \\
+  granota  & mosques & petit  \\
   fuath  & \multicolumn{2}{c}{unknown} \\
   \bottomrule
 \end{tabular}
@@ -293,15 +292,14 @@ També pots utilitzar `\multicolumn` dins d'una cel·la per prevenir l'aplicaci�
 \usepackage{array}
 \usepackage{booktabs}
 
-
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  \multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Food} & \multicolumn{1}{c}{Size} \\
+  \multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Menjar} & \multicolumn{1}{c}{Tamany} \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  gos    & carn  & mitjà \\
+  cavall  & ufals   & gros  \\
+  granota   & mosques & petit  \\
   fuath  & \multicolumn{2}{c}{unknown} \\
   \bottomrule
 \end{tabular}
@@ -322,19 +320,19 @@ La combinació de cel·les verticalment no està suportat a LaTeX. Normalment n'
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Group     & Animal & Size   \\
+  Grup     & Animal & Tamany   \\
   \midrule
-  herbivore & horse  & large  \\
-            & deer   & medium \\
-            & rabbit & small  \\
+  herbívor & cavall  & gros  \\
+            & cabirol   & mitjà \\
+            & conill & petit  \\
   \addlinespace
-  carnivore & dog    & medium \\
-            & cat    & small  \\
-            & lion   & large  \\
+  carnívor & gos    & mitjà \\
+            & gat    & petit  \\
+            & lleó   & gros  \\
   \addlinespace
-  omnivore  & crow   & small  \\
-            & bear   & large  \\
-            & pig    & medium \\
+  omnívor  & corb   & petit  \\
+            & ós   & gros  \\
+            & porc    & mitjà \\
   \bottomrule
 \end{tabular}
 \end{document}
