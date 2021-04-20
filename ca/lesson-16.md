@@ -16,7 +16,7 @@ Hi ha diferents maneres per accedir a la documentació d'un paquet o classe.
 
 ## `texdoc`
 
-Si has instal·lat una distribució TeX (_per exemple_, TeX Live o MiKTeX) i has inclòs la documentació en el procés d'instal·lació, pots accedir-hi amb la l'eina de línia de comanda `texdoc`. Usant:
+Si has instal·lat una distribució TeX (_per exemple_, TeX Live o MiKTeX) i has inclòs la documentació en el procés d'instal·lació, pots accedir-hi amb l'eina de línia de comanda `texdoc`. Usant:
 
 `texdoc` < _pkg_ >
 
