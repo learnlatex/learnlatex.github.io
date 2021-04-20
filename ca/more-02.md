@@ -6,7 +6,7 @@ description: "Aquesta lliçó explica amb més detall què és LaTeX i el motor 
 toc-anchor-text: "Més sobre: Treballar amb LaTeX"
 ---
 
-En la majoria dels nostres exemple, no utilitzem un programa anomenat `latex` sinó un altres anomenat `pdflatex`. Aquest és un d'una família de programes relacionats, tots ells 'hereus' de `latex`. Hem escollit `pdflatex` perquè segurament és el sistema més utilitzat i ens proporciona fitxers PDF.
+En la majoria dels nostres exemple, no utilitzem un programa anomenat `latex` sinó un altre anomenat `pdflatex`. Aquest només és un dels diferents programes relacionats, tots ells 'hereus' de `latex`. Hem escollit `pdflatex` perquè segurament és el sistema més utilitzat i ens proporciona fitxers PDF.
 
 ## Formats i motors
 

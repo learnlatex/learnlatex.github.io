@@ -38,7 +38,7 @@ Com que `>` i `<` es poden utilitzar per posar coses abans i després del contin
 
 `\itshape` fa el text en cursiva, però només dins la cel·la de la taula. Mirarem com posar format manualment [en una propera lliçó](lesson-11).
 
-Potser voldràs que la primera cel·la no es vegi afectada perquè és la capçalera de la taula. Aleshores pots utilitzar `\multicolumn`. Recorda que pots utilitzar-ho per canviar l'alineació d'una sola cel·la com es mostra a continuació.
+Potser voldràs que la primera cel·la no es vegi afectada perquè és la capçalera de la taula. Aleshores pots utilitzar `\multicolumn`. Recorda que pots utilitzar-ho per canviar l'alineació d'una sola cel·la com es mostra a continuació:
 
 <!-- {% raw %} -->
 ```latex
@@ -63,7 +63,7 @@ Potser voldràs que la primera cel·la no es vegi afectada perquè és la capça
 
 ### Manipular l'espaiat entre columnes
 
-Normalment LaTeX completa cada column amb espais en ambdós costats per donar una visió equilibrada i separar-les de forma convenient. Aquest espaiat es defineix amb la longitud `\tabcolsep`. Com que cada columna es completa pels dos costats es tindrà una separació d'un ample `tabcolsep` en cada lateral de la taula i una separació d'un ample de `2\tabcolsep` entre dues columnes &ndash;, un per cada columna. Pots ajustar aquest espai amb l'amplada que desitgis utilitzant `\setlenght`:
+Normalment LaTeX completa cada columna amb espais en ambdós costats per donar una visió equilibrada i separar-les de forma convenient. Aquest espaiat es defineix amb la longitud `\tabcolsep`. Com que cada columna es completa pels dos costats es tindrà una separació d'un ample `tabcolsep` en cada lateral de la taula i una separació d'un ample de `2\tabcolsep` entre dues columnes (un per cada columna). Pots ajustar aquest espai amb l'amplada que desitgis utilitzant `\setlenght`:
 
 <!-- {% raw %} -->
 ```latex
@@ -103,9 +103,9 @@ Pots canviar aquest espai a qualsevol valor arbitrari amb `@`. Això eliminarà 
 ```
 <!-- {% endraw %} -->
 
-(Veurem `\hspace` una altra vegada [properament](lesson-11); pots endevinar que afegeix un espaiat horitzontal.)
+(En una [propera](lesson-11) lliço veurem `\hspace` una altra vegada; pots endevinar que afegeix un espaiat horitzontal.)
 
-La marca de preàmbul `!` fa una cosa similar. La diferència és que _afegeix_ el seu argument en el mig de l'espaiat entre dues columnes.
+La marca de preàmbul `!` fa una cosa similar. La diferència és que _afegeix_ el seu argument enmig de l'espaiat entre dues columnes.
 
 <!-- {% raw %} -->
 ```latex
@@ -250,7 +250,7 @@ C & D\\
 
 ### `tabularx`
 
-L'entorn `tabularx`, proporcionat pel paquet del mateix nom, té una sintaxi similar a `tabular*` però en comptes d'ajustar l'espaiat inter-columna, ajusta les amplades de les columne especificant un nou tipus de columan, `X`. Això és equivalent a especificar `p{...}` per una determinada amplada.
+L'entorn `tabularx`, proporcionat pel paquet del mateix nom, té una sintaxi similar a `tabular*` però en comptes d'ajustar l'espaiat inter-columna, ajusta les amplades de les columnes especificant un nou tipus de columna, `X`. Això és equivalent a especificar `p{...}` per una determinada amplada.
 
 ```latex
 \documentclass{article}
@@ -331,7 +331,7 @@ A Wider Entry & b\\
 \end{document}
 ```
 
-`longtable` és remarcable en el fet que preserva l'amplada de les columnes en totes les pàgines de la taula; tanmateix, per tal d'aconseguir-ho, potser s'haurà de compilar el document diverses vegades doncs entrades posteriors de la taula amb valors amples poden afectar les amplades en pàgines anteriors.
+`longtable` és remarcable pel fet que preserva l'amplada de les columnes en totes les pàgines de la taula; tanmateix, per tal d'aconseguir-ho, potser s'haurà de compilar el document diverses vegades, doncs entrades posteriors de la taula amb valors amples poden afectar les amplades en pàgines anteriors.
 
 ## Notes al peu de la taula
 
@@ -363,11 +363,11 @@ A Wider Entry & b\\
 
 ## Composició tipogràfica de columnes estretes
 
-Les regles per defecte de salt de línia assumeixen que les línies són relativament llargues, i així hi ha una certa flexibilitat a l'hora d'escollir els salts de línia. El següent exemple mostra diferents possibilitats en el cas de les taules. La primera taula mostra l'ajustament d'espai entre paraules i TeX donarà un missatge d'avís del tipus 'Underfull lines' (línies que deixen espais en blanc). L'ús de `\raggedright` normalment impedeix aquest problema, però pot donar lloc a línies molt irregulars. La comanda `\RaggedRight` del paquet `ragged2e` pot ser un compromís; permet certa irregularitat entre l'ample de les línies, però també divideix una paraula amb un guionet quan és necessari, tal i com es mostra a la tercera taula.
+Les regles per defecte de salt de línia assumeixen que les línies són relativament llargues, i així hi ha una certa flexibilitat a l'hora d'escollir els salts de línia. El següent exemple mostra diferents possibilitats en el cas de les taules. La primera taula mostra l'ajustament d'espai entre paraules, i TeX donarà un missatge d'avís del tipus 'Underfull lines' (línies que deixen espais en blanc). L'ús de `\raggedright` normalment impedeix aquest problema, però pot donar lloc a línies molt irregulars. La comanda `\RaggedRight` del paquet `ragged2e` pot ser un compromís; permet certa irregularitat entre l'ample de les línies, però també divideix una paraula amb un guionet quan és necessari, tal i com es mostra a la tercera taula.
 
-Fixa't amb l'ús que fem de `\arraybackslash`, que 'reseteja' la definició de `\\` de manera que finalitza la fila de la taula.
+Fixa't en l'ús que fem de `\arraybackslash`, que 'reseteja' la definició de `\\` de manera que finalitza la fila de la taula.
 
-Una tècnica alternativa, com es mostra a la quarta taula, és utilitzar una font més petita de manera queles columnes ja no són tan estretes en relació amb el tamany de la font.
+Una tècnica alternativa, com es mostra a la quarta taula, és utilitzar una font més petita de manera que les columnes ja no són tan estretes en relació amb el tamany de la font.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -404,12 +404,12 @@ Dos & Un altre text llarg dins d'un paràgraf estret, amb algunes altres paraule
 
 ## Definir nous tipus de columnes
 
-Com hem explicat a la [lliçó principal](lesson-08), el paquet `array` permet construccions com ara `>{\bfseries}c`  per definir una columna centrada i amb negreta. Moltes vegades és convenient definir un nou tipus de columna per encapsular aquesta definició, per exemple
+Com hem explicat a la [lliçó principal](lesson-08), el paquet `array` permet construccions com ara `>{\bfseries}c`  per definir una columna centrada i en negreta. Moltes vegades és convenient definir un nou tipus de columna per encapsular aquesta definició, per exemple
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-permet l'ús de `B` en el preàmbul d'una taula per tal d'especificar una columna centrada i amb negreta.
+permet l'ús de `B` en el preàmbul d'una taula per tal d'especificar una columna centrada i en negreta.
 
 
 ## Trucs verticals
@@ -437,7 +437,7 @@ Sovint, en comptes de voler que una cel·la s'expandeixi en múltiples files, po
 ```
 <!-- {% endraw %} -->
 
-S'ha de fer notar que pots controlar l'alineació vertical mitjançant un argument opcional de `tabular`; suporta l'ús de `t`, `c`, o `b` per a les alineacions de dalt, centre i baix respectivament i s'utilitza de la següent manera:
+S'ha de fer notar que pots controlar l'alineació vertical mitjançant un argument opcional de `tabular`; suporta l'ús de `t`, `c`, o `b` per a les alineacions de dalt, centre i baix respectivament, i s'utilitza de la següent manera:
 
 <!-- {% raw %} -->
 ```latex

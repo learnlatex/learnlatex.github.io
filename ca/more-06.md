@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Més sobre: Estenent LaTeX utilitzant paquets"
+lang: "ca"
+title: "Més sobre: Ampliant LaTeX utilitzant paquets"
 description: "Aquesta lliçó explica més detalls sobre la càrrega de paquets, ensenya el paquet babel per a la selecció d'idiomes, i dóna més detalls sobre comandes creades per l'usuari."
-toc-anchor-text: "Més sobre: Estenent LaTeX utilitzant paquets"
+toc-anchor-text: "Més sobre: Ampliant LaTeX utilitzant paquets"
 ---
 
 ## Carregar diversos paquets
@@ -83,11 +83,11 @@ Alguna cosa sobre \kw{pomes} i \kw[red]{taronges}.
 \end{document}
 ```
 
-Els valors opcionals venen delimitats per claudàtors `[]` i, si s'ometen, s'utilitza el valor per defecte que s'especifica en la definició.
+Els valors opcionals vénen delimitats per claudàtors `[]` i, si s'ometen, s'utilitza el valor per defecte que s'especifica en la definició.
 
 ## `\NewDocumentCommand`
 
-A partir de la última versió d'octubre de 2020 LaTeX hi ha disponible un nou sistema de definicions més complet. En les antigues versions es podia fer servir el nou sistema a través del paquet `xparse`, però ara ja no cal.
+A partir de la última versió d'octubre de 2020 de LaTeX hi ha disponible un nou sistema de definicions més complet. En les antigues versions es podia fer servir el nou sistema a través del paquet `xparse`, però ara ja no cal.
 
 Repetim l'anterior exemple utilitzant `\NewDocumentCommand`
 

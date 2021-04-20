@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "ca"
 title: "Més sobre: Tractament d'errors"
-description: "Aquesta lliçó explica alguns més errors comuns a LaTeX i explica sobre errors encadenats i errors silenciosos."
+description: "Aquesta lliçó explica alguns altres errors comuns a LaTeX, i explica sobre errors encadenats i errors silenciosos."
 toc-anchor-text: "Més sobre: Tractament d'errors"
 ---
 
@@ -46,7 +46,7 @@ Encara que l'error real és a la línia 10 com es pot veure en les línies de co
 
 ## Errors ficticis degut a errors comesos prèviament
 
-Quan s'utilitza LaTeX de forma interactiva, des de la línia de comanda és possible: amb la tecla `x` podem aturar el procés quan tenim el primer error, editar el document i tornar a executar LaTeX. Tanmateix, si s'obvien els errors o s'utilitza un editor o un sistema en línia, aleshores TeX intentarà tirar endavant; això pot provocar però l'aparició de nous errors.
+Quan s'utilitza LaTeX de forma interactiva, des de la línia de comandes és possible: amb la tecla `x` podem aturar el procés quan tenim el primer error, editar el document i tornar a executar LaTeX. Tanmateix, si s'obvien els errors o s'utilitza un editor o un sistema en línia, aleshores TeX intentarà tirar endavant; això pot provocar però l'aparició de nous errors.
 
 Així que no t'has de preocupar massa pel _número_ d'errors i t'has de concentrar sempre en resoldre el primer error que se t'indica.
 
@@ -76,7 +76,7 @@ l.5 Text_
 ```
 {: .noedit :}
 
-Tanmateix en obviar aquest error i continuar, TeX segueix executant-se i afegirà el `$`en aquest punt, de manera que `_` serà interpretat, en mode matemàtico, com un subindex. El mode matemàtico continua vigent fins que el següent símbol `$` indiqui el final, i per tant la comanda `\alpha` s'interpreta en mode text, generant un nou missatge d'error.
+Tanmateix, en obviar aquest error i continuar, TeX segueix executant-se i afegirà el `$`en aquest punt, de manera que `_` serà interpretat, en mode matemàtic, com un subíndex. El mode matemàtic continua vigent fins que el següent símbol `$` indiqui el final, i per tant la comanda `\alpha` s'interpreta en mode text, generant un nou missatge d'error.
 
 ```
 ! Missing $ inserted.

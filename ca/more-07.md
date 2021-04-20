@@ -2,15 +2,15 @@
 layout: "lesson"
 lang: "ca"
 title: "Més sobre: Incloure i posicionar gràfics"
-description: "Aquesta lliçó explica els detalls de quina manera hauríem d'anomenar i guardar les imatges per ser utilitzades amb LaTeX, i com pots fer els teus propis gràfics dins de LaTeX."
+description: "Aquesta lliçó explica els detalls de quina manera hauríem d'anomenar i guardar les imatges per ser utilitzades a LaTeX, i com pots fer els teus propis gràfics dins de LaTeX."
 toc-anchor-text: "Més sobre: Incloure i posicionar gràfics"
 ---
 
 ## Anomenar els fitxers de gràfics
 
-LaTeX funciona en molts sistemes operatius, així que hem de donar importància al nom dels fitxers. El més segur és anomenar les imatges de forma senzilla, particularment sense espais. Per exemple, si vols organitzar els teus fitxers i guardar totes les imatges en un subdirectori, alguna cosa com `\includegraphics[width=30pt]{pix/mom.png}` és fiable i compatible amb futures versions.
+LaTeX funciona en molts sistemes operatius, així que hem de donar importància al nom dels fitxers. El més fiable és anomenar les imatges de forma senzilla, particularment sense espais. Per exemple, si vols organitzar els teus fitxers i guardar totes les imatges en un subdirectori, alguna cosa com `\includegraphics[width=30pt]{pix/mom.png}` és correcte i compatible amb futures versions.
 
-Els espais en els noms de fitxer sempre han estat problemàtics, però en general podem dir que està suportat. De totes maneres, si experimentes problemes, el primer que hauries de fer és eliminar els espais en blan en el nom del fitxer.
+Els espais en els noms de fitxer sempre han estat problemàtics, però en general podem dir que està suportat. De totes maneres, si experimentes problemes, el primer que hauries de fer és eliminar els espais en blanc en el nom del fitxer.
 
 El suport als accents en el nom del fitxer és variable; en alguns sistemes és problemàtic, particularment a Windows. El més fiable serà sempre utilitzar només caràcters ASCII.
 

@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "ca"
 title: "Més sobre: Accedint a la documentació i cercant ajuda"
 description: "En aquesta lliçó s'explica on pots trobar el codi font de LaTeX."
 toc-anchor-text: "Més sobre: Accedint a la documentació i cercant ajuda"

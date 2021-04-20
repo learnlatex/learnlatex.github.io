@@ -1,16 +1,16 @@
 ---
 layout: "lesson"
 lang: "ca"
-title: "Estenent LaTeX utilitzant paquets i definicions"
-description: "Aquesta lliçó explica com pots estendre i adaptar LaTeX a les teves necessitats i canviar la seva aparença utilitzant els paquets i definicions. Es mostra igualment com pots definir les teves pròpies comandes."
-toc-anchor-text: "Estenent LaTeX"
+title: "Ampliant LaTeX utilitzant paquets i definicions"
+description: "Aquesta lliçó explica com pots ampliar i adaptar LaTeX a les teves necessitats i canviar la seva aparença utilitzant els paquets i definicions. Es mostra igualment com pots definir les teves pròpies comandes."
+toc-anchor-text: "Ampliar LaTeX"
 toc-description: "Utilitzant paquets i definicions."
 ---
 
-# Estenent LaTeX
+# Ampliant LaTeX
 
 <span
-  class="summary">Aquesta lliçó explica com pots estendre i adaptar LaTeX a les teves necessitats i canviar la seva aparença utilitzant els paquets i definicions. Es mostra igualment com pots definir les teves pròpies comandes.</span>
+  class="summary">Aquesta lliçó explica com pots ampliar i adaptar LaTeX a les teves necessitats i canviar la seva aparença utilitzant els paquets i definicions. Es mostra igualment com pots definir les teves pròpies comandes.</span>
 
 Després d'haver declarat un tipus, en el preàmbul pots modificar la funcionalitat afegint un o més paquets (*packages*). Aquests poden
 

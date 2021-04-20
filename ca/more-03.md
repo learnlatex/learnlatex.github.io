@@ -10,8 +10,7 @@ toc-anchor-text: "Més sobre: Estuctura bàsica d'un document LaTeX"
 
 Com es comenta [prèviament](lesson-02), els documents de LaTeX són de text pla. Per veure-ho, prova d'obrir el teu primer document amb un editor de text senzill, per exemple a Windows tens el Notepad. Podràs veure el mateix text que en un editor pensat per a LaTeX, però sense ressaltar les paraules clau.
 
-També pots convertir a PDF sense utilitzar un editor; això significa utilitzar el terminal de comandes, no et preocupis si no hi estàs familiaritzat. Però si estàs avesat a utilitzar el terminal, pots navegar al teu directori on tens el document font `.tex` i executa
-run
+També pots convertir a PDF sense utilitzar un editor; això significa utilitzar el terminal de comandes, no et preocupis si no hi estàs familiaritzat. Però si estàs avesat a utilitzar el terminal, pots navegar al teu directori on tens el document font `.tex` i executa:
 
 `pdflatex first`
 

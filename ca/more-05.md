@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "ca"
 title: "Més sobre: Utilitzar els tipus de document per canviar el disseny"
-description: "En aquesta lliçó s'explica sobre tipus de document de LaTeX més especialitzats."
+description: "En aquesta lliçó s'explica els tipus de document de LaTeX més especialitzats."
 toc-anchor-text: "Més sobre: Utilitzar els tipus de document per canviar el disseny"
 ---
 
@@ -13,7 +13,7 @@ Moltes revistes acadèmiques proporcionen tipus de document de LaTeX per enviar 
 ## Tipus de document per a presentacions
 
 Un tema que necessita un tractament especial, és el de la creació de presentacions. El tipus de
-document `slides` va ser desenvolupat per crear les 'clàssiques' dispositives per imprimir, i no té cap suport per a presentacions digitals. Per fer-ho s'han desenvolupat dos tipus de document, i ambdos són àmpliament utilitzats: `beamer` i `powershot`. Com que `beamer` és probablement el més comú, et mostrer un exemple de com utilizar-lo:
+document `slides` va ser desenvolupat per crear les 'clàssiques' dispositives per imprimir, i no té cap suport per a presentacions digitals. Per fer-ho s'han desenvolupat dos tipus de document, i ambdós són àmpliament utilitzats: `beamer` i `powershot`. Com que `beamer` és probablement el més comú, et mostrem un exemple de com utilizar-lo:
 
 ```latex
 \documentclass{beamer}

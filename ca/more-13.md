@@ -2,17 +2,17 @@
 layout: "lesson"
 lang: "ca"
 title: "Més sobre: Estructurar documents llargs"
-description: "Aquesta lliçó explica com fer un index, i com utilitzar el paquet imakeidx per tal d'automatitzar aquest procés."
+description: "Aquesta lliçó explica com fer un índex, i com utilitzar el paquet imakeidx per tal d'automatitzar aquest procés."
 toc-anchor-text: "Més sobre: Estructurar documents llargs"
 ---
 
-## Fer un index
+## Fer un índex
 
-Depenent del tipus de document que estàs escrivint, voldràs incloure un index. És una mica similar a fer una bibliografia, doncs utilitza fitxers auxiliars. Sortosament, el procés està totalment automatitzat amb el paquet `imakeidx`. Per implementar-lo a LaTeX necessitem tres instruccions:
+Depenent del tipus de document que estàs escrivint, voldràs incloure un índex. És una mica similar a fer una bibliografia, doncs utilitza fitxers auxiliars. Sortosament, el procés està totalment automatitzat amb el paquet `imakeidx`. Per implementar-lo a LaTeX necessitem tres instruccions:
 
-- La comanda `\makeindex`, que possibilita la creació de l'index
-- La comanda `\index`, que posa una marca en les entrades de l'index
-- La comanda `\printindex`, que imprimeix l'index
+- La comanda `\makeindex`, que possibilita la creació de l'índex
+- La comanda `\index`, que posa una marca en les entrades de l'índex
+- La comanda `\printindex`, que imprimeix l'índex
 
 ```latex
 \documentclass{article}
@@ -33,4 +33,4 @@ Encara més text\index{gamma@$\gamma$}.
 \end{document}
 ```
 
-Acabem de veure dues possibilitats d'indexació: la subdivisió utilitzant `!`, i la impressió d'un index utilitzant `@`. Hi ha moltes possibilitats de personalització d'un index; prova l'exemple i mira com funciona.
+Acabem de veure dues possibilitats d'indexació: la subdivisió utilitzant `!`, i la impressió d'un índex utilitzant `@`. Hi ha moltes possibilitats de personalització d'un índex; prova l'exemple i mira com funciona.

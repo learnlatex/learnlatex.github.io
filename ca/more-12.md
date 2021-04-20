@@ -8,7 +8,7 @@ toc-anchor-text: "Més sobre: Cites i referències"
 
 ## Tractar amb referències en llengua no anglesa
 
-El programa BibTeX va ser escrit principalment per tractar amb referències en anglès. Té moltes limitacions gestionant els caràcters accentuats, i encara més limitat amb caràcters fora de l'alfabet llatí. Per contra, el programa Biber es va escriure des del principi per gestionar aquesta diversitat.
+El programa BibTeX va ser escrit principalment per tractar amb referències en anglès. Té moltes limitacions gestionant els caràcters accentuats, i encara més limitat amb els caràcters que no siguin de l'alfabet llatí. Per contra, el programa Biber es va escriure des del principi per gestionar aquesta diversitat.
 
 Això significa que si estàs ordenant la teva bibliografia, i has de fer una ordenació diferent de l'anglesa, hauries d'utilitzar `biblatex` i Biber, més que no pas `natbib` i BibTeX.
 
