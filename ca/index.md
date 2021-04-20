@@ -14,11 +14,11 @@ permalink: /ca/
   class="text-columns">
   <section>
     <h3 class="text-columns__heading">Introducció</h3>
-    <p>LaTeX pot semblar complicat per als nous usuaris, doncs <em>no</em>em> és un processador de texts, i perquè no és una única aplicació. La nostra intenció és ajudar-te amb LaTeX: allò bàsic, la instal·lació, escriure codi, sense voler ensenyar-ho <em>tot</em> de cop. <a href="./mission">Més sobre la nostra missió &hellip;</a></p>
+    <p>LaTeX pot semblar complicat per als nous usuaris, doncs <em>no</em> és un processador de texts, i perquè no és una única aplicació. La nostra intenció és ajudar-te amb LaTeX: allò bàsic, la instal·lació, escriure codi, sense voler ensenyar-ho <em>tot</em> de cop. <a href="./mission">Més sobre la nostra missió &hellip;</a></p>
   </section>
   <section>
     <h3 class="text-columns__heading">Com funciona</h3>
-      <p>Hem agafat tot allò que és més essencial, i n'hem fet <em>16 lliçons curtes</em>, que no haurien de ser llargues d'estudiar. A cada lliçó donem molts exemples. Pots editar i executar els exemples des de la mateixa web. <a href="./help#examples">Més sobre els exemples &hellip;</a></p>
+      <p>Hem agafat tot allò que és més essencial, i n'hem fet <em>16 lliçons curtes</em>, que no haurien de ser difícils d'estudiar. A cada lliçó donem molts exemples. Pots editar i executar els exemples des de la mateixa web. <a href="./help#examples">Més sobre els exemples &hellip;</a></p>
   </section>
 </div>
 

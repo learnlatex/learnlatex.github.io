@@ -36,13 +36,13 @@ LaTeX proporciona un conjunt de tipus estàndard, i tots ells tenen una aparenç
 - `report`  
   documents més llargs amb capítols, per a ser impressos en una sola cara
 - `book`  
-  documents més llargs amb capítols, per a ser impressos a dues cares, amb materials inicial i final (com per exemple un index)
+  documents més llargs amb capítols, per a ser impressos a dues cares, amb materials inicial i final (com per exemple un índex)
 - `letter`  
   cartes sense seccions
 - `slides`  
   per fer presentacions (veure més avall)
 
-Els tipus `article`, `report` i `book` tenen una disponibilitat de comandes molt similar, com em vist. Quan escrivim una `carta`, les comandes disponibles són una mica diferents.
+Els tipus `article`, `report` i `book` tenen una disponibilitat de comandes molt similar, com hem vist. Quan escrivim una `carta`, les comandes disponibles són una mica diferents.
 
 ```latex
 \documentclass{letter}
@@ -62,7 +62,7 @@ El Text el posem aquí
 \end{document}
 ```
 
-Fixa't com s'utilitza ``\\`` per a separar les línies de l'adreça; Estudiarem el salt de línia [una mica més endavant](lesson-11). També fixa't com el tipus `letter` crea un nou entorn per a cada carta i té comandes especials.
+Fixa't com s'utilitza ``\\`` per a separar les línies de l'adreça; estudiarem el salt de línia [una mica més endavant](lesson-11). També fixa't com el tipus `letter` crea un nou entorn per a cada carta i té comandes especials.
 
 Els tipus estàndard `article`, `report` i `book` prenen les opcions `10pt`, `11pt` i `12pt` per definir el tamany de la font, i `twocolumn` per fer un document a dues columnes.
 
@@ -72,9 +72,9 @@ Els tipus principals són molt estables, però això vol dir també que són una
 
 La American Mathematical Society proporciona variants dels tipus estàndard (`amsart`, `amsbook`) amb un disseny similar al que utilitzen les publicacions i revistes matemàtiques.
 
-Els tipus 'extesos' més populars i més importants són el conjunt KOMA-Script i el tipus 'memoir'. El KOMA-Script proporciona un conjunt de tipus amb cert paral·lelisme als estàndard: `scrartcl`, `scrreprt`, `scrbook`, i `scrlttr2`, mentre que el tipus `memoir` només proporciona un tipus que s'assembla a una extensió de `book`.
+Els tipus 'estesos' més populars i més importants són el conjunt KOMA-Script i el tipus 'memoir'. El KOMA-Script proporciona un conjunt de tipus amb cert paral·lelisme als estàndard: `scrartcl`, `scrreprt`, `scrbook`, i `scrlttr2`, mentre que el tipus `memoir` només proporciona un tipus que s'assembla a una extensió de `book`.
 
-Aquests tipus extesos tenen moltes eines i possibilitats de personalització, que explorarem una mica en un exercici. Et pots preguntar com sabrem quin tipus d'eines i possibilitats proporcionen; en parlament [en una propera lliçó](lesson-16), però si vols ja hi pots anar!
+Aquests tipus sxtesos tenen moltes eines i possibilitats de personalització, que explorarem una mica en un exercici. Et pots preguntar com sabrem quin tipus d'eines i possibilitats proporcionen; en parlarem [en una propera lliçó](lesson-16), però si vols ja hi pots anar!
 
 ## Presentacions
 
@@ -82,7 +82,7 @@ El tipus de document `slides` va ser desenvolupat per fer presentacions de trans
 
 ## Exercicis
 
-Explora com canvia l'aparença i disseny del document quan canvies el tipus de document entre els estàndars, el KOMA i el `memoir`.
+Explora com canvia l'aparença i el disseny del document quan canvies el tipus de document entre els estàndars, el KOMA i el `memoir`.
 
 ```latex
 \documentclass{article} % Canvia la classe aquí

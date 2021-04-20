@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "ca"
 title: "Estructura lògica"
-description: "Aquesta lliçó mostra algunes comandes bàsiques per donar format al text, i les compara amb el format semàntic, les comandes de secció i les llistes."
+description: "Aquesta lliçó explica algunes comandes bàsiques per donar format al text, i les compara amb el format semàntic, les comandes de secció i les llistes."
 toc-anchor-text: "Estructura lògica"
 toc-description: "Estructura i presentació visual."
 ---
@@ -10,9 +10,9 @@ toc-description: "Estructura i presentació visual."
 # Estructura lògica
 
 <span
-  class="summary">Aquesta lliçó mostra algunes comandes bàsiques per donar format al text, i les compara amb el format semàntic, les comandes de secció i les llistes.</span>
+  class="summary">Aquesta lliçó explica algunes comandes bàsiques per donar format al text, i les compara amb el format semàntic, les comandes de secció i les llistes.</span>
 
-LaTeX proporciona maneres per concentrar-se en l'estructura lògica del document, i també la capacitat de configurar directament l'aparença del document. La majoria de les vegades, és millor utilitzar mètodes que es focalitzin en l'estructura, doncs d'aquesta manera és més fàcil reutilitzar a modificar el disseny quan s'hagi de fer.
+LaTeX proporciona maneres per concentrar-se en l'estructura lògica del document, i també la capacitat de configurar directament l'aparença del document. La majoria de les vegades, és millor utilitzar mètodes que es focalitzin en l'estructura, doncs d'aquesta manera és més fàcil reutilitzar i modificar el disseny quan s'hagi de fer.
 
 ## Estructura i presentació visual
 
@@ -22,19 +22,19 @@ Començarem amb un exemple que compara una de les comandes de marcat lògic més
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Una mica de text en \emph{negreta i \emph{nested} contingut}.
+Una mica de text en \emph{cursiva i contingut \emph{niat}}.
 
-Una mica de text en \textit{cursiva i \textit{nested} contingut}.
+Una mica de text en \textit{cursiva i contingut \textit{niat}}.
 \end{document}
 ```
 
-Hauràs endevinat que `\textit` és la comanda per formatar text en itàlica, però _sempre_ fa que el text sigui en itàlica, és a dir, no va bé per material niat (`nesting`). Observa com `\emph` gestiona bé els niats. També podem trobar exemples en què èmfasi no és el mateix que itàlica; per exemple, en presentacions en color normalment és millor opció. Amb el marcat lògic, no ens hem de preocupar sobre aquest nivell de detall en el cos del document.
+Hauràs endevinat que `\textit` és la comanda per formatar text en cursiva, però _sempre_ fa que el text sigui en cursiva, és a dir, no va bé per material niat (`nesting`). Observa com `\emph` gestiona bé els niats. També podem trobar exemples en què _èmfasi_ no és el mateix que _itàlica_; per exemple, en presentacions en color normalment és millor opció. Amb el marcat lògic, no ens hem de preocupar sobre aquest nivell de detall en el cos del document.
 
 Més endavant veurem el [manual de l'estil de text](lesson-11), però de moment afegirem `\textbf` a les comandes que per ara coneixem: és la negreta.
 
 ## Comandes de secció
 
-Segurament hauràs utilitzat un processador de text, on quan comences una secció la majoria de la gent entra el títol i el fa més gran i en negreta, i continua amb un salt de línia. A LaTeX, utilitzant el marcat lògic fa que les coses siguin més _fàcils_ que fer el format manualment; utilitzarem la comanda `\section`, que gestiona els canvis de font, l'espaiat vertical, etc., i manté una uniformitat en tot el doucument.
+Segurament hauràs utilitzat un processador de text, on comences una secció i la majoria de la gent posa un títol i el fa més gran i en negreta, i després continua amb un salt de línia. A LaTeX, utilitzem el marcat lògic, i això fa que les coses siguin més _fàcils_ cd fer; utilitzarem la comanda `\section`, que gestiona els canvis de font, l'espaiat vertical, etc., i així mantindrem una uniformitat en tot el doucument.
 
 ```latex
 \documentclass{article}

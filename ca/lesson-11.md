@@ -63,7 +63,7 @@ Even more text.
 
 ## Formatar text de forma explícita
 
-Vàrem explicar a la [lliçó 3](lesson-03) que sempre és preferible per al document utilitzar l'estructura lògica. Però algunes vegades voldràs que el teu text sigui en negreta, cursiva, mono-espaiat, etc. Hi ha dos tipus de comandes per fer-ho: unes per a trossos petits de text, i d'altres per a continguts del cos del document (frases, páràgrafs, etc.)
+Vàrem explicar a la [lliçó 3](lesson-03) que sempre és preferible per al document utilitzar l'estructura lògica. Però algunes vegades voldràs que el teu text sigui en negreta, cursiva, mono-espaiat, etc. Hi ha dos tipus de comandes per fer-ho: unes per a trossos petits de text, i d'altres per a continguts en el cos del document (frases, paràgrafs, etc.)
 
 Per a trossos petits de text utilitzarem `\textbf`, `\textit`, `\textrm`, `\textsf`,
 `\texttt` i `\textsc`.
@@ -77,7 +77,7 @@ Anem a practicar amb les fonts: \textbf{bold}, \textit{italic}, \textrm{roman},
 \end{document}
 ```
 
-Per a parts del text del cos d'un document, utilitzarem comandes que canvien l'estil del tipus de lletra a utilitzar. Per fer-ho necessitarem situar la comanda i el text en un mateix _grup_ ja que, en cas contrari, l'estil s'aplicaria a tot el document. Els entorns de LaTeX són grups, a l'igual que les cel·les d'una taula, i fora d'aquests casos particulars, posarem el nostre contingut entre claus `{...}` per explicitar la creació d'un grupo.
+Per a parts del text en el cos d'un document, utilitzarem comandes que canvien l'estil del tipus de lletra a utilitzar. Per fer-ho necessitarem situar la comanda i el text en un mateix _grup_ ja que, en cas contrari, l'estil s'aplicaria a tot el document. Els entorns de LaTeX són grups, a l'igual que les cel·les d'una taula, i fora d'aquests casos particulars, posarem el nostre contingut entre claus `{...}` per explicitar la creació d'un grup.
 
 ```latex
 \documentclass{article}
@@ -96,7 +96,7 @@ El seu efecte no està limitat al paràgraf.
 ```
 
 Podem canviar el tamany de la font de manera similar; aquestes comandes s'apliquen al contingut d'un grup, com els anteriors. Els tamanys es defineixen de forma relativa: `\huge`, `\large`, `\normalsize`, `\small` i `\footnotesize` són els més comuns. És important finalitzar el paràgraf
-_abans_ de canviar una altra vegada al tamany original; fixa't com afegim de forma explícita un `\par` (salt de paràgraf) aquí.
+_abans_ de canviar una altra vegada al tamany original; fixa't com aquí afegim de forma explícita un `\par` (salt de paràgraf).
 
 ```latex
 \documentclass{article}

@@ -12,15 +12,15 @@ toc-description: "Utilitzant paquets i definicions."
 <span
   class="summary">Aquesta lliçó explica com pots estendre i adaptar LaTeX a les teves necessitats i canviar la seva aparença utilitzant els paquets i definicions. Es mostra igualment com pots definir les teves pròpies comandes.</span>
 
-Després d'haver declarat un tipus, en el preàmbul pots modificar la funcionalitat afegint un o més *packages*. Aquests poden
+Després d'haver declarat un tipus, en el preàmbul pots modificar la funcionalitat afegint un o més paquets (*packages*). Aquests poden
 
-- Com funciona algunes parts de LaTeX
+- Canviar la manera com funciona algunes parts de LaTeX
 - Afegir noves comandes a LaTeX
 - Canviar el disseny del document
 
 ## Canviar com funciona LaTeX
 
-El 'kernel' de LaTeX (el nucli LaTeX) és bastant limitat quant a les possibilitats de personalització, i per això alguns paquets extra afegeixen possibilitats comunes. El primer és la possibilitat de canviar la manera com LaTeX es comporta amb caràcters específics del llenguatge (guionets i separació sil·làbica, signes de puntuació, cometes, localització, etc.). Diferents idiomes tenen diferents regles, així doncs és important dir-li a LaTeX quina has d'utilitzar. Això ho gestiona el paquet `babel`.
+El 'kernel' de LaTeX (el nucli) és bastant limitat quant a les possibilitats de personalització, i per això alguns paquets extra afegeixen opcions habituals. El primer és la possibilitat de canviar la manera com LaTeX es comporta amb caràcters específics del llenguatge (guionets i separació sil·làbica, signes de puntuació, cometes, localització, etc.). Diferents idiomes tenen diferents regles, així doncs és important dir-li a LaTeX quina has d'utilitzar. Això ho gestiona el paquet `babel`.
 
 ```latex
 \documentclass{article}
@@ -44,7 +44,7 @@ amb un guionet de separació.
 
 Prova de descomentar la línia que carrega `babel` i mira el seu efecte. (Les regles estàndard de separació sil·làbica son les de l'anglès US.)
 
-El paquet `babel` fa molt més que la separació sil·làbica, depenent de quin llenguatge estem parlant; et donem [més detalls](more-06) en cas que els necessitis.
+El paquet `babel` fa molt més que la separació sil·làbica, depenent de quin és l'idioma del que estem parlant; et donem [més detalls](more-06) en cas que els necessitis.
 
 ## Canviar el disseny
 
@@ -94,7 +94,7 @@ Un dels punts forts de LaTeX és que pots escollir entre milers de paquets, incl
 
 A vegades necessites una comanda específica per al teu document, potser alguna funcionalitat que no es troba en els paquets específics, o potser una comanda per entrar una expressió comuna que utilitzes moltes vegades.
 
-El següent exemple mostra una comanda que aplica un format i estil a les paraules 'apples' i 'oranges', cosa que pot suposar un estalvi de temps important si aquesta funcionalitat es fa servir moltes vegades.
+El següent exemple mostra una comanda que aplica un format i estil a les paraules 'pomes' i 'taronges', cosa que pot suposar un estalvi de temps important si aquesta funcionalitat es fa servir moltes vegades.
 
 ```latex
 \documentclass{article}
@@ -109,9 +109,9 @@ Alguna cosa sobre \kw{pomes} i \kw{taronges}.
 \end{document}
 ```
 
-En la definició `[1]` significa el número d'arguments (en aquest cas un) i `#1` significa el primer argument que es proporciona (`apples` o `oranges` en aquest exemple). Pots tenir fins a 9 arguments.
+En la definició `[1]` significa el número d'arguments (en aquest cas un) i `#1` significa el primer argument que es proporciona (`pomes` o `taronges` en aquest exemple). Pots tenir fins a 9 arguments.
 
-Definir comandes no només serveix per reduir el número de tecles a picar, sinó sobretot una manera fàcil d'aplicar estils. Pots tenir 'keywords' amb diferents estils, en comptes d'haver d'editar el document sencer. En l'exemple carreguem el paquet `xcolor` per proporcionar colors, i formatem les paraules que volem destacar amb blau i itàlica.
+Definir comandes no només serveix per reduir el número de tecles a picar, sinó sobretot una manera fàcil d'aplicar estils. Pots tenir 'keywords' amb diferents estils, en comptes d'haver d'editar el document sencer. En l'exemple carreguem el paquet `xcolor` per proporcionar colors, i formatem les paraules que volem destacar amb blau i cursiva.
 
 ```latex
 \documentclass{article}
@@ -132,7 +132,7 @@ Tingues en compte que definir massa comandes o comandes amb molts arguments pot 
 
 ## Exercicis
 
-Prova d'escriure text amb altres llengües europees i observa com `babel` afecta la separació sil·làbica: pots trobar exemples de text a internet, i endevina les opcions correctes.
+Prova d'escriure text amb altres llengües europees i observa com `babel` afecta a la separació sil·làbica: pots trobar exemples de text a internet, i endevina les opcions correctes.
 
 Prova d'alterar els marges en l'exemple on hem utilitzat `geometry`. Pots definir els marges amb `top`, `bottom`, `left` i `right`, separant les opcions amb coma.
 

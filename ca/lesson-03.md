@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "ca"
 title: "Estructura bàsica d'un document LaTeX"
-description: "En aquesta lliçó s'explica l'estructura bàsica d'un document LaTeX, i com generar el fitxer PDF resultant, així com els principals caràcters especials utilitzats per controlar LaTeX."
+description: "En aquesta lliçó s'explica l'estructura bàsica d'un document LaTeX, i com generar el fitxer PDF resultant, així com els principals caràcters i marques especials utilitzats a LaTeX."
 toc-anchor-text: "Estructura del document"
 toc-description: "L'estructura bàsic a d'un document."
 ---
@@ -10,9 +10,9 @@ toc-description: "L'estructura bàsic a d'un document."
 # Estructura d'un document LaTeX
 
 <span
-  class="summary">Aquesta lliçó explica l'estructura bàsica d'un document LaTeX, i com generar el fitxer PDF resultant, així com els principals caràcters especials utilitzats per controlar LaTeX.</span>
+  class="summary">Aquesta lliçó explica l'estructura bàsica d'un document LaTeX, i com generar el fitxer PDF resultant, així com els principals caràcters i marques especials utilitzats a LaTeX.</span>
 
-El teu primer document LaTeX el farem molt simple: la idea és ensenyar-te quina forma té un document font i com escriure'l correctament. També serà la teva primera oportunitat per [com utilitzar els exemples](help) aquí a `learnlatex.org`.
+El teu primer document LaTeX el farem molt simple: la idea és ensenyar-te quina forma té un document font i com escriure'l correctament. També serà la teva primera oportunitat d'[utilitzar els exemples](help) de `learnlatex.org`.
 
 Si estàs utilitzant una instal·lació local de LaTeX, amb el teu editor crea un nou fitxer anomenat `first.tex`, i fes un copy-paste del codi que se't proporciona a continuació, o bé pica'l.
 
@@ -52,17 +52,17 @@ El primer document mostra allò bàsic. Els documents de LaTeX són una barreja 
 
 Tots els documents de LaTeX tenen un `\begin{document}` i el corresponent `\end{document}`.
 Enmig dels dos hi ha el *document body*, on anirà tot el contingut.
-Aquí el `cos`té dos paràgrafs (a LaTeX els paràgrafs es separen amb una o vàries línies de retorn de carro). Abans del `\begin{document}` hi ha el *document preamble*, que conté el codi per configurar la maquetació (el `layout`) del document. La comanda `\usepackage`, que es descriu en una [lliçó posterior](lesson-06), s'utilitza en la majoria d'exemples per configurar la codificació de la font.
+Aquí el `cos`té dos paràgrafs (a LaTeX els paràgrafs es separen amb una o vàries línies de retorn de carro). Abans del `\begin{document}` hi ha el *document preamble* (_preàmbul_), que conté el codi per configurar la maquetació (el `layout`) del document. La comanda `\usepackage`, que es descriu en una [lliçó posterior](lesson-06), s'utilitza en la majoria d'exemples per configurar la codificació de la font.
 
-LaTeX té d'altres parelles `\begin{...}` i `\end{...}`; s'anomenen *environments*.
-Has d'aparellar-les de manera que per cada `\begin{x}` hi ha d'haver un `\end{x}`.
+LaTeX té d'altres parelles `\begin{...}` i `\end{...}`; s'anomenen *environments* (_entorns_).
+Has d'aparellar-les de manera que per cada `\begin{x}` hi ha el corresponent `\end{x}`.
 Si les nies, ha de ser de la forma `\end{y} ... \end{x}` per aparellar
 `\begin{x} ... \begin{y}`, és a dir, les sentències `\begin` i `\end` s'han d'aparellar en ordre.
 
-Podem afegir comentaris a un fitxer de LaTeX començant amb el caràcter `%`; Anem a posar un exemple:
+Podem afegir comentaris a un fitxer de LaTeX començant amb el caràcter `%`; anem a posar un exemple:
 
 ```latex
-\documentclass[a4paper,12pt]{article} % The document class with options
+\documentclass[a4paper,12pt]{article} % La classe del document amb opcions
 \usepackage[T1]{fontenc}
 % Un comentari en el preàmbul
 \begin{document}
@@ -81,7 +81,7 @@ Pot ser que algunes vegades vulguis un espai 'fort' però que no hi hagi salt de
 ## Caràcters especials
 
 Segurament ja has notat que els caràcters ``\``, `{` i `}` tenen un significat especial a LaTeX.
-Un ``\`` comença una instrucció: una 'comanda'. Les claus `{` i `}` s'utilitzen per mostrar _arguments obligatoris_: informació necessària per a les comandes.
+Una ``\`` comença una instrucció: una 'comanda'. Les claus `{` i `}` s'utilitzen per mostrar _arguments obligatoris_: informació necessària per a les comandes.
 
 Hi ha d'altres caràcters amb significat especial; acabem de veure que `~`
 és un espai més gran, per exemple. Quasi bé tots aquests caràcters són molt poc comuns en un text normal, i és aquest el motiu pel qual es van escollir per tenir un significat especial. Si necessites mostrar algun d'aquests caràcters especials, hem inclòs la [informació en la pàgina de més detalls](more-03).

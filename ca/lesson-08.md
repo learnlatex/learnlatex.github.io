@@ -40,7 +40,7 @@ A més a més, també hi ha disponibles altres identificadors de preàmbul, que 
 
 | tipus | descripció |
 | ---  | :-- |
-| `*{num}{string}` | repeteix `string` un número de vegades `num` en el preàmbul. D'aquesta manera pots definir múltiples idèntiques columnes. |
+| `*{num}{string}` | repeteix `string` un número de vegades `num` en el preàmbul. D'aquesta manera pots definir columnes idèntiques múltiples vegades. |
 | `>{decl}` | posa `decl` abans del contingut en cada cel·la de la següent columna (això és útil, per exemple, per canviar la font en aquesta columna) |
 | `<{decl}` | posa `decl` després del contingut en cada cel·la de la columna prèvia |
 | <span>`|`</span>  | afegeix una regla vertical |
@@ -49,7 +49,7 @@ A més a més, també hi ha disponibles altres identificadors de preàmbul, que 
 
 Aquestes dues taules llisten totes les possibilitats de tipus de columna a LaTeX i en el paquet `array`. Alguns tipus de columna addicionals, disponibles en d'altres paquets, s'expliquen [més endavant](more-08).
 
-Les columnes `l`, `c`, i `r` tindran l'amplada natural de la cel·la més ampla. Cada columna s'ha de declarar, de manera que si vols tres columnes centrades, escriuràs `ccc` en el preàmbul de la taula. Els espais s'ingnore, així doncs `c c c` és el mateix.
+Les columnes `l`, `c`, i `r` tindran l'amplada natural de la cel·la més ampla. Cada columna s'ha de declarar, de manera que si vols tres columnes centrades, escriuràs `ccc` en el preàmbul de la taula. Els espais s'ingnoren, així doncs `c c c` és el mateix.
 
 En el cos de la taula les columnes estan separades utilitzant el símbol `&` i una nova fila comença amb `\\`.
 
@@ -97,7 +97,7 @@ Si la columna d'una taula conté molt de text serà difícil aconseguir un bon d
 ```
 <!-- {% endraw %} -->
 
-El problema és que el tipus de columna `l` mostra el text en una sola fila amb la seva amplada natural, encara que es trobi amb el contorn de la pàgina. Per solucionar-ho pots utilitzar la columna `p`, que té per efecte escriure el contingut com a paràgraf amb l'amplada que has especificat com a argument i alinea verticalment a dalt de la cel·la (que és l'habitual). Compara el resultat de més amunt amb el següent:
+El problema és que el tipus de columna `l` mostra el text en una sola fila amb la seva amplada natural, encara que es trobi amb el contorn de la pàgina. Per solucionar-ho pots utilitzar la columna `p`, que té per efecte escriure el contingut com a paràgraf amb l'amplada que has especificat com a argument i alinea verticalment a dalt de la cel·la (com és habitual). Compara el resultat de més amunt amb el següent:
 
 <!-- {% raw %} -->
 ```latex
@@ -141,7 +141,7 @@ Si la teva taula té moltes columnes del mateix tipus pot ser molest posar massa
 
 ## Afegir línies a les taules
 
-Un petit consell abans d'introduir-nos amb les línies; en les taules les línies s'han d'utilitzar amb cura i normalment les línies verticals no són molt recomanables. De fet, per a les taules professionals millor no utilitzar cap de les línies estàndard; més aviat t'has de familiaritzar amb les que facilita el paquet `booktabs`, i per aquest motiu les explicarem ara, en primer lloc. Per completar aquesta lliço, les línies estàndard s'explicaran en la secció [més sobre aquest tema](more-08).
+Un petit consell abans d'introduir-nos amb les línies; en les taules les línies s'han d'utilitzar amb cura i normalment les línies verticals no són molt recomanables. De fet, per a les taules professionals millor no utilitzar cap de les línies estàndard; més aviat t'has de familiaritzar amb les que facilita el paquet `booktabs`, i per aquest motiu les explicarem ara, en primer lloc. Una explicació més completa sobre les línies estàndard s'explicara en la secció [més sobre](more-08).
 
 `booktabs` proporciona quatre tipus diferents de línies. Cadascuna d'aquestes comandes s'ha d'utilitzar al principi de la línia o a continuació d'una altra regla. Tres de les regles són: `\toprule`, `\midrule`, i `\bottomrule`. Amb el seu nom queda clara la seva funció:
 
@@ -167,7 +167,7 @@ Un petit consell abans d'introduir-nos amb les línies; en les taules les línie
 ```
 <!-- {% endraw %} -->
 
-La quarta regla que proporciona `booktabs` és `\cmidrule`. Es pot utilitzar per debuixar una línia que no s'estengui per tota l'amplada de la columna sinó només en determinades columnes. El format per saber en quines columnes hem de dibuixar la línia és: `{`_number_`-`_number_`}`. Fins i tot si només vols dibuixar la línia en una sola columna has d'especificar-ho com a rang (en aquest cas amb els dos números iguals).
+La quarta regla que proporciona `booktabs` és `\cmidrule`. Es pot utilitzar per dibuixar una línia que no s'estengui per tota l'amplada de la columna sinó només en determinades columnes. El format per saber en quines columnes hem de dibuixar la línia és: `{`_number_`-`_number_`}`. Fins i tot si només vols dibuixar la línia en una sola columna has d'especificar-ho com a rang (en aquest cas amb els dos números iguals).
 
 <!-- {% raw %} -->
 ```latex
@@ -259,7 +259,7 @@ A LaTeX pots combinar o fusionar cel·les horitzontalment utilitzant la comanda 
 2. La justificació de la cel·la combinada
 3. El text de la cel·la combinada
 
-La justificació pot tenir qualsevol opció vàlida del preàmbul de `tabular`, però _només un únic tipus de columna_.
+La justificació pot tenir qualsevol opció vàlida del preàmbul de `tabular`, però _només_ un únic tipus de columna.
 
 <!-- {% raw %} -->
 ```latex
@@ -283,7 +283,7 @@ La justificació pot tenir qualsevol opció vàlida del preàmbul de `tabular`, 
 ```
 <!-- {% endraw %} -->
 
-També pots utilitzar `\multicolumn` dins d'una cel·la per prevenir l'aplicació de qualsevol que hagis definit en el preàmbul de la taula per a la columna actual. El següent exemple ho fa servir per centrar la capçalera de la taula:
+També pots utilitzar `\multicolumn` dins d'una cel·la per prevenir l'aplicació de qualsevol coa que hagis definit en el preàmbul de la taula per a la columna actual. El següent exemple ho fa servir per centrar la capçalera de la taula:
 
 <!-- {% raw %} -->
 ```latex

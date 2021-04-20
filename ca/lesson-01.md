@@ -18,13 +18,13 @@ Posem com a exemple l'element `<h2>` que indica una nova secció en un document 
 
 ## El procés de treballar amb LaTeX
 
-Com que els arxius de LaTeX no són el document final, sinó més aviat les instruccions sobre com seran cadascuna de les parts del document, no s'acostuma a compartir el codi LaTeX. Després d'escriure el _codi font_ en LaTeX, aquest s'ha de convertir a PDF. Per generar aquest arxiu PDF, que és el que es comparteix i publica, normalment s'utilitza el programa `pdflatex`.
+Com que els arxius de LaTeX no són el document final, sinó més aviat les instruccions sobre com seran cadascuna de les parts del document, no s'acostuma a compartir el codi LaTeX. Després d'escriure el _codi font_ en LaTeX, aquest s'ha de convertir a PDF. Per generar aquest arxiu, que és el que es comparteix i publica, normalment s'utilitza el programa `pdflatex`.
 
-Aquest procés de 'compilar' el document es pot portar a terme de diferents maneres, i és que utilitzar LaTeX és quasi com programar. Tot i que parlem de 'compilar', el terme 'composició tipogràfica' és més precís.
+Aquest procés de _compilar_ el document es pot portar a terme de diferents maneres, i és que utilitzar LaTeX és quasi com programar. Tot i que parlem de _compilar_, el terme _composició tipogràfica_ és més precís.
 
 ## Múltiples execucions de LaTeX
 
-Per als documents simples, només s'haurà de compilar el codi una vegada per tal de generar el PDF. Però, a mesura que el document es vagi complicant més i més, com ara referències creuades, cites, figures o index, haurem d'executar LaTeX més d'una vegada. Ja ho comentarem més endavant quan arribi el moment.
+Per als documents simples, només s'haurà de compilar el codi una vegada per tal de generar el PDF. Però, a mesura que el document es vagi complicant més i més, com ara referències creuades, cites, figures o índex, haurem d'executar LaTeX més d'una vegada. Ja ho comentarem més endavant quan arribi el moment.
 
 ## LaTeX o pdfLaTeX o ...
 

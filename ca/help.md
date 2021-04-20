@@ -55,13 +55,13 @@ Overleaf és potser el servei d'edició de LaTeX en línia més popular. El bot�
 
 Si no disposes d'un compte seràs redirigit a la pàgina de login on podràs registrar-te en el servei de Overleaf. És un servei gratuït però serà necessari donar alguns detalls i acceptar els Termes i Condicions.
 
-Si el teu compte de Overleaf està emmagatzemat en el teu navegador, aleshores Overleaf s'obrirà en un nou tabulador, en un nou projecte amb el codi. Podràs aleshores editar-lo a Overleaf que de forma simultània que executarà LaTeX amb el teu codi mostrant la sortida resultant o el log d'errors.
+Si el teu compte de Overleaf està emmagatzemat en el teu navegador, aleshores Overleaf s'obrirà en un nou tabulador, en un nou projecte amb el codi incorporat. Podràs aleshores editar-lo a Overleaf i s'executarà LaTeX amb el teu codi, mostrant la sortida resultant o el log d'errors.
 
 Les característiques d'edició d'Overleaf són molt extenses i aquí no tenim intenció de detallar-les, però només dir que podràs guardar el teu projecte al teu compte de Overleaf i retornar-hi més endavant.
 
 ##### Utilitzar el servei de TeXLive.net
 
-El botó <button>Executa a TeXLive.net</button>, a sota en l'exemple, executarà el codi en el servei
+El botó <button>Executa a TeXLive.net</button>, a sota de l'exemple, executarà el codi en el servei
 [TeXLive.net](https://texlive.net)[^1].
 
 El servei TeXLive.net es va desenvolupar específicament per donar suport a aquest lloc web, i en particular utilitza la llibreria [PDF.js](https://mozilla.github.io/pdf.js/) per habilitar la visualització de PDF en el navegador i en el mòbil sense haver de fer servir cap altre lector de PDFs.
@@ -80,21 +80,21 @@ Els nostres exemples estan provats amb una versió de LaTeX actualitzada. Tots f
 
 ---
 
-## Choosing the TeX engine
+## Escollir el motor de TeX
 
-Quan executes els documents d'exemple, per defecte s'utilitza el motor de `pdflatex`.
+Quan executes els documents d'exemple, per defecte s'utilitza el motor `pdflatex`.
 
 Pots escollir entre `latex`, `pdflatex`, `xelatex`, `lualatex`, `platex` o `uplatex` utilitzant el comentari:
 
 `% !TEX ` _qualsevol text_ `lualatex`
 
-on l'espai en blanc a l'inici és opcinal i les majúscules s'ignoren així com _qualsevol text_ entre la primera i la última paraula.
+on l'espai en blanc a l'inici és opcional i les majúscules s'ignoren, així com _qualsevol text_ entre la primera i la última paraula.
 
 Pots veure un exemple de com s'utilitza un comentari per especificar LuaLaTeX en [algun dels exemples en aquest lloc web](more-14).
 
 Si s'especifica `platex` o `uplatex`, aleshores el programa que s'utilitza per generar el PDF és `dvipdfmx`, a partir del fitxer DVI que aquestes variants generen. De manera similar, si s'especifica `latex` s'utilitza `dvips` i `ps2pdf`.
 
-Si no s'especifica `% !TeX` en el comentari, aleshores s'utilitzarà `pdflatex` a no ser que hagis especificat el motor TeX per defecte en la pàgina de [configuració](settings) page.
+Si no s'especifica `% !TeX` en el comentari, aleshores s'utilitzarà `pdflatex` a no ser que hagis especificat el motor TeX per defecte en la pàgina de [configuració](settings).
 
 ---
 
@@ -104,7 +104,7 @@ Si utilitzes el sistema TeXLive.net, el PDF de sortida es genera amb la llibreri
 
 Si vols utilitzar el lector de PDFs associat al teu navegador (ja sigui perquè ve incorporat o perquè has associat una aplicació externa) hauràs d'afegir un comentari de la forma:
 
-`% !TEX ` _any text_ `pdf`
+`% !TEX ` _qualsevol text_ `pdf`
 
 El comportament per defecte es pot especificar utilitzant `pdfjs` en la marca final. Quan facis proves és possible que necessitis el fitxer de log, fins i tot si el document produeix un PDF sense errors. Això serà possible si especifiques la marca `log` al final del comentari.
 
@@ -115,7 +115,7 @@ Com a alternativa a utilitzar el comentari `% !TeX`, pots especificar el paràme
 
 ## Sortida HTML (make4ht)
 
-Si utilitzes el sistema TeXLive.net, aleshores s'ha d'especificar l'opció de retorn `make4ht`, que retorna una o més pàgines HTML dins del marc de la pàgina. Es pot especificar al mateix temps que `xelatex` o `lualatex` o bé el valor per defecte `latex`.
+Si utilitzes el sistema online TeXLive.net, aleshores s'ha d'especificar l'opció de retorn `make4ht`, que retorna una o més pàgines HTML dins del marc de la pàgina. Es pot especificar al mateix temps que `xelatex` o `lualatex` o bé el valor per defecte `latex`.
 
 Per habilitar aquesta sortida hem d'afegir el comentari:
 
@@ -138,4 +138,4 @@ Quan executem localment també són possibles altres configuracions. Veure el [m
 
 ---
 
-[^1]: S'ha de fer notar que durant el desenvolupament d'aquest lloc web també hem utilitzat [LaTeX.Online](https://latexonline.cc/) i [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) i volem donar les gràcies als programadors d'aquests serveis web per fer actualitzacions i habilitar els exemples del lloc web des del principi.
+[^1]: S'ha de fer notar que durant el desenvolupament d'aquest lloc web també hem utilitzat [LaTeXOnline](https://latexonline.cc/) i [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) i volem donar les gràcies als programadors d'aquests serveis web per fer actualitzacions i habilitar els exemples del lloc web des del principi.

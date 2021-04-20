@@ -28,11 +28,11 @@ runlatex.preincludes = {
 <span
   class="summary">Aquesta lliçó explica com LaTeX permet dividir el teu document en documents més petits, i d'aquesta manera pots editar documents llargs d'una manera fàcil i ràpida.</span>
 
-Quan estàs escrivint un document llarg, segurament voldràs separar el contingut del document en varis arxius. Per exemple, és molt habitual tenir un arxiu principal `main`/`root` i altres arxius secundaris: un per cada capítol (en un llibre o una tesi) o per cada secció (en un article llarg).
+Quan estàs escrivint un document llarg, segurament voldràs separar el contingut del document en diversos arxius. Per exemple, és molt habitual tenir un arxiu principal `main`/`root` i altres arxius secundaris: un per cada capítol (en un llibre o una tesi) o per cada secció (en un article llarg).
 
 ## Estructurar els arxius font
 
-LaTeX et permet separar el contingut de forma controlada. Hi ha dues comandes importants per fer-ho: `\input` i `\include`. Podem utilitzar `\input` per fer que el contingut d'un arxiu funcioni `com si fos escrit en aquest punt`, i per tant es pot utilitzar (essencialment) per inserir qualsevol tipus de contingut. La comanda `\include` s'utilitza únicament per als capítols: comença una nova pàgina i realitza alguns ajustaments interns. Però presenta un gran avantatge: ens permet seleccionar els capítols que volem incloure, i per tant ens podem centrar en una part del documento més que amb el document complet.
+LaTeX et permet separar el contingut de forma controlada. Hi ha dues comandes importants per fer-ho: `\input` i `\include`. Podem utilitzar `\input` per fer que el contingut d'un arxiu funcioni `com si fos escrit en aquest punt`, i per tant es pot utilitzar (essencialment) per inserir qualsevol tipus de contingut. La comanda `\include` s'utilitza únicament per als capítols: comença una nova pàgina i realitza alguns ajustaments interns. Però presenta un gran avantatge: ens permet seleccionar els capítols que volem incloure, i per tant ens podem centrar en una part del document més que en el document complet.
 
 Un document llarg podria per tant semblar-se a alguna cosa similar a:
 
@@ -84,11 +84,11 @@ Mirem alguns dels aspectes de l'exemple anterior. Els diferentss arxius a què e
 
 ## Utlitzar `\input`
 
-La comada `\input` és apropiada per a parts d'un document llarg que _no_ siguin capítols independents. En l'exemple, l'hem utilitzat per separar la portada i la coberta posterior, i així l'arxiu principal és més curt i concís; i així podem reutilitzar la portada i la contraportada en un altre document. L'hem utilitzat també en les seccions que 'no són capítols' i que es troben al principi del nostre 'llibre': com ara el prefaci. Això permet simplificar l'arxiu principal.
+La comada `\input` és apropiada per a parts d'un document llarg que _no_ siguin capítols independents. En l'exemple, l'hem utilitzat per separar la portada i la contraportada posterior, i així l'arxiu principal és més curt i concís; i així podem reutilitzar la portada i la contraportada en un altre document. L'hem utilitzat també en les seccions que 'no són capítols' i que es troben al principi del nostre 'llibre': com ara el prefaci. Això permet simplificar l'arxiu principal.
 
 ## Utilitzar `\include` i `\includeonly`
 
-La comanda `\include` és apropiada per als capítols, motiu pel qual l'hem utilitzat aquí per incloure cada capítol; comença sempre amb una nova pàgina. Hem seleccionat els capítols que seran compilats amb la comanda `\includeonly`, que com s'ha vist pren com a argument una llista de noms d'arxiu separats por comes. Utilitzant `\includeonly` pots reduir el temps de compilació i produir un PDF 'selectiu' per a les revisiones. A més a més, el principal avantatge de `\includeonly` és que LaTeX utilizarà tota la informació de les referències creuades dels arxius `.aux` que es corresponen als altres arxius inclosos en el documento.
+La comanda `\include` és apropiada per als capítols, motiu pel qual l'hem utilitzat aquí per incloure cada capítol; comença sempre amb una nova pàgina. Hem seleccionat els capítols que seran compilats amb la comanda `\includeonly`, que com s'ha vist pren com a argument una llista de noms d'arxiu separats por comes. Utilitzant `\includeonly` pots reduir el temps de compilació i produir un PDF 'selectiu' per a les revisions. A més a més, el principal avantatge de `\includeonly` és que LaTeX utilizarà tota la informació de les referències creuades dels arxius `.aux` que es corresponen als altres arxius inclosos en el document.
 
 ## Crear una taula de continguts
 
@@ -102,7 +102,7 @@ Les comandes `\frontmatter`, `\mainmatter`, i `\backmatter` afecten al format. P
 
 Experimenta amb l'estrcutura de base del document de l'exemple, intenta afegir i treure parts amb `\includeonly` per tal de veure quin efecte té.
 
-Afegeix alguns objectes flotants i crea un index de taules i figures. Si utilitzes una instal·lació local de LaTeX, fixa't en quantes compilacions seran necessàries (El sistema en línia ja fa diverses compilacion 'en segon pla').
+Afegeix alguns objectes flotants i crea un índex de taules i figures. Si utilitzes una instal·lació local de LaTeX, fixa't en quantes compilacions seran necessàries (el sistema en línia ja fa diverses compilacions 'en segon pla').
 
 ----
 

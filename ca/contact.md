@@ -9,7 +9,7 @@ permalink: /ca/contact
 
 ## Suport individual
 
-Malauradament no tenim recursos per oferir ajuda individual als problemes de LaTeX i per tant no podem respondre a les peticions d'ajuda que rebem per correu electrònic. Pots mirar la [pàgina d'ajuda del Projecte LaTeX](https://www.latex-project.org/help/) per mirar possibilitats d'aconseguir suport.
+Malauradament no tenim recursos per oferir ajuda individual als problemes de LaTeX i per tant no podem respondre a les peticions d'ajuda que rebem per correu electrònic. Pots mirar la [pàgina d'ajuda del Projecte LaTeX](https://www.latex-project.org/help/) per mirar diferents opcions per aconseguir suport.
 
 ## L'equip del lloc web
 

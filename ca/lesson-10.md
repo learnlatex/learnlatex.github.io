@@ -42,13 +42,13 @@ Potser hauràs vist fórmules matemàtiques de la forma 'LaTeX' en altres llocs,
 
 ### Mode matemàtic inline i notació matemàtica
 
-Com has vist més amunt, el mode matemàtic inline utilitza el dòlar com a símbol de marques (`$...$`). També és possible utilitzar la notació `\( ... \)`. Expressions simples es poden entrar sense utilitzar marques especials, i pots comprovar que les fórmules estan espaiades de forma correcta i les lletres en itàlica.
+Com has vist més amunt, el mode matemàtic inline utilitza el dòlar com a símbol de marques (`$...$`). També és possible utilitzar la notació `\( ... \)`. Expressions simples es poden entrar sense utilitzar marques especials, i pots comprovar que les fórmules estan espaiades de forma correcta i les lletres en cursiva.
 
-El mode matemàtic inline restringeix  el tamany vertical de les expressions de manera que en la mesura del possilbe la fórmula no destorbi l'espaiat de línia del paràgraf.
+El mode matemàtic inline restringeix  el tamany vertical de les expressions de manera que, en la mesura del possilbe, la fórmula no destorbi l'espaiat de línia del paràgraf.
 
 Para atenció que _totes_ les expressions matemàtiques s'han de marcar com a tals, fins i tot si és un únic caràcter hauries d'utilitzar `... $2$ ...` i no pas `... 2 ...`, per exemple, o quan tens un número negatiu posaràs `... $-2$ ...`, doncs els números en la fórmula no tenen perquè tenir la mateixa font de caràcters que en el text (depenent de la classe de document). D'altra banda, tingues cura amb els símbols que apareixen en un text sense format i copiat d'una altra banda, com per exemple els valors monetaris que utilitzen el símbol `$`, o les noms de fitxer que utilitzen el símbol `_` (els quals s'hauran d'escriure com a `\$`iy `\_`, respectivament).
 
-Podem afegir fàcilment superindex i subindex; s'escriuen utilitzant `^` i `_`.
+Podem afegir fàcilment superindex i subindex: s'escriuen utilitzant `^` i `_`.
 
 ```latex
 \documentclass{article}
@@ -70,7 +70,7 @@ Una expressió matemàtica: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
-Ara no podem cobrir aquí tots els aspectes de les comandes de mode matemàtic, però hi ha molts recursos en línia que llisten tot el conjunt estàndard. Pots cercar les comandes per escriure
+Ara i aquí no podem cobrir tots els aspectes de les comandes de mode matemàtic, però hi ha molts recursos en línia que llisten tot el conjunt estàndard. Pots cercar les comandes per escriure
 símbols en mode matemàtic, utilitzant l'eina [Detexify](https://detexify.kirelabs.org/classify.html).
 
 
@@ -93,11 +93,11 @@ Un paràgraf amb una equació llarga
 \end{document}
 ```
 
-Para atenció com hem utilitzat la notació de sub/superí per posar els límits de la integral.
+Para atenció com hem utilitzat la notació de sub/superínex per posar els límits de la integral.
 
 Aquí hem afegit un espaiat manual: `\,` que posa un petit espai abans del `dx` (i així no sembla un producte).
 
-Sovint voldràs una equación enumerada, això ho podràs aconseguir utilitzar l'entorn `equation`. Provem d'utilitzar-lo en l'exemple anterior:
+Sovint voldràs una equació enumerada, això ho podràs aconseguir utilitzar l'entorn `equation`. Provem d'utilitzar-ho en l'exemple anterior:
 
 ```latex
 \documentclass{article}
@@ -110,7 +110,7 @@ Un paràgraf amb una equació llarga
 \end{document}
 ```
 
-El número de l'equació s'incrementa de forma automàtica i pot ser un simple número com en aquest exemple o pot estar prefixat pel número de la secció, per exemple (2.5) per a la 5a equació de la secció 2. Els detalls de com formatar es defineixen en la classe del document i ara no ho expliquem.
+El número de l'equació s'incrementa de forma automàtica i pot ser un simple número, com en aquest exemple, o pot estar prefixat pel número de la secció, per exemple (2.5) per a la 5a equació de la secció 2. Els detalls de com formatar es defineixen en la classe del document i ara no ho expliquem.
 
 ## El paquet `amsmath`
 
@@ -130,7 +130,7 @@ Resol la següent expressió recursiva for $ n,k\geq 0 $:
 \end{document}
 ```
 
-L'entorn `align*` fa que les equacions s'alineïn a nivell dels símbols `&`, igual que en una taula. Fixa't com hem utilitzat `\quad`, pper afegir una mica d'espai, i `\text` per tal d'incloure un text normal a l'interior del mode matemàtic. Hem utilitzat igualment una altra comanda del mode matemàtic, `\binom` per a un binomi.
+L'entorn `align*` fa que les equacions s'alineïn a nivell dels símbols `&`, igual que en una taula. Fixa't com hem utilitzat `\quad`, per afegir una mica d'espai, i `\text` per tal d'incloure un text normal a l'interior del mode matemàtic. Hem utilitzat igualment una altra comanda del mode matemàtic, `\binom` per a un binomi.
 
 Fixa't que aquí hem utilitzat `align*` i que en canvi no s'ha enumerat l'equació. La majoria dels entorns matemàtics enumeren per defecte les equacions, però les seves variants amb asterisc `*` fan que no s'enumerin.
 
@@ -163,7 +163,7 @@ d & e & f
 
 ## Tipus de lletra (fonts) en el mode matemàtic
 
-A diferència del text normal, canvis de font en el mode matemàtic responen sovint a un significat concret. I així doncs sovint s'escriuen de forma específica. Aquestes són comandes que podràs necessitar:
+A diferència del text normal, canvis de font en el mode matemàtic responen sovint a un significat concret. Així doncs sovint s'escriuen de forma específica. Aquestes són comandes que podràs necessitar:
 
 - `\mathrm`: roman (upright)
 - `\mathit`: cursiva espaiat com a 'text'
@@ -203,7 +203,7 @@ Si has de fer altres símbols en negreta [mira els detalls extra](more-10).
 
 ## Exercicis
 
-Prova d'utilitzar alguns modes matemàtics de base: reutilitza els exemples i canvia entre els modes inline i display. Pots veure com canva el resultat amb aquests canvis.
+Prova d'utilitzar alguns modes matemàtics de base: reutilitza els exemples i canvia entre els modes inline i display. Pots veure com canvia el resultat amb aquests canvis.
 
 Intenta afegir d'altres lletres gregues, en minúscules i en majúscules. Hauries de ser capaç d'endevinar els seus noms.
 

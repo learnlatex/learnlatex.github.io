@@ -35,7 +35,7 @@ Tanmateix, és convenient utilitzar un editor que hagi estat dissenyat per treba
 
 Hi ha molts més editors LaTeX dels que podem llistar aquí: hi ha una [llista completa a
 StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-Un editor bàsic, [TeXworks](https://tug.org/texworks), ve inclòs a TeX Live i a MiKTeX per a Windows i Linux, i [TeXShop](https://pages.uoregon.edu/koch/texshop/) ve inclòs a MacTeX.
+Un editor bàsic, [TeXworks](https://tug.org/texworks), ve inclòs a TeX Live i a MiKTeX, tant per a Windows com per Linux, i [TeXShop](https://pages.uoregon.edu/koch/texshop/) ve inclòs a MacTeX.
 
 <p class="hint">Tant se val l'editor que escullis, però recomanem instal·lar-lo <i>després</i> d'instal·lar el teu sistema TeX, així doncs l'editor podrà 'trobar' el sistema TeX i configurar-lo de forma correcta.</p>
 
@@ -45,11 +45,11 @@ Hi ha diferents webs online que et donen tota la funcionalitat i així pots esta
 
 Alguns d'aquests llocs combinen LaTeX amb opcions similars a un processador de texts, mentre que d'altres estan més pensats per treballar amb el codi font de LaTeX i són més propers a tenir una instal·lació local.
 
-Hi ha sistemes que et permeten executar LaTeX sense necessitat d'estar <em>logats</em>, i utilitzem un d'aquests,[TeXLive.net](https://texlive.net), per tal de què puguis editar i testejar els exemples que et proporcionem. Per a un treball més complet, els millors sistemes online et demanaran que et registris abans d'utilitzar-los. Això et permetrà guardar el teu treball i també evita que aquestes webs no es sobrecarreguin d'informació. Et proporcionem enllaços de manera que puguis editar els exemples amb [Overleaf](https://www.overleaf.com), una de les webs més importants per treballar LaTeX online. També n'hi ha d'altres: per exemple [Papeeria](https://papeeria.com/).
+Hi ha sistemes que et permeten executar LaTeX sense necessitat d'estar <em>logats</em>, i utilitzem un d'aquests,[TeXLive.net](https://texlive.net), per tal de què puguis editar i testejar els exemples que et proporcionem. Per a un treball més complet, els millors sistemes online et demanaran que et registris abans d'utilitzar-los. Això et permetrà guardar el teu treball i també evitar que aquestes webs no es sobrecarreguin d'informació. Et proporcionem enllaços de manera que puguis editar els exemples amb [Overleaf](https://www.overleaf.com), una de les webs més importants per treballar LaTeX online. També n'hi ha d'altres: per exemple [Papeeria](https://papeeria.com/).
 
 ## Treballar amb d'altres
 
-Si estàs pensant d'enviar els teus fonts de LaTeX a d'altres destins que els processarant, com ara editorials, organitzadors de conferències o serveis de pre-impressió (com arXiv), hauràs de tenir present les restriccions que imposen.
+Si estàs pensant d'enviar els teus fonts de LaTeX a d'altres destins que els processaran, com ara editorials, organitzadors de conferències o serveis de pre-impressió (com arXiv), hauràs de tenir present les restriccions que imposen.
 
 ## Exercici
 
