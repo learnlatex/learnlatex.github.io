@@ -1,21 +1,21 @@
 ---
 layout: "page"
-lang: "en"
-title: Contact
+lang: "ca"
+title: Contacte
 permalink: /ca/contact
 ---
 
-# Contact
+# Contacte
 
-## Individual Support
+## Suport individual
 
-Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
+Malauradament no tenim recursos per oferir ajuda individual als problemes de LaTeX i per tant no podem respondre a les peticions d'ajuda que rebem per correu electrònic. Pots mirar la [pàgina d'ajuda del Projecte LaTeX](https://www.latex-project.org/help/) per mirar diferents opcions per aconseguir suport.
 
-## Website Team
+## L'equip del lloc web
 
-The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details. Recent Changes are listed in the [Change Log](../CHANGELOG).
+El [codi font d'aquest web](https://github.com/learnlatex/learnlatex.github.io/) és a [GitHub](https://github.com/learnlatex/), pots veure [CONTRIBUTING](../CONTRIBUTING) i [LICENSE](../LICENSE) per a més detalls. Els canvis recents es llisten al [Change Log](../CHANGELOG).
 
-You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+També pots [obrir un issue al GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) o escriure un [correu](mailto:texfaq@texfaq.org) per a suggerències.
 
 ## Impressum
 

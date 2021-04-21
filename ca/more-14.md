@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Selecting fonts and using Unicode engines"
-description: "This lesson shows a basic example in Lua for users who want to write Lua code in their document."
-toc-anchor-text: "More on: Selecting fonts and using Unicode engines"
+lang: "ca"
+title: "Més sobre: Seleccionar fonts i utilitzar motors Unicode"
+description: "Aquesta lliçó explica un exemple bàsic en Lua per a usuaris que volen escriure codi Lua en el seu document."
+toc-anchor-text: "Més sobre: Seleccionar fonts i utilitzar motors Unicode"
 ---
 
 
@@ -11,18 +11,11 @@ toc-anchor-text: "More on: Selecting fonts and using Unicode engines"
 
 ## Lua
 
-The LuaTeX engine provides access to OpenType fonts in a similar way
-to XeTeX, and most uses of the `fontspec` package work equally well
-with either engine.
+El motor LuaTeX proporciona l'accés a fonts OpenType de manera similar a XeTeX, i la major part dels usos del paquet `fontspec` funcionen igual de bé que en altres motors.
 
-LuaTeX also extends TeX in other ways, notably by embedding the Lua
-scripting language. This may be used for programming in a style more
-familiar to people used to ‘mainstream’ programming languages. It also
-offers the possibility to access inner workings of the TeX system and
-modify the behaviour by substituting new code written in Lua.
+LuaTeX també amplia TeX en altres aspectes, principalment incloent el llenguatge de guions de Lua. Això es pot utilitzar per programar d'una manera similar a com ho fan els programadors en els llenguatges de programació principals. També ofereix la possibilitat d'accedir a les entranyes del sistema TeX i modificar el seu comportament tot substituint codi escrit en Lua.
 
-Lua programming is not covered by this course but a simple example to
-calculate 2π is shown here.
+La programació amb Lua no està prevista en aquest curs, però un petit exemple de com podem calcular 2π es mostra a continuació.
 
 ```latex
 %!TEX lualatex
@@ -34,4 +27,3 @@ $ 2\pi \approx \directlua{ tex.print(2 * math.pi) } $
 
 \end{document}
 ```
-

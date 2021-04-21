@@ -1,6 +1,6 @@
 ---
 layout: "page"
-lang: "en"
+lang: "ca"
 title: Site Settings
 permalink: /ca/settings
 ---

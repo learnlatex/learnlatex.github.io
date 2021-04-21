@@ -1,6 +1,6 @@
 ---
 layout: "page"
-lang: "en"
+lang: "ca"
 title: Privacy Policy
 permalink: /ca/privacy
 ---

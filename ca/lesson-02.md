@@ -1,99 +1,58 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Working with LaTeX"
-description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
-toc-anchor-text: "Working with LaTeX"
-toc-description: "TeX systems and LaTeX text editors."
+lang: "ca"
+title: "Treballant amb LaTeX"
+description: "Aquesta lliçó explica què és un sistema TeX i quins són els més habituals, llista alguns dels editors de text que s'utilitzen per a LaTeX, i els sistemes online que tenen editors integrats."
+toc-anchor-text: "Treballant amb LaTeX"
+toc-description: "Sistemes TeX i editors de text LaTeX."
 ---
 
-# Working with LaTeX
+# Treballant amb LaTeX
 
 <span
-  class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
+  class="summary">Aquesta lliçó explica què és un sistema TeX i quins són els més habituals, llista alguns dels editors de text que s'utilitzen per a LaTeX, i els sistemes online que tenen editors integrats.</span>
 
+A diferència de moltes aplicacions d'ordinador, LaTeX no és una única aplicació que conté tota la funcionalitat. Més aviat hi ha diferents aplicacions que treballen conjuntament. Podem dividir-les en dos grups:
 
-Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs that work together.
-We can divide those up into two things you actually need:
+- Un _sistema TeX_
+- Un editor de text (sovint un editor específic per a LaTeX)
 
-- A _TeX system_
-- A text editor (often a LaTeX-specific one)
+## Sistemes LaTeX
 
-## LaTeX systems
+El nucli de treballar amb LaTeX és disposar d'un sistema TeX. Un sistema TeX és un conjunt de programes i fitxers en 'segon pla' que són necessaris per tal de què funcioni LaTeX, però la major part del temps no necessitaràs executar-los directament.
 
-The core of working with LaTeX is having a TeX system available. A TeX system is a set
-of 'behind the scenes' programs and files that are needed to make LaTeX work, but
-most of the time you don't directly 'run' this.
+Avui dia hi ha disponibles dos sistemes TeX,
+[MiKTeX](https://miktex.org/) i [TeX Live](https://tug.org/texlive). Tots dos estan dispoibles
+per a Windows, macOS i Linux.
+Per a Windows, MiKTeX té una llarga trajectòria; per a macOS, TeX Live ve empaquetat amb una col·leccuó més gran anomenada [MacTeX](http://www.tug.org/mactex/). Hi ha [avantatges per cada sistema](https://tex.stackexchange.com/questions/20036), i pots cercar [més informació i consells del LaTeX Project](https://www.latex-project.org/get/).
 
-There are two major TeX systems available today,
-[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
-are available for Windows, macOS and Linux.
-MiKTeX has a strong background on Windows;
-on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).
-There are [advantages to each
-system](https://tex.stackexchange.com/questions/20036), and you might want to
-look at [some more advice from the LaTeX
-Project](https://www.latex-project.org/get/).
-
-As TeX Live is available on all common platforms, and as it has some performance
-advantages, we recommend that if you are unsure which system to install, you
-choose TeX Live.
+Com que TeX Live està disponible en totes les plataformes habituals, i té alguns avantatges de rendiment, et recomanem que, si no estàs segur quin sistema has d'instal·lar, et decantis per TeX Live.
 
 ## Editors
 
-LaTeX files are simply plain text, so they can be edited with any text editor.
-However, it's most convenient to have an editor that is designed to work with
-LaTeX, as they provide features like one-click compilation of your files,
-built-in PDF viewers, and syntax highlighting. A really useful feature in all
-modern LaTeX editors is SyncTeX: the ability to click on your source and go
-straight to your PDF, or back the other way.
+Els fitxers de LaTeX són senzillament fitxers de text pla, i per tant es poden editar amb qualsevol editor de text.
+Tanmateix, és convenient utilitzar un editor que hagi estat dissenyat per treballar amb LaTeX, doncs proporcionarà opcions interessants com ara compilar amb un sol click, visors de PDF integrats, ressaltar la sintaxi. Una opció molt interessant en tots els editors moderns de LaTeX  és SyncTeX: la possibilitat de clicar en el teu codi font i anar directament al PDF, o a la inversa.
 
-There are many more LaTeX editors than we can hope to list here: there is a
-[comprehensive list on
+Hi ha molts més editors LaTeX dels que podem llistar aquí: hi ha una [llista completa a
 StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
-and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
-is included in MacTeX.
+Un editor bàsic, [TeXworks](https://tug.org/texworks), ve inclòs a TeX Live i a MiKTeX, tant per a Windows com per Linux, i [TeXShop](https://pages.uoregon.edu/koch/texshop/) ve inclòs a MacTeX.
 
-<p 
-  class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
+<p class="hint">Tant se val l'editor que escullis, però recomanem instal·lar-lo <i>després</i> d'instal·lar el teu sistema TeX, així doncs l'editor podrà 'trobar' el sistema TeX i configurar-lo de forma correcta.</p>
 
-## Working online
+## Treballant online
 
-There are several powerful online sites that allow you to avoid
-the need to install a TeX system and LaTeX editor at all. These websites
-work by letting you edit your files in the webpage, then they run LaTeX
-behind the scenes, and display the PDF that is produced.
+Hi ha diferents webs online que et donen tota la funcionalitat i així pots estalviar-te la instal·lació del sistema TeX i de l'editor LaTeX. En aquestes webs pots editar directament els teus fitxers, compilar LaTeX i visualitzar directament el PDF resultant, tot plegat de forma fàcil i ràpida.
 
-Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focused on letting you see the LaTeX code and
-so are closer to having a local installation.
+Alguns d'aquests llocs combinen LaTeX amb opcions similars a un processador de texts, mentre que d'altres estan més pensats per treballar amb el codi font de LaTeX i són més propers a tenir una instal·lació local.
 
-There are systems that let you run LaTeX without needing to be logged in, and we
-are using one of those,
-[TeXLive.net](https://texlive.net), to let you
-edit and test the examples we give. For more complete work, the best online
-systems require that you register before you use them. That lets you save your
-work but also helps the sites not get overloaded. We have set up links so you
-can edit our examples using [Overleaf](https://www.overleaf.com), one of the
-major websites for LaTeX online. There are of course others:
-[Papeeria](https://papeeria.com/) is an example.
+Hi ha sistemes que et permeten executar LaTeX sense necessitat d'estar <em>logats</em>, i utilitzem un d'aquests,[TeXLive.net](https://texlive.net), per tal de què puguis editar i testejar els exemples que et proporcionem. Per a un treball més complet, els millors sistemes online et demanaran que et registris abans d'utilitzar-los. Això et permetrà guardar el teu treball i també evitar que aquestes webs no es sobrecarreguin d'informació. Et proporcionem enllaços de manera que puguis editar els exemples amb [Overleaf](https://www.overleaf.com), una de les webs més importants per treballar LaTeX online. També n'hi ha d'altres: per exemple [Papeeria](https://papeeria.com/).
 
-## Working with others
+## Treballar amb d'altres
 
-If you are planning to send your LaTeX sources to destinations which process
-them, such as publishers, conference organisers or pre-print servers
-(e.g. arXiv), you should check what restrictions they impose.
+Si estàs pensant d'enviar els teus fonts de LaTeX a d'altres destins que els processaran, com ara editorials, organitzadors de conferències o serveis de pre-impressió (com arXiv), hauràs de tenir present les restriccions que imposen.
 
-## Exercise
+## Exercici
 
-Get yourself set up with a local LaTeX installation _or_ an account with
-an online LaTeX service. If you are using a local installation, you'll need
-to pick an editor too: we recommend starting with either TeXworks or TeX Shop
-(see above), then looking at other editors later once you know how _you_
-work best with LaTeX.
+Ja pots configurar una instal·lació LaTeX local, _o_ un compte en un servei online de LaTeX. Si estàs utilitzant una instal·lació local, necessitaràs també un editor: et recomanem començar amb TeXworks o TeX Shop (veure més amunt), i més endavant, quan hagis agafat confiança, ja podràs provar d'altres editors.
 
-You'll be able to [run all of our other exercises in your browser](help.md), but we want
-to help you get working with real documents, so now is a great time to get
-yourself ready.
+Podràs [executar tots els nostres exercicis en el navegador](help.md), però també t'animem a què treballis amb documents reals, així que ja és un bon moment per posar-te a punt.

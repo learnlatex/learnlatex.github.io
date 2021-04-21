@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Structuring longer documents"
-description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
-toc-anchor-text: "Structuring sources"
-toc-description: "Spliting up sources in a controlled way."
+lang: "ca"
+title: "Donar estructura a documents llargs"
+description: "Aquesta lliçó explica com LaTeX permet dividir el teu document en documents més petits, i d'aquesta manera pots editar documents llargs d'una manera fàcil i ràpida."
+toc-anchor-text: "Estructurar el codi font"
+toc-description: "Dividir el codi font de forma estructurada."
 ---
 
-# Structuring longer documents
+# Estructurar documents llargs
 
 <script>
 runlatex.preincludes = {
@@ -26,24 +26,15 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
+  class="summary">Aquesta lliçó explica com LaTeX permet dividir el teu document en documents més petits, i d'aquesta manera pots editar documents llargs d'una manera fàcil i ràpida.</span>
 
-When you are writing a longer document, you’ll likely want to split up
-the source into multiple files. For example, it's very common to have
-one 'main'/'root' file, then one source file per chapter (for a book or thesis),
-or per significant section (for a long article).
+Quan estàs escrivint un document llarg, segurament voldràs separar el contingut del document en diversos arxius. Per exemple, és molt habitual tenir un arxiu principal `main`/`root` i altres arxius secundaris: un per cada capítol (en un llibre o una tesi) o per cada secció (en un article llarg).
 
-## Structuring your sources
+## Estructurar els arxius font
 
-LaTeX allows us to split up sources in a controlled way. There are two important
-commands here, `\input` and `\include`. We can use `\input` to make a file work
-'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it has a big advantage: it allows us to
-be selective in which chapters to include, so you can work on part of your
-document rather than the whole thing.
+LaTeX et permet separar el contingut de forma controlada. Hi ha dues comandes importants per fer-ho: `\input` i `\include`. Podem utilitzar `\input` per fer que el contingut d'un arxiu funcioni `com si fos escrit en aquest punt`, i per tant es pot utilitzar (essencialment) per inserir qualsevol tipus de contingut. La comanda `\include` s'utilitza únicament per als capítols: comença una nova pàgina i realitza alguns ajustaments interns. Però presenta un gran avantatge: ens permet seleccionar els capítols que volem incloure, i per tant ens podem centrar en una part del document més que en el document complet.
 
-A longer document might therefore look something like the following:
+Un document llarg podria per tant semblar-se a alguna cosa similar a:
 
 <!-- pre0 {% raw %} -->
 ```latex
@@ -52,8 +43,8 @@ A longer document might therefore look something like the following:
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
-\title{A Sample Book}
-\author{John Doe \and Joe Bloggs}
+\title{Un llibre d'exemple}
+\author{John Doe \i Joe Bloggs}
 
 \IfFileExists{\jobname.run.xml}
 {
@@ -65,8 +56,8 @@ A longer document might therefore look something like the following:
   }
 }
 {
-% Do a full document initially to generate
-% all the aux files
+% Fem un document sencer per tal de generar
+% tots els fitxers auxiliars
 }
 
 \begin{document}
@@ -89,57 +80,29 @@ A longer document might therefore look something like the following:
 ```
 <!-- {% endraw %} -->
 
-We'll look at the various aspects of this file below. (The various support files
-are at the end of this page.)
+Mirem alguns dels aspectes de l'exemple anterior. Els diferentss arxius a què es fa referència es troben al final d'aquesta pàgina.
 
-## Using `\input`
+## Utlitzar `\input`
 
-The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the main file short and clear, and also meaning we could
-re-use the covers in another document. We've also used it for the 'non-chapter'
-sections at the start of our 'book': things like the preface. Again, this is
-to help keep the main file clear.
+La comada `\input` és apropiada per a parts d'un document llarg que _no_ siguin capítols independents. En l'exemple, l'hem utilitzat per separar la portada i la contraportada posterior, i així l'arxiu principal és més curt i concís; i així podem reutilitzar la portada i la contraportada en un altre document. L'hem utilitzat també en les seccions que 'no són capítols' i que es troben al principi del nostre 'llibre': com ara el prefaci. Això permet simplificar l'arxiu principal.
 
-## Using `\include` and `\includeonly`
+## Utilitzar `\include` i `\includeonly`
 
-The `\include` command is good for chapters, so we have used it for each full
-chapter; it always starts a new page. We have selected which chapters will
-actually be typeset using `\includeonly`, which as you can see takes a
-comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proofreading.
-In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from the `.aux` files of other included files.
+La comanda `\include` és apropiada per als capítols, motiu pel qual l'hem utilitzat aquí per incloure cada capítol; comença sempre amb una nova pàgina. Hem seleccionat els capítols que seran compilats amb la comanda `\includeonly`, que com s'ha vist pren com a argument una llista de noms d'arxiu separats por comes. Utilitzant `\includeonly` pots reduir el temps de compilació i produir un PDF 'selectiu' per a les revisions. A més a més, el principal avantatge de `\includeonly` és que LaTeX utilizarà tota la informació de les referències creuades dels arxius `.aux` que es corresponen als altres arxius inclosos en el document.
 
-## Creating a table of contents
+## Crear una taula de continguts
 
-The `\tableofcontents` command uses the information from sectioning
-commands to populate the table of contents.  It has its own auxiliary
-file, with extension `.toc`, so you may need to run LaTeX twice to
-resolve the information. The table is generated automatically from the
-section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions, and
-use files with extension `.lof` and `.lot` respectively.
+La comanda `\tableofcontents` utilitza la informació de les comandes de secció per omplir una taula de continguts. Té el seu propi fitxer auxiliar, amb extenxió `.toc`, i segurament hauràs de compilar LaTeX dues vegades per tal de resoldre tota la informació. La taula es genera automàticament a partir dels títols de les seccions. Hi ha comandes similars per `\listoffigures` i `\listoftables`, que funcionen prenent les etiquetes de les figures i taules, i que tenen com a extensió `.lof` i `.lot` respectivament.
 
-## Splitting the document into parts
+## Dividir el document en parts
 
-The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
-affect the formatting.
-For instance, `\frontmatter` changes the page numbering to
-Roman numbers.
-The `\appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after `\appendix`,
-the header says `Appendix A`.
+Les comandes `\frontmatter`, `\mainmatter`, i `\backmatter` afecten al format. Per exemple, `\frontmatter` canvia la numeració de les pàgines a números romans. La comanda `\appendix` canvia la numeració a `A`, `B`, etc., de manera que en el primer capítol després d'`\appendix`, la capçalera posarà `Appendix A`.
 
-## Exercises
+## Exercicis
 
-Experiment with the basic structure of the demonstration document,
-try adding and removing entries for `\includeonly` and see the effect.
+Experimenta amb l'estrcutura de base del document de l'exemple, intenta afegir i treure parts amb `\includeonly` per tal de veure quin efecte té.
 
-Add some floats and produce a list of figures and tables.
-If using a locally installed LaTeX, do you see
-how many LaTeX runs are required? (The online systems re-run LaTeX
-"behind the scenes" so the additional required runs are not so obvious.)
+Afegeix alguns objectes flotants i crea un índex de taules i figures. Si utilitzes una instal·lació local de LaTeX, fixa't en quantes compilacions seran necessàries (el sistema en línia ja fa diverses compilacions 'en segon pla').
 
 ----
 
@@ -157,24 +120,24 @@ how many LaTeX runs are required? (The online systems re-run LaTeX
 #### pref.tex
 <!-- pre2 {% raw %} -->
 ```latex
-\chapter{Preface}
-The preface text. See \cite{doody}.
+\chapter{Prefaci}
+El text del prefaci. Veure \cite{doody}.
 ```
 <!-- {% endraw %} -->
 
 #### chap1.tex
 <!-- pre3 {% raw %} -->
 ```latex
-\chapter{Introduction}
-The first chapter text.
+\chapter{Introducció}
+El text del primer capítol.
 ```
 <!-- {% endraw %} -->
 
 #### chap2.tex
 <!-- pre4 {% raw %} -->
 ```latex
-\chapter{Something}
-The second chapter text.
+\chapter{Alguna cosa}
+El text del segon capítol.
 ```
 <!-- {% endraw %} -->
 
@@ -182,7 +145,7 @@ The second chapter text.
 <!-- pre5 {% raw %} -->
 ```latex
 \chapter*{Appendix}
-The first appendix text.
+El text del primer apèndix.
 ```
 <!-- {% endraw %} -->
 
@@ -200,7 +163,7 @@ The front cover
 ```latex
 \begin{center}
 \large
-For \ldots
+Per \ldots
 \end{center}
 ```
 <!-- {% endraw %} -->
@@ -218,7 +181,7 @@ Copyright 2020 learnlatex.
 <!-- pre9 {% raw %} -->
 ```latex
 \begin{center}
-The back cover
+La contraportada
 \end{center}
 ```
 <!-- {% endraw %} -->

@@ -1,72 +1,66 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "LaTeX Showcase - Examples for further study"
-description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
+lang: "ca"
+title: "LaTeX Showcase - Exemples per aprofundir"
+description: "Aquesta lliçó mostra uns exemples escollits que utilitzen paquets LaTeX i dels quals no se n'ha parlat en les lliçons principals."
 toc-anchor-text: "LaTeX Showcase"
-toc-description: "Examples for further study."
+toc-description: "Exemples per ampliar."
 ---
 
 # Showcase
 
 <span
-  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
+  class="summary">Aquesta lliçó mostra uns exemples escollits que utilitzen paquets LaTeX i dels quals no se n'ha parlat en les lliçons principals.</span>
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.org](https://texdoc.org).
-The examples are taken from the package documentation unless otherwise noted.
+Aquest curs vol donar una visió de les característiques principals de LaTeX. LaTeX té una àmplia extensió de paquets i s'utilitza en moltes àrees. Aquí et donem alguns exemples, sense més explicacions, amb els enllaços a la documentació [texdoc.org](https://texdoc.org) dels paquets. Els exemples s'han extret de la documentació del paquet a no ser que es digui el contrari.
 
-<p
-  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
 
-## Chemistry
+## Química
 
-Package: [`mhchem`](https://texdoc.org/pkg/mhchem)
+Paquet: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
-## Linguistics
+## Lingüística
 
-Package: [`forest`](https://texdoc.org/pkg/forest)
+Paquet: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
-## Chess
+## Escacs
 
 <!-- not 2017 -->
-Package: [`xskak`](https://texdoc.org/pkg/xskak)
+Paquet: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
-## Poetry
+## Poesia
 
-Package: [`memoir`](https://texdoc.org/pkg/memoir)
+Paquet: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 
-## Drawing
+## Dibuix
 <!-- not 2017 -->
-Package: [`tikz`](https://texdoc.org/pkg/tikz)
+Paquet: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
 
 
-## Function plotting
+## Representació gràfica de funcions
 
-Package: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
+Paquet: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
 
 
-## Music
+## Música
 
-Package: [`musixtex`](https://texdoc.org/pkg/musixtex)
+Paquet: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 
