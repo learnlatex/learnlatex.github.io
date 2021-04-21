@@ -9,12 +9,24 @@ toc-description: "Modo e notação matemática."
 
 # Matemática
 
+<span
+  class="summary">Esta lição apresenta o modo matemático do LaTeX e como você
+  pode escrever equações lineares e em exibição, as extensões do pacote
+  `amsmath`, e como mudar a fonte em equações.</span>
+
+Escrever fórmulas matemáticas complexas é um dos pontos fortes do LaTeX.  Você
+pode escrever equações no LaTeX usando uma forma lógica, conhecida como 'modo
+matemático' (_math mode_).
+
 ## Modo matemático
 
-Você pode escrever equações no LaTeX usando uma forma lógica, conhecida como
-'modo matemático' (_math mode_).  Nesse modo, espaços são ignorados e o
-espaçamento correto entre caracteres é (quase) sempre aplicado.  Há duas formas
-do modo matemático: linear (_inline_) e em exibição (_display_).
+Nesse modo, espaços são ignorados e o espaçamento correto entre caracteres é
+(quase sempre) aplicado.
+
+Há duas formas do modo matemático:
+
+* linear (_inline_)
+* em exibição (_display_)
 
 ```latex
 \documentclass{article}
@@ -35,11 +47,14 @@ Veja como o parágrafo continua após a equação.
 Você pode ver sintaxe parecida com a do LaTeX em outros lugares, por exemplo o
 sistema MathJax para inserir equações em páginas da internet.  Esses sistemas
 geralmente aceitam pequenas variações da sintaxe do LaTeX pois eles não usam
-o LaTeX de fato, mas uma emulação.  Nossos exemplos todos contém
-'LaTeX correto', então se você ver algo diferente em outro contexto, pode ser
-que o exemplo não esteja realmente usando o LaTeX.
+o LaTeX de fato, mas uma emulação.
 
-## Modo matemático linear e notação matemática
+<p
+  class="hint">Nossos exemplos todos contém <em>LaTeX correto</em>, então se
+  você ver algo diferente em outro contexto, pode ser que o exemplo não esteja
+  realmente usando o LaTeX.</p>
+
+### Modo matemático linear e notação matemática
 
 Como você viu acima, o modo matemático linear é marcado usando um par de cifrões
 (`$...$`).  Também é possível usar a notação `\(...\)`.  Expressões simples são
@@ -93,7 +108,7 @@ muitos recursos online listando o cunjunto padrão.  Você pode procurar comando
 para símbolos matemáticos usando o
 [Detexify](https://detexify.kirelabs.org/classify.html).
 
-## Matemática em exibição
+### Matemática em exibição
 
 Você pode usar exatamente os mesmos comandos para matemática em exibição ou para
 matemática linear.  Matemática em exibição é centralizada por padrão e é usada
@@ -125,8 +140,25 @@ Perceba aqui como a notação de sub-/superscrito é usada para definir os limit
 da integração.
 
 Nós adicionamos um comando de espaçamento manual aqui: `\,` faz um espaço fino
-antes do `dx`, que nós precisamos para que não pareça um produto com o termo
-anterior.
+antes do `dx`.
+A formatação do operador diferencial varia:  algumas editoras usam um 'd'
+normal, enquanto outras usam um '_d_' itálico.  Uma forma de escrever seu
+documento de forma genérica é criar um comando `\diff` que você pode ajustar
+conforme necessário,
+[por exemplo](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\newcommand{\diff}{\mathop{}\!d}            % Itálico
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % Normal
+\begin{document}
+Um parágrafo sobre uma equação mais longa
+\[
+\int_{-\infty}^{+\infty} e^{-x^2} \diff x
+\]
+\end{document}
+```
 
 Você provavelmente vai querer uma equação numerada, que é criada usando o
 ambiente `equation`.  Vamos tentar o mesmo exemplo acima:
@@ -154,7 +186,7 @@ pela classe de documento, então não são detalhados aqui.
 
 Notação matemática é muito rica, e isso significa que as ferramentas incluídas
 no núcleo do LaTeX não podem cobrir todos os casos necessários.  O pacote
-`amsmath` extende o suporte básico para cobrir muito mais ideias.
+`amsmath` estende o suporte básico para cobrir muito mais ideias.
 O [Guia de Usuário do `amsmath`](http://texdoc.org/pkg/amsmath) (em inglês)
 contém muito mais exemplos do que podemos mostrar nessa lição.
 

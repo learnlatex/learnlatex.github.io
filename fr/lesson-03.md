@@ -48,6 +48,9 @@ automatiquement.
 Visualisez la sortie `first.pdf` avec le programme que vous préférez pour la
 visualisation des PDF. Ça a l'air pas mal, félicitations !
 
+Si vous souhaitez une sortie HTML plutôt que PDF output, jetez un œil à la
+[page d'aide](./help) pour découvrir comment faire.
+
 
 ## En cas d'erreur
 

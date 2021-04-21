@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "ca"
 title: "Language-specifics for English"
 description: "This lesson shows language-specific details for typesetting with LaTeX in English. The focus is on hyphenation, where UK and US traditions are different."
 next: "extra-01"

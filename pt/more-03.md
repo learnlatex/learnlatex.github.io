@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Veja mais sobre: Seu primeiro documento LaTeX"
+title: "Veja mais sobre: Estrutura básica de um documento LaTeX"
 description: "Esta lição dá mais detalhes sobre como executar o LaTeX, e sobre os caracteres especiais utilizados e como inseri-los no PDF."
-toc-anchor-text: "Veja mais sobre: Seu primeiro documento LaTeX"
+toc-anchor-text: "Veja mais sobre: Estrutura do documento"
 ---
 
 ## Executando o LaTeX
@@ -36,7 +36,7 @@ uma contra-barra antes do caractere então, por exemplo, `\{` é usado para
 imprimir um `{`.  No entanto há alguns casos que você precisa de um comando mais
 longo:
 
-| Símbolo | Comando curto (equações e texto) | Comando longo (texto apenas) |
+| Símbolo | Comando curto <br><small>(equações e texto)</small> | Comando longo <br><small>(texto apenas)</small> |
 | `{`     | `\{`          | `\textbraceleft`  |
 | `}`     | `\}`          | `\textbraceright` |
 | `$`     | `\$`          | `\textdollar`     |

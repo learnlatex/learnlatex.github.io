@@ -7,7 +7,7 @@ permalink: /en/licenses
 
 # Licenses
 
-The [LearnLateX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+The [Learn LaTeX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
 
 ## Content
 

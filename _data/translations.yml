@@ -96,7 +96,7 @@ navigational-elements_home:
   es: "Página de inicio"
   fr: "Page d'accueil"
   ja: "ホームページ"
-  pt: "Pagina inicial"
+  pt: "Página inicial"
   tr: "Ana Sayfa"
   vi: "Trang chủ"
   zh: "Missing"
@@ -129,7 +129,7 @@ navigational-elements_help:
 navigational-elements_settings:
   de: "Settings"
   en: "Settings"
-  es: "Settings"
+  es: "Configuración"
   fr: "Paramètres"
   ja: "Settings"
   pt: "Configurações"
@@ -165,7 +165,7 @@ navigational-elements_licenses:
 navigational-elements_privacy:
   de: "Privacy"
   en: "Privacy"
-  es: "Privacy"
+  es: "Privacidad"
   fr: "Confidentialité"
   ja: "Privacy"
   pt: "Privacidade"
@@ -177,7 +177,7 @@ navigational-elements_privacy:
 navigational-elements_open-an-issue:
   de: "Problem melden"
   en: "Open an issue"
-  es: "Abrir un problema"
+  es: "Notificar un problema"
   fr: "Signaler un problème"
   ja: "問題を開く"
   pt: "Abra um problema"
@@ -249,7 +249,7 @@ navigational-elements_return:
 navigational-elements_toc:
   de: "Inhaltsverzeichnis"
   en: "Table of Contents"
-  es: "Tabla de contenido"
+  es: "Índice"
   fr: "Table des matières"
   ja: "目次"
   pt: "Índice"

@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Trocando fontes e usando interpretadores Unicode"
 description: "Esta lição mostra um exemplo básico em Lua para usuários que querem escrever código em Lua no seu documento."
-toc-anchor-text: "Veja mais sobre: Trocando fontes e usando interpretadores Unicode"
+toc-anchor-text: "Veja mais sobre: Fontes & interpretadores Unicode"
 ---
 
 ## Lua
@@ -12,7 +12,7 @@ O interpretador LuaTeX dá acesso a fontes OpenType de forma similar ao XeTeX, e
 a maior parte dos casos com o pacote `fontspec` funcionarão igualmente bem com
 qualquer dos interpretadores.
 
-No entanto, o LuaTeX também extende o TeX de outras formas, notavelmente
+No entanto, o LuaTeX também estende o TeX de outras formas, notavelmente
 incluindo a linguagem de script Lua.  Isso pode ser usado para programar em um
 estilo mais familar para pessoas acostumadas com linguagens de programação
 'convencionais'.  O LuaTeX também oferece a possibilidade de acessar o

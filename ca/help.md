@@ -3,7 +3,7 @@ layout: "page"
 lang: "ca"
 title: "Utilitzant el lloc web de learnlatex.org"
 description: "Aquesta pàgina explica el site learnlatex.org i com aprofitar-lo al màxim."
-permalink: /es/help
+permalink: /ca/help
 ---
 
 # Ajuda
@@ -113,7 +113,7 @@ Com a alternativa a utilitzar el comentari `% !TeX`, pots especificar el paràme
 
 ---
 
-## Sortida HTML (make4ht)
+## Sortida HTML (make4ht, LaTeXML, lwarp)
 
 Si utilitzes el sistema online TeXLive.net, aleshores s'ha d'especificar l'opció de retorn `make4ht`, que retorna una o més pàgines HTML dins del marc de la pàgina. Es pot especificar al mateix temps que `xelatex` o `lualatex` o bé el valor per defecte `latex`.
 
@@ -129,12 +129,34 @@ Alternativament pots especificar l'opció de retorn `make4ht` en la [pàgina de 
 
 Si utilitzes un sistema TeX instal·lat localment, pots obtenir el mateix resultat executant
 
-`make4ht  document.tex "2,mathjax"`
+```
+make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
+```
 {: .noedit :}
 
 afegint l'opció `-x` o `-l` si s'especifica XeLaTeX o LuaLaTeX.
 
 Quan executem localment també són possibles altres configuracions. Veure el [manual de make4ht](https://texdoc.org/pkg/make4ht).
+
+For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
+and use
+
+```
+latexml document.tex > document.xml
+latexmlpost --format=html5 \
+   --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
+   --destination=document.html" document.tex
+```
+{: .noedit :}
+
+Many other LaTeXML configurations are possible,
+[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+
+
+The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
+The current version can be seen at the
+[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+
 
 ---
 

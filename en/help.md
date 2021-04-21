@@ -11,7 +11,8 @@ permalink: /en/help
 
 ## Navigating the site
 
-The course consists of 16 core lessons that can be reached from the [table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+The course consists of 16 core lessons that can be reached from the
+[table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
 
 Each lesson has a link to one associated lesson on the same subject
 that goes into greater depth. It should be possible to work through
@@ -23,7 +24,7 @@ of packages demonstrating LaTeX use not covered by this course.
 
 ---
 
-## Examples 
+## Examples
 
 ### Running the examples
 
@@ -77,9 +78,8 @@ project with the code. You may then edit it in
 Overleaf which will simultaneously run LaTeX on your code showing
 the resulting output or error log.
 
-The editing features in Overleaf are far more extensive than on this
-site, and you may save your project in your Overleaf account and
-return to it later.
+Unlike documents processed at TeXLive.net, you may save your project
+in your Overleaf account and return to it later.
 
 ##### Use the TeXLive.net service
 
@@ -106,11 +106,12 @@ make to the example are lost if you move off the page.
 
 If you have a TeX system installed locally, then you may copy the
 example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor (Ctrl-A Ctrl-C
+using select all keyboard shortcuts in the editor
+(<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
 in windows for example). This will place the code in your operating system
 clipboard so you can start a blank document using your local
 editor, and paste in the text.
-   
+
 ### Troubleshooting
 
 Our examples are based around using an up-to-date LaTeX installation. They all 
@@ -177,34 +178,63 @@ but use `pdf` on your desktop browser to use its default PDF rendering.
 
 ---
 
-## HTML output (make4ht)
+## HTML output (make4ht, LaTeXML, lwarp)
 
-If using the TeXLive.net system, then an additional return option,
-`make4ht`, may be specified. This returns one or more HTML pages
+If using the TeXLive.net system, then additional return options,
+`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
 in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `latex` processing.
+as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
 
-To enable this output, add the comment:
+To enable this output, add a comment of the form:
 
 
-`% !TeX make4ht`
+```
+% !TeX make4ht
+```
 {: .noedit :}
 
 
-Alternatively you may specify `make4ht` as the default return option
+Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
+
+
+
+Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
 on the [Site Settings](settings) page.
 
 
-If using a locally installed TeX system, the same output may be obtained
+If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
 by executing
 
-`make4ht  document.tex "2,mathjax"`
+```
+make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
+```
 {: .noedit :}
 
 with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
 
 When running locally, other configurations would be possible. See the [make4ht
 manual](https://texdoc.org/pkg/make4ht).
+
+
+For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
+and use
+
+```
+latexml document.tex > document.xml
+latexmlpost --format=html5 \
+   --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
+   --destination=document.html" document.tex
+```
+{: .noedit :}
+
+Many other LaTeXML configurations are possible,
+[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+
+
+The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
+The current version can be seen at the
+[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+
 
 ---
 
@@ -213,4 +243,5 @@ manual](https://texdoc.org/pkg/make4ht).
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
       and we thank the developers of those services for making updates to enable
       the examples on this site to be available at an early stage.
+
 

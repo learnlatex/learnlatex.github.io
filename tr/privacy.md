@@ -1,8 +1,8 @@
 ---
 layout: "page"
-lang: "ca"
+lang: "tr"
 title: Privacy Policy
-permalink: /ca/privacy
+permalink: /tr/privacy
 ---
 # Privacy Policy
 

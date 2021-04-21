@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Veja mais sobre: Lidando com erros"
+title: "Veja mais sobre: Resolvendo erros"
 description: "Esta lição mostra mais alguns erros comuns no LaTeX e explica sobre cadeias de erros e erros silenciosos."
-toc-anchor-text: "Veja mais sobre: Lidando com erros"
+toc-anchor-text: "Veja mais sobre: Resolvendo erros"
 ---
 
 ## Erros reportados no final de ambientes
@@ -31,14 +31,14 @@ mostrado pelo TeX ainda deve mostrar a localização exata do erro.
 \end{document}
 ```
 
-Aqui o erro será relatado na linha 11:
+Aqui o erro será relatado na linha 12:
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Embora o erro real seja na linha 9, como mostrado pelas linhas de contexto:
+Embora o erro real seja na linha 10, como mostrado pelas linhas de contexto:
 
 
 ```
@@ -108,7 +108,7 @@ arquivo, não geram uma mensagem de erro, mas apenas mostram um aviso no log.
 
 Se você experimentar este exemplo usando o servidor do TeXLive.net (no botão
 'LaTeX Online'), ele vai retornar um arquivo PDF por padrão, pois não há uma
-mensagem de erro;  para ver a mensagem no log adicione `%!TeX log` no exemplo:
+mensagem de erro;  para ver a mensagem no log adicione `%!TEX log` no exemplo:
 
 ```latex
 \documentclass{article}

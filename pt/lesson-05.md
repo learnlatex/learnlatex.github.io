@@ -7,9 +7,12 @@ toc-anchor-text: "Classes de Documento"
 toc-description: "Configurando a aparência geral do documento."
 ---
 
-# Usando classes de documentos para influenciar o design
+# Classes de documentos
 
-## O que uma classe de documento faz
+<span
+  class="summary">Esta lição explica o que é uma classe de documento e como ela
+  pode influenciar a aparência de um documento, e lista as principais classes
+  que você vai encontrar em uma distribuição de TeX.</span>
 
 Você deve ter percebido que todos os documentos LaTeX que criamos até agora
 começam com uma linha com `\documentclass`, e que `\documentclass{article}` foi
@@ -17,6 +20,8 @@ a escolha mais comum.  (Nós usamos `\documentclass{report}` na
 [lição anterior](lesson-04) para testar o comando `\chapter`.) Essa linha é
 necessária em todos os documentos em LaTeX, e é (quase) sempre o primeiro
 comando que você deve usar.
+
+## O que uma classe de documento faz
 
 A classe de documento configura a aparência geral do documento, por exemplo:
 
@@ -38,12 +43,17 @@ aparecendo primeiro entre colchetes, é usada em muitos comandos do LaTeX.
 O LaTeX vem com um conjunto de classes padrão, todas as quais têm aparência
 similar, mas com algumas variações:
 
-- `article`: documentos curtos sem capítulos
-- `report`: documentos mais longos com capítulos, e impressão em um lado
-- `book`: documentos mais longos com capítulos, impressão em frente e verso, com
+- `article`  
+  documentos curtos sem capítulos
+- `report`  
+  documentos mais longos com capítulos, e impressão em um lado
+- `book`  
+  documentos mais longos com capítulos, impressão em frente e verso, com
   conteúdo pré- e pós-textual (por exemplo um índice remissivo)
-- `letter`: correspondência, sem seções
-- `slides`: para apresentações (mas veja mais abaixo)
+- `letter`  
+  correspondência, sem seções
+- `slides`  
+  para apresentações (mas veja mais abaixo)
 
 As classes `article`, `report` e `book` têm comandos muito similares
 disponíveis, como já vimos.  Quando escrevendo uma carta com a classe `letter`,
@@ -87,12 +97,12 @@ A _American Mathematical Society_ fornece variantes das classes padrão (`amsart
 e `amsbook`) com um design mais tradicional, mais próximo do que é usado em
 artigos científicos de matemática.
 
-As duas maiores e mais populares classes 'extendidas' são a coleção KOMA-Script
+As duas maiores e mais populares classes 'estendidas' são a coleção KOMA-Script
 e a classe memoir.  KOMA-Script oferece um conjunto de classes que são
-'paralelos' às classes padrão:  `scrartcl`, `scrreprt`, e `scrbook`, enquanto há
-apenas uma classe `memoir` que é como uma extensão de `book`.
+'paralelos' às classes padrão:  `scrartcl`, `scrreprt`, `scrbook`, e `scrlttr2`,
+enquanto há apenas uma classe `memoir` que é como uma extensão de `book`.
 
-Essas classes extendidas têm muitos pontos de personalização, que vamos explorar
+Essas classes estendidas têm muitos pontos de personalização, que vamos explorar
 um pouco em um exercício.  Você pode se perguntar como sabemos quais são esses
 pontos de personalização;  vamos abordar isso
 [em uma lição adiante](lesson-16), mas você pode pular se quiser!

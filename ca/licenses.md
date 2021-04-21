@@ -1,8 +1,8 @@
 ---
 layout: "page"
-lang: "en"
+lang: "ca"
 title: Licenses
-permalink: /en/licenses
+permalink: /ca/licenses
 ---
 
 # Licenses
