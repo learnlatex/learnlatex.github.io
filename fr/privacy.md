@@ -2,7 +2,7 @@
 layout: "page"
 lang: "fr"
 title: Politique de confidentialité
-permalink: /en/privacy
+permalink: /fr/privacy
 ---
 
 # Politique de confidentialité
