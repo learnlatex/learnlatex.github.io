@@ -474,3 +474,32 @@
   mr: mr/more-16
   ca: ca/more-16
 
+-
+  de: de/privacy
+  en: en/privacy
+  es: es/privacy
+  fr: fr/privacy
+  ja: ja/privacy
+  pt: pt/privacy
+  tr: tr/privacy
+  vi: vi/privacy
+  zh: zh/privacy
+  mr: mr/privacy
+  ca: ca/privacy
+
+-
+  de: de/settings
+  en: en/settings
+  es: es/settings
+  fr: fr/settings
+  ja: ja/settings
+  pt: pt/settings
+  tr: tr/settings
+  vi: vi/settings
+  zh: zh/settings
+  mr: mr/settings
+  ca: ca/settings
+  
+
+
+
