@@ -138,8 +138,7 @@ afegint l'opció `-x` o `-l` si s'especifica XeLaTeX o LuaLaTeX.
 
 Quan executem localment també són possibles altres configuracions. Veure el [manual de make4ht](https://texdoc.org/pkg/make4ht).
 
-For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
-and use
+Per executar `LaTeXML` localment, hauràs d'instal·lar LaTeXML (que no és part de TeX Live o MiKTeX) i utilitzar les comandes
 
 ```
 latexml document.tex > document.xml
@@ -149,13 +148,10 @@ latexmlpost --format=html5 \
 ```
 {: .noedit :}
 
-Many other LaTeXML configurations are possible,
-[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+També hi ha d'altres configuracions de LaTeXML possibles, [com es descriu en el manual](https://dlmf.nist.gov/LaTeXML/manual/).
 
 
-The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
-The current version can be seen at the
-[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+Aquí no documentem la configuració `lwarp`, doncs és bastant experimental i segurament canviarà. La versió actual es pot veure al [repositori font](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 
 ---
