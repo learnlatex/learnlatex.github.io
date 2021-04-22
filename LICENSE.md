@@ -1,3 +1,8 @@
+---
+lang: en
+title: LICENSE
+permalink: /LICENSE
+---
 Attribution-ShareAlike 4.0 International
 
 =======================================================================
