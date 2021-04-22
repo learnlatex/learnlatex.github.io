@@ -98,7 +98,7 @@ The variable names should not be changed but the values should be changed to you
 
  * `title` is used on this page for the title,
  * `description`, is used below the title
- * `toc-anchor-text` and `toc-description`are used in the annotated
+ * `toc-anchor-text` and `toc-description` are used in the annotated
    table of contents for the top level learnlatex.org/zz page.
 
 ## Lesson text.
