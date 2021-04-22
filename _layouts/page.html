@@ -24,7 +24,9 @@ layout: compress
     <link rel="canonical" href="https://www.learnlatex.org/">
 
     <!-- script to run latex start -->
+    {% if page.path contains "-" or page.path contains "help" %}
     <script src="{{ "/assets/scripts/runlatex.js" | relative_url}}"></script>
+    {% endif %}
     <!-- script to run latex end -->
 
     <!-- adding anchors to headings start 1/2 --> 
