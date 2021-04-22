@@ -24,7 +24,7 @@ ou poser votre question sur [ce site OSQA](https://www.texnique.fr/).
 
 ## Maintenance du site web
 
-Le code source de ce site web se trouve sur [GitHub](https://github.com/learnlatex/learnlatex.github.io/), veuillez consulter les rubriques [CONTRIBUTION](../CONTRIBUTING) et [LICENCE](../LICENSE) pour plus de détails. Les changements récents sont répertoriés dans le journal des changements.
+Le code source de ce site web se trouve sur [GitHub](https://github.com/learnlatex/learnlatex.github.io/), veuillez consulter les rubriques [CONTRIBUTION](../CONTRIBUTING) et [LICENCE](../LICENSE) pour plus de détails.
 
 Vous pouvez également [ouvrir un ticket sur GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) ou [nous envoyer un courriel](mailto:texfaq@texfaq.org) avec vos suggestions.
 

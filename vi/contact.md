@@ -18,8 +18,7 @@ hiểu thêm về các cách nhận được hỗ trợ.
 
 [Mã nguồn của trang web này](https://github.com/learnlatex/learnlatex.github.io)
 có ở trên [GitHub](https://github.com/learnlatex). Hãy xem [CONTRIBUTING](../CONTRIBUTING)
-và [LICENSE](../LICENSE) để biết thêm thông tin. Những thay đổi gần đây của trang
-được liệt kê ở [Change Log](../CHANGELOG).
+và [LICENSE](../LICENSE) để biết thêm thông tin.
 
 Bạn cũng có thể [mở một issue trên GitHub](https://github.com/learnlatex/learnlatex.github.io/issues)
 hoặc [gửi email cho chúng tôi](mailto:texfaq@texfaq.org) nếu muốn cung cấp thêm

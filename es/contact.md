@@ -13,7 +13,7 @@ Desgraciadamente no disponemos de recursos para ofrecer una ayuda personalizada 
 
 ## El equipo del sitio web
 
-El [código fuente de este sitio web](https://github.com/learnlatex/learnlatex.github.io/) se encuentra en [GitHub](https://github.com/learnlatex/), por favor consulte la sección [CONTRIBUIR](../CONTRIBUTING) y [LICENCIA](../LICENSE) para más información. Las últimas modificaciones las encontrará en el [Historial de modificaciones](../CHANGELOG).
+El [código fuente de este sitio web](https://github.com/learnlatex/learnlatex.github.io/) se encuentra en [GitHub](https://github.com/learnlatex/), por favor consulte la sección [CONTRIBUIR](../CONTRIBUTING) y [LICENCIA](../LICENSE) para más información.
 
 Puede igualmente [notificar un problema o dar un consejo en GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) o enviarnos un [correo electrónico](mailto:texfaq@texfaq.org) con sus sugerencias.
 

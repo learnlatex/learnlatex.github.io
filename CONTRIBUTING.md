@@ -10,11 +10,8 @@ permalink: /CONTRIBUTING
 Thanks for considering contributing to learnlatex.org: feedback, fixes and
 ideas are all useful.
 
-## ChangeLog, commit messages and authors
+## Commit messages and authors
 
-Please note any significant change to the content of questions in
-[`CHANGELOG.md`](CHANGELOG.md), including which lesson is changed in the
-format `L-<number>`.
 
 Commit messages where the content of a single lesson is changed should start
 with `L-<name>`. Changes to the _content_ of lessons should always be made in
