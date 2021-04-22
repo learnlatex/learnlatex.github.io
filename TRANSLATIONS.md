@@ -68,7 +68,6 @@ pages.
      zz: "YOUR TRANSLATION HERE"
    ```
    
-7. Update  `_data/map.yml` with a `zz:` entry for each page.
 
 At this point your language should appear in the drop down menu to
 select languages, and the navigation between pages. Obviously the main
