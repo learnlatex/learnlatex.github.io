@@ -67,7 +67,7 @@ translated until the English version is more stable.
 For the avoidance of doubt, we are using US English spelling (and idiom)
 on the site, as this is the most widely-understood approach.
 
-See [STYLEGUIDE.md](STYLEGUIDE.md) for other points of style for the English
+See [The Style Guide](STYLEGUIDE.md) for other points of style for the English
 version.
 
 If you do plan to contribute a translation then please contact the
