@@ -3,6 +3,9 @@ lang: en
 title: LICENSE
 permalink: /LICENSE
 ---
+
+```raw
+
 Attribution-ShareAlike 4.0 International
 
 =======================================================================
@@ -431,3 +434,5 @@ public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
 
+```
+{: .noedit :}
