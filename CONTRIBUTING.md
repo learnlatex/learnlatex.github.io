@@ -61,7 +61,7 @@ the site useful. There are a few things to watch out for
 
 We already have have full content in several languages.  Some
 in-progress partial translations are also visible in the git sources
-of this ste and in several forks.
+of this site and in several forks.
 
 For the avoidance of doubt, we are using US English spelling (and idiom)
 on the site, as this is the most widely-understood approach.
@@ -80,7 +80,7 @@ have information specific to the language being used.
 
 The translation should be placed in a two-letter directory using the
 ISO 639-1 language code, of if necessary, also use the script code such
-as `zh-Hans` for Chinese using the simplified script.  The yml array
+as `zh-Hans` for Chinese using the simplified script.  The YAML array
 in `_data/languages.yml` will need to be extended to include the
 language.
 
