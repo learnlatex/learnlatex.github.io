@@ -1,139 +1,111 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Logical structure"
-description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
-toc-anchor-text: "Logical structure"
-toc-description: "Structure and visual presentation."
+lang: "ca"
+title: "Estructura lògica"
+description: "Aquesta lliçó explica algunes comandes bàsiques per donar format al text, i les compara amb el format semàntic, les comandes de secció i les llistes."
+toc-anchor-text: "Estructura lògica"
+toc-description: "Estructura i presentació visual."
 ---
 
-# Logical structure
+# Estructura lògica
 
 <span
-  class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
+  class="summary">Aquesta lliçó explica algunes comandes bàsiques per donar format al text, i les compara amb el format semàntic, les comandes de secció i les llistes.</span>
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
+LaTeX proporciona maneres per concentrar-se en l'estructura lògica del document, i també la capacitat de configurar directament l'aparença del document. La majoria de les vegades, és millor utilitzar mètodes que es focalitzin en l'estructura, doncs d'aquesta manera és més fàcil reutilitzar i modificar el disseny quan s'hagi de fer.
 
-## Structure and visual presentation
+## Estructura i presentació visual
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasized.)
+Començarem amb un exemple que compara una de les comandes de marcat lògic més comunes a LaTeX, `\emph`, per tal de posar la cursiva (en la impressió, aquesta és la manera més habitual de ressaltar un text).
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some text with \emph{emphasis and \emph{nested} content}.
+Una mica de text en \emph{cursiva i contingut \emph{niat}}.
 
-Some text in \textit{italic and \textit{nested} content}.
+Una mica de text en \textit{cursiva i contingut \textit{niat}}.
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+Hauràs endevinat que `\textit` és la comanda per formatar text en cursiva, però _sempre_ fa que el text sigui en cursiva, és a dir, no va bé per material niat (`nesting`). Observa com `\emph` gestiona bé els niats. També podem trobar exemples en què _èmfasi_ no és el mateix que _itàlica_; per exemple, en presentacions en color normalment és millor opció. Amb el marcat lògic, no ens hem de preocupar sobre aquest nivell de detall en el cos del document.
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+Més endavant veurem el [manual de l'estil de text](lesson-11), però de moment afegirem `\textbf` a les comandes que per ara coneixem: és la negreta.
 
-## Sectioning commands
+## Comandes de secció
 
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
+Segurament hauràs utilitzat un processador de text, on comences una secció i la majoria de la gent posa un títol i el fa més gran i en negreta, i després continua amb un salt de línia. A LaTeX, utilitzem el marcat lògic, i això fa que les coses siguin més _fàcils_ cd fer; utilitzarem la comanda `\section`, que gestiona els canvis de font, l'espaiat vertical, etc., i així mantindrem una uniformitat en tot el doucument.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Hey world!
+Hola món!
 
-This is a first document.
+Aquest és un primer document.
 
-\section{Title of the first section}
+\section{Títol de la primera secció}
 
-Text of material in the first section
+Text del material de la primera secció
 
-Second paragraph.
+Segon paràgraf.
 
-\subsection{Subsection of the first section}
+\subsection{Subsecció de la primera secció}
 
-Text of material in the subsection.
+Text del material de la subsecció.
 
-\section{Second section}
+\section{Segona secció}
 
-Text of the second section.
+Text de la segona secció.
 
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+Utilitzant el tipus de document estàndard `article`, LaTeX enumera les seccions i subseccions
+i posa els títols en negreta. Entrarem més en els canvis de disseny en la [propera lliçó](lesson-05).
 
-LaTeX can divide up documents into quite a few levels
+LaTeX pot dividir un document en bastants nivells:
 
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
+- `\chapter` (però necessitem `\documentclass{book}` o `\documentclass{report}` per fer-ho)
 - `\section`
 - `\subsection`
 - `\subsubsection`
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+Podem anar més enllà: 'baixant' un nivell, el següent és `\paragraph`, però quasi sempre això serà anar massa lluny en el detall de les seccions. (Sí, `\paragraph` és una comanda de secció, _no_ una manera de començar un nou paràgraf!).
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+Pot ser que et preguntis sobre el títol del document. Hi ha algunes comandes especials per això, però no tots els documents les utilitzen, així que ho hem [tractat en una lliçó extra paral·lela](more-04).
 
-## Lists
+## Llistes
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+Una altra situació molt comuna en què utilizaràs marcadors lògics és en l'edició d'una llista.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
 
-Ordered
+Ordenat
 \begin{enumerate}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item Una entrada
+  \item Una altra entrada
+  \item Uau! Tres entrades
 \end{enumerate}
 
-Unordered
+Desordenat
 \begin{itemize}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item Una entrada
+  \item Una altra entrada
+  \item Uau! Tres entrades
 \end{itemize}
 
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+Fixa't que utilitzem `\item` per començar cada entrada, i que el marcador utilitzat per cada tipus de llista s'afegeix automàticament.
 
-## Exercises
+## Exercicis
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+Experimenta amb diferents nivells de secció. Prova d'utilitzar `\documentclass{report}`
+en comptes de `\documentclass{article}` i afegeix la comanda `\chapter`. Com et sembla? Prova `\paragraph` i (fins i tot) `\subparagraph` per veure com funcionen: per defecte, no afegeixen numeració.
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+Fes algunes llistes, i nia una llista dins d'una altra. Com canvia el format de la numeració o del marcador de la llista? Amb LaTeX només pots anar fins a quatre nivells en les llistes niades, però de totes maneres necessitar més de quatre nivells seria un exemple de mal disseny!

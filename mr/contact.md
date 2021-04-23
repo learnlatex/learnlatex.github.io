@@ -19,8 +19,7 @@ permalink: /mr/contact
 
 ह्या संकेतस्थळाची [बीज आज्ञावली](https://github.com/learnlatex/learnlatex.github.io/)
 गिटहबवर आहे. अधिक तपशिलांकरिता कृपया [योगदान-पृष्ठावरील सूचना](../CONTRIBUTING) व
-[परवानाविषयक](../LICENSE) माहिती पाहा. नवीन बातम्या [बदलांच्या
-पृष्ठावर](../CHANGELOG) पाहता येतील.
+[परवानाविषयक](../LICENSE) माहिती पाहा.
 
 वाचकांना [गिट-संग्राहिकेवर
 तक्रार](https://github.com/learnlatex/learnlatex.github.io/issues) नोंदवता येऊ शकते

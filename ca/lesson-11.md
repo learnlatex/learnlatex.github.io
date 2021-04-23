@@ -1,68 +1,59 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Formatting: fonts and spacing"
-description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
-toc-anchor-text: "Fonts & spacing"
-toc-description: "Text formatting for visual presentation."
+lang: "ca"
+title: "Formatant el text: fonts i espaiat"
+description: "En aquesta lliçó s'explica com canviar l'espaiat dels elements del document i com afegir instruccions de format al codi font de LaTeX."
+toc-anchor-text: "Fonts i espaiat"
+toc-description: "Formatar el text per millorar la presentació visual."
 ---
 
-# Formatting: fonts and spacing
+# Formatant el text: fonts i espaiat
 
 <span
-  class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>
+  class="summary">En aquesta lliçó s'explica com canviar l'espaiat dels elements del document i com afegir instruccions de format al codi font de LaTeX.</span>
 
-We have already seen that a blank line in your input will generate a new
-paragraph in LaTeX. This shows up as the paragraph will start with an
-indent.
+Ja hem vist que un salt de línia en el teu document genera un paràgraf a la sortida. Això es fa evident quan comencem el paràgraf amb una identació.
 
-## Paragraph spacing
+## Espaiat entre paràgrafs
 
-One common style is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can achieve that using the `parskip`
-package.
+Una elecció habitual és no identar els paràgrafs, sinó més aviat posar un salt de línia entre ells. Podem aconseguir-ho utilitzant el paquet `parskip`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
-\usepackage{lipsum} % Just for some filler text
+\usepackage{lipsum} % Text de farciment
 \begin{document}
 \lipsum
 \end{document}
 ```
 
-## Forcing a new line
+## Forçar un salt de línia
 
-Most of the time, you should not force a new line in LaTeX: you almost
-certainly want a new paragraph or to use `parskip`, as we've just seen,
-to put a 'blank line' between paragraphs.
+La majoria de les vegades no cal forçar un salt de línia a LaTeX: quasi sempre que vols un salt de línia és perquè vols fer separació de paràgrafs, i el normal és utilitzar `parskip` com acabem de veure.
 
-There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph:
+Però hi ha situacions en què voldràs utilitzar `\\` per provocar un salt de línia sense començar un nou paràgraf:
 
-- At the end of table rows
-- Inside the `center` environment
-- In poetry (the `verse` environment)
+- Al final de les files d'una taula
+- A dins de l'entorn `center`
+- A l'escriure poesia (en l'entorn `verse`)
 
-Almost always, if you are not in one of those special places, you should
-_not_ use `\\`.
+Quasi sempre, a no ser que estiguis en un d'aquests casos concrets, no utilitzaràs `\\`.
 
-## Adding explicit space
+## Afegir un espai de forma explícita
 
-We can insert a thin space (about half the normal thickness) using
-`\,`. In math mode, there are also other commands: `\.`, `\:` and `\;`,
-and one for a negative space: `\!`.
+Podem afegir un petit espai (d'aproximadament la meitat de l'ample de l'espai normal) utilitzant `\,`. En el mode matemàtic, existeix també altres comandes: `\.`, `\:` i `\;`, i fins i tot una comanda per l'espai cap a endarrere: `\!`.
 
-Very rarely, for example when creating a title page, you might need to
-add explicit horizontal or vertical space. We can use `\hspace` and `\vspace`
-for that.
+En poques ocasions, com per exemple en crear una pàgina de títol, necessitaràs 
+afegir explícitament un espai horitzontal o vertical. Pots utilitzar en aquests casos 
+les comandes `\hspace` i `\vspace`, per tal de crear espais horizontals i verticals, 
+respectivament.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some text \hspace{1cm} more text.
+Una mica de text \hspace{1cm} i més text.
 
 \vspace{10cm}
 
@@ -70,30 +61,23 @@ Even more text.
 \end{document}
 ```
 
-## Explicit text formatting
+## Formatar text de forma explícita
 
-We wrote [in lesson 3](lesson-03) that most of the time logical structure is
-preferable. But sometimes you want to make text bold, or italic, or monospaced,
-etc. There are two types of command for this: ones for short pieces of text,
-and ones for 'running' material.
+Vàrem explicar a la [lliçó 3](lesson-03) que sempre és preferible per al document utilitzar l'estructura lògica. Però algunes vegades voldràs que el teu text sigui en negreta, cursiva, mono-espaiat, etc. Hi ha dos tipus de comandes per fer-ho: unes per a trossos petits de text, i d'altres per a continguts en el cos del document (frases, paràgrafs, etc.)
 
-For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
-`\texttt` and `\textsc`.
+Per a trossos petits de text utilitzarem `\textbf`, `\textit`, `\textrm`, `\textsf`,
+`\texttt` i `\textsc`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
+Anem a practicar amb les fonts: \textbf{bold}, \textit{italic}, \textrm{roman},
 \textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
 \end{document}
 ```
 
-For running text, we use commands that alter the font setup; the commands
-here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them from applying to
-the whole document. LaTeX environments are groups, as are table cells,
-or we can use `{...}` to make an explicit group.
+Per a parts del text en el cos d'un document, utilitzarem comandes que canvien l'estil del tipus de lletra a utilitzar. Per fer-ho necessitarem situar la comanda i el text en un mateix _grup_ ja que, en cas contrari, l'estil s'aplicaria a tot el document. Els entorns de LaTeX són grups, a l'igual que les cel·les d'una taula, i fora d'aquests casos particulars, posarem el nostre contingut entre claus `{...}` per explicitar la creació d'un grup.
 
 ```latex
 \documentclass{article}
@@ -103,41 +87,34 @@ Normal text.
 
 {\itshape
 
-This text is italic.
+Aquest text és en cursiva.
 
-So it this: the effect is not limited to a paragraph.
+El seu efecte no està limitat al paràgraf.
 
 }
 \end{document}
 ```
 
-We can set font size in a similar way; these commands all work on an ongoing
-basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
-`\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back; see how we add an explicit `\par`
-(paragraph break) here.
+Podem canviar el tamany de la font de manera similar; aquestes comandes s'apliquen al contingut d'un grup, com els anteriors. Els tamanys es defineixen de forma relativa: `\huge`, `\large`, `\normalsize`, `\small` i `\footnotesize` són els més comuns. És important finalitzar el paràgraf
+_abans_ de canviar una altra vegada al tamany original; fixa't com aquí afegim de forma explícita un `\par` (salt de paràgraf).
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Normal text.
+Text normal.
 
 \begin{center}
-{\itshape\large Some text\par}
-Normal text
-{\bfseries\small Much smaller text\par}
+{\itshape\large Més text\par}
+Text normal
+{\bfseries\small Text encara més petit\par}
 \end{center}
 
 \end{document}
 ```
 
-## Exercises
+## Exercicis
 
-Experiment with manual formatting: create a `titlepage` environment and
-try inserting different spaces and font changes. What happens when we
-combine font changes? How does this compare to math mode?
+Experimenta amb el format manual: crea un entorn `titlepage` i prova d'inserir diferents espaiats i canvis de font. Què passa quan combinem canvis de font? Com es comporta en relació al mode matemàtic?
 
-What happens if you change the font size of a large paragraph (try with
-`\tiny` then with `\huge`) but don't issue a final `\par` before closing
-the group?
+Què passa si canviem el tamany de la font d'un paràgraf més gran (prova amb `\tiny` i després amb `\huge`) però sense utilitzar `\par` abans de tancar el grup?

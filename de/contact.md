@@ -13,7 +13,7 @@ Leider haben wir nicht die Möglichkeit, persönliche Unterstützung bei Problem
 
 ## Website-Team
 
-Der [Quellcode dieser Website](https://github.com/learnlatex/learnlatex.github.io/) ist auf [GitHub](https://github.com/learnlatex/). Bitte beachten Sie [CONTRIBUTING](../CONTRIBUTING) und [LICENSE](../LICENSE) für Details. Bisherige Änderungen sind im [Change Log](../CHANGELOG) aufgelistet.
+Der [Quellcode dieser Website](https://github.com/learnlatex/learnlatex.github.io/) ist auf [GitHub](https://github.com/learnlatex/). Bitte beachten Sie [CONTRIBUTING](../CONTRIBUTING) und [LICENSE](../LICENSE) für Details.
 
 Sie können auch ein [Ticket auf GitHub eröffnen](https://github.com/learnlatex/learnlatex.github.io/issues) oder [uns eine E-Mail schicken](mailto:texfaq@texfaq.org) mit Ihren Anmerkungen.
 

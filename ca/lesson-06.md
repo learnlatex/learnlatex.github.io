@@ -1,63 +1,54 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Extending LaTeX using packages and definitions"
-description: "This lesson shows how you can extend LaTeX to your needs and change its layout further by using different packages, and shows how you can define your own commands."
-toc-anchor-text: "Extending LaTeX"
-toc-description: "Using packages and definitions."
+lang: "ca"
+title: "Ampliant LaTeX utilitzant paquets i definicions"
+description: "Aquesta lliçó explica com pots ampliar i adaptar LaTeX a les teves necessitats i canviar la seva aparença utilitzant els paquets i definicions. Es mostra igualment com pots definir les teves pròpies comandes."
+toc-anchor-text: "Ampliar LaTeX"
+toc-description: "Utilitzant paquets i definicions."
 ---
 
-# Extending LaTeX
+# Ampliant LaTeX
 
 <span
-  class="summary">This lesson shows how you can extend LaTeX to your needs and change its layout further by using packages and definitions. It also shows how you can define your own commands.</span>
+  class="summary">Aquesta lliçó explica com pots ampliar i adaptar LaTeX a les teves necessitats i canviar la seva aparença utilitzant els paquets i definicions. Es mostra igualment com pots definir les teves pròpies comandes.</span>
 
-After having declared a class, in the preamble you can modify functionality in
-LaTeX by adding one or more *packages*. These can
+Després d'haver declarat un tipus, en el preàmbul pots modificar la funcionalitat afegint un o més paquets (*packages*). Aquests poden
 
-- Change how some parts of LaTeX work
-- Add new commands to LaTeX
-- Change document design
+- Canviar la manera com funciona algunes parts de LaTeX
+- Afegir noves comandes a LaTeX
+- Canviar el disseny del document
 
-## Changing how LaTeX works
+## Canviar com funciona LaTeX
 
-The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
-and so some add-on packages deal with very common ideas. The first is to
-change how LaTeX deals with language-specific typesetting (hyphenation,
-punctuation, quotations, localisation, etc.). Different languages have different
-rules, so it's important to tell LaTeX which one to use. This is handled by the
-`babel` package.
+El 'kernel' de LaTeX (el nucli) és bastant limitat quant a les possibilitats de personalització, i per això alguns paquets extra afegeixen opcions habituals. El primer és la possibilitat de canviar la manera com LaTeX es comporta amb caràcters específics del llenguatge (guionets i separació sil·làbica, signes de puntuació, cometes, localització, etc.). Diferents idiomes tenen diferents regles, així doncs és important dir-li a LaTeX quina has d'utilitzar. Això ho gestiona el paquet `babel`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-%\usepackage[french]{babel}
+%\usepackage[catalan]{babel}
 
-\usepackage[width = 6cm]{geometry} % To force hyphenation here
+\usepackage[width = 6cm]{geometry} % Per forçar la separació sil·làbica
 
 \begin{document}
 
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
+Aquí tenim molt contingut de farciment doncs volem demostrar com LaTeX gestiona
+separació sil·làbica de les paraules, de manera que com a mínim tinguem alguna paraula
+amb un guionet de separació.
+Aquí tenim molt contingut de farciment doncs volem demostrar com LaTeX gestiona
+separació sil·làbica de les paraules, de manera que com a mínim tinguem alguna paraula
+amb un guionet de separació.
 
 \end{document}
 ```
 
-Try un-commenting the (clearly misleading) line to load `babel` and see the
-effect. (The standard hyphenation rules are US English.)
+Prova de descomentar la línia que carrega `babel` i mira el seu efecte. (Les regles estàndard de separació sil·làbica son les de l'anglès US.)
 
-The `babel` package does a lot more than hyphenation, depending on the language
-involved; we've given [some more details](more-06) if you need them.
+El paquet `babel` fa molt més que la separació sil·làbica, depenent de quin és l'idioma del que estem parlant; et donem [més detalls](more-06) en cas que els necessitis.
 
-## Changing design
+## Canviar el disseny
 
-It's useful to be able to adjust some aspects of design independent of the
-document class. The most obvious one are the page margins. We've just used
-the `geometry` package in the example above, but let's now have an example
-specifically about margins.
+És útil la possibilitat d'ajustar alguns aspectes del disseny amb independència del tipus de document. El més obvi són els marges de pàgina. En l'exemple anterior acabem d'utilitzar el paquet `geometry`, però anem a fer ara un exemple centrat en els marges.
 
 ```latex
 \documentclass{book}
@@ -65,51 +56,45 @@ specifically about margins.
 \usepackage[margin=1in]{geometry}
 
 \begin{document}
-Hey world!
+Hola món!
 
-This is a first document.
-
-
-% ================
-\chapter{Chapter One}
-Introduction to the first chapter.
-
-
-\section{Title of the first section}
-Text of material in the first section
-
-Second paragraph.
-
-\subsection{Subsection of the first section}
-
-Text of material in the subsection.
+Aquest és un primer document.
 
 
 % ================
-\section{Second section}
+\chapter{Capítol Primer}
+Introducció al primer capítol.
 
-Text of the second section.
+
+\section{Títol de la primera secció}
+Text del material de la primera secció.
+
+Segon paràgraf.
+
+\subsection{Subsecció de la primera secció}
+
+Text del material de la subsecció.
+
+
+% ================
+\section{Segona secció}
+
+Text de la segona secció.
 
 \end{document}
 ```
 
-You should see the effect here compared to not loading `geometry`.
+Pots veure el seu efecte evitant de carregar el paquet `geometry`.
 
-## Adding new functionality
+## Afegir nova funcionalitat
 
-One of LaTeX's strengths is that you can choose from thousands of packages,
-including ones for writing mathematical text, for hyperlinking, for
-sophisticated capabilities with color, etc. We will see some more common
-packages in later lessons.
+Un dels punts forts de LaTeX és que pots escollir entre milers de paquets, incloent els que et permeten escriure fórmules matemàtiques, hiperenllaços, capacitats sofisticades relacionades amb el color, etc. Treballarem amb altres paquets comuns en properes lliçons.
 
-## Defining commands
+## Definir comandes
 
-Sometimes you need a command specific to your document, either some
-functionality not found in the available packages or simply a command
-to enter a common expression that is used multiple times.
+A vegades necessites una comanda específica per al teu document, potser alguna funcionalitat que no es troba en els paquets específics, o potser una comanda per entrar una expressió comuna que utilitzes moltes vegades.
 
-The following example shows a command to produce keywords with a
-specific style applied.
+El següent exemple mostra una comanda que aplica un format i estil a les paraules 'pomes' i 'taronges', cosa que pot suposar un estalvi de temps important si aquesta funcionalitat es fa servir moltes vegades.
 
 ```latex
 \documentclass{article}
@@ -119,23 +104,14 @@ specific style applied.
 
 \begin{document}
 
-Something about \kw{apples} and \kw{oranges}.
+Alguna cosa sobre \kw{pomes} i \kw{taronges}.
 
 \end{document}
 ```
 
-In the definition `[1]` denotes the number of arguments (here one)
-and `#1` denotes the first argument that is supplied
-(`apples` or `oranges` in this example). You may have up to nine
-arguments, but it is usually best to have just one argument, or
-sometimes none at all.
+En la definició `[1]` significa el número d'arguments (en aquest cas un) i `#1` significa el primer argument que es proporciona (`pomes` o `taronges` en aquest exemple). Pots tenir fins a 9 arguments.
 
-Defining commands does not just reduce the typing required to produce
-a document. It helps to separate out the styling information. If it is
-decided to use a different style for keywords, rather than having to
-edit the entire document, you simply need to use a different
-definition. Here we load the `xcolor` package to provide colors, and
-use blue in place of bold in the formatting.
+Definir comandes no només serveix per reduir el número de tecles a picar, sinó sobretot una manera fàcil d'aplicar estils. Pots tenir 'keywords' amb diferents estils, en comptes d'haver d'editar el document sencer. En l'exemple carreguem el paquet `xcolor` per proporcionar colors, i formatem les paraules que volem destacar amb blau i cursiva.
 
 ```latex
 \documentclass{article}
@@ -147,27 +123,19 @@ use blue in place of bold in the formatting.
 
 \begin{document}
 
-Something about \kw{apples} and \kw{oranges}.
+Alguna cosa sobre \kw{pomes} i \kw{taronges}.
 
 \end{document}
 ```
 
-Beware that defining too many commands or defining commands with
-multiple arguments may make the document source harder  to understand
-as it is using an unfamiliar syntax. The ability to define
-document-specific commands should be used with care.
+Tingues en compte que definir massa comandes o comandes amb molts arguments pot fer que el document font sigui difícil d'entendre. La possibilitat de definir comandes específiques per al document s'ha d'utilitzar amb compte i sense abús.
 
-## Exercises
+## Exercicis
 
-Try out writing some text in other European languages and see how `babel`
-affects hyphenation: you can probably find some text on the internet, and guess
-the right options.
+Prova d'escriure text amb altres llengües europees i observa com `babel` afecta a la separació sil·làbica: pots trobar exemples de text a internet, i endevina les opcions correctes.
 
-Try altering the margins in the `geometry` example. You can set the individual
-`top`, `bottom`, `left` and `right` margins separately using a comma-separated
-list.
+Prova d'alterar els marges en l'exemple on hem utilitzat `geometry`. Pots definir els marges amb `top`, `bottom`, `left` i `right`, separant les opcions amb coma.
 
-Try loading the `lipsum` package and then add the command `\lipsum` to your
-document. Can you guess why this package is useful for making examples?
+Prova de carregar el paquet `lipsum` i afegeix la comanda `\lipsum` al teu document. Pots endevinar per què aquest exemple és útil per fer exemples?
 
-Try altering the definition of `\kw` to achieve a different style.
+Prova de fer modificacions en la definició de `\kw` per obtenir diferents estils.

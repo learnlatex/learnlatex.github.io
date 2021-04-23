@@ -3,6 +3,10 @@
 #
 # (in preferred order)
 
+- language-code: ca
+  label-regional: Català
+  label-english: Catalan
+
 - language-code: de
   label-regional: Deutsch
   label-english: German
@@ -35,6 +39,3 @@
   label-regional: Tiếng&nbsp;Việt
   label-english: Vietnamese
 
-- language-code: ca
-  label-regional: Català
-  label-english: Catalan

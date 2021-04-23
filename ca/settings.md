@@ -1,19 +1,16 @@
 ---
 layout: "page"
-lang: "en"
-title: Site Settings
+lang: "ca"
+title: Configuracions del lloc
 permalink: /ca/settings
 ---
-# Site Settings (User Preferences)
+# Configuracions del lloc (Preferències d'Usuari)
 
-## Accept or Delete Cookies
+## Acceptar o Esborrar Cookies
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+Les cookies són informació de poc tamany que emmagatzema el teu navegador web. Per defecte, aquest lloc web no utilitza cookies, exceptuant algunes opcions relacionades amb la configuració.
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
+Pots acceptar les cookies aquí si vols habilitar l'ús de cookies i habilitar el menú d'opcions d'aquí sota.
 
 
 {% include settings-accept.html 
@@ -21,19 +18,19 @@ enable the menu options below.
    reset= "Reset: Delete All Cookies"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+## Retorn per defecte
+El paràmetre `retorn` que utilitzarà TeXLive.net en absència de la configuració `% !TeX` en l'exemple.
 
 {% include settings-return.html %}
 
 
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+## Motor per defecte
+El paràmetre `motor` que utilitzarà TeXLive.net o Overleaf en absència de la configuració `% !TeX` en l'exemple. (les opcions `-dev` i `context` no s'han d'utilitzar a Overleaf.)
 
 {% include settings-engine.html %}
 
 
-## Editor Theme
-The theme used by the embedded ACE editor.
+## Tema de l'editor
+El tema que utilitza l'editor ACE que utilitza el lloc web.
 
 {% include settings-acetheme.html %}
