@@ -1,24 +1,21 @@
 ---
 layout: "lesson"
 lang: "ca"
-title: "Language-specifics for English"
-description: "This lesson shows language-specific details for typesetting with LaTeX in English. The focus is on hyphenation, where UK and US traditions are different."
+title: "Específic per a l'idioma anglès"
+description: "Aquesta lliçó explica detalls específics referents a escriure documents LaTeX amb idioma anglès. Ens referim a la separació de guions, on les tradicions angleses i americanes són diferents."
 next: "extra-01"
-toc-anchor-text: "English Language-specifics"
-toc-description: "Typesetting with LaTeX in English."
+toc-anchor-text: "Específic per a l'idioma anglès"
+toc-description: "Escriure amb LaTeX en anglès."
 ---
 
-# Language-specifics for English
+# Específic per a l'idioma anglès
 
 <span
-  class="summary">This lesson shows language-specific details for typesetting with LaTeX in English with a focus on hyphenation, where UK and US traditions are different.</span>
+  class="summary">Aquesta lliçó explica detalls específics referents a escriure documents LaTeX amb idioma anglès. Ens referim a la separació de guions, on les tradicions angleses i americanes són diferents.</span>
 
-## Hyphenation
+## Separació de guions
 
-LaTeX was written for use with English, and so there are very few
-language-specific issues facing authors in English. The main one
-is hyphenation: UK and US traditions are different. LaTeX starts out
-using US English patterns, but you can switch to UK ones using `babel`.
+LaTeX es va escriure pensant en l'idioma anglès, i per tant hi ha molts pocs assumptes problemàtics específics a aquest idioma. El principal és la separació de guions: les tradicions anglesa i americana són diferents. LaTeX va començar fent servir els patrons americans, però es pot canviar a la manera britància utilitzant `babel`.
 
 ```latex
 \documentclass{article}

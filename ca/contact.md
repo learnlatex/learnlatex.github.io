@@ -13,7 +13,7 @@ Malauradament no tenim recursos per oferir ajuda individual als problemes de LaT
 
 ## L'equip del lloc web
 
-El [codi font d'aquest web](https://github.com/learnlatex/learnlatex.github.io/) és a [GitHub](https://github.com/learnlatex/), pots veure [CONTRIBUTING](../CONTRIBUTING) i [LICENSE](../LICENSE) per a més detalls.
+El [codi font d'aquest web](https://github.com/learnlatex/learnlatex.github.io/) és a [GitHub](https://github.com/learnlatex/), pots veure [CONTRIBUTING](../CONTRIBUTING) i [LICENSE](../LICENSE) per a més detalls. Els canvis recents es llisten al [Change Log](../CHANGELOG).
 
 També pots [obrir un issue al GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) o escriure un [correu](mailto:texfaq@texfaq.org) per a suggerències.
 
