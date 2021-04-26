@@ -2,11 +2,15 @@
 layout: "lesson"
 lang: "es"
 title: "Accediendo a la documentación y buscando ayuda"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra las principales fuentes de documentación relacionadas con el software y los paquetes de LaTeX, y cómo encontrar la solución a sus problemas."
+toc-anchor-text: "Ayuda y documentación"
+toc-description: "Accediendo a la ayuda y a la documentación"
 ---
 
 # Accediendo a la documentación y buscando ayuda
+
+<span
+  class="summary">Esta lección muestra las principales fuentes de documentación relacionadas con el software y los paquetes de LaTeX, y cómo encontrar la solución a sus problemas.</span>
 
 Existen varias formas de acceder a la documentación de los paquetes y tipos de documento.
 
@@ -29,9 +33,9 @@ utilizando el comando de la siguiente forma:
 `texdoc -l` < _pkg_ >
 
 
-## texdoc.net
+## texdoc.org
 
-Éste es un [sitio web](https://texdoc.net/) que funciona de forma similar al comando `textdoc`. Puede
+Éste es un [sitio web](https://texdoc.org/) que funciona de forma similar al comando `textdoc`. Puede
 buscar la documentación disponible tal y como lo haría usando el comando `texdoc -l` 
 y elegir entre los resultados obtenidos.
 
@@ -76,7 +80,7 @@ Otros libros dedicados al aprendizaje de LaTeX:
 Existen varios forums en línea en los que hacer preguntas sobre LaTeX; quizá el
 más popular actualmente es [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
 Siempre que haga una pregunta, es mejor que primero clarifique su ejemplo: a esto
-se le conoce como un "mímimo ejemplo funcional" (MWE, "minimal working exemple"). Esto
+se le conoce como un «mímimo ejemplo funcional» (MWE, «minimal working exemple»). Esto
 no significa que el código funcione (¡si así fuese, usted no haría la pregunta!), sino más
 bien que usted ha hecho lo posible por clarificarlo, debe ser completo y conciso. Este último
 termino significa mostrar unicamente el contenido necesario para entender el problema.
@@ -92,7 +96,7 @@ Text
 ```
 
 y añadir línea a línea hasta que muestre el problema encontrado. Puede
-intentar "recortar" o "reducir" su documento, pero esto puede ser un proceso largo. 
+intentar «recortar» o «reducir» su documento, pero esto puede ser un proceso largo. 
 
 Si necesita texto para mostrar saltos de página y otros efectos, use
 paquetes como `lipsum` con el fin de generar párrafos de texto de relleno, 
@@ -100,5 +104,5 @@ esto le permitirá mostrar un documento pequeño.
 
 Una de las cosas que debe estar presente es el archivo log; éste es creado por
 LaTeX cada vez que se ejecuta. Tiene el mismo nombre que su documento pero con
-la extensión `.log`. En función del sistema que utilice, quizás tenga que "mostrar
-las extensiones" de los archivos para encontrarlo.
+la extensión `.log`. En función del sistema que utilice, quizás tenga que «mostrar
+las extensiones» de los archivos para encontrarlo.

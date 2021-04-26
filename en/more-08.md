@@ -233,7 +233,7 @@ Note that any non-numeric cell must be "protected" by enclosing it in braces.
 
 The `siunitx` package provides many possibilities for formatting the numbers in
 different ways; see the [package
-documentation](https://texdoc.net/pkg/siunitx).
+documentation](https://texdoc.org/pkg/siunitx).
 
 ## Specifying the total table width
 
@@ -339,7 +339,7 @@ Unlike the other forms discussed in these lessons, `tabularx` needs to
 typeset the table several times with trial widths to determine the
 final setting. This means that there are several restrictions on the
 use of the environment; see the
-[package documentation](https://texdoc.net/pkg/tabularx).
+[package documentation](https://texdoc.org/pkg/tabularx).
 
 ## Multi-page tables
 
@@ -395,7 +395,7 @@ It is quite common to need footnote-like marks in a table referring to
 notes under the table. The `threeparttable` package simplifies the
 markup for such tables, arranging that the notes are set in a
 block the same width as the table. Refer to the
-[package documentation](https://texdoc.net/pkg/threeparttable)
+[package documentation](https://texdoc.org/pkg/threeparttable)
 for full details, but we show a simple example here.
 
 ```latex

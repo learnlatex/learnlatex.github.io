@@ -2,18 +2,23 @@
 layout: "lesson"
 lang: "es"
 title: "Formateando el texto: fuentes y espaciado"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+description: "Esta lección muestra cómo cambiar el espaciado de un docunento y cómo añadir explicitamente instrucciones de formato en LaTeX."
+toc-anchor-text: "Fuentes y espaciado"
+toc-description: "Formateando el texto para mejorar la presentación visual"
 ---
 
 # Formateando el texto: fuentes y espaciado
 
-## Espaciado entre párrafos
+<span
+  class="summary">Esta lección muestra cómo cambiar el espaciado de un docunento y cómo añadir explicitamente instrucciones de formato en LaTeX.</span>
 
 Ya hemos visto que una línea en blanco en su documento genera un nuevo párrafo 
 en LaTeX. Esto se evidencia al comenzar el párrafo con una identación.
+
+## Espaciado entre párrafos
+
 Una elección común es la de no identar los párrafos, sino en su lugar añadir 
-una "línea en blanco" entre ellos. Esto lo podemos conseguir usando el paquete 
+una «línea en blanco» entre ellos. Esto lo podemos conseguir usando el paquete 
 `parskip`.
 
 ```latex
@@ -30,7 +35,7 @@ una "línea en blanco" entre ellos. Esto lo podemos conseguir usando el paquete
 
 En la mayoría de las situaciones, no debe forzar un salto de línea en LaTeX: casi 
 seguro que lo quiere es un nuevo párrafo o usar `parskip`, como acabamos de ver, 
-para añadir una "línea en blanco" entre párrafos.
+para añadir una «línea en blanco» entre párrafos.
 
 Habrá _pocos_ lugares en los que use `\\` para comenzar una nueva línea sin 
 que esto signifique comenzar un nuevo párrafo:
@@ -71,7 +76,7 @@ Vimos [ya hace un tiempo](lesson-03) que en la mayoría de las casos, el formato
 dado por la estructura lógica es el más conveniente. Pero en ocasiones, usted querrá 
 poner un texto en negrita, en cursiva, con letras de espaciado fijo, etc. Hay dos 
 tipos de comando para hacer esto: unos para pequeñas porciones de texto y otros 
-para contenidos "más consecuentes" del cuerpo de un documento (frases, párrafos, etc.)
+para contenidos «más consecuentes» del cuerpo de un documento (frases, párrafos, etc.)
 
 Para las pequeñas porciones de texto, usaremos `\textbf`, `\textit`, `\textrm`
 , `\texttt` y `\textsc`.

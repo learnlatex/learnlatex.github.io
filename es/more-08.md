@@ -2,6 +2,8 @@
 layout: "lesson"
 lang: "es"
 title: "Más sobre: Tablas"
+description: "Esta lección muestra más formas de personalizar una tabla: dando formato a las columnas, cambiando el espaciado y las líneas; y más paquetes que ofrecen diferentes extensiones para modificar las tablas."
+toc-anchor-text: "Más sobre: Tablas"
 ---
 
 
@@ -43,7 +45,7 @@ después del contenido de cada celda de esa columna, puede hacer lo siguiente:
 ```
 <!-- {% endraw %} -->
 
-`itshape` pone en cursiva el texto que le precede, pero su efecto esta "limitado"
+`itshape` pone en cursiva el texto que le precede, pero su efecto esta «limitado»
 a la celda en cuestión. Abordaremos el cambio manual del tipo letra [en una de las
 próximas lecciones](lesson-11).
 
@@ -226,11 +228,11 @@ Un ejemplo simple de dos columnas numéricas alineadas:
 \end{document}
 ```
 
-Note que cualquier celda no numérica debe ser "protegida" escribiendo su contenido entre llaves. 
+Note que cualquier celda no numérica debe ser «protegida» escribiendo su contenido entre llaves. 
 
 El paquete `siunitx` proporciona muchas funcionalidades para cambiar el formato de los números
 de formas diferentes; vea la [documentación de este 
-paquete](https://texdoc.net/pkg/siunitx).
+paquete](https://texdoc.org/pkg/siunitx).
 
 ## Especificando el ancho total de la tabla
 
@@ -336,7 +338,7 @@ C & D D D D D D D\\
 A diferencia de otras formas discutidas en estas lecciones, `tabularx` necesita
 construir la tabla varias veces, probando diferentes anchos para determinar la
 configuración final. Esto implica que hay una serie de restricciones en el uso
-de este entorno; vea la [documentación de este paquete](https://texdoc.net/pkg/tabularx).
+de este entorno; vea la [documentación de este paquete](https://texdoc.org/pkg/tabularx).
 
 ## Tablas multipágina
 
@@ -394,7 +396,7 @@ de las primeras páginas.
 Es bastante común el necesitar símbolos en una tabla para hacer referencia a
 notas al pie de tabla. El paquete `threeparttable` simplifica las anotaciones en 
 este tipo de tablas, haciendo que las notas al pie se situén en el mismo bloque
-que la propia tabla. Le invitamos a ver la [documentación de este paquete](https://texdoc.net/pkg/threepqrttable) para
+que la propia tabla. Le invitamos a ver la [documentación de este paquete](https://texdoc.org/pkg/threepqrttable) para
 más detalles, pero veamos aquí un ejemplo simple:
 
 ```latex
@@ -426,9 +428,9 @@ más detalles, pero veamos aquí un ejemplo simple:
 La configuración por defecto del salto de página, asume que las líneas relativamente
 largas disponen de cierta flexibilidad para elegir el salto de línea. El siguiente
 ejemplo se muestran algunas de las aproximaciones posibles. La primera tabla muestra
-el ajuste del espacio entre palabras y TeX le dará un mensaje de aviso de tipo "Underfull lines"
+el ajuste del espacio entre palabras y TeX le dará un mensaje de aviso de tipo «Underfull lines»
 (líneas que dejan espacios en blanco). El uso de `\raggedright` normalmente impide
-este problema, pero puede dar lugar a líneas "muy irregulares". El comando
+este problema, pero puede dar lugar a líneas «muy irregulares». El comando
 `\RaggedRight` del paquete `ragged2e` es un compromiso; permite cierta irregularidad entre
 el ancho de las líneas, pero también divide una palabra con un guión cuando es necesario, tal y 
 como se muestra en la tercera tabla.

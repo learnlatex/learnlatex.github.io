@@ -6,12 +6,12 @@ description: "This lesson gives more context on the history of LaTeX and other f
 toc-anchor-text: "More on: What is LaTeX and how does it work?"
 ---
 
-The word “LaTeX” actually consists of two components, “La” and “TeX”. In the
+The word 'LaTeX' actually consists of two components, 'La' and 'TeX'. In the
 following we will briefly describe where they come from.
 
 TeX was originally invented by Stanford professor Donald Knuth. Knuth is
-well known for a series of books called “The Art of Computer Programming”
-(known as "TAOCP"). In
+well known for a series of books called *The Art of Computer Programming*
+(known as TAOCP). In
 1973 a new edition of the books was to be made; this was the time when the
 typesetting industry switched from traditional typesetting with lead to
 photo-based typesetting. Donald Knuth did not like the quality of the print and

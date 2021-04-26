@@ -3,6 +3,14 @@
 #
 # (in preferred order)
 
+- language-code: ca
+  label-regional: Català
+  label-english: Catalan
+
+- language-code: de
+  label-regional: Deutsch
+  label-english: German
+
 - language-code: en
   label-regional: English
   label-english: English
@@ -15,14 +23,19 @@
   label-regional: Français
   label-english: French
 
+- language-code: mr
+  label-regional: मराठी
+  label-english: Marathi
+
 - language-code: pt
   label-regional: Português
   label-english: Portuguese
+
+- language-code: tr
+  label-regional: Türkçe
+  label-english: Turkish
 
 - language-code: vi
   label-regional: Tiếng&nbsp;Việt
   label-english: Vietnamese
 
-- language-code: tr
-  label-regional: Türkçe
-  label-english: Turkish

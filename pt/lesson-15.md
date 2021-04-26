@@ -9,20 +9,25 @@ toc-description: "Trabalhando com comportamento inesperado."
 
 # Resolvendo erros
 
+<span
+  class="summary">Esta lição mostra alguns erros comuns em documentos, o que
+  eles significam, e como resolvê-los.</span>
+
 Diferente de um sistema típico de processamento de texto, o LaTeX tem um ciclo
 de Editar/Executar/Visualizar mais próximo a uma linguagem de programação, e
 assim como na programação, usuários podem cometer erros no seu código e será
 necessário resolver os erros reportados pelo sistema.
 
-Esta página dá exemplos de vários erros comuns.
+## Erros comuns
 
-Cada exemplo de erro tem alguma discussão sobre a forma da mensagem de erro.
+Esta página dá exemplos de diversos erros comuns.  Cada exemplo de erro tem
+alguma discussão sobra a forma da mensagem de erro.
 
 Pode ser instrutivo experimentar os exemplos e as funcionalidades de edição para
 tentar corrigir os documentos mostrados aqui, e ver se você consegue resolver
 os erros.
 
-## pdflatex não encontrado
+### pdflatex não encontrado
 
 Um erro inicial comum que as pessoas veem quando estão começando é:
 
@@ -45,7 +50,7 @@ Esse erro não é do TeX, mas do sistema operacional dizendo que o TeX não est�
 instalado ou não foi encontrado.  Um erro comum é instalar um _editor_, como o
 TeXworks ou TeXShop mas não instalar um sistema TeX, como TeX Live ou MiKTeX.
 
-## Anatomia de uma mensagem de erro do TeX
+### Anatomia de uma mensagem de erro do TeX
 
 ```latex
 \documentclass{article}
@@ -93,18 +98,18 @@ l.8 My command is used here \mycommand
 
 Note aqui que o TeX não vê o erro no local em que o comando `\mycommand` é
 definido;  de fato, se `\mycommand` for definido daquela forma mas não for
-usado, o erro não acontecerá.  Então embora o erro é reportado na linha 7, o
-erro _real_ está na definição na linha 3, então é importante ver a mensagem de
+usado, o erro não acontecerá.  Então embora o erro é reportado na linha 8, o
+erro _real_ está na definição na linha 4, então é importante ver a mensagem de
 erro completa.
 
 Cuidado que alguns editores mostram 'sumários' de uma linha no relatório de
 erros.  Isso pode ser particularmente enganoso se mostrado como:
 
-`line 7: undefined command: ...\mycommand`
+`line 8: undefined command: ...\mycommand`
 
 pois faz parecer que o comando `\mycommand` não está definido.
 
-## Chaves desbalanceadas
+### Chaves desbalanceadas
 
 ```latex
 \documentclass{article}
@@ -136,7 +141,7 @@ l.4 \usepackage[leqno}
 ```
 {: .noedit :}
 
-## Arquivos não encontrados
+### Arquivos não encontrados
 
 ```latex
 \documentclass{article}
@@ -161,7 +166,7 @@ simples erro de digitação, que pode ser remediado ao corrigir o nome do pacote
 mas poderia ser um arquivo que realmente não existe e precisa ser instalado no
 sistema.
 
-## Linhas vazias em equações
+### Linhas vazias em equações
 
 ```latex
 \documentclass{article}

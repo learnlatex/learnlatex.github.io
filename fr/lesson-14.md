@@ -76,7 +76,7 @@ XeTeX et LuaTeX. Pour LaTeX, elles sont généralement invoquées dans votre
 éditeur en utilisant les moteurs `xelatex` et `lualatex` respectivement.
 
 Avec ces moteurs, la sélection de la police est effectuée au moyen du package
-`fontspec`, et pour les documents simples elle peut être aussi triviale ça :
+`fontspec`, et pour les documents simples elle peut être aussi triviale que ça :
 
 ```latex
 \usepackage{fontspec}
@@ -99,6 +99,7 @@ directement en Unicode dans le code source. Voici un exemple présentant des
 lettres latines et grecques ainsi que des idéogrammes CJK :
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}

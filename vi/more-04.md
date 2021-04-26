@@ -36,8 +36,8 @@ nhưng môi trường này hơi nâng cao và không nằm trong phạm vi khóa
 
 ## Danh sách liệt kê mục
 
-Ngoài các kiểu danh sách "đánh số" và "không đánh số", LaTeX cũng cung cấp một
-kiểu danh sách nữa, ít dùng hơn, đó là "danh sách liệt kê các mục" (chạy ví dụ
+Ngoài các kiểu danh sách 'đánh số' và 'không đánh số', LaTeX cũng cung cấp một
+kiểu danh sách nữa, ít dùng hơn, đó là 'danh sách liệt kê các mục' (chạy ví dụ
 sau để hiểu hơn về kiểu danh sách này).
 
 ```latex

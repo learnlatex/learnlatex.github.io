@@ -1,24 +1,33 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Seu primeiro documento LaTeX"
+title: "Estrutura básica de um documento LaTeX"
 description: "Esta lição mostra a estrutura básica de um documento LaTeX, e como produzir um PDF com ele, assim como os principais caracteres especiais usados para controlar o LaTeX."
-toc-anchor-text: "Documentos LaTeX"
+toc-anchor-text: "Estrutura do documento"
 toc-description: "A estrutura básica de um documento."
 ---
 
-# Seu primeiro documento LaTeX
+# Estrutura de um documento LaTeX
 
-Nosso primeiro documento LaTeX será muito simples: a ideia é lhe mostrar como um
+<span
+  class="summary">Esta lição mostra a estrutura básica de um documento LaTeX,
+  e como produzir um PDF com ele, assim como os principais caracteres especiais
+  usados para controlar o LaTeX.</span>
+
+Seu primeiro documento LaTeX será muito simples: a ideia é lhe mostrar como um
 documento se parece e como processá-lo com sucesso.  Também é a sua primeira
-chance de ver [como usar os exemplos aqui no `learnlatex.org`](help).
+chance de ver [como usar os exemplos](help) aqui no `learnlatex.org`.
 
 Se você está usando uma instalação local de LaTeX, no seu editor crie um arquivo
-chamado `first.tex`, e copie-e-cole o texto abaixo, ou digite-o.  Se você está
-usando um sistema online, você pode apenas clicar no botão 'LaTeX Online' ou
-'Abrir no Overleaf' no exemplo para experimentá-lo!  Sugerimos que você teste
-as opções online, mesmo que você tem o LaTeX instalado localmente;  é uma boa
-chance de ver como as diferentes opções funcionam.
+chamado `first.tex`, e copie-e-cole o texto abaixo, ou digite-o.
+
+Se você está usando um sistema online, você pode apenas clicar no botão 'LaTeX
+Online' ou 'Abrir no Overleaf' no exemplo para experimentá-lo!
+
+<p
+  class="hint">Sugerimos que você teste as opções online, mesmo que você tem o
+  LaTeX instalado localmente;  é uma boa chance de ver como as diferentes opções
+  funcionam.</p>
 
 ```latex
 \documentclass{article}
@@ -59,6 +68,10 @@ de texto com extensão `.log`.  Você sempre vai encontrar a mensagem de erro
 completa lá, e se tiver algum problema, usuários experientes de LaTeX geralmente
 vão pedir uma cópia do arquivo `.log` para examinar o problema.
 
+<p
+  class="hint">Nós mostramos mais sobre solução de erros na
+  <a href="./lesson-15">lição 15</a>.</p>
+
 ## O que você aprendeu até agora
 
 O primeiro documento mostra o básico.
@@ -85,6 +98,7 @@ tiver `\begin{x} ... \begin{y}`, você deve terminar com `\end{y} ... \end{x}`.
 
 Podemos também adicionar comentários em um arquivo LaTeX prefixando-o com um
 `%`; vamos usar isso para mostrar a estrutura do documento:
+
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
 \usepackage[T1]{fontenc}

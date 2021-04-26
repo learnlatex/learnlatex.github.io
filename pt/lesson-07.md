@@ -1,15 +1,18 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Incluindo gráficos e fazendo coisas 'flutuarem'"
+title: "Incluindo gráficos e posicionando-os"
 description: "Esta lição mostra como você pode incluir externos no seu documento, como mudar a sua aparência, e como fazê-los flutuar para a posição apropriada no PDF."
 toc-anchor-text: "Usando gráficos"
 toc-description: "Aparência, espaçamento e posicionamento."
 ---
 
-# Incluindo gráficos e fazendo coisas 'flutuarem'
+# Incluindo gráficos e posicionando-os
 
-## Incluindo gráficos
+<span
+  class="summary">Esta lição mostra como você pode incluir externos no seu
+  documento, como mudar a sua aparência, e como fazê-los flutuar para a posição
+  apropriada no PDF.</span>
 
 Para trazer gráficos de fora do LaTeX, use o pacote `graphicx`, que adiciona o
 comando `\includegraphics` ao LaTeX:
@@ -44,9 +47,14 @@ das imagens incluídas e para aparar material.  ALgumas dessa opções são bast
 utilizadas, então vale a pena conhecê-las.
 
 A coisa mais óbvia a fazer é definir a largura (`width`) ou a altura (`height`)
-de uma imagem, que são frequentemente relativos à largura (`\textwidth`) e à
-altura (`\textheight`) da área de texto.  O LaTeX vai redimensionar a imagem
-automaticamente para que proporção fique correta.
+de uma imagem, que são frequentemente relativos à largura (`\textwidth` ou
+`\linewidth`) e à altura (`\textheight`) da área de texto.  A diferença entre
+`\textwidth` e `\linewidth` é sutil, e frequentemente ambos são iguais. 
+`\textwidth` é a largura do bloco de texto na página física, enquanto
+`\linewidth` é a largura _atual_, que pode ser localmente diferente (a diferença
+é mais óbvia quando a opção de classe `twocolumn` é usada).  Quando definir
+largura (`width`) ou a altura (`height`) de uma imagem, o LaTeX vai
+redimensionar a imagem automaticamente para que proporção fique correta.
 
 ```latex
 \documentclass{article}
@@ -134,6 +142,10 @@ na demonstração.
 
 Explore o que você pode fazer usando as opções `height`, `width`, `angle` e
 `scale`.
+
+Use a opção `width` para configurar o tamanho de uma imagem relativo a
+`\textwidth` e outro relativo a `\linewidth`.  Veja o que acontece com e sem a
+opção de classe `twocolumn`.
 
 Use `lipsum` para fazer uma demonstração razoavelmente longa, então tente
 colocar floats usando diferentes especificadores de posição.  Como

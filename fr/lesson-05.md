@@ -97,14 +97,14 @@ proche de celle utilisée dans les publications des journaux de mathématiques.
 
 Les deux classes « étendues » les plus polyvalentes et populaires sont le
 package KOMA-Script et la classe `memoir`. KOMA-Script offre un ensemble de
-classes parallèles aux classes standards : `scrartcl`, `scrreprt` et `scrbook`,
-tandis que la classe `memoir`, unique, ressemble davantage à une extension de
-la classe `book`.
+classes parallèles aux classes standards : `scrartcl`, `scrreprt`, `scrbook`,
+et `scrlttr2`, tandis que la classe `memoir`, unique, ressemble davantage
+à une extension de la classe `book`.
 
 Ces classes étendues ont de nombreuses possibilités de personnalisation, que
 nous allons explorer un peu en travaux pratiques. Vous vous demandez peut-être
 comment connaître toutes ces possibilités ; nous en parlerons
-[dans une leçon ultérieure](lesson-15), mais vous pouvez toujours prendre de
+[dans une leçon ultérieure](lesson-16), mais vous pouvez toujours prendre de
 l'avance !
 
 

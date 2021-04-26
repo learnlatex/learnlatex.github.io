@@ -11,7 +11,8 @@ permalink: /en/help
 
 ## Navigating the site
 
-The course consists of 16 core lessons that can be reached from the [table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+The course consists of 16 core lessons that can be reached from the
+[table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
 
 Each lesson has a link to one associated lesson on the same subject
 that goes into greater depth. It should be possible to work through
@@ -23,7 +24,7 @@ of packages demonstrating LaTeX use not covered by this course.
 
 ---
 
-## Examples 
+## Examples
 
 ### Running the examples
 
@@ -44,10 +45,19 @@ changes, perhaps as part of an Exercise set at the end of the lesson.
 
 The editor being used is [ACE](https://ace.c9.io/).
 
+You may customise the theme used in the editor (for example using a
+dark theme with light text on a dark background) on the [Site Settings](settings) page.
+A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
+while on any example in the site. This displays a panel which allows you to change all the ACE settings.
+
+The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+
+
+
 #### Three ways to run the example
 
 * Use the Overleaf service
-* Use a LaTeX Online service
+* Use the TeXLive.net service
 * Use a locally installed TeX system
 
 ##### Use the Overleaf service
@@ -68,16 +78,15 @@ project with the code. You may then edit it in
 Overleaf which will simultaneously run LaTeX on your code showing
 the resulting output or error log.
 
-The editing features in Overleaf are far more extensive than on this
-site, and you may save your project in your Overleaf account and
-return to it later.
+Unlike documents processed at TeXLive.net, you may save your project
+in your Overleaf account and return to it later.
 
-##### Use a LaTeX online service
+##### Use the TeXLive.net service
 
-The <button>LaTeX Online</button> button, below the example, will submit the code to the 
-[LaTeX CGI](https://latexcgi.xyz/) service[^1].
+The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
+[TeXLive.net](https://texlive.net) service[^1].
 
-The LaTeX CGI service was developed specifically to support this site, and
+The TeXLive.net service was developed specifically to support this site, and
 in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
 to enable display of PDF on mobile and other browsers without built in PDF 
 readers.
@@ -88,21 +97,21 @@ Output</button> button will be provided so that you may remove this output
 (or you may leave it in place and continue the rest of the lesson
 below).
 
-Note that **LaTeX Online** requires no login or signup of any sort
-so it is very convenient for small examples, but neither this site
-nor the `latexcgi`, `latexonline.cc` or `latex-on-http` sites
-provide any mechanism to save your document. Any changes that you
+Note that **TeXLive.net** requires no login or signup of any sort
+so it is very convenient for small examples, but this site
+provides no  mechanism to save your document. Any changes that you
 make to the example are lost if you move off the page.
 
 ##### Locally installed TeX system
 
 If you have a TeX system installed locally, then you may copy the
 example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor (Ctrl-A Ctrl-C
+using select all keyboard shortcuts in the editor
+(<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
 in windows for example). This will place the code in your operating system
 clipboard so you can start a blank document using your local
 editor, and paste in the text.
-   
+
 ### Troubleshooting
 
 Our examples are based around using an up-to-date LaTeX installation. They all 
@@ -114,11 +123,9 @@ up-to-date.
 
 ## Choosing the TeX engine
 
-When submitting example documents, by default the
-`pdflatex` engine will be used unless the example uses the `fontspec`
-package in which case `xelatex` is used.
+When submitting example documents, by default the `pdflatex` engine will be used.
 
-You can force the choice of `pdflatex`, `xelatex`, `lualatex`,
+You can force the choice of `latex`, `pdflatex`, `xelatex`, `lualatex`,
 `platex` or `uplatex` by using a comment of the form:
 
 `% !TEX ` _any text_ `lualatex`
@@ -128,7 +135,7 @@ is _any text_ between the first and last word.
 
 This allows the form `% !TEX program=pdflatex` used by some TeX editors
 but does not require the `program=` and is currently restricted to
-specifying just one of the five engines that are supported on
+specifying just one of the engines that are supported on
 the online systems being used.
 
 You can see an example of a comment being used to specify LuaLaTeX in
@@ -136,12 +143,16 @@ You can see an example of a comment being used to specify LuaLaTeX in
 
 If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
 also used to produce the PDF result from the DVI file that these variants generate.
+Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
+
+If the engine is not specified in a `% !TeX` comment, then `pdflatex` will be used
+unless you have specified a default TeX engine on the [Site Settings](settings) page.
 
 ---
 
 ## Choosing how to display the output
 
-If you use the LaTeX online system, then the PDF
+If you use the TeXLive.net system, then the PDF
 output from running an example is shown using
 [PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
 consistent behavior over the widest range of browsers.
@@ -158,6 +169,73 @@ returned, even if the document produces a PDF with
 no errors. This can be specified by using `log` as the final token in
 the comment.
 
+As an alternative to using a `% !TeX` comment, you may specify the
+site default return parameter on the [Site Settings](settings)
+page. The Settings are specific to each browser, so for example you
+may choose to use the default `pdfjs` setting on your mobile device,
+but use `pdf` on your desktop browser to use its default PDF rendering.
+
+
+---
+
+## HTML output (make4ht, LaTeXML, lwarp)
+
+If using the TeXLive.net system, then additional return options,
+`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
+in the frame within the page. It may be specified at the same time
+as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
+
+To enable this output, add a comment of the form:
+
+
+```
+% !TeX make4ht
+```
+{: .noedit :}
+
+
+Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
+
+
+
+Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
+on the [Site Settings](settings) page.
+
+
+If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
+by executing
+
+```
+make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
+```
+{: .noedit :}
+
+with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
+
+When running locally, other configurations would be possible. See the [make4ht
+manual](https://texdoc.org/pkg/make4ht).
+
+
+For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
+and use
+
+```
+latexml document.tex > document.xml
+latexmlpost --format=html5 \
+   --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
+   --destination=document.html" document.tex
+```
+{: .noedit :}
+
+Many other LaTeXML configurations are possible,
+[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+
+
+The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
+The current version can be seen at the
+[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+
+
 ---
 
 [^1]: Note that during development of the site we have also used 
@@ -165,3 +243,5 @@ the comment.
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
       and we thank the developers of those services for making updates to enable
       the examples on this site to be available at an early stage.
+
+

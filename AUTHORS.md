@@ -23,3 +23,5 @@ The following people have made contributions to learnlatex.org:
 - Dung Vu
 - Uwe Ziegenhagen
 - Denis Bitouzé
+- निरंजन
+- Joan Quintana Compte

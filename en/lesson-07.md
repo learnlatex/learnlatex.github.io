@@ -4,10 +4,10 @@ lang: "en"
 title: "Including graphics and positioning"
 description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
 toc-anchor-text: "Using graphics"
-toc-description: "Appearance, spacing and positioning."
+toc-description: "Appearance and positioning of graphics."
 ---
 
-## Graphics and positioning
+# Including Graphics and positioning
 
 <span
   class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
@@ -45,8 +45,12 @@ the size and shape of the included images and to trim down material. Some of
 these are used a lot, so they are worth being aware of.
 
 The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` and
-`\textheight`. LaTeX will automatically scale the image so that the aspect
+image, which are often given relative to the `\textwidth` or `\linewidth` and
+`\textheight`. The difference between `\textwidth` and `\linewidth` is subtle
+and often the result is the same. `\textwidth` is the width of the text block on
+the physical page, whereas `\linewidth` is the _current_ width, which might
+locally be different (the difference is most obvious with the class option
+`twocolumn`). LaTeX will automatically scale the image so that the aspect
 ratio stays correct.
 
 ```latex
@@ -134,6 +138,10 @@ Try including an image you have created, replacing the 'standard' ones we have
 used in the demonstration.
 
 Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+
+Use the `width` key to set the size of a graphic relative to `\textwidth` and
+another graphic relative to `\linewidth`. Try out how they behave with or
+without the `twocolumn` option.
 
 Use `lipsum` to make a reasonably long demonstration, then try out placing
 floats using the different position specifiers. How do different

@@ -9,10 +9,16 @@ toc-description: "Formatação do texto para apresentação visual."
 
 # Formatação: fontes e espaçamento
 
-## Espaçamento entre parágrafos
+<span
+  class="summary">Esta lição mostra como mudar os elementos de espaçamento em um
+  documento e como inserir instruções de formatação explícitas no código
+  fonte.</span>
 
 Nós já vimos que uma linha em branco no seu código criará um novo parágrafo no
 LaTeX.  Isso aparece como um parágrafo que vai começar com uma indentação.
+
+## Espaçamento entre parágrafos
+
 Um estilo comum é não ter indentação para parágrafos, mas ter uma
 'linha em branco' entre eles.  Podemos ter isso com o pacote `parskip`:
 
@@ -66,7 +72,7 @@ Ainda mais texto.
 
 ## Formatação explícita do texto
 
-Nós vimos [mais no início do curso](lesson-03) que na maioria das vezes a
+Nós escrevemos [na lição 3](lesson-03) que na maioria das vezes a
 estrutura lógica é preferível.  Mas às vezes você quer fazer texto negrito ou
 itálico ou monoespaçado, etc.  Há dois tipos de comando para isso:  para trechos
 curtos de texto, e para material potencialmente longo.

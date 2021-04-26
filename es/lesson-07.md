@@ -1,14 +1,16 @@
 ---
 layout: "lesson"
 lang: "es"
-title: "Incluyendo imágenes y haciendo que las cosas \"floten\""
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "Incluyendo y posicionando imágenes"
+toc-anchor-text: "Usando imágenes"
+description: "Está lección muestra como añadir imágenes a su documento, cómo cambiar su apariencia y cómo convertirlas en objetos flotantes para optimizar su ubicación en un PDF."
+toc-description: "Apariencia, espaciado y posicionamiento"
 ---
 
-# Incluyendo imágenes y haciendo que las cosas \"floten\"
+# Imágenes y ubicación
 
-## Incluyendo imágenes
+<span
+  class="summary">Está lección muestra como añadir imágenes a su documento, cómo cambiar su apariencia y cómo convertirlas en objetos flotantes para optimizar su ubicación en un PDF.</span>
 
 Para importar imágenes en LaTeX, use el paquete `graphicx`, 
 que añade el comando `\includegraphics` a LaTeX.
@@ -111,7 +113,7 @@ la página. La opción `ht` tiene un efecto sobre en qué lugar LaTeX puede situ
 dos letras significan que puede ir cerca de su posición inicial (cerca de `Localización test`)
 o en la parte alta de la página. Puede usar hasta cuatro especificadores de posición:
 
-- `h` "Aquí" (si es posible).
+- `h` «Aquí» (si es posible).
 - `t` En la parte alta de la página.
 - `b` En la parte baja de la página.
 - `p` En una página dedicada exclusivamente a objetos flotantes.
@@ -126,7 +128,7 @@ entorno `center` añadan un espacio vertical extra.
 
 ## Ejercicios
 
-Trate de insertar una imagen que usted haya creado, reemplace las imágenes "estándar"
+Trate de insertar una imagen que usted haya creado, reemplace las imágenes «estándar»
 que hemos empleado en el ejemplo.
 
 Explore lo que puede hacer usando como opción las palabras clave `height`, `width`, 

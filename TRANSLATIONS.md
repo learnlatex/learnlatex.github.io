@@ -50,7 +50,7 @@ pages.
      label-regional: Français
      label-english: French
    ```
-6. Update each section of `_data/languages.yml` with the an entry for
+6. Update each section of `_data/translations.yml` with the an entry for
    each of the fixed strings in the site. So for example the entry for "Next Lesson"
    should be amended to have a `zz:` entry:
 
@@ -68,7 +68,6 @@ pages.
      zz: "YOUR TRANSLATION HERE"
    ```
    
-7. Update  `_data/map.yml` with a `zz:` entry for each page.
 
 At this point your language should appear in the drop down menu to
 select languages, and the navigation between pages. Obviously the main
@@ -99,8 +98,8 @@ The variable names should not be changed but the values should be changed to you
 
  * `title` is used on this page for the title,
  * `description`, is used below the title
- * `toc-anchor-text` and `toc-description`are used in the annotated
-   table of contents for the top level leaernlatex.org/zz page.
+ * `toc-anchor-text` and `toc-description` are used in the annotated
+   table of contents for the top level learnlatex.org/zz page.
 
 ## Lesson text.
 

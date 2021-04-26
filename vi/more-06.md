@@ -20,7 +20,7 @@ quy tắc hyphenation khác nhau. Tuy nhiên, gói này có thể làm nhiều h
 thuộc vào ngôn ngữ được sử dụng. Ví dụ, trong tiếng Đức, gói này cung cấp những
 công cụ để tạo ra 'soft' hyphen, cũng như khả năng gõ các umlauts mà không cần
 có một bàn phím hỗ trợ tiếng Đức. Hơn nữa, để ý rằng tiêu đề mục lục
-"_Table of Contents_" đã được chuyển sang tiếng Đức, "_Inhaltsverzeichnis_".
+'_Table of Contents_' đã được chuyển sang tiếng Đức, '_Inhaltsverzeichnis_'.
 
 ```latex
 \documentclass{article}

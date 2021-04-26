@@ -3,14 +3,14 @@ layout: "lesson"
 lang: "pt"
 title: "Estruturando documentos longos"
 description: "Esta lição mostra como o LaTeX permite dividir seu código em arquivos menores, mais fáceis de editar, e como isso pode tornar a produção de um documento longo mais fácil e rápido."
-toc-anchor-text: "Structuring o código"
+toc-anchor-text: "Estruturando o código"
 toc-description: "Dividindo o código de forma organizada."
 ---
 
 # Estruturando documentos longos
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",
@@ -25,12 +25,17 @@ preincludes = {
 }
 </script>
 
-## Estruturando seu código fonte
+<span
+  class="summary">Esta lição mostra como o LaTeX permite dividir seu código em
+  arquivos menores, mais fáceis de editar, e como isso pode tornar a produção de
+  um documento longo mais fácil e rápido.</span>
 
 Quando você está escrevendo um documento longo, você provavelmente vai querer
 dividir o código fonte em múltiplos arquivos.  Por exemplo, é muito comum ter um
 arquivo 'principal', e um arquivo fonte por capítulo (para um livro ou tese), ou
 por seção (para um artigo longo).
+
+## Estruturando seu código fonte
 
 O LaTeX nos permite dividir arquivos fonte de uma forma controlada.  Há dois
 comandos importantes aqui, `\input` e `\include`.  Nós podemos usar `\input`
@@ -53,10 +58,10 @@ Um documento longo pode, então, ter essa aparência:
 \title{Um livro de exemplo}
 \author{John Doe \and Joe Bloggs}
 
-\IfFileExists{append.aux}
+\IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-%  front,
+  front,
 %  chap1,
   chap2,
 %  append
