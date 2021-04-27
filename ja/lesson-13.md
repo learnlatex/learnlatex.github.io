@@ -10,7 +10,7 @@ toc-description: "管理しやすいようにファイル分割する"
 # より大きな文書を作る
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",
@@ -44,10 +44,10 @@ LaTeX にはこうしたファイル分割を制御するしくみがありま�
 \title{とあるシンプルな本}
 \author{組版太郎\and 組版花子}
 
-\IfFileExists{append.aux}
+\IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-%  front,
+  front,
 %  chap1,
   chap2,
 %  append

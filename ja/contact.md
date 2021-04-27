@@ -12,7 +12,7 @@ permalink: /ja/contact
 
 ## 本ウェブサイトの作成者
 
-このウェブサイトの[ソースコード](https://github.com/learnlatex/learnlatex.github.io/)は [GitHub](https://github.com/learnlatex/) 上で公開されています．詳細については [CONTRIBUTING](../CONTRIBUTING) や [LICENSE](../LICENSE) を参照してください．最近の変更点は [Change Log](../CHANGELOG) にまとめられています．
+このウェブサイトの[ソースコード](https://github.com/learnlatex/learnlatex.github.io/)は [GitHub](https://github.com/learnlatex/) 上で公開されています．詳細については [CONTRIBUTING](../CONTRIBUTING) や [LICENSE](../LICENSE) を参照してください．
 
 ## 管理者情報
 

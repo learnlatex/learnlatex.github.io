@@ -10,7 +10,7 @@ toc-description: "文献データベースの利用法"
 # 参考文献の引用
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
    },
@@ -138,6 +138,6 @@ LaTeX 以外のツールを実行する方法は使用するエディタによ�
 
 ## 練習問題
 
-`natbib` と `biblatex` のコード例を両方実行してみましょう．`natbib` の場合は LaTeX, BibTeX, LaTeX, LaTeX を，`biblatex` の場合は LaTeX, Biber, LaTeX を実行する必要があるはずです．手許のエディタではどうすればこの手順の実行ができるのか調べてみましょう．あるいは，その手順が既に自動化されている Overleaf や LaTeX Online を試してみてください．
+`natbib` と `biblatex` のコード例を両方実行してみましょう．`natbib` の場合は LaTeX, BibTeX, LaTeX, LaTeX を，`biblatex` の場合は LaTeX, Biber, LaTeX を実行する必要があるはずです．手許のエディタではどうすればこの手順の実行ができるのか調べてみましょう．あるいは，その手順が既に自動化されている Overleaf や TeXLive.net を試してみてください．
 
 データベースに新しいエントリを追加し，何箇所かで引用してみましょう．データベースにない文献を引用するとどのような出力になるでしょうか．`natbib` と `biblatex` の `numberic` オプションも試してみましょう．

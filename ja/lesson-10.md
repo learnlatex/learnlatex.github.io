@@ -108,7 +108,7 @@ toc-description: "数式モードと数式の記法"
 
 ## `amsmath` パッケージ
 
-数式で用いられる表記法はとても複雑で，LaTeX 本体の機能だけではそのすべてに対応することはできません．`amsmath` パッケージは LaTeX の数式関連の機能を大幅に拡張するものです．[`amsmath` のユーザガイド](http://texdoc.net/pkg/amsmath)には，このレッスンよりも遥かに多くのコード例が掲載されています．
+数式で用いられる表記法はとても複雑で，LaTeX 本体の機能だけではそのすべてに対応することはできません．`amsmath` パッケージは LaTeX の数式関連の機能を大幅に拡張するものです．[`amsmath` のユーザガイド](http://texdoc.org/pkg/amsmath)には，このレッスンよりも遥かに多くのコード例が掲載されています．
 
 ```latex
 \documentclass{jsarticle}

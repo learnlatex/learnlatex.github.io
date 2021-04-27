@@ -1,6 +1,6 @@
 runlatex.texts = {
     "Open in Overleaf": "Overleaf で開く",
-    "TeXLive.net":  "TeXLive.net",
+    "TeXLive.net":  "TeXLive.net で実行",
     "Delete Output": "出力を削除",
     "Compiling PDF": "PDF をコンパイル",
     // The following not used on learnlatex.org
