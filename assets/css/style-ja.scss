@@ -150,7 +150,8 @@ html {
 p {
   color: var(--color_black-1);
   font-family: var(--font_default-light);
-    font-weight: 300;
+  color: var(--color_black-2);
+  font-weight: 300;
   font-size: 1rem;
   margin: 0 0 .8rem;
 }
@@ -440,7 +441,8 @@ hr {
     width: 100%;
     @media (max-width: 37rem) {
       font-family: var(--font_default-regular);
-    font-weight:400;
+      font-weight:400;
+    }
   }
   &__numbering {
     border-right: 0.063rem solid var(--color_white-0);
