@@ -22,13 +22,13 @@ LaTeX を使用するのにまず重要なことは，TeX システムを利用�
 
 今日利用可能な主要 TeX システムは [MiKTeX](https://miktex.org) と [TeX Live](https://tug.org/texlive) の2種類です．いずれも Windows, macOS, Linux で利用可能です．MiKTeX は歴史的に Windows と深く関わってきました．macOS では，TeX Live は [MacTeX](http://www.tug.org/mactex/) と呼ばれるより大きなコレクションに含まれています．[それぞれのシステムに特長がある](https://tex.stackexchange.com/questions/20036)ので，さらに踏み込んだ [LaTeX プロジェクトのアドバイス](https://www.latex-project.org/get/)を参考にするのもよいでしょう．
 
-すべての一般的なプラットフォームで利用可能であること，またパフォーマンス上いくつかのアドバンテージがあることから，どのシステムをインストールするか決めていない場合には，TeX Live を選択することをおすすめします．〔訳注：なお日本語文書の作成に重要なツールには，TeX Live にしか含まれていないものも多くあります．本チュートリアルで主として利用する pLaTeX も，MikTeX には含まれていません．そのため，**日本語文書を作成したい方に対しては TeX Live の利用を強く推奨します**．〕
+すべての一般的なプラットフォームで利用可能であること，またパフォーマンス上いくつかの利点があることから，どのシステムをインストールするか決めていない場合には，TeX Live を選択することをおすすめします．なお日本語文書の作成に重要なツールには，TeX Live にしか含まれていないものも多くあります．本チュートリアルで主として利用する pLaTeX も，MikTeX には含まれていません．そのため，**日本語文書を作成したい方に対しては TeX Live の利用を強く推奨します**．
 
 ## エディタ
 
 LaTeX ファイルは単純なテキストファイルなので，どのようなテキストエディタを用いても編集することが可能です．とはいえ，基本的には LaTeX 向けに設計されたエディタを利用するのが便利です．そうしたエディタの多くは，1クリックでファイルをタイプセットするボタンや内蔵の PDF ビューア，あるいはシンタックス・ハイライトなどの機能を備えています．最近の LaTeX エディタは SyncTeX という特に便利な機能を有しています．これを利用すると，ソースのある部分をクリックするだけで PDF の対応する箇所にジャンプすることができ，また逆向きのジャンプも可能です．
 
-LaTeX エディタはここには書ききれないほどたくさんあります．[StackExchange に網羅的なリスト](https://tex.stackexchange.com/questions/339/latex-editors-ides)があるので，必要なら参照してください．基本的なエディタである [TeXworks](https://tug.org/texworks) は Windows および Linux において TeX Live/MiKTeX に含まれています．また MacTeX には [TeXShop](https://pages.uoregon.edu/koch/texshop/) というエディタが同梱されています．
+LaTeX エディタはここには書き切れないほどたくさんあります．[StackExchange に網羅的なリスト](https://tex.stackexchange.com/questions/339/latex-editors-ides)があるので，必要なら参照してください．基本的なエディタである [TeXworks](https://tug.org/texworks) は Windows および Linux において TeX Live/MiKTeX に含まれています．また MacTeX には [TeXShop](https://pages.uoregon.edu/koch/texshop/) というエディタが同梱されています．
 
 <p class="hint">どのエディタを選ぶにせよ，TeX システムよりも<strong>後に</strong>インストールすることを推奨します．その順であれば，エディタはコンピュータ内の TeX システムを「見つける」ことができ，適切なセットアップを行うことができます．</p>
 
