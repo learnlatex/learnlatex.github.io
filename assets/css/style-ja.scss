@@ -27,118 +27,90 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
 
 
 /*----------------------------------------------------------------------------*/
 /*  # ROOT ELEMENT: VARIABLES - FONTS                                         */
 /*----------------------------------------------------------------------------*/
 :root {
-  --font_default-medium: 'NotoSans-Medium';
-}
-@font-face {
-  font-family: 'NotoSans-Medium';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Medium.woff2" | relative_url}}') format('woff2');
+    --font_default-medium: 'NotoSans JP';
+    font-weight: 300;
 }
 
 :root {
-  --font_default-medium-italic: 'NotoSans-MediumItalic';
-}
-@font-face {
-  font-family: 'NotoSans-MediumItalic';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-MediumItalic.woff2" | relative_url}}') format('woff2');
+    --font_default-medium-italic: 'NotoSans JP';
+    font-weight: 400;
 }
 
-:root {
-  --font_default-medium-semicondensed: 'NotoSans-SemiCondensedMedium';
-}
-@font-face {
-  font-family: 'NotoSans-SemiCondensedMedium';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-SemiCondensedMedium.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-regular: 'NotoSans-Regular';
-}
-@font-face {
-  font-family: 'NotoSans-Regular';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Regular.woff2" | relative_url}}') format('woff2');
+    --font_default-medium-semicondensed: 'NotoSans JP';
+    font-weight:300;
+    font-size: 90%;
 }
 
-:root {
-  --font_default-regular-italic: 'NotoSans-Italic';
-}
-@font-face {
-  font-family: 'NotoSans-Italic';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Italic.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-regular-semicondensed: 'NotoSans-SemiCondensedRegular';
-}
-@font-face {
-  font-family: 'NotoSans-SemiCondensedRegular';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-SemiCondensedRegular.woff2" | relative_url}}') format('woff2');
+    --font_default-regular: 'NotoSans JP';
+    font-weight: 400;
 }
 
-:root {
-  --font_default-light: 'NotoSans-Light';
-}
-@font-face {
-  font-family: 'NotoSans-Light';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Light.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-light-italic: 'NotoSans-LightItalic';
-}
-@font-face {
-  font-family: 'NotoSans-LightItalic';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-LightItalic.woff2" | relative_url}}') format('woff2');
+    --font_default-regular-italic: 'NotoSans JP';
+    font-weight: 700;
 }
 
-:root {
-  --font_default-light-semicondensed: 'NotoSans-SemiCondensedLight';
-}
-@font-face {
-  font-family: 'NotoSans-SemiCondensedLight';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-SemiCondensedLight.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-light-condensed: 'NotoSans-CondensedLight';
-}
-@font-face {
-  font-family: 'NotoSans-CondensedLight';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-CondensedLight.woff2" | relative_url}}') format('woff2');
+  --font_default-regular-semicondensed: 'NotoSans JP';
+    font-weight:400;
+    font-size: 90%;
 }
 
-:root {
-  --font_default-thin: 'NotoSans-Thin';
-}
-@font-face {
-  font-family: 'NotoSans-Thin';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Thin.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-thin-italic: 'NotoSans-ThinItalic';
+    --font_default-light: 'NotoSans JP';
+    font-weight: 300;
 }
-@font-face {
-  font-family: 'NotoSans-ThinItalic';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-ThinItalic.woff2" | relative_url}}') format('woff2');
+
+
+:root {
+    --font_default-light-italic: 'NotoSans JP';
+    font-weight: 400;
+    
 }
+
+
+:root {
+    --font_default-light-semicondensed: 'NotoSans JP';
+    font-weight:300;
+    font-size: 90%;
+
+}
+
+
+:root {
+  --font_default-light-condensed: 'NotoSans JP';
+    font-weight:300;
+    font-size: 90%;
+}
+
+
+:root {
+  --font_default-thin: 'NotoSans JP';
+    font-weight:300;
+    font-size: 80%;
+}
+
+
+:root {
+  --font_default-thin-italic: 'NotoSans JP';
+    font-weight:400;
+    font-size: 80%;
+}
+
 
 :root {
   --font_default-mono-regular: 'NotoMono-Regular';
