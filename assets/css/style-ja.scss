@@ -35,84 +35,66 @@
 /*----------------------------------------------------------------------------*/
 :root {
     --font_default-medium: 'NotoSans JP';
-    font-weight: 300;
 }
 
 :root {
     --font_default-medium-italic: 'NotoSans JP';
-    font-weight: 400;
 }
 
 
 :root {
     --font_default-medium-semicondensed: 'NotoSans JP';
-    font-weight:300;
-    font-size: 90%;
 }
 
 
 :root {
     --font_default-regular: 'NotoSans JP';
-    font-weight: 400;
 }
 
 
 :root {
     --font_default-regular-italic: 'NotoSans JP';
-    font-weight: 700;
 }
 
 
 :root {
   --font_default-regular-semicondensed: 'NotoSans JP';
-    font-weight:400;
-    font-size: 90%;
 }
 
 
 :root {
     --font_default-light: 'NotoSans JP';
-    font-weight: 300;
 }
 
 
 :root {
     --font_default-light-italic: 'NotoSans JP';
-    font-weight: 400;
-    
+   
 }
 
 
 :root {
     --font_default-light-semicondensed: 'NotoSans JP';
-    font-weight:300;
-    font-size: 90%;
 
 }
 
 
 :root {
   --font_default-light-condensed: 'NotoSans JP';
-    font-weight:300;
-    font-size: 90%;
 }
 
 
 :root {
   --font_default-thin: 'NotoSans JP';
-    font-weight:300;
-    font-size: 80%;
 }
 
 
 :root {
   --font_default-thin-italic: 'NotoSans JP';
-    font-weight:400;
-    font-size: 80%;
 }
 
 
-:root {
+:root {ppp
   --font_default-mono-regular: 'NotoMono-Regular';
 }
 @font-face {
@@ -142,6 +124,7 @@
 html {
   color: var(--color_black-0);
   font-family: var(--font_default-light);
+    font-weight: 300;
 }
 
 
@@ -167,6 +150,7 @@ html {
 p {
   color: var(--color_black-1);
   font-family: var(--font_default-light);
+    font-weight: 300;
   font-size: 1rem;
   margin: 0 0 .8rem;
 }
@@ -174,15 +158,13 @@ p {
 p b,
 p strong {
   font-family: var(--font_default-regular);
-  color: green;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 p i,
 p em {
   font-family: var(--font_default-light-italic);
-  font-style: normal;
-  color: red;
+      font-weight: 400;
 }
 
 .footnote,
@@ -258,6 +240,7 @@ hr {
         color: var(--color_grey-2);
         display: inline;
         font-family: var(--font_default-light);
+    font-weight: 300;
         font-size: .7rem;
         line-height: 1.4;
         margin: 0;
@@ -283,6 +266,7 @@ hr {
         box-shadow: inset 0 0.125rem 0.125rem 0 rgba(50, 50, 50, 0.5);
         color: var(--color_grey-3);
         font-family: var(--font_default-light);
+    font-weight: 300;
         font-size: .7rem;
         outline: none;
         padding: .15rem .43rem .1rem;
@@ -448,13 +432,15 @@ hr {
     background: var(--color_grey-4);
     display: table;
     font-family: var(--font_default-regular-semicondensed);
+    font-weight:400;
+    font-size: 90%;
     font-size: 1rem;
     margin: 0 0 .3rem 0;
     padding: .1rem 0;
     width: 100%;
     @media (max-width: 37rem) {
       font-family: var(--font_default-regular);
-    }
+    font-weight:400;
   }
   &__numbering {
     border-right: 0.063rem solid var(--color_white-0);
@@ -473,11 +459,14 @@ hr {
     color: var(--color_black-0);
     display: block;
     font-family: var(--font_default-light-semicondensed);
+    font-weight:300;
+    font-size: 90%;
     font-size: .8rem;
     line-height: 1.2rem;
     margin: 0 0 0 2.55rem;
     @media (max-width: 37rem) {
       font-family: var(--font_default-light);
+    font-weight: 300;
     }
   }
 }
@@ -559,14 +548,15 @@ hr {
     h1 {
       font-family: var(--font_default-light);
       font-size: 2em;
-      font-weight: normal;
+          font-weight: 300;
       margin: 0 0 0.6em;
     }
     h2.heading__introduction {
       border: none;
       font-family: var(--font_default-regular-semicondensed);
       font-size: 1.4rem;
-      font-weight: normal;
+         font-weight:400;
+    font-size: 90%;
       margin: 1.3em 0 0.5em;
       .anchorjs-link {
         display: none;
@@ -595,6 +585,8 @@ hr {
       &__heading {
         border-bottom: 0.01rem solid var(--color_grey-2);
         font-family: var(--font_default-regular-semicondensed);
+    font-weight:400;
+    font-size: 90%;
         font-size: 1.3rem;
         margin: 2.5rem 0 1.2rem;
         padding: 0 0 .8rem;
@@ -615,18 +607,23 @@ hr {
       border-bottom: 0.01rem solid var(--color_grey-2);
       font-family: var(--font_default-regular);
       font-size: 1.4rem;
-      font-weight: normal;
+      font-weight:400;
       margin: 1.5rem 0 1.2rem;
       padding: 0 0 .8rem;
     }
     .paragraph__toc {
       font-family: var(--font_default-light-semicondensed);
+    font-weight:300;
+    font-size: 90%;
       font-size: .9rem;
       b {
         font-size: var(--font_default-regular-semicondensed);
+    font-weight:400;
+    font-size: 90%;
       }
       @media (min-width: 52.5rem) { /* 840px */
         font-family: var(--font_default-light);
+    font-weight: 300;
         font-size: 1rem;
       }
     }
@@ -645,39 +642,43 @@ hr {
     h1 {
       font-family: var(--font_default-light);
       font-size: 2rem;
-      font-weight: normal;
+          font-weight: 300;
       margin: 0 0 1.6rem;
     }
     h2 {
       font-family: var(--font_default-regular);
       font-size: 1.4rem;
-      font-weight: normal;
+          font-weight:400;
       margin: 1.7rem 0 0.7rem;
     }
     h3 {
       font-family: var(--font_default-regular);
       font-size: 1.3em;
-      font-weight: normal;
+         font-weight:400;
       margin: 1.6rem 0 0.7rem;
     }
     h4 {
       font-family: var(--font_default-regular);
       font-size: 1.2rem;
+    font-weight:400;
       margin: 1.5rem 0 0.7rem;
     }
     h5 {
       font-family: var(--font_default-regular);
       font-size: 1.1rem;
       margin: 1.6rem 0 0.7rem;
+    font-weight:400;
     }
     h6 {
       font-family: var(--font_default-regular);
       font-size: 1rem;
       margin: 1.7rem 0 0.8rem;
+    font-weight:400;
     }
     p {
       color: var(--color_black-1);
       font-family: var(--font_default-light);
+    font-weight: 300;
       font-size: 1rem;
       margin: 0 0 1.2rem;
       &:last-of-type {
@@ -722,6 +723,7 @@ hr {
       background: var(--color_grey-0);
       color: var(--color_black-2);
       font-family: var(--font_default-regular);
+    font-weight:400;
       font-size: .6rem;
       margin: 0 0 1.5rem;
       padding: .1rem .2rem;
@@ -729,33 +731,36 @@ hr {
     h1 {
       font-family: var(--font_default-light);
       font-size: 2rem;
-      font-weight: normal;
+         font-weight: 300;
       margin: 0 0 1.6rem;
     }
     h2 {
       font-family: var(--font_default-regular);
+    font-weight:400;
       font-size: 1.4rem;
-      font-weight: normal;
       margin: 1.7rem 0 0.7rem;
     }
     h3 {
       font-family: var(--font_default-regular);
       font-size: 1.3em;
-      font-weight: normal;
+         font-weight:400;
       margin: 1.6rem 0 0.7rem;
     }
     h4 {
       font-family: var(--font_default-regular);
       font-size: 1.2rem;
+    font-weight:400;
       margin: 1.5rem 0 0.7rem;
     }
     h5 {
       font-family: var(--font_default-regular);
+    font-weight:400;
       font-size: 1.1rem;
       margin: 1.6rem 0 0.7rem;
     }
     h6 {
       font-family: var(--font_default-regular);
+    font-weight:400;
       font-size: 1rem;
       margin: 1.7rem 0 0.8rem;
     }
@@ -763,7 +768,8 @@ hr {
       display: block;
       font-family: var(--font_default-regular-semicondensed);
       font-size: 1.3rem;
-      font-weight: normal;
+       font-weight:400;
+    font-size: 90%;
       line-height: 1.6rem;
       margin: 1.5rem 0 2.4rem;
       code {
@@ -774,6 +780,7 @@ hr {
     p {
       color: var(--color_black-1);
       font-family: var(--font_default-light);
+    font-weight: 300;
       font-size: 1rem;
       margin: 0 0 1.2rem;
       &:last-of-type {
@@ -790,11 +797,13 @@ hr {
       &.hint {
         color: var(--color_black-2);
         font-family: var(--font_default-regular);
+    font-weight:400;
         font-size: .9rem;
         margin: 2.4rem .5rem 2.4rem .5rem;
         padding: 0 0 0 2.4rem;
         i {
           font-family: var(--font_default-regular-italic);
+    font-weight: 700;
         }
         &:before {
           content: "\f05a";
@@ -833,12 +842,14 @@ hr {
       th {
         border-bottom: 0.1rem solid var(--color_grey-2);
         font-family: var(--font_default-regular-semicondensed);
-        font-weight: normal;
+         font-weight:400;
+    font-size: 90%;
         padding: .5rem;
         text-align: left;
         vertical-align: top;
         small {
           font-family: var(--font_default-light);
+    font-weight: 300;
           font-size: .8rem;
         }
       }
@@ -999,6 +1010,7 @@ button {
   color: var(--color_blue-0);
   cursor: pointer;
   font-family: var(--font_default-regular);
+    font-weight:400;
   font-size: .7rem;
   margin: .3rem .3rem .3rem 0;
   padding: .2rem .3rem;
@@ -1073,6 +1085,7 @@ iframe {
   &__heading {
     border-bottom: 0.01rem solid var(--color_grey-2);
     font-family: var(--font_default-regular);
+    font-weight:400;
     font-size: 1.2em;
     margin: 2.5rem 0 .8rem;
     padding: 0 0 .6rem;
