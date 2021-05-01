@@ -1,0 +1,7 @@
+{% assign STYLE = "style" %}
+{% if page.lang == "ja" %}
+  {% assign STYLE = "style-ja" %}
+{% endif %}
+
+<link rel="stylesheet" href="{{ "/assets/css/STYLE.css?v=" | replace_first: "STYLE", STYLE  | append: site.github.build_revision | relative_url }}">
+

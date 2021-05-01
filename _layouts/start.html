@@ -19,7 +19,7 @@ layout: compress
 
     <link rel="icon" href="{{ "/assets/images/favicon.svg" | relative_url }}" type="image/svg+xml" sizes="any">
     
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    {% include style-links.html %}
 
     <link rel="canonical" href="https://www.learnlatex.org/{{ page.lang }}/">
 
