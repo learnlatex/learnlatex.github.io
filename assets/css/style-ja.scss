@@ -33,68 +33,68 @@
 /*  # ROOT ELEMENT: VARIABLES - FONTS                                         */
 /*----------------------------------------------------------------------------*/
 :root {
-    --font_default-medium: 'Noto Sans JP';
+    --font_default-medium: 'Noto Sans JP', 'sans-serif';
 }
 
 :root {
-    --font_default-medium-italic: 'Noto Sans JP';
-}
-
-
-:root {
-    --font_default-medium-semicondensed: 'Noto Sans JP';
+    --font_default-medium-italic: 'Noto Sans JP', 'sans-serif';
 }
 
 
 :root {
-    --font_default-regular: 'Noto Sans JP';
+    --font_default-medium-semicondensed: 'Noto Sans JP', 'sans-serif';
 }
 
 
 :root {
-    --font_default-regular-italic: 'Noto Sans JP';
+    --font_default-regular: 'Noto Sans JP', 'sans-serif';
 }
 
 
 :root {
-  --font_default-regular-semicondensed: 'Noto Sans JP';
+    --font_default-regular-italic: 'Noto Sans JP', 'sans-serif';
 }
 
 
 :root {
-    --font_default-light: 'Noto Sans JP';
+  --font_default-regular-semicondensed: 'Noto Sans JP', 'sans-serif';
 }
 
 
 :root {
-    --font_default-light-italic: 'Noto Sans JP';
+    --font_default-light: 'Noto Sans JP', 'sans-serif';
+}
+
+
+:root {
+    --font_default-light-italic: 'Noto Sans JP', 'sans-serif';
    
 }
 
 
 :root {
-    --font_default-light-semicondensed: 'Noto Sans JP';
+    --font_default-light-semicondensed: 'Noto Sans JP', 'sans-serif';
 
 }
 
 
 :root {
-  --font_default-light-condensed: 'Noto Sans JP';
+  --font_default-light-condensed: 'Noto Sans JP', 'sans-serif';
 }
 
 
 :root {
-  --font_default-thin: 'Noto Sans JP';
+  --font_default-thin: 'Noto Sans JP', 'sans-serif';
 }
 
 
 :root {
-  --font_default-thin-italic: 'Noto Sans JP';
+  --font_default-thin-italic: 'Noto Sans JP', 'sans-serif';
 }
 
 
 :root {
-  --font_default-mono-regular: 'NotoMono-Regular';
+  --font_default-mono-regular: 'NotoMono-Regular', 'monospace';
 }
 @font-face {
   font-family: 'NotoMono-Regular';
