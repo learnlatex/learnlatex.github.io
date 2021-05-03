@@ -68,6 +68,11 @@ pages.
      zz: "YOUR TRANSLATION HERE"
    ```
    
+Note that if you want your translation to use localised digits for lesson numbers
+you may optionally add an entry to the `navigational-elements_digits` array
+with a string consisting of a comma separated list of numbers 0--20.
+(See the Marathi example in the file.)
+
 
 At this point your language should appear in the drop down menu to
 select languages, and the navigation between pages. Obviously the main
