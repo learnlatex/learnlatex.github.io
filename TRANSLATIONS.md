@@ -61,10 +61,9 @@ pages.
      es: "Siguiente lección"
      fr: "Leçon suivante…"
      ja: "次のレッスン"
+     mr: "पुढील प्रकरण"
      pt: "Próxima lição"
-     tr: "Next lesson"
      vi: "Bài tiếp theo"
-     zh: "Missing"
      zz: "YOUR TRANSLATION HERE"
    ```
    
