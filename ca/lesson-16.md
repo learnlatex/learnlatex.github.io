@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "ca"
 title: "Accedir a la documentació i obtenir ajuda"
 description: "En aquesta lliçó s'explica les principals maneres de documentar-se per als paquets i aplicacions relacionats amb LaTeX, i com cercar ajuda quan tens un dubte."
-toc-anchor-text: "Help & documentation"
+toc-anchor-text: "Ajuda i documentació"
 toc-description: "Accedir a l'ajuda i a la documentació."
 ---
 

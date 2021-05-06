@@ -1,17 +1,17 @@
 ---
 layout: "lesson"
 lang: "ca"
-title: "Específic per a l'idioma anglès"
-description: "Aquesta lliçó explica detalls específics referents a escriure documents LaTeX amb idioma anglès. Ens referim a la separació de guions, on les tradicions angleses i americanes són diferents."
+title: "Particularitats del català"
+description: "Aquesta lliçó explica detalls específics referents a escriure documents LaTeX en català. Ens referim a la separació de guions i els accents."
 next: "extra-01"
-toc-anchor-text: "Específic per a l'idioma anglès"
-toc-description: "Escriure amb LaTeX en anglès."
+toc-anchor-text: "LaTeX en català"
+toc-description: "Particularitats del català"
 ---
 
-# Específic per a l'idioma anglès
+# Específic per al català
 
 <span
-  class="summary">Aquesta lliçó explica detalls específics referents a escriure documents LaTeX amb idioma anglès. Ens referim a la separació de guions, on les tradicions angleses i americanes són diferents.</span>
+  class="summary">Aquesta lliçó explica detalls específics referents a escriure documents LaTeX en llengua catalana. Volem insistir en que no us deixeu influir per documentació obsoleta que podeu trobar a internet i que descriuen la manera de procedir quan encara el LaTeX estava pensat exclusivament per a l'anglés.</span>
 
 ## Separació de guions
 
@@ -20,8 +20,58 @@ LaTeX es va escriure pensant en l'idioma anglès, i per tant hi ha molts pocs as
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[UKenglish]{babel}
+\usepackage[catalan]{babel}
 \begin{document}
-Some text
+El text.
 \end{document}
 ```
+
+El paquet `babel` es cuida de modificar el que calgui per tal de respectar les normes tipogràfiques de la llengua que volgueu, especialment:
+* El guionatge dels mots als finals de línia (anomenats "patrons de guionatge");
+* L'espai al voltant dels signes de puntuació;
+* Els títols per defectes dels annexes (taula de continguts, bibliografia, ...)
+
+## Caràcters accentuats
+
+Al començament del LaTeX, `é` s'escrivia amb una macro per afegir l'accent: `\'{e}` i un altre per a l'ela geminada.
+**Fa molt temps que ja no calen aquesta mena de  malabarismes** atès que podem usar les tecles d'accent del teclat:
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+\begin{document}
+Faç aïrada, confús pel White Mackay, el jove prosèlit taurí, zelós apel·là i queixa asserí, grunyint d'aürt:``És burla a la història el vet!''.
+\end{document}
+```
+
+De tota manera el sistema de macros encara es pot fer servís _si calgués_, per exemple per escriure caracters en llengües que el vostre teclat no suporta.
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+\begin{document}
+\begin{tabular}{ll}
+\hline
+\`{a} & accent greu \\
+\'{e} & accent agut \\
+\^{i} & accent circumflex \\
+\"{o} & dièresi \\
+\~{u} & titlla \\
+\={o} & màcron \\
+\.{o} & punt \\
+\u{o} & accent breu\\
+\v{o} & accent anticircumflex\\
+\H{o} & dièresi hongaresa \\
+\t{oo} &\\
+\c{c} & trenc\\
+\d{o} & punt superior \\
+\b{o} & subratllat \\
+\r{o} & anell \\
+\k{o} & ogonek \\
+\hline
+\OE{}, \oe{} & O, E dins O \\
+\AE{}, \ae{} & A, E dins A \\
+\hline
+\end{tabular}
+\end{document}
+``` 
