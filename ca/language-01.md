@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "ca"
 title: "Particularitats del català"
-description: "Aquesta lliçó explica detalls específics referents a escriure documents LaTeX en català. Ens referim a la separació de guions i els accents."
+description: "Aquesta lliçó explica detalls específics referents a escriure documents LaTeX en català. Ens referim a la separació de guions i als accents."
 next: "extra-01"
 toc-anchor-text: "LaTeX en català"
 toc-description: "Particularitats del català"
@@ -11,7 +11,7 @@ toc-description: "Particularitats del català"
 # Específic per al català
 
 <span
-  class="summary">Aquesta lliçó explica detalls específics referents a escriure documents LaTeX en llengua catalana. Volem insistir en que no us deixeu influir per documentació obsoleta que podeu trobar a internet i que descriuen la manera de procedir quan encara el LaTeX estava pensat exclusivament per a l'anglés.</span>
+  class="summary">Aquesta lliçó explica detalls específics referents a escriure documents LaTeX en llengua catalana. Volem insistir en què no us deixeu influir per documentació obsoleta que podeu trobar a internet i que descriuen la manera de procedir quan encara el LaTeX estava pensat exclusivament per a l'anglès.</span>
 
 ## Separació de guions
 
@@ -29,12 +29,12 @@ El text.
 El paquet `babel` es cuida de modificar el que calgui per tal de respectar les normes tipogràfiques de la llengua que volgueu, especialment:
 * El guionatge dels mots als finals de línia (anomenats "patrons de guionatge");
 * L'espai al voltant dels signes de puntuació;
-* Els títols per defectes dels annexes (taula de continguts, bibliografia, ...)
+* Els títols per defecte dels annexes (taula de continguts, bibliografia, ...)
 
 ## Caràcters accentuats
 
 Al començament del LaTeX, `é` s'escrivia amb una macro per afegir l'accent: `\'{e}` i un altre per a l'ela geminada.
-**Fa molt temps que ja no calen aquesta mena de  malabarismes** atès que podem usar les tecles d'accent del teclat:
+**Fa molt temps que ja no cal aquesta mena de  malabarismes** atès que podem usar les tecles d'accent del teclat:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -44,7 +44,7 @@ Faç aïrada, confús pel White Mackay, el jove prosèlit taurí, zelós apel·l
 \end{document}
 ```
 
-De tota manera el sistema de macros encara es pot fer servís _si calgués_, per exemple per escriure caracters en llengües que el vostre teclat no suporta.
+De tota manera, el sistema de macros encara es pot fer servír _si calgués_, per exemple per escriure caràcters en llengües que el vostre teclat no suporta.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
