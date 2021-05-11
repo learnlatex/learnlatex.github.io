@@ -9,12 +9,15 @@ toc-description: "Tham chiếu các thành phần văn bản"
 
 # Tham chiếu chéo
 
+<span class="summary">Bài này giải thích cách thực hiện tham chiếu chéo giữa các
+thành phần khác nhau trong văn bản.</span>
+
 ## Cách hoạt động của `\label` và `\ref`
 
 Khi ta viết một văn bản dài, ta có thể cần phải thêm các tham chiếu chéo tới các
 thành phần được đánh số như hình, bảng hay công thức toán học. LaTeX có khả năng
 cho ta con số chính xác khi tham chiếu, ta chỉ cần đưa ra đoạn mã hợp lý. Để bảo
-LaTeX "nhớ" một vị trí trong văn bản, ta cần phải đánh dấu nó, và trong các vị
+LaTeX 'nhớ' một vị trí trong văn bản, ta cần phải đánh dấu nó, và trong các vị
 trí khác, ta tạo tham chiếu đén vị trí đánh dấu này.
 
 ```latex
@@ -64,7 +67,7 @@ và nó dùng **??** thay vì thế. Bạn chỉ cần chạy LaTeX thêm một 
 (Thông thường khi viết bạn vẫn phải chạy LaTeX nhiều lần, do đó trên thực tế đây
 không phải là một vấn đề quá lớn.)
 
-Chú ý việc sử dụng của `~` ở trước các tham chiếu. Ta không muốn "subsection" và
+Chú ý việc sử dụng của `~` ở trước các tham chiếu. Ta không muốn 'subsection' và
 số tham chiếu nằm ở hai dòng khác nhau, do đó ta cần đặt `~` để bảo LaTeX không
 được xuống dòng tại điểm này.
 

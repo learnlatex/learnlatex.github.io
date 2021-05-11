@@ -9,6 +9,11 @@ toc-description: "Sistemas TeX e editores de texto."
 
 # Trabalhando com LaTeX
 
+<span
+  class="summary">Esta lição explica o que é um sistema TeX e quais os mais
+  comuns, lista alguns dos editores de texto comumente utilizados para LaTeX,
+  e os sistemas online que contam também com editores integrados.</span>
+
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação
 que contém 'tudo em um'.  Ao invés disso, há diversos programas que trabalham
 juntos.  Podemos dividi-los em duas coisas que você realmente precisa:
@@ -53,13 +58,15 @@ Um editor básico, [TeXworks](https://tug.org/texworks), é distribuído no
 TeX Live e no MiKTeX, tanto para Windows como para Linux, e o
 [TeXShop](https://pages.uoregon.edu/koch/texshop/) é istribuído com o MacTeX.
 
-Qualquer editor que você escolher, nós recomendamos que você instale-o _depois_
-do seu sistema TeX, para que o editor possa 'ver' o sistema TeX e se configurar
-corretamente.
+<p
+  class="hint">
+  Qualquer editor que você escolher, nós recomendamos que você instale-o
+  <em>depois</em> do seu sistema TeX, para que o editor possa 'ver' o sistema
+  TeX e se configurar corretamente.</p>
 
 ## Trabalhando online
 
-Há vários sites poderosos atualmente, que lhe permitem não ter um sistema TeX
+Há vários sites poderosos, que lhe permitem não ter um sistema TeX
 ou editor instalados no seu computador.  Esses websites lhe permitem editar seus
 arquivos em uma página no navegador, e executam o LaTeX nos bastidores, e
 mostram o arquivo PDF produzido.
@@ -70,7 +77,7 @@ o arquivo LaTeX fonte, assim fornecem uma experiência mais parecida com ter um
 sistema TeX local.
 
 Há sistemas que permitem que você execute o LaTeX sem precisar registar, e nós
-usamos um desses, o [LaTeX CGI](https://latexcgi.xyz), que permite que você
+usamos um desses, o [TeXLive.net](https://texlive.net), que permite que você
 edite e teste os exemplos que fornecemos.  Para trabalhos mais completos, os
 melhores sistemas online requerem que você registre-se antes de usá-los.  Isso
 lhe permite salvar seu trabalho, mas também ajuda que os sites não fiquem
@@ -78,6 +85,12 @@ sobrecarregados.  Nós configuramos links para que você possa editar os exemplo
 no [Overleaf](https://www.overleaf.com), um dos maiores sites de edição online
 de LaTeX.  Há vários outros também: [Papeeria](https://papeeria.com/) é um
 exemplo.
+
+## Trabalhando com terceiros
+
+Se você planeja enviar o código do seu documento LaTeX onde ele será processado,
+como editoras, conferências, ou servidores de manuscritos (e.g. arXiv), você
+deve verificar quais restrições eles impõe.
 
 ## Exercício
 

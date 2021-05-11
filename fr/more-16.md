@@ -15,11 +15,11 @@ liens :
 
 Le code-source de LaTeX lui-même est disponible sous la forme d'un document
 LaTeX, `source2e.pdf`, que vous pourrez trouver avec `texdoc source2e` ou sur
-[texdoc.net](https://texdoc.net/pkg/source2e).
+[texdoc.org](https://texdoc.org/pkg/source2e).
 
 Les versions actuelles de LaTeX ont également préchargé le code du langage de
 programmation LaTeX3, précédemment disponible sous la forme du package `expl3`.
 Tapez `texdoc interface3` pour consulter la
-[description de l'interface expl3](http://texdoc.net/pkg/interface3), ou
+[description de l'interface expl3](http://texdoc.org/pkg/interface3), ou
 `texdoc source3` pour voir le
-[code source complet d'`expl3`](http://texdoc.net/pkg/source3).
+[code source complet d'`expl3`](http://texdoc.org/pkg/source3).

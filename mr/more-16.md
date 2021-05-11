@@ -14,11 +14,19 @@ toc-anchor-text: "More on: Accessing documentation and getting help"
 
 `source2e.pdf` ह्या नावाने लाटेक्-ची स्वतःची बीजआज्ञावली टेक्-वितरणांत उपलब्ध
 आहे. वाचण्याकरिता आज्ञापटलावर `texdoc source2e` लिहा अथवा
+<<<<<<< HEAD
 [texdoc.net](https://texdoc.net/pkg/source2e) ह्या दुव्यासह महाजालावर वाचा.
 
 नवीन लाटेक् वितरणे लाटेक्-३ ही आज्ञावली वापरतात. ही आज्ञावली पूर्वी `expl3` ह्या आज्ञासंचासह
 उपलब्ध होती. `texdoc`सह [expl3 आज्ञासंचाचा वापर](http://texdoc.net/pkg/interface3)
 (`texdoc interface3`) अथवा [expl3 बीज](http://texdoc.net/pkg/source3) (`texdoc
+=======
+[texdoc.org](https://texdoc.org/pkg/source2e) ह्या दुव्यासह महाजालावर वाचा.
+
+नवीन लाटेक् वितरणे लाटेक्-३ ही आज्ञावली वापरतात. ही आज्ञावली पूर्वी `expl3` ह्या आज्ञासंचासह
+उपलब्ध होती. `texdoc`सह [expl3 आज्ञासंचाचा वापर](http://texdoc.org/pkg/interface3)
+(`texdoc interface3`) अथवा [expl3 बीज](http://texdoc.org/pkg/source3) (`texdoc
+>>>>>>> 972728a95ed0b3eee8016c4f62b97ed1467452db
 source3`) वाचता येऊ शकते.
 
 

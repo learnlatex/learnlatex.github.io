@@ -10,7 +10,7 @@ toc-description: "Working with reference databases."
 # Citations and references
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
    },
@@ -221,7 +221,7 @@ of the bibliography and citation commands directly from your document preamble
 using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
 hand usually require working with these external files and need knowledge of
 the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customise than the BibTeX workflow.
+easier to customize than the BibTeX workflow.
 
 In `biblatex` it is generally easier to implement more elaborate citation
 styles with a wider array of different citation commands. It also offers more
@@ -252,7 +252,7 @@ you will want to look into using `biblatex`.
 
 Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
 to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and LaTeX Online
+Find out how to do that in your editor, or try the Overleaf and TeXLive.net
 automation.
 
 See what happens when you create new database entries and new citations. Add

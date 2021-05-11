@@ -89,6 +89,7 @@ source document. Here is an example showing some Latin and Greek letters as
 well as some CJK ideographs:
 
 ```latex
+% !TEX xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}

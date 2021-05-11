@@ -10,7 +10,7 @@ toc-description: "Découper ses fichiers de façon logique."
 # S'organiser pour écrire un document long
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",
@@ -58,10 +58,10 @@ Un document un peu long pourrait donc ressembler à ceci :
 \title{A Sample Book}
 \author{John Doe \and Joe Bloggs}
 
-\IfFileExists{append.aux}
+\IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-%  front,
+  front,
 %  chap1,
   chap2,
 %  append

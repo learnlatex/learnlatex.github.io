@@ -38,7 +38,7 @@ Multline
 
 ### Các cột trong sự căn lề của các môi trường toán
 
-Các môi trường `amsmath` được thiết kế để thực hiện các "cặp cột" với cột đầu
+Các môi trường `amsmath` được thiết kế để thực hiện các 'cặp cột' với cột đầu
 tiên của cặp được căn phải và cột sau được căn trái. Điều này giúp nhiều công
 thức được hiển thị trên một dòng, như trong ví dụ sau:
 
@@ -55,7 +55,7 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
-Thêm vào đó ta còn có các môi trường "con" với đuôi `ed` cho các môi trường nói
+Thêm vào đó ta còn có các môi trường 'con' với đuôi `ed` cho các môi trường nói
 trên, ví dụ `aligned` hay `gathered`, để đưa việc căn dòng vào trong một phần
 nhỏ trong một công thức nào đó (hãy thử chúng để hiểu cách hoạt động!).
 
@@ -102,7 +102,7 @@ c&=d
 \end{document}
 ```
 
-# In đậm các công thức toán học
+## In đậm các công thức toán học
 
 LaTeX có hai cách để làm đậm các công thức toán. Để làm một công thức được in
 đậm hoàn toàn, dùng `\boldmath` trước công thức đó. Lệnh `\mathbf` cũng có thể
@@ -144,7 +144,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 \end{document}
 ```
 
-# Gói `mathtools`
+## Gói `mathtools`
 
 Gói `mathtools` dùng `amsmath` và thêm nhiều chức năng tăng cường khác như tăng
 các hỗ trợ cho việc viết ma trận. Dùng `mathtools` ta có thể dùng các ký tự khai
@@ -166,7 +166,7 @@ báo bảng để căn lề các ô trong ma trận.
 \end{document}
 ```
 
-# Các công thức toán học và Unicode
+## Các công thức toán học và Unicode
 
 
 Như ta sẽ biết trong [một bài sau](lesson-14), có nhiều trình biên dịch TeX khác
@@ -175,7 +175,7 @@ mặc định của TeX nhưng ta có thể dùng gói `unicode-math` để sử
 OpenType cho các công thức toán. Nội dung của gói này nằm ngoài tầm của khóa
 này nên ta sẽ không đi sâu vào nó mà chỉ đưa ra một ví dụ đơn giản. Tuy nhiên
 bạn có thể đọc thêm trong
-[hướng dẫn sử dụng gói](https://texdoc.net/pkg/unicode-math).
+[hướng dẫn sử dụng gói](https://texdoc.org/pkg/unicode-math).
 
 ```latex
 % !TEX lualatex

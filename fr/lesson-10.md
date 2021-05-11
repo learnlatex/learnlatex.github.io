@@ -176,7 +176,7 @@ ne sont pas décrits ici.
 L'écriture mathématique est très riche, ce qui signifie que les outils intégrés
 au noyau LaTeX ne peuvent pas tout couvrir. Le package `amsmath` étend le
 support du noyau pour couvrir beaucoup plus de notations. Le
-[Guide de l'utilisateur d'`amsmath`](http://texdoc.net/pkg/amsmath) contient
+[Guide de l'utilisateur d'`amsmath`](http://texdoc.org/pkg/amsmath) contient
 beaucoup plus d'exemples que nous ne pouvons en montrer dans cette leçon.
 
 ```latex

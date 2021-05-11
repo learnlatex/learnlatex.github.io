@@ -12,15 +12,15 @@ toc-description: "Math mode and mathematical notation."
 <span
   class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
 
-Typesetting complex mathematics is one of the greatest strengths of LaTeX. You 
+Typesetting complex mathematics is one of the greatest strengths of LaTeX. You
 can mark up mathematics in a logical way in what is known as 'math mode'.
 
 ## Math mode
 
-In math mode, spaces are ignored and the correct spacing between characters is 
-(almost always) applied. 
+In math mode, spaces are ignored and the correct spacing between characters is
+(almost always) applied.
 
-There are two forms of math mode: 
+There are two forms of math mode:
 
 * inline
 * display
@@ -46,8 +46,8 @@ the MathJax system for placing equations in web pages. These systems often
 accept slight variations on LaTeX's syntax as they do not actually use LaTeX
 'behind the scenes'.
 
-<p 
-  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in 
+<p
+  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in
 another context, it might be because the example is not really using LaTeX.</p>
 
 ### Inline math mode and mathematical notation
@@ -137,7 +137,23 @@ Notice here how sub-/superscript notation is used to set the limits on the
 integration.
 
 We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`, which we need so it does not look like a product.
+`dx`.
+Formatting of the differential operator varies: some publishers use an upright
+'d' whilst others use an italic '_d_'. One way to write your source to allow you to
+handle either is to create a command `\diff` that you can adjust as required,
+[for example](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\newcommand{\diff}{\mathop{}\!d}            % For italic
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % For upright
+\begin{document}
+A paragraph about a larger equation
+\[
+\int_{-\infty}^{+\infty} e^{-x^2} \diff x
+\]
+\end{document}
+```
 
 You often want a numbered equation, which is created using the `equation`
 environment. Let's try the same example again:
@@ -164,7 +180,7 @@ are set up by the document class and not described here.
 Mathematical notation is very rich, and this means that the tools built
 into the LaTeX kernel can't cover everything. The `amsmath` package
 extends the core support to cover a lot more ideas.
-The [`amsmath` User Guide](http://texdoc.net/pkg/amsmath)
+The [`amsmath` User Guide](http://texdoc.org/pkg/amsmath)
 contains many more examples than we can show in this lesson.
 
 ```latex

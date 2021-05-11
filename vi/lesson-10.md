@@ -7,14 +7,18 @@ toc-anchor-text: "Công thức toán học"
 toc-description: "Chế độ toán trong LaTeX"
 ---
 
-# Các công thức toán học
+# Công thức toán học
+
+<span class="summary">Bài này giải thích các cách khác nhau để thêm các công
+thức toán học vào văn bản, cũng như một vài lệnh công thức toán cơ bản trong
+LaTeX.</span>
 
 ## Chế độ toán (math mode)
 
 Bạn có thể thêm các công thức toán dưới một chế độ được gọi là *chế độ toán*
 (math mode). Trong chế độ này, các khoảng trống bị bỏ qua và khoảng trống phù
 hợp giữa các ký tự được điền vào (trong hầu hết các trường hợp). Có hai loại
-chế độ toán: inline cho các công thức "trên dòng" và display cho các công thức
+chế độ toán: inline cho các công thức 'trên dòng' và display cho các công thức
 có một dòng riêng cho nó.
 
 ```latex
@@ -31,12 +35,14 @@ See how the paragraph continues after the display.
 \end{document}
 ```
 
-Ta có thể thấy các câu lệnh toán "giống LaTeX" xuất hiện ở nhiều chỗ khác, ví dụ
+Ta có thể thấy các câu lệnh toán 'giống LaTeX' xuất hiện ở nhiều chỗ khác, ví dụ
 như thư viện MathJax để hiện công thức toán học trên các trang web. Những thư
 viện như vậy thường thực hiện những thay đổi nhỏ đối với cú pháp của LaTeX vì
-nó không hề dùng LaTeX! Các ví dụ ở đây đều dùng LaTeX "chính xác", do đó nếu
-bạn thấy cú pháp hơi khác ở những chỗ khác, có thể những chỗ đó đang dùng một
-thứ không phải LaTeX.
+chúng, trên thực tế, thường không hề dùng LaTeX!
+
+<p class="hint">Các ví dụ ở đây đều dùng LaTeX <i>chính xác</i>, do đó nếu bạn
+thấy nó hơi khác ở những chỗ khác, có thể những chỗ đó đang dùng một thứ không
+phải LaTeX.</p>
 
 ## Chế độ toán inline và các ký hiệu toán học
 
@@ -65,8 +71,8 @@ Superscripts $a^{b}$ and subscripts $a_{b}$.
 ```
 
 (Bạn có thể thấy các ví dụ mà những superscript hay subscript đơn giản được nhập
-vào mà không có cặp ngoặc nhọn, nhưng cú pháp đó không phải là cú pháp "chính
-thức" và có thể hoạt động không theo ý bạn; do đó luôn dùng cặp ngoặc nhọn.)
+vào mà không có cặp ngoặc nhọn, nhưng cú pháp đó không phải là cú pháp 'chính
+thức' và có thể hoạt động không theo ý bạn; do đó luôn dùng cặp ngoặc nhọn.)
 
 Có *rất nhiều* các câu lệnh toán học. Một vài lệnh khá đơn giản như `\sin` hay
 `\log` hay `\theta`.
@@ -114,6 +120,25 @@ Chú ý các ký tự `^` và `_` được dùng cho các cận của dấu tíc
 đã thêm một khoảng trống giữa `e^{-x^2}` với `dx` bằng `\,`; khoảng trống này để
 làm cho nó không giống một phép nhân của `e^{-x^2}` và `dx`.
 
+Tùy nơi mà cách viết ký hiệu vi phân khác nhau: một số nhà xuất bản sử dụng chữ
+'d' đứng thẳng (d*x*), trong khi số còn lại lại sử dụng 'd' in nghiêng (*dx*).
+Để viết một văn bản mà có thể chuyển từ dạng này sang dạng kia tùy ý, ta có thể
+định nghĩa thêm một lệnh `\diff`, ví dụ như
+[ở đây](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf).
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\newcommand{\diff}{\mathop{}\!d}            % d in nghiêng
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % d in thẳng
+\begin{document}
+A paragraph about a larger equation
+\[
+\int_{-\infty}^{+\infty} e^{-x^2} \diff x
+\]
+\end{document}
+```
+
 Ta có thể cần đánh số công thức toán &ndash; điều này có thể được thực hiện với
 môi trường `equation`.
 
@@ -139,7 +164,7 @@ Các ký hiệu toán học rất phong phú, và các công cụ cung cấp b�
 LaTeX không thể hỗ trợ tất cả các ký hiệu trong số đó. Gói `amsmath` phát triển
 thêm để có thể hỗ trợ thêm nhiều ký hiệu khác, cũng như cung cấp thêm nhiều môi
 trường với các tính năng khác nhau cho các công thức toán học. Bạn nên đọc
-[hướng dẫn sử dụng `amsmath`](http://texdoc.net/pkg/amsmath) &ndash; tài liệu
+[hướng dẫn sử dụng `amsmath`](http://texdoc.org/pkg/amsmath) &ndash; tài liệu
 này chuyên sâu hơn về `amsmath` và có nhiều ví dụ hơn những gì ta có thể nói tới
 trong khóa này.
 
@@ -204,7 +229,7 @@ số ý nghĩa toán học nào đó. Do đó chúng thường được viết m
 - `\mathbf`: viết đậm
 - `\mathsf`: viết theo font sans
 - `\mathtt`: viết theo font mono
-- `\mathbb`: viết theo "hai nét" (ví dụ tập hợp số thực thường được ký hiệu là
+- `\mathbb`: viết theo 'hai nét' (ví dụ tập hợp số thực thường được ký hiệu là
   `\mathbb{R}`) &ndash; lệnh này cần đến gói `amsfonts`.
 
 Mỗi lệnh trên dùng một chữ cái Latin làm đối số, ví dụ ta có thể ký hiệu tên của

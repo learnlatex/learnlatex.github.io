@@ -12,7 +12,10 @@ layout: compress
       {% else %}
       <title>{{ page.title }} | {{site.title}}</title>
     {% endif %}
-  {% assign mrdigits="०,१,२,३,४,५,६,७,८,९,१०,११,१२,१३,१४,१५,१६,१७" | split: "," %}
+    {% if site.data.translations['navigational-elements_digits'][page.lang] %}
+    {%  assign localdigits=site.data.translations['navigational-elements_digits'][page.lang] | split: "," %}
+    {% endif %}
+
     <!-- alternate links start -->
     {% include alternate-links.html %}
     <!-- alternate links end -->
@@ -80,11 +83,11 @@ layout: compress
         <span
           class="meta"
           >{{ site.data.translations['informational-elements_lesson'][page.lang] }}
-              {% if page.lang == "mr" %}
-                {% assign pageno = page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | floor %}
-                {{ mrdigits[pageno] }}
+              {% if localdigits %}
+                {% assign pageno = page.path | replace: '.md','' | remove_first: language | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | replace: 'language-', '' | replace: 'extra-', '' | floor %}
+                {{ localdigits[pageno] }}
               {% else %}
-	  {{ page.path | replace: '.md','' | replace: language ,'' | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | round: 2 }}
+	  {{ page.path | replace: '.md','' | remove_first: language | remove_first: '/' | replace: 'lesson-' ,'' | replace: 'more-' ,'' | replace: 'language-', '' | replace: 'extra-', '' | round: 2 }}
 	{% endif %}</span>
         <!-- meta lesson information end -->
 

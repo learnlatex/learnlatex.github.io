@@ -7,7 +7,10 @@ toc-anchor-text: "Định dạng và khoảng cách"
 toc-description: "Định dạng font và các khoảng trống"
 ---
 
-# Định dạng font và các khoảng cách
+# Định dạng và khoảng cách
+
+<span class="summary">Bài này sẽ giới thiệu các cách điều chỉnh định dạng chữ cơ
+bản, cũng như một số câu lệnh để tùy biến các khoảng trống trong văn bản.</span>
 
 ## Khoảng cách giữa các đoạn văn
 
@@ -45,7 +48,7 @@ _không nên_ dùng `\\`.
 
 Ta có thể thêm một khoảng trống nhỏ (bằng khoảng nửa một ký tự trống thông
 thường) bằng `\,`. Trong chế độ toán, ta còn có các lệnh khác như `\.`, `\:` hay
-`\;`, hay thậm chí `\!` sẽ tạo ra một khoảng trống có "độ rộng âm".
+`\;`, hay thậm chí `\!` sẽ tạo ra một khoảng trống có 'độ rộng âm'.
 
 Trong số ít trường hợp, ví dụ khi ta tạo trang bìa, ta cần phải thêm những
 khoảng trống có kích thước cụ thể. Ta có thể dùng `\hspace` (khoảng trống theo

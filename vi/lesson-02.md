@@ -9,6 +9,9 @@ toc-description: "Hệ thống TeX và trình soạn thảo mã LaTeX"
 
 # Làm việc với LaTeX
 
+<span class="summary">Bài này nói về các hệ thống TeX thường gặp, cũng như các
+trình soạn thảo mã LaTeX thông dụng.</span>
+
 Không giống nhiều chương trình máy tính khác, LaTeX không phải là một chương
 trình bao gồm 'tất cả mọi thứ'. Thay vào đó, có nhiều chương trình khác nhau
 hoạt động cùng nhau. Ta có thể chia chúng thành hai thứ mà bạn cần:
@@ -51,9 +54,9 @@ Một trình sửa mã nguồn cơ bản, [TeXworks](https://tug.org/texworks), 
 phối cùng với TeX Live và MikTeX trong Windows và Linux, và
 [TeXShop](https://pages.uoregon.edu/koch/texshop/) được phân phối trong MacTeX.
 
-Đối với bất kỳ trình sửa mã nguồn nào, chúng tôi khuyên bạn nên cài đặt nó
-_sau_ khi cài đặt hệ LaTeX, vì khi đó trình sửa mã nguồn có thể tự 'tìm' được
-hệ LaTeX và tự thiết lập các cài đặt đúng cách.
+<p class="hint">Đối với bất kỳ trình sửa mã nguồn nào, chúng tôi khuyên bạn nên
+cài đặt nó <i>sau</i> khi cài đặt hệ LaTeX, vì khi đó trình sửa mã nguồn có thể
+tự 'tìm' được hệ LaTeX và tự thiết lập các cài đặt đúng cách.</p>
 
 ## Làm việc trực tuyến
 
@@ -66,7 +69,7 @@ Một số trang kết hợp LaTeX với những chức năng thường thấy �
 văn bản, trong khi các trang còn lại cho bạn sửa mã nguồn trực tiếp.
 
 Có những trang cho phép bạn chạy LaTeX mà không cần đăng nhập, và chúng tôi sẽ
-sử dụng một trong số đó, [LaTeX CGI](https://latexcgi.xyz), để cho bạn
+sử dụng một trong số đó, [TeXLive.net](https://texlive.net), để cho bạn
 chính sửa và test các ví dụ ở đây. Để có một hệ thống đầy đủ hơn, bạn cần phải
 đăng ký tài khoản với những trang web như vậy &ndash; khi đó bạn có thể lưu lại
 tệp của mình và cũng tránh làm cho trang bị overload. Chúng tôi đã thêm các

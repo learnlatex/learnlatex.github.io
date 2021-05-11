@@ -16,7 +16,7 @@ There are several ways to access the documentation of a package or class.
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeXLive or MikTeX) and included
+If you've installed a TeX distribution (_e.g._, TeX Live or MiKTeX) and included
 the documentation when you installed it you can access the locally saved
 documentation using the `texdoc` command line tool. Using:
 
@@ -29,9 +29,9 @@ using:
 
 `texdoc -l` < _pkg_ >
 
-## texdoc.net
+## texdoc.org
 
-This is a [website](https://texdoc.net/) which works similarly to the `texdoc` utility. You can search
+This is a [website](https://texdoc.org/) which works similarly to the `texdoc` utility. You can search
 for documentation they have available just like you would do with `texdoc -l`
 and then choose from among the results.
 

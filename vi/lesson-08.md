@@ -7,7 +7,10 @@ toc-anchor-text: "Bảng"
 toc-description: "Những điều cơ bản khi làm việc với bảng"
 ---
 
-# Bảng trong LaTeX
+# Bảng
+
+<span class="summary">Bài này giải thích các cách thêm bảng biểu vào văn bản,
+cũng như một vài cách tùy biến bảng đơn giản.</span>
 
 ## Bảng cơ bản
 
@@ -26,7 +29,7 @@ bảng trong LaTeX và không được thêm vào LaTeX mặc định chỉ vì 
 các cột được căn ra sao. Điều này được thực hiện trong một đối số bắt buộc,
 thường được gọi là phần khai báo bảng, cho môi trường `tabular`. Ta dùng các ký
 tự để ký hiệu các cột &ndash; các ký tự này được gọi là các ký tự khai báo hay
-các "kiểu cột". Những kiểu cột được định nghĩa sẵn là:
+các 'kiểu cột'. Những kiểu cột được định nghĩa sẵn là:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 

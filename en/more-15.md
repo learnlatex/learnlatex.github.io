@@ -30,14 +30,14 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 \end{document}
 ```
 
-Here the error will be reported on line 11
+Here the error will be reported on line 12
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Although the real error is on line 9 as shown by the context lines:
+Although the real error is on line 10 as shown by the context lines:
 
 
 ```
@@ -106,7 +106,7 @@ l.5 Text_word  $\alpha
 Some errors, especially errors that are not detected until the end of the file,
 do not generate an error prompt but just give a warning in the log.
 
-If you try this example using the LaTeX CGI server it will return a PDF by default;
+If you try this example using the TeXLive.net server it will return a PDF by default;
 to see the error message in the log add `%!TeX log`.
 
 ```latex
@@ -123,7 +123,7 @@ to see the error message in the log add `%!TeX log`.
 In this example the size change was mistakenly ended with `)` rather
 than `}`. This is not detected until the end of the file when TeX
 detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{` It can not detect the actual
+line at which the group was opened `{`. It can not detect the actual
 error as the `)` is seen as "normal text".
 
 ```

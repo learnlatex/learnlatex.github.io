@@ -9,8 +9,12 @@ toc-description: "Cơ sở dữ liệu về các tài liệu tham khảo"
 
 # Phần tài liệu tham khảo
 
+<span class="summary">Bài này sẽ giới thiệu các thao tác cơ bản với các dữ liệu
+về các tài liệu được trích dẫn/tham khảo, cũng như cách sử dụng chúng trong văn
+bản.</span>
+
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre1": {
     "pre0": "learnlatex.bib"
    },
@@ -27,9 +31,9 @@ ta thường lấy thông tin đó từ một hoặc nhiều tệp bên ngoài. 
 trữ các thông tin quan trọng về các tài liệu được trích dẫn, v.v...; các thông
 tin được lưu trữ sao cho trình dịch có thể hiểu được. Việc sử dụng một hay nhiều
 tệp ngoài lưu trữ thông tin giúp bạn dễ dàngtái sử dụng thông tin và tránh việc
-phải thực hiện định dạng kiểu chữ "bằng tay".
+phải thực hiện định dạng kiểu chữ 'bằng tay'.
 
-Những tệp lưu trữ như vậy thường được gọi là các "tệp BibTeX" và có đuôi tệp là
+Những tệp lưu trữ như vậy thường được gọi là các 'tệp BibTeX' và có đuôi tệp là
 `.bib`. Chúng thường bao gồm một hay nhiều mục, mỗi mục cho thông tin về một tài
 liệu tham khảo &ndash; đó là một chuỗi các miền thông tin. Hãy cùng xem một ví
 dụ:
@@ -65,8 +69,8 @@ về một cuốn sách &ndash; bài báo (`article`) và sách (`book`) chính 
 mục phổ biến nhất. Mỗi mục bắt đầu bằng `@` như ta thấy ở trên, và tất cả các
 thông tin được lưu trong một cặp ngoặc nhọn.
 
-Các vùng thông tin được cho dưới dạng "tùy biến = giá trị" (key=value), trừ
-thông tin đầu tiên mà ta gọi là "tên" của mục này. Ta có thể dùng bất kỳ tên nào
+Các vùng thông tin được cho dưới dạng 'tùy biến = giá trị' (key=value), trừ
+thông tin đầu tiên mà ta gọi là 'tên' của mục này. Ta có thể dùng bất kỳ tên nào
 đặt cho cái tên này; nó chỉ là một cái nhãn để ta tạo đường dẫn trong văn bản,
 nhưng trong ví dụ trên ta dùng tên tác giả và năm xuất bản &ndash; đây là cách
 làm phổ biến nhất.
@@ -86,7 +90,7 @@ nữa. Nếu phần tài liệu tham khảo có bao gồm DOI (Digital Object Id
 có thể cần đến [doi2bib](https://doi2bib.org) để dễ dàng có được mục BibTeX.
 Đương nhiên, nhớ kiểm tra lại xem mục BibTeX có chính xác không!
 
-Trong các phần tiếp theo ta sẽ dùng tệp BibTeX ví dụ ở trên. Ta đã "lưu" nó dưới
+Trong các phần tiếp theo ta sẽ dùng tệp BibTeX ví dụ ở trên. Ta đã 'lưu' nó dưới
 tên `learnlatex.bib`.
 
 ## Dùng thông tin từ các tệp BibTeX
@@ -106,13 +110,13 @@ khi BibTeX có thể được sử dụng không cần gói nào hoặc với g�
 
 Chạy một công cụ thứ hai cùng với LaTeX được hỗ trợ bởi hầu hết trình mã nguồn
 khác nhau. Đối với các ví dụ ở đây, có một số đoạn mã được chạy trong quá trình
-biên dịch. Trình mã nguồn của bạn có thể có một nút "tổng biên dịch" mà làm mọi
-thứ cần thiết, hoặc bạn có thể phải chọn chạy BibTeX hay Biber "bằng tay" giữa
+biên dịch. Trình mã nguồn của bạn có thể có một nút 'tổng biên dịch' mà làm mọi
+thứ cần thiết, hoặc bạn có thể phải chọn chạy BibTeX hay Biber 'bằng tay' giữa
 các lần chạy LaTeX.
 
 Cấu trúc và định dạng của các mục trong phần tài liệu tham khảo không phụ thuộc
 vào các thông tin trong tệp BibTeX; thay vào đó nó được định nghĩa bởi một thứ
-gọi là "kiểu bibliography". Ta sẽ thấy rằng các kiểu này hoạt động có hơi khác
+gọi là 'kiểu bibliography'. Ta sẽ thấy rằng các kiểu này hoạt động có hơi khác
 nhau một chút giữa `natbib` và `biblatex`, nhưng ý tưởng chính vẫn giữ nguyên:
 ta có thể chọn cách các mục tài liệu tham khảo được in ra trong văn bản của mình.
 
@@ -248,7 +252,7 @@ cũng như một hệ thống sắp xếp đầy đủ hơn, bạn có thể c�
 Thử thao tác với cả `natbib` và `biblatex`. Đối với `natbib`, bạn cần phải chạy
 (theo thứ tự) LaTeX, BibTeX, LaTeX và LaTeX; còn đối với `biblatex` thì bạn cần
 chạy LaTeX, Biber, LaTeX. Hãy tìm hiểu cách để chạy theo trình tự này trong
-trình mã nguồn (nếu bạn dùng Overleaf hay LaTeX Online thì quá trình này được
+trình mã nguồn (nếu bạn dùng Overleaf hay TeXLive.net thì quá trình này được
 thực hiện tự động).
 
 Xem điều gì sẽ xảy ra khi bạn thêm những mục thông tin mới và những tham chiếu

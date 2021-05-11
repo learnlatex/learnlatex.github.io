@@ -10,11 +10,8 @@ permalink: /CONTRIBUTING
 Thanks for considering contributing to learnlatex.org: feedback, fixes and
 ideas are all useful.
 
-## ChangeLog, commit messages and authors
+## Commit messages and authors
 
-Please note any significant change to the content of questions in
-[`CHANGELOG.md`](CHANGELOG.md), including which lesson is changed in the
-format `L-<number>`.
 
 Commit messages where the content of a single lesson is changed should start
 with `L-<name>`. Changes to the _content_ of lessons should always be made in
@@ -62,12 +59,15 @@ the site useful. There are a few things to watch out for
 
 ## Language
 
-At present, we have full content only in English, but the longer-term plan is
-to add additional languages: notice that the content is within a `/en/` tree.
-There are sample translations under `de`, `fr` and `pt` but only the page titles are translated until the English version is more stable.
+We already have have full content in several languages.  Some
+in-progress partial translations are also visible in the git sources
+of this site and in several forks.
 
 For the avoidance of doubt, we are using US English spelling (and idiom)
 on the site, as this is the most widely-understood approach.
+
+See [The Style Guide](STYLEGUIDE.md) for other points of style for the English
+version.
 
 If you do plan to contribute a translation then please contact the
 site maintainers by opening an
@@ -79,7 +79,9 @@ may be added that need not be translations of the English text, but
 have information specific to the language being used.
 
 The translation should be placed in a two-letter directory using the
-ISO 639-1 language code.  The yml `langs` array in `_config.yml` will
-need to be extended to include the language.
+ISO 639-1 language code, of if necessary, also use the script code such
+as `zh-Hans` for Chinese using the simplified script.  The YAML array
+in `_data/languages.yml` will need to be extended to include the
+language.
 
 See also the [specific guidelines for translators](TRANSLATIONS.md).

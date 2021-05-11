@@ -10,7 +10,7 @@ toc-description: "दस्तऐवजाचे लहान तुकड्य
 # दीर्घ दस्तऐवजांची रचना
 
 <script>
-preincludes = {
+runlatex.preincludes = {
  "pre0": {
     "pre1": "front.tex",
     "pre2": "pref.tex",
@@ -62,10 +62,10 @@ preincludes = {
 \title{A Sample Book}
 \author{John Doe \and Joe Bloggs}
 
-\IfFileExists{append.aux}
+\IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-%  front,
+  front,
 %  chap1,
   chap2,
 %  append

@@ -1,0 +1,35 @@
+
+<!-- {% raw %} -->
+<select id="ace-theme"></select>
+
+<script>
+  var themesel=document.getElementById('ace-theme');
+  themesel.disabled=!rlallowcookies;
+  var themes=[
+      ["Bright",
+       ['Chrome', 'Clouds', 'Crimson Editor', 'Dawn', 'Dreamweaver', 'Eclipse', 'GitHub', 'IPlastic', 
+	     'Solarized Light', 'TextMate', 'Tomorrow', 'Xcode', 'Kuroir', 'KatzenMilch', 'SQL Server']],
+      ["Dark",
+       ['Ambiance', 'Chaos', 'Clouds Midnight', 'Dracula', 'Cobalt', 'Gruvbox', 'Green on Black',
+	    'idle Fingers', 'krTheme', 'Merbivore', 'Merbivore Soft', 'Mono Industrial', 'Monokai',
+		'Nord Dark', 'Pastel on dark', 'Solarized Dark', 'Terminal', 'Tomorrow Night', 'Tomorrow Night Blue',
+		'Tomorrow Night Bright', 'Tomorrow Night 80s', 'Twilight', 'Vibrant Ink']]
+      ];
+  var sel="";
+  for (let g=0;g<themes.length;g++) {
+      sel=sel+"<optgroup label=\"" + themes[g][0] + "\">" ;
+      var values=themes[g][1];
+      for(let i = 0; i < values.length; i++) {
+	  var v="ace/theme/" + values[i].toLowerCase().replace(/ /g,'_');
+          sel=sel+"<option value=\"" + v + "\"" +
+	      (v==rlacetheme ? " selected>" : ">") +
+	      values[i] + "</option>";
+      }
+      sel=sel+"</optgroup>";
+  }
+  themesel.innerHTML=sel;
+  themesel.addEventListener('change', function() {
+      createCookie('runlatex-acetheme',themesel.options[themesel.selectedIndex].value,100);
+  });
+</script>
+<!-- {% endraw %} -->
