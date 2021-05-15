@@ -1,6 +1,8 @@
 <ul 
   class="lessons-toc">
-  {% assign mrdigits="०,१,२,३,४,५,६,७,८,९,१०,११,१२,१३,१४,१५,१६,१७" | split: "," %}
+  {% if site.data.translations['navigational-elements_digits'][page.lang] %}
+  {%  assign localdigits=site.data.translations['navigational-elements_digits'][page.lang] | split: "," %}
+  {% endif %}
   {% assign splitprefix = include.prefix | split: "/" %}
   {% assign l = splitprefix[0] %}
   {% for page in site.pages | sort: 'path' %}
@@ -19,9 +21,9 @@
               {% else %}
                 {% assign pp = "-" | prepend: include.prefix %}
               {% endif %}
-              {% if l == "mr" %}
+              {% if localdigits %}
                 {% assign pageno = page.path | replace: '.md','' | replace: pp ,'' | floor %}
-                {{ mrdigits[pageno] }}
+                {{ localdigits[pageno] }}
               {% else %}
                 {{ page.path | replace: '.md','' | replace: pp ,'' }}
               {% endif %}</span>
