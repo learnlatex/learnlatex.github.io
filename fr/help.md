@@ -121,10 +121,10 @@ de l'exemple dans un document vierge.
 
 ### En cas de problème&hellip;
 
-Our examples are based around using an up-to-date LaTeX installation. They all 
-work with both of our online demonstration systems, so if you get errors with 
-the examples we provide, you might want to check if your LaTeX system is 
-up-to-date.
+Nos exemples sont basés sur une installation LaTeX à jour. Tous fonctionnent 
+avec tous nos systèmes de démonstration en ligne, aussi si vous obtenez
+des erreurs avec les exemples fournis, vous devriez vérifier si votre système
+LaTeX est à jour.
 
 ---
 
@@ -176,12 +176,6 @@ utilisant `pdfjs` dans le commentaire ci-dessus. Pour le débogage, vous pouvez
 parfois souhaiter que le fichier journal soit renvoyé, même si le document
 produit un PDF sans erreur. Cela peut être demandé en utilisant `log` dans ce
 commentaire.
-
-As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
-page. The Settings are specific to each browser, so for example you
-may choose to use the default `pdfjs` setting on your mobile device,
-but use `pdf` on your desktop browser to use its default PDF rendering.
 
 Au lieu d'utiliser un commentaire `% !TeX`, vous pouvez choisir le comportement
 par défaut la [page de choix des paramètres](settings). Ces paramètres sont
