@@ -48,6 +48,9 @@ thêm số trang tự động.
 Xem tệp output `first.pdf` với một trình đọc PDF. Chúc mừng, bạn đã biên dịch
 thành công tệp LaTeX đầu tiên!
 
+Nếu bạn muốn nhận output dạng HTML thay vì PDF, đọc
+[Hướng dẫn sử dụng trang](./help) để xem cách làm như vậy.
+
 ## Xử lý lỗi
 
 Nhiều khi quá trình biên dịch có thể sinh lỗi. Kiểm tra bạn đã gõ lại mỗi dòng

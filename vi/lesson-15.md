@@ -100,7 +100,10 @@ bộ thông báo lỗi là một việc quan trọng.
 Chú ý rằng một số trình sửa mã nguồn hiện những bản 'tóm tắt' của thông báo lỗi.
 Những tóm tắt này có thể dễ gây hiểu nhầm, ví dụ như
 
-`line 8: undefined command: ...\mycommand`
+```
+line 8: undefined command: ...\mycommand
+```
+{: .noedit :}
 
 vì nó làm cho ta tưởng rằng `\mycommand` không được định nghĩa.
 
