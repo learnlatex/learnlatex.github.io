@@ -43,6 +43,9 @@ Vea el archivo de salida `first.pdf` con
 cualquier programa que prefiera para visualizar archivos PDF.
 El resultado es estupendo; ¡felicitaciones!
 
+Si desea obtener como salida un archivo HTML en lugar de un PDF, consulte la sección de
+[ayuda](./help) para ver cómo hacerlo.
+
 ## Tratando con errores
 
 Es posible cometer errores.

@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Citations and references"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
-toc-anchor-text: "Citations & references"
-toc-description: "Working with reference databases."
+lang: "ca"
+title: "Cites i referències bibliogràfiques"
+description: "Aquesta lliçó explica les bases de les referències bibliogràfiques. Aprendràs a construir la teva pròpia base de dades i com utilitzar-les en documents utilitzant algun dels dos mètodes principals disponibles."
+toc-anchor-text: "Cites i referències bibliogràfiques"
+toc-description: "Treballar amb bases de dades bibliogràfiques."
 ---
 
-# Citations and references
+# Cites i referències bibliogràfiques
 
 <script>
 runlatex.preincludes = {
@@ -21,19 +21,13 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
+  class="summary">Aquesta lliçó explica les bases de les referències bibliogràfiques. Aprendràs a construir la teva pròpia base de dades i com utilitzar-les en documents utilitzant algun dels dos mètodes principals disponibles.</span>
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+Per fer cites bibliogràfiques, encara que podries incloure les referències directament de les fonts, normalment s'agafarà aquesta informació d'un o més arxius externs. Aquests arxius són bases de dades de referències que contenen informació en un format de fàcil tractament. Utilitzar una o més bases de dades de referències et permetrà reutilitzar la informació i t'evitarà haver d'afegir-la manualment.
 
-## Reference databases
+## Bases de dades de referències bibliogràfiques
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+Les bases de dades de referències es coneixen normalment com a 'fitxers BibTeX' i tenen extensió `.bib`. Per cada referència contenen una o més entrades, que inclouen diferents camps. Anem a veure un exemple.
 
 <!-- {% raw %} -->
 ```bibtex
@@ -61,67 +55,32 @@ within each entry there are a series of fields. Let us look at an example.
 <!-- {% endraw %} -->
 
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+Això és una entrada d'un article i una altra entrada d'un llibre; són sens dubte els tipus més comuns. Cada entrada a la base de dades comença amb `@`, com es veu, i tota la informació queda abarcada per les claus.
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
+Els diferents camps que conté són parelles clau-valor, excepte el primer camp, que es correspon amb el que s'anomena la 'clau': el 'nom' del registre. Pots posar el que vulguis, doncs tan sols és una etiqueta, i en aquest cas hem escollit utilitzar el nom de l'autor i l'any: és una elecció habitual.
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
+Els camps que es necessita especificar dependrà del tipus de registre, però la majoria dels camps són bastant obvis. Potser hauràs notat que en el camp `author` cada autor està 
+separat per la partícula `and`. Això és _essencial_: l'arxiu _final_ necessita conèixer qui és cadascun dels autors. Potser hauràs notat igualment que en el títol de l'article algunes parts estan entre claus. Les claus s'utilitzen per evitar que s'apliqui un canvi de majúscules o minúscules.
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
+Editar manualment els arxius `.bib` és bastant tediós, i per això la majoria de la gent utilitza un editor específic. [JabRef](https://www.jabref.org) s'utilitza àmpliament i és multiplataforma, però hi ha altres aplicacions disponibles. Si la referència conté un DOI (Identificador d'Objecte Digital), potser voldràs probar [doi2bib](https://doi2bib.org) per tal d'obtenir fàcilment el registre BibTeX. Però abans que res assegura't de disposar de la informació correcta!
 
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
-`learnlatex.bib`.
+Aquí utilitzarem, per als exemples que segueixen, la senzilla base de dades que hem definit més amunt: l'hem 'guardat' en el fitxer `learnlatex.bib`.
 
-## Transferring information from the database
+## Transferint informació des de la base de dades
 
-To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which creates a file with a
-list of the references that your document cites.  Second, run a
-program that takes information from the database of references, picks
-out the ones that you use, and puts them in order.  Finally, compile
-your document again so that LaTeX can use that information to resolve
-your citations. Usually it will require at least two compilations to
-resolve all the references.
+Per tal de què la informació bibliogràfica es transmeti al teu document, s'han de seguir tres etapes. En primer lloc compilaràs el teu document amb LaTeX, i en aquesta etapa es crea l'arxiu amb la llista de les referències citades en el document. En segon lloc s'haurà d'executar un programa que llegeix la informació de la base de dades, es selecciona les que utilitzes i les ordena. Finalment tornaràs a compilar el document, i d'aquesta forma LaTeX podrà utilitzar la informació obtinguda per posar referències a les teves cites. Normalment es necessitarà compilar almenys dues vegades per tal d'obtenir totes les referències del document.
 
-For the second step, there are two systems in wide use: BibTeX and
-Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
-BibTeX is used with either no packages at all or with `natbib`.
+Per al segon pas, són dos els sistemes que s'utilitzen habitualment: BibTeX i Biber. Biber només es pot utilitzar amb el paquet `biblatex`, mentre que BibTeX s'utilitza amb el paquet `natbib` o bé amb cap.
 
-Running a second tool as well as LaTeX is handled in different ways by different
-editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go.
-Your editor might have a single 'do stuff' button or you might have to
-choose to run BibTeX or Biber manually between LaTeX runs.
+Utilitzar una segona eina, juntament amb LaTeX, es gestiona de diferents maneres segons els diferents editors. Per als nostres exemples en línia hi ha una sèrie de scripts en segon pla que fan tota la feina de cop. El teu editor pot tenir un simple botó 'executa', o potser et deixarà escollir entre BibTeX o Biber manualment quan compiles LaTeX.
 
-The format of citations and references is independent of your BibTeX database,
-and is set by what is known as a 'style'. We will see that these work slightly
-differently in the BibTeX workflow and `biblatex`, but the general idea remains:
-we can choose how citations appear.
+El format de les cites i referències és independent de la teva base de dades BibTeX i es configura amb el que es coneix com 'estil'. Veurem que això funciona de forma lleugerament diferent en els paquets `natbib` i `biblatex`, però la idea és la mateixa: podem elegir com es presenten les cites.
 
-## The BibTeX workflow with `natbib`
+## El procés de treball BibTeX amb `natbib`
 
-Whilst it is possible to insert citations into a LaTeX document without
-any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create different types of citation and
-has a lot of styles available.
+Encara que és possible inserir cites a un document de LaTeX sense carregar cap paquet, seria una opció força limitada. Millor utilitzar el paquet `natbib`, que ens permetrà crear diferents tipus de cites i té molts estils disponibles.
 
-The basic structure of our input is as shown in this example.
+L'estructura bàsica del nostre document es mostra en aquest exemple.
 
 ```latex
 \documentclass{article}
@@ -129,132 +88,62 @@ The basic structure of our input is as shown in this example.
 \usepackage{natbib}
 
 \begin{document}
-The mathematics showcase is from \citet{Graham1995}, whereas
-there is some chemistry in \citet{Thomas2008}.
+L'exemple de matemàtiques està extret de \citet{Graham1995}, mentre que
+també hi ha un exemple de química \citet{Thomas2008}.
 
-Some parenthetical citations: \citep{Graham1995}
-and then \citep[p.~56]{Thomas2008}.
+Exemple de citacions entre parèntesi: \citep{Graham1995}
+i també \citep[p.~56]{Thomas2008}.
 
 \citep[See][pp.~45--48]{Graham1995}
 
-Together \citep{Graham1995,Thomas2008}
+Ho posem junt \citep{Graham1995,Thomas2008}
 
 \bibliographystyle{plainnat}
 \bibliography{learnlatex}
 \end{document}
 ```
 
-You can see that we can cite different entries in the database by giving their
-key. The `natbib` package offers both textual and parenthetical citation styles,
-`\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line; here we've used the `plainnat` style. The
-bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use; this is a comma-separated list of names.
+Pots veure que podem citar diferents entrades de la base de dades donant la seva clau. El paquet `natbib` disposa de dos estils de cites: les cites textuals i les cites entre parèntesi, `\citet` i `\citep`, respectivament. L'estil de referència es selecciona en la línia `\bibliographystyle`; en el nostre exemple és l'estil `plainnat`. S'afegeix la bibliografia gràcies a la línia `\bibliography` que pren com a argument la base de dades utilitzada; si són vàries, els seus noms estan separats per comes.
 
-Page references can be added to the citation with an optional argument.
-If two optional arguments are given, the first goes in front of the citation
-label for a short note and the second after the label for a page reference.
+Es pot afegir una referència a la pàgina d'un registre, utilitzant un argument opcional. Si donem dos arguments opcionals, el primer es posarà davant de l'etiqueta de la cita com una petita nota; i el segon anirà darrera l'etiqueta com una referència de pàgina.
 
-The setup above uses author-year style, but we can make use of numeric
-citations. That is done by adding the `numbers` option to the `natbib` line.
+La configuració del nostre exemple utilitza l'estil autor-any, però podem fer ús de les cites enumerades. Això s'aconsegueix afegint l'opció `numbers` en la línia corresponent a `natbib`.
 
-## The `biblatex` workflow
+## El procés de treball amb `biblatex`
 
-The `biblatex` package works slightly differently to `natbib`, as we select
-the databases in the preamble but print it in the document body. There are
-some new commands for this.
+El paquet `biblatex` funciona una mica diferent que `natbib`, ja que encara que les cites apareixen en el cos del document, la base de dades es selecciona en el preàmbul. Per fer-ho hi ha diferents comandes.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[style=authoryear]{biblatex}
-\addbibresource{learnlatex.bib} % file of reference info
+\addbibresource{learnlatex.bib} % fitxer amb la informació de referència
 
 \begin{document}
-The mathematics showcase is from \autocite{Graham1995}.
+L'exemple de matemàtiques està extret de \autocite{Graham1995}.
 
-Some more complex citations: \parencite{Graham1995} or
-\textcite{Thomas2008} or possibly \citetitle{Graham1995}.
+Algunes citacions més complexes: \parencite{Graham1995} o
+\textcite{Thomas2008} o possiblement \citetitle{Graham1995}.
 
 \autocite[56]{Thomas2008}
 
 \autocite[See][45-48]{Graham1995}
 
-Together \autocite{Thomas2008,Graham1995}
+Ho posem junt \autocite{Thomas2008,Graham1995}
 
 \printbibliography
 \end{document}
 ```
 
-Notice that `\addbibresource` _requires_ the full database filename, whereas
-we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for its citation commands, but these are
-all quite easy to guess.
+Fixa't que `\addbibresource` _necessita_ conèixer el nom del fitxer de tota la base de dades, a diferència del que passava amb `natbib`, on podíem ometre l'extensió `.bib` quan utilitzàvem `\bibliography`. Fixa't igualment que `biblatex` utilitza noms més llargs per a les comandes de cites, però d'altra banda és més fàcil endivinar quin és el seu ús.
 
-Again, short text before and after the citation can be inserted with
-the optional arguments. Note that the page numbers need not be prefixed
-with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
-prefix.
+Igual que abans, es pot afegir un petit text abans i després de la cita utilitzant els arguments opcionals. Fixa't que ara no es necessiten els prefixos `p.~` o `pp.~` per citar les pàgines, `biblatex` afegeix automàticament el prefix adequat.
 
+A `biblatex`, es selecciona l'estil de referència en carregar el paquet. En aquest exemple hem utilitzat `authoryear`, però existeix també un estil `numeric` i també hi ha disponibles d'altres estils.
 
-In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authoryear`, but there is a `numeric` style and many others are
-also available.
+## Exercicis
 
-## Choosing between the BibTeX workflow and `biblatex`
+Experimenta els exemples que se't proposen tant amb el paquet `natbib` com `biblatex`. Amb `natbib` necessitaràs executar LaTeX, després BibTeX, LaTeX i un altre cop LaTeX; amb `biblatex` hauràs d'executar LaTeX, Biber i LaTeX un altre cop. Investiga com fer tot això amb el teu editor de LaTeX en línia.
 
-Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
-files and can produce structurally similar output in the document, they use
-completely different ways to produce this result. That means that there are
-some differences between the two approaches that may help you choose which
-one works best for you.
-
-In the BibTeX workflow the bibliography style is ultimately decided
-by a `.bst` file which you select with the `\bibliographystyle` command.
-`biblatex` does not use `.bst` files and uses a different system.
-If you are using a template that comes with a `.bst` file or are given a `.bst`
-file for your project, you must use the BibTeX workflow and cannot use
-`biblatex`.
-
-The different approach `biblatex` takes implies that you can modify the output
-of the bibliography and citation commands directly from your document preamble
-using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
-hand usually require working with these external files and need knowledge of
-the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customize than the BibTeX workflow.
-
-In `biblatex` it is generally easier to implement more elaborate citation
-styles with a wider array of different citation commands. It also offers more
-context-dependent features. Roughly speaking this is less interesting for
-the styles common in many STEM subjects, but becomes relevant for some more
-complex styles in some areas of the humanities.
-
-BibTeX can only sort US-ASCII characters correctly and relies on workarounds
-to provide US-ASCII-based sorting for non-US-ASCII characters.
-With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
-is usually a better choice if you want to sort your bibliography in a
-non-ASCII/non-English order.
-
-Having been around for much longer than `biblatex`, the BibTeX workflow is
-more established than `biblatex`, meaning that many publishers and journals
-expect bibliographies generated via the BibTeX workflow. Those publishers
-cannot or generally do not accept submissions using `biblatex`.
-
-The bottom line is: Check the author/submission guidelines if you are
-submitting to a journal or publisher. If you are given a `.bst` file, you must
-use the BibTeX workflow. If you want a relatively simple bibliography and
-citation style and only need English US-ASCII-based sorting, the BibTeX workflow
-should suffice. If you need a more complex citation style, non-English sorting
-or want easier access to citation and bibliography style customisation features,
-you will want to look into using `biblatex`.
-
-## Exercises
-
-Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
-to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and TeXLive.net
-automation.
-
-See what happens when you create new database entries and new citations. Add
-a citation that's not in the database and see how it appears. Experiment
-with `natbib`'s `numeric` and `biblatex`'s `style=numeric` option.
+Mira què passa quan es creen nous registres a la base de dades i noves cites en el teu document. Afegeix una cita que no estigui en la teva base de dades per veure què passa.
+Prova l'opció `numeric` en ambdós paquets.

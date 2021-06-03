@@ -20,8 +20,7 @@ contém meios de buscar suporte ao usuário.
 O [código fonte deste website](https://github.com/learnlatex/learnlatex.github.io/)
 está no [GitHub](https://github.com/learnlatex/), por favor veja sobre
 [como contribuir](../CONTRIBUTING) (em inglês apenas) e a [licença](../LICENSE)
-(em inglês apenas) para mais detalhes.  Moddificações recentes são listadas no
-[log de modificações](../CHANGELOG).
+(em inglês apenas) para mais detalhes.
 
 Você também pode [reportar um problema no GitHub](https://github.com/learnlatex/learnlatex.github.io/issues)
 ou nos [mandar um e-mail](mailto:texfaq@texfaq.org) com sugestões.
