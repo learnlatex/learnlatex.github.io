@@ -1,39 +1,42 @@
 ---
 layout: "page"
 lang: "mr"
-title: Site Settings
+title: प्राधान्ये
 permalink: /mr/settings
 ---
-# Site Settings (User Preferences)
+# संकेतस्थळावरील प्राधान्ये
 
-## Accept or Delete Cookies
+## स्मृती तयार करण्यासाठीची परवानगी
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+स्मृतींमुळे वापरकर्त्यांच्या काही आवडीनिवडी संकेतस्थळातर्फे जतन करून ठेवल्या जातात व वापरकर्त्यांना
+संकेतस्थळाचा सुलभ वापर करता येतो. आमच्या संकेतस्थळातर्फे कोणत्याही स्मृती परवानगीशिवाय तयार
+केल्या जात नाहीत, परंतु तुम्हाला काही स्मृती तयार करून संकेतस्थळावरील अभ्यासक्रमाचा अधिक सोपा
+वापर करता येईल.
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
-
+जर अशा स्मृती तयार करण्याची परवानगी आम्हाला देण्याकरिता पुढील कळ दाबा.
 
 {% include settings-accept.html 
-   accept="Accept Cookies"
-   reset= "Reset: Delete All Cookies"
+   accept="स्मृती तयार करा"
+   reset= "स्मृती पुसून टाका"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+## फलित दाखवण्याची मूलभूत आज्ञावली
+
+TeXLive.net ह्या आज्ञावलीने `% !TeX` ह्या प्रकारच्या सूचना नसताना वापरावी अशी मूलभूत आज्ञावली.
 
 {% include settings-return.html %}
 
 
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+## मूलभूत चालक
+
+TeXLive.net ह्या आज्ञावलीतर्फे अथवा ओव्हरलीफतर्फे `% !TeX` अशी कोणतीही विशिष्ट सूचना
+वापरली नसताना जो चालक वापरावा त्याविषयीचे तुमचे प्राधान्य. (`-dev` व `context` हे पर्याय
+ओव्हरलीफसह वापरले जाऊ नयेत.)
 
 {% include settings-engine.html %}
 
 
-## Editor Theme
-The theme used by the embedded ACE editor.
+## मजकूर-संपादकाचा देखावा
+एस ह्या संकेतस्थळावर समाविष्ट मजकूर-संपादकाचा मूलभूत देखावा निवडणे.
 
 {% include settings-acetheme.html %}
