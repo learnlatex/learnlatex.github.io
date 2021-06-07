@@ -1,17 +1,17 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Dealing with errors"
-description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
-toc-anchor-text: "More on: Dealing with errors"
+title: "अधिक माहिती: अडचणी"
+description: "ह्या प्रकरणात आपण काही आणखी अडचणींची ओळख करून घेणार आहोत."
+toc-anchor-text: "अधिक माहिती: अनपेक्षित गोष्टींचा सामना करणे"
 ---
 
-## Errors reported at ends of environments
+## क्षेत्रांच्या अखेरीस दाखवल्या जाणाऱ्या अडचणी
 
-Some environments (notably `amsmath` alignments and `tabularx` tables)
-scan the whole environment body before processing the content. This means that
-any error within the environment is reported on the last line. However, as seen in the
-main lesson, TeX's display of the error context should still pinpoint the error location.
+काही क्षेत्रे (उदा. `amsmath` व `tabularx`) आतील मजकूर पाहण्यापूर्वी संपूर्ण क्षेत्राची पाहणी
+करतात. अर्थात मजकुरात कोणतीही अडचण आली, तरी ती क्षेत्राच्या शेवटच्या ओळीवर दाखवली
+जाते. तरीही आपण मुख्य प्रकरणात पाहिल्याप्रमाणे टेक्-ची अडचण दाखवण्याची पद्धत पाहता नेमकी
+अडचणीची जागा कळू शकते.
 
 ```latex
 \documentclass{article}
@@ -30,15 +30,14 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 \end{document}
 ```
 
-Here the error will be reported on line 11
+ह्या उदाहरणात ११व्या ओळीवर अडचण नोंदवली जाते.
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Although the real error is on line 9 as shown by the context lines:
-
+परंतु खरी अडचण पुढील ओळींमुळे दिसते.
 
 ```
 ! Undefined control sequence.
@@ -48,17 +47,15 @@ Although the real error is on line 9 as shown by the context lines:
 {: .noedit :}
 
 
-## Spurious errors due to earlier errors
+## आधीच्या अडचणींमुळे अनपेक्षित अडचणी
 
-When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edit the document
-and re-run. However if you scroll past the error or use an editor or
-online system that does this for you then TeX will try to recover;
-however this may lead to several more errors being reported.
+जेव्हा लाटेक् आज्ञापटलावरून चालवले जाते, तेव्हा त्याला अडचणीच्या ठिकाणी `x` म्हणून थांबवणे शक्य
+आहे. चालवणे थांबवल्यानंतर बीजधारिकेत आवश्यक ते बदल करून धारिका पुन्हा चालवल्यास फलित
+मिळते. परंतु लाटेक् चालवण्याकरिता जर तुम्ही एखादा मजकूर-संपादक अथवा महाजालावरील सेवा वापरत
+असाल, तर टेक् आणखी अडचणी दाखवू शकते, ज्या वास्तविक आज्ञावलीत आधी घडलेल्या चुकीचा परिणाम
+म्हणून उद्भवतात.
 
-So do not be too concerned about the _number_ of errors reported and
-always concentrate on fixing the first reported error.
-
+त्यामुळे अडचणींच्या संख्येमुळे घाबरू नका, कायम सर्वात आधी नोंदवलेल्या अडचणीवर लक्ष केंद्रित करा.
 
 ```latex
 \documentclass{article}
@@ -71,9 +68,10 @@ More text.
 \end{document}
 ```
 
-The error here is the underscore `_` which should be entered as `\_`.
+वरील आज्ञावलीतील अडचण `_` ह्या चिन्हामुळे उद्भवलेली आहे. हे चिन्ह वास्तविक `\_` असे लिहिले
+जायला हवे होते.
 
-TeX does report this correctly with the _first_ error message
+टेक् ह्या चुकीची अचूक नोंद पहिल्या अडचणीच्या वेळी घेते.
 
 ```
 ! Missing $ inserted.
@@ -85,10 +83,9 @@ l.5 Text_
 ```
 {: .noedit :}
 
-However if you scroll past the `?` prompt then TeX recovers by adding
-a `$` so the `_` is seen in math mode as a subscript. The math mode
-then continues until the `$` which ends math, so the following
-`\alpha` is seen in text mode generating another error
+परंतु `?` ह्या चिन्हासह तुम्ही टेक्-ला पुढे जायला सांगितलेत, तर ते `$` हे चिन्ह स्वतः घालून पुढील
+`_` ह्या चिन्हाचे अचूक आकलन करून घेते. ह्यामुळे सुरू झालेले गणित-क्षेत्र पुढील `$` येईपर्यंत चालू
+राहते व त्यामुळे वरील उदाहरणातील `\alpha` ह्या आज्ञेचा अर्थ लावला जाऊ शकत नाही.
 
 ```
 ! Missing $ inserted.
@@ -101,13 +98,14 @@ l.5 Text_word  $\alpha
 {: .noedit :}
 
 
-## Errors that do not trigger an error prompt
+## अशा काही चुका ज्या अडचणी दाखवत नाहीत
 
-Some errors, especially errors that are not detected until the end of the file,
-do not generate an error prompt but just give a warning in the log.
 
-If you try this example using the TeXLive.net server it will return a PDF by default;
-to see the error message in the log add `%!TeX log`.
+ज्या अडचणी दस्तऐवजांच्या शेवटापर्यंत ओळखल्या जात नाहीत, त्या अडचणींचे थांबे निर्माण करत नाहीत,
+त्या लॉग-धारिकेतून पाहिल्या जाऊ शकतात.
+
+पुढील आज्ञावली टेक्-लाईव्ह.नेट ह्या सेवेसह चालवून पाहिलीत तर तुम्हाला पीडीएफ्-फलित मिळेल. अडचण
+वाचण्याकरिता `%!TeX log` हे प्राचल बीजधारिकेत समाविष्ट करा.
 
 ```latex
 \documentclass{article}
@@ -115,16 +113,16 @@ to see the error message in the log add `%!TeX log`.
 
 \begin{document}
 
- Text {\large some large text) normal size?
+Text {\large some large text) normal size?
 
 \end{document}
 ```
 
-In this example the size change was mistakenly ended with `)` rather
-than `}`. This is not detected until the end of the file when TeX
-detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{` It can not detect the actual
-error as the `)` is seen as "normal text".
+वरील उदाहरणात आकार बदलण्याची आज्ञा चुकून `)` ह्या कंसासह संपवण्यात आली आहे. वास्तविक ती
+`}` ह्या कंसासह संपवली जायला हवी. हे धारिकेच्या शेवटीच टेक्-ला समजते की एका गटाची सुरुवात
+होऊन तो संपलेला नाही. लॉग-धारिकेत टेक् हे नोंदवते की असा गट नेमका कोणत्या ओळीवर सुरू झाला
+आहे. टेक् हे ओळखू शकत नाही की वापरकर्त्याकडून कंस चुकला आहे, कारण `)` हे टेक्-करिता विशेष चिन्ह
+नाही.
 
 ```
 (\end occurred inside a group at level 1)
