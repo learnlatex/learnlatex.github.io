@@ -4,6 +4,12 @@ title: "Sử dụng trang learnlatex.org"
 description: "Một vài nét khái quát về cách sử dụng và điều hướng trong hệ thống các bài trong trang learnlatex.org."
 permalink: /vi/help
 ---
+<script>
+  function acesettings() {
+      editors['pre0'].execCommand("showSettingsMenu");
+  }
+</script>
+
 
 # Sử dụng trang learnlatex.org
 
@@ -45,8 +51,8 @@ các thao tác với các đoạn mã ví dụ.
 Bạn có thể thay đổi giao diện của ACE (ví dụ chuyển sang chế độ tối) trong
 [Cài đặt trang](settings). Bạn cũng có thể thử các giao diện khác nhau bằng cách
 dùng <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> trên Mac) khi đang
-ở bất cứ ví dụ nào trong trang &ndash; nó sẽ mở một bảng cài đặt cho phép ta thử
-mọi cài đặt của ACE.
+ở bất cứ ví dụ nào trong trang &ndash; [nó sẽ mở một bảng cài đặt](javascript:acesettings())
+cho phép ta thử mọi cài đặt của ACE.
 
 Trang GitHub của ACE có một trang khá hữu ích về
 [danh sách các phím tắt](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
@@ -74,9 +80,8 @@ Nếu bạn đã có một tài khoản, Overleaf sẽ được mở ra ở mộ
 project mới có chứa đoạn mã này. Bạn có thể sửa mã trên Overleaf và biên dịch
 ngay trên đó.
 
-Các chức năng sửa mã trên Overleaf tốt hơn chức năng sửa mã ở đây nhiều. Bạn
-cũng có thể lưu project vào tài khoản Overleaf của mình và thao tác với nó
-sau.
+Không giống như trên TeXLive.net, bạn có thể lưu lại các đoạn mã trên Overleaf,
+và sử dụng chúng sau.
 
 ##### Dùng dịch vụ TeXLive.net
 
@@ -118,7 +123,9 @@ sẽ được sử dụng mặc định.
 Bạn có thể thay đổi trình dịch thành `latex`, `pdflatex`, `xelatex`,
 `lualatex`, `platex` hay `uplatex` bằng cách dùng một ghi chú tương tự như sau:
 
-`% !TEX <bất cứ đoạn chữ nào> lualatex`
+```
+% !TEX <bất cứ đoạn chữ nào> lualatex
+```
 {: .noedit :}
 
 trong đó khoảng trống ở bắt đầu là không bắt buộc; viết hoa hay viết thường đều
@@ -150,7 +157,9 @@ thể hoạt động ổn định trên rất nhiều trình duyệt khác nhau.
 Nếu bạn muốn sử dụng trình đọc PDF mặc định của trình duyệt, bạn có thể dùng một
 ghi chú dưới dạng
 
-`% !TEX <bất cứ đoạn chữ nào> pdf`
+```
+% !TEX <bất cứ đoạn chữ nào> pdf
+```
 {: .noedit :}
 
 Bạn có thể sử dụng `pdfjs` thay cho `pdf` ở ghi chú trên; khi đó PDF.js sẽ được
@@ -165,25 +174,32 @@ cho trình duyệt trên máy tính.
 
 ---
 
-## Xuất ra HTML (make4ht)
+## Xuất ra HTML (make4ht, LaTeXML, lwarp)
 
 Nếu bạn sử dụng TeXLive.net, bạn cũng có thể yêu cầu xuất ra dạng HTML thay vì
-PDF. Điều đó được thực hiện bằng việc sử dụng lựa chọn xuất `make4ht` (bạn vẫn
-có thể dùng lựa chọn này cùng lúc với lựa chọn trình biên dịch như `xelatex` hay
-`pdflatex`).
+PDF. Điều đó được thực hiện bằng việc sử dụng một trong các lựa chọn xuất
+`make4ht`, `LaTeXML` hoặc `lwarp` (bạn vẫn có thể dùng lựa chọn này cùng lúc với
+lựa chọn trình biên dịch như `xelatex` hay `pdflatex`).
 
-Để có được output như vậy, thêm dòng chú thích sau:
+Để có được output như vậy, thêm dòng chú thích như sau vào đoạn mã:
 
-`% !TeX make4ht`
+```
+% !TeX <lựa chọn xuất>
+```
 {: .noedit :}
 
-Ngoài cách này, bạn cũng có thể vào [Cài đặt trang](settings) để đặt `make4ht`
-làm cách thức xuất mặc định.
+Thay `<lựa chọn xuất>` bằng `make4ht`, `LaTeXML` hoặc `lwarp` để sử dụng lựa
+chọn xuất tương ứng.
+
+Ngoài cách này, bạn cũng có thể vào [Cài đặt trang](settings) để đặt `make4ht`,
+`LaTeXML` hoặc `lwarp` làm cách thức xuất mặc định.
 
 Nếu bạn đang sử dụng một hệ thống TeX được cài đặt sẵn trong máy, bạn cũng có
-thể xuất ra HTML bằng câu lệnh terminal
+thể xuất ra HTML với `make4ht` bằng câu lệnh terminal dưới đây
 
-`make4ht  document.tex "2,mathjax"`
+```
+make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
+```
 {: .noedit :}
 
 với argument `-x` hoặc `-l` nếu bạn muốn dùng XeLaTeX hoặc LuaLaTeX tương ứng.
@@ -191,6 +207,25 @@ với argument `-x` hoặc `-l` nếu bạn muốn dùng XeLaTeX hoặc LuaLaTeX
 Nếu bạn chạy `make4ht` bằng hệ thống TeX cài sẵn, bạn có thể thực hiện nhiều loại
 tùy biến khác nhau. Đọc thêm ở
 [hướng dẫn sử dụng `make4ht`](https://texdoc.org/pkg/make4ht).
+
+Đối với `LaTeXML`, nếu bạn cần dùng nó bằng hệ thống TeX trên máy của mình, bạn
+cần cài đặt LaTeXML riêng (nó không đi cùng TeX Live hay MiKTeX). Sau đó dùng
+lệnh terminal sau:
+
+```
+latexml document.tex > document.xml
+latexmlpost --format=html5 \
+  --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
+  --destination=document.html" document.tex
+```
+{: .noedit :}
+
+Các loại tùy biến LaTeXML cũng có thể được sử dụng, xem thêm tại
+[hướng dẫn sử dụng LaTeXML](https://dlmf.nist.gov/LaTeXML/manual/).
+
+Các tùy biến của `lwarp` không được nêu ở đây, vì nó vẫn đang trong giai đoạn
+thử nghiệm. Tùy biến đang được sử dụng cho TeXLive.net có thể được xem ở
+[đây](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 ---
 

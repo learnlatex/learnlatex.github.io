@@ -5,6 +5,11 @@ title: "Utilitzant el lloc web de learnlatex.org"
 description: "Aquesta pàgina explica el site learnlatex.org i com aprofitar-lo al màxim."
 permalink: /ca/help
 ---
+<script>
+  function acesettings() {
+      editors['pre0'].execCommand("showSettingsMenu");
+  }
+</script>
 
 # Ajuda
 
@@ -38,7 +43,7 @@ Els exemples es poden editar i fer-ne canvis, potser com a part dels exercicis p
 
 L'editor que hem utilitzat és [ACE](https://ace.c9.io/).
 
-Pots personalitzar el tema que s'ha utilitzat en l'editor (per exemple utilitzant un tema de fons fosc i text clar) en la pàgina de [configuració del lloc web](settings). Una forma convenient d'experimentar amb diferents temes és utilitzar <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> a Mac) en qualsevol dels exemples del lloc. Això ens mostrarà un penell que ens permetrà canviar els paràmetres de configuració d'ACE.
+Pots personalitzar el tema que s'ha utilitzat en l'editor (per exemple utilitzant un tema de fons fosc i text clar) en la pàgina de [configuració del lloc web](settings). Una forma convenient d'experimentar amb diferents temes és utilitzar <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> a Mac) en qualsevol dels exemples del lloc. [Això ens mostrarà un penell](javascript:acesettings()) que ens permetrà canviar els paràmetres de configuració d'ACE.
 
 El repositori d'ACE té una útil llista de [dreceres de teclat de l'editor](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 

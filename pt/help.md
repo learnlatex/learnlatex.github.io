@@ -5,6 +5,11 @@ title: "Usando o learnlatex.org"
 description: "Esta página explica o próprio site learnlatex.org e como fazer o melhor uso dele."
 permalink: /pt/help
 ---
+<script>
+  function acesettings() {
+      editors['pre0'].execCommand("showSettingsMenu");
+  }
+</script>
 
 # Ajuda
 
@@ -49,8 +54,8 @@ Você mode mudar o tema utilizado pelo editor (por exemplo usando um tema escuro
 com texto claro em um fundo escuro) na [página de configurações](settings).  Uma
 forma conveniente de experimentar temas diferentes é usar
 <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> no Mac) enquanto estiver
-em qualquer exemplo no site.  Esse comando mostra um painel que permite mudar as
-configurações do ACE.
+em qualquer exemplo no site.  [Esse comando mostra um painel](javascript:acesettings())
+que permite mudar as configurações do ACE.
 
 O repositório do ACE tem uma página com
 [atalhos de teclado úteis](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).

@@ -5,6 +5,11 @@ title: "Using the learnlatex.org site"
 description: "This page explains the learnlatex.org website itself and how to best make use of it."
 permalink: /en/help
 ---
+<script>
+  function acesettings() {
+      editors['pre0'].execCommand("showSettingsMenu");
+  }
+</script>
 
 # Help
 
@@ -48,7 +53,7 @@ The editor being used is [ACE](https://ace.c9.io/).
 You may customise the theme used in the editor (for example using a
 dark theme with light text on a dark background) on the [Site Settings](settings) page.
 A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
-while on any example in the site. This displays a panel which allows you to change all the ACE settings.
+while on any example in the site. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
 
 The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
