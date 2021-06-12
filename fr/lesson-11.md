@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "fr"
 title: "Mise en forme du texte: polices et espacements"
 description: "Cette leçon montre comment modifier les différents espacements dans un document et comment ajouter des instructions de formatage explicites dans le code source."
-toc-anchor-text: "Fontes & espacements"
+toc-anchor-text: "Polices & espacements"
 toc-description: "Mise en forme du texte."
 ---
 

@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "fr"
 title: "Choisir des polices de caractères et utiliser Unicode"
 description: "Cette leçon décrit comment LaTeX interprète les entrées Unicode et en quoi cela affecte ce que vous tapez et les polices que vous utilisez. Découvrez la prise en charge des polices Unicode et OpenType."
-toc-anchor-text: "Fontes & moteurs Unicode"
+toc-anchor-text: "Polices & moteurs Unicode"
 toc-description: "Choisir les polices de caractères et l'encodage."
 ---
 
