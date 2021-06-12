@@ -234,7 +234,7 @@ d & e & f
 ```
 
 
-## Les fontes en mode mathématique
+## Les polices en mode mathématique
 
 Contrairement au texte normal, les changements de police en mode mathématique
 véhiculent généralement une signification très particulière. Elles sont donc la

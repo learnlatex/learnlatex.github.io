@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "fr"
-title: "Mise en forme du texte : fontes et espacements -- Pour aller plus loin"
+title: "Mise en forme du texte : polices et espacements -- Pour aller plus loin"
 description: "Cette leçon montre comment supprimer l'indentation pour un seul paragraphe."
-toc-anchor-text: "Mise en forme du texte : fontes et espacements -- Pour aller plus loin"
+toc-anchor-text: "Mise en forme du texte : polices et espacements -- Pour aller plus loin"
 ---
 
 ## Supprimer l'indentation d'un paragraphe particulier
