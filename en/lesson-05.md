@@ -135,7 +135,7 @@ document have two columns.
 
 Add the class option `twocolumn` and see how the layout changes.
 
-Change the `\section` above for `\chapter` and find out what effect the
+Change the `\section` above to `\chapter` and find out what effect the
 following class options have when using the `scrreprt` class.
 
 - `chapterprefix`
