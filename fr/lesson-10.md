@@ -16,6 +16,12 @@ des forces de LaTeX. Vous pouvez écrire les formules mathématiques en LaTeX de
 manière logique et relativement simple dans ce que l'on appelle le
 « mode mathématique ». 
 
+<p class="hint">**Note:** Certains puristes considèrent que le mot « fonte » est
+un anglicisme et qu'il faut lui préférer « police », d'autres voient une
+[distinction entre les deux mots](https://fr.wikipedia.org/wiki/Fonte_de_caractères).
+</p>
+
+
 ## Le mode mathématique
 
 En mode mathématique, les espaces sont ignorées et l'espacement automatique
