@@ -27,4 +27,3 @@ The following people have made contributions to learnlatex.org:
 - Uwe Ziegenhagen
 - निरंजन
 
-
