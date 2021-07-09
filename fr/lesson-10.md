@@ -16,6 +16,13 @@ des forces de LaTeX. Vous pouvez écrire les formules mathématiques en LaTeX de
 manière logique et relativement simple dans ce que l'on appelle le
 « mode mathématique ». 
 
+<p class="hint">**Note:** Certains puristes considèrent que le mot « fonte » est
+un anglicisme et qu'il faut lui préférer « police », d'autres voient une
+[distinction entre les deux mots](https://fr.wikipedia.org/wiki/Fonte_de_caractères).
+Ce tutoriel ne prend pas parti.
+</p>
+
+
 ## Le mode mathématique
 
 En mode mathématique, les espaces sont ignorées et l'espacement automatique
@@ -62,12 +69,13 @@ Le mode mathématique en ligne restreint la taille verticale de l'expression afi
 que, dans la mesure du possible, la formule ne perturbe pas l'interligne du
 paragraphe.
 
-Notez que _tous_ les mathématiques doivent être marquées comme des mathématiques,
-même si c'est un seul caractère, utilisez `... $2$ ...` et non `... 2 ...`, dans
-votre texte, sinon, par exemple, quand vous avez besoin d'un nombre négatif et
-que vous avez besoin de mathématiques pour obtenir un signe moins,
-le `... $-2$ ...` utilisera des chiffres mathématiques qui peuvent ne pas être
-de la même police que les chiffres du texte (selon la classe du document).
+Notez que _toutes_ les formules mathématiques doivent être marquées comme
+mathématiques, même s'il s'agit d'un seul caractère. Par exemple, utilisez
+`... $2$ ...` et non `... 2 ...`, dans votre texte, sinon quand vous aurez
+besoin d'un nombre négatif, et que vous utiliserez donc le mode mathématique
+pour obtenir un signe moins, le `... $-2$ ...` utilisera des chiffres
+mathématiques qui peuvent ne pas être de la même police que les chiffres du
+texte (selon la classe du document).
 Inversement, prenez garde aux symboles spécifiques du mode mathématique qui
 apparaîtraient dans du texte brut (par exemple si vous copiez du texte venant
 d'ailleurs) : si votre texte contient des valeurs monétaires avec des `$` ou des
