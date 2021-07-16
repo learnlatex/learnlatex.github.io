@@ -19,11 +19,17 @@ tương đương với việc sử dụng trình gõ lệnh (Command Prompt hay 
 nếu bạn không quen những điều này, không sao cả. Nếu bạn *có quen*, bạn có thể
 `cd` tới thư mục chứa tệp nguồn `.tex` và chạy
 
-`pdflatex first`
+```
+pdflatex first
+```
+{: .noedit :}
 
 hay
 
-`pdflatex first.tex`
+```
+pdflatex first.tex
+```
+{: .noedit :}
 
 để biên dịch ra tệp PDF. Chú ý rằng việc thêm đuôi tệp `.tex` là không bắt buộc
 &ndash; LaTeX sẽ hiểu đuôi tệp là `.tex` nếu bạn dùng một tệp không có đuôi.

@@ -2,8 +2,8 @@
 layout: "lesson"
 lang: "mr"
 title: "अधिक माहिती: हस्तपुस्तिका वापरणे व मदत मिळवणे"
-description: "This lesson show you where you can find the sources of LaTeX itself."
-toc-anchor-text: "More on: Accessing documentation and getting help"
+description: "ह्या प्रकरणात आपण लाटेक्-ची बीजसामग्री व हस्तपुस्तिका कशा पाहाव्यात हे पाहूया."
+toc-anchor-text: "अधिक माहिती: हस्तपुस्तिका पाहणे व मदत मिळवणे."
 ---
 
 ## लाटेक् दस्तऐवज
@@ -28,8 +28,3 @@ toc-anchor-text: "More on: Accessing documentation and getting help"
 (`texdoc interface3`) अथवा [expl3 बीज](http://texdoc.org/pkg/source3) (`texdoc
 >>>>>>> 972728a95ed0b3eee8016c4f62b97ed1467452db
 source3`) वाचता येऊ शकते.
-
-
-
-
-
