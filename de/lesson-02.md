@@ -94,6 +94,6 @@ gewählt wird, benötigt man auch einen Editor: wir empfehlen zunächst mit
 TeXworks oder TeX Shop zu starten (siehe oben) und später andere Editoren zu
 erwägen, nachdem _Sie_ wissen, wie Sie am besten mit LaTeX arbeiten.
 
-Man kann [alle Übungen im Browser bearbeiten](help.md), aber wir möchten dir
+Man kann [alle Übungen im Browser bearbeiten](help), aber wir möchten dir
 helfen, echte Dokumente zu bearbeiten, deshalb ist jetzt ein guter Zeitpunkt,
 das vorzubereiten.

@@ -139,7 +139,7 @@ navigational-elements_settings:
   tr: "Settings"
   vi: "Cài đặt trang"
   zh: "Settings"
-  mr: "Settings"
+  mr: "प्राधान्ये"
   ca: "Configuració"
 navigational-elements_contact:
   de: "Kontakt"
@@ -175,7 +175,7 @@ navigational-elements_privacy:
   tr: "Privacy"
   vi: "Chính sách bảo mật"
   zh: "Privacy"
-  mr: "Privacy"
+  mr: "गोपनीयता धोरण"
   ca: "Privacitat"
 navigational-elements_open-an-issue:
   de: "Problem melden"

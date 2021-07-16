@@ -8,8 +8,10 @@ permalink: /AUTHORS
 The following people have made contributions to learnlatex.org:
 
 - Barbara Beeton
+- Denis Bitouzé
 - David Carlisle
 - Paulo Roberto Massa Cereda
+- Joan Quintana Compte
 - Ulrike Fischer
 - Jim Hefferon
 - Jérémy Just
@@ -18,10 +20,10 @@ The following people have made contributions to learnlatex.org:
 - Phelype Oleinik
 - Will Robertson
 - Jonathan P. Spratte
+- Fernando S. Delgado Trujillo
 - Moritz Wemheuer
 - Joseph Wright
 - Dung Vu
 - Uwe Ziegenhagen
-- Denis Bitouzé
 - निरंजन
-- Joan Quintana Compte
+
