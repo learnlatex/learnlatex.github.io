@@ -258,6 +258,18 @@ navigational-elements_toc:
   zh: "目錄"
   mr: "अनुक्रमणिका"
   ca: "Taula de contingut"
+navigational-elements_latex_project:
+  de: "The LaTeX Project"
+  en: "The LaTeX Project"
+  es: "The LaTeX Project"
+  fr: "The LaTeX Project"
+  ja: "The LaTeX Project"
+  pt: "The LaTeX Project"
+  tr: "The LaTeX Project"
+  vi: "The LaTeX Project"
+  zh: "The LaTeX Project"
+  mr: "लाटेक् प्रकल्प"
+  ca: "The LaTeX Project"
 
 # optional list of localised numbers 0-20 (fr alphabetic just for testing)
 #    fr: "*,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t"
