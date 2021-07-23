@@ -75,7 +75,6 @@ LaTeX ではドキュメントをいくつもの階層に分けることがで�
 
 論理マークアップが便利な別のケースとして，箇条書きが挙げられます．LaTeX 標準では2種類の一般的な箇条書きが用意されています．
 
-
 ```latex
 \documentclass{jsarticle}
 \begin{document}
