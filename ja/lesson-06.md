@@ -110,6 +110,7 @@ LaTeX の強みの1つは，何千とあるパッケージから好きなもの�
 
 ```latex
 \documentclass{jsarticle}
+\usepackage{xcolor}
 
 \newcommand\kw[1]{\textcolor{blue}{\gtfamily #1}}
 
