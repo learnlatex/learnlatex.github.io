@@ -83,7 +83,8 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 <p class="hint">
 हे उदाहरण मेमॉयरच्या दस्तऐवजातील नाही आहे.<br>
-सौजन्य: लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर (https://ctan.org/pkg/latex-mr)
+सौजन्य: लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर
+([https://ctan.org/pkg/latex-mr](https://ctan.org/pkg/latex-mr))
 </p>
 
 
