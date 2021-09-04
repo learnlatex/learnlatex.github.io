@@ -25,7 +25,7 @@ runlatex.preincludes = {
 }
 </script>
 
-<span class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
+<span class="summary">Cette leçon montre comment diviser vos sources LaTeX en fichiers plus petits et plus simples à gérer, et comment cela peut rendre la construction d'un long document plus facile et plus rapide.</span>
 
 Si vous rédigez un long document, vous aurez peut-être envie de diviser le
 code-source en plusieurs fichiers, plus faciles à gérer. Par exemple, il est
