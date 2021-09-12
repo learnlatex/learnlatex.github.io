@@ -127,7 +127,7 @@ navigational-elements_help:
   mr: "मदत"
   ca: "Ajuda"
 navigational-elements_settings:
-  de: "Settings"
+  de: "Einstellungen"
   en: "Settings"
   es: "Configuración"
   fr: "Paramètres"
@@ -163,7 +163,7 @@ navigational-elements_licenses:
   mr: "परवाने"
   ca: "Llicències"
 navigational-elements_privacy:
-  de: "Privacy"
+  de: "Datenschutz"
   en: "Privacy"
   es: "Privacidad"
   fr: "Confidentialité"
