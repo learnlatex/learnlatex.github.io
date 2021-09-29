@@ -175,6 +175,9 @@ function llexamples() {
 	    editor.setOption("minLines",runlatex);
 	    editor.setOption("maxLines",runlatex.editorlines);
 	    editor.setShowPrintMargin(false);
+	    // allow browser to handle tab use ctrl-] to tab indent in browser
+	    editor.commands.bindKey("Tab", null)
+	    editor.commands.bindKey("Shift-Tab", null)
 	    if(runlatex.completionsURI != ""){
 		langTools=ace.require("ace/ext/language_tools");
 		langTools.setCompleters([customCompleter]);
