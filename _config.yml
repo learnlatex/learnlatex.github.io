@@ -98,3 +98,4 @@ defaults:
     values:
       lang: "ca"
       label: "Català"
+theme: jekyll-theme-minimal
