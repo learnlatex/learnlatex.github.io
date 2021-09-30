@@ -1,23 +1,29 @@
 ---
 layout: "page"
-lang: "en"
-title: Contact
-permalink: /en/contact
+lang: "lt"
+title: Kontaktai
+permalink: /lt/contact
 ---
 
-# Contact
+# Kontaktai
 
-## Individual Support
+## Individualus palaikymas
 
-Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
+Apgailestaujame, bet neturime resursų individualiai pagalbai sprendžiant
+iškilusias LaTeX problemas, todėl neatsakinėjame į elektroninius laiškus,
+prašančius tokios pagalbos. Žiūrėkite [LaTeX Projekto pagalbos
+tinklapį](https://www.latex-project.org/help/) apie būdus gauti pagalbą.
 
-## Website Team
+## Tinklapio komanda
 
-The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details.
+[Šio tinklapio](https://github.com/learnlatex/learnlatex.github.io/) kodas
+yra prieinamas [GitHub saugykloje](https://github.com/learnlatex/), žiūrėkite
+[ONTRIBUTING](../CONTRIBUTING) dėl įsijungimo į projektą ir
+[LICENSE](../LICENSE) dėl kitokio panaudojimo.
 
-You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+Jūs galite [sukurti kreipinį GitHub saugykloje](https://github.com/learnlatex/learnlatex.github.io/issues) arba [parašyti elektroninį laišką mums](mailto:texfaq@texfaq.org) su pasiūlymais.
 
-## Impressum
+## Atsakingas asmuo
 
 <p>Joseph Wright<br>
 2, Dowthorpe End<br>
