@@ -1,9 +1,9 @@
 ---
 layout: "page"
-lang: "en"
-title: "Using the learnlatex.org site"
-description: "This page explains the learnlatex.org website itself and how to best make use of it."
-permalink: /en/help
+lang: "lt"
+title: "Tinklapio learnlatex.org gidas"
+description: "Šis puslapis paaiškina apie patį learnlatex.org saityną ir geriausią jo panaudojimą."
+permalink: /lt/help
 ---
 <script>
   function acesettings() {
@@ -11,30 +11,25 @@ permalink: /en/help
   }
 </script>
 
-# Help
+# Pagalba
 
 
-## Navigating the site
+## Judėjimas po saityną
 
-The course consists of 16 core lessons that can be reached from the
-[table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+Kursas susideda iš 16 pagrindinių pamokų, kurios pasiekiamos iš [pagrindinio turinio]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}), pateikto [pradiniame lape](./).
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 16 lessons _without_ reading the additional lessons.
+Kiekvienoje pamokoje yra nuoroda į vieną susietą pamoką ta pačia tema, tik panagrinėta giliau.
+Galima praeiti visas 16 pamokų _aplenkiant_ papildomas pamokas.
 
-At the end of the course there are one or more lessons specific to the
-language being used for the lessons, and finally a gallery of examples
-of packages demonstrating LaTeX use not covered by this course.
+Kurso pabaigoje yra mažiausiai viena pamoka, skirta kalbai, kuria buvo pateiktos pamokos, ir galerija trumpų pavyzdžių, demonstruojančių paketus ir LaTeX galimybes, neatskleistas šiame kurse.
 
 ---
 
-## Examples
+## Pavyzdžiai
 
-### Running the examples
+### Pavyzdžių kompiliavimas
 
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+Kiekvienas pavyzdys yra pilnas, nors ir mažas LaTeX dokumentas, pateikiamas tekste panašiai kaip šis pavyzdys:
 
 ```latex
 \documentclass{article}
@@ -45,152 +40,149 @@ Example text.
 \end{document}
 ```
 
-Each example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
+Kiekvienas pavyzdys yra išbaigtas.  Jūs galite jį paredaguoti, įnešdami smulkius taisymus, galbūt spręsdami pratimų aibę pamokos gpabaigoje.
 
-The editor being used is [ACE](https://ace.c9.io/).
+Redagavimo programa yra [ACE](https://ace.c9.io/).
 
-You may customise the theme used in the editor (for example using a
-dark theme with light text on a dark background) on the [Site Settings](settings) page.
-A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
-while on any example in the site. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
+Jūs galite pasikeisti šios programos spalvinę gamą pagal save (pavyzdžiui, pasirinkti tamsų pagrindą su šviesiu tekstu) pasinaudodami [saityno nustatymų](settings) puslapiu.
+Iš klaviatūros galima patogiai išbandyti spalvines gamas klavišų kombinacija <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> Mac kompiuteriuose) beredaguojant bet kokį pavyzdį šiame saityne.
+[Tai atvaizduoja ekrane panelę](javascript:acesettings()), kuri leidžia pasikeisti visus ACE nustatymus.
 
-The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+Programos ACE saugykloje yra [naudinga redaktoriaus klavišų suvestinė](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 
 
-#### Three ways to run the example
+#### Trys būdai vykdyti pavyzdžius.
 
-* Use the Overleaf service
-* Use the TeXLive.net service
-* Use a locally installed TeX system
+* Naudotis Overleaf paslauga
+* Naudotis TeXLive.net paslauga
+* Naudotis lokaliai kompiuteryje instaliuota TeX sistema.
 
-##### Use the Overleaf service
+##### Overleaf paslauga
 
-Overleaf is one of the most popular online LaTeX editing services. The 
-<button>Open in Overleaf</button> button, below the example, will submit the 
-code to [Overleaf](https://www.overleaf.com/about).
+Overleaf yra vienas iš populiariausių LaTeX tinklinio redagavimo paslaugos
+tiekėjų.  Mygtuko <button>Atverti Overleaf</button>, kurio pavyzdys pateiktas
+žemiau, paspaudimas nusiųs kodą į [Overleaf](https://www.overleaf.com/about).
 
-If you do not have an account, or the account details are not
-already cached in your browser, then you will be redirected to a
-login page where you may login or register with Overleaf. This is a
-free service but does require you to give some details and agree to
-terms and conditions.
+Kai jūs neturite Overleaf paskyros ar prisijungimo prie jos duomenys nėra
+išsaugoti jūsų naršyklės saugykloje, tada jus nukreips į prisijungimo
+puslapį, kuriame galėsite prisijungti arba prisiregistruoti prie Overleaf.
+Ši paslauga yra nemokama, bet reikalauja pateikti kai kurias detales apie
+save ir sutikti su paslaugos teikimo sąlygomis.
 
-If your Overleaf account is already cached in your browser, then
-Overleaf will be opened in a new tab, with a new
-project with the code. You may then edit it in
-Overleaf which will simultaneously run LaTeX on your code showing
-the resulting output or error log.
+Kai jūsų prisijungimo prie paskyros duomenys jau išsaugoti jūsų naršyklėje,
+tada Overleaf sukurs naują kortelę naujam projektui su duotu pavyzdžiu. Tada
+jūs galite redaguoti kodą tiesiog toje kortelėje, o Overleaf tuo pat metu
+kompiliuos jūsų LaTeX kodą ir rodys šalia išvesties rezultatą arba klaidos
+aprašymą.
 
-Unlike documents processed at TeXLive.net, you may save your project
-in your Overleaf account and return to it later.
+Ne taip, kaip naudojant TeXLive.net, jūs galite išsaugoti savo projektą savo
+paskyroje vėlesniam redagavimui.
 
-##### Use the TeXLive.net service
+##### TeXLive.net paslauga
 
-The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
-[TeXLive.net](https://texlive.net) service[^1].
+Mygtuko <button>Leisti TeXLive.net</button>, kurio pavyzdys pateiktas žemiau,
+paspaudimas nusiųs kodą į [TeXLive.net](https://texlive.net) paslaugą[^1].
 
-The TeXLive.net service was developed specifically to support this site, and
-in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
-to enable display of PDF on mobile and other browsers without built in PDF 
-readers.
+TeXLive.net paslauga buvo sukurta specialiai šio saityno palaikymui ir
+naudoja [PDF.js](https://mozilla.github.io/pdf.js/), gebantį atvaizduoti PDF
+mobiliųjų telefonų ir kitose naršyklėse, neturinčiose įmontuoto PDF
+skaitytuvo.
 
-The resulting PDF document (or section of the error log) will be
-shown inline immediately below the example. A <button>Delete
-Output</button> button will be provided so that you may remove this output
-(or you may leave it in place and continue the rest of the lesson
-below).
+Gautas PDF dokumentas (arba klaidos tekstas iš kompiliavimo žurnalo) bus
+rodomas žemiau pavyzdžio.  Mygtukas <button>Pašalinti išvestį</button> bus
+pateiktas, kad jūs galėtumėt pašalinti šią išvestį (arba jūs galite ją
+palikti ir tęsti pamoką toliau).
 
-Note that **TeXLive.net** requires no login or signup of any sort
-so it is very convenient for small examples, but this site
-provides no  mechanism to save your document. Any changes that you
-make to the example are lost if you move off the page.
+Pabrėžiame, kad **TeXLive.net** nereikalauja jokios registracijos ar
+prisijungimo, todėl yra labai patogus naudoti su mažais pvyzdžiais, bet šioje
+paslaugoje nėra galimybės išsaugoti jūsų dokumentą.  Bet kokie pakeitimai
+pavyzdyje bus prarasti, kai tik jūs išeisite iš puslapio.
 
-##### Locally installed TeX system
+##### Lokaliai instaliuota TeX sistema
 
-If you have a TeX system installed locally, then you may copy the
-example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor
-(<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
-in windows for example). This will place the code in your operating system
-clipboard so you can start a blank document using your local
-editor, and paste in the text.
+Jei jūs turite TeX sistemą instaliuotą kompiuteryje, tada jūs galite
+nukopijuoti pavyzdžio kodą arba iš mūsų puslapio jį apšviečiant ir
+kopijuojant, arba iš ACE redaktoriaus lango (panaudojant klavišų kombinaciją,
+pavyzdžiui, <kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>). Tai
+patalpins kodą į operacinės sistemos iškirpčių valdyklę, ir jūs galėsite
+atverti tuščią dokumentą lokaliame tekstų redaktoriuje ir perkopijuoti kodą
+vienu mygtuko ar klavišo paspaudimu.
 
-### Troubleshooting
+### Trikdžių šalinimas
 
-Our examples are based around using an up-to-date LaTeX installation. They all 
-work with both of our online demonstration systems, so if you get errors with 
-the examples we provide, you might want to check if your LaTeX system is 
-up-to-date.
+Mūsų pavyzdžiai yra paremti aktualios LaTeX sistemos naudojimu. Jie visi
+veikia su abiem internetinių paslaugų platformomis, todėl jei jūs gaunate
+klaidas, leisdami mūsų pateiktus pavyzdžius, jūs pirmiausia patikrinkite, ar
+jūsų LaTeX sistema yra atnaujinta.
 
 ---
 
-## Choosing the TeX engine
+## TeX variklio pasirinkimas
 
-When submitting example documents, by default the `pdflatex` engine will be used.
+Dirbant su pavyzdiniais dokumentais yra naudojamas standartinis `pdflatex` variklis.
 
-You can force the choice of `latex`, `pdflatex`, `xelatex`, `lualatex`,
-`platex` or `uplatex` by using a comment of the form:
+Jūs galite priversti naudoti `latex`, `pdflatex`, `xelatex`, `lualatex`,
+`platex` ar `uplatex`, įdėdami, pavyzdžiui, tokios formos komentarą:
 
-`% !TEX ` _any text_ `lualatex`
+`% !TEX ` _bet koks tekstas_ `lualatex`
 
-where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
+kur pirmasis tarpas yra nebūtinas, skirtumas tarp didžiųjų-mažųjų raidžių yra
+ignoruojamas, kaip ir _bet koks tekstas_ tarp pirmojo ir paskutiniojo žodžių.
 
-This allows the form `% !TEX program=pdflatex` used by some TeX editors
-but does not require the `program=` and is currently restricted to
-specifying just one of the engines that are supported on
-the online systems being used.
+Tai leidžia naudoti kometaro formą `% !TEX program=pdflatex`, kuri naudojama
+kai kuriuose TeX redaktoriuose, bet nereikalauja rašyti `program=` ir šiuo
+metu yra ribojama tik pasirinkimu variklio, kuris palaikomas minėtų
+internetinės palaugos tiekėjų.
 
-You can see an example of a comment being used to specify LuaLaTeX in
-[some of the examples on this site](more-14).
+Jūs surasite šio tipo komentaro pavyzdžius, kurie nurodo LuaLaTeX [kai
+kuriuose šio saityno pavyzdžiuose](more-14).
 
-If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
-also used to produce the PDF result from the DVI file that these variants generate.
-Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
+Kai `platex` ar `uplatex` yra nurodyti, tada `dvipdfmx` programa taip pat yra
+naudojama pagaminti PDF rezultatą iš tarpinės DVI išvesties, kurią šie
+varikliai generuoja.  Taipogi `dvips` ir `ps2pdf` programos yra naudojamos,
+kai nurodomas `latex`.
 
-If the engine is not specified in a `% !TeX` comment, then `pdflatex` will be used
-unless you have specified a default TeX engine on the [Site Settings](settings) page.
+Jeigu variklis `% !TeX` komentaru nenurodomas, tada naudojamas `pdflatex`,
+nebent jūs buvote nustatęs standartu naudoti kitą TeX variklį [saityno
+nustatymų](settings) puslapyje.
 
 ---
 
-## Choosing how to display the output
+## Išvesties rodymo pasirinkimas
 
-If you use the TeXLive.net system, then the PDF
-output from running an example is shown using
-[PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behavior over the widest range of browsers.
+Kai jūs naudojate TeXLive.net sistemą, tada PDF išvestis, gauta iš pavyzdžio
+vykdymo, yra tandartiškai rodoma naudojant
+[PDF.js](https://mozilla.github.io/pdf.js/).  Tai užtikrina vienodą veikimą
+plačiausioje naršyklių klasėje.
 
-If you would prefer to use your browser's default PDF reader (either
-its built in one, or an external application that you have configured)
-then add a comment of the form:
+Jei jūs pageidaujate naudoti jūsų naršyklės PDF skaityklę (joje
+įmontuotą ar išorinę programą, kviečiamą pagal jūsų nustatymus), tai
+pridėkite tokios formos komentarą:
 
-`% !TEX ` _any text_ `pdf`
+`% !TEX ` _bet koks tekstas_ `pdf`
 
-The default behavior can be explicitly specified by using `pdfjs` as
-the final token. For debugging you may sometimes want the log file
-returned, even if the document produces a PDF with
-no errors. This can be specified by using `log` as the final token in
-the comment.
+Standartinis elgesys atitinka `pdfjs` įrašymą paskutiniuoju žodžiu.  Kai kada
+derinimo reikmėms jūs galite norėti gauti log failą, net jei pavyzdys
+kompiliavosi be klaidų. Tai gali būti pareikalauta, įrašant `log` kaip
+paskutinįjį komentaro žodį.
 
-As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
-page. The Settings are specific to each browser, so for example you
-may choose to use the default `pdfjs` setting on your mobile device,
-but use `pdf` on your desktop browser to use its default PDF rendering.
+Kaip alternatyvą `% !TeX` komentarams jūs galite nurodyti saityno standartinį išvesties parametrą [saityno nsutatymų](settings)
+puslapyje. Nustatymai yra susieti su konkrečia naršykle, todėl, pavyzdžiui, jūs galite standartiškai nustatyti
+`pdfjs` mobiliajame įrenginyje, bet pasirinkti `pdf` stalinio kompiuterio naršyklėje, kad būtų naudojams jos standartinis PDF vaizdavimas.
 
 
 ---
 
-## HTML output (make4ht, LaTeXML, lwarp)
+## HTML išvestis (make4ht, LaTeXML, lwarp)
 
-If using the TeXLive.net system, then additional return options,
-`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
-in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
+Kai naudojama TeXLive.net sistema, tada galima nurodyti papildomus išvesties
+variantus:  `make4ht`, `LaTeXML` ar `lwarp`. Jie skirti išvesti vieną ar
+daugiau HTML puslapių, įrėmintų tame pačiame puslapyje.  Tuo pat metu galima
+nurodyti variklius `xelatex` ar `lualatex`, taipogi standartinį `pdflatex`
+kvietimą.
 
-To enable this output, add a comment of the form:
+Kad įgalinti šią išvestį, pridėkite komentarą:
 
 
 ```
@@ -199,30 +191,29 @@ To enable this output, add a comment of the form:
 {: .noedit :}
 
 
-Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
+Pakeičiant `make4ht` į `LaTeXML` ar `lwarp`, nurodomas tų sistemų naudojimas.
 
 
 
-Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
-on the [Site Settings](settings) page.
+Kitu būdu jūs galite `make4ht`, `LaTeXML` ar `lwarp` išvestis nurodyti kaip
+standartines [saityno nustatymų](settings) puslapyje.
 
 
-If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
-by executing
+Naudodami lokalią TeX sistemą, tokią pat išvestį, kaip `make4ht` atveju,
+gauname vykdydami komandinę eilutę
 
 ```
 make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
-with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
+su papildoma opcija `-x` ar `-l` jei reikia kviesti atitinkamai XeLaTeX ar LuaLaTeX.
 
-When running locally, other configurations would be possible. See the [make4ht
-manual](https://texdoc.org/pkg/make4ht).
+Lokaliai vykdant ir kitokios konfigūracijos yra įmanomos, žiūrėkite [make4ht
+vadovėlį](https://texdoc.org/pkg/make4ht).
 
 
-For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
-and use
+Kad `LaTeXML` būtų vykdomas lokaliai, jums reikia turėti instaliavus LaTeXML (jis nėra TeX Live ar MiKTeX dalis) ir vykdyti
 
 ```
 latexml document.tex > document.xml
@@ -232,21 +223,21 @@ latexmlpost --format=html5 \
 ```
 {: .noedit :}
 
-Many other LaTeXML configurations are possible,
-[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+Šiuo atveju yra daug kitokių LaTeXML konfigūracijų,
+[aprašytų vadovėlyje](https://dlmf.nist.gov/LaTeXML/manual/).
 
 
-The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
-The current version can be seen at the
-[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+Išvesties `lwarp` lokali konfigūracija čia neaprašoma, nes yra kažkiek eksperimentinė ir gali keistis.
+Esamą versiją galima pamatyti 
+[kodo saugykloje](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 
 ---
 
-[^1]: Note that during development of the site we have also used 
-      [LaTeX.Online](https://latexonline.cc/) and
-      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.
+[^1]: Pažymime, kad saitymo kūrimo metu mes taip pat naudojome
+      [LaTeX.Online](https://latexonline.cc/) ir
+      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http), ir todėl mes
+      dėkojame šių paslaugų kūrėjams už atliktas korekcijas, įgalinusias
+      leisti šio saityno pavyzdžius jau ankstyvoje stadijoje.
 
 
