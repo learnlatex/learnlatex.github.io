@@ -70,6 +70,12 @@ defaults:
       label: "Français"
   -
     scope:
+      path: "lt"
+    values:
+      lang: "lt"
+      label: "Lietuviškai"
+  -
+    scope:
       path: "pt"
     values:
       lang: "pt"

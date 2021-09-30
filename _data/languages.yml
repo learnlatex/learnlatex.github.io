@@ -23,6 +23,10 @@
   label-regional: Français
   label-english: French
 
+- language-code: lt
+  label-regional: Lietuviškai
+  label-english: Lithuanian
+
 - language-code: mr
   label-regional: मराठी
   label-english: Marathi
