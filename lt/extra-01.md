@@ -1,72 +1,71 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "LaTeX Showcase - Examples for further study"
-description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
-toc-anchor-text: "LaTeX Showcase"
-toc-description: "Examples for further study."
+lang: "lt"
+title: "LaTeX galimybių demonstravimas &ndash; pavyzdžiai tolesniam studijavimui"
+description: "Ši pamoka pateikia pavyzdžius su kai kuriais populiariais LaTeX paketais, kurie nebuvo panaudoti pagrindiniame kurse."
+toc-anchor-text: "LaTeX galimybių demonstravimas"
+toc-description: "Pavyzdžiai tolesniam studijavimui"
 ---
 
-# Showcase
+# Demonstracija
 
 <span
-  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
+  class="summary">Ši pamoka pateikia pavyzdžius su kai kuriais populiariais LaTeX paketais, kurie nebuvo panaudoti pagrindiniame kurse.</span>
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.org](https://texdoc.org).
-The examples are taken from the package documentation unless otherwise noted.
+Šis kursas apžvelgė tik pagrindines LaTeX ypatybes.
+LaTeX remiasi gausybe jį išplečiančių paketų įvairioms taikymo sritims.
+Čia pateikiame kai kuriuos pavyzdžius be paaiškinimų, bet su nuorodomis į atitinkamų paketų dokumentaciją tinklapyje [texdoc.org](https://texdoc.org).
+Pavyzdžiai paimti iš paketų dokumentacijos, jei nenurodyta kitaip.
 
 <p
-  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
+  class="hint">Pabrėžiame, kad kažkurio paketo pateikimas čia neiškelia jo aukčiau už kitus panašius paketus, mes tik norėjome parodyti visą eilę taikymo sričių, neįtrauktų į šį kursą.</p>
 
-## Chemistry
+## Chemija
 
-Package: [`mhchem`](https://texdoc.org/pkg/mhchem)
+Paketas: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
-## Linguistics
+## Lingvistika
 
-Package: [`forest`](https://texdoc.org/pkg/forest)
+Paketas: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
-## Chess
+## Šachmatai
 
 <!-- not 2017 -->
-Package: [`xskak`](https://texdoc.org/pkg/xskak)
+Paketas: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
-## Poetry
+## Poezija
 
-Class: [`memoir`](https://texdoc.org/pkg/memoir)
+Klasė: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 
-## Drawing
+## Brėžiniai
 <!-- not 2017 -->
-Package: [`tikz`](https://texdoc.org/pkg/tikz)
+Paketas: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
 
 
-## Function plotting
+## Funkcijos grafikas
 
-Package: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
+Paketas: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
 
 
-## Music
+## Muzika
 
-Package: [`musixtex`](https://texdoc.org/pkg/musixtex)
+Paketas: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 
