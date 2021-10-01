@@ -227,9 +227,9 @@ latexmlpost --format=html5 \
 [aprašytų vadovėlyje](https://dlmf.nist.gov/LaTeXML/manual/).
 
 
-Išvesties `lwarp` lokali konfigūracija čia neaprašoma, nes yra kažkiek eksperimentinė ir gali keistis.
-Esamą versiją galima pamatyti 
-[kodo saugykloje](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+Išvesties `lwarp` lokali konfigūracija čia neaprašoma, nes yra kažkiek
+eksperimentinė ir gali keistis.  Esamą versiją galima pamatyti [kodo
+saugykloje](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 
 ---
