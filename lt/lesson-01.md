@@ -1,8 +1,8 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "What LaTeX is and how it works"
-description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
+lang: "ls"
+title: "Kas yra LaTeX ir kaip jis veikia"
+description: "Ši pamoka paaiškina LaTeX veikimo pagrindus ir skirtumus nuo įprastų biuro dokumentų redaktorių, kaip Microsoft Word ar LibreOffice Writer."
 toc-anchor-text: "LaTeX basics"
 toc-description: "What LaTeX is and how it works."
 ---
@@ -10,39 +10,42 @@ toc-description: "What LaTeX is and how it works."
 # LaTeX basics
 
 <span
-  class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>
+  class="summary">Ši pamoka paaiškina LaTeX veikimo pagrindus ir skirtumus nuo biuro dokumentų redaktorių, tokių kaip Microsoft Word ar LibreOffice Writer.</span>
 
-Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
+Skirtingai nuo biuro dokumentų redaktorių, tokių kaip Microsoft Word ar
+LibreOffice Writer, LaTeX paprastai nepateikia, žargoniškai išsireiškiawnt
+WYSIWYG („_What You See Is What You Get_“, tai yra, „tai, ką matote, yra tai,
+ką gaunate“ arba „kas ekrane, tas popieriuje“).  Dirbant su LaTeX tekstas yra
+papildomai sužymimas (matematikos formulių atveju, dar ir simboliai renkami
+standartine kliaviatūra). Šis sužymėjimas atskleidžia loginę kai kurių teksto
+elementų prasmę, panašiu būdu, kaip HTML kalboje. Paimkime, pavyzdžiui,
+elementą `<h2>`, žymintį skyrių HTML dokumente. LaTeX taip pat turi turi tam
+skirtą komandą `\section`.
 
-Take for example the element `<h2>` indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+## Darbo su LaTeX eiga
 
-## The LaTeX workflow
+Kadangi LaTeX rinkmenos (failai) nėra „švarūs“ dokumentai kaip tokie, nes
+turi instrukcijas apie atskiras dokumento dalis, tai jūs normaliai neduosite
+skaityti tokios rinkmenos kitiems žmonėms.  Pirmiau, sukūrę savąją LaTeX
+_įvestį_, paleisite su ja (ant jos) LaTeX (paprastai programą `pdflatex`),
+kad gauti PDF failą.  Ši PDF _išvestis_ yra tai, ką jūs siųsite kitiems
+skaityti.
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+Kiti autoriai naudoja kitus žodžius aprašyti šį procesą.  Rašyti LateX
+dokumentą yra panašu į programavimą, todėl LaTeX programos leidimas dažnai
+vadinamas dokumento `kompiliavimu`, nors `komponavimas` būtų tiksliau.
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+## LaTeX leidimas kelis kartus
 
-## Multiple LaTeX runs
+Paprastiems LaTeX failams pakanka tik vieno programos leidimo, kad gauti
+galutinį PDF.  Bet jei jūs pradėsite naudoti sudėtingesnius dalykus, paremtus
+nuorodomis tarp dokumento elementų, kaip literatūros citavimą, automatinį
+brėžinių numeravimą ar turinio generavimą, jums gali tekti paleisti LaTeX
+programą daugiau nei kartą.  Mes perspėsime jus, kai to prireiks.
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+## LaTeX ar pdfLaTeX, ar ...
 
-## LaTeX or pdfLaTeX or ...
-
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX Program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+[Kitoje pamokoje](lesson-02) mes kalbesime apie tai, kad LaTeX nėra viena
+programa.  Dėstymo supaprastinimui, kurse apsiribojame viena LaTeX programa,
+pdfLaTeX, skirta PDF išvedimui.  Dabar apžvelgsime kitas programas ir
+priežastis, kodėl jūs norėtumėte jas naudoti tolesnėje kurso eigoje.
