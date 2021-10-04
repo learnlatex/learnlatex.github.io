@@ -1,10 +1,10 @@
 ---
 layout: "lesson"
-lang: "ls"
-title: "Kas yra LaTeX ir kaip jis veikia"
+lang: "lt"
+title: "Kas LaTeX yra ir kaip veikia"
 description: "Ši pamoka paaiškina LaTeX veikimo pagrindus ir skirtumus nuo įprastų biuro dokumentų redaktorių, kaip Microsoft Word ar LibreOffice Writer."
-toc-anchor-text: "LaTeX basics"
-toc-description: "What LaTeX is and how it works."
+toc-anchor-text: "LaTeX pagrindai"
+toc-description: "Kas LaTex yra ir kaip veikia."
 ---
 
 # LaTeX basics

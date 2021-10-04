@@ -1,99 +1,96 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Working with LaTeX"
-description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
-toc-anchor-text: "Working with LaTeX"
-toc-description: "TeX systems and LaTeX text editors."
+lang: "lt"
+title: "Darbas su LaTeX"
+description: "Ši pamoka paaiškina apie TeX sistemas ir labiausiai naudojamas iš jų, išvardina kelis teksto redaktrius, paprastai naudojamus su LaTeX, ir internetines sistemas su indegruotais redaktoriais."
+toc-anchor-text: "Darbas su LaTeX"
+toc-description: "TeX sistemos ir LaTeX redaktoriai."
 ---
 
-# Working with LaTeX
+# Darbas su LaTeX
 
 <span
-  class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
+  class="summary">Ši pamoka paaiškina apie TeX sistemas ir labiausiai naudojamas iš jų, išvardina kelis teksto redaktrius, paprastai naudojamus su LaTeX, ir internetines sistemas su indegruotais redaktoriais.</span>
 
+LaTeX nėra atskira viena programa, 'viską' savyje talpinanti, o yra visuma
+programų, veikiančių kartu. Pirmiausia jums reikia skirti du dalykus:
 
-Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs that work together.
-We can divide those up into two things you actually need:
+- _TeX sistema_
+- Tekstinis redaktorius (dažnai pritaikytas būtent LaTeX)
 
-- A _TeX system_
-- A text editor (often a LaTeX-specific one)
+## TeX sistemos
 
-## LaTeX systems
+Darbo su LaTeX esmė yra kokios nors TeX sistemos naudojimas. Bet kuri TeX
+sistema yra aibė 'užkulisinių' programų ir failų, reikalingų LaTeX darbui,
+bet didumą laiko jums nereikia jos 'leisti'.
 
-The core of working with LaTeX is having a TeX system available. A TeX system is a set
-of 'behind the scenes' programs and files that are needed to make LaTeX work, but
-most of the time you don't directly 'run' this.
+Dabar yra pagrinde naudojamos dvi TeX sistemos, [MiKTeX](https://miktex.org/)
+ir [TeX Live](https://tug.org/texlive). Abi veikia Windows, macOS ir Linux.
+MiKTeX daugiau remiasi Windows sistema; macOS sistemoje TeX Live yra ijungtas
+į didesnę kolekciją [MacTeX](http://www.tug.org/mactex/).  Kiekviena iš
+sistemų turi [savo privalumų](https://tex.stackexchange.com/questions/20036),
+ir jūs galite susipažinti su [daugiau patarimų LaTeX Projekto
+puslapyje](https://www.latex-project.org/get/).
 
-There are two major TeX systems available today,
-[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
-are available for Windows, macOS and Linux.
-MiKTeX has a strong background on Windows;
-on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).
-There are [advantages to each
-system](https://tex.stackexchange.com/questions/20036), and you might want to
-look at [some more advice from the LaTeX
-Project](https://www.latex-project.org/get/).
+Jei jūs neapsisprendžiate, kokią sistemą instaliuotis, mes rekomenduojame
+pasirinkti TeX Live, nes ji veikia visose pagrindinėse operacinėse
+platformose ir turi tam tikrų veikimo greičio privalumų.
 
-As TeX Live is available on all common platforms, and as it has some performance
-advantages, we recommend that if you are unsure which system to install, you
-choose TeX Live.
+## Redaktoriai
 
-## Editors
+LaTeX failai yra paprastas tekstas, todėl gali būti redaguojami bet kokiu
+teksto redaktoriumi.  Vis dėlto patogiausi yra pritaikyti darbui su LaTeX
+redaktoriai, turintys tokias ypatybes, kaip kompiliavimo paleidimą ant jūsų
+failų vienu paspaudimu, integruotą PDF skaityklę, ir sintaksės spalvinimą.
+Tikrai naudinga visų modernių LaTeX redaktorių ypatybė yra SyncTeX:  galimybė
+klikinti jūsų įvesties faile ir peršokti į atitinkamą vietą PDF, ir
+atvirkščiai.
 
-LaTeX files are simply plain text, so they can be edited with any text editor.
-However, it's most convenient to have an editor that is designed to work with
-LaTeX, as they provide features like one-click compilation of your files,
-built-in PDF viewers, and syntax highlighting. A really useful feature in all
-modern LaTeX editors is SyncTeX: the ability to click on your source and go
-straight to your PDF, or back the other way.
-
-There are many more LaTeX editors than we can hope to list here: there is a
-[comprehensive list on
-StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
-and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
-is included in MacTeX.
+Yra daug daugiau LaTeX redaktorių, nei mes galime tikėtis čia išvardinti: yra
+išsamus sąrašas [StackExchange
+tinklapyje](https://tex.stackexchange.com/questions/339/latex-editors-ides).
+Bazinis redaktorius [TeXworks](https://tug.org/texworks) platinamas kartu su
+TeX Live ir MiKTeX tiek Windows, tiek Linux, o
+[TeXShop](https://pages.uoregon.edu/koch/texshop/) yra dalis MacTeX.
 
 <p 
-  class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
+  class="hint">Kokį redaktorių jūs bepasirinktumėte, mes rekomenduojame jį instaliuoti <i>po</i> jau turint TeX sistemą, kad redaktorius galėtų ją 'surasti' ir tinkamai nusistatyti.</p>
 
-## Working online
+## Darbas internete
 
-There are several powerful online sites that allow you to avoid
-the need to install a TeX system and LaTeX editor at all. These websites
-work by letting you edit your files in the webpage, then they run LaTeX
-behind the scenes, and display the PDF that is produced.
+Yra keletas galingų saitynų, kuie leidžia iš viso išvengti TeX sistemos ir
+LaTeX redaktoriaus instaliavimo.  Šie saitynai suteikia jums galimybę
+redaguoti savo failus tinklapyje, paleidžia LaTeX „už scenos“ ir parodo gautą
+PDF.
 
-Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focused on letting you see the LaTeX code and
-so are closer to having a local installation.
+Kai kurie iš šių saitynų kombinuoja LaTeX su WYSIWYG ypatybėmis, kai kiti
+labiau koncentruojasi ties LaTeX kodu ir yra artimesni lokalioms LaTeX
+sistemoms.
 
-There are systems that let you run LaTeX without needing to be logged in, and we
-are using one of those,
-[TeXLive.net](https://texlive.net), to let you
-edit and test the examples we give. For more complete work, the best online
-systems require that you register before you use them. That lets you save your
-work but also helps the sites not get overloaded. We have set up links so you
-can edit our examples using [Overleaf](https://www.overleaf.com), one of the
-major websites for LaTeX online. There are of course others:
-[Papeeria](https://papeeria.com/) is an example.
+Yra internetinės LaTeX sistemos, vykdančios LaTeX be asmeninio prisijungimo,
+ir mes vienoje iš jų, [TeXLive.net](https://texlive.net), leisime jums
+redaguoti ir testuoti pavyzdžius, kuriuos mes pateiksime.  Geriausios
+sistemos, labiau tinkamos išbaigtiems darbams, reikalauja prisijungimo prieš
+naudojimą.  Tai leidžia jums išsaugoti savo darbus, o saitynus apsaugo nuo
+perkrovos.  Mes pateikiame nuorodas, sekdami kuriomis jūs galie redaguoti
+savo pavyzdžius [Overleaf](https://www.overleaf.com), viename iš didžiausių
+LaTeX saitynų.  Tokių saotymų yra ir daugiau,
+[Papeeria](https://papeeria.com/) yra vienas iš pavyzdžių.
 
-## Working with others
+## Darbas kiteims tikslams
 
-If you are planning to send your LaTeX sources to destinations which process
-them, such as publishers, conference organisers or pre-print servers
-(e.g. arXiv), you should check what restrictions they impose.
+Jei jūs planuojate išsiųsti savo LaTeX failus į vietas, kuriose juos
+kompiliuos, kaip leidėjai, konferencijų organizatoriai ar preprintų serveriai
+(pvz., arXiv), jūs turite patikrinti jų keliamus apribojimus.
 
-## Exercise
+## Pratimas
 
-Get yourself set up with a local LaTeX installation _or_ an account with
-an online LaTeX service. If you are using a local installation, you'll need
-to pick an editor too: we recommend starting with either TeXworks or TeX Shop
-(see above), then looking at other editors later once you know how _you_
-work best with LaTeX.
+Paruoškite sau lokalią LaTeX sistemą _arba_ prisiregistruokite pas
+internetinės LaTeX paslaugos tiekėją. Jei jūs naudosite lokalią sistemą, tada
+jums taip pat reiks pasirinkti ir redaktorių: mes rekomenduojame pradėti
+dirbti su TeXworks ar TeX Shop (žr. aukščiau), o vėliau, kai jau žinosite,
+kaip _jums_ geriausiai dirbasi su LaTeX, patyrinėsite kitus redaktorius.
 
-You'll be able to [run all of our other exercises in your browser](help.md), but we want
-to help you get working with real documents, so now is a great time to get
-yourself ready.
+Jūs galėsite [vykdyti visus mūsų kitus pratimus naršyklėje](help.md), bet mes
+norime padėti jums pradėti dirbti su tikrais dokumentais, todėl dabar yra
+tinkamas laikas pasiruošti.  yourself ready.
