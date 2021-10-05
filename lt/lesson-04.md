@@ -1,27 +1,22 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Logical structure"
-description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
-toc-anchor-text: "Logical structure"
-toc-description: "Structure and visual presentation."
+lang: "lt"
+title: "Loginė struktūra"
+description: "Ši pamoka įveda kelias pagrindines formatavimo komandas ir palygina jas su semantiniu formatavimu, naudojančiu skyrių antraščių komandas ir sąrašus."
+toc-anchor-text: "Loginė struktūra"
+toc-description: "Structūra ir išvaizda."
 ---
 
-# Logical structure
+# Loginė struktūra
 
 <span
-  class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
+  class="summary">"Ši pamoka įveda kelias pagrindines formatavimo komandas ir palygina jas su semantiniu formatavimu, naudojančiu skyrių antraščių komandas ir sąrašus.</span>
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
+LaTeX dokumento sužymėjimo metodai skirti susikoncentruoti į loginę dokumento struktūrą, paslepiant vizualaus dizaino (išvaizdos) nustatymus į komandų apibrėžimus.  Toks atskyrimas įgalina optimizuoti išvaidos apibrėžimą ir ją lengvai keisti, nekeičiant dokumento kūno.
 
-## Structure and visual presentation
+## Structūra ar išvaizda
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasized.)
+Pradėsime nuo pavyzdžio, palyginančio `\emph`, vieną iš populiariausių LaTeX komandų, skirtą loginiam akcentavimui, su `\textit`, tiesiog teksto spausdinimo kursyvu (pasviru šriftu „italic"; kaip tik taip ir spausdinami pabrėžiami dalykai).
 
 ```latex
 \documentclass{article}
@@ -33,24 +28,26 @@ Some text in \textit{italic and \textit{nested} content}.
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+Tikriausiai atspėjote, kad `\textit` komanda skirta spausdinti tekstą
+kursyvu, tik ji _visada_ daro dalykus kursyvu, todėl ji nepaveikia teksto
+išvaizdos, pritaikyta pakartotinai. Pažiūrėkite, kaip `\emph` _pastebi_
+konteksto pasikeitimą. Be to, yra vietų, kuriose akcentavimas išreiškiamas ne
+kursyvu; pavyzdžiui, pristatymuose akcentuoti pakeiciant spalvą paprastai yra
+geriau.  Panaudojus loginį žymėjimą, galima nesijaudinti dėl dokumento kūno
+keitimo, kai keičiamos tokios išvaizdos detalės.
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+Mes panagrinėsime [rankinį formatavimą vėliau](lesson-11), bet šiam momentui
+pridėkime `\textbf` prie žinomų komandų: ji spausdina tekstą pastorintu
+šriftu („bold“).
 
-## Sectioning commands
+## Antraščių komandos
 
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
+Tikriausiai naudojote teksto rengyklę, kurioje, formatuodami skyriaus
+antraštę, dauguma žmonių įveda tekstą, tada tiesiog padaro jo šriftą
+didesniu ir/ar paryškintu ir atskiria naujomis eilutėmis. LaTeX loginis
+sužymėjimas iš tikrųjų yra _lengvesnis_ nei formatavimas rankomis; mes galime
+naudoti `\section` komandą.  Ji valdo šrifto paskeitimus, vertikalius tarpus
+ir t.t., ir daro tai vienodai per visą dokumentą.
 
 ```latex
 \documentclass{article}
@@ -77,30 +74,30 @@ Text of the second section.
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+Panaudodamas standartinę `article` klasę, LaTeX numeruoja skyrius
+(„sections“) ir poskyrius („subsections“) ir paryškina jų pavadinimus.  Mes
+pagalvosime apie dizaino pakeitimą [kitoje pamokoje](lesson-05).
 
-LaTeX can divide up documents into quite a few levels
+Standartinės LaTeX klasės suteikia galimybę padalyti dokumentus į skirtingų
+lygių skyrius:
 
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
+- `\chapter` (tam reikia `\documentclass{book}` arba \documentclass{report}`)
 - `\section`
 - `\subsection`
 - `\subsubsection`
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+Galime eiti „žemyn“ ir toliau: yra `\paragraph` ir `\subparagraph` lygiai,
+bet beveik visada toks skaidymas pasidaro per daug „detalus“. (Taip,
+`\paragraph` yra skyriaus komanda, o _ne_ būdas pradėti naują pastraipą!)
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+Jums gali kilti klausimas dėl dokumento pavadinimo. Tam yra keletas specialių
+komandų, tačiau ne visi dokumentai jas naudoja, taigi mes nagrinėjame tai
+[lygiagrečioje papildomoje pamokoje](more-04).
 
-## Lists
+## Sąrašai
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+Kita labai dažna situacija, kurioje norėsis loginio žymėjimo, yra sąrašų
+formavimas. Yra du įprasti sąrašų tipai, įmontuoti į LaTeX.
 
 ```latex
 \documentclass{article}
@@ -124,16 +121,19 @@ Unordered
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+Pastebėkite, kad naudojame `\item` pradėdami kiekvieną sąrašo įrašą, ir kaip
+tai išeities dokumente automatiškai prideda savą žymę abiejų tipų sąrašuose.
 
-## Exercises
+## Pratimai
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+Eksperimentuokite su skirtingais skyrių lygiais. Išbandykite
+`\documentclass{report}` vietoje `\documentclass{article}` ir pridėkite
+`\chapter` komandas. Kaip atrodo jų išvedamas tekstas?
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+Pabandykite `\paragraph` ir `\subparagraph` komandas, kad pamatyti, kaip jos
+veikia:  paprastai jos _nenumeruoja_ antraščių.
+
+Sudarykite keletą sąrašų ir įklijuokite vieną sąrašą į kitą. Kaip keičiasi
+skaičių ar žymių formatas? Su standartinėmis LaTeX klasėmis galite sukurti
+tik keturis lygius, tačiau apskritai, daugiau nei keturi sąrašų lygiai yra
+blogas ženklas!
