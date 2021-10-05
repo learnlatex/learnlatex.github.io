@@ -1,29 +1,30 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Basic LaTeX document structure"
-description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
----
+lang: "lt"
+title: "Pagrindinė LaTeX dokumento struktūra"
+description: "Ši pamoka yra apie pagrindinę LaTeX dokumento struktūrą ir jo pavertimą į PDF failą, taip pat apie pagrindinius specialiuosius simbolius, naudojamus aprašant struktūrą."
+toc-anchor-text: "Dokumento structūra"
+toc-description: "Pagrindinė dokumento struktūra."
 
-# LaTeX document structure
+
+# LaTeX dokumento struktūra
 
 <span
-  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+  class="summary">Ši pamoka yra apie pagrindinę LaTeX dokumento struktūrą ir jo pavertimą į PDF failą, taip pat apie pagrindinius specialiuosius simbolius, naudojamus aprašant struktūrą.</span>
 
-Your first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to see [how to use the examples](help) here on `learnlatex.org`.
+Pirmasis jūsų LaTeX dokumentas bus labai paprastas: tik parodys dalis, kurios
+yra kiekviename dokumete. Aptarsime, kaip jį sėkmingai įvesti ir bus pirma
+proga panaudoti pavyzdį čia, svetainėje `learnlatex.org`.
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
+Jei naudojate lokaliai įdiegtą LaTeX, redaktoriuje sukurkite naują failą
+pavadinimu `first.tex` ir nusikopijuokite arba surinkite žemiau esantį tekstą.
 
-If you are using the online system, you can just click on the ‘Run at TeXLive.net’
-or ‘Open in Overleaf’ buttons in the example to try it out!
+Jei naudojate internetinę sistemą, galite tiesiog spustelėti po pavyzdžiu
+esančius mygtukus ‘Leisti TeXLive.net’ arba ‘Atidaryti Overleaf’, kad
+išbandytumėte!
 
 <p
-  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+  class="hint">Siūlome išbandyti internetines paslaugas, net jei įsidiegėte LaTeX; tai yra gera proga pamatyti, kaip veikia skirtingi pasirinkimai.</p>
 
 ```latex
 \documentclass{article}
@@ -36,74 +37,75 @@ This is a first document.
 \end{document}
 ```
 
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+Išsaugokite failą ir išveskite iš jo PDF dokumentą; jei naudojate LaTeX
+lokaliai, tada tikslus mygtukas, kurį reikia tam paspausti, priklauso nuo
+jūsų pasirinkto redaktoriaus.  Turite gauti PDF failą, kuriame pavyzdžio
+tekstas, esantis tarp `\begin{document}ą` ir \end{dokument}` _plius_ puslapio
+numeris; LaTeX jį prideda automatiškai.
 
-View the output `first.pdf` with whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+Peržiūrėkite išvestį `first.pdf` naudodami bet kurią PDF skaityklę. Atrodo
+puikiai; sveikiname!
 
-If you want to get HTML rather than PDF output, take a look at the
-[help](./help) for how you can do that.
+Jei norite gauti HTML, o ne PDF išvestį, pažiūrėkite į [pagalbą](./help),
+kaip tai atlikti.
 
-## Handling errors
+## Klaidų tvarkymas
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+Klaidos pasitaiko. Patikrinkite, ar įvedėte kiekvieną pavyzdžio eilutę
+tiksliai taip, kaip ji parašyta aukščiau. Kartais nežymūs įvesties pakeitimai
+nulemia didelius rezultato pokyčius, iki LaTeX neveikimo. Jei užstrigote,
+pabandykite ištrinti dokumentą ir nusikopijuoti iš naujo pavyzdžio eilutes.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+Jei jūsų LaTeX procesas baigiasi klaustuku terminalo lange, tada galite iš to
+išeiti įvesdami po klaustuko `x` ir `<Enter>`.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+
+LaTeX klaidų pranešimai stengiasi būti naudingi, tačiau jie nėra tokie, kaip
+tekstų tvarkyklėse. Kai kuriuose LaTeX redaktoriuose taip pat sunku pamatyti
+'pilną' klaidos tekstą, kuris gali atskleisti esmines detales. LaTeX vykdymo
+metu visada sukuria žurnalą su atliekamų veiksmų įrašais; tai yra tekstinis
+failas su praplėtimu .log.  Jame jūs visada galite surasti pilnus klaidų
+pranešimus. Jei jūs kreipsitės pagalbos dėl klaidos, LaTeX ekspertai dažnai
+paprašys log failo kopijos.
+
+Mes daugiau aptariame klaidų problemą 15 pamoka.
 
 <p
-  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
+  class="hint">Daugiau dėmesio klaidoms paskirsime <a href="./lesson-15">pamokoje 15</a>.</p>
 
-## What you've got
+## Ką sužinojote
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+Pirmasis dokumentas pateikė tik pamatinius dalykus.
+LaTeX dokumentai yra teksto ir komandų mišinys.
+Komandos prasideda kairiniu pasviruoju brūkšniu 
+ir kartais turi argumentų figūriniuose skliaustuose 
+(ir/arba neprivalomus argumentus laužtiniuose skliaustuose).
+Išvesties PDF gaunate, paleisdami LaTeX programą ant įvesties failo.
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
-The `\usepackage` command is described in a [later lesson](lesson-06)
-it is used in most examples on this site to set up the font encoding.
+Kiekvienas LaTeX dokumentas turi `\begin{document}` ir atitinkantį `\end{document}`.
+Tarp jų yra *dokumento kūnas* su jūsų turiniu.
+Pavyzdyje kūnas turi dvi pastraipas (jos atskiriamos tuščiomis eilutėmis). 
+Prieš `\begin{document}` yra *dokumento preambulė*, 
+skirta koduoti dokumento elementų išdėstymą. 
+Komanda `\usepackage` aprašyta [vėlesnėje pamokoje](lesson-06), 
+ji daugumoje mūsų pavyzdžių naudojama nurodyti šriftų kodavimą.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+LaTeX turi apibrėžęs daugiau komandų `\begin{...}` ir `\end{...}` porų; 
+jos žymi tai, kas vadinama *aplinkomis*. Šios komandos ir naudojamos visada
+poromis, kiekvienai `\begin{x}` turi atitikti `\end{x}`. 
+Jei viena aplinka prasidėjo kitoje aplinkoje, tai joje ir turi pasibaigti,
+ t.y., jei `\begin{y}` yra tarp atitinkančių `\begin{x}` ir `\end{x}`, 
+tai `\end{y}` turi buti tarp `\begin{y}` ir `\end{x}`.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+Mes galime rašyti komentarus pradėdami juos`%`; panaudokime juos
+pakomentuoti tokią dokumento struktūrą:
 
 ```latex
-\documentclass[a4paper,12pt]{article} % The document class with options
+\documentclass[a4paper,12pt]{article} % Dokumento klasė su opcijomis
 \usepackage[T1]{fontenc}
-% A comment in the preamble
+% Komentaras preambulėje
 \begin{document}
-% This is a comment
+% Tai yra komentaras kūne
 This is   a simple
 document\footnote{with a footnote}.
 
@@ -111,32 +113,41 @@ This is a new paragraph.
 \end{document}
 ```
 
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+Kaip matote, turime dvi pastraipas, atskirtas tuščia eilute. Taip pat
+pastebėkite (PDF išeities faile), kad keli tarpai yra traktuojami kaip
+vienas.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+Taip pat kartais gali prireikti „kieto“ tarpo, per kurį nelaužiamos
+eilutės. LaTeX dokumente toks tarpas žymimas bangele `~`, „surišančia“ du
+teksto gabalus kartu. Tai ypač pravers vėliau šiame kurse, kai mes pradėsime
+kurti nuorodas.
 
-## Special characters
+## Specialios raidės
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+Tikriausiai jau pastebėjote, kad ``\``, `{` ir `}` turi ypatingas roles LaTeX
+dokumentuose. Su ``\`` prasideda kiekviena LaTeX instrukcija, vadinama
+„komanda“. Figūriniai skliaustai `{` ir `}` apskliaudžia privalomus
+argumentus: informaciją, kuri perduodama komandoms.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+Yra daugiau raidžių, turinčių ypatingą reikšmes; ką tik matėme, kad `~` yra
+„kietas“ tarpas, pavyzdžiui. Beveik visos tokios raidėse _labai_ retai
+pasitaiko įprastame tekste, todėl jos ir buvo pasirinktos ypatingoms
+rolėms. Jei jums prireiks parodyti vieną iš šių specialiųjų simbolių išeities
+dokumente, rasite sprendimą [išsamesnės informacijos puslapyje](more-03).
 
-## Exercise
+## Pratimai
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+Paeksperimentuokite su internetine LaTeS paslaugų sistema: spustelėkite
+mygtuką išvesties gavimui, tada paredaguokite pavyzdį tinklalapyje ir vėl
+paleiskite LaTeX. 
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+Pabandykite pridėti teksto prie savo pirmojo dokumento, pagaminkite PDF
+išvesties dokumentą ir pamatykite pakeitimus. Padarykite keletą skirtingų
+pastraipų, pridėkite skirtingą skaičių tarpų ir vėl žiūrėkite, kas gavosi
+išeities dokumente.
+
+Ištirkite, ar jūsų LaTeX redaktorius palaiko SyncTeX: spustelėkite įvesties
+faile ir suraskite, kaip peršokti į tą pačią eilutą PDF vaizde. 
+
+Pabandykite pridėti keletą kietų tarpų ir pažiūrėti, kaip jie paveikia
+eilučių laužymą.
