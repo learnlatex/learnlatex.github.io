@@ -1,60 +1,50 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Using document classes to influence design"
-description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
-toc-anchor-text: "Document classes"
-toc-description: "Setting the general document layout."
+lang: "lt"
+title: "Kaip dokumento klasės įtakoja išvaizdą"
+description: "Ši pamoka paaiškina, kas yra dokumento klasė ir kaip ji gali įtakoti išeities dokumento išvaizdą, pristatomos pagrindinės LaTeX klasės."
+toc-anchor-text: "Dokumentų klasės"
+toc-description: "Bendros dokumento išvaizdos nustatymas."
 ---
 
-# Document classes
+# Dokumentų klasės
 
 <span
-  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
+  class="summary">Ši pamoka paaiškina, kas yra dokumentų klasė ir kaip ji gali įtakoti išeities dokumento išvaizdą, pristatomos pagrindinės LaTeX klasės.</span>
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
+Galbūt pastebėjote, kad visi LaTeX dokumentai, pateikti mūsų pavyzdžiuose,
+prasidėjo nuo `\documentclass` eilutės ir kad `\documentclass{article}` buvo
+dažniausias variantas. (Mums prireikė `\documentclass{report}` ankstesnėje
+pamokoje išbandyti `\chapter` kommandą.)  Ši eilutė yr būtina visuose LaTeX
+dokumentuose ir (beveik) visada yra pirmoji privaloma LaTeX komanda.
 
-## What a document class does
+## Ką daro dokumentų klasė
 
-The document class sets up the general layout of the document, for example
+Dokumentų klasė nustato bendrą dokumento išvaizdą, pavyzdžiui:
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
+- dizainą: paraštes, šriftus, tarpus ir pan.,
+- ar yra `\chapter` skyriaus lygis,
+- ar dokumento atraštė turėtų būti atskirame puslapyje, `...`
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+Dokumentų klasės taip pat apibrėžia naujas bendras LaTeX komandas; tai ypač pasakytina apie specialius atvejus, kaip klasės pateikties skaidrėms ar laiškams.
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+Dokumentų klasės eilutė gali taip pat nustatyti parinktis, bendras visam dokumentui. Jos pateikiamos laužtiniuose skliaustuose: `\documentclass[<parinktys>]{<klasė>}`. Ši sintaksinė forma, su neprivaloma informacija laužtiniuose skliaustuose po komandos, bet prieš privalomus argumentus, yra bendrai naudojama daugelyje LaTeX komandų.
 
-## The base classes
+## Bazinės klasės
 
-LaTeX is supplied with a set of standard classes, all of which look similar
-but with some variations:
-
+LaTeX visada turi nedidelę aibę standartinių klasių, turinčių tarpusavyje daug bendro, nors su tam tikromis variacijomis:
 - `article`  
-  short documents without chapters
-- `report`  
-  longer documents with chapters, single-sided printing
-- `book`  
-  longer documents with chapters, double-sided printing, with front- and
-  back-matter (for example an index)
-- `letter`  
-  correspondence with no sections
-- `slides`  
-  for presentations (but see below)
+  trumpiems dokumentams be `\chapter` lygio
+- `report`
+  ilgesniems dokumentams su `\chapter` skirsniais, vienpusis spausdinimas (be puslapių skirstymo į kairiuosius ir dešiniuosius)
+- `book`
+  ilgesniems dokumentams su `\chapter` skirsniais, dvipusis spausdinimas, su priešlapiais ir užlapiais (pavyzdžui, rodykle)
+- `letter`
+  spausdintiems laiškams
+- `slides`
+  pristatymams (bet žr. žemiau)
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+Klasės `article`, `report` ir `book` apibrėžia labai panašias komandų aibes. Komandos rašyti korepondencijai iš `letter` klasės yra kiek kitokios:
 
 ```latex
 \documentclass{letter}
@@ -74,48 +64,50 @@ The text goes Here
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialized commands.
+Pastebėkite, kaip ``\\`` atskiria adreso eilutes; mes pažvelgsime į eilučių
+laužymą [kiek vėliau](lesson-11).  Taip pat pastebėkite, kad `letter` klasė
+turi aplinką `letter` kiekvienam atskiram laiškui ir kitas specialias
+komandas.
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+Standartinės klasės `article`, `report` ir `book` priima parinktis `10pt`,
+`11pt` ir `12pt`, surinktas neprivalome `documentclass` argumente, kad
+pakeisti pagrindinio teksto šrifto dydį (ir kai kuriuos kitus susijusius
+dydžius), taipogi `twocolumn`, kad išvesti dokumentą dviem kolonėlėmis
+(kelios parinktys atskiriamos kableliais).
 
-## Function-rich classes
+## Klasės su papildomomis galimybėmis
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
+Pagrindinės klasės yra labai stabilios, tačiau tai reiškia, kad jos taip pat
+yra gana konservatyvios tiek dizaino, tiek komandų keitimo požiūriu. Laikui
+bėgant buvo parašyta keletas lankstesnių klasių, leidžiančių jums pakeisti
+dizainą, neperprogramuojant jo rankiniu būdu (ką mes panagrinėsime [šiek tiek
+vėliau](lesson-11)).
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+Amerikos matematikų draugija (_American Mathematical Society_, AMS) paruošė
+standartinių klasių variantus (`amsart`, `amsbook`) su dizainu būdingu
+tradicinėms matematikos mokslo publikacijoms.
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt`, `scrbook`, and `scrlttr2`, while there is
-a single `memoir` class that is most like an extension of `book`.
+Didžiausios ir populiariausios „išplėstinės“ klasės yra iš KOMA-Script
+rinkinio ir klasė `memoir`. KOMA-Script siūlo atitikmenis standartinėms
+klasėms: `scrartcl`, `scrreprt`, `scrbook`, ir `scrlttr2`. Klasė `memoir` yra
+atskira ir labiausiai primena `book` klasės išplėtimą.
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-16), but you can always
-jump ahead!
+Šiose išplėstinėse klasėse yra daug paruošta daug keitimams patogių kablių
+(_hooks_), kai kuriuos parodysime pratimuose.  Gali kilti klausimas, kaip
+galite žinoti apie jų pateiktus kablius; mes rašysime apie tai [vėlesnėje
+pamokoje](lesson-16), bet jūs visada galite žvilgtelti į ateitį!
 
-## Presentations
+## Pristatymai
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+Klasė `slides` buvo sukurta ruošti fizinėms skaidrėms 1980-tųjų viduryje,
+todėl nepateikia jokių priemonių kurti interaktyvius PDF pristatymus.  Bet
+yra modernios klasės, skirtos būtent tam; kadangi jos yra pakankamai
+specializuotos, lyginant su bendrų LaTeX dokumentų klasėmis, tai bus
+pristatytos [papildomoje pamokoje](more-05).
 
-## Exercises
+## Pratimai
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+Ištirkite, kaip dokumento klasės pakeitimas iš standartinės į vieną iš KOMA rinkinio ar į `memoir` klasę paveikia išvesties dokumento išvaizdą.
 
 ```latex
 \documentclass{article} % Change the class here
@@ -133,10 +125,11 @@ document have two columns.
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
+Pridėkite klasės parinktį `twocolumn` ir pamatykite, kaip pasikeitė
+išdėstymas.
 
-Change the `\section` above to `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+Pakeiskite komandą `\section` į `\chapter` ir suraskite, ką paveikia toliau
+išvardintos parinktys, panaudotos kartu su `scrreprt` klase:
 
 - `chapterprefix`
 - `headings=small`
