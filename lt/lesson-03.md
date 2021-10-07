@@ -3,9 +3,9 @@ layout: "lesson"
 lang: "lt"
 title: "Pagrindinė LaTeX dokumento struktūra"
 description: "Ši pamoka yra apie pagrindinę LaTeX dokumento struktūrą ir jo pavertimą į PDF failą, taip pat apie pagrindinius specialiuosius simbolius, naudojamus aprašant struktūrą."
-toc-anchor-text: "Dokumento structūra"
+toc-anchor-text: "Dokumento struktūra"
 toc-description: "Pagrindinė dokumento struktūra."
-
+---
 
 # LaTeX dokumento struktūra
 
