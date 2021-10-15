@@ -1,32 +1,31 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "lt"
 title: "Extending LaTeX using packages and definitions"
-description: "This lesson shows how you can extend LaTeX to your needs and change its layout further by using different packages, and shows how you can define your own commands."
-toc-anchor-text: "Extending LaTeX"
-toc-description: "Using packages and definitions."
+description: "Ši pamoka parodo, kaip galite praplėsti LaTeX pagal savo poreikius: pakeisti išvesties dokumentų išvaizdą, panaudojant įvairius paketus, ir apibrėžti savo komandas."
+toc-anchor-text: "LaTeX praplėtimas"
+toc-description: "Paketų ir apibrėimų panaudojimas."
 ---
 
-# Extending LaTeX
+# LaTeX praplėtimas
 
 <span
-  class="summary">This lesson shows how you can extend LaTeX to your needs and change its layout further by using packages and definitions. It also shows how you can define your own commands.</span>
+  class="summary">Ši pamoka parodo, kaip galite praplėsti LaTeX pagal savo poreikius: pakeisti išvesties dokumentų išvaizdą, panaudojant įvairius paketus, ir apibrėžti savo komandas.</span>
 
-After having declared a class, in the preamble you can modify functionality in
-LaTeX by adding one or more *packages*. These can
+Deklaravę preambulėje dokumento klasę, galite toliau modifikuoti LaTeX veikimą, pridėdami vieną ar daugiau *paketų*. Jie gali
 
-- Change how some parts of LaTeX work
-- Add new commands to LaTeX
-- Change document design
+- pakeisti kai kurių LaTeX dalių veikimą,
+- pridėti naujų komandų prie jau apibrėžtų klasėje ir LaTex branduolyje,
+- pakeisti dokumento išvaizdą.
 
-## Changing how LaTeX works
+## LaTeX darbo keitimas
 
-The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
-and so some add-on packages deal with very common ideas. The first is to
-change how LaTeX deals with language-specific typesetting (hyphenation,
-punctuation, quotations, localisation, etc.). Different languages have different
-rules, so it's important to tell LaTeX which one to use. This is handled by the
-`babel` package.
+LaTeX 'branduolys' (esminė LaTeX dalis) nėra lengvai pritaikomas vartotojo
+poreikiams, bet papildomi paketai išsprendžia daugumą dažniausiai sutinkamų
+problemų.  Pirmiausia verta paminėti, kaip LaTeX prisitaiko prie konkrečios
+kalbos rašymo taisyklių (žodžių kėlimo, skyrybos, citatų atskyrimo,
+lokalizacijos ir kt.).  Jos yra surinktos `babel` („Babylono“) pakete, kuriam
+reikia nurodyti dokumente naudojamas kalbas.
 
 ```latex
 \documentclass{article}
@@ -34,30 +33,34 @@ rules, so it's important to tell LaTeX which one to use. This is handled by the
 
 %\usepackage[french]{babel}
 
-\usepackage[width = 6cm]{geometry} % To force hyphenation here
+\usepackage[width = 6cm]{geometry} % kad priversti kelti žodžius
 
 \begin{document}
 
 This is a lot of filler which is going to demonstrate how LaTeX hyphenates
 material, and which will be able to give us at least one hyphenation point.
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
-
+Voici beaucoup de texte de remplissage pour démontrer comment le LaTeX s'occupe des
+coupures de mots en fin de ligne; pour ça, il nous faut au moins un point de césure.
+Čia daugiausia tik vietos užpildymui skirtas tekstas, demonstruojantis, kaip 
+\LaTeX{} perkėlinėja žodžius, ir turintis pademonstuoti nors vieną kėlimą. 
 \end{document}
 ```
 
-Try un-commenting the (clearly misleading) line to load `babel` and see the
-effect. (The standard hyphenation rules are US English.)
+Pabandykite atkomentuoti (aiškiai netinkamą) eilutę su prancūzų kalbos
+nustatymu `babel` pakete ir pastebėkite efektą išvesties dokumente
+(standartiškai LaTeX veikia JAV anglų kalbos kėlimo taisyklės.)
 
-The `babel` package does a lot more than hyphenation, depending on the language
-involved; we've given [some more details](more-06) if you need them.
+Šis paketas apibrėžia daug daugiau dalykų, priklausomų nuo kalbos, nei tik
+žodžių kėlimas; galite [daugiau apie juos sužinoti](more-06), jei įdomu.
 
-## Changing design
 
-It's useful to be able to adjust some aspects of design independent of the
-document class. The most obvious one are the page margins. We've just used
-the `geometry` package in the example above, but let's now have an example
-specifically about margins.
+## Dizaino keitimas
+
+Naudinga sugebėti pakeisti kai kuriuos dizaino aspektus nepriklausomai nuo
+dokumentų klasės. Labiausiai krentantis į akis dalykas yra puslapio dydis
+(arba paraštės). Mes ką tik panaudojome `geometry` paketą pavyzdyje aukščiau,
+bet dabar panagrinėkime pavyzdį, skirtą paraštėms (dėmesio, išvesties
+dokumentas turi daugiau nei vieną puslapį):
 
 ```latex
 \documentclass{book}
@@ -93,23 +96,24 @@ Text of the second section.
 \end{document}
 ```
 
-You should see the effect here compared to not loading `geometry`.
+Jūs turėtumėte pastebėti efektą, palygindami rezultatą su gautu užkomentavus
+`geometry` paketo eilutę.
 
-## Adding new functionality
+## Naujo funkcionalumo pridėjimas
 
-One of LaTeX's strengths is that you can choose from thousands of packages,
-including ones for writing mathematical text, for hyperlinking, for
-sophisticated capabilities with color, etc. We will see some more common
-packages in later lessons.
+Viena iš LaTeX stiprybių yra galimybė pasirinkti iš tūkstančių paketų tuos,
+kurie skirti jūsų poreikiams tenkinti: rašyti matematines formules, kurti
+interaktyvias nuorodas, išgauti norimus spalvų deruinius ir pan.  Vėlesnėse
+pamokose pamatysime kai kuriuos dažnai naudojamus paketus.
 
-## Defining commands
 
-Sometimes you need a command specific to your document, either some
-functionality not found in the available packages or simply a command
-to enter a common expression that is used multiple times.
+## Komandų apibrėžimas
 
-The following example shows a command to produce keywords with a
-specific style applied.
+Kartais jums prireikia komandos, pritaikytos jūsų dokumentui, arba dėl tam
+tikro veikimo, nerasto turimuose paketuose, arba kad patogiai įvestumėte
+bendrą išraišką, kurią naudojate daug kartų.
+
+Šiame pavyzdyje parodyta komanda, kuri išveda raktinius žodžius konkrečiu stiliumi:
 
 ```latex
 \documentclass{article}
@@ -124,18 +128,18 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-In the definition `[1]` denotes the number of arguments (here one)
-and `#1` denotes the first argument that is supplied
-(`apples` or `oranges` in this example). You may have up to nine
-arguments, but it is usually best to have just one argument, or
-sometimes none at all.
+Apibrėžime `[1]` nurodo komandos argumentų skaičių (vienas), ir `#1` pažymi
+vietą, kurioje pirmasis (ir vienintelis šiuo atveju) argumentas bus įstatytas
+(`apples` arba `oranges` šiame pavyzdyje). Jūs galite panaudoti iki devynių
+argumentų, bet dažniausiai apsieinama su vienu ar visai be argumentų.
 
-Defining commands does not just reduce the typing required to produce
-a document. It helps to separate out the styling information. If it is
-decided to use a different style for keywords, rather than having to
-edit the entire document, you simply need to use a different
-definition. Here we load the `xcolor` package to provide colors, and
-use blue in place of bold in the formatting.
+Apibrėždami komandas galite ne tik sumažinti spausdinimą, reikalingą
+dokumentui parengti. Jūs galite atskirti pateikimo formą (dizaino sprendimus)
+nuo turinio.  Jei nuspręsite raktiniams žodžiams naudoti kitokį stilių, tai,
+užuot redagavę visą dokumentą, jūs tiesiog pakeisite apibrėžimą.
+
+Dabar mes pakrausime `xcolor` packetą, įgalinantį naudoti spalvas, ir
+panaudosime mėlyną (`blue`) spalvą vietoje šrifto pastorinimo:
 
 ```latex
 \documentclass{article}
@@ -152,22 +156,25 @@ Something about \kw{apples} and \kw{oranges}.
 \end{document}
 ```
 
-Beware that defining too many commands or defining commands with
-multiple arguments may make the document source harder  to understand
-as it is using an unfamiliar syntax. The ability to define
-document-specific commands should be used with care.
+Turėkite omenyje, kad apibrėždami labai daug komandų arba komandas su
+daugeliu argumentų, padarote LaTeX įvesties dokumentą sunkiau suprantamą
+(kitiems ar net jums vėliau), nes naudojate naują sintaksę.  Galimybė
+apibrėžti konkrečiam dokumentui skirtas komandas turėtų būti naudojama
+saikingai.
 
-## Exercises
+## Pratimai
 
-Try out writing some text in other European languages and see how `babel`
-affects hyphenation: you can probably find some text on the internet, and guess
-the right options.
+Pabandykite parašyti tekstą kitomis Europos kalbomis ir pažiūrėkite, kaip
+`babel` panaudojimas paveikia žodžių kėlimą: jūs tikriausiai galite surasti
+kokį nors tekstą internete ir atspėti tinkamus `babel` nustatymus.
 
-Try altering the margins in the `geometry` example. You can set the individual
-`top`, `bottom`, `left` and `right` margins separately using a comma-separated
-list.
+Pabandykite pakeisti paraštes `geometry` naudojimo pavyzdyje. Jūs galite
+priskirti skirtingus dydžius `top` (viršutiniajai), `bottom` (apatiniajai),
+`left` (kairiajai) ir `right (dešiniajai) paraštėms, atskirdami lygybes
+kableliais.
 
-Try loading the `lipsum` package and then add the command `\lipsum` to your
-document. Can you guess why this package is useful for making examples?
+Pabandykite įkelti `lipsum` paketą ir tada pridėti `\lipsum` komandą į jūsų
+dokumento kūną. Ar galite atspėti, kodėl šis paketas naudingas kuriant
+dokumentų pavyzdžius?
 
-Try altering the definition of `\kw` to achieve a different style.
+Pabandykite pakeisti `\kw` apibrėžimą, kad pritaikyti skirtingus šriftų stilius. 
