@@ -4,7 +4,7 @@ lang: "lt"
 title: "Extending LaTeX using packages and definitions"
 description: "Ši pamoka parodo, kaip galite praplėsti LaTeX pagal savo poreikius: pakeisti išvesties dokumentų išvaizdą, panaudojant įvairius paketus, ir apibrėžti savo komandas."
 toc-anchor-text: "LaTeX praplėtimas"
-toc-description: "Paketų ir apibrėimų panaudojimas."
+toc-description: "Paketų ir apibrėžimų panaudojimas."
 ---
 
 # LaTeX praplėtimas

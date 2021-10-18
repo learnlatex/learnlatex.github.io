@@ -1,19 +1,19 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Including graphics and positioning"
-description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
-toc-anchor-text: "Using graphics"
-toc-description: "Appearance and positioning of graphics."
+lang: "lt"
+title: "Paveiksliukų įdėjimas ir pozicionavimas"
+description: "Ši pamoka parodo, kaip į savo dokumentą galite įdėti išorinius grafikos failus, kaip pakeisti jų dydį ir kaip pasiekti, kad jie automatiškai „nuplauktų“ į tinkamą vietą išeities dokumente."
+toc-anchor-text: "Grafikos panaudojimas"
+toc-description: "Grafikos formavimas ir pozicionavimas."
 ---
 
-# Including Graphics and positioning
+# Grafikos įdėjimas ir pozicionavimas
 
 <span
-  class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
+  class="summary">Ši pamoka parodo, kaip galite įdėti į savo dokumentą išorinius grafikos failus, pakeisti jų dydį, juos pozicionuoti ar leisti jiems „dreifuoti“ teskte automatiškai.</span>
 
-To bring in graphics from outside LaTeX, use the `graphicx`
-package, which adds the command `\includegraphics` to LaTeX.
+Norėdami įdėti į dokumentą paveiksliuką, išsaugotą grafikos faile, naudokite
+`graphicx` paketą, kuris apibrėžia komandą `\includegraphics`.
 
 ```latex
 \documentclass{article}
@@ -29,29 +29,32 @@ is an imported PDF.
 \end{document}
 ```
 
-You can include EPS, PNG, JPG, and PDF files.
-If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extension if you do not give one.)
+Galite įtraukti EPS, PNG, JPG ir PDF formatų failus. Jei turite paruošę tą
+patį paveiksliuką daugiau nei vienu formatu, galite rašyti, pavyzdžiui
+`example-image.png`. (`graphicx` paketas bandys atspėti pavadinimo išplėtimą,
+jei jūs jo neužrašysite.)
 
-You'll notice we've used a new environment here, `center`, to place the image
-horizontally centered on the page. [A bit later](lesson-11), we'll talk more
-about spacing and positioning.
 
-## Altering graphic appearance
+Pastebėkite, kad čia panaudojome naują aplinką `center` tam, kad
+horizontaliai centruoti paveiksliuką teksto srityje. [Šiek tiek
+vėliau](lesson-11), daugiau papasakosime apie tarpus ir padėties nustatymą.
 
-The `\includegraphics` command has many options to control
-the size and shape of the included images and to trim down material. Some of
-these are used a lot, so they are worth being aware of.
 
-The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` or `\linewidth` and
-`\textheight`. The difference between `\textwidth` and `\linewidth` is subtle
-and often the result is the same. `\textwidth` is the width of the text block on
-the physical page, whereas `\linewidth` is the _current_ width, which might
-locally be different (the difference is most obvious with the class option
-`twocolumn`). LaTeX will automatically scale the image so that the aspect
-ratio stays correct.
+## Grafikos dydžio ir formos keitimas
+
+Komanda `\includegraphics` turi daug parametrų, valdančių įdedamų paveikliukų
+dydį, formą ar apkarpymą. Su dažniausiai naudojamais tarp jų verta
+susipažinti.
+
+Akivaizdžiausi dalykai, kuriuos reikia nustatyti, yra grafikos plotis
+(`width`) ir aukštis (`height`), kurious taipogi galima išreikšti per teksto
+plotį (`\textwidth`) ar eilutės ilgį (`\linewidth`) ir teksto srities aukštį
+(`\textheight`).  Dažnai skirtumo tarp teksto pločio (`\textwidth`) ir
+eilutės ilgion (`\linewidth`) nėra, bet ne visada. Eilutės _tam tikroje
+vietoje_ gali būti ne per visą teskto srities plotį (pavyzdžiui, įjungus
+klasės nustatymą `twocolumn`, kuris išveda tekstą dviem kolonėlėmis per
+puslapį). LaTeX automatiškai keičia paveikliuko dydį, išlaikydamas pastovų
+aukščio ir pločio santykį.
 
 ```latex
 \documentclass{article}
@@ -69,8 +72,9 @@ Some text
 \end{document}
 ```
 
-You can also `scale` images, or rotate them by an `angle`. The other thing you
-might want to do is to `clip` and `trim` an image.
+Galite išreikštu būdu nurodyti paveiksliukų didinimą ar mažinimą su parametru
+`scale`, arba pasukimo kampą su `angle`. Kitas dalykas, kurio jums gali
+prireikti, yra apkirpimas, nurodomas su parametrais `clip` ir `trim`.
 
 ```latex
 \documentclass{article}
@@ -84,21 +88,21 @@ might want to do is to `clip` and `trim` an image.
 \end{document}
 ```
 
-## Making images float
+## Leidimas paveiksliukams „plaukti“
 
-Traditionally in typesetting, particularly with technical documents,
-graphics may move to another spot in the document.
-This is called a *float*. Images are normally included as floats so they do
-not leave large gaps in the page.
+Tradiciškai leidyboje grafika gali būti „nepririšta kietai“ prie tam tikros
+teksto vietos, ypač tai liečia techninę literatūrą, t.y., gali „plaukioti“
+teksto atžvilgiu, kad nebūtų per didelių tarpų ar pan.  Tokie dokumento
+elementai vadinami *plaukiojančiais*.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummy text as filler
+\usepackage{lipsum}  % pagamina beprasmį tekstą kaip užpildą
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
+\lipsum[1-4] % Tik keletas užpildytų pastraipų
 
 Test location.
 \begin{figure}[ht]
@@ -107,42 +111,43 @@ Test location.
   \caption{An example image}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % Dar keletas užpildytų pastraipų
 \end{document}
 ```
 
-Here LaTeX moves the graphic and the caption
-away from the `Test location` text to the top of the second page,
-because there isn't room for it on the bottom of the first page.
-The `ht` influences where LaTeX can place the float; these two
-letters mean that it can go where it is in the source (next to
-`Test location`) or to the top of a page. You can use up to four position
-specifiers
+Šiame pavyzdyje LaTeX perkelia grafiką ir jos antraštę toliau nuo jos įdėjimo
+vietos įvesties dokumente, į antro pulapio viršų, nes nepakanka vietos pirmo
+puslapio apačioje. Nustatymai `ht` reguliuoja, kur LaTeX gali „prišvartuoti“
+plaukiojantį elementą; šios dvi raidės leidžia „čia“ (`here`), t.y., įvesties
+vietoje teksto atžvilgiu, arba puslapio viršuje (`top`).  Galite naudoti iki
+keturių vietos indikatorių:
 
-- `h` 'Here' (if possible)
-- `t` Top of the page
-- `b` Bottom of the page
-- `p` A dedicated page only for floats
+- `h` (_**h**ere_), „čia“ (jei įmanoma)
+- `t` (_**t**op_) (kito) puslapio (ar kolonėlės) viršuje
+- `b` (_**b**ttom_) puslapio apačioje
+- `p` (_**p**age_) tik plaukiojantiems elementams skirtame puslapyje
 
-[Later](lesson-09), we will see how to cross-reference floats so you can point
-to them from your text.
+[Vėliau](lesson-09) pamatysime, kaip sukurti nuorodas į plaukiojančius elementus iš savo teksto.
 
-You'll probably spot that we've centered the image here using `\centering`
-rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally center content; this avoids both
-the float and `center` environment adding extra vertical space.
+Tikriausiai pastebėjote, kad paveiksliuką sucentravome su `\centering`
+komanda, bet ne su `center` aplinka. Viduje plaukiojančio elemento (kurį
+sukuria `figure` aplinka), geriau naudoti `\centering` komandą horizontaliam
+turinio centravimui; taip išvengsite papildomų vertikalių tarpų, kuriuos
+`center` aplinka prideda prie plaukiojančios aplinkos tarpų.
 
-## Exercises
+## Pratimai
 
-Try including an image you have created, replacing the 'standard' ones we have
-used in the demonstration.
+Pabandykite įdėti savo paveiksliuką, pakeisdami „standartinius“, kuriuos
+naudojome pavyzdžiuose.
 
-Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+Ištirkite, ką galite padaryti naudodamiesi parametrais `height`, `width`,
+`angle` ir `scale`.
 
-Use the `width` key to set the size of a graphic relative to `\textwidth` and
-another graphic relative to `\linewidth`. Try out how they behave with or
-without the `twocolumn` option.
+Panaudokite `width` parametrą nustatydami vieno paveiksliuko dydį, išreikštą
+per `\textwidth`, o kito -- per `\linewidth`. Pabandykite, kaip jie veikia su
+ir be `twocolumn` nustatymo.
 
-Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different
-specifiers interact?
+Panaudokite `lipsum` paketą sukurdami pakankamai ilgą demonstraciją, kurioje
+būtų matyti, kaip plaukiojantys elementai pozicionuojami vietos
+indikatoriais.  Kaip skirtingi indikatoriai veikia vienas kitą?
+
