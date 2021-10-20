@@ -1,75 +1,76 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Tables"
-description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
-toc-anchor-text: "LaTeX tables"
-toc-description: "Fundamentals of working with tables."
+lang: "lt"
+title: "Lentelės"
+description: "Ši pamoka parodo, kaip koduoti LaTeX kalboje lenteles, nustatyti teksto lygiavimą langeliuose ir tarp jų, pridėti linijas ir apjungti langelius."
+toc-anchor-text: "LaTeX lentelės"
+toc-description: "Darbo su lentelėmis pagrindai."
 ---
 
-# Tables
+# Lentelės
 
 <span
-  class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>
+  class="summary">Ši pamoka parodo, kaip koduoti LaTeX kalboje lenteles, nustatyti teksto lygiavimą langeliuose ir tarp jų, pridėti linijas ir apjungti langelius.</span>
 
-Tables in LaTeX are set using the `tabular` environment. This lesson will assume
-you load the `array` package, which adds more functionality to LaTeX tables, and
-which is not built into the LaTeX kernel only for historic reasons. So put the
-following in your preamble and we're good to go:
-
+Lentelės LaTeX renkamos `tabular` aplinkoje. Šioje pamokoje darome prielaidą,
+kad jūs naudojate `array` paketą, kuris prideda daugiau galimybių LaTeX
+lentelėms ruošti ir kuris nėra LaTeX branduolyje tik dėl istorinių
+aplinkybių. Taigi, įdėkite į savo dokumento preambulę šiuos dalykus ir mes
+galėsime pradėti:
 
 ```latex
 \usepackage{array}
 ```
 {: .noedit :}
 
-In order to typeset a `tabular` we have to tell LaTeX how many columns will be
-needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names,
-called preamble-tokens. The available column types are:
+Įvesdami `tabular` aplinką turime nurodyti, kiek bus kolonėlių ir koks juose
+bus lygiavimas. Tai labai paprastai nurodome privalomajame `\begin{tabular}`
+komandos argumente, dažnai vadinamame lentelės preambule: viena raidė vienai
+kolonėlei (sudėtingesni dalykai priklauso `array` paketui). Raidės vadinamos
+preambulės žetonais (_preamble-tokens_) ir yra tokios:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type       | description |
+| žetonas    | teksto lygiavimas kolonėlėje |
 | ---        |:-- |
-| `l`        | left aligned column |
-| `c`        | centered column |
-| `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`; the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
-| `b{width}` | like `p`, but bottom aligned |
-| `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
-| `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
+| `l`        | pagal kairįjį kraštą (_**l**eft aligned_) |
+| `c`        | centruotas (_**c**entered_) |
+| `r`        | pagal dešinįjį kraštą (_**r**ight aligned_) |
+| `p{width}` | sulaužytas į pločio `width` **p**astraipą, išlygiuotą abiejuose kraštuose; vertikalus lygiavimas pagal pirmąją pastraipos eilutę (_top aligned_) |
+| `m{width}` | kaip `p`, bet vertikaliai centruotas (_**m**iddle aligned_) |
+| `b{width}` | kaip `p`, bet vertikaliai – pagal apatinę eilutę (_**b**ottom aligned_) |
+| `w{align}{width}` | kaip `p`, bet horizontaliai – pagal `align`, kuris gali būti vienas iš `l`, `c`, ar `r` |
+| `W{align}{width}` | kaip `w`, tik įspės apie perpildytą dėžę (_overfull box_), jei turinys netilps į nurodytą plotį |
 
-In addition, a few other preamble-tokens are available which don't define a
-column but might be useful as well:
+Be to, yra keletas kitų preambulės žetonų, kurie neapibrėžia kolonėlės, bet
+taip pat gali būti naudingi:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type | description |
+| žetonas | veikimo aprašymas |
 | ---  | :-- |
-| `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
-| `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
-| `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
-| <span>`|`</span>  | add a vertical rule |
-| `@{decl}` | replace the space between two columns with `decl` |
-| `!{decl}` | add `decl` in the center of the existing space |
+| `*{num}{string}` | `num` kartų pakartoja seką `string` preambulėje; taip galite aprašyti daug identiško lygiavimo kolonėlių |
+| `>{decl}` | įdeda deklaraciją `decl` prieš kiekvieno langelio turinį kitoje kolonėlėje (tai praverčia, pvz., nustatyti kitokį kolonėlės šriftą) |
+| `<{decl}` | įdeda `decl` po kiekvieno langelio turinio ankstesnioje kolonėlėje |
+| <span>`|`</span>  | brėžia vertikalią liniją tarp langelių |
+| `@{decl}` | pakeičia tarpą tarp dviejų langelių į `decl` |
+| `!{decl}` | įdeda `decl` į vidurį tarpo, esančio tarp dviejų langelių |
 
-These two tables list all the available column types from LaTeX and the `array`
-package. A few additional column types, from different packages, are presented
-in the [further details page](more-08) for this lesson.
+Šios dvi lentelės pateikė visus galimus LaTeX ir `array` paketo kolonėlių
+tipus.  Keli papildomi kolonėlių tipai iš kitų paketų pateikti [papildomos
+informacijos puslapyje](more-08) prie šios pamokos.
 
-The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centered columns, you'd use
-`ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
+Kolonėlės tipo `l`, `c`, ir `r` natūraliai turi plačiausio jų langelio plotį.
+Kiekviena kolonėlė turi būti deklaruota, taigi, norėdami trijų centruotų
+kolonėlių, lentelės preambulėje nurodykite `ccc`.  Tarpai preambulėje
+ignoruojami, todėl `c c c` reiškia tą patį.
 
-In a table body columns are separated using an ampersand `&` and a new row is
-started using `\\`.
+Lentelėje kolonėlės atskiriamos ženklu `&` (_ampersand_), o perėjimas į naują
+eilutę nurodomas su `\\`.
 
-We have everything we need for our first table. In the following code the
-`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
-source.
+Mes jau turime viską, ko reikia mūsų pirmajai lentelei.  Tolesniame kode
+ženklai `&` ir `\\` yra sulygiuoti.  Tai daryti nėra būtina, tik padeda
+skaityti įvesties kodą.
 
 <!-- {% raw %} -->
 ```latex
@@ -86,11 +87,10 @@ source.
 \end{tabular}
 \end{document}
 ```
-
 <!-- {% endraw %} -->
 
-If a table column contains a lot of text you will have issues to get that
-right with only `l`, `c`, and `r`. See what happens in the following example:
+Jei lentelės kolonėlėje yra daug teksto, tai bus problemų išgauti tinkamą
+vaizdą tik su `l`, `c`, ar `r`.  Pažiūrėkite, kas atsitinka šiame pavyzdyje:
 
 <!-- {% raw %} -->
 
@@ -114,12 +114,12 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 ```
 <!-- {% endraw %} -->
 
-The issue is that the `l` type column typesets its contents in a single row at
-its natural width, even if there is a page
-border in the way. To overcome this you can use the `p` column. This
-typesets its contents as paragraphs with the width you specify as an argument
-and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare the above outcome to the following:
+Problema ta, kad `l` tipo kolonėlės langelis pateikia savo turinį vienoje
+eilutėje visu jo natūraliu pločiu, net jei išeinama už puslapio krašto.
+Norėdami tai sutvarkyti, galite naudoti kolonėlę `p`.  Joje langelių turinys
+pateikiamas pastraipomis, kurių plotį nurodėte `p` argumente, o vertikaliai
+jos lygiuojamos pagal savo pirmąsias eilutes &ndash; tas jums dažniausiai ir
+tiks.  Palyginkite aukščiau gautą rezultatą su šiuo:
 
 <!-- {% raw %} -->
 ```latex
@@ -142,11 +142,12 @@ time. Compare the above outcome to the following:
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it is cumbersome to put that
-many column definitions in the preamble.  You can make things easier
-by using `*{num}{string}`, which repeats the `string`  `num` times.
-So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
-table of this lesson with the newly learned syntax:
+Jei kartais jūsų lentelėje yra daug to paties tipo stulpelių, gali būti
+nepatogu į preambulę surašyti tiek pat stulpelių apibrėžimų.  Naudojantis
+žetonu `*{num}{string}`, kuris `num` kartų pakartoja seką `string`, galite
+pasilengvinti uždavinį.  Taigi, `*{6}{c}` yra lygiavertis `cccccc`.  Kad
+pademonstruoti, kad tai veikia, štai pirmoji šios pamokos lentelė su naujai
+išmokta sintakse:
 
 <!-- {% raw %} -->
 ```latex
@@ -165,19 +166,20 @@ table of this lesson with the newly learned syntax:
 ```
 <!-- {% endraw %} -->
 
-## Adding rules (lines)
 
-A word of advice prior to introducing rules; lines should be used really
-sparsely in tables, and normally vertical ones look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first. For the sake of completeness the standard
-lines are shown in the [more-info](more-08) page.
+## Linijų pridėjimas
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
+Patariamasis žodis prieš pradedant apie linijas: linijų lentelėse turėtų būti
+naudojama nedaug, o vertikaliosios paprastai neatrodo profesionaliai.  Tiesą
+sakant, profesionalioms lentelėms nereiktų naudoti standartinių LaTeX linijų;
+vietoj to jūs turėtumėte susipažinti su `booktabs` paketo galimybėmis, todėl
+jis čia pirmiausia ir aptariamas.  Siekiant išsamumo, standartinės linijos
+parodytos [„daugiau šia tema“](more-08)s puslapyje.
+
+Paketas `booktabs` apibrėžia keturis skirtingus horizontalių linijų
+tipus. Visos horozontalių linijų komandos gali būti naudojamos tik kaip
+pirmieji dalykai lentelių eilutėse.  Trys linijų komandų tokios: `\toprule`
+(virš lentelės), `\midrule` (lentelės viduje) ir `\bottomrule` (po lentele):
 
 <!-- {% raw %} -->
 ```latex
@@ -185,7 +187,6 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 \usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
-
 
 \begin{document}
 \begin{tabular}{lll}
@@ -201,11 +202,11 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 ```
 <!-- {% endraw %} -->
 
-The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
-draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
-Even if you only want to draw the rule for a single
-column you need to specify that as a range (with both numbers matching).
+Ketvirtoji linijos brėžimo komanda `booktabs` pakete yra `\cmidrule`.  Ji
+naudojama nubrėžti liniją ne per visą lentelės plotį, o tik per nurodytą
+kolonėlių intervalą; pastarasis nurodomas kaip kolonėlių numerių intervalas:
+`{`_numeris_`-`_numeris_`}`.  Net jei reikia linijos tik per vieną kolonėlę,
+turite nurodyti intervalą (su vienodais skaičiais).
 
 <!-- {% raw %} -->
 ```latex
@@ -231,8 +232,8 @@ column you need to specify that as a range (with both numbers matching).
 ```
 <!-- {% endraw %} -->
 
-There is another useful feature of `\cmidrule`. You can shorten it on either end
-with an optional argument enclosed in parentheses:
+Viena naudinga `\cmidrule` savybė yra galimybė pritrumpinti linijos galus.
+Trumpinamas galas nurodomas raide neprivalomame argumente skliausteliuose:
 
 <!-- {% raw %} -->
 ```latex
@@ -259,12 +260,12 @@ with an optional argument enclosed in parentheses:
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
-and **l**eft end, respectively.
+Galbūt jūs jau atspėjote, kad `r` ir `l` reiškia atitinkamai dešinįjį
+(_**r**ight_) ir kairįjį (_**l**eft_) galą.
 
-Sometimes a rule would be too much of a separation for two rows but to get
-across the meaning more clearly you want to separate them by some means. In this
-case you can use `\addlinespace` to insert a small skip.
+Kartais linija būna per daug ryškus atskyrimas tarp dviejų eilučių, nors
+aiškesniam suvokimui norisi jas kažkaip atskirti. Tokiu atveju galima
+panaudoti `\addlinespace` mažo papildomo tarpo įdėjimui.
 
 <!-- {% raw %} -->
 ```latex
@@ -293,18 +294,18 @@ case you can use `\addlinespace` to insert a small skip.
 <!-- {% endraw %} -->
 
 
-## Merging cells
+## Langelių apjungimas
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
-has to be used as the first thing in a cell. `\multicolumn` takes three
-arguments:
+Vienoje eilutėje esančius kaimyninius langelius galite apjungti su komanda
+`\multicolumn`.  Ji turi būti pirmasis dalykas pirmajame apjungiamame
+langelyje. `\multicolumn` reikia trijų argumentų:
 
-1. The number of cells which should be merged
-2. The alignment of the merged cell
-3. The contents of the merged cell
+1. apjungiamų langelių skaičius
+2. jungtinio langelio lygiavimas
+3. jungtinio langelio turinys
 
-The alignment can contain anything legal in a `tabular`'s preamble, but _only a
-single column type_.
+Lygiavimo argumente gali būti bet kas, kas legalu `tabular` preambulėje, bet
+tik _vienas kolonėlės tipas_.
 
 <!-- {% raw %} -->
 ```latex
@@ -312,7 +313,6 @@ single column type_.
 \usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
-
 
 \begin{document}
 \begin{tabular}{lll}
@@ -329,11 +329,9 @@ single column type_.
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent the
-application of whatever you defined in the table preamble for the
-current column.  The following uses this method to center the
-table's head row:
-
+`\multicolumn` galima pritaikyti ir vienam langeliui, kai norite perapibrėžti
+lentelės preambulės nustatymus duotai kolonėlei.  Žemiau pateiktas pavyzdys
+naudoja šį metodą kolonėlių antraštėms centruoti:
 
 <!-- {% raw %} -->
 ```latex
@@ -341,7 +339,6 @@ table's head row:
 \usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{booktabs}
-
 
 \begin{document}
 \begin{tabular}{lll}
@@ -358,9 +355,10 @@ table's head row:
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX.
-Usually it suffices to leave cells empty to give the reader the
-correct idea of what was meant without explicitly making cells span rows.
+LaTeX nepalaiko vertikalaus langelių apjungimo (kuris veiktų
+nepriekaištingai).  Paprastai pakanka palikti tuščius langelius, kad
+skaitytojas suvoktų, kas turėta omenyje, ir be langelių per kelias eilutes
+apjungimo.
 
 <!-- {% raw %} -->
 ```latex
@@ -393,9 +391,10 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% endraw %} -->
 
 
-## Exercises
+## Pratimai
 
-Use the simple table example to start experimenting with tables. Try out
-different alignments using the `l`, `c` and `r` column types. What happens if
-you have too few items in a table row? How about too many? Experiment with the
-`\multicolumn` command to span across columns.
+Pasinaudokite paprastu lentelės pavyzdžiu ir pradėkite bandymus su
+lentelėmis.  Išbandykite skirtingus lygiavimus, panaudodami kolonėlių tipus
+`l`, `c` ir `r`. Kas nutiks, jei lentelės eilutėje turėsite per mažai
+elementų? O kas, jei per daug?  Pabandykite komandą `\multicolumn` langelių
+apjungimui.
