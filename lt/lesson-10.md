@@ -1,29 +1,31 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Mathematics"
-description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
-toc-anchor-text: "Mathematics"
-toc-description: "Math mode and mathematical notation."
+lang: "lt"
+title: "Matematika"
+description: "Ši pamoka pristato LaTeX matematinę veikseną, tekstines ir iš teksto išskirtas matematines formules, taip pat plėtinius, pateikiamus paketo amsmath ir šriftų pakeitimą matematinėje veiksenoje."
+toc-anchor-text: "Matematika"
+toc-description: "Matematinė veiksena ir matematiniai LaTeX žymenys."
 ---
 
-# Mathematics
+# Matematika
 
 <span
-  class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
+  class="summary">Ši pamoka pristato LaTeX matematinę veikseną, tekstines ir iš teksto išskirtas matematines formules, taip pat plėtinius, pateikiamus paketo `amsmath` ir šriftų pakeitimą matematinėje veiksenoje.</span>
 
-Typesetting complex mathematics is one of the greatest strengths of LaTeX. You
-can mark up mathematics in a logical way in what is known as 'math mode'.
+Profesionalus sudėtingos matematikos spausdinimas yra viena iš stipriausių
+LaTeX pusių.  Jūs galite rinkti matematinius reiškinius gana natūraliu ir
+logišku būdu, remdamiesi vadinamąja „matematine LaTeX veiksena“.
 
-## Math mode
+## Matematinė veiksena
 
-In math mode, spaces are ignored and the correct spacing between characters is
-(almost always) applied.
+Matematinėje veiksenoje LaTeX ignoruoja tarpus (įvesties dokumente) ir
+(beveik visada) pats sudėlioja teisingus tarpus tarp simbolių (išvesties
+dokumente).
 
-There are two forms of math mode:
+Yra dvi pagrindinės matematinės veiksenos išvesties formos:
 
-* inline
-* display
+* tekstinė (_inline_)
+* išskirties (_display_)
 
 ```latex
 \documentclass{article}
@@ -41,38 +43,42 @@ See how the paragraph continues after the display.
 \end{document}
 ```
 
-You may see 'LaTeX-like' mathematical input in other places, for example
-the MathJax system for placing equations in web pages. These systems often
-accept slight variations on LaTeX's syntax as they do not actually use LaTeX
-'behind the scenes'.
+Kai kur kitur jūs galite pamatyti reškinius, panašius į LaTeX matematines
+formules, pavyzdžiui, MathJax sistemoje, įdedančioje formules į
+tinklalapiuose ar Vikipedijoje. Tokios sistemos dažnai priima tam tikras
+LaTeX sintaksės variacijas, nes iš tikrųjų nenaudoja LaTeX „užkulisiuose“.
 
-<p
-  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in
-another context, it might be because the example is not really using LaTeX.</p>
+<p class="hint">Visi mūsų pavyzdžiai yra <i>teisingas</i> LaTeX.  Jei kokiame
+  kitame kontekste matote ką besiskiriančio, tai gali būti, kad ten LaTeX
+  nenaudojamas.</p>
 
-### Inline math mode and mathematical notation
+### Tekstinių matematinių formulių žymėjimas
 
-As you can see above, inline math mode is marked using a pair of dollar
-symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
-Simple expressions are entered without any special markup, and you'll see
-that the math is spaced out nicely and has letters in italic.
+Kaip matėte pavyzdyje aukščiau, tekstinės matematinės formulės pažymėtos
+naudojant dolerių simbolius (`$...$`). Taip pat galima naudoti žymėjimą
+`\(...\)`. Paprastos išraiškos formulių viduje įvedamos be jokio specialaus
+žymėjimo ir, kaip matėte, išeities formate formulių ženklai yra išdėliojama
+gražiai (su tinkamais tarpeliais), o raidės rašomos kursyvu.
 
-Inline math mode restricts vertical size of the expression so that as
-far as possible the formula does not disturb the linespacing of the
-paragraph.
+Tekstinėje matematinėje veiksenoje yra ribojamas išraiškos aukštis, kad
+formulės, kiek įmanoma, negadintų tarpų tarp pastraipos eilučių.
 
-Note that _all_ mathematics should be marked up as math, even if it is
-a single character  use `... $2$ ...`   not `... 2 ...` otherwise, for
-example, when you need a negative number and need math to get a minus
-sign the `... $-2$ ...` may use math digits which may not be the same
-font as the text digits (depending on the document class).
-Conversely
-beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using `_` (which
-may be marked up as `\$` and `\_` respectively).
+Atkreipiame dėmesį į tai, kad _visa_ matematika turėtų būti sužymėta kaip
+tokia, net jei tai liečia vieną atskirą simbolį: rašykite `... $2$ ...`, o ne
+`... 2 ...`; kitaip, pavyzdžiui, kai jums reiks užrašyti neigiamą skaičų, tai
+reikės matematikos, kad išvestumėte tinkamo ilgio minuso ženklą `...$-2$...`,
+o tada bus panaudoti skaitmenys iš matematinio šrifto, kurie gali skirtis nuo
+skaitmenų iš tekstinio šrifto (tai priklauso nuo dokumentų klasės). 
 
-We can easily add superscripts and subscripts; these are marked using `^` and
-`_`, respectively.
+Iš kitos pusės, saugokitės matematikos veiksenos įjungimo ženklų, esančių
+paprastame tekste, nukopijuotame iš kažkur kitur, pavyzdžiui, su piniginėmis
+vertėmis, naudojančiomis `$`, arba su failų pavadinimais, naudojančiais
+ženklą `_` (kurie turėtų būti surinkti kaip `\$` ir `\_`, atitinkamai).
+
+#### Indeksai
+
+Formulėse mes galime lengvai pridėti viršutinius ir apatinius indeksus; jie
+pažymimi naudojant `^` ir `_`, atitinkamai.
 
 ```latex
 \documentclass{article}
@@ -82,13 +88,15 @@ Superscripts $a^{b}$ and subscripts $a_{b}$.
 \end{document}
 ```
 
-(You might see examples where simple super- and subscripts are entered without
-braces, but that is not the official syntax and can go wrong; always use
-braces.)
+(Galite pamatyti pavyzdžių, kai paprasti indeksai įvedami be figūrinių
+skliaustų, tačiau tai nėra oficiali sintaksė ir kai kuriuose kontekstuose
+gali netinkamai suveikti; visada naudokite skliaustus.)
 
-There are a _lot_ of specialist math mode commands. Some of them are quite
-easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
-Greek letter.
+#### Spec komandos
+
+Yra _labai daug_ specialiai matematikai skirtų komandų.  Pavyzdžiui, kai
+kurios iš jų yra gana lengvai atpažįstamos, kaip `\sin` ir `\log`, žyminčios
+sinusą ir logaritmą, ar `\theta` graikiškai raidei išvesti.
 
 ```latex
 \documentclass{article}
@@ -98,29 +106,31 @@ Some mathematics: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
-We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for
-math mode symbols using the
-[Detexify](https://detexify.kirelabs.org/classify.html) tool.
+Čia negalime aprėpti visų standartinių LaTeX matematinės veiksenos komandų,
+tačiau yra daug internetinių šaltinių, pateikiančių standartinį rinkinį. Dar
+galite rasti matematinių simbolių komandas įrankio
+[Detexify](https://detexify.kirelabs.org/classify.html) pagalba.
 
 
-### Display mathematics
+### Išskirta matematika
 
-You can use exactly the same commands for display math mode as for
-inline work. Display math mode is set centered by default and is meant
-for larger equations that are 'part of a paragraph'. Note that
-display math environments do not allow a paragraph to end within the
-mathematics, so you may not have blank lines within the source of the
-display.
+Išskirtose iš teksto formulėse galima naudoti lygiai tas pačias komandas,
+kaip ir tekstinėse formulėse.  Paprastai išskirtosios formulės yra
+horizontaliai centruojamos ir naudojamos didesnėms lygtims, kurios yra
+„pastraipos dalis“, išvesti.  Atminkite, kad iškirtosios matematikos aplinkos
+neleidžia pastraipai pasibaigti savo viduje, todėl jose negali būti tuščių
+eilučių.
 
-The paragraph should always be started _before_ the display so do not
-leave a blank line before the display math environment. If you need
-several lines of mathematics, do not use consecutive display math
-environments (this produces inconsistent spacing); use one of the
-multi-line display environments such as `align` from the `amsmath`
-package described later.
+Pastraipa, kurioje yra išskirtųjų formulių, turi prasidėti _prieš_ jas, todėl
+nepalikite tuščių eilučių prieš iškirtosios matematikos aplinkas.  Kai jums
+reikia kelių matematikos eilučių, nenaudokite kelių matematikos aplinkų iš
+eilės (tai sukurs nevienodus tarpus); naudokite vieną iš aplinkų, skirtų
+išvesti daugeliui eilučių, tokių, kaip `align` iš `amsmath` paketo, aprašyto
+toliau.
 
-It's particularly useful for integrations, for example:
+#### Integralai
+
+Išskirtoji matematinė aplinka ypač tinka formulėms su integralais, pavyzdžiui:
 
 ```latex
 \documentclass{article}
@@ -133,20 +143,21 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-Notice here how sub-/superscript notation is used to set the limits on the
-integration.
+Atkreipkite dėmesį, kaip indeksų žymenys naudojami integravimo riboms
+tinkamoje vietoje išvesti.
 
-We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`.
-Formatting of the differential operator varies: some publishers use an upright
-'d' whilst others use an italic '_d_'. One way to write your source to allow you to
-handle either is to create a command `\diff` that you can adjust as required,
-[for example](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
+Pavyzdyje pridėjome rankomis vieną tarpą: `\,` sukuria mažą tarpelį prieš
+`dx`.  Diferencialinio operatoriaus formatavimas nėra vienodas: kai kurie
+leidėjai naudoja stačią „d“, kiti &ndash; kursyvinį „_d_“.  Vienas iš būdų
+parašyti dokumentą, lengvai pritaikomą minėtiems atvejams, yra
+sukurti komandą, pvz., `\diff`, kurią galėsite pataisyti norimu būdu,
+[pavyzdžiui](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\newcommand{\diff}{\mathop{}\!d}            % For italic
-% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % For upright
+\newcommand{\diff}{\mathop{}\!d}            % d kursyvu
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % d status 
 \begin{document}
 A paragraph about a larger equation
 \[
@@ -154,9 +165,10 @@ A paragraph about a larger equation
 \]
 \end{document}
 ```
+#### Numeruotos lygtys
 
-You often want a numbered equation, which is created using the `equation`
-environment. Let's try the same example again:
+Dažnai prireikia numeruotos lygties, kurią sukuria `equation` aplinka.
+Pabandykime dar kartą tą patį pavyzdį:
 
 ```latex
 \documentclass{article}
@@ -169,19 +181,19 @@ A paragraph about a larger equation
 \end{document}
 ```
 
-The equation number is incremented automatically and may be a simple
-number as in this example or may be prefixed by section number, so
-(2.5) for the 5th equation in section 2. The details of the formatting
-are set up by the document class and not described here.
+Lygties numeris padidinamas kiekvienai naujai lygčiai automatiškai. Jis gali
+būti paprastas skaičius, kaip šiame pavyzdyje, arba gali turėti skyriaus
+numerį kaip priešdėlį, pavyzdžiui, (2.5) 5-ajai lygčiai skyriuje 2.
+Formatavimo detales apibrėžia dokumento klasė ir jų čia neaprašome.
 
 
-## The `amsmath` package
+## Paketas `amsmath`
 
-Mathematical notation is very rich, and this means that the tools built
-into the LaTeX kernel can't cover everything. The `amsmath` package
-extends the core support to cover a lot more ideas.
-The [`amsmath` User Guide](http://texdoc.org/pkg/amsmath)
-contains many more examples than we can show in this lesson.
+Matematinis žymėjimas yra labai įvairus, ir tai reiškia, kad LaTeX branduolio
+priemonės negali aprėpti visko.  Paketas `amsmath` išplečia palaikymo bazę,
+kad ji apimtų daug daugiau idėjų.  Paketo naudotojo vadove [`amsmath` User
+Guide](http://texdoc.org/pkg/amsmath) yra daug daugiau pavyzdžių, nei galime
+parodyti šioje pamokoje.
 
 ```latex
 \documentclass{article}
@@ -197,17 +209,17 @@ Solve the following recurrence for $ n,k\geq 0 $:
 \end{document}
 ```
 
-The `align*` environment makes the equations line up on the ampersands, the `&`
-symbols, just like a table. Notice how we've used `\quad` to insert a bit of
-space, and `\text` to put some normal text inside math mode. We've also used
-another math mode command, `\binom`, for a binomial.
+Aplinka `align*` išlygiuoja lygtis pagal simbolius `&`, visai kaip lentelėje.
+Atkreipkite dėmesį, kaip mes panaudojome `\quad` įdėti šiek tiek tuščios
+vietos, ir `\text` įtraukti įprastą tekstą į matematinę formulę.  Binominiam
+koeficientui užrašyti mes panaudojome kitą matematikos komandą `\binom`.
 
-Notice that here we used `align*`, and the equation didn't come out numbered.
-Most math environments number the equations by default, and the starred variant
-(with a `*`) disables numbering.
+Atkreipkite dėmesį, kad čia mes naudojome `align*`, ir lygtys išsivedė
+nenumeruotos.  Dauguma išskirtosios matematikos aplinkų pagal nutylėjimą
+numeruoja lygtis, o variantas su žvaigždute `*` išjungia numeravimą.
 
-The package also has several other convenient environments, for
-example for matrices.
+Paketas taip pat turi keletą kitų patogių aplinkų, pavyzdžiui, skirtų
+matricoms.
 
 ```latex
 \documentclass{article}
@@ -234,21 +246,21 @@ d & e & f
 \end{document}
 ```
 
-## Fonts in math mode
+## Šriftai formulėse
 
-Unlike normal text, font changes in math mode often convey very specific meaning.
-They are therefore often written explicitly. There are a set of commands you need
-here:
+Skirtingai nuo įprasto teksto, šrifto pakeitimai matematikoje dažnai
+perteikia labai specifinę prasmę. Todėl jie dažnai rašomi tiesiog formulėse.
+Čia yra komandų rinkinys, kurio jums prireiks:
 
-- `\mathrm`: roman (upright)
-- `\mathit`: italic spaced as 'text'
-- `\mathbf`: boldface
-- `\mathsf`: sans serif
-- `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
+- `\mathrm`: status (_roman_)
+- `\mathit`: kursyvas (_italic_)
+- `\mathbf`: pastorintas (_bold_)
+- `\mathsf`: be užbraukimų (_sans serif_)
+- `\mathtt`: vienplotis (_typewriter_)
+- `\mathbb`: dvibrūkšninis (_blackboard bold_) (pateikiamas `amsfonts` pakete)
 
-Each of these takes Latin letters as an argument, so for example we might
-write a matrix as
+Kiekviena iš jų tikisi lotyniškų raidžių savo argumente; todėl, pavyzdžiui,
+mes galime pažymėti matricą kaip
 
 ```latex
 \documentclass{article}
@@ -258,14 +270,15 @@ The matrix $\mathbf{M}$.
 \end{document}
 ```
 
-Note that the default math italic separates letters so that they may
-be used to denote a product of variables. Use `\mathit` to make a word italic.
+Pastebėkite, kad standartinis matematikos kursyvas atskiria žodžio raides
+taip, lyg jos būtų atskiri kintamieji sandaugos reiškinyje. Jei norite
+normaliai atrodančio žodžio kursyvu, naudokite `\mathit`.
 
-The `\math..` font commands use fonts specified for math
-use. Sometimes you need to embed a word that is part of the outer
-sentence structure and needs the current text font, for that you can
-use `\text{...}` (which is provided by the `amsmath` package) or
-specific font styles such as `\textrm{..}`.
+Šriftų komandos `\math..` naudoja šriftus, paruoštus matematikai. Tačiau
+kartais reikia įterpti žodį, kuris yra išorinio sakinio struktūros dalis ir
+todėl jam reikalingas esamas teksto šriftas; tokiam tikslui galite naudoti
+`\text{...}` komandą (iš `amsmath` paketo) arba specifinių tekstinių šriftų
+parinkimo komandas, kaip `\textrm{..}`.
 
 ```latex
 \documentclass{article}
@@ -279,25 +292,24 @@ $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 
 \end{document}
 ```
+Jei jums prireiks pastorinti kitus simbolius (ne raides), pažiūrėkite
+[papildomą pamoką](more-10).
 
+## Pratimai
 
-If you need to make other
-symbols bold, [see the extra details](more-10).
+Išbandykite abi matematinės veiksenos formas: paimkite pavyzdžius ir
+perjunkite formules iš tekstinių į išskirtąsias ar atvirkščiai. Ar galite
+pamatyti, kokį poveikį tai daro?
 
-## Exercises
+Pabandykite pridėti kitas graikiškas raides, tiek mažąsias, tiek didžiąsias.
+Turėtumėte sugebėti atspėti komandų vardus.
 
-Try out some basic math mode work: take the examples and switch between
-inline and display math modes. Can you see what effect this has.
+Eksperimentuokite su šriftų keitimo komandomis: kas nutinka, kai bandote jas
+įdėti vieną į kitą?
 
-Try adding other Greek letters, both lower- and uppercase. You should be
-able to guess the names.
+Išskirtosios formulės yra centruojamos pagal nutylėjimą; pabandykite pridėti
+dokumentų klasės parinktį `[fleqn]` (_flush left equation_) į kai kuriuos iš
+aukščiau pateiktų pavyzdžių, kad pamatyti kitokį išdėstymą.
 
-Experiment with the font changing commands: what happens when you try to
-nest them?
-
-Displayed math is centered by default; try adding the document class
-option `[fleqn]` (flush
-left equation) option to some of the above examples to see a different
-layout. Similarly equation numbers are usually on the
-right. Experiment with adding the `[leqno]` (left equation numbers)
-document class option.
+Panašiai pagal nutylėjimą lygčių numeriai išvedami dešinėje.  Pabandykite
+pridėti `[leqno]` (_left equation numbers_) kaip dokumentų klasės parinktį.
