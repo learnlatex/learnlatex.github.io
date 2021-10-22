@@ -1,25 +1,29 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Cross-referencing"
-description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
-toc-anchor-text: "Cross-referencing"
-toc-description: "Refering to figures, tables, etc."
+lang: "lt"
+title: "Vidinės nuorodos"
+description: "Ši pamoka parodo, kaip kurti nuorodas į numeruotus dokumento elementus, tokius kaip paveiksliukai, lentelės ir skyriai."
+toc-anchor-text: "Vidinės nuorodos"
+toc-description: "Nuorodos į paveiksliukus, lenteles ir pan."
 ---
 
-# Cross-referencing
+# Vidinės nuorodos
 
 <span
-  class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>
+  class="summary">Ši pamoka parodo, kaip kurti nuorodas į numeruotus dokumento elementus, tokius kaip paveiksliukai, lentelės ir skyriai.</span>
 
-When you are writing a document of any length, you'll want to refer to numbered
-items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. 
+Rašant dokumentą, kuriame yra tokių elementų, kaip paveikslėliai, lentelės ar
+lygtys, dažnai kyla poreikis paminėti tuos elementus.  Todėl tokie elementai
+yra numeruojami, o juo minint rašomi jų numeriai (kuriamos nuorodos į juos).
+Bet rašymo eigoje numeriai gali keisti, o tada reikia taisyti ir numerius, ir
+nuorodas.  Laimei, LaTeX gali automatiškai sunumeruoti elementus ir taisyti
+nuorodas į juos; mes tik turime juos teisingai susieti.
 
-## The `\label` and `\ref` mechanism
+## `\label` ir `\ref` sąsaja
 
-To have LaTeX remember a spot in your document you have to label it, and then 
-in other places, you refer to it.
+Norėdami, kad LaTeX atsimintų kažką (numerį) apie vietą jūsų dokumente,
+turite ją pažymėti (_label_); tik tada kitose vietose galėsite ją nurodyti
+(_refer_).
 
 ```latex
 \documentclass{article}
@@ -48,51 +52,47 @@ In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
 \end{document}
 ```
 
-There are two `\label{...}` commands, one after the subsection
-and one inside the equation environment.
-They are associated with the last sentence's `\ref{...}` commands.
-When you run LaTeX, it saves information about the labels to an auxiliary file.
-For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
-so it saves the subsection's number.
-For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for that equation.
-When you ask for the reference, LaTeX gets it from the auxiliary file.
+Pavyzdyje panaudotos dvi `\label{...}` komandos, viena po skyrelio ir kita
+lygties aplinkoje.  Jos siejasi su `\ref{...}` komandomis paskutiniame
+sakinyje, nes jų argumentai (žymių vardai) tokie pat.
 
-The `subsec:` and `eq:` aren't used by LaTeX;
-rather, it just keeps track of what it has most
-recently processed.
-But when you are writing these help you remember what the label
-is about.
+Kai leidžiate LaTeX, informacija apie žymes išsaugoma pagalbiniame
+faile. Apie `\label{subsec:labelone}` LaTeX žino, kad ji yra po pokyrio
+komandos, todėl išsaugo poskyrio numerį.  Apie `\Label{eq:labeltwo}` LaTeX
+žino, kad naujausia numeruota aplinka yra lygties, todėl išsaugo informaciją
+apie tą lygtį.  Kai paprašote sukurti nuorodą, LaTeX ją gauna iš pagalbinio
+failo.
 
-You may see references that show in an output PDF
-as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work,
-the first time that you compile a document the label has not
-yet been saved.
-Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX several times anyway,
-so in practice this is not a bother.)
+Priešdėlių `subsec:` ir `eq:` LaTeX nenaudoja, jam tai tik išsaugomų ir
+kitame vykdyme ieškomų vardų dalys.  Bet kai jūs rašote, tinkami priešdėliai
+primena apie pažymėtų elementų tipus ir padeda juos surasti tekste.
 
-Notice the tie (`~`) characters before the references.
-You don't want a line break between `subsection` and its number, or
-between `equation` and its number.
-Putting in a tie means LaTeX won't break the line there.
+Išvesties PDF dokumente galite pamatyti nuorodas, rodomas kaip pastorintus
+dvigubus klaustukus **??**.  Paaiškinimas yra tas, kad pirmo LaTeX vykdymo
+metu žymių informacija dar nėra išsaugota. Paleiskite LaTeX dar kartą ir
+viskas bus sutvarkyta (jei nesuklydote rašydami vardus).  (Rašant paprastai
+LaTeX vis tiek leidžiamas kelis kartus, taigi, praktiškai tai netrukdo.)
 
-## Where to put `\label`
+Pastebėkite bangelės (`~`) ženklus prieš nuorodas.  Jūs nenorėsite, kad eilutė
+lūžtų tarp elemento vardo ir jo skaičiaus. Įdėdami bangelę to išvengiate.
 
-The `\label` command always refers to the previous numbered entity:
-a section, an equation, a float, etc. That means that `\label` always has to
-come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float environment.
+## Kur dėti `\label`
 
-## Exercises
+Komanda `\label` visada išsaugo informaciją apie ankstesnį numeruotą
+subjektą: skyrių, lygtį, plaukiojantį elementą ir pan.  Tai reiškia, kad
+`\label` visada turi būti _po to_ dalyko, į kurį norite nurodyti.  Ypač, kai
+formuojate plaukiojančius elementus, `\label` turi eiti _po_ (arba, dar
+geriau, viduje) komandos `\caption`, bet, kaip bebūtų, viduje
+plaukiojančios aplinkos.
 
-Try adding new numbered parts (sections, subsections, enumerated lists) to
-the test document and finding out how many runs are needed to make `\label`
-commands work.
+## Pratimai
 
-Add some floats and see what happens when you put `\label` _before_ the
-`\caption` instead of after; can you predict the result?
+Pabandykite į testinį dokumentą įtraukti naujas numeruotas dalis (skyrius,
+poskyrius, numeruotus sąrašus) ir suraskite, kiek vykdymų reikia, kad
+`\label` suveiktų.
 
-What happens if you put a `\label` for an equation _after_ the `\end{equation}`?
+Pridėkite keletą plaukiojančių aplinkų ir pažiūrėkite, kas atsitiks, kai
+įkelsite `\label` _prieš_ `\caption` vietoje _po_.  Galite numatyti
+rezultatą?
+
+Kas nutiks, jei iškelsite `\label` iš lygties aplinkos po `\end{equation}`?
