@@ -1,62 +1,62 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Formatting: fonts and spacing"
-description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
-toc-anchor-text: "Fonts & spacing"
-toc-description: "Text formatting for visual presentation."
+lang: "lt"
+title: "Formatavimas: šriftai ir tarpai"
+description: "Ši pamoka parodo, kaip keisti tarpus tarp dokumento elementų ir kaip naudoti formatavimo komandas LaTeX įvestyje."
+toc-anchor-text: "Šriftai ir tarpai"
+toc-description: "Teksto formatavimas vizualiam pateikimui."
 ---
 
-# Formatting: fonts and spacing
+# Formatavimas: šriftai ir tarpai
 
 <span
-  class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>
+  class="summary">Ši pamoka parodo, kaip keisti tarpus tarp dokumento elementų ir kaip naudoti formatavimo komandas LaTeX įvestyje.</span>
 
-We have already seen that a blank line in your input will generate a new
-paragraph in LaTeX. This shows up as the paragraph will start with an
-indent.
+Jau matėme, kad tuščia jūsų įvesties eilutė sukuria naują pastraipą išvesties
+dokumente.  Tas iš karto ten pasimato, nes pirmoji pastraipos eilutė būna įtraukta.
 
-## Paragraph spacing
+## Tarpai tarp pastraipų
 
-One common style is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can achieve that using the `parskip`
-package.
+Yra ir kitoks bendras stilius, kuriame nėra pastraipų įtraukų, bet tarp jų
+yra lyg ir „tuščios eilutės“.  Tokį stilių galime gauti su `parskip`
+paketu:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
-\usepackage{lipsum} % Just for some filler text
+\usepackage{lipsum} % Tik dėl vietos užpildymo tekstu
 \begin{document}
 \lipsum
 \end{document}
 ```
 
-## Forcing a new line
+## Priverstinis eilutės laužimas
 
-Most of the time, you should not force a new line in LaTeX: you almost
-certainly want a new paragraph or to use `parskip`, as we've just seen,
-to put a 'blank line' between paragraphs.
+Dažniausiai jūs neturėtumėte priverstinai laužyti eilučių LaTeX dokumente:
+tikriausiai jums pakaks naujos pastraipos arba `parskip` paketo galimybių
+atskiriant pastraipas vertikaliais tarpais.
 
-There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph:
+Yra tikrai _nedaug_ atvejų, kur jūs naudosite `\\` naujos eilutės pradėjimui
+nepradėdami naujos pastraipos:
 
-- At the end of table rows
-- Inside the `center` environment
-- In poetry (the `verse` environment)
+- eilučių pabaigoje lentelėse,
+- `center` aplinkoje,
+- poezijoje (`verse` aplinkoje).
 
-Almost always, if you are not in one of those special places, you should
-_not_ use `\\`.
+Beveik visada visur kitur, nei vienoje iš tų ypatingų vietų, turėtumėte
+_nenaudoti_ `\\`.
 
-## Adding explicit space
 
-We can insert a thin space (about half the normal thickness) using
-`\,`. In math mode, there are also other commands: `\.`, `\:` and `\;`,
-and one for a negative space: `\!`.
+## Tarpų dėliojimas
 
-Very rarely, for example when creating a title page, you might need to
-add explicit horizontal or vertical space. We can use `\hspace` and `\vspace`
-for that.
+Mes galime įdėti mažą tarpelį (maždaug pusę tarpžodžio tarpo) su `\,`.
+Matematikos veiksenoje yra daugiau tarpų komandų: `\:` ir `\;`, o viena
+&ndash; net tarpo sumažinimui: `\!`.
+
+Retais atvejais, pavyzdžiui, kuriant titulinį puslapį, jums gali reikti dėti
+horizontalius ir/arba vertikalius tarpus rankomis.  Tam galima naudoti
+`\hspace` ir `\vspace` komandas.
 
 ```latex
 \documentclass{article}
@@ -70,15 +70,15 @@ Even more text.
 \end{document}
 ```
 
-## Explicit text formatting
+## Teksto formatavimas
 
-We wrote [in lesson 3](lesson-03) that most of the time logical structure is
-preferable. But sometimes you want to make text bold, or italic, or monospaced,
-etc. There are two types of command for this: ones for short pieces of text,
-and ones for 'running' material.
+Mes rašėme [3-ioje pamokoje](lesson-03), lad loginis sužymėjimas geriau, nei
+išreikštas formatavimas.  Bet kartais norėsite, kad tekstas būtų paryškintas
+ar kursyvas, ar vienplotis ir t.t.  Tam yra dviejų tipų komandos: trumpiems
+teksto gabalams ir besitęsiančiam turiniui.
 
-For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
-`\texttt` and `\textsc`.
+Trumpiems teksto gabaliukams naudojame `\textbf`, `\textit`, `\textrm`,
+`\textsf`, `\texttt` ir `\textsc`.
 
 ```latex
 \documentclass{article}
@@ -89,11 +89,12 @@ Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
 \end{document}
 ```
 
-For running text, we use commands that alter the font setup; the commands
-here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them from applying to
-the whole document. LaTeX environments are groups, as are table cells,
-or we can use `{...}` to make an explicit group.
+Besitęsiančiam tekstui naudojame komandas, kurios perjungia šrifto nustatymą;
+tokios yra, pavyzdžiui, `\bfseries` ir `\itshape`.  Kadangi jos pačios
+„nesustoja“, turime jas įdėti į _grupę_, jei norime išvengti jų veikimo
+visame likusiame dokumente.  LaTeX aplinkos yra grupės, kaip ir lentelių
+langeliai, pagaliau mes galime panaudoti figūrinius skliaustus `{...}`, kad
+sukurtume grupę išreikštu būdu.
 
 ```latex
 \documentclass{article}
@@ -108,14 +109,16 @@ This text is italic.
 So it this: the effect is not limited to a paragraph.
 
 }
+But not here.
 \end{document}
 ```
 
-We can set font size in a similar way; these commands all work on an ongoing
-basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
-`\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back; see how we add an explicit `\par`
-(paragraph break) here.
+Panašiu būdu nustatinėjame šrifto dydį; visos tam skirtos komandos veikia nuo
+komandos vietos į priekį.  Dydžiai, kuriuos nustatome, yra santykiniai
+bazinio teksto dydžio atžvilgiu: `\huge`, `\large`, `\normalsize`, `\small`
+ir `\footnotesize` yra dažnai naudojami.  Svarbu pabaigti pastraipą prieš
+šrifto dydžio atstatymą; pažiūrėkite pavyzdyje, kaip pridedame `\par`
+(pastraipos pabaigą) išreikštu būdu:
 
 ```latex
 \documentclass{article}
@@ -132,12 +135,12 @@ Normal text
 \end{document}
 ```
 
-## Exercises
+## Pratimai
 
-Experiment with manual formatting: create a `titlepage` environment and
-try inserting different spaces and font changes. What happens when we
-combine font changes? How does this compare to math mode?
+Paeksperimentuokite su rankiniu formatavimu: sukurkite titulinio puslapio
+aplinką `titlepage` ir pabandykite įterpti skirtingus tarpus ir šrifto
+pakeitimus.  Kas nutinka, kai kombinuojame šrifto pakeitimus?  Kiek tai
+atitinka šriftų kombinavimą matematinėse formulėse?
 
-What happens if you change the font size of a large paragraph (try with
-`\tiny` then with `\huge`) but don't issue a final `\par` before closing
-the group?
+Kas nutiks, jei pakeisite didelės pastraipos šrifto dydį (pabandykite
+`\tiny`, tada `\huge`), bet prieš uždarydami grupę neįdėsite `\par`?
