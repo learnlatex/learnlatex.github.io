@@ -1,13 +1,13 @@
----
+1---
 layout: "lesson"
-lang: "en"
-title: "Citations and references"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
-toc-anchor-text: "Citations & references"
-toc-description: "Working with reference databases."
+lang: "lt"
+title: "Citatos ir nuorodos"
+description: "Ši pamoka apie bibliografinių bazių pagrindus. Sužinosite, kaip sukurti savo duomenų bazes ir kaip jas naudoti savo dokumentuose, vykdant dvi galimas darbo eigas."
+toc-anchor-text: "Citatos ir nuorodos"
+toc-description: "Darbas su bibliografinėmis bazėmis."
 ---
 
-# Citations and references
+# Citatos ir nuorodos
 
 <script>
 runlatex.preincludes = {
@@ -21,19 +21,22 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
+  class="summary">Ši pamoka apie bibliografinių duomenų bazių pagrindus. Sužinosite, kaip sukurti savo duomenų bazes ir kaip jas naudoti savo dokumentuose, vykdant dvi galimas darbo eigas.</span>
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+Nors bibliografines nuorodas galima įkelti į savo dokumentą tiesiogiai, bet
+daug rašantys autoriai paprastai šią informaciją pasiima iš vieno ar kelių
+išorinių failų. Tokiame faile yra bibliografinių duomenų bazė, kurioje
+informacija yra paruošta atuomatiniam apdorojimui. Bibliografinių duomenų
+bazių naudojimas leidžia daug kartų naudoti vieną kartą suvestą informaciją
+ir dar išvengti rankinio performatavimo.
 
-## Reference databases
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+## Bibliografinės bazės
+
+Su LaTeX susijusios bibliografinės bazės paprastai vadinamos „BibTeX failais“
+ir atskiriamos pagal plėtinį `.bib`.  Juose yra bibliografiniai įrašai, po
+vieną kiekvienam literatūros šaltiniui, o kiekvienas įrašas yra serija
+raktažodžių apibrėžimų, vadinamų „laukais“ (_fields_).  Pažvelkime į pavyzdį:
 
 <!-- {% raw %} -->
 ```bibtex
@@ -60,68 +63,75 @@ within each entry there are a series of fields. Let us look at an example.
 ```
 <!-- {% endraw %} -->
 
+Ten yra vienas įrašas apie straipsnį (_article_) ir vienas apie knygą
+(_book_); tai yra bene dažniausiai sutinkami įrašų tipai.  Duomenų bazės
+įrašo tipas visada rašomas po `@`, kaip parodyta, ir visa kita įrašo
+informacija talpinama į figūrinių skliaustų porą.
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+Bibliografijos įrašui reikalingi laukai pateikiami rakto&ndash;reikšmės
+(_key&ndash;value_) formatu, išskyrus vadinamąjį „raktą“ (_key_): citatos
+identifikatorių.  Pastarasis turi būti unikalus, nes pagal jį ieškoma, bet
+jūs galite naudoti bet kokią patinkančią raidžių seką, nes tai tik etiketė.
+Pavyzdyje mes pasirinkome naudoti autoriaus vardą ir metus: tai yra įprasta
+praktika.
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
+Kurie tiksliai laukai reikalingi priklauso nuo įrašo tipo, tačiau dauguma jų
+yra gana akivaizdūs. Galėjote pastebėti, kad `author` lauke skirtingi autoriai
+atskirti skirtuku `and`. Tai yra _esminis_ dalykas: formuojant _išvestį_
+reikia žinoti, kuris autorius yra kuris. Taip pat gal pastebėjote, kad
+straipsnio pavadinime (`title` lauke) kai kurios dalys yra papildomai
+apskliaustos figūriniais skliaustais; jie apsaugo nuo didžiųjų raidžių
+pakeitimo mažosiomis ir atvirkščiai.
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
+.bib failų redagavimas rankomis gana nuodobus užsiėmimas, dauguma žmonių
+naudoja tam skirtą redaktorių. [JabRef](https://www.jabref.org) yra
+populiarus ir veikia įvairiose operacinėse sistemose; yra keletas kitų
+analgiškų internetinių paslaugų tiekėjų.  Jei nuorodoje yra DOI (
+_**D**igital **O**bject **I**dentifier_, skaitmeninio objekto
+identifikatorius), galite pabandyti [doi2bib](https://doi2bib.org) tam, kad
+lengvai gauti BibTeX įrašą.  Tačiau tam būtinai patikrinkite, ar įrašas
+teisingas!
 
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
-`learnlatex.bib`.
+Savo demonstracijose naudosime pateiktą aukščiau trumpą duomenų bazės
+pavyzdį: mes ją išsaugojome kaip `learnlatex.bib`.
 
-## Transferring information from the database
 
-To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which creates a file with a
-list of the references that your document cites.  Second, run a
-program that takes information from the database of references, picks
-out the ones that you use, and puts them in order.  Finally, compile
-your document again so that LaTeX can use that information to resolve
-your citations. Usually it will require at least two compilations to
-resolve all the references.
+## Informacijos perkėlimas iš duomenų bazės
 
-For the second step, there are two systems in wide use: BibTeX and
-Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
-BibTeX is used with either no packages at all or with `natbib`.
+Informacijos perkėlimui į savo dokumentą atliekami trys veiksmai.
+Pirmiausia, įeities dokumento kompiliavimas su LaTeX, kurio metu sukuriamas
+failas su nuorodų, kurias cituoja jūsų dokumentas, sąrašu.  Antra, leidimas
+programos, kuri paima informaciją iš bibliografinės bazės, išrenka jūsų
+naudojamus įrašus ir juos sutvarko.  Galiausiai, savo dokumento kompiliavimas
+dar kartą (ar du), kad LaTeX panaudotų šią informaciją jūsų citavimo
+nuorodoms sutvarkyti.  Paprastai, norint susieti visas nuorodas, reikia bent
+dviejų kompiliacijų.
 
-Running a second tool as well as LaTeX is handled in different ways by different
-editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go.
-Your editor might have a single 'do stuff' button or you might have to
-choose to run BibTeX or Biber manually between LaTeX runs.
+Antrame žingsnyje daugiausia naudojamos dvi sistemos: BibTeX ir Biber.  Biber
+visada naudojamas tik kartu su LaTeX paketu `biblatex`, tuo tarpu BibTeX
+veikimui paketai nereikalingi, nors kai kuriems paketams, kaip `natbib`,
+Bibtex reikalingas.
 
-The format of citations and references is independent of your BibTeX database,
-and is set by what is known as a 'style'. We will see that these work slightly
-differently in the BibTeX workflow and `biblatex`, but the general idea remains:
-we can choose how citations appear.
+Antrojo įrankio ir LaTeX paleidimus skirtingi redaktoriai tvarko skirtingai.
+Mūsų internetinių pavyzdžių vykdymui iš pamokų puslapių yra keletas
+„užkulisinių“ scenarijų, kurie viską padaro vieno kreipimosi metu.  Lokaliame
+redaktoriuje gali būti ir vienas mygtukas „daryk“, bet gali tekti ir pačiam
+pasirinkti BibTeX ar Biber leidimą tarp LaTeX leidimų.
 
-## The BibTeX workflow with `natbib`
+Citatų ir literatūros sąrašo įrašų formatai nepriklauso nuo jūsų BibTeX
+duomenų bazės ir yra nustatomi taip vadinamu „stiliumi“.  Pamatysime,
+kad stiliai veikia šiek tiek kitaip, kai naudojamas BibTeX ir kai `biblatex`
+paketas, tačiau išlaikoma bendra idėja, kad mes galime pasirinkti, kaip
+atrodys cituojama informacija.
 
-Whilst it is possible to insert citations into a LaTeX document without
-any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create different types of citation and
-has a lot of styles available.
+## BibTeX darbo eiga su `natbib`
 
-The basic structure of our input is as shown in this example.
+Nors citatas galima įterpti į LaTeX dokumentą ir neįkeliant jokių paketų,
+galimybės yra gana ribotos.  Vietoj to naudosime `natbib` paketą, kuris
+leidžia kurti įvairių tipų citatas ir turi daugybę stilių
+
+Pagrindinė mūsų įvesties struktūra yra parodyta šiame pavyzdyje:
 
 ```latex
 \documentclass{article}
@@ -144,25 +154,29 @@ Together \citep{Graham1995,Thomas2008}
 \end{document}
 ```
 
-You can see that we can cite different entries in the database by giving their
-key. The `natbib` package offers both textual and parenthetical citation styles,
-`\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line; here we've used the `plainnat` style. The
-bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use; this is a comma-separated list of names.
+Kaip galite matyti, galime cituoti įrašus iš duomenų bazės, pateikdami jų
+raktus (identifikatorius).  Pakete `natbib` yra apibrėžtos komandos tiek
+citavimui tiesiog tekste, tiek skliausteliuose, atitinkamai `\citet` ir
+`\citep`.  Pagrindinis stilius pasirenkamas `\bibliographyle` eilutėje; čia
+mes naudojome `plainnat` stilių.  Literatūros sąrašas išvedamas
+`\bibliography` komanda, kurios argumente nurodoma duomenų bazė, kurią reikia
+naudoti; jei daugiau, nei viena, tai kableliais atskiriami jų vardai.
 
-Page references can be added to the citation with an optional argument.
-If two optional arguments are given, the first goes in front of the citation
-label for a short note and the second after the label for a page reference.
+Puslapių iš cituojų šaltinių numerius galima pridėti prie citatos su
+neprivalomu argumentu.  Jei pateikiami du neprivalomi argumentai
+(laužtiniuose skliaustuose), tai pirmojo turinys eina prieš citavimo žymę, kaip
+trumpa įvadinė pastaba, o antrojo &ndash; po žymės, kaip detalizuojanti pastaba.
 
-The setup above uses author-year style, but we can make use of numeric
-citations. That is done by adding the `numbers` option to the `natbib` line.
+Pavyzdyje pateikti nustatymai naudoti autoriaus&ndash;metų stilių, tačiau
+galime naudoti ir skaitines citatas.  Tam pakanka nurodyti `numbers` opciją
+prie `natbib` paketo.
 
-## The `biblatex` workflow
 
-The `biblatex` package works slightly differently to `natbib`, as we select
-the databases in the preamble but print it in the document body. There are
-some new commands for this.
+## Darbas su `biblatex`
+
+Paketas `biblatex` veikia kiek kitaip, nei `natbib`, nes duomenų bazes
+pasirenkame dar preambulėje, nors spausdiname informaciją iš jų dokumento
+tekste.  Tam yra keletas naujų komandų.
 
 ```latex
 \documentclass{article}
@@ -186,75 +200,73 @@ Together \autocite{Thomas2008,Graham1995}
 \end{document}
 ```
 
-Notice that `\addbibresource` _requires_ the full database filename, whereas
-we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for its citation commands, but these are
-all quite easy to guess.
+Pastebėkite, kad `\addbibresource` _reikalauja_ pilno duomenų bazės failo
+vardo, kai tuo tarpu praleidinėjome `.bib` komandoje `\bibliography` su
+`natbib`.  Taip pat atkreipkite dėmesį, kad `biblatex` citavimo komandos yra
+ilgesnės, nors jas visas gana lengva atspėti.
 
-Again, short text before and after the citation can be inserted with
-the optional arguments. Note that the page numbers need not be prefixed
-with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
-prefix.
+Taipogi, trumpą tekstą prieš ir po citavimo galima įterpti neprivalomais
+argumentais.  Atkreipkite dėmesį, kad prieš puslapių numerius čia nereikia
+pridėti `p.~` ar `pp.~`, `biblatex` pats gali parinkti atitinkamą priešdėlį.
+
+Paketo biblatex kvietimo eilutėje  pasirenkamas ir citavimo stilius. Čia mes
+naudojome `authoryear`, tačiau yra ir skaitinis stilius, ir daugybė kitų.
+
+## Pasirinkimas tarp BibTeX ir `biblatex`
+
+Nors abu, ir BibTeX, ir biblatex, naudoja BibTeX failus ir gali išvesti
+struktūriškai panašų rezultatą, jie naudoja visiškai skirtingus būdus šiam
+rezultatui gauti.  Šie skirtumai tarp abiejų darbo eigų gali padėti jums
+pasirinkti, kuris iš jų jums tiks geriausiai.
+
+BibTeX darbo eigoje bibliografijos stilių nustato a `.bst` failas, kurį
+pasirinkate komanda `\bibliographystyle`.  Paketas `biblatex` vietoje `.bst`
+failų naudoja kitokią sistemą.  Jei naudojate LaTeX dokumento šabloną su
+kartu pateiktu `.bst` failu, arba jūs gavote `.bst` failą, skirtą jūsų
+projektui, turite naudoti BibTeX darbo eigą ir negalite naudoti `biblatex`.
+
+Paketas `biblatex` veikia kitokiu metodu: galite modifikuoti bibliografijos
+ir citavimo komandų išvestį tiesiog iš savo dokumento preambulės
+perapibrėždami ten LaTeX komandas.  Tuo tarpu norint modifikuoti BibTeX
+`.bst` stilius, reikia redaguoti šiuos (išorinius LaTeX atžvilgiu) failus, o
+tam dar reikia žinių ir apie BibTeX programavimo kalbą.  Bendrai kalbant,
+`biblatex` lengviau keičiamas pagal poreikius nei BibTeX stiliai.
+
+Bendrai paėmus, su „biblatex“ lengviau užprogramuoti sudėtingesnius citavimo
+stilius, turinčius daugiau skirtingų citavimo komandų. Jis taip pat įgalina
+labiau nuo konteksto priklausantį jų elgesį.  Grubiai tariant, tokie dalykai
+yra mažiau reikšmingi stiliuose, naudojamuose tiksliųjų mokslų srityse,
+tačiau tampa aktualūs pereinant prie sudėtingesnių stilių humanitarinių
+mokslų srityse.
+
+BibTeX gali teisingai rūšiuoti tik JAV ASCII simbolius ir remiasi ASCII
+pagrįstais apėjimais rūšiuojant ne ASCII simbolius.  Su Biber programa
+`biblatex` siūlo pilno Unikodo rūšiavimo galimybes.  Todėl `biblatex`
+paprastai yra geresnis pasirinkimas, jei norite rūšiuoti savo literatūros
+sąrašą ne ASCII ar ne anglų abėcėlės tvarka.
+
+Daug ilgiau naudojamas nei `biblatex`, BibTeX yra daug plačiau paplitęs nei
+`biblatex`, tai yra, daugelis leidėjų ir žurnalų tikisi bibliografijų,
+sugeneruotų BibTeX darbo eigoje.  Tokie leidėjai negali apdoroti arba tiesiog
+nepriima publikacijų, naudojančių `biblatex`.
+
+Galutinė išvada yra tokia: peržiūrėkite gaires autoriams, jei ruošiatės
+pateikti savo darbą žurnalui ar leidėjui.  Jei jums pateiktas `.bst` failas
+su stiliumi, naudokite BibTeX.  Jei norite palyginti paprasto bibliografijos
+ir citavimo stiliaus ir tinka rūšiavimas angliško ASCII pagrindu, tada turėtų
+pakakti BibTeX.  Jei jums reikalingas sudėtingesnis citavimo stilius, ne
+angliškas rūšiavimas, ar lengvesnis citavimo ir bibliografijos stiliaus
+pritaikymas, tada pasidomėkite `biblatex` naudojimu.
 
 
-In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authoryear`, but there is a `numeric` style and many others are
-also available.
+## Pratimai
 
-## Choosing between the BibTeX workflow and `biblatex`
+Išbandykite abu `natbib` and `biblatex` pavyzdžius. `natbib` atveju turėsite
+paleisti LaTeX, BibTeX, LaTeX, LaTeX; `biblatex` &ndash; tai LaTeX, Biber,
+LaTeX.  Suraskite, kaip tai padaryti savo redaktoriuje, arba išbandykite
+Overleaf ir TeXLive.net automatiką.
 
-Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
-files and can produce structurally similar output in the document, they use
-completely different ways to produce this result. That means that there are
-some differences between the two approaches that may help you choose which
-one works best for you.
-
-In the BibTeX workflow the bibliography style is ultimately decided
-by a `.bst` file which you select with the `\bibliographystyle` command.
-`biblatex` does not use `.bst` files and uses a different system.
-If you are using a template that comes with a `.bst` file or are given a `.bst`
-file for your project, you must use the BibTeX workflow and cannot use
-`biblatex`.
-
-The different approach `biblatex` takes implies that you can modify the output
-of the bibliography and citation commands directly from your document preamble
-using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
-hand usually require working with these external files and need knowledge of
-the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customize than the BibTeX workflow.
-
-In `biblatex` it is generally easier to implement more elaborate citation
-styles with a wider array of different citation commands. It also offers more
-context-dependent features. Roughly speaking this is less interesting for
-the styles common in many STEM subjects, but becomes relevant for some more
-complex styles in some areas of the humanities.
-
-BibTeX can only sort US-ASCII characters correctly and relies on workarounds
-to provide US-ASCII-based sorting for non-US-ASCII characters.
-With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
-is usually a better choice if you want to sort your bibliography in a
-non-ASCII/non-English order.
-
-Having been around for much longer than `biblatex`, the BibTeX workflow is
-more established than `biblatex`, meaning that many publishers and journals
-expect bibliographies generated via the BibTeX workflow. Those publishers
-cannot or generally do not accept submissions using `biblatex`.
-
-The bottom line is: Check the author/submission guidelines if you are
-submitting to a journal or publisher. If you are given a `.bst` file, you must
-use the BibTeX workflow. If you want a relatively simple bibliography and
-citation style and only need English US-ASCII-based sorting, the BibTeX workflow
-should suffice. If you need a more complex citation style, non-English sorting
-or want easier access to citation and bibliography style customisation features,
-you will want to look into using `biblatex`.
-
-## Exercises
-
-Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
-to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and TeXLive.net
-automation.
-
-See what happens when you create new database entries and new citations. Add
-a citation that's not in the database and see how it appears. Experiment
-with `natbib`'s `numeric` and `biblatex`'s `style=numeric` option.
+Pažiūrėkite, kas nutinka, kai sukuriate naujus duomenų bazių įrašus ir naujus
+citavimo įrašus.  Pridėkite citavimą, kurio nėra duomenų bazėje, ir
+pažiūrėkite, kaip jis bus išvestas.  Eksperimentuokite su `natbib` opcija
+`numeric` ir `biblatex` opcija `style=numeric`.
