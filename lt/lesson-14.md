@@ -1,92 +1,98 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Selecting fonts and using Unicode engines"
-description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
-toc-anchor-text: "Fonts & Unicode engines"
-toc-description: "Selecting fonts and file encoding."
+lang: "lt"
+title: "Šriftų pasirinkimas ir Unicode „variklių“ naudojimas"
+description: "Ši pamoka aprašo kontekstą, kurį sukuria LaTeX interpretuodamas Unicode simbolius, ir kaip jis paveikia teksto įvedimą ir šriftų naudojimą.  Sužinokite apie Unicode ir OpenType šriftų palaikymą."
+toc-anchor-text: "Šriftai ir Unicode varikliai"
+toc-description: "Šriftų ir failų kodavimo pasirinkimas."
 ---
 
-# Fonts and Unicode engines
+# Šriftai ir Unicode varikliai
 
 <span
-  class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
+  class="summary">Ši pamoka aprašo kontekstą, kurį sukuria LaTeX interpretuodamas Unicode simbolius, ir kaip jis paveikia teksto įvedimą ir šriftų naudojimą.  Sužinokite apie Unicode ir OpenType šriftų palaikymą.</span>
 
-When TeX and LaTeX first started being widely used they largely only handled
-European languages out of the box, although there was some capability for using
-other alphabets such as Greek and Russian.
+Kai TeX ir LaTeX buvo pradėti plačiau naudoti, jie iš esmės susitvarkydavo
+tik su Europos kalbomis, nors buvo galimybė naudoti kitas abėcėles, tokias
+kaip graikų ir rusų.
 
-## Accents and accented letters
+## Akcentai ir kirčiuotos raidės
 
-Originally, accents and accented letters were typed using control sequences or
-macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
-use these input methods because they can be easier to type, others wanted to be
-able to use the keys on their keyboards to input such symbols directly.
+TeX originaliu būdu akcentai ir kirčiuotos raidės buvo įvedamos naudojant komandas,
+tokias kaip `\c{c}`, kad išvesti „ç“, ar `\'e` &ndash; kad „é“.  Nors kai
+kurie žmonės ir toliau naudoja šias įvesties komandas, nes jas galima lengvai
+surinkti ASCII klaviatūromis, kiti norėjo, kad būtų galima tiesiogiai naudoti
+jų lokalizuotų klaviatūrų klavišais įvedamus simbolius.
 
-Before Unicode, LaTeX provided support for many types of *file encoding* that
-allowed text to be written in various languages natively — for example, using
-the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would
-internally translate the accented letters into TeX commands to produce the
-correct output.
+Prieš Unicode įvedimą LaTeX palaikė daugelį failų koduočių lentelių, kurių
+kiekviena leido tekstą natūraliai rašyti tam tikromis kalbomis, pavyzdžiui,
+naudojant `latin1` kodavimą prancūzų vartotojai galėjo rašyti `déjà vu`, o
+LaTeX išsiversdavo kirčiuotas raides į TeX komandas, kad gautų teisingą
+išvestį.
 
-This approach is still in use in modern LaTeX when using the `pdflatex` engine.
-By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
-specified. Although this engine is limited to 8-bit fonts, most European
-languages can be supported.
+Šį metodą šiuolaikinis LaTeX vis dar naudoja, kai kompiliuojama su `pdflatex`
+varikliu.  Ir tokiu atveju daroma prielaida, kad visi failai yra
+Unicode'iniai (tiksliau, UTF-8 koduotės), jei nenurodyta kitaip.  Nors šis
+variklis apsiriboja 8&nbsp;bitų šriftais, dauguma Europos kalbų yra palaikomos.
 
-## Font selection
+## Šriftų pasirinkimas
 
-Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
-nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
-example, the TeX Gyre fonts are a suite of high-quality fonts based on common
-fonts that most people are familiar with such as Times, Helvetica, Palatino, and
-others. To load these fonts, it is as simple as loading a package with the
-appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
+Šrifto parinkimas dirbant su `pdflatex` naudoja patikimą LaTeX šriftų
+pasirinkimo schemą, ir šių laikų standartinis LaTeX turi paruošęs naudojimui
+daug šriftų.  Pavyzdžiui, TeX Gyre yra aukštos kokybės šriftų rinkinys,
+atitinkantis daugumai žmonių gerai pažįstamus ir įprastus šriftus, kaip
+Times, Helvetica, Palatino ir pan.  Įkelti šiuos šriftus į dokumentą yra taip
+pat paprasta, kaip įkelti paketą atitinkamu pavadinimu.  Šrifto Times
+vizualus atitikmuo TeX Gyre šeimoje yra Termes:
+
 
 ```latex
 \usepackage{tgtermes}
 ```
 {: .noedit :}
 
-For `pdflatex`, most fonts are accessible through packages.  You can have a look
-at [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) or the
-[CTAN page on the ‘Font’ topic](https://www.ctan.org/topic/font) to see some
-options.  You can also search on the Internet for the font you want, and look
-for a `pdflatex`-compatible package version.  If you want to use a proprietary
-font, you can search for a suitable clone, which for most applications is
-similar enough to the original.
+Naudojant `pdflatex`, dauguma šriftų yra pasiekiami per paketus.  Galite
+užmesti akį į [LaTeX“ šriftų katalogą](https://www.tug.org/FontCatalogue/)
+arba [CTAN šriftų puslapį](https://www.ctan.org/topic/font), kad pamatyti
+pasirinkimo galimybes.  Taip pat galite paieškoti norimo šrifto internete,
+jei jis turi suderinamą su `pdflatex` paketą.  Jei patiko patentuotas
+šriftas, galite paieškoti tinkamo klono, kuris daugeliui pritaikymų būtų
+pakankamai panašus į originalą.
 
-## The Unicode era
+## Unicode era
 
-As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot
-natively use modern OpenType fonts and easily switch between multiple languages
-that use different alphabets (or scripts, to use the technical term). There are
-two replacements for pdfTeX that natively use Unicode input and modern fonts:
-XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using
-the engines `xelatex` and `lualatex` respectively.
+Kadangi `pdflatex` gali naudoti tik 8&nbsp;bitų failų koduotes ir 8&nbsp;bitų
+šriftus, su juo negalima natūraliai pajungti šiuolaikinių OpenType šriftų ir
+lengvai persijunginėti tarp kelių kalbų, jei jose naudojamos skirtingos
+abėcėlės (_scripts_, jei naudoti techninį terminą).  Yra du pdfTeX
+pakaitalai, natūraliai priimantys Unicode įvestį ir šiuolaikinius šriftus:
+XeTeX ir LuaTeX.  Ant LaTeX dokumentų jie yra iškviečiami, nustačius jūsų
+redaktoriuje naudoti atitinkamai variklius `xelatex` ir `lualatex`.
 
-In these engines, font selection is performed by the `fontspec` package, and for
-simple documents can look as easy as:
+Šiuose varikliuose šriftai pasirenkami `fonspec` paketo komandomis, o
+paprastiems dokumentams tai gali atrodyti taip paprastai, kaip:
+
 ```latex
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
 {: .noedit :}
 
-This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
-Notably, this approach works for *any* OpenType font.  Some fonts available for
-`pdflatex` are also available to `xelatex` and `lualatex` through their
-respective packages as well, or by loading any font you have installed on your
-computer by using `fontspec` as shown above.
+Taip pasirenkamas TeX Gyre Termes šriftas, kaip ir `pdflatex` pavyzdyje
+aukščiau.  Pažymėtina, kad šis metodas veikia *bet kuriam* OpenType šriftui.
+Kai kuriuos šriftus, naudojamus su `pdflatex`, taip pat galima naudoti su
+`xelatex` ir `lualatex`, pakrovus tinkamus paketus arba pajungus juos, kaip
+bet kurį jūsų kompiuteryje įdiegtą šriftą, naudojant paketą `fontspec`, kaip
+parodyta aukščiau.
 
-[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
-with OpenType formats available, so you can use that as a resource for looking
-up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
-earlier.
+[LaTeX šriftų kataloge](https://www.tug.org/FontCatalogue/) taip pat rodomi
+šriftai, turintys OpenType versijas, todėl galite jį naudoti kaip šaltinį
+susirasti šriftus, taip pat kaip ir 
+[CTAN puslapį](https://www.ctan.org/topic/font), irgi minėtą anksčiau.
 
-Having selected a font, input can now be typed directly in plain Unicode into a 
-source document. Here is an example showing some Latin and Greek letters as 
-well as some CJK ideographs:
+Pasirinkus šriftą, bet koks tekstas Unicode koduotėje dabar gali būti
+surinktas ar nukopijuotas į įvesties dokumentą.  Čia yra pavyzdys, kuriame
+matomos lotyniškos ir graikiškos raidės, taip pat CJK hieroglifai:
 
 ```latex
 % !TEX xelatex
@@ -101,5 +107,4 @@ ABC → αβγ → {\cjkfont 你好}
 \end{document}
 ```
 
-<p 
-  class="hint">When switching between languages it is usually important to also change things like hyphenation patterns and so on, and the <code>babel</code> and <code>polyglossia</code> packages both provide robust features to do this.</p>
+<p class="hint">Perjunginėjant kalbas paprastai svarbu pakeisti ir tokius dalykus kaip žodžių kėlimo šablonai ar panašiai, ir būtent <code>babel</code> ir <code>polyglossia</code> paketai pateikia patikimas komandas tokiam pakeitimui.</p>
