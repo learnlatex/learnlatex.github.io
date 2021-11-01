@@ -1,34 +1,35 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Dealing with errors"
-description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
-toc-anchor-text: "Error handling"
-toc-description: "Dealing with unexpected behaviors."
+lang: "lt"
+title: "Klaidų taisymas"
+description: "Ši pamoka supažindina su keletu dažnų klaidų, pasitaikančių LaTeX dokumentuose, ką reiškia klaidų pranešimai ir kaip su jais dirbti."
+toc-anchor-text: "Klaidų taisymas"
+toc-description: "Ką daryti su nelauktais LaTeX pranešimais."
 ---
 
-# Dealing with errors
+# Klaidų taisymas
 
 <span
-  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
+  class="summary">Ši pamoka supažindina su keletu dažnų klaidų, pasitaikančių LaTeX dokumentuose, ką reiškia klaidų pranešimai ir kaip su jais dirbti.</span>
 
-Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
-closer to working with programming language compilers, and as in programming
-users may make errors in their input and so need to deal with error messages
-reported by the system.
+Skirtingai nuo įprastų dokumentų ruošimo sistemų, LaTeX turi
+redagavimo/paleidimo/peržiūros ciklą, labiau būdingą darbui su programavimo
+kalbų kompiliatoriais, ir, kaip ir programavime, vartotojai gali klysti
+koduodami, todėl jiems reikia žinoti, ką reiškia sistemos klaidų pranešimai.
 
-## Common errors
+## Dažnos klaidos
 
-This page gives examples of several common errors. Each error example has some discussion about the form of the error
-message.
+Šiame puslapyje pateikiame kelių įprastų klaidų pavyzdžius. Prie kiekvieno
+pavyzdžio aptariame klaidos pranešimo formą.
 
-It may be instructive to try the examples but also use the
-edit features to try to fix the documents and test that you can
-resolve the errors.
+Bus naudinga ne tik išbandyti pavyzdžius, bet ir bandyti taisyti dokumentus,
+panaudojant redagavimo galimybę, ir taip pasitikrinti savo sugebėjimus
+ištaisyti klaidas.
+
 
 ### pdflatex not found
 
-A common first error that people see when starting is:
+Dažna pirmoji klaida, kurią žmonės mato paleisdami:
 
 ```
 'pdflatex' is not recognized as an internal or external command,
@@ -36,22 +37,21 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-on Windows or
+Windows sistemoje ar
 
 ```
 bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-on Linux.
+Linux sistemoje.
 
-This is
-not a TeX error but an operating system error saying that TeX is not
-installed or not found.  A common mistake is to install an _editor_
-such as TeXworks or TeXShop but without installing a TeX system such as
-TeX Live or MiKTeX.
+Tai ne TeX, bet operacinės sistemos pranešimas, sakantis, kad TeX yra
+neįdiegtas arba nerastas.  Dažna klaida yra įdiegti redaktorius, pvz.,
+TeXworks ar TeXShop, neįdiegus TeX sistemos, tokios kaip TeX Live ar MiKTeX.
 
-### Anatomy of a TeX error message
+
+### TeX klaidų pranešimų anatomija
 
 ```latex
 \documentclass{article}
@@ -78,38 +78,40 @@ l.8 My command is used here \mycommand
 ```
 {: .noedit :}
 
-* The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
-* The second pair of lines show the line that TeX was processing, with a line break marking the point
-  that TeX had reached. The undefined command is the last token read so the last word before the line break,
-  `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
-  an argument but have not yet been executed by TeX.
-* There may in general be some additional lines at this point, showing more context of the error message,
-* The final line starts with `l.` followed by a line number, and then the line in the source file where the
-  error is detected.
+* Pirma eilutė, prasidedanti šauktuku `!`, nurodo bendrą klaidos pobūdį (šiuo
+  atveju &ndash; neapibrėžta komanda).
+* Pora kitų eilučių rodo įvesties eilutę, kurią TeX skaitė, o eilutės lūžis
+  nurodo vietą, kurį TeX pasiekė. Neapibrėžta komanda yra paskutinis
+  perskaitytas žetonas (_token_ TeX terminais), šiuo atveju žodis (komanda)
+  `\textbold` prieš eilutės lūžį. Po eilutės lūžio yra pateikiami likę
+  žetonai, `{hmmm}`, kurie galbūt buvo perskaityti kaip argumentas, bet TeX
+  dar jų netvarkė.
+* Toliau paprastai gali eiti keletas papildomų eilučių, atskleidžiančių
+  platesnį klaidos vietos kontekstą.
+* Galutinė eilutė prasideda nuo `l.`, po to eilutės numeris įvesties faile ir
+  pati įvesties eilutė, kurią beskaitydamas TeX aptiko klaidą.
+* Paskutinėje eilutėje yra tik `?`.  Jei TeX leidote interaktyviu režimu, tai
+  po klaustuko galima TeX'ui įvesti kai kokias instrukcijas; tačiau dauguma
+  redaktorių ir internetinių sistemų leidžia TeX neinteraktyviu režimu, kada
+  TeX nesustoja ties klaidomis, tik jas išveda ir bando susitvarkyti su
+  likusiu dokumentu.  Įvedę `s` po klaustuko, nurodysite TeX tęsti darbą šiuo
+  režimu, net jei kvietėte jį interaktyviai.
 
-* The final line is a `?`.  If using TeX interactively it is possible to
-  enter instructions to TeX at this point, but most editors and online
-  systems run TeX in a mode that does not stop at errors but will
-  scroll past this and try to process the rest of the document. Typing
-  `s` to the prompt will instruct TeX to carry on in this mode if you
-  are working interactively.
 
+Pastebėkime, kad TeX nemato klaidos apibrėžimo vietoje; ir iš tikrųjų, jei
+\mycommand yra apibrėžta, bet nepanaudota, jokia klaida nebus aptikta.
+Taigi, nors apie klaidą pranešama 8-toje eilutėje, „tikroji“ klaida yra
+apibrėžime iš 4-tos eilutės, todėl svarbu pamatyti visą klaidos pranešimą.
 
-Note here that TeX does not see the error at the point that
-the definition is made; and in fact if `\mycommand` is defined but not
-used, no error would be raised. So although the error is reported on
-line 8, the "real" error is in the definition on line 4, so it is
-important to see the whole error message.
-
-Beware that some editors show one line "summaries" of the error log.
-This can be particularly misleading if shown as
+Turėkite omenyje, kad kai kurie redaktoriai klaidų žurnale rodo tik vieną
+santraukos eilutę.  Tai gali klaidinti, ypač jei ji atrodo kaip
 
 `line 8: undefined command: ...\mycommand`
 
-as it makes it appear that `\mycommand` is not defined.
+iš ko galima daryti išvadą, kad `\mycommand` neapibrėžta.
 
 
-### Mismatched braces
+### Nesuporuoti skliaustai
 
 
 ```latex
@@ -123,18 +125,17 @@ as it makes it appear that `\mycommand` is not defined.
 \end{document}
 ```
 
-Here the error is a mismatched `}` used to end the optional
-argument. The closing brace causes LaTeX's option parsing
-to fail and you get an internal and not that helpful error: 
+Čia klaida yra nesuporuotas `}`, panaudotas neprivalomam argumentui
+nutraukti.  Šis skliaustas sutrikdo LaTeX parinkčių analizę, ir jūs gaunate
+vidinės klaidos ne per daug naudingą pranešimą:
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.
 ```
 {: .noedit :}
 
-While the error description is unhelpful; the following two
-lines do accurately display the location of the error by the use of
-the linebreak showing how far TeX had read:
+Nors klaidos aprašymas nenaudingas, kitos dvi eilutės tiksliai parodo klaidos
+vietą eilutės lūžiu, kuris žymi vietą iki kurios TeX perskaitė įvestį:
 
 ```
 l.4 \usepackage[leqno}
@@ -143,7 +144,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-### Missing files
+### Trūkstami failai
 
 ```latex
 \documentclass{article}
@@ -156,19 +157,20 @@ l.4 \usepackage[leqno}
 \end{document}
 ```
 
-This produces the error
+Šis pavyzdys sukelia klaidą
 
 ```
 ! LaTeX Error: File `amsmathz.sty' not found.
 ```
 {: .noedit :}
 
-Note: the same error may be caused by two different causes; a simple
-typo as here, which may be corrected by fixing the package name, or
-that the file really is missing and needs to be installed on the
-current system.
+**Pastaba:** tokią klaidą gali sukelti dvi skirtingos priežastys: paprasta
+spausdinimo klaida, kaip čia, kuri gali būti ištaisyta, pakeičiant paketo
+pavadinimą, arba tai, kad failo tikrai nėra ir jį reikia įdiegti naudojamoje
+sistemoje.
 
-### Blank lines in display math
+
+### Tuščios eilutės išskirtoje matematikoje
 
 ```latex
 \documentclass{article}
@@ -186,21 +188,24 @@ Some text
 \end{document}
 ```
 
-Produces the slightly mysterious error
+Šis pavyzdys sukelia kiek paslaptingą klaidą:
 
 ```
 ! Missing $ inserted.
 ```
 {: .noedit :}
 
-But the fix is simple, blank lines are not allowed in math
-environments and should be deleted.
+nors pataisymas yra paprastas: tuščios eilutės neleidžiamos matematinėse
+aplinkose ir turėtų būti ištrintos.
 
-## Exercise
 
-Attempt to fix the errors in the supplied examples.
+## Pratimai
 
-Produce small documents with different errors and note the form of the error messages.
+Bandykite ištaisyti pateiktų pavyzdžių klaidas.
+
+Sukurkite mažus dokumentus su skirtingomis klaidomis ir atkreipkite dėmesį į
+klaidų pranešimų formą.
+
 
 <script>
   window.addEventListener('load', function(){
