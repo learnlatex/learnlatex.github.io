@@ -1,12 +1,22 @@
 ---
 layout: "page"
-lang: "en"
-title: Mission
-permalink: /en/mission
+lang: "lt"
+title: Misija
+permalink: /lt/mission
 ---
 
-# Learn LaTeX Mission
+# LearnLaTeX misija
 
-This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
+Ši svetainė padės jums žengti pirmuosius žingsnius su LaTeX &ndash; dokumentų
+ruošimo sistema, skirta rengti aukštos kokybės publikacijoms. LaTeX gali kiek
+gąsdinti naujus vartotojus, nes nepanašus į tekstų redaktorių ir nėra viena
+programa.  Mūsų tikslas &ndash; palengvinti jūsų pradžią, nemėginant aprėpti
+visko vienu ypu.
 
-To do that, we have taken around 16 of the most important things you’ll need to know, and made them into short ‘lessons’. Each lesson is very focused, so they should not take too long to cover. In each lesson, we’ve given examples of what you’d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.
+Tam tikslui mes atrinkome apie 16 svarbiausių dalykų, kuriuos turėsite
+žinoti, ir įdėjome juos į trumpas "pamokas“.  Kiekviena pamoka yra labai
+koncentruotos, todėl įsisavinimas neturėtų užtrukti per ilgai.  Kiekvienoje
+pamokoje mes pateikėme pavyzdžius, kuriuos turėtumėte surinkti, bet kadangi
+jie yra prieinami, juos galima kopijuoti ir net vykdyti internete.
+Sužinokite daugiau apie tai, [kaip veikia pavyzdžiai](./help#examples)
+pagalbos skyriuje.
