@@ -1,29 +1,28 @@
 ---
 layout: "page"
-lang: "en"
-title: Licenses
-permalink: /en/licenses
+lang: "lt"
+title: Licencijos
+permalink: /lt/licenses
 ---
 
-# Licenses
+# Licencijos
 
-The [Learn LaTeX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+[LearnLaTeX svetainė]({{ "/" | absolute_url }}) naudoja dviejų rūšių licencijas:
 
-## Content
+## Turinys
 
-The content of this website is available under the
-[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license. That means you can use the material as long as you say where it came
-from and let others do the same.
+Šios svetainės turiniui taikoma 
+[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 
+licencija.  Tai reiškia, kad medžiagą galite panaudoti kartu su nuoroda į
+šaltinį ir turite leisti kitiems daryti tą patį. Žr. detales [LICENSE](../LICENSE).
 
-See [LICENSE](../LICENSE) for details.
+## Kodo pavyzdžiai
 
-## Code Examples
-
-The code examples are licensed as
+Kodo pavyzdžiamas taikoma 
 [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
-(No Rights Reserved). This is a legal text that is (essentially) the same as 
-Public Domain, at least in countries where that concept exists. The key point 
-is that _you can use the examples without any issues_. You _do not_ need to 
-reference them, you _do not_ need to share them when you modify them: you can 
-just use them.
+(Teisės nėra saugomos) licencija.  Tai yra legalus tekstas, kuris (iš esmės)
+yra kaip Viešoji Sritis, bent jau tose šalyse, kur tokia sąvoka
+egzistuoja. Esminis faktas yra, kad _galite naudoti pavyzdžius be jokių
+problemų_.  Jums _nereikia_ nurodyti jų šaltinio, _nereikia_ platinti jūsų
+juose padarytų pakeitimų: galite tiesiog jais naudotis.
+
