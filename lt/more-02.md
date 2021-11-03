@@ -1,35 +1,39 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Working with LaTeX"
-description: "This lesson gives more detail on what LaTeX is and the engines it runs on."
-toc-anchor-text: "More on: Working with LaTeX"
+lang: "lt"
+title: "Daugiau apie darbą su LaTeX"
+description: "Ši pamoka pateikia daugiau detalių apie tai, kas yra LaTeX ir kokius variklius jis naudoja."
+toc-anchor-text: "Daugiau apie darbą su LaTeX"
 ---
 
-For most of our examples, we don't use a program called `latex` but instead
-one called `pdflatex`. This is one of a family of related programs, all
-of which are 'descendants' of `latex`. We have chosen `pdflatex` because
-it is perhaps the most widely-used system and directly produces PDF files.
+Daugumoje pavyzdžių šioje svetainėje, leisdami LaTeX, naudojame ne programą
+vardu `latex`, bet vietoje jos kviečiame `pdflatex`.  Tai yra viena iš šeimos
+susijusių programų, kurių visos yra `latex` „palikuonės“.  Mes pasirinkome
+`pdflatex`, nes ji yra turbūt plačiausiai naudojama iš tos šeimos, nes
+tiesiogiai gamina PDF failus.
 
-## Formats and engines
 
-As described [earlier](more-01), LaTeX is built on a system called TeX. We
-call LaTeX a 'format': a collection of macros (instructions and commands) that
-TeX understands. When you run `pdflatex`, you are _actually_ starting a
-program called 'pdfTeX' with a pre-loaded 'LaTeX format'. We normally call
-pdfTeX an _engine_: a program that understands TeX instructions.
+## Formatai ir varikliai
 
-There are three engines in common use today:
+Kaip buvo aprašyta [anksčiau](more-01), LaTeX yra anstatas ant sistemos,
+vadinamos TeX.  Mes LaTeX vadiname „formatu“, kas reiškia, kad tai yra
+rinkinys makrosų (instrukcijų ir komandų), kuriuos TeX supranta.  Kai
+leidžiate `pdflatex`, jūs _iš tikrųjų_ leidžiate programą vardu „pdfTeX“, su
+iš anksto įkeltu „LaTeX formatu“.  Paprastai vadiname pdfTeX _varikliu_,
+t.y., programa, suprantančia TeX komandas.
 
-- pdfTeX
-- XeTeX
-- LuaTeX
+Šiandien yra naudojami trys pagrindiniai varikliai:
 
-We will cover [XeTeX and LuaTeX later](lesson-14): the main thing we need to
-know now is that they are capable of loading operating system fonts, whereas
-pdfTeX can't do that.
+- pdfTeX,
+- XeTeX,
+- LuaTeX.
 
-If you are in Japan, or writing lots of Japanese, you might also come across
-pTeX and upTeX. These are specialized engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX, in particular, is still
-the most popular system for Japanese.
+Mes pristatysime [XeTeX ir LuaTeX vėliau](lesson-14); pagrindinis dalykas,
+kurį reikia žinoti dabar, yra tai, kad jie gali naudoti operacinės sistemos
+šriftus, tuo tarpu pdfTeX to padaryti negali.
+
+Jei esate Japonijoje arba daug rašote japonų kalba, taip pat galite susidurti
+su pTeX ir upTeX.  Tai yra varikliai pritaikyti vertikaliajam spausdinimui.
+LuaTeX taip pat sugeba daug ką padaryti šioje srityje, tačiau upTeX šiuo metu
+vis dar yra populiariausia sistema japonų kalbai.
+

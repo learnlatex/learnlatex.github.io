@@ -7,7 +7,7 @@ toc-anchor-text: "LaTeX pagrindai"
 toc-description: "Kas LaTex yra ir kaip veikia."
 ---
 
-# LaTeX basics
+# LaTeX pagrindai
 
 <span
   class="summary">Ši pamoka paaiškina LaTeX veikimo pagrindus ir skirtumus nuo biuro dokumentų redaktorių, tokių kaip Microsoft Word ar LibreOffice Writer.</span>
