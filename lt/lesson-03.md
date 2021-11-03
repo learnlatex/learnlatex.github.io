@@ -20,7 +20,7 @@ Jei naudojate lokaliai įdiegtą LaTeX, redaktoriuje sukurkite naują failą
 pavadinimu `first.tex` ir nusikopijuokite arba surinkite žemiau esantį tekstą.
 
 Jei naudojate internetinę sistemą, galite tiesiog spustelėti po pavyzdžiu
-esančius mygtukus ‘Leisti TeXLive.net’ arba ‘Atidaryti Overleaf’, kad
+esančius mygtukus ‘Leisti TeXLive.net’ arba ‘Atverti Overleaf’, kad
 išbandytumėte!
 
 <p
@@ -40,7 +40,7 @@ This is a first document.
 Išsaugokite failą ir išveskite iš jo PDF dokumentą; jei naudojate LaTeX
 lokaliai, tada tikslus mygtukas, kurį reikia tam paspausti, priklauso nuo
 jūsų pasirinkto redaktoriaus.  Turite gauti PDF failą, kuriame pavyzdžio
-tekstas, esantis tarp `\begin{document}ą` ir \end{dokument}` _plius_ puslapio
+tekstas, esantis tarp `\begin{document}` ir `\end{dokument}` _plius_ puslapio
 numeris; LaTeX jį prideda automatiškai.
 
 Peržiūrėkite išvestį `first.pdf` naudodami bet kurią PDF skaityklę. Atrodo
@@ -59,7 +59,6 @@ pabandykite ištrinti dokumentą ir nusikopijuoti iš naujo pavyzdžio eilutes.
 Jei jūsų LaTeX procesas baigiasi klaustuku terminalo lange, tada galite iš to
 išeiti įvesdami po klaustuko `x` ir `<Enter>`.
 
-
 LaTeX klaidų pranešimai stengiasi būti naudingi, tačiau jie nėra tokie, kaip
 tekstų tvarkyklėse. Kai kuriuose LaTeX redaktoriuose taip pat sunku pamatyti
 'pilną' klaidos tekstą, kuris gali atskleisti esmines detales. LaTeX vykdymo
@@ -67,8 +66,6 @@ metu visada sukuria žurnalą su atliekamų veiksmų įrašais; tai yra tekstini
 failas su praplėtimu .log.  Jame jūs visada galite surasti pilnus klaidų
 pranešimus. Jei jūs kreipsitės pagalbos dėl klaidos, LaTeX ekspertai dažnai
 paprašys log failo kopijos.
-
-Mes daugiau aptariame klaidų problemą 15 pamoka.
 
 <p
   class="hint">Daugiau dėmesio klaidoms paskirsime <a href="./lesson-15">pamokoje 15</a>.</p>
@@ -137,7 +134,7 @@ dokumente, rasite sprendimą [išsamesnės informacijos puslapyje](more-03).
 
 ## Pratimai
 
-Paeksperimentuokite su internetine LaTeS paslaugų sistema: spustelėkite
+Paeksperimentuokite su internetine LaTeX paslaugų sistema: spustelėkite
 mygtuką išvesties gavimui, tada paredaguokite pavyzdį tinklalapyje ir vėl
 paleiskite LaTeX. 
 
@@ -147,7 +144,7 @@ pastraipų, pridėkite skirtingą skaičių tarpų ir vėl žiūrėkite, kas gav
 išeities dokumente.
 
 Ištirkite, ar jūsų LaTeX redaktorius palaiko SyncTeX: spustelėkite įvesties
-faile ir suraskite, kaip peršokti į tą pačią eilutą PDF vaizde. 
+faile ir suraskite, kaip peršokti į tą pačią eilutę PDF vaizde. 
 
 Pabandykite pridėti keletą kietų tarpų ir pažiūrėti, kaip jie paveikia
 eilučių laužymą.

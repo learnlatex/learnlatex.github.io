@@ -1,39 +1,42 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Basic LaTeX document structure"
-description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
-toc-anchor-text: "More on: Basic LaTeX document structure"
+lang: "lt"
+title: "Daugiau apie pagrindinę LaTeX dokumento struktūrą"
+description: "Ši pamoka pateikia daugiau detalių apie LaTeX veikimą, apie jo naudojamas specialias raides ir apie jų gavimą išvesties PDF."
+toc-anchor-text: "Daugiau apie pagrindinę LaTeX dokumento struktūrą"
 ---
 
-## Running LaTeX
+## LaTeX veikimas
 
-As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
-this, try opening your first document in a simple text editor, for example
-on Windows using Notepad. You should see the same text as in a dedicated LaTeX
-editor, but without any highlight of keywords.
+Kaip išsamiai [aprašyta anksčiau](lesson-02), LaTeX dokumentai yra
+perskaitomi kaip paprastas tekstas.  Norėdami tuo įsitikinti, pabandykite
+atverti savo pirmąjį dokumentą paprastoje teksto rengyklėje, pavyzdžiui,
+Windows Notepad.  Turėtumėte pamatyti tą patį tekstą, kaip ir specializuotame
+LaTeX redaktoriuje, aišku, be jokių raktinių žodžių paryškinimo.
 
-You can also convert to PDF without your editor; this means using the Command
-Prompt/Terminal, so don't worry if you are not familiar with this. If you
-*are*, you can navigate to the directory containing your `.tex` source file and
-run
+Jūs taip pat galite gauti PDF be jūsų specialaus redaktoriaus; tam tereikia
+komandinės eilutės aplinkos (terminalo), bet nesijaudinkite, jei nesate su
+ja susipažinę.  Jei visgi *esate*, galite joje pereiti į katalogą su jūsų
+`.tex` įvestimi ir paleisti
 
 `pdflatex first`
 
-or
+arba
 
 `pdflatex first.tex`
 
-to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with `.tex` unless you specify otherwise.
+tam, kad pagaminti jūsų PDF.  Pastebėkite, kad `.tex` plėtinys komandoje neprivalomas:
+LaTeX mano, kad failų vardai baigiasi `.tex`, jei nenurodytas kitas plėtinys.
 
-## Special characters
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need to use a longer command instead:
+## Specialios raidės
 
-| Symbol | Short Command <br><small>(math and text)</small> | Long Command <br><small>(for text only)</small> |
+Jei jums reikia išvestyje gauti simbolį, kurį LaTeX traktuoja kaip specialų,
+dažniausiai pakanka priešais jį įrinkti pasvirąjį brūkšnį `\`, pvz., `\{`
+išves figūrinį skliaustą `{`.  Yra keletas atvejų, kai vietoj to reikia
+naudoti ilgesnę komandą:
+
+| Simbolis | Trumpa komanda <br><small>(mat. ir tekste)</small> | Ilga komanda <br><small>(tik tekstui)</small> |
 | --- | --- | --- |
 | `{`    | `\{`          | `\textbraceleft`  |
 | `}`    | `\}`          | `\textbraceright` |
@@ -46,7 +49,6 @@ use a backslash in front of it, so for example `\{` is used to print a literal
 | `^`    |               | `\textasciicircum`|
 | `~`    |               | `\textasciitilde` |
 
-For the last three symbols there are no short commands available,
-because `\\` is used to indicate a linebreak and `\~` and `\^` are used
-to produce tilde and circumflex accents when using only ASCII
-characters as input.
+Paskutiniams trims simboliams nėra trumpų komandų, nes komanda `\\` laužia
+eilutę, o `\~` ir `\^` deda akcentus, atitinkami bangelę (_tilde_) ir
+kepurėlę (_circumflex_).
