@@ -1,28 +1,30 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: What is LaTeX and how does it work?"
-description: "This lesson gives more context on the history of LaTeX and other formats available."
-toc-anchor-text: "More on: What is LaTeX and how does it work?"
+lang: "lt"
+title: "Daugiau apie LaTeX ir kaip jis veikia?"
+description: "Ši pamoka pateikia platesnę istorinę LaTeX ir kitų formatų perspektyvą."
+toc-anchor-text: "Daugiau apie LaTeX More on:  ir kaip jis veikia?"
 ---
 
-The word 'LaTeX' actually consists of two components, 'La' and 'TeX'. In the
-following we will briefly describe where they come from.
+Žodį „LaTeX“ iš tikrųjų sudaro du skiemenys: „La“ ir „TeX“. Toliau trumpai
+apibūdinsime, iš kur jie kilo.
 
-TeX was originally invented by Stanford professor Donald Knuth. Knuth is
-well known for a series of books called *The Art of Computer Programming*
-(known as TAOCP). In
-1973 a new edition of the books was to be made; this was the time when the
-typesetting industry switched from traditional typesetting with lead to
-photo-based typesetting. Donald Knuth did not like the quality of the print and
-therefore decided to implement his own typesetting system.
+TeX sukūrė Stanfordo (Kalifornija) profesorius Donaldas Knutas (_Donald
+Knuth_).  Knutas yra gerai žinomas dėl knygų serijos „Kompiuterių
+programavimo menas“ (_*The Art of Computer Programming*_, TAOCP).  1973
+m. turėjo būti išleistas naujas knygų leidimas; tai buvo laikas, kai leidybos
+pramonė pereidinėjo nuo tradicinio spausdinimo nuo švininių šablonų prie foto
+principais paremto spausdinimo.  Donaldui Knutui nepatiko spausdinimo kokybė
+(tuometiniai kompiuteriniai šriftai), todėl jis nusprendė sukurti savo
+spausdinimo sistemą.
 
-In May 1977 the development of TeX started.
+TeX pradėtas kurti 1977 m. gegužės mėn.
 
-The original TeX was rather complicated to use, even Donald Knuth used various
-macros to edit his books. Leslie Lamport, who works for Microsoft nowadays, also
-developed a set of macros that simplify the use of TeX and called this macro
-set “LaTeX”.
+Originalų TeX buvo gana sudėtinga naudoti, net pats Donaldas Knutas savo
+knygoms redaguoti naudojo įvairias TeX komandas (makrosus TeX žargonu).
+Leslie Lamport, kuris šiais laikais dirba Microsoft, taip pat sukūrė makrosų
+rinkinį, kuris supaprastino TeX naudojimą, ir pavadino šį makrosų rinkinį
+LaTeX.
 
-Today LaTeX is the most common way to interact with TeX. Another alternative is
-[ConTeXt](https://www.contextgarden.net/).
+Šiandien LaTeX yra labiausiai paplitęs būdas naudoti TeX galimybes.  Kita
+alternatyva yra [ConTeXt](https://www.contextgarden.net/).
