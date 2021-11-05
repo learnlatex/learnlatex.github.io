@@ -1,15 +1,15 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Logical structure"
-description: "This lesson shows how to set the document title, and how to make description lists."
-toc-anchor-text: "More on: Logical structure"
+lang: "lt"
+title: "Daugiau apie dokumentų struktūrą"
+description: "Ši pamoka parodo, kaip koduojami dokumento antraštės dalys ir kaip konstruoti aprašymų sąrašus."
+toc-anchor-text: "Daugiau apie dokumentų struktūrą"
 ---
 
-## Document titles
+## Dokumento antraštė
 
-LaTeX offers some logical markup for the title of documents: three commands
-to set up 'meta-data' and one to use it.
+LaTeX siūlo tam tikrą loginį dokumentų antraščių sužymėjimą: trys komandos
+metaduomenims apibrėžti ir viena &ndash; juos išvesti.
 
 ```latex
 \documentclass{article}
@@ -24,22 +24,25 @@ Some normal text.
 \end{document}
 ```
 
-As you can see, the commands `\author`, `\title` and `\date` save information,
-and `\maketitle` uses it. You can also separate multiple authors with `\and`.
-The commands `\author`, `\title` and `\date` need to come before `\maketitle`.
-Here, we've given them in the document body: they can also be used in the
-preamble, but if you use `babel` shortcuts they won't be active there.
+Kaip matote, komandos `\author`, `\title` ir `\date` išsaugo informaciją, o
+`\maketitle` ją panaudoja.  Kelis autorius galite atskirti su `\and` komanda.
+Komandos `\author`, `\title` ir `\date` turi eiti prieš `\maketitle`. Čia mes
+jas pateikėme dokumento kūne, nors jos taip pat gali būti preambulėje, tačiau
+tada, kai naudositės `babel` paketo ypatybėmis, jos ten dar nebus aktyvuotos.
 
-The design provided by `\maketitle` depends on the document class (see [lesson
-5](lesson-05)). There is a `titlepage` environment for when you want to do
-custom design, but this is out of the scope of this introduction.  If you want
-to do your own document designs you can either use a customisable class, such
-as `memoir`, or start with one of LaTeX's base classes, like `book` and use it
-as a starting point.
+Komandos `\maketitle` išvesties maketas suprogramuotas dokumentų klasėje
+(žr. [5-tąją pamoką](lesson-05)).  Kai jūs norite pats kurti antraštės
+dizainą, tam yra skirta `titlepage` aplinka, tačiau jos aptarimas nepateko į
+šį įvadą.  Jei norite pats kurti viso savo dokumentų dizainą, galite arba
+naudoti klasę su lanksčiomis konfigūravimo galimybėmis, kaip, pavyzdžiui,
+`memoir`, arba kurti savo klasę, pradėdami nuo vienos iš LaTeX bazinių
+klasių, kaip `book`, ir modifikuodami pagal savo poreikius.
 
-## Descriptive lists
-In addition to the "ordered" and "unordered" types of lists, LaTeX provides
-another one, less common: the "descriptive lists".
+
+## Aprašomieji sąrašai
+
+Be numeruotų (`enumerate` aplinka) ir nenumeruotų (`itemize` aplinka) sąrašų
+tipų, LaTeX pateikia dar vieną, rečiau naudojamą: „aprašomąjį" sąrašo tipą.
 
 ```latex
 \documentclass{article}
@@ -57,11 +60,11 @@ another one, less common: the "descriptive lists".
 \end{document}
 ```
 
-## Exercises
+## Pratimai
 
-Try setting up different `\author`, `\title` and `\date` information to test
-out `\maketitle`. Which of them do you _have_ to give? Do the commands have to
-have an author, a title and a date in them?
+Pakeiskite `\author`, `\title` ir `\date` komandų argumentus, kad pratestuoti
+`maketitle` veikimą.  Kurios iš trijų komandų yra _tikrai_ būtinos?  Ar
+komandų argumentuose galia būti bet koks tekstas, tame tarpe ir jokio teksto?
 
-Make some descriptive lists, and nest some of them inside another ones (ordered,
-unordered or descriptive).
+Sudarykite keletą aprašomųjų sąrašų, o kai kuriuos iš jų įdėkite į kitus
+sąrašus (numeruotus, nenumeruotus ar aprašomuosius).
