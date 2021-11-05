@@ -1,29 +1,30 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Using document classes to influence design"
-description: "This lesson gives information on more specialized document classes for LaTeX."
-toc-anchor-text: "More on: Using document classes to influence design"
+lang: "lt"
+title: "Daugiau apie tai, kaip dokumentų klasės keičiadizainą"
+description: "Ši pamoka This lesson gives information on more specialized document classes for LaTeX."
+toc-anchor-text: "Daugiau apie tai, kaip dokumentų klasės keičia dizainą"
 ---
 
-## Journal-specific classes
+## Žurnalams skirtos klasės
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on [CTAN](https://ctan.org) and in standard TeX
-distributions.
+Daugelis akademinių žurnalų turi paruoštas LaTeX klases, skirtas
+pateikiamiems straipsniams.  Jos paprastai suformuoja dizainą, panašų į
+žurnalinį variantą, nors tai priklauso nuo šrifto naudojimo ir pan.  Jei
+tokia klasė yra, ją paprastai tiesiogiai teikia redakcija, kuri kartu turėtų
+pateikti išsamią informaciją apie tos klasės savybes.  Daugelį žurnalų klasių
+taip pat galima rasti [CTAN](https://ctan.org) ir standartinėse TeX
+sistemose.
 
-## Classes for presentations
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+## Pristatymų klasės
+
+Viena sričių, kuriai reikia daug specializuotų komandų, yra pristatymų
+kūrimas.  Klasė `slides` buvo parašyta „klasikinėms“ spausdintoms skaidrėms
+spausdinti, ir ji nepalaiko daugelio efektų, būdingų ekrane pateikiamiems
+pristatymams.  Šiam tikslui buvo sukurtos naujos klasės, tarp jų plačiausiai
+naudojamos yra dvi: `beamer` ir `powerdot`.  Kadangi `beamer` yra
+populiaresnis, pateiksime pavyzdį su juo:
 
 ```latex
 \documentclass{beamer}
@@ -47,20 +48,23 @@ give you an example of how it works:
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+Pavyzdys demonstruoja dvi svarbias idėjas.  Pirma, `beamer` padalija
+dokumentą į seką „rėmų“ (_frames_), kurių kiekvieną gali sudaryti daugiau nei
+viena skaidrė (puslapis).  Antra, `beamer` išplečia įprastą LaTeX sintaksę,
+kad skirtingos įvesties dalys galėtų būti išvestos dinamiškai „tada, kai to
+reikia“.  Ši išraiškos priemonė yra galinga, bet per sudėtinga, kad ją čia
+aprėptume: bet [šiame tinklaraščio
+įraše](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/)
+rasite daugiau apie tai.
 
-## A class for images
+## Vaizdų klasė
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+Pasitaikys tokie atvejai, kai jūs norėsite sukurti iliustraciją (kurioje gali
+būti pakankamai daug teksto) naudojant LaTeX.  Dažnai jūs norėsite ją toliau
+naudoti kaip paveiksliuką, todėl ji turi būti išvesta viena į atskirą
+„puslapį“.  Tokį dalyką lengviausia padaryti naudojant
+[`standalone`](https://ctan.org/pkg/standalone) klasę.  Ji automatiškai
+nustato puslapio dydį, kad jis apimtų visą išvedamą turinį.
 
 ```latex
 \documentclass{standalone}
