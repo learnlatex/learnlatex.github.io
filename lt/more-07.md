@@ -1,39 +1,41 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Including graphics and positioning"
-description: "This lesson gives details on how better name and store graphics files to be used with LaTeX, and how you can make your own graphics from within LaTeX."
-toc-anchor-text: "More on: Including graphics and positioning"
+lang: "lt"
+title: "Daugiau apie grafikos įdėjimą ir pozicionavimą"
+description: "Ši pamoka paaiškina, kaip geriausia pavadinti ir išsaugoti grafikos failus, kuri bus naudojami su LaTeX, ir kaip jūs galite padaryti savo grafiką su LaTeX pagalba."
+toc-anchor-text: "Daugiau apie grafikos įdėjimą ir pozicionavimą"
 ---
 
-## Naming graphics files
+## Grafikos failų pavadinimai
 
-LaTeX works on many computer platforms so
-file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces.
-For example, if you want to organize your files by keeping all
-graphics in a subdirectory, then something like
-`\includegraphics[width=30pt]{pix/mom.png}`
-is portable and future-proof.
+LaTeX veikia daugelyje operacinių sistemų, todėl kuriant failų pavadinimus
+raikia į kai ką atsižvelgti.  Saugiausia yra pavadinti savo grafiką kuo
+paprasčiau,, nenaudojant tarpų. Pavyzdžiui, jei nusprendėte laikyti visą
+grafiką pakatalogyje, tada jos įdėjimas kažkaip panašiai į
+`\includegraphics[width=30pt]{pix/mom.png}`  yra pernešamas tarp sistemų ir
+veiks ir ateityje.
 
-Spaces in file names are traditionally somewhat problematic, but are now
-generally supported. However, if you have spaces in the name, and you have
-issues, you may wish to try removing the spaces as the first step.
+Tarpai failų pavadinimuose tradiciškai yra šiek tiek problematiški, nors
+dabar paprastai palaikomi.  Tačiau, jei pavadinime yra tarpų ir jums kyla
+problemų, kaip pirmąjį žingsnį verta pabandyti pašalinti tarpus.
 
-Accented character support is somewhat variable; there are issues with some
-systems, particularly on Windows. If you find issues with accented characters
-in file names, try using only ASCII characters for a test.
+Akcentuotų raidžių padinimuose palaikymas ne visur vienodas; yra problemų kai
+kuriose sistemose, ypač Windows.  Jei sitiksite problemą su akcentuotomis
+raidėmis failų pavadinimuose, patikrinimui pabandykite naudoti tik ASCII
+simbolius.
 
-## Storing graphics in a subdirectory
 
-A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate parts of the path _even on Windows_.
+## Grafikos saugojimas pakatalogyje
 
-If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs a braced entry
-for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have:
+Gana įprasta, tvarkant įvesties failus, sudėti visą grafiką į atskirą
+pakatalogį.  Tada galite į komandą įtraukti santykinį kelią, kaip parodyta
+aukščiau; pastebėkite, kad simbolis `/` atskiria kelio dalis naudojant LaTeX
+_net ir Windows_ sistemose.
+
+Jei turite daug grafikos, galbūt norėsite iš anksto (preambulėje) nustatyti
+pakatalogį.  Tai galima padaryti su komanda `\graphicspath`, kuriai reikia
+nurodyti kiekvieną pakatalogio vardą atskiruose skliaustuose. Pavyzdžiui, 
+norėdami nurodyti du katalogus `figs` ir `pics`, turime rašyti:
 
 <!-- {% raw %} -->
 ```latex
@@ -41,38 +43,41 @@ subdirectories, we would have:
 ```
 <!-- {% endraw %} -->
 
-Notice in particular the trailing `/` in these.
+Atkreipkite dėmesį į galuose esančius `/`.
 
-## Producing graphics
 
-As discussed, LaTeX easily uses graphics from most sources, including plots from
-scientific software. When you do that, you probably want to save as a PDF if you
-can, as this is a scalable format. If you do need to create a bitmap, aim for
-high resolution. You can make mouse-created graphics that include LaTeX snippets
-with [Inkscape](https://inkscape.org/). An alternative that in addition extends
-those drawing techniques to three dimensions is
-[Asymptote](https://www.ctan.org/pkg/asymptote). These two produce their output
-as files that you include in your document.
+## Grafikos kūrimas
 
-You can also create graphics such as drawings that are especially suited to
-LaTeX, with very high precision as well as equations and labels that match your
-document. You can draw graphics directly inside your document, which is
-convenient although at the cost of more complex documents with larger
-requirements, by using [Ti*k*Z](https://ctan.org/pkg/pgf). An alternative is
-[PSTricks](https://ctan.org/pkg/pstricks-base).
+Kaip buvo aptarta, LaTeX lengvai naudoja grafiką daugeliu formatų, įskaitant
+brėžinius, pagamintus mokslinėmis programomis.  Jei jūs tą darote, tai
+geriausia išsaugoti, jei galima, PDF, nes tai yra kokybiškai
+didinamas/mažinamas formatas.  Jei jums tenka išsaugoti binariniu formatu,
+stenkitės tai daryti aukštesne skiriamąja geba (_resolution_).  Galite
+sukurti grafikos elementus su kompiuterine pele, kartu įjungiant LaTeX
+išvesties fragmentus, su [Inkscape](https://inkscape.org/), vektorinės
+grafikos redaktoriumi.  Jam alternatyva, papildomai išplečianti piešimą trijų
+matmenų efektais, yra [Asymptote](https://www.ctan.org/pkg/asymptote).  Abu
+šie redaktoriai išveda failus, kuriuos galite naudoti savo dokumentuose.
 
-## Placing floats
+Yra ir kiti būdai kurti grafiką, pavyzdžiui, brėžinius, kurie ypač dera su
+LaTeX ir yra didelio tikslumo, taip pat gali apimti lygtis ir nuorodas,
+atitinkančias jūsų dokumentą.  Galite programuoti grafiką tiesiogiai savo
+dokumento viduje, o tai yra patogu, nors ir padaro dokumentą sudėtingesniu ir
+su papildomais reikalavimais, naudojant  [Ti*k*Z](https://ctan.org/pkg/pgf).
+Kita panaši alternatyva yra [PSTricks](https://ctan.org/pkg/pstricks-base).
 
-LaTeX's float placement is complex.
-The most common request is to have the figure placed
-in the output exactly where it lies in the input.
-The `float` package will do that.
+
+## Plaukiojančių elementų išdėstymas
+
+Plaukiojančių elementų dėliojimas su LaTeX nėra paprastas.  Dažniausias
+autorių noras yra turėti grafikos elementą išvestyje ten, kur jis yra
+įvestyje. Su paketu `float` tai padaryti lengviau.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}  % beprasmis tekstas užpildymui
 \usepackage{float}
 
 \begin{document}
@@ -86,27 +91,29 @@ The `float` package will do that.
 \end{document}
 ```
 
-Note the `H` option, which puts the figure 'absolutely Here'.
-However it is often not recommended to use `H`, because it may
-create large portions of white space in your document.
+Atkreipkite dėmesį `H` parinktį, su kuria stengiamasi paveiksliuką išvesti
+„absoliučiai čia“ (_**H**ere_).  Vis dėlto dažnai naudoti `H`
+nerekomenduojama, nes tai gali palikti daug tuščių vietų jūsų dokumente.
 
-## Other types of float
 
-We will [see soon](lesson-08) that we can put tables in floats; they will go
-into a `table` environment. However, we don't _have_ to put graphics in the
-`figure` environment or tables in the `table` environment; this is just
-convention.
+## Kiti plaukiojančių elementų tipai
 
-You might want to have other types of floating environment; each type is
-inserted independently. You can do that using the
-[`trivfloat`](https://ctan.org/pkg/trivfloat) package. This provides a single
-command, `\trivfloat`, to make new types of float.
+Mes [greitai pamatysime](lesson-08), kad lentelės irgi dedamos į
+plaukiojančią `table` aplinką.  Vis dėlto reikia žinoti, kad mes
+_neprivalome_ grafiką dėti tik į `figure` aplinką, o lenteles &ndash; į
+`table`; tai tik susitarimo reikalas.
+
+Galbūt kada nors norėsite kitų tipų plaukiojančių aplinkų, nepriklausomų nuo
+jau esamų.  Jūs galite įvesti tokias naudodamiesi
+[`trivfloat`](https://ctan.org/pkg/trivfloat) paketu.  Jis apibrėžia vieną
+komandą `\trivfloat`, kuri kiekvieną kartą padaro naują plaukiojančios
+komandos tipą.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}  % beprasmis tekstas užpildymui
 \usepackage{trivfloat}
 \trivfloat{image}
 
