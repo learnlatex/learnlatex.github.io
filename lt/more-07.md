@@ -106,8 +106,8 @@ _neprivalome_ grafiką dėti tik į `figure` aplinką, o lenteles &ndash; į
 Galbūt kada nors norėsite kitų tipų plaukiojančių aplinkų, nepriklausomų nuo
 jau esamų.  Jūs galite įvesti tokias naudodamiesi
 [`trivfloat`](https://ctan.org/pkg/trivfloat) paketu.  Jis apibrėžia vieną
-komandą `\trivfloat`, kuri kiekvieną kartą padaro naują plaukiojančios
-komandos tipą.
+komandą `\trivfloat`, kuri kiekvieną kartą panaudota padaro naują plaukiojančios
+aplinkos tipą.
 
 ```latex
 \documentclass{article}

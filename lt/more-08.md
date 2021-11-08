@@ -1,28 +1,28 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Tables"
-description: "This lesson shows more ways to customize a table by styling a column, changing spacing and rules, and further packages that provide different extensions to tables."
-toc-anchor-text: "More on: Tables"
+lang: "lt"
+title: "Daugiau apie lenteles"
+description: "Ši pamoka parodo daugiau būdų, kaip keisti lentelių išvaizdą: pasirenkant kolonėlės stilių, pakeičiant tarpus ir linijas, taip pat pasirenkant paketus, skirtus lentelėms."
+toc-anchor-text: "Daugiau apie lenteles"
 ---
 
+## Kitas lentelių preambulės turinys
 
-## The other preamble contents
+Kadangi pagrindinėje pamokaje buvo aptarti ne visi galimi preambulės žetonai,
+keletas likusių čia pateikiami su pavyzdžiais.  Galite dar kartą peržiūrėti
+žetonų lenteles pamokos pradžioje, kad susidarytumėte bendrą vaizdą apie
+prieinamus variantus.  Čia pateikti trumpi aprašymai turėtų būti pakankami
+suprasti, ką reiškia stulpelių tipai m, b, w ir W, jei supratote tipus l, c,
+r ir p.  Jei ne, galite šiek tiek paeksperimentuoti su jais.  Ko vis dar
+nepasiaiškinome, tai naudingų preambulės žetonų `>`, `<`, `@`, `!`, ir `|`.
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
 
-### Styling a column
+### Kolonėlių stiliai
 
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
+Kadangi žetonai `>` ir `<` naudojami įterpti kodą, atitinkami, prieš ir po
+langelio turinio, su jais galima pridėti komandas, įtakojančias kolonėlės
+langelių išvaizdą.  Pavyzdžiui, jei norite pirmosios kolonėlės įrašus išvesti
+kursyvu ir po kiekvieno jų padėti dvitaškį, galite tai pasiekti tokiu būdu:
 
 <!-- {% raw %} -->
 ```latex
@@ -45,13 +45,14 @@ colon after it, you can do the following:
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
+Komanda `\itshape` išveda tolesnį tekstą kursyvu, bet ji (kaip ir kitos
+šriftų keitimo komandos) veikia tik vieno langelio viduje.  Mes panagrinėsime
+rankinį šriftų valdymą [po kelių pamokų](lesson-11).
 
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+Grįžtant prie pavyzdžio: tikriausiai nenorėsite, kad pirmasis langelis būtų
+paveiktas bendrojo stulpelio formatavimo, nes jame yra kolonėlės antraštė.
+Jame gali būti panaudota komanda `\multicolumn`.  Atsiminkite, kad ji gali
+būti naudojama pakeisti ir vieno langelio lygiuotę, kaip padaryta žemiau:
 
 <!-- {% raw %} -->
 ```latex
@@ -74,13 +75,15 @@ it can be used to change a single cell's alignment as shown below.
 ```
 <!-- {% endraw %} -->
 
-### Manipulating the space between columns
+### Tarpų tarp kolonėlių valdymas
 
-Usually LaTeX pads each column by some space on both sides to give a balanced
-look and separate them. This space is defined with the length `\tabcolsep`. Due
-to the fact that each column is padded on both sides you get one `\tabcolsep` on
-either end of the table, and `2\tabcolsep` between two columns &ndash; one from
-each column. You can adjust this space to any length using `\setlength`:
+LaTeX standartiškai palieka šiek tiek vietos iš abiejų kiekvienos kolonėlės
+pusių vaizdo subalansavimui ir atskyrimui.  Šio tarpo plotis nurodomas
+kintamuoju `\tabcolsep`.  Dėl to, kad tarpai yra iš abiejų kiekvienos
+kolonėlės pusių, jūs gaunate po vieną `\tabcolsep` tarpą abiejuose lentelės
+šonuose ir `2\tabcolsep` tarpą tarp kiekvienų dviejų kolonėlių, nes dedasi po
+vieną tarpą iš kiekvienos kolonėlės.  Galite pakeisti tarpo dydį su komanda
+`\setlength`:
 
 <!-- {% raw %} -->
 ```latex
@@ -101,9 +104,10 @@ each column. You can adjust this space to any length using `\setlength`:
 ```
 <!-- {% endraw %} -->
 
-You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything in
-between the columns you specify as an argument:
+Su žetonu `@` galite pakeisti tarpą tarp konkrečių kolonėlių į faktiškai bet
+ką.  Žetonas pašalins standartinį tarpą tarp kolonėlių (arba iš šono, jei
+stovi preambulės priekyje arba gale), o vietoj to įdės tai, ką nurodėte kaip
+argumentą:
 
 <!-- {% raw %} -->
 ```latex
@@ -122,11 +126,11 @@ between the columns you specify as an argument:
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
+(Susipažinsime su `\hspace` [kiek vėliau](lesson-11); galite atspėti iš
+vardo, kad komanda prideda horizontalų tarpą.)
 
-The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument in center of the space between two columns.
+Preambulės žetonas `!` daro kažką gana panašaus.  Skirtumas yra tame, kad jis
+_įterpia_ savo argumentą į vidurį tarp abiejų tarpų.
 
 <!-- {% raw %} -->
 ```latex
@@ -146,9 +150,11 @@ _adds_ its argument in center of the space between two columns.
 <!-- {% endraw %} -->
 
 
-### Vertical rules
+### Vertikalios linijos
 
-Sometimes you have to use vertical rules.
+Nors vertikalių linijų naudojimas lentelėse ir nėra skatinamas leidyboje, bet
+yra labai mėgiamas biurokratinėse ataskaitose.  Todėl kartais jums teks
+naudoti vertikalias linijas:
 
 <!-- {% raw %} -->
 ```latex
@@ -167,20 +173,22 @@ Sometimes you have to use vertical rules.
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
-adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though; vertical rules don't work with the
-horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
-will span any space specified in the optional argument to `\\`.
+Gal pastebėjote, kad žetono `|` poveikis yra gana panašus į `!`; jis
+prideda vertikalią liniją tarp dviejų kolonėlių, palikdamas tarpus tokius,
+kokie jie yra.  Vis dėlto jis turi juntamą neigiamą poveikį: vertikalios
+linijos išvedamos netinkamai su horizontaliomis linijomis iš paketo
+`booktabs`.  Galite naudoti standartines LaTeX horizontalias linijas; t.y.,
+`\hline` (vietoje `\toprule`, `\midrule` ir `\bottomrule`) ir `\cline`
+(vietoje `\cmidrule`).  Kaip matyti pavyzdyje aukščiau, vertikalios linijos
+automatiškai prasitęsia per tarpą, kurį prideda neprivalomas `\\` argumentas.
 
-## Customizing `booktabs` rules
 
-All the `booktabs` rules and also `\addlinespace` support an optional argument
-in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a length in
-braces after `r` or `l`.
+## `booktabs` linijų keitimas
+
+Visos `booktabs` linijų komandos ir `\addlinespace` priima neprivalomą
+argumentą, skirtą nurodyti linijos storį. Be to, `\cmidrule` galų
+apipjaustymą galima keisti, nurodant figūriniuose skliaustuose po `r` arba
+`l` norimus ilgius.
 
 <!-- {% raw %} -->
 ```latex
@@ -201,12 +209,11 @@ braces after `r` or `l`.
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment in columns
+## Skaičių lygiavimas kolonėlėse
 
-The alignment of numbers in tables can be handled by the column type `S` 
-that is provided by the `siunitx` package.
-
-A simple example with two aligned numeric columns would be:
+Skaičių lygiavimą lentelėse galima valdyti nurodžius kolonėlės tipą `S`,
+kuris apibrėžtas pakete `siunitx`.  Paprastas pavyzdys su dviem lygiuotais
+skaitmeninėmis kolonėlėmiss būtų toks:
 
 ```latex
 \documentclass{article}
@@ -229,31 +236,30 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
-Note that any non-numeric cell must be "protected" by enclosing it in braces.
+Pastebėkite, kad kiekvienas neskaitmeninio turinio langelis turi būti
+„apsaugotas“ figūriniais skliaustais
 
-The `siunitx` package provides many possibilities for formatting the numbers in
-different ways; see the [package
-documentation](https://texdoc.org/pkg/siunitx).
+Paketas `siunitx` suteikia daug galimybių formatuoti skaičius skirtingais
+būdais; žr. [paketo dokumentaciją](https://texdoc.org/pkg/siunitx).
 
-## Specifying the total table width
 
-The width of a `tabular` environment is automatically determined based
-on the contents of the table. There are two commonly used mechanisms
-to specify a different total width.
+## Bendro lentelės pločio nurodymas
 
-Note that it is almost always preferable to format the table to a
-specified width as below (perhaps using a font size such as `\small` if
-necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths.
+Aplinkos `tabular` plotis nustatomas pagal lentelės turinį.  Yra du
+dažniausiai naudojami mechanizmai nurodyti kitokį lentelės plotį.
+
+Atminkite, kad beveik visada geriau formatuoti lentelę iki nurodyto pločio,
+kaip nurodyta toliau (galbūt panaudojant tokį šrifto dydį, kaip `\small`, jei
+reikia), o ne keisti lentelės mastelį su `\resizebox` ar kaip panašiomis
+komandomis, kurios išves nesuderintus šriftų dydžius ir linijų pločius.
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that
-specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command. This space is added
-between all columns from that point in the preamble. It is almost
-always used with `\fill`, a special space that stretches to be as large
-as necessary.
+Aplinkos `tabular*` komanda priima papildomą _pločio_ argumentą, nurodantį
+bendrą lentelės plotį.  Tampomi tarpai turi būti pridėti su `\extracolsep`
+komanda, kuri prideda tarpus tarp kolonėlių nuo savo vietos preambulėje.
+Naudojama ji beveik visada su specialia komanda `\fill`, kuri tempiasi tiek,
+kiek reikia.
 
 ```latex
 \documentclass{article}
@@ -293,11 +299,10 @@ C & D\\
 
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+Aplinka `tabularx` iš to paties pavadinimo paketo, turi panašią sintaksę kaip
+ir `tabular*`, tačiau užuot koregavusi tarpus tarp kolonėlių, reguliuoja
+pločius tų kolonėlių, kurioms nurodytas naujas tipas `X`.  Jis atitinka tipą
+`p{...}`, tik nereikia nurodyti pločio.
 
 ```latex
 \documentclass{article}
@@ -335,19 +340,20 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.org/pkg/tabularx).
+Skirtinguose nuo kitų lentelių aplinkų, aptartų šiose pamokose, `tabularx`
+reikia kelių kompiliavimo kartų, kad bandymų keliu nustatytų galutinius
+kolonėlių pločius.  Tai reiškia tam tikrus aplinkos naudojimo apribojimus,
+žr. [paketo dokumentaciją](https://texdoc.org/pkg/tabularx).
 
-## Multi-page tables
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+## Lentelės per kelis puslapius
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+Aplinka `tabular` suformuoja neskaldomą dėžę, todėl ji turi būti pakankamai
+maža, kad tilptų viename puslapyje, ir dažniausiai yra dedama į plaukiojančią
+`table` aplinką.
+
+Keli paketai pateikia aplinkų variantus su panašia sintakse, bet leidžia
+skaldyti lenteles per puslapius.  Čia mes parodome `longtable` paketą:
 
 ```latex
 \documentclass{article}
@@ -384,19 +390,20 @@ A Wider Entry & b\\
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+Aplinka `longtable` išsiskiria tuo, kad išveda vienodą kolonėlių plotį
+visuose lentelės puslapiuose; tačiau norint tai pasiekti, gali prireikti
+kelių LaTeX paleidimų, kad platūs įrašai, esantys lentelėje žemiau, paveiktų
+kolonėlių plotį ankstesniuose puslapiuose.
 
-## Table notes
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.org/pkg/threeparttable)
-for full details, but we show a simple example here.
+## Lentelių išnašos
+
+Gana įprasta poreikis yra turėti lentelėje ženklus, panašius į išnašų, bet
+susijusius su pastabomis po lentele.  Paketas `threeparttable` supaprastina
+tokių lentelių žymėjimą, pasirūpindamas, kad pastabos būtų išdėstytos po
+lentele esančiame bloke, tokio pat pločio kaip ir lentelė.  Išsamesnė
+informacija [paketo dokumentacijoje](https://texdoc.org/pkg/threeparttable);
+čia pateikiame tik paprastą pavyzdį.
 
 ```latex
 \documentclass{article}
@@ -422,23 +429,24 @@ for full details, but we show a simple example here.
 \end{document}
 ```
 
-## Typesetting in narrow columns
+## Tekstas siaurose kolonėlėse
 
-The default line breaking settings assume relatively long lines to
-give some flexibility in choosing line breaks. The following example
-shows some possible approaches. The first table shows interword spacing
-stretched and TeX warns about Underfull lines. Using `\raggedright`
-usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise;
-it allows some raggedness in the line lengths, but will also
-hyphenate where necessary, as shown in the third table.
+Standartiniai LaTeX parametrai, reguliuojantys pastraipų eilučių laužymą, yra
+parinkti sąlyginai ilgoms eilutėms, leidžiančioms lanksčiai parinkti eilučių
+lūžius.  Kitame pavyzdyje pateikiami keli galimi metodai valdyti lūžius
+siaurose kolonėlėse.  Pirmoji lentelė pateikia ištampytus tarpžodinius
+tarpus, ir TeX log faile perspėja apie nužpildytas eilutes (_Underfull
+lines_).  Komandos `\raggedright` naudojimas (antroji lentelė) paprastai
+išvengia šių pranešimų, tačiau eilutės gali gautis per daug nesulygiuotos
+(_ragged_).  Komanda `\RaggedRight` iš `ragged2e` paketo siūlo kompromisą; ji
+leidžia šiek tiek netolygumo linijų ilgiuose, bet prireikus perkelia žodžius,
+kaip parodyta trečioje lentelėje.
 
-Note the use of `\arraybackslash` here, which resets the definition of
-`\\` so that it ends the table row.
+Atkreipkite dėmesį į komandą `\arraybackslash`; ji pakeičia `\\` apibrėžimą
+taip, kad jis baigtų lentelės eilutę.
 
-An alternative technique, as shown in the fourth table, is to use a
-smaller font so that the columns are not so narrow relative to the
-text size.
+Alternatyvi technika, parodyta ketvirtoje lentelėje, yra mažesnio šrifto
+naudojimas, kad kolonėlė, lyginant su teksto dydžiu, būtų talpesnė.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -473,25 +481,25 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 \end{document}
 ```
 
-## Defining new column types
+## Naujų kolonėlių tipų apibrėžimas
 
-As demonstrated in the [main lesson](lesson-08), the `array` package allows
-constructs such as `>{\bfseries}c`  to denote a bold centered column.
-It is often convenient to define a new column type to encapsulate such
-use, for example
+Kaip parodyta [pagrindinėje pamokoje](lesson-08), `array` paketas leidžia
+tokiomis preambulės konstrukcijomis kaip `>{\bfseries}c` formatuoti centruotą
+kolonėlę pastorintu šriftu.  Patogu išsisaugoti tokią konstrukciją kaip naują
+kolonėlės tipą, pavyzdžiui:
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in table preambles to specify a bold
-centered column.
+leistų su `B` žymėti lentelių preambulėse pastorinto šrifto centruotus
+stulpelius. 
 
 
-## Vertical tricks
+## Vertikalaus skaidymo triukai
 
-Often, rather than making a cell span multiple rows it is better to instead have
-a single row in which some cells are split vertically by the use of nested
-`tabular` environments.
+Dažnai, užuot apjunginėjus į vieną langelius iš kelių eilučių, geriau turėti
+vieną eilutę, kurioje kai kurie langeliai vertikaliai padalijami įdėtomis
+`tabular` aplinkomis.
 
 <!-- {% raw %} -->
 ```latex
@@ -514,9 +522,10 @@ a single row in which some cells are split vertically by the use of nested
 ```
 <!-- {% endraw %} -->
 
-Note that you can control vertical alignment by an optional argument to the
-`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
-bottom aligned respectively and is used like this:
+Pastebėkite, kad vertikalųjį lentelių tarpusavio lygiavimą galite valdyti
+neprivalomu `tabular` argumentu; jame gali būti reikšmės `t`, `c` arba `b`,
+žyminčios lygiavimą su viršutine (_top_) eilute, centru, arba apatine
+(_bottom_) eilute, atitinkamai, ir jis gali būti naudojamas taip:
 
 <!-- {% raw %} -->
 ```latex
@@ -539,25 +548,23 @@ bottom aligned respectively and is used like this:
 ```
 <!-- {% endraw %} -->
 
-## Line spacing in tables
+## Tarpai tarp lentelės eilučių
 
-In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package, which is useful for adding extra space between specific lines.
+Pagrindinėje pamokoje pademonstravome komandą `\addlinespace` iš `booktabs`
+paketo, kuri yra naudojama padidinti tarpą tarp konkrečių eilučių.
 
-There are two general parameters that control line spacing,
-`\arraystretch` and `\extrarowheight` (the latter from the `array`
-package).
+Yra du bendri parametrai, valdantys atstumą tarp eilučių: `\arraystretch` ir
+`\extrarowheight` (pastarasis iš `array` paketo).
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
 
-will increase the baseline spacing by 50%.
+padidins pradinį atstumą 50%.
 
-
-Often, especially when using `\hline`, it is better just to increase
-the height of rows, without increasing their depth below the baseline.
-The following example demonstrates the `\extrarowheight` parameter.
+Dažnai, ypač kai naudojamas `\hline`, geriau tiesiog padidinti eilučių
+aukštį, nedidinant jų gylio žemiau bazinės linijos.  Kitas pavyzdys
+demonstruoja parametro `\extrarowheight` naudojimą.
 
 ```latex
 \documentclass[a4paper]{article}
