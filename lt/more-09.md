@@ -1,16 +1,17 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Cross-referencing"
-description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
-toc-anchor-text: "More on: Cross-referencing"
+lang: "lt"
+title: "Daugiau apie nuorodas"
+description: "Ši pamoka parodo, kaip aktyvuojasi nuorodos, kai pajungiamas paketas hyperref."
+toc-anchor-text: "Daugiau apie nuorodas"
 ---
 
-## Making cross-references into links
+## Nuorodų aktyvavimas
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+Tekstines nuorodas į kitus dokumento elementus galite padaryti aktyviomis
+(per kurias galima nušokti į nurodytą elementą) naudodami `hyperref` paketą.
+Kad gerai veiktų, `hiperref` turėtų būti įkeliamas po visų kitų dokumentų
+preambulėje nurodytų paketų.
 
 ```latex
 \documentclass{article}
@@ -28,5 +29,5 @@ More text here.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+Mes nusprendėme padaryti nuorodas tokios pačios spalvos kaip įprastas
+tekstas; pabandykite pašalinti `hidelinks`, kad suprasti kodėl!
