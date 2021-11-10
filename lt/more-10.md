@@ -1,20 +1,20 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Mathematics"
-description: "This lesson show more amsmath alignment environments, how to make math bold, the math extension package mathtools, and using Unicode input for maths."
-toc-anchor-text: "More on: Mathematics"
+lang: "lt"
+title: "Daugiau apie matematiką"
+description: "Ši pamoka parodo daugiau lygčių lygiavimo aplinkų iš amsmath, formulių išvedimą pastorintais šriftais, matematinį išplėtimo paketą mathtools, ir Unicode įvesties panaudojimą matematikai."
+toc-anchor-text: "Daugiau apie matematiką"
 ---
 
 
-## Further `amsmath` alignments
+## Daugiau lygiavimo apllinkų iš `amsmath` 
 
-In addition to the `align*` environment shown in the main lesson,
-`amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment, and `multline` for
-splitting a larger single expression over multiple lines, aligning the
-first line to the left, and the last to the right. In all cases the `*`
-form  omits the equation numbers by default.
+Be pagrindinėje pamokoje parodytos `align*` aplinkos, `amsmath` paketas turi
+keletą kitų aplinkų išskirtajai matematikai, būtent, `gather` kelioms
+eilutėms su formulėmis, kurių nereikia lygiuoti, ir `multline`, skirta
+sulaužyti didesnę vieną išraišką per kelias eilutes, kur pirmoji eilutė
+nustumiama į kairę, o paskutinioji į dešinę.  Visų aplinkų formos su `*`
+neišveda lygčių numerių.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -39,12 +39,12 @@ Multline
 \end{document}
 ```
 
-### Columns in math alignments
+### Kolonėlės matematiniuose lygiavimuose
 
-The `amsmath` alignment environments are designed to take pairs of
-columns with the first column of each pair aligned to the right and
-the second aligned to the left. This allows multiple equations to be
-shown, each aligned towards its relation symbol.
+Matematinio lygiavimo aplinkos yra sukurtos lygiuoti stulpelių poras, kai
+kiekvienoje poroje pirmasis stulpelis lygiuojamas pagal dešinįjį kraštą, o
+antrasis &ndash; pagal kairįjį.  Tai leidžia išvesti keletą lygčių,
+sulygiuotų pagal savo sąryšių simbolius.
 
 ```latex
 \documentclass{article}
@@ -60,10 +60,9 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
-
-In addition there are variants of the display environments ending
-in `ed` that make a subterm inside a larger display.
-For example, `aligned` and `gathered` are variants of `align` and `gather` respectively.
+Papildomai yra aplinkų variantai, kurių vardai baigiasi `ed`; jie skirti
+lygiuotą aplinką didesnio matematinio reiškinio viduje. Pavyzdžiui, `aligned`
+ir `gathered` yra atitinkami `align` ir `gather` variantai.
 
 ```latex
 \documentclass{article}
@@ -85,9 +84,9 @@ d&=c
 \end{document}
 ```
 
-`aligned` takes a positional optional argument similar to `tabular`.
-This is often useful to align an inline math formula on its top row;
-compare the items in the list in the following example.
+Aplinka `aligned` priima neprivalomą argumentą, panašiai kaip `tabular`.  Tai
+praverčia norint lygiuotis su viršutinės eilutės formule; palyginkite sąrašo
+elementus šiame pavyzdyje.
 
 ```latex
 \documentclass{article}
@@ -109,18 +108,18 @@ c&=d
 \end{document}
 ```
 
-## Bold Math
-Standard LaTeX has two methods to give bold symbols in math. To make
-an entire expression bold, use `\boldmath` before entering the
-expression. The command `\mathbf` is also available to set individual
-letters or words in upright bold roman.
+## Matematika pastorintu šriftu
+
+Standartiniame LaTeX yra du būdai paryškinti simbolius matematikoje.  Norint
+paryškinti visą išraišką, naudokite `\boldmath` prieš ją.  Tuo tarpu komanda
+`\mathbf` yra skirta atskirų raidžių ar žodžių išvedimui stačiu paryškintu
+roman šriftu.
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
-
 
 $(x+y)(x-y)=x^{2}-y^{2}$
 
@@ -131,11 +130,11 @@ $\mathbf{\pi} r^2$ % bad use of \mathbf
 \end{document}
 ```
 
-If you want to access bold symbols (as would be used by `\boldmath`)
-within an otherwise normal weight expression, then you can use the
-command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as `=` and Greek letters. (Note that `\mathbf` has no effect
-on `\pi` in the example above.)
+Jei norite išvesti atskirus simbolius paryškintus taip, lyg jie būtų
+formulėje po `\boldmath` komandos, bet normalaus šriftų storio aplinkoje,
+galite naudoti komandą `\bm` iš `bm` paketo.  Pastebėkite, kad `\bm` taip pat
+veikia tokius simbolius kaip `=` ir graikiškos raidės. (Atkreipkite dėmesį,
+kad ankstesniame pavyzdyje `\mathbf` neturėjo įtakos `\pi`.)
 
 ```latex
 \documentclass[a4paper]{article}
@@ -153,10 +152,11 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 \end{document}
 ```
 
-## Mathtools
-The package `mathtools` loads `amsmath` and adds several additional
-features, such as variants of the `amsmath` matrix environments that
-allow the column alignment to be specified.
+## Paketas `mathtools`
+
+Paketas `mathtools` įkelia `amsmath` ir prideda keletą papildomų galimybių,
+tokių kaip kolonėlių lygiavimo nurodymas `amsmath` matricose.
+
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
@@ -175,15 +175,15 @@ allow the column alignment to be specified.
 \end{document}
 ```
 
-## Unicode Math
+## Matematika su Unicode simboliais
 
-As will be seen in [Lesson 14](lesson-14), there are variant TeX
-engines that use OpenType fonts. By default, these engines still use
-classic TeX math fonts but you may use the `unicode-math` package
-to use OpenType Math fonts. The details of this package are beyond
-this course and we refer you to the
-[package documentation](https://texdoc.org/pkg/unicode-math).
-However, we give a small example here.
+Kaip matysite [14-toje pamokoje](lesson-14), yra TeX variklių variantai,
+naudojantys OpenType šriftus.  Standartiškai šie varikliai vis dar naudoja
+klasikinius TeX matematikos šriftus, tačiau su `unicode-math` paketu galite
+naudoti OpenType matematinius šriftus.  Šio paketo panaudojimo detalės yra už
+šio kurso ribų, ir mes nukreipiame jus į [paketo
+dokumentaciją](https://texdoc.org/pkg/unicode-math), nors čia ir pateikiame
+nedidelį pavyzdį.
 
 ```latex
 % !TEX lualatex
