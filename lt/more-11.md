@@ -1,18 +1,16 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Formatting: fonts and spacing"
-description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "More on: Formatting: fonts and spacing"
+lang: "lt"
+title: "Daugiau apie formatavimą: šriftai ir tarpai"
+description: "Ši pamoka parodo, kaip išvengti pirmos eilutės atitraukimo vienoje pastraipoje."
+toc-anchor-text: "Daugiau apie formatavimą: šriftai ir tarpai"
 ---
 
-## Suppressing the indent for one paragraph
+## Įtraukos panaikinimas vienoje pastraipoje
 
-
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+Jei norite panaikinti įtrauką vienoje pastraipoje, galite naudoti komandą
+`\noindent`.  Tai turėtų būti _labai_ retai naudojama; didumoje atvejų turite
+leisti LaTeX valdyti tai automatiškai.
 
 ```latex
 \documentclass{article}
