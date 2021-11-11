@@ -1,27 +1,27 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Accessing documentation and getting help"
-description: "This lesson show you where you can find the sources of LaTeX itself."
-toc-anchor-text: "More on: Accessing documentation and getting help"
+lang: "lt"
+title: "Daugiau apie dokumentaciją ir pagalbos gavimą"
+description: "Ši pamoka apie tai, kur jūs galite rasti paties LaTeX kodą."
+toc-anchor-text: "Daugiau apie dokumentaciją ir pagalbos gavimą"
 ---
 
+## Dokumentuoti LaTeX šaltiniai
 
-## Documented sources of LaTeX
+Anksčiau aprašyta `texdoc` komanda neapsiriboja tik paketų dokumentacija.
+Jei norite peržengti sričių, kurioms skirtas šis kursas, ribas ir išsamiai
+patyrinėti LaTeX realizaciją, tada jums gali padėti tolesnės nuorodos.
 
-The `texdoc` command described earlier is not restricted to package documentation. If you wish to
-go beyond the areas covered by this course and study the LaTeX inplementation in detail then
-the following links may help.
-
-The source of LaTeX itself is available as a LaTeX-typeset document `source2e.pdf`, available
-from `texdoc source2e` or at
+Pats LaTeX kodas yra dokumentuotas LaTeX pagalba gautame dokumente
+`source2e.pdf`, kurį galima gauti (esant lokaliai instaliuotam LaTeX)
+surinkus komandinėje eilutėje `texdoc source2e` arba rasti
 [texdoc.org](https://texdoc.org/pkg/source2e).
 
-Current releases of LaTeX also have preloaded the LaTeX3 Programming Language code, previously available
-as the `expl3` package.  `texdoc` may be used to see the
-[expl3 interface description](https://texdoc.org/pkg/interface3) (`texdoc interface3`)
-or
-[full expl3 source code](https://texdoc.org/pkg/source3) (`texdoc source3`).
+Dabartinės LaTeX laidos taip pat įjungia LaTeX3 programavimo kalbą,
+anksčiau prieinamą tik užkrovus paketą `expl3`.  [LaTeX3 kalbos
+aprašymą](https://texdoc.org/pkg/interface3) galima gauti su `texdoc`
+įvykdžius `texdoc interface3`, o [LaTeX3 realizacijos
+kodą](https://texdoc.org/pkg/source3) &ndash; įvykdžius `texdoc source3`.
 
 
 
