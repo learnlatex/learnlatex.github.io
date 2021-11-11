@@ -1,39 +1,45 @@
 ---
 layout: "page"
-lang: "en"
-title: Site Settings
-permalink: /en/settings
+lang: "lt"
+title: Svetainės nustatymai
+permalink: /lt/settings
 ---
-# Site Settings (User Preferences)
+# Svetainės nustatymai (vartotojo nuostatos)
 
-## Accept or Delete Cookies
+## Priimkite arba ištrinkite slapukus
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+Slapukai yra nedideli duomenų rinkinukai, išsaugomi jūsų naršyklės.
+Standartiškai ši svetainė nenaudoja slapukų, tačiau visos šiame puslapyje
+pasirinktos nuostatos išsaugomos slapukuose.
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
-
+Paspauskite `Accept cookies` žemiau, kad įgalinti slapukų naudojimą ir
+aktyvuoti žemiau pateiktus pasirinkimo meniu.
 
 {% include settings-accept.html 
    accept="Accept Cookies"
    reset= "Reset: Delete All Cookies"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+## Standartinė grąžinama išvestis
+
+Parametras, nurodantis grąžinamų (`return`) duomenų formatą, kurį TeXLive.net
+turėtų naudoti, kai pavyzdys neturi tinkamo nustatymo `% !TeX` formos komentaru.
 
 {% include settings-return.html %}
 
 
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+## Standartinis variklis
+
+Parametras, nurodantis variklį (`engine`), kurį TeXLive.net arba Overleaf
+turėtų naudoti, jei pavyzdys neturi tinkamo nustatymo `% !TeX` formos
+komentaru.  (`-dev` ir `context` parinktys negali būti naudojamos su
+Overleaf.)
 
 {% include settings-engine.html %}
 
 
-## Editor Theme
-The theme used by the embedded ACE editor.
+## Redaktoriaus tema
+
+Spalviniai nustatymai įterptajam ACE redaktoriui.
 
 {% include settings-acetheme.html %}
