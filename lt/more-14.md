@@ -1,28 +1,24 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Selecting fonts and using Unicode engines"
-description: "This lesson shows a basic example in Lua for users who want to write Lua code in their document."
-toc-anchor-text: "More on: Selecting fonts and using Unicode engines"
+lang: "lt"
+title: "Daugiau apie šriftus ir Unicode variklius"
+description: "Ši pamoka parodo paprastą Lua panaudojimo pavyzdį tiems, kas nori panaudoti Lua programavimą savo dokumentuose"
+toc-anchor-text: "Daugiau apie šriftus ir Unicode variklius"
 ---
-
-
-
 
 ## Lua
 
-The LuaTeX engine provides access to OpenType fonts in a similar way
-to XeTeX, and most uses of the `fontspec` package work equally well
-with either engine.
+LuaTeX variklis suteikia galimybę naudoti OpenType šriftus panašiai kaip
+XeTeX, ir daugumoje atvejų `fonspec` paketas vienodai gerai veikia su abiem
+varikliais.
 
-LuaTeX also extends TeX in other ways, notably by embedding the Lua
-scripting language. This may be used for programming in a style more
-familiar to people used to ‘mainstream’ programming languages. It also
-offers the possibility to access inner workings of the TeX system and
-modify the behaviour by substituting new code written in Lua.
+LuaTeX taip pat praplečia TeX kitais būdais, ypač įdėdamas Lua kalbos kodo
+vykdymą.  Lua programavimu gali pasinaudoti žmonės, labiau įgudę naudoti
+įprastas programavimo kalbas.  Tai taip pat įgalina pasiekti vidines TeX
+sistemos duomenų struktūras ir jas modifikuoti Lua programomis, taip keičiant
+ir TeX veikimą.
 
-Lua programming is not covered by this course but a simple example to
-calculate 2π is shown here.
+Šis kursas ne apie Lua programavimą, nors čia pateikiame paprastą 2π apskaičiavimo pavyzdį.
 
 ```latex
 %!TEX lualatex
