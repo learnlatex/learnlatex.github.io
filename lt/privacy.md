@@ -1,34 +1,37 @@
 ---
 layout: "page"
-lang: "en"
-title: Privacy Policy
-permalink: /en/privacy
+lang: "lt"
+title: Privatumo politika
+permalink: /lt/privacy
 ---
-# Privacy Policy
+# Privatumo politika
 
-## User Data
+## Vartotojo duomenys
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+LearnLaTeX.org nereikalauja prisijungimo ir nelaiko jokių duomenų apie
+vartotojus.  Kadangi svetainė yra priglobta po _GitHub Pages_ „sparnu“,
+svetainės prižiūrėtojams nėra prieinama jokia informacija apie vartotojų
+veiklą.  Svetainė nenaudoja jokių aktyvumo sekimo paslaugų, tokių kaip
+_Google Analytics_.
 
-## Cookies
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
+## Slapukai
 
-## External Sites
+Standartiškai svetainė nenaudoja jokių slapukų.  Kaip užfiksuota [svetainės
+nustatymų puslapyje](settings), vartotojai gali pasirinktinai priimti
+slapukus ir išsaugoti nuostatas.  Slapukai, saugantys nuostatas (pvz.,
+numatytąjį TeX variklį), _nėra_ generuojami ar perduodami LearnLaTeX.org
+svetainei, nes juos sugeneruoja ir saugo JavaScript variklis, veikiantis
+vartotojo naršyklėje.
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+
+## Išorinės svetainės
+
+Kai naudojamasi galimybe leisti pavyzdžius internetinėje paslaugų
+platformoje, tada duomenys iš naudojamo redaktoriaus yra perduodami per https
+POST užklausą į atitinkamą paslaugą ir jiems yra taikoma tos išorinės
+paslaugos tiekėjų privatumo politika.  Ji šiuo metu naudojamoms paslaugoms
+randama sekant šiomis nuorodomis:
 
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
