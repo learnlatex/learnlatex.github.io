@@ -1,21 +1,21 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Structuring longer documents"
-description: "This lesson shows how to make an index, and how to use the imakeidx package to automate the process."
-toc-anchor-text: "More on: Structuring longer documents"
+lang: "lt"
+title: "Daugiau apie ilgesnių dokumentų struktūrizavimą"
+description: "Ši pamoka parodo, kaip sudaryti dalykinį indeksą ir kaip panaudoti paketą imakeidx proceso automatizavimui."
+toc-anchor-text: "Daugiau apie ilgesnių dokumentų struktūrizavimą"
 ---
 
-## Making an index
+## Indekso sudarymas
 
-Depending on the type of document you are writing, you might want to include
-an index. This is a bit like making a bibliography, as it uses auxiliary files.
-Luckily, this is all automated by the `imakeidx` package. We need three
-instructions to LaTeX:
+Kai kuriems dokumentų tipams galbūt norėsite sukurti dalykinę rodyklę
+(indeksą).  Procesas šiek tiek primena bibliografijos kūrimą, nes naudojami
+pagalbiniai failai.  Laimei, procesas automatizuojamas panaudojus paketą
+`imakeidx`.  Dokumente yra naudojamos trys LaTeX komandos:
 
-- The `\makeindex` command, which enables creation of an index
-- The `\index` command, which marks up index entries
-- The `\printindex` command, which prints the index
+- `\makeindex` rodyklės (`.idx` failo automatiniam) kūrimui,
+- `\index` visų rodyklės įrašų sužymėjimui (rankomis) dokumente,
+- `\printindex` rodyklės (automatiniam) išvedimui.
 
 ```latex
 \documentclass{article}
@@ -36,7 +36,7 @@ Even more text\index{gamma@$\gamma$}.
 \end{document}
 ```
 
-We've shown two features of indexing here: subdivision using `!`, and printing
-something different from the 'sort text' of an index entry using `@`. There
-is a lot of customisation possible with an index; try out the example and see
-how it works.
+Čia parodėme dar dvi indeksavimo ypatybes: padalijimą į lygius, panaudojant
+`!`, ir išvedimo indekse ko nors, beskiriančio nuo rodyklės rūšiavimui skirto
+teksto, panaudojant `@`.  Yra daug galimybių konfigūruoti rodyklės išvedimą;
+išbandykite pavyzdį ir pamatykite, kaip rodyklės kūrimas veikia.
