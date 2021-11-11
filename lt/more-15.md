@@ -1,17 +1,18 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Dealing with errors"
-description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
-toc-anchor-text: "More on: Dealing with errors"
+lang: "lt"
+title: "Daugiau apie klaidas"
+description: "Ši pamoka parodo dar keletą bendrų LaTeX klaidų ir paaiškina apie sujungtas ir tylias klaidas."
+toc-anchor-text: "Daugiau apie klaidas"
 ---
 
-## Errors reported at ends of environments
+## Klaidos pranešamos aplinkų gale
 
-Some environments (notably `amsmath` alignments and `tabularx` tables)
-scan the whole environment body before processing the content. This means that
-any error within the environment is reported on the last line. However, as seen in the
-main lesson, TeX's display of the error context should still pinpoint the error location.
+Kai kurios aplinkos (ypač `amsmath` lygiavimo ar `tabularx` lentelės) pirmiau
+nuskaito visą aplinką, o paskui apdoroja turinį.  Tai reiškia, kad apie bet
+kurią klaidą iš aplinkos yra pranešama, kai skaitymas yra sustojęs
+paskutinėje eilutėje.  Tačiau, kaip buvo aiškinta pagrindinėje pamokoje, TeX
+rodomas klaidos kontekstas vis tiek turėtų nuvesti prie klaidos vietos.
 
 ```latex
 \documentclass{article}
@@ -30,15 +31,14 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 \end{document}
 ```
 
-Here the error will be reported on line 12
+Čia apie klaidą bus pranešta 12-toje eilutėje:
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Although the real error is on line 10 as shown by the context lines:
-
+Nors tikroji klaida yra 10-oje eilutėje, kaip matyti iš konteksto eilučių:
 
 ```
 ! Undefined control sequence.
@@ -48,17 +48,17 @@ Although the real error is on line 10 as shown by the context lines:
 {: .noedit :}
 
 
-## Spurious errors due to earlier errors
+## Netikros klaidos dėl ankstesnių klaidų
 
-When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edit the document
-and re-run. However if you scroll past the error or use an editor or
-online system that does this for you then TeX will try to recover;
-however this may lead to several more errors being reported.
+Kai kviečiate LaTeX interaktyviai iš komandinės eilutės, vykdymą galima
+nutraukti įrinkus `x`, kai jis sustoja radęs pirmą klaidą, tada paredaguoti
+dokumentą ir vėl paleisti LaTeX iš naujo.  Tačiau jei leidžiate LaTeX
+neinteraktyviu režimu arba naudojate redaktorių ar internetinę sistemą, kuri
+tai daro už jus, tada TeX bando tęsti vykdymą ir po klaidos; tačiau tai gali
+privesti prie dar keleto naujų klaidų pranešimų.
 
-So do not be too concerned about the _number_ of errors reported and
-always concentrate on fixing the first reported error.
-
+Taigi, per daug nesijaudinkite dėl klaidų pranešimų _skaičiaus_ ir visada
+susitelkite į pirmosios klaidos ištaisymą.
 
 ```latex
 \documentclass{article}
@@ -71,9 +71,8 @@ More text.
 \end{document}
 ```
 
-The error here is the underscore `_` which should be entered as `\_`.
-
-TeX does report this correctly with the _first_ error message
+Klaida čia yra pabraukimo brūkšnys `_`, kuris turėtų būti surinktas kaip `\_`.
+TeX apie tai praneša teisingai _pirmuoju_ klaidos pranešimu:
 
 ```
 ! Missing $ inserted.
@@ -85,10 +84,10 @@ l.5 Text_
 ```
 {: .noedit :}
 
-However if you scroll past the `?` prompt then TeX recovers by adding
-a `$` so the `_` is seen in math mode as a subscript. The math mode
-then continues until the `$` which ends math, so the following
-`\alpha` is seen in text mode generating another error
+Tačiau jei po klaidos tęsiama toliau, tada TeX persijungia į matematikos
+režimą pridėdamas `$`, nes `_ ` yra apatinio indekso dėjimo ženklas
+matematikoje.  Toks skaitymo režimas tęsiasi iki kito `$`, kuris išjungia šį
+režimą, tada teksto režimu nuskaityta tolesnė komanda `\alpha` sukuria kitą klaidą.
 
 ```
 ! Missing $ inserted.
@@ -101,13 +100,15 @@ l.5 Text_word  $\alpha
 {: .noedit :}
 
 
-## Errors that do not trigger an error prompt
+## Klaidos, kurios nesuaktyvina klaidos užklausos
 
-Some errors, especially errors that are not detected until the end of the file,
-do not generate an error prompt but just give a warning in the log.
+Kai kurios klaidos, ypač tos, apie kurias nepranešama iki failo skaitymo
+pabaigos, nesuaktyvina užklausos eilutės, o tiesiog įrašo perspėjimą `.log`
+žurnale.
 
-If you try this example using the TeXLive.net server it will return a PDF by default;
-to see the error message in the log add `%!TeX log`.
+Jei išbandysite šį pavyzdį naudodami TeXLive.net serverį, jis standartiškai
+parodys PDF; pamatyti klaidos pranešimą žurnale galima pridėjus komentarą
+`%!TeX log`.
 
 ```latex
 \documentclass{article}
@@ -120,11 +121,11 @@ to see the error message in the log add `%!TeX log`.
 \end{document}
 ```
 
-In this example the size change was mistakenly ended with `)` rather
-than `}`. This is not detected until the end of the file when TeX
-detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{`. It can not detect the actual
-error as the `)` is seen as "normal text".
+Šiame pavyzdyje šrifto dydžio pakeitimo zona buvo klaidingai baigta su `)`, o
+ne su `}`.  Tai liko nepastebėta iki pat failo pabaigos, kai TeX nustatė, kad
+yra vis dar neuždaryta grupė.  Jis tada praneša apie eilutę, kurioje grupė
+prasidėjo po `{`.  Jis negali aptikti tikrosios klaidos, nes `)` yra laikomas
+„normaliu tekstu“.
 
 ```
 (\end occurred inside a group at level 1)
