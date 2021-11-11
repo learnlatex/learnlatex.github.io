@@ -58,12 +58,12 @@ TeX Live ir MiKTeX tiek Windows, tiek Linux, o
 
 ## Darbas internete
 
-Yra keletas galingų saitynų, kuie leidžia iš viso išvengti TeX sistemos ir
-LaTeX redaktoriaus instaliavimo.  Šie saitynai suteikia jums galimybę
+Yra keletas galingų svetainių, kurios leidžia iš viso išvengti TeX sistemos ir
+LaTeX redaktoriaus instaliavimo.  Šios svetainės suteikia jums galimybę
 redaguoti savo failus tinklapyje, paleidžia LaTeX „už scenos“ ir parodo gautą
 PDF.
 
-Kai kurie iš šių saitynų kombinuoja LaTeX su WYSIWYG ypatybėmis, kai kiti
+Kai kurios iš šių svetainių kombinuoja LaTeX su WYSIWYG ypatybėmis, kai kiti
 labiau koncentruojasi ties LaTeX kodu ir yra artimesni lokalioms LaTeX
 sistemoms.
 
@@ -71,17 +71,17 @@ Yra internetinės LaTeX sistemos, vykdančios LaTeX be asmeninio prisijungimo,
 ir mes vienoje iš jų, [TeXLive.net](https://texlive.net), leisime jums
 redaguoti ir testuoti pavyzdžius, kuriuos mes pateiksime.  Geriausios
 sistemos, labiau tinkamos išbaigtiems darbams, reikalauja prisijungimo prieš
-naudojimą.  Tai leidžia jums išsaugoti savo darbus, o saitynus apsaugo nuo
+naudojimą.  Tai leidžia jums išsaugoti savo darbus, o svetaines apsaugo nuo
 perkrovos.  Mes pateikiame nuorodas, sekdami kuriomis jūs galie redaguoti
 savo pavyzdžius [Overleaf](https://www.overleaf.com), viename iš didžiausių
-LaTeX saitynų.  Tokių saotymų yra ir daugiau,
+LaTeX svetainių.  Tokių sistemų yra ir daugiau,
 [Papeeria](https://papeeria.com/) yra vienas iš pavyzdžių.
 
-## Darbas kiteims tikslams
+## Darbas kitiems tikslams
 
 Jei jūs planuojate išsiųsti savo LaTeX failus į vietas, kuriose juos
 kompiliuos, kaip leidėjai, konferencijų organizatoriai ar preprintų serveriai
-(pvz., arXiv), jūs turite patikrinti jų keliamus apribojimus.
+(pvz., arXiv), jūs turite patikrinti jų keliamus reikalavimus.
 
 ## Pratimas
 

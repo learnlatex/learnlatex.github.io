@@ -2,7 +2,7 @@
 layout: "page"
 lang: "lt"
 title: "Tinklapio learnlatex.org gidas"
-description: "Šis puslapis paaiškina apie patį learnlatex.org saityną ir geriausią jo panaudojimą."
+description: "Šis puslapis paaiškina apie pačią learnlatex.org svetainę ir geriausią jos panaudojimą."
 permalink: /lt/help
 ---
 <script>
@@ -14,14 +14,19 @@ permalink: /lt/help
 # Pagalba
 
 
-## Judėjimas po saityną
+## Judėjimas po svetainę
 
-Kursas susideda iš 16 pagrindinių pamokų, kurios pasiekiamos iš [pagrindinio turinio]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}), pateikto [pradiniame lape](./).
+Kursas susideda iš 16 pagrindinių pamokų, kurios pasiekiamos iš [pagrindinio
+turinio]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}),
+pateikto [pradiniame lape](./).
 
-Kiekvienoje pamokoje yra nuoroda į vieną susietą pamoką ta pačia tema, tik panagrinėta giliau.
-Galima praeiti visas 16 pamokų _aplenkiant_ papildomas pamokas.
+Kiekvienoje pamokoje yra nuoroda į vieną susietą pamoką ta pačia tema, tik
+panagrinėta giliau.  Galima praeiti visas 16 pamokų _aplenkiant_ papildomas
+pamokas.
 
-Kurso pabaigoje yra mažiausiai viena pamoka, skirta kalbai, kuria buvo pateiktos pamokos, ir galerija trumpų pavyzdžių, demonstruojančių paketus ir LaTeX galimybes, neatskleistas šiame kurse.
+Kurso pabaigoje yra mažiausiai viena pamoka, skirta kalbai, kuria buvo
+pateiktos pamokos, ir galerija trumpų pavyzdžių, demonstruojančių paketus ir
+LaTeX galimybes, neatskleistas šiame kurse.
 
 ---
 
@@ -29,7 +34,8 @@ Kurso pabaigoje yra mažiausiai viena pamoka, skirta kalbai, kuria buvo pateikto
 
 ### Pavyzdžių kompiliavimas
 
-Kiekvienas pavyzdys yra pilnas, nors ir mažas LaTeX dokumentas, pateikiamas tekste panašiai kaip šis pavyzdys:
+Kiekvienas pavyzdys yra pilnas, nors ir mažas LaTeX dokumentas, pateikiamas
+tekste panašiai kaip šis pavyzdys:
 
 ```latex
 \documentclass{article}
@@ -40,15 +46,21 @@ Example text.
 \end{document}
 ```
 
-Kiekvienas pavyzdys yra išbaigtas.  Jūs galite jį paredaguoti, įnešdami smulkius taisymus, galbūt spręsdami pratimų aibę pamokos gpabaigoje.
+Kiekvienas pavyzdys yra išbaigtas.  Jūs galite jį paredaguoti, įnešdami
+smulkius taisymus, galbūt spręsdami pratimų aibę pamokos gpabaigoje.
 
 Redagavimo programa yra [ACE](https://ace.c9.io/).
 
-Jūs galite pasikeisti šios programos spalvinę gamą pagal save (pavyzdžiui, pasirinkti tamsų pagrindą su šviesiu tekstu) pasinaudodami [saityno nustatymų](settings) puslapiu.
-Iš klaviatūros galima patogiai išbandyti spalvines gamas klavišų kombinacija <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> Mac kompiuteriuose) beredaguojant bet kokį pavyzdį šiame saityne.
-[Tai atvaizduoja ekrane panelę](javascript:acesettings()), kuri leidžia pasikeisti visus ACE nustatymus.
+Jūs galite pasikeisti šios programos spalvinę gamą pagal save (pavyzdžiui,
+pasirinkti tamsų pagrindą su šviesiu tekstu) pasinaudodami [svetainės
+nustatymų](settings) puslapiu.  Iš klaviatūros galima patogiai išbandyti
+spalvines gamas klavišų kombinacija <kbd>Ctrl</kbd>+<kbd>,</kbd>
+(<kbd>⌘</kbd>+<kbd>,</kbd> Mac kompiuteriuose) beredaguojant bet kokį pavyzdį
+šioje svetainėje.  [Tai atvaizduoja ekrane panelę](javascript:acesettings()),
+kuri leidžia pasikeisti visus ACE nustatymus.
 
-Programos ACE saugykloje yra [naudinga redaktoriaus klavišų suvestinė](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+Programos ACE saugykloje yra [naudinga redaktoriaus klavišų
+suvestinė](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 
 
@@ -84,7 +96,7 @@ paskyroje vėlesniam redagavimui.
 Mygtuko <button>Leisti TeXLive.net</button>, kurio pavyzdys pateiktas žemiau,
 paspaudimas nusiųs kodą į [TeXLive.net](https://texlive.net) paslaugą[^1].
 
-TeXLive.net paslauga buvo sukurta specialiai šio saityno palaikymui ir
+TeXLive.net paslauga buvo sukurta specialiai šios svetainės palaikymui ir
 naudoja [PDF.js](https://mozilla.github.io/pdf.js/), gebantį atvaizduoti PDF
 mobiliųjų telefonų ir kitose naršyklėse, neturinčiose įmontuoto PDF
 skaitytuvo.
@@ -135,8 +147,8 @@ kai kuriuose TeX redaktoriuose, bet nereikalauja rašyti `program=` ir šiuo
 metu yra ribojama tik pasirinkimu variklio, kuris palaikomas minėtų
 internetinės palaugos tiekėjų.
 
-Jūs surasite šio tipo komentaro pavyzdžius, kurie nurodo LuaLaTeX [kai
-kuriuose šio saityno pavyzdžiuose](more-14).
+Jūs surasite šio tipo komentaro pavyzdžius, kurie nurodo LuaLaTeX 
+[kai kuriuose šios svetainės pavyzdžiuose](more-14).
 
 Kai `platex` ar `uplatex` yra nurodyti, tada `dvipdfmx` programa taip pat yra
 naudojama pagaminti PDF rezultatą iš tarpinės DVI išvesties, kurią šie
@@ -144,7 +156,7 @@ varikliai generuoja.  Taipogi `dvips` ir `ps2pdf` programos yra naudojamos,
 kai nurodomas `latex`.
 
 Jeigu variklis `% !TeX` komentaru nenurodomas, tada naudojamas `pdflatex`,
-nebent jūs buvote nustatęs standartu naudoti kitą TeX variklį [saityno
+nebent jūs buvote nustatęs standartu naudoti kitą TeX variklį [svetainės
 nustatymų](settings) puslapyje.
 
 ---
@@ -167,10 +179,12 @@ derinimo reikmėms jūs galite norėti gauti log failą, net jei pavyzdys
 kompiliavosi be klaidų. Tai gali būti pareikalauta, įrašant `log` kaip
 paskutinįjį komentaro žodį.
 
-Kaip alternatyvą `% !TeX` komentarams jūs galite nurodyti saityno standartinį išvesties parametrą [saityno nsutatymų](settings)
-puslapyje. Nustatymai yra susieti su konkrečia naršykle, todėl, pavyzdžiui, jūs galite standartiškai nustatyti
-`pdfjs` mobiliajame įrenginyje, bet pasirinkti `pdf` stalinio kompiuterio naršyklėje, kad būtų naudojams jos standartinis PDF vaizdavimas.
-
+Kaip alternatyvą `% !TeX` komentarams jūs galite nurodyti svetainės
+standartinį išvesties parametrą [svetainės nustatymų](settings)
+puslapyje. Nustatymai yra susieti su konkrečia naršykle, todėl, pavyzdžiui,
+jūs galite standartiškai nustatyti `pdfjs` mobiliajame įrenginyje, bet
+pasirinkti `pdf` stalinio kompiuterio naršyklėje, kad būtų naudojams jos
+standartinis PDF vaizdavimas.
 
 ---
 
@@ -196,7 +210,7 @@ Pakeičiant `make4ht` į `LaTeXML` ar `lwarp`, nurodomas tų sistemų naudojimas
 
 
 Kitu būdu jūs galite `make4ht`, `LaTeXML` ar `lwarp` išvestis nurodyti kaip
-standartines [saityno nustatymų](settings) puslapyje.
+standartines [svetainės nustatymų](settings) puslapyje.
 
 
 Naudodami lokalią TeX sistemą, tokią pat išvestį, kaip `make4ht` atveju,
@@ -238,6 +252,6 @@ saugykloje](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilw
       [LaTeX.Online](https://latexonline.cc/) ir
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http), ir todėl mes
       dėkojame šių paslaugų kūrėjams už atliktas korekcijas, įgalinusias
-      leisti šio saityno pavyzdžius jau ankstyvoje stadijoje.
+      leisti šios svetainės pavyzdžius jau ankstyvoje stadijoje.
 
 
