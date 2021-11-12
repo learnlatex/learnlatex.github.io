@@ -1,8 +1,8 @@
 ---
 layout: "lesson"
 lang: "lt"
-title: "Daugiau apie tai, kaip dokumentų klasės keičiadizainą"
-description: "Ši pamoka This lesson gives information on more specialized document classes for LaTeX."
+title: "Daugiau apie tai, kaip dokumentų klasės keičia dizainą"
+description: "Ši pamoka suteikia informaciją apie specialias LaTeX dokumentų klases."
 toc-anchor-text: "Daugiau apie tai, kaip dokumentų klasės keičia dizainą"
 ---
 

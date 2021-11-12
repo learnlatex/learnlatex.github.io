@@ -26,7 +26,7 @@ runlatex.preincludes = {
 Nors bibliografines nuorodas galima įkelti į savo dokumentą tiesiogiai, bet
 daug rašantys autoriai paprastai šią informaciją pasiima iš vieno ar kelių
 išorinių failų. Tokiame faile yra bibliografinių duomenų bazė, kurioje
-informacija yra paruošta atuomatiniam apdorojimui. Bibliografinių duomenų
+informacija yra paruošta automatiniam apdorojimui. Bibliografinių duomenų
 bazių naudojimas leidžia daug kartų naudoti vieną kartą suvestą informaciją
 ir dar išvengti rankinio performatavimo.
 
@@ -84,10 +84,10 @@ apskliaustos figūriniais skliaustais; jie apsaugo nuo didžiųjų raidžių
 pakeitimo mažosiomis ir atvirkščiai.
 
 
-.bib failų redagavimas rankomis gana nuodobus užsiėmimas, dauguma žmonių
+.bib failų redagavimas rankomis gana nuobodus užsiėmimas, dauguma žmonių
 naudoja tam skirtą redaktorių. [JabRef](https://www.jabref.org) yra
 populiarus ir veikia įvairiose operacinėse sistemose; yra keletas kitų
-analgiškų internetinių paslaugų tiekėjų.  Jei nuorodoje yra DOI (
+analogiškų internetinių paslaugų tiekėjų.  Jei nuorodoje yra DOI (
 _**D**igital **O**bject **I**dentifier_, skaitmeninio objekto
 identifikatorius), galite pabandyti [doi2bib](https://doi2bib.org) tam, kad
 lengvai gauti BibTeX įrašą.  Tačiau tam būtinai patikrinkite, ar įrašas
@@ -100,7 +100,7 @@ pavyzdį: mes ją išsaugojome kaip `learnlatex.bib`.
 ## Informacijos perkėlimas iš duomenų bazės
 
 Informacijos perkėlimui į savo dokumentą atliekami trys veiksmai.
-Pirmiausia, įeities dokumento kompiliavimas su LaTeX, kurio metu sukuriamas
+Pirmiausia, įvesties dokumento kompiliavimas su LaTeX, kurio metu sukuriamas
 failas su nuorodų, kurias cituoja jūsų dokumentas, sąrašu.  Antra, leidimas
 programos, kuri paima informaciją iš bibliografinės bazės, išrenka jūsų
 naudojamus įrašus ir juos sutvarko.  Galiausiai, savo dokumento kompiliavimas
@@ -162,7 +162,7 @@ mes naudojome `plainnat` stilių.  Literatūros sąrašas išvedamas
 `\bibliography` komanda, kurios argumente nurodoma duomenų bazė, kurią reikia
 naudoti; jei daugiau, nei viena, tai kableliais atskiriami jų vardai.
 
-Puslapių iš cituojų šaltinių numerius galima pridėti prie citatos su
+Puslapių iš cituotų šaltinių numerius galima pridėti prie citatos su
 neprivalomu argumentu.  Jei pateikiami du neprivalomi argumentai
 (laužtiniuose skliaustuose), tai pirmojo turinys eina prieš citavimo žymę, kaip
 trumpa įvadinė pastaba, o antrojo &ndash; po žymės, kaip detalizuojanti pastaba.
@@ -220,7 +220,7 @@ rezultatui gauti.  Šie skirtumai tarp abiejų darbo eigų gali padėti jums
 pasirinkti, kuris iš jų jums tiks geriausiai.
 
 BibTeX darbo eigoje bibliografijos stilių nustato a `.bst` failas, kurį
-pasirinkate komanda `\bibliographystyle`.  Paketas `biblatex` vietoje `.bst`
+pasirenkate komanda `\bibliographystyle`.  Paketas `biblatex` vietoje `.bst`
 failų naudoja kitokią sistemą.  Jei naudojate LaTeX dokumento šabloną su
 kartu pateiktu `.bst` failu, arba jūs gavote `.bst` failą, skirtą jūsų
 projektui, turite naudoti BibTeX darbo eigą ir negalite naudoti `biblatex`.

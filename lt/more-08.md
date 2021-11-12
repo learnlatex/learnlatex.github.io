@@ -8,7 +8,7 @@ toc-anchor-text: "Daugiau apie lenteles"
 
 ## Kitas lentelių preambulės turinys
 
-Kadangi pagrindinėje pamokaje buvo aptarti ne visi galimi preambulės žetonai,
+Kadangi pagrindinėje pamokoje buvo aptarti ne visi galimi preambulės žetonai,
 keletas likusių čia pateikiami su pavyzdžiais.  Galite dar kartą peržiūrėti
 žetonų lenteles pamokos pradžioje, kad susidarytumėte bendrą vaizdą apie
 prieinamus variantus.  Čia pateikti trumpi aprašymai turėtų būti pakankami
@@ -212,8 +212,8 @@ apipjaustymą galima keisti, nurodant figūriniuose skliaustuose po `r` arba
 ## Skaičių lygiavimas kolonėlėse
 
 Skaičių lygiavimą lentelėse galima valdyti nurodžius kolonėlės tipą `S`,
-kuris apibrėžtas pakete `siunitx`.  Paprastas pavyzdys su dviem lygiuotais
-skaitmeninėmis kolonėlėmiss būtų toks:
+kuris apibrėžtas pakete `siunitx`.  Paprastas pavyzdys su dviem lygiuotomis
+skaitmeninėmis kolonėlėmis būtų toks:
 
 ```latex
 \documentclass{article}
@@ -435,7 +435,7 @@ Standartiniai LaTeX parametrai, reguliuojantys pastraipų eilučių laužymą, y
 parinkti sąlyginai ilgoms eilutėms, leidžiančioms lanksčiai parinkti eilučių
 lūžius.  Kitame pavyzdyje pateikiami keli galimi metodai valdyti lūžius
 siaurose kolonėlėse.  Pirmoji lentelė pateikia ištampytus tarpžodinius
-tarpus, ir TeX log faile perspėja apie nužpildytas eilutes (_Underfull
+tarpus, ir TeX log faile perspėja apie neužpildytas eilutes (_Underfull
 lines_).  Komandos `\raggedright` naudojimas (antroji lentelė) paprastai
 išvengia šių pranešimų, tačiau eilutės gali gautis per daug nesulygiuotos
 (_ragged_).  Komanda `\RaggedRight` iš `ragged2e` paketo siūlo kompromisą; ji

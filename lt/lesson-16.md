@@ -113,7 +113,7 @@ Vienas dalykas, kurį norėsite pasiekti klaidų atveju, yra jūsų vykdymo
 žurnalo (log) failas; LaTeX sukuria jį kiekvieno vykdymo metu; jis turi tą
 patį pavadinimą kaip jūsų įvestis, bet baigiasi `.log`.
 
-<p class="hint">Kai kurių darbalaukių sąsajos nerodo failų vardų plėtinių, todėl gali prireikti nustatyti plėtiniių rodymą, kad išsiaiškintumėte, kuris failas tai yra.</p>
+<p class="hint">Kai kurių darbalaukių sąsajos nerodo failų vardų plėtinių, todėl gali prireikti nustatyti plėtinių rodymą, kad išsiaiškintumėte, kuris failas tai yra.</p>
 
 Log faile visada rasite pilnus klaidų pranešimus.  Nors LaTeX klaidų
 pranešimus stengtasi padaryti naudingais, tačiau jie kartais ateina „iš

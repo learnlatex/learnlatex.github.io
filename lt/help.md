@@ -47,7 +47,7 @@ Example text.
 ```
 
 Kiekvienas pavyzdys yra išbaigtas.  Jūs galite jį paredaguoti, įnešdami
-smulkius taisymus, galbūt spręsdami pratimų aibę pamokos gpabaigoje.
+smulkius taisymus, galbūt spręsdami pratimų aibę pamokos pabaigoje.
 
 Redagavimo programa yra [ACE](https://ace.c9.io/).
 
@@ -107,7 +107,7 @@ pateiktas, kad jūs galėtumėt pašalinti šią išvestį (arba jūs galite ją
 palikti ir tęsti pamoką toliau).
 
 Pabrėžiame, kad **TeXLive.net** nereikalauja jokios registracijos ar
-prisijungimo, todėl yra labai patogus naudoti su mažais pvyzdžiais, bet šioje
+prisijungimo, todėl yra labai patogus naudoti su mažais pavyzdžiais, bet šioje
 paslaugoje nėra galimybės išsaugoti jūsų dokumentą.  Bet kokie pakeitimai
 pavyzdyje bus prarasti, kai tik jūs išeisite iš puslapio.
 
@@ -142,10 +142,10 @@ Jūs galite priversti naudoti `latex`, `pdflatex`, `xelatex`, `lualatex`,
 kur pirmasis tarpas yra nebūtinas, skirtumas tarp didžiųjų-mažųjų raidžių yra
 ignoruojamas, kaip ir _bet koks tekstas_ tarp pirmojo ir paskutiniojo žodžių.
 
-Tai leidžia naudoti kometaro formą `% !TEX program=pdflatex`, kuri naudojama
+Tai leidžia naudoti komentaro formą `% !TEX program=pdflatex`, kuri naudojama
 kai kuriuose TeX redaktoriuose, bet nereikalauja rašyti `program=` ir šiuo
 metu yra ribojama tik pasirinkimu variklio, kuris palaikomas minėtų
-internetinės palaugos tiekėjų.
+internetinės paslaugos tiekėjų.
 
 Jūs surasite šio tipo komentaro pavyzdžius, kurie nurodo LuaLaTeX 
 [kai kuriuose šios svetainės pavyzdžiuose](more-14).
@@ -164,7 +164,7 @@ nustatymų](settings) puslapyje.
 ## Išvesties rodymo pasirinkimas
 
 Kai jūs naudojate TeXLive.net sistemą, tada PDF išvestis, gauta iš pavyzdžio
-vykdymo, yra tandartiškai rodoma naudojant
+vykdymo, yra standartiškai rodoma naudojant
 [PDF.js](https://mozilla.github.io/pdf.js/).  Tai užtikrina vienodą veikimą
 plačiausioje naršyklių klasėje.
 
@@ -183,7 +183,7 @@ Kaip alternatyvą `% !TeX` komentarams jūs galite nurodyti svetainės
 standartinį išvesties parametrą [svetainės nustatymų](settings)
 puslapyje. Nustatymai yra susieti su konkrečia naršykle, todėl, pavyzdžiui,
 jūs galite standartiškai nustatyti `pdfjs` mobiliajame įrenginyje, bet
-pasirinkti `pdf` stalinio kompiuterio naršyklėje, kad būtų naudojams jos
+pasirinkti `pdf` stalinio kompiuterio naršyklėje, kad būtų naudojamas jos
 standartinis PDF vaizdavimas.
 
 ---
@@ -248,7 +248,7 @@ saugykloje](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilw
 
 ---
 
-[^1]: Pažymime, kad saitymo kūrimo metu mes taip pat naudojome
+[^1]: Pažymime, kad svetainės kūrimo metu mes taip pat naudojome
       [LaTeX.Online](https://latexonline.cc/) ir
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http), ir todėl mes
       dėkojame šių paslaugų kūrėjams už atliktas korekcijas, įgalinusias

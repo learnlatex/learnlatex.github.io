@@ -18,7 +18,7 @@ LaTeX remiasi gausybe jį išplečiančių paketų įvairioms taikymo sritims.
 Pavyzdžiai paimti iš paketų dokumentacijos, jei nenurodyta kitaip.
 
 <p
-  class="hint">Pabrėžiame, kad kažkurio paketo pateikimas čia neiškelia jo aukčiau už kitus panašius paketus, mes tik norėjome parodyti visą eilę taikymo sričių, neįtrauktų į šį kursą.</p>
+  class="hint">Pabrėžiame, kad kažkurio paketo pateikimas čia neiškelia jo aukščiau už kitus panašius paketus, mes tik norėjome parodyti visą eilę taikymo sričių, neįtrauktų į šį kursą.</p>
 
 ## Chemija
 

@@ -18,7 +18,7 @@ licencija.  Tai reiškia, kad medžiagą galite panaudoti kartu su nuoroda į
 
 ## Kodo pavyzdžiai
 
-Kodo pavyzdžiamas taikoma 
+Kodo pavyzdžiams taikoma 
 [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
 (Teisės nėra saugomos) licencija.  Tai yra legalus tekstas, kuris (iš esmės)
 yra kaip Viešoji Sritis, bent jau tose šalyse, kur tokia sąvoka

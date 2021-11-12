@@ -1,7 +1,7 @@
 ---
 layout: "lesson"
 lang: "lt"
-title: "Extending LaTeX using packages and definitions"
+title: "LaTeX išplėtimas paketais ir komandomis"
 description: "Ši pamoka parodo, kaip galite praplėsti LaTeX pagal savo poreikius: pakeisti išvesties dokumentų išvaizdą, panaudojant įvairius paketus, ir apibrėžti savo komandas."
 toc-anchor-text: "LaTeX praplėtimas"
 toc-description: "Paketų ir apibrėžimų panaudojimas."
@@ -15,7 +15,7 @@ toc-description: "Paketų ir apibrėžimų panaudojimas."
 Deklaravę preambulėje dokumento klasę, galite toliau modifikuoti LaTeX veikimą, pridėdami vieną ar daugiau *paketų*. Jie gali
 
 - pakeisti kai kurių LaTeX dalių veikimą,
-- pridėti naujų komandų prie jau apibrėžtų klasėje ir LaTex branduolyje,
+- pridėti naujų komandų prie jau apibrėžtų klasėje ir LaTeX branduolyje,
 - pakeisti dokumento išvaizdą.
 
 ## LaTeX darbo keitimas
@@ -24,7 +24,7 @@ LaTeX 'branduolys' (esminė LaTeX dalis) nėra lengvai pritaikomas vartotojo
 poreikiams, bet papildomi paketai išsprendžia daugumą dažniausiai sutinkamų
 problemų.  Pirmiausia verta paminėti, kaip LaTeX prisitaiko prie konkrečios
 kalbos rašymo taisyklių (žodžių kėlimo, skyrybos, citatų atskyrimo,
-lokalizacijos ir kt.).  Jos yra surinktos `babel` („Babylono“) pakete, kuriam
+lokalizacijos ir kt.).  Jos yra surinktos `babel` („Babilono“) pakete, kuriam
 reikia nurodyti dokumente naudojamas kalbas.
 
 ```latex
@@ -103,7 +103,7 @@ Jūs turėtumėte pastebėti efektą, palygindami rezultatą su gautu užkomenta
 
 Viena iš LaTeX stiprybių yra galimybė pasirinkti iš tūkstančių paketų tuos,
 kurie skirti jūsų poreikiams tenkinti: rašyti matematines formules, kurti
-interaktyvias nuorodas, išgauti norimus spalvų deruinius ir pan.  Vėlesnėse
+interaktyvias nuorodas, išgauti norimus spalvų derinius ir pan.  Vėlesnėse
 pamokose pamatysime kai kuriuos dažnai naudojamus paketus.
 
 
@@ -138,7 +138,7 @@ dokumentui parengti. Jūs galite atskirti pateikimo formą (dizaino sprendimus)
 nuo turinio.  Jei nuspręsite raktiniams žodžiams naudoti kitokį stilių, tai,
 užuot redagavę visą dokumentą, jūs tiesiog pakeisite apibrėžimą.
 
-Dabar mes pakrausime `xcolor` packetą, įgalinantį naudoti spalvas, ir
+Dabar mes pakrausime `xcolor` paketą, įgalinantį naudoti spalvas, ir
 panaudosime mėlyną (`blue`) spalvą vietoje šrifto pastorinimo:
 
 ```latex
@@ -170,7 +170,7 @@ kokį nors tekstą internete ir atspėti tinkamus `babel` nustatymus.
 
 Pabandykite pakeisti paraštes `geometry` naudojimo pavyzdyje. Jūs galite
 priskirti skirtingus dydžius `top` (viršutiniajai), `bottom` (apatiniajai),
-`left` (kairiajai) ir `right (dešiniajai) paraštėms, atskirdami lygybes
+`left` (kairiajai) ir `right` (dešiniajai) paraštėms, atskirdami lygybes
 kableliais.
 
 Pabandykite įkelti `lipsum` paketą ir tada pridėti `\lipsum` komandą į jūsų

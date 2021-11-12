@@ -57,7 +57,7 @@ lygties aplinkoje.  Jos siejasi su `\ref{...}` komandomis paskutiniame
 sakinyje, nes jų argumentai (žymių vardai) tokie pat.
 
 Kai leidžiate LaTeX, informacija apie žymes išsaugoma pagalbiniame
-faile. Apie `\label{subsec:labelone}` LaTeX žino, kad ji yra po pokyrio
+faile. Apie `\label{subsec:labelone}` LaTeX žino, kad ji yra po poskyrio
 komandos, todėl išsaugo poskyrio numerį.  Apie `\Label{eq:labeltwo}` LaTeX
 žino, kad naujausia numeruota aplinka yra lygties, todėl išsaugo informaciją
 apie tą lygtį.  Kai paprašote sukurti nuorodą, LaTeX ją gauna iš pagalbinio

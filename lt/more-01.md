@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "lt"
 title: "Daugiau apie LaTeX ir kaip jis veikia?"
 description: "Ši pamoka pateikia platesnę istorinę LaTeX ir kitų formatų perspektyvą."
-toc-anchor-text: "Daugiau apie LaTeX More on:  ir kaip jis veikia?"
+toc-anchor-text: "Daugiau apie LaTeX ir kaip jis veikia?"
 ---
 
 Žodį „LaTeX“ iš tikrųjų sudaro du skiemenys: „La“ ir „TeX“. Toliau trumpai

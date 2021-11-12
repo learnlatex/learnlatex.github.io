@@ -9,7 +9,7 @@ toc-anchor-text: "Daugiau apie grafikos įdėjimą ir pozicionavimą"
 ## Grafikos failų pavadinimai
 
 LaTeX veikia daugelyje operacinių sistemų, todėl kuriant failų pavadinimus
-raikia į kai ką atsižvelgti.  Saugiausia yra pavadinti savo grafiką kuo
+reikia į kai ką atsižvelgti.  Saugiausia yra pavadinti savo grafiką kuo
 paprasčiau,, nenaudojant tarpų. Pavyzdžiui, jei nusprendėte laikyti visą
 grafiką pakatalogyje, tada jos įdėjimas kažkaip panašiai į
 `\includegraphics[width=30pt]{pix/mom.png}`  yra pernešamas tarp sistemų ir
@@ -19,8 +19,8 @@ Tarpai failų pavadinimuose tradiciškai yra šiek tiek problematiški, nors
 dabar paprastai palaikomi.  Tačiau, jei pavadinime yra tarpų ir jums kyla
 problemų, kaip pirmąjį žingsnį verta pabandyti pašalinti tarpus.
 
-Akcentuotų raidžių padinimuose palaikymas ne visur vienodas; yra problemų kai
-kuriose sistemose, ypač Windows.  Jei sitiksite problemą su akcentuotomis
+Akcentuotų raidžių pavadinimuose palaikymas ne visur vienodas; yra problemų kai
+kuriose sistemose, ypač Windows.  Jei sutiksite problemą su akcentuotomis
 raidėmis failų pavadinimuose, patikrinimui pabandykite naudoti tik ASCII
 simbolius.
 

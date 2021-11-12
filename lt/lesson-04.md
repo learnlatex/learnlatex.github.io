@@ -4,7 +4,7 @@ lang: "lt"
 title: "Loginė struktūra"
 description: "Ši pamoka įveda kelias pagrindines formatavimo komandas ir palygina jas su semantiniu formatavimu, naudojančiu skyrių antraščių komandas ir sąrašus."
 toc-anchor-text: "Loginė struktūra"
-toc-description: "Structūra ir išvaizda."
+toc-description: "Struktūra ir išvaizda."
 ---
 
 # Loginė struktūra
@@ -12,11 +12,11 @@ toc-description: "Structūra ir išvaizda."
 <span
   class="summary">"Ši pamoka įveda kelias pagrindines formatavimo komandas ir palygina jas su semantiniu formatavimu, naudojančiu skyrių antraščių komandas ir sąrašus.</span>
 
-LaTeX dokumento sužymėjimo metodai skirti susikoncentruoti į loginę dokumento struktūrą, paslepiant vizualaus dizaino (išvaizdos) nustatymus į komandų apibrėžimus.  Toks atskyrimas įgalina optimizuoti išvaidos apibrėžimą ir ją lengvai keisti, nekeičiant dokumento kūno.
+LaTeX dokumento sužymėjimo metodai skirti susikoncentruoti į loginę dokumento struktūrą, paslepiant vizualaus dizaino (išvaizdos) nustatymus į komandų apibrėžimus.  Toks atskyrimas įgalina optimizuoti išvaizdos apibrėžimą ir ją lengvai keisti, nekeičiant dokumento kūno.
 
-## Structūra ar išvaizda
+## Struktūra ar išvaizda
 
-Pradėsime nuo pavyzdžio, palyginančio `\emph`, vieną iš populiariausių LaTeX komandų, skirtą loginiam akcentavimui, su `\textit`, tiesiog teksto spausdinimo kursyvu (pasviru šriftu „italic"; kaip tik taip ir spausdinami pabrėžiami dalykai).
+Pradėsime nuo pavyzdžio, palyginančio `\emph`, vieną iš populiariausių LaTeX komandų, skirtą loginiam akcentavimui, su `\textit`, tiesiog teksto spausdinimo kursyvu (pasviru šriftu _italic_; kaip tik taip ir spausdinami pabrėžiami dalykai).
 
 ```latex
 \documentclass{article}
@@ -32,13 +32,13 @@ Tikriausiai atspėjote, kad `\textit` komanda skirta spausdinti tekstą
 kursyvu, tik ji _visada_ daro dalykus kursyvu, todėl ji nepaveikia teksto
 išvaizdos, pritaikyta pakartotinai. Pažiūrėkite, kaip `\emph` _pastebi_
 konteksto pasikeitimą. Be to, yra vietų, kuriose akcentavimas išreiškiamas ne
-kursyvu; pavyzdžiui, pristatymuose akcentuoti pakeiciant spalvą paprastai yra
+kursyvu; pavyzdžiui, pristatymuose akcentuoti pakeičiant spalvą paprastai yra
 geriau.  Panaudojus loginį žymėjimą, galima nesijaudinti dėl dokumento kūno
 keitimo, kai keičiamos tokios išvaizdos detalės.
 
 Mes panagrinėsime [rankinį formatavimą vėliau](lesson-11), bet šiam momentui
 pridėkime `\textbf` prie žinomų komandų: ji spausdina tekstą pastorintu
-šriftu („bold“).
+šriftu (_bold_).
 
 ## Antraščių komandos
 
@@ -46,7 +46,7 @@ Tikriausiai naudojote teksto rengyklę, kurioje, formatuodami skyriaus
 antraštę, dauguma žmonių įveda tekstą, tada tiesiog padaro jo šriftą
 didesniu ir/ar paryškintu ir atskiria naujomis eilutėmis. LaTeX loginis
 sužymėjimas iš tikrųjų yra _lengvesnis_ nei formatavimas rankomis; mes galime
-naudoti `\section` komandą.  Ji valdo šrifto paskeitimus, vertikalius tarpus
+naudoti `\section` komandą.  Ji valdo šrifto pasikeitimus, vertikalius tarpus
 ir t.t., ir daro tai vienodai per visą dokumentą.
 
 ```latex
@@ -75,13 +75,13 @@ Text of the second section.
 ```
 
 Panaudodamas standartinę `article` klasę, LaTeX numeruoja skyrius
-(„sections“) ir poskyrius („subsections“) ir paryškina jų pavadinimus.  Mes
+(_sections_) ir poskyrius (_subsections_) ir paryškina jų pavadinimus.  Mes
 pagalvosime apie dizaino pakeitimą [kitoje pamokoje](lesson-05).
 
 Standartinės LaTeX klasės suteikia galimybę padalyti dokumentus į skirtingų
 lygių skyrius:
 
-- `\chapter` (tam reikia `\documentclass{book}` arba \documentclass{report}`)
+- `\chapter` (tam reikia `\documentclass{book}` arba `\documentclass{report}`)
 - `\section`
 - `\subsection`
 - `\subsubsection`

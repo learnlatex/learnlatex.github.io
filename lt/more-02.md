@@ -15,7 +15,7 @@ tiesiogiai gamina PDF failus.
 
 ## Formatai ir varikliai
 
-Kaip buvo aprašyta [anksčiau](more-01), LaTeX yra anstatas ant sistemos,
+Kaip buvo aprašyta [anksčiau](more-01), LaTeX yra antstatas ant sistemos,
 vadinamos TeX.  Mes LaTeX vadiname „formatu“, kas reiškia, kad tai yra
 rinkinys makrosų (instrukcijų ir komandų), kuriuos TeX supranta.  Kai
 leidžiate `pdflatex`, jūs _iš tikrųjų_ leidžiate programą vardu „pdfTeX“, su

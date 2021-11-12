@@ -10,7 +10,7 @@ toc-description: "Grafikos formavimas ir pozicionavimas."
 # Grafikos įdėjimas ir pozicionavimas
 
 <span
-  class="summary">Ši pamoka parodo, kaip galite įdėti į savo dokumentą išorinius grafikos failus, pakeisti jų dydį, juos pozicionuoti ar leisti jiems „dreifuoti“ teskte automatiškai.</span>
+  class="summary">Ši pamoka parodo, kaip galite įdėti į savo dokumentą išorinius grafikos failus, pakeisti jų dydį, juos pozicionuoti ar leisti jiems „dreifuoti“ tekste automatiškai.</span>
 
 Norėdami įdėti į dokumentą paveiksliuką, išsaugotą grafikos faile, naudokite
 `graphicx` paketą, kuris apibrėžia komandą `\includegraphics`.
@@ -42,18 +42,18 @@ vėliau](lesson-11), daugiau papasakosime apie tarpus ir padėties nustatymą.
 
 ## Grafikos dydžio ir formos keitimas
 
-Komanda `\includegraphics` turi daug parametrų, valdančių įdedamų paveikliukų
+Komanda `\includegraphics` turi daug parametrų, valdančių įdedamų paveiksliukų
 dydį, formą ar apkarpymą. Su dažniausiai naudojamais tarp jų verta
 susipažinti.
 
 Akivaizdžiausi dalykai, kuriuos reikia nustatyti, yra grafikos plotis
-(`width`) ir aukštis (`height`), kurious taipogi galima išreikšti per teksto
+(`width`) ir aukštis (`height`), kuriuos taipogi galima išreikšti per teksto
 plotį (`\textwidth`) ar eilutės ilgį (`\linewidth`) ir teksto srities aukštį
 (`\textheight`).  Dažnai skirtumo tarp teksto pločio (`\textwidth`) ir
-eilutės ilgion (`\linewidth`) nėra, bet ne visada. Eilutės _tam tikroje
-vietoje_ gali būti ne per visą teskto srities plotį (pavyzdžiui, įjungus
+eilutės ilgio (`\linewidth`) nėra, bet ne visada. Eilutės _tam tikroje
+vietoje_ gali būti ne per visą teksto srities plotį (pavyzdžiui, įjungus
 klasės nustatymą `twocolumn`, kuris išveda tekstą dviem kolonėlėmis per
-puslapį). LaTeX automatiškai keičia paveikliuko dydį, išlaikydamas pastovų
+puslapį). LaTeX automatiškai keičia paveiksliuko dydį, išlaikydamas pastovų
 aukščio ir pločio santykį.
 
 ```latex
@@ -116,7 +116,7 @@ Test location.
 ```
 
 Šiame pavyzdyje LaTeX perkelia grafiką ir jos antraštę toliau nuo jos įdėjimo
-vietos įvesties dokumente, į antro pulapio viršų, nes nepakanka vietos pirmo
+vietos įvesties dokumente, į antro puslapio viršų, nes nepakanka vietos pirmo
 puslapio apačioje. Nustatymai `ht` reguliuoja, kur LaTeX gali „prišvartuoti“
 plaukiojantį elementą; šios dvi raidės leidžia „čia“ (`here`), t.y., įvesties
 vietoje teksto atžvilgiu, arba puslapio viršuje (`top`).  Galite naudoti iki

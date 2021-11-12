@@ -43,7 +43,7 @@ See how the paragraph continues after the display.
 \end{document}
 ```
 
-Kai kur kitur jūs galite pamatyti reškinius, panašius į LaTeX matematines
+Kai kur kitur jūs galite pamatyti reiškinius, panašius į LaTeX matematines
 formules, pavyzdžiui, MathJax sistemoje, įdedančioje formules į
 tinklalapiuose ar Vikipedijoje. Tokios sistemos dažnai priima tam tikras
 LaTeX sintaksės variacijas, nes iš tikrųjų nenaudoja LaTeX „užkulisiuose“.
@@ -65,7 +65,7 @@ formulės, kiek įmanoma, negadintų tarpų tarp pastraipos eilučių.
 
 Atkreipiame dėmesį į tai, kad _visa_ matematika turėtų būti sužymėta kaip
 tokia, net jei tai liečia vieną atskirą simbolį: rašykite `... $2$ ...`, o ne
-`... 2 ...`; kitaip, pavyzdžiui, kai jums reiks užrašyti neigiamą skaičų, tai
+`... 2 ...`; kitaip, pavyzdžiui, kai jums reiks užrašyti neigiamą skaičių, tai
 reikės matematikos, kad išvestumėte tinkamo ilgio minuso ženklą `...$-2$...`,
 o tada bus panaudoti skaitmenys iš matematinio šrifto, kurie gali skirtis nuo
 skaitmenų iš tekstinio šrifto (tai priklauso nuo dokumentų klasės). 
@@ -117,12 +117,12 @@ galite rasti matematinių simbolių komandas įrankio
 Išskirtose iš teksto formulėse galima naudoti lygiai tas pačias komandas,
 kaip ir tekstinėse formulėse.  Paprastai išskirtosios formulės yra
 horizontaliai centruojamos ir naudojamos didesnėms lygtims, kurios yra
-„pastraipos dalis“, išvesti.  Atminkite, kad iškirtosios matematikos aplinkos
+„pastraipos dalis“, išvesti.  Atminkite, kad išskirtosios matematikos aplinkos
 neleidžia pastraipai pasibaigti savo viduje, todėl jose negali būti tuščių
 eilučių.
 
 Pastraipa, kurioje yra išskirtųjų formulių, turi prasidėti _prieš_ jas, todėl
-nepalikite tuščių eilučių prieš iškirtosios matematikos aplinkas.  Kai jums
+nepalikite tuščių eilučių prieš išskirtosios matematikos aplinkas.  Kai jums
 reikia kelių matematikos eilučių, nenaudokite kelių matematikos aplinkų iš
 eilės (tai sukurs nevienodus tarpus); naudokite vieną iš aplinkų, skirtų
 išvesti daugeliui eilučių, tokių, kaip `align` iš `amsmath` paketo, aprašyto

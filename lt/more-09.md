@@ -10,7 +10,7 @@ toc-anchor-text: "Daugiau apie nuorodas"
 
 Tekstines nuorodas į kitus dokumento elementus galite padaryti aktyviomis
 (per kurias galima nušokti į nurodytą elementą) naudodami `hyperref` paketą.
-Kad gerai veiktų, `hiperref` turėtų būti įkeliamas po visų kitų dokumentų
+Kad gerai veiktų, `hyperref` turėtų būti įkeliamas po visų kitų dokumentų
 preambulėje nurodytų paketų.
 
 ```latex

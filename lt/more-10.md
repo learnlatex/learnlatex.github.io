@@ -7,7 +7,7 @@ toc-anchor-text: "Daugiau apie matematiką"
 ---
 
 
-## Daugiau lygiavimo apllinkų iš `amsmath` 
+## Daugiau lygiavimo aplinkų iš `amsmath` 
 
 Be pagrindinėje pamokoje parodytos `align*` aplinkos, `amsmath` paketas turi
 keletą kitų aplinkų išskirtajai matematikai, būtent, `gather` kelioms

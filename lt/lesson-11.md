@@ -50,7 +50,7 @@ _nenaudoti_ `\\`.
 
 ## Tarpų dėliojimas
 
-Mes galime įdėti mažą tarpelį (maždaug pusę tarpžodžio tarpo) su `\,`.
+Mes galime įdėti mažą tarpelį (maždaug pusę tarpžodinio tarpo) su `\,`.
 Matematikos veiksenoje yra daugiau tarpų komandų: `\:` ir `\;`, o viena
 &ndash; net tarpo sumažinimui: `\!`.
 
@@ -72,7 +72,7 @@ Even more text.
 
 ## Teksto formatavimas
 
-Mes rašėme [3-ioje pamokoje](lesson-03), lad loginis sužymėjimas geriau, nei
+Mes rašėme [3-ioje pamokoje](lesson-03), kad loginis sužymėjimas geriau, nei
 išreikštas formatavimas.  Bet kartais norėsite, kad tekstas būtų paryškintas
 ar kursyvas, ar vienplotis ir t.t.  Tam yra dviejų tipų komandos: trumpiems
 teksto gabalams ir besitęsiančiam turiniui.

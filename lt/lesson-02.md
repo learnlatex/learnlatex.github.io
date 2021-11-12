@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "lt"
 title: "Darbas su LaTeX"
-description: "Ši pamoka paaiškina apie TeX sistemas ir labiausiai naudojamas iš jų, išvardina kelis teksto redaktrius, paprastai naudojamus su LaTeX, ir internetines sistemas su indegruotais redaktoriais."
+description: "Ši pamoka paaiškina apie TeX sistemas ir labiausiai naudojamas iš jų, išvardina kelis teksto redaktorius, paprastai naudojamus su LaTeX, ir internetines sistemas su integruotais redaktoriais."
 toc-anchor-text: "Darbas su LaTeX"
 toc-description: "TeX sistemos ir LaTeX redaktoriai."
 ---
@@ -10,7 +10,7 @@ toc-description: "TeX sistemos ir LaTeX redaktoriai."
 # Darbas su LaTeX
 
 <span
-  class="summary">Ši pamoka paaiškina apie TeX sistemas ir labiausiai naudojamas iš jų, išvardina kelis teksto redaktrius, paprastai naudojamus su LaTeX, ir internetines sistemas su indegruotais redaktoriais.</span>
+  class="summary">Ši pamoka paaiškina apie TeX sistemas ir labiausiai naudojamas iš jų, išvardina kelis teksto redaktorius, paprastai naudojamus su LaTeX, ir internetines sistemas su integruotais redaktoriais.</span>
 
 LaTeX nėra atskira viena programa, 'viską' savyje talpinanti, o yra visuma
 programų, veikiančių kartu. Pirmiausia jums reikia skirti du dalykus:
@@ -25,8 +25,8 @@ sistema yra aibė 'užkulisinių' programų ir failų, reikalingų LaTeX darbui,
 bet didumą laiko jums nereikia jos 'leisti'.
 
 Dabar yra pagrinde naudojamos dvi TeX sistemos, [MiKTeX](https://miktex.org/)
-ir [TeX Live](https://tug.org/texlive). Abi veikia Windows, macOS ir Linux.
-MiKTeX daugiau remiasi Windows sistema; macOS sistemoje TeX Live yra ijungtas
+ir [TeX Live](https://tug.org/texlive). Abi veikia Windows, MacOS ir Linux.
+MiKTeX daugiau remiasi Windows sistema; MacOS sistemoje TeX Live yra įjungtas
 į didesnę kolekciją [MacTeX](http://www.tug.org/mactex/).  Kiekviena iš
 sistemų turi [savo privalumų](https://tex.stackexchange.com/questions/20036),
 ir jūs galite susipažinti su [daugiau patarimų LaTeX Projekto
@@ -72,7 +72,7 @@ ir mes vienoje iš jų, [TeXLive.net](https://texlive.net), leisime jums
 redaguoti ir testuoti pavyzdžius, kuriuos mes pateiksime.  Geriausios
 sistemos, labiau tinkamos išbaigtiems darbams, reikalauja prisijungimo prieš
 naudojimą.  Tai leidžia jums išsaugoti savo darbus, o svetaines apsaugo nuo
-perkrovos.  Mes pateikiame nuorodas, sekdami kuriomis jūs galie redaguoti
+perkrovos.  Mes pateikiame nuorodas, sekdami kuriomis jūs galite redaguoti
 savo pavyzdžius [Overleaf](https://www.overleaf.com), viename iš didžiausių
 LaTeX svetainių.  Tokių sistemų yra ir daugiau,
 [Papeeria](https://papeeria.com/) yra vienas iš pavyzdžių.
@@ -88,9 +88,9 @@ kompiliuos, kaip leidėjai, konferencijų organizatoriai ar preprintų serveriai
 Paruoškite sau lokalią LaTeX sistemą _arba_ prisiregistruokite pas
 internetinės LaTeX paslaugos tiekėją. Jei jūs naudosite lokalią sistemą, tada
 jums taip pat reiks pasirinkti ir redaktorių: mes rekomenduojame pradėti
-dirbti su TeXworks ar TeX Shop (žr. aukščiau), o vėliau, kai jau žinosite,
+dirbti su TeXworks ar TeXShop (žr. aukščiau), o vėliau, kai jau žinosite,
 kaip _jums_ geriausiai dirbasi su LaTeX, patyrinėsite kitus redaktorius.
 
 Jūs galėsite [vykdyti visus mūsų kitus pratimus naršyklėje](help.md), bet mes
 norime padėti jums pradėti dirbti su tikrais dokumentais, todėl dabar yra
-tinkamas laikas pasiruošti.  yourself ready.
+tinkamas laikas pasiruošti.

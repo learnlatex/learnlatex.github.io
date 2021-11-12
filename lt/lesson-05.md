@@ -15,7 +15,7 @@ toc-description: "Bendros dokumento išvaizdos nustatymas."
 Galbūt pastebėjote, kad visi LaTeX dokumentai, pateikti mūsų pavyzdžiuose,
 prasidėjo nuo `\documentclass` eilutės ir kad `\documentclass{article}` buvo
 dažniausias variantas. (Mums prireikė `\documentclass{report}` ankstesnėje
-pamokoje išbandyti `\chapter` kommandą.)  Ši eilutė yr būtina visuose LaTeX
+pamokoje išbandyti `\chapter` komandą.)  Ši eilutė yra būtina visuose LaTeX
 dokumentuose ir (beveik) visada yra pirmoji privaloma LaTeX komanda.
 
 ## Ką daro dokumentų klasė
@@ -24,7 +24,7 @@ Dokumentų klasė nustato bendrą dokumento išvaizdą, pavyzdžiui:
 
 - dizainą: paraštes, šriftus, tarpus ir pan.,
 - ar yra `\chapter` skyriaus lygis,
-- ar dokumento atraštė turėtų būti atskirame puslapyje, `...`
+- ar dokumento antraštė turėtų būti atskirame puslapyje, `...`
 
 Dokumentų klasės taip pat apibrėžia naujas bendras LaTeX komandas; tai ypač pasakytina apie specialius atvejus, kaip klasės pateikties skaidrėms ar laiškams.
 
@@ -38,13 +38,13 @@ LaTeX visada turi nedidelę aibę standartinių klasių, turinčių tarpusavyje 
 - `report`
   ilgesniems dokumentams su `\chapter` skirsniais, vienpusis spausdinimas (be puslapių skirstymo į kairiuosius ir dešiniuosius)
 - `book`
-  ilgesniems dokumentams su `\chapter` skirsniais, dvipusis spausdinimas, su priešlapiais ir užlapiais (pavyzdžui, rodykle)
+  ilgesniems dokumentams su `\chapter` skirsniais, dvipusis spausdinimas, su priešlapiais ir užlapiais (pavyzdžiui, rodykle)
 - `letter`
   spausdintiems laiškams
 - `slides`
   pristatymams (bet žr. žemiau)
 
-Klasės `article`, `report` ir `book` apibrėžia labai panašias komandų aibes. Komandos rašyti korepondencijai iš `letter` klasės yra kiek kitokios:
+Klasės `article`, `report` ir `book` apibrėžia labai panašias komandų aibes. Komandos rašyti korespondencijai iš `letter` klasės yra kiek kitokios:
 
 ```latex
 \documentclass{letter}
@@ -95,7 +95,7 @@ atskira ir labiausiai primena `book` klasės išplėtimą.
 Šiose išplėstinėse klasėse yra daug paruošta daug keitimams patogių kablių
 (_hooks_), kai kuriuos parodysime pratimuose.  Gali kilti klausimas, kaip
 galite žinoti apie jų pateiktus kablius; mes rašysime apie tai [vėlesnėje
-pamokoje](lesson-16), bet jūs visada galite žvilgtelti į ateitį!
+pamokoje](lesson-16), bet jūs visada galite žvilgtelėti į ateitį!
 
 ## Pristatymai
 
@@ -110,7 +110,7 @@ pristatytos [papildomoje pamokoje](more-05).
 Ištirkite, kaip dokumento klasės pakeitimas iš standartinės į vieną iš KOMA rinkinio ar į `memoir` klasę paveikia išvesties dokumento išvaizdą.
 
 ```latex
-\documentclass{article} % Change the class here
+\documentclass{article} % Pakeiskite klasę čia
 \usepackage[T1]{fontenc}
 
 \begin{document}

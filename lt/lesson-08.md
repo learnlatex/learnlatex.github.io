@@ -51,7 +51,7 @@ taip pat gali būti naudingi:
 | ---  | :-- |
 | `*{num}{string}` | `num` kartų pakartoja seką `string` preambulėje; taip galite aprašyti daug identiško lygiavimo kolonėlių |
 | `>{decl}` | įdeda deklaraciją `decl` prieš kiekvieno langelio turinį kitoje kolonėlėje (tai praverčia, pvz., nustatyti kitokį kolonėlės šriftą) |
-| `<{decl}` | įdeda `decl` po kiekvieno langelio turinio ankstesnioje kolonėlėje |
+| `<{decl}` | įdeda `decl` po kiekvieno langelio turinio ankstesnėje kolonėlėje |
 | <span>`|`</span>  | brėžia vertikalią liniją tarp langelių |
 | `@{decl}` | pakeičia tarpą tarp dviejų langelių į `decl` |
 | `!{decl}` | įdeda `decl` į vidurį tarpo, esančio tarp dviejų langelių |
@@ -177,7 +177,7 @@ jis čia pirmiausia ir aptariamas.  Siekiant išsamumo, standartinės linijos
 parodytos [„daugiau šia tema“](more-08)s puslapyje.
 
 Paketas `booktabs` apibrėžia keturis skirtingus horizontalių linijų
-tipus. Visos horozontalių linijų komandos gali būti naudojamos tik kaip
+tipus. Visos horizontalių linijų komandos gali būti naudojamos tik kaip
 pirmieji dalykai lentelių eilutėse.  Trys linijų komandų tokios: `\toprule`
 (virš lentelės), `\midrule` (lentelės viduje) ir `\bottomrule` (po lentele):
 

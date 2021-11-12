@@ -13,7 +13,7 @@ toc-description: "Pagrindinė dokumento struktūra."
   class="summary">Ši pamoka yra apie pagrindinę LaTeX dokumento struktūrą ir jo pavertimą į PDF failą, taip pat apie pagrindinius specialiuosius simbolius, naudojamus aprašant struktūrą.</span>
 
 Pirmasis jūsų LaTeX dokumentas bus labai paprastas: tik parodys dalis, kurios
-yra kiekviename dokumete. Aptarsime, kaip jį sėkmingai įvesti ir bus pirma
+yra kiekviename dokumente. Aptarsime, kaip jį sėkmingai įvesti ir bus pirma
 proga panaudoti pavyzdį čia, svetainėje `learnlatex.org`.
 
 Jei naudojate lokaliai įdiegtą LaTeX, redaktoriuje sukurkite naują failą
@@ -63,7 +63,7 @@ LaTeX klaidų pranešimai stengiasi būti naudingi, tačiau jie nėra tokie, kai
 tekstų tvarkyklėse. Kai kuriuose LaTeX redaktoriuose taip pat sunku pamatyti
 'pilną' klaidos tekstą, kuris gali atskleisti esmines detales. LaTeX vykdymo
 metu visada sukuria žurnalą su atliekamų veiksmų įrašais; tai yra tekstinis
-failas su praplėtimu .log.  Jame jūs visada galite surasti pilnus klaidų
+failas su praplėtimu `.log`.  Jame jūs visada galite surasti pilnus klaidų
 pranešimus. Jei jūs kreipsitės pagalbos dėl klaidos, LaTeX ekspertai dažnai
 paprašys log failo kopijos.
 
@@ -92,7 +92,7 @@ jos žymi tai, kas vadinama *aplinkomis*. Šios komandos ir naudojamos visada
 poromis, kiekvienai `\begin{x}` turi atitikti `\end{x}`. 
 Jei viena aplinka prasidėjo kitoje aplinkoje, tai joje ir turi pasibaigti,
  t.y., jei `\begin{y}` yra tarp atitinkančių `\begin{x}` ir `\end{x}`, 
-tai `\end{y}` turi buti tarp `\begin{y}` ir `\end{x}`.
+tai `\end{y}` turi būti tarp `\begin{y}` ir `\end{x}`.
 
 Mes galime rašyti komentarus pradėdami juos`%`; panaudokime juos
 pakomentuoti tokią dokumento struktūrą:

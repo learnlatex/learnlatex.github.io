@@ -34,7 +34,7 @@ po to po vieną įvesties failą kiekvienam (knygos, disertacijos ar ilgesnio
 straipsnio) skyriui.
 
 
-## Jūsų ivesties skaidymas
+## Jūsų įvesties skaidymas
 
 LaTeX sistemoje yra numatyta galimybė kontroliuojamu būdu suskaidyti įvestį:
 dvi tam svarbios komandos yra `\input` ir `\include`.  Galime naudoti komandą
@@ -125,7 +125,7 @@ užpildytų turinio lentelę.  Ji turi savo pagalbinį failą su plėtiniu `.toc
 (_**t**able **o**f **c**ontents_), todėl, norint turėti aktualią informaciją,
 gali tekti paleisti LaTeX du kartus.  Turinys generuojamas automatiškai iš
 skyrių pavadinimų.  Dar yra panašios komandos `\listoffigures` ir
-`\listoftables`, kurios surenka infromaciją iš plaukiojančių aplinkų
+`\listoftables`, kurios surenka informaciją iš plaukiojančių aplinkų
 antraščių (_captions_) ir tam naudoja atitinkamus pagalbinius failus su
 plėtiniais `.lof` ir `.lot`.
 
