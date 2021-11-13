@@ -17,7 +17,7 @@ veiks ir ateityje.
 
 Tarpai failų pavadinimuose tradiciškai yra šiek tiek problematiški, nors
 dabar paprastai palaikomi.  Tačiau, jei pavadinime yra tarpų ir jums kyla
-problemų, kaip pirmąjį žingsnį verta pabandyti pašalinti tarpus.
+problemų, tai kaip pirmąjį žingsnį verta pabandyti pašalinti tarpus.
 
 Akcentuotų raidžių pavadinimuose palaikymas ne visur vienodas; yra problemų kai
 kuriose sistemose, ypač Windows.  Jei sutiksite problemą su akcentuotomis
@@ -104,9 +104,9 @@ _neprivalome_ grafiką dėti tik į `figure` aplinką, o lenteles &ndash; į
 `table`; tai tik susitarimo reikalas.
 
 Galbūt kada nors norėsite kitų tipų plaukiojančių aplinkų, nepriklausomų nuo
-jau esamų.  Jūs galite įvesti tokias naudodamiesi
+jau esamų.  Jūs galite įvesti tokias, naudodamiesi
 [`trivfloat`](https://ctan.org/pkg/trivfloat) paketu.  Jis apibrėžia vieną
-komandą `\trivfloat`, kuri kiekvieną kartą panaudota padaro naują plaukiojančios
+komandą `\trivfloat`, kuri, kiekvieną kartą panaudota, padaro naują plaukiojančios
 aplinkos tipą.
 
 ```latex

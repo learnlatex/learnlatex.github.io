@@ -20,7 +20,7 @@ Deklaravę preambulėje dokumento klasę, galite toliau modifikuoti LaTeX veikim
 
 ## LaTeX darbo keitimas
 
-LaTeX 'branduolys' (esminė LaTeX dalis) nėra lengvai pritaikomas vartotojo
+LaTeX "branduolys" (esminė LaTeX dalis) nėra lengvai pritaikomas vartotojo
 poreikiams, bet papildomi paketai išsprendžia daugumą dažniausiai sutinkamų
 problemų.  Pirmiausia verta paminėti, kaip LaTeX prisitaiko prie konkrečios
 kalbos rašymo taisyklių (žodžių kėlimo, skyrybos, citatų atskyrimo,

@@ -20,7 +20,7 @@ Jei naudojate lokaliai įdiegtą LaTeX, redaktoriuje sukurkite naują failą
 pavadinimu `first.tex` ir nusikopijuokite arba surinkite žemiau esantį tekstą.
 
 Jei naudojate internetinę sistemą, galite tiesiog spustelėti po pavyzdžiu
-esančius mygtukus ‘Leisti TeXLive.net’ arba ‘Atverti Overleaf’, kad
+esančius mygtukus „Leisti TeXLive.net“ arba „Atverti Overleaf“, kad
 išbandytumėte!
 
 <p
@@ -39,11 +39,11 @@ This is a first document.
 
 Išsaugokite failą ir išveskite iš jo PDF dokumentą; jei naudojate LaTeX
 lokaliai, tada tikslus mygtukas, kurį reikia tam paspausti, priklauso nuo
-jūsų pasirinkto redaktoriaus.  Turite gauti PDF failą, kuriame pavyzdžio
+jūsų pasirinkto redaktoriaus.  Turite gauti PDF failą, kuriame yra pavyzdžio
 tekstas, esantis tarp `\begin{document}` ir `\end{dokument}` _plius_ puslapio
 numeris; LaTeX jį prideda automatiškai.
 
-Peržiūrėkite išvestį `first.pdf` naudodami bet kurią PDF skaityklę. Atrodo
+Peržiūrėkite išvestį `first.pdf`, naudodami bet kurią PDF skaityklę. Atrodo
 puikiai; sveikiname!
 
 Jei norite gauti HTML, o ne PDF išvestį, pažiūrėkite į [pagalbą](./help),
@@ -57,14 +57,14 @@ nulemia didelius rezultato pokyčius, iki LaTeX neveikimo. Jei užstrigote,
 pabandykite ištrinti dokumentą ir nusikopijuoti iš naujo pavyzdžio eilutes.
 
 Jei jūsų LaTeX procesas baigiasi klaustuku terminalo lange, tada galite iš to
-išeiti įvesdami po klaustuko `x` ir `<Enter>`.
+išeiti, įvesdami po klaustuko `x` ir paspausdami `<Enter>`.
 
 LaTeX klaidų pranešimai stengiasi būti naudingi, tačiau jie nėra tokie, kaip
 tekstų tvarkyklėse. Kai kuriuose LaTeX redaktoriuose taip pat sunku pamatyti
-'pilną' klaidos tekstą, kuris gali atskleisti esmines detales. LaTeX vykdymo
+„pilną“ klaidos tekstą, kuris gali atskleisti esmines detales. LaTeX vykdymo
 metu visada sukuria žurnalą su atliekamų veiksmų įrašais; tai yra tekstinis
 failas su praplėtimu `.log`.  Jame jūs visada galite surasti pilnus klaidų
-pranešimus. Jei jūs kreipsitės pagalbos dėl klaidos, LaTeX ekspertai dažnai
+pranešimus. Jeigu jūs kreipsitės pagalbos dėl klaidos, LaTeX ekspertai dažnai
 paprašys log failo kopijos.
 
 <p
@@ -94,8 +94,8 @@ Jei viena aplinka prasidėjo kitoje aplinkoje, tai joje ir turi pasibaigti,
  t.y., jei `\begin{y}` yra tarp atitinkančių `\begin{x}` ir `\end{x}`, 
 tai `\end{y}` turi būti tarp `\begin{y}` ir `\end{x}`.
 
-Mes galime rašyti komentarus pradėdami juos`%`; panaudokime juos
-pakomentuoti tokią dokumento struktūrą:
+Mes galime rašyti komentarus pradėdami juos procento ženklu `%`; panaudokime
+juos pakomentuoti tokią dokumento struktūrą:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % Dokumento klasė su opcijomis
@@ -126,8 +126,8 @@ dokumentuose. Su ``\`` prasideda kiekviena LaTeX instrukcija, vadinama
 „komanda“. Figūriniai skliaustai `{` ir `}` apskliaudžia privalomus
 argumentus: informaciją, kuri perduodama komandoms.
 
-Yra daugiau raidžių, turinčių ypatingą reikšmes; ką tik matėme, kad `~` yra
-„kietas“ tarpas, pavyzdžiui. Beveik visos tokios raidėse _labai_ retai
+Yra daugiau raidžių, turinčių ypatingą reikšmes; ką tik matėme, pavyzdžiui,
+kad `~` yra „kietas“ tarpas. Beveik visos tokios raidėse _labai_ retai
 pasitaiko įprastame tekste, todėl jos ir buvo pasirinktos ypatingoms
 rolėms. Jei jums prireiks parodyti vieną iš šių specialiųjų simbolių išeities
 dokumente, rasite sprendimą [išsamesnės informacijos puslapyje](more-03).

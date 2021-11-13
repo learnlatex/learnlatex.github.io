@@ -11,12 +11,12 @@ toc-description: "Lietuviškos rašybos ypatybės"
 # Lietuvybė LaTeX dokumentuose
 
 <span
-  class="summary">Ši pamoka skirta LaTeX dokumentų su lietuvišku tekstu ruošimui. Parodomi du dažniausiai pasitaikantys atvejai: kai visas dokumentas yra lietuviškai, ir kai lietuviški yra tik atskiri žodžiai, pavyzdžiui, vardai ir pavardės.</span>
+  class="summary">Ši pamoka skirta LaTeX dokumentų su lietuvišku tekstu ruošimui. Parodomi du dažniausiai pasitaikantys atvejai: kai visas dokumentas yra lietuviškas, ir kai lietuviški yra tik atskiri žodžiai, pavyzdžiui, vardai ir pavardės.</span>
 
 ## Pilnas lietuvybės palaikymas
 
 Šiuolaikinis LaTeX turi du paketus ruošti dokumentams ne Amerikos anglų
-kalba: `babel` ir `polyglosia`.  Pastarasis veikia tik su programomis
+kalba: `babel` ir `polyglossia`.  Pastarasis veikia tik su programomis
 LuaLaTeX ir XeLaTeX.  Šie paketai užtikrina teisingą žodžių kėlimą, tinkamas
 kabutes, pateikia lietuviškas pavadinimus automatiškai įvardinamiems
 elementams, pavyzdžiui, lentelėms, brėžiniams ar turiniams.

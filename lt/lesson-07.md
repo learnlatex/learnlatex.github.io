@@ -91,7 +91,7 @@ prireikti, yra apkirpimas, nurodomas su parametrais `clip` ir `trim`.
 ## Leidimas paveiksliukams „plaukti“
 
 Tradiciškai leidyboje grafika gali būti „nepririšta kietai“ prie tam tikros
-teksto vietos, ypač tai liečia techninę literatūrą, t.y., gali „plaukioti“
+teksto vietos, ypač tai liečia techninę literatūrą, t.y., ji gali „plaukioti“
 teksto atžvilgiu, kad nebūtų per didelių tarpų ar pan.  Tokie dokumento
 elementai vadinami *plaukiojančiais*.
 
@@ -123,8 +123,8 @@ vietoje teksto atžvilgiu, arba puslapio viršuje (`top`).  Galite naudoti iki
 keturių vietos indikatorių:
 
 - `h` (_**h**ere_), „čia“ (jei įmanoma)
-- `t` (_**t**op_) (kito) puslapio (ar kolonėlės) viršuje
-- `b` (_**b**ttom_) puslapio apačioje
+- `t` (_**t**op_) (kito) puslapio (ar kitos kolonėlės) viršuje
+- `b` (_**b**ottom_) puslapio apačioje
 - `p` (_**p**age_) tik plaukiojantiems elementams skirtame puslapyje
 
 [Vėliau](lesson-09) pamatysime, kaip sukurti nuorodas į plaukiojančius elementus iš savo teksto.

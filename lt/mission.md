@@ -14,7 +14,7 @@ programa.  Mūsų tikslas &ndash; palengvinti jūsų pradžią, nemėginant apr�
 visko vienu ypu.
 
 Tam tikslui mes atrinkome apie 16 svarbiausių dalykų, kuriuos turėsite
-žinoti, ir įdėjome juos į trumpas "pamokas“.  Kiekviena pamoka yra labai
+žinoti, ir įdėjome juos į trumpas „pamokas“.  Kiekviena pamoka yra labai
 koncentruota, todėl įsisavinimas neturėtų užtrukti per ilgai.  Kiekvienoje
 pamokoje mes pateikėme pavyzdžius, kuriuos turėtumėte surinkti, bet kadangi
 jie yra prieinami, juos galima kopijuoti ir net vykdyti internete.

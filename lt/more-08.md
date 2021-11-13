@@ -19,7 +19,7 @@ nepasiaiškinome, tai naudingų preambulės žetonų `>`, `<`, `@`, `!`, ir `|`.
 
 ### Kolonėlių stiliai
 
-Kadangi žetonai `>` ir `<` naudojami įterpti kodą, atitinkami, prieš ir po
+Kadangi žetonai `>` ir `<` naudojami įterpti kodą, atitinkamai, prieš ir po
 langelio turinio, su jais galima pridėti komandas, įtakojančias kolonėlės
 langelių išvaizdą.  Pavyzdžiui, jei norite pirmosios kolonėlės įrašus išvesti
 kursyvu ir po kiekvieno jų padėti dvitaškį, galite tai pasiekti tokiu būdu:
@@ -173,10 +173,10 @@ naudoti vertikalias linijas:
 ```
 <!-- {% endraw %} -->
 
-Gal pastebėjote, kad žetono `|` poveikis yra gana panašus į `!`; jis
-prideda vertikalią liniją tarp dviejų kolonėlių, palikdamas tarpus tokius,
-kokie jie yra.  Vis dėlto jis turi juntamą neigiamą poveikį: vertikalios
-linijos išvedamos netinkamai su horizontaliomis linijomis iš paketo
+Gal pastebėjote, kad žetono `|` poveikis yra gana panašus į `!`; jis prideda
+vertikalią liniją tarp dviejų kolonėlių, palikdamas tarpus tokius, kokie jie
+yra.  Vis dėlto jis turi juntamą neigiamą poveikį: vertikalios linijos
+išvedamos netinkamai, jei naudojamos su horizontaliomis linijomis iš paketo
 `booktabs`.  Galite naudoti standartines LaTeX horizontalias linijas; t.y.,
 `\hline` (vietoje `\toprule`, `\midrule` ir `\bottomrule`) ir `\cline`
 (vietoje `\cmidrule`).  Kaip matyti pavyzdyje aukščiau, vertikalios linijos
@@ -237,7 +237,7 @@ skaitmeninėmis kolonėlėmis būtų toks:
 ```
 
 Pastebėkite, kad kiekvienas neskaitmeninio turinio langelis turi būti
-„apsaugotas“ figūriniais skliaustais
+„apsaugotas“ figūriniais skliaustais.
 
 Paketas `siunitx` suteikia daug galimybių formatuoti skaičius skirtingais
 būdais; žr. [paketo dokumentaciją](https://texdoc.org/pkg/siunitx).
@@ -251,7 +251,7 @@ dažniausiai naudojami mechanizmai nurodyti kitokį lentelės plotį.
 Atminkite, kad beveik visada geriau formatuoti lentelę iki nurodyto pločio,
 kaip nurodyta toliau (galbūt panaudojant tokį šrifto dydį, kaip `\small`, jei
 reikia), o ne keisti lentelės mastelį su `\resizebox` ar kaip panašiomis
-komandomis, kurios išves nesuderintus šriftų dydžius ir linijų pločius.
+komandomis, kurios išves nesuderintus šriftų dydžius ir linijų storius.
 
 ### `tabular*`
 
@@ -299,8 +299,8 @@ C & D\\
 
 ### `tabularx`
 
-Aplinka `tabularx` iš to paties pavadinimo paketo, turi panašią sintaksę kaip
-ir `tabular*`, tačiau užuot koregavusi tarpus tarp kolonėlių, reguliuoja
+Aplinka `tabularx` iš to paties pavadinimo paketo turi panašią sintaksę, kaip
+ir `tabular*`, tačiau, užuot koregavusi tarpus tarp kolonėlių, reguliuoja
 pločius tų kolonėlių, kurioms nurodytas naujas tipas `X`.  Jis atitinka tipą
 `p{...}`, tik nereikia nurodyti pločio.
 
@@ -340,7 +340,7 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Skirtinguose nuo kitų lentelių aplinkų, aptartų šiose pamokose, `tabularx`
+Skirtingai nuo kitų lentelių aplinkų, aptartų šiose pamokose, `tabularx`
 reikia kelių kompiliavimo kartų, kad bandymų keliu nustatytų galutinius
 kolonėlių pločius.  Tai reiškia tam tikrus aplinkos naudojimo apribojimus,
 žr. [paketo dokumentaciją](https://texdoc.org/pkg/tabularx).
@@ -398,7 +398,7 @@ kolonėlių plotį ankstesniuose puslapiuose.
 
 ## Lentelių išnašos
 
-Gana įprasta poreikis yra turėti lentelėje ženklus, panašius į išnašų, bet
+Gana paplitusi praktika yra naudoti lentelėje ženklus, panašius į išnašų, bet
 susijusius su pastabomis po lentele.  Paketas `threeparttable` supaprastina
 tokių lentelių žymėjimą, pasirūpindamas, kad pastabos būtų išdėstytos po
 lentele esančiame bloke, tokio pat pločio kaip ir lentelė.  Išsamesnė
@@ -484,9 +484,9 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 ## Naujų kolonėlių tipų apibrėžimas
 
 Kaip parodyta [pagrindinėje pamokoje](lesson-08), `array` paketas leidžia
-tokiomis preambulės konstrukcijomis kaip `>{\bfseries}c` formatuoti centruotą
+tokiomis preambulės konstrukcijomis, kaip `>{\bfseries}c`, formatuoti centruotą
 kolonėlę pastorintu šriftu.  Patogu išsisaugoti tokią konstrukciją kaip naują
-kolonėlės tipą, pavyzdžiui:
+kolonėlės tipą; pavyzdžiui,
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}

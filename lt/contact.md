@@ -18,7 +18,7 @@ tinklapį](https://www.latex-project.org/help/) apie būdus gauti pagalbą.
 
 [Šio tinklapio](https://github.com/learnlatex/learnlatex.github.io/) kodas
 yra prieinamas [GitHub saugykloje](https://github.com/learnlatex/), žiūrėkite
-[ONTRIBUTING](../CONTRIBUTING) dėl įsijungimo į projektą ir
+[CONTRIBUTING](../CONTRIBUTING) dėl įsijungimo į projektą ir
 [LICENSE](../LICENSE) dėl kitokio panaudojimo.
 
 Jūs galite [sukurti kreipinį GitHub saugykloje](https://github.com/learnlatex/learnlatex.github.io/issues) arba [parašyti elektroninį laišką mums](mailto:texfaq@texfaq.org) su pasiūlymais.

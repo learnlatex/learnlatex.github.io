@@ -63,7 +63,7 @@ raktažodžių apibrėžimų, vadinamų „laukais“ (_fields_).  Pažvelkime �
 ```
 <!-- {% endraw %} -->
 
-Ten yra vienas įrašas apie straipsnį (_article_) ir vienas apie knygą
+Čia yra vienas įrašas apie straipsnį (_article_) ir vienas apie knygą
 (_book_); tai yra bene dažniausiai sutinkami įrašų tipai.  Duomenų bazės
 įrašo tipas visada rašomas po `@`, kaip parodyta, ir visa kita įrašo
 informacija talpinama į figūrinių skliaustų porą.
@@ -75,7 +75,7 @@ jūs galite naudoti bet kokią patinkančią raidžių seką, nes tai tik etiket
 Pavyzdyje mes pasirinkome naudoti autoriaus vardą ir metus: tai yra įprasta
 praktika.
 
-Kurie tiksliai laukai reikalingi priklauso nuo įrašo tipo, tačiau dauguma jų
+Kurie laukai tiksliai reikalingi priklauso nuo įrašo tipo, tačiau dauguma jų
 yra gana akivaizdūs. Galėjote pastebėti, kad `author` lauke skirtingi autoriai
 atskirti skirtuku `and`. Tai yra _esminis_ dalykas: formuojant _išvestį_
 reikia žinoti, kuris autorius yra kuris. Taip pat gal pastebėjote, kad
@@ -162,7 +162,7 @@ mes naudojome `plainnat` stilių.  Literatūros sąrašas išvedamas
 `\bibliography` komanda, kurios argumente nurodoma duomenų bazė, kurią reikia
 naudoti; jei daugiau, nei viena, tai kableliais atskiriami jų vardai.
 
-Puslapių iš cituotų šaltinių numerius galima pridėti prie citatos su
+Puslapių numerius iš cituotų šaltinių galima pridėti prie citatos su
 neprivalomu argumentu.  Jei pateikiami du neprivalomi argumentai
 (laužtiniuose skliaustuose), tai pirmojo turinys eina prieš citavimo žymę, kaip
 trumpa įvadinė pastaba, o antrojo &ndash; po žymės, kaip detalizuojanti pastaba.
@@ -219,7 +219,7 @@ struktūriškai panašų rezultatą, jie naudoja visiškai skirtingus būdus ši
 rezultatui gauti.  Šie skirtumai tarp abiejų darbo eigų gali padėti jums
 pasirinkti, kuris iš jų jums tiks geriausiai.
 
-BibTeX darbo eigoje bibliografijos stilių nustato a `.bst` failas, kurį
+BibTeX darbo eigoje bibliografijos stilių nustato `.bst` failas, kurį
 pasirenkate komanda `\bibliographystyle`.  Paketas `biblatex` vietoje `.bst`
 failų naudoja kitokią sistemą.  Jei naudojate LaTeX dokumento šabloną su
 kartu pateiktu `.bst` failu, arba jūs gavote `.bst` failą, skirtą jūsų
@@ -230,7 +230,7 @@ ir citavimo komandų išvestį tiesiog iš savo dokumento preambulės
 perapibrėždami ten LaTeX komandas.  Tuo tarpu norint modifikuoti BibTeX
 `.bst` stilius, reikia redaguoti šiuos (išorinius LaTeX atžvilgiu) failus, o
 tam dar reikia žinių ir apie BibTeX programavimo kalbą.  Bendrai kalbant,
-`biblatex` lengviau keičiamas pagal poreikius nei BibTeX stiliai.
+`biblatex` lengviau keičiamas pagal poreikius, nei BibTeX stiliai.
 
 Bendrai paėmus, su „biblatex“ lengviau užprogramuoti sudėtingesnius citavimo
 stilius, turinčius daugiau skirtingų citavimo komandų. Jis taip pat įgalina

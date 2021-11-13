@@ -31,7 +31,7 @@ _įvestį_, paleisite su ja (ant jos) LaTeX (paprastai programą `pdflatex`),
 kad gauti PDF failą.  Ši PDF _išvestis_ yra tai, ką jūs siųsite kitiems
 skaityti.
 
-Kiti autoriai naudoja kitus žodžius aprašyti šį procesą.  Rašyti LaTeX
+Kiti autoriai naudoja kitokius žodžius aprašydami šį procesą.  Rašyti LaTeX
 dokumentą yra panašu į programavimą, todėl LaTeX programos leidimas dažnai
 vadinamas dokumento `kompiliavimu`, nors `komponavimas` būtų tiksliau.
 
@@ -39,9 +39,10 @@ vadinamas dokumento `kompiliavimu`, nors `komponavimas` būtų tiksliau.
 
 Paprastiems LaTeX failams pakanka tik vieno programos leidimo, kad gauti
 galutinį PDF.  Bet jei jūs pradėsite naudoti sudėtingesnius dalykus, paremtus
-nuorodomis tarp dokumento elementų, kaip literatūros citavimą, automatinį
-brėžinių numeravimą ar turinio generavimą, jums gali tekti paleisti LaTeX
-programą daugiau nei kartą.  Mes perspėsime jus, kai to prireiks.
+nuorodomis tarp dokumento elementų, tokius, kaip kaip literatūros citavimas,
+automatinis brėžinių numeravimas ar turinio generavimas, jums gali tekti
+paleisti LaTeX programą daugiau nei kartą.  Mes perspėsime jus, kai to
+prireiks.
 
 ## LaTeX ar pdfLaTeX, ar ...
 

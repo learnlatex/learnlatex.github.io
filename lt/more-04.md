@@ -64,7 +64,7 @@ tipų, LaTeX pateikia dar vieną, rečiau naudojamą: „aprašomąjį" sąrašo
 
 Pakeiskite `\author`, `\title` ir `\date` komandų argumentus, kad pratestuoti
 `\maketitle` veikimą.  Kurios iš trijų komandų yra _tikrai_ būtinos?  Ar
-komandų argumentuose galia būti bet koks tekstas, tame tarpe ir jokio teksto?
+komandų argumentuose gali būti bet koks tekstas, tame tarpe ir jokio teksto?
 
 Sudarykite keletą aprašomųjų sąrašų, o kai kuriuos iš jų įdėkite į kitus
 sąrašus (numeruotus, nenumeruotus ar aprašomuosius).

@@ -21,14 +21,14 @@ Jei turite lokaliai įdiegtą TeX sistemą (pvz., TeX Live arba MiKTeX) kartu su
 dokumentacija (yra toks pasirinkimas diegimo metu), tai galite pasiekti šią
 lokalią dokumentaciją iš komandinės eilutės su `texdoc`. Įvykdžius
 
-`texdoc` < _pkg_ >
+`texdoc` <_pkg_>
 
-bus atverta paketo (ar klasės) _pkg_ dokumentacija.  Priemonė `texdoc` ieško
+bus atverta paketo (ar klasės) <_pkg_> dokumentacija.  Priemonė `texdoc` ieško
 turimoje dokumentacijoje ir atidaro tai, kas, jos manymu, yra artimiausia
 jūsų paieškos terminui.  Galite paprašyti ją išvardyti visus tikėtinus
 rezultatus, kuriuos ji randa, kad galėtumėte pasirinkti:
 
-`texdoc -l` < _pkg_ >
+`texdoc -l` <_pkg_>
 
 
 ## texdoc.org
@@ -67,22 +67,22 @@ Kitos knygos, skirtos mokytis LaTeX, yra
 - [_Guide to LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714),
   autoriai Helmut Kopka ir Patrick Daly; pasiekiama kaip elektroninė knyga;
 - [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/),
-  autorius Nicola Talbot: laisvai prieinamam kaip e-knyga arba nebrangus
+  autorius Nicola Talbot: laisvai prieinama kaip e-knyga arba nebrangus
   spausdintas leidimas;
 - [_Using LaTeX to write a PhD thesis_](https://www.dickimaw-books.com/latex/thesis/),
-  autorius Nicola Talbot; laisvai prieinamam kaip e-knyga arba nebrangus
+  autorius Nicola Talbot; laisvai prieinama kaip e-knyga arba nebrangus
   spausdintas leidimas;
 - [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide),
-  autorius Stefan Kottwitz: ir elektroninė ir spausdinta knyga;
+  autorius Stefan Kottwitz: ir elektroninė, ir spausdinta knyga;
 - [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154),
-  autorius Marc van Dongen; ir elektroninė ir spausdinta knyga.
+  autorius Marc van Dongen; ir elektroninė, ir spausdinta knyga.
 
 
 ## Kaip gauti pagalbą
 
 Yra įvairių internetinių forumų, kuriuose galima uždavinėti LaTeX klausimus;
-[TeX&ndash;LaTeX StackExchange](https://tex.stackexchange.com) turbūt yra
-šiandien populiariausias.  Užduodant klausimą, pirmiausia paruoškite aiškų
+[TeX&ndash;LaTeX StackExchange](https://tex.stackexchange.com) šiandien
+turbūt yra populiariausias.  Užduodant klausimą, pirmiausia paruoškite aiškų
 savo pavyzdį: tai, kas paprastai vadinama „minimaliu darbiniu pavyzdžiu“
 (MWE, _minimal working example_).  Tai nereiškia, kad jo kodas veikia (nes
 kitaip gal neklaustumėte), bet tai reiškia, kad padarėte viską, kad jis būtų
@@ -121,7 +121,7 @@ vykdymo gilumos“, ir jų supratimui reikalingas kontekstas.
 
 <p class="hint">Kai kuriuose programiniuose redaktoriuose būna sunku pamatyti pilną klaidos tekstą, esminė informacija gali būti nematoma.</p>
 
-Jei kreipsitės dėl problemos į LaTeX ekspertus, jie tikėtina kad paprašys
+Jei kreipsitės dėl problemos į LaTeX ekspertus, tikėtina, kad jie paprašys
 jūsų log failo kopijos.
 
 ### Tolesnis kelias

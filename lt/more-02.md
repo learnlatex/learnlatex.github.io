@@ -33,7 +33,7 @@ kurį reikia žinoti dabar, yra tai, kad jie gali naudoti operacinės sistemos
 šriftus, tuo tarpu pdfTeX to padaryti negali.
 
 Jei esate Japonijoje arba daug rašote japonų kalba, taip pat galite susidurti
-su pTeX ir upTeX.  Tai yra varikliai pritaikyti vertikaliajam spausdinimui.
+su pTeX ir upTeX.  Tai yra varikliai, pritaikyti vertikaliajam spausdinimui.
 LuaTeX taip pat sugeba daug ką padaryti šioje srityje, tačiau upTeX šiuo metu
 vis dar yra populiariausia sistema japonų kalbai.
 

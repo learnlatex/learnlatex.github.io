@@ -28,7 +28,7 @@ identifikatorius, kaip DOI.
 
 Nors BibTeX failų sintaksė yra ta pati, nesvarbu ką jūs naudojate, BibTeX ar
 `biblatex`, palaikomų (naudojamų stiliaus) laukų rinkinys ir tiksli jų
-reikšmė gali ne tik skirtis ne tik dėl skirtumo tarp BibTeX darbo eigos ir
+reikšmė gali skirtis ne tik dėl skirtumo tarp BibTeX darbo eigos ir
 `biblatex`, bet ir dėl skirtumo tarp BibTeX stilių.  Nemaža pagrindinė aibė
 įrašų tipų ir laukų yra ta pati beveik visiems stiliams, tačiau kai kurie
 laukai skiriasi.

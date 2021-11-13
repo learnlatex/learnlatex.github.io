@@ -13,7 +13,7 @@ komanda gali įkelti kelis paketus, pavyzdžiui, `\usepackage{color,graphicx}`.
 Jei neprivalomajame komandos argumente perduodate paketo parinktis, jos bus
 taikomos kiekvienam sąrašo paketui, bet ne visuose jos gali būti numatytos.
 Mums lengviau komentuoti paketus, jei jie įkeliami atskirai.  Taigi mes
-laikysimės praktikos kiekvieną paketą įkelsime atskiroje eilutėje.
+laikysimės praktikos kiekvieną paketą įkelti atskiroje eilutėje.
 
 
 ## `babel` paketas

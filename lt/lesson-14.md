@@ -19,7 +19,7 @@ kaip graikų ir rusų.
 ## Akcentai ir kirčiuotos raidės
 
 TeX originaliu būdu akcentai ir kirčiuotos raidės buvo įvedamos naudojant komandas,
-tokias kaip `\c{c}`, kad išvesti „ç“, ar `\'e` &ndash; kad „é“.  Nors kai
+tokias kaip `\c{c}`, kad išvesti ç, ar `\'e` &ndash; kad é.  Nors kai
 kurie žmonės ir toliau naudoja šias įvesties komandas, nes jas galima lengvai
 surinkti ASCII klaviatūromis, kiti norėjo, kad būtų galima tiesiogiai naudoti
 jų lokalizuotų klaviatūrų klavišais įvedamus simbolius.

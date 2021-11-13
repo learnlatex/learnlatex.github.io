@@ -174,7 +174,7 @@ naudojama nedaug, o vertikaliosios paprastai neatrodo profesionaliai.  Tiesą
 sakant, profesionalioms lentelėms nereiktų naudoti standartinių LaTeX linijų;
 vietoj to jūs turėtumėte susipažinti su `booktabs` paketo galimybėmis, todėl
 jis čia pirmiausia ir aptariamas.  Siekiant išsamumo, standartinės linijos
-parodytos [„daugiau šia tema“](more-08)s puslapyje.
+parodytos [„daugiau šia tema“](more-08) puslapyje.
 
 Paketas `booktabs` apibrėžia keturis skirtingus horizontalių linijų
 tipus. Visos horizontalių linijų komandos gali būti naudojamos tik kaip
@@ -300,9 +300,9 @@ Vienoje eilutėje esančius kaimyninius langelius galite apjungti su komanda
 `\multicolumn`.  Ji turi būti pirmasis dalykas pirmajame apjungiamame
 langelyje. `\multicolumn` reikia trijų argumentų:
 
-1. apjungiamų langelių skaičius
-2. jungtinio langelio lygiavimas
-3. jungtinio langelio turinys
+1. apjungiamų langelių skaičius,
+2. jungtinio langelio lygiavimas,
+3. jungtinio langelio turinys.
 
 Lygiavimo argumente gali būti bet kas, kas legalu `tabular` preambulėje, bet
 tik _vienas kolonėlės tipas_.

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "lt"
 title: "Klaidų taisymas"
-description: "Ši pamoka supažindina su keletu dažnų klaidų, pasitaikančių LaTeX dokumentuose, ką reiškia klaidų pranešimai ir kaip su jais dirbti."
+description: "Ši pamoka supažindina su keletu dažnų klaidų, pasitaikančių LaTeX dokumentuose, paaiškina, ką reiškia klaidų pranešimai ir kaip su jais dirbti."
 toc-anchor-text: "Klaidų taisymas"
 toc-description: "Ką daryti su nelauktais LaTeX pranešimais."
 ---
@@ -66,7 +66,7 @@ My command is used here \mycommand.
 \end{document}
 ```
 
-This produces a multi-line message in the log file.
+Šis pavyzdys sukuria kelių eilučių pranešimą `.log` faile (žurnale):
 
 ```
 ! Undefined control sequence.
@@ -81,7 +81,7 @@ l.8 My command is used here \mycommand
 * Pirma eilutė, prasidedanti šauktuku `!`, nurodo bendrą klaidos pobūdį (šiuo
   atveju &ndash; neapibrėžta komanda).
 * Pora kitų eilučių rodo įvesties eilutę, kurią TeX skaitė, o eilutės lūžis
-  nurodo vietą, kurį TeX pasiekė. Neapibrėžta komanda yra paskutinis
+  nurodo vietą, kurią TeX pasiekė. Neapibrėžta komanda yra paskutinis
   perskaitytas žetonas (_token_ TeX terminais), šiuo atveju žodis (komanda)
   `\textbold` prieš eilutės lūžį. Po eilutės lūžio yra pateikiami likę
   žetonai, `{hmmm}`, kurie galbūt buvo perskaityti kaip argumentas, bet TeX

@@ -13,9 +13,9 @@ Kai kuriems dokumentų tipams galbūt norėsite sukurti dalykinę rodyklę
 pagalbiniai failai.  Laimei, procesas automatizuojamas panaudojus paketą
 `imakeidx`.  Dokumente yra naudojamos trys LaTeX komandos:
 
-- `\makeindex` rodyklės (`.idx` failo automatiniam) kūrimui,
-- `\index` visų rodyklės įrašų sužymėjimui (rankomis) dokumente,
-- `\printindex` rodyklės (automatiniam) išvedimui.
+- `\makeindex` &ndash; rodyklės (`.idx` failo automatiniam) kūrimui,
+- `\index` &ndash; visų rodyklės įrašų sužymėjimui (rankomis) dokumente,
+- `\printindex` &ndash; rodyklės (automatiniam) išvedimui.
 
 ```latex
 \documentclass{article}

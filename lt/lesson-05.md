@@ -33,15 +33,14 @@ Dokumentų klasės eilutė gali taip pat nustatyti parinktis, bendras visam doku
 ## Bazinės klasės
 
 LaTeX visada turi nedidelę aibę standartinių klasių, turinčių tarpusavyje daug bendro, nors su tam tikromis variacijomis:
-- `article`  
-  trumpiems dokumentams be `\chapter` lygio
-- `report`
+- `article` (straipsnis) :  trumpiems dokumentams be `\chapter` lygio
+- `report` (raportas) :
   ilgesniems dokumentams su `\chapter` skirsniais, vienpusis spausdinimas (be puslapių skirstymo į kairiuosius ir dešiniuosius)
-- `book`
+- `book` (knyga) :
   ilgesniems dokumentams su `\chapter` skirsniais, dvipusis spausdinimas, su priešlapiais ir užlapiais (pavyzdžiui, rodykle)
-- `letter`
+- `letter` (laiškas) :
   spausdintiems laiškams
-- `slides`
+- `slides` (skaidrės) :
   pristatymams (bet žr. žemiau)
 
 Klasės `article`, `report` ir `book` apibrėžia labai panašias komandų aibes. Komandos rašyti korespondencijai iš `letter` klasės yra kiek kitokios:
@@ -92,7 +91,7 @@ rinkinio ir klasė `memoir`. KOMA-Script siūlo atitikmenis standartinėms
 klasėms: `scrartcl`, `scrreprt`, `scrbook`, ir `scrlttr2`. Klasė `memoir` yra
 atskira ir labiausiai primena `book` klasės išplėtimą.
 
-Šiose išplėstinėse klasėse yra daug paruošta daug keitimams patogių kablių
+Šiose išplėstinėse klasėse yra paruošta daug keitimams patogių „kablių“
 (_hooks_), kai kuriuos parodysime pratimuose.  Gali kilti klausimas, kaip
 galite žinoti apie jų pateiktus kablius; mes rašysime apie tai [vėlesnėje
 pamokoje](lesson-16), bet jūs visada galite žvilgtelėti į ateitį!
@@ -107,7 +106,8 @@ pristatytos [papildomoje pamokoje](more-05).
 
 ## Pratimai
 
-Ištirkite, kaip dokumento klasės pakeitimas iš standartinės į vieną iš KOMA rinkinio ar į `memoir` klasę paveikia išvesties dokumento išvaizdą.
+Ištirkite, kaip dokumento klasės pakeitimas iš standartinės į vieną iš KOMA
+rinkinio ar į `memoir` klasę paveikia išvesties dokumento išvaizdą.
 
 ```latex
 \documentclass{article} % Pakeiskite klasę čia

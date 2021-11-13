@@ -60,9 +60,9 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
-Papildomai yra aplinkų variantai, kurių vardai baigiasi `ed`; jie skirti
-lygiuotą aplinką didesnio matematinio reiškinio viduje. Pavyzdžiui, `aligned`
-ir `gathered` yra atitinkami `align` ir `gather` variantai.
+Yra papildomi aplinkų variantai, kurių vardai baigiasi `ed`; jie skirti
+sukurti lygiuotą aplinką didesnio matematinio reiškinio viduje. Pavyzdžiui,
+`aligned` ir `gathered` yra atitinkami `align` ir `gather` variantai.
 
 ```latex
 \documentclass{article}

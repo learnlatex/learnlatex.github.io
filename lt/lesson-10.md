@@ -24,8 +24,8 @@ dokumente).
 
 Yra dvi pagrindinės matematinės veiksenos išvesties formos:
 
-* tekstinė (_inline_)
-* išskirties (_display_)
+* tekstinė (_inline_),
+* išskirties (_display_).
 
 ```latex
 \documentclass{article}
@@ -45,7 +45,7 @@ See how the paragraph continues after the display.
 
 Kai kur kitur jūs galite pamatyti reiškinius, panašius į LaTeX matematines
 formules, pavyzdžiui, MathJax sistemoje, įdedančioje formules į
-tinklalapiuose ar Vikipedijoje. Tokios sistemos dažnai priima tam tikras
+tinklapius, ar Vikipedijoje. Tokios sistemos dažnai priima tam tikras
 LaTeX sintaksės variacijas, nes iš tikrųjų nenaudoja LaTeX „užkulisiuose“.
 
 <p class="hint">Visi mūsų pavyzdžiai yra <i>teisingas</i> LaTeX.  Jei kokiame
@@ -94,7 +94,7 @@ gali netinkamai suveikti; visada naudokite skliaustus.)
 
 #### Spec komandos
 
-Yra _labai daug_ specialiai matematikai skirtų komandų.  Pavyzdžiui, kai
+Yra _labai daug_ būtent matematikai skirtų komandų.  Pavyzdžiui, kai
 kurios iš jų yra gana lengvai atpažįstamos, kaip `\sin` ir `\log`, žyminčios
 sinusą ir logaritmą, ar `\theta` graikiškai raidei išvesti.
 

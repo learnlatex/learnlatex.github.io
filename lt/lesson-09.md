@@ -15,8 +15,8 @@ toc-description: "Nuorodos į paveiksliukus, lenteles ir pan."
 Rašant dokumentą, kuriame yra tokių elementų, kaip paveikslėliai, lentelės ar
 lygtys, dažnai kyla poreikis paminėti tuos elementus.  Todėl tokie elementai
 yra numeruojami, o juo minint rašomi jų numeriai (kuriamos nuorodos į juos).
-Bet rašymo eigoje numeriai gali keisti, o tada reikia taisyti ir numerius, ir
-nuorodas.  Laimei, LaTeX gali automatiškai sunumeruoti elementus ir taisyti
+Bet rašymo eigoje numeriai gali keistis, o tada reikia taisyti ir numerius, ir
+nuorodas.  Laimei, LaTeX gali automatiškai ir sunumeruoti elementus, ir taisyti
 nuorodas į juos; mes tik turime juos teisingai susieti.
 
 ## `\label` ir `\ref` sąsaja

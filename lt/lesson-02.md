@@ -12,7 +12,7 @@ toc-description: "TeX sistemos ir LaTeX redaktoriai."
 <span
   class="summary">Ši pamoka paaiškina apie TeX sistemas ir labiausiai naudojamas iš jų, išvardina kelis teksto redaktorius, paprastai naudojamus su LaTeX, ir internetines sistemas su integruotais redaktoriais.</span>
 
-LaTeX nėra atskira viena programa, 'viską' savyje talpinanti, o yra visuma
+LaTeX nėra atskira viena programa, „viską“ savyje talpinanti, o yra visuma
 programų, veikiančių kartu. Pirmiausia jums reikia skirti du dalykus:
 
 - _TeX sistema_
@@ -21,8 +21,8 @@ programų, veikiančių kartu. Pirmiausia jums reikia skirti du dalykus:
 ## TeX sistemos
 
 Darbo su LaTeX esmė yra kokios nors TeX sistemos naudojimas. Bet kuri TeX
-sistema yra aibė 'užkulisinių' programų ir failų, reikalingų LaTeX darbui,
-bet didumą laiko jums nereikia jos 'leisti'.
+sistema yra aibė „užkulisinių“ programų ir failų, reikalingų LaTeX darbui,
+bet didumą laiko jums nereikės jų „leisti“.
 
 Dabar yra pagrinde naudojamos dvi TeX sistemos, [MiKTeX](https://miktex.org/)
 ir [TeX Live](https://tug.org/texlive). Abi veikia Windows, MacOS ir Linux.
@@ -46,15 +46,15 @@ Tikrai naudinga visų modernių LaTeX redaktorių ypatybė yra SyncTeX:  galimyb
 klikinti jūsų įvesties faile ir peršokti į atitinkamą vietą PDF, ir
 atvirkščiai.
 
-Yra daug daugiau LaTeX redaktorių, nei mes galime tikėtis čia išvardinti: yra
-išsamus sąrašas [StackExchange
+Yra daug daugiau LaTeX redaktorių, nei mes galime tikėtis čia išvardinti:
+išsamus sąrašas yra [StackExchange
 tinklapyje](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-Bazinis redaktorius [TeXworks](https://tug.org/texworks) platinamas kartu su
-TeX Live ir MiKTeX tiek Windows, tiek Linux, o
-[TeXShop](https://pages.uoregon.edu/koch/texshop/) yra dalis MacTeX.
+Bazinis redaktorius [TeXworks](https://tug.org/texworks) yra platinamas kartu
+su TeX Live ir MiKTeX tiek Windows, tiek Linux, o
+[TeXShop](https://pages.uoregon.edu/koch/texshop/) įeina į MacTeX.
 
 <p 
-  class="hint">Kokį redaktorių jūs bepasirinktumėte, mes rekomenduojame jį instaliuoti <i>po</i> jau turint TeX sistemą, kad redaktorius galėtų ją 'surasti' ir tinkamai nusistatyti.</p>
+  class="hint">Kokį redaktorių jūs bepasirinktumėte, mes rekomenduojame jį instaliuoti <i>jau</i> turint TeX sistemą, kad redaktorius galėtų ją „surasti“ ir tinkamai nusistatyti.</p>
 
 ## Darbas internete
 
@@ -63,8 +63,8 @@ LaTeX redaktoriaus instaliavimo.  Šios svetainės suteikia jums galimybę
 redaguoti savo failus tinklapyje, paleidžia LaTeX „už scenos“ ir parodo gautą
 PDF.
 
-Kai kurios iš šių svetainių kombinuoja LaTeX su WYSIWYG ypatybėmis, kai kiti
-labiau koncentruojasi ties LaTeX kodu ir yra artimesni lokalioms LaTeX
+Kai kurios iš šių svetainių kombinuoja LaTeX su WYSIWYG ypatybėmis, kai kitos
+labiau koncentruojasi ties LaTeX kodu ir yra artimesnės lokalioms LaTeX
 sistemoms.
 
 Yra internetinės LaTeX sistemos, vykdančios LaTeX be asmeninio prisijungimo,

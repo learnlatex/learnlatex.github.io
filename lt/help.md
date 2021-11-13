@@ -21,8 +21,8 @@ turinio]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}),
 pateikto [pradiniame lape](./).
 
 Kiekvienoje pamokoje yra nuoroda į vieną susietą pamoką ta pačia tema, tik
-panagrinėta giliau.  Galima praeiti visas 16 pamokų _aplenkiant_ papildomas
-pamokas.
+kažkas panagrinėta giliau.  Galima praeiti visas 16 pamokų _aplenkiant_
+papildomas pamokas.
 
 Kurso pabaigoje yra mažiausiai viena pamoka, skirta kalbai, kuria buvo
 pateiktos pamokos, ir galerija trumpų pavyzdžių, demonstruojančių paketus ir
@@ -64,7 +64,7 @@ suvestinė](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 
 
-#### Trys būdai vykdyti pavyzdžius.
+#### Trys būdai vykdyti pavyzdžius
 
 * Naudotis Overleaf paslauga
 * Naudotis TeXLive.net paslauga
@@ -76,7 +76,7 @@ Overleaf yra vienas iš populiariausių LaTeX tinklinio redagavimo paslaugos
 tiekėjų.  Mygtuko <button>Atverti Overleaf</button>, kurio pavyzdys pateiktas
 žemiau, paspaudimas nusiųs kodą į [Overleaf](https://www.overleaf.com/about).
 
-Kai jūs neturite Overleaf paskyros ar prisijungimo prie jos duomenys nėra
+Kada jūs neturite Overleaf paskyros ar prisijungimo prie jos duomenys nėra
 išsaugoti jūsų naršyklės saugykloje, tada jus nukreips į prisijungimo
 puslapį, kuriame galėsite prisijungti arba prisiregistruoti prie Overleaf.
 Ši paslauga yra nemokama, bet reikalauja pateikti kai kurias detales apie
@@ -94,17 +94,17 @@ paskyroje vėlesniam redagavimui.
 ##### TeXLive.net paslauga
 
 Mygtuko <button>Leisti TeXLive.net</button>, kurio pavyzdys pateiktas žemiau,
-paspaudimas nusiųs kodą į [TeXLive.net](https://texlive.net) paslaugą[^1].
+paspaudimas nusiųs kodą į [TeXLive.net](https://texlive.net) paslaugą.[^1]
 
 TeXLive.net paslauga buvo sukurta specialiai šios svetainės palaikymui ir
-naudoja [PDF.js](https://mozilla.github.io/pdf.js/), gebantį atvaizduoti PDF
-mobiliųjų telefonų ir kitose naršyklėse, neturinčiose įmontuoto PDF
-skaitytuvo.
+naudoja [PDF.js](https://mozilla.github.io/pdf.js/) modulį, gebantį
+atvaizduoti PDF mobiliųjų telefonų ekranuose ir kitose naršyklėse,
+neturinčiose įmontuoto PDF skaitytuvo.
 
 Gautas PDF dokumentas (arba klaidos tekstas iš kompiliavimo žurnalo) bus
 rodomas žemiau pavyzdžio.  Mygtukas <button>Pašalinti išvestį</button> bus
-pateiktas, kad jūs galėtumėt pašalinti šią išvestį (arba jūs galite ją
-palikti ir tęsti pamoką toliau).
+pateiktas, kad jūs galėtumėt pašalinti šią išvestį (nors jūs galite ją
+palikti, tai netrukdo tęsti pamoką toliau).
 
 Pabrėžiame, kad **TeXLive.net** nereikalauja jokios registracijos ar
 prisijungimo, todėl yra labai patogus naudoti su mažais pavyzdžiais, bet šioje
@@ -124,9 +124,9 @@ vienu mygtuko ar klavišo paspaudimu.
 ### Trikdžių šalinimas
 
 Mūsų pavyzdžiai yra paremti aktualios LaTeX sistemos naudojimu. Jie visi
-veikia su abiem internetinių paslaugų platformomis, todėl jei jūs gaunate
-klaidas, leisdami mūsų pateiktus pavyzdžius, jūs pirmiausia patikrinkite, ar
-jūsų LaTeX sistema yra atnaujinta.
+veikia su abiem internetinių paslaugų platformomis, todėl jei gaunate
+klaidas, leisdami mūsų pateiktus pavyzdžius lokaliai, turite pirmiausia
+patikrinkite, ar jūsų LaTeX sistema yra atnaujinta.
 
 ---
 
@@ -221,7 +221,7 @@ make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
-su papildoma opcija `-x` ar `-l` jei reikia kviesti atitinkamai XeLaTeX ar LuaLaTeX.
+su papildoma opcija `-x` ar `-l`, jei reikia kviesti atitinkamai XeLaTeX ar LuaLaTeX.
 
 Lokaliai vykdant ir kitokios konfigūracijos yra įmanomos, žiūrėkite [make4ht
 vadovėlį](https://texdoc.org/pkg/make4ht).
