@@ -13,8 +13,8 @@ Jei norite peržengti sričių, kurioms skirtas šis kursas, ribas ir išsamiai
 patyrinėti LaTeX realizaciją, tada jums gali padėti tolesnės nuorodos.
 
 Pats LaTeX kodas yra dokumentuotas LaTeX pagalba gautame dokumente
-`source2e.pdf`, kurį galima gauti (esant lokaliai instaliuotam LaTeX)
-surinkus komandinėje eilutėje `texdoc source2e` arba rasti
+`source2e.pdf`, kurį galima gauti (esant lokaliai įdiegtam LaTeX) surinkus
+komandinėje eilutėje `texdoc source2e` arba rasti
 [texdoc.org](https://texdoc.org/pkg/source2e).
 
 Dabartinės LaTeX laidos taip pat įjungia LaTeX3 programavimo kalbą,

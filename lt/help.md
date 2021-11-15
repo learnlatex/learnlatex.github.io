@@ -68,7 +68,7 @@ suvestinė](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 * Naudotis Overleaf paslauga
 * Naudotis TeXLive.net paslauga
-* Naudotis lokaliai kompiuteryje instaliuota TeX sistema.
+* Naudotis lokaliai kompiuteryje įdiegta TeX sistema.
 
 ##### Overleaf paslauga
 
@@ -111,9 +111,9 @@ prisijungimo, todėl yra labai patogus naudoti su mažais pavyzdžiais, bet šio
 paslaugoje nėra galimybės išsaugoti jūsų dokumentą.  Bet kokie pakeitimai
 pavyzdyje bus prarasti, kai tik jūs išeisite iš puslapio.
 
-##### Lokaliai instaliuota TeX sistema
+##### Lokaliai įdiegta TeX sistema
 
-Jei jūs turite TeX sistemą instaliuotą kompiuteryje, tada jūs galite
+Jei jūs turite TeX sistemą, įdiegtą kompiuteryje, tada jūs galite
 nukopijuoti pavyzdžio kodą arba iš mūsų puslapio jį apšviečiant ir
 kopijuojant, arba iš ACE redaktoriaus lango (panaudojant klavišų kombinaciją,
 pavyzdžiui, <kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>). Tai
@@ -227,7 +227,8 @@ Lokaliai vykdant ir kitokios konfigūracijos yra įmanomos, žiūrėkite [make4h
 vadovėlį](https://texdoc.org/pkg/make4ht).
 
 
-Kad `LaTeXML` būtų vykdomas lokaliai, jums reikia turėti instaliavus LaTeXML (jis nėra TeX Live ar MiKTeX dalis) ir vykdyti
+Kad `LaTeXML` būtų vykdomas lokaliai, jums reikia turėti įdiegus LaTeXML (jis
+nėra TeX Live ar MiKTeX dalis) ir vykdyti
 
 ```
 latexml document.tex > document.xml

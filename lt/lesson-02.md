@@ -32,7 +32,7 @@ sistemų turi [savo privalumų](https://tex.stackexchange.com/questions/20036),
 ir jūs galite susipažinti su [daugiau patarimų LaTeX Projekto
 puslapyje](https://www.latex-project.org/get/).
 
-Jei jūs neapsisprendžiate, kokią sistemą instaliuotis, mes rekomenduojame
+Jei jūs neapsisprendžiate, kokią sistemą įsidiegti, mes rekomenduojame
 pasirinkti TeX Live, nes ji veikia visose pagrindinėse operacinėse
 platformose ir turi tam tikrų veikimo greičio privalumų.
 
@@ -54,12 +54,12 @@ su TeX Live ir MiKTeX tiek Windows, tiek Linux, o
 [TeXShop](https://pages.uoregon.edu/koch/texshop/) įeina į MacTeX.
 
 <p 
-  class="hint">Kokį redaktorių jūs bepasirinktumėte, mes rekomenduojame jį instaliuoti <i>jau</i> turint TeX sistemą, kad redaktorius galėtų ją „surasti“ ir tinkamai nusistatyti.</p>
+  class="hint">Kokį redaktorių jūs bepasirinktumėte, mes rekomenduojame jį įdiegti <i>jau</i> turint TeX sistemą, kad redaktorius galėtų ją „surasti“ ir tinkamai nusistatyti.</p>
 
 ## Darbas internete
 
 Yra keletas galingų svetainių, kurios leidžia iš viso išvengti TeX sistemos ir
-LaTeX redaktoriaus instaliavimo.  Šios svetainės suteikia jums galimybę
+LaTeX redaktoriaus įdiegimo.  Šios svetainės suteikia jums galimybę
 redaguoti savo failus tinklapyje, paleidžia LaTeX „už scenos“ ir parodo gautą
 PDF.
 

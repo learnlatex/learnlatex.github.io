@@ -82,8 +82,7 @@ baltų kalbų grupei.
 
 Kartais dokumente reikia tik vienos kitos savitosios lietuviškos raidės,
 pavyzdžiui pavardėse.  Arba jūs dirbate prie kompiuterio, kuriame nėra
-instaliuota lietuvių kalbos klaviatūra.  Tokiu atveju pagelbėja akcentų
-komandos.
+įdiegta lietuvių kalbos klaviatūra.  Tokiu atveju pagelbėja akcentų komandos.
 
 ```latex
 \documentclass{article}

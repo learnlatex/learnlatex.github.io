@@ -17,7 +17,7 @@ permalink: /lt/
     <p>LaTeX gali gąsdinti naujus naudotojus, kadangi jis <em>nėra</em>
        įprastas redaktorius, skirtas vizualiam dokumentų formatavimui, ir
        nėra kažkokia viena atskira programa. Mūsų siekis yra padėti jums
-       susipažinti su LaTeX: bazinės sąvokos, instaliavimas, kodo rašymas
+       susipažinti su LaTeX: bazinės sąvokos, diegimas, kodo rašymas
        &ndash; nesistengiant <em>aprėpti visko</em> vienu ypu.
        <a href="./mission">Daugiau apie mūsų misiją &hellip;</a></p>
   </section>
