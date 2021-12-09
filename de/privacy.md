@@ -1,34 +1,34 @@
 ---
 layout: "page"
 lang: "de"
-title: Privacy Policy
+title: Datenschutzerklärung
 permalink: /de/privacy
 ---
-# Privacy Policy
+# Datenschutzerklärung
 
-## User Data
+## Nutzerdaten
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+LearnLaTeX.org benötigt keinen Login und speichert keine benutzerspezifischen
+Daten. Da die Seite auf GitHub Pages gehostet wird, sind keine Informationen zur
+Nutzeraktivität den Betreibern zugänglich. Die Seite verwendet keine
+Trackingservices wie bspw. Google Analytics.
 
 ## Cookies
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
+Standardmäßig werden keine Cookies verwendet. Wie bei den
+[Seiteneinstellungen](settings) beschrieben, können Nutzer optional Cookies
+zustimmen, um die Einstellungen (z.B. die voreingestellte TeX-Engine) zu
+speichern. Die Einstellungs-Cookies werden _nicht_ an LearnLaTeX.org
+übermittelt, sondern lokal durch das im Browser des Nutzers laufende JavaScript
+erzeugt und gespeichert.
 
-## External Sites
+## Externe Seiten
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+Falls die Option, Beispiele bei anderen Onlineservices auszuführen, genutzt
+wird, werden die momentanen Daten im Editor mittels einer https POST Anforderung
+den entsprechenden Services übermittelt und sind Gegenstand der
+Datenschutzerklärung dieses externen Services. Die folgenden Links führen zu den
+entsprechenden Erklärungen der momentan genutzten Services:
 
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
