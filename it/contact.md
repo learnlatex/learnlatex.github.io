@@ -9,7 +9,7 @@ permalink: /it/contact
 
 ## Supporto individuale
 
-Purtroppo non disponiamo delle risorse per dare aiuto individuale sui problemi di LaTeX, perciò non risponderemo alle email che lo chiedono. Per sapere come ottenere il supporto degli utenti, vedi [The LaTeX Project's help page](https://www.latex-project.org/help/).
+Purtroppo non disponiamo delle risorse per aiutare singolarmente gli utenti a risolvere i loro problemi su LaTeX, perciò non risponderemo alle email che lo chiedono. Per sapere come ottenere supporto per gli utenti, vedi [The LaTeX Project's help page](https://www.latex-project.org/help/).
 
 ## Website Team
 
