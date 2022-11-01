@@ -27,7 +27,7 @@ permalink: /it/
 
 <h2 class="heading__toc" id="toc">Lezioni</h2>
 
-<p class="paragraph__toc">Abbiamo incluso una pagina <b>Di più sull'argomento</b> in ogni lezione. Queste informazioni supplementari sono lì per aiutarti quando hai bisogno di scendere nei dettagli, ma non dovrebbero intralciarti se non le leggi.</p>
+<p class="paragraph__toc">Abbiamo incluso una pagina <b>Per saperne di più</b> in ogni lezione. Queste informazioni supplementari sono lì per aiutarti quando hai bisogno di scendere nei dettagli, ma non dovrebbero intralciarti se non le leggi.</p>
 
 {% include toc-lessons.html prefix="it/lesson" %}
 
