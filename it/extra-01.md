@@ -15,8 +15,8 @@ toc-description: "Examples for further study."
 Questo corso ha fornito una panoramica delle caratteristiche principali di LaTeX.
 LaTeX può contare su una vasta gamma di pacchetti di estensione ed è adoperato 
 in numerosi ambiti disciplinari.
-Ne diamo qui alcuni esempi, senza alcuna spiegazione ma indicando i collegamenti alla 
-loro documentazione all'indirizzo [texdoc.org](https://texdoc.org).
+Ne diamo qui alcuni esempi, senza alcuna spiegazione ma indicando solo i collegamenti 
+alla loro documentazione all'indirizzo [texdoc.org](https://texdoc.org).
 Dove non altrimenti indicato, gli esempi sono presi dalla documentazione del
 pacchetto.
 
