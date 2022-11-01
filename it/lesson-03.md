@@ -1,10 +1,10 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Basic LaTeX document structure"
-description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
+title: "Struttura di base di un documento LaTeX"
+description: "Questa lezione spiega la struttura di base di un documento LaTeX e come farla diventare un file PDF, e i principali caratteri speciali adoperati per controllare LaTeX."
+toc-anchor-text: "Struttura del documento"
+toc-description: "La struttura di base di un documento."
 ---
 
 # LaTeX document structure
