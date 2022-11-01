@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Logical structure"
+title: "Struttura logica"
 description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
-toc-anchor-text: "Logical structure"
+toc-anchor-text: "Struttura logica"
 toc-description: "Structure and visual presentation."
 ---
 
-# Logical structure
+# Struttura logica
 
 <span
   class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
@@ -27,9 +27,9 @@ that's usually how things are emphasized.)
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some text with \emph{emphasis and \emph{nested} content}.
+Testo con \emph{enfasi e contenuto \emph{annidato}}.
 
-Some text in \textit{italic and \textit{nested} content}.
+Testo in \textit{corsivo e contenuto \textit{annidato}}.
 \end{document}
 ```
 
@@ -43,7 +43,7 @@ body of the document.
 We will look at [manual formatting later](lesson-11), but for the moment we'll
 add `\textbf` to commands we know: it makes text bold.
 
-## Sectioning commands
+## Comandi di sezionamento
 
 You probably have used a word processor, where  to start a section most people
 enter the title text then simply make it bigger and bold, and follow it with a
@@ -56,40 +56,40 @@ document.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Hey world!
+Ciao mondo!
 
-This is a first document.
+Questo è un primo documento.
 
-\section{Title of the first section}
+\section{Titolo del primo paragrafo}
 
-Text of material in the first section
+Testo del primo paragrafo.
 
-Second paragraph.
+Secondo capoverso.
 
-\subsection{Subsection of the first section}
+\subsection{Sottoparagrafo nel primo paragrafo}
 
-Text of material in the subsection.
+Testo del sottoparagrafo.
 
-\section{Second section}
+\section{Secondo paragrafo}
 
-Text of the second section.
+Testo del secondo paragrafo.
 
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+Using the standard `article` setup, LaTeX numera i paragrafi e i sottoparagrafi
+e stampa i titoli in nero. Penseremo a cambiare un po' il design [nella
+prossima lezione](lesson-05).
 
-LaTeX can divide up documents into quite a few levels
+LaTeX può suddividere i documenti in diversi livelli
 
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
+- `\chapter` (ma per questo servono `\documentclass{book}` o
+  `\documentclass{report}`)
 - `\section`
 - `\subsection`
 - `\subsubsection`
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
+Possiamo fare di più: the next one 'down' is `\paragraph`, but almost always that's
 too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
 way to start a new paragraph!)
 
@@ -97,35 +97,36 @@ You might wonder about the title of a document. There are some special
 commands for that, but not all documents use them, so we've
 [covered that in the parallel extra lesson](more-04).
 
-## Lists
+## Elenchi
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+The other very common place you'll want logical markup e nella scrittura
+degli elenchi.
+Ci sono due tipi comuni di elenchi integrati in LaTeX.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
 
-Ordered
+Ordinato
 \begin{enumerate}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item Una voce
+  \item Un'altra
+  \item Però! Tre voci
 \end{enumerate}
 
-Unordered
+Non ordinato
 \begin{itemize}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item Una voce
+  \item Un'altra
+  \item Però! Tre voci
 \end{itemize}
 
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+Nota bene che adoperiamo `\item` per incominciare ciascuna voce, e che il marcatore
+adoperato per ogni tipo di elenco viene aggiunto automaticamente.
 
 ## Exercises
 
