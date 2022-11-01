@@ -13,7 +13,7 @@ Unfortunately we do not have the resources to offer individual help on LaTeX pro
 
 ## Website Team
 
-The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details.
+Il [codice sorgente di questo sito](https://github.com/learnlatex/learnlatex.github.io/) è su [GitHub](https://github.com/learnlatex/). Si prega di guardare [CONTRIBUTING](../CONTRIBUTING) e [LICENSE](../LICENSE) per ulteriori dettagli.
 
 You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
 
