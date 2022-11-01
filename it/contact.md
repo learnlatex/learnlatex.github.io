@@ -1,11 +1,11 @@
 ---
 layout: "page"
 lang: "it"
-title: Contact
+title: Contatti
 permalink: /en/contact
 ---
 
-# Contact
+# Contatti
 
 ## Individual Support
 
