@@ -15,7 +15,7 @@ toc-description: "What LaTeX is and how it works."
 
 A differenza dei comuni elaboratori di testo come Microsoft Word o LibreOffice Writer, 
 di solito LaTeX non è WYSIWYG ('What You See Is What You Get', in italiano 
-'ciò che vedi è ciò che ottieni'). Con LaTeX, si prende del testo puro e lo si 
+'ciò che vedi è ciò che ottieni'). Con LaTeX, si prende del testo non formattato e lo si 
 arricchisce con istruzioni di marcatura. Questo linguaggio di marcatura informa LaTeX
 sul significato logico di determinati elementi del testo, analogamente a quanto
 fa HTML.
