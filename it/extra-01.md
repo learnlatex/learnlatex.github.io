@@ -21,7 +21,7 @@ Dove non altrimenti indicato, gli esempi sono presi dalla documentazione del
 pacchetto.
 
 <p
-  class="hint">Si noti che la presenza di questo o quel pacchetto qui non va intesa come una preferenza del pacchetto rispetto ad altri pacchetti simili: miriamo solo a mostrare un piccolo campione relativo a una serie di aree altrimenti non trattate in questo corso.</p>
+  class="hint">Non si intenda la presenza di questo o quel pacchetto in questa pagina come una preferenza del pacchetto rispetto ad altri pacchetti simili: vogliamo solo mostrare un piccolo campione di pacchetti relativo a una serie di aree altrimenti non trattate in questo corso.</p>
 
 ## Chimica
 
