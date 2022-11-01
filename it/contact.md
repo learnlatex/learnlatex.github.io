@@ -2,7 +2,7 @@
 layout: "page"
 lang: "it"
 title: Contatti
-permalink: /en/contact
+permalink: /it/contact
 ---
 
 # Contatti

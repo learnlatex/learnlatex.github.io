@@ -2,7 +2,7 @@
 layout: "page"
 lang: "it"
 title: Privacy Policy
-permalink: /en/privacy
+permalink: /it/privacy
 ---
 # Privacy Policy
 
