@@ -2,22 +2,22 @@
 layout: "lesson"
 lang: "it"
 title: "Che cos'è LaTeX e come funziona"
-description: "Questa lezione spiega i princìpi fondamentali di LaTeX: che cos'è e come funziona, 
+description: "Questa lezione spiega le nozioni fondamentali di LaTeX: che cos'è e come funziona, 
   diversamente dai comuni elaboratori di testo come Microsoft Word o LibreOffice Writer."
-toc-anchor-text: "Princìpi fondamentali di LaTeX"
+toc-anchor-text: "Nozioni fondamentali di LaTeX"
 toc-description: "Che cos'è LaTeX e come funziona."
 ---
 
-# Princìpi fondamentali di LaTeX
+# Nozioni fondamentali di LaTeX
 
 <span
-  class="summary">Questa lezione spiega i princìpi fondamentali di LaTeX: che cos'è e come funziona, 
+  class="summary">Questa lezione spiega le nozioni fondamentali di LaTeX: che cos'è e come funziona, 
   diversamente dai comuni elaboratori di testo come Microsoft Word o LibreOffice Writer.</span>
 
 A differenza dei comuni elaboratori di testo come Microsoft Word o LibreOffice Writer, 
 di solito LaTeX non è WYSIWYG ('What You See Is What You Get', in italiano 
-'ciò che vedi è ciò che ottieni'). Con LaTeX, si prende del testo non formattato e lo si 
-arricchisce con istruzioni di marcatura. Questo linguaggio di marcatura informa LaTeX
+'ciò che vedi è ciò che ottieni'). Con LaTeX, si prende del testo non formattato (_plain text_) 
+e lo si arricchisce con istruzioni di marcatura. Questo linguaggio di marcatura informa LaTeX
 sul significato logico di determinati elementi del testo, analogamente a quanto
 fa HTML.
 
