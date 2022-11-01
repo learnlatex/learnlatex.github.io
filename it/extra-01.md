@@ -12,8 +12,8 @@ toc-description: "Examples for further study."
 <span
   class="summary">Questa lezione mostra esempi assortiti di altri popolari pacchetti di LaTeX che non sono stati trattati nelle lezioni principali.</span>
 
-Questo corso ha fornito una panoramica delle caratteristiche principali di LaTeX.
-LaTeX può contare su una vasta gamma di pacchetti di estensione ed è adoperato 
+Questo corso ha fornito una panoramica sulle caratteristiche principali di LaTeX.
+LaTeX può contare su una vasta gamma di pacchetti di estensione e viene adoperato 
 in numerosi ambiti disciplinari.
 Ne diamo qui alcuni esempi, senza alcuna spiegazione ma indicando solo i collegamenti 
 alla loro documentazione all'indirizzo [texdoc.org](https://texdoc.org).
@@ -21,7 +21,7 @@ Dove non altrimenti indicato, gli esempi sono presi dalla documentazione del
 pacchetto.
 
 <p
-  class="hint">Non si intenda la presenza di questo o quel pacchetto in questa pagina come una preferenza del pacchetto rispetto ad altri pacchetti simili: vogliamo solo mostrare un piccolo campione di pacchetti relativo a una serie di aree altrimenti non trattate in questo corso.</p>
+  class="hint">Non si intenda la presenza di questo o quel pacchetto in questa pagina come una preferenza del pacchetto rispetto ad altri pacchetti simili: vogliamo solo mostrarne un piccolo campione relativo a una serie di aree tematiche altrimenti non trattate in questo corso.</p>
 
 ## Chimica
 
