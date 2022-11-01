@@ -20,9 +20,9 @@ arricchisce con istruzioni di marcatura. Questo linguaggio di marcatura informa 
 sul significato logico di determinati elementi del testo, analogamente a quanto
 fa HTML.
 
-Prendi per esempio l'elemento `<h2>`, che in un documento HTML indica una
-nuova sezione.
-Anche LaTeX ha un comando corrispondente: il comando `\section`.
+Prendi per esempio l'elemento `<h2>`, che in un documento HTML incomincia una
+nuova sezione. Anche LaTeX ha un comando per fare la stessa cosa: il comando 
+`\section`.
 
 ## Il flusso di lavoro di LaTeX
 
