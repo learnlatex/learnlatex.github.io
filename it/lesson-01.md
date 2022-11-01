@@ -1,10 +1,11 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "What LaTeX is and how it works"
-description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
-toc-anchor-text: "LaTeX basics"
-toc-description: "What LaTeX is and how it works."
+title: "Che cos'è LaTeX e come funziona"
+description: "Questa lezione spiega i princìpi fondamentali di LaTeX: che cos'è e come funziona, 
+  diversamente dai comuni elaboratori di testo come Microsoft Word o LibreOffice Writer."
+toc-anchor-text: "Princìpi fondamentali di LaTeX"
+toc-description: "Che cos'è LaTeX e come funziona."
 ---
 
 # Princìpi fondamentali di LaTeX
