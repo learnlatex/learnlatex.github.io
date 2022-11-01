@@ -13,7 +13,7 @@ Purtroppo non disponiamo delle risorse per dare aiuto individuale sui problemi d
 
 ## Website Team
 
-Il [codice sorgente di questo sito](https://github.com/learnlatex/learnlatex.github.io/) è su [GitHub](https://github.com/learnlatex/). Si prega di guardare [CONTRIBUTING](../CONTRIBUTING) e [LICENSE](../LICENSE) per ulteriori dettagli.
+Il [codice sorgente di questo sito](https://github.com/learnlatex/learnlatex.github.io/) è su [GitHub](https://github.com/learnlatex/). Ti preghiamo di guardare [CONTRIBUTING](../CONTRIBUTING) e [LICENSE](../LICENSE) per ulteriori dettagli.
 
 Puoi anche [aprire una questione su GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) o [scriverci un'email](mailto:texfaq@texfaq.org) con i tuoi suggerimenti.
 
