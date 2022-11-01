@@ -7,20 +7,20 @@ toc-anchor-text: "Working with LaTeX"
 toc-description: "TeX systems and LaTeX text editors."
 ---
 
-# Working with LaTeX
+# Lavorare con LaTeX
 
 <span
-  class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
+  class="summary">Questa lezione spiega che cos'è un sistema TeX e quali di essi sono i più comuni, elenca alcuni tra gli editor di testi normalmente adoperati con LaTeX e i sistemi online che hanno editor integrati.</span>
 
 
 Unlike many computer programs, LaTeX is not a single application containing
 'everything' in one. Instead, there are separate programs that work together.
 We can divide those up into two things you actually need:
 
-- A _TeX system_
-- A text editor (often a LaTeX-specific one)
+- un _sistema TeX_
+- un editor di testi (spesso uno specifico per LaTeX)
 
-## LaTeX systems
+## Sistemi LaTeX
 
 The core of working with LaTeX is having a TeX system available. A TeX system is a set
 of 'behind the scenes' programs and files that are needed to make LaTeX work, but
@@ -40,7 +40,7 @@ As TeX Live is available on all common platforms, and as it has some performance
 advantages, we recommend that if you are unsure which system to install, you
 choose TeX Live.
 
-## Editors
+## Editor di testi
 
 LaTeX files are simply plain text, so they can be edited with any text editor.
 However, it's most convenient to have an editor that is designed to work with
@@ -59,7 +59,7 @@ is included in MacTeX.
 <p 
   class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
 
-## Working online
+## Lavorare online
 
 There are several powerful online sites that allow you to avoid
 the need to install a TeX system and LaTeX editor at all. These websites
@@ -80,13 +80,13 @@ can edit our examples using [Overleaf](https://www.overleaf.com), one of the
 major websites for LaTeX online. There are of course others:
 [Papeeria](https://papeeria.com/) is an example.
 
-## Working with others
+## Lavoro collaborativo
 
 If you are planning to send your LaTeX sources to destinations which process
 them, such as publishers, conference organisers or pre-print servers
 (e.g. arXiv), you should check what restrictions they impose.
 
-## Exercise
+## Esercizio
 
 Get yourself set up with a local LaTeX installation _or_ an account with
 an online LaTeX service. If you are using a local installation, you'll need
