@@ -47,7 +47,7 @@ LaTeX più di una volta. Te lo diremo quando sarà il caso.
 
 ## LaTeX o pdfLaTeX o...
 
-Nella [prossima lezione](lesson-02), vedremo che LaTeX non è un solo programma. 
+Nella [prossima lezione](lesson-02) vedremo che LaTeX non è un solo programma. 
 Per semplificare le cose, per creare i tuoi PDF ci concentreremo su un particolare 
 programma LaTeX, pdfLaTeX. Più avanti nel corso vedremo alcuni altri programmi 
 e perché potresti volerli adoperare.
