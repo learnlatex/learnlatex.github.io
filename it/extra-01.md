@@ -21,7 +21,7 @@ Dove non altrimenti indicato, gli esempi sono presi dalla documentazione del
 pacchetto.
 
 <p
-  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
+  class="hint">Si noti che la presenza di questo o quel pacchetto qui non va intesa come una preferenza del pacchetto rispetto ad altri pacchetti simili: miriamo solo a mostrare un piccolo campione relativo a una serie di aree altrimenti non trattate in questo corso.</p>
 
 ## Chimica
 
@@ -58,7 +58,7 @@ Pacchetto: [`tikz`](https://texdoc.org/pkg/tikz)
 {% include extra-01-example-tikz.md %}
 
 
-## Disegno di funzioni
+## Grafici di funzioni
 
 Pacchetto: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
