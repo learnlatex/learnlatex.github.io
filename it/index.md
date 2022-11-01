@@ -27,11 +27,11 @@ permalink: /it/
 
 <h2 class="heading__toc" id="toc">Lezioni</h2>
 
-<p class="paragraph__toc">Abbiamo incluso una pagina <b>Di più sull'argomento</b> per ogni lezione. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+<p class="paragraph__toc">Abbiamo incluso una pagina <b>Di più sull'argomento</b> in ogni lezione. Queste informazioni supplementari sono lì per aiutarti quando hai bisogno di scendere nei dettagli, ma non dovrebbero intralciarti se non le leggi.</p>
 
 {% include toc-lessons.html prefix="it/lesson" %}
 
-<h2 class="heading__toc">Additional lessons</h2>
+<h2 class="heading__toc">Lezioni aggiuntive</h2>
 <ul class="lessons-toc">
   {% include toc-additional-lessons.html prefix="it/language" %}
   {% include toc-additional-lessons.html prefix="it/extra" %}
@@ -39,5 +39,5 @@ permalink: /it/
 
 ## Going further
 
-Getting a book about LaTeX is the best way to learn the details. We cover getting more information, along with book recommendations, in the [last lesson](./lesson-16).
+Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. Diciamo come acquisire ulteriori informazioni, insieme a consigli sui libri, nell'[ultima lezione](./lesson-16).
 
