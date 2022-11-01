@@ -7,7 +7,7 @@ toc-anchor-text: "LaTeX basics"
 toc-description: "What LaTeX is and how it works."
 ---
 
-# LaTeX basics
+# Princìpi fondamentali di LaTeX
 
 <span
   class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>
@@ -35,7 +35,7 @@ generare un file PDF. È questo PDF che poi manderai agli altri.
 Persone diverse descrivono questo processo in modi diversi. 
 Poiché usare LaTeX
 è un po' come programmare, spesso si dice 'compilare' il documento, sebbene
-'comporre' sia più preciso.
+'comporre' sia un termine più preciso.
 
 ## Multiple LaTeX runs
 
