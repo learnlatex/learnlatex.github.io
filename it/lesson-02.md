@@ -1,63 +1,64 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Working with LaTeX"
-description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
-toc-anchor-text: "Working with LaTeX"
-toc-description: "TeX systems and LaTeX text editors."
+title: "Lavorare con LaTeX"
+description: "Questa lezione spiega che cos'è un sistema TeX e quali di essi sono i più comuni, elenca alcuni tra gli editor di testi normalmente adoperati con LaTeX e i sistemi online che integrano un editor."
+toc-anchor-text: "Lavorare con LaTeX"
+toc-description: "I sistemi TeX e gli editor di testi per LaTeX."
 ---
 
 # Lavorare con LaTeX
 
 <span
-  class="summary">Questa lezione spiega che cos'è un sistema TeX e quali di essi sono i più comuni, elenca alcuni tra gli editor di testi normalmente adoperati con LaTeX e i sistemi online che hanno editor integrati.</span>
+  class="summary">Questa lezione spiega che cos'è un sistema TeX e quali di essi sono i più comuni, elenca alcuni tra gli editor di testi normalmente adoperati con LaTeX e i sistemi online che integrano un editor.</span>
 
-
-Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs that work together.
-We can divide those up into two things you actually need:
+A differenza di molti programmi per computer, LaTeX non è una singola applicazione 
+che contiene 'tutto' in sé. Al contrario, ci sono programmi separati che lavorano 
+insieme. Possiamo suddividerli nelle due 'cose' di cui hai effettivamente bisogno:
 
 - un _sistema TeX_
 - un editor di testi (spesso uno specifico per LaTeX)
 
 ## Sistemi LaTeX
 
-The core of working with LaTeX is having a TeX system available. A TeX system is a set
-of 'behind the scenes' programs and files that are needed to make LaTeX work, but
-most of the time you don't directly 'run' this.
+Il fulcro del lavoro con LaTeX è avere un sistema TeX disponibile. Un sistema TeX è una
+serie di programmi e file 'dietro le quinte' necessari per far funzionare LaTeX, ma che
+non dovrai quasi mai 'eseguire' direttamente.
 
-There are two major TeX systems available today,
-[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
-are available for Windows, macOS and Linux.
-MiKTeX has a strong background on Windows;
-on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).
+I principali sistemi TeX oggi disponibili sono due:
+[MiKTeX](https://miktex.org/) e [TeX Live](https://tug.org/texlive). Entrambi
+sono disponibili per Windows, macOS e Linux.
+MiKTeX è fortemente votato a Windows;
+su macOS, TeX Live is bundled into a larger collection chiamata [MacTeX](http://www.tug.org/mactex/).
 There are [advantages to each
 system](https://tex.stackexchange.com/questions/20036), and you might want to
 look at [some more advice from the LaTeX
 Project](https://www.latex-project.org/get/).
 
-As TeX Live is available on all common platforms, and as it has some performance
-advantages, we recommend that if you are unsure which system to install, you
-choose TeX Live.
+Dal momento che TeX Live è disponibile per tutte le comuni piattaforme e presenta 
+alcuni vantaggi in termini di prestazioni, se non sei sicuro di quale sistema TeX
+installare, ti consigliamo di scegliere TeX Live.
 
 ## Editor di testi
 
-LaTeX files are simply plain text, so they can be edited with any text editor.
-However, it's most convenient to have an editor that is designed to work with
-LaTeX, as they provide features like one-click compilation of your files,
-built-in PDF viewers, and syntax highlighting. A really useful feature in all
-modern LaTeX editors is SyncTeX: the ability to click on your source and go
-straight to your PDF, or back the other way.
+I file di LaTeX sono semplicemente puro testo, perciò li si può modificare con un 
+editor di testi qualunque.
+Tuttavia, è più conveniente adoperare un editor pensato per lavorare con LaTeX,
+dato che fornisce funzionalità come la composizione dei file con un clic, 
+visualizzatori di PDF integrati ed evidenziazione della sintassi.
+Una funzionalità veramente utile presente in tutti i moderni editor per LaTeX
+è SyncTeX, cioè la possibilità di fare clic su un punto del sorgente e andare 
+direttamente al corrispondente punto del PDF, e viceversa.
 
-There are many more LaTeX editors than we can hope to list here: there is a
-[comprehensive list on
+Esistono molti più editor per LaTeX di quanti possiamo sperare di elencarne qui:
+ce n'è un [elenco completo su
 StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
-and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
-is included in MacTeX.
+Un editor di base, [TeXworks](https://tug.org/texworks), è incluso nella TeX Live
+e in MiKTeX su Windows e Linux, e [TeXShop](https://pages.uoregon.edu/koch/texshop/)
+è incluso in MacTeX.
 
 <p 
-  class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
+  class="hint">Qualunque sia l'editor da te scelto, ti consigliamo di installarlo <i>dopo</i> avere installato il tuo TeX, in modo che l'editor riesca a 'trovarlo' e a impostarsi correttamente.</p>
 
 ## Lavorare online
 
