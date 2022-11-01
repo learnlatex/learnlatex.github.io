@@ -9,13 +9,13 @@ permalink: /en/contact
 
 ## Individual Support
 
-Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
+Purtroppo non disponiamo delle risorse per offrire aiuto individuale sui problemi di LaTeX e perciò non risponderemo alle email che lo chiedono. Per sapere come ottenere il supporto degli utenti, vedi [The LaTeX Project's help page](https://www.latex-project.org/help/).
 
 ## Website Team
 
 Il [codice sorgente di questo sito](https://github.com/learnlatex/learnlatex.github.io/) è su [GitHub](https://github.com/learnlatex/). Si prega di guardare [CONTRIBUTING](../CONTRIBUTING) e [LICENSE](../LICENSE) per ulteriori dettagli.
 
-You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+Puoi anche [aprire una questione su GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) o [scriverci un'email](mailto:texfaq@texfaq.org) con i tuoi suggerimenti.
 
 ## Impressum
 
