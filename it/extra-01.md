@@ -1,27 +1,28 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "LaTeX Showcase - Examples for further study"
-description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
-toc-anchor-text: "LaTeX Showcase"
-toc-description: "Examples for further study."
+title: "Galleria di LaTeX - Esempi per ulteriori studi"
+description: "Questa lezione mostra alcuni esempi del funzionamento di altri popolari pacchetti di LaTeX non descritti nelle lezioni principali."
+toc-anchor-text: "Galleria di LaTeX"
+toc-description: "Esempi per ulteriori studi."
 ---
 
 # Galleria
 
 <span
-  class="summary">Questa lezione mostra esempi assortiti di altri popolari pacchetti di LaTeX che non sono stati trattati nelle lezioni principali.</span>
+  class="summary">Questa lezione mostra alcuni esempi del funzionamento di altri popolari pacchetti di LaTeX non descritti nelle lezioni principali.</span>
 
-Questo corso ha fornito una panoramica sulle caratteristiche principali di LaTeX.
+Questo corso ha offerto una panoramica sulle caratteristiche principali di LaTeX.
 LaTeX può contare su una vasta gamma di pacchetti di estensione e viene adoperato 
 in numerosi ambiti disciplinari.
-Ne diamo qui alcuni esempi, senza alcuna spiegazione ma indicando solo i collegamenti 
-alla loro documentazione all'indirizzo [texdoc.org](https://texdoc.org).
+Ne diamo qui alcuni esempi senza alcuna spiegazione, limitandoci a rimandare 
+alla loro documentazione all'indirizzo [texdoc.org](https://texdoc.org) (basta
+cliccare sul nome del pacchetto).
 Dove non altrimenti indicato, gli esempi sono presi dalla documentazione del
 pacchetto.
 
 <p
-  class="hint">Non si intenda la presenza di questo o quel pacchetto in questa pagina come una preferenza del pacchetto rispetto ad altri pacchetti simili: vogliamo solo mostrarne un piccolo campione relativo a una serie di aree tematiche altrimenti non trattate in questo corso.</p>
+  class="hint">Non si intenda la presenza dei pacchetti nominati in questa pagina come una preferenza nei loro confronti rispetto ad altri pacchetti simili: vogliamo solo mostrarne un piccolo campione relativo a una serie di aree tematiche altrimenti non trattate in questo corso.</p>
 
 ## Chimica
 
