@@ -12,26 +12,30 @@ toc-description: "What LaTeX is and how it works."
 <span
   class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>
 
-Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
+Unlike common word processors come Microsoft Word o LibreOffice Writer, LaTeX
+usually does not provide WYSIWYG ('What You See Is What You Get', in italiano 
+'ciò che vedi è ciò che ottieni'). With LaTeX
 one takes plain text and enriches it with markup. This markup tells LaTeX
 about the logical meaning of certain elements of the text, similar to the way
 HTML does.
 
-Take for example the element `<h2>` indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+Prendi per esempio l'elemento `<h2>`, che in un documento HTML indica una
+nuova sezione.
+Anche LaTeX ha un comando per questo; qui si adopererebbe il comando `\section`.
 
-## The LaTeX workflow
+## Il flusso di lavoro di LaTeX
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+Dal momento che i file di LaTeX non costituiscono il documento vero e proprio,
+ma sono piuttosto istruzioni che informano su che cosa ciascuna parte del 
+documento dovrebbe essere, di solito non sono questi a essere inviati ad altre 
+persone. Dopo aver scritto il tuo _sorgente_ LaTeX, invece, lancerai
+LaTeX sul file (normalmente adoperando un programma chiamato `pdflatex`) per
+generare un file PDF. È questo PDF che poi manderai agli altri.
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+Persone diverse descrivono questo processo in modi diversi. 
+Poiché usare LaTeX
+è un po' come programmare, spesso si dice 'compilare' il documento, sebbene
+'comporre' sia più preciso.
 
 ## Multiple LaTeX runs
 
