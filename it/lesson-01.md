@@ -27,7 +27,7 @@ nuova sezione. Anche LaTeX ha un comando per fare la stessa cosa: il comando
 ## Il flusso di lavoro di LaTeX
 
 Dal momento che i file di LaTeX non costituiscono il documento vero e proprio,
-ma sono piuttosto istruzioni che informano su che cosa ciascuna parte del 
+ma sono piuttosto istruzioni che informano su che cosa e come ciascuna parte del 
 documento dovrebbe essere, di solito non sono questi a essere inviati ad altre 
 persone. Dopo aver scritto il tuo _sorgente_ LaTeX, invece, lancerai
 LaTeX sul file (normalmente adoperando un programma chiamato `pdflatex`) per
