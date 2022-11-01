@@ -7,7 +7,7 @@ toc-anchor-text: "LaTeX Showcase"
 toc-description: "Examples for further study."
 ---
 
-# Showcase
+# Galleria
 
 <span
   class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
@@ -21,52 +21,52 @@ The examples are taken from the package documentation unless otherwise noted.
 <p
   class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
 
-## Chemistry
+## Chimica
 
-Package: [`mhchem`](https://texdoc.org/pkg/mhchem)
+Pacchetto: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
-## Linguistics
+## Linguistica
 
-Package: [`forest`](https://texdoc.org/pkg/forest)
+Pacchetto: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
-## Chess
+## Scacchi
 
 <!-- not 2017 -->
-Package: [`xskak`](https://texdoc.org/pkg/xskak)
+Pacchetto: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
-## Poetry
+## Poesia
 
-Class: [`memoir`](https://texdoc.org/pkg/memoir)
+Classe: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 
-## Drawing
+## Disegno
 <!-- not 2017 -->
-Package: [`tikz`](https://texdoc.org/pkg/tikz)
+Pacchetto: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
 
 
-## Function plotting
+## Disegno di funzioni
 
-Package: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
+Pacchetto: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
 
 
-## Music
+## Musica
 
-Package: [`musixtex`](https://texdoc.org/pkg/musixtex)
+Pacchetto: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 
