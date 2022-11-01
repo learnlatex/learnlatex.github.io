@@ -10,18 +10,19 @@ toc-description: "What LaTeX is and how it works."
 # Princìpi fondamentali di LaTeX
 
 <span
-  class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>
+  class="summary">Questa lezione spiega i princìpi fondamentali di LaTeX: che cos'è e come funziona, 
+  diversamente dai comuni elaboratori di testo come Microsoft Word o LibreOffice Writer.</span>
 
-Unlike common word processors come Microsoft Word o LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get', in italiano 
-'ciò che vedi è ciò che ottieni'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
+A differenza dei comuni elaboratori di testo come Microsoft Word o LibreOffice Writer, 
+di solito LaTeX non è WYSIWYG ('What You See Is What You Get', in italiano 
+'ciò che vedi è ciò che ottieni'). Con LaTeX, si prende del testo puro e lo si 
+arricchisce con istruzioni di marcatura. Questo linguaggio di marcatura informa LaTeX
+sul significato logico di determinati elementi del testo, analogamente a quanto
+fa HTML.
 
 Prendi per esempio l'elemento `<h2>`, che in un documento HTML indica una
 nuova sezione.
-Anche LaTeX ha un comando per questo; qui si adopererebbe il comando `\section`.
+Anche LaTeX ha un comando corrispondente: il comando `\section`.
 
 ## Il flusso di lavoro di LaTeX
 
@@ -47,6 +48,6 @@ LaTeX più di una volta. Te lo diremo quando sarà il caso.
 ## LaTeX o pdfLaTeX o...
 
 Nella [prossima lezione](lesson-02), vedremo che LaTeX non è un solo programma. 
-Per semplificare le cose, ci concentreremo su un particolare programma LaTeX, 
-pdfLaTeX, per creare i tuoi PDF. Più avanti nel corso vedremo alcuni altri programmi 
+Per semplificare le cose, per creare i tuoi PDF ci concentreremo su un particolare 
+programma LaTeX, pdfLaTeX. Più avanti nel corso vedremo alcuni altri programmi 
 e perché potresti volerli adoperare.
