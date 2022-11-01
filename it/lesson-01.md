@@ -37,16 +37,16 @@ Poiché usare LaTeX
 è un po' come programmare, spesso si dice 'compilare' il documento, sebbene
 'comporre' sia un termine più preciso.
 
-## Multiple LaTeX runs
+## Esecuzioni multiple di LaTeX
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+Con i file semplici, per ottenere il PDF composto il file sorgente va composto
+una volta soltanto. Ma appena incominci ad aggiungere cose più complicate, come 
+riferimenti incrociati, citazioni, immagini e indici, potresti dover eseguire 
+LaTeX più di una volta. Te lo diremo quando sarà il caso.
 
-## LaTeX or pdfLaTeX or ...
+## LaTeX o pdfLaTeX o...
 
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX Program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+Nella [prossima lezione](lesson-02), vedremo che LaTeX non è un solo programma. 
+Per semplificare le cose, ci concentreremo su un particolare programma LaTeX, 
+pdfLaTeX, per creare i tuoi PDF. Più avanti nel corso vedremo alcuni altri programmi 
+e perché potresti volerli adoperare.
