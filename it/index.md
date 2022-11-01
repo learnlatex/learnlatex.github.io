@@ -37,7 +37,7 @@ permalink: /it/
   {% include toc-additional-lessons.html prefix="it/extra" %}
 </ul>
 
-## Going further
+## Un passo in più
 
 Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. Diciamo come acquisire ulteriori informazioni, insieme a consigli sui libri, nell'[ultima lezione](./lesson-16).
 
