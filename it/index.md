@@ -6,7 +6,7 @@ description: "Impara LaTeX in 16 lezioni per principianti. Muovi i primi passi c
 permalink: /it/
 ---
 
-# Learn LaTeX
+# Impara LaTeX
 
 <h2 class="heading__introduction">Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti progettato per produrre stampe tipografiche di elevata qualità.</h2>
 
