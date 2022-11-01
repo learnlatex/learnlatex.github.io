@@ -58,7 +58,7 @@ e in MiKTeX su Windows e Linux, e [TeXShop](https://pages.uoregon.edu/koch/texsh
 è incluso in MacTeX.
 
 <p 
-  class="hint">Qualunque sia l'editor da te scelto, ti consigliamo di installarlo <i>dopo</i> avere installato il tuo TeX, in modo che l'editor riesca a 'trovarlo' e a impostarsi correttamente.</p>
+  class="hint">Qualunque sia l'editor da te scelto, ti consigliamo di installarlo <i>dopo</i> il sistema TeX, in modo che l'editor riesca a 'trovarlo' e a impostarsi correttamente.</p>
 
 ## Lavorare online
 
