@@ -10,13 +10,15 @@ toc-description: "Examples for further study."
 # Galleria
 
 <span
-  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
+  class="summary">Questa lezione mostra esempi assortiti di altri popolari pacchetti di LaTeX che non sono stati trattati nelle lezioni principali.</span>
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.org](https://texdoc.org).
-The examples are taken from the package documentation unless otherwise noted.
+Questo corso ha fornito una panoramica delle caratteristiche principali di LaTeX.
+LaTeX può contare su una vasta gamma di pacchetti di estensione ed è adoperato 
+in numerosi ambiti disciplinari.
+Ne diamo qui alcuni esempi, senza alcuna spiegazione ma indicando i collegamenti alla 
+loro documentazione all'indirizzo [texdoc.org](https://texdoc.org).
+Dove non altrimenti indicato, gli esempi sono presi dalla documentazione del
+pacchetto.
 
 <p
   class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
