@@ -21,15 +21,16 @@ insieme. Possiamo suddividerli nelle due 'cose' di cui hai effettivamente bisogn
 
 ## Sistemi LaTeX
 
-Il fulcro del lavoro con LaTeX è avere un sistema TeX disponibile. Un sistema TeX è una
-serie di programmi e file 'dietro le quinte' necessari per far funzionare LaTeX, ma che
-non dovrai quasi mai 'eseguire' direttamente.
+Il fulcro del lavoro con LaTeX è avere a disposizione un _sistema TeX_. 
+Un sistema TeX è una serie di programmi e file 'dietro le quinte' necessari 
+per far funzionare LaTeX, ma che non dovrai quasi mai 'eseguire' direttamente.
 
 I principali sistemi TeX oggi disponibili sono due:
-[MiKTeX](https://miktex.org/) e [TeX Live](https://tug.org/texlive). Entrambi
-sono disponibili per Windows, macOS e Linux.
+[MiKTeX](https://miktex.org/) e [TeX Live](https://tug.org/texlive). 
+Di entrambi esistono versioni per Windows, macOS e Linux.
 MiKTeX è fortemente votato a Windows;
-su macOS, TeX Live is bundled into a larger collection chiamata [MacTeX](http://www.tug.org/mactex/).
+su macOS, TeX Live is bundled into a larger collection chiamata 
+[MacTeX](http://www.tug.org/mactex/).
 There are [advantages to each
 system](https://tex.stackexchange.com/questions/20036), and you might want to
 look at [some more advice from the LaTeX
@@ -41,14 +42,14 @@ installare, ti consigliamo di scegliere TeX Live.
 
 ## Editor di testi
 
-I file di LaTeX sono semplicemente puro testo, perciò li si può modificare con un 
-editor di testi qualunque.
+I file di LaTeX sono semplicemente puro testo, perciò puoi modificarli con un 
+qualunque editor di testi.
 Tuttavia, è più conveniente adoperare un editor pensato per lavorare con LaTeX,
 dato che fornisce funzionalità come la composizione dei file con un clic, 
-visualizzatori di PDF integrati ed evidenziazione della sintassi.
+un visualizzatore di PDF integrato e l'evidenziazione della sintassi.
 Una funzionalità veramente utile presente in tutti i moderni editor per LaTeX
-è SyncTeX, cioè la possibilità di fare clic su un punto del sorgente e andare 
-direttamente al corrispondente punto del PDF, e viceversa.
+è offerta da SyncTeX, cioè la possibilità di fare clic su un punto del sorgente 
+e andare direttamente al corrispondente punto del PDF, e viceversa.
 
 Esistono molti più editor per LaTeX di quanti possiamo sperare di elencarne qui:
 ce n'è un [elenco completo su
