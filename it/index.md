@@ -1,7 +1,7 @@
 ---
 layout: "start"
 lang: "it"
-title: Impara LaTeX online gratis in lezioni per principianti
+title: Impara LaTeX online e gratis in lezioni per principianti
 description: "Impara LaTeX in 16 lezioni per principianti. Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti progettato per produrre stampe di elevata qualità tipografica."
 permalink: /it/
 ---
@@ -15,19 +15,19 @@ permalink: /it/
   <section>
     <h3 class="text-columns__heading">Introduzione</h3>
     <p>LaTeX può essere spaventoso per i nuovi utenti, perché <em>non è</em> un elaboratore di testo 
-    e non è un solo programma. Il nostro obiettivo è aiutarti a incominciare 
+    e perché non è costituito da un programma unico. Il nostro obiettivo è aiutarti a incominciare 
     con LaTeX: le nozioni fondamentali, l'installazione, la scrittura del codice, senza 
-    cercare di mostrarti <em>tutto</em> in una volta. <a href="./mission">Di più sul nostro obiettivo &hellip;</a></p>
+    pretendere di mostrarti <em>tutto</em> in una volta sola. <a href="./mission">Di più sul nostro obiettivo &hellip;</a></p>
   </section>
   <section>
     <h3 class="text-columns__heading">Come funziona</h3>
-      <p>Abbiamo preso le cose più importanti che devi sapere e le abbiamo trasformate in <em>16 brevi lezioni</em>, che non dovrebbero richiedere troppo tempo per essere seguite. In ciascuna lezione diamo numerosi esempi di ciò che dovresti scrivere. Puoi modificare e comporre gli esempi direttamente in questo sito. <a href="./help#examples">Di più sugli esempi &hellip;</a></p>
+      <p>Abbiamo preso le cose più importanti che devi sapere e le abbiamo trasformate in <em>16 brevi lezioni</em>, che non dovrebbero richiederti troppo tempo per essere seguite. Ogni lezione contiene numerosi esempi scritti in buon codice LaTeX, che puoi modificare, comporre e visualizzare direttamente in questo sito. <a href="./help#examples">Di più sugli esempi &hellip;</a></p>
   </section>
 </div>
 
 <h2 class="heading__toc" id="toc">Lezioni</h2>
 
-<p class="paragraph__toc">Abbiamo incluso una pagina <b>Per saperne di più</b> in ogni lezione. Queste informazioni supplementari sono lì per aiutarti quando hai bisogno di scendere nei dettagli, ma non dovrebbero intralciarti se non le leggi.</p>
+<p class="paragraph__toc">In ogni lezione c'è un collegamento alla pagina <b>Per saperne di più</b>. Queste informazioni aggiuntive sono lì per aiutarti se hai bisogno di scendere nei dettagli, ma non preoccuparti se non le leggi subito.</p>
 
 {% include toc-lessons.html prefix="it/lesson" %}
 
