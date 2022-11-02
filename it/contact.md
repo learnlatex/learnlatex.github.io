@@ -9,15 +9,15 @@ permalink: /it/contact
 
 ## Supporto individuale
 
-Purtroppo non disponiamo delle risorse per aiutare singolarmente gli utenti a risolvere i loro problemi su LaTeX, perciò non risponderemo alle email che lo chiedono. Per sapere come ottenere supporto per gli utenti, vedi [The LaTeX Project's help page](https://www.latex-project.org/help/).
+Purtroppo non disponiamo delle risorse necessarie per risolvere individualmente i problemi degli utenti con LaTeX, perciò non risponderemo alle email che chiedono questo tipo di supporto. La pagina [The LaTeX Project's help page](https://www.latex-project.org/help/) suggerisce alcuni modi per ottenere aiuto (anche in lingue diverse dall'italiano).
 
-## Website Team
+## Il team del sito
 
-Il [codice sorgente di questo sito](https://github.com/learnlatex/learnlatex.github.io/) è su [GitHub](https://github.com/learnlatex/). Ti preghiamo di guardare [CONTRIBUTING](../CONTRIBUTING) e [LICENSE](../LICENSE) per ulteriori dettagli.
+Il [codice sorgente di questo sito](https://github.com/learnlatex/learnlatex.github.io/) è su [GitHub](https://github.com/learnlatex/). Per ulteriori dettagli, ti consigliamo di consultare [CONTRIBUTING](../CONTRIBUTING) e [LICENSE](../LICENSE).
 
 Puoi anche [segnalare un problema su GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) o [scriverci un'email](mailto:texfaq@texfaq.org) con i tuoi suggerimenti.
 
-## Impressum
+## Responsabile legale
 
 <p>Joseph Wright<br>
 2, Dowthorpe End<br>
