@@ -2,13 +2,13 @@
 layout: "start"
 lang: "it"
 title: Impara LaTeX online gratis in lezioni per principianti
-description: "Impara LaTeX in 16 lezioni per principianti. Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti progettato per produrre stampe tipografiche di elevata qualità."
+description: "Impara LaTeX in 16 lezioni per principianti. Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti progettato per produrre stampe di elevata qualità tipografica."
 permalink: /it/
 ---
 
 # Impara LaTeX
 
-<h2 class="heading__introduction">Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti progettato per produrre stampe tipografiche di elevata qualità.</h2>
+<h2 class="heading__introduction">Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti progettato per produrre stampe di elevata qualità tipografica.</h2>
 
 <div
   class="text-columns">
