@@ -62,24 +62,31 @@ e in MiKTeX su Windows e Linux, e [TeXShop](https://pages.uoregon.edu/koch/texsh
 
 ## Lavorare online
 
-There are several powerful online sites that allow you to avoid
-the need to install a TeX system and LaTeX editor at all. These websites
-work by letting you edit your files in the webpage, then they run LaTeX
-behind the scenes, and display the PDF that is produced.
+Esistono diversi potenti siti online che ti permettono di evitare 
+la necessità di installare un sistema TeX e un editor per LaTeX. 
+Questi siti funzionano permettendoti di modificare i tuoi file 
+direttamente nella pagina web, poi eseguono LaTeX dietro le quinte 
+e visualizzano il PDF prodotto.
 
-Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focused on letting you see the LaTeX code and
-so are closer to having a local installation.
+Alcuni di questi siti combinano LaTeX con funzionalità simili a 
+quelle di un elaboratore di testo, mentre altri sono più focalizzati 
+sul permetterti di vedere il codice LaTeX e quindi sono più vicini 
+ad avere un'installazione locale.
 
-There are systems that let you run LaTeX without needing to be logged in, and we
-are using one of those,
-[TeXLive.net](https://texlive.net), to let you
-edit and test the examples we give. For more complete work, the best online
-systems require that you register before you use them. That lets you save your
-work but also helps the sites not get overloaded. We have set up links so you
-can edit our examples using [Overleaf](https://www.overleaf.com), one of the
-major websites for LaTeX online. There are of course others:
-[Papeeria](https://papeeria.com/) is an example.
+Ci sono sistemi che ti permettono di eseguire LaTeX senza 
+dover effettuare l'accesso, e ne stiamo adoperando uno,
+[TeXLive.net](https://texlive.net), per permetterti di
+modificare e verificare gli esempi che ti diamo. 
+Per un lavoro più completo, i migliori sistemi online 
+ti chiedono di registrarti prima di poterli adoperare.
+La cosa ti permette di salvare il tuo lavoro, ma evita 
+anche di sovraccaricare i siti.
+
+Abbiamo impostato i collegamenti per permetterti di modificare
+i nostri esempi con [Overleaf](https://www.overleaf.com), uno dei
+principali siti per lavorare con LaTeX online. 
+Ce ne sono altri, naturalmente:
+[Papeeria](https://papeeria.com/) ne è un esempio.
 
 ## Lavoro collaborativo
 
