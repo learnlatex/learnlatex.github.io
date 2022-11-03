@@ -37,7 +37,7 @@ non descritti nel corso.
 ### Eseguire gli esempi
 
 Ogni esempio presente nelle lezioni è un breve documento LaTeX
-che nella pagina appare così:
+che sulla pagina appare così:
 
 ```latex
 \documentclass{article}
