@@ -1,8 +1,8 @@
 ---
 layout: "page"
 lang: "it"
-title: "Using the learnlatex.org site"
-description: "This page explains the learnlatex.org website itself and how to best make use of it."
+title: "Adoperare il sito learnlatex.org"
+description: "Questa pagina spiega com'è organizzato il sito learnlatex.org e come usarlo al meglio."
 permalink: /it/help
 ---
 <script>
@@ -11,49 +11,54 @@ permalink: /it/help
   }
 </script>
 
-# Help
+# Aiuto
 
 
-## Navigating the site
+## Navigare il sito
 
-The course consists of 16 core lessons that can be reached from the
-[table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+Il corso è composto da 16 lezioni di base raggiungibili 
+dall'[indice]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) 
+presente nella [pagina iniziale](./).
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 16 lessons _without_ reading the additional lessons.
+Ogni lezione contiene un collegamento a una lezione di approfondimento
+sullo stesso argomento.
+Dovrebbe essere possibile seguire tutte le 16 lezioni _senza_ dover
+leggere quelle aggiuntive.
 
-At the end of the course there are one or more lessons specific to the
-language being used for the lessons, and finally a gallery of examples
-of packages demonstrating LaTeX use not covered by this course.
+Alla fine del corso, una o più lezioni danno indicazioni specifiche
+sulla lingua adoperata nelle lezioni principali e, infine, una galleria 
+di esempi mostra alcuni usi particolari di LaTeX
+non descritti nel corso.
 
 ---
 
-## Examples
+## Esempi
 
-### Running the examples
+### Eseguire gli esempi
 
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+Ogni esempio presente nelle lezioni è un breve documento LaTeX
+che nella pagina appare così:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Example text.
+Testo d'esempio.
 \end{document}
 ```
 
-Each example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
+Ogni esempio è _completo_. Inoltre, è _modificabile_, perché gli esercizi
+alla fine della lezione potrebbero chiederti di apportare al codice
+qualche piccolo cambiamento.
 
-The editor being used is [ACE](https://ace.c9.io/).
+L'editor adoperato è [ACE](https://ace.c9.io/).
 
-You may customise the theme used in the editor (for example using a
-dark theme with light text on a dark background) on the [Site Settings](settings) page.
-A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
-while on any example in the site. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
+Puoi personalizzare l'aspetto dell'editor (impostando un tema scuro con testo
+chiaro su sfondo nero, per esempio) 
+sulla pagina [Configurazione](settings).
+Per sperimentare comodamente temi diversi, ti consigliamo di usare <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> su Mac)
+mentre stai lavorando con gli esempi. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
 
 The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
