@@ -73,11 +73,11 @@ Il repository di ACE contiene un'utile [pagina con le scorciatoie da tastiera pe
 * Mediante il servizio TeXLive.net
 * Mediante un sistema TeX installato sul disco
 
-##### Use the Overleaf service
+##### Il servizio Overleaf
 
-Overleaf is one of the most popular online LaTeX editing services. The 
-<button>Open in Overleaf</button> button, below the example, will submit the 
-code to [Overleaf](https://www.overleaf.com/about).
+Overleaf è uno dei servizi di editing online di LaTeX più popolari.
+Il pulsante <button>Apri in Overleaf</button>, sotto all'esempio, invia 
+il codice a [Overleaf](https://www.overleaf.com/about).
 
 If you do not have an account, or the account details are not
 already cached in your browser, then you will be redirected to a
