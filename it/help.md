@@ -22,7 +22,7 @@ presente nella [pagina iniziale](./).
 
 Ogni lezione contiene un collegamento a una lezione di approfondimento
 sullo stesso argomento.
-Dovrebbe essere possibile seguire tutte le 16 lezioni _senza_ dover
+Dovresti riuscire a seguire tutte le 16 lezioni _senza_ dover
 leggere quelle aggiuntive.
 
 Alla fine del corso, una o più lezioni danno indicazioni specifiche
@@ -54,21 +54,24 @@ qualche piccolo cambiamento.
 
 L'editor adoperato è [ACE](https://ace.c9.io/).
 
-Puoi personalizzare l'aspetto dell'editor (impostando un tema scuro con testo
-chiaro su sfondo nero, per esempio) 
+Puoi personalizzare l'aspetto dell'editor (impostando un tema scuro 
+con testo chiaro su sfondo nero, per esempio) 
 sulla pagina [Configurazione](settings).
-Per sperimentare comodamente temi diversi, ti consigliamo di usare <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> su Mac)
-mentre stai lavorando con gli esempi. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
+Per sperimentare comodamente temi diversi, ti consigliamo di usare 
+<kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> su Mac)
+mentre stai lavorando con gli esempi. 
+Questa combinazione di tasti [ti mostrerà un pannello](javascript:acesettings()) 
+nel quale potrai modificare tutte le impostazioni di ACE.
 
-The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+Il repository di ACE contiene un'utile [pagina con le scorciatoie da tastiera per l'editor](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 
 
-#### Three ways to run the example
+#### Tre modi per comporre un esempio
 
-* Use the Overleaf service
-* Use the TeXLive.net service
-* Use a locally installed TeX system
+* Mediante il servizio Overleaf
+* Mediante il servizio TeXLive.net
+* Mediante un sistema TeX installato sul disco
 
 ##### Use the Overleaf service
 
