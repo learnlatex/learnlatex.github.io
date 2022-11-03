@@ -14,7 +14,7 @@ permalink: /it/help
 # Aiuto
 
 
-## Navigare il sito
+## Navigare questo sito
 
 Il corso è composto da 16 lezioni di base raggiungibili 
 dall'[indice]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) 
@@ -89,7 +89,7 @@ Se, invece, il tuo account Overleaf è già memorizzato nella cache del
 browser, Overleaf si aprirà in una nuova scheda, con un nuovo progetto 
 contenente il codice d'esempio. A questo punto, potrai modificarlo 
 direttamente in Overleaf, che lancerà automaticamente LaTeX sul codice, 
-visualizzando poi l'anteprima del PDF composto o gli eventuali errori.
+visualizzando subito dopo l'anteprima del PDF composto o gli eventuali errori.
 
 A differenza dei documenti composti su TeXLive.net, Overleaf ti permette
 di salvare il progetto nel tuo account per riprenderlo
@@ -97,8 +97,8 @@ più avanti.
 
 ##### Il servizio TeXLive.net
 
-The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
-[TeXLive.net](https://texlive.net) service[^1].
+Il pulsante <button>Esegui in TeXLive.net</button>, sotto all'esempio, invia 
+il codice al servizio [TeXLive.net](https://texlive.net)[^1].
 
 The TeXLive.net service was developed specifically to support this site, and
 in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
