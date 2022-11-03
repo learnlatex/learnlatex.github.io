@@ -48,7 +48,7 @@ Testo d'esempio.
 \end{document}
 ```
 
-Ogni esempio è _completo_. Inoltre, è _modificabile_, perché gli esercizi
+Ogni esempio è _completo_. Inoltre è _modificabile_, perché gli esercizi
 alla fine della lezione potrebbero chiederti di apportare al codice
 qualche piccolo cambiamento.
 
@@ -63,9 +63,8 @@ mentre stai lavorando con gli esempi.
 Questa combinazione di tasti [ti mostrerà un pannello](javascript:acesettings()) 
 nel quale potrai modificare tutte le impostazioni di ACE.
 
-Il repository di ACE contiene un'utile [pagina con le scorciatoie da tastiera per l'editor](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
-
-
+Il repository di ACE contiene una [pagina con le scorciatoie da tastiera](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts)
+utili per risparmiare tempo.
 
 #### Tre modi per comporre un esempio
 
@@ -75,26 +74,28 @@ Il repository di ACE contiene un'utile [pagina con le scorciatoie da tastiera pe
 
 ##### Il servizio Overleaf
 
-Overleaf è uno dei servizi di editing online di LaTeX più popolari.
+Overleaf è uno dei servizi più apprezzati per lavorare con LaTeX online.
 Il pulsante <button>Apri in Overleaf</button>, sotto all'esempio, invia 
 il codice a [Overleaf](https://www.overleaf.com/about).
 
-If you do not have an account, or the account details are not
-already cached in your browser, then you will be redirected to a
-login page where you may login or register with Overleaf. This is a
-free service but does require you to give some details and agree to
-terms and conditions.
+Se non possiedi un account su Overleaf o se i dettagli del tuo account 
+non sono già  memorizzati nella cache del browser, verrai reindirizzato 
+a una pagina nella quale potrai accedere al servizio o registrarti. 
+Overleaf è gratuito, ma dovrai dare qualche informazione personale 
+(in particolare, un indirizzo email valido) e accettarne termini e 
+condizioni.
 
-If your Overleaf account is already cached in your browser, then
-Overleaf will be opened in a new tab, with a new
-project with the code. You may then edit it in
-Overleaf which will simultaneously run LaTeX on your code showing
-the resulting output or error log.
+Se, invece, il tuo account Overleaf è già memorizzato nella cache del 
+browser, Overleaf si aprirà in una nuova scheda, con un nuovo progetto 
+contenente il codice d'esempio. A questo punto, potrai modificarlo 
+direttamente in Overleaf, che lancerà automaticamente LaTeX sul codice, 
+visualizzando poi l'anteprima del PDF composto o gli eventuali errori.
 
-Unlike documents processed at TeXLive.net, you may save your project
-in your Overleaf account and return to it later.
+A differenza dei documenti composti su TeXLive.net, Overleaf ti permette
+di salvare il progetto nel tuo account per riprenderlo
+più avanti.
 
-##### Use the TeXLive.net service
+##### Il servizio TeXLive.net
 
 The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
 [TeXLive.net](https://texlive.net) service[^1].
