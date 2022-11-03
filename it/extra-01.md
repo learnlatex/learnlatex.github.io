@@ -1,10 +1,10 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Galleria di LaTeX - Esempi per ulteriori studi"
+title: "Galleria di LaTeX - Esempi per approfondire lo studio"
 description: "Questa lezione mostra alcuni esempi del funzionamento di altri popolari pacchetti di LaTeX non descritti nelle lezioni principali."
 toc-anchor-text: "Galleria di LaTeX"
-toc-description: "Esempi per ulteriori studi."
+toc-description: "Esempi per approfondire lo studio."
 ---
 
 # Galleria
@@ -12,17 +12,17 @@ toc-description: "Esempi per ulteriori studi."
 <span
   class="summary">Questa lezione mostra alcuni esempi del funzionamento di altri popolari pacchetti di LaTeX non descritti nelle lezioni principali.</span>
 
-Questo corso ha offerto una panoramica sulle caratteristiche principali di LaTeX.
-LaTeX può contare su una vasta gamma di pacchetti di estensione e viene adoperato 
-in numerosi ambiti disciplinari.
+Questo corso ha offerto una panoramica sulle caratteristiche _principali_ di LaTeX.
+Tuttavia, LaTeX può contare su una vasta gamma di pacchetti di estensione, che ne 
+rendono possibile l'uso in numerosi ambiti disciplinari.
 Ne diamo qui alcuni esempi senza alcuna spiegazione, limitandoci a rimandare 
-alla loro documentazione all'indirizzo [texdoc.org](https://texdoc.org) (basta
-cliccare sul nome del pacchetto).
-Dove non altrimenti indicato, gli esempi sono presi dalla documentazione del
-pacchetto.
+alla documentazione del pacchetto in questione all'indirizzo 
+[texdoc.org](https://texdoc.org) (basta cliccare sul nome del pacchetto).
+Dove non altrimenti indicato, il codice d'esempio è preso dalla documentazione 
+del pacchetto.
 
 <p
-  class="hint">Non si intenda la presenza dei pacchetti nominati in questa pagina come una preferenza nei loro confronti rispetto ad altri pacchetti simili: vogliamo solo mostrarne un piccolo campione relativo a una serie di aree tematiche altrimenti non trattate in questo corso.</p>
+  class="hint">Non si intenda la scelta dei pacchetti nominati in questa pagina come una preferenza nei loro confronti rispetto ad altri pacchetti simili: vogliamo solo mostrarne un piccolo campione relativo a una serie di aree tematiche altrimenti non trattate in questo corso.</p>
 
 ## Chimica
 
