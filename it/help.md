@@ -151,15 +151,15 @@ vengono composti online con il motore `pdflatex`.
 Puoi scegliere esplicitamente `latex`, `pdflatex`, `xelatex`, `lualatex`,
 `platex` o `uplatex` mediante un commento speciale di questo tipo:
 
-`% !TEX ` _qualsiasi testo_ `lualatex`
+`% !TEX ` _testo_ `lualatex`
 
 dove lo spazio all'inizio è facoltativo e maiuscole, 
-minuscole e l'eventuale _qualsiasi testo_ tra la prima e 
+minuscole e l'eventuale _testo_ tra la prima e 
 l'ultima parola sono ignorati.
 
 Il che permette la scrittura `% !TEX program=pdflatex` adottata da 
-alcuni editor TeX, ma nella quale, a rigore, la stringa
-`program=` non è richiesta. Nota bene che attualmente i commenti 
+alcuni editor TeX, ma nella quale la stringa
+`program=` non è richiesta. Nota bene che, attualmente, i commenti 
 speciali si limitano a specificare solo uno dei motori supportati
 dai sistemi TeX online consigliati nel nostro corso.
 
@@ -176,7 +176,7 @@ unless you have specified a default TeX engine on the [Site Settings](settings)
 
 ---
 
-## Choosing how to display the output
+## Scegliere come visualizzare il risultat
 
 If you use the TeXLive.net system, then the PDF
 output from running an example is shown using
@@ -187,7 +187,7 @@ If you would prefer to use your browser's default PDF reader (either
 its built in one, or an external application that you have configured)
 then add a comment of the form:
 
-`% !TEX ` _any text_ `pdf`
+`% !TEX ` _testo_ `pdf`
 
 The default behavior can be explicitly specified by using `pdfjs` as
 the final token. For debugging you may sometimes want the log file
@@ -204,7 +204,7 @@ but use `pdf` on your desktop browser to use its default PDF rendering.
 
 ---
 
-## HTML output (make4ht, LaTeXML, lwarp)
+## Output HTML (make4ht, LaTeXML, lwarp)
 
 If using the TeXLive.net system, then additional return options,
 `make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
@@ -264,10 +264,10 @@ The current version can be seen at the
 
 ---
 
-[^1]: Note that during development of the site we have also used 
-      [LaTeX.Online](https://latexonline.cc/) and
+[^1]: Si noti che durante lo sviluppo di questo sito abbiamo adoperato anche 
+      [LaTeX.Online](https://latexonline.cc/) e
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      and we thank the developers of those services for making updates to enable
+      e ringraziamo gli sviluppatori di questi servizi for making updates to enable
       the examples on this site to be available at an early stage.
 
 
