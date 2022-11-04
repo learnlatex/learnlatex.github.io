@@ -108,19 +108,20 @@ per mostrare i PDF sui dispositivi mobili e i browser sprovvisti
 di un visualizzatore di PDF integrato.
 
 Il PDF composto risultante (o una parte del registro degli errori) verrà
-mostrato sulla pagina subito sotto all'esempio. Un pulsante <button>Elimina 
-l'output</button> will be provided so that you may remove this output
-(or you may leave it in place and continue the rest of the lesson
-below).
+mostrato sulla pagina subito sotto all'esempio. 
+Con il pulsante <button>Elimina l'output</button> potrai eliminarlo
+(oppure puoi lasciarlo dov'è e continuare a leggere sotto il resto 
+della lezione).
 
-Note that **TeXLive.net** requires no login or signup of any sort
-so it is very convenient for small examples, but this site
-provides no  mechanism to save your document. Any changes that you
-make to the example are lost if you move off the page.
+Nota bene che **TeXLive.net** non richiede né l'accesso né alcun
+tipo di registrazione – il che lo rende molto comodo per lavorare
+con esempi brevi – ma non permette in nessun modo di salvare
+il tuo documento. Se lasci la pagina, perderai tutte le modifiche
+apportate all'esempio.
 
-##### Locally installed TeX system
+##### Sistema TeX installato sul disco
 
-If you have a TeX system installed locally, then you may copy the
+Se hai installato un sistema TeX sul tuo disco, then you may copy the
 example code off the page, either explicitly selecting it, or by
 using select all keyboard shortcuts in the editor
 (<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
