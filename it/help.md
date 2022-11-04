@@ -34,7 +34,9 @@ non descritti nel corso.
 
 ## Esempi
 
-### Eseguire gli esempi
+### Comporre gli esempi
+
+#### Gli esempi di questo sito e l'editor
 
 Ogni esempio presente nelle lezioni è un breve documento LaTeX
 che sulla pagina appare così:
@@ -100,14 +102,14 @@ più avanti.
 Il pulsante <button>Esegui in TeXLive.net</button>, sotto all'esempio, invia 
 il codice al servizio [TeXLive.net](https://texlive.net)[^1].
 
-The TeXLive.net service was developed specifically to support this site, and
-in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
-to enable display of PDF on mobile and other browsers without built in PDF 
-readers.
+Il servizio TeXLive.net è stato sviluppato appositamente per questo sito
+e, in particolare, adopera [PDF.js](https://mozilla.github.io/pdf.js/)
+per mostrare i PDF sui dispositivi mobili e i browser sprovvisti
+di un visualizzatore di PDF integrato.
 
-The resulting PDF document (or section of the error log) will be
-shown inline immediately below the example. A <button>Delete
-Output</button> button will be provided so that you may remove this output
+Il PDF composto risultante (o una parte del registro degli errori) verrà
+mostrato sulla pagina subito sotto all'esempio. Un pulsante <button>Elimina 
+l'output</button> will be provided so that you may remove this output
 (or you may leave it in place and continue the rest of the lesson
 below).
 
