@@ -36,10 +36,10 @@ non descritti nel corso.
 
 ### Comporre gli esempi
 
-#### Gli esempi di questo sito e l'editor
+#### Sugli esempi e l'editor di questo sito
 
-Ogni esempio presente nelle lezioni è un breve documento LaTeX
-che sulla pagina appare così:
+Gli esempi presenti nelle lezioni sono brevi documenti LaTeX
+che sulla pagina appaiono così:
 
 ```latex
 \documentclass{article}
@@ -50,17 +50,18 @@ Testo d'esempio.
 \end{document}
 ```
 
-Ogni esempio è _completo_. Inoltre è _modificabile_, perché gli esercizi
-alla fine della lezione potrebbero chiederti di apportare al codice
-qualche piccolo cambiamento.
+Ogni esempio è _completo_. Inoltre è _modificabile_, perché 
+gli esercizi alla fine della lezione potrebbero chiederti 
+di apportare loro qualche piccolo cambiamento.
 
-L'editor adoperato è [ACE](https://ace.c9.io/).
+L'editor integrato nel sito è [ACE](https://ace.c9.io/).
 
-Puoi personalizzare l'aspetto dell'editor (impostando un tema scuro 
-con testo chiaro su sfondo nero, per esempio) 
+Puoi personalizzare l'aspetto dell'editor (impostando un 
+tema scuro con testo chiaro su sfondo nero, per esempio) 
 sulla pagina [Configurazione](settings).
-Per sperimentare comodamente temi diversi, ti consigliamo di usare 
-<kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> su Mac)
+Per sperimentare comodamente temi diversi, ti consigliamo 
+di dare <kbd>Ctrl</kbd>+<kbd>,</kbd> 
+(<kbd>⌘</kbd>+<kbd>,</kbd> su Mac)
 mentre stai lavorando con gli esempi. 
 Questa combinazione di tasti [ti mostrerà un pannello](javascript:acesettings()) 
 nel quale potrai modificare tutte le impostazioni di ACE.
@@ -107,56 +108,62 @@ e, in particolare, adopera [PDF.js](https://mozilla.github.io/pdf.js/)
 per mostrare i PDF sui dispositivi mobili e i browser sprovvisti
 di un visualizzatore di PDF integrato.
 
-Il PDF composto risultante (o una parte del registro degli errori) verrà
-mostrato sulla pagina subito sotto all'esempio. 
-Con il pulsante <button>Elimina l'output</button> potrai eliminarlo
-(oppure puoi lasciarlo dov'è e continuare a leggere sotto il resto 
-della lezione).
+Il PDF composto risultante (o una parte del registro degli errori) 
+verrà mostrato sulla pagina subito sotto all'esempio. 
+Con il pulsante <button>Elimina l'output</button> potrai 
+eliminarlo (oppure puoi lasciarlo dov'è e proseguire con 
+la lezione, che continua più sotto).
 
 Nota bene che **TeXLive.net** non richiede né l'accesso né alcun
 tipo di registrazione – il che lo rende molto comodo per lavorare
-con esempi brevi – ma non permette in nessun modo di salvare
-il tuo documento. Se lasci la pagina, perderai tutte le modifiche
+con esempi brevi – ma non ti permette in nessun modo di salvare
+il documento. Abbandonando la pagina, perderai tutte le modifiche
 apportate all'esempio.
 
 ##### Sistema TeX installato sul disco
 
-Se hai installato un sistema TeX sul tuo disco, then you may copy the
-example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor
+Se hai installato un sistema TeX sul tuo disco, puoi copiare
+il codice d'esempio, selezionandolo direttamente sulla pagina 
+o mediante le scorciatoie da tastiera previste dall'editor
 (<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
-in windows for example). This will place the code in your operating system
-clipboard so you can start a blank document using your local
-editor, and paste in the text.
+in Windows, per esempio). 
+In questo modo, il codice verrà memorizzato negli appunti
+del sistema operativo in uso sulla tua macchina, pronto
+per essere incollato in un documento vuoto aperto con il
+tuo editor preferito.
 
-### Troubleshooting
+### Risoluzione dei problemi
 
-Our examples are based around using an up-to-date LaTeX installation. They all 
-work with both of our online demonstration systems, so if you get errors with 
-the examples we provide, you might want to check if your LaTeX system is 
-up-to-date.
+I nostri esempi richiedono un sistema TeX aggiornato.
+Dal momento che funzionano tutti con entrambi i servizi online 
+appena descritti, se la compilazione sul tuo sistema locale
+non va a buon fine e ricevi dei messaggi d'errore, ti 
+consigliamo di controllarne lo stato e, se è il caso,
+di aggiornarlo.
 
 ---
 
-## Choosing the TeX engine
+## Scegliere il motore TeX
 
-When submitting example documents, by default the `pdflatex` engine will be used.
+Per impostazione predefinita, i nostri codici d'esempio
+saranno composti con il motore `pdflatex`.
 
-You can force the choice of `latex`, `pdflatex`, `xelatex`, `lualatex`,
-`platex` or `uplatex` by using a comment of the form:
+Puoi scegliere esplicitamente `latex`, `pdflatex`, `xelatex`, `lualatex`,
+`platex` o `uplatex` mediante un commento speciale di questo tipo:
 
-`% !TEX ` _any text_ `lualatex`
+`% !TEX ` _qualsiasi testo_ `lualatex`
 
-where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
+dove lo spazio all'inizio è facoltativo e vengono ignorati maiuscole, 
+minuscole e l'eventuale _qualsiasi testo_ tra la prima e l'ultima parola.
 
-This allows the form `% !TEX program=pdflatex` used by some TeX editors
-but does not require the `program=` and is currently restricted to
-specifying just one of the engines that are supported on
-the online systems being used.
+Il che permette la scrittura `% !TEX program=pdflatex` adottata da 
+alcuni editor TeX, ma nella quale, a rigore, la stringa
+`program=` non è richiesta. Nota bene che attualmente i commenti 
+speciali si limitano a specificare solo uno dei motori supportati
+dai sistemi TeX online consigliati nel nostro corso.
 
-You can see an example of a comment being used to specify LuaLaTeX in
-[some of the examples on this site](more-14).
+Puoi vedere un esempio di commento per impostare esplicitamente
+la composizione con LuaLaTeX a [some of the examples on this site](more-14).
 
 If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
 also used to produce the PDF result from the DVI file that these variants generate.
