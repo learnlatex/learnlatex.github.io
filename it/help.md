@@ -146,15 +146,16 @@ di aggiornarlo.
 ## Scegliere il motore TeX
 
 Per impostazione predefinita, i nostri codici d'esempio
-saranno composti con il motore `pdflatex`.
+vengono composti online con il motore `pdflatex`.
 
 Puoi scegliere esplicitamente `latex`, `pdflatex`, `xelatex`, `lualatex`,
 `platex` o `uplatex` mediante un commento speciale di questo tipo:
 
 `% !TEX ` _qualsiasi testo_ `lualatex`
 
-dove lo spazio all'inizio è facoltativo e vengono ignorati maiuscole, 
-minuscole e l'eventuale _qualsiasi testo_ tra la prima e l'ultima parola.
+dove lo spazio all'inizio è facoltativo e maiuscole, 
+minuscole e l'eventuale _qualsiasi testo_ tra la prima e 
+l'ultima parola sono ignorati.
 
 Il che permette la scrittura `% !TEX program=pdflatex` adottata da 
 alcuni editor TeX, ma nella quale, a rigore, la stringa
@@ -163,7 +164,8 @@ speciali si limitano a specificare solo uno dei motori supportati
 dai sistemi TeX online consigliati nel nostro corso.
 
 Puoi vedere un esempio di commento per impostare esplicitamente
-la composizione con LuaLaTeX a [some of the examples on this site](more-14).
+la composizione con LuaLaTeX nella pagina 
+[alcuni esempi di questo sito](more-14).
 
 If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
 also used to produce the PDF result from the DVI file that these variants generate.
