@@ -2,13 +2,13 @@
 layout: "start"
 lang: "it"
 title: Impara LaTeX online e gratis in lezioni per principianti
-description: "Impara LaTeX in 16 lezioni per principianti. Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti progettato per produrre stampe di elevata qualità tipografica."
+description: "Impara LaTeX in 16 lezioni per principianti. Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti pensato per produrre stampe di elevata qualità tipografica."
 permalink: /it/
 ---
 
 # Impara LaTeX
 
-<h2 class="heading__introduction">Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti progettato per produrre stampe di elevata qualità tipografica.</h2>
+<h2 class="heading__introduction">Muovi i primi passi con LaTeX, un sistema di preparazione dei documenti pensato per produrre stampe di elevata qualità tipografica.</h2>
 
 <div
   class="text-columns">
@@ -27,7 +27,7 @@ permalink: /it/
 
 <h2 class="heading__toc" id="toc">Lezioni</h2>
 
-<p class="paragraph__toc">In ogni lezione c'è un collegamento alla pagina <b>Per saperne di più</b>. Queste informazioni aggiuntive sono lì per aiutarti se hai bisogno di scendere nei dettagli, ma non preoccuparti se non le leggi subito.</p>
+<p class="paragraph__toc">In ogni lezione c'è un collegamento alla pagina <b>Per saperne di più</b>. Queste informazioni aggiuntive sono lì per aiutarti se hai bisogno di scendere nei dettagli, perciò non preoccuparti se non le leggi subito.</p>
 
 {% include toc-lessons.html prefix="it/lesson" %}
 
@@ -39,5 +39,5 @@ permalink: /it/
 
 ## Un passo in più
 
-Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. Diciamo come acquisire ulteriori informazioni, insieme a consigli sui libri, nell'[ultima lezione](./lesson-16).
+Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. Per sapere come acquisire ulteriori informazioni e avere qualche consiglio sui libri, vai all'[ultima lezione](./lesson-16).
 
