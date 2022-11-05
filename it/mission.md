@@ -10,7 +10,7 @@ permalink: /it/mission
 Questo sito intende aiutarti a muovere i primi passi con LaTeX, 
 un sistema di preparazione dei documenti pensato per produrre 
 stampe di elevata qualità tipografica.
-LaTeX può spaventare i nuovi utenti, perché _non_ è un elaboratore 
+LaTeX può spaventare i nuovi utenti, perché _non è_ un elaboratore 
 di testo e perché non è costituito da un programma unico. 
 Il nostro obiettivo è aiutarti a incominciare senza pretendere 
 di mostrarti _tutto_ in una volta sola.
