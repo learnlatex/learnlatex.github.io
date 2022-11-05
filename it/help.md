@@ -162,10 +162,10 @@ alcuni editor TeX, ma nella quale la stringa
 `program=` non è richiesta. Nota bene che, attualmente, i commenti 
 speciali si limitano a specificare solo uno dei motori supportati
 dai sistemi TeX online consigliati nel nostro corso.
-
-Puoi vedere un esempio di commento per impostare esplicitamente
-la composizione con LuaLaTeX nella pagina 
-[alcuni esempi di questo sito](more-14).
+ 
+Nella pagina [alcuni esempi di questo sito](more-14)
+puoi vedere un esempio di commento per impostare esplicitamente
+la composizione con LuaLaTeX.
 
 If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
 also used to produce the PDF result from the DVI file that these variants generate.
