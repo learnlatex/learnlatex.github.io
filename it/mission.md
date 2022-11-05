@@ -1,12 +1,25 @@
 ---
 layout: "page"
 lang: "it"
-title: Mission
+title: Obiettivo
 permalink: /it/mission
 ---
 
-# Learn LaTeX Mission
+# Obiettivo di Learn LaTeX
 
-This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
+Questo sito intende aiutarti a muovere i primi passi con LaTeX, 
+un sistema di preparazione dei documenti pensato per produrre 
+stampe di elevata qualità tipografica.
+LaTeX può spaventare i nuovi utenti, perché _non_ è un elaboratore 
+di testo e perché non è costituito da un programma unico. 
+Il nostro obiettivo è aiutarti a incominciare senza pretendere 
+di mostrarti _tutto_ in una volta sola.
 
-To do that, we have taken around 16 of the most important things you’ll need to know, and made them into short ‘lessons’. Each lesson is very focused, so they should not take too long to cover. In each lesson, we’ve given examples of what you’d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.
+Per farlo, abbiamo preso 16 tra le cose più importanti che devi 
+sapere e le abbiamo trasformate in brevi ‘lezioni’.
+Ogni lezione è molto mirata, perciò non dovrebbero richiederti 
+troppo tempo per essere seguite. 
+Ciascuna lezione contiene degli esempi
+che puoi modificare, comporre e visualizzare direttamente online.
+Puoi scoprire di più su [come funzionano gli esempi](./help#examples) 
+nella pagina Aiuto.
