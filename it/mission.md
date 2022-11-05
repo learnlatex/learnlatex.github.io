@@ -22,4 +22,4 @@ troppo tempo per essere seguite.
 Ciascuna lezione contiene degli esempi
 che puoi modificare, comporre e visualizzare direttamente online.
 Puoi scoprire di più su [come funzionano gli esempi](./help#examples) 
-nella pagina Aiuto.
+nella pagina [Aiuto](help).
