@@ -14,7 +14,7 @@ permalink: /it/
   class="text-columns">
   <section>
     <h3 class="text-columns__heading">Introduzione</h3>
-    <p>LaTeX può essere spaventoso per i nuovi utenti, perché <em>non è</em> un elaboratore di testo 
+    <p>LaTeX può spaventare i nuovi utenti, perché <em>non è</em> un elaboratore di testo 
     e perché non è costituito da un programma unico. Il nostro obiettivo è aiutarti a incominciare 
     con LaTeX: le nozioni fondamentali, l'installazione, la scrittura del codice, senza 
     pretendere di mostrarti <em>tutto</em> in una volta sola. <a href="./mission">Di più sul nostro obiettivo &hellip;</a></p>
