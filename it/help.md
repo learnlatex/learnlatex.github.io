@@ -92,7 +92,8 @@ Se, invece, il tuo account Overleaf è già memorizzato nella cache del
 browser, Overleaf si aprirà in una nuova scheda, con un nuovo progetto 
 contenente il codice d'esempio. A questo punto, potrai modificarlo 
 direttamente in Overleaf, che lancerà automaticamente LaTeX sul codice, 
-visualizzando subito dopo l'anteprima del PDF composto o gli eventuali errori.
+visualizzando subito dopo l'anteprima del PDF composto o gli eventuali 
+errori.
 
 A differenza dei documenti composti su TeXLive.net, Overleaf ti permette
 di salvare il progetto nel tuo account per riprenderlo
@@ -100,8 +101,8 @@ più avanti.
 
 ##### Il servizio TeXLive.net
 
-Il pulsante <button>Esegui in TeXLive.net</button>, sotto all'esempio, invia 
-il codice al servizio [TeXLive.net](https://texlive.net)[^1].
+Il pulsante <button>Esegui in TeXLive.net</button>, sotto all'esempio, 
+invia il codice al servizio [TeXLive.net](https://texlive.net)[^1].
 
 Il servizio TeXLive.net è stato sviluppato appositamente per questo sito
 e, in particolare, adopera [PDF.js](https://mozilla.github.io/pdf.js/)
@@ -157,31 +158,38 @@ dove lo spazio all'inizio è facoltativo e maiuscole,
 minuscole e l'eventuale _testo_ tra la prima e 
 l'ultima parola sono ignorati.
 
-Il che permette la scrittura `% !TEX program=pdflatex` adottata da 
-alcuni editor TeX, ma nella quale la stringa
-`program=` non è richiesta. Nota bene che, attualmente, i commenti 
-speciali si limitano a specificare solo uno dei motori supportati
-dai sistemi TeX online consigliati nel nostro corso.
+La cosa permette di scrivere `% !TEX program=pdflatex`, 
+come alcuni editor TeX raccomandano, ma tieni presente 
+che la stringa `program=` non è richiesta. 
+Nota bene che, attualmente, i commenti speciali si limitano 
+a specificare solo uno dei motori supportati dai sistemi TeX 
+online consigliati nel nostro corso.
  
 Nella pagina [alcuni esempi di questo sito](more-14)
 puoi vedere un esempio di commento per impostare esplicitamente
 la composizione con LuaLaTeX.
 
-If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
-also used to produce the PDF result from the DVI file that these variants generate.
-Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
+Specificando `platex` o `uplatex`, per produrre il PDF composto
+a partire dal file DVI generato da queste varianti di TeX 
+verrà lanciato automaticamente anche il programma `dvipdfmx`.
+Analogamente, scegliendo `latex` saranno adoperati
+`dvips` e `ps2pdf`.
 
-If the engine is not specified in a `% !TeX` comment, then `pdflatex` will be used
-unless you have specified a default TeX engine on the [Site Settings](settings) page.
+Se in un commento speciale `% !TeX` non si specifica alcun
+motore, il file sorgente viene composto con `pdflatex`, a meno
+che non abbiate impostato un altro motore come predefinito nella
+pagina [Site Settings](settings).
 
 ---
 
-## Scegliere come visualizzare il risultat
+## Scegliere come visualizzare il risultato
 
-If you use the TeXLive.net system, then the PDF
-output from running an example is shown using
-[PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behavior over the widest range of browsers.
+Se scegliete il sistema TeXLive.net, il PDF
+dell'esempio composto 
+è visualizzato per impostazione predefinita con 
+[PDF.js](https://mozilla.github.io/pdf.js/), che
+garantisce un comportamento coerente sulla grande
+maggioranza dei browser.
 
 If you would prefer to use your browser's default PDF reader (either
 its built in one, or an external application that you have configured)
@@ -264,10 +272,11 @@ The current version can be seen at the
 
 ---
 
-[^1]: Si noti che durante lo sviluppo di questo sito abbiamo adoperato anche 
+[^1]: Durante lo sviluppo di questo sito abbiamo adoperato anche 
       [LaTeX.Online](https://latexonline.cc/) e
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      e ringraziamo gli sviluppatori di questi servizi for making updates to enable
+      e ringraziamo gli sviluppatori di questi servizi per averli
+      tenuti aggiornati in modo da to enable
       the examples on this site to be available at an early stage.
 
 
