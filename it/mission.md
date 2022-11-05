@@ -16,10 +16,9 @@ Il nostro obiettivo è aiutarti a incominciare senza pretendere
 di mostrarti _tutto_ in una volta sola.
 
 Per farlo, abbiamo preso 16 tra le cose più importanti che devi 
-sapere e le abbiamo trasformate in brevi ‘lezioni’.
-Ogni lezione è molto mirata, perciò non dovrebbero richiederti 
-troppo tempo per essere seguite. 
-Ciascuna lezione contiene degli esempi
-che puoi modificare, comporre e visualizzare direttamente online.
+sapere e le abbiamo trasformate in brevi ‘lezioni’ molto mirate,
+perciò non dovrebbero richiederti troppo tempo per essere seguite. 
+Ogni lezione contiene degli esempi che puoi modificare, comporre e 
+visualizzare direttamente online.
 Puoi scoprire di più su [come funzionano gli esempi](./help#examples) 
 nella pagina [Aiuto](help).
