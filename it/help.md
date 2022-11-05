@@ -165,7 +165,7 @@ Nota bene che, attualmente, i commenti speciali si limitano
 a specificare solo uno dei motori supportati dai sistemi TeX 
 online consigliati nel nostro corso.
  
-Nella pagina [alcuni esempi di questo sito](more-14)
+In una delle [pagine di approfondimento](more-14) di questo corso
 puoi vedere un esempio di commento per impostare esplicitamente
 la composizione con LuaLaTeX.
 
@@ -178,7 +178,7 @@ Analogamente, scegliendo `latex` saranno adoperati
 Se in un commento speciale `% !TeX` non si specifica alcun
 motore, il file sorgente viene composto con `pdflatex`, a meno
 che non abbiate impostato un altro motore come predefinito nella
-pagina [Site Settings](settings).
+pagina [Configurazione](settings).
 
 ---
 
@@ -274,9 +274,9 @@ The current version can be seen at the
 
 [^1]: Durante lo sviluppo di questo sito abbiamo adoperato anche 
       [LaTeX.Online](https://latexonline.cc/) e
-      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      e ringraziamo gli sviluppatori di questi servizi per averli
-      tenuti aggiornati in modo da to enable
-      the examples on this site to be available at an early stage.
+      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http).
+      Ringraziamo i loro sviluppatori per averli
+      tenuti aggiornati così da permettere agli esempi in questo
+      sito di essere disponibili un una fase iniziale.
 
 
