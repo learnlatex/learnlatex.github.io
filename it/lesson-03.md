@@ -123,7 +123,7 @@ seguente:
 \begin{document}
 % Questo è un commento
 Questo è   un semplice
-documento\footnote{con una nota}.
+documento\footnote{con una nota.}
 
 Questo è un nuovo capoverso.
 \end{document}
