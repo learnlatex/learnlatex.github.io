@@ -83,69 +83,77 @@ una copia di questo file.
   class="hint">Diciamo di più su come gestire gli errori
   nella <a href="./lesson-15">lezione 15</a>.</p>
 
-## What you've got
+## Che cos'hai imparato finora
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+Il primo documento mostra le basi.
+I documenti LaTeX sono un misto di testo e comandi.
+I comandi incominciano con una barra rovescia
+e a volte hanno un argomento tra parentesi graffe
+(o, talvolta, argomenti facoltativi tra parentesi quadre).
+Quindi, dicendo a LaTeX di comporre il tuo file,
+ottieni un risultato in PDF .
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
-The `\usepackage` command is described in a [later lesson](lesson-06)
-it is used in most examples on this site to set up the font encoding.
+Ogni documento LaTeX _deve_ contenere un `\begin{document}`
+e un corrispondente `\end{document}`.
+Tra questi due comandi si trova il *corpo del documento*, 
+dove metterai i tuoi contenuti.
+Qui il corpo è di due capoversi (in LaTeX separi i capoversi
+con una o più righe vuote tra loro).
+Prima di `\begin{document}` c'è il *preambolo del documento*,
+che contiene il codice per impostare l'aspetto del documento.
+Il comando `\usepackage`, descritto in una [lezione successiva](lesson-06),
+è adoperato nella maggior parte degli esempi di questo sito
+per impostare la codifica del font.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+LaTeX ha altre coppie `\begin{...}` e `\end{...}`: sono
+chiamate *ambienti*.
+Devi abbinarli in modo che per ogni `\begin{x}` ci sia un `\end{x}`.
+Se li annidi, allora devi verificare che ogni `\end{y} ... \end{x}`
+corrisponda a `\begin{x} ... \begin{y}`, cioè che le dichiarazioni 
+`\begin` e `\end` si corrispondano nell'ordine corretto.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+Puoi aggiungere dei commenti a un file LaTeX incominciandoli con
+`%`. Vediamoli all'opera per descrivere la struttura dell'esempio
+seguente:
 
 ```latex
-\documentclass[a4paper,12pt]{article} % The document class with options
+\documentclass[a4paper,12pt]{article} % Classe del documento con alcune opzioni
 \usepackage[T1]{fontenc}
-% A comment in the preamble
+% Commento nel preambolo
 \begin{document}
-% This is a comment
-This is   a simple
-document\footnote{with a footnote}.
+% Questo è un commento
+Questo è   un semplice
+documento\footnote{con una nota}.
 
-This is a new paragraph.
+Questo è un nuovo capoverso.
 \end{document}
 ```
 
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+L'esempio è composto di due capoversi, ottenuti lasciando una riga vuota. 
+Osserva inoltre che più spazi consecutivi vengono trattati come un solo spazio.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+Talvolta potresti aver bisogno di uno spazio 'indivisibile' che non si perda
+tra una riga e l'altra: in LaTeX lo ottieni 'legando' insieme due stringhe di 
+testo con `~`.
+La cosa sarà particolarmente utile quando incominceremo a creare i riferimenti
+incrociati più avanti nel corso.
 
-## Special characters
+## Caratteri speciali
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+Probabilmente hai già notato che``\``, `{` and `}` hanno un significato speciale
+per LaTeX.
+La barra rovescia ``\`` incomincia un'istruzione impartita a LaTeX: un 'comando'. 
+Le parentesi graffe `{` e `}` sono usate per racchiudere gli _argomenti obbligatori_: 
+sono informazioni richieste dai comandi.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+Ci sono altri caratteri con un significato speciale: abbiamo appena visto che `~`
+è uno spazio 'indivisibile', per esempio. Quasi tutti questi caratteri sono _molto_
+inconsueti in un testo normale, motivo per cui sono stati scelti per veicolare
+significati speciali.
+Se hai bisogno di scrivere uno di questi caratteri speciali come testo normale,
+puoi scoprire come fare nella [pagina di approfondimento di questa lezione](more-03).
 
-## Exercise
+## Esercizio
 
 Experiment with the online editing and typesetting system; click the
 button to typeset the content, then edit it in the webpage and re-typeset it.
