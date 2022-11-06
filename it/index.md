@@ -39,5 +39,5 @@ permalink: /it/
 
 ## Un passo in più
 
-Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. Per sapere come acquisire ulteriori informazioni e avere qualche consiglio sui libri, vai all'[ultima lezione](./lesson-16).
+Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. Per ulteriori informazioni e qualche consiglio sui principali manuali su LaTeX, vai all'[ultima lezione](./lesson-16).
 
