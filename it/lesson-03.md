@@ -17,12 +17,12 @@ appare un documento e come scriverlo con successo. È anche la tua prima
 occasione per vedere [come adoperare gli esempi](help) qui su `learnlatex.org`.
 
 Se stai lavorando con un'installazione locale di TeX, crea un nuovo file
-con il tuo editor e chiamalo `primo.tex`, e copia e incolla il testo qui
+con il tuo editor e registralo come `primo.tex`; poi, copia e incolla il testo qui
 sotto oppure scrivilo tu direttamente.
 
 Se stai lavorando con un sistema online, per provare l'esempio puoi 
-semplicemente premere i bottoni ‘Run at TeXLive.net’ o ‘Open in Overleaf’ 
-sotto al codice!
+semplicemente premere i bottoni <button>Esegui in TeXLive.net</button> o 
+<button>Apri in Overleaf</button> sotto al codice!
 
 <p
   class="hint">Ti suggeriamo di provare i servizi online anche se hai configurato LaTeX localmente: 
