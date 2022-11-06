@@ -140,7 +140,7 @@ incrociati più avanti nel corso.
 
 ## Caratteri speciali
 
-Probabilmente hai già notato che``\``, `{` and `}` hanno un significato speciale
+Probabilmente hai notato che``\``, `{` e `}` hanno un significato speciale
 per LaTeX.
 La barra rovescia ``\`` incomincia un'istruzione impartita a LaTeX: un 'comando'. 
 Le parentesi graffe `{` e `}` sono usate per racchiudere gli _argomenti obbligatori_: 
