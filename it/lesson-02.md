@@ -106,6 +106,6 @@ un editor: ti raccomandiamo di incominciare con TeXworks o TeXShop
 (vedi sopra) e di dare un'occhiata ad altri editor solo quando hai
 capito qual è il modo migliore di lavorare con LaTeX _per te_.
 
-Sarai in grado di [fare tutti gli altri nostri esercizi nel browser](help.md), 
-ma vogliamo aiutarti a lavorare con documenti reali, quindi ora è un 
-ottimo momento per prepararti.
+Sarai in grado di [svolgere tutti gli altri nostri esercizi direttamente nel tuo browser](help.md), 
+ma dato che vogliamo aiutarti a lavorare con documenti reali, ora è
+il momento giusto per prepararti.
