@@ -155,10 +155,14 @@ puoi scoprire come fare nella [pagina di approfondimento di questa lezione](more
 
 ## Esercizio
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+Sperimenta l'editor e il sistema di composizione online; premi il 
+pulsante per comporre l'esempio, poi modificalo direttamente nella pagina
+e componilo nuovamente.
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+Prova ad aggiungere del testo al tuo primo documento, componilo e osserva
+i cambiamenti nel PDF. 
+Scrivi capoversi differenti e aggiungi spazi variabili. Esplora le funzionalità
+del tuo editor; clicca su un punto del sorgente e trova il modo di andare
+alla riga corrispondente del PDF. 
+Prova ad aggiungere alcuni spazi indivisibili e osserva come influenzano
+l'interruzione delle righe.
