@@ -50,30 +50,38 @@ Visualizza il risultato `first.pdf` con il tuo visualizzatore
 di PDF preferito.
 Non sembra male, complimenti!
 
-Se vuoi un risultato in HTML anziché in PDF, la pagina
+Vuoi un risultato in HTML anziché in PDF? La pagina
 [Aiuto](./help) ti dice come fare.
 
-## Handling errors
+## Cosa fare con gli errori
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+Gli errori capitano.
+Innanzitutto, verifica che  ogni riga nel tuo file 
+corrisponda _esattamente_ al testo nell'esempio qui sopra.
+A volte, modifiche al sorgente apparentemente piccole 
+producono grandi cambiamenti nel risultato, compreso 
+l'arresto della composizione.
+Se vedi che tutto è bloccato, prova a cancellare il 
+documento e a copiare nuovamente il codice dall'esempio.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+Se la composizione termina con un punto di domanda, puoi
+uscirne dando `x` e `Invio`.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+I messaggi di errore di LaTeX cercano di essere utili, ma 
+non sono gli stessi dei messaggi negli elaboratori di testo.
+Alcuni editor rendono anche difficile vedere il testo 
+'completo' di un errore, che può nascondere i dettagli chiave
+per risolvere il problema.
+
+LaTeX crea sempre un registro di ciò che sta facendo: è un 
+file di testo con estensione `.log`.
+Potrai sempre vedere i messaggi di errore completi lì e, 
+se hai un problema, gli esperti di LaTeX spesso ti chiederanno 
+una copia di questo file.
 
 <p
-  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
+  class="hint">Diciamo di più su come gestire gli errori
+  nella <a href="./lesson-15">lezione 15</a>.</p>
 
 ## What you've got
 
