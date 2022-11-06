@@ -2,22 +2,22 @@
 layout: "lesson"
 lang: "it"
 title: "Struttura logica"
-description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
+description: "Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica con comandi di sezionamento ed elenchi."
 toc-anchor-text: "Struttura logica"
-toc-description: "Structure and visual presentation."
+toc-description: "Struttura e presentazione visuale."
 ---
 
 # Struttura logica
 
 <span
-  class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
+  class="summary">Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica con comandi di sezionamento ed elenchi.</span>
 
 LaTeX provides ways to concentrate on the logical structure of your document, as well as the
 ability to directly set the appearance. Most of the time, it's much better to use
 methods that focus on structure, as that makes it easy to reuse or alter
 appearance when you have to.
 
-## Structure and visual presentation
+## Struttura e presentazione visuale
 
 We'll start with an example contrasting one of the most common logical markup
 commands in LaTeX, `\emph`, with simply making something italic. (In print,
@@ -125,16 +125,16 @@ Non ordinato
 \end{document}
 ```
 
-Nota bene che adoperiamo `\item` per incominciare ciascuna voce, e che il marcatore
-adoperato per ogni tipo di elenco viene aggiunto automaticamente.
+Nota bene che adoperiamo `\item` per incominciare ciascuna voce, e 
+che in ogni tipo di elenco il marcatore viene aggiunto automaticamente.
 
-## Exercises
+## Esercizi
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
+Sperimenta differenti livelli di sezionamento. Adopera `\documentclass{report}`
+invece di `\documentclass{article}` e aggiungi comandi `\chapter`. How
 do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
 by default, they _don't_ add numbers.
 
-Make some lists, and nest one list inside another. How does the format of the
+Componi alcuni elenchi e annida una lista dentro l'altra. How does the format of the
 numbers or markers change? You can only go to four levels with standard LaTeX,
 but more than four nested lists tends to be a bad sign anyway!
