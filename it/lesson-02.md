@@ -91,18 +91,21 @@ Ce ne sono altri, naturalmente:
 
 ## Lavoro collaborativo
 
+Se hai intenzione di inviare i tuoi sorgenti LaTeX a destinatari
+che li elaborano, come editori, organizzatori di conferenze o
+server di prestampa (come arXiv, per esempio) 
 If you are planning to send your LaTeX sources to destinations which process
 them, such as publishers, conference organisers or pre-print servers
-(e.g. arXiv), you should check what restrictions they impose.
+(e.g. arXiv), dovresti controllare quali restrizioni impongono.
 
 ## Esercizio
 
-Get yourself set up with a local LaTeX installation _or_ an account with
-an online LaTeX service. If you are using a local installation, you'll need
-to pick an editor too: we recommend starting with either TeXworks or TeX Shop
-(see above), then looking at other editors later once you know how _you_
-work best with LaTeX.
+Preparati con un'installazione di LaTeX locale _o_ un account su 
+un servizio LaTeX online. Nel primo caso dovrai procurarti anche
+un editor: ti raccomandiamo di incominciare con TeXworks o TeXShop
+(vedi sopra) e di dare un'occhiata ad altri editor solo quando hai
+capito qual è il modo migliore di lavorare con LaTeX _per te_.
 
-You'll be able to [run all of our other exercises in your browser](help.md), but we want
-to help you get working with real documents, so now is a great time to get
-yourself ready.
+Sarai in grado di [fare tutti gli altri nostri esercizi nel browser](help.md), 
+ma vogliamo aiutarti a lavorare con documenti reali, quindi ora è un 
+ottimo momento per prepararti.
