@@ -159,10 +159,10 @@ Sperimenta l'editor e il sistema di composizione online; premi il
 pulsante per comporre l'esempio, poi modificalo direttamente sulla pagina
 e componilo nuovamente.
 
-Prova ad aggiungere del testo al tuo primo documento, componilo e osserva
+Aggiungi del testo al tuo primo documento, componilo e osserva
 i cambiamenti nel PDF. 
 Scrivi ulteriori capoversi e aggiungi spazi variabili. Esplora le funzionalità
 del tuo editor; clicca su un punto del sorgente e trova il modo di andare
 alla riga corrispondente del PDF. 
-Prova ad aggiungere alcuni spazi indivisibili e osserva come influenzano
+Inserisci alcuni spazi indivisibili e osserva come influenzano
 l'interruzione delle righe.
