@@ -276,7 +276,8 @@ The current version can be seen at the
       [LaTeX.Online](https://latexonline.cc/) e
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http).
       Ringraziamo i loro sviluppatori per averli
-      tenuti aggiornati così da permettere agli esempi in questo
-      sito di essere disponibili un una fase iniziale.
+      tenuti costantemente aggiornati, rendendo così disponibili
+      agli utenti gli esempi di questo sito sin dalle sue
+      fasi iniziali.
 
 
