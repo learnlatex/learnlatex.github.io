@@ -46,11 +46,12 @@ Al termine della composizione, dovresti ottenere un file PDF
 che contiene il testo qui sopra _più_ un numero di pagina:
 LaTeX lo aggiunge automaticamente.
 
-View the output `first.pdf` with whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+Visualizza il risultato `first.pdf` con il tuo visualizzatore
+di PDF preferito.
+Non sembra male, complimenti!
 
-If you want to get HTML rather than PDF output, take a look at the
-[help](./help) for how you can do that.
+Se vuoi un risultato in HTML anziché in PDF, la pagina
+[Aiuto](./help) ti dice come fare.
 
 ## Handling errors
 
