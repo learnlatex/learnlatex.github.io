@@ -7,7 +7,7 @@ toc-anchor-text: "Galleria di esempi"
 toc-description: "Esempi per approfondire lo studio."
 ---
 
-# Galleria
+# Galleria di esempi
 
 <span
   class="summary">Questa lezione mostra alcuni esempi del funzionamento di altri popolari pacchetti di LaTeX non descritti nelle lezioni principali.</span>
