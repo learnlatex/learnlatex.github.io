@@ -142,7 +142,7 @@ incrociati più avanti nel corso.
 
 Probabilmente hai notato che``\``, `{` e `}` hanno un significato speciale
 per LaTeX.
-La barra rovescia ``\`` incomincia un'istruzione impartita a LaTeX: un 'comando'. 
+La barra rovescia ``\`` incomincia un'istruzione impartita a LaTeX: un _comando_. 
 Le parentesi graffe `{` e `}` sono usate per racchiudere gli _argomenti obbligatori_: 
 sono informazioni richieste dai comandi.
 
