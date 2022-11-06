@@ -17,8 +17,8 @@ appare un documento e come scriverlo con successo. È anche la tua prima
 occasione per vedere [come adoperare gli esempi](help) qui su `learnlatex.org`.
 
 Se stai lavorando con un'installazione locale di TeX, crea un nuovo file
-con il tuo editor e registralo come `primo.tex`; poi, copia e incolla il testo qui
-sotto oppure scrivilo tu direttamente.
+con il tuo editor e registralo come `primo.tex`; poi, copia e incolla nel file 
+il codice qui sotto oppure scrivilo tu direttamente.
 
 Se stai lavorando con un sistema online, per provare l'esempio puoi 
 semplicemente premere i bottoni <button>Esegui in TeXLive.net</button> o 
@@ -39,10 +39,12 @@ Questo è il mio primo documento.
 \end{document}
 ```
 
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+Salva le modifiche e trasformalo in un documento PDF. 
+Se stai lavorando con un'installazione locale di TeX, l'esatto pulsante
+da premere dipende dall'editor che hai scelto. 
+Al termine della composizione, dovresti ottenere un file PDF
+che contiene il testo qui sopra _più_ un numero di pagina:
+LaTeX lo aggiunge automaticamente.
 
 View the output `first.pdf` with whatever program you prefer for PDF viewing.
 Looks great; congratulations!
