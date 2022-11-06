@@ -1,9 +1,9 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Galleria di LaTeX - Esempi per approfondire lo studio"
+title: "Galleria di esempi per approfondire lo studio"
 description: "Questa lezione mostra alcuni esempi del funzionamento di altri popolari pacchetti di LaTeX non descritti nelle lezioni principali."
-toc-anchor-text: "Galleria di LaTeX"
+toc-anchor-text: "Galleria di esempi"
 toc-description: "Esempi per approfondire lo studio."
 ---
 
@@ -22,7 +22,7 @@ Dove non altrimenti indicato, il codice d'esempio è preso dalla documentazione
 del pacchetto.
 
 <p
-  class="hint">Non si intenda la scelta dei pacchetti nominati in questa pagina come una preferenza nei loro confronti rispetto ad altri pacchetti simili: vogliamo solo mostrarne un piccolo campione relativo a una serie di aree tematiche altrimenti non trattate in questo corso.</p>
+  class="hint">I pacchetti nominati in questa pagina non sono oggetto di una nostra particolare predilezione rispetto ad altri pacchetti simili e, spesso, altrettanto validi. Li abbiamo scelti solo per mostrare qualche uso specialistico di LaTeX non descritto nelle lezioni di questo corso.</p>
 
 ## Chimica
 
