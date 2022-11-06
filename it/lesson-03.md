@@ -2,37 +2,40 @@
 layout: "lesson"
 lang: "it"
 title: "Struttura di base di un documento LaTeX"
-description: "Questa lezione spiega la struttura di base di un documento LaTeX e come farla diventare un file PDF, e i principali caratteri speciali adoperati per controllare LaTeX."
+description: "Questa lezione spiega la struttura di base di un documento LaTeX e come trasformarlo in un file PDF, e i principali caratteri speciali adoperati per controllare LaTeX."
 toc-anchor-text: "Struttura del documento"
 toc-description: "La struttura di base di un documento."
 ---
 
-# LaTeX document structure
+# Struttura di un documento LaTeX
 
 <span
-  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+  class="summary">Questa lezione spiega la struttura di base di un documento LaTeX e come trasformarlo in un file PDF, e i principali caratteri speciali adoperati per controllare LaTeX.</span>
 
-Your first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to see [how to use the examples](help) here on `learnlatex.org`.
+Il tuo primo documento LaTeX sarà molto semplice: l'idea è di mostrarti come 
+appare un documento e come scriverlo con successo. È anche la tua prima
+occasione per vedere [come adoperare gli esempi](help) qui su `learnlatex.org`.
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
+Se stai lavorando con un'installazione locale di TeX, crea un nuovo file
+con il tuo editor e chiamalo `primo.tex`, e copia e incolla il testo qui
+sotto oppure scrivilo tu direttamente.
 
-If you are using the online system, you can just click on the ‘Run at TeXLive.net’
-or ‘Open in Overleaf’ buttons in the example to try it out!
+Se stai lavorando con un sistema online, per provare l'esempio puoi 
+semplicemente premere i bottoni ‘Run at TeXLive.net’ o ‘Open in Overleaf’ 
+sotto al codice!
 
 <p
-  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+  class="hint">Ti suggeriamo di provare i servizi online anche se hai configurato LaTeX localmente: 
+  è una buona occasione per vedere come funzionano le due cose.</p>
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Hey world!
+Ciao, mondo!
 
-This is a first document.
+Questo è il mio primo documento.
 \end{document}
 ```
 
