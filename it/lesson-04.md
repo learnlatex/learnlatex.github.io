@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Struttura logica"
-description: "Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica con comandi di sezionamento ed elenchi."
+description: "Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica mediante comandi di sezionamento ed elenchi."
 toc-anchor-text: "Struttura logica"
 toc-description: "Struttura e presentazione visuale."
 ---
@@ -10,18 +10,22 @@ toc-description: "Struttura e presentazione visuale."
 # Struttura logica
 
 <span
-  class="summary">Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica con comandi di sezionamento ed elenchi.</span>
+  class="summary">Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica mediante comandi di sezionamento ed elenchi.</span>
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
+LaTeX ti permette sia di concentrarti sulla struttura logica del documento,
+sia di impostarne direttamente l'aspetto.
+Il più delle volte è molto meglio applicare metodi che si concentrano
+sulla struttura, perché rendono più facile riutilizzare o modificare
+l'aspetto del documento al bisogno.
 
 ## Struttura e presentazione visuale
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasized.)
+Incominciamo con un esempio che confronta due modi di 
+evidenziare un testo: il primo adopera uno dei comandi di 
+marcatura logica più comuni in LaTeX, `\emph`; il secondo
+adopera il comando `\textit{...}`, che stampa il proprio 
+argomento in corsivo. Nei documenti stampati, infatti, 
+il corsivo serve a evidenziare qualcosa.
 
 ```latex
 \documentclass{article}
