@@ -118,8 +118,7 @@ ma non tutti i documenti li adoperano, perciò
 
 Un'altra situazione in cui la marcatura logica si rivela vincente
 è nella scrittura degli elenchi.
-LaTeX conosce due tipi 
-Ci sono due tipi comuni di elenchi integrati in LaTeX:
+LaTeX conosce due tipi di elenchi di base:
 
 ```latex
 \documentclass{article}
