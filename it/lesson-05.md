@@ -40,46 +40,49 @@ messe tra parentesi quadre, è adoperata in numerosi comandi di LaTeX.
 
 ## The base classes
 
+LaTeX è corredato di una serie di classi standard, il cui aspetto si differenzia
+per gli elementi seguenti:
 LaTeX is supplied with a set of standard classes, all of which look similar
 but with some variations:
 
 - `article`  
-  short documents without chapters
+  brevi documenti senza capitoli
 - `report`  
-  longer documents with chapters, single-sided printing
+  documenti più lunghi con capitoli, per la stampa su un solo lato del foglio
 - `book`  
-  longer documents with chapters, double-sided printing, with front- and
-  back-matter (for example an index)
+  documenti più lunghi con capitoli, per la stampa in fronte e retro, with front- and
+  back-matter (come un indice, per esempio)
 - `letter`  
-  correspondence with no sections
+  corrispondenza senza suddivisione in sezioni
 - `slides`  
-  for presentations (but see below)
+  per videopresentazioni (ma vedi sotto)
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+Le classi `article`, `report` e `book` mettono a disposizione comandi molto simili,
+come quelli che abbiamo già visto. Quando si scrive una `letter`, i comandi 
+sono un po' diversi:
 
 ```latex
 \documentclass{letter}
 \usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{letter}{Some Address\\Some Street\\Some City}
+\begin{letter}{Un destinatario\\Una strada\\Una città}
 
-\opening{Dear Sir or Madam,}
+\opening{Caro signore, cara signora}
 
-The text goes Here
+Qui ci va il testo della lettera
 
-\closing{Yours,}
+\closing{Cordialmente,}
 
 \end{letter}
 
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialized commands.
+Osserva come le righe dell'indirizzo sono separate con ``\\``; descriveremo
+i modi per interrompere una riga [un po' più avanti](lesson-11). 
+Osserva anche come la classe `letter` crea un nuovo ambiente (`letter`) per ogni lettera 
+e richiede comandi speciali.
 
 The standard `article`, `report` and `book` classes take the options `10pt`,
 `11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
