@@ -37,16 +37,19 @@ Testo in \textit{corsivo e contenuto \textit{annidato}}.
 \end{document}
 ```
 
-Probabilmente riesci a indovinare da te che il comando `\textit` 
-mette il testo in corsivo, ma lo fa _sempre_, perciò non funziona
-bene con del testo annidato in altro testo.
-There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+Probabilmente avrai indovinato che il comando 
+`\textit` mette il testo in corsivo, ma lo fa _sempre_, 
+perciò non funziona se il testo da evidenziare è annidato 
+in un altro testo.
+Il corsivo non è l'unico mezzo per evidenziare del
+testo: per esempio, nelle videopresentazioni è meglio
+adoperare il colore.
+Grazie alla marcatura logica, non dovrai preoccuparti
+di questi dettagli nel corpo del documento.
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+We will look at [manual formatting later](lesson-11), 
+ma per ora aggiungeremo `\textbf` ai comandi che già
+conosci: mette il testo <b>in nero</b>.
 
 ## Comandi di sezionamento
 
