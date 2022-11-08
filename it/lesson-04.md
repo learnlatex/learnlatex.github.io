@@ -59,16 +59,9 @@ scrive il titolo, ne ingrandisce corpo e spessore mettendolo in nero
 e lo fa seguire da una riga vuota. 
 In LaTeX, la marcatura logica è uno strumento molto _più facile_ 
 di questa formattazione manuale: basta dare il comando `\section`, 
-che si occupa di modificare la dimensione dei caratteri, di inserire 
-lo spazio verticale necessario prima e dopo il titolo, per esempio, 
-e garantisce un risultato uniforme in tutto il documento.
-
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
+che si occupa di modificare la dimensione dei caratteri e di inserire 
+lo spazio verticale necessario prima e dopo il titolo, 
+garantendo un risultato uniforme in tutto il documento.
 
 ```latex
 \documentclass{article}
@@ -91,25 +84,26 @@ Testo del sottoparagrafo.
 \section{Secondo paragrafo}
 
 Testo del secondo paragrafo.
-
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numera i paragrafi e i sottoparagrafi
-e stampa i titoli in nero. Penseremo a cambiare un po' il design [nella
-prossima lezione](lesson-05).
+Con la configurazione predefinita della classe `article`, 
+LaTeX numera i paragrafi e i sottoparagrafi e ne stampa 
+il titolo in nero. 
+[Nella prossima lezione](lesson-05) ti mostreremo come
+cambiare un po' questo aspetto.
 
 LaTeX può suddividere i documenti in diversi livelli
 
 - `\chapter` (ma per questo servono `\documentclass{book}` o
   `\documentclass{report}`)
-- `\section`
-- `\subsection`
-- `\subsubsection`
+- `\section` (paragrafo)
+- `\subsection` (sottoparagrafo)
+- `\subsubsection` (sotto-sottoparagrafo)
 
-Possiamo fare di più: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+Ma possiamo scendere a profondità maggiori: il successivo livello
+verso il basso è `\paragraph`, but almost always that's
+too much 'detail' in sections. (Sì: `\paragraph` è un comando di sezionamento, e _non_ un modo per incominciare un nuovo capoverso!)
 
 You might wonder about the title of a document. There are some special
 commands for that, but not all documents use them, so we've
