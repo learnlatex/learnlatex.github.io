@@ -89,13 +89,13 @@ Testo del secondo paragrafo.
 \end{document}
 ```
 
-Con la configurazione predefinita della classe `article`, 
-LaTeX numera i paragrafi e i sottoparagrafi e ne stampa 
+La configurazione predefinita della classe `article` 
+prevede paragrafi e sottoparagrafi numerati e con 
 il titolo in nero. 
 [Nella prossima lezione](lesson-05) ti mostreremo come
 cambiare un po' questo aspetto.
 
-LaTeX può suddividere i documenti in diversi livelli
+LaTeX può suddividere i documenti in diversi livelli:
 
 - `\chapter` (ma per questo servono `\documentclass{book}` o
   `\documentclass{report}`)
@@ -103,9 +103,9 @@ LaTeX può suddividere i documenti in diversi livelli
 - `\subsection` (sottoparagrafo)
 - `\subsubsection` (sotto-sottoparagrafo)
 
-Ma possiamo scendere a profondità maggiori: il successivo livello
-verso il basso è `\paragraph`, ma la grande maggioranza delle volte
-non serve essere così dettagliati. 
+Ma possiamo scendere a profondità ancora maggiori: il successivo 
+livello verso il basso è `\paragraph`, ma la grande maggioranza 
+delle volte non serve essere così dettagliati. 
 (E sì: `\paragraph` è un comando di sezionamento, e _non_ un modo 
 per incominciare un nuovo capoverso!)
 
@@ -116,23 +116,24 @@ ma non tutti i documenti li adoperano, perciò
 
 ## Elenchi
 
-The other very common place you'll want logical markup e nella scrittura
-degli elenchi.
-Ci sono due tipi comuni di elenchi integrati in LaTeX.
+Un'altra situazione in cui la marcatura logica si rivela vincente
+è nella scrittura degli elenchi.
+LaTeX conosce due tipi 
+Ci sono due tipi comuni di elenchi integrati in LaTeX:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
 
-Ordinato
+Elenco ordinato (numerato)
 \begin{enumerate}
   \item Una voce
   \item Un'altra
   \item Però! Tre voci
 \end{enumerate}
 
-Non ordinato
+Elenco non ordinato
 \begin{itemize}
   \item Una voce
   \item Un'altra
@@ -142,16 +143,19 @@ Non ordinato
 \end{document}
 ```
 
-Nota bene che adoperiamo `\item` per incominciare ciascuna voce, e 
-che in ogni tipo di elenco il marcatore viene aggiunto automaticamente.
+Osserva che ogni voce dell'elenco incomincia con `\item` 
+e che il marcatore viene aggiunto da LaTeX automaticamente,
+a seconda del tipo di elenco.
 
 ## Esercizi
 
 Sperimenta differenti livelli di sezionamento. Adopera `\documentclass{report}`
-invece di `\documentclass{article}` e aggiungi comandi `\chapter`. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+invece di `\documentclass{article}` e aggiungi comandi `\chapter`. Che aspetto 
+hanno? Prova `\paragraph` e (addirittura) `\subparagraph` per osservarli
+all'opera: per impostazione predefinita, producono titoli _non_ numerati.
 
-Componi alcuni elenchi e annida una lista dentro l'altra. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+Componi alcuni elenchi e annida una lista dentro l'altra. Come cambia il formato
+dei numeri o dei marcatori? LaTeX permette al massimo quattro livelli di annidamento,
+ma se ti accorgi di doverne annidare di più, è segno che le liste non sono lo
+strumento migliore: forse dovresti strutturare diversamente il tuo testo.
+
