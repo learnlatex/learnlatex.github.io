@@ -20,7 +20,7 @@ l'aspetto del documento al bisogno.
 
 ## Struttura e presentazione visuale
 
-Incominciamo con un esempio che confronta due modi di 
+Incominciamo con un esempio che confronta due modi per 
 evidenziare un testo: il primo adopera uno dei comandi di 
 marcatura logica più comuni in LaTeX, `\emph`; il secondo
 adopera il comando `\textit{...}`, che stampa il proprio 
@@ -67,6 +67,7 @@ garantendo un risultato uniforme in tutto il documento.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
+
 Ciao mondo!
 
 Questo è un primo documento.
@@ -84,6 +85,7 @@ Testo del sottoparagrafo.
 \section{Secondo paragrafo}
 
 Testo del secondo paragrafo.
+
 \end{document}
 ```
 
@@ -102,12 +104,15 @@ LaTeX può suddividere i documenti in diversi livelli
 - `\subsubsection` (sotto-sottoparagrafo)
 
 Ma possiamo scendere a profondità maggiori: il successivo livello
-verso il basso è `\paragraph`, but almost always that's
-too much 'detail' in sections. (Sì: `\paragraph` è un comando di sezionamento, e _non_ un modo per incominciare un nuovo capoverso!)
+verso il basso è `\paragraph`, ma la grande maggioranza delle volte
+non serve essere così dettagliati. 
+(E sì: `\paragraph` è un comando di sezionamento, e _non_ un modo 
+per incominciare un nuovo capoverso!)
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+A questo punto, potresti chiederti come si fa a scrivere il titolo
+di un docmento. Esistono alcuni comandi speciali per farlo,
+ma non tutti i documenti li adoperano, perciò
+[li descriviamo nella lezione di approfondimento](more-04).
 
 ## Elenchi
 
