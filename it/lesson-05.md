@@ -1,8 +1,8 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Using document classes to influence design"
-description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
+title: "Adoperare le classi di documento per cambiare l'aspetto"
+description: "Questa lezione spiega che cos'è una classe di documento e in che modo può influire sull'aspetto di un documento, ed elenca le principali classi disponibili in una distribuzione di TeX."
 toc-anchor-text: "Document classes"
 toc-description: "Setting the general document layout."
 ---
