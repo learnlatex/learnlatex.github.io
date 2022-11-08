@@ -1,39 +1,42 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Adoperare le classi di documento per cambiare l'aspetto"
+title: "Impostare l'aspetto generale del documento"
 description: "Questa lezione spiega che cos'è una classe di documento e in che modo può influire sull'aspetto di un documento, ed elenca le principali classi disponibili in una distribuzione di TeX."
-toc-anchor-text: "Document classes"
-toc-description: "Setting the general document layout."
+toc-anchor-text: "Classi di documento"
+toc-description: "Impostare l'aspetto generale del documento."
 ---
 
 # Document classes
 
 <span
-  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
+  class="summary">Questa lezione spiega che cos'è una classe di documento e in che modo può influire sull'aspetto generale di un documento. Inoltre, elenca le principali classi disponibili in una distribuzione di TeX.</span>
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
+Forse hai notato che tutti i documenti LaTeX che abbiamo creato fino a ora
+incominciano con la riga `\documentclass`, e che `\documentclass{article}` 
+è stata di gran lunga la scelta più comune. (Nella [lezione precente](lesson-04)
+abbiamo avuto bisogno di `\documentclass{report}` per provare
+il comando `\chapter`.) Questa riga è richiesta in tutti i documenti LaTeX, 
+ed è (quasi) sempre il primo comando che dovresti dare.
 
-## What a document class does
+## Che cosa fa una classe di documento
 
-The document class sets up the general layout of the document, for example
+La classe di documento imposta la presentazione generale del documento, per esempio:
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
+- l'aspetto: margini, font, spaziature, eccetera
+- se ci sono o non ci sono capitoli
+- se il titolo deve stare in una pagina a sé
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+Più in generale, le classi di documento possono aggiungere nuovi comandi
+a quelli previsti da LaTeX standard: la cosa è particolarmente vera per 
+le classi molto specialistiche, come quelle destinate alla creazione
+di videopresentazioni o lettere.
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+Nella riga della classe di documento puoi impostare anche le _opzioni globali_: 
+sono parametri che si applicano al documento nel suo complesso e si
+scrivono tra parentesi quadre: `\documentclass[<opzioni>]{<classe>}`. 
+Questa sintassi, con le informazioni facoltative
+messe tra parentesi quadre, è adoperata in numerosi comandi di LaTeX.
 
 ## The base classes
 
