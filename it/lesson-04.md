@@ -47,11 +47,21 @@ adoperare il colore.
 Grazie alla marcatura logica, non dovrai preoccuparti
 di questi dettagli nel corpo del documento.
 
-We will look at [manual formatting later](lesson-11), 
-ma per ora aggiungeremo `\textbf` ai comandi che già
+Parleremo della [formattazione manuale più tardi](lesson-11), 
+ma per ora aggiungiamo `\textbf` ai comandi che già
 conosci: mette il testo <b>in nero</b>.
 
 ## Comandi di sezionamento
+
+Probabilmente hai adoperato almeno una volta un elaboratore di testo, 
+con il quale per incominciare una sezione la maggior parte degli utenti 
+scrive il titolo, ne ingrandisce corpo e spessore mettendolo in nero 
+e lo fa seguire da una riga vuota. 
+In LaTeX, la marcatura logica è uno strumento molto _più facile_ 
+di questa formattazione manuale: basta dare il comando `\section`, 
+che si occupa di modificare la dimensione dei caratteri, di inserire 
+lo spazio verticale necessario prima e dopo il titolo, per esempio, 
+e garantisce un risultato uniforme in tutto il documento.
 
 You probably have used a word processor, where  to start a section most people
 enter the title text then simply make it bigger and bold, and follow it with a
