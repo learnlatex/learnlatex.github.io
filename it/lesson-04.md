@@ -37,9 +37,10 @@ Testo in \textit{corsivo e contenuto \textit{annidato}}.
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
+Probabilmente riesci a indovinare da te che il comando `\textit` 
+mette il testo in corsivo, ma lo fa _sempre_, perciò non funziona
+bene con del testo annidato in altro testo.
+There are also places where the emphasis
 isn't the same as italic; for example, in presentations color is usually a better
 option. With logical markup, we don't have to worry about that detail in the
 body of the document.
