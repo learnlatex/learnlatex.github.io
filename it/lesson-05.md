@@ -7,7 +7,7 @@ toc-anchor-text: "Classi di documento"
 toc-description: "Impostare l'aspetto generale del documento."
 ---
 
-# Document classes
+# Classi di documento
 
 <span
   class="summary">Questa lezione spiega che cos'è una classe di documento e in che modo può influire sull'aspetto generale di un documento. Inoltre, elenca le principali classi disponibili in una distribuzione di TeX.</span>
@@ -38,7 +38,7 @@ scrivono tra parentesi quadre: `\documentclass[<opzioni>]{<classe>}`.
 Questa sintassi, con le informazioni facoltative
 messe tra parentesi quadre, è adoperata in numerosi comandi di LaTeX.
 
-## The base classes
+## Le classi standard
 
 LaTeX è corredato di una serie di classi standard, il cui aspetto si differenzia
 per gli elementi seguenti:
@@ -84,11 +84,11 @@ i modi per interrompere una riga [un po' più avanti](lesson-11).
 Osserva anche come la classe `letter` crea un nuovo ambiente (`letter`) per ogni lettera 
 e richiede comandi speciali.
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+Le classi standard `article`, `report` e `book` prendono due opzioni: `10pt`,
+`11pt` e `12pt` per cambiare il corpo del font, e `twocolumn` per comporre
+il documento su due colonne.
 
-## Function-rich classes
+## Classi più ricche di funzioni
 
 The core classes are very stable, but that means they are also quite
 conservative in both design and the range of commands available. Over time, a
@@ -110,7 +110,7 @@ bit in an exercise. You might wonder how we can know about the hooks they
 provide; we will cover that [in a later lesson](lesson-16), but you can always
 jump ahead!
 
-## Presentations
+## Videopresentazioni
 
 The `slides` class was developed for making physical slides in the mid-1980s, so
 doesn't have any features for creating interactive PDF-based presentations.
@@ -118,30 +118,30 @@ There are modern classes that do exactly that: they are somewhat specialist
 compared to general LaTeX documents, so we've [covered them in the additional
 information](more-05).
 
-## Exercises
+## Esercizi
 
 Explore how changing the document class between the standard ones, the KOMA
 bundle and `memoir` affects the appearance of the document.
 
 ```latex
-\documentclass{article} % Change the class here
+\documentclass{article} % Cambia la classe qui
 \usepackage[T1]{fontenc}
 
 \begin{document}
 
-\section{Introduction}
+\section{Introduzione}
 
 This is a sample document with some dummy
-text\footnote{and a footnote}. This paragraph is quite
-long as we might want to see the effect of making the
-document have two columns.
+text\footnote{e una nota}. Questo capoverso è piuttosto
+lungo, dal momento che vogliamo mostrare l'effetto
+della composizione su due colonne.
 
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
+Aggiungi l'opzione di classe `twocolumn` e osserva come cambia l'aspetto del documemnto.
 
-Change the `\section` above to `\chapter` and find out what effect the
+Cambia il `\section` sopra in `\chapter` and find out what effect the
 following class options have when using the `scrreprt` class.
 
 - `chapterprefix`
