@@ -12,10 +12,10 @@ toc-description: "Impostare l'aspetto generale del documento."
 <span
   class="summary">Questa lezione spiega che cos'è una classe di documento e in che modo può influire sull'aspetto generale di un documento. Inoltre, elenca le principali classi disponibili in una distribuzione di TeX.</span>
 
-Forse hai notato che tutti i documenti LaTeX che abbiamo creato fino a ora
+Forse hai notato che tutti i documenti LaTeX create fino a qui
 incominciano con la riga `\documentclass`, e che `\documentclass{article}` 
 è stata di gran lunga la scelta più comune. (Nella [lezione precente](lesson-04)
-abbiamo avuto bisogno di `\documentclass{report}` per provare
+abbiamo avuto bisogno di nominare `\documentclass{report}` per introdurre
 il comando `\chapter`.) Questa riga è richiesta in tutti i documenti LaTeX, 
 ed è (quasi) sempre il primo comando che dovresti dare.
 
@@ -50,8 +50,8 @@ but with some variations:
 - `report`  
   documenti più lunghi con capitoli, per la stampa su un solo lato del foglio
 - `book`  
-  documenti più lunghi con capitoli, per la stampa in fronte e retro, with front- and
-  back-matter (come un indice, per esempio)
+  documenti più lunghi con capitoli, per la stampa in fronte e retro, con
+  materiale iniziale e finale (come una prefazione e un indice, per esempio)
 - `letter`  
   corrispondenza senza suddivisione in sezioni
 - `slides`  
@@ -81,8 +81,8 @@ Qui ci va il testo della lettera
 
 Osserva come le righe dell'indirizzo sono separate con ``\\``; descriveremo
 i modi per interrompere una riga [un po' più avanti](lesson-11). 
-Osserva anche come la classe `letter` crea un nuovo ambiente (`letter`) per ogni lettera 
-e richiede comandi speciali.
+Osserva anche come la classe `letter` richieda comandi speciali e 
+un nuovo ambiente (`letter`) per ogni lettera.
 
 Le classi standard `article`, `report` e `book` prendono due opzioni: `10pt`,
 `11pt` e `12pt` per cambiare il corpo del font, e `twocolumn` per comporre
