@@ -90,8 +90,9 @@ il documento su due colonne.
 
 ## Classi più ricche di funzioni
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
+Le classi principali sono molto stabili, il che le rende anche piuttosto 
+conservative sia nell'aspetto, sia nella varietà di comandi disponibili.
+Over time, a
 number of more powerful classes have been written, that let you alter the design
 without having to do things manually (which we'll mention [a bit
 later](lesson-11)).
