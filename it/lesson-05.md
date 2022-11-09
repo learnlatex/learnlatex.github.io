@@ -140,7 +140,7 @@ della composizione su due colonne.
 \end{document}
 ```
 
-Aggiungi l'opzione di classe `twocolumn` e osserva come cambia l'aspetto del documemnto.
+Aggiungi l'opzione di classe `twocolumn` e osserva come cambia l'aspetto del documento.
 
 Cambia il `\section` sopra in `\chapter` and find out what effect the
 following class options have when using the `scrreprt` class.
