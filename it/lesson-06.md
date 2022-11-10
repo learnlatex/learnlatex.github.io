@@ -12,11 +12,9 @@ toc-description: "Adoperare i pacchetti e le definizioni."
 <span
   class="summary">Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare le tue esigenze e come modificarne ulteriormente l'aspetto mediante diversi pacchetti e definizioni. Inoltre, ti mostra come definire i tuoi comandi personali.</span>
 
-Dopo aver dichiarato una classe, nel preambolo del documento puoi modificare
-le funzionalità standard di LaTeX aggiungendo uno o più *pacchetti*.
-
-After having declared a class, in the preamble you can modify functionality in
-LaTeX by adding one or more *packages*. These can
+Dopo aver dichiarato una classe, nel preambolo del documento 
+puoi modificare le funzionalità standard di LaTeX aggiungendo 
+uno o più *pacchetti*. I pacchetti possono:
 
 - cambiare il modo in cui certe parti di LaTeX funzionano
 - aggiungere nuovi comandi a LaTeX
@@ -24,12 +22,16 @@ LaTeX by adding one or more *packages*. These can
 
 ## Modificare il funzionamento di LaTeX
 
-The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
-and so some add-on packages deal with very common ideas. The first is to
-change how LaTeX deals with language-specific typesetting (hyphenation,
-punctuation, quotations, localisation, etc.). Different languages have different
-rules, so it's important to tell LaTeX which one to use. This is handled by the
-`babel` package.
+Il 'kernel' (o nucleo) di LaTeX è piuttosto limitato in quanto
+a personalizzazione da parte dell'utente. La naturale 
+modularità del programma, però, prevede pacchetti aggiuntivi 
+che permettono di risolvere problemi molto comuni.
+Il primo consiste nell'adattare il comportamento di LaTeX alla 
+lingua del documento per quanto riguarda sillabazione, punteggiatura, 
+citazioni, uso delle virgolette, localizzazione, eccetera.
+Lingue diverse hanno regole diverse, perciò è importante dire 
+a LaTeX quale (o quali) adoperare. 
+Questo aspetto è gestito dal pacchetto `babel`.
 
 ```latex
 \documentclass{article}
@@ -41,10 +43,8 @@ rules, so it's important to tell LaTeX which one to use. This is handled by the
 
 \begin{document}
 
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
-This is a lot of filler which is going to demonstrate how LaTeX hyphenates
-material, and which will be able to give us at least one hyphenation point.
+Questo è un bel po' di testo riempitivo che dimostrerà come LaTeX sillaba 
+il materiale e che sarà in grado di darci almeno un punto di sillabazione.
 
 \end{document}
 ```
