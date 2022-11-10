@@ -65,7 +65,7 @@ Spesso è utile sapere come modificare alcuni aspetti del documento
 indipendentemente dalla classe dichiarata.
 Quelli più ovvi sono i margini della pagina.
 Nell'esempio qui sopra abbiamo caricato il pacchetto `geometry`,
-ma ora ne faremo uno dedicato espressamente i margini (attenzione:
+ma ora ne faremo uno dedicato espressamente ai margini (attenzione:
 il PDF composto sarà di più pagine).
 
 ```latex
@@ -100,7 +100,7 @@ Testo del secondo paragrafo.
 \end{document}
 ```
 
-You should see the effect here compared to not loading `geometry`.
+Ora commenta la riga che carica `geometry` e osserva l'effetto.
 
 ## Aggiungere nuove funzionalità
 
