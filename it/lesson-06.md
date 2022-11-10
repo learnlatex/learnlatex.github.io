@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Extending LaTeX using packages and definitions"
-description: "This lesson shows how you can extend LaTeX to your needs and change its layout further by using different packages, and shows how you can define your own commands."
-toc-anchor-text: "Extending LaTeX"
-toc-description: "Using packages and definitions."
+title: "Estendere LaTeX mediante pacchetti e definizioni"
+description: "Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare le tue esigenze e come cambiarne ulteriormente l'aspetto grazie ai pacchetti, e ti mostra come puoi definire i tuoi comandi personali."
+toc-anchor-text: "Estendere LaTeX"
+toc-description: "Adoperare i pacchetti e le definizioni."
 ---
 
-# Extending LaTeX
+# Estendere LaTeX
 
 <span
   class="summary">This lesson shows how you can extend LaTeX to your needs and change its layout further by using packages and definitions. It also shows how you can define your own commands.</span>
