@@ -100,14 +100,14 @@ Testo del secondo paragrafo.
 \end{document}
 ```
 
-Ora commenta la riga che carica `geometry` e osserva l'effetto.
+Ora commenta la riga che carica `geometry` e osserva come cambia il documento composto.
 
 ## Aggiungere nuove funzionalità
 
-One of LaTeX's strengths is that you can choose from thousands of packages,
-including ones for writing mathematical text, for hyperlinking, for
-sophisticated capabilities with color, etc. We will see some more common
-packages in later lessons.
+Uno dei punti di forza di LaTeX è la possibilità di scegliere tra migliaia di 
+pacchetti, compresi quelli per la scrittura della matematica, per i collegamenti 
+ipertestuali, per funzionalità sofisticate con i colori, eccetera. 
+Nelle lezioni successive vedremo alcuni pacchetti più comuni.
 
 ## Definire comandi personali
 
