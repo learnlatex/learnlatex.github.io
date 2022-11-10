@@ -127,8 +127,8 @@ di carattere più generale, le abbiamo
 
 ## Esercizi
 
-Esplora come la modifica della classe del documento tra quelle standard,
-la suite KOMA e `memoir`, influisce sull'aspetto del documento.
+Fa' delle prove con le classi standard, quelle della suite KOMA
+e `memoir`, e osserva come cambia l'aspetto del documento.
 
 ```latex
 \documentclass{article} % Cambia la classe qui
