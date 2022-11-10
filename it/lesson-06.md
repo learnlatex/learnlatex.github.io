@@ -22,10 +22,10 @@ uno o più *pacchetti*. I pacchetti possono:
 
 ## Modificare il funzionamento di LaTeX
 
-Il 'kernel' (o nucleo) di LaTeX è piuttosto limitato in quanto
-a personalizzazione da parte dell'utente. La naturale 
-modularità del programma, però, prevede pacchetti aggiuntivi 
-che permettono di risolvere problemi molto comuni.
+L'utente ha ben poche possibilità di personalizzare 
+il 'kernel' (o nucleo) di LaTeX. La naturale 
+modularità del programma, però, prevede pacchetti 
+aggiuntivi che permettono di risolvere problemi molto comuni.
 Il primo consiste nell'adattare il comportamento di LaTeX alla 
 lingua del documento per quanto riguarda sillabazione, punteggiatura, 
 citazioni, uso delle virgolette, localizzazione, eccetera.
@@ -43,6 +43,8 @@ Questo aspetto è gestito dal pacchetto `babel`.
 
 \begin{document}
 
+Questo è un bel po' di testo riempitivo che dimostrerà come LaTeX sillaba 
+il materiale e che sarà in grado di darci almeno un punto di sillabazione.
 Questo è un bel po' di testo riempitivo che dimostrerà come LaTeX sillaba 
 il materiale e che sarà in grado di darci almeno un punto di sillabazione.
 
