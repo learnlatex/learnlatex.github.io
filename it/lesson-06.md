@@ -37,9 +37,9 @@ Questo aspetto è gestito dal pacchetto `babel`.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-%\usepackage[french]{babel}
+%\usepackage[italian]{babel}
 
-\usepackage[width = 6cm]{geometry} % To force hyphenation here
+\usepackage[width = 6cm]{geometry} % Per ottenere cesure a fine riga
 
 \begin{document}
 
@@ -51,18 +51,22 @@ il materiale e che sarà in grado di darci almeno un punto di sillabazione.
 \end{document}
 ```
 
-Try un-commenting the (clearly misleading) line to load `babel` and see the
-effect. (The standard hyphenation rules are US English.)
+Prova a decommentare la riga (chiaramente ingannevole) che carica `babel` 
+con l'opzione per l'italiano e osserva il risultato. 
+(Le regole di sillabazione predefinite sono quelle dell'inglese americano.)
 
-The `babel` package does a lot more than hyphenation, depending on the language
-involved; we've given [some more details](more-06) if you need them.
+Il pacchetto `babel` fa molto più della semplice sillabazione, a seconda
+della lingua caricata; se ti servono, ti diamo 
+[alcuni dettagli aggiuntivi](more-06).
 
 ## Modificare l'aspetto del documento
 
-It's useful to be able to adjust some aspects of design independent of the
-document class. The most obvious one are the page margins. We've just used
-the `geometry` package in the example above, but let's now have an example
-specifically about margins.
+Spesso è utile sapere come modificare alcuni aspetti del documento 
+indipendentemente dalla classe dichiarata.
+Quelli più ovvi sono i margini della pagina.
+Nell'esempio qui sopra abbiamo caricato il pacchetto `geometry`,
+ma ora ne faremo uno dedicato espressamente i margini (attenzione:
+il PDF composto sarà di più pagine).
 
 ```latex
 \documentclass{book}
@@ -70,30 +74,28 @@ specifically about margins.
 \usepackage[margin=1in]{geometry}
 
 \begin{document}
-Hey world!
+Ehi, mondo!
 
-This is a first document.
+Questo è il mio primo documento.
 
-
-% ================
-\chapter{Chapter One}
-Introduction to the first chapter.
-
-
-\section{Title of the first section}
-Text of material in the first section
-
-Second paragraph.
-
-\subsection{Subsection of the first section}
-
-Text of material in the subsection.
-
+% ++++++++++++++++
+\chapter{Capitolo Uno}
+Introduzione al primo capitolo.
 
 % ================
-\section{Second section}
+\section{Titolo del primo paragrafo}
+Testo del primo paragrafo
 
-Text of the second section.
+Secondo capoverso.
+
+\subsection{Sottoparagrafo del primo paragrafo}
+
+Testo del sottoparagrafo.
+
+% ================
+\section{Secondo paragrafo}
+
+Testo del secondo paragrafo.
 
 \end{document}
 ```
