@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Estendere LaTeX mediante pacchetti e definizioni"
-description: "Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare le tue esigenze e come cambiarne ulteriormente l'aspetto grazie ai pacchetti, e ti mostra come puoi definire i tuoi comandi personali."
+description: "Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare le tue esigenze e come modificare l'aspetto dei documenti mediante diversi pacchetti, e ti mostra come puoi definire i tuoi comandi personali."
 toc-anchor-text: "Estendere LaTeX"
 toc-description: "Adoperare i pacchetti e le definizioni."
 ---
@@ -10,16 +10,19 @@ toc-description: "Adoperare i pacchetti e le definizioni."
 # Estendere LaTeX
 
 <span
-  class="summary">This lesson shows how you can extend LaTeX to your needs and change its layout further by using packages and definitions. It also shows how you can define your own commands.</span>
+  class="summary">Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare le tue esigenze e come modificarne ulteriormente l'aspetto mediante diversi pacchetti e definizioni. Inoltre, ti mostra come definire i tuoi comandi personali.</span>
+
+Dopo aver dichiarato una classe, nel preambolo del documento puoi modificare
+le funzionalità standard di LaTeX aggiungendo uno o più *pacchetti*.
 
 After having declared a class, in the preamble you can modify functionality in
 LaTeX by adding one or more *packages*. These can
 
-- Change how some parts of LaTeX work
-- Add new commands to LaTeX
-- Change document design
+- cambiare il modo in cui certe parti di LaTeX funzionano
+- aggiungere nuovi comandi a LaTeX
+- cambiare l'aspetto del documento
 
-## Changing how LaTeX works
+## Modificare il funzionamento di LaTeX
 
 The LaTeX 'kernel' (the core of LaTeX) is rather limited in user customisation,
 and so some add-on packages deal with very common ideas. The first is to
@@ -52,7 +55,7 @@ effect. (The standard hyphenation rules are US English.)
 The `babel` package does a lot more than hyphenation, depending on the language
 involved; we've given [some more details](more-06) if you need them.
 
-## Changing design
+## Modificare l'aspetto del documento
 
 It's useful to be able to adjust some aspects of design independent of the
 document class. The most obvious one are the page margins. We've just used
@@ -95,14 +98,14 @@ Text of the second section.
 
 You should see the effect here compared to not loading `geometry`.
 
-## Adding new functionality
+## Aggiungere nuove funzionalità
 
 One of LaTeX's strengths is that you can choose from thousands of packages,
 including ones for writing mathematical text, for hyperlinking, for
 sophisticated capabilities with color, etc. We will see some more common
 packages in later lessons.
 
-## Defining commands
+## Definire comandi personali
 
 Sometimes you need a command specific to your document, either some
 functionality not found in the available packages or simply a command
@@ -157,7 +160,7 @@ multiple arguments may make the document source harder  to understand
 as it is using an unfamiliar syntax. The ability to define
 document-specific commands should be used with care.
 
-## Exercises
+## Esercizi
 
 Try out writing some text in other European languages and see how `babel`
 affects hyphenation: you can probably find some text on the internet, and guess
