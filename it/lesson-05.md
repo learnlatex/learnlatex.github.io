@@ -139,9 +139,10 @@ e `memoir`, e osserva come cambia l'aspetto del documento.
 \section{Introduzione}
 
 Questo è un documento d'esempio con del testo
-di prova\footnote{e una nota}. Questo capoverso è piuttosto
-lungo, dal momento che vogliamo mostrare l'effetto
-della composizione su due colonne.
+di prova\footnote{e una nota}. Questo capoverso 
+è piuttosto lungo, dal momento che vogliamo 
+mostrare l'effetto della composizione su due 
+colonne.
 
 \end{document}
 ```
