@@ -108,24 +108,27 @@ a quelle standard: `scrartcl`, `scrreprt`, `scrbook` e
 `scrlttr2`, mentre c'è una sola classe `memoir` che è più 
 simile a un'estensione di `book`.
 
-Queste classi estese hanno molti hook di personalizzazione, 
+Queste classi estese possono essere personalizzate in molti modi, 
 che esploreremo un po' in un esercizio. 
-Se ti stai chiedendo come facciamo a sapere dei ganci che 
-forniscono, potrai scoprirlo [in una lezione successiva](lezione-16), 
+Se ti stai chiedendo come facciamo a conoscerli, 
+lo scoprirai da te [in una lezione successiva](lezione-16), 
 ma puoi sempre darci un'occhiata anche adesso!
 
 ## Videopresentazioni
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+La classe `slides` è stata sviluppata verso la metà degli 
+anni '80 del Novecento per produrre lucidi da proiezione, 
+e quindi non offre alcuna funzionalità per creare 
+videopresentazioni interattive basate su file PDF.
+Esistono però classi più recenti che fanno esattamente questo: 
+siccome sono in qualche modo specialistiche rispetto ai documenti LaTeX 
+di carattere più generale, le abbiamo 
+[descritte nella lezione di approfondimento](more-05).
 
 ## Esercizi
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+Esplora come la modifica della classe del documento tra quelle standard,
+la suite KOMA e `memoir`, influisce sull'aspetto del documento.
 
 ```latex
 \documentclass{article} % Cambia la classe qui
@@ -135,18 +138,20 @@ bundle and `memoir` affects the appearance of the document.
 
 \section{Introduzione}
 
-This is a sample document with some dummy
-text\footnote{e una nota}. Questo capoverso è piuttosto
+Questo è un documento d'esempio con del testo
+di prova\footnote{e una nota}. Questo capoverso è piuttosto
 lungo, dal momento che vogliamo mostrare l'effetto
 della composizione su due colonne.
 
 \end{document}
 ```
 
-Aggiungi l'opzione di classe `twocolumn` e osserva come cambia l'aspetto del documento.
+Aggiungi l'opzione di classe `twocolumn` e osserva come cambia 
+l'aspetto del documento.
 
-Cambia il `\section` sopra in `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+Cambia il `\section` nell'esempio sopra in `\chapter` e scopri 
+che effetto hanno le opzioni di classe seguenti quando adoperi 
+la classe `scrreprt`:
 
 - `chapterprefix`
 - `headings=small`
