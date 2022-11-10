@@ -92,24 +92,27 @@ il documento su due colonne.
 
 Le classi principali sono molto stabili, il che le rende anche piuttosto 
 conservative sia nell'aspetto, sia nella varietà di comandi disponibili.
-Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
+Nel tempo, sono state scritte classi più potenti, che ti permettono di 
+modificare l'aspetto del documento senza dover fare le cose a mano
+(argomento di cui parleremo [un po' più avanti](lesson-11)).
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+L'American Mathematical Society fornisce varianti delle classi
+standard (`amsart`, `amsbook`) con un aspetto più tradizionale,
+più simile a quello adoperato nella pubblicazione di riviste 
+di matematica.
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt`, `scrbook`, and `scrlttr2`, while there is
-a single `memoir` class that is most like an extension of `book`.
+Le due classi 'estese' più grandi e popolari sono la suite
+KOMA-Script e la classe `memoir`.
+KOMA-Script offre una serie di classi che 'corrono parallele' 
+a quelle standard: `scrartcl`, `scrreprt`, `scrbook` e 
+`scrlttr2`, mentre c'è una sola classe `memoir` che è più 
+simile a un'estensione di `book`.
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-16), but you can always
-jump ahead!
+Queste classi estese hanno molti hook di personalizzazione, 
+che esploreremo un po' in un esercizio. 
+Se ti stai chiedendo come facciamo a sapere dei ganci che 
+forniscono, potrai scoprirlo [in una lezione successiva](lezione-16), 
+ma puoi sempre darci un'occhiata anche adesso!
 
 ## Videopresentazioni
 
