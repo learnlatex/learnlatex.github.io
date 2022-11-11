@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Including graphics and positioning"
-description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
-toc-anchor-text: "Using graphics"
-toc-description: "Appearance and positioning of graphics."
+title: "Inserimento e collocazione sulla pagina di immagini esterne"
+description: "Questa lezione mostra come inserire immagini esterne nel tuo documento, come cambiarne l'aspetto e come farle 'galleggiare' automaticamente fino al posto giusto nel PDF."
+toc-anchor-text: "Inserire immagini"
+toc-description: "Aspetto e collocazione delle immagini."
 ---
 
-# Including Graphics and positioning
+# Inserimento e collocazione sulla pagina di immagini esterne
 
 <span
   class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
