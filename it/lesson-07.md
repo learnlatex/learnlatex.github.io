@@ -10,10 +10,11 @@ toc-description: "Aspetto e collocazione delle immagini."
 # Inserimento e collocazione sulla pagina di immagini esterne
 
 <span
-  class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
+  class="summary">Questa lezione mostra come inserire immagini esterne nel tuo documento, come cambiarne l'aspetto e come metterle sulla pagina o o farle 'galleggiare' automaticamente.</span>
 
-To bring in graphics from outside LaTeX, use the `graphicx`
-package, which adds the command `\includegraphics` to LaTeX.
+Per importare in LaTeX file grafici esterni, devi caricare
+il pacchetto `graphicx`, che aggiunge a LaTeX il comando
+`\includegraphics`.
 
 ```latex
 \documentclass{article}
@@ -21,24 +22,25 @@ package, which adds the command `\includegraphics` to LaTeX.
 \usepackage{graphicx}
 
 \begin{document}
-This picture
+Questa figura
 \begin{center}
-  \includegraphics[height=2cm]{example-image}
+  \includegraphics[height=2cm]{esempio-immagine}
 \end{center}
-is an imported PDF.
+è un PDF importato.
 \end{document}
 ```
 
-You can include EPS, PNG, JPG, and PDF files.
-If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extension if you do not give one.)
+In un documento LaTeX puoi inserire file EPS, PNG, JPG, e PDF.
+Se possiedi più di una versione di un file grafico, puoi scrivere
+`esempio-imagine.png`, per esempio. (Se non metti alcuna estensione,
+ll pacchetto `graphicx` tenterà di indovinarla.)
 
-You'll notice we've used a new environment here, `center`, to place the image
-horizontally centered on the page. [A bit later](lesson-11), we'll talk more
-about spacing and positioning.
+Avrai notato che qui abbiamo adoperato un nuovo ambiente, `center`, 
+per mettere l'immagine centrata orizzontalmente sulla pagina.
+Diremo qualcosa di più su spaziatura e posizionamento
+[un po' più avanti](lesson-11).
 
-## Altering graphic appearance
+## Modificare l'aspetto del file grafico
 
 The `\includegraphics` command has many options to control
 the size and shape of the included images and to trim down material. Some of
