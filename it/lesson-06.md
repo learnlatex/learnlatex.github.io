@@ -10,7 +10,7 @@ toc-description: "Adoperare i pacchetti e le definizioni."
 # Estendere LaTeX
 
 <span
-  class="summary">Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare le tue esigenze e come modificarne ulteriormente l'aspetto mediante diversi pacchetti e definizioni. Inoltre, ti mostra come definire i tuoi comandi personali.</span>
+  class="summary">Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare esigenze compositive particolari e come modificarne ulteriormente l'aspetto con i diversi pacchetti e le definizioni di comandi personali.</span>
 
 Dopo aver dichiarato una classe, nel preambolo del documento 
 puoi modificare le funzionalità standard di LaTeX aggiungendo 
@@ -23,11 +23,13 @@ uno o più *pacchetti*. I pacchetti possono:
 ## Modificare il funzionamento di LaTeX
 
 L'utente ha ben poche possibilità di personalizzare 
-il 'kernel' (o nucleo) di LaTeX. La naturale 
-modularità del programma, però, prevede pacchetti 
-aggiuntivi che permettono di risolvere problemi molto comuni.
-Il primo consiste nell'adattare il comportamento di LaTeX alla 
-lingua del documento per quanto riguarda sillabazione, punteggiatura, 
+il 'kernel' (o nucleo) di LaTeX, ma grazie ai pacchetti
+aggiuntivi, previsti dalla naturale 
+modularità del programma, si possono risolvere alcuni
+problemi comuni.
+Il primo problema che ti troverai davanti è dato dalla lingua
+del documento, alla quale dovrai adattare il comportamento di LaTeX 
+per quanto riguarda sillabazione, punteggiatura, 
 citazioni, uso delle virgolette, localizzazione, eccetera.
 Lingue diverse hanno regole diverse, perciò è importante dire 
 a LaTeX quale (o quali) adoperare. 
@@ -111,38 +113,46 @@ Nelle lezioni successive vedremo alcuni pacchetti più comuni.
 
 ## Definire comandi personali
 
-Sometimes you need a command specific to your document, either some
-functionality not found in the available packages or simply a command
-to enter a common expression that is used multiple times.
+Ti potrà succedere di aver bisogno di un comando specifico per il
+tuo documento, o perché _quella_ funzionalità che ti serve non è
+contemplata dai pacchetti disponibili, o, più semplicemente,
+per inserire più facilmente nel testo un'espressione 
+che devi scrivere numerose volte.
 
-The following example shows a command to produce keywords with a
-specific style applied.
+L'esempio seguente mostra come definire un comando per stampare 
+parole chiave in uno stile specifico (il nero corsivo, in questo
+caso).
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\newcommand\kw[1]{\textbf{\itshape #1}}
+\newcommand\kw[1]{\textbf{\itshape #1}} % definizione del comando \kw
 
 \begin{document}
 
-Something about \kw{apples} and \kw{oranges}.
+Qualcosa a proposito di \kw{mele} e \kw{arance}.
 
 \end{document}
 ```
 
-In the definition `[1]` denotes the number of arguments (here one)
-and `#1` denotes the first argument that is supplied
-(`apples` or `oranges` in this example). You may have up to nine
-arguments, but it is usually best to have just one argument, or
-sometimes none at all.
+Nella definizione, `[1]` il numero degli argomenti che
+prenderà il comando (uno, in questo caso) e `#1` indica 
+l'argomento che gli viene passato
+(`mele` o `arance`, in questo esempio). 
+Un comando può prendere fino a nove argomenti, ma di solito
+è meglio definire comandi a un solo argomento, o talvolta
+senza del tutto addirittura.
 
-Defining commands does not just reduce the typing required to produce
-a document. It helps to separate out the styling information. If it is
-decided to use a different style for keywords, rather than having to
-edit the entire document, you simply need to use a different
-definition. Here we load the `xcolor` package to provide colors, and
-use blue in place of bold in the formatting.
+
+La definizione dei comandi non solo riduce la quantità di
+caratteri da digitare. Cosa più utile, aiuta a separare 
+il contenuto dalla forma. Se per qualche motivo si decide 
+di volere le parole chiave in uno stile diverso, invece di 
+modificare tutte le loro occorrenze nell'intero documento, 
+basterà modificarne la definizione. 
+Nell'esempio seguente carichiamo il pacchetto `xcolor` per 
+aggiungere i colori e adoperiamo il blu anziché il nero.
 
 ```latex
 \documentclass{article}
@@ -154,27 +164,29 @@ use blue in place of bold in the formatting.
 
 \begin{document}
 
-Something about \kw{apples} and \kw{oranges}.
+Qualcosa a proposito di \kw{mele} e \kw{arance}.
 
 \end{document}
 ```
-
-Beware that defining too many commands or defining commands with
-multiple arguments may make the document source harder  to understand
-as it is using an unfamiliar syntax. The ability to define
-document-specific commands should be used with care.
+Attenzione, però: definire troppi comandi o definirne con 
+numerosi argomenti può rendere il file sorgente difficile
+da comprendere, perché la sintassi non è familiare.
+La possibilità di definire comandi _ad hoc_ per un documento,
+quindi, dovrebbe essere sfruttata con parsimonia.
 
 ## Esercizi
 
-Try out writing some text in other European languages and see how `babel`
-affects hyphenation: you can probably find some text on the internet, and guess
-the right options.
+Prova a scrivere del testo in altre lingue europee e osserva come `babel`
+influisce sulla sillabazione: probabilmente puoi trovare del testo su Internet 
+e indovinare le opzioni corrette da passare al pacchetto.
 
-Try altering the margins in the `geometry` example. You can set the individual
-`top`, `bottom`, `left` and `right` margins separately using a comma-separated
-list.
+Prova a modificare i margini nell'esempio con `geometry`. Puoi impostare
+separatamente i singoli margini `top`, `bottom`, `left` e `right` 
+dichiarando le opzioni in un elenco e separandole con la virgola.
 
-Try loading the `lipsum` package and then add the command `\lipsum` to your
-document. Can you guess why this package is useful for making examples?
+Prova a caricare il pacchetto `lipsum` e aggiungi al tuo documento 
+il comando `\lipsum`. 
+Riesci a indovinare perché questo pacchetto è utile per scrivere
+esempi?
 
-Try altering the definition of `\kw` to achieve a different style.
+Prova a modificare la definizione di `\kw` per ottenere uno stile diverso.
