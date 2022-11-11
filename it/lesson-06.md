@@ -4,7 +4,7 @@ lang: "it"
 title: "Estendere LaTeX mediante pacchetti e definizioni"
 description: "Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare le tue esigenze e come modificare l'aspetto dei documenti mediante diversi pacchetti, e ti mostra come puoi definire i tuoi comandi personali."
 toc-anchor-text: "Estendere LaTeX"
-toc-description: "Adoperare i pacchetti e le definizioni."
+toc-description: "Pacchetti di stile e definizioni di nuovi comandi."
 ---
 
 # Estendere LaTeX
