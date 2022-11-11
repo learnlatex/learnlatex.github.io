@@ -24,7 +24,7 @@ il pacchetto `graphicx`, che aggiunge a LaTeX il comando
 \begin{document}
 Questa figura
 \begin{center}
-  \includegraphics[height=2cm]{esempio-immagine}
+  \includegraphics[height=2cm]{example-image}
 \end{center}
 è un PDF importato.
 \end{document}
@@ -42,18 +42,21 @@ Diremo qualcosa di più su spaziatura e posizionamento
 
 ## Modificare l'aspetto del file grafico
 
-The `\includegraphics` command has many options to control
-the size and shape of the included images and to trim down material. Some of
-these are used a lot, so they are worth being aware of.
+Il comando `\includegraphics` prevede molte opzioni per controllare
+la grandezza e la forma delle immagini e per rifilare il materiale. 
+Alcune di esse sono molto usate, per cui vale la pena conoscerle.
 
-The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` or `\linewidth` and
-`\textheight`. The difference between `\textwidth` and `\linewidth` is subtle
-and often the result is the same. `\textwidth` is the width of the text block on
-the physical page, whereas `\linewidth` is the _current_ width, which might
-locally be different (the difference is most obvious with the class option
-`twocolumn`). LaTeX will automatically scale the image so that the aspect
-ratio stays correct.
+La cosa più ovvia da impostare è la `width` (larghezza) o la `height` 
+(altezza) di un'immagine, che spesso vengono indicate relativamente
+alla `\textwidth` o alla `\linewidth` e alla `\textheight` 
+(altezza della gabbia del testo). La differenza tra `\textwidth` 
+e `\linewidth` è sottile, tanto che spesso il risultato è lo stesso. 
+`\textwidth` è la larghezza della gabbia del testo sulla pagina fisica, 
+mentre `\linewidth` è la larghezza _corrente_, che potrebbe essere
+localmente diversa dalla prima (tale differenza è più evidente 
+dichiarando l'opzione di classe `twocolumn`). 
+LaTeX ridimensionerà automaticamente l'immagine in modo rispettandone
+le proporzioni.
 
 ```latex
 \documentclass{article}
@@ -64,15 +67,17 @@ ratio stays correct.
 \begin{center}
   \includegraphics[height = 0.5\textheight]{example-image}
 \end{center}
-Some text
+Un po' di testo
 \begin{center}
   \includegraphics[width = 0.5\textwidth]{example-image}
 \end{center}
 \end{document}
 ```
 
-You can also `scale` images, or rotate them by an `angle`. The other thing you
-might want to do is to `clip` and `trim` an image.
+Puoi anche scalare le immagini con l'opzione `scale` o ruotarle
+sulla pagina di un certo angolo con `angle`. 
+Le altre cose di cui potresti avere bisogno sono il ritaglio 
+(opzione `clip`) e il rifilo (opzione `trim`) di un'immagine.
 
 ```latex
 \documentclass{article}
@@ -86,12 +91,15 @@ might want to do is to `clip` and `trim` an image.
 \end{document}
 ```
 
-## Making images float
+## Far ‘galleggiare‘ le immagini
 
-Traditionally in typesetting, particularly with technical documents,
-graphics may move to another spot in the document.
-This is called a *float*. Images are normally included as floats so they do
-not leave large gaps in the page.
+Tradizionalmente, nella composizione dei documenti e specialmente 
+di quelli tecnici e scientifici, le immagini e le tabelle possono finire 
+più in là nel documento o essere raggruppate in pagine a loro
+dedicate per riempire meglio lo spazio disponibile e non lasciare
+grandi vuoti sulle pagine.
+Immagini e tabelle di questo tipo prendono il nome di _oggetti galleggianti_
+(_float_, in inglese).
 
 ```latex
 \documentclass{article}
