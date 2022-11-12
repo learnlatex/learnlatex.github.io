@@ -1,46 +1,52 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Tables"
-description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
-toc-anchor-text: "LaTeX tables"
-toc-description: "Fundamentals of working with tables."
+title: "Tabelle"
+description: "Questa lezione mostra come comporre le tabelle in LaTeX, impostare l'allineamento delle celle, aggiungere filetti e unire le celle."
+toc-anchor-text: "Tabelle con LaTeX"
+toc-description: "Nozioni fondamentali per comporre le tabelle."
 ---
 
-# Tables
+# Tabelle
 
 <span
-  class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>
+  class="summary">Questa lezione mostra come comporre le tabelle in LaTeX, impostare l'allineamento delle celle, aggiungere filetti e unire le celle.</span>
 
-Tables in LaTeX are set using the `tabular` environment. This lesson will assume
-you load the `array` package, which adds more functionality to LaTeX tables, and
-which is not built into the LaTeX kernel only for historic reasons. So put the
-following in your preamble and we're good to go:
-
+In LaTeX, le tabelle sono costruite nell'ambiente `tabular`. 
+In questa lezione assumiamo il caricamento del pacchetto `array`,
+che aggiunge ulteriori funzionalità alle tabelle
+standard, e che non è integrato nel kernel
+di LaTeX solo per ragioni storiche.
+Scrivi dunque la riga seguente nel tuo preambolo
+e saremo pronti per incominciare:
 
 ```latex
 \usepackage{array}
 ```
 {: .noedit :}
 
-In order to typeset a `tabular` we have to tell LaTeX how many columns will be
-needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names,
-called preamble-tokens. The available column types are:
+Per comporre una tabella dentro `tabular`, devi dire
+a LaTeX di quante colonne hai bisogno e come debbono
+essere allineate. Questa dichiarazione viene fatta
+in un argomento obbligatorio 
+&ndash; spesso chiamato _preambolo_ &ndash;
+di `tabular`,
+nel quale le colonne sono specificate con nomi di
+una sola lettera chiamati _preamble-token_.
+I tipi di colonne disponibili sono i seguenti:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type       | description |
-| ---        |:-- |
-| `l`        | left aligned column |
-| `c`        | centered column |
-| `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`; the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
-| `b{width}` | like `p`, but bottom aligned |
-| `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
-| `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
+| tipo                         | descrizione |
+| ---                          |:-- |
+| `l`                          | colonna allineata a sinistra |
+| `c`                          | colonna centrata |
+| `r`                          | colonna allineata a destra |
+| `p{larghezza}`               | colonna di `larghezza` fissa; il testo andrà a capo automaticamente e sarà giustificato |
+| `m{larghezza}`               | come `p`, ma allineato in alto rispetto al resto della riga |
+| `b{larghezza}`               | come `p`, ma allineato in basso |
+| `w{allineamento}{larghezza}` | stampa il contenuto con una `larghezza` fissa, silently overprinting if things get larger. Puoi scegliere l'allineamento orizzontale con `l`, `c`, o `r`. |
+| `W{allineamento}{larghezza}` | come `w`, ma emetterà un avviso di `overfull box`se il contenuto è troppo largo |
 
 In addition, a few other preamble-tokens are available which don't define a
 column but might be useful as well:
