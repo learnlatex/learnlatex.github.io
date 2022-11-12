@@ -128,10 +128,10 @@ da `Prova di collocamento` all'inizio della
 seconda pagina, perché non c'è abbastanza spazio
 nella parte inferiore della prima pagina.
 L'opzione `ht` condiziona la posizione in cui
-LaTeX può mettere l'immagine: lo specificatore
-`h` chiede a LaTeX di metterla esattamente nel punto
-in cui sta nel sorgente (se possibile), lo specificatore
-`t` gli chiede di metterla all'inizio di una pagina.
+LaTeX può mettere l'immagine: con lo specificatore
+`h` gli chiediamo di metterla esattamente nel punto
+in cui sta nel sorgente (se possibile); con lo specificatore
+`t` gli chiediamo di metterla all'inizio di una pagina.
 Puoi indicare fino a quattro specificatori di posizione:
 
 - `h` qui ('here') se possibile
@@ -143,8 +143,8 @@ Puoi indicare fino a quattro specificatori di posizione:
 incrociati che puntino agli oggetti galleggianti.
 
 Probabilmente avrai notato che qui abbiamo centrato
-l'immagine con `\centering` invece dell'ambiente
-`center`. Se vuoi centrare orizzontalmente il contenuto
+l'immagine con `\centering` e non con l'ambiente
+`center`. Per centrare orizzontalmente il contenuto
 di un ambiente galleggiante, dovresti adoperare `\centering`,
 per evitare che `center` aggiunga dell'ulteriore spazio
 verticale a quello già inserito dall'ambiente galleggiante.
