@@ -3,8 +3,8 @@ layout: "lesson"
 lang: "it"
 title: "Inserimento e collocazione sulla pagina di immagini esterne"
 description: "Questa lezione mostra come inserire immagini esterne nel tuo documento, come cambiarne l'aspetto e come farle 'galleggiare' automaticamente fino al posto giusto nel PDF."
-toc-anchor-text: "Inserire immagini"
-toc-description: "Aspetto e collocazione delle immagini."
+toc-anchor-text: "Inserimento delle immagini"
+toc-description: "Impostare l'aspetto e la collocazione delle immagini."
 ---
 
 # Inserimento e collocazione sulla pagina di immagini esterne
