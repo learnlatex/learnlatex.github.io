@@ -105,37 +105,42 @@ Immagini e tabelle di questo tipo prendono il nome di _oggetti galleggianti_
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummy text as filler
+\usepackage{lipsum}  % genera testo fittizio come riempitivo
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
 
-Test location.
+\lipsum[1-4] % vogliamo solo qualche capoverso di riempimento
+
+Prova di collocamento.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image-a.png}
-  \caption{An example image}
+  \caption{Un'immagine d'esempio}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % ancora qualche capoverso di riempimento
+
 \end{document}
 ```
 
-Here LaTeX moves the graphic and the caption
-away from the `Test location` text to the top of the second page,
-because there isn't room for it on the bottom of the first page.
-The `ht` influences where LaTeX can place the float; these two
-letters mean that it can go where it is in the source (next to
-`Test location`) or to the top of a page. You can use up to four position
-specifiers
+Qui LaTeX sposta l'immagine e la didascalia
+da `Prova di collocamento` all'inizio della
+seconda pagina, perché non c'è abbastanza spazio
+nella parte inferiore della prima pagina.
+L'opzione `ht` condiziona la posizione in cui
+LaTeX può mettere l'immagine: lo specificatore
+`h` chiede a LaTeX di metterla esattamente nel punto
+in cui sta nel sorgente (se possibile), lo specificatore
+`t` gli chiede di metterla all'inizio di una pagina.
+Puoi indicare fino a quattro specificatori di posizione:
 
-- `h` 'Here' (if possible)
-- `t` Top of the page
-- `b` Bottom of the page
-- `p` A dedicated page only for floats
+- `h` qui ('here') se possibile
+- `t` all'inizio ('top') di una pagina
+- `b` alla fine ('bottom') di una pagina
+- `p` in una pagina di soli oggetti galleggianti
 
-[Later](lesson-09), we will see how to cross-reference floats so you can point
-to them from your text.
+[Più avanti](lesson-09), vedremo come creare riferimenti
+incrociati che puntino agli oggetti galleggianti.
 
 You'll probably spot that we've centered the image here using `\centering`
 rather than the `center` environment. Inside a float, you should use
