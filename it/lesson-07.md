@@ -142,22 +142,31 @@ Puoi indicare fino a quattro specificatori di posizione:
 [Più avanti](lesson-09), vedremo come creare riferimenti
 incrociati che puntino agli oggetti galleggianti.
 
-You'll probably spot that we've centered the image here using `\centering`
-rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally center content; this avoids both
-the float and `center` environment adding extra vertical space.
+Probabilmente avrai notato che qui abbiamo centrato
+l'immagine con `\centering` invece dell'ambiente
+`center`. Se vuoi centrare orizzontalmente il contenuto
+di un ambiente galleggiante, dovresti adoperare `\centering`,
+per evitare che `center` aggiunga dell'ulteriore spazio
+verticale a quello già inserito dall'ambiente galleggiante.
 
-## Exercises
+## Esercizi
 
-Try including an image you have created, replacing the 'standard' ones we have
-used in the demonstration.
+Prova a inserire nel documento un'immagine creata da te,
+sostituendola a quelle ‘standard’ che abbiamo adoperato
+negli esempi.
 
-Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+Esplora che cosa puoi fare con le chiavi `height`, `width`, `angle` 
+e `scale`.
+
+Adopera la chiave `width` per impostare la dimensione di 
+un file grafico relativo a `\textwidth` prima e a 
+`\linewidth` poi. Osserva come si comportano con o senza 
+l'opzione `twocolumn`.
 
 Use the `width` key to set the size of a graphic relative to `\textwidth` and
 another graphic relative to `\linewidth`. Try out how they behave with or
 without the `twocolumn` option.
 
-Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different
-specifiers interact?
+Adopera `lipsum` per comporre un esempio ragionevolmente
+lungo, poi prova a inserire i float con differenti
+specificatori di posizione. Come interagiscono tra loro?
