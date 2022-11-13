@@ -126,12 +126,14 @@ Osserva che cosa succede nell'esempio seguente:
 ```
 <!-- {% endraw %} -->
 
-The issue is that the `l` type column typesets its contents in a single row at
-its natural width, even if there is a page
-border in the way. To overcome this you can use the `p` column. This
-typesets its contents as paragraphs with the width you specify as an argument
-and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare the above outcome to the following:
+Il problema è che una colonna `l` stampa il proprio contenuto 
+in una sola riga alla sua larghezza naturale, anche se in mezzo
+c'è il bordo di una pagina.
+Per evitare la cosa, puoi adoperare la colonna `p`, che stampa
+il proprio contenuto come capoversi della larghezza da te 
+specificata nell'argomento e allineati verticalmente in alto 
+(ciò che vorrai la grande maggioranza delle volte).
+Confronta il risultato dell'esempio precedente con questo:
 
 <!-- {% raw %} -->
 ```latex
@@ -141,24 +143,26 @@ time. Compare the above outcome to the following:
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
-  Animal & Description \\
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  Animale  & Descrizione \\
+  cane     & Il cane è un membro del genere Canis, che fa parte dei canidi 
+             simili ai lupi, ed è il carnivoro terrestre più largamente 
+             diffuso. \\  
+  gatto    & Il gatto è una specie domestica di piccolo mammifero carnivoro. 
+             È l'unica specie domestica della famiglia Felidae ed è spesso 
+             indicato come il gatto domestico per distinguerlo dai membri 
+             selvatici della famiglia. \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it is cumbersome to put that
-many column definitions in the preamble.  You can make things easier
-by using `*{num}{string}`, which repeats the `string`  `num` times.
-So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
-table of this lesson with the newly learned syntax:
+Se la tua tabella ha molte colonne dello stesso tipo, dichiararle una
+alla volta nel preambolo può essere farraginoso. 
+È molto più veloce dare `*{numero}{stringa}`, che ripete la `stringa` per 
+`numero` volte.
+In altre parole, `*{6}{c}` equivale a scrivere `cccccc`. 
+Per mostrarti come funziona la cosa, ecco di nuovo la prima tabella
+di questa lezione con la sintassi appena imparata:
 
 <!-- {% raw %} -->
 ```latex
@@ -168,28 +172,33 @@ table of this lesson with the newly learned syntax:
 
 \begin{document}
 \begin{tabular}{*{3}{l}}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animale & Cibo   & Taglia  \\
+  cane    & carne  & media   \\
+  cavallo & fieno  & grande  \\
+  rana    & mosche & piccola \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-## Adding rules (lines)
+## Aggiungere linee
 
-A word of advice prior to introducing rules; lines should be used really
-sparsely in tables, and normally vertical ones look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first. For the sake of completeness the standard
-lines are shown in the [more-info](more-08) page.
+Un consiglio, prima di introdurre le linee (o _filetti_): i filetti nelle
+tabelle andrebbero adoperati con grande parsimonia, e di solito quelli 
+verticali producono un risultato non professionale.
+Per ottenere tabelle di aspetto professionale, infatti, è meglio evitare
+i filetti standard di LaTeX e adoperare al loro posto quelli messi a
+disposizione dal pacchetto `booktabs`, motivo per cui lo descriviamo
+qui come prima cosa.
+Per completezza, i filetti standard sono trattati nella
+[pagina di approfondimento](more-08).
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
+`booktabs` mette a disposizione quattro tipi diversi di filetto, ciascuno
+dei quali si ottiene con un comando.
+Questi comandi debbono essere dati come prima cosa all'inizio di una riga 
+o seguire immediatamente un altro filetto.
+I tre comandi più adoperati sono `\toprule`, `\midrule` e
+`\bottomrule`. Il loro nome indica chiaramente dove vanno dati:
 
 <!-- {% raw %} -->
 ```latex
@@ -202,11 +211,11 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animale & Cibo   & Taglia  \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  cane    & carne  & media   \\
+  cavallo & fieno  & grande  \\
+  rana    & mosche & piccola \\
   \bottomrule
 \end{tabular}
 \end{document}
