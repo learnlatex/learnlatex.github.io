@@ -59,7 +59,7 @@ non definiscono una colonna ma potrebbero ugualmente essere utili:
 | `*{numero}{stringa}` | ripete la `stringa` per `numero` volte nel preambolo. Utile per dichiarare più colonne identiche. |
 | `>{decl}` | mette `decl` prima del contenuto di ogni cella nella colonna successiva (utile, per esempio, per impostare un font differente per la colonna in questione) |
 | `<{decl}` | mette `decl` dopo il contenuto di ogni cella nella colonna precedente |
-| <span>`|`</span>  | aggiunge un filetto verticale |
+| `|`       | aggiunge un filetto verticale |
 | `@{decl}` | sostituisce lo spazio tra due colonne con `decl` |
 | `!{decl}` | aggiunge `decl` al centro dello spazio esistente |
 
