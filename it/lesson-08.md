@@ -100,8 +100,9 @@ il codice sorgente.
 
 <!-- {% endraw %} -->
 
-If a table column contains a lot of text you will have issues to get that
-right with only `l`, `c`, and `r`. See what happens in the following example:
+Se una colonna contiene molto testo, il risultato 
+con i semplici `l`, `c` e `r` non sarà buono. 
+Osserva che cosa succede nell'esempio seguente:
 
 <!-- {% raw %} -->
 
@@ -112,14 +113,14 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 
 \begin{document}
 \begin{tabular}{cl}
-  Animal & Description \\
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  Animale  & Descrizione \\
+  cane     & Il cane è un membro del genere Canis, che fa parte dei canidi 
+             simili ai lupi, ed è il carnivoro terrestre più largamente 
+             diffuso. \\  
+  gatto    & Il gatto è una specie domestica di piccolo mammifero carnivoro. 
+             È l'unica specie domestica della famiglia Felidae ed è spesso 
+             indicato come il gatto domestico per distinguerlo dai membri 
+             selvatici della famiglia. \\
 \end{tabular}
 \end{document}
 ```
