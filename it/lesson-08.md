@@ -222,11 +222,12 @@ I tre comandi più adoperati sono `\toprule`, `\midrule` e
 ```
 <!-- {% endraw %} -->
 
-The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
-draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
-Even if you only want to draw the rule for a single
-column you need to specify that as a range (with both numbers matching).
+Il quarto filetto definito da `booktabs` è `\cmidrule`. Può essere adoperato
+per disegnare una linea che non copre l'intera larghezza della tabella, ma solo
+un determinato intervallo tra colonne. Un intervallo tra colonne si indica
+come un intervallo numerico: `{`_numero_`-`_numero_`}`.
+Dovrai indicare un intervallo anche se vuoi che il filetto sia largo
+una colonna soltanto (in questo caso, i due numeri saranno uguali).
 
 <!-- {% raw %} -->
 ```latex
@@ -238,22 +239,23 @@ column you need to specify that as a range (with both numbers matching).
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animale & Cibo   & Taglia  \\
   \midrule
-  dog    & meat  & medium \\
+  cane    & carne  & media   \\
   \cmidrule{1-2}
-  horse  & hay   & large  \\
+  cavallo & fieno  & grande  \\
   \cmidrule{1-1}
   \cmidrule{3-3}
-  frog   & flies & small  \\
+  rana    & mosche & piccola \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-There is another useful feature of `\cmidrule`. You can shorten it on either end
-with an optional argument enclosed in parentheses:
+C'è un'altra caratteristica utile di `\cmidrule`. 
+Puoi accorciarlo a entrambe le estremità con un argomento facoltativo
+tra parentesi tonde:
 
 <!-- {% raw %} -->
 ```latex
@@ -265,27 +267,30 @@ with an optional argument enclosed in parentheses:
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animale & Cibo   & Taglia  \\
   \midrule
-  dog    & meat  & medium \\
+  cane    & carne  & media   \\
   \cmidrule{1-2}
-  horse  & hay   & large  \\
+  cavallo & fieno  & grande  \\
   \cmidrule(r){1-1}
   \cmidrule(rl){2-2}
   \cmidrule(l){3-3}
-  frog   & flies & small  \\
+  rana    & mosche & piccola \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
-and **l**eft end, respectively.
+Hai sicuramente indovinato che `r` e `l` indicano che il filetto
+è accorciato alla sua estremità destra (_**r**ight_)
+e sinistra (_**l**eft_) rispettivamente.
 
-Sometimes a rule would be too much of a separation for two rows but to get
-across the meaning more clearly you want to separate them by some means. In this
-case you can use `\addlinespace` to insert a small skip.
+A volte un filetto può essere una separazione eccessiva tra due righe, 
+ma per capire più chiaramente il significato del testo è comunque necessario 
+separarle in qualche modo.
+In casi come questo, puoi dare `\addlinespace` per inserire un piccolo spazio
+verticale.
 
 <!-- {% raw %} -->
 ```latex
@@ -297,16 +302,15 @@ case you can use `\addlinespace` to insert a small skip.
 \begin{document}
 \begin{tabular}{cp{9cm}}
   \toprule
-  Animal & Description \\
-  \midrule
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
+  Animale  & Descrizione \\
+  cane     & Il cane è un membro del genere Canis, che fa parte dei canidi 
+             simili ai lupi, ed è il carnivoro terrestre più largamente 
+             diffuso. \\  
   \addlinespace
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  gatto    & Il gatto è una specie domestica di piccolo mammifero carnivoro. 
+             È l'unica specie domestica della famiglia Felidae ed è spesso 
+             indicato come il gatto domestico per distinguerlo dai membri 
+             selvatici della famiglia. \\
   \bottomrule
 \end{tabular}
 \end{document}
