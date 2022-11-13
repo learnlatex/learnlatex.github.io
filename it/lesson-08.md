@@ -57,11 +57,11 @@ non definiscono una colonna ma potrebbero ugualmente essere utili:
 | tipo | descrizione |
 | ---  | :-- |
 | `*{numero}{stringa}` | ripete la `stringa` per `numero` volte nel preambolo. Utile per dichiarare più colonne identiche. |
-| `>{decl}` | mette `decl` prima del contenuto di ogni cella nella colonna successiva (utile, per esempio, per impostare un font differente per la colonna in questione) |
-| `<{decl}` | mette `decl` dopo il contenuto di ogni cella nella colonna precedente |
+| `>{dichiarazione}` | mette la `dichiarazione` prima del contenuto di ogni cella nella colonna successiva (utile, per esempio, per impostare un font differente per la colonna in questione) |
+| `<{dichiarazione}` | mette la `dichiarazione` dopo il contenuto di ogni cella nella colonna precedente |
 | <span>`|`</span> | aggiunge un filetto verticale |
-| `@{decl}` | sostituisce lo spazio tra due colonne con `decl` |
-| `!{decl}` | aggiunge `decl` al centro dello spazio tra due colonne |
+| `@{dichiarazione}` | sostituisce lo spazio tra due colonne con la `dichiarazione` |
+| `!{dichiarazione}` | aggiunge la `dichiarazione` al centro dello spazio tra due colonne |
 
 Le due tabelle qui sopra mostrano tutti i tipi di colonna disponibili
 in LaTeX standard e con il pacchetto `array`.
@@ -318,18 +318,19 @@ verticale.
 <!-- {% endraw %} -->
 
 
-## Merging cells
+## Unire le celle
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
-has to be used as the first thing in a cell. `\multicolumn` takes three
-arguments:
+In LaTeX, puoi unire le celle orizzontalmente con il comando `\multicolumn`,
+che va dato come prima cosa in una cella. 
+`\multicolumn` prende tre argomenti:
 
-1. The number of cells which should be merged
-2. The alignment of the merged cell
-3. The contents of the merged cell
+1. il numero di celle da unire
+2. l'allineamento della cella risultante
+3. il contenuto della cella risultante
 
-The alignment can contain anything legal in a `tabular`'s preamble, but _only a
-single column type_.
+Il secondo argomento può contenere qualsiasi cosa
+legale nel preambolo di `tabular`, ma 
+_un solo tipo di colonna_.
 
 <!-- {% raw %} -->
 ```latex
@@ -342,12 +343,12 @@ single column type_.
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Animale   & Cibo   & Taglia  \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
-  fuath  & \multicolumn{2}{c}{unknown} \\
+  cane      & carne  & media   \\
+  cavallo   & fieno  & grande  \\
+  rana      & mosche & piccola \\
+  furlong   & \multicolumn{2}{c}{sconosciuto} \\
   \bottomrule
 \end{tabular}
 \end{document}
