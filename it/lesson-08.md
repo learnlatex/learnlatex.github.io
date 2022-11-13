@@ -61,22 +61,26 @@ non definiscono una colonna ma potrebbero ugualmente essere utili:
 | `<{decl}` | mette `decl` dopo il contenuto di ogni cella nella colonna precedente |
 | <span>`|`</span> | aggiunge un filetto verticale |
 | `@{decl}` | sostituisce lo spazio tra due colonne con `decl` |
-| `!{decl}` | aggiunge `decl` al centro dello spazio esistente |
+| `!{decl}` | aggiunge `decl` al centro dello spazio tra due colonne |
 
-These two tables list all the available column types from LaTeX and the `array`
-package. A few additional column types, from different packages, are presented
-in the [further details page](more-08) for this lesson.
+Le due tabelle qui sopra mostrano tutti i tipi di colonna disponibili
+in LaTeX standard e con il pacchetto `array`.
+Ulteriori tipi di colonna messi a disposizione dai diversi pacchetti
+vengono presentati nella [pagina di approfondimento](more-08) di questa 
+lezione.
 
-The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centered columns, you'd use
-`ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
+Le colonne `l`, `c` e `r` avranno la larghezza naturale della cella più larga.
+Vanno dichiarate tutte le colonne di cui hai bisogno: se ti servono tre colonne
+centrate, per esempio, nel preambolo della tabella scriverai `ccc` 
+(o `c c c`, dato che gli spazi vengono ignorati).
 
-In a table body columns are separated using an ampersand `&` and a new row is
-started using `\\`.
+Nel corpo della tabella, le colonne si separano con il carattere `&`
+e si incomincia una nuova riga con `\\`.
 
-We have everything we need for our first table. In the following code the
-`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
-source.
+Ora sappiamo tutto ciò che ci serve per la nostra prima tabella. 
+Nel codice seguente, `&` e `\\` sono incolonnati. 
+Non è necessario farlo, con LaTeX, ma ti aiuterà a leggere
+il codice sorgente.
 
 <!-- {% raw %} -->
 ```latex
@@ -86,10 +90,10 @@ source.
 
 \begin{document}
 \begin{tabular}{lll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animale & Cibo   & Taglia  \\
+  cane    & carne  & media   \\
+  cavallo & fieno  & grande  \\
+  rana    & mosche & piccola \\
 \end{tabular}
 \end{document}
 ```
