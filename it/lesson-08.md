@@ -12,27 +12,28 @@ toc-description: "Nozioni fondamentali per comporre le tabelle."
 <span
   class="summary">Questa lezione mostra come comporre le tabelle in LaTeX, impostare l'allineamento delle celle, aggiungere filetti e unire le celle.</span>
 
-In LaTeX, le tabelle sono costruite nell'ambiente `tabular`. 
-In questa lezione assumiamo il caricamento del pacchetto `array`,
-che aggiunge ulteriori funzionalità alle tabelle
-standard, e che non è integrato nel kernel
-di LaTeX solo per ragioni storiche.
+In LaTeX, le tabelle sono costruite nell'ambiente 
+`tabular`. 
+In questa lezione assumiamo il caricamento del 
+pacchetto `array`, che aggiunge ulteriori 
+funzionalità alle tabelle standard, e che non è 
+integrato nel kernel di LaTeX solo per ragioni 
+storiche.
 Scrivi dunque la riga seguente nel tuo preambolo
-e saremo pronti per incominciare:
+e sarai pronto per incominciare:
 
 ```latex
 \usepackage{array}
 ```
 {: .noedit :}
 
-Per comporre una tabella dentro `tabular`, devi dire
-a LaTeX di quante colonne hai bisogno e come debbono
-essere allineate. Questa dichiarazione viene fatta
+Per comporre una tabella dentro `tabular`, bisogna dire
+a LaTeX di quante colonne si ha bisogno e come debbono
+essere allineate. Questa dichiarazione va fatta
 in un argomento obbligatorio 
 &ndash; spesso chiamato _preambolo_ &ndash;
-di `tabular`,
-nel quale le colonne sono specificate con nomi di
-una sola lettera chiamati _preamble-token_.
+di `tabular`, nel quale le colonne vengono specificate 
+con nomi di una sola lettera, chiamati _preamble-token_.
 I tipi di colonne disponibili sono i seguenti:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
@@ -42,25 +43,25 @@ I tipi di colonne disponibili sono i seguenti:
 | `l`                          | colonna allineata a sinistra |
 | `c`                          | colonna centrata |
 | `r`                          | colonna allineata a destra |
-| `p{larghezza}`               | colonna di `larghezza` fissa; il testo andrà a capo automaticamente e sarà giustificato |
-| `m{larghezza}`               | come `p`, ma allineato in alto rispetto al resto della riga |
-| `b{larghezza}`               | come `p`, ma allineato in basso |
-| `w{allineamento}{larghezza}` | stampa il contenuto con una `larghezza` fissa, silently overprinting if things get larger. Puoi scegliere l'allineamento orizzontale con `l`, `c`, o `r`. |
-| `W{allineamento}{larghezza}` | come `w`, ma emetterà un avviso di `overfull box`se il contenuto è troppo largo |
+| `p{larghezza}`               | colonna di `larghezza` fissa; il testo va a capo automaticamente ed è giustificato |
+| `m{larghezza}`               | come `p`, ma messo in alto rispetto al resto della riga |
+| `b{larghezza}`               | come `p`, ma messo in basso |
+| `w{allineamento}{larghezza}` | produce una colonna di `larghezza` fissa e `allineamento` `l`, `c` o `r`; se troppo largo, il contenuto della colonna finisce nel margine. |
+| `W{allineamento}{larghezza}` | come `w`, ma se il contenuto è troppo largo, emette un avviso di `overfull box`. |
 
-In addition, a few other preamble-tokens are available which don't define a
-column but might be useful as well:
+Oltre a quelli appena visti, sono disponibili alcuni altri _preamble-token_ che 
+non definiscono una colonna ma potrebbero ugualmente essere utili:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type | description |
+| tipo | descrizione |
 | ---  | :-- |
-| `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
-| `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
-| `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
-| <span>`|`</span>  | add a vertical rule |
-| `@{decl}` | replace the space between two columns with `decl` |
-| `!{decl}` | add `decl` in the center of the existing space |
+| `*{numero}{stringa}` | ripete la `stringa` per `numero` volte nel preambolo. Utile per dichiarare più colonne identiche. |
+| `>{decl}` | mette `decl` prima del contenuto di ogni cella nella colonna successiva (utile, per esempio, per impostare un font differente per la colonna in questione) |
+| `<{decl}` | mette `decl` dopo il contenuto di ogni cella nella colonna precedente |
+| <span>`|`</span>  | aggiunge un filetto verticale |
+| `@{decl}` | sostituisce lo spazio tra due colonne con `decl` |
+| `!{decl}` | aggiunge `decl` al centro dello spazio esistente |
 
 These two tables list all the available column types from LaTeX and the `array`
 package. A few additional column types, from different packages, are presented
