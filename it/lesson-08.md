@@ -287,10 +287,10 @@ Hai sicuramente indovinato che `r` e `l` indicano che il filetto
 e sinistra (_**l**eft_) rispettivamente.
 
 A volte un filetto può essere una separazione eccessiva tra due righe, 
-ma per capire più chiaramente il significato del testo è comunque necessario 
-separarle in qualche modo.
-In casi come questo, puoi dare `\addlinespace` per inserire un piccolo spazio
-verticale.
+ma ti accorgi che la tabella sarebbe più chiara  
+distinguendole comunque in qualche modo.
+In casi come questo, puoi inserire un piccolo spazio verticale 
+con il comando `\addlinespace`.
 
 <!-- {% raw %} -->
 ```latex
@@ -328,8 +328,8 @@ che va dato come prima cosa in una cella.
 2. l'allineamento della cella risultante
 3. il contenuto della cella risultante
 
-Il secondo argomento può contenere qualsiasi cosa
-legale nel preambolo di `tabular`, ma 
+Il secondo argomento può contenere qualsiasi cosa sia
+legale nel preambolo di `tabular`, ma, fa' attenzione,
 _un solo tipo di colonna_.
 
 <!-- {% raw %} -->
@@ -355,11 +355,12 @@ _un solo tipo di colonna_.
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent the
-application of whatever you defined in the table preamble for the
-current column.  The following uses this method to center the
-table's head row:
-
+Puoi adoperare `\multicolumn` anche in una singola cella 
+per evitare che LaTeX applichi alla colonna in questione 
+quanto hai definito nel preambolo della tabella.
+Nell'esempio seguente, il comando è stato adoperato
+per centrare le intestazioni di colonne altrimenti
+allineate a sinistra:
 
 <!-- {% raw %} -->
 ```latex
@@ -372,12 +373,12 @@ table's head row:
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  \multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Food} & \multicolumn{1}{c}{Size} \\
+  \multicolumn{1}{c}{Animale} & \multicolumn{1}{c}{Cibo} & \multicolumn{1}{c}{Taglia} \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
-  fuath  & \multicolumn{2}{c}{unknown} \\
+  cane      & carne  & media   \\
+  cavallo   & fieno  & grande  \\
+  rana      & mosche & piccola \\
+  furlong   & \multicolumn{2}{c}{sconosciuto} \\
   \bottomrule
 \end{tabular}
 \end{document}
