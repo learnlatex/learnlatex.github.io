@@ -320,8 +320,8 @@ con il comando `\addlinespace`.
 
 ## Unire le celle
 
-In LaTeX, puoi unire le celle orizzontalmente con il comando `\multicolumn`,
-che va dato come prima cosa in una cella. 
+In LaTeX, puoi unire le celle orizzontali con il comando 
+`\multicolumn`, che va dato come prima cosa in una cella. 
 `\multicolumn` prende tre argomenti:
 
 1. il numero di celle da unire
@@ -420,10 +420,11 @@ si estendano davvero su più righe.
 ```
 <!-- {% endraw %} -->
 
+## Esercizi
 
-## Exercises
-
-Use the simple table example to start experimenting with tables. Try out
-different alignments using the `l`, `c` and `r` column types. What happens if
-you have too few items in a table row? How about too many? Experiment with the
-`\multicolumn` command to span across columns.
+Adopera la semplice tabella d'esempio all'inizio di questa lezione
+per incominciare a sperimentare con le tabelle.
+Prova differenti allineamenti con i tipi di colonna `l`, `c` e `r`.
+Che cosa succede se gli elementi in una riga sono troppo pochi?
+Che cosa succede se sono troppi?
+Fa' delle prove con il comando `\multicolumn` per unire delle celle.
