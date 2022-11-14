@@ -385,9 +385,10 @@ allineate a sinistra:
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX.
-Usually it suffices to leave cells empty to give the reader the
-correct idea of what was meant without explicitly making cells span rows.
+LaTeX non supporta l'unione verticale delle celle.
+Di solito, per dare al lettore l'idea corretta di cosa si 
+intendesse fare basta lasciare le celle vuote, senza che le celle
+si estendano davvero su più righe.
 
 <!-- {% raw %} -->
 ```latex
@@ -400,19 +401,19 @@ correct idea of what was meant without explicitly making cells span rows.
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Group     & Animal & Size   \\
+  Gruppo    & Animale  & Taglia  \\
   \midrule
-  herbivore & horse  & large  \\
-            & deer   & medium \\
-            & rabbit & small  \\
+  erbivoro  & cavallo  & grande  \\
+            & cervo    & media   \\
+            & coniglio & piccola \\
   \addlinespace
-  carnivore & dog    & medium \\
-            & cat    & small  \\
-            & lion   & large  \\
+  carnivoro & cane     & media   \\
+            & gatto    & piccola \\
+            & leone    & grande  \\
   \addlinespace
-  omnivore  & crow   & small  \\
-            & bear   & large  \\
-            & pig    & medium \\
+  onnivoro  & corvo    & piccola \\
+            & orso     & grande  \\
+            & maiale   & media   \\
   \bottomrule
 \end{tabular}
 \end{document}
