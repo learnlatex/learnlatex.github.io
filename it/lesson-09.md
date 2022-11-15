@@ -89,7 +89,7 @@ un documento, eseguirai LaTeX parecchie volte comunque.)
 Osserva il carattere di tilde (`~`) prima del comando `\ref`.
 Prendi la buona abitudine di mettercelo sempre: inserisce
 uno ‘spazio indivisibile’ che impedisce a LaTeX di spezzare
-un'espressione _paragrafo 3.1_ su due righe, per esempio.
+su due righe un'espressione come _paragrafo 3.1_, per esempio.
 
 ## Dove va messo `\label`?
 
@@ -98,8 +98,9 @@ immediatamente precedente: un paragrafo, una formula, un oggetto
 galleggiante, eccetera. 
 Il che significa che `\label` va dato
 sempre _dopo_ l'elemento a cui vuoi riferirti. 
-In particular, when you create floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float environment.
+Con gli oggetti galleggianti, in particolare, va dato _dopo_ 
+(o, meglio, dentro) il comando `\caption`, ma dentro l'ambiente
+galleggiante.
 
 ## Esercizi
 
