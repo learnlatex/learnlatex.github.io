@@ -50,9 +50,13 @@ Nel sottoparagrafo~\ref{subsec:etichetta-uno} c'è l'equazione~\ref{eq:etichetta
 \end{document}
 ```
 
-There are two `\label{...}` commands, one after the subsection
-and one inside the equation environment.
-They are associated with the last sentence's `\ref{...}` commands.
+Ci sono due comandi `\label{...}`, uno dopo il sottoparagrafo
+e l'altro dentro l'ambiente matematico `equation`, che serve a
+scrivere formule numerate.
+Le etichette che costituiscono il loro argomento sono richiamate
+nell'ultima frase con i due comandi `\ref{...}`.
+
+
 When you run LaTeX, it saves information about the labels to an auxiliary file.
 For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
 so it saves the subsection's number.
