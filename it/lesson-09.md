@@ -19,8 +19,9 @@ dobbiamo solo imparare qualche semplice comando.
 
 ## Il meccanismo di `\label` e `\ref`
 
-Per fare in modo che LaTeX ricordi un punto preciso nel tuo documento,
-devi ‘etichettarlo’ e poi riferirti a esso da altri punti del lavoro.
+Per fare in modo che LaTeX ricordi un punto preciso nel documento,
+devi prima ‘etichettarlo’ e poi puoi riferirti a esso da altri punti 
+del lavoro.
 
 ```latex
 \documentclass{article}
@@ -50,46 +51,54 @@ Nel sottoparagrafo~\ref{subsec:etichetta-uno} c'è l'equazione~\ref{eq:etichetta
 \end{document}
 ```
 
-Ci sono due comandi `\label{...}`, uno dopo il sottoparagrafo
-e l'altro dentro l'ambiente matematico `equation`, che serve a
+Nell'esempio ci sono due comandi `\label{...}`, uno _dopo_ il sottoparagrafo
+e l'altro _dentro_ l'ambiente matematico `equation`, che serve a
 scrivere formule numerate.
-Le etichette che costituiscono il loro argomento sono richiamate
-nell'ultima frase con i due comandi `\ref{...}`.
+L'ultima frase richiama le medesime etichette, questa volta come
+argomento di altrettanti comandi `\ref{...}`.
 
+Quando viene lanciato, LaTeX memorizza le informazioni relative 
+alle etichette in un file ausiliario (con estensione `.aux`,
+lo troverai nella cartella di lavoro).
+Di `\label{subsec:etichetta-uno}` LaTeX sa che è l'etichetta 
+di un sottoparagrafo, perciò registra nel file ausiliario 
+il numero di questa sezione.
+Di `\label{eq:etichetta-due}` LaTeX sa che è l'etichetta di 
+una formula matematica numerata, perché l'ultimo elemento
+che produce un numero è l'ambiente `equation`, perciò
+registra nel file ausiliario il numero della formula.
+Quando si richiede un riferimento incrociato con `\ref`,
+il programma stampa i numeri giusti prendendoli dal file
+`.aux`.
 
-When you run LaTeX, it saves information about the labels to an auxiliary file.
-For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
-so it saves the subsection's number.
-For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for that equation.
-When you ask for the reference, LaTeX gets it from the auxiliary file.
+Per la verità, LaTeX ignora le stringhe `subsec:` e `eq:`,
+perché non le conosce: sono solo una convenzione per aiutarti
+a ricordare a cosa l'etichetta si riferisce.
+Sei libero di adoperare un'altra convenzione, se credi.
+LaTeX tiene traccia di quanto ha elaborato più di recente.
 
-The `subsec:` and `eq:` aren't used by LaTeX;
-rather, it just keeps track of what it has most
-recently processed.
-But when you are writing these help you remember what the label
-is about.
+Potrà capitarti di vedere nel PDF composto dei riferimenti 
+incrociati in forma di due punti interrogativi in nero: **??**. 
+Ciò accade perché la prima composizione del documento si limita
+a scrivere le informazioni delle etichette sul file ausiliario 
+_senza salvarle_. 
+Basta lanciare LaTeX una seconda volta e tutto andrà a posto.
+(Ma la cosa non costituisce un problema, perché quando scrivi
+un documento, eseguirai LaTeX parecchie volte comunque.)
 
-You may see references that show in an output PDF
-as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work,
-the first time that you compile a document the label has not
-yet been saved.
-Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX several times anyway,
-so in practice this is not a bother.)
-
-Notice the tie (`~`) characters before the references.
-You don't want a line break between `subsection` and its number, or
-between `equation` and its number.
-Putting in a tie means LaTeX won't break the line there.
+Osserva il carattere di tilde (`~`) prima del comando `\ref`.
+Prendi la buona abitudine di mettercelo sempre: inserisce
+uno ‘spazio indivisibile’ che impedisce a LaTeX di spezzare
+un'espressione _paragrafo 3.1_ su due righe, per esempio.
 
 ## Dove va messo `\label`?
 
-The `\label` command always refers to the previous numbered entity:
-a section, an equation, a float, etc. That means that `\label` always has to
-come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
+Il comando `\label` si riferisce _sempre_ all'elemento numerato 
+immediatamente precedente: un paragrafo, una formula, un oggetto 
+galleggiante, eccetera. 
+Il che significa che `\label` va dato
+sempre _dopo_ l'elemento a cui vuoi riferirti. 
+In particular, when you create floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
 but within the float environment.
 
 ## Esercizi
