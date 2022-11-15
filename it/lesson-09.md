@@ -1,50 +1,52 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Cross-referencing"
-description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
-toc-anchor-text: "Cross-referencing"
-toc-description: "Refering to figures, tables, etc."
+title: "Riferimenti incrociati"
+description: "Questa lezione mostra come riferirsi agli elementi numerati di un documento, come immagini, tabelle e sezioni."
+toc-anchor-text: "Riferimenti incrociati"
+toc-description: "Riferirsi a immagini, tabelle, eccetera."
 ---
 
-# Cross-referencing
+# Riferimenti incrociati
 
 <span
-  class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>
+  class="summary">Questa lezione mostra come riferirsi agli elementi numerati di un documento, come immagini, tabelle e sezioni.</span>
 
-When you are writing a document of any length, you'll want to refer to numbered
-items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. 
+Quando si scrive un documento, indipendentemente dalla sua lunghezza, si fa
+spesso riferimento a elementi numerati come immagini, tabelle o equazioni.
+Per fortuna, LaTeX è in grado di aggiungere automaticamente i numeri corretti:
+dobbiamo solo imparare qualche semplice comando.
 
-## The `\label` and `\ref` mechanism
+## Il meccanismo di `\label` e `\ref`
 
-To have LaTeX remember a spot in your document you have to label it, and then 
-in other places, you refer to it.
+Per fare in modo che LaTeX ricordi un punto preciso nel tuo documento,
+devi ‘etichettarlo’ e poi riferirti a esso da altri punti del lavoro.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Hey world!
 
-This is a first document.
+Ciao, mondo!
 
-\section{Title of the first section}
+Questo è il mio primo documento.
 
-Text of material for the first section.
+\section{Titolo del primo paragrafo}
 
+Testo del primo paragrafo.
 
-\subsection{Subsection of the first section}
-\label{subsec:labelone}
+\subsection{Sottoparagrafo del primo paragrafo}
+\label{subsec:etichetta-uno}
 
-Text of material for the first subsection.
+Testo del primo sottoparagrafo.
 \begin{equation}
   e^{i\pi}+1 = 0
-\label{eq:labeltwo}
+\label{eq:etichetta-due}
 \end{equation}
 
-In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
+Nel sottoparagrafo~\ref{subsec:etichetta-uno} c'è l'equazione~\ref{eq:etichetta-due}.
+
 \end{document}
 ```
 
@@ -78,7 +80,7 @@ You don't want a line break between `subsection` and its number, or
 between `equation` and its number.
 Putting in a tie means LaTeX won't break the line there.
 
-## Where to put `\label`
+## Dove va messo `\label`?
 
 The `\label` command always refers to the previous numbered entity:
 a section, an equation, a float, etc. That means that `\label` always has to
@@ -86,7 +88,7 @@ come _after_ the thing you want to refer to. In particular, when you create
 floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
 but within the float environment.
 
-## Exercises
+## Esercizi
 
 Try adding new numbered parts (sections, subsections, enumerated lists) to
 the test document and finding out how many runs are needed to make `\label`
