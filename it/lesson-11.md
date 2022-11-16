@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Formattazione: font e spaziatura"
-description: "Questa lezione mostra come modificare gli elementi di spaziatura in un documento e come aggiungere istruzioni di formattazione esplicita a al codice sorgente di LaTeX."
+description: "Questa lezione mostra come modificare le spaziature predefinite in un documento e come aggiungere istruzioni di formattazione esplicita a al codice sorgente di LaTeX."
 toc-anchor-text: "Font e spaziatura"
 toc-description: "Formattazione del testo per la presentazione visuale."
 ---
@@ -10,7 +10,7 @@ toc-description: "Formattazione del testo per la presentazione visuale."
 # Formattazione: testo e spaziatura
 
 <span
-  class="summary">Questa lezione mostra come modificare gli elementi di spaziatura in un documento e come aggiungere istruzioni di formattazione esplicita al codice sorgente di LaTeX.</span>
+  class="summary">Questa lezione mostra come modificare le spaziature predefinite in un documento e come aggiungere istruzioni di formattazione esplicita al codice sorgente di LaTeX.</span>
 
 Abbiamo già visto che, in LaTeX, una riga vuota nel 
 sorgente fa incominciare un nuovo capoverso.
@@ -37,8 +37,8 @@ Puoi ottenere questo risultato con il pacchetto `parskip`.
 
 ## Forzare un a capo
 
-Lavorando con LaTeX, non avrai quasi mai bisogno di andare 
-a capo esplicitamente: quasi certamente ti basterà incominciare
+Lavorando con LaTeX, non avrai praticamente mai bisogno di andare 
+a capo in modo esplicito: quasi certamente ti basterà incominciare
 un nuovo capoverso con il metodo standart o con le funzionalità
 di `parskip`, come hai appena visto.
 
@@ -77,17 +77,18 @@ E ancora un po' di testo.
 \end{document}
 ```
 
-## Formattazione esplicita del testo esplicita
+## Formattazione esplicita del testo
 
 Nella [lezione 3](lesson-03) abbiamo scritto che la grande maggioranza
 delle volte è meglio fare affidamento sulla struttura logica del documento.
-Qualche volta, tuttavia, capita di dover mettere qualche parola in nero,
+Qualche volta, tuttavia, è inevitabile dover mettere qualche parola in nero,
 in corsivo, in carattere monospaziato, eccetera.
 Per farlo, ci sono due tipi di comando: uno si adopera per porzioni di 
-testo brevi o brevissime; l'altro, solo negli ambienti o nelle
-definizioni di ambienti personali.
+testo brevi o brevissime, che vanno messe nell'argomento del comando; 
+l'altro, che è propriamente una _dichiarazione_, solo all'inizio degli 
+ambienti o nelle definizioni di ambienti personali.
 
-Per brevi frammenti di testo, dunque, adoperiamo 
+Per brevi frammenti di testo, dunque, i comandi disponibili sono 
 `\textbf`, `\textit`, `\textsl`, `\textrm`, `\textsf`, 
 `\texttt` e `\textsc`.
 
@@ -101,13 +102,13 @@ Divertiamoci un po' con i font: \textbf{nero}, \textit{corsivo},
 \end{document}
 ```
 
-Negli ambienti we use commands that alter the font setup; 
-come, per esempio, `\bfseries` e `\itshape`. 
-
-Because these don't 'stop',
-dovrai darli in un _gruppo_ per evitare che il loro effetto
-si estenda all'intero documento.
-LaTeX considera come gruppi gli ambienti o le celle di una tabella,
+Negli ambienti, dunque, useremo comandi che alterano le impostazioni
+del carattere corrente come, per esempio,
+`\bfseries` e `\itshape`. 
+Dal momento che il raggio d'azione di queste dichiarazioni non
+prevede un limite predefinito, per evitare che il loro effetto 
+si estenda all'intero documento, dovrai darli in un _gruppo_.
+LaTeX considera gruppi gli ambienti o le celle di una tabella,
 per esempio, ma la cosa più semplice è creare
 un gruppo esplicitamente con `{...}`.
 
@@ -115,45 +116,56 @@ un gruppo esplicitamente con `{...}`.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Normal text.
+
+Testo normale.
 
 {\itshape
+Questo testo è in corsivo.
 
-This text is italic.
-
-So it this: the effect is not limited to a paragraph.
-
+Come puoi osservare, l'effetto della dichiarazione
+non è limitato a un solo capoverso.
 }
+
 \end{document}
 ```
 
-We can set font size in a similar way; these commands all work on an ongoing
-basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
-`\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back; see how we add an explicit `\par`
-(paragraph break) here.
+In modo analogo possiamo impostare il corpo del font: con dichiarazioni
+che funzionano come quelle appena viste, cioè che hanno effetto a partire 
+dal punto in cui vengono scritte nel sorgente.
+I corpi da esse prodotti sono _relativi_ al corpo del font principale
+del documento (quello impostato nella dichiarazione di classe, per capirci).
+Quelle più comuni, dal corpo più grande a quello più piccolo, sono
+`\huge`, `\large`, `\normalsize`, `\small` e `\footnotesize`
+
+Nota bene che è importante terminare un capoverso
+_prima_ di modificare nuovamente il corpo del font:
+osserva come nell'esempio seguente abbiamo aggiunto un `\par` 
+(interruzione di capoverso) esplicito.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Normal text.
+
+Testo normale.
 
 \begin{center}
-{\itshape\large Some text\par}
-Normal text
-{\bfseries\small Much smaller text\par}
+{\itshape\large Testo più grande e in corsivo.\par}
+Testo normale.
+{\bfseries\small Testo più piccolo e in nero.\par}
 \end{center}
 
 \end{document}
 ```
 
-## Exercises
+## Esercizi
 
-Experiment with manual formatting: create a `titlepage` environment and
-try inserting different spaces and font changes. What happens when we
-combine font changes? How does this compare to math mode?
+Fa' delle prove con la formattazione a mano: crea un ambiente 
+`titlepage` per una pagina del titolo e prova a metterci diversi 
+spazi e a modificare il font.
+Che cosa succede quando combini insieme i cambiamenti del font?
+In cosa il risultato è diverso dal modo matematico?
 
-What happens if you change the font size of a large paragraph (try with
-`\tiny` then with `\huge`) but don't issue a final `\par` before closing
-the group?
+Che cosa succede se modifichi il corpo del font di un capoverso
+lungo (prova con `\tiny` e poi con `\huge`) ma non scrivi
+il `\par` finale prima di chiudere il gruppo?
