@@ -1,10 +1,10 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Citations and references"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
-toc-anchor-text: "Citations & references"
-toc-description: "Working with reference databases."
+title: "Citazioni e riferimenti bibliografici"
+description: "Questa lezione mostra i fondamenti dei database di riferimenti bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili."
+toc-anchor-text: "Citazioni e riferimenti bibliografici"
+toc-description: "Lavorare con i database bibliografici."
 ---
 
 # Citations and references
