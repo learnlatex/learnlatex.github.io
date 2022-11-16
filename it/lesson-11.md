@@ -62,8 +62,8 @@ e uno per inserire uno spazio negativo: `\!`.
 Molto di rado, per esempio durante la composizione della pagina del titolo, 
 potresti avere bisogno di aggiungere dello spazio esplicito, 
 orizzontale o verticale.
-Per farlo, puoi adoperare `\hspace` e `\vspace`
-for that.
+Per farlo, puoi adoperare `\hspace` e `\vspace`, che aggiungono dello
+spazio orizzontale e verticale rispettivamente.
 
 ```latex
 \documentclass{article}
