@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Citazioni e riferimenti bibliografici"
-description: "Questa lezione mostra i fondamenti dei database di riferimenti bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili."
+description: "Questa lezione mostra i fondamenti delle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili."
 toc-anchor-text: "Citazioni e riferimenti bibliografici"
 toc-description: "Lavorare con i database bibliografici."
 ---
