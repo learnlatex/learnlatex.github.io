@@ -1,49 +1,53 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Formatting: fonts and spacing"
-description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
-toc-anchor-text: "Fonts & spacing"
-toc-description: "Text formatting for visual presentation."
+title: "Formattazione: font e spaziatura"
+description: "Questa lezione mostra come modificare gli elementi di spaziatura in un documento e come aggiungere istruzioni di formattazione esplicita a al codice sorgente di LaTeX."
+toc-anchor-text: "Font e spaziatura"
+toc-description: "Formattazione del testo per la presentazione visuale."
 ---
 
-# Formatting: fonts and spacing
+# Formattazione: testo e spaziatura
 
 <span
-  class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>
+  class="summary">Questa lezione mostra come modificare gli elementi di spaziatura in un documento e come aggiungere istruzioni di formattazione esplicita al codice sorgente di LaTeX.</span>
 
-We have already seen that a blank line in your input will generate a new
-paragraph in LaTeX. This shows up as the paragraph will start with an
-indent.
+Abbiamo già visto che, in LaTeX, una riga vuota nel 
+sorgente fa incominciare un nuovo capoverso.
+Ti accorgerai della cosa perché, in accordo con le comuni 
+convenzioni tipografiche, il nuovo capoverso è
+segnalato dal rientro della prima riga.
 
-## Paragraph spacing
+## Spaziatura dei capoversi
 
-One common style is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can achieve that using the `parskip`
-package.
+Un'altra possibilità per separare i capoversi è
+mettere tra l'uno e l'altro dello spazio verticale
+(una riga vuota, per capirci).
+Puoi ottenere questo risultato con il pacchetto `parskip`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
-\usepackage{lipsum} % Just for some filler text
+\usepackage{lipsum} % per il testo fittizio di riempimento
 \begin{document}
 \lipsum
 \end{document}
 ```
 
-## Forcing a new line
+## Forzare un a capo
 
-Most of the time, you should not force a new line in LaTeX: you almost
-certainly want a new paragraph or to use `parskip`, as we've just seen,
-to put a 'blank line' between paragraphs.
+Lavorando con LaTeX, non avrai quasi mai bisogno di andare 
+a capo esplicitamente: quasi certamente ti basterà incominciare
+un nuovo capoverso con il metodo standart o con le funzionalità
+di `parskip`, come hai appena visto.
 
-There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph:
+Le circostanze in cui dovrai andare a capo con `\\` e incominciare
+una nuova riga senza incominciare un nuovo capoverso sono _pochi_:
 
-- At the end of table rows
-- Inside the `center` environment
-- In poetry (the `verse` environment)
+- alla fine di una riga di una tabella
+- dentro l'ambiente `center`
+- in poesia (dentro l'ambiente `verse`)
 
 Almost always, if you are not in one of those special places, you should
 _not_ use `\\`.
