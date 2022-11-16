@@ -104,11 +104,15 @@ galleggiante.
 
 ## Esercizi
 
-Try adding new numbered parts (sections, subsections, enumerated lists) to
-the test document and finding out how many runs are needed to make `\label`
-commands work.
+Aggiugi nuove sezioni numerate (paragrafi, sottoparagrafi, liste
+numerate) al codice d'esempio di questa lezione e 
+Try adding new numbered parts (sections, subsections, enumerated lists) 
+e scopri quante esecuzioni di LaTeX servono per risolvere
+i riferimenti incrociati.
 
-Add some floats and see what happens when you put `\label` _before_ the
-`\caption` instead of after; can you predict the result?
+Aggiungi alcuni oggetti galleggianti e osserva che cosa succede
+se metti `\label` _prima_ di `\caption` anziché dopo: sei 
+in grado di prevedere il risultato?
 
-What happens if you put a `\label` for an equation _after_ the `\end{equation}`?
+Che cosa succede se etichetti una formula mettendo `\label`
+_dopo_ `\end{equation}`?
