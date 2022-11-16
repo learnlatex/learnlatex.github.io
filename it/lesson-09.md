@@ -105,9 +105,8 @@ galleggiante.
 ## Esercizi
 
 Aggiugi nuove sezioni numerate (paragrafi, sottoparagrafi, liste
-numerate) al codice d'esempio di questa lezione e 
-Try adding new numbered parts (sections, subsections, enumerated lists) 
-e scopri quante esecuzioni di LaTeX servono per risolvere
+numerate) al codice d'esempio di questa lezione
+e scopri quante esecuzioni servono a LaTeX per risolvere
 i riferimenti incrociati.
 
 Aggiungi alcuni oggetti galleggianti e osserva che cosa succede
