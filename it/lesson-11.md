@@ -43,61 +43,73 @@ un nuovo capoverso con il metodo standart o con le funzionalità
 di `parskip`, come hai appena visto.
 
 Le circostanze in cui dovrai andare a capo con `\\` e incominciare
-una nuova riga senza incominciare un nuovo capoverso sono _pochi_:
+una nuova riga senza incominciare un nuovo capoverso sono _poche_:
 
 - alla fine di una riga di una tabella
 - dentro l'ambiente `center`
 - in poesia (dentro l'ambiente `verse`)
 
-Almost always, if you are not in one of those special places, you should
-_not_ use `\\`.
+Per il resto, cioè praticamente _sempre_, se non ti trovi in una 
+di queste circostanze ‘speciali’, non dovrai _mai_ adoperare `\\`.
 
-## Adding explicit space
+## Aggiungere dello spazio
 
-We can insert a thin space (about half the normal thickness) using
-`\,`. In math mode, there are also other commands: `\.`, `\:` and `\;`,
-and one for a negative space: `\!`.
+Possiamo inserire uno spazio sottile (circa la metà dello spessore
+normale) con `\,`. 
+In modo matematico, ci sono anche altri comandi: `\.`, `\:` e `\;`,
+e uno per inserire uno spazio negativo: `\!`.
 
-Very rarely, for example when creating a title page, you might need to
-add explicit horizontal or vertical space. We can use `\hspace` and `\vspace`
+Molto di rado, per esempio durante la composizione della pagina del titolo, 
+potresti avere bisogno di aggiungere dello spazio esplicito, 
+orizzontale o verticale.
+Per farlo, puoi adoperare `\hspace` e `\vspace`
 for that.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some text \hspace{1cm} more text.
+Un po' di testo \hspace{1cm} ancora testo.
 
 \vspace{10cm}
 
-Even more text.
+E ancora un po' di testo.
 \end{document}
 ```
 
-## Explicit text formatting
+## Formattazione esplicita del testo esplicita
 
-We wrote [in lesson 3](lesson-03) that most of the time logical structure is
-preferable. But sometimes you want to make text bold, or italic, or monospaced,
-etc. There are two types of command for this: ones for short pieces of text,
-and ones for 'running' material.
+Nella [lezione 3](lesson-03) abbiamo scritto che la grande maggioranza
+delle volte è meglio fare affidamento sulla struttura logica del documento.
+Qualche volta, tuttavia, capita di dover mettere qualche parola in nero,
+in corsivo, in carattere monospaziato, eccetera.
+Per farlo, ci sono due tipi di comando: uno si adopera per porzioni di 
+testo brevi o brevissime; l'altro, solo negli ambienti o nelle
+definizioni di ambienti personali.
 
-For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
-`\texttt` and `\textsc`.
+Per brevi frammenti di testo, dunque, adoperiamo 
+`\textbf`, `\textit`, `\textsl`, `\textrm`, `\textsf`, 
+`\texttt` e `\textsc`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
-\textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
+Divertiamoci un po' con i font: \textbf{nero}, \textit{corsivo}, 
+\textsl{inclinato}, \textrm{tondo}, \textsf{senza grazie}, 
+\texttt{a spaziatura fissa} e \textsc{maiuscoletto}.
 \end{document}
 ```
 
-For running text, we use commands that alter the font setup; the commands
-here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them from applying to
-the whole document. LaTeX environments are groups, as are table cells,
-or we can use `{...}` to make an explicit group.
+Negli ambienti we use commands that alter the font setup; 
+come, per esempio, `\bfseries` e `\itshape`. 
+
+Because these don't 'stop',
+dovrai darli in un _gruppo_ per evitare che il loro effetto
+si estenda all'intero documento.
+LaTeX considera come gruppi gli ambienti o le celle di una tabella,
+per esempio, ma la cosa più semplice è creare
+un gruppo esplicitamente con `{...}`.
 
 ```latex
 \documentclass{article}
