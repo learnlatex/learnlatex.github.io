@@ -7,7 +7,7 @@ toc-anchor-text: "Citazioni e riferimenti bibliografici"
 toc-description: "Lavorare con i database bibliografici."
 ---
 
-# Citations and references
+# Citazioni e riferimenti bibliografici
 
 <script>
 runlatex.preincludes = {
@@ -21,7 +21,7 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
+  class="summary">Questa lezione mostra i fondamenti delle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili.</span>
 
 For bibliographic citations, while you can include reference sources directly in
 your document, usually you will get that information from one or more external
