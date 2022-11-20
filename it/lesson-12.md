@@ -23,22 +23,24 @@ runlatex.preincludes = {
 <span
   class="summary">Questa lezione mostra i fondamenti delle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili.</span>
 
-Le fonti delle citazioni bibliografiche presenti nel tuo lavoro possono essere
-inserite direttamente nel documento, ma in linea generale ti consigliamo 
-di scriverle in uno o più file esterni. 
+Le fonti (o _riferimenti_) delle citazioni bibliografiche presenti 
+nel tuo lavoro possono essere inserite nel documento direttamente, 
+ma in linea generale ti consigliamo di scriverle in uno o più file 
+esterni. 
 Un file del genere si chiama _base di dati bibliografici_ 
-(o _database bigliografico_) e contiene
-le informazioni in un formato facile da trattare per LaTeX.
+(o _database bibliografico_) e contiene le informazioni in un 
+formato facile da trattare per LaTeX.
 Avere a disposizione uno o più di questi database ti permetterà
-di riutilizzare le informazioni in essi contenute, evitando di formattare il 
+di riutilizzarne le informazioni, evitando di formattare il 
 documento a mano.
 
 ## Basi di dati bibliografici
 
-Di solito ci si riferisce ai database bibliografici come a ‘file BibTeX’ 
+Nel gergo di LaTeX, un database bibliografico è un ‘file BibTeX’, 
 con estensione `.bib`. 
 Questi file contengono una o più voci (chiamate anche _record bibliografici_)
-una per ogni fonte, e in ciascun record è presente una serie di _campi_.
+una per ogni fonte, e in ciascun record è presente una serie di _campi_ da
+riempire.
 Vediamone un esempio insieme.
 
 <!-- {% raw %} -->
@@ -70,13 +72,13 @@ Il codice qui sopra contiene un record di tipo `article` (cioè, un articolo
 apparso in una rivista) e un record di tipo `book` (cioè, un libro vero
 e proprio): sono di gran lunga i record più comuni. 
 Come puoi osservare, ogni tipo di record incomincia con `@` e le informazioni 
-con cui completare i campi vanno racchiuse in una coppia di parentesi graffe.
+a completamento dei campi vanno racchiuse in una coppia di parentesi graffe.
 
-I campi sono tutti nel formato chiave-valore, tranne la cosiddetta ‘chiave’,
+I campi sono tutti nel formato `chiave=valore`, tranne la cosiddetta ‘chiave’,
 cioè il ‘nome’ della citazione.
 Come chiave puoi scrivere quello che vuoi, dato che è una semplice etichetta,
 ma nell'esempio abbiamo scelto il cognome dell'autore seguito dall'anno:
-è una soluzione comune.
+è una soluzione comune ed efficace.
 
 I campi esatti da riempire dipendono dal tipo di record, ma la grande maggioranza
 di essi sono abbastanza ovvi. 
