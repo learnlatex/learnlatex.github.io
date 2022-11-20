@@ -23,17 +23,23 @@ runlatex.preincludes = {
 <span
   class="summary">Questa lezione mostra i fondamenti delle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili.</span>
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+Le fonti delle citazioni bibliografiche presenti nel tuo lavoro possono essere
+inserite direttamente nel documento, ma in linea generale ti consigliamo 
+di scriverle in uno o più file esterni. 
+Un file del genere si chiama _base di dati bibliografici_ 
+(o _database bigliografico_) e contiene
+le informazioni in un formato facile da trattare per LaTeX.
+Avere a disposizione uno o più di questi database ti permetterà
+di riutilizzare le informazioni in essi contenute, evitando di formattare il 
+documento a mano.
 
-## Reference databases
+## Basi di dati bibliografici
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+Di solito ci si riferisce ai database bibliografici come a ‘file BibTeX’ 
+con estensione `.bib`. 
+Questi file contengono una o più voci (chiamate anche _record bibliografici_)
+una per ogni fonte, e in ciascun record è presente una serie di _campi_.
+Vediamone un esempio insieme.
 
 <!-- {% raw %} -->
 ```bibtex
@@ -60,35 +66,42 @@ within each entry there are a series of fields. Let us look at an example.
 ```
 <!-- {% endraw %} -->
 
+Il codice qui sopra contiene un record di tipo `article` (cioè, un articolo
+apparso in una rivista) e un record di tipo `book` (cioè, un libro vero
+e proprio): sono di gran lunga i record più comuni. 
+Come puoi osservare, ogni tipo di record incomincia con `@` e le informazioni 
+con cui completare i campi vanno racchiuse in una coppia di parentesi graffe.
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+I campi sono tutti nel formato chiave-valore, tranne la cosiddetta ‘chiave’,
+cioè il ‘nome’ della citazione.
+Come chiave puoi scrivere quello che vuoi, dato che è una semplice etichetta,
+ma nell'esempio abbiamo scelto il cognome dell'autore seguito dall'anno:
+è una soluzione comune.
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
+I campi esatti da riempire dipendono dal tipo di record, ma la grande maggioranza
+di essi sono abbastanza ovvi. 
+Forse hai notato che nel campo `author` ogni voce è separata dall'altra 
+con `and`. È _essenziale_: the format of the _output_ needs to
+know which author is which. 
+Come hai osservato, anche nel titolo dell'articolo
+alcune voci sono racchiuse in un'ulteriore coppia di graffe:
+è una buona pratica per evitare modifiche indesiderate a maiuscole e minuscole.
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
+Modificare a mano un file `.bib` è piuttosto noioso, perciò la maggior parte
+degli utenti ricorre a un editor dedicato.
+[JabRef](https://www.jabref.org) è largamente usato ed è multipiattaforma,
+ma ne esistono molti altri.
+Se il riferimento bibliografico contiene un DOI (_Digital Object Identifier_), 
+puoi provare [doi2bib](https://doi2bib.org) per ottenere facilmente il record
+in formato BibTeX.
+Ma non dimenticarti di verificare che il record sia corretto e contenga tutte
+le informazioni che ti servono!
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
-
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
+In questa lezione adopereremo per le nostre dimostrazioni il breve database 
+bibliografico dell'esempio precedente: lo abbiamo registrato come
 `learnlatex.bib`.
 
-## Transferring information from the database
+## Trasferire le informazioni dal database
 
 To get the information into your document there are three steps.
 First, use LaTeX to compile your document, which creates a file with a
