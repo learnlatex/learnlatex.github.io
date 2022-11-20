@@ -101,34 +101,42 @@ Ma non dimenticarti di verificare che il record sia corretto e contenga tutte
 le informazioni che ti servono!
 
 In questa lezione adopereremo per le nostre dimostrazioni il breve database 
-bibliografico dell'esempio precedente: lo abbiamo registrato come
+bibliografico dell'esempio precedente: lo abbiamo registrato con il nome
 `learnlatex.bib`.
 
 ## Trasferire le informazioni dal database
 
-To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which creates a file with a
-list of the references that your document cites.  Second, run a
-program that takes information from the database of references, picks
-out the ones that you use, and puts them in order.  Finally, compile
-your document again so that LaTeX can use that information to resolve
-your citations. Usually it will require at least two compilations to
-resolve all the references.
+Per trasferire le informazioni dal database bibliografico al tuo
+documento, devi seguire tre passaggi.
+Innanzitutto, devi comporre il tuo lavoro con LaTeX una prima volta:
+nella cartella di lavoro comparirà un file contenente la lista
+dei riferimenti bibliografici citati nel documento.
+Poi, devi eseguire un programma che estrae dal database
+dei riferimenti le fonti delle citazioni
+presenti nel documento e le mette in ordine.
+Infine, devi comporre nuovamente il documento, in modo che LaTeX
+possa adoperare queste informazioni per ‘risolvere’ le citazioni.
+Di solito, per risolvere tutti i riferimenti servono due
+composizioni consecutive.
 
-For the second step, there are two systems in wide use: BibTeX and
-Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
-BibTeX is used with either no packages at all or with `natbib`.
+Per quanto riguarda il secondo passaggio, ci sono due sistemi
+ampiamente adoperati: BibTeX e Biber. 
+Biber si adopera sempre e solo in coppia con il pacchetto `biblatex`, 
+mentre BibTeX si adopera o senza pacchetti o con il pacchetto `natbib`.
 
-Running a second tool as well as LaTeX is handled in different ways by different
-editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go.
-Your editor might have a single 'do stuff' button or you might have to
-choose to run BibTeX or Biber manually between LaTeX runs.
+L'esecuzione di un secondo strumento oltre a LaTeX viene gestita 
+in modi diversi dai diversi editor. 
+Per i nostri esempi online, ci sono alcuni script che fanno tutto e
+in una volta sola ‘dietro le quinte’. 
+Il tuo editor potrebbe avere un singolo pulsante del tipo ‘fai cose’ 
+oppure potresti scegliere di eseguire BibTeX o Biber a mano tra un'esecuzione e 
+l'altra di LaTeX.
 
-The format of citations and references is independent of your BibTeX database,
-and is set by what is known as a 'style'. We will see that these work slightly
-differently in the BibTeX workflow and `biblatex`, but the general idea remains:
-we can choose how citations appear.
+L'aspetto delle citazioni e dei riferimenti bibliografici è indipendente 
+dal tuo database BibTeX, ed è definito da ciò che si chiama 'stile'. 
+Vedremo che funzionano in modo leggermente diverso a seconda che si adoperi 
+BibTeX o `biblatex`, ma il concetto di fondo rimane:
+possiamo scegliere l'aspetto delle citazioni nel documento.
 
 ## Il flusso di lavoro di BibTeX con `natbib`
 
