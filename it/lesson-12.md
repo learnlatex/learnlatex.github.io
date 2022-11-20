@@ -23,8 +23,8 @@ runlatex.preincludes = {
 <span
   class="summary">Questa lezione mostra i fondamenti delle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili.</span>
 
-Le fonti (o _riferimenti_) delle citazioni bibliografiche presenti 
-nel tuo lavoro possono essere inserite nel documento direttamente, 
+Le fonti (o _riferimenti bibliografici_) delle citazioni bibliografiche 
+presenti nel tuo lavoro possono essere inserite nel documento direttamente, 
 ma in linea generale ti consigliamo di scriverle in uno o più file 
 esterni. 
 Un file del genere si chiama _base di dati bibliografici_ 
@@ -82,15 +82,16 @@ ma nell'esempio abbiamo scelto il cognome dell'autore seguito dall'anno:
 
 I campi esatti da riempire dipendono dal tipo di record, ma la grande maggioranza
 di essi sono abbastanza ovvi. 
-Forse hai notato che nel campo `author` ogni voce è separata dall'altra 
-con `and`. È _essenziale_: the format of the _output_ needs to
-know which author is which. 
+Se hai osservato il codice con attenzione, ti sarai accorto che nel campo 
+`author` ogni voce è separata dall'altra con `and`. 
+Farlo è _essenziale_: il formato del PDF composto ha bisogno di conoscere
+gli autori uno per uno. 
 Come hai osservato, anche nel titolo dell'articolo
 alcune voci sono racchiuse in un'ulteriore coppia di graffe:
 è una buona pratica per evitare modifiche indesiderate a maiuscole e minuscole.
 
 Modificare a mano un file `.bib` è piuttosto noioso, perciò la maggior parte
-degli utenti ricorre a un editor dedicato.
+degli utenti gestisce le bibliografie con un editor dedicato.
 [JabRef](https://www.jabref.org) è largamente usato ed è multipiattaforma,
 ma ne esistono molti altri.
 Se il riferimento bibliografico contiene un DOI (_Digital Object Identifier_), 
@@ -129,7 +130,7 @@ and is set by what is known as a 'style'. We will see that these work slightly
 differently in the BibTeX workflow and `biblatex`, but the general idea remains:
 we can choose how citations appear.
 
-## The BibTeX workflow with `natbib`
+## Il flusso di lavoro di BibTeX con `natbib`
 
 Whilst it is possible to insert citations into a LaTeX document without
 any packages loaded, this is rather limited. Instead, we will use the
@@ -144,15 +145,15 @@ The basic structure of our input is as shown in this example.
 \usepackage{natbib}
 
 \begin{document}
-The mathematics showcase is from \citet{Graham1995}, whereas
-there is some chemistry in \citet{Thomas2008}.
+La galleria di esempi matematici è presa da \citet{Graham1995},
+mentre c'è un po' di chimica in \citet{Thomas2008}.
 
-Some parenthetical citations: \citep{Graham1995}
-and then \citep[p.~56]{Thomas2008}.
+Alcune citazioni tra parentesi: \citep{Graham1995}
+e \citep[p.~56]{Thomas2008}.
 
-\citep[See][pp.~45--48]{Graham1995}
+\citep[Vedi][pp.~45–48]{Graham1995}
 
-Together \citep{Graham1995,Thomas2008}
+Insieme: \citep{Graham1995,Thomas2008}
 
 \bibliographystyle{plainnat}
 \bibliography{learnlatex}
@@ -173,7 +174,7 @@ label for a short note and the second after the label for a page reference.
 The setup above uses author-year style, but we can make use of numeric
 citations. That is done by adding the `numbers` option to the `natbib` line.
 
-## The `biblatex` workflow
+## Il flusso di lavoro di `biblatex`
 
 The `biblatex` package works slightly differently to `natbib`, as we select
 the databases in the preamble but print it in the document body. There are
@@ -216,7 +217,7 @@ In `biblatex`, the reference style is picked when we load the package. Here,
 we've used `authoryear`, but there is a `numeric` style and many others are
 also available.
 
-## Choosing between the BibTeX workflow and `biblatex`
+## Scegliere tra BibTeX e `biblatex`
 
 Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
 files and can produce structurally similar output in the document, they use
@@ -263,7 +264,7 @@ should suffice. If you need a more complex citation style, non-English sorting
 or want easier access to citation and bibliography style customisation features,
 you will want to look into using `biblatex`.
 
-## Exercises
+## Esercizi
 
 Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
 to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
