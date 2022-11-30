@@ -140,12 +140,13 @@ possiamo scegliere l'aspetto delle citazioni nel documento.
 
 ## Il flusso di lavoro di BibTeX con `natbib`
 
-Whilst it is possible to insert citations into a LaTeX document without
-any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create different types of citation and
-has a lot of styles available.
+Sebbene sia possibile inserire citazioni bibliografiche in un documento
+LaTeX senza caricare alcun pacchetto, i limiti della cosa diventano
+presto evidenti.
+Adopereremo, invece, il pacchetto `natbib`, che permette di creare 
+diversi tipi di citazione e mette a disposizione numerosi stili.
 
-The basic structure of our input is as shown in this example.
+L'esempio seguente mostra la struttura di base del nostro input.
 
 ```latex
 \documentclass{article}
@@ -161,69 +162,86 @@ e \citep[p.~56]{Thomas2008}.
 
 \citep[Vedi][pp.~45–48]{Graham1995}
 
-Insieme: \citep{Graham1995,Thomas2008}
+Citazione multipla: \citep{Graham1995,Thomas2008}.
 
-\bibliographystyle{plainnat}
-\bibliography{learnlatex}
+\bibliographystyle{plainnat} % stile delle citazioni nel corpo del documento
+\bibliography{learnlatex}    % database bibliografico senza l'estensione
 \end{document}
 ```
 
-You can see that we can cite different entries in the database by giving their
-key. The `natbib` package offers both textual and parenthetical citation styles,
-`\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line; here we've used the `plainnat` style. The
-bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use; this is a comma-separated list of names.
+Come puoi osservare, si possono citare le diverse fonti
+presenti nel database bibliografico mediante la loro
+chiave.
+Il pacchetto `natbib` mette a disposizione due stili
+di citazione: testuale (comando `\citet`) e tra
+parentesi (comando `citep`).
+Lo stile dei riferimenti si seleziona con il comando
+`\bibliographystyle`: qui abbiamo scelto `plainnat`.
+Infine, la bibliografia vera e propria è inserita
+con il comando `\bibliography`, nel cui argomento
+va scritto il nome con cui si è registrato il
+database bibliografico, _senza l'estensione_ .bib`.
+Se i database sono più d'uno, vanno elencati 
+separandoli con la virgola.
 
-Page references can be added to the citation with an optional argument.
-If two optional arguments are given, the first goes in front of the citation
-label for a short note and the second after the label for a page reference.
+Eventuali riferimenti al numero di pagina possono essere
+aggiunti alle citazioni bibliografiche come argomento
+facoltativo.
+Se gli argomenti facoltativi sono due, il primo 
+verrà stampato prima della citazione (di solito 
+serve per brevi note) e il secondo, con il riferimento
+alle pagine, dopo l'etichetta.
 
-The setup above uses author-year style, but we can make use of numeric
-citations. That is done by adding the `numbers` option to the `natbib` line.
+Le impostazioni qui sopra adoperano lo stile autore-anno.
+ma si può scegliere anche lo stile numerico: basta
+passare l'opzione `numbers` al pacchetto `natbib`.
 
 ## Il flusso di lavoro di `biblatex`
 
-The `biblatex` package works slightly differently to `natbib`, as we select
-the databases in the preamble but print it in the document body. There are
-some new commands for this.
+Il pacchetto `biblatex` lavora in modo leggermente diverso da
+`natbib`, dato che database bibliografico e stile di citazione
+vanno specificati nel preambolo, mentre nel corpo del documento
+va dato solo il comando per stampare la bibliografia.
+Per farlo, dovrai imparare alcuni comandi nuovi.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[style=authoryear]{biblatex}
-\addbibresource{learnlatex.bib} % file of reference info
+\usepackage[style=authoryear]{biblatex} % impostazioni di biblatex
+\addbibresource{learnlatex.bib} % database bibliografico con l'estensione
 
 \begin{document}
-The mathematics showcase is from \autocite{Graham1995}.
+La galleria di esempi matematici è presa da \autocite{Graham1995}.
 
-Some more complex citations: \parencite{Graham1995} or
-\textcite{Thomas2008} or possibly \citetitle{Graham1995}.
+Alcune citazioni più complesse: \parencite{Graham1995} o
+\textcite{Thomas2008} o anche \citetitle{Graham1995}.
 
 \autocite[56]{Thomas2008}
 
 \autocite[See][45-48]{Graham1995}
 
-Together \autocite{Thomas2008,Graham1995}
+Citazione multipla: \autocite{Thomas2008,Graham1995}.
 
 \printbibliography
 \end{document}
 ```
 
-Notice that `\addbibresource` _requires_ the full database filename, whereas
-we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for its citation commands, but these are
-all quite easy to guess.
+Osserva che `\addbibresource` richiede il nome del database completo
+dell'estensione, che invece va omessa con `\bibliography` di `natbib`. 
+Ancora, nota che `biblatex` adopera nomi piuttosto lunghi per i suoi
+comandi di citazione, il cui significato è tuttavia abbastanza facile
+da indovinare.
 
-Again, short text before and after the citation can be inserted with
-the optional arguments. Note that the page numbers need not be prefixed
-with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
-prefix.
+Di nuovo, si possono inserire brevi testi prima e dopo la citazione
+mediante gli argomenti facoltativi.
+Ossera che l'indicazione del numero delle pagine non richiede
+esplicitamente `p.~` o `pp.~`: `biblatex` aggiunge automaticamente
+il prefisso opportuno.
 
-
-In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authoryear`, but there is a `numeric` style and many others are
-also available.
+Con `biblatex`, lo stile di citazione va specificato come opzione
+al pacchetto, nel preambolo.
+Qui abbiamo scelto `authoryear`, ma sono disponibili anche lo stile
+`numeric` e molti altri.
 
 ## Scegliere tra BibTeX e `biblatex`
 
