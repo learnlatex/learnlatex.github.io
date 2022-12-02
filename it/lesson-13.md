@@ -28,10 +28,11 @@ runlatex.preincludes = {
 <span
   class="summary">Questa lezione insegna come LaTeX permette di suddividere i tuoi sorgenti in file più brevi e maneggevoli, e come questo può facilitare e rendere più rapida la creazione di un documento lungo.</span>
 
-When you are writing a longer document, you’ll likely want to split up
-the source into multiple files. For example, it's very common to have
-one 'main'/'root' file, then one source file per chapter (for a book or thesis),
-or per significant section (for a long article).
+Quando stai scrivendo un documento piuttosto lungo, probabilmente vorrai 
+suddividere il sorgente in più file. 
+Per esempio, è prassi molto comune avere un file 'principale' (o 'root') 
+e un file sorgente per ciascun capitolo (per un libro o una tesi) 
+o per ciascuna sezione significativa (per un lungo articolo).
 
 ## Organizzare i tuoi sorgenti
 
@@ -43,7 +44,8 @@ and makes some internal adjustments. But it has a big advantage: it allows us to
 be selective in which chapters to include, so you can work on part of your
 document rather than the whole thing.
 
-A longer document might therefore look something like the following:
+Un documento piuttosto lungo potrebbe quindi avere un aspetto simile al 
+seguente:
 
 <!-- pre0 {% raw %} -->
 ```latex
@@ -52,39 +54,39 @@ A longer document might therefore look something like the following:
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
-\title{A Sample Book}
-\author{John Doe \and Joe Bloggs}
+\title{Un libro}
+\author{A.U.~Tore \and A.U.~Trice}
 
 \IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-  front,
-%  chap1,
-  chap2,
-%  append
+  frontespizio,
+%  capitolo1,
+  capitolo2,
+%  appendice
   }
 }
 {
-% Do a full document initially to generate
-% all the aux files
+% Scrivere all'inizio un documento completo
+% per generare tutti i file ausiliari
 }
 
 \begin{document}
 \frontmatter
-\include{front}
+\include{frontespizio}
 
 % =========================
 \mainmatter
-\include{chap1}
-\include{chap2}
+\include{capitolo1}
+\include{capitolo2}
 \appendix
-\include{append}
+\include{appendice}
 
 % ========================
 \backmatter
 \printbibliography
 \newpage
-\input{backcover}
+\input{copertina-posteriore}
 \end{document}
 ```
 <!-- {% endraw %} -->
