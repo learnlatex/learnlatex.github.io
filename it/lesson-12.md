@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Citazioni e riferimenti bibliografici"
-description: "Questa lezione mostra i fondamenti delle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili."
+description: "Questa lezione insegna le nozioni fondamentali sulle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili."
 toc-anchor-text: "Citazioni e riferimenti bibliografici"
 toc-description: "Lavorare con i database bibliografici."
 ---
@@ -245,58 +245,75 @@ Qui abbiamo scelto `authoryear`, ma sono disponibili anche lo stile
 
 ## Scegliere tra BibTeX e `biblatex`
 
-Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
-files and can produce structurally similar output in the document, they use
-completely different ways to produce this result. That means that there are
-some differences between the two approaches that may help you choose which
-one works best for you.
+Sebbene entrambi i flussi di lavoro appena descritti (il flusso di
+BibTeX e quello di `biblatex`) ricevano come input un file BibTeX
+(cioè, con estensione `.bib`) e possano produrre un output composto
+strutturalmente simile, il modo in cui ci arrivano è completamente
+diverso. 
+In altre parole, tra i due approcci esistono alcune differenze 
+che possono aiutarti a scegliere quale va meglio per te.
 
-In the BibTeX workflow the bibliography style is ultimately decided
-by a `.bst` file which you select with the `\bibliographystyle` command.
-`biblatex` does not use `.bst` files and uses a different system.
-If you are using a template that comes with a `.bst` file or are given a `.bst`
-file for your project, you must use the BibTeX workflow and cannot use
+Nel flusso di lavoro di BibTeX, lo stile della bibliografia viene 
+deciso in ultima analisi da un file `.bst` che si seleziona con 
+il comando `\bibliographystyle`. 
+`biblatex` non adopera i file `.bst` e usa un sistema diverso. 
+Se stai usando un modello che viene fornito con un file `.bst` 
+o ti viene fornito un file `.bst` per il tuo progetto, 
+_devi_ adoperare BibTeX e non puoi usare `biblatex`.
+
+Il diverso approccio adottato da `biblatex` implica che sia possibile 
+modificare l'output dei comandi per la bibliografia e le citazioni 
+direttamente dal preambolo del documento mediante comandi basati 
+su LaTeX. 
+Le modifiche degli stili `.bst` di BibTeX, d'altra parte, di solito 
+richiedono di lavorare con questi file esterni e richiedono la conoscenza 
+del linguaggio di programmazione BibTeX. 
+In generale, si dice che `biblatex` sia più facile da personalizzare 
+rispetto a BibTeX.
+
+In `biblatex` è generalmente più semplice implementare stili di citazione 
+più elaborati con una gamma più ampia di comandi di citazione diversi. 
+Offre anche funzionalità più dipendenti dal contesto. 
+In parole povere, questo è meno interessante per gli stili comuni in 
+molti argomenti STEM, ma diventa rilevante per alcuni stili più 
+complessi in alcune aree delle discipline umanistiche.
+
+BibTeX può ordinare correttamente solo i caratteri US-ASCII e si 
+affida a soluzioni alternative per fornire l'ordinamento basato 
+su US-ASCII per i caratteri non US-ASCII. 
+Con Biber, `biblatex` offre funzionalità di ordinamento Unicode 
+complete. 
+Quindi `biblatex` è di solito una scelta migliore se vuoi ordinare 
+la tua bibliografia in un ordine non ASCII o non inglese.
+
+Essendo in circolazione da molto più tempo di `biblatex`, il flusso 
+di lavoro BibTeX è più consolidato di `biblatex`, il che significa 
+che molti editori e riviste si aspettano bibliografie generate tramite 
+il flusso di lavoro BibTeX. 
+Tali editori non possono o generalmente non accettano invii che utilizzano 
 `biblatex`.
 
-The different approach `biblatex` takes implies that you can modify the output
-of the bibliography and citation commands directly from your document preamble
-using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
-hand usually require working with these external files and need knowledge of
-the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customize than the BibTeX workflow.
-
-In `biblatex` it is generally easier to implement more elaborate citation
-styles with a wider array of different citation commands. It also offers more
-context-dependent features. Roughly speaking this is less interesting for
-the styles common in many STEM subjects, but becomes relevant for some more
-complex styles in some areas of the humanities.
-
-BibTeX can only sort US-ASCII characters correctly and relies on workarounds
-to provide US-ASCII-based sorting for non-US-ASCII characters.
-With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
-is usually a better choice if you want to sort your bibliography in a
-non-ASCII/non-English order.
-
-Having been around for much longer than `biblatex`, the BibTeX workflow is
-more established than `biblatex`, meaning that many publishers and journals
-expect bibliographies generated via the BibTeX workflow. Those publishers
-cannot or generally do not accept submissions using `biblatex`.
-
-The bottom line is: Check the author/submission guidelines if you are
-submitting to a journal or publisher. If you are given a `.bst` file, you must
-use the BibTeX workflow. If you want a relatively simple bibliography and
-citation style and only need English US-ASCII-based sorting, the BibTeX workflow
-should suffice. If you need a more complex citation style, non-English sorting
-or want easier access to citation and bibliography style customisation features,
-you will want to look into using `biblatex`.
+La conclusione è: controlla le linee guida per l'autore/l'invio se stai 
+inviando a una rivista o a un editore. 
+Se ti viene fornito un file `.bst`, devi usare il flusso di lavoro di 
+BibTeX. Se desideri una bibliografia e uno stile di citazione 
+relativamente semplici e hai bisogno solo di un ordinamento basato su 
+US-ASCII inglese, il flusso di lavoro di BibTeX dovrebbe essere sufficiente. 
+Se hai bisogno di uno stile di citazione più complesso, di un ordinamento 
+non inglese o desideri un accesso più facile alle funzionalità di 
+personalizzazione degli stili di citazione e della bibliografia, 
+ti consigliamo di prendere in considerazione `biblatex`.
 
 ## Esercizi
 
-Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
-to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and TeXLive.net
-automation.
+Prova entrambi gli esempi `natbib` e `biblatex`. 
+Per `natbib`, dovrai eseguire nell'ordine LaTeX, BibTeX, LaTeX, LaTeX; 
+per `biblatex`, la sequenza è LaTeX, Biber, LaTeX. 
+Scopri come farlo nel tuo editor o prova l'automazione di Overleaf 
+e TeXLive.net.
 
-See what happens when you create new database entries and new citations. Add
-a citation that's not in the database and see how it appears. Experiment
-with `natbib`'s `numeric` and `biblatex`'s `style=numeric` option.
+Guarda cosa succede quando crei nuovi record bibliografici e nuove 
+citazioni. Aggiungi una citazione che non è nel database e guarda come 
+appare nel documento composto. 
+Fa' delle prove con le opzioni `numeric` di `natbib` e `style=numeric` 
+di `biblatex`.
