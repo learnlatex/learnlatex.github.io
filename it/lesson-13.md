@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Organizzare documenti più lunghi"
-description: "Questa lezione insegna come LaTeX permette di suddividere i tuoi sorgenti in file più brevi e maneggevoli, e come questo può facilitare e rendere più rapida la creazione di un documento lungo."
+title: "Organizzare documenti lunghi"
+description: "Questa lezione insegna a suddividere i tuoi sorgenti in file più brevi e maneggevoli, e mostra come questo può facilitare e rendere più rapida la creazione di un documento lungo."
 toc-anchor-text: "Organizzare i sorgenti"
 toc-description: "Suddividere i sorgenti in modo controllato."
 ---
 
-# Organizzare documenti più lunghi
+# Organizzare documenti lunghi
 
 <script>
 runlatex.preincludes = {
