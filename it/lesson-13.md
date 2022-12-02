@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Structuring longer documents"
-description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
-toc-anchor-text: "Structuring sources"
-toc-description: "Spliting up sources in a controlled way."
+title: "Organizzare documenti più lunghi"
+description: "Questa lezione insegna come LaTeX permette di suddividere i tuoi sorgenti in file più brevi e maneggevoli, e come questo può facilitare e rendere più rapida la creazione di un documento lungo."
+toc-anchor-text: "Organizzare i sorgenti"
+toc-description: "Suddividere i sorgenti in modo controllato."
 ---
 
-# Structuring longer documents
+# Organizzare documenti più lunghi
 
 <script>
 runlatex.preincludes = {
@@ -26,14 +26,14 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
+  class="summary">Questa lezione insegna come LaTeX permette di suddividere i tuoi sorgenti in file più brevi e maneggevoli, e come questo può facilitare e rendere più rapida la creazione di un documento lungo.</span>
 
 When you are writing a longer document, you’ll likely want to split up
 the source into multiple files. For example, it's very common to have
 one 'main'/'root' file, then one source file per chapter (for a book or thesis),
 or per significant section (for a long article).
 
-## Structuring your sources
+## Organizzare i tuoi sorgenti
 
 LaTeX allows us to split up sources in a controlled way. There are two important
 commands here, `\input` and `\include`. We can use `\input` to make a file work
@@ -92,7 +92,7 @@ A longer document might therefore look something like the following:
 We'll look at the various aspects of this file below. (The various support files
 are at the end of this page.)
 
-## Using `\input`
+## Il metodo di `\input`
 
 The `\input` command is good for parts of a long file that are _not_ separate
 chapters. In the example, we have used it to separate out the front- and
@@ -101,7 +101,7 @@ re-use the covers in another document. We've also used it for the 'non-chapter'
 sections at the start of our 'book': things like the preface. Again, this is
 to help keep the main file clear.
 
-## Using `\include` and `\includeonly`
+## Il metodo di `\include` e `\includeonly`
 
 The `\include` command is good for chapters, so we have used it for each full
 chapter; it always starts a new page. We have selected which chapters will
@@ -111,7 +111,7 @@ how long your typesetting takes and produce a 'selective' PDF for proofreading.
 In addition, the key advantage of `\includeonly` is that LaTeX will use all of
 the cross reference information from the `.aux` files of other included files.
 
-## Creating a table of contents
+## Generazione dell'indice
 
 The `\tableofcontents` command uses the information from sectioning
 commands to populate the table of contents.  It has its own auxiliary
@@ -121,7 +121,7 @@ section titles. There are similar commands for `\listoffigures` and
 `\listoftables`, which work from the float environment captions, and
 use files with extension `.lof` and `.lot` respectively.
 
-## Splitting the document into parts
+## Suddivisione del documento in parti
 
 The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
 affect the formatting.
@@ -131,7 +131,7 @@ The `\appendix` command changes the numbering to `A`, `B`, etc.,
 so for instance in the first chapter after `\appendix`,
 the header says `Appendix A`.
 
-## Exercises
+## Esercizi
 
 Experiment with the basic structure of the demonstration document,
 try adding and removing entries for `\includeonly` and see the effect.
