@@ -21,7 +21,7 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">Questa lezione mostra i fondamenti delle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili.</span>
+  class="summary">Questa lezione insegna le nozioni fondamentali sulle basi di dati bibliografici. Imparerai come costruire i tuoi database bibliografici personali e come adoperarli nei documenti con i due principali metodi disponibili.</span>
 
 Le fonti (o _riferimenti bibliografici_) delle citazioni bibliografiche 
 presenti nel tuo lavoro possono essere inserite nel documento direttamente, 
