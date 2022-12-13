@@ -128,7 +128,7 @@ der KOMA-Script Sammlung oder auf `memoir` verändert.
 \section{Einführung}
 
 Dies ist ein Beispieldokument mit ein wenig
-Blindtext\footonet{und einer Fußnote}. Dieser Absatz ist ein
+Blindtext\footnote{und einer Fußnote}. Dieser Absatz ist ein
 wenig lang, um zu sehen, wie sich ein zweispaltiges Dokument
 verhält.
 
