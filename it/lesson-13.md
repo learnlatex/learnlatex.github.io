@@ -57,39 +57,39 @@ seguente:
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
-\title{Un libro}
-\author{A.U.~Tore \and A.U.~Trice}
+\title{A Sample Book}
+\author{John Doe \and Joe Bloggs}
 
 \IfFileExists{\jobname.run.xml}
 {
 \includeonly{
-  frontespizio,
-%  capitolo1,
-  capitolo2,
-%  appendice
+  front,
+%  chap1,
+  chap2,
+%  append
   }
 }
 {
-% All'inizio devi scrivere un documento completo
-% per generare tutti i file ausiliari
+% Do a full document initially to generate
+% all the aux files
 }
 
 \begin{document}
 \frontmatter
-\include{frontespizio}
+\include{front}
 
 % =========================
 \mainmatter
-\include{capitolo1}
-\include{capitolo2}
+\include{chap1}
+\include{chap2}
 \appendix
-\include{appendice}
+\include{append}
 
 % ========================
 \backmatter
 \printbibliography
 \newpage
-\input{copertina-posteriore}
+\input{backcover}
 \end{document}
 ```
 <!-- {% endraw %} -->
