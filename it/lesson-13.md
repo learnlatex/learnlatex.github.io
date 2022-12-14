@@ -36,13 +36,16 @@ o per ciascuna sezione significativa (per un lungo articolo).
 
 ## Organizzare i tuoi sorgenti
 
-LaTeX allows us to split up sources in a controlled way. There are two important
-commands here, `\input` and `\include`. We can use `\input` to make a file work
-'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it has a big advantage: it allows us to
-be selective in which chapters to include, so you can work on part of your
-document rather than the whole thing.
+LaTeX ci permette di suddividere i sorgenti in modo controllato. 
+Ci sono due comandi importanti al riguardo, `\input` e `\include`. 
+Possiamo usare `\input` per far funzionare un file ‘come se fosse 
+stato digitato qui’, quindi può essere adoperato (fondamentalmente) 
+per qualunque materiale. 
+Il comando `\include` funziona solo con i capitoli: incomincia una 
+nuova pagina e apporta alcune modifiche interne. 
+Ma ha un grande vantaggio: ci permette di selezionare i capitoli 
+da includere, così, anziché lavorare sempre sull'intero documento,
+puoi ‘lavorarne’ solo una parte alla volta.
 
 Un documento piuttosto lungo potrebbe quindi avere un aspetto simile al 
 seguente:
@@ -67,7 +70,7 @@ seguente:
   }
 }
 {
-% Scrivere all'inizio un documento completo
+% All'inizio devi scrivere un documento completo
 % per generare tutti i file ausiliari
 }
 
@@ -91,57 +94,65 @@ seguente:
 ```
 <!-- {% endraw %} -->
 
-We'll look at the various aspects of this file below. (The various support files
-are at the end of this page.)
+Di seguito esamineremo i vari aspetti di questo file. 
+(I vari file di supporto si trovano alla fine di questa pagina.)
 
 ## Il metodo di `\input`
 
-The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the main file short and clear, and also meaning we could
-re-use the covers in another document. We've also used it for the 'non-chapter'
-sections at the start of our 'book': things like the preface. Again, this is
-to help keep the main file clear.
+Il comando `\input` va bene per parti di un file lungo che _non_ suddiviso
+in capitoli. 
+Nell'esempio, lo abbiamo adoperato per separare la copertina anteriore e 
+quella posteriore, mantenendo il file principale breve e chiaro, e questo 
+significa anche che potremo riutilizzare le copertine in un altro documento. 
+L'abbiamo adoperato anche per le sezioni del tipo ‘non capitolo’ all'inizio 
+del nostro ‘libro’, come la prefazione. 
+Di nuovo, questo serve a mantenere chiaro il file principale.
 
 ## Il metodo di `\include` e `\includeonly`
 
-The `\include` command is good for chapters, so we have used it for each full
-chapter; it always starts a new page. We have selected which chapters will
-actually be typeset using `\includeonly`, which as you can see takes a
-comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proofreading.
-In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from the `.aux` files of other included files.
+Il comando `\include` va bene per i capitoli, quindi lo abbiamo adoperato 
+per ogni capitolo completo; fa incominciare un capitolo sempre 
+su una pagina nuova. 
+Abbiamo selezionato quali capitoli verranno effettivamente composti con 
+`\includeonly`, che come puoi vedere prende come argomento una lista di 
+nomi di file separati da virgole. 
+Quando adoperi `\includeonly`, puoi ridurre il tempo necessario per la 
+composizione e produrre un PDF 'selettivo' per la correzione di bozze. 
+Inoltre, il vantaggio chiave di `\includeonly` è che LaTeX adopererà tutte 
+le informazioni sui riferimenti incrociati dai file `.aux` di altri file inclusi.
 
 ## Generazione dell'indice
 
-The `\tableofcontents` command uses the information from sectioning
-commands to populate the table of contents.  It has its own auxiliary
-file, with extension `.toc`, so you may need to run LaTeX twice to
-resolve the information. The table is generated automatically from the
-section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions, and
-use files with extension `.lof` and `.lot` respectively.
+Il comando `\tableofcontents` adopera le informazioni dai comandi di 
+sezionamento per popolare l'indice. 
+Ha il proprio file ausiliario, con estensione `.toc`, quindi potrebbe 
+essere necessario eseguire LaTeX due volte per risolvere le informazioni. 
+La tabella viene generata automaticamente dai titoli delle sezioni. 
+Esistono comandi simili per `\listoffigures` e `\listoftables`, 
+che lavorano a partire dalle didascalie dell'ambiente `float` e 
+usano rispettivamente file con estensione `.lof` e `.lot`.
 
 ## Suddivisione del documento in parti
 
-The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
-affect the formatting.
-For instance, `\frontmatter` changes the page numbering to
-Roman numbers.
-The `\appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after `\appendix`,
-the header says `Appendix A`.
+I comandi `\frontmatter`, `\mainmatter` e `\backmatter` agiscono sulla 
+formattazione. 
+Per esempio, `\frontmatter` cambia la numerazione delle pagine in numeri 
+romani. 
+Il comando `\appendix` cambia la numerazione in `A`, `B`, ecetera. 
+Così, per esempio, il titolo del primo capitolo dopo `\appendix` 
+sarà `Appendice A`.
 
 ## Esercizi
 
-Experiment with the basic structure of the demonstration document,
-try adding and removing entries for `\includeonly` and see the effect.
+Sperimenta con la struttura di base del documento d'esempio, prova 
+ad aggiungere e rimuovere voci per `\includeonly` e osserva l'effetto.
 
-Add some floats and produce a list of figures and tables.
-If using a locally installed LaTeX, do you see
-how many LaTeX runs are required? (The online systems re-run LaTeX
-"behind the scenes" so the additional required runs are not so obvious.)
+Aggiungi alcuni ambienti galleggianti e genera un elenco di immagini e
+un elenco di tabelle. 
+Se adoperi una distribuzione locale di LaTeX, vedi quante esecuzioni 
+di LaTeX servono? 
+(I sistemi online rieseguono LaTeX ‘dietro le quinte’, quindi le esecuzioni 
+aggiuntive richieste non sono così ovvie.)
 
 ----
 
