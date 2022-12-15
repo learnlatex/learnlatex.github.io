@@ -38,14 +38,16 @@ tutti i file siano Unicode (codifica UTF-8) se non diversamente
 specificato. Sebbene questo motore sia limitato ai caratteri a 8-bit, 
 la maggior parte delle lingue europee può essere supportata.
 
-## Selezione del font
+## Selezione dei font
 
-Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
-nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
-example, the TeX Gyre fonts are a suite of high-quality fonts based on common
-fonts that most people are familiar with such as Times, Helvetica, Palatino, and
-others. To load these fonts, it is as simple as loading a package with the
-appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
+La selezione dei font font con `pdflatex` si appoggia al robusto 
+schema di selezione dei font di LaTeX e oggi una distribuzione 
+standard di LateX contiene numerosi caratteri pronti per l'uso. 
+Per esempio, i caratteri TeX Gyre sono una suite di font di 
+alta qualità basati su font di uso comune con cui la maggior parte 
+delle persone ha familiarità: Times, Helvetica, Palatino e altri. 
+Caricarli è semplice quanto caricare un pacchetto con il nome 
+appropriato. Per un clone del Times, il nome di TeX Gyre è Termes:
 
 ```latex
 \usepackage{tgtermes}
