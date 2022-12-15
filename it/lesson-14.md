@@ -10,29 +10,33 @@ toc-description: "Selezione dei font e della codifica del file."
 # Font e motori Unicode
 
 <span
-  class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
+  class="summary">Questa lezione descrive come LaTeX interpreta un input in Unicode e come questo influenza ciò che scrivi e i font che adoperi. Inoltre, dà informazioni su Unicode e sul supporto ai font OpenType.</span>
 
-When TeX and LaTeX first started being widely used they largely only handled
-European languages out of the box, although there was some capability for using
-other alphabets such as Greek and Russian.
+Quando TeX e LaTeX hanno incominciato a essere adoperati su larga scala, 
+erano in grado di gestire solo lingue europee (scritte con l'alfabeto
+latino, cioè) sebbene esistesse una certa capacità di adoperare altri 
+alfabeti come il greco e il russo.
 
 ## Accenti e lettere accentate
 
-Originally, accents and accented letters were typed using control sequences or
-macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
-use these input methods because they can be easier to type, others wanted to be
-able to use the keys on their keyboards to input such symbols directly.
+All'inizio, gli accenti e le lettere accentate si digitavano con 
+sequenze di controllo o macro, come `\c{c}` per ‘ç’ e `\'e` per ‘é’.
+Mentre alcune persone continuano a usare questi metodi di input 
+perché possono essere più facili da digitare, altri volevano 
+poter adoperare i tasti delle loro tastiere per inserire direttamente 
+tali simboli.
 
-Before Unicode, LaTeX provided support for many types of *file encoding* that
-allowed text to be written in various languages natively — for example, using
-the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would
-internally translate the accented letters into TeX commands to produce the
-correct output.
+Prima di Unicode, LaTeX forniva il supporto per molti tipi di *codifica 
+del file* che permettevano di scrivere nativamente un testo in varie 
+lingue – per esempio, selezionando la codifica `latin1`, gli utenti 
+francesi potevano scrivere ‘`déjà vu`’ e LaTeX traduceva internamente 
+le lettere accentate nei comandi TeX per produrre l'output corretto.
 
-This approach is still in use in modern LaTeX when using the `pdflatex` engine.
-By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
-specified. Although this engine is limited to 8-bit fonts, most European
-languages can be supported.
+Questo approccio è ancora in uso nel moderno LaTeX quando si sceglie 
+il motore `pdflatex`. Per impostazione predefinita, si presume che 
+tutti i file siano Unicode (codifica UTF-8) se non diversamente 
+specificato. Sebbene questo motore sia limitato ai caratteri a 8-bit, 
+la maggior parte delle lingue europee può essere supportata.
 
 ## Selezione del font
 
