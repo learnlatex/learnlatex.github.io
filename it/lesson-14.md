@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Selecting fonts and using Unicode engines"
-description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
-toc-anchor-text: "Fonts & Unicode engines"
-toc-description: "Selecting fonts and file encoding."
+title: "Selezione dei font e uso dei motori Unicode"
+description: "Questa lezione descrive come LaTeX interpreta un input in Unicode e come questo influenza ciò che scrivi e i font che adoperi. Inoltre, dà informazioni su Unicode e sul supporto ai font OpenType."
+toc-anchor-text: "Font e motori Unicode"
+toc-description: "Selezione dei font e della codifica del file."
 ---
 
-# Fonts and Unicode engines
+# Font e motori Unicode
 
 <span
   class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
@@ -16,7 +16,7 @@ When TeX and LaTeX first started being widely used they largely only handled
 European languages out of the box, although there was some capability for using
 other alphabets such as Greek and Russian.
 
-## Accents and accented letters
+## Accenti e lettere accentate
 
 Originally, accents and accented letters were typed using control sequences or
 macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
@@ -34,7 +34,7 @@ By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
 specified. Although this engine is limited to 8-bit fonts, most European
 languages can be supported.
 
-## Font selection
+## Selezione del font
 
 Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
 nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
@@ -56,7 +56,7 @@ for a `pdflatex`-compatible package version.  If you want to use a proprietary
 font, you can search for a suitable clone, which for most applications is
 similar enough to the original.
 
-## The Unicode era
+## L'era Unicode
 
 As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot
 natively use modern OpenType fonts and easily switch between multiple languages
