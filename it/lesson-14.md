@@ -117,4 +117,6 @@ ABC → αβγ → {\cjkfont 你好}
 ```
 
 <p 
-  class="hint">When switching between languages it is usually important to also change things like hyphenation patterns and so on, and the <code>babel</code> and <code>polyglossia</code> packages both provide robust features to do this.</p>
+  class="hint">Quando si passa da una lingua all'altra, di solito è importante modificare anche aspetti 
+  come gli schemi di sillabazione e altri, e i pacchetti <code>babel</code> e <code>polyglossia</code> 
+  forniscono robuste funzionalità per farlo.</p>
