@@ -67,12 +67,14 @@ all'originale da fare al caso tuo.
 
 ## L'era Unicode
 
-As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot
-natively use modern OpenType fonts and easily switch between multiple languages
-that use different alphabets (or scripts, to use the technical term). There are
-two replacements for pdfTeX that natively use Unicode input and modern fonts:
-XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using
-the engines `xelatex` and `lualatex` respectively.
+Siccome `pdflatex` è limitato a codifiche di file a 8-bit e font 
+a 8-bit, non è in grado di adoperare nativamente i moderni caratteri 
+OpenType e passare facilmente tra più lingue che utilizzano alfabeti 
+diversi (o ‘script’, per usare il termine tecnico). 
+Esistono due sostituti di pdfTeX che adoperano nativamente input 
+Unicode e font moderni: XeTeX e LuaTeX. 
+Per LaTeX, questi vengono tipicamente richiamati nel tuo editor usando 
+rispettivamente i motori `xelatex` e `lualatex`.
 
 In these engines, font selection is performed by the `fontspec` package, and for
 simple documents can look as easy as:
