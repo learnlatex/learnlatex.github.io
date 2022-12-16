@@ -54,13 +54,16 @@ appropriato. Per un clone del Times, il nome di TeX Gyre è Termes:
 ```
 {: .noedit :}
 
-For `pdflatex`, most fonts are accessible through packages.  You can have a look
-at [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) or the
-[CTAN page on the ‘Font’ topic](https://www.ctan.org/topic/font) to see some
-options.  You can also search on the Internet for the font you want, and look
-for a `pdflatex`-compatible package version.  If you want to use a proprietary
-font, you can search for a suitable clone, which for most applications is
-similar enough to the original.
+La grande maggioranza dei font per `pdflatex` sono accessibili
+mediante pacchetti. Puoi dare un'occhiata a
+[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) o a
+[CTAN page on the ‘Font’ topic](https://www.ctan.org/topic/font) 
+per vedere qualche opzione.  
+Puoi anche cercare su Internet il font che desideri e guardare
+se ne esiste una versione in pacchetto compatibile con `pdflatex`. 
+Se intendi adoperare un font proprietario, puoi cercarne un clone 
+adatto, che nella maggior parte delle situazioni è abbastanza simile 
+all'originale da fare al caso tuo.
 
 ## L'era Unicode
 
