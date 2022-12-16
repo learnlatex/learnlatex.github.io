@@ -76,28 +76,32 @@ Unicode e font moderni: XeTeX e LuaTeX.
 Per LaTeX, questi vengono tipicamente richiamati nel tuo editor usando 
 rispettivamente i motori `xelatex` e `lualatex`.
 
-In these engines, font selection is performed by the `fontspec` package, and for
-simple documents can look as easy as:
+Con questi motori, la selezione dei font viene eseguita dal pacchetto
+`fontspec`, e per documenti semplici la cosa si risolve facilmente
+come segue:
 ```latex
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
 {: .noedit :}
 
-This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
-Notably, this approach works for *any* OpenType font.  Some fonts available for
-`pdflatex` are also available to `xelatex` and `lualatex` through their
-respective packages as well, or by loading any font you have installed on your
-computer by using `fontspec` as shown above.
+I comandi qui sopra selezionano il carattere TeX Gyre Termes, 
+come nell'esempio di `pdflatex` più in alto. 
+In particolare, questo approccio funziona per *qualunque* font 
+OpenType. Alcuni font disponibili per `pdflatex` sono disponibili 
+anche per `xelatex` e `lualatex` tramite i rispettivi pacchetti, 
+oppure è possibile caricare qualsiasi font installato nel proprio
+computer mediante `fontspec` come hai appena visto.
 
-[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
-with OpenType formats available, so you can use that as a resource for looking
-up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
-earlier.
+[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) elenca
+anche i font disponibili in formato OpenType, quindi puoi consultarlo
+come risorsa per cercare i caratteri insieme a 
+[CTAN page](https://www.ctan.org/topic/font) nominato prima.
 
-Having selected a font, input can now be typed directly in plain Unicode into a 
-source document. Here is an example showing some Latin and Greek letters as 
-well as some CJK ideographs:
+Dopo aver selezionato un font, l'input può ora essere digitato nel
+sorgente direttamente in Unicode semplice. 
+Ecco un esempio che mostra alcune lettere latine e greche 
+insieme ad alcuni ideogrammi CJK:
 
 ```latex
 % !TEX xelatex
