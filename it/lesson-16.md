@@ -1,37 +1,42 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Accessing documentation and getting help"
-description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
-toc-anchor-text: "Help & documentation"
+title: "Accedere alla documentazione e chiedere aiuto"
+description: "Questa lezione mostra le principali fonti di documentazione per software e pacchetti relativi a LaTeX e come cercare aiuto quando sei nei guai."
+toc-anchor-text: "Aiuto e documentazione"
 toc-description: "Accessing help and documentation."
 ---
 
-# Documentation and getting help
+# Documentazione e assistenza
 
 <span
-  class="summary">This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble.</span>
+  class="summary">Questa lezione mostra le principali fonti di documentazione per software e pacchetti relativi a LaTeX e come cercare aiuto quando sei nei guai.</span>
 
-There are several ways to access the documentation of a package or class.
+Esistono diversi modi per accedere alla documentazione di un pacchetto o di una classe.
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeX Live or MiKTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+Se nel tuo computer hai installato una distribuzione di TeX 
+(_per esempio_, TeX Live o MiKTeX) completa della documentazione,
+puoi accedere alla documentazione con `texdoc`,
+uno strumento da riga di comando. 
+Scrivendo nel terminale
 
-`texdoc` < _pkg_ >
+`texdoc` < _pacchetto_ >
 
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
+si aprirà la documentazione del pacchetto `<pacchetto>`. 
+L'utilità cercherà la documentazione disponibile e aprirà ciò che 
+ritiene sia la corrispondenza più vicina al termine di ricerca. 
+Puoi elencare e scegliere tra tutti i risultati validi che trova scrivendo:
 
-`texdoc -l` < _pkg_ >
+`texdoc -l` < _pacchetto_ >
 
 ## texdoc.org
 
-This is a [website](https://texdoc.org/) which works similarly to the `texdoc` utility. You can search
+È un [sito](https://texdoc.org/) che funziona in modo simile a `texdoc` 
+appena visto. Puoi cercare la documentazione che hanno a disposizione proprio come faresti con `texdoc -l` e quindi scegliere tra i risultati
+
+You can search
 for documentation they have available just like you would do with `texdoc -l`
 and then choose from among the results.
 
