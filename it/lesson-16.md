@@ -81,13 +81,16 @@ Altri libri mirati all'apprendimento di LaTeX includono
 
 ## Ricevere aiuto
 
-There are various online forums for asking LaTeX questions; perhaps the most
-popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
-Whenever you ask a question, it's best to first get your example clear: what is
-normally known as a 'minimal working example' (MWE). This doesn't mean the code
-works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means
-having only enough content to show the issue.
+Esistono diversi forum online per porre domande su LaTeX; il più popolare 
+oggi è forse [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
+Ogni volta che fai una domanda, è meglio prima levare dal tuo esempio 
+tutto quello che non serve, fino a renderlo ciò che normalmente è 
+noto come MWE (_Minimal Working Example_, ‘esempio minimo funzionante’). 
+Questo non significa che il codice funzioni (altrimenti, non faresti
+nemmeno la domanda!), ma piuttosto che hai fatto del tuo meglio per 
+renderlo chiaro, autonomo e minimo. 
+Quest'ultimo aggettivo significa che il codice che invierai per chiedere
+aiuto dovrà contenere solo il minimo indispensabile per mostrare il problema.
 
 ### Come fornire un esempio minimo compilabile (MWE, _Minimal Working Example_)
 
@@ -112,21 +115,28 @@ una cosa lunga.
 </p>
 
 
-### Log file
+### File di registro (o <code>log</code>)
 
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
-
-<p 
-  class="hint">Depending on your desktop interface, you might need to 'show extensions' to work out which file it is.</p>
-
-In the log file, you can always see the full error messages. LaTeX's error messages try to be helpful, but they are not the same as messages in word processors.
+È sempre bene avere a portata di mano il file di registro; questo viene creato da LaTeX 
+a ogni esecuzione e ha lo stesso nome del file sorgente ma estensione `.log`.
 
 <p 
-  class="hint">Some editors also make it hard to see the 'full' text of an error, which can hide key details.</p>
+  class="hint">A seconda dell'interfaccia desktop, potrebbe essere necessario ‘mostrare 
+  le estensioni’ per capire quale dei file ausiliari è.</p>
 
-If you have a problem, expert LaTeX users will often ask for a copy of your log file.
+Nel file di registro è sempre possibile visualizzare i messaggi di errore completi. 
+I messaggi di errore di LaTeX cercano di essere utili, ma non sono gli stessi di quelli 
+negli elaboratori di testi.
 
-### Going further
+<p>
+  class="hint">Alcuni editor rendono anche difficile vedere il testo ‘completo’ 
+  di un errore, che può nascondere i dettagli chiave.</p>
 
-Finally we offer a [gallery of small examples](./extra-01) showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.
+Per aiutarti a risolvere un problema, gli utenti LaTeX esperti ti chiederanno spesso 
+una copia del file di registro.
+
+### E adesso?
+
+Infine, ti mostriamo una [galleria di piccoli esempi](./extra-01) 
+che comprende una serie di aree tematiche non trattate in questa introduzione 
+e alcuni pacchetti di LaTeX adatti a esse.
