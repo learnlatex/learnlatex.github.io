@@ -128,7 +128,7 @@ Nel file di registro è sempre possibile visualizzare i messaggi di errore compl
 I messaggi di errore di LaTeX cercano di essere utili, ma non sono gli stessi di quelli 
 negli elaboratori di testi.
 
-<p>
+<p
   class="hint">Alcuni editor rendono anche difficile vedere il testo ‘completo’ 
   di un errore, che può nascondere i dettagli chiave.</p>
 
