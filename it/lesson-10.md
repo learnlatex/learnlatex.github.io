@@ -12,32 +12,33 @@ toc-description: "Modo matematico e notazione matematica."
 <span
   class="summary">Questa lezione presenta il modo matematico di  LaTeX e come si scrivono le formule in linea e in display, le funzionalità aggiuntive fornite dal pacchetto amsmath e come si selezionano i font nella scrittura della matematica.</span>
 
-Typesetting complex mathematics is one of the greatest strengths of LaTeX. You
-can mark up mathematics in a logical way in what is known as 'math mode'.
+La scrittura della matematica, da quella più semplice alle formule
+più complesse, è uno dei punti di forza di LaTeX.
+È possibile scrivere formule matematiche con la marcatura logica 
+nel cosiddetto ‘modo matematico’.
 
 ## Modo matematico
 
-In math mode, spaces are ignored and the correct spacing between characters is
-(almost always) applied.
+Nel modo matematica, gli spazi vengono ignorati e la spaziatura
+corretta tra i caratteri viene (quasi sempre) applicata.
 
-There are two forms of math mode:
+Esistono due forme del modo matematico :
 
-* inline
-* display
+* in linea
+* in display
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-A sentence with inline mathematics: $y = mx + c$.
-A second sentence with inline mathematics: $5^{2}=3^{2}+4^{2}$.
+Una frase con della matematica in linea: $y = mx + c$.
+Un'altra frase con della matematica in linea: $5^{2}=3^{2}+4^{2}$.
 
-
-A second paragraph containing display math.
+Un secondo capoverso contenente della matematica in display.
 \[
   y = mx + c
 \]
-See how the paragraph continues after the display.
+Osserva in che modo il capoverso continua dopo il display.
 \end{document}
 ```
 
@@ -47,7 +48,8 @@ accept slight variations on LaTeX's syntax as they do not actually use LaTeX
 'behind the scenes'.
 
 <p
-  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in
+  class="hint">Tutti i nostri esempi sono scritti in LaTeX <i>corretto</i>. 
+  If you see something different in
 another context, it might be because the example is not really using LaTeX.</p>
 
 ### Modo matematico in linea e notazione matematica
