@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Mathematics"
+title: "Matematica"
 description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
-toc-anchor-text: "Mathematics"
-toc-description: "Math mode and mathematical notation."
+toc-anchor-text: "Matematica"
+toc-description: "Modo matematico e notazione matematica."
 ---
 
-# Mathematics
+# Matematica
 
 <span
   class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
@@ -15,7 +15,7 @@ toc-description: "Math mode and mathematical notation."
 Typesetting complex mathematics is one of the greatest strengths of LaTeX. You
 can mark up mathematics in a logical way in what is known as 'math mode'.
 
-## Math mode
+## Modo matematico
 
 In math mode, spaces are ignored and the correct spacing between characters is
 (almost always) applied.
@@ -50,7 +50,7 @@ accept slight variations on LaTeX's syntax as they do not actually use LaTeX
   class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in
 another context, it might be because the example is not really using LaTeX.</p>
 
-### Inline math mode and mathematical notation
+### Modo matematico in linea e notazione matematica
 
 As you can see above, inline math mode is marked using a pair of dollar
 symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
@@ -104,7 +104,7 @@ math mode symbols using the
 [Detexify](https://detexify.kirelabs.org/classify.html) tool.
 
 
-### Display mathematics
+### Matematica in display
 
 You can use exactly the same commands for display math mode as for
 inline work. Display math mode is set centered by default and is meant
@@ -175,7 +175,7 @@ number as in this example or may be prefixed by section number, so
 are set up by the document class and not described here.
 
 
-## The `amsmath` package
+## Il pacchetto `amsmath`
 
 Mathematical notation is very rich, and this means that the tools built
 into the LaTeX kernel can't cover everything. The `amsmath` package
@@ -234,7 +234,7 @@ d & e & f
 \end{document}
 ```
 
-## Fonts in math mode
+## Font in modo matematico
 
 Unlike normal text, font changes in math mode often convey very specific meaning.
 They are therefore often written explicitly. There are a set of commands you need
@@ -284,7 +284,7 @@ $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 If you need to make other
 symbols bold, [see the extra details](more-10).
 
-## Exercises
+## Esercizi
 
 Try out some basic math mode work: take the examples and switch between
 inline and display math modes. Can you see what effect this has.
