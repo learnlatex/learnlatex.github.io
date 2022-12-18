@@ -34,49 +34,52 @@ Puoi elencare e scegliere tra tutti i risultati validi che trova scrivendo:
 ## texdoc.org
 
 È un [sito](https://texdoc.org/) che funziona in modo simile a `texdoc` 
-appena visto. Puoi cercare la documentazione che hanno a disposizione proprio come faresti con `texdoc -l` e quindi scegliere tra i risultati
-
-You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
+appena visto. Puoi cercarvi la documentazione disponibile 
+proprio come faresti con `texdoc -l` e quindi scegliere tra i risultati.
 
 ## CTAN
 
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
+[CTAN](https://www.ctan.org) (_Comprehensive TeX Archive Network_) è 
+la ‘rete completa di archivi di TeX’, cioè un insieme di server sparsi
+per il mondo che contengono programmi, pacchetti e documentazione su 
+TeX e LaTeX. 
+Siccome la grande maggioranza dei pacchetti per LaTeX viene pubblicata lì
+(di solito un pacchetto si trova in `ctan.org/pkg/<nome-pacchetto>`)
+per accedere a documentazione e file README basta cercarli su CTAN.
 
-## Books on LaTeX
+## Libri su LaTeX
 
-There are several books available that can help you learn more about LaTeX.
-As a beginner, you will gain a lot from a structured beginners guide, as
-those can give a lot more detail than we've covered here. You might also
-want access to a reference with more detail and recommendations.
+Esistono numerosi libri che possono aiutarti a saperne di più su LaTeX. 
+Essendo tu alle prime armi, guadagnerai molto da una guida per principianti 
+strutturata, in quanto può fornirti molti più dettagli di quanti ne 
+abbiamo trattato qui. 
+Puoi scegliere anche un manuale di riferimento con dettagli e consigli
+ancora più specifici e particolareggiati.
 
-The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's official
-guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
-and the comprehensive
+Il LaTeX team ha stilato [un eleno di libri](https://www.latex-project.org/help/books/)
+scritti in gran parte dai loro membri. I più notevoli sono 
+[la guida ufficiale di Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
+e l'esauriente
 [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
 
-Other books aimed at learning LaTeX include
+Altri libri mirati all'apprendimento di LaTeX includono
 
 - [_Guide to
-  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
-  Kopka and Patrick Daly: available as an e-book
-- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
+  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) di Helmut
+  Kopka e Patrick Daly: disponibile come e-book
+- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) di
+  Nicola Talbot: disponibile come e-book liberamente scaricabile o 
+  in una versione a stampa a basso costo
 - [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
+  thesis_](https://www.dickimaw-books.com/latex/thesis/) di
+  Nicola Talbot: disponibile come e-book liberamente scaricabile o 
+  in una versione a stampa a basso costo
 - [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
-  by Stefan Kottwitz: available as an e-book and in print
-- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
-  Marc van Dongen: available as an e-book and in print
+  di Stefan Kottwitz: disponibile come e-book e in una versione a stampa
+- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) di
+  Marc van Dongen: disponibile come e-book e in una versione a stampa
 
-## Getting help
+## Ricevere aiuto
 
 There are various online forums for asking LaTeX questions; perhaps the most
 popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
@@ -86,9 +89,9 @@ works (as you wouldn't be asking otherwise!), but rather it means you've done
 your best to make it clear, self-contained and minimal. The latter means
 having only enough content to show the issue.
 
-### How to provide a minimal working example (MWE)
+### Come fornire un esempio minimo compilabile (MWE, _Minimal Working Example_)
 
-How do you construct a MWE? Normally easiest is to start from
+Come si costruisce un MWE? Di solito, è più semplice incominciare da
 
 ```latex
 \documentclass{article}
@@ -98,11 +101,15 @@ Text
 \end{document}
 ```
 
-and add lines one at a time until you show the issue. You can try to
-'cut down' your real file, but that can be a long process.
+e aggiungi una riga dopo l'altra finché non mostri il problema. 
+Vivecersa, puoi provare a ‘ridurre’ il sorgente, ma può essere 
+una cosa lunga.
 
 <p 
-  class="hint">If you need more text to show page breaking and other effects, then packages such as <code>lipsum</code> may be used to generate nonsense paragaraphs of text while keeping your test file small.</p>
+  class="hint">Se hai bisogno di più testo per mostrare interruzioni di pagina e altri effetti, 
+  puoi adoperare pacchetti come <code>lipsum</code>, che permette di generare capoversi di 
+  testo fittizio mantenendo breve il tuo file d'esempio.
+</p>
 
 
 ### Log file
