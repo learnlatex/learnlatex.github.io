@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Matematica"
-description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
+description: "Questa lezione presenta il modo matematico di  LaTeX e come si scrivono le formule in linea e in display, le funzionalità aggiuntive fornite dal pacchetto amsmath e come si selezionano i font nella scrittura della matematica."
 toc-anchor-text: "Matematica"
 toc-description: "Modo matematico e notazione matematica."
 ---
@@ -10,7 +10,7 @@ toc-description: "Modo matematico e notazione matematica."
 # Matematica
 
 <span
-  class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
+  class="summary">Questa lezione presenta il modo matematico di  LaTeX e come si scrivono le formule in linea e in display, le funzionalità aggiuntive fornite dal pacchetto amsmath e come si selezionano i font nella scrittura della matematica.</span>
 
 Typesetting complex mathematics is one of the greatest strengths of LaTeX. You
 can mark up mathematics in a logical way in what is known as 'math mode'.
