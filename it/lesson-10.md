@@ -19,10 +19,11 @@ nel cosiddetto ‘modo matematico’.
 
 ## Modo matematico
 
-Nel modo matematica, gli spazi vengono ignorati e la spaziatura
-corretta tra i caratteri viene (quasi sempre) applicata.
+Nel modo matematico, gli spazi vengono ignorati e viene
+(quasi sempre) applicata la spaziatura
+corretta tra i caratteri.
 
-Esistono due forme del modo matematico :
+Esistono due forme del modo matematico:
 
 * in linea
 * in display
@@ -42,68 +43,74 @@ Osserva in che modo il capoverso continua dopo il display.
 \end{document}
 ```
 
-You may see 'LaTeX-like' mathematical input in other places, for example
-the MathJax system for placing equations in web pages. These systems often
-accept slight variations on LaTeX's syntax as they do not actually use LaTeX
-'behind the scenes'.
+Potresti vedere input matematici ‘simili a LaTeX’ in altri posti, 
+come per esempio il sistema MathJax per inserire equazioni nelle pagine 
+web. Spesso questi sistemi spesso accettano lievi variazioni nella 
+sintassi di LaTeX perché ‘dietro le quinte’ non usano davvero LaTeX.
 
 <p
   class="hint">Tutti i nostri esempi sono scritti in LaTeX <i>corretto</i>. 
-  If you see something different in
-another context, it might be because the example is not really using LaTeX.</p>
+  Se vedi qualcosa di diverso in un altro contesto, potrebbe essere 
+  perché l'esempio non utilizza davvero LaTeX.</p>
 
 ### Modo matematico in linea e notazione matematica
 
-As you can see above, inline math mode is marked using a pair of dollar
-symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
-Simple expressions are entered without any special markup, and you'll see
-that the math is spaced out nicely and has letters in italic.
+Come puoi vedere sopra, il modo matematico in linea è delimitato 
+da una coppia di dollari (`$...$`). 
+Si può anche adoperare la notazione `\( ... \)`. 
+Le espressioni semplici vengono inserite senza marcature particolari,
+e osserverai che gli elementi nelle formule sono ben distanziati
+tra loro e le lettere automaticamente in corsivo.
 
-Inline math mode restricts vertical size of the expression so that as
-far as possible the formula does not disturb the linespacing of the
-paragraph.
+Il modo matematico in linea limita la dimensione verticale della
+formula in modo da non disturbare, per quanto possibile, l'avanzamento
+di riga del capoverso in cui è inserita.
 
-Note that _all_ mathematics should be marked up as math, even if it is
-a single character  use `... $2$ ...`   not `... 2 ...` otherwise, for
-example, when you need a negative number and need math to get a minus
-sign the `... $-2$ ...` may use math digits which may not be the same
-font as the text digits (depending on the document class).
-Conversely
-beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using `_` (which
-may be marked up as `\$` and `\_` respectively).
+Nota bene che _tutta_ la matematica dovrebbe essere inserita nel 
+sorgente come tale (tra dollari) anche se si 
+tratta di un solo carattere: dunque, è bene scrivere `... $2$ ...` e non 
+`... 2 ...`. In caso contrario, per esempio, dovendo scrivere un 
+numero negativo in modo matematico per ottenere il corretto segno
+di meno, la scrittura `... $-2$ ...` potrebbe adoperare cifre 
+matematiche diverse dal carattere delle altre cifre presenti 
+del testo (a seconda della classe del documento). 
+Al contrario, presta attenzione ai costrutti in modalità matematica 
+che appaiono come testo semplice copiato da fonti terze, come valori 
+monetari che adoperano `$` o nomi di file nei quali è presente `_` 
+(che possono essere contrassegnati rispettivamente come `\$` e `\_`).
 
-We can easily add superscripts and subscripts; these are marked using `^` and
-`_`, respectively.
-
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\begin{document}
-Superscripts $a^{b}$ and subscripts $a_{b}$.
-\end{document}
-```
-
-(You might see examples where simple super- and subscripts are entered without
-braces, but that is not the official syntax and can go wrong; always use
-braces.)
-
-There are a _lot_ of specialist math mode commands. Some of them are quite
-easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
-Greek letter.
+Si possono aggiungere facilmente esponenti e deponenti marcandoli
+con `^` e `_` rispettivamente.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Some mathematics: $y = 2 \sin \theta^{2}$.
+Un esponente $a^{b}$ e un deponente $a_{b}$.
 \end{document}
 ```
+(Potresti vedere esempi in cui apici e pedici semplici 
+sono scritti senza parentesi graffe, ma questa non è la 
+sintassi ufficiale e potrebbe non funzionare: 
+metti _sempre_ le parentesi graffe e non sbagli.)
 
-We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for
-math mode symbols using the
-[Detexify](https://detexify.kirelabs.org/classify.html) tool.
+Ci sono _tantissimi_ comandi per il modo matematico 
+specialistico. Alcuni sono abbastanza semplici, 
+per esempio `\sin` per il seno e `\log` il logaritmo, 
+o `\theta` per la corrispondente lettera greca.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\begin{document}
+Un po' di matematica: $y = 2 \sin \theta^{2}$.
+\end{document}
+```
+Non possiamo trattare qui tutti i comandi standard 
+del modo matematico di LaTeX, ma esistono numerose 
+risorse online che li elencano tutti. 
+Puoi cercare i comandi per i simboli matematici
+tramite lo strumento [Detexify](https://detexify.kirelabs.org/classify.html).
 
 
 ### Matematica in display
