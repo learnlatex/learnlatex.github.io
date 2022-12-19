@@ -150,7 +150,7 @@ Un capoverso che riguarda una formula voluminosa
 Osserva qui come la notazione di esponenti e deponenti 
 viene adoperata per impostare i limiti dell'integrazione.
 
-Qui abbiamo aggiunto dello spazio a mano: la scrittura`\,`
+Qui abbiamo aggiunto dello spazio a mano: la scrittura `\,`
 inserisce uno spazio sottile prima di `dx`, necessario
 perché non si tratta di un prodotto.
 La formattazione dell'operatore differenziale varia: alcuni 
@@ -197,11 +197,13 @@ documento e non sono descritto qui.
 
 ## Il pacchetto `amsmath`
 
-Mathematical notation is very rich, and this means that the tools built
-into the LaTeX kernel can't cover everything. The `amsmath` package
-extends the core support to cover a lot more ideas.
-The [`amsmath` User Guide](http://texdoc.org/pkg/amsmath)
-contains many more examples than we can show in this lesson.
+La notazione matematica è molto ricca, il che significa che gli 
+strumenti integrati nel nucleo di LaTeX non possono coprire tutto. 
+Il pacchetto `amsmath` estende il supporto di base per soddisfare
+molte più esigenze.
+La [documentazione di `amsmath`](http://texdoc.org/pkg/amsmath)
+contiene molti più esempi di quanti non possiamo mostrarne
+in questa lezione.
 
 ```latex
 \documentclass{article}
@@ -209,7 +211,7 @@ contains many more examples than we can show in this lesson.
 \usepackage{amsmath}
 
 \begin{document}
-Solve the following recurrence for $ n,k\geq 0 $:
+Risolvi la seguente ricorrenza per $ n,k\geq 0 $:
 \begin{align*}
   Q_{n,0} &= 1   \quad Q_{0,k} = [k=0];  \\
   Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $n$, $k>0$.}
@@ -226,15 +228,15 @@ Notice that here we used `align*`, and the equation didn't come out numbered.
 Most math environments number the equations by default, and the starred variant
 (with a `*`) disables numbering.
 
-The package also has several other convenient environments, for
-example for matrices.
+Il pacchetto definisce anche molti altri ambienti utili, per esempio 
+per le matrici.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \begin{document}
-AMS matrices.
+Matrici di AMS.
 \[
 \begin{matrix}
 a & b & c \\
