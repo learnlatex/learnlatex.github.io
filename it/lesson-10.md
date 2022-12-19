@@ -94,9 +94,9 @@ sono scritti senza parentesi graffe, ma questa non è la
 sintassi ufficiale e potrebbe non funzionare: 
 metti _sempre_ le parentesi graffe e non sbagli.)
 
-Ci sono _tantissimi_ comandi per il modo matematico 
-specialistico. Alcuni sono abbastanza semplici, 
-per esempio `\sin` per il seno e `\log` il logaritmo, 
+Esistono _tantissimi_ comandi per il modo matematico 
+specialistico. Alcuni si indovinano abbastanza facilmente: 
+per esempio, `\sin` per il seno, `\log` il logaritmo 
 o `\theta` per la corrispondente lettera greca.
 
 ```latex
@@ -106,30 +106,35 @@ o `\theta` per la corrispondente lettera greca.
 Un po' di matematica: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
-Non possiamo trattare qui tutti i comandi standard 
+Non è possibile trattare qui tutti i comandi standard 
 del modo matematico di LaTeX, ma esistono numerose 
 risorse online che li elencano tutti. 
 Puoi cercare i comandi per i simboli matematici
-tramite lo strumento [Detexify](https://detexify.kirelabs.org/classify.html).
+tramite lo strumento 
+[Detexify](https://detexify.kirelabs.org/classify.html).
 
 
 ### Matematica in display
 
-You can use exactly the same commands for display math mode as for
-inline work. Display math mode is set centered by default and is meant
-for larger equations that are 'part of a paragraph'. Note that
-display math environments do not allow a paragraph to end within the
-mathematics, so you may not have blank lines within the source of the
-display.
+Gli identici comandi adoperati per la matematica in linea
+possono essere adoperati per mostrarla in display.
+Un display matematico viene composto al centro della pagina per 
+impostazione predefinita ed è pensato per equazioni più 
+grandi che sono ‘parte di un capoverso’. 
+Tieni presente che siccome gli ambienti matematici in display non 
+permettono a un capoverso di terminare al loro interno, 
+non sono ammesse righe vuote nel sorgente di questi ambienti.
 
-The paragraph should always be started _before_ the display so do not
-leave a blank line before the display math environment. If you need
-several lines of mathematics, do not use consecutive display math
-environments (this produces inconsistent spacing); use one of the
-multi-line display environments such as `align` from the `amsmath`
-package described later.
+Il capoverso dovrebbe incominciare sempre _prima_ del display, 
+matematico, quindi non lasciare una riga vuota prima di esso. 
+Se hai bisogno di più righe di matematica, non adoperare display
+matematici consecutivi (la cosa produce una spaziatura incoerente); 
+usa invece uno degli ambienti matematici ‘multiriga’ come 
+`align` del pacchetto `amsmath`, descritto più avanti.
 
-It's particularly useful for integrations, for example:
+
+
+partic pÈ 
 
 ```latex
 \documentclass{article}
