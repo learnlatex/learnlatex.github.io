@@ -132,62 +132,68 @@ matematici consecutivi (la cosa produce una spaziatura incoerente);
 usa invece uno degli ambienti matematici ‘multiriga’ come 
 `align` del pacchetto `amsmath`, descritto più avanti.
 
-
-
-partic pÈ 
+I display matematici sono particolarmente utili per formule
+contenenti simboli voluminosi come gli integrali, come si vede 
+nell'esempio seguente:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-A paragraph about a larger equation
+Un capoverso che riguarda una formula voluminosa
 \[
 \int_{-\infty}^{+\infty} e^{-x^2} \, dx
 \]
 \end{document}
 ```
 
-Notice here how sub-/superscript notation is used to set the limits on the
-integration.
+Osserva qui come la notazione di esponenti e deponenti 
+viene adoperata per impostare i limiti dell'integrazione.
 
-We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`.
-Formatting of the differential operator varies: some publishers use an upright
-'d' whilst others use an italic '_d_'. One way to write your source to allow you to
-handle either is to create a command `\diff` that you can adjust as required,
-[for example](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
+Qui abbiamo aggiunto dello spazio a mano: la scrittura`\,`
+inserisce uno spazio sottile prima di `dx`, necessario
+perché non si tratta di un prodotto.
+La formattazione dell'operatore differenziale varia: alcuni 
+editori adoperano una ‘d’ in tondo, mentre altri scelgono la 
+‘_d_’ corsiva. Una soluzione pratica per gestire entrambe
+le varianti nella scrittura del tuo sorgente è creare un 
+comando `\diff` da regolare come richiesto, 
+[come si vede qui](http://www.tug.org/TUGboat/tb41-1/tb127gregorio -matematica.pdf)
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\newcommand{\diff}{\mathop{}\!d}            % For italic
-% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % For upright
+\newcommand{\diff}{\mathop{}\!d}            % Per il corsivo
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % Per il tondo
 \begin{document}
-A paragraph about a larger equation
+Un capoverso che riguarda una formula voluminosa
 \[
 \int_{-\infty}^{+\infty} e^{-x^2} \diff x
 \]
 \end{document}
 ```
 
-You often want a numbered equation, which is created using the `equation`
-environment. Let's try the same example again:
+Spesso bisogna numerare le formule, cosa che si può fare
+automaticamente con l'ambiente `equation`. 
+Riproviamo di nuovo con il solito esempio:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-A paragraph about a larger equation
+Un capoverso che riguarda una formula voluminosa
 \begin{equation}
 \int_{-\infty}^{+\infty} e^{-x^2} \, dx
 \end{equation}
 \end{document}
 ```
 
-The equation number is incremented automatically and may be a simple
-number as in this example or may be prefixed by section number, so
-(2.5) for the 5th equation in section 2. The details of the formatting
-are set up by the document class and not described here.
-
+Il numero dell'equazione è incrementato automaticamente e può essere 
+un numero semplice, come in questo esempio, o preceduto dal numero 
+della sezione in cui la formula si trova, quindi (2.5) per la quinta 
+equazione della sezione 2, per esempio. 
+I dettagli della formattazione vengono impostati dalla classe di 
+documento e non sono descritto qui.
 
 ## Il pacchetto `amsmath`
 
