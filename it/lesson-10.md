@@ -79,20 +79,20 @@ che appaiono come testo semplice copiato da fonti terze, come valori
 monetari che adoperano `$` o nomi di file nei quali è presente `_` 
 (che possono essere contrassegnati rispettivamente come `\$` e `\_`).
 
-Si possono aggiungere facilmente esponenti e deponenti marcandoli
+Si possono aggiungere facilmente esponenti e pedici marcandoli
 con `^` e `_` rispettivamente.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Un esponente $a^{b}$ e un deponente $a_{b}$.
+Un esponente $a^{b}$ e un pedice $a_{b}$.
 \end{document}
 ```
-(Potresti vedere esempi in cui apici e pedici semplici 
+(Potresti vedere esempi in cui esponenti e pedici semplici 
 sono scritti senza parentesi graffe, ma questa non è la 
 sintassi ufficiale e potrebbe non funzionare: 
-metti _sempre_ le parentesi graffe e non sbagli.)
+per non sbagliare, metti _sempre_ le parentesi graffe.)
 
 Esistono _tantissimi_ comandi per il modo matematico 
 specialistico. Alcuni si indovinano abbastanza facilmente: 
@@ -219,14 +219,18 @@ Risolvi la seguente ricorrenza per $ n,k\geq 0 $:
 \end{document}
 ```
 
-The `align*` environment makes the equations line up on the ampersands, the `&`
-symbols, just like a table. Notice how we've used `\quad` to insert a bit of
-space, and `\text` to put some normal text inside math mode. We've also used
-another math mode command, `\binom`, for a binomial.
+L'ambiente `align*` allinea le equazioni alle ‘e commerciali’ (`&`)
+proprio come in una tabella. 
+Osserva come abbiamo adoperato `\quad` per inserire un po' di spazio, 
+e `\text` per inserire del testo normale all'interno del modo 
+matematico. 
+Abbiamo anche usato un altro comando matematico: `\binom`, 
+per un binomio.
 
-Notice that here we used `align*`, and the equation didn't come out numbered.
-Most math environments number the equations by default, and the starred variant
-(with a `*`) disables numbering.
+Nota che qui abbiamo adoperato `align*` e che l'equazione non è 
+numerata. La maggior parte degli ambienti matematici numera le equazioni 
+per impostazione predefinita, e la variante con asterisco (con un `*` dopo
+il nome dell'ambiente) disabilita la numerazione.
 
 Il pacchetto definisce anche molti altri ambienti utili, per esempio 
 per le matrici.
@@ -258,16 +262,17 @@ d & e & f
 
 ## Font in modo matematico
 
-Unlike normal text, font changes in math mode often convey very specific meaning.
-They are therefore often written explicitly. There are a set of commands you need
-here:
+A differenza del testo normale, i diversi font in modo matematico spesso 
+trasmettono un significato molto specifico. 
+Spesso, quindi, sono scritti in modo esplicito. 
+A questo punto, hai bisogno di conoscere una serie di comandi:
 
-- `\mathrm`: roman (upright)
-- `\mathit`: italic spaced as 'text'
-- `\mathbf`: boldface
-- `\mathsf`: sans serif
-- `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
+- `\mathrm`: romano (tondo)
+- `\mathit`: corsivo, spazieggiato come testo normale
+- `\mathbf`: nero
+- `\mathsf`: senza grazie
+- `\mathtt`: a spaziatura fissa (macchina da scrivere)
+- `\mathbb`: a tratto doppio (nero da lavagna) (richiede il pacchetto `amsfonts`)
 
 Each of these takes Latin letters as an argument, so for example we might
 write a matrix as
