@@ -1,39 +1,43 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Basic LaTeX document structure"
-description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
-toc-anchor-text: "More on: Basic LaTeX document structure"
+title: "Di più su: Struttura di base di un documento"
+description: "Questa lezione fornisce maggiori dettagli su come lanciare LaTeX, sui caratteri speciali di cui fa uso e su come inserirli nel PDF composto."
+toc-anchor-text: "Di più su: Struttura di base di un documento"
 ---
 
-## Running LaTeX
+## Lanciare LaTeX
 
-As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
-this, try opening your first document in a simple text editor, for example
-on Windows using Notepad. You should see the same text as in a dedicated LaTeX
-editor, but without any highlight of keywords.
+Come abbiamo [descritto nel dettaglio prima](lesson-02), i documenti LaTeX 
+consistono di testo puro. Per verificarlo, prova ad aprire il tuo primo documento 
+in un semplice editor di testo, per esempio Notepad su Windows. 
+Dovresti vedere lo stesso testo che vedi in un editor dedicato a LaTeX, 
+ma senza l'evidenziazione della sintassi.
 
-You can also convert to PDF without your editor; this means using the Command
-Prompt/Terminal, so don't worry if you are not familiar with this. If you
-*are*, you can navigate to the directory containing your `.tex` source file and
-run
+Puoi anche convertire un sorgente in PDF senza per forza
+passare per l'editor: il prompt dei comandi o terminale ti permette di farlo
+dalla riga di comando, quindi non preoccuparti se non hai familiarità con 
+questo metodo. 
+Se invece *lo sei*, puoi metterti nella directory contenente il tuo file sorgente 
+`.tex` e dare
 
-`pdflatex first`
+`pdflatex primo`
 
-or
+o
 
-`pdflatex first.tex`
+`pdflatex primo.tex`
 
-to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with `.tex` unless you specify otherwise.
+per ottenere il tuo PDF composto. 
+Nota che l'estensione `.tex` è facoltativa: LaTeX assumerà
+che i file finiscano con `.tex` a meno che tu non specifichi diversamente.
 
-## Special characters
+## Caratteri speciali
 
 If you need to type in a special character, most of the time you can simply
 use a backslash in front of it, so for example `\{` is used to print a literal
 `{`. There are a few cases where you need to use a longer command instead:
 
-| Symbol | Short Command <br><small>(math and text)</small> | Long Command <br><small>(for text only)</small> |
+| Simbolo | Comando breve <br><small>(testo e matematica)</small> | Comando lungo <br><small>(solo testo)</small> |
 | --- | --- | --- |
 | `{`    | `\{`          | `\textbraceleft`  |
 | `}`    | `\}`          | `\textbraceright` |
