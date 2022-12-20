@@ -281,7 +281,7 @@ write a matrix as
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-The matrix $\mathbf{M}$.
+La matrice $\mathbf{M}$.
 \end{document}
 ```
 
