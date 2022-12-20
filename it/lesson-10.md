@@ -285,14 +285,16 @@ The matrix $\mathbf{M}$.
 \end{document}
 ```
 
-Note that the default math italic separates letters so that they may
-be used to denote a product of variables. Use `\mathit` to make a word italic.
+Si noti che il corsivo matematico predefinito separa le lettere 
+per poterle adoperare per denotare un prodotto di variabili. 
+Per scrivere una parola in corsivo, adopera `\mathit`.
 
-The `\math..` font commands use fonts specified for math
-use. Sometimes you need to embed a word that is part of the outer
-sentence structure and needs the current text font, for that you can
-use `\text{...}` (which is provided by the `amsmath` package) or
-specific font styles such as `\textrm{..}`.
+I comandi per i font matematici del tipo `\math..` font caricano 
+font specifici per la matematica. A volte è necessario incorporare 
+una parola che fa parte della struttura esterna della frase e richiede 
+il carattere del testo corrente. Per questo è possibile adoperare 
+`\text{...}` (richiede `amsmath`) o stili di carattere specifici 
+come `\textrm{..}`.
 
 ```latex
 \documentclass{article}
@@ -307,24 +309,25 @@ $\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
 \end{document}
 ```
 
-
-If you need to make other
-symbols bold, [see the extra details](more-10).
+Se ti servono altri simboli in nero, leggi come fare
+[nella lezione di approfondimento](more-10).
 
 ## Esercizi
 
-Try out some basic math mode work: take the examples and switch between
-inline and display math modes. Can you see what effect this has.
+Prova a lavorare un po' in modo matematico di base: prendi gli esempi 
+di questa lezione e passa dal modo in linea a quello in display. 
+Riesci a vedere le differenze?
 
-Try adding other Greek letters, both lower- and uppercase. You should be
-able to guess the names.
+Prova ad aggiungere altre lettere greche, sia minuscole sia maiuscole. 
+Dovresti essere in grado di indovinarne i nomi.
 
-Experiment with the font changing commands: what happens when you try to
-nest them?
+Fa' delle prove con i comandi per cambiare font: che cosa succede 
+quando provi ad annidarli?
 
-Displayed math is centered by default; try adding the document class
-option `[fleqn]` (flush
-left equation) option to some of the above examples to see a different
-layout. Similarly equation numbers are usually on the
-right. Experiment with adding the `[leqno]` (left equation numbers)
-document class option.
+La matematica in display è centrata per impostazione predefinita; 
+prova ad aggiungere l'opzione di classe `[fleqn]` 
+(allinea le equazioni a sinistra) ad alcuni degli esempi precedenti 
+per vedere una disposizione diversa. Analogamente, i numeri delle equazioni 
+sono di solito a destra. 
+Prova ad aggiungere l'opzione di classe `[leqno]` 
+(mette i numeri delle equazioni a sinistra).
