@@ -1,28 +1,31 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: What is LaTeX and how does it work?"
-description: "This lesson gives more context on the history of LaTeX and other formats available."
-toc-anchor-text: "More on: What is LaTeX and how does it work?"
+title: "Un po' di più su: Che cos'è LaTeX e come funziona?"
+description: "Questa lezione dà ulteriori informazioni sulla storia di LaTeX e sugli altri formati disponibile."
+toc-anchor-text: "Un po' di più su: Che cos'è LaTeX e come funziona?"
 ---
 
-The word 'LaTeX' actually consists of two components, 'La' and 'TeX'. In the
-following we will briefly describe where they come from.
+La parola ‘LaTeX’ è formata per la verità da due componenti: 
+‘La’ e ‘TeX’.
+Di seguito descriveremo brevemente da dove provengono.
 
-TeX was originally invented by Stanford professor Donald Knuth. Knuth is
-well known for a series of books called *The Art of Computer Programming*
-(known as TAOCP). In
-1973 a new edition of the books was to be made; this was the time when the
-typesetting industry switched from traditional typesetting with lead to
-photo-based typesetting. Donald Knuth did not like the quality of the print and
-therefore decided to implement his own typesetting system.
+TeX è stato originariamente inventato da Donald Knuth, professore a Stanford. 
+Knuth è molto conosciuto per una serie di libri intitolata 
+*The Art of Computer Programming* (conosciuta come TAOCP). 
+Nel 1973 doveva essere realizzata una nuova edizione dei libri; 
+questo è stato il momento in cui l'industria della composizione tipografica 
+è passata dalla composizione tradizionale con i caratteri di piombo 
+alla fotocomposizione. 
+A Donald Knuth non piaceva la qualità della stampa e quindi decise 
+di implementare un suo proprio sistema di composizione.
 
-In May 1977 the development of TeX started.
+Lo sviluppo di TeX è incominciato nel maggio del 1977.
 
-The original TeX was rather complicated to use, even Donald Knuth used various
-macros to edit his books. Leslie Lamport, who works for Microsoft nowadays, also
-developed a set of macros that simplify the use of TeX and called this macro
-set “LaTeX”.
+La versione originale di TeX era piuttosto complicata da usare, tanto
+che lo stesso Donald Knuth usava svariate macro per scrivere i suoi libri. 
+Anche Leslie Lamport, che oggi lavora per Microsoft, ha sviluppato una 
+serie di macro che semplificano l'uso di TeX, e l'ha chiamata ‘LaTeX’.
 
-Today LaTeX is the most common way to interact with TeX. Another alternative is
-[ConTeXt](https://www.contextgarden.net/).
+Oggi LaTeX è la strada più comune per ingeragire con TeX.
+Un'alternativa a LaTeX è [ConTeXt](https://www.contextgarden.net/).
