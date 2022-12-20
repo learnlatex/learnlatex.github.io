@@ -33,9 +33,10 @@ che i file finiscano con `.tex` a meno che tu non specifichi diversamente.
 
 ## Caratteri speciali
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need to use a longer command instead:
+Se hai bisogno di inserire un carattere speciale, la maggior parte delle volte
+basta premettergli semplicemente una barra rovescia: per esempio, la scrittura 
+`\{` è usata per stampare una `{`.
+Ci sono alcuni casi in cui è necessario utilizzare invece un comando più lungo:
 
 | Simbolo | Comando breve <br><small>(testo e matematica)</small> | Comando lungo <br><small>(solo testo)</small> |
 | --- | --- | --- |
@@ -50,7 +51,7 @@ use a backslash in front of it, so for example `\{` is used to print a literal
 | `^`    |               | `\textasciicircum`|
 | `~`    |               | `\textasciitilde` |
 
-For the last three symbols there are no short commands available,
-because `\\` is used to indicate a linebreak and `\~` and `\^` are used
-to produce tilde and circumflex accents when using only ASCII
-characters as input.
+Per gli ultimi tre simboli non è disponibile un comando breve,
+perché `\\` si adopera per indicare un'interruzione di riga 
+e `\~` e `\^` si adoperano per produrre una tilde e un accento
+circonflesso negli input scritti in soli caratteri ASCII.
