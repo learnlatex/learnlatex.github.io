@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Un po' di più su: Che cos'è LaTeX e come funziona?"
-description: "Questa lezione dà ulteriori informazioni sulla storia di LaTeX e sugli altri formati disponibile."
+description: "Questa lezione fornisce ulteriori informazioni sulla storia di LaTeX e sugli altri formati disponibile."
 toc-anchor-text: "Un po' di più su: Che cos'è LaTeX e come funziona?"
 ---
 
