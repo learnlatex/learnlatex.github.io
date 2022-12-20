@@ -1,35 +1,39 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Working with LaTeX"
-description: "This lesson gives more detail on what LaTeX is and the engines it runs on."
-toc-anchor-text: "More on: Working with LaTeX"
+title: "Ancora su: Lavorare con LaTeX"
+description: "Questa lezione fornisce maggiori dettagli su che cosa sono LaTeX e i motori su cui gira."
+toc-anchor-text: "Ancora su: Lavorare con LaTeX"
 ---
 
-For most of our examples, we don't use a program called `latex` but instead
-one called `pdflatex`. This is one of a family of related programs, all
-of which are 'descendants' of `latex`. We have chosen `pdflatex` because
-it is perhaps the most widely-used system and directly produces PDF files.
+Per la grande maggioranza dei nostri esempi, non adoperiamo un programma 
+chiamato `latex` ma uno chiamato `pdflatex`. 
+Questo fa parte di una famiglia di programmi correlati, tutti ‘discendenti’ 
+di `latex`. 
+Abbiamo scelto `pdflatex` perché è forse il sistema più adoperato 
+e perché produce direttamente file PDF.
 
-## Formats and engines
+## Formati e motori
 
-As described [earlier](more-01), LaTeX is built on a system called TeX. We
-call LaTeX a 'format': a collection of macros (instructions and commands) that
-TeX understands. When you run `pdflatex`, you are _actually_ starting a
-program called 'pdfTeX' with a pre-loaded 'LaTeX format'. We normally call
-pdfTeX an _engine_: a program that understands TeX instructions.
+Come abbiamo descritto [prima](more-01), LaTeX è costruito sopra un sistema 
+chiamato TeX. Chiamiamo LaTeX _formato_: una collezione di macro 
+(istruzioni e comandi) che TeX comprende. 
+Quando lanci `pdflatex`, _in verità_ stai lanciando un
+programma chiamato 'pdfTeX' con un ‘formato LaTeX’ precaricato. 
+Di solito, noi chiamiamo pdfTeX _motore_: un programma che
+comprende le istruzioni di TeX.
 
-There are three engines in common use today:
+I motori comunenemente adoperati oggi sono tre:
 
 - pdfTeX
 - XeTeX
 - LuaTeX
 
-We will cover [XeTeX and LuaTeX later](lesson-14): the main thing we need to
-know now is that they are capable of loading operating system fonts, whereas
-pdfTeX can't do that.
+Descriveremo [XeTeX e LuaTeX più avanti](lesson-14): la cosa principale da 
+sapere per il momento è che questi motori sono in grado di caricare i font 
+del sistema operativo, mentre pdfTeX no.
 
-If you are in Japan, or writing lots of Japanese, you might also come across
-pTeX and upTeX. These are specialized engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX, in particular, is still
-the most popular system for Japanese.
+Se sei in Giappone o scrivi molto in giapponese, potresti anche imbatterti 
+in pTeX e upTeX. Sono motori specializzati per la composizione verticale. 
+Anche LuaTeX può fare molto di questo, ma al momento upTeX, in particolare, 
+è ancora il sistema più popolare per i giapponesi.
