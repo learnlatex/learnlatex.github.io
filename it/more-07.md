@@ -1,12 +1,14 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Including graphics and positioning"
-description: "This lesson gives details on how better name and store graphics files to be used with LaTeX, and how you can make your own graphics from within LaTeX."
-toc-anchor-text: "More on: Including graphics and positioning"
+title: "Di più su: Inclusione e collocamento di immagini esterne sulla pagina"
+description: "Questa lezione fornisce dettagli su come nominare e archiviare 
+meglio i file grafici da adoperare con LaTeX e su come creare file grafici 
+con gli strumenti offerti da LaTeX."
+toc-anchor-text: "Di più su: Inclusione e collocamento di immagini esterne sulla pagina"
 ---
 
-## Naming graphics files
+## Assegnare un nome ai file grafici
 
 LaTeX works on many computer platforms so
 file names deserve some thought.
@@ -24,7 +26,7 @@ Accented character support is somewhat variable; there are issues with some
 systems, particularly on Windows. If you find issues with accented characters
 in file names, try using only ASCII characters for a test.
 
-## Storing graphics in a subdirectory
+## Archiviare i file grafici in una sottocartella
 
 A common way to lay out source files is to put all graphics into a subdirectory.
 You can then include the relative path, as is shown above; notice that the
@@ -43,7 +45,7 @@ subdirectories, we would have:
 
 Notice in particular the trailing `/` in these.
 
-## Producing graphics
+## Produrre file grafici
 
 As discussed, LaTeX easily uses graphics from most sources, including plots from
 scientific software. When you do that, you probably want to save as a PDF if you
@@ -61,7 +63,7 @@ convenient although at the cost of more complex documents with larger
 requirements, by using [Ti*k*Z](https://ctan.org/pkg/pgf). An alternative is
 [PSTricks](https://ctan.org/pkg/pstricks-base).
 
-## Placing floats
+## Collocare gli oggetti galleggianti
 
 LaTeX's float placement is complex.
 The most common request is to have the figure placed
@@ -90,7 +92,7 @@ Note the `H` option, which puts the figure 'absolutely Here'.
 However it is often not recommended to use `H`, because it may
 create large portions of white space in your document.
 
-## Other types of float
+## Altri tipi di oggetti galleggianti
 
 We will [see soon](lesson-08) that we can put tables in floats; they will go
 into a `table` environment. However, we don't _have_ to put graphics in the
