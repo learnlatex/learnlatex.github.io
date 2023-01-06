@@ -20,14 +20,18 @@ caratteristiche.
 Molte di queste sono disponibili anche su [CTAN](https://ctan.org) 
 e nelle distribuzioni standard di TeX.
 
-## Classes for presentations
+## Classi per videopresentazioni
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+Un ambito che richiede un trattamento speciale è la 
+creazione di videopresentazioni. 
+La classe `slides` è stata scritta per realizzare i ‘classici’
+lucidi da proiezione, e non ha alcun supporto speciale per 
+le videopresentazioni su schermo. 
+Due classi di documento in particolare sono state sviluppate 
+proprio a tal fine, e sono ampiamente utilizzate: 
+`beamer` e `powerdot`. 
+Poiché `beamer` è probabilmente quella più comune, 
+ti daremo un esempio di come funziona:
 
 ```latex
 \documentclass{beamer}
@@ -35,41 +39,48 @@ give you an example of how it works:
 \begin{document}
 
 \begin{frame}
-  \frametitle{A first frame}
-  Some text
+  \frametitle{Un primo frame}
+  Un po' di testo
 \end{frame}
 
 \begin{frame}
-  \frametitle{A second frame}
-  Different text
+  \frametitle{Un secondo frame}
+  Altro testo
   \begin{itemize}
-    \item<1-> First item
-    \item<2-> Second item
+    \item<1-> Primo item
+    \item<2-> Secondo item
   \end{itemize}
 \end{frame}
 
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+L'esempio mostra due idee importanti.
+In primo luogo, `beamer` suddivide un documento in _frame_
+(o quadri), ciascuno dei quali è in grado di generare 
+più di una diapositiva (o pagina).
+In secondo luogo, `beamer` aggiunge alla normale sintassi
+di LaTeX alcune istruzioni per permettere di visualizzare
+alcune parti del codice sorgente ‘un po' alla volta’.
+Questa funzionalità è potente, ma più complicato di quanto 
+non possiamo dire qui: per saperne di più, da' un'occhiata
+a [questo post](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/).
 
-## A class for images
+## Una classe per immagini
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+In alcune occasioni è necessario creare un'immagine 
+(che potrebbe anche essere ricca di testo) utilizzando LaTeX. 
+Spesso potresti aver bisogno del semplice contenuto 
+presente sulla ‘pagina’. 
+Si può fare facilmente con la classe
+[`standalone`](https://ctan.org/pkg/standalone),
+che imposta automaticamente la dimensione della pagina
+proprio a ridosso del contenuto in essa stampato.
 
 ```latex
 \documentclass{standalone}
 \usepackage[T1]{fontenc}
 \begin{document}
-A simple document: this will be a very small box!
+Un documento semplice: una scatola molto piccola!
 \end{document}
 ```
