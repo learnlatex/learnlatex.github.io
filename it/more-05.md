@@ -1,20 +1,24 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Using document classes to influence design"
-description: "This lesson gives information on more specialized document classes for LaTeX."
-toc-anchor-text: "More on: Using document classes to influence design"
+title: "Di più su: Adoperare le classi di documento per influire sull'aspetto della pagina"
+description: "Questa lezione offre informazioni su classi di documento per LaTeX più specialistiche."
+toc-anchor-text: "Di più su: Adoperare le classi di documento per influire sull'aspetto della pagina"
 ---
 
-## Journal-specific classes
+## Classi specifiche per riviste
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on [CTAN](https://ctan.org) and in standard TeX
-distributions.
+Molte riviste accademiche forniscono agli autori classi 
+LaTeX dedicate da adoperare per inviare i contributi. 
+In genere, queste classi impostano l'aspetto del documento
+in modo che sia simile a quello della rivista finale, 
+sebbene la cosa dipenda dall'uso dei font, eccetera. 
+Se è disponibile una classe, di solito viene fornita 
+direttamente dalla redazione, che dovrebbe fornire 
+anche dettagli appropriati e informazioni sulle sue 
+caratteristiche. 
+Molte di queste sono disponibili anche su [CTAN](https://ctan.org) 
+e nelle distribuzioni standard di TeX.
 
 ## Classes for presentations
 
