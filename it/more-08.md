@@ -61,10 +61,10 @@ cella (che è un gruppo).
 Esamineremo la formattazione manuale del testo 
 [tra qualche lezione](lesson-11).
 
-Spesso la prima riga di una tabella fa da intestazione, e la
-si potrebbe volere formattata in modo diverso dal resto.
+Spesso la prima riga di una tabella fa da intestazione, e 
+va formattata in modo diverso dal resto.
 Per farlo, c'è il comando `\multicolumn`, che può essere 
-adoperato per modificare l'allineamento di una singola
+adoperato anche per modificare l'allineamento di una singola
 cella, come mostra l'esempio seguente:
 
 <!-- {% raw %} -->
@@ -90,11 +90,15 @@ cella, come mostra l'esempio seguente:
 
 ### Modificare lo spazio tra le colonne
 
-Usually LaTeX pads each column by some space on both sides to give a balanced
-look and separate them. This space is defined with the length `\tabcolsep`. Due
-to the fact that each column is padded on both sides you get one `\tabcolsep` on
-either end of the table, and `2\tabcolsep` between two columns &ndash; one from
-each column. You can adjust this space to any length using `\setlength`:
+Per impostazione predefinita, LaTeX mette uno spazio a 
+entrambi i lati di ciascuna colonna per equilibrarne 
+l'aspetto e separarle. 
+Questo spazio è definito con la lunghezza `\tabcolsep`. 
+Di conseguenza, ci sarà un solo `\tabcolsep` a entrambe 
+le estremità della tabella e `2\tabcolsep` tra due 
+colonne consecutive (uno per ogni colonna). 
+Puoi modificare in ogni momento questo spazio impostandolo 
+a una lunghezza a piacere con `\setlength`:
 
 <!-- {% raw %} -->
 ```latex
@@ -106,18 +110,20 @@ each column. You can adjust this space to any length using `\setlength`:
 
 \begin{document}
 \begin{tabular}{lll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animale  & Cibo   & Taglia  \\
+  cane     & carne  & media   \\
+  cavallo  & fieno  & grande  \\
+  rana     & mosche & piccola \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything in
-between the columns you specify as an argument:
+Puoi cambiare questo spazio in qualunque cosa tu voglia 
+dichiarandolo nell'argomento di `@`: il riempimento predefinito 
+tra due colonne o alle estremità della tabella _verrà levato_ 
+e al suo posto LaTeX inserirà quanto specificato (uno spazio
+di 2 centimetri, nell'esempio successivo):
 
 <!-- {% raw %} -->
 ```latex
@@ -127,20 +133,23 @@ between the columns you specify as an argument:
 
 \begin{document}
 \begin{tabular}{l@{ : }l@{\hspace{2cm}}l}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animale  & Cibo   & Taglia  \\
+  cane     & carne  & media   \\
+  cavallo  & fieno  & grande  \\
+  rana     & mosche & piccola \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
+(Di nuovo, vedremo il comando `\hspace` 
+[tra poco](lesson-11); qui puoi indovinare da te che
+serve ad aggiungere dello spazio orizzontale.)
 
-The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument in center of the space between two columns.
+Nel preambolo di una tabella `!` fa qualcosa di molto simile
+a quanto appena visto.
+La differenza è che _aggiunge_ il proprio argomento al centro
+dello spazio tra due colonne.
 
 <!-- {% raw %} -->
 ```latex
@@ -150,10 +159,10 @@ _adds_ its argument in center of the space between two columns.
 
 \begin{document}
 \begin{tabular}{l!{:}ll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animale  & Cibo   & Taglia  \\
+  cane     & carne  & media   \\
+  cavallo  & fieno  & grande  \\
+  rana     & mosche & piccola \\
 \end{tabular}
 \end{document}
 ```
@@ -162,7 +171,9 @@ _adds_ its argument in center of the space between two columns.
 
 ### Filetti verticali
 
-Sometimes you have to use vertical rules.
+Le regole della buona tipografia scoraggiano l'uso dei filetti
+verticali nelle tabelle.
+Tuttavia, a volte non se ne può fare a meno.
 
 <!-- {% raw %} -->
 ```latex
@@ -172,10 +183,10 @@ Sometimes you have to use vertical rules.
 
 \begin{document}
 \begin{tabular}{l|ll}
-  Animal & Food  & Size   \\[2pt]
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Animale  & Cibo   & Taglia  \\[2pt]
+  cane     & carne  & media   \\
+  cavallo  & fieno  & grande  \\
+  rana     & mosche & piccola \\
 \end{tabular}
 \end{document}
 ```
