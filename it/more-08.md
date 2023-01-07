@@ -11,20 +11,28 @@ toc-anchor-text: "Di più su: Tabelle"
 
 ## Gli altri contenuti del preambolo
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+Dato che la lezione principale non ha illustrato tutte le 
+opzioni disponibili per le intestazioni delle tabelle, 
+ne spieghiamo alcune altre qui, con degli esempi.
+Ti consigliamo di ripassare l'inizio della lezione per 
+avere una panoramica delle diverse possibilità.
+Dopo aver compreso per bene il funzionamento di `l`, `c`, `r`, e `p`,
+le brevi descrizioni che ti daremo in questa sede dovrebbero 
+bastarti per capire che cosa fanno i diversi tipi 
+di colonna `m`, `b`, `w`, e `W`.
+Se ancora non basta, ti consigliamo di fare qualche 
+esperimento modificando opportunamente i codici d'esempio.
+Infine, rimarranno da vedere gli altri _token di preambolo_, 
+utili e comunemente usati, come `>`, `<`, `@`, `!`, e `|`. 
 
 ### Impostare lo stile di una colonna
 
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
+I caratteri `>` e `<` si possono adoperare per inserire 
+elementi prima e dopo il contenuto della cella di una colonna. 
+Dunque, grazie a essi potrai aggiungere anche _comandi_ 
+che modificano l'aspetto di una colonna. 
+Per esempio, volendo la prima colonna in corsivo e con
+un segno di due punti dopo ogni voce, puoi fare così:
 
 <!-- {% raw %} -->
 ```latex
@@ -36,24 +44,28 @@ colon after it, you can do the following:
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   \toprule
-  Animal & Food  & Size   \\
+  Animale  & Cibo   & Taglia  \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  cane     & carne  & media   \\
+  cavallo  & fieno  & grande  \\
+  rana     & mosche & piccola \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
+Di solito `\itshape` mette in corsivo tutto il testo successivo, 
+ma in una tabella il suo effetto è ‘arginato’ dai confini della 
+cella (che è un gruppo). 
+Esamineremo la formattazione manuale del testo 
+[tra qualche lezione](lesson-11).
 
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+Spesso la prima riga di una tabella fa da intestazione, e la
+si potrebbe volere formattata in modo diverso dal resto.
+Per farlo, c'è il comando `\multicolumn`, che può essere 
+adoperato per modificare l'allineamento di una singola
+cella, come mostra l'esempio seguente:
 
 <!-- {% raw %} -->
 ```latex
@@ -65,11 +77,11 @@ it can be used to change a single cell's alignment as shown below.
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   \toprule
-  \multicolumn{1}{l}{Animal} & Food  & Size   \\
+  \multicolumn{1}{l}{Animale} & Cibo  & Taglia \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  cane     & carne  & media   \\
+  cavallo  & fieno  & grande  \\
+  rana     & mosche & piccola \\
   \bottomrule
 \end{tabular}
 \end{document}
