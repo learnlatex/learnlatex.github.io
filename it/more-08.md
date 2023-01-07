@@ -1,13 +1,15 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Tables"
-description: "This lesson shows more ways to customize a table by styling a column, changing spacing and rules, and further packages that provide different extensions to tables."
-toc-anchor-text: "More on: Tables"
+title: "Di più su: Tabelle"
+description: "Questa lezione mostra altri modi per personalizzare una tabella impostando 
+lo stile di una colonna, modificando la spaziatura e i filetti, e descrive altri pacchetti 
+che forniscono diverse funzionalità per comporre le tabelle."
+toc-anchor-text: "Di più su: Tabelle"
 ---
 
 
-## The other preamble contents
+## Gli altri contenuti del preambolo
 
 As the lesson didn't cover all the available preamble-tokens, a few others are
 explained with examples here.  You might want to revisit the tables at the start
@@ -17,7 +19,7 @@ provided there should suffice to understand what the different column types `m`,
 might want to experiment a bit with them. What's still missing are the handy
 other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
 
-### Styling a column
+### Impostare lo stile di una colonna
 
 Since `>` and `<` can be used to put things before and after the cell contents
 of a column, you can use these to add commands which affect the look
@@ -74,7 +76,7 @@ it can be used to change a single cell's alignment as shown below.
 ```
 <!-- {% endraw %} -->
 
-### Manipulating the space between columns
+### Modificare lo spazio tra le colonne
 
 Usually LaTeX pads each column by some space on both sides to give a balanced
 look and separate them. This space is defined with the length `\tabcolsep`. Due
@@ -146,7 +148,7 @@ _adds_ its argument in center of the space between two columns.
 <!-- {% endraw %} -->
 
 
-### Vertical rules
+### Filetti verticali
 
 Sometimes you have to use vertical rules.
 
@@ -175,7 +177,7 @@ provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, 
 `\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
 will span any space specified in the optional argument to `\\`.
 
-## Customizing `booktabs` rules
+## Personalizzare i filetti di `booktabs`
 
 All the `booktabs` rules and also `\addlinespace` support an optional argument
 in brackets with which you can specify the rule's thickness. In addition the
@@ -201,7 +203,7 @@ braces after `r` or `l`.
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment in columns
+## Allineare numeri in una colonna
 
 The alignment of numbers in tables can be handled by the column type `S` 
 that is provided by the `siunitx` package.
@@ -235,7 +237,7 @@ The `siunitx` package provides many possibilities for formatting the numbers in
 different ways; see the [package
 documentation](https://texdoc.org/pkg/siunitx).
 
-## Specifying the total table width
+## Specificare la larghezza totale della tabella
 
 The width of a `tabular` environment is automatically determined based
 on the contents of the table. There are two commonly used mechanisms
@@ -341,7 +343,7 @@ final setting. This means that there are several restrictions on the
 use of the environment; see the
 [package documentation](https://texdoc.org/pkg/tabularx).
 
-## Multi-page tables
+## Tabelle su più pagine
 
 A `tabular` forms an unbreakable box so it must be small enough to fit
 on one page, and is often placed in a floating `table` environment.
@@ -389,7 +391,7 @@ over all pages of the table; however in order to achieve this it
 may take several runs of LaTeX so that wide entries encountered later
 in the table can affect the column widths in earlier pages.
 
-## Table notes
+## Note nelle tabelle
 
 It is quite common to need footnote-like marks in a table referring to
 notes under the table. The `threeparttable` package simplifies the
@@ -422,7 +424,7 @@ for full details, but we show a simple example here.
 \end{document}
 ```
 
-## Typesetting in narrow columns
+## Comporre in colonne strette
 
 The default line breaking settings assume relatively long lines to
 give some flexibility in choosing line breaks. The following example
@@ -473,7 +475,7 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 \end{document}
 ```
 
-## Defining new column types
+## Definire nuovi tipi di colonna
 
 As demonstrated in the [main lesson](lesson-08), the `array` package allows
 constructs such as `>{\bfseries}c`  to denote a bold centered column.
@@ -487,7 +489,7 @@ would allow the use of `B` in table preambles to specify a bold
 centered column.
 
 
-## Vertical tricks
+## Trucchi verticali
 
 Often, rather than making a cell span multiple rows it is better to instead have
 a single row in which some cells are split vertically by the use of nested
@@ -539,7 +541,7 @@ bottom aligned respectively and is used like this:
 ```
 <!-- {% endraw %} -->
 
-## Line spacing in tables
+## Interlinea nelle tabelle
 
 In the main lesson we demonstrated `\addlinespace` from the `booktabs`
 package, which is useful for adding extra space between specific lines.
