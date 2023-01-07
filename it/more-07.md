@@ -113,28 +113,32 @@ Per farlo, c'è il pacchetto `float`.
 \end{document}
 ```
 
-Osserva l'opzione `H`, che mette l'oggetto ‘qui (H_ere_), 
-in ogni caso’.
+Osserva l'opzione `H`, che mette l'oggetto ‘qui, 
+in ogni caso’ (_Here_).
 Tuttavia, spesso se ne sconsiglia l'uso, perché potrebbero 
 crearsi ampie porzioni di spazio bianco nel documento.
 
 ## Altri tipi di oggetti galleggianti
 
-We will [see soon](lesson-08) that we can put tables in floats; they will go
-into a `table` environment. However, we don't _have_ to put graphics in the
-`figure` environment or tables in the `table` environment; this is just
-convention.
+[Presto vedremo](lesson-08) che tra gli oggetti galleggianti
+possiamo mettere anche le tabelle, che andranno
+nell'ambiente `table`. 
+Tuttavia, quello di mettere le immagini nell'ambiente `figure`
+e le tabelle nell'ambiente `table` _non è un obbligo_, 
+ma solo una convenzione.
 
-You might want to have other types of floating environment; each type is
-inserted independently. You can do that using the
-[`trivfloat`](https://ctan.org/pkg/trivfloat) package. This provides a single
-command, `\trivfloat`, to make new types of float.
+Puoi definire altri tipi di ambiente galleggiante,
+ciascuno dei quali viene inserito nel documento in
+modo indipendente.
+Per farlo, puoi adoperare il pacchetto
+[`trivfloat`](https://ctan.org/pkg/trivfloat), che fornisce un unico
+comando, `\trivfloat`, per creare nuovi tipi di oggetto galleggiante.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}  % testo fittizio di riempimento
 \usepackage{trivfloat}
 \trivfloat{image}
 
@@ -142,7 +146,7 @@ command, `\trivfloat`, to make new types of float.
 \begin{image}
   \centering
   \includegraphics[width=0.5\textwidth]{example-image}
-  \caption{An example image}
+  \caption{Un'immagine d'esempio}
 \end{image}
 \end{document}
 ```
