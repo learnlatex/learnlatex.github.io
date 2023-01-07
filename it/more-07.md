@@ -10,71 +10,96 @@ toc-anchor-text: "Di più su: Inclusione e collocamento di immagini esterne sull
 
 ## Assegnare un nome ai file grafici
 
-LaTeX works on many computer platforms so
-file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces.
-For example, if you want to organize your files by keeping all
-graphics in a subdirectory, then something like
-`\includegraphics[width=30pt]{pix/mom.png}`
-is portable and future-proof.
+LaTeX funziona su numerose piattaforme, perciò 
+i nomi dei file meritano qualche riflessione. 
+La cosa più sicura da fare è assegnare ai file
+grafici nomi semplici, in particolare _senza spazi_.
+Per esempio, se intendi organizzarli mantenendo
+tutti i file grafici in una stessa sottocartella,
+una cosa come `\includegraphics[width=30pt]{immagini/mamma.png}`
+ti assicura la massima portabilità ed efficacia anche
+nel lungo termine.
 
-Spaces in file names are traditionally somewhat problematic, but are now
-generally supported. However, if you have spaces in the name, and you have
-issues, you may wish to try removing the spaces as the first step.
+Tradizionalmente, gli spazi nei nomi dei file sono 
+alquanto problematici, anche se ora sono in genere 
+supportati. 
+Tuttavia, se ci sono degli spazi nel nome e riscontri 
+dei problemi, per prima cosa potresti provare 
+a rimuoverli.
 
-Accented character support is somewhat variable; there are issues with some
-systems, particularly on Windows. If you find issues with accented characters
-in file names, try using only ASCII characters for a test.
+Anche il supporto dei caratteri accentati è alquanto 
+variabile; ci sono problemi su alcuni sistemi, in particolare 
+Windows. Se riscontri problemi con i caratteri accentati 
+nei nomi dei file, fa' una prova adoperando solo 
+caratteri ASCII.
 
 ## Archiviare i file grafici in una sottocartella
 
-A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate parts of the path _even on Windows_.
+Un metodo diffuso per organizzare i file sorgente consiste 
+nel mettere tutti i file grafici in una sottocartella e
+richiamarli in seguito indicandone il percorso relativo, 
+come si è mostrato sopra; si noti che per separare parti
+del percorso si adopera il carattere `/` 
+_anche su Windows_.
 
-If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs a braced entry
-for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have:
+Se figure e immagini sono molte, una buona pratica è 
+impostarne le sottocartelle in anticipo.
+Lo si può fare con il comando `\graphicspath`, che richiede 
+che ogni sottocartella sia a propria volta racchiusa tra
+parentesi graffe. 
+Per esempio, per includere entrambe le sottocartelle `figure` 
+e `immagini`, avremmo:
 
 <!-- {% raw %} -->
 ```latex
-\graphicspath{{figs/}{pics/}}
+\graphicspath{{figure/}{immagini/}}
 ```
 <!-- {% endraw %} -->
 
-Notice in particular the trailing `/` in these.
+Osserva, in particolare, il `/` dopo il nome della cartella.
 
 ## Produrre file grafici
 
-As discussed, LaTeX easily uses graphics from most sources, including plots from
-scientific software. When you do that, you probably want to save as a PDF if you
-can, as this is a scalable format. If you do need to create a bitmap, aim for
-high resolution. You can make mouse-created graphics that include LaTeX snippets
-with [Inkscape](https://inkscape.org/). An alternative that in addition extends
-those drawing techniques to three dimensions is
-[Asymptote](https://www.ctan.org/pkg/asymptote). These two produce their output
-as files that you include in your document.
+Come abbiamo visto, LaTeX è in grado di adoperare facilmente
+file grafici provenienti dalla maggior parte delle fonti,
+compresi i grafici prodotti da software scientifici.
+In questo caso, ti consigliamo di salvarli come PDF, se
+possibile, perché è un formato universale e facilmente
+gestibile (in particolare, non perde in qualità scalandolo).
+Dovendo passare per immagini bitmap, cerca di realizzarle
+ad alta risoluzione.
+Puoi creare immagini con il mouse che contengano frammenti
+di codice LaTeX con [Inkscape](https://inkscape.org/). 
+Un'alternativa che estende questo modo di disegnare
+alle tre dimensioni è 
+[Asymptote](https://www.ctan.org/pkg/asymptote). 
+Questi due programmi producono file che potrai
+inserire nel tuo documento.
 
-You can also create graphics such as drawings that are especially suited to
-LaTeX, with very high precision as well as equations and labels that match your
-document. You can draw graphics directly inside your document, which is
-convenient although at the cost of more complex documents with larger
-requirements, by using [Ti*k*Z](https://ctan.org/pkg/pgf). An alternative is
+Puoi anche realizzare veri e propri disegni che si adattano
+a LaTeX con altissima precisione, oppure equazioni ed etichette
+che si ‘immergono’ perfettamente nel testo del tuo documento.
+È possibile disegnare direttamente nel codice sorgente 
+(senza importare immagini dall'esterno, cioè), il che è 
+comodo, anche se a costo di documenti più complessi e
+pesanti, con [Ti*k*Z](https://ctan.org/pkg/pgf) o la sua
+alternativa 
 [PSTricks](https://ctan.org/pkg/pstricks-base).
 
 ## Collocare gli oggetti galleggianti
 
-LaTeX's float placement is complex.
-The most common request is to have the figure placed
-in the output exactly where it lies in the input.
-The `float` package will do that.
+Il meccanismo con cui LaTeX mette gli oggetti galleggianti
+sulla pagina è complesso. 
+La richiesta più comune è quella di stamparli 
+nell'output nel punto _esatto_ in cui si trovano 
+nel sorgente. 
+Per farlo, c'è il pacchetto `float`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
+\usepackage{lipsum}  % testo fittizio di riempimento
 \usepackage{float}
 
 \begin{document}
@@ -82,15 +107,16 @@ The `float` package will do that.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image}
-  \caption{An example image}
+  \caption{Un'immagine d'esempio}
 \end{figure}
 \lipsum[8-15]
 \end{document}
 ```
 
-Note the `H` option, which puts the figure 'absolutely Here'.
-However it is often not recommended to use `H`, because it may
-create large portions of white space in your document.
+Osserva l'opzione `H`, che mette l'oggetto ‘qui (H_ere_), 
+in ogni caso’.
+Tuttavia, spesso se ne sconsiglia l'uso, perché potrebbero 
+crearsi ampie porzioni di spazio bianco nel documento.
 
 ## Altri tipi di oggetti galleggianti
 
