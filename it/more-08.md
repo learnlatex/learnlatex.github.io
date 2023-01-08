@@ -42,7 +42,7 @@ un segno di due punti dopo ogni voce, puoi fare così:
 \usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
+\begin{tabular}{>{\itshape}l<{:}*{2}{l}}
   \toprule
   Animale  & Cibo   & Taglia  \\
   \midrule
@@ -75,7 +75,7 @@ cella, come mostra l'esempio seguente:
 \usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{>{\itshape}l<{:} *{2}{l}}
+\begin{tabular}{>{\itshape}l<{:}*{2}{l}}
   \toprule
   \multicolumn{1}{l}{Animale} & Cibo  & Taglia \\
   \midrule
@@ -132,7 +132,7 @@ di 2 centimetri, nell'esempio successivo):
 \usepackage{array}
 
 \begin{document}
-\begin{tabular}{l@{ : }l@{\hspace{2cm}}l}
+\begin{tabular}{l@{:}l@{\hspace{2cm}}l}
   Animale  & Cibo   & Taglia  \\
   cane     & carne  & media   \\
   cavallo  & fieno  & grande  \\
@@ -146,7 +146,7 @@ di 2 centimetri, nell'esempio successivo):
 [tra poco](lesson-11); qui puoi indovinare da te che
 serve ad aggiungere dello spazio orizzontale.)
 
-Nel preambolo di una tabella `!` fa qualcosa di molto simile
+Nel preambolo di una tabella, `!` fa qualcosa di molto simile
 a quanto appena visto.
 La differenza è che _aggiunge_ il proprio argomento al centro
 dello spazio tra due colonne.
@@ -192,20 +192,27 @@ Tuttavia, a volte non se ne può fare a meno.
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
-adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though; vertical rules don't work with the
-horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
-will span any space specified in the optional argument to `\\`.
+Osserva che il comportamento di `|` è abbastanza simile a 
+quello di !{...}: infatti, aggiunge un filetto verticale 
+tra due colonne lasciando inalterato lo spazio tra di esse. 
+Tuttavia, c'è un enorme inconveniente: i filetti verticali 
+non funzionano con le regole orizzontali di `booktabs`. 
+In questo caso, al loro posto puoi adoperare i filetti
+orizzontali definiti da LaTeX: quelli sono `\hline` 
+(corrispondente a `\toprule`, `\midrule` e `\bottomrule`) 
+e `\cline` (che si comporta come `\cmidrule`). 
+Come mostrato sopra, i filetti verticali coprono anche
+l'eventuale spazio specificato nell'argomento facoltativo di 
+`\\`.
 
 ## Personalizzare i filetti di `booktabs`
 
-All the `booktabs` rules and also `\addlinespace` support an optional argument
-in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a length in
-braces after `r` or `l`.
+Tutti i filetti di `booktabs` e il comando `\addlinespace`
+accettano un argomento facoltativo tra parentesi quadre
+con nel quale puoi specificare lo spessore del filetto.
+Inoltre, la ‘rasatura’ permessa da `\cmidrule` può essere
+personalizzata specificando una lunghezza tra parentesi
+graffe dopo `r` o `l`.
 
 <!-- {% raw %} -->
 ```latex
@@ -215,12 +222,15 @@ braces after `r` or `l`.
 \usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{@{} lll@{}} \toprule[2pt]
-  Animal & Food  & Size   \\ \midrule[1pt]
-  dog    & meat  & medium \\
+\begin{tabular}{@{} lll@{}}
+  \toprule[2pt]
+  Animale & Cibo   & Taglia  \\ 
+  \midrule[1pt]
+  cane    & carne  & media   \\
   \cmidrule[0.5pt](r{1pt}l{1cm}){1-2}
-  horse  & hay   & large  \\
-  frog   & flies & small  \\ \bottomrule[2pt]
+  cavallo & fieno  & grande  \\
+  rana    & mosche & piccola \\ 
+  \bottomrule[2pt]
 \end{tabular}
 \end{document}
 ```
@@ -228,69 +238,80 @@ braces after `r` or `l`.
 
 ## Allineare numeri in una colonna
 
-The alignment of numbers in tables can be handled by the column type `S` 
-that is provided by the `siunitx` package.
+L'allineamento di numeri nelle colonne può essere 
+gestito con lo specificatore di colonna `S` definito
+dal pacchetto `siunitx`.
 
-A simple example with two aligned numeric columns would be:
+Un semplice esempio con due colonne di numeri
+allineati (al separatore decimale, in questo caso)
+può essere il seguente:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{booktabs}
 \usepackage{siunitx}
+
 \begin{document}
 \begin{tabular}{SS}
-\toprule
-{Values} &  {More Values} \\
-\midrule
-1        &   2.3456 \\
-1.2      &   34.2345 \\
--2.3     &   90.473 \\
-40       &   5642.5 \\
-5.3      &   1.2e3 \\
-0.2      &    1e4 \\
-\bottomrule
+  \toprule
+  {Values} &  {More Values} \\
+  \midrule
+  1        &   2.3456  \\
+  1.2      &   34.2345 \\
+  -2.3     &   90.473  \\
+  40       &   5642.5  \\
+  5.3      &   1.2e3   \\
+  0.2      &    1e4    \\
+  \bottomrule
 \end{tabular}
 \end{document}
 ```
+Osserva che una cella non numerica va ‘protetta’
+racchiudendone il contenuto tra parentesi
+graffe.
 
-Note that any non-numeric cell must be "protected" by enclosing it in braces.
-
-The `siunitx` package provides many possibilities for formatting the numbers in
-different ways; see the [package
-documentation](https://texdoc.org/pkg/siunitx).
+Il pacchetto `siunitx` prevede numerose possibilità
+di formattare i numeri in diversi modi: per saperne
+di più, da' un'occhiata alla 
+[documentazione del pacchetto](https://texdoc.org/pkg/siunitx).
 
 ## Specificare la larghezza totale della tabella
 
-The width of a `tabular` environment is automatically determined based
-on the contents of the table. There are two commonly used mechanisms
-to specify a different total width.
+La larghezza di un ambiente `tabular` è determinata automaticamente
+in base al contenuto della tabella.
+Per specificare una larghezza totale diversa, esistono due meccanismi
+comunemente seguiti.
 
-Note that it is almost always preferable to format the table to a
-specified width as below (perhaps using a font size such as `\small` if
-necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths.
+Osserva che è quasi sempre preferibile impostare la tabella
+a una larghezza specifica come ti mostriamo sotto (con una
+dichiarazione di corpo come `\small`, se necessario)
+piuttosto che scalarla con `\resizebox` e comandi simili,
+che produrranno corpi dei font e spessori dei filetti incoerenti.
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that
-specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command. This space is added
-between all columns from that point in the preamble. It is almost
-always used with `\fill`, a special space that stretches to be as large
-as necessary.
+L'ambiente `tabular*` accetta un ulteriore argomento `larghezza`, 
+che specifica la larghezza _totale_ della tabella. 
+Per conferire elasticità al risultato, bisogna aggiungere alla
+tabella dello spazio elastico con il comando `\extracolsep`. 
+Questo spazio,aggiunto tra tutte le colonne da quel punto 
+in poi nel preambolo, viene quasi sempre dichiarato come `\fill`, 
+uno spazio speciale che si allunga fino a diventare grande 
+quanto necessario.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{array}
+
 \begin{document}
 
 \begin{center}
 \begin{tabular}{cc}
 \hline
-A & B\\
-C & D\\
+A & B \\
+C & D \\
 \hline
 \end{tabular}
 \end{center}
@@ -298,8 +319,8 @@ C & D\\
 \begin{center}  
 \begin{tabular*}{.5\textwidth}{@{\extracolsep{\fill}}cc@{}}
 \hline
-A & B\\
-C & D\\
+A & B \\
+C & D \\
 \hline
 \end{tabular*}
 \end{center}
@@ -307,8 +328,8 @@ C & D\\
 \begin{center}  
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cc@{}}
 \hline
-A & B\\
-C & D\\
+A & B \\
+C & D \\
 \hline
 \end{tabular*}
 \end{center}
