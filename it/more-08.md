@@ -222,7 +222,7 @@ graffe dopo `r` o `l`.
 \usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{@{} lll@{}}
+\begin{tabular}{@{}lll@{}}
   \toprule[2pt]
   Animale & Cibo   & Taglia  \\ 
   \midrule[1pt]
@@ -255,7 +255,7 @@ può essere il seguente:
 \begin{document}
 \begin{tabular}{SS}
   \toprule
-  {Values} &  {More Values} \\
+  {Valori} &  {Ancora valori} \\
   \midrule
   1        &   2.3456  \\
   1.2      &   34.2345 \\
