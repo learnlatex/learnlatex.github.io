@@ -470,8 +470,8 @@ Qui te ne mostriamo un piccolo esempio.
 \begin{threeparttable}
    \caption{Un esempio}
    \begin{tabular}{ll}
-    Una voce      & 42\tnote{1}\\
-    Un'altra voce & 24\tnote{2}\\
+    Una voce      & 42\tnote{1} \\
+    Un'altra voce & 24\tnote{2} \\
    \end{tabular}
    \begin{tablenotes}
    \item [1] La prima nota.
