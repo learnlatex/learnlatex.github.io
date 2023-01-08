@@ -339,11 +339,13 @@ C & D \\
 
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+L'ambiente `tabularx`, definito dall'omonimo pacchetto,
+presenta una sintassi simile a quella di `tabular*`,
+ma anziché aggiustare lo spazio tra le colonne, aggiusta
+la larghezza delle colonne,specificate con un nuovo tipo
+di colonna, `X`.
+Ciò equivale a uno specificatore di tipo `p{...}`, ma con
+una larghezza determinata automaticamente.
 
 ```latex
 \documentclass{article}
@@ -354,7 +356,7 @@ specification of `p{...}` for an automatically determined width.
 \begin{center}
 \begin{tabular}{lp{2cm}}
 \hline
-A & B B B B B B B B B B B B B B B B B B B B B B B B\\
+A & B B B B B B B B B B B B B B B B B B B B B B B B \\
 C & D D D D D D D\\
 \hline
 \end{tabular}
@@ -363,7 +365,7 @@ C & D D D D D D D\\
 \begin{center}  
 \begin{tabularx}{.5\textwidth}{lX}
 \hline
-A & B B B B B B B B B B B B B B B B B B B B B B B B\\
+A & B B B B B B B B B B B B B B B B B B B B B B B B \\
 C & D D D D D D D\\
 \hline
 \end{tabularx}
@@ -372,8 +374,8 @@ C & D D D D D D D\\
 \begin{center}  
 \begin{tabularx}{\textwidth}{lX}
 \hline
-A & B B B B B B B B B B B B B B B B B B B B B B B B\\
-C & D D D D D D D\\
+A & B B B B B B B B B B B B B B B B B B B B B B B B \\
+C & D D D D D D D \\
 \hline
 \end{tabularx}
 \end{center}
@@ -381,68 +383,81 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.org/pkg/tabularx).
+A differenza degli altri ambienti discussi in queste lezioni, 
+`tabularx` richiede di comporre la tabella più volte, con 
+larghezze di prova per determinare il risultato finale. 
+Ciò significa che ci sono diverse restrizioni sull'uso dell'ambiente;
+da' un'occhiata alla sua
+[documentazione](https://texdoc.org/pkg/tabularx).
 
 ## Tabelle su più pagine
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+Un ambiente `tabular` produce una scatola che non può essere spezzata, 
+e che perciò deve essere sufficientemente piccola per stare in una sola
+pagina, spesso inserita nell'ambiente galleggiante `table`.
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+Esistono diversi pacchetti che definiscono varianti di questo ambiente 
+con una sintassi simile, ma che permettono a una tabella di stare su
+più di una pagina.
+Qui mostriamo il pacchetto `longtable`.
 
 ```latex
 \documentclass{article}
-\usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
+\usepackage[
+  paperheight=8cm,
+  paperwidth=8cm
+]{geometry}
 \usepackage{array}
 \usepackage{longtable}
+
 \begin{document}
+
 \begin{longtable}{cc}
-\multicolumn{2}{c}{A Long Table}\\
-Left Side & Right Side\\
+\multicolumn{2}{c}{Una tabella lunga} \\
+Lato sinistro      & Lato destro \\
 \hline
 \endhead
 \hline
 \endfoot
-aa & bb\\  
-Entry & b\\  
-a & b\\  
-a & b\\  
-a & b\\  
-a & b\\  
-a & bbb\\  
-a & b\\  
-a & b\\  
-a & b\\  
-a & b\\  
-a & b\\  
-a & b\\  
-a & b b b b b b\\  
-a & b b b b b\\  
-a & b b\\  
-A Wider Entry & b\\  
+aa                 & bb  \\  
+Voce               & b   \\  
+a                  & b   \\  
+a                  & b   \\  
+a                  & b   \\  
+a                  & b   \\  
+a                  & bbb \\  
+a                  & b   \\  
+a                  & b   \\  
+a                  & b   \\  
+a                  & b   \\  
+a                  & b   \\  
+a                  & b   \\  
+a                  & b b b b b b \\  
+a                  & b b b b b \\  
+a                  & b b \\  
+Una voce più lunga & b   \\  
 \end{longtable}
 
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+`longtable` è notevole in quanto conserva la larghezza delle 
+colonne su tutte le pagine della tabella; tuttavia, per ottenere 
+questo risultato potrebbero servire diverse esecuzioni di LaTeX, 
+in modo che le voci larghe incontrate successivamente nella tabella 
+possano influire sulla larghezza delle colonne nelle pagine precedenti.
 
 ## Note nelle tabelle
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.org/pkg/threeparttable)
-for full details, but we show a simple example here.
+È abbastanza comune in una tabella aver bisogno di segni (simili agli 
+esponenti delle note a piè di pagina) che si riferiscano a note
+sotto alla tabella. 
+Il pacchetto `threeparttable` semplifica la composizione di tabelle
+di questo tipo, componendo le note in un blocco largo quanto
+la tabella.
+Per ulteriori dettagli, guarda la
+[documentazione del pacchetto](https://texdoc.org/pkg/threeparttable).
+Qui te ne mostriamo un piccolo esempio.
 
 ```latex
 \documentclass{article}
@@ -453,14 +468,14 @@ for full details, but we show a simple example here.
 
 \begin{table}
 \begin{threeparttable}
-   \caption{An Example}
+   \caption{Un esempio}
    \begin{tabular}{ll}
-    An entry & 42\tnote{1}\\
-    Another entry & 24\tnote{2}\\
+    Una voce      & 42\tnote{1}\\
+    Un'altra voce & 24\tnote{2}\\
    \end{tabular}
    \begin{tablenotes}
-   \item [1] the first note.
-   \item [2] the second note.
+   \item [1] La prima nota.
+   \item [2] La seconda nota.
    \end{tablenotes}
 \end{threeparttable}
 \end{table}
