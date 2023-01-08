@@ -257,12 +257,12 @@ può essere il seguente:
   \toprule
   {Valori} & {Ancora valori} \\
   \midrule
-  1        &  2.3456  \\
-  1.2      &  34.2345 \\
-  -2.3     &  90.473  \\
-  40       &  5642.5  \\
-  5.3      &  1.2e3   \\
-  0.2      &  1e4     \\
+  1        & 2.3456  \\
+  1.2      & 34.2345 \\
+  -2.3     & 90.473  \\
+  40       & 5642.5  \\
+  5.3      & 1.2e3   \\
+  0.2      & 1e4     \\
   \bottomrule
 \end{tabular}
 \end{document}
