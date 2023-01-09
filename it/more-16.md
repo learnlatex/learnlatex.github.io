@@ -1,27 +1,32 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Accessing documentation and getting help"
-description: "This lesson show you where you can find the sources of LaTeX itself."
-toc-anchor-text: "More on: Accessing documentation and getting help"
+title: "Di più su: Documentazione e assistenza"
+description: "Questa lezione mostra dove puoi trovare i sorgenti di LaTeX."
+toc-anchor-text: "Di più su: Documentazione e assistenza"
 ---
 
 
-## Documented sources of LaTeX
+## Sorgenti documentati di LaTeX
 
-The `texdoc` command described earlier is not restricted to package documentation. If you wish to
-go beyond the areas covered by this course and study the LaTeX inplementation in detail then
-the following links may help.
+Il comando `texdoc` descritto in precedenza non si limita a
+mettere a disposizione la documentazione dei pacchetti. 
+Se desideri andare oltre gli argomenti trattati in questo 
+corso e studiare l'implementazione di LaTeX nel dettaglio, 
+le indicazioni seguenti fanno al caso tuo.
 
-The source of LaTeX itself is available as a LaTeX-typeset document `source2e.pdf`, available
-from `texdoc source2e` or at
+Il codice sorgente di LaTeX è disponibile come documento
+LaTeX, `source2e.pdf`, raggiungibile da terminale 
+eseguendo `texdoc source2e` o su
 [texdoc.org](https://texdoc.org/pkg/source2e).
 
-Current releases of LaTeX also have preloaded the LaTeX3 Programming Language code, previously available
-as the `expl3` package.  `texdoc` may be used to see the
-[expl3 interface description](https://texdoc.org/pkg/interface3) (`texdoc interface3`)
-or
-[full expl3 source code](https://texdoc.org/pkg/source3) (`texdoc source3`).
+Le attuali versioni di LaTeX hanno anche precaricato il codice 
+del linguaggio di programmazione LaTeX3, precedentemente
+disponibile come pacchetto `expl3`.  
+`texdoc` può essere adoperato per consultare la
+[descrizione dell'interfaccia expl3](https://texdoc.org/pkg/interface3) (`texdoc interface3`)
+o
+[il codice completo di expl3](https://texdoc.org/pkg/source3) (`texdoc source3`).
 
 
 
