@@ -485,50 +485,54 @@ Qui te ne mostriamo un piccolo esempio.
 
 ## Comporre in colonne strette
 
-The default line breaking settings assume relatively long lines to
-give some flexibility in choosing line breaks. The following example
-shows some possible approaches. The first table shows interword spacing
-stretched and TeX warns about Underfull lines. Using `\raggedright`
-usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise;
-it allows some raggedness in the line lengths, but will also
-hyphenate where necessary, as shown in the third table.
+Le impostazioni predefinite di LaTeX presuppongono righe 
+relativamente lunghe per offrire una certa flessibilità 
+nella scelta del punto in cui interromperle. 
+L'esempio seguente mostra alcuni possibili approcci. 
+La prima tabella mostra una spaziatura interparola allungata 
+e TeX mette in guardia sulle righe `Underfull`. 
+L'uso di `\raggedright` di solito evita questo problema, 
+ma potrebbe lasciare alcune righe ‘troppo irregolari’. 
+Il comando `\RaggedRight` dal pacchetto `ragged2e` 
+è un compromesso; permette una certa irregolarità nella 
+lunghezza delle righe, ma sillaberà anche dove necessario, 
+come mostrato nella terza tabella.
 
-Note the use of `\arraybackslash` here, which resets the definition of
-`\\` so that it ends the table row.
+Osserva l'uso del comando `\arraybackslash`, 
+che reimposta la definizione di `\\` in modo che termini 
+la riga della tabella
 
-An alternative technique, as shown in the fourth table, is to use a
-smaller font so that the columns are not so narrow relative to the
-text size.
+Una tecnica alternativa, come mostrato nella quarta tabella, 
+consiste nell'adoperare un carattere più piccolo in modo che 
+le colonne non siano così strette rispetto alla dimensione del testo.
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{array}
 \usepackage{ragged2e}
+
 \begin{document}
 
 \begin{table}
-
 \begin{tabular}[t]{lp{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+Uno & Un testo lungo inserito in un paragrafo stretto, con altro testo d'esempio. \\
+Due & Un testo lungo diverso inserito in un paragrafo stretto, con alcune parole più difficili da sillabare.
 \end{tabular}%
 \begin{tabular}[t]{l>{\raggedright\arraybackslash}p{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+Uno & Un testo lungo inserito in un paragrafo stretto, con altro testo d'esempio. \\
+Due & Un testo lungo diverso inserito in un paragrafo stretto, con alcune parole più difficili da sillabare.
 \end{tabular}%
 \begin{tabular}[t]{l>{\RaggedRight}p{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+Uno & Un testo lungo inserito in un paragrafo stretto, con altro testo d'esempio. \\
+Due & Un testo lungo diverso inserito in un paragrafo stretto, con alcune parole più difficili da sillabare.
 \end{tabular}
 
 \footnotesize
 \begin{tabular}[t]{lp{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+Uno & Un testo lungo inserito in un paragrafo stretto, con altro testo d'esempio. \\
+Due & Un testo lungo diverso inserito in un paragrafo stretto, con alcune parole più difficili da sillabare.
 \end{tabular}
-
 \end{table}
 
 \end{document}
