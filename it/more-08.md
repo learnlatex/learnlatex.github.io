@@ -540,23 +540,26 @@ Due & Un testo lungo diverso inserito in un paragrafo stretto, con alcune parole
 
 ## Definire nuovi tipi di colonna
 
-As demonstrated in the [main lesson](lesson-08), the `array` package allows
-constructs such as `>{\bfseries}c`  to denote a bold centered column.
-It is often convenient to define a new column type to encapsulate such
-use, for example
+Come abbiamo mostrato nella [lezione principale](lesson-08), 
+il pacchetto `array` permette costrutti come `>{\bfseries}c`  
+per specificare una colonna centrata in nero.
+Spesso conveniene definire un nuovo tipo di colonna per 
+incapsulare definizioni come queste. 
+Per esempio
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in table preambles to specify a bold
-centered column.
+permetterà di specificare colonne di tipo `B` nel 
+preambolo della tabella.
 
 
 ## Trucchi verticali
 
-Often, rather than making a cell span multiple rows it is better to instead have
-a single row in which some cells are split vertically by the use of nested
-`tabular` environments.
+Spesso, piuttosto che fare in modo che una cella si 
+estenda su più righe, è meglio invece avere una singola 
+riga in cui alcune celle sono divise verticalmente mediante 
+l'uso di ambienti `tabular` nidificati.
 
 <!-- {% raw %} -->
 ```latex
@@ -566,22 +569,27 @@ a single row in which some cells are split vertically by the use of nested
 \usepackage{booktabs}
 
 \begin{document}
+
 \begin{tabular}{lcc}
   \toprule
   Test & \begin{tabular}{@{}c@{}}A\\a\end{tabular} & \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
   \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
+  Il contenuto & è & qui \\
+  Il contenuto & è & qui \\
+  Il contenuto & è & qui \\
   \bottomrule
 \end{tabular}
+
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Note that you can control vertical alignment by an optional argument to the
-`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
-bottom aligned respectively and is used like this:
+Osserva che puoi controllare l'allineamento verticale
+di una tabella mediante un argomento facoltativo di 
+`tabular`: i valori possibili sono `t`, `c` o `b` 
+rispettivamente per l'allineamento in alto, al centro 
+o in basso. 
+Ecco un esempio:
 
 <!-- {% raw %} -->
 ```latex
@@ -591,66 +599,73 @@ bottom aligned respectively and is used like this:
 \usepackage{booktabs}
 
 \begin{document}
+
 \begin{tabular}{lcc}
   \toprule
   Test & \begin{tabular}[b]{@{}c@{}}A\\a\end{tabular} & \begin{tabular}[t]{@{}c@{}}B\\b\end{tabular} \\
   \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
+  Il contenuto & è & qui \\
+  Il contenuto & è & qui \\
+  Il contenuto & è & qui \\
   \bottomrule
 \end{tabular}
+
 \end{document}
 ```
 <!-- {% endraw %} -->
 
 ## Interlinea nelle tabelle
 
-In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package, which is useful for adding extra space between specific lines.
+Nella lezione principale abbiamo mostrato l'uso del comando 
+`\addlinespace` del pacchetto `booktabs`, utile per aggiungere
+dello spazio supplementare tra due linee specifiche.
 
-There are two general parameters that control line spacing,
-`\arraystretch` and `\extrarowheight` (the latter from the `array`
-package).
+Ci sono due parametri generali che controllano lo spazio
+tra le righe: `\arraystretch` e `\extrarowheight` (l'ultimo 
+è definito dal pacchetto `array`).
+
+La scrittura
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
 
-will increase the baseline spacing by 50%.
+aumenterà lo spazio tra due linee di base consecutive
+del 50%.
 
-
-Often, especially when using `\hline`, it is better just to increase
-the height of rows, without increasing their depth below the baseline.
-The following example demonstrates the `\extrarowheight` parameter.
+Spesso, specialmente adoperando `\hline`, è meglio aumentare
+l'altezza delle righe senza aumentare la loro profondità
+sotto alla linea di base.
+L'esempio seguente mostra all'opera il parametro 
+`\extrarowheight`:
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{array}
-\begin{document}
 
+\begin{document}
 
 \begin{center}
 \begin{tabular}{cc}
-\hline
-Square& $x^2$\\
-\hline
-Cube& $x^3$\\
-\hline
+  \hline
+  Quadrato & $x^2$ \\
+  \hline
+  Cubo     & $x^3$ \\
+  \hline
 \end{tabular}
 \end{center}
-
 
 \begin{center}
 \setlength\extrarowheight{2pt}
 \begin{tabular}{cc}
-\hline
-Square& $x^2$\\
-\hline
-Cube& $x^3$\\
-\hline
+  \hline
+  Quadrato & $x^2$ \\
+  \hline
+  Cubo     & $x^3$ \\
+  \hline
 \end{tabular}
 \end{center}
+
 \end{document}
 ```
