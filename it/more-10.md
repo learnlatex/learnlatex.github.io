@@ -1,57 +1,62 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Mathematics"
-description: "This lesson show more amsmath alignment environments, how to make math bold, the math extension package mathtools, and using Unicode input for maths."
+title: "Di più su: Matematica"
+description: "Questa lezione mostra ulteriori ambienti di allineamento di amsmath, come si scrive la matematica in nero, il pachetto mathtools, e l'uso di un input Unicode per la matematica."
 toc-anchor-text: "More on: Mathematics"
 ---
 
 
-## Further `amsmath` alignments
+## Ulteriori allineamenti di `amsmath`
 
-In addition to the `align*` environment shown in the main lesson,
-`amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment, and `multline` for
-splitting a larger single expression over multiple lines, aligning the
-first line to the left, and the last to the right. In all cases the `*`
-form  omits the equation numbers by default.
+Oltre all'ambiente `align*` descritto nella lezione principale,
+`amsmath` definisce numerosi altri costrutti per la matematica
+in display, in particolare `gather` per display su più righe
+che non richiedono allineamento, e `multline`
+per suddividere una singola espressione più lunga in più righe,
+delle quali la prima è allineata a sinistra e l'ultima a destra.
+In tutti i casi, la forma `*` omette la numerazione delle formule.
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
-
 \usepackage{amsmath}
 
 \begin{document}
 
-Gather
+Gather:
 \begin{gather}
-  P(x)=ax^{5}+bx^{4}+cx^{3}+dx^{2}+ex +f\\
+  P(x)=ax^{5}+bx^{4}+cx^{3}+dx^{2}+ex +f \\
   x^2+x=10
 \end{gather}
 
-Multline
+Multline:
 \begin{multline*}
    (a+b+c+d)x^{5}+(b+c+d+e)x^{4} \\
-    +(c+d+e+f)x^{3}+(d+e+f+a)x^{2}+(e+f+a+b)x\\
+    +(c+d+e+f)x^{3}+(d+e+f+a)x^{2}+(e+f+a+b)x \\
     + (f+a+b+c)
 \end{multline*}
+
 \end{document}
 ```
 
-### Columns in math alignments
+### Colonne negli allineamenti matematici
 
-The `amsmath` alignment environments are designed to take pairs of
-columns with the first column of each pair aligned to the right and
-the second aligned to the left. This allows multiple equations to be
-shown, each aligned towards its relation symbol.
+Gli ambienti di allineamento di `amsmath` sono progettati
+per considare le colonne a coppie, con la prima colonna di
+ogni coppia allineata a destra e la seconda a sinistra.
+Questo permette di mostrare più equazioni in una volta sola,
+ciascuna allineata in riferimento al proprio simbolo
+di relazione:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
+
 \begin{document}
-Aligned equations
+
+Equazioni allineate:
 \begin{align*}
 a &= b+1   &  c &= d+2  &  e &= f+3   \\
 r &= s^{2} &  t &=u^{3} &  v &= w^{4}
@@ -59,7 +64,6 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 
 \end{document}
 ```
-
 
 In addition there are variants of the display environments ending
 in `ed` that make a subterm inside a larger display.
@@ -69,19 +73,22 @@ For example, `aligned` and `gathered` are variants of `align` and `gather` respe
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
+
 \begin{document}
+
 Aligned:
 \[
 \left.\begin{aligned}
-a&=b\\
-c&=d
+  a&=b \\
+  c&=d
 \end{aligned}\right\}
 \Longrightarrow
 \left\{\begin{aligned}
-b&=a\\
-d&=c
+  b&=a \\
+  d&=c
 \end{aligned}\right.
 \]
+
 \end{document}
 ```
 
