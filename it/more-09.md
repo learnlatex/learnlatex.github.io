@@ -1,32 +1,35 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Cross-referencing"
-description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
-toc-anchor-text: "More on: Cross-referencing"
+title: "Di più su: Riferimenti incrociati"
+description: "Questa lezione mostra come trasformare riferimenti incrociati in collegamenti ipertestuali con il pacchetto hyperref."
+toc-anchor-text: "Di più su: Riferimenti incrociati"
 ---
 
-## Making cross-references into links
+## Trasformare i riferimenti incrociati in collegamenti ipertestuali
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+È possibile trasformare i riferimenti incrociati in collegamenti
+ipertestuali con il pacchetto `hyperref`.
+Nella maggior parte dei casi, `hyperref` va caricato nel preambolo
+del documento come ultimo pacchetto.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
+
 \begin{document}
 
-\section{Introduction}
-Some exciting text with a reference~\ref{sec:next}.
+\section{Introduzione}
+Un po' di testo emozionante con un riferimento~\ref{sec:prossimo}.
 
-\section{Next thing}
-\label{sec:next}
+\section{Argomento successivo}
+\label{sec:prossimo}
 
-More text here.
+Ancora un po' di testo.
+
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+Abbiamo scelto di stampare i collegamenti nello stesso colore del
+testo normale: prova a levare `hidelinks` e guarda che succede!
