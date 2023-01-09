@@ -1,44 +1,60 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Citations and references"
-description: "This lesson gives details on non-English bibliographies, how to make references into hyperlinks, and highlights the main differences between BibTeX styles."
-toc-anchor-text: "More on: Citations and references"
+title: "Di più su: Citazioni e riferimenti bibliografici"
+description: "Questa lezione fornisce maggiori dettagli sulle bibliografie in lingua diversa dall'inglese, su come trasformare i riferimenti bibliografici in collegamenti ipertestuali ed evidenzia le principali differenze tra gli stili di BibTeX."
+toc-anchor-text: "Di più su: Citazioni e riferimenti bibliografici"
 ---
 
-## Dealing with non-English sorting
+## Ordinamento alfabetico per lingue diverse dall'inglese
 
-The BibTeX program was written primarily to deal with references in English. It
-is very limited in handling accented characters, and even more limited with
-non-Latin letters. In contrast, the Biber program was written from the start to
-handle a mix of scripts properly.
+Il programma BibTeX è stato scritto in primo luogo
+per occuparsi di riferimenti bibliografici in inglese.
+Presenta importanti limiti nella gestione dei caratteri
+accentati, ed è ancora più limitato con lettere di
+alfabeti non latini.
+Biber, dal canto suo, è stato scritto da capo
+per gestire correttamente tutte le lingue, anche quando
+sono mescolate in una stessa bibliografia.
 
-This means that if you are sorting your bibliography, and you need to sort in
-anything other than English order, you really should be using `biblatex` and
-Biber, rather than `natbib` and BibTeX.
+Ciò significa che se stai ordinando la tua bibliografia 
+e hai bisogno di ordinare qualcosa di diverso dall'ordine 
+inglese, dovresti davvero usare `biblatex` e Biber, 
+piuttosto che `natbib` e BibTeX.
 
-## Hyperlinks
+## Collegamenti ipertestuali
 
-If you load the `hyperref` package (as covered [earlier](more-09)), it will
-automatically make some content in your bibliography into links. This is
-particularly useful for URLs and DOIs.
+Se carichi il pacchetto `hyperref` (come descritto 
+[in precedenza](more-09)), trasformerà automaticamente 
+in collegamenti ipertestuali alcuni contenuti della 
+bibliografia. 
+La cosa è particolarmente utile per URL e DOI.
 
-## Differences in best practice for BibTeX input between styles
+## Differenze tra gli stili di BibTeX e buone pratiche
 
-While the overall syntax of the BibTeX files is the same whether you use the
-BibTeX workflow or `biblatex`, the set of fields that is supported (used by the
-style) and their exact meaning may not only vary between the BibTeX workflow
-and `biblatex`, but also between different BibTeX styles. A large 'core set' of
-entry types and fields is the same for almost all styles, but there are
-differences in some fields.
+Sebbene la sintassi generale dei file BibTeX sia identica 
+per BibTeX e per `biblatex`, l'insieme di campi ammessi 
+(adoperati dallo stile) e il loro significato esatto non 
+solo possono variare tra i due, ma anche tra diversi stili 
+di BibTeX. 
+Quasi tutti gli stili hanno in comune un ampio insieme 
+di record e campi fondamentali, ma alcuni campi presentano
+differenze.
 
-A common example is the URL. Some older BibTeX `.bst` styles (most notably
-the 'standard BibTeX styles', e.g. `plain.bst`, `unsrt.bst`, ...) predate
-the invention of the URL and have no dedicated field for the URL of an online
-resource. Many newer styles _do_ have a dedicated `url` field. The workaround
-to show the URL in the older styles is usually to use the `howpublished` field,
-but with the newer styles it is of course preferable to use the dedicated
-`url` field.
+Prendiamo l'URL, per esempio.
+Alcuni vecchi stili BibTeX `.bst` (in particolare gli 
+‘stili BibTeX standard’, per esempio `plain.bst`, 
+`unsrt.bst`, eccetera) sono antecedenti all'invenzione 
+dell'URL e non prevedono un campo dedicato all'URL di 
+una risorsa on-line. 
+Molti stili più recenti, invece _hanno_ un campo `url` 
+dedicato. 
+La soluzione alternativa per mostrare comunque l'URL 
+con gli stili precedenti è di solito adoperare il campo 
+`howpublished`, ma con gli stili più recenti è ovviamente 
+preferibile riempire il campo `url` dedicato.
 
-In order to be able to make use of the full potential of your used style you
-will have to find out the set of fields it supports and their semantic.
+Per poter sfruttare appieno il potenziale dello stile 
+che hai scelto, dovrai scoprire i campi che 
+ammette e la loro semantica.
+
