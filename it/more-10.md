@@ -43,7 +43,7 @@ Multline:
 ### Colonne negli allineamenti matematici
 
 Gli ambienti di allineamento di `amsmath` sono progettati
-per considare le colonne a coppie, con la prima colonna di
+per considerare le colonne a coppie, con la prima colonna di
 ogni coppia allineata a destra e la seconda a sinistra.
 Questo permette di mostrare più equazioni in una volta sola,
 ciascuna allineata in riferimento al proprio simbolo
@@ -65,9 +65,11 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
-In addition there are variants of the display environments ending
-in `ed` that make a subterm inside a larger display.
-For example, `aligned` and `gathered` are variants of `align` and `gather` respectively.
+Inoltre esistono varianti degli ambienti per i display 
+che terminano in `-ed`, che permettono di comporre
+una ‘sottoformula’ da inserire in un display più grande. 
+Per esempio, `aligned` e `gathered` sono rispettivamente 
+varianti di `align` e `gather`.
 
 ```latex
 \documentclass{article}
@@ -79,47 +81,55 @@ For example, `aligned` and `gathered` are variants of `align` and `gather` respe
 Aligned:
 \[
 \left.\begin{aligned}
-  a&=b \\
-  c&=d
+  a &= b \\
+  c &= d
 \end{aligned}\right\}
 \Longrightarrow
 \left\{\begin{aligned}
-  b&=a \\
-  d&=c
+  b &= a \\
+  d &= c
 \end{aligned}\right.
 \]
 
 \end{document}
 ```
-
-`aligned` takes a positional optional argument similar to `tabular`.
-This is often useful to align an inline math formula on its top row;
-compare the items in the list in the following example.
+`aligned` accetta uno specificatore di posizione facoltativo
+simile a quello di  `tabular`. Questo è spesso utile per 
+allineare una formula matematica in linea alla sua riga 
+superiore. 
+Confronta le due voci dell'elenco nell'esempio seguente.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
+
 \begin{document}
+
 \begin{itemize}
 \item 
 $\begin{aligned}[t]
-a&=b\\
-c&=d
+a &= b\\
+c &= d
 \end{aligned}$
 \item 
 $\begin{aligned}
-a&=b\\
-c&=d
+a &= b\\
+c &= d
 \end{aligned}$
 \end{itemize}
+
 \end{document}
 ```
 
 ## Bold Math
-Standard LaTeX has two methods to give bold symbols in math. To make
-an entire expression bold, use `\boldmath` before entering the
-expression. The command `\mathbf` is also available to set individual
+LaTeX standard prevede due modi per mettere in nero dei
+simboli matematici. 
+Per scrivere in nero un'intera espressione, basta dare
+`\boldmath` prima dell'espressione.
+È disponibile anche il comando `\mathbf` per mettere in
+tondo nero singole lettere o singole parole.
+The command `\mathbf` is also available to set individual
 letters or words in upright bold roman.
 
 ```latex
@@ -128,21 +138,21 @@ letters or words in upright bold roman.
 
 \begin{document}
 
-
 $(x+y)(x-y)=x^{2}-y^{2}$
 
 {\boldmath $(x+y)(x-y)=x^{2}-y^{2}$ $\pi r^2$}
 
 $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
-$\mathbf{\pi} r^2$ % bad use of \mathbf
+$\mathbf{\pi} r^2$ % cattivo uso di \mathbf
+
 \end{document}
 ```
-
-If you want to access bold symbols (as would be used by `\boldmath`)
-within an otherwise normal weight expression, then you can use the
-command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as `=` and Greek letters. (Note that `\mathbf` has no effect
-on `\pi` in the example above.)
+Se desideri adoperare simboli in nero (come farebbe 
+`\boldmath`) in un'espressione di peso normale, 
+c'è il comando `\bm` dal pacchetto `bm`. 
+Osserva che `\bm` funziona anche con simboli come `=` e
+le lettere greche. (Il comando `\mathbf`, infatti, 
+non ha effetto su `\pi` nell'esempio precedente.)
 
 ```latex
 \documentclass[a4paper]{article}
@@ -161,9 +171,11 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 ```
 
 ## Mathtools
-The package `mathtools` loads `amsmath` and adds several additional
-features, such as variants of the `amsmath` matrix environments that
-allow the column alignment to be specified.
+Il pacchetto `mathtools` carica `amsmath` e aggiunge
+diverse funzionalità supplementari, come le varianti 
+degli ambienti di `amsmath` per le matrici, che 
+permettono di specificare l'allineamento delle colonne.
+
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
@@ -173,24 +185,28 @@ allow the column alignment to be specified.
 
 \[
 \begin{pmatrix*}[r]
-  10&11\\
-   1&2\\
-  -5&-6
+  10 & 11 \\
+   1 &  2 \\
+  -5 & -6
 \end{pmatrix*}
 \]
 
 \end{document}
 ```
 
-## Unicode Math
+## Matematica Unicode
 
-As will be seen in [Lesson 14](lesson-14), there are variant TeX
-engines that use OpenType fonts. By default, these engines still use
-classic TeX math fonts but you may use the `unicode-math` package
-to use OpenType Math fonts. The details of this package are beyond
-this course and we refer you to the
-[package documentation](https://texdoc.org/pkg/unicode-math).
-However, we give a small example here.
+Come vedremo nella [lezione 14](lesson-14), 
+esistono delle varianti dei motori TeX che 
+adoperano font OpenType. 
+Per impostazione predefinita, questi motori adoperano
+ancora i classici font di TeX per la matematica, ma
+è possibile comporre la matematica con font
+OpenType grazie al pacchetto `unicode-math`.
+I dettagli di questo pacchetto esulano dai limiti
+di questo corso, perciò ti rimandiamo alla
+[documentazione del pacchetto](https://texdoc.org/pkg/unicode-math).
+Tuttavia, te ne diamo qui un piccolo esempio.
 
 ```latex
 % !TEX lualatex
@@ -201,13 +217,15 @@ However, we give a small example here.
 
 \begin{document}
 
-One two three
+Uno due tre
 \[
 \log \alpha + \log \beta = \log(\alpha\beta)
 \]
 
-Unicode Math Alphanumerics
-\[A + \symfrak{A}+\symbf{A}+ \symcal{A} + \symscr{A}+ \symbb{A}\]
+Matematica Unicode alfanumerica
+\[
+A + \symfrak{A} + \symbf{A} + \symcal{A} + \symscr{A} + \symbb{A}
+\]
 
 \end{document}
 ```
