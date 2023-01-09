@@ -1,30 +1,33 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Formatting: fonts and spacing"
+title: "Di più su: Formattazione: font e spaziatura"
 description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "More on: Formatting: fonts and spacing"
+toc-anchor-text: "Di più su: Formattazione: font e spaziatura"
 ---
 
-## Suppressing the indent for one paragraph
+## Eliminare il rientro di un capoverso
 
-
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+Se vuoi eliminare il rientro di un singolo capoverso, 
+puoi dare `\noindent`.
+Dovresti adoperarlo _molto_ raramente; la maggior parte 
+delle volte, dovresti lasciare che LaTeX lo gestisca 
+automaticamente.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
 
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Un piccolo paragrafo, che abbiamo riempito un po' per assicurarci 
+che possiate vedere l'effetto qui!
 
-\noindent  One small paragraph, which we have filled out a little to make sure
-you can see the effect here!
+Un piccolo paragrafo, che abbiamo riempito un po' per assicurarci 
+che possiate vedere l'effetto qui!
+
+\noindent  Un piccolo paragrafo, che abbiamo riempito un po' per 
+assicurarci che possiate vedere l'effetto qui!
+
 \end{document}
 ```
