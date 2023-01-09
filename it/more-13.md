@@ -1,42 +1,52 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "More on: Structuring longer documents"
-description: "This lesson shows how to make an index, and how to use the imakeidx package to automate the process."
-toc-anchor-text: "More on: Structuring longer documents"
+title: "Di più su: Organizzare documenti lunghi"
+description: "Questa lezione mostra come realizzare un indice analitico e come adoperare il pacchetto imakeidx per rendere il processo automatico."
+toc-anchor-text: "Di più su: Organizzare documenti lunghi"
 ---
 
-## Making an index
+## Realizzare un indice analitico
 
-Depending on the type of document you are writing, you might want to include
-an index. This is a bit like making a bibliography, as it uses auxiliary files.
-Luckily, this is all automated by the `imakeidx` package. We need three
-instructions to LaTeX:
+A seconda del tipo di documento che stai scrivendo, potrebbe
+servirti un indice analitico. 
+È un po' come comporre una bibliografia, perché anche in questo
+caso LaTeX adopera internamente dei file ausiliari. 
+Fortunatamente, tutto il processo è reso automatico dal pacchetto 
+`imakeidx`. 
+Abbiamo bisogno di tre istruzioni per LaTeX:
 
-- The `\makeindex` command, which enables creation of an index
-- The `\index` command, which marks up index entries
-- The `\printindex` command, which prints the index
+- Il comando `\makeindex`, che abilita la creazione dell'indice
+- Il comando `\index`, che contrassegna le voci dell'indice
+- Il comando `\printindex`, che stampa l'indice
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{imakeidx}
+
 \makeindex
+
 \begin{document}
-Some text about Foo\index{foo}.
-More text\index{baz!bar}.
-Even more text\index{alpha@$\alpha$}.
-More text about a different part of baz\index{baz!wibble}.
+
+Un po' di testo su Foo\index{foo}.
+Ancora testo\index{baz!bar}.
+E ancora un po' di testo\index{alpha@$\alpha$}.
+Ancora testo su una diversa parte di baz\index{baz!wibble}.
 
 \clearpage
-Some text about Foo\index{foo} again, on a different page.
-Even more text\index{beta@$\beta$}.
-Even more text\index{gamma@$\gamma$}.
+Ancora un po' di testo su Foo\index{foo}, su una pagina diversa.
+E ancora un po' di testo\index{beta@$\beta$}.
+E ancora un po' di testo\index{gamma@$\gamma$}.
+
 \printindex
+
 \end{document}
 ```
 
-We've shown two features of indexing here: subdivision using `!`, and printing
-something different from the 'sort text' of an index entry using `@`. There
-is a lot of customisation possible with an index; try out the example and see
-how it works.
+Qui abbiamo mostrato due caratteristiche dell'indicizzazione: 
+la suddivisione di una voce mediante `!` e la stampa di qualcosa 
+di diverso dal ‘testo ordinato alfabeticamente’ di una voce di 
+indice mediante `@`. 
+L'indice analitico permette un alto grado di personalizzazione:
+prova l'esempio e guarda come funziona.
