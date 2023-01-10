@@ -4,7 +4,7 @@ lang: "it"
 title: "Accedere alla documentazione e chiedere aiuto"
 description: "Questa lezione mostra le principali fonti di documentazione per software e pacchetti relativi a LaTeX e come cercare aiuto quando sei nei guai."
 toc-anchor-text: "Aiuto e documentazione"
-toc-description: "Accessing help and documentation."
+toc-description: "Accedere alla documentazione e chiedere aiuto."
 ---
 
 # Documentazione e assistenza
