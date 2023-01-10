@@ -1,29 +1,30 @@
 ---
 layout: "page"
 lang: "it"
-title: Licenses
+title: Licenze
 permalink: /it/licenses
 ---
 
-# Licenses
+# Licenze
 
-The [Learn LaTeX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+Il [sito Learn LaTeX]({{ "/" | absolute_url }}) adopera due tipi di licenze:
 
-## Content
+## Contenuto
 
-The content of this website is available under the
-[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license. That means you can use the material as long as you say where it came
-from and let others do the same.
+Il contenuto di questo sito è disponibile con licenza
+[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Ciò significa che puoi usarne il materiale fintanto che dici 
+da dove proviene e lasci che gli altri facciano lo stesso.
 
-See [LICENSE](../LICENSE) for details.
+Per ulteriori dettagli, guarda [LICENZE](../LICENSE).
 
-## Code Examples
+## Codici d'esempio
 
-The code examples are licensed as
+I codici d'esempio sono disponibili con licenza
 [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
-(No Rights Reserved). This is a legal text that is (essentially) the same as 
-Public Domain, at least in countries where that concept exists. The key point 
-is that _you can use the examples without any issues_. You _do not_ need to 
-reference them, you _do not_ need to share them when you modify them: you can 
-just use them.
+(No Rights Reserved). 
+Questo è un testo legale che è (essenzialmente) lo stesso di Public Domain, 
+almeno nei paesi in cui esiste tale concetto.
+Il punto fondamentale è che _puoi adoperare gli esempi senza problemi. 
+_Non_ devi citarli, _non_ devi condividerli quando li modifichi: 
+puoi semplicemente adoperarli.
