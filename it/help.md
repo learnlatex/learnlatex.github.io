@@ -20,15 +20,17 @@ Il corso è composto da 16 lezioni di base raggiungibili
 dall'[indice]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) 
 presente nella [pagina iniziale](./).
 
-Ogni lezione contiene un collegamento a una lezione di approfondimento
-sullo stesso argomento.
-Dovresti riuscire a seguire tutte le 16 lezioni _senza_ dover
-leggere quelle aggiuntive.
+Ogni lezione contiene un collegamento a una lezione di 
+approfondimento sullo stesso argomento, raggiungibile 
+cliccando su ‘Per saperne di più’ proprio sopra il titolo della 
+lezione.
+Dovresti riuscire a seguire tutte le 16 lezioni _senza_ 
+dover leggere anche quelle aggiuntive.
 
-Alla fine del corso, una o più lezioni danno indicazioni specifiche
-sulla lingua adoperata nelle lezioni principali e, infine, una galleria 
-di esempi mostra alcuni usi particolari di LaTeX
-non descritti nel corso.
+Alla fine del corso, una lezione dà indicazioni 
+specifiche sulla lingua adoperata nelle lezioni principali 
+e, infine, una galleria di esempi mostra alcuni usi 
+particolari di LaTeX non descritti nel corso.
 
 ---
 
@@ -46,24 +48,27 @@ che sulla pagina appaiono così:
 \usepackage[T1]{fontenc}
 
 \begin{document}
+
 Testo d'esempio.
+
 \end{document}
 ```
 
 Ogni esempio è _completo_. Inoltre è _modificabile_, perché 
-gli esercizi alla fine della lezione potrebbero chiederti 
+spesso gli esercizi alla fine della lezione ti chiedono 
 di apportare loro qualche piccolo cambiamento.
 
 L'editor integrato nel sito è [ACE](https://ace.c9.io/).
 
-Puoi personalizzare l'aspetto dell'editor (impostando un 
+Puoi personalizzarne l'aspetto (impostando un 
 tema scuro con testo chiaro su sfondo nero, per esempio) 
 sulla pagina [Configurazione](settings).
 Per sperimentare comodamente temi diversi, ti consigliamo 
 di dare <kbd>Ctrl</kbd>+<kbd>,</kbd> 
 (<kbd>⌘</kbd>+<kbd>,</kbd> su Mac)
 mentre stai lavorando con gli esempi. 
-Questa combinazione di tasti [ti mostrerà un pannello](javascript:acesettings()) 
+Questa combinazione di tasti 
+[farà apparire un pannello](javascript:acesettings()) 
 nel quale potrai modificare tutte le impostazioni di ACE.
 
 Il repository di ACE contiene una [pagina con le scorciatoie da tastiera](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts)
@@ -73,11 +78,11 @@ utili per risparmiare tempo.
 
 * Mediante il servizio Overleaf
 * Mediante il servizio TeXLive.net
-* Mediante un sistema TeX installato sul disco
+* Mediante un sistema TeX installato sul tuo disco
 
 ##### Il servizio Overleaf
 
-Overleaf è uno dei servizi più apprezzati per lavorare con LaTeX online.
+Overleaf è uno dei servizi più apprezzati per lavorare con LaTeX on-line.
 Il pulsante <button>Apri in Overleaf</button>, sotto all'esempio, invia 
 il codice a [Overleaf](https://www.overleaf.com/about).
 
@@ -119,7 +124,7 @@ Nota bene che **TeXLive.net** non richiede né l'accesso né alcun
 tipo di registrazione – il che lo rende molto comodo per lavorare
 con esempi brevi – ma non ti permette in nessun modo di salvare
 il documento. Abbandonando la pagina, perderai tutte le modifiche
-apportate all'esempio.
+eventualmente apportate all'esempio.
 
 ##### Sistema TeX installato sul disco
 
@@ -136,7 +141,7 @@ tuo editor preferito.
 ### Risoluzione dei problemi
 
 I nostri esempi richiedono un sistema TeX aggiornato.
-Dal momento che funzionano tutti con entrambi i servizi online 
+Dal momento che funzionano tutti con entrambi i servizi on-line 
 appena descritti, se la compilazione sul tuo sistema locale
 non va a buon fine e ricevi dei messaggi d'errore, ti 
 consigliamo di controllarne lo stato e, se è il caso,
@@ -146,11 +151,12 @@ di aggiornarlo.
 
 ## Scegliere il motore TeX
 
-Per impostazione predefinita, i nostri codici d'esempio
-vengono composti online con il motore `pdflatex`.
+Per impostazione predefinita, i nostri esempi
+vengono composti on-line con il motore `pdflatex`.
 
-Puoi scegliere esplicitamente `latex`, `pdflatex`, `xelatex`, `lualatex`,
-`platex` o `uplatex` mediante un commento speciale di questo tipo:
+Puoi scegliere esplicitamente `latex`, `pdflatex`, 
+`xelatex`, `lualatex`, `platex` o `uplatex` 
+mediante un commento speciale di questo tipo:
 
 `% !TEX ` _testo_ `lualatex`
 
@@ -163,11 +169,12 @@ come alcuni editor TeX raccomandano, ma tieni presente
 che la stringa `program=` non è richiesta. 
 Nota bene che, attualmente, i commenti speciali si limitano 
 a specificare solo uno dei motori supportati dai sistemi TeX 
-online consigliati nel nostro corso.
+on-line consigliati nel nostro corso.
  
-In una delle [pagine di approfondimento](more-14) di questo corso
-puoi vedere un esempio di commento per impostare esplicitamente
-la composizione con LuaLaTeX.
+In una delle [pagine di approfondimento](more-14) 
+di questo corso c'è un esempio di commento per 
+impostare esplicitamente la composizione con 
+LuaLaTeX.
 
 Specificando `platex` o `uplatex`, per produrre il PDF composto
 a partire dal file DVI generato da queste varianti di TeX 
@@ -177,7 +184,7 @@ Analogamente, scegliendo `latex` saranno adoperati
 
 Se in un commento speciale `% !TeX` non si specifica alcun
 motore, il file sorgente viene composto con `pdflatex`, a meno
-che non abbiate impostato un altro motore come predefinito nella
+che non abbiate impostato un altro motore predefinito nella
 pagina [Configurazione](settings).
 
 ---
@@ -185,8 +192,8 @@ pagina [Configurazione](settings).
 ## Scegliere come visualizzare il risultato
 
 Se scegliete il sistema TeXLive.net, il PDF
-dell'esempio composto 
-è visualizzato per impostazione predefinita con 
+dell'esempio composto è visualizzato per 
+impostazione predefinita con 
 [PDF.js](https://mozilla.github.io/pdf.js/), che
 garantisce un comportamento coerente sulla grande
 maggioranza dei browser.
