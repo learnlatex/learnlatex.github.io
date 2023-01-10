@@ -2,7 +2,9 @@
 layout: "lesson"
 lang: "it"
 title: "Specifiche linguistiche per l'italiano"
-description: "Questa lezione mostra i dettagli specifici della lingua per comporre con LaTeX in italiano. L'attenzione è richiamata sulla sillabazione."
+description: "Questa lezione illustra i dettagli specifici di tipo 
+linguistico per comporre con LaTeX in italiano, con particolare 
+attenzione sulla sillabazione."
 next: "extra-01"
 toc-anchor-text: "Specifiche linguistiche per l'italiano"
 toc-description: "Comporre con LaTeX in italiano."
@@ -11,15 +13,17 @@ toc-description: "Comporre con LaTeX in italiano."
 # Specifiche linguistiche per l'italiano
 
 <span
-  class="summary">Questa lezione mostra i dettagli specifici della lingua per comporre con LaTeX in italiano. L'attenzione è richiamata sulla sillabazione.</span>
+  class="summary">Questa lezione illustra i dettagli specifici 
+  di tipo linguistico per comporre con LaTeX in italiano, 
+  con particolare attenzione sulla sillabazione.</span>
 
 ## Sillabazione
 
-LaTeX è stato scritto per comporre documenti in inglese, 
-quindi esistiono problemi specificamente linguistici che 
-gli utenti di altre lingue debbono affrontare. 
-Il principale è la sillabazione: per passare allo schema
-di sillabazione di una lingua diversa dall'inglese
+LaTeX è stato scritto per comporre documenti in inglese,
+quindi gli utenti che compongono in altre lingue debbono
+affrontare problemi specifici. 
+Il problema principale è la sillabazione: per passare 
+allo schema di sillabazione di una lingua diversa dall'inglese
 basta dichiararlo come opzione al pacchetto `babel`.
 
 ```latex
