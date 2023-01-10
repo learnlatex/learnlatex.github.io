@@ -1,34 +1,42 @@
 ---
 layout: "page"
 lang: "it"
-title: Privacy Policy
+title: Informativa sulla privacy
 permalink: /it/privacy
 ---
-# Privacy Policy
+# Informativa sulla privacy
 
-## User Data
+## Dati degli utenti
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+LearnLaTeX.org non chiede all'utente di autenticarsi né 
+memorizza suoi dati specifici.
+Poiché il sito è ospitato su GitHub Pages, i manutentori
+del sito non hanno accesso ad alcuna informazione
+sull'attività dell'utente.
+Il sito non utilizza alcun servizio di tracciamento 
+come Google Analytics.
 
 ## Cookies
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
+Per impostazione predefinita il sito non utilizza alcun cookie. 
+Come documentato nella
+[pagina delle impostazioni](settings), gli utenti possono 
+facoltativamente accettare i cookie e memorizzare 
+le preferenze. I cookie che memorizzano le preferenze 
+(come il motore TeX predefinito) _non_ sono generati 
+o trasmessi al sito LearnLaTeX.org, ma sono generati 
+e memorizzati dal JavaScript in esecuzione all'interno 
+del browser dell'utente.
 
-## External Sites
+## Siti esterni
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+Se viene adoperata l'opzione per eseguire esempi in 
+un servizio on-line, i dati nell'editor corrente 
+verranno trasmessi tramite una richiesta https POST 
+al servizio pertinente e saranno soggetti all'informativa 
+sulla privacy di quel servizio esterno. 
+I seguenti collegamenti si applicano ai servizi 
+attualmente utilizzati.
 
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
