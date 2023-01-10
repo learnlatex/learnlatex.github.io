@@ -83,7 +83,7 @@ utili per risparmiare tempo.
 ##### Il servizio Overleaf
 
 Overleaf è uno dei servizi più apprezzati per lavorare con LaTeX on-line.
-Il pulsante <button>Apri in Overleaf</button>, sotto all'esempio, invia 
+Il pulsante <button>Overleaf</button>, sotto all'esempio, invia 
 il codice a [Overleaf](https://www.overleaf.com/about).
 
 Se non possiedi un account su Overleaf o se i dettagli del tuo account 
@@ -106,7 +106,7 @@ più avanti.
 
 ##### Il servizio TeXLive.net
 
-Il pulsante <button>Esegui in TeXLive.net</button>, sotto all'esempio, 
+Il pulsante <button>TeXLive.net</button>, sotto all'esempio, 
 invia il codice al servizio [TeXLive.net](https://texlive.net)[^1].
 
 Il servizio TeXLive.net è stato sviluppato appositamente per questo sito
@@ -120,8 +120,8 @@ Con il pulsante <button>Elimina l'output</button> potrai
 eliminarlo (oppure puoi lasciarlo dov'è e proseguire con 
 la lezione, che continua più sotto).
 
-Nota bene che **TeXLive.net** non richiede né l'accesso né alcun
-tipo di registrazione – il che lo rende molto comodo per lavorare
+Nota bene che **TeXLive.net** non ti chiede né di autenticarti 
+né di registrarti in alcun modo – il che lo rende molto comodo per lavorare
 con esempi brevi – ma non ti permette in nessun modo di salvare
 il documento. Abbandonando la pagina, perderai tutte le modifiche
 eventualmente apportate all'esempio.
