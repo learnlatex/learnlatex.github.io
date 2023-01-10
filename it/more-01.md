@@ -28,9 +28,9 @@ Lo sviluppo di TeX è incominciato nel maggio del 1977.
 La versione originale di TeX era piuttosto complicata da 
 adoperare, tanto che lo stesso Donald Knuth usava svariate 
 macro per scrivere i propri libri. 
-Anche Leslie Lamport, che oggi lavora per Microsoft, ha 
+Anche Leslie Lamport, che oggi lavora per la Microsoft, ha 
 sviluppato una serie di macro che semplificano l'uso di TeX, 
-e l'ha chiamata _LaTeX_, La(mport)TeX.
+e l'ha chiamata _LaTeX_ (_La(mport)TeX_).
 
 Oggi LaTeX è la strada più comune per ingeragire con TeX.
 Un'alternativa a LaTeX è [ConTeXt](https://www.contextgarden.net/).
