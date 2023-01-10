@@ -16,7 +16,7 @@ Il contenuto di questo sito è disponibile con licenza
 Ciò significa che puoi usarne il materiale fintanto che ne 
 dichiari la provenienza e lasci che gli altri facciano lo stesso.
 
-Per ulteriori dettagli, guarda [LICENZE](../LICENSE).
+Per ulteriori dettagli, guarda la pagina delle [LICENZE](../LICENSE).
 
 ## Codici d'esempio
 
