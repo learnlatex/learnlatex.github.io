@@ -28,7 +28,7 @@ permalink: /it/
 
 <h2 class="heading__toc" id="toc">Lezioni</h2>
 
-<p class="paragraph__toc">In ogni lezione c'è un collegamento alla pagina <b>Per saperne di più</b>. Queste informazioni aggiuntive sono lì per aiutarti se hai bisogno di scendere nei dettagli, perciò non preoccuparti se non le leggi subito.</p>
+<p class="paragraph__toc">In ogni lezione c'è un collegamento alla pagina di approfondimento <b>Per saperne di più</b>, che contiene informazioni aggiuntive per aiutarti se hai bisogno di scendere nei dettagli. Dunque, non preoccuparti se non le leggi subito.</p>
 
 {% include toc-lessons.html prefix="it/lesson" %}
 
@@ -40,6 +40,9 @@ permalink: /it/
 
 ## Un passo in più
 
-Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. 
-Per ulteriori informazioni e qualche consiglio sui principali manuali su LaTeX, vai all'[ultima lezione](./lesson-16).
+Procurarsi un libro su LaTeX è il modo migliore 
+per impararne il funzionamento nei dettagli. 
+Per ulteriori informazioni e qualche consiglio 
+sui principali manuali su LaTeX, 
+vai all'[ultima lezione](./lesson-16).
 
