@@ -3,7 +3,7 @@ layout: "lesson"
 lang: "it"
 title: "Che cos'è LaTeX e come funziona"
 description: "Questa lezione spiega le nozioni fondamentali di LaTeX: che cos'è e come funziona, 
-  diversamente dai comuni elaboratori di testo come Word di Microsoft o Writer di LibreOffice."
+  diversamente dai comuni elaboratori di testi come Word di Microsoft o Writer di LibreOffice."
 toc-anchor-text: "Nozioni fondamentali di LaTeX"
 toc-description: "Che cos'è LaTeX e come funziona."
 ---
@@ -11,8 +11,10 @@ toc-description: "Che cos'è LaTeX e come funziona."
 # Nozioni fondamentali di LaTeX
 
 <span
-  class="summary">Questa lezione spiega le nozioni fondamentali di LaTeX: che cos'è e come funziona, 
-  diversamente dai comuni elaboratori di testo come Word di Microsoft o Writer di LibreOffice.</span>
+  class="summary">Questa lezione spiega le nozioni 
+  fondamentali di LaTeX: che cos'è e come funziona, 
+  diversamente dai comuni elaboratori di testi come 
+  Word di Microsoft o Writer di LibreOffice.</span>
 
 A differenza dei comuni elaboratori di testi 
 come Word di Microsoft o Writer di LibreOffice, 
@@ -37,10 +39,10 @@ il documento vero e proprio, ma sono piuttosto istruzioni
 che informano su che cosa e come ciascuna parte del 
 documento dovrebbe essere, di solito non sono questi 
 a essere inviati ad altre persone. 
-Dopo aver scritto il tuo _sorgente_ LaTeX, invece, 
+Dopo aver scritto il tuo _codice sorgente_, invece, 
 lancerai su di esso LaTeX (normalmente adoperando 
-un programma chiamato `pdflatex`) per generare un file PDF
-(il documento composto o finale). 
+un programma chiamato `pdflatex`) per generare un 
+file PDF (il documento composto o finale). 
 È questo PDF che poi condividerai con gli altri utenti.
 
 Questo processo viene descritto in modi diversi.
