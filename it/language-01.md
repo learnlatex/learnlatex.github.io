@@ -1,30 +1,35 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Language-specifics for English"
-description: "This lesson shows language-specific details for typesetting with LaTeX in English. The focus is on hyphenation, where UK and US traditions are different."
+title: "Specifiche linguistiche per l'italiano"
+description: "Questa lezione mostra i dettagli specifici della lingua per comporre con LaTeX in italiano. L'attenzione è richiamata sulla sillabazione."
 next: "extra-01"
-toc-anchor-text: "English Language-specifics"
-toc-description: "Typesetting with LaTeX in English."
+toc-anchor-text: "Specifiche linguistiche per l'italiano"
+toc-description: "Comporre con LaTeX in italiano."
 ---
 
-# Language-specifics for English
+# Specifiche linguistiche per l'italiano
 
 <span
-  class="summary">This lesson shows language-specific details for typesetting with LaTeX in English with a focus on hyphenation, where UK and US traditions are different.</span>
+  class="summary">Questa lezione mostra i dettagli specifici della lingua per comporre con LaTeX in italiano. L'attenzione è richiamata sulla sillabazione.</span>
 
-## Hyphenation
+## Sillabazione
 
-LaTeX was written for use with English, and so there are very few
-language-specific issues facing authors in English. The main one
-is hyphenation: UK and US traditions are different. LaTeX starts out
-using US English patterns, but you can switch to UK ones using `babel`.
+LaTeX è stato scritto per comporre documenti in inglese, 
+quindi esistiono problemi specificamente linguistici che 
+gli utenti di altre lingue debbono affrontare. 
+Il principale è la sillabazione: per passare allo schema
+di sillabazione di una lingua diversa dall'inglese
+basta dichiararlo come opzione al pacchetto `babel`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[UKenglish]{babel}
+\usepackage[italian]{babel} % qui si dichiara la lingua del documento
+
 \begin{document}
-Some text
+
+Un po' di testo in italiano.
+
 \end{document}
 ```
