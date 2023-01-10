@@ -15,13 +15,14 @@ permalink: /it/
   <section>
     <h3 class="text-columns__heading">Introduzione</h3>
     <p>LaTeX può spaventare i nuovi utenti, perché <em>non è</em> un elaboratore di testo 
-    e perché non è costituito da un programma unico. Il nostro obiettivo è aiutarti a incominciare 
-    con LaTeX: le nozioni fondamentali, l'installazione, la scrittura del codice, senza 
-    pretendere di mostrarti <em>tutto</em> in una volta sola. <a href="./mission">Di più sul nostro obiettivo &hellip;</a></p>
+    e perché non è costituito da un solo programma. Il nostro obiettivo è aiutarti a incominciare 
+    con LaTeX: ti insegneremo le nozioni fondamentali, come si installa, come si scrive il codice, 
+    senza pretendere di mostrarti <em>tutto</em> in una volta sola. <a href="./mission">Di più sul
+    nostro obiettivo &hellip;</a></p>
   </section>
   <section>
     <h3 class="text-columns__heading">Come funziona</h3>
-      <p>Abbiamo preso le cose più importanti che devi sapere e le abbiamo trasformate in <em>16 brevi lezioni</em>, che non dovrebbero richiederti troppo tempo per essere seguite. Ogni lezione contiene numerosi esempi scritti in buon codice LaTeX, che puoi modificare, comporre e visualizzare direttamente in questo sito. <a href="./help#examples">Di più sugli esempi &hellip;</a></p>
+      <p>Abbiamo preso le cose più importanti che devi sapere e le abbiamo trasformate in <em>16 brevi lezioni</em>, che non dovrebbero richiederti troppo tempo per essere seguite. Ogni lezione contiene numerosi esempi scritti in buon codice LaTeX: li puoi modificare, comporre e visualizzare direttamente in questo sito. <a href="./help#examples">Di più sugli esempi &hellip;</a></p>
   </section>
 </div>
 
@@ -39,5 +40,6 @@ permalink: /it/
 
 ## Un passo in più
 
-Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. Per ulteriori informazioni e qualche consiglio sui principali manuali su LaTeX, vai all'[ultima lezione](./lesson-16).
+Procurarsi un libro su LaTeX è il modo migliore per impararne il funzionamento nei dettagli. 
+Per ulteriori informazioni e qualche consiglio sui principali manuali su LaTeX, vai all'[ultima lezione](./lesson-16).
 
