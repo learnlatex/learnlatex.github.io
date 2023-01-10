@@ -1,12 +1,12 @@
 ---
 layout: "page"
 lang: "it"
-title: Site Settings
+title: Impostazioni del sito
 permalink: /it/settings
 ---
-# Site Settings (User Preferences)
+# Impostazioni del sito (preferenze dell'utente)
 
-## Accept or Delete Cookies
+## Accettare o eliminare i cookies
 
 Cookies are small pieces of data that are stored by your browser.
 By default no cookies are used by this site, but any options set on
@@ -27,13 +27,13 @@ The `return` form parameter that TeXLive.net should use in the absence of a sett
 {% include settings-return.html %}
 
 
-## Default Engine
+## Motore predefinito
 The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
 
 {% include settings-engine.html %}
 
 
-## Editor Theme
+## Tema dell'editor
 The theme used by the embedded ACE editor.
 
 {% include settings-acetheme.html %}
