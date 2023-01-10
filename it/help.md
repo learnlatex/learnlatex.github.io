@@ -13,7 +13,6 @@ permalink: /it/help
 
 # Aiuto
 
-
 ## Navigare questo sito
 
 Il corso è composto da 16 lezioni di base raggiungibili 
@@ -54,9 +53,9 @@ Testo d'esempio.
 \end{document}
 ```
 
-Ogni esempio è _completo_. Inoltre è _modificabile_, perché 
-spesso gli esercizi alla fine della lezione ti chiedono 
-di apportare loro qualche piccolo cambiamento.
+Ogni esempio è _completo_. Inoltre è _modificabile_, 
+perché spesso gli esercizi alla fine della lezione 
+ti chiedono di apportare loro qualche piccolo cambiamento.
 
 L'editor integrato nel sito è [ACE](https://ace.c9.io/).
 
@@ -82,7 +81,8 @@ utili per risparmiare tempo.
 
 ##### Il servizio Overleaf
 
-Overleaf è uno dei servizi più apprezzati per lavorare con LaTeX on-line.
+Overleaf è uno dei servizi più apprezzati per lavorare con LaTeX 
+on-line.
 Il pulsante <button>Overleaf</button>, sotto all'esempio, invia 
 il codice a [Overleaf](https://www.overleaf.com/about).
 
@@ -100,9 +100,9 @@ direttamente in Overleaf, che lancerà automaticamente LaTeX sul codice,
 visualizzando subito dopo l'anteprima del PDF composto o gli eventuali 
 errori.
 
-A differenza dei documenti composti su TeXLive.net, Overleaf ti permette
-di salvare il progetto nel tuo account per riprenderlo
-più avanti.
+A differenza dei documenti composti su TeXLive.net, Overleaf 
+ti permette di salvare il progetto nel tuo account per 
+riprenderlo più avanti.
 
 ##### Il servizio TeXLive.net
 
@@ -121,15 +121,15 @@ eliminarlo (oppure puoi lasciarlo dov'è e proseguire con
 la lezione, che continua più sotto).
 
 Nota bene che **TeXLive.net** non ti chiede né di autenticarti 
-né di registrarti in alcun modo – il che lo rende molto comodo per lavorare
-con esempi brevi – ma non ti permette in nessun modo di salvare
-il documento. Abbandonando la pagina, perderai tutte le modifiche
-eventualmente apportate all'esempio.
+né di registrarti in alcun modo – il che lo rende molto comodo 
+per lavorare con esempi brevi – ma non ti permette in nessun 
+modo di salvare il documento. Abbandonando la pagina, perderai 
+tutte le modifiche eventualmente apportate all'esempio.
 
 ##### Sistema TeX installato sul disco
 
 Se hai installato un sistema TeX sul tuo disco, puoi copiare
-il codice d'esempio, selezionandolo direttamente sulla pagina 
+l'esempio, selezionandolo direttamente sulla pagina 
 o mediante le scorciatoie da tastiera previste dall'editor
 (<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
 in Windows, per esempio). 
@@ -168,7 +168,7 @@ La cosa permette di scrivere `% !TEX program=pdflatex`,
 come alcuni editor TeX raccomandano, ma tieni presente 
 che la stringa `program=` non è richiesta. 
 Nota bene che, attualmente, i commenti speciali si limitano 
-a specificare solo uno dei motori supportati dai sistemi TeX 
+a specificare _solo uno_ dei motori supportati dai sistemi TeX 
 on-line consigliati nel nostro corso.
  
 In una delle [pagine di approfondimento](more-14) 
@@ -189,7 +189,7 @@ pagina [Configurazione](settings).
 
 ---
 
-## Scegliere come visualizzare il risultato
+## Scegliere il modo in cui visualizzare il risultato
 
 Se scegliete il sistema TeXLive.net, il PDF
 dell'esempio composto è visualizzato per 
@@ -198,67 +198,74 @@ impostazione predefinita con
 garantisce un comportamento coerente sulla grande
 maggioranza dei browser.
 
-If you would prefer to use your browser's default PDF reader (either
-its built in one, or an external application that you have configured)
-then add a comment of the form:
+Se preferisci adoperare il lettore PDF predefinito 
+del tuo browser (sia esso integrato o un'applicazione 
+esterna che hai configurato), aggiungi un commento 
+in questa forma:
 
 `% !TEX ` _testo_ `pdf`
 
-The default behavior can be explicitly specified by using `pdfjs` as
-the final token. For debugging you may sometimes want the log file
-returned, even if the document produces a PDF with
-no errors. This can be specified by using `log` as the final token in
-the comment.
+Il comportamento predefinito può essere specificato 
+in modo esplicito adoperando `pdfjs` come token finale. 
+Per il debug a volte potresti voler reinviare il file 
+di registro, anche se il PDF è stato generato senza 
+errori. 
+Puoi richiederlo adoperando `log` come token finale 
+nel commento.
 
-As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
-page. The Settings are specific to each browser, so for example you
-may choose to use the default `pdfjs` setting on your mobile device,
-but use `pdf` on your desktop browser to use its default PDF rendering.
-
+In alternativa all'uso di un commento `% !TeX`, puoi 
+specificare il parametro di ritorno predefinito del sito 
+nella pagina delle [configurazioni](settings). 
+Le impostazioni sono specifiche per ciascun browser, 
+quindi, per esempio, puoi scegliere l'impostazione 
+predefinita `pdfjs` sul tuo dispositivo mobile, 
+ma `pdf` sul tuo browser desktop per 
+adoperare il rendering PDF predefinito.
 
 ---
 
 ## Output HTML (make4ht, LaTeXML, lwarp)
 
-If using the TeXLive.net system, then additional return options,
-`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
-in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
+Se adoperi TeXLive.net, puoi specificare ulteriori opzioni 
+di ritorno: `make4ht`, `LaTeXML` o `lwarp`. 
+Queste restituiscono una o più pagine HTML nel frame all'interno 
+della pagina. 
+Puoi specificarlo contemporaneamente a `xelatex` o `lualatex` 
+così come al predefinito `pdflatex`.
 
-To enable this output, add a comment of the form:
-
+Per abilitare questo output, aggiungi un commento nella forma:
 
 ```
 % !TeX make4ht
 ```
 {: .noedit :}
 
+Sostituisci `make4ht` con `LaTeXML` o `lwarp` per specificare
+altri sistemi.
 
-Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
+In alternativa, puoi specificare `make4ht`, `LaTeXML` o 
+`lwarp` come opzione di ritorno predefinita
+sulla pagina delle [configurazioni](settings).
 
-
-
-Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
-on the [Site Settings](settings) page.
-
-
-If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
-by executing
+Se stai adoperando un sistema TeX installato localmente,
+puoi ottenere lo stesso risultato prodotto dall'opzione
+`make4ht` eseguendo
 
 ```
 make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
-with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
+con l'opzione aggiuntiva `-x` o `-l` se hai specificato 
+XeLaTeX o LuaLaTeX.
 
-When running locally, other configurations would be possible. See the [make4ht
-manual](https://texdoc.org/pkg/make4ht).
+Durante l'esecuzione in locale, sarebbero possibili altre 
+configurazioni. Consulta il 
+[manuale di make4ht](https://texdoc.org/pkg/make4ht).
 
-
-For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
-and use
+Affinché `LaTeXML` venga eseguito localmente, è necessario 
+installare LaTeXML (se non è già parte di TeX Live o MiKTeX)
+e usa
 
 ```
 latexml document.tex > document.xml
@@ -268,13 +275,14 @@ latexmlpost --format=html5 \
 ```
 {: .noedit :}
 
-Many other LaTeXML configurations are possible,
+Sono possibili molte altre configurazioni di LaTeXML,
 [as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
 
 
-The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
-The current version can be seen at the
-[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+La configurazione di `lwarp` non è documentata qui, è in qualche modo 
+sperimentale e soggetta a modifiche.
+Puoi vederne la versione corrente nell'
+[archivio del sorgente](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 
 ---
