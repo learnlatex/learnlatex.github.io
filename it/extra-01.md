@@ -10,16 +10,21 @@ toc-description: "Esempi per approfondire lo studio."
 # Galleria di esempi
 
 <span
-  class="summary">Questa lezione mostra alcuni esempi del funzionamento di altri popolari pacchetti di LaTeX non descritti nelle lezioni principali.</span>
+  class="summary">Questa lezione mostra alcuni esempi del 
+  funzionamento di altri popolari pacchetti di LaTeX 
+  non descritti nelle lezioni principali.</span>
 
-Questo corso ha offerto una panoramica sulle caratteristiche _principali_ di LaTeX.
-Tuttavia, LaTeX può contare su una vasta gamma di pacchetti di estensione, che ne 
-rendono possibile l'uso in numerosi ambiti disciplinari.
-Ne diamo qui alcuni esempi senza alcuna spiegazione, limitandoci a rimandare 
-alla documentazione del pacchetto in questione all'indirizzo 
-[texdoc.org](https://texdoc.org) (basta cliccare sul nome del pacchetto).
-Dove non altrimenti indicato, il codice d'esempio è preso dalla documentazione 
-del pacchetto.
+Questo corso ha offerto una panoramica sulle caratteristiche 
+_principali_ di LaTeX.
+Tuttavia, LaTeX può contare su una vasta gamma di pacchetti 
+di estensione, che ne rendono possibile l'uso 
+in numerosi ambiti disciplinari.
+Ne diamo qui alcuni esempi senza alcuna spiegazione, 
+limitandoci a rimandarti alla documentazione del pacchetto 
+in questione all'indirizzo [texdoc.org](https://texdoc.org) 
+(basta cliccare sul nome del pacchetto).
+Dove non altrimenti indicato, il codice d'esempio 
+è preso proprio dal manuale della documentazione.
 
 <p
   class="hint">I pacchetti nominati in questa pagina non sono oggetto di una nostra particolare predilezione rispetto ad altri pacchetti simili e, spesso, altrettanto validi. Li abbiamo scelti solo per mostrare qualche uso specialistico di LaTeX non descritto nelle lezioni di questo corso.</p>
