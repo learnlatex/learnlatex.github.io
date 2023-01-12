@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Lavorare con LaTeX"
-description: "Questa lezione spiega che cos'è un sistema TeX e quali di essi sono i più comuni, elenca alcuni tra gli editor di testi normalmente adoperati con LaTeX e i sistemi online che integrano un editor."
+description: "Questa lezione spiega che cos'è un sistema TeX e quali sono i sistemi più diffusi, elenca alcuni tra gli editor di testi normalmente adoperati con LaTeX e i sistemi on-line che integrano un editor."
 toc-anchor-text: "Lavorare con LaTeX"
 toc-description: "I sistemi TeX e gli editor di testi per LaTeX."
 ---
@@ -10,84 +10,116 @@ toc-description: "I sistemi TeX e gli editor di testi per LaTeX."
 # Lavorare con LaTeX
 
 <span
-  class="summary">Questa lezione spiega che cos'è un sistema TeX e quali di essi sono i più comuni, elenca alcuni tra gli editor di testi normalmente adoperati con LaTeX e i sistemi online che integrano un editor.</span>
+  class="summary">Questa lezione spiega che cos'è 
+  un sistema TeX e quali sono i sistemi più diffusi, 
+  elenca alcuni tra gli editor di testi normalmente 
+  adoperati con LaTeX e i sistemi on-line che integrano 
+  un editor.</span>
 
-A differenza di molti programmi per computer, LaTeX non è una singola applicazione 
-che contiene 'tutto' in sé. Al contrario, ci sono programmi separati che lavorano 
-insieme. Possiamo suddividerli nelle due 'cose' di cui hai effettivamente bisogno:
+A differenza di molti programmi per computer, LaTeX non 
+è una sola applicazione che contiene in sé ‘tutto ciò che
+serve’, ma è una serie di programmi separati
+che lavorano insieme.
+Le ‘cose’ di cui hai effettivamente bisogno sono due:
 
 - un _sistema TeX_
-- un editor di testi (spesso uno specifico per LaTeX)
+- un _editor di testi_ (ti consigliamo un editor specifico per LaTeX)
 
 ## Sistemi LaTeX
 
-Il fulcro del lavoro con LaTeX è avere a disposizione un _sistema TeX_. 
-Un sistema TeX è una serie di programmi e file 'dietro le quinte' necessari 
-per far funzionare LaTeX, ma che non dovrai quasi mai 'eseguire' direttamente.
+Il fulcro del lavoro con LaTeX è avere a disposizione 
+un _sistema TeX_. 
+Un sistema TeX è una serie di programmi e file che 
+lavorano 'dietro le quinte' e servono a far 
+funzionare LaTeX, ma dei quali non dovrai preoccuparti:
+quasi mai, infatti, ti verrà chiesto di 
+‘eseguirli’ direttamente.
 
-I principali sistemi TeX oggi disponibili sono due:
-[MiKTeX](https://miktex.org/) e [TeX Live](https://tug.org/texlive). 
-Di entrambi esistono versioni per Windows, macOS e Linux.
+I principali sistemi TeX oggi disponibili 
+sono due: [MiKTeX](https://miktex.org/) 
+e [TeX Live](https://tug.org/texlive), 
+entrambi disponibili per Windows, macOS e Linux.
 MiKTeX è fortemente votato a Windows;
-su macOS, TeX Live is bundled into a larger collection chiamata 
+gli utenti di macOS di solito installano TeX Live
+in una versione personalizzata nota come
 [MacTeX](http://www.tug.org/mactex/).
-There are [advantages to each
-system](https://tex.stackexchange.com/questions/20036), and you might want to
-look at [some more advice from the LaTeX
+Ogni sistema 
+[presenta vantaggi particolari](https://tex.stackexchange.com/questions/20036): 
+per saperne un po' di più, ti consigliamo
+di dare un'occhiata a [qualche altro consiglio dal LaTeX
 Project](https://www.latex-project.org/get/).
 
-Dal momento che TeX Live è disponibile per tutte le comuni piattaforme e presenta 
-alcuni vantaggi in termini di prestazioni, se non sei sicuro di quale sistema TeX
-installare, ti consigliamo di scegliere TeX Live.
+Dal momento che TeX Live è disponibile per tutte le 
+più comuni piattaforme e presenta alcuni vantaggi 
+in termini di prestazioni, se non sei sicuro di quale 
+sistema TeX installare, ti consigliamo di scegliere
+senz'altro TeX Live.
 
 ## Editor di testi
 
-I file di LaTeX sono semplicemente puro testo, perciò puoi modificarli con un 
-qualunque editor di testi.
-Tuttavia, è più conveniente adoperare un editor pensato per lavorare con LaTeX,
-dato che fornisce funzionalità come la composizione dei file con un clic, 
-un visualizzatore di PDF integrato e l'evidenziazione della sintassi.
-Una funzionalità veramente utile presente in tutti i moderni editor per LaTeX
-è offerta da SyncTeX, cioè la possibilità di fare clic su un punto del sorgente 
-e andare direttamente al corrispondente punto del PDF, e viceversa.
+I file di LaTeX sono file di puro testo, perciò 
+puoi modificarli con un editor di testi qualunque.
+Tuttavia, è più conveniente adoperarne uno pensato 
+per lavorare con LaTeX, perché di solito mette a
+disposizione funzionalità specifiche come la 
+composizione dei file con un clic, un visualizzatore 
+di PDF integrato e l'evidenziazione della sintassi.
+Una funzionalità veramente utile presente in tutti 
+i moderni editor per LaTeX è offerta da SyncTeX, 
+cioè la possibilità di fare clic su un punto del 
+sorgente e andare direttamente al corrispondente 
+punto del PDF, e viceversa.
 
-Esistono molti più editor per LaTeX di quanti possiamo sperare di elencarne qui:
-ce n'è un [elenco completo su
+Esistono molti più editor per LaTeX di quanti possiamo 
+sperare di elencarne qui: ce n'è un 
+[elenco completo su 
 StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-Un editor di base, [TeXworks](https://tug.org/texworks), è incluso nella TeX Live
-e in MiKTeX su Windows e Linux, e [TeXShop](https://pages.uoregon.edu/koch/texshop/)
+[TeXworks](https://tug.org/texworks), un editor
+di base ma adatto a chi muove i primi passi, 
+è incluso nella TeX Live e in MiKTeX su Windows 
+e Linux; [TeXShop](https://pages.uoregon.edu/koch/texshop/)
 è incluso in MacTeX.
 
 <p 
-  class="hint">Qualunque sia l'editor da te scelto, ti consigliamo di installarlo <i>dopo</i> il sistema TeX, in modo che l'editor riesca a 'trovarlo' e a impostarsi correttamente.</p>
+  class="hint">Qualunque sia l'editor da te scelto, 
+  ti consigliamo di installarlo <i>dopo</i> 
+  aver installato il sistema TeX, 
+  in modo che l'editor riesca a ‘trovarlo’ e ad 
+  autoimpostarsi correttamente.</p>
 
-## Lavorare online
+## Lavorare on-line
 
-Esistono diversi potenti siti online che ti permettono di evitare 
-la necessità di installare un sistema TeX e un editor per LaTeX. 
-Questi siti funzionano permettendoti di modificare i tuoi file 
-direttamente nella pagina web, poi eseguono LaTeX dietro le quinte 
-e visualizzano il PDF prodotto.
+Esistono diversi potenti siti on-line grazie 
+ai quali puoi evitare di installare nel tuo
+computer un sistema TeX e un editor per LaTeX.
+Questi siti ti permettono di modificare i file 
+direttamente nella pagina web, e poi eseguono 
+LaTeX dietro le quinte e visualizzano il PDF 
+composto.
 
-Alcuni di questi siti combinano LaTeX con funzionalità simili a 
-quelle di un elaboratore di testo, mentre altri sono più focalizzati 
-sul permetterti di vedere il codice LaTeX e quindi sono più vicini 
-ad avere un'installazione locale.
+Alcuni di essi combinano LaTeX con funzionalità 
+simili a quelle di un elaboratore di testi, 
+mentre altri sono più votati 
+alla visualizzazione del codice LaTeX e perciò 
+sono più simili a un'installazione locale.
 
-Ci sono sistemi che ti permettono di eseguire LaTeX senza 
-dover effettuare l'accesso, e ne stiamo adoperando uno,
-[TeXLive.net](https://texlive.net), per permetterti di
-modificare e verificare gli esempi che ti diamo. 
-Per un lavoro più completo, i migliori sistemi online 
-ti chiedono di registrarti prima di poterli adoperare.
-La cosa ti permette di salvare il tuo lavoro, ma evita 
-anche di sovraccaricare i siti.
+Alcuni sistemi on-line che ti permettono di eseguire 
+LaTeX senza doverti autenticare: ne stiamo adoperando uno,
+[TeXLive.net](https://texlive.net), con il quale puoi
+modificare e verificare gli esempi delle lezioni. 
+Per lavorare a progetti più completi, tuttavia, 
+i migliori sistemi on-line ti chiedono di registrarti 
+prima di poterli adoperare.
+Il vantaggio è duplice: puoi salvare il tuo lavoro ed 
+eviti di sovraccaricare i siti.
 
-Abbiamo impostato i collegamenti per permetterti di modificare
-i nostri esempi con [Overleaf](https://www.overleaf.com), uno dei
-principali siti per lavorare con LaTeX online. 
-Ce ne sono altri, naturalmente:
-[Papeeria](https://papeeria.com/) ne è un esempio.
+Se vuoi provare un servizio appartenente alla seconda
+categoria, puoi modificare e comporre i nostri codici
+con [Overleaf](https://www.overleaf.com), uno dei
+principali siti per lavorare con LaTeX on-line
+(trovi il pulsante relativo sotto a ogni esempio). 
+Ce ne sono altri, naturalmente, come per esempio
+[Papeeria](https://papeeria.com/).
 
 ## Lavoro collaborativo
 
