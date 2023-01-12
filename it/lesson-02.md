@@ -41,7 +41,7 @@ e [TeX Live](https://tug.org/texlive),
 entrambi disponibili per Windows, macOS e Linux.
 MiKTeX è fortemente votato a Windows;
 gli utenti di macOS di solito installano TeX Live
-in una versione personalizzata nota come
+in una versione personalizzata per Mac nota come
 [MacTeX](http://www.tug.org/mactex/).
 Ogni sistema 
 [presenta vantaggi particolari](https://tex.stackexchange.com/questions/20036): 
