@@ -76,7 +76,7 @@ sperare di elencarne qui: ce n'è un
 StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
 [TeXworks](https://tug.org/texworks), un editor
 di base ma adatto a chi muove i primi passi, 
-è incluso nella TeX Live e in MiKTeX su Windows 
+è incluso in TeX Live e in MiKTeX su Windows 
 e Linux; [TeXShop](https://pages.uoregon.edu/koch/texshop/)
 è incluso in MacTeX.
 
