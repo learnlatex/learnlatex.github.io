@@ -46,7 +46,7 @@ in una versione personalizzata per Mac nota come
 Ogni sistema 
 [presenta vantaggi particolari](https://tex.stackexchange.com/questions/20036): 
 per saperne un po' di più, ti consigliamo
-di dare un'occhiata a [qualche altro consiglio dal LaTeX
+di dare un'occhiata ai [consigli pubblicati dal LaTeX
 Project](https://www.latex-project.org/get/).
 
 Dal momento che TeX Live è disponibile per tutte le 
