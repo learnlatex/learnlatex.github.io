@@ -8,44 +8,59 @@ toc-anchor-text: "Di più su: Struttura logica"
 
 ## Titoli del documento
 
-LaTeX definisce alcuni markup logici per il titolo dei documenti: 
-tre comandi per impostare i ‘metadati’ e uno per adoperarli.
+LaTeX definisce alcuni markup logici per il titolo 
+dei documenti: tre comandi impostano i ‘metadati’ 
+e uno li adopera effettivamente.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\begin{document}
-\author{A.U.~Tore \and P.~Paperino}
-\title{Alcune cose che ho fatto}
-\date{21 dicembre 2022}
-\maketitle
 
-Un po' di testo normale.
+\begin{document}
+
+\author{A.U.~Tore \and P.~Paperino} % nome e cognome dell'autore o degli autori
+\title{Alcune cose notevoli}        % titolo del documento 
+\date{\today}                       % data corrente (\today) o qualunque altra data;
+                                    % per ometterla, scrivi \date{}
+\maketitle                          % questo comando stampa il blocco dei dati precedenti
+
+Un po' di testo.
+
 \end{document}
 ```
 
-Come puoi osservare, i comandi `\author`, `\title` e `\date` salvano le 
-informazioni, e `\maketitle` le adopera. 
-Se necessario, puoi anche separare il nome di più autori con `\and`.
-I comandi `\author`, `\title` e `\date` vanno dati prima di `\maketitle`.
-Qui li abbiamo messi nel corpo del documento: si possono adoperare anche 
-nel preambolo, ma se adoperi le scorciatoie di `babel`, non saranno attivi lì.
+Come puoi osservare, `\author`, `\title` e `\date` 
+salvano le informazioni dichiarate nei
+loro argomenti, e `\maketitle` le stampa. 
+Se necessario, puoi anche separare il nome di 
+più autori con `\and`.
+I comandi `\author`, `\title` e `\date` vanno dati 
+_prima_ di `\maketitle`.
+Qui li abbiamo messi nel corpo del documento, ma 
+si possono adoperare anche nel preambolo. 
+Ricorda, però, che se hai attivato le scorciatoie 
+di `babel`, non saranno attivi lì.
 
-Il risultato creato da `\maketitle` dipende dalla classe di documento 
-(vedi la [lezione 5](lesson-05)). 
-Esiste un ambiente `titlepage` per quando vuoi creare una pagina per il titolo
-secondo i tuoi gusti, ma l'argomento esula dallo scopo di questa introduzione. 
-Se vuoi progettare da te i tuoi documenti, puoi appoggiarti a una classe 
-personalizzabile, come `memoir`, o incominciare con una delle classi base di 
-LaTeX, come `book` e usarla come punto di partenza.
+Il risultato creato da `\maketitle` dipende dalla 
+classe di documento (vedi la [lezione 5](lesson-05)). 
+LaTeX definisce un ambiente `titlepage` per creare 
+una pagina per il titolo secondo i tuoi gusti, 
+ma l'argomento esula dallo scopo di questa introduzione. 
+Se vuoi progettare da capo i tuoi documenti, 
+puoi appoggiarti a una classe personalizzabile come `memoir` 
+o incominciare con una delle classi base di 
+LaTeX (`book`, per esempio) e usarla come punto di partenza.
 
 ## Liste di definizioni
-Oltre alle liste ‘ordinate’ e ‘non ordinate’, 
-LaTeX ne definisce un'altra, meno comune: la ‘lista di definizioni’.
+
+Oltre alle liste predefinite ‘ordinate’ e 
+‘non ordinate’, LaTeX ne prevede un'altra, 
+meno comune: la ‘lista di definizioni’.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
 
 \begin{description}
@@ -61,9 +76,10 @@ LaTeX ne definisce un'altra, meno comune: la ‘lista di definizioni’.
 
 ## Esercizi
 
-Prova a impostare diverse informazioni per `\author`, `\title` e `\date`,
-per provare `\maketitle`. Quali di esse _devi_ dare? I comandi debbono 
+Imposta diverse informazioni per `\author`, 
+`\title` e `\date`, per provare `\maketitle`. 
+Quali di esse _devi_ dichiarare? I comandi debbono 
 per forza contenere un autore, un titolo e una data?
 
-Crea delle liste di definizioni e annidane alcune dentro altre 
-(ordinate, non ordinate o di definizioni).
+Crea delle liste di definizioni e annidane alcune 
+dentro altre (ordinate, non ordinate o di definizioni).
