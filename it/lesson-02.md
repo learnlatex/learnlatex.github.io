@@ -106,7 +106,8 @@ sono più simili a un'installazione locale.
 Ci sono sistemi on-line che ti permettono di eseguire 
 LaTeX senza doverti autenticare: ne stiamo adoperando uno,
 [TeXLive.net](https://texlive.net), con il quale puoi
-modificare e verificare gli esempi delle lezioni. 
+modificare e verificare gli esempi delle lezioni
+(trovi il pulsante relativo sotto a ogni esempio). 
 Per lavorare a progetti più completi, tuttavia, 
 i migliori sistemi on-line ti chiedono di registrarti 
 prima di poterli adoperare.
