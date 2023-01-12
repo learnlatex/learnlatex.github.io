@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Struttura di base di un documento LaTeX"
-description: "Questa lezione spiega la struttura di base di un documento LaTeX e come trasformarlo in un file PDF, e i principali caratteri speciali adoperati per controllare LaTeX."
+description: "Questa lezione spiega la struttura di base di un documento LaTeX, come trasformarlo in un file PDF e i principali caratteri speciali adoperati per controllare LaTeX."
 toc-anchor-text: "Struttura del documento"
 toc-description: "La struttura di base di un documento."
 ---
@@ -10,19 +10,23 @@ toc-description: "La struttura di base di un documento."
 # Struttura di un documento LaTeX
 
 <span
-  class="summary">Questa lezione spiega la struttura di base di un documento LaTeX e come trasformarlo in un file PDF, e i principali caratteri speciali adoperati per controllare LaTeX.</span>
+  class="summary">Questa lezione spiega la struttura di base di un documento LaTeX, come trasformarlo in un file PDF e i principali caratteri speciali adoperati per controllare LaTeX.</span>
 
-Il tuo primo documento LaTeX sarà molto semplice: l'idea è di mostrarti come 
-appare un documento e come scriverlo con successo. È anche la tua prima
-occasione per vedere [come adoperare gli esempi](help) qui su `learnlatex.org`.
+Il tuo primo documento LaTeX sarà molto semplice: l'idea è 
+mostrarti come appare un documento e come scriverlo con 
+successo. 
+È anche la tua prima occasione per vedere 
+[come lavorare con gli esempi](help) di `learnlatex.org`.
 
-Se stai lavorando con un'installazione locale di TeX, crea un nuovo file
-con il tuo editor e registralo come `primo.tex`; poi, copia e incolla nel file 
-il codice qui sotto oppure scrivilo tu direttamente.
+Se stai lavorando con un'installazione locale di TeX, 
+crea un nuovo file con il tuo editor e registralo come 
+`primo.tex`; poi, copia e incolla nel file 
+il codice qui sotto oppure scrivicelo tu direttamente.
 
-Se stai lavorando con un sistema online, per provare l'esempio puoi 
-semplicemente premere i bottoni <button>Esegui in TeXLive.net</button> o 
-<button>Apri in Overleaf</button> sotto al codice!
+Se stai lavorando con un sistema on-line, per provare 
+l'esempio puoi semplicemente premere i bottoni 
+<button>TeXLive.net</button> o <button>Overleaf</button> 
+sotto al codice!
 
 <p
   class="hint">Ti suggeriamo di provare i servizi online anche se hai configurato LaTeX localmente: 
