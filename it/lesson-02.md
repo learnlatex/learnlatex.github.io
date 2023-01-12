@@ -124,21 +124,24 @@ Ce ne sono altri, naturalmente, come per esempio
 
 ## Lavoro collaborativo
 
-Se hai intenzione di inviare i tuoi sorgenti LaTeX a destinatari
-che li elaborano, come editori, organizzatori di conferenze o
-server di prestampa (come arXiv, per esempio) 
-If you are planning to send your LaTeX sources to destinations which process
-them, such as publishers, conference organisers or pre-print servers
-(e.g. arXiv), dovresti controllare quali restrizioni impongono.
+Se hai intenzione di inviare i tuoi sorgenti 
+LaTeX a destinatari che li elaborano, come editori, 
+organizzatori di conferenze o server di prestampa 
+(come arXiv, per esempio), dovresti controllare 
+quali restrizioni impongono.
 
 ## Esercizio
 
-Preparati con un'installazione di LaTeX locale _o_ un account su 
-un servizio LaTeX online. Nel primo caso dovrai procurarti anche
-un editor: ti raccomandiamo di incominciare con TeXworks o TeXShop
-(vedi sopra) e di dare un'occhiata ad altri editor solo quando hai
-capito qual è il modo migliore di lavorare con LaTeX _per te_.
+Preparati con un'installazione locale di LaTeX 
+_o_ un account su un servizio LaTeX on-line. 
+Nel primo caso dovrai procurarti anche un editor: 
+ti raccomandiamo di incominciare con TeXworks 
+o TeXShop (vedi sopra) e di considerarne altri 
+solo quando hai capito qual è il modo migliore 
+di lavorare con LaTeX _per te_.
 
-Sarai in grado di [svolgere tutti gli altri nostri esercizi direttamente nel tuo browser](help.md), 
-ma dato che vogliamo aiutarti a lavorare con documenti reali, ora è
-il momento giusto per prepararti.
+Sarai in grado di [svolgere tutti gli altri 
+nostri esercizi direttamente nel tuo browser](help.md), 
+ma dato che vogliamo aiutarti a lavorare 
+con documenti reali, è ora il momento giusto 
+per prepararti.
