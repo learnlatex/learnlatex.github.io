@@ -103,7 +103,7 @@ mentre altri sono più votati
 alla visualizzazione del codice LaTeX e perciò 
 sono più simili a un'installazione locale.
 
-Alcuni sistemi on-line che ti permettono di eseguire 
+Ci sono sistemi on-line che ti permettono di eseguire 
 LaTeX senza doverti autenticare: ne stiamo adoperando uno,
 [TeXLive.net](https://texlive.net), con il quale puoi
 modificare e verificare gli esempi delle lezioni. 
