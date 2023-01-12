@@ -29,123 +29,151 @@ l'esempio puoi semplicemente premere i bottoni
 sotto al codice!
 
 <p
-  class="hint">Ti suggeriamo di provare i servizi online anche se hai configurato LaTeX localmente: 
-  è una buona occasione per vedere come funzionano le due cose.</p>
+  class="hint">Ti suggeriamo di provare i servizi 
+  on-line anche se hai configurato LaTeX localmente: 
+  è una buona occasione per vedere come funzionano 
+  le due cose.</p>
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
+
 Ciao, mondo!
 
 Questo è il mio primo documento.
+
 \end{document}
 ```
 
 Salva le modifiche e trasformalo in un documento PDF. 
-Se stai lavorando con un'installazione locale di TeX, l'esatto pulsante
-da premere dipende dall'editor che hai scelto. 
-Al termine della composizione, dovresti ottenere un file PDF
-che contiene il testo qui sopra _più_ un numero di pagina:
-LaTeX lo aggiunge automaticamente.
+Se stai lavorando con un'installazione locale di TeX, 
+l'esatto pulsante da premere per comporre il codice 
+dipende dall'editor che hai scelto. 
+Al termine della composizione, dovresti ottenere 
+un file PDF che contiene il testo qui sopra _più_ 
+un numero di pagina: LaTeX lo aggiunge automaticamente.
 
-Visualizza il risultato `first.pdf` con il tuo visualizzatore
-di PDF preferito.
-Non sembra male, complimenti!
+Visualizza il risultato `primo.pdf` con il tuo 
+visualizzatore di PDF preferito.
+Non male, complimenti!
 
-Vuoi un risultato in HTML anziché in PDF? La pagina
+Se vuoi un risultato in HTML anziché in PDF, la pagina
 [Aiuto](./help) ti dice come fare.
 
 ## Cosa fare con gli errori
 
-Gli errori capitano.
-Innanzitutto, verifica che  ogni riga nel tuo file 
+Gli errori capitano a tutti.
+Innanzitutto, verifica che ogni riga nel tuo file 
 corrisponda _esattamente_ al testo nell'esempio qui sopra.
-A volte, modifiche al sorgente apparentemente piccole 
-producono grandi cambiamenti nel risultato, compreso 
+A volte, modifiche apparentemente esigue al sorgente  
+producono cambiamenti sensibili nel risultato, compreso 
 l'arresto della composizione.
 Se vedi che tutto è bloccato, prova a cancellare il 
 documento e a copiare nuovamente il codice dall'esempio.
 
-Se la composizione termina con un punto di domanda, puoi
+Se la composizione si arresta mostrando un messaggio
+che termina con con un punto di domanda, puoi
 uscirne dando `x` e `Invio`.
 
-I messaggi di errore di LaTeX cercano di essere utili, ma 
-non sono gli stessi dei messaggi negli elaboratori di testo.
-Alcuni editor rendono anche difficile vedere il testo 
-'completo' di un errore, che può nascondere i dettagli chiave
-per risolvere il problema.
+I messaggi di errore di LaTeX cercano di essere utili, 
+ma non sono dello stesso genere dei messaggi dei 
+comuni elaboratori di testo.
+In alcuni editor è anche difficile vedere il testo 
+'completo' di un errore, che può nascondere i 
+dettagli chiave per risolvere il problema.
 
-LaTeX crea sempre un registro di ciò che sta facendo: è un 
-file di testo con estensione `.log`.
-Potrai sempre vedere i messaggi di errore completi lì e, 
-se hai un problema, gli esperti di LaTeX spesso ti chiederanno 
-una copia di questo file.
+LaTeX crea sempre un registro di ciò che sta facendo: 
+è un file di testo con estensione `.log`.
+Potrai sempre vedere i messaggi di errore completi lì 
+e, se hai un problema, gli esperti di LaTeX spesso ti 
+chiederanno una copia di questo file.
 
 <p
-  class="hint">Diciamo di più su come gestire gli errori
+  class="hint">Puoi saperne di più su come gestire gli errori
   nella <a href="./lesson-15">lezione 15</a>.</p>
 
 ## Che cos'hai imparato finora
 
-Il primo documento mostra le basi.
+Il primo documento ti ha mostrato le basi del lavoro
+con LaTeX.
 I documenti LaTeX sono un misto di testo e comandi.
-I comandi incominciano con una barra rovescia
-e a volte hanno un argomento tra parentesi graffe
-(o, talvolta, argomenti facoltativi tra parentesi quadre).
-Quindi, dicendo a LaTeX di comporre il tuo file,
-ottieni un risultato in PDF .
+I comandi incominciano con una barra rovescia (`\`)
+e a volte hanno un argomento _obbligatorio_ tra 
+parentesi graffe (`{...}`) o, talvolta, argomenti 
+_facoltativi_ tra parentesi quadre (`[...]`).
+Infine, dopo aver lanciato LaTeX sul codice sorgente, 
+otterrai il risultato composto in forma di file PDF .
 
-Ogni documento LaTeX _deve_ contenere un `\begin{document}`
-e un corrispondente `\end{document}`.
+Ogni documento LaTeX _deve_ contenere la stringa
+`\begin{document}` (che indica l'inizio del documento) 
+e una stringa corrispondente `\end{document}` 
+(che ne indica la fine).
 Tra questi due comandi si trova il *corpo del documento*, 
-dove metterai i tuoi contenuti.
-Qui il corpo è di due capoversi (in LaTeX separi i capoversi
-con una o più righe vuote tra loro).
-Prima di `\begin{document}` c'è il *preambolo del documento*,
-che contiene il codice per impostare l'aspetto del documento.
-Il comando `\usepackage`, descritto in una [lezione successiva](lesson-06),
-è adoperato nella maggior parte degli esempi di questo sito
-per impostare la codifica del font.
+cioè tutti i contenuti che LaTeX comporrà.
+Nell'esempio qui sopra, il corpo del documento è formato 
+da due capoversi (in LaTeX, per separare i capoversi
+basta lasciare una o più righe vuote tra l'uno e l'altro).
+La parte prima di `\begin{document}` si chiama 
+*preambolo del documento* e contiene il codice per 
+impostare l'aspetto del documento.
+Il comando `\usepackage`, descritto in una 
+[lezione successiva](lesson-06), è adoperato nella 
+maggior parte degli esempi di questo sito per impostare 
+la codifica del font.
 
-LaTeX ha altre coppie `\begin{...}` e `\end{...}`: sono
-chiamate *ambienti*.
-Devi abbinarli in modo che per ogni `\begin{x}` ci sia un `\end{x}`.
-Se li annidi, allora devi verificare che ogni `\end{y} ... \end{x}`
-corrisponda a `\begin{x} ... \begin{y}`, cioè che le dichiarazioni 
-`\begin` e `\end` si corrispondano nell'ordine corretto.
+La sintassi di LaTeX prevede altre coppie del tipo 
+`\begin{...}` e `\end{...}`: vengono chiamate *ambienti*.
+Queste coppie di comandi vanno abbinate con grande cura,
+in modo che per ogni `\begin{x}` ci sia un `\end{x}`.
+Se li annidi (cioè se inserisci un ambiente all'interno
+di un altro ambiente), allora devi verificare che _ogni_ 
+`\end{y} ... \end{x}` corrisponda a `\begin{x} ... \begin{y}`: 
+in altre parole, le dichiarazioni di apertura e chiusura
+degli ambienti _debbono_ corrispondersi nel medesimo ordine.
 
-Puoi aggiungere dei commenti a un file LaTeX incominciandoli con
-`%`. Vediamoli all'opera per descrivere la struttura dell'esempio
+LaTeX permette di aggiungere al codice dei _commenti_, cioè
+appunti, promemoria e altro testo utile, magari, per 
+descrivere un frammento di codice particolarmente complesso,
+o a qualunque altro scopo.
+I commenti si scrivono facendoli precedere dal segno di 
+percento `%`.
+Vediamoli all'opera per descrivere la struttura dell'esempio
 seguente:
 
 ```latex
-\documentclass[a4paper,12pt]{article} % Classe del documento con alcune opzioni
+\documentclass[a4paper,12pt]{article} % Dichiarazione di classe con alcune opzioni
 \usepackage[T1]{fontenc}
 % Commento nel preambolo
-\begin{document}
-% Questo è un commento
-Questo è   un semplice
-documento\footnote{con una nota.}
 
-Questo è un nuovo capoverso.
+\begin{document}
+
+% Commento nel corpo del documento
+Ecco un            semplice
+documento\footnote{con una nota nel piè di pagina.}
+
+Questo è   un nuovo capoverso.
+
 \end{document}
 ```
 
-L'esempio è composto di due capoversi, ottenuti lasciando una riga vuota. 
-Osserva inoltre che più spazi consecutivi vengono trattati come un solo spazio.
+L'esempio qui sopra è composto di due capoversi, 
+come si vede dalla riga vuota tra le due frasi. 
+Osserva inoltre che più spazi consecutivi vengono 
+considerati _un solo_ spazio.
 
-Talvolta potresti aver bisogno di uno spazio 'indivisibile' che non si perda
-tra una riga e l'altra: in LaTeX lo ottieni 'legando' insieme due stringhe di 
-testo con `~`.
-La cosa sarà particolarmente utile quando incominceremo a creare i riferimenti
-incrociati più avanti nel corso.
+Talvolta potrebbe servirti uno spazio ‘indivisibile’ 
+che non si perda tra una riga e l'altra: in LaTeX 
+si ottiene ‘legando’ insieme due parole con `~`.
+La cosa tornerà particolarmente utile quando più avanti
+nel corso impareremo come si creano i riferimenti 
+incrociati.
 
 ## Caratteri speciali
 
-Probabilmente hai notato che``\``, `{` e `}` hanno un significato speciale
-per LaTeX.
+Probabilmente hai notato che i tre caratteri `\`, `{` e `}` 
+hanno un significato speciale per LaTeX.
 La barra rovescia ``\`` incomincia un'istruzione impartita a LaTeX: un _comando_. 
 Le parentesi graffe `{` e `}` sono usate per racchiudere gli _argomenti obbligatori_: 
 sono informazioni richieste dai comandi.
