@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Struttura logica"
-description: "Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica mediante comandi di sezionamento ed elenchi."
+description: "Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica ottenuta con i comandi di sezionamento e gli ambienti per gli elenchi."
 toc-anchor-text: "Struttura logica"
 toc-description: "Struttura e presentazione visuale."
 ---
@@ -10,13 +10,15 @@ toc-description: "Struttura e presentazione visuale."
 # Struttura logica
 
 <span
-  class="summary">Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica mediante comandi di sezionamento ed elenchi.</span>
+  class="summary">Questa lezione mostra alcuni comandi di formattazione di base e li confronta con la formattazione semantica ottenuta con i comandi di sezionamento e gli ambienti per gli elenchi.</span>
 
-LaTeX ti permette sia di concentrarti sulla struttura logica del documento,
-sia di impostarne direttamente l'aspetto.
-Il più delle volte è molto meglio applicare metodi che si concentrano
-sulla struttura, perché rendono più facile riutilizzare o modificare
-l'aspetto del documento al bisogno.
+LaTeX permette sia di concentrarsi sulla struttura logica 
+del documento, sia di impostarne direttamente l'aspetto.
+Il più delle volte è meglio mantenere una certa separazione
+tra contenuto e aspetto, privilegiando una marcatura che
+descrive la struttura del documento, perché rende più 
+facile riutilizzarne o modificarne l'aspetto
+al bisogno.
 
 ## Struttura e presentazione visuale
 
@@ -31,25 +33,28 @@ il corsivo serve a evidenziare qualcosa.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
+
 Testo con \emph{enfasi e contenuto \emph{annidato}}.
 
 Testo in \textit{corsivo e contenuto \textit{annidato}}.
+
 \end{document}
 ```
 
-Probabilmente avrai indovinato che il comando 
-`\textit` mette il testo in corsivo, ma lo fa _sempre_, 
-perciò non funziona se il testo da evidenziare è annidato 
-in un altro testo.
-Il corsivo non è l'unico mezzo per evidenziare del
-testo: per esempio, nelle videopresentazioni è meglio
-adoperare il colore.
+Probabilmente avrai già indovinato da te che 
+il comando  `\textit` mette il proprio argomento 
+in corsivo, ma il punto è che lo fa _sempre_,
+perciò non funziona se il testo da evidenziare 
+è annidato in un altro testo.
+Tieni presente che il corsivo non è l'unico mezzo per 
+evidenziare del testo: per esempio, nelle 
+videopresentazioni è meglio adoperare il colore.
 Grazie alla marcatura logica, non dovrai preoccuparti
 di questi dettagli nel corpo del documento.
 
-Parleremo della [formattazione manuale più tardi](lesson-11), 
-ma per ora aggiungiamo `\textbf` ai comandi che già
-conosci: mette il testo <b>in nero</b>.
+Parleremo della [formattazione manuale](lesson-11) 
+più avanti, ma per ora aggiungiamo ai comandi che già
+conosci `\textbf`: mette il proprio argomento <b>in nero</b>.
 
 ## Comandi di sezionamento
 
