@@ -175,10 +175,10 @@ incrociati.
 Probabilmente hai notato che i tre caratteri 
 `\`, `{` e `}` hanno per LaTeX un significato 
 speciale.
-La barra rovescia `\` incomincia un'istruzione 
-impartita a LaTeX: un _comando_. 
-Le parentesi graffe `{` e `}` sono adoperate per 
-racchiudere gli _argomenti obbligatori_: 
+La barra rovescia `\` incomincia un _comando_, 
+cioè un'istruzione impartita a LaTeX. 
+Le parentesi graffe `{` e `}` vengono adoperate per 
+racchiudere gli _argomenti obbligatori_, cioè 
 informazioni richieste obbligatoriamente dai comandi.
 
 Ci sono altri caratteri con un significato speciale: 
