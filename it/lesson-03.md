@@ -134,7 +134,7 @@ in altre parole, le dichiarazioni di apertura e chiusura
 degli ambienti _debbono_ corrispondersi nel medesimo ordine.
 
 LaTeX permette di aggiungere al codice dei _commenti_, cioè
-appunti, promemoria e altro testo utile, magari, per 
+appunti, promemoria e altro testo utile, per esempio, per 
 descrivere un frammento di codice particolarmente complesso,
 o a qualunque altro scopo.
 I commenti si scrivono facendoli precedere dal segno di 
@@ -158,10 +158,10 @@ Questo è   un nuovo capoverso.
 \end{document}
 ```
 
-L'esempio qui sopra è composto di due capoversi, 
+L'esempio è composto di due capoversi, 
 come si vede dalla riga vuota tra le due frasi. 
-Osserva inoltre che più spazi consecutivi vengono 
-considerati _un solo_ spazio.
+Osserva inoltre (nel PDF composto) che più spazi 
+consecutivi vengono considerati _un solo_ spazio.
 
 Talvolta potrebbe servirti uno spazio ‘indivisibile’ 
 che non si perda tra una riga e l'altra: in LaTeX 
@@ -172,29 +172,38 @@ incrociati.
 
 ## Caratteri speciali
 
-Probabilmente hai notato che i tre caratteri `\`, `{` e `}` 
-hanno un significato speciale per LaTeX.
-La barra rovescia ``\`` incomincia un'istruzione impartita a LaTeX: un _comando_. 
-Le parentesi graffe `{` e `}` sono usate per racchiudere gli _argomenti obbligatori_: 
-sono informazioni richieste dai comandi.
+Probabilmente hai notato che i tre caratteri 
+`\`, `{` e `}` hanno per LaTeX un significato 
+speciale.
+La barra rovescia `\` incomincia un'istruzione 
+impartita a LaTeX: un _comando_. 
+Le parentesi graffe `{` e `}` sono adoperate per 
+racchiudere gli _argomenti obbligatori_: 
+informazioni richieste obbligatoriamente dai comandi.
 
-Ci sono altri caratteri con un significato speciale: abbiamo appena visto che `~`
-è uno spazio 'indivisibile', per esempio. Quasi tutti questi caratteri sono _molto_
-inconsueti in un testo normale, motivo per cui sono stati scelti per veicolare
-significati speciali.
-Se hai bisogno di scrivere uno di questi caratteri speciali come testo normale,
-puoi scoprire come fare nella [pagina di approfondimento di questa lezione](more-03).
+Ci sono altri caratteri con un significato speciale: 
+abbiamo appena visto che `~` indica uno spazio 
+‘indivisibile’, per esempio. 
+Quasi tutti questi caratteri sono _molto_
+inconsueti in un testo normale, motivo per cui 
+sono stati scelti per veicolare significati 
+particolari.
+Se hai bisogno di scrivere uno di questi caratteri
+come testo normale, puoi scoprire come fare nella 
+[pagina di approfondimento di questa lezione](more-03).
 
 ## Esercizio
 
-Sperimenta l'editor e il sistema di composizione online; premi il 
-pulsante per comporre l'esempio, poi modificalo direttamente sulla pagina
-e componilo nuovamente.
+Sperimenta l'editor e il sistema di composizione 
+on-line; premi il pulsante per comporre l'esempio, 
+poi modificalo direttamente sulla pagina e 
+componilo nuovamente.
 
-Aggiungi del testo al tuo primo documento, componilo e osserva
-i cambiamenti nel PDF. 
-Scrivi ulteriori capoversi e aggiungi spazi variabili. Esplora le funzionalità
-del tuo editor; clicca su un punto del sorgente e trova il modo di andare
-alla riga corrispondente del PDF. 
-Inserisci alcuni spazi indivisibili e osserva come influenzano
-l'interruzione delle righe.
+Aggiungi del testo al tuo primo documento, componilo 
+e osserva i cambiamenti nel PDF. 
+Scrivi ulteriori capoversi e aggiungi spazi variabili. 
+Esplora le funzionalità del tuo editor; clicca su un 
+punto del sorgente e trova il modo di andare alla 
+riga corrispondente del PDF. 
+Inserisci alcuni spazi indivisibili e osserva come 
+influenzano l'interruzione delle righe.
