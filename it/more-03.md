@@ -63,5 +63,6 @@ più lungo:
 
 Per gli ultimi tre simboli non è disponibile un comando breve,
 perché con `\\` si indica un'interruzione di riga 
-e `\~` e `\^` si adoperano per produrre una tilde e un accento
-circonflesso negli input scritti in soli caratteri ASCII.
+e `\~` e `\^` si adoperano per produrre rispettivamente una 
+tilde e un accento circonflesso negli input scritti 
+in soli caratteri ASCII.
