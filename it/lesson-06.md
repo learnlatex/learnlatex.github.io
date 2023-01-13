@@ -2,7 +2,10 @@
 layout: "lesson"
 lang: "it"
 title: "Estendere LaTeX mediante pacchetti e definizioni"
-description: "Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare le tue esigenze e come modificare l'aspetto dei documenti mediante diversi pacchetti, e ti mostra come puoi definire i tuoi comandi personali."
+description: "Questa lezione mostra come estendere le 
+funzionalità di LaTeX per soddisfare le tue esigenze e 
+come modificare l'aspetto dei documenti con i pacchetti. 
+Inoltre, ti insegna a definire i tuoi comandi personali."
 toc-anchor-text: "Estendere LaTeX"
 toc-description: "Pacchetti di stile e definizioni di nuovi comandi."
 ---
@@ -10,30 +13,30 @@ toc-description: "Pacchetti di stile e definizioni di nuovi comandi."
 # Estendere LaTeX
 
 <span
-  class="summary">Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare esigenze compositive particolari e come modificarne ulteriormente l'aspetto con i diversi pacchetti e le definizioni di comandi personali.</span>
+  class="summary">Questa lezione mostra come estendere le funzionalità di LaTeX per soddisfare esigenze compositive particolari e come modificarne ulteriormente il risultato predefinito con i diversi pacchetti e le definizioni di comandi personali.</span>
 
 Dopo aver dichiarato una classe, nel preambolo del documento 
 puoi modificare le funzionalità standard di LaTeX aggiungendo 
 uno o più *pacchetti*. I pacchetti possono:
 
 - cambiare il modo in cui certe parti di LaTeX funzionano
+- modificare l'aspetto del documento
 - aggiungere nuovi comandi a LaTeX
-- cambiare l'aspetto del documento
 
 ## Modificare il funzionamento di LaTeX
 
 L'utente ha ben poche possibilità di personalizzare 
 il 'kernel' (o nucleo) di LaTeX, ma grazie ai pacchetti
-aggiuntivi, previsti dalla naturale 
-modularità del programma, si possono risolvere alcuni
-problemi comuni.
-Il primo problema che ti troverai davanti è dato dalla lingua
-del documento, alla quale dovrai adattare il comportamento di LaTeX 
-per quanto riguarda sillabazione, punteggiatura, 
-citazioni, uso delle virgolette, localizzazione, eccetera.
+aggiuntivi, previsti dalla naturale modularità del 
+programma, si possono risolvere alcuni problemi comuni.
+Il primo problema in cui ti imbatterai è la selezione 
+della lingua del documento, alla quale dovrai adattare 
+il comportamento di LaTeX in quanto a sillabazione, 
+punteggiatura, stile delle citazioni, uso delle virgolette, 
+localizzazione, eccetera.
 Lingue diverse hanno regole diverse, perciò è importante dire 
 a LaTeX quale (o quali) adoperare. 
-Questo aspetto è gestito dal pacchetto `babel`.
+Questo aspetto è gestito automaticamente dal pacchetto `babel`.
 
 ```latex
 \documentclass{article}
@@ -53,21 +56,26 @@ il materiale e che sarà in grado di darci almeno un punto di sillabazione.
 \end{document}
 ```
 
-Prova a decommentare la riga (chiaramente ingannevole) che carica `babel` 
-con l'opzione per l'italiano e osserva il risultato. 
-(Le regole di sillabazione predefinite sono quelle dell'inglese americano.)
+Prova a decommentare la (chiaramente ingannevole) 
+riga che carica `babel` con l'opzione per l'italiano 
+e osserva il risultato. 
+(Nota che le regole di sillabazione predefinite sono quelle 
+dell'inglese americano.)
 
-Il pacchetto `babel` fa molto più della semplice sillabazione, a seconda
-della lingua caricata; se ti servono, ti diamo 
+A seconda della lingua impostata, il pacchetto `babel` 
+fa molto più che sillabare semplicemente
+il testo: se ti servono, ti diamo 
 [alcuni dettagli aggiuntivi](more-06).
 
 ## Modificare l'aspetto del documento
 
-Spesso è utile sapere come modificare alcuni aspetti del documento 
-indipendentemente dalla classe dichiarata.
-Quelli più ovvi sono i margini della pagina.
-Nell'esempio qui sopra abbiamo caricato il pacchetto `geometry`,
-ma ora ne faremo uno dedicato espressamente ai margini (attenzione:
+Spesso è utile sapere come modificare alcuni aspetti 
+del documento indipendentemente dalla classe dichiarata,
+come i margini della pagina, per incominciare da quelli
+più ovvi.
+Nell'esempio qui sopra abbiamo caricato il pacchetto 
+`geometry`, ma è meglio fare un esempio dedicato 
+espressamente alla modifica dei margini (attenzione:
 il PDF composto sarà di più pagine).
 
 ```latex
@@ -76,6 +84,7 @@ il PDF composto sarà di più pagine).
 \usepackage[margin=1in]{geometry}
 
 \begin{document}
+
 Ehi, mondo!
 
 Questo è il mio primo documento.
@@ -86,7 +95,7 @@ Introduzione al primo capitolo.
 
 % ================
 \section{Titolo del primo paragrafo}
-Testo del primo paragrafo
+Testo del primo paragrafo.
 
 Secondo capoverso.
 
@@ -102,7 +111,8 @@ Testo del secondo paragrafo.
 \end{document}
 ```
 
-Ora commenta la riga che carica `geometry` e osserva come cambia il documento composto.
+Ora commenta la riga che carica `geometry` e osserva 
+come cambia il documento composto.
 
 ## Aggiungere nuove funzionalità
 
