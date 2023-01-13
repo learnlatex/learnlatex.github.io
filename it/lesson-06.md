@@ -41,7 +41,6 @@ Questo aspetto è gestito automaticamente dal pacchetto `babel`.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-
 %\usepackage[italian]{babel}
 
 \usepackage[width = 6cm]{geometry} % Per ottenere cesure a fine riga
