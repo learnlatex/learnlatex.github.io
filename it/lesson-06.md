@@ -1,7 +1,7 @@
 ---
 layout: "lesson"
 lang: "it"
-title: "Estendere LaTeX mediante pacchetti e definizioni"
+title: "Estendere LaTeX con pacchetti e definizioni"
 description: "Questa lezione mostra come estendere le 
 funzionalità di LaTeX per soddisfare le tue esigenze e 
 come modificare l'aspetto dei documenti con i pacchetti. 
