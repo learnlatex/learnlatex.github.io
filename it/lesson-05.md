@@ -27,7 +27,7 @@ Questa riga, chiamata in gergo _dichiarazione di classe_,
 ed è (quasi) sempre il primo comando che si dovrebbe dare
 nel preambolo.
 
-## Che cosa fa una classe di documento
+## Che cosa ‘fa’ una classe di documento
 
 La classe di documento imposta la presentazione generale 
 del documento. Per esempio, si occupa di quanto segue:
