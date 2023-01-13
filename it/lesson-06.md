@@ -99,13 +99,12 @@ Testo del primo paragrafo.
 
 Secondo capoverso.
 
+%-----------------
 \subsection{Sottoparagrafo del primo paragrafo}
-
 Testo del sottoparagrafo.
 
 % ================
 \section{Secondo paragrafo}
-
 Testo del secondo paragrafo.
 
 \end{document}
@@ -116,22 +115,26 @@ come cambia il documento composto.
 
 ## Aggiungere nuove funzionalità
 
-Uno dei punti di forza di LaTeX è la possibilità di scegliere tra migliaia di 
-pacchetti, compresi quelli per la scrittura della matematica, per i collegamenti 
-ipertestuali, per funzionalità sofisticate con i colori, eccetera. 
-Nelle lezioni successive vedremo alcuni pacchetti più comuni.
+Uno dei punti di forza di LaTeX è la possibilità di 
+scegliere tra migliaia di pacchetti, tra i quali quelli 
+per la scrittura della matematica, per i collegamenti 
+ipertestuali, per funzionalità sofisticate come l'uso 
+dei colori, eccetera. 
+Nelle lezioni successive vedremo all'opera alcuni tra
+i pacchetti più comuni.
 
 ## Definire comandi personali
 
-Ti potrà succedere di aver bisogno di un comando specifico per il
-tuo documento, o perché _quella_ funzionalità che ti serve non è
-contemplata dai pacchetti disponibili, o, più semplicemente,
+Lavorando con LaTeX, ti potrà succedere di aver bisogno 
+di un comando specifico per il tuo documento, o perché 
+_quella_ funzionalità che ti serve non è contemplata 
+dai pacchetti disponibili, o, più semplicemente,
 per inserire più facilmente nel testo un'espressione 
-che devi scrivere numerose volte.
+che ricorre con una certa frequenza.
 
-L'esempio seguente mostra come definire un comando per stampare 
-parole chiave in uno stile specifico (il nero corsivo, in questo
-caso).
+L'esempio seguente mostra come definire un comando che 
+stampa il proprio argomento in uno stile specifico 
+(il nero corsivo, in questo caso).
 
 ```latex
 \documentclass{article}
@@ -146,28 +149,37 @@ Qualcosa a proposito di \kw{mele} e \kw{arance}.
 \end{document}
 ```
 
-Nella definizione, `[1]` il numero degli argomenti che
-prenderà il comando (uno, in questo caso) e `#1` indica 
-l'argomento che gli viene passato
-(`mele` o `arance`, in questo esempio). 
-Un comando può prendere fino a nove argomenti, ma di solito
-è meglio definire comandi a un solo argomento, o talvolta
+Nella definizione, `[1]` indica il numero 
+degli argomenti del comando 
+(uno, in questo caso) e `#1` 
+il primo (e unico) argomento che gli viene 
+passato (`mele` o `arance`, in questo 
+esempio). 
+Un comando può prendere fino a nove 
+argomenti, ma di solito
+è meglio definire comandi a un solo 
+argomento, o talvolta
 senza del tutto addirittura.
 
 
-La definizione dei comandi non solo riduce la quantità di
-caratteri da digitare. Cosa più utile, aiuta a separare 
-il contenuto dalla forma. Se per qualche motivo si decide 
-di volere le parole chiave in uno stile diverso, invece di 
-modificare tutte le loro occorrenze nell'intero documento, 
-basterà modificarne la definizione. 
-Nell'esempio seguente carichiamo il pacchetto `xcolor` per 
-aggiungere i colori e adoperiamo il blu anziché il nero.
+La definizione dei comandi non riduce solo 
+la quantità di caratteri da digitare, ma 
+cosa più utile, aiuta a separare 
+il contenuto dalla forma. 
+Se per qualche motivo a un certo punto si 
+decide di volere le parole chiave in uno 
+stile diverso, invece di modificare tutte 
+le loro occorrenze nel documento, 
+basterà modificarne la definizione nel 
+preambolo. 
+Nell'esempio seguente carichiamo il 
+pacchetto `xcolor` per 
+aggiungere i colori e adoperiamo 
+il blu anziché il nero.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-
 \usepackage{xcolor}
 
 \newcommand\kw[1]{\textcolor{blue}{\itshape #1}}
@@ -178,25 +190,36 @@ Qualcosa a proposito di \kw{mele} e \kw{arance}.
 
 \end{document}
 ```
-Attenzione, però: definire troppi comandi o definirne con 
-numerosi argomenti può rendere il file sorgente difficile
-da comprendere, perché la sintassi non è familiare.
-La possibilità di definire comandi _ad hoc_ per un documento,
-quindi, dovrebbe essere sfruttata con parsimonia.
+
+Attenzione, però: definire troppi comandi 
+o definirne con molti argomenti può rendere 
+il file sorgente difficile da leggere, 
+perché la sintassi non è familiare.
+La possibilità di definire comandi 
+_ad hoc_ per un documento, quindi, 
+dovrebbe essere sfruttata con parsimonia.
 
 ## Esercizi
 
-Prova a scrivere del testo in altre lingue europee e osserva come `babel`
-influisce sulla sillabazione: probabilmente puoi trovare del testo su Internet 
-e indovinare le opzioni corrette da passare al pacchetto.
+Prova a scrivere del testo in altre lingue 
+europee e osserva come `babel` influisce 
+sulla sillabazione: puoi 
+trovare del testo a questo scopo su Internet 
+e indovinare le opzioni corrette da 
+passare al pacchetto.
 
-Prova a modificare i margini nell'esempio con `geometry`. Puoi impostare
-separatamente i singoli margini `top`, `bottom`, `left` e `right` 
-dichiarando le opzioni in un elenco e separandole con la virgola.
+Prova a modificare i margini impostati 
+nell'esempio con `geometry`. 
+Puoi impostare
+separatamente i singoli margini `top`, 
+`bottom`, `left` e `right` 
+dichiarando le opzioni in un elenco e 
+separandole con la virgola.
 
-Prova a caricare il pacchetto `lipsum` e aggiungi al tuo documento 
-il comando `\lipsum`. 
-Riesci a indovinare perché questo pacchetto è utile per scrivere
-esempi?
+Prova a caricare il pacchetto `lipsum` 
+e aggiungi al tuo documento il comando 
+`\lipsum`. 
+Riesci a indovinare perché questo pacchetto 
+è utile per scrivere esempi?
 
 Prova a modificare la definizione di `\kw` per ottenere uno stile diverso.
