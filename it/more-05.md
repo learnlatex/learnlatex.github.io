@@ -77,7 +77,7 @@ a [questo post](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-conce
 Ci sono occasioni in cui si deve produrre un'immagine 
 (anche con molto testo) con LaTeX. 
 Spesso, in questi casi, non è necessario che 
-inserire solo il contenuto nella pagina. 
+inserire solo il contenuto nella pagina così com'è. 
 Lo si può fare facilmente con la classe
 [`standalone`](https://ctan.org/pkg/standalone),
 che ritaglia automaticamente la pagina
