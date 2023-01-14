@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Tabelle"
-description: "Questa lezione mostra come comporre le tabelle in LaTeX, impostare l'allineamento delle celle, aggiungere filetti e unire le celle."
+description: "Questa lezione mostra come comporre le tabelle con LaTeX, come impostare l'allineamento delle celle e come unirle, come aggiungere filetti."
 toc-anchor-text: "Tabelle con LaTeX"
 toc-description: "Nozioni fondamentali per comporre le tabelle."
 ---
@@ -10,11 +10,11 @@ toc-description: "Nozioni fondamentali per comporre le tabelle."
 # Tabelle
 
 <span
-  class="summary">Questa lezione mostra come comporre le tabelle in LaTeX, impostare l'allineamento delle celle, aggiungere filetti e unire le celle.</span>
+  class="summary">Questa lezione mostra come comporre le tabelle con LaTeX, come impostare l'allineamento delle celle e come unirle, come aggiungere filetti.</span>
 
-In LaTeX, le tabelle sono costruite nell'ambiente 
+In LaTeX, le tabelle si costruiscono nell'ambiente 
 `tabular`. 
-In questa lezione assumiamo il caricamento del 
+In questa lezione assumiamo anche il caricamento del 
 pacchetto `array`, che aggiunge ulteriori 
 funzionalità alle tabelle standard, e che non è 
 integrato nel kernel di LaTeX solo per ragioni 
@@ -27,18 +27,22 @@ e sarai pronto per incominciare:
 ```
 {: .noedit :}
 
-Per comporre una tabella dentro `tabular`, bisogna dire
-a LaTeX di quante colonne si ha bisogno e come debbono
-essere allineate. Questa dichiarazione va fatta
-in un argomento obbligatorio 
-&ndash; spesso chiamato _preambolo_ &ndash;
-di `tabular`, nel quale le colonne vengono specificate 
-con nomi di una sola lettera, chiamati _preamble-token_.
-I tipi di colonne disponibili sono i seguenti:
+Per comporre una tabella dentro `tabular`, 
+bisogna dire a LaTeX due cose: di quante 
+colonne si ha bisogno e come debbono 
+essere allineate. 
+Questa dichiarazione va fatta in un 
+argomento obbligatorio 
+&ndash; spesso chiamato _preambolo_ della tabella &ndash;
+di `tabular`, nel quale le colonne vengono 
+specificate con nomi di una sola lettera, 
+chiamati _preamble-token_ (token di preambolo). 
+La tabella seguente mostra i tipi di colonna standard
+disponibili:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| tipo                         | descrizione |
+| Tipo                         | Descrizione |
 | ---                          |:-- |
 | `l`                          | colonna allineata a sinistra |
 | `c`                          | colonna centrata |
@@ -47,40 +51,50 @@ I tipi di colonne disponibili sono i seguenti:
 | `m{larghezza}`               | come `p`, ma messo in alto rispetto al resto della riga |
 | `b{larghezza}`               | come `p`, ma messo in basso |
 | `w{allineamento}{larghezza}` | produce una colonna di `larghezza` fissa e `allineamento` `l`, `c` o `r`; se troppo largo, il contenuto della colonna finisce nel margine. |
-| `W{allineamento}{larghezza}` | come `w`, ma se il contenuto è troppo largo, emette un avviso di `overfull box`. |
+| `W{allineamento}{larghezza}` | come `w`, ma se il contenuto è troppo largo, LaTeX emette un avviso di `overfull box`. |
 
-Oltre a quelli appena visti, sono disponibili alcuni altri _preamble-token_ che 
-non definiscono una colonna ma potrebbero ugualmente essere utili:
+Oltre a quelli appena visti, sono disponibili 
+alcuni altri _preamble-token_ che non 
+definiscono una colonna, ma potrebbero essere 
+ugualmente utili:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| tipo | descrizione |
+| Tipo | Descrizione |
 | ---  | :-- |
-| `*{numero}{stringa}` | ripete la `stringa` per `numero` volte nel preambolo. Utile per dichiarare più colonne identiche. |
+| `*{numero}{stringa}` | ripete la `stringa` per `numero` volte nel preambolo; utile per dichiarare più colonne identich. |
 | `>{dichiarazione}` | mette la `dichiarazione` prima del contenuto di ogni cella nella colonna successiva (utile, per esempio, per impostare un font differente per la colonna in questione) |
 | `<{dichiarazione}` | mette la `dichiarazione` dopo il contenuto di ogni cella nella colonna precedente |
 | <span>`|`</span> | aggiunge un filetto verticale |
 | `@{dichiarazione}` | sostituisce lo spazio tra due colonne con la `dichiarazione` |
 | `!{dichiarazione}` | aggiunge la `dichiarazione` al centro dello spazio tra due colonne |
 
-Le due tabelle qui sopra mostrano tutti i tipi di colonna disponibili
-in LaTeX standard e con il pacchetto `array`.
-Ulteriori tipi di colonna messi a disposizione dai diversi pacchetti
-vengono presentati nella [pagina di approfondimento](more-08) di questa 
+Le due tabelle qui sopra mostrano tutti i tipi 
+di colonna disponibili in LaTeX standard e con 
+il pacchetto `array`.
+Ulteriori tipi di colonna definiti dai diversi 
+pacchetti vengono presentati nella 
+[pagina di approfondimento](more-08) di questa 
 lezione.
 
-Le colonne `l`, `c` e `r` avranno la larghezza naturale della cella più larga.
-Vanno dichiarate tutte le colonne di cui hai bisogno: se ti servono tre colonne
-centrate, per esempio, nel preambolo della tabella scriverai `ccc` 
-(o `c c c`, dato che gli spazi vengono ignorati).
+Le colonne `l`, `c` e `r` avranno la larghezza 
+naturale della cella più larga.
+Vanno dichiarate tutte le colonne di cui hai 
+bisogno: se ti servono tre colonne centrate, 
+per esempio, nel preambolo della tabella 
+scriverai `ccc` (o `c c c`, dato che gli spazi 
+vengono ignorati).
 
-Nel corpo della tabella, le colonne si separano con il carattere `&`
-e si incomincia una nuova riga con `\\`.
+Nel corpo della tabella, le colonne si separano 
+con il carattere `&` e si termina una riga 
+con `\\`.
 
-Ora sappiamo tutto ciò che ci serve per la nostra prima tabella. 
-Nel codice seguente, `&` e `\\` sono incolonnati. 
-Non è necessario farlo, con LaTeX, ma ti aiuterà a leggere
-il codice sorgente.
+Ora sai tutto ciò che ti serve per comporre 
+la tua prima tabella. 
+Nota che nel codice seguente `&` e `\\` sono 
+incolonnati. 
+LaTeX non lo richiede, ma è una buona pratica
+per rendere il sorgente più leggibile.
 
 <!-- {% raw %} -->
 ```latex
@@ -89,12 +103,14 @@ il codice sorgente.
 \usepackage{array}
 
 \begin{document}
+
 \begin{tabular}{lll}
   Animale & Cibo   & Taglia  \\
   cane    & carne  & media   \\
   cavallo & fieno  & grande  \\
   rana    & mosche & piccola \\
 \end{tabular}
+
 \end{document}
 ```
 
@@ -112,6 +128,7 @@ Osserva che cosa succede nell'esempio seguente:
 \usepackage{array}
 
 \begin{document}
+
 \begin{tabular}{cl}
   Animale  & Descrizione \\
   cane     & Il cane è un membro del genere Canis, che fa parte dei canidi 
@@ -122,18 +139,23 @@ Osserva che cosa succede nell'esempio seguente:
              indicato come il gatto domestico per distinguerlo dai membri 
              selvatici della famiglia. \\
 \end{tabular}
+
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Il problema è che una colonna `l` stampa il proprio contenuto 
-in una sola riga alla sua larghezza naturale, anche se in mezzo
-c'è il bordo di una pagina.
-Per evitare la cosa, puoi adoperare la colonna `p`, che stampa
-il proprio contenuto come capoversi della larghezza da te 
-specificata nell'argomento e allineati verticalmente in alto 
-(ciò che vorrai la grande maggioranza delle volte).
-Confronta il risultato dell'esempio precedente con questo:
+Il problema è che il materiale di una colonna 
+`l` viene stampato su una sola riga e con la sua 
+larghezza naturale, anche se la pagina non è
+sufficientemente grande.
+Per evitarlo, al suo posto puoi specificare la 
+colonna `p{larghezza}`, che sistema il proprio 
+contenuto come un capoverso della `larghezza` 
+da te indicata e allineato verticalmente in alto 
+(questa impostazione predefinita andrà bene nella
+grandissima maggioranza delle volte).
+Confronta il risultato dell'esempio precedente con 
+questo:
 
 <!-- {% raw %} -->
 ```latex
@@ -142,6 +164,7 @@ Confronta il risultato dell'esempio precedente con questo:
 \usepackage{array}
 
 \begin{document}
+
 \begin{tabular}{cp{9cm}}
   Animale  & Descrizione \\
   cane     & Il cane è un membro del genere Canis, che fa parte dei canidi 
@@ -152,17 +175,21 @@ Confronta il risultato dell'esempio precedente con questo:
              indicato come il gatto domestico per distinguerlo dai membri 
              selvatici della famiglia. \\
 \end{tabular}
+
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Se la tua tabella ha molte colonne dello stesso tipo, dichiararle una
-alla volta nel preambolo può essere farraginoso. 
-È molto più veloce dare `*{numero}{stringa}`, che ripete la `stringa` per 
-`numero` volte.
-In altre parole, `*{6}{c}` equivale a scrivere `cccccc`. 
-Per mostrarti come funziona la cosa, ecco di nuovo la prima tabella
-di questa lezione con la sintassi appena imparata:
+Se la tua tabella contiene molte colonne dello 
+stesso tipo, dichiararle una alla volta nel 
+preambolo può essere farraginoso. 
+È molto più veloce scrivere `*{numero}{specificatore}`, 
+che ripete lo `specificatore` per `numero` volte.
+In altre parole, `*{6}{c}` equivale a scrivere 
+`cccccc`. 
+Per mostrarti come funziona la cosa, ecco di nuovo 
+la prima tabella di questa lezione con la sintassi 
+appena descritta:
 
 <!-- {% raw %} -->
 ```latex
@@ -171,12 +198,14 @@ di questa lezione con la sintassi appena imparata:
 \usepackage{array}
 
 \begin{document}
+
 \begin{tabular}{*{3}{l}}
   Animale & Cibo   & Taglia  \\
   cane    & carne  & media   \\
   cavallo & fieno  & grande  \\
   rana    & mosche & piccola \\
 \end{tabular}
+
 \end{document}
 ```
 <!-- {% endraw %} -->
