@@ -27,9 +27,9 @@ e sarai pronto per incominciare:
 ```
 {: .noedit :}
 
-Per comporre una tabella dentro `tabular`, 
-bisogna dire a LaTeX due cose: di quante 
-colonne si ha bisogno e come debbono 
+Per comporre una tabella nell'ambiente `tabular`, 
+LaTeX ha bisogno di sapere due cose: quante 
+colonne servono e come debbono 
 essere allineate. 
 Questa dichiarazione va fatta in un 
 argomento obbligatorio 
@@ -183,7 +183,7 @@ questo:
 Se la tua tabella contiene molte colonne dello 
 stesso tipo, dichiararle una alla volta nel 
 preambolo può essere farraginoso. 
-È molto più veloce scrivere `*{numero}{specificatore}`, 
+È molto più veloce scrivere `*{<numero>}{<specificatore>}`, 
 che ripete lo `specificatore` per `numero` volte.
 In altre parole, `*{6}{c}` equivale a scrivere 
 `cccccc`. 
@@ -210,24 +210,33 @@ appena descritta:
 ```
 <!-- {% endraw %} -->
 
-## Aggiungere linee
+## Aggiungere i filetti
 
-Un consiglio, prima di introdurre le linee (o _filetti_): i filetti nelle
-tabelle andrebbero adoperati con grande parsimonia, e di solito quelli 
-verticali producono un risultato non professionale.
-Per ottenere tabelle di aspetto professionale, infatti, è meglio evitare
-i filetti standard di LaTeX e adoperare al loro posto quelli messi a
-disposizione dal pacchetto `booktabs`, motivo per cui lo descriviamo
-qui come prima cosa.
-Per completezza, i filetti standard sono trattati nella
+Prima di affrontare l'argomento delle linee 
+(o _filetti_), ti diamo un consiglio: 
+i filetti nelle tabelle andrebbero adoperati 
+con grande parsimonia, evitando il più possibile
+quelli verticali, perché producono un risultato 
+tipograficamente scadente.
+Per ottenere tabelle di aspetto professionale,
+inoltre, è meglio evitare i filetti standard di LaTeX 
+e adoperare al loro posto quelli messi a
+disposizione dal pacchetto `booktabs`, 
+motivo per cui lo descriviamo qui come prima cosa.
+Se vuoi saperne di più sui filetti standard
+di LaTeX, trovi qualche altra informazione nella
 [pagina di approfondimento](more-08).
 
-`booktabs` mette a disposizione quattro tipi diversi di filetto, ciascuno
-dei quali si ottiene con un comando.
-Questi comandi debbono essere dati come prima cosa all'inizio di una riga 
-o seguire immediatamente un altro filetto.
-I tre comandi più adoperati sono `\toprule`, `\midrule` e
-`\bottomrule`. Il loro nome indica chiaramente dove vanno dati:
+`booktabs` definisce quattro tipi diversi di 
+filetto, ciascuno dei quali si ottiene con 
+un comando.
+Questi comandi vanno dati come prima cosa 
+all'inizio di una riga di tabella o debbono
+seguire immediatamente un altro filetto.
+I tre comandi più adoperati sono `\toprule`, 
+`\midrule` e `\bottomrule`. 
+Il loro nome indica chiaramente dove vanno messi
+nel codice:
 
 <!-- {% raw %} -->
 ```latex
@@ -236,27 +245,62 @@ I tre comandi più adoperati sono `\toprule`, `\midrule` e
 \usepackage{array}
 \usepackage{booktabs}
 
+\begin{document}
+
+\begin{tabular}{lll}
+  \toprule                       % filetto iniziale
+  Animale & Cibo   & Taglia  \\
+  \midrule                       % filetto intermedio
+  cane    & carne  & media   \\
+  cavallo & fieno  & grande  \\
+  rana    & mosche & piccola \\
+  \bottomrule                    % filetto finale
+\end{tabular}
+
+\end{document}
+```
+<!-- {% endraw %} -->
+
+Il quarto filetto definito da `booktabs` è 
+`\cmidrule`. 
+Può essere adoperato per disegnare una linea 
+che non copre l'intera larghezza della tabella, 
+ma solo un determinato intervallo di colonne, 
+che si indica come un intervallo numerico: 
+`{`_<numero>_`-`_<numero>_`}`.
+Dovrai indicare un intervallo anche se vuoi 
+che il filetto sia largo una colonna soltanto 
+(in questo caso, i due numeri saranno uguali).
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
+  
 \begin{tabular}{lll}
   \toprule
   Animale & Cibo   & Taglia  \\
   \midrule
   cane    & carne  & media   \\
-  cavallo & fieno  & grande  \\
+  \cmidrule{1-2}                 % filetto che copre la prima e la seconda colonna
+  cavallo & fieno  & grande  \\  
+  \cmidrule{1-1}                 % filetto che copre la prima colonna
+  \cmidrule{3-3}                 % filetto che copre la terza colonna
   rana    & mosche & piccola \\
   \bottomrule
 \end{tabular}
+  
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Il quarto filetto definito da `booktabs` è `\cmidrule`. Può essere adoperato
-per disegnare una linea che non copre l'intera larghezza della tabella, ma solo
-un determinato intervallo tra colonne. Un intervallo tra colonne si indica
-come un intervallo numerico: `{`_numero_`-`_numero_`}`.
-Dovrai indicare un intervallo anche se vuoi che il filetto sia largo
-una colonna soltanto (in questo caso, i due numeri saranno uguali).
+`\cmidrule` presenta un'altra caratteristica
+utile: puoi accorciarlo a entrambe le estremità 
+con un argomento facoltativo _tra parentesi tonde_:
 
 <!-- {% raw %} -->
 ```latex
@@ -266,6 +310,7 @@ una colonna soltanto (in questo caso, i due numeri saranno uguali).
 \usepackage{booktabs}
 
 \begin{document}
+  
 \begin{tabular}{lll}
   \toprule
   Animale & Cibo   & Taglia  \\
@@ -273,53 +318,29 @@ una colonna soltanto (in questo caso, i due numeri saranno uguali).
   cane    & carne  & media   \\
   \cmidrule{1-2}
   cavallo & fieno  & grande  \\
-  \cmidrule{1-1}
-  \cmidrule{3-3}
+  \cmidrule(r){1-1}             
+  \cmidrule(rl){2-2}            
+  \cmidrule(l){3-3}         
   rana    & mosche & piccola \\
   \bottomrule
 \end{tabular}
+  
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-C'è un'altra caratteristica utile di `\cmidrule`. 
-Puoi accorciarlo a entrambe le estremità con un argomento facoltativo
-tra parentesi tonde:
-
-<!-- {% raw %} -->
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{array}
-\usepackage{booktabs}
-
-\begin{document}
-\begin{tabular}{lll}
-  \toprule
-  Animale & Cibo   & Taglia  \\
-  \midrule
-  cane    & carne  & media   \\
-  \cmidrule{1-2}
-  cavallo & fieno  & grande  \\
-  \cmidrule(r){1-1}
-  \cmidrule(rl){2-2}
-  \cmidrule(l){3-3}
-  rana    & mosche & piccola \\
-  \bottomrule
-\end{tabular}
-\end{document}
-```
-<!-- {% endraw %} -->
-
-Hai sicuramente indovinato che `r` e `l` indicano che il filetto
-è accorciato alla sua estremità destra (_**r**ight_)
+Osservando il codice, hai certamente 
+indovinato che le lettere `r` e `l` 
+indicano che il filetto va accorciato alla 
+sua estremità destra (_**r**ight_)
 e sinistra (_**l**eft_) rispettivamente.
 
-A volte un filetto può essere una separazione eccessiva tra due righe, 
-ma ti accorgi che la tabella sarebbe più chiara  
+A volte un filetto orizzontale può essere una 
+separazione eccessiva tra due righe, ma ti 
+accorgi che la tabella sarebbe più chiara  
 distinguendole comunque in qualche modo.
-In casi come questo, puoi inserire un piccolo spazio verticale 
-con il comando `\addlinespace`.
+In casi come questo, puoi inserire un piccolo 
+spazio verticale con il comando `\addlinespace`.
 
 <!-- {% raw %} -->
 ```latex
@@ -329,6 +350,7 @@ con il comando `\addlinespace`.
 \usepackage{booktabs}
 
 \begin{document}
+  
 \begin{tabular}{cp{9cm}}
   \toprule
   Animale  & Descrizione \\
@@ -342,6 +364,7 @@ con il comando `\addlinespace`.
              selvatici della famiglia. \\
   \bottomrule
 \end{tabular}
+  
 \end{document}
 ```
 <!-- {% endraw %} -->
@@ -349,17 +372,18 @@ con il comando `\addlinespace`.
 
 ## Unire le celle
 
-In LaTeX, puoi unire le celle orizzontali con il comando 
-`\multicolumn`, che va dato come prima cosa in una cella. 
+Per unire celle orizzontali
+c'è il comando `\multicolumn`, che in una 
+cella va dato come prima cosa. 
 `\multicolumn` prende tre argomenti:
 
 1. il numero di celle da unire
 2. l'allineamento della cella risultante
 3. il contenuto della cella risultante
 
-Il secondo argomento può contenere qualsiasi cosa sia
-legale nel preambolo di `tabular`, ma, fa' attenzione,
-_un solo tipo di colonna_.
+Il secondo argomento può contenere qualsiasi cosa
+sia ammessa nel preambolo di `tabular`, ma, fa' 
+attenzione, puoi metterci _un solo tipo di colonna_.
 
 <!-- {% raw %} -->
 ```latex
@@ -368,8 +392,8 @@ _un solo tipo di colonna_.
 \usepackage{array}
 \usepackage{booktabs}
 
-
 \begin{document}
+  
 \begin{tabular}{lll}
   \toprule
   Animale   & Cibo   & Taglia  \\
@@ -380,6 +404,7 @@ _un solo tipo di colonna_.
   furlong   & \multicolumn{2}{c}{sconosciuto} \\
   \bottomrule
 \end{tabular}
+
 \end{document}
 ```
 <!-- {% endraw %} -->
@@ -387,8 +412,8 @@ _un solo tipo di colonna_.
 Puoi adoperare `\multicolumn` anche in una singola cella 
 per evitare che LaTeX applichi alla colonna in questione 
 quanto hai definito nel preambolo della tabella.
-Nell'esempio seguente, il comando è stato adoperato
-per centrare le intestazioni di colonne altrimenti
+Nell'esempio seguente, il comando centra
+le intestazioni di colonne altrimenti
 allineate a sinistra:
 
 <!-- {% raw %} -->
@@ -398,8 +423,8 @@ allineate a sinistra:
 \usepackage{array}
 \usepackage{booktabs}
 
-
 \begin{document}
+  
 \begin{tabular}{lll}
   \toprule
   \multicolumn{1}{c}{Animale} & \multicolumn{1}{c}{Cibo} & \multicolumn{1}{c}{Taglia} \\
@@ -414,10 +439,11 @@ allineate a sinistra:
 ```
 <!-- {% endraw %} -->
 
-LaTeX non supporta l'unione verticale delle celle.
-Di solito, per dare al lettore l'idea corretta di cosa si 
-intendesse fare basta lasciare le celle vuote, senza che le celle
-si estendano davvero su più righe.
+LaTeX non permette di unire le celle in senso verticale.
+Di solito, per dare al lettore l'idea corretta di 
+cosa si intendesse fare basta lasciare le celle 
+vuote, senza estenderle _davvero_ 
+su più righe.
 
 <!-- {% raw %} -->
 ```latex
@@ -426,8 +452,8 @@ si estendano davvero su più righe.
 \usepackage{array}
 \usepackage{booktabs}
 
-
 \begin{document}
+  
 \begin{tabular}{lll}
   \toprule
   Gruppo    & Animale  & Taglia  \\
@@ -445,6 +471,7 @@ si estendano davvero su più righe.
             & maiale   & media   \\
   \bottomrule
 \end{tabular}
+  
 \end{document}
 ```
 <!-- {% endraw %} -->
@@ -452,8 +479,8 @@ si estendano davvero su più righe.
 ## Esercizi
 
 Adopera la semplice tabella d'esempio all'inizio di questa lezione
-per incominciare a sperimentare con le tabelle.
+per incominciare a fare qualche esperimento.
 Prova differenti allineamenti con i tipi di colonna `l`, `c` e `r`.
 Che cosa succede se gli elementi in una riga sono troppo pochi?
 Che cosa succede se sono troppi?
-Fa' delle prove con il comando `\multicolumn` per unire delle celle.
+Fa' delle prove con il comando `\multicolumn` per unire alcune celle.
