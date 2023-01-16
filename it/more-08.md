@@ -19,11 +19,12 @@ della lezione per avere sotto mano la panoramica
 delle diverse possibilità.
 Se hai compreso per bene il funzionamento di 
 `l`, `c`, `r`, e `p`, le brevi descrizioni che 
-ti abbiamo dato dovrebbero bastarti per capire il 
-comportamento anche delle colonne `m`, `b`, `w` 
+ti abbiamo dato dovrebbero bastarti per capire 
+anche come si comportano le colonne `m`, `b`, `w` 
 e `W` (lì non descritte).
-Se non è così, fa' qualche esperimento modificando 
-opportunamente i codici degli esempi per prendere
+Se non è così, potrebbe aiutarti fare qualche 
+esperimento modificando opportunamente i codici 
+degli esempi per prendere
 dimestichezza con i vari tipi di colonne.
 Rimangono ora da vedere `>`, `<`, `@`, `!`, e `|`,
 altri _token di preambolo_ utili e comunemente
