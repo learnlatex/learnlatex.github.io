@@ -3,27 +3,31 @@ layout: "lesson"
 lang: "it"
 title: "Di più su: Tabelle"
 description: "Questa lezione mostra altri modi per personalizzare una tabella impostando 
-lo stile di una colonna, modificando la spaziatura e i filetti, e descrive altri pacchetti 
-che forniscono diverse funzionalità per comporre le tabelle."
+lo stile di una colonna e modificandone la spaziatura e i filetti. Inoltre, descrive altri pacchetti 
+che forniscono ulteriori funzionalità per comporre le tabelle."
 toc-anchor-text: "Di più su: Tabelle"
 ---
 
-
 ## Gli altri contenuti del preambolo
 
-Dato che la lezione principale non ha illustrato tutte le 
-opzioni disponibili per le intestazioni delle tabelle, 
-ne spieghiamo alcune altre qui, con degli esempi.
-Ti consigliamo di ripassare l'inizio della lezione per 
-avere una panoramica delle diverse possibilità.
-Dopo aver compreso per bene il funzionamento di `l`, `c`, `r`, e `p`,
-le brevi descrizioni che ti daremo in questa sede dovrebbero 
-bastarti per capire che cosa fanno i diversi tipi 
-di colonna `m`, `b`, `w`, e `W`.
-Se ancora non basta, ti consigliamo di fare qualche 
-esperimento modificando opportunamente i codici d'esempio.
-Infine, rimarranno da vedere gli altri _token di preambolo_, 
-utili e comunemente usati, come `>`, `<`, `@`, `!`, e `|`. 
+Dato che la lezione principale non ha illustrato 
+tutte le opzioni disponibili per le intestazioni 
+delle tabelle, ne spieghiamo alcune altre qui, 
+con degli esempi.
+Ti consigliamo di ripassare l'inizio della lezione 
+per avere sotto mano una panoramica delle diverse 
+possibilità.
+Dopo aver compreso per bene il funzionamento di 
+`l`, `c`, `r`, e `p`, le brevi descrizioni che 
+ti daremo in questo approfondimento dovrebbero 
+bastarti per capire che cosa fanno le colonne 
+`m`, `b`, `w`, e `W`.
+Se ancora non basta, ti consigliamo di fare 
+qualche esperimento modificando opportunamente 
+i codici degli esempi.
+Infine, rimarranno da vedere gli altri 
+_token di preambolo_, utili e comunemente usati, 
+come `>`, `<`, `@`, `!`, e `|`. 
 
 ### Impostare lo stile di una colonna
 
@@ -42,6 +46,7 @@ un segno di due punti dopo ogni voce, puoi fare così:
 \usepackage{booktabs}
 
 \begin{document}
+
 \begin{tabular}{>{\itshape}l<{:}*{2}{l}}
   \toprule
   Animale  & Cibo   & Taglia  \\
@@ -51,6 +56,7 @@ un segno di due punti dopo ogni voce, puoi fare così:
   rana     & mosche & piccola \\
   \bottomrule
 \end{tabular}
+
 \end{document}
 ```
 <!-- {% endraw %} -->
