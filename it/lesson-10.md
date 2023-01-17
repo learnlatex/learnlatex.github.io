@@ -390,10 +390,10 @@ Fa' delle prove con i comandi per cambiare font: che cosa succede
 quando provi ad annidarli?
 
 La matematica in display è centrata per impostazione predefinita; 
-prova ad aggiungere l'opzione di classe `[fleqn]` 
+prova ad aggiungere l'opzione di classe `fleqn` 
 (che allinea le equazioni a sinistra) ad alcuni degli esempi precedenti 
 per vedere una disposizione diversa. 
 Analogamente, i numeri delle equazioni 
 sono di solito a destra. 
-Prova ad aggiungere l'opzione di classe `[leqno]` 
+Prova ad aggiungere l'opzione di classe `leqno` 
 (che mette i numeri delle equazioni a sinistra).
