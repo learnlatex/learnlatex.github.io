@@ -311,49 +311,63 @@ Matrici di AMS.
 
 ## Font in modo matematico
 
-A differenza del testo normale, nel modo matematico 
-i diversi font veicolano spesso un significato molto specifico. 
-Spesso, quindi, sono scritti in modo esplicito. 
-A questo punto, hai bisogno di conoscere una serie di comandi:
+A differenza di quanto accade nel testo normale, 
+nel modo matematico i cambiamenti dello stile
+del font veicolano in genere un significato molto 
+specifico, il che richiede la grande maggioranza
+delle volte di scriverli esplicitamente.
+A questo punto, hai bisogno di conoscere una serie
+di comandi:
 
 - `\mathrm`: romano (tondo)
 - `\mathit`: corsivo, spazieggiato come testo normale
 - `\mathbf`: nero
 - `\mathsf`: senza grazie
-- `\mathtt`: a spaziatura fissa (macchina da scrivere)
-- `\mathbb`: a tratto doppio (nero da lavagna) (richiede il pacchetto `amsfonts`)
+- `\mathtt`: a spaziatura fissa (tipo macchina da scrivere)
+- `\mathbb`: a tratto doppio ( il cosiddetto ‘nero da lavagna’; richiede il pacchetto `amsfonts`)
 
-Each of these takes Latin letters as an argument, so for example we might
-write a matrix as
+Tutti questi comandi prendono come argomento lettere
+dell'alfabeto latino.
+Per scrivere una matrice, dunque, possiamo fare così:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
+
 La matrice $\mathbf{M}$.
+
 \end{document}
 ```
 
-Si noti che il corsivo matematico predefinito separa le lettere 
-per poterle adoperare per denotare un prodotto di variabili. 
-Per scrivere una parola in corsivo, adopera `\mathit`.
+Nota che per impostazione predefinita il 
+corsivo matematico spazieggia le lettere,
+perché implicitamente le considera come
+un prodotto di variabili.
+Per scrivere una parola in corsivo, 
+invece, devi adoperare `\mathit`.
 
-I comandi per i font matematici del tipo `\math..` font caricano 
-font specifici per la matematica. A volte è necessario incorporare 
-una parola che fa parte della struttura esterna della frase e richiede 
-il carattere del testo corrente. Per questo è possibile adoperare 
-`\text{...}` (richiede `amsmath`) o stili di carattere specifici 
+I comandi per i font matematici del tipo `\math..`
+caricano font specifici per la matematica. 
+A volte, tuttavia, è necessario incorporare nella
+formula del testo che appartiene alla struttura 
+esterna della frase e richiede perciò il carattere 
+del testo corrente. 
+Per farlo, puoi adoperare il comando `\text{...}` 
+(richiede `amsmath`) o stili di carattere specifici 
 come `\textrm{..}`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
+
 \begin{document}
 
-$\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
+$\text{testo corrente} corrente \neq \mathit{corrente} \neq \mathrm{corrente}$
 
-\textit{$\text{bad use } size \neq \mathit{size} \neq \mathrm{size} $}
+\textit{$\text{testo corrente} size \neq \mathit{corrente} \neq \mathrm{corrente}$}
 
 \end{document}
 ```
@@ -363,20 +377,23 @@ Se ti servono altri simboli in nero, leggi come fare
 
 ## Esercizi
 
-Prova a lavorare un po' in modo matematico di base: prendi gli esempi 
-di questa lezione e passa dal modo in linea a quello in display. 
+Lavorare un po' nel modo matematico di base: 
+prendi gli esempi di questa lezione e passa 
+dal modo in linea a quello in display. 
 Riesci a vedere le differenze?
 
 Prova ad aggiungere altre lettere greche, sia minuscole sia maiuscole. 
-Dovresti essere in grado di indovinarne i nomi.
+Dovresti essere in grado di indovinarne i nomi senza conoscere
+i comandi.
 
 Fa' delle prove con i comandi per cambiare font: che cosa succede 
 quando provi ad annidarli?
 
 La matematica in display è centrata per impostazione predefinita; 
 prova ad aggiungere l'opzione di classe `[fleqn]` 
-(allinea le equazioni a sinistra) ad alcuni degli esempi precedenti 
-per vedere una disposizione diversa. Analogamente, i numeri delle equazioni 
+(che allinea le equazioni a sinistra) ad alcuni degli esempi precedenti 
+per vedere una disposizione diversa. 
+Analogamente, i numeri delle equazioni 
 sono di solito a destra. 
 Prova ad aggiungere l'opzione di classe `[leqno]` 
-(mette i numeri delle equazioni a sinistra).
+(che mette i numeri delle equazioni a sinistra).
