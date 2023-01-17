@@ -8,10 +8,12 @@ toc-anchor-text: "Di più su: Riferimenti incrociati"
 
 ## Trasformare i riferimenti incrociati in collegamenti ipertestuali
 
-È possibile trasformare i riferimenti incrociati in collegamenti
-ipertestuali con il pacchetto `hyperref`.
-Nella maggior parte dei casi, `hyperref` va caricato nel preambolo
-del documento come ultimo pacchetto.
+Il pacchetto `hyperref` permette di trasformare 
+i riferimenti incrociati in collegamenti
+ipertestuali (è sufficiente caricarlo).
+La grande maggioranza delle volte, `hyperref` 
+va caricato nel preambolo del documento 
+come _ultimo_ pacchetto.
 
 ```latex
 \documentclass{article}
@@ -31,5 +33,6 @@ Ancora un po' di testo.
 \end{document}
 ```
 
-Abbiamo scelto di stampare i collegamenti nello stesso colore del
-testo normale: prova a levare `hidelinks` e guarda che succede!
+Abbiamo scelto di avere i collegamenti ipertestuali 
+nello stesso colore del testo normale: prova a 
+levare `hidelinks` e guarda che succede!
