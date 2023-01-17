@@ -228,7 +228,7 @@ Un capoverso che riguarda una formula voluminosa:
 \end{document}
 ```
 
-Il numero dell'equazione è incrementato automaticamente 
+Il numero dell'equazione viene incrementato automaticamente 
 e può essere un numero semplice, come in questo esempio, 
 oppure preceduto dal numero della sezione in cui la formula 
 si trova, quindi (2.5) per la quinta equazione della sezione 
@@ -242,7 +242,7 @@ La notazione matematica è molto ricca, il che
 significa che gli strumenti integrati nel nucleo 
 di LaTeX non possono coprire _tutte_ le necessità. 
 Il pacchetto `amsmath` estende il supporto di base 
-per soddisfare molte più esigenze.
+per soddisfare numerose esigenze.
 La [documentazione di `amsmath`](http://texdoc.org/pkg/amsmath)
 contiene molti più esempi di quanti non possiamo 
 mostrarne in questa lezione.
@@ -254,9 +254,9 @@ mostrarne in questa lezione.
 
 \begin{document}
 
-Risolvi la seguente ricorrenza per $ n,k\geq 0 $:
+Risolvi la seguente ricorrenza per $n,k\geq 0$:
 \begin{align*}
-  Q_{n,0} &= 1   \quad Q_{0,k} = [k=0];  \\
+  Q_{n,0} &= 1 \quad Q_{0,k} = [k=0]; \\
   Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $n$, $k>0$.}
 \end{align*}
 
@@ -267,47 +267,52 @@ L'ambiente `align*` allinea le equazioni alle
 ‘e commerciali’ (`&`) proprio come in una tabella. 
 Osserva come abbiamo adoperato `\quad` per inserire 
 un po' di spazio e `\text` per inserire del testo 
-normale all'interno del modo matematico. 
-Abbiamo anche usato un altro comando matematico: 
+normale in modo matematico. 
+Qui c'è anche un altro comando matematico: 
 `\binom`, per un binomio.
 
-Nota che qui abbiamo adoperato `align*` e che l'equazione non è 
-numerata. La maggior parte degli ambienti matematici numera le equazioni 
-per impostazione predefinita, e la variante con asterisco (con un `*` dopo
-il nome dell'ambiente) disabilita la numerazione.
+La maggior parte degli ambienti matematici
+numera le formule per impostazione predefinita.
+Le loro varianti con asterisco (che si ottengono
+scrivendo un `*` subito dopo il nome dell'ambiente,
+come abbiamo fatto qui con `align*`), invece,
+disabilitano la numerazione.
 
-Il pacchetto definisce anche molti altri ambienti utili, per esempio 
-per le matrici.
+Il pacchetto `amsmath` definisce anche molti altri 
+ambienti utili, come quelli per le matrici.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
+
 \begin{document}
+
 Matrici di AMS.
 \[
 \begin{matrix}
-a & b & c \\
-d & e & f
+  a & b & c \\
+  d & e & f
 \end{matrix}
 \quad
 \begin{pmatrix}
-a & b & c \\
-d & e & f
+  a & b & c \\
+  d & e & f
 \end{pmatrix}
 \quad
 \begin{bmatrix}
-a & b & c \\
-d & e & f
+  a & b & c \\
+  d & e & f
 \end{bmatrix}
 \]
+
 \end{document}
 ```
 
 ## Font in modo matematico
 
-A differenza del testo normale, i diversi font in modo matematico spesso 
-trasmettono un significato molto specifico. 
+A differenza del testo normale, nel modo matematico 
+i diversi font veicolano spesso un significato molto specifico. 
 Spesso, quindi, sono scritti in modo esplicito. 
 A questo punto, hai bisogno di conoscere una serie di comandi:
 
