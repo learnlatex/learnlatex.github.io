@@ -367,7 +367,7 @@ come `\textrm{..}`.
 
 $\text{testo corrente} corrente \neq \mathit{corrente} \neq \mathrm{corrente}$
 
-\textit{$\text{testo corrente} size \neq \mathit{corrente} \neq \mathrm{corrente}$}
+\textit{$\text{testo corrente} corrente \neq \mathit{corrente} \neq \mathrm{corrente}$}
 
 \end{document}
 ```
