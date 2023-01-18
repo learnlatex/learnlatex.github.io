@@ -2,20 +2,25 @@
 layout: "lesson"
 lang: "it"
 title: "Di più su: Matematica"
-description: "Questa lezione mostra ulteriori ambienti di allineamento di amsmath, come si scrive la matematica in nero, il pachetto mathtools, e l'uso di un input Unicode per la matematica."
+description: "Questa lezione descrive ulteriori ambienti di allineamento di amsmath, mostra come si scrive la matematica in nero, il pachetto mathtools e l'uso di un input Unicode per la matematica."
 toc-anchor-text: "More on: Mathematics"
 ---
 
 
 ## Ulteriori allineamenti di `amsmath`
 
-Oltre all'ambiente `align*` descritto nella lezione principale,
-`amsmath` definisce numerosi altri costrutti per la matematica
-in display, in particolare `gather` per display su più righe
-che non richiedono allineamento, e `multline`
-per suddividere una singola espressione più lunga in più righe,
-delle quali la prima è allineata a sinistra e l'ultima a destra.
-In tutti i casi, la forma `*` omette la numerazione delle formule.
+Oltre all'ambiente `align*` descritto nella 
+lezione principale, `amsmath` definisce 
+numerosi altri costrutti per la matematica
+in display. 
+In particolare, due di essi sono utili per
+comporre formule lunghe su più righe:
+`gather` non allinea le diverse parti della
+formula; `multline`, invece, allinea la prima
+riga della formula a sinistra, l'ultima a
+destra e le righe rimanenti vengono centrate.
+Entrambi gli ambienti ammettono la forma `-*` 
+per omettere il numero della formula.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -32,22 +37,23 @@ Gather:
 
 Multline:
 \begin{multline*}
-   (a+b+c+d)x^{5}+(b+c+d+e)x^{4} \\
-    +(c+d+e+f)x^{3}+(d+e+f+a)x^{2}+(e+f+a+b)x \\
-    + (f+a+b+c)
+  (a+b+c+d)x^{5}+(b+c+d+e)x^{4} \\
+  +(c+d+e+f)x^{3}+(d+e+f+a)x^{2}+(e+f+a+b)x \\
+  + (f+a+b+c)
 \end{multline*}
 
 \end{document}
 ```
 
-### Colonne negli allineamenti matematici
+### Allineare la matematica in colonne
 
-Gli ambienti di allineamento di `amsmath` sono progettati
-per considerare le colonne a coppie, con la prima colonna di
-ogni coppia allineata a destra e la seconda a sinistra.
-Questo permette di mostrare più equazioni in una volta sola,
-ciascuna allineata in riferimento al proprio simbolo
-di relazione:
+Gli ambienti di allineamento di `amsmath` sono 
+progettati per considerare le colonne a coppie, 
+con la prima colonna di ogni coppia allineata 
+a destra e la seconda a sinistra.
+Ciò permette di mostrare più equazioni in una 
+volta sola, ciascuna allineata con riferimento 
+al proprio simbolo di relazione:
 
 ```latex
 \documentclass{article}
@@ -65,11 +71,12 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
-Inoltre esistono varianti degli ambienti per i display 
-che terminano in `-ed`, che permettono di comporre
-una ‘sottoformula’ da inserire in un display più grande. 
-Per esempio, `aligned` e `gathered` sono rispettivamente 
-varianti di `align` e `gather`.
+Inoltre, esistono le varianti `-ed` degli 
+ambienti in display, che permettono di comporre
+una ‘sottoformula’ da inserire in un display 
+più grande. 
+Per esempio, `aligned` e `gathered` sono 
+varianti di `align` e `gather` rispettivamente.
 
 ```latex
 \documentclass{article}
@@ -93,10 +100,11 @@ Aligned:
 
 \end{document}
 ```
-`aligned` accetta uno specificatore di posizione facoltativo
-simile a quello di  `tabular`. Questo è spesso utile per 
-allineare una formula matematica in linea alla sua riga 
-superiore. 
+
+`aligned` accetta uno specificatore di posizione 
+facoltativo simile a quello di `tabular`, utile per 
+allineare una formula matematica in linea alla 
+sua riga superiore. 
 Confronta le due voci dell'elenco nell'esempio seguente.
 
 ```latex
@@ -109,12 +117,12 @@ Confronta le due voci dell'elenco nell'esempio seguente.
 \begin{itemize}
 \item 
 $\begin{aligned}[t]
-a &= b\\
+a &= b \\
 c &= d
 \end{aligned}$
 \item 
 $\begin{aligned}
-a &= b\\
+a &= b \\
 c &= d
 \end{aligned}$
 \end{itemize}
@@ -122,15 +130,13 @@ c &= d
 \end{document}
 ```
 
-## Bold Math
-LaTeX standard prevede due modi per mettere in nero dei
-simboli matematici. 
-Per scrivere in nero un'intera espressione, basta dare
-`\boldmath` prima dell'espressione.
-È disponibile anche il comando `\mathbf` per mettere in
-tondo nero singole lettere o singole parole.
-The command `\mathbf` is also available to set individual
-letters or words in upright bold roman.
+## Nero matematico
+LaTeX standard prevede due modi per scrivere
+simboli matematici in nero. 
+Per scrivere in nero _un'intera espressione_, 
+basta farla precedere da `\boldmath`.
+Per avere in tondo nero solo un simbolo o una parola,
+invece, c'è il comando `\mathbf`.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -147,12 +153,14 @@ $\mathbf{\pi} r^2$ % cattivo uso di \mathbf
 
 \end{document}
 ```
-Se desideri adoperare simboli in nero (come farebbe 
-`\boldmath`) in un'espressione di peso normale, 
-c'è il comando `\bm` dal pacchetto `bm`. 
-Osserva che `\bm` funziona anche con simboli come `=` e
-le lettere greche. (Il comando `\mathbf`, infatti, 
-non ha effetto su `\pi` nell'esempio precedente.)
+
+Se hai bisogno di simboli in nero (come quelli 
+prodotti da `\boldmath`) in un'espressione di 
+peso normale, c'è il comando `\bm` dal pacchetto `bm`. 
+Osserva che `\bm` funziona anche con simboli 
+come `=` e le lettere greche. (Il comando `\mathbf`,
+infatti, non ha effetto su `\pi` nell'esempio 
+precedente.)
 
 ```latex
 \documentclass[a4paper]{article}
@@ -170,9 +178,9 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 \end{document}
 ```
 
-## Mathtools
+## mathtools
 Il pacchetto `mathtools` carica `amsmath` e aggiunge
-diverse funzionalità supplementari, come le varianti 
+diverse funzionalità supplementari come le varianti 
 degli ambienti di `amsmath` per le matrici, che 
 permettono di specificare l'allineamento delle colonne.
 
@@ -197,16 +205,18 @@ permettono di specificare l'allineamento delle colonne.
 ## Matematica Unicode
 
 Come vedremo nella [lezione 14](lesson-14), 
-esistono delle varianti dei motori TeX che 
+esistono varianti dei motori di TeX che 
 adoperano font OpenType. 
-Per impostazione predefinita, questi motori adoperano
-ancora i classici font di TeX per la matematica, ma
-è possibile comporre la matematica con font
-OpenType grazie al pacchetto `unicode-math`.
-I dettagli di questo pacchetto esulano dai limiti
-di questo corso, perciò ti rimandiamo alla
-[documentazione del pacchetto](https://texdoc.org/pkg/unicode-math).
-Tuttavia, te ne diamo qui un piccolo esempio.
+Anche se per impostazione predefinita 
+questi motori compongono la 
+matematica ancora con i ‘classici’
+font di TeX, grazie al pacchetto 
+`unicode-math` è possibile adoperare
+al loro posto font OpenType.
+La descrizione del pacchetto esula dai 
+limiti di questo corso, perciò ti rimandiamo alla
+[sua documentazione](https://texdoc.org/pkg/unicode-math).
+A ogni modo, eccone un breve esempio.
 
 ```latex
 % !TEX lualatex
@@ -217,12 +227,12 @@ Tuttavia, te ne diamo qui un piccolo esempio.
 
 \begin{document}
 
-Uno due tre
+Uno due tre:
 \[
 \log \alpha + \log \beta = \log(\alpha\beta)
 \]
 
-Matematica Unicode alfanumerica
+Matematica Unicode alfanumerica:
 \[
 A + \symfrak{A} + \symbf{A} + \symcal{A} + \symscr{A} + \symbb{A}
 \]
