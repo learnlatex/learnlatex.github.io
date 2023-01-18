@@ -12,7 +12,7 @@ toc-description: "Formattazione del testo per la presentazione visuale."
 <span
   class="summary">Questa lezione mostra come modificare le spaziature predefinite in un documento e come aggiungere istruzioni di formattazione esplicita al codice sorgente di LaTeX.</span>
 
-Abbiamo già visto che, in LaTeX, una riga vuota nel 
+Abbiamo già visto che, con LaTeX, una riga vuota nel 
 sorgente fa incominciare un nuovo capoverso.
 Ti accorgerai della cosa perché, in accordo con le comuni 
 convenzioni tipografiche, il nuovo capoverso è
@@ -63,55 +63,68 @@ di uno spazio normale) con `\,`.
 Il modo matematico pevede anche altri comandi: `\.`, `\:`, `\;`
 e un comando per inserire uno spazio negativo: `\!`.
 
-Molto di rado, per esempio durante la composizione della pagina del titolo, 
-potresti avere bisogno di aggiungere dello spazio esplicito, 
-orizzontale o verticale.
-Per farlo, puoi adoperare `\hspace` e `\vspace`, che aggiungono dello
-spazio orizzontale e verticale rispettivamente.
+Riscontrerai molto raramente la necessità di aggiungere 
+dello spazio esplicito, orizzontale o verticale: tipicamente,
+ciò accade nella composizione della pagina del titolo
+(nell'ambiente `titlepage`).
+Per farlo, puoi adoperare `\hspace` e `\vspace`, 
+che agiscono sullo spazio orizzontale e verticale rispettivamente.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
+
 Un po' di testo \hspace{1cm} ancora testo.
 
 \vspace{10cm}
 
 E ancora un po' di testo.
+
 \end{document}
 ```
 
 ## Formattazione esplicita del testo
 
-Nella [lezione 3](lesson-03) abbiamo scritto che la grande maggioranza
-delle volte è meglio fare affidamento sulla struttura logica del documento.
-Qualche volta, tuttavia, è inevitabile dover mettere qualche parola in nero,
-in corsivo, in carattere monospaziato, eccetera.
-Per farlo, ci sono due tipi di comando: uno si adopera per porzioni di 
-testo brevi o brevissime, che vanno messe nell'argomento del comando; 
-l'altro, che è propriamente una _dichiarazione_, solo all'inizio degli 
+Nella [lezione 3](lesson-03) abbiamo visto che 
+la grande maggioranza delle volte è meglio fare 
+affidamento sulla struttura logica del documento.
+Qualche volta, tuttavia, è inevitabile dover 
+scrivere qualche parola in nero, in corsivo, 
+in carattere monospaziato, eccetera.
+Per farlo, LaTeX prevede due tipi di comando: 
+uno si adopera per porzioni di testo brevi o brevissime, 
+che vanno messe nel suo argomento; 
+l'altro, che è propriamente una _dichiarazione_, 
+va dato solo all'inizio degli 
 ambienti o nelle definizioni di ambienti personali.
 
-Per brevi frammenti di testo, dunque, i comandi disponibili sono 
+Per brevi frammenti di testo, dunque, i comandi 
+disponibili sono 
 `\textbf`, `\textit`, `\textsl`, `\textrm`, `\textsf`, 
 `\texttt` e `\textsc`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
+
 Divertiamoci un po' con i font: \textbf{nero}, \textit{corsivo}, 
 \textsl{inclinato}, \textrm{tondo}, \textsf{senza grazie}, 
 \texttt{a spaziatura fissa} e \textsc{maiuscoletto}.
+
 \end{document}
 ```
 
-Negli ambienti, dunque, useremo comandi che alterano le impostazioni
+Negli ambienti, dunque, adopereremo comandi 
+che alterano le impostazioni
 del carattere corrente come, per esempio,
 `\bfseries` e `\itshape`. 
 Dal momento che il raggio d'azione di queste dichiarazioni non
 prevede un limite predefinito, per evitare che il loro effetto 
-si estenda all'intero documento, dovrai darli in un _gruppo_.
+si estenda all'intero documento, dovrai darle in un _gruppo_.
 LaTeX considera gruppi gli ambienti o le celle di una tabella,
 per esempio, ma la cosa più semplice è creare
 un gruppo esplicitamente con `{...}`.
@@ -123,7 +136,8 @@ un gruppo esplicitamente con `{...}`.
 
 Testo normale.
 
-{\itshape
+{
+\itshape
 Questo testo è in corsivo.
 
 Come puoi osservare, l'effetto della dichiarazione
@@ -133,12 +147,15 @@ non è limitato a un solo capoverso.
 \end{document}
 ```
 
-In modo analogo possiamo impostare il corpo del font: con dichiarazioni
-che funzionano come quelle appena viste, cioè che hanno effetto a partire 
-dal punto in cui vengono scritte nel sorgente.
-I corpi da esse prodotti sono _relativi_ al corpo del font principale
-del documento (quello impostato nella dichiarazione di classe, per capirci).
-Quelle più comuni, dal corpo più grande a quello più piccolo, sono
+In modo analogo possiamo modificare il corpo del font: 
+con dichiarazioni che funzionano come quelle appena 
+viste, cioè che hanno effetto a partire dal punto 
+in cui vengono inserite nel sorgente.
+I corpi da esse prodotti sono _relativi_ al corpo del 
+font principale del documento (quello impostato nella 
+dichiarazione di classe, per capirci).
+Quelle più comuni, elencate dal corpo più grande a quello 
+più piccolo, sono
 `\huge`, `\large`, `\normalsize`, `\small` e `\footnotesize`
 
 Nota bene che è importante terminare un capoverso
@@ -149,14 +166,15 @@ osserva come nell'esempio seguente abbiamo aggiunto un `\par`
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \begin{document}
 
 Testo normale.
 
 \begin{center}
-{\itshape\large Testo più grande e in corsivo.\par}
-Testo normale.
-{\bfseries\small Testo più piccolo e in nero.\par}
+  {\itshape\large Testo più grande e in corsivo.\par}
+  Testo normale.
+  {\bfseries\small Testo più piccolo e in nero.\par}
 \end{center}
 
 \end{document}
@@ -164,12 +182,13 @@ Testo normale.
 
 ## Esercizi
 
-Fa' delle prove con la formattazione a mano: crea un ambiente 
-`titlepage` per una pagina del titolo e prova a metterci diversi 
+Fa' delle prove con la formattazione manuale: crea un ambiente 
+`titlepage` per una pagina del titolo, prova a metterci diversi 
 spazi e a modificare il font.
-Che cosa succede quando combini insieme i cambiamenti del font?
+Che cosa succede quando combini insieme più comandi per
+modificare il font?
 In cosa il risultato è diverso dal modo matematico?
 
 Che cosa succede se modifichi il corpo del font di un capoverso
-lungo (prova con `\tiny` e poi con `\huge`) ma non scrivi
+lungo (prova con `\tiny` e poi con `\huge`) ma _non_ scrivi
 il `\par` finale prima di chiudere il gruppo?
