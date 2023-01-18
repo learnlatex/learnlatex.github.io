@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "it"
 title: "Formattazione: font e spaziatura"
-description: "Questa lezione mostra come modificare le spaziature predefinite in un documento e come aggiungere istruzioni di formattazione esplicita a al codice sorgente di LaTeX."
+description: "Questa lezione mostra come modificare le spaziature predefinite in un documento e come aggiungere istruzioni di formattazione esplicita al codice sorgente di LaTeX."
 toc-anchor-text: "Font e spaziatura"
 toc-description: "Formattazione del testo per la presentazione visuale."
 ---
@@ -30,8 +30,11 @@ Puoi ottenere questo risultato con il pacchetto `parskip`.
 \usepackage[T1]{fontenc}
 \usepackage[parfill]{parskip}
 \usepackage{lipsum} % per il testo fittizio di riempimento
+
 \begin{document}
+
 \lipsum
+
 \end{document}
 ```
 
@@ -39,25 +42,26 @@ Puoi ottenere questo risultato con il pacchetto `parskip`.
 
 Lavorando con LaTeX, non avrai praticamente mai bisogno di andare 
 a capo in modo esplicito: quasi certamente ti basterà incominciare
-un nuovo capoverso con il metodo standart o con le funzionalità
+un nuovo capoverso con il metodo standard o con le funzionalità
 di `parskip`, come hai appena visto.
 
 Le circostanze in cui dovrai andare a capo con `\\` e incominciare
 una nuova riga senza incominciare un nuovo capoverso sono _poche_:
 
-- alla fine di una riga di una tabella
+- alla fine di una riga in una tabella
 - dentro l'ambiente `center`
 - in poesia (dentro l'ambiente `verse`)
 
-Per il resto, cioè praticamente _sempre_, se non ti trovi in una 
-di queste circostanze ‘speciali’, non dovrai _mai_ adoperare `\\`.
+Per il resto, cioè praticamente _sempre_, a meno che tu non ti 
+trovi in una delle circostanze ‘speciali’, appena elencate 
+non dovrai _mai_ adoperare `\\`.
 
-## Aggiungere dello spazio
+## Aggiungere spazio
 
 Possiamo inserire uno spazio sottile (circa la metà dello spessore
-normale) con `\,`. 
-In modo matematico, ci sono anche altri comandi: `\.`, `\:` e `\;`,
-e uno per inserire uno spazio negativo: `\!`.
+di uno spazio normale) con `\,`. 
+Il modo matematico pevede anche altri comandi: `\.`, `\:`, `\;`
+e un comando per inserire uno spazio negativo: `\!`.
 
 Molto di rado, per esempio durante la composizione della pagina del titolo, 
 potresti avere bisogno di aggiungere dello spazio esplicito, 
