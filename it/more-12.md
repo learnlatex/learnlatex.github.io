@@ -9,25 +9,28 @@ toc-anchor-text: "Di più su: Citazioni e riferimenti bibliografici"
 ## Ordinamento alfabetico per lingue diverse dall'inglese
 
 Il programma BibTeX è stato scritto in primo luogo
-per occuparsi di riferimenti bibliografici in inglese.
-Presenta importanti limiti nella gestione dei caratteri
-accentati, ed è ancora più limitato con lettere di
-alfabeti non latini.
-Biber, dal canto suo, è stato scritto da capo
+per occuparsi di riferimenti bibliografici in lingua 
+inglese.
+Per questo motivo, presenta importanti limiti nella 
+gestione dei caratteri accentati, ed è ancora più 
+limitato con quelli di alfabeti non latini.
+Biber, invece, è stato scritto da zero
 per gestire correttamente tutte le lingue, anche quando
-sono mescolate in una stessa bibliografia.
+si trovano mescolate in una stessa bibliografia.
 
-Ciò significa che se stai ordinando la tua bibliografia 
+Ciò significa che
+se stai ordinando la tua bibliografia 
 e hai bisogno di ordinare qualcosa di diverso dall'ordine 
-inglese, dovresti davvero usare `biblatex` e Biber, 
-piuttosto che `natbib` e BibTeX.
+inglese, dovresti adoperare `biblatex` e Biber 
+e non `natbib` e BibTeX.
 
 ## Collegamenti ipertestuali
 
-Se carichi il pacchetto `hyperref` (come descritto 
-[in precedenza](more-09)), trasformerà automaticamente 
-in collegamenti ipertestuali alcuni contenuti della 
-bibliografia. 
+Caricando il pacchetto `hyperref` (come descritto 
+[in una lezione precedente](more-09)), trasformerà 
+alcuni elementi della bibliografia verranno
+trasformati automaticamente in collegamenti
+ipertestuali.
 La cosa è particolarmente utile per URL e DOI.
 
 ## Differenze tra gli stili di BibTeX e buone pratiche
