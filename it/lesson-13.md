@@ -146,36 +146,47 @@ composizione e di produrre un PDF 'selettivo'
 
 ## Generazione dell'indice
 
-Il comando `\tableofcontents` adopera le informazioni dai comandi di 
-sezionamento per popolare l'indice. 
-Ha il proprio file ausiliario, con estensione `.toc`, quindi potrebbe 
-essere necessario eseguire LaTeX due volte per risolvere le informazioni. 
-La tabella viene generata automaticamente dai titoli delle sezioni. 
-Esistono comandi simili per `\listoffigures` e `\listoftables`, 
-che lavorano a partire dalle didascalie dell'ambiente `float` e 
-usano rispettivamente file con estensione `.lof` e `.lot`.
+Il comando `\tableofcontents` compone l'indice
+del documento a partire dalle informazioni contenute 
+nei comandi di sezionamento. 
+Si serve un proprio file ausiliario con estensione `.toc`, 
+quindi potrebbe essere necessario eseguire LaTeX 
+due volte per ottenere il risultato finale. 
+L'indice viene generato automaticamente dai titoli 
+delle sezioni. 
+LaTeX definisce i comandi simili `\listoffigures`,
+per l'elenco delle figure e `\listoftables`, per
+l'elenco delle tabelle.
+Entrambi lavorano a partire dalle didascalie 
+dei float e generano file ausilari con estensione 
+`.lof` e `.lot` rispettivamente.
 
 ## Suddivisione del documento in parti
 
-I comandi `\frontmatter`, `\mainmatter` e `\backmatter` agiscono sulla 
-formattazione. 
-Per esempio, `\frontmatter` cambia la numerazione delle pagine in numeri 
-romani. 
-Il comando `\appendix` cambia la numerazione in `A`, `B`, ecetera. 
-Così, per esempio, il titolo del primo capitolo dopo `\appendix` 
-sarà `Appendice A`.
+I comandi `\frontmatter`, `\mainmatter` e 
+`\backmatter` agiscono sulla formattazione. 
+Per esempio, `\frontmatter` cambia i numeri
+adoperati per numerare le pagine da arabi
+a romani.
+Il comando `\appendix` cambia la numerazione
+delle sezioni da numerica a letterale (`A`, 
+`B`, eccetera). 
+Così, per esempio, il titolo del primo capitolo 
+dopo `\appendix` sarà `Appendice A`.
 
 ## Esercizi
 
-Sperimenta con la struttura di base del documento d'esempio, prova 
-ad aggiungere e rimuovere voci per `\includeonly` e osserva l'effetto.
+Sperimenta con la struttura di base del documento 
+d'esempio, prova ad aggiungere e rimuovere voci 
+per `\includeonly` e osserva l'effetto.
 
-Aggiungi alcuni ambienti galleggianti e genera un elenco di immagini e
-un elenco di tabelle. 
-Se adoperi una distribuzione locale di LaTeX, vedi quante esecuzioni 
-di LaTeX servono? 
-(I sistemi online rieseguono LaTeX ‘dietro le quinte’, quindi le esecuzioni 
-aggiuntive richieste non sono così ovvie.)
+Aggiungi alcuni float e genera un elenco di 
+immagini e un elenco di tabelle. 
+Se adoperi una distribuzione locale di LaTeX, 
+riesci a capire quante esecuzioni di LaTeX servono? 
+(I sistemi on-line rieseguono LaTeX ‘dietro 
+le quinte’, quindi il numero delle esecuzioni 
+aggiuntive richieste non è così così ovvio.)
 
 ----
 
