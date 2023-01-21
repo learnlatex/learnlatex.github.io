@@ -2,29 +2,29 @@
 layout: "lesson"
 lang: "it"
 title: "Di più su: Organizzare documenti lunghi"
-description: "Questa lezione mostra come realizzare un indice analitico e come adoperare il pacchetto imakeidx per rendere il processo automatico."
+description: "Questa lezione mostra come generare l'indice analitico e come adoperare il pacchetto imakeidx per rendere il processo automatico."
 toc-anchor-text: "Di più su: Organizzare documenti lunghi"
 ---
 
-## Realizzare un indice analitico
+## Generare l'indice analitico
 
 A seconda del tipo di documento che stai scrivendo, potrebbe
 servirti un indice analitico. 
 È un po' come comporre una bibliografia, perché anche in questo
-caso LaTeX adopera internamente dei file ausiliari. 
+caso LaTeX si serve internamente di file ausiliari. 
 Fortunatamente, tutto il processo è reso automatico dal pacchetto 
 `imakeidx`. 
-Abbiamo bisogno di tre istruzioni per LaTeX:
+Le istruzioni per LaTeX da conoscere sono tre:
 
-- Il comando `\makeindex`, che abilita la creazione dell'indice
-- Il comando `\index`, che contrassegna le voci dell'indice
-- Il comando `\printindex`, che stampa l'indice
+- il comando `\makeindex`, per abilitare la creazione dell'indice
+- il comando `\index`, per contrassegnare le voci dell'indice
+- il comando `\printindex`, per stampare l'indice
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage{imakeidx}
 
+\usepackage{imakeidx}
 \makeindex
 
 \begin{document}
@@ -44,9 +44,11 @@ E ancora un po' di testo\index{gamma@$\gamma$}.
 \end{document}
 ```
 
-Qui abbiamo mostrato due caratteristiche dell'indicizzazione: 
-la suddivisione di una voce mediante `!` e la stampa di qualcosa 
-di diverso dal ‘testo ordinato alfabeticamente’ di una voce di 
+L'esempio precedente mostra due caratteristiche 
+dell'indicizzazione: la suddivisione di una voce 
+mediante `!` e la stampa di qualcosa di diverso 
+dal ‘testo ordinato alfabeticamente’ di una voce di 
 indice mediante `@`. 
-L'indice analitico permette un alto grado di personalizzazione:
-prova l'esempio e guarda come funziona.
+L'indice analitico permette un alto grado di 
+personalizzazione: prova l'esempio e guarda come 
+funziona.
