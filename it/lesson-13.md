@@ -193,61 +193,61 @@ aggiuntive richieste non è così così ovvio.)
 ### front.tex
 <!-- pre1 {% raw %} -->
 ```latex
-\input{copertina-anteriore}
+\input{frontcover}
 \maketitle
-\input{dedica}
+\input{dedication}
 \input{copyright}
 \tableofcontents
-\input{prefazione}
+\input{pref}
 ```
 
-#### prefazione.tex
+#### pref.tex
 <!-- pre2 {% raw %} -->
 ```latex
-\chapter{Prefazione}
-Testo della prefazione. Vedi \cite{doody}.
+\chapter{Preface}
+The preface text. See \cite{doody}.
 ```
 <!-- {% endraw %} -->
 
-#### capitolo1.tex
+#### chap1.tex
 <!-- pre3 {% raw %} -->
 ```latex
-\chapter{Introduzione}
-Testo del primo capitolo.
+\chapter{Introduction}
+The first chapter text.
 ```
 <!-- {% endraw %} -->
 
-#### capitolo2.tex
+#### chap2.tex
 <!-- pre4 {% raw %} -->
 ```latex
-\chapter{Qualcosa}
-Testo del secondo capitolo.
+\chapter{Something}
+The second chapter text.
 ```
 <!-- {% endraw %} -->
 
-####  appendice.tex
+####  append.tex
 <!-- pre5 {% raw %} -->
 ```latex
-\chapter*{Appendice}
-Testo della prima appendice.
+\chapter*{Appendix}
+The first appendix text.
 ```
 <!-- {% endraw %} -->
 
-#### copertina-anteriore.tex
+#### frontcover.tex
 <!-- pre6 {% raw %} -->
 ```latex
 \begin{center}
-Copertina anteriore
+The front cover
 \end{center}
 ```
 <!-- {% endraw %} -->
 
-#### dedica.tex
+#### dedication.tex
 <!-- pre7 {% raw %} -->
 ```latex
 \begin{center}
 \large
-A \ldots
+For \ldots
 \end{center}
 ```
 <!-- {% endraw %} -->
@@ -256,16 +256,16 @@ A \ldots
 <!-- pre8 {% raw %} -->
 ```latex
 \begin{center}
-Copyright 2023 learnlatex.
+Copyright 2020 learnlatex.
 \end{center}
 ```
 <!-- {% endraw %} -->
 
-#### copertina-posteriore.tex
+#### backcover.tex
 <!-- pre9 {% raw %} -->
 ```latex
 \begin{center}
-Copertina posteriore
+The back cover
 \end{center}
 ```
 <!-- {% endraw %} -->
