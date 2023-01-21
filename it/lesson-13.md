@@ -177,8 +177,8 @@ dopo `\appendix` sarà `Appendice A`.
 ## Esercizi
 
 Sperimenta con la struttura di base del documento 
-d'esempio, prova ad aggiungere e rimuovere voci 
-per `\includeonly` e osserva l'effetto.
+d'esempio, aggiungi e rimuovi voci nell'argomento
+di `\includeonly` e osserva che cosa succede.
 
 Aggiungi alcuni float e genera un elenco di 
 immagini e un elenco di tabelle. 
