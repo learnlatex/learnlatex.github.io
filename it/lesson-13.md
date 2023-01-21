@@ -64,6 +64,7 @@ un aspetto simile al seguente:
 ```latex
 \documentclass{book}
 \usepackage[T1]{fontenc}
+
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
@@ -80,26 +81,29 @@ un aspetto simile al seguente:
   }
 }
 {
-% Do a full document initially to generate
-% all the aux files
+% Componi una volta l'intero documento
+% per generare tutti i file ausiliari
 }
 
 \begin{document}
+
+% === materiale iniziale ===
 \frontmatter
 \include{front}
 
-% =========================
+% === materiale principale ===
 \mainmatter
 \include{chap1}
 \include{chap2}
 \appendix
 \include{append}
 
-% ========================
+% === materiale finale ===
 \backmatter
 \printbibliography
 \newpage
 \input{backcover}
+
 \end{document}
 ```
 <!-- {% endraw %} -->
