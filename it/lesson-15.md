@@ -2,35 +2,45 @@
 layout: "lesson"
 lang: "it"
 title: "Affrontare gli errori"
-description: "Questa lezione mostra alcuni errori comuni nei documenti LaTeX, che cosa significano, e come evitarli."
+description: "Questa lezione mostra alcuni errori comuni nei documenti LaTeX, che cosa significano e come evitarli."
 toc-anchor-text: "Gestione degli errori"
-toc-description: "Affrontare comportamenti inaspettati."
+toc-description: "Affrontare comportamenti di LaTeX inaspettati."
 ---
 
 # Affrontare gli errori
 
 <span
-  class="summary">Questa lezione mostra alcuni errori comuni nei documenti LaTeX, che cosa significano, e come evitarli.</span>
+  class="summary">Questa lezione mostra alcuni errori comuni nei documenti LaTeX, che cosa significano e come evitarli.</span>
 
-A differenza di un comune elaboratore di testi, LaTeX presenta un ciclo 
-modifica-esegui-visualizza più vicino a come si lavora con i compilatori 
-di linguaggi di programmazione e, come nella programmazione, gli utenti 
-possono commettere errori nei loro input e quindi devono gestire 
-i messaggi di errore segnalati dal sistema.
+A differenza di un comune elaboratore di testi, 
+LaTeX presenta un ciclo modifica-esegui-visualizza 
+più vicino al modo di lavorare con i compilatori 
+di linguaggi di programmazione. 
+Come nella programmazione, gli utenti possono 
+commettere errori nei loro input e quindi 
+debbono saper gestire i messaggi di errore 
+segnalati dal sistema.
 
 ## Errori comuni
 
-Questa pagina contiene esempi di alcuni errori comuni.
-Ogni esempio d'errore è corredato da una discussione circa la forma
-del messaggio d'errore.
+Questa pagina contiene alcuni esempi di
+errori comuni, per ciascuno dei quali
+una breve descrizione fornisce le 
+informazioni essenziali
+circa la forma del messaggio d'errore.
 
-Potrebbe essere istruttivo provare gli esempi, ma anche adoperare 
-le funzionalità di modifica per provare a correggere i documenti 
-e verificare di essere in grado di risolvere gli errori.
+Ti raccomandiamo di provare gli 
+esempi e di modificare il codice
+direttamente nel browser 
+per provare a correggere 
+i documenti e verificare di 
+essere in grado di risolvere gli errori.
 
 ### pdflatex non viene trovato
 
-Un primo errore comune in cui gli utenti si imbattono all'inizio è:
+Un primo errore comune in cui gli 
+utenti alle prime armi si imbattono
+è il seguente:
 
 ```
 'pdflatex' is not recognized as an internal or external command,
@@ -47,10 +57,15 @@ bash: pdflatex: command not found
 
 su Linux.
 
-Questo non è un errore di TeX ma del sistema operativo, che lamenta 
-che TeX non è installato o non è stato trovato. 
-Un errore comune, infatti, è installare un _editor_ come TeXworks o 
-TeXShop senza avere installato un sistema TeX come TeX Live o MiKTeX.
+Questo non è un errore di TeX ma del 
+sistema operativo, il quale lamenta 
+che TeX non è installato o non è 
+stato trovato. 
+Un errore comune, infatti, è 
+installare un _editor_ come 
+TeXworks o TeXShop senza avere 
+installato un sistema TeX come 
+TeX Live o MiKTeX.
 
 ### Anatomia di un messaggio d'errore di TeX
 
@@ -62,7 +77,7 @@ TeXShop senza avere installato un sistema TeX come TeX Live o MiKTeX.
 
 \begin{document}
 
-Il mio comando è adoperato qui: \mycommand.
+Il mio comando è adoperato qui: \miocomando.
 
 \end{document}
 ```
