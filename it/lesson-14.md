@@ -149,6 +149,5 @@ ABC → αβγ → {\cjkfont 你好}
 ```
 
 <p 
-  class="hint">Quando si passa da una lingua all'altra, di solito è importante modificare anche aspetti 
-  come gli schemi di sillabazione e altri, e i pacchetti <code>babel</code> e <code>polyglossia</code> 
+  class="hint">Quando si passa da una lingua all'altra, di solito è importante modificare anche gli schemi di sillabazione e altri aspetti: i pacchetti <code>babel</code> e <code>polyglossia</code> 
   forniscono robuste funzionalità per farlo.</p>
