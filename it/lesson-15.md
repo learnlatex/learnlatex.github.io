@@ -88,7 +88,7 @@ di registro.
 ! Undefined control sequence.
 \mycommand ->\textbold 
                        {hmmm}
-l.8 My command is used here \mycommand
+l.8 Il mio comando è adoperato qui: \mycommand
                                       .
 ? 
 ```
