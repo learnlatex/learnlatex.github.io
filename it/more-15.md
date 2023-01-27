@@ -2,35 +2,36 @@
 layout: "lesson"
 lang: "it"
 title: "Di più su: Affrontare gli errori"
-description: "Questa lezione mostra alcuni degli errori più comuni in LaTeX e spiega gli errori concatenati e gli errori silenziosi."
-toc-anchor-text: "Di più su: Affrontare gli errori"
+description: "Questa lezione mostra alcuni degli errori più comuni di LaTeX, spiega gli errori concatenati e gli errori silenziosi."
+toc-anchor-text: "Di più su: Affrontare gli errori."
 ---
 
 ## Errori riportati alla fine degli ambienti
 
-Alcuni ambienti (in particolare, gli allineamenti 
-di `amsmath` e le tabelle di `tabularx`)
-esaminano l'intero corpo dell'ambiente prima di
-elaborarne il contenuto. 
-Ciò significa che ogni errore presente _all'interno_
-dell'ambiente verrà segnalato a livello dell'ultima
-sua riga.
-Tuttavia, come abbiamo visto nella lezione principale, 
-la visualizzazione del contesto dell'errore da parte 
-di TeX dovrebbe ancora permettere di individuarne 
-la posizione.
+Con alcuni ambienti (in particolare, con 
+`tabularx` e con quelli di `amsmath` per 
+gli allineamenti delle formule) TeX
+esamina l'intero corpo dell'ambiente 
+prima di elaborarne il contenuto. 
+Ciò significa che ogni errore presente 
+_dentro_ l'ambiente verrà segnalato a 
+livello dell'ultima sua riga.
+Tuttavia, come abbiamo visto nella 
+lezione principale, il messaggio d'errore
+visualizza anche un po' di contesto,
+ciò che dovrebbe permettere di individuare
+la posizione corretta dell'errore.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-
 \usepackage{amsmath}
 
 \begin{document}
 
 \begin{align}
-\alpha &= \frac{1}{2}\\
-\beta  &= \frak{2}{3}\\
+\alpha &= \frac{1}{2} \\
+\beta  &= \frak{2}{3} \\
 \gamma &= \frac{3}{4} 
 \end{align}
 
@@ -44,8 +45,10 @@ l.12 \end{align}
 ```
 {: .noedit :}
 
-nonostante che l'errore vero e proprio (`\frak` anziché `\frac`)
-si trovi a riga 10, come mostrato dalle righe di contesto:
+nonostante che l'errore vero e proprio 
+(`\frak` anziché `\frac`)
+si trovi a riga 10, come mostrato dalle 
+righe di contesto:
 
 
 ```
