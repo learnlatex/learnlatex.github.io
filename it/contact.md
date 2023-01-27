@@ -20,8 +20,9 @@ diverse dall'italiano), visita la pagina
 ## Il team del sito
 
 Il [codice sorgente di questo sito](https://github.com/learnlatex/learnlatex.github.io/) è su [GitHub](https://github.com/learnlatex/). 
-Per ulteriori dettagli, ti consigliamo di consultare 
-[CONTRIBUIRE](../CONTRIBUTING) e [LICENZE](../LICENSE).
+Per ulteriori dettagli, ti consigliamo di consultare la pagina su
+[come contribuire a LearnLaTeX.org](../CONTRIBUTING) e
+quella sulle [licenze](../LICENSE).
 
 Puoi anche [segnalare un problema su GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) o [scriverci un'email](mailto:texfaq@texfaq.org) con i tuoi suggerimenti.
 
