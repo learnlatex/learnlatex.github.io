@@ -68,7 +68,7 @@ Le espressioni semplici si scrivono nel sorgente
 senza bisogno di marcature particolari. 
 Osserva come nel documento finale i vari elementi 
 delle formule sono ben distanziati tra loro e le 
-lettere vengono rese automaticamente in corsivo.
+lettere vengono messe automaticamente in corsivo.
 
 Nella matematica in linea, la dimensione 
 verticale delle formule è limitata in modo da 
@@ -170,13 +170,13 @@ nell'esempio seguente:
 
 Un capoverso che riguarda una formula voluminosa:
 \[
-\int_{-\infty}^{+\infty} e^{-x^2} \, dx
+\int_{-\infty}^{+\infty} e^{-x^2} \, dx = \sqrt{\pi}
 \]
 
 \end{document}
 ```
 
-Osserva in che modo esponenti e deponenti 
+Osserva in che modo esponenti e pedici 
 vengono adoperati per impostare i limiti dell'integrazione.
 
 Qui abbiamo aggiunto dello spazio a mano: la scrittura `\,`
