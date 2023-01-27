@@ -28,6 +28,7 @@ i cookie qui di seguito:
 ## Return predefinito
 Il parametro del modulo `return` che TeXLive.net 
 dovrebbe adoperare in assenza di un'impostazione 
+esplicita
 tramite i commenti `% !TeX` nell'esempio.
 
 {% include settings-return.html %}
@@ -36,7 +37,7 @@ tramite i commenti `% !TeX` nell'esempio.
 ## Motore predefinito
 Il parametro del modulo `engine` che TeXLive.net 
 o Overleaf dovrebbero adoperare in assenza 
-di un'impostazione tramite i commenti `% !TeX` 
+di un'impostazione esplicita tramite i commenti `% !TeX` 
 nell'esempio.
 (Le opzioni `-dev` e `context` _non_ dovrebbero 
 essere scelte su Overleaf.)
