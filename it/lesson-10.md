@@ -20,9 +20,7 @@ marcatura logica nel cosiddetto ‘modo matematico’.
 
 ## Modo matematico
 
-Nel modo matematico, LaTeX ignora gli spazi  
-e applica (quasi sempre) la spaziatura
-corretta tra i caratteri.
+Nel modo matematico, LaTeX ignora gli spazi e applica (quasi sempre) la spaziatura corretta tra i caratteri.
 
 Esistono due forme del modo matematico:
 
