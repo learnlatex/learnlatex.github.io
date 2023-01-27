@@ -6,7 +6,7 @@ permalink: /it/settings
 ---
 # Impostazioni del sito (preferenze dell'utente)
 
-## Accettare o eliminare i cookie
+## Accettare o non accettare i cookie
 
 I cookie sono piccole stringhe di dati che vengono 
 memorizzati dal tuo browser. 
@@ -25,7 +25,7 @@ i cookie qui di seguito:
    reset= "Reset: Delete All Cookies"
 %}
 
-## Default Return
+## Return predefinito
 Il parametro del modulo `return` che TeXLive.net 
 dovrebbe adoperare in assenza di un'impostazione 
 tramite i commenti `% !TeX` nell'esempio.
