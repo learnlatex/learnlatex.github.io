@@ -10,12 +10,14 @@ permalink: /it/settings
 
 I cookie sono piccole stringhe di dati che vengono 
 memorizzati dal tuo browser. 
-Per impostazione predefinita nessun cookie viene 
-utilizzato da questo sito, ma le eventuali opzioni 
-impostate in questa pagina vengono memorizzate nei cookie.
+Per impostazione predefinita, questo sito non
+adopera alcun cookie, ma le eventuali opzioni 
+impostate in questa pagina vengono memorizzate 
+nei cookie.
 
-Accetta i cookie qui per abilitare l'uso dei cookie su 
-questo sito e per abilitare le opzioni del menù sottostante.
+Per abilitare i cookie su questo sito e le 
+opzioni del menù sottostante, devi accettare
+i cookie qui di seguito:
 
 
 {% include settings-accept.html 
@@ -25,18 +27,19 @@ questo sito e per abilitare le opzioni del menù sottostante.
 
 ## Default Return
 Il parametro del modulo `return` che TeXLive.net 
-dovrebbe usare in assenza di un'impostazione 
+dovrebbe adoperare in assenza di un'impostazione 
 tramite i commenti `% !TeX` nell'esempio.
 
 {% include settings-return.html %}
 
 
 ## Motore predefinito
-Il parametro del modulo `engine` che TeXLive.net o Overleaf 
-dovrebbero adoperare in assenza di un'impostazione 
-tramite i commenti `% !TeX` nell'esempio.
-(Le opzioni `-dev` e `context` non dovrebbero essere 
-adoperate su Overleaf.)
+Il parametro del modulo `engine` che TeXLive.net 
+o Overleaf dovrebbero adoperare in assenza 
+di un'impostazione tramite i commenti `% !TeX` 
+nell'esempio.
+(Le opzioni `-dev` e `context` _non_ dovrebbero 
+essere scelte su Overleaf.)
 
 {% include settings-engine.html %}
 
