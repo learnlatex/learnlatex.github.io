@@ -123,9 +123,10 @@ Testo.
 ```
 
 e aggiungere una riga dopo l'altra fino a quando 
-insorge il problema. 
-Vivecersa, puoi provare a ‘ridurre’ il sorgente, 
-ma può essere una cosa più lunga della precedente.
+si presente il problema. 
+Vivecersa, puoi provare a ‘ridurre’ il sorgente
+fino a isolare la porzione significativa, 
+ma potrebbe essere una cosa più lunga della precedente.
 
 <p 
   class="hint">Se hai bisogno di riempire le pagine per mostrare interruzioni di pagina e altri effetti, 
@@ -158,6 +159,7 @@ una copia del file di registro.
 
 ### E adesso?
 
-Infine, ti mostriamo una [galleria di piccoli esempi](./extra-01) 
-che comprende una serie di aree tematiche non trattate 
-in questo corso introduttivo e alcuni pacchetti di LaTeX adatti a esse.
+Siamo arrivati alla fine del corso. 
+Ti mostriamo una [galleria di piccoli esempi](./extra-01) 
+che copre una serie di aree tematiche non trattate 
+in queste lezioni introduttive e alcuni pacchetti di LaTeX adatti a esse.
