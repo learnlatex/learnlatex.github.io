@@ -194,8 +194,8 @@ necessità,
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\newcommand{\diff}{\mathop{}\!d}            % Per il corsivo
-% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % Per il tondo
+\newcommand{\diff}{\mathop{}\!d}            % per il corsivo
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % per il tondo
 
 \begin{document}
 
