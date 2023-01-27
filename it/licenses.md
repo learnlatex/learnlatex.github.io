@@ -24,7 +24,7 @@ I codici d'esempio sono disponibili con licenza
 [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
 (No Rights Reserved). 
 Questo è un testo legale che è (essenzialmente) lo stesso di Public Domain, 
-almeno nei paesi in cui esiste tale concetto.
+almeno nei Paesi in cui tale concetto esiste.
 Il punto fondamentale è che _puoi adoperare gli esempi senza problemi_. 
 _Non_ devi citarli, _non_ devi condividerli quando li modifichi: 
-puoi usarli semplicemente.
+puoi, in una parola, usarli a tuo piacimento.
