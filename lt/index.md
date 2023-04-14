@@ -1,7 +1,7 @@
 ---
 layout: "start"
 lang: "lt"
-title: "Išmok LaTeX internetu: nemokamos naujokams draugiškos pamokos"
+title: "Išmok LaTeX internetu: nemokamos, naujokams draugiškos pamokos"
 description: "Išmok LaTeX per 16 naujokams įkandamų pamokų. Ženk pirmuosius žingsnius su LaTeX, dokumentų ruošimo sistema, sukurta rengti aukštos kokybės leidinius."
 permalink: /lt/
 ---
