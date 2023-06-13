@@ -99,10 +99,18 @@ et le [LaTeX Companion](https://www.pearson.ch/Informatik/Addison-Wesley/EAN/978
 
 ## Foire aux questions
 
-La communauté LaTeX francophone maintient une [FAQ LaTeX collaborative](https://www.latex-fr.net/)
-en français. Vous pourrez y trouver les réponses à vos questions, mais aussi y
-contribuer pour que l'ensemble des utilisateurs bénéficient de votre expérience
-au fil de vos expérimentations avec LaTeX.
+La communauté LaTeX francophone maintient deux FAQ LaTeX collaboratives en
+français :
+
+- [une première](https://faq.gutenberg-asso.fr/), historique et toujours
+  maintenue par l'[association GUTenberg](https://www.gutenberg-asso.fr/),
+  groupe francophone des Utilisateurs de TeX, à nouveau très actif depuis 2020 ;
+- [une seconde](https://www.latex-fr.net/) fork de la précédente (datant de
+  début 2023).
+
+Vous pourrez y trouver les réponses à vos questions, mais aussi y contribuer
+pour que l'ensemble des utilisateurs bénéficient de votre expérience au fil de
+vos expérimentations avec LaTeX.
 
 
 ## Demander de l'aide aux autres utilisateurs
