@@ -64,6 +64,8 @@ const norunregex = /^\s*([/%#\*]+ *!TEX.*[^a-zA-Z]none *|[^% \t\\][^\\]*)(\n|$)/
 const commentregex = / %.*/;
 const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|[ou]?p)?tex) *\n/i;
 const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log|make4ht|latexml|lwarp) *\n/i;
+const bibregex = /% *!TEX.*[^a-zA-Z](p?bibtex8?|biber) *\n/i;
+const makeglossariesregex = /% *!TEX.*[^a-zA-Z](makeglossaries(-light)?) *\n/i;
 const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
 
@@ -372,6 +374,14 @@ function latexcgi(nd) {
     } else {
 	rtnv=rtn[1].toLowerCase();
 	addinput(fm,"return",rtnv);
+    }
+    var bibcmd = t.match(bibregex);
+    if(bibcmd != null) {
+	addinput(fm,"bibcmd",bibcmd[1].toLowerCase());
+    }
+    var makegcmd = t.match(makeglossariesregex);
+    if(makegcmd != null) {
+	addinput(fm,"makeglossaries",makegcmd[1].toLowerCase());
     }
     var mki = makeindexregex.exec(t);
     while (mki != null) {
