@@ -36,7 +36,7 @@ Aquesta [pàgina web](https://texdoc.org/) funciona de manera similar a la utili
 
 Hi ha diversos llibres disponibles que et poden ajudar per aprendre LaTeX. Com a principiant, pots aprendre molt a partir d'una guia estructurada per a principiants, doncs pots trobar-hi molts més detalls dels que cobrim en aquest tutorial. També podràs accedir a un manual de referència amb molt més detall i recomanacions.
 
-L'equip de LaTeX té una [llista de llibres](https://www.latex-project.org/help/books/) escrits pels seus membres. El més destacat és la [guia oficial de Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838) i el detallat [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+L'equip de LaTeX té una [llista de llibres](https://www.latex-project.org/help/books/) escrits pels seus membres. El més destacat és la [guia oficial de Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838) i el detallat [LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
 
 Altres llibres que et poden ajudar a aprendre LaTeX són
 

@@ -60,7 +60,7 @@ knygų](https://www.latex-project.org/help/books/), didžiumą kurių parašė
 komandos nariai.  Žymiausios iš jų yra [oficialus LaTeX
 vadovas](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838),
 parašytas LaTeX formato pradininko Lamport'o ir gal kiek jau pasenęs, ir
-visapusiška knyga [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+visapusiška knyga [LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
 
 Kitos knygos, skirtos mokytis LaTeX, yra
 

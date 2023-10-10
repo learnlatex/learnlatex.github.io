@@ -58,7 +58,7 @@ O time LaTeX tem uma [lista de livros](https://www.latex-project.org/help/books)
 escrita em sua maioria pelos membros.  Os mais notáveis são o
 [guia oficial de Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 e o abrangente
-[LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
 
 Outros livros focados no aprendizado de LaTeX incluem:
 
