@@ -74,7 +74,7 @@ scritti per lo più dai suoi membri.
 I più notevoli sono 
 [la guida ufficiale di Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 e l'esauriente
-[The LaTeX Companion](https://tex.stackexchange.com/questions/612573/the-latex-companion-3rd-edition), arrivato alla terza edizione.
+[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489), arrivato alla terza edizione.
 
 Altri libri mirati all'apprendimento di LaTeX sono i seguenti.
 

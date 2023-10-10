@@ -56,7 +56,7 @@ Büchern](https://www.latex-project.org/help/books/), die hauptsächlich von
 Teammitgliedern geschrieben wurden. Erwähnt werden sollte [Lamports offizielle
 Anleitung](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 und der umfassende
-[LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
 
 Andere Bücher zum Lernen von LaTeX wären
 

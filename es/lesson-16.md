@@ -58,7 +58,7 @@ El equipo de LaTeX dispone de [una lista de libros](https://www.latex-project.or
 escritos fundamentalmente por los miembros del equipo. Los más destacados son [Lamport's official
 guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 y el detallado
-[LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
 
 Otros libros dedicados al aprendizaje de LaTeX:
 
