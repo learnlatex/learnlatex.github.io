@@ -89,13 +89,18 @@ notamment des ouvrages plus avancés pour vous aider à progresser.
 Lorsque vous ferez une utilisation avancée de LaTeX, il pourra vous être utile
 de vous tourner vers des documentations en anglais.
 
-
 L'équipe LaTeX propose [une liste de livres](https://www.latex-project.org/help/books/)
-en grande partie écrits par ses membres. Les plus remarquables sont
-[le guide officiel par Leslie Lamport](https://www.pearson.com/us/higher-education/program/Lamport-La-Te-X-A-Document-Preparation-System-2nd-Edition/PGM159713.html)
-et le [LaTeX Companion](https://www.pearson.ch/Informatik/Addison-Wesley/EAN/9780201362992/LaTeX-Companion-The),
-également [disponible en français](https://www.leslibraires.fr/livre/915590-latex-companion-frank-mittelbach-michel-goossens-pearson).
+en grande partie écrits par ses membres. Les plus remarquables sont :
 
+- [le guide officiel par Leslie Lamport](https://www.pearson.com/us/higher-education/program/Lamport-La-Te-X-A-Document-Preparation-System-2nd-Edition/PGM159713.html)
+- le _LaTeX Companion_ dont :
+  - [la 2<sup>e</sup>
+  édition](https://www.pearson.ch/Informatik/Addison-Wesley/EAN/9780201362992/LaTeX-Companion-The)
+  est également [disponible en
+  français](https://www.leslibraires.fr/livre/915590-latex-companion-frank-mittelbach-michel-goossens-pearson) ;
+  - [la 3<sup>e</sup>
+  édition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489),
+  sortie en mai 2023, n'est (pour l'instant ?) pas traduite en français.
 
 ## Foire aux questions
 
