@@ -25,7 +25,7 @@ permalink: /fr/
     <h3 class="text-columns__heading">Comment ça marche</h3>
       <p>Nous avons pris les concepts les plus importants dont vous aurez besoin,
          et nous en avons fait <em>16 courtes leçons</em>, qui ne vous demanderont
-         pas beaucoup de temps pour le suivre. Dans chaque leçon, nous proposons
+         pas beaucoup de temps à suivre. Dans chaque leçon, nous proposons
          beaucoup d'exemples de ce que vous pourriez avoir à écrire, et vous pouvez
          modifier et tester ces exemples directement en ligne.
          <a href="./help#examples">En savoir plus sur les exemples &hellip;</a></p>
