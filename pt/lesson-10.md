@@ -76,18 +76,18 @@ De outro lado, cuidado com construtos matemáticos que aparecem em texto simples
 copiados de outras fontes, como valores monetários usando `$` ou nomes de
 arquivo usando `_` (que podem ser escritos com `\$` e `\_`, respectivamente).
 
-Podemos facilmente adicionar superscritos e subscritos; eles são indicados
+Podemos facilmente adicionar sobrescritos e subscritos; eles são indicados
 usando `^` e `_`, respectivamente:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Superscritos $a^{b}$ e subscritos $a_{b}$.
+Sobrescritos $a^{b}$ e subscritos $a_{b}$.
 \end{document}
 ```
 
-(você pode encontrar exemplos onde super- e subscritos simples são escritos sem
+(você pode encontrar exemplos onde sobre- e subscritos simples são escritos sem
 as chaves, mas esta não é a sintaxe oficial e pode não funcionar todas as vezes;
 sempre use chaves.)
 
@@ -136,7 +136,7 @@ Um parágrafo sobre uma equação maior
 \end{document}
 ```
 
-Perceba aqui como a notação de sub-/superscrito é usada para definir os limites
+Perceba aqui como a notação de sub-/sobrescrito é usada para definir os limites
 da integração.
 
 Nós adicionamos um comando de espaçamento manual aqui: `\,` faz um espaço fino
