@@ -39,7 +39,7 @@ que faria com `texdoc -l` e escolher dentre os resultados.
 
 ## CTAN
 
-[CTAN](https://www.ctan.org) é a rede abrangente de arquivos TeX
+[CTAN](https://www.ctan.org) é a rede do repositório abrangente TeX
 (_Comprehensive TeX Archive Network_).  A maioria dos pacotes LaTeX são
 publicados lá.  Você pode buscar no site por um pacote para acessar sua
 documentação.  Geralmente os pacotes são salvos em `ctan.org/pkg/<nome-pct>`
