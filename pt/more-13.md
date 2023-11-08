@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Estruturando documentos longos"
-description: "Esta lição mostra como fazer um índice remissivo, e como usar o pacote imakeidx para automatizar o procsso."
+description: "Esta lição mostra como fazer um índice remissivo e como usar o pacote imakeidx para automatizar o processo."
 toc-anchor-text: "Veja mais sobre: Estruturando o código"
 ---
 
@@ -37,7 +37,7 @@ Ainda mais texto\index{gamma@$\gamma$}.
 \end{document}
 ```
 
-Mostramos duas funcionalidades de índices aqui: a subdivisão usando `!`, e
+Mostramos duas funcionalidades de índices aqui: a subdivisão usando `!` e
 imprimir algo diferente do texto usado para organizar em ordem alfabética usando
 `@`.  Há muitas formas de personalizar um índice;  experimente o exemplo e veja
 como ele funciona.

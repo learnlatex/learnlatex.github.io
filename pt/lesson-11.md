@@ -19,8 +19,8 @@ LaTeX.  Isso aparece como um parágrafo que vai começar com uma indentação.
 
 ## Espaçamento entre parágrafos
 
-Um estilo comum é não ter indentação para parágrafos, mas ter uma
-'linha em branco' entre eles.  Podemos ter isso com o pacote `parskip`:
+Um estilo comum é não ter indentação para parágrafos, mas ter uma 'linha em
+branco' entre eles.  Podemos obter esse resultado com o pacote `parskip`:
 
 ```latex
 \documentclass{article}
@@ -34,7 +34,7 @@ Um estilo comum é não ter indentação para parágrafos, mas ter uma
 
 ## Forçando uma nova linha
 
-Na maioria das vezes você não deve forçar uma nova linha no LaTeX:  você quase
+Na maioria das vezes, você não deve forçar uma nova linha no LaTeX:  você quase
 certamente quer um novo parágrafo ou usar o `parskip`, como já vimos, para fazer
 uma linha em branco entre parágrafos.
 
@@ -51,7 +51,7 @@ Quase sempre, se você não está nesses locais especiais, você _não deve_ usa
 ## Adicionando espaçamento explícito
 
 Podemos inserir um espaço fino (aproximadamente metade de um espaço normal)
-usando `\,`.  No modo matemático, também há outros comandos: `\.`, `\:`, e `\;`,
+usando `\,`.  No modo matemático, também há outros comandos: `\.`, `\:` e `\;`,
 e um para um espaço negativo: `\!`.
 
 Muito raramente, por exemplo ao criar uma folha de rosto, você pode precisar
@@ -72,7 +72,7 @@ Ainda mais texto.
 
 ## Formatação explícita do texto
 
-Nós escrevemos [na lição 3](lesson-03) que na maioria das vezes a
+Nós escrevemos na [lição 3](lesson-03) que, na maioria das vezes, a
 estrutura lógica é preferível.  Mas às vezes você quer fazer texto negrito ou
 itálico ou monoespaçado, etc.  Há dois tipos de comando para isso:  para trechos
 curtos de texto, e para material potencialmente longo.
@@ -91,7 +91,7 @@ Vamos nos divertir com fontes: \textbf{negrito}, \textit{itálico}, \textrm{roma
 
 Para texto corrido, usamos comandos que alteram a configuração da fonte;  os
 comandos aqui são, por exemplo, `\bfseries` e `\itshape`.  Porque esses não
-'param', precisamos colocá-los em um _grupo_, se queremos previnir que eles
+'param', precisamos colocá-los em um _grupo_, se queremos evitar que eles
 tenham efeito em todo o documento.  Ambientes no LaTeX formam grupos, assim como
 células de tabelas, ou podemos usar `{...}` para criar um grupo explícito:
 

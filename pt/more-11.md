@@ -9,8 +9,8 @@ toc-anchor-text: "Veja mais sobre: Fontes & espaçamento"
 ## Suprimindo a indentação de um parágrafo
 
 Se você quer omitir a indentação de um único parágrafo, você pode usar
-`\noindent`.  Esse comando deve ser usado _raramente_;  na maioria das vezs você
-deve deixar o LaTeX cuidar disso automaticamente.
+`\noindent`.  Esse comando deve ser usado _raramente_;  na maioria das vezes
+você deve deixar o LaTeX cuidar disso automaticamente.
 
 ```latex
 \documentclass{article}

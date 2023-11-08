@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "pt"
-title: "Mostruário LaTeX - Exemplos para estudo adicional"
+title: "Galeria LaTeX - Exemplos para estudo adicional"
 description: "Esta lição mostra exemplos diversos de outros pacotes populares que não foram apresentados nas lições principais."
-toc-anchor-text: "Mostruário LaTeX"
+toc-anchor-text: "Galeria LaTeX"
 toc-description: "Exemplos para estudo adicional."
 ---
 
-# Mostruário
+# Galeria
 
 <span
   class="summary">Esta lição mostra exemplos diversos de outros pacotes
@@ -18,7 +18,7 @@ pacotes fundamentais.  O LaTeX conta com uma vasta biblioteca de pacotes de
 extensão e é usado em muitas áreas.  Aqui daremos alguns exemplos, sem qualquer
 explicação mas com links para a documentação dos respectivos pacotes no
 [texdoc.org](https://texdoc.org).
-Os exemplos foram retirados da documentação dos pacotes exceto onde dito o
+Os exemplos foram retirados da documentação dos pacotes exceto quando dito o
 contrário.
 
 <p
@@ -46,34 +46,26 @@ Pacote: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
-
 ## Poesia
 
 Classe: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
-
 ## Desenho
 <!-- not 2017 -->
 Pacote: [`tikz`](https://texdoc.org/pkg/tikz)
 
-
 {% include extra-01-example-tikz.md %}
-
 
 ## Plotagem de funções
 
 Pacote: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
-
 {% include extra-01-example-pgfplots.md %}
-
 
 ## Música
 
 Pacote: [`musixtex`](https://texdoc.org/pkg/musixtex)
-
-
 
 {% include extra-01-example-musixtex.md %}

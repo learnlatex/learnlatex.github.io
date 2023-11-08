@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Incluindo gráficos e posicionando-os"
-description: "Esta lição mostra como você pode incluir externos no seu documento, como mudar a sua aparência, e como fazê-los flutuar para a posição apropriada no PDF."
+description: "Esta lição mostra como você pode incluir gráficos externos no seu documento, como mudar a sua aparência e como fazê-los flutuar para a posição apropriada no PDF."
 toc-anchor-text: "Usando gráficos"
 toc-description: "Aparência, espaçamento e posicionamento."
 ---
@@ -10,11 +10,11 @@ toc-description: "Aparência, espaçamento e posicionamento."
 # Incluindo gráficos e posicionando-os
 
 <span
-  class="summary">Esta lição mostra como você pode incluir externos no seu
-  documento, como mudar a sua aparência, e como fazê-los flutuar para a posição
+  class="summary">Esta lição mostra como você pode incluir gráficos externos no seu
+  documento, como mudar a sua aparência e como fazê-los flutuar para a posição
   apropriada no PDF.</span>
 
-Para trazer gráficos de fora do LaTeX, use o pacote `graphicx`, que adiciona o
+Para incorporar gráficos de fora do LaTeX, use o pacote `graphicx`, que adiciona o
 comando `\includegraphics` ao LaTeX:
 
 ```latex
@@ -31,7 +31,7 @@ Essa imagem
 \end{document}
 ```
 
-Você pode incluir arquivos EPS, PNG, JPG, e PDF.
+Você pode incluir arquivos EPS, PNG, JPG e PDF.
 Se você tem mais de uma versão de uma imagem (com diferentes extensões) então
 você pode escrever, por exemplo, `example-image.png`. (O pacote `graphicx` vai
 tentar adivinhar a extensão se você não der uma.)
@@ -43,7 +43,7 @@ vamos falar mais sobre espaçamento e posicionamento.
 ## Alterando a aparência de imagens
 
 O comando `\includegraphics` tem muitas opções para controlar o tamanho e forma
-das imagens incluídas e para aparar material.  ALgumas dessa opções são bastante
+das imagens incluídas e para aparar material.  Algumas dessa opções são bastante
 utilizadas, então vale a pena conhecê-las.
 
 A coisa mais óbvia a fazer é definir a largura (`width`) ou a altura (`height`)
@@ -91,9 +91,9 @@ girá-las usando `angle`.  Outra coisa que você pode querer fazer é cortar (co
 ## Fazendo imagens flutuar
 
 Tradicionalmente em tipografia, particularmente com documentos técnicos, imagens
-podem mover para outros locais no documento.  Isso chama-se um _float_.  Imagens
-são normalmente incluídas como _floats_ (iniciado aqui pelo ambiente `figure`)
-para que elas não deixem grandes espaços em branco na página.
+podem ser movidas para outros locais no documento.  Isso chama-se um _float_.
+Imagens são normalmente incluídas como _floats_ (iniciado aqui pelo ambiente
+`figure`) para que elas não deixem grandes espaços em branco na página.
 
 ```latex
 \documentclass{article}
@@ -115,10 +115,10 @@ Local de teste.
 \end{document}
 ```
 
-Aqui o LaTeX moveu a imagem e a legenda para longe do texto `Local de teste`
-para o topo da segunda página porque não há espaço para ela no final da primeira
+Aqui o LaTeX colocou a imagem e a legenda no topo da segunda página, distante
+do texto `Local de teste`, porque não há espaço para elas no final da primeira
 página.  O `ht` influencia onde o LaTeX pode colocar o _float_;  essas duas
-letras significam que ele pode ir onde está no código fonte (depois de
+letras significam que ele pode aparecer onde está no código fonte (depois de
 `Local de teste`) ou no topo de uma página.  Você pode usar quatro
 especificadores diferentes:
 

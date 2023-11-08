@@ -9,7 +9,7 @@ toc-anchor-text: "Veja mais sobre: Trabalhando com LaTeX"
 Para a maioria dos nossos exemplos, não usamos um programa chamado `latex`, ao
 invés disso, um chamado `pdflatex`.  Este é um de uma família de programas
 relacionados, todos 'descendentes' do `latex`.  Nós escolhemos o `pdflatex`
-porque ele é o sistema mais amplamente utilizado, e produz arquivos PDF
+porque ele é o sistema mais amplamente utilizado e produz arquivos PDF
 diretamente.
 
 ## Formatos e interpretadores
@@ -32,7 +32,7 @@ Nós vamos abordar o [XeTeX e LuaTeX mais tarde](lesson-14):  o mais
 importante que você precisa saber agora é que eles são capazes de carregar
 fontes do computador, enquanto que o pdfTeX não pode.
 
-Se você está no Japão, ou escrevendo textos em Japonês, você vai se deparar com
+Se você está no Japão, ou escrevendo textos em japonês, você vai se deparar com
 o pTeX e upTeX.  Esses são interpretadores especializados para tipografia
 vertical.  LuaTeX também pode fazer isso, mas no momento o upTeX, em particular,
-ainda é o sistema mais popular para Japonês.
+ainda é o sistema mais popular para japonês.

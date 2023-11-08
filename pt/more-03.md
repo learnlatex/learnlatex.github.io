@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Estrutura básica de um documento LaTeX"
-description: "Esta lição dá mais detalhes sobre como executar o LaTeX, e sobre os caracteres especiais utilizados e como inseri-los no PDF."
+description: "Esta lição dá mais detalhes sobre como executar o LaTeX, sobre os caracteres especiais utilizados e como inseri-los no PDF."
 toc-anchor-text: "Veja mais sobre: Estrutura do documento"
 ---
 
@@ -17,7 +17,7 @@ nos comandos.
 Você também pode executar o LaTeX sem o seu editor;  isso exige usar o Prompt de
 Comando/Terminal, então não se preocupe se você não for familiar com essas
 ferramentas.  Se quiser tentar, você pode navegar para o diretório que contém o
-seu arquivo `.tex`, e executar:
+seu arquivo `.tex` e executar:
 
 `pdflatex first`
 

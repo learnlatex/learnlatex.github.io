@@ -82,15 +82,15 @@ de linhas [adiante](lesson-11).  Também veja como a classe `letter` cria um
 novo ambiente para cada carta, e tem comandos especializados.
 
 As classes padrão `article`, `report` e `book` têm opções `10pt`, `11pt` e
-`12pt` para mudar o tamanho da fonte, e `twocolumn` para fazer um documento com
+`12pt` para mudar o tamanho da fonte e `twocolumn` para fazer um documento com
 duas colunas.
 
 ## Classes ricas em funções
 
 As classes padrão são muito estáveis, mas isso significa que também são bem
-conservativas quanto à aparência e à gama de comandos disponíveis.  Ao longo do
+conservadoras quanto à aparência e à gama de comandos disponíveis.  Ao longo do
 tempo, algumas classes poderosas foram escritas, que lhe permitem alterar o
-design tem ter que fazer coisas manualmente (que nós abordaremos
+design sem ter que fazer coisas manualmente (que nós abordaremos
 [adiante](lesson-11)).
 
 A _American Mathematical Society_ fornece variantes das classes padrão (`amsart`
@@ -98,9 +98,9 @@ e `amsbook`) com um design mais tradicional, mais próximo do que é usado em
 artigos científicos de matemática.
 
 As duas maiores e mais populares classes 'estendidas' são a coleção KOMA-Script
-e a classe memoir.  KOMA-Script oferece um conjunto de classes que são
-'paralelos' às classes padrão:  `scrartcl`, `scrreprt`, `scrbook`, e `scrlttr2`,
-enquanto há apenas uma classe `memoir` que é como uma extensão de `book`.
+e a classe memoir.  KOMA-Script oferece um conjunto de classes que refletem as
+classes padrão:  `scrartcl`, `scrreprt`, `scrbook` e `scrlttr2`; já `memoir` é
+apenas uma classe, essencialmente uma extensão de `book`.
 
 Essas classes estendidas têm muitos pontos de personalização, que vamos explorar
 um pouco em um exercício.  Você pode se perguntar como sabemos quais são esses
@@ -117,8 +117,8 @@ comparadas a documentos gerais no LaTeX, então as abordamos na lição de
 
 ## Exercícios
 
-Explore como mudar a classe de document entre as padrão, as da coleção
-KOMA-Script, e `memoir` afeta a aparência do documento.
+Explore como mudar a classe de documento entre as padrão, as da coleção
+KOMA-Script e `memoir` afeta a aparência do documento.
 
 ```latex
 \documentclass{article} % Mude a classe aqui
