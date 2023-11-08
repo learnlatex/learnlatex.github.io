@@ -118,7 +118,7 @@ comparadas a documentos gerais no LaTeX, então as abordamos na lição de
 ## Exercícios
 
 Explore como mudar a classe de documento entre as padrão, as da coleção
-KOMA-Script, e `memoir` afeta a aparência do documento.
+KOMA-Script e `memoir` afeta a aparência do documento.
 
 ```latex
 \documentclass{article} % Mude a classe aqui

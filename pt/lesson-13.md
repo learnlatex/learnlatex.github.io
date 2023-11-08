@@ -128,10 +128,11 @@ ambientes _float_ `figure` e `table`, e usa arquivos com extensão `.lof` e
 
 ## Dividindo o documento em partes
 
-Os comandos `\frontmatter`, `\mainmatter`, e `\backmatter` afetam a formatação.
-Por exemplo, `\frontmatter` muda a numeração das páginas para algarismos romanos;
-O comando `\appendix` muda a numeração dos capítulos para `A`, `B`, etc., então
-o primeiro comando `\chapter` depois de `\appendix` imprime `Appendix A`.
+Os comandos `\frontmatter`, `\mainmatter` e `\backmatter` afetam a formatação.
+Por exemplo, `\frontmatter` muda a numeração das páginas para algarismos
+romanos; O comando `\appendix` muda a numeração dos capítulos para `A`, `B`
+etc., então o primeiro comando `\chapter` depois de `\appendix` imprime
+`Appendix A`.
 
 ## Exercícios
 

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Matemática"
-description: "Esta lição apresenta o modo matemático do LaTeX e como você pode escrever equações lineares e em exibição, as extensões do pacote amsmath, e como mudar a fonte em equações."
+description: "Esta lição apresenta o modo matemático do LaTeX e como você pode escrever equações lineares e em exibição, as extensões do pacote amsmath e como mudar a fonte em equações."
 toc-anchor-text: "Matemática"
 toc-description: "Modo e notação matemática."
 ---
@@ -12,7 +12,7 @@ toc-description: "Modo e notação matemática."
 <span
   class="summary">Esta lição apresenta o modo matemático do LaTeX e como você
   pode escrever equações lineares e em exibição, as extensões do pacote
-  `amsmath`, e como mudar a fonte em equações.</span>
+  `amsmath` e como mudar a fonte em equações.</span>
 
 Escrever fórmulas matemáticas complexas é um dos pontos fortes do LaTeX.  Você
 pode escrever equações no LaTeX usando uma forma lógica, conhecida como 'modo

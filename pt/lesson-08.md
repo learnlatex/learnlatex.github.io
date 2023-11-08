@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Tabelas"
-description: "Esta lição mostra como você pode construir tabelas no LaTeX, influenciar o alinhamento das células, adicionar linhas à tabela, e unir células."
+description: "Esta lição mostra como você pode construir tabelas no LaTeX, influenciar o alinhamento das células, adicionar linhas à tabela e unir células."
 toc-anchor-text: "Tabelas no LaTeX"
 toc-description: "Princípios básicos de tabelas."
 ---
@@ -11,7 +11,7 @@ toc-description: "Princípios básicos de tabelas."
 
 <span
   class="summary">Esta lição mostra como você pode construir tabelas no LaTeX,
-  influenciar o alinhamento das células, adicionar linhas à tabela, e unir
+  influenciar o alinhamento das células, adicionar linhas à tabela e unir
   células.</span>
 
 Tabelas no LaTeX são feitas usando o ambiente `tabular`.  Esta lição vai assumir
@@ -61,7 +61,7 @@ Essas duas tabelas listam todos os tipos de colunas disponíveis no LaTeX e no
 pacote `array`.  Alguns tipos adicionais de colunas, de pacotes diferentes, são
 apresentados na [página de detalhes adicionais](more-08) dessa lição.
 
-As colunas `l`, `c`, e `r` terão a largura natural da célula mais larga daquela
+As colunas `l`, `c` e `r` terão a largura natural da célula mais larga daquela
 coluna.  Cada coluna deve ser declarada, então se você quer três colunas
 centralizadas você usaria `ccc` no preâmbulo da tabela.  Espaços são ignorados,
 então `c c c` é a mesma coisa.
@@ -91,7 +91,7 @@ entender o código da tabela.
 <!-- {% endraw %} -->
 
 Se uma coluna da tabela contém muito texto, você terá problemas em acertar a
-tabela apenas com `l`, `c`, e `r`.  Veja o que acontece no exemplo a seguir:
+tabela apenas com `l`, `c` e `r`.  Veja o que acontece no exemplo a seguir:
 
 <!-- {% raw %} -->
 ```latex
@@ -174,8 +174,8 @@ as linhas padrão são mostradas na página de [mais informações](more-08).
 
 O pacote `booktabs` fornece quatro tipos diferentes de linhas.  Cada um desses
 comandos deve ser a primeira coisa em uma linha ou deve seguir outra linha.
-Três desses comandos são: `\toprule`, `\midrule`, e `\bottomrule`, e devem ser
-usados no topo, meio, e final da tabela, respectivamente:
+Três desses comandos são: `\toprule`, `\midrule` e `\bottomrule`, e devem ser
+usados no topo, meio e final da tabela, respectivamente:
 
 <!-- {% raw %} -->
 ```latex
@@ -393,7 +393,7 @@ desejado sem explicitamente juntar as linhas:
 ## Evercícios
 
 Use o exemplo mais simples de tabela para começar a experimentar com elas.
-Tente alinhamentos diferentes usando tipos de colunas `l`, `c`, e `r`.  O que
+Tente alinhamentos diferentes usando tipos de colunas `l`, `c` e `r`.  O que
 acontece se você escreve menos colunas do que declaradas em uma linha?  E se
 tiver mais colunas do que foram declaradas?  Experimente com o comando
 `\multicolumn` para unir colunas.

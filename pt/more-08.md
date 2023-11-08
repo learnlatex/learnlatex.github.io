@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Tabelas"
-description: "Esta lição mostra formas de personalizar uma tabela aplicando estilos a uma coluna, modificando espaçamento e linhas, e outros pacotes que fornecem diferentes extensões para tabelas."
+description: "Esta lição mostra formas de personalizar uma tabela aplicando estilos a uma coluna, modificando espaçamento e linhas e outros pacotes que fornecem diferentes extensões para tabelas."
 toc-anchor-text: "Veja mais sobre: Tabelas no LaTeX"
 ---
 
@@ -12,10 +12,10 @@ A [lição principal](lesson-08) não abordou todos os símbolos de preâmbulo
 disponíveis, portanto alguns serão explicados aqui, com exemplos.  Você pode
 querer revisitar as tabelas no início da lição para ter uma visão geral dos
 símbolos disponíveis.  As descrições dadas lá devem ser suficientes para
-entender o que os tipos diferentes de colunas `m`, `b`, `w`, e `W` fazem, depois
-que você endender `l`, `c`, `r`, e `p`.  Se não, você pode experimentar um pouco
+entender o que os tipos diferentes de colunas `m`, `b`, `w` e `W` fazem, depois
+que você endender `l`, `c`, `r` e `p`.  Se não, você pode experimentar um pouco
 com eles.  O que ainda falta são os outros símbolos listados na
-[lição principal](lesson-08):  `>`, `<`, `@`, `!`, e `|`.
+[lição principal](lesson-08):  `>`, `<`, `@`, `!` e `|`.
 
 ### Aplicando estilos a uma coluna
 
@@ -171,7 +171,7 @@ Você deve ter percebido que o comportamento de `|` é bem similar ao `!`;  ele
 adiciona a linha vertical entre duas colunas deixando o espaçamento intacto.
 No entanto há uma grande desvantagem nisso;  linhas verticais não funcionam com
 as linhas horizontais do `booktabs`.  Você pode usar as linhas horizontais
-padrão do LaTeX;  elas são `\hline` (correspondente a `\toprule`, `\midrule`, e
+padrão do LaTeX;  elas são `\hline` (correspondente a `\toprule`, `\midrule` e
 `\bottomrule`) e `\cline` (corresponde a `\cmidrule`).  Como mostrado acima,
 linhas verticais vão preencher qualquer espaço especificado no argumento
 opcional de `\\`.

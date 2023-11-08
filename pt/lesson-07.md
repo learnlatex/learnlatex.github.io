@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Incluindo gráficos e posicionando-os"
-description: "Esta lição mostra como você pode incluir gráficos externos no seu documento, como mudar a sua aparência, e como fazê-los flutuar para a posição apropriada no PDF."
+description: "Esta lição mostra como você pode incluir gráficos externos no seu documento, como mudar a sua aparência e como fazê-los flutuar para a posição apropriada no PDF."
 toc-anchor-text: "Usando gráficos"
 toc-description: "Aparência, espaçamento e posicionamento."
 ---
@@ -11,7 +11,7 @@ toc-description: "Aparência, espaçamento e posicionamento."
 
 <span
   class="summary">Esta lição mostra como você pode incluir gráficos externos no seu
-  documento, como mudar a sua aparência, e como fazê-los flutuar para a posição
+  documento, como mudar a sua aparência e como fazê-los flutuar para a posição
   apropriada no PDF.</span>
 
 Para incorporar gráficos de fora do LaTeX, use o pacote `graphicx`, que adiciona o
@@ -31,7 +31,7 @@ Essa imagem
 \end{document}
 ```
 
-Você pode incluir arquivos EPS, PNG, JPG, e PDF.
+Você pode incluir arquivos EPS, PNG, JPG e PDF.
 Se você tem mais de uma versão de uma imagem (com diferentes extensões) então
 você pode escrever, por exemplo, `example-image.png`. (O pacote `graphicx` vai
 tentar adivinhar a extensão se você não der uma.)

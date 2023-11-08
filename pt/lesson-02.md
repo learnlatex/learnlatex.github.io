@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Trabalhando com LaTeX"
-description: "Esta lição explica o que é um sistema TeX e quais os mais comuns, lista alguns dos editores de texto comumente utilizados para LaTeX, e os sistemas online que contam também com editores integrados."
+description: "Esta lição explica o que é um sistema TeX e quais os mais comuns, lista alguns dos editores de texto comumente utilizados para LaTeX e os sistemas online que contam também com editores integrados."
 toc-anchor-text: "Trabalhando com LaTeX"
 toc-description: "Sistemas TeX e editores de texto."
 ---
@@ -11,7 +11,7 @@ toc-description: "Sistemas TeX e editores de texto."
 
 <span
   class="summary">Esta lição explica o que é um sistema TeX e quais os mais
-  comuns, lista alguns dos editores de texto comumente utilizados para LaTeX,
+  comuns, lista alguns dos editores de texto comumente utilizados para LaTeX
   e os sistemas online que contam também com editores integrados.</span>
 
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação
@@ -46,10 +46,10 @@ sistema instalar, você escolha o TeX Live.
 Arquivos LaTeX são arquivos de texto simples, então podem ser editados com
 qualquer editor de texto.  No entanto, é conveniente ter um editor projetado
 para trabalhar com o LaTeX, pois eles têm funcionalidades como compilação em
-um clique dos seus arquivos, visualizadores de PDF embutidos, e realce de
+um clique dos seus arquivos, visualizadores de PDF embutidos e realce de
 sintaxe.  Uma funcionalidade muito útil em todos os editores modernos de LaTeX
 é o SyncTeX:  a habilidade de clicar no seu código fonte e ir direto para aquele
-local exato no PDF, e vice-versa.
+local exato no PDF e vice-versa.
 
 Há muito mais editores de LaTeX do que podemos listar aqui:  há uma [lista
 abrangente no StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).

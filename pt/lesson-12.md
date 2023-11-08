@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Citações e referências"
-description: "Esta lição mostra o básico sobre bancos de referências e como construir o seu próprio, como usar esse banco de referências no seu documento usando os dois principais métodos disponíveis, e como escolher entre eles."
+description: "Esta lição mostra o básico sobre bancos de referências e como construir o seu próprio, como usar esse banco de referências no seu documento usando os dois principais métodos disponíveis e como escolher entre eles."
 toc-anchor-text: "Citações & referências"
 toc-description: "Trabalhando com bancos de referências."
 ---
@@ -23,7 +23,7 @@ runlatex.preincludes = {
 <span
   class="summary">Esta lição mostra o básico sobre bancos de referências e como
   construir o seu próprio, como usar esse banco de referências no seu documento
-  usando os dois principais métodos disponíveis, e como escolher entre
+  usando os dois principais métodos disponíveis e como escolher entre
   eles.</span>
 
 Embora você possa incluir referências bibliográficas diretamente no seu

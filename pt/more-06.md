@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Estendendo o LaTeX usando pacotes e definições"
-description: "Esta lição dá mais detalhes sobre carregamento de pacotes, apresenta o pacote babel para selecionar o idioma, e dá mais detalhes sobre comandos personalizados."
+description: "Esta lição dá mais detalhes sobre carregamento de pacotes, apresenta o pacote babel para selecionar o idioma e dá mais detalhes sobre comandos personalizados."
 toc-anchor-text: "Veja mais sobre: Estendendo o LaTeX"
 ---
 

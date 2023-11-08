@@ -51,7 +51,7 @@ Quase sempre, se você não está nesses locais especiais, você _não deve_ usa
 ## Adicionando espaçamento explícito
 
 Podemos inserir um espaço fino (aproximadamente metade de um espaço normal)
-usando `\,`.  No modo matemático, também há outros comandos: `\.`, `\:`, e `\;`,
+usando `\,`.  No modo matemático, também há outros comandos: `\.`, `\:` e `\;`,
 e um para um espaço negativo: `\!`.
 
 Muito raramente, por exemplo ao criar uma folha de rosto, você pode precisar

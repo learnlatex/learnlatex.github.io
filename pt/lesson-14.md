@@ -41,7 +41,7 @@ de 8 bits, a maioria dos idiomas europeus é suportado.
 A seleção de fontes com o `pdflatex` usa o sistema robusto de seleção de fontes
 do LaTeX, e atualmente há muitas fontes próprias para isso em uma distribuição
 LaTeX padrão.  Por exemplo, as fontes _TeX Gyre_ são uma coleção de fontes de
-alta qualidade baseadas em fontes populares, como Times, Helvetica, Palatino, e
+alta qualidade baseadas em fontes populares, como Times, Helvetica, Palatino e
 outras.  Para carregar essas fontes, basta carregar o pacote apropriado.  Para
 uma fonte similar à Times, cujo nome é _TeX Gyre Termes_, o pacote é:
 
