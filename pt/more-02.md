@@ -9,7 +9,7 @@ toc-anchor-text: "Veja mais sobre: Trabalhando com LaTeX"
 Para a maioria dos nossos exemplos, não usamos um programa chamado `latex`, ao
 invés disso, um chamado `pdflatex`.  Este é um de uma família de programas
 relacionados, todos 'descendentes' do `latex`.  Nós escolhemos o `pdflatex`
-porque ele é o sistema mais amplamente utilizado, e produz arquivos PDF
+porque ele é o sistema mais amplamente utilizado e produz arquivos PDF
 diretamente.
 
 ## Formatos e interpretadores

@@ -8,7 +8,7 @@ toc-anchor-text: "Veja mais sobre: Resolvendo erros"
 
 ## Erros reportados no final de ambientes
 
-Alguns ambientes (notavelmente alinhamentos do `amsmath` e tabelas do
+Alguns ambientes (em particular, alinhamentos do `amsmath` e tabelas do
 `tabularx`) leem todo o corpo do ambiente antes de processar o conteúdo.  Isso
 significa que qualquer erro dentro do ambiente será relatado na última linha.
 No entanto, como visto na [lição principal](lesson-15), o contexto do erro
@@ -48,16 +48,16 @@ Embora o erro real seja na linha 10, como mostrado pelas linhas de contexto:
 ```
 {: .noedit :}
 
-## Erros adicionais devido a erros anteriores
+## Erros adicionais devidos a erros anteriores
 
-Quando executando o LaTeX interativamente pela linha de comando, é possível
-parar o processamento no primeiro erro digitando `x` e `<Enter>` quando o TeX
+Ao executar o LaTeX interativamente pela linha de comando, é possível parar
+o processamento no primeiro erro digitando `x` e `<Enter>` quando o TeX
 esperar por instruções.  Você pode então editar o documento e executar o LaTeX
-novamente.  No entanto se você deixar o TeX passar pelo erro ou se usar um
+novamente.  No entanto, se você deixar o TeX passar pelo erro ou se usar um
 editor ou sistema online que faz isso automaticamente, o TeX tentará se
-recuperar do erro;  no entanto isso pode levar a mais erros.
+recuperar do erro, mas isso pode levar a mais erros.
 
-Então não se preocupe com o _número_ de erros relatados, e sempre se concentre
+Então, não se preocupe com o _número_ de erros relatados e sempre se concentre
 em corrigir o _primeiro_ erro.
 
 ```latex
@@ -73,7 +73,7 @@ More text.
 
 No exemplo o erro é o `_`, que deveria ser escrito `\_`.
 
-O TeX relata esse corretamente com a _primeira_ mensagem de erro:
+O TeX relata isso corretamente com a _primeira_ mensagem de erro:
 
 ```
 ! Missing $ inserted.
@@ -107,7 +107,7 @@ Alguns erros, especialmente erros que não são detectados antes do final do
 arquivo, não geram uma mensagem de erro, mas apenas mostram um aviso no log.
 
 Se você experimentar este exemplo usando o servidor do TeXLive.net (no botão
-'LaTeX Online'), ele vai retornar um arquivo PDF por padrão, pois não há uma
+'LaTeX Online'), ele vai devolver um arquivo PDF por padrão, pois não há uma
 mensagem de erro;  para ver a mensagem no log adicione `%!TEX log` no exemplo:
 
 ```latex
@@ -121,7 +121,7 @@ mensagem de erro;  para ver a mensagem no log adicione `%!TEX log` no exemplo:
 \end{document}
 ```
 
-Nesse exemplo a mudança de tamanho da fonte foi erroneamente terminada com `)`
+Nesse exemplo, a mudança de tamanho da fonte foi erroneamente terminada com `)`
 ao invés de `}`.  Isso não é detectado até que o final do arquivo seja
 processado e o TeX detecta que ainda há um grupo aberto.  Ele reporta aqui a
 linha na qual o grupo foi aberto com `{`.  Ele não pode detectar o erro "real"

@@ -47,11 +47,11 @@ funciona:
 ```
 
 Esse exemplo mostra duas ideias importantes.  Primeiro, `beamer` divide o
-documento em 'quadros' (_frames_), e cada qual pode ter mais de um slide
-(página).  Segundo, `beamer` adiciona à sintaxe normal do LaTeX permitindo que
-partes do material apareçam uma de cada vez.  Isto é uma ferramenta poderosa,
+documento em 'quadros' (_frames_), e cada um pode gerar mais de um slide
+(página).  Segundo, `beamer` amplia a sintaxe normal do LaTeX, permitindo que
+partes do material apareçam uma de cada vez.  Essa é uma ferramenta poderosa,
 mas mais complicada do que podemos abordar aqui:  dê uma olhada
-[nesse blog](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept)
+[neste blog](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept)
 para uma abordagem mais aprofundada.
 
 ## Uma classe para imagens

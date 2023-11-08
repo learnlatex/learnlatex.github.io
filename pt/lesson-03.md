@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Estrutura básica de um documento LaTeX"
-description: "Esta lição mostra a estrutura básica de um documento LaTeX, e como produzir um PDF com ele, assim como os principais caracteres especiais usados para controlar o LaTeX."
+description: "Esta lição mostra a estrutura básica de um documento LaTeX e como produzir um PDF com ele, assim como os principais caracteres especiais usados para controlar o LaTeX."
 toc-anchor-text: "Estrutura do documento"
 toc-description: "A estrutura básica de um documento."
 ---
@@ -10,7 +10,7 @@ toc-description: "A estrutura básica de um documento."
 # Estrutura de um documento LaTeX
 
 <span
-  class="summary">Esta lição mostra a estrutura básica de um documento LaTeX,
+  class="summary">Esta lição mostra a estrutura básica de um documento LaTeX
   e como produzir um PDF com ele, assim como os principais caracteres especiais
   usados para controlar o LaTeX.</span>
 
@@ -19,7 +19,7 @@ documento se parece e como processá-lo com sucesso.  Também é a sua primeira
 chance de ver [como usar os exemplos](help) aqui no `learnlatex.org`.
 
 Se você está usando uma instalação local de LaTeX, no seu editor crie um arquivo
-chamado `first.tex`, e copie-e-cole o texto abaixo, ou digite-o.
+chamado `first.tex` e copie-e-cole o texto abaixo, ou digite-o.
 
 Se você está usando um sistema online, você pode apenas clicar no botão 'LaTeX
 Online' ou 'Abrir no Overleaf' no exemplo para experimentá-lo!

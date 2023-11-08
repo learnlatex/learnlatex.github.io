@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Referências cruzadas"
-description: "Esta lição mostra como referenciar elementos numerados em um documento, como figuras, tabelas, e seções."
+description: "Esta lição mostra como fazer referências a elementos numerados em um documento, como figuras, tabelas e seções."
 toc-anchor-text: "Referências cruzadas"
 toc-description: "Referenciando figuras, tabelas, etc."
 ---
@@ -10,18 +10,19 @@ toc-description: "Referenciando figuras, tabelas, etc."
 # Referências cruzadas
 
 <span
-  class="summary">Esta lição mostra como referenciar elementos numerados em um
-  documento, como figuras, tabelas, e seções.</span>
+  class="summary">Esta lição mostra como fazer referências a elementos numerados em um
+  documento, como figuras, tabelas e seções.</span>
 
-Quando você está escrevendo um documento de qualquer comprimento, você vai
-querer referenciar itens numerados, como figuras, tabelas, ou equações.
+Quando você está escrevendo um documento de um certo tamanho, você vai
+querer se referir a itens numerados, como figuras, tabelas, ou equações.
 Felizmente, o LaTeX consegue numerar automaticamente;  apenas precisamos
 configurar tudo corretamente.
 
 ## O mecanismo de `\label` e `\ref`
 
-Para que o LaTeX lembre de um ponto no seu documento você deve colocar um rótulo
-(_label_) nesse local, e em outros locais você pode referenciar esse rótulo.
+Para que o LaTeX se lembre de um ponto no seu documento, você deve colocar um
+rótulo (_label_) nesse local, e em outros locais você pode se referir a esse
+rótulo.
 
 ```latex
 \documentclass{article}
@@ -52,7 +53,7 @@ Na subseção~\ref{subsec:labelone} está a equação~\ref{eq:labeltwo}.
 
 Há dois comandos `\label{...}`, um após a subseção e outro dentro do ambiente
 `equation`.  Eles são associados com os comandos `\ref{...}` na última frase.
-Quando você executa o LaTeX ele salva as informações sobre rótulos em um arquivo
+Quando você executa o LaTeX, ele salva as informações sobre rótulos em um arquivo
 auxiliar.  Para `\label{subsec:labelone}`, o LaTeX sabe que ele está em uma
 subseção e então salva o seu número.  Em `\label{eq:labeltwo}`, o LaTeX sabe que
 está em uma equação, então ele salva as informações daquela equação.  Quando
@@ -62,21 +63,21 @@ O `subsec:` e `eq:` não são tratados diferentemente pelo LaTeX;  eles só serv
 para você se organizar sobre o que se trata aquele rótulo.
 
 Você pode ver referências que aparecem no PDF como pontos de interrogação em
-negrito, **??**.  A explicação é que devido à esse armazenamento de informação
-no arquivo auxiliar, a primeira vez que você compila o documento, o rótulo ainda
+negrito, **??**.  A explicação é que, devido a esse armazenamento de informação
+no arquivo auxiliar, na primeira vez que você compila o documento o rótulo ainda
 não foi salvo.  Execute o LaTeX mais uma vez e tudo estará correto. (Geralmente
 enquanto estiver escrevendo um documento você vai executar o LaTeX várias vezes
 de qualquer forma, então isso não é um problema.)  Se mesmo depois de compilar
 de novo a referência continuar como **??**, verifique que você escreveu o rótulo
 corretamente.
 
-Note os tils (`~`) antes das referências.  VOcê não quer uma quebra de linha
+Note os tils (`~`) antes das referências.  Você não quer uma quebra de linha
 entre `subseção` e o número, ou entre `equação` e o número.  Colocar um til
 impede que o LaTeX quebre a linha naquele ponto.
 
 ## Onde colocar a `\label`
 
-O comando `\label` sempre se refere à _ultima_ entidade numerada:  uma seção,
+O comando `\label` sempre se refere à _última_ entidade numerada:  uma seção,
 uma equação, um _float_, etc.  Isso significa que `\label` sempre deve vir
 _depois_ do objeto ao qual você quer se referir.  Em particular, quando você
 cria _floats_, o comando `\label` deve vir _depois_ (ou melhor, dentro) do
@@ -91,5 +92,5 @@ para resolver todos os comandos `\label` e `\ref`.
 Adicione alguns _floats_ e veja o que acontece quando você coloca `\label`
 _antes_ do `\caption` ao invés de depois;  você consegue prever o resultado?
 
-O que acontece se você colocar uma `\label` para uma equação _depois_ do
+O que acontece se você colocar um `\label` para uma equação _depois_ do
 `\end{equation}`?

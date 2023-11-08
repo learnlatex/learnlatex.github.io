@@ -26,16 +26,17 @@ runlatex.preincludes = {
   usando os dois principais métodos disponíveis, e como escolher entre
   eles.</span>
 
-Para citações bibliográficas, enquanto você pode incluí-las diretamente no seu
-texto, geralmente você vai obter essa informação de um ou mais arquivos
-externos.  Tal arquivo é um banco de referências, contendo a informação em um
-formato fácil de ser processado.  Usar um ou mais bancos de referências lhe
-permite reutilizar informações e evitar formatação manual.
+Embora você possa incluir referências bibliográficas diretamente no seu
+documento, em geral o que se faz é incorporar os dados necessários de um
+ou mais arquivos externos. Um arquivo desse tipo é um banco de referências,
+contendo a informação em um formato fácil de ser processado.  Usar um ou
+mais bancos de referências lhe permite reutilizar informações e evitar
+formatação manual.
 
 ## Bancos de referências
 
-Bancos de referências são normalmente chamados de 'arquivos BibTeX' e tem a
-extensão `.bib`.  Eles contém um ou mais registros, um para cada referência, e
+Bancos de referências são normalmente chamados de 'arquivos BibTeX' e têm a
+extensão `.bib`.  Eles contêm um ou mais registros, um para cada referência, e
 dentro de cada registro há uma série de campos.  Vamos ver um exemplo:
 
 <!-- {% raw %} -->
@@ -63,27 +64,27 @@ dentro de cada registro há uma série de campos.  Vamos ver um exemplo:
 ```
 <!-- {% endraw %} -->
 
-Estes são os registros para um artigo e outro para um livro;  esses são de longe
+Esses são os registros para um artigo e para um livro, que são de longe
 os tipos mais comuns.  Cada registro do banco de referências começa com um `@`,
 como mostrado, e todas as informações ficam entre chaves.
 
 Os vários campos que precisamos são dados em um formato de chave-e-valor, além
 da 'chave da citação':  o identificador daquela referência.  Para essa chave
-você pode usar o que quiser, pois é apenas um rótulo, mas acima escolhemos usar
-o nome de um autor mais o ano:  esse é um formato comum.
+você pode usar o que quiser, pois ela é apenas um rótulo, mas acima escolhemos
+usar o nome de um autor mais o ano:  esse é um formato comum.
 
-Exatamente quais campos são necessários depende to tipo de registro, mas a
+Exatamente quais campos são necessários depende do tipo de registro, mas a
 maioria deles são óbvios.  Você pode perceber que no campo `autor`, cada nome é
 separado por `and`.  Isso é _essencial_: o formato da saída precisa saber qual
-autor é qual.  Você pode também perceber que no título do artigo alguns itens
-estão entre um par extra de chaves;  eles estão lá para prevenir que aquelas
+autor é qual.  Você pode também perceber que, no título do artigo, alguns itens
+estão entre um par extra de chaves;  elas estão lá para evitar que aquelas
 partes sejam mudadas de maiúsculo para minúsculo e vice-versa.
 
 Editar arquivos `.bib` à mão é tedioso, então a maioria das pessoas usa um
 editor dedicado.  O [JabRef](https://www.jabref.org) é amplamente utilizado e é
 multiplataforma, mas há muitos outros disponíveis.  Se a referência contém um
 DOI (Digital Object Identifier) você pode querer usar o
-[doi2bib](https://doi2bib.org) para obter o registro BibTeX referente.  Mas
+[doi2bib](https://doi2bib.org) para obter o registro BibTeX correspondente.  Mas
 sempre certifique-se que o registro está correto!
 
 Aqui vamos usar o banco de referências de exemplo acima para as demonstrações.
@@ -95,15 +96,15 @@ Para obter as informações no seu documento há três passos.  Primeiro, use o
 LaTeX para compilar seu documento, que vai criar um arquivo com uma lista de
 referências que você cita em seu documento.  Em seguida, execute um programa que
 pega as informações do banco de dados de referências, escolhe as que você usa, e
-as organiza.  Finalmente, comple seu documento novamente para que o LaTeX possa
+as organiza.  Finalmente, compile seu documento novamente para que o LaTeX possa
 usar essas informações para resolver suas citações.  Geralmente será necessário
 compilar no mínimo duas vezes para resolver todas as referências.
 
 Para o segundo passo, há dois sistemas amplamente utilizados: BibTeX e Biber.
 O Biber é apenas usado com um pacote chamado `biblatex`, enquanto que o BibTeX
-é usado ou sem pacotes, ou com o `natbib`.
+é usado sem pacotes específicos ou com o pacote `natbib`.
 
-A execução dessa ferramenta assim como do LaTeX, é feita de formas diferentes
+A execução dessa ferramenta, assim como do LaTeX, é feita de formas diferentes
 por editores diferentes.  Para os nossos exemplos há alguns scripts que fazem
 tudo automaticamente.  Seu editor pode ter um único botão 'faça coisas' ou você
 pode precisar escolher executar o BibTeX ou o Biber manualmente entre execuções
@@ -116,10 +117,10 @@ geral permanece:  nós podemos escolher como citações aparecem.
 
 ## O fluxo de trabalho do BibTeX com `natbib`
 
-Enquanto é possível inserir citações em um documento LaTeX sem carregar qualquer
-pacote, as funcionalidades são limitadas.  Ao invés disso, vamos usar o pacote
-`natbib`, que nos permite criar diferentes tipos de citações e tem vários
-estilos disponíveis.
+Embora seja possível inserir citações em um documento LaTeX sem carregar
+qualquer pacote, as funcionalidades nesse caso são limitadas.  Ao invés disso,
+vamos usar o pacote `natbib`, que nos permite criar diferentes tipos de
+citações e tem vários estilos disponíveis.
 
 A estrutura básica do nosso documento é mostrada no exemplo:
 
@@ -161,9 +162,9 @@ também.  Isso é feito usando a opção `numbers` na linha que carrega o `natbi
 
 ## O fluxo de trabalho com `biblatex`
 
-O pacote `biblatex` funciona um pouco diferente do `natbib`, pois selecionamos
-o banco de referências no preâmbulo, mas imprimimos as referências separadamente
-no corpo do documento.  Há alguns comandos novos para isso:
+O pacote `biblatex` funciona de maneira um pouco diferente do `natbib`, pois
+selecionamos o banco de referências no preâmbulo, mas imprimimos as referências
+separadamente no corpo do documento.  Há alguns comandos novos para isso:
 
 ```latex
 \documentclass{article}
@@ -202,18 +203,18 @@ outros.
 
 ## Escolhendo entre o trabalho com o BibTeX ou com o `biblatex`
 
-Embora bibliografias tanto o BibTeX quanto com o `biblatex` leem o banco de
-referências no formato BibTeX e produzem resultado estruturalmente similar no
-documento, eles usam formas completamente diferentes para produzir esse
+Embora bibliografias tanto com o BibTeX quanto com o `biblatex` leiam o banco
+de referências no formato BibTeX e produzam resultado estruturalmente similar
+no documento, eles usam formas completamente diferentes para produzir esse
 resultado.  Isso significa que há algumas diferenças entre as duas abordagens
 que podem lhe ajudar a escolher qual funciona melhor para você.
 
-No fluxo de trabalho com o BibTeX o estilo da bibliografia é decidido por um
-arquivo `.bst` que você escolhe com o comando `\bibliographystyle`.
-O `biblatex` não usa arquivos `.bst` e usa um sistema diferentes.  Se você está
-usando um template que vem com um arquivo `.bst` ou receber um arquivo desse
-para usar no seu projeto, então você deverá usar o BibTeX e não pode usar o
-`biblatex`.
+No fluxo de trabalho com o BibTeX, o estilo da bibliografia é decidido por um
+arquivo `.bst` que você escolhe com o comando `\bibliographystyle`. O
+`biblatex` não usa arquivos `.bst`, mas um sistema diferente.  Se você está
+usando um modelo de documento que vem com um arquivo `.bst` ou receber um
+arquivo desses para usar no seu projeto, então você deverá usar o BibTeX e
+não poderá usar o `biblatex`.
 
 A abordagem com o `biblatex` implica que você pode mudar a aparência da lista
 de referências e das citações diretamente no preâmbulo do documento usando
@@ -224,7 +225,7 @@ estilos no fluxo de trabalho do BibTeX.
 
 No `biblatex` geralmente é mais fácil implementar estilos de citação mais
 elaborados com uma gama maior de comandos de citação.  O `biblatex` também
-oferece mais funcionalidades dependentes do contexto.  De forma geral isso é
+oferece mais funcionalidades dependentes do contexto.  De forma geral, isso é
 menos interessante para estilos comuns nas áreas de exatas, mas se torna mais
 relevante para alguns estilos complexos nas áreas de humanas.
 
@@ -237,12 +238,12 @@ organizar sua bibliografia em ordem diferente do Inglês/ASCII.
 Tendo existido por muito mais tempo que o `biblatex`, o fluxo de trabalho com o
 BibTeX é mais bem estabelecido, o que significa que muitas editoras e revistas
 esperam bibliografias geradas pelo BibTeX.  Essas revistas não podem, ou em
-geral não aceitam submissões usando o `biblatex`.
+geral não querem, aceitar submissões usando o `biblatex`.
 
-Em conclusão: verifique as diretrizes ao autor/submissão se você está enviando
-seu trabalho para uma revista ou editora.  Se você for dado um arquivo `.bst`,
+Em resumo: verifique as diretrizes ao autor/submissão se você está enviando
+seu trabalho para uma revista ou editora.  Se você receber um arquivo `.bst`,
 você deve usar o fluxo de trabalho com o BibTeX.  Se você quer uma bibliografia
-e estilo relativamente simples e só precisa ordenação compatível com
+e estilo relativamente simples e só precisa de ordenação compatível com
 Inglês/ASCII, o fluxo de trabalho com o BibTeX deve ser suficiente.  Se você
 precisa de um estilo mais complexo, usando alfabeto não-Inglês, ou quer acesso
 mais fácil à personalização do estilo de citação e bibliografia, você vai
@@ -251,8 +252,8 @@ preferir usar o `biblatex`.
 ## Exercícios
 
 Tente ambos os exemplos com `natbib` e `biblatex`.  Com o `natbib` você vai
-precisar executar o LaTeX, o BibTeX, LaTeX, e LaTeX novamente;  com o
-`biblatex` você executa LaTeX, o Biber, e LaTeX.  Você vai precisar descobrir
+precisar executar LaTeX, BibTeX, LaTeX e LaTeX novamente;  com o
+`biblatex` você executa LaTeX, Biber e LaTeX.  Você vai precisar descobrir
 como fazer isso no seu editor de escolha, ou tente no Overleaf ou no TeXLive.net.
 
 Veja o que acontece quando você cria novos registros no banco de referências e

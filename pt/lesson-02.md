@@ -52,11 +52,10 @@ sintaxe.  Uma funcionalidade muito útil em todos os editores modernos de LaTeX
 local exato no PDF, e vice-versa.
 
 Há muito mais editores de LaTeX do que podemos listar aqui:  há uma [lista
-compreensiva no StackExchange]
-(https://tex.stackexchange.com/questions/339/latex-editors-ides).
+abrangente no StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
 Um editor básico, [TeXworks](https://tug.org/texworks), é distribuído no
 TeX Live e no MiKTeX, tanto para Windows como para Linux, e o
-[TeXShop](https://pages.uoregon.edu/koch/texshop/) é istribuído com o MacTeX.
+[TeXShop](https://pages.uoregon.edu/koch/texshop/) é distribuído com o MacTeX.
 
 <p
   class="hint">
@@ -68,7 +67,7 @@ TeX Live e no MiKTeX, tanto para Windows como para Linux, e o
 
 Há vários sites poderosos, que lhe permitem não ter um sistema TeX
 ou editor instalados no seu computador.  Esses websites lhe permitem editar seus
-arquivos em uma página no navegador, e executam o LaTeX nos bastidores, e
+arquivos em uma página no navegador, executam o LaTeX nos bastidores e
 mostram o arquivo PDF produzido.
 
 Alguns desses sites combinam o LaTeX com funcionalidades similares a um
@@ -76,8 +75,8 @@ processador de texto, enquanto que outros são mais focados em deixar você ver
 o arquivo LaTeX fonte, assim fornecem uma experiência mais parecida com ter um
 sistema TeX local.
 
-Há sistemas que permitem que você execute o LaTeX sem precisar registar, e nós
-usamos um desses, o [TeXLive.net](https://texlive.net), que permite que você
+Há sistemas que permitem que você execute o LaTeX sem precisar se registrar, e
+nós usamos um desses, o [TeXLive.net](https://texlive.net), que permite que você
 edite e teste os exemplos que fornecemos.  Para trabalhos mais completos, os
 melhores sistemas online requerem que você registre-se antes de usá-los.  Isso
 lhe permite salvar seu trabalho, mas também ajuda que os sites não fiquem

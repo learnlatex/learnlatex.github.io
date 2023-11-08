@@ -14,13 +14,13 @@ toc-description: "Selecionando fontes e codificação."
   de texto com Unicode e como isso afeta o que você digita e as fontes que você
   usa.  Aprenda sobre suporte a Unicode e fontes OpenType.</span>
 
-Quando o TeX e o LaTeX começaram a ser amplamente utilizados eles funcionavam
+Quando o TeX e o LaTeX começaram a ser amplamente utilizados, eles funcionavam
 apenas com idiomas Europeus, embora houvesse alguma capacidade para usar outros
 alfabetos como o Grego e o Russo.
 
 ## Acentos e letras acentuadas
 
-Originalmente, acentos e letras acentuadas eram escritas usando comandos como
+Originalmente, acentos e letras acentuadas eram escritos usando comandos como
 `\c{c}` para 'ç' e `\'e` para 'é'.  Enquanto ainda há pessoas que usam esses
 métodos de entrada porque eles podem ser mais fáceis de digitar, outros preferem
 usar as teclas nos seus teclados para digitar esses caracteres diretamente.
@@ -29,10 +29,10 @@ Antes do Unicode, o LaTeX fornecia suporte para vários tipos de _codificação_
 dos arquivos fonte, que permitiam que o texto fosse escrito em vários idiomas
 nativamente &ndash; por exemplo, usando a codificação `latin1`, usuários
 Franceses poderiam escrever '`déjà vu`' e o LaTeX iria traduzir, internamente,
-as letras acentuadas nos comandos que produziriam o resultado correto.
+as letras acentuadas para os comandos que produziriam o resultado correto.
 
 Essa abordagem ainda é usada no LaTeX atualmente usando o `pdflatex`.  Por
-padrão todos os arquivos são assumidos ser Unicode (codificação UTF-8) a menos
+padrão todos os arquivos são considerados Unicode (codificação UTF-8) a menos
 que seja especificado o contrário.  Embora o `pdflatex` seja limidado a fontes
 de 8 bits, a maioria dos idiomas europeus é suportado.
 
@@ -43,7 +43,7 @@ do LaTeX, e atualmente há muitas fontes próprias para isso em uma distribuiç�
 LaTeX padrão.  Por exemplo, as fontes _TeX Gyre_ são uma coleção de fontes de
 alta qualidade baseadas em fontes populares, como Times, Helvetica, Palatino, e
 outras.  Para carregar essas fontes, basta carregar o pacote apropriado.  Para
-uma fonte similar à Times, o nome é _TeX Gyre Termes_, e o pacote é:
+uma fonte similar à Times, cujo nome é _TeX Gyre Termes_, o pacote é:
 
 ```latex
 \usepackage{tgtermes}
@@ -61,7 +61,7 @@ maioria das aplicações é similar o suficiente à original.
 ## A era Unicode
 
 Como o `pdflatex` é limitado a arquivos 8 bits e fontes de 8 bits, ele não pode,
-nativamente, usar fontes modernas OpenType, e trocar facilmente entre idiomas
+nativamente, usar fontes modernas OpenType e trocar facilmente entre idiomas
 que usam alfabetos (ou sistema de escrita, para usar o termo técnico)
 diferentes.  Há dois substitutos para o pdfTeX que usam entrada Unicode e fontes
 modernas: XeTeX e LuaTeX.  Para o LaTeX, estes são tipicamente chamados pelo

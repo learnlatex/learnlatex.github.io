@@ -20,7 +20,7 @@ carregar cada pacote em uma linha separada.
 Nós mostramos o pacote `babel` na [lição principal](lesson-06) como uma forma
 de escolher diferentes padrões de hifenização.  Mas `babel` faz muito mais do
 que isso, dependendo dos idiomas sendo utilizados.  Por exemplo, em Alemão,
-`babel` fornece atalhos para criar hífens 'flexíveis', e também uma forma rápida
+`babel` fornece atalhos para criar hífens 'flexíveis' e também uma forma rápida
 de digitar tremas sem ter uma tecla especial no teclado.  Veja também como o
 título da seção _Table of Contents_ gerada pelo comando `\tableofcontents` muda
 para o Alemão _Inhaltsverzeichnis_:
@@ -55,7 +55,7 @@ o pacote `babel` com a opção `french`.
 
 Às vezes, você quer que uma opção fique disponível para todos os pacotes que
 você carregar.  Isso é feito ao passar a opção na linha do `\documentclass`:
-todos os pacotes podem 'ver' essa lista.  Então para passar o idioma de um
+todos os pacotes podem 'ver' essa lista.  Então, para passar o idioma de um
 documento para todos os pacotes podemos usar:
 
 ```latex

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Estrutura Lógica"
-description: "Esta lição mostra alguns comandos básicos de formatação, e compara-os com formatação semântica usando comandos de secionamento e listas."
+description: "Esta lição mostra alguns comandos básicos de formatação e compara-os com formatação semântica usando comandos de secionamento e listas."
 toc-anchor-text: "Estrutura Lógica"
 toc-description: "Estrutura e representação visual."
 ---
@@ -37,7 +37,7 @@ Texto em \textit{itálico e com \textit{itálico} aninhado}.
 
 Você pode provavelmente adivinhar que `\textit` é um comand para fazer texto em
 itálico, mas ele _sempre_ deixa coisas em itálico, então não funciona com mais
-níveis de texto aninhado.  Veja como `\emph` sabe quando está aninado.
+níveis de texto aninhado.  Veja como `\emph` sabe quando está aninhado.
 Também há ocasiões em que ênfase não é o mesmo que itálico;  por exemplo, em
 apresentações, cores são geralmente uma opção melhor.  Com marcação lógica, não
 temos que nos preocupar com os detalhes no corpo do documento.
@@ -53,7 +53,7 @@ maioria das pessoas escreve o título e então simplesmente aumenta o tamanho da
 fonte e deixa o texto negrito, seguido por uma quebra de linha.  No LaTeX, usar
 marcação é _mais fácil_ que fazer a formatação manualmente; podemos usar o
 comando `\section`, que cuida da numeração, mudança de fonte, espaçamento
-vertical, etc., e mantém o resultado uniforme ao longo do documento.
+vertical etc. e mantém o resultado uniforme ao longo do documento.
 
 ```latex
 \documentclass{article}
@@ -96,7 +96,7 @@ Ainda podemos ir além:  o próximo 'abaixo' é `\paragraph`, mas quase sempre �
 'detalhe demais' em seções.  (Sim, `\paragraph` é um comando de secionamento, e
 _não_ uma forma de iniciar um novo parágrafo!)
 
-Você pode se pergutar sobre o título de um documento.  Há vários comandos
+Você pode se perguntar sobre o título de um documento.  Há vários comandos
 especiais para isso, mas nem todos os documentos os usam, então abordamos isso
 na [lição extra paralela a esta](more-04).
 
@@ -138,7 +138,7 @@ comandos `\chapter`.  Como eles parecem?  Tente `\paragraph` e (até mesmo)
 `\subparagraph` para ver como eles funcionam:  por padrão eles _não_ adicionam
 números.
 
-Faça algumas listas, e insira uma lista dentro da outra.  Como o formato dos
+Faça algumas listas e insira uma lista dentro da outra.  Como o formato dos
 números ou marcadores muda?  Você pode ter apenas quatro níveis de listas por
 pardão no LaTeX, mas mais que quatro níveis nesse caso tende a ser um mau sinal
 de qualquer forma!
