@@ -9,7 +9,7 @@ toc-anchor-text: "Veja mais sobre: Matemática"
 ## Mais ambientes de alinhamento do `amsmath`
 
 Além do ambiente `align*` apresentado na [lição principal](lesson-10), o
-`amsmath` tem diversas outras estruturas de equações em exibição, em particular
+`amsmath` tem diversas outras estruturas de equações em destaque, em particular
 `gather` para equações de várias linhas que não precisam alinhamento, e
 `multiline` para dividir uma única expressão em várias linhas, alinhando a
 primeira linha à esquerda e a última à direita.  Em todos os casos, a variante
@@ -84,7 +84,7 @@ d&=c
 ```
 
 `aligned` aceita um argumento opcional de posicionamento similar ao ambiente
-`tabular`.  Isso geralmente é útil para alinhar uma equação linear na primeira
+`tabular`.  Isso geralmente é útil para alinhar uma equação embutida na primeira
 linha;  compare os itens na lista no exemplo a seguir:
 
 ```latex
