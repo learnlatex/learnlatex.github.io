@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Tabelas"
-description: "Esta lição mostra como você pode construir tabelas no LaTeX, influenciar o alinhamento das células, adicionar linhas à tabela e unir células."
+description: "Esta lição mostra como você pode construir tabelas no LaTeX, influenciar o alinhamento das células, adicionar bordas à tabela e unir células."
 toc-anchor-text: "Tabelas no LaTeX"
 toc-description: "Princípios básicos de tabelas."
 ---
@@ -11,7 +11,7 @@ toc-description: "Princípios básicos de tabelas."
 
 <span
   class="summary">Esta lição mostra como você pode construir tabelas no LaTeX,
-  influenciar o alinhamento das células, adicionar linhas à tabela e unir
+  influenciar o alinhamento das células, adicionar bordas à tabela e unir
   células.</span>
 
 Tabelas no LaTeX são feitas usando o ambiente `tabular`.  Esta lição vai assumir
@@ -53,7 +53,7 @@ coluna, mas também são úteis:
 | `*{num}{símbolos}` | repete `símbolos` no preâmbulo `num` vezes.  Com isso você pode criar várias colunas com configuração idêntica |
 | `>{decl}` | inclui `decl` antes do conteúdo de cada célula da coluna a seguir (isso é útil, por exemplo, para usar uma fonte diferente para esta coluna) |
 | `<{decl}` | inclui `decl` depois do conteúdo de cada célula da coluna anterior |
-| <span>`|`</span>  | adiciona uma linha vertical |
+| <span>`|`</span>  | adiciona uma borda vertical |
 | `@{decl}` | substitiu o espaço entre colunas por `decl` |
 | `!{decl}` | adiciona `decl` no centro do espaço existente entre colunas |
 
@@ -163,17 +163,17 @@ a primeira tabela desta lição, mas com a nova sintaxe:
 ```
 <!-- {% endraw %} -->
 
-## Adicionando linhas
+## Adicionando bordas
 
-Um conselho antes de apresentar linhas em tabelas;  linhas devem ser usadas com
-moderação em tabelas, e normalmente linhas verticais devem ser completamente
-evitadas.  De fato, tabelas 'profissionais' não devem usar nenhuma das linhas
-padrão fornecidas pelo LaTeX;  ao invés disso você deve se familiarizar com os
+Um conselho antes de incluir bordas em tabelas:  bordas devem ser usadas com
+moderação em tabelas, e normalmente bordas verticais devem ser completamente
+evitadas.  De fato, tabelas 'profissionais' não devem usar nenhuma das bordas
+padrão fornecidas pelo LaTeX;  ao invés disso, você deve se familiarizar com os
 recursos do pacote `booktabs`, e por isso começamos com ele aqui.  Para constar,
-as linhas padrão são mostradas na página de [mais informações](more-08).
+as bordas padrão são mostradas na página de [mais informações](more-08).
 
-O pacote `booktabs` fornece quatro tipos diferentes de linhas.  Cada um desses
-comandos deve ser a primeira coisa em uma linha ou deve seguir outra linha.
+O pacote `booktabs` fornece quatro tipos diferentes de borda.  Cada um desses
+comandos deve ser a primeira coisa em uma linha ou deve suceder outra borda.
 Três desses comandos são: `\toprule`, `\midrule` e `\bottomrule`, e devem ser
 usados no topo, meio e final da tabela, respectivamente:
 
@@ -199,11 +199,11 @@ usados no topo, meio e final da tabela, respectivamente:
 ```
 <!-- {% endraw %} -->
 
-O quarto comando de linha fornecido pelo `booktabs` é o `\cmidrule`.  Ele pode
-ser usado para traçar uma linha que não cobre toda a largura da tabela, mas
+O quarto comando de borda fornecido pelo `booktabs` é o `\cmidrule`.  Ele pode
+ser usado para desenhar um traço que não cobre toda a largura da tabela, mas
 apenas um conjunto específico de colunas.  Um conjunto de colunas é dado como
-um intervalo de números: `{`_número_`-`_número_`}`.  Mesmo se você quiser a
-linha apenas em uma coluna, ambos os números devem ser dados (e ser iguais,
+um intervalo de números: `{`_número_`-`_número_`}`.  Mesmo se você quiser o
+traço apenas em uma coluna, ambos os números devem ser dados (e ser iguais,
 nesse caso específico):
 
 <!-- {% raw %} -->
@@ -230,7 +230,7 @@ nesse caso específico):
 ```
 <!-- {% endraw %} -->
 
-Há outra funcionalidade útil de `\cmidrule`.  Você pode encurtá-la em qualquer
+Há outra funcionalidade útil de `\cmidrule`.  Você pode encurtá-lo em qualquer
 um dos lados com um argumento opcional entre parênteses:
 
 <!-- {% raw %} -->
@@ -258,10 +258,10 @@ um dos lados com um argumento opcional entre parênteses:
 ```
 <!-- {% endraw %} -->
 
-Você deve ter adivinhado que `r` e `l` significam que a linha é encurtada no
+Você deve ter adivinhado que `r` e `l` significam que o traço é encurtado no
 lado direito (**r**ight) e esquerdo (**l**eft), respectivamente.
 
-Às vezes uma linha é separação demais entre duas linhas da tabela, mas para que
+Às vezes um traço é separação demais entre duas linhas da tabela, mas para que
 ela não perca o significado, você pode querer separá-las de alguma forma.
 Nesse caso você pode usar `\addlinespace` para inserir um pequeno espaço
 vertical:

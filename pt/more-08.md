@@ -146,9 +146,9 @@ argumento no centro do espaço entre as colunas:
 ```
 <!-- {% endraw %} -->
 
-### Linhas verticais
+### Bordas verticais
 
-Às vezes você é obrigado a usar linhas verticais em tabelas.
+Às vezes você é obrigado a usar bordas verticais em tabelas.
 
 <!-- {% raw %} -->
 ```latex
@@ -168,20 +168,20 @@ argumento no centro do espaço entre as colunas:
 <!-- {% endraw %} -->
 
 Você deve ter percebido que o comportamento de `|` é bem similar ao `!`;  ele
-adiciona a linha vertical entre duas colunas deixando o espaçamento intacto.
-No entanto há uma grande desvantagem nisso;  linhas verticais não funcionam com
-as linhas horizontais do `booktabs`.  Você pode usar as linhas horizontais
+adiciona a borda vertical entre duas colunas deixando o espaçamento intacto.
+No entanto, há uma grande desvantagem nisso;  bordas verticais não funcionam
+com as bordas horizontais de `booktabs`.  Você pode usar as bordas horizontais
 padrão do LaTeX;  elas são `\hline` (correspondente a `\toprule`, `\midrule` e
 `\bottomrule`) e `\cline` (corresponde a `\cmidrule`).  Como mostrado acima,
-linhas verticais vão preencher qualquer espaço especificado no argumento
+bordas verticais vão preencher qualquer espaço especificado no argumento
 opcional de `\\`.
 
-## Personalizando as linhas do `booktabs`
+## Personalizando as bordas de `booktabs`
 
-Todas as linhas do pacote `booktabs` e `\addlinespace` suportam um argumento
-opcional entre colchetes com o qual você pode especificar a espessura da linha.
-Além disso, o comprimento da redução da linha do `\cmidrule` pode ser modificada
-especificando um comprimento entre chaves depois de `r` ou `l`:
+Todas as bordas do pacote `booktabs` e `\addlinespace` suportam um argumento
+opcional entre colchetes com o qual você pode especificar a espessura da
+borda. Além disso, o comprimento da redução do traço de `\cmidrule` pode ser
+modificado especificando um comprimento entre chaves depois de `r` ou `l`:
 
 <!-- {% raw %} -->
 ```latex
