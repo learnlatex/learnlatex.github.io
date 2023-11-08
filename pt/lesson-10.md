@@ -93,7 +93,7 @@ sempre use chaves.)
 
 Há _muitos_ comandos específicos para o modo matemático.  Alguns são bastante
 fáceis, por exemplo `\sin` e `\log` para o seno e logaritmo, ou `\theta` para a
-letra Grega:
+letra grega:
 
 ```latex
 \documentclass{article}
@@ -251,7 +251,7 @@ Há um conjunto de comandos que você precisa aqui:
 - `\mathtt`: espaçamento fixo (máquina de escrever)
 - `\mathbb`: traçado duplo (do pacote `amsfonts`)
 
-Cada um desses leva letras do alfabeto Latino como argumento, então por exemplo,
+Cada um desses leva letras do alfabeto latino como argumento, então por exemplo,
 podemos escrever uma matriz como:
 
 ```latex
@@ -292,7 +292,7 @@ Se você precisa deixa outros símbolos em negrito, veja
 Experimente um pouco com o modo matemático:  pegue os exemplos e troque entre
 modo linear e em exibição.  Consegue ver o efeito?
 
-Tente adicionar outras letras Gregas, tanto minúsculas quanto maiúsculas.
+Tente adicionar outras letras gregas, tanto minúsculas quanto maiúsculas.
 Você vai conseguir adivinhar o nome de algumas.
 
 Experimente com os comandos de mudança de fonte: o que acontece se você usar

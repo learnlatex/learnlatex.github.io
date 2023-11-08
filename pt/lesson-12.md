@@ -233,7 +233,7 @@ O BibTeX só pode ordenar caracteres ASCII corretamente e depende de soluções
 alternativas para fornecer ordenação baseada em ASCII para caracteres não-ASCII.
 Com o Biber, o `biblatex` tem capacidade Unicode completa para ordenar
 caracteres.  Portanto, o `biblatex` geralmente é uma escolha melhor se você quer
-organizar sua bibliografia em ordem diferente do Inglês/ASCII.
+organizar sua bibliografia em ordem diferente do inglês/ASCII.
 
 Tendo existido por muito mais tempo que o `biblatex`, o fluxo de trabalho com o
 BibTeX é mais bem estabelecido, o que significa que muitas editoras e revistas
@@ -244,8 +244,8 @@ Em resumo: verifique as diretrizes ao autor/submissão se você está enviando
 seu trabalho para uma revista ou editora.  Se você receber um arquivo `.bst`,
 você deve usar o fluxo de trabalho com o BibTeX.  Se você quer uma bibliografia
 e estilo relativamente simples e só precisa de ordenação compatível com
-Inglês/ASCII, o fluxo de trabalho com o BibTeX deve ser suficiente.  Se você
-precisa de um estilo mais complexo, usando alfabeto não-Inglês, ou quer acesso
+inglês/ASCII, o fluxo de trabalho com o BibTeX deve ser suficiente.  Se você
+precisa de um estilo mais complexo, usando alfabeto não-inglês, ou quer acesso
 mais fácil à personalização do estilo de citação e bibliografia, você vai
 preferir usar o `biblatex`.
 

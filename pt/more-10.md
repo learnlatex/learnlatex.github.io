@@ -132,7 +132,7 @@ $\mathbf{\pi} r^2$ % uso incorreto de \mathbf
 
 Se você quer acessar símbolos em negrito (conforme você obteria com `\boldmath`)
 dentro de uma expressão normal, então você pode usar o comando `\bm` do pacote
-`bm`.  Note que `\bm` também funciona com símbolos como `=` e letras Gregas.
+`bm`.  Note que `\bm` também funciona com símbolos como `=` e letras gregas.
 (Note que `\mathbf` não tem efeito em `\pi` no exemplo acima.)
 
 ```latex

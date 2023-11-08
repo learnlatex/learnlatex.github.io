@@ -49,7 +49,7 @@ em diferentes idiomas, então deve ser longo para ter no mínimo uma separação
 ```
 
 Tente des-comentar (ativar) a linha que carrega o pacote `babel` e veja o efeito. (As
-regras de hifenização padrão são para o Inglês Americano).
+regras de hifenização padrão são para o inglês americano).
 
 O pacote `babel` faz muito mais que hifenização, dependendo do idioma em
 questão; nós damos [alguns detalhas extra](more-06) se você precisar.

@@ -16,7 +16,7 @@ toc-description: "Selecionando fontes e codificação."
 
 Quando o TeX e o LaTeX começaram a ser amplamente utilizados, eles funcionavam
 apenas com idiomas Europeus, embora houvesse alguma capacidade para usar outros
-alfabetos como o Grego e o Russo.
+alfabetos como o grego e o russo.
 
 ## Acentos e letras acentuadas
 
@@ -28,7 +28,7 @@ usar as teclas nos seus teclados para digitar esses caracteres diretamente.
 Antes do Unicode, o LaTeX fornecia suporte para vários tipos de _codificação_
 dos arquivos fonte, que permitiam que o texto fosse escrito em vários idiomas
 nativamente &ndash; por exemplo, usando a codificação `latin1`, usuários
-Franceses poderiam escrever '`déjà vu`' e o LaTeX iria traduzir, internamente,
+franceses poderiam escrever '`déjà vu`' e o LaTeX iria traduzir, internamente,
 as letras acentuadas para os comandos que produziriam o resultado correto.
 
 Essa abordagem ainda é usada no LaTeX atualmente usando o `pdflatex`.  Por
@@ -90,7 +90,7 @@ catálogo para buscar fontes, assim como a
 
 Tendo escolhido uma fonte, o texto agora pode ser escrito diretamente usando
 caracteres Unicode no seu documento.  Aqui está um exemplo que usa algumas
-letras do alfabeto Latino e Grego, assim como alguns ideogramas chineses:
+letras dos alfabetos latino e grego, assim como alguns ideogramas chineses:
 
 ```latex
 % !TEX xelatex

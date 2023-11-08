@@ -32,7 +32,7 @@ Nós vamos abordar o [XeTeX e LuaTeX mais tarde](lesson-14):  o mais
 importante que você precisa saber agora é que eles são capazes de carregar
 fontes do computador, enquanto que o pdfTeX não pode.
 
-Se você está no Japão, ou escrevendo textos em Japonês, você vai se deparar com
+Se você está no Japão, ou escrevendo textos em japonês, você vai se deparar com
 o pTeX e upTeX.  Esses são interpretadores especializados para tipografia
 vertical.  LuaTeX também pode fazer isso, mas no momento o upTeX, em particular,
-ainda é o sistema mais popular para Japonês.
+ainda é o sistema mais popular para japonês.

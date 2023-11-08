@@ -2,19 +2,19 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Citações e referências"
-description: "Esta lição dá mais detalhes sobre bibliografia em outros idiomas, como transformar referências em link, e apresenta as principais diferenças entre estilos do BibTeX."
+description: "Esta lição dá mais detalhes sobre bibliografia em outros idiomas, como transformar referências em links e apresenta as principais diferenças entre estilos do BibTeX."
 toc-anchor-text: "Veja mais sobre: Citações & referências"
 ---
 
 ## Organização alfabética em outros idiomas
 
 O programa BibTeX foi escrito originalmente para trabalhar com referências em
-Inglês.  Ele é bem limitado em termos de caracteres com acentos, e ainda mais
-com caracteres não-Latinos.  Em contrapartida, o Biber foi projetado desde o
+inglês.  Ele é bem limitado em termos de caracteres com acentos, e ainda mais
+com caracteres não-latinos.  Em contrapartida, o Biber foi projetado desde o
 princípio para trabalhar com diversos alfabetos corretamente.
 
 Isso significa que, se você precisa escrever uma bibliografia em um idioma
-com alfabeto diferente do Inglês, ou até com caracteres especiais, você
+com alfabeto diferente do inglês, ou até com caracteres especiais, você
 provavelmente vai precisar usar o `biblatex` e o Biber, ao invés do `natbib`
 e BibTeX.
 
