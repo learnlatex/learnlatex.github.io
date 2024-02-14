@@ -204,6 +204,7 @@ aggiuntive richieste non è così così ovvio.)
 \tableofcontents
 \input{pref}
 ```
+<!-- {% endraw %} -->
 
 #### pref.tex
 <!-- pre2 {% raw %} -->

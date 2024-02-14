@@ -156,6 +156,7 @@ las compilaciones sucesivas necesarias).
 \tableofcontents
 \input{pref}
 ```
+<!-- {% endraw %} -->
 
 #### pref.tex
 <!-- pre2 {% raw %} -->

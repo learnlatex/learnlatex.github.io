@@ -165,6 +165,7 @@ todėl reikalingi papildomi paleidimai nėra taip pastebimi.)
 \tableofcontents
 \input{pref}
 ```
+<!-- {% endraw %} -->
 
 #### pref.tex
 <!-- pre2 {% raw %} -->

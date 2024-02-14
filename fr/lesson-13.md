@@ -170,6 +170,7 @@ successives requises ne se voient pas).
 \tableofcontents
 \input{pref}
 ```
+<!-- {% endraw %} -->
 
 #### pref.tex
 <!-- pre2 {% raw %} -->
