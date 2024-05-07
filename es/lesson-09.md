@@ -12,7 +12,7 @@ toc-description: "Referenciando figuras, tablas, etc."
 <span
   class="summary">Esta lección muestra como hacer referencia a los objetos enumerados de un documento, como las figuras, las tablas, las secciones.</span>
 
-Cuando esté escribiendo un documento, poco importa el tamaño del mimso, usted querrá hacer referencias
+Cuando esté escribiendo un documento, poco importa el tamaño del mismo, usted querrá hacer referencias
 a elementos enumerados tales como las figuras, las tablas o las ecuaciones. Afortunadamente, LaTeX
 puede añadir automáticamente los números correctos; sólo tenemos que ajustar algunas cosas.
 
@@ -28,7 +28,7 @@ en otro lugar.
 \begin{document}
 ¡Hey mundo!
 
-Éste es un primer documento.
+Este es un primer documento.
 
 \section{Título de la primera sección}
 
@@ -61,7 +61,7 @@ Cuando usted pide información de la referencia, LaTeX va a buscarla en el archi
 Los elementos `subsec:` y `eq:` no son usados por LaTeX;
 más bien, LaTeX sólo guarda una traza de lo que ha sido
 procesado recientemente.
-Pero cuando usted está escribiendo, ésto puede ayudarle a recordar a qué
+Pero cuando usted está escribiendo, esto puede ayudarle a recordar a qué
 hace referencia cada etiqueta.
 
 Puede que vea referencias que son mostradas, en un PDF de salida,
@@ -89,7 +89,7 @@ dentro del entorno del objeto flotante.
 ## Ejercicios
 
 Pruebe a añadir nuevas partes enumeradas (secciones, subsecciones, listas enumeradas)
-al documento de test y vea cuantas compilaciones son necesarias para hacer que los
+al documento de test y vea cuántas compilaciones son necesarias para hacer que los
 comandos `\label` funcionen correctamente.
 
 Añada algunos elementos flotantes y vea lo que ocurre cuando sitúa el comando `\label` _antes_ de
