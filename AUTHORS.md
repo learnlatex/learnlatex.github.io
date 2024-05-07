@@ -27,4 +27,5 @@ The following people have made contributions to learnlatex.org:
 - Uwe Ziegenhagen
 - निरंजन
 - Tommaso Gordini
+- Jhonatan David Arias Quispe
 
