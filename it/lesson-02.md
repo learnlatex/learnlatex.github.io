@@ -141,7 +141,7 @@ solo quando hai capito qual è il modo migliore
 di lavorare con LaTeX _per te_.
 
 Sarai in grado di [svolgere tutti gli altri 
-nostri esercizi direttamente nel tuo browser](help.md), 
+nostri esercizi direttamente nel tuo browser](help), 
 ma dato che vogliamo aiutarti a lavorare 
 con documenti reali, è ora il momento giusto 
 per prepararti.
