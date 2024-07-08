@@ -145,3 +145,12 @@ nostri esercizi direttamente nel tuo browser](help),
 ma dato che vogliamo aiutarti a lavorare 
 con documenti reali, è ora il momento giusto 
 per prepararti.
+
+1 [test1](help.md)
+
+2 [test
+ 2](help.md)
+
+
+3 [test
+ 3](help)
