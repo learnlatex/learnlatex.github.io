@@ -143,7 +143,7 @@ A paragraph about a larger equation
 ```
 
 The equation number is incremented automatically and may be a simple
-number as in this example or may be prefixed by section number, so
+number as in this example or may be prefixed by a section number, so
 (2.5) for the 5th equation in section 2. The details of the formatting
 are set up by the document class and not described here.
 
