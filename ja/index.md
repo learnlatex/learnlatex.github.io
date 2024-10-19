@@ -2,13 +2,13 @@
 layout: "start"
 lang: "ja"
 title: "Learn LaTeX: 無料の初心者向けオンラインレッスン"
-description: "Learn LaTeXは16の初心者向けレッスンから成ります。高品質な組版を実現するために設計された文書システム「LaTeX」に入門しましょう。"
+description: "Learn LaTeXは16の初心者向けレッスンから成ります。高品質な組版を実現するために設計された文書作成システム「LaTeX」に入門しましょう。"
 permalink: /ja/
 ---
 
 # Learn LaTeX（日本語版）
 
-<h2 class="heading__introduction">高品質な組版を実現するために設計された文書システム「LaTeX」に入門しましょう。</h2>
+<h2 class="heading__introduction">高品質な組版を実現するために設計された文書作成システム「LaTeX」に入門しましょう。</h2>
 
 <div class="text-columns">
   <section>
