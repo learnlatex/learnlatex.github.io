@@ -14,9 +14,8 @@ toc-description: "मजकुराची अक्षरजुळणी."
 प्रकरणात आपण शिकू.
 </span>
 
-We have already seen that a blank line in your input will generate a new
-paragraph in LaTeX. This shows up as the paragraph will start with an
-indent.
+आपण हे आधीच पाहिले आहे की एक मोकळी ओळ सोडल्यामुळे लाटेक्-मध्ये नवीन परिच्छेद तयार
+होतो. अशा प्रकारे परिच्छेद सुरू होताना ओळीच्या सुरुवातीस किंचित मोकळी जागा सुटते.
 
 ## ओळींमधील मोकळी जागा
 

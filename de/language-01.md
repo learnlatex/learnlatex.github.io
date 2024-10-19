@@ -16,7 +16,7 @@ toc-description: "Besonderheiten für die deutsche Sprache."
 TeX und LaTeX wurden ursprünglich für die englische Sprache entwickelt, was man
 an vielen Voreinstellungen erkennt. Um viele Einstellungen auf Deutsch
 umzuschalten, kann das `babel`-Paket, wie in [einer früheren
-Lektion](lesson-06.md) gezeigt, verwendet werden. Wichtig ist hier die
+Lektion](lesson-06) gezeigt, verwendet werden. Wichtig ist hier die
 Verwendung der Option `ngerman` für die _neue_ Rechtschreibung. Durch das Paket
 werden die Regeln zur Silbentrennung angepasst, außerdem werden bestimmte
 Dokumentbestandteile automatisch ins Deutsche übersetzt, wie etwa

@@ -24,6 +24,7 @@ Trong cửa sổ lệnh bạn gõ lệnh
 ```
 texdoc <gói>
 ```
+{: .noedit :}
 
 Khi đó lệnh sẽ mở hướng dẫn sử dụng của `<gói>`. Lệnh này sẽ tìm kiếm trong tất
 cả các hướng dẫn sử dụng có sẵn và mở văn bản mà nó thấy là phù hợp nhất trong
@@ -33,6 +34,7 @@ các kết quả tìm kiếm có được. Bạn có thể in ra danh sách nh�
 ```
 texdoc -l <gói>
 ```
+{: .noedit :}
 
 ## texdoc.org
 

@@ -1,34 +1,30 @@
 ---
 layout: "page"
 lang: "mr"
-title: Privacy Policy
+title: गोपनीयतेचे धोरण
 permalink: /mr/privacy
 ---
-# Privacy Policy
+# गोपनीयतेचे धोरण
 
-## User Data
+## वापरकर्त्यांची माहिती
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+लर्नलाटेक्.ओआरजी ह्या संकेतस्थळात वापरकर्त्यांना कोणतीही माहिती पुरवून प्रवेश घ्यावा लागत
+नाही. हे संकेतस्थळ गिटहब-पेजेस ह्या तंत्रज्ञानाचा वापर करून बनवले गेले असल्यामुळे वापरकर्त्यांची
+कोणतीही माहिती निर्मात्यांपर्यंत पोहोचू शकत नाही. गूगल ॲनलिटिक्सप्रमाणे कोणतीही हेरगिरी ह्या
+संकेतस्थळाकडून केली जात नाही.
 
-## Cookies
+## स्मृती
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
+ह्या संकेतस्थळातर्फे मूलभूतरीत्या कोणत्याही स्मृती घडवल्या जात नाहीत. हे वापरकर्त्यांच्या
+प्राधान्यांकरिता असलेल्या पानावर नमूद करण्यात आले आहे, परंतु स्मृती तयार करण्याची निवड वापरकर्ते
+करू शकतात. ह्या स्मृतींमार्फत मूलभूत टेक्-चालक निवडून ठेवता येऊ शकतो. हे तपशील लर्नलाटेक्.ओआरजी
+ह्या संकेतस्थळास प्राप्त होत नसून ते केवळ तुमच्या संगणकावर जतन करून ठेवले जातात.
 
-## External Sites
+## बाह्य सेवा
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+जर लाटेक्-आज्ञावली चालवण्यासाठी एखादी सेवा वापरण्यात आली तर येथील मजकूर-संपादकातील आज्ञावली
+https POST ह्या विनंतीद्वारे त्या सेवेस पुरवली जाईल व अशा वेळी ती आज्ञावली त्या बाह्य सेवेच्या
+गोपनीयता धोरणाच्या अधीन असेल. पुढील दुव्यांवर ती धोरणे वाचता येतील.
 
-* [Overleaf](https://www.overleaf.com/legal)
-* [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
+* [ओव्हरलीफ](https://www.overleaf.com/legal)
+* [टेक्-लाइव्ह.नेट](https://davidcarlisle.github.io/latexcgi/privacy)
