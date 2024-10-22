@@ -72,10 +72,10 @@ Some text in \textit{italic and \textit{nested} content}.
 
 LaTeXではドキュメントをいくつもの階層に分けることができます。
 
-- 章`\chapter`
-- 節`\section`
-- 小節`\subsection`
-- 小々節`\subsubsection`
+- 章 `\chapter`
+- 節 `\section`
+- 小節 `\subsection`
+- 小々節 `\subsubsection`
 
 さらに小さな階層も存在します。小々節の「次」には`\paragraph`というものがありますが、ほとんどの場合ここまで使うのは「やりすぎ」です。（わかりにくいですが`\paragraph`はセクショニング（ざっくりいうと「見出し出力」）のコマンドです。段落を開始する命令では**ありません**！）
 
