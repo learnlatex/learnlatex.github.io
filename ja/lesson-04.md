@@ -28,7 +28,6 @@ LaTeXは文書の「見た目」を直接いじるだけでなく、「論理構
 これが\textbf{太字にされたテキストと\textbf{さらに入れ子にされたテキスト}}です。
 
 \section{英語の強調}
-
 一般的にはイタリック体を使用。
 
 Some text with \emph{emphasis and \emph{nested} content}.
