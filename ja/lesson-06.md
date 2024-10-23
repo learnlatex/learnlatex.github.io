@@ -49,7 +49,7 @@ material, and which will be able to give us at least one hyphenation point.
 
 ```latex
 \RequirePackage{plautopatch}
-\documentclass{jlreq}
+\documentclass[dvipdfmx]{jlreq}
 \usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
 
@@ -95,7 +95,7 @@ LaTeXの強みの1つは、何千とあるパッケージから好きなもの�
 
 ```latex
 \RequirePackage{plautopatch}
-\documentclass{jlreq}
+\documentclass[dvipdfmx]{jlreq}
 
 \newcommand\kw[1]{\textbf{\gtfamily #1}}
 
@@ -112,7 +112,7 @@ LaTeXの強みの1つは、何千とあるパッケージから好きなもの�
 
 ```latex
 \RequirePackage{plautopatch}
-\documentclass{jlreq}
+\documentclass[dvipdfmx]{jlreq}
 \usepackage{xcolor}
 
 \newcommand\kw[1]{\textcolor{blue}{\gtfamily #1}}
