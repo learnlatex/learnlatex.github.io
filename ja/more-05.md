@@ -15,6 +15,7 @@ toc-anchor-text: "追加レッスン：文書クラスを利用したデザイ�
 特別な機能が必要な場面の1つはプレゼンテーション用スライドの作成です。標準の`slides`クラスは「古典的」な印刷スライドを作成するために作成されたもので、スクリーン表示のためのプレゼンテーション用の特殊機能は何もサポートしていません。そうした目的のために開発されたクラスのうち、広く使用されているものは`beamer`と`powerdot`です。おそらく`beamer`の方がより一般的なので、以下にはそのコードの一例を示します。
 
 ```latex
+\RequirePackage{plautopatch}
 \documentclass{beamer}
 \usepackage[T1]{fontenc}
 \begin{document}
