@@ -16,7 +16,7 @@ toc-anchor-text: "追加レッスン：文書クラスを利用したデザイ�
 
 ```latex
 \RequirePackage{plautopatch}
-\documentclass{beamer}
+\documentclass[dvipdfmx]{beamer}
 \usepackage[T1]{fontenc}
 \begin{document}
 
@@ -44,7 +44,7 @@ toc-anchor-text: "追加レッスン：文書クラスを利用したデザイ�
 時としてLaTeXで画像（特にテキストが多いようなもの）を作成したいという場合があります。そのような場合は、目的とする画像コンテンツ以外のものが「ページ」に一切ない方が好都合です。このようなときは[`standalone`](https://ctan.org/pkg/standalone)クラスを使うと簡単です。この文書クラスは印刷されるコンテンツの周辺だけが入るように自動的に紙面サイズを設定してくれます。
 
 ```latex
-\documentclass{standalone}
+\documentclass[dvipdfmx]{standalone}
 \begin{document}
 シンプルな文書：とても小さな紙面になります！
 \end{document}
