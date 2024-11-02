@@ -34,7 +34,7 @@ permalink: /fr/
 
 <h2 class="heading__toc" id="toc">Les leçons</h2>
 
-<p class="paragraph__toc">À la fin de chaque leçon, vous trouverez un lien <b>Pour aller plus loin</b>. Ces renseignements supplémentaires sont là pour vous aider si vous avez besoin de détails, mais ils ne doivent pas vous embarraser si vous n'en avez pas besoin.</p>
+<p class="paragraph__toc">À la fin de chaque leçon, vous trouverez un lien <b>Pour aller plus loin</b>. Ces renseignements supplémentaires sont là pour vous aider si vous avez besoin de détails, mais ils ne doivent pas vous embarrasser si vous n'en avez pas besoin.</p>
 
 {% include toc-lessons.html prefix="fr/lesson" %}
 
