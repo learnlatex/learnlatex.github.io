@@ -104,3 +104,9 @@ defaults:
     values:
       lang: "ca"
       label: "Català"
+  -
+    scope:
+      path: "zh"
+    values:
+      lang: "zh"
+      label: "中文（简体）"

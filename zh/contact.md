@@ -1,23 +1,23 @@
 ---
 layout: "page"
-lang: "en"
-title: Contact
-permalink: /en/contact
+lang: "zh"
+title: 联系方式
+permalink: /zh/contact
 ---
 
-# Contact
+# 联系方式
 
-## Individual Support
+## 个人支持
 
-Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
+很遗憾，我们没有足够的资源为LaTeX问题提供个人帮助，因此不会回复寻求支持的邮件。请查看[LaTeX项目的帮助页面](https://www.latex-project.org/help/)以获得帮助。
 
-## Website Team
+## 网站团队
 
-The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details.
+本网站的[源代码](https://github.com/learnlatex/learnlatex.github.io/)托管在[GitHub](https://github.com/learnlatex/)上，详情请参阅[贡献指南](../CONTRIBUTING)和[许可证](../LICENSE)。
 
-You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+您也可以[在GitHub上提交问题](https://github.com/learnlatex/learnlatex.github.io/issues)或[发送邮件](mailto:texfaq@texfaq.org)给我们提出建议。
 
-## Impressum
+## 版本说明
 
 <p>Joseph Wright<br>
 14, Woodlands Chase<br>

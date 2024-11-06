@@ -45,7 +45,7 @@ heading_meta:
   pt: "Meta"
   tr: "Meta"
   vi: "Meta"
-  zh: "Missing"
+  zh: "Meta"
   mr: "अधिक"
   ca: "Meta"
 heading_navigation:
@@ -59,7 +59,7 @@ heading_navigation:
   pt: "Navegação"
   tr: "Site Haritası"
   vi: "Điều hướng"
-  zh: "Missing"
+  zh: "导航"
   mr: "पृष्ठे"
   ca: "Navegació"
 heading_planet:
@@ -73,7 +73,7 @@ heading_planet:
   pt: "Planeta"
   tr: "Alakalı Sayfalar"
   vi: "Liên kết ngoài"
-  zh: "Missing"
+  zh: "行星"
   mr: "लाटेक्-विश्व"
   ca: "Planeta"
 informational-elements_lesson:
@@ -87,7 +87,7 @@ informational-elements_lesson:
   pt: "Lição"
   tr: "Ders"
   vi: "Bài học"
-  zh: "課"
+  zh: "课"
   mr: "प्रकरण"
   ca: "Lliçó"
 informational-elements_search:
@@ -115,7 +115,7 @@ navigational-elements_home:
   pt: "Página inicial"
   tr: "Ana Sayfa"
   vi: "Trang chủ"
-  zh: "Missing"
+  zh: "主页"
   mr: "मुखपृष्ठ"
   ca: "Pàgina d'inici"
 navigational-elements_mission:
@@ -129,7 +129,7 @@ navigational-elements_mission:
   pt: "Missão"
   tr: "Amaç"
   vi: "Sứ mệnh"
-  zh: "Missing"
+  zh: "任务"
   mr: "उद्दिष्ट"
   ca: "Missió"
 navigational-elements_help:
@@ -143,7 +143,7 @@ navigational-elements_help:
   pt: "Ajuda"
   tr: "Yardım"
   vi: "Hỗ trợ"
-  zh: "救命"
+  zh: "帮助"
   mr: "मदत"
   ca: "Ajuda"
 navigational-elements_settings:
@@ -157,7 +157,7 @@ navigational-elements_settings:
   pt: "Configurações"
   tr: "Settings"
   vi: "Cài đặt trang"
-  zh: "Settings"
+  zh: "设置"
   mr: "प्राधान्ये"
   ca: "Configuració"
 navigational-elements_contact:
@@ -171,7 +171,7 @@ navigational-elements_contact:
   pt: "Contato"
   tr: "İletişim"
   vi: "Liên hệ"
-  zh: "Missing"
+  zh: "联系方式"
   mr: "संपर्क"
   ca: "Contacte"
 navigational-elements_licenses:
@@ -185,7 +185,7 @@ navigational-elements_licenses:
   pt: "Licenças"
   tr: "Lisanslar"
   vi: "Giấy phép"
-  zh: "執照"
+  zh: "许可"
   mr: "परवाने"
   ca: "Llicències"
 navigational-elements_privacy:
@@ -199,7 +199,7 @@ navigational-elements_privacy:
   pt: "Privacidade"
   tr: "Privacy"
   vi: "Chính sách bảo mật"
-  zh: "Privacy"
+  zh: "隐私"
   mr: "गोपनीयता धोरण"
   ca: "Privacitat"
 navigational-elements_open-an-issue:
@@ -213,7 +213,7 @@ navigational-elements_open-an-issue:
   pt: "Abra um problema"
   tr: "Problem bildir"
   vi: "Báo lỗi"
-  zh: "Missing"
+  zh: "提交问题"
   mr: "सुधारणा/तक्रार नोंदवा"
   ca: "Obrir un problema"
 navigational-elements_page-source:
@@ -227,7 +227,7 @@ navigational-elements_page-source:
   pt: "Fonte da página"
   tr: "Sayfa kaynağı"
   vi: "Nguồn trang"
-  zh: "Missing"
+  zh: "页面源码"
   mr: "पृष्ठाचे आज्ञावलीय बीज"
   ca: "Font de la pàgina"
 navigational-elements_more:
@@ -241,7 +241,7 @@ navigational-elements_more:
   pt: "Mais sobre este tópico"
   tr: "Daha fazla detay…"
   vi: "Xem bài bổ sung của bài này"
-  zh: "有關此主題的更多信息"
+  zh: "关于此主题的更多信息"
   mr: "ह्याबाबत अधिक माहिती"
   ca: "Més sobre aquest tema"
 navigational-elements_next:
@@ -255,7 +255,7 @@ navigational-elements_next:
   pt: "Próxima lição"
   tr: "Sonraki ders"
   vi: "Bài tiếp theo"
-  zh: "Missing"
+  zh: "下一课"
   mr: "पुढील प्रकरण"
   ca: "Següent lliçó"
 navigational-elements_nextmain:
@@ -269,7 +269,7 @@ navigational-elements_nextmain:
   pt: "Próxima lição principal"
   tr: "Bir sonraki ana ders"
   vi: "Bài chính tiếp theo"
-  zh: "Missing"
+  zh: "下一主课程"
   mr: "पुढील मुख्य प्रकरण"
   ca: "Següent lliçó principal"
 navigational-elements_return:
@@ -283,7 +283,7 @@ navigational-elements_return:
   pt: "Retornar à lição principal"
   tr: "Derse dön"
   vi: "Quay trở lại bài chính"
-  zh: "Missing"
+  zh: "回到主课程"
   mr: "मुख्य प्रकरणाकडे परत जा"
   ca: "Tornar a la lliçó principal"
 navigational-elements_toc:
@@ -297,7 +297,7 @@ navigational-elements_toc:
   pt: "Índice"
   tr: "Konu Başlıkları"
   vi: "Mục lục"
-  zh: "目錄"
+  zh: "目录"
   mr: "अनुक्रमणिका"
   ca: "Taula de contingut"
 navigational-elements_latex_project:
@@ -311,7 +311,7 @@ navigational-elements_latex_project:
   pt: "The LaTeX Project"
   tr: "The LaTeX Project"
   vi: "The LaTeX Project"
-  zh: "The LaTeX Project"
+  zh: "LaTeX 项目"
   mr: "लाटेक् प्रकल्प"
   ca: "The LaTeX Project"
 navigational-elements_tug:
@@ -325,7 +325,7 @@ navigational-elements_tug:
   pt: "TeX Users Group"
   tr: "TeX Users Group"
   vi: "TeX Users Group"
-  zh: "TeX Users Group"
+  zh: "TeX 用户组"
   mr: "टेक् यूजर्स ग्रुप"
   ca: "TeX Users Group"
 navigational-elements_ctan:
