@@ -1,10 +1,10 @@
 ---
 layout: "page"
-lang: "zh"
+lang: "en"
 title: Site Settings
-permalink: /zh/settings
+permalink: /en/settings
 ---
-# Site Settings (User Preferences) (ZH)
+# Site Settings (User Preferences)
 
 ## Accept or Delete Cookies
 

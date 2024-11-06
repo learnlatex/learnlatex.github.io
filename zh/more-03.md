@@ -1,12 +1,12 @@
 ---
 layout: "lesson"
-lang: "zh"
-title: "More on: Your first LaTeX document"
-description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF. (Chinese)"
-toc-anchor-text: "More on: Your first LaTeX document"
+lang: "en"
+title: "More on: Basic LaTeX document structure"
+description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
+toc-anchor-text: "More on: Basic LaTeX document structure"
 ---
 
-## Running LaTeX (Chinese)
+## Running LaTeX
 
 As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
 this, try opening your first document in a simple text editor, for example
