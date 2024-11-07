@@ -1,52 +1,42 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Basic LaTeX document structure"
-description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
-toc-anchor-text: "More on: Basic LaTeX document structure"
+lang: "zh"
+title: "更多内容：基本LaTeX文档结构"
+description: "本课提供了更多关于如何运行LaTeX、它使用的特殊字符以及如何在输出PDF中插入这些字符的细节。"
+toc-anchor-text: "更多内容：基本LaTeX文档结构"
 ---
 
-## Running LaTeX
+## 运行LaTeX
 
-As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
-this, try opening your first document in a simple text editor, for example
-on Windows using Notepad. You should see the same text as in a dedicated LaTeX
-editor, but without any highlight of keywords.
+正如[前文所述](lesson-02)，LaTeX文档就是纯文本文件。要看到这一点，试着用一个简单的文本编辑器打开您的第一个文档，例如在Windows上使用记事本。您应该看到与在专门的LaTeX编辑器中相同的文本，只是没有任何关键字高亮显示。
 
-You can also convert to PDF without your editor; this means using the Command
-Prompt/Terminal, so don't worry if you are not familiar with this. If you
-*are*, you can navigate to the directory containing your `.tex` source file and
-run
+您也可以不使用编辑器来转换为PDF；这意味着要使用命令提示符/终端，如果您不熟悉这个也不用担心。如果您_熟悉_，可以导航到包含您的`.tex`源文件的目录，然后运行
 
 `pdflatex first`
 
-or
+或
 
 `pdflatex first.tex`
 
-to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with `.tex` unless you specify otherwise.
+来生成您的PDF。注意`.tex`扩展名是可选的：除非您指定其他扩展名，否则LaTeX会假定文件以`.tex`结尾。
 
-## Special characters
+如果您的文件内容包含中文字符，请使用`xelatex`或`lualatex`命令代替`pdflatex`。这些命令可以处理中文字符，但它们可能需要额外的设置。
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need to use a longer command instead:
+## 特殊字符
 
-| Symbol | Short Command <br><small>(math and text)</small> | Long Command <br><small>(for text only)</small> |
-| --- | --- | --- |
-| `{`    | `\{`          | `\textbraceleft`  |
-| `}`    | `\}`          | `\textbraceright` |
-| `$`    | `\$`          | `\textdollar`     |
-| `%`    | `\%`          |                   |
-| `&`    | `\&`          |                   |
-| `#`    | `\#`          |                   |
-| `_`    | `\_`          | `\textunderscore` |
-| ``\``  |               | `\textbackslash`  |
-| `^`    |               | `\textasciicircum`|
-| `~`    |               | `\textasciitilde` |
+如果您需要输入特殊字符，大多数情况下您可以在它前面加一个反斜杠，例如`\{`用于打印一个字面的`{`。有一些情况下您需要使用更长的命令：
 
-For the last three symbols there are no short commands available,
-because `\\` is used to indicate a linebreak and `\~` and `\^` are used
-to produce tilde and circumflex accents when using only ASCII
-characters as input.
+| 符号  | 短命令 <br><small>（数学和文本）</small> | 长命令 <br><small>（仅用于文本）</small> |
+| ----- | ---------------------------------------- | ---------------------------------------- |
+| `{`   | `\{`                                     | `\textbraceleft`                         |
+| `}`   | `\}`                                     | `\textbraceright`                        |
+| `$`   | `\$`                                     | `\textdollar`                            |
+| `%`   | `\%`                                     |                                          |
+| `&`   | `\&`                                     |                                          |
+| `#`   | `\#`                                     |                                          |
+| `_`   | `\_`                                     | `\textunderscore`                        |
+| ``\`` |                                          | `\textbackslash`                         |
+| `^`   |                                          | `\textasciicircum`                       |
+| `~`   |                                          | `\textasciitilde`                        |
+
+对于最后三个符号，没有短命令可用，因为`\\`用于表示换行，而`\~`和`\^`用于在仅使用ASCII字符作为输入时生成波浪符和抑扬符重音。
