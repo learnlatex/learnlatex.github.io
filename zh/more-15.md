@@ -117,8 +117,19 @@ l.5 Text_word  $\alpha
 如果您在TeXLive.net服务器上尝试这个示例，它默认会返回一个PDF；要在日志中查看错误消息，请添加`%!TeX log`。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 
 \begin{document}
 
@@ -127,7 +138,7 @@ l.5 Text_word  $\alpha
 \end{document}
 ```
 
-在这个示例中，字体大小更改错误地用`)`而不是`}`结束。这直到文件末尾才被检测到，当TeX检测到仍有一个未关闭的组时。它在这里报告了组被打开的行`{`。它无法检测到实际的错误，因为`)`被视为"普通文本"。
+在这个示例中，字体大小更改错误地用`)`而不是`}`结束。���直到文件末尾才被检测到，当TeX检测到仍有一个未关闭的组时。它在这里报告了组被打开的行`{`。它无法检测到实际的错误，因为`)`被视为"普通文本"。
 
 ```
 (\end occurred inside a group at level 1)
