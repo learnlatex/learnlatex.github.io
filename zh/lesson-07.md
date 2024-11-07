@@ -1,80 +1,97 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Including graphics and positioning"
-description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
-toc-anchor-text: "Using graphics"
-toc-description: "Appearance and positioning of graphics."
+lang: "zh"
+title: "包含图片和定位"
+description: "本课展示了如何在文档中包含外部图片文件，如何更改它们的外观，以及如何让它们在PDF中自动定位到合适的位置。"
+toc-anchor-text: "使用图片"
+toc-description: "图片的外观和定位。"
 ---
 
-# Including Graphics and positioning
+# 包含图片和定位
 
 <span
-  class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
+  class="summary">本课展示了如何在文档中包含外部图片文件，如何更改它们的外观，以及如何让它们自动定位或浮动到合适的位置。</span>
 
-To bring in graphics from outside LaTeX, use the `graphicx`
-package, which adds the command `\includegraphics` to LaTeX.
+要在LaTeX中引入外部图片，请使用`graphicx`宏包，它为LaTeX添加了`\includegraphics`命令。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{graphicx}
 
 \begin{document}
-This picture
+这张图片
 \begin{center}
   \includegraphics[height=2cm]{example-image}
 \end{center}
-is an imported PDF.
+是导入包含外部图片的PDF。
 \end{document}
 ```
 
-You can include EPS, PNG, JPG, and PDF files.
-If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extension if you do not give one.)
+您可以包含EPS、PNG、JPG和PDF格式的文件。如果您有一个图片的多个版本，那么您可以写成`example-image.png`这样的形式。（如果您没有给出扩展名，`graphicx`宏包会尝试猜测扩展名。）
 
-You'll notice we've used a new environment here, `center`, to place the image
-horizontally centered on the page. [A bit later](lesson-11), we'll talk more
-about spacing and positioning.
+您会注意到我们在这里使用了一个新的环境`center`，用于将图片在页面上水平居中。[稍后](lesson-11)，我们将更多地讨论间距和定位。
 
-## Altering graphic appearance
+## 修改图片外观
 
-The `\includegraphics` command has many options to control
-the size and shape of the included images and to trim down material. Some of
-these are used a lot, so they are worth being aware of.
+`\includegraphics`命令有许多选项来控制图片的大小和形状，以及裁剪掉不需要的部分。其中一些选项使用很多，所以值得了解。
 
-The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` or `\linewidth` and
-`\textheight`. The difference between `\textwidth` and `\linewidth` is subtle
-and often the result is the same. `\textwidth` is the width of the text block on
-the physical page, whereas `\linewidth` is the _current_ width, which might
-locally be different (the difference is most obvious with the class option
-`twocolumn`). LaTeX will automatically scale the image so that the aspect
-ratio stays correct.
+最明显的设置是设置图片的`width`（宽度）或`height`（高度），这些通常相对于`\textwidth`或`\linewidth`以及`\textheight`来设置。`\textwidth`和`\linewidth`的区别很微妙，通常结果是相同的。`\textwidth`是物理页面上文本块的宽度，而`\linewidth`是_当前_宽度，这可能在局部上有所不同（这种差异在使用`twocolumn`类选项时最为明显）。LaTeX会自动缩放图片以保持宽高比。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{graphicx}
 
 \begin{document}
 \begin{center}
   \includegraphics[height = 0.5\textheight]{example-image}
 \end{center}
-Some text
+一些文本
 \begin{center}
   \includegraphics[width = 0.5\textwidth]{example-image}
 \end{center}
 \end{document}
 ```
 
-You can also `scale` images, or rotate them by an `angle`. The other thing you
-might want to do is to `clip` and `trim` an image.
+您还可以`scale`（缩放）图片，或者通过`angle`（角度）旋转它们。另一个您可能想要做的是`clip`（裁剪）和`trim`（修剪）图片。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{graphicx}
 
 \begin{document}
@@ -84,65 +101,58 @@ might want to do is to `clip` and `trim` an image.
 \end{document}
 ```
 
-## Making images float
+## 让图片浮动
 
-Traditionally in typesetting, particularly with technical documents,
-graphics may move to another spot in the document.
-This is called a *float*. Images are normally included as floats so they do
-not leave large gaps in the page.
+在排版中，特别是技术文档时，图片可能会移动到文档的其他位置。这称为*浮动*。图片通常作为浮动体包含，这样它们不会在页面中留下大片空白。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummy text as filler
+\usepackage{lipsum}  % 生成填充文本
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
+\lipsum[1-4] % 几个填充段落
 
-Test location.
+测试浮动位置
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image-a.png}
-  \caption{An example image}
+  \caption{一个示例图片}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % 几个填充段落
 \end{document}
 ```
 
-Here LaTeX moves the graphic and the caption
-away from the `Test location` text to the top of the second page,
-because there isn't room for it on the bottom of the first page.
-The `ht` influences where LaTeX can place the float; these two
-letters mean that it can go where it is in the source (next to
-`Test location`) or to the top of a page. You can use up to four position
-specifiers
+这里LaTeX将图片和标题从`测试位置`文本处移到了第二页的顶部，因为第一页底部没有足够的空间。`ht`影响LaTeX可以放置浮动体的位置；这两个字母表示它可以放在源代码所在位置（在`测试位置`旁边）或页面顶部。您最多可以使用四个位置说明符：
 
-- `h` 'Here' (if possible)
-- `t` Top of the page
-- `b` Bottom of the page
-- `p` A dedicated page only for floats
+- `h` "这里"（如果可能）
+- `t` 页面顶部
+- `b` 页面底部
+- `p` 专门用于浮动体的页面
 
-[Later](lesson-09), we will see how to cross-reference floats so you can point
-to them from your text.
+[稍后](lesson-09)，我们将看到如何交叉引用浮动体，这样您就可以在文本中指向它们。
 
-You'll probably spot that we've centered the image here using `\centering`
-rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally center content; this avoids both
-the float and `center` environment adding extra vertical space.
+您可能注意到我们在这里使用了`\centering`而不是`center`环境来居中图片。在浮动体内部，如果您想要水平居中内容，应该使用`\centering`；这可以避免浮动体和`center`环境都添加额外的垂直空间。
 
-## Exercises
+## 练习
 
-Try including an image you have created, replacing the 'standard' ones we have
-used in the demonstration.
+尝试包含您创建的图片，替换我们在演示中使用的"标准"图片。
 
-Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+探索使用`height`、`width`、`angle`和`scale`键可以做什么。
 
-Use the `width` key to set the size of a graphic relative to `\textwidth` and
-another graphic relative to `\linewidth`. Try out how they behave with or
-without the `twocolumn` option.
+使用`width`键将一个图片的大小设置为相对于`\textwidth`，另一个图片相对于`\linewidth`。尝试它们在有或没有`twocolumn`选项时的表现。
 
-Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different
-specifiers interact?
+使用`lipsum`制作一个相当长的演示，然后尝试使用不同的位置说明符来放置浮动体。不同的说明符如何相互作用？
