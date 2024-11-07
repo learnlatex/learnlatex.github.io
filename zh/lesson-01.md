@@ -1,48 +1,31 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "What LaTeX is and how it works"
-description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
-toc-anchor-text: "LaTeX basics"
-toc-description: "What LaTeX is and how it works."
+lang: "zh"
+title: "LaTeX是什么以及它如何工作"
+description: "本课解释了LaTeX的基本概念以及它与常见文字处理器（如Microsoft Word或LibreOffice Writer）的不同之处。"
+toc-anchor-text: "LaTeX基础"
+toc-description: "LaTeX是什么以及它如何工作。"
 ---
 
-# LaTeX basics
+# LaTeX基础
 
 <span
-  class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>
+  class="summary">本课解释了LaTeX的基本概念以及它与常见文字处理器（如Microsoft Word或LibreOffice Writer）的不同之处。</span>
 
-Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
+与常见的文字处理器（如Microsoft Word或LibreOffice Writer）不同，LaTeX通常不提供所见即所得（WYSIWYG）。使用LaTeX时，您需要将纯文本与标记结合使用。这些标记告诉LaTeX文本中某些元素的逻辑意义，类似于HTML的工作方式。
 
-Take for example the element `<h2>` indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+例如，HTML文档中的`<h2>`元素表示一个新章节。LaTeX也有一个命令用于此目的；在这里您可以使用`\section`命令。
 
-## The LaTeX workflow
+## LaTeX工作流程
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+因为LaTeX文件不是文档本身，而是关于文档各部分应该是什么的指令，您通常不会直接将LaTeX文件发送给他人。相反，在编写完LaTeX源文件后，您需要使用LaTeX（通常使用一个名为`pdflatex`的程序）来生成PDF文件。然后，您将这个PDF文件发送给他人。
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+不同的人对这个过程有不同的描述。由于使用LaTeX有点像编程，它通常被称为“编译”文档，尽管“排版”更为准确。
 
-## Multiple LaTeX runs
+## 多次运行LaTeX
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+对于简单的文件，您只需排版一次即可获得完整的PDF。但一旦您开始添加更复杂的内容，如交叉引用、引用、图形和目录，您可能需要多次运行LaTeX。我们会告诉您何时需要这样做。
 
-## LaTeX or pdfLaTeX or ...
+## LaTeX或pdfLaTeX或其他
 
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX Program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+在[下一课](lesson-02)中，我们将看到LaTeX不是一个单一的程序。为了简化，我们将专注于一个特定的LaTeX程序pdfLaTeX（本课程的中文版使用XeLaTeX以活得更好的中文支持，但是pdfLaTeX仍然是最常用的LaTeX程序）来创建您的PDF。我们将在课程后面讨论其他程序以及为什么您可能想要使用它们。
