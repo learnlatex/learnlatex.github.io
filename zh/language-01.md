@@ -8,24 +8,6 @@ toc-anchor-text: "中文语言特性"
 toc-description: "使用LaTeX进行中文排版。"
 ---
 
-# 英语的语言特性
-
-<span
-  class="summary">本课展示了使用LaTeX进行英语排版的语言特性细节，重点在于连字符的使用，英国和美国的传统有所不同。</span>
-
-## 连字符
-
-LaTeX是为英语使用而编写的，因此作者在使用英语时面临的语言特定问题很少。主要问题是连字符：英国和美国的传统有所不同。LaTeX默认使用美式英语模式，但您可以使用`babel`切换到英式模式。
-
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage[UKenglish]{babel}
-\begin{document}
-Some text
-\end{document}
-```
-
 # 中文的语言特性
 
 <span
@@ -35,8 +17,26 @@ Some text
 
 在中文排版中，字体选择是一个重要的方面。LaTeX提供了多种字体选项，可以通过`xeCJK`或`ctex`宏包来实现。
 
+注意：
+
+- xeCJK宏包是最常用的中文排版宏包，它提供了丰富的字体选项，包括中文字体、西文字体、数学字体等。
+- ctex宏包是基于xeCJK宏包的扩展，它提供了更多的中文排版功能，包括字号、字体颜色、字体风格等。
+- 下面第一行的注释指定编译引擎为xelatex，通知TexLive.net网站使用XeLaTeX引擎进行编译，可以更好的处理中文字符。
+
 ```latex
-\documentclass{ctexart}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
 这是一个中文示例。
 \end{document}
