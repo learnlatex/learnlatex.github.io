@@ -1,12 +1,12 @@
 ---
 layout: "page"
-lang: "en"
-title: Mission
-permalink: /en/mission
+lang: "zh"
+title: 使命
+permalink: /zh/mission
 ---
 
-# Learn LaTeX Mission
+# Learn LaTeX 使命
 
-This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
+本网站旨在帮助您迈出使用LaTeX的第一步。LaTeX是一个专为生成高质量排版输出而设计的文档制作系统。对于新用户来说，LaTeX可能会令人生畏，因为它不是一个文字处理器，而且它不是一个单一的程序。我们的目标是帮助您开始使用，而不是试图一次性展示所有内容。
 
-To do that, we have taken around 16 of the most important things you’ll need to know, and made them into short ‘lessons’. Each lesson is very focused, so they should not take too long to cover. In each lesson, we’ve given examples of what you’d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.
+为此，我们精选了大约16个最重要的需要了解的内容，并将它们制作成简短的"课程"。每个课程都非常专注，所以不会花太长时间来学习。在每个课程中，我们都提供了您需要编写的内容示例，这些示例都可以在线尝试。在帮助部分了解更多关于[示例是如何工作的](./help#examples)。
