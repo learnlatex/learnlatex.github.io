@@ -1,222 +1,278 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Tables"
-description: "This lesson shows more ways to customize a table by styling a column, changing spacing and rules, and further packages that provide different extensions to tables."
-toc-anchor-text: "More on: Tables"
+lang: "zh"
+title: "更多内容：表格"
+description: "本课展示了更多自定义表格的方法，包括列的样式设置、间距和规则的更改，以及提供不同表格扩展功能的其他宏包。"
+toc-anchor-text: "更多内容：表格"
 ---
 
+## 其他导言区内容
 
-## The other preamble contents
+由于课程没有涵盖所有可用的导言区标记，这里用示例解释了其他一些标记。您可能想重新查看课程开始时的表格，以了解可用内容的概览。那里提供的简短描述应该足以让您在理解了`l`、`c`、`r`和`p`之后理解不同的列类型`m`、`b`、`w`和`W`的作用。如果不明白，您可以尝试做些实验。还缺少的是其他有用的导言区标记`>`、`<`、`@`、`!`和`|`。
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+### 设置列的样式
 
-### Styling a column
-
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
+由于`>`和`<`可以用来在列的单元格内容前后添加内容，您可以使用它们来添加影响列外观的命令。例如，如果您想要将第一列设为斜体并在其后添加冒号，可以这样做：
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   \toprule
-  Animal & Food  & Size   \\
+  动物 & 食物  & 大小   \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  狗    & 肉    & 中等   \\
+  马    & 干草  & 大     \\
+  青蛙  & 苍蝇  & 小     \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
+`\itshape`使所有后续文本变为斜体，但其效果被"限制"在表格单元格内。我们将在[几节课后](lesson-11)学习手动字体格式设置。
 
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+您可能不希望第一个单元格受到影响，因为它是表头。这里可以使用`\multicolumn`。记住它可以用来改变单个单元格的对齐方式，如下所示。
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{>{\itshape}l<{:} *{2}{l}}
   \toprule
-  \multicolumn{1}{l}{Animal} & Food  & Size   \\
+  \multicolumn{1}{l}{动物} & 食物  & 大小   \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  狗    & 肉    & 中等   \\
+  马    & 干草  & 大     \\
+  青蛙  & 苍蝇  & 小     \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-### Manipulating the space between columns
+### 操作列间距
 
-Usually LaTeX pads each column by some space on both sides to give a balanced
-look and separate them. This space is defined with the length `\tabcolsep`. Due
-to the fact that each column is padded on both sides you get one `\tabcolsep` on
-either end of the table, and `2\tabcolsep` between two columns &ndash; one from
-each column. You can adjust this space to any length using `\setlength`:
+通常LaTeX会在每列两侧添加一些空白以使其看起来平衡并分隔它们。这个空白的大小由长度`\tabcolsep`定义。由于每列两侧都有填充，您在表格两端各得到一个`\tabcolsep`，在两列之间得到`2\tabcolsep` &mdash; 每列各贡献一个。您可以使用`\setlength`调整这个空白到任何长度：
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 
 \setlength\tabcolsep{1cm}
 
 \begin{document}
 \begin{tabular}{lll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  动物 & 食物  & 大小   \\
+  狗   & 肉    & 中等   \\
+  马   & 干草  & 大     \\
+  青蛙 & 苍蝇  & 小     \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything in
-between the columns you specify as an argument:
+您可以使用`@`将这个空白改为任意内容。这将移除两列之间或表格两端的填充，并在您指定为参数的列之间放置任何内容：
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 
 \begin{document}
 \begin{tabular}{l@{ : }l@{\hspace{2cm}}l}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  动物 & 食物  & 大小   \\
+  狗   & 肉    & 中等   \\
+  马   & 干草  & 大     \\
+  青蛙 & 苍蝇  & 小     \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
+（我们很快就会再次看到`\hspace`[](lesson-11)；您可能猜到它添加了一个水平空白。）
 
-The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument in center of the space between two columns.
+`!`导言区标记做的事情很相似。不同的是，它将其参数 _添加_ 到两列之间空白的中心。
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 
 \begin{document}
 \begin{tabular}{l!{:}ll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  动物 & 食物  & 大小   \\
+  狗   & 肉    & 中等   \\
+  马   & 干草  & 大     \\
+  青蛙 & 苍蝇  & 小     \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
 
-### Vertical rules
+### 垂直规则
 
-Sometimes you have to use vertical rules.
+有时您不得不使用垂直规则。
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 
 \begin{document}
 \begin{tabular}{l|ll}
-  Animal & Food  & Size   \\[2pt]
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  动物 & 食物  & 大小   \\[2pt]
+  狗   & 肉    & 中等   \\
+  马   & 干草  & 大     \\
+  青蛙 & 苍蝇  & 小     \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
-adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though; vertical rules don't work with the
-horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
-will span any space specified in the optional argument to `\\`.
+您可能注意到`|`的行为很像`!{decl}`；它在保持填充不变的情况下在两列之间添加垂直规则。但这有一个很大的缺点：垂直规则与`booktabs`提供的水平规则不兼容。您可以使用LaTeX提供的水平规则；这些是`\hline`（对应于`\toprule`、`\midrule`和`\bottomrule`）和`\cline`（其行为类似于`\cmidrule`）。如上所示，垂直规则会跨越`\\`可选参数中指定的任何空白。
 
-## Customizing `booktabs` rules
+## 自定义`booktabs`规则
 
-All the `booktabs` rules and also `\addlinespace` support an optional argument
-in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a length in
-braces after `r` or `l`.
+所有`booktabs`规则和`\addlinespace`都支持一个可选参数，用于指定规则的粗细。此外，`\cmidrule`提供的修剪可以通过在`r`或`l`后的花括号中指定长度来自定义。
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{@{} lll@{}} \toprule[2pt]
-  Animal & Food  & Size   \\ \midrule[1pt]
-  dog    & meat  & medium \\
+  动物 & 食物  & 大小   \\ \midrule[1pt]
+  狗   & 肉    & 中等   \\
   \cmidrule[0.5pt](r{1pt}l{1cm}){1-2}
-  horse  & hay   & large  \\
-  frog   & flies & small  \\ \bottomrule[2pt]
+  马   & 干草  & 大     \\
+  青蛙 & 苍蝇  & 小     \\ \bottomrule[2pt]
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment in columns
+## 列中的数字对齐
 
-The alignment of numbers in tables can be handled by the column type `S` 
-that is provided by the `siunitx` package.
+表格中数字的对齐可以通过`siunitx`宏包提供的列类型`S`来处理。
 
-A simple example with two aligned numeric columns would be:
+一个带有两个对齐数字列的简单示例是：
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{booktabs}
 \usepackage{siunitx}
 \begin{document}
 \begin{tabular}{SS}
 \toprule
-{Values} &  {More Values} \\
+{值} &  {更多值} \\
 \midrule
 1        &   2.3456 \\
 1.2      &   34.2345 \\
@@ -229,35 +285,34 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
-Note that any non-numeric cell must be "protected" by enclosing it in braces.
+注意任何非数字的单元格必须用花括号"保护"。
 
-The `siunitx` package provides many possibilities for formatting the numbers in
-different ways; see the [package
-documentation](https://texdoc.org/pkg/siunitx).
+`siunitx`宏包提供了许多用于以不同方式格式化数字的可能性；请参见[宏包文档](https://texdoc.org/pkg/siunitx)。
 
-## Specifying the total table width
+## 指定表格总宽度
 
-The width of a `tabular` environment is automatically determined based
-on the contents of the table. There are two commonly used mechanisms
-to specify a different total width.
+`tabular`环境的宽度是根据表格内容自动确定的。有两种常用的机制来指定不同的总宽度。
 
-Note that it is almost always preferable to format the table to a
-specified width as below (perhaps using a font size such as `\small` if
-necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths.
+注意，几乎总是最好按照下面的方式将表格格式化为指定宽度（如果需要，可能使用`\small`等字体大小），而不是使用`\resizebox`等命令来缩放表格，因为后者会产生不一致的字体大小和规则宽度。
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that
-specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command. This space is added
-between all columns from that point in the preamble. It is almost
-always used with `\fill`, a special space that stretches to be as large
-as necessary.
+`tabular*`环境需要一个额外的_宽度_参数，用于指定表格的总宽度。必须使用`\extracolsep`命令向表格添加可伸缩空白。这个空白会从该点开始添加到所有列之间。它几乎总是与`\fill`一起使用，这是一个特殊的空白，会伸缩到所需的大小。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \begin{document}
 
@@ -293,15 +348,22 @@ C & D\\
 
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+`tabularx`环境（由同名宏包提供）的语法与`tabular*`类似，但不是调整列间空白，而是调整由新列类型`X`指定的列的宽度。这相当于为自动确定的宽度指定`p{...}`。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{tabularx}
 \begin{document}
 
@@ -335,35 +397,41 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.org/pkg/tabularx).
+与这些课程中讨论的其他形式不同，`tabularx`需要多次排版表格来确定最终的设置。这意味着在使用该环境时有一些限制；请参见[宏包文档](https://texdoc.org/pkg/tabularx)。
 
-## Multi-page tables
+## 多页表格
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+`tabular`形成一个不可分割的盒子，因此它必须足够小以适合一页，而且通常放在浮动的`table`环境中。
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+有几个宏包提供了类似语法的可以分页的变体。这里我们展示`longtable`宏包：
 
 ```latex
-\documentclass{article}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}
 \usepackage{longtable}
 \begin{document}
 \begin{longtable}{cc}
-\multicolumn{2}{c}{A Long Table}\\
-Left Side & Right Side\\
+\multicolumn{2}{c}{一个长表格}\\
+左边 & 右边\\
 \hline
 \endhead
 \hline
 \endfoot
 aa & bb\\  
-Entry & b\\  
+条目 & b\\  
 a & b\\  
 a & b\\  
 a & b\\  
@@ -378,43 +446,46 @@ a & b\\
 a & b b b b b b\\  
 a & b b b b b\\  
 a & b b\\  
-A Wider Entry & b\\  
+一个更宽的条目 & b\\  
 \end{longtable}
 
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+`longtable`的显著特点是它在所有页面上保持列宽一致；然而，为了实现这一点，它可能需要运行LaTeX多次，这样后面遇到的宽条目就可以影响前面页面上的列宽。
 
-## Table notes
+## 表格注释
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.org/pkg/threeparttable)
-for full details, but we show a simple example here.
+在表格中需要脚注样的标记来引用表格下方的注释是很常见的。`threeparttable`宏包简化了这种表格的标记，它会将注释设置在与表格相同宽度的块中。有关完整细节，请参见[宏包文档](https://texdoc.org/pkg/threeparttable)，但这里我们给出一个简单的示例。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{threeparttable}
 \begin{document}
 
 \begin{table}
 \begin{threeparttable}
-   \caption{An Example}
+   \caption{一个示例}
    \begin{tabular}{ll}
-    An entry & 42\tnote{1}\\
-    Another entry & 24\tnote{2}\\
+    一个条目 & 42\tnote{1}\\
+    另一个条目 & 24\tnote{2}\\
    \end{tabular}
    \begin{tablenotes}
-   \item [1] the first note.
-   \item [2] the second note.
+   \item [1] 第一个注释。
+   \item [2] 第二个注释。
    \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -422,27 +493,28 @@ for full details, but we show a simple example here.
 \end{document}
 ```
 
-## Typesetting in narrow columns
+## 在窄列中排版
 
-The default line breaking settings assume relatively long lines to
-give some flexibility in choosing line breaks. The following example
-shows some possible approaches. The first table shows interword spacing
-stretched and TeX warns about Underfull lines. Using `\raggedright`
-usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise;
-it allows some raggedness in the line lengths, but will also
-hyphenate where necessary, as shown in the third table.
+默认的断行设置假设相对较长的行，以在选择断行位置时提供一些灵活性。以下示例展示了一些可能的方法。第一个表格显示了词间距被拉伸，TeX警告Underfull行。使用`\raggedright`通常可以避免这个问题，但可能会让一些行"太参差不齐"。`ragged2e`宏包中的`\RaggedRight`命令是一个折衷方案；它允许一些行长的参差不齐，但也会在必要时进行连字，如第三个表格所示。
 
-Note the use of `\arraybackslash` here, which resets the definition of
-`\\` so that it ends the table row.
+注意这里使用了`\arraybackslash`，它重置了`\\`的定义，使其结束表格行。
 
-An alternative technique, as shown in the fourth table, is to use a
-smaller font so that the columns are not so narrow relative to the
-text size.
+另一种技术，如第四个表格所示，是使用较小的字体，这样列相对于文本大小就不那么窄了。
 
 ```latex
-\documentclass[a4paper]{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{ragged2e}
 \begin{document}
@@ -450,22 +522,22 @@ text size.
 \begin{table}
 
 \begin{tabular}[t]{lp{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+一 & 在窄段落中设置的长文本，还有一些示例文本。\\
+二 & 在窄段落中设置的不同长文本，还有一些难以连字的词。
 \end{tabular}%
 \begin{tabular}[t]{l>{\raggedright\arraybackslash}p{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+一 & 在窄段落中设置的长文本，还有一些示例文本。\\
+二 & 在窄段落中设置的不同长文本，还有一些难以连字的词。
 \end{tabular}%
 \begin{tabular}[t]{l>{\RaggedRight}p{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+一 & 在窄段落中设置的长文本，还有一些示例文本。\\
+二 & 在窄段落中设置的不同长文本，还有一些难以连字的词。
 \end{tabular}
 
 \footnotesize
 \begin{tabular}[t]{lp{3cm}}
-One & A long text set in a narrow paragraph, with some more example text.\\
-Two & A different long text set in a narrow paragraph, with some more  hard to hyphenate words.
+一 & 在窄段落中设置的长文本，还有一些示例文本。\\
+二 & 在窄段落中设置的不同长文本，还有一些难以连字的词。
 \end{tabular}
 
 \end{table}
@@ -473,95 +545,115 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 \end{document}
 ```
 
-## Defining new column types
+## 定义新的列类型
 
-As demonstrated in the [main lesson](lesson-08), the `array` package allows
-constructs such as `>{\bfseries}c`  to denote a bold centered column.
-It is often convenient to define a new column type to encapsulate such
-use, for example
+如[主课程](lesson-08)中所示，`array`宏包允许像`>{\bfseries}c`这样的结构来表示粗体居中列。定义一个新的列类型来封装这种用法通常很方便，例如
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in table preambles to specify a bold
-centered column.
+这样就可以在表格导言区中使用`B`来指定一个粗体居中列。
 
 
-## Vertical tricks
+## 垂直技巧
 
-Often, rather than making a cell span multiple rows it is better to instead have
-a single row in which some cells are split vertically by the use of nested
-`tabular` environments.
+通常，与其让一个单元格跨越多行，不如在一个单元格中使用嵌套的`tabular`环境来垂直分割一些单元格。
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lcc}
   \toprule
-  Test & \begin{tabular}{@{}c@{}}A\\a\end{tabular} & \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
+  测试 & \begin{tabular}{@{}c@{}}A\\a\end{tabular} & \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
   \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
+  内容 & 在 & 这里 \\
+  内容 & 在 & 这里 \\
+  内容 & 在 & 这里 \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Note that you can control vertical alignment by an optional argument to the
-`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
-bottom aligned respectively and is used like this:
+注意您可以通过`tabular`的可选参数控制垂直对齐；它支持使用`t`、`c`或`b`分别表示顶部、居中或底部对齐，使用方式如下：
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lcc}
   \toprule
-  Test & \begin{tabular}[b]{@{}c@{}}A\\a\end{tabular} & \begin{tabular}[t]{@{}c@{}}B\\b\end{tabular} \\
+  测试 & \begin{tabular}[b]{@{}c@{}}A\\a\end{tabular} & \begin{tabular}[t]{@{}c@{}}B\\b\end{tabular} \\
   \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
+  内容 & 在 & 这里 \\
+  内容 & 在 & 这里 \\
+  内容 & 在 & 这里 \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-## Line spacing in tables
+## 表格中的行间距
 
-In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package, which is useful for adding extra space between specific lines.
+在主课程中我们演示了`\addlinespace`从`booktabs`宏包，它对于在特定行之间添加额外空间很有用。
 
-There are two general parameters that control line spacing,
-`\arraystretch` and `\extrarowheight` (the latter from the `array`
-package).
+有两个一般参数控制行间距，`\arraystretch`和`\extrarowheight`（后者来自`array`宏包）。
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
 
-will increase the baseline spacing by 50%.
+将增加基线间距50%。
 
 
-Often, especially when using `\hline`, it is better just to increase
-the height of rows, without increasing their depth below the baseline.
-The following example demonstrates the `\extrarowheight` parameter.
+通常，尤其是在使用`\hline`时，最好只是增加行的高度，而不增加它们在基线以下的深度。以下示例演示了`\extrarowheight`参数。
 
 ```latex
-\documentclass[a4paper]{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{array}
 \begin{document}
 
