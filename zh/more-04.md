@@ -1,67 +1,73 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Logical structure"
-description: "This lesson shows how to set the document title, and how to make description lists."
-toc-anchor-text: "More on: Logical structure"
+lang: "zh"
+title: "更多内容：逻辑结构"
+description: "本课展示了如何设置文档标题，以及如何制作描述列表。"
+toc-anchor-text: "更多内容：逻辑结构"
 ---
 
-## Document titles
+## 文档标题
 
-LaTeX offers some logical markup for the title of documents: three commands
-to set up 'meta-data' and one to use it.
+LaTeX为文档标题提供了一些逻辑标记：三个用于设置"元数据"的命令和一个用于使用它的命令。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
-\author{A.~N.~Other \and D.~Nobacon}
-\title{Some things I did}
-\date{1st April 2020}
+\author{张三 \and 李四}
+\title{我做的一些事情}
+\date{2020年4月1日}
 \maketitle
 
-Some normal text.
+一些普通的文本。
 \end{document}
 ```
 
-As you can see, the commands `\author`, `\title` and `\date` save information,
-and `\maketitle` uses it. You can also separate multiple authors with `\and`.
-The commands `\author`, `\title` and `\date` need to come before `\maketitle`.
-Here, we've given them in the document body: they can also be used in the
-preamble, but if you use `babel` shortcuts they won't be active there.
+如您所见，命令`\author`、`\title`和`\date`用于保存信息，而`\maketitle`则使用这些信息。您也可以用`\and`来分隔多个作者。命令`\author`、`\title`和`\date`需要在`\maketitle`之前使用。这里，我们把它们放在了文档正文中：它们也可以在导言区使用，但如果您使用babel宏包的快捷方式，它们在那里不会生效。
 
-The design provided by `\maketitle` depends on the document class (see [lesson
-5](lesson-05)). There is a `titlepage` environment for when you want to do
-custom design, but this is out of the scope of this introduction.  If you want
-to do your own document designs you can either use a customisable class, such
-as `memoir`, or start with one of LaTeX's base classes, like `book` and use it
-as a starting point.
+`\maketitle`提供的设计取决于文档类（参见[第5课](lesson-05)）。当您想要自定义设计时，可以使用`titlepage`环境，但这超出了本入门教程的范围。如果您想要自己设计文档，您可以使用一个可定制的文档类，如`memoir`，或者从LaTeX的基础类之一（如`book`）开始，将其作为起点。
 
-## Descriptive lists
-In addition to the "ordered" and "unordered" types of lists, LaTeX provides
-another one, less common: the "descriptive lists".
+## 描述列表
+
+除了"有序"和"无序"类型的列表外，LaTeX还提供了另一种不太常见的列表：描述列表。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
 
 \begin{description}
-\item[Dog:] member of the genus Canis, which forms part of the wolf-like canids,
-  and is the most widely abundant terrestrial carnivore.
-\item[Cat:] domestic species of small carnivorous mammal. It is the only
-  domesticated species in the family Felidae and is often referred to as the
-  domestic cat to distinguish it from the wild members of the family.
+\item[狗：] 犬属的成员，属于狼形犬科，是最广泛分布的陆地食肉动物。
+\item[猫：] 小型食肉哺乳动物的家养物种。它是猫科中唯一的家养物种，通常被称为家猫，以区别于该科的野生成员。
 \end{description}
 
 \end{document}
 ```
 
-## Exercises
+## 练习
 
-Try setting up different `\author`, `\title` and `\date` information to test
-out `\maketitle`. Which of them do you _have_ to give? Do the commands have to
-have an author, a title and a date in them?
+尝试设置不同的`\author`、`\title`和`\date`信息来测试`\maketitle`。您_必须_提供哪些信息？这些命令中必须包含作者、标题和日期吗？
 
-Make some descriptive lists, and nest some of them inside another ones (ordered,
-unordered or descriptive).
+制作一些描述列表，并尝试将其中一些嵌套在其他列表（有序、无序或描述列表）中。
