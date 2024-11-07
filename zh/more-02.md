@@ -1,35 +1,23 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Working with LaTeX"
-description: "This lesson gives more detail on what LaTeX is and the engines it runs on."
-toc-anchor-text: "More on: Working with LaTeX"
+lang: "zh"
+title: "更多内容：使用LaTeX"
+description: "本课提供了更多关于LaTeX是什么以及它运行的引擎的细节。"
+toc-anchor-text: "更多内容：使用LaTeX"
 ---
 
-For most of our examples, we don't use a program called `latex` but instead
-one called `pdflatex`. This is one of a family of related programs, all
-of which are 'descendants' of `latex`. We have chosen `pdflatex` because
-it is perhaps the most widely-used system and directly produces PDF files.
+对于我们的大多数示例，我们使用的不是一个叫做`latex`的程序，而是一个叫做`pdflatex`的程序。这是一个LaTeX相关程序家族中的一员，它们都是`latex`的"后代"。我们选择`pdflatex`是因为它可能是最广泛使用的系统，而且它可以直接生成PDF文件。
 
-## Formats and engines
+## 格式和引擎
 
-As described [earlier](more-01), LaTeX is built on a system called TeX. We
-call LaTeX a 'format': a collection of macros (instructions and commands) that
-TeX understands. When you run `pdflatex`, you are _actually_ starting a
-program called 'pdfTeX' with a pre-loaded 'LaTeX format'. We normally call
-pdfTeX an _engine_: a program that understands TeX instructions.
+如[前文](more-01)所述，LaTeX建立在一个叫做TeX的系统之上。我们把LaTeX称为一个"格式"：一组TeX能理解的宏（指令和命令）的集合。当您运行`pdflatex`时，您 _实际上_ 是在启动一个叫做"pdfTeX"的程序，并预加载了"LaTeX格式"。我们通常把pdfTeX称为一个_引擎_：一个能理解TeX指令的程序。
 
-There are three engines in common use today:
+今天常用的有三种引擎：
 
 - pdfTeX
 - XeTeX
 - LuaTeX
 
-We will cover [XeTeX and LuaTeX later](lesson-14): the main thing we need to
-know now is that they are capable of loading operating system fonts, whereas
-pdfTeX can't do that.
+我们将在[后面](lesson-14)介绍XeTeX和LuaTeX：现在我们需要知道的主要是它们能够加载操作系统字体，而pdfTeX不能做到这一点。
 
-If you are in Japan, or writing lots of Japanese, you might also come across
-pTeX and upTeX. These are specialized engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX, in particular, is still
-the most popular system for Japanese.
+如果您在日本，或者写很多日语内容，您可能还会遇到pTeX和upTeX。这些是专门用于垂直排版的引擎。LuaTeX也可以做很多这样的工作，但目前upTeX特别是仍然是日语最流行的系统。
