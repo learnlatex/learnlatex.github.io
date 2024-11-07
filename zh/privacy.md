@@ -1,34 +1,22 @@
 ---
 layout: "page"
-lang: "en"
-title: Privacy Policy
-permalink: /en/privacy
+lang: "zh"
+title: 隐私政策
+permalink: /zh/privacy
 ---
-# Privacy Policy
+# 隐私政策
 
-## User Data
+## 用户数据
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+LearnLaTeX.org 不需要用户登录，也不存储任何用户特定的数据。由于该网站托管在 GitHub Pages 上，网站维护者无法获取任何用户活动的信息。该网站不使用任何跟踪服务，例如 Google Analytics。
 
 ## Cookies
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
+默认情况下，该网站不使用任何 cookies。如[网站设置](settings)页面所述，用户可以选择接受 cookies 并存储偏好设置。存储偏好的 cookies（例如默认的 TeX 引擎）_不会_生成或传输到 LearnLaTeX.org 网站，而是由在用户浏览器中运行的 JavaScript 生成和存储。
 
-## External Sites
+## 外部网站
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+如果使用在线服务运行示例的选项，则当前编辑器中的数据将通过 HTTPS POST 请求传输到相关服务，并受该外部服务的隐私政策的约束。以下链接适用于当前使用的服务。
 
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)

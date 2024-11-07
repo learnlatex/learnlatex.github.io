@@ -120,10 +120,10 @@ toc-description: "图片的外观和定位。"
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{graphicx}
-\usepackage{lipsum}  % 生成填充文本
+\usepackage{zhlipsum}  % 生成填充文本
 
 \begin{document}
-\lipsum[1-4] % 几个填充段落
+\zhlipsum*[1-5] % 几个填充段落
 
 测试浮动位置
 \begin{figure}[ht]
@@ -132,7 +132,7 @@ toc-description: "图片的外观和定位。"
   \caption{一个示例图片}
 \end{figure}
 
-\lipsum[6-10] % 几个填充段落
+\zhlipsum*[6-10] % 几个填充段落
 \end{document}
 ```
 
@@ -155,4 +155,4 @@ toc-description: "图片的外观和定位。"
 
 使用`width`键将一个图片的大小设置为相对于`\textwidth`，另一个图片相对于`\linewidth`。尝试它们在有或没有`twocolumn`选项时的表现。
 
-使用`lipsum`制作一个相当长的演示，然后尝试使用不同的位置说明符来放置浮动体。不同的说明符如何相互作用？
+使用`lipsum`制作一个相当长的演示，然后尝试使用不同的位置说明符来放置浮动体。不同的说明符如何相互作用？（本文中的示例代码使用了另一个中文的占位字符生成包`zhlipsum`。）
