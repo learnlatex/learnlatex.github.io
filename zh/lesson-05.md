@@ -1,142 +1,132 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Using document classes to influence design"
-description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
-toc-anchor-text: "Document classes"
-toc-description: "Setting the general document layout."
+lang: "zh"
+title: "使用文档类来影响设计"
+description: "本课解释了什么是文档类以及它如何影响文档布局，并列出了在TeX发行版中可以找到的主要文档类。"
+toc-anchor-text: "文档类"
+toc-description: "设置一般文档布局。"
 ---
 
-# Document classes
+# 文档类
 
 <span
-  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
+  class="summary">本课解释了什么是文档类以及它如何影响文档布局和设计。它列出了在TeX发行版中可以找到的主要文档类。</span>
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
+您可能已经注意到，到目前为止我们创建的所有LaTeX文档都以`\documentclass`行开始，而且
+`\documentclass{article}`是最常见的选择。（我们在[上一课](lesson-04)中需要
+`\documentclass{report}`来尝试`\chapter`命令。）这行是所有LaTeX文档都必需的，而且几乎总是应该是文档中的第一个命令。
 
-## What a document class does
+**注意**：在本课程中，我们将使用`ctexart`类来创建包含中文的文档，这是一个中文文档类，可以自动处理中文的排版问题。
 
-The document class sets up the general layout of the document, for example
+## 文档类的作用
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
+文档类设置文档的整体布局，例如：
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+- 设计：页边距、字体、间距等
+- 是否可以使用章节
+- 标题是否应该在单独的页面上
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+文档类也可以更普遍地添加新命令；这在特殊情况下尤其如此，比如创建演示幻灯片。
 
-## The base classes
+文档类行也可以设置_全局选项_：应用于整个文档的内容。这些选项在方括号中给出：
+`\documentclass[<选项>]{<名称>}`。这种语法，即在方括号中首先给出可选信息，在许多LaTeX命令中都使用。
 
-LaTeX is supplied with a set of standard classes, all of which look similar
-but with some variations:
+## 基础文档类
+
+LaTeX自带一组标准文档类，它们的外观相似但有一些变化：
 
 - `article`  
-  short documents without chapters
+  没有章节的短文档
 - `report`  
-  longer documents with chapters, single-sided printing
+  有章节的较长文档，单面打印
 - `book`  
-  longer documents with chapters, double-sided printing, with front- and
-  back-matter (for example an index)
+  有章节的较长文档，双面打印，带前言和后记（例如索引）
 - `letter`  
-  correspondence with no sections
+  没有分节的信件
 - `slides`  
-  for presentations (but see below)
+  用于演示（但请参见下文）
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+`article`、`report`和`book`类有非常相似的可用命令，正如我们已经看到的。当写信时，可用的命令有点不同：
 
 ```latex
-\documentclass{letter}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
 
-\begin{letter}{Some Address\\Some Street\\Some City}
+\begin{letter}{某某地址\\某某街道\\某某城市}
 
-\opening{Dear Sir or Madam,}
+\opening{亲爱的先生或女士，}
 
-The text goes Here
+信件正文在这里
 
-\closing{Yours,}
+\closing{此致，}
 
 \end{letter}
 
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialized commands.
+看看如何使用`\\`来分隔地址的行；我们将在[稍后](lesson-11)讨论换行。另外请注意`letter`类如何为每封信创建一个新的环境并有专门的命令。
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+标准的`article`、`report`和`book`类接受`10pt`、`11pt`和`12pt`选项来改变字体大小，以及`twocolumn`选项来使文档成为双栏。
 
-## Function-rich classes
+## 功能丰富的类
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
+核心类非常稳定，但这也意味着它们在设计和可用命令范围方面都相当保守。随着时间的推移，一些更强大的类被编写出来，让您无需手动操作就可以改变设计（我们将在[稍后](lesson-11)提到）。
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+美国数学学会提供标准类的变体（`amsart`、`amsbook`），设计风格更传统，更接近数学期刊出版物中使用的风格。
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt`, `scrbook`, and `scrlttr2`, while there is
-a single `memoir` class that is most like an extension of `book`.
+两个最大和最流行的"扩展"类是KOMA-Script包和memoir类。KOMA-Script提供了一组与标准类"平行"的类：`scrartcl`、`scrreprt`、`scrbook`和`scrlttr2`，而memoir类则是一个单一的类，最像是`book`的扩展。
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-16), but you can always
-jump ahead!
+这些扩展类有很多定制钩子，我们将在练习中探索一些。您可能想知道我们如何了解它们提供的钩子；我们将在[后面的课程](lesson-16)中介绍这一点，但您总是可以提前了解！
 
-## Presentations
+## 演示文稿
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+`slides`类是为制作20世纪80年代中期的物理幻灯片而开发的，因此没有任何功能来创建基于PDF的交互式演示文稿。有现代的类可以做到这一点：它们相对于一般的LaTeX文档来说比较特殊，所以我们在[补充信息](more-05)中介绍了它们。
 
-## Exercises
+## 练习
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+探索如何在标准类、KOMA包和`memoir`之间更改文档类如何影响文档的外观。
 
 ```latex
-\documentclass{article} % Change the class here
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 
 \begin{document}
 
-\section{Introduction}
+\section{简介}
 
-This is a sample document with some dummy
-text\footnote{and a footnote}. This paragraph is quite
-long as we might want to see the effect of making the
-document have two columns.
+这是一个示例文档，带有一些虚拟文本\footnote{和一个脚注}。这段文字相当长，
+因为我们可能想看看让文档成为双栏的效果。
 
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
+添加类选项`twocolumn`，看看布局如何变化。
 
-Change the `\section` above to `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+将`\section`改为`\chapter`，找出使用`scrreprt`类时以下类选项有什么效果：
 
 - `chapterprefix`
 - `headings=small`
