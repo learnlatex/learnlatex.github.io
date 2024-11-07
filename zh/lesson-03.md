@@ -1,142 +1,128 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Basic LaTeX document structure"
-description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
+lang: "zh"
+title: "基本的LaTeX文档结构"
+description: "本课展示了LaTeX文档的基本结构，以及如何将其构建为PDF文件，还介绍了用于控制LaTeX的主要特殊字符。"
+toc-anchor-text: "文档结构"
+toc-description: "文档的基本结构。"
 ---
 
-# LaTeX document structure
+# LaTeX文档结构
 
 <span
-  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+  class="summary">本课展示了LaTeX文档的基本结构，以及如何将其构建为PDF文件，还介绍了用于控制LaTeX的主要特殊字符。</span>
 
-Your first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to see [how to use the examples](help) here on `learnlatex.org`.
+您的第一个LaTeX文档将非常简单：目的是向您展示文档的外观以及如何成功排版。这也是您第一次看到如何在`learnlatex.org`上使用示例。
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
+如果您使用的是本地LaTeX安装，请在编辑器中创建一个名为`first.tex`的新文件，并复制粘贴下面的文本或手动输入。
 
-If you are using the online system, you can just click on the ‘Run at TeXLive.net’
-or ‘Open in Overleaf’ buttons in the example to try it out!
+如果您使用的是在线系统，只需点击示例中的“在TeXLive.net运行”或“在Overleaf中打开”按钮即可试用！
 
 <p
-  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+  class="hint">我们建议您即使已经在本地设置了LaTeX，也尝试在线选项；这是一个了解不同选项如何工作的好机会。</p>
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass{ctexart}
+\usepackage{xeCJK}
 
 \begin{document}
-Hey world!
+Hello, world!
 
-This is a first document.
+这是一个简单的中英文混排文档。
 \end{document}
 ```
 
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+保存文件并将其排版为PDF文档；如果您使用的是本地LaTeX安装，具体的按钮取决于您选择的编辑器。您应该会得到一个包含上述文本_加上_页码的PDF文件；LaTeX会自动添加页码。
 
-View the output `first.pdf` with whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+使用您喜欢的PDF查看程序查看输出`first.pdf`。看起来不错，恭喜！
 
-If you want to get HTML rather than PDF output, take a look at the
-[help](./help) for how you can do that.
+如果您想获得HTML而不是PDF输出，请查看[帮助](./help)以了解如何实现。
 
-## Handling errors
+## 处理错误
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+错误是难免的。
+检查您是否准确输入了文本文件中的每一行。
+有时看似微小的输入更改会导致结果发生巨大变化，包括导致文档无法工作。
+如果您遇到困难，请尝试擦除文档并从上面的行中重新复制。
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+如果您的LaTeX排版运行以问号结束，您可以通过输入`x`和`<Enter>`退出。
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+LaTeX的错误消息试图提供帮助，但它们与文字处理器中的消息不同。有些编辑器也使得很难看到错误的“完整”文本，这可能会隐藏关键细节。LaTeX总是会创建一个以`.log`结尾的日志文件，记录它正在做的事情。您总是可以在那里看到完整的错误消息，如果您遇到问题，LaTeX专家通常会要求您提供日志文件的副本。
 
 <p
-  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
+  class="hint">我们在[第15课](./lesson-15)中介绍了更多关于处理错误的内容。</p>
 
-## What you've got
+## 您所拥有的
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+第一个文档展示了基础知识。
+LaTeX文档是文本和命令的混合。
+命令以反斜杠开头
+有时在大括号中有参数
+（有时在方括号中有可选参数）。
+然后通过告诉LaTeX排版您的文件来获得输出PDF。
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
-The `\usepackage` command is described in a [later lesson](lesson-06)
-it is used in most examples on this site to set up the font encoding.
+每个LaTeX文档都有一个`\begin{document}`和一个匹配的`\end{document}`。
+这两者之间是*文档主体*，您的内容放在这里。
+这里的主体有两段（在LaTeX中，您可以通过一个或多个空行分隔段落）。
+在`\begin{document}`之前是*文档前言*，
+其中有设置文档布局的代码。
+`\usepackage`命令在[后面的课程](lesson-06)中描述
+在本网站的大多数示例中使用它来设置字体编码。
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+LaTeX还有其他的`\begin{...}`和`\end{...}`对；这些被称为*环境*。
+您必须匹配它们，以便每个`\begin{x}`都有一个`\end{x}`。
+如果您嵌套它们，那么您必须有`\end{y} ... \end{x}`来匹配`\begin{x} ... \begin{y}`，即`begin`和`end`语句按顺序匹配。
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+我们可以通过以`%`开头在LaTeX文件中添加注释；让我们用它来展示结构：
 
 ```latex
-\documentclass[a4paper,12pt]{article} % The document class with options
-\usepackage[T1]{fontenc}
-% A comment in the preamble
-\begin{document}
-% This is a comment
-This is   a simple
-document\footnote{with a footnote}.
+% !TEX program=xelatex
 
-This is a new paragraph.
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart} % 带选项的文档类
+\usepackage{xeCJK}
+% 前言中的注释
+\begin{document}
+% 这是一个注释
+这是一个简单的文档\footnote{带有脚注}。
+
+这是一个新段落。
 \end{document}
 ```
 
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+您可以在上面看到我们有两段：注意使用空行来实现这一点。还要注意多个空格被视为一个空格。
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+您可能还希望有时使用“硬”空格，不会在行间断开：在LaTeX中，我们可以使用`~`来创建，将两个文本片段“绑”在一起。这在我们稍后开始创建交叉引用时特别有用。
 
-## Special characters
+## 特殊字符
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+您可能已经注意到``\``、`{`和`}`对LaTeX有特殊意义。
+``\``开始一个LaTeX指令：一个“命令”。大括号字符`{`和`}`用于表示_必需参数_：命令所需的信息。
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+还有一些其他字符具有特殊意义；我们刚刚看到`~`是一个“硬”空格。例如。几乎所有这些字符在普通文本中都非常不常见，这就是为什么它们被选择为特殊含义的原因。
+如果您确实需要显示这些特殊字符之一，我们在[详细信息页面](more-03)中提供了一些信息。
 
-## Exercise
+## 练习
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+尝试使用在线编辑和排版系统；点击按钮排版内容，然后在网页中编辑并重新排版。
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+尝试向您的第一个文档添加文本，排版并查看PDF中的更改。制作一些不同的段落并添加可变空格。探索您的编辑器如何工作；点击您的源文件并找到如何在PDF中转到同一行。尝试添加一些硬空格并查看它们如何影响换行。
