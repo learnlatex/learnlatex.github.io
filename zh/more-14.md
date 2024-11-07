@@ -1,28 +1,18 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Selecting fonts and using Unicode engines"
-description: "This lesson shows a basic example in Lua for users who want to write Lua code in their document."
-toc-anchor-text: "More on: Selecting fonts and using Unicode engines"
+lang: "zh"
+title: "更多内容：选择字体和使用Unicode引擎"
+description: "本课为想要在文档中编写Lua代码的用户展示了一个基本的Lua示例。"
+toc-anchor-text: "更多内容：选择字体和使用Unicode引擎"
 ---
-
-
-
 
 ## Lua
 
-The LuaTeX engine provides access to OpenType fonts in a similar way
-to XeTeX, and most uses of the `fontspec` package work equally well
-with either engine.
+LuaTeX引擎提供了类似于XeTeX的OpenType字体访问方式，大多数`fontspec`宏包的用法在这两个引擎上都同样有效。
 
-LuaTeX also extends TeX in other ways, notably by embedding the Lua
-scripting language. This may be used for programming in a style more
-familiar to people used to ‘mainstream’ programming languages. It also
-offers the possibility to access inner workings of the TeX system and
-modify the behaviour by substituting new code written in Lua.
+LuaTeX还以其他方式扩展了TeX，特别是通过嵌入Lua脚本语言。对于那些熟悉"主流"编程语言的人来说，这提供了一种更熟悉的编程风格。它还提供了访问TeX系统内部工作机制的可能性，并通过替换用Lua编写的新代码来修改行为。
 
-Lua programming is not covered by this course but a simple example to
-calculate 2π is shown here.
+本课程不涵盖Lua编程，但这里展示了一个计算2π的简单示例。
 
 ```latex
 %!TEX lualatex
