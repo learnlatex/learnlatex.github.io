@@ -1,32 +1,40 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Cross-referencing"
-description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
-toc-anchor-text: "More on: Cross-referencing"
+lang: "zh"
+title: "更多内容：交叉引用"
+description: "本课展示了如何通过加载hyperref宏包来制作交叉引用的链接。"
+toc-anchor-text: "更多内容：交叉引用"
 ---
 
-## Making cross-references into links
+## 将交叉引用变成链接
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+您可以通过使用`hyperref`宏包将交叉引用变成超链接。在大多数情况下，`hyperref`应该在文档导言区中指定的任何其他宏包之后加载。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage[hidelinks]{hyperref}
 \begin{document}
 
-\section{Introduction}
-Some exciting text with a reference~\ref{sec:next}.
+\section{简介}
+一些令人兴奋的文本和一个引用~\ref{sec:next}。
 
-\section{Next thing}
+\section{下一件事}
 \label{sec:next}
 
-More text here.
+更多文本。
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+我们选择让链接与普通文本颜色相同；试试删除`hidelinks`看看为什么！
