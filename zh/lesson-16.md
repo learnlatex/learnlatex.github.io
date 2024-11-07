@@ -1,120 +1,104 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Accessing documentation and getting help"
-description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
-toc-anchor-text: "Help & documentation"
-toc-description: "Accessing help and documentation."
+lang: "zh"
+title: "获取文档和寻求帮助"
+description: "本课展示了LaTeX相关软件和宏包的主要文档来源，以及当您遇到困难时如何寻求帮助。"
+toc-anchor-text: "帮助与文档"
+toc-description: "获取帮助和文档。"
 ---
 
-# Documentation and getting help
+# 获取文档和寻求帮助
 
 <span
-  class="summary">This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble.</span>
+  class="summary">本课展示了LaTeX相关软件和宏包的主要文档来源，以及当您遇到困难时如何寻求帮助。</span>
 
-There are several ways to access the documentation of a package or class.
+有几种方式可以访问宏包或文档类的文档。
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeX Live or MiKTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+如果您已经安装了TeX发行版（如TeX Live或MiKTeX），并且在安装时包含了文档，您可以使用`texdoc`命令行工具访问本地保存的文档。使用：
 
 `texdoc` < _pkg_ >
 
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
+将打开宏包`<pkg>`的文档。该工具会搜索可用的文档，并打开它认为最接近您搜索词的结果。您可以使用以下命令列出并选择所有可行的结果：
 
 `texdoc -l` < _pkg_ >
 
 ## texdoc.org
 
-This is a [website](https://texdoc.org/) which works similarly to the `texdoc` utility. You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
+这是一个[网站](https://texdoc.org/)，其工作方式类似于`texdoc`工具。您可以像使用`texdoc -l`那样搜索他们提供的文档，然后从结果中选择。
 
 ## CTAN
 
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
+[CTAN](https://www.ctan.org)是综合TeX档案网络（Comprehensive TeX Archive Network）。大多数LaTeX宏包都发布在这里。您可以在网站上搜索宏包来访问其文档。通常宏包保存在`ctan.org/pkg/<pkg-name>`中，您可以在那里访问CTAN上存储的宏包的README和文档。
 
-## Books on LaTeX
+## LaTeX相关书籍
 
-There are several books available that can help you learn more about LaTeX.
-As a beginner, you will gain a lot from a structured beginners guide, as
-those can give a lot more detail than we've covered here. You might also
-want access to a reference with more detail and recommendations.
+有几本可以帮助您学习更多关于LaTeX的书籍。作为初学者，您会从结构化的入门指南中获益良多，因为这些指南可以提供比我们在这里介绍的更多细节。您可能还想要一个更详细的参考手册。
 
-The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's official
-guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
-and the comprehensive
-[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
+LaTeX团队维护了一个[书籍列表](https://www.latex-project.org/help/books/)，其中大部分是由团队成员编写的。最著名的是[Lamport的官方指南](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)和全面的[LaTeX Companion第3版](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489)。
 
-Other books aimed at learning LaTeX include
+其他面向学习LaTeX的书籍包括：
 
 - [_Guide to
-  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
-  Kopka and Patrick Daly: available as an e-book
-- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
+  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) 作者：Helmut
+  Kopka和Patrick Daly：提供电子书版本
+- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) 作者：
+  Nicola Talbot：提供免费电子书或低价印刷版本
 - [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
+  thesis_](https://www.dickimaw-books.com/latex/thesis/) 作者：
+  Nicola Talbot：提供免费电子书或低价印刷版本
 - [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
-  by Stefan Kottwitz: available as an e-book and in print
-- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
-  Marc van Dongen: available as an e-book and in print
+  作者：Stefan Kottwitz：提供电子书和印刷版本
+- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) 作者：
+  Marc van Dongen：提供电子书和印刷版本
 
-## Getting help
+## 获取帮助
 
-There are various online forums for asking LaTeX questions; perhaps the most
-popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
-Whenever you ask a question, it's best to first get your example clear: what is
-normally known as a 'minimal working example' (MWE). This doesn't mean the code
-works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means
-having only enough content to show the issue.
+有多个在线论坛可以询问LaTeX问题；也许现今最受欢迎的是[TeX - LaTeX StackExchange](https://tex.stackexchange.com)。每当您提问时，最好先把示例弄清楚：通常被称为"最小工作示例"（MWE）。这并不意味着代码能工作（否则您就不会提问了！），而是说您已尽最大努力使其清晰、自包含且最小化。后者意味着只包含足够展示问题的内容。
 
-### How to provide a minimal working example (MWE)
+### 如何创建最小工作示例（MWE）
 
-How do you construct a MWE? Normally easiest is to start from
+如何构建MWE？通常最简单的是从：
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
-Text
+文本
 \end{document}
 ```
 
-and add lines one at a time until you show the issue. You can try to
-'cut down' your real file, but that can be a long process.
+开始，然后一行一行地添加内容，直到展示出问题。您也可以尝试"缩减"您的实际文件，但这可能是一个很长的过程。
 
 <p 
-  class="hint">If you need more text to show page breaking and other effects, then packages such as <code>lipsum</code> may be used to generate nonsense paragaraphs of text while keeping your test file small.</p>
+  class="hint">如果您需要更多文本来展示分页和其他效果，可以使用`lipsum`或者`zhlipsum`等宏包生成无意义的段落文本，同时保持测试文件较小。</p>
 
+### 日志文件
 
-### Log file
-
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
+每次运行LaTeX时都会创建一个日志文件，它与您的输入文件同名但扩展名为`.log`。
 
 <p 
-  class="hint">Depending on your desktop interface, you might need to 'show extensions' to work out which file it is.</p>
+  class="hint">根据您的桌面界面，您可能需要"显示扩展名"才能确定是哪个文件。</p>
 
-In the log file, you can always see the full error messages. LaTeX's error messages try to be helpful, but they are not the same as messages in word processors.
+在日志文件中，您总是可以看到完整的错误消息。LaTeX的错误消息试图提供帮助，但它们不像文字处理器中的消息那样。
 
 <p 
-  class="hint">Some editors also make it hard to see the 'full' text of an error, which can hide key details.</p>
+  class="hint">一些编辑器也使得很难看到错误的"完整"文本，这可能隐藏了关键细节。</p>
 
-If you have a problem, expert LaTeX users will often ask for a copy of your log file.
+如果您遇到问题，LaTeX专家通常会要求一份您的日志文件副本。
 
-### Going further
+### 更进一步
 
-Finally we offer a [gallery of small examples](./extra-01) showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.
+最后，我们提供了一个[示例集](./extra-01)，展示了本入门教程未涵盖的不同主题领域，以及这些领域中的不同LaTeX宏包。
