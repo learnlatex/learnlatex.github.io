@@ -1,44 +1,25 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Citations and references"
-description: "This lesson gives details on non-English bibliographies, how to make references into hyperlinks, and highlights the main differences between BibTeX styles."
-toc-anchor-text: "More on: Citations and references"
+lang: "zh"
+title: "更多内容：引用和参考文献"
+description: "本课提供了关于非英语参考文献、如何将参考文献变成超链接的详细信息，并强调了BibTeX样式之间的主要区别。"
+toc-anchor-text: "更多内容：引用和参考文献"
 ---
 
-## Dealing with non-English sorting
+## 处理非英语排序
 
-The BibTeX program was written primarily to deal with references in English. It
-is very limited in handling accented characters, and even more limited with
-non-Latin letters. In contrast, the Biber program was written from the start to
-handle a mix of scripts properly.
+BibTeX程序主要是为处理英语参考文献而编写的。它在处理重音字符方面非常有限，在处理非拉丁字母方面更加有限。相比之下，Biber程序从一开始就被设计为能够正确处理多种文字的混合。
 
-This means that if you are sorting your bibliography, and you need to sort in
-anything other than English order, you really should be using `biblatex` and
-Biber, rather than `natbib` and BibTeX.
+这意味着如果您需要对参考文献进行排序，并且需要以英语以外的顺序排序，您真的应该使用`biblatex`和Biber，而不是`natbib`和BibTeX。
 
-## Hyperlinks
+## 超链接
 
-If you load the `hyperref` package (as covered [earlier](more-09)), it will
-automatically make some content in your bibliography into links. This is
-particularly useful for URLs and DOIs.
+如果您加载`hyperref`宏包（如[前文](more-09)所述），它会自动将参考文献中的某些内容变成链接。这对URL和DOI特别有用。
 
-## Differences in best practice for BibTeX input between styles
+## BibTeX样式之间在BibTeX输入最佳实践方面的差异
 
-While the overall syntax of the BibTeX files is the same whether you use the
-BibTeX workflow or `biblatex`, the set of fields that is supported (used by the
-style) and their exact meaning may not only vary between the BibTeX workflow
-and `biblatex`, but also between different BibTeX styles. A large 'core set' of
-entry types and fields is the same for almost all styles, but there are
-differences in some fields.
+虽然无论您使用BibTeX工作流程还是`biblatex`，BibTeX文件的整体语法都是相同的，但不同样式支持（使用）的字段集及其确切含义可能不仅在BibTeX工作流程和`biblatex`之间有所不同，在不同的BibTeX样式之间也可能有所不同。几乎所有样式都使用相同的"核心"条目类型和字段集，但在某些字段上存在差异。
 
-A common example is the URL. Some older BibTeX `.bst` styles (most notably
-the 'standard BibTeX styles', e.g. `plain.bst`, `unsrt.bst`, ...) predate
-the invention of the URL and have no dedicated field for the URL of an online
-resource. Many newer styles _do_ have a dedicated `url` field. The workaround
-to show the URL in the older styles is usually to use the `howpublished` field,
-but with the newer styles it is of course preferable to use the dedicated
-`url` field.
+一个常见的例子是URL。一些较老的BibTeX `.bst`样式（最值得注意的是"标准BibTeX样式"，如`plain.bst`、`unsrt.bst`等）早于URL的发明，没有专门的字段来存储在线资源的URL。许多较新的样式_确实_有专门的`url`字段。对于较老的样式，通常使用`howpublished`字段来显示URL是一种变通方法，但对于较新的样式，当然最好使用专门的`url`字段。
 
-In order to be able to make use of the full potential of your used style you
-will have to find out the set of fields it supports and their semantic.
+为了能够充分利用您使用的样式的潜力，您需要找出它支持的字段集及其语义。
