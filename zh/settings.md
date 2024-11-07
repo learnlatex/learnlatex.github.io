@@ -1,39 +1,33 @@
 ---
 layout: "page"
-lang: "en"
-title: Site Settings
-permalink: /en/settings
+lang: "zh"
+title: 网站设置
+permalink: /zh/settings
 ---
-# Site Settings (User Preferences)
+# 网站设置（用户偏好）
 
-## Accept or Delete Cookies
+## 接受或删除 Cookies
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+Cookies 是由您的浏览器存储的小数据片段。默认情况下，该网站不使用任何 Cookies，但在此页面上设置的任何选项都会存储在 Cookies 中。
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
-
+在此接受 Cookies 以启用该网站的 Cookies 使用，并启用以下菜单选项。
 
 {% include settings-accept.html 
-   accept="Accept Cookies"
-   reset= "Reset: Delete All Cookies"
+   accept="接受 Cookies"
+   reset= "重置：删除所有 Cookies"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+## 默认返回
+TeXLive.net 应在没有通过 `% !TeX` 注释设置的情况下使用的 `return` 表单参数。
 
 {% include settings-return.html %}
 
-
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+## 默认引擎
+TeXLive.net 或 Overleaf 应在没有通过 `% !TeX` 注释设置的情况下使用的 `engine` 表单参数。（在 Overleaf 中不应使用 `-dev` 和 `context` 选项。）
 
 {% include settings-engine.html %}
 
-
-## Editor Theme
-The theme used by the embedded ACE editor.
+## 编辑器主题
+嵌入的 ACE 编辑器使用的主题。
 
 {% include settings-acetheme.html %}
