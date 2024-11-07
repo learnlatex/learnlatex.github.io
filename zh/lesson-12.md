@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Citations and references"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
-toc-anchor-text: "Citations & references"
-toc-description: "Working with reference databases."
+lang: "zh"
+title: "引用和参考文献"
+description: "本课展示了参考文献数据库的基础知识。学习如何建立自己的数据库以及如何使用两种主要的工作流程在文档中使用它们。"
+toc-anchor-text: "引用和参考文献"
+toc-description: "使用参考文献数据库。"
 ---
 
-# Citations and references
+# 引用和参考文献
 
 <script>
 runlatex.preincludes = {
@@ -21,19 +21,13 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
+  class="summary">本课展示了参考文献数据库的基础知识。学习如何建立自己的数据库以及如何使用两种主要的工作流程在文档中使用它们。</span>
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+对于参考文献引用，虽然您可以直接在文档中包含参考源，但通常您会从一个或多个外部文件获取这些信息。这些文件是参考文献数据库，包含以处理友好的格式存储的信息。使用一个或多个参考文献数据库可以让您重复使用信息并避免手动格式化。
 
-## Reference databases
+## 参考文献数据库
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+参考文献数据库通常被称为"BibTeX文件"，扩展名为`.bib`。它们包含一个或多个条目，每个条目对应一个参考文献，每个条目中有一系列字段。让我们看一个例子：
 
 <!-- {% raw %} -->
 ```bibtex
@@ -61,200 +55,131 @@ within each entry there are a series of fields. Let us look at an example.
 <!-- {% endraw %} -->
 
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+这是一个文章条目和一本书的条目；这是最常见的类型。每个数据库条目类型都以`@`开头，如所示，所有信息都在一对大括号内。
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
+除了被称为"键"的引用"名称"之外，各个字段都以键值格式给出：这只是一个标签，所以您可以使用任何您喜欢的内容，但在上面我们选择使用作者名加年份：这是一种常见的方法。
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
+具体需要给出哪些字段取决于条目类型，但大多数都很明显。您可能注意到在`author`字段中，每个条目都用`and`分隔。这是_必需的_：输出格式需要知道哪个作者是哪个。您可能还注意到在文章标题中，一些条目用了额外的大括号；这些是为了防止改变大小写。
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
+手动编辑`.bib`文件相当繁琐，所以大多数人使用专门的编辑器。[JabRef](https://www.jabref.org)被广泛使用，而且是跨平台的，但还有几个其他的界面可用。如果参考文献包含DOI（数字对象标识符），您可能想尝试[doi2bib](https://doi2bib.org)来轻松获取BibTeX条目。但请确保检查条目是否正确！
 
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
-`learnlatex.bib`.
+在这里，我们将使用上面的简短示例数据库进行演示：我们已经将其"保存"为`learnlatex.bib`。
 
-## Transferring information from the database
+## 从数据库传输信息
 
-To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which creates a file with a
-list of the references that your document cites.  Second, run a
-program that takes information from the database of references, picks
-out the ones that you use, and puts them in order.  Finally, compile
-your document again so that LaTeX can use that information to resolve
-your citations. Usually it will require at least two compilations to
-resolve all the references.
+要将信息从数据库传输到文档中，需要三个步骤。首先，使用LaTeX编译文档，这会创建一个包含文档引用的参考文献列表的文件。第二，运行一个程序从参考文献数据库中提取信息，选择您使用的那些参考文献，并按顺序排列。最后，再次编译文档，这样LaTeX就可以使用这些信息来解析您的引用。通常需要至少编译两次才能解析所有引用。
 
-For the second step, there are two systems in wide use: BibTeX and
-Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
-BibTeX is used with either no packages at all or with `natbib`.
+对于第二步，有两个广泛使用的系统：BibTeX和Biber。Biber只能与LaTeX宏包`biblatex`一起使用，而BibTeX可以不使用任何宏包，或者与`natbib`一起使用。
 
-Running a second tool as well as LaTeX is handled in different ways by different
-editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go.
-Your editor might have a single 'do stuff' button or you might have to
-choose to run BibTeX or Biber manually between LaTeX runs.
+不同的编辑器以不同的方式处理运行LaTeX之外的第二个工具。对于我们的在线示例，有一些"幕后"脚本可以一次完成所有操作。您的编辑器可能有一个"做事情"按钮，或者您可能需要在LaTeX运行之间手动选择运行BibTeX或Biber。
 
-The format of citations and references is independent of your BibTeX database,
-and is set by what is known as a 'style'. We will see that these work slightly
-differently in the BibTeX workflow and `biblatex`, but the general idea remains:
-we can choose how citations appear.
+引用和参考文献的格式独立于您的BibTeX数据库，由所谓的"样式"设置。我们将看到这在BibTeX工作流程和`biblatex`中工作方式略有不同，但一般思路保持不变：我们可以选择引用的显示方式。
 
-## The BibTeX workflow with `natbib`
+## 使用`natbib`的BibTeX工作流程
 
-Whilst it is possible to insert citations into a LaTeX document without
-any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create different types of citation and
-has a lot of styles available.
+虽然可以在不加载任何宏包的情况下在LaTeX文档中插入引用，但这相当有限。相反，我们将使用`natbib`宏包，它允许我们创建不同类型的引用，并且有很多可用的样式。
 
-The basic structure of our input is as shown in this example.
+我们输入的基本结构如下例所示：
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{natbib}
 
 \begin{document}
-The mathematics showcase is from \citet{Graham1995}, whereas
-there is some chemistry in \citet{Thomas2008}.
+数学展示来自\citet{Graham1995}，而
+化学内容在\citet{Thomas2008}中。
 
-Some parenthetical citations: \citep{Graham1995}
-and then \citep[p.~56]{Thomas2008}.
+一些括号引用：\citep{Graham1995}
+然后\citep[p.~56]{Thomas2008}。
 
-\citep[See][pp.~45--48]{Graham1995}
+\citep[参见][pp.~45--48]{Graham1995}
 
-Together \citep{Graham1995,Thomas2008}
+一起引用\citep{Graham1995,Thomas2008}
 
 \bibliographystyle{plainnat}
 \bibliography{learnlatex}
 \end{document}
 ```
 
-You can see that we can cite different entries in the database by giving their
-key. The `natbib` package offers both textual and parenthetical citation styles,
-`\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line; here we've used the `plainnat` style. The
-bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use; this is a comma-separated list of names.
+您可以看到我们可以通过给出它们的键来引用数据库中的不同条目。`natbib`宏包同时提供了文本和括号引用样式，分别是`\citet`和`\citep`。参考文献样式由`\bibliographystyle`行选择；这里我们使用了`plainnat`样式。参考文献实际上是由`\bibliography`行插入的，它也选择要使用的数据库；这是一个逗号分隔的列表。
 
-Page references can be added to the citation with an optional argument.
-If two optional arguments are given, the first goes in front of the citation
-label for a short note and the second after the label for a page reference.
+可以通过可选参数向引用添加页码引用。如果给出两个可选参数，第一个会出现在引用标签之前作为简短说明，第二个出现在标签之后作为页码引用。
 
-The setup above uses author-year style, but we can make use of numeric
-citations. That is done by adding the `numbers` option to the `natbib` line.
+上面的设置使用作者-年份样式，但我们可以使用数字引用。这是通过向`natbib`行添加`numbers`选项来完成的。
 
-## The `biblatex` workflow
+## `biblatex`工作流程
 
-The `biblatex` package works slightly differently to `natbib`, as we select
-the databases in the preamble but print it in the document body. There are
-some new commands for this.
+`biblatex`宏包的工作方式与`natbib`略有不同，因为我们在导言区选择数据库，但在文档正文中打印它。还有一些新的命令。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage[style=authoryear]{biblatex}
-\addbibresource{learnlatex.bib} % file of reference info
+\addbibresource{learnlatex.bib} % 参考文献信息文件
 
 \begin{document}
-The mathematics showcase is from \autocite{Graham1995}.
+数学展示来自\autocite{Graham1995}。
 
-Some more complex citations: \parencite{Graham1995} or
-\textcite{Thomas2008} or possibly \citetitle{Graham1995}.
+一些更复杂的引用：\parencite{Graham1995}或
+\textcite{Thomas2008}或可能是\citetitle{Graham1995}。
 
 \autocite[56]{Thomas2008}
 
-\autocite[See][45-48]{Graham1995}
+\autocite[参见][45-48]{Graham1995}
 
-Together \autocite{Thomas2008,Graham1995}
+一起引用\autocite{Thomas2008,Graham1995}
 
 \printbibliography
 \end{document}
 ```
 
-Notice that `\addbibresource` _requires_ the full database filename, whereas
-we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for its citation commands, but these are
-all quite easy to guess.
+注意`\addbibresource` _需要_ 完整的数据库文件名，而我们在`natbib`中使用`\bibliography`时省略了`.bib`。还要注意`biblatex`使用更长的命令名称，但这些都很容易猜到。
 
-Again, short text before and after the citation can be inserted with
-the optional arguments. Note that the page numbers need not be prefixed
-with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
-prefix.
+同样，可以在引用前后插入简短文本，使用可选参数。注意这里页码不需要加前缀`p.~`或`pp.~`，`biblatex`可以自动添加适当的前缀。
 
+在`biblatex`中，参考文献样式是在加载宏包时选择的。这里我们使用了`authoryear`，但还有`numeric`样式和许多其他可用的样式。
 
-In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authoryear`, but there is a `numeric` style and many others are
-also available.
+## 在BibTeX工作流程和`biblatex`之间选择
 
-## Choosing between the BibTeX workflow and `biblatex`
+尽管BibTeX工作流程和`biblatex`都通过BibTeX文件获取输入，并且可以产生在文档中结构上相似的输出，但它们使用完全不同的方式来产生这个结果。这意味着这两种方法之间存在一些差异，这可能帮助您选择哪种方法最适合您。
 
-Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
-files and can produce structurally similar output in the document, they use
-completely different ways to produce this result. That means that there are
-some differences between the two approaches that may help you choose which
-one works best for you.
+在BibTeX工作流程中，参考文献样式最终由一个`.bst`文件决定，您通过`\bibliographystyle`命令选择它。`biblatex`不使用`.bst`文件，使用了一个不同的系统。如果您使用的是一个带有`.bst`文件的模板，或者您的项目给了您一个`.bst`文件，您必须使用BibTeX工作流程，不能使用`biblatex`。
 
-In the BibTeX workflow the bibliography style is ultimately decided
-by a `.bst` file which you select with the `\bibliographystyle` command.
-`biblatex` does not use `.bst` files and uses a different system.
-If you are using a template that comes with a `.bst` file or are given a `.bst`
-file for your project, you must use the BibTeX workflow and cannot use
-`biblatex`.
+`biblatex`采用的不同方法意味着您可以直接从文档导言区使用基于LaTeX的命令修改参考文献和引用命令的输出。相比之下，BibTeX的`.bst`样式的修改通常需要处理这些外部文件，并且需要了解BibTeX编程语言。一般来说，`biblatex`被认为比BibTeX工作流程更容易定制。
 
-The different approach `biblatex` takes implies that you can modify the output
-of the bibliography and citation commands directly from your document preamble
-using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
-hand usually require working with these external files and need knowledge of
-the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customize than the BibTeX workflow.
+在`biblatex`中，实现更复杂的引用样式通常更容易，它提供了更广泛的不同引用命令。它还提供更多上下文相关的功能。粗略地说，这对于在许多STEM学科中常见的样式来说不太有趣，但对于一些人文学科领域中更复杂的样式来说变得相关。
 
-In `biblatex` it is generally easier to implement more elaborate citation
-styles with a wider array of different citation commands. It also offers more
-context-dependent features. Roughly speaking this is less interesting for
-the styles common in many STEM subjects, but becomes relevant for some more
-complex styles in some areas of the humanities.
+BibTeX只能正确排序US-ASCII字符，并依赖变通方法为非US-ASCII字符提供基于US-ASCII的排序。通过Biber，`biblatex`提供了完整的Unicode排序功能。因此，如果您想要以非ASCII/非英语顺序对参考文献进行排序，`biblatex`通常是更好的选择。
 
-BibTeX can only sort US-ASCII characters correctly and relies on workarounds
-to provide US-ASCII-based sorting for non-US-ASCII characters.
-With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
-is usually a better choice if you want to sort your bibliography in a
-non-ASCII/non-English order.
+由于存在的时间比`biblatex`更长，BibTeX工作流程比`biblatex`更为成熟，这意味着许多出版商和期刊期望使用BibTeX工作流程生成的参考文献。这些出版商不能或通常不接受使用`biblatex`的投稿。
 
-Having been around for much longer than `biblatex`, the BibTeX workflow is
-more established than `biblatex`, meaning that many publishers and journals
-expect bibliographies generated via the BibTeX workflow. Those publishers
-cannot or generally do not accept submissions using `biblatex`.
+结论是：检查作者/投稿指南，如果您要投稿给期刊或出版商。如果您得到了一个`.bst`文件，您必须使用BibTeX工作流程。如果您需要一个相对简单的参考文献和引用样式，并且只需要基于英语US-ASCII的排序，BibTeX工作流程就足够了。如果您需要更复杂的引用样式，非英语排序，或者想要更容易访问引用和参考文献样式的自定义功能，您会想要研究使用`biblatex`。
 
-The bottom line is: Check the author/submission guidelines if you are
-submitting to a journal or publisher. If you are given a `.bst` file, you must
-use the BibTeX workflow. If you want a relatively simple bibliography and
-citation style and only need English US-ASCII-based sorting, the BibTeX workflow
-should suffice. If you need a more complex citation style, non-English sorting
-or want easier access to citation and bibliography style customisation features,
-you will want to look into using `biblatex`.
+## 练习
 
-## Exercises
+尝试`natbib`和`biblatex`的示例。对于`natbib`，您需要运行LaTeX、BibTeX、LaTeX、LaTeX；对于`biblatex`，是LaTeX、Biber、LaTeX。找出如何在您的编辑器中做到这一点，或者尝试Overleaf和TeXLive.net的自动化功能。
 
-Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
-to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and TeXLive.net
-automation.
-
-See what happens when you create new database entries and new citations. Add
-a citation that's not in the database and see how it appears. Experiment
-with `natbib`'s `numeric` and `biblatex`'s `style=numeric` option.
+看看当您创建新的数据库条目和新的引用时会发生什么。添加一个不在数据库中的引用，看看它如何显示。尝试`natbib`的`numeric`选项和`biblatex`的`style=numeric`选项。
