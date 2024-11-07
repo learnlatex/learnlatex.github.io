@@ -1,92 +1,56 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Selecting fonts and using Unicode engines"
-description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
-toc-anchor-text: "Fonts & Unicode engines"
-toc-description: "Selecting fonts and file encoding."
+lang: "zh"
+title: "选择字体和使用Unicode引擎"
+description: "本课介绍了LaTeX如何解释Unicode输入以及这如何影响您的输入内容和使用的字体。了解Unicode和OpenType字体支持。"
+toc-anchor-text: "字体和Unicode引擎"
+toc-description: "选择字体和文件编码。"
 ---
 
-# Fonts and Unicode engines
+# 字体和Unicode引擎
 
 <span
-  class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
+  class="summary">本课介绍了LaTeX如何解释Unicode输入以及这如何影响您的输入内容和使用的字体。了解Unicode和OpenType字体支持。</span>
 
-When TeX and LaTeX first started being widely used they largely only handled
-European languages out of the box, although there was some capability for using
-other alphabets such as Greek and Russian.
+当TeX和LaTeX最初开始被广泛使用时，它们基本上只能直接处理欧洲语言，尽管也有一些使用其他字母（如希腊语和俄语）的能力。
 
-## Accents and accented letters
+## 重音和带重音的字母
 
-Originally, accents and accented letters were typed using control sequences or
-macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
-use these input methods because they can be easier to type, others wanted to be
-able to use the keys on their keyboards to input such symbols directly.
+最初，重音和带重音的字母是使用控制序列或宏来输入的，比如`\c{c}`表示'ç'，`\'e`表示'é'。虽然有些人继续使用这些输入方法因为它们可能更容易输入，但其他人希望能够直接使用键盘上的键来输入这些符号。
 
-Before Unicode, LaTeX provided support for many types of *file encoding* that
-allowed text to be written in various languages natively — for example, using
-the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would
-internally translate the accented letters into TeX commands to produce the
-correct output.
+在Unicode之前，LaTeX为许多类型的*文件编码*提供了支持，这些编码允许以本地方式编写各种语言的文本 — 例如，使用`latin1`编码，法语用户可以写'`déjà vu`'，LaTeX会在内部将带重音的字母转换为TeX命令以产生正确的输出。
 
-This approach is still in use in modern LaTeX when using the `pdflatex` engine.
-By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
-specified. Although this engine is limited to 8-bit fonts, most European
-languages can be supported.
+这种方法在使用`pdflatex`引擎的现代LaTeX中仍在使用。默认情况下，所有文件都被假定为Unicode（UTF-8编码），除非另有指定。尽管这个引擎限于8位字体，但大多数欧洲语言都可以得到支持。
 
-## Font selection
+## 字体选择
 
-Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
-nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
-example, the TeX Gyre fonts are a suite of high-quality fonts based on common
-fonts that most people are familiar with such as Times, Helvetica, Palatino, and
-others. To load these fonts, it is as simple as loading a package with the
-appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
+使用`pdflatex`的字体选择使用了健壮的LaTeX字体选择方案，如今在标准LaTeX发行版中有许多可直接使用的字体。例如，TeX Gyre字体是一套基于大多数人熟悉的常见字体的高质量字体，如Times、Helvetica、Palatino等。要加载这些字体，只需加载一个具有适当名称的宏包。对于Times的替代品，TeX Gyre的名称是Termes：
 
 ```latex
 \usepackage{tgtermes}
 ```
 {: .noedit :}
 
-For `pdflatex`, most fonts are accessible through packages.  You can have a look
-at [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) or the
-[CTAN page on the ‘Font’ topic](https://www.ctan.org/topic/font) to see some
-options.  You can also search on the Internet for the font you want, and look
-for a `pdflatex`-compatible package version.  If you want to use a proprietary
-font, you can search for a suitable clone, which for most applications is
-similar enough to the original.
+对于`pdflatex`，大多数字体都可以通过宏包访问。您可以查看[LaTeX字体目录](https://www.tug.org/FontCatalogue/)或[CTAN上的'字体'主题](https://www.ctan.org/topic/font)来了解一些选项。您也可以在互联网上搜索您想要的字体，并寻找`pdflatex`兼容的宏包版本。如果您想使用专有字体，您可以搜索合适的克隆版本，对于大多数应用来说，这与原版足够相似。
 
-## The Unicode era
+## Unicode时代
 
-As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot
-natively use modern OpenType fonts and easily switch between multiple languages
-that use different alphabets (or scripts, to use the technical term). There are
-two replacements for pdfTeX that natively use Unicode input and modern fonts:
-XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using
-the engines `xelatex` and `lualatex` respectively.
+由于`pdflatex`限于8位文件编码和8位字体，它不能原生使用现代OpenType字体，也不能轻松地在使用不同字母（或脚本，用技术术语来说）的多种语言之间切换。有两个替代pdfTeX的引擎，它们原生使用Unicode输入和现代字体：XeTeX和LuaTeX。对于LaTeX，这些通常在您的编辑器中分别使用`xelatex`和`lualatex`引擎来调用。
 
-In these engines, font selection is performed by the `fontspec` package, and for
-simple documents can look as easy as:
+<p class="hint">例如，本教程的中文版本就指定XeLaTeX为编译引擎，并使用`xeCJK`宏包来支持中文。</p>
+
+在这些引擎中，字体选择由`fontspec`宏包完成，对于简单的文档可以像这样简单：
 ```latex
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
 {: .noedit :}
 
-This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
-Notably, this approach works for *any* OpenType font.  Some fonts available for
-`pdflatex` are also available to `xelatex` and `lualatex` through their
-respective packages as well, or by loading any font you have installed on your
-computer by using `fontspec` as shown above.
+这选择了TeX Gyre Termes字体，就像在`pdflatex`示例中一样。值得注意的是，这种方法适用于_任何_OpenType字体。一些可用于`pdflatex`的字体也可以通过它们各自的宏包用于`xelatex`和`lualatex`，或者通过使用`fontspec`如上所示加载您计算机上安装的任何字体。
 
-[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
-with OpenType formats available, so you can use that as a resource for looking
-up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
-earlier.
+[LaTeX字体目录](https://www.tug.org/FontCatalogue/)也显示了有OpenType格式可用的字体，所以您可以用它作为查找字体的资源，以及前面提到的[CTAN页面](https://www.ctan.org/topic/font)。
 
-Having selected a font, input can now be typed directly in plain Unicode into a 
-source document. Here is an example showing some Latin and Greek letters as 
-well as some CJK ideographs:
+选择字体后，现在可以直接在源文档中用纯Unicode输入文本。这里是一个示例，显示了一些拉丁字母和希腊字母以及一些CJK表意文字：
 
 ```latex
 % !TEX xelatex
@@ -102,4 +66,4 @@ ABC → αβγ → {\cjkfont 你好}
 ```
 
 <p 
-  class="hint">When switching between languages it is usually important to also change things like hyphenation patterns and so on, and the <code>babel</code> and <code>polyglossia</code> packages both provide robust features to do this.</p>
+  class="hint">在切换语言时，通常也需要更改断字模式等内容，`babel`和`polyglossia`宏包都提供了强大的功能来做这些事情。</p>
