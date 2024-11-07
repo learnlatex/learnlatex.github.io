@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Structuring longer documents"
-description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
-toc-anchor-text: "Structuring sources"
-toc-description: "Spliting up sources in a controlled way."
+lang: "zh"
+title: "长文档结构"
+description: "本课展示了如何将LaTeX源文件分割成更小、更易管理的文件，以及这如何使构建长文档更容易和更快速。"
+toc-anchor-text: "源文件结构"
+toc-description: "以可控的方式分割源文件。"
 ---
 
-# Structuring longer documents
+# 长文档结构
 
 <script>
 runlatex.preincludes = {
@@ -26,34 +26,36 @@ runlatex.preincludes = {
 </script>
 
 <span
-  class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
+  class="summary">本课展示了如何将LaTeX源文件分割成更小、更易管理的文件，以及这如何使构建长文档更容易和更快速。</span>
 
-When you are writing a longer document, you’ll likely want to split up
-the source into multiple files. For example, it's very common to have
-one 'main'/'root' file, then one source file per chapter (for a book or thesis),
-or per significant section (for a long article).
+当您在写一个较长的文档时，您可能想要将源文件分割成多个文件。例如，对于一本书或论文，通常会有一个"主"/"根"文件，然后每章一个源文件（对于书或论文），或每个重要章节一个源文件（对于长文章）。
 
-## Structuring your sources
+## 结构化源文件
 
-LaTeX allows us to split up sources in a controlled way. There are two important
-commands here, `\input` and `\include`. We can use `\input` to make a file work
-'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it has a big advantage: it allows us to
-be selective in which chapters to include, so you can work on part of your
-document rather than the whole thing.
+LaTeX允许我们以可控的方式分割源文件。有两个重要的命令：`\input`和`\include`。我们可以使用`\input`让一个文件"就像它被输入在这里一样"工作，所以它可以用于（基本上）任何材料。`\include`命令只能用于章节：它开始新的一页并进行一些内部调整。但它有一个很大的优势：它允许我们选择性地包含章节，所以您可以处理文档的一部分而不是整个文档。
 
-A longer document might therefore look something like the following:
+因此，一个较长的文档可能看起来像这样：
 
 <!-- pre0 {% raw %} -->
 ```latex
-\documentclass{book}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
-\title{A Sample Book}
-\author{John Doe \and Joe Bloggs}
+\title{一本示例书}
+\author{约翰·多伊 \and 乔·布洛格斯}
 
 \IfFileExists{\jobname.run.xml}
 {
@@ -65,8 +67,8 @@ A longer document might therefore look something like the following:
   }
 }
 {
-% Do a full document initially to generate
-% all the aux files
+% 初始时做一个完整的文档以生成
+% 所有的辅助文件
 }
 
 \begin{document}
@@ -89,57 +91,29 @@ A longer document might therefore look something like the following:
 ```
 <!-- {% endraw %} -->
 
-We'll look at the various aspects of this file below. (The various support files
-are at the end of this page.)
+我们将在下面查看这个文件的各个方面。（各个支持文件在本页底部。）
 
-## Using `\input`
+## 使用`\input`
 
-The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the main file short and clear, and also meaning we could
-re-use the covers in another document. We've also used it for the 'non-chapter'
-sections at the start of our 'book': things like the preface. Again, this is
-to help keep the main file clear.
+`\input`命令适用于不是独立章节的长文件的部分。在示例中，我们用它来分离出前封面和后封面，保持主文件简短明了，同时也意味着我们可以在另一个文档中重用这些封面。我们也用它来处理文档开头的"非章节"部分：像前言这样的内容。这同样是为了帮助保持主文件清晰。
 
-## Using `\include` and `\includeonly`
+## 使用`\include`和`\includeonly`
 
-The `\include` command is good for chapters, so we have used it for each full
-chapter; it always starts a new page. We have selected which chapters will
-actually be typeset using `\includeonly`, which as you can see takes a
-comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proofreading.
-In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from the `.aux` files of other included files.
+`\include`命令适用于章节，所以我们对每个完整的章节都使用了它；它总是开始新的一页。我们已经使用`\includeonly`选择了实际要排版的章节，如您所见，它接受一个逗号分隔的文件名列表。当您使用`\includeonly`时，您可以缩短排版时间并生成一个用于校对的"选择性"PDF。此外，`\includeonly`的关键优势是LaTeX将使用其他包含文件的`.aux`文件中的所有交叉引用信息。
 
-## Creating a table of contents
+## 创建目录
 
-The `\tableofcontents` command uses the information from sectioning
-commands to populate the table of contents.  It has its own auxiliary
-file, with extension `.toc`, so you may need to run LaTeX twice to
-resolve the information. The table is generated automatically from the
-section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions, and
-use files with extension `.lof` and `.lot` respectively.
+`\tableofcontents`命令使用章节命令中的信息来填充目录。它有自己的辅助文件，扩展名为`.toc`，所以您可能需要运行LaTeX两次来解析信息。目录是自动从章节标题生成的。还有类似的命令用于`\listoffigures`和`\listoftables`，它们分别从浮动环境的标题工作，并使用扩展名为`.lof`和`.lot`的文件。
 
-## Splitting the document into parts
+## 将文档分成部分
 
-The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
-affect the formatting.
-For instance, `\frontmatter` changes the page numbering to
-Roman numbers.
-The `\appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after `\appendix`,
-the header says `Appendix A`.
+`\frontmatter`、`\mainmatter`和`\backmatter`命令影响格式。例如，`\frontmatter`将页码改为罗马数字。`\appendix`命令将编号改为`A`、`B`等，所以例如在`\appendix`之后的第一章中，页眉显示"附录A"。
 
-## Exercises
+## 练习
 
-Experiment with the basic structure of the demonstration document,
-try adding and removing entries for `\includeonly` and see the effect.
+尝试演示文档的基本结构，尝试添加和删除`\includeonly`的条目，看看效果。
 
-Add some floats and produce a list of figures and tables.
-If using a locally installed LaTeX, do you see
-how many LaTeX runs are required? (The online systems re-run LaTeX
-"behind the scenes" so the additional required runs are not so obvious.)
+添加一些浮动体并生成图表和表格列表。如果使用本地安装的LaTeX，您能看到需要多少次LaTeX运行吗？（在线系统在"幕后"重新运行LaTeX，所以额外需要的运行不那么明显。）
 
 ----
 
@@ -158,32 +132,32 @@ how many LaTeX runs are required? (The online systems re-run LaTeX
 #### pref.tex
 <!-- pre2 {% raw %} -->
 ```latex
-\chapter{Preface}
-The preface text. See \cite{doody}.
+\chapter{前言}
+前言文本。参见\cite{doody}。
 ```
 <!-- {% endraw %} -->
 
 #### chap1.tex
 <!-- pre3 {% raw %} -->
 ```latex
-\chapter{Introduction}
-The first chapter text.
+\chapter{引言}
+第一章文本。
 ```
 <!-- {% endraw %} -->
 
 #### chap2.tex
 <!-- pre4 {% raw %} -->
 ```latex
-\chapter{Something}
-The second chapter text.
+\chapter{其他内容}
+第二章文本。
 ```
 <!-- {% endraw %} -->
 
 ####  append.tex
 <!-- pre5 {% raw %} -->
 ```latex
-\chapter*{Appendix}
-The first appendix text.
+\chapter*{附录}
+第一个附录文本。
 ```
 <!-- {% endraw %} -->
 
@@ -191,7 +165,7 @@ The first appendix text.
 <!-- pre6 {% raw %} -->
 ```latex
 \begin{center}
-The front cover
+前封面
 \end{center}
 ```
 <!-- {% endraw %} -->
@@ -201,7 +175,7 @@ The front cover
 ```latex
 \begin{center}
 \large
-For \ldots
+献给 \ldots
 \end{center}
 ```
 <!-- {% endraw %} -->
@@ -210,7 +184,7 @@ For \ldots
 <!-- pre8 {% raw %} -->
 ```latex
 \begin{center}
-Copyright 2020 learnlatex.
+版权所有 2020 learnlatex。
 \end{center}
 ```
 <!-- {% endraw %} -->
@@ -219,7 +193,7 @@ Copyright 2020 learnlatex.
 <!-- pre9 {% raw %} -->
 ```latex
 \begin{center}
-The back cover
+后封面
 \end{center}
 ```
 <!-- {% endraw %} -->
