@@ -1,21 +1,29 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Dealing with errors"
-description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
-toc-anchor-text: "More on: Dealing with errors"
+lang: "zh"
+title: "更多内容：处理错误"
+description: "本课展示了LaTeX中的一些更常见的错误，并解释了链式错误和静默错误。"
+toc-anchor-text: "更多内容：处理错误"
 ---
 
-## Errors reported at ends of environments
+## 在环境末尾报告的错误
 
-Some environments (notably `amsmath` alignments and `tabularx` tables)
-scan the whole environment body before processing the content. This means that
-any error within the environment is reported on the last line. However, as seen in the
-main lesson, TeX's display of the error context should still pinpoint the error location.
+某些环境（特别是`amsmath`的对齐环境和`tabularx`表格）在处理内容之前会扫描整个环境主体。这意味着环境内的任何错误都会在最后一行被报告。然而，如主课程所示，TeX显示的错误上下文仍然应该能够准确指出错误位置。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 
 \usepackage{amsmath}
 
@@ -30,15 +38,14 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 \end{document}
 ```
 
-Here the error will be reported on line 12
+这里的错误将在第12行被报告
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Although the real error is on line 10 as shown by the context lines:
-
+尽管实际错误是在第10行，这可以从上下文行中看出：
 
 ```
 ! Undefined control sequence.
@@ -48,21 +55,26 @@ Although the real error is on line 10 as shown by the context lines:
 {: .noedit :}
 
 
-## Spurious errors due to earlier errors
+## 由早期错误引起的虚假错误
 
-When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edit the document
-and re-run. However if you scroll past the error or use an editor or
-online system that does this for you then TeX will try to recover;
-however this may lead to several more errors being reported.
+当从命令行交互式调用LaTeX时，可以在第一个错误处使用`x`停止处理，编辑文档并重新运行。但是，如果您滚动过错误提示，或使用自动执行此操作的编辑器或在线系统，TeX将尝试恢复；然而这可能会导致报告更多的错误。
 
-So do not be too concerned about the _number_ of errors reported and
-always concentrate on fixing the first reported error.
-
+因此，不要太在意报告的错误_数量_，始终专注于修复第一个报告的错误。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 
 \begin{document}
 Text_word  $\alpha + \beta$.
@@ -71,9 +83,9 @@ More text.
 \end{document}
 ```
 
-The error here is the underscore `_` which should be entered as `\_`.
+这里的错误是下划线`_`，它应该输入为`\_`。
 
-TeX does report this correctly with the _first_ error message
+TeX在_第一个_错误消息中正确地报告了这一点
 
 ```
 ! Missing $ inserted.
@@ -85,10 +97,7 @@ l.5 Text_
 ```
 {: .noedit :}
 
-However if you scroll past the `?` prompt then TeX recovers by adding
-a `$` so the `_` is seen in math mode as a subscript. The math mode
-then continues until the `$` which ends math, so the following
-`\alpha` is seen in text mode generating another error
+然而，如果您滚动过`?`提示，TeX会通过添加一个`$`来恢复，这样`_`就会在数学模式中被视为下标。数学模式然后会继续到结束数学模式的`$`，因此后面的`\alpha`会在文本模式中被看到，从而产生另一个错误
 
 ```
 ! Missing $ inserted.
@@ -101,13 +110,11 @@ l.5 Text_word  $\alpha
 {: .noedit :}
 
 
-## Errors that do not trigger an error prompt
+## 不触发错误提示的错误
 
-Some errors, especially errors that are not detected until the end of the file,
-do not generate an error prompt but just give a warning in the log.
+某些错误，特别是直到文件末尾才被检测到的错误，不会生成错误提示，而只是在日志中给出警告。
 
-If you try this example using the TeXLive.net server it will return a PDF by default;
-to see the error message in the log add `%!TeX log`.
+如果您在TeXLive.net服务器上尝试这个示例，它默认会返回一个PDF；要在日志中查看错误消息，请添加`%!TeX log`。
 
 ```latex
 \documentclass{article}
@@ -120,11 +127,7 @@ to see the error message in the log add `%!TeX log`.
 \end{document}
 ```
 
-In this example the size change was mistakenly ended with `)` rather
-than `}`. This is not detected until the end of the file when TeX
-detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{`. It can not detect the actual
-error as the `)` is seen as "normal text".
+在这个示例中，字体大小更改错误地用`)`而不是`}`结束。这直到文件末尾才被检测到，当TeX检测到仍有一个未关闭的组时。它在这里报告了组被打开的行`{`。它无法检测到实际的错误，因为`)`被视为"普通文本"。
 
 ```
 (\end occurred inside a group at level 1)
