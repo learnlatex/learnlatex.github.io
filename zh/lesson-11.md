@@ -1,143 +1,170 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Formatting: fonts and spacing"
-description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
-toc-anchor-text: "Fonts & spacing"
-toc-description: "Text formatting for visual presentation."
+lang: "zh"
+title: "字体和间距"
+description: "本课展示了如何更改文档中的间距元素以及如何在LaTeX源代码中添加显式的格式化指令。"
+toc-anchor-text: "字体和间距"
+toc-description: "文本格式化的视觉呈现。"
 ---
 
-# Formatting: fonts and spacing
+# 字体和间距
 
 <span
-  class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>
+  class="summary">本课展示了如何更改文档中的间距元素以及如何在LaTeX源代码中添加显式的格式化指令。</span>
 
-We have already seen that a blank line in your input will generate a new
-paragraph in LaTeX. This shows up as the paragraph will start with an
-indent.
+我们已经看到，在输入中的空行会在LaTeX中生成新段落。这表现为段落会以缩进开始。
 
-## Paragraph spacing
+## 段落间距
 
-One common style is to have no indents for paragraphs, but instead
-to have a 'blank line' between them. We can achieve that using the `parskip`
-package.
+一种常见的样式是段落之间不缩进，而是在段落之间添加"空行"。我们可以使用`parskip`宏包来实现这一点。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \usepackage[parfill]{parskip}
-\usepackage{lipsum} % Just for some filler text
+\usepackage{zhlipsum} % 仅用于生成填充文本
 \begin{document}
-\lipsum
+\zhlipsum
 \end{document}
 ```
 
-## Forcing a new line
+## 强制换行
 
-Most of the time, you should not force a new line in LaTeX: you almost
-certainly want a new paragraph or to use `parskip`, as we've just seen,
-to put a 'blank line' between paragraphs.
+大多数情况下，您不应该在LaTeX中强制换行：您几乎肯定是想要一个新段落或者使用`parskip`（如我们刚才看到的）在段落之间添加"空行"。
 
-There are a _few_ places where you use `\\` to start a new line without
-starting a new paragraph:
+有_少数_地方您需要使用`\\`来开始新行而不开始新段落：
 
-- At the end of table rows
-- Inside the `center` environment
-- In poetry (the `verse` environment)
+- 在表格行末尾
+- 在`center`环境内
+- 在诗歌中（`verse`环境）
 
-Almost always, if you are not in one of those special places, you should
-_not_ use `\\`.
+几乎总是，如果您不在这些特殊的地方，您就_不应该_使用`\\`。
 
-## Adding explicit space
+## 添加显式空格
 
-We can insert a thin space (about half the normal thickness) using
-`\,`. In math mode, there are also other commands: `\.`, `\:` and `\;`,
-and one for a negative space: `\!`.
+我们可以使用`\,`插入一个细空格（约为正常厚度的一半）。在数学模式中，还有其他命令：`\.`、`\:`和`\;`，以及一个用于负空格的命令：`\!`。
 
-Very rarely, for example when creating a title page, you might need to
-add explicit horizontal or vertical space. We can use `\hspace` and `\vspace`
-for that.
+很少情况下，例如在创建标题页时，您可能需要添加显式的水平或垂直空格。我们可以使用`\hspace`和`\vspace`来实现。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
-Some text \hspace{1cm} more text.
+一些文本 \hspace{1cm} 更多文本。
 
 \vspace{10cm}
 
-Even more text.
+更多的文本。
 \end{document}
 ```
 
-## Explicit text formatting
+## 显式文本格式化
 
-We wrote [in lesson 3](lesson-03) that most of the time logical structure is
-preferable. But sometimes you want to make text bold, or italic, or monospaced,
-etc. There are two types of command for this: ones for short pieces of text,
-and ones for 'running' material.
+我们在[第3课](lesson-03)中写到，大多数情况下逻辑结构是更好的选择。但有时您想要让文本变为粗体、斜体、等宽等。有两种类型的命令用于此：一种用于短文本片段，另一种用于"运行"的材料。
 
-For short bits of text, we use `\textbf`, `\textit`, `\textrm`, `\textsf`,
-`\texttt` and `\textsc`.
+对于短文本片段，我们使用`\textbf`、`\textit`、`\textrm`、`\textsf`、`\texttt`和`\textsc`。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
-Let's have some font fun: \textbf{bold}, \textit{italic}, \textrm{roman},
-\textsf{sans serif}, \texttt{monospaced} and \textsc{small caps}.
+让我们玩玩字体：\textbf{粗体}、\textit{斜体}、\textrm{罗马体}、
+\textsf{无衬线体}、\texttt{等宽体}和\textsc{小型大写}。
 \end{document}
 ```
 
-For running text, we use commands that alter the font setup; the commands
-here are for example `\bfseries` and `\itshape`. Because these don't 'stop',
-we need to place them in a _group_ if we want to prevent them from applying to
-the whole document. LaTeX environments are groups, as are table cells,
-or we can use `{...}` to make an explicit group.
+对于运行文本，我们使用改变字体设置的命令；这里的命令例如是`\bfseries`和`\itshape`。因为这些命令不会"停止"，我们需要将它们放在一个_组_中，以防止它们影响整个文档。LaTeX环境是组，表格单元格也是，或者我们可以使用`{...}`来创建一个显式的组。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
-Normal text.
+正常文本。
 
 {\itshape
 
-This text is italic.
+这段文本是斜体的。
 
-So it this: the effect is not limited to a paragraph.
+这段也是：效果不限于一个段落。
 
 }
 \end{document}
 ```
 
-We can set font size in a similar way; these commands all work on an ongoing
-basis. The sizes we set are relative: `\huge`, `\large`, `\normalsize`,
-`\small` and `\footnotesize` are common. It's important to finish a paragraph
-_before_ changing the font size back; see how we add an explicit `\par`
-(paragraph break) here.
+我们可以用类似的方式设置字体大小；这些命令都是持续性的。字体大小是相对的：`\huge`、`\large`、`\normalsize`、`\small`和`\footnotesize`是常见的。重要的是要在改变字体大小回来之前结束段落；看看我们这里如何添加一个显式的`\par`（段落结束）。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
-Normal text.
+正常文本。
 
 \begin{center}
-{\itshape\large Some text\par}
-Normal text
-{\bfseries\small Much smaller text\par}
+{\itshape\large 一些文本\par}
+正常文本
+{\bfseries\small 更小的文本\par}
 \end{center}
 
 \end{document}
 ```
 
-## Exercises
+## 练习
 
-Experiment with manual formatting: create a `titlepage` environment and
-try inserting different spaces and font changes. What happens when we
-combine font changes? How does this compare to math mode?
+尝试手动格式化：创建一个`titlepage`环境并尝试插入不同的空格和字体更改。当我们组合字体更改时会发生什么？这与数学模式相比如何？
 
-What happens if you change the font size of a large paragraph (try with
-`\tiny` then with `\huge`) but don't issue a final `\par` before closing
-the group?
+如果您更改一个大段落的字体大小（尝试用`\tiny`然后用`\huge`）但在关闭组之前不发出最后的`\par`会发生什么？
