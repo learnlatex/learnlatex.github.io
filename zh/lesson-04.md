@@ -1,139 +1,143 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Logical structure"
-description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
-toc-anchor-text: "Logical structure"
-toc-description: "Structure and visual presentation."
+lang: "zh"
+title: "逻辑结构"
+description: "本课展示了一些基本的格式化命令，并将其与使用分节命令和列表的语义格式化进行比较。"
+toc-anchor-text: "逻辑结构"
+toc-description: "结构和视觉呈现。"
 ---
 
-# Logical structure
+# 逻辑结构
 
 <span
-  class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
+  class="summary">本课展示了一些基本的格式化命令，并将其与使用分节命令和列表的语义格式化进行比较。</span>
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
+LaTeX提供了专注于文档逻辑结构的方法，以及直接设置外观的能力。大多数情况下，使用专注于结构的方法要好得多，因为这样可以在需要时轻松重用或更改外观。
 
-## Structure and visual presentation
+## 结构和视觉呈现
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasized.)
+我们将从一个例子开始，对比LaTeX中最常见的逻辑标记命令之一`\emph`与简单地将某些内容斜体化（在印刷中，这通常是强调的方式）。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\begin{document}
-Some text with \emph{emphasis and \emph{nested} content}.
+% !TEX program=xelatex
 
-Some text in \textit{italic and \textit{nested} content}.
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
+\begin{document}
+一些含有 \emph{强调 和\emph{嵌套} 的内容}。
+
+一些含有 \textit{斜体 和\textit{嵌套} 的内容}。
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+您可能猜到`\textit`是一个将文本斜体化的命令，但它_总是_将内容斜体化，因此不适用于嵌套材料。看看`\emph`如何知道嵌套。还有一些地方，强调与斜体不同；例如，在演示中，颜色通常是更好的选择。使用逻辑标记，我们不必担心文档正文中的细节。
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+我们将在[后面的课程](lesson-11)中查看手动格式化，但目前我们将`\textbf`添加到我们知道的命令中：它使文本加粗。
 
-## Sectioning commands
+## 分节命令
 
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
+您可能使用过文字处理器，在那里大多数人通过输入标题文本然后简单地将其变大和加粗，并在其后跟一个新行来开始一个部分。在LaTeX中，使用逻辑标记实际上比手动格式化更容易；我们可以使用`\section`命令。这可以处理字体更改、垂直空间等，并在整个文档中保持输出一致。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
-Hey world!
+你好！
 
-This is a first document.
+这是你的第一份文档。
 
-\section{Title of the first section}
+\section{第一节}
 
-Text of material in the first section
+第一小节内容
 
-Second paragraph.
+第一小节第二段
 
-\subsection{Subsection of the first section}
+\subsection{第一小节}
 
-Text of material in the subsection.
+小节内容
 
-\section{Second section}
+\section{第二节}
 
-Text of the second section.
+第二节内容
 
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+为了演示中文使用，我们使用了`ctexart`文档类，LaTeX对节和小节进行编号，并以粗体显示标题。我们将在[下一课](lesson-05)中考虑更改设计。
 
-LaTeX can divide up documents into quite a few levels
+LaTeX可以将文档划分为多个级别
 
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
-- `\section`
-- `\subsection`
-- `\subsubsection`
+- `\chapter`（但我们需要`\documentclass{book}`或`\documentclass{report}`来实现），对应中文的“章”。
+- `\section`，对应中文的“节”。
+- `\subsection`，对应中文的“小节”。
+- `\subsubsection`，对应中文的“小小节”。
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+我们可以进一步划分：下一个“下一级”是`\paragraph`，但几乎总是太多“细节”在部分中。（是的，`\paragraph`是一个分节命令，而不是开始新段落的方法！）
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+您可能想知道文档的标题。有一些特殊命令用于此，但并非所有文档都使用它们，因此我们在[额外课程](more-04)中介绍了这一点。
 
-## Lists
+## 列表
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+您最常需要逻辑标记的另一个地方是编写列表。
+LaTeX中内置了两种常见类型的列表。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
 
-Ordered
+有序列表
 \begin{enumerate}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item 一个条目
+  \item 另一个条目
+  \item 第三个条目
 \end{enumerate}
 
-Unordered
+无序列表
 \begin{itemize}
-  \item An entry
-  \item Another One
-  \item Wow! Three entries
+  \item 一个条目
+  \item 另一个条目
+  \item 第三个条目
 \end{itemize}
 
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+请注意，我们使用`\item`来开始每个条目，并且每种类型的列表使用的标记是自动添加的。
 
-## Exercises
+## 练习
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+尝试使用不同的分节级别。尝试使用`\documentclass{report}`而不是`\documentclass{article}`并添加`\chapter`命令。它们看起来如何？尝试使用`\paragraph`和（甚至）`\subparagraph`来查看它们的工作方式：默认情况下，它们_不_添加编号。
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+制作一些列表，并在一个列表中嵌套另一个列表。数字或标记的格式如何变化？使用标准LaTeX，您最多可以嵌套四级列表，但超过四个嵌套列表往往是一个不好的信号！
