@@ -1,29 +1,20 @@
 ---
 layout: "page"
-lang: "en"
-title: Licenses
-permalink: /en/licenses
+lang: "zh"
+title: 许可证
+permalink: /zh/licenses
 ---
 
-# Licenses
+# 许可证
 
-The [Learn LaTeX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+[Learn LaTeX网站]({{ "/" | absolute_url }})使用两种类型的许可证：
 
-## Content
+## 内容
 
-The content of this website is available under the
-[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license. That means you can use the material as long as you say where it came
-from and let others do the same.
+本网站的内容采用[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)许可证。这意味着您可以使用这些材料，只要您说明材料的来源并允许他人以相同的方式使用。
 
-See [LICENSE](../LICENSE) for details.
+详情请参见[LICENSE](../LICENSE)。
 
-## Code Examples
+## 代码示例
 
-The code examples are licensed as
-[Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
-(No Rights Reserved). This is a legal text that is (essentially) the same as 
-Public Domain, at least in countries where that concept exists. The key point 
-is that _you can use the examples without any issues_. You _do not_ need to 
-reference them, you _do not_ need to share them when you modify them: you can 
-just use them.
+代码示例采用[Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.zh)许可证（无权利保留）。这是一个法律文本，在有公共领域这个概念的国家中，它（本质上）与公共领域相同。关键点是_您可以无任何问题地使用这些示例_。您_不需要_引用它们，您_不需要_在修改它们时分享它们：您可以直接使用它们。
