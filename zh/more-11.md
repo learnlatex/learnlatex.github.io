@@ -1,30 +1,35 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Formatting: fonts and spacing"
-description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "More on: Formatting: fonts and spacing"
+lang: "zh"
+title: "更多内容：格式：字体和间距"
+description: "本课展示了如何抑制单个段落的缩进。"
+toc-anchor-text: "更多内容：格式：字体和间距"
 ---
 
-## Suppressing the indent for one paragraph
+## 抑制单个段落的缩进
 
-
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+如果您想抑制单个段落的缩进，可以使用`\noindent`命令。
+这种用法应该 _非常_ 少见；大多数时候，您应该让LaTeX自动处理这个问题。
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+% !TEX program=xelatex
+
+% 临时patch，否则使用中文标点，TexLive.net会编译错误
+\ExplSyntaxOn
+\clist_map_inline:nn { fp, int, dim, skip, muskip }
+  {
+    \cs_generate_variant:cn { #1_set:Nn }  { NV }
+    \cs_generate_variant:cn { #1_gset:Nn } { NV }
+  }
+\ExplSyntaxOff
+
+\documentclass[UTF8]{ctexart}
+\usepackage{xeCJK}
 \begin{document}
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+一个小段落，我们稍微填充一些内容以确保您能在这里看到效果！
 
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+一个小段落，我们稍微填充一些内容以确保您能在这里看到效果！
 
-\noindent  One small paragraph, which we have filled out a little to make sure
-you can see the effect here!
+\noindent 一个小段落，我们稍微填充一些内容以确保您能在这里看到效果！
 \end{document}
 ```
