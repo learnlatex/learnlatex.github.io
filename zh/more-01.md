@@ -1,28 +1,17 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: What is LaTeX and how does it work?"
-description: "This lesson gives more context on the history of LaTeX and other formats available."
-toc-anchor-text: "More on: What is LaTeX and how does it work?"
+lang: "zh"
+title: "更多内容：什么是LaTeX，它是如何工作的？"
+description: "本课提供了更多关于LaTeX历史和其他可用格式的背景信息。"
+toc-anchor-text: "更多内容：什么是LaTeX，它是如何工作的？"
 ---
 
-The word 'LaTeX' actually consists of two components, 'La' and 'TeX'. In the
-following we will briefly describe where they come from.
+'LaTeX'这个词实际上由两个部分组成，'La'和'TeX'。下面我们将简要介绍它们的来源。
 
-TeX was originally invented by Stanford professor Donald Knuth. Knuth is
-well known for a series of books called *The Art of Computer Programming*
-(known as TAOCP). In
-1973 a new edition of the books was to be made; this was the time when the
-typesetting industry switched from traditional typesetting with lead to
-photo-based typesetting. Donald Knuth did not like the quality of the print and
-therefore decided to implement his own typesetting system.
+TeX最初是由斯坦福大学教授Donald Knuth发明的。Knuth因一系列被称为《计算机程序设计艺术》（TAOCP）的书籍而闻名。1973年，这些书籍准备出新版本；这正值排版行业从传统的铅字排版转向照相排版的时期。Donald Knuth对印刷质量不满意，因此决定开发自己的排版系统。
 
-In May 1977 the development of TeX started.
+1977年5月，TeX项目开始启动。
 
-The original TeX was rather complicated to use, even Donald Knuth used various
-macros to edit his books. Leslie Lamport, who works for Microsoft nowadays, also
-developed a set of macros that simplify the use of TeX and called this macro
-set “LaTeX”.
+原始的TeX使用起来相当复杂，就连Donald Knuth自己也使用了各种宏来编辑他的书籍。Leslie Lamport（现在在微软工作）也开发了一套简化TeX使用的宏集，并将这个宏集称为"LaTeX"。
 
-Today LaTeX is the most common way to interact with TeX. Another alternative is
-[ConTeXt](https://www.contextgarden.net/).
+如今，LaTeX是与TeX交互最常用的方式。另一个替代方案是[ConTeXt](https://www.contextgarden.net/)。
