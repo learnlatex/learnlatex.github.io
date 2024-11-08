@@ -38,6 +38,8 @@ permalink: /zh/help
 \end{document}
 ```
 
+<p class="hint">当您使用ctexart（或其他ctex文档类）时，无需加载xeCJK宏包（`\usepackage{xeCJK}`）。现代TeX引擎会根据需要自动加载对应的CJK宏包，简单的ctexart文档应该在所有引擎上都能正常工作。在编译LaTeX文档时最好使用LuaLaTeX引擎，不仅因为它在处理大型文档时更快，而且它是被推荐的编译引擎(https://www.texdev.net/2024/11/05/engine-news-from-the-latex-project)。</p>
+
 每个示例都是完整的。但是您可能希望编辑它来做一些小的改动，也许是作为课程末尾的练习集的一部分。
 
 编辑器使用的是[ACE](https://ace.c9.io/)。
