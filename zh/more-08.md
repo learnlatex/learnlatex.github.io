@@ -18,15 +18,6 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{array}
@@ -53,15 +44,6 @@ toc-anchor-text: "更多内容：表格"
 <!-- {% raw %} -->
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -90,15 +72,6 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{array}
@@ -121,15 +94,6 @@ toc-anchor-text: "更多内容：表格"
 <!-- {% raw %} -->
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -154,15 +118,6 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{array}
@@ -186,15 +141,6 @@ toc-anchor-text: "更多内容：表格"
 <!-- {% raw %} -->
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -221,15 +167,6 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{array}
@@ -255,15 +192,6 @@ toc-anchor-text: "更多内容：表格"
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -301,15 +229,6 @@ toc-anchor-text: "更多内容：表格"
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -352,15 +271,6 @@ C & D\\
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -408,15 +318,6 @@ C & D D D D D D D\\
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
@@ -461,15 +362,6 @@ a & b b\\
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{array}
@@ -503,15 +395,6 @@ a & b b\\
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -563,15 +446,6 @@ a & b b\\
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{array}
@@ -596,15 +470,6 @@ a & b b\\
 <!-- {% raw %} -->
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -642,15 +507,6 @@ a & b b\\
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}

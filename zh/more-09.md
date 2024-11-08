@@ -13,15 +13,6 @@ toc-anchor-text: "更多内容：交叉引用"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage[hidelinks]{hyperref}

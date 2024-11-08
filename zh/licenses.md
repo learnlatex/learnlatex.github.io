@@ -17,4 +17,4 @@ permalink: /zh/licenses
 
 ## 代码示例
 
-代码示例采用[Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.zh)许可证（无权利保留）。这是一个法律文本，在有公共领域这个概念的国家中，它（本质上）与公共领域相同。关键点是_您可以无任何问题地使用这些示例_。您_不需要_引用它们，您_不需要_在修改它们时分享它们：您可以直接使用它们。
+代码示例采用[Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.zh)许可证（无权利保留）。这是一个法律文本，在有公共领域这个概念的国家中，它（本质上）与公共领域相同。关键点是 _您可以无任何问题地使用这些示例_。您 _不需要_ 引用它们，您 _不需要_ 在修改它们时分享它们：您可以直接使用它们。

@@ -26,15 +26,6 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \begin{document}
@@ -67,15 +58,6 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \begin{document}
@@ -89,15 +71,6 @@ toc-description: "数学模式和数学符号。"
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -119,15 +92,6 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \begin{document}
@@ -146,15 +110,6 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \newcommand{\diff}{\mathop{}\!d}            % 斜体
@@ -171,15 +126,6 @@ toc-description: "数学模式和数学符号。"
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -199,15 +145,6 @@ toc-description: "数学模式和数学符号。"
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -230,15 +167,6 @@ toc-description: "数学模式和数学符号。"
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -280,15 +208,6 @@ d & e & f
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \begin{document}
@@ -302,15 +221,6 @@ d & e & f
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}

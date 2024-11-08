@@ -13,15 +13,6 @@ toc-anchor-text: "更多内容：数学"
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 
@@ -51,15 +42,6 @@ Multline环境
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{amsmath}
@@ -78,15 +60,6 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -114,15 +87,6 @@ d&=c
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{amsmath}
@@ -148,15 +112,6 @@ c&=d
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 
@@ -177,15 +132,6 @@ $\mathbf{\pi} r^2$ % 错误使用\mathbf
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{bm}
@@ -205,15 +151,6 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 `mathtools`宏包加载`amsmath`并添加了一些额外功能，比如`amsmath`矩阵环境的变体，允许指定列对齐方式。
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
@@ -238,17 +175,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 但是，我们在这里给出一个小示例。
 
 ```latex
-% !TEX lualatex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}

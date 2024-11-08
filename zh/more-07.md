@@ -43,15 +43,6 @@ LaTeX的浮动体放置很复杂。最常见的要求是将图片放在输出中
 ```latex
 % !TEX program=xelatex
 
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
-
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
 \usepackage{graphicx}
@@ -79,15 +70,6 @@ LaTeX的浮动体放置很复杂。最常见的要求是将图片放在输出中
 
 ```latex
 % !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
 
 \documentclass[UTF8]{ctexart}
 \usepackage{xeCJK}
