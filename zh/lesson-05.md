@@ -44,14 +44,37 @@ LaTeX自带一组标准文档类，它们的外观相似但有一些变化：
 - `letter`  
   没有分节的信件
 - `slides`  
-  用于演示（但请参见下文）
+  用于演示（请参见下文）
+- `beamer`  
+  用于制作幻灯片
 
-`article`、`report`和`book`类有非常相似的可用命令，正如我们已经看到的。当写信时，可用的命令有点不同：
+这些类都有自己的选项，可以用来调整布局和功能。`article`、`report`和`book`类有非常相似的可用命令，正如我们已经看到的。
+
+与之相对，CTex包提供了一些中文文档类：
+
+- `ctexart`  
+  适用于中文文章的文档类
+- `ctexrep`  
+  适用于中文报告的文档类
+- `ctexbook`  
+  适用于中文书籍的文档类
+- `ctexbeamer`  
+  适用于中文幻灯片的文档类
+
+如果某种标准文档类未发现对应的`ctex`版本，可以在文档类定义后添加`ctex`包来调用中文文档类。引用格式为：
+
+```latex
+\documentclass[UTF8]{<标准文档类名>}
+\usepackage{ctex}
+```
+
+选择不同的文档类，可能会有一些可用命令与环境的细微差别。例如，当写信时，可用的命令有点不同：
 
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass[UTF8]{letter}
+\usepackage{ctex}
 \begin{document}
 
 \begin{letter}{某某地址\\某某街道\\某某城市}
