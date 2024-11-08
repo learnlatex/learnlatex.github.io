@@ -24,10 +24,9 @@ toc-description: "使用LaTeX进行中文排版。"
 - 下面第一行的注释指定编译引擎为xelatex，通知TexLive.net网站使用XeLaTeX引擎进行编译，可以更好的处理中文字符。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 这是一个中文示例。
 \end{document}

@@ -11,10 +11,9 @@ toc-anchor-text: "更多内容：逻辑结构"
 LaTeX为文档标题提供了一些逻辑标记：三个用于设置"元数据"的命令和一个用于使用它的命令。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 \author{张三 \and 李四}
 \title{我做的一些事情}
@@ -34,10 +33,9 @@ LaTeX为文档标题提供了一些逻辑标记：三个用于设置"元数据"�
 除了"有序"和"无序"类型的列表外，LaTeX还提供了另一种不太常见的列表：描述列表。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 
 \begin{description}

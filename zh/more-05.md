@@ -15,10 +15,9 @@ toc-anchor-text: "更多内容：使用文档类来影响设计"
 创建演示文稿需要很多特殊处理。`slides`文档类是为制作"传统的"印刷幻灯片而编写的，它并不支持屏幕演示。为了实现这一点，已经开发了两个广泛使用的文档类：`beamer`和`powerdot`。由于`beamer`可能是更常用的一个，我们将给您一个它如何工作的示例：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass{ctexbeamer}
-\usepackage{xeCJK}
 \begin{document}
 
 \begin{frame}
@@ -45,8 +44,8 @@ toc-anchor-text: "更多内容：使用文档类来影响设计"
 有时候您需要使用LaTeX制作一个图像（可能包含大量文本），而您只想要内容本身，不要页面上的其他任何东西。使用[`standalone`](https://ctan.org/pkg/standalone)文档类最容易做到这一点。它会自动将页面大小设置为围绕打印的内容。
 
 ```latex
+% !TEX program=lualatex
 \documentclass{standalone}
-\usepackage{xeCJK}
 \begin{document}
 一个简单的文档：这将是一个很小的盒子！
 \end{document}

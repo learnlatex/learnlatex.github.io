@@ -11,11 +11,9 @@ toc-anchor-text: "更多内容：处理错误"
 某些环境（特别是`amsmath`的对齐环境和`tabularx`表格）在处理内容之前会扫描整个环境主体。这意味着环境内的任何错误都会在最后一行被报告。然而，如主课程所示，TeX显示的错误上下文仍然应该能够准确指出错误位置。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \usepackage{amsmath}
 
 \begin{document}
@@ -53,11 +51,9 @@ l.12 \end{align}
 因此，不要太在意报告的错误_数量_，始终专注于修复第一个报告的错误。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \begin{document}
 Text_word  $\alpha + \beta$.
 
@@ -99,11 +95,9 @@ l.5 Text_word  $\alpha
 如果您在TeXLive.net服务器上尝试这个示例，它默认会返回一个PDF；要在日志中查看错误消息，请添加`%!TeX log`。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \begin{document}
 
  Text {\large some large text) normal size?

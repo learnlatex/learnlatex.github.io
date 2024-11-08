@@ -15,7 +15,7 @@ LuaTeX还以其他方式扩展了TeX，特别是通过嵌入Lua脚本语言。�
 本课程不涵盖Lua编程，但这里展示了一个计算2π的简单示例。
 
 ```latex
-%!TEX lualatex
+% !TEX program=lualatex
 \documentclass{article}
 
 \begin{document}

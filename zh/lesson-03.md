@@ -22,10 +22,9 @@ toc-description: "文档的基本结构。"
   class="hint">我们建议您即使已经在本地设置了LaTeX，也尝试在线选项；这是一个了解不同选项如何工作的好机会。</p>
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass{ctexart}
-\usepackage{xeCJK}
 
 \begin{document}
 Hello, world!
@@ -78,10 +77,9 @@ LaTeX还有其他的`\begin{...}`和`\end{...}`对；这些被称为*环境*。
 我们可以通过以`%`开头在LaTeX文件中添加注释；让我们用它来展示结构：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart} % 带选项的文档类
-\usepackage{xeCJK}
 % 前言中的注释
 \begin{document}
 % 这是一个注释

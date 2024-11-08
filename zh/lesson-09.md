@@ -19,11 +19,9 @@ toc-description: "引用图片、表格等。"
 要让LaTeX记住文档中的某个位置，您需要给它一个标签，然后在其他地方引用它。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \begin{document}
 嗨，世界！
 

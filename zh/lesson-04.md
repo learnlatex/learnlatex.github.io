@@ -19,10 +19,9 @@ LaTeX提供了专注于文档逻辑结构的方法，以及直接设置外观的
 我们将从一个例子开始，对比LaTeX中最常见的逻辑标记命令之一`\emph`与简单地将某些内容斜体化（在印刷中，这通常是强调的方式）。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 一些含有 \emph{强调 和\emph{嵌套} 的内容}。
 
@@ -39,19 +38,9 @@ LaTeX提供了专注于文档逻辑结构的方法，以及直接设置外观的
 您可能使用过文字处理器，在那里大多数人通过输入标题文本然后简单地将其变大和加粗，并在其后跟一个新行来开始一个部分。在LaTeX中，使用逻辑标记实际上比手动格式化更容易；我们可以使用`\section`命令。这可以处理字体更改、垂直空间等，并在整个文档中保持输出一致。
 
 ```latex
-% !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 你好！
 
@@ -93,19 +82,9 @@ LaTeX可以将文档划分为多个级别
 LaTeX中内置了两种常见类型的列表。
 
 ```latex
-% !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 
 有序列表

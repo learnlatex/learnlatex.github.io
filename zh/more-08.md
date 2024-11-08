@@ -16,10 +16,10 @@ toc-anchor-text: "更多内容：表格"
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -43,10 +43,10 @@ toc-anchor-text: "更多内容：表格"
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -70,10 +70,10 @@ toc-anchor-text: "更多内容：表格"
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 
 \setlength\tabcolsep{1cm}
@@ -93,10 +93,10 @@ toc-anchor-text: "更多内容：表格"
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 
 \begin{document}
@@ -116,10 +116,10 @@ toc-anchor-text: "更多内容：表格"
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 
 \begin{document}
@@ -140,10 +140,10 @@ toc-anchor-text: "更多内容：表格"
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 
 \begin{document}
@@ -165,10 +165,10 @@ toc-anchor-text: "更多内容：表格"
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -191,10 +191,10 @@ toc-anchor-text: "更多内容：表格"
 一个带有两个对齐数字列的简单示例是：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{booktabs}
 \usepackage{siunitx}
 \begin{document}
@@ -228,10 +228,10 @@ toc-anchor-text: "更多内容：表格"
 `tabular*`环境需要一个额外的_宽度_参数，用于指定表格的总宽度。必须使用`\extracolsep`命令向表格添加可伸缩空白。这个空白会从该点开始添加到所有列之间。它几乎总是与`\fill`一起使用，这是一个特殊的空白，会伸缩到所需的大小。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \begin{document}
 
@@ -270,10 +270,10 @@ C & D\\
 `tabularx`环境（由同名宏包提供）的语法与`tabular*`类似，但不是调整列间空白，而是调整由新列类型`X`指定的列的宽度。这相当于为自动确定的宽度指定`p{...}`。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{tabularx}
 \begin{document}
 
@@ -316,10 +316,10 @@ C & D D D D D D D\\
 有几个宏包提供了类似语法的可以分页的变体。这里我们展示`longtable`宏包：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}
 \usepackage{longtable}
@@ -360,10 +360,10 @@ a & b b\\
 在表格中需要脚注样的标记来引用表格下方的注释是很常见的。`threeparttable`宏包简化了这种表格的标记，它会将注释设置在与表格相同宽度的块中。有关完整细节，请参见[宏包文档](https://texdoc.org/pkg/threeparttable)，但这里我们给出一个简单的示例。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \usepackage{threeparttable}
 \begin{document}
@@ -394,10 +394,10 @@ a & b b\\
 另一种技术，如第四个表格所示，是使用较小的字体，这样列相对于文本大小就不那么窄了。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \usepackage{ragged2e}
 \begin{document}
@@ -444,10 +444,10 @@ a & b b\\
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -469,10 +469,10 @@ a & b b\\
 
 <!-- {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -506,10 +506,10 @@ a & b b\\
 通常，尤其是在使用`\hline`时，最好只是增加行的高度，而不增加它们在基线以下的深度。以下示例演示了`\extrarowheight`参数。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{array}
 \begin{document}
 

@@ -41,10 +41,9 @@ LaTeX可以在多种计算机平台上运行，因此文件名的命名需要一
 LaTeX的浮动体放置很复杂。最常见的要求是将图片放在输出中与它在输入中的位置完全相同的地方。`float`宏包可以做到这一点。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{graphicx}
 \usepackage{lipsum}  % 用于生成填充文本
 \usepackage{float}
@@ -69,10 +68,9 @@ LaTeX的浮动体放置很复杂。最常见的要求是将图片放在输出中
 您可能想要有其他类型的浮动环境；每种类型都是独立插入的。您可以使用[`trivfloat`](https://ctan.org/pkg/trivfloat)宏包来实现。这个宏包提供了一个单独的命令`\trivfloat`来创建新类型的浮动体。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{graphicx}
 \usepackage{lipsum}  % 用于生成填充文本
 \usepackage{trivfloat}

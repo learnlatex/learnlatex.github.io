@@ -15,10 +15,9 @@ toc-description: "图片的外观和定位。"
 要在LaTeX中引入外部图片，请使用`graphicx`宏包，它为LaTeX添加了`\includegraphics`命令。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{graphicx}
 
 \begin{document}
@@ -41,10 +40,9 @@ toc-description: "图片的外观和定位。"
 最明显的设置是设置图片的`width`（宽度）或`height`（高度），这些通常相对于`\textwidth`或`\linewidth`以及`\textheight`来设置。`\textwidth`和`\linewidth`的区别很微妙，通常结果是相同的。`\textwidth`是物理页面上文本块的宽度，而`\linewidth`是_当前_宽度，这可能在局部上有所不同（这种差异在使用`twocolumn`类选项时最为明显）。LaTeX会自动缩放图片以保持宽高比。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{graphicx}
 
 \begin{document}
@@ -61,10 +59,9 @@ toc-description: "图片的外观和定位。"
 您还可以`scale`（缩放）图片，或者通过`angle`（角度）旋转它们。另一个您可能想要做的是`clip`（裁剪）和`trim`（修剪）图片。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{graphicx}
 
 \begin{document}
@@ -79,10 +76,9 @@ toc-description: "图片的外观和定位。"
 在排版中，特别是技术文档时，图片可能会移动到文档的其他位置。这称为*浮动*。图片通常作为浮动体包含，这样它们不会在页面中留下大片空白。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{graphicx}
 \usepackage{zhlipsum}  % 生成填充文本
 

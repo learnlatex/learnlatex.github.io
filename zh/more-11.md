@@ -12,10 +12,9 @@ toc-anchor-text: "更多内容：格式：字体和间距"
 这种用法应该 _非常_ 少见；大多数时候，您应该让LaTeX自动处理这个问题。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 一个小段落，我们稍微填充一些内容以确保您能在这里看到效果！
 

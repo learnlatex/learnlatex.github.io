@@ -82,10 +82,9 @@ runlatex.preincludes = {
 我们输入的基本结构如下例所示：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{natbib}
 
 \begin{document}
@@ -115,10 +114,9 @@ runlatex.preincludes = {
 `biblatex`宏包的工作方式与`natbib`略有不同，因为我们在导言区选择数据库，但在文档正文中打印它。还有一些新的命令。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage[style=authoryear]{biblatex}
 \addbibresource{learnlatex.bib} % 参考文献信息文件
 

@@ -24,10 +24,9 @@ toc-description: "数学模式和数学符号。"
 * 显示模式
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 一个包含行内数学公式的句子：$y = mx + c$。
 另一个包含行内数学公式的句子：$5^{2}=3^{2}+4^{2}$。
@@ -56,10 +55,9 @@ toc-description: "数学模式和数学符号。"
 我们可以轻松添加上标和下标；这些用`^`和`_`标记。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 上标 $a^{b}$ 和下标 $a_{b}$。
 \end{document}
@@ -70,10 +68,9 @@ toc-description: "数学模式和数学符号。"
 有_很多_专门的数学模式命令。其中一些相当简单，例如`\sin`和`\log`分别表示正弦和对数，或者`\theta`表示希腊字母。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 一些数学：$y = 2 \sin \theta^{2}$。
 \end{document}
@@ -90,10 +87,9 @@ toc-description: "数学模式和数学符号。"
 它对于积分特别有用，例如：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 一个关于较大公式的段落
 \[
@@ -108,10 +104,9 @@ toc-description: "数学模式和数学符号。"
 微分算子的格式有所不同：一些出版商使用直立的"d"，而其他人使用斜体的"_d_"。一种编写源代码的方法是创建一个可以根据需要调整的命令`\diff`，
 [例如](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \newcommand{\diff}{\mathop{}\!d}            % 斜体
 % \newcommand{\diff}{\mathop{}\!\mathrm{d}} % 直立
 \begin{document}
@@ -125,10 +120,9 @@ toc-description: "数学模式和数学符号。"
 您经常需要一个带编号的公式，这可以使用`equation`环境创建。让我们用同样的例子试试：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 一个关于较大公式的段落
 \begin{equation}
@@ -144,10 +138,9 @@ toc-description: "数学模式和数学符号。"
 数学符号非常丰富，这意味着LaTeX内核提供的工具不能涵盖所有内容。`amsmath`宏包扩展了核心支持，涵盖了更多的想法。[`amsmath`用户指南](http://texdoc.org/pkg/amsmath)包含了比我们在这里能展示的更多示例。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{amsmath}
 
 \begin{document}
@@ -166,10 +159,9 @@ toc-description: "数学模式和数学符号。"
 该宏包还有几个其他方便的环境，例如用于矩阵的环境。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{amsmath}
 \begin{document}
 AMS矩阵。
@@ -206,10 +198,9 @@ d & e & f
 这些都以拉丁字母为参数，所以例如我们可以这样写一个矩阵：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 矩阵$\mathbf{M}$。
 \end{document}
@@ -220,10 +211,9 @@ d & e & f
 `\math..`字体命令使用为数学使用而指定的字体。有时您需要插入一个属于外部句子结构的词，需要当前的文本字体，为此您可以使用`\text{...}`（由`amsmath`宏包提供）或特定的字体样式如`\textrm{..}`。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{amsmath}
 \begin{document}
 

@@ -15,11 +15,9 @@ toc-anchor-text: "更多内容：使用宏包和定义扩展LaTeX"
 我们在[主课程](lesson-06)中展示了`babel`宏包作为选择不同连字规则的方式。它做的远不止这些，具体取决于使用的语言。例如，在德语中，它提供了一些用于创建"软"连字符的快捷方式，还提供了一种不需要德语键盘就能快速输入变音符号的方法。注意`\tableofcontents`（目录）命令通常生成的"Table of Contents"标题也会被改为德语的Inhaltsverzeichnis。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \usepackage[ngerman]{babel} % 注意选项名称是'ngerman'
 
 \begin{document}
@@ -44,11 +42,9 @@ Birnen sind gelb.
 有时，您希望一个选项对所有加载的宏包都可用。这可以通过在`\documentclass`行上给出选项来实现：每个宏包都能"看到"这个选项列表。所以要将文档的语言传递给所有宏包，我们可以使用：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \usepackage{babel}
 
 \begin{document}
@@ -73,11 +69,9 @@ Birnen sind gelb.
 如果我们以主课程中的示例为例，我们可以让颜色成为可选的，默认为蓝色。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \usepackage{xcolor}
 
 \newcommand\kw[2][blue]{\textcolor{#1}{\itshape #2}}
@@ -98,11 +92,9 @@ Birnen sind gelb.
 我们可以重复上面的示例，但使用`\NewDocumentCommand`
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \usepackage{xparse} % 仅在较旧的LaTeX版本中需要
 \usepackage{xcolor}
 

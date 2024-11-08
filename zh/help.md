@@ -30,11 +30,9 @@ permalink: /zh/help
 每个示例都是一个完整的小型LaTeX文档，在页面中显示如下：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \begin{document}
 示例文本。
 \end{document}

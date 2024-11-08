@@ -23,10 +23,9 @@ toc-description: "使用宏包和定义。"
 LaTeX的"内核"（LaTeX的核心部分）在用户自定义方面相当有限，因此一些附加宏包处理了一些非常常见的需求。首先是改变LaTeX如何处理特定语言的排版（断字、标点、引号、本地化等）。不同的语言有不同的规则，所以告诉LaTeX使用哪种语言很重要。这由`babel`宏包处理。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 
 % 加载babel宏包，并选择语言，中文无须加载
 %\usepackage[french]{babel}
@@ -52,20 +51,10 @@ LaTeX的"内核"（LaTeX的核心部分）在用户自定义方面相当有限�
 能够独立于文档类调整某些设计方面是很有用的。最明显的一个是页边距。我们刚才在上面的例子中使用了`geometry`宏包，但让我们现在专门讨论页边距。
 
 ```latex
-% !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
+% !TEX program=lualatex
 
 % 请注意，为了演示\chapter命令，我们使用ctexbook文档类
 \documentclass[UTF8]{ctexbook} 
-\usepackage{xeCJK}
 \usepackage[margin=1in]{geometry}
 
 \begin{document}
@@ -112,19 +101,9 @@ LaTeX的优势之一是您可以从成千上万的宏包中选择，包括用于
 以下示例展示了一个用于以特定样式输出关键词的命令。
 
 ```latex
-% !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 
 % 定义一个命令\kw，用于输出加粗的斜体文字
 \newcommand\kw[1]{\textbf{\itshape #1}}
@@ -141,20 +120,9 @@ LaTeX的优势之一是您可以从成千上万的宏包中选择，包括用于
 定义命令不仅可以减少编写文档所需的输入，还有助于分离样式信息。如果决定使用不同的样式来表示关键词，不必编辑整个文档，只需要更改定义即可。这里我们加载`xcolor`宏包来提供颜色，并在格式化中使用蓝色代替粗体。
 
 ```latex
-% !TEX program=xelatex
-
-% 临时patch，否则使用中文标点，TexLive.net会编译错误
-\ExplSyntaxOn
-\clist_map_inline:nn { fp, int, dim, skip, muskip }
-  {
-    \cs_generate_variant:cn { #1_set:Nn }  { NV }
-    \cs_generate_variant:cn { #1_gset:Nn } { NV }
-  }
-\ExplSyntaxOff
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \usepackage{xcolor}
 
 % 定义一个命令\kw，用于输出加粗的斜体文字，并着色为蓝色

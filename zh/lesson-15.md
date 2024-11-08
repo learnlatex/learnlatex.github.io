@@ -42,11 +42,9 @@ bash: pdflatex: command not found
 ### TeX错误信息的剖析
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \newcommand\mycommand{\textbold{hmmm}}
 
 \begin{document}
@@ -86,11 +84,9 @@ l.8 这里使用自定义命令 \mycommand
 ### 不匹配的花括号
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \usepackage[leqno}{amsmath}
 
 \begin{document}
@@ -116,11 +112,9 @@ l.4 \usepackage[leqno}
 ### 缺失文件
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \usepackage{amsmathz}
 
 \begin{document}
@@ -140,11 +134,9 @@ l.4 \usepackage[leqno}
 ### 显示数学中的空行
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
-
 \begin{document}
 
 一些文本

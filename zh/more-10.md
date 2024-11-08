@@ -11,10 +11,10 @@ toc-anchor-text: "更多内容：数学"
 除了主课程中展示的`align*`环境外，`amsmath`还有几个其他的数学显示结构，特别是`gather`用于不需要对齐的多行显示，以及`multline`用于将较大的单个表达式分成多行，将第一行左对齐，最后一行右对齐。在所有情况下，带`*`的形式默认省略方程编号。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 
 \usepackage{amsmath}
 
@@ -40,10 +40,10 @@ Multline环境
 `amsmath`的对齐环境设计为每对列的第一列右对齐，第二列左对齐。这允许显示多个方程，每个方程都围绕其关系符号对齐。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{amsmath}
 \begin{document}
 对齐的方程
@@ -59,10 +59,10 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 例如，`aligned`和`gathered`分别是`align`和`gather`的变体。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{amsmath}
 \begin{document}
 Aligned:
@@ -85,10 +85,10 @@ d&=c
 比较下面示例中列表中的项目。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{amsmath}
 \begin{document}
 \begin{itemize}
@@ -110,10 +110,10 @@ c&=d
 标准LaTeX有两种方法使数学符号加粗。要使整个表达式加粗，在进入表达式前使用`\boldmath`。命令`\mathbf`也可用于将单个字母或单词设置为直立粗体罗马字体。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 
 \begin{document}
 
@@ -130,10 +130,10 @@ $\mathbf{\pi} r^2$ % 错误使用\mathbf
 如果您想在普通权重表达式中访问粗体符号（就像`\boldmath`使用的那样），可以使用`bm`宏包中的命令`\bm`。注意`\bm`也适用于`=`和希腊字母等符号。（注意在上面的示例中，`\mathbf`对`\pi`没有效果。）
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{bm}
 
 \begin{document}
@@ -150,10 +150,10 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 ## Mathtools
 `mathtools`宏包加载`amsmath`并添加了一些额外功能，比如`amsmath`矩阵环境的变体，允许指定列对齐方式。
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{mathtools}
 
 \begin{document}
@@ -175,10 +175,10 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 但是，我们在这里给出一个小示例。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
+
 \usepackage{unicode-math}
 \setmainfont{TeX Gyre Pagella}
 \setmathfont{TeX Gyre Pagella Math}

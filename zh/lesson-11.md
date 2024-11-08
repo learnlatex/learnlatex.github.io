@@ -19,10 +19,9 @@ toc-description: "文本格式化的视觉呈现。"
 一种常见的样式是段落之间不缩进，而是在段落之间添加"空行"。我们可以使用`parskip`宏包来实现这一点。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage[parfill]{parskip}
 \usepackage{zhlipsum} % 仅用于生成填充文本
 \begin{document}
@@ -49,10 +48,9 @@ toc-description: "文本格式化的视觉呈现。"
 很少情况下，例如在创建标题页时，您可能需要添加显式的水平或垂直空格。我们可以使用`\hspace`和`\vspace`来实现。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 一些文本 \hspace{1cm} 更多文本。
 
@@ -69,10 +67,9 @@ toc-description: "文本格式化的视觉呈现。"
 对于短文本片段，我们使用`\textbf`、`\textit`、`\textrm`、`\textsf`、`\texttt`和`\textsc`。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 让我们玩玩字体：\textbf{粗体}、\textit{斜体}、\textrm{罗马体}、
 \textsf{无衬线体}、\texttt{等宽体}和\textsc{小型大写}。
@@ -82,10 +79,9 @@ toc-description: "文本格式化的视觉呈现。"
 对于运行文本，我们使用改变字体设置的命令；这里的命令例如是`\bfseries`和`\itshape`。因为这些命令不会"停止"，我们需要将它们放在一个_组_中，以防止它们影响整个文档。LaTeX环境是组，表格单元格也是，或者我们可以使用`{...}`来创建一个显式的组。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 正常文本。
 
@@ -102,10 +98,9 @@ toc-description: "文本格式化的视觉呈现。"
 我们可以用类似的方式设置字体大小；这些命令都是持续性的。字体大小是相对的：`\huge`、`\large`、`\normalsize`、`\small`和`\footnotesize`是常见的。重要的是要在改变字体大小回来之前结束段落；看看我们这里如何添加一个显式的`\par`（段落结束）。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 正常文本。
 

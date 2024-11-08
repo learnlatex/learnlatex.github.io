@@ -38,10 +38,9 @@ LaTeX允许我们以可控的方式分割源文件。有两个重要的命令：
 
 <!-- pre0 {% raw %} -->
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 

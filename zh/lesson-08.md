@@ -56,10 +56,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 我们已经有了创建第一个表格所需的一切。在下面的代码中，`&`和`\\`是对齐的。这在LaTeX中不是必需的，但有助于阅读源代码。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 
 \begin{document}
@@ -75,10 +74,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 如果表格列包含大量文本，仅使用`l`、`c`和`r`会出现问题。看看下面的例子会发生什么：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 
 \begin{document}
@@ -93,10 +91,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 问题在于`l`类型列会以其自然宽度排版其内容，即使有页面边界也不会换行。要解决这个问题，您可以使用`p`列。这会将其内容作为段落排版，并指定宽度作为参数。将上面的结果与以下内容进行比较：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 
 \begin{document}
@@ -111,10 +108,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 如果您的表格有许多相同类型的列，在导言中输入那么多列定义会很麻烦。您可以使用`*{num}{string}`来简化，它会重复`string` `num`次。所以`*{6}{c}`等同于`cccccc`。为了证明它确实有效，这里是本课的第一个表格，使用新学到的语法：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 
 \begin{document}
@@ -135,10 +131,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 三个线条命令是：`\toprule`、`\midrule`和`\bottomrule`。从它们的名称就可以清楚地知道它们的使用位置：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -158,10 +153,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 `booktabs`提供的第四个线条命令是`\cmidrule`。它可以用来绘制一条不跨越整个表格宽度的线条，而是只跨越指定的列范围。列范围作为数字范围输入：`{`_数字_`-`_数字_`}`。即使您只想为单个列绘制线条，也需要将其指定为范围（两个数字相同）。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -184,10 +178,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 您可以使用`\cmidrule`的短版本，在任一端添加一个可选参数，括号中的`r`和`l`分别表示规则在**右**和**左**端缩短：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -213,10 +206,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 有时，线条对于两行之间的分离来说可能过于分离，但为了更清楚地传达含义，您可以使用`\addlinespace`来插入一个小跳跃。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -244,10 +236,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 对齐方式可以包含任何在`tabular`导言中合法的内容，但**只能包含单个列类型**。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -268,10 +259,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 您还可以使用`\multicolumn`在一个单元格上，以防止应用表格导言中为当前列定义的任何内容。以下内容使用这种方法来居中表格的标题行：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -292,10 +282,9 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 垂直合并单元格在LaTeX中不受支持。通常，只需留空单元格即可为读者提供正确的想法，而无需明确地使单元格跨越多行。
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \usepackage{array}
 \usepackage{booktabs}
 

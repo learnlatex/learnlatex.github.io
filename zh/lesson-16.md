@@ -62,10 +62,9 @@ LaTeX团队维护了一个[书籍列表](https://www.latex-project.org/help/book
 如何构建MWE？通常最简单的是从：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 
 \documentclass[UTF8]{ctexart}
-\usepackage{xeCJK}
 \begin{document}
 文本
 \end{document}

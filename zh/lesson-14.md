@@ -53,7 +53,7 @@ toc-description: "选择字体和文件编码。"
 选择字体后，现在可以直接在源文档中用纯Unicode输入文本。这里是一个示例，显示了一些拉丁字母和希腊字母以及一些CJK表意文字：
 
 ```latex
-% !TEX program=xelatex
+% !TEX program=lualatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
