@@ -44,7 +44,7 @@ bash: pdflatex: command not found
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \newcommand\mycommand{\textbold{hmmm}}
 
 \begin{document}
@@ -86,7 +86,7 @@ l.8 这里使用自定义命令 \mycommand
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage[leqno}{amsmath}
 
 \begin{document}
@@ -114,7 +114,7 @@ l.4 \usepackage[leqno}
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{amsmathz}
 
 \begin{document}
@@ -136,7 +136,7 @@ l.4 \usepackage[leqno}
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 
 一些文本

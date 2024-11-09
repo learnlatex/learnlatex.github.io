@@ -18,7 +18,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \usepackage{booktabs}
@@ -45,7 +45,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \usepackage{booktabs}
@@ -72,7 +72,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 
@@ -95,7 +95,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 
@@ -118,7 +118,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 
@@ -142,7 +142,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 
@@ -167,7 +167,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \usepackage{booktabs}
@@ -193,7 +193,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{booktabs}
 \usepackage{siunitx}
@@ -230,7 +230,7 @@ toc-anchor-text: "更多内容：表格"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \begin{document}
@@ -272,7 +272,7 @@ C & D\\
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{tabularx}
 \begin{document}
@@ -318,7 +318,7 @@ C & D D D D D D D\\
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
 \usepackage{array}
@@ -362,7 +362,7 @@ a & b b\\
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \usepackage{threeparttable}
@@ -396,7 +396,7 @@ a & b b\\
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \usepackage{ragged2e}
@@ -446,7 +446,7 @@ a & b b\\
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \usepackage{booktabs}
@@ -471,7 +471,7 @@ a & b b\\
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \usepackage{booktabs}
@@ -508,7 +508,7 @@ a & b b\\
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{array}
 \begin{document}

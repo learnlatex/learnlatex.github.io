@@ -65,7 +65,7 @@ LaTeX的错误消息试图提供帮助，但它们与文字处理器中的消息
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart} % 带选项的文档类
+\documentclass{ctexart} % 带选项的文档类
 % 前言中的注释
 \begin{document}
 % 这是一个注释

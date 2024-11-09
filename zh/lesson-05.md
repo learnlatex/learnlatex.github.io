@@ -64,7 +64,7 @@ LaTeX自带一组标准文档类，它们的外观相似但有一些变化：
 如果某种标准文档类未发现对应的`ctex`版本，可以在文档类定义后添加`ctex`包来调用中文文档类。引用格式为：
 
 ```latex
-\documentclass[UTF8]{<标准文档类名>}
+\documentclass{<标准文档类名>}
 \usepackage{ctex}
 ```
 
@@ -73,7 +73,7 @@ LaTeX自带一组标准文档类，它们的外观相似但有一些变化：
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{letter}
+\documentclass{letter}
 \usepackage{ctex}
 \begin{document}
 
@@ -115,7 +115,7 @@ LaTeX自带一组标准文档类，它们的外观相似但有一些变化：
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 
 \section{简介}

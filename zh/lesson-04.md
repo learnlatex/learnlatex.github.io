@@ -21,7 +21,7 @@ LaTeX提供了专注于文档逻辑结构的方法，以及直接设置外观的
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 一些含有 \emph{强调 和\emph{嵌套} 的内容}。
 
@@ -40,7 +40,7 @@ LaTeX提供了专注于文档逻辑结构的方法，以及直接设置外观的
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 你好！
 
@@ -84,7 +84,7 @@ LaTeX中内置了两种常见类型的列表。
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 
 有序列表

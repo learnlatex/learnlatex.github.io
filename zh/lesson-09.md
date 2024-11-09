@@ -21,7 +21,7 @@ toc-description: "引用图片、表格等。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 嗨，世界！
 

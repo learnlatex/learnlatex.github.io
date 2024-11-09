@@ -21,7 +21,7 @@ toc-description: "文本格式化的视觉呈现。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage[parfill]{parskip}
 \usepackage{zhlipsum} % 仅用于生成填充文本
 \begin{document}
@@ -50,7 +50,7 @@ toc-description: "文本格式化的视觉呈现。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 一些文本 \hspace{1cm} 更多文本。
 
@@ -69,7 +69,7 @@ toc-description: "文本格式化的视觉呈现。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 让我们玩玩字体：\textbf{粗体}、\textit{斜体}、\textrm{罗马体}、
 \textsf{无衬线体}、\texttt{等宽体}和\textsc{小型大写}。
@@ -81,7 +81,7 @@ toc-description: "文本格式化的视觉呈现。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 正常文本。
 
@@ -100,7 +100,7 @@ toc-description: "文本格式化的视觉呈现。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 正常文本。
 

@@ -84,7 +84,7 @@ runlatex.preincludes = {
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{natbib}
 
 \begin{document}
@@ -116,7 +116,7 @@ runlatex.preincludes = {
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage[style=authoryear]{biblatex}
 \addbibresource{learnlatex.bib} % 参考文献信息文件
 

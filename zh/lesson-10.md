@@ -26,7 +26,7 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 一个包含行内数学公式的句子：$y = mx + c$。
 另一个包含行内数学公式的句子：$5^{2}=3^{2}+4^{2}$。
@@ -57,7 +57,7 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 上标 $a^{b}$ 和下标 $a_{b}$。
 \end{document}
@@ -70,7 +70,7 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 一些数学：$y = 2 \sin \theta^{2}$。
 \end{document}
@@ -89,7 +89,7 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 一个关于较大公式的段落
 \[
@@ -106,7 +106,7 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \newcommand{\diff}{\mathop{}\!d}            % 斜体
 % \newcommand{\diff}{\mathop{}\!\mathrm{d}} % 直立
 \begin{document}
@@ -122,7 +122,7 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 一个关于较大公式的段落
 \begin{equation}
@@ -140,7 +140,7 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{amsmath}
 
 \begin{document}
@@ -161,7 +161,7 @@ toc-description: "数学模式和数学符号。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{amsmath}
 \begin{document}
 AMS矩阵。
@@ -200,7 +200,7 @@ d & e & f
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 矩阵$\mathbf{M}$。
 \end{document}
@@ -213,7 +213,7 @@ d & e & f
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{amsmath}
 \begin{document}
 

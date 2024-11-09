@@ -32,7 +32,7 @@ permalink: /zh/help
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 示例文本。
 \end{document}

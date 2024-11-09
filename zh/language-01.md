@@ -26,7 +26,7 @@ toc-description: "使用LaTeX进行中文排版。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 这是一个中文示例。
 \end{document}

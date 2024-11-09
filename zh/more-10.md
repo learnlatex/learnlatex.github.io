@@ -13,7 +13,7 @@ toc-anchor-text: "更多内容：数学"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 
 \usepackage{amsmath}
@@ -42,7 +42,7 @@ Multline环境
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{amsmath}
 \begin{document}
@@ -61,7 +61,7 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{amsmath}
 \begin{document}
@@ -87,7 +87,7 @@ d&=c
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{amsmath}
 \begin{document}
@@ -112,7 +112,7 @@ c&=d
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 
 \begin{document}
@@ -132,7 +132,7 @@ $\mathbf{\pi} r^2$ % 错误使用\mathbf
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{bm}
 
@@ -152,7 +152,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{mathtools}
 
@@ -177,7 +177,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 \usepackage{unicode-math}
 \setmainfont{TeX Gyre Pagella}

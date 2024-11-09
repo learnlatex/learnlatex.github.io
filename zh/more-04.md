@@ -13,7 +13,7 @@ LaTeX为文档标题提供了一些逻辑标记：三个用于设置"元数据"�
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 \author{张三 \and 李四}
 \title{我做的一些事情}
@@ -35,7 +35,7 @@ LaTeX为文档标题提供了一些逻辑标记：三个用于设置"元数据"�
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 
 \begin{description}

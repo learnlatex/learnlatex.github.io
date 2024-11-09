@@ -13,7 +13,7 @@ toc-anchor-text: "更多内容：交叉引用"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage[hidelinks]{hyperref}
 \begin{document}
 

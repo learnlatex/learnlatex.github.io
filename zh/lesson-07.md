@@ -17,7 +17,7 @@ toc-description: "图片的外观和定位。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{graphicx}
 
 \begin{document}
@@ -42,7 +42,7 @@ toc-description: "图片的外观和定位。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{graphicx}
 
 \begin{document}
@@ -61,7 +61,7 @@ toc-description: "图片的外观和定位。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{graphicx}
 
 \begin{document}
@@ -78,7 +78,7 @@ toc-description: "图片的外观和定位。"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{graphicx}
 \usepackage{zhlipsum}  % 生成填充文本
 

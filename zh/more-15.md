@@ -13,7 +13,7 @@ toc-anchor-text: "更多内容：处理错误"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{amsmath}
 
 \begin{document}
@@ -53,7 +53,7 @@ l.12 \end{align}
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 Text_word  $\alpha + \beta$.
 
@@ -97,7 +97,7 @@ l.5 Text_word  $\alpha
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 
  Text {\large some large text) normal size?

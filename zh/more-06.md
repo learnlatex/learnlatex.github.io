@@ -17,7 +17,7 @@ toc-anchor-text: "更多内容：使用宏包和定义扩展LaTeX"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage[ngerman]{babel} % 注意选项名称是'ngerman'
 
 \begin{document}
@@ -44,7 +44,7 @@ Birnen sind gelb.
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{babel}
 
 \begin{document}
@@ -71,7 +71,7 @@ Birnen sind gelb.
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{xcolor}
 
 \newcommand\kw[2][blue]{\textcolor{#1}{\itshape #2}}
@@ -94,7 +94,7 @@ Birnen sind gelb.
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{xparse} % 仅在较旧的LaTeX版本中需要
 \usepackage{xcolor}
 

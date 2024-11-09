@@ -18,7 +18,7 @@ toc-anchor-text: "更多内容：结构化长文档"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{imakeidx}
 \makeindex
 \begin{document}

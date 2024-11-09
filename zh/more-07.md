@@ -43,7 +43,7 @@ LaTeX的浮动体放置很复杂。最常见的要求是将图片放在输出中
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{graphicx}
 \usepackage{lipsum}  % 用于生成填充文本
 \usepackage{float}
@@ -70,7 +70,7 @@ LaTeX的浮动体放置很复杂。最常见的要求是将图片放在输出中
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{graphicx}
 \usepackage{lipsum}  % 用于生成填充文本
 \usepackage{trivfloat}

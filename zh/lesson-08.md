@@ -58,7 +58,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 
 \begin{document}
@@ -76,7 +76,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 
 \begin{document}
@@ -93,7 +93,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 
 \begin{document}
@@ -110,7 +110,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 
 \begin{document}
@@ -133,7 +133,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -155,7 +155,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -180,7 +180,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -208,7 +208,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -238,7 +238,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -261,7 +261,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -284,7 +284,7 @@ LaTeX中的表格使用`tabular`环境来创建。本课假设您已加载`array
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{array}
 \usepackage{booktabs}
 

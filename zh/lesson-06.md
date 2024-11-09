@@ -25,7 +25,7 @@ LaTeX的"内核"（LaTeX的核心部分）在用户自定义方面相当有限�
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 % 加载babel宏包，并选择语言，中文无须加载
 %\usepackage[french]{babel}
@@ -54,7 +54,7 @@ LaTeX的"内核"（LaTeX的核心部分）在用户自定义方面相当有限�
 % !TEX program=lualatex
 
 % 请注意，为了演示\chapter命令，我们使用ctexbook文档类
-\documentclass[UTF8]{ctexbook} 
+\documentclass{ctexbook} 
 \usepackage[margin=1in]{geometry}
 
 \begin{document}
@@ -103,7 +103,7 @@ LaTeX的优势之一是您可以从成千上万的宏包中选择，包括用于
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 
 % 定义一个命令\kw，用于输出加粗的斜体文字
 \newcommand\kw[1]{\textbf{\itshape #1}}
@@ -122,7 +122,7 @@ LaTeX的优势之一是您可以从成千上万的宏包中选择，包括用于
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{xcolor}
 
 % 定义一个命令\kw，用于输出加粗的斜体文字，并着色为蓝色

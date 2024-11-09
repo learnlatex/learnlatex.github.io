@@ -40,7 +40,7 @@ LaTeX允许我们以可控的方式分割源文件。有两个重要的命令：
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 

@@ -64,7 +64,7 @@ LaTeX团队维护了一个[书籍列表](https://www.latex-project.org/help/book
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 文本
 \end{document}

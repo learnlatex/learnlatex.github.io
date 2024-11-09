@@ -14,7 +14,7 @@ toc-anchor-text: "更多内容：格式：字体和间距"
 ```latex
 % !TEX program=lualatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass{ctexart}
 \begin{document}
 一个小段落，我们稍微填充一些内容以确保您能在这里看到效果！
 
