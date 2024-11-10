@@ -24,11 +24,10 @@ permalink: /ja/help
 各コード例は、小さいながらも完全なLaTeX文書になっていて、次のような見た目をしています：
 
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+\documentclass[dvipdfmx]{jlreq}
 
 \begin{document}
-Example text.
+これはサンプル文書です。
 \end{document}
 ```
 
@@ -46,19 +45,28 @@ ACEのリポジトリには[多くの便利なキーボードショートカッ�
 
 ##### Overleafを利用する
 
-<!-- TODO: pLaTeXで処理するための設定を追記 -->
-
 Overleafは世界的に最も人気のあるオンラインLaTeXサービスの1つです。各コード例の下にある<button>Open in Overleaf</button>を押すと、そのコードが[Overleaf](https://www.overleaf.com/about)に送られます。
 
 もしあなたがOverleafのアカウントを持っていなかったり、ログイン情報がブラウザにキャッシュされていなかったりする場合は、Overleafのログインページにリダイレクトされます。そのページでログインや新規のアカウント登録を行うことができます。Overleafは無料サービスですが、いくつかユーザ登録に必要な情報を入力したり、利用規約に同意したりする必要があります。
 
 既にOverleafアカウントの情報がブラウザにキャッシュされている場合は、Overleafで新しいタブが開かれて新しいプロジェクト内に送信したコードが保存された状態になります。よってOverleaf上でコードを編集し、同時にそのコードを実際にLaTeXで処理した出力やエラーログを閲覧することができるようになります。
 
+なお、Overleafはデフォルト設定は和文文書の処理（pLaTeX）に対応していないため、和文のサンプルを試すには**少し設定が必要**です[^overleaf_platex]。まず、左上の「Menu」をクリックして「Compiler」をデフォルトの「pdfLaTeX」から「LaTeX」に変更します。次に、「Menu」直下の書類アイコン（New file）をクリックして`latexmkrc`という名前のファイルを作成し、次の内容を書き込みます。
+
+```
+$latex = 'platex';
+$bibtex = 'pbibtex';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+```
+{: .noedit :}
+
+これで、OverleafでもpLaTeXを用いて和文文書が処理できるようになります。
+
 次に説明するTeXLive.netで処理した文書とは異なり、Overleafではプロジェクトをあなたのアカウントに紐付けて保存することができ、後から再度開くことが可能です。
 
 ##### TeXLive.netを利用する
 
-同じく各コード例の下の<button>TeXLive.netで実行</button>ボタンを押すと、そのコードは[LaTeX CGI](https://latexcgi.xyz/)サービス[^1]に送信されます。
+同じく各コード例の下の<button>TeXLive.netで実行</button>ボタンを押すと、そのコードは[LaTeX CGI](https://latexcgi.xyz/)サービス[^latex_cgi]に送信されます。
 
 このLaTeX CGIサービスはこのチュートリアルを支援するために開発されたもので、[PDF.js](https://mozilla.github.io/pdf.js/)を利用することで専用のPDFビューアがなくてもモバイルを含むブラウザ上でそのままPDFを表示できるという特徴があります。
 
@@ -199,4 +207,6 @@ Example text.
 
 ---
 
-[^1]: このチュートリアルの開発段階では[LaTeX.Online](https://latexonline.cc/)や[LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)も使用されていました。本チュートリアル企画の初期段階から協力的に開発に取り組んでくれた、これらのサービスの開発者に感謝いたします。
+[^overleaf_platex]: Overleaf上でpLaTeXを使用する方法については、必要に応じて[公式のヘルプページ](https://ja.overleaf.com/learn/latex/Questions/Does_Overleaf_support_pTeX%3F)も確認してください。
+
+[^latex_cgi]: このチュートリアルの開発段階では[LaTeX.Online](https://latexonline.cc/)や[LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)も使用されていました。本チュートリアル企画の初期段階から協力的に開発に取り組んでくれた、これらのサービスの開発者に感謝いたします。
