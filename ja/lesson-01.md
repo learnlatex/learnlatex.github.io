@@ -11,7 +11,7 @@ toc-description: "LaTeXとは何か？ LaTeXはどう動くか？"
 
 <span class="summary">このレッスンではLaTeXとは何か、そしてMicrosoft WordやLibreOffice Writerなどの一般的なワープロソフトとどう異なるかについて説明します。</span>
 
-Microsoft WordやLibreOffice Writerなどの一般的なワープロソフトと異なり、LaTeX は基本的にはWYSIWYG（‘What You See Is What You Get’; つまり「見たままが完成品」）ではありません。LaTeXにおいては、ユーザはプレーンテキストを扱い、マークアップによってさまざまな情報付加を行います。こうしたマークアップによってLaTeXにテキストの各パートの論理的な意味を伝えるという点は、HTMLと似ています。
+Microsoft WordやLibreOffice Writerなどの一般的なワープロソフトと異なり、LaTeX は基本的にはWYSIWYG（‘What You See Is What You Get’；つまり「見たままが完成品」）ではありません。LaTeXにおいては、ユーザはプレーンテキストを扱い、マークアップによってさまざまな情報付加を行います。こうしたマークアップによってLaTeXにテキストの各パートの論理的な意味を伝えるという点は、HTMLと似ています。
 
 例を挙げると`<h2>`要素はHTML文書において新しいセクションの開始を表します。LaTeXにもこれに対応する`\section`というコマンドがあります。
 
