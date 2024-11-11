@@ -51,7 +51,7 @@ Overleafは世界的に最も人気のあるオンラインLaTeXサービスの1
 
 既にOverleafアカウントの情報がブラウザにキャッシュされている場合は、Overleafで新しいタブが開かれて新しいプロジェクト内に送信したコードが保存された状態になります。よってOverleaf上でコードを編集し、同時にそのコードを実際にLaTeXで処理した出力やエラーログを閲覧することができるようになります。
 
-なお、Overleafはデフォルト設定は和文文書の処理（pLaTeX）に対応していないため、和文のサンプルを試すには**少し設定が必要**です[^overleaf_platex]。まず、左上の「Menu」をクリックして「Compiler」をデフォルトの「pdfLaTeX」から「LaTeX」に変更します。次に、「Menu」直下の書類アイコン（New file）をクリックして`latexmkrc`という名前のファイルを作成し、次の内容を書き込みます。
+なお、Overleafはデフォルト設定は和文文書の処理（pLaTeX）に対応していないため、**和文のコード例を試すには少し設定が必要**です[^overleaf_platex]。まず、左上の「Menu」をクリックして「Compiler」をデフォルトの「pdfLaTeX」から「LaTeX」に変更します。次に、「Menu」直下の書類アイコン（New file）をクリックして`latexmkrc`という名前のファイルを作成し、次の内容を書き込みます。
 
 ```
 $latex = 'platex';
@@ -96,8 +96,6 @@ PDF出力（あるいはエラーログの抜粋）がコード例の直下に�
 
 このしくみにより`% !TEX program=pdflatex`といういくつかのTeXエディタでサポートされている記法が許容されるようになっています。ただし`program=`の部分は、現状ではオンラインシステムで利用可能なエンジンのうちの1つを選択するのにしか利用されないため省略可能になっています。
 
-<!-- TODO: 日本語版独自の説明 -->
-
 なお`platex`や`uplatex`が選択された場合には`devipdfmx`コマンドが自動的に呼び出され、これらのエンジンが出力するDVIファイルはPDFに変換されるようになっています。同様に`latex`が選択されている場合には`dvips`と`ps2pdf`が使用されます。
 
 ---
@@ -112,48 +110,39 @@ TeXLive.netを使用した場合、コード例を実行したことによるPDF
 
 デフォルトの挙動は、末尾の値を`pdfjs`とすることで明示的に指定することもできます。デバッグ目的ではエラーなしにPDFが得られる場合でもログファイルの内容を見たいという場合があるかもしれません。そのような場合は末尾の値を`log`としてください。
 
-As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
-page. The Settings are specific to each browser, so for example you
-may choose to use the default `pdfjs` setting on your mobile device,
-but use `pdf` on your desktop browser to use its default PDF rendering.
+`% !TeX`形式のコメントを使わずに、[サイト設定](settings)ページを利用してデフォルトの挙動を変更することもできます。サイト設定はブラウザごとに指定できます。そのためモバイル端末ではデフォルトの`pdfjs`を設定しながら、PCでは`pdf`を指定してデスクトップブラウザのデフォルトPDFレンダラを利用するというようなことも可能です。
 
 ---
 
-## HTML output (make4ht, LaTeXML, lwarp)
+## HTML出力（make4ht、LaTeXML、lwarp）
 
-If using the TeXLive.net system, then additional return options,
-`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
-in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
+<p class="hint">本セクションで説明されるHTML出力は、原則として和文をサポートしていません。HTML出力を試みる場合は英文のコード例で試すことをおすすめします。本チュートリアルの翻訳チームは、和文のHTML出力について動作確認を実施していません。</p>
 
-To enable this output, add a comment of the form:
+TeXLive.netを利用する場合は、追加の表示方法オプションとして`make4ht`、`LaTeXML`、`lwarp`がサポートされています。これらを利用すると1つ以上のHTMLページをサイトのフレーム内に表示します。これらのHTML出力の指定は`xelatex`、`lualatex`、`pdflatex`などのエンジン指定と両立します。
+
+HTML出力を指定するには、例えば次のようなコメントを記入します：
 
 ```
 % !TeX make4ht
 ```
 {: .noedit :}
 
-Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
+別のシステムを利用する場合は`make4ht`を`LaTeXML`や`lwarp`に置き換えてください。
 
-Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
-on the [Site Settings](settings) page.
+これらのHTML出力を[サイト設定](settings)からデフォルトの挙動にすることも可能です。
 
-If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
-by executing
+ローカルのTeXシステムを利用している場合は、次のコマンドを実行すると`make4ht`オプションで表示されるものと同じ出力を得ることができます。
 
 ```
-make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
+make4ht document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
-with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
+XeLaTeXやLuaLaTeXを使用している場合はそれぞれ`-x`または`-l`オプションを追加してください。
 
-When running locally, other configurations would be possible. See the [make4ht
-manual](https://texdoc.org/pkg/make4ht).
+ローカルで実行する場合は、ほかにもさまざまな設定が利用可能です。詳細は[make4htのマニュアル](https://texdoc.org/pkg/make4ht)を参照してください。
 
-For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
-and use
+LaTeXMLをローカルで実行するためには、別途LaTeXMLをインストールする必要があります（TeX LiveやMiKTeXには含まれていません）。その上で、次のコマンドを実行します。
 
 ```
 latexml document.tex > document.xml
@@ -163,47 +152,10 @@ latexmlpost --format=html5 \
 ```
 {: .noedit :}
 
-Many other LaTeXML configurations are possible,
-[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+LaTeXMLについてもさまざまな設定が利用可能です。詳細は[LaTeXMLのマニュアル](https://dlmf.nist.gov/LaTeXML/manual/)を参照してください。
 
-The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
-The current version can be seen at the
-[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
-
----
-
-<!-- TODO: 以下はそのうち消す -->
-
-Each example consists of a complete small LaTeX document shown within
-the page like this:
-
-## Japanese
-
-Japanese examples look like:
-
-```latex
-% !TEX platex
-\documentclass{jsarticle}
-\begin{document}
-テキストの例。
-\end{document}
-```
-
-See also the examples in [The Japanese specific section of the site](language-01)
-
-## English
-
-English example:
-
-```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\begin{document}
-Example text.
-\end{document}
-```
-
-<!-- TODO: ここまで -->
+lwarpの設定方法は、今のところ実験的なもので将来的に変更される可能性が高いため、ここでは説明しません。最新バージョンの情報は
+[ソースリポジトリ](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp)で確認できます。
 
 ---
 
