@@ -43,9 +43,13 @@
   label-regional: Tiếng&nbsp;Việt
   label-english: Vietnamese
 
-- language-code: zh
+- language-code: zh-hans
   label-regional: 中文（简体）
   label-english: Simplified Chinese
+
+- language-code: zh-hant
+  label-regional: 中文（繁体）
+  label-english: Traditional Chinese
 
 # - language-code: tr
 #   label-regional: Türkçe

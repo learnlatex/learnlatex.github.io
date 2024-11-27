@@ -106,7 +106,13 @@ defaults:
       label: "Català"
   -
     scope:
-      path: "zh"
+      path: "zh-hans"
     values:
-      lang: "zh"
-      label: "中文（简体）"
+      lang: "zh-hans"
+      label: "中文（简体）"  
+  -
+    scope:
+      path: "zh-hant"
+    values:
+      lang: "zh-hant"
+      label: "中文（繁体）"
