@@ -133,7 +133,7 @@ TeXLive.net 服务是专门为支持本网站而开发的，特别是利用了 [
 
 或者，你可以在[网站设置](settings)页面上将`make4ht`、`LaTeXML`或`lwarp`指定为默认返回选项。
 
-如果使用本地安装的TeX系统，可以通过执行以下命令获得与`make4ht`选项相同的输出：
+如果使用本地安装的 TeX 系统，可以通过执行以下命令获得与`make4ht`选项相同的输出：
 
 ```
 make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
@@ -144,7 +144,7 @@ make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 
 在本地运行时，可以使用其他配置。请参阅[make4ht手册](https://texdoc.org/pkg/make4ht)。
 
-对于`LaTeXML`，你需要安装LaTeXML（它不是TeX Live或MiKTeX的一部分）并使用：
+对于`LaTeXML`，你需要安装 LaTeXML（它不是 TeX Live 或 MiKTeX 的一部分）并使用：
 
 ```
 latexml document.tex > document.xml
@@ -154,7 +154,7 @@ latexmlpost --format=html5 \
 ```
 {: .noedit :}
 
-可以使用许多其他LaTeXML配置，[如手册中所述](https://dlmf.nist.gov/LaTeXML/manual/)。
+可以使用许多其他 LaTeXML 配置，[如手册中所述](https://dlmf.nist.gov/LaTeXML/manual/)。
 
 `lwarp`配置在这里没有记录，它有点实验性并且可能会改变。当前版本可以在[源代码库](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp)中看到。
 

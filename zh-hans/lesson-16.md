@@ -30,7 +30,7 @@ toc-description: "获取帮助和文档。"
 
 ## CTAN
 
-[CTAN](https://www.ctan.org)是综合 TeX 档案网络（Comprehensive TeX Archive Network）。大多数 LaTeX 宏包都发布在这里。你可以在网站上搜索宏包来访问其文档。通常宏包保存在`ctan.org/pkg/<pkg-name>`中，你可以在那里访问CTAN上存储的宏包的README和文档。
+[CTAN](https://www.ctan.org)是综合 TeX 档案网络（Comprehensive TeX Archive Network）。大多数 LaTeX 宏包都发布在这里。你可以在网站上搜索宏包来访问其文档。通常宏包保存在`ctan.org/pkg/<pkg-name>`中，你可以在那里访问 CTAN 上存储的宏包的 README 和文档。
 
 ## LaTeX 相关书籍
 
