@@ -47,10 +47,6 @@
   label-regional: 中文（简体）
   label-english: Simplified Chinese
 
-- language-code: zh-hant
-  label-regional: 中文（繁体）
-  label-english: Traditional Chinese
-
 # - language-code: tr
 #   label-regional: Türkçe
 #   label-english: Turkish
