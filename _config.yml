@@ -109,5 +109,11 @@ defaults:
       path: "zh-hans"
     values:
       lang: "zh-hans"
-      label: "中文（简体）"  
+      label: "中文（简体）"
+  -
+    scope:
+      path: "zh-hant"
+    values:
+      lang: "zh-hant"
+      label: "中文（繁體）"   
 
