@@ -3,7 +3,7 @@ layout: "page"
 lang: "zh-hant"
 title: "使用 learnlatex.org 網站"
 description: "本頁介紹 learnlatex.org 網站及如何最好地使用它。"
-permalink: /zh-hans/help
+permalink: /zh-hant/help
 ---
 <script>
   function acesettings() {
