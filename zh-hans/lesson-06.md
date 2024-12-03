@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "zh"
+lang: "zh-hans"
 title: "通过宏包和定义扩展 LaTeX 功能"
 description: "本课展示了如何通过使用不同的宏包来扩展 LaTeX 以满足你的需求并进一步更改其布局，还展示了如何定义自己的命令。"
 toc-anchor-text: "扩展 LaTeX"
