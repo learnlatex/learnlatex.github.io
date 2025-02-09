@@ -1,10 +1,10 @@
 ---
 layout: "lesson"
 lang: "ja"
-title: "日本語 LaTeX エンジン"
-description: ""
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "日本語LaTeXとDVIウェア"
+description: "このレッスンでは和文組版に適したLaTeXエンジンを紹介します。一部のLaTeXエンジンはPDFを直接生成するのではなく、DVIという中間形式を経由してPDFを作成します。DVIからPDFを作成するDVIウェアについても紹介します。"
+toc-anchor-text: "日本語LaTeX"
+toc-description: "日本語を扱えるLaTeXエンジン"
 ---
 
 ## pLaTeX
