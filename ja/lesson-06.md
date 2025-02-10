@@ -22,6 +22,7 @@ toc-description: "LaTeXを拡張する方法"
 LaTeXの「カーネル」（LaTeXの本体）はユーザによるカスタマイズについては必ずしも柔軟ではないので、いくつかの拡張パッケージは極めて一般的な要求に応えるために存在しています。例えば、LaTeXで特定の言語に特化した組版（ハイフネーション、句読法、引用の形式、ローカリゼーションなど）を可能にするというのはよくある要求です。言語ごとにそれぞれのルールがあるので、LaTeXに対してどの言語のルールを適用するか教えることは重要です。こうした機能は`babel`パッケージにより達成できます。
 
 ```latex
+% !TEX program=pdflatex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
@@ -49,8 +50,7 @@ material, and which will be able to give us at least one hyphenation point.
 
 ```latex
 \RequirePackage{plautopatch}
-\documentclass[dvipdfmx]{jlreq}
-\usepackage[T1]{fontenc}
+\documentclass[dvipdfmx,book]{jlreq}
 \usepackage[margin=1in]{geometry}
 
 \begin{document}

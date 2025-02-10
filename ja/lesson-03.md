@@ -54,7 +54,7 @@ LaTeX文書では他にも`\begin{...}`と`\end{...}`のペア（実際には`..
 LaTeXファイルには`%`から始まるコメント（PDF出力に印字されることのない注釈）を入れることもできます。これを利用して、LaTeX文書の構造を示してみましょう：
 
 ```latex
-\documentclass[dvipdfmx,a4paper,12pt]{jlreq} % 文書クラス（オプション指定あり）
+\documentclass[dvipdfmx,paper=a4,fontsize=12pt]{jlreq} % 文書クラス（オプション指定あり）
 % プリアンブルのコメント
 \begin{document}
 % これがコメント

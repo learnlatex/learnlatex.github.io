@@ -41,7 +41,7 @@ bash: pdflatex: command not found
 ### TeXエラーメッセージの解剖学
 
 ```latex
-\documentclass{jsarticle}
+\documentclass[dvipdfmx]{jlreq}
 
 \newcommand\mycommand{\textbold{むむむ}}
 

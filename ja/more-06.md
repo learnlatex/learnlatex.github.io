@@ -15,6 +15,7 @@ toc-anchor-text: "追加レッスン：パッケージを利用したLaTeXの拡
 [メインレッスン6](lesson-06)では`babel`パッケージを利用すると異なるハイフネーションパターンを選択できるということを説明しました。選択した言語によっては、ハイフネーションパターンの以外にもさまざまな設定の適用が行われます。例えばドイツ語の場合には「ソフト」ハイフンを挿入するための短いコマンドが定義されたり、ドイツ語キーボードがなくても簡単にウムラウトを入力する方法が提供されたりします。また`\tableofcontents`で出力される**目次**の見出し名がドイツ語の“Inhaltsverzeichnis”に変更されている点にも注意してください。
 
 ```latex
+% !TEX program=pdflatex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
@@ -42,6 +43,7 @@ Birnen sind gelb.
 あるオプションを読み込むすべてのパッケージに対して適用したいという場合には、そのオプションを`\documentclass`に対して与えます。すべてのパッケージはこのグローバルオプションを「確認」します。例えば、使用言語をすべてのパッケージに伝えるためには、次のようにします：
 
 ```latex
+% !TEX program=pdflatex
 \documentclass[ngerman]{article} % オプション名は 'ngerman' である点に注意
 \usepackage[T1]{fontenc}
 

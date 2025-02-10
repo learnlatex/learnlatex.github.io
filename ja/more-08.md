@@ -299,8 +299,8 @@ C & D D D D D D D\\
 \usepackage{longtable}
 \begin{document}
 \begin{longtable}{cc}
-\multicolumn{2}{c}{A Long Table}\\
-Left Side & Right Side\\
+\multicolumn{2}{c}{長いテーブル}\\
+左側 & 右側 \\
 \hline
 \endhead
 \hline
@@ -321,7 +321,7 @@ a & b\\
 a & b b b b b b\\  
 a & b b b b b\\  
 a & b b\\  
-A Wider Entry & b\\  
+ちょっと長い内容 & b\\  
 \end{longtable}
 
 \end{document}

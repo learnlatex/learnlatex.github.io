@@ -52,7 +52,7 @@ LaTeXのフロート配置は複雑です。しかし文書ソースにおいて
   \includegraphics[width=0.5\textwidth]{example-image}
   \caption{サンプル画像}
 \end{figure}
-\lipsum[8-15]
+\jalipsum[4-6]{wagahai}
 \end{document}
 ```
 
