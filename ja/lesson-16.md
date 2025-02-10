@@ -44,20 +44,29 @@ LaTeXについてもっと詳しく学ぶのに役立つ本は数多く出版さ
 LaTeX 開発チームは[書籍のリスト](https://www.latex-project.org/help/books/)を公開しています。このリストに載っている本の多くはLaTeXチームのメンバーによって執筆されたものです。最も重要なものは 
 [Lamportの公式ガイド](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)と網羅的な解説書である[『LaTeXコンパニオン』]((https://www.informit.com/store/latex-companion-9780201362992))です。
 
-その他のLaTeX学習本には次のようなものがあります：
+その他のLaTeX学習本には次のようなものがあります。
 
-* Helmut Kopka, Patrick Daly著 [_Guide to LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714): 電子書籍
-* Nicola Talbot著 [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/): 無償の電子書籍、廉価の紙書籍
-* Nicola Talbot著 [_Using LaTeX to write a PhD thesis_](https://www.dickimaw-books.com/latex/thesis/): 無償の電子書籍、廉価の紙書籍
-* Stefan Kottwitz著 [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide): 電子書籍、紙書籍
-* Marc van Dongen著 [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154): 電子書籍、紙書籍
+* Helmut Kopka、Patrick Daly著 [_Guide to LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714)：電子書籍
+* Nicola Talbot著 [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/)：無償の電子書籍、廉価の紙書籍
+* Nicola Talbot著 [_Using LaTeX to write a PhD thesis_](https://www.dickimaw-books.com/latex/thesis/)：無償の電子書籍、廉価の紙書籍
+* Stefan Kottwitz著 [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)：電子書籍、紙書籍
+* Marc van Dongen著 [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154)：電子書籍、紙書籍
+
+## LaTeXに関する書籍（日本語）
+
+日本語のLaTeX学習本には次のようなものがあります。
+
+* 奥村晴彦、黒木祐介 著 [『LaTeX美文書作成入門』](https://gihyo.jp/book/2023/978-4-297-13889-9)：電子書籍、紙書籍
+* 吉永徹美 著 [『独習LaTeX2e』](https://www.shoeisha.co.jp/book/detail/9784798115368)：紙書籍
+* 水谷正大 著 [『LaTeX超入門 ゼロからはじめる理系の文書作成術』](https://bookclub.kodansha.co.jp/product?item=0000343850)：電子書籍、紙書籍
+* 坂東慶太 著 [『インストールいらずのLaTeX入門 ― Overleafで手軽に文書作成』](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)：紙書籍
 
 ## ヘルプを求める
 
 LaTeXに関する質問をすることができるオンラインフォーラムはたくさんあります。現在最も人気の高いQAサイトはおそらく以下の通りです。
 
 * 英語圏：[TeX - LaTeX StackExchange](https://tex.stackexchange.com)
-* 日本語圏：[TeXフォーラム](https://oku.edu.mie-u.ac.jp/tex/)
+* 日本語圏：[TeXフォーラム](https://okumuralab.org/tex/)、[日本語版スタックオーバーフロー](https://ja.stackoverflow.com/questions/tagged/latex)
 
 こうした場所で質問をする場合は常に、再現手順を明確にすることが最重要です。つまり、いわゆる最小再現コード例（Minimal Working Example；MWE）を作ることが大事です。これは問題を自己解決する必要はありませんが（それができるなら質問しないですよね）、できる限り明確で、自己完結していて、最小のコード例を作りましょう。言い換えると、問題を再現するのに最低限必要なもののみに絞り込むということです。
 
@@ -91,6 +100,4 @@ Text
 
 ## さらに学ぶ
 
-<!-- TODO: 日本語版に合わせて更新 -->
-
-これで本チュートリアルのメインレッスンは終わりです。[付録レッスン](./extra-01)ではメインレッスンでは扱わなかったテーマやパッケージに関する小さなコード例をいくつか紹介しているので、興味のある方は確認してみてください。
+これで本チュートリアルのメインレッスンは終わりです。[付録レッスン](./language-01)では日本語独自の話題などを取り上げていますので、興味のある方は確認してみてください。

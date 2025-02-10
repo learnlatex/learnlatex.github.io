@@ -8,7 +8,7 @@ toc-anchor-text: "追加レッスン：表組み"
 
 ## その他のプリアンブルトークン
 
-メインレッスンではすべてのプリアンブルトークンを紹介しなかったので、ここで残りいくつかのものについても例とともに紹介しておきます。メインレッスンの冒頭に掲げた表をもう一度見てもらえれば、どのようなトークンが利用可能なのかの概要を確認できるかと思います。トークン`l`、`c`、`r`、`p`の役割を理解した後であれば、メインレッスンの表にある短い説明を読むだけでも列タイプ`m`、`b`、`w`、`W`との違いを理解することができるでしょう。もしそれではわからないという場合は、ちょっと実験をしてみましょう。これ以外でまだ説明できていないトークンは`>`、`<`、`@`、`!`、`|` です。
+メインレッスンではすべてのプリアンブルトークンを紹介しなかったので、ここで残りいくつかのものについても例とともに紹介しておきます。メインレッスンの冒頭に掲げた表をもう一度見てもらえれば、どのようなトークンが利用可能なのかの概要を確認できるかと思います。トークン`l`、`c`、`r`、`p`の役割を理解した後であれば、メインレッスンの表にある短い説明を読むだけでも列タイプ`m`、`b`、`w`、`W`との違いを理解することができるでしょう。もしそれではわからないという場合は、ちょっと実験をしてみましょう。これ以外でまだ説明できていないトークンは`>`、`<`、`@`、`!`、`|`です。
 
 ### 列のスタイル
 
@@ -19,9 +19,10 @@ toc-anchor-text: "追加レッスン：表組み"
 \RequirePackage{plautopatch}
 \documentclass[dvipdfmx]{jlreq}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{>{\bfseries}l<{:} *{2}{l}}
+\begin{tabular}{>{\bfseries}l<{：} *{2}{l}}
   動物   & 食べ物 & 大きさ \\
   イヌ   & 肉     & 中     \\
   ウマ   & 干し草 & 大     \\
@@ -40,11 +41,12 @@ toc-anchor-text: "追加レッスン：表組み"
 \RequirePackage{plautopatch}
 \documentclass[dvipdfmx]{jlreq}
 \usepackage{array}
+\usepackage{booktabs}
 
 \begin{document}
-\begin{tabular}{>{\bfseries}l<{:} *{2}{l}}
+\begin{tabular}{>{\bfseries}l<{：} *{2}{l}}
   \toprule
-  \multicolumn{1}{l}{Animal} & 食べ物 & 大きさ \\
+  \multicolumn{1}{l}{動物} & 食べ物 & 大きさ \\
   \midrule
   イヌ   & 肉     & 中     \\
   ウマ   & 干し草 & 大     \\
@@ -413,25 +415,23 @@ A Wider Entry & b\\
 
 ## 垂直罫線
 
-<!-- TODO: コード例を翻訳する？ -->
-
 複数の列にまたがるセルを作る（セルの結合を行う）よりも、1つの列を用意してその中に`tabular`環境を入れ子にすることでセルを垂直に分割する方がよい場合があります。
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lcc}
   \toprule
-  Test & \begin{tabular}{@{}c@{}}A\\a\end{tabular} & \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
+  テスト & \begin{tabular}{@{}c@{}}A\\a\end{tabular} & \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
   \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
+  コンテンツ & を & ここに書く \\
+  コンテンツ & を & ここに書く \\
+  コンテンツ & を & ここに書く \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -442,19 +442,19 @@ A Wider Entry & b\\
 
 <!-- {% raw %} -->
 ```latex
-\documentclass{article}
-\usepackage[T1]{fontenc}
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lcc}
   \toprule
-  Test & \begin{tabular}[b]{@{}c@{}}A\\a\end{tabular} & \begin{tabular}[t]{@{}c@{}}B\\b\end{tabular} \\
+  テスト & \begin{tabular}[b]{@{}c@{}}A\\a\end{tabular} & \begin{tabular}[t]{@{}c@{}}B\\b\end{tabular} \\
   \midrule
-  Content & is & here \\
-  Content & is & here \\
-  Content & is & here \\
+  コンテンツ & を & ここに書く \\
+  コンテンツ & を & ここに書く \\
+  コンテンツ & を & ここに書く \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -477,8 +477,8 @@ A Wider Entry & b\\
 `\hline`を使用する場合などでは、ベースラインより下の深さを変更することなく、行の高さだけを増加させた方がいい場合があります。そのような場合には`\extrarowheight`パラメタを使用します。
 
 ```latex
-\documentclass[a4paper]{article}
-\usepackage[T1]{fontenc}
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
 \usepackage{array}
 \begin{document}
 
@@ -486,9 +486,9 @@ A Wider Entry & b\\
 \begin{center}
 \begin{tabular}{cc}
 \hline
-Square& $x^2$\\
+平方 & $x^2$\\
 \hline
-Cube& $x^3$\\
+立方 & $x^3$\\
 \hline
 \end{tabular}
 \end{center}
@@ -498,9 +498,9 @@ Cube& $x^3$\\
 \setlength\extrarowheight{2pt}
 \begin{tabular}{cc}
 \hline
-Square& $x^2$\\
+平方 & $x^2$\\
 \hline
-Cube& $x^3$\\
+立方 & $x^3$\\
 \hline
 \end{tabular}
 \end{center}
