@@ -49,7 +49,7 @@ Unicodeが登場するまでは、LaTeXはさまざまな種類の**ファイル
 フォントを選択したら、あとは単純にUnicodeで文書ソースを記述することができます。ここではラテン文字、ギリシャ文字に加えて、いくつかCJK表意文字を含む文書のコード例を示します。
 
 ```latex
- % !TEX program=xelatex
+% !TEX program=xelatex
 \documentclass{article}
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
