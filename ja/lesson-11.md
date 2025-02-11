@@ -102,7 +102,7 @@ toc-description: "見た目を変更する方法"
 普通のテキスト。
 
 \begin{center}
-{\ gtfamily\large 何らかのテキスト\par}
+{\gtfamily\large 何らかのテキスト\par}
 普通のテキスト。
 {\bfseries\small さらに何らかのテキスト\par}
 \end{center}
