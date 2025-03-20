@@ -248,7 +248,7 @@ function openinoverleaf(nd) {
 	    }
 	}
     }
-    if(eng != null) {
+//    if(eng != null) {
 	if(engv.indexOf("platex") != -1 || engv.indexOf("ptex") != -1 || engv=="tex") {
 	    addinput(fm,"encoded_snip[]","$latex = '" + engv + "';\n$bibtex = 'pbibtex';\n$dvipdf = 'dvipdfmx %O -o %D %S';");
 	    addinput(fm,"snip_name[]","latexmkrc");
@@ -259,7 +259,7 @@ function openinoverleaf(nd) {
 	    engv=rldefaultengine;
 	}
 
-    }
+//    }
     addinput(fm,"engine",engv);
     fm.submit();
 }
