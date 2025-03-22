@@ -23,6 +23,10 @@
   label-regional: Français
   label-english: French
 
+- language-code: ja
+  label-regional: 日本語
+  label-english: Japanese
+
 - language-code: mr
   label-regional: मराठी
   label-english: Marathi
