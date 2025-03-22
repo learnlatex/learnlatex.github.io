@@ -19,9 +19,9 @@ des packages utilisés sur [texdoc.org](https://texdoc.org). Les exemples
 sont tirés des documentations en question, sauf indication contraire.
 
 
-<p class="hint">_Nota bene:_ Ce n'est pas parce que nous illustrons un package ici que
-nous souhaitons spécialement le conseiller par rapport à d'autres packages
-similaires. Il s'agit simplement d'un échantillon un peu arbitraire,
+<p class="hint">_Nota bene:_ Ce n'est pas parce que nous illustrons un package ici
+que nous souhaitons spécialement le conseiller par rapport à d'autres packages
+similaires. Il s'agit simplement d'une sélection un peu arbitraire,
 pour vous donner envie de poursuivre vos expérimentations avec LaTeX.</p>
 
 ## Chimie

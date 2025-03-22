@@ -32,7 +32,7 @@ runlatex.preincludes = {
 
 Quando você está escrevendo um documento longo, você provavelmente vai querer
 dividir o código fonte em múltiplos arquivos.  Por exemplo, é muito comum ter um
-arquivo 'principal', e um arquivo fonte por capítulo (para um livro ou tese), ou
+arquivo 'principal' e um arquivo fonte por capítulo (para um livro ou tese) ou
 por seção (para um artigo longo).
 
 ## Estruturando seu código fonte
@@ -106,7 +106,7 @@ isso é para manter o arquivo principal limpo.
 
 ## Usando `\include` e `\includeonly`
 
-O comando `\include` é bom para capítulos, então usamos ele para capítulos
+O comando `\include` é bom para capítulos, então o usamos para capítulos
 completos;  ele sempre inicia uma nova página.  Escolhemos quais capítulos
 serão de fato compilados usando `\includeonly`, que como você pode ver recebe
 uma lista separada por vírgula de nomes de arquivo.  Ao usar o `\includeonly`,
@@ -122,20 +122,21 @@ para preencher o sumário.  Ele tem seu próprio arquivo auxiliar com extensão
 `.toc`, então você pode precisar executar o LaTeX duas vezes para resolver toda
 a informação.  O sumário é gerado automaticamente dos títulos das seções.  Há
 comandos simlares para lista de figuras (`\listoffigures`) e de tabelas
-(`\listoftables`), que obtém as legendas das figuras do comando `\caption` nos
+(`\listoftables`), que obtêm as legendas a partir do comando `\caption` nos
 ambientes _float_ `figure` e `table`, e usa arquivos com extensão `.lof` e
 `.lot`, respectivamente.
 
 ## Dividindo o documento em partes
 
-Os comandos `\frontmatter`, `\mainmatter`, e `\backmatter` afetam a formatação.
-Por exemplo, `\frontmatter` muda a numeração das páginas para algarismos Romanos
-O comando `\appendix` muda a numeração dos capítulos para `A`, `B`, etc., então
-o primeiro comando `\chapter` depois de `\appendix` imprime `Appendix A`.
+Os comandos `\frontmatter`, `\mainmatter` e `\backmatter` afetam a formatação.
+Por exemplo, `\frontmatter` muda a numeração das páginas para algarismos
+romanos; O comando `\appendix` muda a numeração dos capítulos para `A`, `B`
+etc., então o primeiro comando `\chapter` depois de `\appendix` imprime
+`Appendix A`.
 
 ## Exercícios
 
-Experimente com a estrutura básica do documento de exemplo, e tente adicionar e
+Experimente com a estrutura básica do documento de exemplo e tente adicionar e
 remover itens em `\includeonly` para ver o efeito.
 
 Adicione alguns _floats_ para produzir uma lista de figuras e tabelas.
@@ -156,6 +157,7 @@ vezes são necessárias.)
 \tableofcontents
 \input{pref}
 ```
+<!-- {% endraw %} -->
 
 #### pref.tex
 <!-- pre2 {% raw %} -->

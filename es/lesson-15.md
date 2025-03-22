@@ -13,14 +13,14 @@ toc-description: "Trantando con comportamientos inesperados"
   class="summary">Esta lección muestra los errores comunes en los documentos LaTeX, lo que significan y como tratarlos.</span>
 
 A diferencia de un típico procesador de textos, LaTeX dispone de un ciclo
-Editar/Ejecutar/Ver similar al de los compiladores de los lenguages de programación; 
+Editar/Ejecutar/Ver similar al de los compiladores de los lenguajes de programación; 
 al igual que en programación, el usuario puede cometer errores al escribir su documento
 y por consiguiente, necesitará tratar con los mensajes de error dados por el sistema. 
 
 Esta página da ejemplos de algunos de los errores más comunes.
 
 Cada ejemplo viene acompañado de una explicación sobre la forma del
-mesaje de error.
+mensaje de error.
 
 Puede ser instructivo el probar los ejemplos, pero también el editarlos
 para intentar solucionar los errores presentes en el documento y verificar
@@ -162,7 +162,7 @@ error tipográfico (como en este ejemplo) que puede ser corregido escribiendo
 correctamente el nombre del paquete; o un archivo que no se encuentra y necesita
 ser instalado en el sistema.
 
-## Líneas en blanco en el módo matemático display
+## Líneas en blanco en el modo matemático display
 
 ```
 \documentclass{article}

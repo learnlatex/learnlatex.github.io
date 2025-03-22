@@ -1,0 +1,159 @@
+---
+layout: "lesson"
+lang: "it"
+title: "Di più su: Estendere le funzionalità di LaTeX con pacchetti e definizioni"
+description: "Questa lezione fornisce maggiori dettagli sul caricamento dei pacchetti, descrive il pacchetto babel per selezionare le lingue del documento e approfondisce l'argomento dei comandi personali."
+toc-anchor-text: "Di più su: Estendere le funzionalità di LaTeX con pacchetti e definizioni"
+---
+
+## Caricare più di un pacchetto in una volta sola
+
+Il comando `\usepackage` accetta un elenco di nomi di pacchetti 
+separati con la virgola, così che se ne possono caricare più d'uno
+in una volta sola: per esempio, `\usepackage{color,graphicx}`. 
+In questo caso, tieni presente che le opzioni passate 
+a un pacchetto verranno applicate a _tutti_ i pacchetti 
+nell'elenco, cosa che potrebbe essere non sempre desiderabile. 
+Inoltre, caricarli separatamente permette di commentarli
+più facilmente: quindi, continueremo a caricare ogni 
+pacchetto su una riga a sé.
+
+## Il pacchetto `babel`
+
+[Nella lezione principale](lesson-06) abbiamo descritto 
+il pacchetto `babel` come uno strumento utile a impostare 
+diversi schemi di sillabazione.
+A seconda della lingua o delle lingue in cui si prevede di
+scrivere, tuttavia, il pacchetto fa molto più di questo.
+Con il tedesco, per esempio, fornisce alcune scorciatoie per 
+generare trattini ‘morbidi’ e anche un modo per digitare 
+rapidamente la dieresi senza bisogno di avere una tastiera 
+tedesca. 
+Nota bene, inoltre, come il titolo inglese _Table of Contents_ 
+normalmente generato dal comando `\tableofcontents`
+cambi nel corrispondente tedesco _Inhaltsverzeichnis_.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel} % Attenzione: il nome dell'opzione è 'ngerman'
+
+\begin{document}
+
+\tableofcontents
+
+\section{"Uber "Apfel und Birnen}
+
+\subsection{Äpfel}
+Äpfel sind rot.
+
+\subsection{Birnen}
+Birnen sind gelb.
+
+\end{document}
+```
+
+Altre impostazioni della lingua modificano l'aspetto del testo:
+per esempio, la tipografia francese tradizionale prevede uno
+spazio prima di alcuni segni di punteggiatura come i due punti:
+ad aggiungerlo automaticamente pensa l'opzione `french` di `babel`.
+
+## Opzioni globali
+
+Quando si vuole passare un'opzione a _tutti_ i pacchetti 
+caricati, è sufficiente dichiararla tra quelle di 
+`\documentclass`: in questo modo, ogni pacchetto può ‘vedere’ 
+questa lista di opzioni. 
+Quindi, per passare la lingua di un documento a tutti i 
+pacchetti, potremmo scrivere:
+
+```latex
+\documentclass[ngerman]{article} % Attenzione: il nome dell'opzione è 'ngerman'
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+\begin{document}
+
+\tableofcontents
+
+\section{"Uber "Apfel und Birnen}
+
+\subsection{Äpfel}
+Äpfel sind rot.
+
+\subsection{Birnen}
+Birnen sind gelb.
+
+\end{document}
+```
+
+## Altre definizioni
+
+Il comando `\newcommand` permette di definire comandi 
+con un massimo di 9 argomenti, il primo dei quali può 
+essere facoltativo.
+
+Prendendo l'esempio dalla lezione principale, potremmo 
+rendere facoltativo il colore, che per impostazione 
+predefinita è il blu.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+
+\newcommand\kw[2][blue]{\textcolor{#1}{\itshape #2}}
+
+\begin{document}
+
+Qualcosa a proposito di \kw{mele} e \kw[red]{arance}.
+
+\end{document}
+```
+
+Gli argomenti facoltativi sono racchiusi tra parentesi quadre
+`[...]` e, se omessi, LaTeX adopera il valore predefinito
+specificato nella definizione.
+
+## Il comando `\NewDocumentCommand`
+
+Dall'ottobre 2020 è disponibile un sistema di definizione esteso, 
+che nelle versioni precedenti di LaTeX era permesso dal pacchetto
+`xparse`, che adoperiamo qui per una questione di compatibilità
+
+Ripetiamo l'esempio precedente, adoperando questa volta 
+`\NewDocumentCommand`.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{xparse} % Solo se la versione di LaTeX è anteriore a ottobre 2020
+\usepackage{xcolor}
+
+\NewDocumentCommand\kw{O{blue} m}{\textcolor{#1}{\itshape #2}}
+
+\begin{document}
+
+Qualcosa a proposito di \kw{mele} e \kw[red]{arance}.
+
+\end{document}
+```
+
+Esattamente come con `\newcommand`, `\NewDocumentCommand` 
+accetta il comando che si sta definendo (`\kw`, in questo caso) 
+e il corpo della definizione, indicando gli argomenti
+con la sintassi da `#1` a `#9`.
+Tuttavia, c'è una differenza nel modo in cui gli argomenti 
+vengono specificati.
+
+A differenza di `\newcommand`, dove va indicato solo il numero
+degli argomenti, fornendo eventualmente un valore predefinito
+per il primo di essi, con `\NewDocumentCommand` ogni argomento 
+è specificato da una lettera: quindi, un comando a due argomenti 
+va specificato con `{mm}` anziché con `[2]`. 
+Questo modo è leggermente più prolisso, ma permette di definire 
+comandi di molte più forme diverse.
+Qui diamo solo questo semplice esempio, in cui il primo argomento 
+è facoltativo, con valore predefinito blu (`O{blue}`) e il secondo 
+argomento è obbligatorio (`m`).
+

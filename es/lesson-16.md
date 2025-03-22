@@ -58,7 +58,7 @@ El equipo de LaTeX dispone de [una lista de libros](https://www.latex-project.or
 escritos fundamentalmente por los miembros del equipo. Los más destacados son [Lamport's official
 guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 y el detallado
-[LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
 
 Otros libros dedicados al aprendizaje de LaTeX:
 
@@ -77,10 +77,10 @@ Otros libros dedicados al aprendizaje de LaTeX:
 
 ## Obteniendo ayuda
 
-Existen varios forums en línea en los que hacer preguntas sobre LaTeX; quizá el
+Existen varios foros en línea en los que hacer preguntas sobre LaTeX; quizás el
 más popular actualmente es [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
 Siempre que haga una pregunta, es mejor que primero clarifique su ejemplo: a esto
-se le conoce como un «mímimo ejemplo funcional» (MWE, «minimal working exemple»). Esto
+se le conoce como un «mínimo ejemplo funcional» (MWE, «minimal working exemple»). Esto
 no significa que el código funcione (¡si así fuese, usted no haría la pregunta!), sino más
 bien que usted ha hecho lo posible por clarificarlo, debe ser completo y conciso. Este último
 termino significa mostrar unicamente el contenido necesario para entender el problema.
@@ -102,7 +102,7 @@ Si necesita texto para mostrar saltos de página y otros efectos, use
 paquetes como `lipsum` con el fin de generar párrafos de texto de relleno, 
 esto le permitirá mostrar un documento pequeño.
 
-Una de las cosas que debe estar presente es el archivo log; éste es creado por
+Una de las cosas que debe estar presente es el archivo log; este es creado por
 LaTeX cada vez que se ejecuta. Tiene el mismo nombre que su documento pero con
 la extensión `.log`. En función del sistema que utilice, quizás tenga que «mostrar
 las extensiones» de los archivos para encontrarlo.

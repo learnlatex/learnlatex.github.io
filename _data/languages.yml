@@ -23,9 +23,17 @@
   label-regional: Français
   label-english: French
 
+- language-code: it
+  label-regional: Italiano
+  label-english: Italian
+
 - language-code: ja
   label-regional: 日本語
   label-english: Japanese
+
+- language-code: lt
+  label-regional: Lietuviškai
+  label-english: Lithuanian
 
 - language-code: mr
   label-regional: मराठी
@@ -39,8 +47,17 @@
   label-regional: Tiếng&nbsp;Việt
   label-english: Vietnamese
 
+- language-code: zh-hans
+  label-regional: 中文（简体）
+  label-english: Simplified Chinese
+
+- language-code: zh-hant
+  label-regional: 中文（繁體）
+  label-english: Traditional Chinese
+
 # - language-code: tr
 #   label-regional: Türkçe
 #   label-english: Turkish
+
 
 

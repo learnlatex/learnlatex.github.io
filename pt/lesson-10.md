@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Matemática"
-description: "Esta lição apresenta o modo matemático do LaTeX e como você pode escrever equações lineares e em exibição, as extensões do pacote amsmath, e como mudar a fonte em equações."
+description: "Esta lição apresenta o modo matemático do LaTeX e como você pode escrever equações embutidas no texto e em destaque, as extensões do pacote amsmath e como mudar a fonte em equações."
 toc-anchor-text: "Matemática"
 toc-description: "Modo e notação matemática."
 ---
@@ -11,8 +11,8 @@ toc-description: "Modo e notação matemática."
 
 <span
   class="summary">Esta lição apresenta o modo matemático do LaTeX e como você
-  pode escrever equações lineares e em exibição, as extensões do pacote
-  `amsmath`, e como mudar a fonte em equações.</span>
+  pode escrever equações embutidas no texto e em destaque, as extensões do
+  pacote `amsmath` e como mudar a fonte em equações.</span>
 
 Escrever fórmulas matemáticas complexas é um dos pontos fortes do LaTeX.  Você
 pode escrever equações no LaTeX usando uma forma lógica, conhecida como 'modo
@@ -25,18 +25,18 @@ Nesse modo, espaços são ignorados e o espaçamento correto entre caracteres é
 
 Há duas formas do modo matemático:
 
-* linear (_inline_)
-* em exibição (_display_)
+* embutido (_inline_)
+* em destaque (_display_)
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Uma frase com matemática linear: $y = mx + c$.
-Uma segunda frase com matemática linear: $5^{2}=3^{2}+4^{2}$.
+Uma frase com matemática embutida: $y = mx + c$.
+Uma segunda frase com matemática embutida: $5^{2}=3^{2}+4^{2}$.
 
 
-Um segundo parágrafo com matemática em exibição:
+Um segundo parágrafo com matemática em destaque:
 \[
   y = mx + c
 \]
@@ -44,56 +44,56 @@ Veja como o parágrafo continua após a equação.
 \end{document}
 ```
 
-Você pode ver sintaxe parecida com a do LaTeX em outros lugares, por exemplo o
+Você pode ver sintaxe 'parecida' com a do LaTeX em outros lugares, por exemplo o
 sistema MathJax para inserir equações em páginas da internet.  Esses sistemas
 geralmente aceitam pequenas variações da sintaxe do LaTeX pois eles não usam
 o LaTeX de fato, mas uma emulação.
 
 <p
   class="hint">Nossos exemplos todos contém <em>LaTeX correto</em>, então se
-  você ver algo diferente em outro contexto, pode ser que o exemplo não esteja
+  você vir algo diferente em outro contexto, pode ser que o exemplo não esteja
   realmente usando o LaTeX.</p>
 
-### Modo matemático linear e notação matemática
+### Modo matemático embutido e notação matemática
 
-Como você viu acima, o modo matemático linear é marcado usando um par de cifrões
+Como você viu acima, o modo matemático embutido é indicado usando um par de cifrões
 (`$...$`).  Também é possível usar a notação `\(...\)`.  Expressões simples são
 escritas sem qualquer marcação, e você verá que a equação é espaçada
 corretamente e tem as letras que representam variáveis em itálico.
 
-Matemática linear restringe o tamanho vertical da expressão para que, na
+Matemática embutida restringe o tamanho vertical da expressão para que, na
 medida do possível, a fórmula não perturbe o espaçamento entre linhas no
 parágrafo.
 
-Note que _toda_ matemática deve ser marcada como matemática, mesmo se é um único
-caractere; use `... $2$ ...` ao invés de `... 2 ...`, caso contrário, por
-exemplo, quando você precisar um número negativo e precisar do modo matemático
-para ter um sinal de menos, o `... $-2$ ...` pode usar uma fonte diferente da
-dos dígitos no modo de texto (dependendo da classe de documento e fontes que
-você usar).
+Note que _toda_ matemática deve ser marcada como matemática, mesmo se for um
+único caractere; use `... $2$ ...` ao invés de `... 2 ...`, caso contrário,
+por exemplo, quando você precisar de um número negativo e precisar do modo
+matemático para obter o sinal de menos, o `... $-2$ ...` pode usar uma fonte
+diferente da dos dígitos no modo de texto (dependendo da classe de documento
+e fontes que você usar).
 
-Reciprocamente, cuide com construtos matemáticos que aparecem em texto simples
-copiado de outras fontes, como valores monetários usando `$` ou nomes de
-arquivos usando `_` (que podem ser escritos com `\$` e `\_`, respectivamente).
+De outro lado, cuidado com construtos matemáticos que aparecem em texto simples
+copiados de outras fontes, como valores monetários usando `$` ou nomes de
+arquivo usando `_` (que podem ser escritos com `\$` e `\_`, respectivamente).
 
-Podemos facilmente adicionar superscritos e subscritos; eles são marcados usando
-`^` e `_`, respectivamente:
+Podemos facilmente adicionar sobrescritos e subscritos; eles são indicados
+usando `^` e `_`, respectivamente:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \begin{document}
-Superscritos $a^{b}$ e subscritos $a_{b}$.
+Sobrescritos $a^{b}$ e subscritos $a_{b}$.
 \end{document}
 ```
 
-(você pode encontrar exemplos onde super- e subscritos simples são escritos sem
+(você pode encontrar exemplos onde sobre- e subscritos simples são escritos sem
 as chaves, mas esta não é a sintaxe oficial e pode não funcionar todas as vezes;
 sempre use chaves.)
 
 Há _muitos_ comandos específicos para o modo matemático.  Alguns são bastante
 fáceis, por exemplo `\sin` e `\log` para o seno e logaritmo, ou `\theta` para a
-letra Grega:
+letra grega:
 
 ```latex
 \documentclass{article}
@@ -104,14 +104,14 @@ Matemática: $y = 2 \sin \theta^{2}$.
 ```
 
 Nós não podemos cobrir todos os comandos de matemática do LaTeX aqui, mas há
-muitos recursos online listando o cunjunto padrão.  Você pode procurar comandos
+muitos recursos online listando o conjunto padrão.  Você pode procurar comandos
 para símbolos matemáticos usando o
 [Detexify](https://detexify.kirelabs.org/classify.html).
 
-### Matemática em exibição
+### Matemática em destaque
 
-Você pode usar exatamente os mesmos comandos para matemática em exibição ou para
-matemática linear.  Matemática em exibição é centralizada por padrão e é usada
+Você pode usar exatamente os mesmos comandos para matemática em destaque ou para
+matemática embutida.  Matemática em destaque é centralizada por padrão e é usada
 para equações maiores que são 'parte de um parágrafo'.  Note que ambientes de
 equação não permitem que um parágrafo termine _dentro_ da equação, então você
 não pode ter linhas em branco dentro do código da equação.
@@ -122,7 +122,7 @@ matemática, não use vários ambientes de equação em sequência (o espaçamen
 inconsistente);  use um dos ambientes de equação em várias linhas como o `align`
 do pacote `amsmath`, apresentado adiante.
 
-O modo de matemática em exibição é particularmente útil para integrações, por
+O modo de matemática em destaque é particularmente útil para integrações, por
 exemplo:
 
 ```latex
@@ -136,7 +136,7 @@ Um parágrafo sobre uma equação maior
 \end{document}
 ```
 
-Perceba aqui como a notação de sub-/superscrito é usada para definir os limites
+Perceba aqui como a notação de sub-/sobrescrito é usada para definir os limites
 da integração.
 
 Nós adicionamos um comando de espaçamento manual aqui: `\,` faz um espaço fino
@@ -163,9 +163,6 @@ Um parágrafo sobre uma equação mais longa
 Você provavelmente vai querer uma equação numerada, que é criada usando o
 ambiente `equation`.  Vamos tentar o mesmo exemplo acima:
 
-You often want a numbered equation, which is created using the `equation`
-environment. Let's try the same example again:
-
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
@@ -185,7 +182,7 @@ pela classe de documento, então não são detalhados aqui.
 ## O pacote `amsmath`
 
 Notação matemática é muito rica, e isso significa que as ferramentas incluídas
-no núcleo do LaTeX não podem cobrir todos os casos necessários.  O pacote
+no núcleo do LaTeX podem não cobrir todos os casos necessários.  O pacote
 `amsmath` estende o suporte básico para cobrir muito mais ideias.
 O [Guia de Usuário do `amsmath`](http://texdoc.org/pkg/amsmath) (em inglês)
 contém muito mais exemplos do que podemos mostrar nessa lição.
@@ -204,14 +201,14 @@ Resolva a seguinte recorrência para $ n,k\geq 0 $:
 \end{document}
 ```
 
-O ambiente `align*` faz com que os termos das equações alinhem nos `&`, como em
-uma tabela.  Veja como usamos `\quad` para inserir um pouco de espaço, e `\text`
-para colocar texto normal dentro do modo matemático.  Nós também usamos outro
-comando, `\binom`, para um binomial.
+O ambiente `align*` faz com que os termos das equações sejam alinhados nos
+`&`, como em uma tabela.  Veja como usamos `\quad` para inserir um pouco de
+espaço e `\text` para colocar texto normal dentro do modo matemático.  Nós
+também usamos outro comando, `\binom`, para um binomial.
 
-Veja como aqui usamos `align*` e a equação não saiu numerada.  A maioria dos
-ambientes matemáticos numeram as equações por padrão, e a versão com `*`
-desabilita a numeração.
+Veja também como aqui usamos `align*` e a equação não saiu numerada.  A
+maioria dos ambientes matemáticos numera as equações por padrão, e a versão
+com `*` desabilita a numeração.
 
 O pacote `amsmath` também tem outros ambientes convenientes, por exemplo, para
 matrizes:
@@ -250,11 +247,11 @@ Há um conjunto de comandos que você precisa aqui:
 - `\mathrm`: fonte romana (em pé)
 - `\mathit`: itálico espaçado como 'texto'
 - `\mathbf`: negrito
-- `\mathsf`: sans serif
-- `\mathtt`: monoespaçada (máquina de escrever)
+- `\mathsf`: sem serifa
+- `\mathtt`: espaçamento fixo (máquina de escrever)
 - `\mathbb`: traçado duplo (do pacote `amsfonts`)
 
-Cada um desses leva letras do alfabeto Latino como argumento, então por exemplo,
+Cada um desses leva letras do alfabeto latino como argumento, então por exemplo,
 podemos escrever uma matriz como:
 
 ```latex
@@ -269,11 +266,10 @@ Note que a fonte itálica padrão em equações separa as letras de forma que el
 podem ser usadas para denotar o produto de variáveis.  Use `\mathit` para fazer
 uma palavra em itálico.
 
-Os comandos `\math..` usam fontes específicas para uso matemático.  Às vezes
-você precisa incluir uma uma palavra que é parte da estrutura do texto, e
-precisa usar a fonte do texto, para isso você pode usar `\text{...}` (que é
-definido no pacote `amsmath`) ou estilos específicos de fonte, como
-`\textrm{...}`.
+Os comandos `\math...` usam fontes específicas para uso matemático.  Às vezes
+você precisa incluir uma palavra que é parte da estrutura do texto, e precisa
+usar a fonte do texto; para isso, você pode usar `\text{...}` (que é definido
+no pacote `amsmath`) ou estilos específicos de fonte, como `\textrm{...}`.
 
 ```latex
 \documentclass{article}
@@ -294,15 +290,15 @@ Se você precisa deixa outros símbolos em negrito, veja
 ## Exercícios
 
 Experimente um pouco com o modo matemático:  pegue os exemplos e troque entre
-modo linear e em exibição.  Consegue ver o efeito?
+modo embutido e em destaque.  Consegue ver o efeito?
 
-Tente adicionar outras letras Gregas, tanto minúsculas quanto maiúsculas.
+Tente adicionar outras letras gregas, tanto minúsculas quanto maiúsculas.
 Você vai conseguir adivinhar o nome de algumas.
 
 Experimente com os comandos de mudança de fonte: o que acontece se você usar
 um dentro do outro?
 
-Equações em exibição são centralizadas por padrão;  tente adicionar a opção
+Equações em destaque são centralizadas por padrão;  tente adicionar a opção
 `[fleqn]` (do inglês, _flush left equation_) no `\documentclass` em alguns dos
 exemplos acima para ver uma configuração diferente.  De forma similar, números
 de equações geralmente ficam à direita.  Experimente adicionar a opção `[leqno]`

@@ -68,10 +68,10 @@ Run LaTeX one more time and you'll be all set.
 (Usually while writing you will run LaTeX several times anyway,
 so in practice this is not a bother.)
 
-Notice the tie (`~`) characters before the references.
+Notice the tilde (`~`) characters before the references.
 You don't want a line break between `subsection` and its number, or
 between `equation` and its number.
-Putting in a tie means LaTeX won't break the line there.
+Putting in a tilde means LaTeX won't break the line there.
 
 ## Where to put `\label`
 

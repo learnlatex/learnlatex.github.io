@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "es"
 title: "Seleccionando fuentes y usando los motores Unicode"
-description: "Esta lección da una idea de cómo LaTeX interpreta un texto Unicode y como ésto afecta a lo que escribe y a las fuentes que usa. Aprenda sobre el uso de las fuentes Unicode y Opentype,"
+description: "Esta lección da una idea de cómo LaTeX interpreta un texto Unicode y como esto afecta a lo que escribe y a las fuentes que usa. Aprenda sobre el uso de las fuentes Unicode y Opentype,"
 toc-anchor-text: "Fuentes y motores Unicode"
 toc-description: "Seleccionando las fuentes y la codificación"
 ---
@@ -10,7 +10,7 @@ toc-description: "Seleccionando las fuentes y la codificación"
 # Seleccionando fuentes y usando los motores Unicode
 
 <span
-  class="summary">Esta lección da una idea de cómo LaTeX interpreta un texto Unicode y como ésto afecta a lo que escribe y a las fuentes que usa. Aprenda sobre el uso de las fuentes Unicode y Opentype,</span>
+  class="summary">Esta lección da una idea de cómo LaTeX interpreta un texto Unicode y como esto afecta a lo que escribe y a las fuentes que usa. Aprenda sobre el uso de las fuentes Unicode y Opentype,</span>
 
 Cuando TeX y LaTeX comenzaron a ser ampliamente utilizados, sólo eran capaces de tratar
 con la mayoría de idomas europeos, aunque disponían de algunas funcionalidades para
@@ -20,7 +20,7 @@ usar otros alfabetos como el griego o el ruso.
 
 En un principio, las tildes y letras acentuadas eran escritas usando secuencias
 de control o macros como `\c{c}` para obtener "ç" y `\'e` para "é". Mientras que
-algunas personas seguían utilizando estos métodos porque eran más fáciles de escribir
+esto personas seguían utilizando estos métodos porque eran más fáciles de escribir
 para ellos, otras querían poder utilizar las teclas de sus teclados para escribir
 esos símbolos directamente.
 
@@ -33,7 +33,7 @@ producir la salida deseada.
 Este método sigue en uso en el LaTeX moderno cuando usa el motor `pdflatex`. Por defecto,
 todos los archivos se supone que utilizan Unicode (codificación UTF-8) a menos que
 se especifique otra cosa. Aunque este motor de codificación está limitado a fuentes de
-8 bits, la mayor parte de las lenguas europeas están soportadas.
+8 bits, la mayor parte de los idiomas europeos están soportados.
 
 La selección de la fuente de letra con `pdflatex` usa el robusto esquema de selección
 de fuente de LaTeX y hoy en día existen muchas fuentes ya preparadas para su uso en la

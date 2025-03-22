@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Incluindo gráficos e posicionando-os"
-description: "Esta lição dá mais detalhes sobre boas práticas para dar nome e armazenar gráficos para usar com o LaTeX, e como você pode fazer seus próprios gráficos de dentro do LaTeX."
+description: "Esta lição dá mais detalhes sobre boas práticas para dar nome e armazenar gráficos para usar com o LaTeX e como você pode fazer seus próprios gráficos de dentro do LaTeX."
 toc-anchor-text: "Veja mais sobre: Usando gráficos"
 ---
 

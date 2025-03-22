@@ -2,20 +2,20 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Tabelas"
-description: "Esta lição mostra formas de personalizar uma tabela aplicando estilos a uma coluna, modificando espaçamento e linhas, e outros pacotes que fornecem diferentes extensões para tabelas."
+description: "Esta lição mostra formas de personalizar uma tabela aplicando estilos a uma coluna, modificando espaçamento e linhas e outros pacotes que fornecem diferentes extensões para tabelas."
 toc-anchor-text: "Veja mais sobre: Tabelas no LaTeX"
 ---
 
 ## Outros símbolos de preâmbulo para tabelas
 
 A [lição principal](lesson-08) não abordou todos os símbolos de preâmbulo
-disponíveis, portanto alguns serão explicados aqui, com exempls.  Você pode
+disponíveis, portanto alguns serão explicados aqui, com exemplos.  Você pode
 querer revisitar as tabelas no início da lição para ter uma visão geral dos
 símbolos disponíveis.  As descrições dadas lá devem ser suficientes para
-entender o que os tipos diferentes de colunas `m`, `b`, `w`, e `W` fazem, depois
-que você endender `l`, `c`, `r`, e `p`.  Se não, você pode experimentar um pouco
+entender o que os tipos diferentes de colunas `m`, `b`, `w` e `W` fazem, depois
+que você endender `l`, `c`, `r` e `p`.  Se não, você pode experimentar um pouco
 com eles.  O que ainda falta são os outros símbolos listados na
-[lição principal](lesson-08):  `>`, `<`, `@`, `!`, e `|`.
+[lição principal](lesson-08):  `>`, `<`, `@`, `!` e `|`.
 
 ### Aplicando estilos a uma coluna
 
@@ -47,7 +47,7 @@ seguinte:
 <!-- {% endraw %} -->
 
 `\itshape` deixa todo o texto que segue em itálico, mas seu efeito é 'contido' à
-céula da tabela.  Vamos abordar formatação manual de texto
+célula da tabela.  Vamos abordar formatação manual de texto
 [algumas lições adiante](lesson-11).
 
 Você pode querer que a primeira célula não seja afetada porque ela é o cabeçalho
@@ -104,7 +104,7 @@ ajustar esse espaço usando `\setlength`:
 <!-- {% endraw %} -->
 
 Você pode trocar esse espaço por algo à sua escolha usando `@`.  Esse símbolo
-vai remover o espaçamento entre duas colunas, e inserir o argumento entre elas:
+vai remover o espaçamento entre duas colunas e inserir o argumento entre elas:
 
 <!-- {% raw %} -->
 ```latex
@@ -146,9 +146,9 @@ argumento no centro do espaço entre as colunas:
 ```
 <!-- {% endraw %} -->
 
-### Linhas verticais
+### Bordas verticais
 
-Às vezes você é obrigado a usar linhas verticais em tabelas.
+Às vezes você é obrigado a usar bordas verticais em tabelas.
 
 <!-- {% raw %} -->
 ```latex
@@ -168,20 +168,20 @@ argumento no centro do espaço entre as colunas:
 <!-- {% endraw %} -->
 
 Você deve ter percebido que o comportamento de `|` é bem similar ao `!`;  ele
-adiciona a linha vertical entre duas colunas deixando o espaçamento intacto.
-No entanto há uma grande desvantagem nisso;  linhas verticais não funcionam com
-as linhas horizontais do `booktabs`.  Você pode usar as linhas horizontais
-padrão do LaTeX;  elas são `\hline` (correspondente a `\toprule`, `\midrule`, e
+adiciona a borda vertical entre duas colunas deixando o espaçamento intacto.
+No entanto, há uma grande desvantagem nisso;  bordas verticais não funcionam
+com as bordas horizontais de `booktabs`.  Você pode usar as bordas horizontais
+padrão do LaTeX;  elas são `\hline` (correspondente a `\toprule`, `\midrule` e
 `\bottomrule`) e `\cline` (corresponde a `\cmidrule`).  Como mostrado acima,
-linhas verticais vão preencher qualquer espaço especificado no argumento
+bordas verticais vão preencher qualquer espaço especificado no argumento
 opcional de `\\`.
 
-## Personalizando as linhas do `booktabs`
+## Personalizando as bordas de `booktabs`
 
-Todas as linhas do pacote `booktabs` e `\addlinespace` suportam um argumento
-opcional entre colchetes com o qual você pode especificar a espessura da linha.
-Além disso, o comprimento da redução da linha do `\cmidrule` pode ser modificada
-especificando um comprimento entre chaves depois de `r` ou `l`:
+Todas as bordas do pacote `booktabs` e `\addlinespace` suportam um argumento
+opcional entre colchetes com o qual você pode especificar a espessura da
+borda. Além disso, o comprimento da redução do traço de `\cmidrule` pode ser
+modificado especificando um comprimento entre chaves depois de `r` ou `l`:
 
 <!-- {% raw %} -->
 ```latex
@@ -239,9 +239,9 @@ formas diferentes;  consulte a
 
 ## Especificando a largura total da tabela
 
-A largura de um ambiente `tabular` é automaticamente determinado do conteúdo da
-tabela.  Há dois mecanismos comumente usados para especificar a largura total da
-tabela.
+A largura de um ambiente `tabular` é automaticamente determinada pelo conteúdo
+da tabela.  Há dois mecanismos comumente usados para especificar uma largura
+total diferente.
 
 Note que é quase sempre preferível formatar a tabela para caber em uma largura
 conforme explicado abaixo (talvez usando uma fonte menor, como `\small`, se
@@ -296,8 +296,8 @@ C & D\\
 ### `tabularx`
 
 O ambiente `tabularx`, do pacote de mesmo nome, tem uma sintaxe similar a
-`tabular*` mas ao invés de ajustar o espaço entre as colunas, ele ajusta a
-largura das colunas do tipo `X`.  Isso é equivalente à uma coluna `p{...}` com
+`tabular*` mas, ao invés de ajustar o espaço entre as colunas, ajusta a
+largura das colunas do tipo `X`.  Isso é equivalente a uma coluna `p{...}` com
 um valor automaticamente determinado para a largura.
 
 ```latex
@@ -336,8 +336,8 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Diferente de outros tipos de tabelas discutidos nessas lições, `tabularx`
-precisa escrever o conteúdo da tabela várias vezes, experimentando com o valor
+Diferentemente de outros tipos de tabelas discutidos nestas lições, `tabularx`
+precisa diagramar o conteúdo da tabela várias vezes, experimentando com o valor
 da largura para determinar o valor final.  Isso significa que há algumas
 restrições à utilização do ambiente; consulte a
 [documentação do pacote](https://texdoc.org/pkg/tabularx).
@@ -348,7 +348,7 @@ Um ambiente `tabular` cria uma caixa inquebrável, então ela deve ser pequena o
 suficiente para caber em uma página, e é geralmente colocada em um ambiente
 _float_ `table`.
 
-Vários pacotes têm variações com sintaxe similar que permitem quebra de página
+Vários pacotes têm variações com sintaxe similar que permitem quebras de página
 na tabela.  Aqui mostramos o pacote `longtable`:
 
 ```latex
@@ -387,7 +387,7 @@ Texto mais largo & b\\
 ```
 
 `longtable` é notável pois preserva a largura das colunas entre todas as páginas
-da tabela;  no entanto para conseguir isso é necessário várias execuções do
+da tabela;  no entanto, para conseguir isso são necessárias várias execuções do
 LaTeX para que as células mais largas encontradas mais ao final da tabela possam
 afetar a largura das colunas em páginas anteriores.
 
@@ -430,10 +430,10 @@ aqui:
 As configurações padrão de quebra de linhas assumem linhas relativamente longas
 para dar alguma flexibilidade ao escolher quebras de linhas.  O exemplo a seguir
 mostra algumas abordagens possíveis.  A primeira tabela mostra o espaçamento
-entre palavras alongado e o TeX avisa sobre linhas sub-preenchidas
+entre palavras exacerbado e o TeX avisa sobre linhas sub-preenchidas
 (_Underfull_).  Usando `\raggedright` geralmente evita esse problema mas às
 vezes deixa linhas muito irregulares.  O comando `\RaggedRight`, do pacote
-`ragged2e` oferece um balanço;  ele também permite alguma irregularidade nos
+`ragged2e` oferece um meio termo;  ele permite alguma irregularidade nos
 comprimentos das linhas, mas também vai hifenizar se necessário, como mostrado
 na terceira tabela.
 
@@ -490,7 +490,7 @@ centralizada com texto em negrito.
 
 ## Truques verticais
 
-Frequentemente, ao invés de fazer uma célula cobrir multiplas linhas, é melhor
+Frequentemente, ao invés de fazer uma célula cobrir múltiplas linhas, é melhor
 fazer uma única linha em que algumas células são divididas verticalmente usando
 ambientes `tabular` dentro dessa célula:
 
@@ -517,7 +517,7 @@ ambientes `tabular` dentro dessa célula:
 
 Note que você pode controlar o alinhamento vertical usando o argumento opcional
 do ambiente `tabular`;  ele suporta usar `t`, `c`, ou `b` para alinhar ao topo,
-ao centro, ou ao fundo, respectivamente, e é usado assim:
+ao centro, ou à base, respectivamente, e é usado assim:
 
 <!-- {% raw %} -->
 ```latex

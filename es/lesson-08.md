@@ -168,7 +168,7 @@ Un pequeño consejo antes de introducir las líneas; en las tablas las líneas d
 con parsimonia y normalmente las líneas verticales no parecen ser de un uso muy profesional. 
 De hecho, para las tablas profesionales no debe usar ninguna de las líneas estándar; en su lugar
 usted debe familiarizarse con las que le facilita el paquete `booktabs`, por esta razón las abordaremos
-aquí, en primer lugar. Para que completar esta lección, las líneas estándar serán
+aquí, en primer lugar. Para completar esta lección, las líneas estándar serán
 abordadas en la sección de [más sobre este tema](more-08).
 
 `booktabs` proporciona cuatro tipos diferentes de líneas. Cada uno de los comandos que permiten definirlas,
@@ -201,7 +201,7 @@ en la parte alta, en las filas intermedias o en la parte baja de la tabla, respe
 
 El cuarto comando proporcionado por `booktabs` es `\cmidrule`. Puede ser usado para
 dibujar una línea que no se extienda a toda la fila de una tabla, sino a un intervalo específico
-de columnas de esa fila. Debe especificarse un intervalo de columas de la forma: `{`_number_`-`_number`}`.
+de columnas de esa fila. Debe especificarse un intervalo de columnas de la forma: `{`_number_`-`_number`}`.
 Incluso si usted sólo desea dibujar una línea para una única columna,
 deberá especificarlo como un intervalo (siendo los extremos del intervalo el mismo número).
 
@@ -370,7 +370,7 @@ del significado deseado sin extender las celdas verticalmente.
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Groupo    & Animal  & Tamaño  \\
+  Grupo    & Animal  & Tamaño  \\
   \midrule
   herbívoro & caballo & grande  \\
             & ciervo  & mediano \\

@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Estendendo o LaTeX usando pacotes e definições"
-description: "Esta lição dá mais detalhes sobre carregamento de pacotes, apresenta o pacote babel para selecionar o idioma, e dá mais detalhes sobre comandos personalizados."
+description: "Esta lição dá mais detalhes sobre carregamento de pacotes, apresenta o pacote babel para selecionar o idioma e dá mais detalhes sobre comandos personalizados."
 toc-anchor-text: "Veja mais sobre: Estendendo o LaTeX"
 ---
 
@@ -19,11 +19,11 @@ carregar cada pacote em uma linha separada.
 
 Nós mostramos o pacote `babel` na [lição principal](lesson-06) como uma forma
 de escolher diferentes padrões de hifenização.  Mas `babel` faz muito mais do
-que isso, dependendo dos idiomas sendo utilizados.  Por exemplo, em Alemão,
-`babel` fornece atalhos para criar hífens 'flexíveis', e também uma forma rápida
+que isso, dependendo dos idiomas sendo utilizados.  Por exemplo, em alemão,
+`babel` fornece atalhos para criar hífens 'flexíveis' e também uma forma rápida
 de digitar tremas sem ter uma tecla especial no teclado.  Veja também como o
 título da seção _Table of Contents_ gerada pelo comando `\tableofcontents` muda
-para o Alemão _Inhaltsverzeichnis_:
+para o alemão _Inhaltsverzeichnis_:
 
 ```latex
 \documentclass{article}
@@ -47,7 +47,7 @@ Birnen sind gelb.
 ```
 
 Outras configurações de linguagem fazem mudanças de design:  por exemplo, em
-tipografia Francesa tradicional, há um espaço antes de alguns sinas de
+tipografia francesa tradicional, há um espaço antes de alguns sinas de
 pontuação, como `:`, e esse espaço é adicionado automaticamente se você carregar
 o pacote `babel` com a opção `french`.
 
@@ -55,7 +55,7 @@ o pacote `babel` com a opção `french`.
 
 Às vezes, você quer que uma opção fique disponível para todos os pacotes que
 você carregar.  Isso é feito ao passar a opção na linha do `\documentclass`:
-todos os pacotes podem 'ver' essa lista.  Então para passar o idioma de um
+todos os pacotes podem 'ver' essa lista.  Então, para passar o idioma de um
 documento para todos os pacotes podemos usar:
 
 ```latex

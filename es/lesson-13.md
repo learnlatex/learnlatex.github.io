@@ -38,7 +38,7 @@ un archivo principal «main»/«root» y otros archivos secundarios: uno por cad
 LaTeX le permite separar su contenido de forma controlada. Hay dos comandos importantes
 para hacer esto: `\input` e `\include`. Podemos usar `\input` para hacer que el contenido
 de un archivo funcione «como si estuviese escrito en ese punto», con lo que puede ser 
-usado (esencialmente) para insertar cualquier tipo de contenido. El comado `\include` 
+usado (esencialmente) para insertar cualquier tipo de contenido. El comando `\include` 
 se usa únicamente para capítulos: comienza una nueva página y realiza algunos ajustes
 internos. Pero presenta una gran ventaja: nos permite seleccionar los capítulos que
 queremos incluir, con lo que podemos trabajar en una parte del documento más que con
@@ -156,6 +156,7 @@ las compilaciones sucesivas necesarias).
 \tableofcontents
 \input{pref}
 ```
+<!-- {% endraw %} -->
 
 #### pref.tex
 <!-- pre2 {% raw %} -->

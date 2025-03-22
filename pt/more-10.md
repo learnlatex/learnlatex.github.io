@@ -2,25 +2,18 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Matemática"
-description: "Esta lição mostra mais ambientes de alinhamento do amsmath, como fazer símbolos matemáticos em negrito, o pacote de extensão de matemática mathtools, e usando entrada Unicode para equações."
+description: "Esta lição mostra mais ambientes de alinhamento do amsmath, como fazer símbolos matemáticos em negrito, o pacote de extensão de matemática mathtools e o uso de entrada Unicode para equações."
 toc-anchor-text: "Veja mais sobre: Matemática"
 ---
 
 ## Mais ambientes de alinhamento do `amsmath`
 
 Além do ambiente `align*` apresentado na [lição principal](lesson-10), o
-`amsmath` tem diversos outras estruturas de equações em exibição, notavelmente
+`amsmath` tem diversas outras estruturas de equações em destaque, em particular
 `gather` para equações de várias linhas que não precisam alinhamento, e
-`multline` para dividir uma única expressão em várias linhas, alinhando a
+`multiline` para dividir uma única expressão em várias linhas, alinhando a
 primeira linha à esquerda e a última à direita.  Em todos os casos, a variante
 com `*` omite a numeração das equações.
-
-In addition to the `align*` environment shown in the main lesson,
-`amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment, and `multline` for
-splitting a larger single expression over multiple lines, aligning the
-first line to the left, and the last to the right. In all cases the `*`
-form  omits the equation numbers by default.
 
 ```latex
 \documentclass[a4paper]{article}
@@ -45,10 +38,10 @@ Multline
 \end{document}
 ```
 
-### Colunas em alinhamentos de equações
+### Alinhamentos de equações em colunas
 
-Os ambientes de alinhamento do `amsmath` são projetados para levar pares de
-colunas com a primeira coluna de cada par alinhada à direita e a segunda à
+Os ambientes de alinhamento do `amsmath` são projetados para processar pares
+de colunas com a primeira coluna de cada par alinhada à direita e a segunda à
 esquerda.  Isso permite que múltiplas equações sejam apresentadas, cada uma
 alinhada em direção ao seu símbolo de relação
 
@@ -91,7 +84,7 @@ d&=c
 ```
 
 `aligned` aceita um argumento opcional de posicionamento similar ao ambiente
-`tabular`.  Isso geralmente é útil para alinhar uma equação linear na primeira
+`tabular`.  Isso geralmente é útil para alinhar uma equação embutida na primeira
 linha;  compare os itens na lista no exemplo a seguir:
 
 ```latex
@@ -139,7 +132,7 @@ $\mathbf{\pi} r^2$ % uso incorreto de \mathbf
 
 Se você quer acessar símbolos em negrito (conforme você obteria com `\boldmath`)
 dentro de uma expressão normal, então você pode usar o comando `\bm` do pacote
-`bm`.  Note que `\bm` também funciona com símbolos como `=` e letras Gregas.
+`bm`.  Note que `\bm` também funciona com símbolos como `=` e letras gregas.
 (Note que `\mathbf` não tem efeito em `\pi` no exemplo acima.)
 
 ```latex
@@ -160,7 +153,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 
 ## Mathtools
 
-O pacote `mathtools` carrega o `amsmath` e adiciona muitas outras
+O pacote `mathtools` carrega o `amsmath` e acrescenta muitas outras
 funcionalidades adicionais, como variantes dos ambientes de matriz do `amsmath`
 que permitem escolher o alinhamento das colunas:
 

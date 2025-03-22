@@ -76,6 +76,12 @@ defaults:
       label: "日本語"
   -
     scope:
+      path: "lt"
+    values:
+      lang: "lt"
+      label: "Lietuviškai"
+  -
+    scope:
       path: "pt"
     values:
       lang: "pt"
@@ -104,3 +110,19 @@ defaults:
     values:
       lang: "ca"
       label: "Català"
+<<<<<<< HEAD
+=======
+  -
+    scope:
+      path: "zh-hans"
+    values:
+      lang: "zh-hans"
+      label: "中文（简体）"
+  -
+    scope:
+      path: "zh-hant"
+    values:
+      lang: "zh-hant"
+      label: "中文（繁體）"   
+
+>>>>>>> upstream/main

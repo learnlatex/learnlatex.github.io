@@ -49,7 +49,7 @@ simbolos de dolar (`$...$`). También es posible usar la siguiente notación `\(
 Las expresiones simples son introducidas sin marcadores especiales y el texto matemático
 será espaciado correctamente y escrito en cursiva.
 
-El modo matemático inline restrinje el tamaño vertical de la expresión 
+El modo matemático inline restringe el tamaño vertical de la expresión 
 matemática, de manera que la fórmula no afecte al espaciado de línea del 
 párrafo. 
 
@@ -109,7 +109,7 @@ varias líneas de fórmulas matemáticas, no use entornos display consecutivos
 (esto dará lugar a un espaciado incongruente); use un entorno display multilínea
 como `align` del paquete `amsmath`descrito más adelante.
 
-Esto es particualmente útil en el caso de integrales, por ejemplo:
+Esto es particularmente útil en el caso de integrales, por ejemplo:
 
 ```latex
 \documentclass{article}
@@ -272,4 +272,4 @@ El modo matemático display es centrado por defecto; intente añadir la opción 
 ecuaciones a la izquierda) en la definición del tipo de documento de los ejemplos
 anteriores, para ver qué efectos tiene en el resultado final. Del mismo modo, las ecuaciones
 son enumeradas normalmente a la derecha. Pruebe a añadir la opción `[leqno]` (enumeración de ecuaciones
-a la izquierda) en la definción del tipo de documento.
+a la izquierda) en la definición del tipo de documento.
