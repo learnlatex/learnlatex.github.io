@@ -26,4 +26,4 @@ The following people have made contributions to learnlatex.org:
 - Dung Vu
 - Uwe Ziegenhagen
 - निरंजन
-
+- Takuto Asakura
