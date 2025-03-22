@@ -45,7 +45,7 @@ ACEのリポジトリには[多くの便利なキーボードショートカッ�
 
 ##### Overleafを利用する
 
-Overleafは世界的に最も人気のあるオンラインLaTeXサービスの1つです。各コード例の下にある<button>Open in Overleaf</button>を押すと、そのコードが[Overleaf](https://www.overleaf.com/about)に送られます。
+Overleafは世界的に最も人気のあるオンラインLaTeXサービスの1つです。各コード例の下にある<button>Overleafで開く</button>を押すと、そのコードが[Overleaf](https://www.overleaf.com/about)に送られます。
 
 もしあなたがOverleafのアカウントを持っていなかったり、ログイン情報がブラウザにキャッシュされていなかったりする場合は、Overleafのログインページにリダイレクトされます。そのページでログインや新規のアカウント登録を行うことができます。Overleafは無料サービスですが、いくつかユーザ登録に必要な情報を入力したり、利用規約に同意したりする必要があります。
 
