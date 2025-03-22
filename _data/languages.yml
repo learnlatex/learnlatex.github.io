@@ -27,6 +27,10 @@
   label-regional: Italiano
   label-english: Italian
 
+- language-code: ja
+  label-regional: 日本語
+  label-english: Japanese
+
 - language-code: lt
   label-regional: Lietuviškai
   label-english: Lithuanian

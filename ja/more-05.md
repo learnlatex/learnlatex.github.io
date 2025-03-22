@@ -1,6 +1,51 @@
 ---
 layout: "lesson"
 lang: "ja"
-title: "More on: Using document classes to influence design (Japanese)"
+title: "追加レッスン：文書クラスを利用したデザインの変更"
+description: "この追加レッスンでは、より特別なLaTeX文書クラスについて説明します。"
+toc-anchor-text: "追加レッスン：文書クラスを利用したデザインの変更"
 ---
-Translation to be added _after_ English text completed.
+
+## ジャーナル専用クラス
+
+多くの学術ジャーナルが投稿用のLaTeX文書クラスを提供しています。そうしたクラスの多くは最終的なジャーナルの出来栄えに近いレイアウトを実現するための設定を行います。ただし実際のレイアウトは使用するフォントなどにも依存します。そのような文書クラスが利用可能な場合、通常そのクラスは当該の編集局によって直接配布されており、そのクラスが持つ機能についても適切な説明が付与されているはずです。また、そうした多くの文書クラスは[CTAN](https://ctan.org)や標準的なTeXディストリビューションにも含まれています。
+
+## プレゼンテーションのためのクラス
+
+特別な機能が必要な場面の1つはプレゼンテーション用スライドの作成です。標準の`slides`クラスは「古典的」な印刷スライドを作成するために作成されたもので、スクリーン表示のためのプレゼンテーション用の特殊機能は何もサポートしていません。そうした目的のために開発されたクラスのうち、広く使用されているものは`beamer`と`powerdot`です。おそらく`beamer`の方がより一般的なので、以下にはそのコードの一例を示します。
+
+```latex
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{beamer}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{frame}
+  \frametitle{最初のフレーム}
+  何らかのテキスト
+\end{frame}
+
+\begin{frame}
+  \frametitle{第2のフレーム}
+  別のテキスト
+  \begin{itemize}
+    \item<1-> 最初のアイテム
+    \item<2-> 第2のアイテム
+  \end{itemize}
+\end{frame}
+
+\end{document}
+```
+
+上のコード例には、2つの重要なアイデアが含まれています。第一に`beamer`では文書はフレームごとに分割されます。各フレームは1スライド（ページ）以上を構成します。第二に、`beamer`は通常の LaTeX 記法に加えて、スライドの一部を「少しずつ」表示するための特殊な記法を提供します。この記法は高機能ですが、ここで紹介するには複雑すぎるので、他の文書を参照してください（例えば開発者による[ブログ記事](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/)（英語））。
+
+## 画像のためのクラス
+
+時としてLaTeXで画像（特にテキストが多いようなもの）を作成したいという場合があります。そのような場合は、目的とする画像コンテンツ以外のものが「ページ」に一切ない方が好都合です。このようなときは[`standalone`](https://ctan.org/pkg/standalone)クラスを使うと簡単です。この文書クラスは印刷されるコンテンツの周辺だけが入るように自動的に紙面サイズを設定してくれます。
+
+```latex
+\documentclass[dvipdfmx]{standalone}
+\begin{document}
+シンプルな文書：とても小さな紙面になります！
+\end{document}
+```

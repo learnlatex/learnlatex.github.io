@@ -70,6 +70,12 @@ defaults:
       label: "Français"
   -
     scope:
+      path: "ja"
+    values:
+      lang: "ja"
+      label: "日本語"
+  -
+    scope:
       path: "lt"
     values:
       lang: "lt"
@@ -116,4 +122,3 @@ defaults:
     values:
       lang: "zh-hant"
       label: "中文（繁體）"   
-

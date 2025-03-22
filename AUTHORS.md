@@ -29,4 +29,4 @@ The following people have made contributions to learnlatex.org:
 - Daniel Zhang
 - Tommaso Gordini
 - Jhonatan David Arias Quispe
-
+- Takuto Asakura

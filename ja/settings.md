@@ -1,39 +1,39 @@
 ---
 layout: "page"
 lang: "ja"
-title: Site Settings
+title: 設定
 permalink: /ja/settings
 ---
-# Site Settings (User Preferences) (JA)
 
-## Accept or Delete Cookies
+# サイト設定（ユーザ設定）
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+## Cookiesの許可と削除
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
+Cookiesはブラウザに保存される少量のデータです。本ウェブサイトはデフォルトではいかなるCookiesも使用しませんが、サイト設定を行う場合にはCookiesに保存する必要があります。
 
+以下のボタンによりCookiesを許可すると、このウェブサイトがCookiesを利用できるようになり、下記オプションが利用可能になります。
 
 {% include settings-accept.html 
-   accept="Accept Cookies"
-   reset= "Reset: Delete All Cookies"
+   accept="Cookiesを許可"
+   reset= "リセット：すべてのCookiesを削除"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+## デフォルト出力
+
+`% !TeX`による設定がない場合にTeXLive.netが結果出力をする方法（`return`）を指定します。
 
 {% include settings-return.html %}
 
+## デフォルトエンジン
 
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+`% !TeX`による設定がない場合にTeXLive.netとOverleafが使用すべきエンジン（`engine`）を指定します。（`-dev`や`context`オプションはOverleafでは無効です。）
+
+なお、デフォルトの「デフォルトエンジン」は日本語版に限りpLaTeXに設定されています（他のほとんどの言語では初期設定はpdfLaTeXです）。このオプションを用いてデフォルトエンジンを変更すると、その設定はサイト全体に反映されるので注意してください。特に、pLaTeX 以外のエンジンをデフォルトに設定すると、日本語版のほとんどのコード例はそのままでは正しく処理できなくなります。
 
 {% include settings-engine.html %}
 
+## エディタのテーマ
 
-## Editor Theme
-The theme used by the embedded ACE editor.
+埋め込みACEエディタのテーマを指定します。
 
 {% include settings-acetheme.html %}

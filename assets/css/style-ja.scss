@@ -26,122 +26,75 @@
 }
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
 
 
 /*----------------------------------------------------------------------------*/
 /*  # ROOT ELEMENT: VARIABLES - FONTS                                         */
 /*----------------------------------------------------------------------------*/
 :root {
-  --font_default-medium: 'NotoSans-Medium';
-}
-@font-face {
-  font-family: 'NotoSans-Medium';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Medium.woff2" | relative_url}}') format('woff2');
+    --font_default-medium: 'Noto Sans JP', 'sans-serif';
 }
 
 :root {
-  --font_default-medium-italic: 'NotoSans-MediumItalic';
-}
-@font-face {
-  font-family: 'NotoSans-MediumItalic';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-MediumItalic.woff2" | relative_url}}') format('woff2');
+    --font_default-medium-italic: 'Noto Sans JP', 'sans-serif';
 }
 
-:root {
-  --font_default-medium-semicondensed: 'NotoSans-SemiCondensedMedium';
-}
-@font-face {
-  font-family: 'NotoSans-SemiCondensedMedium';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-SemiCondensedMedium.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-regular: 'NotoSans-Regular';
-}
-@font-face {
-  font-family: 'NotoSans-Regular';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Regular.woff2" | relative_url}}') format('woff2');
+    --font_default-medium-semicondensed: 'Noto Sans JP', 'sans-serif';
 }
 
-:root {
-  --font_default-regular-italic: 'NotoSans-Italic';
-}
-@font-face {
-  font-family: 'NotoSans-Italic';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Italic.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-regular-semicondensed: 'NotoSans-SemiCondensedRegular';
-}
-@font-face {
-  font-family: 'NotoSans-SemiCondensedRegular';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-SemiCondensedRegular.woff2" | relative_url}}') format('woff2');
+    --font_default-regular: 'Noto Sans JP', 'sans-serif';
 }
 
-:root {
-  --font_default-light: 'NotoSans-Light';
-}
-@font-face {
-  font-family: 'NotoSans-Light';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Light.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-light-italic: 'NotoSans-LightItalic';
-}
-@font-face {
-  font-family: 'NotoSans-LightItalic';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-LightItalic.woff2" | relative_url}}') format('woff2');
+    --font_default-regular-italic: 'Noto Sans JP', 'sans-serif';
 }
 
-:root {
-  --font_default-light-semicondensed: 'NotoSans-SemiCondensedLight';
-}
-@font-face {
-  font-family: 'NotoSans-SemiCondensedLight';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-SemiCondensedLight.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-light-condensed: 'NotoSans-CondensedLight';
-}
-@font-face {
-  font-family: 'NotoSans-CondensedLight';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-CondensedLight.woff2" | relative_url}}') format('woff2');
+  --font_default-regular-semicondensed: 'Noto Sans JP', 'sans-serif';
 }
 
-:root {
-  --font_default-thin: 'NotoSans-Thin';
-}
-@font-face {
-  font-family: 'NotoSans-Thin';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-Thin.woff2" | relative_url}}') format('woff2');
-}
 
 :root {
-  --font_default-thin-italic: 'NotoSans-ThinItalic';
-}
-@font-face {
-  font-family: 'NotoSans-ThinItalic';
-  font-display: fallback;
-  src: url('{{"/assets/fonts/NotoSans-ThinItalic.woff2" | relative_url}}') format('woff2');
+    --font_default-light: 'Noto Sans JP', 'sans-serif';
 }
 
+
 :root {
-  --font_default-mono-regular: 'NotoMono-Regular';
+    --font_default-light-italic: 'Noto Sans JP', 'sans-serif';
+   
+}
+
+
+:root {
+    --font_default-light-semicondensed: 'Noto Sans JP', 'sans-serif';
+
+}
+
+
+:root {
+  --font_default-light-condensed: 'Noto Sans JP', 'sans-serif';
+}
+
+
+:root {
+  --font_default-thin: 'Noto Sans JP', 'sans-serif';
+}
+
+
+:root {
+  --font_default-thin-italic: 'Noto Sans JP', 'sans-serif';
+}
+
+
+:root {
+  --font_default-mono-regular: 'NotoMono-Regular', 'monospace';
 }
 @font-face {
   font-family: 'NotoMono-Regular';
@@ -170,6 +123,7 @@
 html {
   color: var(--color_black-0);
   font-family: var(--font_default-light);
+    font-weight: 300;
 }
 
 
@@ -195,6 +149,8 @@ html {
 p {
   color: var(--color_black-1);
   font-family: var(--font_default-light);
+  color: var(--color_black-2);
+  font-weight: 300;
   font-size: 1rem;
   margin: 0 0 .8rem;
 }
@@ -202,14 +158,13 @@ p {
 p b,
 p strong {
   font-family: var(--font_default-regular);
-  color: var(--color_black-2);
-  font-weight: normal;
+  font-weight: 700;
 }
 
 p i,
 p em {
   font-family: var(--font_default-light-italic);
-  font-style: normal;
+      font-weight: 400;
 }
 
 .footnote,
@@ -285,6 +240,7 @@ hr {
         color: var(--color_grey-2);
         display: inline;
         font-family: var(--font_default-light);
+    font-weight: 300;
         font-size: .7rem;
         line-height: 1.4;
         margin: 0;
@@ -310,6 +266,7 @@ hr {
         box-shadow: inset 0 0.125rem 0.125rem 0 rgba(50, 50, 50, 0.5);
         color: var(--color_grey-3);
         font-family: var(--font_default-light);
+    font-weight: 300;
         font-size: .7rem;
         outline: none;
         padding: .15rem .43rem .1rem;
@@ -475,12 +432,15 @@ hr {
     background: var(--color_grey-4);
     display: table;
     font-family: var(--font_default-regular-semicondensed);
+    font-weight:400;
+    font-size: 90%;
     font-size: 1rem;
     margin: 0 0 .3rem 0;
     padding: .1rem 0;
     width: 100%;
     @media (max-width: 37rem) {
       font-family: var(--font_default-regular);
+      font-weight:400;
     }
   }
   &__numbering {
@@ -500,11 +460,14 @@ hr {
     color: var(--color_black-0);
     display: block;
     font-family: var(--font_default-light-semicondensed);
+    font-weight:300;
+    font-size: 90%;
     font-size: .8rem;
     line-height: 1.2rem;
     margin: 0 0 0 2.55rem;
     @media (max-width: 37rem) {
       font-family: var(--font_default-light);
+    font-weight: 300;
     }
   }
 }
@@ -586,14 +549,15 @@ hr {
     h1 {
       font-family: var(--font_default-light);
       font-size: 2em;
-      font-weight: normal;
+          font-weight: 300;
       margin: 0 0 0.6em;
     }
     h2.heading__introduction {
       border: none;
       font-family: var(--font_default-regular-semicondensed);
       font-size: 1.4rem;
-      font-weight: normal;
+         font-weight:400;
+    font-size: 90%;
       margin: 1.3em 0 0.5em;
       .anchorjs-link {
         display: none;
@@ -622,6 +586,8 @@ hr {
       &__heading {
         border-bottom: 0.01rem solid var(--color_grey-2);
         font-family: var(--font_default-regular-semicondensed);
+    font-weight:400;
+    font-size: 90%;
         font-size: 1.3rem;
         margin: 2.5rem 0 1.2rem;
         padding: 0 0 .8rem;
@@ -642,18 +608,23 @@ hr {
       border-bottom: 0.01rem solid var(--color_grey-2);
       font-family: var(--font_default-regular);
       font-size: 1.4rem;
-      font-weight: normal;
+      font-weight:400;
       margin: 1.5rem 0 1.2rem;
       padding: 0 0 .8rem;
     }
     .paragraph__toc {
       font-family: var(--font_default-light-semicondensed);
+    font-weight:300;
+    font-size: 90%;
       font-size: .9rem;
       b {
         font-size: var(--font_default-regular-semicondensed);
+    font-weight:400;
+    font-size: 90%;
       }
       @media (min-width: 52.5rem) { /* 840px */
         font-family: var(--font_default-light);
+    font-weight: 300;
         font-size: 1rem;
       }
     }
@@ -672,39 +643,43 @@ hr {
     h1 {
       font-family: var(--font_default-light);
       font-size: 2rem;
-      font-weight: normal;
+          font-weight: 300;
       margin: 0 0 1.6rem;
     }
     h2 {
       font-family: var(--font_default-regular);
       font-size: 1.4rem;
-      font-weight: normal;
+          font-weight:400;
       margin: 1.7rem 0 0.7rem;
     }
     h3 {
       font-family: var(--font_default-regular);
       font-size: 1.3em;
-      font-weight: normal;
+         font-weight:400;
       margin: 1.6rem 0 0.7rem;
     }
     h4 {
       font-family: var(--font_default-regular);
       font-size: 1.2rem;
+    font-weight:400;
       margin: 1.5rem 0 0.7rem;
     }
     h5 {
       font-family: var(--font_default-regular);
       font-size: 1.1rem;
       margin: 1.6rem 0 0.7rem;
+    font-weight:400;
     }
     h6 {
       font-family: var(--font_default-regular);
       font-size: 1rem;
       margin: 1.7rem 0 0.8rem;
+    font-weight:400;
     }
     p {
       color: var(--color_black-1);
       font-family: var(--font_default-light);
+    font-weight: 300;
       font-size: 1rem;
       margin: 0 0 1.2rem;
       &:last-of-type {
@@ -749,6 +724,7 @@ hr {
       background: var(--color_grey-0);
       color: var(--color_black-2);
       font-family: var(--font_default-regular);
+    font-weight:400;
       font-size: .6rem;
       margin: 0 0 1.5rem;
       padding: .1rem .2rem;
@@ -756,33 +732,36 @@ hr {
     h1 {
       font-family: var(--font_default-light);
       font-size: 2rem;
-      font-weight: normal;
+         font-weight: 300;
       margin: 0 0 1.6rem;
     }
     h2 {
       font-family: var(--font_default-regular);
+    font-weight:400;
       font-size: 1.4rem;
-      font-weight: normal;
       margin: 1.7rem 0 0.7rem;
     }
     h3 {
       font-family: var(--font_default-regular);
       font-size: 1.3em;
-      font-weight: normal;
+         font-weight:400;
       margin: 1.6rem 0 0.7rem;
     }
     h4 {
       font-family: var(--font_default-regular);
       font-size: 1.2rem;
+    font-weight:400;
       margin: 1.5rem 0 0.7rem;
     }
     h5 {
       font-family: var(--font_default-regular);
+    font-weight:400;
       font-size: 1.1rem;
       margin: 1.6rem 0 0.7rem;
     }
     h6 {
       font-family: var(--font_default-regular);
+    font-weight:400;
       font-size: 1rem;
       margin: 1.7rem 0 0.8rem;
     }
@@ -790,7 +769,8 @@ hr {
       display: block;
       font-family: var(--font_default-regular-semicondensed);
       font-size: 1.3rem;
-      font-weight: normal;
+       font-weight:400;
+    font-size: 90%;
       line-height: 1.6rem;
       margin: 1.5rem 0 2.4rem;
       code {
@@ -801,6 +781,7 @@ hr {
     p {
       color: var(--color_black-1);
       font-family: var(--font_default-light);
+    font-weight: 300;
       font-size: 1rem;
       margin: 0 0 1.2rem;
       &:last-of-type {
@@ -817,11 +798,13 @@ hr {
       &.hint {
         color: var(--color_black-2);
         font-family: var(--font_default-regular);
+    font-weight:400;
         font-size: .9rem;
         margin: 2.4rem .5rem 2.4rem .5rem;
         padding: 0 0 0 2.4rem;
         i {
           font-family: var(--font_default-regular-italic);
+    font-weight: 700;
         }
         &:before {
           content: "\f05a";
@@ -860,12 +843,14 @@ hr {
       th {
         border-bottom: 0.1rem solid var(--color_grey-2);
         font-family: var(--font_default-regular-semicondensed);
-        font-weight: normal;
+         font-weight:400;
+    font-size: 90%;
         padding: .5rem;
         text-align: left;
         vertical-align: top;
         small {
           font-family: var(--font_default-light);
+    font-weight: 300;
           font-size: .8rem;
         }
       }
@@ -1026,6 +1011,7 @@ button {
   color: var(--color_blue-0);
   cursor: pointer;
   font-family: var(--font_default-regular);
+    font-weight:400;
   font-size: .7rem;
   margin: .3rem .3rem .3rem 0;
   padding: .2rem .3rem;
@@ -1100,6 +1086,7 @@ iframe {
   &__heading {
     border-bottom: 0.01rem solid var(--color_grey-2);
     font-family: var(--font_default-regular);
+    font-weight:400;
     font-size: 1.2em;
     margin: 2.5rem 0 .8rem;
     padding: 0 0 .6rem;
