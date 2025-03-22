@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "es"
 title: "Estructura lógica de un documento"
-description: "Esta lección muestra algunos comándos básicos para dar formato al texto y los compara con el formato semántico, los comandos de sección y las listas."
+description: "Esta lección muestra algunos comandos básicos para dar formato al texto y los compara con el formato semántico, los comandos de sección y las listas."
 toc-anchor-text: "Estructura lógica de un documento"
 toc-description: "Estructura y presentación visual"
 ---
@@ -10,7 +10,7 @@ toc-description: "Estructura y presentación visual"
 # Estructura lógica de un documento
 
 <span
-  class="summary">Esta lección muestra algunos comándos básicos para dar formato al texto y los compara con el formato semántico, los comandos de sección y las listas.</span>
+  class="summary">Esta lección muestra algunos comandos básicos para dar formato al texto y los compara con el formato semántico, los comandos de sección y las listas.</span>
 
 LaTex proporciona herramientas para concentrarse en la estructura lógica de su documento, y también
 la capacidad de configurar directamente la apariencia del mismo. La mayor parte del tiempo, es mejor usar
@@ -21,7 +21,7 @@ de la apariencia del documento cuando lo necesite.
 
 Empezaremos con un ejemplo que compara uno de los comandos de marcado lógico
 más comunes en LaTeX, `\emph`, con simplemente poner algo en cursiva (en la impresión,
-ésta es la forma más usual de resaltar un texto).
+esta es la forma más usual de resaltar un texto).
 
 ```latex
 \documentclass{article}
@@ -59,7 +59,7 @@ largo del documento.
 \begin{document}
 ¡Hey mundo!
 
-Éste es un primer documento.
+Este es un primer documento.
 
 \section{Título de la primera sección}
 

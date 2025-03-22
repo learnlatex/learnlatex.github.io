@@ -2,14 +2,14 @@
 layout: "lesson"
 lang: "pt"
 title: "Veja mais sobre: Estrutura Lógica"
-description: "Esta lição mostra como definir o título de um documento, e como fazer listas desritivas."
+description: "Esta lição mostra como definir o título de um documento e como fazer listas desritivas."
 toc-anchor-text: "Veja mais sobre: Estrutura Lógica"
 ---
 
 ## Título do documento
 
 O LaTeX oferece marcação lógica para o título dos documentos: três comandos para
-configurar os 'meta dados', e um para usá-los:
+configurar os 'meta dados' e um para usá-los:
 
 ```latex
 \documentclass{article}

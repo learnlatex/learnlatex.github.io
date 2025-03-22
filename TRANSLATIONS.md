@@ -26,22 +26,22 @@ the top level of the repository as your fork will not be running at learnlatex.o
 
 ## Adding your language
 
-Once the initial site is working, you can make add the new language
+Once the initial site is working, you can add the new language
 files by taking the ISO 639-1 two letter language code for your
 language, which we shall assume is `zz`.  It may be necessary to use a
 two part name denoting the script, for example `zh-Hans` or `zh-Hant`
 (Simplified and Traditional Chinese) as specified in RFC 4646. We hope
-to avoid regional variants. For example the `en` ages mostly follow US
+to avoid regional variants. For example the `en` pages mostly follow US
 usage of English but we do not envisage separate `en-US` and `en-gb`
 pages.
 
 
-1. Make a new directory `zz` as a copy of the english pages in `en`, including the subdirectory `en/includes`
+1. Make a new directory `zz` as a copy of the English pages in `en`, including the subdirectory `en/includes`
 2. Add the two letter code `zz` to the `langs:` array in the `_config.yml` file.
 3. Change all instances of `en/` in `zz/index.md` to `zz/`
 4. Translate the fixed strings in `zz/includes/buttons.js` into your language.
    This is for the buttons used in examples such as "Open in Overleaf".
-5. Add a new enty in `_data/languages.yml` This should specify the
+5. Add a new entry in `_data/languages.yml`. This should specify the
    code, the name of your language in the language and in English, for example
    the French entry is
 
@@ -50,7 +50,7 @@ pages.
      label-regional: Français
      label-english: French
    ```
-6. Update each section of `_data/translations.yml` with the an entry for
+6. Update each section of `_data/translations.yml` with an entry for
    each of the fixed strings in the site. So for example the entry for "Next Lesson"
    should be amended to have a `zz:` entry:
 
@@ -66,7 +66,7 @@ pages.
      vi: "Bài tiếp theo"
      zz: "YOUR TRANSLATION HERE"
    ```
-   
+
 Note that if you want your translation to use localised digits for lesson numbers
 you may optionally add an entry to the `navigational-elements_digits` array
 with a string consisting of a comma separated list of numbers 0--20.
@@ -108,7 +108,7 @@ The variable names should not be changed but the values should be changed to you
 ## Lesson text.
 
 We ask that translations are fairly literal translations of the
-english text.  The intention is that the structure of the course and
+English text.  The intention is that the structure of the course and
 order and depth that subjects are introduced are the same for all the
 languages hosted on the site.
 

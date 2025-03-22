@@ -9,7 +9,7 @@ toc-anchor-text: "Veja mais sobre: Referências cruzadas"
 ## Transformando referências em links
 
 Você pode transformar suas referências em links usando o pacote `hyperref`.  Na
-maioria dos casos o `hyperref` deve ser carregado depois de quaisquer outros
+maioria dos casos, o `hyperref` deve ser carregado depois de quaisquer outros
 pacotes especificados no preâmbulo do documento.
 
 ```latex

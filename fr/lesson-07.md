@@ -4,7 +4,7 @@ lang: "fr"
 title: "Inclure des images et les faire « flotter »"
 description: "Cette leçon montre comment inclure des fichiers graphiques externes dans votre document, comment modifier leur apparence et comment les faire flotter automatiquement à l'endroit approprié du PDF."
 toc-anchor-text: "Les images"
-toc-description: "Apparance, espacement et positionnement."
+toc-description: "Apparence, espacement et positionnement."
 ---
 
 # Inclure des images et les faire « flotter »
@@ -132,12 +132,12 @@ Vous pouvez utiliser jusqu'à quatre spécificateurs de position :
 
 - `h` : ici, si possible (_**h**ere_),
 - `t` : en haut d'une page (_**t**op of a page_),
-- `b` : en bas d'une page (_**b**ttom of a page_),
+- `b` : en bas d'une page (_**b**ottom of a page_),
 - `p` : sur une page réservée pour les flottants (_**p**age_).
 
 [Plus tard](lesson-09), nous verrons comment faire référence à des flottants
 dans votre texte, afin que le lecteur puisse les trouver facilement même s'ils
-sont été déplacés de quelques pages par LaTeX.
+ont été déplacés de quelques pages par LaTeX.
 
 Vous avez sans doute remarqué qu'ici nous avons centré l'image en utilisant la
 commande `\centering` plutôt que l'environnement `center`. À l'intérieur d'un
@@ -148,7 +148,7 @@ chacun un espace vertical supplémentaire disgracieux.
 
 ## Travaux pratiques
 
-Essayez d'inclure une image que vous avez créée, en remplacement les images
+Essayez d'inclure une image que vous avez créée, en remplaçant les images
 standards que nous avons utilisées dans la démonstration.
 
 Explorez ce que vous pouvez faire en utilisant les options `height`, `width`,
@@ -158,6 +158,6 @@ Utilisez l'option `width` pour définir la taille d'une image par rapport à
 `\textwidth` et d'une autre par rapport à `\linewidth`. Essayez de voir comment
 ils se comportent avec ou sans l'option `twocolumn`.
 
-Utilisez le package `lipsum` pour constuire un exemple assez long, puis placez
+Utilisez le package `lipsum` pour construire un exemple assez long, puis placez
 des flottants en utilisant les différents spécificateurs de position. Comment
 les différents spécificateurs interagissent-ils entre eux ?

@@ -1,39 +1,46 @@
 ---
 layout: "page"
 lang: "de"
-title: Site Settings
+title: Seiteneinstellungen
 permalink: /de/settings
 ---
-# Site Settings (User Preferences) (DE)
+# Seiteneinstellungen (Benutzereinstellungen) (DE)
 
-## Accept or Delete Cookies
+## Cookies akzeptieren oder löschen
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+Cookies sind kleine Datensätze, die im Browser des Benutzers gespeichert werden.
+Standardmäßig werden keine Cookies von dieser Seite genutzt, allerdings werden
+alle Einstellungen, die hier getroffen werden, in Cookies gespeichert.
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
+Um Einstellung im folgenden Menü zu treffen und Cookies zu speichern, müssen
+Cookies akzeptiert werden.
 
 
 {% include settings-accept.html 
-   accept="Accept Cookies"
-   reset= "Reset: Delete All Cookies"
+   accept="Cookies akzeptieren"
+   reset= "Zurücksetzen: Alle Cookies löschen"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+## Standardrückgabe
+
+Die Form der Rückgabe über den `return` Parameter, die TeXLive.net benutzen
+soll, wenn keine direkte Wahl über `% !TeX` Kommentare im Beispiel getroffen
+wird.
 
 {% include settings-return.html %}
 
 
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+## Standardengine
+
+Die `engine` die von TeXLive.net oder Overleaf benutzt werden soll, wenn keine
+direkte Wahl über `% !TeX` Kommentare im Beispiel getroffen wird. (Die `-dev`
+und `context` Optionen sollten nicht mit Overleaf verwendet werden.)
 
 {% include settings-engine.html %}
 
 
-## Editor Theme
-The theme used by the embedded ACE editor.
+## Editorthema
+
+Das Thema, welches der eingebettete ACE-Editor verwendet.
 
 {% include settings-acetheme.html %}

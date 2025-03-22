@@ -38,7 +38,7 @@ entre corchetes, es usada en muchos comandos de LaTeX.
 
 ## Los tipos de documentos básicos 
 
-LaTeX dispone de una serie de tipos estandar, los cuales se asemejan entre sí, pero
+LaTeX dispone de una serie de tipos estándar, los cuales se asemejan entre sí, pero
 presentan algunas variaciones:
 
 - `article`: documentos cortos sin capítulos.
@@ -90,7 +90,7 @@ La American Mathematical Society aporta variantes de los tipos de documento est�
 (`amsart`, `amsbook`) con un diseño más tradicional, similar al usado en las
 publicaciones de revistas de matemáticas.
 
-Los dos tipos de documento más importantes y «extendidos» popularmente sont el 
+Los dos tipos de documento más importantes y «extendidos» popularmente son el 
 paquete KOMA-Script y el tipo memoir. KOMA-Script ofrece una serie de tipos de documento 
 con cierto paralelo a los estándar: `scrartcl`, `scrreprt` y `scrbook`, mientras que `memoir`
 es más bien una extensión de `book`. 
@@ -104,7 +104,7 @@ usted siempre puede adelantarse!
 
 El tipo de documento `slides` fue desarrollado para hacer diapositivas físicas 
 a mediados de los 80, con lo que no dispone de funciones para crear presentaciones interactivas
-en PDF. Existen otros tipos de documento más modernos que pueden hacelo: están de alguna manera
+en PDF. Existen otros tipos de documento más modernos que pueden hacerlo: están de alguna manera
 especializados si los comparamos con los documentos generales de LaTeX, así que [los abordaremos en el
 apartado de más detalles](more-05).
 

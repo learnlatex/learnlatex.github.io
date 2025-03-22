@@ -71,7 +71,7 @@ hemos elegido usar el nombre de uno de los autores y el año: comúnmente se hac
 
 Los campos que necesite especificar dependerán del tipo de registro, pero la mayoría de
 ellos son bastante obvios. Puede que haya notado que en el campo `author`, cada autor está 
-separado por la partícula `and`. Esto es _esential_: el archivo _final_ necesita conocer quién
+separado por la partícula `and`. Esto es _esencial_: el archivo _final_ necesita conocer quién
 es cada uno de los autores. Puede que haya notado igualmente que en el título del artículo,
 algunas partes están entre llaves; éstas se utilizan para evitar que se les aplique un cambio
 de mayúsculas o minúsculas.

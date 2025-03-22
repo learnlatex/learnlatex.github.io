@@ -20,9 +20,9 @@ Puede igualmente [notificar un problema o dar un consejo en GitHub](https://gith
 ## Impressum - Editor del sitio web
 
 <p>Joseph Wright<br>
-2, Dowthorpe End<br>
-Earls Barton<br>
-Northampton<br>
-NN6 0NH<br>
+14, Woodlands Chase<br>
+Witchford<br>
+Ely<br>
+CB6 2SB<br>
 United Kingdom<br>
-<br>joseph.wright@morningstar2.co.uk</p>
+<br>joseph@texdev.net</p>

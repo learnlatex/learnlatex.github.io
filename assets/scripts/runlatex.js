@@ -40,20 +40,9 @@ runlatex.preincludes={};
 // No cookies are set by this file even when true.
 runlatex.usecookies=true;
 
-// end of configuration
-
-var editors=[];
-
-const noeditregex = /^\s*[/%#\*]+ *!TEX.*[^a-zA-Z]noedit *(\n|$)/i;
-const norunregex = /^\s*([/%#\*]+ *!TEX.*[^a-zA-Z]none *|[^% \t\\][^\\]*)(\n|$)/i;
-const commentregex = / %.*/;
-const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|context|(pdf|xe|lua|u?p)?tex) *\n/i;
-const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log|make4ht|latexml|lwarp) *\n/i;
-const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
-
-var packageregex = [
+runlatex.packageregex = [
     [ /\\includegraphics/,                    "\\usepackage[demo]{graphicx}\n"],
-    [ /\\begin{equation|align|gather|flalign/,"\\usepackage{amsmath}\n"       ],
+    [ /\\begin{equation|align|gather|flalign|\\DeclareMathOperator/,"\\usepackage{amsmath}\n"       ],
     [ /tikz|pgf/,                             "\\usepackage{tikz}\n"          ],
     [ /fancy/,                                "\\usepackage{fancyhdr}\n"      ],
     [ /addplot|axis/,                         "\\usepackage{pgfplots}\n"      ],
@@ -65,6 +54,19 @@ var packageregex = [
     [ /color/,                                "\\usepackage{xcolor}\n"        ],
     [ /pspicture/,                            "\\usepackage{pstricks}\n"      ]
 ];
+
+// end of configuration
+
+var editors=[];
+
+const noeditregex = /^\s*[/%#\*]+ *!TEX.*[^a-zA-Z]noedit *(\n|$)/i;
+const norunregex = /^\s*([/%#\*]+ *!TEX.*[^a-zA-Z]none *|[^% \t\\][^\\]*)(\n|$)/i;
+const commentregex = / %.*/;
+const engineregex = /% *!TEX.*[^a-zA-Z](((pdf|xe|lua|u?p)?latex(-dev)?)|asy|context|(pdf|xe|lua|[ou]?p)?tex) *\n/i;
+const returnregex = /% *!TEX.*[^a-zA-Z](pdfjs|pdf|log|make4ht|latexml|lwarp) *\n/i;
+const bibregex = /% *!TEX.*[^a-zA-Z](p?bibtex8?|biber) *\n/i;
+const makeglossariesregex = /% *!TEX.*[^a-zA-Z](makeglossaries(-light)?) *\n/i;
+const makeindexregex = /% *!TEX.*[^a-zA-Z]makeindex( [a-z0-9\.\- ]*)\n/ig;
 
 
 var latexcompetions="";
@@ -175,6 +177,9 @@ function llexamples() {
 	    editor.setOption("minLines",runlatex);
 	    editor.setOption("maxLines",runlatex.editorlines);
 	    editor.setShowPrintMargin(false);
+	    // allow browser to handle tab use ctrl-] to tab indent in browser
+	    editor.commands.bindKey("Tab", null)
+	    editor.commands.bindKey("Shift-Tab", null)
 	    if(runlatex.completionsURI != ""){
 		langTools=ace.require("ace/ext/language_tools");
 		langTools.setCompleters([customCompleter]);
@@ -297,10 +302,14 @@ function generatepreamble(t,e) {
     } else {
 	e.insert("\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{article}\n");
     }
-    for(var i=0;i<packageregex.length; i++){
-	if(t.match(packageregex[i][0])) e.insert(packageregex[i][1]);
+    for(var i=0;i<runlatex.packageregex.length; i++){
+	if(t.match(runlatex.packageregex[i][0])) e.insert(runlatex.packageregex[i][1]);
     }
-    e.insert("\n\\begin{document}\n% "  + runlatex.texts["End Added Code"] + "\n\n");
+    if(t.match(/\\begin\{document\}/)){
+	e.insert("\n% "  + runlatex.texts["End Added Code"] + "\n\n");
+    } else {
+	e.insert("\n\\begin{document}\n% "  + runlatex.texts["End Added Code"] + "\n\n");
+    }
     e.navigateFileEnd();
     e.insert("\n\n% " +
 	     runlatex.texts["Added Code"] +
@@ -365,6 +374,14 @@ function latexcgi(nd) {
     } else {
 	rtnv=rtn[1].toLowerCase();
 	addinput(fm,"return",rtnv);
+    }
+    var bibcmd = t.match(bibregex);
+    if(bibcmd != null) {
+	addinput(fm,"bibcmd",bibcmd[1].toLowerCase());
+    }
+    var makegcmd = t.match(makeglossariesregex);
+    if(makegcmd != null) {
+	addinput(fm,"makeglossaries",makegcmd[1].toLowerCase());
     }
     var mki = makeindexregex.exec(t);
     while (mki != null) {

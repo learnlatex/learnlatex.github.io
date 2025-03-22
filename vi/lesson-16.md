@@ -61,7 +61,7 @@ như vậy thường cung cấp nhiều thông tin hơn những gì ta nói tớ
 bởi các thành viên. Hai cuốn đáng chú ý nhất là [Hướng dẫn sử dụng LaTeX của
 Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
 (ta còn nhớ trong [bài này](more-01) rằng Lamport chính là cha đẻ của LaTeX),
-hay [LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992).
+hay [LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
 
 Một vài cuốn sách khác có nội dung tương tự:
 

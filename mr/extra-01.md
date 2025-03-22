@@ -51,12 +51,9 @@ toc-description: "पुढील अभ्यासासाठीची उद
 
 मेमॉयर लाटेक्-वर्गाचे उदाहरण देण्याकरिता एका मराठी कवितेची अक्षरजुळणी करून दाखवत आहोत.
 
-<p class="hint">
-हे उदाहरण मेमॉयरच्या दस्तऐवजातील नाही आहे.
-</p>
-
-<!-- This code example has been translated, so is not included like the others
-     It also requires lualatex which the others don't --->
+<!-- This code example has been translated, so is not
+     included like the others. It also requires lualatex
+     which the others don't --->
 
 <!-- {% raw %} -->
 ```latex
@@ -85,7 +82,9 @@ toc-description: "पुढील अभ्यासासाठीची उद
 <!-- {% endraw %} -->
 
 <p class="hint">
-सौजन्य: लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर (https://ctan.org/pkg/latex-mr)
+हे उदाहरण मेमॉयरच्या दस्तऐवजातील नाही आहे.<br>
+सौजन्य: लाटेक् आणि पॉलिग्लॉसियाची ओळख - रोहित होळकर
+([https://ctan.org/pkg/latex-mr](https://ctan.org/pkg/latex-mr))
 </p>
 
 

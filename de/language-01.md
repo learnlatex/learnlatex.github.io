@@ -24,8 +24,8 @@ Dokumentbestandteile automatisch ins Deutsche übersetzt, wie etwa
 
 Damit die Silbentrennung in `pdflatex` auch in Wörtern mit Umlauten
 funktioniert, muss unbedingt das Paket `fontenc` mit der Option `T1` verwendet
-werden. In `xelatex` und `lualatex` ist das nicht erforderlich, vielmehr sollte
-das `fontspec`-Paket in diesen Engines nicht geladen werden.
+werden. Wichtig: in `xelatex` und `lualatex` sollte `fontenc` nicht geladen werden, das es für 8-bit Engines entwickelt wurde!
+Das Font-Encoding in den Unicode-Engines `xelatex` und `lualatex` ist immer `TU` und sollte nicht verändert werden. Mit diesem Encoding funktioniert die Silbentrennung korrekt.
 
 Für deutsche Anführungszeichen empfiehlt sich das sehr flexible Paket
 [`csquotes`](https://texdoc.org/pkg/csquotes), das sich ebenfalls an die

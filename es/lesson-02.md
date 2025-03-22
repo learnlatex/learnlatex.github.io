@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "es"
 title: "Trabajando con LaTeX"
-description: "Esta lección explica lo qué es un sistema TeX y cuáles son los más frecuentes. Se citan algunos de los editores de LaTeX más comunmente usados, y los sistemas en línea que disponen de editores integrado."
+description: "Esta lección explica lo que es un sistema TeX y cuáles son los más frecuentes. Se citan algunos de los editores de LaTeX más comúnmente usados, y los sistemas en línea que disponen de editores integrado."
 toc-anchor-text: "Trabajando con LaTeX"
 toc-description: "Sistemas TeX y editores de LaTeX"
 ---
@@ -10,7 +10,7 @@ toc-description: "Sistemas TeX y editores de LaTeX"
 # Trabajando con LaTeX
 
 <span
-  class="summary">Esta lección explica lo qué es un sistema TeX y cuáles son los más frecuentes. Se cita algunos de los editores de LaTeX más comunmente usados, y los sistemas en línea que disponen de editores integrado.</span>
+  class="summary">Esta lección explica lo qué es un sistema TeX y cuáles son los más frecuentes. Se citan algunos de los editores de LaTeX más comúnmente usados, y los sistemas en línea que disponen de editores integrado.</span>
 
 
 A diferencia de muchos programas, LaTeX no es una simple aplicación que contiene
@@ -46,15 +46,15 @@ editados por cualquier editor de texto. Sin embargo, es más conveniente utiliza
 un editor de texto concebido para trabajar con LaTeX, ya que le ofrecerá funcionalidades
 útiles como: compilar archivos, visualizar los PDF resultantes y resaltar la sintaxis. Una
 funcionalidad verdaderamente útil en los editores modernos de LaTeX es SyncTex: el poder pulsar 
-en su código fuente e ir a la posición correspondiente en el PDF resultante y viceversa.   
+en su código fuente e ir a la posición correspondiente en el PDF resultante, y viceversa.   
 
-Existen muchos editores de LaTeX que podemos esperar encontrar aquí: 
+Existen muchos editores de LaTeX que podemos esperar encontrar, aquí: 
 [hay una lista completa en StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
 Un editor básico, [TeXworks](https://tug.org/texworks), está incluido en las distribuciones
 TeX Live y MikTeX para Windows y Linux; y [TeXShop](https://pages.uoregon.edu/koch/texshop/)
 forma parte de MacTeX.  
 
-Sea cual sea el editor que elija, le recomentamos instalarlo _después_ de instalar el 
+Sea cual sea el editor que elija, le recomendamos instalarlo _después_ de instalar el 
 sistema TeX, de forma que el editor «localice» el sistema TeX y lo configure automáticamente. 
 
 ## Trabajando en línea
@@ -72,7 +72,7 @@ Hay sistemas que le permiten ejecutar LaTeX sin necesidad de registrarse. Nosotr
 vamos a usar uno de ellos: 
 [TeXLive.net](https://texlive.net), que le permitirá
 editar y probar los ejemplos que le daremos. Para actividades más complejas, los mejores
-sistemas en línea requieren que se registre antes de usarlos. Esto le permitira a usted guardar
+sistemas en línea requieren que se registre antes de usarlos. Esto le permitirá a usted guardar
 su trabajo y a los sitios web el evitar estar sobrecargados. Hemos configurado
 algunos enlaces que le permiten editar los ejemplos usando [Overleaf](https://www.overleaf.com), 
 uno de los mejores sitios en línea de LaTeX. Hay otros, por supuesto:  

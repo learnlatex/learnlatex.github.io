@@ -72,7 +72,7 @@ específico sobre los márgenes.
 
 % ================
 \chapter{Capítulo Uno}
-Introducción al priñer capítulo.
+Introducción al primer capítulo.
 
 
 \section{Título de la primera sección}
@@ -104,7 +104,7 @@ paquetes más comunes en las siguientes lecciones.
 
 ## Ejercicios
 
-Pruebe a escribir un texto en otras lenguas europeas y vea como `babel` gestiona la
+Pruebe a escribir un texto en otros idiomas europeos y vea como `babel` gestiona la
 separación silábica: podrá seguramente encontrar un texto en internet, y adivinar
 las opciones correctas.
 

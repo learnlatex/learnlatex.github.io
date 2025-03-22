@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Trabalhando com LaTeX"
-description: "Esta lição explica o que é um sistema TeX e quais os mais comuns, lista alguns dos editores de texto comumente utilizados para LaTeX, e os sistemas online que contam também com editores integrados."
+description: "Esta lição explica o que é um sistema TeX e quais os mais comuns, lista alguns dos editores de texto comumente utilizados para LaTeX e os sistemas online que contam também com editores integrados."
 toc-anchor-text: "Trabalhando com LaTeX"
 toc-description: "Sistemas TeX e editores de texto."
 ---
@@ -11,7 +11,7 @@ toc-description: "Sistemas TeX e editores de texto."
 
 <span
   class="summary">Esta lição explica o que é um sistema TeX e quais os mais
-  comuns, lista alguns dos editores de texto comumente utilizados para LaTeX,
+  comuns, lista alguns dos editores de texto comumente utilizados para LaTeX
   e os sistemas online que contam também com editores integrados.</span>
 
 Diferente de muitos programas de computador, o LaTeX não é uma única aplicação
@@ -46,17 +46,16 @@ sistema instalar, você escolha o TeX Live.
 Arquivos LaTeX são arquivos de texto simples, então podem ser editados com
 qualquer editor de texto.  No entanto, é conveniente ter um editor projetado
 para trabalhar com o LaTeX, pois eles têm funcionalidades como compilação em
-um clique dos seus arquivos, visualizadores de PDF embutidos, e realce de
+um clique dos seus arquivos, visualizadores de PDF embutidos e realce de
 sintaxe.  Uma funcionalidade muito útil em todos os editores modernos de LaTeX
 é o SyncTeX:  a habilidade de clicar no seu código fonte e ir direto para aquele
-local exato no PDF, e vice-versa.
+local exato no PDF e vice-versa.
 
 Há muito mais editores de LaTeX do que podemos listar aqui:  há uma [lista
-compreensiva no StackExchange]
-(https://tex.stackexchange.com/questions/339/latex-editors-ides).
+abrangente no StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
 Um editor básico, [TeXworks](https://tug.org/texworks), é distribuído no
 TeX Live e no MiKTeX, tanto para Windows como para Linux, e o
-[TeXShop](https://pages.uoregon.edu/koch/texshop/) é istribuído com o MacTeX.
+[TeXShop](https://pages.uoregon.edu/koch/texshop/) é distribuído com o MacTeX.
 
 <p
   class="hint">
@@ -68,7 +67,7 @@ TeX Live e no MiKTeX, tanto para Windows como para Linux, e o
 
 Há vários sites poderosos, que lhe permitem não ter um sistema TeX
 ou editor instalados no seu computador.  Esses websites lhe permitem editar seus
-arquivos em uma página no navegador, e executam o LaTeX nos bastidores, e
+arquivos em uma página no navegador, executam o LaTeX nos bastidores e
 mostram o arquivo PDF produzido.
 
 Alguns desses sites combinam o LaTeX com funcionalidades similares a um
@@ -76,8 +75,8 @@ processador de texto, enquanto que outros são mais focados em deixar você ver
 o arquivo LaTeX fonte, assim fornecem uma experiência mais parecida com ter um
 sistema TeX local.
 
-Há sistemas que permitem que você execute o LaTeX sem precisar registar, e nós
-usamos um desses, o [TeXLive.net](https://texlive.net), que permite que você
+Há sistemas que permitem que você execute o LaTeX sem precisar se registrar, e
+nós usamos um desses, o [TeXLive.net](https://texlive.net), que permite que você
 edite e teste os exemplos que fornecemos.  Para trabalhos mais completos, os
 melhores sistemas online requerem que você registre-se antes de usá-los.  Isso
 lhe permite salvar seu trabalho, mas também ajuda que os sites não fiquem

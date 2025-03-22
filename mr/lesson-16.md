@@ -60,7 +60,7 @@ toc-description: "दस्तऐवजीकरण व मदत मिळव�
 लिहिलेली
 [लाटेक्-हस्तपुस्तिका](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838) 
 व
-[The LaTeX Companion](https://www.informit.com/store/latex-companion-9780201362992) हे
+[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489) हे
 पुस्तक.
 
 ह्यांव्यतिरिक्त इतर पुस्तके -
