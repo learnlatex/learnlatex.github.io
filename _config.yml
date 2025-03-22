@@ -110,8 +110,6 @@ defaults:
     values:
       lang: "ca"
       label: "Català"
-<<<<<<< HEAD
-=======
   -
     scope:
       path: "zh-hans"
@@ -124,5 +122,3 @@ defaults:
     values:
       lang: "zh-hant"
       label: "中文（繁體）"   
-
->>>>>>> upstream/main
