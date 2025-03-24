@@ -30,7 +30,7 @@ runlatex.completionsURI="";
 
 // debug by using https://httpbin.org/post
 // set to null to omit from interface
-runlatex.latexcgiURI="https://texlive.net/cgi-bin/latexcgi";
+runlatex.latexcgiURI="https://texlive.de/cgi-bin/latexcgi";
 runlatex.overleafURI="https://www.overleaf.com/docs";
 
 // per page setup
