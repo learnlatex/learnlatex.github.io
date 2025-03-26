@@ -1,34 +1,33 @@
 ---
 layout: "page"
 lang: "el"
-title: Privacy Policy
+title: Πολιτική απορρήτου
 permalink: /el/privacy
 ---
-# Privacy Policy
+# Πολιτική απορρήτου
 
-## User Data
+## Δεδομένα χρηστών
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+Το LearnLaTeX.org δεν απαιτεί είσοδο (login) από τους χρήστες και δεν αποθηκεύει δεδομένα των χρηστών του.
+Καθώς ο ιστότοπος φιλοξενείται στα GitHub Pages, καμία πληροφορία σχετικά με τη δραστηριότητα των χρηστών
+δεν είναι διαθέσιμη στους διαχειριστές του ιστοτόπου. Ο ιστότοπος δεν χρησιμοποιεί καμία υπηρεσία
+παρακολούθησης όπως τα Google Analytics.
 
 ## Cookies
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
+Από προεπιλογή ο ιστότπος δεν χρησιμοποιεί καθόλου cookies. Όπως αναφέρεται στη σελίδα
+[Ρυθμίσεις ιστοτόπου](settings), οι χρήστες μπορούν προαιρετικά να αποδεχτούν cookies
+και να αποθηκεύσουν προτιμήσεις. Τα cookies που αποθηκεύουν προτιμήσεις (όπως η
+προεπιλεγμένη μηχανή TeX) _δεν_ παράγονται ούτε μεταδίδονται στον
+ιστότοπο LearnLaTeX.org αλλά παράγονται και αποθηκεύονται από την JavaScript
+που τρέχει στο πρόγραμμα περιήγησης του χρήστη.
 
-## External Sites
+## Εξωτερικοί ιστότοποι
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+Αν χρησιμοποιηθεί η επιλογή τρεξίματος των παραδειγμάτων σε μία διαδικτυακή υπηρεσία,
+τότε τα δεδομένα στον τρέχοντα επεξεργαστή κειμένου θα μεταδοθούν μέσω ενός αιτήματος https POST
+στην αντίστοιχη υπηρεσία και θα υπόκεινται στην πολιτική απορρήτου αυτής της εξωτερικής υπηρεσίας.
+Οι παρακάτω σύνδεσμοι αφορούν τις υπηρεσίες που χρησιμοποιούνται.
 
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
