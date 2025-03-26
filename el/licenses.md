@@ -1,29 +1,28 @@
 ---
 layout: "page"
 lang: "el"
-title: Licenses
+title: Άδειες χρήσης
 permalink: /el/licenses
 ---
 
-# Licenses
+# Άδειες χρήσης
 
-The [Learn LaTeX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+Ο [ιστότοπος Learn LaTeX]({{ "/" | absolute_url }}) χρησιμοποιεί 2 τύπους αδειών:
 
-## Content
+## Περιεχόμενο
 
-The content of this website is available under the
-[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license. That means you can use the material as long as you say where it came
-from and let others do the same.
+Το περιεχόμενου αυτού του ιστοτόπου παρέχεται με την άδεια
+[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Αυτό σημαίνει ότι μπορείτε να χρησιμοποιείτε το υλικό εφόσον αναφέρετε την προέλευσή του και επιτρέπετε και στους άλλους να κάνουν το ίδιο.
 
-See [LICENSE](../LICENSE) for details.
+Δείτε το αρχείο [LICENSE](../LICENSE) για λεπτομέρειες.
 
-## Code Examples
+## Παραδείγματα κώδικα
 
-The code examples are licensed as
+Τα παραδείγματα κώδικα παρέχονται με την άδεια
 [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
-(No Rights Reserved). This is a legal text that is (essentially) the same as 
-Public Domain, at least in countries where that concept exists. The key point 
-is that _you can use the examples without any issues_. You _do not_ need to 
-reference them, you _do not_ need to share them when you modify them: you can 
-just use them.
+(No Rights Reserved). Αυτό είναι ένα νομικό κείμενο το οποίο είναι (στην ουσία) όμοιο
+με το Κοινό Κτήμα (Public Domain), τουλάχιστον στις χώρες στις οποίες υφίσταται αυτός ο όρος. Το κύριο σημείο είναι ότι
+_μπορείτε να χρησιμοποιήσετε τα παραδείγματα χωρίς καμία προϋπόθεση_. _Δεν_ χρειάζεται να κάνετε
+αναφορά σε αυτά, _δεν_ χρειάζεται να τα κοινοποιήσετε αν τα τροποποιήσετε: μπορείτε
+απλώς να τα χρησιμοποιήσετε.

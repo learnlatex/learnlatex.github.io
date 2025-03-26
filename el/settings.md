@@ -1,39 +1,35 @@
 ---
 layout: "page"
 lang: "el"
-title: Site Settings
+title: Ρυθμίσεις ιστοτόπου
 permalink: /el/settings
 ---
-# Site Settings (User Preferences)
+# Ρυθμίσεις ιστοτόπου (προτιμήσεις χρήστη)
 
-## Accept or Delete Cookies
+## Αποδοχή ή διαγραφή cookies
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+Τα cookies είναι μικρά στοιχεία δεδομένων που αποθηκεύονται στο πρόγραμμα περιήγησης που χρησιμοποιείτε. Από προεπιλογή, αυτός ο ιστότοπος δεν χρησιμοποιεί cookies, όμως αν θέσετε κάποιες επιλογές από αυτή τη σελίδα θα αποθηκευτούν σε cookies.
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
-
+Αποδεχτείτε τα cookies εδώ για να ενεργοποιήσετε την χρήση cookies σε αυτό τον ιστότοπο και να ενεργοποιήσετε τις επιλογές που ακολουθούν.
 
 {% include settings-accept.html 
-   accept="Accept Cookies"
-   reset= "Reset: Delete All Cookies"
+   accept="Αποδοχή cookies"
+   reset= "Επαναφορά: Διαγραφή όλων των cookies"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+## Προεπιλεγμένη παράμετρος `return`
+Η παράμετρος `return` που θα χρησιμοποιηθεί στο TeXLive.net όταν δεν υπάρχει σχετική ρύθμιση μέσω σχολίου `% !TeX` στα παραδείγματα.
 
 {% include settings-return.html %}
 
 
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+## Προεπιλεγμένη μηχανή
+Η παράμετρος `engine` που θα χρησιμοποιηθεί στο TeXLive.net ή το Overleaf όταν δεν υπάρχει σχετική ρύθμιση μέσω σχολίου `% !TeX` στα παραδείγματα. (Οι επιλογές `-dev` και `context` δεν θα πρέπει να χρησιμοποιούνται στο Overleaf.)
 
 {% include settings-engine.html %}
 
 
-## Editor Theme
-The theme used by the embedded ACE editor.
+## Θέμα επεξεργαστή κειμένου
+Το θέμα που χρησιμοποιείται από τον ενσωματωμένο επεξεργαστή κειμένου (ACE editor).
 
 {% include settings-acetheme.html %}
