@@ -23,6 +23,10 @@
   label-regional: Français
   label-english: French
 
+- language-code: el
+  label-regional: Ελληνικά
+  label-english: Greek
+
 - language-code: it
   label-regional: Italiano
   label-english: Italian
