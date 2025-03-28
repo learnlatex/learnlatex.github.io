@@ -85,3 +85,22 @@ in `_data/languages.yml` will need to be extended to include the
 language.
 
 See also the [specific guidelines for translators](TRANSLATIONS.md).
+
+## Running the site on your computer
+
+You can run a local copy of the learnlatex.org site on your computer, to test 
+your contributions before submitting them to GitHub. For this you need:
+
+- [Ruby](https://www.ruby-lang.org/) (version 2.7.0 or higher) and RubyGems
+- [Jekyll](https://jekyllrb.com/)
+
+The provided `Gemfile` will take care of building the site and running it locally.
+
+After you have installed the above dependencies, open a terminal, `cd` to the folder of the site's code in your computer, and execute
+
+```bash
+bundle exec jekyll serve
+```
+
+to build and run the site.
+You can add the option `--incremental` at the end to make rebuiling the pages faster.
