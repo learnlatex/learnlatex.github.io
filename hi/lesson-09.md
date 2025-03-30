@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Cross-referencing"
+lang: "hi"
+title: "क्रॉस-रेफरेंसिंग"
 description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
-toc-anchor-text: "Cross-referencing"
-toc-description: "Refering to figures, tables, etc."
+toc-anchor-text: "क्रॉस-रेफरेंसिंग"
+toc-description: "आंकड़े, तालिकाओं आदि को रेफरेन्स(संदर्भित) करना"
 ---
 
-# Cross-referencing
+# क्रॉस-रेफरेंसिंग
 
 <span
   class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>

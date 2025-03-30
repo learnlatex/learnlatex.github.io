@@ -1,12 +1,12 @@
 ---
 layout: "page"
-lang: "en"
-title: Mission
-permalink: /en/mission
+lang: "hi"
+title: मिशन
+permalink: /hi/mission
 ---
 
-# Learn LaTeX Mission
+# लाटेक मिशन को जानें
 
-This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
+इस वेबसाइट का लक्ष्य आपको लाटेक के साथ पहला कदम उठाने में मदद करना है, जो उच्च गुणवत्ता वाले टाइपसेट आउटपुट का उत्पादन करने के लिए डिज़ाइन की गई एक दस्तावेज़ तैयारी की प्रणाली है। लाटेक नए उपयोगकर्ताओं के लिए डरावना हो सकता है क्योंकि यह एक वर्ड प्रोसेसर नहीं है, और क्योंकि यह कोई एकल प्रोग्राम नहीं है। यहां हमारा उद्देश्य आपको एक ही बार में सब कुछ दिखाने की कोशिश किए बिना शुरू से शुरुआत करने में मदद करना है।
 
-To do that, we have taken around 16 of the most important things you’ll need to know, and made them into short ‘lessons’. Each lesson is very focused, so they should not take too long to cover. In each lesson, we’ve given examples of what you’d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.
+ऐसा करने के लिए, हमने लगभग 16 सबसे महत्वपूर्ण चीजें ली हैं जिन्हें आपको जानना आवश्यक है, और उन्हें छोटे 'पाठों' में बनाया है। प्रत्येक पाठ अपने आप में अत्यधिक स्वकेंद्रित है, इसलिए उन्हें कवर करने में अधिक समय नहीं लगना चाहिए। प्रत्येक पाठ में, हमने उदाहरण दिए हैं कि आपको क्या लिखना चाहिए, और ये उदहारण सब समय उपलब्ध हैं ताकि आप इन्हें ऑनलाइन भी ट्राई कर सकें। सहायता अनुभाग में [उदाहरण कैसे काम करता है?](./help#examples) के बारे में और जानें।

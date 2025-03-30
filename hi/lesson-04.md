@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Logical structure"
+lang: "hi"
+title: "तार्किक संरचना"
 description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
-toc-anchor-text: "Logical structure"
-toc-description: "Structure and visual presentation."
+toc-anchor-text: "तार्किक संरचना"
+toc-description: "संरचना और प्रकट प्रस्तुति"
 ---
 
-# Logical structure
+# तार्किक संरचना
 
 <span
   class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>

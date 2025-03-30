@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Selecting fonts and using Unicode engines"
+lang: "hi"
+title: "फ़ॉन्ट का चयन और यूनिकोड इंजन का उपयोग"
 description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
-toc-anchor-text: "Fonts & Unicode engines"
-toc-description: "Selecting fonts and file encoding."
+toc-anchor-text: "फ़ॉन्ट और यूनिकोड इंजन"
+toc-description: "फ़ॉन्ट का चयन और फ़ाइल एनकोडिंग"
 ---
 
-# Fonts and Unicode engines
+# फ़ॉन्ट और यूनिकोड इंजन
 
 <span
   class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>

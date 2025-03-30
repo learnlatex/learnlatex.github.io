@@ -1,28 +1,35 @@
 ---
 layout: "page"
-lang: "en"
-title: Contact
-permalink: /en/contact
+lang: "hi"
+title: संपर्क
+permalink: /hi/contact
 ---
 
-# Contact
+# संपर्क
 
-## Individual Support
+## व्यक्तिगत मदद
 
-Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
+दुर्भाग्य से हमारे पास लाटेक समस्याओं पर व्यक्तिगत सहायता प्रदान करने के लिए संसाधन नहीं हैं और इसलिए हमसे व्यक्तिगत मदद माँगने वाले ईमेलों का जवाब नहीं दें पाएँगे। उपयोगकर्ता सहायता प्राप्त करने के तरीकों के लिए [लाटेक प्रोजेक्ट का सहायता पृष्ठ](https://www.latex-project.org/help/) देखें।
 
-## Website Team
 
-The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details.
+## वेबसाइट टीम
 
-You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+[इस वेबसाइट का स्रोत कोड] (https://github.com/learnlatex/learnlatex.github.io/) [गिटहब] (https://github.com/learnlatex/) पर है, कृपया विवरण के लिए [योगदान](../CONTRIBUTING) और [लाइसेंस](../LICENSE) पृष्ठ देखें।
 
-## Impressum
+आप सुझावों के साथ [गिटहब पर एक इशू शुरू कर सकते हैं] (https://github.com/learnlatex/learnlatex.github.io/issues) या [हमें ईमेल करें] (mailto:texfaq@texfaq.org) भी कर सकते हैं।
 
-<p>Joseph Wright<br>
-14, Woodlands Chase<br>
-Witchford<br>
-Ely<br>
-CB6 2SB<br>
-United Kingdom<br>
+
+## हिंदी अनुवाद
+
+यदि इस वेबसाइट पर उपलब्ध हिंदी अनुवाद के संबंध में कोई शिकायत या सुझाव है तो वेबसाइट अनुवादक विवेक त्रिपाठी को [ईमेल भेजें](mailto:sopan.tripathi@gmail.com)
+
+
+## इम्प्रेसम
+
+<p>जोसेफ राइट<br>
+14, वुडलैंड्स चेज़<br>
+विचफोर्ड<br>
+एली<br>
+सीबी6 2एसबी<br>
+यूनाइटेड किंगडम<br>
 <br>joseph@texdev.net</p>

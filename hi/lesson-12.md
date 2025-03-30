@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Citations and references"
+lang: "hi"
+title: "उद्धरण और संदर्भ"
 description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
-toc-anchor-text: "Citations & references"
-toc-description: "Working with reference databases."
+toc-anchor-text: "उद्धरण और संदर्भ"
+toc-description: "संदर्भ डेटाबेस के साथ कार्य करना"
 ---
 
-# Citations and references
+# उद्धरण और संदर्भ
 
 <script>
 runlatex.preincludes = {

@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Dealing with errors"
+lang: "hi"
+title: "एर्रोर्स (त्रुटियों) से निपटना"
 description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
-toc-anchor-text: "Error handling"
-toc-description: "Dealing with unexpected behaviors."
+toc-anchor-text: "त्रुटि प्रबंधन"
+toc-description: "अप्रत्याशित एर्रोर्स से निपटना."
 ---
 
-# Dealing with errors
+# एर्रोर्स (त्रुटियों) से निपटना
 
 <span
   class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>

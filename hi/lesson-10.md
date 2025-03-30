@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Mathematics"
+lang: "hi"
+title: "गणित"
 description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
-toc-anchor-text: "Mathematics"
-toc-description: "Math mode and mathematical notation."
+toc-anchor-text: "गणित"
+toc-description: "गणित मोड और गणितीय संकेतन"
 ---
 
-# Mathematics
+# गणित
 
 <span
   class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>

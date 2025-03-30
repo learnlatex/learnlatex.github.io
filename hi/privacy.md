@@ -1,34 +1,25 @@
 ---
 layout: "page"
-lang: "en"
-title: Privacy Policy
-permalink: /en/privacy
+lang: "hi"
+title: गोपनीयता नीति
+permalink: /hi/privacy
 ---
-# Privacy Policy
+# गोपनीयता नीति
 
-## User Data
+## उपयोगकर्ता डेटा
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+LearnLaTeX.org को उपयोगकर्ता लॉगिन की आवश्यकता नहीं है और यह उपयोगकर्ता-विशिष्ट डेटा संग्रहीत नहीं करता है।
 
-## Cookies
+चूंकि साइट गिटहब पेज पर होस्ट की गई है, इसलिए साइट उपयोगकर्ताओं की गतिविधियों के बारे में कोई भी जानकारी उपलब्ध नहीं है। साइट गूगल एनालिटिक्स जैसी किसी भी ट्रैकिंग सेवा का उपयोग नहीं करती है।
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
 
-## External Sites
+## कुकीज़
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+डिफ़ॉल्ट रूप से साइट किसी भी कुकीज़ का उपयोग नहीं करती है। जैसा कि [साइट सेटिंग](सेटिंग) पृष्ठ पर प्रलेखित है, उपयोगकर्ता वैकल्पिक रूप से कुकीज़ स्वीकार कर सकते हैं और अपनी प्राथमिकताएँ संग्रहीत कर सकते हैं। कुकीज़ में संग्रहित होने वाली प्राथमिकताएँ (जैसे डिफ़ॉल्ट टेक इंजन) _LearnLaTeX.org साइट से उत्पन्न या प्रेषित नहीं होती हैं, लेकिन उपयोगकर्ता के ब्राउज़र में चल रहे जावास्क्रिप्ट द्वारा उत्पन्न और संग्रहीत होती हैं।
 
-* [Overleaf](https://www.overleaf.com/legal)
-* [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
+
+## बाहरी साइटें
+
+यदि किसी ऑनलाइन सेवा पर उदाहरण चलाने का विकल्प उपयोग किया जाता है, तो वर्तमान संपादक में डेटा संबंधित सेवा को https POST अनुरोध के माध्यम से प्रेषित किया जाएगा और उस बाहरी सेवा की गोपनीयता नीति के अधीन होगा। निम्नलिखित लिंक वर्तमान में उपयोग की जाने वाली सेवाओं पर लागू होते हैं।
+* [ओवरलीफ](https://www.overleaf.com/legal)
+* [टेकलाइव.नेट](https://davidcarlisle.github.io/latexcgi/privacy)

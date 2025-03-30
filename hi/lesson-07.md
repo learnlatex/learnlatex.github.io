@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Including graphics and positioning"
+lang: "hi"
+title: "ग्राफिक्स शामिल करना और पोजिशनिंग करना"
 description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
-toc-anchor-text: "Using graphics"
-toc-description: "Appearance and positioning of graphics."
+toc-anchor-text: "ग्राफिक्स शामिल करना"
+toc-description: "ग्राफिक्स के स्वरूप और स्थिति की पोजिशनिंग करना"
 ---
 
-# Including Graphics and positioning
+# ग्राफिक्स शामिल करना और पोजिशनिंग करना
 
 <span
   class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>

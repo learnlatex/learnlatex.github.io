@@ -1,43 +1,41 @@
 ---
-layout: "start"
-lang: "en"
-title: Learn LaTeX online for free in beginner friendly lessons
-description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+layout: "प्रारंभ"
+lang: "hi"
+title: आरम्भिक मैत्रीपूर्ण पाठ के माध्यम से निःशुल्क ऑनलाइन लाटेक सीखें
+description: "16 शुरुआती अनुकूल पाठों के द्वारा लाटेक सीखें। लाटेक के साथ अपना पहला कदम उठाएँ, एक दस्तावेज़ तैयार करने की प्रणाली जिसे उच्च-गुणवत्ता वाले टाइपसेट आउटपुट का उत्पादन करने के लिए डिज़ाइन किया गया है।"
 permalink: /hi/
 ---
 
-# Learn LaTeX
+# लाटेक सीखें
 
-<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="heading__introduction">लाटेक के साथ अपना पहला कदम उठाएँ, एक दस्तावेज़ तैयारी करने की प्रणाली जिसे उच्च-गुणवत्ता वाले टाइपसेट आउटपुट का उत्पादन करने के लिए डिज़ाइन किया गया है।</h2>
 
 <div
   class="text-columns">
   <section>
-    <h3 class="text-columns__heading">Introduction</h3>
-    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
-    and because it is not a single program. Our aim is to help you get 
-    started with LaTeX: the basics, installation, writing code, without 
-    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+    <h3 class="text-columns__heading">भूमिका</h3>
+    <p>लाटेक नए उपयोगकर्ताओं के लिए डरावना हो सकता है क्योंकि यह वर्ड प्रोसेसर <em>नहीं</em> है, और इस लिए भी क्योंकि यह कोई एकल प्रोग्राम नहीं है। हमारा उद्देश्य आपको लाटेक सीखने में मदद करना है, जैसे कि: कुछ मूल बातें, इंस्टॉलेशन करना, कोड लिखना, <em>सब कुछ</em> एक बार में ही दिखाए बिना। <a href="./mission">हमारे मिशन के बारे में और अधिक जानें &hellip;</a></p>
   </section>
   <section>
-    <h3 class="text-columns__heading">How it works</h3>
-      <p>We have taken the most important things you will need to know, and made them into <em>16 short lessons</em>, which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run the examples in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+    <h3 class="text-columns__heading">यह काम कैसे करता है</h3>
+      <p>हमने उन सबसे महत्वपूर्ण बातों को लिया है जिन्हें आपको जानना ज़रूरी है, और उन्हें <em>16 छोटे पाठों</em> में बनाया है, जिन्हें कवर करने में ज़्यादा समय नहीं लगेगा। प्रत्येक पाठ में, आपको जो लिखना है हमने उसके बहुत सारे उदाहरण दिए हैं। आप इस वेबसाइट में ही उदाहरणों को संपादित एवं चला सकते हैं। <a href="./help#examples">उदाहरण पे कुछ और बातें &hellip;</a></p>
   </section>
 </div>
 
-<h2 class="heading__toc" id="toc">Lessons</h2>
+<h2 class="heading__toc" id="toc">पाठ</h2>
 
-<p class="paragraph__toc">We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+<p class="paragraph__toc">हमने प्रत्येक पाठ के साथ <b>इस विषय पर अधिक जानकारी</b> का पृष्ठ शामिल किया है। यह अतिरिक्त जानकारी आपको तब सहायता करेगी जब आपको विस्तृत जानकारी की आवश्यकता होगी, लेकिन यदि आपको इसकी आवश्यकता नहीं है तो यह आपके काम में बाधा नहीं बनेगी।
+</p>
 
 {% include toc-lessons.html prefix="hi/lesson" %}
 
-<h2 class="heading__toc">Additional lessons</h2>
+<h2 class="heading__toc">अतिरिक्त पाठ</h2>
 <ul class="lessons-toc">
   {% include toc-additional-lessons.html prefix="hi/language" %}
   {% include toc-additional-lessons.html prefix="hi/extra" %}
 </ul>
 
-## Going further
+## आगे के प्रशिक्षण के लिए
 
-Getting a book about LaTeX is the best way to learn the details. We cover getting more information, along with book recommendations, in the [last lesson](./lesson-16).
+लाटेक के बारे में कोई किताब पढ़ना, इसके विवरण को सीखने का सबसे अच्छा तरीका है। हम [अंतिम पाठ](./lesson-16) में किताब संस्तुतियों के साथ-साथ अधिक जानकारी प्राप्त करने पर चर्चा करेंगे।
 

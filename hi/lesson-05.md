@@ -1,14 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Using document classes to influence design"
+lang: "hi"
+title: "डिज़ाइन को प्रभावित करने के लिए दस्तावेज़ वर्गों का उपयोग करना"
 description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
-toc-anchor-text: "Document classes"
-toc-description: "Setting the general document layout."
+toc-anchor-text: "दस्तावेज़ वर्ग"
+toc-description: "सामान्य दस्तावेज़ लेआउट सेट करना"
 ---
 
-# Document classes
-
+# दस्तावेज़ वर्ग
 <span
   class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
 

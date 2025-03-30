@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Formatting: fonts and spacing"
+lang: "hi"
+title: "स्वरूपण: फ़ॉन्ट और स्पेसिंग"
 description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
-toc-anchor-text: "Fonts & spacing"
-toc-description: "Text formatting for visual presentation."
+toc-anchor-text: "फ़ॉन्ट और स्पेसिंग"
+toc-description: "प्रस्तुति के लिए टेक्स्ट का स्वरूपण"
 ---
 
-# Formatting: fonts and spacing
+# स्वरूपण: फ़ॉन्ट और स्पेसिंग
 
 <span
   class="summary">This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source.</span>

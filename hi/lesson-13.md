@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Structuring longer documents"
+lang: "hi"
+title: "लंबे दस्तावेज़ों की संरचना करना"
 description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
-toc-anchor-text: "Structuring sources"
-toc-description: "Spliting up sources in a controlled way."
+toc-anchor-text: "स्रोतों की संरचना करना"
+toc-description: "नियंत्रित तरीके से स्रोतों को विभाजित करना।"
 ---
 
-# Structuring longer documents
+# लंबे दस्तावेज़ों की संरचना करना
 
 <script>
 runlatex.preincludes = {

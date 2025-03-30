@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "What LaTeX is and how it works"
+lang: "hi"
+title: "लाटेक क्या है और यह काम कैसे करता है?"
 description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
-toc-anchor-text: "LaTeX basics"
-toc-description: "What LaTeX is and how it works."
+toc-anchor-text: "लाटेक की मूल बातें"
+toc-description: "लाटेक क्या है और यह काम कैसे करता है?"
 ---
 
-# LaTeX basics
+# लाटेक की मूल बातें
 
 <span
   class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>

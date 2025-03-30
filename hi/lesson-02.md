@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Working with LaTeX"
+lang: "hi"
+title: "लाटेक के साथ कार्य करना"
 description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
-toc-anchor-text: "Working with LaTeX"
-toc-description: "TeX systems and LaTeX text editors."
+toc-anchor-text: "लाटेक के साथ कार्य करना"
+toc-description: "टेक प्रणालियाँ और लाटेक पाठ संपादक।"
 ---
 
-# Working with LaTeX
+# लाटेक के साथ कार्य करना
 
 <span
   class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>

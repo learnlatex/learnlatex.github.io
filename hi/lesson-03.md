@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Basic LaTeX document structure"
+lang: "hi"
+title: "बेसिक लाटेक दस्तावेज़ संरचना"
 description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
+toc-anchor-text: "दस्तावेज़ संरचना"
+toc-description: "किसी दस्तावेज़ की मूल संरचना"
 ---
 
-# LaTeX document structure
+# लाटेक दस्तावेज़ संरचना
 
 <span
   class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>

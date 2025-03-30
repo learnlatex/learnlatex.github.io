@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Accessing documentation and getting help"
+lang: "hi"
+title: "दस्तावेज़ों तक पहुँचना और सहायता प्राप्त करना"
 description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
-toc-anchor-text: "Help & documentation"
-toc-description: "Accessing help and documentation."
+toc-anchor-text: "मदद और दस्तावेज़ीकरण"
+toc-description: "दस्तावेज़ीकरण और सहायता प्राप्त करना"
 ---
 
-# Documentation and getting help
+# दस्तावेज़ीकरण और सहायता प्राप्त करना
 
 <span
   class="summary">This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble.</span>

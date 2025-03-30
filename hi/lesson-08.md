@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Tables"
+lang: "hi"
+title: "टेबल"
 description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
-toc-anchor-text: "LaTeX tables"
-toc-description: "Fundamentals of working with tables."
+toc-anchor-text: "लाटेक टेबल"
+toc-description: "टेबल्स(तालिकाओं) के साथ काम करने की मूल बातें"
 ---
 
-# Tables
+# टेबल
 
 <span
   class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>

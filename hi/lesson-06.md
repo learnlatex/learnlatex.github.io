@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Extending LaTeX using packages and definitions"
+lang: "hi"
+title: "पैकेजों और परिभाषाओं का उपयोग करके लाटेक का विस्तार करना"
 description: "This lesson shows how you can extend LaTeX to your needs and change its layout further by using different packages, and shows how you can define your own commands."
-toc-anchor-text: "Extending LaTeX"
-toc-description: "Using packages and definitions."
+toc-anchor-text: "लाटेक का विस्तार करना"
+toc-description: "पैकेजों और परिभाषाओं का विस्तार करना"
 ---
 
-# Extending LaTeX
+# लाटेक का विस्तार करना
 
 <span
   class="summary">This lesson shows how you can extend LaTeX to your needs and change its layout further by using packages and definitions. It also shows how you can define your own commands.</span>
