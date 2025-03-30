@@ -35,6 +35,10 @@
   label-regional: Lietuviškai
   label-english: Lithuanian
 
+- language-code: hi
+  label-regional: हिंदी 
+  label-english: Hindi
+  
 - language-code: mr
   label-regional: मराठी
   label-english: Marathi
