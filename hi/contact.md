@@ -16,7 +16,7 @@ permalink: /hi/contact
 
 [इस वेबसाइट का स्रोत कोड] (https://github.com/learnlatex/learnlatex.github.io/) [गिटहब] (https://github.com/learnlatex/) पर है, कृपया विवरण के लिए [योगदान](../CONTRIBUTING) और [लाइसेंस](../LICENSE) पृष्ठ देखें।
 
-आप सुझावों के साथ [गिटहब पर एक इशू शुरू कर सकते हैं] (https://github.com/learnlatex/learnlatex.github.io/issues) या [हमें ईमेल करें] (mailto:texfaq@texfaq.org) भी कर सकते हैं।
+आप सुझावों के साथ [गिटहब पर एक इशू शुरू कर सकते हैं] (https://github.com/learnlatex/learnlatex.github.io/issues) या हमें [ईमेल](mailto:texfaq@texfaq.org) भी कर सकते हैं।
 
 
 ## हिंदी अनुवाद

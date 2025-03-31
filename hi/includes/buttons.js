@@ -7,6 +7,6 @@ runlatex.texts ={
     "edit":             "संपादन",
     "copy":             "कॉपी करें",
     "Added Code":       "जोड़ा गया कोड",
-    "End Added Code":   "जोड़े गए कोड को खत्म करें",
-    "Top Caption":      "संपादन कर यह उदाहरण रन करें:"
+    "End Added Code":   "जोड़े गए कोड को बंद करें",
+    "Top Caption":      "संपादन कर यह उदाहरण रन करें"
 }

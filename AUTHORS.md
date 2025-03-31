@@ -25,6 +25,7 @@ The following people have made contributions to learnlatex.org:
 - Joseph Wright
 - Dung Vu
 - Uwe Ziegenhagen
+- Vivek Tripathi (विवेक त्रिपाठी)
 - निरंजन
 - Daniel Zhang
 - Tommaso Gordini

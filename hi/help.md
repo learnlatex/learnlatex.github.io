@@ -1,9 +1,9 @@
 ---
 layout: "page"
-lang: "en"
-title: "Using the learnlatex.org site"
-description: "This page explains the learnlatex.org website itself and how to best make use of it."
-permalink: /en/help
+lang: "hi"
+title: "learnlatex.org साइट का उपयोग करना"
+description: "यह पृष्ठ learnlatex.org वेबसाइट के बारे में बताता है तथा यह भी बताता है कि इसका सर्वोत्तम उपयोग कैसे किया जा सकता है"
+permalink: /hi/help
 ---
 <script>
   function acesettings() {
@@ -11,118 +11,90 @@ permalink: /en/help
   }
 </script>
 
-# Help
+# मदद
 
+## साइट को नेविगेट करना
 
-## Navigating the site
+इस कोर्स में 16 मुख्य पाठ हैं, जिन्हें [प्रारंभ पृष्ठ](./) पर
+[पाठ तालिका]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) से पढ़ा जा सकता है।
 
-The course consists of 16 core lessons that can be reached from the
-[table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+प्रत्येक पाठ में उसी विषय से संबद्ध पाठ का लिंक है
+जो विषय का अधिक गहराई से विवरण करता है। अतिरिक्त पाठों को पढ़े बिना भी 
+सभी 16 पाठों को पूरा करना आपके लिए संभव होगा।
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 16 lessons _without_ reading the additional lessons.
-
-At the end of the course there are one or more lessons specific to the
-language being used for the lessons, and finally a gallery of examples
-of packages demonstrating LaTeX use not covered by this course.
+कोर्स के अंत में प्रत्येक पाठों के लिए उपयोग की जा रही भाषा से जुड़े एक या एक से अधिक विशिष्ट पाठ हैं, और अंत में लाटेक उपयोग को प्रदर्शित करने वाले वे पैकेज जिन्हें इस कोर्स द्वारा कवर नहीं किया गया है उनकी एक गैलरी भी दी गई है।
 
 ---
 
-## Examples
+## उदाहरण
 
-### Running the examples
+### उदाहरणों को चलाना
 
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+प्रत्येक उदाहरण में एक पूर्ण छोटा LaTeX दस्तावेज़ होता है जो पृष्ठ के अंदर इस प्रकार दिखाया जाता है:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Example text.
+उदाहरण टेक्स्ट
 \end{document}
 ```
 
-Each example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
+प्रत्येक उदाहरण अपने आप में पूर्ण है। हालाँकि अगर आप इसे संपादित करके इसमें छोटे-मोटे बदलाव करना चाहते हैं, तो पाठ के अंत में दिए गए 'अभ्यास सेट' का प्रयोग कर सकते हैं।
 
-The editor being used is [ACE](https://ace.c9.io/).
+इस वेबसाइट में [ऐस](https://ace.c9.io/) संपादक उपयोग किया जा रहा है।
 
-You may customise the theme used in the editor (for example using a
-dark theme with light text on a dark background) on the [Site Settings](settings) page.
-A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
-while on any example in the site. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
-
-The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+आप संपादक में उपयोग की जाने वाली थीम को [साइट सेटिंग्स](सेटिंग्स) से कस्टमाइज़ कर सकते हैं (उदाहरण के लिए, गहरे रंग की थीम जिसपर गहरे रंग की पृष्ठभूमि हो, उस पर हल्के रंग के टेक्स्ट का उपयोग करना) 
 
 
+विभिन्न थीम को प्रयोग करने का एक सुविधाजनक तरीका है <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> मैक पर)
+का उपयोग करना। [यह एक पैनल प्रदर्शित करता है](javascript:acesettings()) जो आपको सभी ACE सेटिंग्स को बदलने की अनुमति देता है।
 
-#### Three ways to run the example
+ACE रिपॉजिटरी में [संपादक कीबोर्ड शॉर्टकट का एक उपयोगी पृष्ठ](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts) है।
 
-* Use the Overleaf service
-* Use the TeXLive.net service
-* Use a locally installed TeX system
 
-##### Use the Overleaf service
+#### उदाहरण चलाने के तीन तरीके हैं:
 
-Overleaf is one of the most popular online LaTeX editing services. The 
-<button>Open in Overleaf</button> button, below the example, will submit the 
-code to [Overleaf](https://www.overleaf.com/about).
+* ओवरलीफ सेवा का उपयोग करना
+* TeXLive.net सेवा का उपयोग करना
+* खुद के मशीन (कंप्यूटर) पर इन्सटाल्ड TeX सिस्टम का उपयोग करना
 
-If you do not have an account, or the account details are not
-already cached in your browser, then you will be redirected to a
-login page where you may login or register with Overleaf. This is a
-free service but does require you to give some details and agree to
-terms and conditions.
 
-If your Overleaf account is already cached in your browser, then
-Overleaf will be opened in a new tab, with a new
-project with the code. You may then edit it in
-Overleaf which will simultaneously run LaTeX on your code showing
-the resulting output or error log.
+##### ओवरलीफ सेवा का उपयोग करना
 
-Unlike documents processed at TeXLive.net, you may save your project
-in your Overleaf account and return to it later.
+ओवरलीफ सबसे लोकप्रिय ऑनलाइन लाटेक संपादन सेवाओं में से एक है। उदाहरण के तौर पर नीचे दिया गया <button>ओवरलीफ में खोलें</button> बटन, आपको दिए गए कोड को [ओवरलीफ](https://www.overleaf.com/about) पर सबमिट करने की सक्षमता देगा।
 
-##### Use the TeXLive.net service
+यदि आपके पास कोई ओवरलीफ खाता नहीं है, या आपका खाता विवरण आपके ब्राउज़र के कैश (Cache) में नहीं है, तो आपको ओवरलीफ एक लॉगिन पृष्ठ पर पुनः जाने के लिए निर्देशित करेगा जहाँ आप ओवरलीफ के साथ लॉगिन या पंजीकरण कर सकते हैं। यह एक निःशुल्क सेवा है, लेकिन इसके लिए आपको कुछ विवरण देने और नियमों और शर्तों से सहमत होने की आवश्यकता होती है। 
 
-The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
-[TeXLive.net](https://texlive.net) service[^1].
+यदि आपका ओवरलीफ खाता आपके ब्राउज़र में पहले से कैश है, तो ओवरलीफ़ एक नए टैब में खुलेगा, जिसमें कोड के साथ एक नया प्रोजेक्ट होगा। फिर आप दिए गए कोड को ओवरलीफ में संपादित कर सकते हैं जो आपके कोड को लाटेक के साथ चलाने के साथ साथ परिणामी आउटपुट या त्रुटि लॉग दिखाएगा। TeXLive.net पर संसाधित दस्तावेज़ों के विपरीत, आप अपने प्रोजेक्ट को अपने ओवरलीफ खाते में सहेज कर (Save) रख सकते हैं और बाद में उस पर वापस भी आ सकते हैं।
 
-The TeXLive.net service was developed specifically to support this site, and
-in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
-to enable display of PDF on mobile and other browsers without built in PDF 
-readers.
 
-The resulting PDF document (or section of the error log) will be
-shown inline immediately below the example. A <button>Delete
-Output</button> button will be provided so that you may remove this output
-(or you may leave it in place and continue the rest of the lesson
-below).
+##### TeXLive.net सेवा का उपयोग करना
 
-Note that **TeXLive.net** requires no login or signup of any sort
-so it is very convenient for small examples, but this site
-provides no  mechanism to save your document. Any changes that you
-make to the example are lost if you move off the page.
+<button>TeXLive.net पर चलाएँ</button> बटन, नीचे दिए गए उदाहरण कोड को [TeXLive.net](https://texlive.net) सेवा[^1] पर सबमिट करेगा।
 
-##### Locally installed TeX system
+TeXLive.net सेवा को विशेष रूप से इस साइट के लिए विकसित किया गया था, जो
+[PDF.js](https://mozilla.github.io/pdf.js/) का उपयोग करके PDF को दिखाती है खास कर उन मोबाइल और अन्य ब्राउज़रों पर जिनमें पीडीएफ को प्रदर्शित करने के लिए कोई भी 'बिल्ट इन PDF रीडर' नहीं है।
 
-If you have a TeX system installed locally, then you may copy the
-example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor
-(<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
-in windows for example). This will place the code in your operating system
-clipboard so you can start a blank document using your local
-editor, and paste in the text.
+परिणामी PDF डॉक्यूमेंट (या त्रुटि लॉग का अनुभाग) उदाहरण के ठीक नीचे इनलाइन दिखाया जाएगा। आपको एक <button>डिलीट आउटपुट</button> बटन भी प्रदान किया जाएगा ताकि आप इस आउटपुट को डिलीट कर सकें (या आप इसे इसी जगह पर छोड़ कर नीचे दिए गए पाठ के बाकी हिस्से को पढ़ना जारी रख सकते हैं)।
 
-### Troubleshooting
+ध्यान दें कि **TeXLive.net** को किसी भी तरह के लॉगिन या साइनअप की आवश्यकता नहीं है
+इसलिए यह छोटे उदाहरणों के लिए बहुत सुविधाजनक है, लेकिन यह साइट
+आपके डॉक्यूमेंट को सहेज के रखने के लिए कोई तंत्र प्रदान नहीं करती है। यदि आप पृष्ठ से हट जाते हैं तो उदाहरण में आपके द्वारा किए गए कोई भी कोड परिवर्तन भी खो जाएँगे।
 
-Our examples are based around using an up-to-date LaTeX installation. They all 
-work with both of our online demonstration systems, so if you get errors with 
-the examples we provide, you might want to check if your LaTeX system is 
-up-to-date.
+
+
+##### खुद के मशीन (कंप्यूटर) पर इन्सटाल्ड TeX सिस्टम का उपयोग करना
+
+यदि आपके पास खुद की मशीन (कंप्यूटर) पर एक TeX संपादक सिस्टम स्थापित है, तो आप इस पृष्ठ से उदाहरण कोड की प्रतिलिपि (Copy) बना सकते हैं, या तो स्पष्ट रूप से पूरा सेलेक्ट कर सकते हैं, या संपादक में 'पूरे कोड का चयन' (उदाहरण के लिए विंडोज़ में <kbd> Ctrl</kbd> + <kbd> A</kbd> <kbd> Ctrl</kbd> + <kbd> C</kbd>) कीबोर्ड शॉर्टकट का प्रयोग कर सकते हैं । यह शॉर्टकट कोड को आपके ऑपरेटिंग सिस्टम के क्लिपबोर्ड में रखेगा ताकि आप अपने लोकल संपादक का उपयोग करके एक खाली डॉक्यूमेंट शुरू कर सकें, और टेक्स्ट के रूप में कोड को लोकल संपादक में पेस्ट कर सकें।
+
+
+
+### समस्या निवारण
+
+हमारे उदाहरण अप-टू-डेट लाटेक इंस्टॉलेशन का उपयोग करते हैं। वे सभी हमारे दोनों ऑनलाइन डेमो सिस्टम के साथ काम करते हैं, इसलिए यदि आपको हमारे द्वारा दिए गए उदाहरणों में त्रुटियाँ मिलती हैं, तो आप को सबसे पहले यह जाँचना चाहिए कि आपका लाटेक सिस्टम अप-टू-डेट है या नहीं।
+
 
 ---
 
