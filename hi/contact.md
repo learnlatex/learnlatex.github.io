@@ -14,14 +14,14 @@ permalink: /hi/contact
 
 ## वेबसाइट टीम
 
-[इस वेबसाइट का स्रोत कोड] (https://github.com/learnlatex/learnlatex.github.io/) [गिटहब] (https://github.com/learnlatex/) पर है, कृपया विवरण के लिए [योगदान](../CONTRIBUTING) और [लाइसेंस](../LICENSE) पृष्ठ देखें।
+इस वेबसाइट का [स्रोत कोड](https://github.com/learnlatex/learnlatex.github.io/) [गिटहब](https://github.com/learnlatex/) पर है, कृपया विवरण के लिए [योगदान](../CONTRIBUTING) और [लाइसेंस](../LICENSE) पृष्ठ देखें।
 
-आप सुझावों के साथ [गिटहब पर एक इशू शुरू कर सकते हैं] (https://github.com/learnlatex/learnlatex.github.io/issues) या हमें [ईमेल](mailto:texfaq@texfaq.org) भी कर सकते हैं।
+आप अपने सुझावों के साथ [गिटहब पर एक इशू शुरू कर सकते हैं](https://github.com/learnlatex/learnlatex.github.io/issues) या हमें [ईमेल](mailto:texfaq@texfaq.org) भी भेज सकते हैं।
 
 
 ## हिंदी अनुवाद
 
-यदि इस वेबसाइट पर उपलब्ध हिंदी अनुवाद के संबंध में कोई शिकायत या सुझाव है तो वेबसाइट अनुवादक विवेक त्रिपाठी को [ईमेल भेजें](mailto:sopan.tripathi@gmail.com)
+यदि इस वेबसाइट पर उपलब्ध हिंदी अनुवाद के संबंध में कोई शिकायत या सुझाव है तो हिंदी शाखा के क्यूरेटर विवेक त्रिपाठी को आप [ईमेल भेजें](mailto:sopan.tripathi@gmail.com)।
 
 
 ## इम्प्रेसम

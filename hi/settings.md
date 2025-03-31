@@ -1,39 +1,39 @@
 ---
 layout: "page"
-lang: "en"
-title: Site Settings
-permalink: /en/settings
+lang: "hi"
+title: साइट सेटिंग्स
+permalink: /hi/settings
 ---
-# Site Settings (User Preferences)
+# साइट सेटिंग्स (उपयोगकर्ताओं की प्राथमिकताएं)
 
-## Accept or Delete Cookies
+## कुकीज़ स्वीकार करें या हटाएँ
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+कुकीज़ डेटा के छोटे-छोटे टुकड़े होते हैं जो आपके ब्राउज़र द्वारा संग्रहीत किए जाते हैं।
+डिफ़ॉल्ट रूप से इस साइट द्वारा कोई कुकीज़ उपयोग नहीं की जाती हैं, लेकिन आपके विजिट से इस पृष्ठ पर सेट हुए विकल्पों को आपका ब्राउज़र कुकीज़ में संग्रहीत करता है।
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
-
+इस साइट पर कुकीज़ के उपयोग को सक्षम करने और नीचे दिए गए मेनू विकल्पों को सक्षम करने के लिए यहाँ कुकीज़ स्वीकार करें।
 
 {% include settings-accept.html 
    accept="Accept Cookies"
    reset= "Reset: Delete All Cookies"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+
+## डिफ़ॉल्ट रिटर्न
+सेटिंग की अनुपस्थिति में `% !TeX` टिप्पणियों के माध्यम से TeXLive.net उदाहरणों में `रिटर्न` फ़ॉर्म पैरामीटर का उपयोग करता है।
 
 {% include settings-return.html %}
 
 
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+
+## डिफ़ॉल्ट इंजन
+`इंजन` ऐसा फ़ॉर्म पैरामीटर जिसे TeXLive.net या Overleaf को उदाहरण में `% !TeX` टिप्पणियों के माध्यम से सेटिंग की अनुपस्थिति में उपयोग किया जाता है। (`-dev` और `context` विकल्पों का उपयोग Overleaf पर नहीं किया जाना चाहिए।)
 
 {% include settings-engine.html %}
 
 
-## Editor Theme
-The theme used by the embedded ACE editor.
+
+## संपादक थीम
+एम्बेडेड ACE संपादक द्वारा उपयोग की जाने वाली थीम-
 
 {% include settings-acetheme.html %}
