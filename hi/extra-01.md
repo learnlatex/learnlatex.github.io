@@ -53,7 +53,8 @@ LaTeX में एक्सटेंशन पैकेजों की एक 
 {% include extra-01-example-tikz.md %}
 
 
-## फलन(फंक्शन) प्लॉटिंग
+
+## फलन (फंक्शन) प्लॉटिंग
 
 पैकेज: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
