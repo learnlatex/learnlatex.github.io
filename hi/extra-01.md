@@ -1,8 +1,8 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "hi"
 title: "LaTeX शोकेस - आगे के अध्ययन के लिए उदाहरण"
-description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
+description: "यह पाठ अन्य लोकप्रिय LaTeX पैकेजों के उदाहरण दिखाता है जिन्हें इस वेबसाइट के मुख्य पाठों में शामिल नहीं किया गया है।"
 toc-anchor-text: "LaTeX शोकेस"
 toc-description: "आगे के अध्ययन के लिए उदाहरण"
 ---
@@ -10,63 +10,60 @@ toc-description: "आगे के अध्ययन के लिए उदा
 # LaTeX शोकेस
 
 <span
-  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
+  class="summary">यह पाठ अन्य लोकप्रिय LaTeX पैकेजों के उदाहरण दिखाता है जिन्हें इस वेबसाइट के मुख्य पाठों में शामिल नहीं किया गया है।</span>
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.org](https://texdoc.org).
-The examples are taken from the package documentation unless otherwise noted.
+इस कोर्स में LaTeX की मुख्य विशेषताओं का अवलोकन किया गया है।
+LaTeX में एक्सटेंशन पैकेजों की एक विशाल श्रृंखला है जिनका उपयोग कई विषय-क्षेत्रों में किया जाता है। यहाँ हम बगैर किसी विस्तृत व्याख्या के  बस कुछ पैकजों के उदाहरण दे रहे हैं जिनका वृहद् विवरण [texdoc.org](https://texdoc.org) पे उपलब्ध है। कोड उदाहरण भी पैकेज प्रलेखन से ही लिए गए हैं और यदि कहीं और से लिया गया है तो हमने यथा स्थान संदर्भ उल्लेखित कर दिया है।
 
 <p
-  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
+  class="hint">ध्यान दें कि यहाँ शामिल किए गए पैकेजों से हमारा उद्देश्य किसी पैकेज को अन्य पैकेजों की तुलना में समर्थन देना नहीं है। हमारा उद्देश्य केवल विविध क्षेत्रों की पैकेज श्रृंखलाओं को एक छोटा से नमूने द्वारा प्रस्तुत करना है जिन्हें हमने इस पाठ्यक्रम में शामिल नहीं किया है।</p>
 
-## Chemistry
+## रसायन विज्ञान
 
-Package: [`mhchem`](https://texdoc.org/pkg/mhchem)
+पैकेज: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
-## Linguistics
+## भाषा विज्ञान
 
-Package: [`forest`](https://texdoc.org/pkg/forest)
+पैकेज: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
-## Chess
+## शतरंज
 
 <!-- not 2017 -->
-Package: [`xskak`](https://texdoc.org/pkg/xskak)
+पैकेज: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
-## Poetry
+## पद्य
 
-Class: [`memoir`](https://texdoc.org/pkg/memoir)
+पैकेज: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 
-## Drawing
+## चित्रकला
 <!-- not 2017 -->
-Package: [`tikz`](https://texdoc.org/pkg/tikz)
+पैकेज: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
 
 
-## Function plotting
+## फलन(फंक्शन) प्लॉटिंग
 
-Package: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
+पैकेज: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
 
 
-## Music
+## संगीत
 
-Package: [`musixtex`](https://texdoc.org/pkg/musixtex)
+पैकेज: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 
