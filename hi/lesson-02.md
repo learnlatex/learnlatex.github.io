@@ -1,99 +1,87 @@
 ---
 layout: "lesson"
 lang: "hi"
-title: "लाटेक के साथ कार्य करना"
+title: "LaTeX के साथ कार्य करना"
 description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
-toc-anchor-text: "लाटेक के साथ कार्य करना"
-toc-description: "टेक प्रणालियाँ और लाटेक पाठ संपादक।"
+toc-anchor-text: "LaTeX के साथ कार्य करना"
+toc-description: "टेक प्रणालियाँ और LaTeX पाठ संपादक।"
 ---
 
-# लाटेक के साथ कार्य करना
+# LaTeX के साथ कार्य करना
 
-<span
-  class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
+<span class="summary">यह पाठ TeX सिस्टम क्या है, इसके प्रमुख प्रकार कौन-कौन से हैं, और LaTeX के साथ उपयोग किए जाने वाले टेक्स्ट एडिटर्स और ऑनलाइन सिस्टम के बारे में जानकारी देता है।</span>
 
 
-Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs that work together.
-We can divide those up into two things you actually need:
+अधिकांश अन्य कंप्यूटर प्रोग्रामों के विपरीत, LaTeX एकल सॉफ़्टवेयर नहीं है जिसमें सब कुछ शामिल हो। इसके बजाय, यह कई अलग-अलग प्रोग्रामों का एक समूह है जो मिलकर काम करते हैं।  
 
-- A _TeX system_
-- A text editor (often a LaTeX-specific one)
+LaTeX का उपयोग करने के लिए, आपको दो चीजों की आवश्यकता होगी:  
 
-## LaTeX systems
+- एक TeX सिस्टम  
+- एक टेक्स्ट एडिटर (आमतौर पर LaTeX-विशिष्ट एडिटर)  
 
-The core of working with LaTeX is having a TeX system available. A TeX system is a set
-of 'behind the scenes' programs and files that are needed to make LaTeX work, but
-most of the time you don't directly 'run' this.
 
-There are two major TeX systems available today,
-[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
-are available for Windows, macOS and Linux.
-MiKTeX has a strong background on Windows;
-on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).
-There are [advantages to each
-system](https://tex.stackexchange.com/questions/20036), and you might want to
-look at [some more advice from the LaTeX
-Project](https://www.latex-project.org/get/).
 
-As TeX Live is available on all common platforms, and as it has some performance
-advantages, we recommend that if you are unsure which system to install, you
-choose TeX Live.
+## LaTeX सिस्टम्स
+LaTeX के साथ काम करने के लिए एक TeX सिस्टम आवश्यक होता है। यह बैकग्राउंड में काम करने वाले प्रोग्रामों और फ़ाइलों का एक समूह होता है, जो LaTeX को कार्य करने में सहायता करता है। आमतौर पर उपयोगकर्ता इसे सीधे नहीं चलाते हैं।
 
-## Editors
 
-LaTeX files are simply plain text, so they can be edited with any text editor.
-However, it's most convenient to have an editor that is designed to work with
-LaTeX, as they provide features like one-click compilation of your files,
-built-in PDF viewers, and syntax highlighting. A really useful feature in all
-modern LaTeX editors is SyncTeX: the ability to click on your source and go
-straight to your PDF, or back the other way.
+### प्रमुख TeX सिस्टम्स  
+वर्तमान में दो मुख्य TeX सिस्टम्स उपलब्ध हैं: [MiKTeX](https://miktex.org/) और [TeX Live](https://tug.org/texlive)। दोनों ही Windows, macOS और Linux पर उपलब्ध हैं। MiKTeX का Windows पर एक मजबूत आधार है;  
+macOS पर, TeX Live को एक बड़े संग्रह में शामिल किया गया है, जिसे [MacTeX](http://www.tug.org/mactex/) कहा जाता है।  
+[प्रत्येक सिस्टम के अपने फायदे हैं](https://tex.stackexchange.com/questions/20036), और आप  
+[LaTeX प्रोजेक्ट से कुछ और सलाह](https://www.latex-project.org/get/) देखना चाह सकते हैं।  
 
-There are many more LaTeX editors than we can hope to list here: there is a
-[comprehensive list on
-StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
-and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
-is included in MacTeX.
+चूंकि TeX Live सभी सामान्य प्लेटफार्मों पर उपलब्ध है और इसमें कुछ कुछ कार्य के निष्पादन के बेहतर नतीजे मिलते हैं, इसलिए हम अनुशंसा करते हैं कि यदि आप यह तय नहीं कर पा रहे हैं कि कौन सा सिस्टम इंस्टॉल करें, तो आप TeX Live चुनें।
 
-<p 
-  class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
 
-## Working online
+## एडिटर्स  
 
-There are several powerful online sites that allow you to avoid
-the need to install a TeX system and LaTeX editor at all. These websites
-work by letting you edit your files in the webpage, then they run LaTeX
-behind the scenes, and display the PDF that is produced.
+LaTeX फ़ाइलें सामान्य प्लेन टेक्स्ट होती हैं, इसलिए उन्हें किसी भी टेक्स्ट एडिटर में संपादित किया जा सकता है।  
+हालांकि, LaTeX के साथ कार्य करने के लिए डिज़ाइन किए गए एडिटर्स का उपयोग करना अधिक सुविधाजनक होता है, क्योंकि वे आपके फ़ाइलों के लिए वन-क्लिक संकलन, बिल्ट-इन PDF व्यूअर्स, और सिंटैक्स हाइलाइटिंग जैसी सुविधाएँ प्रदान करते हैं। सभी आधुनिक LaTeX एडिटर्स में एक बहुत उपयोगी सुविधा होती है: SyncTeX, जो आपको 'स्रोत कोड से सीधे PDF पर जाने' या 'PDF से स्रोत कोड पर वापस आने' का अवसार प्रदान करता है।  
 
-Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focused on letting you see the LaTeX code and
-so are closer to having a local installation.
+LaTeX एडिटर्स की सूची बहुत लंबी है, लेकिन आप [StackExchange पर विस्तृत सूची](https://tex.stackexchange.com/questions/339/latex-editors-ides) देख सकते हैं।
+एक बेसिक एडिटर, [TeXworks](https://tug.org/texworks) Windows और Linux के TeX Live और MiKTeX में शामिल है,  
+जबकि [TeXShop](https://pages.uoregon.edu/koch/texshop/) MacTeX में शामिल है।
 
-There are systems that let you run LaTeX without needing to be logged in, and we
-are using one of those,
-[TeXLive.net](https://texlive.net), to let you
-edit and test the examples we give. For more complete work, the best online
-systems require that you register before you use them. That lets you save your
-work but also helps the sites not get overloaded. We have set up links so you
-can edit our examples using [Overleaf](https://www.overleaf.com), one of the
-major websites for LaTeX online. There are of course others:
-[Papeeria](https://papeeria.com/) is an example.
 
-## Working with others
+<p class="hint">आप जिस भी एडिटर को चुनें, हम अनुशंसा करते हैं कि आप उसे अपने TeX सिस्टम के बाद ही इंस्टॉल करें, ताकि एडिटर 'TeX सिस्टम को पहचान सके और खुद को सही तरीके से सेटअप कर सके।</p>
 
-If you are planning to send your LaTeX sources to destinations which process
-them, such as publishers, conference organisers or pre-print servers
-(e.g. arXiv), you should check what restrictions they impose.
 
-## Exercise
+## ऑनलाइन कार्य करना  
 
-Get yourself set up with a local LaTeX installation _or_ an account with
-an online LaTeX service. If you are using a local installation, you'll need
-to pick an editor too: we recommend starting with either TeXworks or TeX Shop
-(see above), then looking at other editors later once you know how _you_
-work best with LaTeX.
+कुछ शक्तिशाली ऑनलाइन साइटें उपलब्ध हैं, जो आपको TeX सिस्टम और LaTeX एडिटर इंस्टॉल किए बिना ही LaTeX का उपयोग करने की सुविधा देती हैं।  
+ये वेबसाइटें आपको वेबपेज पर ही अपनी फ़ाइलें संपादित करने देती हैं, फिर बैकग्राउंड में LaTeX को रन करती हैं और उत्पन्न होने वाले PDF को प्रदर्शित करती हैं।  
 
-You'll be able to [run all of our other exercises in your browser](help.md), but we want
-to help you get working with real documents, so now is a great time to get
-yourself ready.
+इनमें से कुछ साइटें LaTeX को वर्ड प्रोसेसर जैसी सुविधाओं के साथ जोड़ती हैं, जबकि कुछ अन्य LaTeX कोड को सीधे संपादित करने पर केंद्रित होती हैं,  
+जिससे यह स्थानीय (local) इंस्टॉलेशन के समान अनुभव प्रदान करता है।
+
+
+कुछ सिस्टम ऐसे हैं जो आपको बिना लॉग इन किए LaTeX चलाने की अनुमति देते हैं, और हम उनमें से एक,  
+[TeXLive.net](https://texlive.net), का उपयोग कर रहे हैं ताकि आप हमारे दिए गए उदाहरणों को संपादित और परीक्षण कर सकें।  
+
+अधिक विस्तृत कार्यों के लिए, सर्वश्रेष्ठ ऑनलाइन सिस्टम रजिस्ट्रेशन की आवश्यकता रखते हैं।  
+इससे आप अपना काम संभाल कर (save) रख सकते हैं और साथ ही यह साइटों को अधिक लोड से बचाने में मदद करता है।  
+
+हमने आपके लिए [Overleaf](https://www.overleaf.com) पर लिंक सेट किए हैं, जो ऑनलाइन LaTeX के लिए प्रमुख वेबसाइटों में से एक है।  
+इसके अलावा, [Papeeria](https://papeeria.com/) भी एक अन्य उदाहरण है।
+
+
+## दूसरों के साथ कार्य करना  
+
+यदि आप अपनी LaTeX स्रोत फ़ाइलों को उन जगहों पर भेजने की योजना बना रहे हैं जहां उनका प्रसंस्करण (processing) किया जाएगा,  
+जैसे कि प्रकाशक (publishers), सम्मेलन आयोजक (conference organisers), या प्री-प्रिंट सर्वर (उदाहरण: [arXiv](https://arxiv.org/)),  
+तो आपको पहले यह जांच लेना चाहिए कि वे लोग LaTeX स्रोत फ़ाइलों पर क्या प्रतिबंध (restrictions) लगाते हैं।  
+
+
+
+## अभ्यास (Exercise)  
+
+अपने लिए स्थानीय (local) LaTeX इंस्टॉलेशन सेट करें या किसी ऑनलाइन LaTeX सेवा पर खाता बनाएं।  
+
+यदि आप स्थानीय रूप से LaTeX का उपयोग कर रहे हैं, तो आपको एक एडिटर भी चुनना होगा।  
+हम शुरुआत के लिए TeXworks या TeXShop का सुझाव देते हैं (ऊपर देखें),  
+और बाद में, जब आप समझ जाएं कि आपके लिए कौन सा एडिटर सबसे अच्छा काम करता है, तो अन्य एडिटर्स भी देख सकते हैं।  
+
+आप [हमारे सभी अन्य अभ्यास अपने ब्राउज़र में चला सकते हैं](help.md),  
+लेकिन हम चाहते हैं कि आप वास्तविक डाक्यूमेंट्स पर कार्य करना शुरू करें,  
+इसलिए यह अपनी सेटअप प्रक्रिया शुरू करने का सबसे सही समय है।
