@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "LaTeX Showcase - Examples for further study"
+title: "LaTeX शोकेस - आगे के अध्ययन के लिए उदाहरण"
 description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
-toc-anchor-text: "LaTeX Showcase"
-toc-description: "Examples for further study."
+toc-anchor-text: "LaTeX शोकेस"
+toc-description: "आगे के अध्ययन के लिए उदाहरण"
 ---
 
-# Showcase
+# LaTeX शोकेस
 
 <span
   class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>

@@ -1,14 +1,14 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "Language-specifics for English"
+title: "हिंदी भाषा की विशिष्ट विशेषताएँ"
 description: "This lesson shows language-specific details for typesetting with LaTeX in English. The focus is on hyphenation, where UK and US traditions are different."
 next: "extra-01"
-toc-anchor-text: "English Language-specifics"
-toc-description: "Typesetting with LaTeX in English."
+toc-anchor-text: "हिंदी भाषा की विशिष्ट विशेषताएँ"
+toc-description: "हिंदी में LaTeX के साथ टाइपसेटिंग"
 ---
 
-# Language-specifics for English
+# हिंदी भाषा की विशिष्ट विशेषताएँ
 
 <span
   class="summary">This lesson shows language-specific details for typesetting with LaTeX in English with a focus on hyphenation, where UK and US traditions are different.</span>
