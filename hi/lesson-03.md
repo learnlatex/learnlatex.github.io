@@ -24,7 +24,7 @@ toc-description: "किसी डॉक्यूमेंट की मूल �
 %!TeX program = xelatex
 \documentclass{article}
 \usepackage{fontspec}  % Needed for setting Hindi fonts
-\setmainfont[Path=./assets/fonts/, Extension=.woff2]{NotoSans-Regular}
+\setmainfont[Path=assets/fonts/, Extension=.woff2]{NotoSans-Regular}
 %\setmainfont{Noto Sans Devanagari} % Ensure this font is installed
 
 \begin{document}
