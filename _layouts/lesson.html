@@ -4,7 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
-    <meta charset="utf-8">
+    <meta id="xxx" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="referrer" content="no-referrer">
     {% if site.title and site.title == page.title %}
@@ -26,17 +26,39 @@ layout: compress
 
     <link rel="canonical" href="https://www.learnlatex.org/{{ page.lang }}/">
 
+    {% if page.lang =="mr" or page.lang == "hi" %}
+      {% assign editor = "cm6" %}
+    {% else %}
+      {% assign editor = "ace" %}
+    {% endif %}
+    {% if page.editor %}
+      {% assign editor = page.editor %}
+    {% endif %}
+
+    
+    {% if editor == "cm6" %}
+    <!-- script to run latex start -->
+    <script src="{{ "/assets/scripts/runlatex-cm6.js" | relative_url}}"></script>
+    <!-- script to run latex end -->
+
+    <!-- ace editor and buttons start -->
+    {% include cm6-editor.html %}
+    <!-- ace editor and buttons end -->
+
+    {% else %} 
     <!-- script to run latex start -->
     <script src="{{ "/assets/scripts/runlatex.js" | relative_url}}"></script>
     <!-- script to run latex end -->
 
-    <!-- adding anchors to headings start 1/2 --> 
-    <script src="{{ "/assets/scripts/anchor.min.js" | relative_url }}"></script>
-    <!-- adding anchors to headings end 1/2 --> 
-
     <!-- ace editor and buttons start -->
     {% include ace-editor.html %}
     <!-- ace editor and buttons end -->
+
+    {% endif %}
+    
+    <!-- adding anchors to headings start 1/2 --> 
+    <script src="{{ "/assets/scripts/anchor.min.js" | relative_url }}"></script>
+    <!-- adding anchors to headings end 1/2 --> 
 
     <script>
       {% if site.title and site.title == page.title %}
