@@ -430,6 +430,14 @@ function latexcgi(nd) {
 
 
 
+function rlselectline (preid,n) {
+    if(editors[preid] != null)  {
+	const line = editors[preid].state.doc.line(n);
+	editors[preid].dispatch({
+	    selection: { head: line.from, anchor: line.to },
+	});
+    }
+}  
 
 
 var createCookie = function(name, value, days) {
@@ -494,5 +502,6 @@ function rlDeleteCookies() {
 }
 
 var rlallowcookies=getCookie('runlatex-cookies')=="true";
+
 
 window.addEventListener('load', llexamples, false);

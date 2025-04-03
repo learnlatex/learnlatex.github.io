@@ -420,6 +420,13 @@ function latexcgi(nd) {
 }
 
 
+// highlight line (1 based)
+function rlselectline (preid,n) {
+    if(editors[preid] != null)  {
+	editors[preid].moveCursorTo(n - 1, 0, false)
+    }
+}
+ 
 
 
 
