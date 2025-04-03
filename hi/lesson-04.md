@@ -4,24 +4,22 @@ lang: "hi"
 title: "तार्किक संरचना"
 description: "This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists."
 toc-anchor-text: "तार्किक संरचना"
-toc-description: "संरचना और प्रकट प्रस्तुति"
+toc-description: "संरचना और प्रस्तुति के लिए कुछ बुनियादी स्वरूपण (फॉर्मेटिंग)"
 ---
 
 # तार्किक संरचना
 
 <span
-  class="summary">This lesson shows some basic formatting commands, and compares them with semantic formatting with sectioning commands and lists.</span>
+  class="summary">यह पाठ कुछ बुनियादी स्वरूपण (फॉर्मेटिंग) कमांड दिखाता है और उनकी तुलना अर्थपूर्ण (सेमांटिक) स्वरूपण से करता है, जिसमें अनुभागीय (सेक्शनिंग) कमांड और सूची (लिस्ट) शामिल हैं। </span>
 
-LaTeX provides ways to concentrate on the logical structure of your document, as well as the
-ability to directly set the appearance. Most of the time, it's much better to use
-methods that focus on structure, as that makes it easy to reuse or alter
-appearance when you have to.
 
-## Structure and visual presentation
+LaTeX आपके दस्तावेज़ की तार्किक संरचना पर ध्यान केंद्रित करने के तरीके प्रदान करता है, साथ ही आपको सीधे उसकी उपस्थिति (appearance) सेट करने की क्षमता भी देता है। अधिकतर मामलों में, उन तरीकों का उपयोग करना बेहतर होता है जो संरचना पर ध्यान केंद्रित करते हैं, क्योंकि इससे आवश्यकतानुसार उपस्थिति को फिर से उपयोग करना या बदलना आसान हो जाता है।
 
-We'll start with an example contrasting one of the most common logical markup
-commands in LaTeX, `\emph`, with simply making something italic. (In print,
-that's usually how things are emphasized.)
+
+## संरचना और प्रस्तुति  
+
+हम एक उदाहरण से शुरुआत करेंगे, जिसमें LaTeX में सबसे आम तार्किक मार्कअप कमांड `\emph` की मदद से 'सीधे लिखे हुए टेक्स्ट' को 'तिरछा (इटैलिक)' बनाने से की जाएगी। इस प्रक्रिया को हम 'टेक्स्ट एम्फेसाईज (text emphasize)' करना भी कह सकते हैं। (मुद्रण में, आमतौर पर इसी तरह से टेक्स्ट को एम्फेसाईज किया जाता है।)
+
 
 ```latex
 \documentclass{article}
@@ -33,24 +31,16 @@ Some text in \textit{italic and \textit{nested} content}.
 \end{document}
 ```
 
-You can probably guess that `\textit` is a command to make text italic, but it
-_always_ makes things italic, so it doesn't work for nested material. See how
-`\emph` _does_ know about nesting. There are also places where the emphasis
-isn't the same as italic; for example, in presentations color is usually a better
-option. With logical markup, we don't have to worry about that detail in the
-body of the document.
+अब आप शायद यह भी अंदाजा लगा सकते हैं कि `\textit` भी एक ऐसा कमांड है जो टेक्स्ट को तिरछा (इटैलिक) बनाता है, लेकिन यह *हर स्थिति* में टेक्स्ट को इटैलिक नहीं बना देता है, जैसे कि यह नेस्टेड टेक्स्ट (आपस में अंदर-अन्दर जुड़े हुए कई कमांड्स से लिखे गए टेक्स्ट) के लिए ठीक से काम नहीं कर पाता है। ऐसी स्थिति में यह देखिये कि कैसे `\emph` को नेस्टिंग की जानकारी होती है और यह टेक्स्ट को सही तरीके से संभाल लेता है। इसके अलावा, कुछ स्थानों पर एम्फेसिस (emphasis) इटैलिक से बेहतर भी हो जाता है; उदाहरण के लिए, आमतौर पर प्रस्तुतियों(presentations) के रंग (color) को बदलने में एम्फेसिस एक बेहतर विकल्प होता है। लेकिन ध्यान दें कि जब हम तार्किक मार्कअप (logical markup) के साथ डॉक्यूमेंट लिखते हैं, तो हमें गूढ़ स्तर पर जाते हुए विवरणों (जैसे कि कब इटैलिक का या कब एम्फेसिस का प्रयोग होगा) की चिंता नहीं करनी पड़ती है।  
 
-We will look at [manual formatting later](lesson-11), but for the moment we'll
-add `\textbf` to commands we know: it makes text bold.
+हम [मैनुअल स्वरूपण](lesson-11) पर बाद में इस विषय पर फिर से चर्चा करेंगे, लेकिन अभी के लिए, हम `\textbf` कमांड को भी शामिल करेंगे, जो टेक्स्ट को बोल्ड (गाढ़ा) बनाता है।
 
-## Sectioning commands
 
-You probably have used a word processor, where  to start a section most people
-enter the title text then simply make it bigger and bold, and follow it with a
-new line. In LaTeX, using logical markup is actually _easier_ than doing the
-formatting by hand; we can use the `\section` command. This handles the font
-changes, vertical space, etc., and keeps the output uniform throughout the
-document.
+## अनुभागीय (Sectioning) कमांड
+आपने शायद किसी वर्ड प्रोसेसर (word processor) का उपयोग किया होगा, जहाँ आपने किसी अनुभाग (section) की शुरुआत करने के लिए 'शीर्षक टेक्स्ट (title text)' को पहले दर्ज किया होगा, फिर उसको बड़ा और बोल्ड बनाया होगा, और फिर उसके बाद लेखन का शुरुआत किया होगा। यह एक आम प्रक्रिया है जिसका सभी नहीं तो अधिकांश लोग पालन करते हैं।
+
+इस तरह के तार्किक मार्कअप (logical markup) को LaTeX में बनाना *खुद से बनाने से भी ज्यादा आसान* है। हम `\section` कमांड का उपयोग कर सकते हैं, जो फ़ॉन्ट परिवर्तन, ऊर्ध्वाधर स्थान (vertical space), आदि को स्वतः संभालता है और पूरे दस्तावेज़ में आउटपुट को एक समान (uniform) बनाए रखता है।
+
 
 ```latex
 \documentclass{article}
@@ -77,30 +67,25 @@ Text of the second section.
 \end{document}
 ```
 
-Using the standard `article` setup, LaTeX numbers the sections and subsections
-and includes the titles in boldface. We'll think a bit about changing design [in
-the next lesson](lesson-05).
+मानक `आर्टिकल` सेटअप का उपयोग करते हुए, LaTeX सभी खंडो (sections) और उपखंडों (subsections) को क्रमांकित करता है और शीर्षकों को बोल्डफेस में कर देता है। हम डिज़ाइन बदलने के बारे में थोड़ा और [अगले पाठ में](पाठ-05) में सीखेंगे।
 
-LaTeX can divide up documents into quite a few levels
-
-- `\chapter` (but we need `\documentclass{book}` or
-  `\documentclass{report}` for this)
+LaTeX डाक्यूमेंट्स को कई स्तरों में विभाजित करता है:
+- `\chapter` (परन्तु यह टैग सिर्फ `\documentclass{book}` या `\documentclass{report}` में उपयोग होता है)
 - `\section`
 - `\subsection`
 - `\subsubsection`
 
-We can go further: the next one 'down' is `\paragraph`, but almost always that's
-too much 'detail' in sections. (Yes, `\paragraph` is a section command, _not_ a
-way to start a new paragraph!)
+हम इससे आगे भी जा सकते हैं: अगला स्तर `\paragraph` होता है, लेकिन उतने गहरे स्तर तक डॉक्यूमेंट को लेके जाना, आपके सेक्शन को बहुत अनावश्यक सा *विस्तार* दे देता है। (वास्तव में, `\paragraph` एक 'अनुभागीय यानि की खंड के स्तर का कमांड' है, *न कि* एक नया पैराग्राफ शुरू करने का तरीका!)  
 
-You might wonder about the title of a document. There are some special
-commands for that, but not all documents use them, so we've
-[covered that in the parallel extra lesson](more-04).
+आप यह सोच सकते हैं कि किसी डॉक्यूमेंट के शीर्षक को कैसे प्रबंधित किया जाता है। इसके लिए कुछ विशेष कमांड होते हैं, लेकिन सभी डॉक्यूमेंट इनका उपयोग नहीं करते हैं, इसलिए हमने इसे [समानांतर अतिरिक्त पाठ](more-04) में समझाया है।
+
+
 
 ## Lists
 
-The other very common place you'll want logical markup is writing lists.
-There are two common types of list built in to LaTeX.
+ऐसे बहुत सारे स्थान होंगे डॉक्यूमेंट में जहाँ आपको तार्किक मार्कअप (logical markup) में *सूची (lists)* का उपयोग करना होगा।  
+
+LaTeX में दो प्रकार की सूची पहले से ही निर्मित (built-in) होती हैं:
 
 ```latex
 \documentclass{article}
@@ -124,16 +109,13 @@ Unordered
 \end{document}
 ```
 
-Notice that we use `\item` to start each entry, and that the marker used  for
-each type of list is added automatically.
+ध्यान दें कि हम प्रत्येक प्रविष्टि (entry) को शुरू करने के लिए `\item` कमांड का उपयोग करते हैं, और प्रत्येक सूची (list) के लिए चिह्न (marker) स्वचालित रूप से जुड़ जाता है।
 
-## Exercises
 
-Experiment with different sectioning levels. Try using `\documentclass{report}`
-instead of `\documentclass{article}` and adding `\chapter` commands. How
-do they look? Try out `\paragraph` and (even) `\subparagraph` to see they work:
-by default, they _don't_ add numbers.
+## अभ्यास (Exercises)  
 
-Make some lists, and nest one list inside another. How does the format of the
-numbers or markers change? You can only go to four levels with standard LaTeX,
-but more than four nested lists tends to be a bad sign anyway!
+विभिन्न अनुभागीय (sectioning) स्तरों के साथ स्वप्रयोग करें। `\documentclass{article}` की जगह `\documentclass{report}` का उपयोग करके देखें और `\chapter` कमांड जोड़ें। वे कैसे दिखते हैं? 
+
+`\paragraph` और (यहाँ तक कि) `\subparagraph` को भी आज़माएँ और देखें कि वे कैसे काम करते हैं? (ध्यान रहे कि डिफ़ॉल्ट रूप से, ये *संख्या नहीं जोड़ते।*)  
+
+कुछ सूचियाँ (lists) बनाएँ और एक सूची के अंदर दूसरी सूची नेस्ट (nest) करें। देखें कि संख्याओं या चिह्नों (markers) का स्वरूप कैसे बदलता है? मानक LaTeX में आप अधिकतम चार स्तर तक नेस्ट कर सकते हैं, लेकिन अगर आप फिर भी चार से अधिक नेस्टेड सूचियाँ बनाते हैं तो आमतौर पर यह एक *खराब डॉक्यूमेंट डिज़ाइन* मानी जाएगी!
