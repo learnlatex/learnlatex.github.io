@@ -306,23 +306,29 @@ function deleteoutput(nd){
     ifr.parentNode.removeChild(ifr);
 }
 
+// ace difference
+function rlInsert(e,n,s) {
+    e.dispatch({ changes: { from: n, insert: s}});
+    return n + s.length;
+}
 function generatepreamble(t,e) {
-    e.navigateFileStart();
+    var offset = 0;
     if(t.match(/koma|KOMA|addsec|\\scr|scrheadings/)){
-        e.insert("\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{scrartcl}\n");
+        offset = rlInsert(e,offset,"\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{scrartcl}\n");
     } else {
-	e.insert("\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{article}\n");
+	offset = rlInsert(e,offset,"\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{article}\n");
     }
     for(var i=0;i<runlatex.packageregex.length; i++){
-	if(t.match(runlatex.packageregex[i][0])) e.insert(runlatex.packageregex[i][1]);
+	if(t.match(runlatex.packageregex[i][0])) {
+	    offset = rlInsert(e,offset,runlatex.packageregex[i][1]);
+	}
     }
     if(t.match(/\\begin\{document\}/)){
-	e.insert("\n% "  + runlatex.texts["End Added Code"] + "\n\n");
+	offset = rlInsert(e,offset,"\n% "  + runlatex.texts["End Added Code"] + "\n\n");
     } else {
-	e.insert("\n\\begin{document}\n% "  + runlatex.texts["End Added Code"] + "\n\n");
+	offset = rlInsert(e,offset,"\n\\begin{document}\n% "  + runlatex.texts["End Added Code"] + "\n\n");
     }
-    e.navigateFileEnd();
-    e.insert("\n\n% " +
+    offset = rlInsert(e,e.state.doc.length,"\n\n% " +
 	     runlatex.texts["Added Code"] +
 	     "\n\\end{document}\n% "  +
 	     runlatex.texts["End Added Code"] +
