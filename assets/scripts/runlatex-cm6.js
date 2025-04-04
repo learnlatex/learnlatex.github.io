@@ -105,9 +105,6 @@ function llexamples() {
 	}
 	request.send();
     }
-    document.body.style.borderStyle="solid";
-    document.body.style.borderWidth="thick";
-    document.body.style.borderColor="red";
     var p = document.getElementsByTagName("pre");
     var editor;
     var acemode;
