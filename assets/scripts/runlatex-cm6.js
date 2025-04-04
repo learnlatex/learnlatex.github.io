@@ -176,7 +176,8 @@ function llexamples() {
 	    const editor = cm6.createEditorView(undefined, p[i]);
             const initialState = cm6.createEditorState(txt,cm6options);
 	    editor.setState(initialState);
-            p[i].style.maxHeight="50em"          
+            p[i].style.maxHeight=Math.round(1.4*runlatex.editorlines)+"em"          
+            p[i].style.overflow="scroll"          
 // ace	    p[i].style.height="1em"; // force redisplay in Opera zoom
 // ace	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
 // ace	    editor = ace.edit(p[i]);
