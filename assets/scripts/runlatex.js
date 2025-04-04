@@ -475,8 +475,10 @@ var rldefaultengine=getCookie('runlatex-engine');
 if(rldefaultengine=="") rldefaultengine="pdflatex";
 
 
+// ace difference
 var rlacetheme=getCookie('runlatex-acetheme');
 if(rlacetheme=="") rlacetheme="ace/theme/textmate";
+var rlcm6theme=getCookie('runlatex-cm6theme');
 
 function rlAllowCookies() {
   createCookie('runlatex-cookies',"true",100);

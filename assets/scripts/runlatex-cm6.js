@@ -1,5 +1,5 @@
-// runlatex.js for TeXLive.net and Overleaf
-// Copyright 2020 2021 David Carlisle
+// runlatex-cm6.js for TeXLive.net and Overleaf
+// Copyright 2020 2021 2025 David Carlisle
 // MIT Licence
 
 // set here but local versions can be redefined after
@@ -174,9 +174,11 @@ function llexamples() {
 	    p[i].textContent=pretext.replace(/\s+$/,'');
 	    const txt=p[i].innerText;
 	    p[i].innerText="";
+	    let cm6options = {};
+	    if(rlcm6theme!="") 	cm6options[rlcm6theme] = true;
 	    const editor = cm6.createEditorView(undefined, p[i]);
-        const initialState = cm6.createEditorState(txt);
-	  editor.setState(initialState);
+            const initialState = cm6.createEditorState(txt,cm6options);
+	    editor.setState(initialState);
             p[i].style.maxHeight="50em"          
 // ace	    p[i].style.height="1em"; // force redisplay in Opera zoom
 // ace	    ace.config.set('basePath', 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12') ;
@@ -304,29 +306,23 @@ function deleteoutput(nd){
     ifr.parentNode.removeChild(ifr);
 }
 
-// ace difference
-function rlInsert(e,n,s) {
-    e.dispatch({ changes: { from: n, insert: s}});
-    return n + s.length;
-}
 function generatepreamble(t,e) {
-    var offset = 0;
+    e.navigateFileStart();
     if(t.match(/koma|KOMA|addsec|\\scr|scrheadings/)){
-        offset = rlInsert(e,offset,"\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{scrartcl}\n");
+        e.insert("\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{scrartcl}\n");
     } else {
-	offset = rlInsert(e,offset,"\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{article}\n");
+	e.insert("\n% " + runlatex.texts["Added Code"] + "\n\\documentclass{article}\n");
     }
     for(var i=0;i<runlatex.packageregex.length; i++){
-	if(t.match(runlatex.packageregex[i][0])) {
-	    offset = rlInsert(e,offset,runlatex.packageregex[i][1]);
-	}
+	if(t.match(runlatex.packageregex[i][0])) e.insert(runlatex.packageregex[i][1]);
     }
     if(t.match(/\\begin\{document\}/)){
-	offset = rlInsert(e,offset,"\n% "  + runlatex.texts["End Added Code"] + "\n\n");
+	e.insert("\n% "  + runlatex.texts["End Added Code"] + "\n\n");
     } else {
-	offset = rlInsert(e,offset,"\n\\begin{document}\n% "  + runlatex.texts["End Added Code"] + "\n\n");
+	e.insert("\n\\begin{document}\n% "  + runlatex.texts["End Added Code"] + "\n\n");
     }
-    offset = rlInsert(e,e.state.doc.length,"\n\n% " +
+    e.navigateFileEnd();
+    e.insert("\n\n% " +
 	     runlatex.texts["Added Code"] +
 	     "\n\\end{document}\n% "  +
 	     runlatex.texts["End Added Code"] +
@@ -435,7 +431,7 @@ function latexcgi(nd) {
 }
 
 
-
+// highlight line (1 based)
 function rlselectline (preid,n) {
     if(editors[preid] != null)  {
 	const line = editors[preid].state.doc.line(n);
@@ -490,9 +486,11 @@ function rlSetEngine(n) {
 var rldefaultengine=getCookie('runlatex-engine');
 if(rldefaultengine=="") rldefaultengine="pdflatex";
 
-
+// ace difference
 var rlacetheme=getCookie('runlatex-acetheme');
 if(rlacetheme=="") rlacetheme="ace/theme/textmate";
+var rlcm6theme=getCookie('runlatex-cm6theme');
+
 
 function rlAllowCookies() {
   createCookie('runlatex-cookies',"true",100);
@@ -504,6 +502,8 @@ function rlDeleteCookies() {
  createCookie('runlatex-return',"",-999);
  createCookie('runlatex-engine',"",-999);
  createCookie('runlatex-acetheme',"",-999);
+// ace
+ createCookie('runlatex-cm6theme',"",-999);
  window.location.reload(false);
 }
 
