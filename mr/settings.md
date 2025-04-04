@@ -41,6 +41,6 @@ TeXLive.net ह्या आज्ञावलीतर्फे अथवा �
 
 {% include settings-acetheme.html %}
 
-The theme used by the embedded Codemirror6 editor.
+कोडमिरर-६ ह्या मजकूर-संपादकासाठीची रंगछटा (गडद/उजळ).
 
 {% include settings-cm6theme.html %}
