@@ -38,6 +38,6 @@ The theme used by the embedded ACE editor.
 
 {% include settings-acetheme.html %}
 
-The theme used by the embedded Codemirror6 editor.
+The theme used by the embedded CodeMirror6 editor.
 
 {% include settings-cm6theme.html %}
