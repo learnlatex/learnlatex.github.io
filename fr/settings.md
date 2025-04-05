@@ -43,3 +43,7 @@ Overleaf.)
 Le thème utilisé par l'éditeur intégré, ACE.
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}

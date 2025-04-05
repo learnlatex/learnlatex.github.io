@@ -57,21 +57,27 @@ Ogni esempio è _completo_. Inoltre è _modificabile_,
 perché spesso gli esercizi alla fine della lezione 
 ti chiedono di apportare loro qualche piccolo cambiamento.
 
-L'editor integrato nel sito è [ACE](https://ace.c9.io/).
 
-Puoi personalizzarne l'aspetto (impostando un 
-tema scuro con testo chiaro su sfondo nero, per esempio) 
-sulla pagina [Configurazione](settings).
-Per sperimentare comodamente temi diversi, ti consigliamo 
-di dare <kbd>Ctrl</kbd>+<kbd>,</kbd> 
-(<kbd>⌘</kbd>+<kbd>,</kbd> su Mac)
-mentre stai lavorando con gli esempi. 
-Questa combinazione di tasti 
-[farà apparire un pannello](javascript:acesettings()) 
-nel quale potrai modificare tutte le impostazioni di ACE.
+L'editor integrato nel sito è
 
-Il repository di ACE contiene una [pagina con le scorciatoie da tastiera](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts)
-utili per risparmiare tempo.
+* [ACE](https://ace.c9.io/).
+
+  Puoi personalizzarne l'aspetto (impostando un 
+  tema scuro con testo chiaro su sfondo nero, per esempio) 
+  sulla pagina [Configurazione](settings).
+  Per sperimentare comodamente temi diversi, ti consigliamo 
+  di dare <kbd>Ctrl</kbd>+<kbd>,</kbd> 
+  (<kbd>⌘</kbd>+<kbd>,</kbd> su Mac)
+  mentre stai lavorando con gli esempi. 
+  Questa combinazione di tasti 
+  [farà apparire un pannello](javascript:acesettings()) 
+  nel quale potrai modificare tutte le impostazioni di ACE.
+  
+  Il repository di ACE contiene una [pagina con le scorciatoie da tastiera](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts)
+  utili per risparmiare tempo.
+
+* [CodeMirror6](https://codemirror.net/).
+
 
 #### Tre modi per comporre un esempio
 

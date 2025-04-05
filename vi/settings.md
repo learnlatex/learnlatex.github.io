@@ -40,3 +40,7 @@ qua ghi chú dạng `% !TEX` trong mã ví dụ.
 Chọn giao diện (theme) được sử dụng cho trình soạn mã ACE.
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}

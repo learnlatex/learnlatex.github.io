@@ -48,17 +48,21 @@ Cada exemplo é completo.  No entanto você pode querer editá-lo para fazer
 pequenas modificações, talvez como parte de um exercício proposto no final da
 lição.
 
-O editor sendo usado é o [ACE](https://ace.c9.io/).
+O editor sendo usado é o
 
-Você mode mudar o tema utilizado pelo editor (por exemplo usando um tema escuro
-com texto claro em um fundo escuro) na [página de configurações](settings).  Uma
-forma conveniente de experimentar temas diferentes é usar
-<kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> no Mac) enquanto estiver
-em qualquer exemplo no site.  [Esse comando mostra um painel](javascript:acesettings())
-que permite mudar as configurações do ACE.
+* [ACE](https://ace.c9.io/).
 
-O repositório do ACE tem uma página com
-[atalhos de teclado úteis](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+  Você mode mudar o tema utilizado pelo editor (por exemplo usando um tema escuro
+  com texto claro em um fundo escuro) na [página de configurações](settings).  Uma
+  forma conveniente de experimentar temas diferentes é usar
+  <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> no Mac) enquanto estiver
+  em qualquer exemplo no site.  [Esse comando mostra um painel](javascript:acesettings())
+  que permite mudar as configurações do ACE.
+
+  O repositório do ACE tem uma página com
+  [atalhos de teclado úteis](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+
+* [CodeMirror6](https://codemirror.net/).
 
 #### Três formas de você executar os exemplos
 
