@@ -42,11 +42,16 @@ permalink: /zh-hant/help
 
 每個示例都是完整的。但是你可能希望編輯它來做一些小的改動，也許是作為課程末尾的練習集的一部分。
 
-編輯器使用的是[ACE](https://ace.c9.io/)。
+編輯器使用的是
 
-你可以在[網站設定](settings)頁面自定義編輯器使用的主題（例如使用深色主題，即在深色背景上顯示淺色文字）。在網站的任何示例中使用<kbd>Ctrl</kbd>+<kbd>,</kbd>（Mac上使用<kbd>⌘</kbd>+<kbd>,</kbd>）是一種嘗試不同主題的便捷方式。[這會顯示一個面板](javascript:acesettings())，允許你更改所有ACE設定。
+* [ACE](https://ace.c9.io/)。
 
-ACE程式碼庫有一個[有用的編輯器快捷鍵頁面](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts)。
+  你可以在[網站設定](settings)頁面自定義編輯器使用的主題（例如使用深色主題，即在深色背景上顯示淺色文字）。在網站的任何示例中使用<kbd>Ctrl</kbd>+<kbd>,</kbd>（Mac上使用<kbd>⌘</kbd>+<kbd>,</kbd>）是一種嘗試不同主題的便捷方式。[這會顯示一個面板](javascript:acesettings())，允許你更改所有ACE設定。
+
+  ACE程式碼庫有一個[有用的編輯器快捷鍵頁面](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts)。
+
+* [CodeMirror6](https://codemirror.net/).
+
 
 #### 執行示例的三種方式
 

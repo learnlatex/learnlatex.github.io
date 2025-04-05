@@ -55,7 +55,9 @@ Beispieltext.
 Jedes Beispiel ist komplett. Sie können kleinere Änderungen
 z.B. für Übungsaufgaben direkt im Editor machen.
 
-Für die Beispiele wurde der [ACE](https://ace.c9.io/) Editor benutzt.
+* Für die Beispiele wurde der [ACE](https://ace.c9.io/) Editor benutzt.
+
+* [CodeMirror6](https://codemirror.net/)
 
 #### Drei Möglichkeiten die Beispiele zu kompilieren
 
