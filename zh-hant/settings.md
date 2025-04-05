@@ -31,3 +31,7 @@ TeXLive.net 或 Overleaf 應在沒有通過 `% !TeX` 註釋設定的情況下使
 嵌入的 ACE 編輯器使用的主題。
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}

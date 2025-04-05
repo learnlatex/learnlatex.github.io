@@ -49,3 +49,7 @@ essere scelte su Overleaf.)
 Il tema adoperato dall'editor ACE incorporato.
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}

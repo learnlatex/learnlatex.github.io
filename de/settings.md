@@ -44,3 +44,7 @@ und `context` Optionen sollten nicht mit Overleaf verwendet werden.)
 Das Thema, welches der eingebettete ACE-Editor verwendet.
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}

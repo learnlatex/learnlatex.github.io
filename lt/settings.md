@@ -43,3 +43,7 @@ Overleaf.)
 Spalviniai nustatymai įterptajam ACE redaktoriui.
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}
