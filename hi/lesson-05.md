@@ -1,59 +1,54 @@
 ---
 layout: "lesson"
 lang: "hi"
-title: "डिज़ाइन को प्रभावित करने के लिए दस्तावेज़ वर्गों का उपयोग करना"
-description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
-toc-anchor-text: "दस्तावेज़ वर्ग"
-toc-description: "सामान्य दस्तावेज़ लेआउट सेट करना"
+title: "डिज़ाइन को प्रभावित करने के लिए डॉक्यूमेंट वर्गों का उपयोग करना"
+description: "यह पाठ आपको *डॉक्यूमेंट क्लास* (document class) के बारे में बताएगा। यह किसी डॉक्यूमेंट के लेआउट को कैसे प्रभावित करता है, तथा आपको किसी TeX वितरण (TeX distribution) में कौन-कौन से प्रमुख डॉक्यूमेंट क्लासेस मिलते हैं, इसकी भी सूची प्रदान करेगा।"
+toc-anchor-text: "डॉक्यूमेंट वर्ग"
+toc-description: "सामान्य डॉक्यूमेंट का लेआउट सेट करना"
 ---
 
-# दस्तावेज़ वर्ग
-<span
-  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
+# डॉक्यूमेंट्स के वर्ग
+<span class="summary">यह पाठ बताता है कि डॉक्यूमेंट क्लास क्या होती है और यह किसी डॉक्यूमेंट के लेआउट और डिज़ाइन को कैसे प्रभावित कर सकता है। इसमें उन प्रमुख क्लासों की सूची दी गई है जो आपको एक TeX वितरण में मिल सकती हैं।</span>
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
 
-## What a document class does
+आपने शायद ध्यान दिया होगा कि अब तक हमने जितने भी LaTeX डॉक्यूमेंट बनाए हैं, वे सभी `\documentclass` लाइन से शुरू हुए हैं, और उनमें से सबसे आम विकल्प `\documentclass{article}` रहा है। (हमें [पिछले पाठ](lesson-04) में `\chapter` कमांड आज़माने के लिए `\documentclass{report}` की आवश्यकता पड़ी थी।) यह लाइन सभी LaTeX डॉक्यूमेंट्स में आवश्यक होती है और यह लगभग हमेशा ही पहला कमांड होता है।
 
-The document class sets up the general layout of the document, for example
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+## डॉक्यूमेंट क्लास क्या करती है? 
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+डॉक्यूमेंट क्लास डॉक्यूमेंट के सामान्य लेआउट को निर्धारित करता है, उदाहरण के लिए:  
 
-## The base classes
+- डिज़ाइन: मार्जिन, फ़ॉन्ट, स्पेसिंग आदि।  
+- क्या अध्याय (chapters) उपलब्ध होंगे या नहीं।  
+- क्या शीर्षक (title) एक अलग पृष्ठ पर होना चाहिए।  
 
-LaTeX is supplied with a set of standard classes, all of which look similar
-but with some variations:
+डॉक्यूमेंट क्लास नए कमांड को भी जोड़ सकता है, खासकर उन मामलों में जहाँ विशेष आवश्यकताएँ होती हैं, जैसे कि प्रेजेंटेशन स्लाइड्स बनाना।  
+
+डॉक्यूमेंट क्लास लाइन _ग्लोबल विकल्प_ (global options) भी सेट कर सकती है, जो पूरे दस्तावेज़ पर लागू होते हैं। ये विकल्प वर्ग कोष्ठकों (square brackets) में दिए जाते हैं: `\documentclass[<options>]{<name>}`  
+
+यह सिंटैक्स (syntax), जहाँ वैकल्पिक जानकारी [] कोष्ठकों द्वारा दी जाती है, LaTeX के कई कमांड में उपयोग की जाती है।
+
+
+
+## मूल एवं मानक क्लासेस
+
+LaTeX के साथ कुछ मानक क्लासेस दी जाती हैं, जिनका रूप एक जैसा होता है लेकिन उनमें कुछ भिन्नताएँ होती हैं:
 
 - `article`  
-  short documents without chapters
+  छोटे डाक्यूमेंट्स, जिनमें अध्याय नहीं होते  
 - `report`  
-  longer documents with chapters, single-sided printing
+  लंबे डाक्यूमेंट्स, अध्यायों सहित, एक-पक्षीय मुद्रण  
 - `book`  
-  longer documents with chapters, double-sided printing, with front- and
-  back-matter (for example an index)
+  लंबे डाक्यूमेंट्स, अध्यायों सहित, द्वि-पक्षीय मुद्रण, प्रारंभिक एवं अंतिम भागों सहित (जैसे अनुक्रमणिका)  
 - `letter`  
-  correspondence with no sections
+  पत्राचार, अनुभागों के बिना  
 - `slides`  
-  for presentations (but see below)
+  प्रस्तुतियों के लिए (परंतु नीचे देखें)
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+`article`, `report` और `book` क्लासेस में समान प्रकार के आदेश उपलब्ध होते हैं, जैसा कि पहले देखा गया है। `letter` लिखते समय उपलब्ध आदेश कुछ भिन्न हो जाते हैं।
+
+
 
 ```latex
 \documentclass{letter}
@@ -73,48 +68,33 @@ The text goes Here
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialized commands.
+देखिए कैसे ``\\`` का उपयोग पंक्तियों को अलग करने के लिए किया गया है; हम टेक्स्ट विभाजन को [थोड़ी बाद में](lesson-11) देखेंगे। साथ ही देखिए कैसे `letter` क्लास प्रत्येक लेटर अर्थात पत्र के लिए एक नया परिवेश बनाती है और विशेष आदेश प्रदान करती है।
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+मानक `article`, `report` और `book` क्लासेस फ़ॉन्ट आकार बदलने के लिए `10pt`, `11pt` और `12pt` का विकल्प लेती हैं, और दो-स्तंभीय (two columns) का  डॉक्यूमेंट बनाने के लिए `twocolumn` विकल्प का प्रयोग किया जाता है।
 
-## Function-rich classes
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+## फ़ंक्शन-संपन्न क्लासेस
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt`, `scrbook`, and `scrlttr2`, while there is
-a single `memoir` class that is most like an extension of `book`.
+मूल क्लासेस अत्यंत स्थिर (stable) होती हैं, लेकिन इसका अर्थ यह भी है कि वे डिज़ाइन और उपलब्ध आदेशों की दृष्टि से काफ़ी पारंपरिक और कम बदलाव करने का विकल्प देने वाली हैं। समय के साथ कई अधिक महत्वपूर्ण क्लासेस विकसित की गई हैं, जो डिज़ाइन को मैन्युअल रूप से बदले बिना परिवर्तित करने की सुविधा देती हैं (जिसका उल्लेख हम [थोड़ा बाद में](lesson-11) करेंगे)।
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-16), but you can always
-jump ahead!
+American Mathematical Society ने मानक क्लासेस के कुछ रूपांतर (`amsart`, `amsbook`) प्रदान किए हैं, जिनका डिज़ाइन गणितीय शोध-पत्रिकाओं में प्रयुक्त पारंपरिक स्वरूप के अधिक निकट है।
 
-## Presentations
+सबसे बड़ी और लोकप्रिय 'विस्तारित'क्लासेस में दो प्रमुख हैं — KOMA-Script बंडल और `memoir` क्लास। KOMA-Script एक ऐसा सेट प्रदान करता है जो मानक क्लासेस:`scrartcl`, `scrreprt`, `scrbook`, और `scrlttr2` के समानांतर चलता है, जबकि `memoir` एक  ऐसा एकल क्लास है जो `book` क्लास के विस्तार जैसी है।
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+इन विस्तारित क्लासेस में अनुकूलन के लिए अनेक हुक्स (hooks) होते हैं, जिन्हें हम एक अभ्यास में थोड़ा अन्वेषित करेंगे। आप सोच सकते हैं कि हम यह कैसे जान सकते हैं कि कौन-से हुक्स उपलब्ध हैं; हम इसे [एक बाद के पाठ](lesson-16) में कवर करेंगे, लेकिन आप चाहें तो पहले भी देख सकते हैं!
 
-## Exercises
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+
+## प्रस्तुतियाँ (Presentations)
+
+`slides` क्लास 1980 के दशक के मध्य में भौतिक स्लाइड्स बनाने के लिए विकसित की गई थी, इसलिए इसमें इंटरैक्टिव PDF-आधारित प्रस्तुतियाँ बनाने की सुविधाएँ नहीं हैं। इसके लिए आधुनिक क्लासेस उपलब्ध हैं जो विशेष रूप से यही कार्य करती हैं। ये सामान्य LaTeX डाक्यूमेंट्स की तुलना में कुछ विशिष्ट होती हैं, इसलिए हमने इन्हें [अतिरिक्त जानकारी](more-05) में शामिल किया है।
+
+
+
+## अभ्यास
+
+यह अन्वेषण करें कि मानक क्लासेस के बीच किसी एक क्लास का चयन करने से जैसे कि KOMA-Script बंडल और `memoir`, डाक्यूमेंट्स के रूप-रंग पर क्या प्रभाव पड़ता है।
 
 ```latex
 \documentclass{article} % Change the class here
@@ -132,12 +112,12 @@ document have two columns.
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
 
-Change the `\section` above to `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+`twocolumn` वर्ग विकल्प को जोड़ें और देखें कि लेआउट कैसे बदलता है।
 
-- `chapterprefix`
-- `headings=small`
-- `headings=big`
+ऊपर दिए गए `\section` को `\chapter` में बदलें और देखें कि `scrreprt` क्लास का उपयोग करते समय निम्नलिखित वर्ग विकल्पों का क्या प्रभाव पड़ता है:
+
+- `chapterprefix`  
+- `headings=small`  
+- `headings=big`  
 - `numbers=enddot`
