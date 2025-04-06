@@ -1,33 +1,26 @@
 ---
 layout: "lesson"
 lang: "hi"
-title: "टेबल"
-description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
+title: "टेबल्स"
+description: "यह पाठ दिखाता है कि आप LaTeX में तालिकाएँ कैसे बना सकते हैं, कक्षों के संरेखण को कैसे प्रभावित कर सकते हैं, तालिका में नियम कैसे जोड़ सकते हैं, और कक्षों को कैसे मर्ज कर सकते हैं।"
 toc-anchor-text: "लाटेक टेबल"
-toc-description: "टेबल्स(तालिकाओं) के साथ काम करने की मूल बातें"
+toc-description: "टेबल्स के साथ काम करने की मूल बातें"
 ---
 
 # टेबल
 
-<span
-  class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>
+<span class="summary">यह पाठ दिखाता है कि आप LaTeX में टेबल्स कैसे बना सकते हैं, कक्षों (cells) के संरेखण को कैसे प्रभावित कर सकते हैं, टेबल्स में नियम कैसे जोड़ सकते हैं, और कक्षों को कैसे मर्ज (merge) कर सकते हैं।</span>
 
-Tables in LaTeX are set using the `tabular` environment. This lesson will assume
-you load the `array` package, which adds more functionality to LaTeX tables, and
-which is not built into the LaTeX kernel only for historic reasons. So put the
-following in your preamble and we're good to go:
 
+LaTeX में टेबल्स तैयार करने के लिए `tabular` परिवेश (environment) का प्रयोग किया जाता है। इस पाठ में यह मानकर चला जाएगा कि आप `array` नामक पैकेज को लोड कर चुके हैं, जो LaTeX में टेबल्स की कार्यक्षमता को और अधिक बढ़ा देता है। यह पैकेज LaTeX के मूल (kernel) में कुछ ऐतिहासिक कारणों से अंतर्निहित नहीं किया गया है। अतः, कृपया अपने प्रीएम्बल (preamble) में निम्नलिखित पंक्ति जोड़ें, और फिर हम आगे बढ़ने को तैयार हैं:
 
 ```latex
 \usepackage{array}
 ```
 {: .noedit :}
 
-In order to typeset a `tabular` we have to tell LaTeX how many columns will be
-needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names,
-called preamble-tokens. The available column types are:
+किसी `tabular` को टाइपसेट (typeset) करने के लिए हमें LaTeX को यह बताना होता है कि कितने कॉलम (columns) आवश्यक होंगे और प्रत्येक कॉलम को कैसे संरेखित (align) किया जाना चाहिए। यह कार्य एक अनिवार्य आर्ग्युमेंट (mandatory argument) के माध्यम से किया जाता है, जिसे प्रायः टेबल का प्रीएम्बल (table preamble) कहा जाता है। यह `tabular` परिवेश (environment) के साथ प्रयोग किया जाता है, जिसमें आप कॉलम को एक-अक्षरी नामों (single-letter names) के माध्यम से निर्दिष्ट करते हैं, जिन्हें प्रीएम्बल-टोकन (preamble-tokens) कहा जाता है। उपलब्ध कॉलम प्रकार निम्नलिखित हैं:
+
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
@@ -42,8 +35,8 @@ called preamble-tokens. The available column types are:
 | `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
 | `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
 
-In addition, a few other preamble-tokens are available which don't define a
-column but might be useful as well:
+
+इसके अतिरिक्त, कुछ अन्य प्रीएम्बल-टोकन भी उपलब्ध हैं, जो स्वयं कोई कॉलम परिभाषित नहीं करते, परन्तु फिर भी उपयोगी हो सकते हैं:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
@@ -56,20 +49,14 @@ column but might be useful as well:
 | `@{decl}` | replace the space between two columns with `decl` |
 | `!{decl}` | add `decl` in the center of the existing space |
 
-These two tables list all the available column types from LaTeX and the `array`
-package. A few additional column types, from different packages, are presented
-in the [further details page](more-08) for this lesson.
 
-The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centered columns, you'd use
-`ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
+नीचे दीए गए दो टेबल्स LaTeX तथा array पैकेज में उपलब्ध सभी कॉलम प्रकारों को सूचीबद्ध करते हैं। कुछ अतिरिक्त कॉलम प्रकार, जो अन्य पैकेजों से लिए गए हैं, इस पाठ के अधिक विवरण पृष्ठ में प्रस्तुत किए गए हैं।
 
-In a table body columns are separated using an ampersand `&` and a new row is
-started using `\\`.
+`l`, `c`, और `r` कॉलम्स प्रकारों की चौड़ाई उस सेल (कोष्ठक) की प्राकृतिक चौड़ाई के अनुसार होती है जो सबसे चौड़ा होता है। प्रत्येक कॉलम को स्पष्ट रूप से घोषित करना आवश्यक होता है, अतः यदि आप तीन केन्द्रित (centered) स्तम्भ चाहते हैं, तो आपको सारणी प्रीएम्बल में `ccc` लिखना होगा। रिक्त स्थानों (spaces) की अनदेखी की जाती है, इसलिए `ccc` और `c c c` में कोई अंतर नहीं है।
 
-We have everything we need for our first table. In the following code the
-`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
-source.
+टेबल के मुख्य भाग (table body) में स्तम्भों को ampersand `&` के माध्यम से अलग किया जाता है, और प्रत्येक नई पंक्ति `\\` द्वारा आरंभ की जाती है।
+
+अब हमारे पास अपनी पहला टेबल बनाने के लिए आवश्यक सभी जानकारी है। निम्नलिखित कोड में `&` और `\\` को एक पंक्ति में व्यवस्थित किया गया है। यद्यपि LaTeX में ऐसा करना आवश्यक नहीं है, परन्तु स्रोत (source) को पढ़ने में इससे सुविधा होती है।
 
 <!-- {% raw %} -->
 ```latex
@@ -89,8 +76,7 @@ source.
 
 <!-- {% endraw %} -->
 
-If a table column contains a lot of text you will have issues to get that
-right with only `l`, `c`, and `r`. See what happens in the following example:
+यदि किसी टेबल के कॉलम में अधिक मात्रा में पाठ (text) हो, तो केवल `l`, `c` और `r` का प्रयोग करके उसे ठीक प्रकार से प्रदर्शित करना कठिन हो सकता है। निम्न उदाहरण में देखें कि क्या होता है:
 
 <!-- {% raw %} -->
 
@@ -114,12 +100,8 @@ right with only `l`, `c`, and `r`. See what happens in the following example:
 ```
 <!-- {% endraw %} -->
 
-The issue is that the `l` type column typesets its contents in a single row at
-its natural width, even if there is a page
-border in the way. To overcome this you can use the `p` column. This
-typesets its contents as paragraphs with the width you specify as an argument
-and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare the above outcome to the following:
+समस्या यह है कि `l` प्रकार का कॉलम अपने विषयवस्तु को उसकी प्राकृतिक चौड़ाई में एक ही पंक्ति में टाइपसेट करता है, भले ही पृष्ठ की सी (margin) रास्ते में बाधक बनती हो। इस समस्या से निपटने के लिए आप `p` कॉलम का उपयोग कर सकते हैं। यह कॉलम अपनी विषयवस्तु को पैराग्राफ के रूप में उस चौड़ाई में टाइपसेट करता है जिसे आप आर्ग्युमेंट के रूप में निर्दिष्ट करते हैं, और उसे ऊपरी भाग (top) पर ऊर्ध्वाधर रूप से संरेखित करता है — जो कि अधिकांश समय अपेक्षित ही होता है। ऊपर प्राप्त परिणाम की तुलना नीचे दिए गए उदाहरण से करें:
+
 
 <!-- {% raw %} -->
 ```latex
@@ -142,11 +124,7 @@ time. Compare the above outcome to the following:
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it is cumbersome to put that
-many column definitions in the preamble.  You can make things easier
-by using `*{num}{string}`, which repeats the `string`  `num` times.
-So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
-table of this lesson with the newly learned syntax:
+यदि आपके टेबल में एक जैसे कई कॉलम हों, तो प्रीएम्बल में प्रत्येक स्तम्भ को अलग-अलग परिभाषित करना कठिन और असुविधाजनक हो सकता है। इस प्रक्रिया को सरल बनाने के लिए आप `*{num}{string}` का उपयोग कर सकते हैं, जो निर्दिष्ट `string` को `num` बार दोहराता है। उदाहरणस्वरूप, `*{6}{c}` का अर्थ `cccccc` के समतुल्य होता है। यह कैसे कार्य करता है, इसे दिखाने के लिए नीचे इस पाठ के पहले टेबल को इसी नए विन्यास के साथ प्रस्तुत किया गया है:
 
 <!-- {% raw %} -->
 ```latex
@@ -165,19 +143,12 @@ table of this lesson with the newly learned syntax:
 ```
 <!-- {% endraw %} -->
 
-## Adding rules (lines)
 
-A word of advice prior to introducing rules; lines should be used really
-sparsely in tables, and normally vertical ones look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first. For the sake of completeness the standard
-lines are shown in the [more-info](more-08) page.
+## रेखाएँ (Lines) जोड़ना
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
+रेखाओं का उपयोग समझाने से पहले एक सुझाव देना उपयुक्त होगा — टेबल्स में रेखाओं का उपयोग बहुत सीमित रूप से करना चाहिए, और सामान्यतः ऊर्ध्व रेखाएँ (vertical lines) अव्यवसायिक सी प्रतीत होती हैं। वास्तव में, मानक टेबल्स में मानक रेखाओं का प्रयोग नहीं किया जाना चाहिए; इसके स्थान पर आपको `booktabs` पैकेज की विशेषताओं से परिचित होना चाहिए, और यही कारण है कि इसे यहाँ पहले प्रस्तुत किया जा रहा है। पूर्णता की दृष्टि से मानक रेखाएँ [more-info](more-08) पृष्ठ में दिखाई गई हैं।
+
+`booktabs` चार प्रकार की भिन्न-भिन्न रेखाएँ प्रदान करता है। इन आदेशों का उपयोग या तो किसी पंक्ति की शुरुआत में या किसी अन्य रेखा के तुरंत बाद किया जाना चाहिए। तीन मुख्य रेखा-व्यवस्था हैं: `\toprule`, `\midrule`, और `\bottomrule`। इनके नाम से ही इनके प्रयोग का अपेक्षित स्थान स्पष्ट हो जाता है:
 
 <!-- {% raw %} -->
 ```latex
@@ -201,11 +172,8 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 ```
 <!-- {% endraw %} -->
 
-The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
-draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
-Even if you only want to draw the rule for a single
-column you need to specify that as a range (with both numbers matching).
+`booktabs` द्वारा प्रदान किया गया चौथी रेखा-व्यवस्था `\cmidrule` है। इसका उपयोग ऐसी स्थिति में किया जाता है जब आप पूरे टेबल की चौड़ाई में रेखा न खींचकर केवल किसी निर्दिष्ट कॉलम-सीमा तक ही रेखा खींचना चाहते हैं। कॉलम-सीमा को एक संख्यात्मक सीमा के रूप में लिखा जाता है: `{`_संख्या_`-`_संख्या_`}` (`{`_number_`-`_number_`}`)। यदि आप केवल एक ही कॉलम के लिए रेखा खींचना चाहते हैं, तब भी आपको उसे एक सीमा के रूप में ही लिखना होगा (जिसमें दोनों संख्याएँ समान हों)।
+
 
 <!-- {% raw %} -->
 ```latex
@@ -231,8 +199,7 @@ column you need to specify that as a range (with both numbers matching).
 ```
 <!-- {% endraw %} -->
 
-There is another useful feature of `\cmidrule`. You can shorten it on either end
-with an optional argument enclosed in parentheses:
+`\cmidrule` की एक और उपयोगी विशेषता यह है कि आप इसे दोनों सिरों से संक्षिप्त कर सकते हैं, जिसके लिए एक वैकल्पिक आर्गुमेंट का उपयोग किया जाता है जिसे कोष्ठकों (parentheses) में लिखा जाता है:
 
 <!-- {% raw %} -->
 ```latex
@@ -259,12 +226,10 @@ with an optional argument enclosed in parentheses:
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
-and **l**eft end, respectively.
+आपने अनुमान लगाया होगा कि `r` और `l` का अर्थ है कि रेखा को क्रमशः दाएँ (**r**ight) और बाएँ (**l**eft) छोर से छोटा किया जाएगा।
 
-Sometimes a rule would be too much of a separation for two rows but to get
-across the meaning more clearly you want to separate them by some means. In this
-case you can use `\addlinespace` to insert a small skip.
+कभी-कभी दो पंक्तियों के बीच रेखा का प्रयोग बहुत अधिक विभाजन उत्पन्न करता है, परन्तु शायद टेक्स्ट के अर्थ को अधिक स्पष्ट रूप से प्रस्तुत करने के लिए आपको किसी प्रकार के अंतर की आवश्यकता पड़ सकती है। ऐसी स्थिति में आप `\addlinespace` का उपयोग करके एक छोटा सा रिक्त स्थान जोड़ सकते हैं।
+
 
 <!-- {% raw %} -->
 ```latex
@@ -293,18 +258,16 @@ case you can use `\addlinespace` to insert a small skip.
 <!-- {% endraw %} -->
 
 
-## Merging cells
+## कोष्ठकों का विलयन (Merging Cells)
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
-has to be used as the first thing in a cell. `\multicolumn` takes three
-arguments:
+LaTeX में आप `\multicolumn` आदेश का उपयोग करके कोष्ठकों (cells) को क्षैतिज रूप से एकीकृत (merge) कर सकते हैं। इस आदेश का प्रयोग कोष्ठक में सबसे पहले किया जाना चाहिए। `\multicolumn` तीन आर्ग्युमेंट लेता है:
 
-1. The number of cells which should be merged
-2. The alignment of the merged cell
-3. The contents of the merged cell
+1. उन कोष्ठकों की संख्या जिन्हें विलय करना है  
+2. विलय किए गए कोष्ठक का संरेखण (alignment)  
+3. विलय किए गए कोष्ठक की सामग्री (contents)
 
-The alignment can contain anything legal in a `tabular`'s preamble, but _only a
-single column type_.
+संरेखण में वह सभी कुछ सम्मिलित हो सकता है जो `tabular` के प्रीएम्बल में वैध हो, परन्तु _केवल एक कॉलम प्रकार_ ही स्वीकार्य होता है।
+
 
 <!-- {% raw %} -->
 ```latex
@@ -329,11 +292,7 @@ single column type_.
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent the
-application of whatever you defined in the table preamble for the
-current column.  The following uses this method to center the
-table's head row:
-
+आप `\multicolumn` का उपयोग एक ही कोष्ठक पर भी कर सकते हैं, ताकि उस कॉलम के लिए प्रीएम्बल में जो कुछ परिभाषित किया गया है, वह लागू न हो। निम्नलिखित उदाहरण में इसी विधि का प्रयोग करके टेबल की शीर्ष पंक्ति (head row) को केन्द्रित किया गया है:
 
 <!-- {% raw %} -->
 ```latex
@@ -358,9 +317,7 @@ table's head row:
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX.
-Usually it suffices to leave cells empty to give the reader the
-correct idea of what was meant without explicitly making cells span rows.
+LaTeX में कोष्ठकों का ऊर्ध्वाधर रूप से विलयन (vertically merging) नहीं होता है। सामान्यतः, पंक्तियों में कोष्ठकों को खाली छोड़ देना ही पर्याप्त होता है, जिससे पाठक को यह स्पष्ट रूप से समझ में आ जाता है कि किसका संबंध किससे है।
 
 <!-- {% raw %} -->
 ```latex
@@ -393,9 +350,6 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% endraw %} -->
 
 
-## Exercises
+## अभ्यास
 
-Use the simple table example to start experimenting with tables. Try out
-different alignments using the `l`, `c` and `r` column types. What happens if
-you have too few items in a table row? How about too many? Experiment with the
-`\multicolumn` command to span across columns.
+टेबल्स के साथ प्रयोग करने के लिए सरल टेबल के उदाहरण से शुरुआत करें। `l`, `c` और `r` कॉलम प्रकारों का उपयोग करके विभिन्न संरेखणो (alignments) को आज़माएँ। यह देखें कि यदि किसी टेबल-पंक्ति में बहुत कम आइटम हों तो क्या होता है? और यदि बहुत अधिक हों तो क्या परिणाम मिलता है? टेबल्स में फैलाव (span) करने के लिए `\multicolumn` कमांड का प्रयोग करके देखें कि क्या होता है।
