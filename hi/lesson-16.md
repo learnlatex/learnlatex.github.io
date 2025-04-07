@@ -2,88 +2,69 @@
 layout: "lesson"
 lang: "hi"
 title: "प्रलेखों तक पहुँचना तथा और सहायता प्राप्त करना"
-description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
+description: "यह पाठ LaTeX-संबंधित सॉफ्टवेर और पैकेजों के लिए प्रमुख प्रलेखन (documentation) स्रोतों को प्रस्तुत करता है, और यह भी बताता है कि जब आप किसी समस्या में हों तो सहायता कैसे प्राप्त करें।"
 toc-anchor-text: "मदद और प्रलेखन"
 toc-description: "प्रलेखीकरण तथा और सहायता प्राप्त करना"
 ---
 
-# दस्तावेज़ीकरण और सहायता प्राप्त करना
 
-<span
-  class="summary">This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble.</span>
+## प्रलेखीकरण तथा और सहायता प्राप्त करना
 
-There are several ways to access the documentation of a package or class.
+<span class="summary">यह पाठ LaTeX-संबंधित सॉफ्टवेर और पैकेजों के लिए प्रमुख प्रलेखन (documentation) स्रोतों को प्रस्तुत करता है, और यह भी बताता है कि जब आप किसी समस्या में हों तो सहायता कैसे प्राप्त करें।</span>
+
+
+किसी पैकेज या क्लास की डॉक्युमेंटेशन प्राप्त करने के कई तरीके हैं।
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeX Live or MiKTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+यदि आपने कोई TeX वितरण (जैसे TeX Live या MiKTeX) स्थापित किया है और स्थापना के समय डॉक्युमेंटेशन को भी शामिल किया है, तो आप texdoc नामक कमांड लाइन टूल की सहायता से उस डॉक्युमेंटेशन को स्थानीय रूप से देख सकते हैं। उदाहरण के लिए:
 
 `texdoc` < _pkg_ >
 
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
+यह कमांड <_pkg_> के लिए उपलब्ध डॉक्यूमेंट को खोलेगी। यह टूल आपके द्वारा दिए गए नाम से संबंधित सभी डाक्यूमेंट्स को खोजेगा और जो उसे सबसे उपयुक्त लगेगा, उसे खोल देगा। यदि आप सभी उपयुक्त परिणामों की सूची देखना चाहते हैं और उनमे से किसी एक को चुनना चाहते हैं, तो निम्नलिखित कमांड का प्रयोग करें:
 
 `texdoc -l` < _pkg_ >
 
-## texdoc.org
 
-This is a [website](https://texdoc.org/) which works similarly to the `texdoc` utility. You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
+
+
+## texdoc.org
+यह एक [वेबसाइट](https://texdoc.org/) है जो `texdoc` की तरह ही कार्य करती है। इसमें आप उस डॉक्युमेंटेशन को खोज सकते हैं जो वहाँ उपलब्ध है, ठीक वैसे ही जैसे आप `texdoc -l` कमांड से करते हैं, और फिर परिणामों में से किसी एक को चुन सकते हैं।
+
 
 ## CTAN
+[CTAN](https://www.ctan.org) का पूरा नाम है *Comprehensive TeX Archive Network*। अधिकतर LaTeX पैकेज इसी प्लेटफार्म पर प्रकाशित किए जाते हैं। आप वेबसाइट पर किसी भी पैकेज को खोजकर उसकी डॉक्युमेंटेशन तक पहुँच सकते हैं। आमतौर पर पैकेज इस पते पर संग्रहित रहते हैं:  
+`ctan.org/pkg/<पैकेज-का-नाम>` यहाँ आप उस पैकेज की README फ़ाइल और अन्य दस्तावेज़ पढ़ सकते हैं जो CTAN पर संग्रहित होते हैं।
 
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
 
-## Books on LaTeX
 
-There are several books available that can help you learn more about LaTeX.
-As a beginner, you will gain a lot from a structured beginners guide, as
-those can give a lot more detail than we've covered here. You might also
-want access to a reference with more detail and recommendations.
+## LaTeX पर पुस्तकें
+LaTeX सीखने के लिए कई पुस्तकें उपलब्ध हैं जो आपकी मदद कर सकती हैं। यदि आप एक प्रारंभिक स्तर के उपयोगकर्ता हैं, तो एक क्रमबद्ध शुरुआती मार्गदर्शिका से आपको बहुत लाभ होगा, क्योंकि उसमें वह विवरण होता है जो यहाँ संक्षेप में दिया गया है। इसके अतिरिक्त, आप एक ऐसी संदर्भ-पुस्तक भी रखना चाहेंगे जिसमें अधिक जानकारी और सिफारिशें हों।
 
-The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's official
-guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
-and the comprehensive
-[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
+LaTeX टीम ने [पुस्तकों की एक सूची](https://www.latex-project.org/help/books/) साझा की है, जिनमें से अधिकतर उनके सदस्यों द्वारा लिखी गई हैं। इन पुस्तकों में सबसे उल्लेखनीय हैं:
 
-Other books aimed at learning LaTeX include
+- [लैम्पोर्ट की आधिकारिक मार्गदर्शिका](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)  
+- और व्यापक [LaTeX Companion (तीसरा संस्करण)](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489)।
 
-- [_Guide to
-  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
-  Kopka and Patrick Daly: available as an e-book
-- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
-- [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
-- [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
-  by Stefan Kottwitz: available as an e-book and in print
-- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
-  Marc van Dongen: available as an e-book and in print
+LaTeX सीखने के उद्देश्य से लिखी गई अन्य उपयोगी पुस्तकों में शामिल हैं:
 
-## Getting help
+- [_Guide to LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) — लेखक: हेल्मुट कोपका और पैट्रिक डेली; यह ई-बुक के रूप में उपलब्ध है।  
+- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) — लेखक: निकोला टैलबॉट; यह एक मुफ़्त ई-बुक के रूप में या किफायती प्रिंट संस्करण में उपलब्ध है।  
+- [_Using LaTeX to write a PhD thesis_](https://www.dickimaw-books.com/latex/thesis/) — लेखक: निकोला टैलबॉट; यह भी एक मुफ़्त ई-बुक या कम कीमत वाले मुद्रित संस्करण में उपलब्ध है।  
+- [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide) — लेखक: स्टीफ़न कोट्टविट्ज़; यह ई-बुक और प्रिंट दोनों रूपों में उपलब्ध है।  
+- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) — लेखक: मार्क वैन डोंगेन; यह भी ई-बुक और प्रिंट संस्करण दोनों में उपलब्ध है।
 
-There are various online forums for asking LaTeX questions; perhaps the most
-popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
-Whenever you ask a question, it's best to first get your example clear: what is
-normally known as a 'minimal working example' (MWE). This doesn't mean the code
-works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means
-having only enough content to show the issue.
 
-### How to provide a minimal working example (MWE)
 
-How do you construct a MWE? Normally easiest is to start from
+## सहायता प्राप्त करना (Getting Help)
+
+LaTeX से संबंधित प्रश्न पूछने के लिए कई ऑनलाइन मंच उपलब्ध हैं। आज के समय में सबसे लोकप्रिय मंचों में से एक है [TeX - LaTeX StackExchange](https://tex.stackexchange.com)। जब भी आप कोई प्रश्न पूछें, तो सबसे पहले अपना उदाहरण स्पष्ट रूप से तैयार करना सबसे अच्छा होता है, जिसे सामान्यतः 'मिनिमल वर्किंग एग्ज़ाम्पल (MWE)' कहा जाता है। इसका मतलब यह नहीं कि कोड सही तरीके से चल रहा है (यदि ऐसा होता तो आप सवाल नहीं पूछते!), बल्कि इसका तात्पर्य है कि आपने उसे यथासंभव स्पष्ट, स्वतंत्र और संक्षिप्त बनाया है। "संक्षिप्त" का अर्थ है कि उदाहरण में केवल उतना ही कोड हो, जितना समस्या को दर्शाने के लिए आवश्यक है।
+
+
+
+### मिनिमल वर्किंग एग्ज़ाम्पल (MWE) कैसे दें?
+
+आप MWE कैसे बनाएँ? सामान्यतः सबसे सरल तरीका यह है कि आप ऐसे शुरू करें:
 
 ```latex
 \documentclass{article}
@@ -93,28 +74,25 @@ Text
 \end{document}
 ```
 
-and add lines one at a time until you show the issue. You can try to
-'cut down' your real file, but that can be a long process.
+और उसमें एक-एक करके पंक्तियाँ जोड़ते जाएँ जब तक कि वह समस्या उत्पन्न न हो जाए। आप चाहें तो अपने वास्तविक फाइल को छोटा करने (कट डाउन करने) की कोशिश भी कर सकते हैं, लेकिन यह प्रक्रिया समय लेने वाली हो सकती है।
 
 <p 
-  class="hint">If you need more text to show page breaking and other effects, then packages such as <code>lipsum</code> may be used to generate nonsense paragaraphs of text while keeping your test file small.</p>
+  class="hint">यदि आपको पृष्ठ विभाजन (page breaking) और अन्य प्रभावों को दिखाने के लिए अधिक पाठ (text) की आवश्यकता हो, तो आप <code>lipsum</code> जैसे पैकेज का उपयोग कर सकते हैं। यह पैकेज अर्थहीन अनुच्छेद (nonsense paragraphs) उत्पन्न करता है, जिससे आपकी परीक्षण फाइल छोटी बनी रहती है।</p>
 
 
-### Log file
+### लॉग फाइल
 
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
+एक महत्वपूर्ण फाइल जो आपको उपलब्ध रखनी चाहिए, वह है आपकी लॉग फाइल। यह फाइल हर बार LaTeX चलाने पर स्वतः बनती है, और इसका नाम आपकी इनपुट फाइल के समान होता है, लेकिन इसका अंत `.log` से होता है।
 
-<p 
-  class="hint">Depending on your desktop interface, you might need to 'show extensions' to work out which file it is.</p>
+<p class="hint">आपके डेस्कटॉप इंटरफेस के अनुसार, यह पता लगाने के लिए कि कौन-सी फाइल है, आपको ‘एक्सटेंशन दिखाना’ (show extensions) सक्षम करना पड़ सकता है।</p>
 
-In the log file, you can always see the full error messages. LaTeX's error messages try to be helpful, but they are not the same as messages in word processors.
+लॉग फाइल में आप हमेशा पूरी त्रुटि (error) संदेशों को देख सकते हैं। LaTeX के त्रुटि संदेश उपयोगकर्ता की सहायता करने का प्रयास करते हैं, लेकिन ये वर्ड प्रोसेसर (जैसे MS Word) के संदेशों जैसे नहीं होते।
 
-<p 
-  class="hint">Some editors also make it hard to see the 'full' text of an error, which can hide key details.</p>
+<p class="hint">कुछ संपादक (editors) त्रुटि (error) के 'पूर्ण' पाठ को देखना कठिन बना देते हैं, जिससे महत्वपूर्ण विवरण छिप सकते हैं।</p>
 
-If you have a problem, expert LaTeX users will often ask for a copy of your log file.
+यदि आपको कोई समस्या है, तो अनुभवी LaTeX उपयोगकर्ता अक्सर आपकी लॉग फाइल की एक प्रति माँगेंगे।
 
-### Going further
 
-Finally we offer a [gallery of small examples](./extra-01) showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.
+
+### आगे और जानकारी के लिए  
+अंत में, हम [छोटे उदाहरणों की एक गैलरी](./extra-01) प्रस्तुत करते हैं, जिसमें विभिन्न विषय क्षेत्रों के उदाहरण दिए गए हैं जो इस परिचय में शामिल नहीं हैं, साथ ही उन क्षेत्रों में प्रयुक्त विभिन्न LaTeX पैकेज भी दर्शाए गए हैं।
