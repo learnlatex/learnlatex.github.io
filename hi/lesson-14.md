@@ -2,91 +2,64 @@
 layout: "lesson"
 lang: "hi"
 title: "फॉण्ट का चयन और यूनिकोड इंजन का उपयोग"
-description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
+description: "यह पाठ यह स्पष्ट करता है कि LaTeX Unicode इनपुट को कैसे समझता है और यह आपके टाइप किए गए अक्षरों व उपयोग किए गए फॉण्ट्स को कैसे प्रभावित करता है। इसमें Unicode और OpenType फॉण्ट्स के सपोर्ट सिस्टम (support सिस्टम) जिसे हम फॉण्ट्स की मदद-सामग्री भी कह सकते हैं, उसके बारे में जानकारी दी गई है।"
 toc-anchor-text: "फॉण्ट और यूनिकोड इंजन"
 toc-description: "फॉण्ट का चयन और फाइल की एनकोडिंग"
 ---
 
-# फ़ॉन्ट और यूनिकोड इंजन
+# फॉण्ट और यूनिकोड इंजन
 
-<span
-  class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
+<span class="summary">यह पाठ यह स्पष्ट करता है कि LaTeX Unicode इनपुट को कैसे समझता है और यह आपके टाइप किए गए अक्षरों व उपयोग किए गए फॉण्ट्स को कैसे प्रभावित करता है। इसमें Unicode और OpenType फॉण्ट्स के सपोर्ट सिस्टम (support system) जिसे हम फॉण्ट्स की मदद-सामग्री भी कह सकते हैं, उसके बारे में जानकारी दी गई है।</span>
 
-When TeX and LaTeX first started being widely used they largely only handled
-European languages out of the box, although there was some capability for using
-other alphabets such as Greek and Russian.
 
-## Accents and accented letters
+जब TeX और LaTeX का प्रयोग पहली बार व्यापक रूप से होने लगा, तब वे मूल रूप से केवल यूरोपीय भाषाओं को ही सीधे तौर पर संभालते थे, हालांकि उनमें यूनानी (Greek) और रूसी (Russian) जैसे अन्य लिपियों के लिए कुछ सीमित सपोर्ट था।
 
-Originally, accents and accented letters were typed using control sequences or
-macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
-use these input methods because they can be easier to type, others wanted to be
-able to use the keys on their keyboards to input such symbols directly.
 
-Before Unicode, LaTeX provided support for many types of *file encoding* that
-allowed text to be written in various languages natively — for example, using
-the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would
-internally translate the accented letters into TeX commands to produce the
-correct output.
+## उच्चारण चिह्न और उच्चारित अक्षर
 
-This approach is still in use in modern LaTeX when using the `pdflatex` engine.
-By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
-specified. Although this engine is limited to 8-bit fonts, most European
-languages can be supported.
+प्रारंभ में, उच्चारण चिह्न और उच्चारित अक्षर कंट्रोल सीक्वेंस या मैक्रोज़ के माध्यम से टाइप किए जाते थे, जैसे ‘ç’ के लिए `\c{c}` और ‘é’ के लिए `\'e` का प्रयोग किया जाता था। आज भी कुछ लोग इन इनपुट विधियों को उपयोग में लाते हैं क्योंकि ये टाइप करने में सरल हो सकती हैं, लेकिन अन्य लोग सीधे कीबोर्ड से ऐसे अक्षरों को इनपुट करने की सुविधा चाहते थे।
 
-## Font selection
+Unicode से पहले, LaTeX ने विभिन्न प्रकार के *फाइल एन्कोडिंग* के लिए सपोर्ट प्रदान किया, जिससे विभिन्न भाषाओं में मूल रूप से टेक्स्ट लिखा जा सकता था — उदाहरण के लिए, `latin1` एन्कोडिंग का उपयोग करके फ्रेंच उपयोगकर्ता ‘`déjà vu`’ जैसा टेक्स्ट लिख सकते थे, और LaTeX आंतरिक रूप से उच्चारित अक्षरों को TeX कमांड में अनुवाद कर सही आउटपुट देता था।
 
-Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
-nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
-example, the TeX Gyre fonts are a suite of high-quality fonts based on common
-fonts that most people are familiar with such as Times, Helvetica, Palatino, and
-others. To load these fonts, it is as simple as loading a package with the
-appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
+यह तरीका आज भी आधुनिक LaTeX में `pdflatex` इंजन के साथ उपयोग में है। डीफौल्ट रूप से सभी फाइलों को Unicode (UTF-8 एन्कोडेड) माना जाता है जब तक कि अलग से LaTeX को अलग फाइल होने के बारे में बताया न गया हो। हालांकि यह इंजन केवल 8-बिट फॉण्ट्स तक ही सीमित है, फिर भी यह अधिकांश यूरोपीय भाषाओं को सपोर्ट कर सकता है।
+
+
+## फॉण्ट चयन
+
+`pdflatex` के साथ फॉण्ट चयन के लिए LaTeX का शक्तिशाली और सुव्यवस्थित फॉण्ट चयन तंत्र प्रयोग होता है। आजकल एक मानक LaTeX वितरण में कई फॉण्ट पहले से ही उपयोग के लिए उपलब्ध होते हैं। उदाहरण के लिए, TeX Gyre फॉण्ट्स एक उच्च गुणवत्ता वाली फॉण्ट श्रृंखला है जो सामान्यतः प्रचलित फॉण्ट्स जैसे Times, Helvetica, Palatino आदि पर आधारित होती है। 
+
+इन फॉण्ट्स को लोड करना बहुत सरल होता है — बस उपयुक्त नाम वाले पैकेज को लोड करना होता है। उदाहरण के लिए, Times जैसे दिखने वाले फॉण्ट के लिए TeX Gyre का नाम है Termes:
 
 ```latex
 \usepackage{tgtermes}
 ```
 {: .noedit :}
 
-For `pdflatex`, most fonts are accessible through packages.  You can have a look
-at [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) or the
-[CTAN page on the ‘Font’ topic](https://www.ctan.org/topic/font) to see some
-options.  You can also search on the Internet for the font you want, and look
-for a `pdflatex`-compatible package version.  If you want to use a proprietary
-font, you can search for a suitable clone, which for most applications is
-similar enough to the original.
 
-## The Unicode era
+`pdflatex` के लिए अधिकांश फॉण्ट्स पैकेजों के माध्यम से उपलब्ध होते हैं। आप [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) या [CTAN का 'Font' विषय पृष्ठ](https://www.ctan.org/topic/font) देख सकते हैं ताकि विभिन्न विकल्पों की जानकारी मिल सके। आप इंटरनेट पर अपनी इच्छित फॉण्ट खोज सकते हैं और उसके लिए कोई `pdflatex`-संगत पैकेज संस्करण ढूँढ सकते हैं। यदि आप किसी स्वामित्वयुक्त (proprietary) फॉण्ट का प्रयोग करना चाहते हैं, तो आप उसके लिए उपयुक्त क्लोन भी ढूँढ सकते हैं, जो अधिकांश प्रयोजनों के लिए मूल फॉण्ट के समान होता है।
 
-As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot
-natively use modern OpenType fonts and easily switch between multiple languages
-that use different alphabets (or scripts, to use the technical term). There are
-two replacements for pdfTeX that natively use Unicode input and modern fonts:
-XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using
-the engines `xelatex` and `lualatex` respectively.
 
-In these engines, font selection is performed by the `fontspec` package, and for
-simple documents can look as easy as:
+
+## यूनिकोड युग
+
+चूंकि `pdflatex` केवल 8-बिट फाइल एन्कोडिंग और 8-बिट फॉण्ट तक सीमित है, यह आधुनिक OpenType फॉण्ट्स का स्वाभाविक रूप से उपयोग नहीं कर सकता और न ही आसानी से उन भाषाओं के बीच स्विच कर सकता है जिनमें विभिन्न लिपियाँ (scripts) प्रयुक्त होती हैं। 
+
+इसके लिए pdfTeX के दो विकल्प उपलब्ध हैं जो यूनिकोड इनपुट और आधुनिक फॉण्ट्स को स्वाभाविक रूप से समर्थन देते हैं: XeTeX और LuaTeX। LaTeX में ये क्रमशः `xelatex` और `lualatex` इंजनों के रूप में संपादक (editor) से उपयोग में लाए जाते हैं।
+
+इन इंजनों में फॉण्ट चयन `fontspec` पैकेज के माध्यम से किया जाता है, और किसी साधारण डॉक्यूमेंट के लिए यह चयन कुछ इस प्रकार दिख सकता है:
+
 ```latex
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
 {: .noedit :}
 
-This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
-Notably, this approach works for *any* OpenType font.  Some fonts available for
-`pdflatex` are also available to `xelatex` and `lualatex` through their
-respective packages as well, or by loading any font you have installed on your
-computer by using `fontspec` as shown above.
+यह ऊपर दिए गए `pdflatex` उदाहरण की तरह TeX Gyre Termes फॉण्ट को चुनता है। विशेष रूप से, यह तरीका *किसी भी* OpenType फॉण्ट के लिए काम करता है।  
+`pdflatex` में उपलब्ध कुछ फॉण्ट `xelatex` और `lualatex` में भी उनके संबंधित पैकेजों के माध्यम से उपयोग किए जा सकते हैं, या जैसा कि ऊपर दिखाया गया है, `fontspec` का उपयोग करके आप अपने कंप्यूटर में इंस्टॉल कोई भी फॉण्ट लोड कर सकते हैं।
 
-[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
-with OpenType formats available, so you can use that as a resource for looking
-up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
-earlier.
+[LaTeX फॉण्ट कैटलॉग](https://www.tug.org/FontCatalogue/) में भी ऐसे फॉण्ट दिखाए गए हैं जो OpenType फॉर्मेट में उपलब्ध हैं, इसलिए आप फॉण्ट खोजने के लिए इस स्रोत का उपयोग कर सकते हैं। इसी तरह [CTAN पेज](https://www.ctan.org/topic/font) भी उपयोगी है, जैसा कि पहले बताया गया।
 
-Having selected a font, input can now be typed directly in plain Unicode into a 
-source document. Here is an example showing some Latin and Greek letters as 
-well as some CJK ideographs:
+एक बार फॉण्ट चुन लेने के बाद, आप स्रोत डॉक्यूमेंट में यूनिकोड के रूप में सीधे इनपुट टाइप कर सकते हैं। नीचे एक उदाहरण है जिसमें कुछ लैटिन और ग्रीक अक्षर तथा कुछ CJK (चीनी, जापानी, कोरियाई) विचारचिह्न शामिल हैं:
 
 ```latex
 % !TEX xelatex
@@ -102,4 +75,4 @@ ABC → αβγ → {\cjkfont 你好}
 ```
 
 <p 
-  class="hint">When switching between languages it is usually important to also change things like hyphenation patterns and so on, and the <code>babel</code> and <code>polyglossia</code> packages both provide robust features to do this.</p>
+  class="hint">जब आप एक भाषा से दूसरी भाषा में परिवर्तन करते हैं, तो आमतौर पर हाइफनेशन पैटर्न (शब्दों को तोड़ने के नियम) जैसी चीजों को भी बदलना आवश्यक होता है। इसके लिए `<code>babel</code>` और `<code>polyglossia</code>` पैकेज, दोनों ही उपयोगी और सक्षम सुविधाएँ प्रदान करते हैं।</p>
