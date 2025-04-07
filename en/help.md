@@ -48,7 +48,7 @@ Example text.
 Each example is complete. However you may wish to edit it to make small
 changes, perhaps as part of an Exercise set at the end of the lesson.
 
-Their are two editors being used is on the site (depending on the page).
+There are two editors being used on the site (depending on the page).
 
 * [ACE](https://ace.c9.io/).
 
