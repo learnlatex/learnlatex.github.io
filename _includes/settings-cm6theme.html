@@ -1,0 +1,32 @@
+
+<!-- {% raw %} -->
+<select id="cm6-theme"></select>
+
+<script>
+  var cm6themesel=document.getElementById('cm6-theme');
+  cm6themesel.disabled=!rlallowcookies;
+  var cm6themes=[
+      ["Bright",
+       ['default']],
+      ["Dark",
+       ['oneDark']]
+      ];
+  var cm6sel="";
+  for (let g=0;g<cm6themes.length;g++) {
+      cm6sel=cm6sel+"<optgroup label=\"" + cm6themes[g][0] + "\">" ;
+      var values=cm6themes[g][1];
+      for(let i = 0; i < values.length; i++) {
+	  var v=values[i];
+          if (v == "default") v = "";
+          cm6sel=cm6sel+"<option value=\"" + v + "\"" +
+	      (v==rlcm6theme ? " selected>" : ">") +
+	      values[i] + "</option>";
+      }
+      cm6sel=cm6sel+"</optgroup>";
+  }
+  cm6themesel.innerHTML=cm6sel;
+  cm6themesel.addEventListener('change', function() {
+      createCookie('runlatex-cm6theme',cm6themesel.options[cm6themesel.selectedIndex].value,100);
+  });
+</script>
+<!-- {% endraw %} -->

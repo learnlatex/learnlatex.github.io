@@ -24,3 +24,4 @@ vendor
 _site
 package.json
 .ruby-version
+Gemfile.lock

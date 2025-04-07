@@ -37,3 +37,7 @@ Cookiesはブラウザに保存される少量のデータです。本ウェブ�
 埋め込みACEエディタのテーマを指定します。
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}
