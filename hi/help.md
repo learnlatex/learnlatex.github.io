@@ -37,7 +37,7 @@ permalink: /hi/help
 \usepackage[T1]{fontenc}
 
 \begin{document}
-उदाहरण टेक्स्ट
+Example text.
 \end{document}
 ```
 
