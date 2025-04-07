@@ -138,6 +138,7 @@ non sia definito (quando, invece, lo è).
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \usepackage[leqno}{amsmath}
 
 \begin{document}
