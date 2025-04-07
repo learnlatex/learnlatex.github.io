@@ -117,8 +117,8 @@ l.5 Text_word  $\alpha
 
 <script>
   window.addEventListener('load', function(){
-      if(editors['pre0'] != null) editors['pre0'].moveCursorTo(8, 15, false);
-      if(editors['pre3'] != null) editors['pre3'].moveCursorTo(3, 5, false);
-      if(editors['pre6'] != null) editors['pre6'].moveCursorTo(4, 30, false);
+  rlselectline('pre0',9);
+  rlselectline('pre3',4);
+  rlselectline('pre6',5);
   }, false);
 </script>
