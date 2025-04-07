@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "hi"
 title: "उद्धरण और संदर्भ"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
+description: "यह पाठ संदर्भ डेटाबेस की मूल बातें दिखाता है। सीखें कि आप अपना स्वयं का डेटाबेस कैसे बनाएँ और उन्हें डाक्यूमेंट्स में दो प्रमुख कार्यप्रवाहों (workflows) के माध्यम से कैसे प्रयोग करें।"
 toc-anchor-text: "उद्धरण और संदर्भ"
 toc-description: "संदर्भ डेटाबेस के साथ कार्य करना"
 ---
@@ -20,20 +20,13 @@ runlatex.preincludes = {
 }
 </script>
 
-<span
-  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
+<span class="summary">यह पाठ संदर्भ डेटाबेस की मूल बातें दिखाता है। सीखें कि आप अपना स्वयं का डेटाबेस कैसे बनाएँ और उन्हें डाक्यूमेंट्स में दो प्रमुख कार्यप्रवाहों (workflows) के माध्यम से कैसे प्रयोग करें।</span>
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+संदर्भात्मक उद्धरणों (bibliographic citations) के लिए, यद्यपि आप सभी 'संदर्भ स्रोतों' को सीधे ही अपने डाक्यूमेंट्स में शामिल कर सकते हैं, परन्तु सारे स्रोतों को अपने LaTeX प्रोजेक्ट में डाउनलोड कर कर के शामिल करना, अत्यंत ही कठिन हो जाएगा। सामान्य स्थिति में आप सभी उद्धरणों को एक फाइल (जिसकी एक तार्किक संरचना हो) में लिख कर, स्रोतों की सूचना बार-बार प्राप्त कर सकते हैं। इस फ़ाइल  को एक 'संदर्भ डेटाबेस' कहा जा सकता है, जिसमें जानकारी एक प्रसंस्करण-अनुकूल प्रारूप में होती है। एक या एक से अधिक 'संदर्भ डेटाबेस' का उपयोग करने से आप जानकारी को पुनः प्रयोग कर सकते हैं और मैन्युअल स्वरूपण (manual formatting) से भी बच सकते हैं।
 
-## Reference databases
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+## संदर्भ डेटाबेस (Reference databases)
+संदर्भ डेटाबेस को सामान्यतः 'BibTeX फ़ाइल' कहा जाता है और इसका एक्सटेंशन .bib होता है। इनमें एक या अधिक प्रविष्टियाँ (entries) होती हैं, प्रत्येक संदर्भ के लिए एक प्रविष्टि, और प्रत्येक प्रविष्टि के भीतर कई क्षेत्र (fields) होते हैं। आइए एक उदाहरण देखें:
 
 <!-- {% raw %} -->
 ```bibtex
@@ -51,6 +44,7 @@ within each entry there are a series of fields. Let us look at an example.
   pages   = {7009-7024},
   doi     = {10.1021/ic800654a},
 }
+
 @book{Graham1995,
   author    = {Ronald L. Graham and Donald E. Knuth and Oren Patashnik},
   title     = {Concrete Mathematics},
@@ -61,67 +55,39 @@ within each entry there are a series of fields. Let us look at an example.
 <!-- {% endraw %} -->
 
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+यह एक लेख (article) और एक पुस्तक (book) की प्रविष्टियाँ हैं; ये सबसे सामान्य प्रकार की प्रविष्टियाँ होती हैं। प्रत्येक डेटाबेस प्रविष्टि `@` से शुरू होती है, जैसा कि यहाँ दिखाया गया है, और बाकी सभी जानकारी एक जोड़ी आकुंचक (brace pair) के भीतर होती है।
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
+आवश्यक क्षेत्रों (fields) को key-value प्रारूप में लिखा जाता है। इसके अतिरिक्त हर उद्धरण (citation) को एक अन्य key से दर्शाया जाता है (जो उस उद्धरण में होने वाली सभी जानकारी का 'नाम' जैसा होता है)। इस अन्य key को आप बस एक 'लेबल' माने या 'लेबल' कहें और इस लेबल को आप कुछ भी नाम से दर्शा सकते हैं, जैसे कि पहले उद्धरण में Thomas2008 एक नाम अथवा लेबल ही है जो लेखक स्वर स्व-अनुकूलता से तय कर लिया गया है। सामान्य पद्धति में लेखक का नाम और वर्ष का संयोजन लेबल के रूप में चुन लिया जाता है।
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
+आपको किन-किन क्षेत्रों की आवश्यकता होगी, यह प्रविष्टि के प्रकार पर निर्भर करता है, लेकिन अधिकतर जानकारी स्पष्ट रूप से ही लिखी होती है। आप यह भी देखेंगे कि `author` क्षेत्र में प्रत्येक लेखक को `and` से अलग किया गया है। यह _आवश्यक_ है: आउटपुट के स्वरूप को यह जानना होता है कि कौन-सा लेखक कौन है। आप यह भी देख सकते हैं कि लेख के शीर्षक में कुछ भाग अतिरिक्त आकुंचकों `{}` में रखे गए हैं; इसका उद्देश्य किसी भी अक्षर-रूपांतरण (case-changing) को रोकना है।
 
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
-`learnlatex.bib`.
 
-## Transferring information from the database
+`.bib` फ़ाइलों को मैन्युअली संपादित करना थोड़ा थकाऊ और उबाऊ कार्य होता है, इसलिए अधिकांश लोग समर्पित संपादक का उपयोग करते हैं। [JabRef](https://www.jabref.org) एक व्यापक रूप से प्रयुक्त और क्रॉस-प्लेटफ़ॉर्म टूल है, लेकिन इसके अलावा भी कई अन्य इंटरफेस उपलब्ध हैं। यदि किसी संदर्भ में DOI (Digital Object Identifier) हो, तो आप [doi2bib](https://doi2bib.org) की सहायता से आसानी से BibTeX प्रविष्टि प्राप्त कर सकते हैं। लेकिन यह ज़रूर जाँच लें कि प्राप्त प्रविष्टि सही है या नहीं।
 
-To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which creates a file with a
-list of the references that your document cites.  Second, run a
-program that takes information from the database of references, picks
-out the ones that you use, and puts them in order.  Finally, compile
-your document again so that LaTeX can use that information to resolve
-your citations. Usually it will require at least two compilations to
-resolve all the references.
+यहाँ हम ऊपर दिए गए लघु डेटाबेस उदाहरण का प्रयोग करेंगे: हमने इसे `learnlatex.bib` के रूप में 'सहेजा' है।
 
-For the second step, there are two systems in wide use: BibTeX and
-Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
-BibTeX is used with either no packages at all or with `natbib`.
 
-Running a second tool as well as LaTeX is handled in different ways by different
-editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go.
-Your editor might have a single 'do stuff' button or you might have to
-choose to run BibTeX or Biber manually between LaTeX runs.
+## डेटाबेस से जानकारी स्थानांतरित करना (Transferring information from the database)
 
-The format of citations and references is independent of your BibTeX database,
-and is set by what is known as a 'style'. We will see that these work slightly
-differently in the BibTeX workflow and `biblatex`, but the general idea remains:
-we can choose how citations appear.
+डॉक्यूमेंट में संदर्भ जानकारी (reference information) को लाने के लिए तीन चरण होते हैं। पहले चरण में, LaTeX का उपयोग करके जब डॉक्यूमेंट को संकलित (compile) किया जाता है, तब इससे एक फ़ाइल बनती है जो आपके डॉक्यूमेंट द्वारा उद्धृत (cited) किए गए संदर्भों की सूची स्वतः ही तैयार करती है। दूसरे चरण में एक प्रोग्राम चलता है जो संदर्भ डेटाबेस से जानकारी को लेता है, परन्तु केवल उन्हीं जानकारी को छाँटता है जिनका उपयोग आपने कहीं अनुच्छेद या टेबल या चित्र या सामान्य टेक्स्ट आदि को लिखने के दौरान किया है, और उन्हें फिर स्वतः एक क्रम में रखता है। तीसरे चरण में, डॉक्यूमेंट का जब दोबारा संकलन होता है तब LaTeX प्राप्त जानकारी का उपयोग करके आपके टेक्स्ट में मौजूद उद्धरणों को स्पष्ट कर देता है। सामान्यतः सभी संदर्भों को पूरी तरह से हल (resolve) करने के लिए कम-से-कम दो बार संकलन करना आवश्यक होता है।
 
-## The BibTeX workflow with `natbib`
 
-Whilst it is possible to insert citations into a LaTeX document without
-any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create different types of citation and
-has a lot of styles available.
+दूसरे चरण के लिए दो प्रमुख प्रणालियाँ (systems) प्रचलन में हैं: BibTeX और Biber। Biber केवल `biblatex` नामक LaTeX पैकेज के साथ ही उपयोग किया जाता है, जबकि BibTeX या तो किसी भी पैकेज के न होने पे, या `natbib` के साथ उपयोग किया जाता है।
 
-The basic structure of our input is as shown in this example.
+दूसरे टूल को चलाने का तरीका या LaTeX को हैंडल करने का तरीका अलग-अलग संपादकों (editors) में अलग-अलग तरीकों से होता है। हमारे सभी ऑनलाइन कोड-उदाहरणों में कुछ 'परदे के पीछे' (behind the scenes) स्क्रिप्ट्स होती हैं जो यह सब एक बार में कर देती हैं। आपके संपादक में कोई 'सब करें' बटन हो सकती है, या ऐसा हो सकता है कि आपको LaTeX संकलनों के बीच में मैन्युअल रूप से BibTeX या Biber का चयन करने का अवसर मिले।
+
+
+उद्धरणों और संदर्भों का स्वरूप (format) आपके BibTeX डेटाबेस से स्वतंत्र होता है, और इसे एक 'style' के माध्यम से निर्धारित किया जाता है। हम देखेंगे कि BibTeX कार्यप्रवाह  में या `biblatex` में ये स्टाइल्स थोड़े-थोड़े अलग तरह से काम करते हैं, लेकिन मूल विचार वही रहता है: हम दोनों के केस में यह चुन सकते हैं कि उद्धरण (citations) कैसे दिखाई दें।
+
+
+
+## `natbib` के साथ BibTeX कार्यप्रवाह (The BibTeX workflow with `natbib`)
+
+हालाँकि बिना किसी अतिरिक्त पैकेज के भी LaTeX डॉक्यूमेंट में उद्धरण जोड़े जा सकते हैं, पर यह तरीका बहुत सीमित होता है। इसके बजाय, हम `natbib` पैकेज का उपयोग करेंगे, जो हमें विभिन्न प्रकार के उद्धरण बनाने की अनुमति देता है और कई स्टाइल्स भी उपलब्ध कराता है।
+
+हमारे इनपुट की मूल संरचना (basic structure) निम्न उदाहरण में दर्शाई गई है।
+
 
 ```latex
 \documentclass{article}
@@ -144,25 +110,22 @@ Together \citep{Graham1995,Thomas2008}
 \end{document}
 ```
 
-You can see that we can cite different entries in the database by giving their
-key. The `natbib` package offers both textual and parenthetical citation styles,
-`\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line; here we've used the `plainnat` style. The
-bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use; this is a comma-separated list of names.
+आप देख सकते हैं कि हम डेटाबेस में विभिन्न प्रविष्टियों (entries) को उनके *key* देकर उद्धृत (cite) कर सकते हैं।  `natbib` पैकेज दो प्रकार की उद्धरण शैलियाँ प्रदान करता है —  
+- पाठ्य (textual) उद्धरण: `\citet`  
+- कोष्ठकीय (parenthetical) उद्धरण: `\citep`
 
-Page references can be added to the citation with an optional argument.
-If two optional arguments are given, the first goes in front of the citation
-label for a short note and the second after the label for a page reference.
+संदर्भ शैली (reference style) को `\bibliographystyle` पंक्ति द्वारा चुना जाता है; यहाँ हमने `plainnat` शैली का उपयोग किया है। संदर्भ-सूची (bibliography) वास्तव में `\bibliography` पंक्ति द्वारा डाली जाती है, जो उपयोग में ली जाने वाली डेटाबेस फ़ाइलों को भी निर्दिष्ट करती है; यह एक कॉमा से विभाजित नामों की सूची होती है।
 
-The setup above uses author-year style, but we can make use of numeric
-citations. That is done by adding the `numbers` option to the `natbib` line.
+पृष्ठ संख्या (page references) को उद्धरण में वैकल्पिक तर्क (optional argument) के रूप में जोड़ा जा सकता है। यदि दो वैकल्पिक तर्क दिए जाएँ, तो पहला उद्धरण लेबल से पहले एक संक्षिप्त टिप्पणी के रूप में आता है, और दूसरा पृष्ठ संख्या के लिए लेबल के बाद।
 
-## The `biblatex` workflow
+ऊपर दिए गए विन्यास (setup) में लेखक-वर्ष (author-year) शैली का उपयोग किया गया है, लेकिन हम संख्यात्मक (numeric) उद्धरण भी प्रयोग कर सकते हैं।  
+इसके लिए `natbib` लाइन में `numbers` विकल्प जोड़ा जाता है।
 
-The `biblatex` package works slightly differently to `natbib`, as we select
-the databases in the preamble but print it in the document body. There are
-some new commands for this.
+
+## `biblatex` कार्यप्रवाह
+
+`biblatex` पैकेज `natbib` से थोड़ा भिन्न तरीके से कार्य करता है, क्योंकि इसमें हम संदर्भ डेटाबेस (reference databases) को *प्रारंभिक भाग* (preamble) में चुनते हैं, लेकिन उन्हें *मुख्य डॉक्यूमेंट भाग* (document body) में मुद्रित करते हैं। इसके लिए कुछ नए कमांड्स का प्रयोग किया जाता है।
+
 
 ```latex
 \documentclass{article}
@@ -186,75 +149,38 @@ Together \autocite{Thomas2008,Graham1995}
 \end{document}
 ```
 
-Notice that `\addbibresource` _requires_ the full database filename, whereas
-we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for its citation commands, but these are
-all quite easy to guess.
+ध्यान दें कि `\addbibresource` में पूरा डेटाबेस फ़ाइलनाम (जैसे `learnlatex.bib`) देना आवश्यक होता है, जबकि `natbib` के साथ `\bibliography` में हमने `.bib` नहीं लिखा था। साथ ही, `biblatex` में उद्धरण कमांड्स के नाम अपेक्षाकृत लंबे होते हैं, लेकिन ये अनुमान लगाना आसान होते हैं।
 
-Again, short text before and after the citation can be inserted with
-the optional arguments. Note that the page numbers need not be prefixed
-with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
-prefix.
+उद्धरण से पहले और बाद में कोई/कुछ भी अन्य संक्षिप्त_टेक्स्ट अगर जोड़ना हो तो इसके लिए 'संक्षिप्त_टेक्स्ट' वैकल्पिक तर्क (optional arguments) के रूप में दिए जा सकते हैं। यह भी ध्यान दें कि पृष्ठ संख्याओं के साथ `p.` या `pp.` जोड़ने की आवश्यकता नहीं होती — `biblatex` स्वयं ही उपयुक्त उपसर्ग (prefix) जोड़ सकता है।
+
+`biblatex` में संदर्भ शैली (reference style) पैकेज को लोड करते समय ही चुनी जाती है। यहाँ हमने `authoryear` शैली का उपयोग किया है,  
+लेकिन `numeric` सहित कई अन्य शैलियाँ भी उपलब्ध हैं।
 
 
-In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authoryear`, but there is a `numeric` style and many others are
-also available.
 
-## Choosing between the BibTeX workflow and `biblatex`
+## BibTeX वर्कफ़्लो और `biblatex` के बीच चयन करना
 
-Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
-files and can produce structurally similar output in the document, they use
-completely different ways to produce this result. That means that there are
-some differences between the two approaches that may help you choose which
-one works best for you.
+हालाँकि BibTeX वर्कफ़्लो और `biblatex` दोनों ही BibTeX फ़ाइलों के माध्यम से इनपुट प्राप्त करते हैं और डॉक्यूमेंट में संरचनात्मक रूप से समान आउटपुट उत्पन्न कर सकते हैं, फिर भी वे इस परिणाम को प्राप्त करने के लिए पूरी तरह से अलग-अलग तरीके अपनाते हैं। इसका अर्थ है कि इन दोनों तरीकों में कुछ अंतर हैं जो यह तय करने में आपकी मदद कर सकता है कि कौन-सा तरीका आपके लिए बेहतर है।
 
-In the BibTeX workflow the bibliography style is ultimately decided
-by a `.bst` file which you select with the `\bibliographystyle` command.
-`biblatex` does not use `.bst` files and uses a different system.
-If you are using a template that comes with a `.bst` file or are given a `.bst`
-file for your project, you must use the BibTeX workflow and cannot use
-`biblatex`.
+BibTeX वर्कफ़्लो में, ग्रंथ सूची (bibliography) की शैली अंततः `.bst` फ़ाइल द्वारा निर्धारित की जाती है, जिसे आप `\bibliographystyle` कमांड के माध्यम से चुनते हैं। `biblatex` `.bst` फ़ाइलों का उपयोग नहीं करता है और एक अलग प्रणाली अपनाता है। यदि आप किसी ऐसे टेम्पलेट का उपयोग कर रहे हैं जिसमें `.bst` फ़ाइल दी गई है या आपको अपने प्रोजेक्ट के लिए `.bst` फ़ाइल दी गई है, तो आपको BibTeX वर्कफ़्लो का ही उपयोग करना होगा और आप `biblatex` का उपयोग नहीं कर सकते।
 
-The different approach `biblatex` takes implies that you can modify the output
-of the bibliography and citation commands directly from your document preamble
-using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
-hand usually require working with these external files and need knowledge of
-the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customize than the BibTeX workflow.
 
-In `biblatex` it is generally easier to implement more elaborate citation
-styles with a wider array of different citation commands. It also offers more
-context-dependent features. Roughly speaking this is less interesting for
-the styles common in many STEM subjects, but becomes relevant for some more
-complex styles in some areas of the humanities.
+`biblatex` द्वारा अपनाया गया भिन्न दृष्टिकोण यह संकेत देता है कि आप अपने डॉक्यूमेंट के प्रीएम्बल (preamble) में LaTeX-आधारित कमांड्स का उपयोग करके सीधे ग्रंथ सूची और उद्धरण (citation) कमांड्स के आउटपुट को खुद से संशोधित कर सकते हैं। पर इसका नुकसान यह है कि दूसरी ओर आपको BibTeX `.bst` शैलियों में संशोधन करने के लिए सामान्यतः बाहरी फ़ाइलों के साथ काम करने का हुनर और BibTeX प्रोग्रामिंग भाषा का ज्ञान होना चाहिए होगा। सामान्यतः यह माना जाता है कि `biblatex` को अनुकूलित करना BibTeX वर्कफ़्लो की तुलना में आसान होता है।
 
-BibTeX can only sort US-ASCII characters correctly and relies on workarounds
-to provide US-ASCII-based sorting for non-US-ASCII characters.
-With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
-is usually a better choice if you want to sort your bibliography in a
-non-ASCII/non-English order.
 
-Having been around for much longer than `biblatex`, the BibTeX workflow is
-more established than `biblatex`, meaning that many publishers and journals
-expect bibliographies generated via the BibTeX workflow. Those publishers
-cannot or generally do not accept submissions using `biblatex`.
+`biblatex` में अधिक विस्तृत उद्धरण शैलियों को लागू करना और विभिन्न प्रकार के उद्धरण कमांड्स का व्यापक उपयोग करना सामान्यतः अधिक आसान होता है। यह अधिक संदर्भ-निर्भर विशेषताएँ भी प्रदान करता है। मोटे तौर पर यह विज्ञान, प्रौद्योगिकी, इंजीनियरिंग और गणित (STEM) विषयों में सामान्य रूप से उपयोग होने वाली शैलियों के लिए कम रुचिकर होता है, लेकिन मानविकी के कुछ क्षेत्रों में अधिक जटिल शैलियों के लिए यह अधिक प्रासंगिक बन जाता है।
 
-The bottom line is: Check the author/submission guidelines if you are
-submitting to a journal or publisher. If you are given a `.bst` file, you must
-use the BibTeX workflow. If you want a relatively simple bibliography and
-citation style and only need English US-ASCII-based sorting, the BibTeX workflow
-should suffice. If you need a more complex citation style, non-English sorting
-or want easier access to citation and bibliography style customisation features,
-you will want to look into using `biblatex`.
+BibTeX केवल US-ASCII वर्णों को सही ढंग से क्रमबद्ध कर सकता है और गैर-US-ASCII वर्णों के लिए US-ASCII-आधारित क्रमबद्धता प्रदान करने के लिए वर्कअराउंड्स (खुद से आविष्कार किया गया कोई तरीका) पर निर्भर करता है। Biber के साथ `biblatex` पूर्ण यूनिकोड क्रमबद्धता क्षमताएँ प्रदान करता है। इस प्रकार, यदि आप अपनी ग्रंथ सूची को गैर-ASCII/गैर-अंग्रेज़ी क्रम में क्रमबद्ध करना चाहते हैं तो `biblatex` आम तौर पर एक बेहतर विकल्प होता है।
 
-## Exercises
 
-Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
-to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and TeXLive.net
-automation.
+BibTeX वर्कफ़्लो `biblatex` की तुलना में काफी पहले से उपयोग में है, जिसका अर्थ है कि यह `biblatex` की तुलना में अधिक स्थापित है, और कई प्रकाशक और जर्नल BibTeX वर्कफ़्लो द्वारा उत्पन्न ग्रंथ सूचियों की ही अपेक्षा करते हैं। ऐसे प्रकाशक या तो `biblatex` का उपयोग करके किए गए सबमिशन को स्वीकार नहीं करते हैं या सामान्यतः उस पर काम ही नहीं करते।
 
-See what happens when you create new database entries and new citations. Add
-a citation that's not in the database and see how it appears. Experiment
-with `natbib`'s `numeric` and `biblatex`'s `style=numeric` option.
+निचोड़ यह है: यदि आप किसी जर्नल या प्रकाशक को अपना लेख सबमिट (submit) कर रहे हैं तो लेखक/सबमिशन दिशानिर्देशों की जाँच करें। यदि आपको `.bst` फ़ाइल दी जाती है, तो आपको BibTeX वर्कफ़्लो का उपयोग करना होगा। यदि आप अपेक्षाकृत सरल ग्रंथ सूची और उद्धरण शैली चाहते हैं और केवल अंग्रेज़ी US-ASCII-आधारित क्रमबद्धता की आवश्यकता है, तो BibTeX वर्कफ़्लो पर्याप्त है। यदि आपको अधिक जटिल उद्धरण शैली (complex citation style), गैर-अंग्रेज़ी क्रमबद्धता (non-English sorting) या ग्रंथ सूची शैली की अनुकूलन सुविधाओं (bibliography style customisation features) का प्रयोग करना है, तो आपको `biblatex` पर विचार करना चाहिए।
+
+
+
+## अभ्यास
+
+`natbib` और `biblatex` दोनों उदाहरणों को प्रयोग करके देखें। `natbib` के लिए आपको LaTeX, BibTeX, LaTeX, LaTeX क्रम में रन करना होगा; जबकि `biblatex` के लिए क्रम LaTeX, Biber, LaTeX होता है:। यह जानने की कोशिश करें कि आपके संपादक (editor) में यह कैसे किया जाता है, या फिर Overleaf और TeXLive.net के स्वचालन (automation) का उपयोग करें।
+
+देखें कि जब आप नई डेटाबेस प्रविष्टियाँ (entries) और नए उद्धरण (citations) बनाते हैं तो क्या होता है। एक ऐसा उद्धरण जोड़ें जो डेटाबेस में मौजूद नहीं है और देखें कि वह डॉक्यूमेंट में कैसे प्रकट होता है। `natbib` के `numeric` विकल्प और `biblatex` के `style=numeric` विकल्प के साथ प्रयोग करें।
