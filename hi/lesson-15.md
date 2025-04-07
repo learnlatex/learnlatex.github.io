@@ -2,56 +2,46 @@
 layout: "lesson"
 lang: "hi"
 title: "एर्रोर्स (त्रुटियों) से निपटना"
-description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
+description: "यह पाठ LaTeX डाक्यूमेंट्स में होने वाली कुछ सामान्य त्रुटियों को दर्शाता है, उनका अर्थ समझाता है, और उन्हें सुधारने के उपाय बताता है।"
 toc-anchor-text: "त्रुटि प्रबंधन"
 toc-description: "अप्रत्याशित त्रुटियों से निपटना"
 ---
 
 # एर्रोर्स (त्रुटियों) से निपटना
 
-<span
-  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
+<span class="summary">यह पाठ LaTeX डाक्यूमेंट्स में होने वाली कुछ सामान्य त्रुटियों को दर्शाता है, उनका अर्थ समझाता है, और उन्हें सुधारने के उपाय बताता है।</span>
 
-Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
-closer to working with programming language compilers, and as in programming
-users may make errors in their input and so need to deal with error messages
-reported by the system.
+एक सामान्य वर्ड प्रोसेसिंग सिस्टम के विपरीत, LaTeX का कार्य "Edit/Run/View" आदि टूल्स से जुदा होता है, अत: यह ऐसा प्रतीत होता है जैसे आप किसी प्रोग्रामिंग भाषा के कंपाइलर के साथ काम कर रहे हैं। और जैसे प्रोग्रामिंग में उपयोगकर्ता इनपुट में त्रुटियाँ कर सकते हैं, वैसे ही LaTeX में भी आप से त्रुटियाँ हो सकती हैं, जिन्हें उपयोगकर्ता को त्रुटि संदेशों के माध्यम से पहचान कर सुधारना होता है।
 
-## Common errors
 
-This page gives examples of several common errors. Each error example has some discussion about the form of the error
-message.
+## सामान्य त्रुटियाँ
+यह पृष्ठ कई सामान्य LaTeX त्रुटियों के उदाहरण प्रस्तुत करता है। प्रत्येक त्रुटि उदाहरण के साथ संबंधित त्रुटि संदेश की व्याख्या दी गई है।
 
-It may be instructive to try the examples but also use the
-edit features to try to fix the documents and test that you can
-resolve the errors.
+इन उदाहरणों को पहले से जान लेना उपयोगी हो सकता है, साथ ही संपादन सुविधाओं का उपयोग करके डाक्यूमेंट्स को सुधारने और त्रुटियों को ठीक करने का अभ्यास भी करें।
+
+
 
 ### pdflatex not found
 
-A common first error that people see when starting is:
-
+जब लोग शुरुआत करते हैं, तो उन्हें Windows पर दिखाई देने वाली पहली सामान्य त्रुटि यह होती है:
 ```
 'pdflatex' is not recognized as an internal or external command,
 operable program or batch file.
 ```
 {: .noedit :}
 
-on Windows or
 
+जब लोग शुरुआत करते हैं, तो उन्हें Linux पर दिखाई देने वाली पहली सामान्य त्रुटि यह होती है:
 ```
 bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-on Linux.
 
-This is
-not a TeX error but an operating system error saying that TeX is not
-installed or not found.  A common mistake is to install an _editor_
-such as TeXworks or TeXShop but without installing a TeX system such as
-TeX Live or MiKTeX.
 
-### Anatomy of a TeX error message
+यह कोई TeX त्रुटि नहीं है, बल्कि एक ऑपरेटिंग सिस्टम की त्रुटि है जो यह बताती है कि TeX या तो इंस्टॉल नहीं है या सिस्टम को नहीं मिल रहा है। एक आम गलती यह होती है कि उपयोगकर्ता केवल कोई _एडिटर_ (जैसे TeXworks या TeXShop) इंस्टॉल कर लेते हैं, लेकिन किसी TeX सिस्टम (जैसे TeX Live या MiKTeX) को इंस्टॉल नहीं करते।
+
+### TeX त्रुटि संदेश की संरचना (Anatomy of a TeX error message)
 
 ```latex
 \documentclass{article}
@@ -66,7 +56,7 @@ My command is used here \mycommand.
 \end{document}
 ```
 
-This produces a multi-line message in the log file.
+यह लॉग फाइल में एक बहु-पंक्तीय (multi-line) संदेश उत्पन्न करता है।
 
 ```
 ! Undefined control sequence.
@@ -78,39 +68,29 @@ l.8 My command is used here \mycommand
 ```
 {: .noedit :}
 
-* The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
-* The second pair of lines show the line that TeX was processing, with a line break marking the point
-  that TeX had reached. The undefined command is the last token read so the last word before the line break,
-  `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
-  an argument but have not yet been executed by TeX.
-* There may in general be some additional lines at this point, showing more context of the error message,
-* The final line starts with `l.` followed by a line number, and then the line in the source file where the
-  error is detected.
 
-* The final line is a `?`.  If using TeX interactively it is possible to
-  enter instructions to TeX at this point, but most editors and online
-  systems run TeX in a mode that does not stop at errors but will
-  scroll past this and try to process the rest of the document. Typing
-  `s` to the prompt will instruct TeX to carry on in this mode if you
-  are working interactively.
+* पहली पंक्ति, जो `!` चिह्न से आरंभ होती है, त्रुटि का सामान्य प्रकार बताती है (इस मामले में यह एक अपरिभाषित कमांड है)।
+
+* अगली दो पंक्तियाँ उस पंक्ति को दिखाती हैं जिसे TeX संसोधित कर रहा था, जिसमें लाइन ब्रेक यह दर्शाता है कि TeX कहाँ तक पहुँचा। अपरिभाषित कमांड आखिरी टोकन होता है जिसे पढ़ा गया, जैसे यहाँ `\textbold`। लाइन ब्रेक के बाद के टोकन `{hmmm}` संभवतः एक आर्ग्युमेंट के रूप में पढ़े गए हैं, लेकिन अभी TeX द्वारा निष्पादित नहीं हुए हैं।
+
+* सामान्यतः इस बिंदु पर कुछ अतिरिक्त पंक्तियाँ हो सकती हैं जो त्रुटि सन्देश का और अधिक सन्दर्भ प्रदान करती हैं।
+
+* अंतिम पंक्ति `l.` से शुरू होती है, इसके बाद लाइन नंबर होता है, और फिर उस स्रोत फाइल की पंक्ति होती है जहाँ त्रुटि पाई गई है।
+
+* अंतिम पंक्ति में `?` होता है। यदि आप TeX को इंटरऐक्टिव मोड में चला रहे हैं, तो इस बिंदु पर आप उसे निर्देश दे सकते हैं। हालाँकि, अधिकतर एडिटर और ऑनलाइन प्रणालियाँ TeX को ऐसे मोड में चलाती हैं जो त्रुटियों पर नहीं रुकता, बल्कि दस्तावेज़ के बाकी हिस्सों को संसाधित करने की कोशिश करता है। यदि आप इंटरऐक्टिव मोड में हैं, तो `s` टाइप करने से TeX आगे जारी रखेगा।
 
 
-Note here that TeX does not see the error at the point that
-the definition is made; and in fact if `\mycommand` is defined but not
-used, no error would be raised. So although the error is reported on
-line 8, the "real" error is in the definition on line 4, so it is
-important to see the whole error message.
+यहाँ ध्यान दें कि TeX को त्रुटि उस स्थान पर नहीं दिखती जहाँ पर परिभाषा की जाती है; और वास्तव में, यदि `\mycommand` परिभाषित है लेकिन कभी उपयोग में नहीं लाया गया है, तो कोई त्रुटि (error) नहीं आएगी। इसलिए यद्यपि त्रुटि 'लाइन 8' पर दर्शाई गई है आपको, वास्तविकता में शायद त्रुटि 'लाइन 4' में हो। अतः संपूर्ण त्रुटि सन्देश को देखना महत्वपूर्ण होता है।
 
-Beware that some editors show one line "summaries" of the error log.
-This can be particularly misleading if shown as
+सावधान रहें कि कुछ एडिटर त्रुटि लॉग की केवल एक-पंक्ति की "सारांश" ही दिखाते हैं। यह विशेष रूप से तब भ्रामक हो सकता है जब ऐसा प्रदर्शित हो:
 
 `line 8: undefined command: ...\mycommand`
 
-as it makes it appear that `\mycommand` is not defined.
+क्योंकि यह ऐसा प्रतीत कराता है कि `\mycommand` परिभाषित ही नहीं किया गया है।
 
 
-### Mismatched braces
 
+### मेल न खाती ब्रेसेस (Mismatched braces)
 
 ```latex
 \documentclass{article}
@@ -123,18 +103,14 @@ as it makes it appear that `\mycommand` is not defined.
 \end{document}
 ```
 
-Here the error is a mismatched `}` used to end the optional
-argument. The closing brace causes LaTeX's option parsing
-to fail and you get an internal and not that helpful error: 
+यहाँ त्रुटि एक मेल न खाती हुई `}` (बन्द ब्रेसे) की है, जो वैकल्पिक आर्ग्युमेंट (optional argument) को समाप्त करने के लिए उपयोग की गई है। इस बंद ब्रेसे के कारण LaTeX का विकल्प-पार्सिंग (option parsing) असफल हो जाता है, और परिणामस्वरूप आपको एक आंतरिक और अधिक उपयोगी न लगने वाली त्रुटि प्राप्त होती है।
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.
 ```
 {: .noedit :}
 
-While the error description is unhelpful; the following two
-lines do accurately display the location of the error by the use of
-the linebreak showing how far TeX had read:
+हालाँकि त्रुटि का विवरण बहुत सहायक नहीं होता; लेकिन इसके बाद की दो पंक्तियाँ त्रुटि का स्थान सही ढंग से दर्शाती हैं। लाइन ब्रेक (linebreak) यह दिखाता है कि TeX ने कहाँ तक पढ़ा है, जिससे त्रुटि की स्थिति स्पष्ट हो जाती है।
 
 ```
 l.4 \usepackage[leqno}
@@ -143,7 +119,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-### Missing files
+### गुम फाइलें (Missing Files)
 
 ```latex
 \documentclass{article}
@@ -156,19 +132,16 @@ l.4 \usepackage[leqno}
 \end{document}
 ```
 
-This produces the error
+इससे यह त्रुटि उत्पन्न होती है:
 
 ```
 ! LaTeX Error: File `amsmathz.sty' not found.
 ```
 {: .noedit :}
 
-Note: the same error may be caused by two different causes; a simple
-typo as here, which may be corrected by fixing the package name, or
-that the file really is missing and needs to be installed on the
-current system.
+नोट: एक ही त्रुटि दो अलग-अलग कारणों से उत्पन्न हो सकती है; जैसे कि यहाँ एक साधारण टाइपो (वर्तनी की गलती), जिसे पैकेज का नाम सही करके ठीक किया जा सकता है, या यह भी संभव है कि वह फाइल वास्तव में आपके सिस्टम पर मौजूद नहीं है और उसे इंस्टॉल करने की आवश्यकता है।
 
-### Blank lines in display math
+### डिस्प्ले मैथ में खाली पंक्तियाँ (Blank lines in display math)
 
 ```latex
 \documentclass{article}
@@ -186,21 +159,20 @@ Some text
 \end{document}
 ```
 
-Produces the slightly mysterious error
-
+यह एक थोड़ी रहस्यमय त्रुटि उत्पन्न करता है:
 ```
 ! Missing $ inserted.
 ```
 {: .noedit :}
 
-But the fix is simple, blank lines are not allowed in math
-environments and should be deleted.
+लेकिन इसका समाधान सरल है, गणित के वातावरण में रिक्त पंक्तियों की अनुमति नहीं है और उन्हें हटा दिया जाना चाहिए।
 
-## Exercise
 
-Attempt to fix the errors in the supplied examples.
+## अभ्यास
 
-Produce small documents with different errors and note the form of the error messages.
+दिए गए उदाहरणों में त्रुटियों को ठीक करने का प्रयास करें।
+
+विभिन्न त्रुटियों वाले छोटे डॉक्यूमेंट बनाएँ और त्रुटि संदेशों के स्वरूप को नोट करें।
 
 <script>
   window.addEventListener('load', function(){
