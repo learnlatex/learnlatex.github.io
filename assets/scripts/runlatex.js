@@ -234,7 +234,7 @@ function openinoverleaf(nd) {
     }
     if(eng != null) {
 	engv=eng[1].toLowerCase();
-	if(engv == "pdftex" || engv == "luatex" || engv == "xetex" || engv == "ptex" || engv == "uptex") {
+	if(engv == "pdftex" || engv == "luatex" || engv == "xetex" || engv == "ptex" || engv == "uptex" || engv == "context") {
 	    addinput(fm,"main_document","document.tex");
 	}    
     }
@@ -253,18 +253,21 @@ function openinoverleaf(nd) {
 	    }
 	}
     }
-//    if(eng != null) {
+    if(eng != null) {
 	if(engv.indexOf("platex") != -1 || engv.indexOf("ptex") != -1 || engv=="tex") {
 	    addinput(fm,"encoded_snip[]","$latex = '" + engv + "';\n$bibtex = 'pbibtex';\n$dvipdf = 'dvipdfmx %O -o %D %S';");
 	    addinput(fm,"snip_name[]","latexmkrc");
 	    engv="latex_dvipdf";
+	} else if(engv == "context") {
+	    addinput(fm,"encoded_snip[]","$pdflatex = 'context --result=output ';");
+	    addinput(fm,"snip_name[]","latexmkrc");
 	} else if(engv == "pdftex" || engv == "luatex" || engv == "xetex") {
 	    addinput(fm,"encoded_snip[]","$pdflatex = '" + engv + "';");
 	    addinput(fm,"snip_name[]","latexmkrc");
 	    engv=rldefaultengine;
 	}
 
-//    }
+    }
     addinput(fm,"engine",engv);
     fm.submit();
 }
