@@ -83,7 +83,7 @@ heading_planet:
   vi: "Liên kết ngoài"
   zh-hans: "星球"
   zh-hant: "星球"
-  hi: "लाटेक-विश्व"
+  hi: "LaTeX-विश्व"
   mr: "लाटेक्-विश्व"
   ca: "Planeta"
 informational-elements_lesson:
@@ -355,7 +355,7 @@ navigational-elements_latex_project:
   vi: "The LaTeX Project"
   zh-hans: "LaTeX 项目"
   zh-hant: "LaTeX 專案"
-  hi: "लाटेक परियोजना"
+  hi: "LaTeX परियोजना"
   mr: "लाटेक् प्रकल्प"
   ca: "The LaTeX Project"
 navigational-elements_tug:

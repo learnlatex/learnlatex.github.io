@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "hi"
-title: "लंबे दस्तावेज़ों की संरचना करना"
-description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
+title: "लंबे डाक्यूमेंट्स की संरचना करना"
+description: "यह पाठ यह दिखाता है कि LaTeX कैसे आपको अपने स्रोतों (sources) को छोटे और अधिक प्रबंधनीय फाइलों में विभाजित करने की सुविधा देता है, और यह लंबा डाक्यूमेंट्स तैयार करने की प्रक्रिया को कैसे आसान और तेज बना सकता है।"
 toc-anchor-text: "स्रोतों की संरचना करना"
-toc-description: "नियंत्रित तरीके से स्रोतों को विभाजित करना।"
+toc-description: "नियंत्रित तरीके से स्रोतों को विभाजित करना"
 ---
 
-# लंबे दस्तावेज़ों की संरचना करना
+# लंबे डाक्यूमेंट्स (जैसे कि थीसिस) की संरचना करना
 
 <script>
 runlatex.preincludes = {
@@ -25,8 +25,7 @@ runlatex.preincludes = {
 }
 </script>
 
-<span
-  class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
+<span class="summary">यह पाठ यह दिखाता है कि LaTeX कैसे आपको अपने स्रोतों (sources) को छोटे और अधिक प्रबंधनीय फाइलों में विभाजित करने की सुविधा देता है, और यह लंबा डाक्यूमेंट्स तैयार करने की प्रक्रिया को कैसे आसान और तेज बना सकता है।</span>
 
 When you are writing a longer document, you’ll likely want to split up
 the source into multiple files. For example, it's very common to have

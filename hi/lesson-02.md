@@ -4,7 +4,7 @@ lang: "hi"
 title: "LaTeX के साथ कार्य करना"
 description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
 toc-anchor-text: "LaTeX के साथ कार्य करना"
-toc-description: "टेक प्रणालियाँ और LaTeX पाठ संपादक।"
+toc-description: "टेक प्रणालियाँ और LaTeX पाठ संपादक"
 ---
 
 # LaTeX के साथ कार्य करना

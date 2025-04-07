@@ -1,10 +1,10 @@
 ---
 layout: "lesson"
 lang: "hi"
-title: "दस्तावेज़ों तक पहुँचना और सहायता प्राप्त करना"
+title: "प्रलेखों तक पहुँचना तथा और सहायता प्राप्त करना"
 description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
-toc-anchor-text: "मदद और दस्तावेज़ीकरण"
-toc-description: "दस्तावेज़ीकरण और सहायता प्राप्त करना"
+toc-anchor-text: "मदद और प्रलेखन"
+toc-description: "प्रलेखीकरण तथा और सहायता प्राप्त करना"
 ---
 
 # दस्तावेज़ीकरण और सहायता प्राप्त करना
