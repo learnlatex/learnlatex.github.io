@@ -1,5 +1,5 @@
 // runlatex.js for TeXLive.net and Overleaf
-// Copyright 2020 2021 David Carlisle
+// Copyright 2020 2021 2025 David Carlisle
 // MIT Licence
 
 // set here but local versions can be redefined after
@@ -493,6 +493,7 @@ function rlDeleteCookies() {
  createCookie('runlatex-return',"",-999);
  createCookie('runlatex-engine',"",-999);
  createCookie('runlatex-acetheme',"",-999);
+ createCookie('runlatex-cm6theme',"",-999);
  window.location.reload(false);
 }
 
