@@ -27,22 +27,14 @@ runlatex.preincludes = {
 
 <span class="summary">यह पाठ यह दिखाता है कि LaTeX कैसे आपको अपने स्रोतों (sources) को छोटे और अधिक प्रबंधनीय फाइलों में विभाजित करने की सुविधा देता है, और यह लंबा डाक्यूमेंट्स तैयार करने की प्रक्रिया को कैसे आसान और तेज बना सकता है।</span>
 
-When you are writing a longer document, you’ll likely want to split up
-the source into multiple files. For example, it's very common to have
-one 'main'/'root' file, then one source file per chapter (for a book or thesis),
-or per significant section (for a long article).
+जब आप एक लंबा डॉक्यूमेंट लिख रहे होते हैं, तो संभवतः आप अपने स्रोत (source) को कई फाइलों में विभाजित करना चाहेंगे। उदाहरण के लिए, यह बहुत सामान्य है कि पूरे प्रोजेक्ट में कोई एक 'मुख्य' या 'रूट' फाइल हो, और फिर प्रत्येक अध्याय (यदि आप पुस्तक या शोध-प्रबंध लिख रहे हैं) या प्रत्येक महत्वपूर्ण अनुभाग (यदि आप कोई लंबा लेख लिख रहे हैं) के लिए अलग स्रोत फाइलें हो।
 
-## Structuring your sources
 
-LaTeX allows us to split up sources in a controlled way. There are two important
-commands here, `\input` and `\include`. We can use `\input` to make a file work
-'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it has a big advantage: it allows us to
-be selective in which chapters to include, so you can work on part of your
-document rather than the whole thing.
+## अपने स्रोतों की संरचना करना
 
-A longer document might therefore look something like the following:
+LaTeX हमें नियंत्रित तरीके से स्रोतों को विभाजित करने की सुविधा देता है। यहाँ दो महत्वपूर्ण आदेश (commands) — `\input` और `\include` हैं। हम `\input` का उपयोग किसी फाइल को इस तरह सम्मिलित कर सकते हैं मानो वह सामग्री यहीं टाइप की गई हो; इसलिए इसे किसी भी प्रकार की सामग्री के लिए प्रयोग किया जा सकता है। `\include` आदेश केवल अध्यायों के लिए कार्य करता है: यह एक नया पृष्ठ शुरू करता है और कुछ आंतरिक समायोजन भी करता है। लेकिन इसका एक बड़ा लाभ यह है कि यह हमें चयन करने की अनुमति देता है कि किन अध्यायों को सम्मिलित किया जाए और किन्हें नहीं, जिससे आप पूरे डॉक्यूमेंट की बजाय केवल किसी एक भाग पर भी कार्य कर सकते हैं।
+
+इस प्रकार, एक लंबा डॉक्यूमेंट निम्नलिखित रूप में दिख सकता है:
 
 <!-- pre0 {% raw %} -->
 ```latex
@@ -88,57 +80,36 @@ A longer document might therefore look something like the following:
 ```
 <!-- {% endraw %} -->
 
-We'll look at the various aspects of this file below. (The various support files
-are at the end of this page.)
 
-## Using `\input`
+हम नीचे दी गई फाइल के विभिन्न पहलुओं को देखेंगे। (सहायक फाइलें इस पृष्ठ के अंत में दी गई हैं।)
 
-The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the main file short and clear, and also meaning we could
-re-use the covers in another document. We've also used it for the 'non-chapter'
-sections at the start of our 'book': things like the preface. Again, this is
-to help keep the main file clear.
 
-## Using `\include` and `\includeonly`
+## `\input` का उपयोग करना
+`\input` आदेश का उपयोग उस स्थिति में उपयुक्त होता है जब फाइल के कुछ हिस्से अलग-अलग अध्याय _न_ हों। उदाहरण में, हमने इसे सामने और पिछले कवर को अलग करने के लिए उपयोग किया है, जिससे मुख्य फाइल संक्षिप्त और स्पष्ट बनी रहती है, और इन कवरों को किसी अन्य डॉक्यूमेंट में दोबारा उपयोग किया जा सकता है। हमने अपनी 'पुस्तक' की शुरुआत में आने वाले 'गैर-अध्याय' अनुभागों (जैसे भूमिका) के लिए भी इसका उपयोग किया है। इसका उद्देश्य मुख्य फाइल को स्पष्ट बनाए रखना है।
 
-The `\include` command is good for chapters, so we have used it for each full
-chapter; it always starts a new page. We have selected which chapters will
-actually be typeset using `\includeonly`, which as you can see takes a
-comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proofreading.
-In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from the `.aux` files of other included files.
 
-## Creating a table of contents
+## `\include` और `\includeonly` का उपयोग करना
+`\include` आदेश अध्यायों के लिए उपयुक्त होता है, इसलिए हमने प्रत्येक पूर्ण अध्याय के लिए इसका उपयोग किया है; यह हमेशा एक नया पृष्ठ शुरू करता है। हमारे किन अध्यायों को वास्तव में टाइपसेट किया जाएगा, इसका चयन `\includeonly` के माध्यम से किया है, जिसमें आप देख सकते हैं कि इसमें फाइल नामों की कॉमा से अलग की गई सूची होती है। जब आप `\includeonly` का उपयोग करते हैं, तो आप टाइपसेटिंग में लगने वाले समय को कम कर सकते हैं और जिस भी एकल अध्याय को आप प्रूफरीड करना चाहते हैं, उसी बस का 'चयनित' PDF बना सकते हैं। इसके अतिरिक्त, `\includeonly` का प्रमुख लाभ यह है कि LaTeX अन्य सम्मिलित फाइलों की `.aux` फाइलों से सभी क्रॉस-रेफरेंस जानकारी का उपयोग करता है।
 
-The `\tableofcontents` command uses the information from sectioning
-commands to populate the table of contents.  It has its own auxiliary
-file, with extension `.toc`, so you may need to run LaTeX twice to
-resolve the information. The table is generated automatically from the
-section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions, and
-use files with extension `.lof` and `.lot` respectively.
 
-## Splitting the document into parts
+## विषय-सूची (Table of Contents) बनाना
 
-The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
-affect the formatting.
-For instance, `\frontmatter` changes the page numbering to
-Roman numbers.
-The `\appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after `\appendix`,
-the header says `Appendix A`.
+`\tableofcontents` आदेश अनुभाग-निर्धारण (sectioning) आदेशों से प्राप्त जानकारी का उपयोग कर विषय-सूची तैयार करता है। इसकी एक अलग सहायक फाइल होती है, जिसका एक्सटेंशन `.toc` होता है, इसलिए इस जानकारी को पूर्ण करने के लिए आपको LaTeX को दो बार चलाना पड़ सकता है। यह सूची स्वतः ही अनुभागों के शीर्षकों से उत्पन्न होती है। इसी तरह `\listoffigures` और `\listoftables` नामक आदेश होते हैं, जो float environment की captions से कार्य करते हैं, और जिनकी सहायक फाइलें क्रमशः `.lof` और `.lot` एक्सटेंशन की होती हैं।
 
-## Exercises
 
-Experiment with the basic structure of the demonstration document,
-try adding and removing entries for `\includeonly` and see the effect.
 
-Add some floats and produce a list of figures and tables.
-If using a locally installed LaTeX, do you see
-how many LaTeX runs are required? (The online systems re-run LaTeX
-"behind the scenes" so the additional required runs are not so obvious.)
+## डॉक्यूमेंट को भागों में विभाजित करना
+
+`\frontmatter`, `\mainmatter` और `\backmatter` आदेश डॉक्यूमेंट की रूपरेखा को प्रभावित करते हैं। उदाहरण के लिए, `\frontmatter` पृष्ठ क्रमांकन को रोमन अंकों में बदल देता है। `\appendix` आदेश अध्यायों के क्रम को `A`, `B` आदि में बदल देता है, इसलिए `\appendix` के बाद के पहले अध्याय में शीर्षक `Appendix A` के रूप में दिखेगा।
+
+
+
+## अभ्यास
+
+डेमो डॉक्यूमेंट की मूल संरचना के साथ प्रयोग करें, `\includeonly` में प्रविष्टियाँ जोड़ें और हटाएँ और इसका प्रभाव देखें।
+
+कुछ float जोड़ें और चित्रों तथा सारणियों की सूची बनाएँ। यदि आप स्थानीय रूप से स्थापित LaTeX का उपयोग कर रहे हैं, तो देखें कि LaTeX को कितनी बार चलाना पड़ता है? (ऑनलाइन सिस्टम पर्दे के पीछे LaTeX को कई बार पुनः चलाते हैं, इसलिए आवश्यक या अतिरिक्त रन स्पष्ट नहीं हो पाते हैं।)
+
 
 ----
 
