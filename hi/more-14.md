@@ -1,28 +1,20 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Selecting fonts and using Unicode engines"
-description: "This lesson shows a basic example in Lua for users who want to write Lua code in their document."
-toc-anchor-text: "More on: Selecting fonts and using Unicode engines"
+title: "अधिक जानकारी: फॉण्ट चुनना और यूनिकोड इंजन का उपयोग करना"
+description: "यह पाठ उन उपयोगकर्ताओं के लिए Lua में एक बुनियादी उदाहरण दिखाता है जो अपने डॉक्यूमेंट में Lua कोड लिखना चाहते हैं।"
+toc-anchor-text: "अधिक जानकारी: फॉण्ट चुनना और यूनिकोड इंजन का उपयोग करना"
 ---
-
-
 
 
 ## Lua
 
-The LuaTeX engine provides access to OpenType fonts in a similar way
-to XeTeX, and most uses of the `fontspec` package work equally well
-with either engine.
+LuaTeX इंजन, XeTeX की तरह, OpenType फ़ॉन्ट्स को एक्सेस करने की सुविधा देता है, और `fontspec` पैकेज का अधिकांश उपयोग दोनों इंजनों में समान रूप से अच्छी तरह से काम करता है।  
 
-LuaTeX also extends TeX in other ways, notably by embedding the Lua
-scripting language. This may be used for programming in a style more
-familiar to people used to ‘mainstream’ programming languages. It also
-offers the possibility to access inner workings of the TeX system and
-modify the behaviour by substituting new code written in Lua.
+LuaTeX अन्य तरीकों से भी TeX का विस्तार करता है, विशेष रूप से Lua स्क्रिप्टिंग भाषा को इसमें एम्बेड करके। इसका उपयोग ऐसे प्रोग्रामिंग स्टाइल में किया जा सकता है जो 'मुख्यधारा' की प्रोग्रामिंग भाषाओं के उपयोगकर्ताओं के लिए अधिक परिचित हो। यह Lua प्रोग्रामिंग को TeX सिस्टम की आंतरिक कार्यप्रणालियों तक पहुँचने और Lua में लिखा गया नया कोड डालकर उसके व्यवहार को संशोधित (modify) करने की सुविधा भी देता है।  
 
-Lua programming is not covered by this course but a simple example to
-calculate 2π is shown here.
+इस पाठ्यक्रम में Lua प्रोग्रामिंग को शामिल नहीं किया गया है, लेकिन 2π की गणना का एक सरल उदाहरण नीचे दिया गया है।
+
 
 ```latex
 %!TEX lualatex

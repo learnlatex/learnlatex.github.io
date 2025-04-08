@@ -61,7 +61,7 @@ LaTeX एक शक्तिशाली टाइपसेटिंग सि�
 %!TeX program = lualatex
 \documentclass{article}
 \usepackage[hindi]{babel} % Hindi language with babel
-\usepackage{fontspec} % Fontspec for Devanagari fonts (LuaLaTeX)
+\usepackage{fontspec} % Fontspec for Devanagari fonts
 \setmainfont[Script=Devanagari]{Lohit Devanagari} % Replace with Shobhika etc. if desired
 ```
 

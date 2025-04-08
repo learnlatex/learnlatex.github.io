@@ -1,21 +1,19 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Structuring longer documents"
-description: "This lesson shows how to make an index, and how to use the imakeidx package to automate the process."
-toc-anchor-text: "More on: Structuring longer documents"
+title: "अधिक जानकारी: लंबे डाक्यूमेंट्स की संरचना"
+description: "यह पाठ दिखाता है कि इंडेक्स कैसे बनाया जाता है, तथा इस प्रक्रिया को स्वचालित करने के लिए imakeidx पैकेज का उपयोग कैसे किया जाता है।"
+toc-anchor-text: "अधिक जानकारी: लंबे डाक्यूमेंट्स की संरचना"
 ---
 
-## Making an index
+## अनुक्रमणिका (Index) बनाना
 
-Depending on the type of document you are writing, you might want to include
-an index. This is a bit like making a bibliography, as it uses auxiliary files.
-Luckily, this is all automated by the `imakeidx` package. We need three
-instructions to LaTeX:
+यह इस बात पर निर्भर करता है कि आप किस प्रकार का दस्तावेज़ लिख रहे हैं—आप उसमें एक अनुक्रमणिका शामिल करना चाह सकते हैं। यह कुछ हद तक ग्रंथ सूची (bibliography) बनाने जैसा होता है, क्योंकि इसमें भी सहायक फ़ाइलों (auxiliary files) का उपयोग होता है। सौभाग्य से, `imakeidx` पैकेज इस पूरी प्रक्रिया को स्वचालित कर देता है। LaTeX को तीन निर्देश (instructions) देने की आवश्यकता होती है:
 
-- The `\makeindex` command, which enables creation of an index
-- The `\index` command, which marks up index entries
-- The `\printindex` command, which prints the index
+- `\makeindex` कमांड, जो अनुक्रमणिका बनाने को सक्षम करता है  
+- `\index` कमांड, जो अनुक्रमणिका प्रविष्टियों को चिह्नित करता है  
+- `\printindex` कमांड, जो अनुक्रमणिका को प्रिंट करता है
+
 
 ```latex
 \documentclass{article}
@@ -36,7 +34,5 @@ Even more text\index{gamma@$\gamma$}.
 \end{document}
 ```
 
-We've shown two features of indexing here: subdivision using `!`, and printing
-something different from the 'sort text' of an index entry using `@`. There
-is a lot of customisation possible with an index; try out the example and see
-how it works.
+यहाँ हमने अनुक्रमणिका (indexing) की दो विशेषताएँ दिखाई हैं: `!` का उपयोग करके उपविभाजन (subdivision), और  `@` का उपयोग करके अनुक्रमणिका में अलग पाठ (text) प्रिंट करना, जबकि क्रमबद्धता (sorting) के लिए कुछ और उपयोग करना। अनुक्रमणिका को कस्टमाइज़ करने के कई विकल्प होते हैं;  
+उदाहरण आज़माकर देखें कि यह कैसे कार्य करता है।

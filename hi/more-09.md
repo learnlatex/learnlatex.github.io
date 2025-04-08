@@ -1,16 +1,16 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Cross-referencing"
-description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
-toc-anchor-text: "More on: Cross-referencing"
+title: "अधिक जानकारी: क्रॉस-रेफरेंसिंग"
+description: "यह पाठ दिखाता है कि आप हाइपररेफ पैकेज लोड करके क्रॉस-रेफरेंस के लिंक कैसे बना सकते हैं।"
+toc-anchor-text: "अधिक जानकारी: क्रॉस-रेफरेंसिंग"
 ---
 
-## Making cross-references into links
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+## क्रॉस-रेफरेंस को लिंक में बदलना
+
+आप `हाइपररेफ` पैकेज का उपयोग करके अपने क्रॉस-रेफरेंस को हाइपरलिंक में बदल सकते हैं। अधिकांश मामलों में, `हाइपररेफ` को डॉक्यूमेंट की प्रस्तावना में निर्दिष्ट किसी भी अन्य पैकेज के बाद लोड किया जाना चाहिए।
+
 
 ```latex
 \documentclass{article}
@@ -28,5 +28,4 @@ More text here.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+हमने लिंक को सामान्य टेक्स्ट के समान रंग में बनाने का विकल्प चुना है; इसका कारण जानने के लिए `hidelinks` को हटाने का प्रयास करें!

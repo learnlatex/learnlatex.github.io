@@ -1,17 +1,14 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Dealing with errors"
-description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
-toc-anchor-text: "More on: Dealing with errors"
+title: "अधिक जानकारी: त्रुटियों से निपटना"
+description: "यह पाठ LaTeX में कुछ और सामान्य त्रुटियों को दर्शाता है तथा श्रृंखलाबद्ध त्रुटियों और साइलेंट त्रुटियों (silent errors) के बारे में बताता है।"
+toc-anchor-text: "अधिक जानकारी: त्रुटियों से निपटना"
 ---
 
-## Errors reported at ends of environments
+## एनवायरमेंट्स के अंत में रिपोर्ट की गई त्रुटियाँ
 
-Some environments (notably `amsmath` alignments and `tabularx` tables)
-scan the whole environment body before processing the content. This means that
-any error within the environment is reported on the last line. However, as seen in the
-main lesson, TeX's display of the error context should still pinpoint the error location.
+कुछ एनवायरमेंट्स (विशेष रूप से `amsmath` की alignments और `tabularx` टेबल्स) पूरा एनवायरमेंट स्कैन करने के बाद ही उसकी सामग्री को प्रोसेस करते हैं। इसका अर्थ यह है कि यदि उस एनवायरमेंट के भीतर कोई त्रुटि होती है, तो वह त्रुटि अंतिम पंक्ति पर रिपोर्ट होती है। हालाँकि, जैसा कि मुख्य पाठ में देखा गया, TeX की त्रुटि संदर्भ (error context) दिखाने की प्रणाली अब भी आपको सटीक स्थान पर त्रुटि की पहचान करने में मदद करती है।
 
 ```latex
 \documentclass{article}
@@ -30,14 +27,14 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 \end{document}
 ```
 
-Here the error will be reported on line 12
+यहां त्रुटि लाइन 12 पर रिपोर्ट की जाएगी
 
 ```
 l.12 \end{align}
 ```
 {: .noedit :}
 
-Although the real error is on line 10 as shown by the context lines:
+यद्यपि वास्तविक त्रुटि पंक्ति 10 पर है जैसा कि संदर्भ पंक्तियों द्वारा दर्शाया गया है:
 
 
 ```
@@ -48,17 +45,11 @@ Although the real error is on line 10 as shown by the context lines:
 {: .noedit :}
 
 
-## Spurious errors due to earlier errors
+## पहले की त्रुटियों के कारण उत्पन्न हुई अतिरिक्त त्रुटियाँ
 
-When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edit the document
-and re-run. However if you scroll past the error or use an editor or
-online system that does this for you then TeX will try to recover;
-however this may lead to several more errors being reported.
+जब आप कमांड लाइन से LaTeX को इंटरएक्टिव रूप में चलाते हैं, तो पहली त्रुटि पर प्रोसेसिंग को `x` दबाकर रोका जा सकता है, फिर डॉक्यूमेंट को संपादित करके दोबारा चलाया जा सकता है। हालाँकि, यदि आप त्रुटि को स्क्रॉल करके पार कर जाते हैं, या ऐसा कोई संपादक (editor) या ऑनलाइन सिस्टम उपयोग कर रहे हैं जो यह अपने आप करता है, तो TeX त्रुटि से उबरने की कोशिश करेगा। इससे यह संभव है कि कई और अतिरिक्त त्रुटियाँ भी रिपोर्ट हो जाएँ।  
 
-So do not be too concerned about the _number_ of errors reported and
-always concentrate on fixing the first reported error.
-
+इसलिए रिपोर्ट की गई त्रुटियों की _संख्या_ को लेकर अधिक चिंतित न हों, और हमेशा सबसे पहली त्रुटि को ठीक करने पर ध्यान केंद्रित करें।
 
 ```latex
 \documentclass{article}
@@ -71,9 +62,9 @@ More text.
 \end{document}
 ```
 
-The error here is the underscore `_` which should be entered as `\_`.
+यहाँ त्रुटि अंडरस्कोर `_` है जिसे `\_` के रूप में दर्ज किया जाना चाहिए।
 
-TeX does report this correctly with the _first_ error message
+TeX इसे _first_ त्रुटि संदेश के साथ सही ढंग से रिपोर्ट करता है
 
 ```
 ! Missing $ inserted.
@@ -85,10 +76,7 @@ l.5 Text_
 ```
 {: .noedit :}
 
-However if you scroll past the `?` prompt then TeX recovers by adding
-a `$` so the `_` is seen in math mode as a subscript. The math mode
-then continues until the `$` which ends math, so the following
-`\alpha` is seen in text mode generating another error
+हालाँकि यदि आप `?` प्रॉम्प्ट से आगे स्क्रॉल करते हैं तो TeX `$` जोड़कर रिकवर करता है, इसलिए `_` को गणित मोड में सबस्क्रिप्ट के रूप में देखा जाता है। गणित मोड तब तक जारी रहता है जब तक `$` गणित को समाप्त नहीं कर देता, इसलिए निम्न `\alpha` को टेक्स्ट मोड में देखा जाता है जो एक और त्रुटि उत्पन्न करता है
 
 ```
 ! Missing $ inserted.
@@ -101,13 +89,12 @@ l.5 Text_word  $\alpha
 {: .noedit :}
 
 
-## Errors that do not trigger an error prompt
+## कुछ त्रुटियाँ जो त्रुटि-संकेत नहीं उत्पन्न करतीं
 
-Some errors, especially errors that are not detected until the end of the file,
-do not generate an error prompt but just give a warning in the log.
+कुछ त्रुटियाँ, विशेष रूप से वे जो फ़ाइल के अंत तक पहुँचने पर ही पता चलती हैं, रुटि-संकेत (error prompt) नहीं देतीं, बल्कि केवल लॉग में एक चेतावनी (warning) के रूप में दिखाई देती हैं।  
 
-If you try this example using the TeXLive.net server it will return a PDF by default;
-to see the error message in the log add `%!TeX log`.
+यदि आप यह उदाहरण TeXLive.net सर्वर पर प्रयोग करते हैं, तो वह डिफ़ॉल्ट रूप से एक PDF लौटाता है; यदि आप त्रुटि संदेश लॉग में देखना चाहते हैं, तो `%!TeX log` जोड़ें।
+
 
 ```latex
 \documentclass{article}
@@ -120,11 +107,7 @@ to see the error message in the log add `%!TeX log`.
 \end{document}
 ```
 
-In this example the size change was mistakenly ended with `)` rather
-than `}`. This is not detected until the end of the file when TeX
-detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{`. It can not detect the actual
-error as the `)` is seen as "normal text".
+इस उदाहरण में आकार (size) बदलने की कमांड को गलती से `}` की जगह `)` से समाप्त कर दिया गया। TeX इस त्रुटि को फाइल के अंत को नहीं पहचानता जब, तब वह पाता है कि अभी भी एक group है जो बंद नहीं हुआ है। इस स्थिति में TeX उस पंक्ति की रिपोर्ट करता है जहाँ group खोला गया था `{`। वह असली त्रुटि (`)` का उपयोग) को नहीं पहचान पाता क्योंकि `)` को वह "सामान्य टेक्स्ट" की तरह देखता है।
 
 ```
 (\end occurred inside a group at level 1)

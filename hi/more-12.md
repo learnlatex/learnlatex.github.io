@@ -1,44 +1,32 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Citations and references"
-description: "This lesson gives details on non-English bibliographies, how to make references into hyperlinks, and highlights the main differences between BibTeX styles."
-toc-anchor-text: "More on: Citations and references"
+title: "अधिक जानकारी: उद्धरण (citation) और संदर्भ (references)"
+description: "यह पाठ गैर-अंग्रेजी ग्रंथसूचियों, हाइपरलिंक में संदर्भ बनाने के तरीके, तथा BibTeX शैलियों के बीच मुख्य अंतरों पर प्रकाश डालता है।"
+toc-anchor-text: "अधिक जानकारी: उद्धरण (citation) और संदर्भ (references)"
 ---
 
-## Dealing with non-English sorting
+## गैर-अंग्रेजी क्रमबद्धता (Sorting) से निपटना
 
-The BibTeX program was written primarily to deal with references in English. It
-is very limited in handling accented characters, and even more limited with
-non-Latin letters. In contrast, the Biber program was written from the start to
-handle a mix of scripts properly.
+BibTeX प्रोग्राम मूल रूप से अंग्रेजी संदर्भों के लिए बनाया गया था। यह उच्चारण चिह्नों (accented characters) को संभालने में सीमित है, और गैर-लैटिन (non-Latin) अक्षरों के लिए तो और भी सीमित। इसके विपरीत, Biber प्रोग्राम को शुरू से ही विभिन्न लिपियों (scripts) को सही ढंग से संभालने के लिए डिज़ाइन किया गया है।  
 
-This means that if you are sorting your bibliography, and you need to sort in
-anything other than English order, you really should be using `biblatex` and
-Biber, rather than `natbib` and BibTeX.
+इसका अर्थ है कि यदि आप अपनी ग्रंथ सूची (bibliography) को अंग्रेज़ी के अलावा किसी अन्य भाषा के क्रम में व्यवस्थित करना चाहते हैं, तो आपको `natbib` और BibTeX की बजाय `biblatex` और Biber का उपयोग करना चाहिए।
 
-## Hyperlinks
 
-If you load the `hyperref` package (as covered [earlier](more-09)), it will
-automatically make some content in your bibliography into links. This is
-particularly useful for URLs and DOIs.
 
-## Differences in best practice for BibTeX input between styles
+## हाइपरलिंक्स
 
-While the overall syntax of the BibTeX files is the same whether you use the
-BibTeX workflow or `biblatex`, the set of fields that is supported (used by the
-style) and their exact meaning may not only vary between the BibTeX workflow
-and `biblatex`, but also between different BibTeX styles. A large 'core set' of
-entry types and fields is the same for almost all styles, but there are
-differences in some fields.
+यदि आप `hyperref` पैकेज को लोड करते हैं (जैसा कि [पहले](more-09) उल्लेख किया गया है), तो यह आपकी ग्रंथ सूची में कुछ सामग्रियों को अपने आप लिंक बना देता है। यह विशेष रूप से URLs और DOIs के लिए उपयोगी होता है।
 
-A common example is the URL. Some older BibTeX `.bst` styles (most notably
-the 'standard BibTeX styles', e.g. `plain.bst`, `unsrt.bst`, ...) predate
-the invention of the URL and have no dedicated field for the URL of an online
-resource. Many newer styles _do_ have a dedicated `url` field. The workaround
-to show the URL in the older styles is usually to use the `howpublished` field,
-but with the newer styles it is of course preferable to use the dedicated
-`url` field.
 
-In order to be able to make use of the full potential of your used style you
-will have to find out the set of fields it supports and their semantic.
+
+
+## विभिन्न शैलियों में BibTeX इनपुट के सर्वोत्तम तरीकों का अंतर
+
+हालाँकि BibTeX फाइलों की समग्र सिंटैक्स (`.bib` files) BibTeX और `biblatex` दोनों वर्कफ़्लो में समान होती है, लेकिन कौन-से फ़ील्ड्स समर्थित हैं और उनका अर्थ क्या है, यह न केवल इन दोनों वर्कफ़्लो में अलग हो सकता है, बल्कि विभिन्न BibTeX शैलियों के बीच भी अंतर हो सकता है। एक बड़ा 'मुख्य सेट' (core set) लगभग सभी शैलियों में एक जैसा होता है, लेकिन कुछ फ़ील्ड्स में भिन्नताएँ होती हैं।
+
+एक सामान्य उदाहरण है URL फ़ील्ड: कुछ पुराने BibTeX `.bst` शैलियाँ (जैसे `plain.bst`, `unsrt.bst` आदि) URL के आविष्कार से पहले की हैं,  
+और उनके पास ऑनलाइन संसाधनों के लिए कोई विशेष `url` फ़ील्ड नहीं होता था। नई शैलियाँ आम तौर पर एक समर्पित `url` फ़ील्ड प्रदान करती हैं।  
+पुरानी शैलियों में URL दिखाने के लिए अक्सर `howpublished` फ़ील्ड का उपयोग किया जाता था, जबकि नई शैलियों में निश्चित रूप से `url` फ़ील्ड का ही उपयोग करना बेहतर होता है।
+
+यदि आप अपनी चुनी हुई शैली का पूरा लाभ उठाना चाहते हैं, तो आपको यह पता करना होगा कि वह शैली कौन-से फ़ील्ड्स को सपोर्ट करती है और उनका सटीक अर्थ क्या है।

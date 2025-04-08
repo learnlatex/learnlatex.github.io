@@ -1,20 +1,24 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Mathematics"
-description: "This lesson show more amsmath alignment environments, how to make math bold, the math extension package mathtools, and using Unicode input for maths."
-toc-anchor-text: "More on: Mathematics"
+title: "अधिक जानकारी: गणित"
+description: "यह पाठ amsmath संरेखण वातावरण, गणित को बोल्ड बनाने का तरीका, गणित एक्सटेंशन पैकेज mathtools, तथा गणित के लिए यूनिकोड इनपुट का उपयोग करने के बारे में अधिक जानकारी प्रदान करता है।"
+toc-anchor-text: "अधिक जानकारी: गणित"
 ---
 
 
-## Further `amsmath` alignments
+यह रहा आपके दिए गए हिस्से का औपचारिक और सरल हिंदी अनुवाद:
 
-In addition to the `align*` environment shown in the main lesson,
-`amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment, and `multline` for
-splitting a larger single expression over multiple lines, aligning the
-first line to the left, and the last to the right. In all cases the `*`
-form  omits the equation numbers by default.
+---
+
+## `amsmath` के संरेखण विकल्प
+
+मुख्य पाठ में दिखाए गए `align*` वातावरण के अतिरिक्त, `amsmath` पैकेज में कई अन्य *डिस्प्ले मैथ* (display math) संरचनाएँ भी होती हैं। विशेष रूप से:
+- `gather`: जब एक से अधिक पंक्तियों में गणितीय अभिव्यक्तियाँ हों लेकिन उन्हें आपस में संरेखित (aligned) करने की आवश्यकता न हो।
+- `multline`: जब एक लंबी गणितीय अभिव्यक्ति को कई पंक्तियों में विभाजित करना हो। इसमें पहली पंक्ति बाईं ओर और अंतिम पंक्ति दाईं ओर संरेखित होती है।
+
+इन सभी मामलों में, यदि `*` संस्करण का उपयोग किया जाए (जैसे `align*`, `gather*`), तो डिफ़ॉल्ट रूप से समीकरण क्रमांक (equation numbers) नहीं दिखाए जाते हैं।
+
 
 ```latex
 \documentclass[a4paper]{article}
@@ -39,12 +43,15 @@ Multline
 \end{document}
 ```
 
-### Columns in math alignments
 
-The `amsmath` alignment environments are designed to take pairs of
-columns with the first column of each pair aligned to the right and
-the second aligned to the left. This allows multiple equations to be
-shown, each aligned towards its relation symbol.
+यह रहा इस हिस्से का औपचारिक और सरल हिंदी अनुवाद:
+
+---
+
+### गणितीय संरेखण में कॉलम्स (Columns in Math Alignments)
+
+`amsmath` पैकेज के संरेखण (alignment) वाले वातावरण इस तरह से बनाए गए हैं कि वे कॉलम्स की *जोड़ी (pair)* बना लेते हैं —  हर जोड़ी में पहला कॉलम *दाईं ओर संरेखित* (right-aligned) होता है  और दूसरा कॉलम *बाईं ओर संरेखित* (left-aligned) होता है। इससे आप एक साथ कई समीकरण (equations) इस प्रकार दिखा सकते हैं कि प्रत्येक समीकरण का *रिलेशन चिन्ह* (जैसे =, ≥, आदि) एक सी लाइन में संरेखित हो सके।
+
 
 ```latex
 \documentclass{article}
@@ -60,10 +67,13 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
+यह रहा इस हिस्से का औपचारिक और सरल हिंदी अनुवाद:
 
-In addition there are variants of the display environments ending
-in `ed` that make a subterm inside a larger display.
-For example, `aligned` and `gathered` are variants of `align` and `gather` respectively.
+---
+
+इसके अतिरिक्त, कुछ *डिस्प्ले वातावरण* (display environments) के ऐसे रूप होते हैं जिनका नाम `ed` पर समाप्त होता है, जो कि किसी बड़े गणितीय डिस्प्ले के भीतर एक *उप-अभिव्यक्ति (subterm)* को संरेखित करने के लिए उपयोग किए जाते हैं। उदाहरण के लिए: `aligned` → यह `align` का ही एक उपरूप है। `gathered` → यह `gather` का उपरूप है
+
+इनका उपयोग तब किया जाता है जब आपको किसी बड़े समीकरण के अंदर ही संरेखित उप-भाग (sub-part) दर्शाना हो।
 
 ```latex
 \documentclass{article}
@@ -85,9 +95,7 @@ d&=c
 \end{document}
 ```
 
-`aligned` takes a positional optional argument similar to `tabular`.
-This is often useful to align an inline math formula on its top row;
-compare the items in the list in the following example.
+`aligned` एक वैकल्पिक स्थिति आर्ग्युमेंट लेता है, जैसा कि `tabular` में होता है। यह अक्सर इनलाइन गणितीय सूत्र को उसकी ऊपरी पंक्ति पर संरेखित करने के लिए उपयोगी होता है; नीचे दिए गए उदाहरण में सूची के आइटम्स की तुलना करें।
 
 ```latex
 \documentclass{article}
@@ -109,11 +117,8 @@ c&=d
 \end{document}
 ```
 
-## Bold Math
-Standard LaTeX has two methods to give bold symbols in math. To make
-an entire expression bold, use `\boldmath` before entering the
-expression. The command `\mathbf` is also available to set individual
-letters or words in upright bold roman.
+## बोल्ड गणित (Bold Math)  
+स्टैंडर्ड LaTeX में गणित में प्रतीकों को बोल्ड करने के दो तरीके होते हैं। पूरे अभिव्यक्ति को बोल्ड बनाने के लिए, उस अभिव्यक्ति से पहले `\boldmath` का उपयोग करें। व्यक्तिगत अक्षरों या शब्दों को सीधे बोल्ड रोमन में सेट करने के लिए `\mathbf` कमांड भी उपलब्ध है।
 
 ```latex
 \documentclass[a4paper]{article}
@@ -130,12 +135,8 @@ $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
 $\mathbf{\pi} r^2$ % bad use of \mathbf
 \end{document}
 ```
-
-If you want to access bold symbols (as would be used by `\boldmath`)
-within an otherwise normal weight expression, then you can use the
-command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as `=` and Greek letters. (Note that `\mathbf` has no effect
-on `\pi` in the example above.)
+यदि आप किसी सामान्य वज़न (normal weight) वाले गणितीय अभिव्यक्ति में ही बोल्ड प्रतीकों का उपयोग करना चाहते हैं (जैसा कि `\boldmath` करता है), तो आप `bm` पैकेज का `\bm` कमांड उपयोग कर सकते हैं। ध्यान दें कि `\bm` प्रतीकों जैसे `=` और ग्रीक अक्षरों के साथ भी काम करता है।  
+(यह भी ध्यान दें कि ऊपर दिए गए उदाहरण में `\mathbf` का `\pi` पर कोई प्रभाव नहीं होता।)
 
 ```latex
 \documentclass[a4paper]{article}
@@ -153,10 +154,11 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 \end{document}
 ```
 
-## Mathtools
-The package `mathtools` loads `amsmath` and adds several additional
-features, such as variants of the `amsmath` matrix environments that
-allow the column alignment to be specified.
+
+## Mathtools पैकेज  
+`mathtools` पैकेज, `amsmath` को लोड करता है और उसमें कई अतिरिक्त सुविधाएँ जोड़ता है, जैसे कि `amsmath` के मैट्रिक्स वातावरण (matrix environments) के ऐसे संस्करण, जिनमें कॉलम संरेखण (column alignment) को निर्दिष्ट (specify) किया जा सकता है।
+
+
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
@@ -175,15 +177,9 @@ allow the column alignment to be specified.
 \end{document}
 ```
 
-## Unicode Math
+## यूनिकोड गणित (Unicode Math)  
 
-As will be seen in [Lesson 14](lesson-14), there are variant TeX
-engines that use OpenType fonts. By default, these engines still use
-classic TeX math fonts but you may use the `unicode-math` package
-to use OpenType Math fonts. The details of this package are beyond
-this course and we refer you to the
-[package documentation](https://texdoc.org/pkg/unicode-math).
-However, we give a small example here.
+जैसा कि आप [पाठ 14](lesson-14) में देखेंगे, कुछ वैकल्पिक TeX इंजन होते हैं जो OpenType फ़ॉन्ट्स का उपयोग करते हैं। डिफ़ॉल्ट रूप से ये इंजन अब भी क्लासिक TeX गणित फ़ॉन्ट्स का ही उपयोग करते हैं, लेकिन आप `unicode-math` पैकेज का उपयोग करके OpenType गणित फ़ॉन्ट्स का प्रयोग कर सकते हैं। इस पैकेज का पूरा विवरण इस पाठ्यक्रम के दायरे से बाहर है, अधिक जानकारी के लिए [पैकेज दस्तावेज़](https://texdoc.org/pkg/unicode-math) देखें। हालाँकि, हम यहाँ एक छोटा सा उदाहरण दे रहे हैं।
 
 ```latex
 % !TEX lualatex

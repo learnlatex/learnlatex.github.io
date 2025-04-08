@@ -1,18 +1,16 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Formatting: fonts and spacing"
-description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "More on: Formatting: fonts and spacing"
+title: "अधिक जानकारी: फ़ॉर्मेटिंग: फॉण्ट और स्पेसिंग"
+description: "यह पाठ दिखाता है कि किसी एक पैराग्राफ के लिए पैराग्राफ इंडेंटेशन को कैसे कम किया जाए।"
+toc-anchor-text: "अधिक जानकारी: फ़ॉर्मेटिंग: फॉण्ट और स्पेसिंग"
 ---
 
-## Suppressing the indent for one paragraph
+## किसी एक पैराग्राफ के लिए इंडेंट हटाना  
 
+यदि आप केवल एक पैराग्राफ की शुरुआत में होने वाला इंडेंटेशन (खाली जगह) हटाना चाहते हैं, तो आप `\noindent` का उपयोग कर सकते हैं।  
+हालाँकि, इसका उपयोग _बहुत_ कम किया जाना चाहिए; अधिकांश स्थितियों में LaTeX को इसे स्वचालित रूप से संभालने देना चाहिए।
 
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
 
 ```latex
 \documentclass{article}
