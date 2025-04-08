@@ -1,29 +1,21 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Using document classes to influence design"
-description: "This lesson gives information on more specialized document classes for LaTeX."
-toc-anchor-text: "More on: Using document classes to influence design"
+title: "अधिक जानकारी: डॉक्यूमेंट की रूपरेखा पर प्रभाव डालने के लिए डॉक्यूमेंट क्लास का उपयोग"
+description: "यह पाठ LaTeX के लिए अधिक विशिष्ट डॉक्यूमेंट वर्गों के बारे में जानकारी देता है।"
+toc-anchor-text: "अधिक जानकारी: डॉक्यूमेंट की रूपरेखा पर प्रभाव डालने के लिए डॉक्यूमेंट क्लास का उपयोग"
 ---
 
-## Journal-specific classes
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on [CTAN](https://ctan.org) and in standard TeX
-distributions.
+## जर्नल-विशिष्ट क्लासेस
 
-## Classes for presentations
+कई अकादमिक जर्नल सबमिशन के लिए LaTeX क्लासेस उपलब्ध कराते हैं। ये आमतौर पर लेआउट को अंतिम प्रकाशित जर्नल जैसा बनाने के लिए बनाए जाते हैं, हालांकि यह फॉण्ट आदि पर भी निर्भर करता है। यदि कोई क्लास उपलब्ध है, तो इसे सामान्यतः संपादकीय कार्यालय द्वारा सीधे प्रदान किया जाता है, जो इसके फीचर्स की जानकारी भी देता है। इन क्लासेस में से कई [CTAN](https://ctan.org) पर और मानक TeX वितरणों में भी उपलब्ध होती हैं।
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+
+
+## प्रेजेंटेशन के लिए क्लासेस
+
+प्रस्तुतियाँ (presentations) बनाने के लिए विशेष क्लासेस की ज़रूरत होती है। `slides` क्लास पारंपरिक प्रिंटेड स्लाइड्स के लिए बनाई गई थी और इसमें ऑन-स्क्रीन प्रेजेंटेशन के लिए कोई विशेष सुविधा नहीं है। दो क्लासेस—`beamer` और `powerdot`—ऐसे प्रेजेंटेशन के लिए विकसित की गई हैं और व्यापक रूप से प्रयोग की जाती हैं। चूंकि `beamer` अधिक सामान्य रूप से उपयोग की जाती है, हम इसका एक उदाहरण देंगे।
 
 ```latex
 \documentclass{beamer}
@@ -47,20 +39,13 @@ give you an example of how it works:
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+यहाँ दो महत्वपूर्ण बातें दिखाई गई हैं। पहली, `beamer` किसी डॉक्यूमेंट को फ्रेम्स में बाँटता है, और हर फ्रेम एक से अधिक स्लाइड (पृष्ठ) बना सकता है। दूसरी, `beamer` सामान्य LaTeX सिंटैक्स में कुछ सुविधाएँ जोड़ता है जिससे आप स्रोत सामग्री को 'थोड़ा-थोड़ा करके' प्रदर्शित कर सकते हैं। यह सुविधा शक्तिशाली है लेकिन इसे पूरी तरह समझना थोड़ा जटिल है: अधिक जानकारी के लिए आप [इस ब्लॉग प्रविष्टि](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) को देख सकते हैं।
 
-## A class for images
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+
+## छवियों के लिए एक क्लास
+कुछ स्थितियों में आपको LaTeX का उपयोग करके एक छवि बनानी होती है (जो कभी-कभी टेक्स्ट-प्रधान भी हो सकती है)। ऐसे में आप पृष्ठ पर केवल वही सामग्री चाहते हैं, और कोई अतिरिक्त चीज नहीं। यह काम [`standalone`](https://ctan.org/pkg/standalone) क्लास की मदद से सबसे सरल होता है। यह क्लास स्वचालित रूप से पृष्ठ का आकार सामग्री के चारों ओर समायोजित कर देती है।
+
 
 ```latex
 \documentclass{standalone}

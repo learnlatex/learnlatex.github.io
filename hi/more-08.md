@@ -1,28 +1,22 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Tables"
-description: "This lesson shows more ways to customize a table by styling a column, changing spacing and rules, and further packages that provide different extensions to tables."
-toc-anchor-text: "More on: Tables"
+title: "अधिक जानकारी: टेबल्स (तालिका)"
+description: "यह पाठ कॉलम को स्टाइल करके, स्पेसिंग और नियमों को बदलकर टेबल्स (तालिका) को अनुकूलित करने के अधिक तरीके दिखाता है, तथा अन्य पैकेज दिखाता है जो तालिकाओं को विभिन्न एक्सटेंशन प्रदान करते हैं।"
+toc-anchor-text: "अधिक जानकारी: टेबल्स (तालिका)"
 ---
 
 
-## The other preamble contents
+## प्रीएम्बल (preamble) की अन्य सामग्री
 
-As the lesson didn't cover all the available preamble-tokens, a few others are
-explained with examples here.  You might want to revisit the tables at the start
-of the lesson to get an overview of the things available. The short descriptions
-provided there should suffice to understand what the different column types `m`,
-`b`, `w`, and `W` do after you understood `l`, `c`, `r`, and `p`. If not you
-might want to experiment a bit with them. What's still missing are the handy
-other preamble-tokens `>`, `<`, `@`, `!`, and `|`. 
+चूँकि इस पाठ में सभी उपलब्ध प्रीएम्बल टोकन शामिल नहीं किए गए थे, इसलिए कुछ अन्य टोकनों को यहाँ उदाहरणों के साथ समझाया गया है। आप चाहें तो पाठ की शुरुआत में दी गई तालिकाओं को दोबारा देख सकते हैं, ताकि उपलब्ध विकल्पों का एक समग्र दृष्टिकोण मिल सके। वहाँ दिए गए छोटे विवरण पर्याप्त हैं यह समझने के लिए कि `l`, `c`, `r`, और `p` को समझने के बाद `m`, `b`, `w`, और `W` कॉलम टाइप्स क्या करते हैं। यदि फिर भी स्पष्ट न हो, तो आप इनके साथ थोड़ा प्रयोग करके देख सकते हैं। अब तक हमने जिन टोकनों की बात नहीं की, वे हैं — `>`, `<`, `@`, `!`, और `|`, जो कि प्रीएम्बल में उपयोग होने वाले उपयोगी टोकन हैं।
 
-### Styling a column
 
-Since `>` and `<` can be used to put things before and after the cell contents
-of a column, you can use these to add commands which affect the look
-of a column. For instance, if you want to italicize the first column and put a
-colon after it, you can do the following:
+
+### किसी कॉलम को स्टाइल देना
+
+`>` और `<` टोकन का उपयोग किसी कॉलम की सेल सामग्री से पहले या बाद में कुछ जोड़ने के लिए किया जा सकता है। इसका प्रयोग कॉलम की उपस्थिति को बदलने के लिए किया जा सकता है। उदाहरण के लिए, यदि आप पहली कॉलम की सारी सामग्री को *italic* (तिरछा) करना चाहते हैं और हर आइटम के बाद कॉलन (:) लगाना चाहते हैं, तो आप निम्नलिखित तरीका अपना सकते हैं:
+
 
 <!-- {% raw %} -->
 ```latex
@@ -45,13 +39,10 @@ colon after it, you can do the following:
 ```
 <!-- {% endraw %} -->
 
-`\itshape` makes all the following text italic, but its effect is 'contained'
-by the table cell. We will look at manual font formatting [in a few lessons
-time](lesson-11).
+`\itshape` कमांड आगे आने वाले पूरे टेक्स्ट को italic (तिरछा) बना देता है,लेकिन इसका प्रभाव सिर्फ उस टेबल सेल तक ही सीमित रहता है।
+हम कुछ पाठों के बाद lesson-11 में मैनुअल फ़ॉन्ट फॉर्मेटिंग के बारे में विस्तार से जानेंगे।
 
-You may want the first cell not to be affected
-because it is the table head. Here `\multicolumn` may be used. Remember that
-it can be used to change a single cell's alignment as shown below.
+यदि आप नहीं चाहते कि पहली सेल (जो आमतौर पर टेबल का शीर्षक/हेड होता है) इस फॉर्मेटिंग से प्रभावित हो, तो आप वहाँ `\multicolumn` का उपयोग कर सकते हैं। ध्यान रखें कि `\multicolumn` का उपयोग किसी एक सेल की alignment (पंक्तिबद्धता) बदलने के लिए भी किया जा सकता है, जैसा कि नीचे उदाहरण में दिखाया गया है।
 
 <!-- {% raw %} -->
 ```latex
@@ -74,13 +65,11 @@ it can be used to change a single cell's alignment as shown below.
 ```
 <!-- {% endraw %} -->
 
-### Manipulating the space between columns
+### कॉलम्स के बीच की जगह को नियंत्रित करना
+आमतौर पर LaTeX हर कॉलम के दोनों तरफ थोड़ी जगह (space) देता है, ताकि टेबल संतुलित और स्पष्ट दिखे। यह जगह `\tabcolsep` नामक लंबाई (length) से परिभाषित होती है। चूँकि प्रत्येक कॉलम के दोनों ओर padding (अंतर) होता है, इसलिए टेबल की बाहरी किनारों पर एक-एक `\tabcolsep` होता है,
+और दो कॉलमों के बीच कुल `2\tabcolsep` की जगह बनती है — एक प्रत्येक कॉलम से।
 
-Usually LaTeX pads each column by some space on both sides to give a balanced
-look and separate them. This space is defined with the length `\tabcolsep`. Due
-to the fact that each column is padded on both sides you get one `\tabcolsep` on
-either end of the table, and `2\tabcolsep` between two columns &ndash; one from
-each column. You can adjust this space to any length using `\setlength`:
+आप इस जगह को अपनी आवश्यकता अनुसार बदल सकते हैं, इसके लिए `\setlength` कमांड का उपयोग किया जाता है:
 
 <!-- {% raw %} -->
 ```latex
@@ -101,9 +90,7 @@ each column. You can adjust this space to any length using `\setlength`:
 ```
 <!-- {% endraw %} -->
 
-You can change this space to something arbitrary using `@`. This will remove the
-padding between two columns or on either end, and instead put anything in
-between the columns you specify as an argument:
+आप `@` टोकन का उपयोग करके कॉलम्स के बीच की जगह को अपनी पसंद के अनुसार बदल सकते हैं। इससे दो कॉलमों के बीच या टेबल के किनारों पर दी जाने वाली डिफ़ॉल्ट padding हट जाती है,और उसकी जगह आप जो चाहें वह सामग्री (जैसे टेक्स्ट, स्पेस, या कोई प्रतीक) डाल सकते हैं। आप जो भी चीज़ कॉलम्स के बीच दिखाना चाहते हैं, उसे @{...} में तर्क (argument) के रूप में लिख सकते हैं।
 
 <!-- {% raw %} -->
 ```latex
@@ -122,11 +109,9 @@ between the columns you specify as an argument:
 ```
 <!-- {% endraw %} -->
 
-(We'll see `\hspace` [again shortly](lesson-11); you might guess that it adds a
-horizontal space.)
+(हम `\hspace` को [थोड़ी ही देर में](lesson-11) फिर से देखेंगे; आप शायद अंदाज़ा लगा सकते हैं कि यह क्षैतिज (horizontal) जगह जोड़ने के लिए होता है।) 
 
-The `!` preamble token does something pretty similar. The difference is, that it
-_adds_ its argument in center of the space between two columns.
+`!` प्रीएम्बल टोकन भी कुछ हद तक वैसा ही काम करता है। फर्क बस इतना है कि यह दिए गए तर्क (argument) को दो कॉलमों के बीच की खाली जगह के बीच में जोड़ता है।
 
 <!-- {% raw %} -->
 ```latex
@@ -145,10 +130,10 @@ _adds_ its argument in center of the space between two columns.
 ```
 <!-- {% endraw %} -->
 
+### वर्टिकल नियम
 
-### Vertical rules
+कभी-कभी आपको वर्टिकल नियमों का उपयोग करना पड़ सकता है।
 
-Sometimes you have to use vertical rules.
 
 <!-- {% raw %} -->
 ```latex
@@ -167,20 +152,24 @@ Sometimes you have to use vertical rules.
 ```
 <!-- {% endraw %} -->
 
-You might notice that the behavior of `|` is pretty similar to `!{decl}`; it
-adds the vertical rule between two columns leaving the padding as it is. There
-is a huge downside to this though; vertical rules don't work with the
-horizontal rules provided by `booktabs`. You can use the horizontal rules
-provided by LaTeX; those are `\hline` (corresponding to `\toprule`, `\midrule`, and
-`\bottomrule`) and `\cline` (which behaves like `\cmidrule`). As shown above, vertical rules
-will span any space specified in the optional argument to `\\`.
+यह रहा इस हिस्से का औपचारिक और सरल हिंदी अनुवाद:
 
-## Customizing `booktabs` rules
+---
 
-All the `booktabs` rules and also `\addlinespace` support an optional argument
-in brackets with which you can specify the rule's thickness. In addition the
-trimming provided by `\cmidrule` can be customized by specifying a length in
-braces after `r` or `l`.
+आपने शायद ध्यान दिया हो कि `|` का व्यवहार `!{decl}` जैसा ही लगता है — यह दो कॉलमों के बीच एक *लंबवत रेखा* (vertical rule) जोड़ता है,  
+और डिफ़ॉल्ट padding को वैसे ही रहने देता है। हालाँकि, इसका एक बड़ा नुकसान है: लंबवत रेखाएँ `booktabs` पैकेज द्वारा दी गई क्षैतिज रेखाओं (horizontal rules) के साथ ठीक से काम नहीं करतीं।  
+
+यदि आप `booktabs` का उपयोग नहीं कर रहे हैं, तो LaTeX की पारंपरिक क्षैतिज रेखाओं का उपयोग कर सकते हैं, जैसे:  
+- `\hline` — यह `\toprule`, `\midrule`, और `\bottomrule` के समकक्ष है  
+- `\cline` — यह `\cmidrule` की तरह काम करता है  
+
+जैसा कि ऊपर दिखाया गया है, लंबवत रेखाएँ `\\` कमांड के वैकल्पिक आर्ग्युमेंट में दी गई किसी भी अतिरिक्त ऊँचाई को पूरा कवर करती हैं।
+
+
+
+## `booktabs` रूल्स को कस्टमाइज करना
+
+`booktabs` द्वारा प्रदान की गई सभी रेखाएँ (`\toprule`, `\midrule`, `\bottomrule` आदि) और `\addlinespace` एक वैकल्पिक कोष्ठकयुक्त (bracketed) आर्ग्युमेंट स्वीकार करते हैं, जिससे आप रेखा की मोटाई (thickness) तय कर सकते हैं। इसके अलावा, `\cmidrule` में किनारों की कटाई (trimming) को भी नियंत्रित किया जा सकता है — इसके लिए `l` या `r` के बाद कोष्ठकों `{}` में कोई लंबाई (length) दी जा सकती है।
 
 <!-- {% raw %} -->
 ```latex
@@ -201,12 +190,13 @@ braces after `r` or `l`.
 ```
 <!-- {% endraw %} -->
 
-## Numeric alignment in columns
 
-The alignment of numbers in tables can be handled by the column type `S` 
-that is provided by the `siunitx` package.
+## कॉलम में सही ढंग से संरेखण (Numeric Alignment)
 
-A simple example with two aligned numeric columns would be:
+टेबल में संख्याओं को सही ढंग से संरेखित (align) करने के लिए `siunitx` पैकेज द्वारा दिया गया `S` कॉलम टाइप इस्तेमाल किया जाता है।
+
+यदि आप दो कॉलमों में संख्याएँ इस प्रकार संरेखित करना चाहें कि दशमलव बिंदु (decimal point) के अनुसार सभी संख्याएँ सीधी दिखाई दें,  
+तो एक साधारण उदाहरण कुछ इस तरह होगा:
 
 ```latex
 \documentclass{article}
@@ -229,31 +219,24 @@ A simple example with two aligned numeric columns would be:
 \end{document}
 ```
 
-Note that any non-numeric cell must be "protected" by enclosing it in braces.
 
-The `siunitx` package provides many possibilities for formatting the numbers in
-different ways; see the [package
-documentation](https://texdoc.org/pkg/siunitx).
+ध्यान दें कि कोई भी गैर-संख्यात्मक सेल (non-numeric cell) को ब्रेसेज़ `{}` में रखकर "सुरक्षित" करना आवश्यक होता है।
 
-## Specifying the total table width
+`siunitx` पैकेज संख्याओं को विभिन्न तरीकों से फॉर्मेट करने के कई विकल्प प्रदान करता है। अधिक जानकारी के लिए [पैकेज डाक्यूमेंटेशन](https://texdoc.org/pkg/siunitx) देखें।
 
-The width of a `tabular` environment is automatically determined based
-on the contents of the table. There are two commonly used mechanisms
-to specify a different total width.
 
-Note that it is almost always preferable to format the table to a
-specified width as below (perhaps using a font size such as `\small` if
-necessary) rather than scaling a table with `\resizebox` and similar
-commands which will produce inconsistent font sizes and rule widths.
+
+## पूरी टेबल की चौड़ाई निर्धारित करना
+
+`tabular` वातावरण की चौड़ाई सामान्यतः टेबल की सामग्री के अनुसार अपने आप तय हो जाती है। यदि आप टेबल की कुल चौड़ाई अलग से तय करना चाहते हैं, तो इसके लिए दो आमतौर पर उपयोग किए जाने वाले तरीके हैं।
+
+ध्यान रखें कि टेबल को नीचे बताए गए तरीके से किसी निश्चित चौड़ाई में फॉर्मेट करना अधिक उपयुक्त होता है (आवश्यक हो तो `\small` जैसे छोटे फ़ॉन्ट साइज़ का प्रयोग करें), बजाय इसके कि आप `\resizebox` जैसे कमांड्स से टेबल को स्केल करें, जो फ़ॉन्ट साइज और रूल की मोटाई को असंगत बना सकते हैं।
+
 
 ### `tabular*`
 
-The `tabular*` environment takes an additional _width_ argument that
-specifies the total width of the table. Stretchy space must be added
-to the table using the `\extracolsep` command. This space is added
-between all columns from that point in the preamble. It is almost
-always used with `\fill`, a special space that stretches to be as large
-as necessary.
+`tabular*` वातावरण एक अतिरिक्त *चौड़ाई (width)* आर्ग्युमेंट लेता है, जिससे आप टेबल की कुल चौड़ाई निर्धारित कर सकते हैं। इस वातावरण में *लचीलापन देने के लिए* `\extracolsep` कमांड का उपयोग किया जाता है। यह अतिरिक्त स्पेस उस बिंदु से शुरू होकर सभी कॉलमों के बीच जोड़ा जाता है। आमतौर पर इसे `\fill` के साथ प्रयोग किया जाता है, जो एक विशेष प्रकार का स्पेस होता है जो आवश्यकतानुसार जितना चाहिए उतना फैल सकता है।
+
 
 ```latex
 \documentclass{article}
@@ -291,13 +274,11 @@ C & D\\
 \end{document}
 ```
 
+
 ### `tabularx`
 
-The `tabularx` environment, provided by the package of
-the same name, has a similar syntax to `tabular*` but instead of
-adjusting the inter-column space, adjusts the widths of columns
-specified by a new column type, `X`. This is equivalent to a
-specification of `p{...}` for an automatically determined width.
+`tabularx` वातावरण, जो इसी नाम के पैकेज द्वारा प्रदान किया जाता है, `tabular*` की तरह ही दिखने वाला सिंटैक्स रखता है, लेकिन यह कॉलम्स के बीच की जगह (inter-column space) को समायोजित करने के बजाय  `X` नामक नए कॉलम टाइप की चौड़ाई को समायोजित करता है। `X` कॉलम टाइप दरअसल `p{...}` जैसा ही होता है, लेकिन इसकी चौड़ाई अपने आप (स्वतः) तय होती है, ताकि पूरी टेबल दी गई कुल चौड़ाई में समा सके।
+
 
 ```latex
 \documentclass{article}
@@ -335,19 +316,14 @@ C & D D D D D D D\\
 \end{document}
 ```
 
-Unlike the other forms discussed in these lessons, `tabularx` needs to
-typeset the table several times with trial widths to determine the
-final setting. This means that there are several restrictions on the
-use of the environment; see the
-[package documentation](https://texdoc.org/pkg/tabularx).
+`tabularx` वातावरण अन्य फॉर्म्स की तुलना में थोड़ा अलग व्यवहार करता है, क्योंकि यह अंतिम रूप से टेबल की चौड़ाई तय करने के लिए पहले कुछ बार अलग-अलग चौड़ाइयों के साथ टेबल को *अस्थायी रूप से* टाइपसेट करता है। इस कारण, इस वातावरण के उपयोग पर कुछ सीमाएँ होती हैं। विस्तृत जानकारी के लिए [पैकेज डाक्यूमेंटेशन](https://texdoc.org/pkg/tabularx) देखें।
 
-## Multi-page tables
 
-A `tabular` forms an unbreakable box so it must be small enough to fit
-on one page, and is often placed in a floating `table` environment.
+## एक से अधिक पृष्ठों में फैली हुई तालिकाएँ (Multi-page Tables)
+`tabular` वातावरण एक *अखंड बॉक्स* (unbreakable box) बनाता है, इसलिए यह केवल तभी प्रयोग किया जा सकता है जब पूरी तालिका एक ही पृष्ठ में समा सके। अक्सर इसे एक फ्लोटिंग `table` वातावरण के भीतर रखा जाता है।
 
-Several packages provide variants with similar syntax that do allow
-page breaking. Here we show the `longtable` package:
+कुछ पैकेज ऐसे विकल्प प्रदान करते हैं जिनका सिंटैक्स लगभग `tabular` जैसा ही होता है, लेकिन वे टेबल को पृष्ठों में बाँटने की सुविधा भी देते हैं। यहाँ हम `longtable` पैकेज का उपयोग दिखाते हैं:
+
 
 ```latex
 \documentclass{article}
@@ -384,19 +360,16 @@ A Wider Entry & b\\
 \end{document}
 ```
 
-`longtable` is notable in that it preserves the column widths
-over all pages of the table; however in order to achieve this it
-may take several runs of LaTeX so that wide entries encountered later
-in the table can affect the column widths in earlier pages.
+`longtable` की विशेषता यह है कि यह टेबल की कॉलम चौड़ाइयों को सभी पृष्ठों में समान बनाए रखता है। हालाँकि, ऐसा करने के लिए LaTeX को डॉक्यूमेंट को कई बार कंपाइल करना पड़ सकता है, ताकि यदि बाद के पृष्ठों में कोई चौड़ा कंटेंट हो तो उसकी वजह से पहले के कॉलम की चौड़ाई भी समायोजित की जा सके।
 
-## Table notes
 
-It is quite common to need footnote-like marks in a table referring to
-notes under the table. The `threeparttable` package simplifies the
-markup for such tables, arranging that the notes are set in a
-block the same width as the table. Refer to the
-[package documentation](https://texdoc.org/pkg/threeparttable)
-for full details, but we show a simple example here.
+
+## तालिका के नोट्स (Table Notes)
+
+अक्सर टेबल में ऐसे चिन्हों (जैसे फ़ुटनोट) की आवश्यकता होती है जो नीचे दिए गए स्पष्टीकरण या नोट्स की ओर संकेत करते हैं।
+
+`threeparttable` पैकेज इस प्रकार की तालिकाओं के लिए मार्कअप को सरल बना देता है। यह सुनिश्चित करता है कि नोट्स उसी चौड़ाई के एक ब्लॉक में दिखाई दें, जितनी चौड़ाई टेबल की हो। विस्तृत जानकारी के लिए [पैकेज डाक्यूमेंटेशन](https://texdoc.org/pkg/threeparttable) देखें। हालाँकि, हम यहाँ एक सरल उदाहरण प्रस्तुत करते हैं।
+
 
 ```latex
 \documentclass{article}
@@ -422,23 +395,15 @@ for full details, but we show a simple example here.
 \end{document}
 ```
 
-## Typesetting in narrow columns
 
-The default line breaking settings assume relatively long lines to
-give some flexibility in choosing line breaks. The following example
-shows some possible approaches. The first table shows interword spacing
-stretched and TeX warns about Underfull lines. Using `\raggedright`
-usually avoids this problem but may leave some lines ‘too ragged’. The
-`\RaggedRight` command from the `ragged2e` package is a compromise;
-it allows some raggedness in the line lengths, but will also
-hyphenate where necessary, as shown in the third table.
+## संकरे कॉलमों में टेक्स्ट टाइपसेट करना
 
-Note the use of `\arraybackslash` here, which resets the definition of
-`\\` so that it ends the table row.
+डिफ़ॉल्ट लाइन ब्रेकिंग सेटिंग्स अपेक्षाकृत लंबी पंक्तियों के लिए बनाई गई होती हैं, ताकि लाइन ब्रेक चुनने में थोड़ी लचीलापन (flexibility) बनी रहे। नीचे दिया गया उदाहरण कुछ संभावित उपाय दर्शाता है। पहली तालिका में शब्दों के बीच की जगह (interword spacing) खींची गई है, और TeX "Underfull lines" की चेतावनी देता है। `\raggedright` का उपयोग आमतौर पर इस समस्या से बचा सकता है, लेकिन इससे कुछ पंक्तियाँ बहुत असमान (ragged) भी दिख सकती हैं। `ragged2e` पैकेज का `\RaggedRight` कमांड एक संतुलित समाधान है: यह पंक्तियों में कुछ असमानता की अनुमति देता है, लेकिन जहाँ ज़रूरी हो वहाँ शब्दों को विभाजित (hyphenate) भी कर सकता है, जैसा कि तीसरी तालिका में दिखाया गया है।
 
-An alternative technique, as shown in the fourth table, is to use a
-smaller font so that the columns are not so narrow relative to the
-text size.
+यहाँ `\arraybackslash` के उपयोग पर ध्यान दें — यह `\\` कमांड की परिभाषा को पुनः सेट करता है ताकि वह टेबल की पंक्ति को सही ढंग से समाप्त कर सके।
+
+एक वैकल्पिक तकनीक, जैसा कि चौथी तालिका में दिखाया गया है, यह है कि आप फ़ॉन्ट का आकार छोटा कर दें, ताकि कॉलम उतने संकरे न लगें और टेक्स्ट बेहतर फिट हो सके।
+
 
 ```latex
 \documentclass[a4paper]{article}
@@ -473,25 +438,21 @@ Two & A different long text set in a narrow paragraph, with some more  hard to h
 \end{document}
 ```
 
-## Defining new column types
 
-As demonstrated in the [main lesson](lesson-08), the `array` package allows
-constructs such as `>{\bfseries}c`  to denote a bold centered column.
-It is often convenient to define a new column type to encapsulate such
-use, for example
+## नए कॉलम प्रकार (Column Types) परिभाषित करना
+
+जैसा कि [मुख्य पाठ](lesson-08) में दिखाया गया है, `array` पैकेज ऐसी संरचनाओं को अनुमति देता है जैसे `>{\bfseries}c`, जो एक *मोटा (bold)* और *केन्द्रित (centered)* कॉलम दर्शाता है। ऐसे उपयोग को सरल बनाने के लिए, एक नया कॉलम टाइप परिभाषित करना सुविधाजनक होता है। उदाहरण के लिए:
 
 ```latex
 \newcolumntype{B}{>{\bfseries}c}
 ```
-would allow the use of `B` in table preambles to specify a bold
-centered column.
+
+यह आपको टेबल की प्रीएम्बल में `B` का उपयोग करने की अनुमति देता है, जिससे वह कॉलम स्वतः ही मोटा और केन्द्रित बन जाएगा।
 
 
-## Vertical tricks
+## वर्टिकल ट्रिक्स (ऊर्ध्वाधर युक्तियाँ)
+कई बार, किसी सेल को कई पंक्तियों (rows) में फैलाने की बजाय, एक ही पंक्ति में कुछ सेल्स को ऊर्ध्वाधर रूप से विभाजित करना अधिक उचित होता है। यह कार्य *नेस्टेड `tabular` वातावरण* (nested tabular environments) के उपयोग से किया जा सकता है।
 
-Often, rather than making a cell span multiple rows it is better to instead have
-a single row in which some cells are split vertically by the use of nested
-`tabular` environments.
 
 <!-- {% raw %} -->
 ```latex
@@ -514,9 +475,8 @@ a single row in which some cells are split vertically by the use of nested
 ```
 <!-- {% endraw %} -->
 
-Note that you can control vertical alignment by an optional argument to the
-`tabular`; it supports the usage of `t`, `c`, or `b` for top, centered, or
-bottom aligned respectively and is used like this:
+ध्यान दें कि आप `tabular` में एक वैकल्पिक आर्ग्युमेंट के माध्यम से ऊर्ध्वाधर संरेखण (vertical alignment) को नियंत्रित कर सकते हैं। यह आर्ग्युमेंट `t`, `c`, या `b` को स्वीकार करता है, जो क्रमशः शीर्ष (top), मध्य (centered), या नीचे (bottom) संरेखण को दर्शाते हैं। इसका उपयोग इस प्रकार किया जाता है:
+
 
 <!-- {% raw %} -->
 ```latex
@@ -539,25 +499,22 @@ bottom aligned respectively and is used like this:
 ```
 <!-- {% endraw %} -->
 
-## Line spacing in tables
 
-In the main lesson we demonstrated `\addlinespace` from the `booktabs`
-package, which is useful for adding extra space between specific lines.
+## तालिकाओं में पंक्ति-अंतर (Line Spacing)
 
-There are two general parameters that control line spacing,
-`\arraystretch` and `\extrarowheight` (the latter from the `array`
-package).
+मुख्य पाठ में हमने `booktabs` पैकेज के `\addlinespace` कमांड का उपयोग दिखाया था, जो किसी विशेष पंक्ति के बाद अतिरिक्त जगह जोड़ने के लिए उपयोगी होता है। टेबल की पंक्तियों के बीच की दूरी नियंत्रित करने के दो सामान्य पैरामीटर होते हैं:  
+- `\arraystretch`  
+- `\extrarowheight` (यह `array` पैकेज से आता है)
+
 
 ```latex
 \renewcommand\arraystretch{1.5}
 ```
 
-will increase the baseline spacing by 50%.
 
+यह 50% तक *बेसलाइन स्पेसिंग* (baseline spacing) बढ़ा देगा।
 
-Often, especially when using `\hline`, it is better just to increase
-the height of rows, without increasing their depth below the baseline.
-The following example demonstrates the `\extrarowheight` parameter.
+अक्सर, विशेष रूप से जब आप `\hline` का उपयोग कर रहे हों, तो केवल पंक्तियों की ऊँचाई बढ़ाना अधिक उपयुक्त होता है, बिना बेसलाइन के नीचे की गहराई को बढ़ाए। नीचे दिया गया उदाहरण `\extrarowheight` पैरामीटर के उपयोग को दर्शाता है।
 
 ```latex
 \documentclass[a4paper]{article}

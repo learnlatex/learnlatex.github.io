@@ -1,39 +1,25 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: Including graphics and positioning"
-description: "This lesson gives details on how better name and store graphics files to be used with LaTeX, and how you can make your own graphics from within LaTeX."
-toc-anchor-text: "More on: Including graphics and positioning"
+title: "अधिक जानकारी: ग्राफिक्स जोड़ना और उसकी पोजिशनिंग करना"
+description: "यह पाठ इस बारे में विस्तृत जानकारी देता है कि LaTeX के साथ उपयोग की जाने वाली ग्राफिक्स फाइलों को बेहतर ढंग से कैसे नामित और संग्रहीत किया जाए, तथा आप LaTeX के भीतर से अपने स्वयं के ग्राफिक्स कैसे बना सकते हैं।"
+toc-anchor-text: "अधिक जानकारी: ग्राफिक्स जोड़ना और उसकी पोजिशनिंग करना"
 ---
 
-## Naming graphics files
+## ग्राफिक्स फाइलों के नामकरण
 
-LaTeX works on many computer platforms so
-file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces.
-For example, if you want to organize your files by keeping all
-graphics in a subdirectory, then something like
-`\includegraphics[width=30pt]{pix/mom.png}`
-is portable and future-proof.
+LaTeX कई कंप्यूटर प्लेटफार्म पर काम करता है, इसलिए फाइलों के नाम पर थोड़ी सोच-विचार जरूरी है। सबसे सुरक्षित तरीका है कि आप अपने ग्राफिक्स के नाम सरल रखें, विशेष रूप से बिना स्पेस (spaces) के। उदाहरण के लिए, यदि आप सभी ग्राफ़िक्स को एक उप-डायरेक्टरी (subdirectory) में रखकर फाइलों को व्यवस्थित करना चाहते हैं, तो कुछ इस प्रकार का नाम देना `\includegraphics[width=30pt]{pix/mom.png}` सुव्यवस्थित और भविष्य में भी उपयोगी रहेगा।
 
-Spaces in file names are traditionally somewhat problematic, but are now
-generally supported. However, if you have spaces in the name, and you have
-issues, you may wish to try removing the spaces as the first step.
+फाइल नामों में स्पेस पारंपरिक रूप से कुछ समस्याएं उत्पन्न कर सकते हैं, हालाँकि अब अधिकतर प्लेटफार्म इन्हें सपोर्ट देते हैं। यदि आपके फाइल नाम में स्पेस हैं और कोई समस्या आ रही है, तो पहला प्रयास स्पेस को हटाने का होना चाहिए।
 
-Accented character support is somewhat variable; there are issues with some
-systems, particularly on Windows. If you find issues with accented characters
-in file names, try using only ASCII characters for a test.
+उच्चारण (accented) अक्षरों का सपोर्ट प्लेटफार्म पर निर्भर करता है; कुछ सिस्टम, विशेषकर Windows पर, इससे संबंधित समस्याएँ आ सकती हैं। यदि आपके फाइल नाम में accented अक्षरों के कारण समस्या हो रही है, तो परीक्षण के लिए केवल ASCII अक्षरों का प्रयोग करें।
 
-## Storing graphics in a subdirectory
+## ग्राफ़िक्स को उप-डायरेक्टरी में संग्रहित करना
 
-A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate parts of the path _even on Windows_.
+स्रोत फाइलों को व्यवस्थित करने का एक सामान्य तरीका यह है कि सभी ग्राफिक्स को एक उप-डायरेक्टरी में रखा जाए। आप फिर संबंधित पथ (relative path) को शामिल कर सकते हैं, जैसा कि ऊपर दिखाया गया है; ध्यान दें कि पथ के भागों को अलग करने के लिए `/` का उपयोग किया जाता है _यहाँ तक कि Windows पर भी_।
 
-If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs a braced entry
-for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have:
+यदि आपके पास बहुत सारे ग्राफिक्स हैं, तो आप उप-डायरेक्टरी को पहले से निर्धारित करना चाह सकते हैं। यह `\graphicspath` के माध्यम से किया जा सकता है, जिसमें प्रत्येक उप-डायरेक्टरी के लिए एक ब्रैस्ड (braced) प्रविष्टि देना आवश्यक होता है। उदाहरण के लिए, यदि आप `figs` और `pics` दोनों उप-डायरेक्टरी जोड़ना चाहते हैं, तो हम लिखेंगे:
+
 
 <!-- {% raw %} -->
 ```latex
@@ -41,32 +27,26 @@ subdirectories, we would have:
 ```
 <!-- {% endraw %} -->
 
-Notice in particular the trailing `/` in these.
+इनमें विशेष रूप से अंतिम `/` पर ध्यान दें।
 
-## Producing graphics
 
-As discussed, LaTeX easily uses graphics from most sources, including plots from
-scientific software. When you do that, you probably want to save as a PDF if you
-can, as this is a scalable format. If you do need to create a bitmap, aim for
-high resolution. You can make mouse-created graphics that include LaTeX snippets
-with [Inkscape](https://inkscape.org/). An alternative that in addition extends
-those drawing techniques to three dimensions is
-[Asymptote](https://www.ctan.org/pkg/asymptote). These two produce their output
-as files that you include in your document.
+यह रहा आपके दिए गए टेक्स्ट का औपचारिक और सरल हिंदी अनुवाद:
 
-You can also create graphics such as drawings that are especially suited to
-LaTeX, with very high precision as well as equations and labels that match your
-document. You can draw graphics directly inside your document, which is
-convenient although at the cost of more complex documents with larger
-requirements, by using [Ti*k*Z](https://ctan.org/pkg/pgf). An alternative is
-[PSTricks](https://ctan.org/pkg/pstricks-base).
+---
 
-## Placing floats
+## ग्राफिक्स तैयार करना
 
-LaTeX's float placement is complex.
-The most common request is to have the figure placed
-in the output exactly where it lies in the input.
-The `float` package will do that.
+जैसा कि पहले चर्चा की गई थी, LaTeX आसानी से अधिकांश स्रोतों से ग्राफिक्स का उपयोग कर सकता है, जिनमें वैज्ञानिक सॉफ़्टवेयर से बनाए गए प्लॉट्स भी शामिल हैं। जब आप ऐसा करें, तो यदि संभव हो तो ग्राफिक्स को PDF फ़ॉर्मेट में सेव करना बेहतर होता है, क्योंकि यह एक स्केलेबल (आकार में बिना गुणवत्ता खोए बढ़ाया जा सकने वाला) फ़ॉर्मेट है। यदि आपको बिटमैप बनाना ही पड़े, तो उच्च रिज़ॉल्यूशन का उपयोग करें।
+
+आप ग्राफिक्स जिनमें LaTeX कोड भी शामिल हो, [Inkscape](https://inkscape.org/) सॉफ़्टवेयर की मदद से बना सकते हैं। एक और विकल्प है [Asymptote](https://www.ctan.org/pkg/asymptote), जो इस तकनीक को तीन-आयामी (3D) चित्रों तक बढ़ा देता है। इन दोनों सॉफ़्टवेयर से बनाए गए चित्र फ़ाइल के रूप में सेव होते हैं, जिन्हें आप अपने डॉक्यूमेंट में शामिल कर सकते हैं।
+
+आप LaTeX के लिए विशेष रूप से उपयुक्त चित्र भी बना सकते हैं, जिनमें बहुत उच्च सटीकता होती है और जिनमें समीकरण व लेबल्स ठीक वैसे ही होते हैं जैसे आपके डॉक्यूमेंट में। आप चित्र सीधे डॉक्यूमेंट के अंदर बना सकते हैं, जो सुविधाजनक होता है, हालांकि इससे डॉक्यूमेंट थोड़ा जटिल और संसाधन-भारी हो जाता है। इसके लिए आप [Ti*k*Z](https://ctan.org/pkg/pgf) का उपयोग कर सकते हैं। एक अन्य विकल्प है [PSTricks](https://ctan.org/pkg/pstricks-base)।
+
+
+
+## फ्लोट्स (चित्र आदि) को स्थान देना
+LaTeX में फ्लोट्स (जैसे चित्र या तालिका) की स्थिति तय करना थोड़ा जटिल होता है। सबसे आम आवश्यकता यह होती है कि चित्र डॉक्यूमेंट में ठीक उसी स्थान पर दिखाई दे जहाँ उसे कोड में लिखा गया है। इस उद्देश्य के लिए आप float पैकेज का उपयोग कर सकते हैं।
+
 
 ```latex
 \documentclass{article}
@@ -86,21 +66,16 @@ The `float` package will do that.
 \end{document}
 ```
 
-Note the `H` option, which puts the figure 'absolutely Here'.
-However it is often not recommended to use `H`, because it may
-create large portions of white space in your document.
+`H` विकल्प का ध्यान दें, जो चित्र को *बिल्कुल उसी स्थान* पर रखता है जहाँ उसे कोड में लिखा गया है। हालाँकि, आमतौर पर `H` का उपयोग करने की हिदायत नहीं की जाती, क्योंकि इससे डॉक्यूमेंट में बड़ी मात्रा में खाली जगह (white space) बन सकती है।
 
-## Other types of float
 
-We will [see soon](lesson-08) that we can put tables in floats; they will go
-into a `table` environment. However, we don't _have_ to put graphics in the
-`figure` environment or tables in the `table` environment; this is just
-convention.
 
-You might want to have other types of floating environment; each type is
-inserted independently. You can do that using the
-[`trivfloat`](https://ctan.org/pkg/trivfloat) package. This provides a single
-command, `\trivfloat`, to make new types of float.
+## फ्लोट के अन्य प्रकार
+
+हम [आगे के पाठ में](lesson-08) देखेंगे कि हम तालिकाओं (tables) को भी फ्लोट के रूप में रख सकते हैं; इसके लिए हम `table` वातावरण का उपयोग करते हैं। हालाँकि, चित्रों को `figure` वातावरण में या तालिकाओं को `table` वातावरण में रखना अनिवार्य नहीं है—यह सिर्फ एक प्रचलन (convention) है।
+
+अगर आप अन्य प्रकार के फ्लोटिंग वातावरण बनाना चाहते हैं, तो आप [`trivfloat`](https://ctan.org/pkg/trivfloat) पैकेज का उपयोग कर सकते हैं।  
+यह पैकेज `\trivfloat` नामक एक आसान कमांड प्रदान करता है, जिससे आप अपनी आवश्यकतानुसार नए प्रकार के फ्लोट बना सकते हैं।
 
 ```latex
 \documentclass{article}
