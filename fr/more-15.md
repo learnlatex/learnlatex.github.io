@@ -137,8 +137,8 @@ comme du « texte normal », parfaitement valide.
 
 <script>
   window.addEventListener('load', function(){
-  rlselectline('pre0',9);
-  rlselectline('pre3',4);
-  rlselectline('pre6',5);
+  rlselectline('pre0',10);
+  rlselectline('pre3',5);
+  rlselectline('pre6',6);
   }, false);
 </script>

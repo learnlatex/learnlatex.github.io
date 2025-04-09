@@ -14,7 +14,6 @@ toc-anchor-text: "追加レッスン：エラーへの対処"
 % !TEX program=pdflatex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-
 \usepackage{amsmath}
 
 \begin{document}
@@ -54,7 +53,6 @@ LaTeXをコマンドラインで対話的に実行している場合には最初
 % !TEX program=pdflatex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-
 \begin{document}
 Text_word  $\alpha + \beta$.
 
@@ -111,15 +109,15 @@ l.5 Text_word  $\alpha
 ```
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 5 ({)
+### simple group (level 1) entered at line 7 ({)
 ```
 {: .noedit :}
 
 <script>
   window.addEventListener('load', function(){
-  rlselectline('pre0',9);
-  rlselectline('pre3',4);
-  rlselectline('pre6',5);
+  rlselectline('pre0',10);
+  rlselectline('pre3',5);
+  rlselectline('pre6',7);
   }, false);
 </script>
 

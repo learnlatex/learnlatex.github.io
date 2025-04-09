@@ -25,6 +25,7 @@ la posizione corretta dell'errore.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+
 \usepackage{amsmath}
 
 \begin{document}
@@ -167,8 +168,8 @@ perché vede `)` come ‘testo normale’.
 
 <script>
   window.addEventListener('load', function(){
-  rlselectline('pre0',9);
-  rlselectline('pre3',4);
-  rlselectline('pre6',5);
+  rlselectline('pre0',10);
+  rlselectline('pre3',5);
+  rlselectline('pre6',6);
   }, false);
 </script>
