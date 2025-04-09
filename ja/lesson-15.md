@@ -167,7 +167,7 @@ l.3 \usepackage[leqno}
 
 <script>
   window.addEventListener('load', function(){
-  rlselectline('pre2',4);
+  rlselectline('pre2',3);
   rlselectline('pre5',4);
   rlselectline('pre8',4);
   rlselectline('pre10',8);
