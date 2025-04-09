@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "hi"
 title: "अधिक जानकारी: उद्धरण (citation) और संदर्भ (references)"
 description: "यह पाठ गैर-अंग्रेजी ग्रंथसूचियों, हाइपरलिंक में संदर्भ बनाने के तरीके, तथा BibTeX शैलियों के बीच मुख्य अंतरों पर प्रकाश डालता है।"
 toc-anchor-text: "अधिक जानकारी: उद्धरण (citation) और संदर्भ (references)"

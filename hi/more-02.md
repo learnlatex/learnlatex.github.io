@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "hi"
 title: "अधिक जानकारी: LaTeX के साथ कार्य करना"
 description: "यह पाठ इस बारे में अधिक जानकारी देता है कि LaTeX क्या है और यह किन इंजनों पर चलता है।"
 toc-anchor-text: "अधिक जानकारी: LaTeX के साथ कार्य करना"
