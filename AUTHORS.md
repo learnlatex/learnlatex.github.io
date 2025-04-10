@@ -26,6 +26,7 @@ The following people have made contributions to learnlatex.org:
 - Dung Vu
 - Uwe Ziegenhagen
 - निरंजन
+- Vivek Tripathi
 - Daniel Zhang
 - Tommaso Gordini
 - Jhonatan David Arias Quispe

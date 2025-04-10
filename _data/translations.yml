@@ -19,6 +19,7 @@ change-language:
   vi: "Đọc trang này trong một ngôn ngữ khác"
   zh-hans: "切换到其他语言"
   zh-hant: "切換到其他語言"
+  hi: "इस पृष्ठ को किसी अन्य भाषा में पढ़ें"
   mr: "हे पृष्ठ दुसऱ्या भाषेत वाचा"
   ca: "Llegeix aquesta pàgina en un idioma diferent"
 skip-link:
@@ -34,6 +35,7 @@ skip-link:
   vi: "Chuyển đến nội dung chính"
   zh-hans: "跳到主要内容"
   zh-hant: "跳到主要內容"
+  hi: "मुख्य विषय पर जाएँ"
   mr: "मुख्य विषयावर जा"
   ca: "Saltar al contingut principal"
 heading_meta:
@@ -49,6 +51,7 @@ heading_meta:
   vi: "Meta"
   zh-hans: "元数据"
   zh-hant: "元資料"
+  hi: "अधिक"
   mr: "अधिक"
   ca: "Meta"
 heading_navigation:
@@ -64,6 +67,7 @@ heading_navigation:
   vi: "Điều hướng"
   zh-hans: "导航"
   zh-hant: "導航"
+  hi: "मार्गदर्शन पृष्ठ"
   mr: "पृष्ठे"
   ca: "Navegació"
 heading_planet:
@@ -79,6 +83,7 @@ heading_planet:
   vi: "Liên kết ngoài"
   zh-hans: "星球"
   zh-hant: "星球"
+  hi: "LaTeX-विश्व"
   mr: "लाटेक्-विश्व"
   ca: "Planeta"
 informational-elements_lesson:
@@ -94,6 +99,7 @@ informational-elements_lesson:
   vi: "Bài học"
   zh-hans: "课程"
   zh-hant: "課程"
+  hi: "पाठ"
   mr: "प्रकरण"
   ca: "Lliçó"
 informational-elements_search:
@@ -109,6 +115,7 @@ informational-elements_search:
   vi: "Tìm kiếm"
   zh-hans: "搜索"
   zh-hant: "搜尋"
+  hi: "खोज करें"
   mr: "शोधपट्टी"
   ca: "Cercar"
 navigational-elements_home:
@@ -124,6 +131,7 @@ navigational-elements_home:
   vi: "Trang chủ"
   zh-hans: "主页"
   zh-hant: "首頁"
+  hi: "मुख्यपृष्ठ"
   mr: "मुखपृष्ठ"
   ca: "Pàgina d'inici"
 navigational-elements_mission:
@@ -139,6 +147,7 @@ navigational-elements_mission:
   vi: "Sứ mệnh"
   zh-hans: "任务"
   zh-hant: "任務"
+  hi: "मिशन"
   mr: "उद्दिष्ट"
   ca: "Missió"
 navigational-elements_help:
@@ -154,6 +163,7 @@ navigational-elements_help:
   vi: "Hỗ trợ"
   zh-hans: "帮助"
   zh-hant: "幫助"
+  hi: "मदद"
   mr: "मदत"
   ca: "Ajuda"
 navigational-elements_settings:
@@ -169,6 +179,7 @@ navigational-elements_settings:
   vi: "Cài đặt trang"
   zh-hans: "设置"
   zh-hant: "設定"
+  hi: "सेटिंग्स"
   mr: "प्राधान्ये"
   ca: "Configuració"
 navigational-elements_contact:
@@ -184,6 +195,7 @@ navigational-elements_contact:
   vi: "Liên hệ"
   zh-hans: "联系方式"
   zh-hant: "聯絡方式"
+  hi: "संपर्क"
   mr: "संपर्क"
   ca: "Contacte"
 navigational-elements_licenses:
@@ -199,6 +211,7 @@ navigational-elements_licenses:
   vi: "Giấy phép"
   zh-hans: "许可"
   zh-hant: "授權"
+  hi: "लाइसेंस"
   mr: "परवाने"
   ca: "Llicències"
 navigational-elements_privacy:
@@ -214,6 +227,7 @@ navigational-elements_privacy:
   vi: "Chính sách bảo mật"
   zh-hans: "隐私"
   zh-hant: "隱私"
+  hi: "गोपनीयता"
   mr: "गोपनीयता धोरण"
   ca: "Privacitat"
 navigational-elements_open-an-issue:
@@ -229,6 +243,7 @@ navigational-elements_open-an-issue:
   vi: "Báo lỗi"
   zh-hans: "提交问题"
   zh-hant: "提交問題"
+  hi: "Issue Open करें"
   mr: "सुधारणा/तक्रार नोंदवा"
   ca: "Obrir un problema"
 navigational-elements_page-source:
@@ -244,6 +259,7 @@ navigational-elements_page-source:
   vi: "Nguồn trang"
   zh-hans: "页面源码"
   zh-hant: "頁面程式碼"
+  hi: "पृष्ठ स्रोत"
   mr: "पृष्ठाचे आज्ञावलीय बीज"
   ca: "Font de la pàgina"
 navigational-elements_more:
@@ -259,6 +275,7 @@ navigational-elements_more:
   vi: "Xem bài bổ sung của bài này"
   zh-hans: "关于此主题的更多信息"
   zh-hant: "關於此主題的更多資訊"
+  hi: "इस विषय पर और अधिक मदद"
   mr: "ह्याबाबत अधिक माहिती"
   ca: "Més sobre aquest tema"
 navigational-elements_next:
@@ -274,6 +291,7 @@ navigational-elements_next:
   vi: "Bài tiếp theo"
   zh-hans: "下一课"
   zh-hant: "下一課"
+  hi: "अगला पाठ"
   mr: "पुढील प्रकरण"
   ca: "Següent lliçó"
 navigational-elements_nextmain:
@@ -289,6 +307,7 @@ navigational-elements_nextmain:
   vi: "Bài chính tiếp theo"
   zh-hans: "下一主课程"
   zh-hant: "下一主課程"
+  hi: "अगला पाठ"
   mr: "पुढील मुख्य प्रकरण"
   ca: "Següent lliçó principal"
 navigational-elements_return:
@@ -304,6 +323,7 @@ navigational-elements_return:
   vi: "Quay trở lại bài chính"
   zh-hans: "回到主课程"
   zh-hant: "回到主課程"
+  hi: "मुख्य पाठ पर वापस जाएँ"
   mr: "मुख्य प्रकरणाकडे परत जा"
   ca: "Tornar a la lliçó principal"
 navigational-elements_toc:
@@ -319,6 +339,7 @@ navigational-elements_toc:
   vi: "Mục lục"
   zh-hans: "目录"
   zh-hant: "目錄"
+  hi: "अनुक्रमणिका"
   mr: "अनुक्रमणिका"
   ca: "Taula de contingut"
 navigational-elements_latex_project:
@@ -334,6 +355,7 @@ navigational-elements_latex_project:
   vi: "The LaTeX Project"
   zh-hans: "LaTeX 项目"
   zh-hant: "LaTeX 專案"
+  hi: "LaTeX परियोजना"
   mr: "लाटेक् प्रकल्प"
   ca: "The LaTeX Project"
 navigational-elements_tug:
@@ -349,6 +371,7 @@ navigational-elements_tug:
   vi: "TeX Users Group"
   zh-hans: "TeX 用户组"
   zh-hant: "TeX 使用者組"
+  hi: "TeX Users समूह"
   mr: "टेक् यूजर्स ग्रुप"
   ca: "TeX Users Group"
 navigational-elements_ctan:
@@ -364,12 +387,14 @@ navigational-elements_ctan:
   vi: "CTAN"
   zh-hans: "CTAN"
   zh-hant: "CTAN"
+  hi: "सीटैन"
   mr: "सीटॅन"
   ca: "CTAN"
 
 # optional list of localised numbers 0-20 (fr alphabetic just for testing)
 #    fr: "*,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t"
 navigational-elements_digits:
+  hi: "०,१,२,३,४,५,६,७,८,९,१०,११,१२,१३,१४,१५,१६,१७,१८,१९,२०"
   mr: "०,१,२,३,४,५,६,७,८,९,१०,११,१२,१३,१४,१५,१६,१७"
   zh-hans: "零,一,二,三,四,五,六,七,八,九,十,十一,十二,十三,十四,十五,十六,十七,十八,十九,二十"
   zh-hant: "零,一,二,三,四,五,六,七,八,九,十,十一,十二,十三,十四,十五,十六,十七,十八,十九,二十"

@@ -23,6 +23,10 @@
   label-regional: Français
   label-english: French
 
+- language-code: hi
+  label-regional: हिंदी 
+  label-english: Hindi
+  
 - language-code: it
   label-regional: Italiano
   label-english: Italian
@@ -34,7 +38,7 @@
 - language-code: lt
   label-regional: Lietuviškai
   label-english: Lithuanian
-
+  
 - language-code: mr
   label-regional: मराठी
   label-english: Marathi
