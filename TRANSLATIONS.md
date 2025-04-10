@@ -37,11 +37,10 @@ pages.
 
 
 1. Make a new directory `zz` as a copy of the English pages in `en`, including the subdirectory `en/includes`
-2. Add the two letter code `zz` to the `langs:` array in the `_config.yml` file.
-3. Change all instances of `en/` in `zz/index.md` to `zz/`
-4. Translate the fixed strings in `zz/includes/buttons.js` into your language.
+2. Change all instances of `en/` in `zz/index.md` to `zz/`
+3. Translate the fixed strings in `zz/includes/buttons.js` into your language.
    This is for the buttons used in examples such as "Open in Overleaf".
-5. Add a new entry in `_data/languages.yml`. This should specify the
+4. Add a new entry in `_data/languages.yml`. This should specify the
    code, the name of your language in the language and in English, for example
    the French entry is
 
@@ -50,7 +49,7 @@ pages.
      label-regional: Français
      label-english: French
    ```
-6. Update each section of `_data/translations.yml` with an entry for
+5. Update each section of `_data/translations.yml` with an entry for
    each of the fixed strings in the site. So for example the entry for "Next Lesson"
    should be amended to have a `zz:` entry:
 
