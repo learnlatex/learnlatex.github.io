@@ -37,3 +37,7 @@ permalink: /hi/settings
 एम्बेडेड ACE संपादक द्वारा उपयोग की जाने वाली थीम-
 
 {% include settings-acetheme.html %}
+
+CodeMirror
+
+{% include settings-cm6theme.html %}
