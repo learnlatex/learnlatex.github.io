@@ -1,28 +1,29 @@
 ---
 layout: "lesson"
 lang: "el"
-title: "More on: What is LaTeX and how does it work?"
-description: "This lesson gives more context on the history of LaTeX and other formats available."
-toc-anchor-text: "More on: What is LaTeX and how does it work?"
+title: "Περισσότερα σχετικά με: Τι είναι το LaTeX και πώς δουλεύει"
+description: "Αυτό το μάθημα αναφέρεται στην ιστορία του LaTeX και στις άλλες διαθέσιμες μορφές."
+toc-anchor-text: "Περισσότερα σχετικά με: Τι είναι το LaTeX και πώς δουλεύει"
 ---
 
-The word 'LaTeX' actually consists of two components, 'La' and 'TeX'. In the
-following we will briefly describe where they come from.
+Η λέξη «LaTeX» αποτελείται στην πραγματικότητα από δύο στοιχεία, «La» και «TeX». 
+Παρακάτω θα περιγράψουμε σύντομα από πού προέρχονται.
 
-TeX was originally invented by Stanford professor Donald Knuth. Knuth is
-well known for a series of books called *The Art of Computer Programming*
-(known as TAOCP). In
-1973 a new edition of the books was to be made; this was the time when the
-typesetting industry switched from traditional typesetting with lead to
-photo-based typesetting. Donald Knuth did not like the quality of the print and
-therefore decided to implement his own typesetting system.
+Το TeX εφευρέθηκε αρχικά από τον Καθηγητή του Stanford, Donald Knuth. Ο Knuth είναι
+γνωστός για μία σειρά βιβλίων που ονομάζεται *The Art of Computer Programming*
+(γνωστή ως TAOCP). Το 1973 ετοιμαζόταν μία νέα έκδοση των βιβλίων&#903; εκείνα τα
+χρόνια, η τυπογραφία περνούσε από την παραδοσιακή στοιχειοθεσία
+με μολύβδινα στοιχεία στην φωτο-στοιχειοθεσία. Ο Donald Knuth θεωρούσε ότι η
+ποιότητα της εκτύπωσης δεν ήταν ικανοποιητική και έτσι αποφάσισε να υλοποιήσει
+το δικό του σύστημα στοιχειοθεσίας.
 
-In May 1977 the development of TeX started.
+Η ανάπτυξη του TeX ξεκίνησε τον Μάιο του 1977.
 
-The original TeX was rather complicated to use, even Donald Knuth used various
-macros to edit his books. Leslie Lamport, who works for Microsoft nowadays, also
-developed a set of macros that simplify the use of TeX and called this macro
-set “LaTeX”.
+Το αρχικό TeX ήταν αρκετά πολύπλοκο στη χρήση, και ακόμη και ο Donald Knuth
+χρησιμοποιούσε αρκετές σύνθετες εντολές (μακροεντολές - macros) για να επεξεργάζεται
+τα βιβλία του. Ο Leslie Lamport, ο οποίος τώρα εργάζεται στην Microsoft, ανέπτυξε
+επίσης ένα σύνολο μακροεντολών που απλοποιούν τη χρήση του TeX και ονόμασε αυτό
+το σύνολο μακροεντολών «LaTeX».
 
-Today LaTeX is the most common way to interact with TeX. Another alternative is
-[ConTeXt](https://www.contextgarden.net/).
+Σήμερα, το LaTeX είναι ο πιο συνηθισμένος τρόπος για να αλληλεπιδρούμε με το TeX.
+Έναν εναλλακτικό τρόπο παρέχει το [ConTeXt](https://www.contextgarden.net/).
