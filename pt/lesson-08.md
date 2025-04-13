@@ -390,7 +390,7 @@ desejado sem explicitamente juntar as linhas:
 ```
 <!-- {% endraw %} -->
 
-## Evercícios
+## Exercícios
 
 Use o exemplo mais simples de tabela para começar a experimentar com elas.
 Tente alinhamentos diferentes usando tipos de colunas `l`, `c` e `r`.  O que
