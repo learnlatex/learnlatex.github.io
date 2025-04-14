@@ -1,72 +1,72 @@
 ---
 layout: "lesson"
 lang: "el"
-title: "LaTeX Showcase - Examples for further study"
-description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
-toc-anchor-text: "LaTeX Showcase"
-toc-description: "Examples for further study."
+title: "Επίδειξη του LaTeX - Παραδείγματα για περαιτέρω μελέτη"
+description: "Αυτό το μάθημα παρουσιάζει διάφορα παραδείγματα άλλων δημοφιλών πακέτων του LaTeX που δεν καλύφθηκαν στα κύρια μαθήματα."
+toc-anchor-text: "Επίδειξη του LaTeX"
+toc-description: "Παραδείγματα για περαιτέρω μελέτη."
 ---
 
-# Showcase
+# Επίδειξη του LaTeX
 
 <span
-  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
+  class="summary">Αυτό το μάθημα παρουσιάζει διάφορα παραδείγματα άλλων δημοφιλών πακέτων του LaTeX που δεν καλύφθηκαν στα κύρια μαθήματα.</span>
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.org](https://texdoc.org).
-The examples are taken from the package documentation unless otherwise noted.
+Η παρούσα σειρά μαθημάτων έκανε μία επισκόπηση των κυριότερων χαρακτηριστικών του LaTeX.
+Το LaTeX διαθέτει ένα τεράστιο πλήθος πακέτων επέκτασης και χρησιμοποιείται σε πολλές
+θεματικές περιοχές. Δίνουμε εδώ κάποια παραδείγματα, χωρίς επεξηγήσεις αλλά με 
+συνδέσμους προς την τεκμηρίωση των πακέτων στο [texdoc.org](https://texdoc.org).
+Τα παραδείγματα προέρχονται από την τεκμηρίωση των πακέτων, εκτός κι αν αναφέρεται διαφορετικά.
 
 <p
-  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
+  class="hint">Επισημαίνεται ότι η συμπερίληψη εδώ δεν πρέπει να εκληφθεί ως προτίμηση ή υιοθέτηση ενός πακέτου σε σχέση με άλλα παρόμοια, στοχεύουμε μόνο σε ένα μικρό δείγμα για να παρουσιάσουμε μια σειρά από τομείς που δεν καλύπτονται κατά τα άλλα στη σειρά μαθημάτων.</p>
 
-## Chemistry
+## Χημεία
 
-Package: [`mhchem`](https://texdoc.org/pkg/mhchem)
+Πακέτο: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
-## Linguistics
+## Γλωσσολογία
 
-Package: [`forest`](https://texdoc.org/pkg/forest)
+Πακέτο: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
-## Chess
+## Σκάκι
 
 <!-- not 2017 -->
-Package: [`xskak`](https://texdoc.org/pkg/xskak)
+Πακέτο: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
 
-## Poetry
+## Ποίηση
 
-Class: [`memoir`](https://texdoc.org/pkg/memoir)
+Κλάση εγγράφου: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
 
-## Drawing
+## Σχεδίαση
 <!-- not 2017 -->
-Package: [`tikz`](https://texdoc.org/pkg/tikz)
+Πακέτο: [`tikz`](https://texdoc.org/pkg/tikz)
 
 
 {% include extra-01-example-tikz.md %}
 
 
-## Function plotting
+## Γραφική παράσταση συναρτήσεων
 
-Package: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
+Πακέτο: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 
 {% include extra-01-example-pgfplots.md %}
 
 
-## Music
+## Μουσική
 
-Package: [`musixtex`](https://texdoc.org/pkg/musixtex)
+Πακέτο: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 
 

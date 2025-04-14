@@ -1,8 +1,8 @@
 ---
 layout: "page"
 lang: "el"
-title: "Using the learnlatex.org site"
-description: "This page explains the learnlatex.org website itself and how to best make use of it."
+title: "Χρήση του ιστοτόπου learnlatex.org"
+description: "Αυτή η σελίδα εξηγεί τον ιστότοπο learnlatex.org και πώς να τον αξιοποιήσετε καλύτερα."
 permalink: /el/help
 ---
 <script>
@@ -11,30 +11,30 @@ permalink: /el/help
   }
 </script>
 
-# Help
+# Βοήθεια
 
 
-## Navigating the site
+## Πλοήγηση στον ιστότοπο
 
-The course consists of 16 core lessons that can be reached from the
-[table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+Υπάρχουν 16 μαθήματα, στα οποία μπορείτε να πλοηγηθείτε από τον
+[πίνακα περιεχομένων]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) στην [αρχική σελίδα](./).
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 16 lessons _without_ reading the additional lessons.
+Κάθε μάθημα έχει έναν σύνδεσμο προς ένα σχετικό μάθημα στο ίδιο αντικείμενο
+το οποίο προχωράει σε μεγαλύτερο βάθος. Θα πρέπει να είναι δυνατό να
+μελετήσετε και τα 16 μαθήματα _χωρίς_ να διαβάσετε τα επιπλέον μαθήματα.
 
-At the end of the course there are one or more lessons specific to the
-language being used for the lessons, and finally a gallery of examples
-of packages demonstrating LaTeX use not covered by this course.
+Μετά από αυτά τα 16 μαθήματα υπάρχουν επίσης ένα ή περισσότερα μαθήματα σχετικά
+με τη γλώσσα που χρησιμοποιείται για τα μαθήματα, και, τέλος, μια σειρά
+παραδειγμάτων πακέτων που επιδεικνύουν το LaTeX και δεν καλύπτονται στα μαθήματα.
 
 ---
 
-## Examples
+## Παραδείγματα
 
-### Running the examples
+### Τρέξιμο των παραδειγμάτων
 
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+Κάθε παράδειγμα αποτελείται από ένα μικρό πλήρες έγγραφο LaTeX, το οποίο φαίνεται
+στη σελίδα ως εξής:
 
 ```latex
 \documentclass{article}
@@ -45,186 +45,186 @@ Example text.
 \end{document}
 ```
 
-Each example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
+Κάθε παράδειγμα είναι πλήρες. Παρ' όλα αυτά, μπορεί να θελήσετε να το επεξεργαστείτε
+κάνοντας μικρές αλλαγές, ίσως στο πλαίσιο κάποιας άσκησης που τίθεται στο τέλος του μαθήματος.
 
-The editor being used is [ACE](https://ace.c9.io/).
+Ο επεξεργαστής κειμένου που χρησιμοποιείται είναι ο [ACE](https://ace.c9.io/).
 
-You may customise the theme used in the editor (for example using a
-dark theme with light text on a dark background) on the [Site Settings](settings) page.
-A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
-while on any example in the site. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
+Μπορείτε να προσαρμόσετε το θέμα που χρησιμοποιείται στον επεξεργαστή κειμένου
+(για παράδειγμα χρησιμοποιώντας ένα σκούρο θέμα με ανοιχτόχρωμο κείμενο σε σκούρο υπόβαθρο)
+στη σελίδα των [ρυθμίσεων του ιστοτόπου](settings).
+Ένας βολικός τρόπος για να πειραμαστιστείτε με τα διαφορετικά θέματα είναι να χρησιμοποιήσετε τον συνδυασμό πλήκτρων
+<kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> σε Mac)
+όταν είστε σε οποιοδήποτε παράδειγμα στον ιστότοπο. [Αυτό εμφανίζει ένα πλαίσιο](javascript:acesettings()) που σας επιτρέπει να αλλάξετε όλες τις ρυθμίσεις του ACE.
 
-The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+Στο αποθετήριο του ACE υπάρχει μία [χρήσιμη σελίδα με συντομεύσεις πληκτρολογίου](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 
 
-#### Three ways to run the example
+#### Τρεις τρόποι για να τρέξετε τα παραδείγματα
 
-* Use the Overleaf service
-* Use the TeXLive.net service
-* Use a locally installed TeX system
+* Χρησιμοποιήστε την υπηρεσία Overleaf
+* Χρησιμοποιήστε την υπηρεσία TeXLive.net
+* Χρησιμοποιήστε ένα τοπικά εγκατεστημένο σύστημα TeX
 
-##### Use the Overleaf service
+##### Η υπηρεσία Overleaf
 
-Overleaf is one of the most popular online LaTeX editing services. The 
-<button>Open in Overleaf</button> button, below the example, will submit the 
-code to [Overleaf](https://www.overleaf.com/about).
+Το Overleaf είναι μία από τις πιο δημοφιλείς online υπηρεσίες για την επεξεργασία αρχείων LaTeX.
+Το κουμπί <button>Άνοιγμα στο Overleaf</button>, κάτω από το παράδειγμα, θα υποβάλει
+τον κώδικα στο [Overleaf](https://www.overleaf.com/about).
 
-If you do not have an account, or the account details are not
-already cached in your browser, then you will be redirected to a
-login page where you may login or register with Overleaf. This is a
-free service but does require you to give some details and agree to
-terms and conditions.
+Αν δεν διαθέτετε λογαριασμό, ή τα στοιχεία του λογαριασμού δεν είναι ήδη
+αποθηκευμένα στο πρόγραμμα πλοήγησης, θα ανακατευθυνθείτε σε μία σελίδα από την
+οποία θα μπορέσετε να κάνετε login ή να εγγραφείτε στο Overleaf. Το Overleaf
+είναι μία δωρεάν υπηρεσία αλλά απαιτεί να δώσετε κάποια στοιχεία σας και να
+αποδεχτείτε τους όρους και τις προϋποθέσεις χρήσης της.
 
-If your Overleaf account is already cached in your browser, then
-Overleaf will be opened in a new tab, with a new
-project with the code. You may then edit it in
-Overleaf which will simultaneously run LaTeX on your code showing
-the resulting output or error log.
+Αν ο λογαριασμός σας στο Overleaf είναι ήδη αποθηκευμένος στο πρόγραμμα πλοήγησης,
+το Overleaf θα ανοίξει σε μία νέα καρτέλα, με ένα νέο έργο (project) με τον κώδικα.
+Μπορείτε να επεξεργαστείτε τον κώδικα στο Overleaf, το οποίο θα τρέξει αυτόματα
+το LaTeX στον κώδικά σας και θα σας εμφανίσει το παραγόμενο αποτέλεσμα ή τυχόν σφάλματα.
 
-Unlike documents processed at TeXLive.net, you may save your project
-in your Overleaf account and return to it later.
+Σε αντίθεση με τα έγγραφα που τρέχετε στο TeXLive.net, μπορείτε να αποθηκεύσετε το
+έργο στον λογαριασμό σας στο Overleaf και να επιστρέψετε σε αυτό αργότερα.
 
-##### Use the TeXLive.net service
+##### Η υπηρεσία TeXLive.net
 
-The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
-[TeXLive.net](https://texlive.net) service[^1].
+Το κουμπί <button>Τρέξιμο στο TeXLive.net</button>, κάτω από το παράδειγμα, θα υποβάλει
+τον κώδικα στην υπηρεσία [TeXLive.net](https://texlive.net)[^1].
 
-The TeXLive.net service was developed specifically to support this site, and
-in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
-to enable display of PDF on mobile and other browsers without built in PDF 
-readers.
+Η υπηρεσία TeXLive.net αναπτύχθηκε ειδικά για να υποστηρίξει αυτό τον ιστότοπο, και
+συγκεκριμένα χρησιμοποιεί το [PDF.js](https://mozilla.github.io/pdf.js/)
+για να επιτρέψει την εμφάνιση αρχείων PDF σε προγράμματα πλοήγησης κινητών συσκευών
+και άλλα τα οποία δεν διαθέτουν ενσωματωμένη δυνατότητα προβολής PDF.
 
-The resulting PDF document (or section of the error log) will be
-shown inline immediately below the example. A <button>Delete
-Output</button> button will be provided so that you may remove this output
-(or you may leave it in place and continue the rest of the lesson
-below).
+Το παραγόμενο έγγραφο PDF (ή το τμήμα του αρχείου καταγραφής σφαλμάτων)
+θα εμφανίζεται ένθετο ακριβώς κάτω από το παράδειγμα. Θα παρέχεται ένα κουμπί
+<button>Διαγραφή αποτελέσματος</button> ώστε να μπορείτε να αφαιρέσετε αυτό το
+αποτέλεσμα (ή μπορείτε να το αφήσετε εκεί και να συνεχίσετε με το υπόλοιπο
+μάθημα παρακάτω).
 
-Note that **TeXLive.net** requires no login or signup of any sort
-so it is very convenient for small examples, but this site
-provides no  mechanism to save your document. Any changes that you
-make to the example are lost if you move off the page.
+Σημειώνεται ότι το **TeXLive.net** δεν απαιτεί κανενός είδους είσοδο ή εγγραφή χρήστη
+και έτσι είναι πολύ βολικό για μικρά παραδείγματα, όμως δεν παρέχει κάποιο τρόπο
+για να αποθηκεύσετε το έγγραφό σας. Οποιαδήποτε αλλαγή κάνετε στο παράδειγμα
+θα χαθεί αν φύγετε από τη σελίδα.
 
-##### Locally installed TeX system
+##### Τοπική εγκατάσταση TeX
 
-If you have a TeX system installed locally, then you may copy the
-example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor
-(<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
-in windows for example). This will place the code in your operating system
-clipboard so you can start a blank document using your local
-editor, and paste in the text.
+Αν έχετε μια τοπική εγκατάσταση TeX στον υπολογιστή σας, μπορείτε να αντιγράψετε
+τον κώδικα του παραδείγματος από τη σελίδα, είτε επιλέγοντάς τον απευθείας είτε
+επιλέγοντάς τον όλο με τη βοήθεια συντόμευσης πληκτρολογίου
+(<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd> στα Windows, για παράδειγμα).
+Με αυτό τον τρόπο ο κώδικας θα αντιγραφεί στο πρόχειρο (clipboard) του υπολογιστή σας
+και μπορείτε να δημιουργήσετε ένα κενό έγγραφο TeX στον τοπικό επεξεργαστή
+κειμένου σας όπου και να τον επικολλήσετε.
 
-### Troubleshooting
+### Αντιμετώπιση προβλημάτων
 
-Our examples are based around using an up-to-date LaTeX installation. They all 
-work with both of our online demonstration systems, so if you get errors with 
-the examples we provide, you might want to check if your LaTeX system is 
-up-to-date.
+Τα παραδείγματά μας βασίζονται στη χρήση μίας ενημερωμένης εγκατάστασης LaTeX.
+Όλα δουλεύουν σωστά και με τις δύο παραπάνω διαδικτυακές υπηρεσίες, επομένως αν λαμβάνετε
+σφάλματα με τα παραδείγματα που παρέχουμε θα πρέπει να ελέγξετε αν η εγκατάσταση
+LaTeX που χρησιμοποιείτε είναι ενημερωμένη.
 
 ---
 
-## Choosing the TeX engine
+## Επιλογή μηχανής TeX
 
-When submitting example documents, by default the `pdflatex` engine will be used.
+Όταν υποβάλλετε έγγραφα παραδειγμάτων, χρησιμοποιείται ως προεπιλογή η μηχανή `pdflatex`.
 
-You can force the choice of `latex`, `pdflatex`, `xelatex`, `lualatex`,
-`platex` or `uplatex` by using a comment of the form:
+Μπορείτε να επιβάλετε τη χρήση του `latex`, `pdflatex`, `xelatex`, `lualatex`,
+`platex` ή `uplatex` χρησιμοποιώντας ένα σχόλιο της μορφής:
 
 `% !TEX ` _any text_ `lualatex`
 
-where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
+όπου το κενό στην αρχή είναι προαιρετικό, δεν γίνεται διάκριση κεφαλαίων-μικρών χαρακτήρων και αγνοείται
+οποιοδήποτε κείμενο μεταξύ της πρώτης και της τελευταίας λέξης (όπως το _any text_).
 
-This allows the form `% !TEX program=pdflatex` used by some TeX editors
-but does not require the `program=` and is currently restricted to
-specifying just one of the engines that are supported on
-the online systems being used.
+Αυτό επιτρέπει τη μορφή `% !TEX program=pdflatex` που χρησιμοποιείται από κάποιους
+επεξεργαστές κειμένου αλλά δεν απαιτεί το `program=` και, μέχρι στιγμής, περιορίζεται
+στο να καθορίζει μόνο μία από τις μηχανές που υποστηρίζονται
+από τις υπηρεσίες που χρησιμοποιούνται.
 
-You can see an example of a comment being used to specify LuaLaTeX in
-[some of the examples on this site](more-14).
+Μπορείτε να δείτε ένα παράδειγμα σχολίου που χρησιμοποιείται για να καθορίσει το
+LuaLaTeX σε [κάποια από τα παραδείγματα σε αυτό τον ιστότοπο](more-14).
 
-If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
-also used to produce the PDF result from the DVI file that these variants generate.
-Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
+Αν καθοριστεί το `platex` ή το `uplatex`, τότε χρησιμοποιείται επίσης
+το πρόγραμμα `dvipdfmx` για να παραχθεί το τελικό PDF από το αρχείο DVI που δημιουργούν
+αυτές οι μηχανές. Παρόμοια, χρησιμοποιούνται τα `dvips` και `ps2pdf`
+αν  καθοριστεί το `latex`.
 
-If the engine is not specified in a `% !TeX` comment, then `pdflatex` will be used
-unless you have specified a default TeX engine on the [Site Settings](settings) page.
+Αν δεν καθοριστεί η μηχανή σε ένα σχόλιο της μορφής `% !TeX`, τότε χρησιμοποιείται το `pdflatex` εκτός κι αν έχετε καθορίσει μια προεπιλεγμένη μηχανή TeX στις [ρυθμίσεις του ιστοτόπου](settings).
 
 ---
 
-## Choosing how to display the output
+## Επιλογή του τρόπου εμφάνισης του αποτελέσματος
 
-If you use the TeXLive.net system, then the PDF
-output from running an example is shown using
-[PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behavior over the widest range of browsers.
+Αν χρησιμοποιείτε την υπηρεσία TeXLive.net, τότε το PDF που δημιουργείται
+από το τρέξιμο ενός παραδείγματος εμφανίζεται από προεπιλογή με τη βοήθεια του
+[PDF.js](https://mozilla.github.io/pdf.js/). Αυτό παρέχει
+μία συνεπή συμπεριφορά στα περισσότερα προγράμματα πλοήγησης.
 
-If you would prefer to use your browser's default PDF reader (either
-its built in one, or an external application that you have configured)
-then add a comment of the form:
+Αν θα προτιμούσατε να χρησιμοποιήσετε τον προεπιλεγμένο τρόπο προβολής PDF
+του προγράμματος πλοήγησης (είτε ενσωματωμένο είτε μια εξωτερική εφαρμογή που
+έχετε ρυθμίσει), τότε προσθέστε ένα σχόλιο της μορφής:
 
 `% !TEX ` _any text_ `pdf`
 
-The default behavior can be explicitly specified by using `pdfjs` as
-the final token. For debugging you may sometimes want the log file
-returned, even if the document produces a PDF with
-no errors. This can be specified by using `log` as the final token in
-the comment.
+Η προκαθορισμένη συμπεριφορά μπορεί να οριστεί ρητά χρησιμοποιώντας το `pdfjs` ως
+το τελευταίο λεκτικό. Για εντοπισμό σφαλμάτων, ίσως θελήσετε μερικές φορές να
+επιστραφεί το αρχείο καταγραφής, ακόμη και αν το έγγραφο παράγει ένα PDF χωρίς
+σφάλματα. Αυτό μπορεί να οριστεί χρησιμοποιώντας το `log` ως το τελευταίο λεκτικό
+στο σχόλιο.
 
-As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
-page. The Settings are specific to each browser, so for example you
-may choose to use the default `pdfjs` setting on your mobile device,
-but use `pdf` on your desktop browser to use its default PDF rendering.
+Ως εναλλακτική στη χρήση ενός σχολίου `% !TeX`, μπορείτε να ορίσετε την
+προεπιλεγμένη παράμετρο επιστροφής του ιστοτόπου στις [ρυθμίσεις του ιστοτόπου](settings).
+Οι ρυθμίσεις αυτές είναι συγκεκριμένες για κάθε πρόγραμμα πλοήγησης,
+οπότε για παράδειγμα μπορείτε να επιλέξετε να χρησιμοποιήσετε
+την προεπιλεγμένη ρύθμιση `pdfjs` στην κινητή συσκευή σας, αλλά να
+χρησιμοποιήσετε τη ρύθμιση `pdf` στο πρόγραμμα πλοήγησης του σταθερού υπολογιστή σας
+ώστε να χρησιμοποιήσετε την εμφάνιση των PDF που έχετε προεπιλέξει εκεί.
 
 
 ---
 
-## HTML output (make4ht, LaTeXML, lwarp)
+## Έξοδος HTML (make4ht, LaTeXML, lwarp)
 
-If using the TeXLive.net system, then additional return options,
-`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
-in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
+Αν χρησιμοποιείτε την υπηρεσία TeXLive.net, τότε μπορούν να οριστούν επιπλέον
+επιλογές επιστροφής, `make4ht`, `LaTeXML` ή `lwarp`. Αυτές επιστρέφουν μία ή
+περισσότερες σελίδες HTML στο πλαίσιο εντός της σελίδας. Αυτό μπορεί να οριστεί
+ταυτόχρονα με τα `xelatex` ή `lualatex` ή την προκαθορισμένη μηχανή `pdflatex`.
 
-To enable this output, add a comment of the form:
+Για να ενεργοποιήσετε αυτή την έξοδο, προσθέστε ένα σχόλιο της μορφής:
 
-
-```
+```latex
 % !TeX make4ht
 ```
 {: .noedit :}
 
-
-Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
-
+αντικαθιστώντας το `make4ht` με `LaTeXML` ή `lwarp` για να ορίσετε αυτά τα συστήματα.
 
 
-Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
-on the [Site Settings](settings) page.
+
+Εναλλακτικά, μπορείτε να ορίσετε το `make4ht`, `LaTeXML` ή `lwarp` ως την προεπιλεγμένη
+μορφή εξόδου στις [ρυθμίσεις του ιστοτόπου](settings).
 
 
-If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
-by executing
+Αν χρησιμοποιείτε ένα τοπικά εγκατεστημένο σύστημα TeX, η ίδια έξοδος που παράγει η επιλογή `make4ht` 
+μπορεί να παραχθεί εκτελώντας
 
-```
+```bash
 make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
-with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
+με την επιπλέον παράμετρο `-x` ή `-l` αν χρησιμοποιείται το XeLaTeX ή το LuaLaTeX.
 
-When running locally, other configurations would be possible. See the [make4ht
-manual](https://texdoc.org/pkg/make4ht).
+Όταν εκτελείτε το `make4ht` τοπικά, διαφορετικές διαμορφώσεις είναι διαθέσιμες. Δείτε το [εγχειρίδιο του make4ht](https://texdoc.org/pkg/make4ht).
 
 
-For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
-and use
+Για να τρέξετε το `LaTeXML` τοπικά, θα χρειαστεί να εγκαταστήσετε το LaTeXML (δεν είναι μέρος του TeX Live ή του MiKTeX)
+και να χρησιμοποιήσετε
 
-```
+```bash
 latexml document.tex > document.xml
 latexmlpost --format=html5 \
    --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
@@ -232,21 +232,20 @@ latexmlpost --format=html5 \
 ```
 {: .noedit :}
 
-Many other LaTeXML configurations are possible,
-[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+Πολλές ακόμη διαμορφώσεις του LaTeXML είναι διαθέσιμες,
+[όπως περιγράφονται στο εγχειρίδιο](https://dlmf.nist.gov/LaTeXML/manual/).
 
 
-The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
-The current version can be seen at the
-[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
+Η διαμόρφωση του `lwarp` δεν περιγράφεται εδώ, είναι κάπως πειραματική και μπορεί να αλλάξει.
+Η τρέχουσα έκδοση υπάρχει στο
+[αποθετήριο κώδικα](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 
 ---
 
-[^1]: Note that during development of the site we have also used 
-      [LaTeX.Online](https://latexonline.cc/) and
+[^1]: Σημειώνεται ότι κατά την ανάπτυξη αυτού του ιστοτόπου χρησιμοποιήσαμε επίσης τα
+      [LaTeX.Online](https://latexonline.cc/) και
       [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.
-
-
+      και ευχαριστούμε τους δημιουργούς αυτών των υπηρεσιών για τις προσαρμογές
+      που πραγματοποίησαν ώστε τα παραδείγματα του παρόντος ιστοτόπου να είναι διαθέσιμα
+      σε πρώιμο στάδιο.

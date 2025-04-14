@@ -1,43 +1,43 @@
 ---
 layout: "start"
 lang: "el"
-title: Learn LaTeX online for free in beginner friendly lessons
-description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+title: Μάθετε LaTeX online δωρεάν σε μαθήματα φιλικά για αρχαρίους
+description: "Μάθετε LaTeX σε 16 μαθήματα φιλικά για αρχαρίους. Κάντε τα πρώτα βήματά σας με το LaTeX, ένα σύστημα προετοιμασίας εγγράφων σχεδιασμένο για να παράγει υψηλής ποιότητας στοιχειοθετημένα αποτελέσματα."
 permalink: /el/
 ---
 
-# Learn LaTeX
+# Μάθετε LaTeX
 
-<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="heading__introduction">Κάντε τα πρώτα βήματά σας με το LaTeX, ένα σύστημα προετοιμασίας εγγράφων σχεδιασμένο για να παράγει υψηλής ποιότητας στοιχειοθετημένα αποτελέσματα.</h2>
 
 <div
   class="text-columns">
   <section>
-    <h3 class="text-columns__heading">Introduction</h3>
-    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
-    and because it is not a single program. Our aim is to help you get 
-    started with LaTeX: the basics, installation, writing code, without 
-    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+    <h3 class="text-columns__heading">Εισαγωγή</h3>
+    <p>Το LaTeX μπορεί να τρομάζει τους νέους χρήστες καθώς <em>δεν</em> είναι ένας επεξεργαστής κειμένου, 
+    και γιατί δεν είναι ένα ενιαίο πρόγραμμα. Στόχος μας είναι να σας βοηθήσουμε
+    να ξεκινήσετε με το LaTeX: τα βασικά στοιχεία, η εγκατάσταση, πώς γράφουμε κώδικα,
+    χωρίς να προσπαθούμε να σας δείξουμε <em>τα πάντα</em> μονομιάς. <a href="./mission">Περισσότερα σχετικά με την αποστολή μας &hellip;</a></p>
   </section>
   <section>
-    <h3 class="text-columns__heading">How it works</h3>
-      <p>We have taken the most important things you will need to know, and made them into <em>16 short lessons</em>, which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run the examples in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+    <h3 class="text-columns__heading">Πώς δουλεύει</h3>
+      <p>Πήραμε τα πιο σημαντικά στοιχεία που θα χρειαστεί να μάθετε, και φτιάξαμε με αυτά <em>16 σύντομα μαθήματα</em>, τα οποία δεν θα χρειαστείτε πολύ χρόνο για να καλύψετε. Σε κάθε μάθημα δίνουμε πολλά παραδείγματα για το τι θα γράφατε. Μπορείτε να επεξεργαστείτε και να τρέξετε τα παραδείγματα μέσα σε αυτό τον ιστότοπο. <a href="./help#examples">Περισσότερα σχετικά με τα παραδείγματα &hellip;</a></p>
   </section>
 </div>
 
-<h2 class="heading__toc" id="toc">Lessons</h2>
+<h2 class="heading__toc" id="toc">Μαθήματα</h2>
 
-<p class="paragraph__toc">We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+<p class="paragraph__toc">Έχουμε περιλάβει μία σελίδα <b>Περισσότερα για αυτό το θέμα</b> σε κάθε μάθημα. Αυτή η επιπλέον πληροφορία υπάρχει για να σας βοηθήσει όταν χρειαστείτε τις λεπτομέρειες, αλλά δεν θα σας εμποδίσει αν δεν τις θέλετε.</p>
 
-{% include toc-lessons.html prefix="en/lesson" %}
+{% include toc-lessons.html prefix="el/lesson" %}
 
-<h2 class="heading__toc">Additional lessons</h2>
+<h2 class="heading__toc">Επιπλέον μαθήματα</h2>
 <ul class="lessons-toc">
-  {% include toc-additional-lessons.html prefix="en/language" %}
-  {% include toc-additional-lessons.html prefix="en/extra" %}
+  {% include toc-additional-lessons.html prefix="el/language" %}
+  {% include toc-additional-lessons.html prefix="el/extra" %}
 </ul>
 
-## Going further
+## Προχωρώντας περισσότερο
 
-Getting a book about LaTeX is the best way to learn the details. We cover getting more information, along with book recommendations, in the [last lesson](./lesson-16).
+Ο καλύτερος τρόπος για να μάθετε τις λεπτομέρειες είναι αγοράζοντας ένα βιβλίο για το LaTeX. Καλύπτουμε το πώς μπορείτε να βρείτε περισσότερες πληροφορίες και δίνουμε προτάσεις βιβλίων στο [τελευταίο μάθημα](./lesson-16).
 
