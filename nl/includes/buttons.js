@@ -1,13 +1,13 @@
 runlatex.texts ={
     "Open in Overleaf": "Open in Overleaf",
-    "TeXLive.net":      "Run at TeXLive.net",
-    "Delete Output":    "Delete Output",
-    "Compiling PDF":    "Compiling PDF",
+    "TeXLive.net":      "LaTeX Online",
+    "Delete Output":    "Verwijder output",
+    "Compiling PDF":    "PDF compileren",
     // The following not used on learnlatex.org
-    "edit":             "edit",
-    "copy":             "copy",
-    "Added Code":       "Added code",
-    "End Added Code":   "End Added code",
-    "Top Caption":      "Edit and run this example:"
+    "edit":             "bewerken",
+    "copy":             "kopiëren",
+    "Added Code":       "Toegevoegde code",
+    "End Added Code":   "Einde toegevoegde code",
+    "Top Caption":      "Bewerk en voer dit voorbeeld uit:"
 }
 
