@@ -1,9 +1,9 @@
 ---
 layout: "start"
-lang: "en"
+lang: "nl"
 title: Learn LaTeX online for free in beginner friendly lessons
 description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
-permalink: /en/
+permalink: /nl/
 ---
 
 # Learn LaTeX
@@ -29,12 +29,12 @@ permalink: /en/
 
 <p class="paragraph__toc">We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
 
-{% include toc-lessons.html prefix="en/lesson" %}
+{% include toc-lessons.html prefix="nl/lesson" %}
 
 <h2 class="heading__toc">Additional lessons</h2>
 <ul class="lessons-toc">
-  {% include toc-additional-lessons.html prefix="en/language" %}
-  {% include toc-additional-lessons.html prefix="en/extra" %}
+  {% include toc-additional-lessons.html prefix="nl/language" %}
+  {% include toc-additional-lessons.html prefix="nl/extra" %}
 </ul>
 
 ## Going further
