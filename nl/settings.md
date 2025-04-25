@@ -1,8 +1,8 @@
 ---
 layout: "page"
-lang: "en"
+lang: "nl"
 title: Site Settings
-permalink: /en/settings
+permalink: /nl/settings
 ---
 # Site Settings (User Preferences)
 

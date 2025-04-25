@@ -1,9 +1,9 @@
 ---
 layout: "page"
-lang: "en"
+lang: "nl"
 title: "Using the learnlatex.org site"
 description: "This page explains the learnlatex.org website itself and how to best make use of it."
-permalink: /en/help
+permalink: /nl/help
 ---
 <script>
   function acesettings() {

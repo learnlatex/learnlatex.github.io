@@ -1,8 +1,8 @@
 ---
 layout: "page"
-lang: "en"
+lang: "nl"
 title: Privacy Policy
-permalink: /en/privacy
+permalink: /nl/privacy
 ---
 # Privacy Policy
 
