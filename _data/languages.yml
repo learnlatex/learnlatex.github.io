@@ -43,6 +43,10 @@
   label-regional: मराठी
   label-english: Marathi
 
+- language-code: nl
+  label-regional: Nederlands
+  label-english: Dutch
+
 - language-code: pt
   label-regional: Português
   label-english: Portuguese
