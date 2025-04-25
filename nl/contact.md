@@ -1,8 +1,8 @@
 ---
 layout: "page"
-lang: "en"
+lang: "nl"
 title: Contact
-permalink: /en/contact
+permalink: /nl/contact
 ---
 
 # Contact
