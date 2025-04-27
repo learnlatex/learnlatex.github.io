@@ -1,48 +1,41 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "What LaTeX is and how it works"
-description: "This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer."
-toc-anchor-text: "LaTeX basics"
-toc-description: "What LaTeX is and how it works."
+lang: "nl"
+title: "Wat is LaTeX en hoe werkt het?"
+description: "Deze les verklaart de grondbeginselen van LaTeX en hoe het zich verhoudt tot gangbare tekstverwerkers zoals Microsoft Word of LibreOffice Writer."
+toc-anchor-text: "LaTeXs grondbeginselen"
+toc-description: "Wat is LaTeX en hoe werkt het?"
 ---
 
-# LaTeX basics
+# LaTeXs grondbeginselen
 
 <span
-  class="summary">This lesson explains the basics of what LaTeX is and how it works in contrast to common word processors such as Microsoft Word or LibreOffice Writer.</span>
+  class="summary">Deze les verklaart de grondbeginselen van LaTeX en hoe het zich verhoudt tot gangbare tekstverwerkers zoals Microsoft Word of LibreOffice Writer.</span>
 
-Unlike common word processors such as Microsoft Word or LibreOffice Writer, LaTeX
-usually does not provide WYSIWYG ('What You See Is What You Get'). With LaTeX
-one takes plain text and enriches it with markup. This markup tells LaTeX
-about the logical meaning of certain elements of the text, similar to the way
-HTML does.
+In tegenstelling tot tekstverwerkers zoals Microsoft Word of LibreOffice Writer biedt LaTeX gewoonlijk geen WYSIWYG ('What You See Is What You Get').
+Bij LaTeX wordt een eenvoudig tekstbestand verrijkt met een opmaaktaal.
+Deze opmaaktaal wijst LaTeX op de logische betekenis van bepaalde delen van de tekst, net zoals HTML dat doet.
 
-Take for example the element `<h2>` indicating a new section in an HTML document.
-LaTeX also has a command for this; here one would use the `\section` command.
+Neem bijvoorbeeld het element `<h2>` dat een nieuwe sectie in een HTML-document aanduidt.
+LaTeX heeft hier ook een commando voor, namelijk `\section`.
 
-## The LaTeX workflow
+## LaTeXs workflow
 
-Because LaTeX files are not the document itself but rather instructions
-on what each part of the document should be, you don't normally give other
-people your LaTeX file itself. Instead, after writing your LaTeX _source_, you
-run LaTeX on the file (normally using a program called `pdflatex`) to
-create a PDF file. This PDF is then what you send to others.
+Omdat LaTeX-bestanden niet het document zelf zijn, maar eerder instructies over wat elk deel van het document zou moeten zijn, deel je normaal gezien je bronbestanden niet met anderen.
+In plaats daarvan voer je LaTeX uit op de broncode (normaal gesproken via het programma `pdflatex`) om een PDF te creëren.
+Deze PDF kan je dan met anderen delen.
 
-Different people use different ways to describe this process. As using LaTeX
-is a bit like programming, it's often called 'compiling' your document, although
-'typesetting' is more accurate.
+Omdat het gebruik van LaTeX op programmeren lijkt, noemt met dit proces vaak 'compileren', hoewel 'zetten' correcter zou zijn.
 
-## Multiple LaTeX runs
+## Meerdere LaTeX-compilaties
 
-For simple files, you only need to typeset your file once to get the completed
-PDF. But once you start adding more complicated things, like cross-references,
-citations, figures, and tables of contents, you might need to run LaTeX more
-than once. We'll tell you when that's the case.
+Eenvoudige bestanden hoef je maar één keer te zetten om de afgewerkte PDF te bekomen.
+Zodra je echter meer ingewikkelde zaken toevoegt, zoals kruisverwijzingen, citaten, figuren en inhoudsopgaven, ben je misschien genoodzaakt LaTeX meerdere keren uit te voeren.
+We zullen later uitleggen wanneer dat het geval is.
 
-## LaTeX or pdfLaTeX or ...
+## LaTeX of pdfLaTeX of ...
 
-In the [next lesson](lesson-02), we are going to see that LaTeX is not a
-single program. To keep things simple, we are going to focus on one particular
-LaTeX Program, pdfLaTeX, for creating your PDFs. We will look at some other
-programs, and why you might want to use them, later in the course.
+In de [volgende les](lesson-02) zullen we zien dat LaTeX niet slechts één programma is.
+Voor de eenvoud richten we ons op een bepaald LaTeX-programma, pdfLaTeX, om PDF's te maken.
+Enkele andere programma's en redenen om ze te gebruiken, komen later aan bod.
+
