@@ -36,5 +36,5 @@ The following people have made contributions to learnlatex.org:
 | Daniel Zhang         | _Chinese translations_ (×2) |
 | Uwe Ziegenhagen      | _Initial content discussions_ |
 | निरंजन                | _Marathi translation_ |
-| Jhonatan David Arias Quispe | |
+| Jhonatan David Arias Quispe | _Updates to Spanish translation_ |
 
