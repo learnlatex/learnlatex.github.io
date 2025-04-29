@@ -1,12 +1,17 @@
 ---
 layout: "page"
 lang: "nl"
-title: Mission
+title: Missie
 permalink: /nl/mission
 ---
 
-# Learn LaTeX Mission
+# De missie van Learn LaTeX
 
-This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
+Deze website is bedoeld om je te helpen je eerste stappen te zetten met LaTeX, een documentzetsysteem dat ontworpen is om hoogwaardige typografische output te produceren. 
+LaTeX kan intimiderend zijn voor nieuwe gebruikers omdat het geen tekstverwerker is, en omdat het niet slechts één programma is. 
+Ons doel hier is om je op weg te helpen zonder te proberen je alles in één keer te laten zien.
 
-To do that, we have taken around 16 of the most important things you’ll need to know, and made them into short ‘lessons’. Each lesson is very focused, so they should not take too long to cover. In each lesson, we’ve given examples of what you’d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.
+Om dat te doen, hebben we ongeveer 16 van de belangrijkste zaken die je moet weten verzameld en omgezet in korte 'lessen'. 
+Elke les is heel doelgericht, zodat het niet te veel tijd kost om ze door te nemen. 
+In elke les hebben we voorbeelden gegeven van wat je zou schrijven, en deze zijn beschikbaar zodat je ze online kan uitproberen. 
+Lees meer over [hoe voorbeelden werken](./help#examples) op de hulppagina.
