@@ -1,43 +1,42 @@
 ---
 layout: "start"
 lang: "nl"
-title: Learn LaTeX online for free in beginner friendly lessons
-description: "Learn LaTeX in 16 beginner friendly lessons. Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output."
+title: Leer LaTeX gratis online met beginnersvriendelijke lessen
+description: "Leer LaTeX in 16 beginnersvriendelijke lessen. Zet je eerste stappen met LaTeX, een documentzetsysteem ontworpen om hoogwaardige typografische output te produceren."
 permalink: /nl/
 ---
 
-# Learn LaTeX
+# Leer LaTeX
 
-<h2 class="heading__introduction">Take your first steps with LaTeX, a document preparation system designed to produce high-quality typeset output.</h2>
+<h2 class="heading__introduction">Zet je eerste stappen met LaTeX, een documentzetsysteem ontworpen om hoogwaardige typografische output te produceren.</h2>
 
 <div
   class="text-columns">
   <section>
-    <h3 class="text-columns__heading">Introduction</h3>
-    <p>LaTeX can be scary for new users as it is <em>not</em> a word processor, 
-    and because it is not a single program. Our aim is to help you get 
-    started with LaTeX: the basics, installation, writing code, without 
-    trying to show you <em>everything</em> in one go. <a href="./mission">More on our mission &hellip;</a></p>
+    <h3 class="text-columns__heading">Introductie</h3>
+    <p>LaTeX kan intimiderend zijn voor nieuwe gebruikers omdat het <em>geen</em> tekstverwerker is, en omdat het niet slechts één programma is. 
+    Ons doel is om je te helpen aan de slag te gaan met LaTeX: de grondbeginselen, installatie, het schrijven van code, zonder 
+    te proberen je <em>alles</em> in één keer te laten zien. <a href="./mission">Meer over onze missie &hellip;</a></p>
   </section>
   <section>
-    <h3 class="text-columns__heading">How it works</h3>
-      <p>We have taken the most important things you will need to know, and made them into <em>16 short lessons</em>, which should not take long to cover. In each lesson, we give lots of examples of what you would write. You can edit and run the examples in this website. <a href="./help#examples">More on examples &hellip;</a></p>
+    <h3 class="text-columns__heading">Hoe het werkt</h3>
+      <p>We hebben de belangrijkste dingen die je moet weten samengebracht in <em>16 korte lessen</em>, die je niet veel tijd zouden moeten kosten. In elke les geven we veel voorbeelden van wat je zou schrijven. Je kunt de voorbeelden bewerken en uitvoeren op deze website. <a href="./help#examples">Meer over voorbeelden &hellip;</a></p>
   </section>
 </div>
 
-<h2 class="heading__toc" id="toc">Lessons</h2>
+<h2 class="heading__toc" id="toc">Lessen</h2>
 
-<p class="paragraph__toc">We have included a <b>More on this topic</b> page for each lesson. This extra information is there to support you when you need the detail, but should not get in your way if you don't.</p>
+<p class="paragraph__toc">We hebben een pagina <b>Meer over dit onderwerp</b> toegevoegd aan elke les. Deze extra informatie is er om je te ondersteunen wanneer je meer details nodig hebt, maar hindert je niet als je dat niet doet.</p>
 
 {% include toc-lessons.html prefix="nl/lesson" %}
 
-<h2 class="heading__toc">Additional lessons</h2>
+<h2 class="heading__toc">Aanvullende lessen</h2>
 <ul class="lessons-toc">
   {% include toc-additional-lessons.html prefix="nl/language" %}
   {% include toc-additional-lessons.html prefix="nl/extra" %}
 </ul>
 
-## Going further
+## Verdere stappen
 
-Getting a book about LaTeX is the best way to learn the details. We cover getting more information, along with book recommendations, in the [last lesson](./lesson-16).
+Een boek over LaTeX kopen is de beste manier om de details te leren. We behandelen hoe je meer informatie kunt vinden, samen met boekaanbevelingen, in de [laatste les](./lesson-16).
 
