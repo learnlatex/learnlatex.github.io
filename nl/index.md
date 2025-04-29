@@ -20,7 +20,7 @@ permalink: /nl/
   </section>
   <section>
     <h3 class="text-columns__heading">Hoe het werkt</h3>
-      <p>We hebben de belangrijkste dingen die je moet weten samengebracht in <em>16 korte lessen</em>, die je niet veel tijd zouden moeten kosten. In elke les geven we veel voorbeelden van wat je zou schrijven. Je kunt de voorbeelden bewerken en uitvoeren op deze website. <a href="./help#examples">Meer over voorbeelden &hellip;</a></p>
+      <p>We hebben de belangrijkste dingen die je moet weten samengebracht in <em>16 korte lessen</em>, die je niet veel tijd zouden moeten kosten. In elke les geven we veel voorbeelden van wat je zou schrijven. Je kan de voorbeelden bewerken en uitvoeren op deze website. <a href="./help#examples">Meer over voorbeelden &hellip;</a></p>
   </section>
 </div>
 
@@ -38,5 +38,6 @@ permalink: /nl/
 
 ## Verdere stappen
 
-Een boek over LaTeX kopen is de beste manier om de details te leren. We behandelen hoe je meer informatie kunt vinden, samen met boekaanbevelingen, in de [laatste les](./lesson-16).
+Een boek over LaTeX kopen is de beste manier om de details te leren. 
+In de [laatste les](./lesson-16) behandelen we hoe je meer informatie kan vinden en geven we enkele boekaanbevelingen.
 
