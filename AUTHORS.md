@@ -16,6 +16,7 @@ The following people have made contributions to learnlatex.org:
 | David Carlisle       | _Initial content discussions, editor and server integration_ |
 | Paulo Roberto Massa Cereda | _Initial content discussions_ |
 | Joan Quintana Compte | _Catalan translation_ |
+| Tommaso Gordini      | _Italian translation_ |
 | Ulrike Fischer       | _Initial content discussions_ |
 | Jim Hefferon         | _Initial content discussions_ |
 | Jonas Jaceck         | _Website design and implementation_ |
@@ -35,4 +36,4 @@ The following people have made contributions to learnlatex.org:
 | Daniel Zhang         | _Chinese translations_ (×2) |
 | Uwe Ziegenhagen      | _Initial content discussions_ |
 | निरंजन                | _Marathi translation_ |
-| `@Gordon-72`         | _Italian translation_ |
+
