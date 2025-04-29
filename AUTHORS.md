@@ -25,6 +25,7 @@ The following people have made contributions to learnlatex.org:
 | Marcel Fabian Krüger | _Initial content discussions_ |
 | Frank Mittelbach     | _Initial content discussions_ |
 | Phelype Oleinik      | _Portuguese translation_ |
+| Jhonatan David Arias Quispe | _Updates to Spanish translation_ |
 | Will Robertson       | _Initial content discussions_ |
 | Martin Sievers       | _German translation_ |
 | Jonathan P. Spratte  | _Initial content discussions, tables lesson, German translation_ |
@@ -36,5 +37,5 @@ The following people have made contributions to learnlatex.org:
 | Daniel Zhang         | _Chinese translations_ (×2) |
 | Uwe Ziegenhagen      | _Initial content discussions_ |
 | निरंजन                | _Marathi translation_ |
-| Jhonatan David Arias Quispe | _Updates to Spanish translation_ |
+
 
