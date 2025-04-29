@@ -13,7 +13,7 @@ permalink: /nl/
 <div
   class="text-columns">
   <section>
-    <h3 class="text-columns__heading">Introductie</h3>
+    <h3 class="text-columns__heading">Inleiding</h3>
     <p>LaTeX kan intimiderend zijn voor nieuwe gebruikers omdat het <em>geen</em> tekstverwerker is, en omdat het niet slechts één programma is. 
     Ons doel is om je te helpen aan de slag te gaan met LaTeX: de grondbeginselen, installatie, het schrijven van code, zonder 
     te proberen je <em>alles</em> in één keer te laten zien. <a href="./mission">Meer over onze missie &hellip;</a></p>
