@@ -72,6 +72,7 @@ LaTeX में अन्य `\begin{...}` टैग और `\end{...}` टै�
 
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % A comment in the preamble
 \begin{document}

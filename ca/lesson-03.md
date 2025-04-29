@@ -63,6 +63,7 @@ Podem afegir comentaris a un fitxer de LaTeX començant amb el caràcter `%`; an
 
 ```latex
 \documentclass[a4paper,12pt]{article} % La classe del document amb opcions
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % Un comentari en el preàmbul
 \begin{document}

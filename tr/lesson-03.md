@@ -67,6 +67,7 @@ bu özelliği kullanalım:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % Döküman tipi, verilen opsiyonel argümanlarla birlikte
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % A comment in the preamble
 \begin{document}
