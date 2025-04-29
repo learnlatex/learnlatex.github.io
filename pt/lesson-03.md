@@ -101,6 +101,7 @@ Podemos também adicionar comentários em um arquivo LaTeX prefixando-o com um
 
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % Um comentário no preâmbulo
 \begin{document}
