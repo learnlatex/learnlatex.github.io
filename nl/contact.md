@@ -7,15 +7,16 @@ permalink: /nl/contact
 
 # Contact
 
-## Individual Support
+## Individuele ondersteuning
 
-Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
+Helaas hebben we niet de middelen om individuele hulp te bieden bij LaTeX-problemen en zullen we daarom niet reageren op e-mails die om ondersteuning vragen. 
+Zie de [helppagina van het LaTeX-project](https://www.latex-project.org/help/) voor manieren om ondersteuning te krijgen.
 
-## Website Team
+## Website-team
 
-The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details.
+De [broncode van deze website](https://github.com/learnlatex/learnlatex.github.io/) is te vinden op [GitHub](https://github.com/learnlatex/), zie [CONTRIBUTING](../CONTRIBUTING) en [LICENSE](../LICENSE) voor meer informatie.
 
-You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+Je kan ook [een "issue" openen op GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) of [ons e-mailen](mailto:texfaq@texfaq.org) met suggesties.
 
 ## Impressum
 
