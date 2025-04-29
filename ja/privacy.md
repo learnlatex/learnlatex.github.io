@@ -1,34 +1,23 @@
 ---
 layout: "page"
 lang: "ja"
-title: Privacy Policy
+title: プライバシーポリシー
 permalink: /ja/privacy
 ---
-# Privacy Policy
 
-## User Data
+# プライバシーポリシー
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+## ユーザデータ
+
+LearnLaTeX.org （以下、本サイト）はユーザログインを要求せず、ユーザ固有のデータを一切保存しません。本サイトは GitHub Pages によりホストされているため、本サイトの管理者はユーザアクティビティに関するいかなる情報にもアクセスできません。本サイトは Google Analysis その他のトラッキングサービスを利用していません。
 
 ## Cookies
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
+本サイトはデフォルトでは一切 Cookies を使用しません。[設定](settings)ページで述べているように、ユーザは任意で Cookies を許可して、好みの設定を保存することができます。Cookies に保存される情報（例えばデフォルト TeX エンジン）が本サイトで生成されたり本サイトに送信されたりすることは**ありません**。それらの情報はブラウザで実行される JavaScript で生成および保存されます。
 
-## External Sites
+## 外部サイト
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+オンライン・サービスを用いてコード例を実行するオプションを利用した場合、その時点でのエディタ内の内容は HTTPS POST リクエストにより関係サービスに送信されます。その後のデータの扱いは当該外部サービスのプライバシーポリシーの適用対象となります。下記は現在本サイトで利用しているサービスへのリンクです：
 
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)

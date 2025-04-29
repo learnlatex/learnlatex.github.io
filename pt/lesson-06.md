@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Estendendo o LaTeX usando pacotes e definições"
-description: "Esta lição mostra como você pode estender o LaTeX de acordo com a sua necessidade e mudar a aparência do document usando diferentes pacotes, e mostra como você pode definir seus próprios comandos."
+description: "Esta lição mostra como você pode estender o LaTeX de acordo com a sua necessidade e mudar a aparência do documento usando diferentes pacotes, e mostra como você pode definir seus próprios comandos."
 toc-anchor-text: "Estendendo o LaTeX"
 toc-description: "Usando pacotes e definições."
 ---
@@ -11,7 +11,7 @@ toc-description: "Usando pacotes e definições."
 
 <span
   class="summary">Esta lição mostra como você pode estender o LaTeX de acordo
-  com a sua necessidade e mudar a aparência do document usando diferentes
+  com a sua necessidade e mudar a aparência do documento usando diferentes
   pacotes, e mostra como você pode definir seus próprios comandos.</span>
 
 Depois de declarar uma classe, no preâmbulo você pode modificar funcionalidades
@@ -36,7 +36,7 @@ Isso é configurado pelo pacote `babel`.
 
 %\usepackage[brazilian]{babel}
 
-\usepackage[width = 6cm]{geometry} % To force hyphenation here
+\usepackage[width = 6cm]{geometry} % Para forçar a hifenização neste exemplo
 
 \begin{document}
 
@@ -48,8 +48,8 @@ em diferentes idiomas, então deve ser longo para ter no mínimo uma separação
 \end{document}
 ```
 
-Tente descomentar o a linha que carrega o pacote `babel` e veja o efeito. (As
-regras de hifenização padrão são Inglês Americano.)
+Tente des-comentar (ativar) a linha que carrega o pacote `babel` e veja o efeito. (As
+regras de hifenização padrão são para o inglês americano).
 
 O pacote `babel` faz muito mais que hifenização, dependendo do idioma em
 questão; nós damos [alguns detalhas extra](more-06) se você precisar.
@@ -126,7 +126,7 @@ Algo sobre \kw{maçãs} e \kw{laranjas}.
 \end{document}
 ```
 
-Na definição, `[1]` é o número de argumentos (nesse caso um), e `#1` simboliza
+Na definição, `[1]` é o número de argumentos (nesse caso um) e `#1` simboliza
 o primeiro argumento que é fornecido ao comando
 (`maçãs` ou `laranjas`, nesse exemplo).  Você pode usar até nove argumentos, mas
 geralmente é melhor usar poucos argumentos; um ou até nenhum.
@@ -136,7 +136,7 @@ para produzir um documento.  Comandos também ajudam a separar a formatação de
 informações.  Se, por exemplo, for decidido usar um estilo diferente para
 palavras-chave, ao invés de editar o documento inteiro, você simplesmente
 modifica a definição do comando.  Aqui carregamos o pacote `xcolor` para
-utilizar cores, e usamos cor azul ao invés de negrito na formatação.
+utilizar cores e usamos cor azul ao invés de negrito na formatação.
 
 ```latex
 \documentclass{article}
@@ -153,7 +153,7 @@ Algo sobre \kw{maçãs} e \kw{laranjas}.
 \end{document}
 ```
 
-Cuidado que ao definir muitos comandos com múltiplos argumentos pode tornar o
+Observe que definir muitos comandos com múltiplos argumentos pode tornar o
 código do documento difícil de entender por estar usando uma sintaxe própria.
 A habilidade de definir comandos específicos ao documento deve ser usada com
 cautela.
@@ -161,7 +161,7 @@ cautela.
 ## Exercícios
 
 Tente escrever texto em outros idiomas e veja como `babel` afeta a hifenização:
-você pode encontrar algum texto na internet, e adivinhar a opção que carrega o
+você pode encontrar algum texto na internet e adivinhar a opção que carrega o
 idioma escolhido.
 
 Tente alterar as margens no exemplo com `geometry`.  Você pode modificar margens

@@ -41,7 +41,7 @@ Pessoas usam nomes diferentes para descrever esse processo.  Como usar o LaTeX
 
 Para arquivos simples, você só precisa executar o LaTeX uma vez no seu arquivo
 para ter o PDF completo.  Mas conforme você adicionar coisas mais complicadas,
-como referências cruzadas, citações, figuras, e sumários, você precisará
+como referências cruzadas, citações, figuras e sumários, você precisará
 executar o LaTeX mais de uma vez.  Vamos lhe dizer quando for o caso.
 
 ## LaTeX ou pdfLaTeX ou ...
@@ -49,4 +49,4 @@ executar o LaTeX mais de uma vez.  Vamos lhe dizer quando for o caso.
 Na [próxima lição](lesson-02), nós vamos ver que o LaTeX não é um único
 programa.  Para simplificar as coisas, nós vamos focar em uma versão em
 particular, o pdfLaTeX, para criar os seus PDFs.  Nós também vamos ver outros
-programas, e porque você usaria eles, mais adiante no curso.
+programas, e por que você os usaria, mais adiante no curso.

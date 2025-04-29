@@ -147,8 +147,8 @@ caractères spéciaux dans votre document, nous avons mis quelques informations
 
 ## Travaux pratiques
 
-Expérimentez le système d'édition et de compilation en ligne ; cliquez sur le
-bouton pour commpiler le contenu, puis éditez-le dans la page web et
+Expérimentez le système d'édition et de compilation en ligne : cliquez sur le
+bouton pour compiler le contenu, puis éditez-le dans la page web et
 compilez-le à nouveau.
 
 Essayez d'ajouter du texte à votre premier document, de le compiler et de voir

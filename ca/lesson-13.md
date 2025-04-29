@@ -116,6 +116,7 @@ Afegeix alguns objectes flotants i crea un índex de taules i figures. Si utilit
 \tableofcontents
 \input{pref}
 ```
+<!-- {% endraw %} -->
 
 #### pref.tex
 <!-- pre2 {% raw %} -->

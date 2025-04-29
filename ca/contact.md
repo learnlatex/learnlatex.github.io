@@ -20,9 +20,9 @@ També pots [obrir un issue al GitHub](https://github.com/learnlatex/learnlatex.
 ## Impressum
 
 <p>Joseph Wright<br>
-2, Dowthorpe End<br>
-Earls Barton<br>
-Northampton<br>
-NN6 0NH<br>
+14, Woodlands Chase<br>
+Witchford<br>
+Ely<br>
+CB6 2SB<br>
 United Kingdom<br>
-<br>joseph.wright@morningstar2.co.uk</p>
+<br>joseph@texdev.net</p>

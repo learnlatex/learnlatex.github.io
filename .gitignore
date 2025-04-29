@@ -23,3 +23,5 @@ vendor
 .sass-cache
 _site
 package.json
+.ruby-version
+Gemfile.lock

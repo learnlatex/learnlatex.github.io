@@ -34,7 +34,7 @@ Hauràs vist que hem utilitzat una nova variable, `center`, per tal de posiciona
 
 ## Alterar l'aparença d'una imatge
 
-La comanda `\includegraphics` té múltiples opcions per controlar el tamany i la forma de les imatges incloses, i fins i tot retallar-les. Algunes d'elles s'utilitzen molt, anem a veure-les.
+La comanda `\includegraphics` té múltiples opcions per controlar la mida i la forma de les imatges incloses, i fins i tot retallar-les. Algunes d'elles s'utilitzen molt, anem a veure-les.
 
 El més obvi que podem fer sobre una imatge és definir l'`amplada` i l'`altura` d'una imatge, que moltes vegades es defineix en relació al `\textwidth` o `\linewidth` i `\textheight` de la zona de text. La diferència entre `\textwidth` i `\linewidth` és subtil i moltes vegades el resultat és el mateix. `\textwidth` és l'amplada del bloc de text en la pàgina fixa, mentre que `\linewidth` és l'amplada _actual_, que pot ser localment diferent (el cas més obvi és quan utilitzem l'opció de tipus `twocolumn`). LaTeX escala automàticament la imatge de manera que la raó d'aspecte sigui correcta.
 
@@ -112,6 +112,6 @@ Mira d'incloure una imatge teva, en comptes de les que hem anat utilitzant en el
 
 Explora què pots fer utilitzant les paraules clau `height`, `width`, `angle` i `scale`.
 
-Utilitza `width` per definir el tamany d'una imatge en relació a `\textwidth` i d'una altra imatge en relació a `\linewidth`. Mira com es comporten utilitzant o no l'opció `twocolumn`.
+Utilitza `width` per definir la mida d'una imatge en relació a `\textwidth` i d'una altra imatge en relació a `\linewidth`. Mira com es comporten utilitzant o no l'opció `twocolumn`.
 
 Utilitza `lipsum` per fer una demostració amb un text llarg, i prova de posicionar flotants utilitzant diferents especificadors de posició. Com es comporten les imatges amb els diferents especificadors?

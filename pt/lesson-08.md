@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Tabelas"
-description: "Esta lição mostra como você pode construir tabelas no LaTeX, influenciar o alinhamento das células, adicionar linhas à tabela, e unir células."
+description: "Esta lição mostra como você pode construir tabelas no LaTeX, influenciar o alinhamento das células, adicionar bordas à tabela e unir células."
 toc-anchor-text: "Tabelas no LaTeX"
 toc-description: "Princípios básicos de tabelas."
 ---
@@ -11,7 +11,7 @@ toc-description: "Princípios básicos de tabelas."
 
 <span
   class="summary">Esta lição mostra como você pode construir tabelas no LaTeX,
-  influenciar o alinhamento das células, adicionar linhas à tabela, e unir
+  influenciar o alinhamento das células, adicionar bordas à tabela e unir
   células.</span>
 
 Tabelas no LaTeX são feitas usando o ambiente `tabular`.  Esta lição vai assumir
@@ -38,10 +38,10 @@ de preâmbulo (_preamble-tokens_).  Os tipos disponíveis são:
 | `c`        | coluna centralizada |
 | `r`        | coluna alinhada à direita |
 | `p{largura}` | uma coluna com `largura` fixa;  o texto será justificado e quebrado em linhas automaticamente |
-| `m{largura}` | igual `p`, mas centralizado verticalmente em relação ao restante da linha da tabela |
-| `b{largura}` | igual `p`, alinhado ao fundo |
-| `w{alin}{largura}` | escreve os conteúdos com uma `largura` fixa, sobrescrevendo se o conteúdo for mais largo. Você pode escolher o alinhamento horizontal `alin` usando `l`, `c`, ou `r` |
-| `W{alin}{largura}` | igual `w`, mas haverá um aviso de "overfull box" se o conteúdo for mais largo que `largura` |
+| `m{largura}` | igual a `p`, mas centralizado verticalmente em relação ao restante da linha da tabela |
+| `b{largura}` | igual a `p`, mas alinhado à base da linha |
+| `w{alin}{largura}` | escreve o conteúdo em uma `largura` fixa, extrapolando o espaço dado se o conteúdo for mais largo. Você pode escolher o alinhamento horizontal `alin` usando `l`, `c`, ou `r` |
+| `W{alin}{largura}` | igual a `w`, mas haverá um aviso de "overfull box" se o conteúdo for mais largo que `largura` |
 
 Além desses, outros símbolos de preâmblo estão disponíveis, que não criam uma
 coluna, mas também são úteis:
@@ -50,10 +50,10 @@ coluna, mas também são úteis:
 
 | tipo | descrição |
 | ---  | :-- |
-| `*{num}{símbolos}` | repete os `símbolos`, `num` vezes no preâmbulo.  Com isso você pode criar várias colunas com configuração idêntica |
-| `>{decl}` | este vai colocar `decl` antes dos conteúdos de cada célula da coluna que segue (isso é útil, por exemplo, para usar uma fonte diferente para esta coluna) |
-| `<{decl}` | este vai colocar `decl` depois dos conteúdos de cada célula da coluna que precede |
-| <span>`|`</span>  | adiciona uma linha vertical |
+| `*{num}{símbolos}` | repete `símbolos` no preâmbulo `num` vezes.  Com isso você pode criar várias colunas com configuração idêntica |
+| `>{decl}` | inclui `decl` antes do conteúdo de cada célula da coluna a seguir (isso é útil, por exemplo, para usar uma fonte diferente para esta coluna) |
+| `<{decl}` | inclui `decl` depois do conteúdo de cada célula da coluna anterior |
+| <span>`|`</span>  | adiciona uma borda vertical |
 | `@{decl}` | substitiu o espaço entre colunas por `decl` |
 | `!{decl}` | adiciona `decl` no centro do espaço existente entre colunas |
 
@@ -61,10 +61,10 @@ Essas duas tabelas listam todos os tipos de colunas disponíveis no LaTeX e no
 pacote `array`.  Alguns tipos adicionais de colunas, de pacotes diferentes, são
 apresentados na [página de detalhes adicionais](more-08) dessa lição.
 
-As colunas `l`, `c`, e `r` terão a largura natural da célula mais larga daquela
+As colunas `l`, `c` e `r` terão a largura natural da célula mais larga daquela
 coluna.  Cada coluna deve ser declarada, então se você quer três colunas
 centralizadas você usaria `ccc` no preâmbulo da tabela.  Espaços são ignorados,
-então `c c c` é o mesmo.
+então `c c c` é a mesma coisa.
 
 No corpo de uma tabela, colunas são separadas usando um "e comercial" `&` e uma
 nova linha é iniciada usando `\\`.
@@ -90,8 +90,8 @@ entender o código da tabela.
 ```
 <!-- {% endraw %} -->
 
-Se a coluna de uma tabela contém muito texto você terá problemas em acertar a
-tabela apenas com `l`, `c`, e `r`.  Veja o que acontece no exemplo a seguir:
+Se uma coluna da tabela contém muito texto, você terá problemas em acertar a
+tabela apenas com `l`, `c` e `r`.  Veja o que acontece no exemplo a seguir:
 
 <!-- {% raw %} -->
 ```latex
@@ -113,8 +113,8 @@ tabela apenas com `l`, `c`, e `r`.  Veja o que acontece no exemplo a seguir:
 ```
 <!-- {% endraw %} -->
 
-O problema é que o tipo de coluna `l` escreve os conteúdos em uma única linha
-com sua largura natural, mesmo se isso ultrapassar a margem.  Para vencer isso
+O problema é que o tipo de coluna `l` escreve o conteúdo em uma única linha com
+sua largura natural, mesmo se isso ultrapassar a margem.  Para resolver isso,
 você pode usar a coluna tipo `p`.  Ela escreve os conteúdos como parágrafos com
 a largura que você especificar como argumento e alinha o bloco de texto com o
 topo das outras linhas &ndash; que é o que você vai querer na maioria das vezes.
@@ -144,7 +144,7 @@ Se sua tabela tem muitas colunas iguais, é trabalhoso digitar todas as
 definições de coluna no preâmbulo.  Você pode facilitar as coisas usando
 `*{num}{símbolos}`, que vai repetir os `símbolos` por `num` vezes.  Assim,
 `*{6}{c}` é equivalente a `cccccc`.  Para mostrar como isso funciona, aqui está
-a primeira tabela dessa lição, mas com a nova sintaxe:
+a primeira tabela desta lição, mas com a nova sintaxe:
 
 <!-- {% raw %} -->
 ```latex
@@ -163,19 +163,19 @@ a primeira tabela dessa lição, mas com a nova sintaxe:
 ```
 <!-- {% endraw %} -->
 
-## Adicionando linhas
+## Adicionando bordas
 
-Um conselho antes de apresentar linhas em tabelas;  linhas devem ser usadas com
-moderação em tabelas, e normalmente linhas verticais devem ser completamente
-evitadas.  De fato, tabelas 'profissionais' não devem usar nenhuma das linhas
-padrão fornecidas pelo LaTeX;  ao invés disso você deve se familiarizar com os
-recursos do pacote `booktabs`, que é porque ele é mostrado aqui.  Para constar,
-as linhas padrão são mostradas na página de [mais informações](more-08).
+Um conselho antes de incluir bordas em tabelas:  bordas devem ser usadas com
+moderação em tabelas, e normalmente bordas verticais devem ser completamente
+evitadas.  De fato, tabelas 'profissionais' não devem usar nenhuma das bordas
+padrão fornecidas pelo LaTeX;  ao invés disso, você deve se familiarizar com os
+recursos do pacote `booktabs`, e por isso começamos com ele aqui.  Para constar,
+as bordas padrão são mostradas na página de [mais informações](more-08).
 
-O pacote `booktabs` fornece quatro tipos diferentes de linhas.  Cada um desses
-comandos deve ser a primeira coisa em uma linha ou deve seguir outra linha.
-Três desses comandos são: `\toprule`, `\midrule`, e `\bottomrule`, e devem ser
-usados no topo, meio, e final da tabela, respectivamente:
+O pacote `booktabs` fornece quatro tipos diferentes de borda.  Cada um desses
+comandos deve ser a primeira coisa em uma linha ou deve suceder outra borda.
+Três desses comandos são: `\toprule`, `\midrule` e `\bottomrule`, e devem ser
+usados no topo, meio e final da tabela, respectivamente:
 
 <!-- {% raw %} -->
 ```latex
@@ -199,11 +199,11 @@ usados no topo, meio, e final da tabela, respectivamente:
 ```
 <!-- {% endraw %} -->
 
-O quarto comando de linha fornecido pelo `booktabs` é o `\cmidrule`.  Ele pode
-ser usado para traçar uma linha que não cobre toda a largura da tabela, mas
+O quarto comando de borda fornecido pelo `booktabs` é o `\cmidrule`.  Ele pode
+ser usado para desenhar um traço que não cobre toda a largura da tabela, mas
 apenas um conjunto específico de colunas.  Um conjunto de colunas é dado como
-um intervalo de números: `{`_número_`-`_número_`}`.  Mesmo se você quiser a
-linha apenas em uma coluna, ambos os números devem ser dados (e ser iguais,
+um intervalo de números: `{`_número_`-`_número_`}`.  Mesmo se você quiser o
+traço apenas em uma coluna, ambos os números devem ser dados (e ser iguais,
 nesse caso específico):
 
 <!-- {% raw %} -->
@@ -230,7 +230,7 @@ nesse caso específico):
 ```
 <!-- {% endraw %} -->
 
-Há outra funcionalidade útil de `\cmidrule`.  Você pode encurtá-la em qualquer
+Há outra funcionalidade útil de `\cmidrule`.  Você pode encurtá-lo em qualquer
 um dos lados com um argumento opcional entre parênteses:
 
 <!-- {% raw %} -->
@@ -258,11 +258,11 @@ um dos lados com um argumento opcional entre parênteses:
 ```
 <!-- {% endraw %} -->
 
-Você deve ter adivinhado que `r` e `l` significam que a linha é encurtada no
+Você deve ter adivinhado que `r` e `l` significam que o traço é encurtado no
 lado direito (**r**ight) e esquerdo (**l**eft), respectivamente.
 
-Às vezes uma linha é separação demais entre duas linhas da tabela, mas para que
-ela não perca o significado, você pode querer separar elas de alguma forma.
+Às vezes um traço é separação demais entre duas linhas da tabela, mas para que
+ela não perca o significado, você pode querer separá-las de alguma forma.
 Nesse caso você pode usar `\addlinespace` para inserir um pequeno espaço
 vertical:
 
@@ -328,7 +328,7 @@ mas apenas _um único tipo de coluna_:
 ```
 <!-- {% endraw %} -->
 
-Você também pode usar `\multicolumn` em uma única célula para previnir que o
+Você também pode usar `\multicolumn` em uma única célula para evitar que o
 tipo de coluna que você definiu no preâmbulo seja usado na célula atual.
 O exemplo a seguir usa esse método para centralizar a linha do cabeçalho da
 tabela:
@@ -356,9 +356,9 @@ tabela:
 ```
 <!-- {% endraw %} -->
 
-Unir célular na vertical não é suportado no LaTeX.  Geralmente é suficiente
-deixar células vazias para dar ao leitor a ideia correta do que conteúdo sem
-explicitamente juntar as linhas:
+Unir células na vertical não é suportado no LaTeX.  Geralmente é suficiente
+deixar células vazias para dar ao leitor a ideia correta do significado
+desejado sem explicitamente juntar as linhas:
 
 <!-- {% raw %} -->
 ```latex
@@ -390,10 +390,10 @@ explicitamente juntar as linhas:
 ```
 <!-- {% endraw %} -->
 
-## Evercícios
+## Exercícios
 
 Use o exemplo mais simples de tabela para começar a experimentar com elas.
-Tente alinhamentos diferentes usando tipos de colunas `l`, `c`, e `r`.  O que
-acontece se você escreve menos colunas do que declaradas em uma linha.  E se
+Tente alinhamentos diferentes usando tipos de colunas `l`, `c` e `r`.  O que
+acontece se você escreve menos colunas do que declaradas em uma linha?  E se
 tiver mais colunas do que foram declaradas?  Experimente com o comando
 `\multicolumn` para unir colunas.

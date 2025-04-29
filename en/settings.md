@@ -37,3 +37,7 @@ The `engine` form parameter that TeXLive.net or Overleaf should use in the absen
 The theme used by the embedded ACE editor.
 
 {% include settings-acetheme.html %}
+
+The theme used by the embedded CodeMirror6 editor.
+
+{% include settings-cm6theme.html %}

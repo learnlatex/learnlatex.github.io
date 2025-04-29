@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "es"
 title: "Formateando el texto: fuentes y espaciado"
-description: "Esta lección muestra cómo cambiar el espaciado de un docunento y cómo añadir explicitamente instrucciones de formato en LaTeX."
+description: "Esta lección muestra cómo cambiar el espaciado de un documento y cómo añadir explicitamente instrucciones de formato en LaTeX."
 toc-anchor-text: "Fuentes y espaciado"
 toc-description: "Formateando el texto para mejorar la presentación visual"
 ---
@@ -10,7 +10,7 @@ toc-description: "Formateando el texto para mejorar la presentación visual"
 # Formateando el texto: fuentes y espaciado
 
 <span
-  class="summary">Esta lección muestra cómo cambiar el espaciado de un docunento y cómo añadir explicitamente instrucciones de formato en LaTeX.</span>
+  class="summary">Esta lección muestra cómo cambiar el espaciado de un documento y cómo añadir explícitamente instrucciones de formato en LaTeX.</span>
 
 Ya hemos visto que una línea en blanco en su documento genera un nuevo párrafo 
 en LaTeX. Esto se evidencia al comenzar el párrafo con una identación.
@@ -49,12 +49,12 @@ Casi siempre, si no se encuentra en uno de esos casos, _no_ debe usar
 
 ## Añadiendo un espacio explicitamente
 
-Podemos añadir un pequeño espacio (de aproximadamente la mitad del ancho du un 
+Podemos añadir un pequeño espacio (de aproximadamente la mitad del ancho de un 
 espacio normal) usando `\,`. En el modo matemático, existen también otros comandos: `\.`,
 `\:` y `\;`, incluso uno para un espacio hacia atrás: `\!`.
 
 En raras ocasiones, como por ejemplo al crear una página de título, necesitará 
-añadir explicitamente un espacio horizontan o vertical. Puede usar en esos casos 
+añadir explicitamente un espacio horizontal o vertical. Puede usar en esos casos 
 los comandos `\hspace` y `\vspace`, para crear un espacio horizontal y vertical, 
 respectivamente.
 
@@ -115,7 +115,7 @@ Así es como es: el efecto del cambio de estilo no se limita al párrafo.
 
 Podemos fijar el tamaño de letra de una forma similar; estos comandos se aplican 
 al contenido de un grupo, como los anteriores. Los tamaños que podemos fijar son 
-relativos: `\huge`, `\large`, `\normalsize`, `\small` y `footnotesize` son los 
+relativos: `\huge`, `\large`, `\normalsize`, `\small` y `\footnotesize` son los 
 más comunes. Es importante terminar un párrafo _antes_ de volver a cambiar el tamaño
 de letra; vea como añadimos aquí de forma explícita un `\par` (salto de párrafo).
 

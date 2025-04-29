@@ -15,7 +15,7 @@ suporte.  Veja a
 [página de ajuda do The LaTeX Project](https://www.latex-project.org/help/) que
 contém meios de buscar suporte ao usuário.
 
-## Time do Website
+## Mantenedores do website
 
 O [código fonte deste website](https://github.com/learnlatex/learnlatex.github.io/)
 está no [GitHub](https://github.com/learnlatex/), por favor veja sobre
@@ -28,9 +28,9 @@ ou nos [mandar um e-mail](mailto:texfaq@texfaq.org) com sugestões.
 ## Impressum
 
 <p>Joseph Wright<br>
-2, Dowthorpe End<br>
-Earls Barton<br>
-Northampton<br>
-NN6 0NH<br>
+14, Woodlands Chase<br>
+Witchford<br>
+Ely<br>
+CB6 2SB<br>
 United Kingdom<br>
-<br>joseph.wright@morningstar2.co.uk</p>
+<br>joseph@texdev.net</p>

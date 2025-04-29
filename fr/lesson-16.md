@@ -92,17 +92,24 @@ de vous tourner vers des documentations en anglais.
 
 L'équipe LaTeX propose [une liste de livres](https://www.latex-project.org/help/books/)
 en grande partie écrits par ses membres. Les plus remarquables sont
-[le guide officiel par Leslie Lamport](https://www.pearson.com/us/higher-education/program/Lamport-La-Te-X-A-Document-Preparation-System-2nd-Edition/PGM159713.html)
-et le [LaTeX Companion](https://www.pearson.ch/Informatik/Addison-Wesley/EAN/9780201362992/LaTeX-Companion-The),
-également [disponible en français](https://www.leslibraires.fr/livre/915590-latex-companion-frank-mittelbach-michel-goossens-pearson).
+[le guide officiel par Leslie Lamport](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
+et le [LaTeX Companion (3e édition)](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489) (la [version française](https://www.leslibraires.fr/livre/915590-latex-companion-frank-mittelbach-michel-goossens-pearson) est une traduction de la deuxième édition, datant de 2004).
 
 
 ## Foire aux questions
 
-L'association GUTenberg héberge une [FAQ LaTeX collaborative](https://faq.gutenberg.eu.org/)
-francophone. Vous pourrez y trouver les réponses à vos questions, mais aussi y
-contribuer pour que la communauté bénéficie de votre expérience au fil de vos
-expérimentations avec LaTeX.
+La communauté LaTeX francophone maintient deux FAQ LaTeX collaboratives en
+français :
+
+- [une première](https://faq.gutenberg-asso.fr/), historique et toujours
+  maintenue par l'[association GUTenberg](https://www.gutenberg-asso.fr/),
+  groupe francophone des Utilisateurs de TeX, à nouveau très actif depuis 2020 ;
+- [une seconde](https://www.latex-fr.net/) fork de la précédente (datant de
+  début 2023).
+
+Vous pourrez y trouver les réponses à vos questions, mais aussi y contribuer
+pour que l'ensemble des utilisateurs bénéficient de votre expérience au fil de
+vos expérimentations avec LaTeX.
 
 
 ## Demander de l'aide aux autres utilisateurs

@@ -36,3 +36,7 @@ El parámetro `engine` que TeXLive.net u Overleaf deben usar en caso de no haber
 El tema usado por el editor ACE integrado.
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}

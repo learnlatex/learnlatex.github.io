@@ -12,11 +12,11 @@ O interpretador LuaTeX dá acesso a fontes OpenType de forma similar ao XeTeX, e
 a maior parte dos casos com o pacote `fontspec` funcionarão igualmente bem com
 qualquer dos interpretadores.
 
-No entanto, o LuaTeX também estende o TeX de outras formas, notavelmente
+No entanto, o LuaTeX também estende o TeX de outras formas, em particular
 incluindo a linguagem de script Lua.  Isso pode ser usado para programar em um
 estilo mais familar para pessoas acostumadas com linguagens de programação
 'convencionais'.  O LuaTeX também oferece a possibilidade de acessar o
-funcionamento interno do sistema TeX e modificar o funcionamento substituindo
+funcionamento interno do sistema TeX e modificar seu funcionamento, substituindo
 partes dele por código escrito em Lua.
 
 A programação em Lua não é abordada neste curso, mas um exemplo simples para

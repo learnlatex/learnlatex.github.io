@@ -1,6 +1,82 @@
 ---
 layout: "lesson"
 lang: "ja"
-title: "More on: Including graphics and making things 'float' (Japanese)"
+title: "追加レッスン：図と位置調整"
+description: "この追加レッスンではLaTeXで読み込む画像ファイルに対する良い命名やLaTeX内で完結して図を作成する方法について詳述します。"
+toc-anchor-text: "追加レッスン：図と位置調整"
 ---
-Translation to be added _after_ English text completed.
+
+## 画像ファイルの命名
+
+LaTeXはさまざまなプラットフォームで動作するので、ファイル名については少々気を使っておいた方がトラブルを防ぐことができます。最も安全なのは画像ファイルをシンプルな名前にしておくことで、特に空白文字は含めない方がよいです。例えば、画像ファイル群を特定のサブディレクトリにまとめて管理するのであれば`\includegraphics[width=30pt]{pix/mom.png}`のような形にしておくと、他のシステムに移しやすくまた将来性もあります。
+
+ファイル名に空白文字を含めることは、かつてはさまざまな事情によりトラブルの元でしたが、現在では概ねサポートされています。しかしそれでも、空白文字を含む画像ファイル名を使用して何らかの問題が発生した場合には、ひとまずその空白文字を取り除くのが問題解決の第一歩です。
+
+アクセント付きの文字や和文文字を使用することも可能ですが、環境依存性が強まります。こうしたファイル名はいくつかのシステム（特に Windows）では問題を引き起こしやすいです。こうしたファイル名を使用してトラブルに見舞われた場合には、やはりASCII文字（いわゆる半角英数字）の範囲に収まるようなファイル名を付けてうまくいくかテストしてみましょう。
+
+## 画像データをサブディレクトリに保存する
+
+LaTeX文書のソースファイルを整理する際に、すべての画像ファイルを特定のサブディレクトリに配置することは一般的です。その場合、そうした画像ファイルは上記のコード例でも示したように相対パスで読み込むことができます。なおパスの区切り文字には**仮にWindowsであっても**スラッシュ`/`を用います。
+
+画像ファイルの数が多いときには、予め画像を含むサブディレクトリを設定しておきたいという場合もあるでしょう。これは`\graphicspath`によって実現できます。このコマンドの引数には、設定する各サブディレクトリをブレースで囲って列挙します。例えば`figs`と`pics`という2つのサブディレクトリから画像を読み込みたい場合は、以下のようにします。
+
+<!-- {% raw %} -->
+```latex
+\graphicspath{{figs/}{pics/}}
+```
+<!-- {% endraw %} -->
+
+特に、それぞれのサブディレクトリの名前の末尾に`/`が付いている点にはよく注意してください。
+
+## 図の作成
+
+既に述べたように、LaTeXは科学用ツールで生成されたグラフなど、さまざまな手段で作成図を利用することができます。その際、可能な場合には見た目を悪くせずにサイズの伸縮ができるPDFとして保存するのが望ましいです。どうしてもビットマップ形式で画像を作成する必要がある場合は、なるべく解像度が高くなるように生成しましょう。例えば[Inkscape](https://inkscape.org/)を用いるとLaTeXスニペット（コード断片）を含む図版をマウス操作で作成することができます。他の手段としては、さらに3D作図の機能をもつ[Asymptote](https://www.ctan.org/pkg/asymptote)が挙げられます。これらのツールを用いると、LaTeX文書に含めることのできる図版を外部ファイルとして出力することができます。
+
+またLaTeXは製図など一部の図版作成にも向いており、数式と同じくとても高品質な作図が行える上、ラベルも文書本文とよく合うものにすることができます。[Ti*k*Z](https://ctan.org/pkg/pgf)を用いるとこうした作図をLaTeX文書の中で直接行うことができ大変便利ですが、文書が複雑になるほか必要となる知識量も増える点には注意が必要です。他にも[PSTricks](https://ctan.org/pkg/pstricks-base)という代替パッケージがあります。
+
+## フロートの配置
+
+LaTeXのフロート配置は複雑です。しかし文書ソースにおいて記述したその位置に図を配置したいという要求はよくあります。これは`float`パッケージで実現できます。
+
+```latex
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
+\usepackage{graphicx}
+\usepackage{bxjalipsum}  % 日本語ダミーテキスト
+\usepackage{float}
+
+\begin{document}
+\jalipsum[1-3]{wagahai}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{サンプル画像}
+\end{figure}
+\jalipsum[4-6]{wagahai}
+\end{document}
+```
+
+ここで`H`オプションは図を「必ずその位置に」（absolutely **H**ere）配置するものです。しかし`H`オプションの利用は多くの場合においては非推奨です。なぜなら、この指定は出来上がる文書に大きな余白を作ってしまうことが多いからです。
+
+## その他のフロート
+
+[レッスン8](lesson-08)では表組みについてもフロートに入れることができることを説明します。これには`table`環境を用います。しかし画像や表組みは必ずフロートに入れなければならない**というわけではありません**。ただ（理工系の文書においては）フロートに入れるのが慣習になっているというだけです。
+
+場合によっては別の種類のフロート環境が欲しいということもあるかもしれません。それぞれのフロートは独立に挿入が行われます[`trivfloat`](https://ctan.org/pkg/trivfloat) ッケージを用いると新しいフロート環境を作成することができます。このパッケージは新しいフロートを作成する`\trivfloat`というコマンドのみを提供します。
+
+```latex
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
+\usepackage{graphicx}
+\usepackage{bxjalipsum}  % 日本語ダミーテキスト
+\usepackage{trivfloat}
+\trivfloat{image}
+
+\begin{document}
+\begin{image}
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{サンプル画像}
+\end{image}
+\end{document}
+```

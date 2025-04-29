@@ -55,7 +55,9 @@ Beispieltext.
 Jedes Beispiel ist komplett. Sie können kleinere Änderungen
 z.B. für Übungsaufgaben direkt im Editor machen.
 
-Für die Beispiele wurde der [ACE](https://ace.c9.io/) Editor benutzt.
+* Für die Beispiele wurde der [ACE](https://ace.c9.io/) Editor benutzt.
+
+* [CodeMirror6](https://codemirror.net/)
 
 #### Drei Möglichkeiten die Beispiele zu kompilieren
 
@@ -164,8 +166,8 @@ Dies kann mit der Angabe von `log` erreicht werden.
 ---
 
 [^1]: Während der Entwicklung dieser Seite haben wir auch
-[LaTeX.Online](https://latexonline.cc/) und
-[LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) genutzt.
-Wir möchten den Entwicklern dieser Services danken. Durch ihre Anpassungen
-wurde es möglich, die Beispiele auf dieser Seite schon in einer frühen
-Phase zur Verfügung zu stellen.
+      [LaTeX.Online](https://latexonline.cc/) und
+      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http) genutzt.
+      Wir möchten den Entwicklern dieser Services danken. Durch ihre Anpassungen
+      wurde es möglich, die Beispiele auf dieser Seite schon in einer frühen
+      Phase zur Verfügung zu stellen.

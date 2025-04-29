@@ -49,16 +49,20 @@ L'exemple est complet. Cependant, vous pouvez le modifier à votre guise pour
 tester des choses, éventuellement dans le cadre d'un exercice proposé en fin de
 leçon.
 
-L'éditeur utilisé est [ACE](https://ace.c9.io/).
+L'éditeur utilisé est
 
-Vous pouvez personnaliser le thème utilisé dans cet éditeur (par exemple en
-utilisant un thème sombre, affichant le texte en clair sur un fond sombre) sur
-la page [Paramètres du site](settings). Un moyen pratique de tester différents
-thèmes est d'utiliser <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> sur Mac)
-lorsque vous êtes sur n'importe quel exemple du site. [Cela affiche une fenêtre](javascript:acesettings())
-qui vous permet de modifier tous les paramètres de ACE.
+* [ACE](https://ace.c9.io/).
 
-Le site web de ACE propose une [page très utile avec ses raccourcis claviers](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+  Vous pouvez personnaliser le thème utilisé dans cet éditeur (par exemple en
+  choisissant un thème sombre, affichant le texte en clair sur fond sombre) sur
+  la page [Paramètres du site](settings). Un moyen pratique de tester différents
+  thèmes est d'utiliser <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> sur Mac)
+  lorsque vous êtes sur n'importe quel exemple du site. [Cela affiche une fenêtre](javascript:acesettings())
+  qui vous permet de modifier tous les paramètres de ACE.
+
+  Le site web de ACE propose une [page très utile avec ses raccourcis claviers](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+
+* [CodeMirror6](https://codemirror.net/).
 
 
 #### Trois façons d'exécuter un exemple
@@ -183,7 +187,7 @@ produit un PDF sans erreur. Cela peut être demandé en utilisant `log` dans ce
 commentaire.
 
 Au lieu d'utiliser un commentaire `% !TeX`, vous pouvez choisir le comportement
-par défaut la [page de choix des paramètres](settings). Ces paramètres sont
+par défaut sur la [page de choix des paramètres](settings). Ces paramètres sont
 spécifiques à chaque navigateur. Par exemple, vous pouvez choisir d'utiliser
 le paramètre par défaut `pdfjs` sur votre tablette, mais utiliser `pdf` sur
 votre ordinateur de bureau pour utiliser son lecteur PDF par défaut.

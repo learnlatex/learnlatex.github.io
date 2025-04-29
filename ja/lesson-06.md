@@ -1,11 +1,137 @@
 ---
 layout: "lesson"
 lang: "ja"
-title: "Extending LaTeX using packages (Japanese)"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "パッケージとコマンド定義"
+description: "このレッスンではニーズに合わせてLaTeXを拡張する方法を紹介します。LaTeXではさまざまなパッケージを使用して見た目を大きく変えたり、新たにオリジナルのコマンドを定義したりすることができます。"
+toc-anchor-text: "パッケージとコマンド定義"
+toc-description: "LaTeXを拡張する方法"
 ---
 
-# Extending LaTeX using packages (Japanese)
+# パッケージとコマンド定義
 
-Translation to be added _after_ English text completed.
+<span class="summary">このレッスンではニーズに合わせてLaTeXを拡張する方法を紹介します。LaTeXではさまざまなパッケージを使用して見た目を大きく変えたり、新たにオリジナルのコマンドを定義したりすることができます。</span>
+
+使用する文書クラスを宣言した後、プリアンブルでは好きな数のパッケージを読み込んでLaTeXの機能を拡張することができます。パッケージを用いると、例えば次のようなことができます：
+
+* LaTeXの一部機能の動作を変更する
+* 新しいコマンドを追加する
+* 文書のデザインを変更する
+
+## LaTeXの機能を変更する
+
+LaTeXの「カーネル」（LaTeXの本体）はユーザによるカスタマイズについては必ずしも柔軟ではないので、いくつかの拡張パッケージは極めて一般的な要求に応えるために存在しています。例えば、LaTeXで特定の言語に特化した組版（ハイフネーション、句読法、引用の形式、ローカリゼーションなど）を可能にするというのはよくある要求です。言語ごとにそれぞれのルールがあるので、LaTeXに対してどの言語のルールを適用するか教えることは重要です。こうした機能は`babel`パッケージにより達成できます。
+
+```latex
+% !TEX program=pdflatex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+
+%\usepackage[french]{babel}
+
+\usepackage[width = 6cm]{geometry} % ハイフネーションが起こるようにする
+
+\begin{document}
+
+This is a lot of filler which is going to demonstrate how LaTeX hyphenates
+material, and which will be able to give us at least one hyphenation point.
+This is a lot of filler which is going to demonstrate how LaTeX hyphenates
+material, and which will be able to give us at least one hyphenation point.
+
+\end{document}
+```
+
+さて、では上の`babel`パッケージを読み込む行のコメントアウトを解除（これは英文なので、フランス語の設定を有効にするのは明らかに「間違い」ですが）して、どのような効果があるか確認してみてください。（LaTeXのデフォルトのハイフネーション規則はアメリカ英語です。）
+
+なお`babel`パッケージは、選択した言語によってはハイフネーションよりも多くのことを制御します。このレッスンの[追加解説](more-06)では、この点についてもう少し詳しく説明しています。
+
+## デザインを変更する
+
+文書クラスとは独立にデザインの一部を調整することができると便利です。ページの余白設定はそうした調整を行いたい対象として最たるものでしょう。上の例で既に`geometry`パッケージを使用しましたが、ここでは余白設定のため専用の例を用意しました。
+
+```latex
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx,book]{jlreq}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+はじめまして！
+
+これがはじめての文書です。
+
+
+% ================
+\chapter{1つ目の章}
+1つ目の章のイントロダクション。
+
+\section{最初のセクションのタイトル}
+最初のセクションのテキスト。
+
+2つ目の段落。
+
+\subsection{最初のセクションのサブセクション}
+
+サブセクションのテキスト。
+
+
+% ================
+\chapter{2つ目の章}
+
+2つ目の章のテキスト。
+
+\end{document}
+```
+
+では`geometry`パッケージを読み込む行をコメントアウトして、どのような変化があるかを確認してみましょう。
+
+## 別の機能を追加する
+
+LaTeXの強みの1つは、何千とあるパッケージから好きなものを選んで使用することができることです。LaTeXパッケージには数式に関するもの、ハイパーリンクを作成するもの、色彩を扱う高機能なものなど様々なものがあります。このチュートリアルでも、こうしたパッケージのうち一般的なものを以降のレッスンで紹介していきます。
+
+## コマンド定義
+
+時として、自分が作成する文書に特化したコマンドが必要な場合があります。例えば欲しい機能を提供するパッケージが存在しないときや、単純に頻繁に使用する表現を素早く入力するためのコマンドが欲しいというケースが考えられます。
+
+次の例では、キーワードを特定のスタイルで印字するためのコマンドを定義しています。
+
+```latex
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
+
+\newcommand\kw[1]{\textbf{\gtfamily #1}}
+
+\begin{document}
+
+\kw{リンゴ}と\kw{みかん}についての何らかの論述。
+
+\end{document}
+```
+
+上の定義において`[1]`は引数の数（ここでは1つ）、`#1`はコマンドに与えられる第一引数を表します（上の例では「リンゴ」と「みかん」が該当します）。引数は最大で9つまで使用することができますが、基本的には1つのみ、もしくはまったく引数のないコマンドを定義するのが望ましいです。
+
+コマンド定義は文書作成のタイプ量を減らすだけではありません。コマンドを利用すると見た目に関する情報を文書の本文から分離することができます。例えば、キーワードの表示に用いるスタイルを変更することにしたときに、文書全体を編集し直すよりも、1箇所のコマンド定義を変更するほうが簡単です。次の例では、`xcolor`パッケージを読み込んで色を利用可能にし、キーワードの見た目をボールド体（太字）にする代わりに青色で表示するようにします。
+
+```latex
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
+\usepackage{xcolor}
+
+\newcommand\kw[1]{\textcolor{blue}{\gtfamily #1}}
+
+\begin{document}
+
+\kw{リンゴ}と\kw{みかん}についての何らかの論述。
+
+\end{document}
+```
+
+あまりに多くのコマンドが定義されていたり、多くの引数をもつコマンドを定義すると、特殊な書式で書かれたソースコードになってしまい、可読性が落ちてしまうので注意してください。特定の文書に特化したコマンドの定義はこうした観点に配慮して行われるべきです。
+
+## 練習問題
+
+英語以外の欧州言語で文章を書き、`babel`を用いるとどのようなハイフネーションへの効果があるかを確認してみましょう。インターネットで適当な文章を探し、`babel`に与えるべき正しいオプションを推測してみるといいでしょう。
+
+`geometry`パッケージを用いて余白サイズを変更したコード例を変更し、他の余白サイズも試してみましょう。上下左右の余白は、それぞれ`top`, `bottom`, `left`, `right`キーワードを用いたカンマ区切りリストで独立に設定することができます。
+
+`lipsum`パッケージを読み込み、`\lipsum`コマンドを使用してみましょう。このパッケージは文書例を作るのに便利ですが、なぜだかわかりますか？
+
+`\kw`コマンドの定義を変更して、キーワードが別のスタイルで表示されるようにしてみましょう。

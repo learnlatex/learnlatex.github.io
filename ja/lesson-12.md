@@ -1,11 +1,147 @@
 ---
 layout: "lesson"
 lang: "ja"
-title: "Citations and references (Japanese)"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "参考文献の引用"
+description: "このレッスンでは文献データベースの基本を押さえます。データベースの作り方と、有名な2つのフレームワークを使用したデータベースの利用法を学んでいきましょう。"
+toc-anchor-text: "参考文献の引用"
+toc-description: "文献データベースの利用法"
 ---
 
-# Citations and references (Japanese)
+# 参考文献の引用
 
-Translation to be added _after_ English text completed.
+<script>
+runlatex.preincludes = {
+ "pre1": {
+    "pre0": "learnlatex.bib"
+   },
+ "pre2": {
+    "pre0": "learnlatex.bib"
+   }
+}
+</script>
+
+<span class="summary">このレッスンでは文献データベースの基本を押さえます。データベースの作り方と、有名な2つのフレームワークを使用したデータベースの利用法を学んでいきましょう。</span>
+
+文献を引用するとき、文献情報を直接文書に含めることもできますが、基本的には1つまたは複数の外部ファイルから文献情報を取り出すことになるでしょう。そうした外部ファイルは文献データベースと呼ばれ、文献情報をコンピュータが処理しやすい形で保持しています。文献データベースを使用すると、情報の再利用が容易になり、またすべて手作業で文献リストを整形する必要がなくなります。
+
+なお、本レッスンでは英語の文献を扱う場合について説明します。日本語の文献を扱う場合については、別のドキュメントを参照してください（いずれ付録レッスンに追加するかもしれません）。
+
+<!-- TODO: 日本語文献の扱いについてはlanguage-specificレッスンで扱う？ -->
+
+## 文献データベース
+
+文献データベースはしばしば「BibTeXファイル」と呼ばれ、拡張子は`.bib`です。そうしたファイルでは、各文献が1エントリに対応し、また各エントリには複数のフィールドが含まれます。例を見てみましょう。
+
+<!-- {% raw %} -->
+```
+@article{Thomas2008,
+  author  = {Thomas, Christine M. and Liu, Tianbiao and Hall, Michael B.
+             and Darensbourg, Marcetta Y.},
+  title   = {Series of Mixed Valent {Fe(II)Fe(I)} Complexes That Model the
+             {H(OX)} State of [{FeFe}]Hydrogenase: Redox Properties,
+             Density-Functional Theory Investigation, and Reactivity with
+             Extrinsic {CO}},
+  journal = {Inorg. Chem.},
+  year    = {2008},
+  volume  = {47},
+  number  = {15},
+  pages   = {7009-7024},
+  doi     = {10.1021/ic800654a},
+}
+@book{Graham1995,
+  author    = {Ronald L. Graham and Donald E. Knuth and Oren Patashnik},
+  title     = {Concrete Mathematics},
+  publisher = {Addison-Wesley},
+  year      = {1995},
+}
+```
+<!-- {% endraw %} -->
+
+ここには論文記事（article）と書籍（book）の情報が含まれています。この2種類は圧倒的に使用頻度の高いものです。上の例を見るとわかるように、各エントリは`@`から始まり、すべての情報は続くブレースの中に記述されます。
+
+さまざまなフィールドはkey-value形式で与えられます。例外は（各エントリの冒頭にある）「キー」と呼ばれる文献の「名前」です。このキーは単なるラベルなのでどのように決めても構いませんが、上では著者名と出版年の組み合わせとしました。この命名法は一般的に用いられているものです。
+
+具体的にどんなフィールドを与える必要があるかはエントリの種類に依りますが、ほとんどの場合自明です。上記の例がそうであるように`author`フィールドでは各著者の名前は`and`で区切られています。このことは**重要**です。出力を整形するためには、著者名の区切りがどこであるかが明示されている必要があります。また`article`エントリの`title`フィールドでは、一部が余計にブレースで囲まれています。これらはあらゆる種類の大文字・小文字の自動変更を防止するためにあります。
+
+BibTeXファイルを直接手で編集するのは大変なので、専用のエディタを用いられることが多いです。[JabRef](https://www.jabref.org)というエディタがクロスプラットフォームで広く使われていますが、選択肢は他にもあります。またDOI（Digital Object Identifier）の付された文献であれば[doi2bib](https://doi2bib.org)を用いるとBibTeXエントリを簡単に生成することができます。ただし、こうした自動生成ツールを用いる場合には妥当な出力になっているかどうか必ず確認するようにしてください。
+
+ここでは、デモンストレーションのために上記のシンプルな例を使用します。その内容を`learnlatex.bib`という名前で「保存」しています。
+
+## データベースの情報を活用する
+
+データベース内の文献情報を文書に反映するには3つのステップが必要になります。まず第1ステップは LaTeX を用いて文書をタイプセットすることで、その際に当該文書で引用されている文献の一覧がファイルに書き出されます。第2ステップでは、別の専用プログラムを使用してデータベースから引用されている文献の情報を抜き出し、そして適切な順番に並び替えます。最後の第3ステップで再び LaTeX によって文書のタイプセットを行い、最終的な出力に引用と参考文献リストを反映します。通常、すべての引用を解決し切るためには、第3ステップの LaTeX 実行は2回以上行う必要があります。
+
+第2ステップで利用できる専用プログラムとしてメジャーなものはBibTeXとBiberの2つです。Biberは必ず`biblatex`パッケージとともに使われてきました。Biberは日本語も扱うことが可能です。一方のBibTeXはパッケージなしの場合や`natbib`パッケージを使用する場合に利用します。なおBibTeXでは日本語を扱うことはできないので、代わりにpBibTeXを使用します。
+
+LaTeX以外のツールを実行する方法は使用するエディタによって異なります。このチュートリアルで用意しているオンラインシステムでは、すべて裏方のスクリプトによって一連の処理を自動的にこなすようになっています。お手許のエディタの場合は、「すべてよしなに処理」するためのボタンが用意されているか、あるいは第1ステップと第3ステップのLaTeX実行の間に手動でBibTeXまたはBiberの実行を行う必要があるかもしれません。
+
+引用と文献リストのフォーマットはBibTeXデータベースとは独立に「スタイル」と呼ばれるものによって制御されています。その具体的な仕組みは`natbib`を使用する場合と`biblatex`を使用する場合で少し異なりますが、基本的なアイデアは同じです。いずれにしても、LaTeXユーザは引用と参考文献のフォーマットを選ぶことが可能です。
+
+## `natbib`を使用する場合
+
+パッケージを使用しなくてもLaTeX文書で引用をすることはできますが、かなり機能的には制限が大きいです。そこで、ここでは`natbib`パッケージを利用した場合について紹介します。このパッケージを使用すると、さまざまなフォーマットの引用が実現でき、またスタイルも豊富です。
+
+基本的な使い方は次の例を見てください。
+
+```latex
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
+\usepackage{natbib}
+
+\begin{document}
+\citet{Graham1995}は多くの数式を記述しました。また\citet{Thomas2008}にはいくつか化学式が出てきます。
+
+カッコで囲うタイプの引用：\citep{Graham1995}と\citep[p.~56]{Thomas2008}。
+
+\citep[参考][pp.~45--48]{Graham1995}
+
+同時に引用する場合は\citep{Graham1995,Thomas2008}
+
+\bibliographystyle{plainnat}
+\bibliography{learnlatex}
+\end{document}
+```
+
+データベースに含まれる各エントリはキーを指定することによって引用します。`natbib`パッケージではテキスト形式の引用とカッコで囲う形式の引用を両方サポートしていて、それぞれ`\citet`と`\citep`コマンドで実現できます。文献スタイルは`\bibliographystyle`コマンドで指定します。ここでは`plainnat`スタイルを利用しました。実際の文献リストは`\bibliography`コマンドによって挿入されます。このコマンドの引数に、使用するデータベースの名前を指定します。カンマ区切りで複数指定することも可能です。
+
+ページを指定して引用する場合はオプション引数で指定します。オプション引数を2つ与えた場合は、1つ目が引用の先頭に出力されるので、短い注記を付けるのに使うことができます。この場合、2つ目の引数にページ番号を氏指定します。
+
+上記の例では著者名と出版年を明示するスタイルを使用していますが、引用番号を付けるスタイルもあります。その場合は`natbib`パッケージを読み込む際に`numbers`オプションを指定します。
+
+## `biblatex`を使用する場合
+
+`biblatex`パッケージのしくみは`natbib`とは少し異なり、データベースの指定をプリアンブルで行う一方で実際の文献リスト出力の指示は本文で行うようになっています。そのため、いくつか新しいコマンドが登場します。
+
+```latex
+\RequirePackage{plautopatch}
+\documentclass[dvipdfmx]{jlreq}
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{learnlatex.bib} % 文献データベース
+
+\begin{document}
+\autocite{Graham1995}は多くの数式を記述しました。
+
+ちょっと複雑な引用を試してみます：\parencite{Graham1995}または
+\textcite{Thomas2008}もしくは\citetitle{Graham1995}。
+
+\autocite[56]{Thomas2008}
+
+\autocite[See][45-48]{Graham1995}
+
+同時に引用する場合は\autocite{Thomas2008,Graham1995}
+
+\printbibliography
+\end{document}
+```
+
+`natbib`の`\bibliography`では`.bib`を省略することができましたが、`\addbibresource`ではデータベースのファイル名を**フルネーム**で与えなければなりません。また`biblatex`では引用のコマンド名が長めですが、いずれも推測するのは容易でしょう。
+
+また引用の前後に出力する短いテキストは、やはりオプション引数により指定することができます。`biblatex`が自動的に適切な接頭辞を付与するので、ページ番号の前に`p.~`や`pp.~`を手動で記入する必要がないことに注意してください。
+
+`biblatex`では、文献リストのスタイルはパッケージの読み込み時に指定します。ここでは`authoryear`スタイルを利用しましたが、`numeric`スタイルをはじめ数々のスタイルが用意されています。
+
+## 練習問題
+
+`natbib`と`biblatex`のコード例を両方実行してみましょう。`natbib`の場合はLaTeX、BibTeX、LaTeX、LaTeXを、`biblatex`の場合はLaTeX、Biber、LaTeXを実行する必要があるはずです。手許のエディタではどうすればこの手順の実行ができるのか調べてみましょう。あるいは、その手順が既に自動化されているOverleafやTeXLive.netを試してみてください。
+
+データベースに新しいエントリを追加し、何箇所かで引用してみましょう。データベースにない文献を引用するとどのような出力になるでしょうか。`natbib`と`biblatex`の`numberic`オプションも試してみましょう。

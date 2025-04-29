@@ -1,11 +1,30 @@
 ---
 layout: "lesson"
 lang: "ja"
-title: "What is LaTeX and how does it work? (Japanese)"
-toc-anchor-text: "Anchor"
-toc-description: "Description"
+title: "LaTeXとは何か？ LaTeXはどう動くか？"
+description: "このレッスンではLaTeXとは何か、そしてMicrosoft WordやLibreOffice Writerなどの一般的なワープロソフトとどう異なるかについて説明します。"
+toc-anchor-text: "LaTeXの基本"
+toc-description: "LaTeXとは何か？ LaTeXはどう動くか？"
 ---
 
-# What is LaTeX and how does it work? (Japanese)
+# LaTeXの基本
 
-Translation to be added _after_ English text completed.
+<span class="summary">このレッスンではLaTeXとは何か、そしてMicrosoft WordやLibreOffice Writerなどの一般的なワープロソフトとどう異なるかについて説明します。</span>
+
+Microsoft WordやLibreOffice Writerなどの一般的なワープロソフトと異なり、LaTeX は基本的にはWYSIWYG（‘What You See Is What You Get’；つまり「見たままが完成品」）ではありません。LaTeXにおいては、ユーザはプレーンテキストを扱い、マークアップによってさまざまな情報付加を行います。こうしたマークアップによってLaTeXにテキストの各パートの論理的な意味を伝えるという点は、HTMLと似ています。
+
+例を挙げると`<h2>`要素はHTML文書において新しいセクションの開始を表します。LaTeXにもこれに対応する`\section`というコマンドがあります。
+
+## LaTeXワークフロー
+
+LaTeXファイルは文書そのものというよりも、文書の各パートがどうあるべきかということを指示するものなので、普通は他の人にLaTeXファイルそのものを手渡すということはありません。その代わりに、LaTeX**ソース**を書いた後、LaTeXによる処理（日本語の場合、通常は`platex`というプログラムを利用します）を行ってPDFファイルを作成します。このPDFこそが、他の人に手渡すことになるものです。
+
+この文書作成の手順は人によって異なります。LaTeXを使用することはプログラミングすることと少し似ているので、この処理はしばしば「コンパイル」と呼ばれます。しかし、本当は「タイプセット」と呼ぶ方が正確です。
+
+## LaTeXの複数回実行
+
+シンプルなLaTeXファイルの場合、最終的なPDFを得るのにはタイプセットを1回行えば十分です。しかし少し複雑なこと（例えば相互参照、引用、図の挿入、目次の作成など）をし始めると、LaTeXを複数回実行しなければならない場合もあります。どのような場合に複数回のLaTeX実行が必要かは、その都度紹介していきます。
+
+## LaTeXかpLaTeXかその他か
+
+[次のレッスン](lesson-02)では、LaTeXが単一のプログラムではないことを説明します。簡単のため、このチュートリアルでは日本語の組版に適したpLaTeXという1種類のLaTeXプログラムを用いてPDFを作成する方法について解説します。pLaTeX以外にどのようなプログラムがあるのかや、どのような場合にpLaTeX以外のものが必要になるのかは、いずれ後半のレッスンで紹介します。

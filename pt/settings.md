@@ -40,3 +40,7 @@ ou `context` não devem ser usadas no Overleaf.)
 O tema usado pelo editor ACE integrado.
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}

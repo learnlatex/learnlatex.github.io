@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "pt"
 title: "Resolvendo erros"
-description: "Esta lição mostra alguns erros comuns em documentos, o que eles significam, e como resolvê-los."
+description: "Esta lição mostra alguns erros comuns em documentos, o que eles significam e como resolvê-los."
 toc-anchor-text: "Resolvendo erros"
 toc-description: "Trabalhando com comportamento inesperado."
 ---
@@ -11,11 +11,11 @@ toc-description: "Trabalhando com comportamento inesperado."
 
 <span
   class="summary">Esta lição mostra alguns erros comuns em documentos, o que
-  eles significam, e como resolvê-los.</span>
+  eles significam e como resolvê-los.</span>
 
-Diferente de um sistema típico de processamento de texto, o LaTeX tem um ciclo
-de Editar/Executar/Visualizar mais próximo a uma linguagem de programação, e
-assim como na programação, usuários podem cometer erros no seu código e será
+Diferentemente de um sistema típico de processamento de texto, o LaTeX tem um
+ciclo de Editar/Executar/Visualizar mais próximo a uma linguagem de programação
+e, assim como na programação, usuários podem cometer erros no seu código e será
 necessário resolver os erros reportados pelo sistema.
 
 ## Erros comuns
@@ -24,7 +24,7 @@ Esta página dá exemplos de diversos erros comuns.  Cada exemplo de erro tem
 alguma discussão sobra a forma da mensagem de erro.
 
 Pode ser instrutivo experimentar os exemplos e as funcionalidades de edição para
-tentar corrigir os documentos mostrados aqui, e ver se você consegue resolver
+tentar corrigir os documentos mostrados aqui e ver se você consegue resolver
 os erros.
 
 ### pdflatex não encontrado
@@ -90,19 +90,19 @@ l.8 My command is used here \mycommand
 * A linha final começa com `l.` seguido de um número de linha, e então a linha
   no arquivo fonte onde o erro foi detectado;
 * A linha final é um `?`.  Se você estiver usando o TeX interativamente (pela
-  linha de comando) é possível dar instruções para o TeX neste ponto, mas a
+  linha de comando), é possível dar instruções para o TeX neste ponto, mas a
   maioria dos editores e sistemas online executam o TeX em um modo que não para
-  depois de erros, mas passará direto e tentar processar o restante do
-  documento.  Digitar `s` aqui instruirá o TeX a continuar nesse modo se você
+  depois de erros, mas passa direto e tenta processar o restante do
+  documento.  Digitar `s` aqui instrui o TeX a continuar nesse modo se você
   estiver trabalhando interativamente.
 
 Note aqui que o TeX não vê o erro no local em que o comando `\mycommand` é
 definido;  de fato, se `\mycommand` for definido daquela forma mas não for
-usado, o erro não acontecerá.  Então embora o erro é reportado na linha 8, o
-erro _real_ está na definição na linha 4, então é importante ver a mensagem de
-erro completa.
+usado, o erro não acontecerá.  Então, embora o erro seja reportado na linha 8,
+o erro _real_ está na definição na linha 4, então é importante ver a mensagem
+de erro completa.
 
-Cuidado que alguns editores mostram 'sumários' de uma linha no relatório de
+Cuidado com alguns editores que mostram 'sumários' de uma linha no relatório de
 erros.  Isso pode ser particularmente enganoso se mostrado como:
 
 `line 8: undefined command: ...\mycommand`
@@ -131,9 +131,9 @@ receba um erro interno não muito informativo:
 ```
 {: .noedit :}
 
-Enquanto a descrição do erro não é muito útil; as duas linhas seguintes mostram
-precisamente o local do erro por usar uma quebra de linha mostrando até onde o
-TeX leu:
+Embora a descrição do erro não seja muito útil, as duas linhas seguintes
+mostram precisamente o local do erro por usarem uma quebra de linha mostrando
+até onde o TeX leu:
 
 ```
 l.4 \usepackage[leqno}
@@ -192,7 +192,7 @@ Esse documento produz o ligeiramente misterioso erro:
 {: .noedit :}
 
 Mas a correção é simples:  linhas vazias não são permitidas em ambientes
-matemáticos, e devem ser deletadas.
+matemáticos, e devem ser eliminadas.
 
 ## Exercícios
 
@@ -203,9 +203,9 @@ erro.
 
 <script>
   window.addEventListener('load', function(){
-      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(3, 31, false);
-      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(3, 18, false);
-      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(3, 20, false);
-      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(7, 0, false);
+  rlselectline('pre2',4);
+  rlselectline('pre4',4);
+  rlselectline('pre7',4);
+  rlselectline('pre9',8);
   }, false);
 </script>

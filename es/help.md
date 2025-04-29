@@ -19,7 +19,7 @@ permalink: /es/help
 El curso consiste en 16 lecciones principales, a las que se puede acceder
 desde [índice]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) de la [página inicial](./).
 
-Cada lección dispone de un enlace a otra lección, que permite profudizar 
+Cada lección dispone de un enlace a otra lección, que permite profundizar 
 sobre el mismo tema. Es posible abordar las 16 lecciones principales
 _sin_ leer estas lecciones adicionales.
 
@@ -48,16 +48,16 @@ Example text.
 Cada ejemplo contiene un código completo e independiente. Sin embargo, puede que quiera editarlo para hacer
 pequeños cambios, quizá como parte de los ejercicios propuestos al final de cada lección.
 
-El editor usado es [ACE](https://ace.c9.io/).
+* El editor usado es [ACE](https://ace.c9.io/).
 
-Puede configurar el tema usado en el editor (por ejemplo usando un
-teme oscuro, con el texto claro sobre fondo negro) en el apartado de [Configuración del sitio web](settings).
-Una manera adecuada de probar los diferentes temas disponibles es usando <kbd>Ctrl</kbd><kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> en Mac) cuando se encuentre 
-en el texto de alguno de los ejemplos del sitio web. [Esta combinación de teclas le mostrará un panel](javascript:acesettings()) que le permitirá cambiar todos los parámetros de ACE.
+  Puede configurar el tema usado en el editor (por ejemplo usando un
+  teme oscuro, con el texto claro sobre fondo negro) en el apartado de [Configuración del sitio web](settings).
+  Una manera adecuada de probar los diferentes temas disponibles es usando <kbd>Ctrl</kbd><kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> en Mac) cuando se encuentre 
+  en el texto de alguno de los ejemplos del sitio web. [Esta combinación de teclas le mostrará un panel](javascript:acesettings()) que le permitirá cambiar todos los parámetros de ACE.
 
-El depósito de ACE dispone de una página [muy útil para conocer las teclas de acceso rápido del editor] https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+  El depósito de ACE dispone de una página [muy útil para conocer las teclas de acceso rápido del editor] https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
-
+* [CodeMirror6](https://codemirror.net/)
 
 ### Tres maneras de ejecutar un ejemplo
 
@@ -115,12 +115,12 @@ teclas de acceso rápido en el editor
 (<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd> en Windows 
 por ejemplo). Esto pondrá el código en el portapapeles de su sistema operativo. 
 Usted podrá abrir entonces un archivo en blanco, en su editor de LaTeX local 
-y pegar en él, el contenido del partapapeles.
+y pegar en él, el contenido del portapapeles.
 
 ### En caso de problemas
 
 Nuestros ejemplos deben ser usados utilizando una instalación de LaTeX actualizada. Todos ellos
-funcionan los servicios en línea que ponemos a su disposición, así que si un de nuestros 
+funcionan los servicios en línea que ponemos a su disposición, así que si uno de nuestros 
 ejemplos le da errores, quizá deba verificar si su sistema de LaTeX está 
 actualizado
 
@@ -133,12 +133,12 @@ Cuando se compilan los los documentos de ejemplo, el motor usado por defecto es 
 Puede forzar en uso de `pdflatex`, `xelatex`, `lualatex`, 
 `platex` o `uplatex` añadiendo un comentario de la forma siguiente:
 
-`% !TEX ` _culquier texto_ `lualatex`
+`% !TEX ` _cualquier texto_ `lualatex`
 
 donde el espacio inicial es opcional y la diferencia entre mayúsculas y minúsculasse ignora, 
 al igual que la parte _cualquier texto_ situada entre la primera y la última palabra.
 
-Esto permire el uso de `% !TEX program=pdflatex` utilizado en algunos editores de TeX,
+Esto permite el uso de `% !TEX program=pdflatex` utilizado en algunos editores de TeX,
 aunque el uso de `program=` no sea necesario y esté actualmente restringido
 a especificar uno de los cinco motores disponibles en los
 sistemas en línea que son usados.
@@ -146,7 +146,7 @@ sistemas en línea que son usados.
 Puede ver un ejemplo de un comentario usado para especificar el uso de LuaLaTex en
 [uno de los ejemplos de este sitio](more-14).
 
-Si se elige el moror `platex` o `uplatex`, se usará el programa `dvipdfmx` para
+Si se elige el motor `platex` o `uplatex`, se usará el programa `dvipdfmx` para
 producir el archivo PDF a partir del archivo DVI, que estas variantes generan.
 De forma similar se usarán los programas `dvips` y `ps2pdf` si se especifica `latex`.
 
@@ -175,7 +175,7 @@ errores. Esto puede ser especificado usando `log` como argumento final en
 el comentario anterior.
 
 Una alternativa al uso del comentario`% !TeX`, consiste a especificar
-el tipo de salida desadi en el apartado de [Configuración del sitio web](settings). 
+el tipo de salida deseada en el apartado de [Configuración del sitio web](settings). 
 La configuration es específica de cada explorador, así que por ejemplo usted
 puede elegir usar por defecto `pdfjs` en su teléfono móvil,
 y usar `pdf` en el explorador de su ordenador o computadora, para utilizar su visualizador PDF por defecto.
@@ -207,7 +207,7 @@ De forma alternativa puede especificar `make4ht`, `LaTeXML` o `lwarp` como salid
 apartado de [Configuración del sitio web](settings).
 
 
-Si usa un sistema TeX instalado localmente, la misma salida aue con la opción `make4ht` puede ser obtenida
+Si usa un sistema TeX instalado localmente, la misma salida que con la opción `make4ht` puede ser obtenida
 ejecutando el siguiente comando
 
 ```
@@ -221,7 +221,7 @@ Otras configuraciones son posibles si utiliza su sistema TeX instalado localment
 make4ht](https://texdoc.org/pkg/make4ht).
 
 
-Para ejecutar `LaTeXML` en su sistema locañ, debe instalar LaTeXML (no forñma parte ni de TeX Live ni de MiKTeX)
+Para ejecutar `LaTeXML` en su sistema locañ, debe instalar LaTeXML (no forma parte ni de TeX Live ni de MiKTeX)
 y usar el siguiente comando
 
 ```

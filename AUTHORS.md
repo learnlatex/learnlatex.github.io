@@ -10,7 +10,7 @@ The following people have made contributions to learnlatex.org:
  
 | Name                 | Role |
 |---                   |---|
-| Takuto Asakura       | _Japanese translation _ |
+| Takuto Asakura       | _Japanese translation_ |
 | Barbara Beeton       | _Initial content discussions_ |
 | Denis Bitouzé        | _Improvements to lists description_ |
 | David Carlisle       | _Initial content discussions, editor and server integration_ |
@@ -30,7 +30,7 @@ The following people have made contributions to learnlatex.org:
 | Jonathan P. Spratte  | _Initial content discussions, tables lesson, German translation_ |
 | Fernando S. Delgado Trujillo | _Spanish translation_ |
 | Vivek Tripathi       | _Hindi translation_ |
-| Moritz Wemheuer      | _Bibtex and Biblatex documentation _ |
+| Moritz Wemheuer      | _Bibtex and Biblatex documentation_ |
 | Joseph Wright        | _Initial concept, Project lead_ |
 | Dung Vu              | _Vietnamese translation_ |
 | Daniel Zhang         | _Chinese translations_ (×2) |
