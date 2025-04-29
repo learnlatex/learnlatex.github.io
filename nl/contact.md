@@ -10,7 +10,7 @@ permalink: /nl/contact
 ## Individuele ondersteuning
 
 Helaas hebben we niet de middelen om individuele hulp te bieden bij LaTeX-problemen en zullen we daarom niet reageren op e-mails die om ondersteuning vragen. 
-Zie de [helppagina van het LaTeX-project](https://www.latex-project.org/help/) voor manieren om ondersteuning te krijgen.
+Zie de [hulppagina van het LaTeX-project](https://www.latex-project.org/help/) voor manieren om ondersteuning te krijgen.
 
 ## Website-team
 
