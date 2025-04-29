@@ -135,7 +135,7 @@ Se você precisar mostrar um desses caracteres especiais no texto, colcamos mais
 informações sobre isso na
 [página de detalhes adicionais desta lição](more-03).
 
-## Exercise
+## Exercício
 
 Experimente com a edição e sistema tipográfico online;  clique no botão para
 compor o conteúdo, então edite-o na página e componha novamente.
