@@ -1,35 +1,31 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Working with LaTeX"
-description: "This lesson gives more detail on what LaTeX is and the engines it runs on."
-toc-anchor-text: "More on: Working with LaTeX"
+lang: "nl"
+title: "Meer over: Werken met LaTeX"
+description: "Deze les geeft meer details over wat LaTeX is en de engines waarmee het draait."
+toc-anchor-text: "Meer over: Werken met LaTeX"
 ---
 
-For most of our examples, we don't use a program called `latex` but instead
-one called `pdflatex`. This is one of a family of related programs, all
-of which are 'descendants' of `latex`. We have chosen `pdflatex` because
-it is perhaps the most widely-used system and directly produces PDF files.
+Voor de meeste van onze voorbeelden gebruiken we geen programma dat `latex` heet, maar in plaats daarvan een genaamd `pdflatex`.  
+Dit is een van een reeks verwante programma’s, die allemaal ‘afstammelingen’ zijn van `latex`.  
+We hebben gekozen voor `pdflatex` omdat dit waarschijnlijk het meest gebruikte systeem is en onmiddellijk PDF-bestanden genereert.
 
-## Formats and engines
+## Indelingen en engines
 
-As described [earlier](more-01), LaTeX is built on a system called TeX. We
-call LaTeX a 'format': a collection of macros (instructions and commands) that
-TeX understands. When you run `pdflatex`, you are _actually_ starting a
-program called 'pdfTeX' with a pre-loaded 'LaTeX format'. We normally call
-pdfTeX an _engine_: a program that understands TeX instructions.
+Zoals eerder [beschreven](more-01), is LaTeX gebouwd op een systeem dat TeX heet.  
+We noemen LaTeX een ‘format’: een verzameling macro’s (instructies en commando’s) die TeX begrijpt.  
+Wanneer je `pdflatex` uitvoert, start je _eigenlijk_ een programma genaamd ‘pdfTeX’ met een vooraf geladen ‘LaTeX-format’.  
+We noemen pdfTeX meestal een _engine_: een programma dat TeX-instructies begrijpt.
 
-There are three engines in common use today:
+Er zijn tegenwoordig drie veelgebruikte engines:
 
-- pdfTeX
-- XeTeX
+- pdfTeX  
+- XeTeX  
 - LuaTeX
 
-We will cover [XeTeX and LuaTeX later](lesson-14): the main thing we need to
-know now is that they are capable of loading operating system fonts, whereas
-pdfTeX can't do that.
+We behandelen [XeTeX en LuaTeX later](lesson-14).  
+Het belangrijkste dat je nu moet weten, is dat deze in staat zijn om lettertypen van het besturingssysteem te laden, terwijl pdfTeX dat niet kan.
 
-If you are in Japan, or writing lots of Japanese, you might also come across
-pTeX and upTeX. These are specialized engines for vertical typesetting. LuaTeX
-can also do a lot of this, but at the moment upTeX, in particular, is still
-the most popular system for Japanese.
+Als je in Japan bent, of veel Japans schrijft, kan je ook pTeX en upTeX tegenkomen.  
+Dit zijn gespecialiseerde engines om verticaal te zetten.  
+LuaTeX kan dit ook in veel gevallen, maar op dit moment is upTeX nog steeds het populairste systeem voor Japans.
