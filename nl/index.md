@@ -6,7 +6,7 @@ description: "Leer LaTeX in 16 beginnersvriendelijke lessen. Zet je eerste stapp
 permalink: /nl/
 ---
 
-# Leer LaTeX
+# Learn LaTeX
 
 <h2 class="heading__introduction">Zet je eerste stappen met LaTeX, een documentzetsysteem ontworpen om hoogwaardige typografische output te produceren.</h2>
 
