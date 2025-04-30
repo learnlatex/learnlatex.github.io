@@ -35,10 +35,11 @@ Aangezien TeX Live beschikbaar is op alle gangbare platformen en enkele prestati
 
 ## Tekstbewerkers
 
-LaTeX-bestanden zijn gewone tekstbestanden, dus je kan ze met elke tekstbewerker bewerken.
+LaTeX-bestanden zijn gewone tekstbestanden, dus je kan ze met elke tekstbewerker aanpassen.
 Toch is het handiger om een tekstbewerker te gebruiken die speciaal voor LaTeX is ontworpen. 
-Deze bieden functies zoals éénklik-compilatie van je bestanden, ingebouwde PDF-viewers en syntaxisaccentuering. 
-Een erg handige functie in moderne LaTeX-bewerkers is SyncTeX: de mogelijkheid om op je broncode te klikken en direct naar de bijbehorende plek in de PDF te springen, of andersom.
+Deze bieden functies zoals één-klikcompilatie van je bestanden, ingebouwde PDF-viewers en syntaxiskleuring. 
+Een erg handige functie in moderne LaTeX-bewerkers is SyncTeX.
+Deze biedt de mogelijkheid om op je broncode te klikken en onmiddellijk naar de bijbehorende plek in de PDF te springen, of andersom.
 
 Er zijn veel meer LaTeX-bewerkers dan we hier kunnen opsommen: 
 er is een [uitgebreide lijst op StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
