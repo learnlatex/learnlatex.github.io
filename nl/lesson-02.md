@@ -1,99 +1,75 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Working with LaTeX"
-description: "This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors."
-toc-anchor-text: "Working with LaTeX"
-toc-description: "TeX systems and LaTeX text editors."
+lang: "nl"
+title: "Werken met LaTeX"
+description: "Deze les legt uit wat een TeX-systeem is en welke de meest gangbare zijn. Er wordt een overzicht gegeven van tekstbewerkers die vaak met LaTeX gebruikt worden, en van online systemen met geïntegreerde LaTeX-bewerkers."
+toc-anchor-text: "Werken met LaTeX"
+toc-description: "TeX-systemen en LaTeX-tekstbewerkers."
 ---
 
-# Working with LaTeX
+# Werken met LaTeX
 
 <span
-  class="summary">This lesson explains what a TeX system is and which are the most common ones, it lists some of the text editors usually used with LaTeX, and the online systems which have integrated editors.</span>
+  class="summary">Deze les legt uit wat een TeX-systeem is en welke het meest gangbaar zijn. Er wordt een overzicht gegeven van tekstbewerkers die vaak voor LaTeX gebruikt worden, en van online systemen met geïntegreerde LaTeX-bewerkers.</span>
 
+In tegenstelling tot veel computerprogramma's is LaTeX niet slechts een enkele toepassing die ‘alles in één’ bevat. 
+In plaats daarvan zijn er verscheidene programma's die samenwerken.
+Twee zaken die je echt nodig hebt:
 
-Unlike many computer programs, LaTeX is not a single application containing
-'everything' in one. Instead, there are separate programs that work together.
-We can divide those up into two things you actually need:
+- Een _TeX-systeem_
+- Een tekstbewerker (vaak specifiek voor LaTeX)
 
-- A _TeX system_
-- A text editor (often a LaTeX-specific one)
+## LaTeX-systemen
 
-## LaTeX systems
+Om te werken met LaTeX is het cruciaal te beschikken over een TeX-systeem. 
+Dit is een verzameling van achtergrondprogramma’s en bestanden die nodig zijn om LaTeX te laten werken, maar meestal gebruik je deze niet rechtstreeks.
 
-The core of working with LaTeX is having a TeX system available. A TeX system is a set
-of 'behind the scenes' programs and files that are needed to make LaTeX work, but
-most of the time you don't directly 'run' this.
+Er zijn tegenwoordig twee grote TeX-systemen beschikbaar:
+[MiKTeX](https://miktex.org/) en [TeX Live](https://tug.org/texlive). 
+Beide zijn beschikbaar voor Windows, macOS en Linux.
+MiKTeX heeft een sterke achtergrond op Windows;
+op macOS wordt TeX Live gebundeld in een grotere verzameling, namelijk [MacTeX](http://www.tug.org/mactex/).
+Er zijn [voordelen bij elk systeem](https://tex.stackexchange.com/questions/20036), en je kan ook [extra advies van het LaTeX-project](https://www.latex-project.org/get/) bekijken.
 
-There are two major TeX systems available today,
-[MiKTeX](https://miktex.org/) and [TeX Live](https://tug.org/texlive). Both
-are available for Windows, macOS and Linux.
-MiKTeX has a strong background on Windows;
-on macOS, TeX Live is bundled into a larger collection called [MacTeX](http://www.tug.org/mactex/).
-There are [advantages to each
-system](https://tex.stackexchange.com/questions/20036), and you might want to
-look at [some more advice from the LaTeX
-Project](https://www.latex-project.org/get/).
+Aangezien TeX Live beschikbaar is op alle gangbare platformen en enkele prestatievoordelen biedt, raden we aan om TeX Live te kiezen als je niet zeker weet welk systeem je moet installeren.
 
-As TeX Live is available on all common platforms, and as it has some performance
-advantages, we recommend that if you are unsure which system to install, you
-choose TeX Live.
+## Tekstbewerkers
 
-## Editors
+LaTeX-bestanden zijn gewone tekstbestanden, dus je kan ze met elke tekstbewerker bewerken.
+Toch is het handiger om een tekstbewerker te gebruiken die speciaal voor LaTeX is ontworpen. 
+Deze bieden functies zoals éénklik-compilatie van je bestanden, ingebouwde PDF-viewers en syntaxisaccentuering. 
+Een erg handige functie in moderne LaTeX-bewerkers is SyncTeX: de mogelijkheid om op je broncode te klikken en direct naar de bijbehorende plek in de PDF te springen, of andersom.
 
-LaTeX files are simply plain text, so they can be edited with any text editor.
-However, it's most convenient to have an editor that is designed to work with
-LaTeX, as they provide features like one-click compilation of your files,
-built-in PDF viewers, and syntax highlighting. A really useful feature in all
-modern LaTeX editors is SyncTeX: the ability to click on your source and go
-straight to your PDF, or back the other way.
-
-There are many more LaTeX editors than we can hope to list here: there is a
-[comprehensive list on
-StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-A basic editor, [TeXworks](https://tug.org/texworks), is included in TeX Live
-and MiKTeX on Windows and Linux, and [TeXShop](https://pages.uoregon.edu/koch/texshop/)
-is included in MacTeX.
+Er zijn veel meer LaTeX-bewerkers dan we hier kunnen opsommen: 
+er is een [uitgebreide lijst op StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
+Een basistekstbewerker, [TeXworks](https://tug.org/texworks), is inbegrepen in TeX Live en MiKTeX op Windows en Linux, en [TeXShop](https://pages.uoregon.edu/koch/texshop/) is inbegrepen in MacTeX.
 
 <p 
-  class="hint">Whichever editor you pick, we recommend you install it <i>after</i> your TeX system, so that the editor can 'find' the TeX system and set itself up correctly.</p>
+  class="hint">Welke tekstbewerker je ook kiest, we raden aan om deze <i>na</i> je TeX-systeem te installeren, zodat hij het TeX-systeem kan 'vinden' en zich correct kan instellen.</p>
 
-## Working online
+## Online werken
 
-There are several powerful online sites that allow you to avoid
-the need to install a TeX system and LaTeX editor at all. These websites
-work by letting you edit your files in the webpage, then they run LaTeX
-behind the scenes, and display the PDF that is produced.
+Er zijn verschillende krachtige online platformen waarmee je het installeren van een TeX-systeem en LaTeX-bewerker helemaal kan vermijden. 
+Op deze websites kan je je bestanden bewerken in de browser, waarna LaTeX op de achtergrond wordt uitgevoerd en de gegenereerde PDF wordt weergegeven.
 
-Some of these sites combine LaTeX with features similar to a word processor,
-whereas others are more focused on letting you see the LaTeX code and
-so are closer to having a local installation.
+Sommige van deze sites combineren LaTeX met functies die lijken op die van een tekstverwerker, terwijl andere zich juist richten op het tonen van de LaTeX-code en daarmee meer lijken op een lokale installatie.
 
-There are systems that let you run LaTeX without needing to be logged in, and we
-are using one of those,
-[TeXLive.net](https://texlive.net), to let you
-edit and test the examples we give. For more complete work, the best online
-systems require that you register before you use them. That lets you save your
-work but also helps the sites not get overloaded. We have set up links so you
-can edit our examples using [Overleaf](https://www.overleaf.com), one of the
-major websites for LaTeX online. There are of course others:
-[Papeeria](https://papeeria.com/) is an example.
+Er zijn systemen die je LaTeX laten draaien zonder dat je hoeft in te loggen, en wij gebruiken er daar één van, [TeXLive.net](https://texlive.net).
+Dit laat je toe te om de voorbeelden die we geven te bewerken en te testen. 
+Voor uitgebreidere documenten vereisen de beste online systemen meestal dat je je registreert voordat je ze gebruikt. 
+Daardoor kan je je werk opslaan, maar dit helpt ook overbelasting van de websites te voorkomen. 
+We hebben links toegevoegd waarmee je onze voorbeelden kan bewerken via [Overleaf](https://www.overleaf.com), een van de grootste online LaTeX-platformen. 
+Er zijn natuurlijk ook andere: [Papeeria](https://papeeria.com/) is een voorbeeld.
 
-## Working with others
+## Samenwerken met anderen
 
-If you are planning to send your LaTeX sources to destinations which process
-them, such as publishers, conference organisers or pre-print servers
-(e.g. arXiv), you should check what restrictions they impose.
+Als je van plan bent je LaTeX-bestanden te versturen naar partijen die ze verwerken, zoals uitgevers, conferentieverantwoordelijken of preprintservers
+(zoals arXiv), controleer dan welke eisen ze stellen of welke beperkingen ze opleggen.
 
-## Exercise
+## Oefening
 
-Get yourself set up with a local LaTeX installation _or_ an account with
-an online LaTeX service. If you are using a local installation, you'll need
-to pick an editor too: we recommend starting with either TeXworks or TeX Shop
-(see above), then looking at other editors later once you know how _you_
-work best with LaTeX.
+Zorg dat je een lokale LaTeX-installatie hebt geïnstalleerd _of_ een account hebt aangemaakt bij een online LaTeX-dienst. 
+Als je lokaal werkt, dan moet je ook een tekstbewerkers kiezen: 
+wij raden aan om te beginnen met TeXworks of TeXShop (zie hierboven), en daarna eventueel andere tekstbewerkers te proberen zodra je weet hoe _jij_ het liefst met LaTeX werkt.
 
-You'll be able to [run all of our other exercises in your browser](help.md), but we want
-to help you get working with real documents, so now is a great time to get
-yourself ready.
+Je kan [al onze andere oefeningen gewoon in je browser uitvoeren](help.md), maar we willen je ook helpen om met echte documenten aan de slag te gaan, dus dit is een goed moment om jezelf daarop voor te bereiden.
