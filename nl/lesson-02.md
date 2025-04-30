@@ -41,9 +41,8 @@ Deze bieden functies zoals één-klikcompilatie van je bestanden, ingebouwde PDF
 Een erg handige functie in moderne LaTeX-bewerkers is SyncTeX.
 Deze biedt de mogelijkheid om op je broncode te klikken en onmiddellijk naar de bijbehorende plek in de PDF te springen, of andersom.
 
-Er zijn veel meer LaTeX-bewerkers dan we hier kunnen opsommen: 
-er is een [uitgebreide lijst op StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
-Een basistekstbewerker, [TeXworks](https://tug.org/texworks), is inbegrepen in TeX Live en MiKTeX op Windows en Linux, en [TeXShop](https://pages.uoregon.edu/koch/texshop/) is inbegrepen in MacTeX.
+Er zijn veel meer LaTeX-bewerkers dan we hier kunnen opsommen: er staat een [uitgebreide lijst op StackExchange](https://tex.stackexchange.com/questions/339/latex-editors-ides).
+Een eenvoudige tekstbewerker, [TeXworks](https://tug.org/texworks), is inbegrepen in TeX Live en MiKTeX op Windows en Linux, en [TeXShop](https://pages.uoregon.edu/koch/texshop/) is inbegrepen in MacTeX.
 
 <p 
   class="hint">Welke tekstbewerker je ook kiest, we raden aan om deze <i>na</i> je TeX-systeem te installeren, zodat hij het TeX-systeem kan 'vinden' en zich correct kan instellen.</p>
@@ -70,7 +69,7 @@ Als je van plan bent je LaTeX-bestanden te versturen naar partijen die ze verwer
 ## Oefening
 
 Zorg dat je een lokale LaTeX-installatie hebt geïnstalleerd _of_ een account hebt aangemaakt bij een online LaTeX-dienst. 
-Als je lokaal werkt, dan moet je ook een tekstbewerkers kiezen: 
+Als je lokaal werkt, dan moet je ook een tekstbewerker kiezen: 
 wij raden aan om te beginnen met TeXworks of TeXShop (zie hierboven), en daarna eventueel andere tekstbewerkers te proberen zodra je weet hoe _jij_ het liefst met LaTeX werkt.
 
 Je kan [al onze andere oefeningen gewoon in je browser uitvoeren](help.md), maar we willen je ook helpen om met echte documenten aan de slag te gaan, dus dit is een goed moment om jezelf daarop voor te bereiden.

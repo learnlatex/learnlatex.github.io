@@ -13,7 +13,7 @@ We hebben gekozen voor `pdflatex` omdat dit waarschijnlijk het meest gebruikte s
 ## Indelingen en engines
 
 Zoals eerder [beschreven](more-01), is LaTeX gebouwd op een systeem dat TeX heet.  
-We noemen LaTeX een ‘format’: een verzameling macro’s (instructies en commando’s) die TeX begrijpt.  
+We noemen LaTeX een ‘format’: een verzameling macro’s (instructies en commando’s) die TeX kan begrijpen.  
 Wanneer je `pdflatex` uitvoert, start je _eigenlijk_ een programma genaamd ‘pdfTeX’ met een vooraf geladen ‘LaTeX-format’.  
 We noemen pdfTeX meestal een _engine_: een programma dat TeX-instructies begrijpt.
 
