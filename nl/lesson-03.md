@@ -1,142 +1,126 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Basic LaTeX document structure"
-description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
+lang: "nl"
+title: "Basisstructuur van een LaTeX-document"
+description: "Deze les laat de basisstructuur van een LaTeX-document zien, hoe je dit omzet naar een PDF-bestand, en de belangrijkste speciale tekens om LaTeX aan te sturen."
+toc-anchor-text: "Documentstructuur"
+toc-description: "De basisstructuur van een document."
 ---
 
-# LaTeX document structure
+# LaTeX-documentstructuur
 
 <span
-  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+  class="summary">Deze les laat de basisstructuur van een LaTeX-document zien, hoe je dit omzet naar een PDF-bestand, en de belangrijkste speciale tekens om LaTeX aan te sturen.</span>
 
-Your first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to see [how to use the examples](help) here on `learnlatex.org`.
+Je eerste LaTeX-document wordt heel eenvoudig: het doel is om te laten zien hoe een document eruitziet en hoe je het succesvol kan zetten. 
+Dit is ook je eerste kans om te zien [hoe je de voorbeelden gebruikt](help), hier op `learnlatex.org`.
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
+Als je een lokale LaTeX-installatie gebruikt, maak dan in je tekstbewerker een nieuw bestand aan met de naam `first.tex`, en kopieer de onderstaande tekst of typ deze over.
 
-If you are using the online system, you can just click on the ‘Run at TeXLive.net’
-or ‘Open in Overleaf’ buttons in the example to try it out!
+Als je het online systeem gebruikt, kan je gewoon klikken op de knoppen ‘LaTeX Online’ of ‘Open in Overleaf’ in het voorbeeld om het uit te proberen!
 
 <p
-  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+  class="hint">We raden aan om de online opties te proberen, zelfs als je LaTeX lokaal hebt geïnstalleerd; dit is een goede kans om te zien hoe de verschillende opties werken.</p>
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
 \begin{document}
-Hey world!
+Hallo wereld!
 
-This is a first document.
+Dit is een eerste document.
 \end{document}
 ```
 
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+Sla het bestand op en zet het om naar een PDF-document; 
+als je een lokale LaTeX-installatie gebruikt, hangt de knop die je hiervoor moet gebruiken af van de tekstbewerker die je hebt gekozen.
+Je zou een PDF-bestand moeten krijgen met de bovenstaande tekst _plus_ een paginanummer;
+LaTeX voegt dat automatisch toe.
 
-View the output `first.pdf` with whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+Bekijk het resultaat `first.pdf` met het programma dat je gebruikt om PDF-bestanden te bekijken.
+Ziet er goed uit; gefeliciteerd!
 
-If you want to get HTML rather than PDF output, take a look at the
-[help](./help) for how you can do that.
+Als je liever HTML-code in plaats van een PDF wil genereren, kijk dan bij de
+[hulp](./help) om te zien hoe dat kan.
 
-## Handling errors
+## Fouten afhandelen
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+Fouten zijn onvermijdelijk.
+Controleer of je elke regel precies hebt ingevoerd zoals hierboven weergegeven.
+Soms geven ogenschijnlijk kleine wijzigingen grote veranderingen in het resultaat, waaronder ook het niet werken van het document.
+Als je vastloopt, probeer dan het document te wissen en het opnieuw te kopiëren vanuit de regels hierboven.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+Als je LaTeX-compilatie eindigt met een vraagteken,  dan kan je afsluiten door `x` en `<Enter>` te typen.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+De foutmeldingen van LaTeX proberen behulpzaam te zijn, maar zijn anders dan die van tekstverwerkers.
+Soms is het ook moeilijk om de 'volledige' fouttekst te zien, wat belangrijke details kan verbergen. 
+LaTeX maakt altijd een logbestand aan van wat het doet;
+dit is een tekstbestand dat eindigt op `.log`.
+Je kan daar altijd de volledige foutmeldingen terugvinden, en als je een probleem hebt, zullen ervaren LaTeX-gebruikers vaak vragen om een kopie van je logbestand.
 
 <p
-  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
+  class="hint">We behandelen meer over het omgaan met fouten in <a href="./lesson-15">les 15</a>.</p>
 
-## What you've got
+## Wat je nu hebt
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+Het eerste document toont de basisprincipes.
+LaTeX-documenten zijn een combinatie van tekst en commando’s.
+De commando’s beginnen met een backslash en hebben soms argumenten tussen accolades (of soms ook optionele argumenten tussen vierkante haken).
+Je krijgt dan een uitvoer-PDF door LaTeX te vertellen je bestand te zetten.
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
-The `\usepackage` command is described in a [later lesson](lesson-06)
-it is used in most examples on this site to set up the font encoding.
+Elk LaTeX-document heeft een `\begin{document}` en een bijbehorende `\end{document}`.
+Daartussen staat de *documentbody*, waar je inhoud komt.
+Hier bevat de body twee paragrafen (in LaTeX scheid je paragrafen door één of meer witregels).
+Voor `\begin{document}` staat de *documentpreambule*, die code bevat om de opmaak van het document in te stellen.
+Het commando `\usepackage` wordt beschreven in een [latere les](lesson-06) en wordt in de meeste voorbeelden op deze site gebruikt om de lettertypecodering in te stellen.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+LaTeX heeft ook andere `\begin{...}` en `\end{...}`-paren; deze heten *omgevingen*.
+Je moet ze correct paren, dus voor elke `\begin{x}` moet er een `\end{x}` zijn.
+Als je ze nest, moet je `\end{y} ... \end{x}` gebruiken om overeen te komen met
+`\begin{x} ... \begin{y}`, d.w.z. de `\begin`- en `\end`-instructies moeten in volgorde overeenkomen.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+We kunnen opmerkingen toevoegen aan een LaTeX-bestand door deze te beginnen met `%`;
+laten we dat gebruikenom de structuur te tonen:
 
 ```latex
-\documentclass[a4paper,12pt]{article} % The document class with options
+\documentclass[a4paper,12pt]{article} % De documentklasse met opties
 \usepackage[T1]{fontenc}
-% A comment in the preamble
+% Een opmerking in de preambule
 \begin{document}
-% This is a comment
-This is   a simple
-document\footnote{with a footnote}.
+% Dit is een opmerking
+Dit is   een eenvoudig
+document\footnote{met een voetnoot}.
 
-This is a new paragraph.
+Dit is een nieuwe paragraaf.
 \end{document}
 ```
 
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+Je kan hierboven zien dat we twee paragrafen hebben: 
+let op het gebruik van een witregel om dat te bereiken. 
+Merk ook op dat meerdere spaties worden behandeld als een enkele.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+Soms wil je ook een 'harde' spatie die niet over regels afbreekt:
+in LaTeX kan je die maken met `~`, die twee stukjes tekst aan elkaar 'bindt'.
+Dat is vooral handig als we later in de cursus kruisverwijzingen gaan maken.
 
-## Special characters
+## Speciale tekens
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+Je hebt waarschijnlijk al gezien dat ``\``, `{` en `}` een speciale betekenis hebben in LaTeX.
+Een ``\`` begint een instructie aan LaTeX: een 'commando'. De accolades `{` en `}` worden gebruikt om _verplichte argumenten_ aan te geven: informatie die commando’s vereisen.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+Er zijn ook andere tekens met speciale betekenis; we zagen bijvoorbeeld al dat `~`
+een 'harde' spatie is. 
+Bijna al deze tekens komen _zeer_ zelden voor in normale tekst, en daarom zijn ze gekozen voor bijzondere functies.
+Als je een van deze speciale tekens tóch in de tekst wil weergeven, lees dan [informatie op de verdiepingspagina](more-03).
 
-## Exercise
+## Oefening
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+Experimenteer met het online bewerk- en opmaaksysteem; 
+klik op de knop om de inhoud te zetten, bewerk deze vervolgens op de webpagina en zet hem opnieuw.
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+Probeer tekst toe te voegen aan je eerste document, het te zetten en de wijzigingen in je PDF te bekijken. 
+Maak verschillende paragrafen en voeg variabele witruimte toe.
+Verken hoe je tekstbewerker werkt; 
+klik op je broncode en kijk hoe je naar dezelfde regel in de PDF kan gaan.
+Probeer wat harde spaties toe te voegen en kijk hoe die de regelafbreking beïnvloeden.
