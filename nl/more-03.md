@@ -1,39 +1,38 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Basic LaTeX document structure"
-description: "This lesson gives more detail on how to run LaTeX, and the special characters it uses and how to insert them in the output PDF."
-toc-anchor-text: "More on: Basic LaTeX document structure"
+lang: "nl"
+title: "Meer over: Basisstructuur van een LaTeX-document"
+description: "Deze les geeft meer details over het uitvoeren van LaTeX, en de speciale tekens die het gebruikt en hoe je die in de uitvoer-PDF invoegt."
+toc-anchor-text: "Meer over: Basisstructuur van een LaTeX-document"
 ---
 
-## Running LaTeX
+## LaTeX uitvoeren
 
-As [detailed earlier](lesson-02), LaTeX documents are simply plain text. To see
-this, try opening your first document in a simple text editor, for example
-on Windows using Notepad. You should see the same text as in a dedicated LaTeX
-editor, but without any highlight of keywords.
+Zoals [eerder uitgelegd](lesson-02) zijn LaTeX-documenten simpelweg tekstbestanden. 
+Om dit te zien, kan je je eerste document openen in een eenvoudige tekstbewerker, op Windows bijvoorbeeld met Kladblok.
+Je zou dezelfde tekst moeten zien als in een speciale LaTeX-bewerker, maar zonder dat sleutelwoorden gemarkeerd staan.
 
-You can also convert to PDF without your editor; this means using the Command
-Prompt/Terminal, so don't worry if you are not familiar with this. If you
-*are*, you can navigate to the directory containing your `.tex` source file and
-run
+Je kan ook naar PDF converteren zonder je tekstbewerker;
+dit betekent dat je de opdrachtprompt of terminal gebruikt, dus maak je geen zorgen als je daar niet vertrouwd mee bent.
+Als je dat *wel* bent, kan je naar de map navigeren waarin je `.tex`-bronbestand zich bevindt en het volgende uitvoeren:
 
 `pdflatex first`
 
-or
+of
 
 `pdflatex first.tex`
 
-to typeset your PDF. Notice that the `.tex` extension is optional: LaTeX will
-assume files end with `.tex` unless you specify otherwise.
+om je PDF te zetten.
+Merk op dat de extensie `.tex` optioneel is:
+LaTeX gaat ervan uit dat bestanden eindigen op `.tex`, tenzij je iets anders specificeert.
 
-## Special characters
+## Speciale tekens
 
-If you need to type in a special character, most of the time you can simply
-use a backslash in front of it, so for example `\{` is used to print a literal
-`{`. There are a few cases where you need to use a longer command instead:
+Als je een speciaal teken moet typen, kan je er meestal gewoon een backslash voor plaatsen. 
+Bijvoorbeeld, `\{` wordt gebruikt om letterlijk `{` weer te geven. 
+In een paar gevallen moet je een langer commando gebruiken:
 
-| Symbol | Short Command <br><small>(math and text)</small> | Long Command <br><small>(for text only)</small> |
+| Teken | Kort commando <br><small>(wiskunde en tekst)</small> | Lang commando <br><small>(alleen voor tekst)</small> |
 | --- | --- | --- |
 | `{`    | `\{`          | `\textbraceleft`  |
 | `}`    | `\}`          | `\textbraceright` |
@@ -46,7 +45,4 @@ use a backslash in front of it, so for example `\{` is used to print a literal
 | `^`    |               | `\textasciicircum`|
 | `~`    |               | `\textasciitilde` |
 
-For the last three symbols there are no short commands available,
-because `\\` is used to indicate a linebreak and `\~` and `\^` are used
-to produce tilde and circumflex accents when using only ASCII
-characters as input.
+Voor de laatste drie tekens zijn er geen korte commando's beschikbaar omdat `\\` al gebruikt wordt om een regeleinde aan te geven, en `\~` en `\^` worden gebruikt om diakritische tekens met een tilde of accent circonflexe te produceren wanneer je enkel ASCII-tekens gebruikt.
