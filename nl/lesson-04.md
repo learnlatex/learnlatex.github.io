@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "nl"
 title: "Logische structuur"
-description: "Deze les toont enkele basisopmaakcommando's en vergelijkt deze met semantische opmaak via sectiecommando's en lijsten."
+description: "Deze les toont enkele eenvoudige opmaakcommando's en vergelijkt deze met semantische opmaak via sectiecommando's en lijsten."
 toc-anchor-text: "Logische structuur"
 toc-description: "Structuur en visuele presentatie."
 ---
@@ -10,7 +10,7 @@ toc-description: "Structuur en visuele presentatie."
 # Logische structuur
 
 <span
-  class="summary">Deze les toont enkele basisopmaakcommando's en vergelijkt deze met semantische opmaak via sectiecommando's en lijsten.</span>
+  class="summary">Deze les toont enkele eenvoudige opmaakcommando's en vergelijkt deze met semantische opmaak via sectiecommando's en lijsten.</span>
 
 LaTeX biedt manieren om je te concentreren op de logische structuur van je document, evenals de mogelijkheid om direct het uitzicht van je document in te stellen.
 Meestal is het veel beter om methodes te gebruiken die zich richten op de structuur omdat dat het makkelijker maakt het uitzicht aan te passen of te hergebruiken als dat nodig is.
