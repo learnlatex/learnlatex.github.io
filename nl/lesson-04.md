@@ -23,6 +23,7 @@ We beginnen met een voorbeeld waarin een van de meest voorkomende logische opmaa
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\begin{document}
 Tekst met \emph{nadruk en \emph{geneste} inhoud}.
 
 Tekst in \textit{cursief and \textit{geneste} inhoud}.
