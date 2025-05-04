@@ -1,142 +1,123 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "Using document classes to influence design"
-description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
-toc-anchor-text: "Document classes"
-toc-description: "Setting the general document layout."
+lang: "nl"
+title: "Documentklassen gebruiken om het uitzicht te beïnvloeden"
+description: "Deze les legt uit wat een documentklasse is, hoe deze invloed heeft op de lay-out van een document, en somt de belangrijkste klassen op die je in een TeX-distributie kan vinden."
+toc-anchor-text: "Documentklassen"
+toc-description: "De algemene lay-out van het document instellen."
 ---
 
-# Document classes
+# Documentklassen
 
 <span
-  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
+  class="summary">Deze les legt uit wat een documentklasse is en hoe deze invloed heeft op de lay-out en het uitzicht van een document. Ze somt de belangrijkste klassen op die je in een TeX-distributie kan vinden.</span>
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
+Je hebt misschien gemerkt dat alle LaTeX-documenten die we tot nu toe hebben gemaakt begonnen met een `\documentclass`-regel, en dat `\documentclass{article}` veruit de meest voorkomende keuze was.
+(We hadden `\documentclass{report}` nodig in [de vorige les](lesson-04) om het `\chapter`-commando uit te proberen.)
+Deze regel is verplicht in alle LaTeX-documenten en is (bijna) altijd het eerste commando dat je moet gebruiken.
 
-## What a document class does
+## Wat een documentklasse doet
 
-The document class sets up the general layout of the document, for example
+De documentklasse stelt de algemene lay-out van het document in, bijvoorbeeld:
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
+- uitzicht: marges, lettertypes, witruimte, enzovoort
+- of hoofdstukken beschikbaar zijn
+- of de titel op een aparte pagina moet staan
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+Documentklassen kunnen ook nieuwe commando's toevoegen;
+dat geldt vooral voor specialistische gevallen zoals het maken van presentatieslides.
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+De `\documentclass`-regel kan ook _globale opties_ instellen: dingen die van toepassing zijn op het hele document.
+Deze worden tussen vierkante haken geplaatst: `\documentclass[<opties>]{<naam>}`.
+Deze syntaxis, waarbij optionele informatie eerst tussen vierkante haken wordt gegeven, wordt bij veel LaTeX-commando's gebruikt.
 
-## The base classes
+## De standaardklassen
 
-LaTeX is supplied with a set of standard classes, all of which look similar
-but with some variations:
+LaTeX wordt geleverd met een verzameling standaardklassen die er allemaal vergelijkbaar uitzien maar met enkele verschillen:
 
 - `article`  
-  short documents without chapters
+  korte documenten zonder hoofdstukken
 - `report`  
-  longer documents with chapters, single-sided printing
+  langere documenten met hoofdstukken, enkelzijdig gezet
 - `book`  
-  longer documents with chapters, double-sided printing, with front- and
-  back-matter (for example an index)
+  langere documenten met hoofdstukken, dubbelzijdig gezet, met voorwerk en
+  nawerk (bijvoorbeeld een index)
 - `letter`  
-  correspondence with no sections
+  correspondentie zonder secties
 - `slides`  
-  for presentations (but see below)
+  voor presentaties (maar zie hieronder)
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+De klassen `article`, `report` en `book` hebben vergelijkbare beschikbare commando's, zoals we al gezien hebben.
+Bij het schrijven van een `letter` zijn de beschikbare commando's iets anders.
 
 ```latex
 \documentclass{letter}
 \usepackage[T1]{fontenc}
 \begin{document}
 
-\begin{letter}{Some Address\\Some Street\\Some City}
+\begin{letter}{Een Adres\\Een Straat\\Een Stad}
 
-\opening{Dear Sir or Madam,}
+\opening{Geachte heer of mevrouw}
 
-The text goes Here
+De tekst komt hier.
 
-\closing{Yours,}
+\closing{Met vriendelijke groet,}
 
 \end{letter}
 
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialized commands.
+Merk op hoe ``\\`` wordt gebruikt om regels van het adres te scheiden;
+we zullen [later](lesson-11) uitweiden over regeleinden.
+Merk ook op hoe de `letter`-klasse een nieuwe omgeving voor elke brief maakt en speciale commando's heeft.
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+De standaardklassen `article`, `report` en `book` accepteren de opties `10pt`,
+`11pt` en `12pt` om het lettertype te wijzigen, en `twocolumn` om een document in twee kolommen te zetten.
 
-## Function-rich classes
+## Klassen met veel functionaliteit
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
+De kernklassen zijn erg stabiel, maar daardoor ook vrij
+conservatief qua uitzicht en beschikbare commando's.
+In de loop der tijd zijn er krachtigere klassen geschreven die je het uitzicht laten aanpassen zonder dat je dat handmatig hoeft te doen (waarover we [later](lesson-11) meer vertellen).
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+De American Mathematical Society biedt varianten op de standaardklassen (`amsart`, `amsbook`) met een traditioneler uitzicht dat meer lijkt op wat je in wiskundige tijdschriften ziet.
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt`, `scrbook`, and `scrlttr2`, while there is
-a single `memoir` class that is most like an extension of `book`.
+De twee grootste en populairste 'uitgebreide' klassen zijn de KOMA-Scriptbundel en de `memoir`-klasse.
+KOMA-Script biedt een aantal klassen die de standaardklassen nabootsen: `scrartcl`, `scrreprt`, `scrbook`, en `scrlttr2`, terwijl er voor `memoir` één klasse is die het meest lijkt op een uitbreiding van `book`.
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-16), but you can always
-jump ahead!
+Deze uitgebreide klassen hebben veel mogelijkheden voor aanpassingen, die we in een oefening zullen verkennen.
+Je vraagt je misschien af hoe je kan weten welke aanpassingsmogelijkheden ze bieden;
+dat behandelen we [in een latere les](lesson-16), maar je kan natuurlijk al eens vooruit bladeren!
 
-## Presentations
+## Presentaties
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+De `slides`-klasse is ontwikkeld in de jaren 80 voor het maken van fysieke dia's en heeft geen mogelijkheden voor interactieve PDF-presentaties.
+Daarvoor bestaan moderne klassen die dat wel ondersteunen: deze zijn iets meer
+gespecialiseerd dan gewone LaTeX-documenten, dus we hebben ze apart behandeld in de [aanvullende les](more-05).
 
-## Exercises
+## Oefeningen
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+Onderzoek hoe het veranderen van de documentklasse naar de standaardklassen, de KOMA-bundel of `memoir` het uitzicht van het document beïnvloedt.
 
 ```latex
-\documentclass{article} % Change the class here
+\documentclass{article} % Verander de klasse hier
 \usepackage[T1]{fontenc}
 
 \begin{document}
 
-\section{Introduction}
+\section{Inleiding}
 
-This is a sample document with some dummy
-text\footnote{and a footnote}. This paragraph is quite
-long as we might want to see the effect of making the
-document have two columns.
+Dit is een voorbeeld van een document met wat voorbeeldtekst\footnote{en een voetnoot}.
+Deze paragraaf is vrij lang om eventueel het effect te kunnen zien van het gebruik van twee kolommen in het document.
 
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
+Voeg de klasse-optie `twocolumn` toe en kijk hoe de lay-out verandert.
 
-Change the `\section` above to `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+Verander de `\section` hierboven in `\chapter` en bekijk wat het effect is van de
+volgende klasse-opties bij gebruik van de `scrreprt`-klasse:
 
 - `chapterprefix`
 - `headings=small`
