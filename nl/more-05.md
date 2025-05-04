@@ -1,29 +1,24 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "More on: Using document classes to influence design"
-description: "This lesson gives information on more specialized document classes for LaTeX."
-toc-anchor-text: "More on: Using document classes to influence design"
+lang: "nl"
+title: "Meer over: Documentklassen gebruiken om het uitzicht te beïnvloeden"
+description: "Deze les geeft informatie over meer gespecialiseerde documentklassen voor LaTeX."
+toc-anchor-text: "Meer over: Documentklassen gebruiken om het uitzicht te beïnvloeden"
 ---
 
-## Journal-specific classes
+## Tijdschrift-specifieke klassen
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on [CTAN](https://ctan.org) and in standard TeX
-distributions.
+Veel academische tijdschriften bieden LaTeX-klassen aan voor inzendingen.
+Deze stellen doorgaans de lay-out in om te lijken op die van het uiteindelijke tijdschrift, hoewel dat ook afhangt van het gebruik van lettertypes, enzovoort.
+Als er een klasse beschikbaar is, wordt deze meestal rechtstreeks geleverd door de redactie die daarbij de nodige uitleg hoort te geven over de beschikbare functies.
+Veel van deze klassen zijn ook beschikbaar op [CTAN](https://ctan.org) en in standaard TeX-distributies.
 
-## Classes for presentations
+## Klassen voor presentaties
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+Een niche die speciale behandeling vereist, is het maken van presentaties.
+De `slides`-klasse werd geschreven voor het maken van ‘klassieke’ gedrukte dia’s en biedt geen speciale ondersteuning voor geprojecteerde presentaties.
+Twee klassen zijn hier wel voor ontwikkeld en worden veel gebruikt: `beamer` en `powerdot`.
+Aangezien `beamer` waarschijnlijk de meest gebruikte is, geven we hier een voorbeeld van hoe die werkt:
 
 ```latex
 \documentclass{beamer}
@@ -31,41 +26,39 @@ give you an example of how it works:
 \begin{document}
 
 \begin{frame}
-  \frametitle{A first frame}
-  Some text
+  \frametitle{Een eerste `frame}
+  Wat tekst
 \end{frame}
 
 \begin{frame}
-  \frametitle{A second frame}
-  Different text
+  \frametitle{Een tweede frame}
+  Andere tekst
   \begin{itemize}
-    \item<1-> First item
-    \item<2-> Second item
+    \item<1-> Eerste item
+    \item<2-> Tweede item
   \end{itemize}
 \end{frame}
 
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+Dit laat twee belangrijke ideeën zien.
+Ten eerste deelt `beamer` een document op in frames, waarvan elk meer dan één dia kan vormen.
+Ten tweede voegt `beamer` extra functionaliteit toe aan de normale LaTeX-syntaxis om delen van de broncode ‘stapsgewijs’ te laten verschijnen.
+Dit is krachtig maar complexer dan we hier kunnen behandelen:
+lees [dit blogartikel](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) voor meer informatie.
 
-## A class for images
+## Een klasse voor afbeeldingen
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+Soms wil je een afbeelding maken met behulp van LaTeX (en die mogelijk veel tekst bevat).
+Vaak wil je niets anders dan de inhoud zelf op de 'pagina'.
+Dat kan je het makkelijkst doen met de [`standalone`](https://ctan.org/pkg/standalone)-klasse.
+Deze stelt automatisch het formaat van de pagina in om enkel de inhoud te omvatten.
 
 ```latex
 \documentclass{standalone}
 \usepackage[T1]{fontenc}
 \begin{document}
-A simple document: this will be a very small box!
+Een eenvoudig document: dit zal een zeer klein vakje zijn!
 \end{document}
 ```
