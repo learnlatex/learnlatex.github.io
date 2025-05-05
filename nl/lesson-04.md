@@ -23,6 +23,7 @@ We beginnen met een voorbeeld waarin een van de meest voorkomende logische opmaa
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
 Tekst met \emph{nadruk en \emph{geneste} inhoud}.
 
@@ -48,6 +49,7 @@ Dit regelt de lettertypewijzigingen, verticale ruimte, enz., en houdt de uitvoer
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
 Hallo wereld!
 
@@ -95,6 +97,7 @@ Er zijn twee veelgebruikte lijsttypen ingebouwd in LaTeX.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
 
 Geordend

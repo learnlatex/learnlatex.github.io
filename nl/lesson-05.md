@@ -53,6 +53,7 @@ Bij het schrijven van een `letter` zijn de beschikbare commando's iets anders.
 ```latex
 \documentclass{letter}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
 
 \begin{letter}{Een Adres\\Een Straat\\Een Stad}
@@ -103,6 +104,7 @@ Onderzoek hoe het veranderen van de documentklasse naar de standaardklassen, de 
 ```latex
 \documentclass{article} % Verander de klasse hier
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 
 \begin{document}
 

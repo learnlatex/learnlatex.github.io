@@ -32,7 +32,7 @@ rules, so it's important to tell LaTeX which one to use. This is handled by the
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-%\usepackage[french]{babel}
+%\usepackage[dutch]{babel}
 
 \usepackage[width = 6cm]{geometry} % To force hyphenation here
 
