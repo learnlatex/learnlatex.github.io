@@ -23,6 +23,7 @@ Aangezien `beamer` waarschijnlijk de meest gebruikte is, geven we hier een voorb
 ```latex
 \documentclass{beamer}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
 
 \begin{frame}
@@ -58,6 +59,7 @@ Deze stelt automatisch het formaat van de pagina in om enkel de inhoud te omvatt
 ```latex
 \documentclass{standalone}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
 Een eenvoudig document: dit zal een zeer klein vakje zijn!
 \end{document}

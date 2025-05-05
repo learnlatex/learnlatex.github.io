@@ -40,6 +40,7 @@ Naast de "geordende" en "ongeordende" lijsttypen biedt LaTeX nog een ander, mind
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
 
 \begin{description}

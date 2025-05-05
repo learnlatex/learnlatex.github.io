@@ -25,6 +25,7 @@ Als je het online systeem gebruikt, kan je gewoon klikken op de knoppen ‘LaTeX
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 
 \begin{document}
 Hallo wereld!
@@ -32,6 +33,10 @@ Hallo wereld!
 Dit is een eerste document.
 \end{document}
 ```
+
+Merk op dat LaTeX standaard is ingesteld om de (Amerikaans) Engelse taalregels te volgen, bijvoorbeeld voor woordafbrekingen.
+We gebruiken `\usepackage[dutch]{babel}` om dit naar het Nederlands om te zetten.
+Bekijk eventueel ook [een latere les](more-06) of de [les specifiek voor Nederlands](language-01).
 
 Sla het bestand op en zet het om naar een PDF-document; 
 als je een lokale LaTeX-installatie gebruikt, hangt de knop die je hiervoor moet gebruiken af van de tekstbewerker die je hebt gekozen.
@@ -86,6 +91,7 @@ laten we dat gebruikenom de structuur te tonen:
 ```latex
 \documentclass[a4paper,12pt]{article} % De documentklasse met opties
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 % Een opmerking in de preambule
 \begin{document}
 % Dit is een opmerking
