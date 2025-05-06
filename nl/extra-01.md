@@ -1,73 +1,65 @@
 ---
 layout: "lesson"
-lang: "en"
-title: "LaTeX Showcase - Examples for further study"
-description: "This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons."
+lang: "nl"
+title: "LaTeX Showcase - Verdere voorbeelden"
+description: "Deze les toont uiteenlopende voorbeelden van andere populaire LaTeX-pakketten die niet aan bod kwamen in de hoofdlessen."
 toc-anchor-text: "LaTeX Showcase"
-toc-description: "Examples for further study."
+toc-description: "Verdere voorbeelden."
 ---
 
 # Showcase
 
 <span
-  class="summary">This lesson shows assorted examples of other popular LaTeX packages that were not covered in the main lessons.</span>
+  class="summary">Deze les toont uiteenlopende voorbeelden van andere populaire LaTeX-pakketten die niet aan bod kwamen in de hoofdlessen.</span>
 
-This course has given an overview of the core features of LaTeX.
-LaTeX has vast array of extension packages and is used in many subject
-areas.  We give here some examples, with no explanation here but links
-to the package documentation at [texdoc.org](https://texdoc.org).
-The examples are taken from the package documentation unless otherwise noted.
+Deze cursus gaf een overzicht van de kernfunctionaliteiten van LaTeX.
+LaTeX beschikt over een enorme reeks uitbreidingspakketten en wordt gebruikt in veel vakgebieden.
+We geven hier enkele voorbeelden, zonder uitleg, maar met links naar de bijhorende documentatie op [texdoc.org](https://texdoc.org).
+De voorbeelden zijn afkomstig uit de documentatie van de pakketten, tenzij anders vermeld.
 
 <p
-  class="hint">Note that inclusion here is not intended as an endorsement of the package over other similar packages, we just aim for a small sample showing a range of areas not otherwise covered in this course.</p>
+  class="hint">Let op: het is niet omdat een pakket hieronder opgelijst staat dat we het aanbevelen boven andere soortgelijke pakketten. We willen gewoon een kleine selectie tonen uit domeinen die verder niet aan bod kwamen in deze cursus.</p>
 
-## Chemistry
+## Chemie
 
-Package: [`mhchem`](https://texdoc.org/pkg/mhchem)
+Pakket: [`mhchem`](https://texdoc.org/pkg/mhchem)
 
 {% include extra-01-example-mchem.md %}
 
-## Linguistics
+## Taalkunde
 
-Package: [`forest`](https://texdoc.org/pkg/forest)
+Pakket: [`forest`](https://texdoc.org/pkg/forest)
 
 {% include extra-01-example-forest.md %}
 
-## Chess
+## Schaken
 
 <!-- not 2017 -->
-Package: [`xskak`](https://texdoc.org/pkg/xskak)
+Pakket: [`xskak`](https://texdoc.org/pkg/xskak)
 
 {% include extra-01-example-xskak.md %}
 
+## Poëzie
 
-## Poetry
-
-Class: [`memoir`](https://texdoc.org/pkg/memoir)
+Klasse: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
+## Tekeningen
 
-## Drawing
 <!-- not 2017 -->
-Package: [`tikz`](https://texdoc.org/pkg/tikz)
-
+Pakket: [`tikz`](https://texdoc.org/pkg/tikz)
 
 {% include extra-01-example-tikz.md %}
 
+## Grafieken van functies
 
-## Function plotting
-
-Package: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
-
+Pakket: [`pgfplots`](https://texdoc.org/pkg/pgfplots)
 
 {% include extra-01-example-pgfplots.md %}
 
+## Muziek
 
-## Music
-
-Package: [`musixtex`](https://texdoc.org/pkg/musixtex)
-
-
+Pakket: [`musixtex`](https://texdoc.org/pkg/musixtex)
 
 {% include extra-01-example-musixtex.md %}
