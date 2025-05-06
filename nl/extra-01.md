@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "LaTeX Showcase - Verdere voorbeelden"
+title: "Verdere voorbeelden"
 description: "Deze les toont uiteenlopende voorbeelden van andere populaire LaTeX-pakketten die niet aan bod kwamen in de hoofdlessen."
-toc-anchor-text: "LaTeX Showcase"
-toc-description: "Verdere voorbeelden."
+toc-anchor-text: "Verdere voorbeelden"
+toc-description: "Een glimp op wat LaTeX kan."
 ---
 
-# Showcase
+# Verdere voorbeelden
 
 <span
   class="summary">Deze les toont uiteenlopende voorbeelden van andere populaire LaTeX-pakketten die niet aan bod kwamen in de hoofdlessen.</span>
@@ -41,7 +41,7 @@ Pakket: [`xskak`](https://texdoc.org/pkg/xskak)
 
 ## Poëzie
 
-Klasse: [`memoir`](https://texdoc.org/pkg/memoir)
+Documentklasse: [`memoir`](https://texdoc.org/pkg/memoir)
 
 {% include extra-01-example-memoir.md %}
 
