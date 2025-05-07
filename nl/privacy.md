@@ -20,8 +20,8 @@ De cookies die voorkeuren opslaan (zoals de standaard TeX-engine) worden _niet_ 
 
 ## Externe sites
 
-Als men ervoor kiest voorbeelden uit te voeren via een online dienst, dan worden de gegevens in de actieve tekstbewerker verzonden via een HTTPS POST-verzoek naar de betreffende dienst en dan zijn ze onderworpen aan hun privacybeleid.
-De volgende links zijn van toepassing voor de huidige diensten:
+Als men ervoor kiest voorbeelden uit te voeren via een online dienst, dan worden de gegevens in de actieve tekstbewerker verzonden via een HTTPS POST-verzoek naar de vermelde dienst en dan zijn ze onderworpen aan hun privacybeleid.
+De volgende links zijn van toepassing voor de ondersteunde diensten:
 
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
