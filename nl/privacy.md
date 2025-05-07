@@ -1,34 +1,28 @@
 ---
 layout: "page"
 lang: "nl"
-title: Privacy Policy
+title: Privacybeleid
 permalink: /nl/privacy
 ---
-# Privacy Policy
+# Privacybeleid
 
-## User Data
+## Gebruikersgegevens
 
-LearnLaTeX.org requires no user login and stores no user-specifc data.
-As the site is hosted at GitHub Pages, no information at all is available
-to the site maintainers on user activity. The site does not use any tracking
-service such as Google Analytics.
+LearnLaTeX.org vereist geen gebruikerslogin en slaat geen gebruikersspecifieke gegevens op.
+Aangezien de site wordt gehost via GitHub Pages, is er geen enkele informatie
+beschikbaar voor de sitebeheerders over gebruikersactiviteit.
+De site maakt geen gebruik van trackingdiensten zoals Google Analytics.
 
 ## Cookies
 
-By default the site does not use any cookies. As documented on the
-[Site Settings](settings) page, users may optionally accept cookies
-and store preferences. The cookies storing preferences (such as
-default TeX engine) are _not_ generated or transmitted to the
-LearnLaTeX.org site but are generated and stored by the JavaScript
-running within the user's browser.
+Standaard gebruikt de site geen cookies.
+Zoals uitgelegd staat op de [Instellingenpagina](settings), kunnen gebruikers ervoor kiezen om cookies te accepteren en zo voorkeuren op te slaan.
+De cookies die voorkeuren opslaan (zoals de standaard TeX-engine) worden _niet_ gegenereerd of verzonden naar de LearnLaTeX.org-site, maar worden gegenereerd en opgeslagen door de JavaScript-code die draait in de browser van de gebruiker.
 
-## External Sites
+## Externe sites
 
-If the option to run examples at an online service is used, then the
-data in the current editor will be transmitted via an https POST
-request to the relevant service and be subject to the privacy policy
-of that external service. The following links apply to the services
-currently used.
+Als men ervoor kiest voorbeelden uit te voeren via een online dienst, dan worden de gegevens in de huidige tekstbewerker verzonden via een HTTPS POST-verzoek naar de betreffende dienst en dan zijn ze onderworpen aan hun privacybeleid.
+De volgende links zijn van toepassing voor de huidige diensten:
 
 * [Overleaf](https://www.overleaf.com/legal)
 * [TeXLive.net](https://davidcarlisle.github.io/latexcgi/privacy)
