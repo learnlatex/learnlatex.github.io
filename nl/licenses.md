@@ -1,29 +1,25 @@
 ---
 layout: "page"
 lang: "nl"
-title: Licenses
+title: Licenties
 permalink: /nl/licenses
 ---
 
-# Licenses
+# Licenties
 
-The [Learn LaTeX website]({{ "/" | absolute_url }}) uses 2 types of licenses:
+De [Learn LaTeX-website]({{ "/" | absolute_url }}) gebruikt twee soorten licenties:
 
-## Content
+## Inhoud
 
-The content of this website is available under the
-[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-license. That means you can use the material as long as you say where it came
-from and let others do the same.
+De inhoud van deze website valt onder de [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) licentie.
+Dat betekent dat je het materiaal mag gebruiken zolang je vermeldt waar het vandaan komt en anderen hetzelfde toestaat.
 
-See [LICENSE](../LICENSE) for details.
+Zie [LICENSE](../LICENSE) voor meer details.
 
-## Code Examples
+## Codevoorbeelden
 
-The code examples are licensed as
-[Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) 
-(No Rights Reserved). This is a legal text that is (essentially) the same as 
-Public Domain, at least in countries where that concept exists. The key point 
-is that _you can use the examples without any issues_. You _do not_ need to 
-reference them, you _do not_ need to share them when you modify them: you can 
-just use them.
+De codevoorbeelden zijn als [Creative Commons CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
+(Geen rechten voorbehouden) gelicentieerd.
+Dit is een juridische verklaring die (in wezen) overeenkomt met het publiek domein, althans in landen waar dat concept bestaat.
+Het belangrijkste is dat je de voorbeelden _zonder enige beperking_ kan gebruiken.
+Je hoeft _geen bronvermelding_ te geven en als je ze aanpast, dan moet je de _wijzigingen niet delen_: je kan ze gewoon gebruiken.
