@@ -1,43 +1,41 @@
 ---
 layout: "page"
 lang: "nl"
-title: Site Settings
+title: Site-instellingen
 permalink: /nl/settings
 ---
-# Site Settings (User Preferences)
+# Site-instellingen (gebruikersvoorkeuren)
 
-## Accept or Delete Cookies
+## Cookies accepteren of verwijderen
 
-Cookies are small pieces of data that are stored by your browser.
-By default no cookies are used by this site, but any options set on
-this page are stored in cookies.
+Cookies zijn gegevens die door je browser worden opgeslagen.
+Standaard gebruikt deze site geen cookies, maar alle opties die op deze pagina worden ingesteld, worden opgeslagen via cookies.
 
-Accept cookies here to enable the use of cookies on this site and to
-enable the menu options below.
-
+Accepteer hier cookies om het gebruik van cookies op deze site toe te staan en om de onderstaande menu-opties te activeren.
 
 {% include settings-accept.html 
-   accept="Accept Cookies"
-   reset= "Reset: Delete All Cookies"
+   accept="Cookies accepteren"
+   reset= "Reset: alle cookies verwijderen"
 %}
 
-## Default Return
-The `return` form parameter that TeXLive.net should use in the absence of a setting via `% !TeX` comments in the example.
+## Standaardwaarde voor return
+De `return`-parameter voor formulieren die TeXLive.net moet gebruiken als deze niet via `% !TeX`-commentaren in het voorbeeld ingesteld wordt.
 
 {% include settings-return.html %}
 
 
-## Default Engine
-The `engine` form parameter that TeXLive.net or Overleaf should use in the absence of a setting via `% !TeX` comments in the example. (`-dev` and `context` options should not be used at Overleaf.)
+## Standaard engine
+De `engine`-parameter voor formulieren die TeXLive.net of Overleaf moet gebruiken als deze niet via `% !TeX`-commentaren in het voorbeeld ingesteld wordt.
+(De `-dev` en `context` opties mogen niet bij Overleaf worden gebruikt.)
 
 {% include settings-engine.html %}
 
 
-## Editor Theme
-The theme used by the embedded ACE editor.
+## Kleurenthema
+Het thema dat wordt gebruikt door de ingebouwde ACE-editor.
 
 {% include settings-acetheme.html %}
 
-The theme used by the embedded CodeMirror6 editor.
+Het thema dat wordt gebruikt door de ingebouwde CodeMirror6-editor.
 
 {% include settings-cm6theme.html %}
