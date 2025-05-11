@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "nl"
 title: "Formatting: fonts and spacing"
 description: "This lesson shows how to change the spacing elements in a document and how to add explicit formatting instructions to the LaTeX source."
 toc-anchor-text: "Fonts & spacing"

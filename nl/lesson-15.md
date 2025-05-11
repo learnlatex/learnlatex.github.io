@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "nl"
 title: "Dealing with errors"
 description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
 toc-anchor-text: "Error handling"

@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "nl"
 title: "More on: Citations and references"
 description: "This lesson gives details on non-English bibliographies, how to make references into hyperlinks, and highlights the main differences between BibTeX styles."
 toc-anchor-text: "More on: Citations and references"
