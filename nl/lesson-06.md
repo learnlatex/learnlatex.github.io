@@ -1,6 +1,6 @@
 ---
 layout: "lesson"
-lang: "en"
+lang: "nl"
 title: "Extending LaTeX using packages and definitions"
 description: "This lesson shows how you can extend LaTeX to your needs and change its layout further by using different packages, and shows how you can define your own commands."
 toc-anchor-text: "Extending LaTeX"
