@@ -1,32 +1,32 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "More on: Cross-referencing"
-description: "This lesson shows how you can make links of cross-references by loading the hyperref package."
-toc-anchor-text: "More on: Cross-referencing"
+title: "Meer over: Kruisverwijzingen"
+description: "Deze les laat zien hoe je kruisverwijzingen kan omzetten in hyperlinks met het hyperref-pakket."
+toc-anchor-text: "Meer over: Kruisverwijzingen"
 ---
 
-## Making cross-references into links
+## Kruisverwijzingen omzetten in links
 
-You can make your cross-references into hyperlinks using the `hyperref` package.
-In most cases, `hyperref` should be loaded after any other packages specified
-in the document preamble.
+Je kan je kruisverwijzingen omzetten in hyperlinks door het `hyperref`-pakket te laden.
+In de meeste gevallen mag `hyperref` pas ná andere pakketten in de preambule van het document worden geladen.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage[hidelinks]{hyperref}
 \begin{document}
 
-\section{Introduction}
-Some exciting text with a reference~\ref{sec:next}.
+\section{Inleiding}
+Wat spannende tekst met een verwijzing~\ref{sec:volgende}.
 
-\section{Next thing}
-\label{sec:next}
+\section{Volgende onderdeel}
+\label{sec:volgende}
 
-More text here.
+Nog meer tekst hier.
 \end{document}
 ```
 
-We have chosen to make the links the same color as the normal text; try removing
-`hidelinks` to see why! 
+We hebben ervoor gekozen om de links dezelfde kleur te geven als de normale tekst;
+probeer `hidelinks` eens weg te laten om te zien waarom!
