@@ -1,30 +1,28 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "More on: Formatting: fonts and spacing"
-description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "More on: Formatting: fonts and spacing"
+title: "Meer over: Opmaak: lettertypes en tussenruimtes"
+description: "Deze les laat zien hoe je de inspringing van een alinea kan onderdrukken."
+toc-anchor-text: "Meer over: Opmaak: lettertypes en tussenruimtes"
 ---
 
-## Suppressing the indent for one paragraph
+## Inspringing van een enkele alinea onderdrukken
 
-
-If you want to suppress indentation for a single paragraph, you can use
-`\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+Als je de inspringing van slechts één alinea wil onderdrukken, kan je `\noindent` gebruiken.  
+Dit zou je _zeer_ zelden moeten doen; meestal kan je dit het best aan LaTeX overlaten.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Een korte alinea die we iets hebben uitgebreid 
+zodat je het effect goed kan zien!
 
-One small paragraph, which we have filled out a little to make sure you can
-see the effect here!
+Een korte alinea die we iets hebben uitgebreid 
+zodat je het effect goed kan zien!
 
-\noindent  One small paragraph, which we have filled out a little to make sure
-you can see the effect here!
+\noindent Een korte alinea die we iets hebben uitgebreid
+zodat je het effect goed kan zien!
 \end{document}
 ```
