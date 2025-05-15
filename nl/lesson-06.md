@@ -33,7 +33,7 @@ Hiervoor gebruik je het `babel`-pakket.
 
 %\usepackage[dutch]{babel}
 
-\usepackage[width = 6cm]{geometry} % Om afbreking te forceren
+\usepackage[width = 7cm]{geometry} % Om afbreking te forceren
 
 \begin{document}
 
