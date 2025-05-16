@@ -1,57 +1,49 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "Including graphics and positioning"
-description: "This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to make them float automatically to the proper location in the PDF."
-toc-anchor-text: "Using graphics"
-toc-description: "Appearance and positioning of graphics."
+title: "Afbeeldingen invoegen en schikken"
+description: "Deze les laat zien hoe je externe afbeeldingsbestanden kan invoegen in je document, hoe je hun uiterlijk kan aanpassen, en hoe je ze automatisch naar de juiste plek in de PDF kan laten zweven."
+toc-anchor-text: "Afbeeldingen gebruiken"
+toc-description: "Uiterlijk en positionering van afbeeldingen."
 ---
 
-# Including Graphics and positioning
+# Afbeeldingen invoegen en schikken
 
 <span
-  class="summary">This lesson shows how you can include external graphics files into your document, how to change their appearance, and how to position or float them automatically.</span>
+  class="summary">Deze les laat zien hoe je externe afbeeldingsbestanden kan invoegen in je document, hoe je hun uiterlijk kan aanpassen, en hoe je ze automatisch kan laten schikken of zweven.</span>
 
-To bring in graphics from outside LaTeX, use the `graphicx`
-package, which adds the command `\includegraphics` to LaTeX.
+Om afbeeldingen van buiten LaTeX toe te voegen, gebruik je het `graphicx`-pakket dat het commando `\includegraphics` aan LaTeX toevoegt.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{graphicx}
 
 \begin{document}
-This picture
+Deze afbeelding
 \begin{center}
   \includegraphics[height=2cm]{example-image}
 \end{center}
-is an imported PDF.
+is een geïmporteerde PDF.
 \end{document}
 ```
 
-You can include EPS, PNG, JPG, and PDF files.
-If you have more than one version of a graphic then you can write,
-for instance, `example-image.png`. (The `graphicx` package will try to
-guess the extension if you do not give one.)
+Je kan EPS-, PNG-, JPG- en PDF-bestanden invoegen.
+Als je meerdere versies van een afbeelding hebt, kan je bijvoorbeeld schrijven: `example-image.png`.
+(Het `graphicx`-pakket probeert de extensie te raden als je er geen opgeeft.)
 
-You'll notice we've used a new environment here, `center`, to place the image
-horizontally centered on the page. [A bit later](lesson-11), we'll talk more
-about spacing and positioning.
+Je merkt dat we hier een nieuwe omgeving gebruiken, `center`, om de afbeelding horizontaal in het midden van de pagina te plaatsen. [Later](lesson-11) bespreken we meer over witruimte en positionering.
 
-## Altering graphic appearance
+## Het uitzicht van afbeeldingen aanpassen
 
-The `\includegraphics` command has many options to control
-the size and shape of the included images and to trim down material. Some of
-these are used a lot, so they are worth being aware of.
+Het commando `\includegraphics` heeft veel opties om de grootte en vorm van de ingevoegde afbeelding aan te passen en bij te snijden.
+Sommige hiervan worden vaak gebruikt en zijn daarom handig om te kennen.
 
-The most obvious thing to set is the `width` or the `height` of an
-image, which are often given relative to the `\textwidth` or `\linewidth` and
-`\textheight`. The difference between `\textwidth` and `\linewidth` is subtle
-and often the result is the same. `\textwidth` is the width of the text block on
-the physical page, whereas `\linewidth` is the _current_ width, which might
-locally be different (the difference is most obvious with the class option
-`twocolumn`). LaTeX will automatically scale the image so that the aspect
-ratio stays correct.
+Het meest voor de hand liggend is het instellen van de breedte (`width`) of de hoogte (`height`) van een afbeelding, vaak relatief ten opzichte van `\textwidth`, `\linewidth` of `\textheight`.
+Het verschil tussen `\textwidth` en `\linewidth` is subtiel en het levert vaak hetzelfde resultaat op.
+`\textwidth` is de breedte van het tekstblok op de fysieke pagina, terwijl `\linewidth` de _huidige_ breedte is, die lokaal anders kan zijn (het verschil is het duidelijkst bij de klasse-optie `twocolumn`).
+LaTeX herschaalt de afbeelding automatisch zodat de beeldverhouding behouden blijft.
 
 ```latex
 \documentclass{article}
@@ -62,19 +54,20 @@ ratio stays correct.
 \begin{center}
   \includegraphics[height = 0.5\textheight]{example-image}
 \end{center}
-Some text
+Wat tekst
 \begin{center}
   \includegraphics[width = 0.5\textwidth]{example-image}
 \end{center}
 \end{document}
 ```
 
-You can also `scale` images, or rotate them by an `angle`. The other thing you
-might want to do is to `clip` and `trim` an image.
+Je kan afbeeldingen ook herschalen (`scale`), of roteren over een bepaalde hoek (`angle`).
+Een andere optie is om een afbeelding bij te snijden (`clip` of `trim`).
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{graphicx}
 
 \begin{document}
@@ -84,65 +77,57 @@ might want to do is to `clip` and `trim` an image.
 \end{document}
 ```
 
-## Making images float
+## Afbeeldingen laten zweven
 
-Traditionally in typesetting, particularly with technical documents,
-graphics may move to another spot in the document.
-This is called a *float*. Images are normally included as floats so they do
-not leave large gaps in the page.
+Traditioneel in zetwerk, vooral bij technische documenten, kunnen afbeeldingen op een andere plek in het document terechtkomen.
+Dit wordt een *float* genoemd.
+Afbeeldingen worden normaal als floats ingevoegd zodat ze geen grote gaten op de pagina achterlaten.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummy text as filler
+\usepackage{lipsum}  % genereert opvultekst als opvulling
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
+\lipsum[1-4] % Een paar paragrafen als opvulling
 
-Test location.
+Testlocatie.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image-a.png}
-  \caption{An example image}
+  \caption{Een voorbeeldafbeelding}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % Een paar paragrafen als opvulling
 \end{document}
 ```
 
-Here LaTeX moves the graphic and the caption
-away from the `Test location` text to the top of the second page,
-because there isn't room for it on the bottom of the first page.
-The `ht` influences where LaTeX can place the float; these two
-letters mean that it can go where it is in the source (next to
-`Test location`) or to the top of a page. You can use up to four position
-specifiers
+Hier verplaatst LaTeX de afbeelding en het bijschrift weg van de tekst bij `Testlocatie` naar de bovenkant van de tweede pagina, omdat er geen ruimte is onderaan de eerste pagina.
+De `ht` beïnvloedt waar LaTeX de float mag plaatsen;
+deze twee letters betekenen dat hij ofwel op de plek in de bron (naast `Testlocatie`) ofwel bovenaan een pagina mag komen.
+Je kan tot vier positioneringsvoorkeuren gebruiken:
 
-- `h` 'Here' (if possible)
-- `t` Top of the page
-- `b` Bottom of the page
-- `p` A dedicated page only for floats
+- `h` 'Hier' (indien mogelijk)
+- `t` Bovenaan de pagina
+- `b` Onderaan de pagina
+- `p` Een aparte pagina alleen voor floats
 
-[Later](lesson-09), we will see how to cross-reference floats so you can point
-to them from your text.
+[Later](lesson-09) zullen we zien hoe je naar floats kan verwijzen vanuit je tekst.
 
-You'll probably spot that we've centered the image here using `\centering`
-rather than the `center` environment. Inside a float, you should use
-`\centering` if you want to horizontally center content; this avoids both
-the float and `center` environment adding extra vertical space.
+Je zal waarschijnlijk merken dat we de afbeelding hier centreren met `\centering` in plaats van met de `center`-omgeving.
+Binnen een float moet je `\centering` gebruiken als je inhoud horizontaal wil centreren;
+dit voorkomt dat zowel de float als de `center`-omgeving extra verticale ruimte toevoegen.
 
-## Exercises
+## Oefeningen
 
-Try including an image you have created, replacing the 'standard' ones we have
-used in the demonstration.
+Probeer een afbeelding in te voegen die je zelf hebt gemaakt, ter vervanging van de ‘standaard’-afbeeldingen die we in het voorbeeld gebruiken.
 
-Explore what you can do using the `height`, `width`, `angle` and `scale` keys.
+Verken wat je kan doen met de opties `height`, `width`, `angle` en `scale`.
 
-Use the `width` key to set the size of a graphic relative to `\textwidth` and
-another graphic relative to `\linewidth`. Try out how they behave with or
-without the `twocolumn` option.
+Gebruik de `width`-optie om de grootte van een afbeelding relatief aan `\textwidth` in te stellen en een andere afbeelding relatief aan `\linewidth`.
+Experimenteer met hoe ze zich gedragen met of zonder de `twocolumn`-optie.
 
-Use `lipsum` to make a reasonably long demonstration, then try out placing
-floats using the different position specifiers. How do different
-specifiers interact?
+Gebruik `lipsum` om een redelijk lang voorbeeld te maken, en probeer vervolgens floats te plaatsen met verschillende positioneringsvoorkeuren.
+Hoe werken verschillende voorkeuren samen?
