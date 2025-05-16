@@ -2,15 +2,15 @@
 layout: "lesson"
 lang: "nl"
 title: "Afbeeldingen invoegen en schikken"
-description: "Deze les laat zien hoe je externe afbeeldingsbestanden kan invoegen in je document, hoe je hun uiterlijk kan aanpassen, en hoe je ze automatisch naar de juiste plek in de PDF kan laten zweven."
+description: "Deze les laat zien hoe je externe afbeeldingsbestanden kan invoegen in je document, hoe je hun uitzicht kan aanpassen, en hoe je ze automatisch naar de juiste plek in de PDF kan laten zweven."
 toc-anchor-text: "Afbeeldingen gebruiken"
-toc-description: "Uiterlijk en positionering van afbeeldingen."
+toc-description: "Uitzicht en positionering van afbeeldingen."
 ---
 
 # Afbeeldingen invoegen en schikken
 
 <span
-  class="summary">Deze les laat zien hoe je externe afbeeldingsbestanden kan invoegen in je document, hoe je hun uiterlijk kan aanpassen, en hoe je ze automatisch kan laten schikken of zweven.</span>
+  class="summary">Deze les laat zien hoe je externe afbeeldingsbestanden kan invoegen in je document, hoe je hun uitzicht kan aanpassen, en hoe je ze automatisch kan laten schikken of zweven.</span>
 
 Om afbeeldingen van buiten LaTeX toe te voegen, gebruik je het `graphicx`-pakket dat het commando `\includegraphics` aan LaTeX toevoegt.
 
@@ -88,7 +88,7 @@ Afbeeldingen worden normaal als floats ingevoegd zodat ze geen grote gaten op de
 \usepackage[T1]{fontenc}
 \usepackage[dutch]{babel}
 \usepackage{graphicx}
-\usepackage{lipsum}  % genereert opvultekst als opvulling
+\usepackage{lipsum}  % genereert opvultekst
 
 \begin{document}
 \lipsum[1-4] % Een paar paragrafen als opvulling
