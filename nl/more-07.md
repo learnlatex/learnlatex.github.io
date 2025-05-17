@@ -1,39 +1,31 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "More on: Including graphics and positioning"
-description: "This lesson gives details on how better name and store graphics files to be used with LaTeX, and how you can make your own graphics from within LaTeX."
-toc-anchor-text: "More on: Including graphics and positioning"
+title: "Meer over: Afbeeldingen invoegen en schikken"
+description: "Deze les geeft meer details over hoe je afbeeldingsbestanden beter kan benoemen en opslaan voor gebruik met LaTeX, en hoe je zelf afbeeldingen kan maken vanuit LaTeX."
+toc-anchor-text: "Meer over: Afbeeldingen invoegen en schikken"
 ---
 
-## Naming graphics files
+## Afbeeldingsbestanden benoemen
 
-LaTeX works on many computer platforms so
-file names deserve some thought.
-Safest is to name your graphics simply, in particular without spaces.
-For example, if you want to organize your files by keeping all
-graphics in a subdirectory, then something like
-`\includegraphics[width=30pt]{pix/mom.png}`
-is portable and future-proof.
+LaTeX werkt op veel verschillende computerplatforms, dus bestandsnamen verdienen enige aandacht.
+Het is het veiligst om je afbeeldingen een eenvoudige naam te geven, in het bijzonder zonder spaties.
+Als je je bestanden wil organiseren door alle afbeeldingen in een submap te bewaren, dan is iets als  `\includegraphics[width=30pt]{pix/mom.png}`  overdraagbaar en toekomstbestendig.
 
-Spaces in file names are traditionally somewhat problematic, but are now
-generally supported. However, if you have spaces in the name, and you have
-issues, you may wish to try removing the spaces as the first step.
+Spaties in bestandsnamen zijn traditioneel wat problematisch, maar worden tegenwoordig meestal wel ondersteund.
+Mocht je toch problemen ondervinden, probeer dan eerst de spaties uit de bestandsnaam te verwijderen.
 
-Accented character support is somewhat variable; there are issues with some
-systems, particularly on Windows. If you find issues with accented characters
-in file names, try using only ASCII characters for a test.
+Ondersteuning voor speciale tekens (zoals accenten) in bestandsnamen is wisselend, met name op Windows kunnen er problemen zijn.
+Als je problemen ondervindt met geaccentueerde tekens in bestandsnamen, probeer dan eerst alleen ASCII-tekens te gebruiken als test.
 
-## Storing graphics in a subdirectory
+## Afbeeldingen opslaan in een submap
 
-A common way to lay out source files is to put all graphics into a subdirectory.
-You can then include the relative path, as is shown above; notice that the
-`/` character is used to separate parts of the path _even on Windows_.
+Een gebruikelijke manier om bronbestanden te organiseren is door alle afbeeldingen in een submap te plaatsen.
+Je kan dan het relatieve pad gebruiken, zoals hierboven getoond;
+let op dat het teken `/` wordt gebruikt om onderdelen van het pad te scheiden, _ook op Windows_.
 
-If you have a lot of graphics, you might want to set up the subdirectory
-in advance. That can be done using `\graphicspath`, which needs a braced entry
-for each subdirectory. For example, to include both `figs` and `pics`
-subdirectories, we would have:
+Als je veel afbeeldingen hebt, kan je submappen vooraf instellen met behulp van `\graphicspath`, dat invoer vereist voor elke submap, ingesloten met accolades.
+Bijvoorbeeld, om de mappen `figs` en `pics` te gebruiken, doe je:
 
 <!-- {% raw %} -->
 ```latex
@@ -41,38 +33,32 @@ subdirectories, we would have:
 ```
 <!-- {% endraw %} -->
 
-Notice in particular the trailing `/` in these.
+Let hierbij vooral op de afsluitende `/` in elk pad.
 
-## Producing graphics
+## Afbeeldingen maken
 
-As discussed, LaTeX easily uses graphics from most sources, including plots from
-scientific software. When you do that, you probably want to save as a PDF if you
-can, as this is a scalable format. If you do need to create a bitmap, aim for
-high resolution. You can make mouse-created graphics that include LaTeX snippets
-with [Inkscape](https://inkscape.org/). An alternative that in addition extends
-those drawing techniques to three dimensions is
-[Asymptote](https://www.ctan.org/pkg/asymptote). These two produce their output
-as files that you include in your document.
+Zoals besproken kan LaTeX eenvoudig afbeeldingen gebruiken van de meeste bronnen, inclusief grafieken uit wetenschappelijke software.
+In dat geval kan je ze het beste als PDF opslaan, indien mogelijk, aangezien dit een schaalbaar format is.
+Als je een bitmap nodig hebt, streef dan naar een hoge resolutie.
+Je kan grafische bestanden maken die LaTeX-fragmenten bevatten gebruikmakend van de muis via [Inkscape](https://inkscape.org/).
+Een alternatief dat ook tekenen in drie dimensies mogelijk maakt, is [Asymptote](https://www.ctan.org/pkg/asymptote).
+Deze twee programma’s leveren uitvoerbestanden af die je kan opnemen in je document.
 
-You can also create graphics such as drawings that are especially suited to
-LaTeX, with very high precision as well as equations and labels that match your
-document. You can draw graphics directly inside your document, which is
-convenient although at the cost of more complex documents with larger
-requirements, by using [Ti*k*Z](https://ctan.org/pkg/pgf). An alternative is
-[PSTricks](https://ctan.org/pkg/pstricks-base).
+Je kan ook afbeeldingen maken zoals tekeningen die bijzonder geschikt zijn voor LaTeX, met zeer hoge precisie en met formules en labels die bij je document passen. 
+Je kan tekeningen rechtstreeks in je document maken — handig, hoewel het je document wel complexer en zwaarder maakt — met behulp van [Ti*k*Z](https://ctan.org/pkg/pgf).
+Een alternatief is [PSTricks](https://ctan.org/pkg/pstricks-base).
 
-## Placing floats
+## Floats schikken
 
-LaTeX's float placement is complex.
-The most common request is to have the figure placed
-in the output exactly where it lies in the input.
-The `float` package will do that.
+De plaatsing van floats in LaTeX is complex.
+De meest voorkomende wens is dat een afbeelding precies op de plek in de uitvoer verschijnt waar die in de invoer staat.
+Het `float`-pakket maakt dit mogelijk.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
 \usepackage{float}
 
 \begin{document}
@@ -80,33 +66,29 @@ The `float` package will do that.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image}
-  \caption{An example image}
+  \caption{Een voorbeeldafbeelding}
 \end{figure}
 \lipsum[8-15]
 \end{document}
 ```
 
-Note the `H` option, which puts the figure 'absolutely Here'.
-However it is often not recommended to use `H`, because it may
-create large portions of white space in your document.
+Let op de `H`-optie, die de afbeelding _exact hier_ plaatst.
+Het gebruik van `H` wordt echter vaak afgeraden, omdat het tot grote witruimtes in je document kan leiden.
 
-## Other types of float
+## Andere soorten floats
 
-We will [see soon](lesson-08) that we can put tables in floats; they will go
-into a `table` environment. However, we don't _have_ to put graphics in the
-`figure` environment or tables in the `table` environment; this is just
-convention.
+We zullen [binnenkort zien](lesson-08) dat je tabellen ook in floats kan plaatsen;die komen dan in een `table`-omgeving.
+Maar je _hoeft_ afbeeldingen niet in de `figure`-omgeving of tabellen in de `table`-omgeving te plaatsen; dit is slechts conventie.
 
-You might want to have other types of floating environment; each type is
-inserted independently. You can do that using the
-[`trivfloat`](https://ctan.org/pkg/trivfloat) package. This provides a single
-command, `\trivfloat`, to make new types of float.
+Misschien wil je andere soorten zwevende omgevingen maken; elk type wordt onafhankelijk ingevoegd.
+Dit kan met het pakket [`trivfloat`](https://ctan.org/pkg/trivfloat).
+Dit biedt één enkel commando, `\trivfloat`, om nieuwe float-types te definiëren.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{graphicx}
-\usepackage{lipsum}  % dummy text for filler
 \usepackage{trivfloat}
 \trivfloat{image}
 
@@ -114,7 +96,7 @@ command, `\trivfloat`, to make new types of float.
 \begin{image}
   \centering
   \includegraphics[width=0.5\textwidth]{example-image}
-  \caption{An example image}
+  \caption{Een voorbeeldafbeelding}
 \end{image}
 \end{document}
 ```
