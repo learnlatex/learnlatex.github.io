@@ -1,188 +1,174 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "Tables"
-description: "This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells."
-toc-anchor-text: "LaTeX tables"
-toc-description: "Fundamentals of working with tables."
+title: "Tabellen"
+description: "Deze les laat zien hoe je tabellen maakt in LaTeX, de uitlijning van cellen beïnvloedt, lijnen toevoegt aan de tabel en cellen samenvoegt."
+toc-anchor-text: "LaTeX-tabellen"
+toc-description: "Basisprincipes van werken met tabellen."
 ---
 
-# Tables
+# Tabellen
 
 <span
-  class="summary">This lesson shows how you can build tables in LaTeX, influence the alignment of the cells, add rules to the table, and merge cells.</span>
+  class="summary">Deze les laat zien hoe je tabellen maakt in LaTeX, de uitlijning van cellen beïnvloedt, lijnen toevoegt aan de tabel en cellen samenvoegt.</span>
 
-Tables in LaTeX are set using the `tabular` environment. This lesson will assume
-you load the `array` package, which adds more functionality to LaTeX tables, and
-which is not built into the LaTeX kernel only for historic reasons. So put the
-following in your preamble and we're good to go:
-
+Tabellen in LaTeX worden gemaakt met de `tabular`-omgeving.
+In deze les gaan we ervan uit dat je het `array`-pakket laadt, dat extra functionaliteit toevoegt aan LaTeX-tabellen, en dat om historische redenen niet standaard in de LaTeX-kern zit.
+Zet dus het volgende in je preambule en we kunnen beginnen:
 
 ```latex
 \usepackage{array}
 ```
 {: .noedit :}
 
-In order to typeset a `tabular` we have to tell LaTeX how many columns will be
-needed and how they should be aligned. This is done in a mandatory argument
-&ndash; often referred to as the table preamble &ndash; to the `tabular`
-environment, in which you specify the columns by using single-letter names,
-called preamble-tokens. The available column types are:
+Om een `tabular` te zetten, moeten we LaTeX vertellen hoeveel kolommen er nodig zijn en hoe ze moeten worden uitgelijnd.
+Dit gebeurt in een verplicht argument &ndash; vaak tabelpreambule genoemd &ndash; van de `tabular`-omgeving, waarin je de kolommen specificeert met namen die uit één letter bestaan, preambule-tokens genaamd.
+De beschikbare kolomtypes zijn:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type       | description |
+| type       | beschrijving |
 | ---        |:-- |
-| `l`        | left aligned column |
-| `c`        | centered column |
-| `r`        | right aligned column |
-| `p{width}` | a column with fixed width `width`; the text will be automatically line wrapped and fully justified |
-| `m{width}` | like `p`, but vertically centered compared to the rest of the row |
-| `b{width}` | like `p`, but bottom aligned |
-| `w{align}{width}` | prints the contents with a fixed `width`, silently overprinting if things get larger. You can choose the horizontal alignment using `l`, `c`, or `r`. |
-| `W{align}{width}` | like `w`, but this will issue an overfull box warning if things get too wide. |
+| `l`        | links uitgelijnde kolom |
+| `c`        | gecentreerde kolom |
+| `r`        | rechts uitgelijnde kolom |
+| `p{breedte}` | een kolom met vaste breedte `breedte`; de tekst wordt automatisch afgebroken en volledig uitgevuld |
+| `m{breedte}` | zoals `p`, maar verticaal gecentreerd t.o.v. de rest van de rij |
+| `b{breedte}` | zoals `p`, maar onderaan uitgelijnd |
+| `w{uitlijning}{breedte}` | drukt de inhoud af met een vaste `breedte` en overschrijdt de kolom als die te klein is. Je kan de horizontale uitlijning kiezen met `l`, `c` of `r`. |
+| `W{uitlijning}{breedte}` | zoals `w`, maar geeft een waarschuwing bij te brede inhoud. |
 
-In addition, a few other preamble-tokens are available which don't define a
-column but might be useful as well:
+Daarnaast zijn er nog een paar andere preambuletokens beschikbaar die geen kolom definiëren maar toch handig kunnen zijn:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
-| type | description |
+| type | beschrijving |
 | ---  | :-- |
-| `*{num}{string}` | repeats `string` for `num` times in the preamble. With this you can define multiple identical columns. |
-| `>{decl}` | this will put `decl` before the contents of every cell in the following column (this is useful, e.g., to set a different font for this column) |
-| `<{decl}` | this will put `decl` after the contents of each cell in the previous column |
-| <span>`|`</span>  | add a vertical rule |
-| `@{decl}` | replace the space between two columns with `decl` |
-| `!{decl}` | add `decl` in the center of the existing space |
+| `*{aantal}{string}` | herhaalt `string` `aantal` keer in de preambule. Hiermee kan je meerdere identieke kolommen definiëren. |
+| `>{decl}` | plaatst `decl` vóór de inhoud van elke cel in de volgende kolom (handig om bijvoorbeeld een ander lettertype te gebruiken) |
+| `<{decl}` | plaatst `decl` ná de inhoud van elke cel in de vorige kolom |
+| <span>`|`</span>  | voegt een verticale lijn toe |
+| `@{decl}` | vervangt de ruimte tussen twee kolommen door `decl` |
+| `!{decl}` | voegt `decl` toe in het midden van de bestaande ruimte |
 
-These two tables list all the available column types from LaTeX and the `array`
-package. A few additional column types, from different packages, are presented
-in the [further details page](more-08) for this lesson.
+Deze twee tabellen tonen alle beschikbare kolomtypes uit LaTeX en het `array`-pakket.
+Een paar extra types uit andere pakketten worden besproken bij [Meer over dit onderwerp](more-08).
 
-The columns `l`, `c`, and `r` will have the natural width of the widest cell.
-Each column has to be declared, so if you want three centered columns, you'd use
-`ccc` in the table preamble. Spaces are ignored, so `c c c` is the same.
+De kolommen `l`, `c` en `r` krijgen de natuurlijke breedte van de breedste cel.
+Elke kolom moet worden aangegeven, dus als je drie gecentreerde kolommen wil, gebruik je `ccc` in de preambule. 
+Witruimte wordt genegeerd, dus `c c c` is hetzelfde.
 
-In a table body columns are separated using an ampersand `&` and a new row is
-started using `\\`.
+Binnen een tabel worden kolommen gescheiden met een ampersand `&` en wordt een nieuwe rij gestart met `\\`.
 
-We have everything we need for our first table. In the following code the
-`&` and `\\` are aligned. This isn't necessary in LaTeX, but helps reading the
-source.
+We hebben alles wat we nodig hebben voor onze eerste tabel.
+In de volgende code zijn `&` en `\\` uitgelijnd.
+Dit is niet nodig in LaTeX, maar vergemakkelijkt het lezen van de broncode.
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 
 \begin{document}
 \begin{tabular}{lll}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Dier   & Voedsel & Grootte     \\
+  hond   & vlees   & middelgroot \\
+  paard  & hooi    & groot       \\
+  kikker & vliegen & klein       \\
 \end{tabular}
 \end{document}
 ```
-
 <!-- {% endraw %} -->
 
-If a table column contains a lot of text you will have issues to get that
-right with only `l`, `c`, and `r`. See what happens in the following example:
+Als een tabelkolom veel tekst bevat, krijg je problemen als je alleen `l`, `c` of `r` gebruikt.
+Bekijk wat er gebeurt in het volgende voorbeeld:
 
 <!-- {% raw %} -->
-
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 
 \begin{document}
 \begin{tabular}{cl}
-  Animal & Description \\
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  Dier & Beschrijving \\
+  hond & De hond is een lid van het geslacht Canis, dat deel uitmaakt van de
+         hondachtigen, en is het meest voorkomende landroofdier. \\
+  kat  & De kat is een gedomesticeerde soort van kleine vleesetende zoogdieren.
+         Het is de enige gedomesticeerde soort in de familie Felidae en wordt vaak de huiskat genoemd om haar te onderscheiden van de wilde soorten. \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-The issue is that the `l` type column typesets its contents in a single row at
-its natural width, even if there is a page
-border in the way. To overcome this you can use the `p` column. This
-typesets its contents as paragraphs with the width you specify as an argument
-and vertically aligns them at the top &ndash; which you'll want most of the
-time. Compare the above outcome to the following:
+Het probleem is dat het `l`-type de inhoud in één regel zet met zijn natuurlijke breedte, zelfs als er een paginarand in de weg zit.
+Om dit op te lossen gebruik je de `p`-kolom.
+Deze behandelt de inhoud als paragrafen met opgegeven breedte
+en lijnt deze bovenaan uit, wat meestal het gewenste gedrag is.
+Vergelijk het resultaat hierboven met het volgende:
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
-  Animal & Description \\
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  Dier & Beschrijving \\
+  hond & De hond is een lid van het geslacht Canis, dat deel uitmaakt van de
+         hondachtigen, en is het meest voorkomende landroofdier. \\
+  kat  & De kat is een gedomesticeerde soort van kleine vleesetende zoogdieren.
+         Het is de enige gedomesticeerde soort in de familie Felidae en wordt vaak de huiskat genoemd om haar te onderscheiden van de wilde soorten. \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-If your table has many columns of the same type it is cumbersome to put that
-many column definitions in the preamble.  You can make things easier
-by using `*{num}{string}`, which repeats the `string`  `num` times.
-So `*{6}{c}` is equivalent to `cccccc`. To show you that it works here is the first
-table of this lesson with the newly learned syntax:
+Als je tabel veel kolommen van hetzelfde type heeft, is het vervelend om dat telkens te herhalen.
+Je kan `*{aantal}{string}` gebruiken om `string` `aantal` keer te herhalen.
+Dus `*{6}{c}` is hetzelfde als `cccccc`.
+Hier is de eerste tabel opnieuw met deze syntax:
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 
 \begin{document}
 \begin{tabular}{*{3}{l}}
-  Animal & Food  & Size   \\
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  Dier  & Voedsel & Grootte     \\
+  hond  & vlees   & middelgroot \\
+  paard & hooi    & groot       \\
+  kikker& vliegen & klein       \\
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-## Adding rules (lines)
+## Lijnen toevoegen
 
-A word of advice prior to introducing rules; lines should be used really
-sparsely in tables, and normally vertical ones look unprofessional. In fact,
-for professional tables you shouldn't use any of the standard lines; instead you
-should get familiar with the facilities of the `booktabs` package, which is why
-it is covered here first. For the sake of completeness the standard
-lines are shown in the [more-info](more-08) page.
+Vooraleer we lijnen introduceren: gebruik ze spaarzaam, vooral verticale, want die ogen snel onprofessioneel.
+Voor nette tabellen gebruik je het best het `booktabs`-pakket.
+Daarom behandelen we dat eerst.
+De standaardlijnen staan beschreven bij [Meer over dit onderwerp](more-08).
 
-`booktabs` provides four different types of lines. Each of those commands has to
-be used as the first thing in a row or following another rule.
-Three of the rule commands are: `\toprule`, `\midrule`, and
-`\bottomrule`. From their names the intended place of use should be clear:
+`booktabs` biedt vier soorten lijnen.
+Deze commando’s moeten altijd als eerste in een rij staan of na een andere lijn.
+Drie daarvan zijn: `\toprule`, `\midrule` en `\bottomrule`.
+Hun gebruik spreekt voor zich:
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -190,102 +176,98 @@ Three of the rule commands are: `\toprule`, `\midrule`, and
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Dier  & Voedsel & Grootte     \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
+  hond  & vlees   & middelgroot \\
+  paard & hooi    & groot       \\
+  kikker& vliegen & klein       \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-The fourth rule command provided by `booktabs` is `\cmidrule`. It can be used to
-draw a rule that doesn't span the entire width of the table but only a specified
-column range. A column range is entered as a number span: `{`_number_`-`_number_`}`.
-Even if you only want to draw the rule for a single
-column you need to specify that as a range (with both numbers matching).
+Het vierde commando van `booktabs` is `\cmidrule`.
+Dit tekent een lijn over de opgegeven kolommen in plaats van over de hele breedte van de tabel.
+Gebruik een bereik in de vorm `{`_kolomnummer_`-`_kolomnummer_`}`.
+Ook voor een enkele kolom moet je een bereik opgeven (namelijk tweemaal hetzelfde nummer).
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Dier  & Voedsel & Grootte     \\
   \midrule
-  dog    & meat  & medium \\
+  hond  & vlees   & middelgroot \\
   \cmidrule{1-2}
-  horse  & hay   & large  \\
+  paard & hooi    & groot       \\
   \cmidrule{1-1}
   \cmidrule{3-3}
-  frog   & flies & small  \\
+  kikker& vliegen & klein       \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-There is another useful feature of `\cmidrule`. You can shorten it on either end
-with an optional argument enclosed in parentheses:
+Je kan `\cmidrule` inkorten met een optioneel argument in haakjes:
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Dier  & Voedsel & Grootte     \\
   \midrule
-  dog    & meat  & medium \\
+  hond  & vlees   & middelgroot \\
   \cmidrule{1-2}
-  horse  & hay   & large  \\
+  paard & hooi    & groot       \\
   \cmidrule(r){1-1}
   \cmidrule(rl){2-2}
   \cmidrule(l){3-3}
-  frog   & flies & small  \\
+  kikker& vliegen & klein       \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You may have guessed that `r` and `l` mean the rule is shortened on its **r**ight
-and **l**eft end, respectively.
+`r` en `l` betekenen dat de lijn **r**echts of **l**inks wordt ingekort.
 
-Sometimes a rule would be too much of a separation for two rows but to get
-across the meaning more clearly you want to separate them by some means. In this
-case you can use `\addlinespace` to insert a small skip.
+Soms is een lijn te veel scheiding, maar wil je regels toch visueel onderscheiden.
+Gebruik dan `\addlinespace` voor wat bijkomende witruimte:
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
 \begin{document}
 \begin{tabular}{cp{9cm}}
   \toprule
-  Animal & Description \\
+  Dier & Beschrijving \\
   \midrule
-  dog    & The dog is a member of the genus Canis, which forms part of the
-           wolf-like canids, and is the most widely abundant terrestrial
-           carnivore. \\
+  hond & De hond is een lid van het geslacht Canis, dat deel uitmaakt van de
+         hondachtigen, en is het meest voorkomende landroofdier. \\
   \addlinespace
-  cat    & The cat is a domestic species of small carnivorous mammal. It is the
-           only domesticated species in the family Felidae and is often referred
-           to as the domestic cat to distinguish it from the wild members of the
-           family. \\
+  kat  & De kat is een gedomesticeerde soort van kleine vleesetende zoogdieren.
+         Het is de enige gedomesticeerde soort in de familie Felidae en wordt vaak de huiskat genoemd om haar te onderscheiden van de wilde soorten. \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -293,23 +275,23 @@ case you can use `\addlinespace` to insert a small skip.
 <!-- {% endraw %} -->
 
 
-## Merging cells
+## Cellen samenvoegen
 
-In LaTeX you can merge cells horizontally by using the `\multicolumn` command. It
-has to be used as the first thing in a cell. `\multicolumn` takes three
-arguments:
+In LaTeX kan je cellen horizontaal samenvoegen met `\multicolumn`.
+Gebruik het als eerste in een cel.
+Het verwacht drie argumenten:
 
-1. The number of cells which should be merged
-2. The alignment of the merged cell
-3. The contents of the merged cell
+1. Het aantal te combineren cellen
+2. De uitlijning van de samengevoegde cel
+3. De inhoud van de samengevoegde cel
 
-The alignment can contain anything legal in a `tabular`'s preamble, but _only a
-single column type_.
+De uitlijning kan alles bevatten wat ook in de preambule van `tabular` mag, maar _slechts één kolomtype_.
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -317,75 +299,71 @@ single column type_.
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Animal & Food  & Size   \\
+  Dier           & Voedsel & Grootte            \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
-  fuath  & \multicolumn{2}{c}{unknown} \\
+  hond           & vlees   & middelgroot        \\
+  paard          & hooi    & groot              \\
+  kikker         & vliegen & klein              \\
+  blauwbilgorgel & \multicolumn{2}{c}{onbekend} \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-You can also use `\multicolumn` on a single cell to prevent the
-application of whatever you defined in the table preamble for the
-current column.  The following uses this method to center the
-table's head row:
-
+Je kan `\multicolumn` ook gebruiken voor een enkele cel om speciale opmaak van de tabelpreambule te vermijden.
+Hiermee centreer je bijvoorbeeld de kopregel:
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 \usepackage{booktabs}
-
 
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  \multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Food} & \multicolumn{1}{c}{Size} \\
+  \multicolumn{1}{c}{Dier} & \multicolumn{1}{c}{Voedsel} & \multicolumn{1}{c}{Grootte} \\
   \midrule
-  dog    & meat  & medium \\
-  horse  & hay   & large  \\
-  frog   & flies & small  \\
-  fuath  & \multicolumn{2}{c}{unknown} \\
+  hond           & vlees   & middelgroot        \\
+  paard          & hooi    & groot              \\
+  kikker         & vliegen & klein              \\
+  blauwbilgorgel & \multicolumn{2}{c}{onbekend} \\
   \bottomrule
 \end{tabular}
 \end{document}
 ```
 <!-- {% endraw %} -->
 
-Merging cells vertically isn't supported by LaTeX.
-Usually it suffices to leave cells empty to give the reader the
-correct idea of what was meant without explicitly making cells span rows.
+Verticale samenvoeging van cellen wordt niet ondersteund in LaTeX.
+Meestal kan je gewoon cellen leeg laten om je opzet duidelijk te maken aan de lezer zonder effectief een cel over verschillende regels te hebben.
 
 <!-- {% raw %} -->
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{array}
 \usepackage{booktabs}
-
 
 \begin{document}
 \begin{tabular}{lll}
   \toprule
-  Group     & Animal & Size   \\
+  Groep     & Dier   & Grootte     \\
   \midrule
-  herbivore & horse  & large  \\
-            & deer   & medium \\
-            & rabbit & small  \\
+  herbivoor & paard  & groot       \\
+            & hert   & middelgroot \\
+            & konijn & klein       \\
   \addlinespace
-  carnivore & dog    & medium \\
-            & cat    & small  \\
-            & lion   & large  \\
+  carnivoor & hond   & middelgroot \\
+            & kat    & klein       \\
+            & leeuw  & groot       \\
   \addlinespace
-  omnivore  & crow   & small  \\
-            & bear   & large  \\
-            & pig    & medium \\
+  omnivoor  & kraai  & klein       \\
+            & beer   & groot       \\
+            & varken & middelgroot \\
   \bottomrule
 \end{tabular}
 \end{document}
@@ -393,9 +371,9 @@ correct idea of what was meant without explicitly making cells span rows.
 <!-- {% endraw %} -->
 
 
-## Exercises
+## Oefeningen
 
-Use the simple table example to start experimenting with tables. Try out
-different alignments using the `l`, `c` and `r` column types. What happens if
-you have too few items in a table row? How about too many? Experiment with the
-`\multicolumn` command to span across columns.
+Gebruik het eenvoudige tabelvoorbeeld om te experimenteren met tabellen.
+Probeer verschillende uitlijningen met `l`, `c` en `r`.
+Wat gebeurt er als je te weinig of te veel items in een rij hebt?
+Experimenteer met het `\multicolumn`-commando om kolommen samen te voegen.
