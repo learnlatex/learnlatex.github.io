@@ -22,7 +22,7 @@ Zet dus het volgende in je preambule en we kunnen beginnen:
 {: .noedit :}
 
 Om een `tabular` te zetten, moeten we LaTeX vertellen hoeveel kolommen er nodig zijn en hoe ze moeten worden uitgelijnd.
-Dit gebeurt in een verplicht argument &ndash; vaak tabelpreambule genoemd &ndash; van de `tabular`-omgeving, waarin je de kolommen specificeert met namen die uit één letter bestaan, preambule-tokens genaamd.
+Dit gebeurt in een verplicht argument &ndash; vaak tabelpreambule genoemd &ndash; van de `tabular`-omgeving, waarin je de kolommen specificeert met namen die uit één letter bestaan, preambulesymbolen genaamd.
 De beschikbare kolomtypes zijn:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
@@ -38,7 +38,7 @@ De beschikbare kolomtypes zijn:
 | `w{uitlijning}{breedte}` | drukt de inhoud af met een vaste `breedte` en overschrijdt de kolom als die te klein is. Je kan de horizontale uitlijning kiezen met `l`, `c` of `r`. |
 | `W{uitlijning}{breedte}` | zoals `w`, maar geeft een waarschuwing bij te brede inhoud. |
 
-Daarnaast zijn er nog een paar andere preambuletokens beschikbaar die geen kolom definiëren maar toch handig kunnen zijn:
+Daarnaast zijn er nog een paar andere preambulesymbolens beschikbaar die geen kolom definiëren maar toch handig kunnen zijn:
 
 <!-- don't line wrap this table, markdown seems to not support this -->
 
