@@ -1,29 +1,33 @@
 ---
 layout: "lesson"
 lang: "el"
-title: "Basic LaTeX document structure"
-description: "This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX."
-toc-anchor-text: "Document structure"
-toc-description: "The basic structure of a document."
+title: "Βασική δομή εγγράφου LaTeX"
+description: "Αυτό το μάθημα παρουσιάζει τη βασική δομή ενός εγγράφου LaTeX και πώς να το μεταγλωττίσετε σε ένα αρχείο PDF, καθώς και τους κύριους ειδικούς χαρακτήρες που χρησιμοποιούνται για τον έλεγχο του LaTeX."
+toc-anchor-text: "Δομή εγγράφου"
+toc-description: "Η βασική δομή ενός εγγράφου."
 ---
 
-# LaTeX document structure
+# Δομή εγγράφου LaTeX
 
 <span
-  class="summary">This lesson shows the basic structure of a LaTeX document, and how to build it into a PDF file, as well as the main special characters used to control LaTeX.</span>
+  class="summary">Αυτό το μάθημα παρουσιάζει τη βασική δομή ενός εγγράφου LaTeX και πώς να το μεταγλωττίσετε σε ένα αρχείο PDF, καθώς και τους κύριους ειδικούς χαρακτήρες που χρησιμοποιούνται για τον έλεγχο του LaTeX.</span>
 
-Your first LaTeX document is going to be very simple: the idea is to show you
-how a document looks and how to typeset it successfully. It is also your
-first chance to see [how to use the examples](help) here on `learnlatex.org`.
+Το πρώτο σας έγγραφο LaTeX θα είναι πολύ απλό: η ιδέα είναι να σας δείξουμε πώς
+είναι ένα έγγραφο και πώς να το στοιχειοθετήσετε επιτυχώς. Επίσης, είναι η
+πρώτη σας ευκαιρία να δείτε [πώς να χρησιμοποιείτε τα παραδείγματα](help) εδώ στο `learnlatex.org`.
 
-If you are using a local LaTeX installation, in your editor create a new file
-called `first.tex`, and either copy–paste the text below or type it in.
+Αν χρησιμοποιείτε μία τοπική εγκατάσταση LaTeX, δημιουργήστε ένα νέο αρχείο στον
+επεξεργαστή κειμένου σας με το όνομα `first.tex`, και είτε αντιγράψτε και επικολλήστε
+το παρακάτω κείμενο είτε πληκτρολογήστε το.
 
-If you are using the online system, you can just click on the ‘Run at TeXLive.net’
-or ‘Open in Overleaf’ buttons in the example to try it out!
+Αν χρησιμοποιείτε μία διαδικτυακή υπηρεσία, μπορείτε απλώς να κάνετε κλικ σε ένα
+από τα κουμπιά «Τρέξιμο στο TeXLive.net» ή «Άνοιγμα στο Overleaf» κάτω από το
+παράδειγμα για να το δοκιμάσετε!
 
 <p
-  class="hint">We suggest you try out the online options even if you have set up LaTeX locally; this is a good chance to see how the different options work.</p>
+  class="hint">Σας προτείνουμε να δοκιμάσετε τις διαδικτυακές υπηρεσίες
+  ακόμη και αν έχετε εγκαταστήσει τοπικά το LaTeX&#903; είναι μια καλή ευκαιρία
+  να δείτε πώς λειτουργούν οι διαφορετικές επιλογές.</p>
 
 ```latex
 \documentclass{article}
@@ -36,70 +40,72 @@ This is a first document.
 \end{document}
 ```
 
-Save the file and typeset it to a PDF document; if you are using a local LaTeX
-installation, the exact button to press will depend on the editor you have
-picked. You should get a PDF file that contains the text above _plus_ a page
-number; LaTeX adds that automatically.
+Αποθηκεύστε το αρχείο και στοιχειοθετήστε το σε ένα έγγραφο PDF. Αν χρησιμοποιείτε
+μία τοπική εγκατάσταση LaTeX, το ακριβές κουμπί που πρέπει να πατήσετε
+εξαρτάται από τον επεξεργαστή κειμένου που έχετε επιλέξει. Θα πρέπει να λάβετε
+ένα αρχείο PDF που περιέχει το παραπάνω κείμενο _και_ έναν αριθμό σελίδας&#903; το
+LaTeX τον προσθέτει αυτόματα.
 
-View the output `first.pdf` with whatever program you prefer for PDF viewing.
-Looks great; congratulations!
+Δείτε το παραγόμενο `first.pdf` με οποιοδήποτε πρόγραμμα προτιμάτε για την προβολή
+αρχείων PDF.
+Φαίνεται θαυμάσιο&#903; συγχαρητήρια!
 
-If you want to get HTML rather than PDF output, take a look at the
-[help](./help) for how you can do that.
+Αν θέλετε να παράξετε HTML αντί για PDF, δείτε την
+[βοήθεια](./help) για το πώς μπορείτε να το κάνετε αυτό.
 
-## Handling errors
+## Χειρισμός σφαλμάτων
 
-Errors happen.
-Check that you have entered each line in the text file exactly as written above.
-Sometimes seemingly small input changes give large changes in the
-result, including causing a document to not work.
-If you are stuck, try erasing the document and copying it fresh from the
-lines above.
+Σφάλματα συμβαίνουν. Ελέγξτε ότι έχετε εισαγάγει κάθε γραμμή στο αρχείο κειμένου
+ακριβώς όπως είναι γραμμένη παραπάνω. Μερικές φορές, φαινομενικά μικρές αλλαγές
+στην είσοδο δίνουν μεγάλες αλλαγές στο αποτέλεσμα, ή και κάνουν το έγγραφο
+να μην λειτουργεί. Αν κολλήσετε, δοκιμάστε να διαγράψετε το έγγραφο και να το
+αντιγράψετε εξαρχής από τις παραπάνω γραμμές.
 
-If your LaTeX typesetting run ends with a question mark then you can get out by
-typing `x` and `<Enter>`.
+Αν το τρέξιμο του LaTeX τελειώσει με ένα αγγλικό ερωτηματικό, μπορείτε να 
+τερματίσετε την εκτέλεση πληκτρολογώντας `x` και `<Enter>`.
 
-LaTeX's error messages try to be helpful, but they are not the same as messages
-in word processors. Some editors also make it hard to see the 'full' text of an
-error, which can hide key details. LaTeX always creates a log of what it is
-doing; this is a text file ending in `.log`. You can always see the full  error
-messages there, and if you have a problem, expert LaTeX users will often ask for a
-copy of your log file.
+Τα μηνύματα σφάλματος του LaTeX προσπαθούν να είναι χρήσιμα, αλλά δεν είναι τα ίδια με τα μηνύματα
+σε κειμενογράφους. Ορισμένοι επεξεργαστές κειμένου καθιστούν επίσης δύσκολο να δείτε το «πλήρες» κείμενο ενός
+σφάλματος, κάτι που μπορεί να κρύψει βασικές λεπτομέρειες. Το LaTeX δημιουργεί πάντα ένα αρχείο καταγραφής 
+με όσα κάνει&#903; αυτό είναι ένα αρχείο κειμένου που τελειώνει σε `.log`. Μπορείτε πάντα να δείτε τα πλήρη μηνύματα
+σφάλματος εκεί, και αν έχετε πρόβλημα, οι έμπειροι χρήστες του LaTeX μπορεί να ζητήσουν ένα
+αντίγραφο του αρχείου καταγραφής σας.
 
 <p
-  class="hint">We cover more about dealing with errors in <a href="./lesson-15">lesson 15</a>.</p>
+  class="hint">Καλύπτουμε περισσότερα σχετικά με την αντιμετώπιση σφαλμάτων στο <a href="./lesson-15">μάθημα 15</a>.</p>
 
-## What you've got
+## Τι έχουμε μέχρι στιγμής
 
-The first document shows the basics.
-LaTeX documents are a mixture of text and commands.
-The commands start with a backslash
-and sometimes have arguments in curly braces
-(or sometimes optional arguments in square brackets).
-Then you get an output PDF by telling LaTeX to typeset your file.
+Το πρώτο έγγραφο δείχνει τα βασικά.
+Τα έγγραφα LaTeX είναι ένα μείγμα κειμένου και εντολών.
+Οι εντολές ξεκινούν με μία ανάποδη κάθετο
+και μερικές φορές έχουν παραμέτρους σε άγκιστρα
+(ή μερικές φορές προαιρετικές παραμέτρους σε αγκύλες).
+Στη συνέχεια, λαμβάνετε ένα αρχείο PDF ζητώντας από το LaTeX να στοιχειοθετήσει το αρχείο σας.
 
-Every LaTeX document has a `\begin{document}` and a matching
-`\end{document}`.
-Between these two is the *document body*, where your content goes.
-Here the body has two paragraphs (in LaTeX you separate paragraphs
-with one or more blank lines).
-Before `\begin{document}` is the *document preamble*,
-which has code to set up the document layout.
-The `\usepackage` command is described in a [later lesson](lesson-06)
-it is used in most examples on this site to set up the font encoding.
+Κάθε έγγραφο LaTeX έχει μία εντολή `\begin{document}` και μία
+αντίστοιχη `\end{document}`.
+Ανάμεσα σε αυτές τις δύο είναι το *σώμα του εγγράφου*, όπου γράφετε το περιεχόμενό σας.
+Εδώ το σώμα έχει δύο παραγράφους (στο LaTeX χωρίζετε τις παραγράφους
+με μία ή περισσότερες κενές γραμμές).
+Πριν από το `\begin{document}` είναι το *προοίμιο του εγγράφου*,
+το οποίο έχει κώδικα για να ρυθμιστεί η διάταξη του εγγράφου.
+Η εντολή `\usepackage` περιγράφεται σε [επόμενο μάθημα](lesson-06)&#903; στα
+περισσότερα παραδείγματα σε αυτό τον ιστότοπο χρησιμοποιείται για να ρυθμιστεί
+η κωδικοποίηση της γραμματοσειράς.
 
-LaTeX has other `\begin{...}` and `\end{...}` pairs; these are
-called *environments*.
-You must match them so that for every `\begin{x}` there has to be an `\end{x}`.
-If you nest them, then you must have `\end{y} ... \end{x}` to match
-`\begin{x} ... \begin{y}`, i.e. the `\begin` and `\end` statements matching
-in order.
+Το LaTeX έχει και άλλα ζεύγη `\begin{...}` και `\end{...}`&#903; αυτά ονομάζονται
+*περιβάλλοντα*. Πρέπει να είναι ταιριασμένα έτσι ώστε για κάθε `\begin{x}`
+να υπάρχει ένα `\end{x}`. Αν τα εμφωλεύσετε, τότε πρέπει να έχετε `\end{y} ... \end{x}` 
+για να ταιριάξουν με `\begin{x} ... \begin{y}`, δηλαδή οι δηλώσεις `\begin` και
+`\end` να ταιριάζουν με τη σειρά.
 
-We can add comments to a LaTeX file by starting them with `%`; let's use
-that to show the structure:
+Μπορούμε να προσθέσουμε σχόλια σε ένα αρχείο LaTeX ξεκινώντας τα με `%`&#903; ας
+τα χρησιμοποιήσουμε για να δείξουμε τη δομή:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % A comment in the preamble
 \begin{document}
@@ -111,32 +117,38 @@ This is a new paragraph.
 \end{document}
 ```
 
-You can see above that we've got two paragraphs: notice the use of a blank  line
-to do that. Also notice that multiple spaces are treated as a single space.
+Μπορείτε να δείτε παραπάνω ότι έχουμε δύο παραγράφους: προσέξτε τη χρήση μίας
+κενής γραμμής για το σκοπό αυτό. Επίσης, προσέξτε ότι πολλαπλά κενά διαστήματα
+θεωρούνται ως ένα μόνο διάστημα.
 
-You might also sometimes want a 'hard' space that does not break over lines: in
-LaTeX we can create that using `~`, 'tying' two pieces of text together. That's
-particularly useful when we start creating cross-references later in the course.
+Μπορεί κάποιες φορές να χρειάζεστε ένα «σκληρό» κενό διάστημα που δεν χωρίζεται
+στο τέλος της γραμμής: στο LaTeX μπορούμε να το δημιουργήσουμε χρησμοποιώντας `~`,
+«ενώνοντας» δύο κομμάτια κειμένου μαζί. Αυτό θα φανεί ιδιαίτερα χρήσιμο όταν θα
+αρχίσουμε να δημιουργούμε αναφορές σε στοιχεία του κείμενου αργότερα στα μαθήματα.
 
-## Special characters
+## Ειδικοί χαρακτήρες
 
-You've probably spotted that ``\``, `{` and `}` have a special meaning to LaTeX.
-A ``\`` starts an instruction to LaTeX: a 'command'. The curly brace characters
- `{` and `}` are used to show _mandatory arguments_: information that commands
- require.
+Μάλλον έχετε ήδη καταλάβει ότι τα ``\``, `{` και `}` έχουν ειδική σημασία για το LaTeX.
+Ένα ``\`` ξεκινάει μία οδηγία για το LaTeX: μία «εντολή». Τα άγκιστρα
+`{` και `}` χρησιμοποιούνται για να δείξουν _υποχρεωτικά ορίσματα_: πληροφορίες
+που απαιτούνται για τις εντολές.
 
-There are some other characters with special meaning; we've just seen that `~`
-is a 'hard' space, for example. Almost all of these characters  are _very_
-uncommon in normal text, which is why they were chosen for special meanings.
-If you do need to show one of these special characters, we've put some
-[information in the further details page](more-03).
+Υπάρχουν και άλλοι χαρακτήρες με ειδική σημασία&#903; μόλις είδαμε ότι το `~` είναι
+ένα «σκληρό» κενό διάστημα, για παράδειγμα. Σχεδόν όλοι αυτοί οι χαρακτήρες είναι
+_πολύ_ σπάνιοι σε κανονικό κείμενο, γι' αυτό και επιλέχθηκαν για ειδικές σημασίες.
+Αν όντως χρειαστεί να εμφανίσετε έναν από αυτούς τους ειδικούς χαρακτήρες, παρέχουμε
+μερικές
+[πληροφορίες στη σελίδα με τις λεπτομέρειες](more-03).
 
-## Exercise
+## Άσκηση
 
-Experiment with the online editing and typesetting system; click the
-button to typeset the content, then edit it in the webpage and re-typeset it.
+Πειραματιστείτε με την διαδικτυακή υπηρεσία συγγραφής LaTeX&#903; κάντε κλικ
+στο κουμπί για να στοιχειοθετήσετε το περιεχόμενο, στη συνέχεια επεξεργαστείτε το
+στην ιστοσελίδα και ξαναστοιχειοθετήστε το.
 
-Try adding text to your first document, typesetting and seeing the changes in
-your PDF. Make some different paragraphs and add variable spaces. Explore how
-your editor works; click on your source and find how to go to the same line  in
-your PDF. Try adding some hard spaces and see how they influence line-breaking.
+Προσπαθήστε να προσθέσετε κείμενο στο πρώτο σας έγγραφο, να το στοιχειοθετήσετε
+και να δείτε τις αλλαγές στο PDF σας. Δημιουργήστε μερικές διαφορετικές παραγράφους
+και προσθέστε διάφορα κενά διαστήματα. Εξερευνήστε πώς λειτουργεί ο επεξεργαστής σας&#903; κάντε
+κλικ στο κείμενό σας και βρείτε πώς να πάτε στην ίδια γραμμή στο PDF σας. Δοκιμάστε
+να προσθέσετε μερικά «σκληρά» κενά διαστήματα και δείτε πώς επηρεάζουν τις
+αλλαγές γραμμών.
