@@ -325,4 +325,235 @@ C & D D D D D D D\\
 In tegenstelling tot de andere vormen die in deze lessen zijn besproken, moet `tabularx` de tabel meerdere keren zetten met proefbreedtes om de uiteindelijke opmaak te bepalen.
 Dit betekent dat er een aantal beperkingen zijn voor het gebruik van deze omgeving; zie de [pakketdocumentatie](https://texdoc.org/pkg/tabularx).
 
-## TODO Multi-page tables
+## Tabellen spreiden over meerdere pagina's
+
+Een `tabular` vormt een ondeelbaar blok en moet dus klein genoeg zijn om op één pagina te passen, en wordt vaak geplaatst in een zwevende `table`-omgeving.
+
+Verschillende pakketten bieden varianten met een vergelijkbare syntaxis die wél pagina-afbrekingen toestaan.
+Hier tonen we het `longtable`-pakket:
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage[paperheight=8cm,paperwidth=8cm]{geometry}
+\usepackage{array}
+\usepackage{longtable}
+\begin{document}
+\begin{longtable}{cc}
+\multicolumn{2}{c}{Een Lange Tabel}\\
+Linkerkant & Rechterkant\\
+\hline
+\endhead
+\hline
+\endfoot
+aa & bb\\  
+Invoer & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & bbb\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b\\  
+a & b b b b b b\\  
+a & b b b b b\\  
+a & b b\\  
+Een bredere invoer & b\\  
+\end{longtable}
+
+\end{document}
+```
+
+`longtable` is opmerkelijk omdat het de kolombreedtes behoudt over alle pagina’s van de tabel;
+om dit te bereiken zijn echter meerdere LaTeX-compilaties nodig, zodat brede inhoud die later in de tabel voorkomt ook eerdere kolombreedtes kan beïnvloeden.
+
+## Tabelnotities
+
+Het is vrij gebruikelijk om voetnootachtige markeringen in een tabel nodig te hebben die verwijzen naar notities onder de tabel.
+Het `threeparttable`-pakket vereenvoudigt de opmaak van dergelijke tabellen door de notities te plaatsen in een blok met dezelfde breedte als de tabel.
+Raadpleeg de [pakketdocumentatie](https://texdoc.org/pkg/threeparttable) voor alle details, maar we tonen hier een eenvoudig voorbeeld.
+
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage{array}
+\usepackage{threeparttable}
+\begin{document}
+
+\begin{table}
+\begin{threeparttable}
+   \caption{Een Voorbeeld}
+   \begin{tabular}{ll}
+    Een invoer & 42\tnote{1}\\
+    Nog een invoer & 24\tnote{2}\\
+   \end{tabular}
+   \begin{tablenotes}
+   \item [1] de eerste notitie.
+   \item [2] de tweede notitie.
+   \end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\end{document}
+```
+
+## Opmaak in smalle kolommen
+
+De standaardinstellingen voor regeleinden gaan uit van relatief lange regels om flexibiliteit te geven bij het kiezen van regeleinden.
+Het volgende voorbeeld toont enkele mogelijke benaderingen.
+De eerste tabel toont vergrote tussenwoordafstand en TeX waarschuwt voor ondervulde regels.
+Gebruik van `\raggedright` voorkomt dit probleem meestal, maar kan sommige regels ‘te rafelig’ maken.
+Het commando `\RaggedRight` uit het `ragged2e`-pakket is een compromis;
+het staat enige rafeligheid toe in regellengtes, maar zal ook afbreken waar nodig, zoals getoond in de derde tabel.
+
+Let op het gebruik van `\arraybackslash` hier, wat de definitie van `\\` herstelt zodat het de tabelrij correct afsluit.
+
+Een alternatieve techniek, zoals getoond in de vierde tabel, is het gebruik van een kleiner lettertype zodat de kolommen relatief breder zijn ten opzichte van de tekstgrootte.
+
+```latex
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage{array}
+\usepackage{ragged2e}
+\begin{document}
+
+\begin{table}
+
+\begin{tabular}[t]{lp{3cm}}
+Eén & Een lange tekst in een smalle paragraaf, met nog wat voorbeeldtekst.\\
+Twee & Een andere lange tekst in een smalle paragraaf, met moeilijk af te breken woorden.
+\end{tabular}%
+\begin{tabular}[t]{l>{\raggedright\arraybackslash}p{3cm}}
+Eén & Een lange tekst in een smalle paragraaf, met nog wat voorbeeldtekst.\\
+Twee & Een andere lange tekst in een smalle paragraaf, met moeilijk af te breken woorden.
+\end{tabular}%
+\begin{tabular}[t]{l>{\RaggedRight}p{3cm}}
+Eén & Een lange tekst in een smalle paragraaf, met nog wat voorbeeldtekst.\\
+Twee & Een andere lange tekst in een smalle paragraaf, met moeilijk af te breken woorden.
+\end{tabular}
+
+\footnotesize
+\begin{tabular}[t]{lp{3cm}}
+Eén & Een lange tekst in een smalle paragraaf, met nog wat voorbeeldtekst.\\
+Twee & Een andere lange tekst in een smal tekstblok, met moeilijk af te breken woorden.
+\end{tabular}
+
+\end{table}
+
+\end{document}
+```
+
+## Nieuwe kolomtypes definiëren
+
+Zoals aangetoond in de [hoofdles](lesson-08), laat het `array`-pakket constructies toe zoals `>{\bfseries}c` om een vetgedrukte gecentreerde kolom aan te duiden. Het is vaak handig om een nieuw kolomtype te definiëren om dergelijk gebruik te kapselen, bijvoorbeeld:
+
+```latex
+\newcolumntype{B}{>{\bfseries}c}
+```
+zou het mogelijk maken om `B` te gebruiken in tabelpreambules om een vetgedrukte gecentreerde kolom aan te geven.
+
+## Verticale trucs
+
+Vaak is het beter om in plaats van een cel meerdere rijen te laten beslaan, een enkele rij te gebruiken waarbij sommige cellen verticaal gesplitst worden met geneste `tabular`-omgevingen.
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage{array}
+\usepackage{booktabs}
+
+\begin{document}
+\begin{tabular}{lcc}
+  \toprule
+  Test & \begin{tabular}{@{}c@{}}A\\a\end{tabular} & \begin{tabular}{@{}c@{}}B\\b\end{tabular} \\
+  \midrule
+  Inhoud & staat & hier \\
+  Inhoud & staat & hier \\
+  Inhoud & staat & hier \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+Merk op dat je verticale uitlijning kan regelen via een optioneel argument van `tabular`;
+het ondersteunt het gebruik van `t`, `c` of `b` voor respectievelijk bovenaan, gecentreerd of onderaan uitgelijnd, en wordt zo gebruikt:
+
+<!-- {% raw %} -->
+```latex
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage{array}
+\usepackage{booktabs}
+
+\begin{document}
+\begin{tabular}{lcc}
+  \toprule
+  Test & \begin{tabular}[b]{@{}c@{}}A\\a\end{tabular} & \begin{tabular}[t]{@{}c@{}}B\\b\end{tabular} \\
+  \midrule
+  Inhoud & staat & hier \\
+  Inhoud & staat & hier \\
+  Inhoud & staat & hier \\
+  \bottomrule
+\end{tabular}
+\end{document}
+```
+<!-- {% endraw %} -->
+
+## Regelafstand in tabellen
+
+In de hoofdles toonden we `\addlinespace` uit het `booktabs`-pakket, wat handig is om extra ruimte tussen specifieke regels toe te voegen.
+
+Er zijn twee algemene parameters die de regelafstand regelen: `\arraystretch` en `\extrarowheight` (de laatste uit het `array`-pakket).
+
+```latex
+\renewcommand\arraystretch{1.5}
+```
+
+zal de basislijnafstand met 50% verhogen.
+
+
+Vaak, vooral bij gebruik van `\hline`, is het beter om alleen de hoogte van rijen te vergroten, zonder hun diepte onder de basislijn te vergroten.
+Het volgende voorbeeld toont de parameter `\extrarowheight`.
+
+```latex
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage{array}
+\begin{document}
+
+
+\begin{center}
+\begin{tabular}{cc}
+\hline
+Kwadraat & $x^2$\\
+\hline
+Kubisch & $x^3$\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\setlength\extrarowheight{2pt}
+\begin{tabular}{cc}
+\hline
+Kwadraat & $x^2$\\
+\hline
+Kubisch & $x^3$\\
+\hline
+\end{tabular}
+\end{center}
+\end{document}
+```
