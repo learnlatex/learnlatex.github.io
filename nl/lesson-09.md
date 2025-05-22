@@ -1,98 +1,82 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "Cross-referencing"
-description: "This lesson shows how to refer to numbered elements in a document, like figures, tables and sections."
-toc-anchor-text: "Cross-referencing"
-toc-description: "Refering to figures, tables, etc."
+title: "Kruisverwijzingen"
+description: "Deze les laat zien hoe je kan verwijzen naar genummerde elementen in een document, zoals figuren, tabellen en secties."
+toc-anchor-text: "Kruisverwijzingen"
+toc-description: "Verwijzen naar figuren, tabellen, enz."
 ---
 
-# Cross-referencing
+# Kruisverwijzingen
 
 <span
-  class="summary">This lesson shows how to refer to numbered elements in a document, like figures, tables and sections.</span>
+  class="summary">Deze les laat zien hoe je kan verwijzen naar genummerde elementen in een document, zoals figuren, tabellen en secties.</span>
 
-When you are writing a document of any length, you'll want to refer to numbered
-items such as figures, tables or equations. Luckily, LaTeX can automatically add
-the right numbers; we just have to set things up. 
+Wanneer je een document van een zekere lengte schrijft, wil je waarschijnlijk verwijzen naar genummerde items zoals figuren, tabellen of vergelijkingen.
+Gelukkig kan LaTeX automatisch de juiste nummers toevoegen; 
+we hoeven alles alleen maar goed in te stellen.
 
-## The `\label` and `\ref` mechanism
+## Het `\label`- en `\ref`-mechanisme
 
-To have LaTeX remember a spot in your document you have to label it, and then 
-in other places, you refer to it.
+Om LaTeX een plek in je document te laten onthouden, moet je deze labelen, en er vervolgens op andere plekken naar verwijzen.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{fontenc}
 
 \begin{document}
-Hey world!
+Hallo wereld!
 
-This is a first document.
+Dit is een eerste document.
 
-\section{Title of the first section}
+\section{Titel van de eerste sectie}
 
-Text of material for the first section.
+Wat tekst in de eerste sectie.
 
+\subsection{Subsectie van de eerste sectie}
+\label{subsec:label-een}
 
-\subsection{Subsection of the first section}
-\label{subsec:labelone}
-
-Text of material for the first subsection.
+Wat tekst in de eerste subsectie.
 \begin{equation}
   e^{i\pi}+1 = 0
-\label{eq:labeltwo}
+\label{eq:label-twee}
 \end{equation}
 
-In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}.
+In subsectie~\ref{subsec:label-een} staat vergelijking~\ref{eq:label-twee}.
 \end{document}
 ```
 
-There are two `\label{...}` commands, one after the subsection
-and one inside the equation environment.
-They are associated with the last sentence's `\ref{...}` commands.
-When you run LaTeX, it saves information about the labels to an auxiliary file.
-For `\label{subsec:labelone}`, LaTeX knows that it is now in a subsection and
-so it saves the subsection's number.
-For `\label{eq:labeltwo}`, LaTeX knows that the most recent environment
-of interest is an equation so it saves the information for that equation.
-When you ask for the reference, LaTeX gets it from the auxiliary file.
+Er zijn twee `\label{...}`-commando’s, één na de subsectie en één binnen de vergelijkingomgeving.
+Ze worden geassocieerd met de `\ref{...}`-commando’s in de laatste zin.
+Wanneer je LaTeX uitvoert, slaat het informatie over de labels op in een hulplbestand.
+Voor `\label{subsec:label-een}` weet LaTeX dat het zich op dat moment in een subsectie bevindt en slaat dus het nummer van de subsectie op.
+Voor `\label{eq:label-twee}` weet LaTeX dat de meest recente relevante omgeving een vergelijking is, en slaat die informatie op.
+Wanneer je om de verwijzing vraagt, haalt LaTeX die uit het hulpbestand.
 
-The `subsec:` and `eq:` aren't used by LaTeX;
-rather, it just keeps track of what it has most
-recently processed.
-But when you are writing these help you remember what the label
-is about.
+De prefixen `subsec:` en `eq:` worden niet door LaTeX gebruikt; 
+ze helpen jou als schrijver te onthouden waar het label over gaat.
 
-You may see references that show in an output PDF
-as boldface double question marks, **??**.
-The explanation is that because of this auxiliary file work,
-the first time that you compile a document the label has not
-yet been saved.
-Run LaTeX one more time and you'll be all set.
-(Usually while writing you will run LaTeX several times anyway,
-so in practice this is not a bother.)
+Je kan verwijzingen tegenkomen in een PDF-uitvoer die verschijnen als vetgedrukte dubbele vraagtekens, **??**.
+Dat komt doordat het label bij de eerste compilatie van het document nog niet is opgeslagen in het hulpbestand.
+Voer LaTeX nogmaals uit en alles zal goed zijn.
+(Meestal voer je LaTeX tijdens het schrijven meerdere keren uit, dus in de praktijk is dit geen probleem.)
 
-Notice the tilde (`~`) characters before the references.
-You don't want a line break between `subsection` and its number, or
-between `equation` and its number.
-Putting in a tilde means LaTeX won't break the line there.
+Let op de tilde (`~`) vóór de verwijzingen.
+Je wil geen regeleinde tussen `subsectie` en het nummer, of tussen `vergelijking` en het nummer.
+Een tilde zorgt ervoor dat LaTeX de regel daar niet afbreekt.
 
-## Where to put `\label`
+## De plaatsing van een `\label`
 
-The `\label` command always refers to the previous numbered entity:
-a section, an equation, a float, etc. That means that `\label` always has to
-come _after_ the thing you want to refer to. In particular, when you create
-floats, the `\label` has to come _after_ (or better, in), the `\caption` command,
-but within the float environment.
+Het `\label`-commando verwijst altijd naar het laatst genummerde element: een sectie, een vergelijking, een float, enzovoort.
+Dat betekent dat `\label` altijd _na_ het element moet komen waar je naar wil verwijzen.
+In het bijzonder, wanneer je floats maakt, moet het `\label` _na_ (of nog beter: _in_) het `\caption`-commando geplaatst worden, maar wel binnen de floatomgeving.
 
-## Exercises
+## Oefeningen
 
-Try adding new numbered parts (sections, subsections, enumerated lists) to
-the test document and finding out how many runs are needed to make `\label`
-commands work.
+Probeer nieuwe genummerde onderdelen toe te voegen (secties, subsecties, genummerde lijsten) aan het testdocument en kijk hoeveel keer je LaTeX moet uitvoeren om de `\label`-commando’s correct te laten werken.
 
-Add some floats and see what happens when you put `\label` _before_ the
-`\caption` instead of after; can you predict the result?
+Voeg een aantal floats toe en kijk wat er gebeurt als je `\label` _voor_ het `\caption`-commando zet in plaats van erna;
+kan je het resultaat voorspellen?
 
-What happens if you put a `\label` for an equation _after_ the `\end{equation}`?
+Wat gebeurt er als je een `\label` van een vergelijking _na_ `\end{equation}` plaatst?
