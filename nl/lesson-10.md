@@ -1,181 +1,156 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "Mathematics"
-description: "This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math."
-toc-anchor-text: "Mathematics"
-toc-description: "Math mode and mathematical notation."
+title: "Wiskunde"
+description: "Deze les toont de wiskundemodus van LaTeX en hoe je wiskunde binnen een regel of als alleenstaande vergelijking zet, de uitbreidingen van het amsmath-pakket, en hoe je lettertypes in wiskunde wijzigt."
+toc-anchor-text: "Wiskunde"
+toc-description: "Wiskundemodus en wiskundige notatie."
 ---
 
-# Mathematics
+# Wiskunde
 
 <span
-  class="summary">This lesson presents LaTeX's math mode and how you can type inline and display formulas, the extensions provided by the `amsmath` package, and how to change fonts in math.</span>
+  class="summary">Deze les toont de wiskundemodus van LaTeX en hoe je wiskunde binnen een regel of als alleenstaande vergelijking zet, de uitbreidingen van het amsmath-pakket, en hoe je lettertypes in wiskunde wijzigt.</span>
 
-Typesetting complex mathematics is one of the greatest strengths of LaTeX. You
-can mark up mathematics in a logical way in what is known as 'math mode'.
+Het opmaken van complexe wiskunde is een van de sterkste punten van LaTeX.
+Je kan wiskunde logisch opmaken in wat bekendstaat als 'wiskundemodus' ('math mode').
 
-## Math mode
+## Wiskundemodus
 
-In math mode, spaces are ignored and the correct spacing between characters is
-(almost always) applied.
+In wiskundemodus worden spaties genegeerd en wordt de correcte afstand tussen tekens (bijna altijd) automatisch toegepast.
 
-There are two forms of math mode:
+Er zijn twee vormen van de wiskundemodus:
 
-* inline
-* display
+* binnen een regel (inline)
+* weergave (display)
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
-A sentence with inline mathematics: $y = mx + c$.
-A second sentence with inline mathematics: $5^{2}=3^{2}+4^{2}$.
+Een zin met inlinewiskunde: $y = mx + c$.
+Een tweede zin met inlinewiskunde: $5^{2}=3^{2}+4^{2}$.
 
-
-A second paragraph containing display math.
+Een tweede paragraaf met weergavewiskunde.
 \[
   y = mx + c
 \]
-See how the paragraph continues after the display.
+Merk op hoe de paragraaf verdergaat na de weergave.
 \end{document}
 ```
 
-You may see 'LaTeX-like' mathematical input in other places, for example
-the MathJax system for placing equations in web pages. These systems often
-accept slight variations on LaTeX's syntax as they do not actually use LaTeX
-'behind the scenes'.
+Je kan 'LaTeX-achtige' wiskundige invoer ook op andere plaatsen tegenkomen, bijvoorbeeld in het MathJax-systeem voor het tonen van vergelijkingen op webpagina's.
+Deze systemen accepteren vaak kleine variaties op de LaTeX-syntaxis omdat ze LaTeX niet daadwerkelijk op de achtergrond gebruiken.
 
 <p
-  class="hint">Our examples are all <i>correct</i> LaTeX. If you see something different in
-another context, it might be because the example is not really using LaTeX.</p>
+  class="hint">Onze voorbeelden zijn allemaal <i>correcte</i> LaTeX. Als je iets anders ziet in een andere context, kan dat zijn omdat het voorbeeld niet echt LaTeX gebruikt.</p>
 
-### Inline math mode and mathematical notation
+### Inlinewiskundemodus en wiskundige notatie
 
-As you can see above, inline math mode is marked using a pair of dollar
-symbols (`$...$`). It is also possible to use the notation `\( ... \)`.
-Simple expressions are entered without any special markup, and you'll see
-that the math is spaced out nicely and has letters in italic.
+Zoals je hierboven kan zien, wordt inlinewiskundemodus gemarkeerd met een paar dollartekens (`$...$`).
+Het is ook mogelijk om de notatie `\( ... \)` te gebruiken.
+Eenvoudige expressies worden ingevoerd zonder speciale opmaak, en je ziet dat de wiskunde mooi gespatieerd wordt met cursieve letters.
 
-Inline math mode restricts vertical size of the expression so that as
-far as possible the formula does not disturb the linespacing of the
-paragraph.
+Inlinewiskundemodus beperkt de verticale grootte van de expressie, zodat de formule de regelafstand van de paragraaf zo min mogelijk verstoort.
 
-Note that _all_ mathematics should be marked up as math, even if it is
-a single character  use `... $2$ ...`   not `... 2 ...` otherwise, for
-example, when you need a negative number and need math to get a minus
-sign the `... $-2$ ...` may use math digits which may not be the same
-font as the text digits (depending on the document class).
-Conversely
-beware of math mode constructs appearing in plain text copied from
-elsewhere such as  monetary values using `$` or filenames using `_` (which
-may be marked up as `\$` and `\_` respectively).
+Let op dat _alle_ wiskunde gemarkeerd moet worden als wiskunde, zelfs als het om één teken gaat – gebruik `... $2$ ...` en niet `... 2 ...`;
+anders kan het gebeuren dat wanneer je bijvoorbeeld een negatief getal nodig hebt en een minteken uit de wiskunde gebruikt, `... $-2$ ...` wiskundecijfers gebruikt die misschien niet hetzelfde lettertype hebben als de tekstcijfers (afhankelijk van de documentklasse).
+Let omgekeerd ook op wiskundestructuren in gewone tekst die ergens vandaan zijn gekopieerd, zoals geldbedragen met `$` of bestandsnamen met `_` (die respectievelijk moeten worden gemarkeerd als `\$` en `\_`).
 
-We can easily add superscripts and subscripts; these are marked using `^` and
-`_`, respectively.
+We kunnen eenvoudig superscripts en subscripts toevoegen;
+deze worden respectievelijk gemarkeerd met `^` en `_`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
-Superscripts $a^{b}$ and subscripts $a_{b}$.
+Superscripts $a^{b}$ en subscripts $a_{b}$.
 \end{document}
 ```
 
-(You might see examples where simple super- and subscripts are entered without
-braces, but that is not the official syntax and can go wrong; always use
-braces.)
+(Je ziet soms voorbeelden waar eenvoudige super- en subscripts zonder accolades worden ingevoerd, maar dat is geen officiële syntaxis en kan fout gaan; gebruik altijd accolades.)
 
-There are a _lot_ of specialist math mode commands. Some of them are quite
-easy, for example `\sin` and `\log` for sine and logarithm or `\theta` for the
-Greek letter.
+Er zijn _veel_ gespecialiseerde commando’s voor de wiskundemodus.
+Sommige zijn vrij eenvoudig, zoals `\sin` en `\log` voor sinus en logaritme, of `\theta` voor de Griekse letter.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
-Some mathematics: $y = 2 \sin \theta^{2}$.
+Wat wiskunde: $y = 2 \sin \theta^{2}$.
 \end{document}
 ```
 
-We cannot cover all the standard LaTeX math mode commands here, but there are
-many online resources listing the standard set. You can look up commands for
-math mode symbols using the
-[Detexify](https://detexify.kirelabs.org/classify.html) tool.
+We kunnen hier niet alle standaardcommando’s voor wiskundemodus behandelen, maar er zijn veel online bronnen die de ze vermelden.
+Je kan commando’s voor wiskundige symbolen opzoeken via [Detexify](https://detexify.kirelabs.org/classify.html).
 
+### Weergavewiskunde
 
-### Display mathematics
+Je kan exact dezelfde commando’s gebruiken voor weergavewiskunde als voor inlinewiskunde.
+Weergavewiskunde is standaard gecentreerd en bedoeld voor grotere vergelijkingen die ‘onderdeel van een paragraaf’ zijn.
+Let erop dat wiskunde in weergave geen paragraafeinde toestaat binnen de vergelijking, dus je mag geen lege regels binnen de bron van de wiskunde plaatsen.
 
-You can use exactly the same commands for display math mode as for
-inline work. Display math mode is set centered by default and is meant
-for larger equations that are 'part of a paragraph'. Note that
-display math environments do not allow a paragraph to end within the
-mathematics, so you may not have blank lines within the source of the
-display.
+De paragraaf moet altijd _voorafgaand_ aan de wiskundige weergave beginnen, dus laat geen lege regel vóór de weergavewiskunde-omgeving.
+Als je meerdere regels wiskunde nodig hebt, gebruik dan niet opeenvolgende weergave-omgevingen (dit zorgt voor inconsistente afstand);
+gebruik in plaats daarvan een meerregelige weergaveomgeving zoals `align` uit het `amsmath`-pakket dat later wordt besproken.
 
-The paragraph should always be started _before_ the display so do not
-leave a blank line before the display math environment. If you need
-several lines of mathematics, do not use consecutive display math
-environments (this produces inconsistent spacing); use one of the
-multi-line display environments such as `align` from the `amsmath`
-package described later.
-
-It's particularly useful for integrations, for example:
+Het is vooral handig voor integralen, bijvoorbeeld:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
-A paragraph about a larger equation
+Een paragraaf over een grotere vergelijking
 \[
 \int_{-\infty}^{+\infty} e^{-x^2} \, dx
 \]
 \end{document}
 ```
 
-Notice here how sub-/superscript notation is used to set the limits on the
-integration.
+Let hier op hoe sub- en superscripts worden gebruikt om de grenzen van de integraal aan te geven.
 
-We've added one piece of manual spacing here: `\,` makes a thin space before the
-`dx`.
-Formatting of the differential operator varies: some publishers use an upright
-'d' whilst others use an italic '_d_'. One way to write your source to allow you to
-handle either is to create a command `\diff` that you can adjust as required,
-[for example](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf)
+We hebben hier één stuk handmatige spatiëring toegevoegd: `\,` zorgt voor een kleine spatie vóór de `dx`.
+De opmaak van de differentiaaloperator verschilt: sommige uitgevers gebruiken een rechte 'd', anderen een cursieve '_d_'.
+Een manier om je bron aanpasbaar te maken is door een commando `\diff` te maken dat je kan wijzigen zoals je wil, [bijvoorbeeld](http://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf):
+
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\newcommand{\diff}{\mathop{}\!d}            % For italic
-% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % For upright
+\usepackage[dutch]{babel}
+\newcommand{\diff}{\mathop{}\!d}            % Voor cursief
+% \newcommand{\diff}{\mathop{}\!\mathrm{d}} % Voor rechtopstaand
 \begin{document}
-A paragraph about a larger equation
+Een paragraaf over een grotere vergelijking
 \[
 \int_{-\infty}^{+\infty} e^{-x^2} \diff x
 \]
 \end{document}
 ```
 
-You often want a numbered equation, which is created using the `equation`
-environment. Let's try the same example again:
+Vaak wil je een genummerde vergelijking, wat gedaan wordt met de `equation`-omgeving.
+Laten we hetzelfde voorbeeld opnieuw proberen:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
-A paragraph about a larger equation
+Een paragraaf over een grotere vergelijking
 \begin{equation}
 \int_{-\infty}^{+\infty} e^{-x^2} \, dx
 \end{equation}
 \end{document}
 ```
 
-The equation number is incremented automatically and may be a simple
-number as in this example or may be prefixed by a section number, so
-(2.5) for the 5th equation in section 2. The details of the formatting
-are set up by the document class and not described here.
+Het nummer van de vergelijking wordt automatisch verhoogd en kan een eenvoudig getal zijn zoals in dit voorbeeld, of voorafgegaan worden door een sectienummer, zoals (2.5) voor de vijfde vergelijking in sectie 2.
+De details van de opmaak worden bepaald door de documentklasse en worden hier niet behandeld.
 
 
-## The `amsmath` package
+## TODO The `amsmath` package
 
 Mathematical notation is very rich, and this means that the tools built
 into the LaTeX kernel can't cover everything. The `amsmath` package
