@@ -93,8 +93,8 @@ Je kan exact dezelfde commando’s gebruiken voor weergavewiskunde als voor inli
 Weergavewiskunde is standaard gecentreerd en bedoeld voor grotere vergelijkingen die ‘onderdeel van een paragraaf’ zijn.
 Let erop dat wiskunde in weergave geen paragraafeinde toestaat binnen de vergelijking, dus je mag geen lege regels binnen de bron van de wiskunde plaatsen.
 
-De paragraaf moet altijd _voorafgaand_ aan de wiskundige weergave beginnen, dus laat geen lege regel vóór de weergavewiskunde-omgeving.
-Als je meerdere regels wiskunde nodig hebt, gebruik dan niet opeenvolgende weergave-omgevingen (dit zorgt voor inconsistente afstand);
+De paragraaf moet altijd _voorafgaand_ aan de wiskundige weergave beginnen, dus laat geen lege regel vóór de weergavewiskundeomgeving.
+Als je meerdere regels wiskunde nodig hebt, gebruik dan niet opeenvolgende weergaveomgevingen (dit zorgt voor inconsistente afstand);
 gebruik in plaats daarvan een meerregelige weergaveomgeving zoals `align` uit het `amsmath`-pakket dat later wordt besproken.
 
 Het is vooral handig voor integralen, bijvoorbeeld:
@@ -150,46 +150,43 @@ Het nummer van de vergelijking wordt automatisch verhoogd en kan een eenvoudig g
 De details van de opmaak worden bepaald door de documentklasse en worden hier niet behandeld.
 
 
-## TODO The `amsmath` package
+## Het `amsmath`-pakket
 
-Mathematical notation is very rich, and this means that the tools built
-into the LaTeX kernel can't cover everything. The `amsmath` package
-extends the core support to cover a lot more ideas.
-The [`amsmath` User Guide](http://texdoc.org/pkg/amsmath)
-contains many more examples than we can show in this lesson.
+Wiskundige notatie is zeer uitgebreid, wat betekent dat de hulpmiddelen die in de LaTeX-kern zijn ingebouwd niet alles kunnen voorzien.
+Het `amsmath`-pakket breidt de kernfunctionaliteit uit en ondersteunt veel meer concepten.
+De [gebruikershandleiding van `amsmath`](http://texdoc.org/pkg/amsmath) bevat veel meer voorbeelden dan we in deze les kunnen tonen.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{amsmath}
 
 \begin{document}
-Solve the following recurrence for $ n,k\geq 0 $:
+Los de volgende recursiebetrekking op voor $ n,k\geq 0 $:
 \begin{align*}
   Q_{n,0} &= 1   \quad Q_{0,k} = [k=0];  \\
-  Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{for $n$, $k>0$.}
+  Q_{n,k} &= Q_{n-1,k}+Q_{n-1,k-1}+\binom{n}{k}, \quad\text{voor $n$, $k>0$.}
 \end{align*}
 \end{document}
 ```
 
-The `align*` environment makes the equations line up on the ampersands, the `&`
-symbols, just like a table. Notice how we've used `\quad` to insert a bit of
-space, and `\text` to put some normal text inside math mode. We've also used
-another math mode command, `\binom`, for a binomial.
+De `align*`-omgeving zorgt ervoor dat de vergelijkingen netjes uitlijnen op de ampersands, de `&`-symbolen, net als in een tabel.
+Merk op dat we `\quad` gebruiken om wat witruimte toe te voegen en `\text` om normale tekst binnen de wiskundemodus te zetten.
+We hebben ook een ander wiskundig commando gebruikt, `\binom`, voor een binomiaalcoëfficiënt.
 
-Notice that here we used `align*`, and the equation didn't come out numbered.
-Most math environments number the equations by default, and the starred variant
-(with a `*`) disables numbering.
+Let op dat we hier `align*` hebben gebruikt, waardoor de vergelijking niet wordt genummerd.
+De meeste wiskundeomgevingen nummeren vergelijkingen standaard, en de variant met een sterretje (`*`) schakelt die nummering uit.
 
-The package also has several other convenient environments, for
-example for matrices.
+Het pakket bevat ook verschillende andere handige omgevingen, bijvoorbeeld voor matrices.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{amsmath}
 \begin{document}
-AMS matrices.
+AMS-matrices.
 \[
 \begin{matrix}
 a & b & c \\
@@ -209,70 +206,64 @@ d & e & f
 \end{document}
 ```
 
-## Fonts in math mode
+## Lettertypes in wiskundemodus
 
-Unlike normal text, font changes in math mode often convey very specific meaning.
-They are therefore often written explicitly. There are a set of commands you need
-here:
+In tegenstelling tot gewone tekst hebben lettertypeveranderingen in wiskundemodus vaak een zeer specifieke betekenis.
+Ze worden daarom meestal expliciet aangegeven.
+Er is een hele reeks commando’s beschikbaar:
 
-- `\mathrm`: roman (upright)
-- `\mathit`: italic spaced as 'text'
-- `\mathbf`: boldface
-- `\mathsf`: sans serif
-- `\mathtt`: monospaced (typewriter)
-- `\mathbb`: double-struck (blackboard bold) (provided by the `amsfonts` package)
+- `\mathrm`: romein (rechtop)
+- `\mathit`: cursief, zoals 'tekst'
+- `\mathbf`: vet
+- `\mathsf`: schreefloos (sans serif)
+- `\mathtt`: monospaced (typemachinestijl)
+- `\mathbb`: dubbelgetrokken (**b**lackboard **b**old) (geleverd door het `amsfonts`-pakket)
 
-Each of these takes Latin letters as an argument, so for example we might
-write a matrix as
+Deze commando’s nemen Latijnse letters als argument, dus bijvoorbeeld kunnen we een matrix schrijven als:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \begin{document}
-The matrix $\mathbf{M}$.
+De matrix $\mathbf{M}$.
 \end{document}
 ```
 
-Note that the default math italic separates letters so that they may
-be used to denote a product of variables. Use `\mathit` to make a word italic.
+Let op dat standaard cursieve wiskunde de letters los van elkaar toont, zodat ze kunnen worden geïnterpreteerd als een product van variabelen.
+Gebruik `\mathit` om een woord cursief te maken.
 
-The `\math..` font commands use fonts specified for math
-use. Sometimes you need to embed a word that is part of the outer
-sentence structure and needs the current text font, for that you can
-use `\text{...}` (which is provided by the `amsmath` package) or
-specific font styles such as `\textrm{..}`.
+De `\math..`-lettertypecommando’s gebruiken lettertypes die bedoeld zijn voor wiskundig gebruik.
+Soms wil je echter een woord opnemen dat grammaticaal deel uitmaakt van de zin en het huidige tekstlettertype moet gebruiken;
+hiervoor kun je `\text{...}` gebruiken (geleverd door het `amsmath`-pakket) of specifieke tekstcommando’s zoals `\textrm{...}`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{amsmath}
 \begin{document}
 
-$\text{bad use } size  \neq \mathit{size} \neq \mathrm{size} $
+$\text{fout gebruik } size  \neq \mathit{size} \neq \mathrm{size} $
 
-\textit{$\text{bad use } size \neq \mathit{size} \neq \mathrm{size} $}
+\textit{$\text{fout gebruik } size \neq \mathit{size} \neq \mathrm{size} $}
 
 \end{document}
 ```
 
+Als je andere symbolen vet moet maken, [zie de extra details](more-10).
 
-If you need to make other
-symbols bold, [see the extra details](more-10).
+## Oefeningen
 
-## Exercises
+Probeer wat eenvoudige zaken in wiskundemodus: neem de voorbeelden en wissel tussen inline- en weergavewiskunde.
+Kan je het verschil zien?
 
-Try out some basic math mode work: take the examples and switch between
-inline and display math modes. Can you see what effect this has.
+Probeer andere Griekse letters toe te voegen, zowel kleine als hoofdletters.
+Je zou de namen moeten kunnen raden.
 
-Try adding other Greek letters, both lower- and uppercase. You should be
-able to guess the names.
+Experimenteer met de lettertypecommando’s: wat gebeurt er als je ze probeert te nesten?
 
-Experiment with the font changing commands: what happens when you try to
-nest them?
-
-Displayed math is centered by default; try adding the document class
-option `[fleqn]` (flush
-left equation) option to some of the above examples to see a different
-layout. Similarly equation numbers are usually on the
-right. Experiment with adding the `[leqno]` (left equation numbers)
-document class option.
+Weergavewiskunde is standaard gecentreerd;
+probeer de documentklasseoptie `[fleqn]` (flush left equation) toe te voegen aan enkele van de bovenstaande voorbeelden om een andere layout te zien.
+Evenzo staan vergelijkingsnummers normaal aan de rechterkant.
+Experimenteer met het toevoegen van de documentklasseoptie `[leqno]` (left equation numbers).
