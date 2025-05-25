@@ -1,25 +1,20 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "More on: Mathematics"
-description: "This lesson show more amsmath alignment environments, how to make math bold, the math extension package mathtools, and using Unicode input for maths."
-toc-anchor-text: "More on: Mathematics"
+title: "Meer over: Wiskunde"
+description: "Deze les laat meer amsmath-uitlijnomgevingen zien, hoe je wiskunde vet zet, het wiskunde-uitbreidingspakket mathtools, en het gebruik van Unicode-invoer voor wiskunde."
+toc-anchor-text: "Meer over: Wiskunde"
 ---
 
+## Verdere `amsmath`-uitlijningen
 
-## Further `amsmath` alignments
-
-In addition to the `align*` environment shown in the main lesson,
-`amsmath` has several other display math constructs, notably `gather`
-for multi-line displays that do not need alignment, and `multline` for
-splitting a larger single expression over multiple lines, aligning the
-first line to the left, and the last to the right. In all cases the `*`
-form  omits the equation numbers by default.
+Naast de `align*`-omgeving die in de hoofdles werd getoond, heeft `amsmath` verschillende andere wiskundige weergaveomgevingen, met name `gather` voor meerregelige weergaven zonder uitlijning, en `multline` voor het splitsen van een grotere, enkele uitdrukking over meerdere regels, waarbij de eerste regel links en de laatste rechts wordt uitgelijnd.
+In alle gevallen onderdrukt de `*`-vorm standaard de vergelijkingnummers.
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
-
+\usepackage[dutch]{babel}
 \usepackage{amsmath}
 
 \begin{document}
@@ -39,19 +34,18 @@ Multline
 \end{document}
 ```
 
-### Columns in math alignments
+### Kolommen in wiskundige uitlijning
 
-The `amsmath` alignment environments are designed to take pairs of
-columns with the first column of each pair aligned to the right and
-the second aligned to the left. This allows multiple equations to be
-shown, each aligned towards its relation symbol.
+De `amsmath`-uitlijnomgevingen zijn ontworpen om kolomparen te gebruiken waarbij de eerste kolom rechts wordt uitgelijnd en de tweede links.
+Dit maakt het mogelijk om meerdere vergelijkingen te tonen die netjes bij hun gelijkheidstekens uitgelijnd staan.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{amsmath}
 \begin{document}
-Aligned equations
+Uitgelijnde vergelijkingen
 \begin{align*}
 a &= b+1   &  c &= d+2  &  e &= f+3   \\
 r &= s^{2} &  t &=u^{3} &  v &= w^{4}
@@ -60,14 +54,13 @@ r &= s^{2} &  t &=u^{3} &  v &= w^{4}
 \end{document}
 ```
 
-
-In addition there are variants of the display environments ending
-in `ed` that make a subterm inside a larger display.
-For example, `aligned` and `gathered` are variants of `align` and `gather` respectively.
+Daarnaast zijn er varianten van de weergaveomgevingen die eindigen op `ed` en die een subterm binnen een grotere weergave mogelijk maken.
+`aligned` en `gathered` zijn bijvoorbeeld varianten van respectievelijk `align` en `gather`.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{amsmath}
 \begin{document}
 Aligned:
@@ -85,13 +78,13 @@ d&=c
 \end{document}
 ```
 
-`aligned` takes a positional optional argument similar to `tabular`.
-This is often useful to align an inline math formula on its top row;
-compare the items in the list in the following example.
+`aligned` accepteert een optioneel positioneel argument, vergelijkbaar met `tabular`.
+Dit is handig om een inline wiskundige formule uit te lijnen op de bovenste rij; vergelijk de items in de lijst in het volgende voorbeeld.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{amsmath}
 \begin{document}
 \begin{itemize}
@@ -109,15 +102,16 @@ c&=d
 \end{document}
 ```
 
-## Bold Math
-Standard LaTeX has two methods to give bold symbols in math. To make
-an entire expression bold, use `\boldmath` before entering the
-expression. The command `\mathbf` is also available to set individual
-letters or words in upright bold roman.
+## Vetgedrukte wiskunde
+
+Standaard voorziet LaTeX twee methoden om symbolen vet te zetten in de wiskundemodus.
+Gebruik `\boldmath` vóór je de uitdrukking invoert om een volledige uitdrukking vet te maken.
+Het commando `\mathbf` is ook beschikbaar om individuele letters of woorden in vetgedrukt rechtop romeins te zetten.
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 
 \begin{document}
 
@@ -127,19 +121,18 @@ $(x+y)(x-y)=x^{2}-y^{2}$
 {\boldmath $(x+y)(x-y)=x^{2}-y^{2}$ $\pi r^2$}
 
 $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
-$\mathbf{\pi} r^2$ % bad use of \mathbf
+$\mathbf{\pi} r^2$ % fout gebruik van \mathbf
 \end{document}
 ```
 
-If you want to access bold symbols (as would be used by `\boldmath`)
-within an otherwise normal weight expression, then you can use the
-command `\bm` from the `bm` package. Note that `\bm` also works with
-symbols such as `=` and Greek letters. (Note that `\mathbf` has no effect
-on `\pi` in the example above.)
+Als je vetgedrukte symbolen (zoals gebruikt door `\boldmath`) wil gebruiken binnen een uitdrukking met voor de rest een normaal gewicht, dan kan je het commando `\bm` gebruiken uit het `bm`-pakket.
+Merk op dat `\bm` ook werkt met symbolen zoals `=` en Griekse letters.
+(`\mathbf` heeft bijvoorbeeld geen effect op `\pi`.)
 
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{bm}
 
 \begin{document}
@@ -154,12 +147,13 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 ```
 
 ## Mathtools
-The package `mathtools` loads `amsmath` and adds several additional
-features, such as variants of the `amsmath` matrix environments that
-allow the column alignment to be specified.
+
+Het pakket `mathtools` laadt `amsmath` en voegt extra functies toe, zoals varianten van de `amsmath` matrixomgevingen waarbij de kolomuitlijning kan worden gespecifieerd.
+
 ```latex
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{mathtools}
 
 \begin{document}
@@ -175,31 +169,29 @@ allow the column alignment to be specified.
 \end{document}
 ```
 
-## Unicode Math
+## Unicode-wiskunde
 
-As will be seen in [Lesson 14](lesson-14), there are variant TeX
-engines that use OpenType fonts. By default, these engines still use
-classic TeX math fonts but you may use the `unicode-math` package
-to use OpenType Math fonts. The details of this package are beyond
-this course and we refer you to the
-[package documentation](https://texdoc.org/pkg/unicode-math).
-However, we give a small example here.
+Zoals je zal zien in [Les 14](lesson-14), zijn er varianten van TeX-engines die OpenType-lettertypen gebruiken.
+Standaard gebruiken deze engines nog steeds klassieke wiskundige TeX-lettertypen, maar je kan het `unicode-math`-pakket gebruiken om OpenType-wiskundige lettertypen te gebruiken.
+De details van dit pakket vallen buiten de opzet deze lessen, zie de [pakketdocumentatie](https://texdoc.org/pkg/unicode-math).
+We geven hier wel een klein voorbeeld.
 
 ```latex
 % !TEX lualatex
 \documentclass[a4paper]{article}
+\usepackage[dutch]{babel}
 \usepackage{unicode-math}
 \setmainfont{TeX Gyre Pagella}
 \setmathfont{TeX Gyre Pagella Math}
 
 \begin{document}
 
-One two three
+Eén twee drie
 \[
 \log \alpha + \log \beta = \log(\alpha\beta)
 \]
 
-Unicode Math Alphanumerics
+Alfanumerieke Unicode-wiskundetekens
 \[A + \symfrak{A}+\symbf{A}+ \symcal{A} + \symscr{A}+ \symbb{A}\]
 
 \end{document}
