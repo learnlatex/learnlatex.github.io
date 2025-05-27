@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "Citations and references"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
-toc-anchor-text: "Citations & references"
-toc-description: "Working with reference databases."
+title: "Citaten en referenties"
+description: "Deze les toont de basisprincipes van referentiedatabanken. Leer hoe je je eigen databanken opbouwt en hoe je ze gebruikt in documenten met behulp van de twee belangrijkste beschikbare werkwijzen."
+toc-anchor-text: "Citaten & referenties"
+toc-description: "Werken met referentiedatabanken."
 ---
 
-# Citations and references
+# Citaten en referenties
 
 <script>
 runlatex.preincludes = {
@@ -20,20 +20,17 @@ runlatex.preincludes = {
 }
 </script>
 
-<span
-  class="summary">This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available.</span>
+<span class="summary">Deze les toont de basisprincipes van referentiedatabanken. Leer hoe je je eigen databanken opbouwt en hoe je ze gebruikt in documenten met behulp van de twee belangrijkste beschikbare werkwijzen.</span>
 
-For bibliographic citations, while you can include reference sources directly in
-your document, usually you will get that information from one or more external
-files. Such a file is a database of references, containing the information in a
-processing-friendly format. Using one or more reference databases lets you
-re-use information and avoid manual formatting.
+Voor bibliografische citaten kan je referentiebronnen direct in je document opnemen, maar meestal haal je die informatie uit een of meer externe bestanden.
+Zo'n bestand is een referentiedatabank die de informatie bevat in een verwerkingsvriendelijk formaat.
+Het gebruik van een of meer referentiedatabanken stelt je in staat informatie te hergebruiken en handmatige opmaak te vermijden.
 
-## Reference databases
+## Referentiedatabanken
 
-Reference databases are normally referred to as 'BibTeX files' and have the
-extension `.bib`. They contain one or more entries, one for each reference, and
-within each entry there are a series of fields. Let us look at an example.
+Referentiedatabanken worden normaal gesproken aangeduid als 'BibTeX-bestanden' en hebben de extensie `.bib`.
+Ze bevatten een of meer items, één voor elke referentie, en binnen elk item staat een reeks velden.
+Laten we een voorbeeld bekijken.
 
 <!-- {% raw %} -->
 ```bibtex
@@ -52,7 +49,7 @@ within each entry there are a series of fields. Let us look at an example.
   doi     = {10.1021/ic800654a},
 }
 @book{Graham1995,
-  author    = {Ronald L. Graham and Donald E. Knuth and Oren Patashnik},
+  author    = {Ronald L. Graham en Donald E. Knuth en Oren Patashnik},
   title     = {Concrete Mathematics},
   publisher = {Addison-Wesley},
   year      = {1995},
@@ -60,201 +57,134 @@ within each entry there are a series of fields. Let us look at an example.
 ```
 <!-- {% endraw %} -->
 
+Dit is een item voor een artikel en een ander voor een boek;
+dit zijn verreweg de meest voorkomende types.
+Elk type databankitem begint met `@`, zoals weergegeven, en alle informatie staat dan binnen een paar accolades.
 
-This is an entry for an article and another for a book; these are by far the most common
-types. Each database entry type starts with `@`, as shown, and all of the
-information then sits within a brace pair.
+De verschillende benodigde velden worden weergegeven in een sleutel-waardepaar, behalve wat bekend staat als de 'key' of 'sleutel': de 'naam' van de citaatverwijzing.
+Je kan kiezen wat je wil, het is slechts een label, maar hierboven hebben we gekozen voor de naam van een auteur plus het jaar: dit is een gangbare aanpak.
 
-The various fields we need are given in key-value format, apart from what is
-known as the 'key': the 'name' of the citation. You can use whatever you like,
-as it's just a label, but above we've chosen to use the name of an author plus
-the year: this is a common approach.
+Welke velden je precies nodig hebt, hangt af van het type item, maar de meeste zijn vrij duidelijk.
+Je zal merken dat in het `author`-veld elke auteur wordt gescheiden door `and`. Dit is _essentieel_: het uitvoerformaat moet weten wie welke auteur is.
+Je merkt misschien ook dat in de titel van het artikel sommige onderdelen tussen extra accolades staan; die voorkomen dat er automatisch hoofdletterwijzigingen worden toegepast.
 
-Exactly which fields you need to give depends on the type of entry, but most of
-these are quite obvious. You might notice that in the `author` field, each entry
-is separated by `and`. This is _essential_: the format of the _output_ needs to
-know which author is which. You might also notice that in the article title,
-some entries are in an extra set of braces; these are there to prevent any
-case-changing being applied.
+Het handmatig bewerken van `.bib`-bestanden is nogal omslachtig, dus de meeste mensen gebruiken een speciale editor.
+[JabRef](https://www.jabref.org) is veelgebruikt en werkt op meerdere platformen, maar er zijn ook andere interfaces beschikbaar.
+Als de referentie een DOI (Digital Object Identifier) bevat, kan je [doi2bib](https://doi2bib.org) proberen om gemakkelijk het BibTeX-item te verkrijgen.
+Controleer echter altijd of het item correct is!
 
-Editing `.bib` files by hand is rather tedious, so most people use a dedicated
-editor. [JabRef](https://www.jabref.org) is widely used and cross-platform,
-but there are several other interfaces available.
-If the reference contains a DOI (Digital Object Identifier), you may want to
-try [doi2bib](https://doi2bib.org) to easily get the BibTeX entry. But make sure
-to check if the entry is correct!
+Hier gebruiken we de korte voorbeelddatabank hierboven voor onze demonstraties: we hebben deze opgeslagen als `learnlatex.bib`.
 
-Here, we will use the short
-example database above for our demonstrations: we have 'saved' it as
-`learnlatex.bib`.
+## Informatie overnemen uit de databank
 
-## Transferring information from the database
+Om de informatie in je document te krijgen, zijn er drie stappen.
+Eerst compileer je je document met LaTeX, wat een bestand aanmaakt met een lijst van de referenties die in je document worden aangehaald.
+Vervolgens voer je een programma uit dat informatie uit de referentiedatabank haalt, de gebruikte selecteert, en ze in volgorde zet.
+Tot slot compileer je je document opnieuw zodat LaTeX die informatie kan gebruiken om je citaten af te handelen.
+Gewoonlijk zijn minstens twee compilaties nodig om alle referenties correct te verwerken.
 
-To get the information into your document there are three steps.
-First, use LaTeX to compile your document, which creates a file with a
-list of the references that your document cites.  Second, run a
-program that takes information from the database of references, picks
-out the ones that you use, and puts them in order.  Finally, compile
-your document again so that LaTeX can use that information to resolve
-your citations. Usually it will require at least two compilations to
-resolve all the references.
+Voor de tweede stap zijn er twee systemen gangbaar: BibTeX en Biber.
+Biber wordt alleen gebruikt met een LaTeX-pakket genaamd `biblatex`, terwijl BibTeX wordt gebruikt zonder extra pakketten of samen met `natbib`.
 
-For the second step, there are two systems in wide use: BibTeX and
-Biber. Biber is only ever used with a LaTeX package called `biblatex`, whereas
-BibTeX is used with either no packages at all or with `natbib`.
+Het uitvoeren van een extra tool naast LaTeX gebeurt op verschillende manieren in verschillende editors.
+In onze online voorbeelden zijn er enkele scripts die alles achter de schermen in één keer doen.
+Jouw editor heeft misschien één knop die alles doet, of je moet BibTeX of Biber handmatig uitvoeren tussen LaTeX-compilaties.
 
-Running a second tool as well as LaTeX is handled in different ways by different
-editors. For our online examples, there are some 'behind the scenes' scripts
-that do everything in one go.
-Your editor might have a single 'do stuff' button or you might have to
-choose to run BibTeX or Biber manually between LaTeX runs.
+De opmaak van citaten en referenties is onafhankelijk van je BibTeX-databank en wordt bepaald door wat bekend staat als een 'stijl'.
+We zullen zien dat deze iets anders werken in de BibTeX- en `biblatex`-werkwijze, maar het algemene idee blijft dat we kunnen kiezen hoe citaten worden weergegeven.
 
-The format of citations and references is independent of your BibTeX database,
-and is set by what is known as a 'style'. We will see that these work slightly
-differently in the BibTeX workflow and `biblatex`, but the general idea remains:
-we can choose how citations appear.
+## De BibTeX-werkwijze met `natbib`
 
-## The BibTeX workflow with `natbib`
+Hoewel het mogelijk is om citaten in een LaTeX-document in te voegen zonder extra pakketten, is dat vrij beperkt.
+In plaats daarvan gebruiken we het `natbib`-pakket, waarmee we verschillende soorten citaten kunnen maken en dat veel stijlen ondersteunt.
 
-Whilst it is possible to insert citations into a LaTeX document without
-any packages loaded, this is rather limited. Instead, we will use the
-`natbib` package, which allows us to create different types of citation and
-has a lot of styles available.
-
-The basic structure of our input is as shown in this example.
+De basisstructuur van onze invoer ziet er als volgt uit:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{natbib}
 
 \begin{document}
-The mathematics showcase is from \citet{Graham1995}, whereas
-there is some chemistry in \citet{Thomas2008}.
+Het wiskundige voorbeeld komt uit \citet{Graham1995}, terwijl
+er wat chemie in \citet{Thomas2008} staat.
 
-Some parenthetical citations: \citep{Graham1995}
-and then \citep[p.~56]{Thomas2008}.
+Enkele citaten tussen haakjes: \citep{Graham1995}
+en dan \citep[p.~56]{Thomas2008}.
 
-\citep[See][pp.~45--48]{Graham1995}
+\citep[Zie][pp.~45--48]{Graham1995}
 
-Together \citep{Graham1995,Thomas2008}
+Samen \citep{Graham1995,Thomas2008}
 
 \bibliographystyle{plainnat}
 \bibliography{learnlatex}
 \end{document}
 ```
 
-You can see that we can cite different entries in the database by giving their
-key. The `natbib` package offers both textual and parenthetical citation styles,
-`\citet` and `\citep`, respectively. The reference style is selected by the
-`\bibliographystyle` line; here we've used the `plainnat` style. The
-bibliography is actually inserted by the `\bibliography` line, which also picks
-the database(s) to use; this is a comma-separated list of names.
+Je ziet dat we verschillende items uit de databank kunnen citeren met hun sleutel.
+Het `natbib`-pakket biedt zowel citiatiestijlen met tekst als tussen haken, respectievelijk via `\citet` en `\citep`.
+De referentiestijl wordt gekozen met de regel `\bibliographystyle`;
+hier gebruiken we de stijl `plainnat`.
+De bibliografie wordt ingevoegd met `\bibliography`, dat ook de te gebruiken databank(en) bepaalt; 
+dit is lijst met namen gescheiden door komma's.
 
-Page references can be added to the citation with an optional argument.
-If two optional arguments are given, the first goes in front of the citation
-label for a short note and the second after the label for a page reference.
+Paginaverwijzingen kunnen worden toegevoegd aan het citaat met een optioneel argument.
+Als er twee optionele argumenten worden gegeven, komt de eerste vóór het citaatlabel als korte opmerking en de tweede na het label als paginaverwijzing.
 
-The setup above uses author-year style, but we can make use of numeric
-citations. That is done by adding the `numbers` option to the `natbib` line.
+De bovenstaande opzet gebruikt een auteur-jaarstijl, maar je kan ook numerieke verwijzingen gebruiken.
+Dat doe je door de optie `numbers` toe te voegen aan de `natbib`-regel.
 
-## The `biblatex` workflow
+## TODO De `biblatex`-werkwijze
 
-The `biblatex` package works slightly differently to `natbib`, as we select
-the databases in the preamble but print it in the document body. There are
-some new commands for this.
+Het `biblatex`-pakket werkt iets anders dan `natbib`, omdat we de databanken in de preambule selecteren maar ze in het document zelf afdrukken. Daarvoor zijn nieuwe commando's nodig.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage[style=authoryear]{biblatex}
-\addbibresource{learnlatex.bib} % file of reference info
+\addbibresource{learnlatex.bib} % bestand met referentie-informatie
 
 \begin{document}
-The mathematics showcase is from \autocite{Graham1995}.
+Het wiskundige voorbeeld komt uit \autocite{Graham1995}.
 
-Some more complex citations: \parencite{Graham1995} or
-\textcite{Thomas2008} or possibly \citetitle{Graham1995}.
+Meer complexe citaties: \parencite{Graham1995} of
+\textcite{Thomas2008} of mogelijk \citetitle{Graham1995}.
 
 \autocite[56]{Thomas2008}
 
-\autocite[See][45-48]{Graham1995}
+\autocite[Zie][45-48]{Graham1995}
 
-Together \autocite{Thomas2008,Graham1995}
+Samen \autocite{Thomas2008,Graham1995}
 
 \printbibliography
 \end{document}
 ```
 
-Notice that `\addbibresource` _requires_ the full database filename, whereas
-we omitted the `.bib` for `\bibliography` with `natbib`. Also notice that
-`biblatex` uses rather longer names for its citation commands, but these are
-all quite easy to guess.
+Merk op dat `\addbibresource` _het volledige bestandsnaam van de databank vereist_, terwijl we de `.bib` weglaten bij `\bibliography` met `natbib`. Ook merk je dat `biblatex` langere namen gebruikt voor zijn citatiecommando’s, maar ze zijn vrij intuïtief.
 
-Again, short text before and after the citation can be inserted with
-the optional arguments. Note that the page numbers need not be prefixed
-with `p.~` or `pp.~` here, `biblatex` can automatically add the appropriate
-prefix.
+Opnieuw kunnen korte teksten vóór en na het citaat worden ingevoegd met de optionele argumenten. Merk op dat de paginanummers hier niet voorafgegaan hoeven te worden door `p.~` of `pp.~`, `biblatex` voegt automatisch de juiste voorvoegsels toe.
 
+In `biblatex` wordt de referentiestijl gekozen bij het laden van het pakket. Hier gebruiken we `authoryear`, maar er is ook een `numeric` stijl en nog veel meer zijn beschikbaar.
 
-In `biblatex`, the reference style is picked when we load the package. Here,
-we've used `authoryear`, but there is a `numeric` style and many others are
-also available.
+## Kiezen tussen de BibTeX-werkwijze en `biblatex`
 
-## Choosing between the BibTeX workflow and `biblatex`
+Hoewel zowel de BibTeX-werkwijze als `biblatex` hun input uit BibTeX-bestanden halen en een vergelijkbare structuur in de output kunnen produceren, gebruiken ze totaal verschillende methodes. Dat betekent dat er enkele verschillen zijn die je kunnen helpen kiezen wat het beste voor jou werkt.
 
-Even though both the BibTeX workflow and `biblatex` get their input via BibTeX
-files and can produce structurally similar output in the document, they use
-completely different ways to produce this result. That means that there are
-some differences between the two approaches that may help you choose which
-one works best for you.
+In de BibTeX-werkwijze wordt de bibliografiestijl uiteindelijk bepaald door een `.bst`-bestand dat je selecteert met het `\bibliographystyle`-commando. `biblatex` gebruikt geen `.bst`-bestanden maar een ander systeem. Als je een sjabloon gebruikt dat met een `.bst`-bestand komt of als je een `.bst`-bestand krijgt voor je project, moet je de BibTeX-werkwijze gebruiken en kun je `biblatex` niet gebruiken.
 
-In the BibTeX workflow the bibliography style is ultimately decided
-by a `.bst` file which you select with the `\bibliographystyle` command.
-`biblatex` does not use `.bst` files and uses a different system.
-If you are using a template that comes with a `.bst` file or are given a `.bst`
-file for your project, you must use the BibTeX workflow and cannot use
-`biblatex`.
+De andere benadering van `biblatex` houdt in dat je de uitvoer van citatie- en bibliografiecommando's rechtstreeks kunt aanpassen vanuit je documentpreambule met LaTeX-commando’s. Aanpassingen aan BibTeX `.bst`-stijlen vereisen daarentegen meestal het bewerken van deze externe bestanden en kennis van de BibTeX-programmeertaal. Over het algemeen wordt `biblatex` als gemakkelijker aanpasbaar beschouwd dan de BibTeX-werkwijze.
 
-The different approach `biblatex` takes implies that you can modify the output
-of the bibliography and citation commands directly from your document preamble
-using LaTeX-based commands. Modifications of BibTeX `.bst` styles on the other
-hand usually require working with these external files and need knowledge of
-the BibTeX programming language. Generally speaking, `biblatex` is said to be
-easier to customize than the BibTeX workflow.
+In `biblatex` is het over het algemeen eenvoudiger om meer geavanceerde citatiestijlen te implementeren met een groter aantal citatiecommando's. Het biedt ook meer contextafhankelijke functies. Dit is meestal minder van belang voor stijlen die gebruikelijk zijn in bètavakken, maar wel relevant in sommige gebieden van de geesteswetenschappen.
 
-In `biblatex` it is generally easier to implement more elaborate citation
-styles with a wider array of different citation commands. It also offers more
-context-dependent features. Roughly speaking this is less interesting for
-the styles common in many STEM subjects, but becomes relevant for some more
-complex styles in some areas of the humanities.
+BibTeX kan alleen US-ASCII-tekens correct sorteren en gebruikt omwegen voor andere tekens. Met Biber biedt `biblatex` volledige Unicode-sorteermogelijkheden. Daarom is `biblatex` meestal een betere keuze als je je bibliografie in een niet-ASCII/niet-Engelse volgorde wilt sorteren.
 
-BibTeX can only sort US-ASCII characters correctly and relies on workarounds
-to provide US-ASCII-based sorting for non-US-ASCII characters.
-With Biber `biblatex` offers full Unicode sorting capabilities. Thus `biblatex`
-is usually a better choice if you want to sort your bibliography in a
-non-ASCII/non-English order.
+Omdat BibTeX al veel langer bestaat dan `biblatex`, is de BibTeX-werkwijze meer ingeburgerd. Veel uitgevers en tijdschriften verwachten dan ook bibliografieën gegenereerd via de BibTeX-werkwijze. Deze accepteren meestal geen documenten die `biblatex` gebruiken.
 
-Having been around for much longer than `biblatex`, the BibTeX workflow is
-more established than `biblatex`, meaning that many publishers and journals
-expect bibliographies generated via the BibTeX workflow. Those publishers
-cannot or generally do not accept submissions using `biblatex`.
+Kort samengevat: controleer altijd de auteurs-/indienrichtlijnen als je iets instuurt voor een tijdschrift of uitgever. Als je een `.bst`-bestand krijgt, moet je de BibTeX-werkwijze gebruiken. Als je een relatief eenvoudige bibliografie- en citatiestijl nodig hebt en alleen Engels/US-ASCII-sorting, dan volstaat de BibTeX-werkwijze. Als je een complexere stijl nodig hebt, niet-Engelse sortering of gemakkelijker toegang tot stijl-aanpassingen, bekijk dan `biblatex`.
 
-The bottom line is: Check the author/submission guidelines if you are
-submitting to a journal or publisher. If you are given a `.bst` file, you must
-use the BibTeX workflow. If you want a relatively simple bibliography and
-citation style and only need English US-ASCII-based sorting, the BibTeX workflow
-should suffice. If you need a more complex citation style, non-English sorting
-or want easier access to citation and bibliography style customisation features,
-you will want to look into using `biblatex`.
+## Oefeningen
 
-## Exercises
+Probeer zowel de `natbib`- als de `biblatex`-voorbeelden uit. Voor `natbib` moet je LaTeX, BibTeX, LaTeX, LaTeX uitvoeren; voor `biblatex` is het LaTeX, Biber, LaTeX. Zoek uit hoe je dat doet in jouw editor, of probeer de automatisering van Overleaf en TeXLive.net.
 
-Try out both the `natbib` and `biblatex` examples. For `natbib`, you'll need
-to run LaTeX, BibTeX, LaTeX, LaTeX; for `biblatex`, it's LaTeX, Biber, LaTeX.
-Find out how to do that in your editor, or try the Overleaf and TeXLive.net
-automation.
-
-See what happens when you create new database entries and new citations. Add
-a citation that's not in the database and see how it appears. Experiment
-with `natbib`'s `numeric` and `biblatex`'s `style=numeric` option.
+Bekijk wat er gebeurt als je nieuwe databank-items en nieuwe citaties maakt. Voeg een citaat toe dat niet in de databank staat en bekijk hoe dat wordt weergegeven. Experimenteer met de `numeric` optie van `natbib` en `style=numeric` van `biblatex`.
