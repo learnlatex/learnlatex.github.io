@@ -1,44 +1,32 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "More on: Citations and references"
-description: "This lesson gives details on non-English bibliographies, how to make references into hyperlinks, and highlights the main differences between BibTeX styles."
-toc-anchor-text: "More on: Citations and references"
+title: "Meer over: Citaten en referenties"
+description: "Deze les geeft details over niet-Engelstalige bibliografieën, hoe je referenties omzet in hyperlinks, en belicht de belangrijkste verschillen tussen BibTeX-stijlen."
+toc-anchor-text: "Meer over: Citaten en referenties"
 ---
 
-## Dealing with non-English sorting
+## Omgaan met niet-Engelse sortering
 
-The BibTeX program was written primarily to deal with references in English. It
-is very limited in handling accented characters, and even more limited with
-non-Latin letters. In contrast, the Biber program was written from the start to
-handle a mix of scripts properly.
+Het BibTeX-programma is voornamelijk geschreven om referenties in het Engels te verwerken.
+Het is zeer beperkt in het omgaan met accenten en nog beperkter met niet-Latijnse letters.
+Daarentegen is het Biber-programma vanaf het begin ontworpen om allerhande schriftsystemen correct te verwerken.
 
-This means that if you are sorting your bibliography, and you need to sort in
-anything other than English order, you really should be using `biblatex` and
-Biber, rather than `natbib` and BibTeX.
+Dit betekent dat als je je bibliografie sorteert en je moet sorteren in een andere volgorde dan de Engelse, je echt `biblatex` en Biber zou moeten gebruiken in plaats van `natbib` en BibTeX.
 
 ## Hyperlinks
 
-If you load the `hyperref` package (as covered [earlier](more-09)), it will
-automatically make some content in your bibliography into links. This is
-particularly useful for URLs and DOIs.
+Als je het `hyperref`-pakket laadt (zoals eerder behandeld in [more-09]), zal het automatisch bepaalde inhoud in je bibliografie omzetten in links.
+Dit is in het bijzonder handig voor URL’s en DOI’s.
 
-## Differences in best practice for BibTeX input between styles
+## Uiteenlopend gebruik van BibTeX-invoer door verschillende stijlen
 
-While the overall syntax of the BibTeX files is the same whether you use the
-BibTeX workflow or `biblatex`, the set of fields that is supported (used by the
-style) and their exact meaning may not only vary between the BibTeX workflow
-and `biblatex`, but also between different BibTeX styles. A large 'core set' of
-entry types and fields is the same for almost all styles, but there are
-differences in some fields.
+Hoewel de algemene syntaxis van BibTeX-bestanden hetzelfde is, of je nu de BibTeX-werkwijze of `biblatex` gebruikt, kunnen de ondersteunde velden (gebruikt door de stijl) en hun exacte betekenis niet alleen variëren tussen BibTeX en `biblatex`, maar ook tussen verschillende BibTeX-stijlen.
+Een groot ‘kernpakket’ van itemtypes en velden is hetzelfde voor bijna alle stijlen, maar er zijn verschillen in sommige velden.
 
-A common example is the URL. Some older BibTeX `.bst` styles (most notably
-the 'standard BibTeX styles', e.g. `plain.bst`, `unsrt.bst`, ...) predate
-the invention of the URL and have no dedicated field for the URL of an online
-resource. Many newer styles _do_ have a dedicated `url` field. The workaround
-to show the URL in the older styles is usually to use the `howpublished` field,
-but with the newer styles it is of course preferable to use the dedicated
-`url` field.
+Een veelvoorkomend voorbeeld is de URL.
+Sommige oudere BibTeX `.bst`-stijlen (met name de 'standaard BibTeX-stijlen', zoals `plain.bst`, `unsrt.bst`, ...) stammen uit de tijd vóór de uitvinding van de URL en hebben geen specifiek veld voor de URL van een online bron.
+Veel nieuwere stijlen hebben _wel_ een specifiek `url`-veld.
+De oplossing om de URL toch te tonen in oudere stijlen is meestal om het `howpublished`-veld te gebruiken, maar bij de nieuwere stijlen is het natuurlijk beter om het specifieke `url`-veld te gebruiken.
 
-In order to be able to make use of the full potential of your used style you
-will have to find out the set of fields it supports and their semantic.
+Om volledig gebruik te kunnen maken van het potentieel van de gebruikte stijl, zul je moeten uitzoeken welke velden worden ondersteund en wat hun betekenis is.
