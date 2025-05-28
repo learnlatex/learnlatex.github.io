@@ -135,18 +135,20 @@ Als er twee optionele argumenten worden gegeven, komt de eerste vóór het citaa
 De bovenstaande opzet gebruikt een auteur-jaarstijl, maar je kan ook numerieke verwijzingen gebruiken.
 Dat doe je door de optie `numbers` toe te voegen aan de `natbib`-regel.
 
-## TODO De `biblatex`-werkwijze
+## De `biblatex`-werkwijze
 
-Het `biblatex`-pakket werkt iets anders dan `natbib`, omdat we de databanken in de preambule selecteren maar ze in het document zelf afdrukken. Daarvoor zijn nieuwe commando's nodig.
+Het `biblatex`-pakket werkt iets anders dan `natbib`, omdat we de databanken in de preambule selecteren maar ze in het document zelf afdrukken.
+Daarvoor zijn nieuwe commando's nodig.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage[style=authoryear]{biblatex}
 \addbibresource{learnlatex.bib} % bestand met referentie-informatie
 
 \begin{document}
-Het wiskundige voorbeeld komt uit \autocite{Graham1995}.
+Het wiskundevoorbeeld komt uit \autocite{Graham1995}.
 
 Meer complexe citaties: \parencite{Graham1995} of
 \textcite{Thomas2008} of mogelijk \citetitle{Graham1995}.
@@ -161,30 +163,52 @@ Samen \autocite{Thomas2008,Graham1995}
 \end{document}
 ```
 
-Merk op dat `\addbibresource` _het volledige bestandsnaam van de databank vereist_, terwijl we de `.bib` weglaten bij `\bibliography` met `natbib`. Ook merk je dat `biblatex` langere namen gebruikt voor zijn citatiecommando’s, maar ze zijn vrij intuïtief.
+Merk op dat `\addbibresource` _het volledige bestandsnaam van de databank vereist_, terwijl we de `.bib` weglaten bij `\bibliography` met `natbib`.
+Ook zie je dat `biblatex` langere namen gebruikt voor zijn citatiecommando’s, maar ze zijn vrij intuïtief.
 
-Opnieuw kunnen korte teksten vóór en na het citaat worden ingevoegd met de optionele argumenten. Merk op dat de paginanummers hier niet voorafgegaan hoeven te worden door `p.~` of `pp.~`, `biblatex` voegt automatisch de juiste voorvoegsels toe.
+Opnieuw kunnen korte teksten vóór en na het citaat worden ingevoegd met de optionele argumenten.
+Merk op dat de paginanummers hier niet voorafgegaan hoeven te worden door `p.~` of `pp.~`, `biblatex` voegt automatisch de juiste voorvoegsels toe.
 
-In `biblatex` wordt de referentiestijl gekozen bij het laden van het pakket. Hier gebruiken we `authoryear`, maar er is ook een `numeric` stijl en nog veel meer zijn beschikbaar.
+In `biblatex` wordt de referentiestijl gekozen bij het laden van het pakket.
+Hier gebruiken we `authoryear`, maar er is ook een `numeric`-stijl en er zijn er nog veel meer beschikbaar.
 
 ## Kiezen tussen de BibTeX-werkwijze en `biblatex`
 
-Hoewel zowel de BibTeX-werkwijze als `biblatex` hun input uit BibTeX-bestanden halen en een vergelijkbare structuur in de output kunnen produceren, gebruiken ze totaal verschillende methodes. Dat betekent dat er enkele verschillen zijn die je kunnen helpen kiezen wat het beste voor jou werkt.
+Hoewel zowel de BibTeX-werkwijze als `biblatex` hun input uit BibTeX-bestanden halen en een vergelijkbare structuur in de output kunnen produceren, gebruiken ze totaal verschillende methodes.
+Dat betekent dat er enkele verschillen zijn die je kunnen helpen kiezen wat het beste voor jou werkt.
 
-In de BibTeX-werkwijze wordt de bibliografiestijl uiteindelijk bepaald door een `.bst`-bestand dat je selecteert met het `\bibliographystyle`-commando. `biblatex` gebruikt geen `.bst`-bestanden maar een ander systeem. Als je een sjabloon gebruikt dat met een `.bst`-bestand komt of als je een `.bst`-bestand krijgt voor je project, moet je de BibTeX-werkwijze gebruiken en kun je `biblatex` niet gebruiken.
+In de BibTeX-werkwijze wordt de bibliografiestijl uiteindelijk bepaald door een `.bst`-bestand dat je selecteert met het `\bibliographystyle`-commando.
+`biblatex` gebruikt geen `.bst`-bestanden maar een ander systeem.
+Als je een sjabloon gebruikt dat met een `.bst`-bestand komt of als je een `.bst`-bestand krijgt voor je project, moet je de BibTeX-werkwijze gebruiken en kan je `biblatex` niet gebruiken.
 
-De andere benadering van `biblatex` houdt in dat je de uitvoer van citatie- en bibliografiecommando's rechtstreeks kunt aanpassen vanuit je documentpreambule met LaTeX-commando’s. Aanpassingen aan BibTeX `.bst`-stijlen vereisen daarentegen meestal het bewerken van deze externe bestanden en kennis van de BibTeX-programmeertaal. Over het algemeen wordt `biblatex` als gemakkelijker aanpasbaar beschouwd dan de BibTeX-werkwijze.
+De andere benadering van `biblatex` houdt in dat je de uitvoer van citatie- en bibliografiecommando's rechtstreeks kan aanpassen vanuit je documentpreambule met LaTeX-commando’s.
+Aanpassingen aan BibTeX `.bst`-stijlen vereisen daarentegen meestal het bewerken van deze externe bestanden en kennis van de BibTeX-programmeertaal.
+Over het algemeen wordt `biblatex` als gemakkelijker aanpasbaar beschouwd dan de BibTeX-werkwijze.
 
-In `biblatex` is het over het algemeen eenvoudiger om meer geavanceerde citatiestijlen te implementeren met een groter aantal citatiecommando's. Het biedt ook meer contextafhankelijke functies. Dit is meestal minder van belang voor stijlen die gebruikelijk zijn in bètavakken, maar wel relevant in sommige gebieden van de geesteswetenschappen.
+In `biblatex` is het over het algemeen eenvoudiger om meer geavanceerde citatiestijlen te implementeren met een groter aantal citatiecommando's.
+Het biedt ook meer contextafhankelijke functies.
+Dit is meestal minder van belang voor stijlen die gebruikelijk zijn in STEM-vakgebieden, maar wel relevant in sommige gebieden van de geesteswetenschappen waar complexe stijlen kunnen voorkomen.
 
-BibTeX kan alleen US-ASCII-tekens correct sorteren en gebruikt omwegen voor andere tekens. Met Biber biedt `biblatex` volledige Unicode-sorteermogelijkheden. Daarom is `biblatex` meestal een betere keuze als je je bibliografie in een niet-ASCII/niet-Engelse volgorde wilt sorteren.
+BibTeX kan alleen US-ASCII-tekens correct sorteren en gebruikt omwegen voor andere tekens.
+Met Biber biedt `biblatex` volledige Unicode-sorteermogelijkheden.
+Daarom is `biblatex` meestal een betere keuze als je je bibliografie in een niet-ASCII/niet-Engelse volgorde wil sorteren.
 
-Omdat BibTeX al veel langer bestaat dan `biblatex`, is de BibTeX-werkwijze meer ingeburgerd. Veel uitgevers en tijdschriften verwachten dan ook bibliografieën gegenereerd via de BibTeX-werkwijze. Deze accepteren meestal geen documenten die `biblatex` gebruiken.
+Omdat BibTeX al veel langer bestaat dan `biblatex`, is de BibTeX-werkwijze meer ingeburgerd.
+Veel uitgevers en tijdschriften verwachten dan ook bibliografieën gegenereerd via de BibTeX-werkwijze.
+Deze accepteren meestal geen documenten die `biblatex` gebruiken.
 
-Kort samengevat: controleer altijd de auteurs-/indienrichtlijnen als je iets instuurt voor een tijdschrift of uitgever. Als je een `.bst`-bestand krijgt, moet je de BibTeX-werkwijze gebruiken. Als je een relatief eenvoudige bibliografie- en citatiestijl nodig hebt en alleen Engels/US-ASCII-sorting, dan volstaat de BibTeX-werkwijze. Als je een complexere stijl nodig hebt, niet-Engelse sortering of gemakkelijker toegang tot stijl-aanpassingen, bekijk dan `biblatex`.
+Kort samengevat: controleer altijd de auteurs-/indienrichtlijnen als je iets instuurt voor een tijdschrift of uitgever.
+Als je een `.bst`-bestand krijgt, moet je de BibTeX-werkwijze gebruiken.
+Als je een relatief eenvoudige bibliografie- en citatiestijl nodig hebt en alleen Engels/US-ASCII-sorting, dan volstaat de BibTeX-werkwijze.
+Als je een complexere stijl, niet-Engelse sortering of gemakkelijkere toegang tot stijlaanpassingen nodig hebt, bekijk dan `biblatex`.
 
 ## Oefeningen
 
-Probeer zowel de `natbib`- als de `biblatex`-voorbeelden uit. Voor `natbib` moet je LaTeX, BibTeX, LaTeX, LaTeX uitvoeren; voor `biblatex` is het LaTeX, Biber, LaTeX. Zoek uit hoe je dat doet in jouw editor, of probeer de automatisering van Overleaf en TeXLive.net.
+Probeer zowel de `natbib`- als de `biblatex`-voorbeelden uit.
+Voor `natbib` moet je LaTeX, BibTeX, LaTeX, LaTeX uitvoeren;
+voor `biblatex` is het LaTeX, Biber, LaTeX.
+Zoek uit hoe je dat doet in jouw tekstbewerker, of probeer de automatische systemen van Overleaf en TeXLive.net.
 
-Bekijk wat er gebeurt als je nieuwe databank-items en nieuwe citaties maakt. Voeg een citaat toe dat niet in de databank staat en bekijk hoe dat wordt weergegeven. Experimenteer met de `numeric` optie van `natbib` en `style=numeric` van `biblatex`.
+Bekijk wat er gebeurt als je nieuwe databankitems en nieuwe citaties maakt.
+Voeg een citaat toe dat niet in de databank staat en bekijk hoe dat wordt weergegeven.
+Experimenteer met de `numeric`-optie van `natbib` en `style=numeric` van `biblatex`.
