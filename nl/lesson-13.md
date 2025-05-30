@@ -1,13 +1,13 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "Structuring longer documents"
-description: "This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster."
-toc-anchor-text: "Structuring sources"
-toc-description: "Spliting up sources in a controlled way."
+title: "Langere documenten structureren"
+description: "Deze les laat zien hoe LaTeX je in staat stelt om je bronbestanden op te splitsen in kleinere, beter beheersbare bestanden, en hoe dit het bouwen van een lang document eenvoudiger en sneller maakt."
+toc-anchor-text: "Structureren van bronnen"
+toc-description: "Bronnen gecontroleerd opdelen."
 ---
 
-# Structuring longer documents
+# Langere documenten structureren
 
 <script>
 runlatex.preincludes = {
@@ -25,35 +25,31 @@ runlatex.preincludes = {
 }
 </script>
 
-<span
-  class="summary">This lesson shows how LaTeX allows you to split your sources into smaller, more manageable files, and how this can make building a long document easier and faster.</span>
+<span class="summary">Deze les laat zien hoe LaTeX je in staat stelt om je bronbestanden op te splitsen in kleinere, beter beheersbare bestanden, en hoe dit het bouwen van een lang document eenvoudiger en sneller maakt.</span>
 
-When you are writing a longer document, you’ll likely want to split up
-the source into multiple files. For example, it's very common to have
-one 'main'/'root' file, then one source file per chapter (for a book or thesis),
-or per significant section (for a long article).
+Wanneer je een langer document schrijft, wil je waarschijnlijk de broncode opdelen in meerdere bestanden.
+Het is bijvoorbeeld heel gebruikelijk om één 'hoofdbestand' te hebben, en dan één bronbestand per hoofdstuk (voor een boek of proefschrift), of per belangrijk onderdeel (voor een lang artikel).
 
-## Structuring your sources
+## Structureren van je bronbestanden
 
-LaTeX allows us to split up sources in a controlled way. There are two important
-commands here, `\input` and `\include`. We can use `\input` to make a file work
-'as though it was typed in here', so it can be used for (essentially) any
-material. The `\include` command works for chapters only: it starts a new page
-and makes some internal adjustments. But it has a big advantage: it allows us to
-be selective in which chapters to include, so you can work on part of your
-document rather than the whole thing.
+LaTeX stelt ons in staat om bronnen op een gecontroleerde manier op te splitsen.
+Er zijn twee belangrijke commando’s: `\input` en `\include`.
+Met `\input` kan je een bestand invoegen alsof het op die plaats getypt is, en het kan dus voor vrijwel alles worden gebruikt.
+Het `\include`-commando is enkel bedoeld voor hoofdstukken: het begint op een nieuwe pagina en maakt interne aanpassingen.
+Maar het heeft een groot voordeel: je kan selectief kiezen welke hoofdstukken je wil invoegen, zodat je aan een deel van je document kan werken in plaats van aan het geheel.
 
-A longer document might therefore look something like the following:
+Een langer document zou er dus ongeveer als volgt uit kunnen zien:
 
 <!-- pre0 {% raw %} -->
 ```latex
 \documentclass{book}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
-\title{A Sample Book}
-\author{John Doe \and Joe Bloggs}
+\title{Een Voorbeeldboek}
+\author{Jan Jansens \and Lies Liesens}
 
 \IfFileExists{\jobname.run.xml}
 {
@@ -65,8 +61,8 @@ A longer document might therefore look something like the following:
   }
 }
 {
-% Do a full document initially to generate
-% all the aux files
+% Maak eerst een volledig document om alle
+% hulppagina's te genereren
 }
 
 \begin{document}
@@ -89,57 +85,47 @@ A longer document might therefore look something like the following:
 ```
 <!-- {% endraw %} -->
 
-We'll look at the various aspects of this file below. (The various support files
-are at the end of this page.)
+We bekijken de verschillende aspecten van dit bestand hieronder.
+(De bijbehorende ondersteunende bestanden staan aan het einde van deze pagina.)
 
-## Using `\input`
+## Het gebruik van `\input`
 
-The `\input` command is good for parts of a long file that are _not_ separate
-chapters. In the example, we have used it to separate out the front- and
-backcovers, keeping the main file short and clear, and also meaning we could
-re-use the covers in another document. We've also used it for the 'non-chapter'
-sections at the start of our 'book': things like the preface. Again, this is
-to help keep the main file clear.
+Het `\input`-commando is handig voor delen van een lang bestand die _geen_ aparte hoofdstukken zijn.
+In het voorbeeld hebben we het gebruikt voor de voor- en achterkaft, zodat het hoofddocument kort en overzichtelijk blijft.
+Ook kunnen we de kaftbestanden hergebruiken in een ander document.
+We hebben het ook gebruikt voor de secties aan het begin van het boek die geen hoofdstuk zijn: zaken zoals het voorwoord.
+Opnieuw helpt dit om het hoofddocument overzichtelijk te houden.
 
-## Using `\include` and `\includeonly`
+## Het gebruik van `\include` en `\includeonly`
 
-The `\include` command is good for chapters, so we have used it for each full
-chapter; it always starts a new page. We have selected which chapters will
-actually be typeset using `\includeonly`, which as you can see takes a
-comma-separated list of file names. When you use `\includeonly`, you can shorten
-how long your typesetting takes and produce a 'selective' PDF for proofreading.
-In addition, the key advantage of `\includeonly` is that LaTeX will use all of
-the cross reference information from the `.aux` files of other included files.
+Het `\include`-commando is ideaal voor hoofdstukken, dus we hebben het gebruikt voor elk volledig hoofdstuk;
+het begint altijd op een nieuwe pagina.
+We hebben met `\includeonly` geselecteerd welke hoofdstukken daadwerkelijk worden gezet.
+Zoals je kan zien, gebruikt `\includeonly` een lijst van bestandsnamen, gescheiden door komma’s.
+Door `\includeonly` te gebruiken, kan je het zetproces versnellen en een 'selectieve' PDF maken om te proeflezen.
+Het belangrijkste voordeel is dat LaTeX wel alle kruisverwijzingen gebruikt uit de `.aux`-bestanden van andere hoofdstukken.
 
-## Creating a table of contents
+## Een inhoudsopgave maken
 
-The `\tableofcontents` command uses the information from sectioning
-commands to populate the table of contents.  It has its own auxiliary
-file, with extension `.toc`, so you may need to run LaTeX twice to
-resolve the information. The table is generated automatically from the
-section titles. There are similar commands for `\listoffigures` and
-`\listoftables`, which work from the float environment captions, and
-use files with extension `.lof` and `.lot` respectively.
+Het `\tableofcontents`-commando gebruikt de informatie uit de sectiecommando’s om de inhoudsopgave op te bouwen.
+Hiervoor wordt een apart hulpbestand met de extensie `.toc` gebruikt, dus je moet LaTeX mogelijk twee keer draaien om alles correct weer te geven.
+De inhoudsopgave wordt automatisch gegenereerd op basis van de sectietitels.
+Er zijn soortgelijke commando’s voor `\listoffigures` en `\listoftables`, die werken met de onderschriften van afbeeldingen en tabellen en de bestanden `.lof` en `.lot` gebruiken.
 
-## Splitting the document into parts
+## Het document opdelen
 
-The `\frontmatter`, `\mainmatter`, and `\backmatter` commands
-affect the formatting.
-For instance, `\frontmatter` changes the page numbering to
-Roman numbers.
-The `\appendix` command changes the numbering to `A`, `B`, etc.,
-so for instance in the first chapter after `\appendix`,
-the header says `Appendix A`.
+De commando’s `\frontmatter`, `\mainmatter` en `\backmatter` beïnvloeden de opmaak.
+Zo schakelt `\frontmatter` over op Romeinse paginanummers.
+Het commando `\appendix` verandert de nummering naar `A`, `B`, enz., dus bijvoorbeeld in het eerste hoofdstuk na `\appendix` zal de kop `Appendix A` luiden.
 
-## Exercises
+## Oefeningen
 
-Experiment with the basic structure of the demonstration document,
-try adding and removing entries for `\includeonly` and see the effect.
+Experimenteer met de basisstructuur van het voorbeelddocument.
+Probeer hoofdstukken toe te voegen en te verwijderen via `\includeonly` en kijk wat er gebeurt.
 
-Add some floats and produce a list of figures and tables.
-If using a locally installed LaTeX, do you see
-how many LaTeX runs are required? (The online systems re-run LaTeX
-"behind the scenes" so the additional required runs are not so obvious.)
+Voeg enkele floats toe en genereer een lijst van figuren en tabellen.
+Als je een lokale LaTeX-installatie gebruikt, kan je dan zien hoe vaak LaTeX moet worden uitgevoerd?
+(Online systemen draaien LaTeX "achter de schermen" opnieuw, waardoor dat minder opvalt.)
 
 ----
 
@@ -158,32 +144,32 @@ how many LaTeX runs are required? (The online systems re-run LaTeX
 #### pref.tex
 <!-- pre2 {% raw %} -->
 ```latex
-\chapter{Preface}
-The preface text. See \cite{doody}.
+\chapter{Voorwoord}
+De tekst van het voorwoord. Zie \cite{doody}.
 ```
 <!-- {% endraw %} -->
 
 #### chap1.tex
 <!-- pre3 {% raw %} -->
 ```latex
-\chapter{Introduction}
-The first chapter text.
+\chapter{Inleiding}
+De tekst van het eerste hoofdstuk.
 ```
 <!-- {% endraw %} -->
 
 #### chap2.tex
 <!-- pre4 {% raw %} -->
 ```latex
-\chapter{Something}
-The second chapter text.
+\chapter{Iets Anders}
+De tekst van het tweede hoofdstuk.
 ```
 <!-- {% endraw %} -->
 
-####  append.tex
+#### append.tex
 <!-- pre5 {% raw %} -->
 ```latex
 \chapter*{Appendix}
-The first appendix text.
+De tekst van de eerste appendix.
 ```
 <!-- {% endraw %} -->
 
@@ -191,7 +177,7 @@ The first appendix text.
 <!-- pre6 {% raw %} -->
 ```latex
 \begin{center}
-The front cover
+De voorkaft
 \end{center}
 ```
 <!-- {% endraw %} -->
@@ -201,7 +187,7 @@ The front cover
 ```latex
 \begin{center}
 \large
-For \ldots
+Voor \ldots
 \end{center}
 ```
 <!-- {% endraw %} -->
@@ -219,7 +205,7 @@ Copyright 2020 learnlatex.
 <!-- pre9 {% raw %} -->
 ```latex
 \begin{center}
-The back cover
+De achterkaft
 \end{center}
 ```
 <!-- {% endraw %} -->
