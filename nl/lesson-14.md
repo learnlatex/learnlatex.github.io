@@ -1,92 +1,68 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "Selecting fonts and using Unicode engines"
-description: "This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support."
-toc-anchor-text: "Fonts & Unicode engines"
-toc-description: "Selecting fonts and file encoding."
+title: "Lettertypen selecteren en Unicode-engines gebruiken"
+description: "Deze les geeft context over hoe LaTeX Unicode-invoer interpreteert en hoe dat invloed heeft op wat je typt en welke lettertypen je gebruikt. Leer over ondersteuning voor Unicode en OpenType-lettertypen."
+toc-anchor-text: "Lettertypen & Unicode-engines"
+toc-description: "Lettertypen en bestandscodering selecteren."
 ---
 
-# Fonts and Unicode engines
+# Lettertypen en Unicode-engines
 
 <span
-  class="summary">This lesson gives context on how LaTeX interprets Unicode input and how that affects what you type and the fonts you use. Learn about Unicode and OpenType fonts support.</span>
+  class="summary">Deze les geeft context over hoe LaTeX Unicode-invoer interpreteert en hoe dat invloed heeft op wat je typt en welke lettertypen je gebruikt. Leer over ondersteuning voor Unicode en OpenType-lettertypen.</span>
 
-When TeX and LaTeX first started being widely used they largely only handled
-European languages out of the box, although there was some capability for using
-other alphabets such as Greek and Russian.
+Toen TeX en LaTeX voor het eerst op grote schaal werden gebruikt, ondersteunden ze vooral Europese talen, hoewel er enige ondersteuning was voor andere alfabetten zoals Grieks en Russisch.
 
-## Accents and accented letters
+## Accenten en letters met accenten
 
-Originally, accents and accented letters were typed using control sequences or
-macros such as `\c{c}` for ‘ç’ and `\'e` for ‘é’. While some people continue to
-use these input methods because they can be easier to type, others wanted to be
-able to use the keys on their keyboards to input such symbols directly.
+Oorspronkelijk werden accenten en letters met accenten getypt met behulp van controle-sequenties of macro’s zoals `\c{c}` voor ‘ç’ en `\'e` voor ‘é’.
+Hoewel sommige mensen deze invoermethoden blijven gebruiken omdat ze gemakkelijker te typen zijn, wilden anderen graag direct symbolen typen met behulp van hun toetsenbord.
 
-Before Unicode, LaTeX provided support for many types of *file encoding* that
-allowed text to be written in various languages natively — for example, using
-the `latin1` encoding French users could write ‘`déjà vu`’ and LaTeX would
-internally translate the accented letters into TeX commands to produce the
-correct output.
+Voor de komst van Unicode bood LaTeX ondersteuning voor veel soorten *bestandscoderingen* waarmee tekst rechtstreeks in verschillende talen geschreven kon worden — bijvoorbeeld, met de `latin1`-codering konden Franse gebruikers ‘`déjà vu`’ schrijven en LaTeX zou de letters met accenten intern vertalen naar TeX-commando’s om de juiste uitvoer te genereren.
 
-This approach is still in use in modern LaTeX when using the `pdflatex` engine.
-By default all files are assumed to be Unicode (UTF-8 encoded) unless otherwise
-specified. Although this engine is limited to 8-bit fonts, most European
-languages can be supported.
+Deze aanpak wordt nog steeds gebruikt in LaTeX bij gebruik van de `pdflatex`-engine.
+Standaard wordt verondersteld dat alle bestanden Unicode (UTF-8 gecodeerd) zijn, tenzij anders aangegeven.
+Hoewel deze engine beperkt is tot 8-bit-lettertypen, kunnen de meeste Europese talen worden ondersteund.
 
-## Font selection
+## Lettertypekeuze
 
-Font selection with `pdflatex` uses the robust LaTeX font selection scheme, and
-nowadays there are many fonts ready-to-use in a standard LaTeX distribution. For
-example, the TeX Gyre fonts are a suite of high-quality fonts based on common
-fonts that most people are familiar with such as Times, Helvetica, Palatino, and
-others. To load these fonts, it is as simple as loading a package with the
-appropriate name. For a Times lookalike, the TeX Gyre name is Termes:
+Het selecteren van een lettertype met `pdflatex` gebruikt het robuuste LaTeX-lettertypeselectiesysteem, en tegenwoordig zijn er veel lettertypen direct beschikbaar in een standaard LaTeX-distributie.
+De TeX Gyre-lettertypen zijn bijvoorbeeld een reeks hoogwaardige lettertypen gebaseerd op bekende lettertypen zoals Times, Helvetica, Palatino, en andere.
+Deze lettertypen kunnen eenvoudig worden geladen met een package met de juiste naam.
+Voor een lettertype dat lijkt op Times, is de TeX Gyre-naam Termes:
 
 ```latex
 \usepackage{tgtermes}
 ```
 {: .noedit :}
 
-For `pdflatex`, most fonts are accessible through packages.  You can have a look
-at [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) or the
-[CTAN page on the ‘Font’ topic](https://www.ctan.org/topic/font) to see some
-options.  You can also search on the Internet for the font you want, and look
-for a `pdflatex`-compatible package version.  If you want to use a proprietary
-font, you can search for a suitable clone, which for most applications is
-similar enough to the original.
+Voor `pdflatex` zijn de meeste lettertypen toegankelijk via pakketten.
+Je kan een kijkje nemen op [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) of op de [CTAN-pagina over het onderwerp ‘Font’](https://www.ctan.org/topic/font) om enkele opties te zien.
+Je kan ook op internet zoeken naar het lettertype dat je wil gebruiken, en zoeken naar een versie die compatibel is met `pdflatex`.
+Als je een propriëtair lettertype wil gebruiken, kan je zoeken naar een geschikte kloon die voor de meeste toepassingen voldoende op het origineel lijkt.
 
-## The Unicode era
+## Het Unicode-tijdperk
 
-As `pdflatex` is limited to 8-bit file encodings and 8-bit fonts, it cannot
-natively use modern OpenType fonts and easily switch between multiple languages
-that use different alphabets (or scripts, to use the technical term). There are
-two replacements for pdfTeX that natively use Unicode input and modern fonts:
-XeTeX and LuaTeX. For LaTeX, these are typically invoked in your editor using
-the engines `xelatex` and `lualatex` respectively.
+Aangezien `pdflatex` beperkt is tot 8-bit-bestandscoderingen en 8-bit-lettertypen, kan het niet standaard moderne OpenType-lettertypen gebruiken en eenvoudig schakelen tussen meerdere talen die verschillende alfabetten gebruiken (of ‘scripts’, in technische termen).
+Er zijn twee vervangers voor pdfTeX die Unicode-invoer en moderne lettertypen standaard ondersteunen: XeTeX en LuaTeX.
+Voor LaTeX worden deze doorgaans gebruikt via de engines `xelatex` en `lualatex`.
 
-In these engines, font selection is performed by the `fontspec` package, and for
-simple documents can look as easy as:
+In deze engines wordt de lettertypekeuze geregeld door het `fontspec`-pakket, en voor eenvoudige documenten kan dat er eenvoudigweg als volgt uitzien:
 ```latex
 \usepackage{fontspec}
 \setmainfont{texgyretermes-regular.otf}
 ```
 {: .noedit :}
 
-This selects the TeX Gyre Termes font, as in the `pdflatex` example above.
-Notably, this approach works for *any* OpenType font.  Some fonts available for
-`pdflatex` are also available to `xelatex` and `lualatex` through their
-respective packages as well, or by loading any font you have installed on your
-computer by using `fontspec` as shown above.
+Dit selecteert het TeX Gyre Termes-lettertype, net als in het `pdflatex`-voorbeeld hierboven.
+Opmerkelijk is dat deze aanpak werkt voor *elk* OpenType-lettertype.
+Sommige lettertypen die beschikbaar zijn voor `pdflatex`, zijn ook beschikbaar voor `xelatex` en `lualatex` via hun respectievelijke pakketten, of door elk lettertype te laden dat op je computer is geïnstalleerd met behulp van `fontspec` zoals hierboven getoond.
 
-[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) also shows fonts
-with OpenType formats available, so you can use that as a resource for looking
-up fonts, as well as the [CTAN page](https://www.ctan.org/topic/font) mentioned
-earlier.
+[The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) toont ook lettertypen met OpenType-formats, zodat je die bron kan gebruiken om lettertypen op te zoeken, evenals de eerder genoemde [CTAN-pagina](https://www.ctan.org/topic/font).
 
-Having selected a font, input can now be typed directly in plain Unicode into a 
-source document. Here is an example showing some Latin and Greek letters as 
-well as some CJK ideographs:
+Zodra een lettertype is geselecteerd, kan de invoer nu direct in gewone Unicode in een brondocument worden getypt.
+Hier is een voorbeeld dat enkele Latijnse en Griekse letters toont, alsook enkele CJK-ideogrammen:
 
 ```latex
 % !TEX xelatex
@@ -102,4 +78,4 @@ ABC → αβγ → {\cjkfont 你好}
 ```
 
 <p 
-  class="hint">When switching between languages it is usually important to also change things like hyphenation patterns and so on, and the <code>babel</code> and <code>polyglossia</code> packages both provide robust features to do this.</p>
+  class="hint">Bij het schakelen tussen talen is het meestal ook belangrijk om zaken zoals afbrekingspatronen aan te passen, en de pakketten <code>babel</code> en <code>polyglossia</code> bieden beide robuuste functies om dit te doen.</p>
