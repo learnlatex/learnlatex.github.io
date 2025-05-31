@@ -1,28 +1,20 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "More on: Selecting fonts and using Unicode engines"
-description: "This lesson shows a basic example in Lua for users who want to write Lua code in their document."
-toc-anchor-text: "More on: Selecting fonts and using Unicode engines"
+title: "Meer over: Lettertypen selecteren en Unicode-engines gebruiken"
+description: "Deze les toont een basisvoorbeeld in Lua voor gebruikers die Lua-code in hun document willen schrijven."
+toc-anchor-text: "Meer over: Lettertypen selecteren en Unicode-engines gebruiken"
 ---
-
-
-
 
 ## Lua
 
-The LuaTeX engine provides access to OpenType fonts in a similar way
-to XeTeX, and most uses of the `fontspec` package work equally well
-with either engine.
+De LuaTeX-engine biedt toegang tot OpenType-lettertypen op een vergelijkbare manier als XeTeX, en de meeste toepassingen van het `fontspec`-pakket werken even goed met beide engines.
 
-LuaTeX also extends TeX in other ways, notably by embedding the Lua
-scripting language. This may be used for programming in a style more
-familiar to people used to ‘mainstream’ programming languages. It also
-offers the possibility to access inner workings of the TeX system and
-modify the behaviour by substituting new code written in Lua.
+LuaTeX breidt TeX ook op andere manieren uit, met name door de Lua-scripttaal te integreren.
+Deze kan worden gebruikt om te programmeren in een stijl die meer vertrouwd is voor mensen die gewend zijn aan ‘mainstream’ programmeertalen.
+Het biedt ook de mogelijkheid om toegang te krijgen tot de interne werking van het TeX-systeem en het gedrag aan te passen door nieuwe code in Lua te schrijven.
 
-Lua programming is not covered by this course but a simple example to
-calculate 2π is shown here.
+Programmeren in Lua wordt niet behandeld in deze cursus, maar hier is een eenvoudig voorbeeld om 2π te berekenen.
 
 ```latex
 %!TEX lualatex
@@ -34,4 +26,3 @@ $ 2\pi \approx \directlua{ tex.print(2 * math.pi) } $
 
 \end{document}
 ```
-
