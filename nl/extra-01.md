@@ -4,7 +4,7 @@ lang: "nl"
 title: "Verdere voorbeelden"
 description: "Deze les toont uiteenlopende voorbeelden van andere populaire LaTeX-pakketten die niet aan bod kwamen in de hoofdlessen."
 toc-anchor-text: "Verdere voorbeelden"
-toc-description: "Een glimp op wat LaTeX kan."
+toc-description: "Een glimp van wat LaTeX kan."
 ---
 
 # Verdere voorbeelden
