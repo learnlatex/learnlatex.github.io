@@ -66,7 +66,7 @@ Dit produceert een meerregelige foutmelding in het logbestand.
 ! Undefined control sequence.
 \mycommand ->\textbold 
                        {hmmm}
-l.8 Mijn commando wordt hierna gebruikt \mycommand
+l.9 Mijn commando wordt hierna gebruikt \mycommand
                                       .
 ? 
 ```
@@ -87,7 +87,7 @@ Hoewel de fout wordt gemeld op regel 8, zit de "echte" fout in de definitie op r
 Let op dat sommige tekstbewerkers slechts éénregelige "samenvattingen" van de foutlog tonen.
 Dit kan bijzonder misleidend zijn als het wordt weergegeven als:
 
-`line 8: undefined command: ...\mycommand`
+`line 9: undefined command: ...\mycommand`
 
 omdat het dan lijkt alsof `\mycommand` niet is gedefinieerd.
 
@@ -116,7 +116,7 @@ De sluitende accolade zorgt ervoor dat LaTeX’s optiesparser faalt, en je krijg
 Hoewel de foutbeschrijving niet behulpzaam is, tonen de volgende twee regels wel nauwkeurig de locatie van de fout aan de hand van het regeleinde dat laat zien hoe ver TeX had gelezen:
 
 ```
-l.4 \usepackage[leqno}
+l.5 \usepackage[leqno}
                       {amsmath}
 ```
 {: .noedit :}
