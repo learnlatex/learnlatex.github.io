@@ -101,6 +101,7 @@ Podemos também adicionar comentários em um arquivo LaTeX prefixando-o com um
 
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % Um comentário no preâmbulo
 \begin{document}
@@ -135,7 +136,7 @@ Se você precisar mostrar um desses caracteres especiais no texto, colcamos mais
 informações sobre isso na
 [página de detalhes adicionais desta lição](more-03).
 
-## Exercise
+## Exercício
 
 Experimente com a edição e sistema tipográfico online;  clique no botão para
 compor o conteúdo, então edite-o na página e componha novamente.

@@ -100,6 +100,7 @@ that to show the structure:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % The document class with options
+% select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % A comment in the preamble
 \begin{document}

@@ -96,6 +96,7 @@ para mostrar la estructura del documento:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % El tipo de documento con las opciones
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % Un comentario en el preámbulo
 \begin{document}
