@@ -1,21 +1,21 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "More on: Dealing with errors"
-description: "This lesson show a few more common errors in LaTeX and explains about chained errors and silent errors."
-toc-anchor-text: "More on: Dealing with errors"
+title: "Meer over: Fouten afhandelen"
+description: "Deze les toont nog enkele veelvoorkomende fouten in LaTeX en legt uit over geketende fouten en stille fouten."
+toc-anchor-text: "Meer over: Fouten afhandelen"
 ---
 
-## Errors reported at ends of environments
+## Fouten die aan het einde van omgevingen worden gemeld
 
-Some environments (notably `amsmath` alignments and `tabularx` tables)
-scan the whole environment body before processing the content. This means that
-any error within the environment is reported on the last line. However, as seen in the
-main lesson, TeX's display of the error context should still pinpoint the error location.
+Sommige omgevingen (met name `amsmath`-uitlijningen en `tabularx`-tabellen) scannen de volledige inhoud van de omgeving voordat ze die verwerken.
+Dit betekent dat elke fout binnen de omgeving op de laatste regel wordt gemeld. 
+Zoals te zien in de hoofdles zou de foutcontext van TeX nog steeds de foutlocatie moeten aangeven.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 
 \usepackage{amsmath}
 
@@ -30,15 +30,14 @@ main lesson, TeX's display of the error context should still pinpoint the error 
 \end{document}
 ```
 
-Here the error will be reported on line 12
+Hier wordt de fout gemeld op regel 13
 
 ```
-l.12 \end{align}
+l.13 \end{align}
 ```
 {: .noedit :}
 
-Although the real error is on line 10 as shown by the context lines:
-
+Hoewel de echte fout op regel 11 staat, zoals te zien is in de contextregels:
 
 ```
 ! Undefined control sequence.
@@ -47,92 +46,86 @@ Although the real error is on line 10 as shown by the context lines:
 ```
 {: .noedit :}
 
+## Valse fouten door eerdere fouten
 
-## Spurious errors due to earlier errors
+Wanneer je LaTeX interactief aanroept via de opdrachtregel, kan je
+de verwerking stoppen bij de eerste fout met `x`, het document bewerken
+en opnieuw uitvoeren.
+Maar als je langs de fout scrolt of een tekstbewerker of online systeem gebruikt dat dat automatisch doet, zal TeX zich proberen te herstellen;
+dit kan echter leiden tot meerdere foutmeldingen.
 
-When calling LaTeX interactively from the command line it is possible
-to stop the processing at the  first error with `x`, edit the document
-and re-run. However if you scroll past the error or use an editor or
-online system that does this for you then TeX will try to recover;
-however this may lead to several more errors being reported.
-
-So do not be too concerned about the _number_ of errors reported and
-always concentrate on fixing the first reported error.
-
+Maak je dus niet al te veel zorgen over het _aantal_ gerapporteerde fouten en
+richt je altijd op het oplossen van de eerste gemelde fout.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 
 \begin{document}
-Text_word  $\alpha + \beta$.
+Tekst_woord  $\alpha + \beta$.
 
-More text.
+Meer tekst
 \end{document}
 ```
 
-The error here is the underscore `_` which should be entered as `\_`.
+De fout hier is de underscore `_`, die als `\_` moet worden ingevoerd.
 
-TeX does report this correctly with the _first_ error message
+TeX meldt dit correct met de _eerste_ foutmelding:
 
 ```
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.5 Text_
-         word  $\alpha + \beta$.
+l.6 Tekst_
+          woord  $\alpha + \beta$.
 ?
 ```
 {: .noedit :}
 
-However if you scroll past the `?` prompt then TeX recovers by adding
-a `$` so the `_` is seen in math mode as a subscript. The math mode
-then continues until the `$` which ends math, so the following
-`\alpha` is seen in text mode generating another error
+Als je echter langs de `?`-prompt scrolt, herstelt TeX zich door een `$` toe te voegen zodat de `_` wordt gezien als een subscript in de wiskundige modus.
+De wiskundige modus gaat dan door tot de `$`, waarna `\alpha` wordt gezien als tekst, wat een nieuwe fout veroorzaakt:
 
 ```
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.5 Text_word  $\alpha
-                       + \beta$.
+l.6 Tekst_woord  $\alpha
+                        + \beta$.
 ? 
 ```
 {: .noedit :}
 
+## Fouten die geen foutprompt veroorzaken
 
-## Errors that do not trigger an error prompt
+Sommige fouten, met name fouten die pas aan het einde van het bestand worden gedetecteerd, genereren geen foutprompt, maar geven alleen een waarschuwing in het logbestand.
 
-Some errors, especially errors that are not detected until the end of the file,
-do not generate an error prompt but just give a warning in the log.
-
-If you try this example using the TeXLive.net server it will return a PDF by default;
-to see the error message in the log add `%!TeX log`.
+Als je dit voorbeeld probeert met de TeXLive.net-server, krijg je standaard een PDF;
+om de foutmelding in het logbestand te zien, voeg `%!TeX log` toe.
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 
 \begin{document}
 
- Text {\large some large text) normal size?
+ Tekst {\large wat grote tekst) doorsnee grootte?
 
 \end{document}
 ```
 
-In this example the size change was mistakenly ended with `)` rather
-than `}`. This is not detected until the end of the file when TeX
-detects that there is still an unclosed group. It reports here the
-line at which the group was opened `{`. It can not detect the actual
-error as the `)` is seen as "normal text".
+In dit voorbeeld is de grootteverandering per ongeluk beëindigd met `)` in plaats van met `}`.
+Dit wordt pas aan het einde van het bestand gedetecteerd wanneer TeX merkt dat er nog een niet-gesloten groep is.
+TeX meldt dan de regel waarop de groep werd geopend `{`.
+De echte fout kan niet worden gedetecteerd omdat `)` wordt gezien als "normale tekst".
 
 ```
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 5 ({)
+### simple group (level 1) entered at line 6 ({)
 ```
 {: .noedit :}
-
 
 <script>
 window.addEventListener('load', function(){
