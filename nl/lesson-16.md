@@ -1,89 +1,71 @@
 ---
 layout: "lesson"
 lang: "nl"
-title: "Accessing documentation and getting help"
-description: "This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble."
-toc-anchor-text: "Help & documentation"
-toc-description: "Accessing help and documentation."
+title: "Documentatie raadplegen en hulp krijgen"
+description: "Deze les toont de belangrijkste bronnen van documentatie voor LaTeX-gerelateerde software en pakketten, en hoe je hulp kan zoeken als je vastloopt."
+toc-anchor-text: "Hulp & documentatie"
+toc-description: "Hulp en documentatie raadplegen."
 ---
 
-# Documentation and getting help
+# Documentatie en hulp krijgen
 
-<span
-  class="summary">This lesson shows the main sources of documentation for LaTeX-related software and packages, and how to seek help when you are in trouble.</span>
+<span class="summary">Deze les toont de belangrijkste bronnen van documentatie voor LaTeX-gerelateerde software en pakketten, en hoe je hulp kan zoeken als je vastloopt.</span>
 
-There are several ways to access the documentation of a package or class.
+Er zijn verschillende manieren om de documentatie van een pakket of klasse te raadplegen.
 
 ## `texdoc`
 
-If you've installed a TeX distribution (_e.g._, TeX Live or MiKTeX) and included
-the documentation when you installed it you can access the locally saved
-documentation using the `texdoc` command line tool. Using:
+Als je een TeX-distributie hebt geïnstalleerd (_bijv._, TeX Live of MiKTeX) en daarbij ook de documentatie hebt geïnstalleerd, dan kan je de lokaal opgeslagen documentatie openen met het opdrachtregelprogramma `texdoc`. Door
 
-`texdoc` < _pkg_ >
+`texdoc` < _pkt_ >
 
-will open the documentation of package `<pkg>`. The utility will search the
-available documentation and open what it thinks is the closest match to your
-search term. You can list and choose from among all the viable results it finds
-using:
+uit te voeren, open je de documentatie van het pakket `<pkt>`.
+De tool zoekt naar beschikbare documentatie en opent wat volgens hem het beste overeenkomt met je zoekterm.
+Je kan een lijst krijgen van alle mogelijke resultaten en er één uitkiezen met:
 
-`texdoc -l` < _pkg_ >
+`texdoc -l` < _pkt_ >
 
 ## texdoc.org
 
-This is a [website](https://texdoc.org/) which works similarly to the `texdoc` utility. You can search
-for documentation they have available just like you would do with `texdoc -l`
-and then choose from among the results.
+Dit is een [website](https://texdoc.org/) die gelijkaardig werkt als het hulpprogramma `texdoc`.
+Je kan zoeken naar beschikbare documentatie net zoals je zou doen met `texdoc -l` en dan kiezen uit de resultaten.
 
 ## CTAN
 
-[CTAN](https://www.ctan.org) is the Comprehensive TeX Archive Network. Most LaTeX packages are published
-there. You can search the site for a package to access its
-documentation. Usually the packages are saved in `ctan.org/pkg/<pkg-name>`
-and you can access the README and documentation of the packages stored on CTAN
-there.
+[CTAN](https://www.ctan.org) is het Comprehensive TeX Archive Network.
+De meeste LaTeX-pakketten worden daar gepubliceerd.
+Je kan op de site zoeken naar een pakket om de documentatie te bekijken.
+Meestal zijn de pakketten te vinden op `ctan.org/pkg/<pakket-naam>` en kan je daar de README en documentatie van het pakket openen.
 
-## Books on LaTeX
+## Boeken over LaTeX
 
-There are several books available that can help you learn more about LaTeX.
-As a beginner, you will gain a lot from a structured beginners guide, as
-those can give a lot more detail than we've covered here. You might also
-want access to a reference with more detail and recommendations.
+Er zijn meerdere boeken beschikbaar die je kunnen helpen om meer over LaTeX te leren.
+Als beginner kan je veel baat hebben bij een gestructureerde beginnersgids, omdat die vaak veel meer detail biedt dan wat we hier behandelen.
+Je wil misschien ook toegang hebben tot een referentie met meer uitleg en aanbevelingen.
 
-The LaTeX team have [a list of books](https://www.latex-project.org/help/books/)
-largely written by members. The most notable are [Lamport's official
-guide](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)
-and the comprehensive
-[LaTeX Companion 3rd edition](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
+Het LaTeX-team heeft [een lijst met boeken](https://www.latex-project.org/help/books/), grotendeels geschreven door leden.
+De bekendste zijn [Lamports officiële gids](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838) en de uitgebreide [LaTeX Companion 3e editie](https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489).
 
-Other books aimed at learning LaTeX include
+Andere boeken gericht op het leren van LaTeX zijn:
 
-- [_Guide to
-  LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) by Helmut
-  Kopka and Patrick Daly: available as an e-book
-- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
-- [_Using LaTeX to write a PhD
-  thesis_](https://www.dickimaw-books.com/latex/thesis/) by
-  Nicola Talbot: available as a free e-book or low-cost printed edition
-- [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide)
-  by Stefan Kottwitz: available as an e-book and in print
-- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) by
-  Marc van Dongen: available as an e-book and in print
+- [_Guide to LaTeX_](https://www.informit.com/store/guide-to-latex-9780132651714) door Helmut Kopka en Patrick Daly: beschikbaar als e-boek
+- [_LaTeX for Complete Novices_](https://www.dickimaw-books.com/latex/novices/) door Nicola Talbot: gratis e-boek of goedkope papieren versie
+- [_Using LaTeX to write a PhD thesis_](https://www.dickimaw-books.com/latex/thesis/) door Nicola Talbot: gratis e-boek of goedkope papieren versie
+- [_LaTeX Beginner's Guide_](https://www.packtpub.com/gb/hardware-and-creative/latex-beginners-guide) door Stefan Kottwitz: beschikbaar als e-boek en ook gedrukt
+- [_LaTeX and Friends_](https://www.springer.com/gp/book/9783642238154) door Marc van Dongen: beschikbaar als e-boek en ook gedrukt
 
-## Getting help
+## Hulp krijgen
 
-There are various online forums for asking LaTeX questions; perhaps the most
-popular today is [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
-Whenever you ask a question, it's best to first get your example clear: what is
-normally known as a 'minimal working example' (MWE). This doesn't mean the code
-works (as you wouldn't be asking otherwise!), but rather it means you've done
-your best to make it clear, self-contained and minimal. The latter means
-having only enough content to show the issue.
+Er zijn diverse online fora voor het stellen van LaTeX-vragen;
+het meest populair is tegenwoordig [TeX - LaTeX StackExchange](https://tex.stackexchange.com).
+Wanneer je een vraag stelt, is het het beste om eerst een duidelijk voorbeeld te maken: een zogeheten 'minimal working example' (MWE).
+Dit betekent niet dat de code werkt (je stelt immers een vraag!), maar wel dat je je best hebt gedaan om het voorbeeld duidelijk, op zichzelf staand en zo klein mogelijk te maken.
+Dat laatste betekent: alleen genoeg inhoud om het probleem te tonen.
 
-### How to provide a minimal working example (MWE)
+### Hoe maak je een minimal working example (MWE)
 
-How do you construct a MWE? Normally easiest is to start from
+Hoe maak je een MWE?
+Meestal is het het makkelijkst om te beginnen met
 
 ```latex
 \documentclass{article}
@@ -93,28 +75,28 @@ Text
 \end{document}
 ```
 
-and add lines one at a time until you show the issue. You can try to
-'cut down' your real file, but that can be a long process.
+en regel voor regel toe te voegen tot je het probleem kan laten zien.
+Je kan ook proberen je echte bestand 'in te korten', maar dat kan veel tijd kosten.
 
 <p 
-  class="hint">If you need more text to show page breaking and other effects, then packages such as <code>lipsum</code> may be used to generate nonsense paragaraphs of text while keeping your test file small.</p>
+  class="hint">Als je meer tekst nodig hebt om bijvoorbeeld pagina-afbrekingen te tonen, dan kan je het pakket <code>lipsum</code> gebruiken om nep-paragrafen te genereren en zo je testbestand toch klein te houden.</p>
 
+### Logbestand
 
-### Log file
+Eén ding dat je zeker nodig hebt, is je logbestand;
+dit wordt elke keer aangemaakt door LaTeX wanneer je het uitvoert, en heeft dezelfde naam als je invoerbestand maar eindigt op `.log`.
 
-One thing you will want available is your log file; this is created by LaTeX
-every time you run it, and has the same name as your input but ending `.log`.
+<p class="hint">
+  Afhankelijk van je bureaubladinterface moet je mogelijk 'bestandsnaamextensies tonen' inschakelen om het juiste bestand te vinden.</p>
 
-<p 
-  class="hint">Depending on your desktop interface, you might need to 'show extensions' to work out which file it is.</p>
+In het logbestand kan je altijd de volledige foutmeldingen terugvinden.
+De foutmeldingen van LaTeX proberen behulpzaam te zijn, maar ze zijn niet zoals je gewend bent van tekstverwerkers.
 
-In the log file, you can always see the full error messages. LaTeX's error messages try to be helpful, but they are not the same as messages in word processors.
+<p class="hint">
+  Sommige tekstbewerkers maken het moeilijk om de volledige fouttekst te zien, wat belangrijke details kan verbergen.</p>
 
-<p 
-  class="hint">Some editors also make it hard to see the 'full' text of an error, which can hide key details.</p>
+Als je een probleem hebt, zullen ervaren LaTeX-gebruikers vaak vragen om een kopie van je logbestand.
 
-If you have a problem, expert LaTeX users will often ask for a copy of your log file.
+### Verder gaan
 
-### Going further
-
-Finally we offer a [gallery of small examples](./extra-01) showing a range of different subject areas not covered in this introduction, and different LaTeX packages in those areas.
+Tot slot bieden we een [galerij met kleine voorbeelden](./extra-01) die een reeks onderwerpen laten zien die niet in deze inleiding behandeld zijn, en LaTeX-pakketten die in die gebieden gebruikt worden.
