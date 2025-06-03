@@ -46,7 +46,7 @@ Hoewel de echte fout op regel 11 staat, zoals te zien is in de contextregels:
 ```
 {: .noedit :}
 
-## Valse fouten door eerdere fouten
+## Nepfouten door eerdere fouten
 
 Wanneer je LaTeX interactief aanroept via de opdrachtregel, kan je
 de verwerking stoppen bij de eerste fout met `x`, het document bewerken
@@ -123,7 +123,7 @@ De echte fout kan niet worden gedetecteerd omdat `)` wordt gezien als "normale t
 ```
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 6 ({)
+### simple group (level 1) entered at line 8 ({)
 ```
 {: .noedit :}
 
