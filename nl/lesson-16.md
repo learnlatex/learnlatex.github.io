@@ -7,7 +7,7 @@ toc-anchor-text: "Hulp & documentatie"
 toc-description: "Hulp en documentatie raadplegen."
 ---
 
-# Documentatie en hulp krijgen
+# Documentatie raadplegen en hulp krijgen
 
 <span class="summary">Deze les toont de belangrijkste bronnen van documentatie voor LaTeX-gerelateerde software en pakketten, en hoe je hulp kan zoeken als je vastloopt.</span>
 
