@@ -1,8 +1,8 @@
 ---
 layout: "page"
 lang: "nl"
-title: "Using the learnlatex.org site"
-description: "This page explains the learnlatex.org website itself and how to best make use of it."
+title: "De learnlatex.org-website gebruiken"
+description: "Deze pagina legt uit hoe de learnlatex.org-website werkt en hoe je deze het beste kan gebruiken."
 permalink: /nl/help
 ---
 <script>
@@ -11,156 +11,124 @@ permalink: /nl/help
   }
 </script>
 
-# Help
+# Hulp
 
+## Wegwijs op de site
 
-## Navigating the site
+De cursus bestaat uit 16 kernlessen die te vinden zijn via de [inhoudsopgave]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) op de [startpagina](./).
 
-The course consists of 16 core lessons that can be reached from the
-[table of contents]({{ "/" | absolute_url | append: page.lang | append: "/#toc" }}) on the [start page](./).
+Elke les heeft een link naar een bijbehorende les over hetzelfde onderwerp die dieper op de materie ingaat.
+Het is mogelijk om alle 16 lessen door te nemen _zonder_ de aanvullende lessen te lezen.
 
-Each lesson has a link to one associated lesson on the same subject
-that goes into greater depth. It should be possible to work through
-all 16 lessons _without_ reading the additional lessons.
-
-At the end of the course there are one or more lessons specific to the
-language being used for the lessons, and finally a gallery of examples
-of packages demonstrating LaTeX use not covered by this course.
+Aan het eind van de cursus zijn er één of meer lessen specifiek gericht op de
+taal waarin je de lessen volgt, en tot slot een galerij met voorbeelden
+van LaTeX-pakketten die buiten deze cursus vallen.
 
 ---
 
-## Examples
+## Voorbeelden
 
-### Running the examples
+### Voorbeelden uitvoeren
 
-Each example consists of a complete small LaTeX document shown within
-the page like this:
+Elk voorbeeld is een volledig, klein LaTeX-document dat binnen de pagina wordt weergegeven zoals hier:
 
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
 
 \begin{document}
-Example text.
+Voorbeeldtekst.
 \end{document}
 ```
 
-Each example is complete. However you may wish to edit it to make small
-changes, perhaps as part of an Exercise set at the end of the lesson.
+Elk voorbeeld is volledig, maar je kan het aanpassen om kleine wijzigingen te maken, bijvoorbeeld als onderdeel van een oefening aan het eind van de les.
 
-There are two editors being used on the site (depending on the page).
+Er worden twee tekstbewerkers gebruikt op de site (afhankelijk van de pagina).
 
 * [ACE](https://ace.c9.io/).
 
-  You may customise the theme used in the editor (for example using a
-  dark theme with light text on a dark background) on the [Site Settings](settings) page.
-  A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
-  while on any example in the site. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
+  Je kan het thema van de tekstbewerker aanpassen (bijvoorbeeld een donker thema met lichte tekst op een donkere achtergrond) op de pagina [Site-instellingen](settings).
+  Een handige manier om met thema’s te experimenteren is door <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> op Mac) in te drukken terwijl je op een voorbeeld staat.
+  [Hiermee wordt een paneel geopend](javascript:acesettings()) waarmee je alle ACE-instellingen kan aanpassen.
 
-  The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
-
+  De ACE-repository heeft een [pagina met handige sneltoetsen](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 * [CodeMirror6](https://codemirror.net/)
 
-  Currently two CodeMirror themes are provided (a light and a dark).
+  Momenteel zijn er twee CodeMirror-thema's beschikbaar (licht en donker).
 
-#### Three ways to run the example
+#### Drie manieren om een voorbeeld uit te voeren
 
-* Use the Overleaf service
-* Use the TeXLive.net service
-* Use a locally installed TeX system
+* Gebruik Overleaf
+* Gebruik TeXLive.net
+* Gebruik een lokaal geïnstalleerd TeX-systeem
 
-##### Use the Overleaf service
+##### Gebruik Overleaf
 
-Overleaf is one of the most popular online LaTeX editing services. The 
-<button>Open in Overleaf</button> button, below the example, will submit the 
-code to [Overleaf](https://www.overleaf.com/about).
+Overleaf is een van de populairste online LaTeX-bewerkers.
+De knop <button>Open in Overleaf</button> onder het voorbeeld verstuurt de code naar [Overleaf](https://www.overleaf.com/about).
 
-If you do not have an account, or the account details are not
-already cached in your browser, then you will be redirected to a
-login page where you may login or register with Overleaf. This is a
-free service but does require you to give some details and agree to
-terms and conditions.
+Als je geen account hebt, of als de gegevens niet in je browser zijn opgeslagen, word je doorgestuurd naar een inlogpagina waar je kan inloggen of registreren bij Overleaf.
+Dit is een gratis dienst, maar je moet wel wat gegevens verstrekken en akkoord gaan met de voorwaarden.
 
-If your Overleaf account is already cached in your browser, then
-Overleaf will be opened in a new tab, with a new
-project with the code. You may then edit it in
-Overleaf which will simultaneously run LaTeX on your code showing
-the resulting output or error log.
+Als je al bent ingelogd, opent Overleaf in een nieuw tabblad met een nieuw project dat de voorbeeldcode bevat.
+Je kan deze vervolgens bewerken in Overleaf, dat automatisch LaTeX uitvoert op je code en de uitvoer of foutmeldingen toont.
 
-Unlike documents processed at TeXLive.net, you may save your project
-in your Overleaf account and return to it later.
+In tegenstelling tot documenten die via TeXLive.net verwerkt zijn, kan je
+projecten in Overleaf opslaan en later opnieuw openen.
 
-##### Use the TeXLive.net service
+##### Gebruik TeXLive.net
 
-The <button>Run at TeXLive.net</button> button, below the example, will submit the code to the 
-[TeXLive.net](https://texlive.net) service[^1].
+De knop <button>Uitvoeren met TeXLive.net</button> onder het voorbeeld stuurt de code naar [TeXLive.net](https://texlive.net)[^1].
 
-The TeXLive.net service was developed specifically to support this site, and
-in particular makes use of [PDF.js](https://mozilla.github.io/pdf.js/)
-to enable display of PDF on mobile and other browsers without built in PDF 
-readers.
+Deze dienst is speciaal ontwikkeld voor deze website, en maakt onder andere gebruik van [PDF.js](https://mozilla.github.io/pdf.js/) om PDF-bestanden weer te geven in browsers (ook op mobiel) die geen ingebouwde PDF-lezer hebben.
 
-The resulting PDF document (or section of the error log) will be
-shown inline immediately below the example. A <button>Delete
-Output</button> button will be provided so that you may remove this output
-(or you may leave it in place and continue the rest of the lesson
-below).
+Het resulterende PDF-document (of een deel van het foutlogboek) wordt direct onder het voorbeeld weergegeven.
+Er verschijnt een knop <button>Verwijder output</button> zodat je deze uitvoer kan verwijderen (of je kan de uitvoer ook laten staan en verdergaan met de les).
 
-Note that **TeXLive.net** requires no login or signup of any sort
-so it is very convenient for small examples, but this site
-provides no  mechanism to save your document. Any changes that you
-make to the example are lost if you move off the page.
+Let op: **TeXLive.net** vereist geen inloggegevens of registratie,
+dus het is erg handig voor kleine voorbeelden.
+Deze site biedt echter geen manier om documenten op te slaan.
+Wijzigingen die je aanbrengt in het voorbeeld gaan verloren als je de pagina verlaat.
 
-##### Locally installed TeX system
+##### Lokaal geïnstalleerd TeX-systeem
 
-If you have a TeX system installed locally, then you may copy the
-example code off the page, either explicitly selecting it, or by
-using select all keyboard shortcuts in the editor
-(<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd>
-in windows for example). This will place the code in your operating system
-clipboard so you can start a blank document using your local
-editor, and paste in the text.
+Als je een lokaal TeX-systeem hebt geïnstalleerd, kan je de voorbeeldcode van de pagina kopiëren.
+Je kan dit doen door de code handmatig te selecteren of door de sneltoetsen voor "alles selecteren" te gebruiken (<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd> op Windows, bijvoorbeeld).
+Hiermee kopieer je de code naar het klembord van je besturingssysteem zodat je een leeg document kan starten in je lokale tekstbewerker en de code erin kan plakken.
 
-### Troubleshooting
+### Problemen oplossen
 
-Our examples are based around using an up-to-date LaTeX installation. They all 
-work with both of our online demonstration systems, so if you get errors with 
-the examples we provide, you might want to check if your LaTeX system is 
-up-to-date.
+Onze voorbeelden zijn gebaseerd op een up-to-date LaTeX-installatie.
+Ze werken allemaal met beide online demonstratiesystemen.
+Als je fouten krijgt bij het uitvoeren van de voorbeelden, ga dan na of je LaTeX-installatie up-to-date is.
 
 ---
 
-## Choosing the TeX engine
+## De TeX-engine kiezen
 
-When submitting example documents, by default the `pdflatex` engine will be used.
+Bij het uitvoeren van voorbeelden wordt standaard de `pdflatex`-engine gebruikt.
 
-You can force the choice of `latex`, `pdflatex`, `xelatex`, `lualatex`,
-`platex` or `uplatex` by using a comment of the form:
+Je kan zelf een andere engine kiezen, zoals `latex`, `pdflatex`, `xelatex`, `lualatex`, `platex` of `uplatex`, door een opmerking toe te voegen in de vorm:
 
-`% !TEX ` _any text_ `lualatex`
+`% !TEX ` _willekeurige tekst_ `lualatex`
 
-where the white space at the start is optional and case is ignored as
-is _any text_ between the first and last word.
+De spatie aan het begin is optioneel, hoofdlettergebruik maakt niet uit, en de _willekeurige tekst_ tussen het begin en de engine wordt genegeerd.
 
-This allows the form `% !TEX program=pdflatex` used by some TeX editors
-but does not require the `program=` and is currently restricted to
-specifying just one of the engines that are supported on
-the online systems being used.
+Dit maakt het mogelijk om de notatie `% !TEX program=pdflatex` te gebruiken, zoals sommige tekstbewerkers doen, maar het vereist `program=` niet en is momenteel beperkt tot engines die ondersteund worden op de online systemen van deze site.
 
-You can see an example of a comment being used to specify LuaLaTeX in
-[some of the examples on this site](more-14).
+Een voorbeeld van zo’n commentaar om LuaLaTeX te gebruiken vind je
+[in sommige voorbeelden op deze site](more-14).
 
-If `platex` or `uplatex` is specified; then the `dvipdfmx` program is
-also used to produce the PDF result from the DVI file that these variants generate.
-Similarly `dvips` and `ps2pdf` are used if `latex` is specified.
+Als `platex` of `uplatex` gekozen is, wordt ook het programma `dvipdfmx` gebruikt om van het DVI-bestand een PDF te maken.
+Op vergelijkbare wijze worden `dvips` en `ps2pdf` gebruikt als `latex` is gespecificeerd.
 
-If the engine is not specified in a `% !TeX` comment, then `pdflatex` will be used
-unless you have specified a default TeX engine on the [Site Settings](settings) page.
+Als er geen engine wordt gespecificeerd via `% !TeX`, dan wordt `pdflatex` gebruikt, tenzij je een andere standaardengine hebt gekozen op de pagina [Site-instellingen](settings).
 
 ---
 
-## Choosing how to display the output
+## TODO Choosing how to display the output
 
 If you use the TeXLive.net system, then the PDF
 output from running an example is shown using
