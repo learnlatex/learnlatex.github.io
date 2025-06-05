@@ -148,7 +148,7 @@ $\alpha + \bm{\alpha} < \beta + \bm{\beta}$
 
 ## Mathtools
 
-Het pakket `mathtools` laadt `amsmath` en voegt extra functies toe, zoals varianten van de `amsmath` matrixomgevingen waarbij de kolomuitlijning kan worden gespecifieerd.
+Het pakket `mathtools` laadt `amsmath` en voegt extra functies toe, zoals varianten van de `amsmath` matrixomgevingen waarbij de kolomuitlijning kan worden gespecificeerd.
 
 ```latex
 \documentclass[a4paper]{article}
