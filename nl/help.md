@@ -128,98 +128,75 @@ Als er geen engine wordt gespecificeerd via `% !TeX`, dan wordt `pdflatex` gebru
 
 ---
 
-## TODO Choosing how to display the output
+## Weergave van de uitvoer kiezen
 
-If you use the TeXLive.net system, then the PDF
-output from running an example is shown using
-[PDF.js](https://mozilla.github.io/pdf.js/) by default. This provides
-consistent behavior over the widest range of browsers.
+Als je het TeXLive.net-systeem gebruikt, dan wordt de PDF-uitvoer van een voorbeeld standaard weergegeven met [PDF.js](https://mozilla.github.io/pdf.js/).
+Dit zorgt voor consistent gedrag in de meeste browsers.
 
-If you would prefer to use your browser's default PDF reader (either
-its built in one, or an external application that you have configured)
-then add a comment of the form:
+Als je liever de standaard PDF-lezer van je browser gebruikt (bijvoorbeeld de ingebouwde lezer of een extern programma dat je hebt ingesteld), voeg dan een opmerking toe van de vorm:
 
-`% !TEX ` _any text_ `pdf`
+`% !TEX ` _willekeurige tekst_ `pdf`
 
-The default behavior can be explicitly specified by using `pdfjs` as
-the final token. For debugging you may sometimes want the log file
-returned, even if the document produces a PDF with
-no errors. This can be specified by using `log` as the final token in
-the comment.
+Het standaardgedrag kan ook expliciet worden aangegeven door `pdfjs` als laatste woord te gebruiken.
+Voor foutopsporing wil je soms het logbestand terugkrijgen, zelfs als het document zonder fouten een PDF produceert.
+Dat kan je doen door `log` als laatste woord in het commentaar te gebruiken.
 
-As an alternative to using a `% !TeX` comment, you may specify the
-site default return parameter on the [Site Settings](settings)
-page. The Settings are specific to each browser, so for example you
-may choose to use the default `pdfjs` setting on your mobile device,
-but use `pdf` on your desktop browser to use its default PDF rendering.
-
+In plaats van een `% !TeX`-commentaar te gebruiken, kan je ook de standaard uitvoeroptie instellen op de pagina [Site-instellingen](settings).
+De instellingen zijn browserspecifiek, dus je kan bijvoorbeeld de standaardinstelling `pdfjs` gebruiken op je mobiel apparaat, en `pdf` op je desktopbrowser om gebruik te maken van de ingebouwde PDF-weergave van de browser.
 
 ---
 
-## HTML output (make4ht, LaTeXML, lwarp)
+## HTML-uitvoer (make4ht, LaTeXML, lwarp)
 
-If using the TeXLive.net system, then additional return options,
-`make4ht`, `LaTeXML` or `lwarp` may be specified. These return one or more HTML pages
-in the frame within the page. It may be specified at the same time
-as `xelatex` or `lualatex` as well as the default `pdflatex` processing.
+Als je het TeXLive.net-systeem gebruikt, dan zijn er extra uitvoeropties beschikbaar: `make4ht`, `LaTeXML` of `lwarp`.
+Deze leveren één of meer HTML-pagina's in het kader binnen de webpagina.
+Je kan deze opties combineren met `xelatex` of `lualatex`, naast de standaard `pdflatex`-verwerking.
 
-To enable this output, add a comment of the form:
-
+Om deze uitvoer in te schakelen, voeg je een commentaarregel toe van de vorm:
 
 ```
 % !TeX make4ht
 ```
 {: .noedit :}
 
+Vervang `make4ht` door `LaTeXML` of `lwarp` om die systemen te gebruiken.
 
-Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
+Je kan `make4ht`, `LaTeXML` of `lwarp` ook instellen als standaard uitvoeroptie op de pagina [Site-instellingen](settings).
 
-
-
-Alternatively you may specify `make4ht`, `LaTeXML` or `lwarp` as the default return option
-on the [Site Settings](settings) page.
-
-
-If using a locally installed TeX system, the same output as the `make4ht` option may be obtained
-by executing
+Als je een lokaal geïnstalleerd TeX-systeem gebruikt, kan je dezelfde uitvoer als met `make4ht` verkrijgen
+door het volgende commando uit te voeren:
 
 ```
-make4ht  document.tex "learnlatex4ht,2,mathml,mathjax,svg"
+make4ht document.tex "learnlatex4ht,2,mathml,mathjax,svg"
 ```
 {: .noedit :}
 
-with the addional option `-x` or `-l` if XeLaTeX or LuaLaTeX are specified.
+Voeg de extra optie `-x` of `-l` toe als je respectievelijk XeLaTeX of LuaLaTeX gebruikt.
 
-When running locally, other configurations would be possible. See the [make4ht
-manual](https://texdoc.org/pkg/make4ht).
+Bij lokaal gebruik zijn ook andere configuraties mogelijk.
+Zie de [handleiding van make4ht](https://texdoc.org/pkg/make4ht).
 
-
-For `LaTeXML` to run locally, you would need to install LaTeXML (it is not part of TeX Live or MiKTeX)
-and use
+Om `LaTeXML` lokaal uit te voeren, moet je LaTeXML installeren (het maakt geen deel uit van TeX Live of MiKTeX)
+en gebruik je de volgende commando's:
 
 ```
 latexml document.tex > document.xml
 latexmlpost --format=html5 \
    --javascript='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' \
-   --destination=document.html" document.tex
+   --destination=document.html document.tex
 ```
 {: .noedit :}
 
-Many other LaTeXML configurations are possible,
-[as described in the manual](https://dlmf.nist.gov/LaTeXML/manual/).
+Veel andere LaTeXML-configuraties zijn mogelijk, [zoals beschreven in de handleiding](https://dlmf.nist.gov/LaTeXML/manual/).
 
-
-The `lwarp` configuration is not documented here, it is somewhat experimental and subject to change.
-The current version can be seen at the
-[source repository](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
-
+De configuratie voor `lwarp` wordt hier niet gedocumenteerd.
+Deze is enigszins experimenteel en kan veranderen.
+De huidige versie is te vinden bij de [online broncode](https://github.com/davidcarlisle/latexcgi/blob/main/lwarp/latexcgilwarp).
 
 ---
 
-[^1]: Note that during development of the site we have also used 
-      [LaTeX.Online](https://latexonline.cc/) and
-      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)
-      and we thank the developers of those services for making updates to enable
-      the examples on this site to be available at an early stage.
-
-
+[^1]: Tijdens de ontwikkeling van de site hebben we ook gebruikgemaakt van
+      [LaTeX.Online](https://latexonline.cc/) en
+      [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http),
+      en we danken de ontwikkelaars van deze diensten voor het mogelijk maken
+      van voorbeeldondersteuning in een vroeg stadium.
