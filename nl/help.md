@@ -80,7 +80,7 @@ projecten in Overleaf opslaan en later opnieuw openen.
 
 ##### Gebruik TeXLive.net
 
-De knop <button>Uitvoeren met TeXLive.net</button> onder het voorbeeld stuurt de code naar [TeXLive.net](https://texlive.net)[^1].
+De knop <button>LaTeX Online</button> onder het voorbeeld stuurt de code naar [TeXLive.net](https://texlive.net)[^1].
 
 Deze dienst is speciaal ontwikkeld voor deze website, en maakt onder andere gebruik van [PDF.js](https://mozilla.github.io/pdf.js/) om PDF-bestanden weer te geven in browsers (ook op mobiel) die geen ingebouwde PDF-lezer hebben.
 
