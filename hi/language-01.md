@@ -42,7 +42,7 @@ LaTeX एक शक्तिशाली टाइपसेटिंग सि�
 \documentclass[hindi]{article}
 
 \usepackage[provide=*]{babel}
-\babelfont{rm}[Renderer=Harfbuzz]{Shobhika} % आप यहाँ कोई और यूनिकोड फॉण्ट भी चुन सकते हैं
+\babelfont{rm}[Renderer=Harfbuzz]{Mukta} % आप यहाँ कोई और यूनिकोड फॉण्ट भी चुन सकते हैं
 
 \begin{document}
 
@@ -66,7 +66,8 @@ LaTeX एक शक्तिशाली टाइपसेटिंग सि�
 \usepackage{fontspec}
 \usepackage{polyglossia}
 \setmainlanguage{hindi}
-\newfontfamily\devanagarifont[Script=Devanagari]{Shobhika} % Script required in polyglossia
+% Script and Language usually required in polyglossia:
+\newfontfamily\devanagarifont[Script=Devanagari,Language=Hindi]{Mukta}
 ```
 {: .noedit :}
 
