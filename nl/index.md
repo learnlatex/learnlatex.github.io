@@ -26,7 +26,7 @@ permalink: /nl/
 
 <h2 class="heading__toc" id="toc">Lessen</h2>
 
-<p class="paragraph__toc">We hebben een pagina <b>Meer over dit onderwerp</b> toegevoegd aan elke les. Deze extra informatie is er om je te ondersteunen wanneer je meer details nodig hebt, maar hindert je niet als je dat niet doet.</p>
+<p class="paragraph__toc">We hebben een pagina <b>Meer over dit onderwerp</b> toegevoegd aan elke les. Deze extra informatie is er om je te ondersteunen wanneer je meer details nodig zou hebben, maar is niet noodzakelijk.</p>
 
 {% include toc-lessons.html prefix="nl/lesson" %}
 
@@ -39,5 +39,4 @@ permalink: /nl/
 ## Verdere stappen
 
 Een boek over LaTeX kopen is de beste manier om de details te leren. 
-In de [laatste les](./lesson-16) behandelen we hoe je meer informatie kan vinden en geven we enkele boekaanbevelingen.
-
+In de [laatste les](./lesson-16) tonen we waar je meer informatie kan vinden en geven we ook enkele boekentips.
