@@ -24,7 +24,7 @@ Er zijn tegenwoordig drie veelgebruikte engines:
 - LuaTeX
 
 We behandelen [XeTeX en LuaTeX later](lesson-14).
-Het belangrijkste dat je nu moet weten, is dat deze in staat zijn om lettertypen van het besturingssysteem te laden, terwijl pdfTeX dat niet kan.
+Het belangrijkste dat je nu moet weten is dat deze in staat zijn om lettertypen van het besturingssysteem te laden, terwijl pdfTeX dat niet kan.
 
 Als je in Japan bent, of veel Japans schrijft, kan je ook pTeX en upTeX tegenkomen.
 Dit zijn gespecialiseerde engines om verticaal te zetten. LuaTeX kan dit ook in veel gevallen, maar op dit moment is upTeX nog steeds het populairste systeem voor Japans.
