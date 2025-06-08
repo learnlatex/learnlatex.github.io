@@ -37,5 +37,5 @@ We zullen later uitleggen wanneer dat het geval is.
 
 In de [volgende les](lesson-02) zullen we zien dat LaTeX niet slechts één programma is.
 Voor de eenvoud richten we ons op een bepaald LaTeX-programma, pdfLaTeX, om PDF's te maken.
-Enkele andere programma's en redenen om ze te gebruiken, komen later aan bod.
+Enkele andere programma's en redenen om die te gebruiken, komen later aan bod.
 
