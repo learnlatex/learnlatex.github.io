@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "nl"
 title: "Basisstructuur van een LaTeX-document"
-description: "Deze les laat de basisstructuur van een LaTeX-document zien, hoe je dit omzet naar een PDF-bestand, en de belangrijkste speciale tekens om LaTeX aan te sturen."
+description: "Deze les laat de basisstructuur van een LaTeX-document zien, hoe je dit dan omzet naar een PDF-bestand, alsook de belangrijkste speciale tekens om LaTeX aan te sturen."
 toc-anchor-text: "Documentstructuur"
 toc-description: "De basisstructuur van een document."
 ---
@@ -10,14 +10,14 @@ toc-description: "De basisstructuur van een document."
 # LaTeX-documentstructuur
 
 <span
-  class="summary">Deze les laat de basisstructuur van een LaTeX-document zien, hoe je dit omzet naar een PDF-bestand, en de belangrijkste speciale tekens om LaTeX aan te sturen.</span>
+  class="summary">Deze les laat de basisstructuur van een LaTeX-document zien, hoe je dit dan omzet naar een PDF-bestand, alsook de belangrijkste speciale tekens om LaTeX aan te sturen.</span>
 
-Je eerste LaTeX-document wordt heel eenvoudig: het doel is om te laten zien hoe een document eruitziet en hoe je het succesvol kan zetten. 
-Dit is ook je eerste kans om te zien [hoe je de voorbeelden gebruikt](help), hier op `learnlatex.org`.
+Je eerste LaTeX-document wordt heel eenvoudig; het doel is om te laten zien hoe een document eruitziet en hoe je het succesvol kan zetten. 
+Dit is ook je eerste kans om te zien [hoe je de voorbeelden gebruikt](help) hier op `learnlatex.org`.
 
-Als je een lokale LaTeX-installatie gebruikt, maak dan in je tekstbewerker een nieuw bestand aan met de naam `first.tex`, en kopieer de onderstaande tekst of typ deze over.
+Als je een lokale LaTeX-installatie gebruikt, maak dan in je tekstbewerker een nieuw bestand aan met de naam `first.tex` en kopieer de onderstaande tekst of typ deze over.
 
-Als je het online systeem gebruikt, kan je gewoon klikken op de knoppen ‘LaTeX Online’ of ‘Open in Overleaf’ in het voorbeeld om het uit te proberen!
+Als je het online systeem gebruikt, dan kan je gewoon klikken op de knoppen ‘LaTeX Online’ of ‘Open in Overleaf’ in het voorbeeld om het uit te proberen!
 
 <p
   class="hint">We raden aan om de online opties te proberen, zelfs als je LaTeX lokaal hebt geïnstalleerd; dit is een goede kans om te zien hoe de verschillende opties werken.</p>
@@ -34,9 +34,9 @@ Dit is een eerste document.
 \end{document}
 ```
 
-Merk op dat LaTeX standaard is ingesteld om de (Amerikaans) Engelse taalregels te volgen, bijvoorbeeld voor woordafbrekingen.
+Merk op dat LaTeX standaard is ingesteld om de (Amerikaans-)Engelse taalregels te volgen, bijvoorbeeld voor woordafbrekingen.
 We gebruiken `\usepackage[dutch]{babel}` om dit naar het Nederlands om te zetten.
-Bekijk eventueel ook [een latere les](more-06) of de [les specifiek voor Nederlands](language-01).
+Bekijk eventueel ook [een latere les](more-06) of de [les specifiek over het gebruik van het Nederlands](language-01).
 
 Sla het bestand op en zet het om naar een PDF-document; 
 als je een lokale LaTeX-installatie gebruikt, hangt de knop die je hiervoor moet gebruiken af van de tekstbewerker die je hebt gekozen.
