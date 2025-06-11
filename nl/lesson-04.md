@@ -13,7 +13,7 @@ toc-description: "Structuur en visuele presentatie."
   class="summary">Deze les toont enkele eenvoudige opmaakcommando's en vergelijkt deze met semantische opmaak via sectiecommando's en lijsten.</span>
 
 LaTeX biedt manieren om je te concentreren op de logische structuur van je document, evenals de mogelijkheid om direct het uitzicht van je document in te stellen.
-Meestal is het veel beter om methodes te gebruiken die zich richten op de structuur omdat dat het makkelijker maakt het uitzicht aan te passen of te hergebruiken als dat nodig is.
+Meestal is het veel beter om methodes te gebruiken die zich richten op de structuur omdat dat het makkelijker maakt het uitzicht aan te passen of te hergebruiken als dat nodig zou zijn.
 
 ## Structuur en visuele presentatie
 
@@ -37,7 +37,7 @@ Er zijn ook situaties waar nadruk niet hetzelfde is als cursief;
 in presentaties is kleur bijvoorbeeld vaak een betere optie.
 Met logische opmaak hoeven we ons daar in de hoofdtekst van het document geen zorgen over te maken.
 
-We zullen [handmatige opmaak later](lesson-11) bekijken, maar voor nu voegen we `\textbf` nog toe aan de commando's die we kennen: dit maakt tekst vetgedrukt.
+We zullen handmatige opmaak [later](lesson-11) bekijken, maar voor nu voegen we `\textbf` nog toe aan de commando's die we kennen: dit maakt tekst vetgedrukt.
 
 ## Sectiecommando's
 
