@@ -41,7 +41,7 @@ We zullen handmatige opmaak [later](lesson-11) bekijken, maar voor nu voegen we 
 
 ## Sectiecommando's
 
-Waarschijnlijk heb je ooit een tekstverwerker gebruikt waar je bij het beginnen van een sectie meestal de titel intypt, die vet en groter maakt, en dan een nieuwe regel start.
+Waarschijnlijk heb je ooit een tekstverwerker gebruikt waar je bij het begin van een sectie meestal de titel intypt, die vet en groter maakt, en dan een nieuwe regel start.
 In LaTeX is het gebruik van logische opmaak eigenlijk _makkelijker_ dan handmatige opmaak;
 we kunnen het `\section`-commando gebruiken.
 Dit regelt de lettertypewijzigingen, verticale ruimte, enz., en houdt de uitvoer uniform in het hele document.
