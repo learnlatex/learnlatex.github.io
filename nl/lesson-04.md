@@ -27,7 +27,7 @@ We beginnen met een voorbeeld waarin een van de meest voorkomende logische opmaa
 \begin{document}
 Tekst met \emph{nadruk en \emph{geneste} inhoud}.
 
-Tekst in \textit{cursief and \textit{geneste} inhoud}.
+Tekst in \textit{cursief en \textit{geneste} inhoud}.
 \end{document}
 ```
 
