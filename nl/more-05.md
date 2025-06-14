@@ -6,7 +6,7 @@ description: "Deze les geeft informatie over meer gespecialiseerde documentklass
 toc-anchor-text: "Meer over: Documentklassen gebruiken om het uitzicht te beïnvloeden"
 ---
 
-## Tijdschrift-specifieke klassen
+## Tijdschriftspecifieke klassen
 
 Veel academische tijdschriften bieden LaTeX-klassen aan voor inzendingen.
 Deze stellen doorgaans de lay-out in om te lijken op die van het uiteindelijke tijdschrift, hoewel dat ook afhangt van het gebruik van lettertypes, enzovoort.
@@ -27,7 +27,7 @@ Aangezien `beamer` waarschijnlijk de meest gebruikte is, geven we hier een voorb
 \begin{document}
 
 \begin{frame}
-  \frametitle{Een eerste `frame}
+  \frametitle{Een eerste frame}
   Wat tekst
 \end{frame}
 
