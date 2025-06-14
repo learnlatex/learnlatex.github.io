@@ -89,7 +89,7 @@ KOMA-Script biedt een aantal klassen die de standaardklassen nabootsen: `scrartc
 
 Deze uitgebreide klassen hebben veel mogelijkheden voor aanpassingen, die we in een oefening zullen verkennen.
 Je vraagt je misschien af hoe je kan weten welke aanpassingsmogelijkheden ze bieden;
-dat behandelen we [in een latere les](lesson-16), maar je kan natuurlijk al eens vooruit bladeren!
+dat behandelen we [in een latere les](lesson-16), maar je kan natuurlijk al eens vooruit springen!
 
 ## Presentaties
 
