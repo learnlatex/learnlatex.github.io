@@ -30,7 +30,7 @@ Let ook op dat de sectiekop _Table of Contents_, normaal gegenereerd door `\tabl
 
 \tableofcontents
 
-\section{"Über "Apfel und Birnen}
+\section{"Uber "Apfel und Birnen}
 
 \subsection{Äpfel}
 Äpfel sind rot.
@@ -59,7 +59,7 @@ Dus om de taal van een document door te geven aan alle pakketten, kunnen we het 
 
 \tableofcontents
 
-\section{"Über "Apfel und Birnen}
+\section{"Uber "Apfel und Birnen}
 
 \subsection{Äpfel}
 Äpfel sind rot.
