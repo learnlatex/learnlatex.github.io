@@ -10,7 +10,7 @@ toc-anchor-text: "Meer over: Afbeeldingen invoegen en schikken"
 
 LaTeX werkt op veel verschillende computerplatforms, dus bestandsnamen verdienen enige aandacht.
 Het is het veiligst om je afbeeldingen een eenvoudige naam te geven, in het bijzonder zonder spaties.
-Als je je bestanden wil organiseren door alle afbeeldingen in een submap te bewaren, dan is iets als  `\includegraphics[width=30pt]{pix/mom.png}`  overdraagbaar en toekomstbestendig.
+Als je je bestanden wil organiseren door alle afbeeldingen in een submap te bewaren, dan is iets als  `\includegraphics[width=30pt]{pix/mom.png}` draagbaar en toekomstbestendig.
 
 Spaties in bestandsnamen zijn traditioneel wat problematisch, maar worden tegenwoordig meestal wel ondersteund.
 Mocht je toch problemen ondervinden, probeer dan eerst de spaties uit de bestandsnaam te verwijderen.
@@ -60,6 +60,7 @@ Het `float`-pakket maakt dit mogelijk.
 \usepackage[dutch]{babel}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{lipsum}  % genereert opvultekst
 
 \begin{document}
 \lipsum[1-7]
