@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "nl"
 title: "LaTeX uitbreiden met pakketten en definities"
-description: "Deze les toont hoe je LaTeX naar eigen wens kan uitbreiden en hoe je de opmaak verder kan aanpassen met pakketten en eigen commando’s."
+description: "Deze les toont hoe je LaTeX naar believen kan uitbreiden en hoe je de opmaak verder kan aanpassen met pakketten en eigen commando’s."
 toc-anchor-text: "LaTeX uitbreiden"
 toc-description: "Pakketten en eigen commando’s gebruiken."
 ---
@@ -10,7 +10,7 @@ toc-description: "Pakketten en eigen commando’s gebruiken."
 # LaTeX uitbreiden
 
 <span class="summary">
-Deze les toont hoe je LaTeX naar eigen wens kan uitbreiden en hoe je de opmaak verder kan aanpassen met pakketten en eigen commando’s.
+Deze les toont hoe je LaTeX naar believen kan uitbreiden en hoe je de opmaak verder kan aanpassen met pakketten en eigen commando’s.
 </span>
 
 Nadat je een klasse hebt gekozen, kan je in de preambule de functionaliteit van LaTeX aanpassen door één of meer *pakketten* toe te voegen.
@@ -48,9 +48,9 @@ te dwingen.
 ```
 
 Probeer de regel met `babel` in te schakelen en kijk wat er verandert.
-(De standaardafbrekingsregels zijn gebaseerd op Amerikaans Engels.)
+(De standaardafbrekingsregels zijn gebaseerd op Amerikaans-Engels.)
 
-Het `babel`-pakket doet meer dan alleen afbreking; lees eventueel [verdere details](more-06).
+Het `babel`-pakket doet meer dan alleen afbreking; lees eventueel [meer over dit onderwerp](more-06).
 
 ## Opmaak aanpassen
 
