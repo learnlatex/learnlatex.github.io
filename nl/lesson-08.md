@@ -143,10 +143,10 @@ Hier is de eerste tabel opnieuw met deze syntax:
 
 \begin{document}
 \begin{tabular}{*{3}{l}}
-  Dier  & Voedsel & Grootte     \\
-  hond  & vlees   & middelgroot \\
-  paard & hooi    & groot       \\
-  kikker& vliegen & klein       \\
+  Dier   & Voedsel & Grootte     \\
+  hond   & vlees   & middelgroot \\
+  paard  & hooi    & groot       \\
+  kikker & vliegen & klein       \\
 \end{tabular}
 \end{document}
 ```
