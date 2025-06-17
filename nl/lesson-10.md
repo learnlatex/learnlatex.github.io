@@ -97,7 +97,7 @@ De paragraaf moet altijd _voorafgaand_ aan de wiskundige weergave beginnen, dus 
 Als je meerdere regels wiskunde nodig hebt, gebruik dan niet opeenvolgende weergaveomgevingen (dit zorgt voor inconsistente afstand);
 gebruik in plaats daarvan een meerregelige weergaveomgeving zoals `align` uit het `amsmath`-pakket dat later wordt besproken.
 
-Het is vooral handig voor integralen, bijvoorbeeld:
+Weergavewiskunde is bijzonder handig voor integralen, bijvoorbeeld:
 
 ```latex
 \documentclass{article}
@@ -251,7 +251,7 @@ $\text{fout gebruik } size  \neq \mathit{size} \neq \mathrm{size} $
 \end{document}
 ```
 
-Als je andere symbolen vet moet maken, [zie de extra details](more-10).
+Als je andere symbolen vet moet maken, [bekijk dan de extra details](more-10).
 
 ## Oefeningen
 
