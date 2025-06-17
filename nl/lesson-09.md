@@ -23,7 +23,7 @@ Om LaTeX een plek in je document te laten onthouden, moet je deze labelen, en er
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[dutch]{fontenc}
+\usepackage[dutch]{babel}
 
 \begin{document}
 Hallo wereld!
@@ -49,7 +49,7 @@ In subsectie~\ref{subsec:label-een} staat vergelijking~\ref{eq:label-twee}.
 
 Er zijn twee `\label{...}`-commando’s, één na de subsectie en één binnen de vergelijkingomgeving.
 Ze worden geassocieerd met de `\ref{...}`-commando’s in de laatste zin.
-Wanneer je LaTeX uitvoert, slaat het informatie over de labels op in een hulplbestand.
+Wanneer je LaTeX uitvoert, slaat het informatie over de labels op in een hulpbestand.
 Voor `\label{subsec:label-een}` weet LaTeX dat het zich op dat moment in een subsectie bevindt en slaat dus het nummer van de subsectie op.
 Voor `\label{eq:label-twee}` weet LaTeX dat de meest recente relevante omgeving een vergelijking is, en slaat die informatie op.
 Wanneer je om de verwijzing vraagt, haalt LaTeX die uit het hulpbestand.
