@@ -16,7 +16,7 @@ Dit betekent dat als je je bibliografie sorteert en je moet sorteren in een ande
 
 ## Hyperlinks
 
-Als je het `hyperref`-pakket laadt (zoals eerder behandeld in [more-09]), zal het automatisch bepaalde inhoud in je bibliografie omzetten in links.
+Als je het `hyperref`-pakket laadt (zoals [eerder](more-09) behandeld), zal het automatisch bepaalde inhoud in je bibliografie omzetten in links.
 Dit is in het bijzonder handig voor URL’s en DOI’s.
 
 ## Uiteenlopend gebruik van BibTeX-invoer door verschillende stijlen
@@ -29,4 +29,4 @@ Sommige oudere BibTeX `.bst`-stijlen (met name de 'standaard BibTeX-stijlen', zo
 Veel nieuwere stijlen hebben _wel_ een specifiek `url`-veld.
 De oplossing om de URL toch te tonen in oudere stijlen is meestal om het `howpublished`-veld te gebruiken, maar bij de nieuwere stijlen is het natuurlijk beter om het specifieke `url`-veld te gebruiken.
 
-Om volledig gebruik te kunnen maken van het potentieel van de gebruikte stijl, zul je moeten uitzoeken welke velden worden ondersteund en wat hun betekenis is.
+Om volledig gebruik te kunnen maken van het potentieel van de gebruikte stijl, zal je moeten uitzoeken welke velden worden ondersteund en wat hun betekenis is.

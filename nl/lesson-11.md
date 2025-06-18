@@ -11,7 +11,8 @@ toc-description: "Tekstopmaak voor visuele presentatie."
 
 <span class="summary">Deze les laat zien hoe je de spatiëringselementen in een document wijzigt en expliciete opmaakinstructies aan de LaTeX-broncode toevoegt.</span>
 
-We hebben al gezien dat een lege regel in je invoer in LaTeX een nieuwe alinea genereert. Dit resulteert in een alinea die begint met een inspringing.
+We hebben al gezien dat LaTeX een nieuwe alinea genereert wanneer je invoer een witregel bevat. 
+Dit resulteert in een alinea die begint met een inspringing.
 
 ## Alinea-afstand
 

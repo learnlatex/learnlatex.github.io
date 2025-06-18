@@ -49,7 +49,7 @@ Laten we een voorbeeld bekijken.
   doi     = {10.1021/ic800654a},
 }
 @book{Graham1995,
-  author    = {Ronald L. Graham en Donald E. Knuth en Oren Patashnik},
+  author    = {Ronald L. Graham and Donald E. Knuth and Oren Patashnik},
   title     = {Concrete Mathematics},
   publisher = {Addison-Wesley},
   year      = {1995},
@@ -62,7 +62,7 @@ dit zijn verreweg de meest voorkomende types.
 Elk type databankitem begint met `@`, zoals weergegeven, en alle informatie staat dan binnen een paar accolades.
 
 De verschillende benodigde velden worden weergegeven in een sleutel-waardepaar, behalve wat bekend staat als de 'key' of 'sleutel': de 'naam' van de citaatverwijzing.
-Je kan kiezen wat je wil, het is slechts een label, maar hierboven hebben we gekozen voor de naam van een auteur plus het jaar: dit is een gangbare aanpak.
+Je kan hiervoor kiezen wat je wil, het is slechts een label, maar hierboven hebben we gekozen voor de naam van een auteur plus het jaar: dit is een gangbare aanpak.
 
 Welke velden je precies nodig hebt, hangt af van het type item, maar de meeste zijn vrij duidelijk.
 Je zal merken dat in het `author`-veld elke auteur wordt gescheiden door `and`. Dit is _essentieel_: het uitvoerformaat moet weten wie welke auteur is.
@@ -163,7 +163,7 @@ Samen \autocite{Thomas2008,Graham1995}
 \end{document}
 ```
 
-Merk op dat `\addbibresource` _het volledige bestandsnaam van de databank vereist_, terwijl we de `.bib` weglaten bij `\bibliography` met `natbib`.
+Merk op dat `\addbibresource` _de volledige bestandsnaam van de databank vereist_, terwijl we de `.bib` weglaten bij `\bibliography` met `natbib`.
 Ook zie je dat `biblatex` langere namen gebruikt voor zijn citatiecommando’s, maar ze zijn vrij intuïtief.
 
 Opnieuw kunnen korte teksten vóór en na het citaat worden ingevoegd met de optionele argumenten.
