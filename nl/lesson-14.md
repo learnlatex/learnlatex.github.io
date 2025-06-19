@@ -16,7 +16,7 @@ Toen TeX en LaTeX voor het eerst op grote schaal werden gebruikt, ondersteunden 
 
 ## Accenten en letters met accenten
 
-Oorspronkelijk werden accenten en letters met accenten getypt met behulp van controle-sequenties of macro’s zoals `\c{c}` voor ‘ç’ en `\'e` voor ‘é’.
+Oorspronkelijk werden accenten en letters met accenten getypt met behulp van controlesequenties of macro’s zoals `\c{c}` voor ‘ç’ en `\'e` voor ‘é’.
 Hoewel sommige mensen deze invoermethoden blijven gebruiken omdat ze gemakkelijker te typen zijn, wilden anderen graag direct symbolen typen met behulp van hun toetsenbord.
 
 Voor de komst van Unicode bood LaTeX ondersteuning voor veel soorten *bestandscoderingen* waarmee tekst rechtstreeks in verschillende talen geschreven kon worden — bijvoorbeeld, met de `latin1`-codering konden Franse gebruikers ‘`déjà vu`’ schrijven en LaTeX zou de letters met accenten intern vertalen naar TeX-commando’s om de juiste uitvoer te genereren.
@@ -39,7 +39,7 @@ Voor een lettertype dat lijkt op Times, is de TeX Gyre-naam Termes:
 
 Voor `pdflatex` zijn de meeste lettertypen toegankelijk via pakketten.
 Je kan een kijkje nemen op [The LaTeX Font Catalogue](https://www.tug.org/FontCatalogue/) of op de [CTAN-pagina over het onderwerp ‘Font’](https://www.ctan.org/topic/font) om enkele opties te zien.
-Je kan ook op internet zoeken naar het lettertype dat je wil gebruiken, en zoeken naar een versie die compatibel is met `pdflatex`.
+Je kan ook op internet zoeken naar het lettertype dat je wil gebruiken en zoeken naar een versie die compatibel is met `pdflatex`.
 Als je een propriëtair lettertype wil gebruiken, kan je zoeken naar een geschikte kloon die voor de meeste toepassingen voldoende op het origineel lijkt.
 
 ## Het Unicode-tijdperk

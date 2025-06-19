@@ -32,11 +32,11 @@ Het is bijvoorbeeld heel gebruikelijk om één 'hoofdbestand' te hebben, en dan 
 
 ## Structureren van je bronbestanden
 
-LaTeX stelt ons in staat om bronnen op een gecontroleerde manier op te splitsen.
+LaTeX stelt je in staat om bronnen op een gecontroleerde manier op te splitsen.
 Er zijn twee belangrijke commando’s: `\input` en `\include`.
-Met `\input` kan je een bestand invoegen alsof het op die plaats getypt is, en het kan dus voor vrijwel alles worden gebruikt.
+Met `\input` kan je een bestand invoegen alsof het op die plaats getypt is en het kan dus voor vrijwel alles worden gebruikt.
 Het `\include`-commando is enkel bedoeld voor hoofdstukken: het begint op een nieuwe pagina en maakt interne aanpassingen.
-Maar het heeft een groot voordeel: je kan selectief kiezen welke hoofdstukken je wil invoegen, zodat je aan een deel van je document kan werken in plaats van aan het geheel.
+Het heeft echter een groot voordeel: je kan selectief kiezen welke hoofdstukken je wil invoegen, zodat je aan een deel van je document kan werken in plaats van aan het geheel.
 
 Een langer document zou er dus ongeveer als volgt uit kunnen zien:
 
@@ -110,7 +110,7 @@ Het belangrijkste voordeel is dat LaTeX wel alle kruisverwijzingen gebruikt uit 
 Het `\tableofcontents`-commando gebruikt de informatie uit de sectiecommando’s om de inhoudsopgave op te bouwen.
 Hiervoor wordt een apart hulpbestand met de extensie `.toc` gebruikt, dus je moet LaTeX mogelijk twee keer draaien om alles correct weer te geven.
 De inhoudsopgave wordt automatisch gegenereerd op basis van de sectietitels.
-Er zijn soortgelijke commando’s voor `\listoffigures` en `\listoftables`, die werken met de onderschriften van afbeeldingen en tabellen en de bestanden `.lof` en `.lot` gebruiken.
+Er zijn soortgelijke commando’s voor `\listoffigures` en `\listoftables`, die werken met de onderschriften van afbeeldingen en tabellen en gebruiken de bestanden `.lof` en `.lot`.
 
 ## Het document opdelen
 

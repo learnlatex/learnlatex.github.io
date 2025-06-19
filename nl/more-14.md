@@ -11,7 +11,7 @@ toc-anchor-text: "Meer over: Lettertypen selecteren en Unicode-engines gebruiken
 De LuaTeX-engine biedt toegang tot OpenType-lettertypen op een vergelijkbare manier als XeTeX, en de meeste toepassingen van het `fontspec`-pakket werken even goed met beide engines.
 
 LuaTeX breidt TeX ook op andere manieren uit, met name door de Lua-scripttaal te integreren.
-Deze kan worden gebruikt om te programmeren in een stijl die meer vertrouwd is voor mensen die gewend zijn aan ‘mainstream’ programmeertalen.
+Deze kan worden gebruikt om te programmeren in een stijl die meer vertrouwd is voor mensen die gewend zijn aan doorsnee programmeertalen.
 Het biedt ook de mogelijkheid om toegang te krijgen tot de interne werking van het TeX-systeem en het gedrag aan te passen door nieuwe code in Lua te schrijven.
 
 Programmeren in Lua wordt niet behandeld in deze cursus, maar hier is een eenvoudig voorbeeld om 2π te berekenen.
