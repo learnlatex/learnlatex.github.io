@@ -15,11 +15,12 @@ Er zijn verschillende manieren om de documentatie van een pakket of klasse te ra
 
 ## `texdoc`
 
-Als je een TeX-distributie hebt geïnstalleerd (_bijv._, TeX Live of MiKTeX) en daarbij ook de documentatie hebt geïnstalleerd, dan kan je de lokaal opgeslagen documentatie openen met het opdrachtregelprogramma `texdoc`. Door
+Als je een TeX-distributie hebt geïnstalleerd (bijvoorbeeld TeX Live of MiKTeX) en daarbij ook de documentatie hebt geïnstalleerd, dan kan je de lokaal opgeslagen documentatie openen met het opdrachtregelprogramma `texdoc`.
+Door
 
 `texdoc` < _pkt_ >
 
-uit te voeren, open je de documentatie van het pakket `<pkt>`.
+uit te voeren in de opdrachtprompt, open je de documentatie van het pakket `<pkt>`.
 De tool zoekt naar beschikbare documentatie en opent wat volgens hem het beste overeenkomt met je zoekterm.
 Je kan een lijst krijgen van alle mogelijke resultaten en er één uitkiezen met:
 
@@ -79,7 +80,7 @@ en regel voor regel toe te voegen tot je het probleem kan laten zien.
 Je kan ook proberen je echte bestand 'in te korten', maar dat kan veel tijd kosten.
 
 <p 
-  class="hint">Als je meer tekst nodig hebt om bijvoorbeeld pagina-afbrekingen te tonen, dan kan je het pakket <code>lipsum</code> gebruiken om nep-paragrafen te genereren en zo je testbestand toch klein te houden.</p>
+  class="hint">Als je meer tekst nodig hebt om bijvoorbeeld pagina-afbrekingen te tonen, dan kan je het pakket <code>lipsum</code> gebruiken om nepparagrafen te genereren en zo je testbestand toch klein te houden.</p>
 
 ### Logbestand
 
@@ -99,4 +100,4 @@ Als je een probleem hebt, zullen ervaren LaTeX-gebruikers vaak vragen om een kop
 
 ### Verder gaan
 
-Tot slot bieden we een [galerij met kleine voorbeelden](./extra-01) die een reeks onderwerpen laten zien die niet in deze inleiding behandeld zijn, en LaTeX-pakketten die in die gebieden gebruikt worden.
+Tot slot bieden we een [galerij met kleine voorbeelden](./extra-01) aan die een reeks onderwerpen laten zien die niet in deze inleiding behandeld zijn, alsook LaTeX-pakketten die in die gebieden gebruikt worden.

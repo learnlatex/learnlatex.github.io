@@ -12,7 +12,7 @@ toc-description: "Omgaan met onverwacht gedrag."
 <span
   class="summary">Deze les laat enkele veelvoorkomende fouten in LaTeX-documenten zien, wat ze betekenen en hoe je ermee om kan gaan.</span>
 
-In tegenstelling tot een typisch tekstverwerkingssysteem heeft LaTeX een bewerkings-/uitvoerings-/bekijkcyclus die meer lijkt op het werken met programmeertaalcompilers, en net als bij programmeren kunnen gebruikers fouten maken in hun invoer en moeten ze omgaan met foutmeldingen die door het systeem worden gerapporteerd.
+In tegenstelling tot een typisch tekstverwerkingssysteem heeft LaTeX een bewerkings-/uitvoerings-/bekijkcyclus die meer lijkt op het werken met programmeertaalcompilers en net als bij programmeren kunnen gebruikers fouten maken in hun invoer en moeten ze omgaan met foutmeldingen die door het systeem worden gerapporteerd.
 
 ## Veelvoorkomende fouten
 
@@ -73,15 +73,17 @@ l.9 Mijn commando wordt hierna gebruikt \mycommand
 {: .noedit :}
 
 * De eerste regel, gemarkeerd met `!`, geeft de algemene aard van de fout (onbekend commando in dit geval).
-* De volgende twee regels tonen de regel die TeX aan het verwerken was, met een regeleinde dat het punt markeert waar TeX was aangekomen.
+* De volgende twee regels tonen de regel die TeX aan het verwerken was, met een regeleinde dat het punt markeert waar TeX was aanbeland.
 Het onbekende commando is het laatste dat gelezen werd, dus het laatste woord vóór het regeleinde, `\textbold` hier.
 Na het regeleinde volgen de resterende tokens `{hmmm}`, die mogelijk als argument zijn gelezen maar nog niet door TeX zijn uitgevoerd.
 * Er kunnen in het algemeen nog enkele aanvullende regels zijn die meer context van de foutmelding tonen.
 * De laatste regel begint met `l.` gevolgd door een regelnummer en vervolgens de regel in het bronbestand waar de fout is gedetecteerd.
 
-* De laatste regel is een `?`. Als je TeX interactief gebruikt, kun je hier instructies aan TeX geven, maar de meeste tekstbewerkers en online systemen draaien TeX in een modus die niet stopt bij fouten, maar probeert door te gaan met het verwerken van de rest van het document. Typen van `s` op de prompt zal TeX instrueren om verder te gaan in deze modus als je interactief werkt.
+* De laatste regel is een `?`. 
+Als je TeX interactief gebruikt, kan je hier instructies aan TeX geven, maar de meeste tekstbewerkers en online systemen draaien TeX in een modus die niet stopt bij fouten, maar probeert door te gaan met het verwerken van de rest van het document.
+Indien je interactief werkt, kan je in deze modus Tex de opdracht geven om verder te gaan door `s` te typen.
 
-Merk hier op dat TeX de fout niet ziet op het moment dat de definitie wordt gemaakt; en in feite als `\mycommand` is gedefinieerd maar niet wordt gebruikt, zou er geen fout optreden.
+Merk hier op dat TeX de fout niet opmerkt wanneer de definitie wordt gemaakt; sterker nog, als `\mycommand` gedefinieerd was maar niet gebruikt werd, zou er geen fout optreden.
 Hoewel de fout wordt gemeld op regel 8, zit de "echte" fout in de definitie op regel 4, dus het is belangrijk om de volledige foutmelding te bekijken.
 
 Let op dat sommige tekstbewerkers slechts éénregelige "samenvattingen" van de foutlog tonen.
@@ -106,7 +108,7 @@ omdat het dan lijkt alsof `\mycommand` niet is gedefinieerd.
 ```
 
 Hier is de fout een niet-overeenkomende `}` die wordt gebruikt om het optionele argument te beëindigen.
-De sluitende accolade zorgt ervoor dat LaTeX’s optiesparser faalt, en je krijgt een interne en niet erg behulpzame foutmelding:
+De sluitende accolade zorgt ervoor dat LaTeXs optiesparser faalt, en je krijgt een interne en niet erg behulpzame foutmelding:
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.
