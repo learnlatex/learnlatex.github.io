@@ -48,14 +48,11 @@ Hoewel de echte fout op regel 11 staat, zoals te zien is in de contextregels:
 
 ## Nepfouten door eerdere fouten
 
-Wanneer je LaTeX interactief aanroept via de opdrachtregel, kan je
-de verwerking stoppen bij de eerste fout met `x`, het document bewerken
-en opnieuw uitvoeren.
+Wanneer je LaTeX interactief aanroept via de opdrachtregel, kan je met `x` de verwerking stoppen bij de eerste fout, het document bewerken en opnieuw uitvoeren.
 Maar als je langs de fout scrolt of een tekstbewerker of online systeem gebruikt dat dat automatisch doet, zal TeX zich proberen te herstellen;
 dit kan echter leiden tot meerdere foutmeldingen.
 
-Maak je dus niet al te veel zorgen over het _aantal_ gerapporteerde fouten en
-richt je altijd op het oplossen van de eerste gemelde fout.
+Maak je dus niet al te veel zorgen over het _aantal_ gerapporteerde fouten en richt je altijd op het oplossen van de eerste gemelde fout.
 
 ```latex
 \documentclass{article}
