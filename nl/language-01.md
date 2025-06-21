@@ -13,8 +13,9 @@ toc-description: "Tekstopmaak met LaTeX in het Nederlands."
 <span
   class="summary">Deze les gaat dieper in op de bijzonderheden waarop je moet letten wanneer je Nederlandstalige teksten zet met LaTeX.</span>
 
-LaTeX werd oorspronkelijk geschreven voor gebruik in het (Amerikaans) Engels.
-Om naar het Nederlands over te schakelen, kan het `babel`-pakket worden gebruikt.
+LaTeX werd oorspronkelijk geschreven voor gebruik in het (Amerikaans-)Engels.
+Om naar het Nederlands over te schakelen, kan het `babel`-pakket worden gebruikt;
+zie ook [deze eerdere les](lesson-06) en [de extra details](more-06).
 Dit zal zorgen voor correcte woordafbrekingen en vertaalt ook automatisch verschillende tekstonderdelen, zoals "Contents" naar "Inhoudsopgave".
 
 Voor het splitsen van woorden met accenten is het bij `pdflatex` noodzakelijk `fontenc` met de `T1`-optie te laden.
