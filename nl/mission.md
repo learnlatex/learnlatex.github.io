@@ -13,5 +13,5 @@ Ons doel hier is om je op weg te helpen zonder te proberen je alles in één kee
 
 Om dat te doen, hebben we ongeveer 16 van de belangrijkste zaken die je moet weten verzameld en omgezet in korte 'lessen'. 
 Elke les is heel doelgericht, zodat het niet te veel tijd kost om ze door te nemen. 
-In elke les hebben we voorbeelden gegeven van wat je zou schrijven, en deze zijn beschikbaar zodat je ze online kan uitproberen. 
+In elke les hebben we voorbeelden gegeven van wat je zou schrijven en deze zijn beschikbaar zodat je ze online kan uitproberen. 
 Lees meer over [hoe voorbeelden werken](./help#examples) op de hulppagina.

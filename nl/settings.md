@@ -19,13 +19,13 @@ Accepteer hier cookies om het gebruik van cookies op deze site toe te staan en o
 %}
 
 ## Standaardwaarde voor return
-De `return`-parameter voor formulieren die TeXLive.net moet gebruiken als deze niet via `% !TeX`-commentaren in het voorbeeld ingesteld wordt.
+De `return`-parameter die TeXLive.net moet gebruiken als deze niet via `% !TeX`-commentaren in het voorbeeld ingesteld wordt.
 
 {% include settings-return.html %}
 
 
-## Standaard engine
-De `engine`-parameter voor formulieren die TeXLive.net of Overleaf moet gebruiken als deze niet via `% !TeX`-commentaren in het voorbeeld ingesteld wordt.
+## Standaardengine
+De `engine`-parameter die TeXLive.net of Overleaf moet gebruiken als deze niet via `% !TeX`-commentaren in het voorbeeld ingesteld wordt.
 (De `-dev` en `context` opties mogen niet bij Overleaf worden gebruikt.)
 
 {% include settings-engine.html %}

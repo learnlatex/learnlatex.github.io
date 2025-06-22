@@ -60,11 +60,11 @@ Er worden twee tekstbewerkers gebruikt op de site (afhankelijk van de pagina).
 
 #### Drie manieren om een voorbeeld uit te voeren
 
-* Gebruik Overleaf
-* Gebruik TeXLive.net
-* Gebruik een lokaal geïnstalleerd TeX-systeem
+* Via Overleaf
+* Via TeXLive.net
+* Via een lokaal geïnstalleerd TeX-systeem
 
-##### Gebruik Overleaf
+##### Overleaf gebruiken
 
 Overleaf is een van de populairste online LaTeX-bewerkers.
 De knop <button>Open in Overleaf</button> onder het voorbeeld verstuurt de code naar [Overleaf](https://www.overleaf.com/about).
@@ -72,17 +72,17 @@ De knop <button>Open in Overleaf</button> onder het voorbeeld verstuurt de code 
 Als je geen account hebt, of als de gegevens niet in je browser zijn opgeslagen, word je doorgestuurd naar een inlogpagina waar je kan inloggen of registreren bij Overleaf.
 Dit is een gratis dienst, maar je moet wel wat gegevens verstrekken en akkoord gaan met de voorwaarden.
 
-Als je al bent ingelogd, opent Overleaf in een nieuw tabblad met een nieuw project dat de voorbeeldcode bevat.
+Als je al bent ingelogd, dan opent Overleaf in een nieuw tabblad met een nieuw project dat de voorbeeldcode bevat.
 Je kan deze vervolgens bewerken in Overleaf, dat automatisch LaTeX uitvoert op je code en de uitvoer of foutmeldingen toont.
 
 In tegenstelling tot documenten die via TeXLive.net verwerkt zijn, kan je
 projecten in Overleaf opslaan en later opnieuw openen.
 
-##### Gebruik TeXLive.net
+##### TeXLive.net gebruiken
 
 De knop <button>LaTeX Online</button> onder het voorbeeld stuurt de code naar [TeXLive.net](https://texlive.net)[^1].
 
-Deze dienst is speciaal ontwikkeld voor deze website, en maakt onder andere gebruik van [PDF.js](https://mozilla.github.io/pdf.js/) om PDF-bestanden weer te geven in browsers (ook op mobiel) die geen ingebouwde PDF-lezer hebben.
+Deze dienst is speciaal ontwikkeld voor deze website en maakt onder andere gebruik van [PDF.js](https://mozilla.github.io/pdf.js/) om PDF-bestanden weer te geven in browsers (ook op mobiel) die geen ingebouwde PDF-lezer hebben.
 
 Het resulterende PDF-document (of een deel van het foutlogboek) wordt direct onder het voorbeeld weergegeven.
 Er verschijnt een knop <button>Verwijder output</button> zodat je deze uitvoer kan verwijderen (of je kan de uitvoer ook laten staan en verdergaan met de les).
@@ -92,16 +92,16 @@ dus het is erg handig voor kleine voorbeelden.
 Deze site biedt echter geen manier om documenten op te slaan.
 Wijzigingen die je aanbrengt in het voorbeeld gaan verloren als je de pagina verlaat.
 
-##### Lokaal geïnstalleerd TeX-systeem
+##### Een lokaal geïnstalleerd TeX-systeem gebruiken
 
-Als je een lokaal TeX-systeem hebt geïnstalleerd, kan je de voorbeeldcode van de pagina kopiëren.
+Als je een lokaal TeX-systeem hebt geïnstalleerd, dan kan je de voorbeeldcode van de pagina kopiëren.
 Je kan dit doen door de code handmatig te selecteren of door de sneltoetsen voor "alles selecteren" te gebruiken (<kbd>Ctrl</kbd>+<kbd>A</kbd> <kbd>Ctrl</kbd>+<kbd>C</kbd> op Windows, bijvoorbeeld).
 Hiermee kopieer je de code naar het klembord van je besturingssysteem zodat je een leeg document kan starten in je lokale tekstbewerker en de code erin kan plakken.
 
 ### Problemen oplossen
 
 Onze voorbeelden zijn gebaseerd op een up-to-date LaTeX-installatie.
-Ze werken allemaal met beide online demonstratiesystemen.
+Ze werken allemaal met beide online demosystemen.
 Als je fouten krijgt bij het uitvoeren van de voorbeelden, ga dan na of je LaTeX-installatie up-to-date is.
 
 ---
