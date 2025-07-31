@@ -48,16 +48,21 @@ Example text.
 Each example is complete. However you may wish to edit it to make small
 changes, perhaps as part of an Exercise set at the end of the lesson.
 
-The editor being used is [ACE](https://ace.c9.io/).
+There are two editors being used on the site (depending on the page).
 
-You may customise the theme used in the editor (for example using a
-dark theme with light text on a dark background) on the [Site Settings](settings) page.
-A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
-while on any example in the site. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
+* [ACE](https://ace.c9.io/).
 
-The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+  You may customise the theme used in the editor (for example using a
+  dark theme with light text on a dark background) on the [Site Settings](settings) page.
+  A convenient way to experiment with different themes is to to use <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> on Mac)
+  while on any example in the site. [This displays a panel](javascript:acesettings()) which allows you to change all the ACE settings.
+
+  The ACE repository has a [useful page of editor keyboard shortcuts](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
 
+* [CodeMirror6](https://codemirror.net/)
+
+  Currently two CodeMirror themes are provided (a light and a dark).
 
 #### Three ways to run the example
 

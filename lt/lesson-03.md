@@ -99,6 +99,7 @@ juos pakomentuoti tokią dokumento struktūrą:
 
 ```latex
 \documentclass[a4paper,12pt]{article} % Dokumento klasė su opcijomis
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % Komentaras preambulėje
 \begin{document}

@@ -35,7 +35,12 @@ Example text.
 
 The example is complete. However you may wish to edit it to make small
 changes, perhaps as part of an Exercise set at the end of the lesson.
-The editor being used is [ACE](https://ace.c9.io/).
+The editors being used are]
+
+* [ACE](https://ace.c9.io/).
+
+* [CodeMirror6](https://codemirror.net/).
+
 
 Whether or not the code block has been edited, there are three basic ways that you can run the example.
 

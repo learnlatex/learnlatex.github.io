@@ -167,9 +167,9 @@ l.3 \usepackage[leqno}
 
 <script>
   window.addEventListener('load', function(){
-      if(editors['pre2'] != null) editors['pre2'].moveCursorTo(2, 31, false);
-      if(editors['pre4'] != null) editors['pre4'].moveCursorTo(2, 18, false);
-      if(editors['pre7'] != null) editors['pre7'].moveCursorTo(2, 20, false);
-      if(editors['pre9'] != null) editors['pre9'].moveCursorTo(6, 0, false);
+  rlselectline('pre2',3);
+  rlselectline('pre5',4);
+  rlselectline('pre8',4);
+  rlselectline('pre10',8);
   }, false);
 </script>

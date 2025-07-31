@@ -49,19 +49,22 @@ Example text.
 Kiekvienas pavyzdys yra išbaigtas.  Jūs galite jį paredaguoti, įnešdami
 smulkius taisymus, galbūt spręsdami pratimų aibę pamokos pabaigoje.
 
-Redagavimo programa yra [ACE](https://ace.c9.io/).
+Redagavimo programa yra
 
-Jūs galite pasikeisti šios programos spalvinę gamą pagal save (pavyzdžiui,
-pasirinkti tamsų pagrindą su šviesiu tekstu) pasinaudodami [svetainės
-nustatymų](settings) puslapiu.  Iš klaviatūros galima patogiai išbandyti
-spalvines gamas klavišų kombinacija <kbd>Ctrl</kbd>+<kbd>,</kbd>
-(<kbd>⌘</kbd>+<kbd>,</kbd> Mac kompiuteriuose) beredaguojant bet kokį pavyzdį
-šioje svetainėje.  [Tai atvaizduoja ekrane panelę](javascript:acesettings()),
-kuri leidžia pasikeisti visus ACE nustatymus.
+* [ACE](https://ace.c9.io/).
 
-Programos ACE saugykloje yra [naudinga redaktoriaus klavišų
-suvestinė](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+  Jūs galite pasikeisti šios programos spalvinę gamą pagal save (pavyzdžiui,
+  pasirinkti tamsų pagrindą su šviesiu tekstu) pasinaudodami [svetainės
+  nustatymų](settings) puslapiu.  Iš klaviatūros galima patogiai išbandyti
+  spalvines gamas klavišų kombinacija <kbd>Ctrl</kbd>+<kbd>,</kbd>
+  (<kbd>⌘</kbd>+<kbd>,</kbd> Mac kompiuteriuose) beredaguojant bet kokį pavyzdį
+  šioje svetainėje.  [Tai atvaizduoja ekrane panelę](javascript:acesettings()),
+  kuri leidžia pasikeisti visus ACE nustatymus.
 
+  Programos ACE saugykloje yra [naudinga redaktoriaus klavišų
+  suvestinė](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+
+* [CodeMirror6](https://codemirror.net/).
 
 
 #### Trys būdai vykdyti pavyzdžius

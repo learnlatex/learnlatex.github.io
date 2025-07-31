@@ -15,7 +15,7 @@ suporte.  Veja a
 [página de ajuda do The LaTeX Project](https://www.latex-project.org/help/) que
 contém meios de buscar suporte ao usuário.
 
-## Time do Website
+## Mantenedores do website
 
 O [código fonte deste website](https://github.com/learnlatex/learnlatex.github.io/)
 está no [GitHub](https://github.com/learnlatex/), por favor veja sobre

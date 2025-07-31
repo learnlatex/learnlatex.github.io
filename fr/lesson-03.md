@@ -106,6 +106,7 @@ On peut ajouter des commentaires à un fichier LaTeX en les faisant commencer pa
 
 ```latex
 \documentclass[a4paper,12pt]{article} % La classe de document et ses options
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % Un commentaire de le préambule
 
