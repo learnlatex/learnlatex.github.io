@@ -42,11 +42,16 @@ permalink: /zh-hans/help
 
 每个示例都是完整的。但是你可能希望编辑它来做一些小的改动，也许是作为课程末尾的练习集的一部分。
 
-编辑器使用的是[ACE](https://ace.c9.io/)。
+编辑器使用的是
 
-你可以在[网站设置](settings)页面自定义编辑器使用的主题（例如使用深色主题，即在深色背景上显示浅色文本）。在网站的任何示例中使用<kbd>Ctrl</kbd>+<kbd>,</kbd>（Mac上使用<kbd>⌘</kbd>+<kbd>,</kbd>）是一种尝试不同主题的便捷方式。[这会显示一个面板](javascript:acesettings())，允许你更改所有ACE设置。
+* [ACE](https://ace.c9.io/)。
 
-ACE代码库有一个[有用的编辑器快捷键页面](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts)。
+  你可以在[网站设置](settings)页面自定义编辑器使用的主题（例如使用深色主题，即在深色背景上显示浅色文本）。在网站的任何示例中使用<kbd>Ctrl</kbd>+<kbd>,</kbd>（Mac上使用<kbd>⌘</kbd>+<kbd>,</kbd>）是一种尝试不同主题的便捷方式。[这会显示一个面板](javascript:acesettings())，允许你更改所有ACE设置。
+
+  ACE代码库有一个[有用的编辑器快捷键页面](https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts)。
+
+* [CodeMirror6](https://codemirror.net/).
+
 
 #### 运行示例的三种方式
 

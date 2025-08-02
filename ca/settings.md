@@ -34,3 +34,7 @@ El paràmetre `motor` que utilitzarà TeXLive.net o Overleaf en absència de la 
 El tema que utilitza l'editor ACE que utilitza el lloc web.
 
 {% include settings-acetheme.html %}
+
+CodeMirror6.
+
+{% include settings-cm6theme.html %}

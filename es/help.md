@@ -48,16 +48,16 @@ Example text.
 Cada ejemplo contiene un código completo e independiente. Sin embargo, puede que quiera editarlo para hacer
 pequeños cambios, quizá como parte de los ejercicios propuestos al final de cada lección.
 
-El editor usado es [ACE](https://ace.c9.io/).
+* El editor usado es [ACE](https://ace.c9.io/).
 
-Puede configurar el tema usado en el editor (por ejemplo usando un
-teme oscuro, con el texto claro sobre fondo negro) en el apartado de [Configuración del sitio web](settings).
-Una manera adecuada de probar los diferentes temas disponibles es usando <kbd>Ctrl</kbd><kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> en Mac) cuando se encuentre 
-en el texto de alguno de los ejemplos del sitio web. [Esta combinación de teclas le mostrará un panel](javascript:acesettings()) que le permitirá cambiar todos los parámetros de ACE.
+  Puede configurar el tema usado en el editor (por ejemplo usando un
+  teme oscuro, con el texto claro sobre fondo negro) en el apartado de [Configuración del sitio web](settings).
+  Una manera adecuada de probar los diferentes temas disponibles es usando <kbd>Ctrl</kbd><kbd>,</kbd> (<kbd>⌘</kbd>+<kbd>,</kbd> en Mac) cuando se encuentre 
+  en el texto de alguno de los ejemplos del sitio web. [Esta combinación de teclas le mostrará un panel](javascript:acesettings()) que le permitirá cambiar todos los parámetros de ACE.
 
-El depósito de ACE dispone de una página [muy útil para conocer las teclas de acceso rápido del editor] https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
+  El depósito de ACE dispone de una página [muy útil para conocer las teclas de acceso rápido del editor] https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts).
 
-
+* [CodeMirror6](https://codemirror.net/)
 
 ### Tres maneras de ejecutar un ejemplo
 

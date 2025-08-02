@@ -103,6 +103,7 @@ Ta có thể thêm ghi chú vào mã nguồn bằng cách bắt đầu chúng b�
 cùng thử nó xem:
 ```latex
 \documentclass[a4paper,12pt]{article} % Lớp văn bản với một số tùy chọn
+% Select T1 font encoding: suitable for Western European Latin scripts
 \usepackage[T1]{fontenc}
 % Một ghi chú ở phần khai báo
 \begin{document}
