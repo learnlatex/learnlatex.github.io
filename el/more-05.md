@@ -1,29 +1,27 @@
 ---
 layout: "lesson"
 lang: "el"
-title: "More on: Using document classes to influence design"
-description: "This lesson gives information on more specialized document classes for LaTeX."
-toc-anchor-text: "More on: Using document classes to influence design"
+title: "Περισσότερα σχετικά με: Χρήση τύπων εγγράφων για τη διαμόρφωση της σχεδίασης"
+description: "Αυτό το μάθημα παρέχει πληροφορίες σχετικά με πιο εξειδικευμένους τύπους εγγράφων για το LaTeX."
+toc-anchor-text: "Περισσότερα σχετικά με: Χρήση τύπων εγγράφων για τη διαμόρφωση της σχεδίασης"
 ---
 
-## Journal-specific classes
+## Τύποι εγγράφων για επιστημονικά περιοδικά
 
-Many academic journals provide LaTeX classes for submissions. These
-typically set up the layout to be similar to the final journal,
-although that does depend on font usage, etc. If there is a class
-available, it is normally provided directly by the editorial office,
-who should give appropriate detail on what features it has. Many of
-these are also available on [CTAN](https://ctan.org) and in standard TeX
-distributions.
+Πολλά επιστημονικά περιοδικά παρέχουν τύπους εγγράφων LaTeX για υποβολές. Αυτοί
+συνήθως ρυθμίζουν τη διάταξη ώστε να είναι παρόμοια με την τελική έκδοση του περιοδικού,
+αν και αυτό εξαρτάται από τη χρήση γραμματοσειρών κ.λπ. Αν υπάρχει διαθέσιμος τύπος,
+συνήθως παρέχεται απευθείας από τη συντακτική επιτροπή του περιοδικού, η οποία θα πρέπει να δίνει και πληροφορίες σχετικά με τις δυνατότητές του. Πολλοί τέτοιοι τύποι
+είναι επίσης διαθέσιμοι στο [CTAN](https://ctan.org) και σε τυπικές διανομές TeX.
 
-## Classes for presentations
+## Τύποι εγγράφων για παρουσιάσεις
 
-One area that needs a lot of special treatment is creating presentations. The `slides`
-class was written for making 'classical' printed slides, and it does not
-have any special support for on-screen presentations. Two classes
-have been developed to do just that, and that are widely used:
-`beamer` and `powerdot`. As `beamer` is probably the more common one, we will
-give you an example of how it works:
+Ένας τομέας που χρειάζεται ειδική μεταχείριση είναι η δημιουργία παρουσιάσεων. Ο τύπος `slides`
+γράφτηκε για να δημιουργεί «κλασικές» εκτυπωμένες διαφάνειες, και δεν έχει
+καμία ειδική υποστήριξη για παρουσιάσεις σε οθόνη. Δύο τύποι
+έχουν αναπτυχθεί ακριβώς για αυτό το σκοπό, και είναι ευρέως χρησιμοποιούμενοι:
+`beamer` και `powerdot`. Καθώς ο τύπος `beamer` είναι πιθανώς ο πιο κοινός, θα σας
+δώσουμε ένα παράδειγμα του πώς λειτουργεί:
 
 ```latex
 \documentclass{beamer}
@@ -47,20 +45,14 @@ give you an example of how it works:
 \end{document}
 ```
 
-This shows two important ideas. First, `beamer` divides a document into frames,
-each of which can make more than one slide (page). Second, `beamer` adds to the
-normal LaTeX syntax to allow parts of the source to appear 'a bit at a time'.
-This is powerful but more complicated than we can cover here: take a look  at
-[this blog
-entry](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) for
-more.
+Αυτό επιδεικνύει δύο σημαντικές ιδέες. Πρώτον, το `beamer` διαιρεί ένα έγγραφο σε «καρέ» (frames), το καθένα από τα οποία μπορεί να δημιουργήσει περισσότερες από μία διαφάνειες (σελίδες). Δεύτερον, το `beamer` προσθέτει στη σύνταξη του LaTeX στοιχεία για να επιτρέπει σε μέρη του κειμένου να εμφανίζονται σταδιακά. Αυτό είναι μία ισχυρή δυνατότητα αλλά πιο περίπλοκο από ό,τι μπορούμε να καλύψουμε εδώ: ρίξτε μια ματιά σε [αυτή την ανάρτηση](https://www.texdev.net/2014/01/17/the-beamer-slide-overlay-concept/) για περισσότερα.
 
-## A class for images
+## Ένας τύπος εγγράφων για εικόνες
 
-There are occasions when you need to make an image (which might be text-heavy)
-using LaTeX. Often, you do not want anything other than the content itself on
-the 'page'. That is easiest to do using the [`standalone`](https://ctan.org/pkg/standalone)
-class. It automatically sets the size of the page to surround the printed content.
+Μερικές φορές χρειάζεται να δημιουργήσετε μία εικόνα (που μπορεί να περιέχει και αρκετό κείμενο)
+χρησιμοποιώντας το LaTeX. Συχνά, δεν θέλετε τίποτα άλλο εκτός από το περιεχόμενο
+αυτό καθαυτό στη «σελίδα». Αυτό είναι πιο εύκολο να γίνει χρησιμοποιώντας τον τύπο [`standalone`](https://ctan.org/pkg/standalone).
+Αυτός ρυθμίζει αυτόματα το μέγεθος της σελίδας ώστε να περιβάλλει ακριβώς το εκτυπωμένο περιεχόμενο.
 
 ```latex
 \documentclass{standalone}

@@ -1,60 +1,51 @@
 ---
 layout: "lesson"
 lang: "el"
-title: "Using document classes to influence design"
-description: "This lesson explains what a document class is and how it can influence a document layout, and lists the main classes you can find in a TeX distribution."
-toc-anchor-text: "Document classes"
-toc-description: "Setting the general document layout."
+title: "Χρήση τύπων εγγράφων για τη διαμόρφωση της σχεδίασης"
+description: "Αυτό το μάθημα εξηγεί τι είναι ένας τύπος εγγράφων και πώς μπορεί να επηρεάσει τη διάταξη του εγγράφου, και απαριθμεί τους κυριότερους τύπους εγγράφων που μπορείτε να βρείτε σε μία διανομή TeX."
+toc-anchor-text: "Τύποι εγγράφων"
+toc-description: "Διαμόρφωση της γενικής διάταξης εγγράφου."
 ---
 
-# Document classes
+# Τύποι εγγράφων
 
 <span
-  class="summary">This lesson explains what a document class is and how it can influence a document layout and design. It lists the main classes you can find in a TeX distribution.</span>
+  class="summary">Αυτό το μάθημα εξηγεί τι είναι ένας τύπος εγγράφων και πώς μπορεί να επηρεάσει τη διάταξη του εγγράφου, και απαριθμεί τους κυριότερους τύπους εγγράφων που μπορείτε να βρείτε σε μία διανομή TeX.</span>
 
-You might have noticed that all of the LaTeX documents we have created
-so far have started with a `\documentclass` line, and that
-`\documentclass{article}` has been the far most common choice. (We needed
-`\documentclass{report}` in [the previous lesson](lesson-04) to try out the
-`\chapter` command.) This line is required in all LaTeX documents, and is
-(almost) always the first command you should have.
+Ίσως θα έχετε παρατηρήσει ότι όλα τα έγγραφα LaTeX που έχουμε δημιουργήσει μέχρι τώρα ξεκινούν με μία γραμμή `\documentclass`, και ότι η πιο συνηθισμένη επιλογή ήταν `\documentclass{article}`. (Χρειαστήκαμε την `\documentclass{report}` στο [προηγούμενο μάθημα](lesson-04) για να δοκιμάσουμε την εντολή `\chapter`.) Αυτή η γραμμή είναι απαραίτητη σε όλα τα έγγραφα LaTeX, και είναι (σχεδόν) πάντα η πρώτη εντολή που πρέπει να έχετε.
 
-## What a document class does
+## Τι κάνει ένας τύπος εγγράφων
 
-The document class sets up the general layout of the document, for example
+Ο τύπος εγγράφων ρυθμίζει τη γενική διάταξη του εγγράφου, για παράδειγμα
 
-- design: margins, fonts, spacing, etc.
-- whether chapters are available
-- if the title should be on a separate page
+- σχεδίαση: περιθώρια, γραμματοσειρές, διάστιχο μεταξύ γραμμών κ.λπ.
+- αν είναι διαθέσιμα κεφάλαια
+- αν ο τίτλος θα πρέπει να είναι σε ξεχωριστή σελίδα
 
-Document classes can also add new commands more generally; that's particularly
-true for specialist cases like creating presentation slides.
+Οι τύποι εγγράφων μπορούν επίσης να προσθέτουν πιο γενικά νέες εντολές&#903; αυτό ισχύει ιδιαίτερα για ειδικές περιπτώσεις όπως η δημιουργία διαφανειών παρουσιάσεων.
 
-The document class line can also set _global options_: things that apply to
-the document as a whole. These are given in square brackets:
-`\documentclass[<options>]{<name>}`. This syntax, with optional information
-given first in square brackets, is used in many LaTeX commands.
+Η γραμμή με τον τύπο εγγράφου μπορεί να θέσει _γενικές επιλογές_: στοιχεία που εφαρμόζονται συνολικά στο έγγραφο. Αυτές δίνονται μέσα σε αγκύλες:
+`\documentclass[<options>]{<name>}`. Αυτή η σύνταξη, με προαιρετικές πληροφορίες που δίνονται πρώτες μέσα σε αγκύλες, χρησιμοποιείται σε πολλές εντολές του LaTeX.
 
-## The base classes
+## Οι βασικοί τύποι εγγράφων
 
-LaTeX is supplied with a set of standard classes, all of which look similar
-but with some variations:
+Το LaTeX παρέχει ένα σύνολο βασικών τύπων εγγράφων, οι οποίοι μοιάζουν μεταξύ τους αλλά με κάποιες παραλλαγές:
 
 - `article`  
-  short documents without chapters
+  σύντομα έγγραφα χωρίς κεφάλαια
 - `report`  
-  longer documents with chapters, single-sided printing
+  μεγαλύτερα έγγραφα με κεφάλαια, εκτύπωση μονής όψης
 - `book`  
-  longer documents with chapters, double-sided printing, with front- and
-  back-matter (for example an index)
+  μεγαλύτερα έγγραφα με κεφάλαια, εκτύπωση διπλής όψης, με προκαταρκτικά και
+  τελικά τμήματα (για παράδειγμα, ένα ευρετήριο)
 - `letter`  
-  correspondence with no sections
+  αλληλογραφία, χωρίς ενότητες
 - `slides`  
-  for presentations (but see below)
+  για παρουσιάσεις (αλλά δείτε παρακάτω)
 
-The `article`, `report` and `book` classes have very similar commands available,
-as we've already seen. When writing a `letter`, the commands available are
-a bit different
+Οι τύποι `article`, `report` και `book` διαθέτουν πολύ παρόμοιες εντολές,
+όπως έχουμε ήδη δει. Όταν γράφετε ένα `letter`, οι διαθέσιμες εντολές είναι
+λίγο διαφορετικές.
 
 ```latex
 \documentclass{letter}
@@ -74,48 +65,28 @@ The text goes Here
 \end{document}
 ```
 
-See how ``\\`` is used to separate lines of the address; we'll look at line
-breaking [a bit later](lesson-11). Also see how the `letter` class creates  a
-new environment for each letter and has specialized commands.
+Παρατηρήστε πώς το ``\\`` χρησιμοποιείται για να διαχωρίσει τις γραμμές της διεύθυνσης&#903; θα ασχοληθούμε με τον διαχωρισμό γραμμών [λίγο αργότερα](lesson-11). Επίσης, παρατηρήστε ότι ο τύπος `letter` δημιουργεί ένα νέο περιβάλλον για κάθε επιστολή και διαθέτει εξειδικευμένες εντολές.
 
-The standard `article`, `report` and `book` classes take the options `10pt`,
-`11pt` and `12pt` to change font size, and `twocolumn` to make a two-column
-document.
+Οι τύποι `article`, `report` και `book` διαθέτουν τις επιλογές `10pt`,
+`11pt` και `12pt` για να αλλάξουν το μέγεθος της γραμματοσειράς, και `twocolumn` για να δημιουργήσουν ένα έγγραφο δύο στηλών.
 
-## Function-rich classes
+## Εμπλουτισμένοι τύποι εγγράφων
 
-The core classes are very stable, but that means they are also quite
-conservative in both design and the range of commands available. Over time, a
-number of more powerful classes have been written, that let you alter the design
-without having to do things manually (which we'll mention [a bit
-later](lesson-11)).
+Οι βασικοί τύποι εγγράφων είναι πολύ σταθεροί, αλλά αυτό σημαίνει ότι είναι επίσης αρκετά συντηρητικοί τόσο ως προς τη σχεδίαση όσο και ως προς τη γκάμα εντολών που παρέχουν. Με τον καιρό, έχουν γραφτεί αρκετοί πιο ισχυροί τύποι εγγράφων, οι οποίοι σας επιτρέπουν να αλλάξετε τη σχεδίαση χωρίς να χρειάζεται να κάνετε τα πράγματα χειροκίνητα (όπως θα δούμε [λίγο αργότερα](lesson-11)).
 
-The American Mathematical Society provide variants of the standard
-classes (`amsart`, `amsbook`) with a more traditional design closer to
-that used in mathematics journal publications.
+Η Αμερικανική Μαθηματική Εταιρεία παρέχει παραλλαγές των τυπικών κλάσεων (`amsart`, `amsbook`) με μια πιο παραδοσιακή σχεδίαση που πλησιάζει αυτή που χρησιμοποιείται στις δημοσιεύσεις μαθηματικών περιοδικών.
 
-The two largest and most popular 'extended' classes are the KOMA-Script bundle
-and the memoir class. KOMA-Script offers a set of classes which 'parallel' the
-standard ones: `scrartcl`, `scrreprt`, `scrbook`, and `scrlttr2`, while there is
-a single `memoir` class that is most like an extension of `book`.
+Οι δύο μεγαλύτεροι και πιο δημοφιλείς «εμπλουτισμένοι» τύποι εγγράφων είναι το πακέτο KOMA-Script και η κλάση `memoir`. Το πακέτο KOMA-Script προσφέρει ένα σύνολο τύπων αντίστοιχων με τους βασικούς: `scrartcl`, `scrreprt`, `scrbook` και `scrlttr2`, ενώ ο τύπος `memoir` μοιάζει περισσότερο με μια επέκταση της κλάσης `book`.
 
-These extended classes have lots of customisation hooks, which we'll explore a
-bit in an exercise. You might wonder how we can know about the hooks they
-provide; we will cover that [in a later lesson](lesson-16), but you can always
-jump ahead!
+Αυτές οι επεκτάσεις διαθέτουν πολλές δυνατότητες προσαρμογής, τις οποίες θα εξερευνήσουμε λίγο σε μια άσκηση. Ίσως να αναρωτιέστε πώς μπορούμε να γνωρίζουμε για τις δυνατότητες που παρέχουν&#903; θα το καλύψουμε [σε ένα επόμενο μάθημα](lesson-16), αλλά μπορείτε να το δείτε ήδη!
 
-## Presentations
+## Παρουσιάσεις
 
-The `slides` class was developed for making physical slides in the mid-1980s, so
-doesn't have any features for creating interactive PDF-based presentations.
-There are modern classes that do exactly that: they are somewhat specialist
-compared to general LaTeX documents, so we've [covered them in the additional
-information](more-05).
+Ο τύπος `slides` αναπτύχθηκε για τη δημιουργία φυσικών διαφανειών στα μέσα της δεκαετίας του 1980, επομένως δεν διαθέτει καμία δυνατότητα για τη δημιουργία διαδραστικών παρουσιάσεων PDF. Υπάρχουν σύγχρονες κλάσεις που κάνουν ακριβώς αυτό: είναι κάπως εξειδικευμένες σε σύγκριση με τα συνηθισμένα έγγραφα LaTeX, οπότε τις [καλύπτουμε στο επιπλέον μάθημα](more-05).
 
-## Exercises
+## Ασκήσεις
 
-Explore how changing the document class between the standard ones, the KOMA
-bundle and `memoir` affects the appearance of the document.
+Εξερευνήστε πώς η αλλαγή του τύπου εγγράφου μεταξύ των βασικών, αυτών του πακέτου KOMA και του `memoir` επηρεάζει την εμφάνιση του εγγράφου.
 
 ```latex
 \documentclass{article} % Change the class here
@@ -133,10 +104,10 @@ document have two columns.
 \end{document}
 ```
 
-Add the class option `twocolumn` and see how the layout changes.
+Προσθέστε την επιλογή `twocolumn` και δείτε πώς αλλάζει η διάταξη.
 
-Change the `\section` above to `\chapter` and find out what effect the
-following class options have when using the `scrreprt` class.
+Αλλάξτε την εντολή `\section` παραπάνω σε `\chapter` και ανακαλύψτε ποιο είναι το αποτέλεσμα των
+ακόλουθων επιλογών όταν χρησιμοποιείτε την κλάση `scrreprt`.
 
 - `chapterprefix`
 - `headings=small`
