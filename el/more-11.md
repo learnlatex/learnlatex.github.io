@@ -1,18 +1,17 @@
 ---
 layout: "lesson"
 lang: "el"
-title: "More on: Formatting: fonts and spacing"
-description: "This lesson shows how to suppress the paragraph indentation for a single paragraph."
-toc-anchor-text: "More on: Formatting: fonts and spacing"
+title: "Περισσότερα σχετικά με: Μορφοποίηση: γραμματοσειρές και κενά διαστήματα"
+description: "Αυτό το μάθημα παρουσιάζει πώς να αφαιρέσετε την εσοχή παραγράφου για μία μόνο παράγραφο."
+toc-anchor-text: "Περισσότερα σχετικά με: Μορφοποίηση: γραμματοσειρές και κενά διαστήματα"
 ---
 
-## Suppressing the indent for one paragraph
+## Αφαίρεση της εσοχής για μία μόνο παράγραφο
 
-
-If you want to suppress indentation for a single paragraph, you can use
+Αν θέλετε να αφαιρέσετε την εσοχή για μία μόνο παράγραφο, μπορείτε να χρησιμοποιήσετε την εντολή
 `\noindent`.
-This should be _very_ rarely used; most of the time, you should let LaTeX
-handle this automatically.
+Αυτό θα πρέπει να χρησιμοποιείται _πολύ_ σπάνια&#903; τις περισσότερες φορές, θα πρέπει να αφήνετε το LaTeX
+να το διαχειρίζεται αυτόματα.
 
 ```latex
 \documentclass{article}
