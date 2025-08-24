@@ -1,34 +1,28 @@
 ---
 layout: "lesson"
 lang: "el"
-title: "Dealing with errors"
-description: "This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them."
-toc-anchor-text: "Error handling"
-toc-description: "Dealing with unexpected behaviors."
+title: "Αντιμετώπιση σφαλμάτων"
+description: "Αυτό το μάθημα παρουσιάζει μερικά κοινά σφάλματα σε έγγραφα LaTeX, τι σημαίνουν και πώς να τα ξεπεράσετε."
+toc-anchor-text: "Χειρισμός σφαλμάτων"
+toc-description: "Αντιμετώπιση απροσδόκητων συμπεριφορών."
 ---
 
-# Dealing with errors
+# Αντιμετώπιση σφαλμάτων
 
 <span
-  class="summary">This lesson shows some common errors in LaTeX documents, what they mean, and how to work around them.</span>
+  class="summary">Αυτό το μάθημα παρουσιάζει μερικά κοινά σφάλματα σε έγγραφα LaTeX, τι σημαίνουν και πώς να τα ξεπεράσετε.</span>
 
-Unlike a typical word processing system, LaTeX has an Edit/Run/View cycle
-closer to working with programming language compilers, and as in programming
-users may make errors in their input and so need to deal with error messages
-reported by the system.
+Σε αντίθεση με έναν τυπικό επεξεργαστή κειμένου, το LaTeX απαιτεί μία ακολουθία σταδίων Επεξεργασίας/Τρεξίματος/Προβολής, η οποία είναι πιο κοντά στη διαδικασία που ακολουθείται με τους μεταγλωττιστές γλωσσών προγραμματισμού. Όπως και στον προγραμματισμό, οι χρήστες μπορεί να κάνουν σφάλματα στην είσοδό τους και έτσι χρειάζεται να ασχοληθούν με τα μηνύματα σφάλματος που αναφέρονται από το σύστημα.
 
-## Common errors
+## Κοινά σφάλματα
 
-This page gives examples of several common errors. Each error example has some discussion about the form of the error
-message.
+Αυτή η σελίδα δίνει παραδείγματα αρκετών κοινών σφαλμάτων. Κάθε παράδειγμα σφάλματος συνοδεύεται από συζήτηση σχετικά με τη μορφή του μηνύματος σφάλματος.
 
-It may be instructive to try the examples but also use the
-edit features to try to fix the documents and test that you can
-resolve the errors.
+Θα είναι διδακτικό να δοκιμάσετε τα παραδείγματα αλλά και να χρησιμοποιήσετε τις δυνατότητες επεξεργασίας για να προσπαθήσετε να διορθώσετε τα έγγραφα και να δοκιμάσετε ότι μπορείτε να επιλύσετε τα σφάλματα.
 
-### pdflatex not found
+### Το pdflatex δεν βρέθηκε
 
-A common first error that people see when starting is:
+Ένα κοινό πρώτο σφάλμα που βλέπουν οι χρήστες όταν ξεκινούν είναι:
 
 ```
 'pdflatex' is not recognized as an internal or external command,
@@ -36,22 +30,18 @@ operable program or batch file.
 ```
 {: .noedit :}
 
-on Windows or
+σε Windows, ή
 
 ```
 bash: pdflatex: command not found
 ```
 {: .noedit :}
 
-on Linux.
+σε Linux.
 
-This is
-not a TeX error but an operating system error saying that TeX is not
-installed or not found.  A common mistake is to install an _editor_
-such as TeXworks or TeXShop but without installing a TeX system such as
-TeX Live or MiKTeX.
+Αυτό δεν είναι σφάλμα του TeX αλλά του λειτουργικού συστήματος, και λέει ότι το TeX δεν είναι εγκατεστημένο ή δεν βρέθηκε. Ένα κοινό λάθος είναι να εγκαταστήσετε έναν _επεξεργαστή_ όπως το TeXworks ή το TeXShop αλλά χωρίς να εγκαταστήσετε ένα σύστημα TeX όπως το TeX Live ή το MiKTeX.
 
-### Anatomy of a TeX error message
+### Ανατομία ενός μηνύματος σφάλματος του TeX
 
 ```latex
 \documentclass{article}
@@ -66,7 +56,7 @@ My command is used here \mycommand.
 \end{document}
 ```
 
-This produces a multi-line message in the log file.
+Αυτό παράγει ένα μήνυμα πολλαπλών γραμμών στο αρχείο καταγραφής.
 
 ```
 ! Undefined control sequence.
@@ -78,38 +68,26 @@ l.8 My command is used here \mycommand
 ```
 {: .noedit :}
 
-* The first line, marked with `!`, gives the general nature of the error (undefined command in this case).
-* The second pair of lines show the line that TeX was processing, with a line break marking the point
-  that TeX had reached. The undefined command is the last token read so the last word before the line break,
-  `\textbold` here. After the line break are the remaining tokens `{hmmm}` that have possibly been read as
-  an argument but have not yet been executed by TeX.
-* There may in general be some additional lines at this point, showing more context of the error message,
-* The final line starts with `l.` followed by a line number, and then the line in the source file where the
-  error is detected.
-
-* The final line is a `?`.  If using TeX interactively it is possible to
-  enter instructions to TeX at this point, but most editors and online
-  systems run TeX in a mode that does not stop at errors but will
-  scroll past this and try to process the rest of the document. Typing
-  `s` to the prompt will instruct TeX to carry on in this mode if you
-  are working interactively.
+* Η πρώτη γραμμή, που σημειώνεται με `!`, δίνει τη γενική φύση του σφάλματος (μη καθορισμένη εντολή, σε αυτή την περίπτωση).
+* Το δεύτερο ζεύγος γραμμών δείχνει τη γραμμή που επεξεργαζόταν το TeX, με μια αλλαγή γραμμής να επισημαίνει το σημείο στο οποίο είχε φτάσει το TeX. Η μη καθορισμένη εντολή είναι η λέξη που διαβάστηκε τελευταία, η τελευταία λέξη πριν από την αλλαγή γραμμής, εδώ η `\textbold`. Μετά την αλλαγή γραμμής υπάρχουν τα υπόλοιπα στοιχεία `{hmmm}` που ενδεχομένως έχουν διαβαστεί ως παράμετροι αλλά δεν έχουν χρησιμοποιηθεί ακόμη από το TeX.
+* Γενικά, μπορεί να υπάρχουν μερικές επιπλέον γραμμές σε αυτό το σημείο, που δείχνουν περισσότερα συμφραζόμενα του μηνύματος σφάλματος,
+* Η τελευταία γραμμή ξεκινάει με `l.` ακολουθούμενη από έναν αριθμό γραμμής, και στη συνέχεια τη γραμμή στο αρχείο του κώδικα όπου ανιχνεύτηκε το σφάλμα.
+  
+* Η τελευταία γραμμή είναι ένα `?`.  Εάν χρησιμοποιείτε το TeX διαδραστικά (σε τερματικό), είναι δυνατή η εισαγωγή εντολών στο TeX σε αυτό το σημείο, αλλά οι περισσότεροι επεξεργαστές και διαδικτυακά συστήματα εκτελούν το TeX σε μια λειτουργία που δεν σταματά σε σφάλματα αλλά τα προσπερνάει και προσπαθεί να επεξεργαστεί το υπόλοιπο του εγγράφου. Πληκτρολογώντας
+  `s` στο σημείο αυτό θα δώσετε εντολή στο TeX να συνεχίσει σε αυτή τη λειτουργία αν εργάζεστε διαδραστικά.
 
 
-Note here that TeX does not see the error at the point that
-the definition is made; and in fact if `\mycommand` is defined but not
-used, no error would be raised. So although the error is reported on
-line 8, the "real" error is in the definition on line 4, so it is
-important to see the whole error message.
+Σημειώστε εδώ ότι το TeX δεν βλέπει το σφάλμα στο σημείο που γίνεται ο ορισμός, και στην πραγματικότητα, αν το `\mycommand` είναι ορισμένο αλλά δεν χρησιμοποιηθεί, δεν θα προκύψει κανένα σφάλμα. Έτσι, αν και το σφάλμα αναφέρεται στη γραμμή 8, το «πραγματικό» σφάλμα είναι στον ορισμό στη γραμμή 4, οπότε είναι σημαντικό να δείτε ολόκληρο το μήνυμα σφάλματος.
 
-Beware that some editors show one line "summaries" of the error log.
-This can be particularly misleading if shown as
+Προσοχή: ορισμένοι επεξεργαστές εμφανίζουν «περιλήψεις» μίας γραμμής του αρχείου καταγραφής σφαλμάτων.
+Αυτό μπορεί να είναι ιδιαίτερα παραπλανητικό αν εμφανίζεται ως
 
 `line 8: undefined command: ...\mycommand`
 
-as it makes it appear that `\mycommand` is not defined.
+καθώς φαίνεται σαν η εντολή `\mycommand` να μην είναι ορισμένη.
 
 
-### Mismatched braces
+### Άγκιστρα που δεν ταιριάζουν
 
 
 ```latex
@@ -123,18 +101,18 @@ as it makes it appear that `\mycommand` is not defined.
 \end{document}
 ```
 
-Here the error is a mismatched `}` used to end the optional
-argument. The closing brace causes LaTeX's option parsing
-to fail and you get an internal and not that helpful error: 
+Εδώ το σφάλμα είναι ένα `}` που χρησιμοποιείται για να κλείσει το προαιρετικό
+όρισμα, και το οποίο δεν έχει αντίστοιχο `{`. Αυτό οδηγεί σε αποτυχία την ανάλυση του κώδικα από το LaTeX
+και λαμβάνετε ένα εσωτερικό και όχι πολύ χρήσιμο σφάλμα:
 
 ```
 ! Argument of \@fileswith@ptions has an extra }.
 ```
 {: .noedit :}
 
-While the error description is unhelpful; the following two
-lines do accurately display the location of the error by the use of
-the linebreak showing how far TeX had read:
+Αν και η περιγραφή του σφάλματος δεν είναι χρήσιμη, οι επόμενες δύο
+γραμμές δείχνουν με ακρίβεια τη θέση του σφάλματος με τη χρήση
+της αλλαγής γραμμής που δείχνει πόσο είχε διαβάσει το TeX:
 
 ```
 l.4 \usepackage[leqno}
@@ -143,7 +121,7 @@ l.4 \usepackage[leqno}
 {: .noedit :}
 
 
-### Missing files
+### Αρχεία που λείπουν
 
 ```latex
 \documentclass{article}
@@ -156,19 +134,19 @@ l.4 \usepackage[leqno}
 \end{document}
 ```
 
-This produces the error
+Αυτό προκαλεί το σφάλμα
 
 ```
 ! LaTeX Error: File `amsmathz.sty' not found.
 ```
 {: .noedit :}
 
-Note: the same error may be caused by two different causes; a simple
-typo as here, which may be corrected by fixing the package name, or
-that the file really is missing and needs to be installed on the
-current system.
+Σημείωση: το ίδιο σφάλμα μπορεί να προκληθεί από δύο διαφορετικές αιτίες:
+από ένα απλό ορθογραφικό λάθος, όπως εδώ, το οποίο μπορεί να διορθωθεί εισάγοντας το σωστό όνομα του πακέτου,
+ή επειδή το αρχείο όντως δεν υπάρχει και πρέπει να εγκατασταθεί
+στο σύστημά μας.
 
-### Blank lines in display math
+### Κενές γραμμές σε μαθηματικά περιβάλλοντα
 
 ```latex
 \documentclass{article}
@@ -186,21 +164,21 @@ Some text
 \end{document}
 ```
 
-Produces the slightly mysterious error
+Αυτό παράγει το ελαφρώς παράξενο σφάλμα
 
 ```
 ! Missing $ inserted.
 ```
 {: .noedit :}
 
-But the fix is simple, blank lines are not allowed in math
-environments and should be deleted.
+Όμως η διόρθωση είναι απλή, δεν επιτρέπονται κενές γραμμές μέσα
+σε μαθηματικά περιβάλλοντα και πρέπει να διαγραφούν.
 
-## Exercise
+## Ασκήσεις
 
-Attempt to fix the errors in the supplied examples.
+Δοκιμάστε να διορθώσετε τα σφάλματα στα παρεχόμενα παραδείγματα.
 
-Produce small documents with different errors and note the form of the error messages.
+Φτιάξτε μικρά έγγραφα με διαφορετικά σφάλματα και παρατηρήστε τη μορφή των μηνυμάτων σφάλματος.
 
 <script>
 window.addEventListener('load', function(){
