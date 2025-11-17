@@ -25,6 +25,15 @@ LaTeX es va escriure pensant en l'idioma anglès, i per tant hi ha molts pocs as
 El text.
 \end{document}
 ```
+Amb LuaLaTeX:
+```latex
+%!TeX lualatex
+\documentclass{article}
+\usepackage[catalan]{babel}
+\begin{document}
+El text.
+\end{document}
+```
 
 El paquet `babel` es cuida de modificar el que calgui per tal de respectar les normes tipogràfiques de la llengua que volgueu, especialment:
 * El guionatge dels mots als finals de línia (anomenats "patrons de guionatge");
