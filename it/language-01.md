@@ -37,3 +37,16 @@ Un po' di testo in italiano.
 
 \end{document}
 ```
+
+Con LuaLaTeX:
+```latex
+%!TeX lualatex
+\documentclass{article}
+\usepackage[italian]{babel} % qui si dichiara la lingua del documento
+
+\begin{document}
+
+Un po' di testo in italiano.
+
+\end{document}
+```
