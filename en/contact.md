@@ -17,6 +17,12 @@ The [source code of this website](https://github.com/learnlatex/learnlatex.githu
 
 You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
 
+## Contributors
+
+The learnlatex.org website is managed by David Carlisle and Joseph Wright
+from [the LaTeX Project](https://www.latex-project.org/about/team/). We work in
+collaboration with a [group of collaborators](../AUTHORS.md) to develop the site.
+
 ## Impressum
 
 <p>Joseph Wright<br>
