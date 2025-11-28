@@ -11,7 +11,7 @@ permalink: /en/contact
 
 Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
 
-## Website Team
+## Website
 
 The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details.
 
