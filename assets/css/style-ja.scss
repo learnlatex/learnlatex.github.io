@@ -124,6 +124,8 @@ html {
   color: var(--color_black-0);
   font-family: var(--font_default-light);
     font-weight: 300;
+  text-autospace: normal;
+  text-spacing-trim: trim-start;
 }
 
 
