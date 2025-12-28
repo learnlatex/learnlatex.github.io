@@ -33,6 +33,15 @@ respectivamente:
 \chapter{Viu? :)}
 \end{document}
 ```
+Com LuaLaTeX:
+```latex
+%!TeX lualatex
+\documentclass{book}
+\usepackage[brazilian]{babel}
+\begin{document}
+\chapter{Viu? :)}
+\end{document}
+```
 
 Ambas as opções carregam os padrões de hifenização da língua portuguesa, e
 modificam os textos localizados de acordo (há pequenas diferenças nesses textos

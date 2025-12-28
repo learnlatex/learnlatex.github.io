@@ -28,3 +28,13 @@ using US English patterns, but you can switch to UK ones using `babel`.
 Some text
 \end{document}
 ```
+With LuaLaTeX:
+```latex
+%!TeX lualatex
+\documentclass{article}
+\usepackage[british]{babel}
+\begin{document}
+Some text
+\end{document}
+```
+

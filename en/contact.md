@@ -11,11 +11,17 @@ permalink: /en/contact
 
 Unfortunately we do not have the resources to offer individual help on LaTeX problems and will therefore not reply to emails seeking support. See [The LaTeX Project's help page](https://www.latex-project.org/help/) for ways to get user support.
 
-## Website Team
+## Website
 
 The [source code of this website](https://github.com/learnlatex/learnlatex.github.io/) is on [GitHub](https://github.com/learnlatex/), please see [CONTRIBUTING](../CONTRIBUTING) and [LICENSE](../LICENSE) for details.
 
 You can also [open an issue on GitHub](https://github.com/learnlatex/learnlatex.github.io/issues) or [email us](mailto:texfaq@texfaq.org) with suggestions.
+
+## Contributors
+
+The learnlatex.org website is managed by David Carlisle and Joseph Wright
+from [the LaTeX Project](https://www.latex-project.org/about/team/). We work in
+collaboration with a [group of collaborators](../AUTHORS.md) to develop the site.
 
 ## Impressum
 
