@@ -25,6 +25,7 @@ The following people have made contributions to learnlatex.org:
 | Marcel Fabian Krüger | _Initial content discussions_ |
 | Frank Mittelbach     | _Initial content discussions_ |
 | Phelype Oleinik      | _Portuguese translation_ |
+| Nikos Platis         | _Greek translation_ |
 | Jhonatan David Arias Quispe | _Updates to Spanish translation_ |
 | Will Robertson       | _Initial content discussions_ |
 | Martin Sievers       | _German translation_ |
