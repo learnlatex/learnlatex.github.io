@@ -1,12 +1,14 @@
 ---
 layout: "page"
 lang: "el"
-title: Mission
+title: Αποστολή
 permalink: /el/mission
 ---
 
-# Learn LaTeX Mission
+# Η αποστολή του Learn LaTeX
 
-This website aims to help you take the first steps with LaTeX, a document preparation system designed to produce high-quality typeset output. LaTeX can be scary for new users as it is not a word processor, and because it is not a single program. Our aim here is to help you get started without trying to show you everything in one go.
+Αυτός ο ιστότοπος έχει ως στόχο να σας βοηθήσει να κάνετε τα πρώτα βήματά σας με το LaTeX, ένα σύστημα προετοιμασίας εγγράφων σχεδιασμένο για να παράγει υψηλής ποιότητας στοιχειοθετημένα αποτελέσματα.
+Το LaTeX μπορεί να τρομάζει τους νέους χρήστες καθώς δεν είναι ένας επεξεργαστής κειμένου, και γιατί δεν είναι ένα ενιαίο πρόγραμμα. 
+Στόχος μας εδώ είναι να σας βοηθήσουμε να ξεκινήσετε χωρίς να προσπαθούμε να σας δείξουμε τα πάντα μονομιάς.
 
-To do that, we have taken around 16 of the most important things you’ll need to know, and made them into short ‘lessons’. Each lesson is very focused, so they should not take too long to cover. In each lesson, we’ve given examples of what you’d write, and they are available so you can try them out online. Learn more about [how examples work](./help#examples) in the help section.
+Για να το πετύχουμε, πήραμε περίπου 16 από τα πιο σημαντικά στοιχεία που θα χρειαστεί να γνωρίζετε, και φτιάξαμε με αυτά σύντομα «μαθήματα». Κάθε μάθημα είναι πολύ εστιασμένο, επομένως δεν θα χρειαστείτε πολύ χρόνο για να τα καλύψετε. Σε κάθε μάθημα δίνουμε παραδείγματα για το τι θα γράφατε, και μπορείτε να τα δοκιμάσετε άμεσα μέσα στον ιστότοπο. Μάθετε περισσότερα σχετικά με το [πώς δουλεύουν τα παραδείγματα](./help#examples) στην ενότητα της βοήθειας.
