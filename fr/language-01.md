@@ -33,6 +33,17 @@ vous utilisez (éventuellement plusieurs séparés par des virgules):
 Du texte.
 \end{document}
 ```
+Avec LuaLaTeX:
+```latex
+%!TeX lualatex
+\documentclass{article}
+
+\usepackage[french]{babel}
+
+\begin{document}
+Du texte.
+\end{document}
+```
 
 `Babel` s'occupe de modifier pour vous tout ce qu'il faut pour respecter
 les règles typographiques de la langue que vous lui demandez, notamment :

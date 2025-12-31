@@ -30,6 +30,16 @@ Todo ello puede, solucionarse fácilmente utilizando el paquete babel:
 Some text
 \end{document}
 ```
+Con LuaLaTeX:
+```latex
+%!TeX lualatex
+\documentclass{article}
+\usepackage[spanish]{babel}
+\begin{document}
+Some text
+\end{document}
+```
+
 
 Puede igualmente utilizarlo de la forma siguiente:
 
