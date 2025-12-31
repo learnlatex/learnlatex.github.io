@@ -31,3 +31,4 @@ compress_html:
   blanklines: false
   profile: false
   startings: [html, head, body]
+
