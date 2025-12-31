@@ -204,7 +204,7 @@ To enable this output, add a comment of the form:
 {: .noedit :}
 
 
-Replacing `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
+Replace `make4ht` by `LaTeXML` or `lwarp` to specify those systems.
 
 
 
