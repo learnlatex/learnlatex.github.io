@@ -132,7 +132,7 @@ to fail and you get an internal and not that helpful error:
 ```
 {: .noedit :}
 
-While the error description is unhelpful; the following two
+While the error description is unhelpful, the following two
 lines do accurately display the location of the error by the use of
 the linebreak showing how far TeX had read:
 

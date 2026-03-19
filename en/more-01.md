@@ -1,7 +1,7 @@
 ---
 layout: "lesson"
 lang: "en"
-title: "More on: What is LaTeX and how does it work?"
+title: "More on: What LaTeX is and how it works?"
 description: "This lesson gives more context on the history of LaTeX and other formats available."
 toc-anchor-text: "More on: What is LaTeX and how does it work?"
 ---
