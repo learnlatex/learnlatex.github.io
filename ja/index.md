@@ -1,7 +1,7 @@
 ---
 layout: "start"
 lang: "ja"
-title: "Learn LaTeX: 無料の初心者向けオンラインレッスン"
+title: "Learn LaTeX: 無料の初心者向けオンラインレッスン（LaTeX入門）"
 description: "Learn LaTeXは16の初心者向けレッスンから成ります。高品質な組版を実現するために設計された文書作成システム「LaTeX」に入門しましょう。"
 permalink: /ja/
 ---
