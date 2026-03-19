@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "en"
 title: "Citations and references"
-description: "This lesson show the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
+description: "This lesson shows the basics of reference databases. Learn how to build your own databases and how to use them in documents using the two major workflows available."
 toc-anchor-text: "Citations & references"
 toc-description: "Working with reference databases."
 ---

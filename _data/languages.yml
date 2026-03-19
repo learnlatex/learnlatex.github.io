@@ -11,6 +11,10 @@
   label-regional: Deutsch
   label-english: German
 
+- language-code: el
+  label-regional: Ελληνικά
+  label-english: Greek
+
 - language-code: en
   label-regional: English
   label-english: English
