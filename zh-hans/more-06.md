@@ -18,7 +18,7 @@ toc-anchor-text: "更多内容：使用宏包和定义扩展 LaTeX"
 % !TEX program=lualatex
 
 \documentclass{ctexart}
-\usepackage[ngerman]{babel} % 注意选项名称是'ngerman'
+\usepackage[german]{babel} % 注意选项名称是'german'
 
 \begin{document}
 

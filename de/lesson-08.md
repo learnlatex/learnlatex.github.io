@@ -77,7 +77,7 @@ aber, die Quellen zu lesen.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 
 \begin{document}
@@ -99,7 +99,7 @@ richtig zu setzen. Beobachte, was in diesem Beispiel passiert:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 
 \begin{document}
@@ -127,7 +127,7 @@ Vergleiche das Resultat von oben mit folgendem Beispiel:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 
 \begin{document}
@@ -154,7 +154,7 @@ das wirklich funktioniert, ist hier die erste Tabelle mit dieser Syntax:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 
 \begin{document}
@@ -187,7 +187,7 @@ Namen sollte die vorgesehene Position ersichtlich werden:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -216,7 +216,7 @@ soll, muss ein Bereich angegeben werden (mit zwei identischen Zahlen).
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -244,7 +244,7 @@ Argument in runden Klammern an beiden Enden gekürzt werden:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -278,7 +278,7 @@ Abstand einzufügen.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -318,7 +318,7 @@ möglich wäre, allerdings _nur ein einzelner Spaltentyp_.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -346,7 +346,7 @@ Beispiel wird dies verwendet, um die Kopfzeile der Tabelle zu zentrieren:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 
@@ -375,7 +375,7 @@ zusammenzufassen.
 ```latex
 \document{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{array}
 \usepackage{booktabs}
 

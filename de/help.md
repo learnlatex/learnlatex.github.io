@@ -45,7 +45,7 @@ geschriebene Lektion](language-01)):
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \begin{document}
 Beispieltext.

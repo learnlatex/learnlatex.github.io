@@ -18,7 +18,7 @@ toc-anchor-text: "Περισσότερα σχετικά με: Επεκτείνο
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Notice that the option name is 'ngerman'
+\usepackage[german]{babel} % Notice that the option name is 'german'
 
 \begin{document}
 
@@ -43,7 +43,7 @@ Birnen sind gelb.
 Μερικές φορές, θέλετε μια επιλογή να είναι διαθέσιμη σε όλα τα πακέτα που έχετε φορτώσει. Αυτό γίνεται δίνοντάς την στη γραμμή `\documentclass`: κάθε πακέτο μπορεί να «δει» αυτή τη λίστα. Έτσι, για να περάσετε τη γλώσσα ενός εγγράφου σε όλα τα πακέτα, θα μπορούσατε να χρησιμοποιήσετε:
 
 ```latex
-\documentclass[ngerman]{article} % Notice that the option name is 'ngerman'
+\documentclass[german]{article} % Notice that the option name is 'german'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

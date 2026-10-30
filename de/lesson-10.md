@@ -29,7 +29,7 @@ Es gibt zwei Formen des Mathematikmodus:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \begin{document}
 Ein Satz mit Mathematik im Text: $y = mx + c$.
@@ -80,7 +80,7 @@ werden mit `^` und `_` ausgezeichnet.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Hochgestellter Exponent $a^{b}$ und tiefgestellter Index $a_{b}$.
 \end{document}
@@ -98,7 +98,7 @@ für den griechischen Buchstaben.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Etwas Mathematik: $y = 2 \sin \theta^{2}$.
 \end{document}
@@ -132,7 +132,7 @@ Besonders nützlich sind alleinstehende Gleichungen für Integrale:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Ein Absatz über eine größere Gleichung
 \[
@@ -154,7 +154,7 @@ kann, [z.B. so](https://www.tug.org/TUGboat/tb41-1/tb127gregorio-math.pdf):
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \newcommand{\diff}{\mathop{}\!d}            % für kursiv
 % \newcommand{\diff}{\mathop{}\!\mathrm{d}} % für aufrecht
 \begin{document}
@@ -171,7 +171,7 @@ erzeugt werden. Mit dem gleichen Beispiel:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \newcommand{\diff}{\mathop{}\!d}            % für kursiv
 % \newcommand{\diff}{\mathop{}\!\mathrm{d}} % für aufrecht
 \begin{document}
@@ -199,7 +199,7 @@ Beispiele als wir in dieser Lektion zeigen können.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{amsmath}
 
 \begin{document}
@@ -227,7 +227,7 @@ Das Paket stellt noch weitere nützliche Umgebungen bereit, bspw. für Matrizen.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{amsmath}
 \begin{document}
 AMS Matrizes.
@@ -269,7 +269,7 @@ könnten wir also schreiben:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Die Matrix $\mathbf{M}$.
 \end{document}
@@ -288,7 +288,7 @@ oder man setzt spezifische Schriften wie `\textrm{...}`.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{amsmath}
 \begin{document}
 

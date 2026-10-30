@@ -28,7 +28,7 @@ the German Inhaltsverzeichnis.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Notice that the option name is 'ngerman'
+\usepackage[german]{babel} % Notice that the option name is 'german'
 
 \begin{document}
 
@@ -58,7 +58,7 @@ can 'see' this list. So to pass the language of a document to all packages,
 we might use:
 
 ```latex
-\documentclass[ngerman]{article} % Notice that the option name is 'ngerman'
+\documentclass[german]{article} % Notice that the option name is 'german'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}
