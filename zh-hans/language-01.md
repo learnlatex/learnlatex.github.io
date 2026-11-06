@@ -19,9 +19,9 @@ toc-description: "使用LaTeX进行中文排版。"
 
 注意：
 
-- xeCJK宏包是最常用的中文排版宏包，它提供了丰富的字体选项，包括中文字体、西文字体、数学字体等。
-- ctex宏包是基于xeCJK宏包的扩展，它提供了更多的中文排版功能，包括字号、字体颜色、字体风格等。
-- 下面第一行的注释指定编译引擎为xelatex，通知TexLive.net网站使用XeLaTeX引擎进行编译，可以更好的处理中文字符。
+- `xeCJK`和`luatexja`宏包分别是XeLaTeX和LuaLaTeX引擎下常用的中文排版宏包，它们都提供了丰富的字体选项，包括中文字体、西文字体、数学字体等。
+- `ctex`宏包提供了更多的中文排版功能，包括字号、字体颜色、字体风格等。基于所用的引擎，`ctex`宏包会自动选择`xeCJK`或`luatexja`宏包配置字体。
+- 下面第一行的注释指定编译引擎为lualatex，通知TexLive.net网站使用LuaLaTeX引擎进行编译，可以更好的处理中文字符。
 
 ```latex
 % !TEX program=lualatex
@@ -45,6 +45,9 @@ toc-description: "使用LaTeX进行中文排版。"
 在中文排版中，还需要注意标点符号的使用和行间距的设置。可以通过`xeCJK`宏包的选项进行调整。
 
 ```latex
+% !TEX program=xelatex
+
+% ...
 \usepackage{xeCJK}
 \setCJKmainfont{SimSun}
 ```

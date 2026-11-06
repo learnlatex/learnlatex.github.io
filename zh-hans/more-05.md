@@ -45,7 +45,9 @@ toc-anchor-text: "更多内容：使用文档类来影响设计"
 
 ```latex
 % !TEX program=lualatex
-\documentclass{standalone}
+
+\documentclass[class=ctexart]{standalone}
+% 或使用 \documentclass{standalone} \usepackage{ctex}
 \begin{document}
 一个简单的文档：这将是一个很小的盒子！
 \end{document}

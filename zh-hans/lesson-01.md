@@ -28,4 +28,4 @@ toc-description: "LaTeX 是什么以及它如何工作。"
 
 ## LaTeX 或 pdfLaTeX 或其他
 
-在[下一课](lesson-02)中，我们将看到 LaTeX 不是一个单一的程序。为了简化，我们将专注于一个特定的 LaTeX 程序 pdfLaTeX（本课程的中文版使用XeLaTeX 以获得更好的中文支持，但是 pdfLaTeX 仍然是最常用的 LaTeX 程序）来创建你的PDF。我们将在课程后面讨论其他程序以及为什么你可能想要使用它们。
+在[下一课](lesson-02)中，我们将看到 LaTeX 不是一个单一的程序。为了简化，我们将专注于一个特定的 LaTeX 程序 pdfLaTeX（本课程的中文版使用 LuaLaTeX 以获得更好的中文支持，但是 pdfLaTeX 仍然是最常用的 LaTeX 程序）来创建你的PDF。我们将在课程后面讨论其他程序以及为什么你可能想要使用它们。
