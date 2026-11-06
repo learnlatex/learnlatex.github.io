@@ -15,7 +15,6 @@ toc-anchor-text: "更多内容：数学"
 
 \documentclass{ctexart}
 
-
 \usepackage{amsmath}
 
 \begin{document}
@@ -114,9 +113,7 @@ c&=d
 
 \documentclass{ctexart}
 
-
 \begin{document}
-
 
 $(x+y)(x-y)=x^{2}-y^{2}$
 
@@ -124,6 +121,7 @@ $(x+y)(x-y)=x^{2}-y^{2}$
 
 $(x+\mathbf{y})(x-\mathbf{y})=x^{2}-{\mathbf{y}}^{2}$
 $\mathbf{\pi} r^2$ % 错误使用\mathbf
+
 \end{document}
 ```
 

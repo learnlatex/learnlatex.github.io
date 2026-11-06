@@ -30,8 +30,7 @@ permalink: /zh-hans/help
 每个示例都是一个完整的小型 LaTeX 文档，在页面中显示如下：
 
 ```latex
-% !TEX program= LuaLaTeX 
-
+% !TEX program=lualatex
 \documentclass{ctexart}
 \begin{document}
 示例文本。
@@ -93,9 +92,9 @@ TeXLive.net 服务是专门为支持本网站而开发的，特别是利用了 [
 
 提交示例文档时，默认将使用`pdflatex`引擎。
 
-你可以通过使用以下形式的注释来强制选择`latex`、`pdflatex`、` XeLaTeX `、` LuaLaTeX `、`platex`或`uplatex`：
+你可以通过使用以下形式的注释来强制选择`latex`、`pdflatex`、`xelatex`、`lualatex`、`platex`或`uplatex`：
 
-`% !TEX ` _任意文本_ ` LuaLaTeX `
+`% !TEX ` _任意文本_ ` lualatex`
 
 其中开头的空格是可选的，大小写不敏感，第一个和最后一个单词之间的_任意文本_也会被忽略。
 
@@ -125,7 +124,7 @@ TeXLive.net 服务是专门为支持本网站而开发的，特别是利用了 [
 
 ## HTML输出（make4ht、LaTeXML、lwarp）
 
-如果使用 TeXLive.net 系统，则可以指定额外的返回选项：`make4ht`、`LaTeXML`或`lwarp`。这些会在页面内的框架中返回一个或多个 HTML 页面。它们可以与` XeLaTeX `或` LuaLaTeX `以及默认的`pdflatex`处理一起指定。
+如果使用 TeXLive.net 系统，则可以指定额外的返回选项：`make4ht`、`LaTeXML`或`lwarp`。这些会在页面内的框架中返回一个或多个 HTML 页面。它们可以与`xelatex`或`lualatex`以及默认的`pdflatex`处理一起指定。
 
 要启用此输出，请添加以下形式的注释：
 
@@ -166,5 +165,3 @@ latexmlpost --format=html5 \
 ---
 
 [^1]: 注意，在网站开发期间，我们还使用了 [LaTeX.Online](https://latexonline.cc/)和 [LaTeX-on-HTTP](https://github.com/YtoTech/latex-on-http)，我们感谢这些服务的开发者在早期阶段使本网站的示例可用。
-
-

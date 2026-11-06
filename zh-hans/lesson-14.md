@@ -37,9 +37,9 @@ toc-description: "选择字体和文件编码。"
 
 由于`pdflatex`限于8位文件编码和8位字体，它不能原生使用现代 OpenType 字体，也不能轻松地在使用不同字母（或脚本，用技术术语来说）的多种语言之间切换。有两个替代 pdfTeX 的引擎，它们原生使用 Unicode 输入和现代字体：XeTeX 和 LuaTeX。对于 LaTeX，这些通常在你的编辑器中分别使用`xelatex`和`lualatex`引擎来调用。
 
-<p class="hint">例如，本教程的中文版本就指定 XeLaTeX 为编译引擎，并使用`xeCJK`宏包来支持中文。</p>
+<p class="hint">例如，本教程的中文版本就指定 LuaLaTeX 为编译引擎，并使用`ctex`宏包来支持中文。</p>
 
-在这些引擎中，字体选择由`fontspec`宏包完成，对于简单的文档可以像这样简单：
+在这些引擎中，字体选择由`fontspec`宏包完成，对于简单的文档可以这样配置字体：
 ```latex
 % !TEX program=lualatex
 \usepackage{fontspec}
