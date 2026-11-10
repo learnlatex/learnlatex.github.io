@@ -26,7 +26,7 @@ necesidad de usar un teclado alemán.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Note que la nombre de la opción es 'ngerman'
+\usepackage[german]{babel} % Note que la nombre de la opción es 'german'
 
 \begin{document}
 
@@ -48,7 +48,7 @@ cada paquete puede «ver» esta lista de opciones. Por consiguiente, para pasar 
 el idioma de un documento a todos los paquetes del mismo, debemos usar:
 
 ```latex
-\documentclass[ngerman]{article} % Note que el nombre de la opción es 'ngerman'
+\documentclass[german]{article} % Note que el nombre de la opción es 'german'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

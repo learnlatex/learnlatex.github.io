@@ -24,7 +24,7 @@ Let ook op dat de sectiekop _Table of Contents_, normaal gegenereerd door `\tabl
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Let op dat de optie 'ngerman' is
+\usepackage[german]{babel} % Let op dat de optie 'german' is
 
 \begin{document}
 
@@ -50,7 +50,7 @@ Dat kan door de optie op te geven bij de `\documentclass`-regel: elk pakket kan 
 Dus om de taal van een document door te geven aan alle pakketten, kunnen we het volgende gebruiken:
 
 ```latex
-\documentclass[ngerman]{article} % Let op dat de optie 'ngerman' is
+\documentclass[german]{article} % Let op dat de optie 'german' is
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

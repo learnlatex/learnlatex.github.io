@@ -31,7 +31,7 @@ vokišką _Inhaltsverzeichnis_.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Pastebėkite, kad parinkties vardas 'ngerman'
+\usepackage[german]{babel} % Pastebėkite, kad parinkties vardas 'german'
 
 \begin{document}
 
@@ -62,7 +62,7 @@ Tada ji nurodoma prie komandos `\documentclass` ir kiekvienas paketas gali
 paketams, galime naudoti:
 
 ```latex
-\documentclass[ngerman]{article} % Pastebėkite, kad parinkties vardas 'ngerman'
+\documentclass[german]{article} % Pastebėkite, kad parinkties vardas 'german'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

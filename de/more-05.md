@@ -27,7 +27,7 @@ verbreitetere der beiden ist, hier ein Beispiel in `beamer`:
 ```latex
 \documentclass{beamer}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 
 \begin{frame}
@@ -65,7 +65,7 @@ Klasse erreichen, die automatisch die Seitengröße an die Inhalte anpasst.
 ```latex
 \documentclass{standalone}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Ein einfaches Dokument: Das wird eine ziemlich kleine Box!
 \end{document}

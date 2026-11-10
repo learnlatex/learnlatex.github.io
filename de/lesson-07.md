@@ -18,7 +18,7 @@ Befehl `\includegraphics` zu LaTeX hinzufügt.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{graphicx}
 
 \begin{document}
@@ -58,7 +58,7 @@ kann (am auffälligsten ist der Unterschied bei Verwendung der globalen option
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{graphicx}
 
 \begin{document}
@@ -79,7 +79,7 @@ Bildes.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{graphicx}
 
 \begin{document}
@@ -100,7 +100,7 @@ entstehen.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{graphicx}
 \usepackage{lipsum} % Blindtext erzeugen
 

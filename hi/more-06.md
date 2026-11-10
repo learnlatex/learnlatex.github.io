@@ -19,7 +19,7 @@ toc-anchor-text: "अधिक जानकारी: पैकेजों औ�
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Notice that the option name is 'ngerman'
+\usepackage[german]{babel} % Notice that the option name is 'german'
 
 \begin{document}
 
@@ -46,7 +46,7 @@ Birnen sind gelb.
 कई बार आप चाहते हैं कि कोई विकल्प उन सभी पैकेजों के लिए उपलब्ध हो, जिन्हें आपने लोड किया है। यह काम `\documentclass` लाइन में विकल्प देकर किया जाता है: सभी पैकेज इस सूची को ‘देख’ सकते हैं। इसलिए यदि आप डॉक्यूमेंट की भाषा सभी पैकेजों को बताना चाहते हैं, तो आप ऐसा लिख सकते हैं:
 
 ```latex
-\documentclass[ngerman]{article} % Notice that the option name is 'ngerman'
+\documentclass[german]{article} % Notice that the option name is 'german'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

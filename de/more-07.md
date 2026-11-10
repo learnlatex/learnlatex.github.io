@@ -71,7 +71,7 @@ werden. Das `float` Paket unterstützt genau das.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{graphicx}
 \usepackage{lipsum}  % Blindtext
 \usepackage{float}
@@ -106,7 +106,7 @@ definiert einen Befehl, um neue Gleitumgebungsarten zu erstellen.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{graphicx}
 \usepackage{lipsum}  % Blindtext
 \usepackage{trivfloat}
