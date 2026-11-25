@@ -28,7 +28,7 @@ Zusätzlich werden Begriffe wie _Table of Contents_, der automatisch durch
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Beachte, dass die Option 'ngerman' heißt
+\usepackage[german]{babel} % Beachte, dass die Option 'german' heißt
 
 \begin{document}
 
@@ -59,7 +59,7 @@ Paket kann diese Liste nutzen. Um also die Dokumentsprache allen Paketen
 mitzuteilen könnte man folgendes nutzen:
 
 ```latex
-\documentclass[ngerman]{article} % Beachte, dass die Option 'ngerman' heißt
+\documentclass[german]{article} % Beachte, dass die Option 'german' heißt
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}
@@ -90,7 +90,7 @@ mit Blau als Standardwert.
 ```
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \usepackage{xcolor}
 
@@ -118,7 +118,7 @@ Wiederholen wir obiges Beispiel allerdings mit `\NewDocumentCommand`.
 ```
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \usepackage{xparse} % Nur für ältere LaTeX-Versionen notwendig
 \usepackage{xcolor}

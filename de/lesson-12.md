@@ -126,7 +126,7 @@ Die Grundstruktur der Eingabe wird in diesem Beispiel gezeigt.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{natbib}
 
 \begin{document}
@@ -169,7 +169,7 @@ einige neue Befehle.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage[style=authoryear]{biblatex}
 \addbibresource{learnlatex.bib}
 

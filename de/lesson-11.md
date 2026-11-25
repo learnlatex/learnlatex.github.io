@@ -60,7 +60,7 @@ horizontaler oder vertikaler Abstand benötigt. Hierzu können `\hspace` und
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Etwas Text \hspace{1cm} mehr Text.
 
@@ -84,7 +84,7 @@ und `\textsc`.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Hier ein wenig Spaß mit Schrift: \textbf{fett}, \textit{kursiv},
 \textrm{Roman}, \textsf{serifenlos}, \texttt{dicktengleich} und
@@ -102,7 +102,7 @@ auch `{...}` verwenden, um explizit eine Gruppe zu bilden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Normaler Text.
 
@@ -125,7 +125,7 @@ beachte, dass wir einen expliziten `\par` (Absatzende) verwenden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Normaler Text.
 

@@ -18,7 +18,7 @@ Ja hem explicat el paquet `babel` [en la secció principal de la lliçó](lesson
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Utilitzem 'ngerman'
+\usepackage[german]{babel} % Utilitzem 'german'
 
 \begin{document}
 
@@ -42,7 +42,7 @@ Altres opcions de l'idioma poden provocar canvis en el disseny: per exemple, en 
 Algunes vegades, vols que una opció estigui disponible en tots els paquets que has carregat. Això es fa afegint aquesta opció en la línia `\documentclass`: cada paquet pot 'veure' aquesta llista. Per passar l'idioma del document a tots els paquets:
 
 ```latex
-\documentclass[ngerman]{article} % Utilitzem 'ngerman'
+\documentclass[german]{article} % Utilitzem 'german'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

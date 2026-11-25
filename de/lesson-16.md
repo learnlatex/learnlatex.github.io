@@ -92,7 +92,7 @@ Wie erstellt man ein MWE? Am einfachsten ist, man beginnt in etwa so:
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \begin{document}
 Text
 \end{document}

@@ -19,7 +19,7 @@ toc-anchor-text: "追加レッスン：パッケージを利用したLaTeXの拡
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Notice that the option name is 'ngerman'
+\usepackage[german]{babel} % Notice that the option name is 'german'
 
 \begin{document}
 
@@ -44,7 +44,7 @@ Birnen sind gelb.
 
 ```latex
 % !TEX program=pdflatex
-\documentclass[ngerman]{article} % オプション名は 'ngerman' である点に注意
+\documentclass[german]{article} % オプション名は 'german' である点に注意
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

@@ -62,7 +62,7 @@ zerbrechen und sich auf das Beheben des ersten Fehlers konzentrieren.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \begin{document}
 Text_Wort  $\alpha + \beta$.
@@ -113,7 +113,7 @@ erzeugt; um den Fehler zu sehen, muss `%!TeX log` hinzugefügt werden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \begin{document}
 

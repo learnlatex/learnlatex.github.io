@@ -29,7 +29,7 @@ para o alemão _Inhaltsverzeichnis_:
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Note que o nome da opção é 'ngerman'
+\usepackage[german]{babel} % Note que o nome da opção é 'german'
 
 \begin{document}
 
@@ -59,7 +59,7 @@ todos os pacotes podem 'ver' essa lista.  Então, para passar o idioma de um
 documento para todos os pacotes podemos usar:
 
 ```latex
-\documentclass[ngerman]{article} % Note que o nome da opção é 'ngerman'
+\documentclass[german]{article} % Note que o nome da opção é 'german'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

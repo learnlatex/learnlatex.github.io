@@ -33,7 +33,7 @@ _Inhaltsverzeichnis_.
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % 'ngerman' est l'option pour Babel
+\usepackage[german]{babel} % 'german' est l'option pour Babel
 
 \begin{document}
 
@@ -65,7 +65,7 @@ vous avez chargés. Pour ce faire, il suffit de le signaler sur la ligne
 passer la langue d'un document à tous les packages, on peut utiliser :
 
 ```latex
-\documentclass[ngerman]{article} % 'ngerman' est l'option pour tous les packages
+\documentclass[german]{article} % 'german' est l'option pour tous les packages
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

@@ -24,7 +24,7 @@ kennzeichnen. An anderer Stelle kann dann ein Verweis eingefügt werden.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \begin{document}
 Hallo Welt!

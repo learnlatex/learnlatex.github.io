@@ -26,7 +26,7 @@ _Inhaltsverzeichnis_ ह्या नावाने बदलले गेल�
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % प्राचलाचे नाव ngerman आहे ह्याकडे विशेष लक्ष द्या.
+\usepackage[german]{babel} % प्राचलाचे नाव german आहे ह्याकडे विशेष लक्ष द्या.
 
 \begin{document}
 
@@ -55,7 +55,7 @@ Birnen sind gelb.
 जाते.
 
 ```latex
-\documentclass[ngerman]{article} % प्राचलाचे नाव ngerman आहे ह्याकडे विशेष लक्ष द्या.
+\documentclass[german]{article} % प्राचलाचे नाव german आहे ह्याकडे विशेष लक्ष द्या.
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

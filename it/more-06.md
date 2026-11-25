@@ -36,7 +36,7 @@ cambi nel corrispondente tedesco _Inhaltsverzeichnis_.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel} % Attenzione: il nome dell'opzione è 'ngerman'
+\usepackage[german]{babel} % Attenzione: il nome dell'opzione è 'german'
 
 \begin{document}
 
@@ -68,7 +68,7 @@ Quindi, per passare la lingua di un documento a tutti i
 pacchetti, potremmo scrivere:
 
 ```latex
-\documentclass[ngerman]{article} % Attenzione: il nome dell'opzione è 'ngerman'
+\documentclass[german]{article} % Attenzione: il nome dell'opzione è 'german'
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 

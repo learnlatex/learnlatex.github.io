@@ -55,7 +55,7 @@ TeX-System, wie etwa TeX Live oder MiKTeX, zu installieren.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \newcommand\mycommand{\textbold{hmmm}}
 
@@ -174,7 +174,7 @@ installiert werden muss.
 ```latex
 \documentclass{article}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 
 \begin{document}
 

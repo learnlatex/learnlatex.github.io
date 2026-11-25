@@ -26,7 +26,7 @@ có một bàn phím hỗ trợ tiếng Đức. Hơn nữa, để ý rằng tiê
 \documentclass{article}
 \usepackage[T1]{fontenc}
 
-\usepackage[ngerman]{babel} % Chú ý rằng tùy biến là 'ngerman'
+\usepackage[german]{babel} % Chú ý rằng tùy biến là 'german'
 
 \begin{document}
 
@@ -56,7 +56,7 @@ dụng. Điều này có thể được thực hiện bằng cách đưa tùy bi
 `\documentclass`. Do đó ta có thể dùng
 
 ```latex
-\documentclass[ngerman]{article} % Chú ý rằng tùy biến là 'ngerman'
+\documentclass[german]{article} % Chú ý rằng tùy biến là 'german'
 \usepackage[T1]{fontenc}
 
 \usepackage{babel}

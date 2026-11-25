@@ -50,7 +50,7 @@ Ein langes Dokument könnte also folgendermaßen aufgebaut sein:
 ```latex
 \documentclass{book}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
 \usepackage{biblatex}
 \addbibresource{biblatex-examples.bib}
 
